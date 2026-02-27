@@ -160,7 +160,7 @@ export default function AIChat() {
                   {[
                     "Why are coral reefs dying?",
                     "Explain climate change",
-                    "Most endangered animals",
+                    "Help me prepare for O/L exam",
                   ].map((suggestion) => (
                     <button
                       key={suggestion}
