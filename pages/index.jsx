@@ -489,7 +489,7 @@ export default function NewWorldEducation() {
 
         <div style={{display:"flex",gap:"14px",marginBottom:"52px",flexWrap:"wrap",justifyContent:"center"}}>
           <button onClick={()=>{setAuthMode("signup");setShowAuthModal(true);}} className="cta-primary" style={{background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",border:"none",color:"#060B20",padding:"18px 44px",borderRadius:"50px",fontWeight:"900",fontSize:"17px",cursor:"pointer",transition:"all 0.2s",boxShadow:"0 8px 32px rgba(99,210,255,0.4)"}}>Start Learning Free →</button>
-          <button className="cta-secondary" style={{background:"transparent",border:"2px solid rgba(255,255,255,0.2)",color:"#fff",padding:"18px 44px",borderRadius:"50px",fontWeight:"800",fontSize:"17px",cursor:"pointer",fontFamily:"'Nunito',sans-serif",transition:"all 0.2s"}}>Meet Starky 🌟</button>
+          <button onClick={()=>window.location.href="/demo"} className="cta-secondary" style={{background:"transparent",border:"2px solid rgba(255,255,255,0.2)",color:"#fff",padding:"18px 44px",borderRadius:"50px",fontWeight:"800",fontSize:"17px",cursor:"pointer",fontFamily:"'Nunito',sans-serif",transition:"all 0.2s"}}>Meet Starky 🌟</button>
         </div>
 
         {/* GRADE SELECTOR */}
@@ -914,7 +914,7 @@ export default function NewWorldEducation() {
           </p>
           <div style={{display:"flex",gap:"14px",justifyContent:"center",flexWrap:"wrap"}}>
             <button onClick={()=>{setAuthMode("signup");setShowAuthModal(true);}} className="cta-primary" style={{background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",border:"none",color:"#060B20",padding:"18px 48px",borderRadius:"50px",fontWeight:"900",fontSize:"17px",cursor:"pointer",transition:"all 0.2s",boxShadow:"0 8px 32px rgba(99,210,255,0.4)"}}>Create My Free Account →</button>
-            <button style={{background:"transparent",border:"2px solid rgba(255,255,255,0.2)",color:"#fff",padding:"18px 48px",borderRadius:"50px",fontWeight:"800",fontSize:"17px",cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>Meet Starky 🌟</button>
+            <button onClick={()=>window.location.href="/demo"} style={{background:"transparent",border:"2px solid rgba(255,255,255,0.2)",color:"#fff",padding:"18px 48px",borderRadius:"50px",fontWeight:"800",fontSize:"17px",cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>Meet Starky 🌟</button>
           </div>
           <p style={{marginTop:"16px",fontSize:"12px",color:"rgba(255,255,255,0.3)"}}>Sign up with Google · No credit card · Always free</p>
         </div>
