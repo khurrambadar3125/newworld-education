@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useSessionLimit, SessionLimitBanner, LimitReachedModal } from "./useSessionLimit";
+import { useSessionLimit, SessionLimitBanner, LimitReachedModal } from "../utils/useSessionLimit";
 
 const GRADES = [
   { id:"kg",  label:"KG",       age:"4-5",   color:"#FF6B6B", emoji:"🌱" },

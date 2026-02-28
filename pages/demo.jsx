@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { useSessionLimit, SessionLimitBanner, LimitReachedModal } from "./useSessionLimit";
+import { useSessionLimit, SessionLimitBanner, LimitReachedModal } from "../utils/useSessionLimit";
 
 // ── CASE STUDIES DATA ──────────────────────────────────────────────────────
 const CASE_STUDIES = [
