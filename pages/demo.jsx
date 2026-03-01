@@ -1,5 +1,29 @@
 import { useState, useRef, useEffect } from "react";
-import { useSessionLimit, SessionLimitBanner, LimitReachedModal } from "../utils/useSessionLimit";
+import Head from "next/head";
+import { useSessionLimit, TrialBanner, UpgradeModal, SessionLimitBanner, LimitReachedModal } from "../utils/useSessionLimit";
+
+// ── BROWSER LANGUAGE DETECTION ─────────────────────────────────────────────
+// Silently reads navigator.language like every normal multilingual site.
+// Maps browser locale → platform language. User can override with toggle.
+function detectBrowserLang() {
+  if (typeof window === "undefined") return "en";
+  const stored = typeof localStorage !== "undefined" ? localStorage.getItem("nw_lang") : null;
+  if (stored && ["en","ar","ur"].includes(stored)) return stored;
+  const navLangs = navigator.languages || [navigator.language || "en"];
+  for (const nl of navLangs) {
+    if (nl.startsWith("ar")) return "ar";
+    if (nl.startsWith("ur")) return "ur";
+    if (nl.startsWith("en")) return "en";
+  }
+  return "en";
+}
+
+// Language metadata
+const LANG_META = {
+  en: { label:"English", dir:"ltr", flag:"🇬🇧", greet:"Hi! I'm Starky 🌟 Select a subject and ask me anything — or tap a starter question." },
+  ar: { label:"العربية", dir:"rtl", flag:"🇸🇦", greet:"أهلاً! أنا ستاركي 🌟 اختر مادة واسألني أي سؤال — أو اضغط على أحد الأسئلة أدناه." },
+  ur: { label:"اردو",    dir:"rtl", flag:"🇵🇰", greet:"ہیلو! میں سٹارکی ہوں 🌟 کوئی مضمون منتخب کریں اور کچھ بھی پوچھیں۔" },
+};
 
 // ── CASE STUDIES DATA ──────────────────────────────────────────────────────
 const CASE_STUDIES = [
@@ -150,7 +174,127 @@ const DEMO_SUBJECTS = [
   },
 ];
 
-// ── PARTNERS / INSTITUTIONS ────────────────────────────────────────────────
+// ── SMART PROMPT TILES — solves the blank-box problem ─────────────────────
+// Students who don't know how to prompt just tap a tile.
+// Tiles are specific to the subject — not generic filler.
+const SMART_PROMPTS = {
+  marketing: [
+    { emoji:"📊", label:"Analyse a brand",    prompt:"Choose a well-known Pakistani or global brand and analyse its marketing strategy — target market, positioning, and marketing mix (4Ps)." },
+    { emoji:"📝", label:"Assignment outline", prompt:"Help me create a detailed outline for a marketing assignment on consumer behaviour in Pakistani FMCG markets." },
+    { emoji:"❓",  label:"Explain a concept", prompt:"Explain the difference between market segmentation, targeting, and positioning with clear examples from real brands." },
+    { emoji:"🔍", label:"Check my work",      prompt:"Here is my answer: [paste it]. Please tell me what I did well, what's missing, and how to improve it." },
+    { emoji:"📈", label:"Digital marketing",  prompt:"How would a small Karachi startup with a budget of Rs. 50,000 build an effective digital marketing strategy?" },
+    { emoji:"🎯", label:"Essay structure",    prompt:"How do I structure a marketing essay to get top marks? Give me a template with what to include in each paragraph." },
+  ],
+  sciences: [
+    { emoji:"🔬", label:"Explain a topic",    prompt:"Explain [topic name] from O Level Biology/Chemistry/Physics from scratch with a worked example." },
+    { emoji:"📋", label:"Past paper question",prompt:"Here is an exam question: [paste it]. Work through it step by step and tell me what the mark scheme is looking for." },
+    { emoji:"🗺️", label:"Topic overview",     prompt:"Give me a full overview of the key topics in O Level Physics I need to know, ranked from most to least frequently examined." },
+    { emoji:"❌", label:"Fix my mistake",     prompt:"My answer was: [paste]. The mark scheme says: [paste]. Explain exactly where I went wrong and what I should have written." },
+    { emoji:"📝", label:"Exam technique",     prompt:"What is the difference between 'state', 'describe', 'explain' and 'calculate' in Cambridge exam questions? Show me examples of each." },
+    { emoji:"⚡", label:"Quick revision",     prompt:"Give me the 10 most important facts about [topic] that I must know for my O Level exam — in bullet points." },
+  ],
+  primary: [
+    { emoji:"🎮", label:"Make it fun",         prompt:"Explain [concept] to a [age]-year-old using a story or game — make it memorable and fun." },
+    { emoji:"🔢", label:"Maths help",          prompt:"My child doesn't understand [maths topic]. Please explain it step by step in the simplest way possible with pictures in words." },
+    { emoji:"📖", label:"Reading help",        prompt:"Help me create a fun activity to improve my child's reading and comprehension at Grade [X] level." },
+    { emoji:"🌍", label:"Science question",    prompt:"Explain [science topic] in a way a [age]-year-old can understand — use something from everyday life they'll recognise." },
+    { emoji:"🏠", label:"Homework help",       prompt:"My child has homework on [topic]. Walk me through how to explain it to them step by step without doing it for them." },
+    { emoji:"📅", label:"Weekly plan",         prompt:"Create a fun and achievable weekly learning plan for a [age]-year-old covering Maths, English, and Science — 20 minutes per day." },
+  ],
+  alevel: [
+    { emoji:"📝", label:"Essay structure",     prompt:"Show me the exact essay structure Cambridge A Level Economics examiners reward — with what to write in each paragraph." },
+    { emoji:"📊", label:"Evaluate an argument",prompt:"For the question '[paste your essay question]', help me build a two-sided evaluation argument with strong counterpoints." },
+    { emoji:"🔍", label:"Mark scheme coach",   prompt:"Here is my essay paragraph: [paste it]. Tell me what marks it would get and exactly how to improve it to get full marks." },
+    { emoji:"💡", label:"Concept clarity",     prompt:"I don't fully understand [economic/business concept]. Please explain it clearly with a real-world example and a diagram description." },
+    { emoji:"📈", label:"Data response",       prompt:"Teach me how to approach the Cambridge data response question — what structure and techniques get the highest marks." },
+    { emoji:"🎯", label:"Predicted topics",    prompt:"Based on past Cambridge A Level Economics papers, which topics and question types are most likely to appear this year?" },
+  ],
+  maths: [
+    { emoji:"✏️", label:"Worked example",      prompt:"Show me a fully worked example of [topic] with every step explained — I need to understand the method, not just the answer." },
+    { emoji:"❓", label:"I'm stuck on...",      prompt:"I'm stuck on this question: [paste it]. Don't just give me the answer — walk me through it step by step so I understand." },
+    { emoji:"🔁", label:"Practice questions",  prompt:"Give me 5 practice questions on [topic] at [O Level / A Level] standard, starting easy and getting harder, with full worked solutions." },
+    { emoji:"🧠", label:"Understand the why",  prompt:"I can do [topic] mechanically but don't understand WHY the method works. Please explain the mathematical reasoning behind it." },
+    { emoji:"📋", label:"Formula sheet",       prompt:"List all the key formulas I need to know for [topic] in Cambridge [O Level / A Level] Maths — with a note on when to use each one." },
+    { emoji:"⚡", label:"Quick check",         prompt:"Here's my working for this question: [paste]. Check it and tell me if it's right — if not, show me exactly where I went wrong." },
+  ],
+};
+
+// ── MODE PICKER ── Solves the blank-box problem ───────────────────────────
+// Students choose HOW they want to interact before they see any text box.
+// Each mode wraps the subject system prompt with mode-specific behaviour.
+const MODES = [
+  {
+    id:    "explain",
+    emoji: "📚",
+    label: "Explain It",
+    sub:   "I don't understand something",
+    color: "#63D2FF",
+    instruction: `The student wants a concept EXPLAINED from scratch.
+- Ask first: what exactly don't they understand?
+- Explain step-by-step with real-world analogies they'll recognise.
+- Keep chunks short — never dump walls of text.
+- End by checking understanding with ONE clear question.`,
+    starterMessage: "What would you like me to explain? Tell me the topic and I'll walk you through it step by step! 📚",
+  },
+  {
+    id:    "quiz",
+    emoji: "❓",
+    label: "Quiz Me",
+    sub:   "Test what I know",
+    color: "#A8E063",
+    instruction: `The student wants to be QUIZZED.
+- Ask first: what topic and what difficulty (Beginner / Exam-ready / A* challenge)?
+- Ask ONE question at a time. Wait for the answer before continuing.
+- After each answer: confirm if correct, explain the right answer, then move to the next.
+- After 5 questions: give a score (e.g. "4/5!") and brief summary of weak spots.
+- Keep it energetic and encouraging — make it feel like a game.`,
+    starterMessage: "Let's test your knowledge! 🎯\n\nWhat topic do you want to be quizzed on, and how hard should I go?\n\n🟢 Beginner — building foundations\n🟡 Exam-ready — past paper standard\n🔴 A* challenge — examiner-level tough",
+  },
+  {
+    id:    "check",
+    emoji: "✍️",
+    label: "Check My Work",
+    sub:   "Is my answer right?",
+    color: "#FFC300",
+    instruction: `The student wants their work CHECKED and improved.
+- They will paste an answer, essay, or worked solution.
+- Always start with what they did WELL — find at least 2 genuine positives.
+- Then clearly identify what's missing or incorrect.
+- Show the improved version or correct approach.
+- If it's an essay: mark it like a Cambridge examiner — reference the mark scheme.
+- Be specific and constructive. Never just say "wrong" without explaining why.`,
+    starterMessage: "Paste your answer, essay, or working below — I'll give you detailed feedback just like a Cambridge examiner! ✍️\n\nShare the question too if you have it.",
+  },
+  {
+    id:    "papers",
+    emoji: "📄",
+    label: "Past Papers",
+    sub:   "30 years of Cambridge papers",
+    color: "#C77DFF",
+    instruction:    "",
+    starterMessage: "",
+    href:           "/past-papers",
+  },
+  {
+    id:    "chat",
+    emoji: "💬",
+    label: "Free Chat",
+    sub:   "I know what I want to ask",
+    color: "#FF8C69",
+    instruction: `The student knows exactly what they want. Be their expert tutor — answer clearly, guide them to understanding, and keep responses concise unless depth is needed.`,
+    starterMessage: "Go ahead — ask me anything! 💬",
+  },
+];
+
+function buildSystemPrompt(subject, mode) {
+  if (!mode || !mode.instruction) return subject.systemPrompt;
+  return `${subject.systemPrompt}
+
+━━━━ MODE: ${mode.label.toUpperCase()} ━━━━
+${mode.instruction}`;
+}
+
 const PARTNERS = [
   { name: "MITE Karachi", type: "University", status: "Partnership Discussion", flag: "🇵🇰" },
   { name: "International Schools Network", type: "School Group", status: "Active Pilot", flag: "🌍" },
@@ -179,21 +323,66 @@ const Stars = ({ count = 60 }) => {
   );
 };
 
+// ── CHILD SESSION TRACKING ────────────────────────────────────────────────
+// Reads the active child set by the Parent Portal (/parent page).
+// If a child is active, sessions are tracked per-child AND globally.
+function getActiveChild() {
+  try { return JSON.parse(localStorage.getItem("nw_active_child") || "null"); } catch { return null; }
+}
+function recordChildSession(childId) {
+  if (!childId) return;
+  const key = `nw_child_${childId}`;
+  const n = parseInt(localStorage.getItem(key) || "0", 10) + 1;
+  localStorage.setItem(key, String(n));
+}
+function buildChildGreeting(child, lang) {
+  if (!child) return LANG_META[lang]?.greet || LANG_META.en.greet;
+  const greets = {
+    en: `Hi ${child.name}! 👋 I'm Starky 🌟 Great to see you! Select a subject above and ask me anything — I'm ready to help you learn!`,
+    ar: `أهلاً ${child.name}! 👋 أنا ستاركي 🌟 يسعدني رؤيتك! اختر مادة دراسية واسألني أي سؤال.`,
+    ur: `ہیلو ${child.name}! 👋 میں سٹارکی ہوں 🌟 آپ سے مل کر خوشی ہوئی! کوئی مضمون منتخب کریں اور پوچھیں۔`,
+  };
+  return greets[lang] || greets.en;
+}
+
 // ── MAIN COMPONENT ─────────────────────────────────────────────────────────
 export default function DemoPage() {
   const [activeCaseStudy, setActiveCaseStudy] = useState("mite");
   const [activeSubject, setActiveSubject] = useState("marketing");
+  const [lang, setLangState] = useState("en");
+  const [activeChild, setActiveChild] = useState(null);   // child profile from parent portal
   const [messages, setMessages] = useState([
     { role: "assistant", content: "Hi! I'm Starky 🌟 Select a subject above and ask me anything — or tap one of the starter questions to see how I teach. I'm powered by Claude AI and trained across every subject from KG to A Levels." }
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [activeMode, setActiveMode] = useState(null);   // null = not chosen yet
+  const [quizState, setQuizState] = useState(null);     // for quiz mode tracking
   const [showPartnerForm, setShowPartnerForm] = useState(false);
-  const { callsUsed, callsLeft, limitReached, recordCall } = useSessionLimit();
+  const { callsUsed, callsLeft, limitReached, trialActive, trialPct, recordCall } = useSessionLimit();
   const [showLimitModal, setShowLimitModal] = useState(false);
   const [partnerForm, setPartnerForm] = useState({ name: "", institution: "", role: "", email: "", message: "" });
   const [formSent, setFormSent] = useState(false);
   const chatEndRef = useRef(null);
+
+  // Auto-detect browser language on first load
+  useEffect(() => {
+    const detected = detectBrowserLang();
+    setLangState(detected);
+    // Load child profile from parent portal
+    const child = getActiveChild();
+    setActiveChild(child);
+    if (child) {
+      setMessages([{ role: "assistant", content: buildChildGreeting(child, detected) }]);
+    }
+  }, []);
+
+  const setLang = (l) => {
+    setLangState(l);
+    if (typeof localStorage !== "undefined") localStorage.setItem("nw_lang", l);
+    const child = getActiveChild();
+    setMessages([{ role: "assistant", content: buildChildGreeting(child, l) }]);
+  };
 
   const currentCase = CASE_STUDIES.find(c => c.id === activeCaseStudy);
   const currentSubject = DEMO_SUBJECTS.find(s => s.id === activeSubject);
@@ -202,11 +391,36 @@ export default function DemoPage() {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
 
+  // Voice greeting on load — fires once after short delay
+  useEffect(() => {
+    const greet = () => {
+      if (typeof window === "undefined" || !window.speechSynthesis) return;
+      const greeting = "Hi! I am Starky, your personal AI teacher! I can help you with any subject, in any language. Select a topic above and ask me anything!";
+      const u = new SpeechSynthesisUtterance(greeting);
+      u.rate = 0.95;
+      u.pitch = 1.15;
+      u.volume = 1;
+      // Pick a friendly voice if available
+      const voices = window.speechSynthesis.getVoices();
+      const preferred = voices.find(v => v.name.includes("Samantha") || v.name.includes("Google UK") || v.name.includes("Karen") || v.lang === "en-GB");
+      if (preferred) u.voice = preferred;
+      window.speechSynthesis.speak(u);
+    };
+    // Voices load async on some browsers
+    if (window.speechSynthesis?.getVoices().length > 0) {
+      setTimeout(greet, 800);
+    } else {
+      window.speechSynthesis?.addEventListener("voiceschanged", () => setTimeout(greet, 800), { once: true });
+    }
+  }, []);
+
   const sendMessage = async (text) => {
     const userText = text || input.trim();
     if (!userText) return;
     if (limitReached) { setShowLimitModal(true); return; }
     recordCall();
+    // Also track sessions for this specific child
+    if (activeChild?.id) recordChildSession(activeChild.id);
     setInput("");
     setLoading(true);
 
@@ -220,7 +434,7 @@ export default function DemoPage() {
         body: JSON.stringify({
           model: "claude-haiku-4-5-20251001",
           max_tokens: 1000,
-          system: currentSubject.systemPrompt,
+          system: buildSystemPrompt(currentSubject, MODES.find(m => m.id === activeMode)),
           messages: newMessages.map(m => ({ role: m.role, content: m.content })),
         }),
       });
@@ -243,6 +457,16 @@ export default function DemoPage() {
   };
 
   return (
+    <>
+    <Head>
+      <title>Try Starky — AI Tutor for O Level, A Level & All Subjects | NewWorld Education</title>
+      <meta name="description" content="Ask Starky anything — past papers, essay help, quiz mode, exam prep. Free AI tutor covering every Cambridge subject in English, Arabic and Urdu." />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://www.newworld.education/demo" />
+      <meta property="og:title" content="Try Starky AI Tutor Free — NewWorld Education" />
+      <meta property="og:description" content="Free AI tutor for O Level & A Level students. Past papers, study plans, quiz mode. Available 24/7 in your language." />
+      <meta property="og:url" content="https://www.newworld.education/demo" />
+    </Head>
     <div style={{ fontFamily: "'Nunito', 'Trebuchet MS', sans-serif", background: "#060B20", color: "#fff", minHeight: "100vh" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
@@ -515,11 +739,75 @@ export default function DemoPage() {
             🌟 Live Starky Demo
           </h2>
           <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "15px" }}>
-            Powered by Claude AI · Select a subject and ask anything
+            Powered by Claude AI · First tell Starky what you want to do
           </p>
         </div>
 
-        {/* Subject selector */}
+        {/* ── MODE PICKER — Step 1: What do you want to do? ────────────── */}
+        <div style={{
+          background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.08)",
+          borderRadius: "24px", padding: "28px 32px", marginBottom: "28px",
+        }}>
+          <div style={{ fontSize: "11px", fontWeight: "900", color: "rgba(255,255,255,0.35)", letterSpacing: "2px", marginBottom: "18px" }}>
+            STEP 1 — WHAT DO YOU WANT TO DO TODAY?
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: "10px" }}>
+            {MODES.map(mode => {
+              const isActive = activeMode === mode.id;
+              if (mode.href) {
+                // Past Papers — redirect
+                return (
+                  <a key={mode.id} href={mode.href} style={{
+                    background: `${mode.color}12`, border: `2px solid ${mode.color}44`,
+                    borderRadius: "18px", padding: "18px 16px", textDecoration: "none",
+                    display: "flex", flexDirection: "column", gap: "6px",
+                    transition: "all 0.2s", cursor: "pointer",
+                  }}
+                  onMouseEnter={e => { e.currentTarget.style.background=`${mode.color}24`; e.currentTarget.style.borderColor=mode.color; e.currentTarget.style.transform="translateY(-3px)"; }}
+                  onMouseLeave={e => { e.currentTarget.style.background=`${mode.color}12`; e.currentTarget.style.borderColor=`${mode.color}44`; e.currentTarget.style.transform="translateY(0)"; }}
+                  >
+                    <span style={{ fontSize: "28px" }}>{mode.emoji}</span>
+                    <span style={{ fontWeight: "900", fontSize: "15px", color: mode.color }}>{mode.label}</span>
+                    <span style={{ fontSize: "11px", color: "rgba(255,255,255,0.45)", lineHeight: "1.4" }}>{mode.sub}</span>
+                    <span style={{ fontSize: "10px", color: mode.color, fontWeight: "800", marginTop: "4px" }}>OPEN HUB →</span>
+                  </a>
+                );
+              }
+              return (
+                <button key={mode.id} onClick={() => {
+                  setActiveMode(mode.id);
+                  // Set starter message when mode is chosen
+                  setMessages([{ role: "assistant", content: mode.starterMessage }]);
+                  setInput("");
+                }} style={{
+                  background: isActive ? `${mode.color}22` : `${mode.color}09`,
+                  border: `2px solid ${isActive ? mode.color : `${mode.color}33`}`,
+                  borderRadius: "18px", padding: "18px 16px", cursor: "pointer",
+                  textAlign: "left", fontFamily: "'Nunito', sans-serif",
+                  display: "flex", flexDirection: "column", gap: "6px",
+                  transition: "all 0.2s",
+                  boxShadow: isActive ? `0 0 24px ${mode.color}30` : "none",
+                  transform: isActive ? "translateY(-2px)" : "none",
+                }}
+                onMouseEnter={e => { if (!isActive) { e.currentTarget.style.background=`${mode.color}18`; e.currentTarget.style.borderColor=`${mode.color}66`; e.currentTarget.style.transform="translateY(-3px)"; } }}
+                onMouseLeave={e => { if (!isActive) { e.currentTarget.style.background=`${mode.color}09`; e.currentTarget.style.borderColor=`${mode.color}33`; e.currentTarget.style.transform="none"; } }}
+                >
+                  <span style={{ fontSize: "28px" }}>{mode.emoji}</span>
+                  <span style={{ fontWeight: "900", fontSize: "15px", color: isActive ? mode.color : "#fff" }}>{mode.label}</span>
+                  <span style={{ fontSize: "11px", color: "rgba(255,255,255,0.45)", lineHeight: "1.4" }}>{mode.sub}</span>
+                  {isActive && <span style={{ fontSize: "10px", color: mode.color, fontWeight: "900", marginTop: "2px" }}>● ACTIVE</span>}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* ── STEP 2 — Subject selector — only show once mode is chosen ── */}
+        {activeMode && (
+          <div style={{ marginBottom: "10px" }}>
+            <div style={{ fontSize: "11px", fontWeight: "900", color: "rgba(255,255,255,0.35)", letterSpacing: "2px", marginBottom: "12px", textAlign: "center" }}>
+              STEP 2 — NOW PICK YOUR SUBJECT
+            </div>
         <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center", marginBottom: "24px" }}>
           {DEMO_SUBJECTS.map(subj => (
             <button key={subj.id} className="subj-btn" onClick={() => handleSubjectChange(subj.id)} style={{
@@ -532,7 +820,18 @@ export default function DemoPage() {
             }}>{subj.label}</button>
           ))}
         </div>
+          </div>
+        )}
 
+        {/* ── No mode chosen yet — encourage them ───────────────────────── */}
+        {!activeMode && (
+          <div style={{ textAlign: "center", padding: "40px 20px", color: "rgba(255,255,255,0.35)", fontSize: "15px" }}>
+            👆 Pick how you want to learn above — then Starky adapts to you
+          </div>
+        )}
+
+        {/* ── Chat + Sidebar — shown once mode is chosen ──────────────── */}
+        {activeMode && (
         <div style={{ display: "grid", gridTemplateColumns: "1fr 340px", gap: "20px", alignItems: "start" }}>
 
           {/* Chat window */}
@@ -553,15 +852,39 @@ export default function DemoPage() {
                 display: "flex", alignItems: "center", justifyContent: "center",
                 fontSize: "22px", border: `2px solid ${currentSubject.color}66`,
                 boxShadow: `0 0 16px ${currentSubject.color}44`,
-              }}>🌟</div>
+              }}>{MODES.find(m=>m.id===activeMode)?.emoji || "🌟"}</div>
               <div>
                 <div style={{ fontWeight: "900", fontSize: "15px" }}>Starky AI Tutor</div>
                 <div style={{ fontSize: "11px", color: currentSubject.color, fontWeight: "700" }}>
-                  ● Live · {currentSubject.label}
+                  ● {MODES.find(m=>m.id===activeMode)?.label || "Live"} · {currentSubject.label}
                 </div>
               </div>
-              <div style={{ marginLeft: "auto", display: "flex", gap: "6px" }}>
-                {["#FF5F57", "#FFBD2E", "#28CA41"].map(c => (
+              {/* Trial session counter */}
+              <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: "10px" }}>
+                {/* Child profile pill */}
+                {activeChild && (
+                  <a href="/parent" style={{
+                    display:"flex", alignItems:"center", gap:6,
+                    background:`${activeChild.color}18`, border:`1px solid ${activeChild.color}40`,
+                    borderRadius:20, padding:"4px 10px 4px 6px",
+                    textDecoration:"none",
+                  }}>
+                    <span style={{fontSize:16}}>{activeChild.avatar}</span>
+                    <span style={{fontSize:11,fontWeight:800,color:activeChild.color}}>{activeChild.name}</span>
+                  </a>
+                )}
+                {!limitReached && (
+                  <div style={{
+                    background: callsLeft <= 5 ? "rgba(255,107,107,0.15)" : "rgba(168,224,99,0.1)",
+                    border: `1px solid ${callsLeft <= 5 ? "rgba(255,107,107,0.4)" : "rgba(168,224,99,0.25)"}`,
+                    borderRadius: "20px", padding: "4px 12px",
+                    fontSize: "11px", fontWeight: "800",
+                    color: callsLeft <= 5 ? "#FF6B6B" : "#A8E063",
+                  }}>
+                    {callsLeft} free {callsLeft === 1 ? "session" : "sessions"} left
+                  </div>
+                )}
+                {[`#FF5F57`, `#FFBD2E`, `#28CA41`].map(c => (
                   <div key={c} style={{ width: "12px", height: "12px", borderRadius: "50%", background: c }} />
                 ))}
               </div>
@@ -628,53 +951,113 @@ export default function DemoPage() {
             </div>
           </div>
 
-          {/* Sidebar: starter questions */}
+          {/* Sidebar: mode-aware smart prompts */}
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+
+            {/* Smart prompts for the chosen mode+subject */}
             <div style={{
               background: "rgba(255,255,255,0.03)", border: `1px solid ${currentSubject.color}22`,
               borderRadius: "20px", padding: "22px",
             }}>
-              <div style={{ fontSize: "12px", fontWeight: "800", color: currentSubject.color, letterSpacing: "1px", marginBottom: "14px" }}>
-                ⚡ STARTER QUESTIONS
+              <div style={{ fontSize: "12px", fontWeight: "800", color: currentSubject.color, letterSpacing: "1px", marginBottom: "6px" }}>
+                {MODES.find(m=>m.id===activeMode)?.emoji} {MODES.find(m=>m.id===activeMode)?.label.toUpperCase()} — QUICK START
+              </div>
+              <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.3)", marginBottom: "14px" }}>
+                Tap any tile — no typing needed
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                {currentSubject.starterQuestions.map((q, i) => (
-                  <button key={i} className="starter-q" onClick={() => sendMessage(q)} style={{
-                    background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)",
-                    borderRadius: "12px", padding: "12px 14px", cursor: "pointer",
+                {(SMART_PROMPTS[currentSubject.id] || []).slice(0, activeMode === "explain" ? 6 : 6).map((tile, i) => (
+                  <button key={i} className="starter-q" onClick={() => sendMessage(tile.prompt)} style={{
+                    background: "rgba(255,255,255,0.04)", border: `1px solid ${currentSubject.color}22`,
+                    borderRadius: "12px", padding: "11px 14px", cursor: "pointer",
                     textAlign: "left", color: "rgba(255,255,255,0.75)",
                     fontSize: "13px", lineHeight: "1.5", fontFamily: "'Nunito', sans-serif",
                     transition: "all 0.2s", fontWeight: "500",
+                    display: "flex", alignItems: "flex-start", gap: "8px",
                   }}>
-                    {q}
+                    <span style={{ fontSize: "16px", flexShrink: 0 }}>{tile.emoji}</span>
+                    <span>{tile.label}</span>
                   </button>
                 ))}
               </div>
             </div>
 
-            {/* How Starky teaches */}
+            {/* Mode tip */}
             <div style={{
-              background: "rgba(168,224,99,0.07)", border: "1px solid rgba(168,224,99,0.2)",
-              borderRadius: "20px", padding: "22px",
+              background: `${MODES.find(m=>m.id===activeMode)?.color}0D`,
+              border: `1px solid ${MODES.find(m=>m.id===activeMode)?.color}28`,
+              borderRadius: "20px", padding: "20px",
             }}>
-              <div style={{ fontSize: "12px", fontWeight: "800", color: "#A8E063", letterSpacing: "1px", marginBottom: "14px" }}>
-                🎯 HOW STARKY TEACHES
+              <div style={{ fontSize: "12px", fontWeight: "800", color: MODES.find(m=>m.id===activeMode)?.color, letterSpacing: "1px", marginBottom: "12px" }}>
+                💡 {MODES.find(m=>m.id===activeMode)?.label.toUpperCase()} TIPS
               </div>
-              {[
-                "Guides you to the answer — doesn't just give it",
-                "Uses real-world examples you recognise",
-                "Adjusts to your level automatically",
-                "Aligned with Cambridge & HEC standards",
-                "Available in 16 languages",
-              ].map((point, i) => (
-                <div key={i} style={{ display: "flex", gap: "10px", alignItems: "flex-start", marginBottom: "10px" }}>
-                  <span style={{ color: "#A8E063", fontSize: "14px", marginTop: "1px" }}>✓</span>
-                  <span style={{ fontSize: "13px", color: "rgba(255,255,255,0.65)", lineHeight: "1.5" }}>{point}</span>
+              {activeMode === "explain" && [
+                "Be specific: say the exact thing you don't understand",
+                "Ask follow-up: 'can you give a simpler example?'",
+                "Say your level: O Level / A Level / BBA",
+                "Ask Starky to quiz you after explaining",
+              ].map((tip, i) => (
+                <div key={i} style={{ display: "flex", gap: "8px", marginBottom: "9px", alignItems: "flex-start" }}>
+                  <span style={{ color: "#63D2FF", fontSize: "13px" }}>→</span>
+                  <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.55)", lineHeight: "1.5" }}>{tip}</span>
+                </div>
+              ))}
+              {activeMode === "quiz" && [
+                "Tell Starky your topic and difficulty level",
+                "Answer in your own words — don't look it up",
+                "Ask 'why was I wrong?' after mistakes",
+                "Do 5 questions per topic for solid revision",
+              ].map((tip, i) => (
+                <div key={i} style={{ display: "flex", gap: "8px", marginBottom: "9px", alignItems: "flex-start" }}>
+                  <span style={{ color: "#A8E063", fontSize: "13px" }}>→</span>
+                  <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.55)", lineHeight: "1.5" }}>{tip}</span>
+                </div>
+              ))}
+              {activeMode === "check" && [
+                "Paste your FULL answer — not just part of it",
+                "Include the original question if you have it",
+                "Ask for a mark-scheme breakdown",
+                "Ask 'what would a top answer look like?'",
+              ].map((tip, i) => (
+                <div key={i} style={{ display: "flex", gap: "8px", marginBottom: "9px", alignItems: "flex-start" }}>
+                  <span style={{ color: "#FFC300", fontSize: "13px" }}>→</span>
+                  <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.55)", lineHeight: "1.5" }}>{tip}</span>
+                </div>
+              ))}
+              {activeMode === "chat" && [
+                "Be specific — the more detail you give, the better",
+                "Mention your level: O/A Level, BBA, etc.",
+                "Ask for examples from Pakistan or your region",
+                "Ask Starky to check your understanding at the end",
+              ].map((tip, i) => (
+                <div key={i} style={{ display: "flex", gap: "8px", marginBottom: "9px", alignItems: "flex-start" }}>
+                  <span style={{ color: "#FF8C69", fontSize: "13px" }}>→</span>
+                  <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.55)", lineHeight: "1.5" }}>{tip}</span>
                 </div>
               ))}
             </div>
+
+            {/* Past Papers promo */}
+            <a href="/past-papers" style={{
+              background: "rgba(199,125,255,0.08)", border: "1px solid rgba(199,125,255,0.28)",
+              borderRadius: "20px", padding: "20px", textDecoration: "none", display: "block",
+              transition: "all 0.2s",
+            }}
+            onMouseEnter={e => { e.currentTarget.style.background="rgba(199,125,255,0.16)"; e.currentTarget.style.transform="translateY(-2px)"; }}
+            onMouseLeave={e => { e.currentTarget.style.background="rgba(199,125,255,0.08)"; e.currentTarget.style.transform="none"; }}>
+              <div style={{ fontSize: "12px", fontWeight: "800", color: "#C77DFF", letterSpacing: "1px", marginBottom: "8px" }}>
+                📄 PAST PAPERS HUB
+              </div>
+              <div style={{ fontSize: "13px", color: "rgba(255,255,255,0.6)", lineHeight: "1.6", marginBottom: "12px" }}>
+                30 years of Cambridge O &amp; A Level papers — free, organised by subject. AI walks you through every question.
+              </div>
+              <div style={{ fontSize: "12px", fontWeight: "800", color: "#C77DFF" }}>
+                Open Past Papers Hub →
+              </div>
+            </a>
           </div>
         </div>
+        )} {/* end activeMode */}
       </section>
 
       {/* PARTNER SECTION */}
@@ -755,5 +1138,6 @@ export default function DemoPage() {
         </p>
       </footer>
     </div>
+    </>
   );
 }

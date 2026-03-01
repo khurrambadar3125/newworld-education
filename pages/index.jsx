@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import Head from "next/head";
 import { useSessionLimit, SessionLimitBanner, LimitReachedModal } from "../utils/useSessionLimit";
 
 const GRADES = [
@@ -297,6 +298,8 @@ const Stars = ({count=70}) => {
 
 // ── MAIN ────────────────────────────────────────────────────────────────────
 export default function NewWorldEducation() {
+  const { isMobile, isTablet } = useIsMobile();
+  const [menuOpen, setMenuOpen] = useState(false);
   const [activeTab,       setActiveTab]       = useState("students");
   const [selectedGrade,   setSelectedGrade]   = useState(null);
   const [langIndex,       setLangIndex]       = useState(0);
@@ -359,6 +362,26 @@ export default function NewWorldEducation() {
   };
 
   return (
+    <>
+    <Head>
+      <title>NewWorld Education — AI Tutor for Every Student | KG to A Levels</title>
+      <meta name="description" content="Meet Starky — your free AI tutor available 24/7 in 16 languages, covering every subject from KG to A Levels. Trusted by students in Pakistan, UAE, Saudi Arabia and worldwide." />
+      <meta name="keywords" content="AI tutor, online tutoring, O Level, A Level, Cambridge, Pakistan, UAE, Saudi Arabia, KG, free education, Starky, special needs tutor" />
+      <meta name="robots" content="index, follow" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="canonical" href="https://www.newworld.education/" />
+      {/* Open Graph */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.newworld.education/" />
+      <meta property="og:title" content="NewWorld Education — Free AI Tutor for Every Student" />
+      <meta property="og:description" content="Starky is your personal AI teacher — available 24/7, in your language, covering KG to A Levels. Like having a private tutor at zero cost, for every child on Earth." />
+      <meta property="og:image" content="https://www.newworld.education/og-image.png" />
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="NewWorld Education — Free AI Tutor" />
+      <meta name="twitter:description" content="Your personal AI teacher — available 24/7 in 16 languages, KG to A Levels." />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
     <div style={{fontFamily:"'Nunito','Trebuchet MS',sans-serif",background:"#060B20",color:"#fff",minHeight:"100vh",overflowX:"hidden"}}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
@@ -414,7 +437,9 @@ export default function NewWorldEducation() {
             </div>
             <input placeholder="Email address" style={{width:"100%",background:"rgba(255,255,255,0.06)",border:"1px solid rgba(99,210,255,0.25)",borderRadius:"12px",padding:"13px 16px",color:"#fff",fontSize:"14px",outline:"none",marginBottom:"10px",boxSizing:"border-box",fontFamily:"'Nunito',sans-serif"}}/>
             {authMode==="signup"&&<select style={{width:"100%",background:"rgba(255,255,255,0.06)",border:"1px solid rgba(99,210,255,0.25)",borderRadius:"12px",padding:"13px 16px",color:"rgba(255,255,255,0.7)",fontSize:"14px",outline:"none",marginBottom:"10px",boxSizing:"border-box",fontFamily:"'Nunito',sans-serif"}}><option value="">I am a... Student / Teacher / Parent</option><option>Student</option><option>Teacher</option><option>Parent</option></select>}
-            <a href="/special-needs" style={{background:"linear-gradient(135deg,rgba(168,99,255,0.2),rgba(168,99,255,0.1))",border:"1px solid rgba(168,99,255,0.4)",color:"#C77DFF",padding:"9px 18px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",textDecoration:"none",fontFamily:"'Nunito',sans-serif"}}>💜 Special Needs</a>
+            <button className="cta-primary" style={{width:"100%",background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",border:"none",borderRadius:"12px",padding:"15px",color:"#060B20",fontWeight:"900",fontSize:"15px",cursor:"pointer",fontFamily:"'Nunito',sans-serif",transition:"all 0.2s",boxShadow:"0 4px 20px rgba(99,210,255,0.3)",marginBottom:"14px"}}>
+              {authMode==="signup"?"Create My Account →":"Sign In →"}
+            </button>
             <p style={{textAlign:"center",fontSize:"12px",color:"rgba(255,255,255,0.35)",margin:0}}>
               {authMode==="signup"?"Already have an account? ":"New here? "}
               <span onClick={()=>setAuthMode(authMode==="signup"?"login":"signup")} style={{color:"#63D2FF",cursor:"pointer",fontWeight:"700"}}>{authMode==="signup"?"Sign in":"Create account"}</span>
@@ -424,28 +449,41 @@ export default function NewWorldEducation() {
       )}
 
       {/* NAV */}
-      <nav style={{position:"fixed",top:0,left:0,right:0,zIndex:100,background:"rgba(6,11,32,0.9)",backdropFilter:"blur(20px)",borderBottom:"1px solid rgba(99,210,255,0.1)",display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0 40px",height:"68px"}}>
+      <nav style={{position:"fixed",top:0,left:0,right:0,zIndex:100,background:"rgba(6,11,32,0.95)",backdropFilter:"blur(20px)",borderBottom:"1px solid rgba(99,210,255,0.1)",display:"flex",alignItems:"center",justifyContent:"space-between",padding:isMobile?"0 16px":"0 40px",height:"68px",flexWrap:"wrap"}}>
         <div style={{display:"flex",alignItems:"center",gap:"10px"}}>
           <span style={{fontSize:"24px"}}>🌍</span>
           <span style={{fontWeight:"900",fontSize:"19px"}}>New<span style={{color:"#63D2FF"}}>World</span><span style={{fontSize:"11px",color:"#A8E063",marginLeft:"6px",fontWeight:"700",letterSpacing:"1px"}}>EDUCATION</span></span>
         </div>
-        <div style={{display:"flex",gap:"28px",alignItems:"center"}}>
+        {!isMobile && <div style={{display:"flex",gap:"28px",alignItems:"center"}}>
           {["Students","Teachers","Parents","Partners"].map(item=>(
             <span key={item} className="tab-btn" style={{color:"rgba(255,255,255,0.55)",cursor:"pointer",fontSize:"14px",fontWeight:"600",transition:"color 0.2s"}}>{item}</span>
           ))}
-        </div>
-        <div style={{display:"flex",gap:"10px",alignItems:"center"}}>
-          <div style={{fontSize:"11px",fontWeight:"800",color:"#63D2FF",background:"rgba(99,210,255,0.1)",padding:"5px 14px",borderRadius:"20px",minWidth:"80px",textAlign:"center",overflow:"hidden",height:"22px",lineHeight:"22px"}}>
-            {LANG_TICKER[langIndex]}
-          </div>
-          <a href="/special-needs" style={{background:"linear-gradient(135deg,rgba(168,99,255,0.2),rgba(168,99,255,0.1))",border:"1px solid rgba(168,99,255,0.4)",color:"#C77DFF",padding:"9px 18px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",textDecoration:"none",fontFamily:"'Nunito',sans-serif"}}>💜 Special Needs</a>
+        </div>}
+        {!isMobile ? (
+          <div style={{display:"flex",gap:"10px",alignItems:"center"}}>
+            <a href="/special-needs" style={{background:"linear-gradient(135deg,rgba(168,99,255,0.2),rgba(168,99,255,0.1))",border:"1px solid rgba(168,99,255,0.4)",color:"#C77DFF",padding:"9px 18px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",textDecoration:"none",fontFamily:"'Nunito',sans-serif"}}>💜 Special Needs</a>
             <a href="/parent" style={{background:"linear-gradient(135deg,rgba(255,193,0,0.15),rgba(255,193,0,0.08))",border:"1px solid rgba(255,193,0,0.35)",color:"#FFC300",padding:"9px 18px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",textDecoration:"none",fontFamily:"'Nunito',sans-serif"}}>👨‍👧‍👦 Parent Portal</a>
             <a href="/demo" style={{background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",border:"none",color:"#060B20",padding:"10px 20px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",textDecoration:"none",fontFamily:"'Nunito',sans-serif",boxShadow:"0 4px 20px rgba(99,210,255,0.3)"}}>⭐ Try Starky →</a>
-        </div>
+          </div>
+        ) : (
+          <button onClick={()=>setMenuOpen(m=>!m)} style={{background:"none",border:"none",color:"#fff",fontSize:"26px",cursor:"pointer",padding:"4px 8px",lineHeight:1}}>
+            {menuOpen?"✕":"☰"}
+          </button>
+        )}
+        {isMobile && menuOpen && (
+          <div style={{position:"fixed",top:"68px",left:0,right:0,background:"rgba(6,11,32,0.98)",borderBottom:"1px solid rgba(99,210,255,0.15)",padding:"16px 20px",display:"flex",flexDirection:"column",gap:"4px",zIndex:99,backdropFilter:"blur(20px)"}}>
+            {["Students","Teachers","Parents","Partners"].map(item=>(
+              <span key={item} onClick={()=>setMenuOpen(false)} style={{fontSize:"16px",color:"rgba(255,255,255,0.75)",cursor:"pointer",fontWeight:"700",padding:"12px 0",borderBottom:"1px solid rgba(255,255,255,0.06)"}}>{item}</span>
+            ))}
+            <a href="/special-needs" onClick={()=>setMenuOpen(false)} style={{color:"#C77DFF",fontWeight:"800",fontSize:"16px",textDecoration:"none",padding:"12px 0",borderBottom:"1px solid rgba(255,255,255,0.06)"}}>💜 Special Needs</a>
+            <a href="/parent" onClick={()=>setMenuOpen(false)} style={{color:"#FFC300",fontWeight:"800",fontSize:"16px",textDecoration:"none",padding:"12px 0",borderBottom:"1px solid rgba(255,255,255,0.06)"}}>👨‍👧‍👦 Parent Portal</a>
+            <a href="/demo" onClick={()=>setMenuOpen(false)} style={{color:"#63D2FF",fontWeight:"800",fontSize:"16px",textDecoration:"none",padding:"12px 0",borderBottom:"1px solid rgba(255,255,255,0.06)"}}>⭐ Try Starky</a>
+          </div>
+        )}
       </nav>
 
       {/* HERO */}
-      <section style={{position:"relative",minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",padding:"100px 40px 60px",background:"radial-gradient(ellipse at 50% 0%,rgba(99,210,255,0.1) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(168,224,99,0.07) 0%,transparent 50%)"}}>
+      <section style={{position:"relative",minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",padding:isMobile?"80px 16px 40px":"100px 40px 60px",background:"radial-gradient(ellipse at 50% 0%,rgba(99,210,255,0.1) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(168,224,99,0.07) 0%,transparent 50%)"}}>
         <Stars/>
 
         {/* World's No 1 banner */}
@@ -471,7 +509,7 @@ export default function NewWorldEducation() {
         <div style={{background:"rgba(99,210,255,0.1)",border:"1px solid rgba(99,210,255,0.25)",borderRadius:"30px",padding:"8px 22px",marginBottom:"24px",fontSize:"13px",fontWeight:"700",color:"#63D2FF",display:"flex",alignItems:"center",gap:"8px",flexWrap:"wrap",justifyContent:"center"}}>
           🌍 Global AI School — KG to A Levels
           <span style={{background:"#A8E063",color:"#060B20",padding:"2px 10px",borderRadius:"20px",fontSize:"11px",fontWeight:"800"}}>16 LANGUAGES</span>
-          <span style={{background:"rgba(168,224,99,0.15)",color:"#A8E063",padding:"2px 10px",borderRadius:"20px",fontSize:"11px",fontWeight:"800"}}>FREE TRIAL</span>
+          <span style={{background:"rgba(168,224,99,0.2)",color:"#A8E063",padding:"2px 10px",borderRadius:"20px",fontSize:"11px",fontWeight:"800"}}>FREE TRIAL</span>
         </div>
 
         <h1 style={{fontWeight:"900",fontSize:"clamp(34px,6vw,70px)",textAlign:"center",lineHeight:"1.08",margin:"0 0 18px",background:"linear-gradient(135deg,#fff 0%,#63D2FF 45%,#A8E063 100%)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",backgroundSize:"200% 200%",animation:"gradShift 5s ease infinite"}}>
@@ -487,7 +525,7 @@ export default function NewWorldEducation() {
         </p>
 
         <div style={{display:"flex",gap:"14px",marginBottom:"52px",flexWrap:"wrap",justifyContent:"center"}}>
-          <button onClick={()=>{setAuthMode("signup");setShowAuthModal(true);}} className="cta-primary" style={{background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",border:"none",color:"#060B20",padding:"18px 44px",borderRadius:"50px",fontWeight:"900",fontSize:"17px",cursor:"pointer",transition:"all 0.2s",boxShadow:"0 8px 32px rgba(99,210,255,0.4)"}}>Start Learning Free →</button>
+          <button onClick={()=>{setAuthMode("signup");setShowAuthModal(true);}} className="cta-primary" style={{background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",border:"none",color:"#060B20",padding:isMobile?"14px 28px":"18px 44px",borderRadius:"50px",fontWeight:"900",fontSize:isMobile?"15px":"17px",cursor:"pointer",transition:"all 0.2s",boxShadow:"0 8px 32px rgba(99,210,255,0.4)"}}>Start Learning Free →</button>
           <button onClick={()=>window.location.href="/demo"} className="cta-secondary" style={{background:"transparent",border:"2px solid rgba(255,255,255,0.2)",color:"#fff",padding:"18px 44px",borderRadius:"50px",fontWeight:"800",fontSize:"17px",cursor:"pointer",fontFamily:"'Nunito',sans-serif",transition:"all 0.2s"}}>Meet Starky 🌟</button>
         </div>
 
@@ -512,7 +550,7 @@ export default function NewWorldEducation() {
         </div>
 
         {/* Stats */}
-        <div style={{display:"flex",gap:"48px",marginTop:"48px",flexWrap:"wrap",justifyContent:"center"}}>
+        <div style={{display:"flex",gap:isMobile?"24px":"48px",marginTop:isMobile?"32px":"48px",flexWrap:"wrap",justifyContent:"center"}}>
           {[{value:"1B+",label:"Students Who Need This"},{value:"16",label:"Languages Supported"},{value:"13",label:"Grade Levels"},{value:"24/7",label:"Starky Availability"}].map(stat=>(
             <div key={stat.label} style={{textAlign:"center"}}>
               <div style={{fontSize:"clamp(26px,4vw,40px)",fontWeight:"900",background:"linear-gradient(135deg,#63D2FF,#A8E063)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>{stat.value}</div>
@@ -523,12 +561,12 @@ export default function NewWorldEducation() {
       </section>
 
       {/* STARKY SECTION */}
-      <section style={{padding:"80px 40px",background:"radial-gradient(ellipse at 40% 50%,rgba(99,210,255,0.07) 0%,transparent 65%)",position:"relative"}}>
-        <div style={{maxWidth:"1200px",margin:"0 auto",display:"flex",alignItems:"center",gap:"72px",flexWrap:"wrap",justifyContent:"center"}}>
+      <section style={{padding:isMobile?"40px 16px":"80px 40px",background:"radial-gradient(ellipse at 40% 50%,rgba(99,210,255,0.07) 0%,transparent 65%)",position:"relative"}}>
+        <div style={{maxWidth:"1200px",margin:"0 auto",display:"flex",alignItems:"center",gap:isMobile?"32px":"72px",flexWrap:"wrap",justifyContent:"center",flexDirection:isMobile?"column":"row"}}>
 
           {/* Avatar */}
-          <div style={{flex:"0 0 auto",textAlign:"center",position:"relative",width:"300px"}}>
-            <div style={{position:"relative",width:"300px",height:"300px",margin:"0 auto"}}>
+          <div style={{flex:"0 0 auto",textAlign:"center",position:"relative",width:isMobile?"200px":"300px"}}>
+            <div style={{position:"relative",width:isMobile?"200px":"300px",height:isMobile?"200px":"300px",margin:"0 auto"}}>
               <div style={{position:"absolute",inset:"-30px",borderRadius:"50%",border:"1px solid rgba(99,210,255,0.12)"}}/>
               <div style={{position:"absolute",inset:"-60px",borderRadius:"50%",border:"1px dashed rgba(168,224,99,0.09)"}}/>
               <div style={{position:"absolute",top:"50%",left:"50%",width:0,height:0}}>
@@ -662,8 +700,8 @@ export default function NewWorldEducation() {
       </section>
 
       {/* LEARNING REPORT SHOWCASE */}
-      <section style={{padding:"60px 40px",background:"rgba(168,224,99,0.04)",borderTop:"1px solid rgba(168,224,99,0.1)",borderBottom:"1px solid rgba(168,224,99,0.1)"}}>
-        <div style={{maxWidth:"960px",margin:"0 auto",display:"grid",gridTemplateColumns:"1fr 1fr",gap:"48px",alignItems:"center",flexWrap:"wrap"}}>
+      <section style={{padding:isMobile?"32px 16px":"60px 40px",background:"rgba(168,224,99,0.04)",borderTop:"1px solid rgba(168,224,99,0.1)",borderBottom:"1px solid rgba(168,224,99,0.1)"}}>
+        <div style={{maxWidth:"960px",margin:"0 auto",display:"grid",gridTemplateColumns:isMobile?"1fr":"1fr 1fr",gap:isMobile?"24px":"48px",alignItems:"center",flexWrap:"wrap"}}>
           <div>
             <div style={{fontSize:"11px",fontWeight:"800",color:"#A8E063",letterSpacing:"1.5px",marginBottom:"14px"}}>AFTER EVERY SESSION</div>
             <h2 style={{fontWeight:"900",fontSize:"clamp(24px,3.5vw,42px)",margin:"0 0 16px",lineHeight:"1.15"}}>
@@ -814,7 +852,7 @@ export default function NewWorldEducation() {
       </section>
 
       {/* LANGUAGES */}
-      <section style={{padding:"60px 40px",borderTop:"1px solid rgba(255,255,255,0.05)"}}>
+      <section style={{padding:isMobile?"32px 16px":"60px 40px",borderTop:"1px solid rgba(255,255,255,0.05)"}}>
         <div style={{maxWidth:"980px",margin:"0 auto",textAlign:"center"}}>
           <h2 style={{fontWeight:"900",fontSize:"clamp(22px,3vw,42px)",margin:"0 0 10px"}}>Automatic <span style={{color:"#63D2FF"}}>Multilingual</span> Learning</h2>
           <p style={{color:"rgba(255,255,255,0.5)",marginBottom:"32px",fontSize:"14px"}}>Starky detects your language automatically. No settings, no switching — just talk. Reaching over <strong style={{color:"#63D2FF"}}>6 billion speakers</strong>.</p>
@@ -950,5 +988,6 @@ export default function NewWorldEducation() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

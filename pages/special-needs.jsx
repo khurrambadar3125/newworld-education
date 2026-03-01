@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { useSessionLimit, LimitReachedModal } from "../utils/useSessionLimit";
+import Head from "next/head";
 
 // ── SPECIAL NEEDS PROFILES ─────────────────────────────────────────────────
 const PROFILES = [
@@ -144,6 +145,15 @@ const Stars = ({ count = 40 }) => {
     delay: Math.random() * 4,
   }))).current;
   return (
+    <>
+    <Head>
+      <title>Inclusive AI Learning — Special Needs Tutor | NewWorld Education</title>
+      <meta name="description" content="Starky adapts to every learner — dyslexia, ADHD, autism, visual and hearing differences. Calm, patient, structured AI tutor in English and Arabic." />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://www.newworld.education/special-needs" />
+      <meta property="og:title" content="Inclusive AI Learning — Special Needs Tutor | NewWorld Education" />
+      <meta property="og:url" content="https://www.newworld.education/special-needs" />
+    </Head>
     <div style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
       {stars.map(s => (
         <div key={s.id} style={{
@@ -166,25 +176,6 @@ export default function SpecialPage() {
   const chatEndRef                        = useRef(null);
   const { callsUsed, callsLeft, limitReached, recordCall, FREE_DAILY_LIMIT } = useSessionLimit();
   const [showLimitModal, setShowLimitModal] = useState(false);
-
-
-  // Voice greeting on page load
-  useEffect(() => {
-    if (typeof window !== 'undefined' && window.speechSynthesis) {
-      window.speechSynthesis.cancel();
-      const greeting = lang === 'ar'
-        ? 'مرحباً! أنا ستاركي. أنا هنا من أجلك دائماً!'
-        : 'Hi there! I am Starky — your personal AI teacher. I am here for you, always. Ask me anything!';
-      const utt = new SpeechSynthesisUtterance(greeting);
-      utt.lang = lang === 'ar' ? 'ar' : 'en-GB';
-      utt.rate = 0.88;
-      utt.pitch = 1.05;
-      setTimeout(() => {
-        try { window.speechSynthesis.speak(utt); } catch(e) {}
-      }, 800);
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // once on mount
 
   useEffect(() => { chatEndRef.current?.scrollIntoView({ behavior: "smooth" }); }, [messages, loading]);
 
@@ -351,6 +342,7 @@ export default function SpecialPage() {
             ))}
           </div>
 
+          {/* Session counter hidden from child — parent handles billing via portal */}
 
           {/* Input */}
           <div style={{ padding: "12px 16px 16px", borderTop: `1px solid ${activeProfile.color}22`, display: "flex", gap: "10px" }}>
@@ -403,5 +395,8 @@ export default function SpecialPage() {
         </p>
       </footer>
     </div>
+  );
+
+    </>
   );
 }
