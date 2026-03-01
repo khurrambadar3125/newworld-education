@@ -414,9 +414,7 @@ export default function NewWorldEducation() {
             </div>
             <input placeholder="Email address" style={{width:"100%",background:"rgba(255,255,255,0.06)",border:"1px solid rgba(99,210,255,0.25)",borderRadius:"12px",padding:"13px 16px",color:"#fff",fontSize:"14px",outline:"none",marginBottom:"10px",boxSizing:"border-box",fontFamily:"'Nunito',sans-serif"}}/>
             {authMode==="signup"&&<select style={{width:"100%",background:"rgba(255,255,255,0.06)",border:"1px solid rgba(99,210,255,0.25)",borderRadius:"12px",padding:"13px 16px",color:"rgba(255,255,255,0.7)",fontSize:"14px",outline:"none",marginBottom:"10px",boxSizing:"border-box",fontFamily:"'Nunito',sans-serif"}}><option value="">I am a... Student / Teacher / Parent</option><option>Student</option><option>Teacher</option><option>Parent</option></select>}
-            <button className="cta-primary" style={{width:"100%",background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",border:"none",borderRadius:"12px",padding:"15px",color:"#060B20",fontWeight:"900",fontSize:"15px",cursor:"pointer",fontFamily:"'Nunito',sans-serif",transition:"all 0.2s",boxShadow:"0 4px 20px rgba(99,210,255,0.3)",marginBottom:"14px"}}>
-              {authMode==="signup"?"Create My Account →":"Sign In →"}
-            </button>
+            <a href="/special-needs" style={{background:"linear-gradient(135deg,rgba(168,99,255,0.2),rgba(168,99,255,0.1))",border:"1px solid rgba(168,99,255,0.4)",color:"#C77DFF",padding:"9px 18px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",textDecoration:"none",fontFamily:"'Nunito',sans-serif"}}>💜 Special Needs</a>
             <p style={{textAlign:"center",fontSize:"12px",color:"rgba(255,255,255,0.35)",margin:0}}>
               {authMode==="signup"?"Already have an account? ":"New here? "}
               <span onClick={()=>setAuthMode(authMode==="signup"?"login":"signup")} style={{color:"#63D2FF",cursor:"pointer",fontWeight:"700"}}>{authMode==="signup"?"Sign in":"Create account"}</span>
@@ -440,8 +438,9 @@ export default function NewWorldEducation() {
           <div style={{fontSize:"11px",fontWeight:"800",color:"#63D2FF",background:"rgba(99,210,255,0.1)",padding:"5px 14px",borderRadius:"20px",minWidth:"80px",textAlign:"center",overflow:"hidden",height:"22px",lineHeight:"22px"}}>
             {LANG_TICKER[langIndex]}
           </div>
-          <button onClick={()=>{setAuthMode("login");setShowAuthModal(true);}} style={{background:"transparent",border:"1px solid rgba(255,255,255,0.18)",color:"rgba(255,255,255,0.65)",padding:"9px 20px",borderRadius:"30px",fontWeight:"700",fontSize:"13px",cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>Sign In</button>
-          <button onClick={()=>{setAuthMode("signup");setShowAuthModal(true);}} className="cta-primary" style={{background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",border:"none",color:"#060B20",padding:"10px 24px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",cursor:"pointer",transition:"all 0.2s",boxShadow:"0 4px 20px rgba(99,210,255,0.3)"}}>Get Started →</button>
+          <a href="/special-needs" style={{background:"linear-gradient(135deg,rgba(168,99,255,0.2),rgba(168,99,255,0.1))",border:"1px solid rgba(168,99,255,0.4)",color:"#C77DFF",padding:"9px 18px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",textDecoration:"none",fontFamily:"'Nunito',sans-serif"}}>💜 Special Needs</a>
+            <a href="/parent" style={{background:"linear-gradient(135deg,rgba(255,193,0,0.15),rgba(255,193,0,0.08))",border:"1px solid rgba(255,193,0,0.35)",color:"#FFC300",padding:"9px 18px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",textDecoration:"none",fontFamily:"'Nunito',sans-serif"}}>👨‍👧‍👦 Parent Portal</a>
+            <a href="/demo" style={{background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",border:"none",color:"#060B20",padding:"10px 20px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",textDecoration:"none",fontFamily:"'Nunito',sans-serif",boxShadow:"0 4px 20px rgba(99,210,255,0.3)"}}>⭐ Try Starky →</a>
         </div>
       </nav>
 
@@ -472,7 +471,7 @@ export default function NewWorldEducation() {
         <div style={{background:"rgba(99,210,255,0.1)",border:"1px solid rgba(99,210,255,0.25)",borderRadius:"30px",padding:"8px 22px",marginBottom:"24px",fontSize:"13px",fontWeight:"700",color:"#63D2FF",display:"flex",alignItems:"center",gap:"8px",flexWrap:"wrap",justifyContent:"center"}}>
           🌍 Global AI School — KG to A Levels
           <span style={{background:"#A8E063",color:"#060B20",padding:"2px 10px",borderRadius:"20px",fontSize:"11px",fontWeight:"800"}}>16 LANGUAGES</span>
-          <span style={{background:"rgba(99,210,255,0.2)",color:"#63D2FF",padding:"2px 10px",borderRadius:"20px",fontSize:"11px",fontWeight:"800"}}>100% FREE</span>
+          <span style={{background:"rgba(168,224,99,0.15)",color:"#A8E063",padding:"2px 10px",borderRadius:"20px",fontSize:"11px",fontWeight:"800"}}>FREE TRIAL</span>
         </div>
 
         <h1 style={{fontWeight:"900",fontSize:"clamp(34px,6vw,70px)",textAlign:"center",lineHeight:"1.08",margin:"0 0 18px",background:"linear-gradient(135deg,#fff 0%,#63D2FF 45%,#A8E063 100%)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",backgroundSize:"200% 200%",animation:"gradShift 5s ease infinite"}}>
