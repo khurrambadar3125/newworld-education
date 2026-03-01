@@ -2,6 +2,19 @@ import { useState, useEffect, useRef } from "react";
 import Head from "next/head";
 import { useSessionLimit, SessionLimitBanner, LimitReachedModal } from "../utils/useSessionLimit";
 
+// Mobile detection hook
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < breakpoint);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, [breakpoint]);
+  return isMobile;
+}
+
+
 const GRADES = [
   { id:"kg",  label:"KG",       age:"4-5",   color:"#FF6B6B", emoji:"🌱" },
   { id:"g1",  label:"Grade 1",  age:"5-6",   color:"#FF8E53", emoji:"⭐" },

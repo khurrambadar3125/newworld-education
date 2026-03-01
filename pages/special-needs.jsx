@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import { useSessionLimit, LimitReachedModal } from "../utils/useSessionLimit";
-import Head from "next/head";
 
 // ── SPECIAL NEEDS PROFILES ─────────────────────────────────────────────────
 const PROFILES = [
@@ -145,15 +144,6 @@ const Stars = ({ count = 40 }) => {
     delay: Math.random() * 4,
   }))).current;
   return (
-    <>
-    <Head>
-      <title>Inclusive AI Learning — Special Needs Tutor | NewWorld Education</title>
-      <meta name="description" content="Starky adapts to every learner — dyslexia, ADHD, autism, visual and hearing differences. Calm, patient, structured AI tutor in English and Arabic." />
-      <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://www.newworld.education/special-needs" />
-      <meta property="og:title" content="Inclusive AI Learning — Special Needs Tutor | NewWorld Education" />
-      <meta property="og:url" content="https://www.newworld.education/special-needs" />
-    </Head>
     <div style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
       {stars.map(s => (
         <div key={s.id} style={{
@@ -395,8 +385,5 @@ export default function SpecialPage() {
         </p>
       </footer>
     </div>
-  );
-
-    </>
   );
 }

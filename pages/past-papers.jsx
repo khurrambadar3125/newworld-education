@@ -9,7 +9,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { useState, useRef, useEffect } from "react";
-import { useSessionLimit, TrialBanner, UpgradeModal } from "../utils/useSessionLimit";
+import { useSessionLimit } from "../utils/useSessionLimit";
 import Head from "next/head";
 
 // ── PROGRESS STORAGE ─────────────────────────────────────────────────────────
@@ -410,7 +410,6 @@ export default function PastPapersPage() {
   const [messages, setMessages] = useState([]);
   const [input,   setInput]   = useState("");
   const [loading, setLoading] = useState(false);
-  const [showUpgrade,   setShowUpgrade]   = useState(false);
   const [showStudyPlan, setShowStudyPlan] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [progress, setProgress] = useState({});
@@ -421,7 +420,7 @@ export default function PastPapersPage() {
   const fileInputRef = useRef(null);
   const chatEndRef   = useRef(null);
 
-  const { callsUsed, callsLeft, limitReached, trialActive, trialPct, recordCall } = useSessionLimit();
+  const { callsUsed, callsLeft, limitReached, recordCall } = useSessionLimit();
 
   useEffect(()=>{
     const fn=()=>setIsMobile(window.innerWidth<768);
@@ -555,7 +554,6 @@ export default function PastPapersPage() {
             </button>
           ))}
         </div>
-        {trialActive&&<div style={{marginTop:40}}><TrialBanner callsUsed={callsUsed} callsLeft={callsLeft} limitReached={limitReached} trialPct={trialPct}/></div>}
       </div>
     </div>
   );
@@ -604,7 +602,6 @@ export default function PastPapersPage() {
             );
           })}
         </div>
-        {trialActive&&<div style={{marginTop:24}}><TrialBanner callsUsed={callsUsed} callsLeft={callsLeft} limitReached={limitReached} trialPct={trialPct}/></div>}
       </div>
     </div>
   );
@@ -615,7 +612,6 @@ export default function PastPapersPage() {
 
       {/* Modals */}
       {showStudyPlan && <StudyPlanModal subject={subject} level={level} onClose={()=>setShowStudyPlan(false)} onSend={sendMessage}/>}
-      {showUpgrade   && <UpgradeModal onClose={()=>setShowUpgrade(false)}/>}
 
       {/* Hidden file input */}
       <input ref={fileInputRef} type="file" accept="application/pdf" style={{display:"none"}} onChange={e=>handlePdfUpload(e.target.files[0])}/>
@@ -641,7 +637,6 @@ export default function PastPapersPage() {
         </div>
       </header>
 
-      {trialActive&&<TrialBanner callsUsed={callsUsed} callsLeft={callsLeft} limitReached={limitReached} trialPct={trialPct} compact/>}
 
       {/* Layout */}
       <div style={{ maxWidth:980, margin:"0 auto", padding:isMobile?"12px":"20px 24px", display:"grid", gridTemplateColumns:isMobile?"1fr":"272px 1fr", gap:16 }}>
