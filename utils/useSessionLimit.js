@@ -17,7 +17,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 
-const FREE_DAILY_LIMIT = 5;           // max Starky API calls per day
+const FREE_DAILY_LIMIT = 25;           // max Starky API calls per day
 const STORAGE_KEY      = "nwe_usage"; // localStorage key
 
 /**
