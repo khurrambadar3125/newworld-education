@@ -397,6 +397,8 @@ export default function NewWorldEducation() {
     </Head>
     <div style={{fontFamily:"'Nunito','Trebuchet MS',sans-serif",background:"#060B20",color:"#fff",minHeight:"100vh",overflowX:"hidden"}}>
       <style>{`
+        html { scroll-behavior: smooth; }
+
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
         @keyframes twinkle  { from{opacity:0.1} to{opacity:0.85} }
         @keyframes float    { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
@@ -474,9 +476,9 @@ export default function NewWorldEducation() {
         </div>}
         {!isMobile ? (
           <div style={{display:"flex",gap:"10px",alignItems:"center"}}>
-            <a href="/special-needs" style={{background:"linear-gradient(135deg,rgba(168,99,255,0.2),rgba(168,99,255,0.1))",border:"1px solid rgba(168,99,255,0.4)",color:"#C77DFF",padding:"9px 18px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",textDecoration:"none",fontFamily:"'Nunito',sans-serif"}}>💜 Special Needs</a>
+            {!isMobile&&<div style={{display:"flex",gap:8,alignItems:"center"}}><a href="/special-needs" style={{background:"linear-gradient(135deg,rgba(168,99,255,0.2),rgba(168,99,255,0.1))",border:"1px solid rgba(168,99,255,0.4)",color:"#C77DFF",padding:"9px 18px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",textDecoration:"none",fontFamily:"'Nunito',sans-serif"}}>💜 Special Needs</a>
             <a href="/parent" style={{background:"linear-gradient(135deg,rgba(255,193,0,0.15),rgba(255,193,0,0.08))",border:"1px solid rgba(255,193,0,0.35)",color:"#FFC300",padding:"9px 18px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",textDecoration:"none",fontFamily:"'Nunito',sans-serif"}}>👨‍👧‍👦 Parent Portal</a>
-            <a href="/demo" style={{background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",border:"none",color:"#060B20",padding:"10px 20px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",textDecoration:"none",fontFamily:"'Nunito',sans-serif",boxShadow:"0 4px 20px rgba(99,210,255,0.3)"}}>⭐ Try Starky →</a>
+            <a href="/demo" style={{background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",border:"none",color:"#060B20",padding:"10px 20px",borderRadius:"30px",fontWeight:"800",fontSize:"13px",textDecoration:"none",fontFamily:"'Nunito',sans-serif",boxShadow:"0 4px 20px rgba(99,210,255,0.3)"}}>⭐ Try Starky →</a></div>}
           </div>
         ) : (
           <button onClick={()=>setMenuOpen(m=>!m)} style={{background:"none",border:"none",color:"#fff",fontSize:"26px",cursor:"pointer",padding:"4px 8px",lineHeight:1}}>
@@ -779,6 +781,7 @@ export default function NewWorldEducation() {
             <div>
               <div style={{fontSize:"11px",fontWeight:"800",color:"rgba(168,224,99,0.7)",letterSpacing:"1.5px",marginBottom:"14px"}}>FOR EVERY TEACHER WORLDWIDE</div>
               <h2 style={{fontWeight:"900",fontSize:"clamp(26px,3.5vw,44px)",margin:"0 0 20px",lineHeight:"1.15"}}>
+          <span id="teachers" style={{scrollMarginTop:"80px",display:"block"}}></span>
                 AI Is Not Your Enemy.<br/>
                 <span style={{color:"#A8E063"}}>It's Your Best Assistant.</span>
               </h2>
@@ -890,6 +893,7 @@ export default function NewWorldEducation() {
           <div style={{textAlign:"center",marginBottom:"44px"}}>
             <div style={{fontSize:"11px",fontWeight:"800",color:"rgba(99,210,255,0.7)",letterSpacing:"1.5px",marginBottom:"12px"}}>BUILDING THE FUTURE OF EDUCATION</div>
             <h2 style={{fontWeight:"900",fontSize:"clamp(24px,4vw,46px)",margin:"0 0 14px"}}>
+          <span id="partners" style={{scrollMarginTop:"80px",display:"block"}}></span>
               Institutional &<br/><span style={{color:"#63D2FF"}}>Government Partnerships</span>
             </h2>
             <p style={{color:"rgba(255,255,255,0.55)",fontSize:"15px",maxWidth:"580px",margin:"0 auto",lineHeight:"1.7"}}>
