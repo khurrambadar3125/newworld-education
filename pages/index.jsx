@@ -626,7 +626,7 @@ export default function NewWorldEducation() {
 
             <div style={{display:"flex",gap:"14px",marginBottom:"52px",flexWrap:"wrap",justifyContent:"center"}}>
               <button onClick={()=>{setAuthMode("signup");setShowAuthModal(true);}} className="cta-primary" style={{background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",border:"none",color:"#060B20",padding:"18px 44px",borderRadius:"50px",fontWeight:"900",fontSize:"17px",cursor:"pointer",transition:"all 0.2s",boxShadow:"0 8px 32px rgba(99,210,255,0.4)"}}>Start Learning Free →</button>
-              <button onClick={()=>window.location.href="/demo"} className="cta-secondary" style={{background:"transparent",border:"2px solid rgba(255,255,255,0.2)",color:"#fff",padding:"18px 44px",borderRadius:"50px",fontWeight:"800",fontSize:"17px",cursor:"pointer",fontFamily:"'Nunito',sans-serif",transition:"all 0.2s"}}>Meet Starky 🌟</button>
+              <button onClick={()=>window.location.href="/demo"} className="cta-secondary" style={{background:"transparent",border:"2px solid rgba(255,255,255,0.2)",color:"#fff",padding:isMobile?"14px 24px":"18px 44px",borderRadius:"50px",fontWeight:"800",fontSize:isMobile?"15px":"17px",cursor:"pointer",fontFamily:"'Nunito',sans-serif",transition:"all 0.2s"}}>Meet Starky 🌟</button>
             </div>
 
             {/* GRADE SELECTOR */}
@@ -668,7 +668,7 @@ export default function NewWorldEducation() {
 
           {/* Avatar */}
           <div style={{flex:"0 0 auto",textAlign:"center",position:"relative",width:isMobile?"200px":"300px"}}>
-            <div style={{position:"relative",width:isMobile?"200px":"300px",height:isMobile?"200px":"300px",margin:"0 auto"}}>
+            <div style={{position:"relative",width:isMobile?"180px":"300px",height:isMobile?"180px":"300px",margin:"0 auto"}}>
               <div style={{position:"absolute",inset:"-30px",borderRadius:"50%",border:"1px solid rgba(99,210,255,0.12)"}}/>
               <div style={{position:"absolute",inset:"-60px",borderRadius:"50%",border:"1px dashed rgba(168,224,99,0.09)"}}/>
               <div style={{position:"absolute",top:"50%",left:"50%",width:0,height:0}}>
@@ -677,7 +677,7 @@ export default function NewWorldEducation() {
               <div style={{position:"absolute",top:"50%",left:"50%",width:0,height:0}}>
                 <div style={{position:"absolute",width:"9px",height:"9px",borderRadius:"50%",background:"#A8E063",marginLeft:"-4.5px",marginTop:"-4.5px",animation:"orbit2 7s linear infinite",transformOrigin:"4.5px 4.5px"}}/>
               </div>
-              <div onClick={()=>{setStarkySpeaking(true);setTimeout(()=>setStarkySpeaking(false),2500);}} style={{width:"300px",height:"300px",borderRadius:"50%",background:"linear-gradient(135deg,#0D2040,#1A3A6B,#0D2040)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"110px",cursor:"pointer",border:`4px solid ${starkySpeaking?"#63D2FF":"rgba(99,210,255,0.35)"}`,animation:"float 4s ease-in-out infinite",transition:"border-color 0.3s,box-shadow 0.3s",boxShadow:starkySpeaking?"0 0 70px rgba(99,210,255,0.7)":"0 0 40px rgba(99,210,255,0.2)",position:"relative",zIndex:2}}>
+              <div onClick={()=>{setStarkySpeaking(true);setTimeout(()=>setStarkySpeaking(false),2500);}} style={{width:isMobile?"180px":"300px",height:isMobile?"180px":"300px",borderRadius:"50%",background:"linear-gradient(135deg,#0D2040,#1A3A6B,#0D2040)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"110px",cursor:"pointer",border:`4px solid ${starkySpeaking?"#63D2FF":"rgba(99,210,255,0.35)"}`,animation:"float 4s ease-in-out infinite",transition:"border-color 0.3s,box-shadow 0.3s",boxShadow:starkySpeaking?"0 0 70px rgba(99,210,255,0.7)":"0 0 40px rgba(99,210,255,0.2)",position:"relative",zIndex:2}}>
                 🌟
                 {starkySpeaking&&<div style={{position:"absolute",inset:"-6px",borderRadius:"50%",border:"2px solid rgba(99,210,255,0.5)",animation:"pulse-ring 1.1s ease-out infinite"}}/>}
               </div>
@@ -694,8 +694,8 @@ export default function NewWorldEducation() {
           </div>
 
           {/* Chat */}
-          <div style={{flex:1,minWidth:"300px",maxWidth:"580px"}}>
-            <div style={{background:"rgba(99,210,255,0.07)",border:"1px solid rgba(99,210,255,0.18)",borderRadius:"26px",padding:"32px"}}>
+          <div style={{flex:1,minWidth:0,maxWidth:"580px",width:"100%"}}>
+            <div style={{background:"rgba(99,210,255,0.07)",border:"1px solid rgba(99,210,255,0.18)",borderRadius:"26px",padding:isMobile?"16px":"32px"}}>
               <div style={{display:"flex",alignItems:"center",gap:"8px",marginBottom:"10px"}}>
                 <div style={{width:"8px",height:"8px",borderRadius:"50%",background:"#A8E063",animation:"pulse-ring 2s ease-out infinite"}}/>
                 <span style={{fontSize:"11px",fontWeight:"800",color:"#A8E063",letterSpacing:"1px"}}>STARKY IS LIVE</span>
@@ -860,9 +860,10 @@ export default function NewWorldEducation() {
 
 
       {/* TEACHERS CONFIDENCE SECTION */}
+      <span id="teachers" style={{display:"block",scrollMarginTop:72}}/>
       <section style={{padding:isMobile?"32px 16px":"70px 40px",background:"linear-gradient(160deg,rgba(168,224,99,0.06) 0%,transparent 60%)",borderTop:"1px solid rgba(168,224,99,0.12)"}}>
         <div style={{maxWidth:"1100px",margin:"0 auto"}}>
-          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"60px",alignItems:"center",flexWrap:"wrap"}}>
+          <div style={{display:"grid",gridTemplateColumns:isMobile?"1fr":"1fr 1fr",gap:isMobile?"32px":"60px",alignItems:"center"}}>
 
             {/* Left — manifesto */}
             <div>
@@ -1037,7 +1038,7 @@ export default function NewWorldEducation() {
       </section>
 
       {/* FINAL CTA */}
-      <section style={{padding:"90px 40px",textAlign:"center",background:"radial-gradient(ellipse at 50% 50%,rgba(99,210,255,0.09) 0%,transparent 60%)",position:"relative",overflow:"hidden"}}>
+      <section style={{padding:isMobile?"32px 16px":"90px 40px",textAlign:"center",background:"radial-gradient(ellipse at 50% 50%,rgba(99,210,255,0.09) 0%,transparent 60%)",position:"relative",overflow:"hidden"}}>
         <Stars count={50}/>
         <div style={{position:"relative",zIndex:1}}>
           {/* No.1 badge again */}
