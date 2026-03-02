@@ -498,81 +498,168 @@ export default function NewWorldEducation() {
       </nav>
 
       {/* HERO */}
-      <section style={{position:"relative",minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",padding:isMobile?"80px 16px 40px":"100px 40px 60px",background:"radial-gradient(ellipse at 50% 0%,rgba(99,210,255,0.1) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(168,224,99,0.07) 0%,transparent 50%)"}}>
+      <section style={{position:"relative",background:"radial-gradient(ellipse at 50% 0%,rgba(99,210,255,0.1) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(168,224,99,0.07) 0%,transparent 50%)"}}>
         <Stars/>
 
-        {/* World's No 1 banner */}
-        <div style={{
-          background:"linear-gradient(135deg,rgba(255,195,0,0.15),rgba(255,142,83,0.12))",
-          border:"1px solid rgba(255,195,0,0.4)", borderRadius:"50px",
-          padding:"10px 28px", marginBottom:"22px",
-          display:"flex", alignItems:"center", gap:"10px",
-          animation:"slideUp 0.4s ease-out",
-          boxShadow:"0 0 40px rgba(255,195,0,0.15)",
-        }}>
-          <span style={{fontSize:"18px"}}>🏆</span>
-          <span style={{
-            fontWeight:"900", fontSize:"clamp(12px,1.5vw,15px)",
-            background:"linear-gradient(135deg,#FFC300,#FFB347,#FF8E53)",
-            WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent",
-            backgroundSize:"200% auto", animation:"shimmer 3s linear infinite",
-            letterSpacing:"0.5px",
-          }}>World's No.1 AI Educational Resource</span>
-          <span style={{fontSize:"18px"}}>🏆</span>
-        </div>
+        {isMobile ? (
+          /* ── MOBILE HERO: Clean, immediate, direct to Starky ── */
+          <div style={{padding:"88px 20px 36px",display:"flex",flexDirection:"column",alignItems:"center",textAlign:"center"}}>
 
-        <div style={{background:"rgba(99,210,255,0.1)",border:"1px solid rgba(99,210,255,0.25)",borderRadius:"30px",padding:"8px 22px",marginBottom:"24px",fontSize:"13px",fontWeight:"700",color:"#63D2FF",display:"flex",alignItems:"center",gap:"8px",flexWrap:"wrap",justifyContent:"center"}}>
-          🌍 Global AI School — KG to A Levels
-          <span style={{background:"#A8E063",color:"#060B20",padding:"2px 10px",borderRadius:"20px",fontSize:"11px",fontWeight:"800"}}>16 LANGUAGES</span>
-          <span style={{background:"rgba(168,224,99,0.2)",color:"#A8E063",padding:"2px 10px",borderRadius:"20px",fontSize:"11px",fontWeight:"800"}}>FREE TRIAL</span>
-        </div>
+            {/* Starky avatar */}
+            <div style={{
+              width:72,height:72,borderRadius:"50%",marginBottom:16,
+              background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",
+              display:"flex",alignItems:"center",justifyContent:"center",
+              fontSize:36,boxShadow:"0 0 40px rgba(99,210,255,0.4)",
+              animation:"float 3s ease-in-out infinite",
+            }}>⭐</div>
 
-        <h1 style={{fontWeight:"900",fontSize:"clamp(34px,6vw,70px)",textAlign:"center",lineHeight:"1.08",margin:"0 0 18px",background:"linear-gradient(135deg,#fff 0%,#63D2FF 45%,#A8E063 100%)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",backgroundSize:"200% 200%",animation:"gradShift 5s ease infinite"}}>
-          Every Child Deserves<br/>a World-Class Tutor
-        </h1>
+            <div style={{
+              background:"rgba(168,224,99,0.12)",border:"1px solid rgba(168,224,99,0.3)",
+              borderRadius:30,padding:"6px 16px",marginBottom:14,
+              fontSize:11,fontWeight:800,color:"#A8E063",letterSpacing:"0.5px",
+            }}>FREE TRIAL · 20 SESSIONS</div>
 
-        <div style={{background:"rgba(168,224,99,0.1)",border:"1px solid rgba(168,224,99,0.28)",borderRadius:"50px",padding:"10px 24px",marginBottom:"16px",fontSize:"clamp(13px,1.6vw,16px)",fontWeight:"800",color:"#A8E063",display:"flex",alignItems:"center",gap:"8px",justifyContent:"center",flexWrap:"wrap",textAlign:"center"}}>
-          ⚡ Brilliant education in focused minutes — not wasted hours
-        </div>
+            <h1 style={{
+              fontWeight:900,fontSize:34,lineHeight:1.15,margin:"0 0 10px",
+              background:"linear-gradient(135deg,#fff 0%,#63D2FF 60%)",
+              WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",
+            }}>
+              Meet Starky<br/>Your AI Teacher
+            </h1>
 
-        <p style={{fontSize:"clamp(15px,1.8vw,19px)",color:"rgba(255,255,255,0.65)",textAlign:"center",maxWidth:"600px",margin:"0 0 32px",lineHeight:"1.72",fontWeight:"500"}}>
-          Meet <strong style={{color:"#63D2FF"}}>Starky</strong> — your personal AI teacher, available 24/7, in your language, covering every subject from KG to A Levels. Like having a private tutor at zero cost, for every child on Earth.
-        </p>
+            <p style={{
+              fontSize:15,color:"rgba(255,255,255,0.55)",margin:"0 0 28px",
+              lineHeight:1.6,maxWidth:280,
+            }}>
+              Any subject · Any language · KG to A Level
+            </p>
 
-        <div style={{display:"flex",gap:"14px",marginBottom:"52px",flexWrap:"wrap",justifyContent:"center"}}>
-          <button onClick={()=>{setAuthMode("signup");setShowAuthModal(true);}} className="cta-primary" style={{background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",border:"none",color:"#060B20",padding:isMobile?"14px 28px":"18px 44px",borderRadius:"50px",fontWeight:"900",fontSize:isMobile?"15px":"17px",cursor:"pointer",transition:"all 0.2s",boxShadow:"0 8px 32px rgba(99,210,255,0.4)"}}>Start Learning Free →</button>
-          <button onClick={()=>window.location.href="/demo"} className="cta-secondary" style={{background:"transparent",border:"2px solid rgba(255,255,255,0.2)",color:"#fff",padding:"18px 44px",borderRadius:"50px",fontWeight:"800",fontSize:"17px",cursor:"pointer",fontFamily:"'Nunito',sans-serif",transition:"all 0.2s"}}>Meet Starky 🌟</button>
-        </div>
+            {/* 3 Grade category buttons */}
+            <div style={{display:"flex",flexDirection:"column",gap:10,width:"100%",maxWidth:300,marginBottom:24}}>
+              {[
+                {emoji:"🌱",label:"Young Learner",sub:"KG – Grade 5",color:"#FFC300",q:"primary"},
+                {emoji:"📚",label:"O Level / GCSE",sub:"Ages 14–16",color:"#A8E063",q:"olevel"},
+                {emoji:"🏆",label:"A Level / University",sub:"Ages 16+",color:"#C77DFF",q:"alevel"},
+              ].map(b=>(
+                <a key={b.q} href={`/demo?subject=${b.q}`} style={{
+                  display:"flex",alignItems:"center",gap:14,
+                  background:`${b.color}14`,
+                  border:`1.5px solid ${b.color}44`,
+                  borderRadius:16,padding:"14px 18px",
+                  textDecoration:"none",color:"#fff",
+                  transition:"all 0.15s",
+                }}>
+                  <span style={{fontSize:26}}>{b.emoji}</span>
+                  <div style={{textAlign:"left"}}>
+                    <div style={{fontWeight:800,fontSize:15,color:b.color}}>{b.label}</div>
+                    <div style={{fontSize:12,color:"rgba(255,255,255,0.45)",marginTop:2}}>{b.sub}</div>
+                  </div>
+                  <span style={{marginLeft:"auto",color:"rgba(255,255,255,0.3)",fontSize:18}}>›</span>
+                </a>
+              ))}
+            </div>
 
-        {/* GRADE SELECTOR */}
-        <div style={{background:"rgba(255,255,255,0.04)",border:"1px solid rgba(99,210,255,0.16)",borderRadius:"26px",padding:"28px 32px",maxWidth:"940px",width:"100%",textAlign:"center",backdropFilter:"blur(12px)"}}>
-          <h3 style={{margin:"0 0 20px",fontSize:"14px",fontWeight:"800",color:"#63D2FF",letterSpacing:"1.5px",textTransform:"uppercase"}}>Select Your Grade to Begin</h3>
-          <div style={{display:"flex",flexWrap:"wrap",gap:"9px",justifyContent:"center"}}>
-            {GRADES.map(g=>(
-              <button key={g.id} className="grade-btn" onClick={()=>handleGradeSelect(g)} style={{background:selectedGrade?.id===g.id?`linear-gradient(135deg,${g.color}CC,${g.color}88)`:"rgba(255,255,255,0.06)",border:`2px solid ${selectedGrade?.id===g.id?g.color:"rgba(255,255,255,0.12)"}`,borderRadius:"15px",padding:"10px 12px",cursor:"pointer",color:"#fff",fontWeight:"700",fontSize:"11px",transition:"all 0.22s",fontFamily:"'Nunito',sans-serif",boxShadow:selectedGrade?.id===g.id?`0 0 24px ${g.color}44`:"none",minWidth:"68px"}}>
-                <div style={{fontSize:"16px",marginBottom:"4px"}}>{g.emoji}</div>
-                <div style={{fontSize:"10px",fontWeight:"800"}}>{g.label}</div>
-                <div style={{fontSize:"9px",opacity:0.55,marginTop:"2px"}}>Age {g.age}</div>
-              </button>
-            ))}
+            {/* Main CTA */}
+            <a href="/demo" style={{
+              display:"block",width:"100%",maxWidth:300,
+              background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",
+              border:"none",color:"#060B20",
+              padding:"16px 28px",borderRadius:50,
+              fontWeight:900,fontSize:16,textDecoration:"none",
+              boxShadow:"0 8px 32px rgba(99,210,255,0.4)",
+              textAlign:"center",marginBottom:20,
+            }}>⭐ Start Chatting with Starky →</a>
+
+            {/* Quick stats */}
+            <div style={{display:"flex",gap:20,justifyContent:"center"}}>
+              {[{v:"16",l:"Languages"},{v:"KG–A Level",l:"All Grades"},{v:"Free",l:"Trial"}].map(s=>(
+                <div key={s.l} style={{textAlign:"center"}}>
+                  <div style={{fontSize:15,fontWeight:900,color:"#63D2FF"}}>{s.v}</div>
+                  <div style={{fontSize:10,color:"rgba(255,255,255,0.35)",fontWeight:600}}>{s.l}</div>
+                </div>
+              ))}
+            </div>
           </div>
-          {selectedGrade&&(
-            <div style={{marginTop:"20px",padding:"14px 22px",background:`linear-gradient(135deg,${selectedGrade.color}18,${selectedGrade.color}0C)`,border:`1px solid ${selectedGrade.color}44`,borderRadius:"16px",display:"flex",alignItems:"center",justifyContent:"space-between",flexWrap:"wrap",gap:"10px",animation:"slideUp 0.3s ease-out"}}>
-              <span style={{fontWeight:"700",fontSize:"14px"}}><span style={{color:selectedGrade.color,fontWeight:"900"}}>{selectedGrade.emoji} {selectedGrade.label}</span> selected — Starky is ready for ages {selectedGrade.age}</span>
-              <button onClick={()=>{setAuthMode("signup");setShowAuthModal(true);}} style={{background:selectedGrade.color,border:"none",color:"#060B20",padding:"10px 22px",borderRadius:"20px",fontWeight:"800",fontSize:"13px",cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>Start {selectedGrade.label} →</button>
-            </div>
-          )}
-        </div>
 
-        {/* Stats */}
-        <div style={{display:"flex",gap:isMobile?"24px":"48px",marginTop:isMobile?"32px":"48px",flexWrap:"wrap",justifyContent:"center"}}>
-          {[{value:"1B+",label:"Students Who Need This"},{value:"16",label:"Languages Supported"},{value:"13",label:"Grade Levels"},{value:"24/7",label:"Starky Availability"}].map(stat=>(
-            <div key={stat.label} style={{textAlign:"center"}}>
-              <div style={{fontSize:"clamp(26px,4vw,40px)",fontWeight:"900",background:"linear-gradient(135deg,#63D2FF,#A8E063)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>{stat.value}</div>
-              <div style={{fontSize:"11px",color:"rgba(255,255,255,0.4)",fontWeight:"600",marginTop:"4px"}}>{stat.label}</div>
+        ) : (
+          /* ── DESKTOP HERO: Full experience ── */
+          <div style={{minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",padding:"100px 40px 60px"}}>
+
+            {/* World's No 1 banner */}
+            <div style={{
+              background:"linear-gradient(135deg,rgba(255,195,0,0.15),rgba(255,142,83,0.12))",
+              border:"1px solid rgba(255,195,0,0.4)", borderRadius:"50px",
+              padding:"10px 28px", marginBottom:"22px",
+              display:"flex", alignItems:"center", gap:"10px",
+              animation:"slideUp 0.4s ease-out",
+              boxShadow:"0 0 40px rgba(255,195,0,0.15)",
+            }}>
+              <span style={{fontSize:"18px"}}>🏆</span>
+              <span style={{
+                fontWeight:"900", fontSize:"clamp(12px,1.5vw,15px)",
+                background:"linear-gradient(135deg,#FFC300,#FFB347,#FF8E53)",
+                WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent",
+                backgroundSize:"200% auto", animation:"shimmer 3s linear infinite",
+                letterSpacing:"0.5px",
+              }}>World&apos;s No.1 AI Educational Resource</span>
+              <span style={{fontSize:"18px"}}>🏆</span>
             </div>
-          ))}
-        </div>
+
+            <div style={{background:"rgba(99,210,255,0.1)",border:"1px solid rgba(99,210,255,0.25)",borderRadius:"30px",padding:"8px 22px",marginBottom:"24px",fontSize:"13px",fontWeight:"700",color:"#63D2FF",display:"flex",alignItems:"center",gap:"8px",flexWrap:"wrap",justifyContent:"center"}}>
+              🌍 Global AI School — KG to A Levels
+              <span style={{background:"#A8E063",color:"#060B20",padding:"2px 10px",borderRadius:"20px",fontSize:"11px",fontWeight:"800"}}>16 LANGUAGES</span>
+              <span style={{background:"rgba(168,224,99,0.2)",color:"#A8E063",padding:"2px 10px",borderRadius:"20px",fontSize:"11px",fontWeight:"800"}}>FREE TRIAL</span>
+            </div>
+
+            <h1 style={{fontWeight:"900",fontSize:"clamp(34px,6vw,70px)",textAlign:"center",lineHeight:"1.08",margin:"0 0 18px",background:"linear-gradient(135deg,#fff 0%,#63D2FF 45%,#A8E063 100%)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",backgroundSize:"200% 200%",animation:"gradShift 5s ease infinite"}}>
+              Every Child Deserves<br/>a World-Class Tutor
+            </h1>
+
+            <div style={{background:"rgba(168,224,99,0.1)",border:"1px solid rgba(168,224,99,0.28)",borderRadius:"50px",padding:"10px 24px",marginBottom:"16px",fontSize:"clamp(13px,1.6vw,16px)",fontWeight:"800",color:"#A8E063",display:"flex",alignItems:"center",gap:"8px",justifyContent:"center",flexWrap:"wrap",textAlign:"center"}}>
+              ⚡ Brilliant education in focused minutes — not wasted hours
+            </div>
+
+            <p style={{fontSize:"clamp(15px,1.8vw,19px)",color:"rgba(255,255,255,0.65)",textAlign:"center",maxWidth:"600px",margin:"0 0 32px",lineHeight:"1.72",fontWeight:"500"}}>
+              Meet <strong style={{color:"#63D2FF"}}>Starky</strong> — your personal AI teacher, available 24/7, in your language, covering every subject from KG to A Levels. Like having a private tutor at zero cost, for every child on Earth.
+            </p>
+
+            <div style={{display:"flex",gap:"14px",marginBottom:"52px",flexWrap:"wrap",justifyContent:"center"}}>
+              <button onClick={()=>{setAuthMode("signup");setShowAuthModal(true);}} className="cta-primary" style={{background:"linear-gradient(135deg,#63D2FF,#4ECDC4)",border:"none",color:"#060B20",padding:"18px 44px",borderRadius:"50px",fontWeight:"900",fontSize:"17px",cursor:"pointer",transition:"all 0.2s",boxShadow:"0 8px 32px rgba(99,210,255,0.4)"}}>Start Learning Free →</button>
+              <button onClick={()=>window.location.href="/demo"} className="cta-secondary" style={{background:"transparent",border:"2px solid rgba(255,255,255,0.2)",color:"#fff",padding:"18px 44px",borderRadius:"50px",fontWeight:"800",fontSize:"17px",cursor:"pointer",fontFamily:"'Nunito',sans-serif",transition:"all 0.2s"}}>Meet Starky 🌟</button>
+            </div>
+
+            {/* GRADE SELECTOR */}
+            <div style={{background:"rgba(255,255,255,0.04)",border:"1px solid rgba(99,210,255,0.16)",borderRadius:"26px",padding:"28px 32px",maxWidth:"940px",width:"100%",textAlign:"center",backdropFilter:"blur(12px)"}}>
+              <h3 style={{margin:"0 0 20px",fontSize:"14px",fontWeight:"800",color:"#63D2FF",letterSpacing:"1.5px",textTransform:"uppercase"}}>Select Your Grade to Begin</h3>
+              <div style={{display:"flex",flexWrap:"wrap",gap:"9px",justifyContent:"center"}}>
+                {GRADES.map(g=>(
+                  <button key={g.id} className="grade-btn" onClick={()=>handleGradeSelect(g)} style={{background:selectedGrade?.id===g.id?`linear-gradient(135deg,${g.color}CC,${g.color}88)`:"rgba(255,255,255,0.06)",border:`2px solid ${selectedGrade?.id===g.id?g.color:"rgba(255,255,255,0.12)"}`,borderRadius:"15px",padding:"10px 12px",cursor:"pointer",color:"#fff",fontWeight:"700",fontSize:"11px",transition:"all 0.22s",fontFamily:"'Nunito',sans-serif",boxShadow:selectedGrade?.id===g.id?`0 0 24px ${g.color}44`:"none",minWidth:"68px"}}>
+                    <div style={{fontSize:"16px",marginBottom:"4px"}}>{g.emoji}</div>
+                    <div style={{fontSize:"10px",fontWeight:"800"}}>{g.label}</div>
+                    <div style={{fontSize:"9px",opacity:0.55,marginTop:"2px"}}>Age {g.age}</div>
+                  </button>
+                ))}
+              </div>
+              {selectedGrade&&(
+                <div style={{marginTop:"20px",padding:"14px 22px",background:`linear-gradient(135deg,${selectedGrade.color}18,${selectedGrade.color}0C)`,border:`1px solid ${selectedGrade.color}44`,borderRadius:"16px",display:"flex",alignItems:"center",justifyContent:"space-between",flexWrap:"wrap",gap:"10px",animation:"slideUp 0.3s ease-out"}}>
+                  <span style={{fontWeight:"700",fontSize:"14px"}}><span style={{color:selectedGrade.color,fontWeight:"900"}}>{selectedGrade.emoji} {selectedGrade.label}</span> selected — Starky is ready for ages {selectedGrade.age}</span>
+                  <button onClick={()=>{setAuthMode("signup");setShowAuthModal(true);}} style={{background:selectedGrade.color,border:"none",color:"#060B20",padding:"10px 22px",borderRadius:"20px",fontWeight:"800",fontSize:"13px",cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>Start {selectedGrade.label} →</button>
+                </div>
+              )}
+            </div>
+
+            {/* Stats */}
+            <div style={{display:"flex",gap:"48px",marginTop:"48px",flexWrap:"wrap",justifyContent:"center"}}>
+              {[{value:"1B+",label:"Students Who Need This"},{value:"16",label:"Languages Supported"},{value:"13",label:"Grade Levels"},{value:"24/7",label:"Starky Availability"}].map(stat=>(
+                <div key={stat.label} style={{textAlign:"center"}}>
+                  <div style={{fontSize:"clamp(26px,4vw,40px)",fontWeight:"900",background:"linear-gradient(135deg,#63D2FF,#A8E063)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>{stat.value}</div>
+                  <div style={{fontSize:"11px",color:"rgba(255,255,255,0.4)",fontWeight:"600",marginTop:"4px"}}>{stat.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
 
       {/* STARKY SECTION */}
@@ -657,7 +744,7 @@ export default function NewWorldEducation() {
       </section>
 
       {/* TABS */}
-      <section style={{padding:"70px 40px"}}>
+      <section style={{padding:isMobile?"32px 16px":"70px 40px"}}>
         <div style={{maxWidth:"1200px",margin:"0 auto"}}>
           <div style={{textAlign:"center",marginBottom:"36px"}}>
             <h2 style={{fontWeight:"900",fontSize:"clamp(24px,4vw,46px)",margin:"0 0 22px"}}>Built for <span style={{color:"#63D2FF"}}>Everyone</span></h2>
@@ -773,7 +860,7 @@ export default function NewWorldEducation() {
 
 
       {/* TEACHERS CONFIDENCE SECTION */}
-      <section style={{padding:"70px 40px",background:"linear-gradient(160deg,rgba(168,224,99,0.06) 0%,transparent 60%)",borderTop:"1px solid rgba(168,224,99,0.12)"}}>
+      <section style={{padding:isMobile?"32px 16px":"70px 40px",background:"linear-gradient(160deg,rgba(168,224,99,0.06) 0%,transparent 60%)",borderTop:"1px solid rgba(168,224,99,0.12)"}}>
         <div style={{maxWidth:"1100px",margin:"0 auto"}}>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"60px",alignItems:"center",flexWrap:"wrap"}}>
 
@@ -825,7 +912,7 @@ export default function NewWorldEducation() {
       </section>
 
       {/* SUBJECTS */}
-      <section style={{padding:"70px 40px",borderTop:"1px solid rgba(255,255,255,0.05)"}}>
+      <section style={{padding:isMobile?"32px 16px":"70px 40px",borderTop:"1px solid rgba(255,255,255,0.05)"}}>
         <div style={{maxWidth:"1100px",margin:"0 auto"}}>
           <h2 style={{textAlign:"center",fontWeight:"900",fontSize:"clamp(24px,3vw,42px)",margin:"0 0 10px"}}>Every Subject. <span style={{color:"#A8E063"}}>Every Level.</span></h2>
           <p style={{textAlign:"center",color:"rgba(255,255,255,0.5)",marginBottom:"36px",fontSize:"14px"}}>Starky has read every textbook from KG to A Levels — ask about anything</p>
@@ -843,7 +930,7 @@ export default function NewWorldEducation() {
       </section>
 
       {/* O/A LEVEL PROMISE */}
-      <section style={{padding:"70px 40px",background:"radial-gradient(ellipse at 50% 50%,rgba(168,224,99,0.07) 0%,transparent 60%)"}}>
+      <section style={{padding:isMobile?"32px 16px":"70px 40px",background:"radial-gradient(ellipse at 50% 50%,rgba(168,224,99,0.07) 0%,transparent 60%)"}}>
         <div style={{maxWidth:"860px",margin:"0 auto",textAlign:"center"}}>
           <div style={{fontSize:"48px",marginBottom:"18px"}}>🏆</div>
           <h2 style={{fontWeight:"900",fontSize:"clamp(24px,4vw,50px)",margin:"0 0 18px",lineHeight:"1.1"}}>
@@ -888,7 +975,7 @@ export default function NewWorldEducation() {
       </section>
 
       {/* INSTITUTIONAL PARTNERSHIPS */}
-      <section style={{padding:"70px 40px",background:"rgba(255,255,255,0.02)",borderTop:"1px solid rgba(255,255,255,0.05)"}}>
+      <section style={{padding:isMobile?"32px 16px":"70px 40px",background:"rgba(255,255,255,0.02)",borderTop:"1px solid rgba(255,255,255,0.05)"}}>
         <div style={{maxWidth:"1100px",margin:"0 auto"}}>
           <div style={{textAlign:"center",marginBottom:"44px"}}>
             <div style={{fontSize:"11px",fontWeight:"800",color:"rgba(99,210,255,0.7)",letterSpacing:"1.5px",marginBottom:"12px"}}>BUILDING THE FUTURE OF EDUCATION</div>
@@ -928,7 +1015,7 @@ export default function NewWorldEducation() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section style={{padding:"70px 40px"}}>
+      <section style={{padding:isMobile?"32px 16px":"70px 40px"}}>
         <div style={{maxWidth:"1100px",margin:"0 auto"}}>
           <h2 style={{textAlign:"center",fontWeight:"900",fontSize:"clamp(22px,3vw,40px)",margin:"0 0 44px"}}>Students Worldwide <span style={{color:"#63D2FF"}}>Love Starky</span></h2>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(240px,1fr))",gap:"16px"}}>
