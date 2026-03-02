@@ -160,7 +160,7 @@ const Stars = ({ count = 40 }) => {
 // ── MAIN PAGE ──────────────────────────────────────────────────────────────
 export default function SpecialPage() {
   const [activeProfile, setActiveProfile] = useState(PROFILES[0]);
-  const [messages, setMessages]           = useState([{ role: "assistant", content: `Hi there! 💜 I'm Starky ⭐ — your personal AI teacher.\n\nI'm specially trained to teach YOU in the way that works best for you.\n\nJust ask me anything — any subject, any language. I'm here for you! 🌟` }]);
+  const [messages, setMessages]           = useState([{ role: "assistant", content: `Hi there! 💜 I'm Starky ⭐ — your personal AI teacher.\n\nI'm specially trained to teach YOU in the way that works best for you.\n\nJust ask me anything — any subject, any language. I'm here for you! ★` }]);
   const [input, setInput]                 = useState("");
   const [loading, setLoading]             = useState(false);
   const chatEndRef                        = useRef(null);
