@@ -10,7 +10,6 @@ export default function StarkyBubble() {
   const [pulse, setPulse] = useState(true);
   const [userProfile, setUserProfile] = useState(null);
   const [voiceSupported, setVoiceSupported] = useState(false);
-  const [urduMode, setUrduMode] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const synthRef = useRef(null);
   const messagesEndRef = useRef(null);
@@ -40,9 +39,7 @@ const [imageData, setImageData] = useState(null);
       if (s) setUserProfile(JSON.parse(s));
     } catch {}
     const t = setTimeout(() => setPulse(false), 6000);
-    const onUrdu = () => { setUrduMode(true); setOpen(true); };
-    window.addEventListener('starky-urdu', onUrdu);
-    return () => { clearTimeout(t); window.removeEventListener('starky-urdu', onUrdu); };
+    return () => clearTimeout(t);
   }, []);
 
   useEffect(() => {
@@ -62,7 +59,7 @@ const [imageData, setImageData] = useState(null);
       const greeting = continuation || (
         firstName
           ? `Hi ${firstName}! I'm Starky ★ — ask me anything about any subject, grade or topic. I'm here to help!`
-          : urduMode ? `السلام علیکم! میں Starky ★ ہوں — آپ کا ذاتی AI استاد۔ کوئی بھی سوال پوچھیں!` : `Hi! I'm Starky ★ — your personal AI tutor. Ask me anything — any subject, any grade!`
+          : `Hi! I'm Starky ★ — your personal AI tutor. Ask me anything — any subject, any grade!`
       );
 
       setMessages([{ role: 'assistant', content: greeting }]);
