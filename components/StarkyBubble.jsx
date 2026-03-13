@@ -451,7 +451,7 @@ export default function StarkyBubble() {
         {!fullscreen && (
           <button
             className={`starky-fab ${pulse && !open ? 'pulse' : ''}`}
-            onClick={() => { setOpen(o => !o); setPulse(false); stopSpeaking(); }}
+            onClick={() => { setOpen(o => !o); setFullscreen(true); setPulse(false); stopSpeaking(); }}
             aria-label="Chat with Starky"
           >
             {open ? '✕' : '★'}
