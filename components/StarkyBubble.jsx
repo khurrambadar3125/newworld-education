@@ -4,6 +4,7 @@ import { useSessionMemory } from '../utils/useSessionMemory';
 
 export default function StarkyBubble() {
   const [open, setOpen] = useState(false);
+  const [fullscreen, setFullscreen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -11,28 +12,25 @@ export default function StarkyBubble() {
   const [userProfile, setUserProfile] = useState(null);
   const [voiceSupported, setVoiceSupported] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [kidMode, setKidMode] = useState(false);
+  const [imageData, setImageData] = useState(null);
   const synthRef = useRef(null);
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
-const fileInputRef = useRef(null);
-const [imageData, setImageData] = useState(null);
+  const fileInputRef = useRef(null);
+  const cameraInputRef = useRef(null);
 
-  // ── Session memory ──────────────────────────────────────────────────────────
   const {
     sessionMemory,
     saveMessage,
-    saveSubject,
-    addMistake,
     finalizeSession,
     hasPriorSession,
     getContinuationGreeting,
     SUMMARIZE_AFTER,
   } = useSessionMemory(userProfile);
 
-  // Track raw conversation for summarization (user+assistant pairs, no greeting)
   const conversationRef = useRef([]);
 
-  // ── Init ────────────────────────────────────────────────────────────────────
   useEffect(() => {
     try {
       const s = localStorage.getItem('nw_user');
@@ -49,19 +47,15 @@ const [imageData, setImageData] = useState(null);
     }
   }, []);
 
-  // ── Greeting — uses prior session context if available ──────────────────────
   useEffect(() => {
     if (open && messages.length === 0) {
       const firstName = userProfile?.name?.split(' ')[0];
-
-      // Try continuation greeting first
       const continuation = getContinuationGreeting(firstName);
       const greeting = continuation || (
         firstName
           ? `Hi ${firstName}! I'm Starky ★ — ask me anything about any subject, grade or topic. I'm here to help!`
           : `Hi! I'm Starky ★ — your personal AI tutor. Ask me anything — any subject, any grade!`
       );
-
       setMessages([{ role: 'assistant', content: greeting }]);
       if (voiceSupported) setTimeout(() => speakText(greeting), 400);
     }
@@ -72,37 +66,52 @@ const [imageData, setImageData] = useState(null);
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
-  // ── Finalize session when chat closes ───────────────────────────────────────
   const handleClose = useCallback(() => {
     setOpen(false);
+    setFullscreen(false);
     stopSpeaking();
-    // Only summarize if there was a real conversation (more than just greeting)
     if (conversationRef.current.length >= 4) {
       finalizeSession(conversationRef.current);
     }
   }, [finalizeSession]);
 
-  // ── Voice ───────────────────────────────────────────────────────────────────
   const speakText = useCallback((text) => {
     if (!synthRef.current) return;
     synthRef.current.cancel();
     const clean = text.replace(/[★*_`#]/g, '').replace(/\n+/g, ' ').substring(0, 250);
     const utt = new SpeechSynthesisUtterance(clean);
-    utt.rate = 0.95; utt.pitch = 1.05; utt.volume = 1;
+    utt.rate = 0.95; utt.pitch = kidMode ? 1.2 : 1.05; utt.volume = 1;
     const voices = synthRef.current.getVoices();
     const v = voices.find(v => v.lang.startsWith('en')) || voices[0];
     if (v) utt.voice = v;
     utt.onstart = () => setIsSpeaking(true);
     utt.onend = () => setIsSpeaking(false);
     synthRef.current.speak(utt);
-  }, []);
+  }, [kidMode]);
 
   const stopSpeaking = () => { synthRef.current?.cancel(); setIsSpeaking(false); };
 
-  // ── Send message ────────────────────────────────────────────────────────────
+  const handleImageFile = (file) => {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => setImageData({
+      base64: ev.target.result.split(',')[1],
+      type: file.type,
+      name: file.name,
+    });
+    reader.readAsDataURL(file);
+  };
+
+  const handleImageSelect = (e) => handleImageFile(e.target.files?.[0]);
+  const handleCameraSelect = (e) => handleImageFile(e.target.files?.[0]);
+  const clearImage = () => {
+    setImageData(null);
+    if (fileInputRef.current) fileInputRef.current.value = '';
+    if (cameraInputRef.current) cameraInputRef.current.value = '';
+  };
+
   const sendMessage = async () => {
     const text = input.trim();
-    const imgPayload = imageData ? { base64: imageData.base64, type: imageData.type } : null;
     if (!text || loading) return;
 
     const userMsg = { role: 'user', content: text };
@@ -113,45 +122,41 @@ const [imageData, setImageData] = useState(null);
     stopSpeaking();
 
     try {
+      const body = {
+        message: text,
+        userProfile,
+        kidMode,
+        sessionMemory: {
+          ...sessionMemory,
+          conversationHistory: conversationRef.current.slice(-10),
+        },
+      };
+      if (imageData) body.image = imageData;
+
       const res = await fetch('/api/anthropic', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: text,
-          userProfile,
-          sessionMemory: {
-            ...sessionMemory,
-            // Pass the live conversation from this session (not stored history)
-            conversationHistory: conversationRef.current.slice(-10),
-          },
-        }),
+        body: JSON.stringify(body),
       });
 
       const data = await res.json();
       const reply = data.response || data.content || 'Something went wrong. Try again!';
 
-      const finalMsgs = [...newMsgs, { role: 'assistant', content: reply }];
-      setMessages(finalMsgs);
+      setMessages([...newMsgs, { role: 'assistant', content: reply }]);
+      setImageData(null);
       if (voiceSupported) speakText(reply);
 
-      // Save this exchange to conversation ref (for summarization)
       conversationRef.current = [
         ...conversationRef.current,
         { role: 'user', content: text },
         { role: 'assistant', content: reply },
       ];
 
-      // Save to persistent memory hook
       saveMessage(text, reply);
 
-      // Auto-detect mistakes from Starky's response and log them
-
-      // Auto-summarize mid-session after SUMMARIZE_AFTER messages
-      // (so next open already has context even if they don't close properly)
       if (conversationRef.current.length === SUMMARIZE_AFTER * 2) {
         finalizeSession(conversationRef.current);
       }
-
     } catch {
       setMessages([...newMsgs, { role: 'assistant', content: 'Something went wrong. Please try again!' }]);
     } finally {
@@ -159,20 +164,10 @@ const [imageData, setImageData] = useState(null);
     }
   };
 
-
-  const handleImageSelect = (e) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (ev) => setImageData({ base64: ev.target.result.split(',')[1], type: file.type, name: file.name });
-    reader.readAsDataURL(file);
-  };
-  const clearImage = () => { setImageData(null); if (fileInputRef.current) fileInputRef.current.value = ''; };
   const handleKey = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
   };
 
-  // ── Render ──────────────────────────────────────────────────────────────────
   return (
     <>
       <style jsx global>{`
@@ -188,9 +183,9 @@ const [imageData, setImageData] = useState(null);
         }
 
         .starky-chat {
-          width: 320px;
+          width: 340px;
           max-width: calc(100vw - 32px);
-          height: 420px;
+          height: 460px;
           background: #0D1221;
           border: 1px solid rgba(79,142,247,.25);
           border-radius: 20px;
@@ -199,7 +194,20 @@ const [imageData, setImageData] = useState(null);
           flex-direction: column;
           overflow: hidden;
           animation: slideUp .25s ease;
+          transition: all 0.3s ease;
         }
+
+        .starky-chat.fullscreen {
+          position: fixed;
+          top: 0; left: 0; right: 0; bottom: 0;
+          width: 100vw;
+          height: 100dvh;
+          max-width: 100vw;
+          border-radius: 0;
+          z-index: 10000;
+          animation: none;
+        }
+
         @keyframes slideUp {
           from { opacity: 0; transform: translateY(16px) scale(.97); }
           to { opacity: 1; transform: translateY(0) scale(1); }
@@ -220,224 +228,159 @@ const [imageData, setImageData] = useState(null);
           gap: 8px;
         }
         .starky-avatar-small {
-          width: 32px;
-          height: 32px;
+          width: 32px; height: 32px;
           border-radius: 50%;
           background: linear-gradient(135deg, #4F8EF7, #7C5CBF);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 15px;
-          flex-shrink: 0;
+          display: flex; align-items: center; justify-content: center;
+          font-size: 15px; flex-shrink: 0;
         }
         .starky-chat-name {
           font-family: 'Sora', sans-serif;
-          font-size: 14px;
-          font-weight: 700;
-          color: #fff;
+          font-size: 14px; font-weight: 700; color: #fff;
         }
         .starky-chat-status {
-          font-size: 11px;
-          color: #4ade80;
-          margin-top: 1px;
-          display: flex;
-          align-items: center;
-          gap: 4px;
+          font-size: 11px; color: #4ade80; margin-top: 1px;
+          display: flex; align-items: center; gap: 4px;
         }
         .starky-chat-status::before {
-          content: '';
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          background: #4ade80;
-          display: inline-block;
+          content: ''; width: 6px; height: 6px; border-radius: 50%;
+          background: #4ade80; display: inline-block;
         }
         .starky-chat-actions {
-          display: flex;
-          gap: 6px;
-          align-items: center;
+          display: flex; gap: 6px; align-items: center;
         }
         .starky-action-btn {
-          background: rgba(255,255,255,.08);
-          border: none;
-          color: rgba(255,255,255,.5);
-          border-radius: 6px;
-          padding: 5px 8px;
-          font-size: 12px;
-          cursor: pointer;
-          white-space: nowrap;
-          text-decoration: none;
-          display: inline-block;
+          background: rgba(255,255,255,.08); border: none;
+          color: rgba(255,255,255,.5); border-radius: 6px;
+          padding: 5px 8px; font-size: 12px; cursor: pointer;
+          white-space: nowrap; text-decoration: none; display: inline-block;
         }
         .starky-action-btn:hover { color: #fff; background: rgba(255,255,255,.12); }
+        .starky-action-btn.kid-on { background: rgba(255,200,0,.15); color: #FFC800; border: 1px solid rgba(255,200,0,.3); }
         .starky-close-btn {
-          background: none;
-          border: none;
-          color: rgba(255,255,255,.4);
-          cursor: pointer;
-          font-size: 16px;
-          padding: 2px 4px;
-          line-height: 1;
+          background: none; border: none; color: rgba(255,255,255,.4);
+          cursor: pointer; font-size: 16px; padding: 2px 4px; line-height: 1;
         }
         .starky-close-btn:hover { color: #fff; }
-
         .starky-prior-badge {
-          font-size: 10px;
-          background: rgba(79,142,247,.2);
-          border: 1px solid rgba(79,142,247,.3);
-          color: rgba(79,142,247,.9);
-          border-radius: 4px;
-          padding: 2px 6px;
-          margin-left: 6px;
-          vertical-align: middle;
+          font-size: 10px; background: rgba(79,142,247,.2);
+          border: 1px solid rgba(79,142,247,.3); color: rgba(79,142,247,.9);
+          border-radius: 4px; padding: 2px 6px; margin-left: 6px; vertical-align: middle;
         }
-
         .starky-messages {
-          flex: 1;
-          overflow-y: auto;
-          padding: 12px;
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
+          flex: 1; overflow-y: auto; padding: 12px;
+          display: flex; flex-direction: column; gap: 8px;
           -webkit-overflow-scrolling: touch;
         }
-        .starky-msg {
-          max-width: 85%;
-          font-size: 13px;
-          line-height: 1.6;
-          padding: 9px 12px;
-          border-radius: 14px;
-          word-break: break-word;
-          white-space: pre-wrap;
+        .starky-chat.fullscreen .starky-messages {
+          padding: 16px; max-width: 700px; width: 100%; margin: 0 auto;
         }
+        .starky-msg {
+          max-width: 85%; font-size: 14px; line-height: 1.6;
+          padding: 10px 13px; border-radius: 14px;
+          word-break: break-word; white-space: pre-wrap;
+        }
+        .starky-chat.fullscreen .starky-msg { font-size: 16px; padding: 12px 16px; max-width: 75%; }
         .starky-msg.user {
           align-self: flex-end;
           background: linear-gradient(135deg, #4F8EF7, #6366F1);
-          color: #fff;
-          border-bottom-right-radius: 3px;
+          color: #fff; border-bottom-right-radius: 3px;
         }
         .starky-msg.assistant {
           align-self: flex-start;
           background: rgba(255,255,255,.07);
           border: 1px solid rgba(255,255,255,.08);
-          color: rgba(255,255,255,.85);
-          border-bottom-left-radius: 3px;
+          color: rgba(255,255,255,.85); border-bottom-left-radius: 3px;
         }
-        .starky-msg.typing {
-          opacity: .5;
-          font-style: italic;
-        }
-
+        .starky-msg.typing { opacity: .5; font-style: italic; }
         .starky-input-row {
           padding: 8px 10px 10px;
           border-top: 1px solid rgba(255,255,255,.07);
-          display: flex;
-          gap: 6px;
-          align-items: flex-end;
-          flex-shrink: 0;
+          display: flex; flex-wrap: wrap; gap: 6px;
+          align-items: flex-end; flex-shrink: 0;
+        }
+        .starky-chat.fullscreen .starky-input-row {
+          padding: 12px 16px 16px; max-width: 700px; width: 100%; margin: 0 auto;
         }
         .starky-input {
-          flex: 1;
+          flex: 1; min-width: 0;
           background: rgba(255,255,255,.07);
           border: 1px solid rgba(255,255,255,.1);
-          border-radius: 10px;
-          color: #fff;
-          padding: 9px 11px;
-          font-size: 13px;
-          font-family: inherit;
-          outline: none;
-          resize: none;
-          max-height: 70px;
-          -webkit-appearance: none;
+          border-radius: 10px; color: #fff;
+          padding: 9px 11px; font-size: 14px;
+          font-family: inherit; outline: none;
+          resize: none; max-height: 80px; -webkit-appearance: none;
         }
+        .starky-chat.fullscreen .starky-input { font-size: 16px; padding: 12px 14px; }
         .starky-input::placeholder { color: rgba(255,255,255,.25); }
         .starky-input:focus { border-color: rgba(79,142,247,.4); }
         .starky-send-btn {
-          width: 36px;
-          height: 36px;
-          border-radius: 10px;
+          width: 38px; height: 38px; border-radius: 10px;
           background: linear-gradient(135deg, #4F8EF7, #6366F1);
-          border: none;
-          color: #fff;
-          cursor: pointer;
-          font-size: 16px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-shrink: 0;
+          border: none; color: #fff; cursor: pointer; font-size: 18px;
+          display: flex; align-items: center; justify-content: center; flex-shrink: 0;
         }
         .starky-send-btn:disabled { opacity: .35; cursor: not-allowed; }
-      .starky-upload-btn { background: rgba(255,255,255,.1); border: none; color: #fff; font-size: 16px; padding: 6px 10px; border-radius: 8px; cursor: pointer; margin-right: 4px; }
-      .starky-upload-btn:hover { background: rgba(255,255,255,.2); }
-      .starky-img-preview { font-size: 12px; color: rgba(255,255,255,.7); padding: 4px 8px; background: rgba(255,255,255,.1); border-radius: 6px; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
-      .starky-img-preview button { background: none; border: none; color: rgba(255,255,255,.6); cursor: pointer; font-size: 14px; }
-
+        .starky-icon-btn {
+          width: 38px; height: 38px; border-radius: 10px;
+          background: rgba(255,255,255,.08); border: none;
+          color: rgba(255,255,255,.7); font-size: 18px; cursor: pointer;
+          display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        .starky-icon-btn:hover { background: rgba(255,255,255,.15); color: #fff; }
+        .starky-img-preview {
+          width: 100%; font-size: 12px; color: rgba(255,255,255,.7);
+          padding: 4px 8px; background: rgba(255,255,255,.1);
+          border-radius: 6px; display: flex; align-items: center; gap: 8px;
+        }
+        .starky-img-preview button {
+          background: none; border: none; color: rgba(255,255,255,.6);
+          cursor: pointer; font-size: 14px; margin-left: auto;
+        }
         .starky-fab {
-          width: 56px;
-          height: 56px;
-          border-radius: 50%;
+          width: 56px; height: 56px; border-radius: 50%;
           background: linear-gradient(135deg, #4F8EF7, #7C5CBF);
-          border: none;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          border: none; cursor: pointer;
+          display: flex; align-items: center; justify-content: center;
           font-size: 24px;
           box-shadow: 0 4px 20px rgba(79,142,247,.45), 0 0 0 0 rgba(79,142,247,.4);
           transition: transform .15s, box-shadow .15s;
-          position: relative;
-          -webkit-tap-highlight-color: transparent;
+          position: relative; -webkit-tap-highlight-color: transparent;
         }
         .starky-fab:active { transform: scale(.93); }
-        .starky-fab.pulse {
-          animation: fabPulse 1.5s ease-in-out infinite;
-        }
+        .starky-fab.pulse { animation: fabPulse 1.5s ease-in-out infinite; }
         @keyframes fabPulse {
-          0% { box-shadow: 0 4px 20px rgba(79,142,247,.45), 0 0 0 0 rgba(79,142,247,.4); }
-          70% { box-shadow: 0 4px 20px rgba(79,142,247,.45), 0 0 0 14px rgba(79,142,247,0); }
+          0%   { box-shadow: 0 4px 20px rgba(79,142,247,.45), 0 0 0 0 rgba(79,142,247,.4); }
+          70%  { box-shadow: 0 4px 20px rgba(79,142,247,.45), 0 0 0 14px rgba(79,142,247,0); }
           100% { box-shadow: 0 4px 20px rgba(79,142,247,.45), 0 0 0 0 rgba(79,142,247,0); }
         }
-
         .starky-fab-label {
-          position: absolute;
-          right: 66px;
-          bottom: 50%;
+          position: absolute; right: 66px; bottom: 50%;
           transform: translateY(50%);
-          background: #0D1221;
-          border: 1px solid rgba(79,142,247,.3);
-          color: #fff;
-          font-family: 'Sora', sans-serif;
-          font-size: 12px;
-          font-weight: 700;
-          padding: 6px 12px;
-          border-radius: 100px;
-          white-space: nowrap;
-          pointer-events: none;
+          background: #0D1221; border: 1px solid rgba(79,142,247,.3);
+          color: #fff; font-family: 'Sora', sans-serif;
+          font-size: 12px; font-weight: 700; padding: 6px 12px;
+          border-radius: 100px; white-space: nowrap; pointer-events: none;
           box-shadow: 0 4px 16px rgba(0,0,0,.4);
           animation: labelPop 6s ease forwards;
         }
         @keyframes labelPop {
-          0% { opacity: 0; transform: translateY(50%) translateX(6px); }
-          10% { opacity: 1; transform: translateY(50%) translateX(0); }
-          80% { opacity: 1; }
+          0%   { opacity: 0; transform: translateY(50%) translateX(6px); }
+          10%  { opacity: 1; transform: translateY(50%) translateX(0); }
+          80%  { opacity: 1; }
           100% { opacity: 0; }
         }
         .starky-fab-label::after {
-          content: '';
-          position: absolute;
-          right: -6px;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 0; height: 0;
-          border-top: 5px solid transparent;
-          border-bottom: 5px solid transparent;
+          content: ''; position: absolute; right: -6px; top: 50%;
+          transform: translateY(-50%); width: 0; height: 0;
+          border-top: 5px solid transparent; border-bottom: 5px solid transparent;
           border-left: 6px solid rgba(79,142,247,.3);
         }
       `}</style>
 
       <div className="starky-bubble-wrap">
         {open && (
-          <div className="starky-chat">
+          <div className={`starky-chat${fullscreen ? ' fullscreen' : ''}`}>
             <div className="starky-chat-head">
               <div className="starky-chat-head-left">
                 <div className="starky-avatar-small">★</div>
@@ -453,20 +396,43 @@ const [imageData, setImageData] = useState(null);
                 {isSpeaking && (
                   <button className="starky-action-btn" onClick={stopSpeaking}>🔊 Stop</button>
                 )}
+                <button
+                  className={`starky-action-btn${kidMode ? ' kid-on' : ''}`}
+                  onClick={() => setKidMode(k => !k)}
+                  title="Kid mode — simpler language"
+                >👦 {kidMode ? 'Kid ON' : 'Kid'}</button>
+                <button
+                  className="starky-action-btn"
+                  onClick={() => setFullscreen(f => !f)}
+                  title={fullscreen ? 'Exit fullscreen' : 'Fullscreen'}
+                >{fullscreen ? '⊠' : '⤢'}</button>
                 <Link href="/"><a className="starky-action-btn">Full Session →</a></Link>
                 <button className="starky-close-btn" onClick={handleClose}>✕</button>
               </div>
             </div>
+
             <div className="starky-messages">
               {messages.map((m, i) => (
-                <div key={i} className={`starky-msg ${m.role}`}>
-                  {m.content}
-                </div>
+                <div key={i} className={`starky-msg ${m.role}`}>{m.content}</div>
               ))}
               {loading && <div className="starky-msg assistant typing">Starky is thinking…</div>}
               <div ref={messagesEndRef} />
             </div>
+
             <div className="starky-input-row">
+              {imageData && (
+                <div className="starky-img-preview">
+                  <span>📎 {imageData.name}</span>
+                  <button onClick={clearImage}>✕</button>
+                </div>
+              )}
+              {/* Hidden file inputs */}
+              <input ref={fileInputRef} type="file" accept="image/*" style={{display:'none'}} onChange={handleImageSelect} />
+              <input ref={cameraInputRef} type="file" accept="image/*" capture="environment" style={{display:'none'}} onChange={handleCameraSelect} />
+              {/* 📎 Gallery */}
+              <button className="starky-icon-btn" onClick={() => fileInputRef.current?.click()} title="Upload image">📎</button>
+              {/* 📷 Camera */}
+              <button className="starky-icon-btn" onClick={() => cameraInputRef.current?.click()} title="Take photo">📷</button>
               <textarea
                 ref={inputRef}
                 className="starky-input"
@@ -477,22 +443,21 @@ const [imageData, setImageData] = useState(null);
                 rows={1}
                 disabled={loading}
               />
-              {imageData && <div className="starky-img-preview"><span>📎 {imageData.name}</span><button onClick={clearImage}>✕</button></div>}
-              <input ref={fileInputRef} type="file" accept="image/*" style={{display:"none"}} onChange={handleImageSelect} />
-              <button className="starky-upload-btn" onClick={() => fileInputRef.current?.click()} title="Upload image or photo">📎</button>
               <button className="starky-send-btn" onClick={sendMessage} disabled={loading || !input.trim()}>↑</button>
             </div>
           </div>
         )}
 
-        <button
-          className={`starky-fab ${pulse && !open ? 'pulse' : ''}`}
-          onClick={() => { setOpen(o => !o); setPulse(false); stopSpeaking(); }}
-          aria-label="Chat with Starky"
-        >
-          {open ? '✕' : '★'}
-          {pulse && !open && <span className="starky-fab-label">Ask Starky anything!</span>}
-        </button>
+        {!fullscreen && (
+          <button
+            className={`starky-fab ${pulse && !open ? 'pulse' : ''}`}
+            onClick={() => { setOpen(o => !o); setPulse(false); stopSpeaking(); }}
+            aria-label="Chat with Starky"
+          >
+            {open ? '✕' : '★'}
+            {pulse && !open && <span className="starky-fab-label">Ask Starky anything!</span>}
+          </button>
+        )}
       </div>
     </>
   );
