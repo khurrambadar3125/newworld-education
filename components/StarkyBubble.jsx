@@ -40,9 +40,9 @@ const [imageData, setImageData] = useState(null);
       if (s) setUserProfile(JSON.parse(s));
     } catch {}
     const t = setTimeout(() => setPulse(false), 6000);
-  const onUrdu = () => { setUrduMode(true); setOpen(true); };
-  window.addEventListener("starky-urdu", onUrdu);
-  return () => { clearTimeout(t); window.removeEventListener("starky-urdu", onUrdu); };
+    const onUrdu = () => { setUrduMode(true); setOpen(true); };
+    window.addEventListener("starky-urdu", onUrdu);
+    return () => { clearTimeout(t); window.removeEventListener("starky-urdu", onUrdu); };
     }, []);
 
   useEffect(() => {
