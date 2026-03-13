@@ -145,7 +145,6 @@ const [imageData, setImageData] = useState(null);
       saveMessage(text, reply);
 
       // Auto-detect mistakes from Starky's response and log them
-      detectAndSaveMistake(reply, text, sessionMemory.currentSubject, addMistake);
 
       // Auto-summarize mid-session after SUMMARIZE_AFTER messages
       // (so next open already has context even if they don't close properly)
