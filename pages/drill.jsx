@@ -11,7 +11,7 @@ import { useState, useEffect, useCallback } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useSpacedRep } from '../utils/useSpacedRep';
-import { useStreaks, StreakWidget } from '../utils/useStreaks';
+import useStreaks, { StreakWidget } from '../utils/useStreaks';
 
 // ─── Topic lists per subject ──────────────────────────────────────────────────
 
