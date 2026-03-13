@@ -41,9 +41,9 @@ const [imageData, setImageData] = useState(null);
     } catch {}
     const t = setTimeout(() => setPulse(false), 6000);
     const onUrdu = () => { setUrduMode(true); setOpen(true); };
-    window.addEventListener("starky-urdu", onUrdu);
-    return () => { clearTimeout(t); window.removeEventListener("starky-urdu", onUrdu); };
-    }, []);
+    window.addEventListener('starky-urdu', onUrdu);
+    return () => { clearTimeout(t); window.removeEventListener('starky-urdu', onUrdu); };
+  }, []);
 
   useEffect(() => {
     if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
