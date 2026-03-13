@@ -70,7 +70,7 @@ export default function Home() {
 
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
-  const { callsUsed: sessionCount, callsLeft, limitReached: isLimitReached, recordCall } = useSessionLimit();
+  const { callsUsed: sessionCount, callsLeft, limitReached: isLimitReached, recordCall } = useSessionLimit(userProfile?.email);
 
   useEffect(() => {
     try {

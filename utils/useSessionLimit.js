@@ -71,7 +71,8 @@ const writeUsage = (count) => {
 /**
  * The hook
  */
-export const useSessionLimit = () => {
+export const useSessionLimit = (email) => {
+  const isExempt = isExemptEmail(email);
   const [callsUsed, setCallsUsed] = useState(0);
 
   useEffect(() => {
@@ -79,7 +80,7 @@ export const useSessionLimit = () => {
   }, []);
 
   const callsLeft    = Math.max(0, FREE_DAILY_LIMIT - callsUsed);
-  const limitReached = callsUsed >= FREE_DAILY_LIMIT;
+  const limitReached = !isExempt && callsUsed >= FREE_DAILY_LIMIT;
 
   /**
    * Call before each API request.
@@ -87,7 +88,7 @@ export const useSessionLimit = () => {
    */
   const recordCall = useCallback(() => {
     const current = readUsage().count;
-    if (current >= FREE_DAILY_LIMIT) return false;
+    if (!isExempt && current >= FREE_DAILY_LIMIT) return false;
     const next = current + 1;
     writeUsage(next);
     setCallsUsed(next);
