@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
-import { useSessionMemory } from '../utils/useSessionMemory';
+import { useSessionMemory, detectAndSaveMistake } from '../utils/useSessionMemory';
 
 export default function StarkyBubble() {
   const [open, setOpen] = useState(false);
@@ -19,6 +19,8 @@ export default function StarkyBubble() {
   const {
     sessionMemory,
     saveMessage,
+    saveSubject,
+    addMistake,
     finalizeSession,
     hasPriorSession,
     getContinuationGreeting,
@@ -138,6 +140,9 @@ export default function StarkyBubble() {
 
       // Save to persistent memory hook
       saveMessage(text, reply);
+
+      // Auto-detect mistakes from Starky's response and log them
+      detectAndSaveMistake(reply, text, sessionMemory.currentSubject, addMistake);
 
       // Auto-summarize mid-session after SUMMARIZE_AFTER messages
       // (so next open already has context even if they don't close properly)

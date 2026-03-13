@@ -11,6 +11,7 @@ import { useState, useEffect, useCallback } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useSpacedRep } from '../utils/useSpacedRep';
+import { useStreaks, StreakWidget } from '../utils/useStreaks';
 
 // ─── Topic lists per subject ──────────────────────────────────────────────────
 
@@ -255,6 +256,7 @@ const DIFFICULTIES = [
 export default function DrillPage() {
   const [userProfile, setUserProfile] = useState(null);
   const sr = useSpacedRep(userProfile);
+  const { logSession, streakDays, totalQuestions, badges } = useStreaks(userProfile);
 
   // Setup state
   const [level,        setLevel]        = useState('O Level');
@@ -371,6 +373,8 @@ export default function DrillPage() {
   const nextQuestion = () => {
     const nextNum = questionNum + 1;
     if (nextNum >= SESSION_LENGTH) {
+      // Log completed session to streaks before showing summary
+      logSession(subject, SESSION_LENGTH, sessionPct);
       setPhase('summary');
       return;
     }
@@ -713,6 +717,11 @@ export default function DrillPage() {
             <div style={{ fontSize: 14, color: 'rgba(255,255,255,.45)' }}>
               {correctCount} / {sessionResults.length} correct · {sessionScore} / {sessionMax} marks
             </div>
+          </div>
+
+          {/* Streak widget */}
+          <div style={{ marginBottom: 16 }}>
+            <StreakWidget />
           </div>
 
           {/* Per-question results */}
