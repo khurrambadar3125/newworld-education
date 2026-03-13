@@ -14,6 +14,8 @@ export default function StarkyBubble() {
   const synthRef = useRef(null);
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
+const fileInputRef = useRef(null);
+const [imageData, setImageData] = useState(null);
 
   // ── Session memory ──────────────────────────────────────────────────────────
   const {
@@ -100,6 +102,7 @@ export default function StarkyBubble() {
   // ── Send message ────────────────────────────────────────────────────────────
   const sendMessage = async () => {
     const text = input.trim();
+    const imgPayload = imageData ? { base64: imageData.base64, type: imageData.type } : null;
     if (!text || loading) return;
 
     const userMsg = { role: 'user', content: text };
@@ -356,6 +359,10 @@ export default function StarkyBubble() {
           flex-shrink: 0;
         }
         .starky-send-btn:disabled { opacity: .35; cursor: not-allowed; }
+      .starky-upload-btn { background: rgba(255,255,255,.1); border: none; color: #fff; font-size: 16px; padding: 6px 10px; border-radius: 8px; cursor: pointer; margin-right: 4px; }
+      .starky-upload-btn:hover { background: rgba(255,255,255,.2); }
+      .starky-img-preview { font-size: 12px; color: rgba(255,255,255,.7); padding: 4px 8px; background: rgba(255,255,255,.1); border-radius: 6px; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+      .starky-img-preview button { background: none; border: none; color: rgba(255,255,255,.6); cursor: pointer; font-size: 14px; }
 
         .starky-fab {
           width: 56px;
@@ -462,6 +469,9 @@ export default function StarkyBubble() {
                 rows={1}
                 disabled={loading}
               />
+              {imageData && <div className="starky-img-preview"><span>📎 {imageData.name}</span><button onClick={clearImage}>✕</button></div>}
+              <input ref={fileInputRef} type="file" accept="image/*" style={{display:"none"}} onChange={handleImageSelect} />
+              <button className="starky-upload-btn" onClick={() => fileInputRef.current?.click()} title="Upload image or photo">📎</button>
               <button className="starky-send-btn" onClick={sendMessage} disabled={loading || !input.trim()}>↑</button>
             </div>
           </div>
