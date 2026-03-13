@@ -26,7 +26,7 @@ import Head from "next/head";
 // ── CONSTANTS ─────────────────────────────────────────────────────────────────
 const STORAGE_KEY   = "nw_parent";
 const ACTIVE_KEY    = "nw_active_child";
-const PAYPAL        = "https://paypal.me/NewWorldEducation";
+const PAYPAL        = "https://paypal.me/NewWorldEdu";
 
 const AVATARS = ["🦁","🐯","🐻","🦊","🦄","🐬","🦋","🐉","🦅","🌟","🚀","🎸"];
 const COLORS  = ["#63D2FF","#A8E063","#FFC300","#FF8C69","#C77DFF","#FF6B6B","#52C97A","#63D2FF"];

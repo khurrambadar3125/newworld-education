@@ -40,7 +40,7 @@ const SUBJECTS_ALEVEL = [
   'History', 'Geography', 'Sociology', 'Psychology', 'Law', 'Economics',
   'Business Studies', 'Accounting', 'Thinking Skills', 'Global Perspectives',
   'Computer Science', 'Information Technology', 'Design & Technology',
-  'Islamic Studies', 'Divinity', 'Art & Design', 'Music', 'Physical Education', 'General Paper', 'Media Studies',
+  'Islamic Studies', 'Divinity', 'Art & Design', 'Music', 'Physical Education', 'General Paper',
 ];
 
 export default function Home() {
@@ -70,7 +70,7 @@ export default function Home() {
 
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
-  const { callsUsed: sessionCount, callsLeft, limitReached: isLimitReached, recordCall } = useSessionLimit();
+  const { sessionCount, dailyLimit, isLimitReached, incrementSession, isLoaded } = useSessionLimit();
 
   useEffect(() => {
     try {
@@ -133,7 +133,7 @@ export default function Home() {
   const handleRegSubmit = () => {
     if (!regName.trim()) { setRegError('Please enter your name'); return; }
     if (!regEmail.trim() || !regEmail.includes('@')) { setRegError('Please enter a valid email'); return; }
-    const profile = { name: regName.trim(), email: regEmail.trim(), role: regRole, grade: selectedGrade?.label || '', gradeId: selectedGrade?.id || '', gradeAge: selectedGrade?.age || '', joinedAt: new Date().toISOString() };
+    const profile = { name: regName.trim(), email: regEmail.trim(), role: regRole, joinedAt: new Date().toISOString() };
     localStorage.setItem('nw_user', JSON.stringify(profile));
     setUserProfile(profile);
     setShowRegModal(false);
@@ -171,7 +171,7 @@ METHOD: Use Socratic questioning — NEVER give direct answers. Guide the studen
 NEVER SAY: "That's wrong", "You should know this", "Let's move on"
 ALWAYS: "Not quite — and that tells me something useful!", keep responses concise — 3 short paragraphs max.
 
-CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for ALL O Level subjects (Biology 5090, Chemistry 5070, Physics 5054, Mathematics 4024, Additional Mathematics 4037, English Language 1123, Literature in English 2010, Pakistan Studies 2059, Islamiyat 2058, History 2134, Geography 2217, Economics 2281, Business Studies 7115, Accounting 7707, Computer Science 2210, Sociology 2251, and all others) and ALL A Level subjects (Biology 9700, Chemistry 9701, Physics 9702, Mathematics 9709, Psychology 9990, Law 9084, English Language 9093, Literature in English 9695, Economics 9708, Business 9707, History 9489, Geography 9696, Sociology 9699, Computer Science 9608, Media Studies 9607, and all others). You know every mark scheme, examiner report, and Cambridge textbook. You know exactly what examiners want.`;
+CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for ALL O Level subjects (Biology 5090, Chemistry 5070, Physics 5054, Mathematics 4024, Additional Mathematics 4037, English Language 1123, Literature in English 2010, Pakistan Studies 2059, Islamiyat 2058, History 2134, Geography 2217, Economics 2281, Business Studies 7115, Accounting 7707, Computer Science 2210, Sociology 2251, and all others) and ALL A Level subjects (Biology 9700, Chemistry 9701, Physics 9702, Mathematics 9709, Psychology 9698, Law 9084, English Language 9093, Literature in English 9695, Economics 9708, Business Studies 9609, History 9389, Geography 9696, Sociology 9699, Computer Science 9618, and all others). You know every mark scheme, examiner report, and Cambridge textbook. You know exactly what examiners want.`;
 
     try {
       const res = await fetch('/api/anthropic', {
@@ -179,23 +179,20 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: newMsgs, system: sys }),
       });
-      let data = {};
-      try { data = await res.json(); } catch(e) { data = {}; }
-      const reply = (res.ok && data.content) ? data.content : (data.error || "Starky is busy — please try again in a moment!");
+      const data = await res.json();
+      const reply = data.content || "Sorry, something went wrong. Please try again!";
       setMessages([...newMsgs, { role: 'assistant', content: reply }]);
-      try { recordCall(); } catch(e) {}
-      try { if (voiceSupported) speakText(reply); } catch(e) {}
-      try {
-        if (newMsgs.filter(m => m.role === 'user').length >= 5 && p.email) {
-          fetch('/api/session-complete', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ studentId: p.email, studentName: p.name, parentEmail: p.email, parentName: p.name, grade: selectedGrade?.label, subject: selectedSubject || 'General', messages: newMsgs, isSEN: false, sessionCount }),
-          }).catch(() => {});
-        }
-      } catch(e) {}
-    } catch(e) {
-      setMessages([...newMsgs, { role: 'assistant', content: 'Starky is busy — please try again in a moment!' }]);
+      incrementSession();
+      if (voiceSupported) speakText(reply);
+      if (newMsgs.filter(m => m.role === 'user').length >= 5 && p.email) {
+        fetch('/api/session-complete', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ studentId: p.email, studentName: p.name, parentEmail: p.email, parentName: p.name, grade: selectedGrade?.label, subject: selectedSubject || 'General', messages: newMsgs, isSEN: false, sessionCount }),
+        }).catch(() => {});
+      }
+    } catch {
+      setMessages([...newMsgs, { role: 'assistant', content: 'Something went wrong. Please try again!' }]);
     } finally {
       setLoading(false);
     }
@@ -203,54 +200,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
 
   const handleKey = (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); } };
 
-  const remaining = callsLeft;
-
-
-  // ── EXAM SEASON BANNER — Zone 4 Pakistan precise dates ──
-  const getExamBanner = () => {
-    const now = new Date();
-    const m = now.getMonth() + 1; // 1-12
-    const d = now.getDate();
-
-    // Cambridge Zone 4 May/June 2026: 23 Apr – 9 Jun
-    // Countdown window: from today until 23 Apr
-    const examStart = new Date(now.getFullYear(), 3, 23); // April 23
-    const examEnd   = new Date(now.getFullYear(), 5, 9);  // June 9
-    const msPerWeek = 7 * 24 * 60 * 60 * 1000;
-    const weeksToStart = Math.ceil((examStart - now) / msPerWeek);
-
-    // Pre-exam countdown: Jan–Apr 22
-    if (now < examStart && m >= 1 && m <= 4) {
-      const weekLabel = weeksToStart === 1 ? "1 week" : `${weeksToStart} weeks`;
-      return {
-        msg: `📅 Cambridge O & A Level exams start 23 April — ${weekLabel} away. Starky has memorised every past paper and mark scheme.`,
-        color: "#A78BFA", bg: "rgba(167,139,250,0.1)", border: "rgba(167,139,250,0.25)"
-      };
-    }
-    // Active exam window: Apr 23 – Jun 9
-    if (now >= examStart && now <= examEnd) {
-      return {
-        msg: "🎯 Cambridge exams are happening NOW — use Starky for mark scheme practice, essay feedback, and last-minute revision. Every mark counts.",
-        color: "#4F8EF7", bg: "rgba(79,142,247,0.12)", border: "rgba(79,142,247,0.3)"
-      };
-    }
-    // MDCAT / ECAT window: Jul–Aug
-    if (m >= 7 && m <= 8) {
-      return {
-        msg: "⚡ MDCAT & ECAT season — Starky covers Biology, Chemistry, Physics & English MCQs for your entry test. Start now.",
-        color: "#FF8C69", bg: "rgba(255,140,105,0.12)", border: "rgba(255,140,105,0.3)"
-      };
-    }
-    // Oct/Nov registration and prep: Sep–Nov
-    if (m >= 9 && m <= 11) {
-      return {
-        msg: "📚 Cambridge Oct/Nov session is coming — now is the time to lock in your subjects and start revision with Starky.",
-        color: "#2BB55A", bg: "rgba(43,181,90,0.12)", border: "rgba(43,181,90,0.3)"
-      };
-    }
-    return null;
-  };
-  const examBanner = getExamBanner();
+  const remaining = dailyLimit - sessionCount;
 
   // ── CHAT VIEW ──
   if (chatStarted) return (
@@ -304,7 +254,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
             <button className="ib" onClick={() => { setChatStarted(false); setMessages([]); stopSpeaking(); }}>← Back</button>
           </div>
         </div>
-        {!isLimitReached && (
+        {isLoaded && !isLimitReached && (
           <div className={`sb ${remaining <= 5 ? 'd' : remaining <= 10 ? 'w' : ''}`}>{remaining} sessions remaining today</div>
         )}
         <div className="cm">
@@ -313,7 +263,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           <div ref={messagesEndRef} />
         </div>
         {isLimitReached ? (
-          <div className="lw"><p>You've used all your free sessions for today.<br />Upgrade to keep learning without limits.</p><Link href="/pricing"><a>See Plans — from $29.99/mo →</a></Link></div>
+          <div className="lw"><p>You've used all {dailyLimit} sessions for today.<br />Upgrade to keep learning without limits.</p><Link href="/pricing"><a>See Plans — from $29.99/mo →</a></Link></div>
         ) : (
           <div className="cia">
             <div className="ir">
@@ -479,30 +429,13 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           </div>
       )}
 
-      {/* ── EXAM SEASON BANNER ── */}
-      {examBanner && (
-        <div style={{background:examBanner.bg,border:`1px solid ${examBanner.border}`,padding:'11px 20px',display:'flex',alignItems:'center',justifyContent:'center',gap:'16px',flexWrap:'wrap'}}>
-          <span style={{fontSize:'13px',fontWeight:'600',color:examBanner.color,lineHeight:1.5}}>{examBanner.msg}</span>
-          <a href="#start-learning" style={{display:'inline-flex',alignItems:'center',gap:'5px',background:examBanner.color,color:'#080C18',borderRadius:'100px',padding:'6px 16px',fontSize:'12px',fontWeight:'800',textDecoration:'none',whiteSpace:'nowrap',flexShrink:0,fontFamily:"'Sora',sans-serif"}}>
-            Try Starky ★
-          </a>
-        </div>
-      )}
-
-      {/* ── URDU HELP BUTTON ONLY ── */}
-      <div style={{background:'rgba(255,255,255,0.02)',borderBottom:'1px solid rgba(255,255,255,0.05)',padding:'8px 20px',display:'flex',justifyContent:'flex-end'}}>
-        <a href="/homework" style={{display:'inline-flex',alignItems:'center',gap:'6px',background:'rgba(79,142,247,0.1)',border:'1px solid rgba(79,142,247,0.25)',borderRadius:'100px',padding:'6px 14px',fontSize:'12px',fontWeight:'700',color:'#4F8EF7',textDecoration:'none'}}>
-          اردو میں مدد ★
-        </a>
-      </div>
-
       <section className="hero">
         <div className="hb">★ AI Tutor — KG to A Levels</div>
         <h1>Every Child Deserves a <em>World-Class</em> Tutor</h1>
         <button onClick={()=>document.getElementById('oa-level')?.scrollIntoView({behavior:'smooth'})} style={{display:'inline-flex',alignItems:'center',gap:'8px',background:'rgba(167,139,250,0.12)',border:'2px solid rgba(167,139,250,0.5)',borderRadius:'50px',padding:'10px 22px',margin:'0 0 14px',cursor:'pointer',fontFamily:"'Sora',sans-serif",fontWeight:'700',fontSize:'clamp(12px,1.4vw,14px)',color:'#A78BFA',transition:'all 0.2s'}} onMouseEnter={e=>{e.currentTarget.style.background='rgba(167,139,250,0.22)';e.currentTarget.style.transform='translateY(-2px)';}} onMouseLeave={e=>{e.currentTarget.style.background='rgba(167,139,250,0.12)';e.currentTarget.style.transform='translateY(0)';}}>
           <span>📚</span> O Level &amp; A Level — see how Starky gets you to A* <span style={{opacity:0.6}}>↓</span>
         </button>
-        <p className="hs">Better grades in 30 days. 24/7.</p>
+        <p className="hs">Meet Starky — your child's personal AI teacher. Available 24/7, in 16 languages, covering every subject from KG to A Levels.</p>
         <div className="hc">
           <a href="#start-learning" className="bp">Start Learning →</a>
           <a href="/special-needs" className="bo">💜 Special Needs</a>
@@ -626,15 +559,6 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           <a href="/parent">Parents</a>
           <a href="/pricing">Pricing</a>
           <a href="/past-papers">Past Papers</a>
-          <a href="/textbooks">Textbooks</a>
-          <a href="/homework">Homework Help</a>
-          <a href="/arts">Arts</a>
-          <a href="/music">Music</a>
-          <a href="/reading">Reading</a>
-          <a href="/arts-for-all">Arts for All</a>
-          <a href="/music-for-all">Music for All</a>
-          <a href="/reading-for-all">Reading for All</a>
-          <a href="/ibcc">IBCC Calculator</a>
         </div>
         <div className="fc2">© 2026 NewWorldEdu · khurram@newworld.education</div>
       </footer>

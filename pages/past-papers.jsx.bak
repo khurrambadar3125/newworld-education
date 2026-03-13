@@ -413,7 +413,6 @@ export default function PastPapersPage() {
   const [showStudyPlan, setShowStudyPlan] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [progress, setProgress] = useState({});
-  const [showUpgrade, setShowUpgrade] = useState(false);
 
   // PDF state
   const [pdfData,    setPdfData]    = useState(null);   // { base64, name }
@@ -613,27 +612,6 @@ export default function PastPapersPage() {
 
       {/* Modals */}
       {showStudyPlan && <StudyPlanModal subject={subject} level={level} onClose={()=>setShowStudyPlan(false)} onSend={sendMessage}/>}
-
-      {showUpgrade && (
-        <div style={{ position:"fixed", inset:0, background:"rgba(0,0,0,0.85)", zIndex:600, display:"flex", alignItems:"center", justifyContent:"center", padding:"20px", fontFamily:"'Nunito',sans-serif" }} onClick={()=>setShowUpgrade(false)}>
-          <div onClick={e=>e.stopPropagation()} style={{ background:"linear-gradient(160deg,#0E1635,#0A1220)", border:"1px solid rgba(255,195,0,0.3)", borderRadius:32, padding:48, width:"100%", maxWidth:480, textAlign:"center" }}>
-            <div style={{ fontSize:64, marginBottom:20 }}>📚</div>
-            <h2 style={{ fontWeight:900, fontSize:26, margin:"0 0 12px", color:"#FFC300" }}>You're on a roll!</h2>
-            <p style={{ color:"rgba(255,255,255,0.65)", lineHeight:1.75, marginBottom:28, fontSize:15 }}>
-              You've used your <strong style={{ color:"#FFC300" }}>5 free sessions</strong> today. Upgrade to keep practising past papers without limits — including mark scheme analysis, study plans, and examiner tips.
-            </p>
-            <div style={{ display:"flex", flexDirection:"column", gap:10 }}>
-              <a href="/pricing" style={{ display:"block", background:"linear-gradient(135deg,#FFC300,#FF8E53)", borderRadius:14, padding:15, fontWeight:900, fontSize:15, color:"#060B20", textDecoration:"none", fontFamily:"'Nunito',sans-serif" }}>
-                Unlock Unlimited Sessions 🚀
-              </a>
-              <button onClick={()=>setShowUpgrade(false)} style={{ background:"transparent", border:"1px solid rgba(255,255,255,0.15)", borderRadius:14, padding:13, color:"rgba(255,255,255,0.5)", fontSize:14, cursor:"pointer", fontFamily:"'Nunito',sans-serif", fontWeight:600 }}>
-                Close — Come back tomorrow
-              </button>
-            </div>
-            <div style={{ fontSize:11, color:"rgba(255,255,255,0.3)", marginTop:16 }}>Sessions reset at midnight · Plans from $29.99/mo</div>
-          </div>
-        </div>
-      )}
 
       {/* Hidden file input */}
       <input ref={fileInputRef} type="file" accept="application/pdf" style={{display:"none"}} onChange={e=>handlePdfUpload(e.target.files[0])}/>

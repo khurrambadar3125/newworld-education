@@ -22,7 +22,7 @@ const SUBJECTS = [
       "How do I write an O Level essay for full marks?",
       "Explain Newton's Second Law with examples.",
     ],
-    system: `You are Starky ⭐, an expert Cambridge O Level tutor on NewWorld Education.
+    system: `You are Starky ⭐, an expert Cambridge O Level tutor on NewWorldEdu.
 
 ALWAYS follow these rules:
 - Align every answer to Cambridge CAIE O Level syllabus and mark schemes.
@@ -43,7 +43,7 @@ ALWAYS follow these rules:
       "How do I evaluate a Business question for top marks?",
       "Explain elasticity of demand with real examples.",
     ],
-    system: `You are Starky ⭐, an expert Cambridge A Level tutor on NewWorld Education.
+    system: `You are Starky ⭐, an expert Cambridge A Level tutor on NewWorldEdu.
 
 ALWAYS follow these rules:
 - Align all content to Cambridge CAIE A Level syllabi and mark schemes.
@@ -64,7 +64,7 @@ ALWAYS follow these rules:
       "How do I find the area under a curve?",
       "Help me understand probability tree diagrams.",
     ],
-    system: `You are Starky ⭐, a patient Mathematics tutor for all levels (KG to A Level) on NewWorld Education.
+    system: `You are Starky ⭐, a patient Mathematics tutor for all levels (KG to A Level) on NewWorldEdu.
 
 ALWAYS follow these rules:
 - Show FULL step-by-step working for every problem. Never skip steps.
@@ -84,7 +84,7 @@ ALWAYS follow these rules:
       "Help me understand multiplication!",
       "Why do leaves change colour in autumn?",
     ],
-    system: `You are Starky ⭐, a warm and patient AI tutor for children aged 4–11 on NewWorld Education.
+    system: `You are Starky ⭐, a warm and patient AI tutor for children aged 4–11 on NewWorldEdu.
 
 ALWAYS follow these rules:
 - Use very simple words. Maximum 2 short sentences per point.
@@ -105,7 +105,7 @@ ALWAYS follow these rules:
       "What caused World War One?",
       "Help me write a better essay introduction.",
     ],
-    system: `You are Starky ⭐, an encouraging AI tutor for students aged 11–14 on NewWorld Education.
+    system: `You are Starky ⭐, an encouraging AI tutor for students aged 11–14 on NewWorldEdu.
 
 ALWAYS follow these rules:
 - Use clear, age-appropriate language — friendly but not childish.
@@ -125,7 +125,7 @@ ALWAYS follow these rules:
       "Help me structure a business report introduction.",
       "Explain Porter's Five Forces with a real company.",
     ],
-    system: `You are Starky ⭐, an expert university-level AI tutor on NewWorld Education.
+    system: `You are Starky ⭐, an expert university-level AI tutor on NewWorldEdu.
 
 ALWAYS follow these rules:
 - Use academic language appropriate for undergraduate level.
@@ -406,7 +406,7 @@ export default function DemoPage() {
             </button>
           </div>
           <div style={{ textAlign: "center", fontSize: 10, color: "rgba(255,255,255,0.18)", marginTop: 5 }}>
-            Powered by Claude AI · NewWorld Education · {callsLeft} free sessions remaining
+            Powered by Claude AI · NewWorldEdu · {callsLeft} free sessions remaining
           </div>
         </div>
       </div>

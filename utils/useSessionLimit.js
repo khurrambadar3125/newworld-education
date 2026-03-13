@@ -15,9 +15,23 @@
  * ─────────────────────────────────────────────────────────────────
  */
 
+const EXEMPT_EMAILS = [
+  'myusufkhurram1@gmail.com',
+  'dinakhurram1@gmail.com',
+  'sairakhurram1@gmail.com',
+  'bilalkhan25@gmail.com',
+  'khanemaanbilal@gmail.com',
+  'khurrambadar@gmail.com',
+  'kzafar@gmail.com',
+];
+export function isExemptEmail(email) {
+  return EXEMPT_EMAILS.includes(email?.toLowerCase().trim());
+}
+
 import { useState, useEffect, useCallback } from "react";
 
-const FREE_DAILY_LIMIT = 25;           // max Starky API calls per day
+const FREE_DAILY_LIMIT = 5;
+export function useSessionLimitBypass(email) { return isExemptEmail(email); }           // max Starky API calls per day
 const STORAGE_KEY      = "nwe_usage"; // localStorage key
 
 /**
@@ -199,6 +213,16 @@ export const LimitReachedModal = ({ onClose, grade }) => (
       </div>
 
       <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+        <a href="/pricing" style={{
+          display: "block",
+          background: "linear-gradient(135deg, #FFC300, #FF8E53)",
+          border: "none", borderRadius: "14px", padding: "15px",
+          fontWeight: "900", fontSize: "15px", cursor: "pointer",
+          color: "#060B20", fontFamily: "'Nunito', sans-serif",
+          textDecoration: "none", textAlign: "center",
+        }}>
+          Unlock Unlimited Sessions 🚀
+        </a>
         <button onClick={onClose} style={{
           background: "linear-gradient(135deg, #63D2FF, #4ECDC4)",
           border: "none", borderRadius: "14px", padding: "15px",
@@ -213,7 +237,7 @@ export const LimitReachedModal = ({ onClose, grade }) => (
           color: "rgba(255,255,255,0.5)", fontSize: "14px",
           cursor: "pointer", fontFamily: "'Nunito', sans-serif", fontWeight: "600",
         }}>
-          Close
+          Close — Come back tomorrow
         </button>
       </div>
 

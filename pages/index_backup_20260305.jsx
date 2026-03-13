@@ -19,29 +19,7 @@ const GRADES = [
   { id: 'alevel', label: 'A Level', age: '17–18', emoji: '🎓' },
 ];
 
-// KG to Grade 9 — general subjects
-const SUBJECTS_GENERAL = ['Maths', 'Physics', 'Chemistry', 'Biology', 'English', 'History', 'Geography', 'Computer Science', 'Urdu', 'Economics'];
-
-// O Level specific subjects
-const SUBJECTS_OLEVEL = [
-  'Mathematics', 'Additional Mathematics', 'Statistics',
-  'Physics', 'Chemistry', 'Biology', 'Combined Science', 'Human & Social Biology', 'Environmental Management', 'Agriculture',
-  'English Language', 'Literature in English', 'First Language Urdu', 'Second Language Urdu', 'Arabic', 'French', 'German', 'Spanish',
-  'Pakistan Studies', 'History', 'Geography', 'Sociology', 'Economics', 'Islamiyat', 'Islamic Religion & Culture',
-  'Business Studies', 'Accounting', 'Commerce', 'Travel & Tourism',
-  'Computer Science', 'Art & Design', 'Food & Nutrition', 'Fashion & Textiles',
-];
-
-// AS Level & A Level specific subjects
-const SUBJECTS_ALEVEL = [
-  'Mathematics', 'Further Mathematics', 'Physics', 'Chemistry', 'Biology', 'Marine Science',
-  'English Language', 'Literature in English', 'Language & Literature in English',
-  'Urdu', 'Arabic', 'French', 'German', 'Spanish', 'Chinese', 'Hindi',
-  'History', 'Geography', 'Sociology', 'Psychology', 'Law', 'Economics',
-  'Business Studies', 'Accounting', 'Thinking Skills', 'Global Perspectives',
-  'Computer Science', 'Information Technology', 'Design & Technology',
-  'Islamic Studies', 'Divinity', 'Art & Design', 'Music', 'Physical Education', 'General Paper', 'Media Studies',
-];
+const SUBJECTS = ['Maths', 'Physics', 'Chemistry', 'Biology', 'English', 'History', 'Geography', 'Computer Science', 'Urdu', 'Economics'];
 
 export default function Home() {
   const [selectedGrade, setSelectedGrade] = useState(null);
@@ -70,7 +48,7 @@ export default function Home() {
 
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
-  const { callsUsed: sessionCount, callsLeft, limitReached: isLimitReached, recordCall } = useSessionLimit();
+  const { sessionCount, dailyLimit, isLimitReached, incrementSession, isLoaded } = useSessionLimit();
 
   useEffect(() => {
     try {
@@ -133,19 +111,18 @@ export default function Home() {
   const handleRegSubmit = () => {
     if (!regName.trim()) { setRegError('Please enter your name'); return; }
     if (!regEmail.trim() || !regEmail.includes('@')) { setRegError('Please enter a valid email'); return; }
-    const profile = { name: regName.trim(), email: regEmail.trim(), role: regRole, grade: selectedGrade?.label || '', gradeId: selectedGrade?.id || '', gradeAge: selectedGrade?.age || '', joinedAt: new Date().toISOString() };
+    const profile = { name: regName.trim(), email: regEmail.trim(), role: regRole, joinedAt: new Date().toISOString() };
     localStorage.setItem('nw_user', JSON.stringify(profile));
     setUserProfile(profile);
     setShowRegModal(false);
-    launchChat(profile, selectedSubject);
+    launchChat(profile);
   };
 
-  const launchChat = (profile, subjectOverride) => {
+  const launchChat = (profile) => {
     const p = profile || userProfile;
     const firstName = p?.name?.split(' ')[0] || 'there';
-    const subject = subjectOverride || selectedSubject;
     setChatStarted(true);
-    const greeting = `Hi ${firstName}! I'm Starky ★\n\nI'm your personal AI teacher for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}.\n\nWhat would you like to work on today? Ask me anything — homework help, exam prep, or a concept you want to understand better.`;
+    const greeting = `Hi ${firstName}! I'm Starky ★\n\nI'm your personal AI teacher for ${selectedGrade.label}${selectedSubject ? ` — ${selectedSubject}` : ''}.\n\nWhat would you like to work on today? Ask me anything — homework help, exam prep, or a concept you want to understand better.`;
     setMessages([{ role: 'assistant', content: greeting }]);
     if (voiceSupported) setTimeout(() => speakText(greeting), 500);
     setTimeout(() => inputRef.current?.focus(), 150);
@@ -169,9 +146,7 @@ PERSONALITY: Warm, encouraging, zero judgment. Celebrate every small win. For KG
 METHOD: Use Socratic questioning — NEVER give direct answers. Guide the student to discover. Break into small steps. End every reply with a check question OR next step.
 
 NEVER SAY: "That's wrong", "You should know this", "Let's move on"
-ALWAYS: "Not quite — and that tells me something useful!", keep responses concise — 3 short paragraphs max.
-
-CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for ALL O Level subjects (Biology 5090, Chemistry 5070, Physics 5054, Mathematics 4024, Additional Mathematics 4037, English Language 1123, Literature in English 2010, Pakistan Studies 2059, Islamiyat 2058, History 2134, Geography 2217, Economics 2281, Business Studies 7115, Accounting 7707, Computer Science 2210, Sociology 2251, and all others) and ALL A Level subjects (Biology 9700, Chemistry 9701, Physics 9702, Mathematics 9709, Psychology 9990, Law 9084, English Language 9093, Literature in English 9695, Economics 9708, Business 9707, History 9489, Geography 9696, Sociology 9699, Computer Science 9608, Media Studies 9607, and all others). You know every mark scheme, examiner report, and Cambridge textbook. You know exactly what examiners want.`;
+ALWAYS: "Not quite — and that tells me something useful!", keep responses concise — 3 short paragraphs max.`;
 
     try {
       const res = await fetch('/api/anthropic', {
@@ -179,23 +154,20 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: newMsgs, system: sys }),
       });
-      let data = {};
-      try { data = await res.json(); } catch(e) { data = {}; }
-      const reply = (res.ok && data.content) ? data.content : (data.error || "Starky is busy — please try again in a moment!");
+      const data = await res.json();
+      const reply = data.content || "Sorry, something went wrong. Please try again!";
       setMessages([...newMsgs, { role: 'assistant', content: reply }]);
-      try { recordCall(); } catch(e) {}
-      try { if (voiceSupported) speakText(reply); } catch(e) {}
-      try {
-        if (newMsgs.filter(m => m.role === 'user').length >= 5 && p.email) {
-          fetch('/api/session-complete', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ studentId: p.email, studentName: p.name, parentEmail: p.email, parentName: p.name, grade: selectedGrade?.label, subject: selectedSubject || 'General', messages: newMsgs, isSEN: false, sessionCount }),
-          }).catch(() => {});
-        }
-      } catch(e) {}
-    } catch(e) {
-      setMessages([...newMsgs, { role: 'assistant', content: 'Starky is busy — please try again in a moment!' }]);
+      incrementSession();
+      if (voiceSupported) speakText(reply);
+      if (newMsgs.filter(m => m.role === 'user').length >= 5 && p.email) {
+        fetch('/api/session-complete', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ studentId: p.email, studentName: p.name, parentEmail: p.email, parentName: p.name, grade: selectedGrade?.label, subject: selectedSubject || 'General', messages: newMsgs, isSEN: false, sessionCount }),
+        }).catch(() => {});
+      }
+    } catch {
+      setMessages([...newMsgs, { role: 'assistant', content: 'Something went wrong. Please try again!' }]);
     } finally {
       setLoading(false);
     }
@@ -203,54 +175,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
 
   const handleKey = (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); } };
 
-  const remaining = callsLeft;
-
-
-  // ── EXAM SEASON BANNER — Zone 4 Pakistan precise dates ──
-  const getExamBanner = () => {
-    const now = new Date();
-    const m = now.getMonth() + 1; // 1-12
-    const d = now.getDate();
-
-    // Cambridge Zone 4 May/June 2026: 23 Apr – 9 Jun
-    // Countdown window: from today until 23 Apr
-    const examStart = new Date(now.getFullYear(), 3, 23); // April 23
-    const examEnd   = new Date(now.getFullYear(), 5, 9);  // June 9
-    const msPerWeek = 7 * 24 * 60 * 60 * 1000;
-    const weeksToStart = Math.ceil((examStart - now) / msPerWeek);
-
-    // Pre-exam countdown: Jan–Apr 22
-    if (now < examStart && m >= 1 && m <= 4) {
-      const weekLabel = weeksToStart === 1 ? "1 week" : `${weeksToStart} weeks`;
-      return {
-        msg: `📅 Cambridge O & A Level exams start 23 April — ${weekLabel} away. Starky has memorised every past paper and mark scheme.`,
-        color: "#A78BFA", bg: "rgba(167,139,250,0.1)", border: "rgba(167,139,250,0.25)"
-      };
-    }
-    // Active exam window: Apr 23 – Jun 9
-    if (now >= examStart && now <= examEnd) {
-      return {
-        msg: "🎯 Cambridge exams are happening NOW — use Starky for mark scheme practice, essay feedback, and last-minute revision. Every mark counts.",
-        color: "#4F8EF7", bg: "rgba(79,142,247,0.12)", border: "rgba(79,142,247,0.3)"
-      };
-    }
-    // MDCAT / ECAT window: Jul–Aug
-    if (m >= 7 && m <= 8) {
-      return {
-        msg: "⚡ MDCAT & ECAT season — Starky covers Biology, Chemistry, Physics & English MCQs for your entry test. Start now.",
-        color: "#FF8C69", bg: "rgba(255,140,105,0.12)", border: "rgba(255,140,105,0.3)"
-      };
-    }
-    // Oct/Nov registration and prep: Sep–Nov
-    if (m >= 9 && m <= 11) {
-      return {
-        msg: "📚 Cambridge Oct/Nov session is coming — now is the time to lock in your subjects and start revision with Starky.",
-        color: "#2BB55A", bg: "rgba(43,181,90,0.12)", border: "rgba(43,181,90,0.3)"
-      };
-    }
-    return null;
-  };
-  const examBanner = getExamBanner();
+  const remaining = dailyLimit - sessionCount;
 
   // ── CHAT VIEW ──
   if (chatStarted) return (
@@ -304,7 +229,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
             <button className="ib" onClick={() => { setChatStarted(false); setMessages([]); stopSpeaking(); }}>← Back</button>
           </div>
         </div>
-        {!isLimitReached && (
+        {isLoaded && !isLimitReached && (
           <div className={`sb ${remaining <= 5 ? 'd' : remaining <= 10 ? 'w' : ''}`}>{remaining} sessions remaining today</div>
         )}
         <div className="cm">
@@ -313,7 +238,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           <div ref={messagesEndRef} />
         </div>
         {isLimitReached ? (
-          <div className="lw"><p>You've used all your free sessions for today.<br />Upgrade to keep learning without limits.</p><Link href="/pricing"><a>See Plans — from $29.99/mo →</a></Link></div>
+          <div className="lw"><p>You've used all {dailyLimit} sessions for today.<br />Upgrade to keep learning without limits.</p><Link href="/pricing"><a>See Plans — from $29.99/mo →</a></Link></div>
         ) : (
           <div className="cia">
             <div className="ir">
@@ -395,10 +320,10 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
         .foot{padding:30px 20px;text-align:center;border-top:1px solid rgba(255,255,255,.05)}
         .fl{font-family:'Sora',sans-serif;font-size:17px;font-weight:800;margin-bottom:6px}
         .fl span{color:#4F8EF7}
-        .ftag{font-size:12px;color:rgba(255,255,255,.6);margin-bottom:18px}
+        .ftag{font-size:12px;color:rgba(255,255,255,.28);margin-bottom:18px}
         .flinks{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:16px}
-        .flinks a{font-size:13px;color:rgba(255,255,255,.55);text-decoration:none}
-        .fc2{font-size:11px;color:rgba(255,255,255,.5)}
+        .flinks a{font-size:13px;color:rgba(255,255,255,.3);text-decoration:none}
+        .fc2{font-size:11px;color:rgba(255,255,255,.18)}
         /* Modal */
         .mo{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:200;display:flex;align-items:flex-end;justify-content:center}
         @media(min-width:480px){.mo{align-items:center;padding:20px}}
@@ -479,30 +404,10 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           </div>
       )}
 
-      {/* ── EXAM SEASON BANNER ── */}
-      {examBanner && (
-        <div style={{background:examBanner.bg,border:`1px solid ${examBanner.border}`,padding:'11px 20px',display:'flex',alignItems:'center',justifyContent:'center',gap:'16px',flexWrap:'wrap'}}>
-          <span style={{fontSize:'13px',fontWeight:'600',color:examBanner.color,lineHeight:1.5}}>{examBanner.msg}</span>
-          <a href="#start-learning" style={{display:'inline-flex',alignItems:'center',gap:'5px',background:examBanner.color,color:'#080C18',borderRadius:'100px',padding:'6px 16px',fontSize:'12px',fontWeight:'800',textDecoration:'none',whiteSpace:'nowrap',flexShrink:0,fontFamily:"'Sora',sans-serif"}}>
-            Try Starky ★
-          </a>
-        </div>
-      )}
-
-      {/* ── URDU HELP BUTTON ONLY ── */}
-      <div style={{background:'rgba(255,255,255,0.02)',borderBottom:'1px solid rgba(255,255,255,0.05)',padding:'8px 20px',display:'flex',justifyContent:'flex-end'}}>
-        <a href="/homework" style={{display:'inline-flex',alignItems:'center',gap:'6px',background:'rgba(79,142,247,0.1)',border:'1px solid rgba(79,142,247,0.25)',borderRadius:'100px',padding:'6px 14px',fontSize:'12px',fontWeight:'700',color:'#4F8EF7',textDecoration:'none'}}>
-          اردو میں مدد ★
-        </a>
-      </div>
-
       <section className="hero">
         <div className="hb">★ AI Tutor — KG to A Levels</div>
         <h1>Every Child Deserves a <em>World-Class</em> Tutor</h1>
-        <button onClick={()=>document.getElementById('oa-level')?.scrollIntoView({behavior:'smooth'})} style={{display:'inline-flex',alignItems:'center',gap:'8px',background:'rgba(167,139,250,0.12)',border:'2px solid rgba(167,139,250,0.5)',borderRadius:'50px',padding:'10px 22px',margin:'0 0 14px',cursor:'pointer',fontFamily:"'Sora',sans-serif",fontWeight:'700',fontSize:'clamp(12px,1.4vw,14px)',color:'#A78BFA',transition:'all 0.2s'}} onMouseEnter={e=>{e.currentTarget.style.background='rgba(167,139,250,0.22)';e.currentTarget.style.transform='translateY(-2px)';}} onMouseLeave={e=>{e.currentTarget.style.background='rgba(167,139,250,0.12)';e.currentTarget.style.transform='translateY(0)';}}>
-          <span>📚</span> O Level &amp; A Level — see how Starky gets you to A* <span style={{opacity:0.6}}>↓</span>
-        </button>
-        <p className="hs">Better grades in 30 days. 24/7.</p>
+        <p className="hs">Meet Starky — your child's personal AI teacher. Available 24/7, in 16 languages, covering every subject from KG to A Levels.</p>
         <div className="hc">
           <a href="#start-learning" className="bp">Start Learning →</a>
           <a href="/special-needs" className="bo">💜 Special Needs</a>
@@ -533,8 +438,8 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
               <div className="sl">Step 2 of 2 — Optional</div>
               <div className="st" style={{marginBottom:14}}>Pick a subject</div>
               <div className="sr">
-                {(selectedGrade?.id === 'olevel' ? SUBJECTS_OLEVEL : selectedGrade?.id === 'aslevel' || selectedGrade?.id === 'alevel' ? SUBJECTS_ALEVEL : SUBJECTS_GENERAL).map(s => (
-                  <button key={s} className={`sbb ${selectedSubject===s?'s':''}`} onClick={() => { setSelectedSubject(s); if(!userProfile){setShowRegModal(true);}else{launchChat(null,s);} }}>{s}</button>
+                {SUBJECTS.map(s => (
+                  <button key={s} className={`sbb ${selectedSubject===s?'s':''}`} onClick={() => setSelectedSubject(selectedSubject===s?null:s)}>{s}</button>
                 ))}
               </div>
             </div>
@@ -545,53 +450,6 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
             </div>
           </>
         )}
-      </section>
-
-      {/* ── O & A LEVEL SECTION ── */}
-      <section id="oa-level" style={{padding:'40px 20px',background:'linear-gradient(180deg,rgba(124,92,191,0.08) 0%,rgba(8,12,24,0) 100%)',borderTop:'1px solid rgba(167,139,250,0.15)'}}>
-        <div style={{maxWidth:480,margin:'0 auto',textAlign:'center'}}>
-          <div style={{display:'inline-flex',alignItems:'center',gap:6,background:'rgba(167,139,250,0.12)',border:'1px solid rgba(167,139,250,0.3)',borderRadius:100,padding:'4px 14px',fontSize:11,fontWeight:700,color:'#A78BFA',letterSpacing:'0.08em',textTransform:'uppercase',marginBottom:16}}>📚 Cambridge O &amp; A Level</div>
-          <h2 style={{fontFamily:"'Sora',sans-serif",fontSize:'clamp(22px,6vw,34px)',fontWeight:800,lineHeight:1.2,marginBottom:12}}>Your A* Starts Here</h2>
-          <p style={{fontSize:14,color:'rgba(255,255,255,0.5)',lineHeight:1.7,marginBottom:28}}>Starky has studied every Cambridge syllabus, past paper, mark scheme and examiner report from 1994 to 2024. Select your level to explore your subjects.</p>
-
-          {/* Toggle O / A Level */}
-          <div style={{display:'flex',gap:10,justifyContent:'center',marginBottom:24}}>
-            {[{id:'olevel',label:'📚 O Level'},{id:'alevel',label:'🎓 A Level'}].map(t=>(
-              <button key={t.id}
-                onClick={()=>setSelectedGrade(GRADES.find(g=>g.id===t.id))}
-                style={{padding:'10px 26px',borderRadius:100,border:'2px solid',fontWeight:700,fontSize:14,cursor:'pointer',fontFamily:"'Sora',sans-serif",transition:'all 0.2s',
-                  background:selectedGrade?.id===t.id?'linear-gradient(135deg,#7C5CBF,#4F8EF7)':'rgba(255,255,255,0.04)',
-                  borderColor:selectedGrade?.id===t.id?'transparent':'rgba(255,255,255,0.12)',
-                  color:selectedGrade?.id===t.id?'#fff':'rgba(255,255,255,0.5)'}}>
-                {t.label}
-              </button>
-            ))}
-          </div>
-
-          {/* Subject pills — only show when O or A level selected */}
-          {(selectedGrade?.id==='olevel'||selectedGrade?.id==='aslevel'||selectedGrade?.id==='alevel') && (
-            <>
-              <p style={{fontSize:12,color:'rgba(255,255,255,0.35)',marginBottom:14}}>Tap a subject to start — Starky launches instantly ★</p>
-              <div style={{display:'flex',flexWrap:'wrap',gap:8,justifyContent:'center',marginBottom:8}}>
-                {(selectedGrade?.id==='olevel' ? SUBJECTS_OLEVEL : SUBJECTS_ALEVEL).map(s=>(
-                  <button key={s}
-                    onClick={()=>{ setSelectedSubject(s); if(!userProfile){setShowRegModal(true);}else{launchChat(null,s);} }}
-                    style={{padding:'9px 18px',borderRadius:100,border:'1px solid rgba(255,255,255,0.1)',fontSize:12,fontWeight:600,cursor:'pointer',fontFamily:"'Sora',sans-serif",transition:'all 0.15s',WebkitTapHighlightColor:'transparent',background:'rgba(255,255,255,0.05)',color:'rgba(255,255,255,0.7)'}}
-                    onMouseEnter={e=>{e.currentTarget.style.background='rgba(124,92,191,0.3)';e.currentTarget.style.borderColor='rgba(167,139,250,0.5)';e.currentTarget.style.color='#A78BFA';}}
-                    onMouseLeave={e=>{e.currentTarget.style.background='rgba(255,255,255,0.05)';e.currentTarget.style.borderColor='rgba(255,255,255,0.1)';e.currentTarget.style.color='rgba(255,255,255,0.7)';}}>
-                    {s}
-                  </button>
-                ))}
-              </div>
-              <p style={{fontSize:11,color:'rgba(255,255,255,0.25)',marginTop:10}}>30 years of past papers · All mark schemes · Free</p>
-            </>
-          )}
-
-          {/* If no grade selected yet, show prompt */}
-          {(!selectedGrade||(selectedGrade?.id!=='olevel'&&selectedGrade?.id!=='aslevel'&&selectedGrade?.id!=='alevel')) && (
-            <p style={{fontSize:13,color:'rgba(255,255,255,0.3)',marginTop:8}}>Select O Level or A Level above to see your subjects</p>
-          )}
-        </div>
       </section>
 
       <section className="ft">
@@ -626,17 +484,8 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           <a href="/parent">Parents</a>
           <a href="/pricing">Pricing</a>
           <a href="/past-papers">Past Papers</a>
-          <a href="/textbooks">Textbooks</a>
-          <a href="/homework">Homework Help</a>
-          <a href="/arts">Arts</a>
-          <a href="/music">Music</a>
-          <a href="/reading">Reading</a>
-          <a href="/arts-for-all">Arts for All</a>
-          <a href="/music-for-all">Music for All</a>
-          <a href="/reading-for-all">Reading for All</a>
-          <a href="/ibcc">IBCC Calculator</a>
         </div>
-        <div className="fc2">© 2026 NewWorldEdu · khurram@newworld.education</div>
+        <div className="fc2">© 2026 NewWorldEdu · hello@newworld.education</div>
       </footer>
     </>
   );

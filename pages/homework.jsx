@@ -137,29 +137,44 @@ export default function HomeworkHelper() {
     const subject    = selectedSubject.label;
 
     if (mode === MODE_PARENT) {
-      return `You are Starky, a warm and expert homework helper for parents. 
+      return `You are Starky, a warm and expert homework helper for parents.
 A parent is sitting with their ${age}-year-old child (${gradeLabel}) doing ${subject} homework.
 Your job is to help the PARENT understand the concept clearly so they can explain it to their child.
+
+KNOWLEDGE: You have mastered every Cambridge O Level and A Level syllabus (1994–2024), every mark scheme, every examiner report, and every major curriculum from KG through Sixth Form including UK, Pakistan, and international curricula. You know exactly how examiners award marks.
+
 Give the parent:
-1. A simple, clear explanation of the concept
-2. The actual answer/solution with working shown
-3. A fun, easy way to explain it to a ${age}-year-old child (use a story, game, or everyday example)
+1. A simple, clear explanation of the concept — what it actually means
+2. The actual answer/solution with full working shown step by step
+3. A fun, easy way to explain it to a ${age}-year-old (use a story, game, or everyday object)
 4. One or two follow-up questions the parent can ask to check the child understood
+5. If this is an exam-level question: the exact mark scheme language Cambridge/AQA/Edexcel rewards
 
 Be warm, encouraging, and practical. Parents are often tired — make this easy for them.
-Use clear headings and numbered steps. Keep language simple and supportive.`;
+Use clear headings and numbered steps. If the question is from a past paper, work it exactly as a Cambridge examiner would.
+Respond in Urdu or Arabic if the parent writes in those languages.`;
     } else {
       return `You are Starky, a magical friendly tutor for a ${age}-year-old child in ${gradeLabel}.
 You are talking DIRECTLY to the child. Use their name occasionally if given.
-Make learning feel like a game or adventure. Use:
-- Very simple words a ${age}-year-old understands
-- Lots of emojis 🌟⭐🎉
-- Short sentences
-- Fun comparisons (like comparing numbers to sweets or animals)
-- Lots of encouragement and praise
-- End with a fun question to see if they got it
 
-Never use complicated words. Be their best, most magical friend who makes homework fun!`;
+KNOWLEDGE: You know everything — every subject from KG through A Levels, every Cambridge syllabus, every story book, every maths concept, every science topic. Nothing is too simple or too hard for you.
+
+Make learning feel like a game or adventure:
+- Very simple words a ${age}-year-old understands
+- Lots of emojis 🌟⭐🎉✨
+- Short sentences, big energy
+- Fun comparisons (numbers as pizza slices, atoms as tiny footballs, history as an adventure story)
+- Celebrate every correct answer with genuine excitement
+- If they're wrong: "Ooh, close! Let's try a different way 🤔"
+- End with a fun question or mini-challenge to check understanding
+
+For maths: show every step, explain each one simply
+For English: make the story come alive — characters, feelings, drama
+For science: "Imagine you are the atom..." — make it physical and visual
+For history: tell it like an exciting story first, facts second
+
+Never use complicated words. Be their best, most magical friend who makes homework the best part of their day!
+Respond in Urdu or Arabic if the child writes in those languages.`;
     }
   };
 
@@ -220,7 +235,7 @@ Never use complicated words. Be their best, most magical friend who makes homewo
     <div style={{
       fontFamily: "'Nunito', 'Trebuchet MS', sans-serif",
       background: "linear-gradient(160deg, #0B0E1F 0%, #12101A 50%, #0D1520 100%)",
-      color: "#fff", minHeight: "100vh",
+      color: "#fff", minHeight: "100dvh",
     }}>
       {showLimitModal && <LimitReachedModal onClose={()=>setShowLimitModal(false)}/>}
       <style>{`
@@ -421,12 +436,13 @@ Never use complicated words. Be their best, most magical friend who makes homewo
                 value={question}
                 onChange={e => setQuestion(e.target.value)}
                 onKeyDown={e => e.key === "Enter" && e.ctrlKey && askStarky()}
+                autoCorrect="off" autoCapitalize="sentences" spellCheck={false}
                 placeholder={`e.g. "Count from 1 to 10 and circle the even numbers" or paste/type the question from the textbook...`}
                 rows={4}
                 style={{
                   width: "100%", background: "rgba(255,255,255,0.05)",
                   border: `1px solid ${accent}44`, borderRadius: "16px",
-                  padding: "14px 16px", color: "#fff", fontSize: "14px",
+                  padding: "14px 16px", color: "#fff", fontSize: "16px",
                   resize: "vertical", boxSizing: "border-box", lineHeight: "1.6",
                 }}
               />
@@ -539,13 +555,13 @@ Never use complicated words. Be their best, most magical friend who makes homewo
                       style={{
                         flex: 1, background: "rgba(255,255,255,0.05)",
                         border: "1px solid rgba(255,179,71,0.3)", borderRadius: "12px",
-                        padding: "12px 16px", color: "#fff", fontSize: "14px",
+                        padding: "12px 16px", color: "#fff", fontSize: "16px",
                       }}
                     />
                     <button onClick={askFollowUp} disabled={loading} style={{
                       background: "linear-gradient(135deg, #FFB347, #FF8E53)",
                       border: "none", borderRadius: "12px", padding: "12px 20px",
-                      cursor: "pointer", fontWeight: "800", fontSize: "14px",
+                      cursor: "pointer", fontWeight: "800", fontSize: "16px",
                       color: "#0D0800", fontFamily: "'Nunito', sans-serif",
                     }}>Ask →</button>
                   </div>
@@ -688,7 +704,7 @@ Never use complicated words. Be their best, most magical friend who makes homewo
                     {CRAFT_IDEAS[activeCraft].materials.map((m, i) => (
                       <div key={i} style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "10px" }}>
                         <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#FFB347", flexShrink: 0 }} />
-                        <span style={{ fontSize: "14px", color: "rgba(255,255,255,0.8)" }}>{m}</span>
+                        <span style={{ fontSize: "16px", color: "rgba(255,255,255,0.8)" }}>{m}</span>
                       </div>
                     ))}
                   </div>
@@ -737,7 +753,7 @@ Never use complicated words. Be their best, most magical friend who makes homewo
                 </div>
 
                 <div style={{ marginTop: "24px", padding: "18px", background: "rgba(99,210,255,0.08)", border: "1px solid rgba(99,210,255,0.2)", borderRadius: "16px", textAlign: "center" }}>
-                  <span style={{ fontSize: "14px", color: "rgba(255,255,255,0.65)" }}>
+                  <span style={{ fontSize: "16px", color: "rgba(255,255,255,0.65)" }}>
                     🌟 Want more ideas or a variation of this activity? Switch to the Homework Helper tab and ask Starky!
                   </span>
                 </div>
