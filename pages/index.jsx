@@ -491,7 +491,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
 
       {/* ── URDU HELP BUTTON ONLY ── */}
       <div style={{background:'rgba(255,255,255,0.02)',borderBottom:'1px solid rgba(255,255,255,0.05)',padding:'8px 20px',display:'flex',justifyContent:'flex-end'}}>
-        <a href="/homework" style={{display:'inline-flex',alignItems:'center',gap:'6px',background:'rgba(79,142,247,0.1)',border:'1px solid rgba(79,142,247,0.25)',borderRadius:'100px',padding:'6px 14px',fontSize:'12px',fontWeight:'700',color:'#4F8EF7',textDecoration:'none'}}>
+        <a onClick={() => window.dispatchEvent(new CustomEvent("starky-urdu"))} style={{display:'inline-flex',alignItems:'center',gap:'6px',background:'rgba(79,142,247,0.1)',border:'1px solid rgba(79,142,247,0.25)',borderRadius:'100px',padding:'6px 14px',fontSize:'12px',fontWeight:'700',color:'#4F8EF7',textDecoration:'none'}}>
           اردو میں مدد ★
         </a>
       </div>
