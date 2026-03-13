@@ -159,6 +159,15 @@ const [imageData, setImageData] = useState(null);
     }
   };
 
+
+  const handleImageSelect = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => setImageData({ base64: ev.target.result.split(',')[1], type: file.type, name: file.name });
+    reader.readAsDataURL(file);
+  };
+  const clearImage = () => { setImageData(null); if (fileInputRef.current) fileInputRef.current.value = ''; };
   const handleKey = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
   };
