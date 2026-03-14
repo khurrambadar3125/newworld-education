@@ -1,3 +1,4 @@
+import { useState, useRef, useEffect } from 'react';
 // pages/special-needs.jsx
 // ═══════════════════════════════════════════════════════════════════════
 // STARKY FOR SPECIAL NEEDS — CONDITION × AGE MATRIX
@@ -276,17 +277,17 @@ function saveP(p) { try { localStorage.setItem(PK, JSON.stringify(p)); } catch {
 
 // ── SEN Drill Widget ─────────────────────────────────────────────
 function SENDrillWidget({ condition, stage, subject }) {
-  const [active, setActive] = React.useState(false);
-  const [question, setQuestion] = React.useState(null);
-  const [selected, setSelected] = React.useState('');
-  const [answer, setAnswer] = React.useState('');
-  const [feedback, setFeedback] = React.useState(null);
-  const [loading, setLoading] = React.useState(false);
-  const [hint, setHint] = React.useState(null);
-  const [hintLoading, setHintLoading] = React.useState(false);
-  const [celebration, setCelebration] = React.useState('');
-  const [questionCount, setQuestionCount] = React.useState(0);
-  const feedbackRef = React.useRef(null);
+  const [active, setActive] = useState(false);
+  const [question, setQuestion] = useState(null);
+  const [selected, setSelected] = useState('');
+  const [answer, setAnswer] = useState('');
+  const [feedback, setFeedback] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [hint, setHint] = useState(null);
+  const [hintLoading, setHintLoading] = useState(false);
+  const [celebration, setCelebration] = useState('');
+  const [questionCount, setQuestionCount] = useState(0);
+  const feedbackRef = useRef(null);
 
   const CELEBRATIONS = [
     "🌟 Amazing try!", "⭐ You're doing great!", "🎉 Brilliant effort!",
@@ -298,7 +299,7 @@ function SENDrillWidget({ condition, stage, subject }) {
     ? [subject]
     : ['Maths','English','Science','Reading','Social Skills','Life Skills'];
 
-  const [chosenSubject, setChosenSubject] = React.useState('');
+  const [chosenSubject, setChosenSubject] = useState('');
 
   const generateQuestion = async (subj) => {
     if (loading) return;
