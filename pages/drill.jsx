@@ -365,7 +365,7 @@ export default function DrillPage() {
           )}
 
           {/* Level */}
-          {mode === 'exam' && <div style={S.card}>
+          {mode === 'exam' && <><div style={S.card}>
             <span style={S.label}>Exam Level</span>
             <div style={S.grid2}>
               {['O Level','A Level'].map(l => (
@@ -434,6 +434,8 @@ export default function DrillPage() {
             </div>
           </div>
 
+          </>
+          }
           {mode === 'exam' && <button
             style={{...S.primaryBtn, opacity:(!subject||!topic) && !cameraImage ? 0.4 : 1, cursor:(!subject||!topic) && !cameraImage ? 'not-allowed' : 'pointer'}}
             onClick={startSession}
