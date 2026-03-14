@@ -58,12 +58,31 @@ export default function StarkyBubble() {
   useEffect(() => {
     if (open && messages.length === 0) {
       const firstName = userProfile?.name?.split(' ')[0];
-      const continuation = getContinuationGreeting(firstName);
-      const greeting = continuation || (
-        firstName
+      const name = firstName || 'there';
+
+      // Build proactive greeting based on memory
+      let greeting = null;
+
+      if (sessionMemory?.recentMistakes?.length) {
+        // Student has known mistakes — lead with targeted help
+        const latest = sessionMemory.recentMistakes[sessionMemory.recentMistakes.length - 1];
+        greeting = `Welcome back ${name}! ★ Last time you found **${latest.topic}** tricky. Want to tackle that first? I have a new way to explain it.`;
+      } else if (sessionMemory?.weakTopics?.length) {
+        // Student has weak topics — suggest the most recent
+        const topic = sessionMemory.weakTopics[sessionMemory.weakTopics.length - 1];
+        greeting = `Hey ${name}! ★ You've been working on **${topic}** — want to do a quick drill to sharpen it up today?`;
+      } else if (sessionMemory?.currentSubject) {
+        // Student has a subject in progress — continue it
+        greeting = `Welcome back ${name}! ★ We were working on **${sessionMemory.currentSubject}**. Ready to pick up where we left off?`;
+      } else if (sessionMemory?.totalSessions > 0) {
+        // Returning student but no specific memory
+        greeting = getContinuationGreeting(firstName) || `Welcome back ${name}! ★ Great to see you again. What are we studying today?`;
+      } else {
+        // First time or guest
+        greeting = firstName
           ? `Hi ${firstName}! I'm Starky ★ — ask me anything about any subject, grade or topic. I'm here to help!`
-          : `Hi! I'm Starky ★ — your personal tutor. Ask me anything — any subject, any grade!`
-      );
+          : `Hi! I'm Starky ★ — your personal tutor. Ask me anything — any subject, any grade!`;
+      }
       setMessages([{ role: 'assistant', content: greeting }]);
       if (voiceSupported) setTimeout(() => speakText(greeting), 400);
     }
