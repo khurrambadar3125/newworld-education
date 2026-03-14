@@ -133,6 +133,10 @@ export default function DrillPage() {
   const [cameraMode, setCameraMode] = useState(false);
   const cameraRef = useRef(null);
   const fileRef = useRef(null);
+  const subjectRef = useRef(null);
+  const topicRef = useRef(null);
+  const diffRef = useRef(null);
+  const startRef = useRef(null);
 
   // Drill
   const [phase, setPhase] = useState('setup');
@@ -328,7 +332,7 @@ export default function DrillPage() {
                 <span style={S.label}>My Grade</span>
                 <div style={{display:'flex',flexDirection:'column',gap:7}}>
                   {GRADES_YOUNG.map(g => (
-                    <button key={g.id} style={{...S.optionBtn(youngGrade?.id===g.id),display:'flex',alignItems:'center',gap:12,padding:'12px 14px'}} onClick={() => { setYoungGrade(g); setSubject(''); setTopic(''); }}>
+                    <button key={g.id} style={{...S.optionBtn(youngGrade?.id===g.id),display:'flex',alignItems:'center',gap:12,padding:'12px 14px'}} onClick={() => { setYoungGrade(g); setSubject(''); setTopic(''); setTimeout(() => subjectRef.current?.scrollIntoView({behavior:'smooth',block:'start'}), 150); }}>
                       <span style={{fontSize:20}}>{g.emoji}</span>
                       <div style={{textAlign:'left'}}>
                         <div style={{fontWeight:800,fontSize:14,color:youngGrade?.id===g.id?g.color:'#fff'}}>{g.label}</div>
@@ -340,7 +344,7 @@ export default function DrillPage() {
                 </div>
               </div>
               {youngGrade && (
-                <div style={{...S.card,borderColor:'rgba(255,179,71,0.2)'}}>
+                <div ref={subjectRef} style={{...S.card,borderColor:'rgba(255,179,71,0.2)'}}>
                   <span style={S.label}>Subject</span>
                   <div style={{display:'grid',gridTemplateColumns:'repeat(2,1fr)',gap:8}}>
                     {SUBJECTS_YOUNG.map(s => <button key={s} style={S.optionBtn(subject===s)} onClick={() => { setSubject(s); setTopic(''); }}>{s}</button>)}
@@ -348,10 +352,10 @@ export default function DrillPage() {
                 </div>
               )}
               {youngGrade && subject && (
-                <div style={{...S.card,borderColor:'rgba(255,179,71,0.2)'}}>
+                <div ref={topicRef} style={{...S.card,borderColor:'rgba(255,179,71,0.2)'}}>
                   <span style={S.label}>Topic</span>
                   <div style={{display:'flex',flexDirection:'column',gap:6}}>
-                    {youngTopics.map(t => <button key={t} style={S.optionBtn(topic===t)} onClick={() => setTopic(t)}>{t}</button>)}
+                    {youngTopics.map(t => <button key={t} style={S.optionBtn(topic===t)} onClick={() => { setTopic(t); setTimeout(() => startRef.current?.scrollIntoView({behavior:'smooth',block:'start'}), 150); }}>{t}</button>)}
                   </div>
                 </div>
               )}
@@ -380,7 +384,7 @@ export default function DrillPage() {
           <div style={S.card}>
             <span style={S.label}>Subject</span>
             <div style={{display:'grid', gridTemplateColumns:'repeat(2,1fr)', gap:8}}>
-              {subjects.map(s => <button key={s} style={S.optionBtn(subject===s)} onClick={() => { setSubject(s); setTopic(''); }}>{s}</button>)}
+              {subjects.map(s => <button key={s} style={S.optionBtn(subject===s)} onClick={() => { setSubject(s); setTopic(''); setTimeout(() => diffRef.current?.scrollIntoView({behavior:'smooth',block:'start'}), 150); }}>{s}</button>)}
             </div>
           </div>
 
@@ -390,14 +394,14 @@ export default function DrillPage() {
               <span style={S.label}>Topic</span>
               <div style={{display:'grid', gridTemplateColumns:'1fr', gap:6}}>
                 {dueTopics.map(t => (
-                  <button key={t} style={S.optionBtn(topic===t)} onClick={() => setTopic(t)}>
+                  <button key={t} style={S.optionBtn(topic===t)} onClick={() => { setTopic(t); setTimeout(() => startRef.current?.scrollIntoView({behavior:'smooth',block:'start'}), 150); }}>
                     {t}<span style={S.badge('#FCD34D')}>due</span>
                   </button>
                 ))}
                 {topics.filter(t => !dueTopics.includes(t)).map(t => {
                   const stats = sr.getTopicStats(subject, t);
                   return (
-                    <button key={t} style={S.optionBtn(topic===t)} onClick={() => setTopic(t)}>
+                    <button key={t} style={S.optionBtn(topic===t)} onClick={() => { setTopic(t); setTimeout(() => startRef.current?.scrollIntoView({behavior:'smooth',block:'start'}), 150); }}>
                       {t}
                       {stats && stats.reps >= 3 && stats.ef >= 2.0 && <span style={S.badge('#4ADE80')}>mastered</span>}
                       {stats && stats.totalSeen > 0 && !(stats.reps >= 3 && stats.ef >= 2.0) && <span style={S.badge('#94A3B8')}>{stats.totalSeen}×</span>}
@@ -409,7 +413,7 @@ export default function DrillPage() {
           )}
 
           {/* Difficulty */}
-          <div style={S.card}>
+          <div ref={diffRef} style={S.card}>
             <span style={S.label}>Difficulty</span>
             <div style={S.grid3}>
               {DIFFICULTIES.map(d => (
@@ -436,13 +440,14 @@ export default function DrillPage() {
 
           </>
           }
-          {mode === 'exam' && <button
+          {mode === 'exam' && <div ref={startRef}><button
             style={{...S.primaryBtn, opacity:(!subject||!topic) && !cameraImage ? 0.4 : 1, cursor:(!subject||!topic) && !cameraImage ? 'not-allowed' : 'pointer'}}
             onClick={startSession}
             disabled={(!subject||!topic) && !cameraImage}
           >
             {cameraImage ? 'Drill from my photo →' : `Start ${SESSION_LENGTH}-Question Drill →`}
           </button>}
+          </div>}
           {mode === 'exam' && <button style={{...S.ghostBtn,marginTop:8}} onClick={() => { setMode(''); setSubject(''); setTopic(''); }}>← Back</button>}
 
           {sr.weakTopics.length > 0 && (
