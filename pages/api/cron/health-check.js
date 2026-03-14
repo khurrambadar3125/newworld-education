@@ -141,6 +141,17 @@ export default async function handler(req, res) {
           <strong style="font-size:13px;color:#333">📋 Pending Tasks</strong>
           <ul style="margin:10px 0 0;padding-left:20px">${taskHtml}</ul>
         </div>
+        <div style="margin-top:24px;padding:16px;background:#f9f9f9;border-radius:8px;border-left:4px solid #4F8EF7">
+          <strong style="font-size:13px;color:#333">📋 Pending Tasks</strong>
+          <ul style="margin:10px 0 0;padding-left:20px;font-size:12px;color:#555;line-height:1.8">
+            <li>🏢 BUSINESS REGISTRATION: secp.gov.pk → Sole Proprietorship → CNIC + Rs 5,000-10,000 → 2-3 weeks → unlocks EasyPaisa/JazzCash</li>
+            <li>💳 AFTER REGISTRATION: Sign up at safepay.network → EasyPaisa + JazzCash + all Pakistani cards</li>
+            <li>📱 AFTER SAFEPAY: Add PKR pricing Rs 999 / Rs 1,499 / Rs 2,499</li>
+            <li>📲 WhatsApp daily questions (Twilio already connected)</li>
+            <li>📚 Matric/FSc curriculum for Pakistani students</li>
+            <li>🏫 School partnerships page + teacher dashboard</li>
+          </ul>
+        </div>
         <p style="color:#aaa;font-size:11px;margin-top:24px">
           This report runs automatically every 12 hours · newworld.education autonomous monitoring
         </p>
