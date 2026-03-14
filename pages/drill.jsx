@@ -699,6 +699,34 @@ export default function DrillPage() {
             </div>
           </div>
 
+
+          {/* ── FEEL GREAT PANEL ─────────────────────────────────────── */}
+          {(() => {
+            const weakest = sessionResults.filter(r => !r.correct);
+            const strongest = sessionResults.filter(r => r.correct);
+            const focusTopic = weakest.length ? weakest[weakest.length-1].topic : null;
+            const msg = sessionPct >= 90
+              ? { emoji: '🌟', title: 'Outstanding!', body: `You nailed ${strongest.length} out of ${sessionResults.length} questions. You are in the top tier — keep this momentum.` }
+              : sessionPct >= 75
+              ? { emoji: '🔥', title: 'Really strong work!', body: `${strongest.length} correct. You are close to mastery — one more session like this and it will stick permanently.` }
+              : sessionPct >= 55
+              ? { emoji: '💪', title: 'Good effort!', body: `You got ${strongest.length} right. Every question you practise builds the pathway in your brain — you are making real progress.` }
+              : { emoji: '⭐', title: 'Keep going — this is how learning works!', body: `Getting things wrong is not failing — it is your brain finding out exactly what to fix. That is what Starky is here for.` };
+            return (
+              <div style={{...S.card, borderColor: sessionPct>=75?'rgba(74,222,128,.25)':'rgba(79,142,247,.2)', background: sessionPct>=75?'rgba(74,222,128,.05)':'rgba(79,142,247,.05)', marginBottom:16}}>
+                <div style={{fontSize:40, marginBottom:8}}>{msg.emoji}</div>
+                <div style={{fontWeight:800, fontSize:18, marginBottom:8}}>{msg.title}</div>
+                <div style={{fontSize:14, color:'rgba(255,255,255,.65)', lineHeight:1.7, marginBottom: focusTopic ? 16 : 0}}>{msg.body}</div>
+                {focusTopic && (
+                  <div style={{background:'rgba(255,255,255,.06)', borderRadius:10, padding:'12px 16px', marginTop:8}}>
+                    <div style={{fontSize:11, fontWeight:700, color:'rgba(255,255,255,.4)', letterSpacing:1, marginBottom:4}}>ONE THING TO FOCUS ON NEXT</div>
+                    <div style={{fontWeight:700, fontSize:15, color:'#FCD34D'}}>📌 {focusTopic}</div>
+                    <div style={{fontSize:13, color:'rgba(255,255,255,.5)', marginTop:4}}>Ask Starky to explain this using a real-world analogy.</div>
+                  </div>
+                )}
+              </div>
+            );
+          })()}
           {/* Streak */}
           <div style={{marginBottom:16}}><StreakWidget /></div>
 
