@@ -446,10 +446,10 @@ export default function DrillPage() {
             disabled={(!subject||!topic) && !cameraImage}
           >
             {cameraImage ? 'Drill from my photo →' : `Start ${SESSION_LENGTH}-Question Drill →`}
-          </button>}
+          </button>
+          <button style={{...S.ghostBtn,marginTop:8}} onClick={() => { setMode(''); setSubject(''); setTopic(''); }}>← Back</button>
           </>
           }
-          {mode === 'exam' && <button style={{...S.ghostBtn,marginTop:8}} onClick={() => { setMode(''); setSubject(''); setTopic(''); }}>← Back</button>}
 
           {sr.weakTopics.length > 0 && (
             <div style={{...S.card, marginTop:24, borderColor:'rgba(248,113,113,.2)', background:'rgba(248,113,113,.05)'}}>
