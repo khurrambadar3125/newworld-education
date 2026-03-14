@@ -1,4 +1,5 @@
 import { Resend } from 'resend';
+import { saveSubscriber, isSubscribed } from '../../utils/db';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -10,19 +11,26 @@ export default async function handler(req, res) {
   if (!name || !email || !grade || !subject || !studyTime) {
     return res.status(400).json({ error: 'All fields are required.' });
   }
-
   if (!email.includes('@')) {
     return res.status(400).json({ error: 'Invalid email address.' });
   }
 
-  // Format study time for display
-  const timeLabel = {
-    '06:00': '6:00 AM', '07:00': '7:00 AM', '14:00': '2:00 PM',
-    '18:00': '6:00 PM', '20:00': '8:00 PM',
-  }[studyTime] || studyTime;
-
   try {
-    // Send welcome email to subscriber
+    // Check if already subscribed
+    const already = await isSubscribed(email);
+    if (already) {
+      return res.status(400).json({ error: 'This email is already subscribed! Check your inbox.' });
+    }
+
+    // Save to KV database
+    await saveSubscriber({ name, email, grade, subject, studyTime });
+
+    const timeLabel = {
+      '06:00':'6:00 AM','07:00':'7:00 AM','14:00':'2:00 PM',
+      '18:00':'6:00 PM','20:00':'8:00 PM',
+    }[studyTime] || studyTime;
+
+    // Welcome email to subscriber
     await resend.emails.send({
       from: 'Starky ★ <hello@newworld.education>',
       to: email,
@@ -50,37 +58,24 @@ export default async function handler(req, res) {
               Start Learning with Starky ★ →
             </a>
             <p style="font-size:11px;color:rgba(255,255,255,0.25);text-align:center;margin:0;line-height:1.6">
-              NewWorldEdu · khurram@newworld.education<br/>
-              One email per day. No spam. Unsubscribe anytime by replying STOP.
+              One email per day. No spam. Reply STOP to unsubscribe.
             </p>
           </div>
         </div>
       `,
     });
 
-    // Notify Khurram of new subscriber
+    // Notify Khurram
     await resend.emails.send({
       from: 'NWE Signups <alerts@newworld.education>',
       to: 'khurrambadar@gmail.com',
       subject: `🎉 New subscriber — ${name} (${grade} · ${subject})`,
-      html: `
-        <div style="font-family:sans-serif;max-width:480px;margin:0 auto;padding:24px">
-          <h2 style="color:#4F8EF7">New Subscriber 🎉</h2>
-          <table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px">
-            <tr><td style="padding:8px;background:#f5f5f5;font-weight:bold;width:100px">Name</td><td style="padding:8px;border:1px solid #eee">${name}</td></tr>
-            <tr><td style="padding:8px;background:#f5f5f5;font-weight:bold">Email</td><td style="padding:8px;border:1px solid #eee">${email}</td></tr>
-            <tr><td style="padding:8px;background:#f5f5f5;font-weight:bold">Grade</td><td style="padding:8px;border:1px solid #eee">${grade}</td></tr>
-            <tr><td style="padding:8px;background:#f5f5f5;font-weight:bold">Subject</td><td style="padding:8px;border:1px solid #eee">${subject}</td></tr>
-            <tr><td style="padding:8px;background:#f5f5f5;font-weight:bold">Study Time</td><td style="padding:8px;border:1px solid #eee">${timeLabel}</td></tr>
-          </table>
-          <p style="font-size:12px;color:#888">To add them to daily questions, update DAILY_Q_RECIPIENTS in Vercel env vars.</p>
-        </div>
-      `,
+      html: `<div style="font-family:sans-serif;max-width:480px;margin:0 auto;padding:24px"><h2 style="color:#4F8EF7">New Subscriber 🎉</h2><table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px"><tr><td style="padding:8px;background:#f5f5f5;font-weight:bold;width:100px">Name</td><td style="padding:8px;border:1px solid #eee">${name}</td></tr><tr><td style="padding:8px;background:#f5f5f5;font-weight:bold">Email</td><td style="padding:8px;border:1px solid #eee">${email}</td></tr><tr><td style="padding:8px;background:#f5f5f5;font-weight:bold">Grade</td><td style="padding:8px;border:1px solid #eee">${grade}</td></tr><tr><td style="padding:8px;background:#f5f5f5;font-weight:bold">Subject</td><td style="padding:8px;border:1px solid #eee">${subject}</td></tr><tr><td style="padding:8px;background:#f5f5f5;font-weight:bold">Study Time</td><td style="padding:8px;border:1px solid #eee">${timeLabel}</td></tr></table><p style="color:#4F8EF7;font-weight:bold">✅ Automatically saved to database — they will receive daily questions starting tomorrow.</p></div>`,
     });
 
     return res.status(200).json({ ok: true });
   } catch (err) {
     console.error('Subscribe error:', err);
-    return res.status(500).json({ error: 'Failed to send confirmation email. Please try again.' });
+    return res.status(500).json({ error: 'Something went wrong. Please try again.' });
   }
 }

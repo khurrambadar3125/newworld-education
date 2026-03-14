@@ -137,6 +137,10 @@ export default async function handler(req, res) {
           <code style="background:#f5f5f5;padding:4px 8px;border-radius:4px">cd /Users/whitestar/newworld-platform && npm run build 2>&1 | tail -20</code>
         </div>` : ''}
 
+        <div style="margin-top:24px;padding:16px;background:#f9f9f9;border-radius:8px;border-left:4px solid #4F8EF7">
+          <strong style="font-size:13px;color:#333">📋 Pending Tasks</strong>
+          <ul style="margin:10px 0 0;padding-left:20px">${taskHtml}</ul>
+        </div>
         <p style="color:#aaa;font-size:11px;margin-top:24px">
           This report runs automatically every 12 hours · newworld.education autonomous monitoring
         </p>

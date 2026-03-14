@@ -1,146 +1,150 @@
 /**
  * pages/api/cron/daily-question.js
- * ─────────────────────────────────────────────────────────────────
- * Vercel Cron Job — runs daily at 7:00 AM PKT (02:00 UTC)
- * 
- * What it does:
- *   1. Loads all registered users from the user store (localStorage-based
- *      registrations are client-side, so this uses a simple Vercel KV / 
- *      email list stored as an env var for now — see RECIPIENTS below)
- *   2. For each user, generates a Cambridge-style question via Claude
- *   3. Sends a beautiful email via Resend
- *
- * SETUP:
- *   Add to Vercel env vars:
- *     CRON_SECRET        = any random string, e.g. "nwe_cron_2026"
- *     DAILY_Q_RECIPIENTS = JSON array: [{"email":"x@y.com","name":"Ali","grade":"O Level","subject":"Biology"}]
- *
- * Secured with CRON_SECRET header — Vercel sends this automatically.
- * ─────────────────────────────────────────────────────────────────
+ * ─────────────────────────────────────────────────────
+ * Sends daily Cambridge questions to ALL subscribers in KV.
+ * Falls back to DAILY_Q_RECIPIENTS env var if KV is empty.
+ * Runs at 02:00 UTC = 07:00 PKT daily.
+ * ─────────────────────────────────────────────────────
  */
 
 import Anthropic from '@anthropic-ai/sdk';
 import { Resend } from 'resend';
 import { dailyQuestionEmail } from '../../../utils/dailyQuestionEmail';
+import { getAllSubscribers, recordQuestionSent, getRecentQuestions } from '../../../utils/db';
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend    = new Resend(process.env.RESEND_API_KEY);
 
-// ── Verify this is called by Vercel cron, not a random visitor ───────────────
 function isAuthorised(req) {
-  const secret = req.headers['authorization']?.replace('Bearer ', '');
-  return secret === process.env.CRON_SECRET;
+  const auth = req.headers['authorization'];
+  return auth === `Bearer ${process.env.CRON_SECRET}`;
 }
 
-// ── Generate one question for a student ─────────────────────────────────────
-async function generateDailyQuestion({ grade, subject }) {
-  const prompt = `Generate a single Cambridge ${grade} ${subject} exam question.
+async function generateQuestion(grade, subject, recentQuestions = []) {
+  const avoidList = recentQuestions.length > 0
+    ? `\n\nDo NOT repeat these recent questions:\n${recentQuestions.slice(0, 10).map((q, i) => `${i+1}. ${q}`).join('\n')}`
+    : '';
 
-Return ONLY valid JSON, no markdown, no preamble:
-{
-  "question": "The full question text",
-  "type": "mcq",
-  "options": { "A": "...", "B": "...", "C": "...", "D": "..." },
-  "correctOption": "A",
-  "difficulty": "medium",
-  "topic": "Topic name",
-  "markschemeHint": "Key points examiners look for (1-2 sentences)"
-}
+  const msg = await anthropic.messages.create({
+    model: 'claude-haiku-4-5-20251001',
+    max_tokens: 600,
+    messages: [{
+      role: 'user',
+      content: `You are a Cambridge examiner. Generate ONE challenging exam-style question for a ${grade} student studying ${subject}.
 
-Rules:
-- Make it a real Cambridge-style MCQ (4 options)
-- Difficulty: medium (exam level, not too easy, not a trick)
-- The question must test understanding, not just recall
-- correctOption must be the single best answer`;
+Requirements:
+- Cambridge O/A Level style if applicable
+- Clear, unambiguous question
+- Appropriate difficulty for ${grade}
+- Include mark allocation e.g. [4 marks]
+- Do NOT include the answer${avoidList}
 
-  const response = await anthropic.messages.create({
-    model: 'claude-haiku-4-5-20251001', // Haiku — cheap for daily sends
-    max_tokens: 512,
-    messages: [{ role: 'user', content: prompt }],
+Return ONLY the question text. Nothing else.`,
+    }],
   });
 
-  const text = response.content[0]?.text || '';
-  // Strip any markdown fences just in case
-  const clean = text.replace(/```json|```/g, '').trim();
-  return JSON.parse(clean);
+  return msg.content[0].text.trim();
 }
 
-// ── Main handler ─────────────────────────────────────────────────────────────
 export default async function handler(req, res) {
-  // Only allow GET (Vercel cron) or POST with secret
-  if (req.method !== 'GET' && req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
-
-  if (!isAuthorised(req)) {
-    return res.status(401).json({ error: 'Unauthorised' });
-  }
-
-  // Load recipient list from env var
-  let recipients = [];
-  try {
-    recipients = JSON.parse(process.env.DAILY_Q_RECIPIENTS || '[]');
-  } catch {
-    return res.status(500).json({ error: 'DAILY_Q_RECIPIENTS env var is invalid JSON' });
-  }
-
-  if (!recipients.length) {
-    return res.status(200).json({ sent: 0, message: 'No recipients configured' });
-  }
+  if (req.method !== 'POST') return res.status(405).end();
+  if (!isAuthorised(req)) return res.status(401).json({ error: 'Unauthorized' });
 
   const results = [];
+  const errors  = [];
+  const today   = new Date().toISOString().split('T')[0];
 
-  for (const user of recipients) {
-    try {
-      // Generate question
-      const q = await generateDailyQuestion({
-        grade: user.grade || 'O Level',
-        subject: user.subject || 'Biology',
-      });
+  try {
+    // ── Get recipients: KV first, fallback to env var ──
+    let recipients = await getAllSubscribers();
 
-      // Build answer URL — links to drill page with subject pre-selected
-      const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.newworld.education';
-      const answerUrl = `${base}/drill?subject=${encodeURIComponent(user.subject || 'Biology')}&topic=${encodeURIComponent(q.topic || '')}&answer=${encodeURIComponent(q.correctOption || '')}&from=daily`;
-
-      // Render email
-      const html = dailyQuestionEmail({
-        studentName: user.name || 'Student',
-        grade: user.grade || 'O Level',
-        subject: user.subject || 'Biology',
-        question: q.question,
-        options: q.options,
-        questionType: q.type || 'mcq',
-        difficulty: q.difficulty || 'medium',
-        answerUrl,
-        streakDays: user.streakDays || 0,
-      });
-
-      // Send email
-      const { error } = await resend.emails.send({
-        from: 'Starky ★ <starky@newworld.education>',
-        to: user.email,
-        subject: `★ Daily ${user.subject || 'Science'} Question — ${new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'short' })}`,
-        html,
-      });
-
-      if (error) {
-        results.push({ email: user.email, status: 'failed', error: error.message });
-      } else {
-        results.push({ email: user.email, status: 'sent', subject: user.subject, topic: q.topic });
+    // Fallback to env var (for Yusuf, Dina, Saira and any manual entries)
+    if (recipients.length === 0) {
+      try {
+        const envRecipients = JSON.parse(process.env.DAILY_Q_RECIPIENTS || '[]');
+        recipients = envRecipients.map(r => ({
+          name: r.name,
+          email: r.email,
+          grade: r.grade,
+          subject: r.subject,
+          studyTime: '07:00',
+          fromEnv: true,
+        }));
+      } catch {
+        return res.status(500).json({ error: 'No recipients found' });
       }
-
-    } catch (err) {
-      results.push({ email: user.email, status: 'error', error: err.message });
+    } else {
+      // Also include env var recipients (Yusuf, Dina, Saira) who aren't in KV yet
+      try {
+        const envRecipients = JSON.parse(process.env.DAILY_Q_RECIPIENTS || '[]');
+        for (const r of envRecipients) {
+          const alreadyInKV = recipients.find(s => s.email === r.email);
+          if (!alreadyInKV) {
+            recipients.push({
+              name: r.name,
+              email: r.email,
+              grade: r.grade,
+              subject: r.subject,
+              studyTime: '07:00',
+              fromEnv: true,
+            });
+          }
+        }
+      } catch {}
     }
+
+    // ── Send to each recipient ──
+    for (const recipient of recipients) {
+      try {
+        // Get recent questions to avoid repeats
+        const recentQs = recipient.fromEnv ? [] : await getRecentQuestions(recipient.email, 30);
+
+        // Generate question
+        const question = await generateQuestion(recipient.grade, recipient.subject, recentQs);
+
+        // Build email HTML
+        const html = dailyQuestionEmail({
+          name:     recipient.name,
+          grade:    recipient.grade,
+          subject:  recipient.subject,
+          question,
+          date:     new Date().toLocaleDateString('en-GB', { weekday:'long', day:'numeric', month:'long', year:'numeric' }),
+        });
+
+        // Send email
+        await resend.emails.send({
+          from:    'Starky ★ <hello@newworld.education>',
+          to:      recipient.email,
+          subject: `Your daily ${recipient.subject} question — ${new Date().toLocaleDateString('en-GB', { weekday:'long', day:'numeric', month:'short' })}`,
+          html,
+        });
+
+        // Record in KV (skip env-only recipients)
+        if (!recipient.fromEnv) {
+          await recordQuestionSent({
+            email:    recipient.email,
+            grade:    recipient.grade,
+            subject:  recipient.subject,
+            question,
+            date:     today,
+          });
+        }
+
+        results.push({ name: recipient.name, email: recipient.email, subject: recipient.subject, ok: true });
+      } catch (err) {
+        errors.push({ name: recipient.name, email: recipient.email, error: err.message });
+      }
+    }
+
+    return res.status(200).json({
+      sent:   results.length,
+      total:  recipients.length,
+      errors: errors.length,
+      results,
+      errors,
+    });
+
+  } catch (err) {
+    return res.status(500).json({ error: err.message });
   }
-
-  const sent = results.filter(r => r.status === 'sent').length;
-  console.log(`[DAILY QUESTION] Sent ${sent}/${recipients.length}`, results);
-
-  return res.status(200).json({
-    sent,
-    total: recipients.length,
-    results,
-    timestamp: new Date().toISOString(),
-  });
 }
