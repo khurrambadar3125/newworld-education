@@ -440,14 +440,15 @@ export default function DrillPage() {
 
           </>
           }
-          {mode === 'exam' && <div ref={startRef}><button
+          {mode === 'exam' && <><div ref={startRef} /><button
             style={{...S.primaryBtn, opacity:(!subject||!topic) && !cameraImage ? 0.4 : 1, cursor:(!subject||!topic) && !cameraImage ? 'not-allowed' : 'pointer'}}
             onClick={startSession}
             disabled={(!subject||!topic) && !cameraImage}
           >
             {cameraImage ? 'Drill from my photo →' : `Start ${SESSION_LENGTH}-Question Drill →`}
           </button>}
-          </div>}
+          </>
+          }
           {mode === 'exam' && <button style={{...S.ghostBtn,marginTop:8}} onClick={() => { setMode(''); setSubject(''); setTopic(''); }}>← Back</button>}
 
           {sr.weakTopics.length > 0 && (
