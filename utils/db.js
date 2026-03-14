@@ -150,3 +150,23 @@ export async function getStats() {
     lastUpdated: new Date().toISOString(),
   };
 }
+
+// ── STUDENT MEMORY ────────────────────────────────────
+
+/**
+ * Save full student memory (weak topics, mistakes, subject, summary)
+ */
+export async function saveStudentMemory(email, memory) {
+  const id = email.toLowerCase().trim();
+  await kv.set(`memory:${id}`, JSON.stringify(memory));
+}
+
+/**
+ * Get student memory by email
+ */
+export async function getStudentMemory(email) {
+  const id = email.toLowerCase().trim();
+  const raw = await kv.get(`memory:${id}`);
+  if (!raw) return null;
+  try { return typeof raw === 'string' ? JSON.parse(raw) : raw; } catch { return null; }
+}

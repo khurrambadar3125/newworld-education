@@ -116,6 +116,7 @@ export function useSessionMemory(userProfile) {
 
   // Load memory on mount / when userProfile changes
   useEffect(() => {
+    (async () => {
     if (typeof window === 'undefined') return;
     try {
       const key = getKey(userProfile);
@@ -125,15 +126,32 @@ export function useSessionMemory(userProfile) {
         setSessionMemory(prev => ({
           ...EMPTY_MEMORY,
           ...saved,
-          // Always start new session with fresh conversation history
           conversationHistory: [],
         }));
       } else {
         setSessionMemory(EMPTY_MEMORY);
       }
+      // Also load from KV if signed in (overrides localStorage with server truth)
+      if (userProfile?.email) {
+        try {
+          const res = await fetch(`/api/student-memory?email=${encodeURIComponent(userProfile.email)}`);
+          if (res.ok) {
+            const { memory } = await res.json();
+            if (memory) {
+              setSessionMemory(prev => ({
+                ...EMPTY_MEMORY,
+                ...memory,
+                conversationHistory: [],
+              }));
+              localStorage.setItem(key, JSON.stringify(memory));
+            }
+          }
+        } catch {}
+      }
     } catch {
       setSessionMemory(EMPTY_MEMORY);
     }
+    })();
   }, [userProfile?.email, userProfile?.gradeId]);
 
   // Persist memory to localStorage whenever it changes
@@ -141,10 +159,16 @@ export function useSessionMemory(userProfile) {
     if (typeof window === 'undefined') return;
     try {
       const key = getKey(userProfile);
-      localStorage.setItem(key, JSON.stringify({
-        ...memory,
-        lastSeen: new Date().toISOString(),
-      }));
+      const toSave = { ...memory, lastSeen: new Date().toISOString() };
+      localStorage.setItem(key, JSON.stringify(toSave));
+      // Sync to KV if signed in
+      if (userProfile?.email) {
+        fetch('/api/student-memory', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: userProfile.email, memory: toSave }),
+        }).catch(() => {});
+      }
     } catch {}
   }, [userProfile]);
 
