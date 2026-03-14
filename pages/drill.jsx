@@ -26,6 +26,32 @@ const getTopics = (subject) => TOPICS[subject] || DEFAULT_TOPICS;
 const SUBJECTS_OLEVEL = ['Biology','Chemistry','Physics','Mathematics','English Language','Economics','Computer Science','Pakistan Studies','Accounting','Business Studies','Geography','History','Sociology','Additional Mathematics','Statistics'];
 const SUBJECTS_ALEVEL = ['Biology','Chemistry','Physics','Mathematics','Further Mathematics','Economics','Computer Science','English Language','Psychology','Business Studies','Accounting','Sociology','Geography','History','Law'];
 
+const GRADES_YOUNG = [
+  { id:'kg',     label:'Nursery / KG', age:'3–5',  emoji:'🌱', color:'#FFB347' },
+  { id:'grade1', label:'Grade 1',      age:'5–6',  emoji:'⭐', color:'#FF6B6B' },
+  { id:'grade2', label:'Grade 2',      age:'6–7',  emoji:'🌈', color:'#FF8E53' },
+  { id:'grade3', label:'Grade 3',      age:'7–8',  emoji:'🚀', color:'#FFC300' },
+  { id:'grade4', label:'Grade 4',      age:'8–9',  emoji:'🔬', color:'#A8E063' },
+  { id:'grade5', label:'Grade 5',      age:'9–10', emoji:'🌍', color:'#4ECDC4' },
+  { id:'grade6', label:'Grade 6',      age:'10–11',emoji:'🏆', color:'#63D2FF' },
+  { id:'grade7', label:'Grade 7',      age:'11–12',emoji:'⚡', color:'#A78BFA' },
+  { id:'grade8', label:'Grade 8',      age:'12–13',emoji:'🌙', color:'#F472B6' },
+  { id:'grade9', label:'Grade 9',      age:'13–14',emoji:'🎯', color:'#34D399' },
+];
+
+const SUBJECTS_YOUNG = ['Maths','English','Science','Urdu','Islamiat','General Knowledge','Computer','Social Studies'];
+
+const TOPICS_YOUNG = {
+  'Maths':             ['Numbers & Counting','Addition & Subtraction','Multiplication & Division','Fractions','Decimals','Geometry & Shapes','Measurement','Time & Calendar','Algebra Basics','Word Problems'],
+  'English':           ['Reading Comprehension','Grammar & Punctuation','Vocabulary','Spelling','Creative Writing','Poetry','Parts of Speech','Sentence Structure','Letter Writing','Story Writing'],
+  'Science':           ['Plants & Animals','Human Body','Materials & Matter','Forces & Motion','Light & Sound','Earth & Space','Weather & Climate','Food & Nutrition','Electricity Basics','Environment'],
+  'Urdu':              ['الفاظ کے معنی','گرامر','پڑھنا اور سمجھنا','مضمون نویسی','خط نویسی','محاورے','شاعری','کہانی','تلفظ','ادب'],
+  'Islamiat':          ['Five Pillars of Islam','Quran & Surahs','Prophet Stories','Islamic Values','Prayers & Worship','Hadith','Islamic History','Ramadan & Eid','Zakat & Charity','Good Character'],
+  'General Knowledge': ['Pakistan Geography','World Countries','Famous People','Science Facts','History Events','Sports','Animals & Nature','Technology','Culture & Traditions','Current Events'],
+  'Computer':          ['Computer Basics','Input & Output Devices','Internet Safety','MS Word','MS Excel','Presentations','Coding Basics','Algorithms','Digital Citizenship','Problem Solving'],
+  'Social Studies':    ['My Family & Community','Pakistan History','World Geography','Government & Citizenship','Economy Basics','Culture & Society','Human Rights','Environment','Transport','Communication'],
+};
+
 const QUESTION_TYPES = [
   { id:'mcq', label:'MCQ', desc:'Multiple choice' },
   { id:'structured', label:'Structured', desc:'Written answer' },
@@ -94,7 +120,9 @@ export default function DrillPage() {
   const { logSession, streakDays, totalQuestions, badges } = useStreaks(userProfile);
 
   // Setup
+  const [mode, setMode] = useState('');
   const [level, setLevel] = useState('O Level');
+  const [youngGrade, setYoungGrade] = useState(null);
   const [subject, setSubject] = useState('');
   const [topic, setTopic] = useState('');
   const [difficulty, setDifficulty] = useState('medium');
@@ -129,7 +157,8 @@ export default function DrillPage() {
     try { const s = localStorage.getItem('nw_user'); if (s) setUserProfile(JSON.parse(s)); } catch {}
   }, []);
 
-  const subjects = level === 'O Level' ? SUBJECTS_OLEVEL : SUBJECTS_ALEVEL;
+  const subjects = mode === 'young' ? SUBJECTS_YOUNG : (level === 'O Level' ? SUBJECTS_OLEVEL : SUBJECTS_ALEVEL);
+  const youngTopics = subject && mode === 'young' ? (TOPICS_YOUNG[subject] || DEFAULT_TOPICS) : [];
   const topics = subject ? getTopics(subject) : [];
   const dueTopics = subject ? sr.getDueTopics(subject) : [];
 
@@ -249,8 +278,23 @@ export default function DrillPage() {
         </nav>
 
         <div style={S.container}>
-          <h1 style={S.h1}>Past Paper Drill 📚</h1>
-          <p style={S.subtitle}>Cambridge exam questions, generated fresh every time. Starky tracks what you struggle with and brings those topics back automatically.</p>
+          <h1 style={S.h1}>Drill Mode 📚</h1>
+          <p style={S.subtitle}>Practice questions powered by Starky. Choose your level to begin.</p>
+
+          {!mode && (
+            <div style={{display:'flex',flexDirection:'column',gap:12,marginBottom:16}}>
+              <button onClick={() => setMode('young')} style={{background:'rgba(255,179,71,0.08)',border:'2px solid rgba(255,179,71,0.3)',borderRadius:18,padding:'20px 18px',cursor:'pointer',textAlign:'left'}}>
+                <div style={{fontSize:26,marginBottom:6}}>🌟 Adventure Mode</div>
+                <div style={{fontWeight:800,fontSize:15,color:'#FFB347',marginBottom:4}}>KG — Grade 9</div>
+                <div style={{fontSize:13,color:'rgba(255,255,255,0.5)',lineHeight:1.6}}>Fun questions, no pressure, lots of encouragement. Ages 3–14.</div>
+              </button>
+              <button onClick={() => setMode('exam')} style={{background:'rgba(79,142,247,0.08)',border:'2px solid rgba(79,142,247,0.3)',borderRadius:18,padding:'20px 18px',cursor:'pointer',textAlign:'left'}}>
+                <div style={{fontSize:26,marginBottom:6}}>🎓 Exam Mode</div>
+                <div style={{fontWeight:800,fontSize:15,color:'#4F8EF7',marginBottom:4}}>O Level — A Level</div>
+                <div style={{fontSize:13,color:'rgba(255,255,255,0.5)',lineHeight:1.6}}>Cambridge-style questions, timer, mark schemes, examiner tips.</div>
+              </button>
+            </div>
+          )}
 
           {/* 📷 Camera Drill CTA */}
           <div style={{...S.card, borderColor:'rgba(167,139,250,.25)', background:'rgba(167,139,250,.06)', marginBottom:20}}>
@@ -278,8 +322,50 @@ export default function DrillPage() {
             )}
           </div>
 
+          {mode === 'young' && (
+            <>
+              <div style={{...S.card,borderColor:'rgba(255,179,71,0.2)',background:'rgba(255,179,71,0.04)'}}>
+                <span style={S.label}>My Grade</span>
+                <div style={{display:'flex',flexDirection:'column',gap:7}}>
+                  {GRADES_YOUNG.map(g => (
+                    <button key={g.id} style={{...S.optionBtn(youngGrade?.id===g.id),display:'flex',alignItems:'center',gap:12,padding:'12px 14px'}} onClick={() => { setYoungGrade(g); setSubject(''); setTopic(''); }}>
+                      <span style={{fontSize:20}}>{g.emoji}</span>
+                      <div style={{textAlign:'left'}}>
+                        <div style={{fontWeight:800,fontSize:14,color:youngGrade?.id===g.id?g.color:'#fff'}}>{g.label}</div>
+                        <div style={{fontSize:11,color:'rgba(255,255,255,0.4)'}}>Age {g.age}</div>
+                      </div>
+                      {youngGrade?.id===g.id && <span style={{marginLeft:'auto',color:g.color,fontSize:16}}>✓</span>}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              {youngGrade && (
+                <div style={{...S.card,borderColor:'rgba(255,179,71,0.2)'}}>
+                  <span style={S.label}>Subject</span>
+                  <div style={{display:'grid',gridTemplateColumns:'repeat(2,1fr)',gap:8}}>
+                    {SUBJECTS_YOUNG.map(s => <button key={s} style={S.optionBtn(subject===s)} onClick={() => { setSubject(s); setTopic(''); }}>{s}</button>)}
+                  </div>
+                </div>
+              )}
+              {youngGrade && subject && (
+                <div style={{...S.card,borderColor:'rgba(255,179,71,0.2)'}}>
+                  <span style={S.label}>Topic</span>
+                  <div style={{display:'flex',flexDirection:'column',gap:6}}>
+                    {youngTopics.map(t => <button key={t} style={S.optionBtn(topic===t)} onClick={() => setTopic(t)}>{t}</button>)}
+                  </div>
+                </div>
+              )}
+              {youngGrade && subject && topic && (
+                <button style={S.primaryBtn} onClick={() => { setLevel(youngGrade.label); startSession(); }}>
+                  Start Adventure! 🌟
+                </button>
+              )}
+              <button style={{...S.ghostBtn,marginTop:8}} onClick={() => { setMode(''); setYoungGrade(null); setSubject(''); setTopic(''); }}>← Back</button>
+            </>
+          )}
+
           {/* Level */}
-          <div style={S.card}>
+          {mode === 'exam' && <div style={S.card}>
             <span style={S.label}>Exam Level</span>
             <div style={S.grid2}>
               {['O Level','A Level'].map(l => (
@@ -348,13 +434,14 @@ export default function DrillPage() {
             </div>
           </div>
 
-          <button
+          {mode === 'exam' && <button
             style={{...S.primaryBtn, opacity:(!subject||!topic) && !cameraImage ? 0.4 : 1, cursor:(!subject||!topic) && !cameraImage ? 'not-allowed' : 'pointer'}}
             onClick={startSession}
             disabled={(!subject||!topic) && !cameraImage}
           >
             {cameraImage ? 'Drill from my photo →' : `Start ${SESSION_LENGTH}-Question Drill →`}
-          </button>
+          </button>}
+          {mode === 'exam' && <button style={{...S.ghostBtn,marginTop:8}} onClick={() => { setMode(''); setSubject(''); setTopic(''); }}>← Back</button>}
 
           {sr.weakTopics.length > 0 && (
             <div style={{...S.card, marginTop:24, borderColor:'rgba(248,113,113,.2)', background:'rgba(248,113,113,.05)'}}>
