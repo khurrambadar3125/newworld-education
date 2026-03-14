@@ -1,4 +1,3 @@
-import { useState, useRef, useEffect } from 'react';
 // pages/special-needs.jsx
 // ═══════════════════════════════════════════════════════════════════════
 // STARKY FOR SPECIAL NEEDS — CONDITION × AGE MATRIX
