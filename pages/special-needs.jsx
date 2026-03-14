@@ -273,6 +273,270 @@ function loadP() { try { return JSON.parse(localStorage.getItem(PK)||"{}"); } ca
 function saveP(p) { try { localStorage.setItem(PK, JSON.stringify(p)); } catch {} }
 
 // ═══════════════════════════════════════════════════════════════════════
+
+// ── SEN Drill Widget ─────────────────────────────────────────────
+function SENDrillWidget({ condition, stage, subject }) {
+  const [active, setActive] = React.useState(false);
+  const [question, setQuestion] = React.useState(null);
+  const [selected, setSelected] = React.useState('');
+  const [answer, setAnswer] = React.useState('');
+  const [feedback, setFeedback] = React.useState(null);
+  const [loading, setLoading] = React.useState(false);
+  const [hint, setHint] = React.useState(null);
+  const [hintLoading, setHintLoading] = React.useState(false);
+  const [celebration, setCelebration] = React.useState('');
+  const [questionCount, setQuestionCount] = React.useState(0);
+  const feedbackRef = React.useRef(null);
+
+  const CELEBRATIONS = [
+    "🌟 Amazing try!", "⭐ You're doing great!", "🎉 Brilliant effort!",
+    "🌈 Keep going, you've got this!", "💪 That was wonderful!",
+    "🦋 You're a star!", "🎊 Fantastic attempt!", "🌺 So proud of you!",
+  ];
+
+  const senSubjects = subject
+    ? [subject]
+    : ['Maths','English','Science','Reading','Social Skills','Life Skills'];
+
+  const [chosenSubject, setChosenSubject] = React.useState('');
+
+  const generateQuestion = async (subj) => {
+    if (loading) return;
+    setLoading(true);
+    setFeedback(null);
+    setSelected('');
+    setAnswer('');
+    setHint(null);
+    const sub = subj || chosenSubject || 'General Learning';
+    try {
+      const condName = condition?.name || 'Special Educational Needs';
+      const stageName = stage?.name || 'Primary';
+      const res = await fetch('/api/drill', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({
+          action: 'generate',
+          level: stageName,
+          subject: sub,
+          topic: 'Core concepts',
+          difficulty: 'easy',
+          questionType: 'mcq',
+          isSEN: true,
+          senCondition: condName,
+        })
+      });
+      const data = await res.json();
+      if (!data.error) {
+        setQuestion(data);
+        setQuestionCount(c => c + 1);
+      }
+    } catch {}
+    setLoading(false);
+  };
+
+  const submitAnswer = async () => {
+    if (!question || loading) return;
+    const ans = question.type === 'mcq' ? selected : answer.trim();
+    if (!ans) return;
+    setLoading(true);
+    try {
+      const res = await fetch('/api/drill', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({
+          action: 'grade',
+          level: stage?.name || 'Primary',
+          subject: chosenSubject,
+          topic: question.topic || 'General',
+          question: question.question,
+          studentAnswer: ans,
+          questionType: question.type,
+          options: question.options,
+          marks: question.marks,
+          isSEN: true,
+        })
+      });
+      const data = await res.json();
+      setFeedback(data);
+      // Always celebrate — correct or not
+      const cel = CELEBRATIONS[Math.floor(Math.random() * CELEBRATIONS.length)];
+      setCelebration(data.correct ? "🌟 Correct! " + cel : cel);
+      setTimeout(() => feedbackRef.current?.scrollIntoView({behavior:'smooth',block:'start'}), 150);
+    } catch {}
+    setLoading(false);
+  };
+
+  const getHint = async () => {
+    if (!question || hintLoading) return;
+    setHintLoading(true);
+    try {
+      const res = await fetch('/api/drill', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({
+          action: 'hint',
+          question: question.question,
+          subject: chosenSubject,
+          topic: question.topic || 'General',
+          level: stage?.name || 'Primary',
+        })
+      });
+      const data = await res.json();
+      setHint(data.hint || 'Think about what you already know — you can do this!');
+    } catch {
+      setHint('Take your time — there is no rush. You can do this!');
+    }
+    setHintLoading(false);
+  };
+
+  if (!active) return (
+    <div style={{background:"rgba(167,139,250,0.06)",border:"2px solid rgba(167,139,250,0.2)",borderRadius:20,padding:"28px 24px",textAlign:"center"}}>
+      <div style={{fontSize:48,marginBottom:12}}>🎯</div>
+      <div style={{fontWeight:900,fontSize:18,marginBottom:8,fontFamily:"'Nunito',sans-serif"}}>Ready to practise?</div>
+      <div style={{fontSize:13,color:"rgba(255,255,255,0.5)",marginBottom:20,lineHeight:1.7}}>
+        No timer. No stress. Starky will cheer for every answer you give.
+      </div>
+      {!subject && (
+        <div style={{display:"flex",flexWrap:"wrap",gap:8,justifyContent:"center",marginBottom:16}}>
+          {senSubjects.map(s => (
+            <button key={s} onClick={() => setChosenSubject(s)} style={{background:chosenSubject===s?"rgba(167,139,250,0.2)":"rgba(255,255,255,0.05)",border:`2px solid ${chosenSubject===s?"rgba(167,139,250,0.6)":"rgba(255,255,255,0.1)"}`,borderRadius:100,padding:"8px 18px",color:chosenSubject===s?"#A78BFA":"rgba(255,255,255,0.6)",fontWeight:700,fontSize:13,cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>
+              {s}
+            </button>
+          ))}
+        </div>
+      )}
+      <button
+        onClick={() => { setActive(true); generateQuestion(subject || chosenSubject); }}
+        disabled={!subject && !chosenSubject}
+        style={{background:"linear-gradient(135deg,#A78BFA,#7C5CBF)",border:"none",borderRadius:14,padding:"14px 32px",color:"#fff",fontWeight:900,fontSize:16,fontFamily:"'Nunito',sans-serif",cursor:"pointer",opacity:(!subject && !chosenSubject)?0.4:1}}
+      >
+        Let's Start! ✨
+      </button>
+    </div>
+  );
+
+  return (
+    <div style={{background:"rgba(255,255,255,0.03)",border:"1px solid rgba(255,255,255,0.08)",borderRadius:20,padding:"24px 20px"}}>
+      {/* Header */}
+      <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:20}}>
+        <div style={{fontWeight:800,fontSize:13,color:"#A78BFA"}}>✨ Practice Zone · {chosenSubject || subject}</div>
+        <div style={{fontSize:12,color:"rgba(255,255,255,0.35)"}}>Question {questionCount}</div>
+      </div>
+
+      {loading && !question && (
+        <div style={{textAlign:"center",padding:"40px 0"}}>
+          <div style={{fontSize:40,marginBottom:12}}>🌟</div>
+          <div style={{fontSize:14,color:"rgba(255,255,255,0.5)"}}>Starky is finding the perfect question for you…</div>
+        </div>
+      )}
+
+      {question && !loading && (
+        <>
+          {/* Hint always visible at top */}
+          {!hint && !feedback && (
+            <button onClick={getHint} disabled={hintLoading} style={{width:"100%",background:"rgba(252,211,77,0.08)",border:"1px solid rgba(252,211,77,0.2)",borderRadius:12,padding:"10px",color:"#FCD34D",fontSize:13,fontWeight:700,cursor:"pointer",marginBottom:14,fontFamily:"'Nunito',sans-serif"}}>
+              {hintLoading ? "🤔 Getting a hint for you…" : "💡 Can I have a hint please?"}
+            </button>
+          )}
+          {hint && !feedback && (
+            <div style={{background:"rgba(252,211,77,0.08)",border:"1px solid rgba(252,211,77,0.2)",borderRadius:12,padding:"12px 16px",marginBottom:14,fontSize:13,color:"rgba(255,255,255,0.85)",lineHeight:1.7}}>
+              <strong style={{color:"#FCD34D"}}>💡 Hint: </strong>{hint}
+            </div>
+          )}
+
+          {/* Question — bigger text for SEN */}
+          <div style={{fontSize:18,lineHeight:1.8,color:"rgba(255,255,255,0.95)",background:"rgba(167,139,250,0.07)",border:"1px solid rgba(167,139,250,0.2)",borderRadius:14,padding:"20px",marginBottom:20,fontFamily:"'Nunito',sans-serif",fontWeight:600}}>
+            {question.question}
+          </div>
+
+          {/* MCQ options — large tap targets */}
+          {question.type === 'mcq' && question.options && !feedback && (
+            <div style={{display:"flex",flexDirection:"column",gap:10,marginBottom:16}}>
+              {Object.entries(question.options).map(([key, val]) => (
+                <button key={key}
+                  onClick={() => setSelected(key)}
+                  style={{background:selected===key?"rgba(167,139,250,0.15)":"rgba(255,255,255,0.04)",border:`2px solid ${selected===key?"rgba(167,139,250,0.5)":"rgba(255,255,255,0.1)"}`,borderRadius:14,padding:"16px 18px",cursor:"pointer",color:selected===key?"#A78BFA":"rgba(255,255,255,0.8)",fontSize:16,textAlign:"left",display:"flex",gap:12,alignItems:"center",fontFamily:"'Nunito',sans-serif",fontWeight:600,transition:"all 0.15s"}}>
+                  <strong style={{fontSize:18,minWidth:28,color:selected===key?"#A78BFA":"rgba(255,255,255,0.4)"}}>{key}.</strong>
+                  <span>{val}</span>
+                  {selected===key && <span style={{marginLeft:"auto",fontSize:20}}>●</span>}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* MCQ after feedback */}
+          {question.type === 'mcq' && question.options && feedback && (
+            <div style={{display:"flex",flexDirection:"column",gap:8,marginBottom:16}}>
+              {Object.entries(question.options).map(([key, val]) => {
+                const isSelected = selected===key;
+                const isCorrect = key===question.correctOption;
+                let bg="rgba(255,255,255,0.03)",border="rgba(255,255,255,0.06)",color="rgba(255,255,255,0.4)";
+                if (isCorrect) { bg="rgba(74,222,128,0.1)"; border="rgba(74,222,128,0.35)"; color="#4ADE80"; }
+                if (isSelected && !isCorrect) { bg="rgba(248,113,113,0.1)"; border="rgba(248,113,113,0.35)"; color="#F87171"; }
+                return (
+                  <div key={key} style={{background:bg,border:`2px solid ${border}`,borderRadius:14,padding:"14px 18px",color,fontSize:15,display:"flex",gap:12,alignItems:"center",fontFamily:"'Nunito',sans-serif",fontWeight:600}}>
+                    <strong style={{minWidth:28}}>{key}.</strong>
+                    <span>{val}</span>
+                    {isCorrect && <span style={{marginLeft:"auto",fontSize:20}}>✓</span>}
+                    {isSelected && !isCorrect && <span style={{marginLeft:"auto",fontSize:20}}>✗</span>}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          {/* Structured answer */}
+          {question.type === 'structured' && !feedback && (
+            <textarea
+              value={answer}
+              onChange={e => setAnswer(e.target.value)}
+              placeholder="Write your answer here — take all the time you need…"
+              style={{width:"100%",background:"rgba(255,255,255,0.06)",border:"2px solid rgba(255,255,255,0.12)",borderRadius:12,color:"#fff",padding:"14px",fontSize:16,lineHeight:1.7,fontFamily:"'Nunito',sans-serif",outline:"none",resize:"vertical",minHeight:120,boxSizing:"border-box",marginBottom:16}}
+            />
+          )}
+
+          {/* Feedback — always celebratory */}
+          {feedback && (
+            <div ref={feedbackRef} style={{background:"rgba(167,139,250,0.08)",border:"2px solid rgba(167,139,250,0.25)",borderRadius:16,padding:"20px",marginBottom:16}}>
+              <div style={{fontSize:28,marginBottom:8,textAlign:"center"}}>{celebration}</div>
+              <p style={{fontSize:15,color:"rgba(255,255,255,0.85)",lineHeight:1.8,margin:"0 0 12px",fontFamily:"'Nunito',sans-serif"}}>
+                {feedback.feedback}
+              </p>
+              {feedback.modelAnswer && (
+                <div style={{background:"rgba(255,255,255,0.05)",borderRadius:10,padding:"12px 14px",marginTop:10}}>
+                  <div style={{fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.4)",letterSpacing:"0.06em",marginBottom:6}}>THE ANSWER WAS</div>
+                  <div style={{fontSize:14,color:"rgba(255,255,255,0.75)",lineHeight:1.7,fontFamily:"'Nunito',sans-serif"}}>{feedback.modelAnswer}</div>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Submit / Next */}
+          {!feedback ? (
+            <button
+              onClick={submitAnswer}
+              disabled={question.type==='mcq'?!selected:!answer.trim()}
+              style={{width:"100%",background:"linear-gradient(135deg,#A78BFA,#7C5CBF)",border:"none",borderRadius:14,padding:"16px",color:"#fff",fontSize:16,fontWeight:900,fontFamily:"'Nunito',sans-serif",cursor:"pointer",opacity:(question.type==='mcq'?!selected:!answer.trim())?0.4:1}}>
+              {loading ? "Checking… 🌟" : "Submit My Answer ✨"}
+            </button>
+          ) : (
+            <button
+              onClick={() => generateQuestion(subject || chosenSubject)}
+              style={{width:"100%",background:"linear-gradient(135deg,#A78BFA,#7C5CBF)",border:"none",borderRadius:14,padding:"16px",color:"#fff",fontSize:16,fontWeight:900,fontFamily:"'Nunito',sans-serif",cursor:"pointer"}}>
+              Next Question → ✨
+            </button>
+          )}
+
+          <button onClick={() => { setActive(false); setQuestion(null); setFeedback(null); setQuestionCount(0); }}
+            style={{width:"100%",background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.08)",borderRadius:12,padding:"13px",color:"rgba(255,255,255,0.4)",fontSize:14,fontFamily:"'Nunito',sans-serif",cursor:"pointer",marginTop:8}}>
+            Take a break 💜
+          </button>
+        </>
+      )}
+    </div>
+  );
+}
+
 export default function SpecialNeedsPage() {
   const [step, setStep]           = useState(1); // 1=condition, 2=stage, 3=focus, 4=chat
   const [urduMode, setUrduMode]   = useState(false); // Urdu language toggle
@@ -766,6 +1030,21 @@ ${focus.id !== "parent" ? `\n*For the adult:* Tell me your child's name if you'd
           <div style={{fontSize:12,color:"rgba(255,255,255,0.45)",lineHeight:1.8,marginBottom:12}}>Full access to Music, Reading, and Arts — all 7 specialist profiles, 120+ books, evidence-based teaching, and parent guides.</div>
           <a href="/pricing" style={{display:"inline-block",background:"linear-gradient(135deg,#C77DFF,#7B5EA7)",borderRadius:12,padding:"10px 24px",color:"#fff",fontWeight:900,fontSize:13,textDecoration:"none"}}>View Plans</a>
         </div>
+      </div>
+
+      {/* ── SEN Practice Zone ───────────────────────── */}
+      <div style={{maxWidth:600,margin:"0 auto 40px",padding:"0 16px"}}>
+        <div style={{textAlign:"center",marginBottom:24}}>
+          <div style={{display:"inline-block",background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:20,padding:"4px 16px",fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.4)",letterSpacing:2,marginBottom:12}}>PRACTICE ZONE</div>
+          <h2 style={{fontFamily:"'Nunito',sans-serif",fontSize:"clamp(22px,5vw,30px)",fontWeight:900,margin:"0 0 10px"}}>
+            ✨ Practice at Your Pace
+          </h2>
+          <p style={{fontSize:14,color:"rgba(255,255,255,0.5)",lineHeight:1.7,maxWidth:420,margin:"0 auto"}}>
+            No timer. No pressure. Starky celebrates every answer — right or wrong. Just learning, one step at a time.
+          </p>
+        </div>
+
+        <SENDrillWidget condition={condition} stage={stage} subject={subject} />
       </div>
 
     </div>
