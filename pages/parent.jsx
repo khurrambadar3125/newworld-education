@@ -643,6 +643,32 @@ export default function ParentPage() {
           </a>
         </div>
 
+
+        {/* Ask Them Tonight Card */}
+        {children.length > 0 && (
+          <div style={{marginTop:20,background:"rgba(79,142,247,0.08)",border:"1px solid rgba(79,142,247,0.2)",borderRadius:20,padding:"20px 22px"}}>
+            <div style={{fontWeight:900,fontSize:15,color:"#4F8EF7",marginBottom:4}}>💬 Ask Them Tonight</div>
+            <div style={{fontSize:12,color:"rgba(255,255,255,0.35)",marginBottom:14}}>No subject knowledge needed — just listen</div>
+            {children.slice(0,3).map(child => {
+              const questions = [
+                "What did you learn with Starky today?",
+                "Can you teach me one thing you studied today?",
+                "What was the hardest question Starky asked you?",
+                "If you had to explain today's topic to a friend, what would you say?",
+              ];
+              const q = questions[Math.floor(Math.random() * questions.length)];
+              return (
+                <div key={child.id} style={{marginBottom:10,background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.08)",borderRadius:14,padding:"12px 14px"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:6}}>
+                    <span style={{fontSize:18}}>{child.avatar}</span>
+                    <span style={{fontWeight:800,fontSize:13,color:child.color}}>{child.name}</span>
+                  </div>
+                  <div style={{fontSize:14,color:"#fff",fontStyle:"italic",lineHeight:1.6}}>"{q}"</div>
+                </div>
+              );
+            })}
+          </div>
+        )}
         {/* Subscription section */}
         <div style={{marginTop:28,background:"rgba(168,224,99,0.06)",border:"1px solid rgba(168,224,99,0.2)",borderRadius:20,padding:"20px 22px"}}>
           <div style={{fontWeight:900,fontSize:15,color:"#A8E063",marginBottom:8}}>🎓 Family Plan — $69.99/mo</div>
