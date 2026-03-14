@@ -639,6 +639,10 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           <a href="/music-for-all">Music for All</a>
           <a href="/reading-for-all">Reading for All</a>
           <a href="/ibcc">IBCC Calculator</a>
+          <a href="/school">For Schools</a>
+          <a href="/subscribe">Daily Questions</a>
+          <a href="/leaderboard">Leaderboard</a>
+          <a href="/dashboard">Teacher Dashboard</a>
         </div>
         <div className="fc2">© 2026 NewWorldEdu · khurram@newworld.education</div>
       </footer>
