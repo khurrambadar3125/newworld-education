@@ -2,142 +2,203 @@
  * pages/api/drill.js
  * ─────────────────────────────────────────────────────────────────
  * Past paper drill API — generates Cambridge-style questions and grades answers.
- *
- * POST body for generation:
- *   { action: 'generate', level, subject, topic, difficulty, questionType }
- *   → { question, type, options, topic, difficulty, subject, level, markSchemeHint }
- *
- * POST body for grading:
- *   { action: 'grade', level, subject, topic, question, studentAnswer, questionType, options }
- *   → { correct, quality, score, maxScore, feedback, examinerTip, modelAnswer }
- *
- * quality (0–5) is used directly by the SM-2 hook.
+ * Supports: generate, grade, hint actions
+ * Supports: camera/image uploads for question extraction
+ * Supports: KG–Grade 9 "adventure mode" (friendly, no pressure)
+ * Supports: O/A Level "exam mode" (Cambridge precision)
  */
 
 import Anthropic from '@anthropic-ai/sdk';
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
-const ALLOWED_ORIGINS = [
-  'https://newworld.education',
-  'https://www.newworld.education',
-  process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : null,
-].filter(Boolean);
+const SYSTEM = `You are an expert Cambridge examiner and question setter with 30 years of experience.
+You know every mark scheme, examiner report, and common misconception for all Cambridge subjects.
+You also know how to explain concepts to children from age 4 to 18 in age-appropriate language.
+CRITICAL: Respond ONLY with valid JSON. No markdown, no backticks, no preamble.`;
 
-// ─── System prompt shared by both actions ────────────────────────────────────
-
-const SYSTEM = `You are an expert Cambridge examiner and question setter with 30 years of experience writing O Level and A Level past papers.
-
-You know every mark scheme, examiner report, and common misconception for all Cambridge subjects. You write questions exactly in Cambridge style and grade with the precision and phrasing of a real Cambridge mark scheme.
-
-CRITICAL: Respond ONLY with valid JSON. No markdown, no backticks, no preamble, no explanation outside the JSON object.`;
-
-// ─── Difficulty descriptors ───────────────────────────────────────────────────
+const SYSTEM_YOUNG = `You are Starky, a magical friendly teacher who makes learning feel like an adventure.
+You create fun, encouraging questions for children aged 4-14.
+You ALWAYS celebrate effort, even wrong answers. You NEVER make a child feel bad.
+CRITICAL: Respond ONLY with valid JSON. No markdown, no backticks, no preamble.`;
 
 const DIFFICULTY_MAP = {
-  easy:   'A straightforward recall or single-step question — suitable for a student who is beginning to learn this topic. Would score 1-2 marks in a real paper.',
-  medium: 'A typical exam question requiring understanding and application — the kind a mid-range student would encounter. 2-4 marks.',
-  hard:   'A challenging question requiring deeper analysis, multi-step reasoning, or precise Cambridge phrasing. 4-6 marks. Typical of top-end questions.',
+  easy:   'A straightforward recall or single-step question. 1-2 marks.',
+  medium: 'A typical exam question requiring understanding and application. 2-4 marks.',
+  hard:   'A challenging question requiring deeper analysis. 4-6 marks.',
 };
 
-// ─── Question generation prompt ───────────────────────────────────────────────
-
-function buildGeneratePrompt({ level, subject, topic, difficulty, questionType }) {
-  const difficultyDesc = DIFFICULTY_MAP[difficulty] || DIFFICULTY_MAP.medium;
-  const typeInstructions = questionType === 'mcq'
-    ? `Generate a MULTIPLE CHOICE question with exactly 4 options (A, B, C, D). Only one option is correct. Distractors should represent real common misconceptions.`
-    : `Generate a SHORT ANSWER question that requires 2-4 sentences. No multiple choice.`;
-
-  return `Generate a Cambridge ${level} ${subject} exam question on the topic: "${topic}".
-
-Difficulty: ${difficultyDesc}
-
-Question type: ${typeInstructions}
-
-Respond with this exact JSON structure:
-${questionType === 'mcq' ? `{
-  "question": "The full question text, written exactly as it would appear on a Cambridge paper",
-  "type": "mcq",
-  "options": {
-    "A": "First option text",
-    "B": "Second option text",
-    "C": "Third option text",
-    "D": "Fourth option text"
-  },
-  "correctOption": "A",
-  "topic": "${topic}",
-  "difficulty": "${difficulty}",
-  "marks": 1,
-  "markSchemeHint": "Brief internal note — why the correct answer is correct (not shown to student yet)"
-}` : `{
-  "question": "The full question text, written exactly as it would appear on a Cambridge paper",
-  "type": "structured",
-  "topic": "${topic}",
-  "difficulty": "${difficulty}",
-  "marks": 3,
-  "markSchemeHint": "Key marking points — what a student must include to get full marks (not shown to student yet)"
-}`}`;
+// ── Determine if this is a young learner ────────────────────────────────────
+function isYoungLearner(level) {
+  const youngLevels = ['KG','Grade 1','Grade 2','Grade 3','Grade 4','Grade 5','Grade 6','Grade 7','Grade 8','Grade 9'];
+  return youngLevels.includes(level);
 }
 
-// ─── Grading prompt ───────────────────────────────────────────────────────────
+// ── Generate question prompt ─────────────────────────────────────────────────
+function buildGeneratePrompt({ level, subject, topic, difficulty, questionType, imageBase64, imageType }) {
+  const young = isYoungLearner(level);
+  const diffDesc = DIFFICULTY_MAP[difficulty] || DIFFICULTY_MAP.medium;
 
+  if (imageBase64) {
+    return `Look at this past paper question image. Extract the question exactly and create a drill question from it.
+Generate a ${questionType === 'mcq' ? 'multiple choice question with 4 options (A,B,C,D)' : 'short answer question'} based on what you see.
+Subject context: ${subject || 'unknown'} · Level: ${level}
+
+Return this JSON:
+${questionType === 'mcq' ? `{"question":"extracted/adapted question text","type":"mcq","options":{"A":"...","B":"...","C":"...","D":"..."},"correctOption":"A","topic":"${topic||'From paper'}","difficulty":"${difficulty}","marks":1,"markSchemeHint":"why correct answer is correct"}` : `{"question":"extracted/adapted question text","type":"structured","topic":"${topic||'From paper'}","difficulty":"${difficulty}","marks":3,"markSchemeHint":"key marking points"}`}`;
+  }
+
+  if (young) {
+    const typeInstr = questionType === 'mcq'
+      ? 'Make a FUN multiple choice question with 4 options (A,B,C,D). Use simple, friendly language. One answer is clearly correct.'
+      : 'Make a short, simple question. Use friendly language a child can understand easily.';
+
+    return `Create a ${level} level question about "${topic}" in ${subject}.
+${typeInstr}
+Make it fun and encouraging! Age-appropriate for ${level} students.
+
+Return this JSON:
+${questionType === 'mcq'
+  ? `{"question":"fun friendly question text","type":"mcq","options":{"A":"option 1","B":"option 2","C":"option 3","D":"option 4"},"correctOption":"A","topic":"${topic}","difficulty":"${difficulty}","marks":1,"markSchemeHint":"why correct"}`
+  : `{"question":"simple friendly question","type":"structured","topic":"${topic}","difficulty":"${difficulty}","marks":2,"markSchemeHint":"key points to award marks"}`}`;
+  }
+
+  const typeInstr = questionType === 'mcq'
+    ? 'Generate a MULTIPLE CHOICE question with exactly 4 options (A,B,C,D). Only one is correct. Distractors should be common misconceptions.'
+    : 'Generate a SHORT ANSWER question requiring 2-4 sentences.';
+
+  return `Generate a Cambridge ${level} ${subject} exam question on: "${topic}".
+Difficulty: ${diffDesc}
+${typeInstr}
+
+Return this JSON:
+${questionType === 'mcq'
+  ? `{"question":"full question text","type":"mcq","options":{"A":"...","B":"...","C":"...","D":"..."},"correctOption":"A","topic":"${topic}","difficulty":"${difficulty}","marks":1,"markSchemeHint":"why correct answer is correct"}`
+  : `{"question":"full question text","type":"structured","topic":"${topic}","difficulty":"${difficulty}","marks":3,"markSchemeHint":"key marking points for full marks"}`}`;
+}
+
+// ── Grade prompt ─────────────────────────────────────────────────────────────
 function buildGradePrompt({ level, subject, topic, question, studentAnswer, questionType, options, marks }) {
-  const optionsText = questionType === 'mcq' && options
-    ? `Options were:\nA: ${options.A}\nB: ${options.B}\nC: ${options.C}\nD: ${options.D}\n`
-    : '';
+  const young = isYoungLearner(level);
+  const optText = questionType === 'mcq' && options
+    ? `Options were:\nA: ${options.A}\nB: ${options.B}\nC: ${options.C}\nD: ${options.D}\n` : '';
 
-  return `Grade this Cambridge ${level} ${subject} student answer.
-
-Topic: ${topic}
+  if (young) {
+    return `Grade this answer from a ${level} student (child aged ${level === 'KG' ? '4-5' : '5-14'}).
 Question: ${question}
-${optionsText}Student's answer: "${studentAnswer}"
-Marks available: ${marks || (questionType === 'mcq' ? 1 : 3)}
+${optText}Student's answer: "${studentAnswer}"
+Marks available: ${marks || 1}
 
-Grade this exactly as a Cambridge examiner would. Be precise, fair, and constructive.
+Be WARM, ENCOURAGING and CELEBRATORY. Never make the child feel bad.
+Even if wrong, find something positive. Use simple language, emojis.
 
-Respond with this exact JSON:
+Return this JSON:
 {
   "correct": true or false,
-  "quality": a number from 0 to 5 where: 0=total blackout, 1=wrong answer, 2=wrong but shows partial understanding, 3=correct but hesitant/partial, 4=correct with good explanation, 5=perfect Cambridge-level answer,
+  "quality": 0-5,
+  "score": marks awarded,
+  "maxScore": ${marks || 1},
+  "feedback": "Warm encouraging feedback with emojis — 2 sentences. Always starts with something positive even if wrong.",
+  "examinerTip": "One fun friendly tip to remember this for next time",
+  "modelAnswer": "Simple clear answer in child-friendly language"
+}`;
+  }
+
+  return `Grade this Cambridge ${level} ${subject} answer.
+Topic: ${topic}
+Question: ${question}
+${optText}Student's answer: "${studentAnswer}"
+Marks available: ${marks || (questionType === 'mcq' ? 1 : 3)}
+
+Grade exactly as a Cambridge examiner. Be precise, fair, constructive.
+
+Return this JSON:
+{
+  "correct": true or false,
+  "quality": 0-5 where 0=blackout, 1=wrong, 2=partial understanding, 3=correct but incomplete, 4=correct good explanation, 5=perfect Cambridge answer,
   "score": marks awarded as integer,
   "maxScore": total marks available,
-  "feedback": "2-3 sentences of warm, specific feedback in the voice of Starky — what they got right, what was missing, encouraging",
-  "examinerTip": "One precise Cambridge examiner tip — the exact keyword or phrase Cambridge mark schemes require for this topic",
-  "modelAnswer": "The ideal Cambridge mark scheme answer for this question — exactly what would earn full marks"
+  "feedback": "2-3 sentences — warm, specific, in Starky's voice. What they got right, what was missing, encouraging.",
+  "examinerTip": "One precise Cambridge examiner tip — the exact keyword/phrase mark schemes require for this topic",
+  "modelAnswer": "Ideal Cambridge mark scheme answer — exactly what earns full marks"
 }`;
 }
 
-// ─── Handler ──────────────────────────────────────────────────────────────────
+// ── Hint prompt ──────────────────────────────────────────────────────────────
+function buildHintPrompt({ level, subject, topic, question }) {
+  const young = isYoungLearner(level);
 
+  if (young) {
+    return `A ${level} student is stuck on this question about ${topic} in ${subject}.
+Question: "${question}"
+
+Give a fun, encouraging hint that helps them think without giving away the answer.
+Use simple words, maybe an analogy or story they can relate to.
+Keep it to 1-2 sentences maximum.
+
+Return JSON: {"hint": "your friendly hint here"}`;
+  }
+
+  return `A ${level} ${subject} student is stuck on this question about ${topic}.
+Question: "${question}"
+
+Give a Cambridge-style hint that guides their thinking without revealing the answer.
+Reference the key concept they need to recall. Keep it to 1-2 sentences.
+
+Return JSON: {"hint": "your hint here"}`;
+}
+
+// ── Handler ──────────────────────────────────────────────────────────────────
 export default async function handler(req, res) {
   const origin = req.headers.origin;
-  if (ALLOWED_ORIGINS.includes(origin)) {
-    res.setHeader('Access-Control-Allow-Origin', origin);
-  }
-  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  const allowed = ['https://newworld.education','https://www.newworld.education','http://localhost:3000'];
+  if (allowed.includes(origin)) res.setHeader('Access-Control-Allow-Origin', origin);
+  res.setHeader('Access-Control-Allow-Methods','POST,OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers','Content-Type');
   if (req.method === 'OPTIONS') return res.status(200).end();
-  if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
+  if (req.method !== 'POST') return res.status(405).json({ error:'Method not allowed' });
 
   const { action, ...params } = req.body || {};
-
-  if (!action) return res.status(400).json({ error: 'action required' });
+  if (!action) return res.status(400).json({ error:'action required' });
 
   try {
     let prompt;
+    let systemPrompt = SYSTEM;
+    let messages;
+
     if (action === 'generate') {
       prompt = buildGeneratePrompt(params);
+      systemPrompt = isYoungLearner(params.level) ? SYSTEM_YOUNG : SYSTEM;
+
+      // If image provided, use vision
+      if (params.imageBase64) {
+        messages = [{
+          role: 'user',
+          content: [
+            { type:'image', source:{ type:'base64', media_type:params.imageType||'image/jpeg', data:params.imageBase64 } },
+            { type:'text', text:prompt }
+          ]
+        }];
+      } else {
+        messages = [{ role:'user', content:prompt }];
+      }
     } else if (action === 'grade') {
       prompt = buildGradePrompt(params);
+      systemPrompt = isYoungLearner(params.level) ? SYSTEM_YOUNG : SYSTEM;
+      messages = [{ role:'user', content:prompt }];
+    } else if (action === 'hint') {
+      prompt = buildHintPrompt(params);
+      systemPrompt = isYoungLearner(params.level) ? SYSTEM_YOUNG : SYSTEM;
+      messages = [{ role:'user', content:prompt }];
     } else {
-      return res.status(400).json({ error: `Unknown action: ${action}` });
+      return res.status(400).json({ error:`Unknown action: ${action}` });
     }
 
     const response = await client.messages.create({
-      model:      'claude-sonnet-4-20250514', // Sonnet for exam quality
+      model: 'claude-sonnet-4-20250514',
       max_tokens: 800,
-      system:     SYSTEM,
-      messages:   [{ role: 'user', content: prompt }],
+      system: systemPrompt,
+      messages,
     });
 
     const raw = response.content
@@ -151,20 +212,10 @@ export default async function handler(req, res) {
     const parsed = JSON.parse(raw);
     return res.status(200).json(parsed);
 
-  } catch (error) {
-    console.error('[DRILL API ERROR]', error);
-    // Return a graceful fallback so the UI never crashes
-    if (action === 'generate') {
-      return res.status(500).json({ error: 'Failed to generate question. Please try again.' });
-    }
-    return res.status(500).json({
-      correct:    false,
-      quality:    0,
-      score:      0,
-      maxScore:   1,
-      feedback:   'Something went wrong grading your answer. Please try again!',
-      examinerTip: '',
-      modelAnswer: '',
-    });
+  } catch (err) {
+    console.error('[DRILL API ERROR]', err);
+    if (action === 'generate') return res.status(500).json({ error:'Failed to generate question. Please try again.' });
+    if (action === 'hint') return res.status(200).json({ hint:'Think about what you already know about this topic — start with the basics!' });
+    return res.status(500).json({ correct:false, quality:0, score:0, maxScore:1, feedback:'Something went wrong. Please try again!', examinerTip:'', modelAnswer:'' });
   }
 }
