@@ -37,6 +37,79 @@ const EMPTY_MEMORY = {
   lastSeen: null,
 };
 
+
+/**
+ * detectAndSaveMistake
+ * Call after every Starky reply. Analyses the exchange for correction
+ * signals and auto-saves the mistake if one is detected.
+ *
+ * @param {string} userText       - what the student said
+ * @param {string} starkyReply    - what Starky replied
+ * @param {string} subject        - current subject (e.g. "Biology")
+ * @param {function} addMistake   - from useSessionMemory
+ * @param {function} addWeakTopic - from useSessionMemory
+ */
+export function detectAndSaveMistake(userText, starkyReply, subject, addMistake, addWeakTopic) {
+  if (!userText || !starkyReply || !addMistake) return;
+
+  const reply = starkyReply.toLowerCase();
+
+  // Signals that Starky is correcting the student
+  const correctionSignals = [
+    'not quite',
+    'close, but',
+    'close but',
+    'almost — ',
+    'almost, but',
+    'actually,',
+    'actually —',
+    'careful here',
+    'common mistake',
+    'lot of students get this wrong',
+    'easy to confuse',
+    'the correct answer',
+    'the right answer',
+    'not exactly',
+    'let me show you a different way',
+    'interesting — let me',
+    "that's not quite right",
+    'not quite right',
+    "you've mixed up",
+    'you mixed up',
+    "don't confuse",
+    'be careful not to confuse',
+  ];
+
+  const hasCorrectionSignal = correctionSignals.some(s => reply.includes(s));
+  if (!hasCorrectionSignal) return;
+
+  // Try to extract what topic the mistake is about
+  // 1. Use the subject if we have it
+  // 2. Try to pull a noun phrase from the user's question
+  let topic = subject || 'General';
+  let description = '';
+
+  // Pull the first meaningful noun phrase from user's message (up to 5 words)
+  const userWords = userText.trim().replace(/[?!.]/g, '').split(' ');
+  if (userWords.length >= 2 && userWords.length <= 12) {
+    // If the user asked a short question, the topic IS the question
+    topic = subject ? `${subject} — ${userText.trim().slice(0, 60)}` : userText.trim().slice(0, 60);
+  }
+
+  // Pull description from Starky's correction (first sentence that contains a signal)
+  const sentences = starkyReply.split(/[.!?]+/).map(s => s.trim()).filter(Boolean);
+  for (const sentence of sentences) {
+    if (correctionSignals.some(s => sentence.toLowerCase().includes(s))) {
+      description = sentence.slice(0, 120);
+      break;
+    }
+  }
+  if (!description) description = starkyReply.slice(0, 120);
+
+  addMistake(topic, description);
+  if (addWeakTopic && subject) addWeakTopic(subject);
+}
+
 export function useSessionMemory(userProfile) {
   const [sessionMemory, setSessionMemory] = useState(EMPTY_MEMORY);
   const [isSummarizing, setIsSummarizing] = useState(false);

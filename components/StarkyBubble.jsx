@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
-import { useSessionMemory } from '../utils/useSessionMemory';
+import { useSessionMemory, detectAndSaveMistake } from '../utils/useSessionMemory';
 
 export default function StarkyBubble() {
   const [open, setOpen] = useState(false);
@@ -23,6 +23,8 @@ export default function StarkyBubble() {
   const {
     sessionMemory,
     saveMessage,
+    addMistake,
+    addWeakTopic,
     finalizeSession,
     hasPriorSession,
     getContinuationGreeting,
