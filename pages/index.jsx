@@ -145,7 +145,7 @@ export default function Home() {
     const firstName = p?.name?.split(' ')[0] || 'there';
     const subject = subjectOverride || selectedSubject;
     setChatStarted(true);
-    const greeting = `Hi ${firstName}! I'm Starky ★\n\nI'm your personal AI teacher for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}.\n\nWhat would you like to work on today? Ask me anything — homework help, exam prep, or a concept you want to understand better.`;
+    const greeting = `Hi ${firstName}! I'm Starky ★\n\nI'm your personal tutor for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}.\n\nWhat would you like to work on today? Ask me anything — homework help, exam prep, or a concept you want to understand better.`;
     setMessages([{ role: 'assistant', content: greeting }]);
     if (voiceSupported) setTimeout(() => speakText(greeting), 500);
     setTimeout(() => inputRef.current?.focus(), 150);
@@ -500,7 +500,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
       </div>
 
       <section className="hero">
-        <div className="hb">★ AI Tutor — KG to A Levels</div>
+        <div className="hb">★ Starky — KG to A Levels</div>
         <h1>Every Child Deserves a <em>World-Class</em> Tutor</h1>
         <button onClick={()=>document.getElementById('oa-level')?.scrollIntoView({behavior:'smooth'})} style={{display:'inline-flex',alignItems:'center',gap:'8px',background:'rgba(167,139,250,0.12)',border:'2px solid rgba(167,139,250,0.5)',borderRadius:'50px',padding:'10px 22px',margin:'0 0 14px',cursor:'pointer',fontFamily:"'Sora',sans-serif",fontWeight:'700',fontSize:'clamp(12px,1.4vw,14px)',color:'#A78BFA',transition:'all 0.2s'}} onMouseEnter={e=>{e.currentTarget.style.background='rgba(167,139,250,0.22)';e.currentTarget.style.transform='translateY(-2px)';}} onMouseLeave={e=>{e.currentTarget.style.background='rgba(167,139,250,0.12)';e.currentTarget.style.transform='translateY(0)';}}>
           <span>📚</span> O Level &amp; A Level — see how Starky gets you to A* <span style={{opacity:0.6}}>↓</span>

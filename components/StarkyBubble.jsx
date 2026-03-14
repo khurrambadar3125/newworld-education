@@ -62,7 +62,7 @@ export default function StarkyBubble() {
       const greeting = continuation || (
         firstName
           ? `Hi ${firstName}! I'm Starky ★ — ask me anything about any subject, grade or topic. I'm here to help!`
-          : `Hi! I'm Starky ★ — your personal AI tutor. Ask me anything — any subject, any grade!`
+          : `Hi! I'm Starky ★ — your personal tutor. Ask me anything — any subject, any grade!`
       );
       setMessages([{ role: 'assistant', content: greeting }]);
       if (voiceSupported) setTimeout(() => speakText(greeting), 400);
