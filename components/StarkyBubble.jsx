@@ -37,7 +37,13 @@ export default function StarkyBubble() {
       if (s) setUserProfile(JSON.parse(s));
     } catch {}
     const t = setTimeout(() => setPulse(false), 6000);
-    return () => clearTimeout(t);
+    // Listen for scan event from homepage
+    const onScan = () => {
+      setOpen(true); setFullscreen(true); setPulse(false);
+      setTimeout(() => { if (cameraInputRef.current) cameraInputRef.current.click(); }, 400);
+    };
+    window.addEventListener('starky-scan', onScan);
+    return () => { clearTimeout(t); window.removeEventListener('starky-scan', onScan); };
   }, []);
 
   useEffect(() => {

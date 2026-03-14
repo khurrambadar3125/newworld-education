@@ -508,6 +508,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
         <div className="hc">
           <a href="#start-learning" className="bp">Start Learning →</a>
           <a href="/special-needs" className="bo">💜 Special Needs</a>
+          <button className="bo" onClick={() => { window.dispatchEvent(new CustomEvent('starky-scan')); }} style={{background:'rgba(167,139,250,0.12)',border:'2px solid rgba(167,139,250,0.4)',color:'#A78BFA'}}>📷 Scan & Learn</button>
         </div>
         <div className="pr">
           <div className="pi"><div className="pn">16</div><div className="pl">Languages</div></div>
