@@ -476,6 +476,9 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
             <a href="/arts" className="nl">🎨 Learn Arts</a>
             <a href="/music" className="nl">🎵 Learn Music</a>
             <a href="/reading" className="nl">📚 Lets READ</a>
+          <a href="/homework">🏠 Homework Help</a>
+          <a href="/subscribe">📬 Daily Questions</a>
+          <a href="/leaderboard">🏆 Leaderboard</a>
           </div>
       )}
 
