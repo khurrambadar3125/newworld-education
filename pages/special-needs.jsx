@@ -399,7 +399,7 @@ function SENDrillWidget({ condition, stage, subject }) {
       {!subject && (
         <div style={{display:"flex",flexWrap:"wrap",gap:8,justifyContent:"center",marginBottom:16}}>
           {senSubjects.map(s => (
-            <button key={s} onClick={() => setChosenSubject(s)} style={{background:chosenSubject===s?"rgba(167,139,250,0.2)":"rgba(255,255,255,0.05)",border:`2px solid ${chosenSubject===s?"rgba(167,139,250,0.6)":"rgba(255,255,255,0.1)"}`,borderRadius:100,padding:"8px 18px",color:chosenSubject===s?"#A78BFA":"rgba(255,255,255,0.6)",fontWeight:700,fontSize:13,cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>
+            <button key={s} onClick={() => setChosenSubject(s)} style={{background:chosenSubject===s?"rgba(167,139,250,0.2)":"rgba(255,255,255,0.05)",border:`2px solid ${chosenSubject===s?"rgba(167,139,250,0.6)":"rgba(255,255,255,0.1)"}`,borderRadius:14,padding:"12px 20px",color:chosenSubject===s?"#A78BFA":"rgba(255,255,255,0.6)",fontWeight:700,fontSize:13,cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>
               {s}
             </button>
           ))}
@@ -1044,7 +1044,15 @@ ${focus.id !== "parent" ? `\n*For the adult:* Tell me your child's name if you'd
           </p>
         </div>
 
-        <SENDrillWidget condition={condition} stage={stage} subject={subject} />
+        {condition ? (
+          <SENDrillWidget condition={condition} stage={stage} subject={subject} />
+        ) : (
+          <div style={{background:"rgba(167,139,250,0.06)",border:"2px dashed rgba(167,139,250,0.2)",borderRadius:20,padding:"28px 24px",textAlign:"center"}}>
+            <div style={{fontSize:40,marginBottom:12}}>💜</div>
+            <div style={{fontWeight:800,fontSize:16,marginBottom:8,fontFamily:"'Nunito',sans-serif",color:"rgba(255,255,255,0.8)"}}>Select your child's condition above</div>
+            <div style={{fontSize:13,color:"rgba(255,255,255,0.4)",lineHeight:1.7}}>Once you tell Starky about your child, the Practice Zone will open — adapted specially for them.</div>
+          </div>
+        )}
       </div>
 
     </div>
