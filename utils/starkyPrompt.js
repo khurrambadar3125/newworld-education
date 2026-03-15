@@ -538,7 +538,9 @@ function buildMistakeContext(mistakes, level) {
  *
  * @returns {{ escalation: object|null, systemPrompt: string, messages: array }}
  */
-export function buildMessages({ userProfile = {}, sessionMemory = {}, userMessage, imageBase64, imageMediaType }) {
+export function buildMessages({ userProfile: rawProfile, sessionMemory: rawMemory, userMessage, imageBase64, imageMediaType }) {
+  const userProfile = rawProfile || {};
+  const sessionMemory = rawMemory || {};
   // 1. Detect intent
   const { intent, confidence, signals } = detectIntent(userMessage, userProfile);
 

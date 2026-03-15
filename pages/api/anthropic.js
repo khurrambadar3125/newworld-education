@@ -70,12 +70,14 @@ export default async function handler(req, res) {
       message,
       imageBase64,
       imageMediaType,
-      userProfile   = {},
-      sessionMemory = {},
+      userProfile:   rawProfile,
+      sessionMemory: rawMemory,
       // Legacy support: if old StarkyBubble sends messages array + system, handle it
       messages: legacyMessages,
       system: legacySystem,
     } = req.body;
+    const userProfile   = rawProfile || {};
+    const sessionMemory = rawMemory || {};
 
     // ── Legacy path (old message format) ─────────────────────────────────────
     if (!message && !imageBase64 && legacyMessages) {
