@@ -298,7 +298,41 @@ WORKED SOLUTIONS FORMAT:
 3. State which step earns which mark
 4. Add an examiner tip at the end
 
-PDF PAPERS: If a student uploads a PDF, read ALL questions and ask which to work through (or work through all if asked).
+PDF PAST PAPER WORKFLOW — THIS IS YOUR PRIMARY MODE:
+When a student uploads a PDF past paper, follow this EXACT workflow:
+
+STEP 1 — FULL PAPER OVERVIEW:
+Read the ENTIRE paper. Then present a structured summary:
+- Paper title, subject, component, year/session if visible
+- Total marks and time allowed
+- Number of questions and sections
+- A numbered list of EVERY question with: question number, topic, marks, command word
+Example: "Q1(a) — Atomic structure — [2 marks] — State..."
+
+STEP 2 — ASK THE STUDENT:
+After listing all questions, ask: "Which question would you like to work through first? Or say 'all' and I'll take you through the whole paper."
+
+STEP 3 — QUESTION-BY-QUESTION WALKTHROUGH:
+For each question the student picks:
+1. Restate the question clearly
+2. Identify the command word and what it demands
+3. Walk through the solution step by step
+4. Show mark allocation: which step earns which mark
+5. Highlight common mistakes Cambridge students make on this question
+6. Give the model answer as Cambridge mark scheme would state it
+7. After finishing, ask: "Ready for the next question?" and suggest which one
+
+STEP 4 — IF STUDENT ANSWERS THEMSELVES:
+If the student attempts an answer instead of asking for the solution:
+1. Mark it against Cambridge criteria
+2. Award marks with explanation for each
+3. Show what was missing for full marks
+4. Give the model answer
+5. Move to next question
+
+IMPORTANT: You have the FULL paper in your context. The student can ask about ANY question
+at ANY time — "What's Q3b about?", "Help me with question 5", "Skip to the last question".
+Always reference the actual questions from the paper, never make up questions.
 
 STUDY PLANS: When given an exam date and days remaining, produce a detailed week-by-week or day-by-day plan. Include: topic schedule, past paper practice days, revision days, and rest before exam. Format clearly.
 
@@ -315,7 +349,7 @@ function promptTiles(subject) {
     { emoji:"❓", label:"Why is my answer wrong?",    prompt:`My answer was: [paste]. The mark scheme says: [paste]. Explain exactly where I went wrong and what I should have written.` },
     { emoji:"💡", label:"Explain this concept",       prompt:`Please explain [topic] from Cambridge ${subject?.name||"syllabus"} from scratch with a worked example.` },
     { emoji:"🎯", label:"Command word coaching",      prompt:`Teach me the exact difference between "state", "describe", "explain", "analyse", "evaluate" in Cambridge ${subject?.name||"exams"} with examples.` },
-    { emoji:"📄", label:"I uploaded a PDF paper",     prompt:`I've uploaded a past paper PDF. Please read all the questions, then tell me which ones you can see, and ask which I'd like to work through.` },
+    { emoji:"📄", label:"Work through full paper",    prompt:`Let's work through every question in the paper one by one. Start with Question 1 and after each answer, move to the next.` },
   ];
 }
 
@@ -521,8 +555,9 @@ export default function PastPapersPage() {
   const [showUpgrade, setShowUpgrade] = useState(false);
 
   // PDF state
-  const [pdfData,    setPdfData]    = useState(null);   // { base64, name }
+  const [pdfData,    setPdfData]    = useState(null);   // { base64, name } — pending upload (not yet sent)
   const [pdfLoading, setPdfLoading] = useState(false);
+  const activePdfRef = useRef(null);                     // persisted PDF — stays for follow-up questions
   const fileInputRef = useRef(null);
   const chatEndRef   = useRef(null);
 
@@ -542,7 +577,13 @@ export default function PastPapersPage() {
     if (file.size > 10*1024*1024) { alert("PDF must be under 10MB. Try a smaller file or paste the question text instead."); return; }
     setPdfLoading(true);
     const reader = new FileReader();
-    reader.onload = (e) => { setPdfData({ base64: e.target.result.split(",")[1], name: file.name }); setPdfLoading(false); };
+    reader.onload = (e) => {
+      const data = { base64: e.target.result.split(",")[1], name: file.name };
+      setPdfLoading(false);
+      // Auto-send: immediately trigger paper analysis when PDF is uploaded
+      // Pass PDF data directly to avoid state race condition
+      sendMessage("", data);
+    };
     reader.onerror = () => { setPdfLoading(false); alert("Could not read file — try again."); };
     reader.readAsDataURL(file);
   };
@@ -558,9 +599,10 @@ export default function PastPapersPage() {
   };
 
   // ── SEND MESSAGE ──────────────────────────────────────────────────────────
-  const sendMessage = async (text) => {
+  const sendMessage = async (text, pdfOverride) => {
     const txt = (text||input).trim();
-    if ((!txt && !pdfData) || loading) return;
+    const effectivePdf = pdfOverride || pdfData;
+    if ((!txt && !effectivePdf) || loading) return;
     if (limitReached) { setShowUpgrade(true); return; }
     recordCall();
 
@@ -568,35 +610,54 @@ export default function PastPapersPage() {
     const newProg = recordSubjectSession(subject?.id, null);
     setProgress(newProg);
 
-    const msgText = txt || "(Please read the uploaded PDF and list all questions you can see)";
+    // If new PDF is being uploaded, persist it for all follow-up messages
+    const isNewPdfUpload = !!effectivePdf;
+    if (isNewPdfUpload) {
+      activePdfRef.current = effectivePdf;
+    }
+
+    const msgText = txt || (isNewPdfUpload
+      ? "I've uploaded a past paper PDF. Please read the ENTIRE paper, list every question with its topic, marks, and command word, then ask me which question I'd like to work through first."
+      : "Please continue.");
     setInput("");
     setLoading(true);
 
     // Build user message for display
-    const displayMsg = { role:"user", content: pdfData?`📄 [${pdfData.name}] ${msgText}`:msgText };
+    const displayMsg = { role:"user", content: isNewPdfUpload?`📄 [${effectivePdf.name}] ${msgText}`:msgText };
     const prevMessages = [...messages, displayMsg];
     setMessages(prevMessages);
 
-    // Build API messages — last message may include PDF
-    const apiMessages = prevMessages.map((m, i) => {
-      if (i === prevMessages.length-1 && pdfData) {
+    // Build API messages — include PDF in the FIRST user message only (stays in context window)
+    // Repeating it in every message would make requests too large
+    const pdf = activePdfRef.current;
+    let pdfIncluded = false;
+    const apiMessages = prevMessages.map((m) => {
+      if (m.role === "user" && pdf && !pdfIncluded) {
+        pdfIncluded = true;
+        const textContent = typeof m.content === "string" ? m.content : msgText;
         return {
           role:"user",
           content:[
-            { type:"document", source:{ type:"base64", media_type:"application/pdf", data:pdfData.base64 } },
-            { type:"text", text:msgText },
+            { type:"document", source:{ type:"base64", media_type:"application/pdf", data:pdf.base64 } },
+            { type:"text", text:textContent },
           ],
         };
       }
       return { role:m.role, content:typeof m.content==="string"?m.content:msgText };
     });
 
-    clearPdf();
+    // Clear the pending upload indicator (but keep activePdfRef for follow-ups)
+    if (isNewPdfUpload) clearPdf();
 
     try {
+      // Use Sonnet for PDF uploads (better document understanding), Haiku for text-only
+      const hasPdf = apiMessages.some(m => Array.isArray(m.content) && m.content.some(c => c.type === "document"));
+      const model = hasPdf ? "claude-sonnet-4-20250514" : "claude-haiku-4-5-20251001";
+      const tokens = hasPdf ? 4096 : 1500;
+
       const res  = await fetch("/api/chat",{
         method:"POST", headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({ model:"claude-haiku-4-5-20251001", max_tokens:1500, system:buildSystemPrompt(level,subject), messages:apiMessages }),
+        body:JSON.stringify({ model, max_tokens:tokens, system:buildSystemPrompt(level,subject), messages:apiMessages }),
       });
       const data = await res.json();
       const reply = data.content?.[0]?.text || "Something went wrong — try again!";
@@ -758,7 +819,7 @@ export default function PastPapersPage() {
           <button onClick={()=>setShowStudyPlan(true)} style={{ ...S.btn, background:`${subject.color}18`, border:`1px solid ${subject.color}45`, borderRadius:10, padding:"6px 12px", color:subject.color, fontSize:12, fontWeight:800 }}>
             📅 Study Plan
           </button>
-          <button onClick={()=>{setSubject(null);setMessages([]);clearPdf();}} style={{ ...S.btn, background:"rgba(255,255,255,0.05)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:10, padding:"6px 12px", color:"rgba(255,255,255,0.5)", fontSize:11, fontWeight:700 }}>
+          <button onClick={()=>{setSubject(null);setMessages([]);clearPdf();activePdfRef.current=null;}} style={{ ...S.btn, background:"rgba(255,255,255,0.05)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:10, padding:"6px 12px", color:"rgba(255,255,255,0.5)", fontSize:11, fontWeight:700 }}>
             ← Subjects
           </button>
         </div>
@@ -862,14 +923,24 @@ export default function PastPapersPage() {
             </button>
           </div>
 
-          {/* PDF attached badge */}
+          {/* PDF attached badge — pending upload */}
           {pdfData&&(
             <div style={{ background:"rgba(199,125,255,0.1)", border:"1px solid rgba(199,125,255,0.35)", borderRadius:14, padding:"12px 16px", display:"flex", alignItems:"center", justifyContent:"space-between" }}>
               <div>
-                <div style={{ fontSize:13, fontWeight:800, color:"#C77DFF" }}>📄 PDF attached: {pdfData.name}</div>
-                <div style={{ fontSize:11, color:"rgba(255,255,255,0.4)", marginTop:2 }}>Starky will read this paper when you send your next message</div>
+                <div style={{ fontSize:13, fontWeight:800, color:"#C77DFF" }}>📄 Reading: {pdfData.name}...</div>
+                <div style={{ fontSize:11, color:"rgba(255,255,255,0.4)", marginTop:2 }}>Starky is analysing your past paper</div>
               </div>
-              <button onClick={clearPdf} style={{ ...S.btn, background:"rgba(255,255,255,0.08)", borderRadius:"50%", width:28, height:28, color:"rgba(255,255,255,0.5)", fontSize:14 }}>✕</button>
+            </div>
+          )}
+
+          {/* Active paper badge — persists for follow-up questions */}
+          {!pdfData && activePdfRef.current && (
+            <div style={{ background:"rgba(74,222,128,0.08)", border:"1px solid rgba(74,222,128,0.25)", borderRadius:14, padding:"10px 16px", display:"flex", alignItems:"center", justifyContent:"space-between" }}>
+              <div>
+                <div style={{ fontSize:12, fontWeight:800, color:"#4ADE80" }}>📄 Active paper: {activePdfRef.current.name}</div>
+                <div style={{ fontSize:11, color:"rgba(255,255,255,0.35)", marginTop:2 }}>Ask about any question — Starky has the full paper loaded</div>
+              </div>
+              <button onClick={()=>{activePdfRef.current=null;setMessages(m=>[...m]);}} style={{ ...S.btn, background:"rgba(255,255,255,0.08)", borderRadius:"50%", width:28, height:28, color:"rgba(255,255,255,0.5)", fontSize:14 }}>✕</button>
             </div>
           )}
 

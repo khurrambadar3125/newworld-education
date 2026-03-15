@@ -6,14 +6,23 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
+    // Check if request contains PDF documents to enable PDF support
+    const body = req.body;
+    const hasPdf = JSON.stringify(body.messages || []).includes('"type":"document"');
+
+    const headers: Record<string, string> = {
+      "Content-Type": "application/json",
+      "x-api-key": process.env.ANTHROPIC_API_KEY || "",
+      "anthropic-version": "2023-06-01",
+    };
+    if (hasPdf) {
+      headers["anthropic-beta"] = "pdfs-2024-09-25";
+    }
+
     const response = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-api-key": process.env.ANTHROPIC_API_KEY || "",
-        "anthropic-version": "2023-06-01",
-      },
-      body: JSON.stringify(req.body),
+      headers,
+      body: JSON.stringify(body),
     });
 
     const data = await response.json();
