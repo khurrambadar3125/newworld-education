@@ -123,87 +123,69 @@ export default function StarkyBubble() {
 
   const pendingImageRef = useRef(null);
 
-  // Compress image to max 1200px and JPEG quality 0.7 — phone cameras are 5-10MB otherwise
-  const compressImage = (file) => {
-    return new Promise((resolve) => {
-      // Fallback: read as base64 directly (used if canvas compression fails)
-      const sendOriginal = () => {
-        const reader = new FileReader();
-        reader.onload = (ev) => {
-          const b64 = ev.target.result.split(',')[1];
-          // Force media type to jpeg/png/webp — Anthropic rejects HEIC and others
-          let type = file.type;
-          if (!['image/jpeg','image/png','image/gif','image/webp'].includes(type)) type = 'image/jpeg';
-          resolve({ base64: b64, type, name: file.name });
-        };
-        reader.onerror = () => resolve(null);
-        reader.readAsDataURL(file);
-      };
-
-      // Try canvas compression (converts any format to JPEG, resizes)
-      try {
-        const img = new Image();
-        img.onload = () => {
-          try {
-            const MAX = 1200;
-            let w = img.width, h = img.height;
-            if (w > MAX || h > MAX) {
-              if (w > h) { h = Math.round(h * MAX / w); w = MAX; }
-              else { w = Math.round(w * MAX / h); h = MAX; }
-            }
-            const canvas = document.createElement('canvas');
-            canvas.width = w; canvas.height = h;
-            const ctx = canvas.getContext('2d');
-            ctx.drawImage(img, 0, 0, w, h);
-            const dataUrl = canvas.toDataURL('image/jpeg', 0.7);
-            const b64 = dataUrl.split(',')[1];
-            // Verify the base64 is valid (not empty)
-            if (b64 && b64.length > 100) {
-              URL.revokeObjectURL(img.src);
-              resolve({ base64: b64, type: 'image/jpeg', name: file.name.replace(/\.\w+$/, '.jpg') });
-            } else {
-              URL.revokeObjectURL(img.src);
-              sendOriginal();
-            }
-          } catch { sendOriginal(); }
-        };
-        img.onerror = () => { URL.revokeObjectURL(img.src); sendOriginal(); };
-        img.src = URL.createObjectURL(file);
-      } catch { sendOriginal(); }
-    });
+  // Simple, bulletproof image reader — no canvas, no Image(), no createObjectURL
+  // These APIs break on iOS Safari when returning from camera UI
+  const readImageFile = (file, callback) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const b64 = reader.result.split(',')[1];
+      if (!b64 || b64.length < 50) { callback(null); return; }
+      // Force valid media type — iOS HEIC gets rejected by Anthropic
+      let type = file.type || 'image/jpeg';
+      if (!['image/jpeg','image/png','image/gif','image/webp'].includes(type)) type = 'image/jpeg';
+      callback({ base64: b64, type, name: file.name || 'photo.jpg' });
+    };
+    reader.onerror = () => callback(null);
+    reader.readAsDataURL(file);
   };
 
-  const handleImageFile = async (file, autoSend = false) => {
+  const handleImageFile = (file, autoSend) => {
     if (!file) return;
-    try {
-      const data = await compressImage(file);
+    // If file is over 4MB, try to compress via canvas first — otherwise read directly
+    if (file.size > 4 * 1024 * 1024) {
+      try {
+        const img = new Image();
+        const url = URL.createObjectURL(file);
+        img.onload = () => {
+          try {
+            const MAX = 1000;
+            let w = img.width, h = img.height;
+            if (w > h) { h = Math.round(h * MAX / w); w = MAX; } else { w = Math.round(w * MAX / h); h = MAX; }
+            const c = document.createElement('canvas'); c.width = w; c.height = h;
+            c.getContext('2d').drawImage(img, 0, 0, w, h);
+            const b64 = c.toDataURL('image/jpeg', 0.6).split(',')[1];
+            URL.revokeObjectURL(url);
+            if (b64 && b64.length > 100) {
+              const data = { base64: b64, type: 'image/jpeg', name: 'photo.jpg' };
+              setImageData(data);
+              if (autoSend) { pendingImageRef.current = data; setTimeout(() => sendWithImage(data), 400); }
+            } else {
+              // Canvas failed — read raw anyway (API will handle size error gracefully)
+              readImageFile(file, (data) => {
+                if (!data) return;
+                setImageData(data);
+                if (autoSend) { pendingImageRef.current = data; setTimeout(() => sendWithImage(data), 400); }
+              });
+            }
+          } catch { URL.revokeObjectURL(url); readImageFile(file, (d) => { if(d){setImageData(d);if(autoSend){pendingImageRef.current=d;setTimeout(()=>sendWithImage(d),400);}} }); }
+        };
+        img.onerror = () => { URL.revokeObjectURL(url); readImageFile(file, (d) => { if(d){setImageData(d);if(autoSend){pendingImageRef.current=d;setTimeout(()=>sendWithImage(d),400);}} }); };
+        img.src = url;
+        return;
+      } catch { /* fall through to direct read */ }
+    }
+    readImageFile(file, (data) => {
       if (!data) { alert('Could not read that image. Please try again.'); return; }
       setImageData(data);
       if (autoSend) {
         pendingImageRef.current = data;
-        // Delay to ensure React state has settled after camera UI closes on iOS
-        setTimeout(() => sendWithImage(data), 300);
+        setTimeout(() => sendWithImage(data), 400);
       }
-    } catch (err) {
-      console.error('[StarkyBubble] Image processing failed:', err);
-      // Last resort fallback: read raw file without compression
-      try {
-        const reader = new FileReader();
-        reader.onload = (ev) => {
-          const raw = { base64: ev.target.result.split(',')[1], type: 'image/jpeg', name: file.name };
-          setImageData(raw);
-          if (autoSend) {
-            pendingImageRef.current = raw;
-            setTimeout(() => sendWithImage(raw), 300);
-          }
-        };
-        reader.readAsDataURL(file);
-      } catch { alert('Could not read that image. Please try again.'); }
-    }
+    });
   };
 
-  const handleImageSelect = (e) => { const f = e.target.files?.[0]; if (f) handleImageFile(f, false); };  // gallery = manual send
-  const handleCameraSelect = (e) => { const f = e.target.files?.[0]; if (f) handleImageFile(f, true); };  // camera = auto-send
+  const handleImageSelect = (e) => { const f = e.target.files?.[0]; if (f) handleImageFile(f, false); };
+  const handleCameraSelect = (e) => { const f = e.target.files?.[0]; if (f) handleImageFile(f, true); };
   const clearImage = () => {
     setImageData(null);
     if (fileInputRef.current) fileInputRef.current.value = '';
