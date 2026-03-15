@@ -186,7 +186,12 @@ export default function DrillPage() {
     setLoading(true); setError(''); setFeedback(null);
     setSelectedOption(''); setStructuredAns(''); setHint(null); setTimedOut(false);
 
-    const t = targetTopic || topic;
+    let t = targetTopic || topic;
+    // "All Topics" mode: pick a random topic each question for variety
+    if (t === '__ALL__') {
+      const allTopics = getTopics(subject);
+      t = allTopics[Math.floor(Math.random() * allTopics.length)];
+    }
     let type = questionType;
     if (type === 'mixed') type = questionNum % 2 === 0 ? 'mcq' : 'structured';
 
@@ -406,8 +411,11 @@ export default function DrillPage() {
           {/* Topic */}
           {subject && (
             <div style={S.card}>
-              <span style={S.label}>Topic</span>
+              <span style={S.label}>Topic {topic === '__ALL__' ? '(All topics — mixed drill)' : ''}</span>
               <div style={{display:'grid', gridTemplateColumns:'1fr', gap:6}}>
+                <button style={{...S.optionBtn(topic==='__ALL__'), background:topic==='__ALL__'?'rgba(168,224,99,.15)':'rgba(255,255,255,.06)', borderColor:topic==='__ALL__'?'rgba(168,224,99,.5)':'rgba(255,255,255,.1)', color:topic==='__ALL__'?'#A8E063':'rgba(255,255,255,.65)', fontWeight:700}} onClick={() => { setTopic('__ALL__'); setTimeout(() => startRef.current?.scrollIntoView({behavior:'smooth',block:'start'}), 150); }}>
+                  🎯 All Topics — Mixed Drill
+                </button>
                 {dueTopics.map(t => (
                   <button key={t} style={S.optionBtn(topic===t)} onClick={() => { setTopic(t); setTimeout(() => startRef.current?.scrollIntoView({behavior:'smooth',block:'start'}), 150); }}>
                     {t}<span style={S.badge('#FCD34D')}>due</span>

@@ -40,17 +40,19 @@ function buildGeneratePrompt({ level, subject, topic, difficulty, questionType, 
   const diffDesc = DIFFICULTY_MAP[difficulty] || DIFFICULTY_MAP.medium;
 
   if (imageBase64) {
+    const imgRandomPos = ['A','B','C','D'][Math.floor(Math.random() * 4)];
     return `Look at this past paper question image. Extract the question exactly and create a drill question from it.
-Generate a ${questionType === 'mcq' ? 'multiple choice question with 4 options (A,B,C,D)' : 'short answer question'} based on what you see.
+Generate a ${questionType === 'mcq' ? `multiple choice question with 4 options (A,B,C,D). Place the correct answer at position ${imgRandomPos}` : 'short answer question'} based on what you see.
 Subject context: ${subject || 'unknown'} · Level: ${level}
 
 Return this JSON:
-${questionType === 'mcq' ? `{"question":"extracted/adapted question text","type":"mcq","options":{"A":"...","B":"...","C":"...","D":"..."},"correctOption":"A","topic":"${topic||'From paper'}","difficulty":"${difficulty}","marks":1,"markSchemeHint":"why correct answer is correct"}` : `{"question":"extracted/adapted question text","type":"structured","topic":"${topic||'From paper'}","difficulty":"${difficulty}","marks":3,"markSchemeHint":"key marking points"}`}`;
+${questionType === 'mcq' ? `{"question":"extracted/adapted question text","type":"mcq","options":{"A":"...","B":"...","C":"...","D":"..."},"correctOption":"${imgRandomPos}","topic":"${topic||'From paper'}","difficulty":"${difficulty}","marks":1,"markSchemeHint":"why correct answer is correct"}` : `{"question":"extracted/adapted question text","type":"structured","topic":"${topic||'From paper'}","difficulty":"${difficulty}","marks":3,"markSchemeHint":"key marking points"}`}`;
   }
 
   if (young) {
+    const youngRandomPos = ['A','B','C','D'][Math.floor(Math.random() * 4)];
     const typeInstr = questionType === 'mcq'
-      ? 'Make a FUN multiple choice question with 4 options (A,B,C,D). Use simple, friendly language. One answer is clearly correct.'
+      ? `Make a FUN multiple choice question with 4 options (A,B,C,D). Use simple, friendly language. One answer is clearly correct. IMPORTANT: Place the correct answer at position ${youngRandomPos}.`
       : 'Make a short, simple question. Use friendly language a child can understand easily.';
 
     return `Create a ${level} level question about "${topic}" in ${subject}.
@@ -59,12 +61,13 @@ Make it fun and encouraging! Age-appropriate for ${level} students.
 
 Return this JSON:
 ${questionType === 'mcq'
-  ? `{"question":"fun friendly question text","type":"mcq","options":{"A":"option 1","B":"option 2","C":"option 3","D":"option 4"},"correctOption":"A","topic":"${topic}","difficulty":"${difficulty}","marks":1,"markSchemeHint":"why correct"}`
+  ? `{"question":"fun friendly question text","type":"mcq","options":{"A":"option 1","B":"option 2","C":"option 3","D":"option 4"},"correctOption":"${youngRandomPos}","topic":"${topic}","difficulty":"${difficulty}","marks":1,"markSchemeHint":"why correct"}`
   : `{"question":"simple friendly question","type":"structured","topic":"${topic}","difficulty":"${difficulty}","marks":2,"markSchemeHint":"key points to award marks"}`}`;
   }
 
+  const randomPos = ['A','B','C','D'][Math.floor(Math.random() * 4)];
   const typeInstr = questionType === 'mcq'
-    ? 'Generate a MULTIPLE CHOICE question with exactly 4 options (A,B,C,D). Only one is correct. Distractors should be common misconceptions.'
+    ? `Generate a MULTIPLE CHOICE question with exactly 4 options (A,B,C,D). Only one is correct. Distractors should be common misconceptions. IMPORTANT: Place the correct answer at position ${randomPos} — do NOT always put it at A.`
     : 'Generate a SHORT ANSWER question requiring 2-4 sentences.';
 
   return `Generate a Cambridge ${level} ${subject} exam question on: "${topic}".
@@ -73,7 +76,7 @@ ${typeInstr}
 
 Return this JSON:
 ${questionType === 'mcq'
-  ? `{"question":"full question text","type":"mcq","options":{"A":"...","B":"...","C":"...","D":"..."},"correctOption":"A","topic":"${topic}","difficulty":"${difficulty}","marks":1,"markSchemeHint":"why correct answer is correct"}`
+  ? `{"question":"full question text","type":"mcq","options":{"A":"...","B":"...","C":"...","D":"..."},"correctOption":"${randomPos}","topic":"${topic}","difficulty":"${difficulty}","marks":1,"markSchemeHint":"why correct answer is correct"}`
   : `{"question":"full question text","type":"structured","topic":"${topic}","difficulty":"${difficulty}","marks":3,"markSchemeHint":"key marking points for full marks"}`}`;
 }
 
