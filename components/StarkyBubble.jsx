@@ -80,13 +80,12 @@ export default function StarkyBubble() {
         // Returning student but no specific memory
         greeting = getContinuationGreeting(firstName) || `Welcome back ${name}! ★ Great to see you again. What are we studying today?`;
       } else {
-        // First time or guest
+        // First time or guest — explain what Starky is
         greeting = firstName
-          ? `Hi ${firstName}! I'm Starky ★ — ask me anything about any subject, grade or topic. I'm here to help!`
-          : `Hi! I'm Starky ★ — your personal tutor. Ask me anything — any subject, any grade!`;
+          ? `Hi ${firstName}! I'm Starky ★ — your personal tutor.\n\nI've studied every Cambridge O Level and A Level past paper from 1994 to 2024. I teach step by step, just like a private tutor sitting next to you.\n\nAsk me anything — homework, exam prep, or any concept you want to understand. You can also send me a photo of your notes or questions!\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰`
+          : `Hi! I'm Starky ★ — your personal tutor.\n\nI've studied every Cambridge past paper from 1994 to 2024. I teach step by step — like a private tutor, but available 24/7.\n\nPick any subject and ask me anything. You can also photograph your homework!\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰`;
       }
       setMessages([{ role: 'assistant', content: greeting }]);
-      if (voiceSupported) setTimeout(() => speakText(greeting), 400);
     }
     if (open) setTimeout(() => inputRef.current?.focus(), 200);
   }, [open]);
@@ -622,7 +621,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
         {!fullscreen && (
           <button
             className={`starky-fab ${pulse && !open ? 'pulse' : ''}`}
-            onClick={() => { setOpen(o => !o); setFullscreen(true); setPulse(false); stopSpeaking(); }}
+            onClick={() => { setOpen(o => !o); setPulse(false); stopSpeaking(); }}
             aria-label="Chat with Starky"
           >
             {open ? '✕' : '★'}

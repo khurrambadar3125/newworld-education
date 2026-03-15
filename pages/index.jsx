@@ -126,7 +126,7 @@ export default function Home() {
 
   const handleStartChat = () => {
     if (!selectedGrade) return;
-    if (!userProfile) { setShowRegModal(true); return; }
+    // Let users try Starky WITHOUT registration first — show reg after 2 messages
     launchChat();
   };
 
@@ -147,13 +147,15 @@ export default function Home() {
     setChatStarted(true);
     const greeting = `Hi ${firstName}! I'm Starky ★\n\nI'm your personal tutor for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}.\n\nWhat would you like to work on today? Ask me anything — homework help, exam prep, or a concept you want to understand better.`;
     setMessages([{ role: 'assistant', content: greeting }]);
-    if (voiceSupported) setTimeout(() => speakText(greeting), 500);
     setTimeout(() => inputRef.current?.focus(), 150);
   };
 
   const sendMessage = async (override) => {
     const text = (override || input).trim();
     if (!text || loading || isLimitReached) return;
+    // After 2 free messages, prompt registration to save progress
+    const msgCount = messages.filter(m => m.role === 'user').length;
+    if (!userProfile && msgCount >= 2) { setShowRegModal(true); return; }
     const userMsg = { role: 'user', content: text };
     const newMsgs = [...messages, userMsg];
     setMessages(newMsgs);
@@ -511,7 +513,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
         <div className="hc">
           <a href="#start-learning" className="bp">Start Learning →</a>
           <a href="/special-needs" className="bo">💜 Special Needs</a>
-          <button className="bo" onClick={() => { window.dispatchEvent(new CustomEvent('starky-scan')); }} style={{background:'rgba(167,139,250,0.12)',border:'2px solid rgba(167,139,250,0.4)',color:'#A78BFA'}}>📷 Scan & Learn</button>
+          <button className="bo" onClick={() => { window.dispatchEvent(new CustomEvent('starky-scan')); }} style={{background:'rgba(167,139,250,0.12)',border:'2px solid rgba(167,139,250,0.4)',color:'#A78BFA'}}>📷 Photo Your Homework — Starky Reads It</button>
         </div>
         <div className="pr">
           <div className="pi"><div className="pn">16</div><div className="pl">Languages</div></div>
@@ -611,10 +613,61 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
         </div>
       </section>
 
+      {/* How it works — for parents who don't know what an AI tutor is */}
+      <section className="sec" style={{background:'rgba(79,142,247,0.04)',borderTop:'1px solid rgba(79,142,247,0.1)',borderBottom:'1px solid rgba(79,142,247,0.1)'}}>
+        <div className="sl">How Starky works</div>
+        <div className="st">3 Simple Steps</div>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(200px,1fr))',gap:16,maxWidth:700,margin:'0 auto'}}>
+          <div style={{textAlign:'center',padding:20}}>
+            <div style={{fontSize:40,marginBottom:8}}>1️⃣</div>
+            <div style={{fontWeight:800,fontSize:15,marginBottom:4}}>Pick grade & subject</div>
+            <div style={{fontSize:13,color:'rgba(255,255,255,0.5)',lineHeight:1.6}}>KG to A Level. Every Cambridge and Matric subject.</div>
+          </div>
+          <div style={{textAlign:'center',padding:20}}>
+            <div style={{fontSize:40,marginBottom:8}}>2️⃣</div>
+            <div style={{fontWeight:800,fontSize:15,marginBottom:4}}>Chat or photograph</div>
+            <div style={{fontSize:13,color:'rgba(255,255,255,0.5)',lineHeight:1.6}}>Type your question, send a photo of your homework, or ask Starky to quiz you.</div>
+          </div>
+          <div style={{textAlign:'center',padding:20}}>
+            <div style={{fontSize:40,marginBottom:8}}>3️⃣</div>
+            <div style={{fontWeight:800,fontSize:15,marginBottom:4}}>Learn step by step</div>
+            <div style={{fontSize:13,color:'rgba(255,255,255,0.5)',lineHeight:1.6}}>Starky guides you to the answer like a private tutor. Parents get a report after every session.</div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust comparison — why Starky vs human tutor */}
+      <section className="sec">
+        <div className="sl">Why parents choose Starky</div>
+        <div style={{maxWidth:560,margin:'0 auto',background:'rgba(255,255,255,0.03)',border:'1px solid rgba(255,255,255,0.07)',borderRadius:16,overflow:'hidden'}}>
+          <div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',borderBottom:'1px solid rgba(255,255,255,0.07)'}}>
+            <div style={{padding:'12px 8px',fontSize:11,fontWeight:700,color:'rgba(255,255,255,0.3)'}}></div>
+            <div style={{padding:'12px 8px',fontSize:11,fontWeight:700,color:'#4F8EF7',textAlign:'center'}}>Starky</div>
+            <div style={{padding:'12px 8px',fontSize:11,fontWeight:700,color:'rgba(255,255,255,0.4)',textAlign:'center'}}>Human Tutor</div>
+          </div>
+          {[
+            ['Available','24/7','3x per week'],
+            ['Subjects','All subjects','1-2 subjects'],
+            ['Cost/month','Rs 8,300','Rs 8,000-15,000 per subject'],
+            ['Past papers','30 years of papers','From memory'],
+            ['Parent reports','After every session','Rarely'],
+            ['Patience','Unlimited','Human'],
+          ].map(([label,starky,tutor],i) => (
+            <div key={i} style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',borderBottom:i<5?'1px solid rgba(255,255,255,0.04)':'none'}}>
+              <div style={{padding:'10px 8px',fontSize:12,fontWeight:600,color:'rgba(255,255,255,0.5)'}}>{label}</div>
+              <div style={{padding:'10px 8px',fontSize:12,fontWeight:700,color:'#4ADE80',textAlign:'center'}}>{starky}</div>
+              <div style={{padding:'10px 8px',fontSize:12,color:'rgba(255,255,255,0.35)',textAlign:'center'}}>{tutor}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="qs">
         <div className="sl">What parents say</div>
         <div className="qc"><div className="qst">★★★★★</div><p className="qt">"My daughter used to dread Maths. After two weeks with Starky she looks forward to it. The session reports are incredible — I finally know what she's learning."</p><div className="qa"><strong>Fatima A.</strong> — Parent, Karachi</div></div>
         <div className="qc"><div className="qst">★★★★★</div><p className="qt">"Starky knew exactly what the O Level examiner wants. My son went from C to B in Physics in one month. Absolutely worth it."</p><div className="qa"><strong>Omar R.</strong> — Parent, Dubai</div></div>
+        <div className="qc"><div className="qst">★★★★★</div><p className="qt">"میری بیٹی اب خود سے Starky سے پڑھتی ہے۔ پہلے ٹیوشن سے بھاگتی تھی۔ اب خود مانگتی ہے۔"</p><div className="qa"><strong>Nadia K.</strong> — والدہ، لاہور</div></div>
+        <div className="qc"><div className="qst">★★★★★</div><p className="qt">"I was skeptical about AI teaching my child. But the session reports showed me exactly what he learned. After one month, his teacher noticed the improvement."</p><div className="qa"><strong>Bilal S.</strong> — Parent, Islamabad</div></div>
       </section>
 
       <section className="sen">
