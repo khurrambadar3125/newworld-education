@@ -98,13 +98,23 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'No message or image provided' });
     }
 
+    // ── Validate image media type — iOS can send HEIC which Anthropic rejects ──
+    let validMediaType = imageMediaType;
+    if (imageBase64 && imageMediaType) {
+      const allowed = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
+      if (!allowed.includes(imageMediaType)) {
+        console.warn(`[STARKY API] Invalid media type "${imageMediaType}", defaulting to image/jpeg`);
+        validMediaType = 'image/jpeg';
+      }
+    }
+
     // ── Build messages using full prompt system ───────────────────────────────
     const built = buildMessages({
       userProfile,
       sessionMemory,
       userMessage: message || 'Please help me with this image.',
       imageBase64,
-      imageMediaType,
+      imageMediaType: validMediaType,
     });
 
     // ── Handle escalation — fire alert then return safe response ─────────────
@@ -147,6 +157,18 @@ export default async function handler(req, res) {
     // ── Normal Claude response ────────────────────────────────────────────────
     // Use more tokens for image responses (need room for deep analysis)
     const hasImage = built.messages.some(m => Array.isArray(m.content) && m.content.some(c => c.type === 'image'));
+
+    // Log request details for debugging
+    if (hasImage) {
+      const imgBlock = built.messages.flatMap(m => Array.isArray(m.content) ? m.content : []).find(c => c.type === 'image');
+      console.log('[STARKY API] Image request:', {
+        mediaType: imgBlock?.source?.media_type,
+        base64Length: imgBlock?.source?.data?.length,
+        systemPromptLength: built.systemPrompt?.length,
+        messageCount: built.messages.length,
+      });
+    }
+
     const response = await client.messages.create({
       model: 'claude-sonnet-4-20250514',
       max_tokens: hasImage ? 2048 : 1024,

@@ -126,38 +126,57 @@ export default function StarkyBubble() {
   // Compress image to max 1200px and JPEG quality 0.7 — phone cameras are 5-10MB otherwise
   const compressImage = (file) => {
     return new Promise((resolve) => {
-      const img = new Image();
-      img.onload = () => {
-        const MAX = 1200;
-        let w = img.width, h = img.height;
-        if (w > MAX || h > MAX) {
-          if (w > h) { h = Math.round(h * MAX / w); w = MAX; }
-          else { w = Math.round(w * MAX / h); h = MAX; }
-        }
-        const canvas = document.createElement('canvas');
-        canvas.width = w; canvas.height = h;
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(img, 0, 0, w, h);
-        const dataUrl = canvas.toDataURL('image/jpeg', 0.7);
-        resolve({
-          base64: dataUrl.split(',')[1],
-          type: 'image/jpeg',
-          name: file.name.replace(/\.\w+$/, '.jpg'),
-        });
-      };
-      img.onerror = () => {
-        // Fallback: send original if compression fails
+      // Fallback: read as base64 directly (used if canvas compression fails)
+      const sendOriginal = () => {
         const reader = new FileReader();
-        reader.onload = (ev) => resolve({ base64: ev.target.result.split(',')[1], type: file.type, name: file.name });
+        reader.onload = (ev) => {
+          const b64 = ev.target.result.split(',')[1];
+          // Force media type to jpeg/png/webp — Anthropic rejects HEIC and others
+          let type = file.type;
+          if (!['image/jpeg','image/png','image/gif','image/webp'].includes(type)) type = 'image/jpeg';
+          resolve({ base64: b64, type, name: file.name });
+        };
+        reader.onerror = () => resolve(null);
         reader.readAsDataURL(file);
       };
-      img.src = URL.createObjectURL(file);
+
+      // Try canvas compression (converts any format to JPEG, resizes)
+      try {
+        const img = new Image();
+        img.onload = () => {
+          try {
+            const MAX = 1200;
+            let w = img.width, h = img.height;
+            if (w > MAX || h > MAX) {
+              if (w > h) { h = Math.round(h * MAX / w); w = MAX; }
+              else { w = Math.round(w * MAX / h); h = MAX; }
+            }
+            const canvas = document.createElement('canvas');
+            canvas.width = w; canvas.height = h;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, w, h);
+            const dataUrl = canvas.toDataURL('image/jpeg', 0.7);
+            const b64 = dataUrl.split(',')[1];
+            // Verify the base64 is valid (not empty)
+            if (b64 && b64.length > 100) {
+              URL.revokeObjectURL(img.src);
+              resolve({ base64: b64, type: 'image/jpeg', name: file.name.replace(/\.\w+$/, '.jpg') });
+            } else {
+              URL.revokeObjectURL(img.src);
+              sendOriginal();
+            }
+          } catch { sendOriginal(); }
+        };
+        img.onerror = () => { URL.revokeObjectURL(img.src); sendOriginal(); };
+        img.src = URL.createObjectURL(file);
+      } catch { sendOriginal(); }
     });
   };
 
   const handleImageFile = async (file, autoSend = false) => {
     if (!file) return;
     const data = await compressImage(file);
+    if (!data) { alert('Could not read that image. Please try again.'); return; }
     setImageData(data);
     // Auto-send: camera captures should immediately trigger Starky to read the image
     if (autoSend) {
