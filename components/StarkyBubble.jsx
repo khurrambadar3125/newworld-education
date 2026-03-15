@@ -175,18 +175,35 @@ export default function StarkyBubble() {
 
   const handleImageFile = async (file, autoSend = false) => {
     if (!file) return;
-    const data = await compressImage(file);
-    if (!data) { alert('Could not read that image. Please try again.'); return; }
-    setImageData(data);
-    // Auto-send: camera captures should immediately trigger Starky to read the image
-    if (autoSend) {
-      pendingImageRef.current = data;
-      sendWithImage(data);
+    try {
+      const data = await compressImage(file);
+      if (!data) { alert('Could not read that image. Please try again.'); return; }
+      setImageData(data);
+      if (autoSend) {
+        pendingImageRef.current = data;
+        // Delay to ensure React state has settled after camera UI closes on iOS
+        setTimeout(() => sendWithImage(data), 300);
+      }
+    } catch (err) {
+      console.error('[StarkyBubble] Image processing failed:', err);
+      // Last resort fallback: read raw file without compression
+      try {
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+          const raw = { base64: ev.target.result.split(',')[1], type: 'image/jpeg', name: file.name };
+          setImageData(raw);
+          if (autoSend) {
+            pendingImageRef.current = raw;
+            setTimeout(() => sendWithImage(raw), 300);
+          }
+        };
+        reader.readAsDataURL(file);
+      } catch { alert('Could not read that image. Please try again.'); }
     }
   };
 
-  const handleImageSelect = (e) => handleImageFile(e.target.files?.[0], false);  // gallery = manual send
-  const handleCameraSelect = (e) => handleImageFile(e.target.files?.[0], true);  // camera = auto-send
+  const handleImageSelect = (e) => { const f = e.target.files?.[0]; if (f) handleImageFile(f, false); };  // gallery = manual send
+  const handleCameraSelect = (e) => { const f = e.target.files?.[0]; if (f) handleImageFile(f, true); };  // camera = auto-send
   const clearImage = () => {
     setImageData(null);
     if (fileInputRef.current) fileInputRef.current.value = '';
@@ -226,13 +243,23 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
         imageMediaType: img.type,
       };
 
+      const jsonBody = JSON.stringify(body);
+      console.log('[StarkyBubble] Sending image:', { size: Math.round(jsonBody.length / 1024) + 'KB', type: img.type, b64Len: img.base64?.length });
+
       const res = await fetch('/api/anthropic', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body),
+        body: jsonBody,
       });
 
-      const data = await res.json();
+      let data;
+      try { data = await res.json(); } catch { data = {}; }
+
+      if (!res.ok) {
+        console.error('[StarkyBubble] API error:', res.status, data);
+        throw new Error(data.error || `API returned ${res.status}`);
+      }
+
       const reply = data.response || data.content || 'Something went wrong. Try again!';
 
       setMessages([...newMsgs, { role: 'assistant', content: reply }]);
@@ -249,8 +276,14 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
       ];
       saveMessage(displayText, reply);
     } catch (err) {
-      console.error('[StarkyBubble sendWithImage]', err);
-      setMessages([...newMsgs, { role: 'assistant', content: 'Something went wrong reading your photo. Please try again!' }]);
+      console.error('[StarkyBubble sendWithImage ERROR]', err?.message || err);
+      // Show specific error if available
+      const errMsg = err?.message?.includes('413') || err?.message?.includes('too large')
+        ? 'That photo is too large. Try taking a closer shot of just the part you need help with.'
+        : err?.message?.includes('429')
+        ? 'Starky is a bit busy right now. Please try again in a moment.'
+        : 'Something went wrong reading your photo. Please try taking another photo.';
+      setMessages([...newMsgs, { role: 'assistant', content: errMsg }]);
     } finally {
       setLoading(false);
       loadingRef.current = false;
@@ -588,8 +621,8 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
                 </div>
               )}
               {/* Hidden file inputs */}
-              <input ref={fileInputRef} type="file" accept="image/*" style={{display:'none'}} onChange={handleImageSelect} />
-              <input ref={cameraInputRef} type="file" accept="image/*" capture="environment" style={{display:'none'}} onChange={handleCameraSelect} />
+              <input ref={fileInputRef} type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/*" style={{display:'none'}} onChange={handleImageSelect} />
+              <input ref={cameraInputRef} type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/*" capture="environment" style={{display:'none'}} onChange={handleCameraSelect} />
               {/* 📎 Gallery */}
               <button className="starky-icon-btn" onClick={() => fileInputRef.current?.click()} title="Upload image">📎</button>
               {/* 📷 Camera */}
