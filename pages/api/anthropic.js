@@ -6,6 +6,15 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { buildMessages } from '../../utils/starkyPrompt';
 
+// Allow large request bodies for image uploads (phone cameras produce 5-10MB photos)
+export const config = {
+  api: {
+    bodyParser: {
+      sizeLimit: '10mb',
+    },
+  },
+};
+
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 const ALLOWED_ORIGINS = [
@@ -157,13 +166,26 @@ export default async function handler(req, res) {
     });
 
   } catch (error) {
-    console.error('[STARKY API ERROR]', error);
+    console.error('[STARKY API ERROR]', error?.message || error, {
+      status: error?.status,
+      type: error?.type,
+      hasImage: !!req.body?.imageBase64,
+      imageSize: req.body?.imageBase64 ? Math.round(req.body.imageBase64.length / 1024) + 'KB' : 'none',
+      messageLength: req.body?.message?.length || 0,
+    });
 
     if (error?.status === 401) {
       return res.status(500).json({ error: 'AI authentication failed. Please contact support.' });
     }
     if (error?.status === 429) {
       return res.status(429).json({ error: 'Rate limit reached. Please wait a moment and try again.' });
+    }
+    if (error?.status === 413 || error?.message?.includes('too large')) {
+      return res.status(413).json({
+        error: 'Image is too large. Please try a smaller photo.',
+        response: "That photo is a bit too large for me to read. Could you try taking a closer photo of just the part you need help with? 📷",
+        content: "That photo is a bit too large for me to read. Could you try taking a closer photo of just the part you need help with? 📷",
+      });
     }
 
     return res.status(500).json({

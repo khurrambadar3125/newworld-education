@@ -14,6 +14,8 @@ export default function StarkyBubble() {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [kidMode, setKidMode] = useState(false);
   const [imageData, setImageData] = useState(null);
+  const loadingRef = useRef(false);
+  const messagesRef = useRef([]);
   const synthRef = useRef(null);
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
@@ -91,6 +93,7 @@ export default function StarkyBubble() {
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    messagesRef.current = messages;
   }, [messages]);
 
   const handleClose = useCallback(() => {
@@ -120,24 +123,47 @@ export default function StarkyBubble() {
 
   const pendingImageRef = useRef(null);
 
-  const handleImageFile = (file, autoSend = false) => {
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (ev) => {
-      const data = {
-        base64: ev.target.result.split(',')[1],
-        type: file.type,
-        name: file.name,
+  // Compress image to max 1200px and JPEG quality 0.7 — phone cameras are 5-10MB otherwise
+  const compressImage = (file) => {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => {
+        const MAX = 1200;
+        let w = img.width, h = img.height;
+        if (w > MAX || h > MAX) {
+          if (w > h) { h = Math.round(h * MAX / w); w = MAX; }
+          else { w = Math.round(w * MAX / h); h = MAX; }
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = w; canvas.height = h;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, w, h);
+        const dataUrl = canvas.toDataURL('image/jpeg', 0.7);
+        resolve({
+          base64: dataUrl.split(',')[1],
+          type: 'image/jpeg',
+          name: file.name.replace(/\.\w+$/, '.jpg'),
+        });
       };
-      setImageData(data);
-      // Auto-send: camera captures should immediately trigger Starky to read the image
-      if (autoSend) {
-        pendingImageRef.current = data;
-        // Use setTimeout to let state update, then trigger send
-        setTimeout(() => sendWithImage(data), 100);
-      }
-    };
-    reader.readAsDataURL(file);
+      img.onerror = () => {
+        // Fallback: send original if compression fails
+        const reader = new FileReader();
+        reader.onload = (ev) => resolve({ base64: ev.target.result.split(',')[1], type: file.type, name: file.name });
+        reader.readAsDataURL(file);
+      };
+      img.src = URL.createObjectURL(file);
+    });
+  };
+
+  const handleImageFile = async (file, autoSend = false) => {
+    if (!file) return;
+    const data = await compressImage(file);
+    setImageData(data);
+    // Auto-send: camera captures should immediately trigger Starky to read the image
+    if (autoSend) {
+      pendingImageRef.current = data;
+      sendWithImage(data);
+    }
   };
 
   const handleImageSelect = (e) => handleImageFile(e.target.files?.[0], false);  // gallery = manual send
@@ -150,13 +176,15 @@ export default function StarkyBubble() {
 
   // Direct image send — used by camera auto-capture
   const sendWithImage = async (imgData) => {
-    if (loading) return;
+    if (loadingRef.current) return;
     const img = imgData || imageData;
     if (!img) return;
 
+    loadingRef.current = true;
     const displayText = `📷 ${img.name}`;
     const userMsg = { role: 'user', content: displayText };
-    const newMsgs = [...messages, userMsg];
+    const currentMsgs = messagesRef.current;
+    const newMsgs = [...currentMsgs, userMsg];
     setMessages(newMsgs);
     setInput('');
     setLoading(true);
@@ -201,16 +229,18 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
         { role: 'assistant', content: reply },
       ];
       saveMessage(displayText, reply);
-    } catch {
-      setMessages([...newMsgs, { role: 'assistant', content: 'Something went wrong. Please try again!' }]);
+    } catch (err) {
+      console.error('[StarkyBubble sendWithImage]', err);
+      setMessages([...newMsgs, { role: 'assistant', content: 'Something went wrong reading your photo. Please try again!' }]);
     } finally {
       setLoading(false);
+      loadingRef.current = false;
     }
   };
 
   const sendMessage = async () => {
     const text = input.trim();
-    if ((!text && !imageData) || loading) return;
+    if ((!text && !imageData) || loading || loadingRef.current) return;
 
     const displayText = text || (imageData ? `📷 ${imageData.name}` : '');
     const userMsg = { role: 'user', content: displayText };
