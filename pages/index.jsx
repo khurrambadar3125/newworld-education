@@ -315,7 +315,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           <div ref={messagesEndRef} />
         </div>
         {isLimitReached ? (
-          <div className="lw"><p>You've used all your free sessions for today.<br />Upgrade to keep learning without limits.</p><Link href="/pricing"><a>See Plans — from $29.99/mo →</a></Link></div>
+          <div className="lw"><p>You've used all your free sessions for today.<br />Upgrade to keep learning without limits.</p><Link href="/pricing"><a>See Plans — from Rs 8,300/mo →</a></Link></div>
         ) : (
           <div className="cia">
             <div className="ir">

@@ -1,5 +1,18 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
+
+function useIsPakistan() {
+  const [isPK, setIsPK] = useState(false);
+  useEffect(() => {
+    try {
+      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+      const lang = (navigator.language || '').toLowerCase();
+      const southAsianTZ = ['asia/karachi', 'asia/dubai', 'asia/kolkata', 'asia/dhaka', 'asia/colombo'];
+      if (southAsianTZ.some(t => tz.toLowerCase().includes(t)) || lang.startsWith('ur') || lang.startsWith('hi')) setIsPK(true);
+    } catch {}
+  }, []);
+  return isPK;
+}
 
 const FEATURES = [
   { emoji: '🤖', title: 'AI Tutor for Every Student', desc: 'Starky adapts to each student\'s grade, subject, and learning style — KG through A Levels.' },
@@ -11,12 +24,13 @@ const FEATURES = [
 ];
 
 const PLANS = [
-  { name: 'Starter School', students: 'Up to 50 students', price: '$199/mo', color: '#4F8EF7', features: ['All subjects KG–Grade 8', 'Teacher dashboard', 'Parent reports', '25 sessions/student/day'] },
-  { name: 'Cambridge School', students: 'Up to 200 students', price: '$499/mo', color: '#7C5CBF', popular: true, features: ['All subjects KG–A Level', 'Teacher dashboard', 'Parent reports', 'Past paper drills', 'Essay marking', 'Unlimited sessions'] },
-  { name: 'Enterprise', students: 'Unlimited students', price: 'Custom', color: '#A8E063', features: ['Everything in Cambridge', 'SEN support', 'Custom branding', 'Dedicated support', 'API access', 'SLA guarantee'] },
+  { name: 'Starter School', students: 'Up to 50 students', priceUSD: '$199/mo', pricePKR: 'Rs 55,300/mo', color: '#4F8EF7', features: ['All subjects KG–Grade 8', 'Teacher dashboard', 'Parent reports', '25 sessions/student/day'] },
+  { name: 'Cambridge School', students: 'Up to 200 students', priceUSD: '$499/mo', pricePKR: 'Rs 1,38,700/mo', color: '#7C5CBF', popular: true, features: ['All subjects KG–A Level', 'Teacher dashboard', 'Parent reports', 'Past paper drills', 'Essay marking', 'Unlimited sessions'] },
+  { name: 'Enterprise', students: 'Unlimited students', priceUSD: 'Custom', pricePKR: 'Custom', color: '#A8E063', features: ['Everything in Cambridge', 'SEN support', 'Custom branding', 'Dedicated support', 'API access', 'SLA guarantee'] },
 ];
 
 export default function SchoolPage() {
+  const isPK = useIsPakistan();
   const [form, setForm] = useState({ name: '', school: '', city: '', email: '', phone: '', students: '', message: '' });
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -87,7 +101,7 @@ export default function SchoolPage() {
               {p.popular && <div style={{ position: 'absolute', top: -10, right: 16, background: p.color, color: '#060B20', fontSize: 11, fontWeight: 800, padding: '4px 12px', borderRadius: 100 }}>Most Popular</div>}
               <div style={{ fontWeight: 900, fontSize: 18, color: p.color, marginBottom: 4 }}>{p.name}</div>
               <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.4)', marginBottom: 12 }}>{p.students}</div>
-              <div style={{ fontSize: 28, fontWeight: 900, marginBottom: 16 }}>{p.price}</div>
+              <div style={{ fontSize: 28, fontWeight: 900, marginBottom: 16 }}>{isPK ? p.pricePKR : p.priceUSD}</div>
               {p.features.map(f => (
                 <div key={f} style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', padding: '4px 0', display: 'flex', gap: 8 }}>
                   <span style={{ color: p.color }}>✓</span> {f}

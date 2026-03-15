@@ -102,10 +102,30 @@ const PLANS = [
   },
 ];
 
+// Detect if user is likely in Pakistan/South Asia using timezone + locale
+function useIsPakistan() {
+  const [isPK, setIsPK] = useState(false);
+  useEffect(() => {
+    try {
+      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+      const lang = (navigator.language || '').toLowerCase();
+      // Pakistan (Asia/Karachi), UAE (Asia/Dubai), India, Bangladesh, Sri Lanka
+      const southAsianTZ = ['asia/karachi', 'asia/dubai', 'asia/kolkata', 'asia/dhaka', 'asia/colombo'];
+      if (southAsianTZ.some(t => tz.toLowerCase().includes(t)) || lang.startsWith('ur') || lang.startsWith('hi') || lang.startsWith('ar')) {
+        setIsPK(true);
+      }
+    } catch {}
+  }, []);
+  return isPK;
+}
+
+const USD_TO_PKR = 278;
+
 export default function Pricing() {
   const router = useRouter();
   const [loading, setLoading] = useState(null);
   const [paypalReady, setPaypalReady] = useState(false);
+  const isPK = useIsPakistan();
 
   useEffect(() => {
     const clientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
@@ -288,12 +308,25 @@ export default function Pricing() {
               <span className="plan-emoji">{plan.emoji}</span>
               <div className="plan-for">{plan.for}</div>
               <div className="plan-name">{plan.name}</div>
-              <div className="plan-price">
-                <span className="currency">$</span>
-                <span className="amount">{plan.price % 1 === 0 ? plan.price : plan.price.toFixed(2)}</span>
-                <span className="period">/mo</span>
-              </div>
-              <div className="pkr-price">≈ <span>PKR {Math.round(plan.price * 278).toLocaleString()}</span>/month</div>
+              {isPK ? (
+                <>
+                  <div className="plan-price">
+                    <span className="currency" style={{fontSize:'60%'}}>Rs</span>
+                    <span className="amount">{Math.round(plan.price * USD_TO_PKR).toLocaleString()}</span>
+                    <span className="period">/mo</span>
+                  </div>
+                  <div className="pkr-price">≈ ${plan.price % 1 === 0 ? plan.price : plan.price.toFixed(2)}/month</div>
+                </>
+              ) : (
+                <>
+                  <div className="plan-price">
+                    <span className="currency">$</span>
+                    <span className="amount">{plan.price % 1 === 0 ? plan.price : plan.price.toFixed(2)}</span>
+                    <span className="period">/mo</span>
+                  </div>
+                  <div className="pkr-price">≈ <span>PKR {Math.round(plan.price * USD_TO_PKR).toLocaleString()}</span>/month</div>
+                </>
+              )}
               <ul className="plan-features">
                 {plan.features.map((f, i) => <li key={i}>{f}</li>)}
               </ul>
