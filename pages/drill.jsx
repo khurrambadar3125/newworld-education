@@ -231,6 +231,38 @@ export default function DrillPage() {
     reader.readAsDataURL(file);
   };
 
+  // ── Quick Start — auto-detect grade, pick subject, skip setup ──────────────
+  const quickStart = (overrideSubject) => {
+    const p = userProfile || {};
+    const gradeId = (p.gradeId || '').toLowerCase();
+
+    // Detect mode and level from profile
+    const isYoung = ['kg','grade1','grade2','grade3','grade4','grade5','grade6','grade7','grade8','grade9'].includes(gradeId);
+    const isALevel = gradeId.includes('alevel') || gradeId === 'grade11' || gradeId === 'grade12';
+
+    const qsMode = isYoung ? 'young' : 'exam';
+    const qsLevel = isALevel ? 'A Level' : 'O Level';
+
+    // Pick subject: override > last used > first available
+    const subjectList = isYoung ? SUBJECTS_YOUNG : (isALevel ? SUBJECTS_ALEVEL : SUBJECTS_OLEVEL);
+    const qsSubject = overrideSubject || p.lastSubject || subjectList[0];
+
+    // Set all state and start
+    setMode(qsMode);
+    setLevel(qsLevel);
+    setSubject(qsSubject);
+    setTopic('__ALL__');
+    setDifficulty('medium');
+    setQuestionType('mixed');
+    setSessionResults([]); setQuestionNum(0); setLiveScore(0); setLiveMax(0); setCombo(0);
+    setPhase('drilling');
+
+    // Pick a random topic from the subject
+    const allTopics = getTopics(qsSubject);
+    const randomTopic = allTopics[Math.floor(Math.random() * allTopics.length)];
+    generateQuestion(randomTopic);
+  };
+
   // ── Start session ────────────────────────────────────────────────────────────
   const startSession = () => {
     if (cameraImage) {
@@ -304,6 +336,28 @@ export default function DrillPage() {
         <div style={S.container}>
           <h1 style={S.h1}>Drill Mode 📚</h1>
           <p style={S.subtitle}>Practice questions powered by Starky. Choose your level to begin.</p>
+
+          {/* Quick Start — one tap, auto-detects everything */}
+          {!mode && userProfile?.gradeId && (
+            <div style={{marginBottom:20}}>
+              <button onClick={() => quickStart()} style={{...S.primaryBtn, marginTop:0, background:'linear-gradient(135deg,#4ADE80,#22C55E)', fontSize:16, padding:'16px 28px', display:'flex', alignItems:'center', justifyContent:'center', gap:10}}>
+                ⚡ Quick Start — 10 Mixed Questions
+              </button>
+              <div style={{display:'grid', gridTemplateColumns:'repeat(2,1fr)', gap:8, marginTop:10}}>
+                {(userProfile.gradeId?.includes('olevel') || userProfile.gradeId?.includes('alevel') || ['grade9','grade10','grade11','grade12'].includes(userProfile.gradeId)
+                  ? (userProfile.gradeId?.includes('alevel') || ['grade11','grade12'].includes(userProfile.gradeId) ? SUBJECTS_ALEVEL : SUBJECTS_OLEVEL)
+                  : SUBJECTS_YOUNG
+                ).slice(0,6).map(s => (
+                  <button key={s} onClick={() => quickStart(s)} style={{...S.optionBtn(false), textAlign:'center', padding:'10px 8px', fontSize:12, fontWeight:700}}>
+                    {s}
+                  </button>
+                ))}
+              </div>
+              <div style={{textAlign:'center', marginTop:12}}>
+                <span style={{fontSize:12, color:'rgba(255,255,255,0.3)'}}>or choose your own setup below ↓</span>
+              </div>
+            </div>
+          )}
 
           {!mode && (
             <div style={{display:'flex',flexDirection:'column',gap:12,marginBottom:16}}>
