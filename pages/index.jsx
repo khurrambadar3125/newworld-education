@@ -468,23 +468,29 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
       </nav>
       {menuOpen && (
         <div className="dr" onClick={() => setMenuOpen(false)}>
-          <a href="/">🏠 Home</a>
+          <a href="/" style={{fontWeight:700,borderBottom:'1px solid rgba(255,255,255,0.1)'}}>🏠 Home</a>
+          <div style={{padding:'14px 16px 4px',fontSize:11,fontWeight:800,letterSpacing:'0.08em',textTransform:'uppercase',color:'rgba(255,255,255,0.3)'}}>Learn</div>
           <a href="/drill">🎯 Practice Drill</a>
           <a href="/past-papers">📚 Past Papers</a>
-          <a href="/special-needs">💜 Special Needs</a>
-          <a href="/parent">👨‍👩‍👧 Parent Portal</a>
-          <a href="/homework">🏠 Homework Help</a>
+          <a href="/homework">📝 Homework Help</a>
           <a href="/essay">✍️ Essay Marking</a>
+          <a href="/textbooks">📖 Textbooks</a>
+          <div style={{padding:'14px 16px 4px',fontSize:11,fontWeight:800,letterSpacing:'0.08em',textTransform:'uppercase',color:'rgba(255,255,255,0.3)'}}>Tools</div>
           <a href="/countdown">⏱️ Exam Countdown</a>
           <a href="/subscribe">📬 Daily Questions</a>
           <a href="/leaderboard">🏆 Leaderboard</a>
+          <div style={{padding:'14px 16px 4px',fontSize:11,fontWeight:800,letterSpacing:'0.08em',textTransform:'uppercase',color:'rgba(255,255,255,0.3)'}}>Creative</div>
+          <a href="/arts">🎨 Arts</a>
+          <a href="/music">🎵 Music</a>
+          <a href="/reading">📚 Reading</a>
+          <div style={{padding:'14px 16px 4px',fontSize:11,fontWeight:800,letterSpacing:'0.08em',textTransform:'uppercase',color:'rgba(255,255,255,0.3)'}}>Parents & Schools</div>
+          <a href="/parent">👨‍👩‍👧 Parent Portal</a>
+          <a href="/special-needs">💜 Special Needs</a>
           <a href="/dashboard">📊 Teacher Dashboard</a>
-          <a href="/textbooks">📖 Textbooks</a>
-          <a href="/arts">🎨 Learn Arts</a>
-          <a href="/music">🎵 Learn Music</a>
-          <a href="/reading">📚 Lets READ</a>
           <a href="/school">🏫 For Schools</a>
-          <a href="/pricing">💳 Plans & Pricing</a>
+          <div style={{padding:'12px 16px',marginTop:8,borderTop:'1px solid rgba(255,255,255,0.08)'}}>
+            <a href="/pricing" style={{fontWeight:700,color:'#4F8EF7'}}>💳 Plans & Pricing</a>
+          </div>
         </div>
       )}
 

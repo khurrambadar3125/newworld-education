@@ -2,24 +2,42 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { useTheme } from '../pages/_app';
 
-const MENU_ITEMS = [
-  { href: '/',               label: '🏠 Home' },
-  { href: '/drill',          label: '🎯 Practice Drill' },
-  { href: '/past-papers',    label: '📚 Past Papers' },
-  { href: '/special-needs',  label: '💜 Special Needs' },
-  { href: '/parent',         label: '👨‍👩‍👧 Parent Portal' },
-  { href: '/homework',       label: '🏠 Homework Help' },
-  { href: '/essay',          label: '✍️ Essay Marking' },
-  { href: '/countdown',      label: '⏱️ Exam Countdown' },
-  { href: '/subscribe',      label: '📬 Daily Questions' },
-  { href: '/leaderboard',    label: '🏆 Leaderboard' },
-  { href: '/dashboard',      label: '📊 Teacher Dashboard' },
-  { href: '/textbooks',      label: '📖 Textbooks' },
-  { href: '/arts',           label: '🎨 Learn Arts' },
-  { href: '/music',          label: '🎵 Learn Music' },
-  { href: '/reading',        label: '📚 Learn Reading' },
-  { href: '/school',         label: '🏫 For Schools' },
-  { href: '/pricing',        label: '💳 Plans & Pricing' },
+const MENU_GROUPS = [
+  {
+    title: 'Learn',
+    items: [
+      { href: '/drill',        label: '🎯 Practice Drill' },
+      { href: '/past-papers',  label: '📚 Past Papers' },
+      { href: '/homework',     label: '📝 Homework Help' },
+      { href: '/essay',        label: '✍️ Essay Marking' },
+      { href: '/textbooks',    label: '📖 Textbooks' },
+    ],
+  },
+  {
+    title: 'Tools',
+    items: [
+      { href: '/countdown',    label: '⏱️ Exam Countdown' },
+      { href: '/subscribe',    label: '📬 Daily Questions' },
+      { href: '/leaderboard',  label: '🏆 Leaderboard' },
+    ],
+  },
+  {
+    title: 'Creative',
+    items: [
+      { href: '/arts',         label: '🎨 Arts' },
+      { href: '/music',        label: '🎵 Music' },
+      { href: '/reading',      label: '📚 Reading' },
+    ],
+  },
+  {
+    title: 'Parents & Schools',
+    items: [
+      { href: '/parent',       label: '👨‍👩‍👧 Parent Portal' },
+      { href: '/special-needs',label: '💜 Special Needs' },
+      { href: '/dashboard',    label: '📊 Teacher Dashboard' },
+      { href: '/school',       label: '🏫 For Schools' },
+    ],
+  },
 ];
 
 export default function Nav({ current, accent }) {
@@ -59,14 +77,34 @@ export default function Nav({ current, accent }) {
           background: rgba(8,12,24,0.98); z-index: 99; padding: 12px 16px;
           overflow-y: auto; -webkit-overflow-scrolling: touch;
         }
+        .nw-nav-group-title {
+          font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
+          text-transform: uppercase; color: rgba(255,255,255,0.3);
+          padding: 16px 12px 6px; margin: 0;
+        }
+        .nw-nav-group-title:first-child { padding-top: 8px; }
         .nw-nav-menu a {
-          display: block; padding: 14px 12px;
-          border-bottom: 1px solid rgba(255,255,255,0.05);
-          color: rgba(255,255,255,0.8); text-decoration: none;
-          font-size: 16px; font-weight: 500;
+          display: block; padding: 12px 12px 12px 20px;
+          border-bottom: 1px solid rgba(255,255,255,0.04);
+          color: rgba(255,255,255,0.75); text-decoration: none;
+          font-size: 15px; font-weight: 500;
         }
         .nw-nav-menu a:hover { color: #fff; background: rgba(255,255,255,0.03); }
         .nw-nav-menu a.nw-active { color: ${color}; font-weight: 700; }
+        .nw-nav-home {
+          display: block; padding: 14px 12px;
+          border-bottom: 1px solid rgba(255,255,255,0.08);
+          color: #fff; text-decoration: none;
+          font-size: 16px; font-weight: 700;
+        }
+        .nw-nav-bottom {
+          padding: 12px; border-top: 1px solid rgba(255,255,255,0.08);
+          margin-top: 8px;
+        }
+        .nw-nav-bottom a {
+          display: block; padding: 12px; border-bottom: none;
+          font-weight: 700; color: #4F8EF7;
+        }
       `}</style>
 
       <nav className="nw-nav">
@@ -84,11 +122,20 @@ export default function Nav({ current, accent }) {
 
       {open && (
         <div className="nw-nav-menu" onClick={() => setOpen(false)}>
-          {MENU_ITEMS.map(item => (
-            <Link key={item.href} href={item.href}>
-              <a className={current === item.href ? 'nw-active' : ''}>{item.label}</a>
-            </Link>
+          <Link href="/"><a className="nw-nav-home">🏠 Home</a></Link>
+          {MENU_GROUPS.map(group => (
+            <div key={group.title}>
+              <div className="nw-nav-group-title">{group.title}</div>
+              {group.items.map(item => (
+                <Link key={item.href} href={item.href}>
+                  <a className={current === item.href ? 'nw-active' : ''}>{item.label}</a>
+                </Link>
+              ))}
+            </div>
           ))}
+          <div className="nw-nav-bottom">
+            <Link href="/pricing"><a>💳 Plans & Pricing</a></Link>
+          </div>
         </div>
       )}
     </>
