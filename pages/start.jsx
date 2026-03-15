@@ -147,7 +147,7 @@ export default function Start() {
         .sub-links a:hover { color: rgba(255,255,255,0.6); }
       `}</style>
 
-      <div className="container"><div style={{position:"fixed",top:0,left:0,right:0,zIndex:999,background:"rgba(8,12,24,0.97)",backdropFilter:"blur(12px)",borderBottom:"1px solid rgba(255,255,255,0.07)",padding:"0 16px",height:"52px",display:"flex",alignItems:"center",justifyContent:"space-between"}}><span style={{fontFamily:"'Sora',sans-serif",fontWeight:800,fontSize:"15px",color:"#fff"}}>NewWorldEdu<span style={{color:"#4F8EF7"}}>★</span></span><a href="/" style={{color:"#fff",fontSize:"13px",fontWeight:800,textDecoration:"none",background:"linear-gradient(135deg,#4F8EF7,#7C5CBF)",borderRadius:"20px",padding:"6px 16px"}}>← Home</a></div><div style={{height:"52px"}} />
+      <div className="container"><div style={{position:"fixed",top:0,left:0,right:0,zIndex:999,background:"rgba(8,12,24,0.97)",backdropFilter:"blur(12px)",borderBottom:"1px solid rgba(255,255,255,0.07)",padding:"0 16px",height:"52px",display:"flex",alignItems:"center",justifyContent:"space-between"}}><a href="/" style={{fontFamily:"'Sora',sans-serif",fontWeight:800,fontSize:"15px",color:"#fff",textDecoration:"none"}}>NewWorldEdu<span style={{color:"#4F8EF7"}}>★</span></a><a href="/" style={{color:"#fff",fontSize:"13px",fontWeight:800,textDecoration:"none",background:"linear-gradient(135deg,#4F8EF7,#7C5CBF)",borderRadius:"20px",padding:"6px 16px"}}>← Home</a></div><div style={{height:"52px"}} />
         <div
           className="success-ring"
           style={{ color: planDetails.color, borderColor: planDetails.color }}

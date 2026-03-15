@@ -692,7 +692,7 @@ export default function PastPapersPage() {
           <span style={{ fontSize:18 }}>🌍</span>
           <span style={{ fontWeight:900, fontSize:15, color:"#fff" }}>NewWorld <span style={{ color:"#63D2FF" }}>EDUCATION</span></span>
         </a>
-        <a href="/demo" style={{ color:"rgba(255,255,255,0.4)", fontSize:12, textDecoration:"none", fontWeight:700 }}>← Back to Starky</a>
+        <a href="/" style={{ color:"rgba(255,255,255,0.4)", fontSize:12, textDecoration:"none", fontWeight:700 }}>← Back to Starky</a>
       </header>
       <div style={{ maxWidth:680, margin:"0 auto", padding:isMobile?"32px 16px":"56px 24px", textAlign:"center" }}>
         <div style={{ fontSize:isMobile?48:64, marginBottom:12 }}>📚</div>
@@ -739,7 +739,7 @@ export default function PastPapersPage() {
         </a>
         <div style={{ display:"flex", gap:10, alignItems:"center" }}>
           <button onClick={()=>setLevel(null)} style={{ ...S.btn, background:"rgba(255,255,255,0.05)", border:"1px solid rgba(255,255,255,0.12)", borderRadius:12, padding:"6px 14px", color:"rgba(255,255,255,0.5)", fontSize:12, fontWeight:700 }}>← Change level</button>
-          <a href="/demo" style={{ color:"rgba(255,255,255,0.4)", fontSize:12, textDecoration:"none", fontWeight:700 }}>← Starky</a>
+          <a href="/" style={{ color:"rgba(255,255,255,0.4)", fontSize:12, textDecoration:"none", fontWeight:700 }}>← Starky</a>
         </div>
       </header>
       <div style={{ maxWidth:820, margin:"0 auto", padding:isMobile?"24px 16px":"40px 24px" }}>

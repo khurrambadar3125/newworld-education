@@ -675,9 +675,9 @@ export default function ParentPage() {
           <div style={{fontSize:13,color:"rgba(255,255,255,0.5)",lineHeight:1.7,marginBottom:16}}>
             Get unlimited sessions for all {children.length || "your"} children, plus priority support and monthly learning reports.
           </div>
-          <a href={`${PAYPAL}/69.99`} target="_blank" rel="noopener noreferrer"
+          <a href="/pricing"
             style={{display:"block",textAlign:"center",background:"linear-gradient(135deg,#A8E063,#7DC940)",borderRadius:14,padding:"13px",color:"#060B20",fontWeight:900,fontSize:14,textDecoration:"none"}}>
-            💳 Subscribe via PayPal →
+            💳 View Family Plan →
           </a>
         </div>
 
