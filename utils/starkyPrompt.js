@@ -502,6 +502,12 @@ function buildIntentInstruction(intent, group) {
       OLEVEL: 'Firmly but warmly: "I\'ll leave that to Google! Let\'s get back to your studies."',
       ALEVEL: 'Direct: "Not my territory! What subject are we working on today?"',
     },
+    [INTENTS.PARENT_QUERY]: {
+      KID:    'Address the parent warmly. Share what their child has been working on, how they\'re doing, and one specific thing to practise at home.',
+      MIDDLE: 'Address the parent. Summarise the student\'s progress, mention weak areas, suggest one home activity.',
+      OLEVEL: 'Address the parent professionally. Discuss the student\'s Cambridge preparation, weak topics, and exam readiness. Give one actionable tip.',
+      ALEVEL: 'Address the parent as a partner. Discuss subject progress, university readiness, and how to support without adding pressure.',
+    },
     [INTENTS.UNKNOWN]: {
       KID:    'Ask gently: "Can you tell me what you\'re working on? 😊"',
       MIDDLE: 'Ask: "Tell me more — what subject or topic are you working on?"',

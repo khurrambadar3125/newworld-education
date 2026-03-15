@@ -36,18 +36,24 @@ const DISTRESS_SIGNALS = [
 ];
 
 const UNSAFE_SIGNALS = [
-  'how to make a bomb', 'how to make drugs', 'how to hack',
-  'how to hurt', 'how to poison', 'buy drugs', 'buy weapons',
-  'illegal', 'pirate', 'cheat in exam', 'steal exam paper',
-  'get exam paper', 'leaked paper', 'sex', 'porn', 'naked',
-  'inappropriate', 'send me pictures', 'meet me',
+  'how to make a bomb', 'how to make drugs', 'how to hack someone',
+  'how to hurt someone', 'how to poison', 'buy drugs', 'buy weapons',
+  'do something illegal', 'pirate software', 'cheat in exam', 'steal exam paper',
+  'get exam paper early', 'leaked paper', 'watch porn', 'send nudes', 'naked pictures',
+  'send me pictures of', 'meet me in person', 'where do you live',
 ];
+// Note: "sex" removed — biology students ask about "sexual reproduction"
+// Note: "illegal" removed as bare word — too many false positives
+// Note: "how to hack" → "how to hack someone" to allow "how to hack my revision"
 
 const ABUSE_SIGNALS = [
-  'being bullied', 'someone hit me', 'teacher hit', 'abused',
-  'touches me', 'inappropriate touching', 'scared of', 'threatened',
-  'blackmail', 'stalking',
+  'being bullied', 'someone hit me', 'teacher hit me', 'abused',
+  'touches me', 'inappropriate touching', 'someone threatens me', 'threatened me',
+  'blackmail', 'stalking me', 'hits me at home', 'beats me',
+  'forced to do', 'uncle touches', 'cousin touches',
 ];
+// Note: "scared of" removed — false positive on "scared of exams"
+// Note: more specific phrases to reduce false positives while catching real abuse
 
 const EMOTIONAL_SIGNALS = [
   'hate school', 'hate maths', 'hate this', 'so hard', 'too hard',
@@ -63,6 +69,41 @@ const IDENTITY_PROBES = [
   'are you a robot', 'are you human', 'who made you', 'who created you',
   'are you claude', 'are you gemini', 'are you a person',
   'what ai are you', 'which company', 'are you from openai',
+  // Roman Urdu
+  'kya tum chatgpt ho', 'kya tum ai ho', 'tum kaun ho', 'tum robot ho',
+  'tumhe kisne banaya',
+];
+
+const PARENT_SIGNALS = [
+  'my child', 'my son', 'my daughter', 'my kid',
+  'how is my child doing', 'child progress', 'parent here',
+  'i am a parent', "i'm a parent", 'as a parent',
+  'mera bacha', 'meri beti', 'mera beta',
+];
+
+// ── Roman Urdu signals (Pakistani students type this way) ─────────────────
+const ROMAN_URDU_HOMEWORK = [
+  'samajh nahi aa raha', 'samajh nahi aya', 'ye kya hai', 'ye kaise hoga',
+  'madad karo', 'help karo', 'mushkil hai', 'nahi aata', 'nahi ata',
+  'question solve karo', 'kaise karu', 'kaise karun', 'batao ye',
+];
+const ROMAN_URDU_EMOTIONAL = [
+  'main fail ho jaun ga', 'fail ho jaunga', 'bohat mushkil hai',
+  'mujhe dar hai', 'tension ho rahi hai', 'pareshan hun',
+  'kuch samajh nahi aata', 'thak gaya hun', 'thak gayi hun',
+  'haar maan raha hun', 'haar maan rahi hun',
+];
+const ROMAN_URDU_PRACTICE = [
+  'sawal do', 'question do', 'test lo', 'quiz lo', 'practice karao',
+  'aur sawal', 'mushkil sawal do',
+];
+const ROMAN_URDU_EXPLAIN = [
+  'ye kya hota hai', 'iska matlab', 'samjhao', 'samjha do',
+  'kyun hota hai', 'kaise hota hai', 'define karo',
+];
+const ROMAN_URDU_DISTRESS = [
+  'mar jana chahta hun', 'mar jana chahti hun', 'jeene ka mann nahi',
+  'koi mera khayal nahi rakhta', 'zindagi se tang', 'khud ko hurt karna',
 ];
 
 const MARKING_SIGNALS = [
@@ -101,7 +142,8 @@ export function detectIntent(message, userProfile = {}) {
 
   // ── Safety checks first — these always take priority ──────────────────────
 
-  const distressMatch = DISTRESS_SIGNALS.find(s => msg.includes(s));
+  const distressMatch = DISTRESS_SIGNALS.find(s => msg.includes(s))
+    || ROMAN_URDU_DISTRESS.find(s => msg.includes(s));
   if (distressMatch) {
     return { intent: INTENTS.ESCALATE_DISTRESS, confidence: 1.0, signals: [distressMatch] };
   }
@@ -122,6 +164,12 @@ export function detectIntent(message, userProfile = {}) {
     return { intent: INTENTS.IDENTITY_PROBE, confidence: 0.95, signals: [identityMatch] };
   }
 
+  // ── Parent query ───────────────────────────────────────────────────────────
+  const parentMatch = PARENT_SIGNALS.find(s => msg.includes(s));
+  if (parentMatch) {
+    return { intent: INTENTS.PARENT_QUERY, confidence: 0.85, signals: [parentMatch] };
+  }
+
   // ── Scoring system for ambiguous cases ────────────────────────────────────
   const scores = {
     [INTENTS.EMOTIONAL]:        0,
@@ -135,9 +183,13 @@ export function detectIntent(message, userProfile = {}) {
   };
 
   EMOTIONAL_SIGNALS.forEach(s => { if (msg.includes(s)) { scores[INTENTS.EMOTIONAL] += 2; signals.push(s); } });
+  ROMAN_URDU_EMOTIONAL.forEach(s => { if (msg.includes(s)) { scores[INTENTS.EMOTIONAL] += 2; signals.push(s); } });
   MARKING_SIGNALS.forEach(s => { if (msg.includes(s)) { scores[INTENTS.MARKING_REQUEST] += 3; signals.push(s); } });
   PRACTICE_SIGNALS.forEach(s => { if (msg.includes(s)) { scores[INTENTS.PRACTICE_REQUEST] += 3; signals.push(s); } });
+  ROMAN_URDU_PRACTICE.forEach(s => { if (msg.includes(s)) { scores[INTENTS.PRACTICE_REQUEST] += 3; signals.push(s); } });
   EXAM_PREP_SIGNALS.forEach(s => { if (msg.includes(s)) { scores[INTENTS.EXAM_PREP] += 2; signals.push(s); } });
+  ROMAN_URDU_HOMEWORK.forEach(s => { if (msg.includes(s)) { scores[INTENTS.HOMEWORK_HELP] += 2; signals.push(s); } });
+  ROMAN_URDU_EXPLAIN.forEach(s => { if (msg.includes(s)) { scores[INTENTS.CONCEPT_EXPLAIN] += 2; signals.push(s); } });
 
   // Homework help signals — structural patterns
   if (/\bquestion\s+\d+\b/.test(msg)) scores[INTENTS.HOMEWORK_HELP] += 3;
