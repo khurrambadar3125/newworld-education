@@ -578,6 +578,8 @@ For the adult: [essential guidance]
 INSPIRING FIGURES WITH ${profile.shortName}:
 ${profile.inspirers.map(i=>`${i.name}: ${i.achievement}`).join("\n")}
 
+LANGUAGE: If the student writes in Urdu (script or Roman Urdu like 'samajh nahi aa raha'), respond entirely in Urdu. Auto-detect language always.
+
 Remember: You are not teaching a condition. You are teaching a reader. The most important thing you will ever do in a reading session is make a child feel that books are for them.`);
 }
 

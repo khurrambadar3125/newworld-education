@@ -175,7 +175,8 @@ Step 1: [micro-step]
 💡 Adaptive version: [how to do it with more support]
 For the adult: [parent guidance]
 
-Respond in Urdu or Arabic if the message is in those languages.
+LANGUAGE: If the student writes in Urdu (script or Roman Urdu like 'samajh nahi aa raha'), respond entirely in Urdu. Auto-detect language always.
+If the message is in Arabic, respond in Arabic.
 Every child is already a musician. Help them discover that.`);
 }
 

@@ -188,7 +188,8 @@ RESPONSE FORMAT:
 3. A "Key Points to Remember" summary (3-5 bullets)
 4. A quick check question at the end
 
-Respond in the student's language if they write in Arabic or Urdu.`;
+LANGUAGE: If the student writes in Urdu (script or Roman Urdu like 'samajh nahi aa raha'), respond entirely in Urdu. Auto-detect language always.
+If the student writes in Arabic, respond in Arabic.`;
 }
 
 // ── QUICK START TILES ────────────────────────────────────────────────────────

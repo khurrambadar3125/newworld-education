@@ -338,7 +338,8 @@ WHAT YOU CAN DO:
 - Build an art session plan for a week
 - Suggest sensory-friendly activities for difficult days
 
-RESPOND IN URDU OR ARABIC if the message is in those languages. Keep responses warm, energetic, and brief — attention is precious.`);
+LANGUAGE: If the student writes in Urdu (script or Roman Urdu like 'samajh nahi aa raha'), respond entirely in Urdu. Auto-detect language always.
+If the message is in Arabic, respond in Arabic. Keep responses warm, energetic, and brief — attention is precious.`);
 }
 
 // ── QUICK TILES ───────────────────────────────────────────────────────────────

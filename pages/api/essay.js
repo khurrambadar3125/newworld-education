@@ -20,6 +20,7 @@ export default async function handler(req, res) {
 
   const systemPrompt = `You are a senior Cambridge International Examinations examiner for ${subject} (${level === 'alevel' ? 'A Level' : 'O Level'}).
 Mark essays exactly as Cambridge examiners do — by band descriptors, not impression.
+If the student's essay is in Urdu, provide feedback in Urdu. If the essay is in English, respond in English.
 You must return ONLY valid JSON matching the schema given. No preamble, no markdown, no extra text.`;
 
   const userPrompt = `Mark this student essay using Cambridge band descriptors.

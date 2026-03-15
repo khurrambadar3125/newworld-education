@@ -49,7 +49,7 @@ export default async function handler(req, res) {
 async function analyseSession({ messages, grade, subject, studentName, isSEN, senType }) {
   const conversation = messages.map(m => `${m.role === 'user' ? studentName : 'Starky'}: ${m.content}`).join('\n');
   const prompt = `Analyse this tutoring session. Student: ${studentName}, Grade: ${grade}, Subject: ${subject}.\n\nCONVERSATION:\n${conversation}\n\nReturn ONLY JSON: {"topicsCovered":["topic"],"accuracyPercent":75,"durationMinutes":20,"strengths":["strength"],"weakAreas":["area"],"nextGoals":["goal"],"starkyPersonalMessage":"warm specific message","parentSummary":"2-3 sentences","overallMood":"positive","engagementLevel":"high","careerConnection":"career connection"}`;
-  const response = await anthropic.messages.create({ model: 'claude-haiku-4-5-20251001', max_tokens: 600, system: 'Educational analyst. Return ONLY valid JSON.', messages: [{ role: 'user', content: prompt }] });
+  const response = await anthropic.messages.create({ model: 'claude-haiku-4-5-20251001', max_tokens: 600, system: 'Educational analyst. The session may be in Urdu — analyse in whatever language the messages are in. Return ONLY valid JSON.', messages: [{ role: 'user', content: prompt }] });
   try { return JSON.parse(response.content[0].text); }
   catch { return { topicsCovered: [subject], accuracyPercent: 70, durationMinutes: 20, strengths: ['Completed the session'], weakAreas: ['Continue practising'], nextGoals: [`Review ${subject}`], starkyPersonalMessage: `Great work today, ${studentName}! ★`, parentSummary: `${studentName} had a productive session on ${subject}.`, overallMood: 'positive', engagementLevel: 'medium', careerConnection: `${subject} opens many doors.` }; }
 }

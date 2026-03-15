@@ -53,7 +53,7 @@ University application: portfolio curation, artist statement precision, intervie
 Focus: ${topic || "A-Level Art"}.
 Push for original conceptual intent. A student's personal voice and investigative thread are what examiners reward at A-Level.`,
   };
-  return stagePrompts[stage.id] + `\n\nCurrent topic: ${topic || stage.topics[0]}\nStage: ${stage.name} (${stage.ages})\n\nIf the student writes in Urdu or Arabic, respond in that language.`;
+  return stagePrompts[stage.id] + `\n\nCurrent topic: ${topic || stage.topics[0]}\nStage: ${stage.name} (${stage.ages})\n\nLANGUAGE: If the student writes in Urdu (script or Roman Urdu like 'samajh nahi aa raha'), respond entirely in Urdu. Auto-detect language always.\nIf the student writes in Arabic, respond in Arabic.`;
 }
 
 export default function ArtsPage() {

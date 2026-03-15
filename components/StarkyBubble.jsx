@@ -606,7 +606,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
               <textarea
                 ref={inputRef}
                 className="starky-input"
-                placeholder="Ask Starky anything…"
+                placeholder="Ask Starky anything… اردو میں بھی پوچھ سکتے ہو"
                 aria-label="Type your message to Starky"
                 value={input}
                 onChange={e => setInput(e.target.value)}

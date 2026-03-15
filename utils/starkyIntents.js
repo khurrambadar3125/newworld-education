@@ -106,6 +106,13 @@ const ROMAN_URDU_DISTRESS = [
   'koi mera khayal nahi rakhta', 'zindagi se tang', 'khud ko hurt karna',
 ];
 
+const ROMAN_URDU_MARKING = [
+  'meri checking karo', 'marks batao', 'ye theek hai', 'jawab check karo', 'kitne marks milenge',
+];
+const ROMAN_URDU_EXAM_PREP = [
+  'tayyari kaise karun', 'paper ki tayyari', 'revision kaise karun', 'konse topics zaroori hain', 'imtihan ki tips',
+];
+
 const MARKING_SIGNALS = [
   'mark my', 'check my answer', 'check my essay', 'grade this',
   'how many marks', 'did i get it right', 'is this correct',
@@ -185,9 +192,11 @@ export function detectIntent(message, userProfile = {}) {
   EMOTIONAL_SIGNALS.forEach(s => { if (msg.includes(s)) { scores[INTENTS.EMOTIONAL] += 2; signals.push(s); } });
   ROMAN_URDU_EMOTIONAL.forEach(s => { if (msg.includes(s)) { scores[INTENTS.EMOTIONAL] += 2; signals.push(s); } });
   MARKING_SIGNALS.forEach(s => { if (msg.includes(s)) { scores[INTENTS.MARKING_REQUEST] += 3; signals.push(s); } });
+  ROMAN_URDU_MARKING.forEach(s => { if (msg.includes(s)) { scores[INTENTS.MARKING_REQUEST] += 3; signals.push(s); } });
   PRACTICE_SIGNALS.forEach(s => { if (msg.includes(s)) { scores[INTENTS.PRACTICE_REQUEST] += 3; signals.push(s); } });
   ROMAN_URDU_PRACTICE.forEach(s => { if (msg.includes(s)) { scores[INTENTS.PRACTICE_REQUEST] += 3; signals.push(s); } });
   EXAM_PREP_SIGNALS.forEach(s => { if (msg.includes(s)) { scores[INTENTS.EXAM_PREP] += 2; signals.push(s); } });
+  ROMAN_URDU_EXAM_PREP.forEach(s => { if (msg.includes(s)) { scores[INTENTS.EXAM_PREP] += 2; signals.push(s); } });
   ROMAN_URDU_HOMEWORK.forEach(s => { if (msg.includes(s)) { scores[INTENTS.HOMEWORK_HELP] += 2; signals.push(s); } });
   ROMAN_URDU_EXPLAIN.forEach(s => { if (msg.includes(s)) { scores[INTENTS.CONCEPT_EXPLAIN] += 2; signals.push(s); } });
 
