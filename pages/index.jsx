@@ -91,7 +91,7 @@ export default function Home() {
       r.continuous = false;
       r.interimResults = false;
       r.lang = 'en-US';
-      r.onresult = (e) => { setInput(prev => prev + e.results[0][0].transcript); setIsListening(false); };
+      r.onresult = (e) => { const t = e.results?.[0]?.[0]?.transcript; if (t) setInput(prev => prev + t); setIsListening(false); };
       r.onerror = () => setIsListening(false);
       r.onend = () => setIsListening(false);
       recognitionRef.current = r;
@@ -171,7 +171,7 @@ METHOD: Use Socratic questioning — NEVER give direct answers. Guide the studen
 NEVER SAY: "That's wrong", "You should know this", "Let's move on"
 ALWAYS: "Not quite — and that tells me something useful!", keep responses concise — 3 short paragraphs max.
 
-CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for ALL O Level subjects (Biology 5090, Chemistry 5070, Physics 5054, Mathematics 4024, Additional Mathematics 4037, English Language 1123, Literature in English 2010, Pakistan Studies 2059, Islamiyat 2058, History 2134, Geography 2217, Economics 2281, Business Studies 7115, Accounting 7707, Computer Science 2210, Sociology 2251, and all others) and ALL A Level subjects (Biology 9700, Chemistry 9701, Physics 9702, Mathematics 9709, Psychology 9990, Law 9084, English Language 9093, Literature in English 9695, Economics 9708, Business 9707, History 9489, Geography 9696, Sociology 9699, Computer Science 9608, Media Studies 9607, and all others). You know every mark scheme, examiner report, and Cambridge textbook. You know exactly what examiners want.`;
+CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for ALL O Level subjects (Biology 5090, Chemistry 5070, Physics 5054, Mathematics D 4024, Additional Mathematics 4037, English Language 1123, Literature in English 2010, Urdu First Language 3247, Urdu Second Language 3248, Pakistan Studies 2059, Islamiyat 2058, History 2147, Geography 2217, Economics 2281, Business Studies 7115, Accounting 7707, Computer Science 2210, Sociology 2251, Commerce 7100, Statistics 4040, Environmental Management 5014, and all others) and ALL A Level subjects (Biology 9700, Chemistry 9701, Physics 9702, Mathematics 9709, Further Mathematics 9231, English Language 9093, Literature in English 9695, Psychology 9990, Economics 9708, Business 9609, Accounting 9706, Computer Science 9618, History 9489, Geography 9696, Sociology 9699, Law 9084, Thinking Skills 9694, Media Studies 9607, Urdu 9686, and all others). You know every mark scheme, examiner report, and Cambridge textbook. You know exactly what examiners want.`;
 
     try {
       const res = await fetch('/api/anthropic', {
@@ -181,7 +181,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
       });
       let data = {};
       try { data = await res.json(); } catch(e) { data = {}; }
-      const reply = (res.ok && data.content) ? data.content : (data.error || "Starky is busy — please try again in a moment!");
+      const reply = (res.ok && (data.response || data.content)) ? (data.response || data.content) : (data.error || "Starky is busy — please try again in a moment!");
       setMessages([...newMsgs, { role: 'assistant', content: reply }]);
       try { recordCall(); } catch(e) {}
       try { if (voiceSupported) speakText(reply); } catch(e) {}

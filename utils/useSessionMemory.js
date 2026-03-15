@@ -146,9 +146,12 @@ export function useSessionMemory(userProfile) {
               localStorage.setItem(key, JSON.stringify(memory));
             }
           }
-        } catch {}
+        } catch (e) {
+          console.warn('[SessionMemory] Failed to load from KV:', e.message);
+        }
       }
-    } catch {
+    } catch (e) {
+      console.warn('[SessionMemory] Failed to load:', e.message);
       setSessionMemory(EMPTY_MEMORY);
     }
     })();

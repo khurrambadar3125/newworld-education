@@ -28,7 +28,8 @@ const BADGES = [
 ];
 
 function getTodayKey() {
-  return new Date().toISOString().slice(0, 10); // 'YYYY-MM-DD'
+  // Use Pakistan time (UTC+5) so streaks align with the student's actual day
+  return new Date(Date.now() + 5 * 3600000).toISOString().slice(0, 10); // 'YYYY-MM-DD' in PKT
 }
 
 function getStorageKey(userId) {
@@ -89,7 +90,7 @@ export default function useStreaks(userId) {
     setData(prev => {
       if (!prev) return prev;
       const today = getTodayKey();
-      const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+      const yesterday = new Date(Date.now() + 5 * 3600000 - 86400000).toISOString().slice(0, 10); // yesterday in PKT
 
       // Streak logic
       let newStreak = prev.currentStreak;

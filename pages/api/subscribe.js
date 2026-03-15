@@ -25,10 +25,14 @@ export default async function handler(req, res) {
     // Save to KV database
     await saveSubscriber({ name, email, grade, subject, studyTime });
 
-    const timeLabel = {
-      '06:00':'6:00 AM','07:00':'7:00 AM','14:00':'2:00 PM',
-      '18:00':'6:00 PM','20:00':'8:00 PM',
-    }[studyTime] || studyTime;
+    // Validate studyTime is HH:MM format; convert to friendly label
+    const validTimes = {
+      '06:00':'6:00 AM','07:00':'7:00 AM','08:00':'8:00 AM',
+      '14:00':'2:00 PM','15:00':'3:00 PM','16:00':'4:00 PM',
+      '18:00':'6:00 PM','19:00':'7:00 PM','20:00':'8:00 PM',
+      '21:00':'9:00 PM',
+    };
+    const timeLabel = validTimes[studyTime] || (/^\d{2}:\d{2}$/.test(studyTime) ? studyTime : '8:00 AM');
 
     // Welcome email to subscriber
     await resend.emails.send({

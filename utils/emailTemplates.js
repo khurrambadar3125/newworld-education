@@ -11,7 +11,8 @@ const wrap = (content) => `<!DOCTYPE html><html><head><meta charset="utf-8"><met
 <div style="text-align:center;padding:16px;color:#555570;font-size:12px">★ Starky from NewWorld Education | newworld.education</div>
 </div></body></html>`;
 
-export function sessionReportEmail({ parentName, studentName, grade, subject, analysis, isSEN }) {
+export function sessionReportEmail({ parentName, studentName, grade, subject, analysis: rawAnalysis, isSEN }) {
+  const analysis = rawAnalysis || {};
   return wrap(`
 <div style="color:#4ade80;font-size:12px;font-weight:600;letter-spacing:2px;margin-bottom:6px">SESSION COMPLETE</div>
 <h1 style="color:#fff;font-size:22px;margin:0 0 4px">${studentName}'s Learning Report</h1>

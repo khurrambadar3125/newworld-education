@@ -209,7 +209,16 @@ export default async function handler(req, res) {
       .replace(/```json|```/g, '')
       .trim();
 
-    const parsed = JSON.parse(raw);
+    if (!raw) {
+      console.error('[DRILL API] Empty response from Claude');
+      throw new Error('Empty AI response');
+    }
+
+    let parsed;
+    try { parsed = JSON.parse(raw); } catch (parseErr) {
+      console.error('[DRILL API] JSON parse failed:', raw.slice(0, 200));
+      throw parseErr;
+    }
     return res.status(200).json(parsed);
 
   } catch (err) {

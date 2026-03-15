@@ -139,9 +139,10 @@ export default function StarkyBubble() {
 
   const sendMessage = async () => {
     const text = input.trim();
-    if (!text || loading) return;
+    if ((!text && !imageData) || loading) return;
 
-    const userMsg = { role: 'user', content: text };
+    const displayText = text || (imageData ? `📷 ${imageData.name}` : '');
+    const userMsg = { role: 'user', content: displayText };
     const newMsgs = [...messages, userMsg];
     setMessages(newMsgs);
     setInput('');
@@ -150,7 +151,7 @@ export default function StarkyBubble() {
 
     try {
       const body = {
-        message: text,
+        message: text || 'Please help me with this image.',
         userProfile,
         kidMode,
         sessionMemory: {
@@ -158,7 +159,10 @@ export default function StarkyBubble() {
           conversationHistory: conversationRef.current.slice(-10),
         },
       };
-      if (imageData) body.image = imageData;
+      if (imageData) {
+        body.imageBase64 = imageData.base64;
+        body.imageMediaType = imageData.type;
+      }
 
       const res = await fetch('/api/anthropic', {
         method: 'POST',
@@ -171,15 +175,17 @@ export default function StarkyBubble() {
 
       setMessages([...newMsgs, { role: 'assistant', content: reply }]);
       setImageData(null);
+      if (fileInputRef.current) fileInputRef.current.value = '';
+      if (cameraInputRef.current) cameraInputRef.current.value = '';
       if (voiceSupported) speakText(reply);
 
       conversationRef.current = [
         ...conversationRef.current,
-        { role: 'user', content: text },
+        { role: 'user', content: displayText },
         { role: 'assistant', content: reply },
       ];
 
-      saveMessage(text, reply);
+      saveMessage(displayText, reply);
 
       if (conversationRef.current.length === SUMMARIZE_AFTER * 2) {
         finalizeSession(conversationRef.current);
@@ -470,7 +476,7 @@ export default function StarkyBubble() {
                 rows={1}
                 disabled={loading}
               />
-              <button className="starky-send-btn" onClick={sendMessage} disabled={loading || !input.trim()}>↑</button>
+              <button className="starky-send-btn" onClick={sendMessage} disabled={loading || (!input.trim() && !imageData)}>↑</button>
             </div>
           </div>
         )}

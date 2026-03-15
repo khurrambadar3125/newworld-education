@@ -95,7 +95,9 @@ export async function recordQuestionSent({ email, grade, subject, question, date
   // Update subscriber's last question date and streak
   const subscriber = await kv.hgetall(`subscriber:${id}`);
   if (subscriber) {
-    const yesterday = new Date();
+    // Use Pakistan time (UTC+5) for consistent streak tracking
+    const nowPKT = new Date(Date.now() + 5 * 3600000);
+    const yesterday = new Date(nowPKT);
     yesterday.setDate(yesterday.getDate() - 1);
     const yesterdayKey = yesterday.toISOString().split('T')[0];
 

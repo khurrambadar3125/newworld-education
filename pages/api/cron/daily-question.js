@@ -104,11 +104,14 @@ export default async function handler(req, res) {
 
         // Build email HTML
         const html = dailyQuestionEmail({
-          name:     recipient.name,
-          grade:    recipient.grade,
-          subject:  recipient.subject,
+          studentName: recipient.name,
+          grade:       recipient.grade,
+          subject:     recipient.subject,
           question,
-          date:     new Date().toLocaleDateString('en-GB', { weekday:'long', day:'numeric', month:'long', year:'numeric' }),
+          questionType: 'structured',
+          difficulty:   'medium',
+          answerUrl:    `https://www.newworld.education/?subject=${encodeURIComponent(recipient.subject)}&grade=${encodeURIComponent(recipient.grade)}`,
+          streakDays:   0,
         });
 
         // Send email

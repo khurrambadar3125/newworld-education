@@ -35,11 +35,18 @@ Options: 😵 Confused | 🤔 Unsure | 😊 Getting it | ✅ Got it!
 - ✅ Got it: Celebrate and advance`;
 
 export function buildSystemPrompt({ grade, subject, language = 'English', isSEN = false, senType = null, sessionCount = 0 }) {
+  const gradeLower = (grade || '').toLowerCase();
+  const isOLevel = gradeLower.includes('olevel') || gradeLower.includes('o level') || gradeLower === 'grade 9' || gradeLower === 'grade 10' || gradeLower === 'grade9' || gradeLower === 'grade10';
+  const isALevel = gradeLower.includes('alevel') || gradeLower.includes('a level') || gradeLower === 'grade 11' || gradeLower === 'grade 12' || gradeLower === 'grade11' || gradeLower === 'grade12';
   const gradeNum = parseInt(grade) || 0;
   const isFirstSession = sessionCount === 0;
 
   let gradeContext = '';
-  if (grade === 'KG' || gradeNum === 0) {
+  if (isALevel) {
+    gradeContext = 'Treat as young adult. Intellectually rigorous. A Level rewards analysis and evaluation. Connect to university admissions. Exam pressure is real — acknowledge it.';
+  } else if (isOLevel) {
+    gradeContext = 'Treat as young adult. Connect everything to real-world and careers. Cambridge exam-focused. Exam pressure is real — acknowledge it.';
+  } else if (grade === 'KG' || gradeLower === 'kg' || (gradeNum === 0 && !isOLevel && !isALevel)) {
     gradeContext = 'Use very simple words. Max 1-2 sentences. Lots of emojis. Everything feels like play.';
   } else if (gradeNum <= 5) {
     gradeContext = 'Simple clear language. Short paragraphs. Relatable examples: family, food, games.';
@@ -75,7 +82,7 @@ ${language !== 'English' ? `LANGUAGE: Respond in ${language}. Match the student'
 ${PSYCHOLOGICAL_SAFETY_RULES}
 ${isFirstSession ? TRUST_CONTRACT : ''}
 ${COMFORT_CHECKIN}
-${gradeNum >= 6 ? `\nCAREER CONNECTIONS: Every 5-7 sessions, connect ${subject} to real careers naturally. Embed critical thinking, creativity, communication in every interaction.` : ''}
+${(gradeNum >= 6 || isOLevel || isALevel) ? `\nCAREER CONNECTIONS: Every 5-7 sessions, connect ${subject} to real careers naturally. Embed critical thinking, creativity, communication in every interaction.` : ''}
 
 SUBJECT: You are an expert ${subject} tutor. Adapt explanations to Grade ${grade}.
 

@@ -16,7 +16,7 @@ export default async function handler(req, res) {
     try {
       const keys = await kv.get(`sessions:${student.studentId}`) || [];
       const recent = [];
-      for (const key of keys.slice(-5)) { const s = await kv.get(key); if (s) recent.push(typeof s === 'string' ? JSON.parse(s) : s); }
+      for (const key of keys.slice(-5)) { try { const s = await kv.get(key); if (s) recent.push(typeof s === 'string' ? JSON.parse(s) : s); } catch (e) { console.warn(`[WEEKLY PLANS] Skipping corrupt session ${key}:`, e.message); } }
       const plan = await generatePlan({ studentName: student.studentName, grade: student.grade, subjects: student.subjects || [student.subject], recentAnalyses: recent.map(r => r.analysis) });
       await kv.set(`plan:${student.studentId}:current`, plan);
       await resend.emails.send({ from: 'Starky at NewWorld <starky@newworld.education>', to: [student.parentEmail], subject: `★ ${student.studentName}'s Weekly Study Plan`, html: weeklyStudyPlanEmail({ parentName: student.parentName, studentName: student.studentName, grade: student.grade, plan }) });

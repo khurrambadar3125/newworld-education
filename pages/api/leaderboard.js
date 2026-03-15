@@ -14,7 +14,8 @@ export default async function handler(req, res) {
     try {
       const key = getWeekKey();
       const raw = await kv.get(key);
-      const board = raw ? JSON.parse(raw) : [];
+      let board = [];
+      try { board = raw ? (typeof raw === 'string' ? JSON.parse(raw) : raw) : []; } catch { board = []; }
       // Sort by score descending, take top 20
       board.sort((a, b) => b.score - a.score);
       return res.status(200).json({ board: board.slice(0, 20) });
@@ -34,7 +35,8 @@ export default async function handler(req, res) {
     try {
       const key = getWeekKey();
       const raw = await kv.get(key);
-      let board = raw ? JSON.parse(raw) : [];
+      let board = [];
+      try { board = raw ? (typeof raw === 'string' ? JSON.parse(raw) : raw) : []; } catch { board = []; }
 
       // Update or add entry
       const existing = board.findIndex(e => e.name === name && e.grade === grade);

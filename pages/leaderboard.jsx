@@ -62,7 +62,7 @@ export default function Leaderboard() {
         const saved = localStorage.getItem('nw_user');
         if (saved) {
           const profile = JSON.parse(saved);
-          const rank = (data.board || []).findIndex(e => e.name === profile.name.split(' ')[0] && e.grade === profile.grade);
+          const rank = (data.board || []).findIndex(e => e.name === (profile.name || '').split(' ')[0] && e.grade === profile.grade);
           if (rank !== -1) setMyRank(rank + 1);
         }
       } catch {}
@@ -83,7 +83,7 @@ export default function Leaderboard() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          name: userProfile.name.split(' ')[0],
+          name: (userProfile.name || 'Student').split(' ')[0],
           grade: userProfile.grade || 'Student',
           score,
           sessions: sessionsUsed,

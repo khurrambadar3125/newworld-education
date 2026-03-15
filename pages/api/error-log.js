@@ -30,7 +30,10 @@ export default async function handler(req, res) {
         </div>
       `,
     });
-  } catch {}
+  } catch (e) {
+    console.error('[ERROR LOG] Failed to send alert email:', e.message);
+    return res.status(500).json({ ok: false, error: 'Failed to send error alert' });
+  }
 
   return res.status(200).json({ ok: true });
 }
