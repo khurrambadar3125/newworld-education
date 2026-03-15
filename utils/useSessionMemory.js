@@ -27,6 +27,11 @@ function getKey(userProfile) {
   return `${STORAGE_KEY_PREFIX}${id}`;
 }
 
+function makeToken(email) {
+  // Must match the token check in /api/student-memory
+  return btoa(email.toLowerCase().trim()).slice(0, 16);
+}
+
 const EMPTY_MEMORY = {
   sessionSummary: '',
   conversationHistory: [],
@@ -134,7 +139,7 @@ export function useSessionMemory(userProfile) {
       // Also load from KV if signed in (overrides localStorage with server truth)
       if (userProfile?.email) {
         try {
-          const res = await fetch(`/api/student-memory?email=${encodeURIComponent(userProfile.email)}`);
+          const res = await fetch(`/api/student-memory?email=${encodeURIComponent(userProfile.email)}&token=${makeToken(userProfile.email)}`);
           if (res.ok) {
             const { memory } = await res.json();
             if (memory) {
@@ -169,7 +174,7 @@ export function useSessionMemory(userProfile) {
         fetch('/api/student-memory', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: userProfile.email, memory: toSave }),
+          body: JSON.stringify({ email: userProfile.email, token: makeToken(userProfile.email), memory: toSave }),
         }).catch(() => {});
       }
     } catch {}

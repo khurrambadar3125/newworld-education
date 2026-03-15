@@ -3,6 +3,16 @@ import { getStudentMemory } from '../../utils/db';
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') return res.status(405).end();
+
+  // Require dashboard password — same auth as dashboard-auth.js
+  const authHeader = req.headers.authorization;
+  const dashRole = req.headers['x-dash-role'];
+  const adminPw = process.env.DASHBOARD_ADMIN_PASSWORD;
+  const teacherPw = process.env.DASHBOARD_TEACHER_PASSWORD;
+  if (!authHeader || (authHeader !== `Bearer ${adminPw}` && authHeader !== `Bearer ${teacherPw}`)) {
+    return res.status(401).json({ error: 'Unauthorized — dashboard login required' });
+  }
+
   try {
     const subscribers = await getAllSubscribers();
     const students = await Promise.all(

@@ -1,14 +1,21 @@
 import { signIn, useSession } from "next-auth/react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
 export default function LoginPage() {
   const { data: session } = useSession();
   const router = useRouter();
+  const [error, setError] = useState('');
 
   useEffect(() => {
     if (session) router.push("/start");
-  }, [session]);
+    // Check for OAuth error in query params
+    if (router.query.error) {
+      setError(router.query.error === 'OAuthAccountNotLinked'
+        ? 'This email is already linked to another sign-in method.'
+        : 'Sign-in failed. Please try again.');
+    }
+  }, [session, router.query]);
 
   return (
     <div style={{
@@ -40,8 +47,13 @@ export default function LoginPage() {
         <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 15, marginBottom: 36 }}>
           Sign in to access your learning dashboard
         </p>
+        {error && (
+          <div style={{ background: 'rgba(248,113,113,0.1)', border: '1px solid rgba(248,113,113,0.3)', borderRadius: 12, padding: '12px 16px', marginBottom: 20, color: '#F87171', fontSize: 14, fontWeight: 600 }}>
+            {error}
+          </div>
+        )}
         <button
-          onClick={() => signIn("google")}
+          onClick={() => { setError(''); signIn("google"); }}
           style={{
             width: "100%",
             padding: "14px 24px",
@@ -62,8 +74,7 @@ export default function LoginPage() {
           Continue with Google
         </button>
         <p style={{ color: "rgba(255,255,255,0.25)", fontSize: 12, marginTop: 24 }}>
-          By signing in you agree to our{" "}
-          <a href="/disclaimer" style={{ color: "rgba(255,255,255,0.4)" }}>terms & disclaimer</a>
+          By signing in you agree to our terms of service.
         </p>
       </div>
     </div>

@@ -479,7 +479,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           <a href="/homework">🏠 Homework Help</a>
           <a href="/subscribe">📬 Daily Questions</a>
           <a href="/leaderboard">🏆 Leaderboard</a>
-          <a href="/school">🏫 For Schools</a>
+          <a href="/pricing">🏫 For Schools</a>
           </div>
       )}
 
@@ -493,10 +493,9 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
         </div>
       )}
 
-      {/* ── URDU HELP BUTTON ONLY ── */}
+      {/* ── URDU HELP ── */}
       <div style={{background:'rgba(255,255,255,0.02)',borderBottom:'1px solid rgba(255,255,255,0.05)',padding:'8px 20px',display:'flex',justifyContent:'flex-end'}}>
-        <a onClick={() => window.dispatchEvent(new CustomEvent("starky-urdu"))} style={{display:'inline-flex',alignItems:'center',gap:'6px',background:'rgba(79,142,247,0.1)',border:'1px solid rgba(79,142,247,0.25)',borderRadius:'100px',padding:'6px 14px',fontSize:'12px',fontWeight:'700',color:'#4F8EF7',textDecoration:'none'}}>
-        </a>
+        <span style={{fontSize:'12px',fontWeight:'600',color:'rgba(255,255,255,0.35)'}}>اردو میں مدد کے لیے اردو میں ٹائپ کریں — Starky خود بخود اردو میں جواب دے گا</span>
       </div>
 
       <section className="hero">
@@ -630,6 +629,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           <a href="/parent">Parents</a>
           <a href="/pricing">Pricing</a>
           <a href="/past-papers">Past Papers</a>
+          <a href="/drill">Practice Drill</a>
           <a href="/textbooks">Textbooks</a>
           <a href="/homework">Homework Help</a>
           <a href="/arts">Arts</a>
@@ -639,7 +639,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           <a href="/music-for-all">Music for All</a>
           <a href="/reading-for-all">Reading for All</a>
           <a href="/ibcc">IBCC Calculator</a>
-          <a href="/school">For Schools</a>
+          <a href="/pricing">For Schools</a>
           <a href="/subscribe">Daily Questions</a>
           <a href="/leaderboard">Leaderboard</a>
           <a href="/dashboard">Teacher Dashboard</a>

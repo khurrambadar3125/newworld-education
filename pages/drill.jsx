@@ -82,19 +82,20 @@ const SESSION_LENGTH = 10;
 const TIMER_MCQ = 90;
 const TIMER_STRUCTURED = 240;
 
+const isMob = typeof window !== 'undefined' && window.innerWidth < 640;
 const S = {
   page: { minHeight:'100vh', background:'#080C18', color:'#fff', fontFamily:"-apple-system,BlinkMacSystemFont,'Inter',sans-serif", padding:'0 0 60px' },
-  nav: { display:'flex', alignItems:'center', justifyContent:'space-between', padding:'14px 20px', borderBottom:'1px solid rgba(255,255,255,.07)', background:'rgba(8,12,24,.97)', position:'sticky', top:0, zIndex:50, backdropFilter:'blur(12px)' },
-  navLogo: { fontFamily:"'Sora',sans-serif", fontWeight:800, fontSize:17, color:'#fff', textDecoration:'none', display:'flex', alignItems:'center', gap:6 },
-  navRight: { display:'flex', alignItems:'center', gap:10 },
-  navLink: { fontSize:13, color:'rgba(255,255,255,.5)', textDecoration:'none', padding:'6px 12px', borderRadius:8, background:'rgba(255,255,255,.05)', border:'1px solid rgba(255,255,255,.08)' },
-  container: { maxWidth:680, margin:'0 auto', padding:'24px 16px' },
-  h1: { fontFamily:"'Sora',sans-serif", fontSize:26, fontWeight:800, margin:'0 0 6px', lineHeight:1.2 },
-  subtitle: { fontSize:14, color:'rgba(255,255,255,.45)', margin:'0 0 28px', lineHeight:1.6 },
-  card: { background:'rgba(255,255,255,.04)', border:'1px solid rgba(255,255,255,.08)', borderRadius:16, padding:20, marginBottom:16 },
+  nav: { display:'flex', alignItems:'center', justifyContent:'space-between', padding:isMob?'12px 14px':'14px 20px', borderBottom:'1px solid rgba(255,255,255,.07)', background:'rgba(8,12,24,.97)', position:'sticky', top:0, zIndex:50, backdropFilter:'blur(12px)' },
+  navLogo: { fontFamily:"'Sora',sans-serif", fontWeight:800, fontSize:isMob?14:17, color:'#fff', textDecoration:'none', display:'flex', alignItems:'center', gap:6 },
+  navRight: { display:'flex', alignItems:'center', gap:isMob?6:10 },
+  navLink: { fontSize:isMob?11:13, color:'rgba(255,255,255,.5)', textDecoration:'none', padding:isMob?'5px 8px':'6px 12px', borderRadius:8, background:'rgba(255,255,255,.05)', border:'1px solid rgba(255,255,255,.08)' },
+  container: { maxWidth:680, margin:'0 auto', padding:isMob?'16px 12px':'24px 16px' },
+  h1: { fontFamily:"'Sora',sans-serif", fontSize:isMob?20:26, fontWeight:800, margin:'0 0 6px', lineHeight:1.2 },
+  subtitle: { fontSize:isMob?13:14, color:'rgba(255,255,255,.45)', margin:'0 0 28px', lineHeight:1.6 },
+  card: { background:'rgba(255,255,255,.04)', border:'1px solid rgba(255,255,255,.08)', borderRadius:16, padding:isMob?14:20, marginBottom:16 },
   label: { fontSize:11, fontWeight:700, letterSpacing:'.07em', textTransform:'uppercase', color:'rgba(255,255,255,.4)', marginBottom:10, display:'block' },
-  grid2: { display:'grid', gridTemplateColumns:'1fr 1fr', gap:8 },
-  grid3: { display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:8 },
+  grid2: { display:'grid', gridTemplateColumns:isMob?'1fr':'1fr 1fr', gap:8 },
+  grid3: { display:'grid', gridTemplateColumns:isMob?'1fr 1fr':'repeat(3,1fr)', gap:8 },
   optionBtn: (selected) => ({ background:selected?'rgba(79,142,247,.15)':'rgba(255,255,255,.04)', border:`1px solid ${selected?'rgba(79,142,247,.5)':'rgba(255,255,255,.08)'}`, borderRadius:10, padding:'10px 14px', cursor:'pointer', color:selected?'#4F8EF7':'rgba(255,255,255,.65)', fontSize:13, fontWeight:selected?700:500, textAlign:'left', transition:'all .15s', WebkitTapHighlightColor:'transparent' }),
   primaryBtn: { background:'linear-gradient(135deg,#4F8EF7,#6366F1)', border:'none', borderRadius:12, padding:'14px 28px', color:'#fff', fontSize:15, fontWeight:700, fontFamily:"'Sora',sans-serif", cursor:'pointer', width:'100%', marginTop:8, WebkitTapHighlightColor:'transparent' },
   ghostBtn: { background:'rgba(255,255,255,.05)', border:'1px solid rgba(255,255,255,.1)', borderRadius:12, padding:'13px 28px', color:'rgba(255,255,255,.6)', fontSize:14, fontWeight:600, cursor:'pointer', width:'100%', marginTop:8, WebkitTapHighlightColor:'transparent' },
@@ -131,7 +132,7 @@ function QuestionTimer({ seconds, onExpire, paused }) {
 export default function DrillPage() {
   const [userProfile, setUserProfile] = useState(null);
   const sr = useSpacedRep(userProfile);
-  const { logSession, streakDays, totalQuestions, badges } = useStreaks(userProfile);
+  const { logSession, streak, totalQuestions, badges } = useStreaks(userProfile?.email || userProfile?.name || 'guest');
 
   // Setup
   const [mode, setMode] = useState('');
@@ -742,7 +743,7 @@ export default function DrillPage() {
             );
           })()}
           {/* Streak */}
-          <div style={{marginBottom:16}}><StreakWidget /></div>
+          <div style={{marginBottom:16}}><StreakWidget userId={userProfile?.email || userProfile?.name || 'guest'} /></div>
 
           {/* Breakdown */}
           <div style={S.card}>

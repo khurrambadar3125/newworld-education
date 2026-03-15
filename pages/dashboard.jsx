@@ -23,16 +23,22 @@ export default function Dashboard() {
     if (data.role) {
       setRole(data.role);
       sessionStorage.setItem('dash_role', data.role);
-      loadData();
+      sessionStorage.setItem('dash_pw', password);
+      loadData(password);
     } else {
       setError('Incorrect password');
     }
   };
 
-  const loadData = async () => {
+  const loadData = async (pw) => {
+    const token = pw || sessionStorage.getItem('dash_pw');
+    if (!token) return;
     setLoading(true);
     try {
-      const res = await fetch('/api/dashboard-data');
+      const res = await fetch('/api/dashboard-data', {
+        headers: { 'Authorization': `Bearer ${token}` },
+      });
+      if (res.status === 401) { setRole(null); sessionStorage.clear(); return; }
       const data = await res.json();
       setStudents(data.students || []);
       setStats(data.stats || {});

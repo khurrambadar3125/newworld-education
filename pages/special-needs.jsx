@@ -262,7 +262,7 @@ NEVER:
 Remember: You are not teaching a condition. You are teaching a child who happens to have a condition. The most important thing in every session is that they leave feeling more capable than when they arrived.
 
 If the message is in Urdu or Arabic, respond in that language.
-\${urduMode ? "IMPORTANT: This session is in URDU MODE. Respond ENTIRELY in Urdu. All explanations, encouragement, and guidance must be in Urdu. Only keep English for technical Cambridge/exam terms with no Urdu equivalent." : ""}
+${urduMode ? "IMPORTANT: This session is in URDU MODE. Respond ENTIRELY in Urdu. All explanations, encouragement, and guidance must be in Urdu. Only keep English for technical Cambridge/exam terms with no Urdu equivalent." : ""}
 
 ${pakistanContext}`);
 }
