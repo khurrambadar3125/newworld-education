@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import { useTheme } from '../pages/_app';
 
 const MENU_ITEMS = [
   { href: '/',               label: '🏠 Home' },
@@ -23,6 +24,7 @@ const MENU_ITEMS = [
 
 export default function Nav({ current, accent }) {
   const [open, setOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
   const color = accent || '#4F8EF7';
 
   return (
@@ -70,6 +72,9 @@ export default function Nav({ current, accent }) {
       <nav className="nw-nav">
         <Link href="/"><a className="nw-nav-logo">NewWorldEdu<span>★</span></a></Link>
         <div className="nw-nav-right">
+          <button className="nw-nav-burger" onClick={toggleTheme} aria-label="Toggle light/dark mode" title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}>
+            {theme === 'dark' ? '☀️' : '🌙'}
+          </button>
           <Link href="/pricing"><a className="nw-nav-plans">Plans</a></Link>
           <button className="nw-nav-burger" onClick={() => setOpen(!open)} aria-label="Menu">
             {open ? '✕' : '☰'}

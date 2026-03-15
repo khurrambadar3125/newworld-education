@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { useSessionMemory, detectAndSaveMistake } from '../utils/useSessionMemory';
+import { useTheme } from '../pages/_app';
 
 export default function StarkyBubble() {
   const [open, setOpen] = useState(false);
@@ -14,6 +15,7 @@ export default function StarkyBubble() {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [kidMode, setKidMode] = useState(false);
   const [imageData, setImageData] = useState(null);
+  const { theme, toggleTheme } = useTheme();
   const loadingRef = useRef(false);
   const messagesRef = useRef([]);
   const synthRef = useRef(null);
