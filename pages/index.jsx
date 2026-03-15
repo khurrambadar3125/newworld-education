@@ -467,20 +467,23 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
       {menuOpen && (
         <div className="dr" onClick={() => setMenuOpen(false)}>
           <a href="/">🏠 Home</a>
+          <a href="/drill">🎯 Practice Drill</a>
+          <a href="/past-papers">📚 Past Papers</a>
           <a href="/special-needs">💜 Special Needs</a>
           <a href="/parent">👨‍👩‍👧 Parent Portal</a>
-          <a href="/pricing">💳 Plans & Pricing</a>
-          <a href="/past-papers">📚 Past Papers</a>
-        
-            <a href="/textbooks" className="nl">📖 Textbooks</a>
-            <a href="/arts" className="nl">🎨 Learn Arts</a>
-            <a href="/music" className="nl">🎵 Learn Music</a>
-            <a href="/reading" className="nl">📚 Lets READ</a>
           <a href="/homework">🏠 Homework Help</a>
+          <a href="/essay">✍️ Essay Marking</a>
+          <a href="/countdown">⏱️ Exam Countdown</a>
           <a href="/subscribe">📬 Daily Questions</a>
           <a href="/leaderboard">🏆 Leaderboard</a>
+          <a href="/dashboard">📊 Teacher Dashboard</a>
+          <a href="/textbooks">📖 Textbooks</a>
+          <a href="/arts">🎨 Learn Arts</a>
+          <a href="/music">🎵 Learn Music</a>
+          <a href="/reading">📚 Lets READ</a>
           <a href="/school">🏫 For Schools</a>
-          </div>
+          <a href="/pricing">💳 Plans & Pricing</a>
+        </div>
       )}
 
       {/* ── EXAM SEASON BANNER ── */}
