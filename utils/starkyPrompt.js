@@ -16,6 +16,7 @@
  */
 
 import { INTENTS, detectIntent, requiresEscalation, getEscalationType } from './starkyIntents';
+import { addKnowledgeToPrompt } from './senKnowledge';
 
 // ─── Grade classification ────────────────────────────────────────────────────
 
@@ -551,6 +552,11 @@ export function buildMessages({ userProfile = {}, sessionMemory = {}, userMessag
     case 'OLEVEL': systemPrompt = buildOLevelPrompt(userProfile, sessionMemory, intent); break;
     case 'ALEVEL': systemPrompt = buildALevelPrompt(userProfile, sessionMemory, intent); break;
     default:       systemPrompt = buildOLevelPrompt(userProfile, sessionMemory, intent);
+  }
+
+  // 3b. Inject SEN specialist knowledge when student has special educational needs
+  if (userProfile.senFlag || userProfile.isSEN) {
+    systemPrompt = addKnowledgeToPrompt(systemPrompt);
   }
 
   // 4. Build conversation history

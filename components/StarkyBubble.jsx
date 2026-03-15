@@ -309,11 +309,12 @@ export default function StarkyBubble() {
           padding: 16px; max-width: 700px; width: 100%; margin: 0 auto;
         }
         .starky-msg {
-          max-width: 85%; font-size: 14px; line-height: 1.6;
+          max-width: 85%; font-size: 15px; line-height: 1.7;
           padding: 10px 13px; border-radius: 14px;
           word-break: break-word; white-space: pre-wrap;
+          letter-spacing: 0.01em;
         }
-        .starky-chat.fullscreen .starky-msg { font-size: 16px; padding: 12px 16px; max-width: 75%; }
+        .starky-chat.fullscreen .starky-msg { font-size: 17px; padding: 12px 16px; max-width: 75%; }
         .starky-msg.user {
           align-self: flex-end;
           background: linear-gradient(135deg, #4F8EF7, #6366F1);
@@ -323,7 +324,7 @@ export default function StarkyBubble() {
           align-self: flex-start;
           background: rgba(255,255,255,.07);
           border: 1px solid rgba(255,255,255,.08);
-          color: rgba(255,255,255,.85); border-bottom-left-radius: 3px;
+          color: rgba(255,255,255,.92); border-bottom-left-radius: 3px;
         }
         .starky-msg.typing { opacity: .5; font-style: italic; }
         .starky-input-row {
@@ -409,6 +410,13 @@ export default function StarkyBubble() {
           border-top: 5px solid transparent; border-bottom: 5px solid transparent;
           border-left: 6px solid rgba(79,142,247,.3);
         }
+        /* Accessibility: reduce motion for vestibular/seizure sensitivity */
+        @media (prefers-reduced-motion: reduce) {
+          .starky-fab.pulse { animation: none; }
+          .starky-fab-label { animation: none; opacity: 1; }
+          .starky-chat { animation: none; }
+          .starky-msg, .starky-fab, .starky-chat { transition: none; }
+        }
       `}</style>
 
       <div className="starky-bubble-wrap">
@@ -444,11 +452,11 @@ export default function StarkyBubble() {
               </div>
             </div>
 
-            <div className="starky-messages">
+            <div className="starky-messages" role="log" aria-label="Chat with Starky" aria-live="polite">
               {messages.map((m, i) => (
-                <div key={i} className={`starky-msg ${m.role}`}>{m.content}</div>
+                <div key={i} className={`starky-msg ${m.role}`} aria-label={m.role === 'assistant' ? 'Starky says' : 'You said'}>{m.content}</div>
               ))}
-              {loading && <div className="starky-msg assistant typing">Starky is thinking…</div>}
+              {loading && <div className="starky-msg assistant typing" aria-live="assertive">Starky is thinking…</div>}
               <div ref={messagesEndRef} />
             </div>
 
@@ -470,6 +478,7 @@ export default function StarkyBubble() {
                 ref={inputRef}
                 className="starky-input"
                 placeholder="Ask Starky anything…"
+                aria-label="Type your message to Starky"
                 value={input}
                 onChange={e => setInput(e.target.value)}
                 onKeyDown={handleKey}

@@ -550,7 +550,10 @@ export default function SpecialNeedsPage() {
   const [isMobile, setIsMobile]   = useState(false);
   const [progress, setProgress]   = useState({});
   const chatEndRef = useRef(null);
-  const { callsLeft, limitReached, recordCall } = useSessionLimit();
+  // SEN students get UNLIMITED sessions — never rate-limit special needs learners
+  const { recordCall } = useSessionLimit();
+  const limitReached = false;
+  const callsLeft = 999;
 
   useEffect(() => {
     const fn = () => setIsMobile(window.innerWidth < 768);
@@ -570,6 +573,9 @@ export default function SpecialNeedsPage() {
     @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
     @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.6}}
     @keyframes glow{0%,100%{box-shadow:0 0 20px ${accentColor}30}50%{box-shadow:0 0 40px ${accentColor}60}}
+    @media (prefers-reduced-motion: reduce) {
+      *{animation:none !important;transition:none !important}
+    }
   `;
 
   const S = {
@@ -907,13 +913,13 @@ ${focus.id !== "parent" ? `\n*For the adult:* Tell me your child's name if you'd
 
             {/* Chat */}
             <div style={{ background:"rgba(255,255,255,0.03)", border:"1px solid rgba(255,255,255,0.08)", borderRadius:20, overflow:"hidden" }}>
-              <div style={{ height:isMobile?400:500, overflowY:"auto", padding:isMobile?14:20, display:"flex", flexDirection:"column", gap:14 }}>
+              <div role="log" aria-label="Chat with Starky" aria-live="polite" style={{ height:isMobile?400:500, overflowY:"auto", padding:isMobile?14:20, display:"flex", flexDirection:"column", gap:14 }}>
                 {messages.map((msg, i) => (
-                  <div key={i} style={{ display:"flex", justifyContent:msg.role==="user"?"flex-end":"flex-start", gap:10, animation:"fadeUp 0.3s ease" }}>
+                  <div key={i} aria-label={msg.role==="assistant"?"Starky says":"You said"} style={{ display:"flex", justifyContent:msg.role==="user"?"flex-end":"flex-start", gap:10, animation:"fadeUp 0.3s ease" }}>
                     {msg.role==="assistant" && (
-                      <div style={{ width:32, height:32, borderRadius:"50%", background:accentColor+"20", border:"1px solid "+accentColor+"40", display:"flex", alignItems:"center", justifyContent:"center", fontSize:16, flexShrink:0, marginTop:2 }}>💜</div>
+                      <div aria-hidden="true" style={{ width:32, height:32, borderRadius:"50%", background:accentColor+"20", border:"1px solid "+accentColor+"40", display:"flex", alignItems:"center", justifyContent:"center", fontSize:16, flexShrink:0, marginTop:2 }}>💜</div>
                     )}
-                    <div style={{ maxWidth:"88%", padding:"13px 16px", borderRadius:16, background:msg.role==="user" ? "linear-gradient(135deg,"+accentColor+"CC,"+accentColor+"88)" : "rgba(255,255,255,0.06)", color:msg.role==="user" ? "#060B20" : "#fff", fontSize:14, lineHeight:1.85, fontWeight:msg.role==="user"?700:400, whiteSpace:"pre-wrap" }}>
+                    <div style={{ maxWidth:"88%", padding:"13px 16px", borderRadius:16, background:msg.role==="user" ? "linear-gradient(135deg,"+accentColor+"CC,"+accentColor+"88)" : "rgba(255,255,255,0.06)", color:msg.role==="user" ? "#060B20" : "rgba(255,255,255,0.93)", fontSize:15, lineHeight:1.85, fontWeight:msg.role==="user"?700:400, whiteSpace:"pre-wrap" }}>
                       {msg.content}
                     </div>
                   </div>
@@ -934,12 +940,13 @@ ${focus.id !== "parent" ? `\n*For the adult:* Tell me your child's name if you'd
               <div style={{ padding:"12px 16px", borderTop:"1px solid "+accentColor+"15" }}>
                 <textarea value={input} onChange={e=>setInput(e.target.value)}
                   onKeyDown={e => { if(e.key==="Enter"&&(e.ctrlKey||e.metaKey)) sendMessage(input); }}
+                  aria-label={`Type your message to Starky about ${subject||focus?.name||"anything"}`}
                   placeholder={`Ask Starky about ${subject||focus?.name||"anything"}... Ctrl+Enter to send`}
                   rows={isMobile?3:4}
-                  style={{ width:"100%", background:"rgba(255,255,255,0.04)", border:"1px solid "+accentColor+"22", borderRadius:14, padding:"12px 14px", color:"#fff", fontSize:14, fontFamily:"'Nunito',sans-serif", resize:"vertical", lineHeight:1.6 }}/>
+                  style={{ width:"100%", background:"rgba(255,255,255,0.04)", border:"1px solid "+accentColor+"22", borderRadius:14, padding:"12px 14px", color:"#fff", fontSize:15, fontFamily:"'Nunito',sans-serif", resize:"vertical", lineHeight:1.7 }}/>
                 <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginTop:8 }}>
                   <span style={{ fontSize:11, color:"rgba(255,255,255,0.2)" }}>
-                    {callsLeft<=10&&!limitReached ? `${callsLeft} calls left` : "Ctrl+Enter to send"}
+                    Unlimited sessions for SEN students · Ctrl+Enter to send
                   </span>
                   <button onClick={()=>sendMessage(input)} disabled={!input.trim()||loading||limitReached}
                     style={{ ...S.btn, background:input.trim()&&!loading ? "linear-gradient(135deg,"+accentColor+","+accentColor+"BB)" : "rgba(255,255,255,0.08)", borderRadius:14, padding:"10px 24px", color:input.trim()&&!loading?"#060B20":"rgba(255,255,255,0.3)", fontWeight:900, fontSize:14 }}>
