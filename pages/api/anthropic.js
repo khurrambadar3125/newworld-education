@@ -136,9 +136,11 @@ export default async function handler(req, res) {
     }
 
     // ── Normal Claude response ────────────────────────────────────────────────
+    // Use more tokens for image responses (need room for deep analysis)
+    const hasImage = built.messages.some(m => Array.isArray(m.content) && m.content.some(c => c.type === 'image'));
     const response = await client.messages.create({
       model: 'claude-sonnet-4-20250514',
-      max_tokens: 1024,
+      max_tokens: hasImage ? 2048 : 1024,
       system: built.systemPrompt,
       messages: built.messages,
     });

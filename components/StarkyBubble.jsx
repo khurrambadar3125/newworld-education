@@ -118,23 +118,94 @@ export default function StarkyBubble() {
 
   const stopSpeaking = () => { synthRef.current?.cancel(); setIsSpeaking(false); };
 
-  const handleImageFile = (file) => {
+  const pendingImageRef = useRef(null);
+
+  const handleImageFile = (file, autoSend = false) => {
     if (!file) return;
     const reader = new FileReader();
-    reader.onload = (ev) => setImageData({
-      base64: ev.target.result.split(',')[1],
-      type: file.type,
-      name: file.name,
-    });
+    reader.onload = (ev) => {
+      const data = {
+        base64: ev.target.result.split(',')[1],
+        type: file.type,
+        name: file.name,
+      };
+      setImageData(data);
+      // Auto-send: camera captures should immediately trigger Starky to read the image
+      if (autoSend) {
+        pendingImageRef.current = data;
+        // Use setTimeout to let state update, then trigger send
+        setTimeout(() => sendWithImage(data), 100);
+      }
+    };
     reader.readAsDataURL(file);
   };
 
-  const handleImageSelect = (e) => handleImageFile(e.target.files?.[0]);
-  const handleCameraSelect = (e) => handleImageFile(e.target.files?.[0]);
+  const handleImageSelect = (e) => handleImageFile(e.target.files?.[0], false);  // gallery = manual send
+  const handleCameraSelect = (e) => handleImageFile(e.target.files?.[0], true);  // camera = auto-send
   const clearImage = () => {
     setImageData(null);
     if (fileInputRef.current) fileInputRef.current.value = '';
     if (cameraInputRef.current) cameraInputRef.current.value = '';
+  };
+
+  // Direct image send — used by camera auto-capture
+  const sendWithImage = async (imgData) => {
+    if (loading) return;
+    const img = imgData || imageData;
+    if (!img) return;
+
+    const displayText = `📷 ${img.name}`;
+    const userMsg = { role: 'user', content: displayText };
+    const newMsgs = [...messages, userMsg];
+    setMessages(newMsgs);
+    setInput('');
+    setLoading(true);
+    stopSpeaking();
+
+    try {
+      const body = {
+        message: `The student just took a photo of something from their studies. Read this image thoroughly and comprehensively. Identify EXACTLY what it shows — the subject, topic, chapter, specific concepts, any questions visible, any handwriting or text. Then respond with:
+1. A clear statement of what you see: "I can see [specific content]"
+2. The subject and topic it belongs to
+3. Immediately offer to help — suggest 2-3 things you can do with this (explain the concept, quiz them, solve a visible question, create practice questions on this topic, or help them understand their notes better)
+Be specific and knowledgeable — show you deeply understand the content, not just that you see an image.`,
+        userProfile,
+        kidMode,
+        sessionMemory: {
+          ...sessionMemory,
+          conversationHistory: conversationRef.current.slice(-10),
+        },
+        imageBase64: img.base64,
+        imageMediaType: img.type,
+      };
+
+      const res = await fetch('/api/anthropic', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+
+      const data = await res.json();
+      const reply = data.response || data.content || 'Something went wrong. Try again!';
+
+      setMessages([...newMsgs, { role: 'assistant', content: reply }]);
+      setImageData(null);
+      pendingImageRef.current = null;
+      if (fileInputRef.current) fileInputRef.current.value = '';
+      if (cameraInputRef.current) cameraInputRef.current.value = '';
+      if (voiceSupported) speakText(reply);
+
+      conversationRef.current = [
+        ...conversationRef.current,
+        { role: 'user', content: displayText },
+        { role: 'assistant', content: reply },
+      ];
+      saveMessage(displayText, reply);
+    } catch {
+      setMessages([...newMsgs, { role: 'assistant', content: 'Something went wrong. Please try again!' }]);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const sendMessage = async () => {
@@ -151,7 +222,7 @@ export default function StarkyBubble() {
 
     try {
       const body = {
-        message: text || 'Please help me with this image.',
+        message: text || `The student sent an image. Read it thoroughly and comprehensively. Identify what it shows — subject, topic, concepts, any questions or text visible. Then offer to help with it.`,
         userProfile,
         kidMode,
         sessionMemory: {
