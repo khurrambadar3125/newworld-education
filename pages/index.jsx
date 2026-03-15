@@ -479,7 +479,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           <a href="/homework">🏠 Homework Help</a>
           <a href="/subscribe">📬 Daily Questions</a>
           <a href="/leaderboard">🏆 Leaderboard</a>
-          <a href="/pricing">🏫 For Schools</a>
+          <a href="/school">🏫 For Schools</a>
           </div>
       )}
 
@@ -639,7 +639,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           <a href="/music-for-all">Music for All</a>
           <a href="/reading-for-all">Reading for All</a>
           <a href="/ibcc">IBCC Calculator</a>
-          <a href="/pricing">For Schools</a>
+          <a href="/school">For Schools</a>
           <a href="/subscribe">Daily Questions</a>
           <a href="/leaderboard">Leaderboard</a>
           <a href="/dashboard">Teacher Dashboard</a>

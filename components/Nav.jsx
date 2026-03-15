@@ -13,6 +13,7 @@ const MENU_ITEMS = [
   { href: '/countdown',      label: '⏱️ Exam Countdown' },
   { href: '/essay',          label: '✍️ Essay Marking' },
   { href: '/textbooks',      label: '📖 Textbooks' },
+  { href: '/school',         label: '🏫 For Schools' },
   { href: '/pricing',        label: '💳 Plans & Pricing' },
 ];
 
