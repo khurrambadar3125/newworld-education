@@ -123,65 +123,55 @@ export default function StarkyBubble() {
 
   const pendingImageRef = useRef(null);
 
-  // Simple, bulletproof image reader — no canvas, no Image(), no createObjectURL
-  // These APIs break on iOS Safari when returning from camera UI
-  const readImageFile = (file, callback) => {
-    const reader = new FileReader();
-    reader.onload = () => {
-      const b64 = reader.result.split(',')[1];
-      if (!b64 || b64.length < 50) { callback(null); return; }
-      // Force valid media type — iOS HEIC gets rejected by Anthropic
-      let type = file.type || 'image/jpeg';
-      if (!['image/jpeg','image/png','image/gif','image/webp'].includes(type)) type = 'image/jpeg';
-      callback({ base64: b64, type, name: file.name || 'photo.jpg' });
-    };
-    reader.onerror = () => callback(null);
-    reader.readAsDataURL(file);
+  // Resize image using createImageBitmap (iOS 15+, all modern browsers)
+  // Falls back to direct FileReader if not supported
+  const processImage = async (file) => {
+    try {
+      // createImageBitmap works on iOS 15+ and doesn't need Image() or createObjectURL
+      if (typeof createImageBitmap === 'function') {
+        const bitmap = await createImageBitmap(file);
+        const MAX = 800;
+        let w = bitmap.width, h = bitmap.height;
+        if (w > MAX || h > MAX) {
+          if (w > h) { h = Math.round(h * MAX / w); w = MAX; }
+          else { w = Math.round(w * MAX / h); h = MAX; }
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = w; canvas.height = h;
+        canvas.getContext('2d').drawImage(bitmap, 0, 0, w, h);
+        bitmap.close();
+        const b64 = canvas.toDataURL('image/jpeg', 0.5).split(',')[1];
+        if (b64 && b64.length > 100) {
+          return { base64: b64, type: 'image/jpeg', name: 'photo.jpg' };
+        }
+      }
+    } catch (e) {
+      console.warn('[StarkyBubble] createImageBitmap failed, using FileReader:', e.message);
+    }
+    // Fallback: direct FileReader (no resize — works everywhere)
+    return new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const b64 = reader.result.split(',')[1];
+        if (!b64 || b64.length < 50) { resolve(null); return; }
+        let type = file.type || 'image/jpeg';
+        if (!['image/jpeg','image/png','image/gif','image/webp'].includes(type)) type = 'image/jpeg';
+        resolve({ base64: b64, type, name: file.name || 'photo.jpg' });
+      };
+      reader.onerror = () => resolve(null);
+      reader.readAsDataURL(file);
+    });
   };
 
-  const handleImageFile = (file, autoSend) => {
+  const handleImageFile = async (file, autoSend) => {
     if (!file) return;
-    // If file is over 4MB, try to compress via canvas first — otherwise read directly
-    if (file.size > 4 * 1024 * 1024) {
-      try {
-        const img = new Image();
-        const url = URL.createObjectURL(file);
-        img.onload = () => {
-          try {
-            const MAX = 1000;
-            let w = img.width, h = img.height;
-            if (w > h) { h = Math.round(h * MAX / w); w = MAX; } else { w = Math.round(w * MAX / h); h = MAX; }
-            const c = document.createElement('canvas'); c.width = w; c.height = h;
-            c.getContext('2d').drawImage(img, 0, 0, w, h);
-            const b64 = c.toDataURL('image/jpeg', 0.6).split(',')[1];
-            URL.revokeObjectURL(url);
-            if (b64 && b64.length > 100) {
-              const data = { base64: b64, type: 'image/jpeg', name: 'photo.jpg' };
-              setImageData(data);
-              if (autoSend) { pendingImageRef.current = data; setTimeout(() => sendWithImage(data), 400); }
-            } else {
-              // Canvas failed — read raw anyway (API will handle size error gracefully)
-              readImageFile(file, (data) => {
-                if (!data) return;
-                setImageData(data);
-                if (autoSend) { pendingImageRef.current = data; setTimeout(() => sendWithImage(data), 400); }
-              });
-            }
-          } catch { URL.revokeObjectURL(url); readImageFile(file, (d) => { if(d){setImageData(d);if(autoSend){pendingImageRef.current=d;setTimeout(()=>sendWithImage(d),400);}} }); }
-        };
-        img.onerror = () => { URL.revokeObjectURL(url); readImageFile(file, (d) => { if(d){setImageData(d);if(autoSend){pendingImageRef.current=d;setTimeout(()=>sendWithImage(d),400);}} }); };
-        img.src = url;
-        return;
-      } catch { /* fall through to direct read */ }
+    const data = await processImage(file);
+    if (!data) { alert('Could not read that image. Please try again.'); return; }
+    setImageData(data);
+    if (autoSend) {
+      pendingImageRef.current = data;
+      setTimeout(() => sendWithImage(data), 500);
     }
-    readImageFile(file, (data) => {
-      if (!data) { alert('Could not read that image. Please try again.'); return; }
-      setImageData(data);
-      if (autoSend) {
-        pendingImageRef.current = data;
-        setTimeout(() => sendWithImage(data), 400);
-      }
-    });
   };
 
   const handleImageSelect = (e) => { const f = e.target.files?.[0]; if (f) handleImageFile(f, false); };
