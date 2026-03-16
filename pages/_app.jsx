@@ -172,6 +172,100 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
             color: var(--text-secondary) !important;
             border-color: var(--border) !important;
           }
+
+          /* ── Light mode: Global overrides for ALL pages ── */
+          /* Body and backgrounds */
+          [data-theme="light"] .page,
+          [data-theme="light"] [style*="background:#0A0F1E"],
+          [data-theme="light"] [style*="background:#080C18"],
+          [data-theme="light"] [style*="background: #0A0F1E"],
+          [data-theme="light"] [style*="background: #080C18"] {
+            background: var(--bg-primary) !important;
+            color: var(--text-primary) !important;
+          }
+
+          /* Pricing page */
+          [data-theme="light"] .plan-card {
+            background: #fff !important;
+            border-color: rgba(0,0,0,0.1) !important;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+          }
+          [data-theme="light"] .plan-card.highlight {
+            background: #FAFBFF !important;
+            border-color: rgba(124,92,191,0.35) !important;
+          }
+          [data-theme="light"] .plan-name { color: var(--text-primary) !important; }
+          [data-theme="light"] .plan-for { color: var(--text-muted) !important; }
+          [data-theme="light"] .plan-price .amount { color: var(--text-primary) !important; }
+          [data-theme="light"] .plan-price .currency { color: var(--text-secondary) !important; }
+          [data-theme="light"] .plan-price .period { color: var(--text-muted) !important; }
+          [data-theme="light"] .pkr-price { color: var(--text-muted) !important; }
+          [data-theme="light"] .pkr-price span { color: var(--text-secondary) !important; }
+          [data-theme="light"] .plan-features li { color: var(--text-secondary) !important; border-color: rgba(0,0,0,0.06) !important; }
+          [data-theme="light"] .trial-banner {
+            background: rgba(43,181,90,0.08) !important;
+            border-color: rgba(43,181,90,0.25) !important;
+            color: var(--text-secondary) !important;
+          }
+          [data-theme="light"] .hero p { color: var(--text-muted) !important; }
+          [data-theme="light"] .hero h1 { color: var(--text-primary) !important; }
+          [data-theme="light"] .hero-badge { background: rgba(79,142,247,0.08) !important; }
+          [data-theme="light"] .back-link { color: var(--text-muted) !important; }
+          [data-theme="light"] .faq-item strong { color: var(--text-primary) !important; }
+          [data-theme="light"] .faq-item p { color: var(--text-muted) !important; }
+          [data-theme="light"] .faq-item { border-color: rgba(0,0,0,0.08) !important; }
+          [data-theme="light"] .faq h2 { color: var(--text-primary) !important; }
+          [data-theme="light"] .divider p { color: var(--text-muted) !important; }
+          [data-theme="light"] .popular-badge { color: #fff !important; }
+
+          /* Generic light overrides for inline-styled pages */
+          [data-theme="light"] [style*="color:#fff"],
+          [data-theme="light"] [style*="color: #fff"] {
+            color: var(--text-primary) !important;
+          }
+          [data-theme="light"] [style*="rgba(255,255,255,0.04)"],
+          [data-theme="light"] [style*="rgba(255,255,255,.04)"] {
+            background: rgba(0,0,0,0.03) !important;
+          }
+          [data-theme="light"] [style*="rgba(255,255,255,0.08)"],
+          [data-theme="light"] [style*="rgba(255,255,255,.08)"] {
+            border-color: rgba(0,0,0,0.1) !important;
+          }
+
+          /* Homepage sections */
+          [data-theme="light"] .nav {
+            background: rgba(255,255,255,0.97) !important;
+            border-color: rgba(0,0,0,0.08) !important;
+          }
+          [data-theme="light"] .nl { color: var(--text-primary) !important; }
+          [data-theme="light"] .nh { background: rgba(0,0,0,0.05) !important; color: var(--text-primary) !important; }
+          [data-theme="light"] .dr {
+            background: rgba(255,255,255,0.98) !important;
+          }
+          [data-theme="light"] .dr a {
+            color: var(--text-secondary) !important;
+            border-color: rgba(0,0,0,0.06) !important;
+          }
+          [data-theme="light"] .hero { background: none !important; }
+          [data-theme="light"] .sec { color: var(--text-primary) !important; }
+          [data-theme="light"] .sl { color: var(--text-muted) !important; }
+          [data-theme="light"] .st { color: var(--text-primary) !important; }
+          [data-theme="light"] .hs { color: var(--text-muted) !important; }
+          [data-theme="light"] .foot {
+            background: rgba(0,0,0,0.02) !important;
+            border-color: rgba(0,0,0,0.06) !important;
+          }
+          [data-theme="light"] .foot a { color: var(--text-muted) !important; }
+          [data-theme="light"] .fl { color: var(--text-primary) !important; }
+          [data-theme="light"] .ftag { color: var(--text-muted) !important; }
+
+          /* Drill, essay, countdown, other pages with dark inline styles */
+          [data-theme="light"] [style*="minHeight:\"100vh\""],
+          [data-theme="light"] [style*="min-height:100vh"],
+          [data-theme="light"] [style*="minHeight:'100vh'"] {
+            background: var(--bg-primary) !important;
+            color: var(--text-primary) !important;
+          }
         `}</style>
         <AuthBridge />
         {showNav && <Nav current={router.pathname} />}
