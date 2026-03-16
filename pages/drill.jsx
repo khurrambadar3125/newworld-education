@@ -863,19 +863,21 @@ export default function DrillPage() {
 
           {/* Share buttons */}
           <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:8, marginTop:12}}>
-            <button style={{...S.ghostBtn, marginTop:0, display:'flex', alignItems:'center', justifyContent:'center', gap:6}} onClick={() => {
-              const text = `I just scored ${sessionPct}% on ${subject} drill! ${correctCount}/${SESSION_LENGTH} correct. Try to beat me on NewWorldEdu! 🎯\nhttps://www.newworld.education/drill`;
-              if (navigator.share) { navigator.share({ text }).catch(() => {}); }
-              else { navigator.clipboard?.writeText(text); alert('Copied! Share with your friend.'); }
+            <button style={{...S.ghostBtn, marginTop:0, display:'flex', alignItems:'center', justifyContent:'center', gap:6}} onClick={async () => {
+              const { shareLink } = await import('../utils/share');
+              const weak = sessionResults.filter(r=>!r.correct).map(r=>r.topic);
+              const r = await shareLink('challenge', { name:userProfile?.name, subject, topic, level, difficulty, pct:sessionPct, correct:correctCount, total:SESSION_LENGTH }, `I scored ${sessionPct}% on ${subject}! Can you beat me? 🎯`);
+              if (r.method === 'clipboard') alert('Link copied! Send it to your friend.');
             }}>
-              🏆 Challenge Friend
+              ⚔️ Challenge Friend
             </button>
-            <button style={{...S.ghostBtn, marginTop:0, display:'flex', alignItems:'center', justifyContent:'center', gap:6}} onClick={() => {
-              const text = `${userProfile?.name || 'Your child'} completed a ${subject} drill: ${correctCount}/${SESSION_LENGTH} correct (${sessionPct}%).\n\nWeak area: ${sessionResults.filter(r=>!r.correct).map(r=>r.topic).join(', ') || 'None!'}\n\nView progress: https://www.newworld.education/parent`;
-              if (navigator.share) { navigator.share({ text }).catch(() => {}); }
-              else { navigator.clipboard?.writeText(text); alert('Copied! Share with your parent.'); }
+            <button style={{...S.ghostBtn, marginTop:0, display:'flex', alignItems:'center', justifyContent:'center', gap:6}} onClick={async () => {
+              const { shareLink } = await import('../utils/share');
+              const weak = sessionResults.filter(r=>!r.correct).map(r=>r.topic);
+              const r = await shareLink('drill', { name:userProfile?.name, subject, level, pct:sessionPct, correct:correctCount, total:SESSION_LENGTH, weakAreas:weak }, `${userProfile?.name||'Your child'} scored ${sessionPct}% on ${subject}!`);
+              if (r.method === 'clipboard') alert('Link copied! Send it to your parent.');
             }}>
-              📧 Send to Parent
+              📧 Share Results
             </button>
           </div>
 

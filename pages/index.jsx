@@ -708,6 +708,14 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
       <footer className="foot">
         <div className="fl">NewWorldEdu<span>★</span></div>
         <div className="ftag">Every child deserves a world-class tutor.</div>
+        <button onClick={async () => {
+          const { shareLink } = await import('../utils/share');
+          const name = userProfile?.name?.split(' ')[0] || '';
+          const r = await shareLink('invite', { name }, `${name ? name + ' wants' : 'Want'} you to try NewWorldEdu — free AI tutor for Cambridge O Level & A Level!`);
+          if (r.method === 'clipboard') alert('Invite link copied!');
+        }} style={{background:'linear-gradient(135deg,#4F8EF7,#6366F1)',border:'none',borderRadius:100,padding:'10px 24px',color:'#fff',fontWeight:700,fontSize:14,cursor:'pointer',marginTop:12,fontFamily:'inherit'}}>
+          📤 Invite a Friend to NewWorldEdu
+        </button>
         <div className="flinks">
           <a href="/special-needs">Special Needs</a>
           <a href="/parent">Parents</a>
