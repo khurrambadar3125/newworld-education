@@ -18,6 +18,8 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import { useSessionLimit } from "../utils/useSessionLimit";
 import { addKnowledgeToPrompt } from "../utils/senKnowledge";
+import { useVoiceInput, useSpeakText } from '../utils/useVoice';
+import AccessibilityToolbar from '../components/AccessibilityToolbar';
 
 // ── PROGRESS ──────────────────────────────────────────────────────────────────
 const PROG_KEY = "nw_sn_arts_progress";
@@ -399,6 +401,9 @@ export default function ArtsForAllPage() {
   const [progress, setProgress] = useState({});
   const [imgData,  setImgData]  = useState(null);
   const [imgLoading,setImgLoading]=useState(false);
+  const { listening, supported: micSupported, toggle: toggleMic } = useVoiceInput(setInput);
+  const { speak, stop: stopSpeaking, speaking, supported: ttsSupported } = useSpeakText();
+  const [autoSpeak, setAutoSpeak] = useState(false);
   const fileInputRef = useRef(null);
   const chatEndRef   = useRef(null);
   const { callsLeft, limitReached: _limitReached, recordCall } = useSessionLimit();
@@ -467,6 +472,7 @@ export default function ArtsForAllPage() {
       const data = await res.json();
       const reply = data.content?.[0]?.text||"Something went wrong. Try again!";
       setMessages(prev=>[...prev,{role:"assistant",content:reply}]);
+      if (autoSpeak) speak(reply);
     } catch {
       setMessages(prev=>[...prev,{role:"assistant",content:"Connection error. Please try again!"}]);
     }
@@ -604,7 +610,8 @@ export default function ArtsForAllPage() {
           <span style={{color:"rgba(255,255,255,0.2)"}}>›</span>
           <span style={{fontWeight:800,fontSize:13,color:profile.color}}>{profile.emoji} {profile.name}</span>
         </div>
-        <div style={{display:"flex",gap:8}}>
+        <div style={{display:"flex",gap:8,alignItems:"center"}}>
+          <AccessibilityToolbar onAutoSpeakChange={setAutoSpeak} conditionId={profile?.id} />
           <a href="/arts" style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"6px 12px",color:"rgba(255,255,255,0.5)",fontSize:13,fontWeight:700,textDecoration:"none",display:"flex",alignItems:"center"}}>
             🎨 All Studios
           </a>
@@ -724,6 +731,16 @@ export default function ArtsForAllPage() {
             </button>
           </div>
 
+          {messages.length > 1 && (
+            <button onClick={() => {
+              const content = messages.filter(m=>m.role==='assistant').map(m=>m.content).join('\n\n---\n\n');
+              const w = window.open('','_blank');
+              if(w){w.document.write('<html><head><title>Activity Card</title><style>body{font-family:Georgia,serif;font-size:14pt;line-height:1.8;padding:40px;max-width:700px;margin:0 auto}h1{font-size:18pt}hr{border:none;border-top:1px solid #ddd;margin:20px 0}</style></head><body><h1>Starky Activity Card</h1><p style="color:#666">'+(profile?.name||'SEN Session')+'</p><div>'+content.replace(/\n/g,'<br>')+'</div></body></html>');w.document.close();w.print();}
+            }} style={{width:"100%", marginTop:8, background:"rgba(255,255,255,0.04)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:12, padding:"10px", color:"rgba(255,255,255,0.5)", fontWeight:700, fontSize:13, cursor:"pointer", fontFamily:"inherit"}}>
+              🖨 Print Activity Card
+            </button>
+          )}
+
           {/* Image badge */}
           {imgData&&(
             <div style={{background:"rgba(255,107,157,0.1)",border:"1px solid rgba(255,107,157,0.3)",borderRadius:14,padding:"12px 16px",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
@@ -748,6 +765,12 @@ export default function ArtsForAllPage() {
                     color:msg.role==="user"?"#060B20":"#fff",fontSize:14,lineHeight:1.85,fontWeight:msg.role==="user"?700:400,whiteSpace:"pre-wrap"}}>
                     {msg.content}
                   </div>
+                  {msg.role === "assistant" && ttsSupported && (
+                    <button onClick={() => speaking ? stopSpeaking() : speak(msg.content)} aria-label="Read aloud"
+                      style={{background:"none", border:"none", color:"rgba(255,255,255,0.3)", cursor:"pointer", fontSize:14, padding:"4px 8px", flexShrink:0}}>
+                      {speaking ? "🔊" : "🔈"}
+                    </button>
+                  )}
                 </div>
               ))}
               {loading&&(
@@ -775,6 +798,12 @@ export default function ArtsForAllPage() {
                   <span style={{fontSize:13,color:"rgba(255,255,255,0.2)",fontWeight:600}}>Enter to send</span>
                   {callsLeft<=10&&!limitReached&&<span style={{fontSize:13,fontWeight:800,color:callsLeft<=5?"#FF6B6B":"#A8E063"}}>· {callsLeft} left</span>}
                 </div>
+                {micSupported && (
+                  <button onClick={toggleMic} aria-label={listening ? "Stop listening" : "Voice input"}
+                    style={{background: listening ? "#ef4444" : "rgba(255,255,255,0.08)", border:"1px solid "+(listening?"#ef4444":"rgba(255,255,255,0.12)"), borderRadius:12, padding:"10px 14px", color: listening ? "#fff" : "rgba(255,255,255,0.6)", fontWeight:700, fontSize:14, cursor:"pointer", fontFamily:"inherit"}}>
+                    {listening ? "⏹ Stop" : "🎤"}
+                  </button>
+                )}
                 <button onClick={()=>sendMessage()} disabled={(!input.trim()&&!imgData)||loading}
                   style={{...S.btn,background:(input.trim()||imgData)&&!loading?`linear-gradient(135deg,${profile.color},${profile.color}BB)`:"rgba(255,255,255,0.08)",borderRadius:14,padding:"10px 24px",color:(input.trim()||imgData)&&!loading?"#060B20":"rgba(255,255,255,0.3)",fontWeight:900,fontSize:14}}>
                   {loading?"Thinking...":imgData&&!input.trim()?"Celebrate! 🎉":"Send →"}

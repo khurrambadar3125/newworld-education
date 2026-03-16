@@ -122,6 +122,62 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
             --input-bg: rgba(255,255,255,0.06);
             --input-border: rgba(255,255,255,0.12);
           }
+          /* Cream theme — optimised for dyslexia */
+          [data-theme="cream"] {
+            --bg-primary: #FFF8F0;
+            --bg-secondary: #FFFAF5;
+            --bg-card: rgba(139,90,43,0.06);
+            --bg-card-hover: rgba(139,90,43,0.1);
+            --border: rgba(139,90,43,0.15);
+            --border-accent: rgba(180,120,50,0.35);
+            --text-primary: #2C1810;
+            --text-secondary: #4A3728;
+            --text-muted: #8B6B4A;
+            --text-faint: #B89B78;
+            --accent: #D4853A;
+            --nav-bg: rgba(255,248,240,0.97);
+            --input-bg: rgba(139,90,43,0.06);
+            --input-border: rgba(139,90,43,0.2);
+          }
+          [data-theme="cream"] body { background: #FFF8F0 !important; color: #2C1810 !important; }
+
+          /* Dyslexia-friendly font */
+          [data-font="dyslexic"], [data-font="dyslexic"] * {
+            font-family: 'Open Dyslexic', 'OpenDyslexic', 'Comic Sans MS', sans-serif !important;
+            letter-spacing: 0.05em !important;
+            word-spacing: 0.12em !important;
+          }
+          [data-font="dyslexic"] .starky-msg,
+          [data-font="dyslexic"] textarea,
+          [data-font="dyslexic"] p,
+          [data-font="dyslexic"] div {
+            line-height: 1.9 !important;
+          }
+
+          /* AAC / Large button mode */
+          [data-access="aac"] button,
+          [data-access="aac"] [role="button"] {
+            min-height: 52px !important;
+            min-width: 52px !important;
+            font-size: 15px !important;
+            padding: 12px 18px !important;
+          }
+          [data-access="aac"] button:focus,
+          [data-access="aac"] textarea:focus,
+          [data-access="aac"] [tabindex]:focus {
+            outline: 4px solid #FFC300 !important;
+            outline-offset: 4px !important;
+            box-shadow: 0 0 0 8px rgba(255,195,0,0.25) !important;
+          }
+          [data-access="aac"] textarea {
+            font-size: 18px !important;
+            min-height: 72px !important;
+          }
+          [data-access="aac"] .starky-msg {
+            font-size: 18px !important;
+            padding: 14px 18px !important;
+          }
+
           [data-theme="light"] {
             --bg-primary: #F5F7FA;
             --bg-secondary: #FFFFFF;
@@ -296,7 +352,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
         {showNav && <Nav current={router.pathname} />}
         <ErrorBoundary><Component {...pageProps} /></ErrorBoundary>
         {!['/','/ ','/special-needs'].includes(router.pathname) && <StarkyBubble />}
-        {!['/','/ ','/special-needs'].includes(router.pathname) && <VoiceChatBar />}
+        {!['/','/ ','/special-needs','/music-for-all','/reading-for-all','/arts-for-all'].includes(router.pathname) && <VoiceChatBar />}
       </ThemeProvider>
     </SessionProvider>
   );
