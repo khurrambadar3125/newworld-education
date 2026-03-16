@@ -252,9 +252,22 @@ export default function ParentPage() {
   const [childName,   setChildName]   = useState("");
   const [childEmail,  setChildEmail]  = useState("");
   const [childGrade,  setChildGrade]  = useState("");
+  const [childSEN,    setChildSEN]    = useState("");  // '' = none, or condition id
   const [childAvatar, setChildAvatar] = useState("🦁");
   const [childColor,  setChildColor]  = useState("#63D2FF");
   const [addErr,      setAddErr]      = useState("");
+
+  const SEN_OPTIONS = [
+    { id:'', label:'No special needs' },
+    { id:'autism', label:'🌟 Autism Spectrum', color:'#63D2FF' },
+    { id:'adhd', label:'⚡ ADHD', color:'#FFC300' },
+    { id:'dyslexia', label:'🎵 Dyslexia', color:'#FF8C69' },
+    { id:'ds', label:'💛 Down Syndrome', color:'#A8E063' },
+    { id:'cp', label:'💪 Cerebral Palsy', color:'#C77DFF' },
+    { id:'vi', label:'✨ Visual Impairment', color:'#FFC300' },
+    { id:'hi', label:'🎵 Hearing Impairment', color:'#FF6B6B' },
+    { id:'unsure', label:'❓ Not Sure / Undiagnosed', color:'#A78BFA' },
+  ];
   const [editingId,   setEditingId]   = useState(null);
 
   useEffect(() => {
@@ -296,7 +309,7 @@ export default function ParentPage() {
     if (editingId) {
       updated.children = updated.children.map(c =>
         c.id === editingId
-          ? { ...c, name: childName.trim(), email: childEmail.trim() || c.email, grade: childGrade, avatar: childAvatar, color: childColor }
+          ? { ...c, name: childName.trim(), email: childEmail.trim() || c.email, grade: childGrade, senCondition: childSEN || c.senCondition || '', avatar: childAvatar, color: childColor }
           : c
       );
       setEditingId(null);
@@ -304,12 +317,12 @@ export default function ParentPage() {
       const id = `child_${Date.now()}`;
       updated.children = [...updated.children, {
         id, name: childName.trim(), email: childEmail.trim() || '', grade: childGrade,
-        avatar: childAvatar, color: childColor,
+        senCondition: childSEN || '', avatar: childAvatar, color: childColor,
       }];
     }
     saveAccount(updated);
     setAccount(updated);
-    setChildName(""); setChildEmail(""); setChildGrade(""); setChildAvatar("🦁"); setChildColor("#63D2FF"); setAddErr("");
+    setChildName(""); setChildEmail(""); setChildGrade(""); setChildSEN(""); setChildAvatar("🦁"); setChildColor("#63D2FF"); setAddErr("");
     setScreen("pick-child");
   };
 
@@ -581,6 +594,34 @@ export default function ParentPage() {
               </div>
             </div>
 
+            {/* SEN Condition */}
+            <div>
+              <label style={{fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.4)",letterSpacing:1,display:"block",marginBottom:8}}>SPECIAL EDUCATIONAL NEEDS <span style={{fontWeight:400,opacity:0.6}}>(optional)</span></label>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:7}}>
+                {SEN_OPTIONS.map(s=>(
+                  <button key={s.id} onClick={()=>setChildSEN(s.id)}
+                    style={{
+                      padding:"10px 12px", borderRadius:12, cursor:"pointer",
+                      fontFamily:"'Nunito',sans-serif", fontWeight:700, fontSize:12, textAlign:"left",
+                      background: childSEN===s.id ? (s.color||"#A78BFA")+"20" : "rgba(255,255,255,0.04)",
+                      border: `1.5px solid ${childSEN===s.id ? (s.color||"#A78BFA") : "rgba(255,255,255,0.1)"}`,
+                      color: childSEN===s.id ? (s.color||"#A78BFA") : "rgba(255,255,255,0.6)",
+                    }}>
+                    {s.label}
+                  </button>
+                ))}
+              </div>
+              {childSEN && childSEN !== '' && (
+                <div style={{marginTop:10,background:"rgba(167,139,250,0.08)",border:"1px solid rgba(167,139,250,0.2)",borderRadius:12,padding:"12px 14px"}}>
+                  <div style={{fontSize:12,fontWeight:700,color:"#A78BFA",marginBottom:4}}>💜 SEN Support Available</div>
+                  <div style={{fontSize:12,color:"rgba(255,255,255,0.5)",lineHeight:1.6}}>
+                    Your child will get unlimited sessions, adapted teaching, and specialist support.
+                    <a href="/special-needs" style={{color:"#A78BFA",marginLeft:4}}>Open SEN Portal →</a>
+                  </div>
+                </div>
+              )}
+            </div>
+
             {/* Avatar */}
             <div>
               <label style={{fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.4)",letterSpacing:1,display:"block",marginBottom:8}}>PICK AN AVATAR</label>
@@ -677,6 +718,14 @@ export default function ParentPage() {
                       background:`${child.color}20`,border:`1px solid ${child.color}40`,
                       borderRadius:20,padding:"2px 8px",fontSize:10,fontWeight:800,color:child.color
                     }}>{sessions} sessions</div>
+                  )}
+                  {/* SEN badge */}
+                  {child.senCondition && (
+                    <div style={{
+                      position:"absolute",top:10,left:10,
+                      background:"rgba(167,139,250,0.2)",border:"1px solid rgba(167,139,250,0.4)",
+                      borderRadius:20,padding:"2px 8px",fontSize:10,fontWeight:800,color:"#A78BFA"
+                    }}>💜 {SEN_OPTIONS.find(s=>s.id===child.senCondition)?.label?.replace(/^[^\s]+\s/,'') || 'SEN'}</div>
                   )}
                   {/* Avatar */}
                   <div style={{
@@ -881,6 +930,36 @@ export default function ParentPage() {
         {/* Set Assignment */}
         {children.length > 0 && (
           <SetAssignment children={children} parentName={account?.parentName} />
+        )}
+
+        {/* SEN Guide — show if any child has SEN condition */}
+        {children.some(c => c.senCondition) && (
+          <div style={{marginTop:20,background:"rgba(167,139,250,0.06)",border:"1px solid rgba(167,139,250,0.18)",borderRadius:20,padding:"20px 22px"}}>
+            <div style={{fontWeight:900,fontSize:15,color:"#A78BFA",marginBottom:4}}>💜 Special Needs Support</div>
+            <div style={{fontSize:13,color:"rgba(255,255,255,0.5)",lineHeight:1.7,marginBottom:14}}>
+              Your SEN child gets unlimited sessions, adapted teaching, and specialist support. Here's what's available:
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:14}}>
+              {[
+                {emoji:"🎓",text:"140 teaching profiles adapted by condition × age × focus"},
+                {emoji:"🔊",text:"Voice input + auto-speak for non-readers"},
+                {emoji:"Aa",text:"Dyslexia-friendly font + cream background"},
+                {emoji:"♿",text:"Large buttons for motor difficulties"},
+                {emoji:"🎵",text:"Music, reading & arts therapy — all SEN-adapted"},
+                {emoji:"📧",text:"Session reports with SEN progress to your email"},
+              ].map(f => (
+                <div key={f.text} style={{display:"flex",alignItems:"flex-start",gap:6,fontSize:12,color:"rgba(255,255,255,0.6)",lineHeight:1.5}}>
+                  <span style={{flexShrink:0}}>{f.emoji}</span> {f.text}
+                </div>
+              ))}
+            </div>
+            {children.filter(c=>c.senCondition).map(child => (
+              <a key={child.id} href={`/special-needs`}
+                style={{display:"block",textAlign:"center",background:"linear-gradient(135deg,#A78BFA,#7C5CBF)",borderRadius:14,padding:"13px",color:"#fff",fontWeight:900,fontSize:14,textDecoration:"none",marginBottom:8}}>
+                Open {child.name}'s SEN Portal →
+              </a>
+            ))}
+          </div>
         )}
 
         {/* Subscription section */}

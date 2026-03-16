@@ -82,6 +82,7 @@ export default function Dashboard() {
   );
 
   const flagged = students.filter(s => s.weakTopics?.length || s.recentMistakes?.length);
+  const senStudents = students.filter(s => s.senCondition || s.isSEN);
   const active7d = students.filter(s => {
     if (!s.lastSeen) return false;
     return (Date.now() - new Date(s.lastSeen)) < 7 * 24 * 60 * 60 * 1000;
@@ -106,6 +107,7 @@ export default function Dashboard() {
               ['Total Students', students.length, '255,255,255'],
               ['Active (7 days)', active7d.length, '74,222,128'],
               ['Need Attention', flagged.length, '252,211,77'],
+              ['SEN Students', senStudents.length, '167,139,250'],
               ['Avg Streak', students.length ? Math.round(students.reduce((a,s) => a + (parseInt(s.streakDays)||0), 0) / students.length) + ' days' : '—', '79,142,247'],
             ].map(([label, value, color]) => (
               <div key={label} style={{ ...S.card, textAlign: 'center' }}>
@@ -126,6 +128,30 @@ export default function Dashboard() {
                     {s.name || s.email} · {s.grade}
                   </button>
                 ))}
+              </div>
+            </div>
+          )}
+
+          {/* SEN students panel */}
+          {senStudents.length > 0 && (
+            <div style={{ ...S.card, borderColor: 'rgba(167,139,250,0.2)', background: 'rgba(167,139,250,0.03)', marginBottom: 24 }}>
+              <span style={S.label}>💜 SEN Students ({senStudents.length})</span>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 12 }}>
+                {senStudents.map(s => (
+                  <button key={s.email} onClick={() => setSelected(selected?.email === s.email ? null : s)}
+                    style={{ background: 'rgba(167,139,250,0.1)', border: '1px solid rgba(167,139,250,0.3)', color: '#A78BFA', padding: '6px 14px', borderRadius: 100, fontSize: 13, cursor: 'pointer', fontWeight: 600, fontFamily: 'inherit' }}>
+                    {s.name || s.email} · {s.senCondition || 'SEN'}
+                  </button>
+                ))}
+              </div>
+              <div style={{ background: 'rgba(167,139,250,0.06)', borderRadius: 12, padding: '12px 14px', marginBottom: 10 }}>
+                <div style={{ fontSize: 12, fontWeight: 700, color: '#A78BFA', marginBottom: 6 }}>SEN Teaching Tips</div>
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.5)', lineHeight: 1.7 }}>
+                  • These students get <strong>unlimited sessions</strong> and adapted teaching<br/>
+                  • Check their <strong>weak topics</strong> — they may struggle with concepts typical students find easy<br/>
+                  • The <a href="/special-needs" style={{color:'#A78BFA'}}>SEN Portal</a> has 140 specialist teaching profiles by condition × age × focus<br/>
+                  • Recommend parents use the parent portal to <strong>set assignments</strong> and track progress remotely
+                </div>
               </div>
             </div>
           )}
