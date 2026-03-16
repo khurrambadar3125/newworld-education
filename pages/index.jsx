@@ -3,24 +3,36 @@ import Link from 'next/link';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useSessionLimit } from '../utils/useSessionLimit';
 
-const GRADES = [
-  { id: 'kg', label: 'KG', age: '4–5', emoji: '🌱' },
-  { id: 'grade1', label: 'Grade 1', age: '5–6', emoji: '⭐' },
-  { id: 'grade2', label: 'Grade 2', age: '6–7', emoji: '🌈' },
-  { id: 'grade3', label: 'Grade 3', age: '7–8', emoji: '🚀' },
-  { id: 'grade4', label: 'Grade 4', age: '8–9', emoji: '🌊' },
-  { id: 'grade5', label: 'Grade 5', age: '9–10', emoji: '🔬' },
-  { id: 'grade6', label: 'Grade 6', age: '10–11', emoji: '🧬' },
-  { id: 'grade7', label: 'Grade 7', age: '11–12', emoji: '⚡' },
-  { id: 'grade8', label: 'Grade 8', age: '12–13', emoji: '🌍' },
-  { id: 'grade9', label: 'Grade 9', age: '13–14', emoji: '🎯' },
-  { id: 'olevel', label: 'O Level', age: '14–16', emoji: '📚' },
-  { id: 'aslevel', label: 'AS Level', age: '16–17', emoji: '🏆' },
-  { id: 'alevel', label: 'A Level', age: '17–18', emoji: '🎓' },
+const GRADE_GROUPS = [
+  { label: 'Primary', color: '#A8E063', grades: [
+    { id: 'kg', label: 'KG', age: '4–5', emoji: '🌱' },
+    { id: 'grade1', label: 'Grade 1', age: '5–6', emoji: '⭐' },
+    { id: 'grade2', label: 'Grade 2', age: '6–7', emoji: '🌈' },
+    { id: 'grade3', label: 'Grade 3', age: '7–8', emoji: '🚀' },
+    { id: 'grade4', label: 'Grade 4', age: '8–9', emoji: '🌊' },
+    { id: 'grade5', label: 'Grade 5', age: '9–10', emoji: '🔬' },
+  ]},
+  { label: 'Middle School', color: '#FFC300', grades: [
+    { id: 'grade6', label: 'Grade 6', age: '10–11', emoji: '🧬' },
+    { id: 'grade7', label: 'Grade 7', age: '11–12', emoji: '⚡' },
+    { id: 'grade8', label: 'Grade 8', age: '12–13', emoji: '🌍' },
+  ]},
+  { label: 'Matric', color: '#FF8C69', grades: [
+    { id: 'grade9', label: 'Grade 9', age: '13–14', emoji: '🎯' },
+    { id: 'grade10', label: 'Grade 10', age: '14–15', emoji: '📋' },
+  ]},
+  { label: 'Cambridge', color: '#4F8EF7', grades: [
+    { id: 'olevel1', label: 'O Level', age: '14–16', emoji: '📚' },
+    { id: 'alevel1', label: 'AS / A Level', age: '16–18', emoji: '🎓' },
+  ]},
 ];
+const GRADES = GRADE_GROUPS.flatMap(g => g.grades);
 
-// KG to Grade 9 — general subjects
-const SUBJECTS_GENERAL = ['Maths', 'Physics', 'Chemistry', 'Biology', 'English', 'History', 'Geography', 'Computer Science', 'Urdu', 'Economics'];
+// Subject lists per grade band
+const SUBJECTS_PRIMARY = ['Maths', 'English', 'Urdu', 'Science', 'Islamiat', 'General Knowledge'];
+const SUBJECTS_MIDDLE = ['Maths', 'English', 'Urdu', 'Science', 'Pakistan Studies', 'Islamiat', 'Computer', 'Social Studies'];
+const SUBJECTS_MATRIC = ['Maths', 'Physics', 'Chemistry', 'Biology', 'English', 'Urdu', 'Pakistan Studies', 'Islamiat', 'Computer Science'];
+const SUBJECTS_GENERAL = SUBJECTS_MATRIC;
 
 // O Level specific subjects
 const SUBJECTS_OLEVEL = [
@@ -576,13 +588,20 @@ export default function Home() {
       <section className="sec" id="start-learning">
         <div className="sl">Step 1 of 2</div>
         <div className="st">Select your child's grade</div>
-        <div className="gg">
-          {GRADES.map(g => (
-            <button key={g.id} className={`gb ${selectedGrade?.id===g.id?'s':''}`} onClick={() => { setSelectedGrade(g); setTimeout(() => document.getElementById("subject-section")?.scrollIntoView({behavior:"smooth",block:"center"}), 150); }}>
-              <span className="ge">{g.emoji}</span>
-              <span className="gn">{g.label}</span>
-              <span className="ga">Age {g.age}</span>
-            </button>
+        <div style={{maxWidth:480,margin:'0 auto'}}>
+          {GRADE_GROUPS.map(group => (
+            <div key={group.label} style={{marginBottom:16}}>
+              <div style={{fontSize:11,fontWeight:800,color:group.color,letterSpacing:'0.08em',textTransform:'uppercase',marginBottom:8,paddingLeft:4}}>{group.label}</div>
+              <div className="gg">
+                {group.grades.map(g => (
+                  <button key={g.id} className={`gb ${selectedGrade?.id===g.id?'s':''}`} onClick={() => { setSelectedGrade(g); setTimeout(() => document.getElementById("subject-section")?.scrollIntoView({behavior:"smooth",block:"center"}), 150); }}>
+                    <span className="ge">{g.emoji}</span>
+                    <span className="gn">{g.label}</span>
+                    <span className="ga">Age {g.age}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
         {selectedGrade && (
@@ -591,7 +610,12 @@ export default function Home() {
               <div className="sl">Step 2 of 2 — Optional</div>
               <div className="st" style={{marginBottom:14}}>Pick a subject</div>
               <div className="sr">
-                {(selectedGrade?.id === 'olevel' ? SUBJECTS_OLEVEL : selectedGrade?.id === 'aslevel' || selectedGrade?.id === 'alevel' ? SUBJECTS_ALEVEL : SUBJECTS_GENERAL).map(s => (
+                {(selectedGrade?.id?.includes('olevel') ? SUBJECTS_OLEVEL
+                  : selectedGrade?.id?.includes('alevel') ? SUBJECTS_ALEVEL
+                  : ['kg','grade1','grade2','grade3','grade4','grade5'].includes(selectedGrade?.id) ? SUBJECTS_PRIMARY
+                  : ['grade6','grade7','grade8'].includes(selectedGrade?.id) ? SUBJECTS_MIDDLE
+                  : ['grade9','grade10'].includes(selectedGrade?.id) ? SUBJECTS_MATRIC
+                  : SUBJECTS_GENERAL).map(s => (
                   <button key={s} className={`sbb ${selectedSubject===s?'s':''}`} onClick={() => { setSelectedSubject(s); if(!userProfile){setShowRegModal(true);}else{launchChat(null,s);} }}>{s}</button>
                 ))}
               </div>
