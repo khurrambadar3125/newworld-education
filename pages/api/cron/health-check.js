@@ -159,5 +159,25 @@ export default async function handler(req, res) {
     `,
   });
 
+  // ── Piggyback: trigger weekly plans (Mondays) and missed session nudges ──
+  // Vercel Hobby allows only 2 crons, so we combine these here
+  const cronSecret = process.env.CRON_SECRET;
+  const dayOfWeek = new Date(Date.now() + 5 * 3600000).getUTCDay(); // PKT day
+
+  try {
+    // Weekly plans — run on Mondays only
+    if (dayOfWeek === 1 && cronSecret) {
+      fetch(`${base}/api/cron/weekly-plans`, {
+        method: 'POST', headers: { 'Authorization': `Bearer ${cronSecret}` },
+      }).catch(() => {});
+    }
+    // Missed session nudges — run daily
+    if (cronSecret) {
+      fetch(`${base}/api/cron/missed-sessions`, {
+        method: 'POST', headers: { 'Authorization': `Bearer ${cronSecret}` },
+      }).catch(() => {});
+    }
+  } catch {}
+
   return res.status(200).json({ ok: true, results, totalMs });
 }

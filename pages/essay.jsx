@@ -301,6 +301,15 @@ export default function EssayPage() {
                   </a>
                 </Link>
               </div>
+              <button onClick={() => {
+                const text = `I got ${result.grade} (${result.band}) on my ${subject} essay! Score: ${result.score}/${level === 'olevel' ? 15 : 20}. Marked by Starky on NewWorldEdu.\nhttps://www.newworld.education/essay`;
+                if (navigator.share) { navigator.share({ text }).catch(() => {}); }
+                else { navigator.clipboard?.writeText(text); alert('Copied! Share with friends or parents.'); }
+              }} style={{ width: '100%', padding: '12px', borderRadius: 12, fontFamily: "'Sora',sans-serif",
+                fontSize: 13, fontWeight: 700, cursor: 'pointer', marginTop: 8,
+                background: 'rgba(168,224,99,.1)', border: '1px solid rgba(168,224,99,.25)', color: '#A8E063' }}>
+                📤 Share Result
+              </button>
             </>
           )}
         </div>

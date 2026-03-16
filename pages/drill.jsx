@@ -845,6 +845,25 @@ export default function DrillPage() {
           <button style={S.primaryBtn} onClick={() => { setPhase('drilling'); setQuestionNum(0); setSessionResults([]); setLiveScore(0); setLiveMax(0); setCombo(0); generateQuestion(topic); }}>
             Drill Again 🔄
           </button>
+
+          {/* Share buttons */}
+          <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:8, marginTop:12}}>
+            <button style={{...S.ghostBtn, marginTop:0, display:'flex', alignItems:'center', justifyContent:'center', gap:6}} onClick={() => {
+              const text = `I just scored ${sessionPct}% on ${subject} drill! ${correctCount}/${SESSION_LENGTH} correct. Try to beat me on NewWorldEdu! 🎯\nhttps://www.newworld.education/drill`;
+              if (navigator.share) { navigator.share({ text }).catch(() => {}); }
+              else { navigator.clipboard?.writeText(text); alert('Copied! Share with your friend.'); }
+            }}>
+              🏆 Challenge Friend
+            </button>
+            <button style={{...S.ghostBtn, marginTop:0, display:'flex', alignItems:'center', justifyContent:'center', gap:6}} onClick={() => {
+              const text = `${userProfile?.name || 'Your child'} completed a ${subject} drill: ${correctCount}/${SESSION_LENGTH} correct (${sessionPct}%).\n\nWeak area: ${sessionResults.filter(r=>!r.correct).map(r=>r.topic).join(', ') || 'None!'}\n\nView progress: https://www.newworld.education/parent`;
+              if (navigator.share) { navigator.share({ text }).catch(() => {}); }
+              else { navigator.clipboard?.writeText(text); alert('Copied! Share with your parent.'); }
+            }}>
+              📧 Send to Parent
+            </button>
+          </div>
+
           <button style={S.ghostBtn} onClick={() => setPhase('setup')}>Change Subject / Topic</button>
           <Link href="/"><a style={{...S.ghostBtn, display:'block', textAlign:'center', textDecoration:'none', marginTop:8}}>Back to Starky Chat</a></Link>
         </div>
