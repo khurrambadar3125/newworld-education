@@ -270,8 +270,8 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
         <AuthBridge />
         {showNav && <Nav current={router.pathname} />}
         <ErrorBoundary><Component {...pageProps} /></ErrorBoundary>
-        <StarkyBubble />
-        <VoiceChatBar />
+        {router.pathname !== '/' && <StarkyBubble />}
+        {router.pathname !== '/' && <VoiceChatBar />}
       </ThemeProvider>
     </SessionProvider>
   );
