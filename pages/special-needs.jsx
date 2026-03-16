@@ -585,8 +585,9 @@ export default function SpecialNeedsPage() {
     btn:  { border:"none", cursor:"pointer", fontFamily:"'Nunito',sans-serif", transition:"all 0.2s" },
   };
 
-  const startChat = () => {
-    if (!condition || !stage || !focus) return;
+  const startChat = (focusOverride) => {
+    const effectiveFocus = focusOverride || focus;
+    if (!condition || !stage || !effectiveFocus) return;
     const key = `${condition.id}_${stage.id}`;
     const p = loadP();
     if (!p[key]) p[key] = { sessions:0, lastSeen:null };
@@ -598,20 +599,20 @@ export default function SpecialNeedsPage() {
 
 I'm set up to support a ${stage.name} student (${stage.ages}) with ${condition.name}.
 
-${focus.id === "parent"
+${effectiveFocus.id === "parent"
   ? `You've chosen Parent & Carer guidance. I'm here to give you practical, evidence-based support for helping your child at home. Ask me anything — what to do, what to avoid, how to support specific challenges, or where to find more help.`
-  : focus.id === "academic" && subject
+  : effectiveFocus.id === "academic" && subject
   ? `Today's focus: ${subject} — adapted for ${condition.name} at ${stage.name} level.\n\nEvery explanation will be broken into micro-steps. Every question is designed for this stage. Let's start!\n\nWhat would you like to work on in ${subject} today?`
-  : focus.id === "creative"
+  : effectiveFocus.id === "creative"
   ? `Creative learning — Music, Reading, and Arts — adapted for ${condition.name} at ${stage.name} level.\n\nWhich would you like to explore today — Music, Reading, or Arts?`
-  : focus.id === "life"
+  : effectiveFocus.id === "life"
   ? `Life Skills for a ${stage.name} student with ${condition.name}.\n\nWhat area would you like to focus on? (Communication, independence, social situations, daily routines, self-advocacy...)`
-  : focus.id === "exam"
+  : effectiveFocus.id === "exam"
   ? `Exam preparation for ${stage.grades}, adapted for ${condition.name}.\n\nWhich subject or exam are we preparing for?`
   : `What would you like to work on today?`
 }
 
-${focus.id !== "parent" ? `\n*For the adult:* Tell me your child's name if you'd like me to use it, and anything specific about how they're feeling today.` : ""}`;
+${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name if you'd like me to use it, and anything specific about how they're feeling today.` : ""}`;
 
     setMessages([{ role:"assistant", content:welcome }]);
     setStep(4);
@@ -663,7 +664,7 @@ ${focus.id !== "parent" ? `\n*For the adult:* Tell me your child's name if you'd
             color: step >= s.n ? "#060B20" : "rgba(255,255,255,0.3)",
             transition:"all 0.3s",
             cursor: step > s.n ? "pointer" : "default",
-          }} onClick={() => { if (step > s.n) setStep(s.n); }}>
+          }} onClick={() => { if (step > s.n) { setStep(s.n); if (s.n <= 1) { setStage(null); setFocus(null); setSubject(''); setMessages([]); } if (s.n <= 2) { setFocus(null); setSubject(''); setMessages([]); } if (s.n <= 3) { setSubject(''); setMessages([]); } } }}>
             {step > s.n ? "✓" : s.n}
           </div>
           {!isMobile && <span style={{ fontSize:11, fontWeight:700, color: step >= s.n ? accentColor : "rgba(255,255,255,0.25)" }}>{s.label}</span>}
@@ -863,7 +864,7 @@ ${focus.id !== "parent" ? `\n*For the adult:* Tell me your child's name if you'd
 
             <div style={{ display:"grid", gridTemplateColumns:isMobile?"1fr":"repeat(3,1fr)", gap:12, marginBottom:20 }}>
               {FOCUSES.map(f => (
-                <button key={f.id} onClick={() => { setFocus(f); if (f.id !== "academic") { setTimeout(startChat, 100); } }}
+                <button key={f.id} onClick={() => { setFocus(f); if (f.id !== "academic") { setTimeout(() => startChat(f), 200); } }}
                   style={{ ...S.btn, background: focus?.id===f.id ? accentColor+"18" : "rgba(255,255,255,0.04)", border:"2px solid "+(focus?.id===f.id ? accentColor : "rgba(255,255,255,0.08)"), borderRadius:18, padding:"18px 14px", textAlign:"left", color:"#fff" }}
                   onMouseEnter={e => { e.currentTarget.style.background=accentColor+"12"; e.currentTarget.style.borderColor=accentColor+"50"; }}
                   onMouseLeave={e => { if(focus?.id!==f.id){e.currentTarget.style.background="rgba(255,255,255,0.04)";e.currentTarget.style.borderColor="rgba(255,255,255,0.08)";} }}>
@@ -980,6 +981,19 @@ ${focus.id !== "parent" ? `\n*For the adult:* Tell me your child's name if you'd
                 </button>
               ))}
             </div>
+
+            {/* Share session with teacher/therapist */}
+            {messages.length > 2 && (
+              <button onClick={async () => {
+                const { shareLink } = await import('../utils/share');
+                const summary = messages.filter(m=>m.role==='assistant').slice(-1)[0]?.content?.slice(0,200) || '';
+                const r = await shareLink('drill', { name: condition?.name + ' session', subject: subject || focus?.name || 'SEN', pct: 0, correct: messages.length, total: messages.length, weakAreas: [] },
+                  `${condition?.name} learning session on NewWorldEdu — ${messages.length} messages. ${summary}`);
+                if (r.method === 'clipboard') alert('Session link copied! Share with teacher or therapist.');
+              }} style={{ ...S.btn, width:'100%', marginTop:12, background:'rgba(168,224,99,0.1)', border:'1px solid rgba(168,224,99,0.25)', borderRadius:14, padding:'12px', color:'#A8E063', fontWeight:700, fontSize:13 }}>
+                📤 Share Session with Teacher / Therapist
+              </button>
+            )}
           </div>
         )}
 
@@ -993,9 +1007,9 @@ ${focus.id !== "parent" ? `\n*For the adult:* Tell me your child's name if you'd
             </div>
             <div style={{ display:"grid", gridTemplateColumns:isMobile?"1fr":"repeat(3,1fr)", gap:12 }}>
               {[
-                { href:"/music-for-all", emoji:"🎵", color:"#FFC300", name:"Music", desc:"Music therapy approaches for 7 SEN profiles. Rhythm, instruments, songwriting." },
-                { href:"/reading-for-all", emoji:"📖", color:"#63D2FF", name:"Reading", desc:"Evidence-based reading for 7 profiles. Voice input. 120+ books. All ages." },
-                { href:"/arts-for-all", emoji:"🎨", color:"#A8E063", name:"Arts", desc:"Adapted visual arts and creative expression. Every activity has an adaptive version." },
+                { href:`/music-for-all${condition?`?condition=${condition.id}`:''}`, emoji:"🎵", color:"#FFC300", name:"Music", desc:"Music therapy approaches for 7 SEN profiles. Rhythm, instruments, songwriting." },
+                { href:`/reading-for-all${condition?`?condition=${condition.id}`:''}`, emoji:"📖", color:"#63D2FF", name:"Reading", desc:"Evidence-based reading for 7 profiles. Voice input. 120+ books. All ages." },
+                { href:`/arts-for-all${condition?`?condition=${condition.id}`:''}`, emoji:"🎨", color:"#A8E063", name:"Arts", desc:"Adapted visual arts and creative expression. Every activity has an adaptive version." },
               ].map(s => (
                 <a key={s.href} href={s.href} style={{ textDecoration:"none", background:s.color+"08", border:"1px solid "+s.color+"25", borderRadius:18, padding:16, display:"block", color:"#fff" }}
                   onMouseEnter={e=>{e.currentTarget.style.background=s.color+"15";e.currentTarget.style.borderColor=s.color+"50";}}
@@ -1024,9 +1038,9 @@ ${focus.id !== "parent" ? `\n*For the adult:* Tell me your child's name if you'd
         </div>
         <div style={{display:"grid",gridTemplateColumns:isMobile?"1fr":"repeat(3,1fr)",gap:14}}>
           {[
-            {href:"/music-for-all",emoji:"🎵",color:"#FFC300",name:"Music",tag:"Every child is musical",desc:"Music therapy approaches for 7 special needs profiles. Rhythm, instruments, songwriting and listening activities — each adapted to the child."},
-            {href:"/reading-for-all",emoji:"📖",color:"#63D2FF",name:"Reading",tag:"Every child deserves a reading life",desc:"Evidence-based reading support across 7 profiles. Voice input so children can speak to Starky. 120+ books with specialist teaching modes."},
-            {href:"/arts-for-all",emoji:"🎨",color:"#A8E063",name:"Arts",tag:"Every child has something to express",desc:"Adapted visual arts and creative expression. Low-tech and high-tech options. Every activity has an adaptive version for every need."},
+            {href:`/music-for-all${condition?`?condition=${condition.id}`:''}`,emoji:"🎵",color:"#FFC300",name:"Music",tag:"Every child is musical",desc:"Music therapy approaches for 7 special needs profiles. Rhythm, instruments, songwriting and listening activities — each adapted to the child."},
+            {href:`/reading-for-all${condition?`?condition=${condition.id}`:''}`,emoji:"📖",color:"#63D2FF",name:"Reading",tag:"Every child deserves a reading life",desc:"Evidence-based reading support across 7 profiles. Voice input so children can speak to Starky. 120+ books with specialist teaching modes."},
+            {href:`/arts-for-all${condition?`?condition=${condition.id}`:''}`,emoji:"🎨",color:"#A8E063",name:"Arts",tag:"Every child has something to express",desc:"Adapted visual arts and creative expression. Low-tech and high-tech options. Every activity has an adaptive version for every need."},
           ].map(function(s){return(
             <a key={s.href} href={s.href} style={{textDecoration:"none",display:"block",background:s.color+"0A",border:"2px solid "+s.color+"30",borderRadius:20,padding:20,color:"#fff",transition:"all 0.15s"}}
               onMouseEnter={function(e){e.currentTarget.style.background=s.color+"18";e.currentTarget.style.borderColor=s.color;e.currentTarget.style.transform="translateY(-2px)";}}

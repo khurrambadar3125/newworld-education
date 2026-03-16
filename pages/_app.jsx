@@ -295,8 +295,8 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
         <AuthBridge />
         {showNav && <Nav current={router.pathname} />}
         <ErrorBoundary><Component {...pageProps} /></ErrorBoundary>
-        <StarkyBubble />
-        <VoiceChatBar />
+        {!['/','/ ','/special-needs'].includes(router.pathname) && <StarkyBubble />}
+        {!['/','/ ','/special-needs'].includes(router.pathname) && <VoiceChatBar />}
       </ThemeProvider>
     </SessionProvider>
   );
