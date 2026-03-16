@@ -82,6 +82,8 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           <meta property="og:site_name" content="NewWorld Education" />
           <meta property="og:type" content="website" />
           <meta property="og:image" content="https://www.newworld.education/og-image.png" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@newworldedu" />
           <link rel="canonical" href={`https://www.newworld.education${router.asPath.split('?')[0]}`} />
