@@ -78,7 +78,16 @@ const PARENT_SIGNALS = [
   'my child', 'my son', 'my daughter', 'my kid',
   'how is my child doing', 'child progress', 'parent here',
   'i am a parent', "i'm a parent", 'as a parent',
+  'how do i teach', 'how to teach my', 'teach my daughter',
+  'teach my son', 'teach my child', 'help me teach',
+  'explain to my daughter', 'explain to my son',
+  'what should i teach', 'study plan for my',
+  // Roman Urdu
   'mera bacha', 'meri beti', 'mera beta',
+  'beti ko kaise parhaun', 'bete ko kaise parhaun',
+  'beti ki tayyari', 'bete ki tayyari',
+  'parhai kaisi chal rahi hai', 'meri beti ka result',
+  'bachon ko kaise samjhaun',
 ];
 
 // ── Roman Urdu signals (Pakistani students type this way) ─────────────────

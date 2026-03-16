@@ -64,10 +64,24 @@ export default function StarkyBubble() {
       const firstName = userProfile?.name?.split(' ')[0];
       const name = firstName || 'there';
 
+      // Check if parent set an assignment
+      let assignment = null;
+      try {
+        const activeChild = JSON.parse(localStorage.getItem('nw_active_child') || 'null');
+        const childId = activeChild?.id || userProfile?.email || 'guest';
+        const raw = localStorage.getItem(`nw_assignment_${childId}`);
+        if (raw) {
+          assignment = JSON.parse(raw);
+          localStorage.removeItem(`nw_assignment_${childId}`); // Show once, then clear
+        }
+      } catch {}
+
       // Build proactive greeting based on memory
       let greeting = null;
 
-      if (sessionMemory?.recentMistakes?.length) {
+      if (assignment) {
+        greeting = `Welcome back ${name}! ★ Your parent asked you to work on: **${assignment.topic}**\n\nLet's tackle this together! Ask me anything about it, or say "start" and I'll begin teaching you step by step.`;
+      } else if (sessionMemory?.recentMistakes?.length) {
         // Student has known mistakes — lead with targeted help
         const latest = sessionMemory.recentMistakes[sessionMemory.recentMistakes.length - 1];
         greeting = `Welcome back ${name}! ★ Last time you found **${latest.topic}** tricky. Want to tackle that first? I have a new way to explain it.`;

@@ -503,10 +503,10 @@ function buildIntentInstruction(intent, group) {
       ALEVEL: 'Direct: "Not my territory! What subject are we working on today?"',
     },
     [INTENTS.PARENT_QUERY]: {
-      KID:    'Address the parent warmly. Share what their child has been working on, how they\'re doing, and one specific thing to practise at home.',
-      MIDDLE: 'Address the parent. Summarise the student\'s progress, mention weak areas, suggest one home activity.',
-      OLEVEL: 'Address the parent professionally. Discuss the student\'s Cambridge preparation, weak topics, and exam readiness. Give one actionable tip.',
-      ALEVEL: 'Address the parent as a partner. Discuss subject progress, university readiness, and how to support without adding pressure.',
+      KID:    'This is a PARENT, not a student. Address them warmly as an adult. If they ask about their child: share what to practise at home and one fun activity. If they ask HOW to teach something: give them a simple mini lesson plan they can use with their child — explain the concept, suggest how to explain it, common mistakes kids make, and a check question to ask.',
+      MIDDLE: 'This is a PARENT. If asking about progress: summarise weak areas and suggest focus topics. If asking how to teach: give them a step-by-step teaching guide — explain the concept at the parent level first, then show how to break it down for the child, with 2-3 check questions they can ask.',
+      OLEVEL: 'This is a PARENT who may be actively teaching their O Level child. If asking about progress: discuss Cambridge preparation, weak topics, exam readiness. If asking how to teach a topic: give them the FULL Cambridge examiner perspective — what the mark scheme wants, common mistakes, how to explain it, and practice questions they can give their child. Be their teaching partner. Example: "For O Level Urdu Paper 1 nazm analysis, the examiner wants specific poetic devices identified with quotes. Teach her to underline tashbeeh and iste\'aara first."',
+      ALEVEL: 'This is a PARENT. If asking about progress: discuss subject mastery and university readiness. If asking how to teach: provide the topic explanation, mark scheme approach, and practice activities. Treat them as a co-educator — give them the tools to help.',
     },
     [INTENTS.UNKNOWN]: {
       KID:    'Ask gently: "Can you tell me what you\'re working on? 😊"',

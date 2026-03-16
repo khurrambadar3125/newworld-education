@@ -23,6 +23,141 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 
+// ── Child Progress Component — shows weak topics, mistakes, last session from KV ──
+function ChildProgress({ children, parentEmail }) {
+  const [data, setData] = useState({});
+  const [loading, setLoading] = useState(false);
+  const [expanded, setExpanded] = useState(null);
+
+  const fetchChild = async (child) => {
+    if (data[child.id]) { setExpanded(expanded === child.id ? null : child.id); return; }
+    setExpanded(child.id); setLoading(true);
+    try {
+      // Try fetching via parent email + child email (if child has an email from nw_user)
+      const childEmail = child.email || `${child.name.toLowerCase().replace(/\s/g,'')}@nw.local`;
+      const res = await fetch('/api/parent-data', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ parentEmail, childEmail }),
+      });
+      const result = await res.json();
+      setData(d => ({ ...d, [child.id]: result.memory || null }));
+    } catch { setData(d => ({ ...d, [child.id]: null })); }
+    setLoading(false);
+  };
+
+  return (
+    <div style={{marginTop:20,background:"rgba(79,142,247,0.06)",border:"1px solid rgba(79,142,247,0.18)",borderRadius:20,padding:"20px 22px"}}>
+      <div style={{fontWeight:900,fontSize:15,color:"#4F8EF7",marginBottom:4}}>📊 Child Progress</div>
+      <div style={{fontSize:12,color:"rgba(255,255,255,0.35)",marginBottom:14}}>Tap a child to see their weak topics and recent mistakes</div>
+      {children.map(child => (
+        <div key={child.id} style={{marginBottom:10}}>
+          <button onClick={() => fetchChild(child)} style={{width:"100%",textAlign:"left",background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.08)",borderRadius:14,padding:"12px 14px",cursor:"pointer",color:"#fff",fontFamily:"'Nunito',sans-serif"}}>
+            <span style={{fontSize:18,marginRight:8}}>{child.avatar}</span>
+            <span style={{fontWeight:800,color:child.color}}>{child.name}</span>
+            <span style={{float:"right",color:"rgba(255,255,255,0.3)"}}>{expanded === child.id ? '▼' : '▶'}</span>
+          </button>
+          {expanded === child.id && (
+            <div style={{padding:"12px 14px",background:"rgba(255,255,255,0.02)",borderRadius:"0 0 14px 14px",border:"1px solid rgba(255,255,255,0.06)",borderTop:"none"}}>
+              {loading ? <div style={{color:"rgba(255,255,255,0.4)",fontSize:13}}>Loading...</div>
+              : !data[child.id] ? <div style={{color:"rgba(255,255,255,0.4)",fontSize:13}}>No session data yet. They need to study with Starky first.</div>
+              : (
+                <>
+                  <div style={{display:"flex",gap:10,marginBottom:10,flexWrap:"wrap"}}>
+                    <div style={{background:"rgba(168,224,99,0.1)",border:"1px solid rgba(168,224,99,0.25)",borderRadius:10,padding:"8px 12px",fontSize:12,fontWeight:700}}>
+                      <span style={{color:"#A8E063"}}>{data[child.id].totalSessions || 0}</span> sessions
+                    </div>
+                    {data[child.id].currentSubject && (
+                      <div style={{background:"rgba(79,142,247,0.1)",border:"1px solid rgba(79,142,247,0.25)",borderRadius:10,padding:"8px 12px",fontSize:12,fontWeight:700}}>
+                        📚 <span style={{color:"#4F8EF7"}}>{data[child.id].currentSubject}</span>
+                      </div>
+                    )}
+                    {data[child.id].lastSeen && (
+                      <div style={{background:"rgba(255,255,255,0.04)",borderRadius:10,padding:"8px 12px",fontSize:12,color:"rgba(255,255,255,0.4)"}}>
+                        Last seen: {new Date(data[child.id].lastSeen).toLocaleDateString()}
+                      </div>
+                    )}
+                  </div>
+                  {data[child.id].weakTopics?.length > 0 && (
+                    <div style={{marginBottom:10}}>
+                      <div style={{fontSize:11,fontWeight:800,color:"#FFC300",marginBottom:6}}>⚠️ WEAK TOPICS</div>
+                      {data[child.id].weakTopics.map((t,i) => (
+                        <div key={i} style={{fontSize:13,color:"rgba(255,255,255,0.6)",padding:"2px 0"}}>• {t}</div>
+                      ))}
+                    </div>
+                  )}
+                  {data[child.id].recentMistakes?.length > 0 && (
+                    <div>
+                      <div style={{fontSize:11,fontWeight:800,color:"#F87171",marginBottom:6}}>❌ RECENT MISTAKES</div>
+                      {data[child.id].recentMistakes.slice(0,5).map((m,i) => (
+                        <div key={i} style={{fontSize:13,color:"rgba(255,255,255,0.6)",padding:"2px 0"}}>• <strong>{m.topic}:</strong> {m.description}</div>
+                      ))}
+                    </div>
+                  )}
+                  {data[child.id].sessionSummary && (
+                    <div style={{marginTop:10,fontSize:13,color:"rgba(255,255,255,0.5)",fontStyle:"italic",lineHeight:1.6}}>
+                      💬 Last session: {data[child.id].sessionSummary}
+                    </div>
+                  )}
+                </>
+              )}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// ── Set Assignment Component — parent tells Starky what child should study next ──
+function SetAssignment({ children }) {
+  const [selectedChild, setSelectedChild] = useState(null);
+  const [topic, setTopic] = useState('');
+  const [saved, setSaved] = useState(false);
+
+  const save = () => {
+    if (!selectedChild || !topic.trim()) return;
+    try {
+      const key = `nw_assignment_${selectedChild}`;
+      localStorage.setItem(key, JSON.stringify({ topic: topic.trim(), setAt: new Date().toISOString(), setBy: 'parent' }));
+      setSaved(true);
+      setTimeout(() => setSaved(false), 3000);
+      setTopic('');
+    } catch {}
+  };
+
+  return (
+    <div style={{marginTop:20,background:"rgba(167,139,250,0.06)",border:"1px solid rgba(167,139,250,0.18)",borderRadius:20,padding:"20px 22px"}}>
+      <div style={{fontWeight:900,fontSize:15,color:"#A78BFA",marginBottom:4}}>📋 Set Assignment</div>
+      <div style={{fontSize:12,color:"rgba(255,255,255,0.35)",marginBottom:14}}>Tell Starky what your child should study next. They'll see it when they open Starky.</div>
+      <div style={{display:"flex",gap:8,marginBottom:10,flexWrap:"wrap"}}>
+        {children.map(c => (
+          <button key={c.id} onClick={() => setSelectedChild(c.id)} style={{
+            background: selectedChild === c.id ? `${c.color}20` : "rgba(255,255,255,0.04)",
+            border: `1px solid ${selectedChild === c.id ? c.color : "rgba(255,255,255,0.08)"}`,
+            borderRadius:10, padding:"8px 14px", cursor:"pointer", color: selectedChild === c.id ? c.color : "rgba(255,255,255,0.6)",
+            fontWeight:700, fontSize:13, fontFamily:"'Nunito',sans-serif",
+          }}>
+            {c.avatar} {c.name}
+          </button>
+        ))}
+      </div>
+      {selectedChild && (
+        <>
+          <input value={topic} onChange={e => setTopic(e.target.value)} placeholder="e.g. Urdu Paper 1 — nazm analysis, Chapter 5 Biology"
+            style={{width:"100%",background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.12)",borderRadius:12,padding:"12px 14px",color:"#fff",fontSize:14,fontFamily:"'Nunito',sans-serif",boxSizing:"border-box",marginBottom:10}} />
+          <button onClick={save} disabled={!topic.trim()} style={{
+            width:"100%",background:topic.trim()?"linear-gradient(135deg,#A78BFA,#7C5CBF)":"rgba(255,255,255,0.06)",
+            border:"none",borderRadius:12,padding:"12px",color:topic.trim()?"#fff":"rgba(255,255,255,0.3)",
+            fontWeight:800,fontSize:14,cursor:topic.trim()?"pointer":"not-allowed",fontFamily:"'Nunito',sans-serif",
+          }}>
+            {saved ? '✅ Assignment saved!' : 'Set Assignment →'}
+          </button>
+        </>
+      )}
+    </div>
+  );
+}
+
 // ── CONSTANTS ─────────────────────────────────────────────────────────────────
 const STORAGE_KEY   = "nw_parent";
 const ACTIVE_KEY    = "nw_active_child";
@@ -669,6 +804,16 @@ export default function ParentPage() {
             })}
           </div>
         )}
+        {/* Child Progress — fetches from KV */}
+        {children.length > 0 && (
+          <ChildProgress children={children} parentEmail={account?.email} />
+        )}
+
+        {/* Set Assignment */}
+        {children.length > 0 && (
+          <SetAssignment children={children} />
+        )}
+
         {/* Subscription section */}
         <div style={{marginTop:28,background:"rgba(168,224,99,0.06)",border:"1px solid rgba(168,224,99,0.2)",borderRadius:20,padding:"20px 22px"}}>
           <div style={{fontWeight:900,fontSize:15,color:"#A8E063",marginBottom:8}}>🎓 Family Plan — $69.99/mo</div>
