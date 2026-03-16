@@ -1,4 +1,5 @@
 import { Redis } from '@upstash/redis';
+import { notify } from '../../utils/notify';
 
 const kv = new Redis({ url: process.env.KV_REST_API_URL, token: process.env.KV_REST_API_TOKEN });
 
@@ -34,6 +35,17 @@ export default async function handler(req, res) {
         setBy: parentName || 'Your parent',
         setAt: new Date().toISOString(),
       }), { ex: 7 * 24 * 60 * 60 }); // expires in 7 days
+
+      // Notify child via email
+      notify({
+        to: childEmail,
+        subject: `📋 New assignment from ${parentName || 'your parent'}`,
+        title: 'You have a new assignment!',
+        body: `<strong>${parentName || 'Your parent'}</strong> wants you to study:<br><br><div style="background:rgba(167,139,250,0.15);border:1px solid rgba(167,139,250,0.3);border-radius:12px;padding:16px;color:#fff;font-size:16px;font-weight:700">${topic}</div><br>Open Starky and it will help you work through this step by step.`,
+        ctaText: 'Open Starky →',
+        ctaUrl: 'https://www.newworld.education',
+      }).catch(() => {});
+
       return res.status(200).json({ ok: true });
     } catch (e) {
       return res.status(500).json({ error: 'Failed to save assignment' });
@@ -50,6 +62,17 @@ export default async function handler(req, res) {
         from: parentName || 'Your parent',
         setAt: new Date().toISOString(),
       }), { ex: 7 * 24 * 60 * 60 });
+
+      // Notify child
+      notify({
+        to: childEmail,
+        subject: `💬 Message from ${parentName || 'your parent'}`,
+        title: 'Message from your parent',
+        body: `<div style="background:rgba(79,142,247,0.15);border:1px solid rgba(79,142,247,0.3);border-radius:12px;padding:16px;color:#fff;font-size:15px;font-style:italic">"${feedback}"</div><br>— ${parentName || 'Your parent'}`,
+        ctaText: 'Continue Studying →',
+        ctaUrl: 'https://www.newworld.education',
+      }).catch(() => {});
+
       return res.status(200).json({ ok: true });
     } catch (e) {
       return res.status(500).json({ error: 'Failed to save feedback' });

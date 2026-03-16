@@ -305,7 +305,22 @@ export default function DrillPage() {
   const nextQuestion = () => {
     const nextNum = questionNum + 1;
     const sessionPct = liveMax > 0 ? Math.round((liveScore / liveMax) * 100) : 0;
-    if (nextNum >= SESSION_LENGTH) { logSession(subject, SESSION_LENGTH, sessionPct); setPhase('summary'); return; }
+    if (nextNum >= SESSION_LENGTH) {
+      logSession(subject, SESSION_LENGTH, sessionPct);
+      setPhase('summary');
+      // Notify parent of drill results (fire and forget)
+      try {
+        const p = userProfile || {};
+        if (p.email) {
+          const weakAreas = sessionResults.filter(r => !r.correct).map(r => r.topic);
+          fetch('/api/notify-parent', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ parentEmail: p.parentEmail || p.email, studentName: p.name, type: 'drill', subject, score: liveScore, total: liveMax, weakAreas }),
+          }).catch(() => {});
+        }
+      } catch {}
+      return;
+    }
     setQuestionNum(nextNum);
     const due = sr.getDueTopics(subject);
     const nextTopic = due.length ? due[questionNum % due.length] : topic;
