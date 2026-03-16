@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import Head from "next/head";
 import { useSessionLimit, SessionLimitBanner, LimitReachedModal } from "../utils/useSessionLimit";
 
 const GRADES = [
@@ -214,6 +215,13 @@ LANGUAGE: If the child writes in Urdu, respond entirely in Urdu. If Arabic, resp
   const accent = selectedGrade.color;
 
   return (
+    <>
+    <Head>
+      <title>Homework Helper — NewWorldEdu</title>
+      <meta name="description" content="Homework help for KG to Grade 6. Starky guides your child step by step without giving direct answers. Includes craft activities and parent mode." />
+      <meta property="og:title" content="Homework Helper — KG to Grade 6" />
+      <meta property="og:description" content="Homework help for KG to Grade 6. Starky guides your child step by step without giving direct answers. Includes craft activities and parent mode." />
+    </Head>
     <div style={{
       fontFamily: "'Nunito', 'Trebuchet MS', sans-serif",
       background: "linear-gradient(160deg, #0B0E1F 0%, #12101A 50%, #0D1520 100%)",
@@ -705,6 +713,7 @@ LANGUAGE: If the child writes in Urdu, respond entirely in Urdu. If Arabic, resp
         </p>
       </footer>
     </div>
+    </>
   );
 }
 

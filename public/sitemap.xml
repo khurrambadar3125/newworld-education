@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.newworld.education/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.newworld.education/demo</loc><priority>0.9</priority></url>
-  <url><loc>https://www.newworld.education/special-needs</loc><priority>0.8</priority></url>
-  <url><loc>https://www.newworld.education/past-papers</loc><priority>0.8</priority></url>
-  <url><loc>https://www.newworld.education/parent</loc><priority>0.7</priority></url>
+  <url><loc>https://www.newworld.education/</loc><lastmod>2026-03-16</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.newworld.education/drill</loc><lastmod>2026-03-16</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.newworld.education/past-papers</loc><lastmod>2026-03-16</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.newworld.education/special-needs</loc><lastmod>2026-03-16</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.newworld.education/pricing</loc><lastmod>2026-03-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.newworld.education/school</loc><lastmod>2026-03-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.newworld.education/essay</loc><lastmod>2026-03-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.newworld.education/homework</loc><lastmod>2026-03-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.newworld.education/countdown</loc><lastmod>2026-03-16</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.newworld.education/subscribe</loc><lastmod>2026-03-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.newworld.education/parent</loc><lastmod>2026-03-16</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.newworld.education/leaderboard</loc><lastmod>2026-03-16</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.newworld.education/textbooks</loc><lastmod>2026-03-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.newworld.education/reading</loc><lastmod>2026-03-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.newworld.education/arts</loc><lastmod>2026-03-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.newworld.education/music</loc><lastmod>2026-03-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.newworld.education/reading-for-all</loc><lastmod>2026-03-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.newworld.education/arts-for-all</loc><lastmod>2026-03-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.newworld.education/music-for-all</loc><lastmod>2026-03-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.newworld.education/ibcc</loc><lastmod>2026-03-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.newworld.education/demo</loc><lastmod>2026-03-16</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.newworld.education/login</loc><lastmod>2026-03-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 </urlset>

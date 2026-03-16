@@ -108,6 +108,9 @@ export default function Leaderboard() {
     <>
       <Head>
         <title>Leaderboard — NewWorldEdu ★</title>
+        <meta name="description" content="Weekly student leaderboard on NewWorldEdu. Earn points by studying with Starky, build streaks, and compete with other Cambridge students." />
+        <meta property="og:title" content="Student Leaderboard — NewWorldEdu" />
+        <meta property="og:description" content="Weekly student leaderboard on NewWorldEdu. Earn points by studying with Starky, build streaks, and compete with other Cambridge students." />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
       </Head>

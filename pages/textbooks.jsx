@@ -487,6 +487,12 @@ export default function TextbooksPage() {
   // ── LEVEL SELECTOR ─────────────────────────────────────────────────────────
   if (!level) return (
     <div style={S.page}><style>{CSS}</style>
+      <Head>
+        <title>Textbook Companion — NewWorldEdu</title>
+        <meta name="description" content="Cambridge O Level and A Level textbook companion. Ask Starky about any chapter, get explanations, and practice questions from your textbook." />
+        <meta property="og:title" content="Textbook Companion — Cambridge O/A Level" />
+        <meta property="og:description" content="Cambridge O Level and A Level textbook companion. Ask Starky about any chapter, get explanations, and practice questions from your textbook." />
+      </Head>
       <header style={S.hdr}>
         <a href="/" style={{ textDecoration:"none", display:"flex", alignItems:"center", gap:8 }}>
           <span style={{ fontWeight:900, fontSize:15, color:"#fff" }}>NewWorldEdu<span style={{color:"#4F8EF7"}}>★</span></span>

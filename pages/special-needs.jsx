@@ -11,6 +11,7 @@
 // ═══════════════════════════════════════════════════════════════════════
 
 import { useState, useRef, useEffect } from "react";
+import Head from "next/head";
 import { useSessionLimit } from "../utils/useSessionLimit";
 import { addKnowledgeToPrompt } from "../utils/senKnowledge";
 
@@ -701,6 +702,12 @@ ${focus.id !== "parent" ? `\n*For the adult:* Tell me your child's name if you'd
 
   return (
     <div style={S.page}><style>{CSS}</style>
+      <Head>
+        <title>Special Needs Support — NewWorldEdu</title>
+        <meta name="description" content="AI tutoring adapted for autism, ADHD, dyslexia, and Down syndrome. 140 teaching profiles with evidence-based strategies for Pakistani students." />
+        <meta property="og:title" content="Special Needs Support — Adapted AI Tutoring" />
+        <meta property="og:description" content="AI tutoring adapted for autism, ADHD, dyslexia, and Down syndrome. 140 teaching profiles with evidence-based strategies for Pakistani students." />
+      </Head>
 
       {/* HEADER */}
       <header style={S.hdr}>

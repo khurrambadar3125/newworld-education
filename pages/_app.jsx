@@ -76,9 +76,32 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
     <SessionProvider session={session}>
       <ThemeProvider>
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
           <meta name="theme-color" content="#080C18" />
+          <meta property="og:site_name" content="NewWorld Education" />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content="https://www.newworld.education/og-image.png" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@newworldedu" />
+          <link rel="canonical" href={`https://www.newworld.education${router.asPath.split('?')[0]}`} />
           <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            "name": "NewWorld Education",
+            "url": "https://www.newworld.education",
+            "logo": "https://www.newworld.education/favicon.svg",
+            "description": "AI-powered tutoring platform for Cambridge O Level and A Level students in Pakistan. Personal tutor for every child, KG to A Levels.",
+            "address": { "@type": "PostalAddress", "addressCountry": "PK" },
+            "sameAs": [],
+            "offers": {
+              "@type": "Offer",
+              "price": "29.99",
+              "priceCurrency": "USD",
+              "description": "AI tutoring subscription — all subjects, 24/7"
+            }
+          })}} />
         </Head>
         <style jsx global>{`
           :root, [data-theme="dark"] {

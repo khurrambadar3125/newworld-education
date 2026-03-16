@@ -1,6 +1,7 @@
 import { signIn, useSession } from "next-auth/react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function LoginPage() {
   const { data: session } = useSession();
@@ -18,6 +19,13 @@ export default function LoginPage() {
   }, [session, router.query]);
 
   return (
+    <>
+    <Head>
+      <title>Sign In — NewWorldEdu</title>
+      <meta name="description" content="Sign in to NewWorldEdu with Google to access your learning dashboard, session history, and parent reports." />
+      <meta property="og:title" content="Sign In — NewWorldEdu" />
+      <meta property="og:description" content="Sign in to NewWorldEdu with Google to access your learning dashboard, session history, and parent reports." />
+    </Head>
     <div style={{
       minHeight: "100vh",
       background: "linear-gradient(135deg, #060B20 0%, #0D1635 100%)",
@@ -78,5 +86,6 @@ export default function LoginPage() {
         </p>
       </div>
     </div>
+    </>
   );
 }

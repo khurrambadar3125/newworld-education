@@ -729,6 +729,12 @@ export default function ParentPage() {
 
   return (
     <div style={S.page}><style>{CSS}</style>
+      <Head>
+        <title>Parent Portal — NewWorldEdu</title>
+        <meta name="description" content="Parent portal for NewWorldEdu. Track your child's Cambridge exam preparation, set assignments, view weak topics, and get session reports." />
+        <meta property="og:title" content="Parent Portal — NewWorldEdu" />
+        <meta property="og:description" content="Parent portal for NewWorldEdu. Track your child's Cambridge exam preparation, set assignments, view weak topics, and get session reports." />
+      </Head>
       <Header/>
       <div style={{maxWidth:640, margin:"0 auto", padding: isMobile?"20px 16px":"40px 24px", animation:"fadeUp 0.35s ease-out"}}>
 

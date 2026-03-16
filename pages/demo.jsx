@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import Head from "next/head";
 import { useSessionLimit, LimitReachedModal } from "../utils/useSessionLimit";
 
 const useIsMobile = () => {
@@ -235,6 +236,13 @@ export default function DemoPage() {
   };
 
   return (
+    <>
+    <Head>
+      <title>Chat with Starky — NewWorldEdu</title>
+      <meta name="description" content="Chat with Starky, your personal AI tutor. Cambridge O Level and A Level exam preparation, homework help, and concept explanations in 16 languages." />
+      <meta property="og:title" content="Chat with Starky — AI Tutor" />
+      <meta property="og:description" content="Chat with Starky, your personal AI tutor. Cambridge O Level and A Level exam preparation, homework help, and concept explanations in 16 languages." />
+    </Head>
     <div style={{
       fontFamily: "'Nunito','Segoe UI',sans-serif",
       background: "#060B20", color: "#fff",
@@ -411,5 +419,6 @@ export default function DemoPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

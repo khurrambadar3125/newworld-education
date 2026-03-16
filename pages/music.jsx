@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import Head from "next/head";
 import { useSessionLimit } from "../utils/useSessionLimit";
 
 const STAGES = [
@@ -96,6 +97,13 @@ export default function MusicPage() {
   const CSS = `@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');*{box-sizing:border-box}button:focus,textarea:focus{outline:none}::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.12);border-radius:4px}@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}`;
 
   return (
+    <>
+    <Head>
+      <title>Music — NewWorldEdu</title>
+      <meta name="description" content="Music education with AI. Learn music theory, instruments, composition, and music history with personalised guidance." />
+      <meta property="og:title" content="Music — NewWorldEdu" />
+      <meta property="og:description" content="Music education with AI. Learn music theory, instruments, composition, and music history with personalised guidance." />
+    </Head>
     <div style={{ minHeight:"100vh", background:"linear-gradient(135deg,#060B20 0%,#0D1635 60%,#060B20 100%)", fontFamily:"'Nunito',sans-serif", color:"#fff" }}>
       <style>{CSS}</style>
       <header style={{ padding:isMobile?"12px 16px":"14px 28px", borderBottom:"1px solid rgba(255,255,255,0.06)", display:"flex", alignItems:"center", justifyContent:"space-between" }}>
@@ -254,5 +262,6 @@ export default function MusicPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

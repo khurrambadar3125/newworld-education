@@ -337,6 +337,9 @@ export default function DrillPage() {
     <>
       <Head>
         <title>Drill Mode ★ — NewWorldEdu</title>
+        <meta name="description" content="Practice Cambridge O Level and A Level exam questions with timed drills, hints, and mark scheme grading. Free AI-powered practice for all subjects." />
+        <meta property="og:title" content="Practice Drill — Cambridge Exam Questions" />
+        <meta property="og:description" content="Practice Cambridge O Level and A Level exam questions with timed drills, hints, and mark scheme grading. Free AI-powered practice for all subjects." />
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" rel="stylesheet" />
       </Head>
       <div style={S.page}>

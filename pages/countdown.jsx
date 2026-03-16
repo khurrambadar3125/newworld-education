@@ -132,6 +132,9 @@ export default function CountdownPage() {
     <>
       <Head>
         <title>Exam Countdown ★ — NewWorldEdu</title>
+        <meta name="description" content="Live countdown to Cambridge O Level and A Level exams June 2026. Zone 4 Pakistan timetable with personalised subject tracking and revision tips." />
+        <meta property="og:title" content="Exam Countdown — Cambridge June 2026" />
+        <meta property="og:description" content="Live countdown to Cambridge O Level and A Level exams June 2026. Zone 4 Pakistan timetable with personalised subject tracking and revision tips." />
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" rel="stylesheet" />
       </Head>
       <div style={{ minHeight: '100vh', background: '#080C18', color: '#fff', fontFamily: "-apple-system,BlinkMacSystemFont,'Inter',sans-serif", paddingBottom: 80 }}>
