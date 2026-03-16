@@ -82,7 +82,7 @@ export default function LoginPage() {
           Continue with Google
         </button>
         <p style={{ color: "rgba(255,255,255,0.25)", fontSize: 12, marginTop: 24 }}>
-          By signing in you agree to our terms of service.
+          By signing in you agree to our <a href="/terms" style={{ color: "rgba(255,255,255,0.4)" }}>Terms of Service</a> and <a href="/privacy" style={{ color: "rgba(255,255,255,0.4)" }}>Privacy Policy</a>.
         </p>
       </div>
     </div>

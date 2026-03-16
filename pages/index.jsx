@@ -736,7 +736,11 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           <a href="/leaderboard">Leaderboard</a>
           <a href="/dashboard">Teacher Dashboard</a>
         </div>
-        <div className="fc2">© 2026 NewWorldEdu · khurram@newworld.education</div>
+        <div style={{display:'flex',gap:16,justifyContent:'center',marginTop:8}}>
+          <a href="/privacy" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Privacy Policy</a>
+          <a href="/terms" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Terms of Service</a>
+        </div>
+        <div className="fc2">© 2026 NewWorldEdu · hello@newworld.education</div>
       </footer>
     </>
   );
