@@ -433,14 +433,29 @@ export default function ParentPage() {
       <Header/>
       <div style={{maxWidth:480, margin:"0 auto", padding: isMobile?"32px 16px":"64px 24px", animation:"fadeUp 0.4s ease-out"}}>
 
-        <div style={{textAlign:"center", marginBottom:36}}>
+        <div style={{textAlign:"center", marginBottom:28}}>
           <div style={{fontSize:56, marginBottom:12}}>👨‍👧‍👦</div>
           <h1 style={{fontSize:isMobile?24:30, fontWeight:900, margin:"0 0 10px", lineHeight:1.2}}>
-            Parent Account
+            Parent Portal
           </h1>
-          <p style={{color:"rgba(255,255,255,0.5)", fontSize:15, lineHeight:1.7, margin:0}}>
-            One account for the whole family. Add up to 4 children — no child email needed. Each child just taps their avatar to start.
+          <p style={{color:"rgba(255,255,255,0.5)", fontSize:15, lineHeight:1.7, margin:"0 0 20px"}}>
+            Stay involved in your child's Cambridge preparation — even from your office.
           </p>
+          <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:8, textAlign:"left", marginBottom:24}}>
+            {[
+              {emoji:"📋", text:"Set assignments remotely"},
+              {emoji:"📊", text:"See weak topics & mistakes"},
+              {emoji:"💬", text:"Send feedback to your child"},
+              {emoji:"📧", text:"Get session reports by email"},
+              {emoji:"🎓", text:"Ask Starky how to teach topics"},
+              {emoji:"📱", text:"Works across devices"},
+            ].map(f => (
+              <div key={f.text} style={{display:"flex",alignItems:"center",gap:8,padding:"8px 10px",background:"rgba(74,222,128,0.06)",border:"1px solid rgba(74,222,128,0.15)",borderRadius:10}}>
+                <span style={{fontSize:18}}>{f.emoji}</span>
+                <span style={{fontSize:12,fontWeight:600,color:"rgba(255,255,255,0.7)"}}>{f.text}</span>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div style={S.card}>

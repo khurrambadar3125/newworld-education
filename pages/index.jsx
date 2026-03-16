@@ -540,7 +540,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
         <p className="hs">Better grades in 30 days. 24/7.</p>
         <div className="hc">
           <a href="#start-learning" className="bp">Start Learning →</a>
-          <a href="/special-needs" className="bo">💜 Special Needs</a>
+          <a href="/parent" className="bo" style={{background:'rgba(74,222,128,0.1)',border:'2px solid rgba(74,222,128,0.35)',color:'#4ADE80'}}>👨‍👩‍👧 I'm a Parent — Track My Child's Learning</a>
           <button className="bo" onClick={() => { window.dispatchEvent(new CustomEvent('starky-scan')); }} style={{background:'rgba(167,139,250,0.12)',border:'2px solid rgba(167,139,250,0.4)',color:'#A78BFA'}}>📷 Photo Your Homework — Starky Reads It</button>
         </div>
         <div className="pr">
@@ -661,6 +661,31 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
             <div style={{fontWeight:800,fontSize:15,marginBottom:4}}>Learn step by step</div>
             <div style={{fontSize:13,color:'rgba(255,255,255,0.5)',lineHeight:1.6}}>Starky guides you to the answer like a private tutor. Parents get a report after every session.</div>
           </div>
+        </div>
+      </section>
+
+      {/* Parent section — what parents can do */}
+      <section className="sec" style={{background:'rgba(74,222,128,0.04)',borderTop:'1px solid rgba(74,222,128,0.1)',borderBottom:'1px solid rgba(74,222,128,0.1)'}}>
+        <div className="sl">For Parents</div>
+        <div className="st">Stay involved in your child's education — even remotely</div>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(200px,1fr))',gap:16,maxWidth:700,margin:'0 auto 24px'}}>
+          {[
+            { emoji:'📋', title:'Set Assignments', desc:'Tell Starky what your child should study. They see it when they open the app — from any device.' },
+            { emoji:'📊', title:'Track Progress', desc:'See weak topics, recent mistakes, and session summaries. Know exactly where your child needs help.' },
+            { emoji:'💬', title:'Send Feedback', desc:'Write a message your child sees on their next session. "Great work on Chemistry! Focus on equations next."' },
+            { emoji:'📧', title:'Session Reports', desc:'Get an email after every study session with accuracy, strengths, weak areas, and what to practise next.' },
+            { emoji:'🎓', title:'Teach with Starky', desc:'Ask Starky "How do I teach my daughter osmosis?" and get a step-by-step guide with mark scheme tips.' },
+            { emoji:'📱', title:'Works Remotely', desc:'You at the office, your child at home. Set assignments, check progress, and send feedback — all cross-device.' },
+          ].map(f => (
+            <div key={f.title} style={{textAlign:'center',padding:16}}>
+              <div style={{fontSize:32,marginBottom:6}}>{f.emoji}</div>
+              <div style={{fontWeight:800,fontSize:14,marginBottom:4}}>{f.title}</div>
+              <div style={{fontSize:12,color:'rgba(255,255,255,0.5)',lineHeight:1.6}}>{f.desc}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{textAlign:'center'}}>
+          <a href="/parent" style={{display:'inline-block',background:'linear-gradient(135deg,#4ADE80,#22C55E)',color:'#060B20',padding:'14px 32px',borderRadius:100,fontWeight:800,fontSize:15,textDecoration:'none'}}>Open Parent Portal →</a>
         </div>
       </section>
 
