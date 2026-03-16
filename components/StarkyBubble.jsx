@@ -61,26 +61,44 @@ export default function StarkyBubble() {
 
   useEffect(() => {
     if (open && messages.length === 0) {
+      (async () => {
       const firstName = userProfile?.name?.split(' ')[0];
       const name = firstName || 'there';
 
-      // Check if parent set an assignment
+      // Check if parent set an assignment or feedback (KV cross-device + localStorage fallback)
       let assignment = null;
+      let parentFeedback = null;
       try {
-        const activeChild = JSON.parse(localStorage.getItem('nw_active_child') || 'null');
-        const childId = activeChild?.id || userProfile?.email || 'guest';
-        const raw = localStorage.getItem(`nw_assignment_${childId}`);
-        if (raw) {
-          assignment = JSON.parse(raw);
-          localStorage.removeItem(`nw_assignment_${childId}`); // Show once, then clear
+        // Try KV first (cross-device — parent at office, child at home)
+        if (userProfile?.email) {
+          const res = await fetch(`/api/assignment?email=${encodeURIComponent(userProfile.email)}`);
+          if (res.ok) {
+            const data = await res.json();
+            if (data.assignment) assignment = data.assignment;
+            if (data.feedback) parentFeedback = data.feedback;
+          }
+        }
+        // Fallback: localStorage (same-device parent portal)
+        if (!assignment) {
+          const activeChild = JSON.parse(localStorage.getItem('nw_active_child') || 'null');
+          const childId = activeChild?.id || userProfile?.email || 'guest';
+          const raw = localStorage.getItem(`nw_assignment_${childId}`);
+          if (raw) {
+            assignment = JSON.parse(raw);
+            localStorage.removeItem(`nw_assignment_${childId}`);
+          }
         }
       } catch {}
 
       // Build proactive greeting based on memory
       let greeting = null;
 
-      if (assignment) {
-        greeting = `Welcome back ${name}! ★ Your parent asked you to work on: **${assignment.topic}**\n\nLet's tackle this together! Ask me anything about it, or say "start" and I'll begin teaching you step by step.`;
+      if (assignment && parentFeedback) {
+        greeting = `Welcome back ${name}! ★\n\n💬 **Message from ${parentFeedback.from}:** "${parentFeedback.feedback}"\n\n📋 **Today's assignment:** ${assignment.topic}\n\nLet's tackle this together! Say "start" and I'll begin teaching you step by step.`;
+      } else if (assignment) {
+        greeting = `Welcome back ${name}! ★ ${assignment.setBy || 'Your parent'} asked you to work on: **${assignment.topic}**\n\nLet's tackle this together! Ask me anything about it, or say "start" and I'll begin teaching you step by step.`;
+      } else if (parentFeedback) {
+        greeting = `Welcome back ${name}! ★\n\n💬 **Message from ${parentFeedback.from}:** "${parentFeedback.feedback}"\n\nWhat would you like to work on today?`;
       } else if (sessionMemory?.recentMistakes?.length) {
         // Student has known mistakes — lead with targeted help
         const latest = sessionMemory.recentMistakes[sessionMemory.recentMistakes.length - 1];
@@ -104,6 +122,7 @@ export default function StarkyBubble() {
           : `Hi! I'm Starky ★ — your personal tutor.\n\nI've studied every Cambridge past paper from 1994 to 2024. I teach step by step — like a private tutor, but available 24/7.\n\nPick any subject and ask me anything. You can also photograph your homework!${urduLine}`;
       }
       setMessages([{ role: 'assistant', content: greeting }]);
+      })(); // end async IIFE
     }
     if (open) setTimeout(() => inputRef.current?.focus(), 200);
   }, [open]);

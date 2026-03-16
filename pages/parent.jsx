@@ -33,8 +33,8 @@ function ChildProgress({ children, parentEmail }) {
     if (data[child.id]) { setExpanded(expanded === child.id ? null : child.id); return; }
     setExpanded(child.id); setLoading(true);
     try {
-      // Try fetching via parent email + child email (if child has an email from nw_user)
-      const childEmail = child.email || `${child.name.toLowerCase().replace(/\s/g,'')}@nw.local`;
+      const childEmail = child.email;
+      if (!childEmail) { setData(d => ({ ...d, [child.id]: null })); setLoading(false); return; }
       const res = await fetch('/api/parent-data', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ parentEmail, childEmail }),
@@ -98,6 +98,8 @@ function ChildProgress({ children, parentEmail }) {
                       💬 Last session: {data[child.id].sessionSummary}
                     </div>
                   )}
+                  {/* Parent feedback — sends message to child's next Starky session */}
+                  <ParentFeedback child={child} parentName={parentEmail} />
                 </>
               )}
             </div>
@@ -108,21 +110,58 @@ function ChildProgress({ children, parentEmail }) {
   );
 }
 
+function ParentFeedback({ child, parentName }) {
+  const [msg, setMsg] = useState('');
+  const [sent, setSent] = useState(false);
+  if (!child.email) return <div style={{marginTop:10,fontSize:12,color:"rgba(255,255,255,0.25)"}}>Add your child's email to send them feedback remotely.</div>;
+  return (
+    <div style={{marginTop:12}}>
+      <div style={{fontSize:11,fontWeight:800,color:"#A78BFA",marginBottom:6}}>💬 SEND FEEDBACK TO {child.name.toUpperCase()}</div>
+      {sent ? <div style={{fontSize:13,color:"#4ADE80"}}>Sent! They'll see it when they open Starky.</div> : (
+        <div style={{display:"flex",gap:8}}>
+          <input value={msg} onChange={e=>setMsg(e.target.value)} placeholder="Great work on Chemistry! Focus on equations next."
+            style={{flex:1,background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"8px 12px",color:"#fff",fontSize:13,fontFamily:"'Nunito',sans-serif"}} />
+          <button onClick={async () => {
+            if (!msg.trim()) return;
+            try { await fetch('/api/assignment', { method:'PUT', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ childEmail:child.email, feedback:msg.trim(), parentName }) }); } catch {}
+            setSent(true); setMsg(''); setTimeout(()=>setSent(false),3000);
+          }} style={{background:"linear-gradient(135deg,#A78BFA,#7C5CBF)",border:"none",borderRadius:10,padding:"8px 16px",color:"#fff",fontWeight:700,fontSize:13,cursor:"pointer",fontFamily:"'Nunito',sans-serif",whiteSpace:"nowrap"}}>
+            Send →
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ── Set Assignment Component — parent tells Starky what child should study next ──
-function SetAssignment({ children }) {
+function SetAssignment({ children, parentName }) {
   const [selectedChild, setSelectedChild] = useState(null);
   const [topic, setTopic] = useState('');
   const [saved, setSaved] = useState(false);
+  const [sending, setSending] = useState(false);
 
-  const save = () => {
+  const save = async () => {
     if (!selectedChild || !topic.trim()) return;
-    try {
-      const key = `nw_assignment_${selectedChild}`;
-      localStorage.setItem(key, JSON.stringify({ topic: topic.trim(), setAt: new Date().toISOString(), setBy: 'parent' }));
-      setSaved(true);
-      setTimeout(() => setSaved(false), 3000);
-      setTopic('');
-    } catch {}
+    const child = children.find(c => c.id === selectedChild);
+    const childEmail = child?.email;
+    setSending(true);
+
+    // Save to KV (cross-device) if child has email, otherwise localStorage fallback
+    if (childEmail) {
+      try {
+        await fetch('/api/assignment', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ childEmail, topic: topic.trim(), parentName }),
+        });
+      } catch {}
+    }
+    // Also save localStorage as fallback (same-device)
+    try { localStorage.setItem(`nw_assignment_${selectedChild}`, JSON.stringify({ topic: topic.trim(), setAt: new Date().toISOString(), setBy: parentName || 'parent' })); } catch {}
+
+    setSaved(true); setSending(false);
+    setTimeout(() => setSaved(false), 3000);
+    setTopic('');
   };
 
   return (
@@ -211,6 +250,7 @@ export default function ParentPage() {
 
   // Add child form
   const [childName,   setChildName]   = useState("");
+  const [childEmail,  setChildEmail]  = useState("");
   const [childGrade,  setChildGrade]  = useState("");
   const [childAvatar, setChildAvatar] = useState("🦁");
   const [childColor,  setChildColor]  = useState("#63D2FF");
@@ -256,20 +296,20 @@ export default function ParentPage() {
     if (editingId) {
       updated.children = updated.children.map(c =>
         c.id === editingId
-          ? { ...c, name: childName.trim(), grade: childGrade, avatar: childAvatar, color: childColor }
+          ? { ...c, name: childName.trim(), email: childEmail.trim() || c.email, grade: childGrade, avatar: childAvatar, color: childColor }
           : c
       );
       setEditingId(null);
     } else {
       const id = `child_${Date.now()}`;
       updated.children = [...updated.children, {
-        id, name: childName.trim(), grade: childGrade,
+        id, name: childName.trim(), email: childEmail.trim() || '', grade: childGrade,
         avatar: childAvatar, color: childColor,
       }];
     }
     saveAccount(updated);
     setAccount(updated);
-    setChildName(""); setChildGrade(""); setChildAvatar("🦁"); setChildColor("#63D2FF"); setAddErr("");
+    setChildName(""); setChildEmail(""); setChildGrade(""); setChildAvatar("🦁"); setChildColor("#63D2FF"); setAddErr("");
     setScreen("pick-child");
   };
 
@@ -492,6 +532,14 @@ export default function ParentPage() {
               <label style={{fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.4)",letterSpacing:1,display:"block",marginBottom:6}}>CHILD'S NAME</label>
               <input style={S.input} value={childName} onChange={e=>setChildName(e.target.value)}
                 placeholder="e.g. Zain, Sara, Ali"/>
+            </div>
+
+            {/* Child email — for remote teaching */}
+            <div>
+              <label style={{fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.4)",letterSpacing:1,display:"block",marginBottom:6}}>CHILD'S EMAIL <span style={{fontWeight:400,opacity:0.6}}>(for remote progress tracking)</span></label>
+              <input style={S.input} type="email" value={childEmail} onChange={e=>setChildEmail(e.target.value)}
+                placeholder="The email they use on NewWorldEdu"/>
+              <div style={{fontSize:11,color:"rgba(255,255,255,0.25)",marginTop:4}}>Enter the same email your child registered with on the platform. This lets you see their progress remotely.</div>
             </div>
 
             {/* Grade */}
@@ -811,7 +859,7 @@ export default function ParentPage() {
 
         {/* Set Assignment */}
         {children.length > 0 && (
-          <SetAssignment children={children} />
+          <SetAssignment children={children} parentName={account?.parentName} />
         )}
 
         {/* Subscription section */}
