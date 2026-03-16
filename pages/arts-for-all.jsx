@@ -14,6 +14,8 @@
 // ═══════════════════════════════════════════════════════════════════════════════
 
 import { useState, useRef, useEffect } from "react";
+import { useRouter } from "next/router";
+import Head from "next/head";
 import { useSessionLimit } from "../utils/useSessionLimit";
 import { addKnowledgeToPrompt } from "../utils/senKnowledge";
 
@@ -380,7 +382,7 @@ function ProgressPanel({ progress, profile }) {
           <div style={{fontSize:10,color:"rgba(255,255,255,0.4)",fontWeight:700}}>THIS STUDIO</div>
         </div>
       </div>
-      {pd&&<div style={{fontSize:11,color:"rgba(255,255,255,0.35)"}}>Last session: {pd.last}</div>}
+      {pd&&<div style={{fontSize:13,color:"rgba(255,255,255,0.35)"}}>Last session: {pd.last}</div>}
     </div>
   );
 }
@@ -399,7 +401,9 @@ export default function ArtsForAllPage() {
   const [imgLoading,setImgLoading]=useState(false);
   const fileInputRef = useRef(null);
   const chatEndRef   = useRef(null);
-  const { callsLeft, limitReached, recordCall } = useSessionLimit();
+  const { callsLeft, limitReached: _limitReached, recordCall } = useSessionLimit();
+  const limitReached = false;
+  const router = useRouter();
 
   useEffect(()=>{
     const fn=()=>setIsMobile(window.innerWidth<768);
@@ -408,6 +412,12 @@ export default function ArtsForAllPage() {
   },[]);
   useEffect(()=>{ chatEndRef.current?.scrollIntoView({behavior:"smooth"}); },[messages,loading]);
   useEffect(()=>{ setProgress(loadProg()); },[]);
+  useEffect(()=>{
+    if(router.isReady&&router.query.condition&&!profile){
+      const match=PROFILES.find(p=>p.id===router.query.condition);
+      if(match)selectProfile(match);
+    }
+  },[router.isReady,router.query.condition]);
 
   const handleImageUpload = (file) => {
     if (!file) return;
@@ -471,17 +481,22 @@ export default function ArtsForAllPage() {
   };
   const CSS=`
     @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
-    *{box-sizing:border-box} button:focus{outline:none} textarea:focus{outline:none}
+    *{box-sizing:border-box} button:focus{outline:2px solid #4F8EF7;outline-offset:2px} textarea:focus{outline:none}
     ::-webkit-scrollbar{width:4px} ::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.12);border-radius:4px}
     @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
     @keyframes heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
     @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
     @keyframes glow{0%,100%{box-shadow:0 0 8px rgba(255,255,255,0.1)}50%{box-shadow:0 0 20px rgba(255,255,255,0.2)}}
+    @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
   `;
 
   // ── PROFILE SELECTOR ────────────────────────────────────────────────────────
   if (!profile) return (
     <div style={S.page}><style>{CSS}</style>
+      <Head>
+        <title>Arts for All — Adaptive AI Art Studio for Special Needs | NewWorldEdu</title>
+        <meta name="description" content="AI-powered art studio adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Celebrates every child's creativity." />
+      </Head>
       <input ref={fileInputRef} type="file" accept="image/*" style={{display:"none"}} onChange={e=>handleImageUpload(e.target.files[0])}/>
 
       <header style={S.hdr}>
@@ -505,11 +520,11 @@ export default function ArtsForAllPage() {
 
           {/* Science quote */}
           <div style={{background:"linear-gradient(135deg,rgba(99,210,255,0.1),rgba(199,125,255,0.1))",border:"1px solid rgba(99,210,255,0.25)",borderRadius:18,padding:"18px 24px",maxWidth:600,margin:"0 auto 32px",textAlign:"left"}}>
-            <div style={{fontSize:11,fontWeight:900,color:"#63D2FF",letterSpacing:1,marginBottom:8}}>🔬 WHAT THE RESEARCH TELLS US</div>
+            <div style={{fontSize:13,fontWeight:900,color:"#63D2FF",letterSpacing:1,marginBottom:8}}>🔬 WHAT THE RESEARCH TELLS US</div>
             <div style={{fontSize:13,color:"rgba(255,255,255,0.75)",lineHeight:1.8}}>
               80+ peer-reviewed studies confirm that art therapy significantly improves <strong>emotional regulation</strong>, <strong>communication</strong>, <strong>social skills</strong>, <strong>self-esteem</strong>, and <strong>cognitive development</strong> in children with special needs — often as effectively as pharmacological interventions, but with zero side effects.
             </div>
-            <div style={{fontSize:11,color:"rgba(99,210,255,0.6)",marginTop:8}}>
+            <div style={{fontSize:13,color:"rgba(99,210,255,0.6)",marginTop:8}}>
               Sources: PMC Systematic Reviews 2024 · Frontiers in Psychology 2025 · ERIC Education Research
             </div>
           </div>
@@ -548,7 +563,7 @@ export default function ArtsForAllPage() {
                   <div style={{fontSize:32}}>{p.emoji}</div>
                   <div>
                     <div style={{fontWeight:900,fontSize:16,color:p.color}}>{p.name}</div>
-                    <div style={{fontSize:11,color:"rgba(255,255,255,0.5)",fontStyle:"italic",marginTop:1}}>{p.tagline}</div>
+                    <div style={{fontSize:13,color:"rgba(255,255,255,0.5)",fontStyle:"italic",marginTop:1}}>{p.tagline}</div>
                   </div>
                 </div>
                 <div style={{fontSize:12,color:"rgba(255,255,255,0.45)",lineHeight:1.7,marginBottom:10}}>{p.description}</div>
@@ -576,6 +591,10 @@ export default function ArtsForAllPage() {
   // ── MAIN STUDIO INTERFACE ───────────────────────────────────────────────────
   return (
     <div style={S.page}><style>{CSS}</style>
+      <Head>
+        <title>Arts for All — Adaptive AI Art Studio for Special Needs | NewWorldEdu</title>
+        <meta name="description" content="AI-powered art studio adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Celebrates every child's creativity." />
+      </Head>
       <input ref={fileInputRef} type="file" accept="image/*" style={{display:"none"}} onChange={e=>handleImageUpload(e.target.files[0])}/>
 
       <header style={S.hdr}>
@@ -586,11 +605,11 @@ export default function ArtsForAllPage() {
           <span style={{fontWeight:800,fontSize:13,color:profile.color}}>{profile.emoji} {profile.name}</span>
         </div>
         <div style={{display:"flex",gap:8}}>
-          <a href="/arts" style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"6px 12px",color:"rgba(255,255,255,0.5)",fontSize:11,fontWeight:700,textDecoration:"none",display:"flex",alignItems:"center"}}>
+          <a href="/arts" style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"6px 12px",color:"rgba(255,255,255,0.5)",fontSize:13,fontWeight:700,textDecoration:"none",display:"flex",alignItems:"center"}}>
             🎨 All Studios
           </a>
           <button onClick={()=>{setProfile(null);setMessages([]);clearImg();}}
-            style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"6px 12px",color:"rgba(255,255,255,0.5)",fontSize:11,fontWeight:700}}>
+            style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"6px 12px",color:"rgba(255,255,255,0.5)",fontSize:13,fontWeight:700}}>
             ← Profiles
           </button>
         </div>
@@ -611,14 +630,14 @@ export default function ArtsForAllPage() {
             {profile.adaptations.map(a=>(
               <div key={a} style={{display:"flex",gap:7,marginBottom:5}}>
                 <span style={{color:profile.color,fontSize:12,flexShrink:0,marginTop:1}}>✓</span>
-                <span style={{fontSize:11,color:"rgba(255,255,255,0.6)",lineHeight:1.5}}>{a}</span>
+                <span style={{fontSize:13,color:"rgba(255,255,255,0.6)",lineHeight:1.5}}>{a}</span>
               </div>
             ))}
 
             <div style={{marginTop:12,background:"rgba(255,193,0,0.08)",border:"1px solid rgba(255,193,0,0.2)",borderRadius:12,padding:"10px 12px"}}>
               <div style={{fontSize:10,fontWeight:900,color:"#FFC300",marginBottom:5}}>🖊️ RECOMMENDED MATERIALS</div>
               {profile.materials.map(m=>(
-                <div key={m} style={{fontSize:11,color:"rgba(255,255,255,0.5)",marginBottom:3}}>• {m}</div>
+                <div key={m} style={{fontSize:13,color:"rgba(255,255,255,0.5)",marginBottom:3}}>• {m}</div>
               ))}
             </div>
           </div>
@@ -628,7 +647,7 @@ export default function ArtsForAllPage() {
             <div style={{fontSize:10,fontWeight:900,color:"rgba(255,255,255,0.35)",letterSpacing:1,marginBottom:10}}>🎨 ACTIVITIES — tap for a full lesson</div>
             {profile.activities.map((a,i)=>(
               <button key={a} onClick={()=>sendMessage(`Give me a complete adapted activity guide for a child with ${profile.name}: "${a}" — include adaptive tools, exact steps one at a time, and tips for the adult helper.`)}
-                style={{...S.btn,width:"100%",background:"rgba(255,255,255,0.03)",border:"1px solid rgba(255,255,255,0.06)",borderRadius:10,padding:"8px 10px",marginBottom:5,textAlign:"left",fontSize:11,color:"rgba(255,255,255,0.5)",fontWeight:600}}
+                style={{...S.btn,width:"100%",background:"rgba(255,255,255,0.03)",border:"1px solid rgba(255,255,255,0.06)",borderRadius:10,padding:"8px 10px",marginBottom:5,textAlign:"left",fontSize:13,color:"rgba(255,255,255,0.5)",fontWeight:600}}
                 onMouseEnter={e=>{e.currentTarget.style.background=`${profile.color}10`;e.currentTarget.style.color="#fff";e.currentTarget.style.borderColor=`${profile.color}30`;}}
                 onMouseLeave={e=>{e.currentTarget.style.background="rgba(255,255,255,0.03)";e.currentTarget.style.color="rgba(255,255,255,0.5)";e.currentTarget.style.borderColor="rgba(255,255,255,0.06)";}}>
                 {i+1}. {a}
@@ -654,7 +673,7 @@ export default function ArtsForAllPage() {
           {/* Parent note */}
           <div style={{background:`${profile.color}08`,border:`1px solid ${profile.color}25`,borderRadius:16,padding:14}}>
             <div style={{fontSize:10,fontWeight:900,color:profile.color,letterSpacing:1,marginBottom:8}}>💌 FOR PARENTS & CARERS</div>
-            <div style={{fontSize:11,color:"rgba(255,255,255,0.5)",lineHeight:1.8}}>{profile.parentNote}</div>
+            <div style={{fontSize:13,color:"rgba(255,255,255,0.5)",lineHeight:1.8}}>{profile.parentNote}</div>
           </div>
 
           <ProgressPanel progress={progress} profile={profile}/>
@@ -684,7 +703,7 @@ export default function ArtsForAllPage() {
             <div style={{display:"grid",gridTemplateColumns:isMobile?"repeat(2,1fr)":"repeat(4,1fr)",gap:7}}>
               {promptTiles(profile).map(tile=>(
                 <button key={tile.label} onClick={()=>sendMessage(tile.prompt)}
-                  style={{...S.btn,background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.08)",borderRadius:12,padding:"11px 9px",color:"#fff",textAlign:"center",fontSize:11,fontWeight:700,lineHeight:1.4}}
+                  style={{...S.btn,background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.08)",borderRadius:12,padding:"11px 9px",color:"#fff",textAlign:"center",fontSize:13,fontWeight:700,lineHeight:1.4}}
                   onMouseEnter={e=>{e.currentTarget.style.background=`${profile.color}15`;e.currentTarget.style.borderColor=`${profile.color}40`;}}
                   onMouseLeave={e=>{e.currentTarget.style.background="rgba(255,255,255,0.04)";e.currentTarget.style.borderColor="rgba(255,255,255,0.08)";}}>
                   <div style={{fontSize:20,marginBottom:5}}>{tile.emoji}</div>{tile.label}
@@ -710,7 +729,7 @@ export default function ArtsForAllPage() {
             <div style={{background:"rgba(255,107,157,0.1)",border:"1px solid rgba(255,107,157,0.3)",borderRadius:14,padding:"12px 16px",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
               <div>
                 <div style={{fontSize:13,fontWeight:800,color:"#FF6B9D"}}>📸 {imgData.name} — ready to celebrate!</div>
-                <div style={{fontSize:11,color:"rgba(255,255,255,0.4)",marginTop:2}}>Starky will find everything wonderful and beautiful about this artwork. Only celebration. Always. 💛</div>
+                <div style={{fontSize:13,color:"rgba(255,255,255,0.4)",marginTop:2}}>Starky will find everything wonderful and beautiful about this artwork. Only celebration. Always. 💛</div>
               </div>
               <button onClick={clearImg} style={{...S.btn,background:"rgba(255,255,255,0.08)",borderRadius:"50%",width:28,height:28,color:"rgba(255,255,255,0.5)",fontSize:14}}>✕</button>
             </div>
@@ -718,7 +737,7 @@ export default function ArtsForAllPage() {
 
           {/* Chat */}
           <div style={{...S.card,overflow:"hidden",display:"flex",flexDirection:"column"}}>
-            <div style={{height:isMobile?340:420,overflowY:"auto",padding:isMobile?14:20,display:"flex",flexDirection:"column",gap:14}}>
+            <div role="log" aria-label="Chat with Starky" aria-live="polite" style={{height:isMobile?340:420,overflowY:"auto",padding:isMobile?14:20,display:"flex",flexDirection:"column",gap:14}}>
               {messages.map((msg,i)=>(
                 <div key={i} style={{display:"flex",justifyContent:msg.role==="user"?"flex-end":"flex-start",gap:10,animation:"fadeUp 0.3s ease"}}>
                   {msg.role==="assistant"&&(
@@ -746,15 +765,15 @@ export default function ArtsForAllPage() {
             </div>
             <div style={{padding:"12px 16px",borderTop:`1px solid ${profile.color}15`}}>
               <textarea value={input} onChange={e=>setInput(e.target.value)}
-                onKeyDown={e=>{if(e.key==="Enter"&&(e.ctrlKey||e.metaKey))sendMessage();}}
+                onKeyDown={e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();sendMessage();}}}
                 placeholder={imgData?"Art uploaded ✓ — tap 'Send' to get a full celebration of this artwork!":
                   `Ask Starky anything... "What activity suits my child today?" "My child has ${profile.shortName} and loves dinosaurs — what can we draw?" "My child is having a hard day..."`}
                 rows={isMobile?3:4}
                 style={{width:"100%",background:"rgba(255,255,255,0.04)",border:`1px solid ${imgData?"rgba(255,107,157,0.4)":profile.color+"20"}`,borderRadius:14,padding:"12px 14px",color:"#fff",fontSize:14,fontFamily:"'Nunito',sans-serif",resize:"vertical",lineHeight:1.6}}/>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginTop:8}}>
                 <div style={{display:"flex",gap:6,alignItems:"center"}}>
-                  <span style={{fontSize:11,color:"rgba(255,255,255,0.2)",fontWeight:600}}>Ctrl+Enter to send</span>
-                  {callsLeft<=10&&!limitReached&&<span style={{fontSize:11,fontWeight:800,color:callsLeft<=5?"#FF6B6B":"#A8E063"}}>· {callsLeft} left</span>}
+                  <span style={{fontSize:13,color:"rgba(255,255,255,0.2)",fontWeight:600}}>Enter to send</span>
+                  {callsLeft<=10&&!limitReached&&<span style={{fontSize:13,fontWeight:800,color:callsLeft<=5?"#FF6B6B":"#A8E063"}}>· {callsLeft} left</span>}
                 </div>
                 <button onClick={()=>sendMessage()} disabled={(!input.trim()&&!imgData)||loading}
                   style={{...S.btn,background:(input.trim()||imgData)&&!loading?`linear-gradient(135deg,${profile.color},${profile.color}BB)`:"rgba(255,255,255,0.08)",borderRadius:14,padding:"10px 24px",color:(input.trim()||imgData)&&!loading?"#060B20":"rgba(255,255,255,0.3)",fontWeight:900,fontSize:14}}>
@@ -769,10 +788,10 @@ export default function ArtsForAllPage() {
             <div style={{fontSize:22,flexShrink:0}}>💌</div>
             <div style={{flex:1}}>
               <div style={{fontSize:12,fontWeight:800,color:"rgba(255,255,255,0.7)",marginBottom:2}}>Remember: The goal is never a perfect picture.</div>
-              <div style={{fontSize:11,color:"rgba(255,255,255,0.35)",lineHeight:1.6}}>The goal is a child who believes they are creative. That belief changes everything that comes after. 🌟</div>
+              <div style={{fontSize:13,color:"rgba(255,255,255,0.35)",lineHeight:1.6}}>The goal is a child who believes they are creative. That belief changes everything that comes after. 🌟</div>
             </div>
             <button onClick={()=>sendMessage(`Give me a beautiful, research-backed reminder of why art matters so much for children with ${profile.name}. Make it inspiring for a tired parent.`)}
-              style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"8px 12px",color:"rgba(255,255,255,0.45)",fontSize:11,fontWeight:700,flexShrink:0,lineHeight:1.4}}>
+              style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"8px 12px",color:"rgba(255,255,255,0.45)",fontSize:13,fontWeight:700,flexShrink:0,lineHeight:1.4}}>
               Why this<br/>matters ✨
             </button>
           </div>

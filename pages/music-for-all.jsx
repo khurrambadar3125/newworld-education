@@ -1,6 +1,8 @@
 // pages/music-for-all.jsx
 // AI Music Studio for Special Needs — 7 profiles, research-backed
 import { useState, useRef, useEffect } from "react";
+import { useRouter } from "next/router";
+import Head from "next/head";
 import { useSessionLimit } from "../utils/useSessionLimit";
 import { addKnowledgeToPrompt } from "../utils/senKnowledge";
 
@@ -229,11 +231,19 @@ export default function MusicForAllPage() {
   const [isMobile, setIsMobile] = useState(false);
   const [progress, setProgress] = useState({});
   const chatEndRef = useRef(null);
-  const { callsLeft, limitReached, recordCall } = useSessionLimit();
+  const { callsLeft, limitReached: _limitReached, recordCall } = useSessionLimit();
+  const limitReached = false;
+  const router = useRouter();
 
   useEffect(()=>{ const fn=()=>setIsMobile(window.innerWidth<768); fn(); window.addEventListener("resize",fn); return()=>window.removeEventListener("resize",fn); },[]);
   useEffect(()=>{ chatEndRef.current?.scrollIntoView({behavior:"smooth"}); },[messages,loading]);
   useEffect(()=>{ setProgress(loadProg()); },[]);
+  useEffect(()=>{
+    if(router.isReady&&router.query.condition&&!profile){
+      const match=PROFILES.find(p=>p.id===router.query.condition);
+      if(match)selectProfile(match);
+    }
+  },[router.isReady,router.query.condition]);
 
   const selectProfile = (p) => {
     setProfile(p);
@@ -264,14 +274,19 @@ export default function MusicForAllPage() {
     btn:{border:"none",cursor:"pointer",fontFamily:"'Nunito',sans-serif",transition:"all 0.15s"},
   };
   const CSS=`@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
-  *{box-sizing:border-box} button:focus{outline:none} textarea:focus{outline:none}
+  *{box-sizing:border-box} button:focus{outline:2px solid #4F8EF7;outline-offset:2px} textarea:focus{outline:none}
   ::-webkit-scrollbar{width:4px} ::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.12);border-radius:4px}
   @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
   @keyframes noteFloat{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-10px) rotate(3deg)}}
-  @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}`;
+  @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+  @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}`;
 
   if (!profile) return (
     <div style={S.page}><style>{CSS}</style>
+      <Head>
+        <title>Music for All — Adaptive AI Music Studio for Special Needs | NewWorldEdu</title>
+        <meta name="description" content="AI-powered music studio adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Research-backed music therapy activities." />
+      </Head>
       <header style={S.hdr}>
         <a href="/" style={{textDecoration:"none",fontWeight:900,fontSize:15,color:"#fff"}}>NewWorldEdu<span style={{color:"#4F8EF7"}}>★</span></a>
         <div style={{display:"flex",gap:12}}>
@@ -285,9 +300,9 @@ export default function MusicForAllPage() {
           <h1 style={{fontSize:isMobile?24:44,fontWeight:900,margin:"0 0 12px",lineHeight:1.2}}>Music for <span style={{color:"#FFC300"}}>Every</span> Child</h1>
           <p style={{fontSize:isMobile?14:17,color:"rgba(255,255,255,0.6)",maxWidth:580,margin:"0 auto 22px",lineHeight:1.9}}>Starky is trained specifically to teach music to children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and complex communication needs. Fully adapted. Deeply researched.</p>
           <div style={{background:"linear-gradient(135deg,rgba(255,193,0,0.1),rgba(168,224,99,0.08))",border:"1px solid rgba(255,193,0,0.3)",borderRadius:18,padding:isMobile?"16px":"20px 28px",maxWidth:640,margin:"0 auto 30px",textAlign:"left"}}>
-            <div style={{fontSize:11,fontWeight:900,color:"#FFC300",letterSpacing:1,marginBottom:8}}>🔬 WHAT 80+ PEER-REVIEWED STUDIES TELL US</div>
+            <div style={{fontSize:13,fontWeight:900,color:"#FFC300",letterSpacing:1,marginBottom:8}}>🔬 WHAT 80+ PEER-REVIEWED STUDIES TELL US</div>
             <div style={{fontSize:13,color:"rgba(255,255,255,0.75)",lineHeight:1.9}}>Music therapy improves <strong>communication, social skills, emotional regulation, motor function,</strong> and <strong>self-esteem</strong> across every special needs condition. A Cochrane review found music therapy <strong>superior to standard treatment</strong> for autism in social interaction and emotional reciprocity. A randomised controlled trial showed music therapy rebuilds motor pathways in cerebral palsy. Rhythm training directly repairs the phonological deficit of dyslexia.</div>
-            <div style={{fontSize:11,color:"rgba(255,193,0,0.6)",marginTop:8}}>Sources: Frontiers in Psychiatry 2021 · Frontiers in Psychology 2024 · PMC Pediatric Neurorehabilitation 2025 · IJAR 2025</div>
+            <div style={{fontSize:13,color:"rgba(255,193,0,0.6)",marginTop:8}}>Sources: Frontiers in Psychiatry 2021 · Frontiers in Psychology 2024 · PMC Pediatric Neurorehabilitation 2025 · IJAR 2025</div>
           </div>
         </div>
         <div style={{marginBottom:36}}>
@@ -317,10 +332,10 @@ export default function MusicForAllPage() {
                   <div style={{fontSize:30}}>{p.emoji}</div>
                   <div>
                     <div style={{fontWeight:900,fontSize:15,color:p.color}}>{p.name}</div>
-                    <div style={{fontSize:11,color:"rgba(255,255,255,0.45)",fontStyle:"italic",marginTop:1}}>{p.tagline}</div>
+                    <div style={{fontSize:13,color:"rgba(255,255,255,0.45)",fontStyle:"italic",marginTop:1}}>{p.tagline}</div>
                   </div>
                 </div>
-                <div style={{fontSize:11,color:"rgba(255,255,255,0.45)",lineHeight:1.7,marginBottom:10}}>{p.description.substring(0,130)}...</div>
+                <div style={{fontSize:13,color:"rgba(255,255,255,0.45)",lineHeight:1.7,marginBottom:10}}>{p.description.substring(0,130)}...</div>
                 <div style={{background:p.color+"10",border:"1px solid "+p.color+"22",borderRadius:10,padding:"8px 10px"}}>
                   <div style={{fontSize:10,fontWeight:800,color:p.color,marginBottom:3}}>🔬 RESEARCH</div>
                   <div style={{fontSize:10,color:"rgba(255,255,255,0.5)",lineHeight:1.5}}>{p.scienceFact.substring(0,120)}...</div>
@@ -340,6 +355,10 @@ export default function MusicForAllPage() {
 
   return (
     <div style={S.page}><style>{CSS}</style>
+      <Head>
+        <title>Music for All — Adaptive AI Music Studio for Special Needs | NewWorldEdu</title>
+        <meta name="description" content="AI-powered music studio adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Research-backed music therapy activities." />
+      </Head>
       <header style={S.hdr}>
         <div style={{display:"flex",alignItems:"center",gap:10}}>
           <a href="/" style={{textDecoration:"none",fontWeight:900,fontSize:isMobile?13:15,color:"#fff"}}>NewWorldEdu<span style={{color:"#4F8EF7"}}>★</span></a>
@@ -348,8 +367,8 @@ export default function MusicForAllPage() {
           <span style={{fontWeight:800,fontSize:13,color:profile.color}}>{profile.emoji} {profile.name}</span>
         </div>
         <div style={{display:"flex",gap:8}}>
-          <a href="/music" style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"6px 12px",color:"rgba(255,255,255,0.5)",fontSize:11,fontWeight:700,textDecoration:"none",display:"flex",alignItems:"center"}}>🎵 Music Studio</a>
-          <button onClick={()=>{setProfile(null);setMessages([]);}} style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"6px 12px",color:"rgba(255,255,255,0.5)",fontSize:11,fontWeight:700}}>← Profiles</button>
+          <a href="/music" style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"6px 12px",color:"rgba(255,255,255,0.5)",fontSize:13,fontWeight:700,textDecoration:"none",display:"flex",alignItems:"center"}}>🎵 Music Studio</a>
+          <button onClick={()=>{setProfile(null);setMessages([]);}} style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"6px 12px",color:"rgba(255,255,255,0.5)",fontSize:13,fontWeight:700}}>← Profiles</button>
         </div>
       </header>
 
@@ -358,25 +377,25 @@ export default function MusicForAllPage() {
           <div style={{...S.card,background:profile.color+"0A",borderColor:profile.color+"30",padding:14}}>
             <div style={{fontSize:28,marginBottom:6}}>{profile.emoji}</div>
             <div style={{fontWeight:900,fontSize:14,color:profile.color,marginBottom:2}}>{profile.name}</div>
-            <div style={{fontSize:11,color:"rgba(255,255,255,0.45)",fontStyle:"italic",lineHeight:1.5,marginBottom:10}}>{profile.tagline}</div>
+            <div style={{fontSize:13,color:"rgba(255,255,255,0.45)",fontStyle:"italic",lineHeight:1.5,marginBottom:10}}>{profile.tagline}</div>
             <div style={{fontSize:10,fontWeight:900,color:"rgba(255,255,255,0.35)",letterSpacing:1,marginBottom:6}}>🎵 HOW MUSIC HELPS</div>
-            {profile.musicBenefits.map(b=><div key={b} style={{display:"flex",gap:6,marginBottom:4}}><span style={{color:profile.color,fontSize:11,flexShrink:0,marginTop:1}}>✓</span><span style={{fontSize:11,color:"rgba(255,255,255,0.6)",lineHeight:1.5}}>{b}</span></div>)}
+            {profile.musicBenefits.map(b=><div key={b} style={{display:"flex",gap:6,marginBottom:4}}><span style={{color:profile.color,fontSize:13,flexShrink:0,marginTop:1}}>✓</span><span style={{fontSize:13,color:"rgba(255,255,255,0.6)",lineHeight:1.5}}>{b}</span></div>)}
             <div style={{marginTop:10,background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.08)",borderRadius:12,padding:"10px 11px"}}>
               <div style={{fontSize:10,fontWeight:900,color:"#FFC300",marginBottom:4}}>🎸 BEST INSTRUMENTS</div>
-              {profile.instruments.map(i=><div key={i} style={{fontSize:11,color:"rgba(255,255,255,0.5)",marginBottom:3}}>• {i}</div>)}
+              {profile.instruments.map(i=><div key={i} style={{fontSize:13,color:"rgba(255,255,255,0.5)",marginBottom:3}}>• {i}</div>)}
             </div>
           </div>
 
           <div style={{...S.card,padding:14}}>
             <div style={{fontSize:10,fontWeight:900,color:"rgba(255,255,255,0.35)",letterSpacing:1,marginBottom:8}}>🔧 HOW I'VE ADAPTED FOR YOU</div>
-            {profile.adaptations.map(a=><div key={a} style={{display:"flex",gap:6,marginBottom:4}}><span style={{color:profile.color,fontSize:10,flexShrink:0,marginTop:2}}>•</span><span style={{fontSize:11,color:"rgba(255,255,255,0.55)",lineHeight:1.5}}>{a}</span></div>)}
+            {profile.adaptations.map(a=><div key={a} style={{display:"flex",gap:6,marginBottom:4}}><span style={{color:profile.color,fontSize:10,flexShrink:0,marginTop:2}}>•</span><span style={{fontSize:13,color:"rgba(255,255,255,0.55)",lineHeight:1.5}}>{a}</span></div>)}
           </div>
 
           <div style={{...S.card,padding:14}}>
             <div style={{fontSize:10,fontWeight:900,color:"rgba(255,255,255,0.35)",letterSpacing:1,marginBottom:10}}>🎵 ACTIVITIES — tap for full guide</div>
             {profile.activities.map((a,i)=>(
               <button key={a} onClick={()=>sendMessage(`Give me a complete step-by-step guide to this music activity for a child with ${profile.name}: "${a}". Include what the adult needs to do, adaptive options, and what success looks like.`)}
-                style={{...S.btn,width:"100%",background:"rgba(255,255,255,0.03)",border:"1px solid rgba(255,255,255,0.06)",borderRadius:10,padding:"8px 10px",marginBottom:5,textAlign:"left",fontSize:11,color:"rgba(255,255,255,0.5)",fontWeight:600}}
+                style={{...S.btn,width:"100%",background:"rgba(255,255,255,0.03)",border:"1px solid rgba(255,255,255,0.06)",borderRadius:10,padding:"8px 10px",marginBottom:5,textAlign:"left",fontSize:13,color:"rgba(255,255,255,0.5)",fontWeight:600}}
                 onMouseEnter={e=>{e.currentTarget.style.background=profile.color+"10";e.currentTarget.style.color="#fff";e.currentTarget.style.borderColor=profile.color+"30";}}
                 onMouseLeave={e=>{e.currentTarget.style.background="rgba(255,255,255,0.03)";e.currentTarget.style.color="rgba(255,255,255,0.5)";e.currentTarget.style.borderColor="rgba(255,255,255,0.06)";}}>
                 {i+1}. {a}
@@ -400,7 +419,7 @@ export default function MusicForAllPage() {
 
           <div style={{background:profile.color+"08",border:"1px solid "+profile.color+"22",borderRadius:16,padding:14}}>
             <div style={{fontSize:10,fontWeight:900,color:profile.color,letterSpacing:1,marginBottom:8}}>💌 FOR PARENTS & CARERS</div>
-            <div style={{fontSize:11,color:"rgba(255,255,255,0.5)",lineHeight:1.8}}>{profile.parentNote}</div>
+            <div style={{fontSize:13,color:"rgba(255,255,255,0.5)",lineHeight:1.8}}>{profile.parentNote}</div>
           </div>
 
           <ProgressPanel progress={progress} profile={profile}/>
@@ -424,7 +443,7 @@ export default function MusicForAllPage() {
             <div style={{display:"grid",gridTemplateColumns:isMobile?"repeat(2,1fr)":"repeat(4,1fr)",gap:7}}>
               {promptTiles(profile).map(tile=>(
                 <button key={tile.label} onClick={()=>sendMessage(tile.prompt)}
-                  style={{...S.btn,background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.08)",borderRadius:12,padding:"11px 9px",color:"#fff",textAlign:"center",fontSize:11,fontWeight:700,lineHeight:1.4}}
+                  style={{...S.btn,background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.08)",borderRadius:12,padding:"11px 9px",color:"#fff",textAlign:"center",fontSize:13,fontWeight:700,lineHeight:1.4}}
                   onMouseEnter={e=>{e.currentTarget.style.background=profile.color+"15";e.currentTarget.style.borderColor=profile.color+"40";}}
                   onMouseLeave={e=>{e.currentTarget.style.background="rgba(255,255,255,0.04)";e.currentTarget.style.borderColor="rgba(255,255,255,0.08)";}}>
                   <div style={{fontSize:20,marginBottom:5}}>{tile.emoji}</div>{tile.label}
@@ -445,7 +464,7 @@ export default function MusicForAllPage() {
           </div>
 
           <div style={{...S.card,overflow:"hidden",display:"flex",flexDirection:"column"}}>
-            <div style={{height:isMobile?340:430,overflowY:"auto",padding:isMobile?14:20,display:"flex",flexDirection:"column",gap:14}}>
+            <div role="log" aria-label="Chat with Starky" aria-live="polite" style={{height:isMobile?340:430,overflowY:"auto",padding:isMobile?14:20,display:"flex",flexDirection:"column",gap:14}}>
               {messages.map((msg,i)=>(
                 <div key={i} style={{display:"flex",justifyContent:msg.role==="user"?"flex-end":"flex-start",gap:10,animation:"fadeUp 0.3s ease"}}>
                   {msg.role==="assistant"&&<div style={{width:32,height:32,borderRadius:"50%",background:profile.color+"20",border:"1px solid "+profile.color+"40",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0,marginTop:2}}>🎵</div>}
@@ -462,14 +481,14 @@ export default function MusicForAllPage() {
               <div ref={chatEndRef}/>
             </div>
             <div style={{padding:"12px 16px",borderTop:"1px solid "+profile.color+"15"}}>
-              <textarea value={input} onChange={e=>setInput(e.target.value)} onKeyDown={e=>{if(e.key==="Enter"&&(e.ctrlKey||e.metaKey))sendMessage(input);}}
+              <textarea value={input} onChange={e=>setInput(e.target.value)} onKeyDown={e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();sendMessage(input);}}}
                 placeholder={"Ask Starky anything... \"What instrument should my child with "+profile.shortName+" start with?\" · \"My child refused music today — help\" · \"Which musicians had "+profile.shortName+"?\""}
                 rows={isMobile?3:4}
                 style={{width:"100%",background:"rgba(255,255,255,0.04)",border:"1px solid "+profile.color+"22",borderRadius:14,padding:"12px 14px",color:"#fff",fontSize:14,fontFamily:"'Nunito',sans-serif",resize:"vertical",lineHeight:1.6}}/>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginTop:8}}>
                 <div style={{display:"flex",gap:6}}>
-                  <span style={{fontSize:11,color:"rgba(255,255,255,0.2)",fontWeight:600}}>Ctrl+Enter to send</span>
-                  {callsLeft<=10&&!limitReached&&<span style={{fontSize:11,fontWeight:800,color:callsLeft<=5?"#FF6B6B":"#A8E063"}}>· {callsLeft} left</span>}
+                  <span style={{fontSize:13,color:"rgba(255,255,255,0.2)",fontWeight:600}}>Enter to send</span>
+                  {callsLeft<=10&&!limitReached&&<span style={{fontSize:13,fontWeight:800,color:callsLeft<=5?"#FF6B6B":"#A8E063"}}>· {callsLeft} left</span>}
                 </div>
                 <button onClick={()=>sendMessage(input)} disabled={!input.trim()||loading}
                   style={{...S.btn,background:input.trim()&&!loading?"linear-gradient(135deg,"+profile.color+","+profile.color+"BB)":"rgba(255,255,255,0.08)",borderRadius:14,padding:"10px 24px",color:input.trim()&&!loading?"#060B20":"rgba(255,255,255,0.3)",fontWeight:900,fontSize:14}}>
@@ -483,10 +502,10 @@ export default function MusicForAllPage() {
             <div style={{fontSize:20}}>🎶</div>
             <div style={{flex:1}}>
               <div style={{fontSize:12,fontWeight:800,color:"rgba(255,255,255,0.7)"}}>Before there was language, there was music.</div>
-              <div style={{fontSize:11,color:"rgba(255,255,255,0.35)",lineHeight:1.6}}>Rhythm and melody are 40,000 years old. Language is 10,000. Every child responds to music — it is wired into our species. 🌍</div>
+              <div style={{fontSize:13,color:"rgba(255,255,255,0.35)",lineHeight:1.6}}>Rhythm and melody are 40,000 years old. Language is 10,000. Every child responds to music — it is wired into our species. 🌍</div>
             </div>
             <button onClick={()=>sendMessage(`Tell me something genuinely amazing about how music affects the human brain — specifically for children with ${profile.name}. Make it awe-inspiring.`)}
-              style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"8px 12px",color:"rgba(255,255,255,0.45)",fontSize:11,fontWeight:700,flexShrink:0,lineHeight:1.4,textAlign:"center"}}>
+              style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"8px 12px",color:"rgba(255,255,255,0.45)",fontSize:13,fontWeight:700,flexShrink:0,lineHeight:1.4,textAlign:"center"}}>
               Amaze<br/>me ✨
             </button>
           </div>

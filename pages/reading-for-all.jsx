@@ -26,6 +26,8 @@
 // ════════════════════════════════════════════════════════════════════════════
 
 import { useState, useRef, useEffect } from "react";
+import { useRouter } from "next/router";
+import Head from "next/head";
 import { useSessionLimit } from "../utils/useSessionLimit";
 import { addKnowledgeToPrompt } from "../utils/senKnowledge";
 
@@ -620,11 +622,19 @@ export default function ReadingForAllPage() {
   const [isMobile, setIsMobile] = useState(false);
   const [progress, setProgress] = useState({});
   const chatEndRef = useRef(null);
-  const { callsLeft, limitReached, recordCall } = useSessionLimit();
+  const { callsLeft, limitReached: _limitReached, recordCall } = useSessionLimit();
+  const limitReached = false;
+  const router = useRouter();
 
   useEffect(()=>{const fn=()=>setIsMobile(window.innerWidth<768);fn();window.addEventListener("resize",fn);return()=>window.removeEventListener("resize",fn);},[]);
   useEffect(()=>{chatEndRef.current?.scrollIntoView({behavior:"smooth"});},[messages,loading]);
   useEffect(()=>{setProgress(loadProg());},[]);
+  useEffect(()=>{
+    if(router.isReady&&router.query.condition&&!profile){
+      const match=PROFILES.find(p=>p.id===router.query.condition);
+      if(match)selectProfile(match);
+    }
+  },[router.isReady,router.query.condition]);
 
   const S = {
     page:{minHeight:"100vh",background:"linear-gradient(135deg,#060B20 0%,#0D1635 60%,#060B20 100%)",fontFamily:"'Nunito',sans-serif",color:"#fff"},
@@ -632,7 +642,7 @@ export default function ReadingForAllPage() {
     card:{background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.09)",borderRadius:18},
     btn:{border:"none",cursor:"pointer",fontFamily:"'Nunito',sans-serif",transition:"all 0.15s"},
   };
-  const CSS="@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');\n*{box-sizing:border-box}button:focus,textarea:focus,input:focus{outline:none}\n::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.12);border-radius:4px}\n@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}\n@keyframes bookFloat{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(2deg)}}\n@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}";
+  const CSS="@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');\n*{box-sizing:border-box}button:focus{outline:2px solid #4F8EF7;outline-offset:2px}textarea:focus,input:focus{outline:none}\n::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.12);border-radius:4px}\n@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}\n@keyframes bookFloat{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(2deg)}}\n@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}\n@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}";
 
   const selectProfile = (p) => {
     setProfile(p); setActiveBook(null);
@@ -669,6 +679,10 @@ export default function ReadingForAllPage() {
   // ── PROFILE SELECTOR ──────────────────────────────────────────────────────
   if (!profile) return (
     <div style={S.page}><style>{CSS}</style>
+      <Head>
+        <title>Reading for All — Adaptive AI Reading Tutor for Special Needs | NewWorldEdu</title>
+        <meta name="description" content="AI reading tutor adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Evidence-based literacy instruction and book recommendations." />
+      </Head>
       <header style={S.hdr}>
         <a href="/" style={{textDecoration:"none",fontWeight:900,fontSize:15,color:"#fff"}}>NewWorldEdu<span style={{color:"#4F8EF7"}}>★</span></a>
         <div style={{display:"flex",gap:12,alignItems:"center"}}>
@@ -687,7 +701,7 @@ export default function ReadingForAllPage() {
           </p>
 
           <div style={{background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.09)",borderRadius:18,padding:isMobile?"16px":"20px 28px",maxWidth:640,margin:"0 auto 32px",textAlign:"left"}}>
-            <div style={{fontSize:11,fontWeight:900,color:"rgba(255,255,255,0.3)",letterSpacing:1.5,marginBottom:12}}>📊 WHAT RESEARCH ACROSS 50+ STUDIES TELLS US</div>
+            <div style={{fontSize:13,fontWeight:900,color:"rgba(255,255,255,0.3)",letterSpacing:1.5,marginBottom:12}}>📊 WHAT RESEARCH ACROSS 50+ STUDIES TELLS US</div>
             <div style={{display:"grid",gridTemplateColumns:isMobile?"1fr":"1fr 1fr",gap:8}}>
               {[
                 "Autistic hyperlexic children can unlock comprehension through Visualizing & Verbalizing (PMC 2024 RCT)",
@@ -697,7 +711,7 @@ export default function ReadingForAllPage() {
                 "Percy Jackson was written specifically for ADHD and dyslexic children — high interest eliminates the attentional gap",
                 "Blind children's auditory cortex expands neuroplastically — their literary comprehension frequently exceeds sighted peers",
               ].map(f=>(
-                <div key={f} style={{background:"rgba(255,255,255,0.03)",border:"1px solid rgba(255,255,255,0.07)",borderRadius:10,padding:"10px 12px",fontSize:11,color:"rgba(255,255,255,0.55)",lineHeight:1.6}}>
+                <div key={f} style={{background:"rgba(255,255,255,0.03)",border:"1px solid rgba(255,255,255,0.07)",borderRadius:10,padding:"10px 12px",fontSize:13,color:"rgba(255,255,255,0.55)",lineHeight:1.6}}>
                   ✓ {f}
                 </div>
               ))}
@@ -720,10 +734,10 @@ export default function ReadingForAllPage() {
                   <div style={{fontSize:32}}>{p.emoji}</div>
                   <div>
                     <div style={{fontWeight:900,fontSize:16,color:p.color}}>{p.name}</div>
-                    <div style={{fontSize:11,color:"rgba(255,255,255,0.35)"}}>{p.books.length} books · {p.activities.length} activities</div>
+                    <div style={{fontSize:13,color:"rgba(255,255,255,0.35)"}}>{p.books.length} books · {p.activities.length} activities</div>
                   </div>
                 </div>
-                <div style={{fontSize:11,fontStyle:"italic",color:p.color+"CC",marginBottom:7,lineHeight:1.5}}>{p.tagline}</div>
+                <div style={{fontSize:13,fontStyle:"italic",color:p.color+"CC",marginBottom:7,lineHeight:1.5}}>{p.tagline}</div>
                 <div style={{fontSize:12,color:"rgba(255,255,255,0.45)",lineHeight:1.7,marginBottom:10}}>{p.description.substring(0,130)}...</div>
                 <div style={{background:p.color+"10",border:"1px solid "+p.color+"25",borderRadius:10,padding:"8px 10px",fontSize:10,color:p.color+"CC",lineHeight:1.6}}>
                   🔬 {p.scienceFact.substring(0,100)}...
@@ -748,6 +762,10 @@ export default function ReadingForAllPage() {
   const tiles = promptTiles(profile);
   return (
     <div style={S.page}><style>{CSS}</style>
+      <Head>
+        <title>Reading for All — Adaptive AI Reading Tutor for Special Needs | NewWorldEdu</title>
+        <meta name="description" content="AI reading tutor adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Evidence-based literacy instruction and book recommendations." />
+      </Head>
       <header style={S.hdr}>
         <div style={{display:"flex",alignItems:"center",gap:10,flexWrap:"wrap"}}>
           <a href="/" style={{textDecoration:"none",fontWeight:900,fontSize:isMobile?13:15,color:"#fff"}}>NewWorldEdu<span style={{color:"#4F8EF7"}}>★</span></a>
@@ -756,7 +774,7 @@ export default function ReadingForAllPage() {
           <span style={{fontWeight:800,fontSize:13,color:profile.color}}>{profile.emoji} {profile.name}</span>
         </div>
         <button onClick={()=>{setProfile(null);setActiveBook(null);setMessages([]);}}
-          style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"6px 12px",color:"rgba(255,255,255,0.5)",fontSize:11,fontWeight:700}}>
+          style={{...S.btn,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:10,padding:"6px 12px",color:"rgba(255,255,255,0.5)",fontSize:13,fontWeight:700}}>
           ← Profiles
         </button>
       </header>
@@ -770,10 +788,10 @@ export default function ReadingForAllPage() {
           <div style={{background:profile.color+"0A",border:"2px solid "+profile.color+"30",borderRadius:18,padding:14}}>
             <div style={{fontSize:28,marginBottom:4}}>{profile.emoji}</div>
             <div style={{fontWeight:900,fontSize:15,color:profile.color,marginBottom:2}}>{profile.name}</div>
-            <div style={{fontSize:11,fontStyle:"italic",color:profile.color+"BB",marginBottom:10,lineHeight:1.5}}>{profile.tagline}</div>
+            <div style={{fontSize:13,fontStyle:"italic",color:profile.color+"BB",marginBottom:10,lineHeight:1.5}}>{profile.tagline}</div>
             <div style={{background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.07)",borderRadius:12,padding:10,marginBottom:8}}>
               <div style={{fontSize:10,fontWeight:900,color:"rgba(255,255,255,0.3)",letterSpacing:1,marginBottom:6}}>✅ READING STRENGTHS</div>
-              {profile.readingStrengths.map(s=><div key={s} style={{fontSize:11,color:"rgba(255,255,255,0.5)",marginBottom:3,lineHeight:1.4}}>• {s}</div>)}
+              {profile.readingStrengths.map(s=><div key={s} style={{fontSize:13,color:"rgba(255,255,255,0.5)",marginBottom:3,lineHeight:1.4}}>• {s}</div>)}
             </div>
             <div style={{background:profile.color+"0C",border:"1px solid "+profile.color+"20",borderRadius:12,padding:10}}>
               <div style={{fontSize:10,fontWeight:900,color:profile.color+"90",letterSpacing:1,marginBottom:6}}>🔬 THE SCIENCE</div>
@@ -795,7 +813,7 @@ export default function ReadingForAllPage() {
                 >
                   <span style={{fontSize:16,flexShrink:0}}>{b.emoji}</span>
                   <div style={{flex:1,minWidth:0}}>
-                    <div style={{fontSize:11,fontWeight:800,color:activeBook?.title===b.title?profile.color:"rgba(255,255,255,0.75)",lineHeight:1.3,whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{b.title}</div>
+                    <div style={{fontSize:13,fontWeight:800,color:activeBook?.title===b.title?profile.color:"rgba(255,255,255,0.75)",lineHeight:1.3,whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{b.title}</div>
                     <div style={{fontSize:10,color:"rgba(255,255,255,0.35)"}}>{b.author}</div>
                     <div style={{fontSize:9,color:profile.color+"88",marginTop:2,lineHeight:1.4,whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{b.note}</div>
                   </div>
@@ -808,7 +826,7 @@ export default function ReadingForAllPage() {
           <div style={{...S.card,padding:14}}>
             <div style={{fontSize:10,fontWeight:900,color:"rgba(255,255,255,0.35)",letterSpacing:1,marginBottom:10}}>🔧 HOW STARKY ADAPTS</div>
             {profile.adaptations.map((a,i)=>(
-              <div key={i} style={{fontSize:11,color:"rgba(255,255,255,0.5)",marginBottom:6,lineHeight:1.5,paddingLeft:4,borderLeft:"2px solid "+profile.color+"30"}}>
+              <div key={i} style={{fontSize:13,color:"rgba(255,255,255,0.5)",marginBottom:6,lineHeight:1.5,paddingLeft:4,borderLeft:"2px solid "+profile.color+"30"}}>
                 <span style={{color:profile.color+"80",fontWeight:700,marginRight:6}}>•</span>{a}
               </div>
             ))}
@@ -819,7 +837,7 @@ export default function ReadingForAllPage() {
             <div style={{fontSize:10,fontWeight:900,color:"rgba(255,255,255,0.35)",letterSpacing:1,marginBottom:10}}>⚡ READING ACTIVITIES</div>
             {profile.activities.map((a,i)=>(
               <button key={i} onClick={()=>sendMessageDirect("Give me a complete step-by-step guide for this reading activity adapted for "+profile.name+": '"+a+"'. Include what the adult does, what the child does, adaptive options, what success looks like, and how to make it joyful.")}
-                style={{...S.btn,width:"100%",background:"rgba(255,255,255,0.03)",border:"1px solid rgba(255,255,255,0.06)",borderRadius:9,padding:"7px 10px",marginBottom:4,textAlign:"left",display:"flex",gap:8,alignItems:"center",color:"rgba(255,255,255,0.5)",fontSize:11,fontWeight:600}}
+                style={{...S.btn,width:"100%",background:"rgba(255,255,255,0.03)",border:"1px solid rgba(255,255,255,0.06)",borderRadius:9,padding:"7px 10px",marginBottom:4,textAlign:"left",display:"flex",gap:8,alignItems:"center",color:"rgba(255,255,255,0.5)",fontSize:13,fontWeight:600}}
                 onMouseEnter={e=>{e.currentTarget.style.background=profile.color+"10";e.currentTarget.style.color=profile.color;}}
                 onMouseLeave={e=>{e.currentTarget.style.background="rgba(255,255,255,0.03)";e.currentTarget.style.color="rgba(255,255,255,0.5)";}}>
                 <span style={{fontWeight:900,color:profile.color+"60",flexShrink:0,fontSize:10}}>{i+1}.</span>
@@ -846,7 +864,7 @@ export default function ReadingForAllPage() {
           {/* Parent note */}
           <div style={{background:profile.color+"0A",border:"1px solid "+profile.color+"25",borderRadius:16,padding:14}}>
             <div style={{fontSize:10,fontWeight:900,color:profile.color,letterSpacing:1,marginBottom:8}}>💌 FOR PARENTS & CARERS</div>
-            <div style={{fontSize:11,color:"rgba(255,255,255,0.55)",lineHeight:1.8}}>{profile.parentNote}</div>
+            <div style={{fontSize:13,color:"rgba(255,255,255,0.55)",lineHeight:1.8}}>{profile.parentNote}</div>
           </div>
 
           <ProgressPanel progress={progress} profile={profile}/>
@@ -878,7 +896,7 @@ export default function ReadingForAllPage() {
                   onMouseEnter={e=>{e.currentTarget.style.background=profile.color+"15";e.currentTarget.style.borderColor=profile.color+"40";e.currentTarget.style.transform="translateY(-2px)";}}
                   onMouseLeave={e=>{e.currentTarget.style.background="rgba(255,255,255,0.04)";e.currentTarget.style.borderColor="rgba(255,255,255,0.07)";e.currentTarget.style.transform="none";}}>
                   <div style={{fontSize:22,marginBottom:6}}>{t.e}</div>
-                  <div style={{fontSize:11,fontWeight:700,color:"rgba(255,255,255,0.75)",lineHeight:1.4}}>{t.t}</div>
+                  <div style={{fontSize:13,fontWeight:700,color:"rgba(255,255,255,0.75)",lineHeight:1.4}}>{t.t}</div>
                 </button>
               ))}
             </div>
@@ -898,7 +916,7 @@ export default function ReadingForAllPage() {
 
           {/* Chat */}
           <div style={{...S.card,overflow:"hidden",display:"flex",flexDirection:"column",flex:1}}>
-            <div style={{height:isMobile?360:500,overflowY:"auto",padding:isMobile?14:20,display:"flex",flexDirection:"column",gap:14}}>
+            <div role="log" aria-label="Chat with Starky" aria-live="polite" style={{height:isMobile?360:500,overflowY:"auto",padding:isMobile?14:20,display:"flex",flexDirection:"column",gap:14}}>
               {messages.map((msg,i)=>(
                 <div key={i} style={{display:"flex",justifyContent:msg.role==="user"?"flex-end":"flex-start",gap:10,animation:"fadeUp 0.3s ease"}}>
                   {msg.role==="assistant"&&<div style={{width:32,height:32,borderRadius:"50%",background:profile.color+"20",border:"1px solid "+profile.color+"40",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0,marginTop:2}}>📚</div>}
@@ -915,14 +933,14 @@ export default function ReadingForAllPage() {
               <div ref={chatEndRef}/>
             </div>
             <div style={{padding:"12px 16px",borderTop:"1px solid "+profile.color+"15"}}>
-              <textarea value={input} onChange={e=>setInput(e.target.value)} onKeyDown={e=>{if(e.key==="Enter"&&(e.ctrlKey||e.metaKey))sendMessage(input);}}
+              <textarea value={input} onChange={e=>setInput(e.target.value)} onKeyDown={e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();sendMessage(input);}}}
                 placeholder={"Ask anything about reading with "+profile.name+"... 'My child won't engage' · 'What book should I start with?' · 'How do I do comprehension questions?' · 'The science of reading and "+profile.shortName+"'"}
                 rows={isMobile?3:4}
                 style={{width:"100%",background:"rgba(255,255,255,0.04)",border:"1px solid "+profile.color+"22",borderRadius:14,padding:"12px 14px",color:"#fff",fontSize:14,fontFamily:"'Nunito',sans-serif",resize:"vertical",lineHeight:1.6}}/>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginTop:8}}>
                 <div style={{display:"flex",gap:6,alignItems:"center"}}>
-                  <span style={{fontSize:11,color:"rgba(255,255,255,0.2)",fontWeight:600}}>Ctrl+Enter to send</span>
-                  {callsLeft<=10&&!limitReached&&<span style={{fontSize:11,fontWeight:800,color:callsLeft<=5?"#FF6B6B":"#A8E063"}}>· {callsLeft} left</span>}
+                  <span style={{fontSize:13,color:"rgba(255,255,255,0.2)",fontWeight:600}}>Enter to send</span>
+                  {callsLeft<=10&&!limitReached&&<span style={{fontSize:13,fontWeight:800,color:callsLeft<=5?"#FF6B6B":"#A8E063"}}>· {callsLeft} left</span>}
                 </div>
                 <button onClick={()=>sendMessage(input)} disabled={!input.trim()||loading}
                   style={{...S.btn,background:input.trim()&&!loading?"linear-gradient(135deg,"+profile.color+","+profile.color+"BB)":"rgba(255,255,255,0.08)",borderRadius:14,padding:"10px 24px",color:input.trim()&&!loading?"#060B20":"rgba(255,255,255,0.3)",fontWeight:900,fontSize:14}}>
