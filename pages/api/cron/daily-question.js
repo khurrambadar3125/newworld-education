@@ -1,9 +1,9 @@
 /**
  * pages/api/cron/daily-question.js
  * ─────────────────────────────────────────────────────
- * Sends daily Cambridge questions to ALL subscribers.
- * Runs once daily at 02:00 UTC = 07:00 PKT.
- * Study time preference is stored for future Pro plan upgrade (multi-run support).
+ * Sends daily Cambridge questions to subscribers at their chosen study time.
+ * Runs 5x daily at UTC 01,03,09,13,15 (PKT 06,08,14,18,20).
+ * Each run sends only to subscribers whose studyTime matches the current PKT hour.
  * Falls back to DAILY_Q_RECIPIENTS env var if KV is empty.
  * ─────────────────────────────────────────────────────
  */
@@ -94,9 +94,22 @@ export default async function handler(req, res) {
       } catch {}
     }
 
-    // ── Send to all recipients (Hobby plan: single daily run at 07:00 PKT) ──
-    // Study time preference stored for future Pro plan upgrade
-    for (const recipient of recipients) {
+    // ── Filter by study time: send only to subscribers whose hour matches now ──
+    const nowPKT = new Date(Date.now() + 5 * 3600000);
+    const currentHour = nowPKT.getUTCHours();
+    const currentHHMM = String(currentHour).padStart(2, '0') + ':00';
+
+    const eligible = recipients.filter(r => {
+      const st = r.studyTime || '07:00';
+      const stHour = parseInt(st.split(':')[0]);
+      return stHour === currentHour;
+    });
+
+    if (eligible.length === 0) {
+      return res.status(200).json({ sent: 0, total: recipients.length, eligible: 0, currentPKT: currentHHMM });
+    }
+
+    for (const recipient of eligible) {
       try {
         // Get recent questions to avoid repeats
         const recentQs = recipient.fromEnv ? [] : await getRecentQuestions(recipient.email, 30);
@@ -144,6 +157,8 @@ export default async function handler(req, res) {
     return res.status(200).json({
       sent:       results.length,
       total:      recipients.length,
+      eligible:   eligible.length,
+      currentPKT: currentHHMM,
       errorCount: errors.length,
       results,
       errors,
