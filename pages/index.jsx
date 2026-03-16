@@ -540,7 +540,8 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
         <p className="hs">Better grades in 30 days. 24/7.</p>
         <div className="hc">
           <a href="#start-learning" className="bp">Start Learning →</a>
-          <a href="/parent" className="bo" style={{background:'rgba(74,222,128,0.1)',border:'2px solid rgba(74,222,128,0.35)',color:'#4ADE80'}}>👨‍👩‍👧 I'm a Parent — Track My Child's Learning</a>
+          <a href="/parent" className="bo" style={{background:'rgba(74,222,128,0.1)',border:'2px solid rgba(74,222,128,0.35)',color:'#4ADE80'}}>👨‍👩‍👧 I'm a Parent</a>
+          <a href="/dashboard" className="bo" style={{background:'rgba(79,142,247,0.1)',border:'2px solid rgba(79,142,247,0.35)',color:'#4F8EF7'}}>👩‍🏫 I'm a Teacher</a>
           <button className="bo" onClick={() => { window.dispatchEvent(new CustomEvent('starky-scan')); }} style={{background:'rgba(167,139,250,0.12)',border:'2px solid rgba(167,139,250,0.4)',color:'#A78BFA'}}>📷 Photo Your Homework — Starky Reads It</button>
         </div>
         <div className="pr">
@@ -686,6 +687,30 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
         </div>
         <div style={{textAlign:'center'}}>
           <a href="/parent" style={{display:'inline-block',background:'linear-gradient(135deg,#4ADE80,#22C55E)',color:'#060B20',padding:'14px 32px',borderRadius:100,fontWeight:800,fontSize:15,textDecoration:'none'}}>Open Parent Portal →</a>
+        </div>
+      </section>
+
+      {/* For Teachers section */}
+      <section className="sec" style={{background:'rgba(79,142,247,0.04)',borderTop:'1px solid rgba(79,142,247,0.1)',borderBottom:'1px solid rgba(79,142,247,0.1)'}}>
+        <div className="sl">For Teachers</div>
+        <div className="st">See every student's progress in one dashboard</div>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(200px,1fr))',gap:16,maxWidth:700,margin:'0 auto 24px'}}>
+          {[
+            { emoji:'📊', title:'Student Overview', desc:'See all your students in one place — who is active, who needs attention, who is improving.' },
+            { emoji:'⚠️', title:'Weak Topic Alerts', desc:'Instantly spot which students are struggling and on which topics. No more guessing.' },
+            { emoji:'❌', title:'Mistake Tracking', desc:'See the exact mistakes each student keeps making — with descriptions from Starky\'s AI analysis.' },
+            { emoji:'📈', title:'Session Activity', desc:'Track total sessions, last active date, current subject, and engagement for every student.' },
+          ].map(f => (
+            <div key={f.title} style={{textAlign:'center',padding:16}}>
+              <div style={{fontSize:32,marginBottom:6}}>{f.emoji}</div>
+              <div style={{fontWeight:800,fontSize:14,marginBottom:4}}>{f.title}</div>
+              <div style={{fontSize:12,color:'rgba(255,255,255,0.5)',lineHeight:1.6}}>{f.desc}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{textAlign:'center'}}>
+          <a href="/dashboard" style={{display:'inline-block',background:'linear-gradient(135deg,#4F8EF7,#6366F1)',color:'#fff',padding:'14px 32px',borderRadius:100,fontWeight:800,fontSize:15,textDecoration:'none'}}>Open Teacher Dashboard →</a>
+          <div style={{marginTop:10}}><a href="/school" style={{color:'rgba(255,255,255,0.4)',fontSize:13,textDecoration:'none'}}>Want Starky for your whole school? See school plans →</a></div>
         </div>
       </section>
 
