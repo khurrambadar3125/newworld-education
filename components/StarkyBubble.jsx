@@ -336,7 +336,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
       <style jsx global>{`
         .starky-bubble-wrap {
           position: fixed;
-          bottom: 20px;
+          bottom: 80px;
           right: 16px;
           z-index: 9999;
           display: flex;
@@ -502,12 +502,13 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
           cursor: pointer; font-size: 14px; margin-left: auto;
         }
         .starky-fab {
-          width: 56px; height: 56px; border-radius: 50%;
+          width: 50px; height: 50px; border-radius: 50%;
           background: linear-gradient(135deg, #4F8EF7, #7C5CBF);
           border: none; cursor: pointer;
           display: flex; align-items: center; justify-content: center;
-          font-size: 24px;
-          box-shadow: 0 4px 20px rgba(79,142,247,.45), 0 0 0 0 rgba(79,142,247,.4);
+          font-size: 22px;
+          box-shadow: 0 4px 16px rgba(79,142,247,.35);
+          opacity: 0.9;
           transition: transform .15s, box-shadow .15s;
           position: relative; -webkit-tap-highlight-color: transparent;
         }

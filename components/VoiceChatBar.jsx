@@ -49,10 +49,10 @@ export default function VoiceChatBar() {
       title={listening ? "Stop listening" : "Speak your message"}
       style={{
         position: "fixed",
-        bottom: 90,
+        bottom: 148,
         right: 24,
-        width: 48,
-        height: 48,
+        width: 42,
+        height: 42,
         borderRadius: "50%",
         background: listening ? "#ef4444" : "#4F8EF7",
         border: "none",
