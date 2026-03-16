@@ -145,7 +145,10 @@ export default function Home() {
     const firstName = p?.name?.split(' ')[0] || 'there';
     const subject = subjectOverride || selectedSubject;
     setChatStarted(true);
-    const greeting = `Hi ${firstName}! I'm Starky ★\n\nI'm your personal tutor for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}.\n\nWhat would you like to work on today? Ask me anything — homework help, exam prep, or a concept you want to understand better.`;
+    const subjectHint = subject
+      ? `\n\nI know every ${subject} past paper, mark scheme, and examiner report. Try me — ask a question, send a photo of your notes, or say "quiz me on ${subject}".`
+      : '\n\nAsk me anything — homework help, exam prep, or photograph your notes and I will read them.';
+    const greeting = `Hi ${firstName}! I'm Starky ★ — I've studied every Cambridge past paper from 1994 to 2024.\n\nI'm your personal tutor for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}.${subjectHint}\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰`;
     setMessages([{ role: 'assistant', content: greeting }]);
     setTimeout(() => inputRef.current?.focus(), 150);
   };
@@ -306,12 +309,33 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
             <button className="ib" onClick={() => { setChatStarted(false); setMessages([]); stopSpeaking(); }}>← Back</button>
           </div>
         </div>
-        {!isLimitReached && (
-          <div className={`sb ${remaining <= 5 ? 'd' : remaining <= 10 ? 'w' : ''}`}>{remaining} sessions remaining today</div>
+        {!isLimitReached && remaining <= 2 && (
+          <div className={`sb ${remaining <= 1 ? 'd' : 'w'}`}>{remaining} session{remaining !== 1 ? 's' : ''} remaining today</div>
         )}
         <div className="cm">
           {messages.map((m, i) => <div key={i} className={`msg ${m.role}`}>{m.content}</div>)}
           {loading && <div className="msg assistant typing">Starky is thinking…</div>}
+          {/* Quick suggestion chips — show when chat is fresh (only greeting) */}
+          {messages.length === 1 && !loading && (
+            <div style={{display:'flex',flexWrap:'wrap',gap:8,padding:'8px 0'}}>
+              {(selectedSubject
+                ? [
+                    `Explain a key concept in ${selectedSubject}`,
+                    `Quiz me on ${selectedSubject}`,
+                    `How do I get an A* in ${selectedSubject}?`,
+                    `Common mistakes in ${selectedSubject}`,
+                  ]
+                : [
+                    'Help me with my homework',
+                    'Quiz me on a topic',
+                    'Explain something I don\'t understand',
+                    'How do I prepare for exams?',
+                  ]
+              ).map(s => (
+                <button key={s} onClick={() => sendMessage(s)} style={{background:'rgba(79,142,247,0.1)',border:'1px solid rgba(79,142,247,0.25)',borderRadius:100,padding:'8px 14px',fontSize:13,fontWeight:600,color:'#4F8EF7',cursor:'pointer',fontFamily:'inherit'}}>{s}</button>
+              ))}
+            </div>
+          )}
           <div ref={messagesEndRef} />
         </div>
         {isLimitReached ? (
@@ -320,7 +344,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           <div className="cia">
             <div className="ir">
               {sttSupported && <button className={`mb ${isListening ? 'li' : ''}`} onClick={toggleListening}>{isListening ? '⏹' : '🎙️'}</button>}
-              <textarea ref={inputRef} className="ta" placeholder={isListening ? 'Listening…' : 'Ask Starky anything…'} value={input} onChange={e => setInput(e.target.value)} onKeyDown={handleKey} rows={1} disabled={loading || isListening} />
+              <textarea ref={inputRef} className="ta" placeholder={isListening ? 'Listening…' : 'Ask Starky anything… اردو میں بھی پوچھ سکتے ہو'} value={input} onChange={e => setInput(e.target.value)} onKeyDown={handleKey} rows={1} disabled={loading || isListening} />
               <button className="sb2" onClick={() => sendMessage()} disabled={loading || !input.trim()}>↑</button>
             </div>
           </div>
