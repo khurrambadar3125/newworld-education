@@ -22,8 +22,8 @@ import { addKnowledgeToPrompt } from './senKnowledge';
 
 export const GRADE_GROUPS = {
   KID:    ['kg', 'grade1', 'grade2', 'grade3', 'grade4', 'grade5'],      // ages 4–10
-  MIDDLE: ['grade6', 'grade7', 'grade8'],                                 // ages 11–13
-  OLEVEL: ['grade9', 'grade10', 'olevel1', 'olevel2'],                   // ages 14–16
+  MIDDLE: ['grade6', 'grade7', 'grade8', 'grade9', 'grade10'],            // ages 11–16 (Pakistan boards / Matric)
+  OLEVEL: ['olevel1', 'olevel2'],                                        // Cambridge O Level only
   ALEVEL: ['grade11', 'grade12', 'alevel1', 'alevel2', 'alevel3'],      // ages 16–19
 };
 
@@ -319,6 +319,15 @@ YOU ARE TALKING TO A YOUNG CHILD:
 - Name: ${name}, Grade: ${grade}, Age: approximately ${age} years old
 - ${profile.senFlag ? 'NOTE: This student has special educational needs. Be extra patient, use shorter sentences, more repetition.' : ''}
 
+PAKISTAN YOUNG LEARNER CURRICULUM (SNC — Single National Curriculum 2020):
+- KG-Grade 2: Counting to 100, basic addition/subtraction, shapes, patterns, Urdu alphabet (alif-be-pe-te),
+  English alphabet & phonics, basic sentences, Islamic duas, five pillars introduction, my family & school.
+- Grade 3-5: Multiplication tables, fractions, decimals, measurement (area, perimeter), unitary method,
+  paragraph writing, comprehension, Urdu grammar (قواعد), Science (plants, animals, human body, matter,
+  simple machines, our environment), Pakistan provinces & national symbols, Islamiat (selected Surahs, Hadith).
+- THIS CHILD IS IN PAKISTAN: Use Pakistani examples (rupees not dollars, cricket not baseball, roti not bread,
+  bazaar not mall). Reference their textbook where possible (Punjab Textbook Board, Sindh Board, SNC books).
+
 HOW TO SPEAK:
 - Maximum 2 short sentences per reply. Never more.
 - Use 2–3 emojis in every single reply. Make it joyful.
@@ -346,6 +355,17 @@ function buildMiddlePrompt(profile, memory, intent) {
 STUDENT CONTEXT:
 - Name: ${name}, Grade: ${grade}
 - ${profile.senFlag ? 'SEN flag: Yes — use clear structure, bullet points, avoid walls of text.' : ''}
+
+PAKISTAN MIDDLE SCHOOL CURRICULUM:
+- Grade 6-8 Pakistan (SNC + Provincial Boards): General Science (cells, human body, forces, electricity,
+  chemical reactions), Mathematics (integers, algebra basics, ratio, geometry, data handling),
+  Urdu (nazm, nasr, grammar, essay writing), English (comprehension, grammar, creative writing),
+  Pakistan Studies (geography, history, civic sense), Islamiat (Surah translation, Hadith, Islamic history).
+- For Grade 9-10 MATRIC (BISE boards — Punjab/Sindh/KPK/Federal): this is board exam preparation.
+  The board exam format differs from Cambridge — definition questions want TEXTBOOK definitions word-for-word.
+  Numericals are 40% of Science papers. Always show: formula → substitution → calculation → unit.
+- Ask "Which board are you on?" if unclear — Punjab Board and Sindh Board have different textbooks.
+- Use Pakistani examples: rupees, cricket, local geography, Pakistani scientists and scholars.
 
 HOW TO SPEAK:
 - Warm and encouraging but not babyish — treat them as capable.

@@ -78,9 +78,22 @@ const DIFFICULTIES = [
   { id:'hard', label:'Challenge', emoji:'🔥' },
 ];
 
-const SESSION_LENGTH = 10;
-const TIMER_MCQ = 90;
-const TIMER_STRUCTURED = 240;
+// Session length and timer adapt by mode
+// Young learners: shorter sessions, no timer pressure
+// Exam mode: full sessions with timer
+const getSessionConfig = (mode, youngGrade) => {
+  if (mode === 'young') {
+    const gId = (youngGrade?.id || '').toLowerCase();
+    const isVeryYoung = ['kg','grade1','grade2','grade3'].includes(gId);
+    return {
+      sessionLength: isVeryYoung ? 5 : 7,
+      timerMCQ: 0,        // no timer for young learners
+      timerStructured: 0,
+    };
+  }
+  return { sessionLength: 10, timerMCQ: 90, timerStructured: 240 };
+};
+const SESSION_LENGTH_DEFAULT = 10;
 
 const isMob = typeof window !== 'undefined' && window.innerWidth < 640;
 const S = {
@@ -164,6 +177,12 @@ export default function DrillPage() {
   const [hint, setHint] = useState(null);
   const [hintLoading, setHintLoading] = useState(false);
   const [timedOut, setTimedOut] = useState(false);
+
+  // Session config — adapts by mode/grade
+  const sessionConfig = getSessionConfig(mode, youngGrade);
+  const SESSION_LENGTH = sessionConfig.sessionLength;
+  const TIMER_MCQ = sessionConfig.timerMCQ;
+  const TIMER_STRUCTURED = sessionConfig.timerStructured;
 
   // Live score
   const [sessionResults, setSessionResults] = useState([]);

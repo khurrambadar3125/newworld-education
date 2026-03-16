@@ -90,7 +90,7 @@ export default function Home() {
       const r = new SR();
       r.continuous = false;
       r.interimResults = false;
-      r.lang = 'en-US';
+      r.lang = 'en-US'; // Also accepts Urdu input — browser auto-detects mixed language
       r.onresult = (e) => { const t = e.results?.[0]?.[0]?.transcript; if (t) setInput(prev => prev + t); setIsListening(false); };
       r.onerror = () => setIsListening(false);
       r.onend = () => setIsListening(false);
@@ -145,11 +145,24 @@ export default function Home() {
     const firstName = p?.name?.split(' ')[0] || 'there';
     const subject = subjectOverride || selectedSubject;
     setChatStarted(true);
-    const subjectHint = subject
-      ? `\n\nI know every ${subject} past paper, mark scheme, and examiner report. Try me — ask a question, send a photo of your notes, or say "quiz me on ${subject}".`
-      : '\n\nAsk me anything — homework help, exam prep, or photograph your notes and I will read them.';
     const isParent = userProfile?.role === 'parent';
-    const greeting = `Hi ${firstName}! I'm Starky ★ — I've studied every Cambridge past paper from 1994 to 2024.\n\nI'm your personal tutor for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}.${subjectHint}${isParent ? '\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰' : ''}`;
+    const gradeId = (selectedGrade?.id || '').toLowerCase();
+    const isYoung = ['kg','grade1','grade2','grade3','grade4','grade5'].includes(gradeId);
+    const isMiddle = ['grade6','grade7','grade8'].includes(gradeId);
+    const isMatric = ['grade9','grade10'].includes(gradeId);
+
+    let greeting;
+    if (isYoung) {
+      greeting = `Hi ${firstName}! I'm Starky ★ — your learning friend! 🌟\n\nI'm here to help you with ${selectedGrade.label}${subject ? ` ${subject}` : ''}. We'll learn together — it's going to be fun!\n\nWhat would you like to learn today? You can ask me anything or send me a photo of your homework! 📷`;
+    } else if (isMiddle) {
+      greeting = `Hey ${firstName}! I'm Starky ★ — your study buddy.\n\nI'm your tutor for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}. I know your syllabus inside out.\n\nAsk me anything — homework help, explain a concept, or quiz you. You can also photograph your textbook and I'll read it!`;
+    } else if (isMatric) {
+      greeting = `Hi ${firstName}! I'm Starky ★ — your Matric preparation partner.\n\nI know the BISE board syllabus for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}. Every chapter, every question type.\n\nAsk me anything — homework, board exam prep, or say "quiz me". You can also send a photo of your notes!`;
+    } else {
+      const subjectHint = subject ? `\n\nI know every ${subject} past paper, mark scheme, and examiner report. Try me — ask a question, send a photo, or say "quiz me on ${subject}".` : '\n\nAsk me anything — homework help, exam prep, or photograph your notes.';
+      greeting = `Hi ${firstName}! I'm Starky ★ — I've studied every Cambridge past paper from 1994 to 2024.\n\nI'm your personal tutor for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}.${subjectHint}`;
+    }
+    if (isParent) greeting += '\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰';
     setMessages([{ role: 'assistant', content: greeting }]);
     setTimeout(() => inputRef.current?.focus(), 150);
   };
@@ -168,22 +181,22 @@ export default function Home() {
     stopSpeaking();
 
     const p = userProfile || {};
-    const sys = `You are Starky (★), the AI teacher at NewWorldEdu (newworld.education). Teaching ${p.name || 'a student'} in ${selectedGrade?.label || 'school'}${selectedSubject ? `, subject: ${selectedSubject}` : ''}.
-
-PERSONALITY: Warm, encouraging, zero judgment. Celebrate every small win. For KG–Grade 5: playful, simple words. For O/A Level: sharp, Cambridge exam-focused.
-
-METHOD: Use Socratic questioning — NEVER give direct answers. Guide the student to discover. Break into small steps. End every reply with a check question OR next step.
-
-NEVER SAY: "That's wrong", "You should know this", "Let's move on"
-ALWAYS: "Not quite — and that tells me something useful!", keep responses concise — 3 short paragraphs max.
-
-CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for ALL O Level subjects (Biology 5090, Chemistry 5070, Physics 5054, Mathematics D 4024, Additional Mathematics 4037, English Language 1123, Literature in English 2010, Urdu First Language 3247, Urdu Second Language 3248, Pakistan Studies 2059, Islamiyat 2058, History 2147, Geography 2217, Economics 2281, Business Studies 7115, Accounting 7707, Computer Science 2210, Sociology 2251, Commerce 7100, Statistics 4040, Environmental Management 5014, and all others) and ALL A Level subjects (Biology 9700, Chemistry 9701, Physics 9702, Mathematics 9709, Further Mathematics 9231, English Language 9093, Literature in English 9695, Psychology 9990, Economics 9708, Business 9609, Accounting 9706, Computer Science 9618, History 9489, Geography 9696, Sociology 9699, Law 9084, Thinking Skills 9694, Media Studies 9607, Urdu 9686, and all others). You know every mark scheme, examiner report, and Cambridge textbook. You know exactly what examiners want.`;
 
     try {
+      // Use the full prompt engineering system — grade-differentiated prompts
       const res = await fetch('/api/anthropic', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: newMsgs, system: sys }),
+        body: JSON.stringify({
+          message: text,
+          userProfile: {
+            ...p,
+            gradeId: selectedGrade?.id || p.gradeId || '',
+            grade: selectedGrade?.label || p.grade || '',
+            gradeAge: selectedGrade?.age || p.gradeAge || '',
+          },
+          sessionMemory: { currentSubject: selectedSubject || '', conversationHistory: newMsgs.slice(-10) },
+        }),
       });
       let data = {};
       try { data = await res.json(); } catch(e) { data = {}; }
@@ -316,10 +329,18 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
         <div className="cm">
           {messages.map((m, i) => <div key={i} className={`msg ${m.role}`}>{m.content}</div>)}
           {loading && <div className="msg assistant typing">Starky is thinking…</div>}
-          {/* Quick suggestion chips — show when chat is fresh (only greeting) */}
+          {/* Quick suggestion chips — grade-appropriate */}
           {messages.length === 1 && !loading && (
             <div style={{display:'flex',flexWrap:'wrap',gap:8,padding:'8px 0'}}>
-              {(selectedSubject
+              {(isYoung
+                ? (selectedSubject
+                  ? [`Help me with ${selectedSubject}`, `Quiz me on ${selectedSubject}!`, `Explain something fun in ${selectedSubject}`, 'I have homework — help me!']
+                  : ['Help me with my homework 📝', 'Teach me something new! 🌟', 'Quiz me! 🎯', 'I don\'t understand something'])
+                : isMiddle || isMatric
+                ? (selectedSubject
+                  ? [`Explain a topic in ${selectedSubject}`, `Quiz me on ${selectedSubject}`, `Help with my ${selectedSubject} homework`, `How to get top marks in ${selectedSubject}?`]
+                  : ['Help me with homework', 'Quiz me on a topic', 'Explain something I don\'t understand', 'How to prepare for board exams?'])
+                : selectedSubject
                 ? [
                     `Explain a key concept in ${selectedSubject}`,
                     `Quiz me on ${selectedSubject}`,
