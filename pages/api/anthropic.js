@@ -5,6 +5,7 @@
 
 import Anthropic from '@anthropic-ai/sdk';
 import { buildMessages } from '../../utils/starkyPrompt';
+import { getKnowledgeForTopic } from '../../utils/getKnowledgeForTopic';
 
 // Allow large request bodies for image uploads (phone cameras produce 5-10MB photos)
 export const config = {
@@ -118,6 +119,15 @@ export default async function handler(req, res) {
       imageBase64,
       imageMediaType: validMediaType,
     });
+
+    // ── Inject topic-specific knowledge (misconceptions, examiner tips) ──────
+    if (built.systemPrompt && message) {
+      const currentSubject = sessionMemory?.currentSubject || userProfile?.lastSubject || '';
+      const topicKnowledge = getKnowledgeForTopic(message, currentSubject);
+      if (topicKnowledge) {
+        built.systemPrompt += topicKnowledge;
+      }
+    }
 
     // ── Handle escalation — fire alert then return safe response ─────────────
     if (built.escalation) {

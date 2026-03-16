@@ -9,6 +9,7 @@
  */
 
 import Anthropic from '@anthropic-ai/sdk';
+import { getKnowledgeForTopic } from '../../utils/getKnowledgeForTopic';
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
@@ -174,6 +175,9 @@ export default async function handler(req, res) {
     if (action === 'generate') {
       prompt = buildGeneratePrompt(params);
       systemPrompt = isYoungLearner(params.level) ? SYSTEM_YOUNG : SYSTEM;
+      // Inject topic-specific misconceptions and examiner tips
+      const topicKnowledge = getKnowledgeForTopic(params.topic || '', params.subject || '');
+      if (topicKnowledge) systemPrompt += '\n' + topicKnowledge;
 
       // If image provided, use vision
       if (params.imageBase64) {
