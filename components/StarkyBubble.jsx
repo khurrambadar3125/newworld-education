@@ -83,9 +83,11 @@ export default function StarkyBubble() {
         greeting = getContinuationGreeting(firstName) || `Welcome back ${name}! ★ Great to see you again. What are we studying today?`;
       } else {
         // First time or guest — explain what Starky is
+        const isParentUser = userProfile?.role === 'parent';
+        const urduLine = isParentUser ? '\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰' : '';
         greeting = firstName
-          ? `Hi ${firstName}! I'm Starky ★ — your personal tutor.\n\nI've studied every Cambridge O Level and A Level past paper from 1994 to 2024. I teach step by step, just like a private tutor sitting next to you.\n\nAsk me anything — homework, exam prep, or any concept you want to understand. You can also send me a photo of your notes or questions!\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰`
-          : `Hi! I'm Starky ★ — your personal tutor.\n\nI've studied every Cambridge past paper from 1994 to 2024. I teach step by step — like a private tutor, but available 24/7.\n\nPick any subject and ask me anything. You can also photograph your homework!\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰`;
+          ? `Hi ${firstName}! I'm Starky ★ — your personal tutor.\n\nI've studied every Cambridge O Level and A Level past paper from 1994 to 2024. I teach step by step, just like a private tutor sitting next to you.\n\nAsk me anything — homework, exam prep, or any concept you want to understand. You can also send me a photo of your notes or questions!${urduLine}`
+          : `Hi! I'm Starky ★ — your personal tutor.\n\nI've studied every Cambridge past paper from 1994 to 2024. I teach step by step — like a private tutor, but available 24/7.\n\nPick any subject and ask me anything. You can also photograph your homework!${urduLine}`;
       }
       setMessages([{ role: 'assistant', content: greeting }]);
     }
@@ -608,7 +610,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
               <textarea
                 ref={inputRef}
                 className="starky-input"
-                placeholder="Ask Starky anything… اردو میں بھی پوچھ سکتے ہو"
+                placeholder="Ask Starky anything…"
                 aria-label="Type your message to Starky"
                 value={input}
                 onChange={e => setInput(e.target.value)}

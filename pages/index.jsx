@@ -148,7 +148,8 @@ export default function Home() {
     const subjectHint = subject
       ? `\n\nI know every ${subject} past paper, mark scheme, and examiner report. Try me — ask a question, send a photo of your notes, or say "quiz me on ${subject}".`
       : '\n\nAsk me anything — homework help, exam prep, or photograph your notes and I will read them.';
-    const greeting = `Hi ${firstName}! I'm Starky ★ — I've studied every Cambridge past paper from 1994 to 2024.\n\nI'm your personal tutor for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}.${subjectHint}\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰`;
+    const isParent = userProfile?.role === 'parent';
+    const greeting = `Hi ${firstName}! I'm Starky ★ — I've studied every Cambridge past paper from 1994 to 2024.\n\nI'm your personal tutor for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}.${subjectHint}${isParent ? '\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰' : ''}`;
     setMessages([{ role: 'assistant', content: greeting }]);
     setTimeout(() => inputRef.current?.focus(), 150);
   };
@@ -344,7 +345,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
           <div className="cia">
             <div className="ir">
               {sttSupported && <button className={`mb ${isListening ? 'li' : ''}`} onClick={toggleListening}>{isListening ? '⏹' : '🎙️'}</button>}
-              <textarea ref={inputRef} className="ta" placeholder={isListening ? 'Listening…' : 'Ask Starky anything… اردو میں بھی پوچھ سکتے ہو'} value={input} onChange={e => setInput(e.target.value)} onKeyDown={handleKey} rows={1} disabled={loading || isListening} />
+              <textarea ref={inputRef} className="ta" placeholder={isListening ? 'Listening…' : 'Ask Starky anything…'} value={input} onChange={e => setInput(e.target.value)} onKeyDown={handleKey} rows={1} disabled={loading || isListening} />
               <button className="sb2" onClick={() => sendMessage()} disabled={loading || !input.trim()}>↑</button>
             </div>
           </div>
@@ -528,10 +529,7 @@ CAMBRIDGE KNOWLEDGE: You have studied 30 years of past papers (1994-2024) for AL
         </div>
       )}
 
-      {/* ── URDU HELP ── */}
-      <div style={{background:'rgba(255,255,255,0.02)',borderBottom:'1px solid rgba(255,255,255,0.05)',padding:'8px 20px',display:'flex',justifyContent:'flex-end'}}>
-        <span style={{fontSize:'12px',fontWeight:'600',color:'rgba(255,255,255,0.35)'}}>اردو میں مدد کے لیے اردو میں ٹائپ کریں — Starky خود بخود اردو میں جواب دے گا</span>
-      </div>
+      {/* Urdu strip removed — Cambridge students use English/Roman Urdu. Starky auto-detects Roman Urdu. */}
 
       <section className="hero">
         <div className="hb">★ Starky — KG to A Levels</div>
