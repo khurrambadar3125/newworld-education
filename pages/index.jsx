@@ -574,9 +574,11 @@ export default function Home() {
         </button>
         <p className="hs">Better grades in 30 days. 24/7.</p>
         <div className="hc">
-          <a href="#start-learning" className="bp">Start Learning →</a>
-          <a href="/parent" className="bo" style={{background:'rgba(74,222,128,0.1)',border:'2px solid rgba(74,222,128,0.35)',color:'#4ADE80'}}>👨‍👩‍👧 I'm a Parent</a>
-          <a href="/dashboard" className="bo" style={{background:'rgba(79,142,247,0.1)',border:'2px solid rgba(79,142,247,0.35)',color:'#4F8EF7'}}>👩‍🏫 I'm a Teacher</a>
+          <a href="#start-learning" className="bp">👦 I'm a Student — Start Learning →</a>
+          <div style={{display:'flex',gap:10,width:'100%',maxWidth:320}}>
+            <a href="/parent" style={{flex:1,textAlign:'center',background:'rgba(74,222,128,0.1)',border:'2px solid rgba(74,222,128,0.35)',color:'#4ADE80',borderRadius:14,padding:'14px 8px',fontSize:15,fontWeight:700,textDecoration:'none'}}>👨‍👩‍👧 Parent</a>
+            <a href="/dashboard" style={{flex:1,textAlign:'center',background:'rgba(79,142,247,0.1)',border:'2px solid rgba(79,142,247,0.35)',color:'#4F8EF7',borderRadius:14,padding:'14px 8px',fontSize:15,fontWeight:700,textDecoration:'none'}}>👩‍🏫 Teacher</a>
+          </div>
           <button className="bo" onClick={() => { window.dispatchEvent(new CustomEvent('starky-scan')); }} style={{background:'rgba(167,139,250,0.12)',border:'2px solid rgba(167,139,250,0.4)',color:'#A78BFA'}}>📷 Photo Your Homework — Starky Reads It</button>
         </div>
         <div className="pr">
