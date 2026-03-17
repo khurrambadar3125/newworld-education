@@ -155,6 +155,15 @@ export default function Home() {
     localStorage.setItem('nw_user', JSON.stringify(profile));
     setUserProfile(profile);
     setShowRegModal(false);
+    // Generate referral code + link to referrer if came via referral link
+    fetch('/api/referral', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: 'register', email: profile.email }) }).catch(() => {});
+    try {
+      const refCode = localStorage.getItem('nw_referral_code');
+      if (refCode) {
+        fetch('/api/referral', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: 'link', email: profile.email, code: refCode }) }).catch(() => {});
+        localStorage.removeItem('nw_referral_code');
+      }
+    } catch {}
     launchChat(profile, selectedSubject);
   };
 
@@ -835,7 +844,8 @@ export default function Home() {
           <a href="/leaderboard">Leaderboard</a>
           <a href="/dashboard">Teacher Dashboard</a>
         </div>
-        <div style={{display:'flex',gap:16,justifyContent:'center',marginTop:8}}>
+        <div style={{display:'flex',gap:16,justifyContent:'center',marginTop:8,flexWrap:'wrap'}}>
+          <a href="/referral" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Refer Friends — Earn Free Months</a>
           <a href="/privacy" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Privacy Policy</a>
           <a href="/terms" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Terms of Service</a>
         </div>

@@ -74,21 +74,27 @@ const writeUsage = (count) => {
 export const useSessionLimit = (email) => {
   const [callsUsed, setCallsUsed] = useState(0);
   const [isSEN, setIsSEN] = useState(false);
+  const [hasReferralReward, setHasReferralReward] = useState(false);
 
   useEffect(() => {
     setCallsUsed(readUsage().count);
-    // Check if this is a SEN student — they get unlimited sessions
     try {
       const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
       if (profile.senFlag || profile.isSEN) setIsSEN(true);
+      // Check referral rewards — free months or unlimited from KV
+      if (profile.email) {
+        fetch(`/api/referral?action=profile&email=${encodeURIComponent(profile.email)}`)
+          .then(r => r.json())
+          .then(d => { if (d.freeMonths > 0 || d.tier?.unlimited) setHasReferralReward(true); })
+          .catch(() => {});
+      }
     } catch {}
-    // Also check if we're on the special-needs page
     if (typeof window !== 'undefined' && window.location.pathname.includes('special-needs')) {
       setIsSEN(true);
     }
   }, []);
 
-  const isExempt = isExemptEmail(email) || isSEN;
+  const isExempt = isExemptEmail(email) || isSEN || hasReferralReward;
 
   const callsLeft    = Math.max(0, FREE_DAILY_LIMIT - callsUsed);
   const limitReached = !isExempt && callsUsed >= FREE_DAILY_LIMIT;
