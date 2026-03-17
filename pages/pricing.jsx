@@ -8,6 +8,7 @@ const PLANS = [
     name: 'Starter',
     emoji: '⭐',
     price: 29.99,
+    pricePKR: 3499,
     period: 'month',
     planId: 'P-94P5336054823460NNGS5MIY',
     color: '#4F8EF7',
@@ -27,6 +28,7 @@ const PLANS = [
     name: 'Scholar',
     emoji: '🎓',
     price: 39.99,
+    pricePKR: 5499,
     period: 'month',
     planId: 'P-8FYS0096MF117684FNGS5QKA',
     color: '#7C5CBF',
@@ -46,6 +48,7 @@ const PLANS = [
     name: 'Family',
     emoji: '👨‍👩‍👧‍👦',
     price: 69.99,
+    pricePKR: 7499,
     period: 'month',
     planId: 'P-0PS81623HP313672PNGS5SWA',
     color: '#2BB55A',
@@ -65,6 +68,7 @@ const PLANS = [
   name: 'Creative Bundle',
   emoji: '🎨',
   price: 79.99,
+  pricePKR: 6499,
   period: 'month',
   planId: 'P-60C25004ES421424TNGTU3JA',
   color: '#FF8C69',
@@ -86,6 +90,7 @@ const PLANS = [
     name: 'Special Needs',
     emoji: '💜',
     price: 149,
+    pricePKR: 5499,
     period: 'month',
     planId: 'P-4C972623LC808300XNGS5XDY',
     color: '#E05F9A',
@@ -337,6 +342,23 @@ export default function Pricing() {
                   </div>
                 )}
               </div>
+              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', textAlign: 'center', marginTop: 4, marginBottom: 12 }}>For overseas payments</div>
+
+              {/* JazzCash WhatsApp button */}
+              <a
+                href={`https://wa.me/923262266682?text=${encodeURIComponent(`Hi, I want to subscribe to the NewWorldEdu ${plan.name} Plan (Rs ${plan.pricePKR?.toLocaleString()}/month). Please activate my account.\n\nName: \nEmail: \nChild's Grade: `)}`}
+                target="_blank" rel="noopener noreferrer"
+                style={{
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
+                  background: 'linear-gradient(135deg, #25D366, #128C7E)',
+                  color: '#fff', border: 'none', borderRadius: 12, padding: '13px 20px',
+                  fontSize: 15, fontWeight: 700, textDecoration: 'none', width: '100%',
+                  fontFamily: "'Sora', sans-serif",
+                }}>
+                <span style={{ fontSize: 20 }}>💬</span>
+                JazzCash — Rs {plan.pricePKR?.toLocaleString()}/mo
+              </a>
+              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', textAlign: 'center', marginTop: 4 }}>For Pakistan residents</div>
             </div>
           ))}
         </div>
