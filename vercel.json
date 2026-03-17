@@ -27,6 +27,10 @@
     {
       "path": "/api/cron/referral-weekly",
       "schedule": "0 4 * * 1"
+    },
+    {
+      "path": "/api/cron/championship-master",
+      "schedule": "0 19 * * *"
     }
   ],
   "headers": [

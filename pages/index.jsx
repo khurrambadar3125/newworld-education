@@ -845,6 +845,7 @@ export default function Home() {
           <a href="/dashboard">Teacher Dashboard</a>
         </div>
         <div style={{display:'flex',gap:16,justifyContent:'center',marginTop:8,flexWrap:'wrap'}}>
+          <a href="/championship" style={{color:'rgba(255,195,0,0.5)',fontSize:12,textDecoration:'none',fontWeight:700}}>🏆 Championship — Win Meta Ray-Ban</a>
           <a href="/referral" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Refer Friends — Earn Free Months</a>
           <a href="/privacy" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Privacy Policy</a>
           <a href="/terms" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Terms of Service</a>
