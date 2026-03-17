@@ -64,6 +64,13 @@ export default function ReferralPage() {
         <meta name="description" content="Refer friends to NewWorld Education and earn free months. Star, Champion, Ambassador, and Legend tiers with automatic rewards." />
       </Head>
 
+      {/* Championship banner */}
+      <div style={{background:'linear-gradient(135deg,rgba(255,195,0,0.1),rgba(255,142,83,0.1))',border:'1px solid rgba(255,195,0,0.25)',padding:'14px 20px',textAlign:'center'}}>
+        <a href="/championship" style={{color:'#FFC300',fontWeight:800,fontSize:14,textDecoration:'none'}}>
+          🏆 Your referrals also count in the Championship — win Meta Ray-Ban! View leaderboard →
+        </a>
+      </div>
+
       <div style={{ maxWidth: 560, margin: '0 auto', padding: '40px 20px' }}>
         <div style={{ textAlign: 'center', marginBottom: 32 }}>
           <div style={{ fontSize: 56, marginBottom: 12 }}>🎁</div>

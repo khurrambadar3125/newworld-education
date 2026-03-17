@@ -816,14 +816,9 @@ export default function Home() {
       <footer className="foot">
         <div className="fl">NewWorldEdu<span>★</span></div>
         <div className="ftag">Every child deserves a world-class tutor.</div>
-        <button onClick={async () => {
-          const { shareLink } = await import('../utils/share');
-          const name = userProfile?.name?.split(' ')[0] || '';
-          const r = await shareLink('invite', { name }, `${name ? name + ' wants' : 'Want'} you to try NewWorldEdu — free AI tutor for Cambridge O Level & A Level!`);
-          if (r.method === 'clipboard') alert('Invite link copied!');
-        }} style={{background:'linear-gradient(135deg,#4F8EF7,#6366F1)',border:'none',borderRadius:100,padding:'10px 24px',color:'#fff',fontWeight:700,fontSize:14,cursor:'pointer',marginTop:12,fontFamily:'inherit'}}>
-          📤 Invite a Friend to NewWorldEdu
-        </button>
+        <a href="/championship" style={{display:'inline-block',background:'linear-gradient(135deg,#FFC300,#FF8E53)',border:'none',borderRadius:100,padding:'12px 28px',color:'#060B20',fontWeight:800,fontSize:14,cursor:'pointer',marginTop:12,fontFamily:'inherit',textDecoration:'none'}}>
+          🏆 Refer Friends — Win Meta Ray-Ban + Free Months
+        </a>
         <div className="flinks">
           <a href="/special-needs">Special Needs</a>
           <a href="/parent">Parents</a>
@@ -845,8 +840,7 @@ export default function Home() {
           <a href="/dashboard">Teacher Dashboard</a>
         </div>
         <div style={{display:'flex',gap:16,justifyContent:'center',marginTop:8,flexWrap:'wrap'}}>
-          <a href="/championship" style={{color:'rgba(255,195,0,0.5)',fontSize:12,textDecoration:'none',fontWeight:700}}>🏆 Championship — Win Meta Ray-Ban</a>
-          <a href="/referral" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Refer Friends — Earn Free Months</a>
+          <a href="/championship" style={{color:'rgba(255,195,0,0.5)',fontSize:12,textDecoration:'none',fontWeight:700}}>🏆 Refer & Win — Championship + Free Months</a>
           <a href="/privacy" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Privacy Policy</a>
           <a href="/terms" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Terms of Service</a>
         </div>
