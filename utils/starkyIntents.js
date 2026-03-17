@@ -90,6 +90,35 @@ const PARENT_SIGNALS = [
   'bachon ko kaise samjhaun',
 ];
 
+// ── Pakistani regional language signals ───────────────────────────────────
+// These help detect when a student writes in a regional language so Starky
+// can respond in the same language. They also score towards homework/emotional
+// intents like their Urdu equivalents.
+const REGIONAL_HOMEWORK = [
+  // Sindhi
+  'samajh nahi achy', 'madad kayo', 'mushkil aahay', 'sawal hal kayo',
+  // Punjabi
+  'samajh nahi aa rahi', 'madad karo ji', 'mushkil ay', 'ki haal hai',
+  'das do', 'samjha do ji', 'parhao',
+  // Pashto
+  'pohega me nashi', 'rasha madad okra', 'grana da', 'sawal hal ka',
+  'da tsanga keegi',
+  // Saraiki
+  'samajh koni aendi', 'madad karo maherbani',
+  // Balochi
+  'pha nazar', 'kumak kan',
+];
+const REGIONAL_EMOTIONAL = [
+  // Sindhi
+  'bohat mushkil aahay', 'thaki wayo ahyan',
+  // Punjabi
+  'bohat aukhay', 'thak gaya haan', 'haar mann raha haan',
+  // Pashto
+  'zama stoonzay dee', 'sta na shama',
+  // Saraiki
+  'bohat mushkil aahe', 'thak gaya haan ji',
+];
+
 // ── Roman Urdu signals (Pakistani students type this way) ─────────────────
 const ROMAN_URDU_HOMEWORK = [
   'samajh nahi aa raha', 'samajh nahi aya', 'ye kya hai', 'ye kaise hoga',
@@ -200,6 +229,7 @@ export function detectIntent(message, userProfile = {}) {
 
   EMOTIONAL_SIGNALS.forEach(s => { if (msg.includes(s)) { scores[INTENTS.EMOTIONAL] += 2; signals.push(s); } });
   ROMAN_URDU_EMOTIONAL.forEach(s => { if (msg.includes(s)) { scores[INTENTS.EMOTIONAL] += 2; signals.push(s); } });
+  REGIONAL_EMOTIONAL.forEach(s => { if (msg.includes(s)) { scores[INTENTS.EMOTIONAL] += 2; signals.push(s); } });
   MARKING_SIGNALS.forEach(s => { if (msg.includes(s)) { scores[INTENTS.MARKING_REQUEST] += 3; signals.push(s); } });
   ROMAN_URDU_MARKING.forEach(s => { if (msg.includes(s)) { scores[INTENTS.MARKING_REQUEST] += 3; signals.push(s); } });
   PRACTICE_SIGNALS.forEach(s => { if (msg.includes(s)) { scores[INTENTS.PRACTICE_REQUEST] += 3; signals.push(s); } });
@@ -207,6 +237,7 @@ export function detectIntent(message, userProfile = {}) {
   EXAM_PREP_SIGNALS.forEach(s => { if (msg.includes(s)) { scores[INTENTS.EXAM_PREP] += 2; signals.push(s); } });
   ROMAN_URDU_EXAM_PREP.forEach(s => { if (msg.includes(s)) { scores[INTENTS.EXAM_PREP] += 2; signals.push(s); } });
   ROMAN_URDU_HOMEWORK.forEach(s => { if (msg.includes(s)) { scores[INTENTS.HOMEWORK_HELP] += 2; signals.push(s); } });
+  REGIONAL_HOMEWORK.forEach(s => { if (msg.includes(s)) { scores[INTENTS.HOMEWORK_HELP] += 2; signals.push(s); } });
   ROMAN_URDU_EXPLAIN.forEach(s => { if (msg.includes(s)) { scores[INTENTS.CONCEPT_EXPLAIN] += 2; signals.push(s); } });
 
   // Homework help signals — structural patterns
