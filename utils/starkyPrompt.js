@@ -529,6 +529,12 @@ function buildIntentInstruction(intent, group) {
       OLEVEL: 'Firmly but warmly: "I\'ll leave that to Google! Let\'s get back to your studies."',
       ALEVEL: 'Direct: "Not my territory! What subject are we working on today?"',
     },
+    [INTENTS.CHAMPIONSHIP_TRUST]: {
+      KID:    'Warmly confirm the competition is real. Say "Yes! The NewWorld Championship is real — real prizes, real winners!" Tell them to ask their parents to check newworld.education/championship/parents if they are unsure. Keep it simple and exciting.',
+      MIDDLE: 'Confirm it is real. Explain briefly: it is a free referral competition run by NewWorld Education in Karachi, Pakistan. Real prizes shipped to real winners. If they or their parents have doubts, direct them to /championship/trust where they can see live stats, or /championship/parents for parent-specific info.',
+      OLEVEL: 'Direct them to /championship/trust where they can verify everything: live leaderboard, contact details, FAQ. Mention it is run by Khurram Badar from Karachi. Free to enter, no catch. Link to terms at /championship/terms. Keep it factual and reassuring.',
+      ALEVEL: 'Direct them to /championship/trust for full verification. Explain it is a straightforward referral competition — no pyramid scheme, no MLM, no lottery. Prizes funded from the company marketing budget. Full terms at /championship/terms. Contact hello@newworld.education or WhatsApp +92 326 226 6682 with any concerns.',
+    },
     [INTENTS.PARENT_QUERY]: {
       KID:    'This is a PARENT, not a student. Address them warmly as an adult. If they ask about their child: share what to practise at home and one fun activity. If they ask HOW to teach something: give them a simple mini lesson plan they can use with their child — explain the concept, suggest how to explain it, common mistakes kids make, and a check question to ask.',
       MIDDLE: 'This is a PARENT. If asking about progress: summarise weak areas and suggest focus topics. If asking how to teach: give them a step-by-step teaching guide — explain the concept at the parent level first, then show how to break it down for the child, with 2-3 check questions they can ask.',

@@ -22,6 +22,7 @@ export const INTENTS = {
   ESCALATE_ABUSE:   'escalate_abuse',     // bullying, self-harm mentions
   IDENTITY_PROBE:   'identity_probe',     // "Are you ChatGPT?" / "Are you a real person?"
   PARENT_QUERY:     'parent_query',       // Parent asking about child progress
+  CHAMPIONSHIP_TRUST: 'championship_trust', // "Is the competition real?" / "Will I get the prize?"
   UNKNOWN:          'unknown',
 };
 
@@ -72,6 +73,12 @@ const IDENTITY_PROBES = [
   // Roman Urdu
   'kya tum chatgpt ho', 'kya tum ai ho', 'tum kaun ho', 'tum robot ho',
   'tumhe kisne banaya',
+];
+
+const CHAMPIONSHIP_TRUST_SIGNALS = [
+  'is the competition real', 'is championship real', 'will i really win', 'will i get the prize',
+  'is this a scam', 'is this fake', 'ponzi', 'pyramid scheme', 'mlm',
+  'kya competition asli hai', 'prize milega', 'ye fake hai',
 ];
 
 const PARENT_SIGNALS = [
@@ -207,6 +214,12 @@ export function detectIntent(message, userProfile = {}) {
   const identityMatch = IDENTITY_PROBES.find(s => msg.includes(s));
   if (identityMatch) {
     return { intent: INTENTS.IDENTITY_PROBE, confidence: 0.95, signals: [identityMatch] };
+  }
+
+  // ── Championship trust ─────────────────────────────────────────────────────
+  const championshipTrustMatch = CHAMPIONSHIP_TRUST_SIGNALS.find(s => msg.includes(s));
+  if (championshipTrustMatch) {
+    return { intent: INTENTS.CHAMPIONSHIP_TRUST, confidence: 0.9, signals: [championshipTrustMatch] };
   }
 
   // ── Parent query ───────────────────────────────────────────────────────────

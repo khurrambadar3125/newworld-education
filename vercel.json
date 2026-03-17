@@ -31,6 +31,22 @@
     {
       "path": "/api/cron/championship-master",
       "schedule": "0 19 * * *"
+    },
+    {
+      "path": "/api/cron/championship-emails",
+      "schedule": "0 4 * * *"
+    },
+    {
+      "path": "/api/cron/championship-weekly",
+      "schedule": "0 4 * * 1"
+    },
+    {
+      "path": "/api/cron/championship-intelligence",
+      "schedule": "0 5 * * 1"
+    },
+    {
+      "path": "/api/cron/behaviour-analysis",
+      "schedule": "0 21 * * *"
     }
   ],
   "headers": [

@@ -39,6 +39,17 @@ export default function Privacy() {
           <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>Your Rights</h2>
           <p>You can request access to, correction of, or deletion of your personal data at any time. Email us at <a href="mailto:hello@newworld.education" style={{color:'#4F8EF7'}}>hello@newworld.education</a>.</p>
 
+          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>Championship Data</h2>
+          <p>If you participate in the NewWorld Championship, we collect additional data specifically for running the competition:</p>
+          <ul style={{paddingLeft:20}}>
+            <li><strong>Competition data:</strong> Referral activity, points, leaderboard position, dispute history, and behaviour events (page visits, share clicks).</li>
+            <li><strong>Verification data:</strong> Date of birth (age eligibility check only) and parent email (for under-13 consent).</li>
+            <li><strong>Winner data:</strong> Delivery address, phone number, and full name — collected from prize winners only for shipping purposes.</li>
+          </ul>
+          <p><strong>Retention:</strong> Championship data is retained for the duration of the active season plus 90 days for dispute resolution. Winner delivery information is retained for 12 months for warranty and shipping verification purposes, then automatically deleted.</p>
+          <p><strong>Never sold:</strong> Championship data is never sold, rented, or shared with third parties. It is used solely for operating the competition, sending competition-related notifications, and generating anonymised analytics to improve future seasons.</p>
+          <p><strong>Automated deletion:</strong> Behaviour tracking data (page visits, share clicks) is automatically purged 30 days after each season ends. You can request immediate deletion of all championship data by emailing <a href="mailto:hello@newworld.education" style={{color:'#4F8EF7'}}>hello@newworld.education</a>.</p>
+
           <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>Contact</h2>
           <p>NewWorld Education<br/>Email: <a href="mailto:hello@newworld.education" style={{color:'#4F8EF7'}}>hello@newworld.education</a></p>
         </div>
