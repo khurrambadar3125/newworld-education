@@ -624,7 +624,7 @@ export default function Home() {
             </div>
             <div className="sw">
               <button className="stb" onClick={handleStartChat}>
-                {userProfile ? `Continue as ${userProfile.name.split(' ')[0]} →` : 'Start with Starky ★'}
+                {userProfile?.name ? `Continue as ${userProfile.name.split(' ')[0]} →` : 'Start with Starky ★'}
               </button>
             </div>
           </>
@@ -640,7 +640,7 @@ export default function Home() {
 
           {/* Toggle O / A Level */}
           <div style={{display:'flex',gap:10,justifyContent:'center',marginBottom:24}}>
-            {[{id:'olevel',label:'📚 O Level'},{id:'alevel',label:'🎓 A Level'}].map(t=>(
+            {[{id:'olevel1',label:'📚 O Level'},{id:'alevel1',label:'🎓 A Level'}].map(t=>(
               <button key={t.id}
                 onClick={()=>setSelectedGrade(GRADES.find(g=>g.id===t.id))}
                 style={{padding:'10px 26px',borderRadius:100,border:'2px solid',fontWeight:700,fontSize:14,cursor:'pointer',fontFamily:"'Sora',sans-serif",transition:'all 0.2s',
@@ -653,11 +653,11 @@ export default function Home() {
           </div>
 
           {/* Subject pills — only show when O or A level selected */}
-          {(selectedGrade?.id==='olevel'||selectedGrade?.id==='aslevel'||selectedGrade?.id==='alevel') && (
+          {(selectedGrade?.id?.includes('olevel')||selectedGrade?.id?.includes('alevel')) && (
             <>
               <p style={{fontSize:12,color:'rgba(255,255,255,0.35)',marginBottom:14}}>Tap a subject to start — Starky launches instantly ★</p>
               <div style={{display:'flex',flexWrap:'wrap',gap:8,justifyContent:'center',marginBottom:8}}>
-                {(selectedGrade?.id==='olevel' ? SUBJECTS_OLEVEL : SUBJECTS_ALEVEL).map(s=>(
+                {(selectedGrade?.id?.includes('olevel') ? SUBJECTS_OLEVEL : SUBJECTS_ALEVEL).map(s=>(
                   <button key={s}
                     onClick={()=>{ setSelectedSubject(s); if(!userProfile){setShowRegModal(true);}else{launchChat(null,s);} }}
                     style={{padding:'9px 18px',borderRadius:100,border:'1px solid rgba(255,255,255,0.1)',fontSize:12,fontWeight:600,cursor:'pointer',fontFamily:"'Sora',sans-serif",transition:'all 0.15s',WebkitTapHighlightColor:'transparent',background:'rgba(255,255,255,0.05)',color:'rgba(255,255,255,0.7)'}}
@@ -672,7 +672,7 @@ export default function Home() {
           )}
 
           {/* If no grade selected yet, show prompt */}
-          {(!selectedGrade||(selectedGrade?.id!=='olevel'&&selectedGrade?.id!=='aslevel'&&selectedGrade?.id!=='alevel')) && (
+          {(!selectedGrade||(!selectedGrade?.id?.includes('olevel')&&!selectedGrade?.id?.includes('alevel'))) && (
             <p style={{fontSize:13,color:'rgba(255,255,255,0.3)',marginTop:8}}>Select O Level or A Level above to see your subjects</p>
           )}
         </div>

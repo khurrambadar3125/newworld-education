@@ -126,10 +126,11 @@ function QuestionTimer({ seconds, onExpire, paused }) {
   const [left, setLeft] = useState(seconds);
   useEffect(() => { setLeft(seconds); }, [seconds]);
   useEffect(() => {
-    if (paused || left <= 0) return;
+    if (!seconds || paused || left <= 0) return;
     const id = setInterval(() => setLeft(p => { if (p <= 1) { clearInterval(id); onExpire(); return 0; } return p - 1; }), 1000);
     return () => clearInterval(id);
   }, [paused, seconds]);
+  if (!seconds) return null; // No timer for young learners
   const pct = (left / seconds) * 100;
   const color = pct > 50 ? '#4ADE80' : pct > 20 ? '#FCD34D' : '#F87171';
   return (

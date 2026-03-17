@@ -14,12 +14,14 @@ export default function Dashboard() {
 
   const login = async () => {
     setError('');
+    try {
     const res = await fetch('/api/dashboard-auth', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ password }),
     });
-    const data = await res.json();
+    let data = {};
+    try { data = await res.json(); } catch { data = {}; }
     if (data.role) {
       setRole(data.role);
       sessionStorage.setItem('dash_role', data.role);
@@ -28,6 +30,7 @@ export default function Dashboard() {
     } else {
       setError('Incorrect password');
     }
+    } catch { setError('Connection error. Please try again.'); }
   };
 
   const loadData = async (pw) => {

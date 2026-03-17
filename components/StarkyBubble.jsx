@@ -283,7 +283,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
         { role: 'assistant', content: reply },
       ];
       saveMessage(displayText, reply);
-      try { detectAndSaveMistake(reply, addMistake, sessionMemory?.currentSubject); } catch {}
+      try { detectAndSaveMistake(displayText, reply, sessionMemory?.currentSubject, addMistake, addWeakTopic); } catch {}
     } catch (err) {
       console.error('[StarkyBubble sendWithImage ERROR]', err?.message || err);
       // Show specific error if available
@@ -350,7 +350,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
       saveMessage(displayText, reply);
 
       // Auto-detect mistakes from Starky's reply (feeds proactive greetings + weak topics)
-      try { detectAndSaveMistake(reply, addMistake, sessionMemory?.currentSubject); } catch {}
+      try { detectAndSaveMistake(displayText, reply, sessionMemory?.currentSubject, addMistake, addWeakTopic); } catch {}
 
       if (conversationRef.current.length === SUMMARIZE_AFTER * 2) {
         finalizeSession(conversationRef.current);
