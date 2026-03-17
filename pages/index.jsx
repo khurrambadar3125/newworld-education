@@ -58,6 +58,12 @@ const SUBJECTS_ALEVEL = [
 export default function Home() {
   const [selectedGrade, setSelectedGrade] = useState(null);
   const [selectedSubject, setSelectedSubject] = useState(null);
+
+  // Grade classification — used in greetings, suggestion chips, subject lists
+  const gradeId = (selectedGrade?.id || '').toLowerCase();
+  const isYoung = ['kg','grade1','grade2','grade3','grade4','grade5'].includes(gradeId);
+  const isMiddle = ['grade6','grade7','grade8'].includes(gradeId);
+  const isMatric = ['grade9','grade10'].includes(gradeId);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -158,10 +164,6 @@ export default function Home() {
     const subject = subjectOverride || selectedSubject;
     setChatStarted(true);
     const isParent = userProfile?.role === 'parent';
-    const gradeId = (selectedGrade?.id || '').toLowerCase();
-    const isYoung = ['kg','grade1','grade2','grade3','grade4','grade5'].includes(gradeId);
-    const isMiddle = ['grade6','grade7','grade8'].includes(gradeId);
-    const isMatric = ['grade9','grade10'].includes(gradeId);
 
     let greeting;
     if (isYoung) {
