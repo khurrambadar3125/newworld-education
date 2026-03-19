@@ -482,6 +482,366 @@ const SEN_EXERCISES = {
       { scene: "Write a sentence about something that happened yesterday, something happening today, and something you will do tomorrow.", prompt: "Use three tenses!" },
     ],
   },
+
+  // ═══════════════════════════════════════════════════════════════════════
+  // SECONDARY STAGE (Ages 11–16, O-Level / GCSE)
+  // ═══════════════════════════════════════════════════════════════════════
+
+  // ── AUTISM — SECONDARY ──
+  autism_secondary: {
+    match: [
+      { pairs: [["Cell", "Basic unit of life"], ["Nucleus", "Controls the cell"], ["Mitochondria", "Powerhouse — makes energy"], ["Chromosome", "Carries genetic information"]] },
+      { pairs: [["Treaty", "Formal agreement between nations"], ["Alliance", "Countries joined for a common goal"], ["Armistice", "Agreement to stop fighting"], ["Imperialism", "One country controlling another"]] },
+    ],
+    fill: [
+      { sentence: "The ___ is the control centre of a cell.", options: ["nucleus", "mitochondria", "ribosome", "membrane"], answer: "nucleus", explanation: "The nucleus contains DNA and controls cell activities." },
+      { sentence: "In the equation 2x + 4 = 10, x = ___.", options: ["2", "3", "4", "6"], answer: "3", explanation: "Subtract 4 from both sides: 2x = 6, then divide by 2: x = 3." },
+      { sentence: "Photosynthesis converts light energy into ___ energy.", options: ["chemical", "kinetic", "thermal", "electrical"], answer: "chemical", explanation: "Plants store light energy as chemical energy in glucose." },
+    ],
+    truefalse: [
+      { statement: "The Mughal Empire was founded by Babur in 1526.", answer: true, explanation: "Babur defeated Ibrahim Lodi at the Battle of Panipat and established Mughal rule." },
+      { statement: "In a food chain, producers are at the top.", answer: false, explanation: "Producers (plants) are at the bottom — they make energy from sunlight." },
+      { statement: "The atomic number of an element tells you the number of protons.", answer: true, explanation: "The atomic number equals the number of protons in the nucleus." },
+    ],
+    picture: [
+      { scenario: "You set up an experiment: two identical plants, one in sunlight and one in a dark cupboard. After a week, the sunlit plant is green and healthy; the dark one is yellow and wilting.", prompt: "Step by step, explain what happened and why. What was the independent variable?" },
+      { scenario: "You are given data showing that a car travels 60 km in the first hour, 45 km in the second hour, and 30 km in the third hour.", prompt: "Describe the pattern. Calculate the average speed. What might explain the change?" },
+    ],
+  },
+
+  // ── ADHD — SECONDARY ──
+  adhd_secondary: {
+    match: [
+      { pairs: [["DNA", "Genetic code"], ["Atom", "Smallest particle"], ["Gravity", "Pulls things down"], ["Photon", "Particle of light"]] },
+      { pairs: [["Revenue", "Money coming in"], ["Profit", "Revenue minus costs"], ["Tax", "Government takes a share"], ["Budget", "Plan for spending"]] },
+    ],
+    fill: [
+      { sentence: "Speed = distance / ___.", options: ["time", "mass", "force", "area"], answer: "time", explanation: "Speed is how far you go divided by how long it takes." },
+      { sentence: "The chemical symbol for water is ___.", options: ["CO2", "H2O", "NaCl", "O2"], answer: "H2O", explanation: "Two hydrogen atoms bonded to one oxygen atom." },
+      { sentence: "The largest desert in the world is the ___.", options: ["Sahara", "Gobi", "Antarctic", "Thar"], answer: "Antarctic", explanation: "Surprised? Antarctica is technically the largest desert — it gets almost no precipitation!" },
+    ],
+    truefalse: [
+      { statement: "Octopuses have three hearts.", answer: true, explanation: "Two pump blood to the gills, one pumps it to the body. Wild!" },
+      { statement: "Lightning never strikes the same place twice.", answer: false, explanation: "Totally false! Tall buildings like the Empire State Building get struck dozens of times a year." },
+      { statement: "Sound travels faster than light.", answer: false, explanation: "Light is way faster — that is why you see lightning before hearing thunder." },
+    ],
+    picture: [
+      { scenario: "You have been given Rs 5,000 to start a small school tuck shop. You need to buy stock, set prices, and make a profit.", prompt: "Quick plan: What 3 items do you buy? What price do you sell them for? What is your expected profit?" },
+      { scenario: "Design a 5-minute experiment to test which paper aeroplane design flies the furthest. You have 3 sheets of paper.", prompt: "What are your 3 designs? How do you make it a fair test? Go!" },
+    ],
+  },
+
+  // ── DYSLEXIA — SECONDARY ──
+  dyslexia_secondary: {
+    match: [
+      { pairs: [["Volcano", "Mountain that erupts lava"], ["Earthquake", "Ground shakes suddenly"], ["Tsunami", "Giant ocean wave"], ["Erosion", "Land worn away slowly"]] },
+      { pairs: [["Democracy", "People choose leaders"], ["Dictatorship", "One ruler, total control"], ["Monarchy", "King or queen rules"], ["Republic", "Elected head of state"]] },
+    ],
+    fill: [
+      { sentence: "Plants take in ___ and release oxygen.", options: ["carbon dioxide", "nitrogen", "hydrogen", "helium"], answer: "carbon dioxide", explanation: "During photosynthesis, plants absorb CO2 and produce O2." },
+      { sentence: "A right angle measures ___ degrees.", options: ["45", "90", "180", "360"], answer: "90", explanation: "A right angle is exactly 90 degrees — like the corner of a book." },
+      { sentence: "Pakistan became independent in ___.", options: ["1945", "1947", "1950", "1952"], answer: "1947", explanation: "Pakistan gained independence on 14th August 1947." },
+    ],
+    truefalse: [
+      { statement: "The heart pumps blood around the body.", answer: true, explanation: "The heart is a muscle that pumps blood through arteries and veins." },
+      { statement: "Gravity only exists on Earth.", answer: false, explanation: "Gravity exists everywhere — the Moon, the Sun, and all planets have gravity." },
+      { statement: "Islamabad is the capital city of Pakistan.", answer: true, explanation: "Islamabad has been the capital since 1967." },
+    ],
+    picture: [
+      { scenario: "Someone tells you: 'All birds can fly.' Think about penguins, ostriches, and kiwis.", prompt: "Is the statement true or false? Explain your reasoning in your own words." },
+      { scenario: "A shop has a sale: 50% off everything. A jacket costs Rs 2,000 before the sale.", prompt: "What is the sale price? How did you work it out?" },
+    ],
+  },
+
+  // ── DOWN SYNDROME — SECONDARY ──
+  ds_secondary: {
+    match: [
+      { pairs: [["Rs 10 note", "Can buy a small snack"], ["Rs 100 note", "Can buy a meal"], ["Rs 500 note", "Can buy groceries"], ["Rs 1000 note", "Can buy clothes"]] },
+      { pairs: [["Toothbrush", "Clean your teeth"], ["Oven", "Cook food"], ["Phone", "Call someone"], ["Key", "Open a door"]] },
+    ],
+    fill: [
+      { sentence: "If something costs Rs 80 and you pay Rs 100, your change is Rs ___.", options: ["10", "20", "30", "40"], answer: "20", explanation: "100 minus 80 equals 20 rupees change." },
+      { sentence: "To cross the road safely, you look ___ then right then left again.", options: ["left", "up", "down", "behind"], answer: "left", explanation: "In Pakistan, traffic comes from the left first, so look left first." },
+      { sentence: "There are ___ hours in one day.", options: ["12", "20", "24", "30"], answer: "24", explanation: "A full day and night together make 24 hours." },
+    ],
+    truefalse: [
+      { statement: "You should wash your hands before eating.", answer: true, explanation: "Washing hands removes germs and keeps you healthy." },
+      { statement: "It is safe to talk to strangers who offer you a ride.", answer: false, explanation: "Never get in a car with someone you do not know. Tell a trusted adult." },
+      { statement: "Drinking water is good for your body.", answer: true, explanation: "Your body needs water every day to stay healthy and strong." },
+    ],
+    picture: [
+      { scenario: "You are at a shop. You want to buy a drink for Rs 50 and a sandwich for Rs 150. You have Rs 200.", prompt: "Do you have enough money? How much is left over?" },
+      { scenario: "You are at school and another student says something unkind to you.", prompt: "What would you do? Who could you talk to for help?" },
+    ],
+  },
+
+  // ── CEREBRAL PALSY — SECONDARY ──
+  cp_secondary: {
+    match: [
+      { pairs: [["Respiration", "Releasing energy from glucose"], ["Photosynthesis", "Making glucose using light"], ["Diffusion", "Particles moving from high to low concentration"], ["Osmosis", "Water moving through a membrane"]] },
+      { pairs: [["Metaphor", "Direct comparison without like/as"], ["Simile", "Comparison using like or as"], ["Personification", "Giving human traits to non-human things"], ["Hyperbole", "Extreme exaggeration for effect"]] },
+    ],
+    fill: [
+      { sentence: "The chemical formula for carbon dioxide is ___.", options: ["CO", "CO2", "C2O", "H2O"], answer: "CO2", explanation: "One carbon atom bonded to two oxygen atoms." },
+      { sentence: "The angles in a triangle add up to ___ degrees.", options: ["90", "180", "270", "360"], answer: "180", explanation: "Every triangle's interior angles sum to exactly 180 degrees." },
+      { sentence: "Allama Iqbal is known as the poet of the ___.", options: ["West", "East", "South", "North"], answer: "East", explanation: "Allama Iqbal is called the Poet of the East (Shair-e-Mashriq)." },
+    ],
+    truefalse: [
+      { statement: "Arteries carry blood away from the heart.", answer: true, explanation: "Arteries carry oxygenated blood from the heart to the body." },
+      { statement: "Shakespeare wrote in the 20th century.", answer: false, explanation: "Shakespeare wrote in the late 16th and early 17th century." },
+      { statement: "The pH of a neutral substance is 7.", answer: true, explanation: "Pure water has a pH of 7, which is neutral — neither acid nor alkali." },
+    ],
+    picture: [
+      { scenario: "You are analysing a poem that says: 'The wind howled through the empty streets.' Identify the literary technique used.", prompt: "Name the technique and explain its effect on the reader." },
+      { scenario: "In an experiment, you add acid to an alkali and measure the pH. It starts at 12 and drops to 7.", prompt: "What happened? What is this reaction called? What might the products be?" },
+    ],
+  },
+
+  // ── VISUAL IMPAIRMENT — SECONDARY ──
+  vi_secondary: {
+    match: [
+      { pairs: [["Democracy", "Government by the people"], ["Inflation", "Rising prices over time"], ["Migration", "Movement of people to new places"], ["Constitution", "Supreme law of a country"]] },
+      { pairs: [["Velocity", "Speed in a specific direction"], ["Acceleration", "Rate of change of velocity"], ["Momentum", "Mass multiplied by velocity"], ["Inertia", "Resistance to change in motion"]] },
+    ],
+    fill: [
+      { sentence: "The three states of matter are solid, liquid, and ___.", options: ["gas", "plasma", "vapour", "mist"], answer: "gas", explanation: "Solid, liquid, and gas are the three common states of matter." },
+      { sentence: "Pakistan's national language is ___.", options: ["English", "Punjabi", "Urdu", "Sindhi"], answer: "Urdu", explanation: "Urdu is the national language of Pakistan, used across all provinces." },
+      { sentence: "An ecosystem includes living organisms and their ___ environment.", options: ["physical", "imaginary", "digital", "emotional"], answer: "physical", explanation: "An ecosystem is the interaction between living things and their physical surroundings." },
+    ],
+    truefalse: [
+      { statement: "Sound needs a medium to travel through.", answer: true, explanation: "Sound cannot travel through a vacuum — it needs air, water, or a solid." },
+      { statement: "The Indus River flows through Balochistan and Punjab only.", answer: false, explanation: "The Indus flows through Gilgit-Baltistan, KPK, Punjab, and Sindh." },
+      { statement: "Friction is a force that opposes motion.", answer: true, explanation: "Friction acts in the opposite direction to movement, slowing things down." },
+    ],
+    picture: [
+      { scenario: "Imagine holding two objects: a tennis ball and a bowling ball. You drop both from the same height at the same time.", prompt: "Which hits the ground first? Explain your reasoning using what you know about gravity and air resistance." },
+      { scenario: "Think about what happens when you boil a kettle. The water gets hotter and hotter, then starts to bubble.", prompt: "Explain the process step by step. What is happening to the water particles at each stage?" },
+    ],
+  },
+
+  // ── HEARING IMPAIRMENT — SECONDARY ──
+  hi_secondary: {
+    match: [
+      { pairs: [["Catalyst", "Speeds up a reaction"], ["Reactant", "Substance that reacts"], ["Product", "Substance that is formed"], ["Enzyme", "Biological catalyst"]] },
+      { pairs: [["Thesis", "Main argument of an essay"], ["Evidence", "Facts that support your point"], ["Analysis", "Explaining what evidence means"], ["Conclusion", "Final summary of argument"]] },
+    ],
+    fill: [
+      { sentence: "The powerhouse of the cell is the ___.", options: ["nucleus", "ribosome", "mitochondria", "membrane"], answer: "mitochondria", explanation: "Mitochondria carry out aerobic respiration to release energy." },
+      { sentence: "In English writing, a new paragraph begins when there is a change of ___.", options: ["topic", "colour", "font", "page"], answer: "topic", explanation: "Each paragraph should focus on one main idea or point." },
+      { sentence: "The area of a rectangle is length multiplied by ___.", options: ["width", "height", "perimeter", "diagonal"], answer: "width", explanation: "Area = length x width for all rectangles." },
+    ],
+    truefalse: [
+      { statement: "Enzymes are proteins that speed up chemical reactions in the body.", answer: true, explanation: "Enzymes are biological catalysts made of protein." },
+      { statement: "The Quaid-e-Azam's full name was Muhammad Ali Jinnah.", answer: true, explanation: "Muhammad Ali Jinnah, known as Quaid-e-Azam (Great Leader), founded Pakistan." },
+      { statement: "Parallel lines eventually meet at a point.", answer: false, explanation: "Parallel lines never meet — they stay the same distance apart forever." },
+    ],
+    picture: [
+      { scenario: "Read this passage: 'The government announced a new education policy. Some people support it because it increases funding. Others oppose it because it reduces local control.'", prompt: "Write a balanced paragraph: give one argument for and one against, then state your own view." },
+      { scenario: "You are given a table of data showing temperature and the rate of enzyme activity. At 37C the rate is highest. At 60C it drops to zero.", prompt: "Describe the pattern in the data. Explain why enzyme activity stops at high temperatures." },
+    ],
+  },
+
+  // ── UNSURE — SECONDARY ──
+  unsure_secondary: {
+    match: [
+      { pairs: [["Photosynthesis", "Plants making food from light"], ["Evolution", "Species changing over time"], ["Globalisation", "World becoming more connected"], ["Urbanisation", "People moving to cities"]] },
+      { pairs: [["Mean", "Add all values and divide by count"], ["Median", "Middle value when sorted"], ["Mode", "Most common value"], ["Range", "Highest minus lowest"]] },
+    ],
+    fill: [
+      { sentence: "The longest river in Pakistan is the ___.", options: ["Jhelum", "Chenab", "Indus", "Ravi"], answer: "Indus", explanation: "The Indus River is approximately 3,180 km long — the longest in Pakistan." },
+      { sentence: "An equation is balanced when both sides are ___.", options: ["different", "equal", "empty", "negative"], answer: "equal", explanation: "The equals sign means the left side has the same value as the right side." },
+      { sentence: "The human body has ___ pairs of chromosomes.", options: ["21", "23", "25", "46"], answer: "23", explanation: "Humans have 23 pairs (46 total) chromosomes in each cell." },
+    ],
+    truefalse: [
+      { statement: "The Earth's atmosphere is mostly nitrogen.", answer: true, explanation: "About 78% of the atmosphere is nitrogen, 21% oxygen." },
+      { statement: "A verb is a describing word.", answer: false, explanation: "A verb is a doing/action word. An adjective is a describing word." },
+      { statement: "The Karakoram Highway connects Pakistan and China.", answer: true, explanation: "The KKH runs from Islamabad to Kashgar, crossing the Karakoram mountains." },
+    ],
+    picture: [
+      { scenario: "You are given a bar chart showing the population of five Pakistani cities: Karachi (15M), Lahore (12M), Faisalabad (3M), Rawalpindi (2M), Islamabad (1M).", prompt: "Which city has the largest population? What is the total? Estimate how many times bigger Karachi is compared to Islamabad." },
+      { scenario: "Your friend says: 'I revised for 2 hours but still failed the test.' They want your advice.", prompt: "Suggest three specific study strategies they could try. Why might each one help?" },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════
+  // SIXTH FORM STAGE (Ages 16–18, A-Level)
+  // ═══════════════════════════════════════════════════════════════════════
+
+  // ── AUTISM — SIXTH FORM ──
+  autism_sixthform: {
+    match: [
+      { pairs: [["Supply", "Amount producers offer at a given price"], ["Demand", "Amount consumers want at a given price"], ["Equilibrium", "Where supply equals demand"], ["Elasticity", "How responsive quantity is to price change"]] },
+      { pairs: [["Classical conditioning", "Learning by association (Pavlov)"], ["Operant conditioning", "Learning by consequences (Skinner)"], ["Schema", "Mental framework for organising knowledge"], ["Cognitive dissonance", "Discomfort from conflicting beliefs"]] },
+    ],
+    fill: [
+      { sentence: "When demand increases and supply stays the same, the price ___.", options: ["rises", "falls", "stays the same", "doubles"], answer: "rises", explanation: "Higher demand with fixed supply creates scarcity, pushing prices up." },
+      { sentence: "The derivative of x² with respect to x is ___.", options: ["x", "2x", "2x²", "x³"], answer: "2x", explanation: "Using the power rule: bring down the exponent and reduce it by one." },
+      { sentence: "In psychology, the independent variable is the one the researcher ___.", options: ["measures", "manipulates", "observes", "ignores"], answer: "manipulates", explanation: "The IV is deliberately changed to observe its effect on the DV." },
+    ],
+    truefalse: [
+      { statement: "GDP measures the total value of goods and services produced in a country.", answer: true, explanation: "Gross Domestic Product is the standard measure of a country's economic output." },
+      { statement: "In classical conditioning, the unconditioned stimulus is learned.", answer: false, explanation: "The unconditioned stimulus naturally triggers a response — no learning needed." },
+      { statement: "Entropy in a closed system always tends to increase.", answer: true, explanation: "The second law of thermodynamics states that entropy (disorder) increases over time." },
+    ],
+    picture: [
+      { scenario: "Essay question: 'Evaluate the extent to which free market economics benefits developing countries like Pakistan.' You need to write a structured plan.", prompt: "Create a clear plan: introduction thesis, 3 body paragraphs (point, evidence, analysis for each), and a conclusion. Use the PEEL structure." },
+      { scenario: "A psychology study claims that students who sleep 8 hours perform better in exams than those who sleep 5 hours. The sample was 20 students from one school.", prompt: "Evaluate this study. Discuss sample size, generalisability, confounding variables, and ethical considerations." },
+    ],
+  },
+
+  // ── ADHD — SIXTH FORM ──
+  adhd_sixthform: {
+    match: [
+      { pairs: [["Opportunity cost", "What you give up when you choose"], ["Moral hazard", "Taking risks because you won't bear the cost"], ["Sunk cost", "Money spent that you can't get back"], ["Externality", "Cost or benefit affecting a third party"]] },
+      { pairs: [["Mitosis", "Cell division for growth (identical)"], ["Meiosis", "Cell division for gametes (halved)"], ["Mutation", "Change in DNA sequence"], ["Genotype", "Genetic makeup of an organism"]] },
+    ],
+    fill: [
+      { sentence: "A recession is defined as ___ consecutive quarters of negative GDP growth.", options: ["one", "two", "three", "four"], answer: "two", explanation: "Two quarters of shrinking economy = recession. Quick and brutal." },
+      { sentence: "The speed of light is approximately ___ m/s.", options: ["3 x 10⁶", "3 x 10⁸", "3 x 10¹⁰", "3 x 10¹²"], answer: "3 x 10⁸", explanation: "Light travels at about 300,000,000 metres per second. Nothing is faster." },
+      { sentence: "In a normal distribution, approximately ___% of data falls within one standard deviation of the mean.", options: ["50", "68", "95", "99"], answer: "68", explanation: "The 68-95-99.7 rule. About 68% within 1 SD, 95% within 2, 99.7% within 3." },
+    ],
+    truefalse: [
+      { statement: "Bananas are technically berries, but strawberries are not.", answer: true, explanation: "Botanically, bananas qualify as berries. Strawberries are 'accessory fruits.' Mind blown." },
+      { statement: "Humans only use 10% of their brains.", answer: false, explanation: "Total myth! Brain scans show we use virtually all parts of the brain." },
+      { statement: "Hot water can freeze faster than cold water under certain conditions.", answer: true, explanation: "This is the Mpemba effect — counterintuitive but experimentally observed." },
+    ],
+    picture: [
+      { scenario: "Debate topic: 'Social media does more harm than good for young people.' You have 2 minutes to prepare your argument FOR the motion.", prompt: "Build your case: 3 punchy arguments with real-world evidence. Make it persuasive — go!" },
+      { scenario: "You are launching a startup that solves one problem in Pakistan's education system. You have 60 seconds to pitch to an investor.", prompt: "What is the problem? What is your solution? Why will it work? Deliver your elevator pitch!" },
+    ],
+  },
+
+  // ── DYSLEXIA — SIXTH FORM ──
+  dyslexia_sixthform: {
+    match: [
+      { pairs: [["Inflation", "Prices going up over time"], ["Unemployment", "People who want jobs but cannot find them"], ["Interest rate", "Cost of borrowing money"], ["Exchange rate", "Value of one currency against another"]] },
+      { pairs: [["Natural selection", "Survival of the fittest"], ["Adaptation", "Trait that helps survival"], ["Speciation", "One species becoming two"], ["Biodiversity", "Variety of life in an area"]] },
+    ],
+    fill: [
+      { sentence: "When interest rates rise, borrowing becomes more ___.", options: ["expensive", "cheap", "common", "rare"], answer: "expensive", explanation: "Higher interest rates mean you pay more back on loans." },
+      { sentence: "The human heart has ___ chambers.", options: ["2", "3", "4", "5"], answer: "4", explanation: "Two atria on top and two ventricles on the bottom." },
+      { sentence: "In an essay, each paragraph should have one main ___.", options: ["word", "idea", "quote", "question"], answer: "idea", explanation: "One idea per paragraph keeps your writing clear and structured." },
+    ],
+    truefalse: [
+      { statement: "DNA stands for deoxyribonucleic acid.", answer: true, explanation: "DNA is the molecule that carries genetic instructions." },
+      { statement: "Pakistan has a federal system of government.", answer: true, explanation: "Pakistan is a federal republic with provinces that have their own governments." },
+      { statement: "All metals are solid at room temperature.", answer: false, explanation: "Mercury is a metal that is liquid at room temperature." },
+    ],
+    picture: [
+      { scenario: "A company's profits went down by 20% this year. The CEO says it is because of the economy. A critic says it is because of bad management.", prompt: "Consider both sides. Which argument is stronger? What evidence would you need to decide?" },
+      { scenario: "Think about this claim: 'Technology has made life easier for everyone.'", prompt: "Do you agree or disagree? Give two reasons for your view, using examples from real life." },
+    ],
+  },
+
+  // ── DOWN SYNDROME — SIXTH FORM ──
+  ds_sixthform: {
+    match: [
+      { pairs: [["CV", "Document listing your skills and experience"], ["Interview", "Meeting where employer asks you questions"], ["Reference", "Someone who says you are a good worker"], ["Salary", "Money you earn from a job"]] },
+      { pairs: [["Debit card", "Money comes from your bank account"], ["Credit card", "You borrow money and pay back later"], ["Receipt", "Proof that you paid"], ["Budget", "Plan for how to spend your money"]] },
+    ],
+    fill: [
+      { sentence: "If you earn Rs 30,000 per month and spend Rs 25,000, you save Rs ___.", options: ["3,000", "5,000", "10,000", "25,000"], answer: "5,000", explanation: "30,000 minus 25,000 equals 5,000 rupees saved each month." },
+      { sentence: "When catching a bus, you should wait at the ___.", options: ["bus stop", "traffic light", "roundabout", "car park"], answer: "bus stop", explanation: "Always wait at the designated bus stop where the bus will pull over safely." },
+      { sentence: "In an emergency in Pakistan, you call ___.", options: ["999", "911", "1122", "100"], answer: "1122", explanation: "Rescue 1122 is the emergency number in Pakistan for ambulance and rescue." },
+    ],
+    truefalse: [
+      { statement: "You should arrive on time for a job interview.", answer: true, explanation: "Being on time shows respect and that you are reliable." },
+      { statement: "You can use someone else's bank card without asking.", answer: false, explanation: "Using someone else's card without permission is not allowed — always use your own." },
+      { statement: "Reading food labels helps you know what you are eating.", answer: true, explanation: "Food labels tell you about ingredients, calories, and expiry dates." },
+    ],
+    picture: [
+      { scenario: "You have a job interview tomorrow at a shop. You need to be there at 10 AM. The bus takes 30 minutes.", prompt: "What time should you leave? What should you wear? What might they ask you?" },
+      { scenario: "You are at a train station for the first time. You need to buy a ticket, find the right platform, and get on the correct train.", prompt: "What steps do you take? Who can you ask for help if you are confused?" },
+    ],
+  },
+
+  // ── CEREBRAL PALSY — SIXTH FORM ──
+  cp_sixthform: {
+    match: [
+      { pairs: [["Electrolysis", "Using electricity to decompose a compound"], ["Titration", "Finding concentration by neutralisation"], ["Chromatography", "Separating mixtures by solubility"], ["Distillation", "Separating by boiling points"]] },
+      { pairs: [["Utilitarianism", "Greatest good for the greatest number"], ["Deontology", "Actions are right or wrong regardless of outcome"], ["Virtue ethics", "Focus on moral character"], ["Social contract", "People agree to rules for mutual benefit"]] },
+    ],
+    fill: [
+      { sentence: "The integral of 2x with respect to x is ___.", options: ["x²", "x² + C", "2x²", "2x² + C"], answer: "x² + C", explanation: "Integration reverses differentiation. The constant C accounts for unknowns." },
+      { sentence: "In A-Level Biology, the lock-and-key model describes how ___ work.", options: ["enzymes", "hormones", "nerves", "muscles"], answer: "enzymes", explanation: "The enzyme's active site has a specific shape that fits only its substrate." },
+      { sentence: "The Treaty of Westphalia (1648) established the principle of state ___.", options: ["sovereignty", "democracy", "federalism", "communism"], answer: "sovereignty", explanation: "Westphalia established that each state has authority over its own territory." },
+    ],
+    truefalse: [
+      { statement: "In physics, work is defined as force multiplied by distance.", answer: true, explanation: "Work (joules) = Force (newtons) x Distance (metres) in the direction of force." },
+      { statement: "All chemical reactions are reversible.", answer: false, explanation: "Some reactions, like combustion, are irreversible under normal conditions." },
+      { statement: "Pakistan's 1973 Constitution is still the governing document today.", answer: true, explanation: "The 1973 Constitution, with amendments, remains in force." },
+    ],
+    picture: [
+      { scenario: "A-Level essay: 'To what extent was the partition of India in 1947 inevitable?' You have sources showing both political negotiation failures and grassroots communal tension.", prompt: "Plan a full essay: thesis statement, 3-4 analytical paragraphs, and a nuanced conclusion. Consider multiple perspectives." },
+      { scenario: "You are given a graph showing the rate of reaction over time. The curve rises steeply at first, then levels off. Temperature was kept constant.", prompt: "Explain the shape of the curve. What is happening to reactant concentration? What would happen if you increased the temperature?" },
+    ],
+  },
+
+  // ── VISUAL IMPAIRMENT — SIXTH FORM ──
+  vi_sixthform: {
+    match: [
+      { pairs: [["Empiricism", "Knowledge comes from experience"], ["Rationalism", "Knowledge comes from reason"], ["Positivism", "Only observable facts are valid"], ["Relativism", "Truth depends on perspective"]] },
+      { pairs: [["Fiscal policy", "Government spending and taxation"], ["Monetary policy", "Central bank controls money supply"], ["Quantitative easing", "Central bank creates new money"], ["Austerity", "Cutting government spending to reduce debt"]] },
+    ],
+    fill: [
+      { sentence: "In economics, a public good is non-excludable and non-___.", options: ["rival", "profitable", "legal", "taxable"], answer: "rival", explanation: "Public goods like street lighting can be used by many without reducing availability." },
+      { sentence: "The process by which mRNA is made from DNA is called ___.", options: ["translation", "transcription", "replication", "mutation"], answer: "transcription", explanation: "Transcription copies DNA into mRNA in the nucleus." },
+      { sentence: "In philosophy, an argument is valid when the conclusion ___ follows from the premises.", options: ["logically", "emotionally", "always", "sometimes"], answer: "logically", explanation: "Validity means if the premises are true, the conclusion must be true." },
+    ],
+    truefalse: [
+      { statement: "Correlation always implies causation.", answer: false, explanation: "Two things can be correlated without one causing the other — a fundamental principle in research." },
+      { statement: "In Pakistan, the Senate represents the provinces equally.", answer: true, explanation: "Each province has equal representation in the Senate regardless of population." },
+      { statement: "An exothermic reaction releases energy to the surroundings.", answer: true, explanation: "Exothermic reactions give out heat — like combustion or neutralisation." },
+    ],
+    picture: [
+      { scenario: "Consider this ethical dilemma: A self-driving car must choose between hitting one person or swerving into five people. There is no safe option.", prompt: "Analyse this using two ethical frameworks (e.g., utilitarianism vs deontology). What would each approach suggest? What is your own view?" },
+      { scenario: "You are revising the topic of natural selection. Explain the full process to someone who has never studied biology.", prompt: "Walk through it step by step: variation, competition, survival, reproduction, and inheritance. Use a real-world example." },
+    ],
+  },
+
+  // ── HEARING IMPAIRMENT — SIXTH FORM ──
+  hi_sixthform: {
+    match: [
+      { pairs: [["Covalent bond", "Atoms share electrons"], ["Ionic bond", "Electrons are transferred"], ["Metallic bond", "Electrons delocalised in a sea"], ["Hydrogen bond", "Weak attraction between polar molecules"]] },
+      { pairs: [["Functionalism", "Society works like a body — each part has a role"], ["Marxism", "Society is shaped by class conflict"], ["Feminism", "Focus on gender inequality"], ["Interactionism", "Society is built through daily interactions"]] },
+    ],
+    fill: [
+      { sentence: "In a covalent bond, atoms ___ electrons.", options: ["share", "transfer", "destroy", "absorb"], answer: "share", explanation: "Covalent bonding involves the sharing of electron pairs between atoms." },
+      { sentence: "The standard form of 0.00045 is ___.", options: ["4.5 x 10⁻⁴", "45 x 10⁻⁴", "4.5 x 10⁴", "0.45 x 10⁻³"], answer: "4.5 x 10⁻⁴", explanation: "Move the decimal point 4 places to the right to get 4.5, so the power is -4." },
+      { sentence: "In sociology, Durkheim studied the role of ___ in maintaining social order.", options: ["religion", "technology", "media", "sport"], answer: "religion", explanation: "Durkheim argued that religion creates shared values and social cohesion." },
+    ],
+    truefalse: [
+      { statement: "Diamond and graphite are both forms of carbon.", answer: true, explanation: "They are allotropes of carbon — same element, different structures." },
+      { statement: "In statistics, a Type I error means accepting a false hypothesis.", answer: false, explanation: "Type I error means rejecting a true null hypothesis (false positive)." },
+      { statement: "The Pakistan Movement was led by the All-India Muslim League.", answer: true, explanation: "The Muslim League, under Jinnah's leadership, led the movement for a separate Muslim state." },
+    ],
+    picture: [
+      { scenario: "You are writing an A-Level essay: 'Assess the view that education serves the interests of the ruling class.' You have Marxist, functionalist, and feminist perspectives.", prompt: "Write a detailed essay plan with an introduction, three analytical paragraphs (one per perspective), and a balanced conclusion." },
+      { scenario: "You are given data: Group A (taught with visual aids) scored an average of 72%. Group B (taught without) scored 65%. Sample size: 30 per group.", prompt: "Is this a significant difference? Discuss sample size, variables that need controlling, and what statistical test you might use." },
+    ],
+  },
+
+  // ── UNSURE — SIXTH FORM ──
+  unsure_sixthform: {
+    match: [
+      { pairs: [["Globalisation", "Increasing worldwide interconnection"], ["Sustainability", "Meeting needs without harming the future"], ["Sovereignty", "Supreme authority within a territory"], ["Diplomacy", "Managing international relations peacefully"]] },
+      { pairs: [["Hypothesis", "Testable prediction"], ["Variable", "Factor that can change"], ["Control group", "Group with no treatment for comparison"], ["Reliability", "Consistency of results when repeated"]] },
+    ],
+    fill: [
+      { sentence: "CPEC stands for China-Pakistan ___ Corridor.", options: ["Economic", "Education", "Energy", "Export"], answer: "Economic", explanation: "The China-Pakistan Economic Corridor is a major infrastructure project." },
+      { sentence: "The pH scale ranges from 0 to ___.", options: ["7", "10", "14", "100"], answer: "14", explanation: "0 is strongly acidic, 7 is neutral, and 14 is strongly alkaline." },
+      { sentence: "A hypothesis must be ___.", options: ["testable", "correct", "complex", "published"], answer: "testable", explanation: "A good hypothesis can be tested through experimentation or observation." },
+    ],
+    truefalse: [
+      { statement: "Pakistan is a member of the United Nations.", answer: true, explanation: "Pakistan joined the UN on 30 September 1947, shortly after independence." },
+      { statement: "In a scientific experiment, you can change multiple variables at once.", answer: false, explanation: "You should only change one variable at a time to identify cause and effect." },
+      { statement: "Critical thinking involves questioning evidence before accepting claims.", answer: true, explanation: "Critical thinking means evaluating evidence, logic, and assumptions carefully." },
+    ],
+    picture: [
+      { scenario: "You are preparing for a university interview. The interviewer asks: 'What is the biggest challenge facing Pakistan in the next decade, and how would you address it?'", prompt: "Give a structured answer: identify the challenge, explain why it matters, and propose two realistic solutions with evidence." },
+      { scenario: "You read two articles: one says social media improves access to information; the other says it spreads misinformation and harms mental health.", prompt: "Evaluate both arguments. What evidence supports each? Can both be true? What is your balanced conclusion?" },
+    ],
+  },
 };
 
 // ── CONDITIONS ─────────────────────────────────────────────────────────
