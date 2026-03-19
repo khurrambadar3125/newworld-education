@@ -10,6 +10,42 @@ import { useSpacedRep } from '../utils/useSpacedRep';
 import useStreaks, { StreakWidget } from '../utils/useStreaks';
 import { useSessionLimit, SessionLimitBanner, LimitReachedModal } from '../utils/useSessionLimit';
 
+/* ─── Audio feedback engine ─── */
+let _audioCtx = null;
+function getAudioCtx() { if (!_audioCtx) try { _audioCtx = new (window.AudioContext || window.webkitAudioContext)(); } catch {} return _audioCtx; }
+function playTone(f, type, vol, dur, delay) {
+  const c = getAudioCtx(); if (!c) return;
+  const o = c.createOscillator(), g = c.createGain();
+  o.connect(g); g.connect(c.destination); o.type = type || 'sine'; o.frequency.value = f;
+  const t = c.currentTime + (delay || 0);
+  g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(vol || 0.2, t + 0.02);
+  g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+  o.start(t); o.stop(t + dur + 0.05);
+}
+function sndCorrect() { playTone(523, 'sine', 0.22, 0.32); playTone(659, 'sine', 0.22, 0.32, 0.16); }
+function sndWrong() { playTone(220, 'sawtooth', 0.15, 0.25); }
+function sndStreak() { playTone(523, 'sine', 0.25, 0.5); playTone(659, 'sine', 0.25, 0.45, 0.15); playTone(784, 'sine', 0.25, 0.45, 0.3); }
+function sndTick() { playTone(900, 'sine', 0.06, 0.07); }
+
+/* ─── Confetti component ─── */
+function DrillConfetti() {
+  const cols = ['#4F8EF7', '#A8E063', '#FFC300', '#FF6B6B', '#7C5CBF', '#63D2FF'];
+  return (
+    <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden', zIndex: 50 }}>
+      {Array.from({ length: 20 }, (_, i) => (
+        <div key={i} style={{
+          position: 'absolute', width: 10, height: 10, borderRadius: 2,
+          background: cols[i % cols.length],
+          left: Math.random() * 100 + '%', top: -10,
+          animation: `drillConfettiFall ${0.8 + Math.random() * 0.8}s ${Math.random() * 0.4}s ease-in forwards`,
+          opacity: 0,
+        }} />
+      ))}
+      <style>{`@keyframes drillConfettiFall{0%{opacity:1;transform:translateY(-20px) rotate(0)}100%{opacity:0;transform:translateY(120px) rotate(720deg)}}`}</style>
+    </div>
+  );
+}
+
 const TOPICS = {
   'Biology': ['Cell Structure & Organisation','Diffusion, Osmosis & Active Transport','Biological Molecules','Enzymes','Plant Nutrition (Photosynthesis)','Animal Nutrition & Digestion','Gas Exchange','Transport in Plants','Transport in Humans (Circulatory System)','Respiration','Excretion & Homeostasis','Coordination & Response (Nervous System)','Hormones & Endocrine System','Reproduction','Inheritance & Genetics','Variation & Natural Selection','Ecology & Environment','Human Influences on the Environment'],
   'Chemistry': ['Atomic Structure & The Periodic Table','Chemical Bonding','Stoichiometry & Moles','Acids, Bases & Salts','The Mole & Calculations','Electrolysis','Energy Changes in Chemical Reactions','Rates of Reaction','Equilibrium (Le Chatelier\'s Principle)','Redox Reactions','Group Properties (Group 1, 2, 7, 0)','Transition Metals','Organic Chemistry — Alkanes & Alkenes','Organic Chemistry — Alcohols & Acids','Polymers','Nitrogen & Sulfur Chemistry','Extraction of Metals','Water Chemistry'],
@@ -192,6 +228,8 @@ export default function DrillPage() {
   const [liveScore, setLiveScore] = useState(0);
   const [liveMax, setLiveMax] = useState(0);
   const [combo, setCombo] = useState(0); // consecutive correct answers
+  const [showConfetti, setShowConfetti] = useState(false);
+  useEffect(() => { if (showConfetti) { const t = setTimeout(() => setShowConfetti(false), 1500); return () => clearTimeout(t); } }, [showConfetti]);
 
   // Session limits
   const { limitReached, recordCall, callsLeft } = useSessionLimit(userProfile?.email);
@@ -335,7 +373,15 @@ export default function DrillPage() {
       setSessionResults(prev => [...prev, { topic:t, correct:!!data.correct, score:data.score || 0, maxScore:data.maxScore || 1, quality }]);
       setLiveScore(s => s + (data.score || 0));
       setLiveMax(m => m + (data.maxScore || 1));
-      setCombo(c => data.correct ? c + 1 : 0);
+      setCombo(c => {
+        const next = data.correct ? c + 1 : 0;
+        // Audio feedback
+        if (data.correct) { if (next >= 5 && next % 5 === 0) sndStreak(); else sndCorrect(); }
+        else sndWrong();
+        // Confetti on streaks
+        if (next >= 3 && data.correct) setShowConfetti(true);
+        return next;
+      });
     } catch { setError('Grading failed. Please try again.'); }
     finally { setLoading(false); }
   };
@@ -621,7 +667,8 @@ export default function DrillPage() {
           <title>Drill — {subject} · NewWorldEdu</title>
           <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" rel="stylesheet" />
         </Head>
-        <div style={S.page}>
+        <div style={{ ...S.page, position: 'relative' }}>
+          {showConfetti && <DrillConfetti />}
           <nav style={S.nav}>
             <Link href="/"><a style={S.navLogo}>NewWorldEdu<span style={{color:'#4F8EF7'}}>★</span></a></Link>
             <div style={S.navRight}>
