@@ -338,7 +338,7 @@ export default function KidsZone() {
                     outline: 'none',
                     boxSizing: 'border-box',
                   }}
-                  onFocus={e => e.target.style.borderColor = '#FFC300'}
+                  onFocus={e => { e.target.style.borderColor = '#FFC300'; setTimeout(() => e.target.scrollIntoView({ behavior:'smooth', block:'center' }), 300); }}
                   onBlur={e => e.target.style.borderColor = isDark ? 'rgba(255,255,255,0.15)' : 'rgba(0,0,0,0.1)'}
                   onKeyDown={e => { if (e.key === 'Enter' && name.trim().length >= 2) { sndTick(); setRegStep(2); } }}
                 />
@@ -350,6 +350,7 @@ export default function KidsZone() {
                     width: '100%',
                     maxWidth: 320,
                     margin: '24px auto 0',
+                    marginBottom: 120,
                     height: 64,
                     background: name.trim().length >= 2 ? 'linear-gradient(135deg, #4F8EF7, #7C5CBF)' : (isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'),
                     color: name.trim().length >= 2 ? '#fff' : t.n400,
@@ -465,7 +466,7 @@ export default function KidsZone() {
                     outline: 'none',
                     boxSizing: 'border-box',
                   }}
-                  onFocus={e => e.target.style.borderColor = '#FFC300'}
+                  onFocus={e => { e.target.style.borderColor = '#FFC300'; setTimeout(() => e.target.scrollIntoView({ behavior:'smooth', block:'center' }), 300); }}
                   onBlur={e => e.target.style.borderColor = isDark ? 'rgba(255,255,255,0.15)' : 'rgba(0,0,0,0.1)'}
                   inputMode="email"
                 />
@@ -568,8 +569,7 @@ export default function KidsZone() {
                     sndTick();
                     if (card.action === 'starky') {
                       e.preventDefault();
-                      window.dispatchEvent(new Event('starky-open'));
-                      window.location.href = '/';
+                      window.location.href = '/demo';
                     }
                   }}
                   style={{
