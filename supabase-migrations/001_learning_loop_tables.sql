@@ -63,3 +63,17 @@ EXCEPTION WHEN undefined_table THEN
     updated_at timestamptz DEFAULT now()
   );
 END $$;
+
+-- 4. KV backup table — nightly backup of all Redis data into Postgres
+CREATE TABLE IF NOT EXISTS kv_backups (
+  id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  backup_date date NOT NULL,
+  kv_key text NOT NULL,
+  kv_value text,
+  category text DEFAULT 'other',       -- memory, subscriber, session, session_index, system
+  created_at timestamptz DEFAULT now()
+);
+
+CREATE INDEX IF NOT EXISTS idx_kv_backups_date ON kv_backups(backup_date);
+CREATE INDEX IF NOT EXISTS idx_kv_backups_category ON kv_backups(category);
+CREATE INDEX IF NOT EXISTS idx_kv_backups_key ON kv_backups(kv_key);
