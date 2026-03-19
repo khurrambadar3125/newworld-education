@@ -198,6 +198,46 @@ export default function DemoPage() {
   const [loading, setLoading] = useState(false);
   const chatEndRef = useRef(null);
   const inputRef = useRef(null);
+
+  // Read active child from parent portal OR nw_user to pick the right default tab
+  const [childName, setChildName] = useState('');
+  useEffect(() => {
+    try {
+      // Check parent portal active child first
+      const activeChild = JSON.parse(localStorage.getItem('nw_active_child') || 'null');
+      if (activeChild?.grade) {
+        const g = (activeChild.grade || '').toLowerCase();
+        // Map child grade to the right subject tab
+        if (['kg', 'nursery', 'reception', 'grade 1', 'grade 2', 'grade 3', 'grade 4', 'grade 5', 'grade1', 'grade2', 'grade3', 'grade4', 'grade5'].some(k => g.includes(k))) {
+          setActiveId('primary');
+        } else if (['grade 6', 'grade 7', 'grade 8', 'grade 9', 'grade 10', 'grade6', 'grade7', 'grade8', 'grade9', 'grade10', 'matric', 'middle'].some(k => g.includes(k))) {
+          setActiveId('olevel'); // closest match for middle/matric
+        } else if (g.includes('a level') || g.includes('alevel') || g.includes('as level')) {
+          setActiveId('alevel');
+        }
+        if (activeChild.name) setChildName(activeChild.name);
+        // Sync parent email for session limits
+        const parent = JSON.parse(localStorage.getItem('nw_parent') || '{}');
+        if (parent.email) {
+          const user = JSON.parse(localStorage.getItem('nw_user') || '{}');
+          if (!user.email || user.email !== parent.email) {
+            localStorage.setItem('nw_user', JSON.stringify({ ...user, name: activeChild.name, email: parent.email, grade: activeChild.grade, parentEmail: parent.email }));
+          }
+        }
+        return;
+      }
+      // Fallback: check nw_user
+      const user = JSON.parse(localStorage.getItem('nw_user') || '{}');
+      if (user.gradeId) {
+        const g = user.gradeId.toLowerCase();
+        if (['kg', 'grade1', 'grade2', 'grade3', 'grade4', 'grade5'].includes(g)) setActiveId('primary');
+        else if (['grade6', 'grade7', 'grade8', 'grade9', 'grade10'].includes(g)) setActiveId('olevel');
+        else if (g.includes('alevel')) setActiveId('alevel');
+      }
+      if (user.name) setChildName(user.name);
+    } catch {}
+  }, []);
+
   const { callsLeft, limitReached, recordCall } = useSessionLimit();
   const [showLimit, setShowLimit] = useState(false);
 
