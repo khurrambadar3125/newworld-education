@@ -4,19 +4,37 @@ import { useTheme } from './_app';
 import { useSessionLimit } from '../utils/useSessionLimit';
 
 /* ═══════════════════════════════════════
-   DESIGN TOKENS
+   DESIGN TOKENS — theme-aware
 ═══════════════════════════════════════ */
-const T = {
-  teal: '#0B6E6E', tealD: '#084E4E', tealM: '#0D8585', tealL: '#E6F4F4', tealXL: '#F0F9F9',
-  green: '#2E7D4F', greenD: '#1D5C38', greenL: '#E8F5EE',
-  red: '#C0392B', redD: '#96261F', redL: '#FDECEA',
-  amber: '#C06A00', amberD: '#9A5200', amberL: '#FEF3E0',
-  purple: '#5B21B6', purpleL: '#EDE9FE',
-  n0: '#FFFFFF', n50: '#F8F6F1', n100: '#EEE9DF', n200: '#DDD6C8', n300: '#BFB5A5',
-  n400: '#9B8F7E', n500: '#706558', n600: '#4A4138', n700: '#2C251E', n800: '#1A1410',
-  f: "'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif",
-  fs: "Georgia, 'Times New Roman', serif",
-};
+function getTokens(isDark) {
+  // Accent colors stay the same in both themes — they're the interactive identity
+  const accent = {
+    teal: '#4F8EF7', tealD: '#3B7DE8', tealM: '#6BA3F9', tealL: isDark ? 'rgba(79,142,247,0.12)' : 'rgba(79,142,247,0.1)', tealXL: isDark ? 'rgba(79,142,247,0.06)' : 'rgba(79,142,247,0.05)',
+    green: '#2BB55A', greenD: '#1D8C42', greenL: isDark ? 'rgba(43,181,90,0.12)' : '#E8F5EE',
+    red: '#F87171', redD: '#DC2626', redL: isDark ? 'rgba(248,113,113,0.12)' : '#FDECEA',
+    amber: '#F59E0B', amberD: '#D97706', amberL: isDark ? 'rgba(245,158,11,0.12)' : '#FEF3E0',
+    purple: '#7C5CBF', purpleL: isDark ? 'rgba(124,92,191,0.12)' : '#EDE9FE',
+  };
+  // Neutrals adapt to theme
+  if (isDark) {
+    return {
+      ...accent,
+      n0: '#0D1221', n50: '#111827', n100: 'rgba(255,255,255,0.08)', n200: 'rgba(255,255,255,0.12)',
+      n300: 'rgba(255,255,255,0.25)', n400: 'rgba(255,255,255,0.45)', n500: 'rgba(255,255,255,0.6)',
+      n600: 'rgba(255,255,255,0.75)', n700: '#ffffff', n800: '#ffffff',
+      f: "'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif",
+      fs: "'Sora', Georgia, serif",
+    };
+  }
+  return {
+    ...accent,
+    n0: '#FFFFFF', n50: '#F5F7FA', n100: 'rgba(0,0,0,0.06)', n200: 'rgba(0,0,0,0.1)',
+    n300: 'rgba(0,0,0,0.2)', n400: 'rgba(0,0,0,0.4)', n500: 'rgba(0,0,0,0.55)',
+    n600: 'rgba(0,0,0,0.7)', n700: '#1A1A2E', n800: '#0D0D1A',
+    f: "'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif",
+    fs: "'Sora', Georgia, serif",
+  };
+}
 
 /* ═══════════════════════════════════════
    AUDIO ENGINE
@@ -345,17 +363,17 @@ function CompassSVG({ sz = 40 }) {
       <line x1="45" y1="24" x2="40" y2="24" stroke="#BFB5A5" strokeWidth="2" strokeLinecap="round" />
       <line x1="24" y1="45" x2="24" y2="40" stroke="#BFB5A5" strokeWidth="2" strokeLinecap="round" />
       <line x1="3" y1="24" x2="8" y2="24" stroke="#BFB5A5" strokeWidth="2" strokeLinecap="round" />
-      <text x="24" y="13" textAnchor="middle" style={{ fontSize: '7px', fontWeight: 800, fill: '#0B6E6E', fontFamily: 'system-ui' }}>N</text>
-      <polygon points="24,12 27,25 24,23 21,25" fill="#0B6E6E" />
-      <polygon points="24,36 21,23 24,25 27,23" fill="#C06A00" />
-      <circle cx="24" cy="24" r="3" fill="#2C251E" />
+      <text x="24" y="13" textAnchor="middle" style={{ fontSize: '7px', fontWeight: 800, fill: '#4F8EF7', fontFamily: 'system-ui' }}>N</text>
+      <polygon points="24,12 27,25 24,23 21,25" fill="#4F8EF7" />
+      <polygon points="24,36 21,23 24,25 27,23" fill="#F59E0B" />
+      <circle cx="24" cy="24" r="3" fill="#1A1A2E" />
     </svg>
   );
 }
 
 function MomentumRing({ val }) {
   const r = 14, c = 2 * Math.PI * r, off = c * (1 - val / 100);
-  const col = val > 60 ? '#0B6E6E' : val > 30 ? '#C06A00' : '#C0392B';
+  const col = val > 60 ? '#4F8EF7' : val > 30 ? '#F59E0B' : '#F87171';
   return (
     <svg width="34" height="34" viewBox="0 0 34 34">
       <circle cx="17" cy="17" r={r} fill="none" stroke="#EEE9DF" strokeWidth="3.5" />
@@ -366,33 +384,11 @@ function MomentumRing({ val }) {
   );
 }
 
-function StarSVG({ col = '#C06A00' }) {
+function StarSVG({ col = '#F59E0B' }) {
   return <svg width="14" height="14" viewBox="0 0 16 16"><path d="M8 1l1.8 3.6L14 5.5l-3 2.9.7 4.1L8 10.5l-3.7 1.9.7-4.1-3-2.9 4.2-.9z" fill={col} /></svg>;
 }
 
-function ProgressBar({ value, max, height = 10, cls = '' }) {
-  const pct = Math.min(100, Math.round(value / max * 100));
-  const bgColor = cls === 'amber' ? T.amber : cls === 'green' ? T.green : T.teal;
-  return (
-    <div style={{ height, background: T.n100, borderRadius: 100, overflow: 'hidden' }}>
-      <div style={{ height: '100%', borderRadius: 100, background: bgColor, width: pct + '%', transition: 'width .5s cubic-bezier(.4,0,.2,1)' }} />
-    </div>
-  );
-}
-
-function SpeakBtn({ word, lc }) {
-  return (
-    <button onClick={() => speakText(word, lc)} title="Listen" style={{
-      width: 38, height: 38, borderRadius: '50%', flexShrink: 0,
-      background: T.tealL, border: `2px solid ${T.teal}`,
-      color: T.teal, fontSize: 16, cursor: 'pointer',
-      display: 'flex', alignItems: 'center', justifyContent: 'center',
-      transition: 'all .15s',
-    }}>
-      {'\u{1F50A}'}
-    </button>
-  );
-}
+/* ProgressBar, SpeakBtn moved inside component to access theme-aware T */
 
 function Confetti() {
   const cols = ['#0B6E6E', '#C06A00', '#2E7D4F', '#C0392B', '#5B21B6', '#F59E0B'];
@@ -413,17 +409,7 @@ function Confetti() {
   return <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden', zIndex: 100 }}>{pieces}</div>;
 }
 
-function Chip({ type, children }) {
-  const map = {
-    teal: { bg: T.tealL, color: T.tealD },
-    green: { bg: T.greenL, color: T.greenD },
-    amber: { bg: T.amberL, color: T.amberD },
-    red: { bg: T.redL, color: T.redD },
-    purple: { bg: T.purpleL, color: T.purple },
-  };
-  const s = map[type] || map.teal;
-  return <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '4px 12px', borderRadius: 100, fontSize: 11, fontWeight: 800, background: s.bg, color: s.color }}>{children}</span>;
-}
+/* Chip moved inside component to access theme-aware T */
 
 /* ═══════════════════════════════════════
    STORAGE HELPERS
@@ -475,8 +461,44 @@ const KEYFRAMES = `
    MAIN COMPONENT
 ═══════════════════════════════════════ */
 export default function LanguagesPage() {
-  useTheme(); // imported but not using CSS vars — keeping own design system
-  const { recordCall } = useSessionLimit(); // only for Chat tab API calls if needed
+  const { theme } = useTheme();
+  const T = getTokens(theme === 'dark');
+  const { recordCall } = useSessionLimit();
+
+  /* ─── Theme-aware helper components ─── */
+  function ProgressBar({ value, max, height = 10, cls = '' }) {
+    const pct = Math.min(100, Math.round(value / max * 100));
+    const bgColor = cls === 'amber' ? T.amber : cls === 'green' ? T.green : T.teal;
+    return (
+      <div style={{ height, background: T.n100, borderRadius: 100, overflow: 'hidden' }}>
+        <div style={{ height: '100%', borderRadius: 100, background: bgColor, width: pct + '%', transition: 'width .5s cubic-bezier(.4,0,.2,1)' }} />
+      </div>
+    );
+  }
+  function SpeakBtn({ word, lc }) {
+    return (
+      <button onClick={() => speakText(word, lc)} title="Listen" style={{
+        width: 38, height: 38, borderRadius: '50%', flexShrink: 0,
+        background: T.tealL, border: `2px solid ${T.teal}`,
+        color: T.teal, fontSize: 16, cursor: 'pointer',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        transition: 'all .15s',
+      }}>
+        {'\u{1F50A}'}
+      </button>
+    );
+  }
+  function Chip({ type, children }) {
+    const map = {
+      teal: { bg: T.tealL, color: T.tealD },
+      green: { bg: T.greenL, color: T.greenD },
+      amber: { bg: T.amberL, color: T.amberD },
+      red: { bg: T.redL, color: T.redD },
+      purple: { bg: T.purpleL, color: T.purple },
+    };
+    const s = map[type] || map.teal;
+    return <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '4px 12px', borderRadius: 100, fontSize: 11, fontWeight: 800, background: s.bg, color: s.color }}>{children}</span>;
+  }
 
   const [LANG] = useState(() => buildLangData());
 
