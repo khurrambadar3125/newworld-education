@@ -500,8 +500,8 @@ export default function ArtsForAllPage() {
   if (!profile) return (
     <div style={S.page}><style>{CSS}</style>
       <Head>
-        <title>Arts for All — Adaptive AI Art Studio for Special Needs | NewWorldEdu</title>
-        <meta name="description" content="AI-powered art studio adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Celebrates every child's creativity." />
+        <title>Arts for All — Adaptive Art Studio for Special Needs | NewWorldEdu</title>
+        <meta name="description" content="Personalised art studio adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Celebrates every child's creativity." />
       </Head>
       <input ref={fileInputRef} type="file" accept="image/*" style={{display:"none"}} onChange={e=>handleImageUpload(e.target.files[0])}/>
 
@@ -554,7 +554,7 @@ export default function ArtsForAllPage() {
         <div style={{textAlign:"center",fontSize:14,fontWeight:900,color:"rgba(255,255,255,0.35)",letterSpacing:2,marginBottom:20}}>
           CHOOSE YOUR CHILD'S PROFILE
         </div>
-        <p style={{textAlign:"center",fontSize:13,color:"rgba(255,255,255,0.4)",marginBottom:24,marginTop:-12}}>Each profile has a fully adapted AI tutor, lessons, activities, and parent guides.</p>
+        <p style={{textAlign:"center",fontSize:13,color:"rgba(255,255,255,0.4)",marginBottom:24,marginTop:-12}}>Each profile has a fully adapted tutor, lessons, activities, and parent guides.</p>
 
         <div style={{display:"grid",gridTemplateColumns:isMobile?"1fr":"repeat(2,1fr)",gap:12}}>
           {PROFILES.map(p=>{
@@ -598,8 +598,8 @@ export default function ArtsForAllPage() {
   return (
     <div style={S.page}><style>{CSS}</style>
       <Head>
-        <title>Arts for All — Adaptive AI Art Studio for Special Needs | NewWorldEdu</title>
-        <meta name="description" content="AI-powered art studio adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Celebrates every child's creativity." />
+        <title>Arts for All — Adaptive Art Studio for Special Needs | NewWorldEdu</title>
+        <meta name="description" content="Personalised art studio adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Celebrates every child's creativity." />
       </Head>
       <input ref={fileInputRef} type="file" accept="image/*" style={{display:"none"}} onChange={e=>handleImageUpload(e.target.files[0])}/>
 

@@ -1,7 +1,7 @@
 /**
  * pages/essay.jsx
  * Cambridge Essay Marking — newworld.education/essay
- * O Level & A Level | AI examiner marks by band descriptors
+ * O Level & A Level | Examiner marks by band descriptors
  */
 
 import { useState, useEffect } from 'react';
@@ -128,9 +128,9 @@ export default function EssayPage() {
     <>
       <Head>
         <title>Essay Marking ★ — NewWorldEdu</title>
-        <meta name="description" content="Get your essay marked by AI using Cambridge band descriptors. O Level and A Level essay grading with examiner feedback, model answers, and improvement tips." />
+        <meta name="description" content="Get your essay marked using Cambridge band descriptors. O Level and A Level essay grading with examiner feedback, model answers, and improvement tips." />
         <meta property="og:title" content="Essay Marking — Cambridge Band Descriptors" />
-        <meta property="og:description" content="Get your essay marked by AI using Cambridge band descriptors. O Level and A Level essay grading with examiner feedback, model answers, and improvement tips." />
+        <meta property="og:description" content="Get your essay marked using Cambridge band descriptors. O Level and A Level essay grading with examiner feedback, model answers, and improvement tips." />
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" rel="stylesheet" />
       </Head>
       <div style={{ minHeight: '100vh', background: '#080C18', color: '#fff',

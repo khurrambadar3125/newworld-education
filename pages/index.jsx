@@ -493,8 +493,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>NewWorldEdu ★ — AI Tutor | KG to A Levels</title>
-        <meta name="description" content="Meet Starky — your child's personal AI teacher. 24/7, 16 languages, KG to A Levels. Start your 7-day trial." />
+        <title>NewWorldEdu ★ — Personal Tutor | KG to A Levels</title>
+        <meta name="description" content="Meet Starky — your child's personal tutor. 24/7, 16 languages, KG to A Levels. Start your 7-day trial." />
 
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
       </Head>
@@ -870,7 +870,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How it works — for parents who don't know what an AI tutor is */}
+      {/* How it works — for parents who want to understand Starky */}
       <section className="sec" style={{background:'rgba(79,142,247,0.04)',borderTop:'1px solid rgba(79,142,247,0.1)',borderBottom:'1px solid rgba(79,142,247,0.1)'}}>
         <div className="sl">How Starky works</div>
         <div className="st">3 Simple Steps</div>
@@ -926,7 +926,7 @@ export default function Home() {
           {[
             { emoji:'📊', title:'Student Overview', desc:'See all your students in one place — who is active, who needs attention, who is improving.' },
             { emoji:'⚠️', title:'Weak Topic Alerts', desc:'Instantly spot which students are struggling and on which topics. No more guessing.' },
-            { emoji:'❌', title:'Mistake Tracking', desc:'See the exact mistakes each student keeps making — with descriptions from Starky\'s AI analysis.' },
+            { emoji:'❌', title:'Mistake Tracking', desc:'See the exact mistakes each student keeps making — with descriptions from Starky\'s analysis.' },
             { emoji:'📈', title:'Session Activity', desc:'Track total sessions, last active date, current subject, and engagement for every student.' },
           ].map(f => (
             <div key={f.title} style={{textAlign:'center',padding:16}}>
@@ -973,7 +973,7 @@ export default function Home() {
         <div className="qc"><div className="qst">★★★★★</div><p className="qt">"My daughter used to dread Maths. After two weeks with Starky she looks forward to it. The session reports are incredible — I finally know what she's learning."</p><div className="qa"><strong>Fatima A.</strong> — Parent, Karachi</div></div>
         <div className="qc"><div className="qst">★★★★★</div><p className="qt">"Starky knew exactly what the O Level examiner wants. My son went from C to B in Physics in one month. Absolutely worth it."</p><div className="qa"><strong>Omar R.</strong> — Parent, Dubai</div></div>
         <div className="qc"><div className="qst">★★★★★</div><p className="qt">"میری بیٹی اب خود سے Starky سے پڑھتی ہے۔ پہلے ٹیوشن سے بھاگتی تھی۔ اب خود مانگتی ہے۔"</p><div className="qa"><strong>Nadia K.</strong> — والدہ، لاہور</div></div>
-        <div className="qc"><div className="qst">★★★★★</div><p className="qt">"I was skeptical about AI teaching my child. But the session reports showed me exactly what he learned. After one month, his teacher noticed the improvement."</p><div className="qa"><strong>Bilal S.</strong> — Parent, Islamabad</div></div>
+        <div className="qc"><div className="qst">★★★★★</div><p className="qt">"I was skeptical at first. But the session reports showed me exactly what he learned. After one month, his teacher noticed the improvement."</p><div className="qa"><strong>Bilal S.</strong> — Parent, Islamabad</div></div>
       </section>
 
       <section className="sen">

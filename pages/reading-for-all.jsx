@@ -687,8 +687,8 @@ export default function ReadingForAllPage() {
   if (!profile) return (
     <div style={S.page}><style>{CSS}</style>
       <Head>
-        <title>Reading for All — Adaptive AI Reading Tutor for Special Needs | NewWorldEdu</title>
-        <meta name="description" content="AI reading tutor adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Evidence-based literacy instruction and book recommendations." />
+        <title>Reading for All — Adaptive Reading Tutor for Special Needs | NewWorldEdu</title>
+        <meta name="description" content="Adaptive reading tutor for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Evidence-based literacy instruction and book recommendations." />
       </Head>
       <header style={S.hdr}>
         <a href="/" style={{textDecoration:"none",fontWeight:900,fontSize:15,color:"#fff"}}>NewWorldEdu<span style={{color:"#4F8EF7"}}>★</span></a>
@@ -770,8 +770,8 @@ export default function ReadingForAllPage() {
   return (
     <div style={S.page}><style>{CSS}</style>
       <Head>
-        <title>Reading for All — Adaptive AI Reading Tutor for Special Needs | NewWorldEdu</title>
-        <meta name="description" content="AI reading tutor adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Evidence-based literacy instruction and book recommendations." />
+        <title>Reading for All — Adaptive Reading Tutor for Special Needs | NewWorldEdu</title>
+        <meta name="description" content="Adaptive reading tutor for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Evidence-based literacy instruction and book recommendations." />
       </Head>
       <header style={S.hdr}>
         <div style={{display:"flex",alignItems:"center",gap:10,flexWrap:"wrap"}}>

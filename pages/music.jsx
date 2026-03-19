@@ -100,9 +100,9 @@ export default function MusicPage() {
     <>
     <Head>
       <title>Music — NewWorldEdu</title>
-      <meta name="description" content="Music education with AI. Learn music theory, instruments, composition, and music history with personalised guidance." />
+      <meta name="description" content="Music education for everyone. Learn music theory, instruments, composition, and music history with personalised guidance." />
       <meta property="og:title" content="Music — NewWorldEdu" />
-      <meta property="og:description" content="Music education with AI. Learn music theory, instruments, composition, and music history with personalised guidance." />
+      <meta property="og:description" content="Music education for everyone. Learn music theory, instruments, composition, and music history with personalised guidance." />
     </Head>
     <div style={{ minHeight:"100vh", background:"linear-gradient(135deg,#060B20 0%,#0D1635 60%,#060B20 100%)", fontFamily:"'Nunito',sans-serif", color:"#fff" }}>
       <style>{CSS}</style>
@@ -255,7 +255,7 @@ export default function MusicPage() {
             </div>
         <div style={{ marginTop:32, paddingTop:20, borderTop:"1px solid rgba(255,255,255,0.05)", textAlign:"center" }}>
           <p style={{ fontSize:11, color:"rgba(255,255,255,0.2)", lineHeight:1.8, maxWidth:560, margin:"0 auto" }}>
-            NewWorldEdu is an AI educational platform — not a replacement for qualified music teachers.{" "}
+            NewWorldEdu is an educational platform — not a replacement for qualified music teachers.{" "}
             <a href="/disclaimer" style={{ color:"rgba(255,255,255,0.3)", textDecoration:"underline" }}>Disclaimer</a>
             {" · "}© 2026 NewWorldEdu
           </p>

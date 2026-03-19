@@ -38,7 +38,7 @@ export default function Championship() {
     let user = {};
     try { user = JSON.parse(localStorage.getItem('nw_user') || '{}'); } catch {}
     const code = user.email ? btoa(user.email).slice(0, 12) : '';
-    const text = `I am competing to win Meta Ray-Ban glasses on NewWorld Education — Pakistan's smartest AI tutor. Join here: newworld.education/championship — T&Cs apply. Pakistan residents only.`;
+    const text = `I am competing to win Meta Ray-Ban glasses on NewWorld Education — Pakistan's smartest tutor. Join here: newworld.education/championship — T&Cs apply. Pakistan residents only.`;
     window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
   };
 

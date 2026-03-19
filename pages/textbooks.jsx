@@ -508,7 +508,7 @@ export default function TextbooksPage() {
           Starky has read every Cambridge textbook. Ask it to explain any chapter, concept, or paragraph — instantly, any time.
         </p>
         <div style={{ display:"flex", flexWrap:"wrap", gap:8, justifyContent:"center", marginBottom:48 }}>
-          {["📖 Every Cambridge chapter","📤 Upload textbook pages","🤖 AI concept explanations","🃏 Auto-generated flashcards","📅 Chapter study plan","📈 Progress tracking","🆓 Free to start"].map(p=>(
+          {["📖 Every Cambridge chapter","📤 Upload textbook pages","🤖 Smart concept explanations","🃏 Auto-generated flashcards","📅 Chapter study plan","📈 Progress tracking","🆓 Free to start"].map(p=>(
             <span key={p} style={{ background:"rgba(168,224,99,0.1)", border:"1px solid rgba(168,224,99,0.25)", borderRadius:20, padding:"6px 14px", fontSize:12, fontWeight:700, color:"#A8E063" }}>{p}</span>
           ))}
         </div>
@@ -547,7 +547,7 @@ export default function TextbooksPage() {
         <div style={{ marginBottom:28, textAlign:"center" }}>
           <div style={{ display:"inline-block", background:`${levelColor}15`, border:`1px solid ${levelColor}35`, borderRadius:20, padding:"6px 18px", fontSize:13, fontWeight:800, color:levelColor, marginBottom:12 }}>Cambridge {levelLabel}</div>
           <h2 style={{ fontSize:isMobile?22:28, fontWeight:900, margin:"0 0 6px" }}>Choose your subject</h2>
-          <p style={{ fontSize:13, color:"rgba(255,255,255,0.4)", margin:0 }}>Chapter browser · AI explanations · PDF upload · chapter plan · progress tracking</p>
+          <p style={{ fontSize:13, color:"rgba(255,255,255,0.4)", margin:0 }}>Chapter browser · Smart explanations · PDF upload · chapter plan · progress tracking</p>
         </div>
         <div style={{ display:"grid", gridTemplateColumns:isMobile?"1fr 1fr":"repeat(3,1fr)", gap:10 }}>
           {subjects.map(subj=>{

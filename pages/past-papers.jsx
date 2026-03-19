@@ -700,10 +700,10 @@ export default function PastPapersPage() {
           Past Papers <span style={{ color:"#A8E063" }}>Hub</span>
         </h1>
         <p style={{ fontSize:isMobile?14:16, color:"rgba(255,255,255,0.5)", maxWidth:480, margin:"0 auto 36px", lineHeight:1.75 }}>
-          30 years of Cambridge papers, AI-worked solutions, PDF upload, and a personalised day-by-day study plan. No printing needed.
+          30 years of Cambridge papers, worked solutions, PDF upload, and a personalised day-by-day study plan. No printing needed.
         </p>
         <div style={{ display:"flex", flexWrap:"wrap", gap:8, justifyContent:"center", marginBottom:48 }}>
-          {["📄 30+ years of papers","📤 Upload PDF papers","🤖 AI mark scheme coach","📊 Topic frequency analysis","📅 Day-by-day study plan","📈 Progress tracking","🆓 Free to start"].map(p=>(
+          {["📄 30+ years of papers","📤 Upload PDF papers","🤖 Smart mark scheme coach","📊 Topic frequency analysis","📅 Day-by-day study plan","📈 Progress tracking","🆓 Free to start"].map(p=>(
             <span key={p} style={{ background:"rgba(168,224,99,0.1)", border:"1px solid rgba(168,224,99,0.25)", borderRadius:20, padding:"6px 14px", fontSize:12, fontWeight:700, color:"#A8E063" }}>{p}</span>
           ))}
         </div>
@@ -746,7 +746,7 @@ export default function PastPapersPage() {
         <div style={{ marginBottom:28, textAlign:"center" }}>
           <div style={{ display:"inline-block", background:`${levelColor}15`, border:`1px solid ${levelColor}35`, borderRadius:20, padding:"6px 18px", fontSize:13, fontWeight:800, color:levelColor, marginBottom:12 }}>Cambridge {levelLabel}</div>
           <h2 style={{ fontSize:isMobile?22:28, fontWeight:900, margin:"0 0 6px" }}>Choose your subject</h2>
-          <p style={{ fontSize:13, color:"rgba(255,255,255,0.4)", margin:0 }}>AI tutor · PDF upload · study plan · progress tracking</p>
+          <p style={{ fontSize:13, color:"rgba(255,255,255,0.4)", margin:0 }}>Personal tutor · PDF upload · study plan · progress tracking</p>
         </div>
         <div style={{ display:"grid", gridTemplateColumns:isMobile?"1fr 1fr":"repeat(3,1fr)", gap:10 }}>
           {subjects.map(subj=>{

@@ -231,7 +231,7 @@ export default function KidsZone() {
       <>
         <Head>
           <title>Kids Zone — NewWorldEdu ★</title>
-          <meta name="description" content="Fun learning for kids aged 5-10. Spelling Bee, Languages, Homework Help, and more with Starky your AI friend!" />
+          <meta name="description" content="Fun learning for kids aged 5-10. Spelling Bee, Languages, Homework Help, and more with Starky your learning star!" />
         </Head>
         <style jsx global>{`
           @keyframes starBounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-18px)} }
@@ -293,7 +293,7 @@ export default function KidsZone() {
       <>
         <Head>
           <title>Kids Zone — NewWorldEdu ★</title>
-          <meta name="description" content="Fun learning for kids aged 5-10. Spelling Bee, Languages, Homework Help, and more with Starky your AI friend!" />
+          <meta name="description" content="Fun learning for kids aged 5-10. Spelling Bee, Languages, Homework Help, and more with Starky your learning star!" />
         </Head>
         <style jsx global>{`
           @keyframes popIn { 0%{transform:scale(0);opacity:0} 60%{transform:scale(1.15)} 100%{transform:scale(1);opacity:1} }
@@ -522,7 +522,7 @@ export default function KidsZone() {
       <>
         <Head>
           <title>Kids Zone — NewWorldEdu ★</title>
-          <meta name="description" content="Fun learning for kids aged 5-10. Spelling Bee, Languages, Homework Help, and more with Starky your AI friend!" />
+          <meta name="description" content="Fun learning for kids aged 5-10. Spelling Bee, Languages, Homework Help, and more with Starky your learning star!" />
         </Head>
         <style jsx global>{`
           @keyframes slideUp { 0%{transform:translateY(30px);opacity:0} 100%{transform:translateY(0);opacity:1} }

@@ -86,7 +86,7 @@ export default function AIChat() {
       <button
         onClick={() => setIsOpen(true)}
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-gradient-to-br from-brand-600 to-brand-800 text-white rounded-full shadow-lg shadow-brand-500/30 hover:shadow-brand-500/50 hover:scale-105 transition-all flex items-center justify-center group"
-        aria-label="Open AI Assistant"
+        aria-label="Open Assistant"
       >
         <MessageCircle className="w-6 h-6" />
         <span className="absolute -top-1 -right-1 w-4 h-4 bg-gold-400 rounded-full flex items-center justify-center">

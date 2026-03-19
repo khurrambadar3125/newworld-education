@@ -291,8 +291,8 @@ export default function MusicForAllPage() {
   if (!profile) return (
     <div style={S.page}><style>{CSS}</style>
       <Head>
-        <title>Music for All — Adaptive AI Music Studio for Special Needs | NewWorldEdu</title>
-        <meta name="description" content="AI-powered music studio adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Research-backed music therapy activities." />
+        <title>Music for All — Adaptive Music Studio for Special Needs | NewWorldEdu</title>
+        <meta name="description" content="Personalised music studio adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Research-backed music therapy activities." />
       </Head>
       <header style={S.hdr}>
         <a href="/" style={{textDecoration:"none",fontWeight:900,fontSize:15,color:"#fff"}}>NewWorldEdu<span style={{color:"#4F8EF7"}}>★</span></a>
@@ -325,7 +325,7 @@ export default function MusicForAllPage() {
           </div>
         </div>
         <div style={{fontSize:14,fontWeight:900,color:"rgba(255,255,255,0.35)",letterSpacing:2,textAlign:"center",marginBottom:10}}>CHOOSE YOUR CHILD'S PROFILE</div>
-        <p style={{textAlign:"center",fontSize:13,color:"rgba(255,255,255,0.4)",marginBottom:22}}>Each profile has a fully adapted AI music teacher, activities, instruments, and parent guides.</p>
+        <p style={{textAlign:"center",fontSize:13,color:"rgba(255,255,255,0.4)",marginBottom:22}}>Each profile has a fully adapted music teacher, activities, instruments, and parent guides.</p>
         <div style={{display:"grid",gridTemplateColumns:isMobile?"1fr":"repeat(2,1fr)",gap:12,marginBottom:40}}>
           {PROFILES.map(p=>{
             const prog=progress[p.id];
@@ -363,8 +363,8 @@ export default function MusicForAllPage() {
   return (
     <div style={S.page}><style>{CSS}</style>
       <Head>
-        <title>Music for All — Adaptive AI Music Studio for Special Needs | NewWorldEdu</title>
-        <meta name="description" content="AI-powered music studio adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Research-backed music therapy activities." />
+        <title>Music for All — Adaptive Music Studio for Special Needs | NewWorldEdu</title>
+        <meta name="description" content="Personalised music studio adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Research-backed music therapy activities." />
       </Head>
       <header style={S.hdr}>
         <div style={{display:"flex",alignItems:"center",gap:10}}>

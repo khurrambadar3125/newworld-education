@@ -78,7 +78,7 @@ const SHARE_RENDERERS = {
       <div style={{fontSize:56,marginBottom:12}}>★</div>
       <h1 style={{fontSize:24,fontWeight:900,margin:'0 0 8px'}}>You're Invited!</h1>
       <div style={{fontSize:16,color:'rgba(255,255,255,0.6)',marginBottom:8}}>{data.name || 'A friend'} wants you to try NewWorld Education</div>
-      <div style={{fontSize:14,color:'rgba(255,255,255,0.35)',marginBottom:24,lineHeight:1.7}}>Free AI tutor for Cambridge O Level & A Level. Every subject, 24/7, with past paper expertise.</div>
+      <div style={{fontSize:14,color:'rgba(255,255,255,0.35)',marginBottom:24,lineHeight:1.7}}>Free personal tutor for Cambridge O Level & A Level. Every subject, 24/7, with past paper expertise.</div>
       <Link href="/"><a style={S.cta}>Start Learning Free →</a></Link>
     </div>
   ),
@@ -99,7 +99,7 @@ const S = {
 };
 
 function getOGData(share) {
-  if (!share) return { title: 'NewWorld Education', desc: 'AI tutor for Cambridge O Level & A Level' };
+  if (!share) return { title: 'NewWorld Education', desc: 'Personal tutor for Cambridge O Level & A Level' };
   const d = share.data;
   switch (share.type) {
     case 'drill': return { title: `${d.pct}% on ${d.subject} Drill`, desc: `${d.correct}/${d.total} correct. Can you beat this?` };
@@ -108,9 +108,9 @@ function getOGData(share) {
     case 'assignment': return { title: `Study: ${d.topic}`, desc: `Assignment from ${d.setBy || 'a parent'}` };
     case 'streak': return { title: `${d.streak} Day Study Streak!`, desc: `${d.questions} questions answered on NewWorldEdu` };
     case 'badge': return { title: `${d.emoji} ${d.label}`, desc: d.desc };
-    case 'invite': return { title: `${d.name || 'A friend'} invited you`, desc: 'Free AI tutor for Cambridge exams' };
+    case 'invite': return { title: `${d.name || 'A friend'} invited you`, desc: 'Free personal tutor for Cambridge exams' };
     case 'leaderboard': return { title: `#${d.rank} on the Leaderboard`, desc: `${d.name} scored ${d.score} this week` };
-    default: return { title: 'NewWorld Education', desc: 'AI tutor for Cambridge O Level & A Level' };
+    default: return { title: 'NewWorld Education', desc: 'Personal tutor for Cambridge O Level & A Level' };
   }
 }
 
@@ -163,7 +163,7 @@ export default function SharePage() {
             {Renderer && <Renderer data={share.data} />}
           </div>
           <div style={{textAlign:'center',marginTop:16}}>
-            <Link href="/"><a style={{color:'rgba(255,255,255,0.3)',fontSize:13,textDecoration:'none'}}>★ NewWorld Education — AI tutor for Cambridge O Level & A Level</a></Link>
+            <Link href="/"><a style={{color:'rgba(255,255,255,0.3)',fontSize:13,textDecoration:'none'}}>★ NewWorld Education — Personal tutor for Cambridge O Level & A Level</a></Link>
           </div>
         </div>
       </div>

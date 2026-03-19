@@ -1287,7 +1287,7 @@ export default function LanguagesPage() {
     const features = [
       ['\u{1F9E0}', 'SM-2 spaced repetition', 'Reviews phrases at the exact moment before you forget — scientifically proven'],
       ['\u{1F3AD}', '7 interactive exercise types', 'Tap, build, listen, match, fill-blank, pronunciation — all wired to audio'],
-      ['\u{1F4AC}', 'Conversation simulator', 'Practice real dialogues with AI characters before your trip'],
+      ['\u{1F4AC}', 'Conversation simulator', 'Practice real dialogues with characters before your trip'],
       ['\u{1F30D}', 'Cultural intelligence', 'Customs, etiquette and faux pas woven into every lesson'],
       ['\u{1F4CA}', 'Learning analytics', 'Track your forgetting curve, accuracy and weekly progress'],
       ['\u{1F5FA}️', 'Destination-first', 'Tell us where you\'re going — content adapts to your goal'],
@@ -2043,7 +2043,7 @@ RULES:
           <button onClick={() => setFreeChat(false)} style={{ width: 30, height: 30, borderRadius: '50%', background: T.n50, border: `1.5px solid ${T.n200}`, fontSize: 13, color: T.n400, cursor: 'pointer', fontFamily: T.f }}>✕</button>
           <div style={{ flex: 1 }}>
             <div style={{ fontSize: 14, fontWeight: 700, color: T.n700 }}>Chat with Starky in {ld?.name}</div>
-            <div style={{ fontSize: 11, color: T.n400 }}>Level {level} · AI conversation partner</div>
+            <div style={{ fontSize: 11, color: T.n400 }}>Level {level} · conversation partner</div>
           </div>
           <Chip type="teal">LIVE</Chip>
         </div>
@@ -2111,7 +2111,7 @@ RULES:
           <h2 style={{ fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: T.n700 }}>Chat Simulator</h2>
           <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400, marginTop: 3 }}>Talk with locals in {dest.name} before your trip.</p>
         </div>
-        {/* FREE CHAT WITH STARKY — AI conversation partner */}
+        {/* FREE CHAT WITH STARKY — conversation partner */}
         <div style={{ padding: '12px 14px 0' }}>
           <div onClick={startFreeChat} style={{
             padding: 16, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 14,
@@ -2123,9 +2123,9 @@ RULES:
             <div style={{ width: 54, height: 54, borderRadius: '50%', background: T.teal, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24, flexShrink: 0, color: '#fff', fontWeight: 900 }}>★</div>
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.teal }}>Chat with Starky in {ld?.name}</div>
-              <p style={{ fontSize: 12, color: T.n400, marginTop: 2, lineHeight: 1.5 }}>Free conversation with AI — Starky speaks {ld?.name}, corrects your grammar, and adapts to your level.</p>
+              <p style={{ fontSize: 12, color: T.n400, marginTop: 2, lineHeight: 1.5 }}>Free conversation practice — Starky speaks {ld?.name}, corrects your grammar, and adapts to your level.</p>
               <div style={{ display: 'flex', gap: 4, marginTop: 6 }}>
-                {['AI-powered', 'Grammar help', 'Any topic'].map(tag => (
+                {['Smart', 'Grammar help', 'Any topic'].map(tag => (
                   <span key={tag} style={{ fontSize: 9, fontWeight: 800, background: `${T.teal}15`, border: `1px solid ${T.teal}30`, borderRadius: 20, padding: '2px 8px', color: T.teal }}>{tag}</span>
                 ))}
               </div>

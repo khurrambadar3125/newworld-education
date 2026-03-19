@@ -333,9 +333,9 @@ export default function DemoPage() {
     <>
     <Head>
       <title>Chat with Starky — NewWorldEdu</title>
-      <meta name="description" content="Chat with Starky, your personal AI tutor. Cambridge O Level and A Level exam preparation, homework help, and concept explanations in 16 languages." />
-      <meta property="og:title" content="Chat with Starky — AI Tutor" />
-      <meta property="og:description" content="Chat with Starky, your personal AI tutor. Cambridge O Level and A Level exam preparation, homework help, and concept explanations in 16 languages." />
+      <meta name="description" content="Chat with Starky, your personal tutor. Cambridge O Level and A Level exam preparation, homework help, and concept explanations in 16 languages." />
+      <meta property="og:title" content="Chat with Starky — Personal Tutor" />
+      <meta property="og:description" content="Chat with Starky, your personal tutor. Cambridge O Level and A Level exam preparation, homework help, and concept explanations in 16 languages." />
     </Head>
     <div style={{
       fontFamily: "'Nunito','Segoe UI',sans-serif",
@@ -428,7 +428,7 @@ export default function DemoPage() {
                   Hi! I'm Starky {subject.emoji}
                 </div>
                 <div style={{ color: "rgba(255,255,255,0.5)", fontSize: 14, lineHeight: 1.6 }}>
-                  Your AI tutor for <span style={{ color: subject.color, fontWeight: 700 }}>{subject.label}</span>.
+                  Your tutor for <span style={{ color: subject.color, fontWeight: 700 }}>{subject.label}</span>.
                   Ask me anything or tap a question below.
                 </div>
               </div>
@@ -553,7 +553,7 @@ export default function DemoPage() {
             </button>
           </div>
           <div style={{ textAlign: "center", fontSize: 10, color: "rgba(255,255,255,0.18)", marginTop: 5 }}>
-            Powered by Claude AI · NewWorldEdu{childName ? ` · ${childName}` : ''}{limitReached ? '' : ` · ${callsLeft} sessions remaining`}
+            Powered by NewWorldEdu{childName ? ` · ${childName}` : ''}{limitReached ? '' : ` · ${callsLeft} sessions remaining`}
           </div>
         </div>
       </div>

@@ -103,9 +103,9 @@ export default function ReadingPage() {
     <>
     <Head>
       <title>Reading — NewWorldEdu</title>
-      <meta name="description" content="Guided reading for Cambridge students. Comprehension practice, vocabulary building, and literary analysis with AI support." />
+      <meta name="description" content="Guided reading for Cambridge students. Comprehension practice, vocabulary building, and literary analysis with personalised support." />
       <meta property="og:title" content="Reading — NewWorldEdu" />
-      <meta property="og:description" content="Guided reading for Cambridge students. Comprehension practice, vocabulary building, and literary analysis with AI support." />
+      <meta property="og:description" content="Guided reading for Cambridge students. Comprehension practice, vocabulary building, and literary analysis with personalised support." />
     </Head>
     <div style={{ minHeight:"100vh", background:"linear-gradient(135deg,#060B20 0%,#0D1635 60%,#060B20 100%)", fontFamily:"'Nunito',sans-serif", color:"#fff" }}>
       <style>{CSS}</style>
@@ -255,7 +255,7 @@ export default function ReadingPage() {
             </div>
         <div style={{ marginTop:32, paddingTop:20, borderTop:"1px solid rgba(255,255,255,0.05)", textAlign:"center" }}>
           <p style={{ fontSize:11, color:"rgba(255,255,255,0.2)", lineHeight:1.8, maxWidth:560, margin:"0 auto" }}>
-            NewWorldEdu is an AI educational platform — not a replacement for qualified teachers.{" "}
+            NewWorldEdu is an educational platform — not a replacement for qualified teachers.{" "}
             <a href="/disclaimer" style={{ color:"rgba(255,255,255,0.3)", textDecoration:"underline" }}>Disclaimer</a>
             {" · "}© 2026 NewWorldEdu
           </p>

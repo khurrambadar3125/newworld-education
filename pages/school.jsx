@@ -15,7 +15,7 @@ function useIsPakistan() {
 }
 
 const FEATURES = [
-  { emoji: '🤖', title: 'AI Tutor for Every Student', desc: 'Starky adapts to each student\'s grade, subject, and learning style — KG through A Levels.' },
+  { emoji: '🤖', title: 'Personal Tutor for Every Student', desc: 'Starky adapts to each student\'s grade, subject, and learning style — KG through A Levels.' },
   { emoji: '📊', title: 'Teacher Dashboard', desc: 'Track every student\'s weak topics, common mistakes, and session activity in real time.' },
   { emoji: '💜', title: 'Special Needs Support', desc: '140 adaptive teaching profiles for autism, ADHD, dyslexia, Down syndrome, and more.' },
   { emoji: '📧', title: 'Parent Reports', desc: 'Automatic session reports emailed to parents after every learning session.' },
@@ -62,7 +62,7 @@ export default function SchoolPage() {
     <div style={S.page}>
       <Head>
         <title>Schools & Institutions — NewWorldEdu</title>
-        <meta name="description" content="Partner with NewWorldEdu to bring Starky AI tutoring to your school. KG to A Levels, all subjects, teacher dashboard, parent reports." />
+        <meta name="description" content="Partner with NewWorldEdu to bring Starky tutoring to your school. KG to A Levels, all subjects, teacher dashboard, parent reports." />
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
       </Head>
 
@@ -74,7 +74,7 @@ export default function SchoolPage() {
             Bring Starky to Your <span style={{ color: '#4F8EF7' }}>School</span>
           </h1>
           <p style={{ fontSize: 17, color: 'rgba(255,255,255,0.55)', maxWidth: 560, margin: '0 auto', lineHeight: 1.75 }}>
-            Every student gets a personal AI tutor. Every teacher gets a real-time dashboard. Every parent gets session reports. From KG to A Levels, in 16 languages.
+            Every student gets a personal tutor. Every teacher gets a real-time dashboard. Every parent gets session reports. From KG to A Levels, in 16 languages.
           </p>
         </div>
 

@@ -28,7 +28,7 @@ export default function ChampionshipParents() {
         <div style={S.card}>
           <h2 style={S.h2}>What Is the NewWorld Championship?</h2>
           <div style={S.body}>
-            <p style={{ margin: '0 0 12px' }}>The NewWorld Championship is a <strong style={{ color: '#fff' }}>free referral competition</strong> for students using NewWorld Education, an AI-powered tutoring platform for Pakistani students.</p>
+            <p style={{ margin: '0 0 12px' }}>The NewWorld Championship is a <strong style={{ color: '#fff' }}>free referral competition</strong> for students using NewWorld Education, a personalised tutoring platform for Pakistani students.</p>
             <p style={{ margin: '0 0 12px' }}>Students earn points by referring classmates and friends to use NewWorldEdu. At the end of each season (30 days), the students with the most referrals win prizes like smart glasses, AirPods, and mobile credit.</p>
             <p style={{ margin: 0 }}>Key facts:</p>
             <ul style={S.ul}>
@@ -73,7 +73,7 @@ export default function ChampionshipParents() {
           <h2 style={S.h2}>Who Runs This</h2>
           <div style={S.body}>
             <p style={{ margin: '0 0 12px' }}>NewWorld Education is founded by <strong style={{ color: '#fff' }}>Khurram Badar</strong>, based in <strong style={{ color: '#fff' }}>Karachi, Pakistan</strong>.</p>
-            <p style={{ margin: '0 0 12px' }}>NewWorldEdu provides AI-powered tutoring for Pakistani students from KG through A Levels, covering Cambridge O/A Level, Matric, and FSc curricula. The Championship is a marketing initiative to help more students discover the platform.</p>
+            <p style={{ margin: '0 0 12px' }}>NewWorldEdu provides personalised tutoring for Pakistani students from KG through A Levels, covering Cambridge O/A Level, Matric, and FSc curricula. The Championship is a marketing initiative to help more students discover the platform.</p>
             <p style={{ margin: 0 }}>This is a real company with a real product. You can verify this by visiting <a href="https://www.newworld.education" style={S.link}>newworld.education</a> and trying the tutoring yourself.</p>
           </div>
         </div>

@@ -50,7 +50,7 @@ export default function ReferralPage() {
   };
 
   const shareWhatsApp = () => {
-    const text = `My child uses Starky on NewWorld Education — Pakistan's smartest AI tutor. Try it free: ${link} 🌟`;
+    const text = `My child uses Starky on NewWorld Education — Pakistan's smartest tutor. Try it free: ${link} 🌟`;
     window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
   };
 

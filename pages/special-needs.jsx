@@ -128,21 +128,55 @@ const SEN_EXERCISES = {
       { pairs: [["Happy 😊", "Feeling good"], ["Sad 😢", "Feeling upset"], ["Angry 😠", "Feeling cross"], ["Scared 😨", "Feeling afraid"]] },
       { pairs: [["Red 🔴", "Apple colour"], ["Blue 🔵", "Sky colour"], ["Green 🟢", "Grass colour"], ["Yellow 🟡", "Sun colour"]] },
       { pairs: [["Cat 🐱", "Says meow"], ["Dog 🐶", "Says woof"], ["Cow 🐄", "Says moo"], ["Duck 🦆", "Says quack"]] },
+      // Early Literacy
+      { pairs: [["P ✏️", "Pen starts with P"], ["M 🥛", "Milk starts with M"], ["S ☀️", "Sun starts with S"], ["T 🌳", "Tree starts with T"]] },
+      // Early Numeracy
+      { pairs: [["1 🍎", "One apple"], ["2 🍌", "Two bananas"], ["3 🍊", "Three oranges"], ["4 🍇", "Four grapes"]] },
+      // Nazra Quran
+      { pairs: [["Alif ا", "First letter"], ["Ba ب", "Second letter"], ["Ta ت", "Third letter"], ["Tha ث", "Fourth letter"]] },
+      // Communication
+      { pairs: [["Please", "When you want something"], ["Thank you", "When someone helps you"], ["Sorry", "When you make a mistake"], ["Hello", "When you meet someone"]] },
     ],
     fill: [
       { sentence: "The cat says ___.", options: ["meow", "woof", "moo", "quack"], answer: "meow" },
       { sentence: "The sky is ___.", options: ["blue", "green", "red", "purple"], answer: "blue" },
       { sentence: "We eat with our ___.", options: ["mouth", "ears", "feet", "eyes"], answer: "mouth" },
+      // Early Literacy
+      { sentence: "The word 'mango' starts with ___.", options: ["M", "N", "B", "D"], answer: "M" },
+      { sentence: "A book has a front ___ and a back.", options: ["cover", "wheel", "leg", "hat"], answer: "cover" },
+      // Early Numeracy
+      { sentence: "2 + 1 = ___.", options: ["2", "3", "4", "5"], answer: "3" },
+      { sentence: "A square has ___ sides.", options: ["2", "3", "4", "5"], answer: "4" },
+      // Nazra Quran
+      { sentence: "The first letter of the Arabic alphabet is ___.", options: ["Ba", "Alif", "Ta", "Jim"], answer: "Alif" },
+      // Communication
+      { sentence: "When someone gives you a gift, you say ___.", options: ["sorry", "thank you", "goodbye", "help"], answer: "thank you" },
     ],
     truefalse: [
       { statement: "Fish can fly in the sky.", answer: false },
       { statement: "We sleep at night.", answer: true },
       { statement: "Ice cream is hot.", answer: false },
+      // Early Literacy
+      { statement: "The letter A comes before B.", answer: true },
+      { statement: "The word 'ball' starts with D.", answer: false },
+      // Early Numeracy
+      { statement: "5 is more than 3.", answer: true },
+      { statement: "A circle has corners.", answer: false },
+      // Nazra Quran
+      { statement: "The Arabic alphabet has 28 letters.", answer: true },
+      // Communication
+      { statement: "We say 'Assalam-o-Alaikum' to greet people.", answer: true },
     ],
     picture: [
       { scene: "Imagine you are at the park. You see a big red slide and a swing. What would you play on first?", prompt: "Tell me what you would do at the park!" },
       { scene: "You walk into a room and see a birthday cake with candles. What happens next?", prompt: "What do you do when you see the cake?" },
       { scene: "A friendly puppy comes up to you wagging its tail. How does the puppy feel?", prompt: "How is the puppy feeling?" },
+      // Early Literacy
+      { scene: "You have a book about animals. You open the first page and see a picture of a lion. What sound does the letter L make?", prompt: "Say the sound of L!" },
+      // Early Numeracy
+      { scene: "You have 2 red balls and 1 blue ball. How many balls do you have in total?", prompt: "Count all the balls!" },
+      // Communication
+      { scene: "Your friend shares their lunch with you. What words should you say to your friend?", prompt: "What do you say?" },
     ],
   },
   autism_primary: {
@@ -150,21 +184,60 @@ const SEN_EXERCISES = {
       { pairs: [["Synonym", "Same meaning"], ["Antonym", "Opposite meaning"], ["Noun", "Person, place, thing"], ["Verb", "Action word"]] },
       { pairs: [["Addition +", "Putting together"], ["Subtraction -", "Taking away"], ["Multiply x", "Groups of"], ["Divide /", "Sharing equally"]] },
       { pairs: [["Solid", "Keeps its shape"], ["Liquid", "Takes shape of container"], ["Gas", "Fills all space"], ["Melting", "Solid becomes liquid"]] },
+      // Maths
+      { pairs: [["Perimeter", "Distance around a shape"], ["Area", "Space inside a shape"], ["Fraction", "Part of a whole"], ["Decimal", "Number with a dot"]] },
+      { pairs: [["x4", "4 times table"], ["x6", "6 times table"], ["x8", "8 times table"], ["x9", "9 times table"]] },
+      // English
+      { pairs: [["Pronoun", "Replaces a noun (he, she, it)"], ["Conjunction", "Joins words (and, but, or)"], ["Preposition", "Shows position (in, on, at)"], ["Article", "A, an, the"]] },
+      // Urdu
+      { pairs: [["اسم", "Noun — naming word"], ["فعل", "Verb — action word"], ["صفت", "Adjective — describing word"], ["حرف", "Preposition — joining word"]] },
     ],
     fill: [
       { sentence: "5 + 3 = ___.", options: ["7", "8", "9", "6"], answer: "8" },
       { sentence: "A group of fish is called a ___.", options: ["school", "pack", "flock", "herd"], answer: "school" },
       { sentence: "Water freezes at ___ degrees Celsius.", options: ["0", "10", "50", "100"], answer: "0" },
+      // Maths
+      { sentence: "6 x 7 = ___.", options: ["36", "42", "48", "54"], answer: "42" },
+      { sentence: "Half of 50 is ___.", options: ["20", "25", "30", "35"], answer: "25" },
+      // English
+      { sentence: "The children ___ playing in the park.", options: ["is", "are", "was", "am"], answer: "are" },
+      { sentence: "A sentence always ends with a ___.", options: ["full stop", "comma", "colon", "dash"], answer: "full stop" },
+      // Science
+      { sentence: "The three states of matter are solid, liquid, and ___.", options: ["gas", "metal", "wood", "light"], answer: "gas" },
+      // Urdu
+      { sentence: "Pakistan ka qoumi phool ___ hai.", options: ["gulab", "chameli", "sunflower", "lily"], answer: "chameli" },
+      // Islamiat
+      { sentence: "Muslims pray ___ times a day.", options: ["3", "4", "5", "6"], answer: "5" },
+      // Pakistan Studies
+      { sentence: "The capital of Pakistan is ___.", options: ["Karachi", "Lahore", "Islamabad", "Peshawar"], answer: "Islamabad" },
     ],
     truefalse: [
       { statement: "The Earth goes around the Sun.", answer: true },
       { statement: "Spiders have 6 legs.", answer: false },
       { statement: "There are 7 days in a week.", answer: true },
+      // Maths
+      { statement: "A square has equal sides.", answer: true },
+      { statement: "9 x 9 = 82.", answer: false },
+      // English
+      { statement: "'An' is used before words starting with a vowel sound.", answer: true },
+      { statement: "A proper noun does not need a capital letter.", answer: false },
+      // Science
+      { statement: "Plants need sunlight, water, and soil to grow.", answer: true },
+      // Islamiat
+      { statement: "The first month of the Islamic calendar is Muharram.", answer: true },
+      // Pakistan Studies
+      { statement: "Pakistan has four provinces.", answer: true },
     ],
     picture: [
       { scene: "You are a scientist looking at a plant. It has droopy leaves and dry soil. What does it need?", prompt: "What would you give the plant?" },
       { scene: "You are in a shop and want to buy something that costs 50p. You have a pound coin. How much change?", prompt: "Work out the change!" },
       { scene: "Your friend looks sad at break time and is sitting alone. What could you do?", prompt: "How would you help your friend?" },
+      // Maths
+      { scene: "A cricket pitch is 22 yards long. If a player runs from one end to the other and back, how many yards did they run?", prompt: "Calculate the total distance!" },
+      // English
+      { scene: "Write a sentence using a noun, a verb, and an adjective about your school.", prompt: "Build a sentence with 3 parts!" },
+      // Science
+      { scene: "You plant a seed in soil, water it, and put it by the window. After 2 weeks, a small green shoot appears. What did the plant need to grow?", prompt: "What helped the plant grow?" },
     ],
   },
   // ── ADHD ──
@@ -173,21 +246,55 @@ const SEN_EXERCISES = {
       { pairs: [["1 🥇", "One"], ["2 🥈", "Two"], ["3 🥉", "Three"], ["4 🏅", "Four"]] },
       { pairs: [["Circle ⭕", "Round shape"], ["Square ⬜", "Four equal sides"], ["Triangle 🔺", "Three sides"], ["Star ⭐", "Five points"]] },
       { pairs: [["Morning 🌅", "Wake up time"], ["Afternoon ☀️", "Lunch time"], ["Evening 🌇", "Dinner time"], ["Night 🌙", "Sleep time"]] },
+      // Early Literacy
+      { pairs: [["E 🥚", "Egg starts with E"], ["F 🐸", "Frog starts with F"], ["G 🍇", "Grapes start with G"], ["H 🏠", "House starts with H"]] },
+      // Early Numeracy
+      { pairs: [["5 🖐️", "Five fingers"], ["6 🎲", "Six on a dice"], ["7 🌈", "Rainbow colours"], ["8 🐙", "Octopus legs"]] },
+      // Nazra Quran
+      { pairs: [["Alif ا", "Stands tall like a stick"], ["Ba ب", "Has one dot below"], ["Jim ج", "Has one dot below too"], ["Dal د", "Looks like a slide"]] },
+      // Communication
+      { pairs: [["Smile 😊", "You are happy"], ["Frown 😞", "You are upset"], ["Thumbs up 👍", "Good job!"], ["Wave 👋", "Hello or bye!"]] },
     ],
     fill: [
       { sentence: "After 2 comes ___.", options: ["1", "3", "4", "5"], answer: "3" },
       { sentence: "A triangle has ___ sides.", options: ["2", "3", "4", "5"], answer: "3" },
       { sentence: "We brush our teeth in the ___.", options: ["morning", "school", "park", "car"], answer: "morning" },
+      // Early Literacy
+      { sentence: "How many letters are in the word 'cat'? ___!", options: ["2", "3", "4", "5"], answer: "3" },
+      { sentence: "The opposite of big is ___.", options: ["tall", "small", "fast", "red"], answer: "small" },
+      // Early Numeracy
+      { sentence: "An octopus has ___ legs — count them!", options: ["6", "7", "8", "9"], answer: "8" },
+      { sentence: "You have 5 sweets and eat 2. You have ___ left!", options: ["2", "3", "4", "5"], answer: "3" },
+      // Nazra Quran
+      { sentence: "The letter Ba (ب) has ___ dot(s) below it.", options: ["0", "1", "2", "3"], answer: "1" },
+      // Communication
+      { sentence: "Before you speak, you should ___ for your turn.", options: ["wait", "shout", "run", "sleep"], answer: "wait" },
     ],
     truefalse: [
       { statement: "A banana is yellow.", answer: true },
       { statement: "Dogs can talk like people.", answer: false },
       { statement: "The moon comes out at night.", answer: true },
+      // Early Literacy
+      { statement: "Z is the last letter.", answer: true },
+      { statement: "The word 'fish' has 5 letters.", answer: false },
+      // Early Numeracy
+      { statement: "10 is bigger than 7.", answer: true },
+      { statement: "A triangle has 4 sides.", answer: false },
+      // Nazra Quran
+      { statement: "Arabic is read from right to left.", answer: true },
+      // Communication
+      { statement: "Listening is part of talking to someone.", answer: true },
     ],
     picture: [
       { scene: "You have 3 toy cars: red, blue, green. Your friend wants to play. How many cars can you share?", prompt: "How would you share?" },
       { scene: "Imagine you are a superhero! What is your superpower?", prompt: "Tell me about your superpower!" },
       { scene: "You find a big puddle after the rain. What would you do?", prompt: "What happens with the puddle?" },
+      // Early Literacy
+      { scene: "Quick! Name 3 things that start with the letter B. Ready? Go!", prompt: "Name 3 B words — fast!" },
+      // Early Numeracy
+      { scene: "You have 4 stickers and your friend gives you 3 more. Quick — how many now?", prompt: "Add them up super fast!" },
+      // Communication
+      { scene: "Your teacher is talking but you want to say something NOW. What is the best thing to do?", prompt: "What should you do?" },
     ],
   },
   adhd_primary: {
@@ -195,21 +302,60 @@ const SEN_EXERCISES = {
       { pairs: [["Simile", "Like or as"], ["Metaphor", "Is something else"], ["Alliteration", "Same starting sound"], ["Rhyme", "Sounds the same"]] },
       { pairs: [["Heart ❤️", "Pumps blood"], ["Lungs 🫁", "Help us breathe"], ["Brain 🧠", "Controls thinking"], ["Stomach", "Digests food"]] },
       { pairs: [["x2", "Double it"], ["x5", "Ends in 0 or 5"], ["x10", "Add a zero"], ["x3", "Count in threes"]] },
+      // Maths
+      { pairs: [["Even", "2, 4, 6, 8..."], ["Odd", "1, 3, 5, 7..."], ["Prime", "Only divides by 1 and itself"], ["Square", "Number times itself"]] },
+      { pairs: [["100 cm", "1 metre"], ["1000 m", "1 kilometre"], ["1000 g", "1 kilogram"], ["1000 ml", "1 litre"]] },
+      // English
+      { pairs: [["Exclamation", "Shows strong feeling!"], ["Question", "Asks something?"], ["Command", "Tells you to do something."], ["Statement", "Tells you a fact."]] },
+      // Urdu
+      { pairs: [["محاورہ", "Idiom — saying with hidden meaning"], ["ضرب المثل", "Proverb — wise old saying"], ["مترادف", "Synonym — same meaning"], ["متضاد", "Antonym — opposite meaning"]] },
     ],
     fill: [
       { sentence: "The opposite of hot is ___.", options: ["warm", "cold", "wet", "dry"], answer: "cold" },
       { sentence: "7 x 5 = ___.", options: ["30", "35", "40", "25"], answer: "35" },
       { sentence: "Plants need ___ to grow.", options: ["darkness", "sunlight", "ice", "noise"], answer: "sunlight" },
+      // Maths
+      { sentence: "8 x 8 = ___. Boom!", options: ["56", "62", "64", "72"], answer: "64" },
+      { sentence: "A football match lasts ___ minutes.", options: ["45", "60", "80", "90"], answer: "90" },
+      // English
+      { sentence: "'Quickly' is an example of an ___.", options: ["noun", "adjective", "adverb", "pronoun"], answer: "adverb" },
+      { sentence: "The plural of 'child' is ___.", options: ["childs", "children", "childes", "childrens"], answer: "children" },
+      // Science
+      { sentence: "The largest planet in our solar system is ___.", options: ["Mars", "Jupiter", "Saturn", "Earth"], answer: "Jupiter" },
+      // Urdu
+      { sentence: "Urdu mein 'kitaab' ka matlab ___ hai.", options: ["book", "pen", "bag", "chair"], answer: "book" },
+      // Islamiat
+      { sentence: "The holy month of fasting is called ___.", options: ["Shaban", "Ramadan", "Rajab", "Safar"], answer: "Ramadan" },
+      // Pakistan Studies
+      { sentence: "The highest mountain in Pakistan is ___.", options: ["K2", "Nanga Parbat", "Everest", "Tirich Mir"], answer: "K2" },
     ],
     truefalse: [
       { statement: "Whales are fish.", answer: false },
       { statement: "12 x 2 = 24.", answer: true },
       { statement: "The capital of Pakistan is Lahore.", answer: false },
+      // Maths
+      { statement: "7 is a prime number.", answer: true },
+      { statement: "1 kilometre = 100 metres.", answer: false },
+      // English
+      { statement: "An adverb describes a verb.", answer: true },
+      { statement: "The plural of 'mouse' is 'mouses'.", answer: false },
+      // Science
+      { statement: "Humans have 206 bones.", answer: true },
+      // Islamiat
+      { statement: "Zakat is one of the five pillars of Islam.", answer: true },
+      // Pakistan Studies
+      { statement: "K2 is the second highest mountain in the world.", answer: true },
     ],
     picture: [
       { scene: "You are a detective! There are muddy footprints leading to the kitchen. What happened?", prompt: "Solve the mystery!" },
       { scene: "You have 20 minutes of free time. You can read, draw, or play outside. Quick — pick one!", prompt: "What do you choose and why?" },
       { scene: "Your team needs a name for a science project about space. Think of the coolest name!", prompt: "What is your team name?" },
+      // Maths
+      { scene: "You score 45 runs in the first innings and 38 in the second. What is your total? Can you beat 100?", prompt: "Add up your score — fast!" },
+      // English
+      { scene: "Write the most exciting sentence you can about a cricket match using at least 2 adjectives!", prompt: "Make it exciting — go!" },
+      // Science
+      { scene: "If you could visit any planet, which one? Jupiter has 95 moons! Saturn has rings! Mars is red!", prompt: "Pick a planet — why?" },
     ],
   },
   // ── DYSLEXIA ──
@@ -218,21 +364,55 @@ const SEN_EXERCISES = {
       { pairs: [["A 🍎", "Apple sound"], ["B 🐝", "Bee sound"], ["C 🐱", "Cat sound"], ["D 🐶", "Dog sound"]] },
       { pairs: [["bat 🦇", "Rhymes with cat"], ["dog 🐕", "Rhymes with log"], ["sun ☀️", "Rhymes with fun"], ["top 🔝", "Rhymes with hop"]] },
       { pairs: [["Big 🐘", "Not small"], ["Hot 🔥", "Not cold"], ["Up ⬆️", "Not down"], ["Fast 🏃", "Not slow"]] },
+      // Early Literacy
+      { pairs: [["man 👨", "Rhymes with can"], ["bed 🛏️", "Rhymes with red"], ["pig 🐷", "Rhymes with big"], ["pot 🍯", "Rhymes with hot"]] },
+      // Early Numeracy
+      { pairs: [["2 ✌️", "Two fingers"], ["3 🔺", "Three sides on a triangle"], ["4 🚗", "Four wheels on a car"], ["5 ⭐", "Five points on a star"]] },
+      // Nazra Quran
+      { pairs: [["Alif ا", "A tall line"], ["Ba ب", "A boat with a dot"], ["Sin س", "Three teeth shape"], ["Mim م", "A round loop"]] },
+      // Communication
+      { pairs: [["Loud voice 📢", "Used when far away"], ["Quiet voice 🤫", "Used in a library"], ["Happy voice 😄", "When you feel good"], ["Sad voice 😢", "When you feel upset"]] },
     ],
     fill: [
       { sentence: "Cat rhymes with ___.", options: ["dog", "hat", "sun", "cup"], answer: "hat" },
       { sentence: "___ is the first letter of Ball.", options: ["A", "B", "C", "D"], answer: "B" },
       { sentence: "The colour of grass is ___.", options: ["red", "blue", "green", "white"], answer: "green" },
+      // Early Literacy
+      { sentence: "Dog and ___ rhyme.", options: ["cat", "log", "sun", "pen"], answer: "log" },
+      { sentence: "The word 'run' ends with the sound ___.", options: ["n", "m", "t", "s"], answer: "n" },
+      // Early Numeracy
+      { sentence: "3 + 2 = ___.", options: ["4", "5", "6", "7"], answer: "5" },
+      { sentence: "A car has ___ wheels.", options: ["2", "3", "4", "5"], answer: "4" },
+      // Nazra Quran
+      { sentence: "Arabic is read from ___ to left.", options: ["right", "left", "top", "bottom"], answer: "right" },
+      // Communication
+      { sentence: "In a library, we use a ___ voice.", options: ["loud", "quiet", "fast", "angry"], answer: "quiet" },
     ],
     truefalse: [
       { statement: "Cat and hat rhyme.", answer: true },
       { statement: "The word 'dog' starts with B.", answer: false },
       { statement: "Sun and fun sound alike at the end.", answer: true },
+      // Early Literacy
+      { statement: "Pen and hen sound alike at the end.", answer: true },
+      { statement: "The word 'top' starts with the same sound as 'dog'.", answer: false },
+      // Early Numeracy
+      { statement: "4 is more than 2.", answer: true },
+      { statement: "After 5 comes 4.", answer: false },
+      // Nazra Quran
+      { statement: "Alif is the first letter of the Arabic alphabet.", answer: true },
+      // Communication
+      { statement: "We can show feelings without words.", answer: true },
     ],
     picture: [
       { scene: "Close your eyes and listen: someone is clapping a rhythm — clap, clap, pause, clap. Can you copy it?", prompt: "Clap along!" },
       { scene: "Imagine the letter S is a snake. It goes ssssss. What other things make an S sound?", prompt: "What makes an S sound?" },
       { scene: "You see a shop sign but cannot read it. There is a picture of bread on it. What kind of shop is it?", prompt: "What shop is this?" },
+      // Early Literacy
+      { scene: "Listen to these words: map, mat, man. They all start the same. What sound do they start with?", prompt: "What is the starting sound?" },
+      // Early Numeracy
+      { scene: "Count on your fingers: 1, 2, 3, 4, 5. Now hold up 3 fingers. How many are down?", prompt: "How many fingers are down?" },
+      // Communication
+      { scene: "Your friend is telling you a story. What do you do to show you are listening?", prompt: "How do you show you are listening?" },
     ],
   },
   dyslexia_primary: {
@@ -240,21 +420,59 @@ const SEN_EXERCISES = {
       { pairs: [["Prefix", "Goes at the start"], ["Suffix", "Goes at the end"], ["Root word", "The main part"], ["Syllable", "A beat in a word"]] },
       { pairs: [["Their", "Belonging to them"], ["There", "A place"], ["They're", "They are"], ["Then", "After that"]] },
       { pairs: [["Full stop .", "End of sentence"], ["Question mark ?", "Asking something"], ["Comma ,", "Short pause"], ["Exclamation !", "Surprise or shout"]] },
+      // Maths
+      { pairs: [["+ Plus", "Add together"], ["- Minus", "Take away"], ["x Times", "Groups of"], ["÷ Divide", "Share equally"]] },
+      // English
+      { pairs: [["Was", "Past tense of 'is'"], ["Were", "Past tense of 'are'"], ["Is", "Present tense (one)"], ["Are", "Present tense (many)"]] },
+      // Urdu
+      { pairs: [["الف", "First Urdu letter"], ["ب", "Second Urdu letter"], ["پ", "Third Urdu letter"], ["ت", "Fourth Urdu letter"]] },
     ],
     fill: [
       { sentence: "The children went to ___ school.", options: ["there", "their", "they're", "thier"], answer: "their" },
       { sentence: "Un-happy. The prefix 'un' means ___.", options: ["not", "very", "more", "again"], answer: "not" },
       { sentence: "'Beautiful' has ___ syllables.", options: ["2", "3", "4", "5"], answer: "3" },
+      // Maths
+      { sentence: "12 x 5 = ___.", options: ["50", "55", "60", "65"], answer: "60" },
+      { sentence: "If you have Rs 100 and spend Rs 35, you have Rs ___ left.", options: ["55", "60", "65", "75"], answer: "65" },
+      // English
+      { sentence: "The cat sat ___ the mat.", options: ["on", "in", "to", "at"], answer: "on" },
+      { sentence: "I ___ to school every day.", options: ["go", "goes", "going", "gone"], answer: "go" },
+      // Science
+      { sentence: "A magnet pulls things made of ___.", options: ["wood", "metal", "paper", "cloth"], answer: "metal" },
+      // Urdu
+      { sentence: "Urdu is written from ___ to left.", options: ["right", "left", "top", "bottom"], answer: "right" },
+      // Islamiat
+      { sentence: "The five daily prayers start with ___.", options: ["Fajr", "Zuhr", "Asr", "Maghrib"], answer: "Fajr" },
+      // Pakistan Studies
+      { sentence: "Pakistan became independent on 14th August ___.", options: ["1945", "1947", "1950", "1956"], answer: "1947" },
     ],
     truefalse: [
       { statement: "'Knight' and 'night' sound the same.", answer: true },
       { statement: "Every sentence needs a full stop or question mark.", answer: true },
       { statement: "'There' means belonging to someone.", answer: false },
+      // Maths
+      { statement: "Half of 100 is 50.", answer: true },
+      { statement: "There are 100 centimetres in a kilometre.", answer: false },
+      // English
+      { statement: "'I' is always written as a capital letter.", answer: true },
+      { statement: "A question ends with a full stop.", answer: false },
+      // Science
+      { statement: "Sound travels through air.", answer: true },
+      // Islamiat
+      { statement: "Fajr prayer is before sunrise.", answer: true },
+      // Pakistan Studies
+      { statement: "The Indus River flows through Pakistan.", answer: true },
     ],
     picture: [
       { scene: "You are writing a story about a dragon. The dragon is friendly! What does your dragon look like?", prompt: "Describe your dragon out loud!" },
       { scene: "Look at this word pattern: c-a-t, b-a-t, h-a-t. What letter is changing each time?", prompt: "Which letter changes?" },
       { scene: "Your friend sends you a message: 'Lets meet at the park.' Can you spot what is missing?", prompt: "What is missing from the message?" },
+      // Maths
+      { scene: "You buy a notebook for Rs 40 and a pen for Rs 20. How much did you spend in total?", prompt: "What is the total cost?" },
+      // English
+      { scene: "Think of your best friend. Say three sentences about them. Start each sentence differently.", prompt: "Tell me about your friend!" },
+      // Science
+      { scene: "You test a magnet on a spoon, a pencil, a coin, and a rubber. Which ones stick?", prompt: "What did the magnet pick up?" },
     ],
   },
   // ── DOWN SYNDROME ──
@@ -263,21 +481,55 @@ const SEN_EXERCISES = {
       { pairs: [["Apple 🍎", "A fruit"], ["Car 🚗", "Goes on road"], ["Ball ⚽", "You kick it"], ["Book 📖", "You read it"]] },
       { pairs: [["Big 🐘", "Elephant"], ["Small 🐭", "Mouse"], ["Tall 🦒", "Giraffe"], ["Fast 🐆", "Cheetah"]] },
       { pairs: [["Eyes 👀", "We see"], ["Ears 👂", "We hear"], ["Nose 👃", "We smell"], ["Mouth 👄", "We taste"]] },
+      // Early Literacy
+      { pairs: [["A 🍎", "Apple"], ["B ⚽", "Ball"], ["C 🐱", "Cat"], ["D 🐶", "Dog"]] },
+      // Early Numeracy
+      { pairs: [["1 ☝️", "One finger up"], ["2 ✌️", "Two fingers up"], ["3 🤟", "Three fingers"], ["4 🖐️", "Almost a whole hand"]] },
+      // Nazra Quran
+      { pairs: [["Alif ا", "Looks like the number 1"], ["Ba ب", "Like a boat"], ["Mim م", "Like a circle"], ["Ha ه", "Like a small egg"]] },
+      // Communication
+      { pairs: [["Hello 👋", "We say this first"], ["Bye bye 👋", "We say this last"], ["Please 🙏", "We say this to ask nicely"], ["Thank you 🤗", "We say this after help"]] },
     ],
     fill: [
       { sentence: "We see with our ___.", options: ["ears", "eyes", "nose", "mouth"], answer: "eyes" },
       { sentence: "An apple is a ___.", options: ["fruit", "vegetable", "drink", "toy"], answer: "fruit" },
       { sentence: "We sleep in a ___.", options: ["bed", "car", "kitchen", "garden"], answer: "bed" },
+      // Early Literacy
+      { sentence: "A ___ is something you read.", options: ["book", "shoe", "cup", "ball"], answer: "book" },
+      { sentence: "Your ___ is what people call you.", options: ["name", "shoe", "lunch", "bag"], answer: "name" },
+      // Early Numeracy
+      { sentence: "You have 1 ball. Ammi gives you 1 more. Now you have ___.", options: ["1", "2", "3", "4"], answer: "2" },
+      { sentence: "A circle is ___.", options: ["round", "square", "pointy", "flat"], answer: "round" },
+      // Nazra Quran
+      { sentence: "The Quran is the holy book of ___.", options: ["Islam", "school", "cooking", "games"], answer: "Islam" },
+      // Communication
+      { sentence: "When we leave, we say ___.", options: ["hello", "bye bye", "sorry", "please"], answer: "bye bye" },
     ],
     truefalse: [
       { statement: "Birds can fly.", answer: true },
       { statement: "We eat soup with a fork.", answer: false },
       { statement: "The sun is hot.", answer: true },
+      // Early Literacy
+      { statement: "We read books with our eyes.", answer: true },
+      { statement: "A pencil is used for eating.", answer: false },
+      // Early Numeracy
+      { statement: "3 comes after 2.", answer: true },
+      { statement: "A square is round.", answer: false },
+      // Nazra Quran
+      { statement: "Muslims read the Quran.", answer: true },
+      // Communication
+      { statement: "Waving means hello or goodbye.", answer: true },
     ],
     picture: [
       { scene: "Look! A fluffy white cloud in the sky. What shape does it look like to you?", prompt: "What do you see in the cloud?" },
       { scene: "You hear music playing. It makes you want to dance! Show me your favourite dance move!", prompt: "Dance time!" },
       { scene: "Mummy gives you two biscuits. You eat one. How many are left?", prompt: "How many biscuits now?" },
+      // Early Literacy
+      { scene: "Your teacher shows you the letter A. Can you think of a fruit that starts with A?", prompt: "What fruit starts with A?" },
+      // Early Numeracy
+      { scene: "Ammi puts 3 roti on the table. Abbu eats 1. How many roti are left?", prompt: "How many roti now?" },
+      // Communication
+      { scene: "You walk into your classroom in the morning. What do you say to your teacher?", prompt: "What is your greeting?" },
     ],
   },
   ds_primary: {
@@ -285,21 +537,59 @@ const SEN_EXERCISES = {
       { pairs: [["Coin 🪙", "Money"], ["Clock 🕐", "Tells time"], ["Map 🗺️", "Shows places"], ["Ruler 📏", "Measures length"]] },
       { pairs: [["Spring 🌸", "Flowers bloom"], ["Summer ☀️", "Very hot"], ["Autumn 🍂", "Leaves fall"], ["Winter ❄️", "Very cold"]] },
       { pairs: [["10p", "Ten pence"], ["50p", "Fifty pence"], ["£1", "One pound"], ["£5", "Five pounds"]] },
+      // Maths
+      { pairs: [["Rs 5", "Five rupees"], ["Rs 10", "Ten rupees"], ["Rs 20", "Twenty rupees"], ["Rs 50", "Fifty rupees"]] },
+      // English
+      { pairs: [["Cat", "An animal word"], ["Run", "An action word"], ["Big", "A describing word"], ["And", "A joining word"]] },
+      // Urdu
+      { pairs: [["پانی", "Water"], ["روٹی", "Roti/Bread"], ["دودھ", "Milk"], ["چاول", "Rice"]] },
     ],
     fill: [
       { sentence: "There are ___ months in a year.", options: ["10", "11", "12", "13"], answer: "12" },
       { sentence: "After Tuesday comes ___.", options: ["Monday", "Wednesday", "Thursday", "Friday"], answer: "Wednesday" },
       { sentence: "10 + 5 = ___.", options: ["14", "15", "16", "20"], answer: "15" },
+      // Maths
+      { sentence: "5 + 5 = ___.", options: ["8", "9", "10", "11"], answer: "10" },
+      { sentence: "There are ___ days in a week.", options: ["5", "6", "7", "8"], answer: "7" },
+      // English
+      { sentence: "The ___ is shining in the sky.", options: ["sun", "run", "fun", "bun"], answer: "sun" },
+      { sentence: "My name starts with a ___ letter.", options: ["capital", "small", "number", "funny"], answer: "capital" },
+      // Science
+      { sentence: "Rain comes from ___.", options: ["the ground", "clouds", "trees", "rivers"], answer: "clouds" },
+      // Urdu
+      { sentence: "'Ammi' means ___ in Urdu.", options: ["father", "mother", "brother", "sister"], answer: "mother" },
+      // Islamiat
+      { sentence: "Before praying, Muslims do ___.", options: ["wudu", "cooking", "sleeping", "playing"], answer: "wudu" },
+      // Pakistan Studies
+      { sentence: "The flag of Pakistan is green and ___.", options: ["red", "blue", "white", "yellow"], answer: "white" },
     ],
     truefalse: [
       { statement: "There are 7 days in a week.", answer: true },
       { statement: "January comes after February.", answer: false },
       { statement: "A square has 4 sides.", answer: true },
+      // Maths
+      { statement: "10 + 10 = 20.", answer: true },
+      { statement: "A week has 5 days.", answer: false },
+      // English
+      { statement: "Names start with a capital letter.", answer: true },
+      { statement: "'Run' is a describing word.", answer: false },
+      // Science
+      { statement: "Water can be a solid (ice), liquid (water), and gas (steam).", answer: true },
+      // Islamiat
+      { statement: "Muslims face Makkah when they pray.", answer: true },
+      // Pakistan Studies
+      { statement: "Pakistan's flag has a crescent and a star.", answer: true },
     ],
     picture: [
       { scene: "You go to the shop with £1. A drink costs 50p. Can you buy it? How much is left?", prompt: "Work out the money!" },
       { scene: "It is raining outside. What clothes do you need to wear?", prompt: "What do you put on?" },
       { scene: "You are helping to set the table for 4 people. How many plates, forks and cups do you need?", prompt: "Count what you need!" },
+      // Maths
+      { scene: "You go to the shop with Rs 50. A juice costs Rs 30. Do you have enough? How much is left?", prompt: "Work out the money!" },
+      // English
+      { scene: "Tell me about your favourite food. What is it? What colour is it? How does it taste?", prompt: "Describe your food!" },
+      // Science
+      { scene: "It is a sunny day. You leave ice cream outside. What happens to it?", prompt: "What happens to the ice cream?" },
     ],
   },
   // ── CEREBRAL PALSY ──
@@ -308,21 +598,55 @@ const SEN_EXERCISES = {
       { pairs: [["Red 🔴", "Strawberry"], ["Yellow 🟡", "Banana"], ["Orange 🟠", "Orange"], ["Green 🟢", "Apple"]] },
       { pairs: [["Hot ☕", "Tea"], ["Cold 🧊", "Ice cream"], ["Soft 🧸", "Teddy"], ["Hard 🪨", "Rock"]] },
       { pairs: [["Clap 👏", "Hands together"], ["Wave 👋", "Say hello"], ["Point 👉", "Show something"], ["Nod", "Say yes"]] },
+      // Early Literacy
+      { pairs: [["L 🍋", "Lemon starts with L"], ["N 👃", "Nose starts with N"], ["R 🌈", "Rainbow starts with R"], ["W 🌊", "Water starts with W"]] },
+      // Early Numeracy
+      { pairs: [["Rectangle 📱", "Four sides, two longer"], ["Circle ⚽", "Perfectly round"], ["Triangle 📐", "Three sides and corners"], ["Square 🎲", "Four equal sides"]] },
+      // Nazra Quran
+      { pairs: [["Alif ا", "First Arabic letter"], ["Ya ي", "Last Arabic letter"], ["Noon ن", "Has a dot on top"], ["Waw و", "Looks like a hook"]] },
+      // Communication
+      { pairs: [["Asking", "Can I have water please?"], ["Telling", "The cat is on the mat."], ["Thanking", "Thank you for helping me."], ["Greeting", "Good morning!"]] },
     ],
     fill: [
       { sentence: "A strawberry is ___.", options: ["red", "blue", "green", "purple"], answer: "red" },
       { sentence: "Ice cream is ___.", options: ["hot", "cold", "hard", "loud"], answer: "cold" },
       { sentence: "We nod our head to say ___.", options: ["yes", "no", "maybe", "hello"], answer: "yes" },
+      // Early Literacy
+      { sentence: "The word 'parrot' starts with the letter ___.", options: ["P", "B", "T", "K"], answer: "P" },
+      { sentence: "We use a ___ to write.", options: ["pencil", "spoon", "shoe", "cup"], answer: "pencil" },
+      // Early Numeracy
+      { sentence: "4 + 2 = ___.", options: ["5", "6", "7", "8"], answer: "6" },
+      { sentence: "A triangle has ___ corners.", options: ["2", "3", "4", "5"], answer: "3" },
+      // Nazra Quran
+      { sentence: "The Arabic alphabet begins with Alif and ends with ___.", options: ["Ba", "Ya", "Sin", "Mim"], answer: "Ya" },
+      // Communication
+      { sentence: "When you need help, you can ___.", options: ["ask", "hide", "cry", "sleep"], answer: "ask" },
     ],
     truefalse: [
       { statement: "Ice is cold.", answer: true },
       { statement: "Rocks are soft.", answer: false },
       { statement: "We wave to say hello.", answer: true },
+      // Early Literacy
+      { statement: "The word 'cat' has 3 letters.", answer: true },
+      { statement: "Q comes before A in the alphabet.", answer: false },
+      // Early Numeracy
+      { statement: "6 is greater than 4.", answer: true },
+      { statement: "A rectangle has 3 sides.", answer: false },
+      // Nazra Quran
+      { statement: "The Quran is written in Arabic.", answer: true },
+      // Communication
+      { statement: "Saying 'please' is polite.", answer: true },
     ],
     picture: [
       { scene: "You are at the beach. You feel sand between your toes and hear waves. What else can you see?", prompt: "Describe the beach!" },
       { scene: "Your favourite song is playing. How does the music make you feel?", prompt: "Tell me about the music!" },
       { scene: "A butterfly lands on a flower near you. What colours is it?", prompt: "Describe the butterfly!" },
+      // Early Literacy
+      { scene: "You are learning to write the letter S. It curves like a snake! What other things look like the letter S?", prompt: "What looks like S?" },
+      // Early Numeracy
+      { scene: "You see shapes around you: the door is a rectangle, the clock is a circle. What shape is a book?", prompt: "What shape is the book?" },
+      // Communication
+      { scene: "A new child joins your class. They look nervous. What can you say to make them feel welcome?", prompt: "What would you say?" },
     ],
   },
   cp_primary: {
@@ -330,21 +654,60 @@ const SEN_EXERCISES = {
       { pairs: [["Gravity", "Pulls things down"], ["Friction", "Slows things down"], ["Magnet", "Attracts metal"], ["Force", "Push or pull"]] },
       { pairs: [["Noun", "Naming word"], ["Adjective", "Describing word"], ["Verb", "Doing word"], ["Adverb", "How something is done"]] },
       { pairs: [["Perimeter", "Around the edge"], ["Area", "Inside the shape"], ["Volume", "Space inside"], ["Angle", "Where lines meet"]] },
+      // Maths
+      { pairs: [["Acute angle", "Less than 90°"], ["Right angle", "Exactly 90°"], ["Obtuse angle", "Between 90° and 180°"], ["Straight angle", "Exactly 180°"]] },
+      { pairs: [["x7", "7, 14, 21, 28..."], ["x8", "8, 16, 24, 32..."], ["x9", "9, 18, 27, 36..."], ["x12", "12, 24, 36, 48..."]] },
+      // English
+      { pairs: [["Simile", "Uses 'like' or 'as'"], ["Metaphor", "Says something IS something else"], ["Alliteration", "Same starting sounds"], ["Onomatopoeia", "Words that sound like noises"]] },
+      // Urdu
+      { pairs: [["واحد", "Singular — one"], ["جمع", "Plural — many"], ["مذکر", "Masculine"], ["مؤنث", "Feminine"]] },
     ],
     fill: [
       { sentence: "Gravity pulls things ___.", options: ["up", "down", "sideways", "forward"], answer: "down" },
       { sentence: "An adjective is a ___ word.", options: ["doing", "describing", "naming", "joining"], answer: "describing" },
       { sentence: "The perimeter is the distance ___ a shape.", options: ["around", "inside", "through", "above"], answer: "around" },
+      // Maths
+      { sentence: "The angles in a triangle add up to ___ degrees.", options: ["90", "180", "270", "360"], answer: "180" },
+      { sentence: "1/4 of 100 = ___.", options: ["10", "20", "25", "50"], answer: "25" },
+      // English
+      { sentence: "'She runs like a cheetah' is an example of a ___.", options: ["metaphor", "simile", "rhyme", "alliteration"], answer: "simile" },
+      { sentence: "A ___ is a group of sentences about one topic.", options: ["paragraph", "chapter", "book", "letter"], answer: "paragraph" },
+      // Science
+      { sentence: "An animal that eats only plants is called a ___.", options: ["carnivore", "herbivore", "omnivore", "scavenger"], answer: "herbivore" },
+      // Urdu
+      { sentence: "Pakistan ki qoumi zuban ___ hai.", options: ["Urdu", "English", "Punjabi", "Sindhi"], answer: "Urdu" },
+      // Islamiat
+      { sentence: "The Quran has ___ surahs.", options: ["100", "114", "120", "130"], answer: "114" },
+      // Pakistan Studies
+      { sentence: "The founder of Pakistan is ___.", options: ["Allama Iqbal", "Quaid-e-Azam", "Liaquat Ali Khan", "Sir Syed Ahmed Khan"], answer: "Quaid-e-Azam" },
     ],
     truefalse: [
       { statement: "Magnets attract all objects.", answer: false },
       { statement: "A verb is a doing word.", answer: true },
       { statement: "The area of a shape is measured around the outside.", answer: false },
+      // Maths
+      { statement: "A right angle is 90 degrees.", answer: true },
+      { statement: "12 x 12 = 124.", answer: false },
+      // English
+      { statement: "'Buzz' is an example of onomatopoeia.", answer: true },
+      { statement: "A simile uses the word 'is' to compare.", answer: false },
+      // Science
+      { statement: "The Earth has one natural satellite called the Moon.", answer: true },
+      // Islamiat
+      { statement: "Hajj is performed in the month of Dhul Hijjah.", answer: true },
+      // Pakistan Studies
+      { statement: "Quaid-e-Azam's birthday is on 25th December.", answer: true },
     ],
     picture: [
       { scene: "Drop a ball and a feather at the same time. Which hits the ground first? Why?", prompt: "What do you think happens?" },
       { scene: "You are designing a bedroom. It is 3 metres by 4 metres. What is the area?", prompt: "Calculate the area!" },
       { scene: "Write a sentence about your favourite animal using at least one adjective.", prompt: "Describe your animal!" },
+      // Maths
+      { scene: "A rectangular garden is 10 metres long and 5 metres wide. What is the area?", prompt: "Calculate the area of the garden!" },
+      // English
+      { scene: "Write a short paragraph about Lahore using at least one simile and one describing word.", prompt: "Describe Lahore!" },
+      // Science
+      { scene: "Sort these animals: lion, cow, bear, rabbit. Which are herbivores? Which are carnivores? Which are omnivores?", prompt: "Sort the animals!" },
     ],
   },
   // ── VISUAL IMPAIRMENT ──
@@ -353,21 +716,55 @@ const SEN_EXERCISES = {
       { pairs: [["Bell 🔔", "Ding ding"], ["Drum 🥁", "Boom boom"], ["Whistle", "Wheee"], ["Clap 👏", "Slap slap"]] },
       { pairs: [["Soft 🧸", "Teddy bear"], ["Rough", "Sandpaper"], ["Smooth", "Glass"], ["Bumpy", "Gravel path"]] },
       { pairs: [["Sweet 🍬", "Candy"], ["Sour 🍋", "Lemon"], ["Salty 🧂", "Crisps"], ["Bitter", "Dark chocolate"]] },
+      // Early Literacy
+      { pairs: [["A sound", "Ah like apple"], ["B sound", "Buh like ball"], ["C sound", "Kuh like cat"], ["D sound", "Duh like drum"]] },
+      // Early Numeracy
+      { pairs: [["1 clap", "One time"], ["2 claps", "Two times"], ["3 claps", "Three times"], ["4 claps", "Four times"]] },
+      // Nazra Quran
+      { pairs: [["Alif", "Sounds like 'a' in 'apple'"], ["Ba", "Sounds like 'b' in 'ball'"], ["Ta", "Sounds like 't' in 'top'"], ["Tha", "Sounds like 'th' in 'think'"]] },
+      // Communication
+      { pairs: [["Happy tone", "Voice goes up, sounds cheerful"], ["Sad tone", "Voice is low and slow"], ["Angry tone", "Voice is loud and sharp"], ["Scared tone", "Voice is shaky and quiet"]] },
     ],
     fill: [
       { sentence: "A bell goes ___.", options: ["ding", "boom", "splash", "pop"], answer: "ding" },
       { sentence: "Lemons taste ___.", options: ["sweet", "sour", "salty", "spicy"], answer: "sour" },
       { sentence: "A teddy bear feels ___.", options: ["rough", "soft", "hard", "cold"], answer: "soft" },
+      // Early Literacy
+      { sentence: "The word 'mango' has ___ sounds in it.", options: ["3", "4", "5", "6"], answer: "5" },
+      { sentence: "A story has a beginning, a middle, and an ___.", options: ["end", "top", "side", "number"], answer: "end" },
+      // Early Numeracy
+      { sentence: "If you clap 2 times and then 3 times, you clapped ___ times.", options: ["4", "5", "6", "7"], answer: "5" },
+      { sentence: "A hand has ___ fingers.", options: ["3", "4", "5", "6"], answer: "5" },
+      // Nazra Quran
+      { sentence: "When we recite the Quran, we use our ___.", options: ["voice", "feet", "hands", "eyes"], answer: "voice" },
+      // Communication
+      { sentence: "You can tell how someone feels by their tone of ___.", options: ["voice", "hair", "shoes", "name"], answer: "voice" },
     ],
     truefalse: [
       { statement: "Drums make a loud sound.", answer: true },
       { statement: "Sugar tastes sour.", answer: false },
       { statement: "Sandpaper feels smooth.", answer: false },
+      // Early Literacy
+      { statement: "Every word is made of sounds.", answer: true },
+      { statement: "The word 'sun' starts with the sound F.", answer: false },
+      // Early Numeracy
+      { statement: "Two hands have ten fingers.", answer: true },
+      { statement: "After the number 7 comes 6.", answer: false },
+      // Nazra Quran
+      { statement: "Alif makes a sound like the letter A in English.", answer: true },
+      // Communication
+      { statement: "We can hear if someone is happy or sad by their voice.", answer: true },
     ],
     picture: [
       { scene: "Close your eyes. Someone puts something cold and round in your hand. It smells sweet. What is it?", prompt: "Guess the fruit!" },
       { scene: "Listen: you hear birds singing, leaves rustling, and children laughing. Where are you?", prompt: "Describe the place!" },
       { scene: "You touch something fluffy that purrs. What animal is it?", prompt: "What is the animal?" },
+      // Early Literacy
+      { scene: "Listen carefully: someone says 'bat' then 'cat'. Only one sound changed. Which sound changed — the beginning, middle, or end?", prompt: "Which sound is different?" },
+      // Early Numeracy
+      { scene: "Hold out both hands. Count each finger by touching it. How many do you count on one hand? Now both?", prompt: "How many fingers in total?" },
+      // Communication
+      { scene: "Someone says 'I am fine' in a sad, slow voice. Do they really feel fine? How can you tell?", prompt: "How are they really feeling?" },
     ],
   },
   vi_primary: {
@@ -375,21 +772,59 @@ const SEN_EXERCISES = {
       { pairs: [["Orbit", "Path around something"], ["Rotation", "Spinning on axis"], ["Eclipse", "Sun or Moon blocked"], ["Crater", "Hole on Moon"]] },
       { pairs: [["Simile", "Uses like or as"], ["Onomatopoeia", "Sound words"], ["Personification", "Human qualities"], ["Alliteration", "Same start sound"]] },
       { pairs: [["Half 1/2", "Two equal parts"], ["Quarter 1/4", "Four equal parts"], ["Third 1/3", "Three equal parts"], ["Whole", "All of it"]] },
+      // Maths
+      { pairs: [["Addition", "Combining two amounts"], ["Subtraction", "Finding the difference"], ["Multiplication", "Repeated addition"], ["Division", "Splitting into equal groups"]] },
+      // English
+      { pairs: [["Fiction", "Made-up stories"], ["Non-fiction", "True facts and information"], ["Poetry", "Writing with rhythm and feeling"], ["Drama", "A play with characters and dialogue"]] },
+      // Urdu
+      { pairs: [["Salam", "Greeting in Urdu"], ["Shukriya", "Thank you in Urdu"], ["Khuda Hafiz", "Goodbye in Urdu"], ["Ji", "Yes (respectful) in Urdu"]] },
     ],
     fill: [
       { sentence: "The Earth takes ___ days to orbit the Sun.", options: ["100", "365", "200", "400"], answer: "365" },
       { sentence: "'Buzz' and 'crash' are examples of ___.", options: ["simile", "onomatopoeia", "metaphor", "rhyme"], answer: "onomatopoeia" },
       { sentence: "Half of 20 is ___.", options: ["5", "8", "10", "15"], answer: "10" },
+      // Maths
+      { sentence: "9 x 6 = ___.", options: ["45", "54", "56", "63"], answer: "54" },
+      { sentence: "A quarter of 40 is ___.", options: ["8", "10", "12", "20"], answer: "10" },
+      // English
+      { sentence: "A story that is not real is called ___.", options: ["fiction", "non-fiction", "biography", "report"], answer: "fiction" },
+      { sentence: "A word that means the same as 'happy' is ___.", options: ["sad", "glad", "mad", "bad"], answer: "glad" },
+      // Science
+      { sentence: "The process by which plants make food is called ___.", options: ["digestion", "respiration", "photosynthesis", "evaporation"], answer: "photosynthesis" },
+      // Urdu
+      { sentence: "The Urdu word for 'teacher' is ___.", options: ["ustaad", "taalib", "dost", "bhai"], answer: "ustaad" },
+      // Islamiat
+      { sentence: "The call to prayer is called the ___.", options: ["Azaan", "Dua", "Salaam", "Surah"], answer: "Azaan" },
+      // Pakistan Studies
+      { sentence: "Pakistan shares a border with ___ countries.", options: ["2", "3", "4", "5"], answer: "4" },
     ],
     truefalse: [
       { statement: "The Earth rotates once every 24 hours.", answer: true },
       { statement: "A simile uses the word 'is' to compare.", answer: false },
       { statement: "A quarter of 100 is 25.", answer: true },
+      // Maths
+      { statement: "Multiplication is repeated addition.", answer: true },
+      { statement: "100 divided by 4 is 20.", answer: false },
+      // English
+      { statement: "A biography is about a real person's life.", answer: true },
+      { statement: "Poetry must always rhyme.", answer: false },
+      // Science
+      { statement: "All living things need energy to survive.", answer: true },
+      // Islamiat
+      { statement: "The Azaan is called out five times daily.", answer: true },
+      // Pakistan Studies
+      { statement: "Pakistan shares a border with China.", answer: true },
     ],
     picture: [
       { scene: "Imagine you are floating in space. You look down and see Earth below. Describe what you hear — or do you hear anything?", prompt: "What is space like?" },
       { scene: "You are listening to an audiobook about a magical forest. Describe the sounds you imagine in the forest.", prompt: "What sounds are there?" },
       { scene: "Someone reads you a riddle: 'I have hands but cannot clap.' What am I?", prompt: "Solve the riddle!" },
+      // Maths
+      { scene: "Imagine you have 36 sweets to share equally among 6 friends. How many does each person get?", prompt: "Work out the equal share!" },
+      // English
+      { scene: "Think of a story you heard recently. Retell it in your own words: what happened first, next, and last?", prompt: "Retell the story!" },
+      // Science
+      { scene: "Think about what happens when you breathe in and out. What gas do you take in? What gas do you breathe out?", prompt: "Explain breathing!" },
     ],
   },
   // ── HEARING IMPAIRMENT ──
@@ -398,21 +833,55 @@ const SEN_EXERCISES = {
       { pairs: [["Happy 😊", "Smiling face"], ["Sad 😢", "Crying face"], ["Surprised 😮", "Open mouth"], ["Angry 😠", "Frowning face"]] },
       { pairs: [["Stop 🛑", "Red sign"], ["Go ✅", "Green light"], ["Slow ⚠️", "Yellow light"], ["Walk 🚶", "Person shape"]] },
       { pairs: [["Cup 🥤", "For drinking"], ["Plate 🍽️", "For eating"], ["Spoon 🥄", "For scooping"], ["Knife 🔪", "For cutting"]] },
+      // Early Literacy
+      { pairs: [["📖 Book", "Has pages to read"], ["✏️ Pencil", "For writing"], ["📝 Paper", "You write on it"], ["🎒 Bag", "Carry your things"]] },
+      // Early Numeracy
+      { pairs: [["1️⃣", "One"], ["2️⃣", "Two"], ["3️⃣", "Three"], ["4️⃣", "Four"]] },
+      // Nazra Quran
+      { pairs: [["ا Alif", "First letter — tall line"], ["ب Ba", "One dot below"], ["ت Ta", "Two dots above"], ["ث Tha", "Three dots above"]] },
+      // Communication
+      { pairs: [["Nodding ✅", "Means yes"], ["Shaking head ❌", "Means no"], ["Pointing 👉", "Shows where"], ["Clapping 👏", "Shows well done"]] },
     ],
     fill: [
       { sentence: "A red light means ___.", options: ["go", "stop", "walk", "run"], answer: "stop" },
       { sentence: "😊 This face is ___.", options: ["sad", "happy", "angry", "scared"], answer: "happy" },
       { sentence: "We drink from a ___.", options: ["plate", "cup", "spoon", "fork"], answer: "cup" },
+      // Early Literacy
+      { sentence: "The letter after A is ___.", options: ["C", "B", "D", "E"], answer: "B" },
+      { sentence: "We ___ books to learn new things.", options: ["read", "throw", "eat", "kick"], answer: "read" },
+      // Early Numeracy
+      { sentence: "3 + 3 = ___.", options: ["5", "6", "7", "8"], answer: "6" },
+      { sentence: "Show ___ fingers for the number five.", options: ["3", "4", "5", "6"], answer: "5" },
+      // Nazra Quran
+      { sentence: "The letter Ta (ت) has ___ dots above it.", options: ["1", "2", "3", "0"], answer: "2" },
+      // Communication
+      { sentence: "To say 'yes' without talking, you can ___.", options: ["nod", "clap", "point", "wave"], answer: "nod" },
     ],
     truefalse: [
       { statement: "A green traffic light means go.", answer: true },
       { statement: "😢 This face means happy.", answer: false },
       { statement: "We use a spoon to eat soup.", answer: true },
+      // Early Literacy
+      { statement: "B comes after A in the alphabet.", answer: true },
+      { statement: "We write with a spoon.", answer: false },
+      // Early Numeracy
+      { statement: "2 + 2 = 4.", answer: true },
+      { statement: "A triangle has 4 corners.", answer: false },
+      // Nazra Quran
+      { statement: "The letter Tha (ث) has three dots.", answer: true },
+      // Communication
+      { statement: "You can say hello by waving your hand.", answer: true },
     ],
     picture: [
       { scene: "Look at someone talking to you. Their mouth is making a big O shape. What sound are they making?", prompt: "What sound is that?" },
       { scene: "You see a person waving their arms and jumping up and down. How are they feeling?", prompt: "What emotion is this?" },
       { scene: "There is a sign with a picture of food on it. What kind of place is this?", prompt: "What place has this sign?" },
+      // Early Literacy
+      { scene: "You see the letters A, B, C, D on cards. Can you put them in order? What letter comes next?", prompt: "What letter comes after D?" },
+      // Early Numeracy
+      { scene: "Count the fingers in the picture: 👆👆👆. How many fingers do you see?", prompt: "How many fingers?" },
+      // Communication
+      { scene: "Your friend across the room wants to tell you something. They point to the door and wave. What do they mean?", prompt: "What is the message?" },
     ],
   },
   hi_primary: {
@@ -420,21 +889,59 @@ const SEN_EXERCISES = {
       { pairs: [["Evaporation", "Liquid to gas"], ["Condensation", "Gas to liquid"], ["Precipitation", "Rain or snow"], ["Collection", "Water gathers"]] },
       { pairs: [["Paragraph", "Group of sentences"], ["Sentence", "Starts with capital"], ["Clause", "Has a verb"], ["Phrase", "Group of words"]] },
       { pairs: [["Fraction", "Part of whole"], ["Decimal", "Uses a dot"], ["Percentage", "Out of 100"], ["Ratio", "Comparing amounts"]] },
+      // Maths
+      { pairs: [["Numerator", "Top number of a fraction"], ["Denominator", "Bottom number of a fraction"], ["Mixed number", "Whole number and fraction"], ["Improper fraction", "Top bigger than bottom"]] },
+      // English
+      { pairs: [["Noun", "Person, place, or thing"], ["Verb", "Action word"], ["Adjective", "Describes a noun"], ["Adverb", "Describes a verb"]] },
+      // Urdu
+      { pairs: [["پاکستان", "Pakistan"], ["لاہور", "Lahore"], ["کراچی", "Karachi"], ["اسلام آباد", "Islamabad"]] },
     ],
     fill: [
       { sentence: "When water boils, it turns to ___.", options: ["ice", "steam", "juice", "oil"], answer: "steam" },
       { sentence: "Every sentence starts with a ___ letter.", options: ["small", "capital", "number", "symbol"], answer: "capital" },
       { sentence: "50% means ___ out of 100.", options: ["25", "50", "75", "100"], answer: "50" },
+      // Maths
+      { sentence: "7 x 8 = ___.", options: ["48", "54", "56", "63"], answer: "56" },
+      { sentence: "In the fraction 3/4, the denominator is ___.", options: ["3", "4", "7", "12"], answer: "4" },
+      // English
+      { sentence: "The opposite of 'fast' is ___.", options: ["quick", "slow", "strong", "tall"], answer: "slow" },
+      { sentence: "A ___ mark (?) shows a question.", options: ["question", "full", "exclamation", "speech"], answer: "question" },
+      // Science
+      { sentence: "The food chain starts with ___.", options: ["animals", "plants", "humans", "fish"], answer: "plants" },
+      // Urdu
+      { sentence: "Urdu uses the ___ script.", options: ["Nastaliq", "Roman", "Devanagari", "Chinese"], answer: "Nastaliq" },
+      // Islamiat
+      { sentence: "The direction of prayer for Muslims is called ___.", options: ["Qibla", "Mihrab", "Minaret", "Dome"], answer: "Qibla" },
+      // Pakistan Studies
+      { sentence: "The national anthem of Pakistan is called ___.", options: ["Qaumi Taranah", "Pakistan Zindabad", "Dil Dil Pakistan", "Mera Watan"], answer: "Qaumi Taranah" },
     ],
     truefalse: [
       { statement: "Rain is a form of precipitation.", answer: true },
       { statement: "A paragraph is a single sentence.", answer: false },
       { statement: "0.5 is the same as 1/2.", answer: true },
+      // Maths
+      { statement: "1/2 is the same as 2/4.", answer: true },
+      { statement: "11 x 11 = 111.", answer: false },
+      // English
+      { statement: "Adjectives describe nouns.", answer: true },
+      { statement: "A comma is used at the end of a sentence.", answer: false },
+      // Science
+      { statement: "Leaves are usually green because of chlorophyll.", answer: true },
+      // Islamiat
+      { statement: "The Qibla direction is towards Makkah.", answer: true },
+      // Pakistan Studies
+      { statement: "Islamabad is the largest city in Pakistan.", answer: false },
     ],
     picture: [
       { scene: "Draw the water cycle: sun heats water, it rises as steam, forms clouds, then falls as rain. Can you explain each step?", prompt: "Explain the water cycle!" },
       { scene: "You see a pie chart showing how students travel to school: half by car, quarter by bus, quarter by walking.", prompt: "What does the chart show?" },
       { scene: "Your friend writes: 'i went too the park and played with there dog.' Find 3 mistakes!", prompt: "Spot the errors!" },
+      // Maths
+      { scene: "A pizza is cut into 8 equal slices. You eat 3 slices. Write the fraction of pizza you ate.", prompt: "What fraction did you eat?" },
+      // English
+      { scene: "Write three sentences about your school day using past tense. What did you do first, next, and last?", prompt: "Write about your day!" },
+      // Science
+      { scene: "Draw a simple food chain: grass is eaten by a grasshopper, which is eaten by a frog, which is eaten by a snake.", prompt: "Explain the food chain!" },
     ],
   },
   // ── UNSURE / UNDIAGNOSED ──
@@ -443,21 +950,55 @@ const SEN_EXERCISES = {
       { pairs: [["Happy 😊", "Good feeling"], ["Sad 😢", "Bad feeling"], ["Tired 😴", "Need sleep"], ["Hungry 🍽️", "Need food"]] },
       { pairs: [["Red 🔴", "Stop colour"], ["Green 🟢", "Go colour"], ["Blue 🔵", "Water colour"], ["Yellow 🟡", "Sun colour"]] },
       { pairs: [["1", "One finger"], ["2", "Two fingers"], ["3", "Three fingers"], ["4", "Four fingers"]] },
+      // Early Literacy
+      { pairs: [["K ✈️", "Kite starts with K"], ["J 🧃", "Juice starts with J"], ["L 🍃", "Leaf starts with L"], ["I 🍦", "Ice cream starts with I"]] },
+      // Early Numeracy
+      { pairs: [["6 🎲", "Six dots on dice"], ["7 🌈", "Seven colours"], ["8 🕷️", "Eight spider legs"], ["9 🎱", "Nine ball"]] },
+      // Nazra Quran
+      { pairs: [["Alif ا", "The very first letter"], ["Ba ب", "The second letter"], ["Sin س", "Looks like three teeth"], ["Lam ل", "A tall curved letter"]] },
+      // Communication
+      { pairs: [["Inside voice 🤫", "Quiet and calm"], ["Outside voice 📣", "Loud enough to hear"], ["Asking voice ❓", "Goes up at the end"], ["Telling voice ✅", "Goes down at the end"]] },
     ],
     fill: [
       { sentence: "When you are tired, you need to ___.", options: ["eat", "sleep", "run", "shout"], answer: "sleep" },
       { sentence: "One plus one is ___.", options: ["1", "2", "3", "4"], answer: "2" },
       { sentence: "Grass is the colour ___.", options: ["red", "blue", "green", "yellow"], answer: "green" },
+      // Early Literacy
+      { sentence: "The word 'zoo' starts with the letter ___.", options: ["Z", "S", "X", "C"], answer: "Z" },
+      { sentence: "A ___ tells a story with words and pictures.", options: ["book", "chair", "plate", "sock"], answer: "book" },
+      // Early Numeracy
+      { sentence: "5 + 1 = ___.", options: ["5", "6", "7", "8"], answer: "6" },
+      { sentence: "How many sides does a rectangle have? ___.", options: ["3", "4", "5", "6"], answer: "4" },
+      // Nazra Quran
+      { sentence: "Muslims recite the Quran in the ___ language.", options: ["Arabic", "English", "Urdu", "Punjabi"], answer: "Arabic" },
+      // Communication
+      { sentence: "When you meet someone new, you can say ___.", options: ["hello", "goodbye", "sorry", "ouch"], answer: "hello" },
     ],
     truefalse: [
       { statement: "We need food when we are hungry.", answer: true },
       { statement: "3 comes before 2.", answer: false },
       { statement: "The sky is often blue.", answer: true },
+      // Early Literacy
+      { statement: "The letter C comes before D.", answer: true },
+      { statement: "The word 'apple' starts with B.", answer: false },
+      // Early Numeracy
+      { statement: "8 is more than 5.", answer: true },
+      { statement: "A circle has 2 sides.", answer: false },
+      // Nazra Quran
+      { statement: "The Arabic alphabet starts with the letter Alif.", answer: true },
+      // Communication
+      { statement: "Raising your hand in class is a good way to ask to speak.", answer: true },
     ],
     picture: [
       { scene: "It is a rainy day. What games can you play inside?", prompt: "What would you play?" },
       { scene: "You have crayons and paper. Draw your family! Who is in the picture?", prompt: "Tell me about your family!" },
       { scene: "You see a rainbow after the rain. How many colours can you name?", prompt: "Name the colours!" },
+      // Early Literacy
+      { scene: "You see a sign that says 'STOP'. What does the first letter S sound like? Can you think of another word starting with S?", prompt: "What starts with S?" },
+      // Early Numeracy
+      { scene: "You have 6 crayons. Your friend asks for 2. How many do you have left? Can you share?", prompt: "How many are left?" },
+      // Communication
+      { scene: "You want to play with a group of children at break time. How would you ask to join in?", prompt: "What would you say?" },
     ],
   },
   unsure_primary: {
@@ -465,21 +1006,59 @@ const SEN_EXERCISES = {
       { pairs: [["Continent", "Large land mass"], ["Country", "Has its own flag"], ["City", "Where many people live"], ["Village", "Small community"]] },
       { pairs: [["Past tense", "Already happened"], ["Present tense", "Happening now"], ["Future tense", "Will happen"], ["Verb", "Action word"]] },
       { pairs: [["Even number", "Divisible by 2"], ["Odd number", "Not divisible by 2"], ["Prime number", "Only 1 and itself"], ["Multiple", "Times table answer"]] },
+      // Maths
+      { pairs: [["Parallel lines", "Never meet"], ["Perpendicular lines", "Meet at right angles"], ["Diagonal", "Goes from corner to corner"], ["Radius", "Centre to edge of circle"]] },
+      // English
+      { pairs: [["Synonym", "Word with similar meaning"], ["Antonym", "Word with opposite meaning"], ["Homophone", "Same sound, different meaning"], ["Compound word", "Two words joined together"]] },
+      // Urdu
+      { pairs: [["Urdu", "Qoumi zuban"], ["Lahore", "Punjab ka darulhukumat"], ["Cricket", "Qoumi khel"], ["Jasmine", "Qoumi phool"]] },
     ],
     fill: [
       { sentence: "Pakistan is in the continent of ___.", options: ["Africa", "Asia", "Europe", "America"], answer: "Asia" },
       { sentence: "'She walked to school' is in the ___ tense.", options: ["past", "present", "future", "none"], answer: "past" },
       { sentence: "The first prime number is ___.", options: ["1", "2", "3", "4"], answer: "2" },
+      // Maths
+      { sentence: "11 x 12 = ___.", options: ["121", "132", "144", "156"], answer: "132" },
+      { sentence: "0.5 is the same as ___.", options: ["1/3", "1/4", "1/2", "2/3"], answer: "1/2" },
+      // English
+      { sentence: "'Their', 'there', and 'they're' are called ___.", options: ["synonyms", "antonyms", "homophones", "verbs"], answer: "homophones" },
+      { sentence: "The past tense of 'go' is ___.", options: ["goed", "went", "gone", "going"], answer: "went" },
+      // Science
+      { sentence: "Planets orbit around the ___.", options: ["Moon", "Sun", "Earth", "Stars"], answer: "Sun" },
+      // Urdu
+      { sentence: "Pakistan ka qoumi khel ___ hai.", options: ["cricket", "football", "hockey", "kabaddi"], answer: "hockey" },
+      // Islamiat
+      { sentence: "The five pillars of Islam include Shahada, Salat, Zakat, Sawm, and ___.", options: ["Hajj", "Jihad", "Dua", "Sadaqah"], answer: "Hajj" },
+      // Pakistan Studies
+      { sentence: "Pakistan's largest city by population is ___.", options: ["Lahore", "Karachi", "Islamabad", "Faisalabad"], answer: "Karachi" },
     ],
     truefalse: [
       { statement: "Asia is the largest continent.", answer: true },
       { statement: "9 is an even number.", answer: false },
       { statement: "'Running' is a verb.", answer: true },
+      // Maths
+      { statement: "A circle has 0 straight sides.", answer: true },
+      { statement: "The perimeter of a square with sides of 5 cm is 15 cm.", answer: false },
+      // English
+      { statement: "'Butterfly' is a compound word.", answer: true },
+      { statement: "'Big' and 'large' are antonyms.", answer: false },
+      // Science
+      { statement: "Earth is the third planet from the Sun.", answer: true },
+      // Islamiat
+      { statement: "Eid-ul-Fitr is celebrated after Ramadan.", answer: true },
+      // Pakistan Studies
+      { statement: "The four provinces of Pakistan are Punjab, Sindh, KPK, and Balochistan.", answer: true },
     ],
     picture: [
       { scene: "You are planning a trip to another city. What 3 things would you pack?", prompt: "What do you pack?" },
       { scene: "Look at a clock showing 3:30. The short hand points to 3 and the long hand points to 6. What time will it be in one hour?", prompt: "What time is it?" },
       { scene: "Write a sentence about something that happened yesterday, something happening today, and something you will do tomorrow.", prompt: "Use three tenses!" },
+      // Maths
+      { scene: "You are planning a cricket match. Each team needs 11 players. If 25 children want to play, how many are left out?", prompt: "How many are left over?" },
+      // English
+      { scene: "Create a sentence using a homophone pair. For example, use 'their' and 'there' in the same sentence.", prompt: "Write a sentence with homophones!" },
+      // Science
+      { scene: "Imagine you could travel to space. List 3 things you would need to survive and explain why.", prompt: "What do you need in space?" },
     ],
   },
 
@@ -492,20 +1071,48 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["Cell", "Basic unit of life"], ["Nucleus", "Controls the cell"], ["Mitochondria", "Powerhouse — makes energy"], ["Chromosome", "Carries genetic information"]] },
       { pairs: [["Treaty", "Formal agreement between nations"], ["Alliance", "Countries joined for a common goal"], ["Armistice", "Agreement to stop fighting"], ["Imperialism", "One country controlling another"]] },
+      // Maths
+      { pairs: [["Quadratic", "ax² + bx + c = 0"], ["Linear", "y = mx + c"], ["Simultaneous", "Two equations, two unknowns"], ["Inequality", "Uses < > signs"]] },
+      // English
+      { pairs: [["Protagonist", "Main character of the story"], ["Antagonist", "Character who opposes the main character"], ["Setting", "Where and when the story takes place"], ["Theme", "Central message or idea"]] },
     ],
     fill: [
       { sentence: "The ___ is the control centre of a cell.", options: ["nucleus", "mitochondria", "ribosome", "membrane"], answer: "nucleus", explanation: "The nucleus contains DNA and controls cell activities." },
       { sentence: "In the equation 2x + 4 = 10, x = ___.", options: ["2", "3", "4", "6"], answer: "3", explanation: "Subtract 4 from both sides: 2x = 6, then divide by 2: x = 3." },
       { sentence: "Photosynthesis converts light energy into ___ energy.", options: ["chemical", "kinetic", "thermal", "electrical"], answer: "chemical", explanation: "Plants store light energy as chemical energy in glucose." },
+      // Maths
+      { sentence: "The gradient of y = 3x + 5 is ___.", options: ["3", "5", "8", "15"], answer: "3", explanation: "In y = mx + c, m is the gradient. Here m = 3." },
+      { sentence: "The sum of angles in a quadrilateral is ___ degrees.", options: ["180", "270", "360", "540"], answer: "360", explanation: "All quadrilaterals have interior angles adding to 360 degrees." },
+      // Physics
+      { sentence: "The unit of force is the ___.", options: ["joule", "newton", "watt", "volt"], answer: "newton", explanation: "Force is measured in newtons (N), named after Isaac Newton." },
+      // Chemistry
+      { sentence: "The chemical symbol for sodium is ___.", options: ["S", "So", "Na", "Sd"], answer: "Na", explanation: "Na comes from the Latin word 'natrium' for sodium." },
+      // English
+      { sentence: "A text that tries to convince you is called ___.", options: ["narrative", "persuasive", "descriptive", "informative"], answer: "persuasive", explanation: "Persuasive texts use arguments and evidence to convince the reader." },
+      // Pakistan Studies
+      { sentence: "The Lahore Resolution was passed in ___.", options: ["1935", "1940", "1945", "1947"], answer: "1940", explanation: "The Lahore Resolution of 1940 demanded a separate Muslim state." },
     ],
     truefalse: [
       { statement: "The Mughal Empire was founded by Babur in 1526.", answer: true, explanation: "Babur defeated Ibrahim Lodi at the Battle of Panipat and established Mughal rule." },
       { statement: "In a food chain, producers are at the top.", answer: false, explanation: "Producers (plants) are at the bottom — they make energy from sunlight." },
       { statement: "The atomic number of an element tells you the number of protons.", answer: true, explanation: "The atomic number equals the number of protons in the nucleus." },
+      // Maths
+      { statement: "The square root of 144 is 12.", answer: true, explanation: "12 x 12 = 144." },
+      { statement: "Pi is exactly 3.14.", answer: false, explanation: "Pi is irrational and approximately 3.14159... It never terminates." },
+      // Physics
+      { statement: "Speed equals distance divided by time.", answer: true, explanation: "Speed = distance / time is the basic formula for speed." },
+      // Chemistry
+      { statement: "An acid has a pH less than 7.", answer: true, explanation: "Acids range from pH 0 to just below 7." },
+      // English
+      { statement: "An autobiography is written by the person it is about.", answer: true, explanation: "Auto = self. An autobiography is a self-written life story." },
+      // Pakistan Studies
+      { statement: "Sir Syed Ahmed Khan founded Aligarh Muslim University.", answer: true, explanation: "Sir Syed established MAO College in 1875, which became Aligarh Muslim University." },
     ],
     picture: [
       { scenario: "You set up an experiment: two identical plants, one in sunlight and one in a dark cupboard. After a week, the sunlit plant is green and healthy; the dark one is yellow and wilting.", prompt: "Step by step, explain what happened and why. What was the independent variable?" },
       { scenario: "You are given data showing that a car travels 60 km in the first hour, 45 km in the second hour, and 30 km in the third hour.", prompt: "Describe the pattern. Calculate the average speed. What might explain the change?" },
+      // Maths
+      { scenario: "You have the equation 2x + 3y = 12 and x + y = 5. Solve for x and y step by step.", prompt: "Show your working clearly. What are x and y?" },
     ],
   },
 
@@ -514,20 +1121,41 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["DNA", "Genetic code"], ["Atom", "Smallest particle"], ["Gravity", "Pulls things down"], ["Photon", "Particle of light"]] },
       { pairs: [["Revenue", "Money coming in"], ["Profit", "Revenue minus costs"], ["Tax", "Government takes a share"], ["Budget", "Plan for spending"]] },
+      // Maths
+      { pairs: [["Pythagoras", "a² + b² = c²"], ["BODMAS", "Order of operations"], ["Pi", "Roughly 3.14"], ["Hypotenuse", "Longest side of right triangle"]] },
     ],
     fill: [
       { sentence: "Speed = distance / ___.", options: ["time", "mass", "force", "area"], answer: "time", explanation: "Speed is how far you go divided by how long it takes." },
       { sentence: "The chemical symbol for water is ___.", options: ["CO2", "H2O", "NaCl", "O2"], answer: "H2O", explanation: "Two hydrogen atoms bonded to one oxygen atom." },
       { sentence: "The largest desert in the world is the ___.", options: ["Sahara", "Gobi", "Antarctic", "Thar"], answer: "Antarctic", explanation: "Surprised? Antarctica is technically the largest desert — it gets almost no precipitation!" },
+      // Maths
+      { sentence: "If a right triangle has sides 3 and 4, the hypotenuse is ___.", options: ["5", "6", "7", "8"], answer: "5", explanation: "3² + 4² = 9 + 16 = 25. The square root of 25 = 5. Classic Pythagoras!" },
+      { sentence: "What is 15% of 200? ___.", options: ["15", "20", "30", "35"], answer: "30", explanation: "15/100 x 200 = 30. Quick shortcut: 10% is 20, 5% is 10, total = 30!" },
+      // Physics
+      { sentence: "Ohm's Law: V = I x ___.", options: ["R", "P", "W", "F"], answer: "R", explanation: "Voltage = Current x Resistance. V = IR. Memorise it!" },
+      // Chemistry
+      { sentence: "The chemical symbol for gold is ___.", options: ["Go", "Gd", "Au", "Ag"], answer: "Au", explanation: "Au from Latin 'aurum'. Silver is Ag from 'argentum'. Chemistry is weird!" },
+      // Pakistan Studies
+      { sentence: "The first capital of Pakistan was ___.", options: ["Islamabad", "Lahore", "Karachi", "Rawalpindi"], answer: "Karachi", explanation: "Karachi was Pakistan's first capital before Islamabad was built!" },
     ],
     truefalse: [
       { statement: "Octopuses have three hearts.", answer: true, explanation: "Two pump blood to the gills, one pumps it to the body. Wild!" },
       { statement: "Lightning never strikes the same place twice.", answer: false, explanation: "Totally false! Tall buildings like the Empire State Building get struck dozens of times a year." },
       { statement: "Sound travels faster than light.", answer: false, explanation: "Light is way faster — that is why you see lightning before hearing thunder." },
+      // Maths
+      { statement: "A negative number multiplied by a negative gives a positive.", answer: true, explanation: "(-) x (-) = (+). Two negatives make a positive!" },
+      // Physics
+      { statement: "In space, no one can hear you scream.", answer: true, explanation: "Sound needs a medium. Space is a vacuum — no medium, no sound!" },
+      // Chemistry
+      { statement: "Diamond is made entirely of carbon atoms.", answer: true, explanation: "Pure diamond is just carbon atoms in a giant covalent structure. Incredible!" },
+      // Pakistan Studies
+      { statement: "Pakistan won the Cricket World Cup in 1992.", answer: true, explanation: "Imran Khan led Pakistan to World Cup victory in 1992 in Melbourne!" },
     ],
     picture: [
       { scenario: "You have been given Rs 5,000 to start a small school tuck shop. You need to buy stock, set prices, and make a profit.", prompt: "Quick plan: What 3 items do you buy? What price do you sell them for? What is your expected profit?" },
       { scenario: "Design a 5-minute experiment to test which paper aeroplane design flies the furthest. You have 3 sheets of paper.", prompt: "What are your 3 designs? How do you make it a fair test? Go!" },
+      // Maths
+      { scenario: "You throw a ball upward. Its height in metres is h = 20t - 5t². When does it hit the ground?", prompt: "Solve for t when h = 0. What is the maximum height?" },
     ],
   },
 
@@ -536,20 +1164,46 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["Volcano", "Mountain that erupts lava"], ["Earthquake", "Ground shakes suddenly"], ["Tsunami", "Giant ocean wave"], ["Erosion", "Land worn away slowly"]] },
       { pairs: [["Democracy", "People choose leaders"], ["Dictatorship", "One ruler, total control"], ["Monarchy", "King or queen rules"], ["Republic", "Elected head of state"]] },
+      // Maths
+      { pairs: [["Ratio", "Comparing two amounts"], ["Proportion", "Two equal ratios"], ["Percentage", "Out of 100"], ["Fraction", "Part of a whole"]] },
     ],
     fill: [
       { sentence: "Plants take in ___ and release oxygen.", options: ["carbon dioxide", "nitrogen", "hydrogen", "helium"], answer: "carbon dioxide", explanation: "During photosynthesis, plants absorb CO2 and produce O2." },
       { sentence: "A right angle measures ___ degrees.", options: ["45", "90", "180", "360"], answer: "90", explanation: "A right angle is exactly 90 degrees — like the corner of a book." },
       { sentence: "Pakistan became independent in ___.", options: ["1945", "1947", "1950", "1952"], answer: "1947", explanation: "Pakistan gained independence on 14th August 1947." },
+      // Maths
+      { sentence: "20% of 150 is ___.", options: ["20", "25", "30", "35"], answer: "30", explanation: "20/100 x 150 = 30." },
+      { sentence: "The ratio 4:8 in its simplest form is ___.", options: ["1:2", "2:4", "1:3", "2:3"], answer: "1:2", explanation: "Divide both by 4 to get 1:2." },
+      // Physics
+      { sentence: "Light travels in straight ___.", options: ["lines", "curves", "circles", "zigzags"], answer: "lines", explanation: "Light always travels in straight lines. This is called rectilinear propagation." },
+      // Chemistry
+      { sentence: "Acids turn litmus paper ___.", options: ["blue", "green", "red", "yellow"], answer: "red", explanation: "Acids turn blue litmus red. Alkalis turn red litmus blue." },
+      // English
+      { sentence: "The main idea of a paragraph is called the ___ sentence.", options: ["topic", "closing", "supporting", "linking"], answer: "topic", explanation: "The topic sentence tells the reader what the paragraph is about." },
+      // Pakistan Studies
+      { sentence: "The Two-Nation Theory said Hindus and Muslims are two separate ___.", options: ["countries", "nations", "cities", "tribes"], answer: "nations", explanation: "The Two-Nation Theory was the basis for creating Pakistan." },
     ],
     truefalse: [
       { statement: "The heart pumps blood around the body.", answer: true, explanation: "The heart is a muscle that pumps blood through arteries and veins." },
       { statement: "Gravity only exists on Earth.", answer: false, explanation: "Gravity exists everywhere — the Moon, the Sun, and all planets have gravity." },
       { statement: "Islamabad is the capital city of Pakistan.", answer: true, explanation: "Islamabad has been the capital since 1967." },
+      // Maths
+      { statement: "The mean is found by adding values and dividing by how many there are.", answer: true, explanation: "Mean = total of all values / number of values." },
+      { statement: "A cube has 8 faces.", answer: false, explanation: "A cube has 6 faces, 12 edges, and 8 vertices." },
+      // Physics
+      { statement: "Metals are good conductors of electricity.", answer: true, explanation: "Metals have free electrons that allow current to flow easily." },
+      // Chemistry
+      { statement: "Water is made of hydrogen and oxygen.", answer: true, explanation: "H2O = two hydrogen atoms and one oxygen atom." },
+      // English
+      { statement: "Every essay needs an introduction and a conclusion.", answer: true, explanation: "A good essay has a clear beginning, middle, and end." },
+      // Pakistan Studies
+      { statement: "The Pakistan Movement was led by the Muslim League.", answer: true, explanation: "The All-India Muslim League, under Jinnah, led the Pakistan Movement." },
     ],
     picture: [
       { scenario: "Someone tells you: 'All birds can fly.' Think about penguins, ostriches, and kiwis.", prompt: "Is the statement true or false? Explain your reasoning in your own words." },
       { scenario: "A shop has a sale: 50% off everything. A jacket costs Rs 2,000 before the sale.", prompt: "What is the sale price? How did you work it out?" },
+      // Maths
+      { scenario: "A shirt costs Rs 2,500. It is on sale for 20% off. Work out the sale price.", prompt: "What is the new price? Show your steps." },
     ],
   },
 
@@ -558,20 +1212,42 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["Rs 10 note", "Can buy a small snack"], ["Rs 100 note", "Can buy a meal"], ["Rs 500 note", "Can buy groceries"], ["Rs 1000 note", "Can buy clothes"]] },
       { pairs: [["Toothbrush", "Clean your teeth"], ["Oven", "Cook food"], ["Phone", "Call someone"], ["Key", "Open a door"]] },
+      // Maths
+      { pairs: [["50%", "Half of something"], ["25%", "A quarter"], ["10%", "One tenth"], ["100%", "The whole thing"]] },
     ],
     fill: [
       { sentence: "If something costs Rs 80 and you pay Rs 100, your change is Rs ___.", options: ["10", "20", "30", "40"], answer: "20", explanation: "100 minus 80 equals 20 rupees change." },
       { sentence: "To cross the road safely, you look ___ then right then left again.", options: ["left", "up", "down", "behind"], answer: "left", explanation: "In Pakistan, traffic comes from the left first, so look left first." },
       { sentence: "There are ___ hours in one day.", options: ["12", "20", "24", "30"], answer: "24", explanation: "A full day and night together make 24 hours." },
+      // Maths
+      { sentence: "50% of Rs 200 is Rs ___.", options: ["50", "100", "150", "200"], answer: "100", explanation: "Half of 200 is 100." },
+      { sentence: "If a bus leaves at 10:00 and takes 2 hours, it arrives at ___.", options: ["11:00", "12:00", "1:00", "2:00"], answer: "12:00", explanation: "10:00 plus 2 hours = 12:00 noon." },
+      // English
+      { sentence: "A letter to a friend is called an ___ letter.", options: ["informal", "formal", "business", "official"], answer: "informal", explanation: "Informal letters are written to people we know well." },
+      // Pakistan Studies
+      { sentence: "Pakistan's Independence Day is on ___ August.", options: ["12th", "14th", "15th", "23rd"], answer: "14th", explanation: "Pakistan celebrates Independence Day on 14th August every year." },
+      // Physics
+      { sentence: "A magnet has two poles: north and ___.", options: ["east", "west", "south", "up"], answer: "south", explanation: "Every magnet has a north pole and a south pole." },
     ],
     truefalse: [
       { statement: "You should wash your hands before eating.", answer: true, explanation: "Washing hands removes germs and keeps you healthy." },
       { statement: "It is safe to talk to strangers who offer you a ride.", answer: false, explanation: "Never get in a car with someone you do not know. Tell a trusted adult." },
       { statement: "Drinking water is good for your body.", answer: true, explanation: "Your body needs water every day to stay healthy and strong." },
+      // Maths
+      { statement: "If you save Rs 10 every day for a week, you save Rs 70.", answer: true, explanation: "7 days x Rs 10 = Rs 70." },
+      { statement: "25% means three quarters.", answer: false, explanation: "25% means one quarter. Three quarters is 75%." },
+      // English
+      { statement: "A formal letter starts with 'Dear Sir/Madam'.", answer: true, explanation: "Formal letters use polite openings like Dear Sir or Dear Madam." },
+      // Pakistan Studies
+      { statement: "Pakistan's national animal is the markhor.", answer: true, explanation: "The markhor is a mountain goat found in Pakistan's northern areas." },
+      // Chemistry
+      { statement: "Salt dissolves in water.", answer: true, explanation: "Salt (NaCl) dissolves in water to form a solution." },
     ],
     picture: [
       { scenario: "You are at a shop. You want to buy a drink for Rs 50 and a sandwich for Rs 150. You have Rs 200.", prompt: "Do you have enough money? How much is left over?" },
       { scenario: "You are at school and another student says something unkind to you.", prompt: "What would you do? Who could you talk to for help?" },
+      // Maths
+      { scenario: "You have Rs 500. You want to buy a bag for Rs 350 and a pen for Rs 100.", prompt: "Can you buy both? How much is left over?" },
     ],
   },
 
@@ -1910,9 +2586,9 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
     <div style={S.page}><style>{CSS}</style>
       <Head>
         <title>Special Needs Support — NewWorldEdu</title>
-        <meta name="description" content="AI tutoring adapted for autism, ADHD, dyslexia, and Down syndrome. 140 teaching profiles with evidence-based strategies for Pakistani students." />
-        <meta property="og:title" content="Special Needs Support — Adapted AI Tutoring" />
-        <meta property="og:description" content="AI tutoring adapted for autism, ADHD, dyslexia, and Down syndrome. 140 teaching profiles with evidence-based strategies for Pakistani students." />
+        <meta name="description" content="Tutoring adapted for autism, ADHD, dyslexia, and Down syndrome. 140 teaching profiles with evidence-based strategies for Pakistani students." />
+        <meta property="og:title" content="Special Needs Support — Adapted Tutoring" />
+        <meta property="og:description" content="Tutoring adapted for autism, ADHD, dyslexia, and Down syndrome. 140 teaching profiles with evidence-based strategies for Pakistani students." />
       </Head>
 
       {/* HEADER */}

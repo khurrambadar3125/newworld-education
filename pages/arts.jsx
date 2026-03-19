@@ -100,9 +100,9 @@ export default function ArtsPage() {
     <>
     <Head>
       <title>Arts — NewWorldEdu</title>
-      <meta name="description" content="Learn arts and creative expression with AI guidance. Drawing, design, and art history for all ages and abilities." />
+      <meta name="description" content="Learn arts and creative expression with personalised guidance. Drawing, design, and art history for all ages and abilities." />
       <meta property="og:title" content="Arts — NewWorldEdu" />
-      <meta property="og:description" content="Learn arts and creative expression with AI guidance. Drawing, design, and art history for all ages and abilities." />
+      <meta property="og:description" content="Learn arts and creative expression with personalised guidance. Drawing, design, and art history for all ages and abilities." />
     </Head>
     <div style={{ minHeight:"100vh", background:"linear-gradient(135deg,#060B20 0%,#0D1635 60%,#060B20 100%)", fontFamily:"'Nunito',sans-serif", color:"#fff" }}>
       <style>{CSS}</style>
@@ -252,7 +252,7 @@ export default function ArtsPage() {
             </div>
         <div style={{ marginTop:32, paddingTop:20, borderTop:"1px solid rgba(255,255,255,0.05)", textAlign:"center" }}>
           <p style={{ fontSize:11, color:"rgba(255,255,255,0.2)", lineHeight:1.8, maxWidth:560, margin:"0 auto" }}>
-            NewWorldEdu is an AI educational platform — not a replacement for qualified art teachers.{" "}
+            NewWorldEdu is an educational platform — not a replacement for qualified art teachers.{" "}
             <a href="/disclaimer" style={{ color:"rgba(255,255,255,0.3)", textDecoration:"underline" }}>Disclaimer</a>
             {" · "}© 2026 NewWorldEdu
           </p>

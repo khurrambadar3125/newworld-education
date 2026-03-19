@@ -13,7 +13,7 @@ export default function Privacy() {
 
         <div style={{fontSize:15,lineHeight:1.8,color:'rgba(255,255,255,0.75)'}}>
           <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>Who We Are</h2>
-          <p>NewWorld Education ("NewWorldEdu", "we", "us") operates the website newworld.education. We provide AI-powered educational tutoring services for students from KG through A Levels, with a focus on Cambridge O Level and A Level curriculum in Pakistan.</p>
+          <p>NewWorld Education ("NewWorldEdu", "we", "us") operates the website newworld.education. We provide personalised educational tutoring services for students from KG through A Levels, with a focus on Cambridge O Level and A Level curriculum in Pakistan.</p>
 
           <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>What Data We Collect</h2>
           <p><strong>Account information:</strong> Name, email address, and role (student/parent/teacher) when you register. Google account details if you sign in with Google.</p>
@@ -23,15 +23,15 @@ export default function Privacy() {
 
           <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>How We Use Your Data</h2>
           <ul style={{paddingLeft:20}}>
-            <li>To provide personalised AI tutoring adapted to your grade and subject</li>
+            <li>To provide personalised tutoring adapted to your grade and subject</li>
             <li>To send session reports to parents after each learning session</li>
             <li>To send daily Cambridge exam questions to subscribers</li>
             <li>To track learning progress, weak topics, and areas for improvement</li>
-            <li>To improve our educational content and AI tutoring quality</li>
+            <li>To improve our educational content and tutoring quality</li>
           </ul>
 
           <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>Data Storage</h2>
-          <p>Your data is stored securely on Vercel (hosting) and Upstash Redis (database). Chat sessions are processed by Anthropic's Claude AI. We do not sell, rent, or share your personal data with third parties for marketing purposes.</p>
+          <p>Your data is stored securely on Vercel (hosting) and Upstash Redis (database). Chat sessions are processed securely by our technology partner. We do not sell, rent, or share your personal data with third parties for marketing purposes.</p>
 
           <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>Children's Privacy</h2>
           <p>NewWorldEdu is designed for use by children with parental consent. We collect minimal data from children (name, grade, chat messages for learning purposes). Parents can request deletion of their child's data at any time by emailing us.</p>

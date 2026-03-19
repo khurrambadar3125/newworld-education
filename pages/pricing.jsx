@@ -149,7 +149,7 @@ const PLANS = [
     for: 'SEN Students',
     features: [
       '1 child',
-      'SEN-trained AI tutor',
+      'SEN-trained tutor',
       'Unlimited sessions per day',
       'Adaptive learning pace',
       'Interactive SEN exercises',
@@ -230,7 +230,7 @@ export default function Pricing() {
     <>
       <Head>
         <title>Plans & Pricing — NewWorldEdu</title>
-        <meta name="description" content="Choose your NewWorldEdu plan. AI-powered tutoring from KG to A-Levels." />
+        <meta name="description" content="Choose your NewWorldEdu plan. Personalised tutoring from KG to A-Levels." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
       </Head>
@@ -353,9 +353,9 @@ export default function Pricing() {
         <a href="/" className="back-link">← Back to Starky</a>
 
         <div className="hero">
-          <div className="hero-badge">★ Powered by Claude AI</div>
+          <div className="hero-badge">★ Powered by NewWorldEdu</div>
           <h1>Unlock <span>Unlimited Learning</span><br />for Your Child</h1>
-          <p>Expert AI tutoring from KG through A-Levels. Personalised, affordable, available 24/7.</p>
+          <p>Expert tutoring from KG through A-Levels. Personalised, affordable, available 24/7.</p>
         </div>
 
         <div className="trial-banner">

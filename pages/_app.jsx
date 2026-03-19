@@ -122,14 +122,14 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
             "name": "NewWorld Education",
             "url": "https://www.newworld.education",
             "logo": "https://www.newworld.education/favicon.svg",
-            "description": "AI-powered tutoring platform for Cambridge O Level and A Level students in Pakistan. Personal tutor for every child, KG to A Levels.",
+            "description": "Personalised tutoring platform for Cambridge O Level and A Level students in Pakistan. Personal tutor for every child, KG to A Levels.",
             "address": { "@type": "PostalAddress", "addressCountry": "PK" },
             "sameAs": [],
             "offers": {
               "@type": "Offer",
               "price": "29.99",
               "priceCurrency": "USD",
-              "description": "AI tutoring subscription — all subjects, 24/7"
+              "description": "Tutoring subscription — all subjects, 24/7"
             }
           })}} />
         </Head>

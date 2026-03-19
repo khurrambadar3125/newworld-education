@@ -5,7 +5,7 @@ export default function Terms() {
     <div style={{minHeight:'100vh',background:'#080C18',color:'#fff',fontFamily:"'Nunito',-apple-system,sans-serif",padding:'40px 20px 80px'}}>
       <Head>
         <title>Terms of Service — NewWorld Education</title>
-        <meta name="description" content="Terms of service for NewWorld Education AI tutoring platform." />
+        <meta name="description" content="Terms of service for NewWorld Education tutoring platform." />
       </Head>
       <div style={{maxWidth:680,margin:'0 auto'}}>
         <h1 style={{fontSize:28,fontWeight:900,marginBottom:24}}>Terms of Service</h1>
@@ -13,13 +13,13 @@ export default function Terms() {
 
         <div style={{fontSize:15,lineHeight:1.8,color:'rgba(255,255,255,0.75)'}}>
           <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>1. Service Description</h2>
-          <p>NewWorld Education provides AI-powered educational tutoring through our platform at newworld.education. Our AI tutor "Starky" assists students with homework help, exam preparation, essay marking, and practice drills for Cambridge O Level, A Level, and Pakistan board examinations.</p>
+          <p>NewWorld Education provides personalised educational tutoring through our platform at newworld.education. Our tutor "Starky" assists students with homework help, exam preparation, essay marking, and practice drills for Cambridge O Level, A Level, and Pakistan board examinations.</p>
 
           <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>2. Acceptable Use</h2>
           <p>Our platform is for educational purposes only. Users must not attempt to use Starky for non-educational purposes, generate harmful content, or misuse the platform. We reserve the right to suspend accounts that violate these terms.</p>
 
-          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>3. AI Tutoring Disclaimer</h2>
-          <p>Starky is an AI tutor, not a human teacher. While we strive for accuracy in all educational content, AI-generated responses may occasionally contain errors. Students should verify critical exam-related information with their teachers or official Cambridge resources.</p>
+          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>3. Tutoring Disclaimer</h2>
+          <p>Starky is a digital tutor, not a human teacher. While we strive for accuracy in all educational content, generated responses may occasionally contain errors. Students should verify critical exam-related information with their teachers or official Cambridge resources.</p>
 
           <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>4. Subscriptions & Payments</h2>
           <p>Paid subscriptions are billed monthly via PayPal. All plans include a 7-day free trial. You may cancel at any time. Refunds are available within 30 days of purchase if you are unsatisfied with the service.</p>
