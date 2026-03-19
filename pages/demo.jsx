@@ -274,27 +274,55 @@ export default function DemoPage() {
 
   const send = async (text) => {
     const t = text || input.trim();
-    if (!t || loading) return;
+    if (!t && !imageData) return;
+    if (loading) return;
     if (limitReached) { setShowLimit(true); return; }
     recordCall();
+    const currentImage = imageData;
     setInput("");
+    setImageData(null);
     setLoading(true);
-    const history = [...messages, { role: "user", content: t }];
+
+    // Build message content — text only or text + image
+    let userContent = t || 'Please help me with this image.';
+    const displayMsg = currentImage ? `📷 [Image attached] ${t || ''}`.trim() : t;
+    const history = [...messages, { role: "user", content: displayMsg }];
     setMessages(history);
+
     try {
-      const res = await fetch("/api/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          model: "claude-haiku-4-5-20251001",
-          max_tokens: 800,
-          system: subject.system,
-          messages: history.map(m => ({ role: m.role, content: m.content })),
-        }),
-      });
-      const data = await res.json();
-      const reply = data.content?.[0]?.text || "Let me think about that — try asking again! 🌟";
-      setMessages(prev => [...prev, { role: "assistant", content: reply }]);
+      // If image attached, use /api/anthropic which handles images
+      if (currentImage) {
+        const base64 = currentImage.split(',')[1];
+        const mediaType = currentImage.split(';')[0].split(':')[1] || 'image/jpeg';
+        const res = await fetch("/api/anthropic", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            message: userContent,
+            imageBase64: base64,
+            imageMediaType: mediaType,
+            userProfile: { name: childName || 'Student', grade: subject.label },
+            sessionMemory: { currentSubject: subject.label },
+          }),
+        });
+        const data = await res.json();
+        const reply = data.content || data.response || "Let me look at that — try again! 🌟";
+        setMessages(prev => [...prev, { role: "assistant", content: reply }]);
+      } else {
+        const res = await fetch("/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model: "claude-haiku-4-5-20251001",
+            max_tokens: 800,
+            system: subject.system,
+            messages: history.map(m => ({ role: m.role, content: m.content })),
+          }),
+        });
+        const data = await res.json();
+        const reply = data.content?.[0]?.text || "Let me think about that — try asking again! 🌟";
+        setMessages(prev => [...prev, { role: "assistant", content: reply }]);
+      }
     } catch {
       setMessages(prev => [...prev, { role: "assistant", content: "Something went wrong — please try again! 🌟" }]);
     }
