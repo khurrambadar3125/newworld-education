@@ -101,6 +101,9 @@ export default function Subscribe() {
               <a href="/drill" style={{ display:'block', width:'100%', maxWidth:'320px', background:'rgba(255,255,255,0.05)', border:'1px solid rgba(255,255,255,0.1)', color:'rgba(255,255,255,0.75)', borderRadius:'14px', padding:'14px 24px', fontFamily:"'Sora',sans-serif", fontWeight:600, fontSize:'15px', textDecoration:'none', textAlign:'center' }}>
                 Try a Drill Session →
               </a>
+              <a href="/countdown" style={{ display:'block', width:'100%', maxWidth:'320px', background:'rgba(99,210,255,0.08)', border:'1px solid rgba(99,210,255,0.2)', color:'#63D2FF', borderRadius:'14px', padding:'14px 24px', fontFamily:"'Sora',sans-serif", fontWeight:600, fontSize:'15px', textDecoration:'none', textAlign:'center' }}>
+                ⏱️ Set up your Exam Countdown
+              </a>
             </div>
           </div>
         ) : (

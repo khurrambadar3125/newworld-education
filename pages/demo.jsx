@@ -555,6 +555,18 @@ export default function DemoPage() {
                 : "→"}
             </button>
           </div>
+          {limitReached && (
+            <div style={{ textAlign:'center', padding:'10px 14px', margin:'8px 0 0', background:'rgba(255,107,107,0.08)', border:'1px solid rgba(255,107,107,0.2)', borderRadius:12 }}>
+              <div style={{ fontSize:13, fontWeight:700, color:'#FF6B6B', marginBottom:6 }}>Daily sessions used up!</div>
+              <div style={{ fontSize:11, color:'rgba(255,255,255,0.5)', marginBottom:8 }}>Try these free features:</div>
+              <div style={{ display:'flex', gap:6, justifyContent:'center', flexWrap:'wrap' }}>
+                <a href="/spelling-bee" style={{fontSize:11,fontWeight:700,color:'#FFC300',textDecoration:'none',background:'rgba(255,192,0,0.1)',border:'1px solid rgba(255,192,0,0.25)',borderRadius:100,padding:'4px 12px'}}>🐝 Spelling Bee</a>
+                <a href="/languages" style={{fontSize:11,fontWeight:700,color:'#7C5CBF',textDecoration:'none',background:'rgba(124,92,191,0.1)',border:'1px solid rgba(124,92,191,0.25)',borderRadius:100,padding:'4px 12px'}}>🌍 Languages</a>
+                <a href="/countdown" style={{fontSize:11,fontWeight:700,color:'#63D2FF',textDecoration:'none',background:'rgba(99,210,255,0.1)',border:'1px solid rgba(99,210,255,0.25)',borderRadius:100,padding:'4px 12px'}}>⏱️ Countdown</a>
+                <a href="/leaderboard" style={{fontSize:11,fontWeight:700,color:'#A8E063',textDecoration:'none',background:'rgba(168,224,99,0.1)',border:'1px solid rgba(168,224,99,0.25)',borderRadius:100,padding:'4px 12px'}}>🏆 Leaderboard</a>
+              </div>
+            </div>
+          )}
           <div style={{ textAlign: "center", fontSize: 10, color: "rgba(255,255,255,0.18)", marginTop: 5 }}>
             Powered by NewWorldEdu{childName ? ` · ${childName}` : ''}{limitReached ? '' : ` · ${callsLeft} sessions remaining`}
           </div>

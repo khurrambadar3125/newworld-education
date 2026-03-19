@@ -843,6 +843,9 @@ export default function ParentPage() {
               <div style={{fontSize:44,marginBottom:12}}>👶</div>
               <div style={{fontWeight:800,fontSize:16,marginBottom:8}}>No children added yet</div>
               <div style={{color:"rgba(255,255,255,0.4)",fontSize:13,marginBottom:20}}>Add your first child — they won't need an email.</div>
+              <button onClick={()=>setScreen("add-child")} style={{background:"linear-gradient(135deg,#4F8EF7,#7C5CBF)",border:"none",color:"#fff",borderRadius:14,padding:"14px 28px",fontFamily:"'Nunito',sans-serif",fontWeight:900,fontSize:16,cursor:"pointer",boxShadow:"0 4px 16px rgba(79,142,247,0.3)"}}>
+                🎉 Add Your First Child
+              </button>
             </div>
           ) : (
             <div style={{display:"flex",flexDirection:"column",gap:10}}>

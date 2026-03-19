@@ -616,8 +616,9 @@ function FunZone({ grade, subject, accent }) {
 
         <div style={{ fontSize:'64px', marginBottom:'16px' }}>🎉</div>
         <div style={{ fontWeight:'900', fontSize:'28px', color:accent, marginBottom:'8px' }}>AMAZING!</div>
-        <div style={{ fontSize:'18px', color:'rgba(255,255,255,0.7)', marginBottom:'4px' }}>You got {score} out of {currentExercises.length} correct!</div>
-        <div style={{ fontSize:'16px', color:accent, fontWeight:'800', marginBottom:'24px' }}>+{score * 5 + 20} XP earned!</div>
+        <div style={{ fontSize:'18px', color:'rgba(255,255,255,0.7)', marginBottom:'4px' }}>You finished all {currentExercises.length} exercises!</div>
+        <div style={{ fontSize:'16px', color:'rgba(255,255,255,0.6)', marginBottom:'4px' }}>Score: {score} out of {currentExercises.length} correct</div>
+        <div style={{ fontSize:'16px', color:accent, fontWeight:'800', marginBottom:'24px' }}>XP earned: +{score * 5 + 20}</div>
         <div style={{
           background:`${accent}22`, border:`2px solid ${accent}66`, borderRadius:'16px',
           padding:'12px 20px', display:'inline-flex', alignItems:'center', gap:'10px', marginBottom:'24px',
@@ -626,12 +627,19 @@ function FunZone({ grade, subject, accent }) {
           <span style={{ fontWeight:'900', fontSize:'20px', color:accent }}>Total: {xp} XP</span>
         </div>
         <br />
-        <button onClick={resetGame} style={{
-          ...btnBase, width:'auto', display:'inline-flex',
-          background:`linear-gradient(135deg, ${accent}, ${accent}CC)`,
-          color:'#0D0800', fontSize:'16px', padding:'14px 32px',
-          boxShadow:`0 6px 20px ${accent}55`,
-        }}>Play Again!</button>
+        <div style={{ display:'flex', gap:'12px', justifyContent:'center', flexWrap:'wrap', marginTop:'8px' }}>
+          <button onClick={resetGame} style={{
+            ...btnBase, width:'auto', display:'inline-flex',
+            background:`linear-gradient(135deg, ${accent}, ${accent}CC)`,
+            color:'#0D0800', fontSize:'16px', padding:'14px 32px',
+            boxShadow:`0 6px 20px ${accent}55`,
+          }}>Try Another Subject</button>
+          <a href="/" style={{
+            ...btnBase, width:'auto', display:'inline-flex', textDecoration:'none',
+            background:'rgba(79,142,247,0.15)', border:'2px solid rgba(79,142,247,0.4)',
+            color:'#4F8EF7', fontSize:'16px', padding:'14px 32px',
+          }}>Ask Starky for Help</a>
+        </div>
       </div>
     );
   }

@@ -663,7 +663,7 @@ export default function PastPapersPage() {
       const reply = data.content?.[0]?.text || "Something went wrong — try again!";
       setMessages(prev=>[...prev,{role:"assistant",content:reply}]);
     } catch {
-      setMessages(prev=>[...prev,{role:"assistant",content:"Something went wrong. Please try again!"}]);
+      setMessages(prev=>[...prev,{role:"assistant",content:"Something went wrong. Please try again!", isError:true}]);
     }
     setLoading(false);
   };
@@ -954,10 +954,21 @@ export default function PastPapersPage() {
                   )}
                   <div style={{
                     maxWidth:"88%", padding:"12px 16px", borderRadius:16,
-                    background:msg.role==="user"?`linear-gradient(135deg,${subject.color}CC,${subject.color}99)`:"rgba(255,255,255,0.06)",
+                    background:msg.role==="user"?`linear-gradient(135deg,${subject.color}CC,${subject.color}99)`:msg.isError?"rgba(255,107,107,0.1)":"rgba(255,255,255,0.06)",
                     color:msg.role==="user"?"#060B20":"#fff",
                     fontSize:14, lineHeight:1.75, fontWeight:msg.role==="user"?700:400, whiteSpace:"pre-wrap",
-                  }}>{msg.content}</div>
+                    border:msg.isError?"1px solid rgba(255,107,107,0.3)":"none",
+                  }}>
+                    {msg.content}
+                    {msg.isError && (
+                      <button onClick={()=>{
+                        const lastUserMsg = messages.filter(m=>m.role==="user").pop();
+                        if(lastUserMsg) { setMessages(prev=>prev.filter(m=>!m.isError)); sendMessage(lastUserMsg.content); }
+                      }} style={{display:"block",marginTop:8,background:"rgba(255,107,107,0.15)",border:"1px solid rgba(255,107,107,0.3)",borderRadius:8,padding:"6px 14px",color:"#FF6B6B",fontSize:12,fontWeight:700,cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>
+                        🔄 Retry
+                      </button>
+                    )}
+                  </div>
                 </div>
               ))}
               {loading&&(

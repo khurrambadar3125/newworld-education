@@ -221,13 +221,13 @@ export default function Home() {
 
     let greeting;
     if (isYoung) {
-      greeting = `Hi ${firstName}! 👋🌟 I'm Starky — your learning star!\n\n${subject ? `Let's learn ${subject} together! 🎯` : `What shall we learn? Tell me! 🎤`}\n\nYou can talk to me, or tap the 🎤 button to speak!`;
+      greeting = `Hi ${firstName}! 👋🌟 I'm Starky — your learning star!\n\n${subject ? `Let's learn ${subject} together! 🎯` : `What shall we learn? Tell me! 🎤`}\n\nYou can talk to me, or tap the 🎤 button to speak!\n\n💡 Besides chatting, you can also try the Spelling Bee 🐝, Practice Drills 🎯, and Exam Countdown ⏱️ — all free!`;
     } else if (isMiddle) {
-      greeting = `Hey ${firstName}! I'm Starky ★\n\n${subject ? `Let's work on ${subject}. ` : ''}I know your entire syllabus — every chapter, every concept. You can ask me anything, photograph your textbook, or say "quiz me" and I'll test you.\n\nWhat do you need help with?`;
+      greeting = `Hey ${firstName}! I'm Starky ★\n\n${subject ? `Let's work on ${subject}. ` : ''}I know your entire syllabus — every chapter, every concept. You can ask me anything, photograph your textbook, or say "quiz me" and I'll test you.\n\nWhat do you need help with?\n\n💡 Also try: Practice Drills, Spelling Bee, and Exam Countdown — all free!`;
     } else if (isMatric) {
-      greeting = `Hey ${firstName}! Starky here ★\n\nI know the ${subject || 'Matric'} board syllabus front to back — every numerical, every definition, every diagram the BISE examiner expects.\n\n${subject ? `Try me — ask anything about ${subject}, send a photo of your notes, or say "quiz me".` : 'Type your question, photograph your notes, or say "quiz me".'}\n\nRoman Urdu mein bhi pooch sakte ho 🇵🇰`;
+      greeting = `Hey ${firstName}! Starky here ★\n\nI know the ${subject || 'Matric'} board syllabus front to back — every numerical, every definition, every diagram the BISE examiner expects.\n\n${subject ? `Try me — ask anything about ${subject}, send a photo of your notes, or say "quiz me".` : 'Type your question, photograph your notes, or say "quiz me".'}\n\nRoman Urdu mein bhi pooch sakte ho 🇵🇰\n\n💡 Also try: Practice Drills, Exam Countdown, and Spelling Bee — all free!`;
     } else {
-      greeting = `Hey ${firstName}! Starky here ★\n\nI've gone through every ${subject || 'Cambridge'} past paper, mark scheme, and examiner report from 1994 to 2024.\n\n${subject ? `Ask me anything about ${subject} — past paper question, concept explanation, or say "quiz me on ${subject}".` : 'Ask me anything — homework, exam prep, or photograph your notes.'}\n\nCommand words, mark allocation, examiner expectations — I know it all.`;
+      greeting = `Hey ${firstName}! Starky here ★\n\nI've gone through every ${subject || 'Cambridge'} past paper, mark scheme, and examiner report from 1994 to 2024.\n\n${subject ? `Ask me anything about ${subject} — past paper question, concept explanation, or say "quiz me on ${subject}".` : 'Ask me anything — homework, exam prep, or photograph your notes.'}\n\nCommand words, mark allocation, examiner expectations — I know it all.\n\n💡 Also try: Practice Drills, Past Papers Hub, and Exam Countdown — all free!`;
     }
     if (isParent) greeting += '\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰';
     setMessages([{ role: 'assistant', content: greeting }]);
@@ -444,7 +444,7 @@ export default function Home() {
           )}
           {loading && <div className="msg assistant typing">Starky is thinking…</div>}
           {/* Quick suggestion chips — grade-appropriate */}
-          {messages.length === 1 && !loading && (
+          {(messages.length <= 1 || (messages.length > 0 && messages.length % 6 === 0)) && !loading && (
             <div style={{display:'flex',flexWrap:'wrap',gap:8,padding:'8px 0'}}>
               {(isYoung
                 ? (selectedSubject
@@ -475,7 +475,14 @@ export default function Home() {
           <div ref={messagesEndRef} />
         </div>
         {isLimitReached ? (
-          <div className="lw"><p>You've used all your free sessions for today.<br />Upgrade to keep learning without limits.</p><Link href="/pricing"><a>See Plans — from Rs 8,300/mo →</a></Link></div>
+          <div className="lw"><p>You've used all your free sessions for today.<br />Upgrade to keep learning without limits.</p><Link href="/pricing"><a>See Plans — from Rs 8,300/mo →</a></Link>
+            <div style={{marginTop:12,display:'flex',flexWrap:'wrap',gap:8,justifyContent:'center'}}>
+              <a href="/spelling-bee" style={{fontSize:12,fontWeight:700,color:'#FFC300',textDecoration:'none',background:'rgba(255,192,0,0.1)',border:'1px solid rgba(255,192,0,0.25)',borderRadius:100,padding:'6px 14px'}}>🐝 Spelling Bee</a>
+              <a href="/languages" style={{fontSize:12,fontWeight:700,color:'#7C5CBF',textDecoration:'none',background:'rgba(124,92,191,0.1)',border:'1px solid rgba(124,92,191,0.25)',borderRadius:100,padding:'6px 14px'}}>🌍 Languages</a>
+              <a href="/countdown" style={{fontSize:12,fontWeight:700,color:'#63D2FF',textDecoration:'none',background:'rgba(99,210,255,0.1)',border:'1px solid rgba(99,210,255,0.25)',borderRadius:100,padding:'6px 14px'}}>⏱️ Countdown</a>
+              <a href="/leaderboard" style={{fontSize:12,fontWeight:700,color:'#A8E063',textDecoration:'none',background:'rgba(168,224,99,0.1)',border:'1px solid rgba(168,224,99,0.25)',borderRadius:100,padding:'6px 14px'}}>🏆 Leaderboard</a>
+            </div>
+          </div>
         ) : (
           <div className="cia">
             <div className="ir">
@@ -804,8 +811,8 @@ export default function Home() {
               </div>
             </div>
             <div className="sw">
-              <button className="stb" disabled={!selectedGrade || !selectedSubject} onClick={handleStartChat}>
-                {!selectedGrade ? 'Select your grade above ↑' : !selectedSubject ? 'Select a subject ↑' : userProfile?.name ? `Continue as ${userProfile.name.split(' ')[0]} →` : 'Start with Starky ★'}
+              <button className="stb" disabled={!selectedGrade} onClick={handleStartChat}>
+                {!selectedGrade ? 'Select your grade above ↑' : !selectedSubject ? 'Chat with Starky →' : userProfile?.name ? `Continue as ${userProfile.name.split(' ')[0]} →` : 'Start with Starky ★'}
               </button>
             </div>
           </>

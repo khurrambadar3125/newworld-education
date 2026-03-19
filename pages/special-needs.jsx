@@ -3144,13 +3144,26 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
             <div style={{ background:"rgba(255,255,255,0.03)", border:"1px solid rgba(255,255,255,0.08)", borderRadius:20, overflow:"hidden" }}>
               <div role="log" aria-label="Chat with Starky" aria-live="polite" style={{ height:isMobile?400:500, overflowY:"auto", padding:isMobile?14:20, display:"flex", flexDirection:"column", gap:14 }}>
                 {messages.map((msg, i) => (
-                  <div key={i} aria-label={msg.role==="assistant"?"Starky says":"You said"} style={{ display:"flex", justifyContent:msg.role==="user"?"flex-end":"flex-start", gap:10, animation:"fadeUp 0.3s ease" }}>
-                    {msg.role==="assistant" && (
-                      <div aria-hidden="true" style={{ width:32, height:32, borderRadius:"50%", background:accentColor+"20", border:"1px solid "+accentColor+"40", display:"flex", alignItems:"center", justifyContent:"center", fontSize:16, flexShrink:0, marginTop:2 }}>💜</div>
-                    )}
-                    <div style={{ maxWidth:"88%", padding:"13px 16px", borderRadius:16, background:msg.role==="user" ? "linear-gradient(135deg,"+accentColor+"CC,"+accentColor+"88)" : "rgba(255,255,255,0.06)", color:msg.role==="user" ? "#060B20" : "rgba(255,255,255,0.93)", fontSize:15, lineHeight:1.85, fontWeight:msg.role==="user"?700:400, whiteSpace:"pre-wrap" }}>
-                      {msg.content}
+                  <div key={i}>
+                    <div aria-label={msg.role==="assistant"?"Starky says":"You said"} style={{ display:"flex", justifyContent:msg.role==="user"?"flex-end":"flex-start", gap:10, animation:"fadeUp 0.3s ease" }}>
+                      {msg.role==="assistant" && (
+                        <div aria-hidden="true" style={{ width:32, height:32, borderRadius:"50%", background:accentColor+"20", border:"1px solid "+accentColor+"40", display:"flex", alignItems:"center", justifyContent:"center", fontSize:16, flexShrink:0, marginTop:2 }}>💜</div>
+                      )}
+                      <div style={{ maxWidth:"88%", padding:"13px 16px", borderRadius:16, background:msg.role==="user" ? "linear-gradient(135deg,"+accentColor+"CC,"+accentColor+"88)" : "rgba(255,255,255,0.06)", color:msg.role==="user" ? "#060B20" : "rgba(255,255,255,0.93)", fontSize:15, lineHeight:1.85, fontWeight:msg.role==="user"?700:400, whiteSpace:"pre-wrap" }}>
+                        {msg.content}
+                      </div>
                     </div>
+                    {(i + 1) >= 10 && (i + 1) % 10 === 0 && (
+                      <div style={{ margin:"12px 0", padding:"14px 18px", background:"linear-gradient(135deg,"+accentColor+"12,rgba(255,255,255,0.03))", border:"1px solid "+accentColor+"30", borderRadius:16, textAlign:"center" }}>
+                        <div style={{ fontSize:14, fontWeight:800, color:accentColor, marginBottom:8 }}>🌟 Session Check</div>
+                        <div style={{ fontSize:12, color:"rgba(255,255,255,0.5)", marginBottom:10 }}>You've been learning for a while! What would you like to do?</div>
+                        <div style={{ display:"flex", gap:8, justifyContent:"center", flexWrap:"wrap" }}>
+                          <button onClick={()=>sendMessage("Let's keep going!")} style={{ background:accentColor+"22", border:"1px solid "+accentColor+"44", borderRadius:10, padding:"7px 16px", color:accentColor, fontSize:12, fontWeight:700, cursor:"pointer", fontFamily:"'Nunito',sans-serif" }}>Continue</button>
+                          <button onClick={()=>{ setStep(1); setMessages([]); }} style={{ background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.12)", borderRadius:10, padding:"7px 16px", color:"rgba(255,255,255,0.6)", fontSize:12, fontWeight:700, cursor:"pointer", fontFamily:"'Nunito',sans-serif" }}>Take a Break</button>
+                          <button onClick={async()=>{ try { const { shareLink } = await import('../utils/share'); const summary = messages.filter(m=>m.role==='assistant').slice(-1)[0]?.content?.slice(0,200)||''; await shareLink('drill',{name:condition?.name+' session',subject:subject||focus?.name||'SEN',pct:0,correct:messages.length,total:messages.length,weakAreas:[]},summary); alert('Session link copied!'); } catch{} }} style={{ background:"rgba(168,224,99,0.12)", border:"1px solid rgba(168,224,99,0.3)", borderRadius:10, padding:"7px 16px", color:"#A8E063", fontSize:12, fontWeight:700, cursor:"pointer", fontFamily:"'Nunito',sans-serif" }}>Share with Teacher</button>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 ))}
                 {loading && (
