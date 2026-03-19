@@ -173,12 +173,29 @@ Return ONLY valid JSON with these fields:
     "suggestedApproach": "one sentence on the best approach for THIS specific student next time"
   }
 }`;
-  const response = await anthropic.messages.create({ model: 'claude-haiku-4-5-20251001', max_tokens: 900, system: 'You are an expert educational analyst. Analyse tutoring sessions deeply — not just WHAT was taught but HOW it was taught and what techniques worked or failed. The session may be in Urdu or Roman Urdu — analyse in whatever language the messages are in. Return ONLY valid JSON.', messages: [{ role: 'user', content: prompt }] });
+  let raw = '';
   try {
-    const raw = response.content[0].text;
-    // Try parsing directly, or extract JSON from markdown code blocks
-    const jsonStr = raw.includes('```') ? raw.replace(/```json?\n?/g, '').replace(/```/g, '').trim() : raw.trim();
-    return JSON.parse(jsonStr);
+    const response = await anthropic.messages.create({ model: 'claude-haiku-4-5-20251001', max_tokens: 900, system: 'You are an expert educational analyst. Return ONLY raw JSON — no markdown, no code blocks, no explanation. Just the JSON object.', messages: [{ role: 'user', content: prompt }] });
+    raw = (response.content[0].text || '').trim();
+  } catch (apiErr) {
+    console.error('[SESSION ANALYSIS] API call failed:', apiErr.message);
+    raw = '';
+  }
+  try {
+    // Strip markdown code blocks if present
+    let jsonStr = raw;
+    if (jsonStr.includes('```')) jsonStr = jsonStr.replace(/```json?\n?/g, '').replace(/```\n?/g, '').trim();
+    // Strip any leading/trailing non-JSON chars
+    const firstBrace = jsonStr.indexOf('{');
+    const lastBrace = jsonStr.lastIndexOf('}');
+    if (firstBrace >= 0 && lastBrace > firstBrace) jsonStr = jsonStr.slice(firstBrace, lastBrace + 1);
+    const parsed = JSON.parse(jsonStr);
+    // Validate key fields exist
+    if (parsed.topicsCovered && parsed.teachingInsights) return parsed;
+    console.warn('[SESSION ANALYSIS] Parsed but missing key fields, raw:', raw.substring(0, 200));
+    return parsed; // return anyway, partial data is better than fallback
+  } catch (parseErr) {
+    console.error('[SESSION ANALYSIS] JSON parse failed. Raw response:', raw.substring(0, 300));
   }
   catch { return { topicsCovered: [subject], accuracyPercent: 70, durationMinutes: 20, strengths: ['Completed the session'], weakAreas: ['Continue practising'], nextGoals: [`Review ${subject}`], starkyPersonalMessage: `Great work today, ${studentName}!`, parentSummary: `${studentName} had a productive session on ${subject}.`, overallMood: 'positive', engagementLevel: 'medium', careerConnection: `${subject} opens many doors.`, teachingInsights: { whatWorked: [], whatDidntWork: [], studentLearningStyle: 'mixed', engagementPeaks: [], suggestedApproach: '' } }; }
 }
