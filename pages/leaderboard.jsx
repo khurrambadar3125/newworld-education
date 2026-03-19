@@ -192,7 +192,7 @@ export default function Leaderboard() {
         {!userProfile && (
           <div style={{ background:'rgba(255,179,71,0.08)', border:'1px solid rgba(255,179,71,0.2)', borderRadius:'16px', padding:'16px 18px', marginBottom:'20px', textAlign:'center' }}>
             <div style={{ fontSize:'14px', color:'rgba(255,255,255,0.6)', marginBottom:'12px' }}>Start a session with Starky to appear on the leaderboard</div>
-            <a href="/#start-learning" style={{ display:'inline-block', background:'linear-gradient(135deg,#4F8EF7,#6366F1)', color:'#fff', borderRadius:'12px', padding:'10px 24px', fontFamily:"'Sora',sans-serif", fontWeight:700, fontSize:'14px', textDecoration:'none' }}>
+            <a href="/demo" style={{ display:'inline-block', background:'linear-gradient(135deg,#4F8EF7,#6366F1)', color:'#fff', borderRadius:'12px', padding:'10px 24px', fontFamily:"'Sora',sans-serif", fontWeight:700, fontSize:'14px', textDecoration:'none' }}>
               Start Learning →
             </a>
           </div>
@@ -222,6 +222,7 @@ export default function Leaderboard() {
               <div style={{ fontSize:'40px', marginBottom:'12px' }}>🌱</div>
               <div style={{ fontWeight:700, fontSize:'16px', marginBottom:'8px' }}>No entries yet this week</div>
               <div style={{ color:'rgba(255,255,255,0.4)', fontSize:'13px' }}>Be the first to join the leaderboard!</div>
+              <a href="/demo" style={{ display:'inline-block', marginTop:16, padding:'12px 24px', borderRadius:12, background:'linear-gradient(135deg,#4F8EF7,#6366F1)', color:'#fff', fontWeight:700, fontSize:14, textDecoration:'none' }}>Start a session with Starky →</a>
             </div>
           ) : (
             <div>
@@ -292,7 +293,7 @@ export default function Leaderboard() {
 
         {/* CTA */}
         <div style={{ marginTop:'20px', textAlign:'center' }}>
-          <a href="/#start-learning" style={{ display:'inline-block', background:'linear-gradient(135deg,#4F8EF7,#6366F1)', color:'#fff', borderRadius:'14px', padding:'14px 32px', fontFamily:"'Sora',sans-serif", fontWeight:700, fontSize:'16px', textDecoration:'none', boxShadow:'0 8px 28px rgba(79,142,247,0.28)' }}>
+          <a href="/demo" style={{ display:'inline-block', background:'linear-gradient(135deg,#4F8EF7,#6366F1)', color:'#fff', borderRadius:'14px', padding:'14px 32px', fontFamily:"'Sora',sans-serif", fontWeight:700, fontSize:'16px', textDecoration:'none', boxShadow:'0 8px 28px rgba(79,142,247,0.28)' }}>
             Earn More Points with Starky ★
           </a>
         </div>

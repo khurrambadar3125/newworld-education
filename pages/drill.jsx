@@ -977,6 +977,11 @@ export default function DrillPage() {
             </button>
           </div>
 
+          <div style={{ display:'flex', gap:8, marginTop:12 }}>
+            <a href="/leaderboard" style={{ flex:1, textAlign:'center', padding:'12px', borderRadius:12, background:'rgba(255,195,0,0.1)', border:'1px solid rgba(255,195,0,0.25)', color:'#FFC300', fontWeight:700, fontSize:13, textDecoration:'none' }}>🏆 Leaderboard</a>
+            <a href="/past-papers" style={{ flex:1, textAlign:'center', padding:'12px', borderRadius:12, background:'rgba(99,210,255,0.1)', border:'1px solid rgba(99,210,255,0.25)', color:'#63D2FF', fontWeight:700, fontSize:13, textDecoration:'none' }}>📚 Past Papers</a>
+          </div>
+
           <button style={S.ghostBtn} onClick={() => setPhase('setup')}>Change Subject / Topic</button>
           <Link href="/"><a style={{...S.ghostBtn, display:'block', textAlign:'center', textDecoration:'none', marginTop:8}}>Back to Starky Chat</a></Link>
         </div>

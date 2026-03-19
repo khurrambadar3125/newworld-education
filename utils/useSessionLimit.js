@@ -367,6 +367,13 @@ export const LimitReachedModal = ({ onClose, grade, trialExpired }) => {
         )}
       </div>
 
+      <div style={{ display:'flex', gap:6, justifyContent:'center', flexWrap:'wrap', marginTop:12 }}>
+        {[{href:'/spelling-bee',label:'🐝 Spelling Bee'},{href:'/languages',label:'🌍 Languages'},{href:'/countdown',label:'⏱️ Countdown'},{href:'/leaderboard',label:'🏆 Leaderboard'}].map(l => (
+          <a key={l.href} href={l.href} style={{ fontSize:11, color:'rgba(255,255,255,0.4)', textDecoration:'none', padding:'4px 10px', borderRadius:20, background:'rgba(255,255,255,0.05)', border:'1px solid rgba(255,255,255,0.1)' }}>{l.label}</a>
+        ))}
+      </div>
+      <p style={{ fontSize:11, color:'rgba(255,255,255,0.2)', marginTop:8, textAlign:'center' }}>These features are free — no session limit!</p>
+
       <p style={{ marginTop: "16px", fontSize: "11px", color: "rgba(255,255,255,0.2)" }}>
         Schools & institutions: contact hello@newworld.education for group pricing
       </p>

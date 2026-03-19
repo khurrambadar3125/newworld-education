@@ -53,8 +53,8 @@ const DASHBOARD_CARDS = [
   { emoji: '🐝', title: 'Spelling Bee', sub: 'Spell words & win!', bg: '#FF8E53', href: '/spelling-bee' },
   { emoji: '🌍', title: 'Languages', sub: 'Learn French, Spanish & more!', bg: '#4ECDC4', href: '/languages' },
   { emoji: '📝', title: 'Homework Help', sub: 'Need help? I\'m here!', bg: '#63D2FF', href: '/homework' },
-  { emoji: '🎯', title: 'Practice', sub: 'Fun quizzes & games!', bg: '#A8E063', href: '/drill' },
-  { emoji: '🎨', title: 'Art & Craft', sub: 'Draw, paint, create!', bg: '#FF6B6B', href: '/homework' },
+  { emoji: '🎯', title: 'Practice', sub: 'Fun quizzes & games!', bg: '#A8E063', href: '/homework' },
+  { emoji: '🎨', title: 'Art & Craft', sub: 'Draw, paint, create!', bg: '#FF6B6B', href: '/arts' },
 ];
 
 /* ═══════════════════════════════════════

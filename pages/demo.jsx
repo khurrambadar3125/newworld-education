@@ -384,6 +384,9 @@ export default function DemoPage() {
             color: "#FFC300", padding: "5px 12px", borderRadius: 20,
             fontSize: 12, fontWeight: 700, textDecoration: "none",
           }}>{isMobile ? "👨‍👧‍👦" : "👨‍👧‍👦 Parents"}</a>
+          {childName && (
+            <a href="/parent" style={{ background:'rgba(168,224,99,0.12)', border:'1px solid rgba(168,224,99,0.3)', color:'#A8E063', padding:'5px 12px', borderRadius:20, fontSize:12, fontWeight:700, textDecoration:'none' }}>👨‍👩‍👧 Parent</a>
+          )}
         </div>
       </div>
 
@@ -554,6 +557,18 @@ export default function DemoPage() {
           </div>
           <div style={{ textAlign: "center", fontSize: 10, color: "rgba(255,255,255,0.18)", marginTop: 5 }}>
             Powered by NewWorldEdu{childName ? ` · ${childName}` : ''}{limitReached ? '' : ` · ${callsLeft} sessions remaining`}
+          </div>
+          <div style={{ display:'flex', gap:8, justifyContent:'center', padding:'8px 14px', flexWrap:'wrap' }}>
+            {[
+              { href:'/drill', label:'🎯 Drill', color:'#4F8EF7' },
+              { href:'/homework', label:'📝 Homework', color:'#A8E063' },
+              { href:'/essay', label:'✍️ Essay', color:'#FFC300' },
+              { href:'/past-papers', label:'📚 Papers', color:'#63D2FF' },
+              { href:'/languages', label:'🌍 Languages', color:'#7C5CBF' },
+              { href:'/spelling-bee', label:'🐝 Spelling', color:'#F59E0B' },
+            ].map(l => (
+              <a key={l.href} href={l.href} style={{ fontSize:10, fontWeight:700, color:l.color, textDecoration:'none', padding:'4px 10px', borderRadius:20, background:l.color+'15', border:`1px solid ${l.color}30` }}>{l.label}</a>
+            ))}
           </div>
         </div>
       </div>

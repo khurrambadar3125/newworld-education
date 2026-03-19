@@ -355,6 +355,7 @@ export default function EssayPage() {
                 background: 'rgba(168,224,99,.1)', border: '1px solid rgba(168,224,99,.25)', color: '#A8E063' }}>
                 📤 Share Result
               </button>
+              <a href="/past-papers" style={{ display:'block', textAlign:'center', padding:'12px', borderRadius:12, background:'rgba(99,210,255,0.08)', border:'1px solid rgba(99,210,255,0.2)', color:'#63D2FF', fontWeight:700, fontSize:13, textDecoration:'none', marginTop:8 }}>📚 Find more essay questions in Past Papers</a>
             </>
           )}
         </div>

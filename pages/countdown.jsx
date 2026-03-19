@@ -167,6 +167,23 @@ export default function CountdownPage() {
           {session === 'on26' && (
             <div style={{ background: 'rgba(252,211,77,.07)', border: '1px solid rgba(252,211,77,.2)', borderRadius: 12, padding: '12px 16px', marginBottom: 20, fontSize: 13, color: 'rgba(255,255,255,.55)', lineHeight: 1.6 }}>
               ⚠️ The official Oct/Nov 2026 Zone 4 timetable has not yet been published by Cambridge. Per-subject dates will be added when released.
+              <div style={{ textAlign:'center', padding:'20px', marginTop:16 }}>
+                <p style={{ color:'rgba(255,255,255,0.5)', fontSize:14, marginBottom:16 }}>October/November 2026 dates will be published by Cambridge around March-April 2026.</p>
+                <a href="/subscribe" style={{ display:'inline-block', padding:'12px 24px', borderRadius:12, background:'linear-gradient(135deg,#4F8EF7,#6366F1)', color:'#fff', fontWeight:700, fontSize:14, textDecoration:'none' }}>📬 Get notified when dates are released</a>
+                <p style={{ color:'rgba(255,255,255,0.3)', fontSize:12, marginTop:12 }}>In the meantime, keep preparing with Starky!</p>
+              </div>
+            </div>
+          )}
+
+          {examOver && (
+            <div style={{ textAlign:'center', padding:'24px', background:'rgba(74,222,128,0.08)', border:'1px solid rgba(74,222,128,0.2)', borderRadius:16, marginBottom:20 }}>
+              <div style={{ fontSize:48, marginBottom:8 }}>🎉</div>
+              <h3 style={{ fontSize:20, fontWeight:800, marginBottom:8 }}>June 2026 exams are complete!</h3>
+              <p style={{ color:'rgba(255,255,255,0.5)', fontSize:14, marginBottom:16 }}>Results will be published in August. Start preparing for October/November session now.</p>
+              <div style={{ display:'flex', gap:8, justifyContent:'center', flexWrap:'wrap' }}>
+                <a href="/drill" style={{ padding:'10px 20px', borderRadius:12, background:'rgba(79,142,247,0.15)', border:'1px solid rgba(79,142,247,0.3)', color:'#4F8EF7', fontWeight:700, fontSize:13, textDecoration:'none' }}>🎯 Keep practicing</a>
+                <a href="/subscribe" style={{ padding:'10px 20px', borderRadius:12, background:'rgba(168,224,99,0.15)', border:'1px solid rgba(168,224,99,0.3)', color:'#A8E063', fontWeight:700, fontSize:13, textDecoration:'none' }}>📬 Get Oct/Nov dates</a>
+              </div>
             </div>
           )}
 
