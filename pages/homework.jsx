@@ -89,6 +89,881 @@ const CRAFT_IDEAS = [
 const MODE_PARENT = "parent";
 const MODE_CHILD  = "child";
 
+/* ═══ AUDIO ENGINE ═══ */
+let _audioCtx=null;
+function getAudioCtx(){if(typeof window==='undefined')return null;if(!_audioCtx)try{_audioCtx=new(window.AudioContext||window.webkitAudioContext)()}catch{}return _audioCtx}
+function playTone(f,type,vol,dur,delay){const c=getAudioCtx();if(!c)return;const o=c.createOscillator(),g=c.createGain();o.connect(g);g.connect(c.destination);o.type=type||'sine';o.frequency.value=f;const t=c.currentTime+(delay||0);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(vol||0.2,t+0.02);g.gain.exponentialRampToValueAtTime(0.001,t+dur);o.start(t);o.stop(t+dur+0.05)}
+function sndOk(){playTone(523,'sine',0.22,0.32);playTone(659,'sine',0.22,0.32,0.16)}
+function sndErr(){playTone(220,'sawtooth',0.15,0.25)}
+function sndWin(){playTone(523,'sine',0.25,0.5);playTone(659,'sine',0.25,0.45,0.15);playTone(784,'sine',0.25,0.45,0.3)}
+function sndTick(){playTone(900,'sine',0.06,0.07)}
+
+/* ═══ FUN ZONE EXERCISE DATA ═══ */
+const FUN_EXERCISES = {
+  maths: {
+    kg: [
+      { type:'count', emoji:'🍎', items:3, options:[2,3,4,5] },
+      { type:'count', emoji:'⭐', items:5, options:[3,4,5,6] },
+      { type:'count', emoji:'🐟', items:2, options:[1,2,3,4] },
+      { type:'count', emoji:'🎈', items:4, options:[2,3,4,6] },
+      { type:'count', emoji:'🌺', items:1, options:[1,2,3,4] },
+      { type:'count', emoji:'🐱', items:6, options:[4,5,6,7] },
+      { type:'count', emoji:'🍌', items:7, options:[5,6,7,8] },
+    ],
+    g1: [
+      { type:'count', emoji:'➕', items:null, question:'2 + 3 = ?', answer:5, options:[4,5,6,7] },
+      { type:'count', emoji:'➕', items:null, question:'4 + 1 = ?', answer:5, options:[3,4,5,6] },
+      { type:'count', emoji:'➕', items:null, question:'3 + 3 = ?', answer:6, options:[5,6,7,8] },
+      { type:'count', emoji:'➕', items:null, question:'5 + 2 = ?', answer:7, options:[6,7,8,9] },
+      { type:'count', emoji:'➕', items:null, question:'1 + 6 = ?', answer:7, options:[5,6,7,8] },
+      { type:'count', emoji:'➕', items:null, question:'4 + 4 = ?', answer:8, options:[6,7,8,9] },
+      { type:'count', emoji:'➕', items:null, question:'3 + 5 = ?', answer:8, options:[7,8,9,10] },
+    ],
+    g2: [
+      { type:'count', emoji:'🔢', items:null, question:'9 + 6 = ?', answer:15, options:[13,14,15,16] },
+      { type:'count', emoji:'🔢', items:null, question:'15 - 7 = ?', answer:8, options:[7,8,9,10] },
+      { type:'count', emoji:'🔢', items:null, question:'8 + 9 = ?', answer:17, options:[15,16,17,18] },
+      { type:'count', emoji:'🔢', items:null, question:'14 - 6 = ?', answer:8, options:[6,7,8,9] },
+      { type:'count', emoji:'🔢', items:null, question:'7 + 8 = ?', answer:15, options:[14,15,16,17] },
+      { type:'count', emoji:'🔢', items:null, question:'20 - 5 = ?', answer:15, options:[13,14,15,16] },
+    ],
+    g3: [
+      { type:'count', emoji:'✖️', items:null, question:'2 × 6 = ?', answer:12, options:[10,11,12,14] },
+      { type:'count', emoji:'✖️', items:null, question:'3 × 4 = ?', answer:12, options:[9,10,12,15] },
+      { type:'count', emoji:'✖️', items:null, question:'5 × 3 = ?', answer:15, options:[10,12,15,20] },
+      { type:'count', emoji:'✖️', items:null, question:'5 × 5 = ?', answer:25, options:[20,25,30,35] },
+      { type:'count', emoji:'✖️', items:null, question:'3 × 7 = ?', answer:21, options:[18,20,21,24] },
+      { type:'count', emoji:'✖️', items:null, question:'2 × 9 = ?', answer:18, options:[16,18,20,22] },
+    ],
+    g4: [
+      { type:'count', emoji:'🍕', items:null, question:'1/2 + 1/2 = ?', answer:'1', options:['1/2','1','1 1/2','2'] },
+      { type:'count', emoji:'🍕', items:null, question:'1/4 + 1/4 = ?', answer:'1/2', options:['1/4','1/2','3/4','1'] },
+      { type:'count', emoji:'🍕', items:null, question:'3/4 - 1/4 = ?', answer:'1/2', options:['1/4','1/2','3/4','1'] },
+      { type:'count', emoji:'🍕', items:null, question:'1/3 + 1/3 = ?', answer:'2/3', options:['1/3','2/3','1','1/2'] },
+      { type:'count', emoji:'🍕', items:null, question:'Which is bigger: 1/2 or 1/4?', answer:'1/2', options:['1/4','1/2','Both equal','Neither'] },
+    ],
+    g5: [
+      { type:'count', emoji:'🔟', items:null, question:'0.5 + 0.3 = ?', answer:'0.8', options:['0.7','0.8','0.9','1.0'] },
+      { type:'count', emoji:'🔟', items:null, question:'1.2 + 0.8 = ?', answer:'2.0', options:['1.8','1.9','2.0','2.1'] },
+      { type:'count', emoji:'🔟', items:null, question:'3.5 - 1.5 = ?', answer:'2.0', options:['1.5','2.0','2.5','3.0'] },
+      { type:'count', emoji:'🔟', items:null, question:'0.25 + 0.75 = ?', answer:'1.0', options:['0.9','1.0','1.1','1.25'] },
+      { type:'count', emoji:'🔟', items:null, question:'2.4 - 0.6 = ?', answer:'1.8', options:['1.6','1.8','2.0','2.2'] },
+    ],
+    g6: [
+      { type:'count', emoji:'💯', items:null, question:'50% of 80 = ?', answer:'40', options:['30','35','40','45'] },
+      { type:'count', emoji:'💯', items:null, question:'25% of 100 = ?', answer:'25', options:['20','25','30','50'] },
+      { type:'count', emoji:'💯', items:null, question:'10% of 200 = ?', answer:'20', options:['10','20','30','40'] },
+      { type:'count', emoji:'💯', items:null, question:'75% of 40 = ?', answer:'30', options:['20','25','30','35'] },
+      { type:'count', emoji:'💯', items:null, question:'20% of 50 = ?', answer:'10', options:['5','10','15','20'] },
+    ],
+  },
+  english: {
+    kg: [
+      { type:'spell', word:'A', image:'🍎', options:['A','B','C'], hint:'Apple starts with...' },
+      { type:'spell', word:'B', image:'🐻', options:['A','B','D'], hint:'Bear starts with...' },
+      { type:'spell', word:'C', image:'🐱', options:['C','K','S'], hint:'Cat starts with...' },
+      { type:'spell', word:'D', image:'🐶', options:['B','D','P'], hint:'Dog starts with...' },
+      { type:'spell', word:'S', image:'☀️', options:['S','C','Z'], hint:'Sun starts with...' },
+      { type:'spell', word:'M', image:'🌙', options:['N','M','W'], hint:'Moon starts with...' },
+    ],
+    g1: [
+      { type:'spell', word:'CAT', image:'🐱', options:['CAT','KAT','CET'] },
+      { type:'spell', word:'DOG', image:'🐶', options:['DOG','DAG','DUG'] },
+      { type:'spell', word:'SUN', image:'☀️', options:['SAN','SON','SUN'] },
+      { type:'spell', word:'RED', image:'🔴', options:['RED','RID','RAD'] },
+      { type:'spell', word:'BIG', image:'🐘', options:['BAG','BIG','BUG'] },
+      { type:'spell', word:'HAT', image:'🎩', options:['HAT','HIT','HUT'] },
+    ],
+    g2: [
+      { type:'spell', word:'FISH', image:'🐟', options:['FISH','FESH','FICH'] },
+      { type:'spell', word:'TREE', image:'🌳', options:['TREE','TREA','TRIE'] },
+      { type:'spell', word:'BIRD', image:'🐦', options:['BERD','BIRD','BRID'] },
+      { type:'spell', word:'MOON', image:'🌙', options:['MONE','MOON','MUNE'] },
+      { type:'spell', word:'STAR', image:'⭐', options:['STAR','STER','STOR'] },
+      { type:'spell', word:'BOOK', image:'📖', options:['BUKE','BOOK','BOUK'] },
+    ],
+    g3: [
+      { type:'spell', word:'BEAUTIFUL', image:'🌸', options:['BEAUTFUL','BEAUTIFUL','BUETIFUL'] },
+      { type:'spell', word:'BECAUSE', image:'💡', options:['BECUZ','BECUSE','BECAUSE'] },
+      { type:'spell', word:'FRIEND', image:'🤝', options:['FRIEND','FREND','FREIND'] },
+      { type:'spell', word:'SCHOOL', image:'🏫', options:['SKOOL','SCHOOL','SHOOL'] },
+      { type:'spell', word:'PEOPLE', image:'👨‍👩‍👧‍👦', options:['PEPLE','PEOPLE','PEPOLE'] },
+    ],
+    g4: [
+      { type:'spell', word:'ENVIRONMENT', image:'🌍', options:['ENVIROMENT','ENVIRONMENT','ENVIORNMENT'] },
+      { type:'spell', word:'GOVERNMENT', image:'🏛️', options:['GOVERMENT','GOVERNMENT','GOVRNMENT'] },
+      { type:'spell', word:'KNOWLEDGE', image:'📚', options:['KNOWLEDGE','KNOWLEGE','KNOWLADGE'] },
+      { type:'spell', word:'NECESSARY', image:'✅', options:['NECCESSARY','NECESARY','NECESSARY'] },
+      { type:'spell', word:'SEPARATE', image:'↔️', options:['SEPARATE','SEPERATE','SEPARITE'] },
+    ],
+    g5: [
+      { type:'spell', word:'ENCYCLOPEDIA', image:'📖', options:['ENCYCLOPEDIA','ENCICLOPEDIA','ENCYCLOPAEDIA'] },
+      { type:'spell', word:'TEMPERATURE', image:'🌡️', options:['TEMPRATURE','TEMPERATURE','TEMPERTURE'] },
+      { type:'spell', word:'INDEPENDENCE', image:'🏳️', options:['INDEPENDANCE','INDEPENDENCE','INDIPENDENCE'] },
+      { type:'spell', word:'IMMEDIATELY', image:'⚡', options:['IMMEDIATELY','IMEDIATELY','IMMEDIATLY'] },
+      { type:'spell', word:'DISAPPEAR', image:'🫥', options:['DISSAPEAR','DISAPEAR','DISAPPEAR'] },
+    ],
+    g6: [
+      { type:'spell', word:'ACCOMMODATE', image:'🏨', options:['ACCOMODATE','ACCOMMODATE','ACOMODATE'] },
+      { type:'spell', word:'OCCURRENCE', image:'🔄', options:['OCCURANCE','OCCURENCE','OCCURRENCE'] },
+      { type:'spell', word:'CONSCIENCE', image:'💭', options:['CONSCIENCE','CONCIENCE','CONSIENCE'] },
+      { type:'spell', word:'EXAGGERATE', image:'📢', options:['EXAGERATE','EXAGGERATE','EXAGGARATE'] },
+      { type:'spell', word:'RHYTHM', image:'🥁', options:['RYTHM','RHYTHM','RYTHYM'] },
+    ],
+  },
+  science: {
+    kg: [
+      { type:'truefalse', statement:'The Sun is hot', answer:true, emoji:'☀️' },
+      { type:'truefalse', statement:'Fish can fly', answer:false, emoji:'🐟' },
+      { type:'truefalse', statement:'Water is wet', answer:true, emoji:'💧' },
+      { type:'truefalse', statement:'Trees are purple', answer:false, emoji:'🌳' },
+      { type:'truefalse', statement:'Dogs have four legs', answer:true, emoji:'🐶' },
+      { type:'truefalse', statement:'Ice is hot', answer:false, emoji:'🧊' },
+    ],
+    g1: [
+      { type:'truefalse', statement:'The Sun is a star', answer:true, emoji:'☀️' },
+      { type:'truefalse', statement:'Plants need water to grow', answer:true, emoji:'🌱' },
+      { type:'truefalse', statement:'Humans have three eyes', answer:false, emoji:'👀' },
+      { type:'truefalse', statement:'Birds lay eggs', answer:true, emoji:'🐣' },
+      { type:'truefalse', statement:'Rocks are alive', answer:false, emoji:'🪨' },
+      { type:'truefalse', statement:'Rain comes from clouds', answer:true, emoji:'🌧️' },
+    ],
+    g2: [
+      { type:'truefalse', statement:'The Moon makes its own light', answer:false, emoji:'🌙' },
+      { type:'truefalse', statement:'Magnets attract iron', answer:true, emoji:'🧲' },
+      { type:'truefalse', statement:'Spiders are insects', answer:false, emoji:'🕷️' },
+      { type:'truefalse', statement:'Sound travels through air', answer:true, emoji:'🔊' },
+      { type:'truefalse', statement:'Earth is the closest planet to the Sun', answer:false, emoji:'🌍' },
+      { type:'truefalse', statement:'Butterflies start as caterpillars', answer:true, emoji:'🦋' },
+    ],
+    g3: [
+      { type:'truefalse', statement:'Plants make food using sunlight', answer:true, emoji:'🌿' },
+      { type:'truefalse', statement:'The Earth is flat', answer:false, emoji:'🌍' },
+      { type:'truefalse', statement:'Bones protect our brain', answer:true, emoji:'💀' },
+      { type:'truefalse', statement:'Lightning is hotter than the Sun\'s surface', answer:true, emoji:'⚡' },
+      { type:'truefalse', statement:'Sharks are mammals', answer:false, emoji:'🦈' },
+    ],
+    g4: [
+      { type:'truefalse', statement:'Oxygen is the most common gas in air', answer:false, emoji:'🌬️' },
+      { type:'truefalse', statement:'Light travels faster than sound', answer:true, emoji:'💡' },
+      { type:'truefalse', statement:'The heart pumps blood around the body', answer:true, emoji:'❤️' },
+      { type:'truefalse', statement:'All metals are magnetic', answer:false, emoji:'🧲' },
+      { type:'truefalse', statement:'Dinosaurs lived millions of years ago', answer:true, emoji:'🦕' },
+    ],
+    g5: [
+      { type:'truefalse', statement:'Photosynthesis happens in leaves', answer:true, emoji:'🍃' },
+      { type:'truefalse', statement:'Venus is the hottest planet', answer:true, emoji:'🔥' },
+      { type:'truefalse', statement:'Atoms are visible to the naked eye', answer:false, emoji:'🔬' },
+      { type:'truefalse', statement:'The tongue has different taste zones', answer:false, emoji:'👅' },
+      { type:'truefalse', statement:'Water boils at 100°C', answer:true, emoji:'💨' },
+    ],
+    g6: [
+      { type:'truefalse', statement:'DNA carries genetic information', answer:true, emoji:'🧬' },
+      { type:'truefalse', statement:'Gravity is stronger on the Moon than on Earth', answer:false, emoji:'🌙' },
+      { type:'truefalse', statement:'The human body has 206 bones', answer:true, emoji:'🦴' },
+      { type:'truefalse', statement:'Electrons are bigger than protons', answer:false, emoji:'⚛️' },
+      { type:'truefalse', statement:'Sound cannot travel through space', answer:true, emoji:'🚀' },
+    ],
+  },
+  islamiat: {
+    g1: [
+      { type:'truefalse', statement:'Muslims pray 5 times a day', answer:true, emoji:'🕌' },
+      { type:'truefalse', statement:'The Holy Quran has 30 Paras', answer:true, emoji:'📖' },
+      { type:'truefalse', statement:'Ramadan is the month of fasting', answer:true, emoji:'🌙' },
+      { type:'truefalse', statement:'Friday prayer is called Jummah', answer:true, emoji:'🕌' },
+      { type:'truefalse', statement:'Prophet Muhammad (PBUH) was born in Makkah', answer:true, emoji:'⭐' },
+    ],
+    g2: [
+      { type:'truefalse', statement:'The Kaaba is in Madinah', answer:false, emoji:'🕋' },
+      { type:'truefalse', statement:'Zakat is one of the 5 pillars of Islam', answer:true, emoji:'💝' },
+      { type:'truefalse', statement:'Wudu is done before prayer', answer:true, emoji:'💧' },
+      { type:'truefalse', statement:'Surah Al-Fatiha is the first surah', answer:true, emoji:'📖' },
+      { type:'truefalse', statement:'Hajj is performed in Ramadan', answer:false, emoji:'🕌' },
+    ],
+    g3: [
+      { type:'truefalse', statement:'There are 114 Surahs in the Quran', answer:true, emoji:'📖' },
+      { type:'truefalse', statement:'Prophet Ibrahim (AS) built the Kaaba', answer:true, emoji:'🕋' },
+      { type:'truefalse', statement:'Eid ul Fitr comes after Hajj', answer:false, emoji:'🎉' },
+      { type:'truefalse', statement:'Salah is the second pillar of Islam', answer:true, emoji:'🕌' },
+      { type:'truefalse', statement:'The Prophet (PBUH) received the first revelation in Cave Hira', answer:true, emoji:'⛰️' },
+    ],
+    g4: [
+      { type:'truefalse', statement:'The first Muezzin of Islam was Bilal (RA)', answer:true, emoji:'🕌' },
+      { type:'truefalse', statement:'Surah Ikhlas declares the oneness of Allah', answer:true, emoji:'📖' },
+      { type:'truefalse', statement:'Prophet Nuh (AS) built an ark', answer:true, emoji:'🚢' },
+      { type:'truefalse', statement:'Asr prayer has 3 Farz rakats', answer:false, emoji:'🕌' },
+      { type:'truefalse', statement:'Sadaqah is compulsory charity', answer:false, emoji:'💝' },
+    ],
+    g5: [
+      { type:'truefalse', statement:'The Quran was revealed over 23 years', answer:true, emoji:'📖' },
+      { type:'truefalse', statement:'Prophet Musa (AS) parted the sea', answer:true, emoji:'🌊' },
+      { type:'truefalse', statement:'Fajr prayer has 4 Farz rakats', answer:false, emoji:'🕌' },
+      { type:'truefalse', statement:'The Battle of Badr was the first battle in Islam', answer:true, emoji:'⚔️' },
+      { type:'truefalse', statement:'Zakat is 2.5% of savings', answer:true, emoji:'💰' },
+    ],
+    g6: [
+      { type:'truefalse', statement:'The Treaty of Hudaibiyah was signed in 6 AH', answer:true, emoji:'📜' },
+      { type:'truefalse', statement:'Surah Al-Baqarah is the longest surah', answer:true, emoji:'📖' },
+      { type:'truefalse', statement:'Prophet Isa (AS) is mentioned more than Prophet Musa (AS) in the Quran', answer:false, emoji:'📖' },
+      { type:'truefalse', statement:'The Hijrah was migration from Makkah to Madinah', answer:true, emoji:'🐪' },
+      { type:'truefalse', statement:'There are 25 Prophets mentioned by name in the Quran', answer:true, emoji:'⭐' },
+    ],
+  },
+  gk: {
+    kg: [
+      { type:'truefalse', statement:'Pakistan\'s flag is green and white', answer:true, emoji:'🇵🇰' },
+      { type:'truefalse', statement:'A cat says "moo"', answer:false, emoji:'🐱' },
+      { type:'truefalse', statement:'Bananas are yellow', answer:true, emoji:'🍌' },
+      { type:'truefalse', statement:'Cars have wings', answer:false, emoji:'🚗' },
+      { type:'truefalse', statement:'The sky is blue', answer:true, emoji:'🌤️' },
+    ],
+    g1: [
+      { type:'truefalse', statement:'Islamabad is the capital of Pakistan', answer:true, emoji:'🏛️' },
+      { type:'truefalse', statement:'There are 7 days in a week', answer:true, emoji:'📅' },
+      { type:'truefalse', statement:'A triangle has 4 sides', answer:false, emoji:'🔺' },
+      { type:'truefalse', statement:'Pakistan has 4 provinces', answer:true, emoji:'🗺️' },
+      { type:'truefalse', statement:'The Earth goes around the Sun', answer:true, emoji:'🌍' },
+    ],
+    g2: [
+      { type:'truefalse', statement:'K2 is the tallest mountain in the world', answer:false, emoji:'🏔️' },
+      { type:'truefalse', statement:'Quaid-e-Azam founded Pakistan', answer:true, emoji:'🇵🇰' },
+      { type:'truefalse', statement:'There are 12 months in a year', answer:true, emoji:'📆' },
+      { type:'truefalse', statement:'The Indus River flows through Pakistan', answer:true, emoji:'🌊' },
+      { type:'truefalse', statement:'Australia is a continent', answer:true, emoji:'🌏' },
+    ],
+    g3: [
+      { type:'truefalse', statement:'Pakistan became independent on 14 August 1947', answer:true, emoji:'🇵🇰' },
+      { type:'truefalse', statement:'The Sahara Desert is in Asia', answer:false, emoji:'🏜️' },
+      { type:'truefalse', statement:'An octagon has 8 sides', answer:true, emoji:'🛑' },
+      { type:'truefalse', statement:'Karachi is the largest city in Pakistan', answer:true, emoji:'🏙️' },
+      { type:'truefalse', statement:'Penguins live in the Arctic', answer:false, emoji:'🐧' },
+    ],
+    g4: [
+      { type:'truefalse', statement:'The Great Wall of China is visible from space', answer:false, emoji:'🧱' },
+      { type:'truefalse', statement:'Pakistan\'s national language is Urdu', answer:true, emoji:'🇵🇰' },
+      { type:'truefalse', statement:'The Amazon is the longest river in the world', answer:false, emoji:'🌊' },
+      { type:'truefalse', statement:'There are 7 continents on Earth', answer:true, emoji:'🌍' },
+      { type:'truefalse', statement:'Mount Everest is in the Himalayas', answer:true, emoji:'🏔️' },
+    ],
+    g5: [
+      { type:'truefalse', statement:'The Thar Desert is in Sindh province', answer:true, emoji:'🏜️' },
+      { type:'truefalse', statement:'Africa is the largest continent', answer:false, emoji:'🌍' },
+      { type:'truefalse', statement:'The Pacific Ocean is the largest ocean', answer:true, emoji:'🌊' },
+      { type:'truefalse', statement:'Pakistan shares a border with Iran', answer:true, emoji:'🗺️' },
+      { type:'truefalse', statement:'The Eiffel Tower is in London', answer:false, emoji:'🗼' },
+    ],
+    g6: [
+      { type:'truefalse', statement:'Allama Iqbal is the national poet of Pakistan', answer:true, emoji:'📜' },
+      { type:'truefalse', statement:'The United Nations was founded in 1945', answer:true, emoji:'🇺🇳' },
+      { type:'truefalse', statement:'The Dead Sea is the lowest point on Earth', answer:true, emoji:'🌊' },
+      { type:'truefalse', statement:'Pakistan was the first Muslim country to have a nuclear weapon', answer:false, emoji:'⚛️' },
+      { type:'truefalse', statement:'The Silk Road passed through Pakistan', answer:true, emoji:'🛤️' },
+    ],
+  },
+  urdu: {
+    g1: [
+      { type:'match', pairs:[['سیب','Apple'],['بلی','Cat'],['کتاب','Book'],['پانی','Water']] },
+      { type:'match', pairs:[['ماں','Mother'],['ابو','Father'],['چاند','Moon'],['ستارا','Star']] },
+    ],
+    g2: [
+      { type:'match', pairs:[['گھر','House'],['درخت','Tree'],['پھول','Flower'],['مچھلی','Fish']] },
+      { type:'match', pairs:[['آسمان','Sky'],['زمین','Earth'],['سورج','Sun'],['بارش','Rain']] },
+    ],
+    g3: [
+      { type:'match', pairs:[['استاد','Teacher'],['طالب علم','Student'],['کتب خانہ','Library'],['مدرسہ','School']] },
+      { type:'match', pairs:[['صبح','Morning'],['دوپہر','Afternoon'],['شام','Evening'],['رات','Night']] },
+    ],
+    g4: [
+      { type:'match', pairs:[['محنت','Hard work'],['صبر','Patience'],['شکر','Gratitude'],['ہمت','Courage']] },
+      { type:'match', pairs:[['جنگل','Forest'],['صحرا','Desert'],['دریا','River'],['پہاڑ','Mountain']] },
+    ],
+    g5: [
+      { type:'match', pairs:[['آزادی','Freedom'],['تعلیم','Education'],['صحت','Health'],['ترقی','Progress']] },
+      { type:'match', pairs:[['سائنسدان','Scientist'],['شاعر','Poet'],['مصور','Artist'],['ڈاکٹر','Doctor']] },
+    ],
+    g6: [
+      { type:'match', pairs:[['جمہوریت','Democracy'],['معیشت','Economy'],['ثقافت','Culture'],['تاریخ','History']] },
+      { type:'match', pairs:[['قومی زبان','National language'],['دارالحکومت','Capital'],['صوبہ','Province'],['آئین','Constitution']] },
+    ],
+  },
+};
+
+/* ═══ FunZone Component ═══ */
+function FunZone({ grade, subject, accent }) {
+  const [currentIdx, setCurrentIdx] = useState(0);
+  const [score, setScore] = useState(0);
+  const [streak, setStreak] = useState(0);
+  const [feedback, setFeedback] = useState(null); // 'correct' | 'wrong' | null
+  const [answered, setAnswered] = useState(false);
+  const [xp, setXp] = useState(0);
+  const [setComplete, setSetComplete] = useState(false);
+  const [matchSelected, setMatchSelected] = useState(null); // for match game
+  const [matchedPairs, setMatchedPairs] = useState([]);
+  const [confettiPieces, setConfettiPieces] = useState([]);
+  const [activeGame, setActiveGame] = useState(null); // null = show card grid
+
+  // Load XP from localStorage
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('nw_homework_xp');
+      if (saved) setXp(parseInt(saved, 10) || 0);
+    } catch {}
+  }, []);
+
+  const saveXp = (val) => {
+    setXp(val);
+    try { localStorage.setItem('nw_homework_xp', String(val)); } catch {}
+  };
+
+  // Get exercises for current grade+subject
+  const subjectId = subject.id;
+  const gradeId = grade.id;
+  const exercises = FUN_EXERCISES[subjectId]?.[gradeId] || [];
+
+  // Determine available game types for this subject
+  const gameTypes = [];
+  if (['maths'].includes(subjectId)) gameTypes.push({ id:'count', label:'Counting Game', emoji:'🔢', desc:'Tap the right answer!' });
+  if (['english'].includes(subjectId)) gameTypes.push({ id:'spell', label:'Spelling Bee', emoji:'🐝', desc:'Pick the correct spelling!' });
+  if (['science','gk','islamiat'].includes(subjectId)) gameTypes.push({ id:'truefalse', label:'True or False', emoji:'✅', desc:'Is this fact true?' });
+  if (['urdu'].includes(subjectId)) gameTypes.push({ id:'match', label:'Match It', emoji:'🔗', desc:'Match the pairs!' });
+  // Add match game for subjects that also have match data
+  if (FUN_EXERCISES[subjectId]?.[gradeId]?.some(e => e.type === 'match') && !gameTypes.find(g => g.id === 'match')) {
+    gameTypes.push({ id:'match', label:'Match It', emoji:'🔗', desc:'Match the pairs!' });
+  }
+  // Universal true/false for subjects with truefalse data
+  if (!gameTypes.find(g => g.id === 'truefalse') && exercises.some(e => e.type === 'truefalse')) {
+    gameTypes.push({ id:'truefalse', label:'True or False', emoji:'✅', desc:'Is this fact true?' });
+  }
+
+  const currentExercises = exercises.filter(e => activeGame ? e.type === activeGame : true);
+  const ex = currentExercises[currentIdx];
+
+  const spawnConfetti = () => {
+    const pieces = Array.from({ length: 20 }, (_, i) => ({
+      id: Date.now() + i,
+      left: Math.random() * 100,
+      color: ['#FF6B6B','#FFB347','#A8E063','#63D2FF','#C77DFF','#FFC300','#FF8E53'][Math.floor(Math.random()*7)],
+      delay: Math.random() * 0.3,
+      size: 6 + Math.random() * 8,
+    }));
+    setConfettiPieces(pieces);
+    setTimeout(() => setConfettiPieces([]), 1800);
+  };
+
+  const handleAnswer = (selected, correct) => {
+    if (answered) return;
+    sndTick();
+    setAnswered(true);
+    const isCorrect = String(selected) === String(correct);
+    if (isCorrect) {
+      sndOk();
+      setFeedback('correct');
+      setScore(s => s + 1);
+      setStreak(s => s + 1);
+      const newXp = xp + 5;
+      saveXp(newXp);
+      spawnConfetti();
+    } else {
+      sndErr();
+      setFeedback('wrong');
+      setStreak(0);
+    }
+    setTimeout(() => {
+      if (currentIdx + 1 >= currentExercises.length) {
+        // Set complete
+        if (isCorrect) {
+          const bonusXp = xp + 5 + 20;
+          saveXp(bonusXp);
+        }
+        setSetComplete(true);
+        sndWin();
+        spawnConfetti();
+      } else {
+        setCurrentIdx(i => i + 1);
+        setFeedback(null);
+        setAnswered(false);
+      }
+    }, isCorrect ? 1200 : 1800);
+  };
+
+  const handleMatchTap = (item, side) => {
+    if (matchedPairs.includes(item)) return;
+    sndTick();
+    if (!matchSelected) {
+      setMatchSelected({ item, side });
+      return;
+    }
+    if (matchSelected.side === side) {
+      setMatchSelected({ item, side });
+      return;
+    }
+    // Check if match
+    const pairs = ex.pairs;
+    const isMatch = pairs.some(([l, r]) =>
+      (matchSelected.item === l && item === r) || (matchSelected.item === r && item === l)
+    );
+    if (isMatch) {
+      sndOk();
+      const newMatched = [...matchedPairs, matchSelected.item, item];
+      setMatchedPairs(newMatched);
+      setMatchSelected(null);
+      const newXp = xp + 5;
+      saveXp(newXp);
+      spawnConfetti();
+      if (newMatched.length === pairs.length * 2) {
+        // All matched
+        setTimeout(() => {
+          const bonusXp = xp + 5 + 20;
+          saveXp(bonusXp);
+          setSetComplete(true);
+          sndWin();
+          spawnConfetti();
+        }, 600);
+      }
+    } else {
+      sndErr();
+      setFeedback('wrong');
+      setMatchSelected(null);
+      setTimeout(() => setFeedback(null), 800);
+    }
+  };
+
+  const resetGame = () => {
+    setCurrentIdx(0);
+    setScore(0);
+    setStreak(0);
+    setFeedback(null);
+    setAnswered(false);
+    setSetComplete(false);
+    setMatchSelected(null);
+    setMatchedPairs([]);
+    setActiveGame(null);
+  };
+
+  if (!exercises.length || subjectId === 'craft' || subjectId === 'other') return null;
+
+  const btnBase = {
+    minHeight:'64px', borderRadius:'20px', fontWeight:'900', fontSize:'18px',
+    cursor:'pointer', fontFamily:"'Nunito',sans-serif", transition:'all 0.15s',
+    border:'3px solid transparent', display:'flex', alignItems:'center', justifyContent:'center',
+    gap:'8px', padding:'12px 20px', width:'100%', boxSizing:'border-box',
+  };
+
+  // ── Game card grid (no active game) ──
+  if (!activeGame) {
+    return (
+      <div style={{
+        background:'rgba(255,255,255,0.04)', border:`2px solid ${accent}44`,
+        borderRadius:'24px', padding:'24px', position:'relative', overflow:'hidden',
+      }}>
+        {/* XP bar */}
+        <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:'16px', flexWrap:'wrap', gap:'8px' }}>
+          <div>
+            <div style={{ fontWeight:'900', fontSize:'20px', color:accent }}>Fun Practice Zone</div>
+            <div style={{ fontSize:'13px', color:'rgba(255,255,255,0.5)', marginTop:'2px' }}>Tap to play — no typing needed!</div>
+          </div>
+          <div style={{
+            background:`${accent}22`, border:`2px solid ${accent}66`, borderRadius:'16px',
+            padding:'8px 16px', display:'flex', alignItems:'center', gap:'10px',
+          }}>
+            <span style={{ fontSize:'22px' }}>⭐</span>
+            <div>
+              <div style={{ fontWeight:'900', fontSize:'16px', color:accent }}>{xp} XP</div>
+              <div style={{ fontSize:'10px', color:'rgba(255,255,255,0.4)' }}>Keep playing!</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Game cards */}
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(140px, 1fr))', gap:'12px' }}>
+          {gameTypes.map(game => (
+            <button key={game.id} onClick={() => { setActiveGame(game.id); setCurrentIdx(0); setScore(0); setStreak(0); setFeedback(null); setAnswered(false); setSetComplete(false); setMatchSelected(null); setMatchedPairs([]); }} style={{
+              ...btnBase,
+              background:`${accent}18`, border:`2px solid ${accent}55`,
+              flexDirection:'column', minHeight:'120px', padding:'16px',
+            }}>
+              <span style={{ fontSize:'40px' }}>{game.emoji}</span>
+              <span style={{ fontSize:'15px', color:accent }}>{game.label}</span>
+              <span style={{ fontSize:'11px', color:'rgba(255,255,255,0.45)', fontWeight:'600' }}>{game.desc}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  // ── Set complete screen ──
+  if (setComplete) {
+    return (
+      <div style={{
+        background:'rgba(255,255,255,0.04)', border:`2px solid ${accent}44`,
+        borderRadius:'24px', padding:'32px', textAlign:'center', position:'relative', overflow:'hidden',
+      }}>
+        {/* Confetti */}
+        {confettiPieces.map(p => (
+          <div key={p.id} style={{
+            position:'absolute', left:`${p.left}%`, top:'-10px',
+            width:`${p.size}px`, height:`${p.size}px`, borderRadius:'50%',
+            background:p.color, opacity:0.9,
+            animation:`confettiFall 1.5s ${p.delay}s ease-out forwards`,
+          }} />
+        ))}
+        <style>{`@keyframes confettiFall { 0%{transform:translateY(0) rotate(0deg);opacity:1} 100%{transform:translateY(400px) rotate(720deg);opacity:0} }`}</style>
+
+        <div style={{ fontSize:'64px', marginBottom:'16px' }}>🎉</div>
+        <div style={{ fontWeight:'900', fontSize:'28px', color:accent, marginBottom:'8px' }}>AMAZING!</div>
+        <div style={{ fontSize:'18px', color:'rgba(255,255,255,0.7)', marginBottom:'4px' }}>You got {score} out of {currentExercises.length} correct!</div>
+        <div style={{ fontSize:'16px', color:accent, fontWeight:'800', marginBottom:'24px' }}>+{score * 5 + 20} XP earned!</div>
+        <div style={{
+          background:`${accent}22`, border:`2px solid ${accent}66`, borderRadius:'16px',
+          padding:'12px 20px', display:'inline-flex', alignItems:'center', gap:'10px', marginBottom:'24px',
+        }}>
+          <span style={{ fontSize:'24px' }}>⭐</span>
+          <span style={{ fontWeight:'900', fontSize:'20px', color:accent }}>Total: {xp} XP</span>
+        </div>
+        <br />
+        <button onClick={resetGame} style={{
+          ...btnBase, width:'auto', display:'inline-flex',
+          background:`linear-gradient(135deg, ${accent}, ${accent}CC)`,
+          color:'#0D0800', fontSize:'16px', padding:'14px 32px',
+          boxShadow:`0 6px 20px ${accent}55`,
+        }}>Play Again!</button>
+      </div>
+    );
+  }
+
+  if (!ex) return null;
+
+  // ── Counting / number game ──
+  if (ex.type === 'count') {
+    const isEmojiCount = ex.items !== null && ex.items !== undefined && !ex.question;
+    return (
+      <div style={{
+        background:'rgba(255,255,255,0.04)', border:`2px solid ${accent}44`,
+        borderRadius:'24px', padding:'24px', position:'relative', overflow:'hidden',
+      }}>
+        {/* Confetti */}
+        {confettiPieces.map(p => (
+          <div key={p.id} style={{
+            position:'absolute', left:`${p.left}%`, top:'-10px',
+            width:`${p.size}px`, height:`${p.size}px`, borderRadius:'50%',
+            background:p.color, opacity:0.9,
+            animation:`confettiFall 1.5s ${p.delay}s ease-out forwards`,
+          }} />
+        ))}
+        <style>{`@keyframes confettiFall { 0%{transform:translateY(0) rotate(0deg);opacity:1} 100%{transform:translateY(400px) rotate(720deg);opacity:0} }`}</style>
+
+        {/* Header */}
+        <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:'16px', flexWrap:'wrap', gap:'8px' }}>
+          <button onClick={resetGame} style={{
+            background:'rgba(255,255,255,0.08)', border:'1px solid rgba(255,255,255,0.15)',
+            borderRadius:'12px', padding:'8px 14px', cursor:'pointer',
+            color:'rgba(255,255,255,0.6)', fontSize:'13px', fontFamily:"'Nunito',sans-serif", fontWeight:'700',
+          }}>← Back</button>
+          <div style={{ display:'flex', alignItems:'center', gap:'12px' }}>
+            <span style={{ fontWeight:'800', fontSize:'14px', color:'rgba(255,255,255,0.5)' }}>{currentIdx+1}/{currentExercises.length}</span>
+            <div style={{
+              background:`${accent}22`, border:`1px solid ${accent}66`, borderRadius:'12px',
+              padding:'4px 12px', fontWeight:'900', fontSize:'14px', color:accent,
+            }}>⭐ {xp} XP</div>
+            {streak >= 2 && <div style={{
+              background:'rgba(255,107,107,0.2)', border:'1px solid rgba(255,107,107,0.4)', borderRadius:'12px',
+              padding:'4px 12px', fontWeight:'900', fontSize:'13px', color:'#FF6B6B',
+            }}>🔥 {streak} streak!</div>}
+          </div>
+        </div>
+
+        {/* Question */}
+        <div style={{ textAlign:'center', marginBottom:'20px' }}>
+          {isEmojiCount ? (
+            <>
+              <div style={{ fontSize:'14px', color:'rgba(255,255,255,0.5)', fontWeight:'700', marginBottom:'12px' }}>HOW MANY DO YOU SEE?</div>
+              <div style={{ fontSize:'48px', letterSpacing:'8px', marginBottom:'16px', lineHeight:'1.4' }}>
+                {Array.from({ length: ex.items }, () => ex.emoji).join(' ')}
+              </div>
+            </>
+          ) : (
+            <>
+              <div style={{ fontSize:'48px', marginBottom:'12px' }}>{ex.emoji}</div>
+              <div style={{ fontSize:'24px', fontWeight:'900', color:'#fff', marginBottom:'16px' }}>{ex.question}</div>
+            </>
+          )}
+        </div>
+
+        {/* Feedback */}
+        {feedback === 'correct' && (
+          <div style={{ textAlign:'center', marginBottom:'16px', animation:'slideUp 0.3s ease-out' }}>
+            <span style={{ fontSize:'24px', fontWeight:'900', color:'#A8E063' }}>AMAZING! ⭐🎉 +5 XP</span>
+          </div>
+        )}
+        {feedback === 'wrong' && (
+          <div style={{ textAlign:'center', marginBottom:'16px', animation:'slideUp 0.3s ease-out' }}>
+            <span style={{ fontSize:'20px', fontWeight:'900', color:'#FF8E53' }}>Almost! Try again next time! 💪</span>
+          </div>
+        )}
+
+        {/* Options */}
+        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'12px' }}>
+          {ex.options.map((opt, i) => {
+            const correctAnswer = isEmojiCount ? ex.items : (ex.answer !== undefined ? ex.answer : ex.items);
+            const isCorrect = String(opt) === String(correctAnswer);
+            const wasChosen = answered && feedback;
+            let bg = `${accent}18`;
+            let borderC = `${accent}55`;
+            if (wasChosen && isCorrect) { bg = 'rgba(168,224,99,0.25)'; borderC = '#A8E063'; }
+            else if (wasChosen && !isCorrect && feedback === 'wrong') { bg = 'rgba(255,107,107,0.15)'; borderC = 'rgba(255,107,107,0.4)'; }
+            return (
+              <button key={i} onClick={() => handleAnswer(opt, correctAnswer)} disabled={answered} style={{
+                ...btnBase, background:bg, borderColor:borderC,
+                fontSize:'24px', color:'#fff',
+                opacity: answered && !isCorrect ? 0.5 : 1,
+                transform: wasChosen && isCorrect ? 'scale(1.05)' : 'scale(1)',
+              }}>{opt}</button>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  // ── Spelling game ──
+  if (ex.type === 'spell') {
+    return (
+      <div style={{
+        background:'rgba(255,255,255,0.04)', border:`2px solid ${accent}44`,
+        borderRadius:'24px', padding:'24px', position:'relative', overflow:'hidden',
+      }}>
+        {confettiPieces.map(p => (
+          <div key={p.id} style={{
+            position:'absolute', left:`${p.left}%`, top:'-10px',
+            width:`${p.size}px`, height:`${p.size}px`, borderRadius:'50%',
+            background:p.color, opacity:0.9,
+            animation:`confettiFall 1.5s ${p.delay}s ease-out forwards`,
+          }} />
+        ))}
+        <style>{`@keyframes confettiFall { 0%{transform:translateY(0) rotate(0deg);opacity:1} 100%{transform:translateY(400px) rotate(720deg);opacity:0} }`}</style>
+
+        <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:'16px', flexWrap:'wrap', gap:'8px' }}>
+          <button onClick={resetGame} style={{
+            background:'rgba(255,255,255,0.08)', border:'1px solid rgba(255,255,255,0.15)',
+            borderRadius:'12px', padding:'8px 14px', cursor:'pointer',
+            color:'rgba(255,255,255,0.6)', fontSize:'13px', fontFamily:"'Nunito',sans-serif", fontWeight:'700',
+          }}>← Back</button>
+          <div style={{ display:'flex', alignItems:'center', gap:'12px' }}>
+            <span style={{ fontWeight:'800', fontSize:'14px', color:'rgba(255,255,255,0.5)' }}>{currentIdx+1}/{currentExercises.length}</span>
+            <div style={{
+              background:`${accent}22`, border:`1px solid ${accent}66`, borderRadius:'12px',
+              padding:'4px 12px', fontWeight:'900', fontSize:'14px', color:accent,
+            }}>⭐ {xp} XP</div>
+            {streak >= 2 && <div style={{
+              background:'rgba(255,107,107,0.2)', border:'1px solid rgba(255,107,107,0.4)', borderRadius:'12px',
+              padding:'4px 12px', fontWeight:'900', fontSize:'13px', color:'#FF6B6B',
+            }}>🔥 {streak} streak!</div>}
+          </div>
+        </div>
+
+        <div style={{ textAlign:'center', marginBottom:'20px' }}>
+          <div style={{ fontSize:'64px', marginBottom:'8px' }}>{ex.image}</div>
+          <div style={{ fontSize:'14px', color:'rgba(255,255,255,0.5)', fontWeight:'700', marginBottom:'8px' }}>
+            {ex.hint || 'PICK THE CORRECT SPELLING'}
+          </div>
+        </div>
+
+        {feedback === 'correct' && (
+          <div style={{ textAlign:'center', marginBottom:'16px', animation:'slideUp 0.3s ease-out' }}>
+            <span style={{ fontSize:'24px', fontWeight:'900', color:'#A8E063' }}>AMAZING! ⭐🎉 +5 XP</span>
+          </div>
+        )}
+        {feedback === 'wrong' && (
+          <div style={{ textAlign:'center', marginBottom:'16px', animation:'slideUp 0.3s ease-out' }}>
+            <span style={{ fontSize:'20px', fontWeight:'900', color:'#FF8E53' }}>Almost! Try again next time! 💪</span>
+          </div>
+        )}
+
+        <div style={{ display:'flex', flexDirection:'column', gap:'12px' }}>
+          {ex.options.map((opt, i) => {
+            const isCorrect = opt === ex.word;
+            const wasChosen = answered && feedback;
+            let bg = `${accent}18`;
+            let borderC = `${accent}55`;
+            if (wasChosen && isCorrect) { bg = 'rgba(168,224,99,0.25)'; borderC = '#A8E063'; }
+            else if (wasChosen && !isCorrect) { bg = 'rgba(255,107,107,0.15)'; borderC = 'rgba(255,107,107,0.4)'; }
+            return (
+              <button key={i} onClick={() => handleAnswer(opt, ex.word)} disabled={answered} style={{
+                ...btnBase, background:bg, borderColor:borderC,
+                fontSize:'20px', color:'#fff', letterSpacing:'3px',
+                opacity: answered && !isCorrect ? 0.5 : 1,
+                transform: wasChosen && isCorrect ? 'scale(1.03)' : 'scale(1)',
+              }}>{opt}</button>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  // ── True or False game ──
+  if (ex.type === 'truefalse') {
+    return (
+      <div style={{
+        background:'rgba(255,255,255,0.04)', border:`2px solid ${accent}44`,
+        borderRadius:'24px', padding:'24px', position:'relative', overflow:'hidden',
+      }}>
+        {confettiPieces.map(p => (
+          <div key={p.id} style={{
+            position:'absolute', left:`${p.left}%`, top:'-10px',
+            width:`${p.size}px`, height:`${p.size}px`, borderRadius:'50%',
+            background:p.color, opacity:0.9,
+            animation:`confettiFall 1.5s ${p.delay}s ease-out forwards`,
+          }} />
+        ))}
+        <style>{`@keyframes confettiFall { 0%{transform:translateY(0) rotate(0deg);opacity:1} 100%{transform:translateY(400px) rotate(720deg);opacity:0} }`}</style>
+
+        <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:'16px', flexWrap:'wrap', gap:'8px' }}>
+          <button onClick={resetGame} style={{
+            background:'rgba(255,255,255,0.08)', border:'1px solid rgba(255,255,255,0.15)',
+            borderRadius:'12px', padding:'8px 14px', cursor:'pointer',
+            color:'rgba(255,255,255,0.6)', fontSize:'13px', fontFamily:"'Nunito',sans-serif", fontWeight:'700',
+          }}>← Back</button>
+          <div style={{ display:'flex', alignItems:'center', gap:'12px' }}>
+            <span style={{ fontWeight:'800', fontSize:'14px', color:'rgba(255,255,255,0.5)' }}>{currentIdx+1}/{currentExercises.length}</span>
+            <div style={{
+              background:`${accent}22`, border:`1px solid ${accent}66`, borderRadius:'12px',
+              padding:'4px 12px', fontWeight:'900', fontSize:'14px', color:accent,
+            }}>⭐ {xp} XP</div>
+            {streak >= 2 && <div style={{
+              background:'rgba(255,107,107,0.2)', border:'1px solid rgba(255,107,107,0.4)', borderRadius:'12px',
+              padding:'4px 12px', fontWeight:'900', fontSize:'13px', color:'#FF6B6B',
+            }}>🔥 {streak} streak!</div>}
+          </div>
+        </div>
+
+        <div style={{ textAlign:'center', marginBottom:'24px' }}>
+          <div style={{ fontSize:'56px', marginBottom:'12px' }}>{ex.emoji || '🤔'}</div>
+          <div style={{ fontSize:'22px', fontWeight:'900', color:'#fff', lineHeight:'1.4', maxWidth:'400px', margin:'0 auto' }}>
+            {ex.statement}
+          </div>
+        </div>
+
+        {feedback === 'correct' && (
+          <div style={{ textAlign:'center', marginBottom:'16px', animation:'slideUp 0.3s ease-out' }}>
+            <span style={{ fontSize:'24px', fontWeight:'900', color:'#A8E063' }}>AMAZING! ⭐🎉 +5 XP</span>
+          </div>
+        )}
+        {feedback === 'wrong' && (
+          <div style={{ textAlign:'center', marginBottom:'16px', animation:'slideUp 0.3s ease-out' }}>
+            <span style={{ fontSize:'20px', fontWeight:'900', color:'#FF8E53' }}>Almost! The answer was {ex.answer ? 'TRUE' : 'FALSE'}! 💪</span>
+          </div>
+        )}
+
+        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'16px' }}>
+          {[true, false].map(val => {
+            const isCorrect = val === ex.answer;
+            const wasChosen = answered && feedback;
+            let bg = val ? 'rgba(168,224,99,0.15)' : 'rgba(255,107,107,0.15)';
+            let borderC = val ? 'rgba(168,224,99,0.4)' : 'rgba(255,107,107,0.4)';
+            if (wasChosen && isCorrect) { bg = val ? 'rgba(168,224,99,0.35)' : 'rgba(255,107,107,0.35)'; }
+            else if (wasChosen && !isCorrect) { bg = 'rgba(255,255,255,0.05)'; borderC = 'rgba(255,255,255,0.15)'; }
+            return (
+              <button key={String(val)} onClick={() => handleAnswer(val, ex.answer)} disabled={answered} style={{
+                ...btnBase, background:bg, borderColor:borderC,
+                fontSize:'22px', color:'#fff', minHeight:'80px',
+                opacity: answered && !isCorrect ? 0.4 : 1,
+                transform: wasChosen && isCorrect ? 'scale(1.05)' : 'scale(1)',
+              }}>
+                <span style={{ fontSize:'32px' }}>{val ? '✅' : '❌'}</span>
+                {val ? 'TRUE' : 'FALSE'}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  // ── Match game ──
+  if (ex.type === 'match') {
+    const leftItems = ex.pairs.map(([l]) => l);
+    const rightItems = ex.pairs.map(([, r]) => r);
+    return (
+      <div style={{
+        background:'rgba(255,255,255,0.04)', border:`2px solid ${accent}44`,
+        borderRadius:'24px', padding:'24px', position:'relative', overflow:'hidden',
+      }}>
+        {confettiPieces.map(p => (
+          <div key={p.id} style={{
+            position:'absolute', left:`${p.left}%`, top:'-10px',
+            width:`${p.size}px`, height:`${p.size}px`, borderRadius:'50%',
+            background:p.color, opacity:0.9,
+            animation:`confettiFall 1.5s ${p.delay}s ease-out forwards`,
+          }} />
+        ))}
+        <style>{`@keyframes confettiFall { 0%{transform:translateY(0) rotate(0deg);opacity:1} 100%{transform:translateY(400px) rotate(720deg);opacity:0} }`}</style>
+
+        <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:'16px', flexWrap:'wrap', gap:'8px' }}>
+          <button onClick={resetGame} style={{
+            background:'rgba(255,255,255,0.08)', border:'1px solid rgba(255,255,255,0.15)',
+            borderRadius:'12px', padding:'8px 14px', cursor:'pointer',
+            color:'rgba(255,255,255,0.6)', fontSize:'13px', fontFamily:"'Nunito',sans-serif", fontWeight:'700',
+          }}>← Back</button>
+          <div style={{ display:'flex', alignItems:'center', gap:'12px' }}>
+            <div style={{
+              background:`${accent}22`, border:`1px solid ${accent}66`, borderRadius:'12px',
+              padding:'4px 12px', fontWeight:'900', fontSize:'14px', color:accent,
+            }}>⭐ {xp} XP</div>
+          </div>
+        </div>
+
+        <div style={{ textAlign:'center', marginBottom:'16px' }}>
+          <div style={{ fontSize:'14px', color:'rgba(255,255,255,0.5)', fontWeight:'700' }}>TAP TO MATCH THE PAIRS</div>
+        </div>
+
+        {feedback === 'wrong' && (
+          <div style={{ textAlign:'center', marginBottom:'12px', animation:'slideUp 0.3s ease-out' }}>
+            <span style={{ fontSize:'18px', fontWeight:'900', color:'#FF8E53' }}>Not quite — try again! 💪</span>
+          </div>
+        )}
+
+        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'12px' }}>
+          <div style={{ display:'flex', flexDirection:'column', gap:'10px' }}>
+            {leftItems.map((item, i) => {
+              const isMatched = matchedPairs.includes(item);
+              const isSelected = matchSelected?.item === item && matchSelected?.side === 'left';
+              return (
+                <button key={i} onClick={() => !isMatched && handleMatchTap(item, 'left')} disabled={isMatched} style={{
+                  ...btnBase, fontSize:'16px', color:'#fff', minHeight:'56px',
+                  background: isMatched ? 'rgba(168,224,99,0.2)' : isSelected ? `${accent}33` : `${accent}15`,
+                  borderColor: isMatched ? '#A8E063' : isSelected ? accent : `${accent}44`,
+                  opacity: isMatched ? 0.5 : 1,
+                  textDecoration: isMatched ? 'line-through' : 'none',
+                  direction: /[\u0600-\u06FF]/.test(item) ? 'rtl' : 'ltr',
+                }}>{item}</button>
+              );
+            })}
+          </div>
+          <div style={{ display:'flex', flexDirection:'column', gap:'10px' }}>
+            {rightItems.map((item, i) => {
+              const isMatched = matchedPairs.includes(item);
+              const isSelected = matchSelected?.item === item && matchSelected?.side === 'right';
+              return (
+                <button key={i} onClick={() => !isMatched && handleMatchTap(item, 'right')} disabled={isMatched} style={{
+                  ...btnBase, fontSize:'16px', color:'#fff', minHeight:'56px',
+                  background: isMatched ? 'rgba(168,224,99,0.2)' : isSelected ? `${accent}33` : 'rgba(255,255,255,0.08)',
+                  borderColor: isMatched ? '#A8E063' : isSelected ? accent : 'rgba(255,255,255,0.2)',
+                  opacity: isMatched ? 0.5 : 1,
+                  textDecoration: isMatched ? 'line-through' : 'none',
+                }}>{item}</button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return null;
+}
+
 const FormatText = ({ text }) => {
   const lines = text.split("\n");
   return (
@@ -415,6 +1290,9 @@ LANGUAGE: If the child writes in Urdu, respond entirely in Urdu. If Arabic, resp
                 <span style={{ color:"rgba(255,255,255,0.5)", fontSize:"12px" }}>{mode === MODE_PARENT ? "👩‍👦 Parent mode" : "👦 Child mode"}</span>
               </div>
             </div>
+
+            {/* ═══ FUN ZONE ═══ */}
+            <FunZone grade={selectedGrade} subject={selectedSubject} accent={accent} />
 
             {/* Question input */}
             <div style={{

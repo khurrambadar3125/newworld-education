@@ -12,6 +12,7 @@ const MENU_GROUPS = [
       { href: '/essay',        label: '✍️ Essay Marking' },
       { href: '/textbooks',    label: '📖 Textbooks' },
       { href: '/languages',   label: '🌍 Languages' },
+      { href: '/spelling-bee', label: '🐝 Spelling Bee' },
     ],
   },
   {

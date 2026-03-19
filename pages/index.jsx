@@ -700,6 +700,7 @@ export default function Home() {
           <a href="/essay">✍️ Essay Marking</a>
           <a href="/textbooks">📖 Textbooks</a>
           <a href="/languages">🌍 Languages</a>
+          <a href="/spelling-bee">🐝 Spelling Bee</a>
           <div style={{padding:'14px 16px 4px',fontSize:11,fontWeight:800,letterSpacing:'0.08em',textTransform:'uppercase',color:'rgba(255,255,255,0.3)'}}>Tools</div>
           <a href="/countdown">⏱️ Exam Countdown</a>
           <a href="/subscribe">📬 Daily Questions</a>
