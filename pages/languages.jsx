@@ -2,6 +2,8 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import Head from 'next/head';
 import { useTheme } from './_app';
 import { useSessionLimit } from '../utils/useSessionLimit';
+import { MOTHER_TONGUES, getTranslation, getUIString } from '../utils/motherTongue';
+import { CHINESE_DEST, CHINESE_VOICE, CHINESE_LANG } from '../utils/chineseContent';
 
 /* ═══════════════════════════════════════
    DESIGN TOKENS — theme-aware
@@ -39,7 +41,7 @@ function getTokens(isDark) {
 /* ═══════════════════════════════════════
    AUDIO ENGINE
 ═══════════════════════════════════════ */
-const VLANG = { fr: 'fr-FR', es: 'es-ES', ja: 'ja-JP', de: 'de-DE', ko: 'ko-KR', it: 'it-IT', ar: 'ar-SA', pt: 'pt-BR' };
+const VLANG = { fr: 'fr-FR', es: 'es-ES', ja: 'ja-JP', de: 'de-DE', ko: 'ko-KR', it: 'it-IT', ar: 'ar-SA', pt: 'pt-BR', ...CHINESE_VOICE };
 let _ctx = null;
 function gCtx() { if (!_ctx) try { _ctx = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) {} return _ctx; }
 function tone(f, t, v, d, dl) {
@@ -103,15 +105,43 @@ function startListening(targetWord, langCode, onResult) {
   return rec;
 }
 
+// Preferred voices per language — ordered by quality (best first)
+const _PREFERRED_VOICES = {
+  fr: ['Google français', 'Microsoft Paul', 'Thomas', 'Amelie', 'fr-FR'],
+  es: ['Google español', 'Microsoft Pablo', 'Paulina', 'Monica', 'es-ES', 'es-MX'],
+  ja: ['Google 日本語', 'Microsoft Haruka', 'Kyoko', 'ja-JP'],
+  de: ['Google Deutsch', 'Microsoft Katja', 'Anna', 'de-DE'],
+  ko: ['Google 한국의', 'Microsoft Heami', 'Yuna', 'ko-KR'],
+  it: ['Google italiano', 'Microsoft Elsa', 'Alice', 'it-IT'],
+  ar: ['Google العربية', 'Microsoft Hoda', 'Maged', 'ar-SA'],
+  pt: ['Google português do Brasil', 'Microsoft Maria', 'Luciana', 'pt-BR'],
+  zh: ['Google 普通话', 'Microsoft Huihui', 'Ting-Ting', 'zh-CN'],
+  en: ['Google US English', 'Microsoft Zira', 'Samantha', 'Alex', 'en-US'],
+};
+let _voiceCache = {};
+
 function speakText(text, lc, rate) {
   if (typeof window === 'undefined' || !window.speechSynthesis || !text) return;
   window.speechSynthesis.cancel();
-  const clean = text.replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, '');
+  const clean = text.replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, '').trim();
+  if (!clean) return;
   const u = new SpeechSynthesisUtterance(clean);
-  u.lang = VLANG[lc] || 'en-US'; u.rate = rate || 0.84; u.pitch = 1.05;
-  const vs = window.speechSynthesis.getVoices();
-  const m = vs.find(v => v.lang === u.lang) || vs.find(v => v.lang.startsWith(u.lang.split('-')[0]));
-  if (m) u.voice = m;
+  const langCode = VLANG[lc] || 'en-US';
+  u.lang = langCode; u.rate = rate || 0.84; u.pitch = 1.05;
+  // Better voice selection: try preferred voices first (Neural/Google/Microsoft)
+  if (!_voiceCache[lc]) {
+    const vs = window.speechSynthesis.getVoices();
+    const preferred = _PREFERRED_VOICES[lc] || [];
+    let best = null;
+    for (const pref of preferred) {
+      best = vs.find(v => v.name.includes(pref) || v.voiceURI.includes(pref));
+      if (best) break;
+    }
+    if (!best) best = vs.find(v => v.lang === langCode);
+    if (!best) best = vs.find(v => v.lang.startsWith((langCode || '').split('-')[0]));
+    if (best) _voiceCache[lc] = best;
+  }
+  if (_voiceCache[lc]) u.voice = _voiceCache[lc];
   window.speechSynthesis.speak(u);
 }
 
@@ -138,6 +168,7 @@ const DEST = [
   { id: 'rome', name: 'Rome', country: 'Italy', flag: '\u{1F1EE}\u{1F1F9}', lang: 'Italian', lc: 'it', tagline: 'Food, art & history', col: '#C06A00' },
   { id: 'dubai', name: 'Dubai', country: 'UAE', flag: '\u{1F1E6}\u{1F1EA}', lang: 'Arabic', lc: 'ar', tagline: 'Business & travel', col: '#0B6E6E' },
   { id: 'rio', name: 'Rio de Janeiro', country: 'Brazil', flag: '\u{1F1E7}\u{1F1F7}', lang: 'Portuguese', lc: 'pt', tagline: 'Beaches & vibrancy', col: '#C0392B' },
+  CHINESE_DEST,
 ];
 
 const MISSIONS = [
@@ -258,12 +289,53 @@ function buildLangData() {
       { id: 5, icon: '\u{1F6D2}', place: 'Au march\u00e9', title: 'At the market', sub: 'Ask prices, negotiate, make a purchase', xp: 20, done: false, locked: true },
       { id: 6, icon: '\u{1F91D}', place: 'Rencontres', title: 'Meeting locals', sub: 'Introduce yourself, small talk', xp: 25, done: false, locked: true },
     ],
-    pb: [mkp('Bonjour, je m\'appelle…', 'Hello, my name is…', 3), mkp('L\'addition, s\'il vous pla\u00eet', 'The bill please', 3), mkp('O\u00f9 est le m\u00e9tro?', 'Where is the metro?', 2), mkp('Je ne comprends pas', 'I don\'t understand', 2), mkp('Pouvez-vous r\u00e9p\u00e9ter?', 'Can you repeat?', 1), mkp('Merci beaucoup', 'Thank you very much', 3),
-      mkp('chien', 'dog', 1), mkp('chat', 'cat', 1), mkp('oiseau', 'bird', 1), mkp('poisson', 'fish', 1), mkp('papillon', 'butterfly', 1),
-      mkp('pain', 'bread', 1), mkp('lait', 'milk', 1), mkp('pomme', 'apple', 1), mkp('g\u00e2teau', 'cake', 1), mkp('glace', 'ice cream', 1),
-      mkp('maman', 'mom', 1), mkp('papa', 'dad', 1), mkp('fr\u00e8re', 'brother', 1), mkp('s\u0153ur', 'sister', 1),
-      mkp('rouge', 'red', 1), mkp('bleu', 'blue', 1), mkp('vert', 'green', 1), mkp('jaune', 'yellow', 1),
+    pb: [
+      // Existing core phrases
+      mkp('Bonjour, je m\'appelle\u2026', 'Hello, my name is\u2026', 3), mkp('L\'addition, s\'il vous pla\u00eet', 'The bill please', 3), mkp('O\u00f9 est le m\u00e9tro?', 'Where is the metro?', 2), mkp('Je ne comprends pas', 'I don\'t understand', 2), mkp('Pouvez-vous r\u00e9p\u00e9ter?', 'Can you repeat?', 1), mkp('Merci beaucoup', 'Thank you very much', 3),
+      // Greetings & Basics (20)
+      mkp('Bonjour', 'Hello / Good morning', 1), mkp('Bonsoir', 'Good evening', 1), mkp('Bonne nuit', 'Good night', 1), mkp('Au revoir', 'Goodbye', 1),
+      mkp('S\'il vous pla\u00eet', 'Please', 1), mkp('Merci', 'Thank you', 1), mkp('De rien', 'You\'re welcome', 1), mkp('Excusez-moi', 'Excuse me', 1),
+      mkp('Pardon', 'Sorry', 1), mkp('Oui', 'Yes', 1), mkp('Non', 'No', 1), mkp('Peut-\u00eatre', 'Maybe', 1),
+      mkp('D\'accord', 'OK / Agreed', 1), mkp('Comment allez-vous?', 'How are you?', 1), mkp('Tr\u00e8s bien', 'Very well', 1), mkp('Comme ci comme \u00e7a', 'So-so', 1),
+      mkp('Je m\'appelle\u2026', 'My name is\u2026', 1), mkp('Enchant\u00e9', 'Nice to meet you', 1), mkp('\u00c0 bient\u00f4t', 'See you soon', 1), mkp('Salut', 'Hi / Bye (informal)', 1),
+      // Numbers (20)
       mkp('un', 'one', 1), mkp('deux', 'two', 1), mkp('trois', 'three', 1), mkp('quatre', 'four', 1), mkp('cinq', 'five', 1),
+      mkp('six', 'six', 1), mkp('sept', 'seven', 1), mkp('huit', 'eight', 1), mkp('neuf', 'nine', 1), mkp('dix', 'ten', 1),
+      mkp('onze', 'eleven', 1), mkp('douze', 'twelve', 1), mkp('treize', 'thirteen', 1), mkp('quatorze', 'fourteen', 1), mkp('quinze', 'fifteen', 1),
+      mkp('seize', 'sixteen', 1), mkp('vingt', 'twenty', 1), mkp('trente', 'thirty', 1), mkp('cinquante', 'fifty', 1), mkp('cent', 'one hundred', 1),
+      // Colors (12)
+      mkp('rouge', 'red', 1), mkp('bleu', 'blue', 1), mkp('vert', 'green', 1), mkp('jaune', 'yellow', 1),
+      mkp('orange', 'orange', 1), mkp('rose', 'pink', 1), mkp('violet', 'purple', 1), mkp('noir', 'black', 1),
+      mkp('blanc', 'white', 1), mkp('gris', 'grey', 1), mkp('marron', 'brown', 1), mkp('dor\u00e9', 'golden', 1),
+      // Family (12)
+      mkp('m\u00e8re / maman', 'mother / mom', 1), mkp('p\u00e8re / papa', 'father / dad', 1), mkp('fr\u00e8re', 'brother', 1), mkp('s\u0153ur', 'sister', 1),
+      mkp('grand-p\u00e8re', 'grandfather', 1), mkp('grand-m\u00e8re', 'grandmother', 1), mkp('fils', 'son', 1), mkp('fille', 'daughter', 1),
+      mkp('oncle', 'uncle', 1), mkp('tante', 'aunt', 1), mkp('cousin', 'cousin', 1), mkp('b\u00e9b\u00e9', 'baby', 1),
+      // Food & Drink (25)
+      mkp('pain', 'bread', 1), mkp('fromage', 'cheese', 1), mkp('croissant', 'croissant', 1), mkp('baguette', 'baguette', 1), mkp('caf\u00e9', 'coffee', 1),
+      mkp('th\u00e9', 'tea', 1), mkp('eau', 'water', 1), mkp('lait', 'milk', 1), mkp('jus', 'juice', 1), mkp('vin', 'wine', 1),
+      mkp('bi\u00e8re', 'beer', 1), mkp('poulet', 'chicken', 1), mkp('poisson', 'fish', 1), mkp('viande', 'meat', 1), mkp('riz', 'rice', 1),
+      mkp('salade', 'salad', 1), mkp('soupe', 'soup', 1), mkp('fruits', 'fruit', 1), mkp('pomme', 'apple', 1), mkp('banane', 'banana', 1),
+      mkp('orange', 'orange (fruit)', 1), mkp('g\u00e2teau', 'cake', 1), mkp('glace', 'ice cream', 1), mkp('chocolat', 'chocolate', 1), mkp('beurre', 'butter', 1),
+      // Animals (15)
+      mkp('chat', 'cat', 1), mkp('chien', 'dog', 1), mkp('oiseau', 'bird', 1), mkp('poisson', 'fish (animal)', 1), mkp('cheval', 'horse', 1),
+      mkp('vache', 'cow', 1), mkp('mouton', 'sheep', 1), mkp('cochon', 'pig', 1), mkp('lapin', 'rabbit', 1), mkp('souris', 'mouse', 1),
+      mkp('papillon', 'butterfly', 1), mkp('tortue', 'turtle', 1), mkp('lion', 'lion', 1), mkp('\u00e9l\u00e9phant', 'elephant', 1), mkp('singe', 'monkey', 1),
+      // Around Town (20)
+      mkp('restaurant', 'restaurant', 1), mkp('h\u00f4tel', 'hotel', 1), mkp('gare', 'train station', 1), mkp('a\u00e9roport', 'airport', 1), mkp('m\u00e9tro', 'metro', 1),
+      mkp('bus', 'bus', 1), mkp('taxi', 'taxi', 1), mkp('pharmacie', 'pharmacy', 1), mkp('h\u00f4pital', 'hospital', 1), mkp('banque', 'bank', 1),
+      mkp('supermarch\u00e9', 'supermarket', 1), mkp('boulangerie', 'bakery', 1), mkp('mus\u00e9e', 'museum', 1), mkp('parc', 'park', 1), mkp('\u00e9glise', 'church', 1),
+      mkp('plage', 'beach', 1), mkp('biblioth\u00e8que', 'library', 1), mkp('cin\u00e9ma', 'cinema', 1), mkp('\u00e9cole', 'school', 1), mkp('march\u00e9', 'market', 1),
+      // Common Phrases (20)
+      mkp('Je voudrais\u2026', 'I would like\u2026', 1), mkp('Combien \u00e7a co\u00fbte?', 'How much does it cost?', 1), mkp('O\u00f9 est\u2026?', 'Where is\u2026?', 1), mkp('C\'est combien?', 'How much is it?', 1),
+      mkp('L\'addition s\'il vous pla\u00eet', 'The bill please', 1), mkp('Je ne comprends pas', 'I don\'t understand', 1), mkp('Parlez-vous anglais?', 'Do you speak English?', 1), mkp('Je suis perdu', 'I am lost', 1),
+      mkp('Pouvez-vous m\'aider?', 'Can you help me?', 1), mkp('C\'est d\u00e9licieux', 'It\'s delicious', 1), mkp('J\'ai faim', 'I\'m hungry', 1), mkp('J\'ai soif', 'I\'m thirsty', 1),
+      mkp('Je suis fatigu\u00e9', 'I\'m tired', 1), mkp('Quelle heure est-il?', 'What time is it?', 1), mkp('Aujourd\'hui', 'Today', 1), mkp('Demain', 'Tomorrow', 1),
+      mkp('Hier', 'Yesterday', 1), mkp('Maintenant', 'Now', 1), mkp('Bient\u00f4t', 'Soon', 1), mkp('Toujours', 'Always', 1),
+      // Weather & Time (10)
+      mkp('Il fait chaud', 'It\'s hot', 1), mkp('Il fait froid', 'It\'s cold', 1), mkp('Il pleut', 'It\'s raining', 1), mkp('Le soleil', 'The sun', 1),
+      mkp('Le matin', 'The morning', 1), mkp('L\'apr\u00e8s-midi', 'The afternoon', 1), mkp('Le soir', 'The evening', 1), mkp('La nuit', 'The night', 1),
+      mkp('Lundi', 'Monday', 1), mkp('Dimanche', 'Sunday', 1),
     ],
   };
 
@@ -371,12 +443,53 @@ function buildLangData() {
       { id: 5, icon: '\u{1F6D2}', place: 'En el mercado', title: 'At the market', sub: 'Ask prices, buy items', xp: 20, done: false, locked: true },
       { id: 6, icon: '\u{1F91D}', place: 'Conociendo gente', title: 'Meeting locals', sub: 'Introduce yourself, small talk', xp: 25, done: false, locked: true },
     ],
-    pb: [mkp('Hola, me llamo…', 'Hello, my name is…', 3), mkp('La cuenta, por favor', 'The bill please', 3), mkp('\u00bfD\u00f3nde est\u00e1 el metro?', 'Where is the metro?', 2), mkp('No entiendo', 'I don\'t understand', 2), mkp('\u00bfPuede repetir?', 'Can you repeat?', 1), mkp('Muchas gracias', 'Thank you very much', 3),
-      mkp('perro', 'dog', 1), mkp('gato', 'cat', 1), mkp('p\u00e1jaro', 'bird', 1), mkp('pez', 'fish', 1), mkp('mariposa', 'butterfly', 1),
-      mkp('pan', 'bread', 1), mkp('leche', 'milk', 1), mkp('manzana', 'apple', 1), mkp('pastel', 'cake', 1), mkp('helado', 'ice cream', 1),
-      mkp('mam\u00e1', 'mom', 1), mkp('pap\u00e1', 'dad', 1), mkp('hermano', 'brother', 1), mkp('hermana', 'sister', 1),
-      mkp('rojo', 'red', 1), mkp('azul', 'blue', 1), mkp('verde', 'green', 1), mkp('amarillo', 'yellow', 1),
+    pb: [
+      // Existing core phrases
+      mkp('Hola, me llamo\u2026', 'Hello, my name is\u2026', 3), mkp('La cuenta, por favor', 'The bill please', 3), mkp('\u00bfD\u00f3nde est\u00e1 el metro?', 'Where is the metro?', 2), mkp('No entiendo', 'I don\'t understand', 2), mkp('\u00bfPuede repetir?', 'Can you repeat?', 1), mkp('Muchas gracias', 'Thank you very much', 3),
+      // Greetings & Basics (20)
+      mkp('Hola', 'Hello', 1), mkp('Buenos d\u00edas', 'Good morning', 1), mkp('Buenas tardes', 'Good afternoon', 1), mkp('Buenas noches', 'Good night', 1),
+      mkp('Adi\u00f3s', 'Goodbye', 1), mkp('Por favor', 'Please', 1), mkp('Gracias', 'Thank you', 1), mkp('De nada', 'You\'re welcome', 1),
+      mkp('Disculpe', 'Excuse me', 1), mkp('Perd\u00f3n', 'Sorry', 1), mkp('S\u00ed', 'Yes', 1), mkp('No', 'No', 1),
+      mkp('Tal vez', 'Maybe', 1), mkp('Est\u00e1 bien', 'OK / Alright', 1), mkp('\u00bfC\u00f3mo est\u00e1s?', 'How are you?', 1), mkp('Muy bien', 'Very well', 1),
+      mkp('M\u00e1s o menos', 'So-so', 1), mkp('Me llamo\u2026', 'My name is\u2026', 1), mkp('Mucho gusto', 'Nice to meet you', 1), mkp('Hasta luego', 'See you later', 1),
+      // Numbers (20)
       mkp('uno', 'one', 1), mkp('dos', 'two', 1), mkp('tres', 'three', 1), mkp('cuatro', 'four', 1), mkp('cinco', 'five', 1),
+      mkp('seis', 'six', 1), mkp('siete', 'seven', 1), mkp('ocho', 'eight', 1), mkp('nueve', 'nine', 1), mkp('diez', 'ten', 1),
+      mkp('once', 'eleven', 1), mkp('doce', 'twelve', 1), mkp('trece', 'thirteen', 1), mkp('catorce', 'fourteen', 1), mkp('quince', 'fifteen', 1),
+      mkp('veinte', 'twenty', 1), mkp('treinta', 'thirty', 1), mkp('cuarenta', 'forty', 1), mkp('cincuenta', 'fifty', 1), mkp('cien', 'one hundred', 1),
+      // Colors (12)
+      mkp('rojo', 'red', 1), mkp('azul', 'blue', 1), mkp('verde', 'green', 1), mkp('amarillo', 'yellow', 1),
+      mkp('anaranjado', 'orange', 1), mkp('rosa', 'pink', 1), mkp('morado', 'purple', 1), mkp('negro', 'black', 1),
+      mkp('blanco', 'white', 1), mkp('gris', 'grey', 1), mkp('caf\u00e9 / marr\u00f3n', 'brown', 1), mkp('dorado', 'golden', 1),
+      // Family (12)
+      mkp('madre / mam\u00e1', 'mother / mom', 1), mkp('padre / pap\u00e1', 'father / dad', 1), mkp('hermano', 'brother', 1), mkp('hermana', 'sister', 1),
+      mkp('abuelo', 'grandfather', 1), mkp('abuela', 'grandmother', 1), mkp('hijo', 'son', 1), mkp('hija', 'daughter', 1),
+      mkp('t\u00edo', 'uncle', 1), mkp('t\u00eda', 'aunt', 1), mkp('primo / prima', 'cousin', 1), mkp('beb\u00e9', 'baby', 1),
+      // Food & Drink (25)
+      mkp('pan', 'bread', 1), mkp('queso', 'cheese', 1), mkp('tortilla', 'tortilla', 1), mkp('tacos', 'tacos', 1), mkp('caf\u00e9', 'coffee', 1),
+      mkp('t\u00e9', 'tea', 1), mkp('agua', 'water', 1), mkp('leche', 'milk', 1), mkp('jugo', 'juice', 1), mkp('vino', 'wine', 1),
+      mkp('cerveza', 'beer', 1), mkp('pollo', 'chicken', 1), mkp('pescado', 'fish', 1), mkp('carne', 'meat', 1), mkp('arroz', 'rice', 1),
+      mkp('ensalada', 'salad', 1), mkp('sopa', 'soup', 1), mkp('frutas', 'fruit', 1), mkp('manzana', 'apple', 1), mkp('pl\u00e1tano', 'banana', 1),
+      mkp('naranja', 'orange (fruit)', 1), mkp('pastel', 'cake', 1), mkp('helado', 'ice cream', 1), mkp('chocolate', 'chocolate', 1), mkp('mantequilla', 'butter', 1),
+      // Animals (15)
+      mkp('gato', 'cat', 1), mkp('perro', 'dog', 1), mkp('p\u00e1jaro', 'bird', 1), mkp('pez', 'fish (animal)', 1), mkp('caballo', 'horse', 1),
+      mkp('vaca', 'cow', 1), mkp('oveja', 'sheep', 1), mkp('cerdo', 'pig', 1), mkp('conejo', 'rabbit', 1), mkp('rat\u00f3n', 'mouse', 1),
+      mkp('mariposa', 'butterfly', 1), mkp('tortuga', 'turtle', 1), mkp('le\u00f3n', 'lion', 1), mkp('elefante', 'elephant', 1), mkp('mono', 'monkey', 1),
+      // Around Town (20)
+      mkp('restaurante', 'restaurant', 1), mkp('hotel', 'hotel', 1), mkp('estaci\u00f3n', 'station', 1), mkp('aeropuerto', 'airport', 1), mkp('metro', 'metro', 1),
+      mkp('autob\u00fas / cami\u00f3n', 'bus', 1), mkp('taxi', 'taxi', 1), mkp('farmacia', 'pharmacy', 1), mkp('hospital', 'hospital', 1), mkp('banco', 'bank', 1),
+      mkp('supermercado', 'supermarket', 1), mkp('panader\u00eda', 'bakery', 1), mkp('museo', 'museum', 1), mkp('parque', 'park', 1), mkp('iglesia', 'church', 1),
+      mkp('playa', 'beach', 1), mkp('biblioteca', 'library', 1), mkp('cine', 'cinema', 1), mkp('escuela', 'school', 1), mkp('mercado', 'market', 1),
+      // Common Phrases (20)
+      mkp('Quisiera\u2026', 'I would like\u2026', 1), mkp('\u00bfCu\u00e1nto cuesta?', 'How much does it cost?', 1), mkp('\u00bfD\u00f3nde est\u00e1\u2026?', 'Where is\u2026?', 1), mkp('\u00bfCu\u00e1nto es?', 'How much is it?', 1),
+      mkp('La cuenta, por favor', 'The bill please', 1), mkp('No entiendo', 'I don\'t understand', 1), mkp('\u00bfHabla ingl\u00e9s?', 'Do you speak English?', 1), mkp('Estoy perdido/a', 'I am lost', 1),
+      mkp('\u00bfMe puede ayudar?', 'Can you help me?', 1), mkp('\u00a1Est\u00e1 delicioso!', 'It\'s delicious!', 1), mkp('Tengo hambre', 'I\'m hungry', 1), mkp('Tengo sed', 'I\'m thirsty', 1),
+      mkp('Estoy cansado/a', 'I\'m tired', 1), mkp('\u00bfQu\u00e9 hora es?', 'What time is it?', 1), mkp('Hoy', 'Today', 1), mkp('Ma\u00f1ana', 'Tomorrow', 1),
+      mkp('Ayer', 'Yesterday', 1), mkp('Ahora', 'Now', 1), mkp('Pronto', 'Soon', 1), mkp('Siempre', 'Always', 1),
+      // Weather & Time (10)
+      mkp('Hace calor', 'It\'s hot', 1), mkp('Hace fr\u00edo', 'It\'s cold', 1), mkp('Est\u00e1 lloviendo', 'It\'s raining', 1), mkp('El sol', 'The sun', 1),
+      mkp('La ma\u00f1ana', 'The morning', 1), mkp('La tarde', 'The afternoon', 1), mkp('La noche', 'The evening / night', 1), mkp('La medianoche', 'Midnight', 1),
+      mkp('Lunes', 'Monday', 1), mkp('Domingo', 'Sunday', 1),
     ],
   };
 
@@ -388,6 +501,121 @@ function buildLangData() {
     it: { name: 'Italian', greet: 'Buongiorno means Good morning', helpPhrase: 'Aiuto!', hospitalPhrase: 'Dov\'\u00e8 l\'ospedale?', thankPhrase: 'Grazie mille', excusePhrase: 'Scusi', word: 'Buongiorno', wordOpts: ['Good evening', 'Good night', 'Good morning', 'Goodbye'], wordAns: 'Good morning', airport: 'All\'aeroporto', restaurant: 'Al ristorante' },
     ar: { name: 'Arabic', greet: '\u0645\u0631\u062d\u0628\u0627 means Hello', helpPhrase: '\u0633\u0627\u0639\u062f\u0646\u064a!', hospitalPhrase: '\u0623\u064a\u0646 \u0627\u0644\u0645\u0633\u062a\u0634\u0641\u0649\u061f', thankPhrase: '\u0634\u0643\u0631\u0627\u064b \u062c\u0632\u064a\u0644\u0627\u064b', excusePhrase: '\u0639\u0641\u0648\u0627\u064b', word: '\u0645\u0631\u062d\u0628\u0627', wordOpts: ['Goodbye', 'Thank you', 'Hello', 'Please'], wordAns: 'Hello', airport: '\u0641\u064a \u0627\u0644\u0645\u0637\u0627\u0631', restaurant: '\u0641\u064a \u0627\u0644\u0645\u0637\u0639\u0645' },
     pt: { name: 'Portuguese', greet: 'Obrigado means Thank you', helpPhrase: 'Socorro!', hospitalPhrase: 'Onde fica o hospital?', thankPhrase: 'Obrigado / Obrigada', excusePhrase: 'Com licen\u00e7a', word: 'Obrigado', wordOpts: ['Hello', 'Goodbye', 'Please', 'Thank you'], wordAns: 'Thank you', airport: 'No aeroporto', restaurant: 'No restaurante' },
+  };
+
+  // Expanded stub phrase books (~50 words each)
+  const stubPhraseBooks = {
+    ja: [
+      // Greetings
+      mkp('\u3053\u3093\u306b\u3061\u306f', 'Hello', 1), mkp('\u3053\u3093\u3070\u3093\u306f', 'Good evening', 1), mkp('\u304a\u306f\u3088\u3046\u3054\u3056\u3044\u307e\u3059', 'Good morning', 1), mkp('\u3055\u3088\u3046\u306a\u3089', 'Goodbye', 1),
+      mkp('\u304a\u306d\u304c\u3044\u3057\u307e\u3059', 'Please', 1), mkp('\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059', 'Thank you very much', 1), mkp('\u3069\u3046\u3044\u305f\u3057\u307e\u3057\u3066', 'You\'re welcome', 1), mkp('\u3059\u307f\u307e\u305b\u3093', 'Excuse me / Sorry', 1),
+      mkp('\u306f\u3044', 'Yes', 1), mkp('\u3044\u3044\u3048', 'No', 1), mkp('\u304a\u5143\u6c17\u3067\u3059\u304b\uff1f', 'How are you?', 1), mkp('\u5143\u6c17\u3067\u3059', 'I\'m fine', 1),
+      // Numbers
+      mkp('\u3044\u3061', 'one', 1), mkp('\u306b', 'two', 1), mkp('\u3055\u3093', 'three', 1), mkp('\u3057', 'four', 1), mkp('\u3054', 'five', 1),
+      mkp('\u308d\u304f', 'six', 1), mkp('\u306a\u306a', 'seven', 1), mkp('\u306f\u3061', 'eight', 1), mkp('\u304d\u3085\u3046', 'nine', 1), mkp('\u3058\u3085\u3046', 'ten', 1),
+      // Food
+      mkp('\u6c34', 'water', 1), mkp('\u304a\u8336', 'tea', 1), mkp('\u30b3\u30fc\u30d2\u30fc', 'coffee', 1), mkp('\u3054\u306f\u3093', 'rice', 1), mkp('\u9b5a', 'fish', 1),
+      mkp('\u8089', 'meat', 1), mkp('\u30e9\u30fc\u30e1\u30f3', 'ramen', 1), mkp('\u5bff\u53f8', 'sushi', 1), mkp('\u30d3\u30fc\u30eb', 'beer', 1), mkp('\u679c\u7269', 'fruit', 1),
+      // Animals
+      mkp('\u732b', 'cat', 1), mkp('\u72ac', 'dog', 1), mkp('\u9b5a', 'fish', 1), mkp('\u9ce5', 'bird', 1), mkp('\u99ac', 'horse', 1),
+      // Common phrases
+      mkp('\u3044\u304f\u3089\u3067\u3059\u304b\uff1f', 'How much?', 1), mkp('\u30c8\u30a4\u30ec\u306f\u3069\u3053\u3067\u3059\u304b\uff1f', 'Where is the toilet?', 1), mkp('\u82f1\u8a9e\u3092\u8a71\u3057\u307e\u3059\u304b\uff1f', 'Do you speak English?', 1),
+      mkp('\u308f\u304b\u308a\u307e\u305b\u3093', 'I don\'t understand', 1), mkp('\u304a\u3044\u3057\u3044', 'Delicious', 1),
+      mkp('\u99c5', 'station', 1), mkp('\u7a7a\u6e2f', 'airport', 1), mkp('\u75c5\u9662', 'hospital', 1), mkp('\u30db\u30c6\u30eb', 'hotel', 1), mkp('\u5b66\u6821', 'school', 1),
+    ],
+    de: [
+      // Greetings
+      mkp('Guten Tag', 'Good day', 1), mkp('Guten Morgen', 'Good morning', 1), mkp('Guten Abend', 'Good evening', 1), mkp('Gute Nacht', 'Good night', 1),
+      mkp('Auf Wiedersehen', 'Goodbye', 1), mkp('Tsch\u00fcss', 'Bye (informal)', 1), mkp('Bitte', 'Please / You\'re welcome', 1), mkp('Danke', 'Thank you', 1),
+      mkp('Danke sch\u00f6n', 'Thank you very much', 1), mkp('Entschuldigung', 'Excuse me', 1), mkp('Ja', 'Yes', 1), mkp('Nein', 'No', 1),
+      mkp('Wie geht es Ihnen?', 'How are you?', 1), mkp('Mir geht es gut', 'I\'m fine', 1),
+      // Numbers
+      mkp('eins', 'one', 1), mkp('zwei', 'two', 1), mkp('drei', 'three', 1), mkp('vier', 'four', 1), mkp('f\u00fcnf', 'five', 1),
+      mkp('sechs', 'six', 1), mkp('sieben', 'seven', 1), mkp('acht', 'eight', 1), mkp('neun', 'nine', 1), mkp('zehn', 'ten', 1),
+      // Food
+      mkp('Wasser', 'water', 1), mkp('Kaffee', 'coffee', 1), mkp('Tee', 'tea', 1), mkp('Bier', 'beer', 1), mkp('Brot', 'bread', 1),
+      mkp('K\u00e4se', 'cheese', 1), mkp('Fleisch', 'meat', 1), mkp('Fisch', 'fish', 1), mkp('Kuchen', 'cake', 1), mkp('Apfel', 'apple', 1),
+      // Animals
+      mkp('Katze', 'cat', 1), mkp('Hund', 'dog', 1), mkp('Vogel', 'bird', 1), mkp('Pferd', 'horse', 1), mkp('Kuh', 'cow', 1),
+      // Common phrases
+      mkp('Wie viel kostet das?', 'How much does it cost?', 1), mkp('Wo ist\u2026?', 'Where is\u2026?', 1), mkp('Sprechen Sie Englisch?', 'Do you speak English?', 1),
+      mkp('Ich verstehe nicht', 'I don\'t understand', 1), mkp('Hilfe!', 'Help!', 1),
+      mkp('Bahnhof', 'train station', 1), mkp('Flughafen', 'airport', 1), mkp('Krankenhaus', 'hospital', 1), mkp('Hotel', 'hotel', 1), mkp('Schule', 'school', 1),
+    ],
+    ko: [
+      // Greetings
+      mkp('\uc548\ub155\ud558\uc138\uc694', 'Hello', 1), mkp('\uac10\uc0ac\ud569\ub2c8\ub2e4', 'Thank you', 1), mkp('\uc8c4\uc1a1\ud569\ub2c8\ub2e4', 'Sorry', 1), mkp('\uc548\ub155\ud788 \uacc4\uc138\uc694', 'Goodbye', 1),
+      mkp('\ub124', 'Yes', 1), mkp('\uc544\ub2c8\uc694', 'No', 1), mkp('\uc2e4\ub840\ud569\ub2c8\ub2e4', 'Excuse me', 1), mkp('\uc5b4\ub5bb\uac8c \uc9c0\ub0b4\uc138\uc694?', 'How are you?', 1),
+      mkp('\uc798 \uc9c0\ub0b4\uc694', 'I\'m fine', 1), mkp('\ub9cc\ub098\uc11c \ubc18\uac11\uc2b5\ub2c8\ub2e4', 'Nice to meet you', 1), mkp('\uc548\ub155\ud788 \uac00\uc138\uc694', 'Goodbye (to one leaving)', 1), mkp('\uc0ac\ub791\ud574\uc694', 'I love you', 1),
+      // Numbers
+      mkp('\ud558\ub098', 'one', 1), mkp('\ub458', 'two', 1), mkp('\uc14b', 'three', 1), mkp('\ub137', 'four', 1), mkp('\ub2e4\uc12f', 'five', 1),
+      mkp('\uc5ec\uc12f', 'six', 1), mkp('\uc77c\uacf1', 'seven', 1), mkp('\uc5ec\ub35f', 'eight', 1), mkp('\uc544\ud649', 'nine', 1), mkp('\uc5f4', 'ten', 1),
+      // Food
+      mkp('\ubb3c', 'water', 1), mkp('\ucee4\ud53c', 'coffee', 1), mkp('\ucc28', 'tea', 1), mkp('\ubc25', 'rice', 1), mkp('\uace0\uae30', 'meat', 1),
+      mkp('\uc0dd\uc120', 'fish', 1), mkp('\ube44\ube54\ubc25', 'bibimbap', 1), mkp('\uae40\uce58', 'kimchi', 1), mkp('\ub9e5\uc8fc', 'beer', 1), mkp('\uacfc\uc77c', 'fruit', 1),
+      // Animals
+      mkp('\uace0\uc591\uc774', 'cat', 1), mkp('\uac1c', 'dog', 1), mkp('\uc0c8', 'bird', 1), mkp('\ubb3c\uace0\uae30', 'fish', 1), mkp('\ub9d0', 'horse', 1),
+      // Common phrases
+      mkp('\uc5bc\ub9c8\uc608\uc694?', 'How much?', 1), mkp('\uc5b4\ub514\uc608\uc694?', 'Where is it?', 1), mkp('\uc601\uc5b4 \ud558\uc138\uc694?', 'Do you speak English?', 1),
+      mkp('\ubabb \uc54c\uc544\ub4e3\uaca0\uc5b4\uc694', 'I don\'t understand', 1), mkp('\ub9db\uc788\uc5b4\uc694', 'Delicious', 1),
+      mkp('\uc5ed', 'station', 1), mkp('\uacf5\ud56d', 'airport', 1), mkp('\ubcd1\uc6d0', 'hospital', 1), mkp('\ud638\ud154', 'hotel', 1), mkp('\ud559\uad50', 'school', 1),
+    ],
+    it: [
+      // Greetings
+      mkp('Buongiorno', 'Good morning', 1), mkp('Buonasera', 'Good evening', 1), mkp('Buonanotte', 'Good night', 1), mkp('Arrivederci', 'Goodbye', 1),
+      mkp('Ciao', 'Hi / Bye', 1), mkp('Per favore', 'Please', 1), mkp('Grazie', 'Thank you', 1), mkp('Grazie mille', 'Thank you very much', 1),
+      mkp('Prego', 'You\'re welcome', 1), mkp('Scusi', 'Excuse me', 1), mkp('S\u00ec', 'Yes', 1), mkp('No', 'No', 1),
+      mkp('Come sta?', 'How are you?', 1), mkp('Sto bene', 'I\'m fine', 1),
+      // Numbers
+      mkp('uno', 'one', 1), mkp('due', 'two', 1), mkp('tre', 'three', 1), mkp('quattro', 'four', 1), mkp('cinque', 'five', 1),
+      mkp('sei', 'six', 1), mkp('sette', 'seven', 1), mkp('otto', 'eight', 1), mkp('nove', 'nine', 1), mkp('dieci', 'ten', 1),
+      // Food
+      mkp('acqua', 'water', 1), mkp('caff\u00e8', 'coffee', 1), mkp('t\u00e8', 'tea', 1), mkp('vino', 'wine', 1), mkp('pane', 'bread', 1),
+      mkp('formaggio', 'cheese', 1), mkp('pasta', 'pasta', 1), mkp('pizza', 'pizza', 1), mkp('gelato', 'ice cream', 1), mkp('mela', 'apple', 1),
+      // Animals
+      mkp('gatto', 'cat', 1), mkp('cane', 'dog', 1), mkp('uccello', 'bird', 1), mkp('cavallo', 'horse', 1), mkp('pesce', 'fish', 1),
+      // Common phrases
+      mkp('Quanto costa?', 'How much does it cost?', 1), mkp('Dov\'\u00e8\u2026?', 'Where is\u2026?', 1), mkp('Parla inglese?', 'Do you speak English?', 1),
+      mkp('Non capisco', 'I don\'t understand', 1), mkp('Aiuto!', 'Help!', 1),
+      mkp('stazione', 'station', 1), mkp('aeroporto', 'airport', 1), mkp('ospedale', 'hospital', 1), mkp('albergo', 'hotel', 1), mkp('scuola', 'school', 1),
+    ],
+    ar: [
+      // Greetings
+      mkp('\u0645\u0631\u062d\u0628\u0627', 'Hello', 1), mkp('\u0627\u0644\u0633\u0644\u0627\u0645 \u0639\u0644\u064a\u0643\u0645', 'Peace be upon you', 1), mkp('\u0645\u0639 \u0627\u0644\u0633\u0644\u0627\u0645\u0629', 'Goodbye', 1), mkp('\u0635\u0628\u0627\u062d \u0627\u0644\u062e\u064a\u0631', 'Good morning', 1),
+      mkp('\u0645\u0633\u0627\u0621 \u0627\u0644\u062e\u064a\u0631', 'Good evening', 1), mkp('\u0645\u0646 \u0641\u0636\u0644\u0643', 'Please', 1), mkp('\u0634\u0643\u0631\u0627\u064b', 'Thank you', 1), mkp('\u0634\u0643\u0631\u0627\u064b \u062c\u0632\u064a\u0644\u0627\u064b', 'Thank you very much', 1),
+      mkp('\u0639\u0641\u0648\u0627\u064b', 'You\'re welcome / Excuse me', 1), mkp('\u0646\u0639\u0645', 'Yes', 1), mkp('\u0644\u0627', 'No', 1), mkp('\u0643\u064a\u0641 \u062d\u0627\u0644\u0643\u061f', 'How are you?', 1),
+      // Numbers
+      mkp('\u0648\u0627\u062d\u062f', 'one', 1), mkp('\u0627\u062b\u0646\u0627\u0646', 'two', 1), mkp('\u062b\u0644\u0627\u062b\u0629', 'three', 1), mkp('\u0623\u0631\u0628\u0639\u0629', 'four', 1), mkp('\u062e\u0645\u0633\u0629', 'five', 1),
+      mkp('\u0633\u062a\u0629', 'six', 1), mkp('\u0633\u0628\u0639\u0629', 'seven', 1), mkp('\u062b\u0645\u0627\u0646\u064a\u0629', 'eight', 1), mkp('\u062a\u0633\u0639\u0629', 'nine', 1), mkp('\u0639\u0634\u0631\u0629', 'ten', 1),
+      // Food
+      mkp('\u0645\u0627\u0621', 'water', 1), mkp('\u0642\u0647\u0648\u0629', 'coffee', 1), mkp('\u0634\u0627\u064a', 'tea', 1), mkp('\u062e\u0628\u0632', 'bread', 1), mkp('\u0623\u0631\u0632', 'rice', 1),
+      mkp('\u0644\u062d\u0645', 'meat', 1), mkp('\u062f\u062c\u0627\u062c', 'chicken', 1), mkp('\u0633\u0645\u0643', 'fish', 1), mkp('\u0641\u0627\u0643\u0647\u0629', 'fruit', 1), mkp('\u062a\u0641\u0627\u062d', 'apple', 1),
+      // Animals
+      mkp('\u0642\u0637\u0629', 'cat', 1), mkp('\u0643\u0644\u0628', 'dog', 1), mkp('\u0637\u0627\u0626\u0631', 'bird', 1), mkp('\u062d\u0635\u0627\u0646', 'horse', 1), mkp('\u0633\u0645\u0643\u0629', 'fish', 1),
+      // Common phrases
+      mkp('\u0628\u0643\u0645\u061f', 'How much?', 1), mkp('\u0623\u064a\u0646\u061f', 'Where?', 1), mkp('\u0647\u0644 \u062a\u062a\u0643\u0644\u0645 \u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629\u061f', 'Do you speak English?', 1),
+      mkp('\u0644\u0627 \u0623\u0641\u0647\u0645', 'I don\'t understand', 1), mkp('\u0633\u0627\u0639\u062f\u0646\u064a!', 'Help!', 1),
+      mkp('\u0645\u0637\u0627\u0631', 'airport', 1), mkp('\u0645\u0633\u062a\u0634\u0641\u0649', 'hospital', 1), mkp('\u0641\u0646\u062f\u0642', 'hotel', 1), mkp('\u0645\u062f\u0631\u0633\u0629', 'school', 1), mkp('\u0633\u0648\u0642', 'market', 1),
+    ],
+    pt: [
+      // Greetings
+      mkp('Ol\u00e1', 'Hello', 1), mkp('Bom dia', 'Good morning', 1), mkp('Boa tarde', 'Good afternoon', 1), mkp('Boa noite', 'Good evening / night', 1),
+      mkp('Tchau', 'Bye', 1), mkp('Por favor', 'Please', 1), mkp('Obrigado / Obrigada', 'Thank you (m/f)', 1), mkp('De nada', 'You\'re welcome', 1),
+      mkp('Com licen\u00e7a', 'Excuse me', 1), mkp('Desculpe', 'Sorry', 1), mkp('Sim', 'Yes', 1), mkp('N\u00e3o', 'No', 1),
+      mkp('Como vai?', 'How are you?', 1), mkp('Bem, obrigado', 'Fine, thanks', 1),
+      // Numbers
+      mkp('um', 'one', 1), mkp('dois', 'two', 1), mkp('tr\u00eas', 'three', 1), mkp('quatro', 'four', 1), mkp('cinco', 'five', 1),
+      mkp('seis', 'six', 1), mkp('sete', 'seven', 1), mkp('oito', 'eight', 1), mkp('nove', 'nine', 1), mkp('dez', 'ten', 1),
+      // Food
+      mkp('\u00e1gua', 'water', 1), mkp('caf\u00e9', 'coffee', 1), mkp('ch\u00e1', 'tea', 1), mkp('cerveja', 'beer', 1), mkp('p\u00e3o', 'bread', 1),
+      mkp('queijo', 'cheese', 1), mkp('carne', 'meat', 1), mkp('peixe', 'fish', 1), mkp('arroz', 'rice', 1), mkp('ma\u00e7\u00e3', 'apple', 1),
+      // Animals
+      mkp('gato', 'cat', 1), mkp('cachorro', 'dog', 1), mkp('p\u00e1ssaro', 'bird', 1), mkp('cavalo', 'horse', 1), mkp('peixe', 'fish', 1),
+      // Common phrases
+      mkp('Quanto custa?', 'How much?', 1), mkp('Onde fica\u2026?', 'Where is\u2026?', 1), mkp('Voc\u00ea fala ingl\u00eas?', 'Do you speak English?', 1),
+      mkp('N\u00e3o entendo', 'I don\'t understand', 1), mkp('Socorro!', 'Help!', 1),
+      mkp('esta\u00e7\u00e3o', 'station', 1), mkp('aeroporto', 'airport', 1), mkp('hospital', 'hospital', 1), mkp('hotel', 'hotel', 1), mkp('escola', 'school', 1),
+    ],
   };
 
   Object.keys(stubData).forEach(lc => {
@@ -411,12 +639,15 @@ function buildLangData() {
         },
         { id: 2, icon: '\u{1F37D}️', place: s.restaurant, title: 'At a restaurant', sub: 'Order food and drinks', xp: 20, done: false, locked: true },
       ],
-      pb: [
+      pb: stubPhraseBooks[lc] || [
         mkp(s.thankPhrase, s.name === 'Portuguese' ? 'Thank you (m/f)' : 'Thank you very much', 1),
         mkp(s.excusePhrase, 'Excuse me', 1),
       ],
     };
   });
+
+  // Add Mandarin Chinese
+  LANG.zh = CHINESE_LANG;
 
   return LANG;
 }
@@ -606,6 +837,16 @@ export default function LanguagesPage() {
 
   const [LANG] = useState(() => buildLangData());
 
+  // Mother tongue support
+  const [motherTongue, setMotherTongue] = useState('en');
+  function changeMotherTongue(id) {
+    setMotherTongue(id);
+    try { localStorage.setItem('nw_lang_mother_tongue', id); } catch (e) {}
+  }
+  // Shorthand for UI strings in current mother tongue
+  function uiStr(key) { return getUIString(key, motherTongue); }
+  function mtTrans(englishText) { return getTranslation(englishText, motherTongue); }
+
   const [phase, setPhase] = useState('landing');
   const [tab, setTab] = useState('learn');
   const [dest, setDest] = useState(null);
@@ -687,6 +928,11 @@ export default function LanguagesPage() {
 
   // Load persisted state
   useEffect(() => {
+    // Load mother tongue preference
+    try {
+      const savedMT = localStorage.getItem('nw_lang_mother_tongue');
+      if (savedMT && MOTHER_TONGUES.find(m => m.id === savedMT)) setMotherTongue(savedMT);
+    } catch (e) {}
     const saved = loadState();
     if (saved) {
       if (saved.xp != null) setXp(saved.xp);
@@ -1042,8 +1288,33 @@ export default function LanguagesPage() {
             <span style={{ fontSize: 22, fontWeight: 800, color: T.n700, fontFamily: T.f }}>Learn Languages</span>
           </div>
           <div style={{ marginBottom: 18, animation: 'bob 2.4s ease-in-out infinite' }}><CompassSVG sz={108} /></div>
-          <p style={{ fontSize: 30, fontWeight: 800, lineHeight: 1.15, color: T.n700, fontFamily: T.fs, marginBottom: 10 }}>Learn for your<br />destination.</p>
+          <p style={{ fontSize: 30, fontWeight: 800, lineHeight: 1.15, color: T.n700, fontFamily: T.fs, marginBottom: 10, direction: (MOTHER_TONGUES.find(m => m.id === motherTongue) || {}).dir === 'rtl' ? 'rtl' : 'ltr' }}>
+            {motherTongue === 'ur' ? '\u0627\u067E\u0646\u06CC \u0645\u0646\u0632\u0644 \u06A9\u06D2 \u0644\u06CC\u06D2\n\u0633\u06CC\u06A9\u06BE\u06CC\u06BA\u06D4' :
+             motherTongue === 'sd' ? '\u067E\u0646\u0647\u0646\u062C\u064A \u0645\u0646\u0632\u0644 \u0644\u0627\u0621\u064A\n\u0633\u06A9\u0648.' :
+             motherTongue === 'pa' ? '\u0627\u067E\u0646\u06CC \u0645\u0646\u0632\u0644 \u0644\u0626\u06CC\n\u0633\u06A9\u06BE\u0648\u06D4' :
+             motherTongue === 'ps' ? '\u062F \u062E\u067E\u0644 \u0645\u0646\u0632\u0644 \u0644\u067E\u0627\u0631\u0647\n\u0632\u062F\u0647 \u06A9\u0693\u0626.' :
+             <>Learn for your<br />destination.</>}
+          </p>
           <p style={{ fontSize: 15, fontWeight: 400, lineHeight: 1.6, color: T.n500, maxWidth: 290, margin: '0 auto' }}>Every lesson built around where you{"'"}re going and why {"—"} not random vocab lists.</p>
+          {/* Mother Tongue Selector */}
+          <div style={{ marginTop: 22, padding: '14px 0 6px' }}>
+            <p style={{ fontSize: 12, fontWeight: 800, letterSpacing: '.08em', textTransform: 'uppercase', color: T.n300, marginBottom: 10 }}>Your language / {'\u0622\u067E \u06A9\u06CC \u0632\u0628\u0627\u0646'}</p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 6 }}>
+              {MOTHER_TONGUES.map(mt => {
+                const active = motherTongue === mt.id;
+                const isRTL = mt.dir === 'rtl';
+                return (
+                  <button key={mt.id} onClick={() => changeMotherTongue(mt.id)} style={{
+                    padding: '7px 14px', borderRadius: 100, fontSize: 13, fontWeight: 700,
+                    border: active ? `2px solid ${T.teal}` : `1.5px solid ${T.n200}`,
+                    background: active ? T.tealL : T.n0, color: active ? T.tealD : T.n500,
+                    cursor: 'pointer', transition: 'all .15s', fontFamily: T.f,
+                    direction: isRTL ? 'rtl' : 'ltr',
+                  }}>{mt.native}</button>
+                );
+              })}
+            </div>
+          </div>
         </div>
         <div style={{ padding: '14px 22px' }}>
           {features.map((f, i) => (
@@ -1324,7 +1595,7 @@ export default function LanguagesPage() {
       const isL = ex.type === 'listen';
       body = (
         <>
-          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>{isL ? 'LISTEN AND CHOOSE' : 'TAP THE CORRECT ANSWER'}</div>
+          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>{isL ? uiStr('listenChoose') : uiStr('tapCorrect')}</div>
           <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 18 }}>{ex.q}</h3>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 22 }}>
             {ex.emoji && <div style={{ fontSize: 70, lineHeight: 1, marginBottom: 12 }}>{ex.emoji}</div>}
@@ -1354,7 +1625,7 @@ export default function LanguagesPage() {
       ex.words.forEach(w => { avail[w] = (avail[w] || 0) + 1; });
       body = (
         <>
-          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>BUILD THE SENTENCE</div>
+          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>{uiStr('buildSentence')}</div>
           <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 8 }}>{ex.q}</h3>
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 14 }}>
             <div style={{ flex: 1, padding: '10px 14px', background: T.n50, borderRadius: 12, border: `1.5px solid ${T.n100}` }}>
@@ -1389,7 +1660,7 @@ export default function LanguagesPage() {
       const dSent = ex.sentence.split('___');
       body = (
         <>
-          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>FILL IN THE BLANK</div>
+          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>{uiStr('fillBlank')}</div>
           <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 6 }}>{ex.q}</h3>
           <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400, fontStyle: 'italic', marginBottom: 16 }}>{ex.tr}</p>
           <div style={{ padding: 14, background: T.n50, borderRadius: 12, border: `1.5px solid ${T.n100}`, marginBottom: 20, fontSize: 17, fontWeight: 700, color: T.n700, lineHeight: 1.6 }}>
@@ -1408,7 +1679,7 @@ export default function LanguagesPage() {
       const mR = curMatchR || [];
       body = (
         <>
-          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>MATCH THE PAIRS</div>
+          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>{uiStr('matchPairs')}</div>
           <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 18 }}>{ex.q}</h3>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
             {pairs.map((pair, i) => {
@@ -1478,7 +1749,7 @@ export default function LanguagesPage() {
       };
       body = (
         <>
-          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>PRONUNCIATION PRACTICE</div>
+          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>{uiStr('speakWord')}</div>
           <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 18 }}>{ex.q}</h3>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, marginBottom: 22 }}>
             {ex.emoji && <div style={{ fontSize: 50, lineHeight: 1 }}>{ex.emoji}</div>}
@@ -1539,7 +1810,7 @@ export default function LanguagesPage() {
     } else if (chk && ex.type !== 'match') {
       bot = (
         <div style={{ padding: '20px 20px 16px', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0, animation: 'slideUpPanel .25s cubic-bezier(.4,0,.2,1) both' }}>
-          <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: ok ? 4 : 8 }}>{ok ? '\u2713  Correct!' : '\u2717  Not quite'}</div>
+          <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: ok ? 4 : 8 }}>{ok ? '\u2713  ' + uiStr('correct') : '\u2717  ' + uiStr('notQuite')}</div>
           {!ok ? (
             <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.redD, marginBottom: 12 }}>
               {(ex.type === 'fill' || ex.type === 'tap' || ex.type === 'listen') ? <>Answer: <strong>{ex.ans}</strong></> : <>Should be: <strong>{ex.hint}</strong></>}
@@ -1820,7 +2091,7 @@ export default function LanguagesPage() {
                 <div style={{ fontSize: 16 }}>{dest.flag}</div>
                 <div style={{ flex: 1 }}>
                   <div style={{ fontSize: 15, fontWeight: 700, color: T.n700, fontFamily: T.fs }}>{ph.p}</div>
-                  <div style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>{ph.t}</div>
+                  <div style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>{ph.t}{motherTongue !== 'en' ? (' \u00b7 ' + mtTrans(ph.t)) : ''}</div>
                   <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginTop: 3 }}>Next review: {nr}{ph.reps ? ' · ' + ph.reps + ' reps' : ' · new'}</div>
                 </div>
                 <SpeakBtn word={ph.p} lc={dest.lc} />
@@ -1917,6 +2188,25 @@ export default function LanguagesPage() {
             </div>
             <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>20 min daily beats 2h on weekends by 3x (distributed practice research).</p>
           </div>
+          {/* Mother Tongue Selector in Profile */}
+          <div style={{ padding: 14, background: T.n0, borderRadius: 16, border: `1.5px solid ${T.n100}`, boxShadow: '0 1px 3px rgba(0,0,0,.08)', marginBottom: 10 }}>
+            <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.n600, marginBottom: 10 }}>{'\u{1F30D}'} {uiStr('yourLanguage')} / {'\u0622\u067E \u06A9\u06CC \u0632\u0628\u0627\u0646'}</div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+              {MOTHER_TONGUES.map(mt => {
+                const active = motherTongue === mt.id;
+                const isRTL = mt.dir === 'rtl';
+                return (
+                  <button key={mt.id} onClick={() => changeMotherTongue(mt.id)} style={{
+                    padding: '6px 12px', borderRadius: 100, fontSize: 12, fontWeight: 700,
+                    border: active ? `2px solid ${T.teal}` : `1.5px solid ${T.n200}`,
+                    background: active ? T.tealL : T.n0, color: active ? T.tealD : T.n500,
+                    cursor: 'pointer', transition: 'all .15s', fontFamily: T.f,
+                    direction: isRTL ? 'rtl' : 'ltr',
+                  }}>{mt.native}</button>
+                );
+              })}
+            </div>
+          </div>
           <div style={{ padding: 14, marginBottom: 40, background: T.n0, borderRadius: 16, border: `1.5px solid ${T.n100}`, boxShadow: '0 1px 3px rgba(0,0,0,.08)' }}>
             <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.n600, marginBottom: 10 }}>{'\u{1F5FA}️'} Language journey</div>
             {[
@@ -1973,9 +2263,9 @@ export default function LanguagesPage() {
     <>
       <Head>
         <title>Learn Languages | NewWorld Education</title>
-        <meta name="description" content="Learn French, Spanish, Japanese, German, Korean, Italian, Arabic and Portuguese with interactive exercises, conversation practice and spaced repetition — powered by NewWorld Education." />
+        <meta name="description" content="Learn French, Spanish, Japanese, German, Korean, Italian, Arabic, Portuguese and Mandarin Chinese with interactive exercises, conversation practice and spaced repetition — powered by NewWorld Education." />
         <meta property="og:title" content="Learn Languages | NewWorld Education" />
-        <meta property="og:description" content="Master 8 languages with interactive exercises, real conversations and SM-2 spaced repetition." />
+        <meta property="og:description" content="Master 9 languages with interactive exercises, real conversations and SM-2 spaced repetition." />
       </Head>
       <style dangerouslySetInnerHTML={{ __html: KEYFRAMES }} />
       <div style={{
