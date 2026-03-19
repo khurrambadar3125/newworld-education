@@ -31,8 +31,11 @@ export function isExemptEmail(email) {
 import { useState, useEffect, useCallback } from "react";
 
 const FREE_DAILY_LIMIT = 5;
-export function useSessionLimitBypass(email) { return isExemptEmail(email); }           // max Starky API calls per day
+const PAID_DAILY_LIMIT = 25;
+const FREE_TRIAL_DAYS = 7;
+export function useSessionLimitBypass(email) { return isExemptEmail(email); }
 const STORAGE_KEY      = "nwe_usage"; // localStorage key
+const TRIAL_KEY        = "nwe_trial_start"; // when the 7-day trial began
 
 /**
  * Returns today's date string as YYYY-MM-DD (local time)
@@ -71,13 +74,52 @@ const writeUsage = (count) => {
 /**
  * The hook
  */
+/**
+ * Check if the user's 7-day free trial is still active.
+ * Trial starts the first time they use Starky (recorded in localStorage).
+ */
+const getTrialStatus = () => {
+  try {
+    let trialStart = localStorage.getItem(TRIAL_KEY);
+    if (!trialStart) {
+      // First time — start the trial now
+      trialStart = new Date().toISOString();
+      localStorage.setItem(TRIAL_KEY, trialStart);
+    }
+    const start = new Date(trialStart);
+    const now = new Date();
+    const daysPassed = Math.floor((now - start) / 86400000);
+    const daysLeft = Math.max(0, FREE_TRIAL_DAYS - daysPassed);
+    const trialActive = daysPassed < FREE_TRIAL_DAYS;
+    return { trialActive, daysLeft, daysPassed };
+  } catch {
+    return { trialActive: true, daysLeft: FREE_TRIAL_DAYS, daysPassed: 0 };
+  }
+};
+
+/**
+ * Check if user has a paid subscription (stored in nw_user after PayPal/JazzCash webhook)
+ */
+const isPaidUser = () => {
+  try {
+    const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+    return profile.subscriptionActive === true || profile.plan === 'paid' || profile.plan === 'starter' || profile.plan === 'scholar' || profile.plan === 'family' || profile.plan === 'creative-bundle';
+  } catch {
+    return false;
+  }
+};
+
 export const useSessionLimit = (email) => {
   const [callsUsed, setCallsUsed] = useState(0);
   const [isSEN, setIsSEN] = useState(false);
   const [hasReferralReward, setHasReferralReward] = useState(false);
+  const [paid, setPaid] = useState(false);
+  const [trial, setTrial] = useState({ trialActive: true, daysLeft: FREE_TRIAL_DAYS, daysPassed: 0 });
 
   useEffect(() => {
     setCallsUsed(readUsage().count);
+    setPaid(isPaidUser());
+    setTrial(getTrialStatus());
     try {
       const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
       if (profile.senFlag || profile.isSEN) setIsSEN(true);
@@ -95,9 +137,11 @@ export const useSessionLimit = (email) => {
   }, []);
 
   const isExempt = isExemptEmail(email) || isSEN || hasReferralReward;
+  const dailyLimit = paid ? PAID_DAILY_LIMIT : FREE_DAILY_LIMIT;
+  const trialExpired = !trial.trialActive && !paid;
 
-  const callsLeft    = Math.max(0, FREE_DAILY_LIMIT - callsUsed);
-  const limitReached = !isExempt && callsUsed >= FREE_DAILY_LIMIT;
+  const callsLeft    = Math.max(0, dailyLimit - callsUsed);
+  const limitReached = !isExempt && (trialExpired || callsUsed >= dailyLimit);
 
   /**
    * Call before each API request.
@@ -105,7 +149,10 @@ export const useSessionLimit = (email) => {
    */
   const recordCall = useCallback(() => {
     const current = readUsage().count;
-    if (!isExempt && current >= FREE_DAILY_LIMIT) return false;
+    const limit = isPaidUser() ? PAID_DAILY_LIMIT : FREE_DAILY_LIMIT;
+    const trialStatus = getTrialStatus();
+    if (!isExempt && (!trialStatus.trialActive && !isPaidUser())) return false;
+    if (!isExempt && current >= limit) return false;
     const next = current + 1;
     writeUsage(next);
     setCallsUsed(next);
@@ -115,11 +162,20 @@ export const useSessionLimit = (email) => {
   /**
    * Human-readable message for when limit is reached
    */
-  const resetMessage =
-    "You've had 5 great sessions with Starky today! 🌟 Come back tomorrow for more. " +
-    "Your progress is saved and your next challenge is waiting.";
+  const resetMessage = trialExpired
+    ? "Your 7-day free trial has ended. Subscribe to continue learning with Starky — plans start at Rs 3,499/month."
+    : paid
+    ? "You've used all 25 sessions for today! Come back tomorrow for more."
+    : "You've had 5 great sessions with Starky today! Come back tomorrow for more, or subscribe for 25 daily sessions.";
 
-  return { callsUsed, callsLeft, limitReached, recordCall, resetMessage, FREE_DAILY_LIMIT };
+  return {
+    callsUsed, callsLeft, limitReached, recordCall, resetMessage,
+    FREE_DAILY_LIMIT: dailyLimit,
+    trialActive: trial.trialActive,
+    trialDaysLeft: trial.daysLeft,
+    trialExpired,
+    isPaid: paid,
+  };
 };
 
 /**
@@ -133,12 +189,13 @@ export const useSessionLimit = (email) => {
  *   compact     : boolean (optional, defaults false)
  * ─────────────────────────────────────────────────────────────────
  */
-export const SessionLimitBanner = ({ callsUsed, callsLeft, limitReached, compact = false }) => {
-  const pct = (callsUsed / FREE_DAILY_LIMIT) * 100;
+export const SessionLimitBanner = ({ callsUsed, callsLeft, limitReached, compact = false, trialDaysLeft, trialActive, isPaid }) => {
+  const limit = isPaid ? PAID_DAILY_LIMIT : FREE_DAILY_LIMIT;
+  const pct = (callsUsed / limit) * 100;
   const barColor = limitReached ? "#FF6B6B" : callsLeft <= 1 ? "#FFC300" : "#A8E063";
 
-  // Hide counter until last 2 sessions (only show when it matters)
-  if (!limitReached && callsLeft > 2) return null;
+  // Hide counter until last 2 sessions (only show when it matters) — but always show trial info
+  if (!limitReached && callsLeft > 2 && !trialActive) return null;
 
   if (compact) {
     return (
@@ -149,9 +206,10 @@ export const SessionLimitBanner = ({ callsUsed, callsLeft, limitReached, compact
         borderRadius: "20px", padding: "5px 14px",
         fontSize: "12px", fontWeight: "700",
         color: limitReached ? "#FF6B6B" : "#A8E063",
-        fontFamily: "'Nunito', sans-serif",
+        fontFamily: "'Sora', sans-serif",
       }}>
-        {limitReached ? "⚠️ Daily limit reached" : `⚡ ${callsLeft} sessions left today`}
+        {limitReached ? "Daily limit reached" : `${callsLeft} sessions left`}
+        {trialActive && !isPaid ? ` · ${trialDaysLeft}d trial` : ''}
       </div>
     );
   }
@@ -161,15 +219,35 @@ export const SessionLimitBanner = ({ callsUsed, callsLeft, limitReached, compact
       background: limitReached ? "rgba(255,107,107,0.08)" : "rgba(168,224,99,0.07)",
       border: `1px solid ${limitReached ? "rgba(255,107,107,0.25)" : "rgba(168,224,99,0.18)"}`,
       borderRadius: "16px", padding: "14px 18px",
-      fontFamily: "'Nunito', sans-serif",
+      fontFamily: "'Sora', sans-serif",
     }}>
+      {/* Trial badge */}
+      {trialActive && !isPaid && (
+        <div style={{
+          display: 'inline-block', background: 'rgba(79,142,247,0.15)', border: '1px solid rgba(79,142,247,0.3)',
+          borderRadius: '20px', padding: '3px 12px', fontSize: '11px', fontWeight: '800',
+          color: '#4F8EF7', marginBottom: '10px',
+        }}>
+          Free trial · {trialDaysLeft} day{trialDaysLeft !== 1 ? 's' : ''} remaining
+        </div>
+      )}
+      {isPaid && (
+        <div style={{
+          display: 'inline-block', background: 'rgba(74,222,128,0.15)', border: '1px solid rgba(74,222,128,0.3)',
+          borderRadius: '20px', padding: '3px 12px', fontSize: '11px', fontWeight: '800',
+          color: '#4ADE80', marginBottom: '10px',
+        }}>
+          Subscribed
+        </div>
+      )}
+
       {/* Header row */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
         <span style={{ fontSize: "13px", fontWeight: "800", color: limitReached ? "#FF6B6B" : "#A8E063" }}>
-          {limitReached ? "⚠️ Daily sessions used" : "⚡ Daily Starky sessions"}
+          {limitReached ? "Daily sessions used" : "Daily Starky sessions"}
         </span>
         <span style={{ fontSize: "13px", fontWeight: "900", color: barColor }}>
-          {callsUsed} / {FREE_DAILY_LIMIT}
+          {callsUsed} / {limit}
         </span>
       </div>
 
@@ -186,9 +264,11 @@ export const SessionLimitBanner = ({ callsUsed, callsLeft, limitReached, compact
       {/* Message */}
       <div style={{ fontSize: "12px", color: "rgba(255,255,255,0.55)", lineHeight: "1.55" }}>
         {limitReached
-          ? "You've had 5 great sessions today! 🌟 Come back tomorrow — your next challenge is waiting."
+          ? isPaid
+            ? "You've used all 25 sessions today! Come back tomorrow."
+            : "You've had 5 great sessions today! Subscribe for 25 daily sessions."
           : callsLeft === 1
-          ? "Last session for today — make it count! 🎯 More tomorrow."
+          ? "Last session for today — make it count!"
           : `${callsLeft} sessions remaining today. Resets at midnight.`
         }
       </div>
@@ -201,70 +281,96 @@ export const SessionLimitBanner = ({ callsUsed, callsLeft, limitReached, compact
  * LimitReachedModal — full-screen overlay when limit is hit
  * ─────────────────────────────────────────────────────────────────
  */
-export const LimitReachedModal = ({ onClose, grade }) => (
+export const LimitReachedModal = ({ onClose, grade, trialExpired }) => {
+  const isTrialEnd = trialExpired;
+  const JAZZCASH_WA = 'https://wa.me/923262266682?text=I%20want%20to%20subscribe%20to%20NewWorld%20Education%20via%20JazzCash%20(Rs%203%2C499%2Fmonth)';
+
+  return (
   <div style={{
     position: "fixed", inset: 0, background: "rgba(0,0,0,0.85)", zIndex: 600,
     display: "flex", alignItems: "center", justifyContent: "center", padding: "20px",
-    fontFamily: "'Nunito', sans-serif",
+    fontFamily: "'Sora', sans-serif",
   }} onClick={onClose}>
     <div onClick={e => e.stopPropagation()} style={{
       background: "linear-gradient(160deg, #0E1635, #0A1220)",
-      border: "1px solid rgba(255,195,0,0.3)", borderRadius: "32px",
-      padding: "48px", width: "100%", maxWidth: "480px", textAlign: "center",
+      border: `1px solid ${isTrialEnd ? 'rgba(79,142,247,0.3)' : 'rgba(255,195,0,0.3)'}`, borderRadius: "32px",
+      padding: "40px 28px", width: "100%", maxWidth: "480px", textAlign: "center",
     }}>
-      <div style={{ fontSize: "64px", marginBottom: "20px" }}>🌟</div>
-      <h2 style={{ fontWeight: "900", fontSize: "26px", margin: "0 0 12px", color: "#FFC300" }}>
-        Amazing work today!
+      <div style={{ fontSize: "56px", marginBottom: "16px" }}>{isTrialEnd ? '🎓' : '🌟'}</div>
+      <h2 style={{ fontWeight: "900", fontSize: "24px", margin: "0 0 10px", color: isTrialEnd ? "#4F8EF7" : "#FFC300" }}>
+        {isTrialEnd ? 'Your free trial has ended' : 'Amazing work today!'}
       </h2>
-      <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: "1.75", marginBottom: "28px", fontSize: "15px" }}>
-        You've completed your <strong style={{ color: "#FFC300" }}>5 Starky sessions</strong> for today.
-        That's brilliant dedication{grade ? ` for a ${grade.label} student` : ""}! 🎉<br/><br/>
-        Your sessions reset at midnight. Come back tomorrow — Starky has a new challenge waiting just for you.
+      <p style={{ color: "rgba(255,255,255,0.65)", lineHeight: "1.75", marginBottom: "24px", fontSize: "14px" }}>
+        {isTrialEnd
+          ? <>Your 7-day free trial is over. Starky remembers everything about {grade ? `your ${grade.label} ` : ''}your learning journey — subscribe to continue where you left off.</>
+          : <>You've completed your <strong style={{ color: "#FFC300" }}>daily sessions</strong> for today.
+            {grade ? ` That's brilliant dedication for a ${grade.label} student!` : ''}<br/><br/>
+            Sessions reset at midnight. Come back tomorrow!</>
+        }
       </p>
 
-      {/* Dots showing 5/5 */}
-      <div style={{ display: "flex", gap: "10px", justifyContent: "center", marginBottom: "28px" }}>
-        {Array.from({ length: FREE_DAILY_LIMIT }, (_, i) => (
-          <div key={i} style={{
-            width: "16px", height: "16px", borderRadius: "50%",
-            background: "linear-gradient(135deg, #FFC300, #FF8E53)",
-            boxShadow: "0 0 10px rgba(255,195,0,0.4)",
-          }} />
-        ))}
+      {/* Subscription CTA */}
+      <div style={{
+        background: 'rgba(79,142,247,0.08)', border: '1px solid rgba(79,142,247,0.2)',
+        borderRadius: '16px', padding: '18px', marginBottom: '20px', textAlign: 'left',
+      }}>
+        <div style={{ fontSize: '13px', fontWeight: '800', color: '#4F8EF7', marginBottom: '8px' }}>SUBSCRIBE — UNLOCK 25 DAILY SESSIONS</div>
+        <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px', marginBottom: '6px' }}>
+          <span style={{ fontSize: '28px', fontWeight: '900', color: '#fff' }}>Rs 3,499</span>
+          <span style={{ fontSize: '13px', color: 'rgba(255,255,255,0.4)' }}>/month</span>
+        </div>
+        <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.5)', lineHeight: '1.6' }}>
+          25 Starky sessions daily · All subjects · Parent reports · Voice + camera · Session memory
+        </div>
       </div>
 
       <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+        <a href={JAZZCASH_WA} target="_blank" rel="noopener noreferrer" style={{
+          display: "flex", alignItems: "center", justifyContent: "center", gap: "8px",
+          background: "linear-gradient(135deg, #B71C1C, #E53935)",
+          border: "none", borderRadius: "14px", padding: "15px",
+          fontWeight: "900", fontSize: "15px", cursor: "pointer",
+          color: "#fff", fontFamily: "'Sora', sans-serif",
+          textDecoration: "none",
+        }}>
+          Pay via JazzCash (WhatsApp) — Rs 3,499
+        </a>
         <a href="/pricing" style={{
           display: "block",
-          background: "linear-gradient(135deg, #FFC300, #FF8E53)",
+          background: "linear-gradient(135deg, #4F8EF7, #6366F1)",
           border: "none", borderRadius: "14px", padding: "15px",
           fontWeight: "900", fontSize: "15px", cursor: "pointer",
-          color: "#060B20", fontFamily: "'Nunito', sans-serif",
+          color: "#fff", fontFamily: "'Sora', sans-serif",
           textDecoration: "none", textAlign: "center",
         }}>
-          Unlock Unlimited Sessions 🚀
+          See All Plans (PayPal)
         </a>
-        <button onClick={onClose} style={{
-          background: "linear-gradient(135deg, #63D2FF, #4ECDC4)",
-          border: "none", borderRadius: "14px", padding: "15px",
-          fontWeight: "900", fontSize: "15px", cursor: "pointer",
-          color: "#060B20", fontFamily: "'Nunito', sans-serif",
-        }}>
-          See My Learning Report 📧
-        </button>
-        <button onClick={onClose} style={{
-          background: "transparent", border: "1px solid rgba(255,255,255,0.15)",
-          borderRadius: "14px", padding: "13px",
-          color: "rgba(255,255,255,0.5)", fontSize: "14px",
-          cursor: "pointer", fontFamily: "'Nunito', sans-serif", fontWeight: "600",
-        }}>
-          Close — Come back tomorrow
-        </button>
+        {!isTrialEnd && (
+          <button onClick={onClose} style={{
+            background: "transparent", border: "1px solid rgba(255,255,255,0.15)",
+            borderRadius: "14px", padding: "13px",
+            color: "rgba(255,255,255,0.5)", fontSize: "14px",
+            cursor: "pointer", fontFamily: "'Sora', sans-serif", fontWeight: "600",
+          }}>
+            Close — Come back tomorrow
+          </button>
+        )}
+        {isTrialEnd && (
+          <button onClick={onClose} style={{
+            background: "transparent", border: "1px solid rgba(255,255,255,0.15)",
+            borderRadius: "14px", padding: "13px",
+            color: "rgba(255,255,255,0.5)", fontSize: "14px",
+            cursor: "pointer", fontFamily: "'Sora', sans-serif", fontWeight: "600",
+          }}>
+            Close
+          </button>
+        )}
       </div>
 
-      <p style={{ marginTop: "18px", fontSize: "12px", color: "rgba(255,255,255,0.25)" }}>
-        Want unlimited sessions? Ask your school or institution to partner with New World Education.
+      <p style={{ marginTop: "16px", fontSize: "11px", color: "rgba(255,255,255,0.2)" }}>
+        Schools & institutions: contact hello@newworld.education for group pricing
       </p>
     </div>
   </div>
-);
+  );
+};
