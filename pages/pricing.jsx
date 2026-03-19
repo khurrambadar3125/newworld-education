@@ -319,7 +319,7 @@ export default function Pricing() {
                 <>
                   <div className="plan-price">
                     <span className="currency" style={{fontSize:'60%'}}>Rs</span>
-                    <span className="amount">{Math.round(plan.price * USD_TO_PKR).toLocaleString()}</span>
+                    <span className="amount">{(plan.pricePKR || Math.round(plan.price * USD_TO_PKR)).toLocaleString()}</span>
                     <span className="period">/mo</span>
                   </div>
                   <div className="pkr-price">≈ ${plan.price % 1 === 0 ? plan.price : plan.price.toFixed(2)}/month</div>
@@ -337,35 +337,39 @@ export default function Pricing() {
               <ul className="plan-features">
                 {plan.features.map((f, i) => <li key={i}>{f}</li>)}
               </ul>
-              <div className="paypal-container" id={`paypal-button-${plan.id}`}>
-                {!paypalReady && (
-                  <div style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 8, height: 45, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 13, color: 'rgba(255,255,255,0.3)' }}>
-                    Loading payment...
-                  </div>
-                )}
-                {paypalReady === 'failed' && (
-                  <div style={{ background: 'rgba(248,113,113,0.08)', border: '1px solid rgba(248,113,113,0.2)', borderRadius: 8, padding: '10px 14px', fontSize: 12, color: '#F87171', textAlign: 'center' }}>
-                    PayPal didn't load — use WhatsApp below to subscribe
-                  </div>
-                )}
-              </div>
-              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', textAlign: 'center', marginTop: 4, marginBottom: 12 }}>For overseas payments</div>
 
-              {/* JazzCash WhatsApp button */}
+              {/* PRIMARY CTA: JazzCash WhatsApp — for Pakistan users */}
               <a
                 href={`https://wa.me/923262266682?text=${encodeURIComponent(`Hi, I want to subscribe to the NewWorldEdu ${plan.name} Plan (Rs ${plan.pricePKR?.toLocaleString()}/month). Please activate my account.\n\nName: \nEmail: \nChild's Grade: `)}`}
                 target="_blank" rel="noopener noreferrer"
                 style={{
-                  display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
                   background: 'linear-gradient(135deg, #25D366, #128C7E)',
-                  color: '#fff', border: 'none', borderRadius: 12, padding: '13px 20px',
-                  fontSize: 15, fontWeight: 700, textDecoration: 'none', width: '100%',
+                  color: '#fff', border: 'none', borderRadius: 14, padding: '16px 20px',
+                  fontSize: 16, fontWeight: 800, textDecoration: 'none', width: '100%',
                   fontFamily: "'Sora', sans-serif",
+                  boxShadow: '0 6px 24px rgba(37,211,102,0.3)',
+                  marginBottom: 6,
                 }}>
-                <span style={{ fontSize: 20 }}>💬</span>
-                JazzCash — Rs {plan.pricePKR?.toLocaleString()}/mo
+                <span style={{ fontSize: 22 }}>💬</span>
+                Subscribe via WhatsApp — Rs {plan.pricePKR?.toLocaleString()}/mo
               </a>
-              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', textAlign: 'center', marginTop: 4 }}>For Pakistan residents</div>
+              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.35)', textAlign: 'center', marginTop: 2, marginBottom: 16 }}>JazzCash / EasyPaisa / Bank Transfer — instant activation via WhatsApp</div>
+
+              {/* SECONDARY: PayPal — for overseas/international users */}
+              <div style={{ fontSize: 11, fontWeight: 700, color: 'rgba(255,255,255,0.25)', textAlign: 'center', marginBottom: 8, letterSpacing: '0.06em', textTransform: 'uppercase' }}>Or pay with PayPal (international)</div>
+              <div className="paypal-container" id={`paypal-button-${plan.id}`}>
+                {!paypalReady && (
+                  <div style={{ background: 'rgba(255,255,255,0.04)', borderRadius: 8, height: 45, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, color: 'rgba(255,255,255,0.2)' }}>
+                    Loading PayPal...
+                  </div>
+                )}
+                {paypalReady === 'failed' && (
+                  <div style={{ background: 'rgba(248,113,113,0.06)', border: '1px solid rgba(248,113,113,0.15)', borderRadius: 8, padding: '8px 12px', fontSize: 11, color: '#F87171', textAlign: 'center' }}>
+                    PayPal unavailable — use WhatsApp above
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
