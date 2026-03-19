@@ -1,7 +1,7 @@
 /**
  * /api/cron/evolution-report.js
- * Weekly evolution report — emailed to Khurram every Monday 10am PKT (05:00 UTC).
- * Shows what the platform learned, what it improved, and one action item.
+ * Daily evolution report — emailed to Khurram every day at 10am PKT (05:00 UTC).
+ * Shows what the platform learned yesterday, what it improved, and action items.
  */
 
 import { getSupabase } from '../../../utils/supabase';
@@ -17,10 +17,11 @@ export default async function handler(req, res) {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     const sb = getSupabase();
-    const weekAgo = new Date();
-    weekAgo.setDate(weekAgo.getDate() - 7);
+    const dayAgo = new Date();
+    dayAgo.setDate(dayAgo.getDate() - 1);
+    const weekAgo = dayAgo; // Use 24h window for daily report
 
-    // Gather last 7 days of insights from Supabase
+    // Gather last 24 hours of insights from Supabase
     let totalMessages = 0, totalConfusions = 0, totalDrills = 0;
     const allConfusionTopics = {};
     const allGrades = {};
@@ -170,8 +171,8 @@ Keep each recommendation under 2 sentences. Be direct.`;
     const html = `
     <div style="font-family:-apple-system,sans-serif;max-width:600px;margin:auto;background:#0D1221;color:#fff;border-radius:20px;overflow:hidden">
       <div style="background:linear-gradient(135deg,#4F8EF7,#7C5CBF);padding:28px 24px">
-        <div style="font-size:24px;font-weight:800;font-family:'Sora',sans-serif">NWE Platform Evolution Report ★</div>
-        <div style="font-size:14px;color:rgba(255,255,255,0.8);margin-top:6px">Week ending ${new Date().toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' })}</div>
+        <div style="font-size:24px;font-weight:800;font-family:'Sora',sans-serif">Daily Platform Report ★</div>
+        <div style="font-size:14px;color:rgba(255,255,255,0.8);margin-top:6px">${new Date().toLocaleDateString('en-GB', { weekday:'long', day:'numeric', month:'long', year:'numeric' })} — Last 24 hours</div>
       </div>
 
       <div style="padding:24px">
@@ -227,7 +228,7 @@ Keep each recommendation under 2 sentences. Be direct.`;
     await resend.emails.send({
       from: 'Starky <starky@newworld.education>',
       to: 'khurrambadar@gmail.com',
-      subject: `★ NWE Evolution Report — ${totalMessages} messages, ${improvements.length} auto-improvements`,
+      subject: `★ Daily Platform Report — ${new Date().toLocaleDateString('en-GB', {day:'numeric',month:'short'})} — ${totalMessages} messages, ${improvements.length} improvements`,
       html,
     });
 
