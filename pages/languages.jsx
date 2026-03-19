@@ -92,13 +92,13 @@ function buildLangData() {
     culture: [
       { icon: '\u{1F956}', tip: 'Always say "Bonjour" when entering any shop. Skipping it is genuinely considered rude.' },
       { icon: '\u{1F377}', tip: 'Bread is free at restaurants. Asking for a takeaway box ("doggy bag") is unusual in France.' },
-      { icon: '\u{1F44B}', tip: 'Greet friends with "la bise" \u2014 cheek kisses. Typically 2 in Paris, varies by region.' },
+      { icon: '\u{1F44B}', tip: 'Greet friends with "la bise" — cheek kisses. Typically 2 in Paris, varies by region.' },
       { icon: '\u{1F550}', tip: 'Restaurants rarely open before 7:30pm. Dinner is a social event, not a quick meal.' },
     ],
     grammar: [
-      { point: 'Adjectives follow the noun', example: 'un livre int\u00e9ressant \u2014 NOT un int\u00e9ressant livre', note: 'French adjectives almost always go AFTER the noun they describe.' },
+      { point: 'Adjectives follow the noun', example: 'un livre int\u00e9ressant — NOT un int\u00e9ressant livre', note: 'French adjectives almost always go AFTER the noun they describe.' },
       { point: '"Tu" vs "Vous" for "you"', example: 'Vous parlez fran\u00e7ais? (formal) / Tu parles? (friendly)', note: 'Use "vous" with strangers, shopkeepers and elders. "Tu" with friends.' },
-      { point: 'Accents change meaning', example: '"ou" = or   \u00b7   "o\u00f9" = where', note: 'That accent completely changes the word. Pronunciation changes too.' },
+      { point: 'Accents change meaning', example: '"ou" = or   ·   "o\u00f9" = where', note: 'That accent completely changes the word. Pronunciation changes too.' },
     ],
     emergency: [
       { icon: '\u{1F198}', phrase: 'Au secours!', trans: 'Help!', cat: 'Emergency' },
@@ -120,7 +120,7 @@ function buildLangData() {
           { npc: 'Bonjour! Qu\'est-ce que je vous sers?', npc_tr: 'Hello! What can I get you?', choices: [
             { text: 'Un caf\u00e9, s\'il vous pla\u00eet', tr: 'A coffee, please', q: 5 },
             { text: 'Je voudrais un caf\u00e9', tr: 'I would like a coffee', q: 4 },
-            { text: 'Coffee please', tr: '(in English \u2014 she might understand!)', q: 1 },
+            { text: 'Coffee please', tr: '(in English — she might understand!)', q: 1 },
           ] },
           { npc: 'Bien s\u00fbr. Vous mangez quelque chose?', npc_tr: 'Of course. Are you eating anything?', choices: [
             { text: 'Non merci, c\'est tout', tr: 'No thank you, that\'s all', q: 5 },
@@ -159,7 +159,7 @@ function buildLangData() {
       { q: '"Les livres ___ sur la table"', opts: ['sont', 'est', 'suis', '\u00eates'], ans: 'sont', lvl: 'B1' },
     ],
     scenarios: [
-      { id: 1, icon: '\u2708\uFE0F', place: '\u00c0 l\'a\u00e9roport', title: 'Checking in', sub: 'Bag count, seat preference, boarding pass', xp: 15, done: true,
+      { id: 1, icon: '\u2708️', place: '\u00c0 l\'a\u00e9roport', title: 'Checking in', sub: 'Bag count, seat preference, boarding pass', xp: 15, done: true,
         ex: [
           { type: 'tap', q: 'What does "Bonjour" mean?', word: 'Bonjour', emoji: '\u{1F44B}', opts: ['Goodbye', 'Hello', 'Thank you', 'Please'], ans: 'Hello' },
           { type: 'listen', q: 'Listen and choose what you heard:', speak_word: 'J\'ai une valise', emoji: '\u{1F9F3}', opts: ['I have one bag', 'I have two bags', 'Where is my bag?', 'My bag is heavy'], ans: 'I have one bag' },
@@ -167,19 +167,19 @@ function buildLangData() {
           { type: 'fill', q: 'Complete the sentence:', sentence: 'J\'ai ___ valises.', opts: ['une', 'deux', 'trois', 'beaucoup'], ans: 'deux', tr: 'I have two suitcases' },
         ],
       },
-      { id: 2, icon: '\u{1F37D}\uFE0F', place: 'Au restaurant', title: 'Ordering your meal', sub: 'Order food, drinks, ask for the bill', xp: 20, done: false, current: true,
+      { id: 2, icon: '\u{1F37D}️', place: 'Au restaurant', title: 'Ordering your meal', sub: 'Order food, drinks, ask for the bill', xp: 20, done: false, current: true,
         ex: [
-          { type: 'tap', q: 'The waiter says "Bonsoir" \u2014 what does it mean?', word: 'Bonsoir', emoji: '\u{1F319}', opts: ['Good morning', 'Good evening', 'Enjoy your meal', 'The bill'], ans: 'Good evening' },
+          { type: 'tap', q: 'The waiter says "Bonsoir" — what does it mean?', word: 'Bonsoir', emoji: '\u{1F319}', opts: ['Good morning', 'Good evening', 'Enjoy your meal', 'The bill'], ans: 'Good evening' },
           { type: 'listen', q: 'Listen and choose what you heard:', speak_word: 'La carte, s\'il vous pla\u00eet', emoji: '\u{1F4CB}', opts: ['The menu please', 'The bill please', 'A table for two', 'I want to order'], ans: 'The menu please' },
           { type: 'match', q: 'Match each phrase to its English meaning:', pairs: [['L\'addition', 'The bill'], ['La carte', 'The menu'], ['Bon app\u00e9tit', 'Enjoy your meal'], ['C\'\u00e9tait d\u00e9licieux', 'It was delicious']] },
           { type: 'build', q: 'Order water and the set menu:', hint: 'Une carafe d\'eau et le menu s\'il vous pla\u00eet', words: ['Une', 'carafe', 'd\'eau', 'et', 'le', 'menu', 's\'il', 'vous', 'pla\u00eet', 'vin'], ans: 'Une carafe d\'eau et le menu s\'il vous pla\u00eet', tr: 'A jug of water and the set menu please' },
           { type: 'fill', q: 'Ask for the bill:', sentence: 'L\'___, s\'il vous pla\u00eet.', opts: ['menu', 'addition', 'carte', 'dessert'], ans: 'addition', tr: 'The bill please' },
         ],
       },
-      { id: 3, icon: '\u{1F5FA}\uFE0F', place: 'Dans la rue', title: 'Asking directions', sub: 'Left, right, straight ahead, landmarks', xp: 20, done: false, locked: false,
+      { id: 3, icon: '\u{1F5FA}️', place: 'Dans la rue', title: 'Asking directions', sub: 'Left, right, straight ahead, landmarks', xp: 20, done: false, locked: false,
         ex: [
-          { type: 'tap', q: 'What does "\u00e0 gauche" mean?', word: '\u00e0 gauche', emoji: '\u2B05\uFE0F', opts: ['To the right', 'On the left', 'Straight ahead', 'It\'s far'], ans: 'On the left' },
-          { type: 'listen', q: 'Listen and choose what you heard:', speak_word: 'C\'est tout droit', emoji: '\u2B06\uFE0F', opts: ['Go straight ahead', 'Turn right', 'Turn left', 'It\'s nearby'], ans: 'Go straight ahead' },
+          { type: 'tap', q: 'What does "\u00e0 gauche" mean?', word: '\u00e0 gauche', emoji: '\u2B05️', opts: ['To the right', 'On the left', 'Straight ahead', 'It\'s far'], ans: 'On the left' },
+          { type: 'listen', q: 'Listen and choose what you heard:', speak_word: 'C\'est tout droit', emoji: '\u2B06️', opts: ['Go straight ahead', 'Turn right', 'Turn left', 'It\'s nearby'], ans: 'Go straight ahead' },
           { type: 'fill', q: 'Complete the question:', sentence: 'Excusez-moi, ___ est la gare?', opts: ['qui', 'quoi', 'o\u00f9', 'quand'], ans: 'o\u00f9', tr: 'Excuse me, where is the station?' },
           { type: 'build', q: 'Ask where the nearest metro is:', hint: 'Excusez-moi o\u00f9 est le m\u00e9tro le plus proche', words: ['Excusez-moi', 'o\u00f9', 'est', 'le', 'm\u00e9tro', 'le', 'plus', 'proche', 'loin'], ans: 'Excusez-moi o\u00f9 est le m\u00e9tro le plus proche', tr: 'Excuse me where is the nearest metro?' },
         ],
@@ -188,21 +188,21 @@ function buildLangData() {
       { id: 5, icon: '\u{1F6D2}', place: 'Au march\u00e9', title: 'At the market', sub: 'Ask prices, negotiate, make a purchase', xp: 20, done: false, locked: true },
       { id: 6, icon: '\u{1F91D}', place: 'Rencontres', title: 'Meeting locals', sub: 'Introduce yourself, small talk', xp: 25, done: false, locked: true },
     ],
-    pb: [mkp('Bonjour, je m\'appelle\u2026', 'Hello, my name is\u2026', 3), mkp('L\'addition, s\'il vous pla\u00eet', 'The bill please', 3), mkp('O\u00f9 est le m\u00e9tro?', 'Where is the metro?', 2), mkp('Je ne comprends pas', 'I don\'t understand', 2), mkp('Pouvez-vous r\u00e9p\u00e9ter?', 'Can you repeat?', 1), mkp('Merci beaucoup', 'Thank you very much', 3)],
+    pb: [mkp('Bonjour, je m\'appelle…', 'Hello, my name is…', 3), mkp('L\'addition, s\'il vous pla\u00eet', 'The bill please', 3), mkp('O\u00f9 est le m\u00e9tro?', 'Where is the metro?', 2), mkp('Je ne comprends pas', 'I don\'t understand', 2), mkp('Pouvez-vous r\u00e9p\u00e9ter?', 'Can you repeat?', 1), mkp('Merci beaucoup', 'Thank you very much', 3)],
   };
 
   LANG.es = {
     name: 'Spanish', flag: '\u{1F1F2}\u{1F1FD}',
     culture: [
       { icon: '\u{1F550}', tip: '"Ma\u00f1ana" means tomorrow but culturally signals "not urgently". Expect flexible timing.' },
-      { icon: '\u{1F37D}\uFE0F', tip: 'The main meal is lunch (2\u20134pm). Many businesses close for siesta in smaller cities.' },
-      { icon: '\u{1F336}\uFE0F', tip: 'Always ask "\u00bfEst\u00e1 muy picante?" before ordering. Mexicans love heat \u2014 visitors often don\'t.' },
+      { icon: '\u{1F37D}️', tip: 'The main meal is lunch (2–4pm). Many businesses close for siesta in smaller cities.' },
+      { icon: '\u{1F336}️', tip: 'Always ask "\u00bfEst\u00e1 muy picante?" before ordering. Mexicans love heat — visitors often don\'t.' },
       { icon: '\u{1F917}', tip: 'Mexicans are very warm. First names are used quickly. Personal space is closer than in Europe.' },
     ],
     grammar: [
-      { point: 'Everything has gender (m/f)', example: 'el libro (book, m) \u00b7 la mesa (table, f)', note: 'Articles and adjectives must match the gender. El/la = the. Un/una = a.' },
-      { point: 'Two verbs for "to be"', example: 'Soy ingl\u00e9s (permanent) \u00b7 Estoy cansado (temporary)', note: '"Ser" for permanent traits. "Estar" for states, locations, feelings.' },
-      { point: 'Questions have \u00bf at both ends', example: '\u00bfHablas espa\u00f1ol? \u2014 Do you speak Spanish?', note: 'The opening \u00bf signals a question is coming \u2014 useful when reading aloud.' },
+      { point: 'Everything has gender (m/f)', example: 'el libro (book, m) · la mesa (table, f)', note: 'Articles and adjectives must match the gender. El/la = the. Un/una = a.' },
+      { point: 'Two verbs for "to be"', example: 'Soy ingl\u00e9s (permanent) · Estoy cansado (temporary)', note: '"Ser" for permanent traits. "Estar" for states, locations, feelings.' },
+      { point: 'Questions have \u00bf at both ends', example: '\u00bfHablas espa\u00f1ol? — Do you speak Spanish?', note: 'The opening \u00bf signals a question is coming — useful when reading aloud.' },
     ],
     emergency: [
       { icon: '\u{1F198}', phrase: '\u00a1Ayuda!', trans: 'Help!', cat: 'Emergency' },
@@ -239,7 +239,7 @@ function buildLangData() {
         ],
       },
       {
-        id: 'lost', icon: '\u{1F5FA}\uFE0F', title: 'Getting un-lost',
+        id: 'lost', icon: '\u{1F5FA}️', title: 'Getting un-lost',
         npc: { name: 'Sof\u00eda', role: 'Local', emoji: '\u{1F469}' },
         turns: [
           { npc: 'Hola, \u00bfest\u00e1s perdido?', npc_tr: 'Hi, are you lost?', choices: [
@@ -260,27 +260,27 @@ function buildLangData() {
       { q: 'How do you say "I want water"?', opts: ['Quiero agua', 'Tengo agua', 'Bebo agua', 'Necesito agua'], ans: 'Quiero agua', lvl: 'A1' },
       { q: 'What does "\u00bfCu\u00e1nto cuesta?" mean?', opts: ['Where is it?', 'What time is it?', 'How much does it cost?', 'Do you have it?'], ans: 'How much does it cost?', lvl: 'A2' },
       { q: 'Complete: "Yo ___ en Madrid"', opts: ['vivo', 'vive', 'vivimos', 'viven'], ans: 'vivo', lvl: 'A2' },
-      { q: '"El libro ___ sobre la mesa" \u2014 choose:', opts: ['est\u00e1', 'es', 'son', 'estoy'], ans: 'est\u00e1', lvl: 'B1' },
+      { q: '"El libro ___ sobre la mesa" — choose:', opts: ['est\u00e1', 'es', 'son', 'estoy'], ans: 'est\u00e1', lvl: 'B1' },
     ],
     scenarios: [
-      { id: 1, icon: '\u2708\uFE0F', place: 'En el aeropuerto', title: 'Checking in', sub: 'Name, bags, seat preference', xp: 15, done: true,
+      { id: 1, icon: '\u2708️', place: 'En el aeropuerto', title: 'Checking in', sub: 'Name, bags, seat preference', xp: 15, done: true,
         ex: [
           { type: 'tap', q: 'What does "Hola" mean?', word: 'Hola', emoji: '\u{1F44B}', opts: ['Goodbye', 'Hello', 'Thank you', 'Please'], ans: 'Hello' },
           { type: 'listen', q: 'Listen and choose what you heard:', speak_word: 'Tengo una maleta', emoji: '\u{1F9F3}', opts: ['I have one bag', 'I have two bags', 'Where is my bag?', 'My bag is lost'], ans: 'I have one bag' },
           { type: 'build', q: 'Tell them your name and bag count:', hint: 'Me llamo Carlos y tengo una maleta', words: ['Me', 'llamo', 'Carlos', 'y', 'tengo', 'una', 'maleta', 'dos', 'bolsas'], ans: 'Me llamo Carlos y tengo una maleta', tr: 'My name is Carlos and I have one suitcase' },
         ],
       },
-      { id: 2, icon: '\u{1F37D}\uFE0F', place: 'En el restaurante', title: 'Ordering your meal', sub: 'Order food, drinks, get the bill', xp: 20, done: false, current: true,
+      { id: 2, icon: '\u{1F37D}️', place: 'En el restaurante', title: 'Ordering your meal', sub: 'Order food, drinks, get the bill', xp: 20, done: false, current: true,
         ex: [
-          { type: 'tap', q: 'The waiter asks "\u00bfQu\u00e9 desea?" \u2014 what does it mean?', word: '\u00bfQu\u00e9 desea?', emoji: '\u{1F374}', opts: ['Are you ready?', 'What would you like?', 'Enjoy your meal', 'Here is the menu'], ans: 'What would you like?' },
+          { type: 'tap', q: 'The waiter asks "\u00bfQu\u00e9 desea?" — what does it mean?', word: '\u00bfQu\u00e9 desea?', emoji: '\u{1F374}', opts: ['Are you ready?', 'What would you like?', 'Enjoy your meal', 'Here is the menu'], ans: 'What would you like?' },
           { type: 'listen', q: 'Listen and choose what you heard:', speak_word: 'La cuenta, por favor', emoji: '\u{1F4B3}', opts: ['The bill please', 'The menu please', 'One more drink', 'I want to pay'], ans: 'The bill please' },
           { type: 'match', q: 'Match each Spanish phrase to its meaning:', pairs: [['La cuenta', 'The bill'], ['La carta', 'The menu'], ['\u00a1Buen provecho!', 'Enjoy your meal'], ['\u00bfQu\u00e9 recomienda?', 'What do you recommend?']] },
           { type: 'build', q: 'Order water and the menu:', hint: 'Una agua y la carta por favor', words: ['Una', 'agua', 'y', 'la', 'carta', 'por', 'favor', 'vino', 'mesa'], ans: 'Una agua y la carta por favor', tr: 'A water and the menu please' },
         ],
       },
-      { id: 3, icon: '\u{1F5FA}\uFE0F', place: 'En la calle', title: 'Asking directions', sub: 'Left, right, straight ahead', xp: 20, done: false, locked: false,
+      { id: 3, icon: '\u{1F5FA}️', place: 'En la calle', title: 'Asking directions', sub: 'Left, right, straight ahead', xp: 20, done: false, locked: false,
         ex: [
-          { type: 'tap', q: 'What does "a la izquierda" mean?', word: 'a la izquierda', emoji: '\u2B05\uFE0F', opts: ['To the right', 'Straight ahead', 'On the left', 'It\'s far'], ans: 'On the left' },
+          { type: 'tap', q: 'What does "a la izquierda" mean?', word: 'a la izquierda', emoji: '\u2B05️', opts: ['To the right', 'Straight ahead', 'On the left', 'It\'s far'], ans: 'On the left' },
           { type: 'fill', q: 'Ask where the metro is:', sentence: 'Disculpe, \u00bf___ est\u00e1 el metro?', opts: ['qui\u00e9n', 'cu\u00e1ndo', 'd\u00f3nde', 'c\u00f3mo'], ans: 'd\u00f3nde', tr: 'Excuse me, where is the metro?' },
           { type: 'build', q: 'Ask where the nearest metro is:', hint: 'Disculpe d\u00f3nde est\u00e1 el metro m\u00e1s cercano', words: ['Disculpe', 'd\u00f3nde', 'est\u00e1', 'el', 'metro', 'm\u00e1s', 'cercano', 'lejos'], ans: 'Disculpe d\u00f3nde est\u00e1 el metro m\u00e1s cercano', tr: 'Excuse me where is the nearest metro?' },
         ],
@@ -289,7 +289,7 @@ function buildLangData() {
       { id: 5, icon: '\u{1F6D2}', place: 'En el mercado', title: 'At the market', sub: 'Ask prices, buy items', xp: 20, done: false, locked: true },
       { id: 6, icon: '\u{1F91D}', place: 'Conociendo gente', title: 'Meeting locals', sub: 'Introduce yourself, small talk', xp: 25, done: false, locked: true },
     ],
-    pb: [mkp('Hola, me llamo\u2026', 'Hello, my name is\u2026', 3), mkp('La cuenta, por favor', 'The bill please', 3), mkp('\u00bfD\u00f3nde est\u00e1 el metro?', 'Where is the metro?', 2), mkp('No entiendo', 'I don\'t understand', 2), mkp('\u00bfPuede repetir?', 'Can you repeat?', 1), mkp('Muchas gracias', 'Thank you very much', 3)],
+    pb: [mkp('Hola, me llamo…', 'Hello, my name is…', 3), mkp('La cuenta, por favor', 'The bill please', 3), mkp('\u00bfD\u00f3nde est\u00e1 el metro?', 'Where is the metro?', 2), mkp('No entiendo', 'I don\'t understand', 2), mkp('\u00bfPuede repetir?', 'Can you repeat?', 1), mkp('Muchas gracias', 'Thank you very much', 3)],
   };
 
   // Stub languages
@@ -318,10 +318,10 @@ function buildLangData() {
         { q: 'What does "' + s.word + '" mean?', opts: s.wordOpts, ans: s.wordAns, lvl: 'A1' },
       ],
       scenarios: [
-        { id: 1, icon: '\u2708\uFE0F', place: s.airport, title: 'At the airport', sub: 'Check in and navigate', xp: 15, done: false, current: true,
+        { id: 1, icon: '\u2708️', place: s.airport, title: 'At the airport', sub: 'Check in and navigate', xp: 15, done: false, current: true,
           ex: [{ type: 'tap', q: 'What does "' + s.word + '" mean?', word: s.word, emoji: '\u{1F44B}', opts: s.wordOpts, ans: s.wordAns }],
         },
-        { id: 2, icon: '\u{1F37D}\uFE0F', place: s.restaurant, title: 'At a restaurant', sub: 'Order food and drinks', xp: 20, done: false, locked: true },
+        { id: 2, icon: '\u{1F37D}️', place: s.restaurant, title: 'At a restaurant', sub: 'Order food and drinks', xp: 20, done: false, locked: true },
       ],
       pb: [
         mkp(s.thankPhrase, s.name === 'Portuguese' ? 'Thank you (m/f)' : 'Thank you very much', 1),
@@ -389,7 +389,7 @@ function SpeakBtn({ word, lc }) {
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       transition: 'all .15s',
     }}>
-      \u{1F50A}
+      {'\u{1F50A}'}
     </button>
   );
 }
@@ -797,7 +797,7 @@ export default function LanguagesPage() {
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px 16px', background: T.n0, borderBottom: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
         <MomentumRing val={momentum} />
         <div style={{ flex: 1, paddingLeft: 4 }}><div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.n400 }}>Momentum</div></div>
-        {due > 0 && <Chip type="amber">\u{1F504} {due} due</Chip>}
+        {due > 0 && <Chip type="amber">{'\u{1F504}'} {due} due</Chip>}
         <div style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 15, fontWeight: 800 }}><StarSVG /><span style={{ color: T.amber }}>{xp}</span></div>
         {dest && <span style={{ fontSize: 22, marginLeft: 8 }}>{dest.flag}</span>}
       </div>
@@ -806,7 +806,7 @@ export default function LanguagesPage() {
 
   /* ─── BOTTOM NAV ─── */
   function BNav() {
-    const tabs = [['learn', '\u{1F5FA}\uFE0F', 'Journey'], ['chat', '\u{1F4AC}', 'Chat'], ['phrases', '\u{1F4D6}', 'Phrases'], ['profile', '\u{1F4CA}', 'Progress']];
+    const tabs = [['learn', '\u{1F5FA}️', 'Journey'], ['chat', '\u{1F4AC}', 'Chat'], ['phrases', '\u{1F4D6}', 'Phrases'], ['profile', '\u{1F4CA}', 'Progress']];
     return (
       <div style={{ display: 'flex', background: T.n0, borderTop: `1.5px solid ${T.n100}`, flexShrink: 0, paddingBottom: 'env(safe-area-inset-bottom, 0)' }}>
         {tabs.map(t => {
@@ -833,12 +833,12 @@ export default function LanguagesPage() {
 
   function LandingScreen() {
     const features = [
-      ['\u{1F9E0}', 'SM-2 spaced repetition', 'Reviews phrases at the exact moment before you forget \u2014 scientifically proven'],
-      ['\u{1F3AD}', '6 interactive exercise types', 'Tap, build, listen, match, fill-blank \u2014 all working, all wired to audio'],
+      ['\u{1F9E0}', 'SM-2 spaced repetition', 'Reviews phrases at the exact moment before you forget — scientifically proven'],
+      ['\u{1F3AD}', '6 interactive exercise types', 'Tap, build, listen, match, fill-blank — all working, all wired to audio'],
       ['\u{1F4AC}', 'Conversation simulator', 'Practice real dialogues with AI characters before your trip'],
       ['\u{1F30D}', 'Cultural intelligence', 'Customs, etiquette and faux pas woven into every lesson'],
       ['\u{1F4CA}', 'Learning analytics', 'Track your forgetting curve, accuracy and weekly progress'],
-      ['\u{1F5FA}\uFE0F', 'Destination-first', 'Tell us where you\'re going \u2014 content adapts to your goal'],
+      ['\u{1F5FA}️', 'Destination-first', 'Tell us where you\'re going — content adapts to your goal'],
     ];
     return (
       <div style={{ flex: 1, overflowY: 'auto', background: `linear-gradient(180deg, ${T.n50} 0%, ${T.n0} 40%)`, animation: 'slideUp .3s ease both' }}>
@@ -849,7 +849,7 @@ export default function LanguagesPage() {
           </div>
           <div style={{ marginBottom: 18, animation: 'bob 2.4s ease-in-out infinite' }}><CompassSVG sz={108} /></div>
           <p style={{ fontSize: 30, fontWeight: 800, lineHeight: 1.15, color: T.n700, fontFamily: T.fs, marginBottom: 10 }}>Learn for your<br />destination.</p>
-          <p style={{ fontSize: 15, fontWeight: 400, lineHeight: 1.6, color: T.n500, maxWidth: 290, margin: '0 auto' }}>Every lesson built around where you{"'"}re going and why {"\u2014"} not random vocab lists.</p>
+          <p style={{ fontSize: 15, fontWeight: 400, lineHeight: 1.6, color: T.n500, maxWidth: 290, margin: '0 auto' }}>Every lesson built around where you{"'"}re going and why {"—"} not random vocab lists.</p>
         </div>
         <div style={{ padding: '14px 22px' }}>
           {features.map((f, i) => (
@@ -864,8 +864,8 @@ export default function LanguagesPage() {
         </div>
         <div style={{ padding: '14px 22px 40px', display: 'flex', flexDirection: 'column', gap: 10 }}>
           <button onClick={() => go('test')} style={sBtnPrimary}>Take placement test</button>
-          <button onClick={() => go('dest')} style={sBtnSecondary}>Choose destination \u2192</button>
-          <button onClick={handleShowEmergency} style={{ background: T.redL, color: T.red, border: `2px solid ${T.red}`, borderRadius: 16, padding: 12, fontSize: 13, fontWeight: 800, cursor: 'pointer', width: '100%', fontFamily: T.f }}>{'\u{1F198}'} Emergency phrases \u2014 trip in 24 hours?</button>
+          <button onClick={() => go('dest')} style={sBtnSecondary}>Choose destination u2192</button>
+          <button onClick={handleShowEmergency} style={{ background: T.redL, color: T.red, border: `2px solid ${T.red}`, borderRadius: 16, padding: 12, fontSize: 13, fontWeight: 800, cursor: 'pointer', width: '100%', fontFamily: T.f }}>{'\u{1F198}'} Emergency phrases — trip in 24 hours?</button>
         </div>
       </div>
     );
@@ -877,10 +877,10 @@ export default function LanguagesPage() {
     return (
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', animation: 'slideUp .3s ease both' }}>
         <div style={{ padding: '14px 16px', display: 'flex', alignItems: 'center', gap: 12, borderBottom: `1.5px solid ${T.n100}`, background: T.redL, flexShrink: 0 }}>
-          <button onClick={hideEmergency} style={{ width: 32, height: 32, borderRadius: '50%', background: T.redL, border: `1.5px solid ${T.red}`, fontSize: 14, color: T.red, cursor: 'pointer', fontFamily: T.f }}>\u2715</button>
+          <button onClick={hideEmergency} style={{ width: 32, height: 32, borderRadius: '50%', background: T.redL, border: `1.5px solid ${T.red}`, fontSize: 14, color: T.red, cursor: 'pointer', fontFamily: T.f }}>u2715</button>
           <div>
             <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.red }}>{'\u{1F198}'} Emergency Phrases</div>
-            <p style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.red }}>{langData.name} survival kit \u2014 tap {'\u{1F50A}'} to hear any phrase</p>
+            <p style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.red }}>{langData.name} survival kit — tap {'\u{1F50A}'} to hear any phrase</p>
           </div>
         </div>
         <div style={{ flex: 1, overflowY: 'auto', padding: '14px 14px' }}>
@@ -905,7 +905,7 @@ export default function LanguagesPage() {
           })}
         </div>
         <div style={{ padding: 14, borderTop: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
-          <button onClick={hideEmergency} style={sBtnRed}>Done \u2014 back to learning</button>
+          <button onClick={hideEmergency} style={sBtnRed}>Done u2014 back to learning</button>
         </div>
       </div>
     );
@@ -950,15 +950,15 @@ export default function LanguagesPage() {
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '32px 24px', textAlign: 'center', background: T.n0, animation: 'bounceIn .5s ease' }}>
           <div style={{ fontSize: 56, marginBottom: 8, animation: 'popIn .5s ease' }}>{pct >= 0.8 ? '\u{1F393}' : pct >= 0.6 ? '\u{1F4DA}' : '\u{1F331}'}</div>
           <h2 style={{ fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: T.n700, marginBottom: 4 }}>You{"'"}re {lvlName}</h2>
-          <Chip type="teal">Level {lvl} \u2014 {Math.round(pct * 100)}% score</Chip>
+          <Chip type="teal">Level {lvl} — {Math.round(pct * 100)}% score</Chip>
           <div style={{ background: T.tealL, border: `1.5px solid ${T.teal}`, borderRadius: 16, padding: 16, width: '100%', margin: '16px 0 24px', textAlign: 'left' }}>
             <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.teal }}>
-              {lvl === 'A1' ? 'Starting from the foundations \u2014 rock-solid basics before real conversations.' :
+              {lvl === 'A1' ? 'Starting from the foundations — rock-solid basics before real conversations.' :
                 lvl === 'A2' ? 'You have the basics. Skipping straight to real conversational scenarios.' :
                   'Ready for advanced scenarios. Focus is on fluency and natural expression.'}
             </p>
           </div>
-          <button onClick={doneTest} style={sBtnPrimary}>Start my journey \u2192</button>
+          <button onClick={doneTest} style={sBtnPrimary}>Start my journey u2192</button>
         </div>
       );
     }
@@ -982,8 +982,8 @@ export default function LanguagesPage() {
         </div>
         {chk ? (
           <div style={{ padding: '20px 20px 16px', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0, animation: 'slideUpPanel .25s cubic-bezier(.4,0,.2,1) both' }}>
-            <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: 10 }}>{ok ? '\u2713 Correct!' : '\u2717 Answer: ' + q.ans}</div>
-            <button onClick={nextTestQ} style={ok ? sBtnGreen : sBtnRed}>Continue \u2192</button>
+            <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: 10 }}>{ok ? '✓ Correct!' : '✗ Answer: ' + q.ans}</div>
+            <button onClick={nextTestQ} style={ok ? sBtnGreen : sBtnRed}>Continue u2192</button>
           </div>
         ) : (
           <div style={{ padding: '14px 20px', borderTop: `1.5px solid ${T.n100}` }}>
@@ -996,16 +996,16 @@ export default function LanguagesPage() {
 
   function PaceScreen() {
     const opts = [
-      ['\u{1F331}', 'Light', '5\u201310 min \u2014 build the habit first', false],
-      ['\u{1F3C3}', 'Regular', '15\u201320 min \u2014 the sweet spot', true],
-      ['\u{1F525}', 'Deep dive', '25\u201340 min \u2014 fastest path to fluency', false],
+      ['\u{1F331}', 'Light', '5–10 min — build the habit first', false],
+      ['\u{1F3C3}', 'Regular', '15–20 min — the sweet spot', true],
+      ['\u{1F525}', 'Deep dive', '25–40 min — fastest path to fluency', false],
     ];
     return (
       <div style={{ flex: 1, overflowY: 'auto', animation: 'slideUp .3s ease both' }}>
         <div style={{ padding: '28px 20px 16px' }}>
-          <div style={{ fontSize: 44, marginBottom: 12 }}>\u23F1\uFE0F</div>
+          <div style={{ fontSize: 44, marginBottom: 12 }}>u23F1uFE0F</div>
           <h2 style={{ fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: T.n700, marginBottom: 4 }}>How much time daily?</h2>
-          <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>Science shows 20 min daily beats 3 hrs on weekends by 3\u00d7.</p>
+          <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>Science shows 20 min daily beats 3 hrs on weekends by 3×.</p>
         </div>
         <div style={{ padding: '0 20px 40px', display: 'flex', flexDirection: 'column', gap: 10 }}>
           {opts.map((o, i) => (
@@ -1035,7 +1035,7 @@ export default function LanguagesPage() {
           <span style={{ fontSize: 24 }}>{dest.flag}</span>
           <div style={{ flex: 1 }}>
             <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.n600 }}>{dest.name}</div>
-            <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginBottom: 5 }}>{ld.name} \u00b7 Level {level} \u00b7 {done}/{sc.length} complete</div>
+            <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginBottom: 5 }}>{ld.name} · Level {level} · {done}/{sc.length} complete</div>
             <ProgressBar value={done} max={sc.length} height={7} />
           </div>
           <Chip type="teal">{levelName}</Chip>
@@ -1079,7 +1079,7 @@ export default function LanguagesPage() {
                         display: 'flex', alignItems: 'center', justifyContent: 'center',
                         fontSize: 10, color: '#fff', fontWeight: 900,
                         animation: 'tickIn .3s cubic-bezier(.34,1.56,.64,1)',
-                      }}>\u2713</div>
+                      }}>✓</div>
                     )}
                   </button>
                   <div style={{ marginTop: 6, textAlign: 'center', maxWidth: 80, lineHeight: 1.2, fontSize: 11, fontWeight: 600, color: s.done ? T.green : s.current ? T.teal : T.n300, letterSpacing: '.04em' }}>{s.place}</div>
@@ -1156,7 +1156,7 @@ export default function LanguagesPage() {
             {built.length ? built.map((w, i) => (
               <span key={i} onClick={() => removeWord(i)} style={{ padding: '7px 13px', background: T.teal, color: '#fff', borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: 'pointer', borderBottom: `3px solid ${T.tealD}`, transition: 'all .1s' }}>{w}</span>
             )) : (
-              <span style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>Tap words to build your sentence\u2026</span>
+              <span style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>Tap words to build your sentence…</span>
             )}
           </div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, padding: '4px 0' }}>
@@ -1229,7 +1229,7 @@ export default function LanguagesPage() {
           </div>
           {matchDone.length === pairs.length && (
             <div style={{ marginTop: 14, padding: '12px 14px', background: T.greenL, borderRadius: 12, border: `1.5px solid ${T.green}` }}>
-              <p style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.green }}>\u2713 All matched! Well done.</p>
+              <p style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.green }}>✓ All matched! Well done.</p>
             </div>
           )}
         </>
@@ -1239,21 +1239,21 @@ export default function LanguagesPage() {
     const rdy = ex.type === 'build' ? built.length > 0 : ex.type === 'match' ? matchDone.length === (ex.pairs ? ex.pairs.length : 0) : !!sel;
     const bot = chk && ex.type !== 'match' ? (
       <div style={{ padding: '20px 20px 16px', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0, animation: 'slideUpPanel .25s cubic-bezier(.4,0,.2,1) both' }}>
-        <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: ok ? 4 : 8 }}>{ok ? '\u2713  Correct!' : '\u2717  Not quite'}</div>
+        <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: ok ? 4 : 8 }}>{ok ? '✓  Correct!' : '✗  Not quite'}</div>
         {!ok ? (
           <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.redD, marginBottom: 12 }}>
             {(ex.type === 'fill' || ex.type === 'tap' || ex.type === 'listen') ? <>Answer: <strong>{ex.ans}</strong></> : <>Should be: <strong>{ex.hint}</strong></>}
             <br />Added to your replay queue {'\u{1F504}'}
           </p>
         ) : (
-          <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.greenD, marginBottom: 10 }}>Momentum +3% \u00b7 Keep it up!</p>
+          <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.greenD, marginBottom: 10 }}>Momentum +3% · Keep it up!</p>
         )}
-        <button onClick={nextQ} style={ok ? sBtnGreen : sBtnRed}>Continue \u2192</button>
+        <button onClick={nextQ} style={ok ? sBtnGreen : sBtnRed}>Continue u2192</button>
       </div>
     ) : (
       <div style={{ padding: '14px 18px', borderTop: `1.5px solid ${T.n100}` }}>
         {ex.type === 'match' && rdy ? (
-          <button onClick={nextQ} style={sBtnPrimary}>Continue \u2192</button>
+          <button onClick={nextQ} style={sBtnPrimary}>Continue u2192</button>
         ) : ex.type !== 'match' ? (
           <button onClick={checkEx2} style={rdy ? sBtnPrimary : sBtnDisabled} disabled={!rdy}>Check answer</button>
         ) : (
@@ -1265,7 +1265,7 @@ export default function LanguagesPage() {
     return (
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', background: T.n0, animation: shk ? 'shake .5s ease' : 'slideUp .3s ease' }}>
         <div style={{ padding: '11px 16px', display: 'flex', alignItems: 'center', gap: 12, borderBottom: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
-          <button onClick={closeEx} style={{ width: 30, height: 30, borderRadius: '50%', background: T.n50, border: `1.5px solid ${T.n200}`, fontSize: 13, color: T.n400, cursor: 'pointer', fontFamily: T.f }}>\u2715</button>
+          <button onClick={closeEx} style={{ width: 30, height: 30, borderRadius: '50%', background: T.n50, border: `1.5px solid ${T.n200}`, fontSize: 13, color: T.n400, cursor: 'pointer', fontFamily: T.f }}>u2715</button>
           <div style={{ flex: 1 }}><ProgressBar value={prog} max={1} height={8} /></div>
           <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400 }}>{exIdx}/{exs.length}</div>
         </div>
@@ -1297,7 +1297,7 @@ export default function LanguagesPage() {
           <p style={{ fontSize: 15, fontWeight: 400, lineHeight: 1.6, color: T.n500 }}>{g.note}</p>
         </div>
         <div style={{ padding: '16px 20px', borderTop: `1.5px solid ${T.n100}` }}>
-          <button onClick={dismissGram} style={sBtnPrimary}>Got it \u2014 continue \u2192</button>
+          <button onClick={dismissGram} style={sBtnPrimary}>Got it — continue →</button>
         </div>
       </div>
     );
@@ -1315,7 +1315,7 @@ export default function LanguagesPage() {
           {dest && <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginTop: 14 }}>Local knowledge for {dest.name}</div>}
         </div>
         <div style={{ padding: '16px 20px', borderTop: `1.5px solid ${T.n100}` }}>
-          <button onClick={dismissCult} style={{ ...sBtnPrimary, background: T.amber, boxShadow: `0 5px 0 ${T.amberD}` }}>Interesting \u2014 continue \u2192</button>
+          <button onClick={dismissCult} style={{ ...sBtnPrimary, background: T.amber, boxShadow: `0 5px 0 ${T.amberD}` }}>Interesting — continue →</button>
         </div>
       </div>
     );
@@ -1332,7 +1332,7 @@ export default function LanguagesPage() {
         <div style={{ fontSize: 48, marginBottom: 6, letterSpacing: 3, animation: 'popIn .6s ease' }}>{str}</div>
         <h2 style={{ fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: T.n700, marginBottom: 4 }}>Scenario complete!</h2>
         <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400, marginBottom: 6 }}>{exSc.place}</p>
-        <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.teal, fontWeight: 700, marginBottom: 24 }}>Phrases saved to Phrasebook + scheduled for review \u2713</p>
+        <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.teal, fontWeight: 700, marginBottom: 24 }}>Phrases saved to Phrasebook + scheduled for review ✓</p>
         <div style={{ display: 'flex', gap: 10, width: '100%', marginBottom: 24 }}>
           {[
             ['\u{1F30A}', momentum + '%', 'Momentum', T.teal],
@@ -1347,7 +1347,7 @@ export default function LanguagesPage() {
             </div>
           ))}
         </div>
-        <button onClick={doneEx} style={sBtnPrimary}>Back to journey \u2192</button>
+        <button onClick={doneEx} style={sBtnPrimary}>Back to journey →</button>
       </div>
     );
   }
@@ -1374,7 +1374,7 @@ export default function LanguagesPage() {
               <div style={{ width: 54, height: 54, borderRadius: '50%', background: T.n50, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 28, flexShrink: 0, border: `2px solid ${T.n100}` }}>{cv.npc.emoji}</div>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.n600 }}>{cv.title}</div>
-                <p style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginTop: 2 }}>With {cv.npc.name} \u00b7 {cv.npc.role}</p>
+                <p style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginTop: 2 }}>With {cv.npc.name} · {cv.npc.role}</p>
                 <p style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.teal, letterSpacing: '.04em', marginTop: 4 }}>{cv.turns.length} exchanges</p>
               </div>
               <span style={{ fontSize: 22 }}>{cv.icon}</span>
@@ -1401,7 +1401,7 @@ export default function LanguagesPage() {
       const pct = Math.round(convScore / convo.turns.length * 100);
       return (
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '28px 22px', textAlign: 'center', background: T.n0, animation: 'bounceIn .5s ease' }}>
-          <div style={{ fontSize: 52, marginBottom: 8 }}>{pct >= 80 ? '\u{1F3AD}' : pct >= 50 ? '\u{1F4AC}' : '\u{1F5E3}\uFE0F'}</div>
+          <div style={{ fontSize: 52, marginBottom: 8 }}>{pct >= 80 ? '\u{1F3AD}' : pct >= 50 ? '\u{1F4AC}' : '\u{1F5E3}️'}</div>
           <h2 style={{ fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: T.n700, marginBottom: 4 }}>Conversation complete!</h2>
           <Chip type={pct >= 80 ? 'teal' : pct >= 50 ? 'amber' : 'red'}>{pct}% natural responses</Chip>
           <div style={{ padding: 16, width: '100%', textAlign: 'left', margin: '20px 0 22px', background: T.n50, borderRadius: 12, border: `1.5px solid ${T.n100}` }}>
@@ -1424,7 +1424,7 @@ export default function LanguagesPage() {
     return (
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', background: T.n0 }}>
         <div style={{ padding: '11px 16px', display: 'flex', alignItems: 'center', gap: 12, borderBottom: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
-          <button onClick={endConvo} style={{ width: 30, height: 30, borderRadius: '50%', background: T.n50, border: `1.5px solid ${T.n200}`, fontSize: 13, color: T.n400, cursor: 'pointer', fontFamily: T.f }}>\u2715</button>
+          <button onClick={endConvo} style={{ width: 30, height: 30, borderRadius: '50%', background: T.n50, border: `1.5px solid ${T.n200}`, fontSize: 13, color: T.n400, cursor: 'pointer', fontFamily: T.f }}>u2715</button>
           <div style={{ flex: 1 }}><ProgressBar value={convIdx} max={convo.turns.length} height={7} /></div>
           <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400 }}>{convIdx}/{convo.turns.length}</div>
         </div>
@@ -1503,7 +1503,7 @@ export default function LanguagesPage() {
                 <div style={{ flex: 1 }}>
                   <div style={{ fontSize: 15, fontWeight: 700, color: T.n700, fontFamily: T.fs }}>{ph.p}</div>
                   <div style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>{ph.t}</div>
-                  <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginTop: 3 }}>Next review: {nr}{ph.reps ? ' \u00b7 ' + ph.reps + ' reps' : ' \u00b7 new'}</div>
+                  <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginTop: 3 }}>Next review: {nr}{ph.reps ? ' · ' + ph.reps + ' reps' : ' · new'}</div>
                 </div>
                 <SpeakBtn word={ph.p} lc={dest.lc} />
                 <div style={{ textAlign: 'center', flexShrink: 0, marginLeft: 4 }}>
@@ -1515,7 +1515,7 @@ export default function LanguagesPage() {
           })}
           <div style={{ padding: 14, background: T.n50, borderRadius: 12, border: `1.5px solid ${T.n100}`, marginTop: 6 }}>
             <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.n600, marginBottom: 6 }}>{'\u{1F9E0}'} How SM-2 works</div>
-            <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>After each review you rate your recall (1\u20135). The algorithm then schedules that phrase at the exact optimal interval \u2014 1 day, 6 days, 15 days... Brain imaging shows SRS learners develop native-like neural patterns after just 6 months.</p>
+            <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>After each review you rate your recall (1–5). The algorithm then schedules that phrase at the exact optimal interval — 1 day, 6 days, 15 days... Brain imaging shows SRS learners develop native-like neural patterns after just 6 months.</p>
           </div>
         </div>
       </div>
@@ -1542,7 +1542,7 @@ export default function LanguagesPage() {
           </div>
           <div style={{ textAlign: 'center' }}>
             <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700 }}>Language Explorer</h3>
-            <p style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginTop: 2 }}>{dest.name} \u00b7 {ld.name} \u00b7 Level {level}</p>
+            <p style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginTop: 2 }}>{dest.name} · {ld.name} · Level {level}</p>
           </div>
         </div>
         <div style={{ padding: '12px 14px', display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -1557,7 +1557,7 @@ export default function LanguagesPage() {
             {[
               ['\u{1F30A}', momentum + '%', 'Momentum', T.teal],
               ['\u2B50', '' + xp, 'Total XP', T.amber],
-              ['\u{1F5FA}\uFE0F', done + '/' + sc.length, 'Scenarios', T.teal],
+              ['\u{1F5FA}️', done + '/' + sc.length, 'Scenarios', T.teal],
               ['\u{1F4D6}', '' + ld.pb.length, 'Phrases', T.green],
               ['\u{1F3AF}', accuracy + '%', 'Accuracy', T.green],
               ['\u{1F504}', '' + replays, 'To review', T.red],
@@ -1579,10 +1579,10 @@ export default function LanguagesPage() {
                 </div>
               ))}
             </div>
-            <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>20 min daily beats 2h on weekends by 3\u00d7 (distributed practice research).</p>
+            <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>20 min daily beats 2h on weekends by 3× (distributed practice research).</p>
           </div>
           <div style={{ padding: 14, marginBottom: 40, background: T.n0, borderRadius: 16, border: `1.5px solid ${T.n100}`, boxShadow: '0 1px 3px rgba(0,0,0,.08)' }}>
-            <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.n600, marginBottom: 10 }}>{'\u{1F5FA}\uFE0F'} Language journey</div>
+            <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.n600, marginBottom: 10 }}>{'\u{1F5FA}️'} Language journey</div>
             {[
               ['A1', 'Beginner', done > 0],
               ['A2', 'Elementary', false],
@@ -1598,7 +1598,7 @@ export default function LanguagesPage() {
                   fontSize: 10, fontWeight: 800, color: l[2] ? '#fff' : T.n400, flexShrink: 0,
                 }}>{l[0]}</div>
                 <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, fontWeight: 700, color: level === l[0] ? T.teal : T.n600 }}>{l[1]}{level === l[0] ? ' \u2190 you are here' : ''}</div>
+                  <div style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, fontWeight: 700, color: level === l[0] ? T.teal : T.n600 }}>{l[1]}{level === l[0] ? ' ← you are here' : ''}</div>
                   <ProgressBar value={level === l[0] ? lxp : 0} max={100} height={4} cls={level === l[0] ? '' : 'amber'} />
                 </div>
               </div>
@@ -1637,7 +1637,7 @@ export default function LanguagesPage() {
     <>
       <Head>
         <title>Learn Languages | NewWorld Education</title>
-        <meta name="description" content="Learn French, Spanish, Japanese, German, Korean, Italian, Arabic and Portuguese with interactive exercises, conversation practice and spaced repetition \u2014 powered by NewWorld Education." />
+        <meta name="description" content="Learn French, Spanish, Japanese, German, Korean, Italian, Arabic and Portuguese with interactive exercises, conversation practice and spaced repetition — powered by NewWorld Education." />
         <meta property="og:title" content="Learn Languages | NewWorld Education" />
         <meta property="og:description" content="Master 8 languages with interactive exercises, real conversations and SM-2 spaced repetition." />
       </Head>
