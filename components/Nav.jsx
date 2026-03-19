@@ -11,6 +11,7 @@ const MENU_GROUPS = [
       { href: '/homework',     label: '📝 Homework Help' },
       { href: '/essay',        label: '✍️ Essay Marking' },
       { href: '/textbooks',    label: '📖 Textbooks' },
+      { href: '/languages',   label: '🌍 Languages' },
     ],
   },
   {
