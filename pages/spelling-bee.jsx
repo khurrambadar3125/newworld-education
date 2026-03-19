@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Head from 'next/head';
 import { useTheme } from './_app';
+import { useProductGate, ProductPaywall, ProductTrialBadge } from '../utils/productGate';
 
 /* ═══════════════════════════════════════
    DESIGN TOKENS — theme-aware
@@ -423,6 +424,8 @@ export default function SpellingBee() {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
   const T = getTokens(isDark);
+  const gate = useProductGate('spelling-bee');
+  const [showPaywall, setShowPaywall] = useState(false);
 
   // --- State ---
   const [grade, setGrade] = useState(null);
@@ -476,6 +479,9 @@ export default function SpellingBee() {
 
   // --- Start game ---
   const startGame = useCallback((g, m) => {
+    // Check product gate — block if trial expired or daily rounds used
+    if (gate.blocked) { setShowPaywall(true); return; }
+    gate.recordRound();
     setGrade(g);
     setMode(m);
     const w = pickWords(g, m === 'speed' ? 30 : 10);
@@ -1446,7 +1452,12 @@ export default function SpellingBee() {
       </Head>
       <style dangerouslySetInnerHTML={{ __html: CSS }} />
       <div style={S.page}>
+        {showPaywall && <ProductPaywall gate={gate} onClose={() => setShowPaywall(false)} T={T} />}
         <div style={S.wrap}>
+          {/* Trial/subscription badge */}
+          <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 8 }}>
+            <ProductTrialBadge gate={gate} T={T} />
+          </div>
           {screen === 'grade' && renderGradeSelector()}
           {screen === 'mode' && renderModeSelector()}
           {screen === 'play' && mode === 'classic' && renderClassicOrPicture()}

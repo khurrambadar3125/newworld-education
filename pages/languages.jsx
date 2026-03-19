@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { useTheme } from './_app';
 import { useSessionLimit } from '../utils/useSessionLimit';
 import { MOTHER_TONGUES, getTranslation, getUIString } from '../utils/motherTongue';
+import { useProductGate, ProductPaywall, ProductTrialBadge } from '../utils/productGate';
 import { CHINESE_DEST, CHINESE_VOICE, CHINESE_LANG } from '../utils/chineseContent';
 
 /* ═══════════════════════════════════════
@@ -770,6 +771,8 @@ export default function LanguagesPage() {
   const { theme } = useTheme();
   const T = getTokens(theme === 'dark');
   const { recordCall } = useSessionLimit();
+  const gate = useProductGate('languages');
+  const [showPaywall, setShowPaywall] = useState(false);
 
   /* ─── Theme-aware helper components ─── */
   function ProgressBar({ value, max, height = 10, cls = '' }) {
@@ -1002,6 +1005,8 @@ export default function LanguagesPage() {
 
   function startEx(id) {
     if (!ld) return;
+    if (gate.blocked) { setShowPaywall(true); return; }
+    gate.recordRound();
     const sc = ld.scenarios.find(s => s.id === id);
     if (!sc || !sc.ex) return;
     setExSc(sc); setInEx(true); setExIdx(0); setSel(null); setChk(false); setOk(false);
@@ -2268,6 +2273,7 @@ export default function LanguagesPage() {
         <meta property="og:description" content="Master 9 languages with interactive exercises, real conversations and SM-2 spaced repetition." />
       </Head>
       <style dangerouslySetInnerHTML={{ __html: KEYFRAMES }} />
+      {showPaywall && <ProductPaywall gate={gate} onClose={() => setShowPaywall(false)} T={T} />}
       <div style={{
         maxWidth: 480, margin: '0 auto',
         height: 'calc(100vh - 52px)', /* subtract shared Nav height */
@@ -2276,6 +2282,10 @@ export default function LanguagesPage() {
         WebkitFontSmoothing: 'antialiased',
         position: 'relative', overflow: 'hidden',
       }}>
+        {/* Trial/subscription badge */}
+        <div style={{ display: 'flex', justifyContent: 'flex-end', padding: '4px 12px 0', flexShrink: 0 }}>
+          <ProductTrialBadge gate={gate} T={T} />
+        </div>
         {renderContent()}
       </div>
     </>
