@@ -238,9 +238,15 @@ export default function StarkyBubble() {
       .trim()
       .substring(0, 250);
     const utt = new SpeechSynthesisUtterance(clean);
+    utt.lang = 'en-US'; // ALWAYS English for Starky main chat — never accented
     utt.rate = 0.95; utt.pitch = kidMode ? 1.2 : 1.05; utt.volume = 1;
     const voices = synthRef.current.getVoices();
-    const v = voices.find(v => v.lang.startsWith('en')) || voices[0];
+    // Prefer Google/Microsoft English neural voices, then any en-US, then any English
+    const v = voices.find(v => v.name.includes('Google US English'))
+      || voices.find(v => v.name.includes('Google') && v.lang.startsWith('en'))
+      || voices.find(v => v.name.includes('Microsoft') && v.lang.startsWith('en'))
+      || voices.find(v => v.lang === 'en-US')
+      || voices.find(v => v.lang.startsWith('en'));
     if (v) utt.voice = v;
     utt.onstart = () => setIsSpeaking(true);
     utt.onend = () => setIsSpeaking(false);

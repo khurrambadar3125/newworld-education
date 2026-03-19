@@ -147,9 +147,13 @@ export default function Home() {
       .trim()
       .substring(0, 400);
     const utt = new SpeechSynthesisUtterance(clean);
+    utt.lang = 'en-US';
     utt.rate = 0.95; utt.pitch = 1.05; utt.volume = 1;
     const voices = synthRef.current.getVoices();
-    const v = voices.find(v => v.name.includes('Google') && v.lang.startsWith('en')) || voices.find(v => v.lang.startsWith('en')) || voices[0];
+    const v = voices.find(v => v.name.includes('Google US English'))
+      || voices.find(v => v.name.includes('Google') && v.lang.startsWith('en'))
+      || voices.find(v => v.lang === 'en-US')
+      || voices.find(v => v.lang.startsWith('en'));
     if (v) utt.voice = v;
     utt.onstart = () => setIsSpeaking(true);
     utt.onend = () => setIsSpeaking(false);

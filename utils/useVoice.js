@@ -76,11 +76,15 @@ export function useSpeakText() {
       .trim()
       .substring(0, 500);
     const utt = new SpeechSynthesisUtterance(clean);
+    utt.lang = 'en-US'; // Always English for SEN pages — never accented
     utt.rate = 0.85;
     utt.pitch = 1.1;
     utt.volume = 1;
     const voices = synthRef.current.getVoices();
-    const v = voices.find(v => v.lang.startsWith('en')) || voices[0];
+    const v = voices.find(v => v.name.includes('Google US English'))
+      || voices.find(v => v.name.includes('Google') && v.lang.startsWith('en'))
+      || voices.find(v => v.lang === 'en-US')
+      || voices.find(v => v.lang.startsWith('en'));
     if (v) utt.voice = v;
     utt.onstart = () => setSpeaking(true);
     utt.onend = () => setSpeaking(false);
