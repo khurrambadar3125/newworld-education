@@ -1435,14 +1435,14 @@ export default function LanguagesPage() {
     const q = qs[testIdx];
     const lets = ['A', 'B', 'C', 'D'];
     return (
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', background: T.n0 }}>
-        <div style={{ padding: '12px 16px', display: 'flex', alignItems: 'center', gap: 12, borderBottom: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', background: T.n0, minHeight: 0 }}>
+        <div style={{ padding: '8px 16px', display: 'flex', alignItems: 'center', gap: 12, borderBottom: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
           <div style={{ flex: 1 }}><ProgressBar value={testIdx} max={qs.length} height={8} cls="amber" /></div>
           <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400 }}>{testIdx}/{qs.length}</div>
         </div>
-        <div style={{ flex: 1, padding: '22px 20px', overflow: 'auto' }}>
+        <div style={{ flex: 1, padding: '16px 20px', overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}>
           <Chip type="purple">Placement test</Chip>
-          <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, margin: '16px 0 22px' }}>{q.q}</h3>
+          <h3 style={{ fontSize: 18, fontWeight: 700, lineHeight: 1.25, color: T.n700, margin: '12px 0 16px' }}>{q.q}</h3>
           {q.opts.map((o, i) => (
             <OptBtn key={i} text={o} letter={lets[i]}
               isCorrect={chk && o === q.ans} isWrong={chk && o === sel && o !== q.ans}
@@ -1451,12 +1451,12 @@ export default function LanguagesPage() {
           ))}
         </div>
         {chk ? (
-          <div style={{ padding: '20px 20px 16px', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0, animation: 'slideUpPanel .25s cubic-bezier(.4,0,.2,1) both' }}>
-            <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: 10 }}>{ok ? '✓ Correct!' : '✗ Answer: ' + q.ans}</div>
+          <div style={{ padding: '16px 20px', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0, animation: 'slideUpPanel .25s cubic-bezier(.4,0,.2,1) both' }}>
+            <div style={{ fontSize: 15, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: 8 }}>{ok ? '✓ Correct!' : '✗ Answer: ' + q.ans}</div>
             <button onClick={nextTestQ} style={ok ? sBtnGreen : sBtnRed}>Continue →</button>
           </div>
         ) : (
-          <div style={{ padding: '14px 20px', borderTop: `1.5px solid ${T.n100}` }}>
+          <div style={{ padding: '12px 20px', borderTop: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
             <button onClick={checkTest} style={sel ? sBtnPrimary : sBtnDisabled} disabled={!sel}>Check</button>
           </div>
         )}
@@ -1866,7 +1866,7 @@ export default function LanguagesPage() {
           <span style={{ fontSize: 18 }}>{exSc.icon}</span>
           <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.n300 }}>{exSc.place}</div>
         </div>
-        <div style={{ flex: 1, padding: '20px 18px', overflow: 'auto', position: 'relative' }}>
+        <div style={{ flex: 1, padding: '14px 18px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', position: 'relative', minHeight: 0 }}>
           {showXP && <div style={{ position: 'absolute', top: 16, right: 16, fontSize: 15, fontWeight: 900, color: T.teal, animation: 'floatUp .9s ease forwards', pointerEvents: 'none' }}>+{Math.round(exSc.xp / (exs.length || 1))} XP</div>}
           {reaction && <Reaction emoji={reaction.emoji} text={reaction.text} />}
           {body}
@@ -2257,7 +2257,7 @@ export default function LanguagesPage() {
     else if (tab === 'phrases') tabContent = <PhrasesScreen />;
     else if (tab === 'profile') tabContent = <ProfileScreen />;
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', flex: 1, overflow: 'hidden' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', flex: 1, overflow: 'hidden', minHeight: 0 }}>
         {tabContent}
         <BNav />
       </div>
