@@ -850,7 +850,7 @@ export default function LanguagesPage() {
           </div>
           <div style={{ marginBottom: 18, animation: 'bob 2.4s ease-in-out infinite' }}><CompassSVG sz={108} /></div>
           <p style={{ fontSize: 30, fontWeight: 800, lineHeight: 1.15, color: T.n700, fontFamily: T.fs, marginBottom: 10 }}>Learn for your<br />destination.</p>
-          <p style={{ fontSize: 15, fontWeight: 400, lineHeight: 1.6, color: T.n500, maxWidth: 290, margin: '0 auto' }}>Every lesson built around where you're going and why \u2014 not random vocab lists.</p>
+          <p style={{ fontSize: 15, fontWeight: 400, lineHeight: 1.6, color: T.n500, maxWidth: 290, margin: '0 auto' }}>Every lesson built around where you{"'"}re going and why {"\u2014"} not random vocab lists.</p>
         </div>
         <div style={{ padding: '14px 22px' }}>
           {features.map((f, i) => (
@@ -950,7 +950,7 @@ export default function LanguagesPage() {
       return (
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '32px 24px', textAlign: 'center', background: T.n0, animation: 'bounceIn .5s ease' }}>
           <div style={{ fontSize: 56, marginBottom: 8, animation: 'popIn .5s ease' }}>{pct >= 0.8 ? '\u{1F393}' : pct >= 0.6 ? '\u{1F4DA}' : '\u{1F331}'}</div>
-          <h2 style={{ fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: T.n700, marginBottom: 4 }}>You're {lvlName}</h2>
+          <h2 style={{ fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: T.n700, marginBottom: 4 }}>You{"'"}re {lvlName}</h2>
           <Chip type="teal">Level {lvl} \u2014 {Math.round(pct * 100)}% score</Chip>
           <div style={{ background: T.tealL, border: `1.5px solid ${T.teal}`, borderRadius: 16, padding: 16, width: '100%', margin: '16px 0 24px', textAlign: 'left' }}>
             <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.teal }}>
@@ -1389,7 +1389,7 @@ export default function LanguagesPage() {
           )}
           <div style={{ padding: 14, background: T.n50, borderRadius: 12, border: `1.5px solid ${T.n100}`, marginTop: 4 }}>
             <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.n600, marginBottom: 6 }}>{'\u{1F4A1}'} Why conversation practice?</div>
-            <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>Swain's Output Hypothesis (1985): speaking forces your brain to process language at a depth that passive reading cannot achieve. Even 5 minutes of dialogue {'>'} 30 minutes of vocab.</p>
+            <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>Swain{"'"}s Output Hypothesis (1985): speaking forces your brain to process language at a depth that passive reading cannot achieve. Even 5 minutes of dialogue {'>'} 30 minutes of vocab.</p>
           </div>
         </div>
       </div>
