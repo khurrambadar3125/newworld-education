@@ -25,7 +25,7 @@ export default async function handler(req, res) {
 
   // Auth — same password as dashboard
   const password = req.query.password || req.headers['x-admin-password'];
-  if (password !== process.env.DASHBOARD_PASSWORD) {
+  if (password !== process.env.DASHBOARD_ADMIN_PASSWORD && password !== process.env.DASHBOARD_PASSWORD) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
 
