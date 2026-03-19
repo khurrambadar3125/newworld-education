@@ -190,6 +190,28 @@ const TypingDots = ({ color }) => (
   </div>
 );
 
+// Voice input
+function useSpeechInput() {
+  const [listening, setListening] = useState(false);
+  const [supported, setSupported] = useState(false);
+  const recRef = useRef(null);
+  useEffect(() => {
+    if (typeof window !== 'undefined' && (window.SpeechRecognition || window.webkitSpeechRecognition)) setSupported(true);
+  }, []);
+  const toggle = (onResult) => {
+    if (listening) { recRef.current?.stop(); setListening(false); return; }
+    const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SR) return;
+    const rec = new SR();
+    rec.lang = 'en-US'; rec.interimResults = false;
+    rec.onresult = (e) => { const t = e.results?.[0]?.[0]?.transcript; if (t && onResult) onResult(t); setListening(false); };
+    rec.onerror = () => setListening(false);
+    rec.onend = () => setListening(false);
+    recRef.current = rec; rec.start(); setListening(true);
+  };
+  return { listening, supported, toggle };
+}
+
 export default function DemoPage() {
   const isMobile = useIsMobile();
   const [activeId, setActiveId] = useState("olevel");
@@ -238,8 +260,12 @@ export default function DemoPage() {
     } catch {}
   }, []);
 
-  const { callsLeft, limitReached, recordCall } = useSessionLimit();
+  const { callsLeft, limitReached, recordCall } = useSessionLimit((() => { try { return JSON.parse(localStorage.getItem('nw_user') || '{}').email; } catch { return ''; } })());
   const [showLimit, setShowLimit] = useState(false);
+  const voice = useSpeechInput();
+  const cameraRef = useRef(null);
+  const fileRef = useRef(null);
+  const [imageData, setImageData] = useState(null);
 
   const subject = SUBJECTS.find(s => s.id === activeId);
 
@@ -409,12 +435,57 @@ export default function DemoPage() {
         background: "rgba(6,11,32,0.98)", flexShrink: 0,
       }}>
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
+          {/* Image preview */}
+          {imageData && (
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.06)', borderRadius: 10, padding: '6px 12px', marginBottom: 8, fontSize: 12, color: 'rgba(255,255,255,0.6)' }}>
+              <span>📷 Image attached</span>
+              <button onClick={() => setImageData(null)} style={{ background: 'none', border: 'none', color: 'rgba(255,255,255,0.4)', cursor: 'pointer', fontSize: 14, marginLeft: 'auto' }}>✕</button>
+            </div>
+          )}
+          {/* Hidden file inputs */}
+          <input ref={cameraRef} type="file" accept="image/*" capture="environment" style={{ display: 'none' }} onChange={e => {
+            const file = e.target.files?.[0]; if (!file) return;
+            const reader = new FileReader(); reader.onload = () => setImageData(reader.result); reader.readAsDataURL(file);
+            e.target.value = '';
+          }} />
+          <input ref={fileRef} type="file" accept="image/*" style={{ display: 'none' }} onChange={e => {
+            const file = e.target.files?.[0]; if (!file) return;
+            const reader = new FileReader(); reader.onload = () => setImageData(reader.result); reader.readAsDataURL(file);
+            e.target.value = '';
+          }} />
           <div style={{
-            display: "flex", gap: 10, alignItems: "flex-end",
+            display: "flex", gap: 8, alignItems: "flex-end",
             background: "rgba(255,255,255,0.06)",
             border: `1.5px solid ${subject.color}44`,
             borderRadius: 18, padding: "9px 12px",
           }}>
+            {/* Mic button */}
+            {voice.supported && (
+              <button onClick={() => voice.toggle(t => setInput(prev => (prev ? prev + ' ' : '') + t))} style={{
+                width: 38, height: 38, borderRadius: 12, border: 'none', flexShrink: 0,
+                background: voice.listening ? 'rgba(248,113,113,0.2)' : 'rgba(255,255,255,0.08)',
+                color: voice.listening ? '#F87171' : 'rgba(255,255,255,0.5)',
+                fontSize: 18, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
+              }} title="Voice input">
+                {voice.listening ? '⏹' : '🎙️'}
+              </button>
+            )}
+            {/* Camera button */}
+            <button onClick={() => cameraRef.current?.click()} style={{
+              width: 38, height: 38, borderRadius: 12, border: 'none', flexShrink: 0,
+              background: 'rgba(255,255,255,0.08)', color: 'rgba(255,255,255,0.5)',
+              fontSize: 18, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
+            }} title="Take photo">
+              📷
+            </button>
+            {/* File upload button */}
+            <button onClick={() => fileRef.current?.click()} style={{
+              width: 38, height: 38, borderRadius: 12, border: 'none', flexShrink: 0,
+              background: 'rgba(255,255,255,0.08)', color: 'rgba(255,255,255,0.5)',
+              fontSize: 18, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
+            }} title="Upload image">
+              📎
+            </button>
             <textarea
               ref={inputRef}
               value={input}
@@ -422,7 +493,7 @@ export default function DemoPage() {
               onKeyDown={e => {
                 if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); }
               }}
-              placeholder={subject.placeholder}
+              placeholder={childName ? `Hi ${childName}! ${subject.placeholder}` : subject.placeholder}
               rows={1}
               style={{
                 flex: 1, background: "none", border: "none", color: "#fff",
@@ -436,15 +507,15 @@ export default function DemoPage() {
             />
             <button
               onClick={() => send()}
-              disabled={!input.trim() || loading}
+              disabled={(!input.trim() && !imageData) || loading}
               style={{
-                background: input.trim() && !loading
+                background: (input.trim() || imageData) && !loading
                   ? `linear-gradient(135deg, ${subject.color}, ${subject.color}AA)`
                   : "rgba(255,255,255,0.08)",
                 border: "none", borderRadius: 12,
                 width: 38, height: 38, flexShrink: 0,
                 display: "flex", alignItems: "center", justifyContent: "center",
-                fontSize: 17, color: "#fff", cursor: input.trim() ? "pointer" : "not-allowed",
+                fontSize: 17, color: "#fff", cursor: (input.trim() || imageData) ? "pointer" : "not-allowed",
                 transition: "all 0.15s",
               }}
             >
@@ -454,7 +525,7 @@ export default function DemoPage() {
             </button>
           </div>
           <div style={{ textAlign: "center", fontSize: 10, color: "rgba(255,255,255,0.18)", marginTop: 5 }}>
-            Powered by Claude AI · NewWorldEdu · {callsLeft} free sessions remaining
+            Powered by Claude AI · NewWorldEdu{childName ? ` · ${childName}` : ''}{limitReached ? '' : ` · ${callsLeft} sessions remaining`}
           </div>
         </div>
       </div>
