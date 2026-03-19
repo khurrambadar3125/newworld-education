@@ -174,6 +174,11 @@ Return ONLY valid JSON with these fields:
   }
 }`;
   const response = await anthropic.messages.create({ model: 'claude-haiku-4-5-20251001', max_tokens: 900, system: 'You are an expert educational analyst. Analyse tutoring sessions deeply — not just WHAT was taught but HOW it was taught and what techniques worked or failed. The session may be in Urdu or Roman Urdu — analyse in whatever language the messages are in. Return ONLY valid JSON.', messages: [{ role: 'user', content: prompt }] });
-  try { return JSON.parse(response.content[0].text); }
+  try {
+    const raw = response.content[0].text;
+    // Try parsing directly, or extract JSON from markdown code blocks
+    const jsonStr = raw.includes('```') ? raw.replace(/```json?\n?/g, '').replace(/```/g, '').trim() : raw.trim();
+    return JSON.parse(jsonStr);
+  }
   catch { return { topicsCovered: [subject], accuracyPercent: 70, durationMinutes: 20, strengths: ['Completed the session'], weakAreas: ['Continue practising'], nextGoals: [`Review ${subject}`], starkyPersonalMessage: `Great work today, ${studentName}!`, parentSummary: `${studentName} had a productive session on ${subject}.`, overallMood: 'positive', engagementLevel: 'medium', careerConnection: `${subject} opens many doors.`, teachingInsights: { whatWorked: [], whatDidntWork: [], studentLearningStyle: 'mixed', engagementPeaks: [], suggestedApproach: '' } }; }
 }

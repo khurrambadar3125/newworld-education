@@ -2004,7 +2004,30 @@ RULES:
       });
       const data = await res.json();
       const reply = data.content || data.response || 'I had a moment — please try again!';
-      setFreeMsgs(prev => [...prev, { role: 'assistant', content: reply }]);
+      const updatedMsgs = [...newMsgs, { role: 'assistant', content: reply }];
+      setFreeMsgs(updatedMsgs);
+
+      // Trigger session analysis every 5 user messages
+      const userMsgCount = updatedMsgs.filter(m => m.role === 'user').length;
+      if (userMsgCount === 5 || (userMsgCount > 5 && userMsgCount % 10 === 0)) {
+        try {
+          const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+          fetch('/api/session-complete', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              studentId: profile.email || 'anonymous',
+              studentName: profile.name || 'Student',
+              parentEmail: userMsgCount === 5 ? (profile.parentEmail || profile.email) : null,
+              parentName: profile.name,
+              grade: level,
+              subject: (ld?.name || 'Language') + ' (Free Chat)',
+              messages: updatedMsgs.slice(-20),
+              sessionCount: userMsgCount,
+            }),
+          }).catch(() => {});
+        } catch {}
+      }
     } catch {
       setFreeMsgs(prev => [...prev, { role: 'assistant', content: 'Connection error — please try again!' }]);
     }
