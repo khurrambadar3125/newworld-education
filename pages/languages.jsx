@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Head from 'next/head';
-import { useTheme } from '../pages/_app';
+import { useTheme } from './_app';
 import { useSessionLimit } from '../utils/useSessionLimit';
-import Nav from '../components/Nav';
 
 /* ═══════════════════════════════════════
    DESIGN TOKENS
