@@ -57,6 +57,52 @@ function sndWin() { tone(523, 'sine', 0.25, 0.5, 0); tone(659, 'sine', 0.25, 0.4
 function sndTick() { tone(900, 'sine', 0.06, 0.07, 0); }
 function sndPop() { tone(1100, 'sine', 0.1, 0.12, 0); }
 
+function speakInstruction(text) {
+  if (typeof window === 'undefined' || !window.speechSynthesis || !text) return;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-US'; u.rate = 0.9; u.pitch = 1.1;
+  window.speechSynthesis.speak(u);
+}
+
+/* ═══════════════════════════════════════
+   LEVENSHTEIN DISTANCE (fuzzy matching)
+═══════════════════════════════════════ */
+function levenshtein(a, b) {
+  if (!a || !b) return Math.max((a || '').length, (b || '').length);
+  const m = a.length, n = b.length;
+  const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0));
+  for (let i = 0; i <= m; i++) dp[i][0] = i;
+  for (let j = 0; j <= n; j++) dp[0][j] = j;
+  for (let i = 1; i <= m; i++)
+    for (let j = 1; j <= n; j++)
+      dp[i][j] = a[i - 1] === b[j - 1] ? dp[i - 1][j - 1] : 1 + Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]);
+  return dp[m][n];
+}
+
+/* ═══════════════════════════════════════
+   SPEECH RECOGNITION (Pronunciation)
+═══════════════════════════════════════ */
+function startListening(targetWord, langCode, onResult) {
+  if (typeof window === 'undefined') { onResult(false, 'Not available'); return; }
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) { onResult(false, 'Speech recognition not available'); return; }
+  const rec = new SR();
+  rec.lang = langCode;
+  rec.interimResults = false;
+  rec.onresult = (e) => {
+    const spoken = e.results[0][0].transcript.toLowerCase().trim();
+    const target = targetWord.toLowerCase().trim();
+    const dist = levenshtein(spoken, target);
+    const match = spoken.includes(target) || target.includes(spoken) || dist === 0;
+    const close = dist >= 1 && dist <= 2;
+    onResult(match, spoken, close, dist);
+  };
+  rec.onerror = () => onResult(false, '', false, 99);
+  rec.start();
+  return rec;
+}
+
 function speakText(text, lc, rate) {
   if (typeof window === 'undefined' || !window.speechSynthesis || !text) return;
   window.speechSynthesis.cancel();
@@ -183,6 +229,8 @@ function buildLangData() {
           { type: 'listen', q: 'Listen and choose what you heard:', speak_word: 'J\'ai une valise', emoji: '\u{1F9F3}', opts: ['I have one bag', 'I have two bags', 'Where is my bag?', 'My bag is heavy'], ans: 'I have one bag' },
           { type: 'build', q: 'Ask for a window seat:', hint: 'Je voudrais un si\u00e8ge c\u00f4t\u00e9 fen\u00eatre', words: ['Je', 'voudrais', 'un', 'si\u00e8ge', 'c\u00f4t\u00e9', 'fen\u00eatre', 'couloir', 'deux'], ans: 'Je voudrais un si\u00e8ge c\u00f4t\u00e9 fen\u00eatre', tr: 'I would like a window seat' },
           { type: 'fill', q: 'Complete the sentence:', sentence: 'J\'ai ___ valises.', opts: ['une', 'deux', 'trois', 'beaucoup'], ans: 'deux', tr: 'I have two suitcases' },
+          { type: 'speak', q: 'Say this word:', speak_word: 'Bonjour', tr: 'Hello', emoji: '\u{1F44B}' },
+          { type: 'speak', q: 'Say this word:', speak_word: 'S\'il vous pla\u00eet', tr: 'Please', emoji: '\u{1F64F}' },
         ],
       },
       { id: 2, icon: '\u{1F37D}️', place: 'Au restaurant', title: 'Ordering your meal', sub: 'Order food, drinks, ask for the bill', xp: 20, done: false, current: true,
@@ -192,6 +240,8 @@ function buildLangData() {
           { type: 'match', q: 'Match each phrase to its English meaning:', pairs: [['L\'addition', 'The bill'], ['La carte', 'The menu'], ['Bon app\u00e9tit', 'Enjoy your meal'], ['C\'\u00e9tait d\u00e9licieux', 'It was delicious']] },
           { type: 'build', q: 'Order water and the set menu:', hint: 'Une carafe d\'eau et le menu s\'il vous pla\u00eet', words: ['Une', 'carafe', 'd\'eau', 'et', 'le', 'menu', 's\'il', 'vous', 'pla\u00eet', 'vin'], ans: 'Une carafe d\'eau et le menu s\'il vous pla\u00eet', tr: 'A jug of water and the set menu please' },
           { type: 'fill', q: 'Ask for the bill:', sentence: 'L\'___, s\'il vous pla\u00eet.', opts: ['menu', 'addition', 'carte', 'dessert'], ans: 'addition', tr: 'The bill please' },
+          { type: 'speak', q: 'Say this word:', speak_word: 'Merci', tr: 'Thank you', emoji: '\u{1F60A}' },
+          { type: 'speak', q: 'Say this word:', speak_word: 'Bonsoir', tr: 'Good evening', emoji: '\u{1F319}' },
         ],
       },
       { id: 3, icon: '\u{1F5FA}️', place: 'Dans la rue', title: 'Asking directions', sub: 'Left, right, straight ahead, landmarks', xp: 20, done: false, locked: false,
@@ -200,13 +250,21 @@ function buildLangData() {
           { type: 'listen', q: 'Listen and choose what you heard:', speak_word: 'C\'est tout droit', emoji: '\u2B06️', opts: ['Go straight ahead', 'Turn right', 'Turn left', 'It\'s nearby'], ans: 'Go straight ahead' },
           { type: 'fill', q: 'Complete the question:', sentence: 'Excusez-moi, ___ est la gare?', opts: ['qui', 'quoi', 'o\u00f9', 'quand'], ans: 'o\u00f9', tr: 'Excuse me, where is the station?' },
           { type: 'build', q: 'Ask where the nearest metro is:', hint: 'Excusez-moi o\u00f9 est le m\u00e9tro le plus proche', words: ['Excusez-moi', 'o\u00f9', 'est', 'le', 'm\u00e9tro', 'le', 'plus', 'proche', 'loin'], ans: 'Excusez-moi o\u00f9 est le m\u00e9tro le plus proche', tr: 'Excuse me where is the nearest metro?' },
+          { type: 'speak', q: 'Say this phrase:', speak_word: 'Excusez-moi', tr: 'Excuse me', emoji: '\u{1F64B}' },
+          { type: 'speak', q: 'Say this phrase:', speak_word: 'Tout droit', tr: 'Straight ahead', emoji: '\u2B06\uFE0F' },
         ],
       },
       { id: 4, icon: '\u{1F3E8}', place: '\u00c0 l\'h\u00f4tel', title: 'Hotel check-in', sub: 'Confirm booking, request amenities', xp: 20, done: false, locked: true },
       { id: 5, icon: '\u{1F6D2}', place: 'Au march\u00e9', title: 'At the market', sub: 'Ask prices, negotiate, make a purchase', xp: 20, done: false, locked: true },
       { id: 6, icon: '\u{1F91D}', place: 'Rencontres', title: 'Meeting locals', sub: 'Introduce yourself, small talk', xp: 25, done: false, locked: true },
     ],
-    pb: [mkp('Bonjour, je m\'appelle…', 'Hello, my name is…', 3), mkp('L\'addition, s\'il vous pla\u00eet', 'The bill please', 3), mkp('O\u00f9 est le m\u00e9tro?', 'Where is the metro?', 2), mkp('Je ne comprends pas', 'I don\'t understand', 2), mkp('Pouvez-vous r\u00e9p\u00e9ter?', 'Can you repeat?', 1), mkp('Merci beaucoup', 'Thank you very much', 3)],
+    pb: [mkp('Bonjour, je m\'appelle…', 'Hello, my name is…', 3), mkp('L\'addition, s\'il vous pla\u00eet', 'The bill please', 3), mkp('O\u00f9 est le m\u00e9tro?', 'Where is the metro?', 2), mkp('Je ne comprends pas', 'I don\'t understand', 2), mkp('Pouvez-vous r\u00e9p\u00e9ter?', 'Can you repeat?', 1), mkp('Merci beaucoup', 'Thank you very much', 3),
+      mkp('chien', 'dog', 1), mkp('chat', 'cat', 1), mkp('oiseau', 'bird', 1), mkp('poisson', 'fish', 1), mkp('papillon', 'butterfly', 1),
+      mkp('pain', 'bread', 1), mkp('lait', 'milk', 1), mkp('pomme', 'apple', 1), mkp('g\u00e2teau', 'cake', 1), mkp('glace', 'ice cream', 1),
+      mkp('maman', 'mom', 1), mkp('papa', 'dad', 1), mkp('fr\u00e8re', 'brother', 1), mkp('s\u0153ur', 'sister', 1),
+      mkp('rouge', 'red', 1), mkp('bleu', 'blue', 1), mkp('vert', 'green', 1), mkp('jaune', 'yellow', 1),
+      mkp('un', 'one', 1), mkp('deux', 'two', 1), mkp('trois', 'three', 1), mkp('quatre', 'four', 1), mkp('cinq', 'five', 1),
+    ],
   };
 
   LANG.es = {
@@ -286,6 +344,8 @@ function buildLangData() {
           { type: 'tap', q: 'What does "Hola" mean?', word: 'Hola', emoji: '\u{1F44B}', opts: ['Goodbye', 'Hello', 'Thank you', 'Please'], ans: 'Hello' },
           { type: 'listen', q: 'Listen and choose what you heard:', speak_word: 'Tengo una maleta', emoji: '\u{1F9F3}', opts: ['I have one bag', 'I have two bags', 'Where is my bag?', 'My bag is lost'], ans: 'I have one bag' },
           { type: 'build', q: 'Tell them your name and bag count:', hint: 'Me llamo Carlos y tengo una maleta', words: ['Me', 'llamo', 'Carlos', 'y', 'tengo', 'una', 'maleta', 'dos', 'bolsas'], ans: 'Me llamo Carlos y tengo una maleta', tr: 'My name is Carlos and I have one suitcase' },
+          { type: 'speak', q: 'Say this word:', speak_word: 'Hola', tr: 'Hello', emoji: '\u{1F44B}' },
+          { type: 'speak', q: 'Say this word:', speak_word: 'Por favor', tr: 'Please', emoji: '\u{1F64F}' },
         ],
       },
       { id: 2, icon: '\u{1F37D}️', place: 'En el restaurante', title: 'Ordering your meal', sub: 'Order food, drinks, get the bill', xp: 20, done: false, current: true,
@@ -294,6 +354,8 @@ function buildLangData() {
           { type: 'listen', q: 'Listen and choose what you heard:', speak_word: 'La cuenta, por favor', emoji: '\u{1F4B3}', opts: ['The bill please', 'The menu please', 'One more drink', 'I want to pay'], ans: 'The bill please' },
           { type: 'match', q: 'Match each Spanish phrase to its meaning:', pairs: [['La cuenta', 'The bill'], ['La carta', 'The menu'], ['\u00a1Buen provecho!', 'Enjoy your meal'], ['\u00bfQu\u00e9 recomienda?', 'What do you recommend?']] },
           { type: 'build', q: 'Order water and the menu:', hint: 'Una agua y la carta por favor', words: ['Una', 'agua', 'y', 'la', 'carta', 'por', 'favor', 'vino', 'mesa'], ans: 'Una agua y la carta por favor', tr: 'A water and the menu please' },
+          { type: 'speak', q: 'Say this word:', speak_word: 'Gracias', tr: 'Thank you', emoji: '\u{1F60A}' },
+          { type: 'speak', q: 'Say this word:', speak_word: 'Buenas noches', tr: 'Good night', emoji: '\u{1F319}' },
         ],
       },
       { id: 3, icon: '\u{1F5FA}️', place: 'En la calle', title: 'Asking directions', sub: 'Left, right, straight ahead', xp: 20, done: false, locked: false,
@@ -301,13 +363,21 @@ function buildLangData() {
           { type: 'tap', q: 'What does "a la izquierda" mean?', word: 'a la izquierda', emoji: '\u2B05️', opts: ['To the right', 'Straight ahead', 'On the left', 'It\'s far'], ans: 'On the left' },
           { type: 'fill', q: 'Ask where the metro is:', sentence: 'Disculpe, \u00bf___ est\u00e1 el metro?', opts: ['qui\u00e9n', 'cu\u00e1ndo', 'd\u00f3nde', 'c\u00f3mo'], ans: 'd\u00f3nde', tr: 'Excuse me, where is the metro?' },
           { type: 'build', q: 'Ask where the nearest metro is:', hint: 'Disculpe d\u00f3nde est\u00e1 el metro m\u00e1s cercano', words: ['Disculpe', 'd\u00f3nde', 'est\u00e1', 'el', 'metro', 'm\u00e1s', 'cercano', 'lejos'], ans: 'Disculpe d\u00f3nde est\u00e1 el metro m\u00e1s cercano', tr: 'Excuse me where is the nearest metro?' },
+          { type: 'speak', q: 'Say this phrase:', speak_word: 'Disculpe', tr: 'Excuse me', emoji: '\u{1F64B}' },
+          { type: 'speak', q: 'Say this phrase:', speak_word: 'A la derecha', tr: 'To the right', emoji: '\u27A1\uFE0F' },
         ],
       },
       { id: 4, icon: '\u{1F3E8}', place: 'En el hotel', title: 'Hotel check-in', sub: 'Confirm booking, request amenities', xp: 20, done: false, locked: true },
       { id: 5, icon: '\u{1F6D2}', place: 'En el mercado', title: 'At the market', sub: 'Ask prices, buy items', xp: 20, done: false, locked: true },
       { id: 6, icon: '\u{1F91D}', place: 'Conociendo gente', title: 'Meeting locals', sub: 'Introduce yourself, small talk', xp: 25, done: false, locked: true },
     ],
-    pb: [mkp('Hola, me llamo…', 'Hello, my name is…', 3), mkp('La cuenta, por favor', 'The bill please', 3), mkp('\u00bfD\u00f3nde est\u00e1 el metro?', 'Where is the metro?', 2), mkp('No entiendo', 'I don\'t understand', 2), mkp('\u00bfPuede repetir?', 'Can you repeat?', 1), mkp('Muchas gracias', 'Thank you very much', 3)],
+    pb: [mkp('Hola, me llamo…', 'Hello, my name is…', 3), mkp('La cuenta, por favor', 'The bill please', 3), mkp('\u00bfD\u00f3nde est\u00e1 el metro?', 'Where is the metro?', 2), mkp('No entiendo', 'I don\'t understand', 2), mkp('\u00bfPuede repetir?', 'Can you repeat?', 1), mkp('Muchas gracias', 'Thank you very much', 3),
+      mkp('perro', 'dog', 1), mkp('gato', 'cat', 1), mkp('p\u00e1jaro', 'bird', 1), mkp('pez', 'fish', 1), mkp('mariposa', 'butterfly', 1),
+      mkp('pan', 'bread', 1), mkp('leche', 'milk', 1), mkp('manzana', 'apple', 1), mkp('pastel', 'cake', 1), mkp('helado', 'ice cream', 1),
+      mkp('mam\u00e1', 'mom', 1), mkp('pap\u00e1', 'dad', 1), mkp('hermano', 'brother', 1), mkp('hermana', 'sister', 1),
+      mkp('rojo', 'red', 1), mkp('azul', 'blue', 1), mkp('verde', 'green', 1), mkp('amarillo', 'yellow', 1),
+      mkp('uno', 'one', 1), mkp('dos', 'two', 1), mkp('tres', 'three', 1), mkp('cuatro', 'four', 1), mkp('cinco', 'five', 1),
+    ],
   };
 
   // Stub languages
@@ -455,6 +525,11 @@ const KEYFRAMES = `
 @keyframes confettiFall{0%{opacity:1;transform:translateY(-20px) rotate(0)}100%{opacity:0;transform:translateY(120px) rotate(720deg)}}
 @keyframes countUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes heartShake{0%,100%{transform:scale(1)}25%{transform:scale(1.3) rotate(-10deg)}50%{transform:scale(0.8) rotate(10deg)}75%{transform:scale(1.1) rotate(-5deg)}}
+@keyframes heartFade{0%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(0.3)}}
+@keyframes reactionPop{0%{opacity:0;transform:translate(-50%,-50%) scale(.3)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.15)}100%{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+@keyframes reactionFade{0%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-50%) scale(.6) translateY(-30px)}}
+@keyframes micPulse{0%,100%{box-shadow:0 0 0 0 rgba(79,142,247,0.5)}50%{box-shadow:0 0 0 16px rgba(79,142,247,0)}}
 `;
 
 /* ═══════════════════════════════════════
@@ -500,6 +575,35 @@ export default function LanguagesPage() {
     return <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '4px 12px', borderRadius: 100, fontSize: 11, fontWeight: 800, background: s.bg, color: s.color }}>{children}</span>;
   }
 
+  function Reaction({ emoji, text }) {
+    return (
+      <div style={{ position:'absolute', top:'30%', left:'50%', transform:'translate(-50%,-50%)',
+        zIndex:200, textAlign:'center', animation:'reactionPop .5s ease both', pointerEvents:'none' }}>
+        <div style={{ fontSize:64 }}>{emoji}</div>
+        {text && <div style={{ fontSize:18, fontWeight:800, color:T.n700, marginTop:8 }}>{text}</div>}
+      </div>
+    );
+  }
+
+  function showReaction(emoji, text) {
+    if (reactionTimer.current) clearTimeout(reactionTimer.current);
+    setReaction({ emoji, text });
+    reactionTimer.current = setTimeout(() => setReaction(null), 1500);
+  }
+
+  function speakExerciseInstruction(ex) {
+    if (!audioFirst || !ex) return;
+    if (ex.type === 'tap') speakInstruction('Tap the word that means ' + ex.ans);
+    else if (ex.type === 'listen') { /* already speaks the foreign phrase */ }
+    else if (ex.type === 'build') speakInstruction('Build the sentence: ' + (ex.tr || ''));
+    else if (ex.type === 'fill') {
+      const readSentence = (ex.sentence || '').replace('___', 'blank');
+      speakInstruction('Fill in the blank: ' + readSentence);
+    }
+    else if (ex.type === 'match') speakInstruction('Match each word to its meaning');
+    else if (ex.type === 'speak') speakInstruction('Tap and say: ' + (ex.speak_word || ''));
+  }
+
   const [LANG] = useState(() => buildLangData());
 
   const [phase, setPhase] = useState('landing');
@@ -513,6 +617,25 @@ export default function LanguagesPage() {
   const [level, setLevel] = useState('A1');
   const [levelName, setLevelName] = useState('Beginner');
   const [heatmap, setHeatmap] = useState([3, 0, 4, 2, 5, 1, 0]);
+
+  // Hearts / Lives system
+  const [hearts, setHearts] = useState(5);
+  const [heartsOut, setHeartsOut] = useState(false);
+  const [lostHeartIdx, setLostHeartIdx] = useState(-1);
+  const [correctStreak, setCorrectStreak] = useState(0);
+
+  // Audio-first mode
+  const [audioFirst, setAudioFirst] = useState(true);
+
+  // Animated Reactions
+  const [reaction, setReaction] = useState(null); // { emoji, text }
+  const reactionTimer = useRef(null);
+
+  // Speak exercise state
+  const [speakRecording, setSpeakRecording] = useState(false);
+  const [speakResult, setSpeakResult] = useState(null); // { match, spoken, close }
+  const [speakAttempts, setSpeakAttempts] = useState(0);
+  const speakRecRef = useRef(null);
 
   // Exercise state
   const [inEx, setInEx] = useState(false);
@@ -639,16 +762,22 @@ export default function LanguagesPage() {
     setBuilt([]); setMatchSel(null); setMatchDone([]); setMatchR(null);
     setShk(false); setShowXP(false); setExDone(false); setExMistakes(0); setExEarned(0);
     setShowGram(false); setShowCult(false);
+    setHearts(5); setHeartsOut(false); setLostHeartIdx(-1); setCorrectStreak(0);
+    setSpeakRecording(false); setSpeakResult(null); setSpeakAttempts(0);
+    setReaction(null);
     setTimeout(() => {
       const ex = sc.ex && sc.ex[0];
       if (ex && dest) {
+        if (audioFirst && ex.type !== 'listen') {
+          setTimeout(() => speakExerciseInstruction(ex), 500);
+        }
         const txt = ex.speak_word || ex.word || ex.hint || '';
-        if (txt && ex.type !== 'match') setTimeout(() => speakText(txt, dest.lc), 500);
+        if (txt && ex.type !== 'match' && ex.type !== 'speak') setTimeout(() => speakText(txt, dest.lc), 500);
       }
     }, 300);
   }
 
-  function closeEx() { setInEx(false); setShowGram(false); setShowCult(false); }
+  function closeEx() { setInEx(false); setShowGram(false); setShowCult(false); setHeartsOut(false); setReaction(null); setSpeakRecording(false); setSpeakResult(null); setSpeakAttempts(0); }
   function selOpt(o) { if (chk) return; sndTick(); setSel(o); }
   function addWord(w) { if (chk) return; sndTick(); setBuilt(b => [...b, w]); }
   function removeWord(i) { if (chk) return; sndPop(); setBuilt(b => { const n = [...b]; n.splice(i, 1); return n; }); }
@@ -683,15 +812,38 @@ export default function LanguagesPage() {
     setOk(isOk); setChk(true);
     const gain = Math.round(exSc.xp / Math.max(exSc.ex.length, 1));
     if (isOk) {
+      const newStreak = correctStreak + 1;
+      setCorrectStreak(newStreak);
       setExEarned(e => e + gain); setXp(x => x + gain);
       setMomentum(m => Math.min(100, m + 3));
       setAccuracy(a => Math.min(100, Math.round((a * 10 + 100) / 11)));
       setShowXP(true); sndOk();
       setTimeout(() => setShowXP(false), 900);
+      // Earn a heart back on 3 correct in a row
+      if (newStreak > 0 && newStreak % 3 === 0 && hearts < 5) {
+        setHearts(h => Math.min(5, h + 1));
+      }
+      // Animated reaction
+      if (newStreak >= 3 && newStreak % 3 === 0) {
+        showReaction('\u{1F525}\u{1F525}\u{1F525}', 'ON FIRE!');
+      } else {
+        const emojis = ['\u{1F389}', '\u2B50', '\u{1F31F}', '\u{1F4AA}', '\u{1F525}', '\u2728'];
+        showReaction(emojis[Math.floor(Math.random() * emojis.length)]);
+      }
     } else {
+      setCorrectStreak(0);
       setExMistakes(m => m + 1); setReplays(r => r + 1);
       setShk(true); sndErr();
       setTimeout(() => setShk(false), 600);
+      // Hearts system
+      const newHearts = hearts - 1;
+      setLostHeartIdx(newHearts);
+      setHearts(newHearts);
+      setTimeout(() => setLostHeartIdx(-1), 800);
+      if (newHearts <= 0) {
+        setTimeout(() => setHeartsOut(true), 600);
+      }
+      showReaction('\u{1F4AA}', 'Try again!');
     }
     setHeatmap(h => { const n = [...h]; n[4] = Math.min(5, (n[4] || 0) + 1); return n; });
   }
@@ -700,6 +852,8 @@ export default function LanguagesPage() {
     if (!exSc || !exSc.ex) return;
     const sc = exSc;
     const last = exIdx >= sc.ex.length - 1;
+    // Reset speak exercise state
+    setSpeakRecording(false); setSpeakResult(null); setSpeakAttempts(0);
     if (last) {
       sc.done = true; sc.current = false;
       const idx = ld.scenarios.indexOf(sc);
@@ -725,8 +879,9 @@ export default function LanguagesPage() {
         setTimeout(() => {
           const ex = sc.ex && sc.ex[newIdx];
           if (ex && dest) {
+            if (audioFirst && ex.type !== 'listen') speakExerciseInstruction(ex);
             const txt = ex.speak_word || ex.word || ex.hint || '';
-            if (txt && ex.type !== 'match') speakText(txt, dest.lc);
+            if (txt && ex.type !== 'match' && ex.type !== 'speak') speakText(txt, dest.lc);
           }
         }, 500);
       }
@@ -813,12 +968,29 @@ export default function LanguagesPage() {
   }
 
   /* ─── TOPBAR ─── */
-  function TopBar() {
+  function TopBar({ showHearts = false }) {
     const due = ld ? ld.pb.filter(isDue).length : 0;
     return (
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px 16px', background: T.n0, borderBottom: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
         <MomentumRing val={momentum} />
         <div style={{ flex: 1, paddingLeft: 4 }}><div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.n400 }}>Momentum</div></div>
+        {showHearts && (
+          <div style={{ display: 'flex', gap: 2, fontSize: 16 }}>
+            {[0,1,2,3,4].map(i => (
+              <span key={i} style={{
+                transition: 'all .3s',
+                animation: lostHeartIdx === i ? 'heartShake .5s ease, heartFade .5s ease .3s forwards' : 'none',
+              }}>{i < hearts ? '\u2764\uFE0F' : '\u{1F90D}'}</span>
+            ))}
+          </div>
+        )}
+        <button onClick={() => setAudioFirst(a => !a)} style={{
+          background: audioFirst ? T.tealL : T.n100,
+          border: `1.5px solid ${audioFirst ? T.teal : T.n200}`,
+          borderRadius: 8, padding: '4px 8px', fontSize: 12, fontWeight: 700,
+          cursor: 'pointer', color: audioFirst ? T.tealD : T.n400, fontFamily: T.f,
+          display: 'flex', alignItems: 'center', gap: 3, flexShrink: 0,
+        }}>{'\u{1F50A}'} Audio</button>
         {due > 0 && <Chip type="amber">{'\u{1F504}'} {due} due</Chip>}
         <div style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 15, fontWeight: 800 }}><StarSVG /><span style={{ color: T.amber }}>{xp}</span></div>
         {dest && <span style={{ fontSize: 22, marginLeft: 8 }}>{dest.flag}</span>}
@@ -856,7 +1028,7 @@ export default function LanguagesPage() {
   function LandingScreen() {
     const features = [
       ['\u{1F9E0}', 'SM-2 spaced repetition', 'Reviews phrases at the exact moment before you forget — scientifically proven'],
-      ['\u{1F3AD}', '6 interactive exercise types', 'Tap, build, listen, match, fill-blank — all working, all wired to audio'],
+      ['\u{1F3AD}', '7 interactive exercise types', 'Tap, build, listen, match, fill-blank, pronunciation — all wired to audio'],
       ['\u{1F4AC}', 'Conversation simulator', 'Practice real dialogues with AI characters before your trip'],
       ['\u{1F30D}', 'Cultural intelligence', 'Customs, etiquette and faux pas woven into every lesson'],
       ['\u{1F4CA}', 'Learning analytics', 'Track your forgetting curve, accuracy and weekly progress'],
@@ -1118,7 +1290,23 @@ export default function LanguagesPage() {
     );
   }
 
+  function HeartsOutScreen() {
+    return (
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '28px 22px', textAlign: 'center', background: T.n0, animation: 'bounceIn .5s ease' }}>
+        <div style={{ fontSize: 56, marginBottom: 12 }}>{'\u{1F494}'}</div>
+        <h2 style={{ fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: T.n700, marginBottom: 8 }}>Out of hearts!</h2>
+        <p style={{ fontSize: 15, lineHeight: 1.6, color: T.n500, marginBottom: 8 }}>You did great! Let{"'"}s try that again.</p>
+        <Chip type="teal">Score so far: {exEarned} XP</Chip>
+        <div style={{ display: 'flex', gap: 10, marginTop: 24, width: '100%', flexDirection: 'column' }}>
+          <button onClick={() => { setHearts(5); setHeartsOut(false); setExIdx(0); setSel(null); setChk(false); setOk(false); setBuilt([]); setMatchSel(null); setMatchDone([]); setMatchR(null); setCorrectStreak(0); setSpeakRecording(false); setSpeakResult(null); setSpeakAttempts(0); }} style={sBtnPrimary}>{'\u2764\uFE0F'} Try again</button>
+          <button onClick={() => { setInEx(false); setHeartsOut(false); }} style={sBtnSecondary}>Back to journey</button>
+        </div>
+      </div>
+    );
+  }
+
   function ExerciseScreen() {
+    if (heartsOut) return <HeartsOutScreen />;
     if (showGram) return <GramCard />;
     if (showCult) return <CultCard />;
     if (exDone) return <ExResult />;
@@ -1256,39 +1444,146 @@ export default function LanguagesPage() {
           )}
         </>
       );
+    } else if (ex.type === 'speak') {
+      const handleSpeak = () => {
+        if (speakRecording) return;
+        setSpeakRecording(true); setSpeakResult(null);
+        const langCode = VLANG[dest && dest.lc] || 'en-US';
+        speakRecRef.current = startListening(ex.speak_word, langCode, (match, spoken, close, dist) => {
+          setSpeakRecording(false);
+          const newAttempts = speakAttempts + 1;
+          setSpeakAttempts(newAttempts);
+          if (match || dist === 0) {
+            setSpeakResult({ match: true, spoken, close: false });
+            sndOk();
+            const gain = Math.round(exSc.xp / Math.max(exSc.ex.length, 1));
+            setExEarned(e => e + gain); setXp(x => x + gain);
+            setMomentum(m => Math.min(100, m + 3));
+            const newStreak = correctStreak + 1;
+            setCorrectStreak(newStreak);
+            if (newStreak > 0 && newStreak % 3 === 0 && hearts < 5) setHearts(h => Math.min(5, h + 1));
+            if (newStreak >= 3 && newStreak % 3 === 0) showReaction('\u{1F525}\u{1F525}\u{1F525}', 'ON FIRE!');
+            else showReaction('\u2728', 'Perfect pronunciation!');
+            setChk(true); setOk(true);
+          } else if (close) {
+            setSpeakResult({ match: false, spoken, close: true });
+            if (newAttempts >= 3) { setChk(true); setOk(false); }
+          } else {
+            setSpeakResult({ match: false, spoken, close: false });
+            sndErr();
+            speakText(ex.speak_word, dest && dest.lc);
+            if (newAttempts >= 3) { setChk(true); setOk(false); setCorrectStreak(0); }
+          }
+        });
+      };
+      body = (
+        <>
+          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>PRONUNCIATION PRACTICE</div>
+          <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 18 }}>{ex.q}</h3>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, marginBottom: 22 }}>
+            {ex.emoji && <div style={{ fontSize: 50, lineHeight: 1 }}>{ex.emoji}</div>}
+            <div style={{ padding: '16px 36px', background: T.n50, border: `2px solid ${T.n200}`, borderRadius: 16, fontSize: 28, fontWeight: 700, color: T.n700 }}>{ex.speak_word}</div>
+            <p style={{ fontSize: 14, color: T.n400 }}>{ex.tr}</p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <SpeakBtn word={ex.speak_word} lc={dest && dest.lc} />
+              <span style={{ fontSize: 12, color: T.n400 }}>Listen first</span>
+            </div>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
+            <button onClick={handleSpeak} disabled={speakRecording || chk} style={{
+              width: 72, height: 72, borderRadius: '50%', fontSize: 32,
+              background: speakRecording ? T.red : chk ? T.n100 : T.teal,
+              color: '#fff', border: 'none', cursor: chk ? 'default' : 'pointer',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              animation: speakRecording ? 'micPulse 1.5s ease-in-out infinite' : 'none',
+              transition: 'all .2s', fontFamily: T.f,
+            }}>{'\u{1F3A4}'}</button>
+            <p style={{ fontSize: 13, fontWeight: 700, color: T.n500 }}>
+              {speakRecording ? 'Listening...' : chk ? '' : '\u{1F3A4} Tap and say: ' + ex.speak_word}
+            </p>
+            {speakAttempts > 0 && !chk && <p style={{ fontSize: 11, color: T.n300 }}>Attempt {speakAttempts}/3</p>}
+          </div>
+          {speakResult && (
+            <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 12, background: speakResult.match ? T.greenL : speakResult.close ? T.amberL : T.redL, border: `1.5px solid ${speakResult.match ? T.green : speakResult.close ? T.amber : T.red}`, animation: 'slideUp .25s ease both' }}>
+              {speakResult.match ? (
+                <p style={{ fontSize: 15, fontWeight: 700, color: T.green }}>Perfect pronunciation! ✨</p>
+              ) : speakResult.close ? (
+                <p style={{ fontSize: 15, fontWeight: 700, color: T.amberD }}>Almost! You said &quot;{speakResult.spoken}&quot;. Try again!</p>
+              ) : (
+                <div>
+                  <p style={{ fontSize: 15, fontWeight: 700, color: T.red }}>Not quite.{speakResult.spoken ? ' You said "' + speakResult.spoken + '".' : ''}</p>
+                  <p style={{ fontSize: 13, color: T.redD, marginTop: 4 }}>Listen again and try:</p>
+                </div>
+              )}
+            </div>
+          )}
+        </>
+      );
     }
 
-    const rdy = ex.type === 'build' ? built.length > 0 : ex.type === 'match' ? matchDone.length === (ex.pairs ? ex.pairs.length : 0) : !!sel;
-    const bot = chk && ex.type !== 'match' ? (
-      <div style={{ padding: '20px 20px 16px', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0, animation: 'slideUpPanel .25s cubic-bezier(.4,0,.2,1) both' }}>
-        <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: ok ? 4 : 8 }}>{ok ? '✓  Correct!' : '✗  Not quite'}</div>
-        {!ok ? (
-          <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.redD, marginBottom: 12 }}>
-            {(ex.type === 'fill' || ex.type === 'tap' || ex.type === 'listen') ? <>Answer: <strong>{ex.ans}</strong></> : <>Should be: <strong>{ex.hint}</strong></>}
-            <br />Added to your replay queue {'\u{1F504}'}
-          </p>
-        ) : (
-          <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.greenD, marginBottom: 10 }}>Momentum +3% · Keep it up!</p>
-        )}
-        <button onClick={nextQ} style={ok ? sBtnGreen : sBtnRed}>Continue →</button>
-      </div>
-    ) : (
-      <div style={{ padding: '14px 18px', borderTop: `1.5px solid ${T.n100}` }}>
-        {ex.type === 'match' && rdy ? (
-          <button onClick={nextQ} style={sBtnPrimary}>Continue →</button>
-        ) : ex.type !== 'match' ? (
-          <button onClick={checkEx2} style={rdy ? sBtnPrimary : sBtnDisabled} disabled={!rdy}>Check answer</button>
-        ) : (
-          <button style={sBtnDisabled} disabled>Match all pairs to continue</button>
-        )}
-      </div>
-    );
+    const rdy = ex.type === 'build' ? built.length > 0 : ex.type === 'match' ? matchDone.length === (ex.pairs ? ex.pairs.length : 0) : ex.type === 'speak' ? chk : !!sel;
+    let bot;
+    if (ex.type === 'speak' && chk) {
+      bot = (
+        <div style={{ padding: '20px 20px 16px', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0, animation: 'slideUpPanel .25s cubic-bezier(.4,0,.2,1) both' }}>
+          <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: 8 }}>{ok ? '\u2728 Great pronunciation!' : 'Nice try! Keep practising.'}</div>
+          <button onClick={nextQ} style={ok ? sBtnGreen : sBtnRed}>Continue →</button>
+        </div>
+      );
+    } else if (ex.type === 'speak' && !chk) {
+      bot = (
+        <div style={{ padding: '14px 18px', borderTop: `1.5px solid ${T.n100}` }}>
+          <button style={sBtnDisabled} disabled>Tap the microphone above</button>
+        </div>
+      );
+    } else if (chk && ex.type !== 'match') {
+      bot = (
+        <div style={{ padding: '20px 20px 16px', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0, animation: 'slideUpPanel .25s cubic-bezier(.4,0,.2,1) both' }}>
+          <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: ok ? 4 : 8 }}>{ok ? '\u2713  Correct!' : '\u2717  Not quite'}</div>
+          {!ok ? (
+            <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.redD, marginBottom: 12 }}>
+              {(ex.type === 'fill' || ex.type === 'tap' || ex.type === 'listen') ? <>Answer: <strong>{ex.ans}</strong></> : <>Should be: <strong>{ex.hint}</strong></>}
+              <br />Added to your replay queue {'\u{1F504}'}
+            </p>
+          ) : (
+            <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.greenD, marginBottom: 10 }}>Momentum +3% · Keep it up!</p>
+          )}
+          <button onClick={nextQ} style={ok ? sBtnGreen : sBtnRed}>Continue →</button>
+        </div>
+      );
+    } else {
+      bot = (
+        <div style={{ padding: '14px 18px', borderTop: `1.5px solid ${T.n100}` }}>
+          {ex.type === 'match' && rdy ? (
+            <button onClick={nextQ} style={sBtnPrimary}>Continue →</button>
+          ) : ex.type !== 'match' ? (
+            <button onClick={checkEx2} style={rdy ? sBtnPrimary : sBtnDisabled} disabled={!rdy}>Check answer</button>
+          ) : (
+            <button style={sBtnDisabled} disabled>Match all pairs to continue</button>
+          )}
+        </div>
+      );
+    }
 
     return (
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', background: T.n0, animation: shk ? 'shake .5s ease' : 'slideUp .3s ease' }}>
         <div style={{ padding: '11px 16px', display: 'flex', alignItems: 'center', gap: 12, borderBottom: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
           <button onClick={closeEx} style={{ width: 30, height: 30, borderRadius: '50%', background: T.n50, border: `1.5px solid ${T.n200}`, fontSize: 13, color: T.n400, cursor: 'pointer', fontFamily: T.f }}>✕</button>
           <div style={{ flex: 1 }}><ProgressBar value={prog} max={1} height={8} /></div>
+          <div style={{ display: 'flex', gap: 2, fontSize: 14 }}>
+            {[0,1,2,3,4].map(i => (
+              <span key={i} style={{
+                transition: 'all .3s',
+                animation: lostHeartIdx === i ? 'heartShake .5s ease, heartFade .5s ease .3s forwards' : 'none',
+              }}>{i < hearts ? '\u2764\uFE0F' : '\u{1F90D}'}</span>
+            ))}
+          </div>
+          <button onClick={() => setAudioFirst(a => !a)} style={{
+            background: audioFirst ? T.tealL : T.n100,
+            border: `1.5px solid ${audioFirst ? T.teal : T.n200}`,
+            borderRadius: 6, padding: '3px 6px', fontSize: 11, fontWeight: 700,
+            cursor: 'pointer', color: audioFirst ? T.tealD : T.n400, fontFamily: T.f, flexShrink: 0,
+          }}>{'\u{1F50A}'}</button>
           <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400 }}>{exIdx}/{exs.length}</div>
         </div>
         <div style={{ background: T.n50, padding: '9px 16px', borderBottom: `1.5px solid ${T.n100}`, display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
@@ -1297,6 +1592,7 @@ export default function LanguagesPage() {
         </div>
         <div style={{ flex: 1, padding: '20px 18px', overflow: 'auto', position: 'relative' }}>
           {showXP && <div style={{ position: 'absolute', top: 16, right: 16, fontSize: 15, fontWeight: 900, color: T.teal, animation: 'floatUp .9s ease forwards', pointerEvents: 'none' }}>+{Math.round(exSc.xp / (exs.length || 1))} XP</div>}
+          {reaction && <Reaction emoji={reaction.emoji} text={reaction.text} />}
           {body}
         </div>
         {bot}
@@ -1592,16 +1888,34 @@ export default function LanguagesPage() {
             ))}
           </div>
           <div style={{ padding: 14, background: T.n0, borderRadius: 16, border: `1.5px solid ${T.n100}`, boxShadow: '0 1px 3px rgba(0,0,0,.08)' }}>
-            <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.n600, marginBottom: 10 }}>{'\u{1F4C5}'} Weekly heatmap</div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 6 }}>
-              {days.map((d, i) => (
-                <div key={i} style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginBottom: 4 }}>{d}</div>
-                  <div style={{ width: 14, height: 14, borderRadius: 3, background: heatmap[i] ? hc[Math.min(4, heatmap[i])] : T.n100 }} />
-                </div>
-              ))}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+              <span style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.n600 }}>{'\u{1F4C5}'} Streak Calendar</span>
+              {(() => {
+                let streak = 0;
+                for (let i = heatmap.length - 1; i >= 0; i--) { if (heatmap[i] > 0) streak++; else break; }
+                return streak > 0 ? (
+                  <span style={{ padding: '4px 12px', borderRadius: 100, fontSize: 12, fontWeight: 800, background: T.amberL, color: T.amberD }}>{'\u{1F525}'} {streak} day{streak > 1 ? 's' : ''} in a row!</span>
+                ) : null;
+              })()}
             </div>
-            <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>20 min daily beats 2h on weekends by 3× (distributed practice research).</p>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
+              {days.map((d, i) => {
+                const isToday = i === 4;
+                const practiced = heatmap[i] > 0;
+                return (
+                  <div key={i} style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
+                    <div style={{ fontSize: 11, fontWeight: 700, color: isToday ? T.teal : T.n400 }}>{d}</div>
+                    <div style={{
+                      width: 22, height: 22, borderRadius: '50%',
+                      background: isToday && practiced ? T.teal : practiced ? T.tealM : T.n200,
+                      transition: 'all .3s',
+                      boxShadow: isToday && practiced ? `0 0 8px ${T.teal}44` : 'none',
+                    }} />
+                  </div>
+                );
+              })}
+            </div>
+            <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>20 min daily beats 2h on weekends by 3x (distributed practice research).</p>
           </div>
           <div style={{ padding: 14, marginBottom: 40, background: T.n0, borderRadius: 16, border: `1.5px solid ${T.n100}`, boxShadow: '0 1px 3px rgba(0,0,0,.08)' }}>
             <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.n600, marginBottom: 10 }}>{'\u{1F5FA}️'} Language journey</div>
