@@ -757,6 +757,7 @@ export default function Home() {
             <a href="/parent" style={{flex:1,textAlign:'center',background:'rgba(74,222,128,0.1)',border:'2px solid rgba(74,222,128,0.35)',color:'#4ADE80',borderRadius:14,padding:'14px 8px',fontSize:15,fontWeight:700,textDecoration:'none'}}>👨‍👩‍👧 Parent</a>
             <a href="/dashboard" style={{flex:1,textAlign:'center',background:'rgba(79,142,247,0.1)',border:'2px solid rgba(79,142,247,0.35)',color:'#4F8EF7',borderRadius:14,padding:'14px 8px',fontSize:15,fontWeight:700,textDecoration:'none'}}>👩‍🏫 Teacher</a>
           </div>
+          <a href="/kids" style={{display:'block',width:'100%',maxWidth:320,background:'linear-gradient(135deg, #FFC300, #FF8E53)',color:'#060B20',border:'none',borderRadius:14,padding:'16px 24px',fontSize:17,fontWeight:700,fontFamily:"'Sora',sans-serif",cursor:'pointer',textDecoration:'none',textAlign:'center'}}>I'm a Kid! 🌟 Tap here!</a>
           <button className="bo" onClick={() => { window.dispatchEvent(new CustomEvent('starky-scan')); }} style={{background:'rgba(167,139,250,0.12)',border:'2px solid rgba(167,139,250,0.4)',color:'#A78BFA'}}>📷 Photo Your Homework — Starky Reads It</button>
         </div>
         <div className="pr">

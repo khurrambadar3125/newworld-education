@@ -13,6 +13,7 @@ const MENU_GROUPS = [
       { href: '/textbooks',    label: '📖 Textbooks' },
       { href: '/languages',   label: '🌍 Languages' },
       { href: '/spelling-bee', label: '🐝 Spelling Bee' },
+      { href: '/kids',         label: '🌟 Kids Zone' },
     ],
   },
   {
