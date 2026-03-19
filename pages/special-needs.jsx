@@ -1892,9 +1892,56 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
             </div>
             <div style={{ background:"rgba(199,125,255,0.06)", border:"1px solid rgba(199,125,255,0.2)", borderRadius:14, padding:"14px 20px", marginTop:12, textAlign:"center" }}>
               <span style={{ fontSize:12, color:"rgba(255,255,255,0.5)" }}>All included in the </span>
-              <span style={{ fontSize:12, fontWeight:800, color:"#C77DFF" }}>Special Needs Plan — $149.99/year</span>
+              <span style={{ fontSize:12, fontWeight:800, color:"#C77DFF" }}>Special Needs Plan</span>
               <span style={{ fontSize:12, color:"rgba(255,255,255,0.5)" }}> · </span>
               <a href="/pricing" style={{ fontSize:12, fontWeight:800, color:"#C77DFF", textDecoration:"none" }}>View Plans →</a>
+            </div>
+
+            {/* LANGUAGE & LITERACY — SEN-adapted */}
+            <div style={{ marginTop:36, paddingTop:28, borderTop:"1px solid rgba(255,255,255,0.06)" }}>
+              <div style={{ textAlign:"center", marginBottom:20 }}>
+                <div style={{ fontSize:11, fontWeight:900, color:"rgba(255,255,255,0.3)", letterSpacing:2, marginBottom:8 }}>LANGUAGE & LITERACY</div>
+                <div style={{ fontWeight:900, fontSize:isMobile?17:22, marginBottom:6 }}>Languages & Spelling — Adapted for Your Child</div>
+                <div style={{ fontSize:12, color:"rgba(255,255,255,0.4)", lineHeight:1.8 }}>
+                  {condition?.id === 'autism' ? 'Structured, predictable exercises with visual cues — ideal for autistic learners who thrive with routine and patterns.'
+                  : condition?.id === 'adhd' ? 'Fast-paced games with hearts, XP, and celebrations — designed to hold attention and reward focus.'
+                  : condition?.id === 'dyslexia' ? 'Audio-first mode means no reading needed. Hear every word spoken aloud. Spelling practice builds phonological awareness — the #1 intervention for dyslexia.'
+                  : condition?.id === 'ds' ? 'Visual learning with big buttons, emojis, and celebrations. Whole-word recognition through picture spelling.'
+                  : condition?.id === 'vi' ? 'Fully audio-based — every instruction spoken aloud. Pronunciation practice uses the microphone so your child speaks, not reads.'
+                  : condition?.id === 'hi' ? 'Visual-first exercises with large text and colorful tiles. Spelling builds written language skills — critical for hearing impaired learners.'
+                  : 'Interactive exercises adapted for every need — audio-first, big buttons, visual cues, and celebrations.'}
+                </div>
+              </div>
+              <div style={{ display:"grid", gridTemplateColumns:isMobile?"1fr":"repeat(2,1fr)", gap:12 }}>
+                <a href="/languages" style={{ textDecoration:"none", background:"rgba(79,142,247,0.08)", border:"1px solid rgba(79,142,247,0.25)", borderRadius:18, padding:16, display:"block", color:"#fff" }}
+                  onMouseEnter={e=>{e.currentTarget.style.background="rgba(79,142,247,0.15)";e.currentTarget.style.borderColor="rgba(79,142,247,0.5)";}}
+                  onMouseLeave={e=>{e.currentTarget.style.background="rgba(79,142,247,0.08)";e.currentTarget.style.borderColor="rgba(79,142,247,0.25)";}}>
+                  <div style={{ fontSize:28, marginBottom:6 }}>🌍</div>
+                  <div style={{ fontWeight:900, fontSize:15, color:"#4F8EF7", marginBottom:4 }}>Learn Languages</div>
+                  <div style={{ fontSize:11, color:"rgba(255,255,255,0.45)", lineHeight:1.6, marginBottom:8 }}>
+                    9 languages with audio-first mode — no reading needed. Pronunciation practice via microphone. Learn in Urdu, Sindhi, Punjabi, Pashto or English.
+                  </div>
+                  <div style={{ fontSize:10, fontWeight:800, color:"#4F8EF7", display:"flex", flexWrap:"wrap", gap:4 }}>
+                    {['Audio-first', 'Hearts system', 'Pronunciation', 'Mother tongue'].map(t => (
+                      <span key={t} style={{ background:"rgba(79,142,247,0.12)", border:"1px solid rgba(79,142,247,0.25)", borderRadius:20, padding:"2px 8px" }}>{t}</span>
+                    ))}
+                  </div>
+                </a>
+                <a href="/spelling-bee" style={{ textDecoration:"none", background:"rgba(245,158,11,0.08)", border:"1px solid rgba(245,158,11,0.25)", borderRadius:18, padding:16, display:"block", color:"#fff" }}
+                  onMouseEnter={e=>{e.currentTarget.style.background="rgba(245,158,11,0.15)";e.currentTarget.style.borderColor="rgba(245,158,11,0.5)";}}
+                  onMouseLeave={e=>{e.currentTarget.style.background="rgba(245,158,11,0.08)";e.currentTarget.style.borderColor="rgba(245,158,11,0.25)";}}>
+                  <div style={{ fontSize:28, marginBottom:6 }}>🐝</div>
+                  <div style={{ fontWeight:900, fontSize:15, color:"#F59E0B", marginBottom:4 }}>Spelling Bee</div>
+                  <div style={{ fontSize:11, color:"rgba(255,255,255,0.45)", lineHeight:1.6, marginBottom:8 }}>
+                    4 game modes — tap letters, unscramble, picture spell, speed round. 210 words across 7 grades. Every word spoken aloud.
+                  </div>
+                  <div style={{ fontSize:10, fontWeight:800, color:"#F59E0B", display:"flex", flexWrap:"wrap", gap:4 }}>
+                    {['No typing needed', 'Audio TTS', 'XP & streaks', 'Big buttons'].map(t => (
+                      <span key={t} style={{ background:"rgba(245,158,11,0.12)", border:"1px solid rgba(245,158,11,0.25)", borderRadius:20, padding:"2px 8px" }}>{t}</span>
+                    ))}
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         )}
