@@ -1256,20 +1256,48 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["Respiration", "Releasing energy from glucose"], ["Photosynthesis", "Making glucose using light"], ["Diffusion", "Particles moving from high to low concentration"], ["Osmosis", "Water moving through a membrane"]] },
       { pairs: [["Metaphor", "Direct comparison without like/as"], ["Simile", "Comparison using like or as"], ["Personification", "Giving human traits to non-human things"], ["Hyperbole", "Extreme exaggeration for effect"]] },
+      // Maths
+      { pairs: [["Sine rule", "a/sin A = b/sin B"], ["Cosine rule", "a² = b² + c² - 2bc cos A"], ["Area of triangle", "Half base times height"], ["Circumference", "2 times pi times r"]] },
+      // English
+      { pairs: [["Dramatic irony", "Audience knows more than character"], ["Foreshadowing", "Hints at what will happen"], ["Pathetic fallacy", "Weather reflects mood"], ["Juxtaposition", "Placing contrasts side by side"]] },
     ],
     fill: [
       { sentence: "The chemical formula for carbon dioxide is ___.", options: ["CO", "CO2", "C2O", "H2O"], answer: "CO2", explanation: "One carbon atom bonded to two oxygen atoms." },
       { sentence: "The angles in a triangle add up to ___ degrees.", options: ["90", "180", "270", "360"], answer: "180", explanation: "Every triangle's interior angles sum to exactly 180 degrees." },
       { sentence: "Allama Iqbal is known as the poet of the ___.", options: ["West", "East", "South", "North"], answer: "East", explanation: "Allama Iqbal is called the Poet of the East (Shair-e-Mashriq)." },
+      // Maths
+      { sentence: "The circumference of a circle with radius 7 cm is ___ cm (use pi = 22/7).", options: ["22", "44", "88", "154"], answer: "44", explanation: "C = 2 x pi x r = 2 x 22/7 x 7 = 44 cm." },
+      { sentence: "If 3x - 7 = 14, then x = ___.", options: ["3", "5", "7", "9"], answer: "7", explanation: "3x = 21, so x = 7." },
+      // Physics
+      { sentence: "Power is measured in ___.", options: ["newtons", "joules", "watts", "volts"], answer: "watts", explanation: "Power = energy / time, measured in watts (W)." },
+      // Chemistry
+      { sentence: "In the periodic table, elements are arranged by ___ number.", options: ["mass", "atomic", "charge", "group"], answer: "atomic", explanation: "Elements are arranged in order of increasing atomic (proton) number." },
+      // English
+      { sentence: "Pathetic fallacy uses ___ to reflect mood.", options: ["weather", "dialogue", "numbers", "facts"], answer: "weather", explanation: "When stormy weather reflects a character's anger, that is pathetic fallacy." },
+      // Pakistan Studies
+      { sentence: "The Objective Resolution was passed in ___.", options: ["1947", "1949", "1956", "1973"], answer: "1949", explanation: "The Objective Resolution of 1949 laid the foundation for Pakistan's constitution." },
     ],
     truefalse: [
       { statement: "Arteries carry blood away from the heart.", answer: true, explanation: "Arteries carry oxygenated blood from the heart to the body." },
       { statement: "Shakespeare wrote in the 20th century.", answer: false, explanation: "Shakespeare wrote in the late 16th and early 17th century." },
       { statement: "The pH of a neutral substance is 7.", answer: true, explanation: "Pure water has a pH of 7, which is neutral — neither acid nor alkali." },
+      // Maths
+      { statement: "The exterior angles of any polygon sum to 360 degrees.", answer: true, explanation: "Regardless of the number of sides, exterior angles always total 360 degrees." },
+      { statement: "The area of a circle is 2 times pi times r.", answer: false, explanation: "Area = pi times r squared. The formula 2 pi r gives the circumference." },
+      // Physics
+      { statement: "Work done = force times distance in the direction of force.", answer: true, explanation: "W = F x d is the work done formula." },
+      // Chemistry
+      { statement: "Group 1 metals react vigorously with water.", answer: true, explanation: "Alkali metals like sodium and potassium react with water, sometimes explosively." },
+      // English
+      { statement: "Foreshadowing gives clues about future events in a story.", answer: true, explanation: "Authors use foreshadowing to hint at what will happen later." },
+      // Pakistan Studies
+      { statement: "The 1973 Constitution declared Pakistan an Islamic Republic.", answer: true, explanation: "The 1973 Constitution established Pakistan as the Islamic Republic of Pakistan." },
     ],
     picture: [
       { scenario: "You are analysing a poem that says: 'The wind howled through the empty streets.' Identify the literary technique used.", prompt: "Name the technique and explain its effect on the reader." },
       { scenario: "In an experiment, you add acid to an alkali and measure the pH. It starts at 12 and drops to 7.", prompt: "What happened? What is this reaction called? What might the products be?" },
+      // Maths
+      { scenario: "A circular park has a diameter of 28 metres. Calculate the area and the circumference (use pi = 22/7).", prompt: "Show both calculations step by step." },
     ],
   },
 
@@ -1278,20 +1306,46 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["Democracy", "Government by the people"], ["Inflation", "Rising prices over time"], ["Migration", "Movement of people to new places"], ["Constitution", "Supreme law of a country"]] },
       { pairs: [["Velocity", "Speed in a specific direction"], ["Acceleration", "Rate of change of velocity"], ["Momentum", "Mass multiplied by velocity"], ["Inertia", "Resistance to change in motion"]] },
+      // Maths
+      { pairs: [["Mean", "Sum of values divided by count"], ["Median", "Middle value in ordered data"], ["Mode", "Most frequently occurring value"], ["Range", "Difference between highest and lowest"]] },
     ],
     fill: [
       { sentence: "The three states of matter are solid, liquid, and ___.", options: ["gas", "plasma", "vapour", "mist"], answer: "gas", explanation: "Solid, liquid, and gas are the three common states of matter." },
       { sentence: "Pakistan's national language is ___.", options: ["English", "Punjabi", "Urdu", "Sindhi"], answer: "Urdu", explanation: "Urdu is the national language of Pakistan, used across all provinces." },
       { sentence: "An ecosystem includes living organisms and their ___ environment.", options: ["physical", "imaginary", "digital", "emotional"], answer: "physical", explanation: "An ecosystem is the interaction between living things and their physical surroundings." },
+      // Maths
+      { sentence: "The mean of 4, 6, 8, 10, 12 is ___.", options: ["6", "8", "10", "12"], answer: "8", explanation: "Sum = 40. 40 divided by 5 = 8." },
+      { sentence: "Solve: 5(x - 2) = 15. x = ___.", options: ["3", "5", "7", "9"], answer: "5", explanation: "x - 2 = 3, so x = 5." },
+      // Physics
+      { sentence: "The speed of sound in air is approximately ___ m/s.", options: ["100", "343", "500", "1000"], answer: "343", explanation: "Sound travels at about 343 metres per second in air at room temperature." },
+      // Chemistry
+      { sentence: "An exothermic reaction ___ heat.", options: ["absorbs", "releases", "destroys", "stores"], answer: "releases", explanation: "Exothermic reactions release heat to the surroundings." },
+      // English
+      { sentence: "An oxymoron combines two ___ words.", options: ["similar", "contradictory", "long", "simple"], answer: "contradictory", explanation: "Examples: 'deafening silence' or 'bittersweet'." },
+      // Pakistan Studies
+      { sentence: "CPEC connects Pakistan with ___.", options: ["India", "China", "Iran", "Afghanistan"], answer: "China", explanation: "The China-Pakistan Economic Corridor connects Gwadar to Kashgar." },
     ],
     truefalse: [
       { statement: "Sound needs a medium to travel through.", answer: true, explanation: "Sound cannot travel through a vacuum — it needs air, water, or a solid." },
       { statement: "The Indus River flows through Balochistan and Punjab only.", answer: false, explanation: "The Indus flows through Gilgit-Baltistan, KPK, Punjab, and Sindh." },
       { statement: "Friction is a force that opposes motion.", answer: true, explanation: "Friction acts in the opposite direction to movement, slowing things down." },
+      // Maths
+      { statement: "The probability of a certain event is 1.", answer: true, explanation: "A certain event has probability 1, meaning it will definitely happen." },
+      { statement: "The median of 3, 7, 9 is 7.", answer: true, explanation: "When data is ordered, the middle value is 7." },
+      // Physics
+      { statement: "A higher pitch sound has a higher frequency.", answer: true, explanation: "Pitch is directly related to frequency — higher frequency means higher pitch." },
+      // Chemistry
+      { statement: "Rusting is an example of oxidation.", answer: true, explanation: "Iron reacts with oxygen and water to form iron oxide (rust)." },
+      // English
+      { statement: "A monologue is when one character speaks alone.", answer: true, explanation: "Mono means one. A monologue is a long speech by one person." },
+      // Pakistan Studies
+      { statement: "Pakistan has coastline along the Arabian Sea.", answer: true, explanation: "Pakistan's southern coast stretches along the Arabian Sea in Sindh and Balochistan." },
     ],
     picture: [
       { scenario: "Imagine holding two objects: a tennis ball and a bowling ball. You drop both from the same height at the same time.", prompt: "Which hits the ground first? Explain your reasoning using what you know about gravity and air resistance." },
       { scenario: "Think about what happens when you boil a kettle. The water gets hotter and hotter, then starts to bubble.", prompt: "Explain the process step by step. What is happening to the water particles at each stage?" },
+      // Maths
+      { scenario: "Scores in 5 cricket matches: 35, 42, 28, 56, 39. Calculate the mean, median, and range.", prompt: "Find all three measures of central tendency." },
     ],
   },
 
@@ -1300,20 +1354,46 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["Catalyst", "Speeds up a reaction"], ["Reactant", "Substance that reacts"], ["Product", "Substance that is formed"], ["Enzyme", "Biological catalyst"]] },
       { pairs: [["Thesis", "Main argument of an essay"], ["Evidence", "Facts that support your point"], ["Analysis", "Explaining what evidence means"], ["Conclusion", "Final summary of argument"]] },
+      // Maths
+      { pairs: [["Equation", "Statement with equals sign"], ["Expression", "No equals sign"], ["Formula", "Rule written with symbols"], ["Identity", "True for all values"]] },
     ],
     fill: [
       { sentence: "The powerhouse of the cell is the ___.", options: ["nucleus", "ribosome", "mitochondria", "membrane"], answer: "mitochondria", explanation: "Mitochondria carry out aerobic respiration to release energy." },
       { sentence: "In English writing, a new paragraph begins when there is a change of ___.", options: ["topic", "colour", "font", "page"], answer: "topic", explanation: "Each paragraph should focus on one main idea or point." },
       { sentence: "The area of a rectangle is length multiplied by ___.", options: ["width", "height", "perimeter", "diagonal"], answer: "width", explanation: "Area = length x width for all rectangles." },
+      // Maths
+      { sentence: "Factorise: x² - 9 = ___.", options: ["(x-3)(x+3)", "(x-9)(x+1)", "(x-3)(x-3)", "(x+9)(x-1)"], answer: "(x-3)(x+3)", explanation: "Difference of two squares: a² - b² = (a-b)(a+b)." },
+      { sentence: "The nth term of 2, 5, 8, 11 is ___.", options: ["3n - 1", "3n + 1", "2n + 1", "n + 3"], answer: "3n - 1", explanation: "Common difference is 3. First term: 3(1) - 1 = 2. Correct." },
+      // Physics
+      { sentence: "The unit of electrical resistance is the ___.", options: ["ampere", "volt", "ohm", "watt"], answer: "ohm", explanation: "Resistance is measured in ohms." },
+      // Chemistry
+      { sentence: "The pH of pure water is ___.", options: ["0", "5", "7", "14"], answer: "7", explanation: "Pure water is neutral with a pH of exactly 7." },
+      // English
+      { sentence: "Direct speech uses ___ marks.", options: ["question", "speech", "exclamation", "bracket"], answer: "speech", explanation: "Speech marks show the exact words someone said." },
+      // Pakistan Studies
+      { sentence: "The national language of Pakistan is ___.", options: ["English", "Urdu", "Punjabi", "Pashto"], answer: "Urdu", explanation: "Urdu is the national language, while English is the official language." },
     ],
     truefalse: [
       { statement: "Enzymes are proteins that speed up chemical reactions in the body.", answer: true, explanation: "Enzymes are biological catalysts made of protein." },
       { statement: "The Quaid-e-Azam's full name was Muhammad Ali Jinnah.", answer: true, explanation: "Muhammad Ali Jinnah, known as Quaid-e-Azam (Great Leader), founded Pakistan." },
       { statement: "Parallel lines eventually meet at a point.", answer: false, explanation: "Parallel lines never meet — they stay the same distance apart forever." },
+      // Maths
+      { statement: "A scatter graph shows the relationship between two variables.", answer: true, explanation: "Scatter graphs plot pairs of data to reveal correlation." },
+      { statement: "Correlation always means causation.", answer: false, explanation: "Two things can be correlated without one causing the other." },
+      // Physics
+      { statement: "Current flows from positive to negative in a circuit.", answer: true, explanation: "Conventional current flows from positive to negative terminal." },
+      // Chemistry
+      { statement: "Noble gases are very reactive.", answer: false, explanation: "Noble gases have full outer shells and are very unreactive." },
+      // English
+      { statement: "Reported speech uses the exact words of the speaker.", answer: false, explanation: "Reported speech paraphrases what was said, often changing tense." },
+      // Pakistan Studies
+      { statement: "Pakistan's parliament is called the Majlis-e-Shoora.", answer: true, explanation: "The parliament consists of the National Assembly and the Senate." },
     ],
     picture: [
       { scenario: "Read this passage: 'The government announced a new education policy. Some people support it because it increases funding. Others oppose it because it reduces local control.'", prompt: "Write a balanced paragraph: give one argument for and one against, then state your own view." },
       { scenario: "You are given a table of data showing temperature and the rate of enzyme activity. At 37C the rate is highest. At 60C it drops to zero.", prompt: "Describe the pattern in the data. Explain why enzyme activity stops at high temperatures." },
+      // Maths
+      { scenario: "A pie chart shows student preferences: 40% cricket, 25% football, 20% badminton, 15% other. There are 200 students.", prompt: "How many students chose each sport? Show your calculations." },
     ],
   },
 
@@ -1322,20 +1402,46 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["Photosynthesis", "Plants making food from light"], ["Evolution", "Species changing over time"], ["Globalisation", "World becoming more connected"], ["Urbanisation", "People moving to cities"]] },
       { pairs: [["Mean", "Add all values and divide by count"], ["Median", "Middle value when sorted"], ["Mode", "Most common value"], ["Range", "Highest minus lowest"]] },
+      // Maths
+      { pairs: [["Standard form", "Numbers as a times 10 to the n"], ["Index notation", "Powers and roots"], ["Surds", "Irrational root expressions"], ["Reciprocal", "1 divided by a number"]] },
     ],
     fill: [
       { sentence: "The longest river in Pakistan is the ___.", options: ["Jhelum", "Chenab", "Indus", "Ravi"], answer: "Indus", explanation: "The Indus River is approximately 3,180 km long — the longest in Pakistan." },
       { sentence: "An equation is balanced when both sides are ___.", options: ["different", "equal", "empty", "negative"], answer: "equal", explanation: "The equals sign means the left side has the same value as the right side." },
       { sentence: "The human body has ___ pairs of chromosomes.", options: ["21", "23", "25", "46"], answer: "23", explanation: "Humans have 23 pairs (46 total) chromosomes in each cell." },
+      // Maths
+      { sentence: "Express 0.0035 in standard form: ___.", options: ["3.5 x 10 to the -3", "35 x 10 to the -4", "3.5 x 10 to the 3", "0.35 x 10 to the -2"], answer: "3.5 x 10 to the -3", explanation: "Move decimal 3 places right: 3.5 x 10 to the -3." },
+      { sentence: "The interior angle sum of a hexagon is ___ degrees.", options: ["540", "720", "900", "1080"], answer: "720", explanation: "(6-2) x 180 = 720 degrees." },
+      // Physics
+      { sentence: "Acceleration due to gravity on Earth is approximately ___ m/s².", options: ["5", "10", "15", "20"], answer: "10", explanation: "Gravity accelerates objects at approximately 9.8 m/s² (about 10 m/s²)." },
+      // Chemistry
+      { sentence: "Photosynthesis produces glucose and ___.", options: ["nitrogen", "oxygen", "hydrogen", "carbon"], answer: "oxygen", explanation: "6CO2 + 6H2O produces C6H12O6 + 6O2. Oxygen is released." },
+      // English
+      { sentence: "The purpose of a rhetorical question is to make the reader ___.", options: ["think", "laugh", "cry", "sleep"], answer: "think", explanation: "Rhetorical questions do not need an answer — they provoke thought." },
+      // Pakistan Studies
+      { sentence: "Pakistan's first constitution was adopted in ___.", options: ["1947", "1949", "1956", "1962"], answer: "1956", explanation: "Pakistan's first constitution was adopted on 23rd March 1956." },
     ],
     truefalse: [
       { statement: "The Earth's atmosphere is mostly nitrogen.", answer: true, explanation: "About 78% of the atmosphere is nitrogen, 21% oxygen." },
       { statement: "A verb is a describing word.", answer: false, explanation: "A verb is a doing/action word. An adjective is a describing word." },
       { statement: "The Karakoram Highway connects Pakistan and China.", answer: true, explanation: "The KKH runs from Islamabad to Kashgar, crossing the Karakoram mountains." },
+      // Maths
+      { statement: "The square root of 2 is an irrational number.", answer: true, explanation: "The square root of 2 cannot be expressed as a fraction — it goes on forever." },
+      { statement: "The volume of a cube with side 3 cm is 9 cubic cm.", answer: false, explanation: "Volume = 3 cubed = 27 cubic cm." },
+      // Physics
+      { statement: "Weight is a force and is measured in newtons.", answer: true, explanation: "Weight = mass x gravity. Since gravity produces force, weight is in newtons." },
+      // Chemistry
+      { statement: "Compounds can be separated by physical methods.", answer: false, explanation: "Compounds need chemical reactions to separate. Mixtures use physical methods." },
+      // English
+      { statement: "An emotive language technique aims to trigger feelings.", answer: true, explanation: "Writers use emotive language to influence the reader's emotions." },
+      // Pakistan Studies
+      { statement: "Gwadar Port is located in Balochistan.", answer: true, explanation: "Gwadar is a deep-sea port on Balochistan's coast, part of CPEC." },
     ],
     picture: [
       { scenario: "You are given a bar chart showing the population of five Pakistani cities: Karachi (15M), Lahore (12M), Faisalabad (3M), Rawalpindi (2M), Islamabad (1M).", prompt: "Which city has the largest population? What is the total? Estimate how many times bigger Karachi is compared to Islamabad." },
       { scenario: "Your friend says: 'I revised for 2 hours but still failed the test.' They want your advice.", prompt: "Suggest three specific study strategies they could try. Why might each one help?" },
+      // Maths
+      { scenario: "A container is shaped like a cylinder with radius 5 cm and height 10 cm.", prompt: "Calculate the volume (use pi = 3.14). If you fill it with water, how many ml does it hold?" },
     ],
   },
 
@@ -1348,20 +1454,48 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["Supply", "Amount producers offer at a given price"], ["Demand", "Amount consumers want at a given price"], ["Equilibrium", "Where supply equals demand"], ["Elasticity", "How responsive quantity is to price change"]] },
       { pairs: [["Classical conditioning", "Learning by association (Pavlov)"], ["Operant conditioning", "Learning by consequences (Skinner)"], ["Schema", "Mental framework for organising knowledge"], ["Cognitive dissonance", "Discomfort from conflicting beliefs"]] },
+      // A-Level Maths
+      { pairs: [["Differentiation", "Finding the rate of change"], ["Integration", "Finding the area under a curve"], ["Binomial expansion", "(a+b) to the n expanded as a series"], ["Logarithm", "Inverse of exponential function"]] },
+      // Biology
+      { pairs: [["ATP", "Energy currency of the cell"], ["DNA polymerase", "Enzyme that copies DNA"], ["mRNA", "Carries genetic code to ribosome"], ["tRNA", "Brings amino acids to ribosome"]] },
     ],
     fill: [
       { sentence: "When demand increases and supply stays the same, the price ___.", options: ["rises", "falls", "stays the same", "doubles"], answer: "rises", explanation: "Higher demand with fixed supply creates scarcity, pushing prices up." },
       { sentence: "The derivative of x² with respect to x is ___.", options: ["x", "2x", "2x²", "x³"], answer: "2x", explanation: "Using the power rule: bring down the exponent and reduce it by one." },
       { sentence: "In psychology, the independent variable is the one the researcher ___.", options: ["measures", "manipulates", "observes", "ignores"], answer: "manipulates", explanation: "The IV is deliberately changed to observe its effect on the DV." },
+      // A-Level Maths
+      { sentence: "The derivative of sin(x) is ___.", options: ["cos(x)", "-sin(x)", "-cos(x)", "tan(x)"], answer: "cos(x)", explanation: "d/dx [sin(x)] = cos(x) is a standard result." },
+      { sentence: "ln(e) = ___.", options: ["0", "1", "e", "2"], answer: "1", explanation: "The natural log of e is 1 because e to the power 1 = e." },
+      // Economics
+      { sentence: "When supply decreases and demand stays the same, price ___.", options: ["rises", "falls", "stays same", "disappears"], answer: "rises", explanation: "Less supply with same demand creates scarcity, pushing price up." },
+      // Psychology
+      { sentence: "Milgram's study investigated ___.", options: ["memory", "obedience", "conformity", "aggression"], answer: "obedience", explanation: "Milgram studied obedience to authority using fake electric shocks." },
+      // Biology
+      { sentence: "The Krebs cycle takes place in the ___.", options: ["cytoplasm", "nucleus", "mitochondrial matrix", "ribosome"], answer: "mitochondrial matrix", explanation: "The Krebs cycle occurs in the matrix of the mitochondria." },
+      // English
+      { sentence: "In literary criticism, a text's deeper meaning beyond the literal is called ___.", options: ["subtext", "context", "pretext", "hypertext"], answer: "subtext", explanation: "Subtext is the underlying meaning beneath what is explicitly stated." },
     ],
     truefalse: [
       { statement: "GDP measures the total value of goods and services produced in a country.", answer: true, explanation: "Gross Domestic Product is the standard measure of a country's economic output." },
       { statement: "In classical conditioning, the unconditioned stimulus is learned.", answer: false, explanation: "The unconditioned stimulus naturally triggers a response — no learning needed." },
       { statement: "Entropy in a closed system always tends to increase.", answer: true, explanation: "The second law of thermodynamics states that entropy (disorder) increases over time." },
+      // A-Level Maths
+      { statement: "The integral of 1/x is ln|x| + C.", answer: true, explanation: "This is a standard integral that appears frequently in A-Level Maths." },
+      { statement: "The chain rule is used for integrating composite functions.", answer: false, explanation: "The chain rule is for differentiation. Integration uses substitution." },
+      // Economics
+      { statement: "The State Bank of Pakistan sets monetary policy.", answer: true, explanation: "The SBP controls interest rates and money supply in Pakistan." },
+      // Psychology
+      { statement: "Ethical guidelines require informed consent from participants.", answer: true, explanation: "Participants must know what they are agreeing to before a study begins." },
+      // Biology
+      { statement: "Glycolysis occurs in the cytoplasm.", answer: true, explanation: "Glycolysis is the first stage of respiration and takes place in the cytoplasm." },
+      // English
+      { statement: "A bildungsroman is a coming-of-age novel.", answer: true, explanation: "Bildungsroman traces the growth and education of the protagonist." },
     ],
     picture: [
       { scenario: "Essay question: 'Evaluate the extent to which free market economics benefits developing countries like Pakistan.' You need to write a structured plan.", prompt: "Create a clear plan: introduction thesis, 3 body paragraphs (point, evidence, analysis for each), and a conclusion. Use the PEEL structure." },
       { scenario: "A psychology study claims that students who sleep 8 hours perform better in exams than those who sleep 5 hours. The sample was 20 students from one school.", prompt: "Evaluate this study. Discuss sample size, generalisability, confounding variables, and ethical considerations." },
+      // A-Level Maths
+      { scenario: "Find the stationary points of y = x cubed - 3x squared + 4. Determine if each is a maximum or minimum.", prompt: "Differentiate, set dy/dx = 0, and use the second derivative test." },
     ],
   },
 
@@ -1370,20 +1504,46 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["Opportunity cost", "What you give up when you choose"], ["Moral hazard", "Taking risks because you won't bear the cost"], ["Sunk cost", "Money spent that you can't get back"], ["Externality", "Cost or benefit affecting a third party"]] },
       { pairs: [["Mitosis", "Cell division for growth (identical)"], ["Meiosis", "Cell division for gametes (halved)"], ["Mutation", "Change in DNA sequence"], ["Genotype", "Genetic makeup of an organism"]] },
+      // A-Level Maths
+      { pairs: [["dy/dx", "First derivative"], ["d²y/dx²", "Second derivative"], ["Integral sign", "Integral symbol"], ["Sigma", "Sum of a series"]] },
     ],
     fill: [
       { sentence: "A recession is defined as ___ consecutive quarters of negative GDP growth.", options: ["one", "two", "three", "four"], answer: "two", explanation: "Two quarters of shrinking economy = recession. Quick and brutal." },
       { sentence: "The speed of light is approximately ___ m/s.", options: ["3 x 10⁶", "3 x 10⁸", "3 x 10¹⁰", "3 x 10¹²"], answer: "3 x 10⁸", explanation: "Light travels at about 300,000,000 metres per second. Nothing is faster." },
       { sentence: "In a normal distribution, approximately ___% of data falls within one standard deviation of the mean.", options: ["50", "68", "95", "99"], answer: "68", explanation: "The 68-95-99.7 rule. About 68% within 1 SD, 95% within 2, 99.7% within 3." },
+      // A-Level Maths
+      { sentence: "The integral of 3x² is ___.", options: ["x³ + C", "6x + C", "3x³ + C", "x³/3 + C"], answer: "x³ + C", explanation: "Increase power by 1 and divide: 3x³/3 = x³. Add C!" },
+      { sentence: "If f(x) = e to the 2x, then f'(x) = ___.", options: ["e to the 2x", "2e to the 2x", "2e to the x", "e²"], answer: "2e to the 2x", explanation: "Chain rule: multiply by the derivative of the power. 2 times e to the 2x." },
+      // Economics
+      { sentence: "Pakistan's main export crop is ___.", options: ["wheat", "rice", "cotton", "sugarcane"], answer: "cotton", explanation: "Cotton is Pakistan's largest export crop. Pakistan is the 5th largest producer!" },
+      // Psychology
+      { sentence: "The fight-or-flight response is controlled by the ___ nervous system.", options: ["sympathetic", "parasympathetic", "central", "somatic"], answer: "sympathetic", explanation: "The sympathetic nervous system activates in danger. Adrenaline rush!" },
+      // Biology
+      { sentence: "The total ATP yield from one glucose molecule in aerobic respiration is approximately ___.", options: ["2", "4", "18", "38"], answer: "38", explanation: "Glycolysis (2) + Krebs (2) + oxidative phosphorylation (34) = about 38 ATP!" },
+      // English
+      { sentence: "The unreliable narrator technique makes the reader question the story's ___.", options: ["truth", "length", "genre", "author"], answer: "truth", explanation: "An unreliable narrator forces you to decide what is real. Mind games!" },
     ],
     truefalse: [
       { statement: "Bananas are technically berries, but strawberries are not.", answer: true, explanation: "Botanically, bananas qualify as berries. Strawberries are 'accessory fruits.' Mind blown." },
       { statement: "Humans only use 10% of their brains.", answer: false, explanation: "Total myth! Brain scans show we use virtually all parts of the brain." },
       { statement: "Hot water can freeze faster than cold water under certain conditions.", answer: true, explanation: "This is the Mpemba effect — counterintuitive but experimentally observed." },
+      // A-Level Maths
+      { statement: "A geometric sequence has a common ratio.", answer: true, explanation: "Each term is multiplied by the common ratio to get the next." },
+      { statement: "log base 10 of 100 = 3.", answer: false, explanation: "log base 10 of 100 = 2 because 10 squared = 100. Close but no!" },
+      // Economics
+      { statement: "A monopoly means only one seller in the market.", answer: true, explanation: "Mono = one, poly = seller. One firm dominates the entire market." },
+      // Psychology
+      { statement: "Asch's study showed people conform even when the answer is clearly wrong.", answer: true, explanation: "About 75% conformed at least once. Peer pressure is real!" },
+      // Biology
+      { statement: "Red blood cells have no nucleus.", answer: true, explanation: "Mature red blood cells lose their nucleus to carry more haemoglobin!" },
+      // English
+      { statement: "Stream of consciousness mimics the flow of thoughts.", answer: true, explanation: "This technique shows the character's raw, unfiltered mental process." },
     ],
     picture: [
       { scenario: "Debate topic: 'Social media does more harm than good for young people.' You have 2 minutes to prepare your argument FOR the motion.", prompt: "Build your case: 3 punchy arguments with real-world evidence. Make it persuasive — go!" },
       { scenario: "You are launching a startup that solves one problem in Pakistan's education system. You have 60 seconds to pitch to an investor.", prompt: "What is the problem? What is your solution? Why will it work? Deliver your elevator pitch!" },
+      // A-Level Maths
+      { scenario: "A particle moves along a line with velocity v = 3t² - 12t + 9 m/s.", prompt: "When is the particle at rest? Find the displacement in the first 3 seconds." },
     ],
   },
 
@@ -1392,20 +1552,44 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["Inflation", "Prices going up over time"], ["Unemployment", "People who want jobs but cannot find them"], ["Interest rate", "Cost of borrowing money"], ["Exchange rate", "Value of one currency against another"]] },
       { pairs: [["Natural selection", "Survival of the fittest"], ["Adaptation", "Trait that helps survival"], ["Speciation", "One species becoming two"], ["Biodiversity", "Variety of life in an area"]] },
+      // A-Level Maths
+      { pairs: [["Gradient", "Steepness of a line"], ["Intercept", "Where the line crosses an axis"], ["Asymptote", "A line the curve approaches but never touches"], ["Tangent", "Line that just touches a curve"]] },
     ],
     fill: [
       { sentence: "When interest rates rise, borrowing becomes more ___.", options: ["expensive", "cheap", "common", "rare"], answer: "expensive", explanation: "Higher interest rates mean you pay more back on loans." },
       { sentence: "The human heart has ___ chambers.", options: ["2", "3", "4", "5"], answer: "4", explanation: "Two atria on top and two ventricles on the bottom." },
       { sentence: "In an essay, each paragraph should have one main ___.", options: ["word", "idea", "quote", "question"], answer: "idea", explanation: "One idea per paragraph keeps your writing clear and structured." },
+      // A-Level Maths
+      { sentence: "The gradient of the tangent to a curve at a point equals the ___.", options: ["derivative", "integral", "area", "intercept"], answer: "derivative", explanation: "The derivative gives the gradient at any point on the curve." },
+      // Economics
+      { sentence: "GDP stands for Gross ___ Product.", options: ["Daily", "Domestic", "Direct", "Digital"], answer: "Domestic", explanation: "GDP measures the total value of goods and services produced in a country." },
+      // Psychology
+      { sentence: "Short-term memory can hold about ___ items.", options: ["3", "5", "7", "12"], answer: "7", explanation: "Miller said short-term memory holds 7 plus or minus 2 items." },
+      // Biology
+      { sentence: "DNA is made of two strands twisted into a ___.", options: ["circle", "double helix", "square", "triangle"], answer: "double helix", explanation: "Watson and Crick discovered DNA's double helix shape in 1953." },
+      // English
+      { sentence: "An allegory tells one story but means ___.", options: ["nothing", "something else", "the same thing", "a joke"], answer: "something else", explanation: "Allegories use symbolism to convey a deeper message." },
     ],
     truefalse: [
       { statement: "DNA stands for deoxyribonucleic acid.", answer: true, explanation: "DNA is the molecule that carries genetic instructions." },
       { statement: "Pakistan has a federal system of government.", answer: true, explanation: "Pakistan is a federal republic with provinces that have their own governments." },
       { statement: "All metals are solid at room temperature.", answer: false, explanation: "Mercury is a metal that is liquid at room temperature." },
+      // A-Level Maths
+      { statement: "A quadratic equation can have at most 2 real roots.", answer: true, explanation: "Quadratics are degree 2, so they have at most 2 roots." },
+      // Economics
+      { statement: "Inflation means the general rise in prices over time.", answer: true, explanation: "When prices go up across the economy, that is inflation." },
+      // Psychology
+      { statement: "Long-term memory has unlimited capacity.", answer: true, explanation: "There is no known limit to how much long-term memory can store." },
+      // Biology
+      { statement: "Mitosis produces two identical daughter cells.", answer: true, explanation: "Mitosis creates two cells with the same chromosomes as the parent." },
+      // English
+      { statement: "Context means the time and place a text was written.", answer: true, explanation: "Understanding context helps you interpret what an author meant." },
     ],
     picture: [
       { scenario: "A company's profits went down by 20% this year. The CEO says it is because of the economy. A critic says it is because of bad management.", prompt: "Consider both sides. Which argument is stronger? What evidence would you need to decide?" },
       { scenario: "Think about this claim: 'Technology has made life easier for everyone.'", prompt: "Do you agree or disagree? Give two reasons for your view, using examples from real life." },
+      // A-Level Maths
+      { scenario: "Sketch the graph of y = 2 to the x. Describe what happens as x approaches negative infinity and positive infinity.", prompt: "Explain the shape, the asymptote, and the y-intercept." },
     ],
   },
 
@@ -1414,20 +1598,42 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["CV", "Document listing your skills and experience"], ["Interview", "Meeting where employer asks you questions"], ["Reference", "Someone who says you are a good worker"], ["Salary", "Money you earn from a job"]] },
       { pairs: [["Debit card", "Money comes from your bank account"], ["Credit card", "You borrow money and pay back later"], ["Receipt", "Proof that you paid"], ["Budget", "Plan for how to spend your money"]] },
+      // Maths (life skills)
+      { pairs: [["Interest", "Extra money the bank pays you"], ["Percentage", "Number out of 100"], ["Discount", "Money taken off the price"], ["Tax", "Money paid to the government"]] },
     ],
     fill: [
       { sentence: "If you earn Rs 30,000 per month and spend Rs 25,000, you save Rs ___.", options: ["3,000", "5,000", "10,000", "25,000"], answer: "5,000", explanation: "30,000 minus 25,000 equals 5,000 rupees saved each month." },
       { sentence: "When catching a bus, you should wait at the ___.", options: ["bus stop", "traffic light", "roundabout", "car park"], answer: "bus stop", explanation: "Always wait at the designated bus stop where the bus will pull over safely." },
       { sentence: "In an emergency in Pakistan, you call ___.", options: ["999", "911", "1122", "100"], answer: "1122", explanation: "Rescue 1122 is the emergency number in Pakistan for ambulance and rescue." },
+      // Maths
+      { sentence: "If you save Rs 50,000 at 10% interest for 1 year, you earn Rs ___.", options: ["500", "5,000", "50,000", "55,000"], answer: "5,000", explanation: "10% of 50,000 = 5,000 rupees interest." },
+      { sentence: "A 20% discount on Rs 1,000 saves you Rs ___.", options: ["100", "200", "300", "400"], answer: "200", explanation: "20/100 x 1,000 = Rs 200 saved." },
+      // English
+      { sentence: "When writing an essay, you should always include ___.", options: ["evidence", "pictures", "jokes", "songs"], answer: "evidence", explanation: "Good essays use evidence from the text to support their points." },
+      // Psychology
+      { sentence: "Psychology is the study of the ___ and behaviour.", options: ["mind", "body", "world", "weather"], answer: "mind", explanation: "Psychology studies how people think, feel, and behave." },
+      // Biology
+      { sentence: "The ___ carries blood away from the heart.", options: ["vein", "artery", "capillary", "nerve"], answer: "artery", explanation: "Arteries carry blood away from the heart. Remember: A for Away." },
     ],
     truefalse: [
       { statement: "You should arrive on time for a job interview.", answer: true, explanation: "Being on time shows respect and that you are reliable." },
       { statement: "You can use someone else's bank card without asking.", answer: false, explanation: "Using someone else's card without permission is not allowed — always use your own." },
       { statement: "Reading food labels helps you know what you are eating.", answer: true, explanation: "Food labels tell you about ingredients, calories, and expiry dates." },
+      // Maths
+      { statement: "If something costs Rs 100 and tax is 10%, the total is Rs 110.", answer: true, explanation: "Rs 100 + 10% tax (Rs 10) = Rs 110 total." },
+      { statement: "50% off means you pay nothing.", answer: false, explanation: "50% off means you pay half the price, not zero." },
+      // Psychology
+      { statement: "Everyone's brain works differently.", answer: true, explanation: "No two brains are exactly alike — everyone has unique strengths." },
+      // Biology
+      { statement: "The heart pumps blood to the whole body.", answer: true, explanation: "The heart is a pump that sends blood to every part of your body." },
+      // English
+      { statement: "An essay should have a clear structure.", answer: true, explanation: "Introduction, body paragraphs, and conclusion keep writing organised." },
     ],
     picture: [
       { scenario: "You have a job interview tomorrow at a shop. You need to be there at 10 AM. The bus takes 30 minutes.", prompt: "What time should you leave? What should you wear? What might they ask you?" },
       { scenario: "You are at a train station for the first time. You need to buy a ticket, find the right platform, and get on the correct train.", prompt: "What steps do you take? Who can you ask for help if you are confused?" },
+      // Maths
+      { scenario: "You earn Rs 25,000 per month. Your expenses are: rent Rs 10,000, food Rs 5,000, transport Rs 3,000, phone Rs 2,000.", prompt: "How much can you save each month? What percentage of income is that?" },
     ],
   },
 
@@ -1436,20 +1642,48 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["Electrolysis", "Using electricity to decompose a compound"], ["Titration", "Finding concentration by neutralisation"], ["Chromatography", "Separating mixtures by solubility"], ["Distillation", "Separating by boiling points"]] },
       { pairs: [["Utilitarianism", "Greatest good for the greatest number"], ["Deontology", "Actions are right or wrong regardless of outcome"], ["Virtue ethics", "Focus on moral character"], ["Social contract", "People agree to rules for mutual benefit"]] },
+      // A-Level Maths
+      { pairs: [["Proof by contradiction", "Assume opposite, find impossibility"], ["Proof by induction", "Base case + inductive step"], ["Binomial theorem", "Expanding (a+b) to the n"], ["Partial fractions", "Breaking a fraction into simpler parts"]] },
+      // Biology
+      { pairs: [["Transcription", "DNA to mRNA in the nucleus"], ["Translation", "mRNA to protein at ribosome"], ["Replication", "DNA copying itself"], ["Mutation", "Change in base sequence"]] },
     ],
     fill: [
       { sentence: "The integral of 2x with respect to x is ___.", options: ["x²", "x² + C", "2x²", "2x² + C"], answer: "x² + C", explanation: "Integration reverses differentiation. The constant C accounts for unknowns." },
       { sentence: "In A-Level Biology, the lock-and-key model describes how ___ work.", options: ["enzymes", "hormones", "nerves", "muscles"], answer: "enzymes", explanation: "The enzyme's active site has a specific shape that fits only its substrate." },
       { sentence: "The Treaty of Westphalia (1648) established the principle of state ___.", options: ["sovereignty", "democracy", "federalism", "communism"], answer: "sovereignty", explanation: "Westphalia established that each state has authority over its own territory." },
+      // A-Level Maths
+      { sentence: "The binomial coefficient C(n,r) = n! / (r! times ___).", options: ["(n-r)!", "(n+r)!", "n!", "r!"], answer: "(n-r)!", explanation: "C(n,r) = n! / [r!(n-r)!] is the combinations formula." },
+      { sentence: "d/dx [ln(2x+1)] = ___.", options: ["1/(2x+1)", "2/(2x+1)", "2x+1", "1/2x"], answer: "2/(2x+1)", explanation: "Chain rule: 1/(2x+1) times 2 = 2/(2x+1)." },
+      // Economics
+      { sentence: "Price elasticity of demand measures how quantity demanded responds to a change in ___.", options: ["supply", "price", "income", "taste"], answer: "price", explanation: "PED = % change in quantity demanded / % change in price." },
+      // Psychology
+      { sentence: "Bandura's Bobo doll study demonstrated ___ learning.", options: ["classical", "operant", "observational", "cognitive"], answer: "observational", explanation: "Children imitated aggressive behaviour they observed in adults." },
+      // Biology
+      { sentence: "A codon is a sequence of ___ bases on mRNA.", options: ["2", "3", "4", "5"], answer: "3", explanation: "Each codon of 3 bases codes for one amino acid." },
+      // English
+      { sentence: "Post-colonial literature explores the effects of ___.", options: ["colonialism", "technology", "weather", "fashion"], answer: "colonialism", explanation: "Post-colonial texts examine cultural identity after colonial rule." },
     ],
     truefalse: [
       { statement: "In physics, work is defined as force multiplied by distance.", answer: true, explanation: "Work (joules) = Force (newtons) x Distance (metres) in the direction of force." },
       { statement: "All chemical reactions are reversible.", answer: false, explanation: "Some reactions, like combustion, are irreversible under normal conditions." },
       { statement: "Pakistan's 1973 Constitution is still the governing document today.", answer: true, explanation: "The 1973 Constitution, with amendments, remains in force." },
+      // A-Level Maths
+      { statement: "The area under a velocity-time graph gives displacement.", answer: true, explanation: "Integrating velocity with respect to time gives displacement." },
+      { statement: "All continuous functions are differentiable.", answer: false, explanation: "A function can be continuous but not differentiable (e.g., |x| at x=0)." },
+      // Economics
+      { statement: "Merit goods are under-provided by the free market.", answer: true, explanation: "Education and healthcare are merit goods — people undervalue their benefits." },
+      // Psychology
+      { statement: "The ego operates on the reality principle according to Freud.", answer: true, explanation: "The ego mediates between the id's desires and the real world." },
+      // Biology
+      { statement: "Semi-conservative replication means each new DNA molecule has one old and one new strand.", answer: true, explanation: "Meselson-Stahl proved DNA replication is semi-conservative." },
+      // English
+      { statement: "Feminist criticism examines gender representation in texts.", answer: true, explanation: "Feminist literary criticism analyses how texts portray and construct gender." },
     ],
     picture: [
       { scenario: "A-Level essay: 'To what extent was the partition of India in 1947 inevitable?' You have sources showing both political negotiation failures and grassroots communal tension.", prompt: "Plan a full essay: thesis statement, 3-4 analytical paragraphs, and a nuanced conclusion. Consider multiple perspectives." },
       { scenario: "You are given a graph showing the rate of reaction over time. The curve rises steeply at first, then levels off. Temperature was kept constant.", prompt: "Explain the shape of the curve. What is happening to reactant concentration? What would happen if you increased the temperature?" },
+      // A-Level Maths
+      { scenario: "Using proof by induction, prove that the sum of the first n natural numbers is n(n+1)/2.", prompt: "State the base case, the inductive hypothesis, and the inductive step clearly." },
     ],
   },
 
@@ -1458,20 +1692,46 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["Empiricism", "Knowledge comes from experience"], ["Rationalism", "Knowledge comes from reason"], ["Positivism", "Only observable facts are valid"], ["Relativism", "Truth depends on perspective"]] },
       { pairs: [["Fiscal policy", "Government spending and taxation"], ["Monetary policy", "Central bank controls money supply"], ["Quantitative easing", "Central bank creates new money"], ["Austerity", "Cutting government spending to reduce debt"]] },
+      // A-Level Maths
+      { pairs: [["Arithmetic sequence", "Constant difference between terms"], ["Geometric sequence", "Constant ratio between terms"], ["Convergent series", "Sum approaches a finite value"], ["Divergent series", "Sum grows without bound"]] },
     ],
     fill: [
       { sentence: "In economics, a public good is non-excludable and non-___.", options: ["rival", "profitable", "legal", "taxable"], answer: "rival", explanation: "Public goods like street lighting can be used by many without reducing availability." },
       { sentence: "The process by which mRNA is made from DNA is called ___.", options: ["translation", "transcription", "replication", "mutation"], answer: "transcription", explanation: "Transcription copies DNA into mRNA in the nucleus." },
       { sentence: "In philosophy, an argument is valid when the conclusion ___ follows from the premises.", options: ["logically", "emotionally", "always", "sometimes"], answer: "logically", explanation: "Validity means if the premises are true, the conclusion must be true." },
+      // A-Level Maths
+      { sentence: "The 10th term of the arithmetic sequence 3, 7, 11, 15... is ___.", options: ["39", "43", "47", "51"], answer: "39", explanation: "a = 3, d = 4. T10 = 3 + (10-1) times 4 = 3 + 36 = 39." },
+      { sentence: "If dy/dx = 0 and the second derivative is positive, the point is a ___.", options: ["maximum", "minimum", "inflection", "saddle"], answer: "minimum", explanation: "Positive second derivative means the curve is concave up — a minimum." },
+      // Economics
+      { sentence: "A progressive tax takes a larger percentage from ___.", options: ["lower incomes", "higher incomes", "everyone equally", "businesses only"], answer: "higher incomes", explanation: "Progressive taxation means higher earners pay a larger proportion." },
+      // Psychology
+      { sentence: "Cognitive Behavioural Therapy aims to change unhelpful ___.", options: ["thoughts", "genes", "reflexes", "hormones"], answer: "thoughts", explanation: "CBT helps people identify and change negative thinking patterns." },
+      // Biology
+      { sentence: "The part of the brain responsible for balance is the ___.", options: ["cerebrum", "cerebellum", "medulla", "hypothalamus"], answer: "cerebellum", explanation: "The cerebellum coordinates movement and balance." },
+      // English
+      { sentence: "The narrative voice in a novel determines whose ___ the story is told from.", options: ["perspective", "language", "age", "country"], answer: "perspective", explanation: "First person, third person limited, or omniscient — each shapes meaning." },
     ],
     truefalse: [
       { statement: "Correlation always implies causation.", answer: false, explanation: "Two things can be correlated without one causing the other — a fundamental principle in research." },
       { statement: "In Pakistan, the Senate represents the provinces equally.", answer: true, explanation: "Each province has equal representation in the Senate regardless of population." },
       { statement: "An exothermic reaction releases energy to the surroundings.", answer: true, explanation: "Exothermic reactions give out heat — like combustion or neutralisation." },
+      // A-Level Maths
+      { statement: "The derivative of a constant is zero.", answer: true, explanation: "Constants do not change, so their rate of change is zero." },
+      { statement: "Integration always requires the +C constant.", answer: false, explanation: "Only indefinite integrals need +C. Definite integrals have limits and give a number." },
+      // Economics
+      { statement: "A trade deficit means a country imports more than it exports.", answer: true, explanation: "When imports exceed exports, the balance of trade is negative — a deficit." },
+      // Psychology
+      { statement: "Loftus and Palmer showed that leading questions can distort memory.", answer: true, explanation: "The wording of questions affected participants' memory of a car crash." },
+      // Biology
+      { statement: "Hormones travel through the bloodstream.", answer: true, explanation: "Hormones are chemical messengers transported via the blood to target organs." },
+      // English
+      { statement: "A soliloquy in drama is when a character speaks their thoughts aloud alone on stage.", answer: true, explanation: "Soliloquies reveal inner thoughts directly to the audience." },
     ],
     picture: [
       { scenario: "Consider this ethical dilemma: A self-driving car must choose between hitting one person or swerving into five people. There is no safe option.", prompt: "Analyse this using two ethical frameworks (e.g., utilitarianism vs deontology). What would each approach suggest? What is your own view?" },
       { scenario: "You are revising the topic of natural selection. Explain the full process to someone who has never studied biology.", prompt: "Walk through it step by step: variation, competition, survival, reproduction, and inheritance. Use a real-world example." },
+      // A-Level Maths
+      { scenario: "A ball is thrown upward with velocity v = 30 - 10t m/s. Find the maximum height reached.", prompt: "Integrate to find displacement. The ball reaches maximum height when v = 0." },
     ],
   },
 
@@ -1480,20 +1740,45 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["Covalent bond", "Atoms share electrons"], ["Ionic bond", "Electrons are transferred"], ["Metallic bond", "Electrons delocalised in a sea"], ["Hydrogen bond", "Weak attraction between polar molecules"]] },
       { pairs: [["Functionalism", "Society works like a body — each part has a role"], ["Marxism", "Society is shaped by class conflict"], ["Feminism", "Focus on gender inequality"], ["Interactionism", "Society is built through daily interactions"]] },
+      // A-Level Maths
+      { pairs: [["Scalar", "Has magnitude only"], ["Vector", "Has magnitude and direction"], ["Unit vector", "Magnitude of exactly 1"], ["Position vector", "Points from origin to a point"]] },
     ],
     fill: [
       { sentence: "In a covalent bond, atoms ___ electrons.", options: ["share", "transfer", "destroy", "absorb"], answer: "share", explanation: "Covalent bonding involves the sharing of electron pairs between atoms." },
       { sentence: "The standard form of 0.00045 is ___.", options: ["4.5 x 10⁻⁴", "45 x 10⁻⁴", "4.5 x 10⁴", "0.45 x 10⁻³"], answer: "4.5 x 10⁻⁴", explanation: "Move the decimal point 4 places to the right to get 4.5, so the power is -4." },
       { sentence: "In sociology, Durkheim studied the role of ___ in maintaining social order.", options: ["religion", "technology", "media", "sport"], answer: "religion", explanation: "Durkheim argued that religion creates shared values and social cohesion." },
+      // A-Level Maths
+      { sentence: "The magnitude of vector (3, 4) is ___.", options: ["5", "7", "12", "25"], answer: "5", explanation: "Square root of (3 squared + 4 squared) = square root of 25 = 5." },
+      { sentence: "The equation of a circle with centre (0,0) and radius 5 is x² + y² = ___.", options: ["5", "10", "25", "50"], answer: "25", explanation: "x² + y² = r². When r = 5, r² = 25." },
+      // Economics
+      { sentence: "Market failure occurs when resources are not allocated ___.", options: ["efficiently", "quickly", "slowly", "privately"], answer: "efficiently", explanation: "Market failure means the free market does not achieve optimal allocation." },
+      // Psychology
+      { sentence: "Pavlov's dog experiment is an example of ___ conditioning.", options: ["classical", "operant", "observational", "social"], answer: "classical", explanation: "The dog learned to associate the bell with food — classical conditioning." },
+      // Biology
+      { sentence: "Haemoglobin carries ___ in red blood cells.", options: ["glucose", "oxygen", "carbon dioxide", "water"], answer: "oxygen", explanation: "Haemoglobin binds to oxygen in the lungs and releases it in tissues." },
+      // English
+      { sentence: "Dramatic irony occurs when the audience knows something the ___ does not.", options: ["character", "author", "publisher", "teacher"], answer: "character", explanation: "This creates tension and engagement as the audience anticipates events." },
     ],
     truefalse: [
       { statement: "Diamond and graphite are both forms of carbon.", answer: true, explanation: "They are allotropes of carbon — same element, different structures." },
       { statement: "In statistics, a Type I error means accepting a false hypothesis.", answer: false, explanation: "Type I error means rejecting a true null hypothesis (false positive)." },
       { statement: "The Pakistan Movement was led by the All-India Muslim League.", answer: true, explanation: "The Muslim League, under Jinnah's leadership, led the movement for a separate Muslim state." },
+      // A-Level Maths
+      { statement: "Two perpendicular lines have gradients whose product is -1.", answer: true, explanation: "If m1 times m2 = -1, the lines are perpendicular." },
+      // Economics
+      { statement: "Subsidies are payments from the government to producers.", answer: true, explanation: "Subsidies lower costs for producers and can reduce prices for consumers." },
+      // Psychology
+      { statement: "A case study examines one individual in great detail.", answer: true, explanation: "Case studies provide rich, in-depth data about a single person or group." },
+      // Biology
+      { statement: "Antibodies are produced by white blood cells.", answer: true, explanation: "B-lymphocytes produce antibodies as part of the immune response." },
+      // English
+      { statement: "A motif is a recurring element that supports the theme.", answer: true, explanation: "Motifs appear repeatedly to reinforce the central themes of a text." },
     ],
     picture: [
       { scenario: "You are writing an A-Level essay: 'Assess the view that education serves the interests of the ruling class.' You have Marxist, functionalist, and feminist perspectives.", prompt: "Write a detailed essay plan with an introduction, three analytical paragraphs (one per perspective), and a balanced conclusion." },
       { scenario: "You are given data: Group A (taught with visual aids) scored an average of 72%. Group B (taught without) scored 65%. Sample size: 30 per group.", prompt: "Is this a significant difference? Discuss sample size, variables that need controlling, and what statistical test you might use." },
+      // A-Level Maths
+      { scenario: "Points A(1,2) and B(5,6) are the endpoints of a diameter of a circle.", prompt: "Find the centre of the circle, the radius, and write the equation of the circle." },
     ],
   },
 
@@ -1502,20 +1787,46 @@ const SEN_EXERCISES = {
     match: [
       { pairs: [["Globalisation", "Increasing worldwide interconnection"], ["Sustainability", "Meeting needs without harming the future"], ["Sovereignty", "Supreme authority within a territory"], ["Diplomacy", "Managing international relations peacefully"]] },
       { pairs: [["Hypothesis", "Testable prediction"], ["Variable", "Factor that can change"], ["Control group", "Group with no treatment for comparison"], ["Reliability", "Consistency of results when repeated"]] },
+      // A-Level Maths
+      { pairs: [["Iteration", "Repeating a process to get closer to answer"], ["Trapezium rule", "Estimating area using trapezoids"], ["Newton-Raphson", "Finding roots by tangent lines"], ["Recurrence relation", "Each term defined by previous terms"]] },
     ],
     fill: [
       { sentence: "CPEC stands for China-Pakistan ___ Corridor.", options: ["Economic", "Education", "Energy", "Export"], answer: "Economic", explanation: "The China-Pakistan Economic Corridor is a major infrastructure project." },
       { sentence: "The pH scale ranges from 0 to ___.", options: ["7", "10", "14", "100"], answer: "14", explanation: "0 is strongly acidic, 7 is neutral, and 14 is strongly alkaline." },
       { sentence: "A hypothesis must be ___.", options: ["testable", "correct", "complex", "published"], answer: "testable", explanation: "A good hypothesis can be tested through experimentation or observation." },
+      // A-Level Maths
+      { sentence: "The trapezium rule uses ___ to estimate area under a curve.", options: ["rectangles", "triangles", "trapezoids", "circles"], answer: "trapezoids", explanation: "The trapezium rule divides area into trapezoids for numerical integration." },
+      { sentence: "cos²(x) + sin²(x) = ___.", options: ["0", "1", "2", "x"], answer: "1", explanation: "This is the Pythagorean identity — it holds for all values of x." },
+      // Economics
+      { sentence: "The law of demand states that as price rises, quantity demanded ___.", options: ["rises", "falls", "stays same", "doubles"], answer: "falls", explanation: "Higher prices lead to lower demand — this is the law of demand." },
+      // Psychology
+      { sentence: "Nature vs nurture asks whether behaviour is caused by ___ or environment.", options: ["genes", "friends", "food", "luck"], answer: "genes", explanation: "The nature-nurture debate examines genetic vs environmental influences." },
+      // Biology
+      { sentence: "The process of cell division that produces gametes is ___.", options: ["mitosis", "meiosis", "binary fission", "budding"], answer: "meiosis", explanation: "Meiosis produces sex cells (gametes) with half the chromosome number." },
+      // English
+      { sentence: "Intertextuality means one text references or relates to ___.", options: ["another text", "its author", "the reader", "the publisher"], answer: "another text", explanation: "Texts often allude to, quote, or respond to other works of literature." },
     ],
     truefalse: [
       { statement: "Pakistan is a member of the United Nations.", answer: true, explanation: "Pakistan joined the UN on 30 September 1947, shortly after independence." },
       { statement: "In a scientific experiment, you can change multiple variables at once.", answer: false, explanation: "You should only change one variable at a time to identify cause and effect." },
       { statement: "Critical thinking involves questioning evidence before accepting claims.", answer: true, explanation: "Critical thinking means evaluating evidence, logic, and assumptions carefully." },
+      // A-Level Maths
+      { statement: "Radians and degrees are two ways to measure angles.", answer: true, explanation: "360 degrees = 2 pi radians. Both measure angles but radians are used more in calculus." },
+      { statement: "The function y = 1/x is defined at x = 0.", answer: false, explanation: "Division by zero is undefined. y = 1/x has an asymptote at x = 0." },
+      // Economics
+      { statement: "Free trade means no tariffs or quotas on imports.", answer: true, explanation: "Free trade removes barriers like tariffs, allowing goods to flow freely." },
+      // Psychology
+      { statement: "A double-blind study means neither participants nor researchers know who is in which group.", answer: true, explanation: "This reduces bias from both participants and researchers." },
+      // Biology
+      { statement: "All organisms are made of cells.", answer: true, explanation: "Cell theory states that all living things are composed of cells." },
+      // English
+      { statement: "Critical evaluation requires you to assess strengths and weaknesses of arguments.", answer: true, explanation: "Evaluation means weighing up evidence and making a judgement." },
     ],
     picture: [
       { scenario: "You are preparing for a university interview. The interviewer asks: 'What is the biggest challenge facing Pakistan in the next decade, and how would you address it?'", prompt: "Give a structured answer: identify the challenge, explain why it matters, and propose two realistic solutions with evidence." },
       { scenario: "You read two articles: one says social media improves access to information; the other says it spreads misinformation and harms mental health.", prompt: "Evaluate both arguments. What evidence supports each? Can both be true? What is your balanced conclusion?" },
+      // A-Level Maths
+      { scenario: "Use the Newton-Raphson method to find a root of x cubed - 2x - 5 = 0, starting with x0 = 2.", prompt: "Perform two iterations. Show the formula and your calculations." },
     ],
   },
 };
