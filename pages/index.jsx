@@ -496,7 +496,7 @@ export default function Home() {
         .nr{display:flex;align-items:center;gap:8px}
         .np{background:linear-gradient(135deg,#4F8EF7,#7C5CBF);color:#fff;border:none;padding:8px 18px;border-radius:100px;font-size:14px;font-weight:700;font-family:'Sora',sans-serif;cursor:pointer;text-decoration:none;white-space:nowrap}
         .nh{background:rgba(255,255,255,.07);border:none;color:#fff;width:38px;height:38px;border-radius:8px;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center}
-        .dr{position:fixed;top:56px;left:0;right:0;bottom:0;background:rgba(8,12,24,.98);z-index:99;padding:20px}
+        .dr{position:fixed;top:56px;left:0;right:0;bottom:0;background:rgba(8,12,24,.98);z-index:99;padding:20px;padding-bottom:calc(20px + env(safe-area-inset-bottom,0));overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
         .dr a{display:block;padding:16px;border-bottom:1px solid rgba(255,255,255,.05);color:rgba(255,255,255,.8);text-decoration:none;font-size:17px;font-weight:500}
         .hero{padding:40px 20px 32px;text-align:center;background:radial-gradient(ellipse 80% 40% at 50% 0%,rgba(79,142,247,.1) 0%,transparent 70%)}
         .hb{display:inline-flex;align-items:center;gap:6px;background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.22);border-radius:100px;padding:5px 14px;font-size:12px;color:#4F8EF7;font-weight:600;letter-spacing:.05em;margin-bottom:18px;text-transform:uppercase}
@@ -687,11 +687,11 @@ export default function Home() {
         <div className="nr">
           <a href="/pricing" className="np">Plans</a>
           <button className="nh" onClick={toggleTheme} aria-label="Toggle light/dark mode" title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}>{theme === 'dark' ? '☀️' : '🌙'}</button>
-          <button className="nh" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen?'✕':'☰'}</button>
+          <button className="nh" onClick={() => { const next = !menuOpen; setMenuOpen(next); document.body.style.overflow = next ? 'hidden' : ''; }}>{menuOpen?'✕':'☰'}</button>
         </div>
       </nav>
       {menuOpen && (
-        <div className="dr" onClick={() => setMenuOpen(false)}>
+        <div className="dr" onClick={() => { setMenuOpen(false); document.body.style.overflow = ''; }}>
           <a href="/" style={{fontWeight:700,borderBottom:'1px solid rgba(255,255,255,0.1)'}}>🏠 Home</a>
           <div style={{padding:'14px 16px 4px',fontSize:11,fontWeight:800,letterSpacing:'0.08em',textTransform:'uppercase',color:'rgba(255,255,255,0.3)'}}>Learn</div>
           <a href="/drill">🎯 Practice Drill</a>

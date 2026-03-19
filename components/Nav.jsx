@@ -43,6 +43,11 @@ const MENU_GROUPS = [
 
 export default function Nav({ current, accent }) {
   const [open, setOpen] = useState(false);
+  const toggleMenu = (val) => {
+    const next = val !== undefined ? val : !open;
+    setOpen(next);
+    if (typeof document !== 'undefined') document.body.style.overflow = next ? 'hidden' : '';
+  };
   const { theme, toggleTheme } = useTheme();
   const color = accent || '#4F8EF7';
 
@@ -75,8 +80,10 @@ export default function Nav({ current, accent }) {
         }
         .nw-nav-menu {
           position: fixed; top: 52px; left: 0; right: 0; bottom: 0;
-          background: rgba(8,12,24,0.98); z-index: 99; padding: 12px 16px;
+          background: rgba(8,12,24,0.98); z-index: 99;
+          padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0));
           overflow-y: auto; -webkit-overflow-scrolling: touch;
+          overscroll-behavior: contain;
         }
         .nw-nav-group-title {
           font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
@@ -115,14 +122,14 @@ export default function Nav({ current, accent }) {
             {theme === 'dark' ? '☀️' : '🌙'}
           </button>
           <Link href="/pricing"><a className="nw-nav-plans">Plans</a></Link>
-          <button className="nw-nav-burger" onClick={() => setOpen(!open)} aria-label="Menu">
+          <button className="nw-nav-burger" onClick={() => toggleMenu()} aria-label="Menu">
             {open ? '✕' : '☰'}
           </button>
         </div>
       </nav>
 
       {open && (
-        <div className="nw-nav-menu" onClick={() => setOpen(false)}>
+        <div className="nw-nav-menu" onClick={() => toggleMenu(false)}>
           <Link href="/"><a className="nw-nav-home">🏠 Home</a></Link>
           {MENU_GROUPS.map(group => (
             <div key={group.title}>
