@@ -504,7 +504,7 @@ const STAGES = [
     color:"#A8E063",
     desc:"First steps in learning — play-based, sensory, joyful. Every milestone celebrated.",
     curriculum:"Early Years Foundation Stage / KG curriculum",
-    subjects:["Early Literacy","Early Numeracy","Communication","Sensory Play","Social Skills","Fine Motor Skills","Phonics Foundations","Shape & Colour"],
+    subjects:["Early Literacy","Early Numeracy","Urdu","Communication","Nazra Quran","Sensory Play","Social Skills","Fine Motor Skills","Phonics Foundations","Shape & Colour"],
   },
   {
     id:"primary", emoji:"🌿", name:"Primary",
@@ -512,7 +512,7 @@ const STAGES = [
     color:"#63D2FF",
     desc:"Building foundations — reading, writing, maths, and discovering the world.",
     curriculum:"Primary National Curriculum / Elementary",
-    subjects:["English & Reading","Maths","Science","Writing","Spelling","Times Tables","History","Geography","Art","Computing"],
+    subjects:["English & Reading","Maths","Urdu","Science","Islamiat","Nazra Quran","Writing","Spelling","Times Tables","Pakistan Studies","General Knowledge","Art","Computing"],
   },
   {
     id:"secondary", emoji:"🌳", name:"Secondary",
@@ -520,7 +520,7 @@ const STAGES = [
     color:"#FFC300",
     desc:"Navigating complexity — exams, identity, and finding their place in the world.",
     curriculum:"GCSE / O-Level / Middle & High School",
-    subjects:["English Literature","English Language","Maths","Biology","Chemistry","Physics","History","Geography","ICT","Business","Religious Studies","Art & Design"],
+    subjects:["English Language","Urdu","Maths","Biology","Chemistry","Physics","Pakistan Studies","Islamiat","Computer Science","History","Geography","Economics","Business","Art & Design"],
   },
   {
     id:"sixthform", emoji:"🎓", name:"Sixth Form & College",

@@ -15,10 +15,14 @@ const GRADES = [
 const SUBJECTS = [
   { id: "maths",    label: "➕ Maths",             color: "#FF6B6B" },
   { id: "english",  label: "📖 English",            color: "#63D2FF" },
-  { id: "science",  label: "🔬 Science",            color: "#A8E063" },
   { id: "urdu",     label: "اردو Urdu",             color: "#FFC300" },
+  { id: "science",  label: "🔬 Science",            color: "#A8E063" },
   { id: "islamiat", label: "☪️ Islamiat",           color: "#4ECDC4" },
+  { id: "quran",    label: "📖 Nazra Quran",        color: "#2BB55A" },
   { id: "gk",       label: "🌍 General Knowledge",  color: "#C77DFF" },
+  { id: "socialst", label: "🏛️ Social Studies",     color: "#4F8EF7" },
+  { id: "sindhi",   label: "سنڌي Sindhi",           color: "#F59E0B" },
+  { id: "pashto",   label: "پښتو Pashto",           color: "#F97316" },
   { id: "craft",    label: "🎨 Art & Craft",        color: "#FF8E53" },
   { id: "other",    label: "📚 Other",              color: "#888" },
 ];

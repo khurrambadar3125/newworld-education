@@ -90,7 +90,7 @@ const GRADES_YOUNG = [
   { id:'grade9', label:'Grade 9',      age:'13–14',emoji:'🎯', color:'#34D399' },
 ];
 
-const SUBJECTS_YOUNG = ['Maths','English','Science','Urdu','Islamiat','General Knowledge','Computer','Social Studies'];
+const SUBJECTS_YOUNG = ['Maths','English','Urdu','Science','Islamiat','Nazra Quran','General Knowledge','Social Studies','Computer','Sindhi','Pashto'];
 
 const TOPICS_YOUNG = {
   'Maths':             ['Numbers & Counting','Addition & Subtraction','Multiplication & Division','Fractions','Decimals','Geometry & Shapes','Measurement','Time & Calendar','Algebra Basics','Word Problems'],

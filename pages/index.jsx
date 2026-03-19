@@ -30,9 +30,17 @@ const GRADE_GROUPS = [
 const GRADES = GRADE_GROUPS.flatMap(g => g.grades);
 
 // Subject lists per grade band
-const SUBJECTS_PRIMARY = ['Maths', 'English', 'Urdu', 'Science', 'Islamiat', 'General Knowledge'];
-const SUBJECTS_MIDDLE = ['Maths', 'English', 'Urdu', 'Science', 'Pakistan Studies', 'Islamiat', 'Computer', 'Social Studies'];
-const SUBJECTS_MATRIC = ['Maths', 'Physics', 'Chemistry', 'Biology', 'English', 'Urdu', 'Pakistan Studies', 'Islamiat', 'Computer Science'];
+// SNC (Single National Curriculum 2020) + Provincial Board subjects — Pakistan
+const SUBJECTS_PRIMARY = ['Maths', 'English', 'Urdu', 'Science', 'Islamiat', 'Nazra Quran', 'General Knowledge', 'Social Studies', 'Drawing / Art', 'Sindhi', 'Pashto'];
+const SUBJECTS_MIDDLE = ['Maths', 'English', 'Urdu', 'Science', 'Pakistan Studies', 'Islamiat', 'Nazra Quran', 'Computer', 'Social Studies', 'Arabic', 'Home Economics', 'Drawing / Art', 'Sindhi', 'Pashto'];
+const SUBJECTS_MATRIC = [
+  // Science group
+  'Maths', 'Physics', 'Chemistry', 'Biology', 'English', 'Urdu', 'Pakistan Studies', 'Islamiat', 'Computer Science',
+  // Arts / General group
+  'General Maths', 'General Science', 'Civics', 'Economics', 'Education', 'Arabic', 'Home Economics',
+  // Provincial
+  'Sindhi', 'Pashto',
+];
 const SUBJECTS_GENERAL = SUBJECTS_MATRIC;
 
 // O Level specific subjects
