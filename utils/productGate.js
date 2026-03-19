@@ -15,6 +15,7 @@
  */
 
 import { useState, useEffect, useCallback } from 'react';
+import { isExemptEmail } from './useSessionLimit';
 
 const FREE_DAILY_ROUNDS = 5;
 const TRIAL_DAYS = 7;
@@ -70,24 +71,24 @@ export function useProductGate(productId) {
   useEffect(() => {
     let gate = readGate(productId);
     if (!gate) {
-      // First time — start trial
       gate = { trialStart: new Date().toISOString(), paid: false, daily: {} };
       writeGate(productId, gate);
     }
 
-    // Check if paid via nw_user profile
+    // Check if exempt (founder/family) or paid
+    let exempt = false;
     try {
       const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+      if (isExemptEmail(profile.email)) exempt = true;
       if (profile[`${productId}_paid`] || profile.plan === productId || profile.subscriptionActive) {
         gate.paid = true;
       }
     } catch {}
 
-    // Get today's usage
     const today = new Date().toISOString().split('T')[0];
     const todayRounds = gate.daily?.[today] || 0;
 
-    setState({ roundsUsed: todayRounds, trialStart: gate.trialStart, paid: gate.paid });
+    setState({ roundsUsed: todayRounds, trialStart: gate.trialStart, paid: gate.paid || exempt });
   }, [productId]);
 
   const trialStart = state.trialStart ? new Date(state.trialStart) : new Date();
