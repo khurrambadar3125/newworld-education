@@ -808,7 +808,7 @@ export default function LanguagesPage() {
   function BNav() {
     const tabs = [['learn', '\u{1F5FA}️', 'Journey'], ['chat', '\u{1F4AC}', 'Chat'], ['phrases', '\u{1F4D6}', 'Phrases'], ['profile', '\u{1F4CA}', 'Progress']];
     return (
-      <div style={{ display: 'flex', background: T.n0, borderTop: `1.5px solid ${T.n100}`, flexShrink: 0, paddingBottom: 'env(safe-area-inset-bottom, 0)' }}>
+      <div style={{ display: 'flex', background: T.n0, borderTop: `1.5px solid ${T.n100}`, flexShrink: 0, paddingBottom: 'env(safe-area-inset-bottom, 0)', zIndex: 50 }}>
         {tabs.map(t => {
           const active = tab === t[0];
           return (
@@ -841,7 +841,7 @@ export default function LanguagesPage() {
       ['\u{1F5FA}️', 'Destination-first', 'Tell us where you\'re going — content adapts to your goal'],
     ];
     return (
-      <div style={{ flex: 1, overflowY: 'auto', background: `linear-gradient(180deg, ${T.n50} 0%, ${T.n0} 40%)`, animation: 'slideUp .3s ease both' }}>
+      <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch', background: `linear-gradient(180deg, ${T.n50} 0%, ${T.n0} 40%)`, animation: 'slideUp .3s ease both' }}>
         <div style={{ padding: '32px 24px 24px', textAlign: 'center', borderBottom: `1.5px solid ${T.n100}` }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, marginBottom: 28 }}>
             <CompassSVG sz={34} />
@@ -862,9 +862,9 @@ export default function LanguagesPage() {
             </div>
           ))}
         </div>
-        <div style={{ padding: '14px 22px 40px', display: 'flex', flexDirection: 'column', gap: 10 }}>
+        <div style={{ padding: '14px 22px 100px', display: 'flex', flexDirection: 'column', gap: 10 }}>
           <button onClick={() => go('test')} style={sBtnPrimary}>Take placement test</button>
-          <button onClick={() => go('dest')} style={sBtnSecondary}>Choose destination u2192</button>
+          <button onClick={() => go('dest')} style={sBtnSecondary}>Choose destination →</button>
           <button onClick={handleShowEmergency} style={{ background: T.redL, color: T.red, border: `2px solid ${T.red}`, borderRadius: 16, padding: 12, fontSize: 13, fontWeight: 800, cursor: 'pointer', width: '100%', fontFamily: T.f }}>{'\u{1F198}'} Emergency phrases — trip in 24 hours?</button>
         </div>
       </div>
@@ -877,13 +877,13 @@ export default function LanguagesPage() {
     return (
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', animation: 'slideUp .3s ease both' }}>
         <div style={{ padding: '14px 16px', display: 'flex', alignItems: 'center', gap: 12, borderBottom: `1.5px solid ${T.n100}`, background: T.redL, flexShrink: 0 }}>
-          <button onClick={hideEmergency} style={{ width: 32, height: 32, borderRadius: '50%', background: T.redL, border: `1.5px solid ${T.red}`, fontSize: 14, color: T.red, cursor: 'pointer', fontFamily: T.f }}>u2715</button>
+          <button onClick={hideEmergency} style={{ width: 32, height: 32, borderRadius: '50%', background: T.redL, border: `1.5px solid ${T.red}`, fontSize: 14, color: T.red, cursor: 'pointer', fontFamily: T.f }}>✕</button>
           <div>
             <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.red }}>{'\u{1F198}'} Emergency Phrases</div>
             <p style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.red }}>{langData.name} survival kit — tap {'\u{1F50A}'} to hear any phrase</p>
           </div>
         </div>
-        <div style={{ flex: 1, overflowY: 'auto', padding: '14px 14px' }}>
+        <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch', padding: '14px 14px' }}>
           {cats.map(cat => {
             const phrases = langData.emergency.filter(e => e.cat === cat);
             if (!phrases.length) return null;
@@ -905,7 +905,7 @@ export default function LanguagesPage() {
           })}
         </div>
         <div style={{ padding: 14, borderTop: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
-          <button onClick={hideEmergency} style={sBtnRed}>Done u2014 back to learning</button>
+          <button onClick={hideEmergency} style={sBtnRed}>Done — back to learning</button>
         </div>
       </div>
     );
@@ -913,7 +913,7 @@ export default function LanguagesPage() {
 
   function DestScreen() {
     return (
-      <div style={{ flex: 1, overflowY: 'auto', animation: 'slideUp .3s ease both' }}>
+      <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch', animation: 'slideUp .3s ease both' }}>
         <div style={{ padding: '24px 20px 16px' }}>
           <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.n300, marginBottom: 6 }}>Choose your destination</div>
           <h2 style={{ fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: T.n700, marginBottom: 4 }}>Where are you headed?</h2>
@@ -958,7 +958,7 @@ export default function LanguagesPage() {
                   'Ready for advanced scenarios. Focus is on fluency and natural expression.'}
             </p>
           </div>
-          <button onClick={doneTest} style={sBtnPrimary}>Start my journey u2192</button>
+          <button onClick={doneTest} style={sBtnPrimary}>Start my journey →</button>
         </div>
       );
     }
@@ -983,7 +983,7 @@ export default function LanguagesPage() {
         {chk ? (
           <div style={{ padding: '20px 20px 16px', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0, animation: 'slideUpPanel .25s cubic-bezier(.4,0,.2,1) both' }}>
             <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: 10 }}>{ok ? '✓ Correct!' : '✗ Answer: ' + q.ans}</div>
-            <button onClick={nextTestQ} style={ok ? sBtnGreen : sBtnRed}>Continue u2192</button>
+            <button onClick={nextTestQ} style={ok ? sBtnGreen : sBtnRed}>Continue →</button>
           </div>
         ) : (
           <div style={{ padding: '14px 20px', borderTop: `1.5px solid ${T.n100}` }}>
@@ -1001,9 +1001,9 @@ export default function LanguagesPage() {
       ['\u{1F525}', 'Deep dive', '25–40 min — fastest path to fluency', false],
     ];
     return (
-      <div style={{ flex: 1, overflowY: 'auto', animation: 'slideUp .3s ease both' }}>
+      <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch', animation: 'slideUp .3s ease both' }}>
         <div style={{ padding: '28px 20px 16px' }}>
-          <div style={{ fontSize: 44, marginBottom: 12 }}>u23F1uFE0F</div>
+          <div style={{ fontSize: 44, marginBottom: 12 }}>⏱️</div>
           <h2 style={{ fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: T.n700, marginBottom: 4 }}>How much time daily?</h2>
           <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>Science shows 20 min daily beats 3 hrs on weekends by 3×.</p>
         </div>
@@ -1029,7 +1029,7 @@ export default function LanguagesPage() {
     const done = sc.filter(s => s.done).length;
     const pos = ['r', 'c', 'l', 'c', 'r', 'c', 'l'];
     return (
-      <div style={{ flex: 1, overflowY: 'auto', background: T.n50 }}>
+      <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch', background: T.n50 }}>
         <TopBar />
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '10px 16px', background: T.n0, borderBottom: `1.5px solid ${T.n100}` }}>
           <span style={{ fontSize: 24 }}>{dest.flag}</span>
@@ -1248,12 +1248,12 @@ export default function LanguagesPage() {
         ) : (
           <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.greenD, marginBottom: 10 }}>Momentum +3% · Keep it up!</p>
         )}
-        <button onClick={nextQ} style={ok ? sBtnGreen : sBtnRed}>Continue u2192</button>
+        <button onClick={nextQ} style={ok ? sBtnGreen : sBtnRed}>Continue →</button>
       </div>
     ) : (
       <div style={{ padding: '14px 18px', borderTop: `1.5px solid ${T.n100}` }}>
         {ex.type === 'match' && rdy ? (
-          <button onClick={nextQ} style={sBtnPrimary}>Continue u2192</button>
+          <button onClick={nextQ} style={sBtnPrimary}>Continue →</button>
         ) : ex.type !== 'match' ? (
           <button onClick={checkEx2} style={rdy ? sBtnPrimary : sBtnDisabled} disabled={!rdy}>Check answer</button>
         ) : (
@@ -1265,7 +1265,7 @@ export default function LanguagesPage() {
     return (
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', background: T.n0, animation: shk ? 'shake .5s ease' : 'slideUp .3s ease' }}>
         <div style={{ padding: '11px 16px', display: 'flex', alignItems: 'center', gap: 12, borderBottom: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
-          <button onClick={closeEx} style={{ width: 30, height: 30, borderRadius: '50%', background: T.n50, border: `1.5px solid ${T.n200}`, fontSize: 13, color: T.n400, cursor: 'pointer', fontFamily: T.f }}>u2715</button>
+          <button onClick={closeEx} style={{ width: 30, height: 30, borderRadius: '50%', background: T.n50, border: `1.5px solid ${T.n200}`, fontSize: 13, color: T.n400, cursor: 'pointer', fontFamily: T.f }}>✕</button>
           <div style={{ flex: 1 }}><ProgressBar value={prog} max={1} height={8} /></div>
           <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400 }}>{exIdx}/{exs.length}</div>
         </div>
@@ -1357,7 +1357,7 @@ export default function LanguagesPage() {
     if (!ld || !dest) return null;
     const convos = ld.convos || [];
     return (
-      <div style={{ flex: 1, overflowY: 'auto', background: T.n50 }}>
+      <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch', background: T.n50 }}>
         <TopBar />
         <div style={{ padding: '16px 16px 12px', background: T.n0, borderBottom: `1.5px solid ${T.n100}` }}>
           <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.n300, marginBottom: 4 }}>Conversation practice</div>
@@ -1424,7 +1424,7 @@ export default function LanguagesPage() {
     return (
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', background: T.n0 }}>
         <div style={{ padding: '11px 16px', display: 'flex', alignItems: 'center', gap: 12, borderBottom: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
-          <button onClick={endConvo} style={{ width: 30, height: 30, borderRadius: '50%', background: T.n50, border: `1.5px solid ${T.n200}`, fontSize: 13, color: T.n400, cursor: 'pointer', fontFamily: T.f }}>u2715</button>
+          <button onClick={endConvo} style={{ width: 30, height: 30, borderRadius: '50%', background: T.n50, border: `1.5px solid ${T.n200}`, fontSize: 13, color: T.n400, cursor: 'pointer', fontFamily: T.f }}>✕</button>
           <div style={{ flex: 1 }}><ProgressBar value={convIdx} max={convo.turns.length} height={7} /></div>
           <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400 }}>{convIdx}/{convo.turns.length}</div>
         </div>
@@ -1474,7 +1474,7 @@ export default function LanguagesPage() {
     const cc = [T.red, T.amber, T.amber, T.green];
     const cl = ['Shaky', 'Learning', 'Good', 'Solid'];
     return (
-      <div style={{ flex: 1, overflowY: 'auto', background: T.n50 }}>
+      <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch', background: T.n50 }}>
         <TopBar />
         <div style={{ padding: '14px 16px 12px', background: T.n0, borderBottom: `1.5px solid ${T.n100}`, display: 'flex', alignItems: 'center' }}>
           <div style={{ flex: 1 }}>
@@ -1531,7 +1531,7 @@ export default function LanguagesPage() {
     const days = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
     const hc = [T.n100, '#B7E4CC', '#6DC49A', '#2D9966', '#1D6B4F'];
     return (
-      <div style={{ flex: 1, overflowY: 'auto', background: T.n50 }}>
+      <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch', background: T.n50 }}>
         <TopBar />
         <div style={{ background: T.n0, padding: '24px 18px 18px', borderBottom: `1.5px solid ${T.n100}`, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
           <div style={{ position: 'relative' }}>
@@ -1643,7 +1643,8 @@ export default function LanguagesPage() {
       </Head>
       <style dangerouslySetInnerHTML={{ __html: KEYFRAMES }} />
       <div style={{
-        maxWidth: 480, margin: '0 auto', minHeight: '100vh',
+        maxWidth: 480, margin: '0 auto',
+        height: 'calc(100vh - 52px)', /* subtract shared Nav height */
         display: 'flex', flexDirection: 'column',
         background: T.n0, fontFamily: T.f,
         WebkitFontSmoothing: 'antialiased',
