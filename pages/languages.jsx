@@ -912,6 +912,13 @@ export default function LanguagesPage() {
   const [convDone, setConvDone] = useState(false);
   const [convHist, setConvHist] = useState([]);
 
+  // Free chat with Starky in target language
+  const [freeChat, setFreeChat] = useState(false);
+  const [freeMsgs, setFreeMsgs] = useState([]);
+  const [freeInput, setFreeInput] = useState('');
+  const [freeLoading, setFreeLoading] = useState(false);
+  const freeChatEndRef = useRef(null);
+
   // Placement test state
   const [inTest, setInTest] = useState(false);
   const [testIdx, setTestIdx] = useState(0);
@@ -1946,7 +1953,130 @@ export default function LanguagesPage() {
     );
   }
 
+  /* ─── FREE CHAT WITH STARKY ─── */
+  function startFreeChat() {
+    if (gate.blocked) { setShowPaywall(true); return; }
+    const langName = ld?.name || 'this language';
+    const mtName = motherTongue !== 'en' ? MOTHER_TONGUES.find(m => m.id === motherTongue)?.name || 'your language' : 'English';
+    const welcome = `Hi! I'm Starky — your ${langName} conversation partner! 🌟\n\nI'll chat with you in ${langName}, help you practice, and correct your grammar gently. You can reply in ${langName} or ${mtName} — I understand both!\n\nLet's start simple: How would you greet someone in ${langName}?`;
+    setFreeMsgs([{ role: 'assistant', content: welcome }]);
+    setFreeChat(true);
+  }
+
+  async function sendFreeMsg() {
+    const text = freeInput.trim();
+    if (!text || freeLoading) return;
+    if (!recordCall()) { setShowPaywall(true); return; }
+    gate.recordRound();
+    setFreeInput('');
+    const newMsgs = [...freeMsgs, { role: 'user', content: text }];
+    setFreeMsgs(newMsgs);
+    setFreeLoading(true);
+    try {
+      const langName = ld?.name || 'the target language';
+      const mtName = motherTongue !== 'en' ? MOTHER_TONGUES.find(m => m.id === motherTongue)?.name || 'English' : 'English';
+      const systemPrompt = `You are Starky, a warm and encouraging language tutor on NewWorld Education.
+You are having a conversation with a student learning ${langName}. Their level is ${level} (${levelName}).
+Their native language is ${mtName}.
+
+RULES:
+- Speak primarily in ${langName} with ${mtName} translations in parentheses
+- For A1 beginners: use very simple phrases, 1-2 words at a time, always translate
+- For A2: short sentences with translations for new words only
+- For B1: mostly in ${langName}, only translate difficult words
+- After every student message: first acknowledge what they said, then gently correct any grammar/spelling mistakes, then continue the conversation
+- If they write in ${mtName} or English, respond in ${langName} with translation and encourage them to try in ${langName}
+- Keep responses SHORT — 2-4 sentences max
+- Be enthusiastic and celebrate every attempt
+- End each message with a simple question to keep the conversation going
+- Use emojis to make it fun and visual
+- If they seem stuck, offer a helpful phrase they can try`;
+
+      const res = await fetch('/api/anthropic', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'claude-haiku-4-5-20251001',
+          max_tokens: 400,
+          system: systemPrompt,
+          messages: newMsgs.slice(-10).map(m => ({ role: m.role, content: m.content })),
+        }),
+      });
+      const data = await res.json();
+      const reply = data.content || data.response || 'I had a moment — please try again!';
+      setFreeMsgs(prev => [...prev, { role: 'assistant', content: reply }]);
+    } catch {
+      setFreeMsgs(prev => [...prev, { role: 'assistant', content: 'Connection error — please try again!' }]);
+    }
+    setFreeLoading(false);
+  }
+
+  useEffect(() => { if (freeChat) freeChatEndRef.current?.scrollIntoView({ behavior: 'smooth' }); }, [freeMsgs, freeLoading]);
+
+  function FreeChatScreen() {
+    return (
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', background: T.n0, minHeight: 0 }}>
+        <div style={{ padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 12, borderBottom: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
+          <button onClick={() => setFreeChat(false)} style={{ width: 30, height: 30, borderRadius: '50%', background: T.n50, border: `1.5px solid ${T.n200}`, fontSize: 13, color: T.n400, cursor: 'pointer', fontFamily: T.f }}>✕</button>
+          <div style={{ flex: 1 }}>
+            <div style={{ fontSize: 14, fontWeight: 700, color: T.n700 }}>Chat with Starky in {ld?.name}</div>
+            <div style={{ fontSize: 11, color: T.n400 }}>Level {level} · AI conversation partner</div>
+          </div>
+          <Chip type="teal">LIVE</Chip>
+        </div>
+        <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch', padding: '14px 16px', display: 'flex', flexDirection: 'column', gap: 10, minHeight: 0 }}>
+          {freeMsgs.map((msg, i) => (
+            <div key={i} style={{ display: 'flex', justifyContent: msg.role === 'user' ? 'flex-end' : 'flex-start', gap: 8 }}>
+              {msg.role === 'assistant' && (
+                <div style={{ width: 28, height: 28, borderRadius: '50%', background: T.tealL, border: `1px solid ${T.teal}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 14, flexShrink: 0, marginTop: 2 }}>★</div>
+              )}
+              <div style={{
+                maxWidth: '80%', padding: '10px 14px', borderRadius: 16,
+                background: msg.role === 'user' ? T.teal : T.n50,
+                color: msg.role === 'user' ? '#fff' : T.n700,
+                border: msg.role === 'user' ? 'none' : `1px solid ${T.n100}`,
+                fontSize: 14, lineHeight: 1.7, fontWeight: msg.role === 'user' ? 600 : 400,
+                whiteSpace: 'pre-wrap',
+              }}>
+                {msg.content}
+              </div>
+            </div>
+          ))}
+          {freeLoading && (
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <div style={{ width: 28, height: 28, borderRadius: '50%', background: T.tealL, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 14 }}>★</div>
+              <div style={{ display: 'flex', gap: 4 }}>
+                {[0, 0.2, 0.4].map((d, j) => <div key={j} style={{ width: 8, height: 8, borderRadius: '50%', background: T.teal, animation: `bounce 1s ${d}s ease-in-out infinite`, opacity: 0.7 }} />)}
+              </div>
+            </div>
+          )}
+          <div ref={freeChatEndRef} />
+        </div>
+        <div style={{ padding: '10px 14px', borderTop: `1.5px solid ${T.n100}`, display: 'flex', gap: 8, flexShrink: 0 }}>
+          <input
+            value={freeInput}
+            onChange={e => setFreeInput(e.target.value)}
+            onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendFreeMsg(); } }}
+            placeholder={`Type in ${ld?.name || 'any language'}...`}
+            style={{
+              flex: 1, background: T.n50, border: `1.5px solid ${T.n100}`, borderRadius: 12,
+              padding: '10px 14px', fontSize: 15, color: T.n700, fontFamily: T.f, outline: 'none',
+            }}
+          />
+          <button onClick={sendFreeMsg} disabled={!freeInput.trim() || freeLoading} style={{
+            width: 44, height: 44, borderRadius: 12, border: 'none',
+            background: freeInput.trim() && !freeLoading ? T.teal : T.n100,
+            color: freeInput.trim() && !freeLoading ? '#fff' : T.n300,
+            fontSize: 18, fontWeight: 800, cursor: 'pointer', fontFamily: T.f, flexShrink: 0,
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+          }}>→</button>
+        </div>
+      </div>
+    );
+  }
+
   function ChatScreen() {
+    if (freeChat) return <FreeChatScreen />;
     if (inConvo) return <ConvoScreen />;
     if (!ld || !dest) return null;
     const convos = ld.convos || [];
@@ -1958,7 +2088,34 @@ export default function LanguagesPage() {
           <h2 style={{ fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: T.n700 }}>Chat Simulator</h2>
           <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400, marginTop: 3 }}>Talk with locals in {dest.name} before your trip.</p>
         </div>
-        <div style={{ padding: '12px 14px', display: 'flex', flexDirection: 'column', gap: 10 }}>
+        {/* FREE CHAT WITH STARKY — AI conversation partner */}
+        <div style={{ padding: '12px 14px 0' }}>
+          <div onClick={startFreeChat} style={{
+            padding: 16, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 14,
+            background: `linear-gradient(135deg, ${T.teal}15, ${T.teal}08)`,
+            borderRadius: 16, border: `2px solid ${T.teal}40`,
+            boxShadow: `0 2px 12px ${T.teal}15`, transition: 'all .15s',
+            marginBottom: 4,
+          }}>
+            <div style={{ width: 54, height: 54, borderRadius: '50%', background: T.teal, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24, flexShrink: 0, color: '#fff', fontWeight: 900 }}>★</div>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.teal }}>Chat with Starky in {ld?.name}</div>
+              <p style={{ fontSize: 12, color: T.n400, marginTop: 2, lineHeight: 1.5 }}>Free conversation with AI — Starky speaks {ld?.name}, corrects your grammar, and adapts to your level.</p>
+              <div style={{ display: 'flex', gap: 4, marginTop: 6 }}>
+                {['AI-powered', 'Grammar help', 'Any topic'].map(tag => (
+                  <span key={tag} style={{ fontSize: 9, fontWeight: 800, background: `${T.teal}15`, border: `1px solid ${T.teal}30`, borderRadius: 20, padding: '2px 8px', color: T.teal }}>{tag}</span>
+                ))}
+              </div>
+            </div>
+            <span style={{ fontSize: 22, color: T.teal }}>→</span>
+          </div>
+        </div>
+
+        <div style={{ padding: '8px 14px 4px' }}>
+          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.n300, marginBottom: 8 }}>Scripted scenarios</div>
+        </div>
+
+        <div style={{ padding: '0 14px 12px', display: 'flex', flexDirection: 'column', gap: 10 }}>
           {convos.length ? convos.map(cv => (
             <div key={cv.id} onClick={() => startConvo(cv.id)} style={{
               padding: 16, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 14,
