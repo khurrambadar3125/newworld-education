@@ -138,7 +138,7 @@ function ParentFeedback({ child, parentName }) {
 function SetAssignment({ children, parentName }) {
   const [selectedChild, setSelectedChild] = useState(null);
   const [topic, setTopic] = useState('');
-  const [saved, setSaved] = useState(false);
+  const [saved, setSaved] = useState(null); // null | 'synced' | 'local'
   const [sending, setSending] = useState(false);
 
   const save = async () => {
@@ -148,19 +148,21 @@ function SetAssignment({ children, parentName }) {
     setSending(true);
 
     // Save to KV (cross-device) if child has email, otherwise localStorage fallback
+    let kvSaved = false;
     if (childEmail) {
       try {
-        await fetch('/api/assignment', {
+        const res = await fetch('/api/assignment', {
           method: 'POST', headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ childEmail, topic: topic.trim(), parentName }),
         });
+        if (res.ok) kvSaved = true;
       } catch {}
     }
     // Also save localStorage as fallback (same-device)
     try { localStorage.setItem(`nw_assignment_${selectedChild}`, JSON.stringify({ topic: topic.trim(), setAt: new Date().toISOString(), setBy: parentName || 'parent' })); } catch {}
 
-    setSaved(true); setSending(false);
-    setTimeout(() => setSaved(false), 3000);
+    setSaved(kvSaved ? 'synced' : 'local'); setSending(false);
+    setTimeout(() => setSaved(null), 4000);
     setTopic('');
   };
 
@@ -189,7 +191,7 @@ function SetAssignment({ children, parentName }) {
             border:"none",borderRadius:12,padding:"12px",color:topic.trim()?"#fff":"rgba(255,255,255,0.3)",
             fontWeight:800,fontSize:14,cursor:topic.trim()?"pointer":"not-allowed",fontFamily:"'Nunito',sans-serif",
           }}>
-            {saved ? '✅ Assignment saved!' : 'Set Assignment →'}
+            {saved === 'synced' ? '✅ Saved — your child will see it!' : saved === 'local' ? '✅ Saved on this device only' : 'Set Assignment →'}
           </button>
         </>
       )}

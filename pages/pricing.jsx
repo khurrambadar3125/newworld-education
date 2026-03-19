@@ -140,8 +140,9 @@ export default function Pricing() {
     script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}&vault=true&intent=subscription`;
     script.setAttribute('data-sdk-integration-source', 'button-factory');
     script.onload = () => setPaypalReady(true);
+    script.onerror = () => setPaypalReady('failed');
     document.body.appendChild(script);
-    return () => { document.body.removeChild(script); };
+    return () => { try { document.body.removeChild(script); } catch {} };
   }, []);
 
   useEffect(() => {
@@ -290,6 +291,7 @@ export default function Pricing() {
 
         @media (max-width: 600px) {
           .plans-grid { grid-template-columns: 1fr; }
+          .plan-card { padding: 22px 16px; }
         }
       `}</style>
 
@@ -339,6 +341,11 @@ export default function Pricing() {
                 {!paypalReady && (
                   <div style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 8, height: 45, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 13, color: 'rgba(255,255,255,0.3)' }}>
                     Loading payment...
+                  </div>
+                )}
+                {paypalReady === 'failed' && (
+                  <div style={{ background: 'rgba(248,113,113,0.08)', border: '1px solid rgba(248,113,113,0.2)', borderRadius: 8, padding: '10px 14px', fontSize: 12, color: '#F87171', textAlign: 'center' }}>
+                    PayPal didn't load — use WhatsApp below to subscribe
                   </div>
                 )}
               </div>

@@ -67,7 +67,14 @@ export function useSpeakText() {
   const speak = useCallback((text) => {
     if (!synthRef.current || !text) return;
     synthRef.current.cancel();
-    const clean = text.replace(/[★*_`#]/g, '').replace(/\n+/g, ' ').substring(0, 500);
+    const clean = text
+      .replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, '')  // strip ALL emojis
+      .replace(/[\u{FE00}-\u{FE0F}\u{200D}\u{20E3}\u{E0020}-\u{E007F}]/gu, '')  // variation selectors, joiners, tags
+      .replace(/[★*_`#]/g, '')
+      .replace(/\s{2,}/g, ' ')
+      .replace(/\n+/g, ' ')
+      .trim()
+      .substring(0, 500);
     const utt = new SpeechSynthesisUtterance(clean);
     utt.rate = 0.85;
     utt.pitch = 1.1;

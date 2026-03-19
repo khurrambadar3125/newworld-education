@@ -26,6 +26,7 @@ export default async function handler(req, res) {
           'P-94P5336054823460NNGS5MIY': 'starter',
           'P-8FYS0096MF117684FNGS5QKA': 'scholar',
           'P-0PS81623HP313672PNGS5SWA': 'family',
+          'P-60C25004ES421424TNGTU3JA': 'creative-bundle',
           'P-4C972623LC808300XNGS5XDY': 'special-needs',
         };
 

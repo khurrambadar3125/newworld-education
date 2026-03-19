@@ -287,6 +287,7 @@ function SENDrillWidget({ condition, stage, subject }) {
   const [hintLoading, setHintLoading] = useState(false);
   const [celebration, setCelebration] = useState('');
   const [questionCount, setQuestionCount] = useState(0);
+  const [senError, setSenError] = useState('');
   const feedbackRef = useRef(null);
 
   const CELEBRATIONS = [
@@ -330,8 +331,9 @@ function SENDrillWidget({ condition, stage, subject }) {
       if (!data.error) {
         setQuestion(data);
         setQuestionCount(c => c + 1);
-      }
-    } catch {}
+        setSenError('');
+      } else { setSenError(data.error); }
+    } catch { setSenError('Something went wrong. Let\'s try again!'); }
     setLoading(false);
   };
 
@@ -363,7 +365,7 @@ function SENDrillWidget({ condition, stage, subject }) {
       const cel = CELEBRATIONS[Math.floor(Math.random() * CELEBRATIONS.length)];
       setCelebration(data.correct ? "🌟 Correct! " + cel : cel);
       setTimeout(() => feedbackRef.current?.scrollIntoView({behavior:'smooth',block:'start'}), 150);
-    } catch {}
+    } catch { setSenError('Oops! Let\'s try again.'); }
     setLoading(false);
   };
 

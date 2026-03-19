@@ -69,7 +69,7 @@ export default function Nav({ current, accent }) {
         }
         .nw-nav-burger {
           background: rgba(255,255,255,0.07); border: none; color: #fff;
-          width: 36px; height: 36px; border-radius: 8px; cursor: pointer;
+          width: 44px; height: 44px; border-radius: 8px; cursor: pointer;
           font-size: 17px; display: flex; align-items: center; justify-content: center;
         }
         .nw-nav-menu {

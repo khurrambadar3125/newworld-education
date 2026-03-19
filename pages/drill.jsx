@@ -8,6 +8,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useSpacedRep } from '../utils/useSpacedRep';
 import useStreaks, { StreakWidget } from '../utils/useStreaks';
+import { useSessionLimit, SessionLimitBanner, LimitReachedModal } from '../utils/useSessionLimit';
 
 const TOPICS = {
   'Biology': ['Cell Structure & Organisation','Diffusion, Osmosis & Active Transport','Biological Molecules','Enzymes','Plant Nutrition (Photosynthesis)','Animal Nutrition & Digestion','Gas Exchange','Transport in Plants','Transport in Humans (Circulatory System)','Respiration','Excretion & Homeostasis','Coordination & Response (Nervous System)','Hormones & Endocrine System','Reproduction','Inheritance & Genetics','Variation & Natural Selection','Ecology & Environment','Human Influences on the Environment'],
@@ -98,7 +99,7 @@ const SESSION_LENGTH_DEFAULT = 10;
 const isMob = typeof window !== 'undefined' && window.innerWidth < 640;
 const S = {
   page: { minHeight:'100vh', background:'#080C18', color:'#fff', fontFamily:"-apple-system,BlinkMacSystemFont,'Inter',sans-serif", padding:'0 0 60px' },
-  nav: { display:'flex', alignItems:'center', justifyContent:'space-between', padding:isMob?'12px 14px':'14px 20px', borderBottom:'1px solid rgba(255,255,255,.07)', background:'rgba(8,12,24,.97)', position:'sticky', top:0, zIndex:50, backdropFilter:'blur(12px)' },
+  nav: { display:'flex', alignItems:'center', justifyContent:'space-between', padding:isMob?'12px 14px':'14px 20px', borderBottom:'1px solid rgba(255,255,255,.07)', background:'rgba(8,12,24,.97)', position:'sticky', top:0, zIndex:50, WebkitBackdropFilter:'blur(12px)', backdropFilter:'blur(12px)' },
   navLogo: { fontFamily:"'Sora',sans-serif", fontWeight:800, fontSize:isMob?14:17, color:'#fff', textDecoration:'none', display:'flex', alignItems:'center', gap:6 },
   navRight: { display:'flex', alignItems:'center', gap:isMob?6:10 },
   navLink: { fontSize:isMob?11:13, color:'rgba(255,255,255,.5)', textDecoration:'none', padding:isMob?'5px 8px':'6px 12px', borderRadius:8, background:'rgba(255,255,255,.05)', border:'1px solid rgba(255,255,255,.08)' },
@@ -109,12 +110,12 @@ const S = {
   label: { fontSize:11, fontWeight:700, letterSpacing:'.07em', textTransform:'uppercase', color:'rgba(255,255,255,.4)', marginBottom:10, display:'block' },
   grid2: { display:'grid', gridTemplateColumns:isMob?'1fr':'1fr 1fr', gap:8 },
   grid3: { display:'grid', gridTemplateColumns:isMob?'1fr 1fr':'repeat(3,1fr)', gap:8 },
-  optionBtn: (selected) => ({ background:selected?'rgba(79,142,247,.15)':'rgba(255,255,255,.04)', border:`1px solid ${selected?'rgba(79,142,247,.5)':'rgba(255,255,255,.08)'}`, borderRadius:10, padding:'10px 14px', cursor:'pointer', color:selected?'#4F8EF7':'rgba(255,255,255,.65)', fontSize:13, fontWeight:selected?700:500, textAlign:'left', transition:'all .15s', WebkitTapHighlightColor:'transparent' }),
+  optionBtn: (selected) => ({ background:selected?'rgba(79,142,247,.15)':'rgba(255,255,255,.04)', border:`1px solid ${selected?'rgba(79,142,247,.5)':'rgba(255,255,255,.08)'}`, borderRadius:10, padding:'14px 14px', cursor:'pointer', color:selected?'#4F8EF7':'rgba(255,255,255,.65)', fontSize:14, fontWeight:selected?700:500, textAlign:'left', transition:'all .15s', WebkitTapHighlightColor:'transparent', minHeight:48 }),
   primaryBtn: { background:'linear-gradient(135deg,#4F8EF7,#6366F1)', border:'none', borderRadius:12, padding:'14px 28px', color:'#fff', fontSize:15, fontWeight:700, fontFamily:"'Sora',sans-serif", cursor:'pointer', width:'100%', marginTop:8, WebkitTapHighlightColor:'transparent' },
   ghostBtn: { background:'rgba(255,255,255,.05)', border:'1px solid rgba(255,255,255,.1)', borderRadius:12, padding:'13px 28px', color:'rgba(255,255,255,.6)', fontSize:14, fontWeight:600, cursor:'pointer', width:'100%', marginTop:8, WebkitTapHighlightColor:'transparent' },
   badge: (color) => ({ display:'inline-block', fontSize:10, fontWeight:700, padding:'2px 8px', borderRadius:100, background:`${color}22`, border:`1px solid ${color}55`, color, marginLeft:6, verticalAlign:'middle' }),
   questionText: { fontSize:16, lineHeight:1.75, color:'rgba(255,255,255,.9)', background:'rgba(79,142,247,.07)', border:'1px solid rgba(79,142,247,.2)', borderRadius:12, padding:'18px 20px', marginBottom:20 },
-  textarea: { width:'100%', background:'rgba(255,255,255,.06)', border:'1px solid rgba(255,255,255,.12)', borderRadius:10, color:'#fff', padding:'12px 14px', fontSize:14, lineHeight:1.6, fontFamily:'inherit', outline:'none', resize:'vertical', minHeight:100, boxSizing:'border-box' },
+  textarea: { width:'100%', background:'rgba(255,255,255,.06)', border:'1px solid rgba(255,255,255,.12)', borderRadius:10, color:'#fff', padding:'12px 14px', fontSize:16, lineHeight:1.6, fontFamily:'inherit', outline:'none', resize:'vertical', minHeight:100, boxSizing:'border-box', WebkitAppearance:'none' },
   feedbackBox: (correct) => ({ background:correct?'rgba(74,222,128,.07)':'rgba(248,113,113,.07)', border:`1px solid ${correct?'rgba(74,222,128,.25)':'rgba(248,113,113,.25)'}`, borderRadius:14, padding:'18px 20px', marginBottom:16 }),
   scoreRow: { display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:12 },
   tipBox: { background:'rgba(251,191,36,.07)', border:'1px solid rgba(251,191,36,.2)', borderRadius:10, padding:'12px 16px', marginTop:14, fontSize:13, color:'rgba(255,255,255,.8)', lineHeight:1.6 },
@@ -192,6 +193,10 @@ export default function DrillPage() {
   const [liveMax, setLiveMax] = useState(0);
   const [combo, setCombo] = useState(0); // consecutive correct answers
 
+  // Session limits
+  const { limitReached, recordCall, callsLeft } = useSessionLimit(userProfile?.email);
+  const [showLimitModal, setShowLimitModal] = useState(false);
+
   useEffect(() => {
     try { const s = localStorage.getItem('nw_user'); if (s) setUserProfile(JSON.parse(s)); } catch {}
   }, []);
@@ -219,8 +224,9 @@ export default function DrillPage() {
       const body = { action:'generate', level, subject, topic:t, difficulty, questionType:type };
       if (imageData) { body.imageBase64 = imageData.base64; body.imageType = imageData.type; }
       const res = await fetch('/api/drill', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body) });
-      const data = await res.json();
-      if (data.error) { setError(data.error); return; }
+      let data;
+      try { data = await res.json(); } catch { throw new Error('Invalid response'); }
+      if (!res.ok || data.error) { setError(data?.error || 'Failed to generate question. Please try again.'); return; }
       setQuestion(data);
     } catch { setError('Failed to generate question. Please try again.'); }
     finally { setLoading(false); }
@@ -242,17 +248,30 @@ export default function DrillPage() {
   const handleImageUpload = async (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
+    // Validate file type and size
+    const allowed = ['image/jpeg','image/png','image/webp','image/heic','image/gif'];
+    if (!file.type.startsWith('image/') && !allowed.includes(file.type)) {
+      setError('Please upload an image file (photo, screenshot, or scan).');
+      return;
+    }
+    if (file.size > 10 * 1024 * 1024) {
+      setError('Image too large (max 10MB). Try taking a closer photo.');
+      return;
+    }
     const reader = new FileReader();
     reader.onload = (ev) => {
       const base64 = ev.target.result.split(',')[1];
-      setCameraImage({ base64, type:file.type, name:file.name });
+      setCameraImage({ base64, type:file.type || 'image/jpeg', name:file.name });
       setCameraMode(false);
+      setError('');
     };
+    reader.onerror = () => setError('Could not read image. Please try again.');
     reader.readAsDataURL(file);
   };
 
   // ── Quick Start — auto-detect grade, pick subject, skip setup ──────────────
   const quickStart = (overrideSubject) => {
+    if (limitReached) { setShowLimitModal(true); return; }
     const p = userProfile || {};
     const gradeId = (p.gradeId || '').toLowerCase();
 
@@ -285,6 +304,7 @@ export default function DrillPage() {
 
   // ── Start session ────────────────────────────────────────────────────────────
   const startSession = () => {
+    if (limitReached) { setShowLimitModal(true); return; }
     if (cameraImage) {
       setSessionResults([]); setQuestionNum(0); setLiveScore(0); setLiveMax(0); setCombo(0);
       setPhase('drilling');
@@ -306,11 +326,13 @@ export default function DrillPage() {
     setLoading(true);
     try {
       const res = await fetch('/api/drill', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ action:'grade', level, subject, topic:question.topic||topic, question:question.question, studentAnswer:answer||'(no answer — time ran out)', questionType:question.type, options:question.options, marks:question.marks }) });
-      const data = await res.json();
+      let data;
+      try { data = await res.json(); } catch { throw new Error('Invalid response'); }
       setFeedback(data);
       const t = question.topic || topic;
-      sr.recordAnswer(subject, t, data.quality ?? (data.correct ? 4 : 1));
-      setSessionResults(prev => [...prev, { topic:t, correct:data.correct, score:data.score, maxScore:data.maxScore, quality:data.quality }]);
+      const quality = typeof data.quality === 'number' ? Math.max(0, Math.min(5, data.quality)) : (data.correct === true ? 4 : data.correct === false ? 1 : 2);
+      sr.recordAnswer(subject, t, quality);
+      setSessionResults(prev => [...prev, { topic:t, correct:!!data.correct, score:data.score || 0, maxScore:data.maxScore || 1, quality }]);
       setLiveScore(s => s + (data.score || 0));
       setLiveMax(m => m + (data.maxScore || 1));
       setCombo(c => data.correct ? c + 1 : 0);
@@ -324,9 +346,13 @@ export default function DrillPage() {
   // ── Next question ────────────────────────────────────────────────────────────
   const nextQuestion = () => {
     const nextNum = questionNum + 1;
-    const sessionPct = liveMax > 0 ? Math.round((liveScore / liveMax) * 100) : 0;
+    // Calculate from sessionResults directly to avoid stale state race condition
+    const totalScore = sessionResults.reduce((s, r) => s + (r.score || 0), 0);
+    const totalMax = sessionResults.reduce((s, r) => s + (r.maxScore || 1), 0);
+    const sessionPct = totalMax > 0 ? Math.round((totalScore / totalMax) * 100) : 0;
     if (nextNum >= SESSION_LENGTH) {
       logSession(subject, SESSION_LENGTH, sessionPct);
+      try { recordCall(); } catch {} // Count drill session against daily limit
       setPhase('summary');
       // Notify parent of drill results (fire and forget)
       try {
@@ -335,7 +361,7 @@ export default function DrillPage() {
           const weakAreas = sessionResults.filter(r => !r.correct).map(r => r.topic);
           fetch('/api/notify-parent', {
             method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ parentEmail: p.parentEmail || p.email, studentName: p.name, type: 'drill', subject, score: liveScore, total: liveMax, weakAreas }),
+            body: JSON.stringify({ parentEmail: p.parentEmail || p.email, studentName: p.name, type: 'drill', subject, score: totalScore, total: totalMax, weakAreas }),
           }).catch(() => {});
         }
       } catch {}
@@ -880,7 +906,7 @@ export default function DrillPage() {
             </div>
           )}
 
-          <button style={S.primaryBtn} onClick={() => { setPhase('drilling'); setQuestionNum(0); setSessionResults([]); setLiveScore(0); setLiveMax(0); setCombo(0); generateQuestion(topic); }}>
+          <button style={S.primaryBtn} onClick={() => { setPhase('drilling'); setQuestionNum(0); setSessionResults([]); setLiveScore(0); setLiveMax(0); setCombo(0); setError(''); setFeedback(null); generateQuestion(topic); }}>
             Drill Again 🔄
           </button>
 
@@ -908,6 +934,7 @@ export default function DrillPage() {
           <Link href="/"><a style={{...S.ghostBtn, display:'block', textAlign:'center', textDecoration:'none', marginTop:8}}>Back to Starky Chat</a></Link>
         </div>
       </div>
+      {showLimitModal && <LimitReachedModal onClose={() => setShowLimitModal(false)} />}
     </>
   );
 }

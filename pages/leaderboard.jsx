@@ -15,6 +15,7 @@ export default function Leaderboard() {
   const [optedIn, setOptedIn]   = useState(false);
   const [userProfile, setUserProfile] = useState(null);
   const [weekLabel, setWeekLabel] = useState('');
+  const [error, setError] = useState('');
 
   useEffect(() => {
     // Get week label
@@ -66,7 +67,9 @@ export default function Leaderboard() {
           if (rank !== -1) setMyRank(rank + 1);
         }
       } catch {}
-    } catch {}
+    } catch {
+      setError('Could not load leaderboard. Please try again.');
+    }
     setLoading(false);
   };
 
@@ -111,7 +114,6 @@ export default function Leaderboard() {
         <meta name="description" content="Weekly student leaderboard on NewWorldEdu. Earn points by studying with Starky, build streaks, and compete with other Cambridge students." />
         <meta property="og:title" content="Student Leaderboard — NewWorldEdu" />
         <meta property="og:description" content="Weekly student leaderboard on NewWorldEdu. Earn points by studying with Starky, build streaks, and compete with other Cambridge students." />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
       </Head>
       <style jsx global>{`
@@ -124,7 +126,7 @@ export default function Leaderboard() {
       `}</style>
 
       {/* NAV */}
-      <nav style={{ position:'sticky', top:0, zIndex:100, background:'rgba(8,12,24,0.97)', backdropFilter:'blur(12px)', borderBottom:'1px solid rgba(255,255,255,0.07)', padding:'0 16px', height:'56px', display:'flex', alignItems:'center', justifyContent:'space-between' }}>
+      <nav style={{ position:'sticky', top:0, zIndex:100, background:'rgba(8,12,24,0.97)', WebkitBackdropFilter:'blur(12px)', backdropFilter:'blur(12px)', borderBottom:'1px solid rgba(255,255,255,0.07)', padding:'0 16px', height:'56px', display:'flex', alignItems:'center', justifyContent:'space-between' }}>
         <a href="/" style={{ fontFamily:"'Sora',sans-serif", fontSize:'17px', fontWeight:800, color:'#fff', textDecoration:'none' }}>
           NewWorldEdu<span style={{ color:'#4F8EF7' }}>★</span>
         </a>
@@ -193,6 +195,13 @@ export default function Leaderboard() {
             <a href="/#start-learning" style={{ display:'inline-block', background:'linear-gradient(135deg,#4F8EF7,#6366F1)', color:'#fff', borderRadius:'12px', padding:'10px 24px', fontFamily:"'Sora',sans-serif", fontWeight:700, fontSize:'14px', textDecoration:'none' }}>
               Start Learning →
             </a>
+          </div>
+        )}
+
+        {error && (
+          <div style={{ background:'rgba(248,113,113,0.08)', border:'1px solid rgba(248,113,113,0.25)', borderRadius:'14px', padding:'14px 18px', marginBottom:'16px', color:'#F87171', fontSize:'14px', textAlign:'center' }}>
+            {error}
+            <button onClick={() => { setError(''); fetchBoard(); }} style={{ display:'block', margin:'10px auto 0', background:'rgba(255,255,255,0.08)', border:'none', borderRadius:'8px', padding:'8px 16px', color:'#fff', fontSize:'13px', cursor:'pointer', fontWeight:600 }}>Retry</button>
           </div>
         )}
 

@@ -62,7 +62,6 @@ export default function Subscribe() {
       <Head>
         <title>Subscribe — NewWorldEdu ★</title>
         <meta name="description" content="Get a daily Cambridge question in your inbox. Free." />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
       </Head>
       <style jsx global>{`
@@ -73,7 +72,7 @@ export default function Subscribe() {
       `}</style>
 
       {/* NAV */}
-      <nav style={{ position:'sticky', top:0, zIndex:100, background:'rgba(8,12,24,0.97)', backdropFilter:'blur(12px)', borderBottom:'1px solid rgba(255,255,255,0.07)', padding:'0 16px', height:'56px', display:'flex', alignItems:'center', justifyContent:'space-between' }}>
+      <nav style={{ position:'sticky', top:0, zIndex:100, background:'rgba(8,12,24,0.97)', WebkitBackdropFilter:'blur(12px)', backdropFilter:'blur(12px)', borderBottom:'1px solid rgba(255,255,255,0.07)', padding:'0 16px', height:'56px', display:'flex', alignItems:'center', justifyContent:'space-between' }}>
         <a href="/" style={{ fontFamily:"'Sora',sans-serif", fontSize:'17px', fontWeight:800, color:'#fff', textDecoration:'none' }}>
           NewWorldEdu<span style={{ color:'#4F8EF7' }}>★</span>
         </a>

@@ -42,17 +42,34 @@ export async function saveSubscriber({ name, email, grade, subject, studyTime })
 }
 
 /**
- * Get all subscribers
+ * Get all subscribers — with in-memory cache to reduce KV reads at scale
  */
+let _subscriberCache = null;
+let _subscriberCacheTime = 0;
+const SUBSCRIBER_CACHE_TTL = 120000; // 2 minutes
+
 export async function getAllSubscribers() {
+  // Return cache if fresh (prevents N+1 queries on every dashboard load)
+  if (_subscriberCache && Date.now() - _subscriberCacheTime < SUBSCRIBER_CACHE_TTL) {
+    return _subscriberCache;
+  }
+
   const ids = await kv.smembers('subscribers:all');
   if (!ids || ids.length === 0) return [];
 
-  const subscribers = await Promise.all(
-    ids.map(id => kv.hgetall(`subscriber:${id}`))
-  );
+  // Batch in chunks of 50 to avoid overwhelming KV
+  const CHUNK = 50;
+  const subscribers = [];
+  for (let i = 0; i < ids.length; i += CHUNK) {
+    const chunk = ids.slice(i, i + CHUNK);
+    const results = await Promise.all(chunk.map(id => kv.hgetall(`subscriber:${id}`)));
+    subscribers.push(...results);
+  }
 
-  return subscribers.filter(Boolean).filter(s => s.active !== false);
+  const active = subscribers.filter(Boolean).filter(s => s.active !== false);
+  _subscriberCache = active;
+  _subscriberCacheTime = Date.now();
+  return active;
 }
 
 /**
@@ -116,17 +133,20 @@ export async function recordQuestionSent({ email, grade, subject, question, date
  */
 export async function getRecentQuestions(email, days = 30) {
   const id = email.toLowerCase().trim();
-  const questions = [];
 
+  // Batch all 30 days into parallel requests (not sequential)
+  const dateKeys = [];
   for (let i = 0; i < days; i++) {
     const d = new Date();
     d.setDate(d.getDate() - i);
-    const dateKey = d.toISOString().split('T')[0];
-    const q = await kv.hgetall(`questions:${id}:${dateKey}`);
-    if (q) questions.push(q.question);
+    dateKeys.push(d.toISOString().split('T')[0]);
   }
 
-  return questions.filter(Boolean);
+  const results = await Promise.all(
+    dateKeys.map(dateKey => kv.hgetall(`questions:${id}:${dateKey}`))
+  );
+
+  return results.filter(Boolean).map(q => q.question).filter(Boolean);
 }
 
 // ── STREAKS ───────────────────────────────────────────

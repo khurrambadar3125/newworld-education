@@ -13,10 +13,12 @@ export default function ReferralPage() {
   const [loading, setLoading] = useState(true);
   const [copied, setCopied] = useState(false);
   const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
 
   useEffect(() => {
     try {
-      const user = JSON.parse(localStorage.getItem('nw_user') || '{}');
+      let user = {};
+      try { user = JSON.parse(localStorage.getItem('nw_user') || '{}'); } catch {}
       if (user.email) {
         setEmail(user.email);
         loadProfile(user.email);
@@ -33,7 +35,7 @@ export default function ReferralPage() {
       const res = await fetch(`/api/referral?action=profile&email=${encodeURIComponent(em)}`);
       const data = await res.json();
       setProfile(data);
-    } catch {} finally { setLoading(false); }
+    } catch { setError('Could not load referral profile. Please try again.'); } finally { setLoading(false); }
   };
 
   const link = profile?.code ? `https://www.newworld.education/join/${profile.code}` : '';

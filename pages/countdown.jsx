@@ -139,7 +139,7 @@ export default function CountdownPage() {
       </Head>
       <div style={{ minHeight: '100vh', background: '#080C18', color: '#fff', fontFamily: "-apple-system,BlinkMacSystemFont,'Inter',sans-serif", paddingBottom: 80 }}>
 
-        <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 20px', borderBottom: '1px solid rgba(255,255,255,.07)', background: 'rgba(8,12,24,.9)', position: 'sticky', top: 0, zIndex: 50, backdropFilter: 'blur(12px)' }}>
+        <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 20px', borderBottom: '1px solid rgba(255,255,255,.07)', background: 'rgba(8,12,24,.9)', position: 'sticky', top: 0, zIndex: 50, WebkitBackdropFilter: 'blur(12px)', backdropFilter: 'blur(12px)' }}>
           <Link href="/"><a style={{ fontFamily: "'Sora',sans-serif", fontWeight: 800, fontSize: 17, color: '#fff', textDecoration: 'none' }}>NewWorldEdu<span style={{ color: '#4F8EF7' }}>★</span></a></Link>
           <div style={{ display: 'flex', gap: 8 }}>
             <Link href="/drill"><a style={{ fontSize: 12, fontWeight: 700, color: '#4F8EF7', textDecoration: 'none', padding: '6px 12px', borderRadius: 8, background: 'rgba(79,142,247,.1)', border: '1px solid rgba(79,142,247,.2)' }}>📚 Drill</a></Link>

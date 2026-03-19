@@ -276,7 +276,7 @@ LANGUAGE: If the child writes in Urdu, respond entirely in Urdu. If Arabic, resp
 
       {/* NAV */}
       <nav style={{
-        background: "rgba(11,14,31,0.95)", backdropFilter: "blur(20px)",
+        background: "rgba(11,14,31,0.95)", WebkitBackdropFilter: "blur(20px)", backdropFilter: "blur(20px)",
         borderBottom: "1px solid rgba(255,179,71,0.15)",
         display: "flex", alignItems: "center", justifyContent: "space-between",
         padding: "0 16px", height: "56px", position: "sticky", top: 0, zIndex: 100,
@@ -448,9 +448,9 @@ LANGUAGE: If the child writes in Urdu, respond entirely in Urdu. If Arabic, resp
                 style={{
                   width:"100%", background:"rgba(255,255,255,0.05)",
                   border:`1px solid ${accent}44`, borderRadius:"14px",
-                  padding:"12px 14px", color:"#fff", fontSize:"15px",
+                  padding:"12px 14px", color:"#fff", fontSize:"16px",
                   resize:"vertical", boxSizing:"border-box", lineHeight:"1.6",
-                  fontFamily:"'Nunito',sans-serif",
+                  fontFamily:"'Nunito',sans-serif", WebkitAppearance:"none",
                 }}
               />
 

@@ -10,12 +10,15 @@ export default function Championship() {
   const [joined, setJoined] = useState(false);
   const [showJoin, setShowJoin] = useState(false);
 
+  const [error, setError] = useState('');
+
   useEffect(() => {
-    const user = JSON.parse(localStorage.getItem('nw_user') || '{}');
+    let user = {};
+    try { user = JSON.parse(localStorage.getItem('nw_user') || '{}'); } catch {}
     setEmail(user.email || '');
     setJoinForm(f => ({ ...f, name: user.name || '' }));
     fetch(`/api/championship/join?email=${encodeURIComponent(user.email || '')}`)
-      .then(r => r.json()).then(setData).finally(() => setLoading(false));
+      .then(r => r.json()).then(setData).catch(() => setError('Could not load championship data.')).finally(() => setLoading(false));
   }, []);
 
   const handleJoin = async () => {
@@ -28,11 +31,12 @@ export default function Championship() {
       // Reload data
       const r = await fetch(`/api/championship/join?email=${encodeURIComponent(email)}`);
       setData(await r.json());
-    } catch {} finally { setJoining(false); }
+    } catch { setError('Could not join. Please try again.'); } finally { setJoining(false); }
   };
 
   const shareWhatsApp = () => {
-    const user = JSON.parse(localStorage.getItem('nw_user') || '{}');
+    let user = {};
+    try { user = JSON.parse(localStorage.getItem('nw_user') || '{}'); } catch {}
     const code = user.email ? btoa(user.email).slice(0, 12) : '';
     const text = `I am competing to win Meta Ray-Ban glasses on NewWorld Education — Pakistan's smartest AI tutor. Join here: newworld.education/championship — T&Cs apply. Pakistan residents only.`;
     window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');

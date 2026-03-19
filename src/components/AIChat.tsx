@@ -98,10 +98,10 @@ export default function AIChat() {
 
   return (
     <div
-      className={`fixed bottom-6 right-6 z-50 bg-white rounded-2xl shadow-2xl border border-surface-200 flex flex-col transition-all duration-300 ${
+      className={`fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-white rounded-2xl shadow-2xl border border-surface-200 flex flex-col transition-all duration-300 ${
         isMinimized
           ? "w-72 h-14"
-          : "w-[380px] h-[560px] max-h-[80vh]"
+          : "w-[min(92vw,380px)] h-[min(85vh,560px)] max-h-[80vh]"
       }`}
     >
       {/* Header */}

@@ -15,7 +15,7 @@
  *   const { sessionMemory, saveMessage, saveSubject, finalizeSession } = useSessionMemory(userProfile);
  */
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 
 const STORAGE_KEY_PREFIX = 'nw_session_';
 const MAX_HISTORY = 10; // message pairs to keep in context
@@ -162,20 +162,25 @@ export function useSessionMemory(userProfile) {
     })();
   }, [userProfile?.email, userProfile?.gradeId]);
 
-  // Persist memory to localStorage whenever it changes
+  // Persist memory to localStorage immediately, but debounce KV writes (5s)
+  // At 1000 concurrent users, this prevents overwhelming KV with writes on every message
+  const kvSyncTimerRef = useRef(null);
   const persist = useCallback((memory) => {
     if (typeof window === 'undefined') return;
     try {
       const key = getKey(userProfile);
       const toSave = { ...memory, lastSeen: new Date().toISOString() };
       localStorage.setItem(key, JSON.stringify(toSave));
-      // Sync to KV if signed in
+      // Debounced KV sync — waits 5s after last change before writing
       if (userProfile?.email) {
-        fetch('/api/student-memory', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: userProfile.email, token: makeToken(userProfile.email), memory: toSave }),
-        }).catch(() => {});
+        if (kvSyncTimerRef.current) clearTimeout(kvSyncTimerRef.current);
+        kvSyncTimerRef.current = setTimeout(() => {
+          fetch('/api/student-memory', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: userProfile.email, token: makeToken(userProfile.email), memory: toSave }),
+          }).catch(() => {});
+        }, 5000);
       }
     } catch {}
   }, [userProfile]);
@@ -306,7 +311,10 @@ export function useSessionMemory(userProfile) {
   const hasPriorSession = Boolean(
     sessionMemory.sessionSummary ||
     sessionMemory.weakTopics?.length ||
-    sessionMemory.currentSubject
+    sessionMemory.currentSubject ||
+    sessionMemory.whatWorkedLastTime?.length ||
+    sessionMemory.whatWorkedHistory?.length ||
+    sessionMemory.nextGoals?.length
   );
 
   /**
@@ -322,6 +330,15 @@ export function useSessionMemory(userProfile) {
     }
     if (sessionMemory.weakTopics?.length) {
       parts.push(`you were finding ${sessionMemory.weakTopics.slice(-2).join(' and ')} tricky`);
+    }
+    // Mention what worked last time — helps the student feel remembered
+    if (sessionMemory.whatWorkedLastTime?.length) {
+      const technique = sessionMemory.whatWorkedLastTime[0];
+      parts.push(`and you really enjoyed when we did ${technique}`);
+    }
+    // Mention next goals from last session
+    if (sessionMemory.nextGoals?.length) {
+      parts.push(`we planned to work on ${sessionMemory.nextGoals[0]}`);
     }
 
     if (!parts.length) return null;

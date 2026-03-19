@@ -30,6 +30,7 @@ export default async function handler(req, res) {
     );
     return res.status(200).json({ students, stats: { total: students.length } });
   } catch (e) {
-    return res.status(500).json({ error: e.message });
+    console.error('[dashboard-data]', e.message);
+    return res.status(500).json({ error: 'Failed to load dashboard data.' });
   }
 }

@@ -2,9 +2,10 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useSessionLimit } from '../utils/useSessionLimit';
+import { useTheme } from './_app';
 
 const GRADE_GROUPS = [
-  { label: 'Primary', color: '#A8E063', grades: [
+  { label: 'Primary — KG to Grade 5', color: '#A8E063', grades: [
     { id: 'kg', label: 'KG', age: '4–5', emoji: '🌱' },
     { id: 'grade1', label: 'Grade 1', age: '5–6', emoji: '⭐' },
     { id: 'grade2', label: 'Grade 2', age: '6–7', emoji: '🌈' },
@@ -12,16 +13,16 @@ const GRADE_GROUPS = [
     { id: 'grade4', label: 'Grade 4', age: '8–9', emoji: '🌊' },
     { id: 'grade5', label: 'Grade 5', age: '9–10', emoji: '🔬' },
   ]},
-  { label: 'Middle School', color: '#FFC300', grades: [
+  { label: 'Middle School — Grade 6 to 8', color: '#FFC300', grades: [
     { id: 'grade6', label: 'Grade 6', age: '10–11', emoji: '🧬' },
     { id: 'grade7', label: 'Grade 7', age: '11–12', emoji: '⚡' },
     { id: 'grade8', label: 'Grade 8', age: '12–13', emoji: '🌍' },
   ]},
-  { label: 'Matric', color: '#FF8C69', grades: [
+  { label: 'Matric — Grade 9 & 10 Board', color: '#FF8C69', grades: [
     { id: 'grade9', label: 'Grade 9', age: '13–14', emoji: '🎯' },
     { id: 'grade10', label: 'Grade 10', age: '14–15', emoji: '📋' },
   ]},
-  { label: 'Cambridge', color: '#4F8EF7', grades: [
+  { label: 'Cambridge — O & A Level', color: '#4F8EF7', grades: [
     { id: 'olevel1', label: 'O Level', age: '14–16', emoji: '📚' },
     { id: 'alevel1', label: 'AS / A Level', age: '16–18', emoji: '🎓' },
   ]},
@@ -55,6 +56,20 @@ const SUBJECTS_ALEVEL = [
   'Islamic Studies', 'Divinity', 'Art & Design', 'Music', 'Physical Education', 'General Paper', 'Media Studies',
 ];
 
+function formatMsg(text) {
+  if (!text) return '<span style="opacity:0.4">...</span>';
+  if (text === '...') return '<span style="opacity:0.4">Starky is typing...</span>';
+  return text
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/^#{1,3}\s+(.+)$/gm, '<strong style="font-size:1.1em">$1</strong>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong style="color:#4F8EF7">$1</strong>')
+    .replace(/(?<!\*)\*([^*]+?)\*(?!\*)/g, '<em>$1</em>')
+    .replace(/`([^`]+)`/g, '<code style="background:rgba(79,142,247,0.15);padding:2px 6px;border-radius:4px;font-size:0.9em">$1</code>')
+    .replace(/^(\d+)\.\s+/gm, '<span style="color:#4F8EF7;font-weight:700">$1.</span> ')
+    .replace(/^[-•]\s+/gm, '<span style="color:#4F8EF7">•</span> ')
+    .replace(/\n/g, '<br>');
+}
+
 export default function Home() {
   const [selectedGrade, setSelectedGrade] = useState(null);
   const [selectedSubject, setSelectedSubject] = useState(null);
@@ -69,6 +84,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [chatStarted, setChatStarted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   // Registration
   const [showRegModal, setShowRegModal] = useState(false);
@@ -108,8 +124,8 @@ export default function Home() {
       const r = new SR();
       r.continuous = false;
       r.interimResults = false;
-      r.lang = 'en-US'; // Also accepts Urdu input — browser auto-detects mixed language
-      r.onresult = (e) => { const t = e.results?.[0]?.[0]?.transcript; if (t) setInput(prev => prev + t); setIsListening(false); };
+      r.lang = (navigator.language || '').startsWith('ur') ? 'ur-PK' : 'en-US';
+      r.onresult = (e) => { const t = e.results?.[0]?.[0]?.transcript; if (t) { setInput(t); setIsListening(false); setTimeout(() => { const btn = document.querySelector('.sb2'); if (btn && !btn.disabled) btn.click(); }, 300); } else { setIsListening(false); } };
       r.onerror = () => setIsListening(false);
       r.onend = () => setIsListening(false);
       recognitionRef.current = r;
@@ -122,7 +138,14 @@ export default function Home() {
   const speakText = useCallback((text) => {
     if (!synthRef.current) return;
     synthRef.current.cancel();
-    const clean = text.replace(/[★\*_`#]/g, '').replace(/\n+/g, ' ').substring(0, 400);
+    const clean = text
+      .replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, '')  // strip ALL emojis
+      .replace(/[\u{FE00}-\u{FE0F}\u{200D}\u{20E3}\u{E0020}-\u{E007F}]/gu, '')  // variation selectors, joiners, tags
+      .replace(/[★*_`#]/g, '')
+      .replace(/\s{2,}/g, ' ')
+      .replace(/\n+/g, ' ')
+      .trim()
+      .substring(0, 400);
     const utt = new SpeechSynthesisUtterance(clean);
     utt.rate = 0.95; utt.pitch = 1.05; utt.volume = 1;
     const voices = synthRef.current.getVoices();
@@ -151,7 +174,17 @@ export default function Home() {
   const handleRegSubmit = () => {
     if (!regName.trim()) { setRegError('Please enter your name'); return; }
     if (!regEmail.trim() || !regEmail.includes('@')) { setRegError('Please enter a valid email'); return; }
-    const profile = { name: regName.trim(), email: regEmail.trim(), role: regRole, grade: selectedGrade?.label || '', gradeId: selectedGrade?.id || '', gradeAge: selectedGrade?.age || '', joinedAt: new Date().toISOString() };
+    const profile = {
+      name: regName.trim(),
+      email: regEmail.trim(),
+      role: regRole,
+      grade: selectedGrade?.label || '',
+      gradeId: selectedGrade?.id || '',
+      gradeAge: selectedGrade?.age || '',
+      joinedAt: new Date().toISOString(),
+      // Parent communication: when role is parent OR student is young, the registering email is the parent's
+      parentEmail: regEmail.trim(),
+    };
     localStorage.setItem('nw_user', JSON.stringify(profile));
     setUserProfile(profile);
     setShowRegModal(false);
@@ -176,14 +209,13 @@ export default function Home() {
 
     let greeting;
     if (isYoung) {
-      greeting = `Hi ${firstName}! I'm Starky ★ — your learning friend! 🌟\n\nI'm here to help you with ${selectedGrade.label}${subject ? ` ${subject}` : ''}. We'll learn together — it's going to be fun!\n\nWhat would you like to learn today? You can ask me anything or send me a photo of your homework! 📷`;
+      greeting = `Hi ${firstName}! 👋🌟 I'm Starky — your learning star!\n\n${subject ? `Let's learn ${subject} together! 🎯` : `What shall we learn? Tell me! 🎤`}\n\nYou can talk to me, or tap the 🎤 button to speak!`;
     } else if (isMiddle) {
-      greeting = `Hey ${firstName}! I'm Starky ★ — your study buddy.\n\nI'm your tutor for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}. I know your syllabus inside out.\n\nAsk me anything — homework help, explain a concept, or quiz you. You can also photograph your textbook and I'll read it!`;
+      greeting = `Hey ${firstName}! I'm Starky ★\n\n${subject ? `Let's work on ${subject}. ` : ''}I know your entire syllabus — every chapter, every concept. You can ask me anything, photograph your textbook, or say "quiz me" and I'll test you.\n\nWhat do you need help with?`;
     } else if (isMatric) {
-      greeting = `Hi ${firstName}! I'm Starky ★ — your Matric preparation partner.\n\nI know the BISE board syllabus for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}. Every chapter, every question type.\n\nAsk me anything — homework, board exam prep, or say "quiz me". You can also send a photo of your notes!`;
+      greeting = `Hey ${firstName}! Starky here ★\n\nI know the ${subject || 'Matric'} board syllabus front to back — every numerical, every definition, every diagram the BISE examiner expects.\n\n${subject ? `Try me — ask anything about ${subject}, send a photo of your notes, or say "quiz me".` : 'Type your question, photograph your notes, or say "quiz me".'}\n\nRoman Urdu mein bhi pooch sakte ho 🇵🇰`;
     } else {
-      const subjectHint = subject ? `\n\nI know every ${subject} past paper, mark scheme, and examiner report. Try me — ask a question, send a photo, or say "quiz me on ${subject}".` : '\n\nAsk me anything — homework help, exam prep, or photograph your notes.';
-      greeting = `Hi ${firstName}! I'm Starky ★ — I've studied every Cambridge past paper from 1994 to 2024.\n\nI'm your personal tutor for ${selectedGrade.label}${subject ? ` — ${subject}` : ''}.${subjectHint}`;
+      greeting = `Hey ${firstName}! Starky here ★\n\nI've gone through every ${subject || 'Cambridge'} past paper, mark scheme, and examiner report from 1994 to 2024.\n\n${subject ? `Ask me anything about ${subject} — past paper question, concept explanation, or say "quiz me on ${subject}".` : 'Ask me anything — homework, exam prep, or photograph your notes.'}\n\nCommand words, mark allocation, examiner expectations — I know it all.`;
     }
     if (isParent) greeting += '\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰';
     setMessages([{ role: 'assistant', content: greeting }]);
@@ -212,6 +244,7 @@ export default function Home() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           message: text,
+          stream: true,
           userProfile: {
             ...p,
             gradeId: selectedGrade?.id || p.gradeId || '',
@@ -221,12 +254,54 @@ export default function Home() {
           sessionMemory: { currentSubject: selectedSubject || '', conversationHistory: newMsgs.slice(-10) },
         }),
       });
+
+      if (!res.ok) {
+        let errData = {};
+        try { errData = await res.json(); } catch {}
+        throw new Error(errData.error || `API ${res.status}`);
+      }
+
       let data = {};
-      try { data = await res.json(); } catch(e) { data = {}; }
-      const reply = (res.ok && (data.response || data.content)) ? (data.response || data.content) : (data.error || "Starky is busy — please try again in a moment!");
-      setMessages([...newMsgs, { role: 'assistant', content: reply }]);
+      let reply = '';
+
+      // Handle streaming response
+      if (res.headers.get('content-type')?.includes('text/event-stream')) {
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+        const streamIdx = newMsgs.length;
+        setMessages([...newMsgs, { role: 'assistant', content: '...' }]);
+        setLoading(false);
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          buffer += decoder.decode(value, { stream: true });
+          const lines = buffer.split('\n\n');
+          buffer = lines.pop() || '';
+          for (const line of lines) {
+            if (!line.startsWith('data: ')) continue;
+            try {
+              const evt = JSON.parse(line.slice(6));
+              if (evt.type === 'text') {
+                reply += evt.text;
+                setMessages(prev => { const u = [...prev]; u[streamIdx] = { role: 'assistant', content: reply }; return u; });
+              } else if (evt.type === 'error') { throw new Error(evt.error); }
+            } catch (pe) { if (pe.message && !pe.message.includes('JSON')) throw pe; }
+          }
+        }
+        data = { response: reply };
+      } else {
+        try { data = await res.json(); } catch(e) { data = {}; }
+        reply = data.response || data.content || '';
+      }
+      const finalReply = reply || data.response || data.content || "Starky is busy — please try again in a moment!";
+      // Only set messages if not already set by streaming
+      if (!res.headers.get('content-type')?.includes('text/event-stream')) {
+        setMessages([...newMsgs, { role: 'assistant', content: finalReply }]);
+      }
       try { recordCall(); } catch(e) {}
-      try { if (voiceSupported) speakText(reply); } catch(e) {}
+      try { if (voiceSupported && finalReply.length < 400) speakText(finalReply); } catch(e) {}
       try {
         if (newMsgs.filter(m => m.role === 'user').length >= 5 && p.email) {
           fetch('/api/session-complete', {
@@ -299,14 +374,14 @@ export default function Home() {
     <>
       <Head>
         <title>Starky ★ — NewWorldEdu</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" rel="stylesheet" />
       </Head>
       <style jsx global>{`
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         body{background:#080C18;font-family:-apple-system,BlinkMacSystemFont,'Inter',sans-serif;color:#fff}
         .cs{display:flex;flex-direction:column;height:100dvh;max-width:680px;margin:0 auto}
-        .ch{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:#080C18;border-bottom:1px solid rgba(255,255,255,.08);flex-shrink:0}
+        .ch{display:flex;align-items:center;justify-content:space-between;padding:calc(12px + env(safe-area-inset-top)) 16px 12px;background:#080C18;border-bottom:1px solid rgba(255,255,255,.08);flex-shrink:0}
         .chl{display:flex;align-items:center;gap:10px}
         .av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#4F8EF7,#7C5CBF);display:flex;align-items:center;justify-content:center;font-size:17px;font-family:'Sora',sans-serif;font-weight:800;flex-shrink:0}
         .cn{font-family:'Sora',sans-serif;font-size:15px;font-weight:700}
@@ -321,13 +396,14 @@ export default function Home() {
         .msg{max-width:86%;line-height:1.65;font-size:15px;padding:12px 16px;border-radius:18px;white-space:pre-wrap;word-break:break-word}
         .msg.user{align-self:flex-end;background:linear-gradient(135deg,#4F8EF7,#6366F1);border-bottom-right-radius:4px}
         .msg.assistant{align-self:flex-start;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);border-bottom-left-radius:4px}
+        .msg.assistant strong{color:#4F8EF7;font-weight:700}
         .msg.typing{opacity:.5;font-style:italic}
         .lw{margin:0 16px 12px;padding:18px 20px;background:rgba(255,60,60,.07);border:1px solid rgba(255,60,60,.18);border-radius:16px;text-align:center}
         .lw p{font-size:14px;color:rgba(255,255,255,.65);margin-bottom:14px;line-height:1.6}
         .lw a{display:inline-block;background:linear-gradient(135deg,#4F8EF7,#7C5CBF);color:#fff;padding:12px 28px;border-radius:100px;font-family:'Sora',sans-serif;font-size:15px;font-weight:700;text-decoration:none}
-        .cia{padding:10px 16px 14px;background:#080C18;border-top:1px solid rgba(255,255,255,.07);flex-shrink:0}
+        .cia{padding:10px 16px calc(14px + env(safe-area-inset-bottom));background:#080C18;border-top:1px solid rgba(255,255,255,.07);flex-shrink:0}
         .ir{display:flex;gap:8px;align-items:flex-end}
-        .ta{flex:1;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:14px;color:#fff;padding:12px 14px;font-size:15px;font-family:inherit;outline:none;resize:none;max-height:100px;-webkit-appearance:none}
+        .ta{flex:1;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:14px;color:#fff;padding:12px 14px;font-size:16px;font-family:inherit;outline:none;resize:none;max-height:100px;-webkit-appearance:none}
         .ta::placeholder{color:rgba(255,255,255,.28)}
         .ta:focus{border-color:rgba(79,142,247,.4)}
         .sb2{width:46px;height:46px;border-radius:12px;flex-shrink:0;background:linear-gradient(135deg,#4F8EF7,#6366F1);border:none;cursor:pointer;font-size:20px;color:#fff;display:flex;align-items:center;justify-content:center}
@@ -343,14 +419,17 @@ export default function Home() {
           </div>
           <div className="chr">
             {isSpeaking && <button className="ib sp" onClick={stopSpeaking}>🔊 Stop</button>}
-            <button className="ib" onClick={() => { setChatStarted(false); setMessages([]); stopSpeaking(); }}>← Back</button>
+            <button className="ib" onClick={() => { if (messages.length > 2 && !confirm('Leave this chat? Your conversation will be lost.')) return; setChatStarted(false); setMessages([]); stopSpeaking(); }}>← Back</button>
           </div>
         </div>
         {!isLimitReached && remaining <= 2 && (
           <div className={`sb ${remaining <= 1 ? 'd' : 'w'}`}>{remaining} session{remaining !== 1 ? 's' : ''} remaining today</div>
         )}
         <div className="cm">
-          {messages.map((m, i) => <div key={i} className={`msg ${m.role}`}>{m.content}</div>)}
+          {messages.map((m, i) => m.role === 'assistant'
+            ? <div key={i} className={`msg ${m.role}`} dangerouslySetInnerHTML={{ __html: formatMsg(m.content) }} />
+            : <div key={i} className={`msg ${m.role}`}>{m.content}</div>
+          )}
           {loading && <div className="msg assistant typing">Starky is thinking…</div>}
           {/* Quick suggestion chips — grade-appropriate */}
           {messages.length === 1 && !loading && (
@@ -404,7 +483,7 @@ export default function Home() {
       <Head>
         <title>NewWorldEdu ★ — AI Tutor | KG to A Levels</title>
         <meta name="description" content="Meet Starky — your child's personal AI teacher. 24/7, 16 languages, KG to A Levels. Start your 7-day trial." />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
       </Head>
       <style jsx global>{`
@@ -434,7 +513,8 @@ export default function Home() {
         .sec{padding:36px 20px}
         .sl{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:14px;text-align:center}
         .st{font-family:'Sora',sans-serif;font-size:20px;font-weight:700;text-align:center;margin-bottom:18px;line-height:1.3}
-        .gg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:480px;margin:0 auto}
+        .gg{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;max-width:480px;margin:0 auto}
+        @media(min-width:420px){.gg{grid-template-columns:repeat(3,1fr)}}
         .gb{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:14px 6px;cursor:pointer;text-align:center;-webkit-tap-highlight-color:transparent;display:flex;flex-direction:column;align-items:center;gap:4px;transition:all .15s}
         .gb.s{background:rgba(79,142,247,.13);border-color:rgba(79,142,247,.45)}
         .gb:active{transform:scale(.95)}
@@ -445,7 +525,7 @@ export default function Home() {
         .sbb{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:100px;padding:8px 16px;font-size:13px;font-weight:500;cursor:pointer;color:rgba(255,255,255,.65);-webkit-tap-highlight-color:transparent;transition:all .15s}
         .sbb.s{background:rgba(124,92,191,.18);border-color:rgba(124,92,191,.45);color:#A78BFA}
         .sw{text-align:center;margin-top:26px}
-        .stb{display:inline-block;min-width:220px;background:linear-gradient(135deg,#4F8EF7,#6366F1);color:#fff;border:none;border-radius:14px;padding:16px 32px;font-size:17px;font-weight:700;font-family:'Sora',sans-serif;cursor:pointer;box-shadow:0 8px 28px rgba(79,142,247,.28);-webkit-tap-highlight-color:transparent}
+        .stb{display:block;width:100%;max-width:320px;margin:0 auto;background:linear-gradient(135deg,#4F8EF7,#6366F1);color:#fff;border:none;border-radius:14px;padding:16px 32px;font-size:17px;font-weight:700;font-family:'Sora',sans-serif;cursor:pointer;box-shadow:0 8px 28px rgba(79,142,247,.28);-webkit-tap-highlight-color:transparent}
         .stb:disabled{opacity:.3;cursor:not-allowed;box-shadow:none}
         .ft{padding:36px 20px;background:rgba(255,255,255,.02);border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05)}
         .fg{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:480px;margin:18px auto 0}
@@ -479,7 +559,7 @@ export default function Home() {
         .md p{font-size:14px;color:rgba(255,255,255,.45);margin-bottom:22px;line-height:1.6}
         .mf{margin-bottom:14px}
         .mlb{font-size:12px;font-weight:600;color:rgba(255,255,255,.4);letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px;display:block}
-        .mi{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:10px;color:#fff;padding:12px 14px;font-size:15px;outline:none;-webkit-appearance:none}
+        .mi{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:10px;color:#fff;padding:12px 14px;font-size:16px;outline:none;-webkit-appearance:none}
         .mi::placeholder{color:rgba(255,255,255,.25)}
         .mi:focus{border-color:rgba(79,142,247,.4)}
         .rr{display:flex;gap:8px}
@@ -495,11 +575,85 @@ export default function Home() {
           .hc{flex-direction:row;justify-content:center}
           .bp,.bo{width:auto}
         }
+
+        /* ── Light mode overrides for homepage ── */
+        [data-theme="light"] body{background:var(--bg-primary);color:var(--text-primary)}
+        [data-theme="light"] .nav{background:var(--nav-bg);border-color:var(--border)}
+        [data-theme="light"] .nl{color:var(--text-primary)}
+        [data-theme="light"] .nh{background:var(--bg-card);color:var(--text-primary)}
+        [data-theme="light"] .dr{background:rgba(255,255,255,.98)}
+        [data-theme="light"] .dr a{color:var(--text-secondary);border-color:var(--border)}
+        [data-theme="light"] .hero h1{color:var(--text-primary)}
+        [data-theme="light"] .hs{color:var(--text-muted)}
+        [data-theme="light"] .bo{background:var(--bg-card);border-color:var(--border);color:var(--text-secondary)}
+        [data-theme="light"] .sec{color:var(--text-primary)}
+        [data-theme="light"] .sl{color:var(--text-muted)}
+        [data-theme="light"] .st{color:var(--text-primary)}
+        [data-theme="light"] .gb{background:var(--bg-card);border-color:var(--border)}
+        [data-theme="light"] .gb.s{background:rgba(79,142,247,.1);border-color:rgba(79,142,247,.35)}
+        [data-theme="light"] .gn{color:var(--text-primary)}
+        [data-theme="light"] .ga{color:var(--text-muted)}
+        [data-theme="light"] .sbb{background:var(--bg-card);border-color:var(--border);color:var(--text-secondary)}
+        [data-theme="light"] .sbb.s{background:rgba(124,92,191,.1);border-color:rgba(124,92,191,.35);color:#7C5CBF}
+        [data-theme="light"] .ft{background:var(--bg-card);border-color:var(--border)}
+        [data-theme="light"] .fc{background:var(--bg-card);border-color:var(--border)}
+        [data-theme="light"] .ftit{color:var(--text-primary)}
+        [data-theme="light"] .fd{color:var(--text-muted)}
+        [data-theme="light"] .qs{color:var(--text-primary)}
+        [data-theme="light"] .qc{background:var(--bg-card);border-color:var(--border)}
+        [data-theme="light"] .qt{color:var(--text-secondary)}
+        [data-theme="light"] .qa{color:var(--text-muted)}
+        [data-theme="light"] .qa strong{color:var(--text-secondary)}
+        [data-theme="light"] .sen{background:linear-gradient(135deg,rgba(228,93,156,.05),rgba(124,92,191,.05));border-color:rgba(228,93,156,.1)}
+        [data-theme="light"] .sen h2{color:var(--text-primary)}
+        [data-theme="light"] .sen p{color:var(--text-muted)}
+        [data-theme="light"] .foot{border-color:var(--border)}
+        [data-theme="light"] .fl{color:var(--text-primary)}
+        [data-theme="light"] .ftag{color:var(--text-muted)}
+        [data-theme="light"] .flinks a{color:var(--text-muted)}
+        [data-theme="light"] .fc2{color:var(--text-muted)}
+        [data-theme="light"] .pl{color:var(--text-muted)}
+        [data-theme="light"] .qst{color:var(--text-primary)}
+        /* Modal */
+        [data-theme="light"] .md{background:#fff;border-color:var(--border)}
+        [data-theme="light"] .md h2{color:var(--text-primary)}
+        [data-theme="light"] .md p{color:var(--text-muted)}
+        [data-theme="light"] .mlb{color:var(--text-muted)}
+        [data-theme="light"] .mi{background:var(--input-bg);border-color:var(--input-border);color:var(--text-primary)}
+        [data-theme="light"] .mi::placeholder{color:var(--text-faint)}
+        [data-theme="light"] .rb{background:var(--bg-card);border-color:var(--border);color:var(--text-secondary)}
+        [data-theme="light"] .rb.s{background:rgba(79,142,247,.1);border-color:rgba(79,142,247,.35);color:#3B7DE8}
+        [data-theme="light"] .mfine{color:var(--text-faint)}
+        [data-theme="light"] .me{color:#dc2626}
+        /* Chat area */
+        [data-theme="light"] .mb{background:var(--bg-card) !important;border-color:var(--border) !important;color:var(--text-primary) !important}
+
+        /* ── Broad inline style overrides for light mode ── */
+        /* Catch all inline rgba(255,255,255,...) text colors on the homepage */
+        [data-theme="light"] .sec [style*="rgba(255,255,255"]{color:var(--text-muted) !important}
+        [data-theme="light"] .sec [style*="fontWeight:800"]{color:var(--text-primary) !important}
+        [data-theme="light"] .sec [style*="fontWeight: 800"]{color:var(--text-primary) !important}
+        [data-theme="light"] .hero [style*="rgba(255,255,255"]{color:var(--text-muted) !important}
+        /* Comparison table */
+        [data-theme="light"] .sec > div[style*="rgba(255,255,255,0.03)"]{background:var(--bg-card) !important;border-color:var(--border) !important}
+        [data-theme="light"] .sec > div div[style*="borderBottom"]{border-color:var(--border) !important}
+        [data-theme="light"] .sec [style*="color:\'rgba(255,255,255"]{color:var(--text-muted) !important}
+        /* School/dashboard link text */
+        [data-theme="light"] .sec a[style*="rgba(255,255,255"]{color:var(--text-muted) !important}
+        /* Cambridge section inline buttons */
+        [data-theme="light"] section[style*="background:#0A0F1E"],
+        [data-theme="light"] section[style*="background: #0A0F1E"]{background:var(--bg-secondary) !important}
+        /* The O/A Level section heading and descriptions */
+        [data-theme="light"] section p[style*="rgba(255,255,255"]{color:var(--text-muted) !important}
+        [data-theme="light"] section button[style*="rgba(255,255,255,0.05)"]{background:var(--bg-card) !important;border-color:var(--border) !important;color:var(--text-secondary) !important}
+        [data-theme="light"] section button[style*="rgba(255,255,255,0.04)"]{background:var(--bg-card) !important;border-color:var(--border) !important;color:var(--text-secondary) !important}
+        /* Menu links in light mode */
+        [data-theme="light"] .dr div[style*="rgba(255,255,255"]{color:var(--text-muted) !important}
       `}</style>
 
       {/* Registration Modal */}
       {showRegModal && (
-        <div className="mo" onClick={e => { if (e.target.classList.contains('mo')) setShowRegModal(false); }}>
+        <div className="mo" onClick={e => { if (e.target.classList.contains('mo') && !regName.trim() && !regEmail.trim()) setShowRegModal(false); }}>
           <div className="md">
             <h2>Almost there! ★</h2>
             <p>Create your account to start learning with Starky. We'll send you a learning report after your first session.</p>
@@ -532,6 +686,7 @@ export default function Home() {
         <a href="/" className="nl">NewWorldEdu<span>★</span></a>
         <div className="nr">
           <a href="/pricing" className="np">Plans</a>
+          <button className="nh" onClick={toggleTheme} aria-label="Toggle light/dark mode" title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}>{theme === 'dark' ? '☀️' : '🌙'}</button>
           <button className="nh" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen?'✕':'☰'}</button>
         </div>
       </nav>
@@ -634,8 +789,8 @@ export default function Home() {
               </div>
             </div>
             <div className="sw">
-              <button className="stb" onClick={handleStartChat}>
-                {userProfile?.name ? `Continue as ${userProfile.name.split(' ')[0]} →` : 'Start with Starky ★'}
+              <button className="stb" disabled={!selectedGrade || !selectedSubject} onClick={handleStartChat}>
+                {!selectedGrade ? 'Select your grade above ↑' : !selectedSubject ? 'Select a subject ↑' : userProfile?.name ? `Continue as ${userProfile.name.split(' ')[0]} →` : 'Start with Starky ★'}
               </button>
             </div>
           </>

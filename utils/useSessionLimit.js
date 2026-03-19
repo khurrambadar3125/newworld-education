@@ -137,6 +137,9 @@ export const SessionLimitBanner = ({ callsUsed, callsLeft, limitReached, compact
   const pct = (callsUsed / FREE_DAILY_LIMIT) * 100;
   const barColor = limitReached ? "#FF6B6B" : callsLeft <= 1 ? "#FFC300" : "#A8E063";
 
+  // Hide counter until last 2 sessions (only show when it matters)
+  if (!limitReached && callsLeft > 2) return null;
+
   if (compact) {
     return (
       <div style={{

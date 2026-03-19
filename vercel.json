@@ -47,6 +47,22 @@
     {
       "path": "/api/cron/behaviour-analysis",
       "schedule": "0 21 * * *"
+    },
+    {
+      "path": "/api/cron/signal-analysis",
+      "schedule": "0 21 * * *"
+    },
+    {
+      "path": "/api/cron/auto-improve",
+      "schedule": "0 22 * * 6"
+    },
+    {
+      "path": "/api/cron/evolution-report",
+      "schedule": "0 5 * * 1"
+    },
+    {
+      "path": "/api/cron/national-insights",
+      "schedule": "0 1 * * *"
     }
   ],
   "headers": [

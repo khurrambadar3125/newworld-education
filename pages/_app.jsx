@@ -58,6 +58,7 @@ function AuthBridge() {
         email: session.user.email,
         image: session.user.image || existing.image,
         authProvider: 'google',
+        parentEmail: existing.parentEmail || session.user.email,
       };
       localStorage.setItem('nw_user', JSON.stringify(merged));
     } catch {}
@@ -67,6 +68,33 @@ function AuthBridge() {
 
 // Pages that render their own nav — don't show the shared Nav on these
 const PAGES_WITH_OWN_NAV = ['/', '/past-papers', '/special-needs', '/login', '/start'];
+
+// Catch unhandled errors globally — prevent white screen from async failures
+if (typeof window !== 'undefined') {
+  window.addEventListener('unhandledrejection', (e) => {
+    console.error('[Unhandled Promise]', e.reason);
+    e.preventDefault(); // prevent crash
+  });
+}
+
+// ── Offline detection banner for 3G connections ─────────────────────────────
+function OfflineBanner() {
+  const [offline, setOffline] = useState(false);
+  useEffect(() => {
+    const goOffline = () => setOffline(true);
+    const goOnline = () => setOffline(false);
+    window.addEventListener('offline', goOffline);
+    window.addEventListener('online', goOnline);
+    if (!navigator.onLine) setOffline(true);
+    return () => { window.removeEventListener('offline', goOffline); window.removeEventListener('online', goOnline); };
+  }, []);
+  if (!offline) return null;
+  return (
+    <div style={{ position:'fixed', top:0, left:0, right:0, zIndex:99999, background:'#F87171', color:'#fff', textAlign:'center', padding:'10px 16px', fontSize:14, fontWeight:700, fontFamily:"'Sora',sans-serif" }}>
+      You're offline — check your internet connection
+    </div>
+  );
+}
 
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
   const router = useRouter();
@@ -106,6 +134,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           })}} />
         </Head>
         <style jsx global>{`
+          html, body { overflow-x: hidden; }
           :root, [data-theme="dark"] {
             --bg-primary: #080C18;
             --bg-secondary: #0D1221;
@@ -349,6 +378,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           }
         `}</style>
         <AuthBridge />
+        <OfflineBanner />
         {showNav && <Nav current={router.pathname} />}
         <ErrorBoundary><Component {...pageProps} /></ErrorBoundary>
         {!['/special-needs'].includes(router.pathname) && <StarkyBubble />}

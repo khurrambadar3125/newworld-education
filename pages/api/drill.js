@@ -11,7 +11,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { getKnowledgeForTopic } from '../../utils/getKnowledgeForTopic';
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 25000 });
 
 const SYSTEM = `You are an expert Cambridge examiner and question setter with 30 years of experience.
 You know every mark scheme, examiner report, and common misconception for all Cambridge subjects.
@@ -154,6 +154,19 @@ Reference the key concept they need to recall. Keep it to 1-2 sentences.
 Return JSON: {"hint": "your hint here"}`;
 }
 
+// ── Per-IP rate limiting ─────────────────────────────────────────────────────
+const drillRateMap = new Map();
+function checkDrillRate(ip) {
+  const now = Date.now();
+  const entry = drillRateMap.get(ip);
+  if (!entry || now - entry.t > 60000) { drillRateMap.set(ip, { t: now, c: 1 }); return true; }
+  if (entry.c >= 15) return false; // max 15 drill API calls per minute
+  entry.c++;
+  return true;
+}
+// Cleanup every 5 min
+setInterval(() => { const now = Date.now(); for (const [k, v] of drillRateMap) { if (now - v.t > 120000) drillRateMap.delete(k); } }, 300000);
+
 // ── Handler ──────────────────────────────────────────────────────────────────
 export default async function handler(req, res) {
   const origin = req.headers.origin;
@@ -163,6 +176,12 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Headers','Content-Type');
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).json({ error:'Method not allowed' });
+
+  // Rate limit check
+  const ip = req.headers['x-forwarded-for'] || 'unknown';
+  if (!checkDrillRate(ip)) {
+    return res.status(429).json({ error: 'Too many requests. Please slow down.' });
+  }
 
   const { action, ...params } = req.body || {};
   if (!action) return res.status(400).json({ error:'action required' });
@@ -203,12 +222,23 @@ export default async function handler(req, res) {
       return res.status(400).json({ error:`Unknown action: ${action}` });
     }
 
-    const response = await client.messages.create({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: 800,
-      system: systemPrompt,
-      messages,
-    });
+    // Retry with exponential backoff for resilience under load
+    let response;
+    for (let attempt = 0; attempt <= 2; attempt++) {
+      try {
+        response = await client.messages.create({
+          model: 'claude-haiku-4-5-20251001',
+          max_tokens: 800,
+          system: systemPrompt,
+          messages,
+        });
+        break;
+      } catch (retryErr) {
+        if (retryErr?.status && retryErr.status < 500 && retryErr.status !== 429) throw retryErr;
+        if (attempt === 2) throw retryErr;
+        await new Promise(r => setTimeout(r, Math.pow(2, attempt) * 1000));
+      }
+    }
 
     const raw = response.content
       .filter(b => b.type === 'text')

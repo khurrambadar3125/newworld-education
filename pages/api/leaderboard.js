@@ -1,5 +1,10 @@
 import { kv } from '@vercel/kv';
 
+// In-memory cache — prevents KV read on every page load at 1000 concurrent users
+let _boardCache = null;
+let _boardCacheTime = 0;
+const BOARD_CACHE_TTL = 300000; // 5 minutes
+
 const getWeekKey = () => {
   const now = new Date();
   const weekStart = new Date(now);
@@ -12,14 +17,22 @@ export default async function handler(req, res) {
   // GET — return this week's leaderboard
   if (req.method === 'GET') {
     try {
+      // Return cached leaderboard if fresh (saves KV reads at scale)
+      if (_boardCache && Date.now() - _boardCacheTime < BOARD_CACHE_TTL) {
+        return res.status(200).json({ board: _boardCache });
+      }
       const key = getWeekKey();
       const raw = await kv.get(key);
       let board = [];
       try { board = raw ? (typeof raw === 'string' ? JSON.parse(raw) : raw) : []; } catch { board = []; }
-      // Sort by score descending, take top 20
       board.sort((a, b) => b.score - a.score);
-      return res.status(200).json({ board: board.slice(0, 20) });
+      const top = board.slice(0, 20);
+      _boardCache = top;
+      _boardCacheTime = Date.now();
+      return res.status(200).json({ board: top });
     } catch (err) {
+      // Return cache even if stale on error
+      if (_boardCache) return res.status(200).json({ board: _boardCache });
       return res.status(200).json({ board: [] });
     }
   }
@@ -57,6 +70,10 @@ export default async function handler(req, res) {
 
       // Save with 8-day TTL (covers the full week + buffer)
       await kv.set(key, JSON.stringify(board), { ex: 8 * 24 * 60 * 60 });
+
+      // Invalidate cache so next GET shows updated board
+      _boardCache = null;
+      _boardCacheTime = 0;
 
       return res.status(200).json({ ok: true });
     } catch (err) {

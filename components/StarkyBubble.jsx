@@ -2,10 +2,36 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { useSessionMemory, detectAndSaveMistake } from '../utils/useSessionMemory';
 import { useTheme } from '../pages/_app';
+import { useSessionLimit, LimitReachedModal } from '../utils/useSessionLimit';
+import { recordMessageSignal, recordMoodSignal, recordDropoffSignal, recordStrategySignal, detectSentiment } from '../utils/signalCollector';
+
+// Format Starky's messages — lightweight markdown rendering for mobile readability
+function formatStarkyMsg(text) {
+  if (!text) return '<span style="opacity:0.4">...</span>';
+  if (text === '...') return '<span style="opacity:0.4;animation:pulse 1.5s ease-in-out infinite">Starky is typing...</span>';
+  let html = text
+    // Escape HTML entities first (prevent XSS)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    // Headings: # text → bold large text (strip the #)
+    .replace(/^#{1,3}\s+(.+)$/gm, '<strong style="font-size:1.1em">$1</strong>')
+    // Bold: **text** → <strong>
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    // Italic: *text* → <em> (but not inside **)
+    .replace(/(?<!\*)\*([^*]+?)\*(?!\*)/g, '<em>$1</em>')
+    // Inline code: `text` → styled span
+    .replace(/`([^`]+)`/g, '<code style="background:rgba(79,142,247,0.15);padding:2px 6px;border-radius:4px;font-size:0.9em">$1</code>')
+    // Numbered lists: "1. " at start of line
+    .replace(/^(\d+)\.\s+/gm, '<span style="color:#4F8EF7;font-weight:700">$1.</span> ')
+    // Bullet points: "- " at start of line
+    .replace(/^[-•]\s+/gm, '<span style="color:#4F8EF7">•</span> ')
+    // Line breaks
+    .replace(/\n/g, '<br>');
+  return html;
+}
 
 export default function StarkyBubble() {
   const [open, setOpen] = useState(false);
-  const [fullscreen, setFullscreen] = useState(false);
+  const [fullscreen, setFullscreen] = useState(true); // Always open fullscreen by default
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -15,12 +41,18 @@ export default function StarkyBubble() {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [kidMode, setKidMode] = useState(false);
   const [imageData, setImageData] = useState(null);
+  const [showLimitModal, setShowLimitModal] = useState(false);
+  const [isMicActive, setIsMicActive] = useState(false);
+  const [sttSupported, setSttSupported] = useState(false);
+  const micRef = useRef(null);
   const { theme, toggleTheme } = useTheme();
+  const { limitReached, recordCall } = useSessionLimit(userProfile?.email);
   const loadingRef = useRef(false);
   const messagesRef = useRef([]);
   const synthRef = useRef(null);
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
+  const pendingVoiceRef = useRef(null);
   const fileInputRef = useRef(null);
   const cameraInputRef = useRef(null);
 
@@ -49,13 +81,26 @@ export default function StarkyBubble() {
       setTimeout(() => { if (cameraInputRef.current) cameraInputRef.current.click(); }, 400);
     };
     window.addEventListener('starky-scan', onScan);
-    return () => { clearTimeout(t); window.removeEventListener('starky-scan', onScan); };
+    // Listen for voice transcript from VoiceChatBar
+    const onVoice = (e) => {
+      const text = e.detail?.text;
+      if (!text) return;
+      // Store the voice text in a ref so sendMessage can pick it up
+      pendingVoiceRef.current = text;
+      setOpen(true); setPulse(false);
+      setInput(text);
+    };
+    window.addEventListener('starky-voice', onVoice);
+    return () => { clearTimeout(t); window.removeEventListener('starky-scan', onScan); window.removeEventListener('starky-voice', onVoice); };
   }, []);
 
   useEffect(() => {
     if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
       synthRef.current = window.speechSynthesis;
       setVoiceSupported(true);
+    }
+    if (typeof window !== 'undefined' && ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window)) {
+      setSttSupported(true);
     }
   }, []);
 
@@ -90,6 +135,19 @@ export default function StarkyBubble() {
         }
       } catch {}
 
+      // Read streak data for richer greetings
+      let streakDays = 0;
+      try {
+        const streakRaw = localStorage.getItem('nw_streak');
+        if (streakRaw) {
+          const sd = JSON.parse(streakRaw);
+          streakDays = sd?.current || 0;
+        }
+      } catch {}
+      const streakMsg = streakDays >= 7 ? `\n\n🔥 **${streakDays} day streak!** You're on fire — keep it going!`
+        : streakDays >= 3 ? `\n\n🔥 ${streakDays} day streak! Keep it up!`
+        : '';
+
       // Build proactive greeting based on memory
       let greeting = null;
 
@@ -99,27 +157,50 @@ export default function StarkyBubble() {
         greeting = `Welcome back ${name}! ★ ${assignment.setBy || 'Your parent'} asked you to work on: **${assignment.topic}**\n\nLet's tackle this together! Ask me anything about it, or say "start" and I'll begin teaching you step by step.`;
       } else if (parentFeedback) {
         greeting = `Welcome back ${name}! ★\n\n💬 **Message from ${parentFeedback.from}:** "${parentFeedback.feedback}"\n\nWhat would you like to work on today?`;
+      } else if (sessionMemory?.nextGoals?.length) {
+        // AI-recommended next steps from last session analysis
+        greeting = `Welcome back ${name}! ★ Based on our last session, I'd recommend working on: **${sessionMemory.nextGoals[0]}**\n\nWant to start there, or something else?${streakMsg}`;
       } else if (sessionMemory?.recentMistakes?.length) {
-        // Student has known mistakes — lead with targeted help
         const latest = sessionMemory.recentMistakes[sessionMemory.recentMistakes.length - 1];
-        greeting = `Welcome back ${name}! ★ Last time you found **${latest.topic}** tricky. Want to tackle that first? I have a new way to explain it.`;
+        greeting = `Welcome back ${name}! ★ Last time you found **${latest.topic}** tricky. Want to tackle that first? I have a new way to explain it.${streakMsg}`;
       } else if (sessionMemory?.weakTopics?.length) {
-        // Student has weak topics — suggest the most recent
         const topic = sessionMemory.weakTopics[sessionMemory.weakTopics.length - 1];
-        greeting = `Hey ${name}! ★ You've been working on **${topic}** — want to do a quick drill to sharpen it up today?`;
+        greeting = `Hey ${name}! ★ You've been working on **${topic}** — want to do a quick drill to sharpen it up today?${streakMsg}`;
       } else if (sessionMemory?.currentSubject) {
-        // Student has a subject in progress — continue it
-        greeting = `Welcome back ${name}! ★ We were working on **${sessionMemory.currentSubject}**. Ready to pick up where we left off?`;
+        greeting = `Welcome back ${name}! ★ We were working on **${sessionMemory.currentSubject}**. Ready to pick up where we left off?${streakMsg}`;
       } else if (sessionMemory?.totalSessions > 0) {
-        // Returning student but no specific memory
         greeting = getContinuationGreeting(firstName) || `Welcome back ${name}! ★ Great to see you again. What are we studying today?`;
+        greeting += streakMsg;
       } else {
         // First time or guest — explain what Starky is
         const isParentUser = userProfile?.role === 'parent';
         const urduLine = isParentUser ? '\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰' : '';
-        greeting = firstName
-          ? `Hi ${firstName}! I'm Starky ★ — your personal tutor.\n\nI've studied every Cambridge O Level and A Level past paper from 1994 to 2024. I teach step by step, just like a private tutor sitting next to you.\n\nAsk me anything — homework, exam prep, or any concept you want to understand. You can also send me a photo of your notes or questions!${urduLine}`
-          : `Hi! I'm Starky ★ — your personal tutor.\n\nI've studied every Cambridge past paper from 1994 to 2024. I teach step by step — like a private tutor, but available 24/7.\n\nPick any subject and ask me anything. You can also photograph your homework!${urduLine}`;
+        // Tailor the greeting to the student's grade — don't mention Cambridge to a Grade 6 student
+        const gradeId = (userProfile?.gradeId || '').toLowerCase();
+        const isYoung = ['kg','grade1','grade2','grade3','grade4','grade5'].includes(gradeId);
+        const isMiddle = ['grade6','grade7','grade8','grade9','grade10'].includes(gradeId);
+        const isOLevel = gradeId.includes('olevel');
+        const isALevel = gradeId.includes('alevel') || gradeId === 'grade11' || gradeId === 'grade12';
+
+        if (isYoung) {
+          greeting = firstName
+            ? `Hi ${firstName}! 👋🌟\n\nI'm Starky — your learning star! What do you want to learn? Tap one! 👇`
+            : `Hi! 👋🌟\n\nI'm Starky — your learning star! What do you want to learn? Tap one! 👇`;
+        } else if (isMiddle) {
+          const isMatricGrade = ['grade9','grade10'].includes(gradeId);
+          greeting = isMatricGrade
+            ? (firstName
+              ? `Hey ${firstName}! Starky here ★\n\nI know your board syllabus — every numerical, every definition, every diagram pattern. Ask me anything or photograph your notes.\n\nRoman Urdu mein bhi pooch sakte ho 🇵🇰`
+              : `Hey! Starky here ★\n\nI know your entire board syllabus. Ask me anything, photograph your notes, or say "quiz me".\n\nRoman Urdu mein bhi pooch sakte ho 🇵🇰`)
+            : (firstName
+              ? `Hey ${firstName}! I'm Starky ★\n\nI know your syllabus inside out. Ask me anything, photograph your textbook, or say "quiz me".\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰`
+              : `Hey! I'm Starky ★\n\nI know every syllabus — ask me anything or photograph your homework!\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰`);
+        } else {
+          // O Level, A Level, or unknown — Cambridge-focused
+          greeting = firstName
+            ? `Hey ${firstName}! Starky here ★\n\nEvery Cambridge past paper, mark scheme, and examiner report — 1994 to 2024. I know what gets A*s.\n\nAsk me anything, photograph your notes, or say "quiz me".${urduLine}`
+            : `Hey! Starky here ★\n\nEvery Cambridge past paper from 1994 to 2024. Mark schemes, examiner reports, command words — all of it.\n\nAsk me anything or photograph your homework.${urduLine}`;
+        }
       }
       setMessages([{ role: 'assistant', content: greeting }]);
       })(); // end async IIFE
@@ -130,6 +211,10 @@ export default function StarkyBubble() {
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     messagesRef.current = messages;
+    // Auto-send voice text once chat is open and greeting has loaded
+    if (pendingVoiceRef.current && messages.length > 0 && !loading && !loadingRef.current) {
+      setTimeout(() => sendMessage(), 100);
+    }
   }, [messages]);
 
   const handleClose = useCallback(() => {
@@ -144,7 +229,14 @@ export default function StarkyBubble() {
   const speakText = useCallback((text) => {
     if (!synthRef.current) return;
     synthRef.current.cancel();
-    const clean = text.replace(/[★*_`#]/g, '').replace(/\n+/g, ' ').substring(0, 250);
+    const clean = text
+      .replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, '')  // strip ALL emojis
+      .replace(/[\u{FE00}-\u{FE0F}\u{200D}\u{20E3}\u{E0020}-\u{E007F}]/gu, '')  // variation selectors, joiners, tags
+      .replace(/[★*_`#]/g, '')
+      .replace(/\s{2,}/g, ' ')
+      .replace(/\n+/g, ' ')
+      .trim()
+      .substring(0, 250);
     const utt = new SpeechSynthesisUtterance(clean);
     utt.rate = 0.95; utt.pitch = kidMode ? 1.2 : 1.05; utt.volume = 1;
     const voices = synthRef.current.getVoices();
@@ -184,15 +276,44 @@ export default function StarkyBubble() {
     } catch (e) {
       console.warn('[StarkyBubble] createImageBitmap failed, using FileReader:', e.message);
     }
-    // Fallback: direct FileReader (no resize — works everywhere)
+    // Fallback: Image() → canvas conversion (handles HEIC → JPEG properly)
     return new Promise((resolve) => {
       const reader = new FileReader();
       reader.onload = () => {
-        const b64 = reader.result.split(',')[1];
-        if (!b64 || b64.length < 50) { resolve(null); return; }
-        let type = file.type || 'image/jpeg';
-        if (!['image/jpeg','image/png','image/gif','image/webp'].includes(type)) type = 'image/jpeg';
-        resolve({ base64: b64, type, name: file.name || 'photo.jpg' });
+        const dataUrl = reader.result;
+        // Try canvas conversion to ensure valid JPEG output
+        const img = new Image();
+        img.onload = () => {
+          try {
+            const canvas = document.createElement('canvas');
+            const MAX = 800;
+            let w = img.width, h = img.height;
+            if (w > MAX || h > MAX) {
+              if (w > h) { h = Math.round(h * MAX / w); w = MAX; }
+              else { w = Math.round(w * MAX / h); h = MAX; }
+            }
+            canvas.width = w; canvas.height = h;
+            canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+            const b64 = canvas.toDataURL('image/jpeg', 0.5).split(',')[1];
+            if (b64 && b64.length > 100) {
+              resolve({ base64: b64, type: 'image/jpeg', name: 'photo.jpg' });
+              return;
+            }
+          } catch {}
+          // Final fallback — use raw base64 (only for supported types)
+          const b64 = dataUrl.split(',')[1];
+          if (!b64 || b64.length < 50) { resolve(null); return; }
+          let type = file.type || 'image/jpeg';
+          if (!['image/jpeg','image/png','image/gif','image/webp'].includes(type)) type = 'image/jpeg';
+          resolve({ base64: b64, type, name: file.name || 'photo.jpg' });
+        };
+        img.onerror = () => {
+          // Image couldn't load (truly unsupported format) — try raw
+          const b64 = dataUrl.split(',')[1];
+          if (!b64 || b64.length < 50) { resolve(null); return; }
+          resolve({ base64: b64, type: 'image/jpeg', name: file.name || 'photo.jpg' });
+        };
+        img.src = dataUrl;
       };
       reader.onerror = () => resolve(null);
       reader.readAsDataURL(file);
@@ -201,6 +322,10 @@ export default function StarkyBubble() {
 
   const handleImageFile = async (file, autoSend) => {
     if (!file) return;
+    if (file.size > 8 * 1024 * 1024) {
+      alert('Image too large (max 8MB). Try taking a closer photo.');
+      return;
+    }
     const data = await processImage(file);
     if (!data) { alert('Could not read that image. Please try again.'); return; }
     setImageData(data);
@@ -220,6 +345,7 @@ export default function StarkyBubble() {
 
   // Direct image send — used by camera auto-capture
   const sendWithImage = async (imgData) => {
+    if (limitReached) { setShowLimitModal(true); return; }
     if (loadingRef.current) return;
     const img = imgData || imageData;
     if (!img) return;
@@ -283,6 +409,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
         { role: 'assistant', content: reply },
       ];
       saveMessage(displayText, reply);
+      try { recordCall(); } catch {}
       try { detectAndSaveMistake(displayText, reply, sessionMemory?.currentSubject, addMistake, addWeakTopic); } catch {}
     } catch (err) {
       console.error('[StarkyBubble sendWithImage ERROR]', err?.message || err);
@@ -300,9 +427,17 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
   };
 
   const sendMessage = async () => {
-    const text = input.trim();
-    if ((!text && !imageData) || loading || loadingRef.current) return;
+    // Check session limit before allowing message
+    if (limitReached) { setShowLimitModal(true); return; }
 
+    // Check for pending voice text (from VoiceChatBar) — takes priority over input state
+    const voiceText = pendingVoiceRef.current;
+    if (voiceText) pendingVoiceRef.current = null;
+    const text = (voiceText || input).trim();
+    if ((!text && !imageData) || loading || loadingRef.current) return;
+    if (voiceText) setInput(''); // Clear the input field if voice-sent
+
+    loadingRef.current = true;
     const displayText = text || (imageData ? `📷 ${imageData.name}` : '');
     const userMsg = { role: 'user', content: displayText };
     const newMsgs = [...messages, userMsg];
@@ -316,6 +451,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
         message: text || `The student sent an image. Read it thoroughly and comprehensively. Identify what it shows — subject, topic, concepts, any questions or text visible. Then offer to help with it.`,
         userProfile,
         kidMode,
+        stream: !imageData, // Stream text-only messages, non-stream for images
         sessionMemory: {
           ...sessionMemory,
           conversationHistory: conversationRef.current.slice(-10),
@@ -332,14 +468,86 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
         body: JSON.stringify(body),
       });
 
-      const data = await res.json();
-      const reply = data.response || data.content || 'Something went wrong. Try again!';
+      if (!res.ok) {
+        let data = {};
+        try { data = await res.json(); } catch {}
+        throw new Error(data.error || `API returned ${res.status}`);
+      }
 
-      setMessages([...newMsgs, { role: 'assistant', content: reply }]);
+      let reply = '';
+
+      // ── Streaming path — tokens appear in real time ─────────────────────
+      if (res.headers.get('content-type')?.includes('text/event-stream')) {
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+        let lastChunkTime = Date.now();
+
+        // Add placeholder assistant message with typing indicator
+        const streamMsgIndex = newMsgs.length;
+        setMessages([...newMsgs, { role: 'assistant', content: '...' }]);
+        setLoading(false); // Hide "thinking" since text is now appearing
+
+        while (true) {
+          // Timeout: if no data for 30 seconds, break the stream
+          const readPromise = reader.read();
+          const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('Stream timeout')), 30000));
+          let result;
+          try { result = await Promise.race([readPromise, timeoutPromise]); } catch { break; }
+          const { done, value } = result;
+          if (done) break;
+          lastChunkTime = Date.now();
+          buffer += decoder.decode(value, { stream: true });
+
+          // Process complete SSE events from buffer
+          const lines = buffer.split('\n\n');
+          buffer = lines.pop() || '';
+
+          for (const line of lines) {
+            if (!line.startsWith('data: ')) continue;
+            try {
+              const event = JSON.parse(line.slice(6));
+              if (event.type === 'text') {
+                reply += event.text;
+                // Update the assistant message in-place as tokens arrive
+                setMessages(prev => {
+                  const updated = [...prev];
+                  updated[streamMsgIndex] = { role: 'assistant', content: reply };
+                  return updated;
+                });
+              } else if (event.type === 'error') {
+                throw new Error(event.error);
+              }
+            } catch (parseErr) {
+              if (parseErr.message !== 'Unexpected end of JSON input') throw parseErr;
+            }
+          }
+        }
+      } else {
+        // ── Non-streaming path (images, fallback) ────────────────────────
+        let data;
+        try { data = await res.json(); } catch { data = {}; }
+        reply = data.response || data.content || 'Something went wrong. Try again!';
+        setMessages([...newMsgs, { role: 'assistant', content: reply }]);
+      }
+
+      if (!reply) {
+        reply = 'Something went wrong. Try again!';
+        // Update the streaming message if it was left empty
+        setMessages(prev => {
+          const updated = [...prev];
+          const last = updated[updated.length - 1];
+          if (last?.role === 'assistant' && !last.content) {
+            updated[updated.length - 1] = { role: 'assistant', content: reply };
+          }
+          return updated;
+        });
+      }
+
       setImageData(null);
       if (fileInputRef.current) fileInputRef.current.value = '';
       if (cameraInputRef.current) cameraInputRef.current.value = '';
-      if (voiceSupported) speakText(reply);
+      if (voiceSupported && reply.length < 300) speakText(reply);
 
       conversationRef.current = [
         ...conversationRef.current,
@@ -348,17 +556,82 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
       ];
 
       saveMessage(displayText, reply);
-
-      // Auto-detect mistakes from Starky's reply (feeds proactive greetings + weak topics)
+      try { recordCall(); } catch {}
       try { detectAndSaveMistake(displayText, reply, sessionMemory?.currentSubject, addMistake, addWeakTopic); } catch {}
+
+      // ── Signal collection (async, non-blocking) ──
+      try {
+        const prevUserMsg = conversationRef.current.length >= 4 ? conversationRef.current[conversationRef.current.length - 4]?.content : null;
+        const prevStarkyMsg = conversationRef.current.length >= 3 ? conversationRef.current[conversationRef.current.length - 3]?.content : null;
+        recordMessageSignal({
+          email: userProfile?.email,
+          subject: sessionMemory?.currentSubject,
+          grade: userProfile?.grade,
+          userMessage: displayText,
+          starkyResponse: reply,
+          sessionNumber: sessionMemory?.totalSessions || 1,
+          previousUserMessage: prevUserMsg,
+          previousStarkyResponse: prevStarkyMsg,
+          isFirstMessage: conversationRef.current.length <= 2,
+        });
+        const mood = detectSentiment(displayText);
+        if (mood === 'frustrated' || mood === 'confused') {
+          recordMoodSignal({ email: userProfile?.email, mood, subject: sessionMemory?.currentSubject, message: displayText });
+        }
+        // Record teaching strategy signal — captures what Starky did and how user responded
+        recordStrategySignal({
+          email: userProfile?.email,
+          subject: sessionMemory?.currentSubject,
+          grade: userProfile?.grade,
+          starkyResponse: reply,
+          userResponse: displayText,
+          sessionNumber: sessionMemory?.totalSessions || 1,
+          messageIndex: Math.floor(conversationRef.current.length / 2),
+        });
+      } catch {}
 
       if (conversationRef.current.length === SUMMARIZE_AFTER * 2) {
         finalizeSession(conversationRef.current);
       }
-    } catch {
-      setMessages([...newMsgs, { role: 'assistant', content: 'Something went wrong. Please try again!' }]);
+
+      // Send parent session report after 5 user messages, and again every 10 messages for long sessions
+      const userMsgCount = conversationRef.current.filter(m => m.role === 'user').length;
+      if ((userMsgCount === 5 || (userMsgCount > 5 && userMsgCount % 10 === 0)) && userProfile?.email) {
+        fetch('/api/session-complete', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            studentId: userProfile.email,
+            studentName: userProfile.name,
+            parentEmail: userMsgCount === 5 ? (userProfile.parentEmail || userProfile.email) : null, // Only email parent on first report
+            parentName: userProfile.name,
+            grade: userProfile.grade,
+            subject: sessionMemory?.currentSubject || 'General',
+            messages: conversationRef.current.slice(-20), // Send more context for deeper analysis
+            isSEN: !!userProfile.senFlag,
+            sessionCount: sessionMemory?.totalSessions || 0,
+          }),
+        }).catch(() => {});
+      }
+    } catch (err) {
+      const errMsg = err?.message?.includes('429') || err?.message?.includes('busy')
+        ? 'Starky is very busy right now. Please try again in a moment.'
+        : err?.message?.includes('breather')
+        ? 'Starky is taking a quick breather. Try again in a minute!'
+        : 'Something went wrong. Please try again!';
+      setMessages(prev => {
+        // If we already added a streaming message, update it; otherwise append
+        const last = prev[prev.length - 1];
+        if (last?.role === 'assistant' && !last.content) {
+          const updated = [...prev];
+          updated[updated.length - 1] = { role: 'assistant', content: errMsg };
+          return updated;
+        }
+        return [...prev, { role: 'assistant', content: errMsg }];
+      });
     } finally {
       setLoading(false);
+      loadingRef.current = false;
     }
   };
 
@@ -404,6 +677,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
           border-radius: 0;
           z-index: 10000;
           animation: none;
+          padding-top: env(safe-area-inset-top);
         }
 
         @keyframes slideUp {
@@ -491,22 +765,25 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
           border: 1px solid rgba(255,255,255,.08);
           color: rgba(255,255,255,.92); border-bottom-left-radius: 3px;
         }
+        .starky-msg.assistant strong { color: #4F8EF7; font-weight: 700; }
+        .starky-msg.assistant em { color: rgba(255,255,255,.7); font-style: italic; }
         .starky-msg.typing { opacity: .5; font-style: italic; }
+        .starky-msg.assistant:has(> br:only-child), .starky-msg.assistant:empty { min-height: 24px; }
         .starky-input-row {
-          padding: 8px 10px 10px;
+          padding: 8px 10px calc(10px + env(safe-area-inset-bottom));
           border-top: 1px solid rgba(255,255,255,.07);
           display: flex; flex-wrap: wrap; gap: 6px;
           align-items: flex-end; flex-shrink: 0;
         }
         .starky-chat.fullscreen .starky-input-row {
-          padding: 12px 16px 16px; max-width: 700px; width: 100%; margin: 0 auto;
+          padding: 12px 16px calc(16px + env(safe-area-inset-bottom)); max-width: 700px; width: 100%; margin: 0 auto;
         }
         .starky-input {
           flex: 1; min-width: 0;
           background: rgba(255,255,255,.07);
           border: 1px solid rgba(255,255,255,.1);
           border-radius: 10px; color: #fff;
-          padding: 9px 11px; font-size: 14px;
+          padding: 9px 11px; font-size: 16px;
           font-family: inherit; outline: none;
           resize: none; max-height: 80px; -webkit-appearance: none;
         }
@@ -514,14 +791,14 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
         .starky-input::placeholder { color: rgba(255,255,255,.25); }
         .starky-input:focus { border-color: rgba(79,142,247,.4); }
         .starky-send-btn {
-          width: 38px; height: 38px; border-radius: 10px;
+          width: 44px; height: 44px; border-radius: 10px;
           background: linear-gradient(135deg, #4F8EF7, #6366F1);
-          border: none; color: #fff; cursor: pointer; font-size: 18px;
+          border: none; color: #fff; cursor: pointer; font-size: 20px;
           display: flex; align-items: center; justify-content: center; flex-shrink: 0;
         }
         .starky-send-btn:disabled { opacity: .35; cursor: not-allowed; }
         .starky-icon-btn {
-          width: 38px; height: 38px; border-radius: 10px;
+          width: 44px; height: 44px; border-radius: 10px;
           background: rgba(255,255,255,.08); border: none;
           color: rgba(255,255,255,.7); font-size: 18px; cursor: pointer;
           display: flex; align-items: center; justify-content: center; flex-shrink: 0;
@@ -608,20 +885,43 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
                   onClick={() => setKidMode(k => !k)}
                   title="Kid mode — simpler language"
                 >👦 {kidMode ? 'Kid ON' : 'Kid'}</button>
-                <button
-                  className="starky-action-btn"
-                  onClick={() => setFullscreen(f => !f)}
-                  title={fullscreen ? 'Exit fullscreen' : 'Fullscreen'}
-                >{fullscreen ? '⊠' : '⤢'}</button>
-                <Link href="/"><a className="starky-action-btn">Full Session →</a></Link>
-                <button className="starky-close-btn" onClick={handleClose}>✕</button>
+                <button className="starky-close-btn" onClick={handleClose} style={{ padding:'6px 10px', fontSize:18, minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}>✕</button>
               </div>
             </div>
 
             <div className="starky-messages" role="log" aria-label="Chat with Starky" aria-live="polite">
               {messages.map((m, i) => (
-                <div key={i} className={`starky-msg ${m.role}`} aria-label={m.role === 'assistant' ? 'Starky says' : 'You said'}>{m.content}</div>
+                <div key={i} className={`starky-msg ${m.role}`} aria-label={m.role === 'assistant' ? 'Starky says' : 'You said'}
+                  dangerouslySetInnerHTML={m.role === 'assistant' ? { __html: formatStarkyMsg(m.content) } : undefined}
+                >{m.role === 'user' ? m.content : undefined}</div>
               ))}
+
+              {/* Quick-tap subject buttons for young kids (KG-Grade 5) */}
+              {(() => {
+                const gId = (userProfile?.gradeId || '').toLowerCase();
+                const isKid = ['kg','grade1','grade2','grade3','grade4','grade5'].includes(gId);
+                if (!isKid || loading || messages.length > 2) return null;
+                const kidSubjects = [
+                  { emoji: '🔢', label: 'Maths', msg: 'I want to learn Maths!' },
+                  { emoji: '📖', label: 'English', msg: 'I want to learn English!' },
+                  { emoji: '🔬', label: 'Science', msg: 'I want to learn Science!' },
+                  { emoji: '✏️', label: 'Urdu', msg: 'I want to learn Urdu!' },
+                  { emoji: '🌍', label: 'GK', msg: 'Tell me something fun about the world!' },
+                  { emoji: '🎯', label: 'Quiz Me!', msg: 'Quiz me on something fun!' },
+                ];
+                return (
+                  <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:10, padding:'8px 4px', maxWidth:400, margin:'0 auto' }}>
+                    {kidSubjects.map(s => (
+                      <button key={s.label} onClick={() => { pendingVoiceRef.current = s.msg; sendMessage(); }}
+                        style={{ background:'rgba(79,142,247,0.12)', border:'2px solid rgba(79,142,247,0.3)', borderRadius:16, padding:'16px 8px', cursor:'pointer', display:'flex', flexDirection:'column', alignItems:'center', gap:6, WebkitTapHighlightColor:'transparent', transition:'all 0.15s' }}>
+                        <span style={{ fontSize:32 }}>{s.emoji}</span>
+                        <span style={{ fontFamily:"'Sora',sans-serif", fontSize:13, fontWeight:700, color:'#fff' }}>{s.label}</span>
+                      </button>
+                    ))}
+                  </div>
+                );
+              })()}
+
               {loading && <div className="starky-msg assistant typing" aria-live="assertive">Starky is thinking…</div>}
               <div ref={messagesEndRef} />
             </div>
@@ -636,6 +936,37 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
               {/* Hidden file inputs */}
               <input ref={fileInputRef} type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/*" style={{display:'none'}} onChange={handleImageSelect} />
               <input ref={cameraInputRef} type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/*" capture="environment" style={{display:'none'}} onChange={handleCameraSelect} />
+              {/* 🎤 Voice */}
+              {sttSupported && (
+                <button className={`starky-icon-btn${isMicActive ? ' starky-mic-active' : ''}`}
+                  onClick={() => {
+                    if (isMicActive) {
+                      micRef.current?.stop();
+                      setIsMicActive(false);
+                      return;
+                    }
+                    const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+                    if (!SR) return;
+                    const r = new SR();
+                    r.lang = (navigator.language || '').startsWith('ur') ? 'ur-PK' : 'en-US';
+                    r.interimResults = false;
+                    r.onresult = (e) => {
+                      const t = e.results?.[0]?.[0]?.transcript;
+                      if (t) { pendingVoiceRef.current = t; sendMessage(); }
+                      setIsMicActive(false);
+                    };
+                    r.onerror = () => setIsMicActive(false);
+                    r.onend = () => setIsMicActive(false);
+                    micRef.current = r;
+                    r.start();
+                    setIsMicActive(true);
+                  }}
+                  title={isMicActive ? 'Stop listening' : 'Speak your message'}
+                  style={isMicActive ? { background:'rgba(239,68,68,0.2)', borderColor:'rgba(239,68,68,0.4)' } : {}}
+                >
+                  {isMicActive ? '⏹' : '🎤'}
+                </button>
+              )}
               {/* 📎 Gallery */}
               <button className="starky-icon-btn" onClick={() => fileInputRef.current?.click()} title="Upload image">📎</button>
               {/* 📷 Camera */}
@@ -643,7 +974,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
               <textarea
                 ref={inputRef}
                 className="starky-input"
-                placeholder="Ask Starky anything…"
+                placeholder={['kg','grade1','grade2','grade3','grade4','grade5'].includes((userProfile?.gradeId||'').toLowerCase()) ? 'Talk to Starky! 🌟' : 'Ask Starky anything…'}
                 aria-label="Type your message to Starky"
                 value={input}
                 onChange={e => setInput(e.target.value)}
@@ -656,10 +987,10 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
           </div>
         )}
 
-        {!fullscreen && (
+        {(!open || !fullscreen) && (
           <button
             className={`starky-fab ${pulse && !open ? 'pulse' : ''}`}
-            onClick={() => { setOpen(o => !o); setPulse(false); stopSpeaking(); }}
+            onClick={() => { setOpen(o => !o); setFullscreen(true); setPulse(false); stopSpeaking(); }}
             aria-label="Chat with Starky"
           >
             {open ? '✕' : '★'}
@@ -667,6 +998,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
           </button>
         )}
       </div>
+      {showLimitModal && <LimitReachedModal onClose={() => setShowLimitModal(false)} />}
     </>
   );
 }

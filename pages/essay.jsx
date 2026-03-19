@@ -4,7 +4,7 @@
  * O Level & A Level | AI examiner marks by band descriptors
  */
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
@@ -59,25 +59,67 @@ export default function EssayPage() {
   const [error,      setError]      = useState('');
   const wordCount = essay.trim() ? essay.trim().split(/\s+/).length : 0;
 
+  // Auto-save essay to localStorage every 3 seconds
+  useEffect(() => {
+    if (!essay && !question) return;
+    const t = setTimeout(() => {
+      try { localStorage.setItem('nw_essay_draft', JSON.stringify({ essay, question, subject, level })); } catch {}
+    }, 3000);
+    return () => clearTimeout(t);
+  }, [essay, question, subject, level]);
+
+  // Restore draft on mount
+  useEffect(() => {
+    try {
+      const draft = JSON.parse(localStorage.getItem('nw_essay_draft') || 'null');
+      if (draft?.essay) { setEssay(draft.essay); setQuestion(draft.question || ''); setSubject(draft.subject || ''); setLevel(draft.level || 'olevel'); }
+    } catch {}
+  }, []);
+
+  // Warn before leaving with unsaved essay
+  useEffect(() => {
+    const handler = (e) => { if (essay.length > 100 && !result) { e.preventDefault(); e.returnValue = ''; } };
+    window.addEventListener('beforeunload', handler);
+    return () => window.removeEventListener('beforeunload', handler);
+  }, [essay, result]);
+
   const handleMark = async () => {
     if (!subject)          return setError('Please select a subject.');
     if (!question.trim())  return setError('Please enter the exam question.');
     if (wordCount < 50)    return setError('Essay must be at least 50 words.');
     setError(''); setLoading(true); setResult(null);
     try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 30000);
       const r = await fetch('/api/essay', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ subject, level, question, essay }),
+        signal: controller.signal,
       });
-      const data = await r.json();
-      if (data.error) setError(data.error);
-      else setResult(data);
-    } catch { setError('Connection error. Please try again.'); }
+      clearTimeout(timeout);
+      let data;
+      try { data = await r.json(); } catch { throw new Error('Invalid response'); }
+      if (!r.ok || data.error) setError(data?.error || 'Marking failed. Please try again.');
+      else {
+        setResult(data);
+        try { localStorage.removeItem('nw_essay_draft'); } catch {}
+        // Notify parent about essay result
+        try {
+          const u = JSON.parse(localStorage.getItem('nw_user') || '{}');
+          if (u.email) {
+            fetch('/api/notify-parent', {
+              method: 'POST', headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ parentEmail: u.parentEmail || u.email, studentName: u.name, type: 'essay', subject, grade: data.grade }),
+            }).catch(() => {});
+          }
+        } catch {}
+      }
+    } catch (err) { setError(err?.name === 'AbortError' ? 'Marking took too long. Please try again.' : 'Connection error. Please try again.'); }
     finally { setLoading(false); }
   };
 
-  const reset = () => { setResult(null); setEssay(''); setQuestion(''); setError(''); };
+  const reset = () => { setResult(null); setEssay(''); setQuestion(''); setError(''); try { localStorage.removeItem('nw_essay_draft'); } catch {} window.scrollTo({ top: 0, behavior: 'smooth' }); };
 
   const gradeColour = result ? (GRADE_COLOURS[result.grade] || '#4F8EF7') : '#4F8EF7';
   const pct = result ? Math.round((result.totalScore / result.maxScore) * 100) : 0;
@@ -97,7 +139,7 @@ export default function EssayPage() {
         {/* Nav */}
         <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between',
           padding: '14px 20px', borderBottom: '1px solid rgba(255,255,255,.07)',
-          background: 'rgba(8,12,24,.9)', position: 'sticky', top: 0, zIndex: 50, backdropFilter: 'blur(12px)' }}>
+          background: 'rgba(8,12,24,.9)', position: 'sticky', top: 0, zIndex: 50, WebkitBackdropFilter: 'blur(12px)', backdropFilter: 'blur(12px)' }}>
           <Link href="/"><a style={{ fontFamily: "'Sora',sans-serif", fontWeight: 800, fontSize: 17,
             color: '#fff', textDecoration: 'none' }}>NewWorldEdu<span style={{ color: '#4F8EF7' }}>★</span></a></Link>
           <div style={{ display: 'flex', gap: 8 }}>
@@ -156,8 +198,8 @@ export default function EssayPage() {
                   placeholder="Paste the essay question here..."
                   rows={3}
                   style={{ width: '100%', background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.1)',
-                    borderRadius: 12, padding: '14px 16px', color: '#fff', fontSize: 14, fontFamily: 'inherit',
-                    resize: 'vertical', outline: 'none', boxSizing: 'border-box', lineHeight: 1.6 }} />
+                    borderRadius: 12, padding: '14px 16px', color: '#fff', fontSize: 16, fontFamily: 'inherit',
+                    resize: 'vertical', outline: 'none', boxSizing: 'border-box', lineHeight: 1.6, WebkitAppearance: 'none' }} />
               </div>
 
               {/* Essay */}
@@ -172,8 +214,8 @@ export default function EssayPage() {
                   placeholder="Paste or type your essay here..."
                   rows={12}
                   style={{ width: '100%', background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.1)',
-                    borderRadius: 12, padding: '14px 16px', color: '#fff', fontSize: 14, fontFamily: 'inherit',
-                    resize: 'vertical', outline: 'none', boxSizing: 'border-box', lineHeight: 1.8 }} />
+                    borderRadius: 12, padding: '14px 16px', color: '#fff', fontSize: 16, fontFamily: 'inherit',
+                    resize: 'vertical', outline: 'none', boxSizing: 'border-box', lineHeight: 1.8, WebkitAppearance: 'none' }} />
               </div>
 
               {error && <div style={{ color: '#F87171', fontSize: 13, marginBottom: 12 }}>⚠️ {error}</div>}
@@ -198,9 +240,9 @@ export default function EssayPage() {
                   {subject} · {level === 'alevel' ? 'A Level' : 'O Level'}
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'baseline', gap: 8, marginBottom: 12 }}>
-                  <span style={{ fontFamily: "'Sora',sans-serif", fontSize: 64, fontWeight: 900,
+                  <span style={{ fontFamily: "'Sora',sans-serif", fontSize: 'clamp(40px, 12vw, 64px)', fontWeight: 900,
                     color: gradeColour, lineHeight: 1 }}>{result.totalScore}</span>
-                  <span style={{ fontSize: 24, color: 'rgba(255,255,255,.3)' }}>/ {result.maxScore}</span>
+                  <span style={{ fontSize: 'clamp(18px, 5vw, 24px)', color: 'rgba(255,255,255,.3)' }}>/ {result.maxScore}</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: 10, marginBottom: 16 }}>
                   <Pill label={`Grade ${result.grade}`} colour={gradeColour} />

@@ -7,6 +7,7 @@ export default function LoginPage() {
   const { data: session } = useSession();
   const router = useRouter();
   const [error, setError] = useState('');
+  const [signingIn, setSigningIn] = useState(false);
 
   useEffect(() => {
     if (session) router.push("/start");
@@ -34,7 +35,7 @@ export default function LoginPage() {
       justifyContent: "center",
       fontFamily: "Nunito, sans-serif",
     }}>
-      <div style={{position:"fixed",top:0,left:0,right:0,zIndex:999,background:"rgba(8,12,24,0.97)",backdropFilter:"blur(12px)",borderBottom:"1px solid rgba(255,255,255,0.07)",padding:"0 16px",height:"52px",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+      <div style={{position:"fixed",top:0,left:0,right:0,zIndex:999,background:"rgba(8,12,24,0.97)",WebkitBackdropFilter:"blur(12px)",backdropFilter:"blur(12px)",borderBottom:"1px solid rgba(255,255,255,0.07)",padding:"0 16px",height:"52px",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
         <a href="/" style={{fontFamily:"'Sora',sans-serif",fontWeight:800,fontSize:"15px",color:"#fff",textDecoration:"none"}}>NewWorldEdu<span style={{color:"#4F8EF7"}}>★</span></a>
         <a href="/" style={{color:"#fff",fontSize:"13px",fontWeight:800,textDecoration:"none",background:"linear-gradient(135deg,#4F8EF7,#7C5CBF)",borderRadius:"20px",padding:"6px 16px"}}>← Home</a>
       </div>
@@ -61,7 +62,8 @@ export default function LoginPage() {
           </div>
         )}
         <button
-          onClick={() => { setError(''); signIn("google"); }}
+          onClick={() => { setError(''); setSigningIn(true); signIn("google"); }}
+          disabled={signingIn}
           style={{
             width: "100%",
             padding: "14px 24px",
@@ -79,7 +81,7 @@ export default function LoginPage() {
           }}
         >
           <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width={20} />
-          Continue with Google
+          {signingIn ? 'Signing in...' : 'Continue with Google'}
         </button>
         <p style={{ color: "rgba(255,255,255,0.25)", fontSize: 12, marginTop: 24 }}>
           By signing in you agree to our <a href="/terms" style={{ color: "rgba(255,255,255,0.4)" }}>Terms of Service</a> and <a href="/privacy" style={{ color: "rgba(255,255,255,0.4)" }}>Privacy Policy</a>.

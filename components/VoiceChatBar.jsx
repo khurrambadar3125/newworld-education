@@ -22,15 +22,15 @@ export default function VoiceChatBar() {
     }
 
     const recognition = new SpeechRecognition();
-    recognition.lang = "en-US";
+    // Detect user language — support English and Urdu
+    const userLang = (navigator.language || '').toLowerCase();
+    recognition.lang = userLang.startsWith('ur') ? 'ur-PK' : 'en-US';
     recognition.interimResults = false;
     recognition.onresult = (e) => {
       const transcript = e.results[0][0].transcript;
-      const activeInput = document.querySelector("input[type=text], textarea");
-      if (activeInput) {
-        const nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, "value")?.set || Object.getOwnPropertyDescriptor(window.HTMLTextAreaElement.prototype, "value")?.set;
-        nativeInputValueSetter?.call(activeInput, activeInput.value + transcript);
-        activeInput.dispatchEvent(new Event("input", { bubbles: true }));
+      if (transcript.trim()) {
+        // Fire custom event — StarkyBubble listens for this and injects into React state
+        window.dispatchEvent(new CustomEvent('starky-voice', { detail: { text: transcript.trim() } }));
       }
       setListening(false);
     };
@@ -47,12 +47,13 @@ export default function VoiceChatBar() {
     <button
       onClick={toggleListen}
       title={listening ? "Stop listening" : "Speak your message"}
+      aria-label={listening ? "Stop listening" : "Speak your message"}
       style={{
         position: "fixed",
         bottom: 148,
         right: 24,
-        width: 42,
-        height: 42,
+        width: 48,
+        height: 48,
         borderRadius: "50%",
         background: listening ? "#ef4444" : "#4F8EF7",
         border: "none",

@@ -128,15 +128,18 @@ const REGIONAL_EMOTIONAL = [
 
 // ── Roman Urdu signals (Pakistani students type this way) ─────────────────
 const ROMAN_URDU_HOMEWORK = [
-  'samajh nahi aa raha', 'samajh nahi aya', 'ye kya hai', 'ye kaise hoga',
-  'madad karo', 'help karo', 'mushkil hai', 'nahi aata', 'nahi ata',
+  'samajh nahi aa raha', 'samajh nahi aa rahi', 'samajh nahi aya', 'samajh nahi ayi',
+  'ye kya hai', 'ye kaise hoga',
+  'madad karo', 'help karo', 'mushkil hai', 'nahi aata', 'nahi aati', 'nahi ata',
   'question solve karo', 'kaise karu', 'kaise karun', 'batao ye',
+  'samajh nahi aati', 'samjh nahi aa rahi', 'samjh nahi aata', 'samjh nahi aati',
 ];
 const ROMAN_URDU_EMOTIONAL = [
-  'main fail ho jaun ga', 'fail ho jaunga', 'bohat mushkil hai',
-  'mujhe dar hai', 'tension ho rahi hai', 'pareshan hun',
-  'kuch samajh nahi aata', 'thak gaya hun', 'thak gayi hun',
-  'haar maan raha hun', 'haar maan rahi hun',
+  'main fail ho jaun ga', 'main fail ho jaun gi', 'fail ho jaunga', 'fail ho jaungi',
+  'bohat mushkil hai', 'bohot mushkil hai',
+  'mujhe dar hai', 'tension ho rahi hai', 'pareshan hun', 'pareshan hoon',
+  'kuch samajh nahi aata', 'kuch samajh nahi aati', 'thak gaya hun', 'thak gayi hun',
+  'haar maan raha hun', 'haar maan rahi hun', 'dar lag raha hai',
 ];
 const ROMAN_URDU_PRACTICE = [
   'sawal do', 'question do', 'test lo', 'quiz lo', 'practice karao',
@@ -145,6 +148,7 @@ const ROMAN_URDU_PRACTICE = [
 const ROMAN_URDU_EXPLAIN = [
   'ye kya hota hai', 'iska matlab', 'samjhao', 'samjha do',
   'kyun hota hai', 'kaise hota hai', 'define karo',
+  'yaar samjhao', 'yaar batao', 'bhai samjhao',
 ];
 const ROMAN_URDU_DISTRESS = [
   'mar jana chahta hun', 'mar jana chahti hun', 'jeene ka mann nahi',
@@ -176,6 +180,8 @@ const EXAM_PREP_SIGNALS = [
   'what topics', 'syllabus', 'past papers', 'how to study',
   'exam strategy', 'time management', 'which chapters',
   'important topics', 'will this come in exam', 'exam technique',
+  'exam is tomorrow', 'exam tomorrow', 'paper tomorrow', 'test tomorrow',
+  'paper kal hai', 'exam kal hai', 'test kal hai', 'kal paper hai',
 ];
 
 // ─── Core detector ───────────────────────────────────────────────────────────
@@ -268,7 +274,9 @@ export function detectIntent(message, userProfile = {}) {
   if (/\bdefine\b/.test(msg)) scores[INTENTS.CONCEPT_EXPLAIN] += 2;
   if (/\bwhy\s+(do|does|is|are)\b/.test(msg)) scores[INTENTS.CONCEPT_EXPLAIN] += 2;
 
-  // Social / off-topic
+  // Social / off-topic / greetings
+  if (/^(hi|hello|hey|salam|assalam|aoa|aslam|slam)\b/i.test(msg) && msg.length < 30) scores[INTENTS.SOCIAL_CHAT] += 3;
+  if (/^(salam|assalamualaikum|asalaam)/i.test(msg)) scores[INTENTS.SOCIAL_CHAT] += 3;
   if (/\b(favourite|favorite|like\s+more|prefer)\b/.test(msg)) scores[INTENTS.SOCIAL_CHAT] += 2;
   if (/\b(joke|funny|laugh|game|movie|cricket|food)\b/.test(msg)) scores[INTENTS.SOCIAL_CHAT] += 2;
   if (/\b(weather|news|politics|celebrity)\b/.test(msg)) scores[INTENTS.OFF_TOPIC] += 3;

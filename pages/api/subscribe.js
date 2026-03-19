@@ -3,8 +3,24 @@ import { saveSubscriber, isSubscribed } from '../../utils/db';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Rate limit: max 5 subscribe attempts per IP per hour
+const subRateMap = new Map();
+function checkSubRate(ip) {
+  const now = Date.now();
+  const entry = subRateMap.get(ip);
+  if (!entry || now - entry.t > 3600000) { subRateMap.set(ip, { t: now, c: 1 }); return true; }
+  if (entry.c >= 5) return false;
+  entry.c++;
+  return true;
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
+
+  const ip = req.headers['x-forwarded-for'] || 'unknown';
+  if (!checkSubRate(ip)) {
+    return res.status(429).json({ error: 'Too many attempts. Please try again later.' });
+  }
 
   const { name, email, grade, subject, studyTime } = req.body || {};
 

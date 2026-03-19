@@ -45,7 +45,7 @@ export default function Dashboard() {
       const data = await res.json();
       setStudents(data.students || []);
       setStats(data.stats || {});
-    } finally { setLoading(false); }
+    } catch { setError('Could not load dashboard data. Please try again.'); } finally { setLoading(false); }
   };
 
   useEffect(() => {

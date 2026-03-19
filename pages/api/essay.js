@@ -57,6 +57,8 @@ Return ONLY this JSON (no markdown, no text outside JSON):
 }`;
 
   try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 25000);
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -65,19 +67,28 @@ Return ONLY this JSON (no markdown, no text outside JSON):
         'anthropic-version': '2023-06-01',
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-haiku-4-5-20251001',
         max_tokens: 1200,
         system: systemPrompt,
         messages: [{ role: 'user', content: userPrompt }],
       }),
+      signal: controller.signal,
     });
+    clearTimeout(timeout);
 
     const data = await response.json();
     const raw = data.content?.[0]?.text;
     if (!raw) return res.status(500).json({ error: 'No response from marking engine.' });
 
     const clean = raw.replace(/```json|```/g, '').trim();
-    const result = JSON.parse(clean);
+    let result;
+    try { result = JSON.parse(clean); } catch (parseErr) {
+      console.error('essay.js JSON parse failed:', clean.slice(0, 200));
+      return res.status(500).json({ error: 'Marking response was malformed. Please try again.' });
+    }
+    if (!result.totalScore && result.totalScore !== 0) {
+      return res.status(500).json({ error: 'Incomplete marking response. Please try again.' });
+    }
     return res.status(200).json(result);
 
   } catch (err) {
