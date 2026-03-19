@@ -925,7 +925,14 @@ function SENDrillWidget({ condition, stage, subject, xpData, setXpData }) {
         </div>
       </div>
 
-      {loading && !question && (
+      {/* Error display */}
+      {senError && (
+        <div style={{background:"rgba(248,113,113,0.08)",border:"1px solid rgba(248,113,113,0.2)",borderRadius:12,padding:"14px 16px",marginBottom:14,textAlign:"center"}}>
+          <div style={{fontSize:14,color:"#F87171",fontWeight:700,marginBottom:6}}>{senError}</div>
+          <button onClick={() => { setSenError(''); generateQuestion(chosenSubject || subject); }} style={{background:"rgba(248,113,113,0.15)",border:"1px solid rgba(248,113,113,0.3)",borderRadius:10,padding:"8px 16px",color:"#F87171",fontWeight:700,fontSize:13,cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>Try again</button>
+        </div>
+      )}
+      {loading && !question && !senError && (
         <div style={{textAlign:"center",padding:"40px 0"}}>
           <div style={{fontSize:40,marginBottom:12}}>🌟</div>
           <div style={{fontSize:14,color:"rgba(255,255,255,0.5)"}}>Starky is finding the perfect question for you…</div>
@@ -1518,22 +1525,22 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
     return (
       <div style={{ display:"flex", gap:8, flexWrap:"wrap", justifyContent:"center", marginBottom:24 }}>
         {condition && (
-          <div style={{ background:condition.color+"15", border:"1px solid "+condition.color+"40", borderRadius:20, padding:"4px 14px", fontSize:12, fontWeight:800, color:condition.color, display:"flex", alignItems:"center", gap:5, cursor:"pointer" }}
-            onClick={() => setStep(1)}>
+          <button aria-label={`Change condition: ${condition.name}`} style={{ background:condition.color+"15", border:"1px solid "+condition.color+"40", borderRadius:20, padding:"6px 14px", minHeight:36, fontSize:12, fontWeight:800, color:condition.color, display:"flex", alignItems:"center", gap:5, cursor:"pointer", fontFamily:"'Nunito',sans-serif" }}
+            onClick={() => { setStep(1); setStage(null); setFocus(null); setSubject(''); setMessages([]); }}>
             {condition.emoji} {condition.name} ×
-          </div>
+          </button>
         )}
         {stage && (
-          <div style={{ background:stage.color+"15", border:"1px solid "+stage.color+"40", borderRadius:20, padding:"4px 14px", fontSize:12, fontWeight:800, color:stage.color, display:"flex", alignItems:"center", gap:5, cursor:"pointer" }}
-            onClick={() => setStep(2)}>
+          <button aria-label={`Change stage: ${stage.name}`} style={{ background:stage.color+"15", border:"1px solid "+stage.color+"40", borderRadius:20, padding:"6px 14px", minHeight:36, fontSize:12, fontWeight:800, color:stage.color, display:"flex", alignItems:"center", gap:5, cursor:"pointer", fontFamily:"'Nunito',sans-serif" }}
+            onClick={() => { setStep(2); setFocus(null); setSubject(''); setMessages([]); }}>
             {stage.emoji} {stage.name} ×
-          </div>
+          </button>
         )}
         {focus && (
-          <div style={{ background:"rgba(255,255,255,0.08)", border:"1px solid rgba(255,255,255,0.15)", borderRadius:20, padding:"4px 14px", fontSize:12, fontWeight:800, color:"rgba(255,255,255,0.6)", display:"flex", alignItems:"center", gap:5, cursor:"pointer" }}
-            onClick={() => setStep(3)}>
+          <button aria-label={`Change focus: ${focus.name}`} style={{ background:"rgba(255,255,255,0.08)", border:"1px solid rgba(255,255,255,0.15)", borderRadius:20, padding:"6px 14px", minHeight:36, fontSize:12, fontWeight:800, color:"rgba(255,255,255,0.6)", display:"flex", alignItems:"center", gap:5, cursor:"pointer", fontFamily:"'Nunito',sans-serif" }}
+            onClick={() => { setStep(3); setSubject(''); setMessages([]); }}>
             {focus.emoji} {focus.name} ×
-          </div>
+          </button>
         )}
       </div>
     );
@@ -1909,6 +1916,8 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                   : condition?.id === 'ds' ? 'Visual learning with big buttons, emojis, and celebrations. Whole-word recognition through picture spelling.'
                   : condition?.id === 'vi' ? 'Fully audio-based — every instruction spoken aloud. Pronunciation practice uses the microphone so your child speaks, not reads.'
                   : condition?.id === 'hi' ? 'Visual-first exercises with large text and colorful tiles. Spelling builds written language skills — critical for hearing impaired learners.'
+                  : condition?.id === 'cp' ? 'Multiple response modes — tap, speak, or use switches. Large touch targets (52px+) for motor accessibility. Full curriculum at any pace.'
+                  : condition?.id === 'unsure' ? 'Try different exercise types to discover what works best. Audio-first, visual, and interactive options — the platform adapts to your child.'
                   : 'Interactive exercises adapted for every need — audio-first, big buttons, visual cues, and celebrations.'}
                 </div>
               </div>
@@ -1946,8 +1955,8 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
           </div>
         )}
       </div>
-      {/* CREATIVE LEARNING SECTIONS */}
-      <div style={{marginTop:48,paddingTop:40,borderTop:"1px solid rgba(255,255,255,0.07)"}}>
+      {/* CREATIVE LEARNING SECTIONS — only on step 4 (steps 1-3 have their own above) */}
+      {step === 4 && <div style={{marginTop:48,paddingTop:40,borderTop:"1px solid rgba(255,255,255,0.07)"}}>
         <div style={{textAlign:"center",marginBottom:24}}>
           <div style={{display:"inline-block",background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:20,padding:"4px 16px",fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.4)",letterSpacing:2,marginBottom:12}}>CREATIVE LEARNING</div>
           <h2 style={{fontSize:isMobile?20:28,fontWeight:900,margin:"0 0 8px",color:"#fff"}}>Music, Reading <span style={{color:"#C77DFF"}}>&</span> Arts</h2>
@@ -1975,7 +1984,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
           <div style={{fontSize:12,color:"rgba(255,255,255,0.45)",lineHeight:1.8,marginBottom:12}}>Full access to Music, Reading, and Arts — all 7 specialist profiles, 120+ books, evidence-based teaching, and parent guides.</div>
           <a href="/pricing" style={{display:"inline-block",background:"linear-gradient(135deg,#C77DFF,#7B5EA7)",borderRadius:12,padding:"10px 24px",color:"#fff",fontWeight:900,fontSize:13,textDecoration:"none"}}>View Plans</a>
         </div>
-      </div>
+      </div>}
 
       {/* ── SEN Practice Zone ───────────────────────── */}
       <div style={{maxWidth:600,margin:"0 auto 40px",padding:"0 16px"}}>
