@@ -1550,70 +1550,76 @@ export default function LanguagesPage() {
     if (!ld || !dest) return null;
     const sc = ld.scenarios;
     const done = sc.filter(s => s.done).length;
-    const pos = ['r', 'c', 'l', 'c', 'r', 'c', 'l'];
+    // English titles for scenarios (so non-speakers understand)
+    const EN_TITLES = { 1: 'At the Airport', 2: 'At a Restaurant', 3: 'Asking Directions', 4: 'Hotel Check-in', 5: 'At the Market', 6: 'Meeting Locals' };
     return (
       <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch', background: T.n50 }}>
         <TopBar />
+        {/* Language header with change button */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '10px 16px', background: T.n0, borderBottom: `1.5px solid ${T.n100}` }}>
           <span style={{ fontSize: 24 }}>{dest.flag}</span>
           <div style={{ flex: 1 }}>
-            <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.n600 }}>{dest.name}</div>
-            <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginBottom: 5 }}>{ld.name} · Level {level} · {done}/{sc.length} complete</div>
+            <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.n700 }}>{ld.name}</div>
+            <div style={{ fontSize: 11, fontWeight: 600, color: T.n400, marginBottom: 5 }}>Level {level} · {done}/{sc.length} lessons done</div>
             <ProgressBar value={done} max={sc.length} height={7} />
           </div>
-          <Chip type="teal">{levelName}</Chip>
+          <button onClick={() => { setPhase('dest'); setDest(null); setLd(null); }} style={{
+            background: T.n100, border: `1px solid ${T.n200}`, borderRadius: 10,
+            padding: '6px 12px', fontSize: 11, fontWeight: 700, color: T.n400,
+            cursor: 'pointer', fontFamily: T.f, whiteSpace: 'nowrap',
+          }}>Change {'\u{1F310}'}</button>
         </div>
-        <div style={{ padding: '18px 0 40px' }}>
-          {sc.map((s, i) => {
-            const p = pos[i % pos.length];
-            const jc = p === 'l' ? 'flex-start' : p === 'r' ? 'flex-end' : 'center';
-            const pl = p === 'l' ? { paddingLeft: 28 } : p === 'r' ? { paddingRight: 28 } : {};
-            let bg, border, shadow, filt = 'none';
-            if (s.done) { bg = T.teal; border = 'none'; shadow = `0 5px 0 ${T.tealD}`; }
-            else if (s.current) { bg = T.n0; border = `2.5px solid ${T.teal}`; shadow = `0 5px 0 ${T.teal}`; }
-            else if (!s.locked) { bg = T.n0; border = `2px solid ${T.n200}`; shadow = `0 4px 0 ${T.n200}`; }
-            else { bg = T.n100; border = `1.5px solid ${T.n200}`; shadow = `0 4px 0 ${T.n200}`; filt = 'grayscale(1) opacity(.4)'; }
+
+        {/* Lessons as cards */}
+        <div style={{ padding: '12px 14px', display: 'flex', flexDirection: 'column', gap: 10 }}>
+          {sc.map(s => {
+            const isDone = s.done;
+            const isCurrent = s.current;
+            const isLocked = s.locked;
+            const enTitle = EN_TITLES[s.id] || s.title || '';
+            const accentCol = isDone ? T.green : isCurrent ? T.teal : T.n300;
             return (
-              <div key={s.id} style={{ padding: '5px 0', display: 'flex', justifyContent: jc, ...pl }}>
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
-                  {s.current && (
-                    <div style={{ background: T.n700, color: '#fff', padding: '5px 14px', borderRadius: 100, fontSize: 11, fontWeight: 800, letterSpacing: '.06em', marginBottom: 8, position: 'relative', animation: 'slideUp .25s ease' }}>
-                      START
-                      <div style={{ position: 'absolute', bottom: -5, left: '50%', transform: 'translateX(-50%)', width: 0, height: 0, borderLeft: '5px solid transparent', borderRight: '5px solid transparent', borderTop: `5px solid ${T.n700}` }} />
-                    </div>
-                  )}
-                  <button
-                    onClick={() => { if (!s.locked && s.ex) startEx(s.id); }}
-                    disabled={s.locked || !s.ex}
-                    style={{
-                      width: 68, height: 68, borderRadius: '50%',
-                      display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      fontSize: 26, cursor: s.locked || !s.ex ? 'default' : 'pointer',
-                      transition: 'transform .15s', outline: 'none',
-                      background: bg, border, boxShadow: shadow,
-                      animation: s.current ? 'glowPulse 2s ease-in-out infinite' : 'none',
-                      position: 'relative', fontFamily: T.f,
-                    }}>
-                    <span style={{ filter: filt }}>{s.locked ? '\u{1F512}' : s.icon}</span>
-                    {s.done && (
-                      <div style={{
-                        position: 'absolute', top: -3, right: -3, width: 22, height: 22,
-                        background: T.green, borderRadius: '50%', border: `2.5px solid ${T.n50}`,
-                        display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        fontSize: 10, color: '#fff', fontWeight: 900,
-                        animation: 'tickIn .3s cubic-bezier(.34,1.56,.64,1)',
-                      }}>✓</div>
-                    )}
-                  </button>
-                  <div style={{ marginTop: 6, textAlign: 'center', maxWidth: 80, lineHeight: 1.2, fontSize: 11, fontWeight: 600, color: s.done ? T.green : s.current ? T.teal : T.n300, letterSpacing: '.04em' }}>{s.place}</div>
+              <button key={s.id}
+                onClick={() => { if (!isLocked && s.ex) { sndTick(); startEx(s.id); } }}
+                disabled={isLocked || !s.ex}
+                style={{
+                  display: 'flex', alignItems: 'center', gap: 14, padding: '14px 16px',
+                  background: isCurrent ? `${T.teal}10` : T.n0,
+                  border: isCurrent ? `2px solid ${T.teal}40` : `1.5px solid ${T.n100}`,
+                  borderRadius: 16, cursor: isLocked ? 'default' : 'pointer',
+                  opacity: isLocked ? 0.45 : 1, transition: 'all .15s',
+                  boxShadow: isCurrent ? `0 2px 12px ${T.teal}15` : '0 1px 3px rgba(0,0,0,.08)',
+                  textAlign: 'left', fontFamily: T.f, width: '100%',
+                }}>
+                {/* Icon */}
+                <div style={{
+                  width: 52, height: 52, borderRadius: 14, flexShrink: 0,
+                  background: isDone ? T.green : isCurrent ? T.teal : T.n100,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontSize: 24, color: isDone || isCurrent ? '#fff' : T.n400,
+                  boxShadow: isDone || isCurrent ? `0 3px 0 ${isDone ? T.greenD : T.tealD}` : 'none',
+                }}>
+                  {isLocked ? '\u{1F512}' : isDone ? '✓' : s.icon}
                 </div>
-              </div>
+                {/* Content */}
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: T.n700, marginBottom: 2 }}>{enTitle}</div>
+                  <div style={{ fontSize: 12, color: accentCol, fontWeight: 600 }}>{s.place}</div>
+                  {s.sub && <div style={{ fontSize: 11, color: T.n400, marginTop: 2, lineHeight: 1.4 }}>{autoTr(s.sub)}</div>}
+                  {s.ex && <div style={{ fontSize: 10, color: T.n300, marginTop: 4 }}>{s.ex.length} exercises · {s.xp} XP</div>}
+                </div>
+                {/* Status */}
+                {isDone && <Chip type="green">Done</Chip>}
+                {isCurrent && <Chip type="teal">Start</Chip>}
+                {isLocked && <span style={{ fontSize: 11, color: T.n300 }}>Locked</span>}
+              </button>
             );
           })}
-          <div style={{ textAlign: 'center', padding: '24px 16px', color: T.n300 }}>
-            <CompassSVG sz={44} />
-            <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: T.n400, marginTop: 10 }}>More scenarios coming</div>
-          </div>
+        </div>
+
+        {/* More coming */}
+        <div style={{ textAlign: 'center', padding: '20px 16px 40px', color: T.n300 }}>
+          <div style={{ fontSize: 13, fontWeight: 600 }}>More lessons coming soon</div>
         </div>
       </div>
     );
