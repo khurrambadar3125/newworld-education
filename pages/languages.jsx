@@ -918,6 +918,7 @@ export default function LanguagesPage() {
   const [freeInput, setFreeInput] = useState('');
   const [freeLoading, setFreeLoading] = useState(false);
   const freeChatEndRef = useRef(null);
+  const exFeedbackRef = useRef(null);
 
   // Placement test state
   const [inTest, setInTest] = useState(false);
@@ -1003,6 +1004,7 @@ export default function LanguagesPage() {
     const isOk = sel === q.ans;
     setOk(isOk); setChk(true);
     if (isOk) { sndOk(); setTestScore(s => s + 1); } else sndErr();
+    setTimeout(() => exFeedbackRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' }), 150);
   }
   function nextTestQ() { setTestIdx(i => i + 1); setSel(null); setChk(false); setOk(false); }
   function doneTest() {
@@ -1068,6 +1070,7 @@ export default function LanguagesPage() {
     if (ex.type === 'build') isOk = norm(built.join(' ')) === norm(ex.ans);
     else isOk = sel === ex.ans;
     setOk(isOk); setChk(true);
+    setTimeout(() => exFeedbackRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' }), 150);
     const gain = Math.round(exSc.xp / Math.max(exSc.ex.length, 1));
     if (isOk) {
       const newStreak = correctStreak + 1;
@@ -1458,7 +1461,7 @@ export default function LanguagesPage() {
           ))}
         </div>
         {chk ? (
-          <div style={{ padding: '16px 20px', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0, animation: 'slideUpPanel .25s cubic-bezier(.4,0,.2,1) both' }}>
+          <div ref={exFeedbackRef} style={{ padding: '16px 20px calc(16px + env(safe-area-inset-bottom, 0))', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0 }}>
             <div style={{ fontSize: 15, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: 8 }}>{ok ? '✓ Correct!' : '✗ Answer: ' + q.ans}</div>
             <button onClick={nextTestQ} style={ok ? sBtnGreen : sBtnRed}>Continue →</button>
           </div>
@@ -1808,20 +1811,20 @@ export default function LanguagesPage() {
     let bot;
     if (ex.type === 'speak' && chk) {
       bot = (
-        <div style={{ padding: '20px 20px 16px', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0, animation: 'slideUpPanel .25s cubic-bezier(.4,0,.2,1) both' }}>
+        <div style={{ padding: '16px 20px calc(16px + env(safe-area-inset-bottom, 0))', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0 }}>
           <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: 8 }}>{ok ? '\u2728 Great pronunciation!' : 'Nice try! Keep practising.'}</div>
           <button onClick={nextQ} style={ok ? sBtnGreen : sBtnRed}>Continue →</button>
         </div>
       );
     } else if (ex.type === 'speak' && !chk) {
       bot = (
-        <div style={{ padding: '14px 18px', borderTop: `1.5px solid ${T.n100}` }}>
+        <div style={{ padding: '12px 18px calc(12px + env(safe-area-inset-bottom, 0))', borderTop: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
           <button style={sBtnDisabled} disabled>Tap the microphone above</button>
         </div>
       );
     } else if (chk && ex.type !== 'match') {
       bot = (
-        <div style={{ padding: '20px 20px 16px', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0, animation: 'slideUpPanel .25s cubic-bezier(.4,0,.2,1) both' }}>
+        <div ref={exFeedbackRef} style={{ padding: '16px 20px calc(16px + env(safe-area-inset-bottom, 0))', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0 }}>
           <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: ok ? 4 : 8 }}>{ok ? '\u2713  ' + uiStr('correct') : '\u2717  ' + uiStr('notQuite')}</div>
           {!ok ? (
             <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.redD, marginBottom: 12 }}>
@@ -1836,7 +1839,7 @@ export default function LanguagesPage() {
       );
     } else {
       bot = (
-        <div style={{ padding: '14px 18px', borderTop: `1.5px solid ${T.n100}` }}>
+        <div style={{ padding: '12px 18px calc(12px + env(safe-area-inset-bottom, 0))', borderTop: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
           {ex.type === 'match' && rdy ? (
             <button onClick={nextQ} style={sBtnPrimary}>Continue →</button>
           ) : ex.type !== 'match' ? (
