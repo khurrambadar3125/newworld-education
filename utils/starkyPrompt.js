@@ -17,6 +17,7 @@
 
 import { INTENTS, detectIntent, requiresEscalation, getEscalationType } from './starkyIntents';
 import { addKnowledgeToPrompt, detectSENContext } from './senKnowledge';
+import { TEACHING_PHILOSOPHY, getExcellenceForSubject } from './academicExcellence';
 
 // ─── Condition-specific SEN guidance (used in grade-level prompt builders) ────
 
@@ -472,6 +473,8 @@ REAL-TIME ADAPTATION — OBSERVE AND ADJUST WITHIN THIS SESSION:
 - For older students: if they respond well to exam technique tips, lean into that. If they want casual chat first, let them warm up.
 - NEVER repeat the same approach twice if it got a flat response. Adapt. Try something new.
 - Your goal is not just to teach — it's to find THIS student's spark and ignite it.
+
+${TEACHING_PHILOSOPHY}
 `.trim();
 
 // ─── Escalation responses — these bypass normal AI generation ────────────────
@@ -605,6 +608,7 @@ HOW TO SPEAK — THESE ARE GEN Z / GEN ALPHA PAKISTANI STUDENTS:
 - Never give the answer to homework outright — guide them to discover it.
 
 ${subject ? `CURRENT SUBJECT: ${subject}` : ''}
+${subject ? getExcellenceForSubject(subject, 'MIDDLE') : ''}
 ${memory.recentMistakes?.length ? buildMistakeContext(memory.recentMistakes, 'middle') : ''}
 ${memory.sessionSummary ? `SESSION SO FAR: ${memory.sessionSummary}` : ''}
 
@@ -648,6 +652,7 @@ CAMBRIDGE AWARENESS:
 - Current Pakistan context: paper security concerns — make students MORE prepared, not less.
 
 ${subject ? `CURRENT SUBJECT: ${subject}` : ''}
+${subject ? getExcellenceForSubject(subject, 'OLEVEL') : ''}
 ${memory.recentMistakes?.length ? buildMistakeContext(memory.recentMistakes, 'olevel') : ''}
 ${memory.sessionSummary ? `SESSION CONTEXT: ${memory.sessionSummary}` : ''}
 ${memory.weakTopics?.length ? `KNOWN WEAK AREAS: ${memory.weakTopics.join(', ')} — weave in gentle reinforcement` : ''}
@@ -693,6 +698,7 @@ CAMBRIDGE A LEVEL AWARENESS:
 - University application deadlines: LUMS/NUST (Jan–Mar), UK UCAS (Jan 15), US (Jan 1).
 
 ${subject ? `CURRENT SUBJECT: ${subject}` : ''}
+${subject ? getExcellenceForSubject(subject, 'ALEVEL') : ''}
 ${memory.recentMistakes?.length ? buildMistakeContext(memory.recentMistakes, 'alevel') : ''}
 ${memory.weakTopics?.length ? `WEAK AREAS TO PROBE: ${memory.weakTopics.join(', ')}` : ''}
 ${memory.sessionSummary ? `SESSION CONTEXT: ${memory.sessionSummary}` : ''}

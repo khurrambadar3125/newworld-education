@@ -7,6 +7,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { buildMessages } from '../../utils/starkyPrompt';
 import { getKnowledgeForTopic } from '../../utils/getKnowledgeForTopic';
+import { detectExcellenceTrigger, getSituationalExcellence, getReadingList } from '../../utils/academicExcellence';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -205,6 +206,21 @@ export default async function handler(req, res) {
       const topicKnowledge = getKnowledgeForTopic(message, currentSubject);
       if (topicKnowledge) {
         built.systemPrompt += topicKnowledge;
+      }
+
+      // Tier 3: Situational excellence — bored students, "why do I need this?", university prep, exam depth
+      const excellenceTrigger = detectExcellenceTrigger(message);
+      if (excellenceTrigger) {
+        built.systemPrompt += getSituationalExcellence(excellenceTrigger);
+      }
+
+      // Reading list injection — only when student asks for book recommendations
+      const msgLowerCheck = message.toLowerCase();
+      if (msgLowerCheck.includes('what should i read') || msgLowerCheck.includes('book') || msgLowerCheck.includes('recommend')) {
+        const readingList = getReadingList(currentSubject);
+        if (readingList) {
+          built.systemPrompt += '\n\n' + readingList;
+        }
       }
 
       // ── Inject auto-discovered knowledge + student preferences from Supabase ──
