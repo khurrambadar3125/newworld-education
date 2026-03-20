@@ -18,6 +18,27 @@
 import { INTENTS, detectIntent, requiresEscalation, getEscalationType } from './starkyIntents';
 import { addKnowledgeToPrompt } from './senKnowledge';
 
+// ─── Condition-specific SEN guidance (used in grade-level prompt builders) ────
+
+const SEN_CONDITION_NOTES = {
+  autism: 'Autism Spectrum — use predictable structure, explicit instructions, avoid idioms/sarcasm, give processing time, use visual supports where possible.',
+  adhd: 'ADHD — keep responses short and punchy, use frequent check-ins, break tasks into tiny steps, celebrate small wins, vary activities to maintain engagement.',
+  dyslexia: 'Dyslexia — use short sentences, avoid dense text blocks, emphasise visual/audio learning, never ask to "read carefully", use bullet points and bold key terms.',
+  ds: 'Down Syndrome — use simple clear language, lots of repetition and reinforcement, concrete examples over abstract concepts, celebrate every achievement warmly.',
+  cp: 'Cerebral Palsy — be patient with response time, avoid tasks requiring fine motor speed, offer alternatives for writing-heavy tasks, focus on cognitive engagement.',
+  vi: 'Visual Impairment — describe all visual content in detail, use text-based explanations, avoid "look at this" language, structure responses for screen readers.',
+  hi: 'Hearing Impairment — use clear written language, avoid phonics-based teaching, use visual demonstrations, write out all instructions explicitly.',
+  unsure: 'Possible undiagnosed condition — be extra patient, watch for learning patterns, use multi-sensory approaches, never assume the student is being lazy or difficult.',
+};
+
+function getSENNote(profile) {
+  if (!profile.senFlag && !profile.isSEN) return '';
+  const condition = profile.senType || profile.senCondition || '';
+  const specific = SEN_CONDITION_NOTES[condition];
+  if (specific) return `SEN: ${specific}`;
+  return 'This student has special educational needs. Be extra patient, use clear structure, shorter sentences, more repetition.';
+}
+
 // ─── Grade classification ────────────────────────────────────────────────────
 
 export const GRADE_GROUPS = {
@@ -403,7 +424,7 @@ function buildKidPrompt(profile, memory, intent) {
 
 YOU ARE TALKING TO A YOUNG CHILD:
 - Name: ${name}, Grade: ${grade}, Age: approximately ${age} years old
-- ${profile.senFlag ? 'NOTE: This student has special educational needs. Be extra patient, use shorter sentences, more repetition.' : ''}
+- ${getSENNote(profile)}
 
 PAKISTAN YOUNG LEARNER CURRICULUM (SNC — Single National Curriculum 2020):
 - KG-Grade 2: Counting to 100, basic addition/subtraction, shapes, patterns, Urdu alphabet (alif-be-pe-te),
@@ -459,7 +480,7 @@ function buildMiddlePrompt(profile, memory, intent) {
 
 STUDENT CONTEXT:
 - Name: ${name}, Grade: ${grade}
-- ${profile.senFlag ? 'SEN flag: Yes — use clear structure, bullet points, avoid walls of text.' : ''}
+- ${getSENNote(profile)}
 
 PAKISTAN MIDDLE SCHOOL CURRICULUM:
 - Grade 6-8 Pakistan (SNC + Provincial Boards): General Science (cells, human body, forces, electricity,
@@ -510,7 +531,7 @@ function buildOLevelPrompt(profile, memory, intent) {
 STUDENT CONTEXT:
 - Name: ${name}, Grade: ${grade}
 ${subjects ? `- Cambridge subjects: ${subjects}` : ''}
-- ${profile.senFlag ? 'SEN accommodation: Yes — clear structure, extra time awareness, chunked information.' : ''}
+- ${getSENNote(profile)}
 
 HOW TO SPEAK — THESE ARE GEN Z CAMBRIDGE STUDENTS IN PAKISTAN:
 - Knowledgeable but REAL — like a brilliant older sibling who got straight A*s and actually remembers what it's like.
@@ -554,7 +575,7 @@ function buildALevelPrompt(profile, memory, intent) {
 STUDENT CONTEXT:
 - Name: ${name}, Grade: ${grade}
 ${subjects ? `- Cambridge A Level subjects: ${subjects}` : ''}
-- ${profile.senFlag ? 'SEN: Yes — structured responses, clear signposting.' : ''}
+- ${getSENNote(profile)}
 
 HOW TO SPEAK — THESE ARE 16-18 YEAR OLD A LEVEL STUDENTS PREPARING FOR UNIVERSITY:
 - Intellectually rigorous. Treat them as adults. They can handle complexity.

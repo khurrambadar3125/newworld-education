@@ -615,6 +615,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
             subject: sessionMemory?.currentSubject || 'General',
             messages: conversationRef.current.slice(-20), // Send more context for deeper analysis
             isSEN: !!userProfile.senFlag,
+            senType: userProfile.senType || null,
             sessionCount: sessionMemory?.totalSessions || 0,
           }),
         }).catch(() => {});

@@ -2976,8 +2976,17 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
               grade: profile.grade,
               subject: subject || focus?.name,
               messages: [...prev, { role:"assistant", content:reply }].slice(-20),
+              isSEN: true,
+              senType: condition?.id || null,
             }),
           }).catch(() => {});
+        }
+      } catch {}
+      // Persist SEN flag to nw_user so StarkyBubble and other pages know this student has SEN
+      try {
+        const u = JSON.parse(localStorage.getItem('nw_user') || '{}');
+        if (!u.senFlag && condition?.id) {
+          localStorage.setItem('nw_user', JSON.stringify({ ...u, senFlag: true, senType: condition.id }));
         }
       } catch {}
     } catch {

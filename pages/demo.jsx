@@ -242,8 +242,8 @@ export default function DemoPage() {
         const parent = JSON.parse(localStorage.getItem('nw_parent') || '{}');
         if (parent.email) {
           const user = JSON.parse(localStorage.getItem('nw_user') || '{}');
-          if (!user.email || user.email !== parent.email) {
-            localStorage.setItem('nw_user', JSON.stringify({ ...user, name: activeChild.name, email: parent.email, grade: activeChild.grade, parentEmail: parent.email }));
+          if (!user.email || user.email !== parent.email || user.senFlag !== !!activeChild.senCondition) {
+            localStorage.setItem('nw_user', JSON.stringify({ ...user, name: activeChild.name, email: parent.email, grade: activeChild.grade, parentEmail: parent.email, senFlag: !!activeChild.senCondition, senType: activeChild.senCondition || null }));
           }
         }
         return;

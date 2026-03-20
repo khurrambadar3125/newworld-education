@@ -319,7 +319,7 @@ export default function Home() {
           fetch('/api/session-complete', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ studentId: p.email, studentName: p.name, parentEmail: p.email, parentName: p.name, grade: selectedGrade?.label, subject: selectedSubject || 'General', messages: newMsgs, isSEN: false, sessionCount }),
+            body: JSON.stringify({ studentId: p.email, studentName: p.name, parentEmail: p.email, parentName: p.name, grade: selectedGrade?.label, subject: selectedSubject || 'General', messages: newMsgs, isSEN: !!p.senFlag, senType: p.senType || null, sessionCount }),
           }).catch(() => {});
         }
       } catch(e) {}
