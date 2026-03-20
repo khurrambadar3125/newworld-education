@@ -1831,6 +1831,58 @@ const SEN_EXERCISES = {
   },
 };
 
+// ═══════════════════════════════════════════════════════════════════════
+// UAE SEN EXERCISES — Supplement for UAE students (AED, UAE geography, local context)
+// Keyed by exercise type. Mixed in when isUAE is true.
+// ═══════════════════════════════════════════════════════════════════════
+const UAE_EXERCISES = {
+  // Money exercises — AED instead of Rs (replaces Pakistan money questions for UAE)
+  money_fill: [
+    { sentence: "If you have 10 AED and spend 3 AED, you have ___ left.", options: ["5", "6", "7", "8"], answer: "7" },
+    { sentence: "A shawarma costs 8 AED. You pay with 10 AED. Your change is ___.", options: ["2 AED", "3 AED", "4 AED", "5 AED"], answer: "2 AED" },
+    { sentence: "You have 50 AED. A book costs 35 AED. Your change is ___ AED.", options: ["10", "15", "20", "25"], answer: "15" },
+    { sentence: "If you save 20 AED each week for 4 weeks, you have ___ AED.", options: ["60", "80", "100", "120"], answer: "80" },
+  ],
+  money_fill_sixthform: [
+    { sentence: "If you earn 5,000 AED per month and spend 4,000 AED, you save ___ AED.", options: ["500", "1,000", "1,500", "2,000"], answer: "1,000", explanation: "5,000 minus 4,000 equals 1,000 dirhams saved each month." },
+    { sentence: "A 20% discount on 500 AED saves you ___ AED.", options: ["50", "100", "150", "200"], answer: "100", explanation: "20/100 x 500 = 100 AED saved." },
+    { sentence: "If you save 10,000 AED at 5% interest for 1 year, you earn ___ AED.", options: ["250", "500", "1,000", "5,000"], answer: "500", explanation: "5% of 10,000 = 500 AED interest." },
+    { sentence: "In an emergency in the UAE, you call ___.", options: ["999", "911", "112", "100"], answer: "999", explanation: "999 is the emergency number in the UAE for police, ambulance, and fire." },
+  ],
+  // Geography — UAE instead of Pakistan
+  geography_truefalse: [
+    { statement: "The capital of the UAE is Abu Dhabi.", answer: true },
+    { statement: "Dubai is the capital of the UAE.", answer: false },
+    { statement: "The UAE has 7 emirates.", answer: true },
+    { statement: "The Burj Khalifa is in Abu Dhabi.", answer: false },
+    { statement: "The UAE is in the Middle East.", answer: true },
+    { statement: "Sharjah is the largest emirate by area.", answer: false },
+  ],
+  geography_fill: [
+    { sentence: "The tallest building in the world, the Burj Khalifa, is in ___.", options: ["Abu Dhabi", "Dubai", "Sharjah", "Riyadh"], answer: "Dubai" },
+    { sentence: "The UAE has ___ emirates.", options: ["5", "6", "7", "8"], answer: "7" },
+    { sentence: "The national language of the UAE is ___.", options: ["English", "Arabic", "Hindi", "Urdu"], answer: "Arabic" },
+  ],
+  // Social/picture scenarios with UAE context
+  picture_primary: [
+    { scene: "You visit the Dubai Mall. You have 50 AED. A toy costs 35 AED. How much change?", prompt: "Work out the money!" },
+    { scene: "Your school in Abu Dhabi has a sports day. Describe what sports you would see.", prompt: "Describe the sports day!" },
+    { scene: "You are planning a trip to Yas Island with your family. Tickets cost 120 AED each. There are 4 people in your family.", prompt: "How much will all the tickets cost? Show your working!" },
+  ],
+  picture_secondary: [
+    { scene: "You are writing about the importance of Expo 2020 Dubai for the UAE economy.", prompt: "Give three reasons why international events boost a country's economy." },
+    { scene: "A company in Dubai has 200 employees. 35% work remotely. How many work in the office?", prompt: "Calculate the number and show your working." },
+  ],
+  picture_sixthform: [
+    { scenario: "You are preparing for a university interview. The interviewer asks: 'What is the biggest challenge facing the UAE in the next decade, and how would you address it?'", prompt: "Give a structured answer: identify the challenge, explain why it matters, and propose two realistic solutions with evidence." },
+    { scenario: "You earn 8,000 AED per month. Your expenses are: rent 3,500 AED, food 1,500 AED, transport 800 AED, phone 300 AED.", prompt: "How much can you save each month? What percentage of income is that?" },
+  ],
+  // Match pairs — UAE context
+  match_sixthform: [
+    { pairs: [["Debit card", "Money comes from your bank account"], ["Credit card", "You borrow money and pay back later"], ["IBAN", "International bank account number"], ["Budget", "Plan for how to spend your money"]] },
+  ],
+};
+
 // ── CONDITIONS ─────────────────────────────────────────────────────────
 const CONDITIONS = [
   { id:"autism",    emoji:"🌟", name:"Autism Spectrum",      urdu:"آٹزم",           color:"#63D2FF", short:"ASD",      signs:"Social communication differences, routines, sensory sensitivity" },
@@ -1889,7 +1941,7 @@ const FOCUSES = [
 ];
 
 // ── SYSTEM PROMPT BUILDER ─────────────────────────────────────────────
-function buildPrompt(condition, stage, focus, subject, urduMode = false) {
+function buildPrompt(condition, stage, focus, subject, urduMode = false, isUAE = false) {
   if (!condition || !stage || !focus) return "";
 
   const conditionAdapt = {
@@ -1957,7 +2009,7 @@ function buildPrompt(condition, stage, focus, subject, urduMode = false) {
 - Ask the parent/student to describe the specific challenges they face before teaching
 - Listen for clues: reading difficulty → dyslexia; hyperactivity/inattention → ADHD; social/communication differences → ASD
 - Adapt your response style based on what you hear — do NOT assume
-- Explicitly validate the parent: "Many Pakistani children go undiagnosed for years — you've done the right thing by seeking support"
+- Explicitly validate the parent: "Many children go undiagnosed for years — you've done the right thing by seeking support"
 - Suggest that a formal assessment would help, but emphasise that Starky can help RIGHT NOW without one
 - Try multiple approaches — some may work better than others — report back what works`,
 
@@ -2031,7 +2083,18 @@ Teach exam technique alongside content. SEN accommodations explained. Past paper
 Speak to the adult supporting this child. Practical, evidence-based guidance for home. What to do, what NOT to do. Common mistakes parents make with this condition and age group. Resources, organisations, support networks. How to advocate for your child at school.`,
   };
 
-  const pakistanContext = `
+  const regionContext = isUAE ? `
+UAE CONTEXT (for this student):
+- Many students in UAE attend British curriculum schools (GEMS, Taaleem, ADNOC Schools), American curriculum (ACS), or IB schools
+- SEN provision in UAE: Dubai KHDA provides SEN regulations. Abu Dhabi ADEK has People of Determination framework
+- UAE Access Arrangements: schools apply through exam boards (Cambridge, Edexcel, AQA) for extra time, reader, scribe
+- Dubai Autism Center, Rashid Centre for Disabled, Manzil Center — local SEN resources
+- Currency: AED (Dirhams) not PKR. Use "10 AED" not "Rs 100" in examples
+- Cultural context: diverse international students, English is the common language, Arabic is the national language
+- Term "People of Determination" is preferred over "disabled" in UAE
+- The student may follow British, American, IB, or MOE (Ministry of Education) curriculum — ask if unclear
+- Arabic and English are both valid — respond in whichever language the parent/student uses
+` : `
 PAKISTAN CONTEXT (critical for this session):
 - Many Pakistani children are UNDIAGNOSED — parents may not know the clinical term for their child's condition
 - ADHD is commonly dismissed as "شرارتی بچہ" (naughty child) in Pakistan — NEVER use this framing
@@ -2081,7 +2144,7 @@ Remember: You are not teaching a condition. You are teaching a child who happens
 If the message is in Urdu or Arabic, respond in that language.
 ${urduMode ? "IMPORTANT: This session is in URDU MODE. Respond ENTIRELY in Urdu. All explanations, encouragement, and guidance must be in Urdu. Only keep English for technical Cambridge/exam terms with no Urdu equivalent." : ""}
 
-${pakistanContext}`);
+${regionContext}`);
 }
 
 // ── PROGRESS ─────────────────────────────────────────────────────────
@@ -2402,7 +2465,7 @@ function SENDrillWidget({ condition, stage, subject, xpData, setXpData }) {
 // ═══════════════════════════════════════════════════════════════════════
 // SEN QUICK EXERCISES — Local, no API, instant
 // ═══════════════════════════════════════════════════════════════════════
-function SENQuickExercises({ condition, stage, xpData, setXpData }) {
+function SENQuickExercises({ condition, stage, xpData, setXpData, isUAE }) {
   const [activeExType, setActiveExType] = useState(null); // 'match', 'fill', 'truefalse', 'picture'
   const [exIndex, setExIndex] = useState(0);
   const [exState, setExState] = useState(null); // exercise-specific state
@@ -2412,7 +2475,54 @@ function SENQuickExercises({ condition, stage, xpData, setXpData }) {
   const [pictureResponse, setPictureResponse] = useState('');
 
   const exKey = condition && stage ? `${condition.id}_${stage.id}` : null;
-  const exercises = exKey ? SEN_EXERCISES[exKey] : null;
+  let exercises = exKey ? SEN_EXERCISES[exKey] : null;
+
+  // Mix in UAE exercises when student is in UAE
+  if (exercises && isUAE) {
+    const stageId = stage?.id || '';
+    exercises = { ...exercises };
+    // Replace Pakistan-specific money/geography questions with UAE versions
+    if (exercises.fill) {
+      const uaeFill = stageId === 'sixthform' ? UAE_EXERCISES.money_fill_sixthform : UAE_EXERCISES.money_fill;
+      const uaeGeoFill = UAE_EXERCISES.geography_fill || [];
+      if (uaeFill || uaeGeoFill.length) {
+        // Filter out Pakistan-specific fill questions (Rs currency, Pakistan-specific content)
+        const filtered = exercises.fill.filter(q =>
+          !(/\bRs\b/.test(q.sentence)) &&
+          !(/Pakistan ki qoumi/.test(q.sentence)) &&
+          !(/emergency in Pakistan/.test(q.sentence)) &&
+          !(/founder of Pakistan/.test(q.sentence))
+        );
+        exercises.fill = [...filtered, ...(uaeFill || []), ...uaeGeoFill];
+      }
+    }
+    if (exercises.truefalse) {
+      const uaeGeoTF = UAE_EXERCISES.geography_truefalse || [];
+      // Filter out Pakistan Studies true/false
+      const filtered = exercises.truefalse.filter(q =>
+        !(/Quaid-e-Azam/.test(q.statement)) &&
+        !(/Rs\s?\d/.test(q.statement))
+      );
+      exercises.truefalse = [...filtered, ...uaeGeoTF];
+    }
+    if (exercises.picture) {
+      const uaePic = stageId === 'sixthform' ? UAE_EXERCISES.picture_sixthform
+        : stageId === 'secondary' ? UAE_EXERCISES.picture_secondary
+        : UAE_EXERCISES.picture_primary;
+      if (uaePic) {
+        // Filter out Pakistan-specific picture scenarios (Lahore, Pakistan references)
+        const filtered = exercises.picture.filter(q =>
+          !(/Lahore/.test(q.scene || q.scenario || '')) &&
+          !(/Pakistan/.test(q.scene || q.scenario || q.prompt || '')) &&
+          !(/Rs\s?\d/.test(q.scene || q.scenario || ''))
+        );
+        exercises.picture = [...filtered, ...uaePic];
+      }
+    }
+    if (exercises.match && stageId === 'sixthform' && UAE_EXERCISES.match_sixthform) {
+      exercises.match = [...exercises.match, ...UAE_EXERCISES.match_sixthform];
+    }
+  }
 
   const resetEx = () => { setActiveExType(null); setExIndex(0); setExState(null); setExFeedback(null); setShowExConfetti(false); setPictureResponse(''); };
 
@@ -2714,6 +2824,8 @@ function SENQuickExercises({ condition, stage, xpData, setXpData }) {
 export default function SpecialNeedsPage() {
   const [step, setStep]           = useState(1); // 1=condition, 2=stage, 3=focus, 4=chat
   const [urduMode, setUrduMode]   = useState(false); // Urdu language toggle
+  const [region, setRegion]       = useState('pk'); // pk, ae, sa, gb, other
+  const isUAE = region === 'ae' || region === 'sa'; // UAE + Saudi share Gulf context
   const [condition, setCondition] = useState(null);
   const [stage, setStage]         = useState(null);
   const [focus, setFocus]         = useState(null);
@@ -2736,6 +2848,17 @@ export default function SpecialNeedsPage() {
     const fn = () => setIsMobile(window.innerWidth < 768);
     fn(); window.addEventListener("resize", fn);
     return () => window.removeEventListener("resize", fn);
+  }, []);
+  // Auto-detect region from timezone, user can override
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('nw_sen_region');
+      if (saved) { setRegion(saved); return; }
+      const tz = (Intl.DateTimeFormat().resolvedOptions().timeZone || '').toLowerCase();
+      if (tz.includes('dubai') || tz.includes('muscat')) setRegion('ae');
+      else if (tz.includes('riyadh') || tz.includes('jeddah')) setRegion('sa');
+      else if (tz.includes('london') || tz.includes('europe/london')) setRegion('gb');
+    } catch {}
   }, []);
   useEffect(() => { chatEndRef.current?.scrollIntoView({ behavior:"smooth" }); }, [messages, loading]);
   useEffect(() => { setProgress(loadP()); }, []);
@@ -2823,7 +2946,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
         body:JSON.stringify({
           model:"claude-haiku-4-5-20251001",
           max_tokens:1500,
-          system:buildPrompt(condition, stage, focus, subject, urduMode),
+          system:buildPrompt(condition, stage, focus, subject, urduMode, isUAE),
           messages:prev.map(m => ({ role:m.role, content:m.content })),
         }),
       });
@@ -2976,31 +3099,79 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
               </p>
             </div>
 
+            {/* ── COUNTRY SELECTOR ── */}
+            <div style={{ display:"flex", justifyContent:"center", gap:8, marginBottom:24, flexWrap:"wrap" }}>
+              {[
+                { id:'pk', flag:'🇵🇰', label:'Pakistan' },
+                { id:'ae', flag:'🇦🇪', label:'UAE' },
+                { id:'sa', flag:'🇸🇦', label:'Saudi Arabia' },
+                { id:'gb', flag:'🇬🇧', label:'UK' },
+                { id:'other', flag:'🌍', label:'Other' },
+              ].map(c => (
+                <button key={c.id} onClick={() => { setRegion(c.id); try { localStorage.setItem('nw_sen_region', c.id); } catch {} }}
+                  style={{
+                    display:"flex", alignItems:"center", gap:6,
+                    padding:"8px 16px", borderRadius:12, cursor:"pointer",
+                    border: region === c.id ? `2px solid ${accentColor}` : "2px solid rgba(255,255,255,0.1)",
+                    background: region === c.id ? accentColor+"15" : "rgba(255,255,255,0.04)",
+                    color: region === c.id ? accentColor : "rgba(255,255,255,0.6)",
+                    fontSize:13, fontWeight:700, fontFamily:"'Nunito',sans-serif",
+                    transition:"all 0.15s",
+                  }}>
+                  <span style={{ fontSize:18 }}>{c.flag}</span>{c.label}
+                </button>
+              ))}
+            </div>
+
             <StepBar/>
 
-            {/* ── PAKISTAN SEN AWARENESS PANEL ── */}
-            <div style={{ background:"linear-gradient(135deg,rgba(167,139,250,0.08),rgba(79,142,247,0.06))", border:"1px solid rgba(167,139,250,0.2)", borderRadius:18, padding:"18px 20px", marginBottom:24 }}>
-              <div style={{ fontSize:12, fontWeight:900, color:"#A78BFA", letterSpacing:1, marginBottom:12 }}>🇵🇰 بچوں کے بارے میں اہم بات — IMPORTANT FOR PARENTS</div>
-              <div style={{ display:"grid", gridTemplateColumns:isMobile?"1fr":"repeat(2,1fr)", gap:10 }}>
-                {[
-                  { icon:"⚡", en:"ADHD is not 'naughtiness'", ur:"شرارت نہیں، ADHD ہے — علاج ممکن ہے", desc:"Restless, impulsive, loses focus? This is neurological, not a behaviour problem." },
-                  { icon:"🎵", en:"Dyslexia is widely undiagnosed", ur:"ڈسلیکسیا — پاکستان میں اکثر تشخیص نہیں ہوتی", desc:"Struggles with reading/spelling but smart in other ways? This could be dyslexia." },
-                  { icon:"🌟", en:"O Level students can get extra time", ur:"O Level طالب علم کو اضافی وقت مل سکتا ہے", desc:"Cambridge Access Arrangements: 25% extra time, reader, scribe — ask your school's exam officer." },
-                  { icon:"❓", en:"No diagnosis yet? That's okay", ur:"تشخیص نہیں ہوئی؟ کوئی بات نہیں", desc:"Choose 'Not Sure' below — describe your child's challenges and Starky will adapt." },
-                ].map(item => (
-                  <div key={item.en} style={{ background:"rgba(255,255,255,0.04)", borderRadius:12, padding:"12px 14px" }}>
-                    <div style={{ display:"flex", gap:8, alignItems:"flex-start" }}>
-                      <span style={{ fontSize:18, flexShrink:0 }}>{item.icon}</span>
-                      <div>
-                        <div style={{ fontSize:12, fontWeight:800, color:"rgba(255,255,255,0.85)", marginBottom:2 }}>{item.en}</div>
-                        <div style={{ fontSize:11, fontWeight:700, color:"#A78BFA", marginBottom:4, direction:"rtl", textAlign:"right" }}>{item.ur}</div>
-                        <div style={{ fontSize:11, color:"rgba(255,255,255,0.4)", lineHeight:1.6 }}>{item.desc}</div>
+            {/* ── SEN AWARENESS PANEL — Region-aware (UAE / Pakistan) ── */}
+            {isUAE ? (
+              <div style={{ background:"linear-gradient(135deg,rgba(167,139,250,0.08),rgba(79,142,247,0.06))", border:"1px solid rgba(167,139,250,0.2)", borderRadius:18, padding:"18px 20px", marginBottom:24 }}>
+                <div style={{ fontSize:12, fontWeight:900, color:"#A78BFA", letterSpacing:1, marginBottom:12 }}>FOR PARENTS IN THE UAE — IMPORTANT</div>
+                <div style={{ display:"grid", gridTemplateColumns:isMobile?"1fr":"repeat(2,1fr)", gap:10 }}>
+                  {[
+                    { icon:"⚡", en:"ADHD is underdiagnosed in the Gulf", desc:"Many children are labeled 'naughty' or 'lazy'. ADHD is neurological — early support changes everything." },
+                    { icon:"🏫", en:"Your school MUST provide SEN support", desc:"KHDA (Dubai) and ADEK (Abu Dhabi) require inclusive education for all students." },
+                    { icon:"📝", en:"Exam access arrangements available", desc:"Extra time, reader, scribe — apply through your school's exam officer for Cambridge, Edexcel, or AQA." },
+                    { icon:"💙", en:"People of Determination", desc:"The UAE term for special needs. Your child has legal rights to educational support and accommodations." },
+                  ].map(item => (
+                    <div key={item.en} style={{ background:"rgba(255,255,255,0.04)", borderRadius:12, padding:"12px 14px" }}>
+                      <div style={{ display:"flex", gap:8, alignItems:"flex-start" }}>
+                        <span style={{ fontSize:18, flexShrink:0 }}>{item.icon}</span>
+                        <div>
+                          <div style={{ fontSize:12, fontWeight:800, color:"rgba(255,255,255,0.85)", marginBottom:2 }}>{item.en}</div>
+                          <div style={{ fontSize:11, color:"rgba(255,255,255,0.4)", lineHeight:1.6 }}>{item.desc}</div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
+            ) : (
+              <div style={{ background:"linear-gradient(135deg,rgba(167,139,250,0.08),rgba(79,142,247,0.06))", border:"1px solid rgba(167,139,250,0.2)", borderRadius:18, padding:"18px 20px", marginBottom:24 }}>
+                <div style={{ fontSize:12, fontWeight:900, color:"#A78BFA", letterSpacing:1, marginBottom:12 }}>🇵🇰 بچوں کے بارے میں اہم بات — IMPORTANT FOR PARENTS</div>
+                <div style={{ display:"grid", gridTemplateColumns:isMobile?"1fr":"repeat(2,1fr)", gap:10 }}>
+                  {[
+                    { icon:"⚡", en:"ADHD is not 'naughtiness'", ur:"شرارت نہیں، ADHD ہے — علاج ممکن ہے", desc:"Restless, impulsive, loses focus? This is neurological, not a behaviour problem." },
+                    { icon:"🎵", en:"Dyslexia is widely undiagnosed", ur:"ڈسلیکسیا — پاکستان میں اکثر تشخیص نہیں ہوتی", desc:"Struggles with reading/spelling but smart in other ways? This could be dyslexia." },
+                    { icon:"🌟", en:"O Level students can get extra time", ur:"O Level طالب علم کو اضافی وقت مل سکتا ہے", desc:"Cambridge Access Arrangements: 25% extra time, reader, scribe — ask your school's exam officer." },
+                    { icon:"❓", en:"No diagnosis yet? That's okay", ur:"تشخیص نہیں ہوئی؟ کوئی بات نہیں", desc:"Choose 'Not Sure' below — describe your child's challenges and Starky will adapt." },
+                  ].map(item => (
+                    <div key={item.en} style={{ background:"rgba(255,255,255,0.04)", borderRadius:12, padding:"12px 14px" }}>
+                      <div style={{ display:"flex", gap:8, alignItems:"flex-start" }}>
+                        <span style={{ fontSize:18, flexShrink:0 }}>{item.icon}</span>
+                        <div>
+                          <div style={{ fontSize:12, fontWeight:800, color:"rgba(255,255,255,0.85)", marginBottom:2 }}>{item.en}</div>
+                          <div style={{ fontSize:11, fontWeight:700, color:"#A78BFA", marginBottom:4, direction:"rtl", textAlign:"right" }}>{item.ur}</div>
+                          <div style={{ fontSize:11, color:"rgba(255,255,255,0.4)", lineHeight:1.6 }}>{item.desc}</div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <div style={{ fontSize:12, fontWeight:900, color:"rgba(255,255,255,0.3)", letterSpacing:2, textAlign:"center", marginBottom:16 }}>STEP 1 — SELECT CONDITION</div>
 
@@ -3245,7 +3416,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
             </div>
 
             {/* ── Quick Exercise Buttons ─────────────────── */}
-            <SENQuickExercises condition={condition} stage={stage} xpData={xpData} setXpData={setXpData} />
+            <SENQuickExercises condition={condition} stage={stage} xpData={xpData} setXpData={setXpData} isUAE={isUAE} />
 
             {/* Share session with teacher/therapist */}
             {messages.length > 2 && (
