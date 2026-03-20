@@ -16,7 +16,7 @@
  */
 
 import { INTENTS, detectIntent, requiresEscalation, getEscalationType } from './starkyIntents';
-import { addKnowledgeToPrompt } from './senKnowledge';
+import { addKnowledgeToPrompt, detectSENContext } from './senKnowledge';
 
 // ─── Condition-specific SEN guidance (used in grade-level prompt builders) ────
 
@@ -854,21 +854,28 @@ export function buildMessages({ userProfile: rawProfile, sessionMemory: rawMemor
     }
   }
 
-  // 3b-ii. If a NON-SEN user mentions SEN topics, gently redirect to the specialist section
-  // Do NOT inject the full SEN knowledge base — keep the main chat focused on its purpose
+  // 3b-ii. Non-SEN users who mention SEN topics — two paths:
+  // PARENT detected + SEN keyword → activate full SEN knowledge (they need expert help NOW)
+  // REGULAR STUDENT + SEN keyword → warm redirect to /special-needs (don't hallucinate SEN tutoring)
   if (!hasSENProfile) {
-    const senKeywords = ['dyslexia', 'adhd', 'autism', 'asd', 'dyscalculia', 'dyspraxia', 'dysgraphia',
-      'down syndrome', 'cerebral palsy', 'special needs', 'learning disability', 'sensory processing',
-      'my child has', 'my son has', 'my daughter has', 'struggles in school', 'struggles at school'];
-    const lowerMsg = (userMessage || '').toLowerCase();
-    const mentionsSEN = senKeywords.some(kw => lowerMsg.includes(kw));
-    if (mentionsSEN) {
-      systemPrompt += `\n\nIMPORTANT: The student or parent has mentioned a special educational need or learning difference. You should:
-1. Respond warmly and supportively — acknowledge what they've shared
-2. Let them know that NewWorld has a DEDICATED specialist SEN section at /special-needs with world-class support for their specific condition
-3. Say: "We have a specialist section built just for this — visit newworld.education/special-needs where Starky becomes a fully trained SEN specialist with condition-specific teaching."
-4. If they have a specific question right now, answer it helpfully but briefly — you are NOT the SEN specialist in this section
-5. Do NOT attempt to provide full SEN tutoring from this chat — the /special-needs page has condition-specific prompts, exercises, and teaching protocols`;
+    const senDetection = detectSENContext(userMessage);
+    if (senDetection.isSEN) {
+      const isParent = intent === INTENTS.PARENT_QUERY;
+      if (isParent) {
+        // Parent asking about their child's condition — activate full SEN specialist mode
+        systemPrompt = addKnowledgeToPrompt(systemPrompt);
+        if (senDetection.detectedCondition && SEN_CONDITION_NOTES[senDetection.detectedCondition]) {
+          systemPrompt += `\n\nDETECTED CONDITION FROM PARENT MESSAGE — ${senDetection.detectedCondition.toUpperCase()}:\n${SEN_CONDITION_NOTES[senDetection.detectedCondition]}`;
+        }
+        systemPrompt += `\n\nThis is a PARENT asking about their child's learning difference. Respond as a full SEN specialist. Also mention that newworld.education/special-needs has a dedicated section with condition-specific tutoring, exercises, and progress tracking for their child.`;
+      } else {
+        // Regular student mentioning SEN — redirect, don't attempt SEN tutoring
+        systemPrompt += `\n\nNOTE: The student mentioned a special educational need or learning difference. You should:
+1. Respond warmly — acknowledge what they've shared
+2. Direct them to newworld.education/special-needs: "We have a specialist section built just for this — Starky becomes a fully trained SEN specialist there with condition-specific teaching."
+3. Answer their immediate question briefly and helpfully
+4. Do NOT attempt full SEN tutoring from this chat — the /special-needs page has the specialist tools`;
+      }
     }
   }
 
