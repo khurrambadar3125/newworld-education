@@ -787,51 +787,55 @@ END OF STARKY SEN KNOWLEDGE BASE
 `;
 
 // ─── SEN keyword detection — triggers SEN mode from message content ──────────
+//
+// IMPORTANT: Only EXPLICIT clinical/diagnostic terms trigger SEN detection.
+// Generic academic struggles ("struggles with reading", "can't focus", "slow learner")
+// are NORMAL student complaints and must NOT trigger SEN mode.
+// A student saying "I hate maths" or "reading is hard" is not SEN — it's school.
 
+// Condition-specific clinical terms — unambiguously indicate SEN
+const SEN_CONDITION_MAP = {
+  autism:      ['autism', 'autistic', 'asd', 'autism spectrum', 'on the spectrum'],
+  adhd:        ['adhd', 'attention deficit', 'attention deficit hyperactivity'],
+  dyslexia:    ['dyslexia', 'dyslexic'],
+  dyscalculia: ['dyscalculia', 'dyscalculic'],
+  dyspraxia:   ['dyspraxia', 'developmental coordination disorder'],
+  ds:          ['down syndrome', 'downs syndrome', 'down\'s syndrome', 'trisomy 21'],
+  dysgraphia:  ['dysgraphia', 'dysgraphic'],
+  sensory:     ['sensory processing disorder', 'sensory processing difficulty', 'sensory overload'],
+  cp:          ['cerebral palsy'],
+  vi:          ['visual impairment', 'visually impaired'],
+  hi:          ['hearing impairment', 'hard of hearing', 'hearing loss'],
+};
+
+// Generic SEN terms — clinical/institutional, not everyday language
 export const SEN_TRIGGER_KEYWORDS = [
-  'dyslexia', 'dyslexic', 'adhd', 'autism', 'autistic', 'asd',
-  'dyspraxia', 'dcd', 'dyscalculia', 'down syndrome', 'downs syndrome',
-  'trisomy 21', 'dysgraphia', 'sensory processing', 'learning difference',
-  'learning differences', 'learning disability', 'learning disabilities',
-  'sen', 'special needs', 'special educational needs', 'spld',
-  'struggles in school', 'struggles at school', 'struggles with reading',
-  'struggles with maths', 'struggles with writing', 'cannot focus',
-  'can\'t focus', 'cannot concentrate', 'can\'t concentrate',
-  'cerebral palsy', 'visual impairment', 'hearing impairment',
-  'blind', 'deaf', 'hard of hearing', 'visually impaired',
-  'speech delay', 'language delay', 'developmental delay',
-  'slow learner', 'not keeping up', 'falling behind',
+  // Clinical / institutional terms only
+  'special educational needs', 'special needs', 'learning disability',
+  'learning disabilities', 'learning difference', 'learning differences',
+  'spld', 'specific learning difficulty',
   'iep', 'ehcp', 'statementing', 'educational psychologist',
-  // Roman Urdu
-  'parhai mein mushkil', 'seekhne mein mushkil', 'likhne mein mushkil',
-  'parhne mein mushkil', 'dhyan nahi lagta', 'yaad nahi rehta',
-  'khaas zaroorat', 'zimma wala bacha',
+  'speech delay', 'language delay', 'developmental delay',
+  'occupational therapy', 'speech therapy',
+  'senco', 'sen coordinator', 'sen support',
+  // Explicit diagnoses (Roman Urdu — clinical terms only)
+  'khaas zaroorat', // special needs
+  'zimma wala bacha', // special needs child
 ];
 
 /**
- * Check if a message contains SEN-related keywords that should trigger
- * SEN-aware responses even for students without senFlag set.
+ * Detect if a message explicitly references a SEN condition or clinical term.
+ *
+ * ONLY triggers on unambiguous clinical/diagnostic language.
+ * Does NOT trigger on: "struggles with reading", "can't focus", "hates maths",
+ * "slow learner", "falling behind" — these are normal academic complaints.
  */
 export function detectSENContext(message) {
   if (!message) return { isSEN: false, detectedCondition: null };
   const lower = message.toLowerCase();
 
-  // Map keywords to specific conditions for targeted response
-  const conditionMap = {
-    autism: ['autism', 'autistic', 'asd'],
-    adhd: ['adhd', 'attention deficit', 'cannot focus', 'can\'t focus', 'cannot concentrate', 'can\'t concentrate', 'dhyan nahi lagta'],
-    dyslexia: ['dyslexia', 'dyslexic', 'struggles with reading', 'parhne mein mushkil'],
-    dyscalculia: ['dyscalculia', 'struggles with maths'],
-    dyspraxia: ['dyspraxia', 'dcd', 'coordination disorder'],
-    ds: ['down syndrome', 'downs syndrome', 'trisomy 21'],
-    dysgraphia: ['dysgraphia', 'struggles with writing', 'likhne mein mushkil'],
-    sensory: ['sensory processing', 'sensory overload', 'sensory issues'],
-    cp: ['cerebral palsy'],
-    vi: ['visual impairment', 'visually impaired', 'blind'],
-    hi: ['hearing impairment', 'hard of hearing', 'deaf'],
-  };
-
-  for (const [condition, keywords] of Object.entries(conditionMap)) {
+  // Check condition-specific clinical terms first
+  for (const [condition, keywords] of Object.entries(SEN_CONDITION_MAP)) {
     for (const kw of keywords) {
       if (lower.includes(kw)) {
         return { isSEN: true, detectedCondition: condition };
@@ -839,7 +843,7 @@ export function detectSENContext(message) {
     }
   }
 
-  // Check generic SEN keywords
+  // Check generic clinical/institutional SEN terms
   for (const kw of SEN_TRIGGER_KEYWORDS) {
     if (lower.includes(kw)) {
       return { isSEN: true, detectedCondition: null };
