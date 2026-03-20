@@ -16,7 +16,7 @@
  */
 
 import { INTENTS, detectIntent, requiresEscalation, getEscalationType } from './starkyIntents';
-import { addKnowledgeToPrompt, detectSENContext } from './senKnowledge';
+import { addKnowledgeToPrompt } from './senKnowledge';
 
 // ─── Condition-specific SEN guidance (used in grade-level prompt builders) ────
 
@@ -840,22 +840,35 @@ export function buildMessages({ userProfile: rawProfile, sessionMemory: rawMemor
     default:       systemPrompt = buildOLevelPrompt(userProfile, sessionMemory, intent);
   }
 
-  // 3b. Inject SEN specialist knowledge when student has special educational needs
-  // Two paths: (1) student has senFlag set, (2) message contains SEN keywords
+  // 3b. Inject SEN specialist knowledge — ONLY for confirmed SEN users
+  // SEN knowledge activates when: (1) student has senFlag/isSEN set via profile or parent portal
+  // It does NOT activate for regular users who happen to mention SEN keywords — that's handled
+  // by the /special-needs page which has its own prompt system.
   const hasSENProfile = userProfile.senFlag || userProfile.isSEN;
-  const senFromMessage = !hasSENProfile ? detectSENContext(userMessage) : { isSEN: false };
-  if (hasSENProfile || senFromMessage.isSEN) {
+  if (hasSENProfile) {
     systemPrompt = addKnowledgeToPrompt(systemPrompt);
-    // If we detected a specific condition from the message, add targeted guidance
-    if (senFromMessage.detectedCondition && SEN_CONDITION_NOTES[senFromMessage.detectedCondition]) {
-      systemPrompt += `\n\nDETECTED SEN CONTEXT FROM MESSAGE — ${senFromMessage.detectedCondition.toUpperCase()}:\n${SEN_CONDITION_NOTES[senFromMessage.detectedCondition]}`;
+    // Add condition-specific teaching protocol if known
+    const cond = userProfile.senType || userProfile.senCondition || '';
+    if (cond && SEN_CONDITION_NOTES[cond]) {
+      systemPrompt += `\n\nTHIS STUDENT'S KNOWN CONDITION — ${cond.toUpperCase()}:\n${SEN_CONDITION_NOTES[cond]}`;
     }
-    // If student has a known condition via profile, add targeted guidance
-    if (hasSENProfile && (userProfile.senType || userProfile.senCondition)) {
-      const cond = userProfile.senType || userProfile.senCondition;
-      if (SEN_CONDITION_NOTES[cond]) {
-        systemPrompt += `\n\nTHIS STUDENT'S KNOWN CONDITION — ${cond.toUpperCase()}:\n${SEN_CONDITION_NOTES[cond]}`;
-      }
+  }
+
+  // 3b-ii. If a NON-SEN user mentions SEN topics, gently redirect to the specialist section
+  // Do NOT inject the full SEN knowledge base — keep the main chat focused on its purpose
+  if (!hasSENProfile) {
+    const senKeywords = ['dyslexia', 'adhd', 'autism', 'asd', 'dyscalculia', 'dyspraxia', 'dysgraphia',
+      'down syndrome', 'cerebral palsy', 'special needs', 'learning disability', 'sensory processing',
+      'my child has', 'my son has', 'my daughter has', 'struggles in school', 'struggles at school'];
+    const lowerMsg = (userMessage || '').toLowerCase();
+    const mentionsSEN = senKeywords.some(kw => lowerMsg.includes(kw));
+    if (mentionsSEN) {
+      systemPrompt += `\n\nIMPORTANT: The student or parent has mentioned a special educational need or learning difference. You should:
+1. Respond warmly and supportively — acknowledge what they've shared
+2. Let them know that NewWorld has a DEDICATED specialist SEN section at /special-needs with world-class support for their specific condition
+3. Say: "We have a specialist section built just for this — visit newworld.education/special-needs where Starky becomes a fully trained SEN specialist with condition-specific teaching."
+4. If they have a specific question right now, answer it helpfully but briefly — you are NOT the SEN specialist in this section
+5. Do NOT attempt to provide full SEN tutoring from this chat — the /special-needs page has condition-specific prompts, exercises, and teaching protocols`;
     }
   }
 

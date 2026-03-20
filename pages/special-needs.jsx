@@ -1892,6 +1892,10 @@ const CONDITIONS = [
   { id:"cp",        emoji:"💪", name:"Cerebral Palsy",        urdu:"دماغی فالج",    color:"#C77DFF", short:"CP",       signs:"Movement and coordination challenges — cognitive ability is often fully intact" },
   { id:"vi",        emoji:"✨", name:"Visual Impairment",     urdu:"بصری معذوری",   color:"#FF6B9D", short:"VI",       signs:"Partial or full vision loss — exceptional verbal and auditory strengths" },
   { id:"hi",        emoji:"🎶", name:"Hearing Impairment",    urdu:"سماعت کی کمی",  color:"#F4A261", short:"HI",       signs:"Partial or full hearing loss — strong visual learners with full cognitive ability" },
+  { id:"dyscalculia",emoji:"🔢", name:"Dyscalculia",           urdu:"ڈسکیلکولیا",    color:"#FF85A1", short:"Dyscalculia", signs:"Struggles with numbers, arithmetic, time, money — like dyslexia but for maths" },
+  { id:"dyspraxia", emoji:"🤸", name:"Dyspraxia / DCD",        urdu:"ڈسپریکسیا",     color:"#7ECFC0", short:"DCD",      signs:"Coordination difficulties, clumsy, struggles with handwriting and organising thoughts" },
+  { id:"dysgraphia",emoji:"✏️", name:"Dysgraphia",              urdu:"ڈسگرافیا",      color:"#FFB347", short:"Dysgraphia",signs:"Difficulty with writing — letter formation, spacing, translating thoughts to paper" },
+  { id:"sensory",   emoji:"🌊", name:"Sensory Processing",      urdu:"حسی عمل",       color:"#B8D4E3", short:"SPD",      signs:"Overwhelmed by sounds, lights, textures — needs calm, predictable environment" },
   { id:"unsure",    emoji:"❓", name:"Not Sure / Undiagnosed",urdu:"تشخیص نہیں ہوئی",color:"#A78BFA", short:"SEN",     signs:"My child struggles at school but I don't have a diagnosis yet" },
 ];
 
@@ -2004,13 +2008,59 @@ function buildPrompt(condition, stage, focus, subject, urduMode = false, isUAE =
 - Homer was blind — the literary tradition began this way
 - Full academic and creative curriculum is appropriate`,
 
+    dyscalculia: `DYSCALCULIA ADAPTATIONS (Butterworth / Bruner enactive-iconic-symbolic):
+- CONCRETE before abstract ALWAYS — real-world example first, then visual, then symbol
+- WRONG: "7 minus 3 equals 4." RIGHT: "You have 7 chocolates, eat 3. How many left?"
+- Start with LANGUAGE then number: "What does sharing equally mean? That's division."
+- Visual number lines for every arithmetic operation
+- Times tables as PATTERNS not memorisation (9x table: digits always sum to 9)
+- Remove unnecessary language from word problems — separate reading task from maths task
+- Link physical movement to maths: "Take 7 steps forward, 3 back. Where are you?"
+- Many students struggle with the language of maths more than the concept itself
+- Money, time, measurement through real-life scenarios`,
+
+    dyspraxia: `DYSPRAXIA / DCD ADAPTATIONS (EACD Guidelines 2019):
+- Digital response ALWAYS — handwriting is physically demanding and cognitively exhausting
+- Typed or voice-to-text responses eliminate the barrier entirely
+- Sequence made EXPLICIT and EXTERNAL: "Step 1 only. Tell me when done."
+- The student does NOT need to hold the full sequence — Starky holds it for them
+- Allow time for verbal expression — excellent ideas may emerge fragmented
+- Help organise thoughts: "You have 3 ideas. Let's take the first one."
+- Celebrate THINKING, not presentation — quality of thought is the measure
+- Three excellent ideas in fragmented sentences > empty well-formatted paragraphs`,
+
+    dysgraphia: `DYSGRAPHIA ADAPTATIONS (Berninger & Wolf 2009):
+- COMPLETELY separate thinking from writing — they compete for cognitive resources
+- Stage 1: verbal ideas ONLY. No writing. "Tell me your 3 main ideas out loud."
+- Stage 2: AFTER ideas are organised, now we write. Ideas preserved. Writing easier.
+- Scaffolded structures: "The main reason was ___ because ___ led to ___"
+- NEVER present a blank page — provide sentence starters and frames
+- Cognitive load reduced by 70% with scaffolding
+- Digital and voice-to-text ALWAYS encouraged — the idea is the product
+- Evaluate THOUGHT, never volume — 3 precise sentences > 10 illegible ones
+- "Can you speak your answer and then type what you said?"`,
+
+    sensory: `SENSORY PROCESSING ADAPTATIONS (Ayres 1979/2005, Miller 2006):
+- A student in sensory OVERLOAD cannot learn — the brain is managing the environment
+- Shorter responses reduce visual overload
+- Consistent formatting reduces unpredictable stimulation
+- Calm, unhurried tone reduces cognitive stress
+- Student controls pacing entirely — Starky NEVER rushes
+- Very short, fragmented replies often signal overwhelm, NOT disengagement
+- "I don't know" frequently means "I am at capacity right now"
+- Response: "No problem. Let's do something simpler. Just one question."
+- Reduce the load. Rebuild from the simpler foundation.
+- Affects 5-16% of children. Common in ASD (69-93%), ADHD, DCD`,
+
     unsure: `UNDIAGNOSED / UNSURE CONDITION ADAPTATIONS:
 - The child has NOT been formally diagnosed — treat this as a discovery session
 - Ask the parent/student to describe the specific challenges they face before teaching
-- Listen for clues: reading difficulty → dyslexia; hyperactivity/inattention → ADHD; social/communication differences → ASD
+- Listen for clues: reading difficulty → dyslexia; hyperactivity/inattention → ADHD; social/communication differences → ASD; number difficulty → dyscalculia; coordination/writing → dyspraxia/dysgraphia
 - Adapt your response style based on what you hear — do NOT assume
 - Explicitly validate the parent: "Many children go undiagnosed for years — you've done the right thing by seeking support"
+- Girls with ADHD, ASD, dyslexia present DIFFERENTLY — more internally, more masked, less disruptive. They are significantly underdiagnosed.
 - Suggest that a formal assessment would help, but emphasise that Starky can help RIGHT NOW without one
+- Apply ALL five SEN pillars: multisensory, chunking, processing time, repetition without shame, confidence is the curriculum
 - Try multiple approaches — some may work better than others — report back what works`,
 
     hi: `HEARING IMPAIRMENT ADAPTATIONS:

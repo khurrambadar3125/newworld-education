@@ -268,6 +268,10 @@ export default function ParentPage() {
     { id:'cp', label:'💪 Cerebral Palsy', color:'#C77DFF' },
     { id:'vi', label:'✨ Visual Impairment', color:'#FFC300' },
     { id:'hi', label:'🎵 Hearing Impairment', color:'#FF6B6B' },
+    { id:'dyscalculia', label:'🔢 Dyscalculia', color:'#FF85A1' },
+    { id:'dyspraxia', label:'🤸 Dyspraxia / DCD', color:'#7ECFC0' },
+    { id:'dysgraphia', label:'✏️ Dysgraphia', color:'#FFB347' },
+    { id:'sensory', label:'🌊 Sensory Processing', color:'#B8D4E3' },
     { id:'unsure', label:'❓ Not Sure / Undiagnosed', color:'#A78BFA' },
   ];
   const [editingId,   setEditingId]   = useState(null);
