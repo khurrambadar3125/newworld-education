@@ -197,5 +197,6 @@ Return ONLY valid JSON with these fields:
   } catch (parseErr) {
     console.error('[SESSION ANALYSIS] JSON parse failed. Raw response:', raw.substring(0, 300));
   }
-  catch { return { topicsCovered: [subject], accuracyPercent: 70, durationMinutes: 20, strengths: ['Completed the session'], weakAreas: ['Continue practising'], nextGoals: [`Review ${subject}`], starkyPersonalMessage: `Great work today, ${studentName}!`, parentSummary: `${studentName} had a productive session on ${subject}.`, overallMood: 'positive', engagementLevel: 'medium', careerConnection: `${subject} opens many doors.`, teachingInsights: { whatWorked: [], whatDidntWork: [], studentLearningStyle: 'mixed', engagementPeaks: [], suggestedApproach: '' } }; }
+  // Fallback when analysis fails
+  return { topicsCovered: [subject], accuracyPercent: 70, durationMinutes: 20, strengths: ['Completed the session'], weakAreas: ['Continue practising'], nextGoals: [`Review ${subject}`], starkyPersonalMessage: `Great work today, ${studentName}!`, parentSummary: `${studentName} had a productive session on ${subject}.`, overallMood: 'positive', engagementLevel: 'medium', careerConnection: `${subject} opens many doors.`, teachingInsights: { whatWorked: [], whatDidntWork: [], studentLearningStyle: 'mixed', engagementPeaks: [], suggestedApproach: '' } };
 }
