@@ -44,6 +44,9 @@ export const UI_STRINGS = {
     score: 'Score',
     yourLanguage: 'Your language',
     learnIn: 'Learn in',
+    check: 'Check',
+    continueBtn: 'Continue →',
+    startLearning: 'Start Learning!',
   },
   ur: {
     tapCorrect: 'صحیح جواب پر ٹیپ کریں',
@@ -66,6 +69,10 @@ export const UI_STRINGS = {
     score: 'اسکور',
     yourLanguage: 'آپ کی زبان',
     learnIn: 'سیکھیں',
+    check: 'چیک کریں',
+    continueBtn: 'اگلا →',
+    startLearning: '!سیکھنا شروع کریں',
+
   },
   sd: {
     tapCorrect: 'صحيح جواب تي ٽيپ ڪريو',
@@ -88,6 +95,10 @@ export const UI_STRINGS = {
     score: 'اسڪور',
     yourLanguage: 'توهان جي ٻولي',
     learnIn: 'سکو',
+    check: 'چيڪ ڪريو',
+    continueBtn: 'اڳيون →',
+    startLearning: '!سکڻ شروع ڪريو',
+
   },
   pa: {
     tapCorrect: 'صحیح جواب تے ٹیپ کرو',
@@ -110,6 +121,10 @@ export const UI_STRINGS = {
     score: 'سکور',
     yourLanguage: 'تہاڈی بولی',
     learnIn: 'سکھو',
+    check: 'چیک کرو',
+    continueBtn: 'اگلا →',
+    startLearning: '!سکھنا شروع کرو',
+
   },
   ps: {
     tapCorrect: 'سمه ځواب باندې ټپ وکړئ',
@@ -132,6 +147,10 @@ export const UI_STRINGS = {
     score: 'سکور',
     yourLanguage: 'ستاسو ژبه',
     learnIn: 'زده کړئ',
+    check: 'وګورئ',
+    continueBtn: 'بل →',
+    startLearning: '!زده کړه پیل کړئ',
+
   },
   bal: {
     tapCorrect: 'راست جواب ءَ تیپ کنیت',
@@ -154,6 +173,10 @@ export const UI_STRINGS = {
     score: 'اسکور',
     yourLanguage: 'شمئی زبان',
     learnIn: 'بوانیت',
+    check: 'چيڪ بکنيت',
+    continueBtn: 'بعدي →',
+    startLearning: '!بوانت شروع بکنيت',
+
   },
   skr: {
     tapCorrect: 'صحیح جواب تے ٹیپ کرو',
@@ -176,6 +199,10 @@ export const UI_STRINGS = {
     score: 'سکور',
     yourLanguage: 'تھاݙی بولی',
     learnIn: 'سکھو',
+    check: 'چیک کرو',
+    continueBtn: 'اگلا →',
+    startLearning: '!سکھنا شروع کرو',
+
   },
 };
 

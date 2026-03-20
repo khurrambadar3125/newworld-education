@@ -1463,7 +1463,7 @@ export default function LanguagesPage() {
         {chk ? (
           <div ref={exFeedbackRef} style={{ padding: '16px 20px calc(16px + env(safe-area-inset-bottom, 0))', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0 }}>
             <div style={{ fontSize: 15, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: 8 }}>{ok ? '✓ Correct!' : '✗ Answer: ' + q.ans}</div>
-            <button onClick={nextTestQ} style={ok ? sBtnGreen : sBtnRed}>Continue →</button>
+            <button onClick={nextTestQ} style={ok ? sBtnGreen : sBtnRed}>{uiStr('continueBtn')}</button>
           </div>
         ) : (
           <div style={{ padding: '12px 20px', borderTop: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
@@ -1813,7 +1813,7 @@ export default function LanguagesPage() {
       bot = (
         <div style={{ padding: '16px 20px calc(16px + env(safe-area-inset-bottom, 0))', borderTop: '3px solid', borderColor: ok ? T.green : T.red, background: ok ? T.greenL : T.redL, flexShrink: 0 }}>
           <div style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.3, color: ok ? T.green : T.red, marginBottom: 8 }}>{ok ? '\u2728 Great pronunciation!' : 'Nice try! Keep practising.'}</div>
-          <button onClick={nextQ} style={ok ? sBtnGreen : sBtnRed}>Continue →</button>
+          <button onClick={nextQ} style={ok ? sBtnGreen : sBtnRed}>{uiStr('continueBtn')}</button>
         </div>
       );
     } else if (ex.type === 'speak' && !chk) {
@@ -1834,16 +1834,16 @@ export default function LanguagesPage() {
           ) : (
             <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.greenD, marginBottom: 10 }}>Momentum +3% · Keep it up!</p>
           )}
-          <button onClick={nextQ} style={ok ? sBtnGreen : sBtnRed}>Continue →</button>
+          <button onClick={nextQ} style={ok ? sBtnGreen : sBtnRed}>{uiStr('continueBtn')}</button>
         </div>
       );
     } else {
       bot = (
         <div style={{ padding: '12px 18px calc(12px + env(safe-area-inset-bottom, 0))', borderTop: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
           {ex.type === 'match' && rdy ? (
-            <button onClick={nextQ} style={sBtnPrimary}>Continue →</button>
+            <button onClick={nextQ} style={sBtnPrimary}>{uiStr('continueBtn')}</button>
           ) : ex.type !== 'match' ? (
-            <button onClick={checkEx2} style={rdy ? sBtnPrimary : sBtnDisabled} disabled={!rdy}>Check answer</button>
+            <button onClick={checkEx2} style={rdy ? sBtnPrimary : sBtnDisabled} disabled={!rdy}>{uiStr('check')}</button>
           ) : (
             <button style={sBtnDisabled} disabled>Match all pairs to continue</button>
           )}
