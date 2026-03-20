@@ -1385,7 +1385,7 @@ export default function LanguagesPage() {
           })}
         </div>
         <div style={{ padding: 14, borderTop: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
-          <button onClick={hideEmergency} style={sBtnRed}>Done — back to learning</button>
+          <button onClick={hideEmergency} style={sBtnRed}>{uiStr('done')} — {uiStr('backToJourney')}</button>
         </div>
       </div>
     );
@@ -1438,7 +1438,7 @@ export default function LanguagesPage() {
                   'Ready for advanced scenarios. Focus is on fluency and natural expression.'}
             </p>
           </div>
-          <button onClick={doneTest} style={sBtnPrimary}>Start my journey →</button>
+          <button onClick={doneTest} style={sBtnPrimary}>{uiStr('startJourney')}</button>
         </div>
       );
     }
@@ -1467,7 +1467,7 @@ export default function LanguagesPage() {
           </div>
         ) : (
           <div style={{ padding: '12px 20px', borderTop: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
-            <button onClick={checkTest} style={sel ? sBtnPrimary : sBtnDisabled} disabled={!sel}>Check</button>
+            <button onClick={checkTest} style={sel ? sBtnPrimary : sBtnDisabled} disabled={!sel}>{uiStr('check')}</button>
           </div>
         )}
       </div>
@@ -1585,7 +1585,7 @@ export default function LanguagesPage() {
         <Chip type="teal">Score so far: {exEarned} XP</Chip>
         <div style={{ display: 'flex', gap: 10, marginTop: 24, width: '100%', flexDirection: 'column' }}>
           <button onClick={() => { setHearts(5); setHeartsOut(false); setExIdx(0); setSel(null); setChk(false); setOk(false); setBuilt([]); setMatchSel(null); setMatchDone([]); setMatchR(null); setCorrectStreak(0); setSpeakRecording(false); setSpeakResult(null); setSpeakAttempts(0); }} style={sBtnPrimary}>{'\u2764\uFE0F'} Try again</button>
-          <button onClick={() => { setInEx(false); setHeartsOut(false); }} style={sBtnSecondary}>Back to journey</button>
+          <button onClick={() => { setInEx(false); setHeartsOut(false); }} style={sBtnSecondary}>{uiStr('backToJourney')}</button>
         </div>
       </div>
     );
@@ -1621,7 +1621,7 @@ export default function LanguagesPage() {
               </div>
             ) : isL ? (
               <button onClick={() => speakText(ex.speak_word, dest && dest.lc)} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '16px 28px', background: T.tealL, border: `2px solid ${T.teal}`, borderRadius: 16, fontSize: 15, fontWeight: 700, color: T.tealD, cursor: 'pointer', fontFamily: T.f }}>
-                <span style={{ fontSize: 24 }}>{'\u{1F50A}'}</span>Play phrase
+                <span style={{ fontSize: 24 }}>{'\u{1F50A}'}</span>{uiStr('playPhrase')}
               </button>
             ) : null}
           </div>
@@ -1772,7 +1772,7 @@ export default function LanguagesPage() {
             <p style={{ fontSize: 14, color: T.n400 }}>{ex.tr}</p>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
               <SpeakBtn word={ex.speak_word} lc={dest && dest.lc} />
-              <span style={{ fontSize: 12, color: T.n400 }}>Listen first</span>
+              <span style={{ fontSize: 12, color: T.n400 }}>{uiStr('listenFirst')}</span>
             </div>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
@@ -1798,7 +1798,7 @@ export default function LanguagesPage() {
               ) : (
                 <div>
                   <p style={{ fontSize: 15, fontWeight: 700, color: T.red }}>Not quite.{speakResult.spoken ? ' You said "' + speakResult.spoken + '".' : ''}</p>
-                  <p style={{ fontSize: 13, color: T.redD, marginTop: 4 }}>Listen again and try:</p>
+                  <p style={{ fontSize: 13, color: T.redD, marginTop: 4 }}>{uiStr('listenFirst')}:</p>
                 </div>
               )}
             </div>
@@ -1819,7 +1819,7 @@ export default function LanguagesPage() {
     } else if (ex.type === 'speak' && !chk) {
       bot = (
         <div style={{ padding: '12px 18px calc(12px + env(safe-area-inset-bottom, 0))', borderTop: `1.5px solid ${T.n100}`, flexShrink: 0 }}>
-          <button style={sBtnDisabled} disabled>Tap the microphone above</button>
+          <button style={sBtnDisabled} disabled>{uiStr('tapMic')}</button>
         </div>
       );
     } else if (chk && ex.type !== 'match') {
@@ -1845,7 +1845,7 @@ export default function LanguagesPage() {
           ) : ex.type !== 'match' ? (
             <button onClick={checkEx2} style={rdy ? sBtnPrimary : sBtnDisabled} disabled={!rdy}>{uiStr('check')}</button>
           ) : (
-            <button style={sBtnDisabled} disabled>Match all pairs to continue</button>
+            <button style={sBtnDisabled} disabled>{uiStr('matchAllPairs')}</button>
           )}
         </div>
       );
@@ -1901,7 +1901,7 @@ export default function LanguagesPage() {
           <p style={{ fontSize: 15, fontWeight: 400, lineHeight: 1.6, color: T.n500 }}>{g.note}</p>
         </div>
         <div style={{ padding: '16px 20px', borderTop: `1.5px solid ${T.n100}` }}>
-          <button onClick={dismissGram} style={sBtnPrimary}>Got it — continue →</button>
+          <button onClick={dismissGram} style={sBtnPrimary}>{uiStr('gotIt')} — {uiStr('continueBtn')}</button>
         </div>
       </div>
     );
@@ -1919,7 +1919,7 @@ export default function LanguagesPage() {
           {dest && <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginTop: 14 }}>Local knowledge for {dest.name}</div>}
         </div>
         <div style={{ padding: '16px 20px', borderTop: `1.5px solid ${T.n100}` }}>
-          <button onClick={dismissCult} style={{ ...sBtnPrimary, background: T.amber, boxShadow: `0 5px 0 ${T.amberD}` }}>Interesting — continue →</button>
+          <button onClick={dismissCult} style={{ ...sBtnPrimary, background: T.amber, boxShadow: `0 5px 0 ${T.amberD}` }}>{uiStr('gotIt')} — {uiStr('continueBtn')}</button>
         </div>
       </div>
     );
@@ -1951,7 +1951,7 @@ export default function LanguagesPage() {
             </div>
           ))}
         </div>
-        <button onClick={doneEx} style={sBtnPrimary}>Back to journey →</button>
+        <button onClick={doneEx} style={sBtnPrimary}>{uiStr('backToJourney')}</button>
       </div>
     );
   }
@@ -2192,7 +2192,7 @@ RULES:
               </div>
             ))}
           </div>
-          <button onClick={endConvo} style={sBtnPrimary}>Back to conversations</button>
+          <button onClick={endConvo} style={sBtnPrimary}>{uiStr('backToJourney')}</button>
         </div>
       );
     }
