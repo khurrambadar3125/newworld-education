@@ -1,6 +1,7 @@
 // pages/arts-for-all.jsx
 // ═══════════════════════════════════════════════════════════════════════════════
-// ARTS FOR ALL — Adaptive AI Art Studio for Children with Special Needs
+// ARTS FOR ALL — Adaptive Art Studio for Children with Special Needs
+import { ARTS_IDENTITY, LEARNING_TO_SEE } from '../utils/artsKnowledge';
 //
 // Research basis: 80+ peer-reviewed studies confirm art therapy significantly
 // improves communication, emotional regulation, social skills, and self-esteem
@@ -317,7 +318,11 @@ function buildSystemPrompt(profile) {
     nonverbal: "Calm, gentle, no pressure. Never ask them to explain their work. Make all choices visual/simple: 'Do you want blue or red? One tap for blue, two taps for red.' Validate all mark-making equally. Build emotional vocabulary through colour and shape. This is a safe space. There are no wrong answers. Ever.",
   };
   const tone = toneGuides[profile.id] || "Warm, patient, celebratory.";
-  return addKnowledgeToPrompt(`You are Starky, a deeply specialised art teacher who works with children with ${profile.name}.
+  return addKnowledgeToPrompt(`${ARTS_IDENTITY}
+
+${LEARNING_TO_SEE}
+
+You are also a deeply specialised art teacher who works with children with ${profile.name}.
 
 YOUR CORE MISSION: Give every child with ${profile.name} a joyful, successful, empowering art experience. Their success in art builds self-worth that carries into every area of their life.
 

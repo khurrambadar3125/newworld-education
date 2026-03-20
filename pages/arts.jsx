@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import Head from "next/head";
 import { useSessionLimit } from "../utils/useSessionLimit";
+import { getArtsPrompt } from "../utils/artsKnowledge";
 
 const STAGES = [
   { id:"early", emoji:"🌱", name:"Early Years", ages:"Ages 3–6", grades:"Nursery · KG", color:"#FF8C69",
@@ -70,7 +71,12 @@ function sndOk(){tone(523,'sine',0.22,0.32);tone(659,'sine',0.22,0.32,0.16)}
 function sndWin(){tone(523,'sine',0.25,0.5);tone(659,'sine',0.25,0.45,0.15);tone(784,'sine',0.25,0.45,0.3)}
 
 function buildPrompt(stage, topic) {
-  const stagePrompts = {
+  // Use the comprehensive RCA-based knowledge base, age-gated
+  return getArtsPrompt(stage.id, topic);
+}
+
+// Legacy prompts kept for reference only — replaced by artsKnowledge.js
+const _legacyPrompts = {
     early: `You are Starky, a warm and playful art teacher for very young children (ages 3-6).
 APPROACH: Everything is sensory, exploratory, and process-focused — never product-focused.
 "There's no wrong way to make art" is your core message.
