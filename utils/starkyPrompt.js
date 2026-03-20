@@ -16,27 +16,119 @@
  */
 
 import { INTENTS, detectIntent, requiresEscalation, getEscalationType } from './starkyIntents';
-import { addKnowledgeToPrompt } from './senKnowledge';
+import { addKnowledgeToPrompt, detectSENContext } from './senKnowledge';
 
 // ─── Condition-specific SEN guidance (used in grade-level prompt builders) ────
 
 const SEN_CONDITION_NOTES = {
-  autism: 'Autism Spectrum — use predictable structure, explicit instructions, avoid idioms/sarcasm, give processing time, use visual supports where possible.',
-  adhd: 'ADHD — keep responses short and punchy, use frequent check-ins, break tasks into tiny steps, celebrate small wins, vary activities to maintain engagement.',
-  dyslexia: 'Dyslexia — use short sentences, avoid dense text blocks, emphasise visual/audio learning, never ask to "read carefully", use bullet points and bold key terms.',
-  ds: 'Down Syndrome — use simple clear language, lots of repetition and reinforcement, concrete examples over abstract concepts, celebrate every achievement warmly.',
-  cp: 'Cerebral Palsy — be patient with response time, avoid tasks requiring fine motor speed, offer alternatives for writing-heavy tasks, focus on cognitive engagement.',
-  vi: 'Visual Impairment — describe all visual content in detail, use text-based explanations, avoid "look at this" language, structure responses for screen readers.',
-  hi: 'Hearing Impairment — use clear written language, avoid phonics-based teaching, use visual demonstrations, write out all instructions explicitly.',
-  unsure: 'Possible undiagnosed condition — be extra patient, watch for learning patterns, use multi-sensory approaches, never assume the student is being lazy or difficult.',
+  autism: `Autism Spectrum (TEACCH/NPDC evidence-based approach):
+- Begin every response with predictable structure: "We will do X, then Y"
+- Use literal, precise language — NEVER idioms, sarcasm, or figures of speech
+- Visual supports: numbered steps, bullet points, consistent formatting
+- Connect to student's interests as entry points for learning
+- Warn before transitions: "In two minutes we will change topic"
+- Allow extended processing time — silence is learning, not confusion
+- Keep responses moderate length — visual overwhelm is real`,
+
+  adhd: `ADHD (Barkley Executive Function / Dawson & Guare approach):
+- ENGAGE IMMEDIATELY — hook in first 10 seconds, never build up slowly
+- Short chunks ALWAYS — 5-7 minute bursts, change format frequently
+- Immediate positive reinforcement — do not wait until end of session
+- Externalise executive function: "Here are 3 steps. Step 1 only. Go."
+- NEVER shame for forgetting — this is neurological, not volitional
+- One instruction at a time — never chain instructions
+- Gamify: timers, points, challenges. The ADHD brain runs on novelty and reward`,
+
+  dyslexia: `Dyslexia (Orton-Gillingham / Science of Reading approach):
+- Sounds before symbols — say the word aloud first, then spell
+- Patterns not memorisation — teach word families, not isolated words
+- Read ALL explanations aloud via TTS — both channels simultaneously
+- Short sentences (max 20 words), one idea per line, bold key terms only
+- Structure before writing — mind map or bullets before any sentences
+- NEVER say "read it again more carefully" — every word costs 10x effort
+- Typing over handwriting — handwriting competes with thinking
+- Audiobooks are evidence-based access, NOT cheating`,
+
+  dyscalculia: `Dyscalculia (Butterworth / Bruner enactive-iconic-symbolic approach):
+- CONCRETE before abstract ALWAYS — real-world example first, then visual, then symbol
+- Start with language then number: "What does sharing equally mean? That's division."
+- Visual number lines for every arithmetic operation
+- Times tables as PATTERNS not memorisation (9x table: digits sum to 9)
+- Remove unnecessary language from word problems — separate reading from maths
+- Link physical movement to mathematical operations for muscle memory`,
+
+  dyspraxia: `Dyspraxia/DCD (EACD Guidelines):
+- Digital response ALWAYS — handwriting is physically exhausting
+- Sequence made explicit and external: "Step 1 only. Tell me when done."
+- Allow time for verbal expression — excellent ideas may emerge fragmented
+- Celebrate THINKING, not presentation — quality of thought is the measure
+- Help organise thoughts: "You have 3 ideas. Let's take the first one."`,
+
+  dysgraphia: `Dysgraphia (Berninger & Wolf approach):
+- COMPLETELY separate thinking from writing — Stage 1: verbal ideas only, Stage 2: write
+- Scaffolded structures: "The main reason was ___ because ___ led to ___"
+- Digital and voice-to-text ALWAYS encouraged — the idea is the product
+- Evaluate thought, NEVER volume — 3 precise sentences > 10 illegible ones
+- NEVER present a blank page — provide sentence starters and frames`,
+
+  sensory: `Sensory Processing Differences (Ayres/Miller approach):
+- Student in sensory overload CANNOT learn — reduce load first
+- Shorter responses reduce visual overload
+- Consistent formatting reduces unpredictable stimulation
+- Calm, unhurried tone — student controls pacing entirely
+- Very short replies may signal overwhelm, not disengagement
+- "I don't know" may mean "I am at capacity" — respond with simpler task`,
+
+  ds: `Down Syndrome (DSEI / Buckley & Bird evidence-based approach):
+- VISUAL FIRST always — strongest learning channel by far
+- Short direct sentences — MAXIMUM 10 words per sentence
+- Repetition IS the method, not a fallback — neurological, not failure
+- Immediate enthusiastic celebration — highly responsive to warmth and praise
+- Functional skills anchored to real life: shopping, time, menus, money
+- Social learning is a strength — roleplay, storytelling, conversation
+- ONE instruction at a time — max 3-4 words per instruction
+- Reading can BUILD oral language — start before full speech (DSEI 2024)`,
+
+  cp: `Cerebral Palsy — motor impairment ≠ intellectual impairment:
+- ALWAYS offer multiple response modes: speak, type, point, yes/no
+- Audiobooks and e-books are PRIMARY format, not secondary
+- NEVER ask for oral reading unless the child wants to
+- Never equate physical access difficulty with cognitive limitation
+- Fatigue management: shorter, more frequent sessions — everything costs more energy
+- Full academic curriculum is appropriate for most CP learners`,
+
+  vi: `Visual Impairment (enhanced auditory processing — neuroplastic advantage):
+- Audiobooks are PRIMARY, EQUAL format — never call them "alternative"
+- Describe ALL visual content explicitly and richly
+- NEVER say "look at this" — say "listen to this", "I'll describe..."
+- Trust the ear COMPLETELY — auditory comprehension is extraordinary
+- Structure responses for screen readers — headings, clear hierarchy
+- Expect full academic achievement at every level`,
+
+  hi: `Hearing Impairment — rich Deaf culture and language:
+- Written/visual communication preferred — always text after verbal
+- If first language is sign: treat English as L2 — grammar differences are L2 features
+- All content must work as text — never rely on audio alone
+- Write out all instructions explicitly
+- Reduce unnecessary language — clear, direct sentences
+- Repeat and rephrase — if they didn't understand, try a different way`,
+
+  unsure: `Possible undiagnosed condition — apply ALL five SEN pillars:
+- Be extra patient — watch for learning patterns
+- Use multi-sensory approaches (visual + auditory + kinaesthetic)
+- Break everything into smallest possible steps
+- Never assume the student is being lazy or difficult
+- Girls with ADHD, ASD, dyslexia present differently — more internally, masked
+- Many students in Pakistan have never been formally assessed
+- Starky does not diagnose — Starky teaches with full SEN sensitivity regardless`,
 };
 
 function getSENNote(profile) {
   if (!profile.senFlag && !profile.isSEN) return '';
   const condition = profile.senType || profile.senCondition || '';
   const specific = SEN_CONDITION_NOTES[condition];
-  if (specific) return `SEN: ${specific}`;
-  return 'This student has special educational needs. Be extra patient, use clear structure, shorter sentences, more repetition.';
+  if (specific) return `SEN ACCOMMODATION REQUIRED:\n${specific}`;
+  return 'SEN ACCOMMODATION REQUIRED: This student has special educational needs. Apply all five SEN pillars: multisensory instruction, chunking/sequencing, extended processing time, repetition without shame, confidence is the curriculum.';
 }
 
 // ─── Grade classification ────────────────────────────────────────────────────
@@ -749,8 +841,22 @@ export function buildMessages({ userProfile: rawProfile, sessionMemory: rawMemor
   }
 
   // 3b. Inject SEN specialist knowledge when student has special educational needs
-  if (userProfile.senFlag || userProfile.isSEN) {
+  // Two paths: (1) student has senFlag set, (2) message contains SEN keywords
+  const hasSENProfile = userProfile.senFlag || userProfile.isSEN;
+  const senFromMessage = !hasSENProfile ? detectSENContext(userMessage) : { isSEN: false };
+  if (hasSENProfile || senFromMessage.isSEN) {
     systemPrompt = addKnowledgeToPrompt(systemPrompt);
+    // If we detected a specific condition from the message, add targeted guidance
+    if (senFromMessage.detectedCondition && SEN_CONDITION_NOTES[senFromMessage.detectedCondition]) {
+      systemPrompt += `\n\nDETECTED SEN CONTEXT FROM MESSAGE — ${senFromMessage.detectedCondition.toUpperCase()}:\n${SEN_CONDITION_NOTES[senFromMessage.detectedCondition]}`;
+    }
+    // If student has a known condition via profile, add targeted guidance
+    if (hasSENProfile && (userProfile.senType || userProfile.senCondition)) {
+      const cond = userProfile.senType || userProfile.senCondition;
+      if (SEN_CONDITION_NOTES[cond]) {
+        systemPrompt += `\n\nTHIS STUDENT'S KNOWN CONDITION — ${cond.toUpperCase()}:\n${SEN_CONDITION_NOTES[cond]}`;
+      }
+    }
   }
 
   // 3c. Inject learned student preferences from past sessions (stored in session memory from KV)
