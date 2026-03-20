@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import Head from "next/head";
 import { useSessionLimit } from "../utils/useSessionLimit";
+import { getReadingKnowledge } from "../utils/readingKnowledge";
+import { CONTENT_PROTECTION } from "../utils/contentProtection";
 
 const STAGES = [
   { id:"early", emoji:"🌱", name:"Early Years", ages:"Ages 3–6", grades:"Nursery · KG", color:"#A8E063",
@@ -57,7 +59,7 @@ Comparative essays: always link back to the question. Never summarise. Always AN
 Command words: Analyse (how it works), Evaluate (how successfully), Explore (multiple readings), Compare (meaningful connections with evidence).
 Treat the student as an intellectual equal. Push back on underdeveloped arguments — help them think harder, not differently.`,
   };
-  return stagePrompts[stage.id] + `\n\nCurrent topic: ${topic || stage.topics[0]}\nStage: ${stage.name} (${stage.ages})\n\nIf the student writes in Urdu or Arabic, respond in that language.`;
+  return CONTENT_PROTECTION + '\n\n' + stagePrompts[stage.id] + `\n\n${getReadingKnowledge(stage.id)}\n\nCurrent topic: ${topic || stage.topics[0]}\nStage: ${stage.name} (${stage.ages})\n\nIf the student writes in Urdu or Arabic, respond in that language.`;
 }
 
 export default function ReadingPage() {

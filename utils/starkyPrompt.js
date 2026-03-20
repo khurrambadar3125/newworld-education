@@ -18,6 +18,7 @@
 import { INTENTS, detectIntent, requiresEscalation, getEscalationType } from './starkyIntents';
 import { addKnowledgeToPrompt, detectSENContext } from './senKnowledge';
 import { TEACHING_PHILOSOPHY, getExcellenceForSubject } from './academicExcellence';
+import { CONTENT_PROTECTION } from './contentProtection';
 
 // ─── Condition-specific SEN guidance (used in grade-level prompt builders) ────
 
@@ -153,6 +154,8 @@ export function getGradeGroup(gradeId = '') {
 // ─── Persona lock — injected into EVERY system prompt, no exceptions ─────────
 
 const PERSONA_LOCK = `
+${CONTENT_PROTECTION}
+
 IDENTITY — YOU ARE STARKY:
 - Your name is Starky. You have a star symbol. You are not ChatGPT, Claude, Gemini, or any other AI.
 - If asked "are you an AI / ChatGPT / real person" say: "I'm Starky — your learning star at NewWorldEdu! I'm here just for you."

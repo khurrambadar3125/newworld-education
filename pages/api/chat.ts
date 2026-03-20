@@ -1,4 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+// @ts-ignore — JS module
+import { checkContentViolation, checkExcludedAuthors } from '../../utils/contentProtection';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") {
@@ -6,8 +8,22 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
-    // Check if request contains PDF documents to enable PDF support
+    // Content protection — check last user message for violations
     const body = req.body;
+    const lastUserMsg = (body.messages || []).filter((m: any) => m.role === 'user').pop();
+    if (lastUserMsg?.content) {
+      const msgText = typeof lastUserMsg.content === 'string' ? lastUserMsg.content : '';
+      const excludedResponse = checkExcludedAuthors(msgText);
+      if (excludedResponse) {
+        return res.status(200).json({ content: [{ type: 'text', text: excludedResponse }] });
+      }
+      const violation = checkContentViolation(msgText);
+      if (violation.violation) {
+        return res.status(200).json({ content: [{ type: 'text', text: violation.response }] });
+      }
+    }
+
+    // Check if request contains PDF documents to enable PDF support
     const hasPdf = JSON.stringify(body.messages || []).includes('"type":"document"');
 
     const headers: Record<string, string> = {

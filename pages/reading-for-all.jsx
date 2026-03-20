@@ -30,6 +30,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import { useSessionLimit } from "../utils/useSessionLimit";
 import { addKnowledgeToPrompt } from "../utils/senKnowledge";
+import { CONTENT_PROTECTION } from "../utils/contentProtection";
 import { useVoiceInput, useSpeakText } from '../utils/useVoice';
 import AccessibilityToolbar from '../components/AccessibilityToolbar';
 
@@ -584,7 +585,9 @@ ${profile.inspirers.map(i=>`${i.name}: ${i.achievement}`).join("\n")}
 
 LANGUAGE: If the student writes in Urdu (script or Roman Urdu like 'samajh nahi aa raha'), respond entirely in Urdu. Auto-detect language always.
 
-Remember: You are not teaching a condition. You are teaching a reader. The most important thing you will ever do in a reading session is make a child feel that books are for them.`);
+Remember: You are not teaching a condition. You are teaching a reader. The most important thing you will ever do in a reading session is make a child feel that books are for them.
+
+${CONTENT_PROTECTION}`);
 }
 
 // ── PROGRESS PANEL ────────────────────────────────────────────────────────────

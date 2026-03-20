@@ -8,6 +8,8 @@ import Anthropic from '@anthropic-ai/sdk';
 import { buildMessages } from '../../utils/starkyPrompt';
 import { getKnowledgeForTopic } from '../../utils/getKnowledgeForTopic';
 import { detectExcellenceTrigger, getSituationalExcellence, getReadingList } from '../../utils/academicExcellence';
+import { checkContentViolation, checkExcludedAuthors } from '../../utils/contentProtection';
+import { getBookKnowledge } from '../../utils/readingKnowledge';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -183,6 +185,33 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'No message or image provided' });
     }
 
+    // ── Content protection — check for violations before processing ──────
+    if (message) {
+      // Check excluded authors first (returns deflection, not violation)
+      const excludedResponse = checkExcludedAuthors(message);
+      if (excludedResponse) {
+        return res.status(200).json({ content: excludedResponse, response: excludedResponse });
+      }
+
+      // Check for content violations (abuse, jailbreak)
+      const violation = checkContentViolation(message);
+      if (violation.violation) {
+        // Flag the session for admin review
+        try {
+          const sb = getSupabase();
+          if (sb) {
+            await sb.from('content_violations').insert({
+              user_email: userProfile?.email || 'anonymous',
+              category: violation.category,
+              message_excerpt: message.slice(0, 200),
+              timestamp: new Date().toISOString(),
+            }).catch(() => {});
+          }
+        } catch {}
+        return res.status(200).json({ content: violation.response, response: violation.response });
+      }
+    }
+
     // ── Validate image media type ──────────────────────────────────────────
     let validMediaType = imageMediaType;
     if (imageBase64 && imageMediaType) {
@@ -206,6 +235,12 @@ export default async function handler(req, res) {
       const topicKnowledge = getKnowledgeForTopic(message, currentSubject);
       if (topicKnowledge) {
         built.systemPrompt += topicKnowledge;
+      }
+
+      // Book/author knowledge — activates when student asks about any book or author
+      const bookKnowledge = getBookKnowledge(message);
+      if (bookKnowledge) {
+        built.systemPrompt += bookKnowledge;
       }
 
       // Tier 3: Situational excellence — bored students, "why do I need this?", university prep, exam depth
