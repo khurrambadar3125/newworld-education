@@ -48,13 +48,38 @@ const AGE_TO_GRADE = { 5: 'kg', 6: 'grade1', 7: 'grade2', 8: 'grade3', 9: 'grade
 
 const AVATARS = ['🦁', '🐱', '🐶', '🦋', '🌟', '🚀', '🎨', '🧸'];
 
+/* ═══════════════════════════════════════
+   MOTHER TONGUE / LANGUAGE SUPPORT
+═══════════════════════════════════════ */
+const RTL_LANGS = ['ur', 'sd', 'pa', 'ps', 'bal', 'skr'];
+
+const LANG_BUTTONS = [
+  { id: 'en', label: 'English' },
+  { id: 'ur', label: 'اردو' },
+  { id: 'sd', label: 'سنڌي' },
+  { id: 'pa', label: 'پنجابی' },
+  { id: 'ps', label: 'پښتو' },
+  { id: 'bal', label: 'بلوچی' },
+  { id: 'skr', label: 'سرائیکی' },
+];
+
+const KIDS_UI = {
+  en: { hi: "Hi! I'm Starky!", ready: "Ready to learn? Let's go!", name: "What's your name?", age: "How old are you?", avatar: "Pick your look!", email: "What's your parent's email?", next: "Next →", start: "Start Learning! 🎉", skip: "Skip — I'll add it later", dashboard: "My Activities", chatStarky: "Chat with Starky", chatStarkySub: "Ask me anything!", spellingBee: "Spelling Bee", spellingBeeSub: "Spell words & win!", languages: "Languages", languagesSub: "Learn French, Spanish & more!", homeworkHelp: "Homework Help", homeworkHelpSub: "Need help? I'm here!", practice: "Practice", practiceSub: "Fun quizzes & games!", artCraft: "Art & Craft", artCraftSub: "Draw, paint, create!", changeProfile: "Change my profile", yourFriend: "Your learning friend" },
+  ur: { hi: "!ہیلو! میں Starky ہوں", ready: "!سیکھنے کے لیے تیار ہو? چلو", name: "تمہارا نام کیا ہے؟", age: "تم کتنے سال کے ہو؟", avatar: "!اپنا لک چنو", email: "والدین کی ای میل؟", next: "اگلا →", start: "!سیکھنا شروع کریں 🎉", skip: "بعد میں", dashboard: "میری سرگرمیاں", chatStarky: "Starky سے بات کرو", chatStarkySub: "!مجھ سے کچھ بھی پوچھو", spellingBee: "سپیلنگ بی", spellingBeeSub: "!الفاظ بولو اور جیتو", languages: "زبانیں", languagesSub: "!فرینچ، سپینش اور بہت کچھ سیکھو", homeworkHelp: "ہوم ورک مدد", homeworkHelpSub: "!مدد چاہیے؟ میں حاضر ہوں", practice: "مشق", practiceSub: "!مزیدار کوئز اور گیمز", artCraft: "آرٹ اینڈ کرافٹ", artCraftSub: "!بناؤ، رنگ کرو، تخلیق کرو", changeProfile: "پروفائل بدلیں", yourFriend: "تمہارا سیکھنے والا دوست" },
+  sd: { hi: "!هيلو! مان Starky آهيان", ready: "!سکڻ لاءِ تيار آهيو? هلو", name: "توهان جو نالو ڇا آهي؟", age: "توهان ڪيترن سالن جا آهيو؟", avatar: "!پنهنجو لک چونڊيو", email: "والدين جي اي ميل؟", next: "اڳيون →", start: "!سکڻ شروع ڪريو 🎉", skip: "بعد ۾", dashboard: "منهنجيون سرگرميون", chatStarky: "Starky سان ڳالهايو", chatStarkySub: "!مون کان ڪجهه به پڇو", spellingBee: "اسپيلنگ بي", spellingBeeSub: "!لفظ ٻڌايو ۽ کٽايو", languages: "ٻوليون", languagesSub: "!فرينچ، اسپيني ۽ وڌيڪ سکو", homeworkHelp: "هوم ورڪ مدد", homeworkHelpSub: "!مدد گهرجي؟ مان حاضر آهيان", practice: "مشق", practiceSub: "!مزيدار ڪوئز ۽ راند", artCraft: "آرٽ ۽ ڪرافٽ", artCraftSub: "!ٺاهيو، رنگ ڀريو، ڪجهه نئون ٺاهيو", changeProfile: "پروفائل بدلايو", yourFriend: "توهان جو سکيا وارو ساٿي" },
+  pa: { hi: "!ہیلو! میں Starky ہاں", ready: "!سکھن لئی تیار او? چلو", name: "تہاڈا ناں کیا اے؟", age: "تسیں کنے سال دے او؟", avatar: "!اپنا لک چنو", email: "والدین دی ای میل؟", next: "اگلا →", start: "!سکھنا شروع کرو 🎉", skip: "بعد وچ", dashboard: "میریاں سرگرمیاں", chatStarky: "Starky نال گل کرو", chatStarkySub: "!مینوں کجھ وی پچھو", spellingBee: "سپیلنگ بی", spellingBeeSub: "!لفظ بولو تے جِتو", languages: "بولیاں", languagesSub: "!فرینچ، سپینش تے ہور سکھو", homeworkHelp: "ہوم ورک مدد", homeworkHelpSub: "!مدد چاہیدی؟ میں حاضر آں", practice: "مشق", practiceSub: "!مزیدار کوئز تے گیمز", artCraft: "آرٹ تے کرافٹ", artCraftSub: "!بناؤ، رنگ کرو، تخلیق کرو", changeProfile: "پروفائل بدلو", yourFriend: "تہاڈا سکھن والا یار" },
+  ps: { hi: "!سلام! زه Starky یم", ready: "!زده کړې ته تیار یاست? راځئ", name: "ستاسو نوم څه دی؟", age: "تاسو څو کلن یاست؟", avatar: "!خپل لک وټاکئ", email: "د والدینو بریښنالیک؟", next: "بل →", start: "!زده کړه پیل کړئ 🎉", skip: "وروسته", dashboard: "زما فعالیتونه", chatStarky: "له Starky سره خبرې وکړئ", chatStarkySub: "!ما نه هر څه پوښتنه وکړئ", spellingBee: "سپیلنگ بی", spellingBeeSub: "!توری ووایاست او وګټئ", languages: "ژبې", languagesSub: "!فرانسوي، هسپانوي او نور زده کړئ", homeworkHelp: "د کورنیو دندو مرسته", homeworkHelpSub: "!مرستې ته اړتیا لرئ؟ زه دلته یم", practice: "تمرین", practiceSub: "!ساتیري کوئزونه او لوبې", artCraft: "آرټ او کرافټ", artCraftSub: "!جوړ کړئ، رنګ کړئ، پیدا کړئ", changeProfile: "پروفایل بدل کړئ", yourFriend: "ستاسو د زده کړې ملګری" },
+  bal: { hi: "!سلام! من Starky اِن", ready: "!بوانت ءَ تیار ایت? بیاییت", name: "شمئی نام چیا اِنت؟", age: "شما چنت سال ایت؟", avatar: "!وتی لک چاگرد بکنیت", email: "والدین ئی ایمیل؟", next: "بعدی →", start: "!بوانت شروع بکنیت 🎉", skip: "بعد ءَ", dashboard: "منی سرگرمی", chatStarky: "Starky گون هبر بکنیت", chatStarkySub: "!من ءَ چیزے پرس بکنیت", spellingBee: "سپیلنگ بی", spellingBeeSub: "!لبز بگوشیت ءُ بباریت", languages: "زبان", languagesSub: "!فرینچ، سپینش ءُ گیشتر بوانیت", homeworkHelp: "هوم ورک کمک", homeworkHelpSub: "!کمک لوٹیت؟ من اِدا اِن", practice: "مشق", practiceSub: "!مزنین کوئز ءُ بازیگ", artCraft: "آرٹ ءُ کرافٹ", artCraftSub: "!جوڑ بکنیت، رنگ بکنیت، پیدا بکنیت", changeProfile: "پروفائل بدل بکنیت", yourFriend: "شمئی بوانتی یارے" },
+  skr: { hi: "!ہیلو! میں Starky ہاں", ready: "!سکھن کیتے تیار او? چلو", name: "تھاڈا ناں کیا ہے؟", age: "تساں کنے سال دے او؟", avatar: "!اپنا لک چنو", email: "والدین دی ای میل؟", next: "اگلا →", start: "!سکھنا شروع کرو 🎉", skip: "بعد وچ", dashboard: "میریاں سرگرمیاں", chatStarky: "Starky نال گل کرو", chatStarkySub: "!میکوں کجھ وی پچھو", spellingBee: "سپیلنگ بی", spellingBeeSub: "!لفظ بولو تے جِتو", languages: "بولیاں", languagesSub: "!فرینچ، سپینش تے ہور سکھو", homeworkHelp: "ہوم ورک مدد", homeworkHelpSub: "!مدد چاہیدی؟ میں حاضر ہاں", practice: "مشق", practiceSub: "!مزیدار کوئز تے گیمز", artCraft: "آرٹ تے کرافٹ", artCraftSub: "!بناؤ، رنگ کرو، تخلیق کرو", changeProfile: "پروفائل بدلو", yourFriend: "تھاڈا سکھن والا یار" },
+};
+
 const DASHBOARD_CARDS = [
-  { emoji: '⭐', title: 'Chat with Starky', sub: 'Ask me anything!', bg: '#FFC300', action: 'starky' },
-  { emoji: '🐝', title: 'Spelling Bee', sub: 'Spell words & win!', bg: '#FF8E53', href: '/spelling-bee' },
-  { emoji: '🌍', title: 'Languages', sub: 'Learn French, Spanish & more!', bg: '#4ECDC4', href: '/languages' },
-  { emoji: '📝', title: 'Homework Help', sub: 'Need help? I\'m here!', bg: '#63D2FF', href: '/homework' },
-  { emoji: '🎯', title: 'Practice', sub: 'Fun quizzes & games!', bg: '#A8E063', href: '/homework' },
-  { emoji: '🎨', title: 'Art & Craft', sub: 'Draw, paint, create!', bg: '#FF6B6B', href: '/arts' },
+  { emoji: '⭐', key: 'chatStarky', subKey: 'chatStarkySub', bg: '#FFC300', action: 'starky' },
+  { emoji: '🐝', key: 'spellingBee', subKey: 'spellingBeeSub', bg: '#FF8E53', href: '/spelling-bee' },
+  { emoji: '🌍', key: 'languages', subKey: 'languagesSub', bg: '#4ECDC4', href: '/languages' },
+  { emoji: '📝', key: 'homeworkHelp', subKey: 'homeworkHelpSub', bg: '#63D2FF', href: '/homework' },
+  { emoji: '🎯', key: 'practice', subKey: 'practiceSub', bg: '#A8E063', href: '/homework' },
+  { emoji: '🎨', key: 'artCraft', subKey: 'artCraftSub', bg: '#FF6B6B', href: '/arts' },
 ];
 
 /* ═══════════════════════════════════════
@@ -131,6 +156,12 @@ export default function KidsZone() {
   const [regStep, setRegStep] = useState(1);
   const [mounted, setMounted] = useState(false);
 
+  // Mother tongue / language
+  const [lang, setLang] = useState('en');
+  const ui = KIDS_UI[lang] || KIDS_UI.en;
+  const isRtl = RTL_LANGS.includes(lang);
+  const rtlStyle = isRtl ? { direction: 'rtl', textAlign: 'right' } : {};
+
   // Registration data
   const [name, setName] = useState('');
   const [age, setAge] = useState(null);
@@ -140,6 +171,12 @@ export default function KidsZone() {
   // Stored user
   const [user, setUser] = useState(null);
 
+  // Helper to change language and persist
+  function changeLang(code) {
+    setLang(code);
+    try { localStorage.setItem('nw_kids_language', code); } catch (e) {}
+  }
+
   // Check for existing kid user on mount
   useEffect(() => {
     setMounted(true);
@@ -148,7 +185,13 @@ export default function KidsZone() {
       if (stored && stored.isKid) {
         setUser(stored);
         setScreen('dashboard');
+        if (stored.language) setLang(stored.language);
       }
+    } catch (e) {}
+    // Also read standalone language preference
+    try {
+      const savedLang = localStorage.getItem('nw_kids_language');
+      if (savedLang && KIDS_UI[savedLang]) setLang(savedLang);
     } catch (e) {}
   }, []);
 
@@ -163,6 +206,7 @@ export default function KidsZone() {
       avatar,
       email: skipEmail ? '' : parentEmail,
       parentEmail: skipEmail ? '' : parentEmail,
+      language: lang,
       isKid: true,
       registeredAt: new Date().toISOString(),
     };
@@ -253,13 +297,44 @@ export default function KidsZone() {
               color: t.n800,
               marginBottom: 8,
               textAlign: 'center',
-            }}>Hi! I'm Starky!</div>
+              ...rtlStyle,
+            }}>{ui.hi}</div>
             <div style={{
               fontSize: 16,
               color: t.n500,
-              marginBottom: 40,
+              marginBottom: 24,
               textAlign: 'center',
-            }}>Your learning friend</div>
+              ...rtlStyle,
+            }}>{ui.yourFriend}</div>
+
+            {/* ── Mother tongue selector ── */}
+            <div style={{ textAlign: 'center', marginBottom: 24, width: '100%', maxWidth: 360 }}>
+              <div style={{ fontSize: 13, fontWeight: 700, color: t.n500, marginBottom: 10 }}>
+                Your language / آپ کی زبان
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 8 }}>
+                {LANG_BUTTONS.map(lb => (
+                  <button
+                    key={lb.id}
+                    onClick={() => { sndTick(); changeLang(lb.id); }}
+                    style={{
+                      padding: '8px 14px',
+                      borderRadius: 12,
+                      border: lang === lb.id ? '3px solid #FFC300' : `2px solid ${isDark ? 'rgba(255,255,255,0.15)' : 'rgba(0,0,0,0.1)'}`,
+                      background: lang === lb.id ? (isDark ? 'rgba(255,195,0,0.15)' : 'rgba(255,195,0,0.12)') : (isDark ? 'rgba(255,255,255,0.06)' : '#fff'),
+                      color: lang === lb.id ? '#D97706' : t.n700,
+                      fontSize: 14,
+                      fontWeight: 700,
+                      fontFamily: t.f,
+                      cursor: 'pointer',
+                      direction: RTL_LANGS.includes(lb.id) ? 'rtl' : 'ltr',
+                      transition: 'all 0.15s',
+                    }}
+                  >{lb.label}</button>
+                ))}
+              </div>
+            </div>
+
             <button
               onClick={() => { sndTick(); setScreen('register'); setRegStep(1); }}
               style={{
@@ -277,10 +352,10 @@ export default function KidsZone() {
                 cursor: 'pointer',
                 animation: 'btnBounce 2s ease-in-out infinite',
                 boxShadow: '0 8px 32px rgba(255,195,0,0.3)',
+                ...rtlStyle,
               }}
             >
-              Ready to learn? Let's go!
-            </button>
+              {ui.ready}</button>
           </div>
         </div>
       </>
@@ -316,7 +391,7 @@ export default function KidsZone() {
             {regStep === 1 && (
               <div style={{textAlign:'center',width:'100%'}}>
                 <div style={{fontSize:32,marginBottom:8}}>😊</div>
-                <div style={{fontSize:24,fontWeight:800,color:t.n800,marginBottom:24}}>What's your name?</div>
+                <div style={{fontSize:24,fontWeight:800,color:t.n800,marginBottom:24,...rtlStyle}}>{ui.name}</div>
                 <input
                   type="text"
                   value={name}
@@ -362,7 +437,7 @@ export default function KidsZone() {
                     cursor: name.trim().length >= 2 ? 'pointer' : 'default',
                   }}
                 >
-                  Next →
+                  {ui.next}
                 </button>
               </div>
             )}
@@ -371,7 +446,7 @@ export default function KidsZone() {
             {regStep === 2 && (
               <div style={{textAlign:'center',width:'100%'}}>
                 <div style={{fontSize:32,marginBottom:8}}>🎂</div>
-                <div style={{fontSize:24,fontWeight:800,color:t.n800,marginBottom:24}}>How old are you?</div>
+                <div style={{fontSize:24,fontWeight:800,color:t.n800,marginBottom:24,...rtlStyle}}>{ui.age}</div>
                 <div style={{display:'flex',flexWrap:'wrap',justifyContent:'center',gap:16,maxWidth:320,margin:'0 auto'}}>
                   {AGE_OPTIONS.map((opt, i) => (
                     <button
@@ -408,7 +483,7 @@ export default function KidsZone() {
             {regStep === 3 && (
               <div style={{textAlign:'center',width:'100%'}}>
                 <div style={{fontSize:32,marginBottom:8}}>🎭</div>
-                <div style={{fontSize:24,fontWeight:800,color:t.n800,marginBottom:24}}>Pick your look!</div>
+                <div style={{fontSize:24,fontWeight:800,color:t.n800,marginBottom:24,...rtlStyle}}>{ui.avatar}</div>
                 <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:12,maxWidth:340,margin:'0 auto'}}>
                   {AVATARS.map((av, i) => (
                     <button
@@ -443,7 +518,7 @@ export default function KidsZone() {
             {regStep === 4 && (
               <div style={{textAlign:'center',width:'100%'}}>
                 <div style={{fontSize:32,marginBottom:8}}>📧</div>
-                <div style={{fontSize:24,fontWeight:800,color:t.n800,marginBottom:8}}>{"What's your parent's email?"}</div>
+                <div style={{fontSize:24,fontWeight:800,color:t.n800,marginBottom:8,...rtlStyle}}>{ui.email}</div>
                 <div style={{fontSize:14,color:t.n500,marginBottom:24}}>So we can send them your learning report!</div>
                 <input
                   type="email"
@@ -490,7 +565,7 @@ export default function KidsZone() {
                     boxShadow: parentEmail.includes('@') ? '0 6px 24px rgba(255,195,0,0.3)' : 'none',
                   }}
                 >
-                  Start Learning! 🎉
+                  {ui.start}
                 </button>
                 <button
                   onClick={() => completeRegistration(true)}
@@ -504,9 +579,10 @@ export default function KidsZone() {
                     fontFamily: t.f,
                     cursor: 'pointer',
                     textDecoration: 'underline',
+                    ...rtlStyle,
                   }}
                 >
-                  Skip — I{"'"}ll add it later
+                  {ui.skip}
                 </button>
               </div>
             )}
@@ -593,8 +669,8 @@ export default function KidsZone() {
                   onTouchEnd={e => e.currentTarget.style.transform = 'scale(1)'}
                 >
                   <span style={{fontSize:40,lineHeight:1,marginBottom:8}}>{card.emoji}</span>
-                  <span style={{fontSize:18,fontWeight:700,color:t.n800,textAlign:'center'}}>{card.title}</span>
-                  <span style={{fontSize:12,color:t.n500,marginTop:4,textAlign:'center'}}>{card.sub}</span>
+                  <span style={{fontSize:18,fontWeight:700,color:t.n800,textAlign:'center',...rtlStyle}}>{ui[card.key] || card.key}</span>
+                  <span style={{fontSize:12,color:t.n500,marginTop:4,textAlign:'center',...rtlStyle}}>{ui[card.subKey] || card.subKey}</span>
                 </a>
               ))}
             </div>
@@ -612,7 +688,7 @@ export default function KidsZone() {
                 textDecoration: 'underline',
               }}
             >
-              Change my profile
+              {ui.changeProfile}
             </button>
           </div>
         </div>

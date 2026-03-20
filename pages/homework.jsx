@@ -93,6 +93,35 @@ const CRAFT_IDEAS = [
 const MODE_PARENT = "parent";
 const MODE_CHILD  = "child";
 
+/* ═══════════════════════════════════════
+   MOTHER TONGUE / LANGUAGE SUPPORT
+═══════════════════════════════════════ */
+const HW_RTL_LANGS = ['ur', 'sd', 'pa', 'ps', 'bal', 'skr'];
+
+const GRADE_UR = { kg: 'نرسری', g1: 'پہلی', g2: 'دوسری', g3: 'تیسری', g4: 'چوتھی', g5: 'پانچویں', g6: 'چھٹی' };
+const SUBJECT_UR = { maths: 'ریاضی', english: 'انگریزی', science: 'سائنس', urdu: 'اردو', islamiat: 'اسلامیات', quran: 'ناظرہ قرآن', gk: 'جنرل نالج', socialst: 'معاشرتی علوم', sindhi: 'سنڌي', pashto: 'پښتو', craft: 'آرٹ', other: 'دیگر' };
+
+const HOMEWORK_UI = {
+  en: { funZone: 'Fun Practice Zone', funZoneSub: 'Tap to play — no typing needed!', keepPlaying: 'Keep playing!', countingGame: 'Counting Game', countingGameDesc: 'Tap the right answer!', spellingBee: 'Spelling Bee', spellingBeeDesc: 'Pick the correct spelling!', trueOrFalse: 'True or False', trueOrFalseDesc: 'Is this fact true?', matchIt: 'Match It', matchItDesc: 'Match the pairs!', amazing: 'AMAZING! ⭐🎉', almostTry: 'Almost! Try again next time! 💪', correct: 'Correct!', notQuite: 'Not quite — try again! 💪', howMany: 'HOW MANY DO YOU SEE?', pickSpelling: 'PICK THE CORRECT SPELLING', tapMatch: 'TAP TO MATCH THE PAIRS', finished: 'You finished all', exercises: 'exercises!', score: 'Score', outOf: 'out of', correctWord: 'correct', xpEarned: 'XP earned', total: 'Total', tryAnother: 'Try Another Subject', askStarky: 'Ask Starky for Help', back: '← Back', trueWord: 'TRUE', falseWord: 'FALSE', answerWas: 'Almost! The answer was' },
+  ur: { funZone: 'مزیدار مشق زون', funZoneSub: 'کھیلنے کے لیے ٹیپ کریں — ٹائپنگ نہیں!', keepPlaying: '!کھیلتے رہو', countingGame: 'گنتی کا کھیل', countingGameDesc: '!صحیح جواب ٹیپ کرو', spellingBee: 'سپیلنگ بی', spellingBeeDesc: '!صحیح اسپیلنگ چنو', trueOrFalse: 'سچ یا جھوٹ', trueOrFalseDesc: '!کیا یہ بات سچ ہے؟', matchIt: 'ملاؤ', matchItDesc: '!جوڑے ملاؤ', amazing: '!شاندار ⭐🎉', almostTry: '!قریب تھے! اگلی بار پھر کوشش کرو 💪', correct: '!صحیح', notQuite: '!بالکل نہیں — دوبارہ کوشش کرو 💪', howMany: 'کتنے نظر آتے ہیں؟', pickSpelling: 'صحیح اسپیلنگ چنیں', tapMatch: 'جوڑے ملانے کے لیے ٹیپ کریں', finished: 'آپ نے سب', exercises: 'مشقیں مکمل کیں!', score: 'سکور', outOf: 'میں سے', correctWord: 'صحیح', xpEarned: 'حاصل کیے XP', total: 'کل', tryAnother: 'دوسرا مضمون آزمائیں', askStarky: 'Starky سے مدد لیں', back: 'واپس ←', trueWord: 'سچ', falseWord: 'جھوٹ', answerWas: '!قریب تھے! جواب تھا' },
+  sd: { funZone: 'مزيدار مشق زون', funZoneSub: 'کيڏڻ لاءِ ٽيپ ڪريو — ٽائپنگ ناهي!', keepPlaying: '!کيڏيندا رهو', countingGame: 'ڳڻتي جي راند', countingGameDesc: '!صحيح جواب ٽيپ ڪريو', spellingBee: 'اسپيلنگ بي', spellingBeeDesc: '!صحيح اسپيلنگ چونڊيو', trueOrFalse: 'سچ يا ڪُوڙ', trueOrFalseDesc: '!ڇا هي ڳالهه سچ آهي؟', matchIt: 'ملايو', matchItDesc: '!جوڙا ملايو', amazing: '!شاندار ⭐🎉', almostTry: '!ويجهو هئا! اڳئين ڀيرو ڪوشش ڪريو 💪', correct: '!صحيح', notQuite: '!ان هيءَ نه — وري ڪوشش ڪريو 💪', howMany: 'ڪيترا نظر اچن ٿا؟', pickSpelling: 'صحيح اسپيلنگ چونڊيو', tapMatch: 'جوڙا ملائڻ لاءِ ٽيپ ڪريو', finished: 'توهان سڀ', exercises: 'مشقون مڪمل ڪيون!', score: 'سکور', outOf: 'مان', correctWord: 'صحيح', xpEarned: 'حاصل ٿيا XP', total: 'ڪل', tryAnother: 'ٻيو مضمون آزمايو', askStarky: 'Starky کان مدد وٺو', back: 'واپس ←', trueWord: 'سچ', falseWord: 'ڪوڙ', answerWas: '!ويجهو هئا! جواب هو' },
+  pa: { funZone: 'مزیدار مشق زون', funZoneSub: 'کھیڈن لئی ٹیپ کرو — ٹائپنگ نہیں!', keepPlaying: '!کھیڈدے رہو', countingGame: 'گنتی دی کھیڈ', countingGameDesc: '!صحیح جواب ٹیپ کرو', spellingBee: 'سپیلنگ بی', spellingBeeDesc: '!صحیح اسپیلنگ چنو', trueOrFalse: 'سچ یا جھوٹ', trueOrFalseDesc: '!کیا ایہ گل سچ اے؟', matchIt: 'ملاؤ', matchItDesc: '!جوڑے ملاؤ', amazing: '!شاندار ⭐🎉', almostTry: '!نیڑے سی! اگلی واری فیر کوشش کرو 💪', correct: '!صحیح', notQuite: '!بالکل نئیں — فیر کوشش کرو 💪', howMany: 'کنے نظر آندے نے؟', pickSpelling: 'صحیح اسپیلنگ چنو', tapMatch: 'جوڑے ملان لئی ٹیپ کرو', finished: 'تسیں سب', exercises: 'مشقاں مکمل کیتیاں!', score: 'سکور', outOf: 'وچوں', correctWord: 'صحیح', xpEarned: 'حاصل کیتے XP', total: 'کل', tryAnother: 'ہور مضمون آزماؤ', askStarky: 'Starky توں مدد لو', back: 'واپس ←', trueWord: 'سچ', falseWord: 'جھوٹ', answerWas: '!نیڑے سی! جواب سی' },
+  ps: { funZone: 'ساتیری تمرین زون', funZoneSub: 'د لوبې لپاره ټیپ کړئ — ټایپنگ نشته!', keepPlaying: '!لوبې ته دوام ورکړئ', countingGame: 'د شمیرنې لوبه', countingGameDesc: '!سم ځواب ټیپ کړئ', spellingBee: 'سپیلنگ بی', spellingBeeDesc: '!سمه سپیلنگ وټاکئ', trueOrFalse: 'ریښتیا یا دروغ', trueOrFalseDesc: '!ایا دا خبره ریښتیا ده؟', matchIt: 'سره یو ځای کړئ', matchItDesc: '!جوړه سره ملاوئ', amazing: '!حیرانونکی ⭐🎉', almostTry: '!نږدې وو! بل ځل بیا هڅه وکړئ 💪', correct: '!سم', notQuite: '!نه بالکل — بیا هڅه وکړئ 💪', howMany: 'څومره ګورئ؟', pickSpelling: 'سمه سپیلنگ وټاکئ', tapMatch: 'د جوړو لپاره ټیپ کړئ', finished: 'تاسو ټول', exercises: 'تمرینونه بشپړ کړل!', score: 'سکور', outOf: 'له', correctWord: 'سم', xpEarned: 'ترلاسه شوي XP', total: 'ټول', tryAnother: 'بل مضمون هڅه وکړئ', askStarky: 'له Starky مرسته وغواړئ', back: 'شاته ←', trueWord: 'ریښتیا', falseWord: 'دروغ', answerWas: '!نږدې وو! ځواب وو' },
+  bal: { funZone: 'مزنین مشق زون', funZoneSub: 'بازیگ ءَ ٹیپ بکنیت — ٹائپنگ نیست!', keepPlaying: '!بازیگ ءَ دیم بدئیت', countingGame: 'شمارگ ئی بازیگ', countingGameDesc: '!راست جواب ٹیپ بکنیت', spellingBee: 'سپیلنگ بی', spellingBeeDesc: '!راست اسپیلنگ چاگرد بکنیت', trueOrFalse: 'راست یا غلط', trueOrFalseDesc: '!اے هبر راست اِنت؟', matchIt: 'ملّ بکنیت', matchItDesc: '!جوڑ ملّ بکنیت', amazing: '!ببرکت ⭐🎉', almostTry: '!نزّیک اَت! آئیندگ ءَ دگه کوشش بکنیت 💪', correct: '!راست', notQuite: '!نه — دگه کوشش بکنیت 💪', howMany: 'چنت دیست کنیت؟', pickSpelling: 'راست اسپیلنگ چاگرد بکنیت', tapMatch: 'جوڑ ملائتن ءَ ٹیپ بکنیت', finished: 'شما سجّ', exercises: 'مشق سر بوتنت!', score: 'سکور', outOf: 'ءَ', correctWord: 'راست', xpEarned: 'داتگین XP', total: 'ٹوٹل', tryAnother: 'دگه مضمون آزمائش بکنیت', askStarky: 'Starky ءَ کمک بلوٹیت', back: 'پدا ←', trueWord: 'راست', falseWord: 'غلط', answerWas: '!نزّیک اَت! جواب اَت' },
+  skr: { funZone: 'مزیدار مشق زون', funZoneSub: 'کھیڈن کیتے ٹیپ کرو — ٹائپنگ نہیں!', keepPlaying: '!کھیڈدے رہو', countingGame: 'گنتی دی کھیڈ', countingGameDesc: '!صحیح جواب ٹیپ کرو', spellingBee: 'سپیلنگ بی', spellingBeeDesc: '!صحیح اسپیلنگ چنو', trueOrFalse: 'سچ یا جھوٹ', trueOrFalseDesc: '!کیا ایہ گل سچ ہے؟', matchIt: 'ملاؤ', matchItDesc: '!جوڑے ملاؤ', amazing: '!شاندار ⭐🎉', almostTry: '!نیڑے ہئے! اگلی واری فیر کوشش کرو 💪', correct: '!صحیح', notQuite: '!بالکل نئیں — فیر کوشش کرو 💪', howMany: 'کنے نظر آندے ہن؟', pickSpelling: 'صحیح اسپیلنگ چنو', tapMatch: 'جوڑے ملان کیتے ٹیپ کرو', finished: 'تساں سب', exercises: 'مشقاں مکمل کیتیاں!', score: 'سکور', outOf: 'وچوں', correctWord: 'صحیح', xpEarned: 'حاصل کیتے XP', total: 'کل', tryAnother: 'ہور مضمون آزماؤ', askStarky: 'Starky کنوں مدد لو', back: 'واپس ←', trueWord: 'سچ', falseWord: 'جھوٹ', answerWas: '!نیڑے ہئے! جواب ہئے' },
+};
+
+function getKidsLang() {
+  if (typeof window === 'undefined') return 'en';
+  try {
+    const savedLang = localStorage.getItem('nw_kids_language');
+    if (savedLang && HOMEWORK_UI[savedLang]) return savedLang;
+    const user = JSON.parse(localStorage.getItem('nw_user'));
+    if (user && user.language && HOMEWORK_UI[user.language]) return user.language;
+  } catch (e) {}
+  return 'en';
+}
+
 /* ═══ AUDIO ENGINE ═══ */
 let _audioCtx=null;
 function getAudioCtx(){if(typeof window==='undefined')return null;if(!_audioCtx)try{_audioCtx=new(window.AudioContext||window.webkitAudioContext)()}catch{}return _audioCtx}
@@ -393,7 +422,10 @@ const FUN_EXERCISES = {
 };
 
 /* ═══ FunZone Component ═══ */
-function FunZone({ grade, subject, accent }) {
+function FunZone({ grade, subject, accent, kidsLang }) {
+  const hwUi = HOMEWORK_UI[kidsLang] || HOMEWORK_UI.en;
+  const isHwRtl = HW_RTL_LANGS.includes(kidsLang);
+  const hwRtlStyle = isHwRtl ? { direction: 'rtl', textAlign: 'right' } : {};
   const [currentIdx, setCurrentIdx] = useState(0);
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
@@ -426,17 +458,17 @@ function FunZone({ grade, subject, accent }) {
 
   // Determine available game types for this subject
   const gameTypes = [];
-  if (['maths'].includes(subjectId)) gameTypes.push({ id:'count', label:'Counting Game', emoji:'🔢', desc:'Tap the right answer!' });
-  if (['english'].includes(subjectId)) gameTypes.push({ id:'spell', label:'Spelling Bee', emoji:'🐝', desc:'Pick the correct spelling!' });
-  if (['science','gk','islamiat'].includes(subjectId)) gameTypes.push({ id:'truefalse', label:'True or False', emoji:'✅', desc:'Is this fact true?' });
-  if (['urdu'].includes(subjectId)) gameTypes.push({ id:'match', label:'Match It', emoji:'🔗', desc:'Match the pairs!' });
+  if (['maths'].includes(subjectId)) gameTypes.push({ id:'count', label:hwUi.countingGame, emoji:'🔢', desc:hwUi.countingGameDesc });
+  if (['english'].includes(subjectId)) gameTypes.push({ id:'spell', label:hwUi.spellingBee, emoji:'🐝', desc:hwUi.spellingBeeDesc });
+  if (['science','gk','islamiat'].includes(subjectId)) gameTypes.push({ id:'truefalse', label:hwUi.trueOrFalse, emoji:'✅', desc:hwUi.trueOrFalseDesc });
+  if (['urdu'].includes(subjectId)) gameTypes.push({ id:'match', label:hwUi.matchIt, emoji:'🔗', desc:hwUi.matchItDesc });
   // Add match game for subjects that also have match data
   if (FUN_EXERCISES[subjectId]?.[gradeId]?.some(e => e.type === 'match') && !gameTypes.find(g => g.id === 'match')) {
-    gameTypes.push({ id:'match', label:'Match It', emoji:'🔗', desc:'Match the pairs!' });
+    gameTypes.push({ id:'match', label:hwUi.matchIt, emoji:'🔗', desc:hwUi.matchItDesc });
   }
   // Universal true/false for subjects with truefalse data
   if (!gameTypes.find(g => g.id === 'truefalse') && exercises.some(e => e.type === 'truefalse')) {
-    gameTypes.push({ id:'truefalse', label:'True or False', emoji:'✅', desc:'Is this fact true?' });
+    gameTypes.push({ id:'truefalse', label:hwUi.trueOrFalse, emoji:'✅', desc:hwUi.trueOrFalseDesc });
   }
 
   const currentExercises = exercises.filter(e => activeGame ? e.type === activeGame : true);
@@ -563,8 +595,8 @@ function FunZone({ grade, subject, accent }) {
         {/* XP bar */}
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:'16px', flexWrap:'wrap', gap:'8px' }}>
           <div>
-            <div style={{ fontWeight:'900', fontSize:'20px', color:accent }}>Fun Practice Zone</div>
-            <div style={{ fontSize:'13px', color:'rgba(255,255,255,0.5)', marginTop:'2px' }}>Tap to play — no typing needed!</div>
+            <div style={{ fontWeight:'900', fontSize:'20px', color:accent, ...hwRtlStyle }}>{hwUi.funZone}</div>
+            <div style={{ fontSize:'13px', color:'rgba(255,255,255,0.5)', marginTop:'2px', ...hwRtlStyle }}>{hwUi.funZoneSub}</div>
           </div>
           <div style={{
             background:`${accent}22`, border:`2px solid ${accent}66`, borderRadius:'16px',
@@ -573,7 +605,7 @@ function FunZone({ grade, subject, accent }) {
             <span style={{ fontSize:'22px' }}>⭐</span>
             <div>
               <div style={{ fontWeight:'900', fontSize:'16px', color:accent }}>{xp} XP</div>
-              <div style={{ fontSize:'10px', color:'rgba(255,255,255,0.4)' }}>Keep playing!</div>
+              <div style={{ fontSize:'10px', color:'rgba(255,255,255,0.4)', ...hwRtlStyle }}>{hwUi.keepPlaying}</div>
             </div>
           </div>
         </div>
@@ -615,16 +647,16 @@ function FunZone({ grade, subject, accent }) {
         <style>{`@keyframes confettiFall { 0%{transform:translateY(0) rotate(0deg);opacity:1} 100%{transform:translateY(400px) rotate(720deg);opacity:0} }`}</style>
 
         <div style={{ fontSize:'64px', marginBottom:'16px' }}>🎉</div>
-        <div style={{ fontWeight:'900', fontSize:'28px', color:accent, marginBottom:'8px' }}>AMAZING!</div>
-        <div style={{ fontSize:'18px', color:'rgba(255,255,255,0.7)', marginBottom:'4px' }}>You finished all {currentExercises.length} exercises!</div>
-        <div style={{ fontSize:'16px', color:'rgba(255,255,255,0.6)', marginBottom:'4px' }}>Score: {score} out of {currentExercises.length} correct</div>
-        <div style={{ fontSize:'16px', color:accent, fontWeight:'800', marginBottom:'24px' }}>XP earned: +{score * 5 + 20}</div>
+        <div style={{ fontWeight:'900', fontSize:'28px', color:accent, marginBottom:'8px', ...hwRtlStyle }}>{hwUi.amazing}</div>
+        <div style={{ fontSize:'18px', color:'rgba(255,255,255,0.7)', marginBottom:'4px', ...hwRtlStyle }}>{hwUi.finished} {currentExercises.length} {hwUi.exercises}</div>
+        <div style={{ fontSize:'16px', color:'rgba(255,255,255,0.6)', marginBottom:'4px', ...hwRtlStyle }}>{hwUi.score}: {score} {hwUi.outOf} {currentExercises.length} {hwUi.correctWord}</div>
+        <div style={{ fontSize:'16px', color:accent, fontWeight:'800', marginBottom:'24px', ...hwRtlStyle }}>{hwUi.xpEarned}: +{score * 5 + 20}</div>
         <div style={{
           background:`${accent}22`, border:`2px solid ${accent}66`, borderRadius:'16px',
           padding:'12px 20px', display:'inline-flex', alignItems:'center', gap:'10px', marginBottom:'24px',
         }}>
           <span style={{ fontSize:'24px' }}>⭐</span>
-          <span style={{ fontWeight:'900', fontSize:'20px', color:accent }}>Total: {xp} XP</span>
+          <span style={{ fontWeight:'900', fontSize:'20px', color:accent }}>{hwUi.total}: {xp} XP</span>
         </div>
         <br />
         <div style={{ display:'flex', gap:'12px', justifyContent:'center', flexWrap:'wrap', marginTop:'8px' }}>
@@ -632,13 +664,13 @@ function FunZone({ grade, subject, accent }) {
             ...btnBase, width:'auto', display:'inline-flex',
             background:`linear-gradient(135deg, ${accent}, ${accent}CC)`,
             color:'#0D0800', fontSize:'16px', padding:'14px 32px',
-            boxShadow:`0 6px 20px ${accent}55`,
-          }}>Try Another Subject</button>
+            boxShadow:`0 6px 20px ${accent}55`, ...hwRtlStyle,
+          }}>{hwUi.tryAnother}</button>
           <a href="/" style={{
             ...btnBase, width:'auto', display:'inline-flex', textDecoration:'none',
             background:'rgba(79,142,247,0.15)', border:'2px solid rgba(79,142,247,0.4)',
-            color:'#4F8EF7', fontSize:'16px', padding:'14px 32px',
-          }}>Ask Starky for Help</a>
+            color:'#4F8EF7', fontSize:'16px', padding:'14px 32px', ...hwRtlStyle,
+          }}>{hwUi.askStarky}</a>
         </div>
       </div>
     );
@@ -671,7 +703,7 @@ function FunZone({ grade, subject, accent }) {
             background:'rgba(255,255,255,0.08)', border:'1px solid rgba(255,255,255,0.15)',
             borderRadius:'12px', padding:'8px 14px', cursor:'pointer',
             color:'rgba(255,255,255,0.6)', fontSize:'13px', fontFamily:"'Nunito',sans-serif", fontWeight:'700',
-          }}>← Back</button>
+          }}>{hwUi.back}</button>
           <div style={{ display:'flex', alignItems:'center', gap:'12px' }}>
             <span style={{ fontWeight:'800', fontSize:'14px', color:'rgba(255,255,255,0.5)' }}>{currentIdx+1}/{currentExercises.length}</span>
             <div style={{
@@ -689,7 +721,7 @@ function FunZone({ grade, subject, accent }) {
         <div style={{ textAlign:'center', marginBottom:'20px' }}>
           {isEmojiCount ? (
             <>
-              <div style={{ fontSize:'14px', color:'rgba(255,255,255,0.5)', fontWeight:'700', marginBottom:'12px' }}>HOW MANY DO YOU SEE?</div>
+              <div style={{ fontSize:'14px', color:'rgba(255,255,255,0.5)', fontWeight:'700', marginBottom:'12px', ...hwRtlStyle }}>{hwUi.howMany}</div>
               <div style={{ fontSize:'48px', letterSpacing:'8px', marginBottom:'16px', lineHeight:'1.4' }}>
                 {Array.from({ length: ex.items }, () => ex.emoji).join(' ')}
               </div>
@@ -705,12 +737,12 @@ function FunZone({ grade, subject, accent }) {
         {/* Feedback */}
         {feedback === 'correct' && (
           <div style={{ textAlign:'center', marginBottom:'16px', animation:'slideUp 0.3s ease-out' }}>
-            <span style={{ fontSize:'24px', fontWeight:'900', color:'#A8E063' }}>AMAZING! ⭐🎉 +5 XP</span>
+            <span style={{ fontSize:'24px', fontWeight:'900', color:'#A8E063', ...hwRtlStyle }}>{hwUi.amazing} +5 XP</span>
           </div>
         )}
         {feedback === 'wrong' && (
           <div style={{ textAlign:'center', marginBottom:'16px', animation:'slideUp 0.3s ease-out' }}>
-            <span style={{ fontSize:'20px', fontWeight:'900', color:'#FF8E53' }}>Almost! Try again next time! 💪</span>
+            <span style={{ fontSize:'20px', fontWeight:'900', color:'#FF8E53', ...hwRtlStyle }}>{hwUi.almostTry}</span>
           </div>
         )}
 
@@ -760,7 +792,7 @@ function FunZone({ grade, subject, accent }) {
             background:'rgba(255,255,255,0.08)', border:'1px solid rgba(255,255,255,0.15)',
             borderRadius:'12px', padding:'8px 14px', cursor:'pointer',
             color:'rgba(255,255,255,0.6)', fontSize:'13px', fontFamily:"'Nunito',sans-serif", fontWeight:'700',
-          }}>← Back</button>
+          }}>{hwUi.back}</button>
           <div style={{ display:'flex', alignItems:'center', gap:'12px' }}>
             <span style={{ fontWeight:'800', fontSize:'14px', color:'rgba(255,255,255,0.5)' }}>{currentIdx+1}/{currentExercises.length}</span>
             <div style={{
@@ -777,18 +809,18 @@ function FunZone({ grade, subject, accent }) {
         <div style={{ textAlign:'center', marginBottom:'20px' }}>
           <div style={{ fontSize:'64px', marginBottom:'8px' }}>{ex.image}</div>
           <div style={{ fontSize:'14px', color:'rgba(255,255,255,0.5)', fontWeight:'700', marginBottom:'8px' }}>
-            {ex.hint || 'PICK THE CORRECT SPELLING'}
+            {ex.hint || hwUi.pickSpelling}
           </div>
         </div>
 
         {feedback === 'correct' && (
           <div style={{ textAlign:'center', marginBottom:'16px', animation:'slideUp 0.3s ease-out' }}>
-            <span style={{ fontSize:'24px', fontWeight:'900', color:'#A8E063' }}>AMAZING! ⭐🎉 +5 XP</span>
+            <span style={{ fontSize:'24px', fontWeight:'900', color:'#A8E063', ...hwRtlStyle }}>{hwUi.amazing} +5 XP</span>
           </div>
         )}
         {feedback === 'wrong' && (
           <div style={{ textAlign:'center', marginBottom:'16px', animation:'slideUp 0.3s ease-out' }}>
-            <span style={{ fontSize:'20px', fontWeight:'900', color:'#FF8E53' }}>Almost! Try again next time! 💪</span>
+            <span style={{ fontSize:'20px', fontWeight:'900', color:'#FF8E53', ...hwRtlStyle }}>{hwUi.almostTry}</span>
           </div>
         )}
 
@@ -836,7 +868,7 @@ function FunZone({ grade, subject, accent }) {
             background:'rgba(255,255,255,0.08)', border:'1px solid rgba(255,255,255,0.15)',
             borderRadius:'12px', padding:'8px 14px', cursor:'pointer',
             color:'rgba(255,255,255,0.6)', fontSize:'13px', fontFamily:"'Nunito',sans-serif", fontWeight:'700',
-          }}>← Back</button>
+          }}>{hwUi.back}</button>
           <div style={{ display:'flex', alignItems:'center', gap:'12px' }}>
             <span style={{ fontWeight:'800', fontSize:'14px', color:'rgba(255,255,255,0.5)' }}>{currentIdx+1}/{currentExercises.length}</span>
             <div style={{
@@ -859,12 +891,12 @@ function FunZone({ grade, subject, accent }) {
 
         {feedback === 'correct' && (
           <div style={{ textAlign:'center', marginBottom:'16px', animation:'slideUp 0.3s ease-out' }}>
-            <span style={{ fontSize:'24px', fontWeight:'900', color:'#A8E063' }}>AMAZING! ⭐🎉 +5 XP</span>
+            <span style={{ fontSize:'24px', fontWeight:'900', color:'#A8E063', ...hwRtlStyle }}>{hwUi.amazing} +5 XP</span>
           </div>
         )}
         {feedback === 'wrong' && (
           <div style={{ textAlign:'center', marginBottom:'16px', animation:'slideUp 0.3s ease-out' }}>
-            <span style={{ fontSize:'20px', fontWeight:'900', color:'#FF8E53' }}>Almost! The answer was {ex.answer ? 'TRUE' : 'FALSE'}! 💪</span>
+            <span style={{ fontSize:'20px', fontWeight:'900', color:'#FF8E53', ...hwRtlStyle }}>{hwUi.answerWas} {ex.answer ? hwUi.trueWord : hwUi.falseWord}! 💪</span>
           </div>
         )}
 
@@ -884,7 +916,7 @@ function FunZone({ grade, subject, accent }) {
                 transform: wasChosen && isCorrect ? 'scale(1.05)' : 'scale(1)',
               }}>
                 <span style={{ fontSize:'32px' }}>{val ? '✅' : '❌'}</span>
-                {val ? 'TRUE' : 'FALSE'}
+                {val ? hwUi.trueWord : hwUi.falseWord}
               </button>
             );
           })}
@@ -917,7 +949,7 @@ function FunZone({ grade, subject, accent }) {
             background:'rgba(255,255,255,0.08)', border:'1px solid rgba(255,255,255,0.15)',
             borderRadius:'12px', padding:'8px 14px', cursor:'pointer',
             color:'rgba(255,255,255,0.6)', fontSize:'13px', fontFamily:"'Nunito',sans-serif", fontWeight:'700',
-          }}>← Back</button>
+          }}>{hwUi.back}</button>
           <div style={{ display:'flex', alignItems:'center', gap:'12px' }}>
             <div style={{
               background:`${accent}22`, border:`1px solid ${accent}66`, borderRadius:'12px',
@@ -927,12 +959,12 @@ function FunZone({ grade, subject, accent }) {
         </div>
 
         <div style={{ textAlign:'center', marginBottom:'16px' }}>
-          <div style={{ fontSize:'14px', color:'rgba(255,255,255,0.5)', fontWeight:'700' }}>TAP TO MATCH THE PAIRS</div>
+          <div style={{ fontSize:'14px', color:'rgba(255,255,255,0.5)', fontWeight:'700', ...hwRtlStyle }}>{hwUi.tapMatch}</div>
         </div>
 
         {feedback === 'wrong' && (
           <div style={{ textAlign:'center', marginBottom:'12px', animation:'slideUp 0.3s ease-out' }}>
-            <span style={{ fontSize:'18px', fontWeight:'900', color:'#FF8E53' }}>Not quite — try again! 💪</span>
+            <span style={{ fontSize:'18px', fontWeight:'900', color:'#FF8E53', ...hwRtlStyle }}>{hwUi.notQuite}</span>
           </div>
         )}
 
@@ -1009,6 +1041,10 @@ export default function HomeworkHelper() {
   const [showLimitModal,  setShowLimitModal]  = useState(false);
   const [copiedStep,      setCopiedStep]      = useState(null);
   const answerRef = useRef(null);
+
+  // Mother tongue / language support
+  const [kidsLang, setKidsLang] = useState('en');
+  useEffect(() => { setKidsLang(getKidsLang()); }, []);
 
   useEffect(() => {
     if (answer) answerRef.current?.scrollIntoView({ behavior:"smooth", block:"start" });
@@ -1304,7 +1340,7 @@ LANGUAGE: If the child writes in Urdu, respond entirely in Urdu. If Arabic, resp
             </div>
 
             {/* ═══ FUN ZONE ═══ */}
-            <FunZone grade={selectedGrade} subject={selectedSubject} accent={accent} />
+            <FunZone grade={selectedGrade} subject={selectedSubject} accent={accent} kidsLang={kidsLang} />
 
             {/* Question input */}
             <div style={{
@@ -1628,6 +1664,7 @@ function SidebarContent({ GRADES, SUBJECTS, selectedGrade, setSelectedGrade, sel
               <span style={{ fontSize:"18px" }}>{g.emoji}</span>
               <div style={{ textAlign:"left" }}>
                 <div style={{ fontWeight:"800", fontSize:"13px", color:selectedGrade.id===g.id ? g.color : "#fff" }}>{g.label}</div>
+                {GRADE_UR[g.id] && <div style={{ fontSize:"11px", color:"rgba(255,255,255,0.5)", direction:"rtl", textAlign:"left", marginTop:"1px" }}>{GRADE_UR[g.id]}</div>}
                 <div style={{ fontSize:"10px", color:"rgba(255,255,255,0.4)" }}>Age {g.age}</div>
               </div>
               {selectedGrade.id===g.id && <span style={{ marginLeft:"auto", color:g.color, fontSize:"15px" }}>✓</span>}
@@ -1648,7 +1685,11 @@ function SidebarContent({ GRADES, SUBJECTS, selectedGrade, setSelectedGrade, sel
               color: selectedSubject.id===s.id ? s.color : "rgba(255,255,255,0.55)",
               fontWeight:"700", fontSize:"12px", fontFamily:"'Nunito',sans-serif",
               transition:"all 0.2s", opacity:selectedSubject.id===s.id ? 1 : 0.8,
-            }}>{s.label}</button>
+              display:"flex", flexDirection:"column", alignItems:"center", gap:"1px",
+            }}>
+              <span>{s.label}</span>
+              {SUBJECT_UR[s.id] && <span style={{ fontSize:"10px", direction:"rtl", opacity:0.7 }}>{SUBJECT_UR[s.id]}</span>}
+            </button>
           ))}
         </div>
       </div>
