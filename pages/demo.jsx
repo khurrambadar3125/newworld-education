@@ -308,6 +308,13 @@ export default function DemoPage() {
         const data = await res.json();
         const reply = data.content || data.response || "Let me look at that — try again! 🌟";
         setMessages(prev => [...prev, { role: "assistant", content: reply }]);
+        // Signal collection
+        try {
+          const { recordMessageSignal, recordStrategySignal } = await import('../utils/signalCollector');
+          const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+          recordMessageSignal({ email: profile.email || 'anonymous', subject: subject.label, grade: profile.grade || '', userMessage: userContent, starkyResponse: reply, sessionNumber: 1 });
+          recordStrategySignal({ email: profile.email || 'anonymous', subject: subject.label, grade: profile.grade || '', starkyResponse: reply, userResponse: userContent });
+        } catch {}
       } else {
         const res = await fetch("/api/chat", {
           method: "POST",
@@ -322,11 +329,38 @@ export default function DemoPage() {
         const data = await res.json();
         const reply = data.content?.[0]?.text || "Let me think about that — try asking again! 🌟";
         setMessages(prev => [...prev, { role: "assistant", content: reply }]);
+        // Signal collection
+        try {
+          const { recordMessageSignal, recordStrategySignal } = await import('../utils/signalCollector');
+          const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+          recordMessageSignal({ email: profile.email || 'anonymous', subject: subject.label, grade: profile.grade || '', userMessage: t, starkyResponse: reply, sessionNumber: 1 });
+          recordStrategySignal({ email: profile.email || 'anonymous', subject: subject.label, grade: profile.grade || '', starkyResponse: reply, userResponse: t });
+        } catch {}
       }
     } catch {
       setMessages(prev => [...prev, { role: "assistant", content: "Something went wrong — please try again! 🌟" }]);
     }
     setLoading(false);
+    // Session-complete analysis
+    try {
+      const updatedMessages = [...history, { role: "assistant", content: "..." }];
+      const msgCount = updatedMessages.filter(m => m.role === 'user').length;
+      if (msgCount === 5 || (msgCount > 5 && msgCount % 10 === 0)) {
+        const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+        fetch('/api/session-complete', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            studentId: profile.email || 'anonymous',
+            studentName: profile.name || 'Student',
+            parentEmail: msgCount === 5 ? (profile.parentEmail || profile.email) : null,
+            grade: profile.grade,
+            subject: subject.label,
+            messages: updatedMessages.slice(-20),
+          }),
+        }).catch(() => {});
+      }
+    } catch {}
   };
 
   return (

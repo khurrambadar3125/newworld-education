@@ -1117,6 +1117,33 @@ LANGUAGE: If the child writes in Urdu, respond entirely in Urdu. If Arabic, resp
       setAnswer(reply);
       setHistory(prev => [...prev, { role:"user", content:fullQuestion }, { role:"assistant", content:reply }]);
       setQuestion("");
+      // Signal collection
+      try {
+        const { recordMessageSignal, recordStrategySignal } = await import('../utils/signalCollector');
+        const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+        recordMessageSignal({ email: profile.email || 'anonymous', subject: selectedSubject.label, grade: profile.grade || '', userMessage: text, starkyResponse: reply, sessionNumber: 1 });
+        recordStrategySignal({ email: profile.email || 'anonymous', subject: selectedSubject.label, grade: profile.grade || '', starkyResponse: reply, userResponse: text });
+      } catch {}
+      // Session-complete analysis
+      try {
+        const updatedHistory = [...history, { role:"user", content:fullQuestion }, { role:"assistant", content:reply }];
+        const msgCount = updatedHistory.filter(m => m.role === 'user').length;
+        if (msgCount === 5 || (msgCount > 5 && msgCount % 10 === 0)) {
+          const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+          fetch('/api/session-complete', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              studentId: profile.email || 'anonymous',
+              studentName: profile.name || 'Student',
+              parentEmail: msgCount === 5 ? (profile.parentEmail || profile.email) : null,
+              grade: profile.grade,
+              subject: selectedSubject.label,
+              messages: updatedHistory.slice(-20),
+            }),
+          }).catch(() => {});
+        }
+      } catch {}
     } catch {
       setAnswer("Oops! Something went wrong. Please check your connection and try again. 🌟");
     }

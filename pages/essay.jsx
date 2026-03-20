@@ -104,6 +104,15 @@ export default function EssayPage() {
       else {
         setResult(data);
         try { localStorage.removeItem('nw_essay_draft'); } catch {}
+        // Signal collection — essay marking
+        try {
+          const { recordMessageSignal, recordStrategySignal, recordDrillSignal } = await import('../utils/signalCollector');
+          const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+          const essaySummary = `Grade: ${data.grade}, Band: ${data.band}, Score: ${data.totalScore}/${data.maxScore}`;
+          recordMessageSignal({ email: profile.email || 'anonymous', subject, grade: profile.grade || '', userMessage: question + '\n' + essay.slice(0, 200), starkyResponse: essaySummary + ' — ' + (data.examinerVerdict || ''), sessionNumber: 1 });
+          recordStrategySignal({ email: profile.email || 'anonymous', subject, grade: profile.grade || '', starkyResponse: essaySummary, userResponse: question });
+          recordDrillSignal({ email: profile.email || 'anonymous', subject, topic: question.slice(0, 80), score: data.totalScore || 0, maxScore: data.maxScore || 1, timePerQuestion: 0, hintsUsed: 0, completed: true });
+        } catch {}
         // Notify parent about essay result
         try {
           const u = JSON.parse(localStorage.getItem('nw_user') || '{}');

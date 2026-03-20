@@ -463,6 +463,33 @@ export default function TextbooksPage() {
       const data = await res.json();
       const reply = data.content?.[0]?.text || "Something went wrong — please try again!";
       setMessages(prev=>[...prev,{role:"assistant",content:reply}]);
+      // Signal collection
+      try {
+        const { recordMessageSignal, recordStrategySignal } = await import('../utils/signalCollector');
+        const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+        const subjectName = subject?.name || 'Textbooks';
+        recordMessageSignal({ email: profile.email || 'anonymous', subject: subjectName, grade: profile.grade || '', userMessage: msgText, starkyResponse: reply, sessionNumber: 1 });
+        recordStrategySignal({ email: profile.email || 'anonymous', subject: subjectName, grade: profile.grade || '', starkyResponse: reply, userResponse: msgText });
+      } catch {}
+      // Session-complete analysis
+      try {
+        const msgCount = prevMessages.filter(m => m.role === 'user').length;
+        if (msgCount === 5 || (msgCount > 5 && msgCount % 10 === 0)) {
+          const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+          fetch('/api/session-complete', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              studentId: profile.email || 'anonymous',
+              studentName: profile.name || 'Student',
+              parentEmail: msgCount === 5 ? (profile.parentEmail || profile.email) : null,
+              grade: profile.grade,
+              subject: subject?.name || 'Textbooks',
+              messages: [...prevMessages, { role:"assistant", content:reply }].slice(-20),
+            }),
+          }).catch(() => {});
+        }
+      } catch {}
     } catch {
       setMessages(prev=>[...prev,{role:"assistant",content:"Something went wrong. Please try again!", isError:true}]);
     }

@@ -379,15 +379,50 @@ export default function ArtsPage() {
           body: JSON.stringify({ model: 'claude-haiku-4-5-20251001', max_tokens: 1200, system: buildPrompt(stage, topic) + '\n\nThe student is sharing artwork or an image. Give warm, specific, encouraging feedback. Notice techniques, colours, composition, effort.', messages: apiMessages })
         });
         const data = await res.json();
-        setMessages(p => [...p, { role: 'assistant', content: data.content?.[0]?.text || 'Something went wrong.' }]);
+        const reply = data.content?.[0]?.text || 'Something went wrong.';
+        setMessages(p => [...p, { role: 'assistant', content: reply }]);
+        // Signal collection
+        try {
+          const { recordMessageSignal, recordStrategySignal } = await import('../utils/signalCollector');
+          const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+          recordMessageSignal({ email: profile.email || 'anonymous', subject: 'Arts - ' + topic, grade: profile.grade || '', userMessage: txt, starkyResponse: reply, sessionNumber: 1 });
+          recordStrategySignal({ email: profile.email || 'anonymous', subject: 'Arts - ' + topic, grade: profile.grade || '', starkyResponse: reply, userResponse: txt });
+        } catch {}
       } else {
         // Text-only uses /api/chat
         const res = await fetch("/api/chat", { method:"POST", headers:{"Content-Type":"application/json"},
           body: JSON.stringify({ model:"claude-haiku-4-5-20251001", max_tokens:1200, system:buildPrompt(stage, topic), messages:prev.map(m=>({role:m.role,content:m.content})) }) });
         const data = await res.json();
-        setMessages(p => [...p, { role:"assistant", content:data.content?.[0]?.text || "Something went wrong." }]);
+        const reply = data.content?.[0]?.text || "Something went wrong.";
+        setMessages(p => [...p, { role:"assistant", content:reply }]);
+        // Signal collection
+        try {
+          const { recordMessageSignal, recordStrategySignal } = await import('../utils/signalCollector');
+          const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+          recordMessageSignal({ email: profile.email || 'anonymous', subject: 'Arts - ' + topic, grade: profile.grade || '', userMessage: txt, starkyResponse: reply, sessionNumber: 1 });
+          recordStrategySignal({ email: profile.email || 'anonymous', subject: 'Arts - ' + topic, grade: profile.grade || '', starkyResponse: reply, userResponse: txt });
+        } catch {}
       }
     } catch { setMessages(p => [...p, { role:"assistant", content:"Connection error. Please try again." }]); }
+    // Session-complete analysis
+    try {
+      const msgCount = prev.filter(m => m.role === 'user').length;
+      if (msgCount === 5 || (msgCount > 5 && msgCount % 10 === 0)) {
+        const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+        fetch('/api/session-complete', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            studentId: profile.email || 'anonymous',
+            studentName: profile.name || 'Student',
+            parentEmail: msgCount === 5 ? (profile.parentEmail || profile.email) : null,
+            grade: profile.grade,
+            subject: 'Arts - ' + topic,
+            messages: messages.slice(-20),
+          }),
+        }).catch(() => {});
+      }
+    } catch {}
     setLoading(false);
     setUploadedImage(null);
   };

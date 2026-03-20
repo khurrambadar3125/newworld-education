@@ -371,6 +371,12 @@ export default function DrillPage() {
       const quality = typeof data.quality === 'number' ? Math.max(0, Math.min(5, data.quality)) : (data.correct === true ? 4 : data.correct === false ? 1 : 2);
       sr.recordAnswer(subject, t, quality);
       setSessionResults(prev => [...prev, { topic:t, correct:!!data.correct, score:data.score || 0, maxScore:data.maxScore || 1, quality }]);
+      // Signal collection — drill performance
+      try {
+        const { recordDrillSignal } = await import('../utils/signalCollector');
+        const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+        recordDrillSignal({ email: profile.email || 'anonymous', subject, topic: t, score: data.score || 0, maxScore: data.maxScore || 1, timePerQuestion: 0, hintsUsed: hint ? 1 : 0, completed: true });
+      } catch {}
       setLiveScore(s => s + (data.score || 0));
       setLiveMax(m => m + (data.maxScore || 1));
       setCombo(c => {
