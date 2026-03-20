@@ -4,6 +4,7 @@ import { useTheme } from './_app';
 import { useSessionLimit } from '../utils/useSessionLimit';
 import { MOTHER_TONGUES, getTranslation, getUIString } from '../utils/motherTongue';
 import { useProductGate, ProductPaywall, ProductTrialBadge } from '../utils/productGate';
+import { translateTexts, getCachedTranslation } from '../utils/translateCache';
 import { CHINESE_DEST, CHINESE_VOICE, CHINESE_LANG } from '../utils/chineseContent';
 
 /* ═══════════════════════════════════════
@@ -849,6 +850,11 @@ export default function LanguagesPage() {
   // Shorthand for UI strings in current mother tongue
   function uiStr(key) { return getUIString(key, motherTongue); }
   function mtTrans(englishText) { return getTranslation(englishText, motherTongue); }
+  // Auto-translation via cache (Claude-powered, cached in localStorage)
+  function autoTr(text) {
+    if (!text || motherTongue === 'en') return text;
+    return getCachedTranslation(text, motherTongue) || text;
+  }
 
   const [phase, setPhase] = useState('landing');
   const [tab, setTab] = useState('learn');
@@ -966,6 +972,42 @@ export default function LanguagesPage() {
       saveState({ dest, xp, momentum, accuracy, level, levelName, replays, heatmap });
     }
   }, [dest, xp, momentum, accuracy, level, levelName, replays, heatmap]);
+
+  // ── Background translation: preload all translatable texts when language data loads ──
+  useEffect(() => {
+    if (motherTongue === 'en' || !ld) return;
+    const texts = [];
+    for (const sc of ld.scenarios || []) {
+      if (sc.sub) texts.push(sc.sub);
+      for (const ex of sc.ex || []) {
+        if (ex.q) texts.push(ex.q);
+        if (ex.opts) texts.push(...ex.opts);
+        if (ex.tr) texts.push(ex.tr);
+        if (ex.hint) texts.push(ex.hint);
+      }
+    }
+    for (const ph of ld.pb || []) {
+      if (ph.t) texts.push(ph.t);
+    }
+    for (const g of ld.grammar || []) {
+      if (g.point) texts.push(g.point);
+      if (g.example) texts.push(g.example);
+      if (g.note) texts.push(g.note);
+    }
+    for (const c of ld.culture || []) {
+      if (c.tip) texts.push(c.tip);
+    }
+    for (const e of ld.emergency || []) {
+      if (e.trans) texts.push(e.trans);
+    }
+    // Also translate placement test content
+    for (const q of ld.placementTest || []) {
+      if (q.q) texts.push(q.q);
+      if (q.opts) texts.push(...q.opts);
+    }
+    const unique = [...new Set(texts.filter(Boolean))];
+    if (unique.length > 0) translateTexts(unique, motherTongue);
+  }, [motherTongue, ld]);
 
   // Auto-speak for exercises
   const autoSpeak = useCallback(() => {
@@ -1375,7 +1417,7 @@ export default function LanguagesPage() {
                     <span style={{ fontSize: 22, flexShrink: 0 }}>{e.icon}</span>
                     <div style={{ flex: 1 }}>
                       <div style={{ fontSize: 16, fontWeight: 700, color: T.n700, fontFamily: T.fs }}>{e.phrase}</div>
-                      <div style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>{e.trans}</div>
+                      <div style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>{autoTr(e.trans)}</div>
                     </div>
                     <SpeakBtn word={e.phrase} lc={langData === LANG.fr ? 'fr' : dest ? dest.lc : 'fr'} />
                   </div>
@@ -1452,9 +1494,10 @@ export default function LanguagesPage() {
         </div>
         <div style={{ flex: 1, padding: '16px 20px', overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}>
           <Chip type="purple">Placement test</Chip>
-          <h3 style={{ fontSize: 18, fontWeight: 700, lineHeight: 1.25, color: T.n700, margin: '12px 0 16px' }}>{q.q}</h3>
+          <h3 style={{ fontSize: 18, fontWeight: 700, lineHeight: 1.25, color: T.n700, margin: '12px 0 16px' }}>{autoTr(q.q)}</h3>
+          {motherTongue !== 'en' && autoTr(q.q) !== q.q && <p style={{ fontSize: 12, color: T.n400, marginTop: -10, marginBottom: 12 }}>{q.q}</p>}
           {q.opts.map((o, i) => (
-            <OptBtn key={i} text={o} letter={lets[i]}
+            <OptBtn key={i} text={autoTr(o)} letter={lets[i]}
               isCorrect={chk && o === q.ans} isWrong={chk && o === sel && o !== q.ans}
               isSelected={!chk && o === sel} disabled={chk}
               onClick={() => testSel(o)} />
@@ -1611,7 +1654,8 @@ export default function LanguagesPage() {
       body = (
         <>
           <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>{isL ? uiStr('listenChoose') : uiStr('tapCorrect')}</div>
-          <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 18 }}>{ex.q}</h3>
+          <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 18 }}>{autoTr(ex.q)}</h3>
+          {motherTongue !== 'en' && autoTr(ex.q) !== ex.q && <p style={{ fontSize: 12, color: T.n400, marginTop: -12, marginBottom: 12 }}>{ex.q}</p>}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 22 }}>
             {ex.emoji && <div style={{ fontSize: 70, lineHeight: 1, marginBottom: 12 }}>{ex.emoji}</div>}
             {ex.word ? (
@@ -1626,7 +1670,7 @@ export default function LanguagesPage() {
             ) : null}
           </div>
           {ex.opts.map((o, i) => (
-            <OptBtn key={i} text={o} letter={lets[i]}
+            <OptBtn key={i} text={autoTr(o)} letter={lets[i]}
               isCorrect={chk && o === ex.ans} isWrong={chk && o === sel && o !== ex.ans}
               isSelected={!chk && o === sel} disabled={chk}
               onClick={() => selOpt(o)} />
@@ -1641,10 +1685,11 @@ export default function LanguagesPage() {
       body = (
         <>
           <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>{uiStr('buildSentence')}</div>
-          <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 8 }}>{ex.q}</h3>
+          <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 8 }}>{autoTr(ex.q)}</h3>
+          {motherTongue !== 'en' && autoTr(ex.q) !== ex.q && <p style={{ fontSize: 12, color: T.n400, marginTop: -4, marginBottom: 6 }}>{ex.q}</p>}
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 14 }}>
             <div style={{ flex: 1, padding: '10px 14px', background: T.n50, borderRadius: 12, border: `1.5px solid ${T.n100}` }}>
-              <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400, fontStyle: 'italic' }}>{ex.tr}</p>
+              <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400, fontStyle: 'italic' }}>{autoTr(ex.tr)}</p>
             </div>
             <SpeakBtn word={ex.hint || ''} lc={dest && dest.lc} />
           </div>
@@ -1676,8 +1721,9 @@ export default function LanguagesPage() {
       body = (
         <>
           <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>{uiStr('fillBlank')}</div>
-          <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 6 }}>{ex.q}</h3>
-          <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400, fontStyle: 'italic', marginBottom: 16 }}>{ex.tr}</p>
+          <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 6 }}>{autoTr(ex.q)}</h3>
+          {motherTongue !== 'en' && autoTr(ex.q) !== ex.q && <p style={{ fontSize: 12, color: T.n400, marginTop: -2, marginBottom: 6 }}>{ex.q}</p>}
+          <p style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400, fontStyle: 'italic', marginBottom: 16 }}>{autoTr(ex.tr)}</p>
           <div style={{ padding: 14, background: T.n50, borderRadius: 12, border: `1.5px solid ${T.n100}`, marginBottom: 20, fontSize: 17, fontWeight: 700, color: T.n700, lineHeight: 1.6 }}>
             {dSent[0]}<span style={{ background: T.teal, color: '#fff', padding: '2px 10px', borderRadius: 8, fontWeight: 700 }}>{chk ? ex.ans : '___'}</span>{dSent[1]}
           </div>
@@ -1695,7 +1741,8 @@ export default function LanguagesPage() {
       body = (
         <>
           <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>{uiStr('matchPairs')}</div>
-          <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 18 }}>{ex.q}</h3>
+          <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 18 }}>{autoTr(ex.q)}</h3>
+          {motherTongue !== 'en' && autoTr(ex.q) !== ex.q && <p style={{ fontSize: 12, color: T.n400, marginTop: -12, marginBottom: 12 }}>{ex.q}</p>}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
             {pairs.map((pair, i) => {
               const lMatched = matchDone.indexOf(i) !== -1;
@@ -1765,11 +1812,12 @@ export default function LanguagesPage() {
       body = (
         <>
           <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: T.teal, marginBottom: 10 }}>{uiStr('speakWord')}</div>
-          <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 18 }}>{ex.q}</h3>
+          <h3 style={{ fontSize: 20, fontWeight: 700, lineHeight: 1.25, color: T.n700, marginBottom: 18 }}>{autoTr(ex.q)}</h3>
+          {motherTongue !== 'en' && autoTr(ex.q) !== ex.q && <p style={{ fontSize: 12, color: T.n400, marginTop: -12, marginBottom: 12 }}>{ex.q}</p>}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, marginBottom: 22 }}>
             {ex.emoji && <div style={{ fontSize: 50, lineHeight: 1 }}>{ex.emoji}</div>}
             <div style={{ padding: '16px 36px', background: T.n50, border: `2px solid ${T.n200}`, borderRadius: 16, fontSize: 28, fontWeight: 700, color: T.n700 }}>{ex.speak_word}</div>
-            <p style={{ fontSize: 14, color: T.n400 }}>{ex.tr}</p>
+            <p style={{ fontSize: 14, color: T.n400 }}>{autoTr(ex.tr)}</p>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
               <SpeakBtn word={ex.speak_word} lc={dest && dest.lc} />
               <span style={{ fontSize: 12, color: T.n400 }}>{uiStr('listenFirst')}</span>
@@ -1894,11 +1942,13 @@ export default function LanguagesPage() {
         <div style={{ padding: '11px 16px', borderBottom: `1.5px solid ${T.n100}` }}><Chip type="purple">Grammar spotlight</Chip></div>
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '28px 24px', textAlign: 'center' }}>
           <div style={{ fontSize: 48, marginBottom: 16 }}>{'\u{1F4D6}'}</div>
-          <h2 style={{ fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: T.n700, marginBottom: 16 }}>{g.point}</h2>
+          <h2 style={{ fontSize: 24, fontWeight: 800, lineHeight: 1.2, color: T.n700, marginBottom: 16 }}>{autoTr(g.point)}</h2>
+          {motherTongue !== 'en' && autoTr(g.point) !== g.point && <p style={{ fontSize: 12, color: T.n400, marginTop: -10, marginBottom: 10 }}>{g.point}</p>}
           <div style={{ background: T.purpleL, border: '1.5px solid #C4B5FD', borderRadius: 16, padding: 16, width: '100%', marginBottom: 14 }}>
             <p style={{ fontSize: 16, fontWeight: 700, color: T.purple, fontFamily: T.fs }}>{g.example}</p>
+            {motherTongue !== 'en' && autoTr(g.example) !== g.example && <p style={{ fontSize: 13, color: T.n400, marginTop: 6 }}>{autoTr(g.example)}</p>}
           </div>
-          <p style={{ fontSize: 15, fontWeight: 400, lineHeight: 1.6, color: T.n500 }}>{g.note}</p>
+          <p style={{ fontSize: 15, fontWeight: 400, lineHeight: 1.6, color: T.n500 }}>{autoTr(g.note)}</p>
         </div>
         <div style={{ padding: '16px 20px', borderTop: `1.5px solid ${T.n100}` }}>
           <button onClick={dismissGram} style={sBtnPrimary}>{uiStr('gotIt')} — {uiStr('continueBtn')}</button>
@@ -1915,7 +1965,8 @@ export default function LanguagesPage() {
         <div style={{ padding: '11px 16px', borderBottom: `1.5px solid ${T.n100}` }}><Chip type="amber">Cultural insight</Chip></div>
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '28px 24px', textAlign: 'center' }}>
           <div style={{ fontSize: 60, marginBottom: 20 }}>{c.icon}</div>
-          <p style={{ fontSize: 19, fontFamily: T.fs, color: T.n700, lineHeight: 1.65, maxWidth: 290 }}>{c.tip}</p>
+          <p style={{ fontSize: 19, fontFamily: T.fs, color: T.n700, lineHeight: 1.65, maxWidth: 290 }}>{autoTr(c.tip)}</p>
+          {motherTongue !== 'en' && autoTr(c.tip) !== c.tip && <p style={{ fontSize: 13, color: T.n400, lineHeight: 1.5, maxWidth: 290, marginTop: 8 }}>{c.tip}</p>}
           {dest && <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginTop: 14 }}>Local knowledge for {dest.name}</div>}
         </div>
         <div style={{ padding: '16px 20px', borderTop: `1.5px solid ${T.n100}` }}>
@@ -2279,7 +2330,7 @@ RULES:
                 <div style={{ fontSize: 16 }}>{dest.flag}</div>
                 <div style={{ flex: 1 }}>
                   <div style={{ fontSize: 15, fontWeight: 700, color: T.n700, fontFamily: T.fs }}>{ph.p}</div>
-                  <div style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>{ph.t}{motherTongue !== 'en' ? (' \u00b7 ' + mtTrans(ph.t)) : ''}</div>
+                  <div style={{ fontSize: 13, fontWeight: 400, lineHeight: 1.5, color: T.n400 }}>{autoTr(ph.t)}{motherTongue !== 'en' && autoTr(ph.t) === ph.t ? (' \u00b7 ' + mtTrans(ph.t)) : ''}</div>
                   <div style={{ fontSize: 11, fontWeight: 600, lineHeight: 1.4, color: T.n400, letterSpacing: '.04em', marginTop: 3 }}>Next review: {nr}{ph.reps ? ' · ' + ph.reps + ' reps' : ' · new'}</div>
                 </div>
                 <SpeakBtn word={ph.p} lc={dest.lc} />
