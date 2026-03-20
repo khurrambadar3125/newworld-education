@@ -71,7 +71,7 @@ function sndOk(){tone(523,'sine',0.22,0.32);tone(659,'sine',0.22,0.32,0.16)}
 function sndWin(){tone(523,'sine',0.25,0.5);tone(659,'sine',0.25,0.45,0.15);tone(784,'sine',0.25,0.45,0.3)}
 
 function buildPrompt(stage, topic) {
-  // Use the comprehensive RCA-based knowledge base, age-gated
+  // Use the comprehensive arts knowledge base, age-gated
   return getArtsPrompt(stage.id, topic);
 }
 
