@@ -68,7 +68,7 @@ public/              # Static assets (favicon.svg, og-image.png, robots.txt, sit
 ### Special Needs
 | Path | File | Description |
 |------|------|-------------|
-| `/special-needs` | `special-needs.jsx` | Condition x Age matrix — 7 conditions x 4 stages x 5 focuses = 140 teaching profiles (autism, ADHD, dyslexia, Down syndrome, CP, visual/hearing impairment) |
+| `/special-needs` | `special-needs.jsx` | Condition x Age matrix — 12 conditions x 4 stages x 5 focuses = 240 teaching profiles (autism, ADHD, dyslexia, dyscalculia, dyspraxia/DCD, dysgraphia, sensory processing, Down syndrome, CP, visual/hearing impairment, unsure/undiagnosed) |
 | `/arts-for-all` | `arts-for-all.jsx` | Adaptive AI art studio for SEN children |
 | `/music-for-all` | `music-for-all.jsx` | Music therapy for SEN |
 | `/reading-for-all` | `reading-for-all.jsx` | Reading support for SEN |
@@ -116,8 +116,8 @@ public/              # Static assets (favicon.svg, og-image.png, robots.txt, sit
 ## API Routes
 
 ### Core
-- `POST /api/anthropic` — Main Starky chat endpoint. Streaming responses, rate limiting (10 msg/min/user), CORS protection, prompt caching
-- `POST /api/chat` — Alternative chat endpoint (TypeScript)
+- `POST /api/anthropic` — Main Starky chat endpoint. Streaming responses, rate limiting (10 msg/min/user), CORS protection, prompt caching, content protection (excluded authors, abuse/jailbreak detection → session end + Supabase logging), topic knowledge injection, academic excellence triggers, book knowledge, reading list recommendations
+- `POST /api/chat` — Alternative chat endpoint (TypeScript). Used by /reading, /special-needs, /arts, /music pages. Server-side content protection (excluded authors, abuse detection)
 - `POST /api/drill` — Drill question generation and marking
 - `POST /api/essay` — Essay marking with band descriptors
 
@@ -174,9 +174,15 @@ public/              # Static assets (favicon.svg, og-image.png, robots.txt, sit
 
 - **`utils/db.js`** — All Vercel KV operations: subscribers, questions, streaks, student memory
 - **`utils/supabase.js`** — Supabase client (server-side only)
-- **`utils/starkyPrompt.js`** — Starky's complete prompt engineering: persona lock, context injection, intent routing, escalation logic, response shaping by age group
+- **`utils/starkyPrompt.js`** — Starky's complete prompt engineering: PERSONA_LOCK (identity + content protection + teaching philosophy), grade-level builders (Kid/Middle/OLevel/ALevel), SEN condition-specific notes, intent routing, escalation logic, response shaping by age group, academic excellence injection per subject, SEN detection for parent messages
 - **`utils/starkyIntents.js`** — Intent detection system for routing Starky responses
-- **`utils/senKnowledge.js`** — Special educational needs knowledge base
+- **`utils/senKnowledge.js`** — SEN knowledge base (11 conditions): autism, ADHD, dyslexia, dyscalculia, dyspraxia, dysgraphia, sensory processing, Down syndrome, CP, VI, HI. Five Pillars framework, executive function, Pakistan-specific SEN context, parent messaging. Evidence-based: DSM-5-TR, Orton-Gillingham, TEACCH, Barkley, Kilpatrick. Also exports `detectSENContext()` for message-level clinical keyword detection
+- **`utils/academicExcellence.js`** — Academic Excellence Knowledge Base (three-tier): Tier 1 TEACHING_PHILOSOPHY (4 pillars, always in PERSONA_LOCK), Tier 2 SUBJECT_EXCELLENCE (per-subject depth for English/Maths/Sciences/History/PakStudies/Economics/Islamiat/Urdu/CS, grade-gated), Tier 3 SITUATIONAL (bored student/why need this/university prep/exam depth triggers). Also reading lists per subject
+- **`utils/readingKnowledge.js`** — Reading knowledge base: grade-gated book knowledge (Dahl complete, Blyton complete, Shakespeare complete 37 plays + 154 sonnets, classic novels, Oxford/Cambridge reading lists by subject, Islamic/South Asian literature — Iqbal, Faiz, Ghalib, Rumi, Manto, Hamid, Shamsie). Also `getBookKnowledge()` for main chat author/book hints
+- **`utils/contentProtection.js`** — Platform-wide content protection (non-negotiable): Islamic respect absolute, excluded authors (immediate session end), abuse/jailbreak detection → session termination + Supabase flagging, cultural respect, Ramadan/Eid awareness. CONTENT_PROTECTION prompt constant injected into every system prompt across all pages
+- **`utils/artsKnowledge.js`** — Arts knowledge base: age-gated, content-safe, SEN-adapted. Drawing, painting, printmaking, art history, Chinese brush/ink
+- **`utils/getKnowledgeForTopic.js`** — Topic-specific knowledge retrieval from globalKnowledgeBase (misconceptions, examiner tips, keywords, mistakes)
+- **`utils/globalKnowledgeBase.js`** — Cambridge O/A Level topic-level knowledge base (Biology, Chemistry, Physics, History, Economics, etc.)
 - **`utils/useSessionLimit.js`** — Client-side session limit enforcement (25/day for paid, 3/day free trial)
 - **`utils/useSessionMemory.js`** — Tracks weak topics and mistakes per student across sessions
 - **`utils/useSpacedRep.js`** — Spaced repetition hook for drill questions
@@ -186,18 +192,20 @@ public/              # Static assets (favicon.svg, og-image.png, robots.txt, sit
 - **`utils/signalCollector.js`** — Collects learning signals (sentiment, drop-off, mood)
 - **`utils/patternEngine.js`** — Pattern analysis for learning data
 - **`utils/autoImprover.js`** — Auto-improvement system for platform evolution
-- **`utils/globalKnowledgeBase.js`** — Global knowledge base for Starky
 - **`utils/systemPrompts.js`** — System prompts for various AI features
 
 ## Design Patterns
 
-- **User identity**: Stored in `localStorage` as `nw_user` (name, email, grade, subject). Bridged with Google OAuth via `AuthBridge` in `_app.jsx`
+- **User identity**: Stored in `localStorage` as `nw_user` (name, email, grade, subject, senFlag, senType). Bridged with Google OAuth via `AuthBridge` in `_app.jsx`. SEN flag propagated from parent portal (`nw_active_child.senCondition`) through `demo.jsx` bridge and from `/special-needs` page after first chat
 - **Theme system**: Dark (default), Light, Cream (dyslexia-optimized). CSS variables in `_app.jsx`
 - **Accessibility**: Dyslexic font mode (`data-font="dyslexic"`), AAC large button mode (`data-access="aac"`)
 - **Session limits**: Free users get 3 sessions/day, paid get 25. Enforced client-side via `useSessionLimit`
 - **Streaming**: AI responses stream via SSE from `/api/anthropic`
 - **Offline handling**: `OfflineBanner` component detects connectivity loss
 - **Pakistan timezone**: All date logic uses UTC+5 (PKT)
+- **SEN pipeline**: Parent portal sets `senCondition` per child → `demo.jsx` bridges to `nw_user.senFlag`/`senType` → `starkyPrompt.js` injects full SEN knowledge base + condition-specific teaching protocol → `session-complete` logs `isSEN`/`senType` to Supabase. Message-level detection via `detectSENContext()` activates for parents mentioning clinical terms; regular students get redirect to `/special-needs`
+- **Content protection**: `CONTENT_PROTECTION` constant from `contentProtection.js` injected into PERSONA_LOCK (main chat), reading.jsx, reading-for-all.jsx. Server-side pre-checks in `/api/anthropic` and `/api/chat` catch excluded authors + abuse before AI processes the message. Violations logged to Supabase `content_violations` table
+- **Knowledge architecture**: Three-tier academic excellence (philosophy always present, subject depth on-demand, situational triggers). Reading knowledge grade-gated. SEN knowledge condition-specific. Topic knowledge from globalKnowledgeBase via keyword matching. All injected into system prompt at appropriate layers
 
 ## Commands
 
