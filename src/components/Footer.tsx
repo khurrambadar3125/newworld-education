@@ -113,7 +113,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 mt-0.5 text-brand-400 flex-shrink-0" />
                 <span className="text-sm text-surface-400">
-                  hello@newworldeducation.com
+                  khurram@newworld.education
                 </span>
               </li>
               <li className="flex items-start gap-3">

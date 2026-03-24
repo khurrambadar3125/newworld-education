@@ -1021,7 +1021,7 @@ export default function Home() {
           <a href="/privacy" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Privacy Policy</a>
           <a href="/terms" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Terms of Service</a>
         </div>
-        <div className="fc2">© 2026 NewWorldEdu · hello@newworld.education</div>
+        <div className="fc2">© 2026 NewWorldEdu · khurram@newworld.education</div>
       </footer>
     </>
   );
