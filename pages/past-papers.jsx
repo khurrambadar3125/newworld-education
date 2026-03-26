@@ -650,9 +650,9 @@ export default function PastPapersPage() {
     if (isNewPdfUpload) clearPdf();
 
     try {
-      // Use Sonnet for PDF uploads (better document understanding), Haiku for text-only
+      // All user-facing calls use Haiku for cost control
       const hasPdf = apiMessages.some(m => Array.isArray(m.content) && m.content.some(c => c.type === "document"));
-      const model = hasPdf ? "claude-sonnet-4-20250514" : "claude-haiku-4-5-20251001";
+      const model = "claude-haiku-4-5-20251001";
       const tokens = hasPdf ? 4096 : 1500;
 
       const res  = await fetch("/api/chat",{
