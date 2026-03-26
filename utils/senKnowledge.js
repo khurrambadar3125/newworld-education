@@ -949,6 +949,69 @@ portable sensory room concept, Focus Mode, screen proximity understanding,
 Gentle Start Protocol. These students experience sensory overwhelm identically.
 Absence of ASD diagnosis does not change the neurological reality.
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEN PHONICS — TEACHING READING TO EVERY CHILD
+Sources: Orton-Gillingham (1935-present), IDA Structured Literacy (2018),
+Kilpatrick (2015/2016), Buckley & Bird DS Reading (1993-2009),
+Lemons DS Structured Literacy (2010-2023), ALL Curriculum (2016),
+National Reading Panel (2000), Frontiers in Education adapted phonics (2023)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Every child with a learning difference CAN learn to read. Not every child
+will learn the same way or at the same pace. But every child can make progress.
+Phonics is not optional for SEN — it is the most important gift a struggling reader receives.
+
+UNIVERSAL SEN PHONICS PRINCIPLES:
+1. EXPLICIT — never assume they'll work it out by exposure. Every rule stated directly.
+2. SYSTEMATIC — always in sequence. No skipping.
+3. CUMULATIVE — every lesson reviews everything previously taught.
+4. MULTISENSORY — see the letter, hear the sound, do something physical. Always.
+5. DIAGNOSTIC — know where this child is before teaching.
+6. ZERO SHAME — reading difficulties are neurological, never the child's fault.
+7. ONE SOUND AT A TIME — mastery of one > exposure to ten.
+8. DECODABLE TEXT ONLY — only sounds already taught. No guessing.
+
+DYSLEXIA PHONICS (the most important adaptation — dyslexia IS a phonics issue):
+Orton-Gillingham multisensory method. Significantly more repetition per sound-symbol.
+Slower pace. Explicit WHY behind every rule. Frequent cumulative review.
+Keyword-Picture system: /s/=snake, /a/=apple, /t/=tiger — same keyword every time.
+Speed drills for automaticity. b/d confusion: "Make a bed with your hands — left=b, right=d."
+NEVER: time pressure on reading aloud, unstructured text alone, move on before automaticity.
+
+ADHD PHONICS: 5-minute bursts maximum. Immediate reinforcement every correct response.
+Challenge frame: "How many sounds in 60 seconds? Beat your last score!"
+Physical phonics: tap table per sound, clap syllables, segmenting body spell (touch fingers).
+ADHD+dyslexia (40% co-occurrence): apply BOTH modifications.
+
+AUTISM PHONICS: Visual-first always (75-85% visual learners). Predictable session structure —
+EXACT same format every time. Social story explaining WHY we learn phonics.
+AAC compatible: typed/pointed responses build phonics knowledge equally.
+Hyperlexia (decoding strong, meaning absent): focus on comprehension after decoding.
+
+DOWN SYNDROME PHONICS (combined approach):
+Stage 1: SIGHT WORDS FIRST — personal words (name, family, favourites).
+Match-Select-Name method (Buckley). Build 30-50 sight words before letter sounds.
+Stage 2: PHONICS emerges from within known sight words — first-letter awareness.
+Then gradual systematic phonics, significantly slower, always in meaningful words.
+Hearing: 40-75% have mild-moderate hearing loss — never rely solely on auditory.
+Failure sensitivity: calibrate so success is virtually guaranteed on first attempt.
+
+DYSPRAXIA PHONICS: Typed responses always — handwriting exhausts all cognitive capacity.
+Verbal phonics: "Tell me the sounds" — no writing required. Sequence made explicit:
+"Step 1: first sound. Step 2: middle. Step 3: last. Step 4: push together."
+
+DYSGRAPHIA PHONICS: Decoding (reading) and encoding (spelling) as separate tracks.
+Build reading phonics completely before expecting spelling. All encoding: typed, not written.
+
+SENSORY PROCESSING PHONICS: Close Focus Mode active. One letter at a time — never a full page.
+Calm static background. Student controls every transition: "Ready for the next sound? Tell me when."
+
+PARENT GUIDANCE: Dyslexia parents — read TO your child daily, practise 3-5 known sounds for
+5 min, never ask to read aloud from unpractised text. DS parents — start with meaningful sight
+words, Match-Select-Name, build 30-50 before phonics, be patient with repetition.
+ADHD parents — 5 min 4x/week beats 20 min once. Autism parents — visual supports essential,
+typed/pointed responses valid, hyperlexic children need meaning focus.
+
 ════════════════════════════════════════════════════════════════════
 END OF STARKY SEN KNOWLEDGE BASE
 ════════════════════════════════════════════════════════════════════
