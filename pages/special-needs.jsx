@@ -2383,7 +2383,7 @@ function SENDrillWidget({ condition, stage, subject, xpData, setXpData }) {
               🔥 {drillStreak} streak
             </div>
           )}
-          <div style={{fontSize:12,color:"rgba(255,255,255,0.35)"}}>Question {questionCount}</div>
+          <div style={{fontSize:12,color:"rgba(255,255,255,0.65)"}}>Question {questionCount}</div>
         </div>
       </div>
 
@@ -2477,7 +2477,7 @@ function SENDrillWidget({ condition, stage, subject, xpData, setXpData }) {
               </p>
               {feedback.modelAnswer && (
                 <div style={{background:"rgba(255,255,255,0.05)",borderRadius:10,padding:"12px 14px",marginTop:10}}>
-                  <div style={{fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.4)",letterSpacing:"0.06em",marginBottom:6}}>THE ANSWER WAS</div>
+                  <div style={{fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.65)",letterSpacing:"0.06em",marginBottom:6}}>THE ANSWER WAS</div>
                   <div style={{fontSize:14,color:"rgba(255,255,255,0.75)",lineHeight:1.7,fontFamily:"'Nunito',sans-serif"}}>{feedback.modelAnswer}</div>
                 </div>
               )}
@@ -2505,7 +2505,7 @@ function SENDrillWidget({ condition, stage, subject, xpData, setXpData }) {
           )}
 
           <button aria-label="Take a break" role="button" onClick={() => { sndTick(); setActive(false); setQuestion(null); setFeedback(null); setQuestionCount(0); setDrillStreak(0); }}
-            style={{width:"100%",background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.08)",borderRadius:12,padding:"14px",color:"rgba(255,255,255,0.4)",fontSize:14,fontFamily:"'Nunito',sans-serif",cursor:"pointer",marginTop:8,minHeight:52}}>
+            style={{width:"100%",background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.08)",borderRadius:12,padding:"14px",color:"rgba(255,255,255,0.65)",fontSize:14,fontFamily:"'Nunito',sans-serif",cursor:"pointer",marginTop:8,minHeight:52}}>
             Take a break 💜
           </button>
         </>
@@ -2834,7 +2834,7 @@ function SENQuickExercises({ condition, stage, xpData, setXpData, isUAE }) {
     <div style={{ marginTop:16 }}>
       {!activeExType ? (
         <>
-          <div style={{ fontSize:12, fontWeight:900, color:"rgba(255,255,255,0.3)", letterSpacing:2, textAlign:"center", marginBottom:12, marginTop:8 }}>QUICK EXERCISES</div>
+          <div style={{ fontSize:12, fontWeight:900, color:"rgba(255,255,255,0.6)", letterSpacing:2, textAlign:"center", marginBottom:12, marginTop:8 }}>QUICK EXERCISES</div>
           <div style={{ display:"grid", gridTemplateColumns:"repeat(2,1fr)", gap:10 }}>
             {[
               { id:"match", emoji:"🔗", name:"Match Pairs", color:"#A78BFA", desc:"Tap to match terms" },
@@ -2960,8 +2960,11 @@ export default function SpecialNeedsPage() {
       *{animation:none !important;transition:none !important}
     }
     .sen-focus-mode *{animation:none !important;transition:none !important}
-    .sen-focus-mode{background:#0A0F1E !important;font-size:20px !important;line-height:1.8 !important}
-    @media (prefers-color-scheme: light){.sen-focus-mode{background:#FFFFFF !important;color:#1a1a1a !important}}
+    .sen-focus-mode{background:#0A0F1E !important;font-size:20px !important;line-height:1.8 !important;color:#fff !important}
+    .sen-focus-mode *{color:inherit}
+    .sen-focus-mode button,.sen-focus-mode a{color:inherit}
+    @media (prefers-color-scheme: light){.sen-focus-mode{background:#FFFFFF !important;color:#1a1a1a !important}
+      .sen-focus-mode *{color:inherit}}
     /* Responsive grids for SEN cards */
     .sen-grid-cards{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
     @media(max-width:400px){.sen-grid-cards{grid-template-columns:1fr}}
@@ -3239,7 +3242,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                 }} style={{ ...S.btn, background:"linear-gradient(135deg,rgba(168,224,99,0.12),rgba(99,210,255,0.08))", border:"1px solid rgba(168,224,99,0.25)", borderRadius:18, padding:"16px 28px", color:"#A8E063", fontSize:15, fontWeight:800 }}>
                   💜 Safe Space — Just Talk to Starky
                 </button>
-                <label style={{ display:"flex", alignItems:"center", gap:8, fontSize:11, color:"rgba(255,255,255,0.3)", cursor:"pointer" }}>
+                <label style={{ display:"flex", alignItems:"center", gap:8, fontSize:11, color:"rgba(255,255,255,0.6)", cursor:"pointer" }}>
                   <input type="checkbox" checked={(() => { try { return localStorage.getItem('nw_sen_safestart') === 'true'; } catch { return false; } })()}
                     onChange={e => { try { localStorage.setItem('nw_sen_safestart', e.target.checked ? 'true' : 'false'); } catch {} }}
                     style={{ accentColor:"#A8E063" }} />
@@ -3290,7 +3293,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                         <span style={{ fontSize:18, flexShrink:0 }}>{item.icon}</span>
                         <div>
                           <div style={{ fontSize:12, fontWeight:800, color:"rgba(255,255,255,0.85)", marginBottom:2 }}>{item.en}</div>
-                          <div style={{ fontSize:11, color:"rgba(255,255,255,0.4)", lineHeight:1.6 }}>{item.desc}</div>
+                          <div style={{ fontSize:11, color:"rgba(255,255,255,0.65)", lineHeight:1.6 }}>{item.desc}</div>
                         </div>
                       </div>
                     </div>
@@ -3313,7 +3316,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                         <div>
                           <div style={{ fontSize:12, fontWeight:800, color:"rgba(255,255,255,0.85)", marginBottom:2 }}>{item.en}</div>
                           <div style={{ fontSize:11, fontWeight:700, color:"#A78BFA", marginBottom:4, direction:"rtl", textAlign:"right" }}>{item.ur}</div>
-                          <div style={{ fontSize:11, color:"rgba(255,255,255,0.4)", lineHeight:1.6 }}>{item.desc}</div>
+                          <div style={{ fontSize:11, color:"rgba(255,255,255,0.65)", lineHeight:1.6 }}>{item.desc}</div>
                         </div>
                       </div>
                     </div>
@@ -3322,7 +3325,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
               </div>
             )}
 
-            <div style={{ fontSize:12, fontWeight:900, color:"rgba(255,255,255,0.3)", letterSpacing:2, textAlign:"center", marginBottom:16 }}>STEP 1 — SELECT CONDITION</div>
+            <div style={{ fontSize:12, fontWeight:900, color:"rgba(255,255,255,0.6)", letterSpacing:2, textAlign:"center", marginBottom:16 }}>STEP 1 — SELECT CONDITION</div>
 
             <div className="sen-grid-cards" style={{ marginBottom:16 }}>
               {CONDITIONS.map(c => (
@@ -3334,14 +3337,14 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                   <div style={{ fontWeight:900, fontSize:13, color:c.color, lineHeight:1.3 }}>{c.name}</div>
                   <div style={{ fontSize:10, color:c.color+"88", marginTop:3, direction:"rtl" }}>{c.urdu}</div>
                   {progress[`${c.id}_early`] || progress[`${c.id}_primary`] || progress[`${c.id}_secondary`] || progress[`${c.id}_sixthform`] ? (
-                    <div style={{ fontSize:10, color:"rgba(255,255,255,0.3)", marginTop:4 }}>Previously used</div>
+                    <div style={{ fontSize:10, color:"rgba(255,255,255,0.6)", marginTop:4 }}>Previously used</div>
                   ) : null}
                 </button>
               ))}
             </div>
 
             <div style={{ background:"rgba(255,255,255,0.03)", border:"1px solid rgba(255,255,255,0.07)", borderRadius:16, padding:"16px 20px", textAlign:"center" }}>
-              <div style={{ fontSize:12, color:"rgba(255,255,255,0.4)", lineHeight:1.8 }}>
+              <div style={{ fontSize:12, color:"rgba(255,255,255,0.65)", lineHeight:1.8 }}>
                 Don't see your child's condition? Choose <strong style={{color:"#A78BFA"}}>Not Sure / Undiagnosed</strong> — Starky will adapt to what you describe.<br/>
                 <span style={{fontSize:11, direction:"rtl", display:"inline-block", marginTop:4}}>تشخیص نہ ہو تو بھی کوئی بات نہیں — Starky آپ کے بچے کی مدد کرے گا۔</span>
               </div>
@@ -3365,7 +3368,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
             <StepBar/>
             <SummaryBar/>
 
-            <div style={{ fontSize:12, fontWeight:900, color:"rgba(255,255,255,0.3)", letterSpacing:2, textAlign:"center", marginBottom:16 }}>STEP 2 — SELECT AGE & STAGE</div>
+            <div style={{ fontSize:12, fontWeight:900, color:"rgba(255,255,255,0.6)", letterSpacing:2, textAlign:"center", marginBottom:16 }}>STEP 2 — SELECT AGE & STAGE</div>
 
             <div style={{ display:"grid", gridTemplateColumns:isMobile?"1fr":"repeat(2,1fr)", gap:14 }}>
               {STAGES.map(s => (
@@ -3378,7 +3381,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                     <div>
                       <div style={{ fontWeight:900, fontSize:17, color:s.color }}>{s.name}</div>
                       <div style={{ fontSize:12, fontWeight:700, color:s.color+"AA" }}>{s.ages}</div>
-                      <div style={{ fontSize:11, color:"rgba(255,255,255,0.35)" }}>{s.grades}</div>
+                      <div style={{ fontSize:11, color:"rgba(255,255,255,0.65)" }}>{s.grades}</div>
                     </div>
                   </div>
                   <div style={{ fontSize:12, color:"rgba(255,255,255,0.5)", lineHeight:1.7, marginBottom:10 }}>{s.desc}</div>
@@ -3386,7 +3389,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                     {s.subjects.slice(0,4).map(sub => (
                       <span key={sub} style={{ background:s.color+"12", border:"1px solid "+s.color+"25", borderRadius:20, padding:"2px 8px", fontSize:10, fontWeight:700, color:s.color+"CC" }}>{sub}</span>
                     ))}
-                    <span style={{ background:"rgba(255,255,255,0.05)", borderRadius:20, padding:"2px 8px", fontSize:10, color:"rgba(255,255,255,0.3)" }}>+{s.subjects.length-4} more</span>
+                    <span style={{ background:"rgba(255,255,255,0.05)", borderRadius:20, padding:"2px 8px", fontSize:10, color:"rgba(255,255,255,0.6)" }}>+{s.subjects.length-4} more</span>
                   </div>
                 </button>
               ))}
@@ -3410,7 +3413,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
             <StepBar/>
             <SummaryBar/>
 
-            <div style={{ fontSize:12, fontWeight:900, color:"rgba(255,255,255,0.3)", letterSpacing:2, textAlign:"center", marginBottom:16 }}>STEP 3 — SELECT LEARNING FOCUS</div>
+            <div style={{ fontSize:12, fontWeight:900, color:"rgba(255,255,255,0.6)", letterSpacing:2, textAlign:"center", marginBottom:16 }}>STEP 3 — SELECT LEARNING FOCUS</div>
 
             <div style={{ display:"grid", gridTemplateColumns:isMobile?"1fr":"repeat(3,1fr)", gap:12, marginBottom:20 }}>
               {FOCUSES.map(f => (
@@ -3420,7 +3423,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                   onMouseLeave={e => { if(focus?.id!==f.id){e.currentTarget.style.background="rgba(255,255,255,0.04)";e.currentTarget.style.borderColor="rgba(255,255,255,0.08)";} }}>
                   <div style={{ fontSize:28, marginBottom:8 }}>{f.emoji}</div>
                   <div style={{ fontWeight:900, fontSize:14, color: focus?.id===f.id ? accentColor : "rgba(255,255,255,0.85)", marginBottom:4 }}>{f.name}</div>
-                  <div style={{ fontSize:11, color:"rgba(255,255,255,0.4)", lineHeight:1.6 }}>{f.desc}</div>
+                  <div style={{ fontSize:11, color:"rgba(255,255,255,0.65)", lineHeight:1.6 }}>{f.desc}</div>
                 </button>
               ))}
             </div>
@@ -3458,16 +3461,16 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
             {!focusMode && (
             <div style={{ marginBottom:14 }}>
               <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:4 }}>
-                <span style={{ fontSize:11, fontWeight:800, color:"rgba(255,255,255,0.4)" }}>Session Progress</span>
+                <span style={{ fontSize:11, fontWeight:800, color:"rgba(255,255,255,0.65)" }}>Session Progress</span>
                 <span style={{ fontSize:11, fontWeight:800, color:"#A8E063" }}>{xpData.xp} / {Math.ceil((xpData.xp + 1) / 500) * 500} XP</span>
               </div>
               <div style={{ height:8, background:"rgba(255,255,255,0.06)", borderRadius:100, overflow:"hidden" }}>
                 <div style={{ height:"100%", borderRadius:100, background:"linear-gradient(90deg,#A8E063,#63D2FF)", width: Math.min(100, (xpData.xp % 500) / 500 * 100) + "%", transition:"width 0.5s ease" }} />
               </div>
               <div style={{ display:"flex", gap:12, marginTop:6 }}>
-                <span style={{ fontSize:10, color:"rgba(255,255,255,0.3)" }}>Sessions: {xpData.sessions}</span>
+                <span style={{ fontSize:10, color:"rgba(255,255,255,0.6)" }}>Sessions: {xpData.sessions}</span>
                 {xpData.streak > 0 && <span style={{ fontSize:10, color:"#FFC300" }}>🔥 {xpData.streak} day streak</span>}
-                {chatMsgCount > 0 && <span style={{ fontSize:10, color:"rgba(255,255,255,0.3)" }}>Messages: {chatMsgCount}</span>}
+                {chatMsgCount > 0 && <span style={{ fontSize:10, color:"rgba(255,255,255,0.6)" }}>Messages: {chatMsgCount}</span>}
               </div>
             </div>
             )}
@@ -3481,17 +3484,17 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                   {condition?.name} · {stage?.name} · {stage?.ages}
                   {urduMode && <span style={{ fontSize:11, background:"rgba(79,142,247,0.2)", border:"1px solid rgba(79,142,247,0.4)", borderRadius:6, padding:"1px 8px", marginLeft:8, color:"#4F8EF7" }}>اردو</span>}
                 </div>
-                <div style={{ fontSize:12, color:"rgba(255,255,255,0.4)" }}>
+                <div style={{ fontSize:12, color:"rgba(255,255,255,0.65)" }}>
                   {focus?.emoji} {focus?.name}{subject ? " — "+subject : ""} · {stage?.grades}
                 </div>
               </div>
               <button onClick={() => setStep(3)}
-                style={{ ...S.btn, background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:10, padding:"6px 12px", color:"rgba(255,255,255,0.45)", fontSize:11, fontWeight:700 }}>
+                style={{ ...S.btn, background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:10, padding:"6px 12px", color:"rgba(255,255,255,0.7)", fontSize:11, fontWeight:700 }}>
                 Change Focus
               </button>
             </div>
             ) : (
-            <div style={{ padding:"8px 0", marginBottom:8, fontSize:13, color:"rgba(255,255,255,0.3)", fontWeight:600 }}>
+            <div style={{ padding:"8px 0", marginBottom:8, fontSize:13, color:"rgba(255,255,255,0.6)", fontWeight:600 }}>
               {condition?.name} · {stage?.name}{subject ? " — "+subject : ""}
             </div>
             )}
@@ -3528,7 +3531,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                     <div style={{ display:"flex", gap:5 }}>
                       {[0,0.2,0.4].map((d,j) => <div key={j} style={{ width:9, height:9, borderRadius:"50%", background:accentColor, animation:`bounce 1s ${d}s ease-in-out infinite`, opacity:0.8 }}/>)}
                     </div>
-                    <span style={{ fontSize:12, color:"rgba(255,255,255,0.3)", fontStyle:"italic" }}>Starky is thinking...</span>
+                    <span style={{ fontSize:12, color:"rgba(255,255,255,0.6)", fontStyle:"italic" }}>Starky is thinking...</span>
                   </div>
                 )}
                 <div ref={chatEndRef}/>
@@ -3558,7 +3561,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                   rows={isMobile?2:4}
                   style={{ width:"100%", background:"rgba(255,255,255,0.04)", border:"1px solid "+accentColor+"22", borderRadius:14, padding:"12px 14px", color:"#fff", fontSize:16, fontFamily:"'Nunito',sans-serif", resize:isMobile?"none":"vertical", lineHeight:1.7 }}/>
                 <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginTop:8 }}>
-                  <span style={{ fontSize:11, color:"rgba(255,255,255,0.2)" }}>
+                  <span style={{ fontSize:11, color:"rgba(255,255,255,0.55)" }}>
                     {isMobile ? 'Unlimited sessions · Enter to send' : 'Unlimited sessions for SEN students · Ctrl+Enter to send'}
                   </span>
                   <button aria-label="Send message" role="button" onClick={()=>sendMessage(input)} disabled={!input.trim()||loading||limitReached}
@@ -3611,9 +3614,9 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
         {step < 4 && (
           <div style={{ marginTop:48, paddingTop:36, borderTop:"1px solid rgba(255,255,255,0.06)" }}>
             <div style={{ textAlign:"center", marginBottom:20 }}>
-              <div style={{ fontSize:11, fontWeight:900, color:"rgba(255,255,255,0.3)", letterSpacing:2, marginBottom:8 }}>CREATIVE LEARNING</div>
+              <div style={{ fontSize:11, fontWeight:900, color:"rgba(255,255,255,0.6)", letterSpacing:2, marginBottom:8 }}>CREATIVE LEARNING</div>
               <div style={{ fontWeight:900, fontSize:isMobile?17:22, marginBottom:6 }}>Music, Reading & Arts — Built for Your Child</div>
-              <div style={{ fontSize:12, color:"rgba(255,255,255,0.4)", lineHeight:1.8 }}>Specialist creative learning for every condition, every age.</div>
+              <div style={{ fontSize:12, color:"rgba(255,255,255,0.65)", lineHeight:1.8 }}>Specialist creative learning for every condition, every age.</div>
             </div>
             <div style={{ display:"grid", gridTemplateColumns:isMobile?"1fr":"repeat(3,1fr)", gap:12 }}>
               {[
@@ -3626,7 +3629,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                   onMouseLeave={e=>{e.currentTarget.style.background=s.color+"08";e.currentTarget.style.borderColor=s.color+"25";}}>
                   <div style={{ fontSize:28, marginBottom:6 }}>{s.emoji}</div>
                   <div style={{ fontWeight:900, fontSize:15, color:s.color, marginBottom:4 }}>{s.name}</div>
-                  <div style={{ fontSize:11, color:"rgba(255,255,255,0.45)", lineHeight:1.6 }}>{s.desc}</div>
+                  <div style={{ fontSize:11, color:"rgba(255,255,255,0.7)", lineHeight:1.6 }}>{s.desc}</div>
                 </a>
               ))}
             </div>
@@ -3640,9 +3643,9 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
             {/* LANGUAGE & LITERACY — SEN-adapted */}
             <div style={{ marginTop:36, paddingTop:28, borderTop:"1px solid rgba(255,255,255,0.06)" }}>
               <div style={{ textAlign:"center", marginBottom:20 }}>
-                <div style={{ fontSize:11, fontWeight:900, color:"rgba(255,255,255,0.3)", letterSpacing:2, marginBottom:8 }}>LANGUAGE & LITERACY</div>
+                <div style={{ fontSize:11, fontWeight:900, color:"rgba(255,255,255,0.6)", letterSpacing:2, marginBottom:8 }}>LANGUAGE & LITERACY</div>
                 <div style={{ fontWeight:900, fontSize:isMobile?17:22, marginBottom:6 }}>Languages & Spelling — Adapted for Your Child</div>
-                <div style={{ fontSize:12, color:"rgba(255,255,255,0.4)", lineHeight:1.8 }}>
+                <div style={{ fontSize:12, color:"rgba(255,255,255,0.65)", lineHeight:1.8 }}>
                   {condition?.id === 'autism' ? 'Structured, predictable exercises with visual cues — ideal for autistic learners who thrive with routine and patterns.'
                   : condition?.id === 'adhd' ? 'Fast-paced games with hearts, XP, and celebrations — designed to hold attention and reward focus.'
                   : condition?.id === 'dyslexia' ? 'Audio-first mode means no reading needed. Hear every word spoken aloud. Spelling practice builds phonological awareness — the #1 intervention for dyslexia.'
@@ -3660,7 +3663,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                   onMouseLeave={e=>{e.currentTarget.style.background="rgba(79,142,247,0.08)";e.currentTarget.style.borderColor="rgba(79,142,247,0.25)";}}>
                   <div style={{ fontSize:28, marginBottom:6 }}>🌍</div>
                   <div style={{ fontWeight:900, fontSize:15, color:"#4F8EF7", marginBottom:4 }}>Learn Languages</div>
-                  <div style={{ fontSize:11, color:"rgba(255,255,255,0.45)", lineHeight:1.6, marginBottom:8 }}>
+                  <div style={{ fontSize:11, color:"rgba(255,255,255,0.7)", lineHeight:1.6, marginBottom:8 }}>
                     9 languages with audio-first mode — no reading needed. Pronunciation practice via microphone. Learn in Urdu, Sindhi, Punjabi, Pashto or English.
                   </div>
                   <div style={{ fontSize:10, fontWeight:800, color:"#4F8EF7", display:"flex", flexWrap:"wrap", gap:4 }}>
@@ -3674,7 +3677,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                   onMouseLeave={e=>{e.currentTarget.style.background="rgba(245,158,11,0.08)";e.currentTarget.style.borderColor="rgba(245,158,11,0.25)";}}>
                   <div style={{ fontSize:28, marginBottom:6 }}>🐝</div>
                   <div style={{ fontWeight:900, fontSize:15, color:"#F59E0B", marginBottom:4 }}>Spelling Bee</div>
-                  <div style={{ fontSize:11, color:"rgba(255,255,255,0.45)", lineHeight:1.6, marginBottom:8 }}>
+                  <div style={{ fontSize:11, color:"rgba(255,255,255,0.7)", lineHeight:1.6, marginBottom:8 }}>
                     4 game modes — tap letters, unscramble, picture spell, speed round. 210 words across 7 grades. Every word spoken aloud.
                   </div>
                   <div style={{ fontSize:10, fontWeight:800, color:"#F59E0B", display:"flex", flexWrap:"wrap", gap:4 }}>
@@ -3691,9 +3694,9 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
       {/* CREATIVE LEARNING SECTIONS — only on step 4 (steps 1-3 have their own above) */}
       {step === 4 && !focusMode && <div style={{marginTop:48,paddingTop:40,borderTop:"1px solid rgba(255,255,255,0.07)"}}>
         <div style={{textAlign:"center",marginBottom:24}}>
-          <div style={{display:"inline-block",background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:20,padding:"4px 16px",fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.4)",letterSpacing:2,marginBottom:12}}>CREATIVE LEARNING</div>
+          <div style={{display:"inline-block",background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:20,padding:"4px 16px",fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.65)",letterSpacing:2,marginBottom:12}}>CREATIVE LEARNING</div>
           <h2 style={{fontSize:isMobile?20:28,fontWeight:900,margin:"0 0 8px",color:"#fff"}}>Music, Reading <span style={{color:"#C77DFF"}}>&</span> Arts</h2>
-          <p style={{fontSize:13,color:"rgba(255,255,255,0.45)",maxWidth:560,margin:"0 auto",lineHeight:1.8}}>Specialist creative learning built for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and complex communication needs.</p>
+          <p style={{fontSize:13,color:"rgba(255,255,255,0.7)",maxWidth:560,margin:"0 auto",lineHeight:1.8}}>Specialist creative learning built for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and complex communication needs.</p>
         </div>
         <div style={{display:"grid",gridTemplateColumns:isMobile?"1fr":"repeat(3,1fr)",gap:14}}>
           {[
@@ -3714,7 +3717,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
         </div>
         <div style={{background:"rgba(199,125,255,0.06)",border:"1px solid rgba(199,125,255,0.2)",borderRadius:16,padding:"20px 28px",marginTop:16,textAlign:"center"}}>
           <div style={{fontWeight:800,fontSize:14,color:"rgba(255,255,255,0.8)",marginBottom:6}}>All included in the Special Needs Plan — $149.99/year</div>
-          <div style={{fontSize:12,color:"rgba(255,255,255,0.45)",lineHeight:1.8,marginBottom:12}}>Full access to Music, Reading, and Arts — all 7 specialist profiles, 120+ books, evidence-based teaching, and parent guides.</div>
+          <div style={{fontSize:12,color:"rgba(255,255,255,0.7)",lineHeight:1.8,marginBottom:12}}>Full access to Music, Reading, and Arts — all 7 specialist profiles, 120+ books, evidence-based teaching, and parent guides.</div>
           <a href="/pricing" style={{display:"inline-block",background:"linear-gradient(135deg,#C77DFF,#7B5EA7)",borderRadius:12,padding:"10px 24px",color:"#fff",fontWeight:900,fontSize:13,textDecoration:"none"}}>View Plans</a>
         </div>
       </div>}
@@ -3722,7 +3725,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
       {/* ── SEN Practice Zone ───────────────────────── */}
       <div style={{maxWidth:600,margin:"0 auto 40px",padding:"0 16px"}}>
         <div style={{textAlign:"center",marginBottom:24}}>
-          <div style={{display:"inline-block",background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:20,padding:"4px 16px",fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.4)",letterSpacing:2,marginBottom:12}}>PRACTICE ZONE</div>
+          <div style={{display:"inline-block",background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:20,padding:"4px 16px",fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.65)",letterSpacing:2,marginBottom:12}}>PRACTICE ZONE</div>
           <h2 style={{fontFamily:"'Nunito',sans-serif",fontSize:"clamp(22px,5vw,30px)",fontWeight:900,margin:"0 0 10px"}}>
             ✨ Practice at Your Pace
           </h2>
@@ -3737,7 +3740,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
           <div style={{background:"rgba(167,139,250,0.06)",border:"2px dashed rgba(167,139,250,0.2)",borderRadius:20,padding:"28px 24px",textAlign:"center"}}>
             <div style={{fontSize:40,marginBottom:12}}>💜</div>
             <div style={{fontWeight:800,fontSize:16,marginBottom:8,fontFamily:"'Nunito',sans-serif",color:"rgba(255,255,255,0.8)"}}>Select your child's condition above</div>
-            <div style={{fontSize:13,color:"rgba(255,255,255,0.4)",lineHeight:1.7}}>Once you tell Starky about your child, the Practice Zone will open — adapted specially for them.</div>
+            <div style={{fontSize:13,color:"rgba(255,255,255,0.65)",lineHeight:1.7}}>Once you tell Starky about your child, the Practice Zone will open — adapted specially for them.</div>
           </div>
         )}
       </div>
