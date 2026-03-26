@@ -310,10 +310,10 @@ export default async function handler(req, res) {
             }
           })();
 
-          // Race against 3-second timeout — if Supabase is slow, skip enrichment
+          // Race against 1-second timeout — never let enrichment delay chat response
           await Promise.race([
             enrichPromise,
-            new Promise(resolve => setTimeout(resolve, 3000)),
+            new Promise(resolve => setTimeout(resolve, 1000)),
           ]);
         }
       } catch {}
