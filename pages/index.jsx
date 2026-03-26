@@ -920,8 +920,9 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div style={{textAlign:'center'}}>
+        <div style={{textAlign:'center',display:'flex',gap:12,justifyContent:'center',flexWrap:'wrap'}}>
           <a href="/parent" style={{display:'inline-block',background:'linear-gradient(135deg,#4ADE80,#22C55E)',color:'#060B20',padding:'14px 32px',borderRadius:100,fontWeight:800,fontSize:15,textDecoration:'none'}}>Open Parent Portal →</a>
+          <a href="/parent?sen=1" style={{display:'inline-block',background:'linear-gradient(135deg,#C77DFF,#A78BFA)',color:'#fff',padding:'14px 32px',borderRadius:100,fontWeight:800,fontSize:15,textDecoration:'none'}}>💜 SEN Parent — Register Your Child</a>
         </div>
       </section>
 

@@ -2965,6 +2965,8 @@ export default function SpecialNeedsPage() {
     .sen-focus-mode button,.sen-focus-mode a{color:inherit}
     @media (prefers-color-scheme: light){.sen-focus-mode{background:#FFFFFF !important;color:#1a1a1a !important}
       .sen-focus-mode *{color:inherit}}
+    /* iOS button fix — ensure all buttons are clickable */
+    button,a,[role="button"]{-webkit-tap-highlight-color:transparent;touch-action:manipulation;cursor:pointer;-webkit-appearance:none}
     /* Responsive grids for SEN cards */
     .sen-grid-cards{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
     @media(max-width:400px){.sen-grid-cards{grid-template-columns:1fr}}
@@ -3202,7 +3204,8 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
             title="Toggle Urdu language mode">
             {urduMode ? "اردو ✓" : "اردو"}
           </button>
-          <a href="/pricing" style={{ background:"linear-gradient(135deg,#4F8EF7,#7B5EA7)", borderRadius:12, padding:"7px 16px", color:"#fff", fontWeight:900, fontSize:12, textDecoration:"none", minHeight:52, display:"flex", alignItems:"center" }}>Plans</a>
+          <a href="/parent?sen=1" style={{ background:"linear-gradient(135deg,#4ADE80,#22C55E)", borderRadius:12, padding:"7px 16px", color:"#060B20", fontWeight:900, fontSize:12, textDecoration:"none", minHeight:44, display:"flex", alignItems:"center" }}>Parent Register</a>
+          <a href="/pricing" style={{ background:"linear-gradient(135deg,#4F8EF7,#7B5EA7)", borderRadius:12, padding:"7px 16px", color:"#fff", fontWeight:900, fontSize:12, textDecoration:"none", minHeight:44, display:"flex", alignItems:"center" }}>Plans</a>
         </div>
       </header>
 
@@ -3329,7 +3332,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
 
             <div className="sen-grid-cards" style={{ marginBottom:16 }}>
               {CONDITIONS.map(c => (
-                <button key={c.id} aria-label={`Select condition: ${c.name}`} role="button" onClick={() => { sndTick(); setCondition(c); setStep(2); }}
+                <button key={c.id} aria-label={`Select condition: ${c.name}`} role="button" onClick={() => { sndTick(); setCondition(c); setStep(2); window.scrollTo({top:0,behavior:'smooth'}); }}
                   style={{ ...S.btn, background:c.color+"0A", border:"2px solid "+c.color+"30", borderRadius:18, padding:"18px 12px", textAlign:"center", color:"#fff", minHeight:52 }}
                   onMouseEnter={e => { e.currentTarget.style.background=c.color+"20"; e.currentTarget.style.borderColor=c.color; e.currentTarget.style.transform="translateY(-3px)"; }}
                   onMouseLeave={e => { e.currentTarget.style.background=c.color+"0A"; e.currentTarget.style.borderColor=c.color+"30"; e.currentTarget.style.transform="none"; }}>
@@ -3372,7 +3375,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
 
             <div style={{ display:"grid", gridTemplateColumns:isMobile?"1fr":"repeat(2,1fr)", gap:14 }}>
               {STAGES.map(s => (
-                <button key={s.id} aria-label={`Select stage: ${s.name}, ${s.ages}`} role="button" onClick={() => { sndTick(); setStage(s); setStep(3); }}
+                <button key={s.id} aria-label={`Select stage: ${s.name}, ${s.ages}`} role="button" onClick={() => { sndTick(); setStage(s); setStep(3); window.scrollTo({top:0,behavior:'smooth'}); }}
                   style={{ ...S.btn, background:s.color+"08", border:"2px solid "+s.color+"25", borderRadius:20, padding:"22px 20px", textAlign:"left", color:"#fff", minHeight:52 }}
                   onMouseEnter={e => { e.currentTarget.style.background=s.color+"18"; e.currentTarget.style.borderColor=s.color; e.currentTarget.style.transform="translateY(-2px)"; }}
                   onMouseLeave={e => { e.currentTarget.style.background=s.color+"08"; e.currentTarget.style.borderColor=s.color+"25"; e.currentTarget.style.transform="none"; }}>
@@ -3417,7 +3420,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
 
             <div style={{ display:"grid", gridTemplateColumns:isMobile?"1fr":"repeat(3,1fr)", gap:12, marginBottom:20 }}>
               {FOCUSES.map(f => (
-                <button key={f.id} aria-label={`Select focus: ${f.name} — ${f.desc}`} role="button" onClick={() => { sndTick(); setFocus(f); if (f.id !== "academic") { setTimeout(() => startChat(f), 200); } }}
+                <button key={f.id} aria-label={`Select focus: ${f.name} — ${f.desc}`} role="button" onClick={() => { sndTick(); setFocus(f); window.scrollTo({top:0,behavior:'smooth'}); if (f.id !== "academic") { setTimeout(() => startChat(f), 200); } }}
                   style={{ ...S.btn, background: focus?.id===f.id ? accentColor+"18" : "rgba(255,255,255,0.04)", border:"2px solid "+(focus?.id===f.id ? accentColor : "rgba(255,255,255,0.08)"), borderRadius:18, padding:"18px 14px", textAlign:"left", color:"#fff", minHeight:52 }}
                   onMouseEnter={e => { e.currentTarget.style.background=accentColor+"12"; e.currentTarget.style.borderColor=accentColor+"50"; }}
                   onMouseLeave={e => { if(focus?.id!==f.id){e.currentTarget.style.background="rgba(255,255,255,0.04)";e.currentTarget.style.borderColor="rgba(255,255,255,0.08)";} }}>

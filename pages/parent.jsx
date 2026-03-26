@@ -282,8 +282,14 @@ export default function ParentPage() {
     return () => window.removeEventListener("resize", fn);
   }, []);
 
-  // On mount — check if account exists
+  const [senMode, setSenMode] = useState(false); // SEN parent registration flow
+
+  // On mount — check if account exists + detect ?sen=1 query param
   useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('sen') === '1') setSenMode(true);
+    } catch {}
     const acc = loadAccount();
     if (acc && acc.email) {
       setAccount(acc);
@@ -303,6 +309,13 @@ export default function ParentPage() {
     setAccount(acc);
     setEmailErr("");
     setScreen("dashboard");
+    // SEN mode: auto-open add child flow with SEN prompt
+    if (senMode) {
+      setTimeout(() => {
+        setChildSEN('unsure'); // pre-select "Not Sure / Undiagnosed" as default
+        setScreen("dashboard"); // dashboard has the add child form
+      }, 100);
+    }
   };
 
   // ── ADD CHILD ─────────────────────────────────────────────────────────────
@@ -453,12 +466,14 @@ export default function ParentPage() {
       <div style={{maxWidth:480, margin:"0 auto", padding: isMobile?"32px 16px":"64px 24px", animation:"fadeUp 0.4s ease-out"}}>
 
         <div style={{textAlign:"center", marginBottom:28}}>
-          <div style={{fontSize:56, marginBottom:12}}>👨‍👧‍👦</div>
+          <div style={{fontSize:56, marginBottom:12}}>{senMode ? '💜' : '👨‍👧‍👦'}</div>
           <h1 style={{fontSize:isMobile?24:30, fontWeight:900, margin:"0 0 10px", lineHeight:1.2}}>
-            Parent Portal
+            {senMode ? 'SEN Parent Registration' : 'Parent Portal'}
           </h1>
-          <p style={{color:"rgba(255,255,255,0.5)", fontSize:15, lineHeight:1.7, margin:"0 0 20px"}}>
-            Stay involved in your child's Cambridge preparation — even from your office.
+          <p style={{color:"rgba(255,255,255,0.6)", fontSize:15, lineHeight:1.7, margin:"0 0 20px"}}>
+            {senMode
+              ? 'Register your child for specialist SEN support — adapted for autism, ADHD, dyslexia, Down syndrome, and more. Starky becomes a fully trained SEN specialist for your child.'
+              : "Stay involved in your child's Cambridge preparation — even from your office."}
           </p>
           <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:8, textAlign:"left", marginBottom:24}}>
             {[
