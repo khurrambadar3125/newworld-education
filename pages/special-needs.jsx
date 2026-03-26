@@ -2888,6 +2888,7 @@ export default function SpecialNeedsPage() {
   const [xpData, setXpData]       = useState({ xp: 0, sessions: 0, streak: 0, lastDay: null, correctStreak: 0 });
   const [chatMsgCount, setChatMsgCount] = useState(0);
   const [showChatConfetti, setShowChatConfetti] = useState(false);
+  const [focusMode, setFocusMode]     = useState(false);
   const chatEndRef = useRef(null);
   // SEN students get UNLIMITED sessions — never rate-limit special needs learners
   const { recordCall } = useSessionLimit();
@@ -2913,6 +2914,7 @@ export default function SpecialNeedsPage() {
   useEffect(() => { chatEndRef.current?.scrollIntoView({ behavior:"smooth" }); }, [messages, loading]);
   useEffect(() => { setProgress(loadP()); }, []);
   useEffect(() => { setXpData(loadXP()); }, []);
+  useEffect(() => { try { if (localStorage.getItem('nw_sen_focus') === 'true') setFocusMode(true); } catch {} }, []);
 
   const accentColor = condition?.color || "#C77DFF";
 
@@ -2931,6 +2933,9 @@ export default function SpecialNeedsPage() {
     @media (prefers-reduced-motion: reduce) {
       *{animation:none !important;transition:none !important}
     }
+    .sen-focus-mode *{animation:none !important;transition:none !important}
+    .sen-focus-mode{background:#0A0F1E !important;font-size:20px !important;line-height:1.8 !important}
+    @media (prefers-color-scheme: light){.sen-focus-mode{background:#FFFFFF !important;color:#1a1a1a !important}}
   `;
 
   const S = {
@@ -3047,6 +3052,12 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
 
   const reset = () => { setStep(1); setCondition(null); setStage(null); setFocus(null); setSubject(""); setMessages([]); };
 
+  const toggleFocusMode = () => {
+    const next = !focusMode;
+    setFocusMode(next);
+    try { localStorage.setItem('nw_sen_focus', String(next)); } catch {}
+  };
+
   // ── STEP INDICATOR ──────────────────────────────────────────────────
   const StepBar = () => (
     <div style={{ display:"flex", alignItems:"center", justifyContent:"center", gap:8, marginBottom:32 }}>
@@ -3104,7 +3115,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
   };
 
   return (
-    <div style={S.page}><style>{CSS}</style>
+    <div className={focusMode ? 'sen-focus-mode' : ''} style={{...S.page, ...(focusMode ? {background:focusMode?'#0A0F1E':''}:{})}}><style>{CSS}</style>
       <Head>
         <title>Special Needs Support — NewWorldEdu</title>
         <meta name="description" content="Tutoring adapted for autism, ADHD, dyslexia, and Down syndrome. 140 teaching profiles with evidence-based strategies for Pakistani students." />
@@ -3118,7 +3129,16 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
           NewWorldEdu<span style={{ color:"#4F8EF7" }}>★</span>
         </a>
         <div style={{ display:"flex", alignItems:"center", gap:12 }}>
-          {/* XP Badge */}
+          {/* Focus Mode toggle */}
+          <button
+            onClick={toggleFocusMode}
+            aria-label={focusMode ? "Turn off Focus Mode" : "Turn on Focus Mode — reduced visual complexity"}
+            title="Focus Mode — removes distractions for easier learning"
+            style={{ ...S.btn, background: focusMode ? "rgba(168,224,99,0.2)" : "rgba(255,255,255,0.05)", border: focusMode ? "1px solid rgba(168,224,99,0.5)" : "1px solid rgba(255,255,255,0.1)", borderRadius:10, padding:"6px 12px", color: focusMode ? "#A8E063" : "rgba(255,255,255,0.5)", fontSize:11, fontWeight:700, minHeight:36 }}>
+            Focus Mode {focusMode ? "●" : "○"}
+          </button>
+          {/* XP Badge — hidden in focus mode */}
+          {!focusMode && (
           <div aria-label={`${xpData.xp} experience points, ${xpData.streak} day streak`} style={{ display:"flex", alignItems:"center", gap:6, background:"rgba(168,224,99,0.1)", border:"1px solid rgba(168,224,99,0.3)", borderRadius:20, padding:"4px 12px" }}>
             <span style={{ fontSize:14 }}>⭐</span>
             <span style={{ fontWeight:900, fontSize:12, color:"#A8E063" }}>{xpData.xp} XP</span>
@@ -3126,6 +3146,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
               <span style={{ fontWeight:700, fontSize:11, color:"#FFC300", marginLeft:2 }}>🔥 {xpData.streak}d</span>
             )}
           </div>
+          )}
           {step > 1 && (
             <button onClick={reset} aria-label="Start over" role="button" style={{ ...S.btn, background:"rgba(255,255,255,0.05)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:10, padding:"6px 12px", color:"rgba(255,255,255,0.5)", fontSize:11, fontWeight:700, minHeight:52, minWidth:52 }}>
               ← Start Over
@@ -3361,10 +3382,11 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
         {step === 4 && (
           <div style={{ animation:"fadeUp 0.4s ease", position:"relative" }}>
 
-            {/* Chat confetti */}
-            {showChatConfetti && <SENConfetti />}
+            {/* Chat confetti — hidden in focus mode */}
+            {showChatConfetti && !focusMode && <SENConfetti />}
 
-            {/* Progress bar — XP towards next level */}
+            {/* Progress bar — hidden in focus mode */}
+            {!focusMode && (
             <div style={{ marginBottom:14 }}>
               <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:4 }}>
                 <span style={{ fontSize:11, fontWeight:800, color:"rgba(255,255,255,0.4)" }}>Session Progress</span>
@@ -3379,8 +3401,10 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                 {chatMsgCount > 0 && <span style={{ fontSize:10, color:"rgba(255,255,255,0.3)" }}>Messages: {chatMsgCount}</span>}
               </div>
             </div>
+            )}
 
-            {/* Profile banner */}
+            {/* Profile banner — simplified in focus mode */}
+            {!focusMode ? (
             <div style={{ background:"linear-gradient(135deg,"+accentColor+"12,rgba(255,255,255,0.02))", border:"1px solid "+accentColor+"25", borderRadius:18, padding:"14px 18px", marginBottom:14, display:"flex", gap:12, alignItems:"center", flexWrap:"wrap" }}>
               <div style={{ fontSize:28 }}>{condition?.emoji}</div>
               <div style={{ flex:1 }}>
@@ -3397,6 +3421,11 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                 Change Focus
               </button>
             </div>
+            ) : (
+            <div style={{ padding:"8px 0", marginBottom:8, fontSize:13, color:"rgba(255,255,255,0.3)", fontWeight:600 }}>
+              {condition?.name} · {stage?.name}{subject ? " — "+subject : ""}
+            </div>
+            )}
 
             {/* Chat */}
             <div style={{ background:"rgba(255,255,255,0.03)", border:"1px solid rgba(255,255,255,0.08)", borderRadius:20, overflow:"hidden" }}>
@@ -3407,11 +3436,11 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                       {msg.role==="assistant" && (
                         <div aria-hidden="true" style={{ width:32, height:32, borderRadius:"50%", background:accentColor+"20", border:"1px solid "+accentColor+"40", display:"flex", alignItems:"center", justifyContent:"center", fontSize:16, flexShrink:0, marginTop:2 }}>💜</div>
                       )}
-                      <div style={{ maxWidth:"88%", padding:"13px 16px", borderRadius:16, background:msg.role==="user" ? "linear-gradient(135deg,"+accentColor+"CC,"+accentColor+"88)" : "rgba(255,255,255,0.06)", color:msg.role==="user" ? "#060B20" : "rgba(255,255,255,0.93)", fontSize:15, lineHeight:1.85, fontWeight:msg.role==="user"?700:400, whiteSpace:"pre-wrap" }}>
+                      <div style={{ maxWidth:focusMode?"95%":"88%", padding:focusMode?"16px 20px":"13px 16px", borderRadius:16, background:msg.role==="user" ? (focusMode?"rgba(79,142,247,0.15)":"linear-gradient(135deg,"+accentColor+"CC,"+accentColor+"88)") : (focusMode?"rgba(255,255,255,0.03)":"rgba(255,255,255,0.06)"), color:msg.role==="user" ? (focusMode?"#8BB8F7":"#060B20") : "rgba(255,255,255,0.93)", fontSize:focusMode?20:15, lineHeight:focusMode?1.8:1.85, fontWeight:msg.role==="user"?700:400, whiteSpace:"pre-wrap" }}>
                         {msg.content}
                       </div>
                     </div>
-                    {(i + 1) >= 10 && (i + 1) % 10 === 0 && (
+                    {!focusMode && (i + 1) >= 10 && (i + 1) % 10 === 0 && (
                       <div style={{ margin:"12px 0", padding:"14px 18px", background:"linear-gradient(135deg,"+accentColor+"12,rgba(255,255,255,0.03))", border:"1px solid "+accentColor+"30", borderRadius:16, textAlign:"center" }}>
                         <div style={{ fontSize:14, fontWeight:800, color:accentColor, marginBottom:8 }}>🌟 Session Check</div>
                         <div style={{ fontSize:12, color:"rgba(255,255,255,0.5)", marginBottom:10 }}>You've been learning for a while! What would you like to do?</div>
@@ -3456,7 +3485,8 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
               </div>
             </div>
 
-            {/* Quick prompts */}
+            {/* Quick prompts — hidden in focus mode */}
+            {!focusMode && (
             <div style={{ marginTop:12, display:"grid", gridTemplateColumns:isMobile?"repeat(2,1fr)":"repeat(4,1fr)", gap:8 }}>
               {[
                 { e:"🔄", t:"Explain differently", p:`Explain that again in a completely different way — try a different approach, a different example, a different analogy.` },
@@ -3473,12 +3503,13 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                 </button>
               ))}
             </div>
+            )}
 
-            {/* ── Quick Exercise Buttons ─────────────────── */}
-            <SENQuickExercises condition={condition} stage={stage} xpData={xpData} setXpData={setXpData} isUAE={isUAE} />
+            {/* ── Quick Exercise Buttons — hidden in focus mode ─────── */}
+            {!focusMode && <SENQuickExercises condition={condition} stage={stage} xpData={xpData} setXpData={setXpData} isUAE={isUAE} />}
 
-            {/* Share session with teacher/therapist */}
-            {messages.length > 2 && (
+            {/* Share session with teacher/therapist — hidden in focus mode */}
+            {!focusMode && messages.length > 2 && (
               <button onClick={async () => {
                 const { shareLink } = await import('../utils/share');
                 const summary = messages.filter(m=>m.role==='assistant').slice(-1)[0]?.content?.slice(0,200) || '';
@@ -3574,7 +3605,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
         )}
       </div>
       {/* CREATIVE LEARNING SECTIONS — only on step 4 (steps 1-3 have their own above) */}
-      {step === 4 && <div style={{marginTop:48,paddingTop:40,borderTop:"1px solid rgba(255,255,255,0.07)"}}>
+      {step === 4 && !focusMode && <div style={{marginTop:48,paddingTop:40,borderTop:"1px solid rgba(255,255,255,0.07)"}}>
         <div style={{textAlign:"center",marginBottom:24}}>
           <div style={{display:"inline-block",background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.1)",borderRadius:20,padding:"4px 16px",fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.4)",letterSpacing:2,marginBottom:12}}>CREATIVE LEARNING</div>
           <h2 style={{fontSize:isMobile?20:28,fontWeight:900,margin:"0 0 8px",color:"#fff"}}>Music, Reading <span style={{color:"#C77DFF"}}>&</span> Arts</h2>
