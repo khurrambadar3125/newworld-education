@@ -890,11 +890,12 @@ export function buildMessages({ userProfile: rawProfile, sessionMemory: rawMemor
   // by the /special-needs page which has its own prompt system.
   const hasSENProfile = userProfile.senFlag || userProfile.isSEN;
   if (hasSENProfile) {
-    systemPrompt = addKnowledgeToPrompt(systemPrompt);
-    // Add condition-specific teaching protocol if known
     const cond = userProfile.senType || userProfile.senCondition || '';
+    // Use compact SEN prompt (~1,500 tokens) instead of full KB (~14,000 tokens)
+    systemPrompt = addKnowledgeToPrompt(systemPrompt, cond);
+    // Add condition-specific teaching protocol if known
     if (cond && SEN_CONDITION_NOTES[cond]) {
-      systemPrompt += `\n\nTHIS STUDENT'S KNOWN CONDITION — ${cond.toUpperCase()}:\n${SEN_CONDITION_NOTES[cond]}`;
+      systemPrompt += `\n\nDETAILED TEACHING PROTOCOL:\n${SEN_CONDITION_NOTES[cond]}`;
     }
   }
 

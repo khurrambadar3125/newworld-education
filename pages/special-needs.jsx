@@ -13,7 +13,9 @@
 import { useState, useRef, useEffect } from "react";
 import Head from "next/head";
 import { useSessionLimit } from "../utils/useSessionLimit";
-import { addKnowledgeToPrompt } from "../utils/senKnowledge";
+import { getFullSENKnowledge } from "../utils/senKnowledge";
+// Special-needs page uses the FULL knowledge base since it's the dedicated SEN section
+const addKnowledgeToPrompt = (prompt) => prompt + "\n\n" + getFullSENKnowledge();
 
 // ═══════════════════════════════════════════════════════════════════════
 // AUDIO ENGINE — Web Audio API (adapted from languages.jsx)
