@@ -1,0 +1,21 @@
+{
+  "name": "NewWorld Education",
+  "short_name": "NewWorldEdu",
+  "description": "Personal AI tutor for every child — KG to A Levels. 16+ languages. Special needs support.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080C18",
+  "theme_color": "#080C18",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "kids"],
+  "lang": "en",
+  "dir": "auto"
+}

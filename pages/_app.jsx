@@ -105,8 +105,15 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
       <ThemeProvider>
         <Head>
           <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover" />
           <meta name="theme-color" content="#080C18" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+          <meta name="apple-mobile-web-app-title" content="NewWorldEdu" />
+          <meta name="mobile-web-app-capable" content="yes" />
+          <meta name="format-detection" content="telephone=no" />
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="apple-touch-icon" href="/favicon.svg" />
           <meta property="og:site_name" content="NewWorld Education" />
           <meta property="og:type" content="website" />
           <meta property="og:image" content="https://www.newworld.education/og-image.png" />
@@ -136,7 +143,53 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           })}} />
         </Head>
         <style jsx global>{`
-          html, body { overflow-x: hidden; }
+          /* ── Cross-device compatibility ────────────────────── */
+          html, body { overflow-x: hidden; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+          html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
+
+          /* iOS safe areas — notched iPhones (X, 11, 12, 13, 14, 15, 16) */
+          body { padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom);
+                 padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+
+          /* Prevent iOS zoom on input focus */
+          input, textarea, select { font-size: 16px !important; }
+          @media screen and (max-width: 768px) {
+            input, textarea, select { font-size: 16px !important; }
+          }
+
+          /* Touch improvements for all mobile/tablet */
+          button, a, [role="button"] { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+          * { -webkit-overflow-scrolling: touch; }
+
+          /* Tablet-specific (iPad, Android tablets, Galaxy Tab) */
+          @media screen and (min-width: 769px) and (max-width: 1199px) {
+            body { font-size: 17px; }
+          }
+
+          /* Large screens (TV, 4K monitors, ultrawide) */
+          @media screen and (min-width: 1920px) {
+            body { font-size: 18px; }
+          }
+          @media screen and (min-width: 2560px) {
+            body { font-size: 20px; max-width: 1800px; margin: 0 auto; }
+          }
+
+          /* Reduced motion for accessibility */
+          @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important;
+              transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+          }
+
+          /* High contrast mode */
+          @media (prefers-contrast: high) {
+            :root { --text-primary: #ffffff; --text-secondary: #e0e0e0; }
+          }
+
+          /* Print — hide interactive elements */
+          @media print {
+            nav, button, .starky-bubble, footer { display: none !important; }
+            body { background: white !important; color: black !important; }
+          }
           :root, [data-theme="dark"] {
             --bg-primary: #080C18;
             --bg-secondary: #0D1221;
