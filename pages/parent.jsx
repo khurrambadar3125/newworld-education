@@ -474,7 +474,167 @@ export default function ParentPage() {
   );
 
   // ════════════════════════════════════════════════════════════════════════════
-  // SCREEN 1 — SETUP (first visit)
+  // SEN FAST-TRACK REGISTRATION — radically simple for SEN parents
+  // One screen: name + email + child name → condition selection → done → /special-needs
+  // ════════════════════════════════════════════════════════════════════════════
+  const [senStep, setSenStep] = useState(1); // 1=details, 2=condition
+  const [senChildName, setSenChildName] = useState("");
+
+  const handleSenFastTrack = () => {
+    if (!parentName.trim() || !email.includes("@") || !senChildName.trim()) {
+      setEmailErr("Please fill in all three fields."); return;
+    }
+    setEmailErr("");
+    setSenStep(2); // go to condition selection
+    window.scrollTo({top:0,behavior:'smooth'});
+  };
+
+  const handleSenComplete = (conditions, severity) => {
+    // Create account + child in one go
+    const acc = loadAccount();
+    const account = acc?.email ? acc : { email: email.trim(), parentName: parentName.trim(), children: [] };
+    const id = `child_${Date.now()}`;
+    account.children = [...(account.children || []), {
+      id, name: senChildName.trim(), email: '', grade: 'SEN',
+      senCondition: conditions[0] || 'unsure',
+      senConditions: conditions,
+      senSeverity: severity || 'unsure',
+      avatar: '💜', color: '#C77DFF',
+    }];
+    account.email = email.trim();
+    account.parentName = parentName.trim();
+    saveAccount(account);
+    // Set as active child and bridge to nw_user
+    try {
+      localStorage.setItem('nw_active_child', JSON.stringify(account.children[account.children.length - 1]));
+      const user = JSON.parse(localStorage.getItem('nw_user') || '{}');
+      localStorage.setItem('nw_user', JSON.stringify({
+        ...user, name: senChildName.trim(), email: email.trim(), grade: 'SEN',
+        parentEmail: email.trim(), senFlag: true, senType: conditions[0] || 'unsure',
+        senConditions: conditions, senSeverity: severity || 'unsure',
+      }));
+    } catch {}
+    // Go straight to special-needs
+    window.location.href = '/special-needs';
+  };
+
+  if (senMode && screen === "setup") return (
+    <div style={S.page}><style>{CSS}</style>
+      <Header/>
+      <div style={{maxWidth:440, margin:"0 auto", padding: isMobile?"28px 16px":"56px 24px", animation:"fadeUp 0.4s ease-out"}}>
+
+        {senStep === 1 && (<>
+          <div style={{textAlign:"center", marginBottom:24}}>
+            <div style={{fontSize:56, marginBottom:10}}>💜</div>
+            <h1 style={{fontSize:isMobile?22:28, fontWeight:900, margin:"0 0 8px", lineHeight:1.2}}>
+              Register Your Child
+            </h1>
+            <p style={{color:"rgba(255,255,255,0.6)", fontSize:15, lineHeight:1.7, margin:0}}>
+              Three fields. That's all. Then Starky is ready for your child.
+            </p>
+          </div>
+
+          <div style={S.card}>
+            <div style={{display:"flex",flexDirection:"column",gap:14}}>
+              <div>
+                <label style={{fontSize:12,fontWeight:800,color:"rgba(255,255,255,0.5)",display:"block",marginBottom:6}}>Your Name</label>
+                <input style={{...S.input,fontSize:16,padding:"14px 16px"}} value={parentName} onChange={e=>setParentName(e.target.value)}
+                  placeholder="Your name" autoFocus/>
+              </div>
+              <div>
+                <label style={{fontSize:12,fontWeight:800,color:"rgba(255,255,255,0.5)",display:"block",marginBottom:6}}>Your Email</label>
+                <input style={{...S.input,fontSize:16,padding:"14px 16px"}} type="email" value={email} onChange={e=>setEmail(e.target.value)}
+                  placeholder="your@email.com"/>
+              </div>
+              <div>
+                <label style={{fontSize:12,fontWeight:800,color:"rgba(255,255,255,0.5)",display:"block",marginBottom:6}}>Your Child's Name</label>
+                <input style={{...S.input,fontSize:16,padding:"14px 16px"}} value={senChildName} onChange={e=>setSenChildName(e.target.value)}
+                  placeholder="Child's first name" onKeyDown={e=>e.key==="Enter"&&handleSenFastTrack()}/>
+              </div>
+
+              {emailErr && <div style={{color:"#FF6B6B",fontSize:13,fontWeight:700}}>{emailErr}</div>}
+
+              <button onClick={handleSenFastTrack}
+                style={{width:"100%",background:"linear-gradient(135deg,#C77DFF,#A78BFA)",color:"#fff",border:"none",borderRadius:14,padding:"16px",fontSize:17,fontWeight:800,cursor:"pointer",fontFamily:"'Nunito',sans-serif",marginTop:4}}>
+                Next →
+              </button>
+            </div>
+          </div>
+        </>)}
+
+        {senStep === 2 && (<>
+          <div style={{textAlign:"center", marginBottom:20}}>
+            <h2 style={{fontSize:isMobile?20:26, fontWeight:900, margin:"0 0 6px"}}>
+              What does {senChildName || 'your child'} need help with?
+            </h2>
+            <p style={{color:"rgba(255,255,255,0.5)", fontSize:13, margin:0}}>
+              Tap all that apply. You can change this later.
+            </p>
+          </div>
+
+          <div style={{display:"grid",gridTemplateColumns:"1fr",gap:10,marginBottom:20}}>
+            {SEN_OPTIONS.filter(s=>s.id).map(s => {
+              const sel = childSEN.includes(s.id);
+              return (
+                <button key={s.id} onClick={()=>setChildSEN(prev => sel ? prev.filter(x=>x!==s.id) : [...prev, s.id])}
+                  style={{
+                    padding:"14px 16px", borderRadius:14, cursor:"pointer", border:"none",
+                    fontFamily:"'Nunito',sans-serif", fontWeight:700, fontSize:15, textAlign:"left",
+                    background: sel ? (s.color||"#A78BFA")+"22" : "rgba(255,255,255,0.04)",
+                    outline: sel ? `2px solid ${s.color||"#A78BFA"}` : "1px solid rgba(255,255,255,0.1)",
+                    color: sel ? "#fff" : "rgba(255,255,255,0.7)",
+                    display:"flex",alignItems:"center",gap:12,minHeight:52,
+                  }}>
+                  <span style={{fontSize:12,width:20,textAlign:"center"}}>{sel ? "✓" : ""}</span>
+                  {s.label}
+                </button>
+              );
+            })}
+          </div>
+
+          {childSEN.length > 0 && (<>
+            <div style={{marginBottom:16}}>
+              <div style={{fontSize:13,fontWeight:800,color:"rgba(255,255,255,0.6)",marginBottom:10}}>How much support does {senChildName || 'your child'} need?</div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr",gap:8}}>
+                {SEVERITY_OPTIONS.map(sv => (
+                  <button key={sv.id} onClick={()=>setChildSeverity(sv.id)}
+                    style={{
+                      padding:"14px 16px", borderRadius:14, cursor:"pointer", border:"none",
+                      fontFamily:"'Nunito',sans-serif", fontWeight:600, fontSize:14, textAlign:"left",
+                      background: childSeverity===sv.id ? sv.color+"20" : "rgba(255,255,255,0.04)",
+                      outline: childSeverity===sv.id ? `2px solid ${sv.color}` : "1px solid rgba(255,255,255,0.1)",
+                      color: childSeverity===sv.id ? sv.color : "rgba(255,255,255,0.65)",
+                    }}>
+                    <div style={{fontWeight:800}}>{sv.label}</div>
+                    <div style={{fontSize:12,opacity:0.7,marginTop:2}}>{sv.desc}</div>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <button onClick={()=>handleSenComplete(childSEN, childSeverity)}
+              style={{width:"100%",background:"linear-gradient(135deg,#C77DFF,#A78BFA)",color:"#fff",border:"none",borderRadius:14,padding:"16px",fontSize:17,fontWeight:800,cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>
+              Start Learning with Starky →
+            </button>
+          </>)}
+
+          {childSEN.length === 0 && (
+            <div style={{textAlign:"center",padding:"20px",color:"rgba(255,255,255,0.4)",fontSize:13}}>
+              Select at least one condition above to continue
+            </div>
+          )}
+
+          <button onClick={()=>setSenStep(1)}
+            style={{display:"block",margin:"16px auto 0",background:"none",border:"none",color:"rgba(255,255,255,0.4)",fontSize:13,cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>
+            ← Go back
+          </button>
+        </>)}
+      </div>
+    </div>
+  );
+
+  // ════════════════════════════════════════════════════════════════════════════
+  // SCREEN 1 — SETUP (first visit — regular parent, non-SEN)
   // ════════════════════════════════════════════════════════════════════════════
   if (screen === "setup") return (
     <div style={S.page}><style>{CSS}</style>
@@ -482,14 +642,12 @@ export default function ParentPage() {
       <div style={{maxWidth:480, margin:"0 auto", padding: isMobile?"32px 16px":"64px 24px", animation:"fadeUp 0.4s ease-out"}}>
 
         <div style={{textAlign:"center", marginBottom:28}}>
-          <div style={{fontSize:56, marginBottom:12}}>{senMode ? '💜' : '👨‍👧‍👦'}</div>
+          <div style={{fontSize:56, marginBottom:12}}>👨‍👧‍👦</div>
           <h1 style={{fontSize:isMobile?24:30, fontWeight:900, margin:"0 0 10px", lineHeight:1.2}}>
-            {senMode ? 'SEN Parent Registration' : 'Parent Portal'}
+            Parent Portal
           </h1>
           <p style={{color:"rgba(255,255,255,0.6)", fontSize:15, lineHeight:1.7, margin:"0 0 20px"}}>
-            {senMode
-              ? 'Register your child for specialist SEN support — adapted for autism, ADHD, dyslexia, Down syndrome, and more. Starky becomes a fully trained SEN specialist for your child.'
-              : "Stay involved in your child's Cambridge preparation — even from your office."}
+            Stay involved in your child's Cambridge preparation — even from your office.
           </p>
           <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:8, textAlign:"left", marginBottom:24}}>
             {[
