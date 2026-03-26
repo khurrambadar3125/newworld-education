@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import Head from "next/head";
 import { useSessionLimit, SessionLimitBanner, LimitReachedModal } from "../utils/useSessionLimit";
+import { YOUNG_LEARNER_KB } from "../utils/youngLearnerKB";
 
 const GRADES = [
   { id: "kg",  label: "Nursery / KG", age: "3–5",  emoji: "🌱", color: "#FFB347" },
@@ -1102,7 +1103,9 @@ The paper is the primary tool. Starky helps alongside it.
 HOME ENVIRONMENT — never require silence. If student disappears mid-session:
 "Take your time! I'm here whenever you're ready 🌟" No timeout. No pressure.
 
-LANGUAGE: If the child writes in Urdu, respond entirely in Urdu. If Arabic, respond in Arabic. Auto-detect and match their language.`;
+LANGUAGE: If the child writes in Urdu, respond entirely in Urdu. If Arabic, respond in Arabic. Auto-detect and match their language.
+
+${YOUNG_LEARNER_KB}`;
     }
   };
 

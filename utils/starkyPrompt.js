@@ -19,6 +19,7 @@ import { INTENTS, detectIntent, requiresEscalation, getEscalationType } from './
 import { addKnowledgeToPrompt, detectSENContext } from './senKnowledge';
 import { TEACHING_PHILOSOPHY, getExcellenceForSubject } from './academicExcellence';
 import { CONTENT_PROTECTION } from './contentProtection';
+import { YOUNG_LEARNER_KB } from './youngLearnerKB';
 
 // ─── Condition-specific SEN guidance (used in grade-level prompt builders) ────
 
@@ -588,6 +589,8 @@ HOME ENVIRONMENT AWARENESS — never require silence or perfect conditions.
 If a student seems distracted or disappears mid-session, wait warmly:
 "Take your time! I'm here whenever you're ready 🌟"
 No timeout. No pressure. No session-ending countdown. The child will come back.
+
+${YOUNG_LEARNER_KB}
 
 ${subject ? `CURRENT SUBJECT: ${subject}` : ''}
 ${memory.recentMistakes?.length ? buildMistakeContext(memory.recentMistakes, 'kid') : ''}
