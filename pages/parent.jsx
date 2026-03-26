@@ -254,10 +254,11 @@ export default function ParentPage() {
   const [childName,   setChildName]   = useState("");
   const [childEmail,  setChildEmail]  = useState("");
   const [childGrade,  setChildGrade]  = useState("");
-  const [childSEN,    setChildSEN]    = useState("");  // '' = none, or condition id
-  const [childAvatar, setChildAvatar] = useState("🦁");
-  const [childColor,  setChildColor]  = useState("#63D2FF");
-  const [addErr,      setAddErr]      = useState("");
+  const [childSEN,      setChildSEN]      = useState([]);  // array of condition ids (multiple selection)
+  const [childSeverity, setChildSeverity] = useState("");  // mild, moderate, severe
+  const [childAvatar,   setChildAvatar]   = useState("🦁");
+  const [childColor,    setChildColor]    = useState("#63D2FF");
+  const [addErr,        setAddErr]        = useState("");
 
   const SEN_OPTIONS = [
     { id:'', label:'No special needs' },
@@ -273,6 +274,12 @@ export default function ParentPage() {
     { id:'dysgraphia', label:'✏️ Dysgraphia', color:'#FFB347' },
     { id:'sensory', label:'🌊 Sensory Processing', color:'#B8D4E3' },
     { id:'unsure', label:'❓ Not Sure / Undiagnosed', color:'#A78BFA' },
+  ];
+  const SEVERITY_OPTIONS = [
+    { id:'mild', label:'Mild', color:'#A8E063', desc:'Can read and write independently. Needs some support with complex tasks.' },
+    { id:'moderate', label:'Moderate', color:'#FFC300', desc:'Can read but struggles with writing. Needs regular support and adapted teaching.' },
+    { id:'severe', label:'Severe', color:'#FF6B6B', desc:'Cannot read or write independently. Needs full support and specialist approaches.' },
+    { id:'unsure', label:'Not sure', color:'#A78BFA', desc:'I don\'t know the severity yet — Starky will adapt as we learn together.' },
   ];
   const [editingId,   setEditingId]   = useState(null);
 
@@ -312,7 +319,7 @@ export default function ParentPage() {
     // SEN mode: auto-open add child flow with SEN prompt
     if (senMode) {
       setTimeout(() => {
-        setChildSEN('unsure'); // pre-select "Not Sure / Undiagnosed" as default
+        setChildSEN(['unsure']); // pre-select "Not Sure / Undiagnosed" as default
         setScreen("dashboard"); // dashboard has the add child form
       }, 100);
     }
@@ -321,34 +328,43 @@ export default function ParentPage() {
   // ── ADD CHILD ─────────────────────────────────────────────────────────────
   const handleAddChild = () => {
     if (!childName.trim()) { setAddErr("Please enter the child's name."); return; }
-    if (!childGrade)       { setAddErr("Please pick a grade."); return; }
+    // Grade is optional for SEN children — they may not fit standard grade levels
+    if (!childGrade && childSEN.length === 0) { setAddErr("Please pick a grade or select a SEN condition."); return; }
     if (account.children.length >= 4 && !editingId) { setAddErr("Maximum 4 children per account."); return; }
+
+    const senData = childSEN.length > 0 ? {
+      senCondition: childSEN[0], // primary condition (for backward compatibility)
+      senConditions: childSEN,   // all conditions (new: multiple selection)
+      senSeverity: childSeverity || 'unsure',
+    } : { senCondition: '', senConditions: [], senSeverity: '' };
 
     const updated = { ...account };
     if (editingId) {
       updated.children = updated.children.map(c =>
         c.id === editingId
-          ? { ...c, name: childName.trim(), email: childEmail.trim() || c.email, grade: childGrade, senCondition: childSEN || c.senCondition || '', avatar: childAvatar, color: childColor }
+          ? { ...c, name: childName.trim(), email: childEmail.trim() || c.email, grade: childGrade || c.grade || 'SEN', ...senData, avatar: childAvatar, color: childColor }
           : c
       );
       setEditingId(null);
     } else {
       const id = `child_${Date.now()}`;
       updated.children = [...updated.children, {
-        id, name: childName.trim(), email: childEmail.trim() || '', grade: childGrade,
-        senCondition: childSEN || '', avatar: childAvatar, color: childColor,
+        id, name: childName.trim(), email: childEmail.trim() || '', grade: childGrade || 'SEN',
+        ...senData, avatar: childAvatar, color: childColor,
       }];
     }
     saveAccount(updated);
     setAccount(updated);
-    setChildName(""); setChildEmail(""); setChildGrade(""); setChildSEN(""); setChildAvatar("🦁"); setChildColor("#63D2FF"); setAddErr("");
+    setChildName(""); setChildEmail(""); setChildGrade(""); setChildSEN([]); setChildSeverity(""); setChildAvatar("🦁"); setChildColor("#63D2FF"); setAddErr("");
     setScreen("pick-child");
   };
 
   const startEdit = (child) => {
     setEditingId(child.id);
     setChildName(child.name);
-    setChildGrade(child.grade);
+    setChildGrade(child.grade || '');
+    setChildSEN(child.senConditions || (child.senCondition ? [child.senCondition] : []));
+    setChildSeverity(child.senSeverity || '');
     setChildAvatar(child.avatar);
     setChildColor(child.color);
     setScreen("add-child");
@@ -615,28 +631,55 @@ export default function ParentPage() {
               </div>
             </div>
 
-            {/* SEN Condition */}
+            {/* SEN Condition — multiple selection */}
             <div>
-              <label style={{fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.4)",letterSpacing:1,display:"block",marginBottom:8}}>SPECIAL EDUCATIONAL NEEDS <span style={{fontWeight:400,opacity:0.6}}>(optional)</span></label>
+              <label style={{fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.5)",letterSpacing:1,display:"block",marginBottom:4}}>SPECIAL EDUCATIONAL NEEDS <span style={{fontWeight:400,opacity:0.6}}>(select all that apply)</span></label>
+              <div style={{fontSize:11,color:"rgba(255,255,255,0.4)",marginBottom:8}}>You can select more than one condition. Tap to select, tap again to remove.</div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:7}}>
-                {SEN_OPTIONS.map(s=>(
-                  <button key={s.id} onClick={()=>setChildSEN(s.id)}
+                {SEN_OPTIONS.filter(s=>s.id).map(s=>{
+                  const selected = childSEN.includes(s.id);
+                  return (
+                  <button key={s.id} onClick={()=>setChildSEN(prev => selected ? prev.filter(x=>x!==s.id) : [...prev, s.id])}
                     style={{
                       padding:"10px 12px", borderRadius:12, cursor:"pointer",
                       fontFamily:"'Nunito',sans-serif", fontWeight:700, fontSize:12, textAlign:"left",
-                      background: childSEN===s.id ? (s.color||"#A78BFA")+"20" : "rgba(255,255,255,0.04)",
-                      border: `1.5px solid ${childSEN===s.id ? (s.color||"#A78BFA") : "rgba(255,255,255,0.1)"}`,
-                      color: childSEN===s.id ? (s.color||"#A78BFA") : "rgba(255,255,255,0.6)",
+                      background: selected ? (s.color||"#A78BFA")+"20" : "rgba(255,255,255,0.04)",
+                      border: `1.5px solid ${selected ? (s.color||"#A78BFA") : "rgba(255,255,255,0.1)"}`,
+                      color: selected ? (s.color||"#A78BFA") : "rgba(255,255,255,0.6)",
                     }}>
-                    {s.label}
+                    {selected ? "✓ " : ""}{s.label}
                   </button>
-                ))}
+                  );
+                })}
               </div>
-              {childSEN && childSEN !== '' && (
+
+              {/* Severity selector — shown when any SEN condition is selected */}
+              {childSEN.length > 0 && (
+                <div style={{marginTop:14}}>
+                  <label style={{fontSize:11,fontWeight:800,color:"rgba(255,255,255,0.5)",letterSpacing:1,display:"block",marginBottom:8}}>SEVERITY LEVEL</label>
+                  <div style={{display:"grid",gridTemplateColumns:"1fr",gap:8}}>
+                    {SEVERITY_OPTIONS.map(sv=>(
+                      <button key={sv.id} onClick={()=>setChildSeverity(sv.id)}
+                        style={{
+                          padding:"12px 14px", borderRadius:12, cursor:"pointer",
+                          fontFamily:"'Nunito',sans-serif", fontWeight:600, fontSize:13, textAlign:"left",
+                          background: childSeverity===sv.id ? sv.color+"18" : "rgba(255,255,255,0.04)",
+                          border: `1.5px solid ${childSeverity===sv.id ? sv.color : "rgba(255,255,255,0.1)"}`,
+                          color: childSeverity===sv.id ? sv.color : "rgba(255,255,255,0.6)",
+                        }}>
+                        <div style={{fontWeight:800,marginBottom:2}}>{sv.label}</div>
+                        <div style={{fontSize:11,opacity:0.7,lineHeight:1.5}}>{sv.desc}</div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {childSEN.length > 0 && (
                 <div style={{marginTop:10,background:"rgba(167,139,250,0.08)",border:"1px solid rgba(167,139,250,0.2)",borderRadius:12,padding:"12px 14px"}}>
-                  <div style={{fontSize:12,fontWeight:700,color:"#A78BFA",marginBottom:4}}>💜 SEN Support Available</div>
-                  <div style={{fontSize:12,color:"rgba(255,255,255,0.5)",lineHeight:1.6}}>
-                    Your child will get unlimited sessions, adapted teaching, and specialist support.
+                  <div style={{fontSize:12,fontWeight:700,color:"#A78BFA",marginBottom:4}}>💜 SEN Support Active — {childSEN.length} condition{childSEN.length>1?'s':''} selected{childSeverity ? ` · ${childSeverity}` : ''}</div>
+                  <div style={{fontSize:12,color:"rgba(255,255,255,0.55)",lineHeight:1.6}}>
+                    Your child will get unlimited sessions, adapted teaching, and specialist support. Grade is optional for SEN children.
                     <a href="/special-needs" style={{color:"#A78BFA",marginLeft:4}}>Open SEN Portal →</a>
                   </div>
                 </div>
@@ -740,13 +783,14 @@ export default function ParentPage() {
                       borderRadius:20,padding:"2px 8px",fontSize:10,fontWeight:800,color:child.color
                     }}>{sessions} sessions</div>
                   )}
-                  {/* SEN badge */}
-                  {child.senCondition && (
+                  {/* SEN badge — shows conditions + severity */}
+                  {(child.senCondition || child.senConditions?.length > 0) && (
                     <div style={{
                       position:"absolute",top:10,left:10,
                       background:"rgba(167,139,250,0.2)",border:"1px solid rgba(167,139,250,0.4)",
-                      borderRadius:20,padding:"2px 8px",fontSize:10,fontWeight:800,color:"#A78BFA"
-                    }}>💜 {SEN_OPTIONS.find(s=>s.id===child.senCondition)?.label?.replace(/^[^\s]+\s/,'') || 'SEN'}</div>
+                      borderRadius:20,padding:"2px 8px",fontSize:10,fontWeight:800,color:"#A78BFA",
+                      maxWidth:"80%",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"
+                    }}>💜 {(child.senConditions || [child.senCondition]).filter(Boolean).map(id => SEN_OPTIONS.find(s=>s.id===id)?.label?.replace(/^[^\s]+\s/,'') || id).join(' · ')}{child.senSeverity ? ` · ${child.senSeverity}` : ''}</div>
                   )}
                   {/* Avatar */}
                   <div style={{
