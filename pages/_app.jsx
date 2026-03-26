@@ -115,6 +115,8 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@newworldedu" />
           <link rel="canonical" href={`https://www.newworld.education${router.asPath.split('?')[0]}`} />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
           <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
             "@context": "https://schema.org",
