@@ -2889,6 +2889,7 @@ export default function SpecialNeedsPage() {
   const [chatMsgCount, setChatMsgCount] = useState(0);
   const [showChatConfetti, setShowChatConfetti] = useState(false);
   const [focusMode, setFocusMode]     = useState(false);
+  const [safeSpace, setSafeSpace]     = useState(false); // Starky Safe Space — calm full-screen chat
   const chatEndRef = useRef(null);
   // SEN students get UNLIMITED sessions — never rate-limit special needs learners
   const { recordCall } = useSessionLimit();
@@ -2915,6 +2916,29 @@ export default function SpecialNeedsPage() {
   useEffect(() => { setProgress(loadP()); }, []);
   useEffect(() => { setXpData(loadXP()); }, []);
   useEffect(() => { try { if (localStorage.getItem('nw_sen_focus') === 'true') setFocusMode(true); } catch {} }, []);
+  // Safe Space: if SEN profile has safestart enabled, or ?safestart query param, launch directly into calm chat
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const user = JSON.parse(localStorage.getItem('nw_user') || '{}');
+      if (params.get('safestart') === '1' || (user.senFlag && localStorage.getItem('nw_sen_safestart') === 'true')) {
+        const savedCondition = localStorage.getItem('nw_sen_last_condition');
+        const savedStage = localStorage.getItem('nw_sen_last_stage');
+        if (savedCondition && savedStage) {
+          const c = CONDITIONS.find(x => x.id === savedCondition);
+          const s = STAGES.find(x => x.id === savedStage);
+          if (c && s) {
+            setCondition(c); setStage(s);
+            setFocus(FOCUSES.find(f => f.id === 'academic') || FOCUSES[0]);
+            setSafeSpace(true); setFocusMode(true);
+            const userName = user.name?.split(' ')[0] || '';
+            setMessages([{ role: 'assistant', content: `Hello${userName ? ' ' + userName : ''}. I'm here.\nTake your time. What would you like to do?` }]);
+            setStep(4);
+          }
+        }
+      }
+    } catch {}
+  }, []);
 
   const accentColor = condition?.color || "#C77DFF";
 
@@ -2953,6 +2977,8 @@ export default function SpecialNeedsPage() {
     p[key].sessions++;
     p[key].lastSeen = new Date().toISOString().split("T")[0];
     saveP(p); setProgress(p);
+    // Remember last condition/stage for Safe Space quick-launch
+    try { localStorage.setItem('nw_sen_last_condition', condition.id); localStorage.setItem('nw_sen_last_stage', stage.id); } catch {}
 
     const welcome = `Hello! I'm Starky — your specialist tutor.
 
@@ -3178,6 +3204,36 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                 Starky adapts completely to your child — their condition, their age, their level, their needs. Let's start by telling Starky who they're teaching.
               </p>
             </div>
+
+            {/* ── SAFE SPACE quick-launch ── */}
+            {(() => { try { return localStorage.getItem('nw_sen_last_condition') && localStorage.getItem('nw_sen_last_stage'); } catch { return false; } })() && (
+              <div style={{ marginBottom:24, display:"flex", flexDirection:"column", alignItems:"center", gap:10 }}>
+                <button onClick={() => {
+                  try {
+                    const c = CONDITIONS.find(x => x.id === localStorage.getItem('nw_sen_last_condition'));
+                    const s = STAGES.find(x => x.id === localStorage.getItem('nw_sen_last_stage'));
+                    if (c && s) {
+                      setCondition(c); setStage(s);
+                      setFocus(FOCUSES.find(f => f.id === 'academic') || FOCUSES[0]);
+                      setSafeSpace(true); setFocusMode(true);
+                      try { localStorage.setItem('nw_sen_focus', 'true'); } catch {}
+                      const user = JSON.parse(localStorage.getItem('nw_user') || '{}');
+                      const userName = user.name?.split(' ')[0] || '';
+                      setMessages([{ role: 'assistant', content: `Hello${userName ? ' ' + userName : ''}. I'm here.\nTake your time. What would you like to do?` }]);
+                      setStep(4);
+                    }
+                  } catch {}
+                }} style={{ ...S.btn, background:"linear-gradient(135deg,rgba(168,224,99,0.12),rgba(99,210,255,0.08))", border:"1px solid rgba(168,224,99,0.25)", borderRadius:18, padding:"16px 28px", color:"#A8E063", fontSize:15, fontWeight:800 }}>
+                  💜 Safe Space — Just Talk to Starky
+                </button>
+                <label style={{ display:"flex", alignItems:"center", gap:8, fontSize:11, color:"rgba(255,255,255,0.3)", cursor:"pointer" }}>
+                  <input type="checkbox" checked={(() => { try { return localStorage.getItem('nw_sen_safestart') === 'true'; } catch { return false; } })()}
+                    onChange={e => { try { localStorage.setItem('nw_sen_safestart', e.target.checked ? 'true' : 'false'); } catch {} }}
+                    style={{ accentColor:"#A8E063" }} />
+                  Always open in Safe Space mode
+                </label>
+              </div>
+            )}
 
             {/* ── COUNTRY SELECTOR ── */}
             <div style={{ display:"flex", justifyContent:"center", gap:8, marginBottom:24, flexWrap:"wrap" }}>
@@ -3464,6 +3520,20 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
                 )}
                 <div ref={chatEndRef}/>
               </div>
+
+              {/* Safe Space quick buttons — shown only at start of Safe Space session */}
+              {safeSpace && messages.length <= 1 && !loading && (
+                <div style={{ padding:"16px", display:"flex", gap:12, justifyContent:"center" }}>
+                  <button onClick={() => sendMessage("I just want to talk.")}
+                    style={{ ...S.btn, flex:1, maxWidth:200, background:"rgba(168,224,99,0.1)", border:"1px solid rgba(168,224,99,0.3)", borderRadius:14, padding:"16px", color:"#A8E063", fontSize:15, fontWeight:800 }}>
+                    Just talk
+                  </button>
+                  <button onClick={() => sendMessage("Show me something interesting.")}
+                    style={{ ...S.btn, flex:1, maxWidth:200, background:"rgba(99,210,255,0.1)", border:"1px solid rgba(99,210,255,0.3)", borderRadius:14, padding:"16px", color:"#63D2FF", fontSize:15, fontWeight:800 }}>
+                    Something interesting
+                  </button>
+                </div>
+              )}
 
               {/* Input */}
               <div style={{ padding:"12px 16px", borderTop:"1px solid "+accentColor+"15" }}>
