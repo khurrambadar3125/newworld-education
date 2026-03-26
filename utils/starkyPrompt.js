@@ -728,6 +728,31 @@ export function buildMessages({ userProfile: rawProfile, sessionMemory: rawMemor
     if (cond && SEN_CONDITION_NOTES[cond]) {
       systemPrompt += `\n\nDETAILED TEACHING PROTOCOL:\n${SEN_CONDITION_NOTES[cond]}`;
     }
+    // Inject functional profile if available (severity + literacy)
+    const severity = userProfile.senSeverity;
+    const literacy = userProfile.literacyProfile;
+    const summary = userProfile.functionalSummary;
+    if (severity || literacy?.length || summary) {
+      let fp = '\n\nSTUDENT FUNCTIONAL PROFILE:';
+      if (severity) fp += `\nSeverity: ${severity}`;
+      if (literacy?.length) fp += `\nLiteracy: ${literacy.join(', ')}`;
+      if (summary) fp += `\nSummary: ${summary}`;
+      // Calibration rules based on functional profile
+      if (severity === 'severe' && literacy?.includes('not_yet_reading_or_writing')) {
+        fp += '\n\nCALIBRATION: SEVERE NON-READER MODE — visual matching only. No text instructions. Tap-to-select responses. Zero written demands. Session length 5-8 minutes max. One image + one word + one tap. Build trust before teaching.';
+      } else if (severity === 'severe' && literacy?.includes('recognises_some_letters_or_words')) {
+        fp += '\n\nCALIBRATION: SEVERE EMERGING READER — letter recognition activities. Tap-to-match. One sound per session max. Session 8-12 minutes.';
+      } else if (severity === 'moderate' && (literacy?.includes('reads_with_help') || literacy?.includes('reads_independently'))) {
+        fp += '\n\nCALIBRATION: SUPPORTED READING — text-to-speech for all content. Simple sentences. One concept at a time. Typed responses accepted. Session 15-20 minutes.';
+      }
+      if (literacy?.includes('has_aac_device')) {
+        fp += '\n\nAAC USER: All responses via tap/click/select only. Never ask for spoken or typed response. Extended wait times: minimum 30 seconds.';
+      }
+      if (literacy?.includes('uses_pictures_or_symbols')) {
+        fp += '\n\nUSES SYMBOLS: Communicate through images and symbols. Keep text minimal. Visual matching is the primary learning mode.';
+      }
+      systemPrompt += fp;
+    }
   }
 
   // 3b-ii. Non-SEN users who mention SEN topics — two paths:

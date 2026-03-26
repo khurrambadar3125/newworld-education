@@ -477,52 +477,76 @@ export default function ParentPage() {
   // SEN FAST-TRACK REGISTRATION — radically simple for SEN parents
   // One screen: name + email + child name → condition selection → done → /special-needs
   // ════════════════════════════════════════════════════════════════════════════
-  const [senStep, setSenStep] = useState(1); // 1=details, 2=condition
+  const [senStep, setSenStep] = useState(1); // 1=details, 2=condition, 3=functional profile, 4=done
   const [senChildName, setSenChildName] = useState("");
+  const [literacyProfile, setLiteracyProfile] = useState([]); // functional literacy checkboxes
+
+  const LITERACY_OPTIONS = [
+    { id:'reads_independently', label:'Can read independently' },
+    { id:'writes_independently', label:'Can write independently' },
+    { id:'reads_with_help', label:'Can read with help' },
+    { id:'writes_with_help_or_types', label:'Can write with help (or type)' },
+    { id:'recognises_some_letters_or_words', label:'Recognises some letters or words' },
+    { id:'not_yet_reading_or_writing', label:'Not yet reading or writing' },
+    { id:'uses_pictures_or_symbols', label:'Uses pictures or symbols to communicate' },
+    { id:'has_aac_device', label:'Has a communication device (AAC)' },
+  ];
 
   const handleSenFastTrack = () => {
     if (!parentName.trim() || !email.includes("@") || !senChildName.trim()) {
       setEmailErr("Please fill in all three fields."); return;
     }
     setEmailErr("");
-    setSenStep(2); // go to condition selection
+    setSenStep(2);
     window.scrollTo({top:0,behavior:'smooth'});
   };
 
-  const handleSenComplete = (conditions, severity) => {
-    // Create account + child in one go
+  const buildFunctionalSummary = (conditions, severity, literacy) => {
+    const condNames = conditions.map(id => SEN_OPTIONS.find(s=>s.id===id)?.label?.replace(/^[^\s]+\s/,'') || id).join(', ');
+    const sevLabel = SEVERITY_OPTIONS.find(s=>s.id===severity)?.label || 'unknown';
+    const litLabels = literacy.map(id => LITERACY_OPTIONS.find(l=>l.id===id)?.label || id);
+    let summary = `Child has ${sevLabel.toLowerCase()} ${condNames}.`;
+    if (litLabels.length) summary += ' ' + litLabels.join('. ') + '.';
+    else summary += ' Literacy profile not yet assessed.';
+    return summary;
+  };
+
+  const handleSenComplete = (conditions, severity, literacy) => {
     const acc = loadAccount();
     const account = acc?.email ? acc : { email: email.trim(), parentName: parentName.trim(), children: [] };
     const id = `child_${Date.now()}`;
+    const functionalSummary = buildFunctionalSummary(conditions, severity, literacy);
     account.children = [...(account.children || []), {
       id, name: senChildName.trim(), email: '', grade: 'SEN',
       senCondition: conditions[0] || 'unsure',
       senConditions: conditions,
       senSeverity: severity || 'unsure',
+      literacyProfile: literacy,
+      functionalSummary,
       avatar: '💜', color: '#C77DFF',
     }];
     account.email = email.trim();
     account.parentName = parentName.trim();
     saveAccount(account);
-    // Set as active child and bridge to nw_user
     try {
       localStorage.setItem('nw_active_child', JSON.stringify(account.children[account.children.length - 1]));
-      const user = JSON.parse(localStorage.getItem('nw_user') || '{}');
       localStorage.setItem('nw_user', JSON.stringify({
-        ...user, name: senChildName.trim(), email: email.trim(), grade: 'SEN',
+        name: senChildName.trim(), email: email.trim(), grade: 'SEN',
         parentEmail: email.trim(), senFlag: true, senType: conditions[0] || 'unsure',
         senConditions: conditions, senSeverity: severity || 'unsure',
+        literacyProfile: literacy, functionalSummary,
       }));
     } catch {}
-    // Go straight to special-needs
-    window.location.href = '/special-needs';
+    setSenStep(4);
+    window.scrollTo({top:0,behavior:'smooth'});
   };
 
   if (senMode && screen === "setup") return (
     <div style={S.page}><style>{CSS}</style>
       <Header/>
-      <div style={{maxWidth:440, margin:"0 auto", padding: isMobile?"28px 16px":"56px 24px", animation:"fadeUp 0.4s ease-out"}}>
+      <div style={{maxWidth:440, margin:"0 auto", padding: isMobile?"28px 16px":"48px 24px", animation:"fadeUp 0.35s ease-out"}}>
 
+        {/* ── STEP 1: Name + Email + Child Name ─────────────── */}
         {senStep === 1 && (<>
           <div style={{textAlign:"center", marginBottom:24}}>
             <div style={{fontSize:56, marginBottom:10}}>💜</div>
@@ -530,104 +554,152 @@ export default function ParentPage() {
               Register Your Child
             </h1>
             <p style={{color:"rgba(255,255,255,0.6)", fontSize:15, lineHeight:1.7, margin:0}}>
-              Three fields. That's all. Then Starky is ready for your child.
+              Three fields. That's all.
             </p>
           </div>
-
           <div style={S.card}>
             <div style={{display:"flex",flexDirection:"column",gap:14}}>
               <div>
                 <label style={{fontSize:12,fontWeight:800,color:"rgba(255,255,255,0.5)",display:"block",marginBottom:6}}>Your Name</label>
-                <input style={{...S.input,fontSize:16,padding:"14px 16px"}} value={parentName} onChange={e=>setParentName(e.target.value)}
-                  placeholder="Your name" autoFocus/>
+                <input style={{...S.input,fontSize:16,padding:"14px 16px"}} value={parentName} onChange={e=>setParentName(e.target.value)} placeholder="Your name" autoFocus/>
               </div>
               <div>
                 <label style={{fontSize:12,fontWeight:800,color:"rgba(255,255,255,0.5)",display:"block",marginBottom:6}}>Your Email</label>
-                <input style={{...S.input,fontSize:16,padding:"14px 16px"}} type="email" value={email} onChange={e=>setEmail(e.target.value)}
-                  placeholder="your@email.com"/>
+                <input style={{...S.input,fontSize:16,padding:"14px 16px"}} type="email" value={email} onChange={e=>setEmail(e.target.value)} placeholder="your@email.com"/>
               </div>
               <div>
                 <label style={{fontSize:12,fontWeight:800,color:"rgba(255,255,255,0.5)",display:"block",marginBottom:6}}>Your Child's Name</label>
-                <input style={{...S.input,fontSize:16,padding:"14px 16px"}} value={senChildName} onChange={e=>setSenChildName(e.target.value)}
-                  placeholder="Child's first name" onKeyDown={e=>e.key==="Enter"&&handleSenFastTrack()}/>
+                <input style={{...S.input,fontSize:16,padding:"14px 16px"}} value={senChildName} onChange={e=>setSenChildName(e.target.value)} placeholder="Child's first name" onKeyDown={e=>e.key==="Enter"&&handleSenFastTrack()}/>
               </div>
-
               {emailErr && <div style={{color:"#FF6B6B",fontSize:13,fontWeight:700}}>{emailErr}</div>}
-
-              <button onClick={handleSenFastTrack}
-                style={{width:"100%",background:"linear-gradient(135deg,#C77DFF,#A78BFA)",color:"#fff",border:"none",borderRadius:14,padding:"16px",fontSize:17,fontWeight:800,cursor:"pointer",fontFamily:"'Nunito',sans-serif",marginTop:4}}>
+              <button onClick={handleSenFastTrack} style={{width:"100%",background:"linear-gradient(135deg,#C77DFF,#A78BFA)",color:"#fff",border:"none",borderRadius:14,padding:"16px",fontSize:17,fontWeight:800,cursor:"pointer",fontFamily:"'Nunito',sans-serif",marginTop:4}}>
                 Next →
               </button>
             </div>
           </div>
         </>)}
 
+        {/* ── STEP 2: Condition Selection ───────────────────── */}
         {senStep === 2 && (<>
           <div style={{textAlign:"center", marginBottom:20}}>
             <h2 style={{fontSize:isMobile?20:26, fontWeight:900, margin:"0 0 6px"}}>
-              What does {senChildName || 'your child'} need help with?
+              What does {senChildName} need help with?
             </h2>
-            <p style={{color:"rgba(255,255,255,0.5)", fontSize:13, margin:0}}>
-              Tap all that apply. You can change this later.
-            </p>
+            <p style={{color:"rgba(255,255,255,0.5)", fontSize:13, margin:0}}>Tap all that apply.</p>
           </div>
-
           <div style={{display:"grid",gridTemplateColumns:"1fr",gap:10,marginBottom:20}}>
             {SEN_OPTIONS.filter(s=>s.id).map(s => {
               const sel = childSEN.includes(s.id);
               return (
                 <button key={s.id} onClick={()=>setChildSEN(prev => sel ? prev.filter(x=>x!==s.id) : [...prev, s.id])}
-                  style={{
-                    padding:"14px 16px", borderRadius:14, cursor:"pointer", border:"none",
-                    fontFamily:"'Nunito',sans-serif", fontWeight:700, fontSize:15, textAlign:"left",
-                    background: sel ? (s.color||"#A78BFA")+"22" : "rgba(255,255,255,0.04)",
-                    outline: sel ? `2px solid ${s.color||"#A78BFA"}` : "1px solid rgba(255,255,255,0.1)",
-                    color: sel ? "#fff" : "rgba(255,255,255,0.7)",
-                    display:"flex",alignItems:"center",gap:12,minHeight:52,
-                  }}>
-                  <span style={{fontSize:12,width:20,textAlign:"center"}}>{sel ? "✓" : ""}</span>
+                  style={{padding:"14px 16px",borderRadius:14,cursor:"pointer",border:"none",fontFamily:"'Nunito',sans-serif",fontWeight:700,fontSize:15,textAlign:"left",
+                    background:sel?(s.color||"#A78BFA")+"22":"rgba(255,255,255,0.04)",
+                    outline:sel?`2px solid ${s.color||"#A78BFA"}`:"1px solid rgba(255,255,255,0.1)",
+                    color:sel?"#fff":"rgba(255,255,255,0.7)",display:"flex",alignItems:"center",gap:12,minHeight:52}}>
+                  <span style={{fontSize:12,width:20,textAlign:"center"}}>{sel?"✓":""}</span>
                   {s.label}
                 </button>
               );
             })}
           </div>
-
-          {childSEN.length > 0 && (<>
-            <div style={{marginBottom:16}}>
-              <div style={{fontSize:13,fontWeight:800,color:"rgba(255,255,255,0.6)",marginBottom:10}}>How much support does {senChildName || 'your child'} need?</div>
-              <div style={{display:"grid",gridTemplateColumns:"1fr",gap:8}}>
-                {SEVERITY_OPTIONS.map(sv => (
-                  <button key={sv.id} onClick={()=>setChildSeverity(sv.id)}
-                    style={{
-                      padding:"14px 16px", borderRadius:14, cursor:"pointer", border:"none",
-                      fontFamily:"'Nunito',sans-serif", fontWeight:600, fontSize:14, textAlign:"left",
-                      background: childSeverity===sv.id ? sv.color+"20" : "rgba(255,255,255,0.04)",
-                      outline: childSeverity===sv.id ? `2px solid ${sv.color}` : "1px solid rgba(255,255,255,0.1)",
-                      color: childSeverity===sv.id ? sv.color : "rgba(255,255,255,0.65)",
-                    }}>
-                    <div style={{fontWeight:800}}>{sv.label}</div>
-                    <div style={{fontSize:12,opacity:0.7,marginTop:2}}>{sv.desc}</div>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <button onClick={()=>handleSenComplete(childSEN, childSeverity)}
+          {childSEN.length > 0 && (
+            <button onClick={()=>{setSenStep(3);window.scrollTo({top:0,behavior:'smooth'});}}
               style={{width:"100%",background:"linear-gradient(135deg,#C77DFF,#A78BFA)",color:"#fff",border:"none",borderRadius:14,padding:"16px",fontSize:17,fontWeight:800,cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>
-              Start Learning with Starky →
+              Next →
             </button>
-          </>)}
-
-          {childSEN.length === 0 && (
-            <div style={{textAlign:"center",padding:"20px",color:"rgba(255,255,255,0.4)",fontSize:13}}>
-              Select at least one condition above to continue
-            </div>
           )}
+          {childSEN.length === 0 && (
+            <div style={{textAlign:"center",padding:"16px",color:"rgba(255,255,255,0.4)",fontSize:13}}>Select at least one to continue</div>
+          )}
+          <button onClick={()=>setSenStep(1)} style={{display:"block",margin:"16px auto 0",background:"none",border:"none",color:"rgba(255,255,255,0.4)",fontSize:13,cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>← Go back</button>
+        </>)}
 
-          <button onClick={()=>setSenStep(1)}
-            style={{display:"block",margin:"16px auto 0",background:"none",border:"none",color:"rgba(255,255,255,0.4)",fontSize:13,cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>
-            ← Go back
+        {/* ── STEP 3: Functional Profile — Severity + Literacy ── */}
+        {senStep === 3 && (<>
+          <div style={{textAlign:"center", marginBottom:20}}>
+            <h2 style={{fontSize:isMobile?20:26, fontWeight:900, margin:"0 0 6px"}}>
+              Two quick questions about {senChildName}
+            </h2>
+            <p style={{color:"rgba(255,255,255,0.5)", fontSize:13, margin:0}}>Choose everything that applies.</p>
+          </div>
+
+          {/* Severity */}
+          <div style={{marginBottom:24}}>
+            <div style={{fontSize:13,fontWeight:800,color:"rgba(255,255,255,0.6)",marginBottom:10}}>How would you describe the level of support {senChildName} needs?</div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr",gap:10}}>
+              {[
+                {id:'mild',label:'Mild',color:'#A8E063',desc:'Needs some extra support. Manages most daily activities independently. May struggle with specific subjects or social situations.'},
+                {id:'moderate',label:'Moderate',color:'#FFC300',desc:'Needs regular support. Can do many things with guidance. Has some independence in daily routines.'},
+                {id:'severe',label:'Severe',color:'#FF6B6B',desc:'Needs significant support for most activities. May have very limited verbal communication. Needs a highly structured and calm environment.'},
+              ].map(sv=>{
+                const sel = childSeverity===sv.id;
+                return (
+                  <button key={sv.id} onClick={()=>setChildSeverity(sv.id)}
+                    style={{padding:"16px",borderRadius:14,cursor:"pointer",border:"none",fontFamily:"'Nunito',sans-serif",textAlign:"left",
+                      background:sel?sv.color+"18":"rgba(255,255,255,0.04)",
+                      outline:sel?`2px solid ${sv.color}`:"1px solid rgba(255,255,255,0.1)",
+                      color:sel?"#fff":"rgba(255,255,255,0.65)"}}>
+                    <div style={{fontWeight:800,fontSize:16,marginBottom:4,color:sel?sv.color:"rgba(255,255,255,0.8)"}}>{sv.label}</div>
+                    <div style={{fontSize:13,lineHeight:1.6,opacity:0.75}}>{sv.desc}</div>
+                  </button>
+                );
+              })}
+            </div>
+            <div style={{fontSize:11,color:"rgba(255,255,255,0.4)",marginTop:8,textAlign:"center"}}>
+              Not sure which to choose? Select your best guess — Starky will adapt as it learns.
+            </div>
+          </div>
+
+          {/* Functional Literacy */}
+          <div style={{marginBottom:24}}>
+            <div style={{fontSize:13,fontWeight:800,color:"rgba(255,255,255,0.6)",marginBottom:4}}>What can {senChildName} do right now?</div>
+            <div style={{fontSize:11,color:"rgba(255,255,255,0.4)",marginBottom:12}}>Tick everything that applies today.</div>
+            <div style={{display:"flex",flexDirection:"column",gap:8}}>
+              {LITERACY_OPTIONS.map(opt=>{
+                const checked = literacyProfile.includes(opt.id);
+                return (
+                  <button key={opt.id} onClick={()=>setLiteracyProfile(prev=>checked?prev.filter(x=>x!==opt.id):[...prev,opt.id])}
+                    style={{display:"flex",alignItems:"center",gap:12,padding:"12px 14px",borderRadius:12,cursor:"pointer",border:"none",
+                      background:checked?"rgba(167,139,250,0.12)":"rgba(255,255,255,0.04)",
+                      outline:checked?"1.5px solid rgba(167,139,250,0.5)":"1px solid rgba(255,255,255,0.1)",
+                      fontFamily:"'Nunito',sans-serif",fontWeight:600,fontSize:14,textAlign:"left",
+                      color:checked?"#C77DFF":"rgba(255,255,255,0.65)",minHeight:44}}>
+                    <span style={{width:22,height:22,borderRadius:6,border:checked?"2px solid #C77DFF":"2px solid rgba(255,255,255,0.2)",
+                      display:"flex",alignItems:"center",justifyContent:"center",fontSize:14,flexShrink:0,
+                      background:checked?"rgba(199,125,255,0.2)":"transparent",color:"#C77DFF"}}>{checked?"✓":""}</span>
+                    {opt.label}
+                  </button>
+                );
+              })}
+            </div>
+            <div style={{fontSize:11,color:"rgba(255,255,255,0.4)",marginTop:8,textAlign:"center"}}>
+              Don't worry about being exact. This helps Starky start in the right place. It adapts as it learns.
+            </div>
+          </div>
+
+          <button onClick={()=>handleSenComplete(childSEN, childSeverity, literacyProfile)}
+            style={{width:"100%",background:"linear-gradient(135deg,#C77DFF,#A78BFA)",color:"#fff",border:"none",borderRadius:14,padding:"16px",fontSize:17,fontWeight:800,cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>
+            Continue →
           </button>
+          <button onClick={()=>setSenStep(2)} style={{display:"block",margin:"16px auto 0",background:"none",border:"none",color:"rgba(255,255,255,0.4)",fontSize:13,cursor:"pointer",fontFamily:"'Nunito',sans-serif"}}>← Go back</button>
+        </>)}
+
+        {/* ── STEP 4: You're In ────────────────────────────── */}
+        {senStep === 4 && (<>
+          <div style={{textAlign:"center", padding:"20px 0"}}>
+            <div style={{fontSize:64, marginBottom:16}}>💜</div>
+            <h2 style={{fontSize:isMobile?24:32, fontWeight:900, margin:"0 0 12px"}}>You're in.</h2>
+            <p style={{color:"rgba(255,255,255,0.6)", fontSize:16, lineHeight:1.8, margin:"0 0 8px", maxWidth:340, marginLeft:"auto", marginRight:"auto"}}>
+              {senChildName} is registered. Starky is ready — adapted specifically for {senChildName}'s needs.
+            </p>
+            <p style={{color:"rgba(255,255,255,0.45)", fontSize:13, lineHeight:1.7, margin:"0 0 28px"}}>
+              The first session is calm and gentle. No pressure. No failure possible. Just trust.
+            </p>
+            <a href="/special-needs"
+              style={{display:"inline-block",background:"linear-gradient(135deg,#C77DFF,#A78BFA)",color:"#fff",padding:"16px 40px",borderRadius:14,fontWeight:800,fontSize:17,textDecoration:"none",fontFamily:"'Nunito',sans-serif"}}>
+              Meet Starky →
+            </a>
+          </div>
         </>)}
       </div>
     </div>
