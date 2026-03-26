@@ -4,6 +4,7 @@ import { useSessionMemory, detectAndSaveMistake } from '../utils/useSessionMemor
 import { useTheme } from '../pages/_app';
 import { useSessionLimit, LimitReachedModal } from '../utils/useSessionLimit';
 import { recordMessageSignal, recordMoodSignal, recordDropoffSignal, recordStrategySignal, detectSentiment } from '../utils/signalCollector';
+import { checkContentViolation } from '../utils/contentProtection';
 
 // Format Starky's messages — lightweight markdown rendering for mobile readability
 function formatStarkyMsg(text) {
@@ -441,6 +442,18 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
     if (voiceText) pendingVoiceRef.current = null;
     const text = (voiceText || input).trim();
     if ((!text && !imageData) || loading || loadingRef.current) return;
+
+    // Client-side profanity check — block before sending to API
+    if (text) {
+      const violation = checkContentViolation(text);
+      if (violation.violation) {
+        setMessages(prev => [...prev, { role: 'user', content: text }, { role: 'assistant', content: violation.response }]);
+        setInput('');
+        loadingRef.current = false;
+        return;
+      }
+    }
+
     if (voiceText) setInput(''); // Clear the input field if voice-sent
 
     loadingRef.current = true;

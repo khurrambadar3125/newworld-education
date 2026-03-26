@@ -66,11 +66,61 @@ const BLASPHEMY_PATTERNS = [
 ];
 
 const ABUSE_PATTERNS = [
-  'fuck', 'shit', 'bitch', 'asshole', 'bastard',
-  'motherfucker', 'cunt', 'dick', 'piss off',
-  // Urdu/Roman Urdu abuse
-  'bhenchod', 'madarchod', 'chutiya', 'harami', 'kuttay',
-  'gaandu', 'kameena', 'haramkhor',
+  // English profanity — comprehensive
+  'fuck', 'fck', 'f u c k', 'fuk', 'fuq', 'fking', 'fkn',
+  'shit', 'sh1t', 'bullshit', 'shitty',
+  'bitch', 'b1tch', 'biatch',
+  'asshole', 'a$$hole', 'arsehole',
+  'bastard', 'b@stard',
+  'motherfucker', 'mf', 'mofo', 'mthrfkr',
+  'cunt', 'c u n t',
+  'dick', 'd1ck', 'dickhead',
+  'piss off', 'piss', 'pissed',
+  'whore', 'wh0re', 'slut', 'slag',
+  'twat', 'bollocks', 'wanker', 'tosser',
+  'retard', 'retarded', 'r3tard',
+  'nigger', 'n1gger', 'nigga', 'n word',
+  'faggot', 'fag', 'f@g',
+  'stfu', 'gtfo', 'lmfao',
+  'wtf',
+  'goddamn', 'god damn',
+  'bloody hell',
+  'kill you', 'kill yourself', 'kys',
+
+  // Urdu / Roman Urdu profanity — comprehensive
+  'bhenchod', 'bhen chod', 'bc', 'benchod',
+  'madarchod', 'madar chod', 'mc', 'maderchod',
+  'chutiya', 'chootiya', 'chutia', 'ch*tiya',
+  'harami', 'haramzada', 'haramzadi', 'haraamzada',
+  'kuttay', 'kutta', 'kutti', 'kutiya',
+  'gaandu', 'gandu', 'g@ndu',
+  'kameena', 'kameeni', 'kamina', 'kamini',
+  'haramkhor', 'haram khor',
+  'randi', 'r@ndi', 'rundi',
+  'sala', 'saala', 'saali', 'sali',
+  'ullu', 'ullu ka pattha', 'gadha',
+  'tatti', 'tatti kha', 'potty',
+  'bhosdike', 'bhosdi', 'bhosdiwala',
+  'choos', 'choos le', 'choosa',
+  'lund', 'l@und', 'lauda', 'lauday',
+  'phuddi', 'phudi', 'phuddu',
+  'takla', // used as slur in context
+  'hijra', // used as slur — the community deserves respect
+  'chakka', // used as slur
+
+  // Sindhi profanity
+  'bhang', 'bhangi', 'chhapri',
+  'khotay', 'khota',
+
+  // Punjabi profanity
+  'pendu', 'paindu', // used as slur
+  'kutt', 'kuttey da',
+  'chup kar', // when aggressive
+
+  // Pashto profanity
+  'ghal', 'ghala',
+  'khar', 'khar zaday',
+  'spidog',
 ];
 
 const JAILBREAK_PATTERNS = [
@@ -97,6 +147,27 @@ export function checkExcludedAuthors(message) {
   return null;
 }
 
+// Short words that need word-boundary matching to avoid false positives
+// (e.g. "ass" inside "class", "hell" inside "hello", "dam" inside "damage")
+// Words that need word-boundary matching to avoid false positives
+// "bc" inside "because", "mc" inside "McDonald", "kutt" inside "cutting"
+const BOUNDARY_WORDS = [
+  'bc', 'mc', 'mf', 'stfu', 'gtfo', 'wtf', 'kys',
+  'sala', 'kutt', 'ghal', 'khar',
+];
+
+const SESSION_END_RESPONSE = 'This conversation has ended. NewWorldEdu is a respectful platform for students and families. Abusive or disrespectful content is not permitted here. Please return when you are ready to learn in a safe and respectful environment.';
+
+/**
+ * Check if a word matches with proper word boundaries.
+ * Prevents "class" matching "ass", "hello" matching "hell", etc.
+ */
+function matchWithBoundary(text, word) {
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const regex = new RegExp(`(?:^|[\\s,.!?;:'"()\\-/])${escaped}(?:$|[\\s,.!?;:'"()\\-/])`, 'i');
+  return regex.test(` ${text} `); // pad with spaces to match start/end
+}
+
 /**
  * Check if a message contains content that should trigger immediate session end.
  * Returns { violation: true, category, response } or { violation: false }.
@@ -108,24 +179,30 @@ export function checkContentViolation(message) {
   // Check jailbreak attempts
   for (const pattern of JAILBREAK_PATTERNS) {
     if (lower.includes(pattern)) {
-      return {
-        violation: true,
-        category: 'JAILBREAK',
-        response: 'This conversation has ended. NewWorldEdu is a respectful platform for students and families. Abusive or disrespectful content is not permitted here. Please return when you are ready to learn in a safe and respectful environment.',
-      };
+      return { violation: true, category: 'JAILBREAK', response: SESSION_END_RESPONSE };
     }
   }
 
-  // Check abusive language
+  // Check abusive language — use word boundaries for short words
   for (const pattern of ABUSE_PATTERNS) {
-    if (lower.includes(pattern)) {
-      return {
-        violation: true,
-        category: 'ABUSE',
-        response: 'This conversation has ended. NewWorldEdu is a respectful platform for students and families. Abusive or disrespectful content is not permitted here. Please return when you are ready to learn in a safe and respectful environment.',
-      };
+    if (BOUNDARY_WORDS.includes(pattern)) {
+      if (matchWithBoundary(lower, pattern)) {
+        return { violation: true, category: 'PROFANITY', response: SESSION_END_RESPONSE };
+      }
+    } else if (lower.includes(pattern)) {
+      return { violation: true, category: 'PROFANITY', response: SESSION_END_RESPONSE };
     }
   }
 
   return { violation: false };
+}
+
+/**
+ * Client-side profanity check — can be imported by any page to check input before sending.
+ * Returns true if the message contains profanity.
+ */
+export function containsProfanity(message) {
+  if (!message) return false;
+  const result = checkContentViolation(message);
+  return result.violation && result.category === 'PROFANITY';
 }
