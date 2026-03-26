@@ -2962,6 +2962,17 @@ export default function SpecialNeedsPage() {
     .sen-focus-mode *{animation:none !important;transition:none !important}
     .sen-focus-mode{background:#0A0F1E !important;font-size:20px !important;line-height:1.8 !important}
     @media (prefers-color-scheme: light){.sen-focus-mode{background:#FFFFFF !important;color:#1a1a1a !important}}
+    /* Responsive grids for SEN cards */
+    .sen-grid-cards{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+    @media(max-width:400px){.sen-grid-cards{grid-template-columns:1fr}}
+    @media(min-width:769px){.sen-grid-cards{grid-template-columns:repeat(4,1fr)}}
+    .sen-grid-quick{display:grid;gap:8px;grid-template-columns:repeat(2,1fr)}
+    @media(max-width:400px){.sen-grid-quick{grid-template-columns:1fr}}
+    @media(min-width:769px){.sen-grid-quick{grid-template-columns:repeat(4,1fr)}}
+    /* Landscape phone — reduce chat height */
+    @media(orientation:landscape) and (max-height:500px){
+      .sen-chat-area{height:calc(100vh - 160px) !important;min-height:150px !important}
+    }
   `;
 
   const S = {
@@ -3313,7 +3324,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
 
             <div style={{ fontSize:12, fontWeight:900, color:"rgba(255,255,255,0.3)", letterSpacing:2, textAlign:"center", marginBottom:16 }}>STEP 1 — SELECT CONDITION</div>
 
-            <div style={{ display:"grid", gridTemplateColumns:isMobile?"repeat(2,1fr)":"repeat(4,1fr)", gap:12, marginBottom:16 }}>
+            <div className="sen-grid-cards" style={{ marginBottom:16 }}>
               {CONDITIONS.map(c => (
                 <button key={c.id} aria-label={`Select condition: ${c.name}`} role="button" onClick={() => { sndTick(); setCondition(c); setStep(2); }}
                   style={{ ...S.btn, background:c.color+"0A", border:"2px solid "+c.color+"30", borderRadius:18, padding:"18px 12px", textAlign:"center", color:"#fff", minHeight:52 }}
@@ -3487,7 +3498,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
 
             {/* Chat */}
             <div style={{ background:"rgba(255,255,255,0.03)", border:"1px solid rgba(255,255,255,0.08)", borderRadius:20, overflow:"hidden" }}>
-              <div role="log" aria-label="Chat with Starky" aria-live="polite" style={{ height:isMobile?400:500, overflowY:"auto", padding:isMobile?14:20, display:"flex", flexDirection:"column", gap:14 }}>
+              <div className="sen-chat-area" role="log" aria-label="Chat with Starky" aria-live="polite" style={{ height:isMobile?"calc(100vh - 280px)":"500px", minHeight:200, maxHeight:isMobile?400:600, overflowY:"auto", padding:isMobile?14:20, display:"flex", flexDirection:"column", gap:14, WebkitOverflowScrolling:"touch" }}>
                 {messages.map((msg, i) => (
                   <div key={i}>
                     <div aria-label={msg.role==="assistant"?"Starky says":"You said"} style={{ display:"flex", justifyContent:msg.role==="user"?"flex-end":"flex-start", gap:10, animation:"fadeUp 0.3s ease" }}>
@@ -3540,14 +3551,15 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
               {/* Input */}
               <div style={{ padding:"12px 16px", borderTop:"1px solid "+accentColor+"15" }}>
                 <textarea value={input} onChange={e=>setInput(e.target.value)}
-                  onKeyDown={e => { if(e.key==="Enter"&&(e.ctrlKey||e.metaKey)) sendMessage(input); }}
+                  onKeyDown={e => { if(e.key==="Enter"&&!e.shiftKey&&isMobile) { e.preventDefault(); sendMessage(input); } if(e.key==="Enter"&&(e.ctrlKey||e.metaKey)) sendMessage(input); }}
+                  onFocus={e => { setTimeout(() => e.target.scrollIntoView({ behavior:'smooth', block:'nearest' }), 300); }}
                   aria-label={`Type your message to Starky about ${subject||focus?.name||"anything"}`}
-                  placeholder={`Ask Starky about ${subject||focus?.name||"anything"}... Ctrl+Enter to send`}
-                  rows={isMobile?3:4}
-                  style={{ width:"100%", background:"rgba(255,255,255,0.04)", border:"1px solid "+accentColor+"22", borderRadius:14, padding:"12px 14px", color:"#fff", fontSize:15, fontFamily:"'Nunito',sans-serif", resize:"vertical", lineHeight:1.7 }}/>
+                  placeholder={isMobile ? `Ask Starky anything... Enter to send` : `Ask Starky about ${subject||focus?.name||"anything"}... Ctrl+Enter to send`}
+                  rows={isMobile?2:4}
+                  style={{ width:"100%", background:"rgba(255,255,255,0.04)", border:"1px solid "+accentColor+"22", borderRadius:14, padding:"12px 14px", color:"#fff", fontSize:16, fontFamily:"'Nunito',sans-serif", resize:isMobile?"none":"vertical", lineHeight:1.7 }}/>
                 <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginTop:8 }}>
                   <span style={{ fontSize:11, color:"rgba(255,255,255,0.2)" }}>
-                    Unlimited sessions for SEN students · Ctrl+Enter to send
+                    {isMobile ? 'Unlimited sessions · Enter to send' : 'Unlimited sessions for SEN students · Ctrl+Enter to send'}
                   </span>
                   <button aria-label="Send message" role="button" onClick={()=>sendMessage(input)} disabled={!input.trim()||loading||limitReached}
                     style={{ ...S.btn, background:input.trim()&&!loading ? "linear-gradient(135deg,"+accentColor+","+accentColor+"BB)" : "rgba(255,255,255,0.08)", borderRadius:14, padding:"12px 24px", color:input.trim()&&!loading?"#060B20":"rgba(255,255,255,0.3)", fontWeight:900, fontSize:14, minHeight:52 }}>
@@ -3559,7 +3571,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
 
             {/* Quick prompts — hidden in focus mode */}
             {!focusMode && (
-            <div style={{ marginTop:12, display:"grid", gridTemplateColumns:isMobile?"repeat(2,1fr)":"repeat(4,1fr)", gap:8 }}>
+            <div className="sen-grid-quick" style={{ marginTop:12 }}>
               {[
                 { e:"🔄", t:"Explain differently", p:`Explain that again in a completely different way — try a different approach, a different example, a different analogy.` },
                 { e:"📋", t:"Step by step", p:`Break this down into the smallest possible steps. One thing at a time.` },
