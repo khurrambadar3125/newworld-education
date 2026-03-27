@@ -96,6 +96,56 @@ function OfflineBanner() {
   );
 }
 
+// PWA Install Prompt — captures the browser event and shows a custom banner
+function InstallBanner() {
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
+  const [showBanner, setShowBanner] = useState(false);
+
+  useEffect(() => {
+    // Don't show if already installed or dismissed recently
+    try { if (localStorage.getItem('nw_install_dismissed')) return; } catch {}
+    if (window.matchMedia('(display-mode: standalone)').matches) return;
+
+    const handler = (e) => { e.preventDefault(); setDeferredPrompt(e); setShowBanner(true); };
+    window.addEventListener('beforeinstallprompt', handler);
+    return () => window.removeEventListener('beforeinstallprompt', handler);
+  }, []);
+
+  const handleInstall = async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const result = await deferredPrompt.userChoice;
+    if (result.outcome === 'accepted') setShowBanner(false);
+    setDeferredPrompt(null);
+  };
+
+  const dismiss = () => {
+    setShowBanner(false);
+    try { localStorage.setItem('nw_install_dismissed', Date.now().toString()); } catch {}
+  };
+
+  if (!showBanner) return null;
+  return (
+    <div style={{ position:'fixed', bottom:0, left:0, right:0, zIndex:99998, padding:'16px',
+      background:'linear-gradient(135deg,#0D1635,#080C18)', borderTop:'1px solid rgba(79,142,247,0.2)',
+      display:'flex', alignItems:'center', gap:12, fontFamily:"'Sora',sans-serif",
+      paddingBottom:'max(16px, env(safe-area-inset-bottom))' }}>
+      <div style={{ width:44, height:44, borderRadius:12, background:'linear-gradient(135deg,#0074c5,#072a49)',
+        display:'flex', alignItems:'center', justifyContent:'center', color:'#fff', fontSize:22, fontWeight:900,
+        fontFamily:'Georgia,serif', flexShrink:0 }}>N</div>
+      <div style={{ flex:1 }}>
+        <div style={{ fontWeight:800, fontSize:14, color:'#fff' }}>Install NewWorldEdu</div>
+        <div style={{ fontSize:12, color:'rgba(255,255,255,0.5)' }}>Add to home screen for quick access</div>
+      </div>
+      <button onClick={handleInstall} style={{ background:'linear-gradient(135deg,#4F8EF7,#6366F1)', color:'#fff',
+        border:'none', borderRadius:10, padding:'10px 20px', fontWeight:800, fontSize:13, cursor:'pointer',
+        fontFamily:"'Sora',sans-serif" }}>Install</button>
+      <button onClick={dismiss} style={{ background:'none', border:'none', color:'rgba(255,255,255,0.4)',
+        fontSize:18, cursor:'pointer', padding:'4px 8px' }}>×</button>
+    </div>
+  );
+}
+
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
   const router = useRouter();
   const showNav = !PAGES_WITH_OWN_NAV.includes(router.pathname);
@@ -434,6 +484,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
         `}</style>
         <AuthBridge />
         <OfflineBanner />
+        <InstallBanner />
         {showNav && <Nav current={router.pathname} />}
         <ErrorBoundary><Component {...pageProps} /></ErrorBoundary>
         {!['/special-needs'].includes(router.pathname) && <StarkyBubble />}
