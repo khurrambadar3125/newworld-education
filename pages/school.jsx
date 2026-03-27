@@ -89,26 +89,25 @@ export default function SchoolPage() {
           ))}
         </div>
 
-        {/* Plans */}
+        {/* Partnership */}
         <div style={{ textAlign: 'center', marginBottom: 20 }}>
-          <div style={{ fontSize: 12, fontWeight: 800, color: 'rgba(255,255,255,0.3)', letterSpacing: 2, marginBottom: 10 }}>SCHOOL PLANS</div>
-          <h2 style={{ fontSize: 26, fontWeight: 900, margin: '0 0 6px' }}>Simple pricing, no per-student fees</h2>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.4)' }}>All plans include a 14-day free trial for your school</p>
+          <div style={{ fontSize: 12, fontWeight: 800, color: 'rgba(255,255,255,0.3)', letterSpacing: 2, marginBottom: 10 }}>PARTNERSHIPS</div>
+          <h2 style={{ fontSize: 26, fontWeight: 900, margin: '0 0 6px' }}>School & Institutional Partnerships</h2>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 16, marginBottom: 56 }}>
-          {PLANS.map(p => (
-            <div key={p.name} style={{ background: 'rgba(255,255,255,0.04)', border: `1px solid ${p.popular ? p.color + '55' : 'rgba(255,255,255,0.08)'}`, borderRadius: 20, padding: 28, position: 'relative' }}>
-              {p.popular && <div style={{ position: 'absolute', top: -10, right: 16, background: p.color, color: '#060B20', fontSize: 11, fontWeight: 800, padding: '4px 12px', borderRadius: 100 }}>Most Popular</div>}
-              <div style={{ fontWeight: 900, fontSize: 18, color: p.color, marginBottom: 4 }}>{p.name}</div>
-              <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.4)', marginBottom: 12 }}>{p.students}</div>
-              <div style={{ fontSize: 28, fontWeight: 900, marginBottom: 16 }}>{isPK ? p.pricePKR : p.priceUSD}</div>
-              {p.features.map(f => (
-                <div key={f} style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', padding: '4px 0', display: 'flex', gap: 8 }}>
-                  <span style={{ color: p.color }}>✓</span> {f}
-                </div>
-              ))}
-            </div>
-          ))}
+        <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 24, padding: 36, maxWidth: 560, margin: '0 auto 56px', textAlign: 'center' }}>
+          <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.65)', lineHeight: 1.8, margin: '0 0 8px' }}>
+            Pricing for schools and institutions is tailored to the size of your student body, subjects covered, and the level of integration you need.
+          </p>
+          <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.65)', lineHeight: 1.8, margin: '0 0 28px' }}>
+            We work with each school individually to build the right structure.
+          </p>
+          <a href="mailto:khurram@newworld.education?subject=School%20Partnership%20Enquiry"
+            style={{ display: 'inline-block', background: 'linear-gradient(135deg,#4F8EF7,#6366F1)', color: '#fff', padding: '16px 36px', borderRadius: 14, fontWeight: 800, fontSize: 16, textDecoration: 'none', fontFamily: "'Sora',sans-serif" }}>
+            Request a proposal →
+          </a>
+          <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.35)', marginTop: 16 }}>
+            Currently in active discussions with leading institutions in Karachi.
+          </p>
         </div>
 
         {/* Inquiry Form */}
