@@ -208,7 +208,11 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           }
 
           /* Touch improvements for all mobile/tablet */
-          button, a, [role="button"] { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+          button, a, [role="button"] { -webkit-tap-highlight-color: transparent; touch-action: manipulation; cursor: pointer; -webkit-appearance: none; position: relative; }
+          /* iOS fix: child elements inside buttons must not capture taps — entire button area must be clickable */
+          button > *, button > span, button > div, [role="button"] > * { pointer-events: none; }
+          /* Exception: inputs and textareas inside buttons (rare but possible) */
+          button input, button textarea, button select { pointer-events: auto; }
           * { -webkit-overflow-scrolling: touch; }
 
           /* Tablet-specific (iPad, Android tablets, Galaxy Tab) */

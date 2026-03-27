@@ -2965,8 +2965,9 @@ export default function SpecialNeedsPage() {
     .sen-focus-mode button,.sen-focus-mode a{color:inherit}
     @media (prefers-color-scheme: light){.sen-focus-mode{background:#FFFFFF !important;color:#1a1a1a !important}
       .sen-focus-mode *{color:inherit}}
-    /* iOS button fix — ensure all buttons are clickable */
-    button,a,[role="button"]{-webkit-tap-highlight-color:transparent;touch-action:manipulation;cursor:pointer;-webkit-appearance:none}
+    /* iOS button fix — ensure ENTIRE button area is clickable, not just the text */
+    button,a,[role="button"]{-webkit-tap-highlight-color:transparent;touch-action:manipulation;cursor:pointer;-webkit-appearance:none;position:relative}
+    button>*,button>span,button>div,[role="button"]>*{pointer-events:none}
     /* Responsive grids for SEN cards */
     .sen-grid-cards{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
     @media(max-width:400px){.sen-grid-cards{grid-template-columns:1fr}}
