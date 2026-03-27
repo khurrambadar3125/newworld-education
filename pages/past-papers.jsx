@@ -652,7 +652,7 @@ export default function PastPapersPage() {
     try {
       // All user-facing calls use Haiku for cost control
       const hasPdf = apiMessages.some(m => Array.isArray(m.content) && m.content.some(c => c.type === "document"));
-      const model = "claude-haiku-4-5-20251001";
+      const model = "claude-3-haiku-20240307";
       const tokens = hasPdf ? 4096 : 1500;
 
       const res  = await fetch("/api/chat",{

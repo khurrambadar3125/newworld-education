@@ -175,7 +175,7 @@ Return ONLY valid JSON with these fields:
 }`;
   let raw = '';
   try {
-    const response = await anthropic.messages.create({ model: 'claude-haiku-4-5-20251001', max_tokens: 900, system: 'You are an expert educational analyst. Return ONLY raw JSON — no markdown, no code blocks, no explanation. Just the JSON object.', messages: [{ role: 'user', content: prompt }] });
+    const response = await anthropic.messages.create({ model: 'claude-3-haiku-20240307', max_tokens: 900, system: 'You are an expert educational analyst. Return ONLY raw JSON — no markdown, no code blocks, no explanation. Just the JSON object.', messages: [{ role: 'user', content: prompt }] });
     raw = (response.content[0].text || '').trim();
   } catch (apiErr) {
     console.error('[SESSION ANALYSIS] API call failed:', apiErr.message);

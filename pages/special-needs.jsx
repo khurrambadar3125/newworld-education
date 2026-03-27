@@ -3044,7 +3044,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({
-          model:"claude-haiku-4-5-20251001",
+          model:"claude-3-haiku-20240307",
           max_tokens:1500,
           system:buildPrompt(condition, stage, focus, subject, urduMode, isUAE),
           messages:prev.map(m => ({ role:m.role, content:m.content })),

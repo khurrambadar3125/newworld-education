@@ -170,7 +170,7 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: 'No valid messages provided' });
       }
       const response = await callWithRetry(() => client.messages.create({
-        model: 'claude-haiku-4-5-20251001',
+        model: 'claude-3-haiku-20240307',
         max_tokens: 1024,
         system: legacySystem || 'You are Starky ★, a warm and encouraging AI tutor for NewWorldEdu.',
         messages: userMessages,
@@ -346,7 +346,7 @@ export default async function handler(req, res) {
     ];
 
     const apiParams = {
-      model: 'claude-haiku-4-5-20251001',
+      model: 'claude-3-haiku-20240307',
       max_tokens: hasImage ? 2048 : 1024,
       system: systemBlocks,
       messages: built.messages,

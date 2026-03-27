@@ -90,7 +90,7 @@ export default async function handler(req, res) {
 
     // ── Call Claude Haiku ─────────────────────────────────────────────────
     const response = await client.messages.create({
-      model: 'claude-haiku-4-5-20251001',
+      model: 'claude-3-haiku-20240307',
       max_tokens: 4096,
       system: systemPrompt,
       messages: [{ role: 'user', content: userMessage }],

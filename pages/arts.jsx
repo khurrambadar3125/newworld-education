@@ -274,7 +274,7 @@ export default function ArtsPage() {
       const res = await fetch('/api/anthropic', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          model: 'claude-haiku-4-5-20251001', max_tokens: 1200,
+          model: 'claude-3-haiku-20240307', max_tokens: 1200,
           system: buildPrompt(stage, topic) + '\n\nThe student is sharing a drawing they made on the digital canvas. Give warm, encouraging, specific feedback. Notice colours, shapes, composition. Suggest one thing to try next.',
           messages: prev.map(m => ({ role: m.role, content: m.content })).slice(0, -1).concat([{
             role: 'user',
@@ -342,7 +342,7 @@ export default function ArtsPage() {
         }]);
         const res = await fetch('/api/anthropic', {
           method: 'POST', headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ model: 'claude-haiku-4-5-20251001', max_tokens: 1200, system: buildPrompt(stage, topic) + '\n\nThe student is sharing artwork or an image. Give warm, specific, encouraging feedback. Notice techniques, colours, composition, effort.', messages: apiMessages })
+          body: JSON.stringify({ model: 'claude-3-haiku-20240307', max_tokens: 1200, system: buildPrompt(stage, topic) + '\n\nThe student is sharing artwork or an image. Give warm, specific, encouraging feedback. Notice techniques, colours, composition, effort.', messages: apiMessages })
         });
         const data = await res.json();
         const reply = data.content?.[0]?.text || 'Something went wrong.';
@@ -357,7 +357,7 @@ export default function ArtsPage() {
       } else {
         // Text-only uses /api/chat
         const res = await fetch("/api/chat", { method:"POST", headers:{"Content-Type":"application/json"},
-          body: JSON.stringify({ model:"claude-haiku-4-5-20251001", max_tokens:1200, system:buildPrompt(stage, topic), messages:prev.map(m=>({role:m.role,content:m.content})) }) });
+          body: JSON.stringify({ model:"claude-3-haiku-20240307", max_tokens:1200, system:buildPrompt(stage, topic), messages:prev.map(m=>({role:m.role,content:m.content})) }) });
         const data = await res.json();
         const reply = data.content?.[0]?.text || "Something went wrong.";
         setMessages(p => [...p, { role:"assistant", content:reply }]);

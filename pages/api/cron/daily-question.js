@@ -27,7 +27,7 @@ async function generateQuestion(grade, subject, recentQuestions = []) {
     : '';
 
   const msg = await anthropic.messages.create({
-    model: 'claude-haiku-4-5-20251001',
+    model: 'claude-3-haiku-20240307',
     max_tokens: 600,
     messages: [{
       role: 'user',

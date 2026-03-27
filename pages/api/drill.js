@@ -227,7 +227,7 @@ export default async function handler(req, res) {
     for (let attempt = 0; attempt <= 2; attempt++) {
       try {
         response = await client.messages.create({
-          model: 'claude-haiku-4-5-20251001',
+          model: 'claude-3-haiku-20240307',
           max_tokens: 800,
           system: systemPrompt,
           messages,
