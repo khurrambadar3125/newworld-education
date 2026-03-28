@@ -80,6 +80,7 @@ function formatMsg(text) {
 
 export default function Home() {
   const [selectedGrade, setSelectedGrade] = useState(null);
+  const [showAudienceSelector, setShowAudienceSelector] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState(null);
 
   // Grade classification — used in greetings, suggestion chips, subject lists
@@ -754,19 +755,42 @@ export default function Home() {
       <section className="hero">
         <div className="hb">★ Starky — KG to A Levels</div>
         <h1>Every Child Deserves a <em>World-Class</em> Tutor</h1>
-        <button onClick={()=>document.getElementById('oa-level')?.scrollIntoView({behavior:'smooth'})} style={{display:'inline-flex',alignItems:'center',gap:'8px',background:'rgba(167,139,250,0.12)',border:'2px solid rgba(167,139,250,0.5)',borderRadius:'50px',padding:'10px 22px',margin:'0 0 14px',cursor:'pointer',fontFamily:"'Sora',sans-serif",fontWeight:'700',fontSize:'clamp(12px,1.4vw,14px)',color:'#A78BFA',transition:'all 0.2s'}} onMouseEnter={e=>{e.currentTarget.style.background='rgba(167,139,250,0.22)';e.currentTarget.style.transform='translateY(-2px)';}} onMouseLeave={e=>{e.currentTarget.style.background='rgba(167,139,250,0.12)';e.currentTarget.style.transform='translateY(0)';}}>
-          <span>📚</span> O Level &amp; A Level — see how Starky gets you to A* <span style={{opacity:0.6}}>↓</span>
-        </button>
-        <p className="hs">Better grades in 30 days. 24/7.</p>
-        <div className="hc">
-          <a href="#start-learning" className="bp">👦 I'm a Student — Start Learning →</a>
-          <div style={{display:'flex',gap:10,width:'100%',maxWidth:320}}>
-            <a href="/parent" style={{flex:1,textAlign:'center',background:'rgba(74,222,128,0.1)',border:'2px solid rgba(74,222,128,0.35)',color:'#4ADE80',borderRadius:14,padding:'14px 8px',fontSize:15,fontWeight:700,textDecoration:'none'}}>👨‍👩‍👧 Parent</a>
-            <a href="/dashboard" style={{flex:1,textAlign:'center',background:'rgba(79,142,247,0.1)',border:'2px solid rgba(79,142,247,0.35)',color:'#4F8EF7',borderRadius:14,padding:'14px 8px',fontSize:15,fontWeight:700,textDecoration:'none'}}>👩‍🏫 Teacher</a>
+        <p className="hs">Better grades in 30 days. 24/7. 16 languages. Every subject.</p>
+
+        {!showAudienceSelector ? (
+          <div className="hc">
+            <button className="bp" onClick={() => setShowAudienceSelector(true)}
+              style={{fontSize:18,padding:'18px 32px',maxWidth:400}}>
+              Meet your personal tutor. Start learning →
+            </button>
           </div>
-          <a href="/kids" style={{display:'block',width:'100%',maxWidth:320,background:'linear-gradient(135deg, #FFC300, #FF8E53)',color:'#060B20',border:'none',borderRadius:14,padding:'16px 24px',fontSize:17,fontWeight:700,fontFamily:"'Sora',sans-serif",cursor:'pointer',textDecoration:'none',textAlign:'center'}}>I'm a Kid! 🌟 Tap here!</a>
-          <button className="bo" onClick={() => { window.dispatchEvent(new CustomEvent('starky-scan')); }} style={{background:'rgba(167,139,250,0.12)',border:'2px solid rgba(167,139,250,0.4)',color:'#A78BFA'}}>📷 Photo Your Homework — Starky Reads It</button>
-        </div>
+        ) : (
+          <div style={{maxWidth:400,margin:'0 auto',animation:'fadeUp 0.3s ease'}}>
+            <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:10,marginBottom:12}}>
+              <a href="#start-learning" onClick={()=>setShowAudienceSelector(false)}
+                style={{background:'rgba(79,142,247,0.1)',border:'2px solid rgba(79,142,247,0.3)',borderRadius:16,padding:'20px 12px',textAlign:'center',textDecoration:'none',color:'#4F8EF7',fontWeight:800,fontSize:15,display:'flex',flexDirection:'column',alignItems:'center',gap:6}}>
+                <span style={{fontSize:28}}>👨‍🎓</span>I am a Student
+              </a>
+              <a href="/parent"
+                style={{background:'rgba(74,222,128,0.1)',border:'2px solid rgba(74,222,128,0.3)',borderRadius:16,padding:'20px 12px',textAlign:'center',textDecoration:'none',color:'#4ADE80',fontWeight:800,fontSize:15,display:'flex',flexDirection:'column',alignItems:'center',gap:6}}>
+                <span style={{fontSize:28}}>👨‍👩‍👧</span>I am a Parent
+              </a>
+              <a href="/dashboard"
+                style={{background:'rgba(255,195,0,0.1)',border:'2px solid rgba(255,195,0,0.3)',borderRadius:16,padding:'20px 12px',textAlign:'center',textDecoration:'none',color:'#FFC300',fontWeight:800,fontSize:15,display:'flex',flexDirection:'column',alignItems:'center',gap:6}}>
+                <span style={{fontSize:28}}>👩‍🏫</span>I am a Teacher
+              </a>
+              <a href="/parent?sen=1"
+                style={{background:'rgba(199,125,255,0.1)',border:'2px solid rgba(199,125,255,0.3)',borderRadius:16,padding:'20px 12px',textAlign:'center',textDecoration:'none',color:'#C77DFF',fontWeight:800,fontSize:15,display:'flex',flexDirection:'column',alignItems:'center',gap:6}}>
+                <span style={{fontSize:28}}>💜</span>My Child Has Special Needs
+              </a>
+            </div>
+            <button onClick={() => { setShowAudienceSelector(false); setTimeout(() => { const el = document.querySelector('.starky-fab'); if (el) el.click(); }, 200); }}
+              style={{background:'none',border:'none',color:'rgba(255,255,255,0.4)',fontSize:13,cursor:'pointer',fontFamily:"'Sora',sans-serif",display:'block',margin:'0 auto'}}>
+              Just show me the tutor →
+            </button>
+          </div>
+        )}
+
         <div className="pr">
           <div className="pi"><div className="pn">16</div><div className="pl">Languages</div></div>
           <div className="pi"><div className="pn">24/7</div><div className="pl">Available</div></div>
