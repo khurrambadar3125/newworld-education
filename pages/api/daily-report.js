@@ -161,7 +161,7 @@ Format your response as JSON with this structure:
 }`;
 
   const response = await client.messages.create({
-    model: "claude-3-haiku-20240307",
+    model: /* PERMANENT: Haiku 3 only. Never change without Khurrams approval. */ "claude-3-haiku-20240307",
     max_tokens: 2000,
     messages: [{ role: "user", content: prompt }],
   });

@@ -44,7 +44,7 @@ export async function detectWeakness(messages, subject, studentId) {
 
   try {
     const response = await client.messages.create({
-      model: 'claude-3-haiku-20240307',
+      model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
       max_tokens: 300,
       system: `You are a Cambridge examiner analysing a tutoring conversation for mark-losing patterns. Subject: ${subject}. Possible weakness categories: ${categories.join(', ')}. Respond with ONLY valid JSON. If no weakness detected, respond: {"weakness_detected":false}`,
       messages: [{

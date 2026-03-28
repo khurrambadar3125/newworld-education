@@ -2056,7 +2056,7 @@ RULES:
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          model: 'claude-3-haiku-20240307',
+          model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
           max_tokens: 400,
           system: systemPrompt,
           messages: newMsgs.slice(-10).map(m => ({ role: m.role, content: m.content })),

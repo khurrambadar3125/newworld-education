@@ -1128,7 +1128,7 @@ ${YOUNG_LEARNER_KB}`;
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          model: "claude-3-haiku-20240307",
+          model: /* PERMANENT: Haiku 3 only. Never change without Khurrams approval. */ "claude-3-haiku-20240307",
           max_tokens: 1000,
           system: systemPrompt,
           messages: msgs,

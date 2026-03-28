@@ -472,7 +472,7 @@ export default function ArtsForAllPage() {
     try {
       const res = await fetch("/api/chat",{
         method:"POST",headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({model:"claude-3-haiku-20240307",max_tokens:1500,system:buildSystemPrompt(profile),messages:apiMessages}),
+        body:JSON.stringify({model:/* PERMANENT: Haiku 3 only. Never change without Khurrams approval. */ "claude-3-haiku-20240307",max_tokens:1500,system:buildSystemPrompt(profile),messages:apiMessages}),
       });
       const data = await res.json();
       const reply = data.content?.[0]?.text||"Something went wrong. Try again!";

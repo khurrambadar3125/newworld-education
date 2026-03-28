@@ -901,6 +901,7 @@ export default function Home() {
           <div className="fc"><span className="fi">🎯</span><div className="ftit">Knows exactly where you lose marks</div><div className="fd">Starky tracks every Cambridge mark scheme point you miss — and fixes it session by session</div></div>
           <div className="fc"><span className="fi">📅</span><div className="ftit">Study plan built around your exam date</div><div className="fd">Tell Starky when your Cambridge exam is. It builds a week-by-week plan that fixes your weak spots</div></div>
           <div className="fc"><span className="fi">🔮</span><div className="ftit">Predicts what you will lose marks on next</div><div className="fd">Analyses patterns across all students. If 87% with your profile lose marks on a topic — Starky tells you first</div></div>
+          <div className="fc"><span className="fi">📅</span><div className="ftit">Knows where you are in the year</div><div className="fd">Automatically switches between foundation, exam prep, and results support — the right help at the right time</div></div>
         </div>
       </section>
 

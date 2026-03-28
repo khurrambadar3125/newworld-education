@@ -18,7 +18,7 @@ export default async function handler(req, res) {
         subject TEXT NOT NULL,
         question TEXT NOT NULL,
         answer TEXT NOT NULL,
-        model TEXT DEFAULT 'claude-3-haiku-20240307',
+        model TEXT DEFAULT /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
         timestamp TIMESTAMPTZ DEFAULT NOW(),
         question_index INTEGER
       );`
@@ -39,7 +39,7 @@ export default async function handler(req, res) {
   subject TEXT NOT NULL,
   question TEXT NOT NULL,
   answer TEXT NOT NULL,
-  model TEXT DEFAULT 'claude-3-haiku-20240307',
+  model TEXT DEFAULT /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
   timestamp TIMESTAMPTZ DEFAULT NOW(),
   question_index INTEGER
 );

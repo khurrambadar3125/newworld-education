@@ -9,6 +9,7 @@ import { buildMessages } from '../../utils/starkyPrompt';
 import { getKnowledgeForTopic } from '../../utils/getKnowledgeForTopic';
 import { detectExcellenceTrigger, getSituationalExcellence, getReadingList } from '../../utils/academicExcellence';
 import { checkContentViolation, checkExcludedAuthors } from '../../utils/contentProtection';
+import { getCurrentPhase, getPhasePromptInjection } from '../../lib/academic-calendar';
 import { detectWeakness, saveWeakness } from '../../utils/weaknessDetector';
 import { getBookKnowledge } from '../../utils/readingKnowledge';
 import { getSupabase } from '../../utils/supabase';
@@ -171,7 +172,7 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: 'No valid messages provided' });
       }
       const response = await callWithRetry(() => client.messages.create({
-        model: 'claude-3-haiku-20240307',
+        model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
         max_tokens: 1024,
         system: legacySystem || 'You are Starky ★, a warm and encouraging AI tutor for NewWorldEdu.',
         messages: userMessages,
@@ -259,6 +260,13 @@ export default async function handler(req, res) {
         }
       }
 
+      // ── Academic phase injection — adapts Starky to the Cambridge calendar ──
+      try {
+        const examSeries = sessionMemory?.examSeries || userProfile?.examSeries;
+        const { phase, daysUntil, series } = getCurrentPhase(examSeries);
+        built.systemPrompt += '\n\n' + getPhasePromptInjection(phase, daysUntil, series?.name || 'Cambridge');
+      } catch {}
+
       // ── Inject auto-discovered knowledge + student preferences from Supabase ──
       // Wrapped in a 3-second timeout so Supabase never blocks chat response
       try {
@@ -342,12 +350,14 @@ export default async function handler(req, res) {
 
     // Use prompt caching — the system prompt is ~10K tokens and never changes per session
     // This saves ~90% on input token costs for repeat messages
+    // PERMANENT: Prompt caching is mandatory. Reduces API costs by ~80%.
+    // Never remove this without explicit approval from Khurram.
     const systemBlocks = [
       { type: 'text', text: built.systemPrompt, cache_control: { type: 'ephemeral' } },
     ];
 
     const apiParams = {
-      model: 'claude-3-haiku-20240307',
+      model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
       max_tokens: hasImage ? 2048 : 1024,
       system: systemBlocks,
       messages: built.messages,

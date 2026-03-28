@@ -30,9 +30,12 @@ export function isExemptEmail(email) {
 
 import { useState, useEffect, useCallback } from "react";
 
-const FREE_DAILY_LIMIT = 5;
-const PAID_DAILY_LIMIT = 25;
-const FREE_TRIAL_DAYS = 7;
+// PERMANENT: 10 free sessions for all users. No time limit. No credit card.
+// After 10 sessions, show upgrade prompt. Partner schools get unlimited via free_access_until date.
+const FREE_TOTAL_SESSIONS = 10; // Total free sessions (not daily — lifetime)
+const FREE_DAILY_LIMIT = 10; // Daily cap even for free users (generous)
+const PAID_DAILY_LIMIT = 999; // Effectively unlimited for paid users
+const FREE_TRIAL_DAYS = 365; // No time limit on free sessions — 1 year fallback
 export function useSessionLimitBypass(email) { return isExemptEmail(email); }
 const STORAGE_KEY      = "nwe_usage"; // localStorage key
 const TRIAL_KEY        = "nwe_trial_start"; // when the 7-day trial began

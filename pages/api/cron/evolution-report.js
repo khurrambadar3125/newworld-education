@@ -152,7 +152,7 @@ Give recommendations as numbered bullet points. Focus on:
 Keep each recommendation under 2 sentences. Be direct.`;
 
       const resp = await anthropic.messages.create({
-        model: 'claude-3-haiku-20240307',
+        model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
         max_tokens: 600,
         messages: [{ role: 'user', content: analysisPrompt }],
       });

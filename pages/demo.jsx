@@ -320,7 +320,7 @@ export default function DemoPage() {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            model: "claude-3-haiku-20240307",
+            model: /* PERMANENT: Haiku 3 only. Never change without Khurrams approval. */ "claude-3-haiku-20240307",
             max_tokens: 800,
             system: subject.system,
             messages: history.map(m => ({ role: m.role, content: m.content })),
