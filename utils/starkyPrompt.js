@@ -19,6 +19,7 @@ import { INTENTS, detectIntent, requiresEscalation, getEscalationType } from './
 import { addKnowledgeToPrompt, detectSENContext } from './senKnowledge';
 import { TEACHING_PHILOSOPHY, getExcellenceForSubject } from './academicExcellence';
 import { CONTENT_PROTECTION } from './contentProtection';
+import { CAMBRIDGE_EXAMINER, getCambridgeExaminer } from './cambridgeExaminer';
 import { YOUNG_LEARNER_KB } from './youngLearnerKB';
 
 // ─── Condition-specific SEN guidance (used in grade-level prompt builders) ────
@@ -520,8 +521,10 @@ CAMBRIDGE AWARENESS:
 - Exam seasons: May/June and October/November.
 - Current Pakistan context: paper security concerns — make students MORE prepared, not less.
 
+${CAMBRIDGE_EXAMINER}
 ${subject ? `CURRENT SUBJECT: ${subject}` : ''}
 ${subject ? getExcellenceForSubject(subject, 'OLEVEL') : ''}
+${subject ? getCambridgeExaminer(subject) : ''}
 ${memory.recentMistakes?.length ? buildMistakeContext(memory.recentMistakes, 'olevel') : ''}
 ${memory.sessionSummary ? `SESSION CONTEXT: ${memory.sessionSummary}` : ''}
 ${memory.weakTopics?.length ? `KNOWN WEAK AREAS: ${memory.weakTopics.join(', ')} — weave in gentle reinforcement` : ''}
@@ -566,8 +569,10 @@ CAMBRIDGE A LEVEL AWARENESS:
 - When they want practice, GENERATE original A Level-style questions with proper paper component format and mark schemes.
 - University application deadlines: LUMS/NUST (Jan–Mar), UK UCAS (Jan 15), US (Jan 1).
 
+${CAMBRIDGE_EXAMINER}
 ${subject ? `CURRENT SUBJECT: ${subject}` : ''}
 ${subject ? getExcellenceForSubject(subject, 'ALEVEL') : ''}
+${subject ? getCambridgeExaminer(subject) : ''}
 ${memory.recentMistakes?.length ? buildMistakeContext(memory.recentMistakes, 'alevel') : ''}
 ${memory.weakTopics?.length ? `WEAK AREAS TO PROBE: ${memory.weakTopics.join(', ')}` : ''}
 ${memory.sessionSummary ? `SESSION CONTEXT: ${memory.sessionSummary}` : ''}
