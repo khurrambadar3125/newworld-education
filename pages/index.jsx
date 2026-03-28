@@ -524,7 +524,8 @@ export default function Home() {
         .hero h1 em{font-style:normal;background:linear-gradient(135deg,#4F8EF7,#A78BFA);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
         .hs{font-size:16px;color:rgba(255,255,255,.5);line-height:1.7;margin-bottom:26px;max-width:340px;margin-left:auto;margin-right:auto}
         .hc{display:flex;flex-direction:column;gap:10px;align-items:center}
-        .bp{display:block;width:100%;max-width:320px;background:linear-gradient(135deg,#4F8EF7,#6366F1);color:#fff;border:none;border-radius:14px;padding:16px 24px;font-size:17px;font-weight:700;font-family:'Sora',sans-serif;cursor:pointer;text-decoration:none;text-align:center;box-shadow:0 8px 28px rgba(79,142,247,.28);-webkit-tap-highlight-color:transparent}
+        .bp{display:block;width:100%;max-width:320px;background:linear-gradient(135deg,#4F8EF7,#6366F1);color:#fff;border:none;border-radius:14px;padding:16px 24px;font-size:17px;font-weight:700;font-family:'Sora',sans-serif;cursor:pointer;text-decoration:none;text-align:center;box-shadow:0 8px 28px rgba(79,142,247,.28);-webkit-tap-highlight-color:transparent;animation:ctaPulse 2s ease-in-out infinite}
+        @keyframes ctaPulse{0%{box-shadow:0 8px 28px rgba(79,142,247,.28)}50%{box-shadow:0 8px 36px rgba(79,142,247,.5),0 0 0 8px rgba(79,142,247,.1)}100%{box-shadow:0 8px 28px rgba(79,142,247,.28)}}
         .bo{display:block;width:100%;max-width:320px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.75);border-radius:14px;padding:15px 24px;font-size:16px;font-weight:600;font-family:'Sora',sans-serif;cursor:pointer;text-decoration:none;text-align:center;-webkit-tap-highlight-color:transparent}
         .pr{display:flex;justify-content:center;gap:24px;margin-top:26px;flex-wrap:wrap}
         .pi{text-align:center}
