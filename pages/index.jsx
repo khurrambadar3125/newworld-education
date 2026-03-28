@@ -905,10 +905,10 @@ export default function Home() {
       </section>
 
       {/* The examiner inside the tutor */}
-      <section className="sec" style={{background:'rgba(255,255,255,0.02)',borderTop:'1px solid rgba(255,255,255,0.06)',borderBottom:'1px solid rgba(255,255,255,0.06)',padding:isMobile?'40px 20px':'64px 40px'}}>
-        <div style={{maxWidth:600,margin:'0 auto',textAlign:isMobile?'left':'center'}}>
-          <h2 style={{fontSize:isMobile?22:30,fontWeight:900,margin:'0 0 16px',lineHeight:1.3}}>The examiner inside the tutor.</h2>
-          <div style={{fontSize:isMobile?14:16,color:'rgba(255,255,255,0.55)',lineHeight:1.9}}>
+      <section className="sec" style={{background:'rgba(255,255,255,0.02)',borderTop:'1px solid rgba(255,255,255,0.06)',borderBottom:'1px solid rgba(255,255,255,0.06)',padding:'clamp(40px,8vw,64px) clamp(20px,4vw,40px)'}}>
+        <div style={{maxWidth:600,margin:'0 auto'}}>
+          <h2 style={{fontSize:'clamp(22px,4vw,30px)',fontWeight:900,margin:'0 0 16px',lineHeight:1.3}}>The examiner inside the tutor.</h2>
+          <div style={{fontSize:'clamp(14px,1.5vw,16px)',color:'rgba(255,255,255,0.55)',lineHeight:1.9}}>
             <p style={{margin:'0 0 16px'}}>Most tutors teach the subject. Starky teaches the mark scheme.</p>
             <p style={{margin:'0 0 16px'}}>Every Cambridge examiner publishes a report after every exam series listing exactly what students got wrong. Starky has read all of them — for every subject, every paper, going back 30 years.</p>
             <p style={{margin:'0 0 16px'}}>When you make a mistake, Starky does not just correct it. It tells you why Cambridge deducts the mark, how frequently it appears in past papers, and exactly what to write instead.</p>
