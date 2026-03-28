@@ -173,7 +173,7 @@ export default function StudentDashboard() {
             <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 14, lineHeight: 1.7, margin: "0 0 20px", maxWidth: 400, marginLeft: "auto", marginRight: "auto" }}>
               Start your first session and Starky will begin tracking your progress, your weak spots, and exactly what to study next.
             </p>
-            <a href="/" style={{ display: "inline-block", background: "linear-gradient(135deg,#4F8EF7,#6366F1)", color: "#fff", padding: "14px 32px", borderRadius: 14, fontWeight: 800, fontSize: 16, textDecoration: "none" }}>
+            <a href="/demo" style={{ display: "inline-block", background: "linear-gradient(135deg,#4F8EF7,#6366F1)", color: "#fff", padding: "14px 32px", borderRadius: 14, fontWeight: 800, fontSize: 16, textDecoration: "none" }}>
               Start your first session →
             </a>
           </div>
@@ -241,7 +241,7 @@ export default function StudentDashboard() {
                   <div style={{ fontSize: 13, color: "rgba(255,255,255,0.7)", lineHeight: 1.7, marginBottom: 10 }}>
                     📖 {typeof r === 'string' ? r : r.goal || r.description || 'Continue practising'}
                   </div>
-                  <a href="/" style={{ display: "inline-block", background: "rgba(79,142,247,0.15)", border: "1px solid rgba(79,142,247,0.3)", borderRadius: 10, padding: "8px 16px", color: "#4F8EF7", fontWeight: 700, fontSize: 12, textDecoration: "none" }}>
+                  <a href="/demo" style={{ display: "inline-block", background: "rgba(79,142,247,0.15)", border: "1px solid rgba(79,142,247,0.3)", borderRadius: 10, padding: "8px 16px", color: "#4F8EF7", fontWeight: 700, fontSize: 12, textDecoration: "none" }}>
                     Start this session →
                   </a>
                 </div>
