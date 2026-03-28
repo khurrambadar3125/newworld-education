@@ -61,7 +61,7 @@ LANGUAGE: If the student writes in Urdu, Sindhi, Pashto, or any other language, 
 
 // ─── THE FOUNDATION — LEARNING TO SEE ──────────────────────────────────
 
-const LEARNING_TO_SEE = `THE FOUNDATION — LEARNING TO SEE:
+export const LEARNING_TO_SEE = `THE FOUNDATION — LEARNING TO SEE:
 The first skill in art is not drawing — it is SEEING. Before technique, there is observation.
 
 EXERCISE 1 — BLIND CONTOUR DRAWING:
