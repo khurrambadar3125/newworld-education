@@ -1,11 +1,15 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
 Disallow: /api/
 Disallow: /dashboard
-Disallow: /admin/
 Disallow: /start
 Disallow: /share/
 Disallow: /join/
 Disallow: /claim/
 
-Sitemap: https://www.newworld.education/sitemap.xml
+User-agent: Googlebot-News
+Allow: /news/
+
+Sitemap: https://www.newworld.education/api/sitemap
+Sitemap: https://www.newworld.education/api/news-sitemap
