@@ -135,6 +135,22 @@ export default function StudentDashboard() {
     } catch { setLoading(false); }
   }, []);
 
+  // Exam countdown
+  const [examWindow, setExamWindow] = useState(null);
+  const [predictions, setPredictions] = useState([]);
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('nw_exam_window');
+      if (saved) setExamWindow(JSON.parse(saved));
+    } catch {}
+    if (user?.email) {
+      fetch(`/api/predictions?email=${encodeURIComponent(user.email)}`)
+        .then(r => r.json()).then(d => { if (d.predictions) setPredictions(d.predictions); }).catch(() => {});
+    }
+  }, [user?.email]);
+
+  const daysLeft = examWindow ? Math.max(0, Math.ceil((new Date(examWindow.start).getTime() - Date.now()) / 86400000)) : null;
+
   const S = {
     page: { minHeight: "100vh", background: "#080C18", fontFamily: "'Sora',-apple-system,sans-serif", color: "#fff" },
     card: { background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16, padding: isMobile ? "16px" : "20px" },
@@ -171,6 +187,26 @@ export default function StudentDashboard() {
             "{getDailyQuote()}"
           </p>
         </div>
+
+        {/* ═══ EXAM COUNTDOWN ═══ */}
+        {daysLeft !== null ? (
+          <div style={{ ...S.card, marginBottom: 20, background: daysLeft < 14 ? "rgba(255,107,107,0.08)" : "rgba(79,142,247,0.06)", border: daysLeft < 14 ? "1px solid rgba(255,107,107,0.2)" : "1px solid rgba(79,142,247,0.15)" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
+              <span style={{ fontWeight: 900, fontSize: isMobile ? 18 : 22, color: daysLeft < 14 ? "#FF6B6B" : "#4F8EF7" }}>🎯 {daysLeft} days until exams</span>
+              <a href="/study-plan" style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", textDecoration: "none", fontWeight: 700 }}>View plan →</a>
+            </div>
+            <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 100, height: 8, overflow: "hidden", marginBottom: 6 }}>
+              <div style={{ height: "100%", borderRadius: 100, background: daysLeft < 14 ? "linear-gradient(90deg,#FF6B6B,#FFC300)" : "linear-gradient(90deg,#4F8EF7,#4ADE80)", width: `${Math.min(100, Math.round(((180 - daysLeft) / 180) * 100))}%` }} />
+            </div>
+            <div style={{ fontSize: 12, color: "rgba(255,255,255,0.4)" }}>
+              {daysLeft < 14 ? "⚠️ Final preparation mode. Focus on highest-risk topics and past papers." : `Starky recommends ${Math.min(5, Math.max(3, weakSpots.length + 1))} sessions this week to stay on track.`}
+            </div>
+          </div>
+        ) : (
+          <a href="/study-plan" style={{ display: "block", ...S.card, marginBottom: 20, textAlign: "center", textDecoration: "none", color: "#4F8EF7", fontWeight: 700, fontSize: 14 }}>
+            📅 Set your exam date → Get a personalised study plan
+          </a>
+        )}
 
         {/* ═══ SECTION 2 — Streak & Stats ═══ */}
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 10, marginBottom: 28 }}>
@@ -279,6 +315,30 @@ export default function StudentDashboard() {
             </div>
           )}
         </div>
+
+        {/* ═══ PREDICTED RISKS ═══ */}
+        {predictions.length > 0 && (
+          <div style={{ marginBottom: 28 }}>
+            <h2 style={{ fontSize: 18, fontWeight: 900, margin: "0 0 4px" }}>What Starky predicts you will lose marks on next</h2>
+            <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: "0 0 14px" }}>Based on patterns across all NewWorldEdu students with similar profiles</p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              {predictions.map((p, i) => (
+                <a key={i} href={`/demo?subject=${encodeURIComponent(p.subject)}&focus=${encodeURIComponent(p.predicted_weakness || '')}`}
+                  style={{ ...S.card, textDecoration: "none", color: "#fff", cursor: "pointer", borderColor: "rgba(167,139,250,0.2)", background: "rgba(167,139,250,0.04)" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
+                    <span style={{ fontSize: 14 }}>🔮</span>
+                    <span style={{ fontWeight: 800, fontSize: 14, color: "#A78BFA" }}>{p.subject}</span>
+                    <span style={{ marginLeft: "auto", fontSize: 10, background: "rgba(167,139,250,0.15)", border: "1px solid rgba(167,139,250,0.3)", borderRadius: 6, padding: "2px 8px", color: "#A78BFA", fontWeight: 700 }}>Predicted</span>
+                  </div>
+                  <div style={{ fontSize: 13, color: "rgba(255,255,255,0.65)", lineHeight: 1.6 }}>{p.recommended_action}</div>
+                  {p.co_occurrence_rate && (
+                    <div style={{ fontSize: 11, color: "rgba(255,255,255,0.4)", marginTop: 4 }}>Confidence: {p.prediction_confidence} (based on {p.co_occurrence_rate}% of similar students)</div>
+                  )}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* ═══ SECTION 5 — Starky Recommends ═══ */}
         {recommendations.length > 0 && (

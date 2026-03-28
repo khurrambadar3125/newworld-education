@@ -898,7 +898,22 @@ export default function Home() {
           <div className="fc"><span className="fi">🎙️</span><div className="ftit">Voice Enabled</div><div className="fd">Speak to Starky and hear responses out loud</div></div>
           <div className="fc"><span className="fi">📧</span><div className="ftit">Parent Reports</div><div className="fd">Email after every session with progress & next steps</div></div>
           <div className="fc"><span className="fi">🌍</span><div className="ftit">16 Languages</div><div className="fd">Urdu, Arabic, English, Chinese — auto-detected</div></div>
-          <div className="fc"><span className="fi">🎯</span><div className="ftit">Exam-Focused</div><div className="fd">O/A Level students get Cambridge-style feedback</div></div>
+          <div className="fc"><span className="fi">🎯</span><div className="ftit">Knows exactly where you lose marks</div><div className="fd">Starky tracks every Cambridge mark scheme point you miss — and fixes it session by session</div></div>
+          <div className="fc"><span className="fi">📅</span><div className="ftit">Study plan built around your exam date</div><div className="fd">Tell Starky when your Cambridge exam is. It builds a week-by-week plan that fixes your weak spots</div></div>
+          <div className="fc"><span className="fi">🔮</span><div className="ftit">Predicts what you will lose marks on next</div><div className="fd">Analyses patterns across all students. If 87% with your profile lose marks on a topic — Starky tells you first</div></div>
+        </div>
+      </section>
+
+      {/* The examiner inside the tutor */}
+      <section className="sec" style={{background:'rgba(255,255,255,0.02)',borderTop:'1px solid rgba(255,255,255,0.06)',borderBottom:'1px solid rgba(255,255,255,0.06)',padding:isMobile?'40px 20px':'64px 40px'}}>
+        <div style={{maxWidth:600,margin:'0 auto',textAlign:isMobile?'left':'center'}}>
+          <h2 style={{fontSize:isMobile?22:30,fontWeight:900,margin:'0 0 16px',lineHeight:1.3}}>The examiner inside the tutor.</h2>
+          <div style={{fontSize:isMobile?14:16,color:'rgba(255,255,255,0.55)',lineHeight:1.9}}>
+            <p style={{margin:'0 0 16px'}}>Most tutors teach the subject. Starky teaches the mark scheme.</p>
+            <p style={{margin:'0 0 16px'}}>Every Cambridge examiner publishes a report after every exam series listing exactly what students got wrong. Starky has read all of them — for every subject, every paper, going back 30 years.</p>
+            <p style={{margin:'0 0 16px'}}>When you make a mistake, Starky does not just correct it. It tells you why Cambridge deducts the mark, how frequently it appears in past papers, and exactly what to write instead.</p>
+            <p style={{margin:0}}>That is not AI tutoring. That is what a world-class private tutor does after years with a student — except Starky does it from session one.</p>
+          </div>
         </div>
       </section>
 
