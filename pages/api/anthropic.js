@@ -9,6 +9,7 @@ import { buildMessages } from '../../utils/starkyPrompt';
 import { getKnowledgeForTopic } from '../../utils/getKnowledgeForTopic';
 import { detectExcellenceTrigger, getSituationalExcellence, getReadingList } from '../../utils/academicExcellence';
 import { checkContentViolation, checkExcludedAuthors } from '../../utils/contentProtection';
+import { detectWeakness, saveWeakness } from '../../utils/weaknessDetector';
 import { getBookKnowledge } from '../../utils/readingKnowledge';
 import { getSupabase } from '../../utils/supabase';
 
@@ -371,6 +372,18 @@ export default async function handler(req, res) {
           recordCircuitSuccess();
           res.write(`data: ${JSON.stringify({ type: 'done', response: fullText, meta: built.meta })}\n\n`);
           res.end();
+
+          // Background: detect Cambridge weaknesses (never blocks response)
+          const currentSubject = sessionMemory?.currentSubject || userProfile?.lastSubject || '';
+          if (currentSubject && message && fullText && userProfile?.email) {
+            const last3 = [
+              ...(built.messages || []).slice(-2),
+              { role: 'assistant', content: fullText },
+            ];
+            detectWeakness(last3, currentSubject, userProfile.email).then(weakness => {
+              if (weakness) saveWeakness(getSupabase(), weakness);
+            }).catch(() => {});
+          }
         });
 
         stream.on('error', (err) => {

@@ -1,6 +1,6 @@
 /**
- * One-time utility: creates the cambridge_test_answers table in Supabase.
- * DELETE THIS FILE after running once.
+ * One-time utility: creates tables in Supabase.
+ * cambridge_test_answers + cambridge_weaknesses
  */
 import { getSupabase } from '../../utils/supabase';
 

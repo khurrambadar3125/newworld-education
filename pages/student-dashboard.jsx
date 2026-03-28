@@ -54,7 +54,9 @@ export default function StudentDashboard() {
   const [totalMinutes, setTotalMinutes] = useState(0);
   const [subjects, setSubjects] = useState([]);
   const [weakSpots, setWeakSpots] = useState([]);
+  const [resolvedSpots, setResolvedSpots] = useState([]);
   const [recommendations, setRecommendations] = useState([]);
+  const [showResolved, setShowResolved] = useState(false);
 
   useEffect(() => {
     const fn = () => setIsMobile(window.innerWidth < 768);
@@ -107,6 +109,26 @@ export default function StudentDashboard() {
           })
           .catch(() => {})
           .finally(() => setLoading(false));
+
+        // Load Cambridge weaknesses from Supabase
+        fetch(`/api/weaknesses?email=${encodeURIComponent(u.email)}`)
+          .then(r => r.json())
+          .then(data => {
+            if (data.weaknesses?.length) setWeakSpots(data.weaknesses);
+            if (data.resolved?.length) setResolvedSpots(data.resolved);
+            // Build recommendations from top weaknesses
+            if (data.weaknesses?.length) {
+              const recs = data.weaknesses.slice(0, 3).map(w => ({
+                subject: w.subject,
+                code: w.syllabus_code,
+                category: w.weakness_category,
+                description: w.weakness_description,
+                relevance: w.cambridge_relevance,
+              }));
+              setRecommendations(recs);
+            }
+          })
+          .catch(() => {});
       } else {
         setLoading(false);
       }
@@ -208,40 +230,76 @@ export default function StudentDashboard() {
           </div>
         )}
 
-        {/* ═══ SECTION 4 — Weak Spots ═══ */}
+        {/* ═══ SECTION 4 — Cambridge Weak Spots ═══ */}
         <div style={{ marginBottom: 28 }}>
           <h2 style={{ fontSize: 18, fontWeight: 900, margin: "0 0 14px" }}>Where you are losing marks</h2>
           {weakSpots.length > 0 ? (
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-              {weakSpots.map((w, i) => (
-                <a key={i} href={`/?subject=${encodeURIComponent(w.topic || w.subject || '')}`}
-                  style={{ ...S.card, textDecoration: "none", color: "#fff", display: "flex", alignItems: "center", gap: 10, cursor: "pointer" }}>
-                  <span style={{ color: "#FF6B6B", fontSize: 16 }}>⚠️</span>
-                  <div>
-                    <div style={{ fontWeight: 700, fontSize: 13 }}>{w.topic || w.subject || 'General'}</div>
-                    <div style={{ fontSize: 11, color: "rgba(255,255,255,0.5)" }}>{w.description || 'Needs more practice'}</div>
-                  </div>
-                </a>
-              ))}
+              {weakSpots.map((w, i) => {
+                const sevColor = w.severity === 'high' ? '#FF6B6B' : w.severity === 'medium' ? '#FFC300' : 'rgba(255,255,255,0.4)';
+                return (
+                  <a key={i} href={`/demo?subject=${encodeURIComponent(w.subject)}&focus=${encodeURIComponent(w.weakness_category)}`}
+                    style={{ ...S.card, textDecoration: "none", color: "#fff", cursor: "pointer" }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
+                      <span style={{ width: 8, height: 8, borderRadius: "50%", background: sevColor, flexShrink: 0 }} />
+                      <span style={{ fontWeight: 800, fontSize: 14 }}>{w.subject}</span>
+                      {w.syllabus_code && <span style={{ fontSize: 11, color: "rgba(255,255,255,0.4)" }}>{w.syllabus_code}</span>}
+                      <span style={{ marginLeft: "auto", fontSize: 11, color: "rgba(255,255,255,0.4)" }}>Flagged {w.frequency}×</span>
+                    </div>
+                    <div style={{ fontSize: 13, color: "rgba(255,255,255,0.7)", marginBottom: 2 }}>{w.weakness_description}</div>
+                    {w.cambridge_relevance && (
+                      <div style={{ fontSize: 11, color: "rgba(255,255,255,0.4)", fontStyle: "italic" }}>{w.cambridge_relevance}</div>
+                    )}
+                  </a>
+                );
+              })}
             </div>
           ) : (
             <div style={{ ...S.card, color: "rgba(255,255,255,0.5)", fontSize: 13, lineHeight: 1.7 }}>
               No weak spots identified yet. Keep studying and Starky will track where you need help.
             </div>
           )}
+          {/* Resolved weaknesses — collapsed */}
+          {resolvedSpots.length > 0 && (
+            <div style={{ marginTop: 12 }}>
+              <button onClick={() => setShowResolved(!showResolved)}
+                style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 12, cursor: "pointer", fontFamily: "'Sora',sans-serif", fontWeight: 600 }}>
+                {showResolved ? '▾' : '▸'} {resolvedSpots.length} resolved weakness{resolvedSpots.length > 1 ? 'es' : ''}
+              </button>
+              {showResolved && (
+                <div style={{ display: "flex", flexDirection: "column", gap: 6, marginTop: 8 }}>
+                  {resolvedSpots.map((w, i) => (
+                    <div key={i} style={{ padding: "8px 12px", borderRadius: 10, background: "rgba(74,222,128,0.06)", border: "1px solid rgba(74,222,128,0.15)" }}>
+                      <span style={{ color: "#4ADE80", fontSize: 12 }}>✅ </span>
+                      <span style={{ fontSize: 12, color: "rgba(255,255,255,0.6)" }}>{w.subject} — {w.weakness_description}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
         </div>
 
-        {/* ═══ SECTION 5 — Recommendations ═══ */}
+        {/* ═══ SECTION 5 — Starky Recommends ═══ */}
         {recommendations.length > 0 && (
           <div style={{ marginBottom: 28 }}>
             <h2 style={{ fontSize: 18, fontWeight: 900, margin: "0 0 14px" }}>Starky recommends</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               {recommendations.map((r, i) => (
                 <div key={i} style={S.card}>
-                  <div style={{ fontSize: 13, color: "rgba(255,255,255,0.7)", lineHeight: 1.7, marginBottom: 10 }}>
-                    📖 {typeof r === 'string' ? r : r.goal || r.description || 'Continue practising'}
+                  <div style={{ fontWeight: 800, fontSize: 14, color: "#4F8EF7", marginBottom: 4 }}>
+                    📖 {r.subject} {r.code ? `(${r.code})` : ''}
                   </div>
-                  <a href="/demo" style={{ display: "inline-block", background: "rgba(79,142,247,0.15)", border: "1px solid rgba(79,142,247,0.3)", borderRadius: 10, padding: "8px 16px", color: "#4F8EF7", fontWeight: 700, fontSize: 12, textDecoration: "none" }}>
+                  <div style={{ fontSize: 13, color: "rgba(255,255,255,0.7)", lineHeight: 1.7, marginBottom: 4 }}>
+                    {r.description || r.goal || 'Continue practising'}
+                  </div>
+                  {r.relevance && (
+                    <div style={{ fontSize: 11, color: "rgba(255,255,255,0.4)", marginBottom: 10, fontStyle: "italic" }}>
+                      {r.relevance}
+                    </div>
+                  )}
+                  <a href={`/demo?subject=${encodeURIComponent(r.subject || '')}&focus=${encodeURIComponent(r.category || '')}`}
+                    style={{ display: "inline-block", background: "rgba(79,142,247,0.15)", border: "1px solid rgba(79,142,247,0.3)", borderRadius: 10, padding: "8px 16px", color: "#4F8EF7", fontWeight: 700, fontSize: 12, textDecoration: "none" }}>
                     Start this session →
                   </a>
                 </div>
