@@ -54,11 +54,14 @@ Rules: ORIGINAL journalism — not a summary or copy. 450-550 words. No promotio
         messages: [{ role: 'user', content: `Write an original educational news article about: ${topic}. Date: ${today}. Target audience: Pakistani students and parents.` }],
       });
 
-      const text = response.content?.[0]?.text || '';
+      let text = response.content?.[0]?.text || '';
       const jsonMatch = text.match(/\{[\s\S]*\}/);
       if (!jsonMatch) { failures.push({ topic, reason: 'No JSON in response' }); continue; }
 
-      const article = JSON.parse(jsonMatch[0]);
+      // Clean control characters that break JSON parsing
+      const cleanJson = jsonMatch[0].replace(/[\x00-\x1F\x7F]/g, (c) => c === '\n' ? '\\n' : c === '\t' ? '\\t' : ' ');
+      let article;
+      try { article = JSON.parse(cleanJson); } catch { failures.push({ topic, reason: 'JSON parse error' }); continue; }
 
       // Quality gate
       if (!article.headline || article.headline.length > 110) { failures.push({ topic, reason: 'Headline too long or missing' }); continue; }
