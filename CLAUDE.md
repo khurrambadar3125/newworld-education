@@ -79,6 +79,9 @@ public/              # Static assets (favicon.svg, og-image.png, robots.txt, sit
 | `/arts` | `arts.jsx` | Arts program |
 | `/music` | `music.jsx` | Music program |
 | `/reading` | `reading.jsx` | Reading program |
+| `/phonics` | `phonics.jsx` | Systematic phonics — 5 phases, learn to read from zero |
+| `/student-dashboard` | `student-dashboard.jsx` | Student progress dashboard — streaks, subject health, weakness tracking, exam countdown, predictions |
+| `/study-plan` | `study-plan.jsx` | Personalised weekly study plan based on exam date + weaknesses + predictions |
 
 ### Parent & Admin
 | Path | File | Description |
@@ -183,7 +186,13 @@ public/              # Static assets (favicon.svg, og-image.png, robots.txt, sit
 - **`utils/artsKnowledge.js`** — Arts knowledge base: age-gated, content-safe, SEN-adapted. Drawing, painting, printmaking, art history, Chinese brush/ink
 - **`utils/getKnowledgeForTopic.js`** — Topic-specific knowledge retrieval from globalKnowledgeBase (misconceptions, examiner tips, keywords, mistakes)
 - **`utils/globalKnowledgeBase.js`** — Cambridge O/A Level topic-level knowledge base (Biology, Chemistry, Physics, History, Economics, etc.)
-- **`utils/useSessionLimit.js`** — Client-side session limit enforcement (25/day for paid, 3/day free trial)
+- **`utils/weaknessDetector.js`** — Cambridge Weakness Detection: silently analyses conversations for mark-losing patterns after every Starky response. 60+ weakness categories across 12 subjects. Saves to Supabase cambridge_weaknesses table with frequency tracking and resolution detection
+- **`utils/cambridgeExaminer.js`** — Cambridge Examiner Intelligence: 3 marking systems (point/levels/best-fit), complete command word taxonomy, subject-specific examiner tips for 12 subjects. Injected into O/A Level prompts
+- **`utils/phonicsKB.js`** — Phonics knowledge base: 5 phases (Letters and Sounds), 44 phonemes, blending protocols, Urdu/Pakistan bridging, SEN phonics adaptations
+- **`utils/youngLearnerKB.js`** — Young Learner KB: Piaget/Vygotsky/Bruner, scaffolding, 12 teaching techniques, Pakistan SNC curriculum Grades 1-5
+- **`lib/constants.js`** — PERMANENT: STARKY_MODEL = claude-3-haiku-20240307. Never change without Khurram's approval
+- **`lib/academic-calendar.js`** — Cambridge Academic Year Lifecycle: 6 phases (Final Sprint, Exam Series, Results Waiting, Results Day, Foundation, Build Up), 3 years of dates (2026-2028), auto-phase detection, phase-specific Starky prompt injection
+- **`utils/useSessionLimit.js`** — 10 free sessions for all users (PERMANENT). No time limit. Paid = 999/day. Partner schools via free_access_until date
 - **`utils/useSessionMemory.js`** — Tracks weak topics and mistakes per student across sessions
 - **`utils/useSpacedRep.js`** — Spaced repetition hook for drill questions
 - **`utils/useStreaks.js`** — Study streak tracking
@@ -199,7 +208,11 @@ public/              # Static assets (favicon.svg, og-image.png, robots.txt, sit
 - **User identity**: Stored in `localStorage` as `nw_user` (name, email, grade, subject, senFlag, senType). Bridged with Google OAuth via `AuthBridge` in `_app.jsx`. SEN flag propagated from parent portal (`nw_active_child.senCondition`) through `demo.jsx` bridge and from `/special-needs` page after first chat
 - **Theme system**: Dark (default), Light, Cream (dyslexia-optimized). CSS variables in `_app.jsx`
 - **Accessibility**: Dyslexic font mode (`data-font="dyslexic"`), AAC large button mode (`data-access="aac"`)
-- **Session limits**: Free users get 3 sessions/day, paid get 25. Enforced client-side via `useSessionLimit`
+- **Session limits**: 10 free sessions total (PERMANENT), no time limit, no credit card. Paid = 999/day. Partner schools via free_access_until date
+- **Deaf student mode**: When `isDeafStudent` or `is_deaf_student` = true: no audio, no mic button, 20px font, PSL sign dictionary links after new vocabulary. Auto-set when parent selects hearing impairment condition
+- **Academic phases**: 6 phases auto-detected from Cambridge calendar. Starky prompt and dashboard adapt automatically. Current phase injected into every O/A Level session
+- **Weakness detection**: Background Haiku call after every Starky response silently detects Cambridge mark-losing patterns. 60+ categories across 12 subjects. Stored in cambridge_weaknesses table with frequency + resolution tracking
+- **Predictive engine**: Nightly cron analyses cross-student weakness co-occurrences. Predicts risks before they happen
 - **Streaming**: AI responses stream via SSE from `/api/anthropic`
 - **Offline handling**: `OfflineBanner` component detects connectivity loss
 - **Pakistan timezone**: All date logic uses UTC+5 (PKT)

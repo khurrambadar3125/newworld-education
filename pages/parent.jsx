@@ -535,6 +535,7 @@ export default function ParentPage() {
         parentEmail: email.trim(), senFlag: true, senType: conditions[0] || 'unsure',
         senConditions: conditions, senSeverity: severity || 'unsure',
         literacyProfile: literacy, functionalSummary,
+        isDeafStudent: conditions.includes('hi'), // Auto-set deaf mode for hearing impairment
       }));
     } catch {}
     setSenStep(4);

@@ -760,6 +760,17 @@ export function buildMessages({ userProfile: rawProfile, sessionMemory: rawMemor
     }
   }
 
+  // 3b-iii. Deaf student mode — text-only, visual-only, PSL sign references
+  if (userProfile.isDeafStudent || userProfile.is_deaf_student) {
+    systemPrompt += `\n\nDEAF STUDENT MODE ACTIVE:
+This student is deaf. NEVER use audio references, sound descriptions, or "listen to this" language.
+ALL explanations must be text-based and visual. Use diagrams, numbered steps, bullet points.
+After introducing any new academic vocabulary word, add on a new line:
+PSL sign: https://psl.org.pk/dictionary (search for [word])
+Keep formatting highly visual. Use bold for key terms. One idea per line.
+Never reference voice, audio, speech, pronunciation, or hearing.`;
+  }
+
   // 3b-ii. Non-SEN users who mention SEN topics — two paths:
   // PARENT detected + SEN keyword → activate full SEN knowledge (they need expert help NOW)
   // REGULAR STUDENT + SEN keyword → warm redirect to /special-needs (don't hallucinate SEN tutoring)

@@ -880,9 +880,13 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
           .starky-chat { animation: none; }
           .starky-msg, .starky-fab, .starky-chat { transition: none; }
         }
+        /* Deaf student mode — larger text, no audio elements */
+        .starky-deaf-mode .starky-msg { font-size: 20px !important; line-height: 1.8 !important; }
+        .starky-deaf-mode .starky-input { font-size: 20px !important; }
+        .starky-deaf-mode .starky-chat.fullscreen .starky-msg { font-size: 22px !important; }
       `}</style>
 
-      <div className="starky-bubble-wrap">
+      <div className={`starky-bubble-wrap${userProfile?.isDeafStudent || userProfile?.is_deaf_student ? ' starky-deaf-mode' : ''}`}>
         {open && (
           <div className={`starky-chat${fullscreen ? ' fullscreen' : ''}`}>
             <div className="starky-chat-head">
@@ -956,8 +960,8 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
               {/* Hidden file inputs */}
               <input ref={fileInputRef} type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/*" style={{display:'none'}} onChange={handleImageSelect} />
               <input ref={cameraInputRef} type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/*" capture="environment" style={{display:'none'}} onChange={handleCameraSelect} />
-              {/* 🎤 Voice */}
-              {sttSupported && (
+              {/* 🎤 Voice — hidden for deaf students */}
+              {sttSupported && !userProfile?.isDeafStudent && !userProfile?.is_deaf_student && (
                 <button className={`starky-icon-btn${isMicActive ? ' starky-mic-active' : ''}`}
                   onClick={() => {
                     if (isMicActive) {
