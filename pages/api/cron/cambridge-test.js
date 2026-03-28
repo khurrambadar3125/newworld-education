@@ -503,12 +503,21 @@ export default async function handler(req, res) {
     }
   }
 
+  // Auto-chain: trigger next batch if more questions remain
+  if (endIdx < QUESTIONS.length) {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.newworld.education';
+    fetch(`${baseUrl}/api/cron/cambridge-test?secret=${process.env.CRON_SECRET}&batch=${batchSize}&start=${endIdx}`, {
+      method: 'GET',
+    }).catch(() => {});
+  }
+
   return res.status(200).json({
     total_questions: QUESTIONS.length,
     batch_start: startIdx,
     batch_end: endIdx,
     answered_in_batch: answered,
     next_batch_start: endIdx < QUESTIONS.length ? endIdx : null,
+    complete: endIdx >= QUESTIONS.length,
     results,
   });
 }
