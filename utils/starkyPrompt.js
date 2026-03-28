@@ -761,14 +761,16 @@ export function buildMessages({ userProfile: rawProfile, sessionMemory: rawMemor
   }
 
   // 3b-iii. Deaf student mode — text-only, visual-only, PSL sign references
-  if (userProfile.isDeafStudent || userProfile.is_deaf_student) {
-    systemPrompt += `\n\nDEAF STUDENT MODE ACTIVE:
-This student is deaf. NEVER use audio references, sound descriptions, or "listen to this" language.
-ALL explanations must be text-based and visual. Use diagrams, numbered steps, bullet points.
-After introducing any new academic vocabulary word, add on a new line:
-PSL sign: https://psl.org.pk/dictionary (search for [word])
-Keep formatting highly visual. Use bold for key terms. One idea per line.
-Never reference voice, audio, speech, pronunciation, or hearing.`;
+  if (userProfile.isDeafStudent || userProfile.is_deaf_student || userProfile.deaf_mode) {
+    systemPrompt += `\n\nDEAF MODE ACTIVE. Rules:
+1) Never use audio metaphors, sound references, "listen to this", "say it out loud", or any hearing-based language.
+2) After every new academic term, write on a new line: SIGN: [original PSL description of how to sign the word in Pakistan Sign Language].
+3) Use numbered steps for ALL processes — never prose paragraphs for sequential information.
+4) Use tables for ALL comparisons — never side-by-side prose.
+5) When concepts are spatial (graphs, diagrams, circuits, maps, geometry), describe them as if drawing an SVG — coordinates, shapes, positions, labels.
+6) Keep formatting highly visual: bold key terms, bullet points, wide spacing, one idea per line.
+7) Never reference voice, audio, speech, pronunciation, listening, or hearing in any context.
+8) Never suggest reading aloud, speaking answers, or using voice input.`;
   }
 
   // 3b-ii. Non-SEN users who mention SEN topics — two paths:

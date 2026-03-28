@@ -71,6 +71,10 @@
     {
       "path": "/api/cron/predictive-analysis",
       "schedule": "0 18 * * *"
+    },
+    {
+      "path": "/api/cron/phase-transition",
+      "schedule": "0 1 * * *"
     }
   ],
   "headers": [
