@@ -1,5 +1,5 @@
 /**
- * /api/blog-rss — RSS feed for Google News and feed readers
+ * /api/news-rss — RSS feed for Google News and feed readers
  */
 export default async function handler(req, res) {
   // Seed articles — same as in blog.jsx
@@ -16,7 +16,7 @@ export default async function handler(req, res) {
     <link>https://www.newworld.education/blog</link>
     <description>Cambridge exam intelligence, learning science, and education insights from Pakistan.</description>
     <language>en</language>
-    <atom:link href="https://www.newworld.education/api/blog-rss" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.newworld.education/api/news-rss" rel="self" type="application/rss+xml" />
 ${articles.map(a => `    <item>
       <title>${a.title}</title>
       <link>https://www.newworld.education/blog#${a.id}</link>

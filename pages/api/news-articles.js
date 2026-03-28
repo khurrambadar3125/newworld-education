@@ -9,7 +9,7 @@ export default async function handler(req, res) {
   if (!sb) return res.status(200).json({ articles: [] });
 
   try {
-    const { data } = await sb.from('blog_articles')
+    const { data } = await sb.from('news_articles')
       .select('*')
       .eq('published', true)
       .order('date', { ascending: false })
