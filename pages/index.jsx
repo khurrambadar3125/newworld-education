@@ -5,6 +5,7 @@ import { useSessionLimit } from '../utils/useSessionLimit';
 import { useTheme } from './_app';
 import { IB_SUBJECT_LIST } from '../utils/ibKnowledge';
 import { AMERICAN_SUBJECT_LIST } from '../utils/americanCurriculumKB';
+import { CBSE_SUBJECT_LIST } from '../utils/cbseKnowledge';
 import { useCountry, UaeCurriculumSelector, FooterCountryFlags } from '../components/CountrySelector';
 
 const GRADE_GROUPS = [
@@ -840,6 +841,7 @@ export default function Home() {
               <div className="st" style={{marginBottom:14}}>Pick a subject</div>
               <div className="sr">
                 {(uaeCurriculum === 'american' ? AMERICAN_SUBJECT_LIST
+                  : uaeCurriculum === 'cbse' ? CBSE_SUBJECT_LIST
                   : uaeCurriculum === 'ib' ? IB_SUBJECT_LIST
                   : selectedGrade?.id?.includes('olevel') ? SUBJECTS_OLEVEL
                   : selectedGrade?.id?.includes('alevel') ? SUBJECTS_ALEVEL

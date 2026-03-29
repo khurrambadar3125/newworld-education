@@ -16,6 +16,7 @@ import { checkMisconception } from '../../utils/cambridgeExaminer';
 import { getUAEMandatoryPrompt, isUAEMandatoryTopic } from '../../utils/uaeMandatorySubjects';
 import { getIBDiplomaPrompt, isIBTopic } from '../../utils/ibKnowledge';
 import { getAmericanCurriculumPrompt, isAmericanCurriculumTopic } from '../../utils/americanCurriculumKB';
+import { getCBSECurriculumPrompt, isCBSETopic } from '../../utils/cbseKnowledge';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -290,6 +291,11 @@ export default async function handler(req, res) {
       // ── American curriculum injection — for UAE students on US curriculum ──
       if (userProfile?.uaeCurriculum === 'american' || isAmericanCurriculumTopic(message)) {
         built.systemPrompt += getAmericanCurriculumPrompt(subject);
+      }
+
+      // ── CBSE curriculum injection — for UAE students on Indian curriculum ──
+      if (userProfile?.uaeCurriculum === 'cbse' || isCBSETopic(message)) {
+        built.systemPrompt += getCBSECurriculumPrompt(subject);
       }
 
       // ── Academic phase injection — adapts Starky to the Cambridge calendar ──
