@@ -82,6 +82,9 @@ export default function Home() {
   const [selectedGrade, setSelectedGrade] = useState(null);
   const [showAudienceSelector, setShowAudienceSelector] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState(null);
+  const [userCountry, setUserCountry] = useState(null); // 'PK' | 'UAE' | 'OTHER' | null (not yet selected)
+  const [showCountrySelector, setShowCountrySelector] = useState(false);
+  const [detectedCountry, setDetectedCountry] = useState(null);
 
   // Grade classification — used in greetings, suggestion chips, subject lists
   const gradeId = (selectedGrade?.id || '').toLowerCase();
@@ -94,6 +97,19 @@ export default function Home() {
   const [chatStarted, setChatStarted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
+
+  const selectCountry = (country) => {
+    setUserCountry(country);
+    setShowCountrySelector(false);
+    try {
+      localStorage.setItem('user_country', country);
+      // Set cookie for 30 days
+      document.cookie = `newworld_country=${country};max-age=${30*86400};path=/;SameSite=Lax`;
+      // Update user profile if exists
+      const u = JSON.parse(localStorage.getItem('nw_user') || '{}');
+      if (u.email) { u.country = country; localStorage.setItem('nw_user', JSON.stringify(u)); }
+    } catch {}
+  };
 
   // Registration
   const [showRegModal, setShowRegModal] = useState(false);
@@ -120,6 +136,20 @@ export default function Home() {
       const saved = localStorage.getItem('nw_user');
       if (saved) setUserProfile(JSON.parse(saved));
     } catch {}
+
+    // Country detection — show selector on first visit
+    try {
+      const savedCountry = localStorage.getItem('user_country');
+      if (savedCountry) {
+        setUserCountry(savedCountry);
+      } else {
+        setShowCountrySelector(true);
+        // IP detection to pre-select
+        fetch('/api/detect-country').then(r => r.json()).then(data => {
+          if (data.country) setDetectedCountry(data.country);
+        }).catch(() => {});
+      }
+    } catch { setShowCountrySelector(true); }
   }, []);
 
   useEffect(() => {
@@ -752,6 +782,45 @@ export default function Home() {
       )}
 
       {/* Urdu strip removed — Cambridge students use English/Roman Urdu. Starky auto-detects Roman Urdu. */}
+
+      {/* Country selector — first visit only */}
+      {showCountrySelector && (
+        <div style={{position:'fixed',top:0,left:0,right:0,bottom:0,zIndex:10000,background:'rgba(8,12,24,0.95)',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'Sora',sans-serif",padding:16}}>
+          <div style={{maxWidth:400,width:'100%',textAlign:'center'}}>
+            <div style={{fontSize:48,marginBottom:12}}>🌍</div>
+            <h2 style={{fontSize:24,fontWeight:900,color:'#fff',margin:'0 0 8px'}}>Where are you based?</h2>
+            <p style={{color:'rgba(255,255,255,0.5)',fontSize:14,margin:'0 0 24px'}}>This helps Starky teach your curriculum</p>
+            <div style={{display:'flex',flexDirection:'column',gap:12}}>
+              <button onClick={()=>selectCountry('PK')}
+                style={{display:'flex',alignItems:'center',gap:14,padding:'18px 20px',borderRadius:16,border:detectedCountry==='PK'?'2px solid #4ADE80':'2px solid rgba(255,255,255,0.1)',background:detectedCountry==='PK'?'rgba(74,222,128,0.08)':'rgba(255,255,255,0.04)',cursor:'pointer',fontFamily:"'Sora',sans-serif",width:'100%',textAlign:'left'}}>
+                <span style={{fontSize:32}}>🇵🇰</span>
+                <div>
+                  <div style={{fontWeight:800,fontSize:16,color:'#fff'}}>Pakistan</div>
+                  <div style={{fontSize:12,color:'rgba(255,255,255,0.5)'}}>Cambridge, Matric, SNC curriculum</div>
+                </div>
+                {detectedCountry==='PK' && <span style={{marginLeft:'auto',fontSize:11,color:'#4ADE80',fontWeight:700}}>Detected</span>}
+              </button>
+              <button onClick={()=>selectCountry('UAE')}
+                style={{display:'flex',alignItems:'center',gap:14,padding:'18px 20px',borderRadius:16,border:detectedCountry==='UAE'?'2px solid #4ADE80':'2px solid rgba(255,255,255,0.1)',background:detectedCountry==='UAE'?'rgba(74,222,128,0.08)':'rgba(255,255,255,0.04)',cursor:'pointer',fontFamily:"'Sora',sans-serif",width:'100%',textAlign:'left'}}>
+                <span style={{fontSize:32}}>🇦🇪</span>
+                <div>
+                  <div style={{fontWeight:800,fontSize:16,color:'#fff'}}>United Arab Emirates</div>
+                  <div style={{fontSize:12,color:'rgba(255,255,255,0.5)'}}>British, American, IB, CBSE, MoE</div>
+                </div>
+                {detectedCountry==='UAE' && <span style={{marginLeft:'auto',fontSize:11,color:'#4ADE80',fontWeight:700}}>Detected</span>}
+              </button>
+              <button onClick={()=>selectCountry('OTHER')}
+                style={{display:'flex',alignItems:'center',gap:14,padding:'18px 20px',borderRadius:16,border:'2px solid rgba(255,255,255,0.1)',background:'rgba(255,255,255,0.04)',cursor:'pointer',fontFamily:"'Sora',sans-serif",width:'100%',textAlign:'left'}}>
+                <span style={{fontSize:32}}>🌍</span>
+                <div>
+                  <div style={{fontWeight:800,fontSize:16,color:'#fff'}}>Another country</div>
+                  <div style={{fontSize:12,color:'rgba(255,255,255,0.5)'}}>Select the curriculum your school follows</div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       <section className="hero">
         <div className="hb">★ Starky — KG to A Levels</div>
