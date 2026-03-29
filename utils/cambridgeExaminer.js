@@ -43,41 +43,63 @@ WHAT YOU NEVER DO:
 // ── Subject-specific examiner tips — loaded per subject ──
 
 const SUBJECT_EXAMINER = {
-  Chemistry: `CHEMISTRY EXAMINER INTELLIGENCE:
-Mechanisms: curly arrows from bond or lone pair, NEVER from atom. Name exact reagent (not "acid" but "dilute HCl" or "conc H₂SO₄"). State conditions (temperature, catalyst, solvent). Observation AND inference separately for tests. "Decolourises bromine water" must specify aqueous. Le Chatelier's = description not explanation. For organic synthesis: specify stereochemistry when chiral centre present.`,
+  // ═══ SCIENCES ═══
+  Chemistry: `CHEMISTRY (5070/9701): Lost marks: missing state symbols, unbalanced equations, wrong curly arrow direction. Command: State, Describe, Explain, Identify. B→A*: State symbols on EVERY equation (s)(l)(g)(aq). Observation before explanation. Terms: exothermic, endothermic, oxidation state, nucleophile, electrophile, homologous series. Mechanisms: arrows from bond/lone pair NEVER atom. Name exact reagent ("dilute HCl" not "acid"). Le Chatelier's = description not explanation.`,
 
-  Biology: `BIOLOGY EXAMINER INTELLIGENCE:
-Use precise terms: "semi-conservative replication" not "DNA replication". "Polypeptide synthesised at ribosome" not "protein is made". "Enzyme is denatured and tertiary structure permanently changed" not "destroyed". For processes: name the location in the cell. For graphs: state independent/dependent variable before trend. Distinguish B lymphocytes (antibody production) from T lymphocytes (cell-mediated). Population density (per m²) vs population size (number).`,
+  Biology: `BIOLOGY (5090/9700): Lost marks: imprecise terminology, missing sequence in processes, shaded drawings. Command: Describe, Explain, State, Suggest. B→A*: "cell surface membrane" not "cell membrane". "Net movement" not "movement". Every process needs ordered steps. Terms: partially permeable, water potential, turgid, plasmolysed, denatured, complementary base pairs. "Polypeptide synthesised at ribosome" not "protein is made". Name location in cell for every process.`,
 
-  Physics: `PHYSICS EXAMINER INTELLIGENCE:
-Define quantities with reference to equations: "pd is work done per unit charge" not just "voltage". Always show SI base units. Field lines never touch or cross. Distinguish conventional current from electron flow. For nuclear equations: mass number + atomic number must balance. For waves: path difference ≠ phase difference, nodes ≠ antinodes. Show unit analysis alongside calculations. Acceleration = "change in velocity PER UNIT TIME" — missing "per unit time" loses the mark.`,
+  Physics: `PHYSICS (5054/9702): Lost marks: missing units, connecting data points instead of best-fit line, incomplete experiments. Command: Describe, Calculate, Sketch, State. B→A*: Every answer needs units. Every graph needs labelled axes with units and best-fit line. Terms: scalar, vector, moment, resultant, equilibrium, specific heat capacity. Define quantities via equations: "pd is work done per unit charge". Acceleration = "change in velocity PER UNIT TIME".`,
 
-  Mathematics: `MATHS EXAMINER INTELLIGENCE:
-Show method marks even when answer is wrong — method marks are insurance. For proof: begin from correct side. For statistics: state distribution and parameters before calculating. Include +C for indefinite integrals. Never round prematurely in multi-step calculations. For "show that": must arrive at given answer with full working — answer alone = zero. Check degrees vs radians. For coordinate geometry: gradient alone is not enough — use y-y₁=m(x-x₁).`,
+  'Combined Science': `COMBINED SCIENCE (5129): Same standards as individual sciences — imprecise terminology and missing units most common. Command: State, Describe, Calculate, Explain. B→A*: Treat as three separate sciences — don't let weaker subject pull down stronger ones. Same rigour as individual Biology, Chemistry, Physics.`,
 
-  Economics: `ECONOMICS EXAMINER INTELLIGENCE:
-Draw diagrams with FULLY labelled axes, curves, equilibrium points — every time. Distinguish movement along curve vs shift of curve explicitly. For policy: state the transmission mechanism step by step (rate falls → borrowing rises → investment rises → AD shifts right). Define key terms at essay start. For evaluation: one-sided analysis = Level 2 max. Must weigh both sides then conclude.`,
+  // ═══ MATHEMATICS ═══
+  Mathematics: `MATHEMATICS (4024/9709): Lost marks: algebraic errors in correct method, missing units, no working shown, premature rounding. Command: Calculate, Show, Prove. B→A*: Show method at EVERY step even when shortcut is known. Method marks save grades. Terms: hence, deduce, verify, exact form, surd form. For "show that": must arrive at given answer with full working — answer alone = zero. Check degrees vs radians.`,
 
-  English: `ENGLISH EXAMINER INTELLIGENCE:
-Name device → quote it → explain effect in THIS context. Never identify without explaining — "the writer uses alliteration" = zero marks without the effect. Embed quotations within sentences, not block quotes. For summary: paraphrase, don't lift. For directed writing: check register (formal/informal), purpose, audience BEFORE writing. Word limit is a hard limit.`,
+  'Additional Mathematics': `ADDITIONAL MATHEMATICS (4037): Lost marks: not proving identities from one side only, integration constant C omitted, domain/range confusion. Command: Prove, Hence, Show that. B→A*: Never manipulate both sides of an identity simultaneously. Terms: domain, range, bijection, stationary point, point of inflection. For calculus: always include +C for indefinite integrals.`,
 
-  Literature: `LITERATURE EXAMINER INTELLIGENCE:
-Close reading with embedded short quotations. AO2 (how language creates meaning) is where marks are won. Personal response must be sustained throughout, not just stated at start. For whole-text essays: track development across the text, not just one extract. Story retelling = lowest band. For poetry: address structure, voice, imagery AND tone as minimum. Distinguish what the WRITER does from what the CHARACTER does.`,
+  Statistics: `STATISTICS (4040): Lost marks: probability not shown as fractions/decimals, cumulative frequency errors, vague hypothesis conclusions. Command: Calculate, Find, State, Draw, Test. B→A*: Show probability working in full. Cumulative frequency: plot at upper class boundary. Hypothesis: state conclusion in context of original question. Terms: median, quartile, standard deviation, null hypothesis, significance level.`,
 
-  History: `HISTORY EXAMINER INTELLIGENCE:
-Sources: evaluate provenance (origin, purpose, context) NOT just content. Essay: sustained argument throughout — NOT description of events. Every claim needs specific evidence (names, dates, statistics). For "How far": acknowledge opposite case before concluding. Treating sources as information rather than evidence = marks lost. Counter-arguments must be addressed not just mentioned.`,
+  // ═══ ENGLISH ═══
+  English: `ENGLISH LANGUAGE (1123/9093): Lost marks: lifting from text in summaries, quotation without interpretation, informal register. Command: Suggest, Explain, Summarise, Identify. B→A*: Every quotation must be followed by specific interpretation — never just quote and move on. Terms: connotation, semantic field, register, tone, implicit. Embed quotations within sentences. For summary: paraphrase, don't lift. Check register, purpose, audience BEFORE writing.`,
 
-  'Pakistan Studies': `PAKISTAN STUDIES EXAMINER INTELLIGENCE:
-Geography: specific data, named locations, map knowledge required. History: accurate chronology with dates and named individuals. Political questions: specific constitutional provisions, not vague "government." For 14-mark questions: introduction + 3+ developed points + conclusion with judgement. Source-based: quote from source THEN add own knowledge. Narrative without analysis = limited marks.`,
+  Literature: `ENGLISH LITERATURE (2010/9695): Lost marks: plot summary instead of analysis, quotation without analysis, generic technique comments. Command: Explore, Analyse, How does the writer... B→A*: Name technique → quote it → explain specific effect on reader. Never "this is effective." Terms: motif, juxtaposition, pathetic fallacy, volta, caesura. AO2 (how language creates meaning) is where marks are won. Personal response sustained throughout.`,
 
-  Islamiat: `ISLAMIAT EXAMINER INTELLIGENCE:
-Knowledge questions: specific Quranic references (Surah name + context) or Hadith with attribution. "Importance" questions: multiple DISTINCT reasons, not same point rephrased. Connect Islamic teaching to contemporary Muslim practice. Vague claims without textual evidence = limited marks. Distinguish Quranic injunctions from Prophetic Sunnah from scholarly consensus.`,
+  // ═══ HUMANITIES ═══
+  Economics: `ECONOMICS (2281/9708): Lost marks: no definition in first sentence, no data reference in data response, no evaluative conclusion. Command: Define, Explain, Analyse, Evaluate, Discuss. B→A*: Define → Analyse → Evaluate. Three distinct stages. Never skip the definition. Draw diagrams with FULLY labelled axes. Terms: ceteris paribus, price elasticity, aggregate demand, fiscal policy, monetary policy, opportunity cost. One-sided analysis = Level 2 max.`,
 
-  Business: `BUSINESS EXAMINER INTELLIGENCE:
-Application to the SPECIFIC business in the question — not generic theory. Reference business name, industry, context from the case. For recommendations: justify with evidence FROM the case study. Evaluate limitations of every recommendation. Textbook definition + no application = low marks. Distinguish application (this business) from knowledge (general theory).`,
+  History: `HISTORY (2147/9489): Lost marks: one-sided argument, ignoring source provenance, listing causes without analysis. Command: Describe, Explain, How far, Why. B→A*: Every "how far" needs a counter-argument taken seriously — not dismissed. Source: author, date, purpose, audience BEFORE content. Terms: provenance, bias, causation, significance, primary source, secondary source. Sustained argument throughout — NOT description of events.`,
 
-  'Computer Science': `COMPUTER SCIENCE EXAMINER INTELLIGENCE:
-Pseudocode must follow CAMBRIDGE syntax — not Python, not C++. Show trace tables with every variable at each step. For algorithms: state the algorithm name before describing it. Common error: writing Python when pseudocode is required. Declare variables. Check loop boundaries. For networking: distinguish TCP from UDP, packet switching from circuit switching.`,
+  'Pakistan Studies': `PAKISTAN STUDIES (2059): Lost marks: generic vague answers without specific dates, names, statistics, agreements. Command: Describe, Explain, Why, How, To what extent. B→A*: Specific always beats general. "1947" beats "when Pakistan was created." "Indus Waters Treaty 1960" beats "a water treaty." Terms: partition, constituent assembly, Basic Democracies, Nationalisation, Green Revolution. For 14-mark: intro + 3+ developed points + conclusion with judgement.`,
+
+  Geography: `GEOGRAPHY (2217/9696): Lost marks: no data/statistics referenced, case studies without specific place names, diagrams without labels. Command: Describe, Explain, Suggest, To what extent. B→A*: Name specific places. "The Nile in Egypt" beats "a river." Use given data — quote figures directly. Terms: urbanisation, ecosystem, sustainability, migration, economic development. Case studies with specific detail (place, date, figures).`,
+
+  Sociology: `SOCIOLOGY (2251/9699): Lost marks: no sociologist named, no study referenced, personal opinion as evidence. Command: Define, Describe, Explain, Assess, Evaluate. B→A*: Name the sociologist. Name the study. Give the date. "Durkheim (1897) argued..." not "some sociologists believe..." Terms: socialisation, stratification, norms, values, functionalism, conflict theory.`,
+
+  // ═══ ISLAMIC & URDU ═══
+  Islamiat: `ISLAMIYAT (2058/9488): Lost marks: no textual reference, generic answer without scholarship, description without significance. Command: Describe, Explain, Why is... important, How did... B→A*: Reference Quran and Hadith specifically. Link to Muslim life today in every "importance" answer. Treat with complete scholarly respect. Terms: Sunnah, Hadith, Fiqh, Ummah, Seerah, Sahabi. Distinguish Quranic injunctions from Prophetic Sunnah from scholarly consensus.`,
+
+  Urdu: `URDU (3247/3248/9676): Lost marks: informal colloquial register, English words substituted, incomplete comprehension. B→A*: Formal literary Urdu throughout. Rich vocabulary. Structured essay with clear introduction, argument, conclusion. For Second Language (3248): clear simple Urdu rewarded — accuracy over complexity. Terms: استعارہ، تشبیہ، علامت، مترادف، محاورہ`,
+
+  // ═══ BUSINESS & ACCOUNTING ═══
+  Business: `BUSINESS STUDIES (7115/9609): Lost marks: no application to business context given, generic theory without analysis, no recommendation. Command: State, Describe, Explain, Analyse, Evaluate. B→A*: Always apply to the specific business in the question. Generic theory without application cannot reach top bands. Terms: stakeholder, USP, cash flow, market segmentation, elasticity, economies of scale.`,
+
+  Accounting: `ACCOUNTING (7707/9706): Lost marks: incorrect double-entry, missing workings, wrong financial statement format. Command: Prepare, Calculate, State, Explain, Complete. B→A*: Show every step. Format financial statements exactly as Cambridge requires — columns, headings, totals. Terms: debit, credit, accrual, prepayment, depreciation, gross profit, net profit. Double entry must balance.`,
+
+  // ═══ COMPUTER SCIENCE ═══
+  'Computer Science': `COMPUTER SCIENCE (2210/9618): Lost marks: wrong pseudocode convention, incomplete trace tables, syntax errors. Command: Write, Complete, State, Describe, Trace. B→A*: Cambridge pseudocode conventions must be exact — not Python, not C++. Trace every variable in every row. Terms: iteration, recursion, array, boolean, algorithm, decomposition, abstraction. For networking: distinguish TCP from UDP.`,
+
+  // ═══ ADDITIONAL SUBJECTS ═══
+  Psychology: `PSYCHOLOGY (9990): Lost marks: no study named as evidence, describing without evaluating, one-sided argument. Command: Describe, Evaluate, Explain, Assess, Discuss. B→A*: For every point — name the study, describe findings, evaluate methodology. "Milgram (1963) found 65% of participants..." not "a study showed." Terms: validity, reliability, operationalise, ethical guidelines, independent variable, correlation.`,
+
+  Law: `LAW (9084): Lost marks: citing wrong law, no application to scenario, conclusion missing. Command: Identify, Explain, Advise, Discuss, Evaluate. B→A*: IRAC structure always — Issue → Rule → Application → Conclusion. Never skip application. Terms: ratio decidendi, obiter dictum, precedent, statute, mens rea, actus reus, tort.`,
+
+  'Media Studies': `MEDIA STUDIES (9607): Lost marks: technical terms misused, no specific real media example, analysis of content only. Command: Analyse, Discuss, Evaluate, Explain, Explore. B→A*: Three levels always — content, production context, audience reception. Terms: representation, genre, narrative, institution, audience, hegemony, semiotics.`,
+
+  'Art and Design': `ART AND DESIGN (6010/9479): Lost marks: portfolio without development work, no annotation explaining decisions, final piece without connection to brief. B→A*: Show the journey — research, experimentation, refinement, resolution. Annotation must explain WHY each decision was made. Terms: composition, tone, texture, form, line, context, influence, media, technique.`,
+
+  'Travel and Tourism': `TRAVEL AND TOURISM (7096/9395): Lost marks: no data from stimulus referenced, generic tourism theory without application. Command: Describe, Explain, Suggest, Evaluate, Recommend. B→A*: Always use the case study given — quote specific details from stimulus. Terms: sustainable tourism, ecotourism, multiplier effect, mass tourism, niche tourism.`,
+
+  'Environmental Management': `ENVIRONMENTAL MANAGEMENT (5014): Lost marks: causes listed without mechanism explanation, management strategies without evaluating effectiveness. Command: Describe, Explain, Suggest, Assess. B→A*: For every problem — cause → effect → management → evaluation of management. Full chain always. Terms: biodiversity, sustainability, carbon footprint, deforestation, eutrophication.`,
 };
 
 /**
@@ -88,21 +110,34 @@ export function getCambridgeExaminer(subject) {
   if (!subject) return '';
   const lower = subject.toLowerCase();
 
-  // Map common subject names to our keys
+  // Map common subject names to our keys — all 44 Cambridge subjects
   const subjectMap = {
-    'chemistry': 'Chemistry', 'chem': 'Chemistry',
-    'biology': 'Biology', 'bio': 'Biology',
-    'physics': 'Physics', 'phy': 'Physics',
-    'mathematics': 'Mathematics', 'maths': 'Mathematics', 'math': 'Mathematics',
-    'further maths': 'Mathematics', 'add maths': 'Mathematics', 'additional mathematics': 'Mathematics',
-    'economics': 'Economics', 'econ': 'Economics',
-    'english': 'English', 'english language': 'English', 'eng lang': 'English',
-    'literature': 'Literature', 'english literature': 'Literature', 'eng lit': 'Literature',
-    'history': 'History', 'hist': 'History',
-    'pakistan studies': 'Pakistan Studies', 'pak studies': 'Pakistan Studies',
-    'islamiat': 'Islamiat', 'islamiyat': 'Islamiat', 'islamic studies': 'Islamiat',
-    'business': 'Business', 'business studies': 'Business',
-    'computer science': 'Computer Science', 'cs': 'Computer Science', 'computing': 'Computer Science',
+    'chemistry': 'Chemistry', 'chem': 'Chemistry', '5070': 'Chemistry', '9701': 'Chemistry',
+    'biology': 'Biology', 'bio': 'Biology', '5090': 'Biology', '9700': 'Biology',
+    'physics': 'Physics', 'phy': 'Physics', '5054': 'Physics', '9702': 'Physics',
+    'combined science': 'Combined Science', '5129': 'Combined Science',
+    'mathematics': 'Mathematics', 'maths': 'Mathematics', 'math': 'Mathematics', '4024': 'Mathematics', '9709': 'Mathematics',
+    'further maths': 'Mathematics', '9231': 'Mathematics',
+    'add maths': 'Additional Mathematics', 'additional mathematics': 'Additional Mathematics', '4037': 'Additional Mathematics',
+    'statistics': 'Statistics', 'stats': 'Statistics', '4040': 'Statistics',
+    'economics': 'Economics', 'econ': 'Economics', '2281': 'Economics', '9708': 'Economics',
+    'english': 'English', 'english language': 'English', 'eng lang': 'English', '1123': 'English', '9093': 'English',
+    'literature': 'Literature', 'english literature': 'Literature', 'eng lit': 'Literature', '2010': 'Literature', '9695': 'Literature',
+    'history': 'History', 'hist': 'History', '2147': 'History', '9489': 'History',
+    'pakistan studies': 'Pakistan Studies', 'pak studies': 'Pakistan Studies', '2059': 'Pakistan Studies',
+    'geography': 'Geography', 'geo': 'Geography', '2217': 'Geography', '9696': 'Geography',
+    'islamiat': 'Islamiat', 'islamiyat': 'Islamiat', 'islamic studies': 'Islamiat', '2058': 'Islamiat', '9488': 'Islamiat',
+    'urdu': 'Urdu', '3247': 'Urdu', '3248': 'Urdu', '9676': 'Urdu',
+    'business': 'Business', 'business studies': 'Business', '7115': 'Business', '9609': 'Business',
+    'accounting': 'Accounting', 'accounts': 'Accounting', '7707': 'Accounting', '9706': 'Accounting',
+    'computer science': 'Computer Science', 'cs': 'Computer Science', 'computing': 'Computer Science', '2210': 'Computer Science', '9618': 'Computer Science',
+    'sociology': 'Sociology', 'soc': 'Sociology', '2251': 'Sociology', '9699': 'Sociology',
+    'psychology': 'Psychology', 'psych': 'Psychology', '9990': 'Psychology',
+    'law': 'Law', '9084': 'Law',
+    'media studies': 'Media Studies', 'media': 'Media Studies', '9607': 'Media Studies',
+    'art': 'Art and Design', 'art and design': 'Art and Design', '6010': 'Art and Design', '9479': 'Art and Design',
+    'travel and tourism': 'Travel and Tourism', 'travel': 'Travel and Tourism', '7096': 'Travel and Tourism', '9395': 'Travel and Tourism',
+    'environmental management': 'Environmental Management', 'environmental': 'Environmental Management', '5014': 'Environmental Management',
   };
 
   const key = subjectMap[lower] || Object.keys(SUBJECT_EXAMINER).find(k => lower.includes(k.toLowerCase()));
