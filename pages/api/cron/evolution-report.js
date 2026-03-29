@@ -220,6 +220,28 @@ Keep each recommendation under 2 sentences. Be direct.`;
         </div>
       </div>
 
+      ${await (async () => {
+        // Today's articles section
+        try {
+          const today = new Date().toISOString().split('T')[0];
+          const { data: articles } = await sb.from('news_articles').select('title, category, body, id').eq('date', today).order('created_at', { ascending: false }).limit(3);
+          if (articles?.length) {
+            return `<div style="padding:16px 24px;border-top:1px solid rgba(255,255,255,0.08)">
+              <h3 style="color:#FFC300;margin:0 0 12px">TODAY'S ARTICLES — ${today}</h3>
+              ${articles.map((a, i) => `<div style="margin-bottom:12px">
+                <div style="font-weight:700;color:#fff">${i+1}. ${a.title}</div>
+                <div style="font-size:12px;color:rgba(255,255,255,0.5)">Category: ${a.category || 'General'} · Words: ${a.body?.split(/\\s+/).length || 0}</div>
+                <div style="font-size:12px"><a href="https://www.newworld.education/news#${a.id}" style="color:#4F8EF7">Read →</a></div>
+              </div>`).join('')}
+            </div>`;
+          }
+          return `<div style="padding:16px 24px;border-top:1px solid rgba(255,255,255,0.08)">
+            <h3 style="color:#FF6B6B;margin:0 0 8px">⚠️ No articles published today</h3>
+            <p style="font-size:12px;color:rgba(255,255,255,0.5);margin:0">Check /api/cron/publish-news</p>
+          </div>`;
+        } catch { return ''; }
+      })()}
+
       <div style="padding:16px 24px;background:rgba(255,255,255,0.03);border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:rgba(255,255,255,0.25);text-align:center">
         NWE Self-Improvement Engine — generated automatically at ${new Date().toISOString()}
       </div>

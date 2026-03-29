@@ -110,14 +110,14 @@ export default function NewsPage() {
   return (
     <div style={{ minHeight: "100vh", background: "#080C18", fontFamily: "'Sora',-apple-system,sans-serif", color: "#fff" }}>
       <Head>
-        <title>Education Insights — NewWorldEdu News</title>
+        <title>News | NewWorldEdu</title>
         <meta name="description" content="Education news, Cambridge exam insights, and learning science — written for Pakistani students and parents." />
-        <meta property="og:title" content="Education Insights — NewWorldEdu" />
+        <meta property="og:title" content="News | NewWorldEdu" />
         <meta property="og:type" content="website" />
-        <link rel="alternate" type="application/rss+xml" title="NewWorldEdu News" href="/api/news-rss" />
+        <link rel="alternate" type="application/rss+xml" title="News" href="/api/news-rss" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org", "@type": "News",
-          "name": "NewWorld Education Insights",
+          "name": "News",
           "url": "https://www.newworld.education/news",
           "publisher": { "@type": "Organization", "name": "NewWorld Education" },
           "blogPost": articles.map(a => ({
@@ -134,7 +134,7 @@ export default function NewsPage() {
 
       <div style={{ maxWidth: 700, margin: "0 auto", padding: isMobile ? "28px 16px" : "48px 24px" }}>
         <div style={{ marginBottom: 32 }}>
-          <h1 style={{ fontSize: isMobile ? 28 : 40, fontWeight: 900, margin: "0 0 8px" }}>Education Insights</h1>
+          <h1 style={{ fontSize: isMobile ? 28 : 40, fontWeight: 900, margin: "0 0 8px" }}>News</h1>
           <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 15, margin: 0 }}>Cambridge exam intelligence, learning science, and what works — from the people building Starky.</p>
         </div>
 
