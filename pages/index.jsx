@@ -932,8 +932,8 @@ export default function Home() {
         )}
       </section>
 
-      {/* ── O & A LEVEL SECTION ── */}
-      <section id="oa-level" style={{padding:'40px 20px',background:'linear-gradient(180deg,rgba(124,92,191,0.08) 0%,rgba(8,12,24,0) 100%)',borderTop:'1px solid rgba(167,139,250,0.15)'}}>
+      {/* ── O & A LEVEL SECTION — Pakistan only ── */}
+      {userCountry !== 'UAE' && <section id="oa-level" style={{padding:'40px 20px',background:'linear-gradient(180deg,rgba(124,92,191,0.08) 0%,rgba(8,12,24,0) 100%)',borderTop:'1px solid rgba(167,139,250,0.15)'}}>
         <div style={{maxWidth:480,margin:'0 auto',textAlign:'center'}}>
           <div style={{display:'inline-flex',alignItems:'center',gap:6,background:'rgba(167,139,250,0.12)',border:'1px solid rgba(167,139,250,0.3)',borderRadius:100,padding:'4px 14px',fontSize:11,fontWeight:700,color:'#A78BFA',letterSpacing:'0.08em',textTransform:'uppercase',marginBottom:16}}>📚 Cambridge O &amp; A Level</div>
           <h2 style={{fontFamily:"'Sora',sans-serif",fontSize:'clamp(22px,6vw,34px)',fontWeight:800,lineHeight:1.2,marginBottom:12}}>Your A* Starts Here</h2>
@@ -977,7 +977,7 @@ export default function Home() {
             <p style={{fontSize:13,color:'rgba(255,255,255,0.3)',marginTop:8}}>Select O Level or A Level above to see your subjects</p>
           )}
         </div>
-      </section>
+      </section>}
 
       <section className="ft">
         <div className="sl">Why Starky</div>
