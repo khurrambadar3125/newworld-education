@@ -17,6 +17,7 @@ import { getUAEMandatoryPrompt, isUAEMandatoryTopic } from '../../utils/uaeManda
 import { getIBDiplomaPrompt, isIBTopic } from '../../utils/ibKnowledge';
 import { getAmericanCurriculumPrompt, isAmericanCurriculumTopic } from '../../utils/americanCurriculumKB';
 import { getCBSECurriculumPrompt, isCBSETopic } from '../../utils/cbseKnowledge';
+import { getMoECurriculumPrompt, isMoETopic } from '../../utils/uaeMoEKnowledge';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -296,6 +297,11 @@ export default async function handler(req, res) {
       // ── CBSE curriculum injection — for UAE students on Indian curriculum ──
       if (userProfile?.uaeCurriculum === 'cbse' || isCBSETopic(message)) {
         built.systemPrompt += getCBSECurriculumPrompt(subject);
+      }
+
+      // ── UAE MoE curriculum injection — for government school students ──
+      if (userProfile?.uaeCurriculum === 'moe' || isMoETopic(message)) {
+        built.systemPrompt += getMoECurriculumPrompt(subject);
       }
 
       // ── Academic phase injection — adapts Starky to the Cambridge calendar ──
