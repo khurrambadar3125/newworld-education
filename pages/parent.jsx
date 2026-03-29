@@ -282,6 +282,9 @@ export default function ParentPage() {
     { id:'unsure', label:'Not sure', color:'#A78BFA', desc:'I don\'t know the severity yet — Starky will adapt as we learn together.' },
   ];
   const [editingId,   setEditingId]   = useState(null);
+  const [senStep, setSenStep] = useState(1); // 1=details, 2=condition, 3=functional profile, 4=done
+  const [senChildName, setSenChildName] = useState("");
+  const [literacyProfile, setLiteracyProfile] = useState([]); // functional literacy checkboxes
 
   useEffect(() => {
     const fn = () => setIsMobile(window.innerWidth < 768);
@@ -477,10 +480,6 @@ export default function ParentPage() {
   // SEN FAST-TRACK REGISTRATION — radically simple for SEN parents
   // One screen: name + email + child name → condition selection → done → /special-needs
   // ════════════════════════════════════════════════════════════════════════════
-  const [senStep, setSenStep] = useState(1); // 1=details, 2=condition, 3=functional profile, 4=done
-  const [senChildName, setSenChildName] = useState("");
-  const [literacyProfile, setLiteracyProfile] = useState([]); // functional literacy checkboxes
-
   const LITERACY_OPTIONS = [
     { id:'reads_independently', label:'Can read independently' },
     { id:'writes_independently', label:'Can write independently' },
