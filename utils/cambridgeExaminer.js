@@ -145,3 +145,137 @@ export function getCambridgeExaminer(subject) {
 
   return subjectTips ? `\n${subjectTips}` : '';
 }
+
+// ── Pakistani Student Misconceptions — active wrong beliefs that cost marks ──
+// When detected, Starky addresses directly: "This is one of the most common things
+// Pakistani students get wrong. Let me show you why the real answer is different."
+
+export const MISCONCEPTIONS = {
+  Mathematics: [
+    { wrong: 'multiplying makes things bigger', right: 'False when multiplying fractions or decimals less than 1. 0.5 × 0.5 = 0.25 — smaller.', trigger: ['multiply.*bigger', 'multiplication.*increase', 'times.*more'] },
+    { wrong: 'you cannot take square root of a negative', right: 'Introduces complex numbers at A Level. √(-1) = i. This is fundamental to Further Maths.', trigger: ['square root.*negative', 'cant sqrt negative', 'no square root of minus'] },
+    { wrong: 'correlation means causation', right: 'Correlation shows relationship, not cause. Ice cream sales correlate with drownings — both caused by hot weather, not each other.', trigger: ['correlation.*cause', 'correlat.*therefore', 'correlat.*proves'] },
+    { wrong: 'dy/dx is a fraction you can split apart', right: 'dy/dx is a limit notation, not a fraction. You cannot always treat numerator and denominator separately.', trigger: ['dy.*divide.*dx', 'split.*dy.*dx', 'dy over dx.*fraction'] },
+    { wrong: 'dividing by zero gives infinity', right: 'Division by zero is undefined — not infinity. 1/0 has no answer. The limit may approach infinity but the value does not exist.', trigger: ['divide.*zero.*infinity', 'anything.*over.*zero.*inf'] },
+  ],
+  Biology: [
+    { wrong: 'osmosis is the same as diffusion', right: 'Osmosis is specifically water molecules moving across a partially permeable membrane. Diffusion is any particle moving from high to low concentration.', trigger: ['osmosis.*same.*diffusion', 'osmosis.*like diffusion', 'diffusion.*water'] },
+    { wrong: 'enzymes are destroyed in reactions', right: 'Enzymes are biological catalysts — unchanged by the reaction. They can be denatured by heat (tertiary structure changes) but not "destroyed" or "used up."', trigger: ['enzyme.*destroy', 'enzyme.*used up', 'enzyme.*die'] },
+    { wrong: 'mitosis and meiosis are interchangeable', right: 'Mitosis = growth/repair, produces 2 identical diploid cells. Meiosis = gamete production, produces 4 genetically different haploid cells. Fundamentally different.', trigger: ['mitosis.*meiosis.*same', 'meiosis.*mitosis.*interch'] },
+    { wrong: 'the brain controls all reflexes', right: 'Spinal reflexes (e.g., pulling hand from hot object) bypass the brain entirely. The reflex arc goes: receptor → sensory neurone → relay neurone (spinal cord) → motor neurone → effector.', trigger: ['brain.*all reflex', 'brain.*control.*reflex', 'reflex.*brain'] },
+    { wrong: 'photosynthesis only happens in light', right: 'The light-independent reactions (Calvin cycle) continue using products from light-dependent reactions. Also, plants respire 24/7 alongside photosynthesis.', trigger: ['photosynthesis.*only.*light', 'no photosynthesis.*dark', 'plants.*only.*daytime'] },
+  ],
+  Chemistry: [
+    { wrong: 'exothermic means the substance gets hot', right: 'Exothermic means energy is released to the surroundings. The surroundings get warmer, not necessarily the substance itself.', trigger: ['exothermic.*hot', 'exothermic.*substance.*warm', 'exothermic.*heat.*up'] },
+    { wrong: 'acids always have H at the start', right: 'Many acids start with H (HCl, H₂SO₄) but not all. Ethanoic acid is CH₃COOH. The definition is about donating H⁺ ions, not formula position.', trigger: ['acid.*always.*start.*H', 'acid.*formula.*H first'] },
+    { wrong: 'oxidation means gaining oxygen only', right: 'Oxidation is also loss of electrons and loss of hydrogen. OIL RIG: Oxidation Is Loss, Reduction Is Gain (of electrons).', trigger: ['oxidation.*only.*oxygen', 'oxidation.*just.*oxygen', 'oxidat.*gain.*oxygen'] },
+    { wrong: 'more concentrated always means faster', right: 'Higher concentration increases rate for reactions involving that reactant in the rate equation — but rate depends on the rate-determining step and reaction order.', trigger: ['concentrat.*always.*fast', 'more concentrat.*faster always'] },
+    { wrong: 'state symbols are optional', right: 'State symbols (s)(l)(g)(aq) are mandatory in Cambridge mark schemes. Missing them costs marks every time.', trigger: ['state symbol.*optional', 'dont need state symbol', 'state symbol.*not important'] },
+  ],
+  Physics: [
+    { wrong: 'heavier objects fall faster', right: 'Galileo showed all objects fall at the same rate in a vacuum (g ≈ 9.81 m/s²). Air resistance affects different shapes differently, but gravity accelerates all masses equally.', trigger: ['heavier.*fall.*fast', 'heavy.*drop.*quick', 'more mass.*faster.*fall'] },
+    { wrong: 'current is used up in a circuit', right: 'Current is the same at every point in a series circuit. It is not consumed. Energy is transferred, not current. Ammeter readings are identical either side of a component.', trigger: ['current.*used up', 'current.*less.*after', 'current.*consumed'] },
+    { wrong: 'velocity and speed are the same', right: 'Speed is scalar (magnitude only). Velocity is vector (magnitude AND direction). A car going 60 km/h in a circle has constant speed but changing velocity.', trigger: ['velocity.*same.*speed', 'speed.*velocity.*interch', 'speed.*equals.*velocity'] },
+    { wrong: 'pressure acts downward only', right: 'Pressure in a fluid acts in ALL directions — up, down, sideways. This is why a balloon expands equally in all directions and why dams are thicker at the bottom.', trigger: ['pressure.*only.*down', 'pressure.*just.*down', 'pressure.*act.*downward'] },
+    { wrong: 'nuclear radiation is always dangerous', right: 'Radiation type and dose matter. Alpha cannot penetrate skin. Medical uses of gamma (imaging, cancer treatment) are life-saving. Background radiation is natural and harmless.', trigger: ['radiation.*always.*danger', 'nuclear.*always.*bad', 'all radiation.*harmful'] },
+  ],
+  Economics: [
+    { wrong: 'price always finds equilibrium quickly', right: 'Markets have friction — information asymmetry, transaction costs, behavioural biases, government intervention. Equilibrium is theoretical; real markets may never reach it.', trigger: ['price.*always.*equilibrium', 'market.*always.*balance', 'equilibrium.*automatic'] },
+    { wrong: 'supply and demand are independent', right: 'They interact. A change in supply shifts the supply curve which changes equilibrium price, which then affects quantity demanded. They are interdependent through price.', trigger: ['supply.*demand.*independent', 'supply.*demand.*separate'] },
+    { wrong: 'inflation is always bad', right: 'Moderate inflation (2-3%) can be healthy — encourages spending over hoarding, allows real wage adjustment, and indicates a growing economy. Deflation is often worse.', trigger: ['inflation.*always.*bad', 'inflation.*never.*good', 'any inflation.*harm'] },
+    { wrong: 'government spending always helps', right: 'Crowding out effect: government borrowing increases interest rates, reducing private investment. Also: time lags, corruption, misallocation, and inflationary pressure.', trigger: ['government.*spend.*always.*help', 'more.*government.*spend.*better'] },
+    { wrong: 'free trade benefits everyone equally', right: 'Free trade increases total welfare but distributional effects matter. Some industries lose jobs. Infant industries may need protection. Comparative advantage has limitations.', trigger: ['free trade.*benefit.*everyone', 'free trade.*equal.*benefit'] },
+  ],
+  English: [
+    { wrong: 'longer essays are always better', right: 'Quality over quantity. A concise, well-structured answer with embedded quotations earns more than a long rambling one. Summary tasks have word limits for a reason.', trigger: ['longer.*essay.*better', 'more.*words.*more.*marks', 'write.*more.*better'] },
+    { wrong: 'identifying a technique earns marks', right: 'Identification alone = zero. You must: name the technique → quote it → explain its specific effect in this context. "The writer uses alliteration" earns nothing without the effect.', trigger: ['just.*identify.*technique', 'name.*technique.*enough', 'spot.*device.*mark'] },
+    { wrong: 'formal writing means complex vocabulary', right: 'Formal means appropriate register, not unnecessarily complex words. Clarity is rewarded. Using words you do not fully understand loses marks for inaccuracy.', trigger: ['formal.*big words', 'formal.*complex.*vocab', 'formal.*difficult.*words'] },
+    { wrong: 'summary means shorter version of the text', right: 'Summary means selecting relevant points and paraphrasing them in your own words. Lifting text verbatim = zero marks. Paraphrase is the skill being tested.', trigger: ['summary.*shorter.*version', 'summary.*copy.*shorter'] },
+    { wrong: 'creative writing has no rules', right: 'Cambridge creative writing is assessed on structure, vocabulary, sentence variety, and coherence. The best creative responses follow a clear narrative arc with controlled language choices.', trigger: ['creative.*no rules', 'creative.*anything goes', 'creative.*no structure'] },
+  ],
+  History: [
+    { wrong: 'sources tell you what happened', right: 'Sources tell you what the author WANTED to communicate. Every source has provenance — origin, purpose, audience, bias. Evaluate the source, do not just extract information.', trigger: ['source.*tells.*what happened', 'source.*fact', 'source.*truth'] },
+    { wrong: 'more causes means a better answer', right: 'Depth beats breadth. Three well-developed causes with evidence and analysis earn more than ten briefly mentioned ones. Chain of reasoning matters.', trigger: ['more cause.*better', 'list.*many.*cause'] },
+    { wrong: 'history is about memorising dates', right: 'Cambridge rewards analysis of significance, not chronological recitation. Why something happened matters more than when.', trigger: ['history.*memoris.*date', 'history.*remember.*date'] },
+    { wrong: '"how far" means you must fully agree', right: '"How far" and "to what extent" require nuanced evaluation. Full agreement cannot reach the top band. You must acknowledge counter-arguments seriously.', trigger: ['how far.*agree.*fully', 'to what extent.*fully'] },
+    { wrong: 'narrative is the same as analysis', right: 'Narrative = telling what happened. Analysis = explaining WHY it happened and evaluating its significance. Cambridge only rewards analysis.', trigger: ['narrative.*analysis.*same', 'telling.*story.*analysis'] },
+  ],
+  'Pakistan Studies': [
+    { wrong: 'the Two-Nation Theory was always accepted', right: 'It was debated. Many Muslims initially supported Indian nationalism. The theory gained traction gradually through specific political failures and events.', trigger: ['two nation.*always', 'two nation.*obvious', 'everyone.*agreed.*two nation'] },
+    { wrong: 'Jinnah always wanted partition', right: 'Jinnah initially sought constitutional safeguards within united India. Partition became the goal after Congress refused power-sharing guarantees for Muslims.', trigger: ['jinnah.*always.*partition', 'jinnah.*always.*separate'] },
+    { wrong: 'Pakistan Studies is just memorisation', right: 'Cambridge Paper 1 requires source evaluation and analytical essays with judgement. "To what extent" questions cannot be answered by reciting textbook passages.', trigger: ['pak studies.*memoris', 'pak studies.*learn.*facts'] },
+    { wrong: 'geography and history sections are separate', right: 'The best answers connect geography to history — e.g., Indus Water Treaty (1960) links water resources to Indo-Pakistan relations and agricultural policy.', trigger: ['geography.*history.*separate', 'paper 1.*paper 2.*different'] },
+    { wrong: 'source-based means copy from the source', right: 'Source-based questions require you to quote briefly THEN add your own knowledge. Pure quotation without own knowledge cannot earn full marks.', trigger: ['source.*copy', 'source.*quote.*enough'] },
+  ],
+  'Computer Science': [
+    { wrong: 'pseudocode is the same as Python', right: 'Cambridge has its own pseudocode conventions. Python syntax in pseudocode answers loses marks. Learn Cambridge pseudocode format specifically.', trigger: ['pseudocode.*python.*same', 'python.*pseudocode.*interch'] },
+    { wrong: 'a computer understands instructions', right: 'Computers execute instructions — they do not understand them. A computer processes binary. Understanding requires consciousness, which machines do not have.', trigger: ['computer.*understand', 'computer.*think'] },
+    { wrong: 'the internet and the world wide web are the same', right: 'The internet is the physical network (cables, routers). The WWW is a service that runs on the internet (web pages accessed via HTTP/HTTPS). Email uses the internet but not the web.', trigger: ['internet.*www.*same', 'internet.*web.*same', 'web.*internet.*interch'] },
+    { wrong: 'more RAM always makes a computer faster', right: 'RAM beyond what programs need gives no benefit. Speed depends on CPU clock speed, cache size, bus width, and whether the bottleneck is RAM, CPU, or storage.', trigger: ['more ram.*always.*fast', 'ram.*speed.*always'] },
+    { wrong: 'binary is only for computers', right: 'Binary is a number system. It is used in computers because transistors have two states (on/off), but binary arithmetic follows the same mathematical rules as decimal.', trigger: ['binary.*only.*computer', 'binary.*just.*computer'] },
+  ],
+  Islamiat: [
+    { wrong: 'all Hadith are equally authentic', right: 'Hadith are classified by authenticity: Sahih (authentic), Hasan (good), Daif (weak), Mawdu (fabricated). Bukhari and Muslim collections are the most rigorously authenticated.', trigger: ['all hadith.*same', 'hadith.*equally.*valid', 'any hadith.*proof'] },
+    { wrong: 'Jihad means holy war only', right: 'Jihad literally means "striving." The greater jihad is the internal struggle against sin. Military jihad has strict conditions in Islamic jurisprudence and is the lesser jihad.', trigger: ['jihad.*only.*war', 'jihad.*just.*fight', 'jihad.*always.*war'] },
+    { wrong: 'the Quran was revealed all at once', right: 'The Quran was revealed gradually over 23 years — each revelation addressing specific circumstances (Asbab al-Nuzul). This gradual revelation is itself significant.', trigger: ['quran.*revealed.*once', 'quran.*all at once', 'quran.*one time'] },
+    { wrong: 'all companions agreed on everything', right: 'The Sahaba had genuine disagreements on governance, succession, and interpretation. These differences are studied respectfully and provide rich jurisprudential tradition.', trigger: ['companion.*agreed.*everything', 'sahaba.*never.*disagree'] },
+    { wrong: 'Zakat and Sadaqah are the same', right: 'Zakat is obligatory (2.5% of savings above Nisab). Sadaqah is voluntary charity. Zakat has specific rules on who can receive it. They are distinct obligations.', trigger: ['zakat.*sadaqah.*same', 'zakat.*sadaqah.*interch'] },
+  ],
+  Accounting: [
+    { wrong: 'debit always means money going out', right: 'Debit means left side of the account. For assets, debit means increase. For liabilities, debit means decrease. The direction depends on the account type.', trigger: ['debit.*always.*money.*out', 'debit.*means.*spend', 'debit.*loss'] },
+    { wrong: 'profit means cash in the bank', right: 'Profit is an accounting concept (revenue minus expenses). A profitable business can have no cash if it is tied up in receivables, inventory, or fixed assets.', trigger: ['profit.*cash', 'profit.*money.*bank', 'profit.*means.*cash'] },
+    { wrong: 'depreciation is money set aside', right: 'Depreciation is an accounting entry that spreads the cost of an asset over its useful life. No cash is set aside. It is a non-cash expense that reduces reported profit.', trigger: ['depreciation.*money.*aside', 'depreciation.*saving', 'depreciation.*fund'] },
+    { wrong: 'trial balance proves accounts are correct', right: 'A trial balance only proves debits equal credits. Errors of commission, omission, original entry, principle, and compensating errors are NOT detected by a trial balance.', trigger: ['trial balance.*proves.*correct', 'trial balance.*no error'] },
+    { wrong: 'capital and revenue expenditure are obvious', right: 'The distinction requires judgement. Repairs (revenue) vs improvements (capital). New engine for existing vehicle: capital. Oil change: revenue. Context determines classification.', trigger: ['capital.*revenue.*obvious', 'easy.*tell.*capital.*revenue'] },
+  ],
+  Geography: [
+    { wrong: 'weather and climate are the same', right: 'Weather is short-term atmospheric conditions at a specific time and place. Climate is the average weather pattern over 30+ years for a region. Cambridge tests this distinction.', trigger: ['weather.*climate.*same', 'weather.*climate.*interch'] },
+    { wrong: 'all rivers flow south', right: 'Rivers flow downhill following gravity — the direction depends on topography. The Nile flows north. The Indus flows south then west. Direction has no fixed rule.', trigger: ['river.*always.*south', 'river.*flow.*south'] },
+    { wrong: 'development means economic growth only', right: 'Development includes social indicators (literacy, life expectancy, HDI), political stability, environmental sustainability, and quality of life — not just GDP.', trigger: ['development.*only.*economic', 'development.*just.*gdp', 'development.*only.*money'] },
+    { wrong: 'urbanisation is always negative', right: 'Urbanisation brings employment, education access, healthcare, cultural exchange. Problems exist but so do solutions. Cambridge expects balanced evaluation.', trigger: ['urbanisation.*always.*bad', 'urbanisation.*only.*negative'] },
+    { wrong: 'case studies are optional extras', right: 'Case studies with specific named examples (place, date, figures) are essential for top marks. "A river" earns nothing. "The River Indus in Pakistan" earns marks.', trigger: ['case study.*optional', 'dont need.*case study', 'example.*not.*necessary'] },
+  ],
+  Sociology: [
+    { wrong: 'sociology is just common sense', right: 'Sociology uses systematic research methods to challenge common sense assumptions. Durkheim showed suicide rates are social facts, not just individual choices.', trigger: ['sociology.*common sense', 'sociology.*obvious'] },
+    { wrong: 'functionalism and Marxism agree', right: 'Fundamentally opposed. Functionalism sees society as harmonious with shared values. Marxism sees society as conflict between classes with competing interests.', trigger: ['functionalism.*marxism.*agree', 'functionalism.*marxism.*same'] },
+    { wrong: 'personal experience counts as evidence', right: 'Sociology requires empirical evidence from studies. "I think..." or "In my family..." is not sociological evidence. Name the study, the sociologist, the date.', trigger: ['personal.*experience.*evidence', 'my.*experience.*proof', 'i think.*evidence'] },
+    { wrong: 'all research methods are equally valid', right: 'Methods have strengths and limitations. Quantitative = reliability, representativeness. Qualitative = validity, depth. Choosing the right method for the research question matters.', trigger: ['all.*method.*same', 'any.*method.*works', 'method.*equally.*valid'] },
+    { wrong: 'correlation in data proves the theory', right: 'Data shows patterns, not causes. A correlation between poverty and crime does not prove poverty causes crime. Other variables (education, opportunity, policy) may be involved.', trigger: ['data.*proves.*theory', 'correlation.*prove'] },
+  ],
+  Business: [
+    { wrong: 'bigger businesses are always more successful', right: 'Diseconomies of scale exist — communication problems, slow decision-making, employee alienation. Many SMEs outperform large corporations in niche markets.', trigger: ['bigger.*always.*success', 'large.*business.*always.*better'] },
+    { wrong: 'marketing is just advertising', right: 'Marketing includes market research, product development, pricing strategy, distribution, and promotion. Advertising is one part of the promotional mix.', trigger: ['marketing.*just.*advertis', 'marketing.*same.*advertis'] },
+    { wrong: 'cash flow and profit are the same', right: 'A business can be profitable and run out of cash (e.g., all profit tied in receivables). Cash flow is timing of actual money in/out. Profit is accounting calculation.', trigger: ['cash flow.*profit.*same', 'cash.*profit.*interch'] },
+    { wrong: 'stakeholders all want the same thing', right: 'Stakeholder objectives conflict. Shareholders want profit. Workers want higher wages. Customers want lower prices. Government wants tax revenue. Management must balance these.', trigger: ['stakeholder.*same.*goal', 'stakeholder.*all.*want.*same'] },
+    { wrong: 'theory without application earns top marks', right: 'Cambridge Business requires application to the specific business in the question. Generic theory without application to the case cannot reach top bands.', trigger: ['theory.*enough', 'theory.*top.*mark', 'dont need.*apply'] },
+  ],
+};
+
+/**
+ * Check if a student's message contains a known misconception.
+ * Returns the misconception object if found, null otherwise.
+ */
+export function checkMisconception(message, subject) {
+  if (!message || !subject) return null;
+  const lower = message.toLowerCase();
+
+  const subjectKey = Object.keys(MISCONCEPTIONS).find(k =>
+    subject.toLowerCase().includes(k.toLowerCase())
+  );
+  if (!subjectKey) return null;
+
+  for (const m of MISCONCEPTIONS[subjectKey]) {
+    for (const trigger of m.trigger) {
+      const regex = new RegExp(trigger, 'i');
+      if (regex.test(lower)) {
+        return {
+          subject: subjectKey,
+          wrong: m.wrong,
+          right: m.right,
+          prompt: `MISCONCEPTION DETECTED: The student appears to believe "${m.wrong}". This is one of the most common wrong beliefs Pakistani students carry. Address it directly: "Actually — this is one of the most common things Pakistani students get wrong. Let me show you why the real answer is different." Then explain: ${m.right}`,
+        };
+      }
+    }
+  }
+  return null;
+}

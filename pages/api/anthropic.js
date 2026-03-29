@@ -12,6 +12,7 @@ import { checkContentViolation, checkExcludedAuthors } from '../../utils/content
 import { getCurrentPhase, getPhasePromptInjection } from '../../lib/academic-calendar';
 import { detectWeakness, saveWeakness } from '../../utils/weaknessDetector';
 import { getBookKnowledge } from '../../utils/readingKnowledge';
+import { checkMisconception } from '../../utils/cambridgeExaminer';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -243,6 +244,12 @@ export default async function handler(req, res) {
       const bookKnowledge = getBookKnowledge(message);
       if (bookKnowledge) {
         built.systemPrompt += bookKnowledge;
+      }
+
+      // Misconception detection — catches active wrong beliefs Pakistani students carry
+      const misconception = checkMisconception(message, currentSubject);
+      if (misconception) {
+        built.systemPrompt += `\n\n${misconception.prompt}`;
       }
 
       // Tier 3: Situational excellence — bored students, "why do I need this?", university prep, exam depth
