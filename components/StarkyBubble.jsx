@@ -880,6 +880,9 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
           .starky-chat { animation: none; }
           .starky-msg, .starky-fab, .starky-chat { transition: none; }
         }
+        /* Mic recording pulse */
+        @keyframes micPulse { 0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,0.4)} 50%{box-shadow:0 0 0 8px rgba(239,68,68,0)} }
+        .starky-mic-active { animation: micPulse 1.5s ease-in-out infinite !important; }
         /* Deaf student mode — larger text, no audio elements */
         .starky-deaf-mode .starky-msg { font-size: 20px !important; line-height: 1.8 !important; }
         .starky-deaf-mode .starky-input { font-size: 20px !important; }
@@ -961,7 +964,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
               <input ref={fileInputRef} type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/*" style={{display:'none'}} onChange={handleImageSelect} />
               <input ref={cameraInputRef} type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/*" capture="environment" style={{display:'none'}} onChange={handleCameraSelect} />
               {/* 🎤 Voice — hidden for deaf students */}
-              {sttSupported && !userProfile?.isDeafStudent && !userProfile?.is_deaf_student && (
+              {sttSupported && !userProfile?.isDeafStudent && !userProfile?.is_deaf_student && !userProfile?.deaf_mode && (
                 <button className={`starky-icon-btn${isMicActive ? ' starky-mic-active' : ''}`}
                   onClick={() => {
                     if (isMicActive) {
@@ -970,23 +973,44 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
                       return;
                     }
                     const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-                    if (!SR) return;
+                    if (!SR) { alert('Microphone not available — please type your question'); return; }
                     const r = new SR();
-                    r.lang = (navigator.language || '').startsWith('ur') ? 'ur-PK' : 'en-US';
-                    r.interimResults = false;
+                    r.lang = 'en-GB';
+                    r.continuous = false;
+                    r.interimResults = true;
+                    let finalTranscript = '';
                     r.onresult = (e) => {
-                      const t = e.results?.[0]?.[0]?.transcript;
-                      if (t) { pendingVoiceRef.current = t; sendMessage(); }
-                      setIsMicActive(false);
+                      let interim = '';
+                      for (let i = e.resultIndex; i < e.results.length; i++) {
+                        if (e.results[i].isFinal) {
+                          finalTranscript += e.results[i][0].transcript;
+                        } else {
+                          interim += e.results[i][0].transcript;
+                        }
+                      }
+                      // Show real-time transcript in input field
+                      setInput(finalTranscript + interim);
                     };
-                    r.onerror = () => setIsMicActive(false);
-                    r.onend = () => setIsMicActive(false);
+                    r.onend = () => {
+                      setIsMicActive(false);
+                      // Auto-send when speech stops (if there's content)
+                      if (finalTranscript.trim()) {
+                        pendingVoiceRef.current = finalTranscript.trim();
+                        setTimeout(() => sendMessage(), 100);
+                      }
+                    };
+                    r.onerror = (e) => {
+                      setIsMicActive(false);
+                      if (e.error !== 'aborted') {
+                        alert('Microphone not available — please type your question');
+                      }
+                    };
                     micRef.current = r;
                     r.start();
                     setIsMicActive(true);
                   }}
                   title={isMicActive ? 'Stop listening' : 'Speak your message'}
-                  style={isMicActive ? { background:'rgba(239,68,68,0.2)', borderColor:'rgba(239,68,68,0.4)' } : {}}
+                  style={isMicActive ? { background:'rgba(239,68,68,0.2)', borderColor:'rgba(239,68,68,0.4)', animation: 'micPulse 1.5s ease-in-out infinite' } : {}}
                 >
                   {isMicActive ? '⏹' : '🎤'}
                 </button>
