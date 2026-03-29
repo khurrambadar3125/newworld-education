@@ -120,7 +120,7 @@ export default function SummerUAEPage() {
             {[
               { n: 'Jun 1 → Aug 31', l: '92 days of summer' },
               { n: '5', l: 'Curricula' },
-              { n: 'Free', l: 'No cost in summer' },
+              { n: '10 Free', l: 'Sessions to start' },
             ].map(s => (
               <div key={s.n} style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: 18, fontWeight: 900, color: '#4ECDC4' }}>{s.n}</div>

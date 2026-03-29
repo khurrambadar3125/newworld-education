@@ -19,6 +19,7 @@ import { getAmericanCurriculumPrompt, isAmericanCurriculumTopic } from '../../ut
 import { getCBSECurriculumPrompt, isCBSETopic } from '../../utils/cbseKnowledge';
 import { getMoECurriculumPrompt, isMoETopic } from '../../utils/uaeMoEKnowledge';
 import { getUAEExcellencePrompt } from '../../utils/uaeAcademicExcellence';
+import { getUAESummerPrompt } from '../../utils/uaeSummerKnowledge';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -308,6 +309,9 @@ export default async function handler(req, res) {
       // ── UAE Academic Excellence — deep examiner intelligence for all curricula ──
       if (userProfile?.country === 'UAE' || userProfile?.user_country === 'UAE') {
         built.systemPrompt += getUAEExcellencePrompt(userProfile?.uaeCurriculum, subject);
+        // UAE Summer programme — active July 3 to August 26
+        const summerPrompt = getUAESummerPrompt(userProfile?.uaeCurriculum);
+        if (summerPrompt) built.systemPrompt += summerPrompt;
       }
 
       // ── Academic phase injection — adapts Starky to the Cambridge calendar ──
