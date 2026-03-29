@@ -86,6 +86,34 @@ export const MOE_SUBJECTS = {
     ],
     tips: `The Advanced Track is the university-preparation pathway — equivalent to science stream. Students take separate Physics, Chemistry, Biology instead of General Science. Advanced Mathematics covers calculus, statistics, and advanced algebra. This track is required for engineering, medicine, and science degrees at UAE federal universities (UAEU, Zayed University, Khalifa University). EmSAT Achieve scores in the Advanced Track are higher — students must aim for 1100+ in English and 900+ in Maths for competitive programmes. The Elite Track (added 2020) offers even more rigorous content for students targeting top universities. Grade 12 marks + EmSAT scores together determine university placement — both matter.`,
   },
+
+  cycle3Elite: {
+    name: 'Cycle 3 — Grades 9-12 (Elite Track)',
+    subjects: [
+      { code: 'arabic', name: 'Arabic Language', mandatory: true },
+      { code: 'english', name: 'English Language (Advanced)', mandatory: true },
+      { code: 'maths', name: 'Advanced Mathematics (Extended)', mandatory: true },
+      { code: 'physics', name: 'Physics (Extended)', mandatory: true },
+      { code: 'chemistry', name: 'Chemistry (Extended)', mandatory: true },
+      { code: 'biology', name: 'Biology (Extended)', mandatory: true },
+      { code: 'islamic', name: 'Islamic Education', mandatory: true },
+      { code: 'sst', name: 'Social Studies', mandatory: true },
+      { code: 'cs', name: 'Computer Science / AI', mandatory: false },
+      { code: 'research', name: 'Research Methods', mandatory: false },
+    ],
+    tips: `The Elite Track (introduced 2020) is the most rigorous pathway in UAE government schools — targeting students aiming for Khalifa University, NYU Abu Dhabi, or international universities. Content goes beyond the Advanced Track with extended syllabi in Maths, Physics, and Chemistry. English language requirements are higher — students are expected to reach EmSAT 1400+ by Grade 12. Research Methods is offered as an elective, preparing students for university-level academic writing. Selection for Elite Track is competitive — based on Grade 8 performance and entrance assessments. Schools offering Elite Track include select MoE model schools in Abu Dhabi, Dubai, and Sharjah.`,
+  },
+
+  artsMusic: {
+    name: 'Arts, Music & Design (All Cycles)',
+    subjects: [
+      { code: 'art', name: 'Visual Arts', mandatory: true, note: 'Cycles 1-2 mandatory, Cycle 3 elective' },
+      { code: 'music', name: 'Music', mandatory: true, note: 'Cycles 1-2 mandatory, Cycle 3 elective' },
+      { code: 'design', name: 'Design & Technology', mandatory: true, note: 'All cycles' },
+      { code: 'drama', name: 'Drama / Theatre', mandatory: false, note: 'Available in some schools' },
+    ],
+    tips: `Art and Music are mandatory in Cycles 1-2 and become elective in Cycle 3. Design & Technology integrates STEM principles with practical skills — coding, robotics, 3D printing, engineering design. UAE context: Islamic geometric art, Arabic calligraphy, traditional Emirati music (Al Ayyala dance, Liwa music), modern UAE architecture. Art assessments include portfolio work and practical projects. Music includes both Western and Arabic musical traditions. In Cycle 3, students interested in creative fields can choose these as electives alongside their core subjects, but they are not examined in EmSAT.`,
+  },
 };
 
 /**

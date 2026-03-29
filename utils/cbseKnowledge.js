@@ -119,6 +119,41 @@ export const CBSE_GRADING = {
 };
 
 /**
+ * Additional CBSE subjects and streams not covered above
+ */
+export const CBSE_ADDITIONAL = {
+  additionalLanguages: {
+    sanskrit: 'Sanskrit — offered as second/third language in many CBSE schools. Grammar-heavy: sandhi, samas, pratyay, vibhakti. Less common in UAE CBSE schools but available at Indian High School Dubai and some GEMS schools.',
+    french: 'French — popular third language choice in UAE CBSE schools. Follows CBSE French curriculum aligned to CEFR A2-B1.',
+    german: 'German — available in select UAE CBSE schools. CBSE German follows Goethe Institut alignment.',
+  },
+
+  vocationalStreams: {
+    note: 'CBSE offers skill-based vocational subjects from Class 9 onwards. These can be taken alongside academic streams.',
+    subjects: [
+      'Information Technology (IT) — coding, web design, database basics',
+      'Artificial Intelligence — ML concepts, Python, AI ethics',
+      'Retail — retail operations, customer service, inventory management',
+      'Financial Markets Management — banking, insurance, stock market basics',
+      'Tourism — travel industry, hospitality, tourism management',
+      'Health Care — basic health science, first aid, community health',
+      'Beauty & Wellness — available in some schools',
+    ],
+    uaeRelevance: 'Vocational subjects are less common in UAE CBSE schools compared to India. Most UAE CBSE families prefer traditional academic streams. However, AI and IT are increasingly popular as 6th subject options.',
+  },
+
+  additionalElectives: {
+    entrepreneurship: 'Entrepreneurship — Class 11-12 elective. Business plan creation, startup ecosystem, financial planning. Relevant in UAE: Dubai startup hub context, DIFC, free zones.',
+    biotechnology: 'Biotechnology — Class 11-12 Science stream elective. Molecular biology, genetic engineering, bioprocess technology. Pairs with Biology for students interested in biomedical sciences.',
+    legalStudies: 'Legal Studies — Class 11-12 elective. Indian Constitution, legal system, human rights. For UAE students: compare with UAE legal system.',
+    multimedia: 'Multimedia and Web Technology — Class 11-12 elective. HTML, CSS, JavaScript, multimedia production. Practical skill-building for digital careers.',
+    homeScience: 'Home Science — Class 11-12 elective. Nutrition, textiles, human development, family studies. Available in some UAE CBSE schools.',
+    painting: 'Painting / Fine Arts — Class 11-12 elective. Theory + practical. Portfolio-based internal assessment + board practical exam.',
+    physicalEducation: 'Physical Education — Class 11-12 elective. Sports science, health education, fitness. Theory (70 marks) + Practical (30 marks). Popular as a high-scoring 5th/6th subject.',
+  },
+};
+
+/**
  * Full subject list for the grade selector
  */
 export const CBSE_SUBJECT_LIST = [

@@ -85,6 +85,11 @@ export const AMERICAN_SUBJECTS = {
       { code: 'spanish', name: 'AP Spanish Language', score: '1-5' },
       { code: 'french', name: 'AP French Language', score: '1-5' },
       { code: 'arabic', name: 'AP Arabic Language & Culture', score: '1-5' },
+      { code: 'german', name: 'AP German Language & Culture', score: '1-5' },
+      { code: 'italian', name: 'AP Italian Language & Culture', score: '1-5' },
+      { code: 'japanese', name: 'AP Japanese Language & Culture', score: '1-5' },
+      { code: 'chinese', name: 'AP Chinese Language & Culture', score: '1-5' },
+      { code: 'latin', name: 'AP Latin', score: '1-5' },
     ],
     examinerTips: `AP Art & Design is portfolio-based — no sit-down exam. Students submit: Sustained Investigation (15 digital images showing inquiry-based art process) + Selected Works (5 physical works showing skill). AP Music Theory: aural skills (melodic/harmonic dictation, sight-singing) + written skills (part-writing, analysis). AP Art History: 250 required images across 10 content areas. AP Arabic Language & Culture is particularly relevant for UAE students — covers interpersonal, interpretive, and presentational communication in MSA. UAE context: Islamic geometric patterns for Art & Design, traditional Gulf architecture, Emirati music traditions.`,
     iaGuidance: `AP Art & Design: portfolio submitted digitally by May deadline. Sustained Investigation must show artistic growth and experimentation — not 15 finished pieces but a process of development. Include artist statements explaining choices and connections.`,
@@ -210,6 +215,11 @@ export const AMERICAN_SUBJECT_LIST = [
   'AP Microeconomics', 'AP Macroeconomics', 'AP Psychology', 'AP Human Geography',
   'AP Computer Science A', 'AP Computer Science Principles',
   'AP Art History', 'AP Music Theory', 'AP Arabic',
+  // AP Capstone
+  'AP Seminar', 'AP Research',
+  // AP Languages
+  'AP German Language', 'AP Italian Language', 'AP Japanese Language',
+  'AP Chinese Language', 'AP Latin',
   // SAT/ACT
   'SAT Prep', 'ACT Prep',
 ];

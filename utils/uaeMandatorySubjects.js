@@ -183,6 +183,58 @@ export const UAE_MANDATORY_SUBJECTS = {
 
     teachingNotes: `Social Studies UAE is distinct from Pakistan Studies. Pakistani students in UAE must learn UAE geography, history, and government — not just Pakistan. Starky must know: all 7 emirates and their rulers, Sheikh Zayed's founding story, 1971 Federation, UAE Vision 2071. Currency is AED (Dirhams), not PKR. Use UAE place names in examples — Deira not Saddar, JBR not Clifton. For A Level students: UAE political system is different from Pakistan's — explain the federal monarchy system clearly. Never compare UAE governance unfavourably with any other system.`,
   },
+
+  moralEducation: {
+    name: 'Moral Education (Non-Muslim Students)',
+    arabic: 'التربية الأخلاقية',
+    mandatoryFor: 'All non-Muslim students in UAE private schools (replaces Islamic Education)',
+    note: 'Muslim students take Islamic Education instead',
+    curriculum: 'UAE Ministry of Education',
+    examBoard: 'School-based assessment aligned to MoE standards',
+
+    topicsByStage: {
+      primary: [
+        'Character and moral values — honesty, kindness, fairness, sharing',
+        'Personal and social responsibility — caring for others, respecting differences',
+        'Cultural appreciation — understanding that people come from different backgrounds',
+        'Civic values — rules, cooperation, being a good community member',
+        'Environmental responsibility — caring for nature and animals',
+        'UAE national identity — respect for UAE culture and traditions',
+        'Digital citizenship — safe and responsible use of technology',
+        'Empathy and emotional awareness — understanding feelings of others',
+      ],
+      middle: [
+        'Ethical reasoning — making moral decisions, understanding consequences',
+        'Human rights and dignity — universal rights, respecting all people',
+        'Global citizenship — interconnected world, responsibility to humanity',
+        'Critical thinking about moral dilemmas — no single right answer',
+        'Media literacy — identifying bias, responsible social media use',
+        'Cultural diversity — appreciating 200+ nationalities in UAE',
+        'Conflict resolution — peaceful problem-solving strategies',
+        'Community service — volunteering, giving back, Zayed legacy of generosity',
+      ],
+      secondary: [
+        'Applied ethics — workplace ethics, professional integrity, academic honesty',
+        'Philosophical foundations of morality — different ethical frameworks',
+        'Social justice — equality, equity, inclusion, fighting discrimination',
+        'Environmental ethics — sustainability, climate responsibility, COP28 legacy',
+        'Bioethics — medical ethics, technology ethics, AI ethics',
+        'Global challenges — poverty, migration, peace, UN Sustainable Development Goals',
+        'Interfaith dialogue — understanding and respecting all religions and beliefs',
+        'Leadership and civic engagement — active citizenship, community impact projects',
+      ],
+    },
+
+    teachingNotes: `Moral Education is the alternative to Islamic Education for non-Muslim students. It is NOT a lesser subject — it is a full curriculum with its own learning outcomes and assessments. Teach with the same depth and respect as Islamic Education. Focus on universal values: empathy, honesty, justice, responsibility. UAE-specific context is essential — Year of Tolerance, Abrahamic Family House, coexistence of 200+ nationalities. For Christian, Hindu, Buddhist, and other faith backgrounds: acknowledge their values while teaching the universal moral framework. Never present any religion as superior or inferior. Portfolio-based assessment: students demonstrate values through projects, reflections, and community service.`,
+  },
+
+  crossCurriculumNote: {
+    name: 'Cross-Curriculum Applicability',
+    note: 'UAE mandatory subjects apply to ALL private school students regardless of main curriculum — British (IGCSE/A Level), American (AP), IB (Diploma), CBSE, and Pakistani. An IB student still takes MoE Islamic Education and Arabic. A CBSE student still takes UAE Social Studies. These are ADDITIONAL to the main curriculum requirements, not replacements. IB students may count Arabic B towards Group 2 but still need MoE Arabic assessments. Assessment is by MoE standards, not the school curriculum board.',
+    mandatoryFor: 'All students in all UAE private schools',
+    topicsByStage: { primary: [], middle: [], secondary: [] },
+    teachingNotes: 'This is a structural note. UAE mandatory subjects are examined separately from the main curriculum. A student doing Cambridge IGCSE still sits MoE-set exams for Arabic, Islamic Education, and Social Studies. These appear on the MoE report card alongside the main curriculum results.',
+  },
 };
 
 /**
@@ -218,6 +270,7 @@ export function isUAEMandatoryTopic(message) {
     arabicSecondLanguage: ['arabic language', 'arabic second', 'learn arabic', 'asl arabic', 'عربي', 'arabic class'],
     moralSocialCultural: ['moral education', 'msc', 'moral social', 'social cultural', 'citizenship uae'],
     socialStudiesUAE: ['social studies uae', 'uae history', 'uae geography', 'seven emirates', 'sheikh zayed', 'uae government'],
+    moralEducation: ['moral education', 'non-muslim education', 'ethics class', 'تربية أخلاقية', 'moral values class'],
   };
 
   for (const [key, words] of Object.entries(triggers)) {
