@@ -827,6 +827,39 @@ export default function Home() {
         </div>
       )}
 
+      {/* "Other country" curriculum picker — shown after selecting 🌍 */}
+      {userCountry === 'OTHER' && !uaeCurriculum && showCountrySelector === false && (
+        <div style={{position:'fixed',top:0,left:0,right:0,bottom:0,zIndex:10000,background:'rgba(8,12,24,0.95)',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'Sora',sans-serif",padding:16,overflowY:'auto'}}>
+          <div style={{maxWidth:420,width:'100%',textAlign:'center'}}>
+            <div style={{fontSize:40,marginBottom:10}}>🌍</div>
+            <h2 style={{fontSize:22,fontWeight:900,color:'#fff',margin:'0 0 6px'}}>We're expanding globally</h2>
+            <p style={{color:'rgba(255,255,255,0.5)',fontSize:14,margin:'0 0 20px',lineHeight:1.7}}>For now, select the curriculum your school follows. Starky will adapt.</p>
+            <div style={{display:'flex',flexDirection:'column',gap:10}}>
+              {[
+                {id:'british',flag:'🇬🇧',name:'Cambridge / British (IGCSE / A Level)',desc:'Used in 160+ countries worldwide',color:'#4F8EF7'},
+                {id:'american',flag:'🇺🇸',name:'American (AP / Common Core)',desc:'US curriculum schools',color:'#FF6B6B'},
+                {id:'ib',flag:'🌐',name:'IB (International Baccalaureate)',desc:'PYP / MYP / Diploma Programme',color:'#4ECDC4'},
+                {id:'cbse',flag:'🇮🇳',name:'Indian (CBSE / ICSE)',desc:'Indian curriculum schools',color:'#FF8E53'},
+                {id:'other_curriculum',flag:'📚',name:'Other / Not sure',desc:'Starky will adapt to your needs',color:'#A78BFA'},
+              ].map(c=>(
+                <button key={c.id} onClick={()=>{
+                  setUaeCurriculum(c.id);
+                  try{localStorage.setItem('uae_curriculum',c.id);}catch{}
+                  setTimeout(()=>document.getElementById('start-learning')?.scrollIntoView({behavior:'smooth'}),200);
+                }} style={{display:'flex',alignItems:'center',gap:12,padding:'14px 16px',borderRadius:14,border:`2px solid ${c.color}30`,background:`${c.color}08`,cursor:'pointer',fontFamily:"'Sora',sans-serif",width:'100%',textAlign:'left'}}>
+                  <span style={{fontSize:26}}>{c.flag}</span>
+                  <div>
+                    <div style={{fontWeight:800,fontSize:14,color:c.color}}>{c.name}</div>
+                    <div style={{fontSize:11,color:'rgba(255,255,255,0.5)'}}>{c.desc}</div>
+                  </div>
+                </button>
+              ))}
+            </div>
+            <button onClick={()=>{setUserCountry('PK');try{localStorage.setItem('user_country','PK');}catch{}}} style={{marginTop:14,background:'none',border:'none',color:'rgba(255,255,255,0.4)',fontSize:12,cursor:'pointer',fontFamily:"'Sora',sans-serif"}}>← Change country</button>
+          </div>
+        </div>
+      )}
+
       {/* UAE Curriculum selector */}
       {showUaeCurriculumSelector && (
         <div style={{position:'fixed',top:0,left:0,right:0,bottom:0,zIndex:10000,background:'rgba(8,12,24,0.95)',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'Sora',sans-serif",padding:16,overflowY:'auto'}}>
