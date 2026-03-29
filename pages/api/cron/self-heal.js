@@ -121,17 +121,40 @@ export default async function handler(req, res) {
     } catch {}
   }
 
-  // ── Email alert if critical errors ──
+  // ── Email alert if critical errors — with deduplication ──
   const criticalErrors = results.errors.filter(e => e.severity === 'critical');
   if (criticalErrors.length > 0) {
+    // Deduplication: check if same alert was sent in last 60 seconds
+    let shouldSend = true;
+    const alertKey = criticalErrors.map(e => e.type).sort().join(',');
     try {
-      const { Resend } = await import('resend');
-      const resend = new Resend(process.env.RESEND_API_KEY);
-      await resend.emails.send({
-        from: 'Starky ★ <hello@newworld.education>',
-        to: 'khurrambadar@gmail.com',
-        subject: `⚠️ NewWorldEdu — ${criticalErrors.length} critical error${criticalErrors.length > 1 ? 's' : ''}`,
-        html: `<h2>Platform Health Alert</h2>
+      const kvUrl = process.env.KV_REST_API_URL;
+      const kvToken = process.env.KV_REST_API_TOKEN;
+      if (kvUrl && kvToken) {
+        const lastRes = await fetch(`${kvUrl}/get/last_error_alert`, { headers: { Authorization: `Bearer ${kvToken}` } });
+        const lastData = await lastRes.json();
+        if (lastData?.result) {
+          const last = JSON.parse(lastData.result);
+          if (last.key === alertKey && Date.now() - last.timestamp < 60000) {
+            shouldSend = false; // Duplicate — skip
+          }
+        }
+        // Save current alert
+        await fetch(`${kvUrl}/set/last_error_alert/${encodeURIComponent(JSON.stringify({ key: alertKey, timestamp: Date.now() }))}`, {
+          method: 'POST', headers: { Authorization: `Bearer ${kvToken}` },
+        });
+      }
+    } catch {}
+
+    if (shouldSend) {
+      try {
+        const { Resend } = await import('resend');
+        const resend = new Resend(process.env.RESEND_API_KEY);
+        await resend.emails.send({
+          from: 'Starky ★ <hello@newworld.education>',
+          to: 'khurrambadar@gmail.com',
+          subject: `⚠️ NewWorldEdu — ${criticalErrors.length} critical error${criticalErrors.length > 1 ? 's' : ''}`,
+          html: `<h2>Platform Health Alert</h2>
 <p>Time: ${results.timestamp}</p>
 <h3>Critical Errors:</h3>
 <ul>${criticalErrors.map(e => `<li><strong>${e.type}</strong>: ${e.message}</li>`).join('')}</ul>
@@ -139,8 +162,9 @@ export default async function handler(req, res) {
 <ul>${results.checks.map(c => `<li>${c.status === 'ok' ? '✅' : '❌'} ${c.name}: ${c.status} ${c.message || ''}</li>`).join('')}</ul>
 <h3>Auto-Fixes Applied:</h3>
 <ul>${results.fixes.length ? results.fixes.map(f => `<li>🔧 ${f.name}: ${f.action}</li>`).join('') : '<li>None needed</li>'}</ul>`,
-      });
-    } catch {}
+        });
+      } catch {}
+    }
   }
 
   return res.status(200).json(results);
