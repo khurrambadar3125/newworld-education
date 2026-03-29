@@ -768,9 +768,19 @@ export default function Home() {
       />
 
       <section className="hero">
-        <div className="hb">★ Starky — KG to A Levels</div>
-        <h1>Every Child Deserves a <em>World-Class</em> Tutor</h1>
-        <p className="hs">Better grades in 30 days. 24/7. 16 languages. Every subject.</p>
+        {userCountry === 'UAE' ? (
+          <>
+            <div className="hb">★ Starky — All UAE Curricula</div>
+            <h1>Every Child in Dubai Deserves a <em>World-Class</em> Tutor</h1>
+            <p className="hs">British, American, IB, CBSE and UAE MoE curricula. 24/7. Every subject. Every language.</p>
+          </>
+        ) : (
+          <>
+            <div className="hb">★ Starky — KG to A Levels</div>
+            <h1>Every Child Deserves a <em>World-Class</em> Tutor</h1>
+            <p className="hs">Better grades in 30 days. 24/7. 16 languages. Every subject.</p>
+          </>
+        )}
 
         {!showAudienceSelector ? (
           <div className="hc">
@@ -809,12 +819,24 @@ export default function Home() {
           </div>
         )}
 
-        <div className="pr">
-          <div className="pi"><div className="pn">16</div><div className="pl">Languages</div></div>
-          <div className="pi"><div className="pn">24/7</div><div className="pl">Available</div></div>
-          <div className="pi"><div className="pn">KG–A</div><div className="pl">All Grades</div></div>
-          <div className="pi"><div className="pn">7 Days</div><div className="pl">Free Trial</div></div>
-        </div>
+        {userCountry === 'UAE' ? (
+          <>
+            <div className="pr">
+              <div className="pi"><div className="pn">5</div><div className="pl">Curricula</div></div>
+              <div className="pi"><div className="pn">24/7</div><div className="pl">Always Available</div></div>
+              <div className="pi"><div className="pn">KG–A</div><div className="pl">Every Grade</div></div>
+              <div className="pi"><div className="pn">16+</div><div className="pl">Languages</div></div>
+            </div>
+            <div style={{textAlign:'center',marginTop:8,fontSize:12,color:'rgba(255,255,255,0.35)',fontWeight:700,fontFamily:"'Sora',sans-serif",letterSpacing:'0.03em'}}>Built for Dubai. Aligned with KHDA standards.</div>
+          </>
+        ) : (
+          <div className="pr">
+            <div className="pi"><div className="pn">16</div><div className="pl">Languages</div></div>
+            <div className="pi"><div className="pn">24/7</div><div className="pl">Available</div></div>
+            <div className="pi"><div className="pn">KG–A</div><div className="pl">All Grades</div></div>
+            <div className="pi"><div className="pn">7 Days</div><div className="pl">Free Trial</div></div>
+          </div>
+        )}
       </section>
 
       <section className="sec" id="start-learning">
