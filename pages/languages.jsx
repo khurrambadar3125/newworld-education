@@ -810,6 +810,10 @@ export default function LanguagesPage() {
     return <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '4px 12px', borderRadius: 100, fontSize: 11, fontWeight: 800, background: s.bg, color: s.color }}>{children}</span>;
   }
 
+  // Animated Reactions — state declared before usage
+  const [reaction, setReaction] = useState(null); // { emoji, text }
+  const reactionTimer = useRef(null);
+
   function Reaction({ emoji, text }) {
     return (
       <div style={{ position:'absolute', top:'30%', left:'50%', transform:'translate(-50%,-50%)',
@@ -876,10 +880,6 @@ export default function LanguagesPage() {
 
   // Audio-first mode
   const [audioFirst, setAudioFirst] = useState(true);
-
-  // Animated Reactions
-  const [reaction, setReaction] = useState(null); // { emoji, text }
-  const reactionTimer = useRef(null);
 
   // Speak exercise state
   const [speakRecording, setSpeakRecording] = useState(false);

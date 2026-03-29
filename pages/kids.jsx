@@ -225,7 +225,6 @@ export default function KidsZone() {
     setName('');
     setAge(null);
     setAvatar(null);
-    setPhone('+92');
     setRegStep(1);
     setScreen('welcome');
   }
