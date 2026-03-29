@@ -802,7 +802,7 @@ export default function Home() {
 
       <section className="sec" id="start-learning">
         <div className="sl">Step 1 of 2</div>
-        <div className="st">Select your child's grade</div>
+        <div className="st">Select your grade</div>
         <div style={{maxWidth:480,margin:'0 auto'}}>
           {GRADE_GROUPS.map(group => (
             <div key={group.label} style={{marginBottom:16}}>
@@ -812,7 +812,6 @@ export default function Home() {
                   <button key={g.id} className={`gb ${selectedGrade?.id===g.id?'s':''}`} onClick={() => { setSelectedGrade(g); setTimeout(() => document.getElementById("subject-section")?.scrollIntoView({behavior:"smooth",block:"center"}), 150); }}>
                     <span className="ge">{g.emoji}</span>
                     <span className="gn">{g.label}</span>
-                    <span className="ga">Age {g.age}</span>
                   </button>
                 ))}
               </div>
