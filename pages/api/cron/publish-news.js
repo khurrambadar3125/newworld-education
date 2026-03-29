@@ -11,20 +11,52 @@ export const config = { api: { bodyParser: true }, maxDuration: 120 };
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 30000 });
 
-const TOPICS = [
-  'Cambridge O Level exam preparation tips for Pakistani students',
-  'Cambridge A Level subject study guide and revision strategies',
-  'Pakistan education policy and HEC news developments',
-  'Evidence-based study techniques for secondary students',
-  'University admissions for Pakistani students applying abroad',
-  'EdTech developments and digital learning in South Asia',
-  'Karachi school education news and updates',
-  'Pakistan Higher Education Commission policy updates',
-  'Pakistan education statistics and learning outcomes',
-  'Parenting strategies for supporting academic achievement',
+// Exam-season topic calendar — final sprint before May/June 2026
+const PARENT_ANXIETY = [
+  'What Pakistani parents of O Level students should actually do in the last month before Cambridge exams',
+  'Your child says they have revised for their O Levels. Have they really? Here is how to tell.',
+  'The one thing Pakistani parents do that makes Cambridge exam stress worse — and what to do instead',
+  'How to talk to your Pakistani teenager about O Level and A Level exams without starting a fight',
+  'Signs your child is more stressed about Cambridge exams than they are letting on',
+  'Should you hire a tutor this close to Cambridge O Level exams? An honest answer for Pakistani parents',
+  'What a good Cambridge O Level grade actually requires — and what most Pakistani parents do not know',
+];
+const STUDENT_SURVIVAL = [
+  'Four weeks to Cambridge O Levels in Pakistan: the only revision plan that works now',
+  'How to tackle a Cambridge past paper when you run out of time in the exam',
+  'The Cambridge mark scheme tells you exactly what to write. Here is how Pakistani students should read it.',
+  'Why you keep getting B grades when you feel like you deserve A stars in Cambridge O Levels',
+  'The night before your Cambridge O Level exam: what to do and what not to do',
+  'How to answer evaluate questions in Cambridge exams — most Pakistani students get this wrong',
+  'Cambridge Biology O Level in four weeks: what to prioritise and what to skip in Pakistan',
+  'A Level Chemistry last-minute guide for Pakistani students: the topics that always come up',
+];
+const SUBJECT_SPECIFIC = [
+  'O Level Mathematics 4024: the five question types that lose Pakistani students the most marks',
+  'Cambridge English Language Paper 1: what examiners actually want from Pakistani students',
+  'O Level Physics in Pakistan: which topics carry the most marks in the May June 2026 paper',
+  'A Level Economics: how to write a proper evaluative conclusion with examples for Cambridge',
+  'O Level Pakistan Studies: what to focus on with four weeks left before Cambridge exams',
+  'A Level Biology: the Cambridge mark schemes Pakistani students never read and why it costs them A stars',
+  'Cambridge Chemistry O Level: the organic reactions that come up every single year in Pakistan',
+];
+const EMOTIONAL_SUPPORT = [
+  'Exam anxiety is real for Pakistani Cambridge students. Here is what actually helps backed by research.',
+  'Your O Level grade does not define your future. But here is how to make it count in Pakistan.',
+  'Why Pakistani students are harder on themselves than Cambridge actually requires',
+  'Sleep food and revision: the boring things that actually move the needle for Cambridge exams in Pakistan',
+  'What to do if your Pakistani child says they want to give up on their Cambridge O Level exams',
 ];
 
-const CATEGORIES = ['Cambridge Updates', 'Study Tips', 'Pakistan Education', 'EdTech', 'University Admissions', 'School News'];
+// CTA variants — rotated across daily articles
+const CTAS = [
+  `\n\n---\n\nIf your child is sitting O Levels or A Levels this May/June, Starky — NewWorldEdu's AI tutor — can work through past papers, explain mark schemes, and pinpoint exactly where marks are being lost.\n\nYour child can try Starky free for 10 sessions, no credit card needed.\n\n[Start learning with Starky →](https://www.newworld.education)`,
+  `\n\n---\n\nThe difference between a B and an A* is usually not how much a student studies — it is how they study. Starky, NewWorldEdu's Cambridge AI tutor, builds a personal study plan around your child's actual weak spots.\n\n10 free sessions. No credit card.\n\n[Meet Starky →](https://www.newworld.education)`,
+  `\n\n---\n\nAs a parent, the most useful thing you can do right now is give your child access to the right support. NewWorldEdu's Starky is available at 11pm when tutors aren't — patient, Cambridge-trained, and free to try.\n\n[Try Starky free →](https://www.newworld.education)`,
+  `\n\n---\n\nOne of the best ways to reduce exam anxiety is to feel genuinely prepared. Starky — NewWorldEdu's AI tutor — works through exactly what your child finds difficult, at whatever hour they need help.\n\n[Start free today →](https://www.newworld.education)`,
+];
+
+const CATEGORIES = ['Cambridge Updates', 'Study Tips', 'Pakistan Education', 'Exam Tips', 'School News'];
 
 export default async function handler(req, res) {
   const auth = req.headers.authorization || req.query.secret;
@@ -37,9 +69,13 @@ export default async function handler(req, res) {
   const published = [];
   const failures = [];
 
-  // Pick 3 random topics
-  const shuffled = [...TOPICS].sort(() => Math.random() - 0.5);
-  const todaysTopics = shuffled.slice(0, 3);
+  // Pick 3 topics: 1 parent anxiety, 1 student/subject, 1 emotional support
+  const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+  const todaysTopics = [
+    pick(PARENT_ANXIETY),
+    Math.random() > 0.5 ? pick(STUDENT_SURVIVAL) : pick(SUBJECT_SPECIFIC),
+    pick(EMOTIONAL_SUPPORT),
+  ];
 
   for (const topic of todaysTopics) {
     try {
@@ -92,12 +128,16 @@ BODY:
       const wordCount = article.body.split(/\s+/).length;
       const readTime = `${Math.ceil(wordCount / 200)} min read`;
 
+      // Append CTA — rotate variants, never same twice in one day
+      const ctaIndex = published.length % CTAS.length;
+      const bodyWithCTA = article.body + CTAS[ctaIndex];
+
       // Save to Supabase
       if (sb) {
         await sb.from('news_articles').insert({
           title: article.headline,
           excerpt: article.excerpt,
-          body: article.body,
+          body: bodyWithCTA,
           author: 'NewWorldEdu Editorial Team',
           date: today,
           category: article.category || CATEGORIES[Math.floor(Math.random() * CATEGORIES.length)],
