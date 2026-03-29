@@ -18,6 +18,7 @@ import { getIBDiplomaPrompt, isIBTopic } from '../../utils/ibKnowledge';
 import { getAmericanCurriculumPrompt, isAmericanCurriculumTopic } from '../../utils/americanCurriculumKB';
 import { getCBSECurriculumPrompt, isCBSETopic } from '../../utils/cbseKnowledge';
 import { getMoECurriculumPrompt, isMoETopic } from '../../utils/uaeMoEKnowledge';
+import { getUAEExcellencePrompt } from '../../utils/uaeAcademicExcellence';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -302,6 +303,11 @@ export default async function handler(req, res) {
       // ── UAE MoE curriculum injection — for government school students ──
       if (userProfile?.uaeCurriculum === 'moe' || isMoETopic(message)) {
         built.systemPrompt += getMoECurriculumPrompt(subject);
+      }
+
+      // ── UAE Academic Excellence — deep examiner intelligence for all curricula ──
+      if (userProfile?.country === 'UAE' || userProfile?.user_country === 'UAE') {
+        built.systemPrompt += getUAEExcellencePrompt(userProfile?.uaeCurriculum, subject);
       }
 
       // ── Academic phase injection — adapts Starky to the Cambridge calendar ──
