@@ -2223,6 +2223,7 @@ function SENDrillWidget({ condition, stage, subject, xpData, setXpData }) {
   const [drillXPFloat, setDrillXPFloat] = useState(false);
   const [drillStreak, setDrillStreak] = useState(0);
   const feedbackRef = useRef(null);
+  const [chosenSubject, setChosenSubject] = useState('');
 
   const CELEBRATIONS = [
     "🌟 Amazing try!", "⭐ You're doing great!", "🎉 Brilliant effort!",
@@ -2233,8 +2234,6 @@ function SENDrillWidget({ condition, stage, subject, xpData, setXpData }) {
   const senSubjects = subject
     ? [subject]
     : ['Maths','English','Science','Reading','Social Skills','Life Skills'];
-
-  const [chosenSubject, setChosenSubject] = useState('');
 
   const generateQuestion = async (subj) => {
     if (loading) return;
