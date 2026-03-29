@@ -544,7 +544,7 @@ export default function Home() {
         .gb.s{background:rgba(79,142,247,.13);border-color:rgba(79,142,247,.45)}
         .gb:active{transform:scale(.95)}
         .ge{font-size:22px;line-height:1}
-        .gn{font-family:'Sora',sans-serif;font-size:12px;font-weight:700}
+        .gn{font-family:'Sora',sans-serif;font-size:12px;font-weight:700;color:#fff}
         .ga{font-size:10px;color:rgba(255,255,255,.32)}
         .sr{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:480px;margin:0 auto}
         .sbb{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:100px;padding:8px 16px;font-size:13px;font-weight:500;cursor:pointer;color:rgba(255,255,255,.65);-webkit-tap-highlight-color:transparent;transition:all .15s}
