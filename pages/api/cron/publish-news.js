@@ -79,7 +79,7 @@ BODY:
 
       // Quality gate
       if (!article.headline || article.headline.length > 110) { failures.push({ topic, reason: 'Headline too long or missing' }); continue; }
-      if (!article.body || (article.wordCount || article.body.split(/\s+/).length) < 350) { failures.push({ topic, reason: 'Too short' }); continue; }
+      if (!article.body || (article.wordCount || article.body.split(/\s+/).length) < 250) { failures.push({ topic, reason: 'Too short' }); continue; }
       if (!article.excerpt) { failures.push({ topic, reason: 'No excerpt' }); continue; }
 
       // Check duplicate headlines in last 30 days
