@@ -43,25 +43,39 @@ export default async function handler(req, res) {
 
   for (const topic of todaysTopics) {
     try {
+      // Step 1: Generate article as plain text (Haiku 3 struggles with JSON for long content)
       const response = await client.messages.create({
         model: /* PERMANENT: Haiku 3 only */ 'claude-3-haiku-20240307',
-        max_tokens: 1200,
-        system: `You are a brilliant, warm educational journalist writing for NewWorldEdu. Write ONE completely original news article.
+        max_tokens: 1000,
+        system: `You are a brilliant, warm educational journalist. Write ONE original article for Pakistani students and parents. Talk TO the reader — use "you" and "your". Start with a hook. Use contractions. Light humour. Paragraphs max 4 sentences. British English. 400-500 words. End with one warm, encouraging sentence. No promotional language.
 
-TONE — MANDATORY: Write as if you are a brilliant, warm friend who knows everything about education in Pakistan. Talk TO the reader directly — use "you" and "your" throughout. Never third person. Use contractions naturally (you're, it's, don't). Start with a hook — question, surprising statement, or relatable moment. NEVER start with a boring fact. Very light humour — one or two warm moments per article. Short sentences mixed with longer ones. Paragraphs max 4 sentences. Zero profanity. End with one warm, encouraging sentence. British English throughout (behaviour, recognise, practise).
-
-Rules: ORIGINAL journalism — not a summary or copy. 450-550 words. No promotional language about NewWorldEdu. Respond with ONLY valid JSON: {"headline":"...","excerpt":"...","body":"...","category":"...","wordCount":N}. Headline max 110 characters. Excerpt 2-3 sentences. Body 3-4 paragraphs each minimum 80 words. Category: Cambridge Updates / Study Tips / Pakistan Education / EdTech / University Admissions / School News.`,
-        messages: [{ role: 'user', content: `Write an original educational news article about: ${topic}. Date: ${today}. Target audience: Pakistani students and parents.` }],
+FORMAT — follow this EXACTLY:
+HEADLINE: [your headline here, max 110 characters]
+CATEGORY: [one of: Cambridge Updates / Study Tips / Pakistan Education / EdTech / University Admissions / School News]
+EXCERPT: [2-3 sentence summary]
+BODY:
+[full article text, 400-500 words, paragraphs separated by blank lines]`,
+        messages: [{ role: 'user', content: `Write an original educational article about: ${topic}` }],
       });
 
-      let text = response.content?.[0]?.text || '';
-      const jsonMatch = text.match(/\{[\s\S]*\}/);
-      if (!jsonMatch) { failures.push({ topic, reason: 'No JSON in response' }); continue; }
+      const text = response.content?.[0]?.text || '';
+      if (!text || text.length < 200) { failures.push({ topic, reason: 'Response too short' }); continue; }
 
-      // Clean control characters that break JSON parsing
-      const cleanJson = jsonMatch[0].replace(/[\x00-\x1F\x7F]/g, (c) => c === '\n' ? '\\n' : c === '\t' ? '\\t' : ' ');
-      let article;
-      try { article = JSON.parse(cleanJson); } catch { failures.push({ topic, reason: 'JSON parse error' }); continue; }
+      // Parse structured plain text
+      const headlineMatch = text.match(/HEADLINE:\s*(.+)/i);
+      const categoryMatch = text.match(/CATEGORY:\s*(.+)/i);
+      const excerptMatch = text.match(/EXCERPT:\s*(.+?)(?=\nBODY:|\n\n)/is);
+      const bodyMatch = text.match(/BODY:\s*([\s\S]+)/i);
+
+      if (!headlineMatch || !bodyMatch) { failures.push({ topic, reason: 'Could not parse format' }); continue; }
+
+      const article = {
+        headline: headlineMatch[1].trim().slice(0, 110),
+        category: (categoryMatch?.[1]?.trim() || CATEGORIES[Math.floor(Math.random() * CATEGORIES.length)]),
+        excerpt: (excerptMatch?.[1]?.trim() || bodyMatch[1].trim().split('\n')[0].slice(0, 200)),
+        body: bodyMatch[1].trim(),
+        wordCount: bodyMatch[1].trim().split(/\s+/).length,
+      };
 
       // Quality gate
       if (!article.headline || article.headline.length > 110) { failures.push({ topic, reason: 'Headline too long or missing' }); continue; }
