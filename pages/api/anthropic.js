@@ -13,6 +13,7 @@ import { getCurrentPhase, getPhasePromptInjection } from '../../lib/academic-cal
 import { detectWeakness, saveWeakness } from '../../utils/weaknessDetector';
 import { getBookKnowledge } from '../../utils/readingKnowledge';
 import { checkMisconception } from '../../utils/cambridgeExaminer';
+import { getUAEMandatoryPrompt, isUAEMandatoryTopic } from '../../utils/uaeMandatorySubjects';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -264,6 +265,18 @@ export default async function handler(req, res) {
         const readingList = getReadingList(currentSubject);
         if (readingList) {
           built.systemPrompt += '\n\n' + readingList;
+        }
+      }
+
+      // ── UAE mandatory subjects — inject for UAE users ──
+      if (userProfile?.country === 'UAE' || userProfile?.user_country === 'UAE') {
+        const gradeGroup = built.meta?.gradeGroup || 'middle';
+        const stage = gradeGroup === 'KID' ? 'primary' : gradeGroup === 'ALEVEL' ? 'secondary' : 'middle';
+        built.systemPrompt += getUAEMandatoryPrompt(stage);
+        // Check if message is about a UAE mandatory subject
+        const uaeTopic = isUAEMandatoryTopic(message);
+        if (uaeTopic) {
+          built.systemPrompt += `\n\nUAE MANDATORY SUBJECT DETECTED: ${uaeTopic.name}. ${uaeTopic.teachingNotes}`;
         }
       }
 
