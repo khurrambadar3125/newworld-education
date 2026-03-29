@@ -748,8 +748,15 @@ export default function Home() {
         </div>
       )}
 
-      {/* ── EXAM SEASON BANNER ── */}
-      {examBanner && (
+      {/* ── ANNOUNCEMENT BANNER — UAE vs Pakistan ── */}
+      {userCountry === 'UAE' ? (
+        <div style={{background:'rgba(79,142,247,0.08)',border:'1px solid rgba(79,142,247,0.2)',padding:'11px 20px',display:'flex',alignItems:'center',justifyContent:'center',gap:'16px',flexWrap:'wrap'}}>
+          <span style={{fontSize:'13px',fontWeight:'600',color:'#4F8EF7',lineHeight:1.5}}>Dubai has 17 curricula. Starky knows all of them. Start free today.</span>
+          <a href="#start-learning" style={{display:'inline-flex',alignItems:'center',gap:'5px',background:'#4F8EF7',color:'#080C18',borderRadius:'100px',padding:'6px 16px',fontSize:'12px',fontWeight:'800',textDecoration:'none',whiteSpace:'nowrap',flexShrink:0,fontFamily:"'Sora',sans-serif"}}>
+            Try Starky ★
+          </a>
+        </div>
+      ) : examBanner && (
         <div style={{background:examBanner.bg,border:`1px solid ${examBanner.border}`,padding:'11px 20px',display:'flex',alignItems:'center',justifyContent:'center',gap:'16px',flexWrap:'wrap'}}>
           <span style={{fontSize:'13px',fontWeight:'600',color:examBanner.color,lineHeight:1.5}}>{examBanner.msg}</span>
           <a href="#start-learning" style={{display:'inline-flex',alignItems:'center',gap:'5px',background:examBanner.color,color:'#080C18',borderRadius:'100px',padding:'6px 16px',fontSize:'12px',fontWeight:'800',textDecoration:'none',whiteSpace:'nowrap',flexShrink:0,fontFamily:"'Sora',sans-serif"}}>
@@ -771,7 +778,7 @@ export default function Home() {
         {userCountry === 'UAE' ? (
           <>
             <div className="hb">★ Starky — All UAE Curricula</div>
-            <h1>Every Child in Dubai Deserves a <em>World-Class</em> Tutor</h1>
+            <h1>Every Child in the UAE Deserves a <em>World-Class</em> Tutor</h1>
             <p className="hs">British, American, IB, CBSE and UAE MoE curricula. 24/7. Every subject. Every language.</p>
           </>
         ) : (
@@ -840,9 +847,48 @@ export default function Home() {
       </section>
 
       <section className="sec" id="start-learning">
-        <div className="sl">Step 1 of 2</div>
+        {/* UAE: curriculum selector FIRST */}
+        {userCountry === 'UAE' && (
+          <div style={{marginBottom: uaeCurriculum ? 0 : 20}}>
+            <div className="sl">{uaeCurriculum ? '✓ Curriculum selected' : 'Step 1 of 3'}</div>
+            <div className="st" style={{marginBottom:14}}>{uaeCurriculum ? '' : 'Select your curriculum'}</div>
+            {!uaeCurriculum ? (
+              <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:8,maxWidth:480,margin:'0 auto'}}>
+                {[
+                  { id:'british', flag:'🇬🇧', name:'British', color:'#4F8EF7' },
+                  { id:'american', flag:'🇺🇸', name:'American', color:'#FF6B6B' },
+                  { id:'ib', flag:'🌐', name:'IB', color:'#4ECDC4' },
+                  { id:'cbse', flag:'🇮🇳', name:'Indian CBSE', color:'#FF8E53' },
+                  { id:'moe', flag:'🇦🇪', name:'UAE MoE', color:'#FFC300' },
+                  { id:'pakistani', flag:'🇵🇰', name:'Pakistani', color:'#A8E063' },
+                ].map(c => (
+                  <button key={c.id} onClick={() => { setUaeCurriculum(c.id); try { localStorage.setItem('uae_curriculum', c.id); } catch {} }}
+                    style={{display:'flex',alignItems:'center',gap:8,padding:'12px 14px',borderRadius:14,border:`2px solid ${c.color}30`,background:`${c.color}08`,cursor:'pointer',fontFamily:"'Sora',sans-serif",textAlign:'left'}}>
+                    <span style={{fontSize:20}}>{c.flag}</span>
+                    <span style={{fontWeight:800,fontSize:13,color:c.color}}>{c.name}</span>
+                  </button>
+                ))}
+              </div>
+            ) : (
+              <div style={{display:'flex',justifyContent:'center',gap:8,marginBottom:8}}>
+                <span style={{fontSize:13,color:'rgba(255,255,255,0.5)',fontWeight:700}}>{
+                  {british:'🇬🇧 British',american:'🇺🇸 American',ib:'🌐 IB',cbse:'🇮🇳 CBSE',moe:'🇦🇪 MoE',pakistani:'🇵🇰 Pakistani'}[uaeCurriculum]
+                }</span>
+                <button onClick={() => { setUaeCurriculum(null); try { localStorage.removeItem('uae_curriculum'); } catch {} }}
+                  style={{background:'none',border:'none',color:'#4F8EF7',fontSize:12,cursor:'pointer',fontWeight:700,fontFamily:"'Sora',sans-serif"}}>Change</button>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Grade selector — Step 1 (PK) or Step 2 (UAE) */}
+        {(userCountry !== 'UAE' || uaeCurriculum) && (
+          <>
+        <div className="sl">{userCountry === 'UAE' ? 'Step 2 of 3' : 'Step 1 of 2'}</div>
         <div className="st">Select your grade</div>
-        <div style={{maxWidth:480,margin:'0 auto'}}>
+        </>
+        )}
+        {(userCountry !== 'UAE' || uaeCurriculum) && <div style={{maxWidth:480,margin:'0 auto'}}>
           {GRADE_GROUPS.map(group => (
             <div key={group.label} style={{marginBottom:16}}>
               <div style={{fontSize:11,fontWeight:800,color:group.color,letterSpacing:'0.08em',textTransform:'uppercase',marginBottom:8,paddingLeft:4}}>{group.label}</div>
@@ -856,11 +902,11 @@ export default function Home() {
               </div>
             </div>
           ))}
-        </div>
+        </div>}
         {selectedGrade && (
           <>
             <div id="subject-section" style={{marginTop:28}}>
-              <div className="sl">Step 2 of 2 — Optional</div>
+              <div className="sl">{userCountry === 'UAE' ? 'Step 3 of 3 — Optional' : 'Step 2 of 2 — Optional'}</div>
               <div className="st" style={{marginBottom:14}}>Pick a subject</div>
               <div className="sr">
                 {(uaeCurriculum === 'moe' ? MOE_SUBJECT_LIST
