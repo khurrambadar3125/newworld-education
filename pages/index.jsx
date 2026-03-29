@@ -82,9 +82,11 @@ export default function Home() {
   const [selectedGrade, setSelectedGrade] = useState(null);
   const [showAudienceSelector, setShowAudienceSelector] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState(null);
-  const [userCountry, setUserCountry] = useState(null); // 'PK' | 'UAE' | 'OTHER' | null (not yet selected)
+  const [userCountry, setUserCountry] = useState(null);
   const [showCountrySelector, setShowCountrySelector] = useState(false);
   const [detectedCountry, setDetectedCountry] = useState(null);
+  const [uaeCurriculum, setUaeCurriculum] = useState(null); // 'british'|'american'|'ib'|'cbse'|'moe'|'pakistani'
+  const [showUaeCurriculumSelector, setShowUaeCurriculumSelector] = useState(false);
 
   // Grade classification — used in greetings, suggestion chips, subject lists
   const gradeId = (selectedGrade?.id || '').toLowerCase();
@@ -150,6 +152,9 @@ export default function Home() {
         }).catch(() => {});
       }
     } catch { setShowCountrySelector(true); }
+
+    // Load saved UAE curriculum
+    try { const c = localStorage.getItem('uae_curriculum'); if (c) setUaeCurriculum(c); } catch {}
   }, []);
 
   useEffect(() => {
@@ -822,6 +827,42 @@ export default function Home() {
         </div>
       )}
 
+      {/* UAE Curriculum selector */}
+      {showUaeCurriculumSelector && (
+        <div style={{position:'fixed',top:0,left:0,right:0,bottom:0,zIndex:10000,background:'rgba(8,12,24,0.95)',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'Sora',sans-serif",padding:16,overflowY:'auto'}}>
+          <div style={{maxWidth:440,width:'100%',textAlign:'center'}}>
+            <h2 style={{fontSize:22,fontWeight:900,color:'#fff',margin:'0 0 4px'}}>Select your curriculum</h2>
+            <p style={{color:'rgba(255,255,255,0.5)',fontSize:13,margin:'0 0 20px'}}>Which curriculum does your school follow?</p>
+            <div style={{display:'flex',flexDirection:'column',gap:10}}>
+              {[
+                { id:'british', flag:'🇬🇧', name:'British (IGCSE / A Level)', desc:'Most popular in Dubai — 37% of students', color:'#4F8EF7' },
+                { id:'american', flag:'🇺🇸', name:'American (AP / Common Core)', desc:'American curriculum schools', color:'#FF6B6B' },
+                { id:'ib', flag:'🌐', name:'IB (International Baccalaureate)', desc:'PYP / MYP / Diploma Programme', color:'#4ECDC4' },
+                { id:'cbse', flag:'🇮🇳', name:'Indian (CBSE)', desc:'CBSE curriculum schools', color:'#FF8E53' },
+                { id:'moe', flag:'🇦🇪', name:'UAE Ministry (MoE)', desc:'Government school curriculum', color:'#FFC300' },
+                { id:'pakistani', flag:'🇵🇰', name:'Pakistani curriculum', desc:'Pakistani curriculum schools in UAE', color:'#A8E063' },
+              ].map(c => (
+                <button key={c.id} onClick={()=>{
+                  setUaeCurriculum(c.id);
+                  setShowUaeCurriculumSelector(false);
+                  try { localStorage.setItem('uae_curriculum', c.id); } catch {}
+                  // Scroll to grade selector
+                  setTimeout(()=>document.getElementById('start-learning')?.scrollIntoView({behavior:'smooth'}), 200);
+                }}
+                  style={{display:'flex',alignItems:'center',gap:12,padding:'14px 16px',borderRadius:14,border:`2px solid ${c.color}30`,background:`${c.color}08`,cursor:'pointer',fontFamily:"'Sora',sans-serif",width:'100%',textAlign:'left'}}>
+                  <span style={{fontSize:28}}>{c.flag}</span>
+                  <div>
+                    <div style={{fontWeight:800,fontSize:14,color:c.color}}>{c.name}</div>
+                    <div style={{fontSize:11,color:'rgba(255,255,255,0.5)'}}>{c.desc}</div>
+                  </div>
+                </button>
+              ))}
+            </div>
+            <button onClick={()=>setShowUaeCurriculumSelector(false)} style={{marginTop:16,background:'none',border:'none',color:'rgba(255,255,255,0.4)',fontSize:12,cursor:'pointer',fontFamily:"'Sora',sans-serif"}}>← Back</button>
+          </div>
+        </div>
+      )}
+
       <section className="hero">
         <div className="hb">★ Starky — KG to A Levels</div>
         <h1>Every Child Deserves a <em>World-Class</em> Tutor</h1>
@@ -837,7 +878,10 @@ export default function Home() {
         ) : (
           <div style={{maxWidth:400,margin:'0 auto',animation:'fadeUp 0.3s ease'}}>
             <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:10,marginBottom:12}}>
-              <a href="#start-learning" onClick={()=>setShowAudienceSelector(false)}
+              <a href="#start-learning" onClick={(e)=>{
+                  if (userCountry === 'UAE' && !uaeCurriculum) { e.preventDefault(); setShowAudienceSelector(false); setShowUaeCurriculumSelector(true); }
+                  else { setShowAudienceSelector(false); }
+                }}
                 style={{background:'rgba(79,142,247,0.1)',border:'2px solid rgba(79,142,247,0.3)',borderRadius:16,padding:'20px 12px',textAlign:'center',textDecoration:'none',color:'#4F8EF7',fontWeight:800,fontSize:15,display:'flex',flexDirection:'column',alignItems:'center',gap:6}}>
                 <span style={{fontSize:28}}>👨‍🎓</span>I am a Student
               </a>
