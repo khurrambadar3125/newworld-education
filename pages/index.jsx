@@ -237,6 +237,14 @@ export default function Home() {
     } else {
       greeting = `Hey ${firstName}! Starky here ★\n\nI've gone through every ${subject || 'Cambridge'} past paper, mark scheme, and examiner report from 1994 to 2024.\n\n${subject ? `Ask me anything about ${subject} — past paper question, concept explanation, or say "quiz me on ${subject}".` : 'Ask me anything — homework, exam prep, or photograph your notes.'}\n\nCommand words, mark allocation, examiner expectations — I know it all.\n\n💡 Also try: Practice Drills, Past Papers Hub, and Exam Countdown — all free!`;
     }
+    // UAE summer greeting override (July-August)
+    if (userCountry === 'UAE') {
+      const now = new Date();
+      if (now.getMonth() >= 6 && now.getMonth() <= 7) {
+        const currLabel = {british:'British/IGCSE',american:'American/AP',ib:'IB Diploma',cbse:'CBSE',moe:'UAE MoE',pakistani:'Pakistani'}[uaeCurriculum] || 'your';
+        greeting = `Hey ${firstName}! ☀️ Starky here — your UAE summer tutor.\n\nSummer in Dubai means we have time to learn at your pace. No rush. No pressure.\n\n${subject ? `Let's work on ${subject}. ` : ''}I know the ${currLabel} curriculum inside out — every subject, every exam format, every mark scheme.\n\n${uaeCurriculum === 'moe' ? 'EmSAT prep? University applications? I\'ve got you.' : subject ? `Ask me anything about ${subject}, or say "quiz me".` : 'What shall we work on this summer?'}\n\n🎫 Every session earns you a UAE Summer Passport stamp!`;
+      }
+    }
     if (isParent) greeting += '\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰';
     setMessages([{ role: 'assistant', content: greeting }]);
     setTimeout(() => inputRef.current?.focus(), 150);
@@ -321,6 +329,18 @@ export default function Home() {
         setMessages([...newMsgs, { role: 'assistant', content: finalReply }]);
       }
       try { recordCall(); } catch(e) {}
+      // UAE Summer Passport — increment stamp after each session
+      try {
+        if (userCountry === 'UAE') {
+          const now = new Date();
+          if (now.getMonth() >= 6 && now.getMonth() <= 7) { // July-August
+            const pp = JSON.parse(localStorage.getItem('nw_summer_uae_passport') || '{}');
+            if (!pp.stamps) pp.stamps = [];
+            pp.stamps.push({ date: now.toISOString(), subject: selectedSubject || 'General' });
+            localStorage.setItem('nw_summer_uae_passport', JSON.stringify(pp));
+          }
+        }
+      } catch(e) {}
       try { if (voiceSupported && finalReply.length < 400) speakText(finalReply); } catch(e) {}
       try {
         if (newMsgs.filter(m => m.role === 'user').length >= 5 && p.email) {
@@ -483,12 +503,18 @@ export default function Home() {
           <div ref={messagesEndRef} />
         </div>
         {isLimitReached ? (
-          <div className="lw"><p>You've used all your free sessions for today.<br />Upgrade to keep learning without limits.</p><Link href="/pricing"><a>See Plans — from Rs 8,300/mo →</a></Link>
+          <div className="lw"><p>{userCountry === 'UAE' ? 'You\'ve used all your free sessions.' : 'You\'ve used all your free sessions for today.'}<br />{userCountry === 'UAE' ? 'Upgrade to continue your UAE summer learning.' : 'Upgrade to keep learning without limits.'}</p><Link href="/pricing"><a>{userCountry === 'UAE' ? 'See Plans — from AED 129/mo →' : 'See Plans — from Rs 8,300/mo →'}</a></Link>
             <div style={{marginTop:12,display:'flex',flexWrap:'wrap',gap:8,justifyContent:'center'}}>
-              <a href="/spelling-bee" style={{fontSize:12,fontWeight:700,color:'#FFC300',textDecoration:'none',background:'rgba(255,192,0,0.1)',border:'1px solid rgba(255,192,0,0.25)',borderRadius:100,padding:'6px 14px'}}>🐝 Spelling Bee</a>
-              <a href="/languages" style={{fontSize:12,fontWeight:700,color:'#7C5CBF',textDecoration:'none',background:'rgba(124,92,191,0.1)',border:'1px solid rgba(124,92,191,0.25)',borderRadius:100,padding:'6px 14px'}}>🌍 Languages</a>
-              <a href="/countdown" style={{fontSize:12,fontWeight:700,color:'#63D2FF',textDecoration:'none',background:'rgba(99,210,255,0.1)',border:'1px solid rgba(99,210,255,0.25)',borderRadius:100,padding:'6px 14px'}}>⏱️ Countdown</a>
-              <a href="/leaderboard" style={{fontSize:12,fontWeight:700,color:'#A8E063',textDecoration:'none',background:'rgba(168,224,99,0.1)',border:'1px solid rgba(168,224,99,0.25)',borderRadius:100,padding:'6px 14px'}}>🏆 Leaderboard</a>
+              {userCountry === 'UAE' ? <>
+                <a href="/summer-uae" style={{fontSize:12,fontWeight:700,color:'#4ECDC4',textDecoration:'none',background:'rgba(78,205,196,0.1)',border:'1px solid rgba(78,205,196,0.25)',borderRadius:100,padding:'6px 14px'}}>☀️ Summer Programme</a>
+                <a href="/languages" style={{fontSize:12,fontWeight:700,color:'#7C5CBF',textDecoration:'none',background:'rgba(124,92,191,0.1)',border:'1px solid rgba(124,92,191,0.25)',borderRadius:100,padding:'6px 14px'}}>🌍 Languages</a>
+                <a href="/countdown" style={{fontSize:12,fontWeight:700,color:'#63D2FF',textDecoration:'none',background:'rgba(99,210,255,0.1)',border:'1px solid rgba(99,210,255,0.25)',borderRadius:100,padding:'6px 14px'}}>⏱️ Countdown</a>
+              </> : <>
+                <a href="/spelling-bee" style={{fontSize:12,fontWeight:700,color:'#FFC300',textDecoration:'none',background:'rgba(255,192,0,0.1)',border:'1px solid rgba(255,192,0,0.25)',borderRadius:100,padding:'6px 14px'}}>🐝 Spelling Bee</a>
+                <a href="/languages" style={{fontSize:12,fontWeight:700,color:'#7C5CBF',textDecoration:'none',background:'rgba(124,92,191,0.1)',border:'1px solid rgba(124,92,191,0.25)',borderRadius:100,padding:'6px 14px'}}>🌍 Languages</a>
+                <a href="/countdown" style={{fontSize:12,fontWeight:700,color:'#63D2FF',textDecoration:'none',background:'rgba(99,210,255,0.1)',border:'1px solid rgba(99,210,255,0.25)',borderRadius:100,padding:'6px 14px'}}>⏱️ Countdown</a>
+                <a href="/leaderboard" style={{fontSize:12,fontWeight:700,color:'#A8E063',textDecoration:'none',background:'rgba(168,224,99,0.1)',border:'1px solid rgba(168,224,99,0.25)',borderRadius:100,padding:'6px 14px'}}>🏆 Leaderboard</a>
+              </>}
             </div>
           </div>
         ) : (

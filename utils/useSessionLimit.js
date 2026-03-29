@@ -284,8 +284,9 @@ export const SessionLimitBanner = ({ callsUsed, callsLeft, limitReached, compact
  * LimitReachedModal — full-screen overlay when limit is hit
  * ─────────────────────────────────────────────────────────────────
  */
-export const LimitReachedModal = ({ onClose, grade, trialExpired }) => {
+export const LimitReachedModal = ({ onClose, grade, trialExpired, userCountry }) => {
   const isTrialEnd = trialExpired;
+  const isUAE = userCountry === 'UAE';
   const JAZZCASH_WA = 'https://wa.me/923262266682?text=I%20want%20to%20subscribe%20to%20NewWorld%20Education%20via%20JazzCash%20(Rs%203%2C499%2Fmonth)';
 
   return (
@@ -317,18 +318,18 @@ export const LimitReachedModal = ({ onClose, grade, trialExpired }) => {
         background: 'rgba(79,142,247,0.08)', border: '1px solid rgba(79,142,247,0.2)',
         borderRadius: '16px', padding: '18px', marginBottom: '20px', textAlign: 'left',
       }}>
-        <div style={{ fontSize: '13px', fontWeight: '800', color: '#4F8EF7', marginBottom: '8px' }}>SUBSCRIBE — UNLOCK 25 DAILY SESSIONS</div>
+        <div style={{ fontSize: '13px', fontWeight: '800', color: '#4F8EF7', marginBottom: '8px' }}>{isUAE ? 'SUBSCRIBE — UNLOCK UNLIMITED SUMMER SESSIONS' : 'SUBSCRIBE — UNLOCK 25 DAILY SESSIONS'}</div>
         <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px', marginBottom: '6px' }}>
-          <span style={{ fontSize: '28px', fontWeight: '900', color: '#fff' }}>Rs 3,499</span>
+          <span style={{ fontSize: '28px', fontWeight: '900', color: '#fff' }}>{isUAE ? 'AED 129' : 'Rs 3,499'}</span>
           <span style={{ fontSize: '13px', color: 'rgba(255,255,255,0.4)' }}>/month</span>
         </div>
         <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.5)', lineHeight: '1.6' }}>
-          25 Starky sessions daily · All subjects · Parent reports · Voice + camera · Session memory
+          {isUAE ? '25 Starky sessions daily · All 5 curricula · EmSAT prep · Summer Passport · Parent reports' : '25 Starky sessions daily · All subjects · Parent reports · Voice + camera · Session memory'}
         </div>
       </div>
 
       <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-        <a href={JAZZCASH_WA} target="_blank" rel="noopener noreferrer" style={{
+        {!isUAE && <a href={JAZZCASH_WA} target="_blank" rel="noopener noreferrer" style={{
           display: "flex", alignItems: "center", justifyContent: "center", gap: "8px",
           background: "linear-gradient(135deg, #B71C1C, #E53935)",
           border: "none", borderRadius: "14px", padding: "15px",
@@ -337,7 +338,7 @@ export const LimitReachedModal = ({ onClose, grade, trialExpired }) => {
           textDecoration: "none",
         }}>
           Pay via JazzCash (WhatsApp) — Rs 3,499
-        </a>
+        </a>}
         <a href="/pricing" style={{
           display: "block",
           background: "linear-gradient(135deg, #4F8EF7, #6366F1)",
@@ -371,7 +372,7 @@ export const LimitReachedModal = ({ onClose, grade, trialExpired }) => {
       </div>
 
       <div style={{ display:'flex', gap:6, justifyContent:'center', flexWrap:'wrap', marginTop:12 }}>
-        {[{href:'/spelling-bee',label:'🐝 Spelling Bee'},{href:'/languages',label:'🌍 Languages'},{href:'/countdown',label:'⏱️ Countdown'},{href:'/leaderboard',label:'🏆 Leaderboard'}].map(l => (
+        {(isUAE ? [{href:'/languages',label:'🌍 Languages'},{href:'/countdown',label:'⏱️ Countdown'},{href:'/leaderboard',label:'🏆 Leaderboard'},{href:'/summer-uae',label:'☀️ Summer'}] : [{href:'/spelling-bee',label:'🐝 Spelling Bee'},{href:'/languages',label:'🌍 Languages'},{href:'/countdown',label:'⏱️ Countdown'},{href:'/leaderboard',label:'🏆 Leaderboard'}]).map(l => (
           <a key={l.href} href={l.href} style={{ fontSize:11, color:'rgba(255,255,255,0.4)', textDecoration:'none', padding:'4px 10px', borderRadius:20, background:'rgba(255,255,255,0.05)', border:'1px solid rgba(255,255,255,0.1)' }}>{l.label}</a>
         ))}
       </div>

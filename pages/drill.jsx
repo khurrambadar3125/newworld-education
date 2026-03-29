@@ -4,6 +4,7 @@
  */
 
 import { useState, useEffect, useCallback, useRef } from 'react';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useSpacedRep } from '../utils/useSpacedRep';
@@ -181,6 +182,7 @@ function QuestionTimer({ seconds, onExpire, paused }) {
 }
 
 export default function DrillPage() {
+  const router = useRouter();
   const [userProfile, setUserProfile] = useState(null);
   const sr = useSpacedRep(userProfile);
   const { logSession, streak, totalQuestions, badges } = useStreaks(userProfile?.email || userProfile?.name || 'guest');
@@ -193,6 +195,7 @@ export default function DrillPage() {
   const [topic, setTopic] = useState('');
   const [difficulty, setDifficulty] = useState('medium');
   const [questionType, setQuestionType] = useState('mixed');
+  const [urlContext, setUrlContext] = useState(null); // summer track context
 
   // Camera
   const [cameraImage, setCameraImage] = useState(null);
@@ -237,7 +240,11 @@ export default function DrillPage() {
 
   useEffect(() => {
     try { const s = localStorage.getItem('nw_user'); if (s) setUserProfile(JSON.parse(s)); } catch {}
-  }, []);
+    // Read URL query params for summer track context
+    const q = router.query;
+    if (q.subject && !subject) setSubject(decodeURIComponent(q.subject));
+    if (q.context) setUrlContext(q.context);
+  }, [router.query]);
 
   const subjects = mode === 'young' ? SUBJECTS_YOUNG : (level === 'O Level' ? SUBJECTS_OLEVEL : SUBJECTS_ALEVEL);
   const youngTopics = subject && mode === 'young' ? (TOPICS_YOUNG[subject] || DEFAULT_TOPICS) : [];
