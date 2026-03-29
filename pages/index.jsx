@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useSessionLimit } from '../utils/useSessionLimit';
 import { useTheme } from './_app';
 import { IB_SUBJECT_LIST } from '../utils/ibKnowledge';
+import { useCountry, UaeCurriculumSelector, FooterCountryFlags } from '../components/CountrySelector';
 
 const GRADE_GROUPS = [
   { label: 'Primary — KG to Grade 5', color: '#A8E063', grades: [
@@ -83,11 +84,7 @@ export default function Home() {
   const [selectedGrade, setSelectedGrade] = useState(null);
   const [showAudienceSelector, setShowAudienceSelector] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState(null);
-  const [userCountry, setUserCountry] = useState(null);
-  const [showCountrySelector, setShowCountrySelector] = useState(false);
-  const [detectedCountry, setDetectedCountry] = useState(null);
-  const [uaeCurriculum, setUaeCurriculum] = useState(null); // 'british'|'american'|'ib'|'cbse'|'moe'|'pakistani'
-  const [showUaeCurriculumSelector, setShowUaeCurriculumSelector] = useState(false);
+  const { userCountry, uaeCurriculum, setUaeCurriculum, showUaeCurriculumSelector, setShowUaeCurriculumSelector } = useCountry();
 
   // Grade classification — used in greetings, suggestion chips, subject lists
   const gradeId = (selectedGrade?.id || '').toLowerCase();
@@ -100,19 +97,6 @@ export default function Home() {
   const [chatStarted, setChatStarted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
-
-  const selectCountry = (country) => {
-    setUserCountry(country);
-    setShowCountrySelector(false);
-    try {
-      localStorage.setItem('user_country', country);
-      // Set cookie for 30 days
-      document.cookie = `newworld_country=${country};max-age=${30*86400};path=/;SameSite=Lax`;
-      // Update user profile if exists
-      const u = JSON.parse(localStorage.getItem('nw_user') || '{}');
-      if (u.email) { u.country = country; localStorage.setItem('nw_user', JSON.stringify(u)); }
-    } catch {}
-  };
 
   // Registration
   const [showRegModal, setShowRegModal] = useState(false);
@@ -140,31 +124,6 @@ export default function Home() {
       if (saved) setUserProfile(JSON.parse(saved));
     } catch {}
 
-    // Country detection — URL override > localStorage > auto-detect
-    try {
-      const urlParams = new URLSearchParams(window.location.search);
-      const countryOverride = (urlParams.get('country') || '').toUpperCase();
-      if (['PK','UAE','OTHER'].includes(countryOverride)) {
-        selectCountry(countryOverride);
-      } else if (localStorage.getItem('user_country')) {
-        setUserCountry(localStorage.getItem('user_country'));
-      } else {
-        // Auto-detect from IP — set silently, no overlay
-        fetch('/api/detect-country').then(r => r.json()).then(data => {
-          const country = data.country || 'PK';
-          setUserCountry(country);
-          setDetectedCountry(country);
-          localStorage.setItem('user_country', country);
-          document.cookie = `newworld_country=${country};max-age=${30*86400};path=/;SameSite=Lax`;
-        }).catch(() => {
-          setUserCountry('PK');
-          localStorage.setItem('user_country', 'PK');
-        });
-      }
-    } catch { setUserCountry('PK'); }
-
-    // Load saved UAE curriculum
-    try { const c = localStorage.getItem('uae_curriculum'); if (c) setUaeCurriculum(c); } catch {}
   }, []);
 
   useEffect(() => {
@@ -798,43 +757,12 @@ export default function Home() {
 
       {/* Urdu strip removed — Cambridge students use English/Roman Urdu. Starky auto-detects Roman Urdu. */}
 
-      {/* UAE Curriculum selector — shown when UAE user clicks "I am a Student" without curriculum set */}
-
-      {/* UAE Curriculum selector */}
-      {showUaeCurriculumSelector && (
-        <div style={{position:'fixed',top:0,left:0,right:0,bottom:0,zIndex:10000,background:'rgba(8,12,24,0.95)',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'Sora',sans-serif",padding:16,overflowY:'auto'}}>
-          <div style={{maxWidth:440,width:'100%',textAlign:'center'}}>
-            <h2 style={{fontSize:22,fontWeight:900,color:'#fff',margin:'0 0 4px'}}>Select your curriculum</h2>
-            <p style={{color:'rgba(255,255,255,0.5)',fontSize:13,margin:'0 0 20px'}}>Which curriculum does your school follow?</p>
-            <div style={{display:'flex',flexDirection:'column',gap:10}}>
-              {[
-                { id:'british', flag:'🇬🇧', name:'British (IGCSE / A Level)', desc:'Most popular in Dubai — 37% of students', color:'#4F8EF7' },
-                { id:'american', flag:'🇺🇸', name:'American (AP / Common Core)', desc:'American curriculum schools', color:'#FF6B6B' },
-                { id:'ib', flag:'🌐', name:'IB (International Baccalaureate)', desc:'PYP / MYP / Diploma Programme', color:'#4ECDC4' },
-                { id:'cbse', flag:'🇮🇳', name:'Indian (CBSE)', desc:'CBSE curriculum schools', color:'#FF8E53' },
-                { id:'moe', flag:'🇦🇪', name:'UAE Ministry (MoE)', desc:'Government school curriculum', color:'#FFC300' },
-                { id:'pakistani', flag:'🇵🇰', name:'Pakistani curriculum', desc:'Pakistani curriculum schools in UAE', color:'#A8E063' },
-              ].map(c => (
-                <button key={c.id} onClick={()=>{
-                  setUaeCurriculum(c.id);
-                  setShowUaeCurriculumSelector(false);
-                  try { localStorage.setItem('uae_curriculum', c.id); } catch {}
-                  // Scroll to grade selector
-                  setTimeout(()=>document.getElementById('start-learning')?.scrollIntoView({behavior:'smooth'}), 200);
-                }}
-                  style={{display:'flex',alignItems:'center',gap:12,padding:'14px 16px',borderRadius:14,border:`2px solid ${c.color}30`,background:`${c.color}08`,cursor:'pointer',fontFamily:"'Sora',sans-serif",width:'100%',textAlign:'left'}}>
-                  <span style={{fontSize:28}}>{c.flag}</span>
-                  <div>
-                    <div style={{fontWeight:800,fontSize:14,color:c.color}}>{c.name}</div>
-                    <div style={{fontSize:11,color:'rgba(255,255,255,0.5)'}}>{c.desc}</div>
-                  </div>
-                </button>
-              ))}
-            </div>
-            <button onClick={()=>setShowUaeCurriculumSelector(false)} style={{marginTop:16,background:'none',border:'none',color:'rgba(255,255,255,0.4)',fontSize:12,cursor:'pointer',fontFamily:"'Sora',sans-serif"}}>← Back</button>
-          </div>
-        </div>
-      )}
+      {/* UAE Curriculum selector — extracted to components/CountrySelector.jsx */}
+      <UaeCurriculumSelector
+        show={showUaeCurriculumSelector}
+        onSelect={(id) => { setUaeCurriculum(id); setShowUaeCurriculumSelector(false); }}
+        onBack={() => setShowUaeCurriculumSelector(false)}
+      />
 
       <section className="hero">
         <div className="hb">★ Starky — KG to A Levels</div>
@@ -1149,18 +1077,7 @@ export default function Home() {
           <a href="/privacy" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Privacy Policy</a>
           <a href="/terms" style={{color:'rgba(255,255,255,0.3)',fontSize:12,textDecoration:'none'}}>Terms of Service</a>
         </div>
-        <div style={{display:'flex',gap:8,justifyContent:'center',marginTop:10,marginBottom:6}}>
-          {[{code:'PK',flag:'🇵🇰',label:'Pakistan'},{code:'UAE',flag:'🇦🇪',label:'UAE'},{code:'OTHER',flag:'🌍',label:'Other'}].map(c=>(
-            <button key={c.code} onClick={()=>{
-              localStorage.setItem('user_country',c.code);
-              document.cookie=`newworld_country=${c.code};max-age=${30*86400};path=/;SameSite=Lax`;
-              if(c.code!=='UAE'&&c.code!=='OTHER'){localStorage.removeItem('uae_curriculum');}
-              window.location.reload();
-            }} style={{background:userCountry===c.code?'rgba(79,142,247,0.15)':'rgba(255,255,255,0.04)',border:userCountry===c.code?'1.5px solid rgba(79,142,247,0.4)':'1.5px solid rgba(255,255,255,0.08)',borderRadius:8,padding:'6px 12px',cursor:'pointer',fontSize:12,color:userCountry===c.code?'#4F8EF7':'rgba(255,255,255,0.5)',fontWeight:700,fontFamily:"'Sora',sans-serif",display:'flex',alignItems:'center',gap:4}}>
-              <span style={{fontSize:16}}>{c.flag}</span>{c.label}
-            </button>
-          ))}
-        </div>
+        <FooterCountryFlags activeCountry={userCountry} />
         <div className="fc2">© 2026 NewWorldEdu · khurram@newworld.education</div>
       </footer>
     </>
