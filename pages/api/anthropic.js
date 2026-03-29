@@ -14,6 +14,7 @@ import { detectWeakness, saveWeakness } from '../../utils/weaknessDetector';
 import { getBookKnowledge } from '../../utils/readingKnowledge';
 import { checkMisconception } from '../../utils/cambridgeExaminer';
 import { getUAEMandatoryPrompt, isUAEMandatoryTopic } from '../../utils/uaeMandatorySubjects';
+import { getIBDiplomaPrompt, isIBTopic } from '../../utils/ibKnowledge';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -278,6 +279,11 @@ export default async function handler(req, res) {
         if (uaeTopic) {
           built.systemPrompt += `\n\nUAE MANDATORY SUBJECT DETECTED: ${uaeTopic.name}. ${uaeTopic.teachingNotes}`;
         }
+      }
+
+      // ── IB Diploma injection — for UAE students on IB curriculum ──
+      if (userProfile?.uaeCurriculum === 'ib' || isIBTopic(message)) {
+        built.systemPrompt += getIBDiplomaPrompt(subject);
       }
 
       // ── Academic phase injection — adapts Starky to the Cambridge calendar ──

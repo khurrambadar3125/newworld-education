@@ -91,6 +91,28 @@ These files may only have content ADDED to them. Existing content is never remov
 - All 3 years of dates are sacred
 - Auto-detection logic is sacred
 
+### 13. pages/index.jsx
+- Mic button (VoiceChatBar) must NEVER be removed from homepage
+- Starky floating star button (StarkyBubble) must NEVER be removed from homepage
+- All homepage elements are sacred — grade selector, subject selector, chat interface
+- Any change to pages/index.jsx requires a diff shown to Khurram first
+- The word REWRITE is banned for this file
+
+### 14. utils/ibKnowledge.js
+- All 6 IB subject groups are sacred
+- TOK, EE, CAS core content is sacred
+- IB command terms are sacred
+
+### 15. utils/uaeMandatorySubjects.js
+- All 4 UAE mandatory subjects are sacred
+- Teaching notes are sacred
+
+---
+
+## LESSONS LEARNED
+
+**29 March 2026**: UAE country selector build removed mic button and Starky star button from homepage by modifying `pages/_app.jsx` exclusion lists without showing diff. The change affected ALL countries (Pakistan included), not just UAE. **Rule**: Always show diff on `index.jsx` and `_app.jsx` before any change. Never add `'/'` to StarkyBubble/VoiceChatBar exclusion lists.
+
 ---
 
 ## PERMANENT PLATFORM DECISIONS
@@ -229,3 +251,35 @@ npm run lint     # ESLint
 ---
 
 **NewWorldEdu | newworld.education**
+
+## Session Snapshot (auto-updated)
+<!-- This section is auto-updated by .claude/update-claude-md.sh Stop hook -->
+<!-- Last sync: 2026-03-29 19:19 -->
+
+**Platform counts**: 41 pages, 38 utils, 63 API routes, 7 components, 23 cron jobs
+
+**All pages**: _app,arts,arts-for-all,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,kids,languages,leaderboard,login,music,music-for-all,news,parent,past-papers,phonics,pricing,privacy,reading,reading-for-all,referral,school,special-needs,spelling-bee,start,student-dashboard,study-plan,subscribe,summer,terms,textbooks,zayd-mode
+
+**All utils**: academicExcellence,analytics,artsKnowledge,autoImprover,betterVoice,cambridgeExaminer,chineseContent,contentProtection,dailyQuestionEmail,db,emailTemplates,getKnowledgeForTopic,globalKnowledgeBase,motherTongue,notify,patternEngine,phonicsKB,productGate,readingKnowledge,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,starkyIntents,starkyPrompt,summerKnowledge,supabase,systemPrompts,translateCache,uaeMandatorySubjects,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,weaknessDetector,youngLearnerKB
+
+**Last 10 commits**:
+```
+a3c567c Footer country flags — switch anytime, no overlay on first visit
+92ca6ad UAE Mandatory Subjects knowledge base — 4 subjects, all stages
+c1ee341 Other country: curriculum picker with global message
+64bba63 UAE curriculum selector — 6 curricula supported
+ce5b866 Country detection and selector — Pakistan, UAE, Other
+bb0653d Daily report: articles section + News label cleanup + email dedup
+b55756b Fix duplicate error emails — deduplication via KV lock
+e077615 Grade selector: remove age labels, fix heading, hide floating buttons
+e00add9 Microphone fix — real-time transcript + auto-send + pulse animation
+806f67f 9 teaching enhancements APPENDED to PERSONA_LOCK
+```
+
+**Files changed in last commit**:
+```
+pages/index.jsx
+```
+
+**Uncommitted changes**: .claude/update-claude-md.sh
+**Untracked files**: none
