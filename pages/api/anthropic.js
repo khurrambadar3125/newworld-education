@@ -21,6 +21,7 @@ import { getMoECurriculumPrompt, isMoETopic } from '../../utils/uaeMoEKnowledge'
 import { getUAEExcellencePrompt } from '../../utils/uaeAcademicExcellence';
 import { getUAESummerPrompt } from '../../utils/uaeSummerKnowledge';
 import { getArabicSupportPrompt, isArabicTopic } from '../../utils/arabicSupportKB';
+import { getLiteratureArabicPrompt, isArabicLiteratureRequest } from '../../utils/literatureArabicKB';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -317,6 +318,10 @@ export default async function handler(req, res) {
         if (isArabicTopic(message)) {
           const gradeGroup = built.meta?.gradeGroup || 'middle';
           built.systemPrompt += getArabicSupportPrompt(gradeGroup);
+        }
+        // Arabic literature support — Arab student asking about English Lit set texts
+        if (isArabicLiteratureRequest(message)) {
+          built.systemPrompt += getLiteratureArabicPrompt(message);
         }
       }
 
