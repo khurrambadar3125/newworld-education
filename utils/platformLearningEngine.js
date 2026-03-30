@@ -209,6 +209,85 @@ function logContentGaps(record) {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
+// KB QUALITY SCORING SYSTEM — score each KB activated per session
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const KB_QUALITY_SIGNAL_SCHEMA = {
+  kb_name: null,           // e.g. "cambridgeExaminer.js"
+  session_id: null,
+  signals: {
+    explanation_requested_again: false,  // student asked same thing twice
+    student_corrected_starky: false,     // "no that's wrong"
+    starky_hedged: false,                // "I'm not entirely sure..."
+    topic_not_found: false,              // complete gap
+    student_left_mid_topic: false,       // abandoned — confusion signal
+    student_said_i_get_it: false,        // success signal
+    session_extended: false,             // engagement signal
+    parent_followed_up: false,           // parent asked clarifying question
+  },
+  topic: null,
+  grade: null,
+  curriculum: null,
+};
+
+const KB_QUALITY_KEY = 'nw_kb_quality';
+
+export function getKBQualityScores() {
+  try { return JSON.parse(localStorage.getItem(KB_QUALITY_KEY) || '[]'); } catch { return []; }
+}
+
+export function logKBQualitySignal(signal) {
+  const scores = getKBQualityScores();
+  scores.push({ ...signal, date: new Date().toISOString() });
+  if (scores.length > 500) scores.splice(0, scores.length - 500);
+  try { localStorage.setItem(KB_QUALITY_KEY, JSON.stringify(scores)); } catch {}
+}
+
+/**
+ * Weekly KB quality aggregate — which KBs need attention?
+ */
+export function getKBQualityReport() {
+  const scores = getKBQualityScores();
+  const weekAgo = Date.now() - 7 * 86400000;
+  const recent = scores.filter(s => new Date(s.date).getTime() > weekAgo);
+
+  // Group by KB name
+  const byKB = {};
+  for (const s of recent) {
+    if (!s.kb_name) continue;
+    if (!byKB[s.kb_name]) byKB[s.kb_name] = { sessions: 0, hedges: 0, corrections: 0, reExplanations: 0, gaps: 0, abandonments: 0, successes: 0, extensions: 0 };
+    const kb = byKB[s.kb_name];
+    kb.sessions += 1;
+    if (s.signals.starky_hedged) kb.hedges += 1;
+    if (s.signals.student_corrected_starky) kb.corrections += 1;
+    if (s.signals.explanation_requested_again) kb.reExplanations += 1;
+    if (s.signals.topic_not_found) kb.gaps += 1;
+    if (s.signals.student_left_mid_topic) kb.abandonments += 1;
+    if (s.signals.student_said_i_get_it) kb.successes += 1;
+    if (s.signals.session_extended) kb.extensions += 1;
+  }
+
+  // Rank by issues (hedges + corrections + gaps = priority for rewrite)
+  const ranked = Object.entries(byKB)
+    .map(([name, data]) => ({
+      kb: name,
+      ...data,
+      issueScore: data.hedges * 2 + data.corrections * 3 + data.gaps * 3 + data.reExplanations * 1 + data.abandonments * 2,
+      successRate: data.sessions > 0 ? Math.round((data.successes / data.sessions) * 100) : 0,
+    }))
+    .sort((a, b) => b.issueScore - a.issueScore);
+
+  return {
+    period: 'Last 7 days',
+    totalSignals: recent.length,
+    kbRanking: ranked,
+    priorityRewrites: ranked.filter(r => r.issueScore >= 5),
+    topPerformers: ranked.filter(r => r.successRate >= 70).sort((a, b) => b.successRate - a.successRate),
+    generatedAt: new Date().toISOString(),
+  };
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
 // SINGING-SPECIFIC LEARNING
 // ═══════════════════════════════════════════════════════════════════════════════
 
