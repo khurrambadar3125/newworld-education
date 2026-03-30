@@ -20,6 +20,7 @@ import { getCBSECurriculumPrompt, isCBSETopic } from '../../utils/cbseKnowledge'
 import { getMoECurriculumPrompt, isMoETopic } from '../../utils/uaeMoEKnowledge';
 import { getUAEExcellencePrompt } from '../../utils/uaeAcademicExcellence';
 import { getUAESummerPrompt } from '../../utils/uaeSummerKnowledge';
+import { getArabicSupportPrompt, isArabicTopic } from '../../utils/arabicSupportKB';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -312,6 +313,11 @@ export default async function handler(req, res) {
         // UAE Summer programme — active July 3 to August 26
         const summerPrompt = getUAESummerPrompt(userProfile?.uaeCurriculum);
         if (summerPrompt) built.systemPrompt += summerPrompt;
+        // Arabic support — when UAE student asks about Arabic as a subject
+        if (isArabicTopic(message)) {
+          const gradeGroup = built.meta?.gradeGroup || 'middle';
+          built.systemPrompt += getArabicSupportPrompt(gradeGroup);
+        }
       }
 
       // ── Academic phase injection — adapts Starky to the Cambridge calendar ──
