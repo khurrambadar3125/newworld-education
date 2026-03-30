@@ -310,5 +310,289 @@ export function getSingingPrompt(age, condition) {
 
   prompt += `\n\n${SINGING_WELLBEING.emotional}`;
 
+  // Progress evaluation system
+  prompt += `\n\nPROGRESS SYSTEM: 5 checkpoints over 8 weeks. Baseline (Day 1) → Week 2 → Week 4 (halfway) → Week 6 → Final (Week 8). Every session starts with a 60-second mini-eval. Compare to baseline every time. Level gates: must demonstrate skills before advancing. NEVER say "failed" — say "almost there, one more week on [skill]". Parent reports every 2 weeks.`;
+
   return prompt;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// SINGING PROGRESS EVALUATION SYSTEM
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const CHECKPOINT_SCHEMA = {
+  checkpoint: 0,
+  date: null,
+  pitch_accuracy: 0,     // 0-10
+  breath_control: 0,     // 0-10
+  tone_quality: 0,       // 0-10
+  rhythm: 0,             // 0-10
+  confidence: 0,         // 0-10
+  overall: 0,            // 0-10
+  voice_type_estimate: null, // soprano/mezzo/alto/tenor/baritone/bass/treble
+  biggest_strength: null,
+  biggest_opportunity: null,
+  starky_notes: null,
+  audio_duration: 0,
+  transcript: null,
+};
+
+export const EVALUATION_CHECKPOINTS = {
+  baseline: {
+    checkpoint: 0,
+    name: 'Baseline',
+    timing: 'Day 1, before any teaching',
+    task: 'Record 30-60 second clip: a song they know, OR scales (mah-may-mee-moh-moo up and down), OR sustain any note for 5 seconds.',
+    feedbackFormat: 'Thank you for singing for me, {name}. Here\'s what I heard: Your biggest strength right now is {strength}. The area with the most room to grow is {opportunity}. Over the next 8 weeks, that\'s exactly what we\'re going to work on. Let\'s start.',
+  },
+  week2: {
+    checkpoint: 1,
+    name: 'Week 2 Check',
+    timing: 'After breath and warm-up work',
+    task: 'Same clip type as baseline.',
+    compareTo: 'baseline',
+    improvedFeedback: 'Your {area} has improved — {specific detail, e.g. "you held that phrase 2 seconds longer than week 1"}.',
+    noChangeFeedback: 'That\'s completely normal — these things take time. Here\'s what to focus on this week...',
+  },
+  halfway: {
+    checkpoint: 2,
+    name: 'Halfway',
+    timing: 'Week 4',
+    task: 'Perform the song they\'ve been working on.',
+    evaluates: ['Pitch accuracy on each phrase', 'Breath management across the whole song', 'Diction and clarity', 'Expression and commitment'],
+    compareTo: 'baseline + checkpoint 1',
+    format: 'Report card: simple, encouraging, specific.',
+  },
+  week6: {
+    checkpoint: 3,
+    name: 'Week 6 Check',
+    timing: 'Week 6',
+    task: 'Same song, refined.',
+    action: 'Identify what improved, what still needs work. Adjust remaining 2 weeks to target weak areas.',
+  },
+  final: {
+    checkpoint: 4,
+    name: 'Final — Summer Singing Report',
+    timing: 'Week 8, Day 54',
+    task: 'Record same type of clip as Day 1 PLUS their chosen song.',
+    reportFormat: `{name}'s Summer Singing Journey — July to August 2026
+
+Day 1 vs Day 54:
+- Pitch accuracy: {baseline}/10 → {final}/10 (+{diff} points)
+- Breath control: {baseline}/10 → {final}/10 (+{diff} points)
+- Tone quality: {baseline}/10 → {final}/10 (+{diff} points)
+- Rhythm: {baseline}/10 → {final}/10 (+{diff} points)
+- Overall: {baseline}/10 → {final}/10 (+{diff} points)
+
+What you mastered this summer:
+{skills_list}
+
+What to work on next:
+{next_steps}
+
+Songs performed:
+{songs_list}
+
+Starky says:
+{personal_message}`,
+  },
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// LEVEL GATE SYSTEM
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const LEVEL_GATES = {
+  level1to2: {
+    name: 'Level 1 → Level 2',
+    requirements: [
+      'Can sustain a note for 3+ seconds without major pitch drift',
+      'Can match at least one note Starky demonstrates',
+      'Has completed all 4 week-1 sessions',
+      'Knows one complete song (even if imperfect)',
+    ],
+  },
+  level2to3: {
+    name: 'Level 2 → Level 3',
+    requirements: [
+      'Pitch accuracy at least 6/10 on a simple scale',
+      'Breath control — no mid-phrase gasping on short phrases',
+      'Can sing a full verse of their chosen song',
+      'Voice type confirmed',
+    ],
+  },
+  level3to4: {
+    name: 'Level 3 → Level 4',
+    requirements: [
+      'Chest voice and head voice both accessible',
+      'Pitch accuracy 7/10+',
+      'Can perform a complete song with expression',
+      'Has recorded and reviewed at least 3 clips',
+    ],
+  },
+  failResponse: 'You\'re almost there. Let\'s do one more week on {skill} and then we\'ll move forward. Here\'s what to practise...',
+  neverSay: ['failed', 'not ready', 'not good enough', 'can\'t move on'],
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// WEEKLY MICRO-CHECKS
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const MICRO_CHECK = {
+  duration: '60 seconds at the start of every session',
+  method: 'Before we start — sing this phrase for me: [simple phrase]. Starky evaluates vs last session.',
+  trends: {
+    improving: 'I can hear the difference from last time. Keep doing what you\'re doing.',
+    plateauing: 'You\'re consistent — let\'s try a new exercise to push through this.',
+    regressing: 'Your voice sounds a little different today. Have you been resting it? Let\'s do a gentle session today and come back stronger tomorrow.',
+  },
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// PARENT PROGRESS REPORTS
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const PARENT_REPORT_FORMAT = {
+  frequency: 'Every 2 weeks',
+  template: `{child_name}'s Singing Progress — Week {week}
+
+This week {name} worked on: {skills}
+What we noticed: {observations}
+What to encourage at home: {home_activity}
+How they're doing overall: {honest_sentence}
+
+Next 2 weeks we'll focus on: {preview}`,
+  storage: 'Supabase if logged in, localStorage for guests.',
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// SINGING PROFILE — stored per student
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const SINGING_PROFILE_SCHEMA = {
+  singing_programme_enrolled: false,
+  singing_start_date: null,
+  singing_genre: null,          // bollywood/qawwali/nasheed/arabic/western/mixed
+  singing_checkpoints: [],      // [{ checkpoint, scores, date }]
+  current_level: 1,             // 1-4
+  songs_completed: [],          // ['song name']
+  badges_earned: [],            // ['badge id']
+  summer_report_generated: false,
+  weekly_micro_checks: [],      // [{ date, trend, score }]
+  parent_reports_sent: [],      // [{ week, date }]
+};
+
+const SING_PROFILE_KEY = 'nw_singing_profile';
+
+export function loadSingingProfile() {
+  try { return JSON.parse(localStorage.getItem(SING_PROFILE_KEY) || 'null'); } catch { return null; }
+}
+
+export function saveSingingProfile(profile) {
+  try { localStorage.setItem(SING_PROFILE_KEY, JSON.stringify(profile)); } catch {}
+}
+
+/**
+ * Record a checkpoint evaluation
+ */
+export function recordCheckpoint(profile, checkpointNum, scores) {
+  const p = profile || { ...SINGING_PROFILE_SCHEMA };
+  if (!p.singing_programme_enrolled) {
+    p.singing_programme_enrolled = true;
+    p.singing_start_date = new Date().toISOString();
+  }
+  p.singing_checkpoints.push({
+    checkpoint: checkpointNum,
+    scores: { ...scores },
+    date: new Date().toISOString(),
+  });
+  saveSingingProfile(p);
+  return p;
+}
+
+/**
+ * Record a weekly micro-check
+ */
+export function recordMicroCheck(profile, trend, score) {
+  const p = profile || { ...SINGING_PROFILE_SCHEMA };
+  p.weekly_micro_checks.push({ date: new Date().toISOString(), trend, score });
+  if (p.weekly_micro_checks.length > 20) p.weekly_micro_checks = p.weekly_micro_checks.slice(-20);
+  saveSingingProfile(p);
+  return p;
+}
+
+/**
+ * Check if student can advance to next level
+ */
+export function checkLevelGate(currentLevel, profile) {
+  const gates = { 1: LEVEL_GATES.level1to2, 2: LEVEL_GATES.level2to3, 3: LEVEL_GATES.level3to4 };
+  const gate = gates[currentLevel];
+  if (!gate) return { canAdvance: true, requirements: [] };
+
+  // Simple check: latest checkpoint scores must meet thresholds
+  const latest = profile?.singing_checkpoints?.slice(-1)[0]?.scores;
+  if (!latest) return { canAdvance: false, requirements: gate.requirements };
+
+  const checks = [];
+  if (currentLevel === 1) {
+    checks.push(latest.breath_control >= 3);   // sustain 3+ seconds
+    checks.push(latest.pitch_accuracy >= 3);    // match at least one note
+    checks.push((profile.weekly_micro_checks?.length || 0) >= 4); // 4 sessions
+    checks.push((profile.songs_completed?.length || 0) >= 1);     // one song
+  } else if (currentLevel === 2) {
+    checks.push(latest.pitch_accuracy >= 6);
+    checks.push(latest.breath_control >= 5);
+    checks.push((profile.songs_completed?.length || 0) >= 1);
+    checks.push(!!latest.voice_type_estimate);
+  } else if (currentLevel === 3) {
+    checks.push(latest.pitch_accuracy >= 7);
+    checks.push(latest.tone_quality >= 6);
+    checks.push((profile.songs_completed?.length || 0) >= 2);
+    checks.push((profile.singing_checkpoints?.length || 0) >= 3);
+  }
+
+  const passed = checks.filter(Boolean).length;
+  const total = checks.length;
+  return {
+    canAdvance: passed === total,
+    passed,
+    total,
+    requirements: gate.requirements,
+    missing: gate.requirements.filter((_, i) => !checks[i]),
+  };
+}
+
+/**
+ * Generate summer singing report comparing baseline to final
+ */
+export function generateSummerReport(profile, studentName) {
+  if (!profile?.singing_checkpoints?.length) return null;
+  const baseline = profile.singing_checkpoints.find(c => c.checkpoint === 0);
+  const final = profile.singing_checkpoints.slice(-1)[0];
+  if (!baseline || !final) return null;
+
+  const dims = ['pitch_accuracy', 'breath_control', 'tone_quality', 'rhythm', 'confidence'];
+  const improvements = dims.map(d => ({
+    name: d.replace(/_/g, ' '),
+    before: baseline.scores[d] || 0,
+    after: final.scores[d] || 0,
+    diff: (final.scores[d] || 0) - (baseline.scores[d] || 0),
+  }));
+
+  const overallBefore = baseline.scores.overall || 0;
+  const overallAfter = final.scores.overall || 0;
+
+  return {
+    studentName,
+    startDate: profile.singing_start_date,
+    endDate: final.date,
+    improvements,
+    overallBefore,
+    overallAfter,
+    overallDiff: overallAfter - overallBefore,
+    songsCompleted: profile.songs_completed || [],
+    badgesEarned: profile.badges_earned || [],
+    totalSessions: profile.weekly_micro_checks?.length || 0,
+    genre: profile.singing_genre,
+  };
 }
