@@ -242,6 +242,14 @@ Keep each recommendation under 2 sentences. Be direct.`;
         } catch { return ''; }
       })()}
 
+      <div style="padding:16px 24px;background:rgba(79,142,247,0.05);border-top:1px solid rgba(79,142,247,0.15)">
+        <div style="font-size:13px;font-weight:700;color:#4F8EF7;margin-bottom:8px">Platform Learning Engine</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.5);line-height:1.6">
+          The autonomous learning engine analyses every session to make Starky smarter.<br>
+          5 loops: Content Gap Detection → Explanation Effectiveness → Success Patterns → Struggle Mapping → KB Auto-Enhancement.<br>
+          View full learning report at /api/platform/learning-report
+        </div>
+      </div>
       <div style="padding:16px 24px;background:rgba(255,255,255,0.03);border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:rgba(255,255,255,0.25);text-align:center">
         NWE Self-Improvement Engine — generated automatically at ${new Date().toISOString()}
       </div>
