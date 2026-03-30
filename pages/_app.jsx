@@ -155,7 +155,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
       <ThemeProvider>
         <Head>
           <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
           <meta name="theme-color" content="#080C18" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -223,7 +223,10 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           }
 
           /* Touch improvements for all mobile/tablet */
-          button, a, [role="button"] { -webkit-tap-highlight-color: transparent; touch-action: manipulation; cursor: pointer; -webkit-appearance: none; position: relative; }
+          * { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+          button, a, [role="button"] { -webkit-tap-highlight-color: transparent; touch-action: manipulation; cursor: pointer; -webkit-appearance: none; position: relative; user-select: none; -webkit-user-select: none; min-height: 44px; }
+          /* iOS Safari — prevents button flicker on active */
+          button:active, [role="button"]:active { opacity: 0.85; }
           /* iOS fix: child elements inside buttons must not capture taps — entire button area must be clickable */
           button > *, button > span, button > div, [role="button"] > * { pointer-events: none; }
           /* Exception: inputs and textareas inside buttons (rare but possible) */

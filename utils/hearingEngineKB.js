@@ -59,6 +59,125 @@ export const CODE_SWITCHING_VOCABULARY = {
 };
 
 // ═══════════════════════════════════════════════════════════════════════════════
+// UAE ARABIC DEEP INTELLIGENCE — 200+ nationalities in one classroom
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const UAE_ARABIC_VOCABULARY = {
+  emirati: {
+    understanding: { 'فاهم': 'I understand', 'مو فاهم': "I don't understand", 'وضح': 'explain', 'ما فهمت': "I didn't understand", 'شو يعني': 'what does it mean', 'ايش هذا': 'what is this (Abu Dhabi)', 'شو هذا': 'what is this (Dubai)' },
+    difficulty: { 'صعب': 'difficult', 'وايد صعب': 'very difficult', 'سهل': 'easy', 'وايد سهل': 'very easy', 'مو سهل': 'not easy', 'خوش': 'good (Khaleeji)' },
+    waid: { desc: 'وايد (waid) = very much/a lot. THE most important Khaleeji word. Students say it constantly.', apiMishears: ['wide', 'why', 'wait', 'wade', "why'd"], example: 'Transcript "wide hard" = "waid hard" = very difficult' },
+    affirmation: { 'زين': 'good/okay', 'تمام': 'perfect', 'صح': 'correct', 'غلط': 'wrong', 'خلاص': 'done/finished', 'بس': 'enough/just', 'يعني': 'it means/I mean (discourse marker)' },
+  },
+  soundChanges: {
+    desc: 'Emirati Khaleeji sound shifts that break Web Speech API:',
+    changes: [
+      'MSA [q] → Emirati [g]: "قال" (qaal/said) becomes "gaal"',
+      'MSA [k] → Emirati [ch]: "كيف" (kayf/how) becomes "chaif"',
+      'MSA [j/dj] → Emirati [y]: "جديد" (jadid/new) becomes "yadid"',
+    ],
+  },
+  expressions: {
+    'wallah': 'I swear/honestly — emphasis marker, does not change meaning',
+    'mashallah': 'how wonderful — positive signal, means they understood and appreciated',
+    'inshallah': 'if God wills — future plans, sometimes polite uncertainty',
+    'alhamdulillah': 'praise God — gratitude. "Alhamdulillah I understand" = genuine aha moment',
+    'yalla': "let's go/come on — readiness/eagerness. Positive engagement signal.",
+    'habibi': 'my dear — informal, comfortable, trusting relationship signal',
+    'la': 'no', 'aiwa': 'yes', 'mafi mushkila': 'no problem',
+  },
+  egyptian: {
+    desc: 'Largest Arab expat community in UAE schools.',
+    vocab: { 'ازيك': 'how are you', 'معلش': "never mind/it's okay", 'ايه ده': 'what is this', 'مش عارف': "I don't know", 'صعب اوي': 'very difficult (awi=very)', 'سهل اوي': 'very easy', 'ايوه': 'yes' },
+    note: 'Egyptian [g] where MSA has [j]: "gamal" not "jamal". Egyptian [hamza] where MSA has [q].',
+  },
+  levantine: {
+    desc: 'Lebanese, Syrian, Jordanian, Palestinian students.',
+    vocab: { 'شو': 'what', 'كيفك': 'how are you', 'منيح': 'good/fine', 'هلق': 'now', 'بدي': 'I want', 'ما بعرف': "I don't know", 'كتير': 'a lot/very (=Khaleeji waid)', 'يسلمو': 'thank you' },
+  },
+};
+
+export const ARABIZI_DECODER = {
+  desc: 'UAE Gen Z writes Arabic using English letters + numbers for Arabic sounds.',
+  numbers: {
+    '2': 'ء (hamza/glottal stop): "2ana" = أنا (I/me)',
+    '3': 'ع (ain): "3arabi" = عربي (Arabic)',
+    '5': 'خ (kha): "5air" = خير (good)',
+    '6': 'ط (ta): "6alab" = طالب (student)',
+    '7': 'ح (ha): "7amdillah" = الحمد لله (praise God)',
+    '9': 'ص (sad): "9a3b" = صعب (difficult)',
+  },
+  rule: 'When Starky sees number-letter combinations: interpret as Arabic via Arabizi. "9a3b" = صعب = difficult. "7amdillah" = الحمد لله.',
+};
+
+export const DIALECT_GRID = {
+  emirati: { home: 'Khaleeji Arabic', school: 'English (private) / Arabic (public)', mixing: 'Khaleeji + English, heavy "wallah", "waid", "yalla"', signals: ['waid', 'zain', 'khalas', 'wallah'] },
+  southAsian: { home: 'Hindi/Urdu/Malayalam/Tamil/Punjabi', school: 'English', mixing: 'English + Hindi/Urdu + absorbed Gulf Arabic', signals: ['yaar', 'bhai', 'matlab', 'samajh'] },
+  arabExpat: { home: 'Egyptian or Levantine dialect', school: 'English', mixing: 'English + their dialect + absorbed Khaleeji', signals: ['awi', "ma'lesh", 'ktir', 'shu'] },
+  filipino: { home: 'Tagalog/Filipino', school: 'English', mixing: 'English + Tagalog fillers + absorbed Gulf Arabic', signals: ['po', 'naman', 'kasi'] },
+  western: { home: 'English', school: 'English', mixing: 'Pure English + absorbed Gulf Arabic', signals: ['innit', 'proper'] },
+};
+
+export const ARABIC_ACADEMIC_TERMS = {
+  maths: { 'المعادلة': 'equation', 'المجهول': 'unknown/variable', 'الحل': 'solution', 'المسألة': 'problem', 'الكسر': 'fraction', 'الجذر': 'root', 'الزاوية': 'angle', 'المثلث': 'triangle', 'الدائرة': 'circle' },
+  science: { 'التفاعل': 'reaction', 'العنصر': 'element', 'الخلية': 'cell', 'الطاقة': 'energy', 'القوة': 'force', 'الضوء': 'light' },
+  general: { 'الشرح': 'explanation', 'المثال': 'example', 'السؤال': 'question', 'الإجابة': 'answer', 'الملخص': 'summary', 'الموضوع': 'topic' },
+};
+
+export const CULTURAL_EXPRESSIONS = {
+  desc: 'These appear constantly in UAE student speech. Not confusion signals — communication markers.',
+  wallah: { usage: '"Wallah I don\'t understand" = emphatic honesty. Hear as emphasis.', apiHears: ['wallet', 'walla', 'valet'] },
+  inshallah: { usage: '"I\'ll study inshallah" = genuine intention OR gentle uncertainty.', apiHears: ['in sha Allah', 'inshala', 'insular'] },
+  mashallah: { usage: 'After Starky explains well = understood and appreciated. Positive signal.', apiHears: ['masha Allah', 'must Allah'] },
+  yalla: { usage: '"Yalla tell me" = eager student. Match their energy.', apiHears: ['yellow', 'yeah la'] },
+  habibi: { usage: '"Habibi explain again" = comfortable, trusting.', apiHears: ['happy bee', 'hubby', 'hippie'] },
+};
+
+export const COMMUNITY_PROFILES = DIALECT_GRID; // alias for export
+
+/**
+ * Repair a UAE transcript with Arabic mishearings
+ */
+export function repairUAETranscript(transcript) {
+  if (!transcript) return transcript;
+  let repaired = transcript;
+
+  // Repair common "waid" mishearings
+  repaired = repaired.replace(/\b(wide|wade|why'?d)\b/gi, (match) => `waid [=${match}→very]`);
+
+  // Repair common expression mishearings
+  const repairs = {
+    'wallet': 'wallah', 'walla': 'wallah', 'valet': 'wallah',
+    'yellow': 'yalla', 'yeah la': 'yalla',
+    'happy bee': 'habibi', 'hubby': 'habibi', 'hippie': 'habibi',
+    'callous': 'khalas', 'class': 'khalas',
+    'sane': 'zain', 'zane': 'zain', 'rain': 'zain',
+    'tomahm': 'tamam', 'ta mam': 'tamam',
+    'mish farm': 'mish fahim', 'mush raheem': 'mish fahim',
+  };
+  for (const [wrong, right] of Object.entries(repairs)) {
+    if (repaired.toLowerCase().includes(wrong)) {
+      repaired = repaired.replace(new RegExp(wrong, 'gi'), `${right} [=${wrong}]`);
+    }
+  }
+
+  // Decode Arabizi numbers
+  const arabiziPattern = /\b(\d[a-z]+|[a-z]+\d[a-z]*)\b/gi;
+  repaired = repaired.replace(arabiziPattern, (match) => {
+    const decoded = {
+      '3arabi': 'عربي (Arabic)', '7amdillah': 'الحمد لله (praise God)',
+      '9a3b': 'صعب (difficult)', '2ana': 'أنا (I/me)',
+      '5air': 'خير (good)', '6alab': 'طالب (student)',
+      'ma3lesh': 'معلش (never mind)', 'ba3ref': 'بعرف (I know)',
+      'ma ba3ref': 'ما بعرف (I don\'t know)', '3ala': 'على (on)',
+    };
+    return decoded[match.toLowerCase()] || match;
+  });
+
+  return repaired;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
 // ACCENT CORRECTION MAP — Web Speech API mishearings by accent
 // ═══════════════════════════════════════════════════════════════════════════════
 

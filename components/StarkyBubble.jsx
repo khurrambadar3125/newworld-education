@@ -966,6 +966,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
               {/* 🎤 Voice — hidden for deaf students */}
               {sttSupported && !userProfile?.isDeafStudent && !userProfile?.is_deaf_student && !userProfile?.deaf_mode && (
                 <button className={`starky-icon-btn${isMicActive ? ' starky-mic-active' : ''}`}
+                  onTouchEnd={(e) => { e.preventDefault(); e.currentTarget.click(); }}
                   onClick={() => {
                     if (isMicActive) {
                       micRef.current?.stop();
