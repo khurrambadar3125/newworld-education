@@ -118,6 +118,40 @@ export const CROSS_CURRICULUM_SUMMER = {
 };
 
 // ═══════════════════════════════════════════════════════════════════════════════
+// HEAD START SESSIONS — Preview next year's content before school starts
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const HEAD_START_SUMMER = {
+  name: 'Head Start — Arrive in September Already Ahead',
+  philosophy: 'Students who preview next year\'s content before school starts arrive with confidence, participate more actively in class, and perform better in first-term assessments. While classmates forget 30% of their maths over summer, Head Start students already know September\'s topics.',
+  sessions: {
+    british: [
+      { title: 'Grade 6 → Year 7 Head Start', duration: 30, gradeRange: 'Grade 6', covers: 'Algebra introduction (using letters for unknowns, simple expressions), Shakespeare overview (who he was, why he matters, first scene of A Midsummer Night\'s Dream), periodic table basics (elements, atoms, first 20 elements).' },
+      { title: 'Grade 7 → Year 8 Head Start', duration: 30, gradeRange: 'Grade 7', covers: 'Simultaneous equations (elimination and substitution methods), Romeo & Juliet themes (love, fate, family loyalty — before the text), chemical bonding (ionic, covalent, metallic — with models).' },
+      { title: 'Grade 8 → Year 9 Head Start', duration: 30, gradeRange: 'Grade 8', covers: 'IGCSE subject preview (what each subject involves, how to choose), essay writing technique (PEE paragraphs, introduction structure, conclusion), quadratic equations (factoring, formula, graphs).' },
+      { title: 'Grade 9 → Year 10 (IGCSE Start)', duration: 45, gradeRange: 'Grade 9', covers: 'First topic of each chosen IGCSE subject. Maths: number and algebra foundations. Physics: measurements and units. Chemistry: states of matter. Biology: cell structure. English: directed writing format.' },
+      { title: 'Grade 10 → Year 11 (A Level Thinking)', duration: 45, gradeRange: 'Grade 10', covers: 'A Level subject preview — what changes from IGCSE. University thinking: why A Level choices matter. First topics: Pure Maths 1 intro, AS Physics mechanics, AS Chemistry atomic structure.' },
+    ],
+    ib: [
+      { title: 'Grade 9 → DP1 Head Start', duration: 45, gradeRange: 'Grade 9-10', covers: 'IB Diploma structure explained (6 groups + core). TOK first questions: What is knowledge? How do we know what we know? Subject group overview — what each group demands. SL vs HL decision guidance.' },
+      { title: 'DP1 → DP2 Head Start', duration: 45, gradeRange: 'DP1', covers: 'Extended Essay planning — research question refinement, source gathering, timeline. TOK essay structure — how to approach prescribed titles. IA preparation per subject group — what examiners look for. Year 2 content preview per subject.' },
+    ],
+    american: [
+      { title: 'Grade 9 → 10 Head Start', duration: 30, gradeRange: 'Grade 9', covers: 'AP course selection guidance — which AP courses match your strengths. Pre-AP foundations: Algebra II preview, English composition skills, lab report writing for sciences.' },
+      { title: 'Grade 11 → 12 Head Start', duration: 45, gradeRange: 'Grade 11', covers: 'College application timeline — when to start, what\'s needed, early decision vs regular. SAT preparation begins — diagnostic test, identify weak areas, study plan. Common App essay brainstorming — finding your unique story.' },
+    ],
+    cbse: [
+      { title: 'Class 9 → 10 Head Start', duration: 45, gradeRange: 'Class 9', covers: 'Board exam awareness — what CBSE boards look like, marking patterns, time management. NCERT Chapter 1 of each subject: Real Numbers (Maths), Chemical Reactions (Science), Resources and Development (Geography), Nationalism in India (History).' },
+      { title: 'Class 11 → 12 Head Start', duration: 45, gradeRange: 'Class 11', covers: 'Stream consolidation — review Class 11 foundations before Class 12 builds on them. JEE/NEET Chapter 1: Mechanics review (JEE Physics), GOC (JEE Organic Chemistry), Relations and Functions (JEE Maths), Reproduction in Organisms (NEET Biology).' },
+    ],
+    moe: [
+      { title: 'Cycle 2 → Cycle 3 Head Start', duration: 45, gradeRange: 'Grade 8', covers: 'EmSAT awareness — what it is, why it matters, when to start preparing. Advanced vs General track — what each requires, what universities expect. Preview of Cycle 3 sciences (separate Physics, Chemistry, Biology for Advanced Track).' },
+      { title: 'Grade 11 → 12 Head Start', duration: 45, gradeRange: 'Grade 11', covers: 'EmSAT Subject 1 intensive — begin with your weakest EmSAT subject. English: reading strategies and grammar review. Maths: algebra foundations without calculator. Arabic: formal writing structure. Target: arrive in Grade 12 already scoring 800+ on practice EmSATs.' },
+    ],
+  },
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
 // UAE SUMMER TRACKS — Full definitions
 // ═══════════════════════════════════════════════════════════════════════════════
 
@@ -127,6 +161,7 @@ export const UAE_SUMMER_TRACKS = [
   { id: 'catchup', name: 'Catch Up & Close Gaps', audience: 'Students who struggled this year', duration: 'Self-paced', philosophy: 'No pressure. Patient. Confidence first.' },
   { id: 'sen', name: 'Students of Determination', audience: 'Inclusive summer — KHDA aligned', duration: 'Self-paced, no time pressure', philosophy: 'Same learning. Your way. Gentle Start Protocol every session.' },
   { id: 'university', name: 'University Ready', audience: 'Grade 12 graduates / university applicants', duration: '30 sessions', philosophy: 'Last chance to improve scores and prepare for first year.' },
+  { id: 'headstart', name: 'Head Start', audience: 'Any student — all curricula', duration: '54 days, 30 min/day', philosophy: 'While classmates forget 30% of their maths over summer, you\'ll already know September\'s topics.' },
 ];
 
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -239,7 +274,8 @@ export function getUAESummerPrompt(curriculum) {
 
   let prompt = `\nUAE SUMMER PROGRAMME — Summer is active (July 3 → August 26). 54 days. This student is in Dubai where temperatures exceed 45°C. Students stay indoors — prime learning time.\n`;
   prompt += `\nSTARKY UAE SUMMER IDENTITY: Dubai summer means 54 days indoors. Every other summer programme in Dubai costs AED 5,000 or more. Starky offers 10 free sessions to start — no credit card, no commitment. And Starky knows every curriculum your child follows.`;
-  prompt += `\n5 Summer Tracks: Bridge to Next Year, EmSAT Intensive, Catch Up, Students of Determination, University Ready.`;
+  prompt += `\n6 Summer Tracks: Bridge to Next Year, EmSAT Intensive, Catch Up, Students of Determination, University Ready, Head Start.`;
+  prompt += `\nHead Start: Preview next year's content BEFORE school starts. Students arrive in September already knowing what the teacher is about to teach. Available for all 5 curricula.`;
   prompt += `\nUAE Summer Passport: badges at 5/15/25/40 sessions (Dubai Scholar → KHDA Champion → University Ready → Dubai Summer Champion).`;
 
   // Curriculum-specific summer sessions

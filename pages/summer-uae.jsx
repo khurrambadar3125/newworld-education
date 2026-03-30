@@ -11,6 +11,7 @@ const TRACKS = [
   { id:'catchup', emoji:'📚', name:'Catch Up', who:'Students who struggled this year', what:'Summer is the best time to fix gaps. No pressure. Your pace. Starky has infinite patience.', color:'#FFC300', cta:'Start catching up →', href:'/#start-learning' },
   { id:'sen', emoji:'💙', name:'Students of Determination', who:'Inclusive summer — all abilities', what:'Fully accessible. Aligned with KHDA\'s inclusive summer programme. Same learning. Your way.', badge:'KHDA Aligned', color:'#C77DFF', cta:'Start learning →', href:'/special-needs' },
   { id:'university', emoji:'🏛️', name:'University Ready', who:'Grade 12 graduates', what:'Results coming in August. EmSAT improvement. Personal statement. University application preparation.', unis:'UAEU, AUS, Khalifa, Zayed, HCT, AUD, UOWD', color:'#FF6B6B', cta:'Prepare for university →', href:'/drill?subject=EmSAT%20English' },
+  { id:'headstart', emoji:'🏆', name:'Head Start', who:'Any student — all curricula', what:'Arrive in September already knowing what your teacher is about to teach. First in class to raise your hand.', stat:'Research shows summer learners arrive 3 months ahead in maths', flags:'🇬🇧 🎓 🇺🇸 🇮🇳 🇦🇪', color:'#4ADE80', cta:'Get your head start →', href:'/#start-learning' },
 ];
 
 const CURRICULA = [
@@ -170,6 +171,7 @@ export default function SummerUAEPage() {
                       {t.flags && <div style={{ fontSize:14, letterSpacing:4, marginBottom:4 }}>{t.flags}</div>}
                       {t.unis && <div style={{ fontSize:11, color:'rgba(255,255,255,0.3)', fontWeight:600 }}>{t.unis}</div>}
                       {t.badge && <span style={{ fontSize:11, fontWeight:800, background:'rgba(199,125,255,0.15)', border:'1px solid rgba(199,125,255,0.3)', borderRadius:100, padding:'3px 10px', color:'#C77DFF' }}>{t.badge}</span>}
+                      {t.stat && <div style={{ fontSize:11, color:'rgba(74,222,128,0.7)', fontWeight:600, fontStyle:'italic', marginTop:4 }}>{t.stat}</div>}
                     </div>
                   </div>
                   <div style={{ marginTop:12, textAlign:'right' }}>
