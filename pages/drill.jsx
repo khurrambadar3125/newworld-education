@@ -243,7 +243,14 @@ export default function DrillPage() {
     // Read URL query params for summer track context
     const q = router.query;
     if (q.subject && !subject) setSubject(decodeURIComponent(q.subject));
-    if (q.context) setUrlContext(q.context);
+    if (q.context) {
+      setUrlContext(q.context);
+      // Map context to default subject if no subject specified
+      if (!q.subject && !subject) {
+        const contextSubjects = { emsat: 'English Language', ib: 'Mathematics', university: 'English Language' };
+        if (contextSubjects[q.context]) setSubject(contextSubjects[q.context]);
+      }
+    }
   }, [router.query]);
 
   const subjects = mode === 'young' ? SUBJECTS_YOUNG : (level === 'O Level' ? SUBJECTS_OLEVEL : SUBJECTS_ALEVEL);
@@ -267,6 +274,7 @@ export default function DrillPage() {
 
     try {
       const body = { action:'generate', level, subject, topic:t, difficulty, questionType:type };
+      if (urlContext) body.context = urlContext;
       if (imageData) { body.imageBase64 = imageData.base64; body.imageType = imageData.type; }
       const res = await fetch('/api/drill', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body) });
       let data;
@@ -457,8 +465,14 @@ export default function DrillPage() {
         </nav>
 
         <div style={S.container}>
-          <h1 style={S.h1}>Drill Mode 📚</h1>
-          <p style={S.subtitle}>Practice questions powered by Starky. Choose your level to begin.</p>
+          <h1 style={S.h1}>{urlContext === 'emsat' ? 'EmSAT Drill 🇦🇪' : urlContext === 'ib' ? 'IB Drill 🎓' : 'Drill Mode 📚'}</h1>
+          <p style={S.subtitle}>{urlContext === 'emsat' ? 'EmSAT-targeted practice. University score targets: UAEU 1250+, AUS 1500+, Khalifa 1400+.' : urlContext === 'ib' ? 'IB Diploma practice — aligned with IB command terms and assessment criteria.' : 'Practice questions powered by Starky. Choose your level to begin.'}</p>
+          {urlContext && (
+            <div style={{background:'rgba(78,205,196,0.08)',border:'1px solid rgba(78,205,196,0.2)',borderRadius:12,padding:'10px 16px',marginBottom:16,display:'flex',alignItems:'center',gap:8}}>
+              <span style={{fontSize:13,fontWeight:700,color:'#4ECDC4'}}>☀️ UAE Summer Track: {urlContext === 'emsat' ? 'EmSAT Intensive' : urlContext === 'ib' ? 'IB Prep' : urlContext === 'university' ? 'University Ready' : urlContext}</span>
+              <a href="/summer-uae" style={{fontSize:11,color:'rgba(255,255,255,0.4)',textDecoration:'none',marginLeft:'auto'}}>View all tracks →</a>
+            </div>
+          )}
 
           {/* Quick Start — one tap, auto-detects everything */}
           {!mode && userProfile?.gradeId && (

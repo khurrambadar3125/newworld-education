@@ -38,7 +38,7 @@ function isYoungLearner(level) {
 }
 
 // ── Generate question prompt ─────────────────────────────────────────────────
-function buildGeneratePrompt({ level, subject, topic, difficulty, questionType, imageBase64, imageType }) {
+function buildGeneratePrompt({ level, subject, topic, difficulty, questionType, imageBase64, imageType, context }) {
   const young = isYoungLearner(level);
   const diffDesc = DIFFICULTY_MAP[difficulty] || DIFFICULTY_MAP.medium;
 
@@ -73,8 +73,13 @@ ${questionType === 'mcq'
     ? `Generate a MULTIPLE CHOICE question with exactly 4 options (A,B,C,D). Only one is correct. Distractors should be common misconceptions. IMPORTANT: Place the correct answer at position ${randomPos} — do NOT always put it at A.`
     : 'Generate a SHORT ANSWER question requiring 2-4 sentences.';
 
-  return `Generate a Cambridge ${level} ${subject} exam question on: "${topic}".
-Difficulty: ${diffDesc}
+  const contextInstr = context === 'emsat' ? `\nThis is an EmSAT-style question for UAE government school students. Use EmSAT format and difficulty level. Reference UAE curriculum standards. Include UAE-relevant examples where appropriate.`
+    : context === 'ib' ? `\nThis is an IB Diploma-style question. Use IB command terms (analyse, evaluate, discuss, to what extent). Reference IB assessment criteria and mark bands.`
+    : context === 'university' ? `\nThis is university entrance preparation. Focus on EmSAT-level questions targeting university admission scores (1100-1500 range).`
+    : '';
+
+  return `Generate a ${context === 'emsat' ? 'EmSAT' : context === 'ib' ? 'IB Diploma' : 'Cambridge ' + level} ${subject} exam question on: "${topic}".
+Difficulty: ${diffDesc}${contextInstr}
 ${typeInstr}
 
 Return this JSON:
@@ -194,6 +199,9 @@ export default async function handler(req, res) {
     if (action === 'generate') {
       prompt = buildGeneratePrompt(params);
       systemPrompt = isYoungLearner(params.level) ? SYSTEM_YOUNG : SYSTEM;
+      // Add context-specific system prompt for UAE tracks
+      if (params.context === 'emsat') systemPrompt += '\nYou are generating EmSAT-style questions for UAE Ministry of Education students. Questions must match EmSAT format, difficulty, and scoring. Use UAE context: AED currency, Dubai/Abu Dhabi examples, UAE government and society.';
+      else if (params.context === 'ib') systemPrompt += '\nYou are generating IB Diploma-style questions. Use IB command terms precisely. Questions must align with IB assessment objectives and criteria. Reference the IB mark band descriptors.';
       // Inject topic-specific misconceptions and examiner tips
       const topicKnowledge = getKnowledgeForTopic(params.topic || '', params.subject || '');
       if (topicKnowledge) systemPrompt += '\n' + topicKnowledge;

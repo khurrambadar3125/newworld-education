@@ -3029,6 +3029,19 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
     if (!txt || loading || limitReached) return;
     sndTick();
     setInput(""); recordCall();
+    // UAE Summer Passport — increment stamp for SEN track
+    try {
+      const uc = localStorage.getItem('user_country');
+      if (uc === 'UAE') {
+        const now = new Date();
+        if (now.getMonth() >= 6 && now.getMonth() <= 7) {
+          const pp = JSON.parse(localStorage.getItem('nw_summer_uae_passport') || '{}');
+          if (!pp.stamps) pp.stamps = [];
+          pp.stamps.push({ date: now.toISOString(), subject: 'SEN — Students of Determination' });
+          localStorage.setItem('nw_summer_uae_passport', JSON.stringify(pp));
+        }
+      }
+    } catch {}
     const newCount = chatMsgCount + 1;
     setChatMsgCount(newCount);
     if (newCount === 5) {
