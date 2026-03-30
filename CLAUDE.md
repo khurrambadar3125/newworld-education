@@ -325,18 +325,21 @@ npm run lint     # ESLint
 
 
 
+
+
 ## Session Snapshot (auto-updated)
 <!-- This section is auto-updated by .claude/update-claude-md.sh Stop hook -->
-<!-- Last sync: 2026-03-30 23:42 -->
+<!-- Last sync: 2026-03-31 00:18 -->
 
-**Platform counts**: 47 pages, 63 utils, 64 API routes, 8 components, 23 cron jobs
+**Platform counts**: 51 pages, 66 utils, 64 API routes, 8 components, 23 cron jobs
 
-**All pages**: _app,arts,arts-for-all,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,login,music,music-for-all,news,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,school,sing,special-needs,spelling-bee,spelling-uae,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,voice-lab,zayd-mode
+**All pages**: _app,arts,arts-for-all,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,login,mocks,music,music-for-all,news,our-results,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,responsible-ai,school,sing,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,voice-lab,zayd-mode
 
-**All utils**: academicExcellence,americanCurriculumKB,analytics,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeExaminer,cbseKnowledge,chineseContent,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,getKnowledgeForTopic,globalKnowledgeBase,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,kbWishlist,literatureArabicKB,motherTongue,notify,patternEngine,phonicsKB,platformLearningEngine,practiceKB,productGate,readingKnowledge,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,singingGoalsKB,singingKB,starkyIntents,starkyPrompt,summerKnowledge,supabase,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,youngLearnerKB
+**All utils**: academicExcellence,americanCurriculumKB,analytics,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,getKnowledgeForTopic,globalKnowledgeBase,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,kbWishlist,literatureArabicKB,motherTongue,notify,outcomeTrackingKB,patternEngine,phonicsKB,platformLearningEngine,practiceKB,productGate,readingKnowledge,responsibleAIPolicy,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,singingGoalsKB,singingKB,starkyIntents,starkyPrompt,summerKnowledge,supabase,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,youngLearnerKB
 
 **Last 10 commits**:
 ```
+b38a9a0 Mega build: pain points KB, nano-weakness detection, mocks, Starky Saturdays, responsible AI, outcome tracking, cross-platform section
 1d13868 UAE Arabic deep intelligence + mobile button responsiveness
 14d690d Wire hearing engine into anthropic.js — fires FIRST, frames all input
 61ae305 Hearing Engine KB — Starky's input-side listening intelligence
@@ -346,14 +349,25 @@ npm run lint     # ESLint
 e848681 Deliberate Practice Layer — master intelligence enhancing every KB
 6982441 KB Quality Scoring + KB Wishlist — measure and prioritise knowledge gaps
 1482c39 Homework Practice KB — assignments, voice evaluation, return protocol
-37e1b90 Practice KB — the complete science and philosophy of deliberate practice
 ```
 
 **Files changed in last commit**:
 ```
-components/StarkyBubble.jsx
-pages/_app.jsx
-utils/hearingEngineKB.js
+CLAUDE.md
+pages/api/anthropic.js
+pages/api/platform/log-session.js
+pages/index.jsx
+pages/mocks.jsx
+pages/our-results.jsx
+pages/responsible-ai.jsx
+pages/starky-saturdays.jsx
+pages/student-dashboard.jsx
+utils/cambridgeExaminer.js
+utils/cambridgePainPointsKB.js
+utils/outcomeTrackingKB.js
+utils/responsibleAIPolicy.js
+utils/useSessionLimit.js
+utils/weaknessDetector.js
 ```
 
 **Uncommitted changes**: CLAUDE.md
