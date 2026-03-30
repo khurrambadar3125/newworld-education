@@ -22,13 +22,13 @@ const CURRICULA = [
 ];
 
 const BADGES = [
-  { emoji:'🌅', name:'Early Riser', desc:'First session before 9am' },
-  { emoji:'🏙️', name:'Dubai Scholar', desc:'5 sessions complete' },
-  { emoji:'🌟', name:'KHDA Champion', desc:'15 sessions complete' },
-  { emoji:'🎓', name:'University Ready', desc:'25 sessions complete' },
-  { emoji:'🏆', name:'Dubai Summer Champion', desc:'40 sessions complete' },
-  { emoji:'🤝', name:'Community Spirit', desc:'Completed SoD inclusive track' },
-  { emoji:'🌍', name:'Global Learner', desc:'Studied in 2+ languages' },
+  { icon:'☀', name:'Early Riser', desc:'First session before 9am', color:'#FFC300' },
+  { icon:'★', name:'Dubai Scholar', desc:'5 sessions complete', color:'#4F8EF7' },
+  { icon:'✦', name:'KHDA Champion', desc:'15 sessions complete', color:'#4ECDC4' },
+  { icon:'▲', name:'University Ready', desc:'25 sessions complete', color:'#A78BFA' },
+  { icon:'◆', name:'Dubai Summer Champion', desc:'40 sessions complete', color:'#FF6B6B' },
+  { icon:'♥', name:'Community Spirit', desc:'Completed SoD inclusive track', color:'#C77DFF' },
+  { icon:'●', name:'Global Learner', desc:'Studied in 2+ languages', color:'#4ADE80' },
 ];
 
 export default function SummerUAEPage() {
@@ -73,12 +73,6 @@ export default function SummerUAEPage() {
       `}</style>
 
       <div style={{ minHeight:'100vh', background:'linear-gradient(180deg,#060B20 0%,#0A1628 40%,#060B20 100%)', fontFamily:f }}>
-
-        {/* ── NAV ── */}
-        <nav style={{ padding:'14px 20px', borderBottom:'1px solid rgba(255,255,255,0.06)', display:'flex', justifyContent:'space-between', alignItems:'center', position:'sticky', top:0, zIndex:100, background:'rgba(6,11,32,0.96)', backdropFilter:'blur(12px)' }}>
-          <a href="/" style={{ textDecoration:'none', color:'#fff', fontWeight:800, fontSize:15, fontFamily:f }}>NewWorldEdu<span style={{color:'#4F8EF7'}}>★</span></a>
-          <a href="/#start-learning" className="su-cta" style={{ background:'linear-gradient(135deg,#4F8EF7,#4ECDC4)', color:'#fff', padding:'8px 20px', borderRadius:100, fontSize:13, fontWeight:700, textDecoration:'none' }}>Start Free →</a>
-        </nav>
 
         {/* ════════════════════════════════════════════════════════════════════════ */}
         {/* SECTION 1 — HERO                                                       */}
@@ -218,10 +212,11 @@ export default function SummerUAEPage() {
 
             <div style={{ display:'flex', gap:10, overflowX:'auto', paddingBottom:8, WebkitOverflowScrolling:'touch', scrollSnapType:'x mandatory' }}>
               {BADGES.map(b=>{
-                const earned = totalStamps >= (b.emoji === '🏙️' ? 5 : b.emoji === '🌟' ? 15 : b.emoji === '🎓' ? 25 : b.emoji === '🏆' ? 40 : 999);
+                const thresholds = { 'Early Riser':1, 'Dubai Scholar':5, 'KHDA Champion':15, 'University Ready':25, 'Dubai Summer Champion':40 };
+                const earned = totalStamps >= (thresholds[b.name] || 999);
                 return (
                   <div key={b.name} className="su-badge" style={{ minWidth:120, flex:'0 0 120px', background: earned ? 'rgba(74,222,128,0.06)' : 'rgba(255,255,255,0.02)', border: earned ? '1.5px solid rgba(74,222,128,0.25)' : '1.5px solid rgba(255,255,255,0.05)', borderRadius:16, padding:'18px 10px', textAlign:'center', scrollSnapAlign:'start', transition:'all 0.2s' }}>
-                    <div style={{ fontSize:30, marginBottom:4, filter: earned ? 'none' : 'grayscale(1) opacity(0.3)' }}>{b.emoji}</div>
+                    <div style={{ fontSize:28, marginBottom:4, color: earned ? b.color : 'rgba(255,255,255,0.15)', fontWeight:900, lineHeight:1 }}>{b.icon}</div>
                     <div style={{ fontSize:12, fontWeight:800, color: earned ? '#4ADE80' : 'rgba(255,255,255,0.3)' }}>{b.name}</div>
                     <div style={{ fontSize:10, color:'rgba(255,255,255,0.25)', marginTop:2, lineHeight:1.3 }}>{b.desc}</div>
                   </div>
