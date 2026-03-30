@@ -328,18 +328,23 @@ npm run lint     # ESLint
 
 
 
+
+
+
 ## Session Snapshot (auto-updated)
 <!-- This section is auto-updated by .claude/update-claude-md.sh Stop hook -->
-<!-- Last sync: 2026-03-31 00:19 -->
+<!-- Last sync: 2026-03-31 01:00 -->
 
-**Platform counts**: 51 pages, 66 utils, 64 API routes, 8 components, 23 cron jobs
+**Platform counts**: 52 pages, 69 utils, 69 API routes, 8 components, 23 cron jobs
 
-**All pages**: _app,arts,arts-for-all,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,login,mocks,music,music-for-all,news,our-results,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,responsible-ai,school,sing,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,voice-lab,zayd-mode
+**All pages**: _app,arts,arts-for-all,atoms,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,login,mocks,music,music-for-all,news,our-results,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,responsible-ai,school,sing,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,voice-lab,zayd-mode
 
-**All utils**: academicExcellence,americanCurriculumKB,analytics,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,getKnowledgeForTopic,globalKnowledgeBase,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,kbWishlist,literatureArabicKB,motherTongue,notify,outcomeTrackingKB,patternEngine,phonicsKB,platformLearningEngine,practiceKB,productGate,readingKnowledge,responsibleAIPolicy,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,singingGoalsKB,singingKB,starkyIntents,starkyPrompt,summerKnowledge,supabase,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,youngLearnerKB
+**All utils**: academicExcellence,americanCurriculumKB,analytics,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,getKnowledgeForTopic,globalKnowledgeBase,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,kbWishlist,literatureArabicKB,motherTongue,notify,outcomeTrackingKB,patternEngine,phonicsKB,physicsAtomsOLevel,platformLearningEngine,practiceKB,productGate,readingKnowledge,responsibleAIPolicy,saturdayFreeLogic,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,singingGoalsKB,singingKB,starkyAtomsKB,starkyIntents,starkyPrompt,summerKnowledge,supabase,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,youngLearnerKB
 
 **Last 10 commits**:
 ```
+20ac88a Physics O Level expanded atoms — 216 atoms from agent (2,624 lines)
+5437115 Audit fixes + Starky Atoms system — knowledge map, mastery tracking, missing APIs
 d2d0542 CLAUDE.md session snapshot — 51 pages, 66 utils, 4 new pages, 3 new KBs
 b38a9a0 Mega build: pain points KB, nano-weakness detection, mocks, Starky Saturdays, responsible AI, outcome tracking, cross-platform section
 1d13868 UAE Arabic deep intelligence + mobile button responsiveness
@@ -348,14 +353,12 @@ b38a9a0 Mega build: pain points KB, nano-weakness detection, mocks, Starky Satur
 0ead781 Wire deliberatePracticeLayer + architectureEnhancements into anthropic.js
 9eb99bc Voice Lab — 10-feature voice learning hub, premium design
 3fd197e Architecture Enhancements — 10 cognitive intelligence layers
-e848681 Deliberate Practice Layer — master intelligence enhancing every KB
-6982441 KB Quality Scoring + KB Wishlist — measure and prioritise knowledge gaps
 ```
 
 **Files changed in last commit**:
 ```
-CLAUDE.md
+utils/physicsAtomsOLevel.js
 ```
 
-**Uncommitted changes**: none
+**Uncommitted changes**: CLAUDE.md
 **Untracked files**: none

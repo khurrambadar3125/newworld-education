@@ -1,6 +1,11 @@
 /**
- * /api/atoms/track-mastery — Track student mastery of individual knowledge atoms
- * Called after each Starky conversation when nano-weakness maps to an atom ID
+ * /api/atoms/track-mastery.js
+ * POST — Upsert atom mastery for a student.
+ *
+ * Receives: { studentId, atomId, masteryScore }
+ * Upserts to Supabase atom_mastery table:
+ *   { student_id, atom_id, mastery_score, times_seen, last_seen }
+ * UNIQUE constraint on (student_id, atom_id).
  */
 
 import { createClient } from '@supabase/supabase-js';
@@ -11,68 +16,42 @@ const supabase = createClient(
 );
 
 export default async function handler(req, res) {
-  if (req.method === 'GET') {
-    // Return student's mastery map
-    const { email, subject } = req.query;
-    if (!email) return res.status(400).json({ error: 'email required' });
+  if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
 
-    try {
-      let query = supabase
-        .from('atom_mastery')
-        .select('atom_id, score, attempts, last_seen, mastered')
-        .eq('student_id', email);
+  const { studentId, atomId, masteryScore } = req.body;
 
-      if (subject) query = query.eq('subject', subject.toLowerCase());
-
-      const { data } = await query;
-      return res.status(200).json({ mastery: data || [] });
-    } catch {
-      return res.status(200).json({ mastery: [] });
-    }
+  if (!studentId || !atomId) {
+    return res.status(400).json({ error: 'studentId and atomId required' });
   }
 
-  if (req.method !== 'POST') return res.status(405).json({ error: 'GET or POST only' });
-
-  const { student_id, atom_id, subject, score } = req.body;
-  if (!student_id || !atom_id) return res.status(400).json({ error: 'student_id and atom_id required' });
-
-  const masteryScore = typeof score === 'number' ? Math.min(10, Math.max(0, score)) : 5;
+  const score = typeof masteryScore === 'number' ? Math.min(10, Math.max(0, masteryScore)) : 0;
 
   try {
+    // Check if record exists
     const { data: existing } = await supabase
       .from('atom_mastery')
-      .select('id, score, attempts, scores_history')
-      .eq('student_id', student_id)
-      .eq('atom_id', atom_id)
+      .select('id, times_seen')
+      .eq('student_id', studentId)
+      .eq('atom_id', atomId)
       .limit(1);
 
     if (existing?.length) {
-      const history = existing[0].scores_history || [];
-      history.push(masteryScore);
-      if (history.length > 20) history.shift();
-      const avg = history.reduce((a, b) => a + b, 0) / history.length;
-      const mastered = history.slice(-3).length >= 3 && history.slice(-3).every(s => s >= 9);
-
+      // Update existing record
       await supabase
         .from('atom_mastery')
         .update({
-          score: Math.round(avg * 10) / 10,
-          attempts: (existing[0].attempts || 0) + 1,
-          scores_history: history,
-          mastered,
+          mastery_score: score,
+          times_seen: (existing[0].times_seen || 0) + 1,
           last_seen: new Date().toISOString(),
         })
         .eq('id', existing[0].id);
     } else {
+      // Insert new record
       await supabase.from('atom_mastery').insert({
-        student_id,
-        atom_id,
-        subject: subject || '',
-        score: masteryScore,
-        attempts: 1,
-        scores_history: [masteryScore],
-        mastered: masteryScore >= 9,
-        first_seen: new Date().toISOString(),
+        student_id: studentId,
+        atom_id: atomId,
+        mastery_score: score,
+        times_seen: 1,
         last_seen: new Date().toISOString(),
       });
     }
