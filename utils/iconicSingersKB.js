@@ -186,3 +186,143 @@ export function getIconsPrompt(studentRegion, artistMentioned) {
 
   return prompt;
 }
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// RAY CHARLES & STEVIE WONDER — DEEP STUDY
+// "The Science of Greatness from Adversity"
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const BLIND_MUSICIAN_SCIENCE = {
+  neuroscience: {
+    principle: 'When a child loses sight early, the visual cortex does not go dormant — it rewires to process sound, touch, and language instead. Blind musicians develop a genuinely enhanced auditory brain.',
+    evidence: [
+      '60% of blind musicians have perfect pitch vs 10% of sighted musicians',
+      'The visual cortex in blind individuals lights up during auditory tasks — they think about sound with more brain',
+      'Blind people can locate sound using only one ear — an ability sighted people do not have',
+      'Congenitally blind individuals show superiority in rhythm perception',
+      'Pitch discrimination is measurably sharper in blind subjects',
+    ],
+    universalLesson: 'This science is not about blindness. It is about how the brain responds to constraint. Limitation does not diminish greatness — it can shape it.',
+  },
+};
+
+export const CHARLES_WONDER_PROFILE = {
+  rayCharles: {
+    name: 'Ray Charles',
+    fullName: 'Ray Charles Robinson',
+    years: '1930-2004',
+    title: 'The Genius',
+    born: 'Albany, Georgia',
+    blindAt: 'Completely blind by age 7 (glaucoma)',
+    voiceType: 'Baritone with extraordinary expressiveness',
+    range: 'E2-A4',
+
+    story: 'Lost sight at 7 in poverty in rural Georgia. Father died at 10. Mother at 15. By 17 completely alone, blind, broke — and completely committed to music. He said: "I was born with music inside me. You\'d have to remove the music surgically."',
+
+    techniques: {
+      gospelBluesFusion: 'Charles heard gospel in churches and blues in juke joints. Everyone kept them separate. He merged them — creating soul music. Teaching: genre boundaries are invented. The greatest artists ignore them.',
+      pianoAsVoice: 'Because he couldn\'t see, he felt music through touch. Piano keys were extensions of his fingers. Voice and piano were interchangeable. Teaching: close your eyes while singing. Feel it in your chest, throat, skull, diaphragm.',
+      callAndResponse: '"What\'d I Say" is built on call-and-response. Not performance technique — communication. Teaching: singing is not broadcasting, it\'s a conversation.',
+      emotionalAutobiography: '"Georgia On My Mind" — his childhood pain and love. "Hit The Road Jack" — real rejection. Teaching: students don\'t need tragedy. But they must mean what they sing.',
+      bluesShouts: 'Short explosive vowel sounds with raw emotion',
+      spokenSungBoundary: 'He would speak mid-phrase then return to pitch — blurring the line between speaking and singing',
+    },
+
+    comeback: 'Heroin addict for 17 years. Arrested 1961. Quit cold turkey 1965. Then recorded some of his greatest work. Teaching: falling is not failure. Stopping and starting again is how Charles lived.',
+
+    whatToTellStudents: 'Ray Charles lost his sight, his father, and his mother before he was 16. He was broke, blind, and alone. He became one of the greatest musicians who ever lived not despite those things — but through them. Your challenges are not in the way of your music. They ARE your music.',
+
+    songs: ['Georgia On My Mind', 'Hit The Road Jack', 'What\'d I Say', 'I Got A Woman', 'Unchain My Heart'],
+  },
+
+  stevieWonder: {
+    name: 'Stevie Wonder',
+    fullName: 'Stevland Hardaway Morris',
+    years: 'born 1950',
+    title: 'The Wonder',
+    born: 'Saginaw, Michigan',
+    blindAt: 'From birth (retinopathy of prematurity)',
+    voiceType: 'Tenor with high falsetto control',
+    range: 'Bb2-B5 with remarkable falsetto extension',
+
+    story: 'Never saw the world once. Total blindness from birth — his visual cortex was available from infancy to be repurposed entirely for auditory processing. Scientists believe this is why his pitch perception was essentially superhuman. Piano and harmonica by 8. Writing songs by 9. Signed to Motown at 11. First number one hit at 13.',
+
+    techniques: {
+      perfectPitch: 'Absolute pitch — can identify and reproduce any musical note without a reference. More common in blind-from-birth individuals. Teaching: perfect pitch can\'t be taught in adulthood, but relative pitch absolutely can.',
+      multiInstrumentalism: 'Piano, harmonica, drums, bass, guitar, keyboards — all by touch and ear. He could understand a new instrument within hours. Teaching: singers who play an instrument understand music from the inside.',
+      harmonicaAsVoice: 'His harmonica is breath-based like singing — this trained his vocal phrasing uniquely. Teaching: breath is everything. Harmonica players, singers, wind players share the same foundation.',
+      groove: 'He felt rhythm in his body before he heard it. "Superstition", "Higher Ground" have rhythmic complexity most musicians can\'t play — but they feel effortless. Teaching: feel rhythm in your body before singing it. Clap. Stamp. Sway. Let the body lead.',
+      synthesiserRevolution: '1972-76: taught himself the Moog. Programmed and played everything on "Talking Book", "Innervisions", "Songs in the Key of Life" — four consecutive masterpieces. Teaching: technology amplifies what\'s already inside you.',
+      politicalVoice: '"Living For The City" — racism. "Happy Birthday" — made MLK Day a holiday. Teaching: the greatest singers use their voice to say something.',
+    },
+
+    whatToTellStudents: 'Stevie Wonder never saw a sunset. Never saw his mother\'s face. Never saw the piano keys he played better than anyone alive. He felt them. He heard them. He knew them so deeply that he didn\'t need to see them. Your challenges are not barriers to music. They are the very thing that makes your music yours.',
+
+    songs: ['Isn\'t She Lovely', 'Superstition', 'Higher Ground', 'You Are the Sunshine of My Life', 'I Just Called to Say I Love You', 'Sir Duke', 'Ribbon in the Sky'],
+  },
+
+  connection: 'Wonder was 11 when he first met Charles. He had recorded "Tribute To Uncle Ray" before knowing Charles was blind — he simply loved his music. When they met backstage, Wonder said it was "like meeting himself." Two people whose constraints had shaped their gift.',
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// THE BROADER GALAXY OF GREAT BLIND MUSICIANS
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const BLIND_MUSICIANS_GALLERY = [
+  { name: 'Andrea Bocelli', years: '1958-', story: 'Went blind at 12 from football accident. Studied law first. Career began in his 30s.', lesson: 'It is never too late.', songs: ['Con Te Partirò', 'Time to Say Goodbye', 'Nessun Dorma'] },
+  { name: 'Jose Feliciano', years: '1945-', story: 'Blind from birth. Puerto Rican. His "Light My Fire" outsold The Doors\' original.', lesson: 'Cultural identity plus technical mastery is unstoppable.' },
+  { name: 'Blind Willie Johnson', years: '1897-1945', story: 'Gospel blues pioneer. Influenced Robert Johnson, Clapton, Led Zeppelin, Jack White.', lesson: 'The oldest music is often the deepest.' },
+  { name: 'Doc Watson', years: '1923-2012', story: 'Blind from infancy. Invented flatpicking guitar style.', lesson: 'Limitation forces innovation.' },
+  { name: 'Blind Willie McTell', years: '1898-1959', story: 'Absolute pitch. Could play any instrument by ear. The blues tradition runs through him to Charles to Wonder.', lesson: 'Heritage connects us all.' },
+  { name: 'Evelyn Glennie', years: '1965-', story: 'Not blind — DEAF since age 12. World\'s greatest solo percussionist. Feels music through vibration in feet, legs, hands. TED Talk: "How to Truly Listen" (1M+ views).', lesson: 'Deafness is not the absence of music. It is a different way of experiencing it.', note: 'DEAF — critical for Starky\'s deaf students as inspiration.' },
+];
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// HOW GREATNESS IS MADE — the philosophy
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const HOW_GREATNESS_IS_MADE = {
+  principles: [
+    { title: 'They went inward because they could not go outward', explanation: 'Without sight, the inner world becomes primary. Music is the language of the inner world. They felt the audience instead of seeing them. They memorised everything instead of reading it. Every constraint forced them deeper into the music itself.' },
+    { title: 'They had no choice but to listen', explanation: 'Sighted people look. Blind musicians listen — to emotional content, to space between notes, to what silence sounds like vs applause. Teaching: close your eyes when you sing. Listen to yourself as if hearing someone else.' },
+    { title: 'Their mothers believed in them first', explanation: 'Charles\' mother Aretha told him: "You\'re blind, not stupid. You can do anything." Wonder\'s mother Lula bought him instruments before anyone told her to. Teaching for parents: your belief in your child\'s potential is the most powerful teaching tool. Not Starky. Not any AI. You.' },
+    { title: 'They were never victims', explanation: 'Charles: "I never felt sorry for myself because blindness wasn\'t the worst thing." Wonder: "Just because a man lacks the use of his eyes doesn\'t mean he lacks vision." Teaching for SEN students: your condition is not your ceiling. It is the specific shape of your particular genius.' },
+    { title: 'They practiced more than anyone', explanation: 'Wonder practiced 12 hours a day as a teenager. Charles never stopped learning new music at 70. Teaching: talent without work produces nothing. Work without talent produces competence. Talent with work produces the wonder of Ray Charles.' },
+  ],
+
+  forVisionImpaired: 'Ray Charles and Stevie Wonder are the greatest evidence that your ears can build a musical world more vivid than most sighted people ever imagine. Your auditory brain is already exceptional. We are going to make it extraordinary.',
+  forDeaf: 'Evelyn Glennie is the world\'s greatest solo percussionist. She is completely deaf. She feels music through vibration. What is your equivalent? How does music live in your body? Let\'s find it.',
+  forAutistic: 'Many autistic people have absolute or near-perfect pitch. The same neurological difference that creates social difficulty also creates heightened auditory sensitivity. Your brain hears things others miss. That is a musical gift.',
+  forADHD: 'Wonder\'s groove, his rhythm, his physical relationship with music — ADHD brains respond to rhythm in extraordinary ways. Feel the beat in your body first. Everything else comes from there.',
+  forDownSyndrome: 'Charles\' emotional directness — his willingness to feel and express without filter — is often natural for DS students. You already have the most important thing: you mean it. Now let\'s build the technique around that.',
+  forEveryStudent: 'Ray Charles was blind, broke, and an orphan at 15. He became the genius of soul music. Your barrier is smaller than his was. Your music is already there. Let us help you find it.',
+
+  coreTruth: 'Greatness is not born fully formed. It is built from: a constraint that forces depth, a mother who believed first, a relentless commitment to listening, a refusal to define oneself by limitation, daily practice when no one is watching, and the courage to feel things fully and express them honestly.',
+};
+
+/**
+ * Get SEN-specific music inspiration based on condition
+ */
+export function getSENMusicInspiration(condition) {
+  const map = {
+    visual_impairment: HOW_GREATNESS_IS_MADE.forVisionImpaired,
+    deaf: HOW_GREATNESS_IS_MADE.forDeaf,
+    hearing_impairment: HOW_GREATNESS_IS_MADE.forDeaf,
+    autism: HOW_GREATNESS_IS_MADE.forAutistic,
+    adhd: HOW_GREATNESS_IS_MADE.forADHD,
+    down_syndrome: HOW_GREATNESS_IS_MADE.forDownSyndrome,
+  };
+  return map[condition] || HOW_GREATNESS_IS_MADE.forEveryStudent;
+}
+
+/**
+ * Get the blind musician lesson for Starky's system prompt
+ */
+export function getBlindMusicianLesson() {
+  let prompt = `\nHOW GREATNESS IS MADE — from Ray Charles and Stevie Wonder:\n`;
+  prompt += `\nNeuroscience: ${BLIND_MUSICIAN_SCIENCE.neuroscience.principle}`;
+  prompt += `\n${HOW_GREATNESS_IS_MADE.principles.map(p => `${p.title}: ${p.explanation.split('.')[0]}.`).join(' ')}`;
+  prompt += `\n${HOW_GREATNESS_IS_MADE.coreTruth}`;
+  prompt += `\nFor every student who says "I can't": ${HOW_GREATNESS_IS_MADE.forEveryStudent}`;
+  return prompt;
+}
