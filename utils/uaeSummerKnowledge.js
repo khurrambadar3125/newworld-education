@@ -274,8 +274,9 @@ export function getUAESummerPrompt(curriculum) {
 
   let prompt = `\nUAE SUMMER PROGRAMME — Summer is active (July 3 → August 26). 54 days. This student is in Dubai where temperatures exceed 45°C. Students stay indoors — prime learning time.\n`;
   prompt += `\nSTARKY UAE SUMMER IDENTITY: Dubai summer means 54 days indoors. Every other summer programme in Dubai costs AED 5,000 or more. Starky offers 10 free sessions to start — no credit card, no commitment. And Starky knows every curriculum your child follows.`;
-  prompt += `\n6 Summer Tracks: Bridge to Next Year, EmSAT Intensive, Catch Up, Students of Determination, University Ready, Head Start.`;
+  prompt += `\n7 Summer Tracks: Bridge to Next Year, EmSAT Intensive, Catch Up, Students of Determination, University Ready, Head Start, Summer Reading.`;
   prompt += `\nHead Start: Preview next year's content BEFORE school starts. Students arrive in September already knowing what the teacher is about to teach. Available for all 5 curricula.`;
+  prompt += `\nSummer Reading: IGCSE set texts at examiner level, IB World Literature, and age-appropriate books for all grades. Starky discusses every chapter, teaches literary analysis, and prepares students for English essays. Summer readers gain 1.9 months of literacy progress.`;
   prompt += `\nUAE Summer Passport: badges at 5/15/25/40 sessions (Dubai Scholar → KHDA Champion → University Ready → Dubai Summer Champion).`;
 
   // Curriculum-specific summer sessions

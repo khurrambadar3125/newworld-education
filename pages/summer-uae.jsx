@@ -12,6 +12,7 @@ const TRACKS = [
   { id:'sen', emoji:'💙', name:'Students of Determination', who:'Inclusive summer — all abilities', what:'Fully accessible. Aligned with KHDA\'s inclusive summer programme. Same learning. Your way.', badge:'KHDA Aligned', color:'#C77DFF', cta:'Start learning →', href:'/special-needs' },
   { id:'university', emoji:'🏛️', name:'University Ready', who:'Grade 12 graduates', what:'Results coming in August. EmSAT improvement. Personal statement. University application preparation.', unis:'UAEU, AUS, Khalifa, Zayed, HCT, AUD, UOWD', color:'#FF6B6B', cta:'Prepare for university →', href:'/drill?subject=EmSAT%20English' },
   { id:'headstart', emoji:'🏆', name:'Head Start', who:'Any student — all curricula', what:'Arrive in September already knowing what your teacher is about to teach. First in class to raise your hand.', stat:'Research shows summer learners arrive 3 months ahead in maths', flags:'🇬🇧 🎓 🇺🇸 🇮🇳 🇦🇪', color:'#4ADE80', cta:'Get your head start →', href:'/#start-learning' },
+  { id:'reading', emoji:'📖', name:'Summer Reading', who:'All ages — all curricula', what:'Read your IGCSE set texts, IB World Literature, or any book you love. Starky discusses every chapter, builds your analysis skills, and prepares you for English essays before September.', stat:'Summer readers arrive 1.9 months ahead in literacy', flags:'🇬🇧 🎓 🇺🇸 🇮🇳 🇦🇪', color:'#FF8E53', cta:'Start reading with Starky →', href:'/reading' },
 ];
 
 const CURRICULA = [
