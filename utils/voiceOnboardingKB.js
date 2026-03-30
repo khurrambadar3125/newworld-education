@@ -27,6 +27,95 @@ export const ENTRY_GREETINGS = {
 };
 
 // ═══════════════════════════════════════════════════════════════════════════════
+// ACCESSIBLE ONBOARDING — every SEN condition gets their own path
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const ACCESSIBLE_ONBOARDING = {
+  deaf: {
+    trigger: 'Student selects deaf condition OR mic not used for 10 seconds',
+    mode: 'text_only',
+    greeting: "Hi! I'm Starky — your tutor.\nI'll ask you 4 quick questions so I can teach you your way.\nType your answers below 👇\nWhat's your name?",
+    questions: ['What\'s your name?', 'How old are you?', 'What grade are you in?', 'What subject do you want to learn?'],
+    rules: ['No mic prompt ever', 'No "press the mic button"', 'All questions as text on screen', 'Student types or taps answers', 'Screen reader compatible'],
+  },
+
+  autismSelectiveMutism: {
+    trigger: 'Mic not used after 15 seconds OR autism condition detected',
+    mode: 'choice',
+    fallbackMessage: "You can type instead — just as good 👍",
+    rules: ['Never repeat mic prompt more than once', 'Accept typed answers with identical warmth', 'If student types single words, that is perfect', 'Never pressure speech'],
+  },
+
+  downSyndromeCognitive: {
+    trigger: 'Student opens platform themselves (not via parent) with cognitive needs',
+    mode: 'ultra_simple',
+    greeting: "Hi! I'm Starky! ⭐\nWhat is your name?",
+    questions: [
+      { text: 'What is your name?', accept: 'single word', celebrate: '{name}! Lovely name! ⭐' },
+      { text: 'How old are you?', accept: 'single number', celebrate: '{age}! That\'s great! 🌟' },
+      { text: 'What do you like? Maths? English? Drawing?', accept: 'single word', celebrate: 'You like {subject}! Me too! 🎉' },
+    ],
+    rules: ['One question at a time', 'Large text, simple words', 'Emojis alongside text', 'Accept very short answers without full sentences', 'Celebrate each answer', 'Never use complex language'],
+  },
+
+  anxietySchoolRefusal: {
+    trigger: 'Anxiety condition detected OR student hesitates > 20 seconds',
+    mode: 'safe_first',
+    greeting: "Hi. You don't have to do anything you don't want to.\nI'm Starky. I'm very patient.\nWhenever you're ready, just tell me your name.\nOr don't — we can just start learning. Whatever feels right. 🌟",
+    rules: ['First message is NOT a question — it is a statement of safety', 'Never pressure for information', 'Accept silence as a valid response', 'Offer to skip onboarding entirely', 'Move to learning whenever student is ready'],
+  },
+
+  cerebralPalsyMotor: {
+    trigger: 'Cerebral palsy detected OR motor difficulty indicated',
+    mode: 'voice_preferred',
+    rules: ['Mic is preferred — easier than typing', 'Accept single-word typed answers', 'Extended time — never time out', 'Never interpret long response time as disengagement', 'If typing appears slow, offer: "Take your time — or press the mic if that\'s easier"'],
+  },
+
+  visualImpairment: {
+    trigger: 'Visual impairment detected',
+    mode: 'screen_reader',
+    rules: ['All onboarding text compatible with screen readers', 'No image-only instructions', 'Clear, simple language', 'Semantic HTML structure', 'ARIA labels on all interactive elements', 'High contrast by default'],
+  },
+
+  universalFallback: {
+    trigger: 'ANY onboarding question gets no response after 20 seconds',
+    message: "That's okay — we can start learning straight away. I'll figure out the rest as we go. What would you like to learn today?",
+    rules: ['Never leave a student stuck', 'Never show an error', 'Always offer a way forward', 'Skip onboarding entirely if needed', 'Learn about the student from their first few interactions instead'],
+  },
+};
+
+/**
+ * Get the right onboarding mode based on context
+ */
+export function getOnboardingMode(conditions, micUsed, secondsElapsed) {
+  // Deaf → always text
+  if (conditions.some(c => c.condition === 'deaf')) return 'text_only';
+  if (!micUsed && secondsElapsed >= 10) return 'text_only';
+
+  // Autism/selective mutism → offer choice
+  if (conditions.some(c => c.condition === 'autism' || c.condition === 'non_verbal')) return 'choice';
+  if (!micUsed && secondsElapsed >= 15) return 'choice';
+
+  // Down syndrome / cognitive → ultra simple
+  if (conditions.some(c => c.condition === 'down_syndrome' || c.condition === 'general_learning')) return 'ultra_simple';
+
+  // Anxiety → safe first
+  if (conditions.some(c => c.condition === 'anxiety')) return 'safe_first';
+
+  // CP → voice preferred
+  if (conditions.some(c => c.condition === 'cerebral_palsy')) return 'voice_preferred';
+
+  // Visual impairment → screen reader
+  if (conditions.some(c => c.condition === 'visual_impairment')) return 'screen_reader';
+
+  // Universal fallback after 20 seconds of nothing
+  if (!micUsed && secondsElapsed >= 20) return 'fallback';
+
+  // Default: standard voice onboarding
+  return 'voice';
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
 // CONDITION EXTRACTION — natural language → SEN mapping
 // ═══════════════════════════════════════════════════════════════════════════════
 
