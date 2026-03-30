@@ -1,0 +1,314 @@
+/**
+ * utils/singingKB.js
+ * Starky's Complete Singing Knowledge Base
+ *
+ * Every child wants to sing. Most are afraid to try.
+ * Starky removes that fear completely.
+ * No judgement. No comparison. No failure.
+ *
+ * PROTECTED: This file is an addition. Nothing existing is affected.
+ */
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// WHY SINGING MATTERS — evidence-based
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const SINGING_BENEFITS = {
+  academic: [
+    'Singing strengthens phonological awareness — directly improves reading',
+    'Breath control from singing improves stamina and focus',
+    'Learning lyrics strengthens memory and vocabulary',
+    'Rhythm training improves mathematical understanding of patterns',
+    'Performing builds public speaking confidence',
+  ],
+  sen: {
+    autism: 'Music engages neural pathways that social language doesn\'t. Rhythm provides the predictability autistic students crave. Singing together is social interaction without social pressure. Non-verbal autistic children often sing before they speak. Music therapy improves social communication in 71% of autistic children.',
+    downSyndrome: 'Singing exercises oral motor muscles — directly improves speech clarity. Rhythm helps with word sequencing and sentence formation. Deep breathing from singing strengthens respiratory muscles. Music makes speech therapy feel like play.',
+    adhd: 'Rhythmic singing provides the predictable structure ADHD brains need. Active music-making builds attentional skills. Call-and-response keeps engagement high. Singing releases dopamine — the neurotransmitter ADHD brains lack.',
+    deaf: 'Rhythm and vibration are felt, not just heard. Hand signs + song = powerful language reinforcement. Bone conduction allows deaf students to feel music. Singing improves lipreading by matching mouth shapes to sounds.',
+    cerebralPalsy: 'Controlled breathing from singing improves breath support for speech. Singing at own pace removes pressure of conversation timing.',
+    selectiveMutism: 'Many selectively mute children will sing when they won\'t speak. Singing is a "safer" form of voice use — less social pressure. Success in singing builds confidence to use voice in other contexts.',
+  },
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// SINGING CURRICULUM — 4 levels by age
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const SINGING_CURRICULUM = {
+  level1: {
+    name: 'Little Voices',
+    ageRange: '4-8',
+    weeks: [
+      { week: 1, focus: 'Finding your singing voice — different from speaking voice', songs: ['Twinkle Twinkle', 'Row Your Boat', 'Head Shoulders Knees and Toes'] },
+      { week: 2, focus: 'Singing high and low — siren sounds, animal noises', songs: ['Old MacDonald', 'Incy Wincy Spider'] },
+      { week: 3, focus: 'Breathing like a singer — balloon breath, candle breath', songs: ['Wheels on the Bus', 'If You\'re Happy and You Know It'] },
+      { week: 4, focus: 'Singing with expression — happy, sad, silly voices', songs: ['Baa Baa Black Sheep', 'London Bridge'] },
+    ],
+    approach: 'Starky teaches through play, never through correction. Every attempt is celebrated.',
+  },
+  level2: {
+    name: 'Growing Voices',
+    ageRange: '8-12',
+    weeks: [
+      { week: 1, focus: 'Posture and breath — the singer\'s body', exercises: ['Stand tall', 'Shoulder rolls', 'Deep belly breaths'] },
+      { week: 2, focus: 'Warm-ups: lip trills, humming, scales', exercises: ['Lip trill slides', 'Hum on mah-may-mee-moh-moo', 'Simple 5-note scales'] },
+      { week: 3, focus: 'Pitch accuracy — matching notes', exercises: ['Echo singing', 'Pitch matching games', 'Simple intervals'] },
+      { week: 4, focus: 'Your first song — complete performance', songs: ['Age-appropriate pop', 'Nasheeds', 'Simple Bollywood'] },
+    ],
+    approach: 'Build foundation skills. Introduce musical vocabulary gently. One song fully learned.',
+  },
+  level3: {
+    name: 'Finding Your Voice',
+    ageRange: '12-16',
+    weeks: [
+      { week: 1, focus: 'Voice type discovery — soprano, alto, tenor, baritone' },
+      { week: 2, focus: 'Chest voice vs head voice vs mix — what each feels like' },
+      { week: 3, focus: 'Vibrato — what it is, how it develops naturally (never forced)' },
+      { week: 4, focus: 'Song interpretation — meaning and emotion in performance' },
+      { week: 5, focus: 'Vocal health — protecting your instrument, hydration, rest' },
+      { week: 6, focus: 'Performance — recording, reviewing, self-evaluation' },
+    ],
+    approach: 'Self-discovery. The voice is changing — honour that. For teenage boys: voice breaks are normal, never mocked.',
+  },
+  level4: {
+    name: 'Superstar Track',
+    ageRange: '14+',
+    modules: [
+      'Advanced breath support and resonance',
+      'Register transitions — chest to head seamlessly',
+      'Genre-specific technique: classical, pop, qawwali, nasheed, Bollywood, Arabic maqam',
+      'Performance skills: stage presence, mic technique, recording',
+      'Audition preparation: GCSE Music, IB Music, conservatory',
+    ],
+    approach: 'Professional-level training. Genre specialisation. Audition readiness.',
+  },
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// GENRE KNOWLEDGE
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const GENRE_KNOWLEDGE = {
+  bollywood: {
+    name: 'Bollywood / Hindi Film Music',
+    songs: [
+      { title: 'Lag Ja Gale', artist: 'Lata Mangeshkar', teaches: 'legato, breath control, sustained phrasing' },
+      { title: 'Tum Hi Ho', artist: 'Arijit Singh', teaches: 'emotional phrasing, contemporary technique, dynamic range' },
+      { title: 'Kal Ho Na Ho', artist: 'Sonu Nigam', teaches: 'breath control, wide range, expression' },
+      { title: 'Abhi Na Jao', artist: 'Asha Bhosle', teaches: 'ornaments (gamak), expression, conversational singing' },
+    ],
+    technique: 'Indian classical base, ornaments (gamak, meend), nasal resonance quality, raga awareness. The voice should sound like it is speaking through melody.',
+  },
+  qawwali: {
+    name: 'Qawwali (Sufi devotional)',
+    songs: [
+      { title: 'Dam Mast Qalandar', artist: 'Nusrat Fateh Ali Khan', teaches: 'chest voice power, spiritual expression, build and release' },
+      { title: 'Allah Hoo', artist: 'Nusrat Fateh Ali Khan', teaches: 'breath projection, repetition as trance, group dynamics' },
+    ],
+    technique: 'Powerful chest voice, call-and-response, repetitive build, spiritual connection to text. The voice is an instrument of devotion.',
+  },
+  nasheed: {
+    name: 'Nasheeds (Islamic devotional)',
+    songs: [
+      { title: 'Tala al Badru Alayna', artist: 'Traditional', teaches: 'simple melody, group singing, historical significance (Prophet\'s arrival in Madinah)' },
+      { title: 'Mawlaya', artist: 'Maher Zain', teaches: 'accessible contemporary nasheed, modern production, clear diction' },
+    ],
+    technique: 'Clear Arabic pronunciation, spiritual intention (niyyah), simple melodies with feeling. Many nasheeds are a cappella — voice alone carries everything.',
+  },
+  arabicMaqam: {
+    name: 'Arabic Maqam Music',
+    maqamat: [
+      { name: 'Maqam Rast', desc: 'Like major scale but with slightly flat third. The "mother maqam". Bright, joyful.' },
+      { name: 'Maqam Bayati', desc: 'Most common Arabic maqam. Emotional, versatile. Quarter-tone on second degree.' },
+      { name: 'Maqam Hijaz', desc: 'Distinctive "Middle Eastern" sound. Augmented second interval. Dramatic, passionate.' },
+    ],
+    technique: 'Quarter tones (between Western semitones) — Starky NEVER marks these as "out of tune". Ornaments: morshed, layali. Arabic vocal tradition values emotion and ornamentation over pure pitch perfection.',
+  },
+  westernPop: {
+    name: 'Western Pop / Contemporary',
+    techniques: [
+      { style: 'Breathy intimacy', artist: 'Billie Eilish', desc: 'Soft, close-mic technique. Emotion through restraint.' },
+      { style: 'Chest voice power', artist: 'Adele', desc: 'Full chest voice, strong mix, emotional delivery.' },
+      { style: 'Falsetto and mix', artist: 'Coldplay / Harry Styles', desc: 'Floating high notes, gentle transitions.' },
+    ],
+    technique: 'Mixed voice is the foundation of modern pop. Breath support + emotional connection. Less about perfection, more about authenticity.',
+  },
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// SEN SINGING ADAPTATIONS
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const SEN_SINGING_ADAPTATIONS = {
+  autism: {
+    approach: 'Structured, predictable, no surprises. Same warm-up every time.',
+    startWith: ['Old MacDonald (predictable pattern, animal sounds)', 'Wheels on the Bus (actions match words)', 'Songs with clear repetitive structure'],
+    starkyStyle: 'We always start with the same warm-up song. That\'s our signal that singing time has begun.',
+    never: 'Unexpected changes, open-ended "sing whatever you want"',
+    always: 'Same structure, same opening, celebrate every attempt',
+  },
+  downSyndrome: {
+    approach: 'Songs that target specific sounds. Coordinate with speech therapy targets.',
+    startWith: ['Songs with many target sounds', 'Slow tempo, clear diction', 'Hand gestures matching lyrics'],
+    starkyStyle: 'Let\'s sing it together — you copy what I say. When we sing this word, our mouth makes this shape...',
+  },
+  adhd: {
+    approach: 'Call and response, short bursts, high energy, beat-based.',
+    startWith: ['Clap the beat first, then add words', 'Call-and-response songs', 'Songs with physical movement: stamp, clap, sway'],
+    starkyStyle: 'Switch songs every 3-4 minutes — variety sustains engagement.',
+  },
+  deaf: {
+    approach: 'Rhythm is the foundation, not pitch. Feel the beat through vibration.',
+    startWith: ['Hands on speaker/table to feel vibration', 'Hand signs for lyrics (BSL/ASL song)', 'Humming felt in skull and chest (bone conduction)'],
+    starkyStyle: 'Celebrate rhythm accuracy before pitch accuracy. Evelyn Glennie is deaf and the world\'s greatest percussionist — inspire with her story.',
+  },
+  anxiety: {
+    approach: 'Singing alone with Starky before any performance. Start with humming.',
+    progression: ['Humming — no words, just sound', 'Vocalize on neutral syllables: "mah", "la", "mmm"', 'Single words in song', 'Full phrases', 'Complete song'],
+    starkyStyle: 'Your voice belongs to you. We only use it when you\'re ready. Never rush. Never record without permission. Never share.',
+  },
+  cerebralPalsy: {
+    approach: 'Adapted to whatever vocal production is possible.',
+    startWith: ['Short phrases with long rests for breath recovery', 'Any sustained vocalization is celebrated', 'Focus on expression and intention over accuracy'],
+  },
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// SINGING LESSON STRUCTURE
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const LESSON_STRUCTURE = {
+  welcome: { duration: '30 seconds', script: 'Welcome to your singing session, {name}! Today we\'re going to {goal}. Ready? Let\'s start with your warm-up.' },
+  warmUp: {
+    duration: '3-5 minutes',
+    exercises: [
+      'Lip trills: "Let\'s warm up those lips — brrrrr on a comfortable note."',
+      'Humming: "Hum gently — feel it vibrate in your lips and nose."',
+      'Sirens: "Slide from low to high like a siren — no strain, just glide."',
+      'Vowels: "mah-may-mee-moh-moo on a comfortable pitch."',
+    ],
+  },
+  techniqueFocus: { duration: '5 minutes', rule: 'One skill per session. Only one. Exercise → practice → Starky feedback → try again.' },
+  songWork: { duration: '10 minutes', method: 'Line by line. Never the whole song at once. Listen → model → student sings → positive feedback → refine one thing.' },
+  celebration: { duration: '1 minute', rule: 'Always end on a success. Record a 30-second clip if student agrees. Compare to last session → evidence of growth.' },
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// UAE SUMMER SINGING TRACK
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const UAE_SINGING_SUMMER_TRACK = {
+  name: 'Summer Singing Programme',
+  dates: 'July 3 → August 26, 2026',
+  duration: '54 days, one session per day',
+  weeks: [
+    { weeks: '1-2', focus: 'Finding Your Voice', content: 'Voice type discovery, basic warm-up routine, first song selected by student' },
+    { weeks: '3-4', focus: 'Building the Foundation', content: 'Breath control exercises, pitch accuracy work, learning one verse of chosen song' },
+    { weeks: '5-6', focus: 'Growing Confidence', content: 'Complete song performance, record and review, start second song' },
+    { weeks: '7-8', focus: 'Summer Performance', content: 'Polish chosen songs, self-evaluation (compare Week 1 to Week 8), earn Summer Singing Champion badge' },
+  ],
+  badges: [
+    { emoji: '🎤', name: 'First Note', desc: 'First singing session complete' },
+    { emoji: '🎵', name: 'Warm-Up Warrior', desc: '5 sessions of warm-up' },
+    { emoji: '🌟', name: 'Pitch Perfect', desc: 'First pitch accuracy milestone' },
+    { emoji: '🎼', name: 'Song Complete', desc: 'First full song performed' },
+    { emoji: '🏆', name: 'Summer Singer', desc: '20 sessions complete' },
+    { emoji: '🌍', name: 'World Singer', desc: 'Sang in 2+ languages' },
+  ],
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// STARKY'S CORE SINGING PHILOSOPHY
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const SINGING_PHILOSOPHY = `Every voice is beautiful. Every voice can improve. The goal is not to sound like Atif Aslam or Umm Kulthum. The goal is to sound more like the best version of yourself.`;
+
+export const SINGING_WELLBEING = {
+  emotional: 'Singing releases oxytocin (bonding) and reduces cortisol (stress). For anxious students: gentle singing calms. For excited students: channel energy into a big song. For sad students: never force — "Would you like to sing, or just talk today?"',
+  identity: 'A Pakistani student who can sing qawwali has a superpower. A UAE student who can perform a nasheed with proper Arabic pronunciation has cultural pride. A British curriculum student who can sing for GCSE Music has an academic advantage. An autistic student who sings has found a voice that works differently.',
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// SELF-ASSESSMENT DIAGNOSTIC
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const SINGING_DIAGNOSTIC = {
+  questions: [
+    'When someone plays a note on a piano or keyboard — can you match it with your voice?',
+    'Do you run out of breath in the middle of a phrase when singing?',
+    'Does your voice crack or break when you go higher?',
+    'Has anyone ever told you, unprompted, that you have a nice voice?',
+    'When you speak — would you say your voice is deep, medium, or high?',
+    'Have you ever had any singing training before?',
+  ],
+  interpretation: {
+    pitchMatching: 'Can match → good ear. Cannot → ear training needed first.',
+    breathControl: 'Runs out → breath support exercises before anything else.',
+    registerBreaks: 'Cracks on high notes → work on smooth register transitions.',
+    naturalTalent: 'Compliments received → confidence boost. None → build from scratch, no problem.',
+    voiceType: 'Deep → likely baritone/contralto. Medium → likely tenor/mezzo. High → likely soprano/treble.',
+    experience: 'Trained → build on foundation. Untrained → start from basics, no assumptions.',
+  },
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// EXPORTS
+// ═══════════════════════════════════════════════════════════════════════════════
+
+/**
+ * Check if message is about singing
+ */
+export function isSingingTopic(message) {
+  if (!message) return false;
+  const lower = message.toLowerCase();
+  const triggers = [
+    'sing', 'singing', 'song', 'voice training', 'vocal', 'pitch',
+    'learn to sing', 'teach me to sing', 'music lesson', 'warm up voice',
+    'nasheed', 'qawwali', 'bollywood song', 'maqam',
+    'my voice', 'voice type', 'soprano', 'alto', 'tenor', 'baritone',
+    'breath control singing', 'vibrato', 'head voice', 'chest voice',
+    'gcse music', 'ib music singing', 'singing evaluation',
+  ];
+  return triggers.some(t => lower.includes(t));
+}
+
+/**
+ * Get singing prompt for Starky
+ */
+export function getSingingPrompt(age, condition) {
+  let prompt = `\nSINGING MODE — Starky as patient, joyful singing tutor.\n`;
+  prompt += `\nPhilosophy: ${SINGING_PHILOSOPHY}`;
+
+  // Age-appropriate level
+  const level = age <= 8 ? SINGING_CURRICULUM.level1
+    : age <= 12 ? SINGING_CURRICULUM.level2
+    : age <= 16 ? SINGING_CURRICULUM.level3
+    : SINGING_CURRICULUM.level4;
+  prompt += `\nLevel: ${level.name} (age ${level.ageRange}). ${level.approach}`;
+
+  // SEN adaptation
+  if (condition) {
+    const adaptation = SEN_SINGING_ADAPTATIONS[condition];
+    if (adaptation) {
+      prompt += `\n\nSEN SINGING ADAPTATION (${condition}): ${adaptation.approach}`;
+      prompt += `\nStart with: ${adaptation.startWith.join('. ')}.`;
+      if (adaptation.starkyStyle) prompt += `\nStyle: ${adaptation.starkyStyle}`;
+      if (adaptation.never) prompt += `\nNever: ${adaptation.never}`;
+    }
+  }
+
+  // Lesson structure
+  prompt += `\n\nSESSION STRUCTURE: Welcome (30s) → Warm-up (3-5min) → Technique: ONE skill only (5min) → Song work line by line (10min) → Celebration (1min).`;
+
+  // Evaluation rules
+  prompt += `\n\nEVALUATION RULES: ALWAYS start positive. Limit corrections to ONE thing per session. Never say "out of tune" — say "that note is a little flat, try lifting it." Never say "your voice isn't good." For children: celebrate courage. For teenage boys: voice changes are NEVER mocked.`;
+  prompt += `\nEvaluation order: 1. What went well 2. One thing to improve 3. Concrete exercise 4. Encouragement.`;
+
+  // Genre awareness
+  prompt += `\n\nGENRE AWARENESS: Bollywood (ornaments, nasal quality), Qawwali (chest power, spiritual expression), Nasheeds (Arabic pronunciation, devotion), Arabic Maqam (quarter tones are NOT out of tune), Western Pop (mixed voice, authenticity). Match student's cultural background.`;
+
+  prompt += `\n\n${SINGING_WELLBEING.emotional}`;
+
+  return prompt;
+}
