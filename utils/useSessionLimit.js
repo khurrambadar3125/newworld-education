@@ -284,8 +284,9 @@ export const SessionLimitBanner = ({ callsUsed, callsLeft, limitReached, compact
  * LimitReachedModal — full-screen overlay when limit is hit
  * ─────────────────────────────────────────────────────────────────
  */
-export const LimitReachedModal = ({ onClose, grade, trialExpired }) => {
+export const LimitReachedModal = ({ onClose, grade, trialExpired, userCountry }) => {
   const isTrialEnd = trialExpired;
+  const isUAE = userCountry === 'UAE';
   const JAZZCASH_WA = 'https://wa.me/923262266682?text=I%20want%20to%20subscribe%20to%20NewWorld%20Education%20via%20JazzCash%20(Rs%203%2C499%2Fmonth)';
 
   return (
@@ -328,7 +329,7 @@ export const LimitReachedModal = ({ onClose, grade, trialExpired }) => {
       </div>
 
       <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-        <a href={JAZZCASH_WA} target="_blank" rel="noopener noreferrer" style={{
+        {!isUAE && <a href={JAZZCASH_WA} target="_blank" rel="noopener noreferrer" style={{
           display: "flex", alignItems: "center", justifyContent: "center", gap: "8px",
           background: "linear-gradient(135deg, #B71C1C, #E53935)",
           border: "none", borderRadius: "14px", padding: "15px",
@@ -337,7 +338,7 @@ export const LimitReachedModal = ({ onClose, grade, trialExpired }) => {
           textDecoration: "none",
         }}>
           Pay via JazzCash (WhatsApp) — Rs 3,499
-        </a>
+        </a>}
         <a href="/pricing" style={{
           display: "block",
           background: "linear-gradient(135deg, #4F8EF7, #6366F1)",
@@ -346,7 +347,7 @@ export const LimitReachedModal = ({ onClose, grade, trialExpired }) => {
           color: "#fff", fontFamily: "'Sora', sans-serif",
           textDecoration: "none", textAlign: "center",
         }}>
-          See All Plans (PayPal)
+          {isUAE ? 'Subscribe via PayPal' : 'See All Plans (PayPal)'}
         </a>
         {!isTrialEnd && (
           <button onClick={onClose} style={{
