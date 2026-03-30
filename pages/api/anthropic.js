@@ -24,6 +24,8 @@ import { getArabicSupportPrompt, isArabicTopic } from '../../utils/arabicSupport
 import { getLiteratureArabicPrompt, isArabicLiteratureRequest } from '../../utils/literatureArabicKB';
 import { getVoiceEvalPrompt, isVoiceTopic } from '../../utils/voiceEvaluationKB';
 import { getUniversalMicPrompt } from '../../utils/universalMicPrompt';
+import { getDeliberatePracticePrompt } from '../../utils/deliberatePracticeLayer';
+import { getArchitectureEnhancementsPrompt } from '../../utils/architectureEnhancements';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -405,6 +407,13 @@ export default async function handler(req, res) {
           ]);
         }
       } catch {}
+
+      // ── Deliberate Practice Layer — spaced repetition, retrieval, interleaving ──
+      built.systemPrompt += getDeliberatePracticePrompt(currentSubject || null, userProfile?.senCondition || userProfile?.senType || null);
+
+      // ── Architecture Enhancements — 10 cognitive intelligence layers ──
+      const isExamSeason = new Date().getMonth() >= 3 && new Date().getMonth() <= 5;
+      built.systemPrompt += getArchitectureEnhancementsPrompt(null, currentSubject || null, isExamSeason);
     }
 
     // ── Handle escalation ──────────────────────────────────────────────────
