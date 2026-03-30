@@ -503,18 +503,12 @@ export default function Home() {
           <div ref={messagesEndRef} />
         </div>
         {isLimitReached ? (
-          <div className="lw"><p>{userCountry === 'UAE' ? 'You\'ve used all your free sessions.' : 'You\'ve used all your free sessions for today.'}<br />{userCountry === 'UAE' ? 'Upgrade to continue your UAE summer learning.' : 'Upgrade to keep learning without limits.'}</p><Link href="/pricing"><a>{userCountry === 'UAE' ? 'See Plans — from AED 129/mo →' : 'See Plans — from Rs 8,300/mo →'}</a></Link>
+          <div className="lw"><p>You've used all your free sessions for today.<br />Upgrade to keep learning without limits.</p><Link href="/pricing"><a>See Plans →</a></Link>
             <div style={{marginTop:12,display:'flex',flexWrap:'wrap',gap:8,justifyContent:'center'}}>
-              {userCountry === 'UAE' ? <>
-                <a href="/summer-uae" style={{fontSize:12,fontWeight:700,color:'#4ECDC4',textDecoration:'none',background:'rgba(78,205,196,0.1)',border:'1px solid rgba(78,205,196,0.25)',borderRadius:100,padding:'6px 14px'}}>☀️ Summer Programme</a>
-                <a href="/languages" style={{fontSize:12,fontWeight:700,color:'#7C5CBF',textDecoration:'none',background:'rgba(124,92,191,0.1)',border:'1px solid rgba(124,92,191,0.25)',borderRadius:100,padding:'6px 14px'}}>🌍 Languages</a>
-                <a href="/countdown" style={{fontSize:12,fontWeight:700,color:'#63D2FF',textDecoration:'none',background:'rgba(99,210,255,0.1)',border:'1px solid rgba(99,210,255,0.25)',borderRadius:100,padding:'6px 14px'}}>⏱️ Countdown</a>
-              </> : <>
-                <a href="/spelling-bee" style={{fontSize:12,fontWeight:700,color:'#FFC300',textDecoration:'none',background:'rgba(255,192,0,0.1)',border:'1px solid rgba(255,192,0,0.25)',borderRadius:100,padding:'6px 14px'}}>🐝 Spelling Bee</a>
-                <a href="/languages" style={{fontSize:12,fontWeight:700,color:'#7C5CBF',textDecoration:'none',background:'rgba(124,92,191,0.1)',border:'1px solid rgba(124,92,191,0.25)',borderRadius:100,padding:'6px 14px'}}>🌍 Languages</a>
-                <a href="/countdown" style={{fontSize:12,fontWeight:700,color:'#63D2FF',textDecoration:'none',background:'rgba(99,210,255,0.1)',border:'1px solid rgba(99,210,255,0.25)',borderRadius:100,padding:'6px 14px'}}>⏱️ Countdown</a>
-                <a href="/leaderboard" style={{fontSize:12,fontWeight:700,color:'#A8E063',textDecoration:'none',background:'rgba(168,224,99,0.1)',border:'1px solid rgba(168,224,99,0.25)',borderRadius:100,padding:'6px 14px'}}>🏆 Leaderboard</a>
-              </>}
+              <a href="/spelling-bee" style={{fontSize:12,fontWeight:700,color:'#FFC300',textDecoration:'none',background:'rgba(255,192,0,0.1)',border:'1px solid rgba(255,192,0,0.25)',borderRadius:100,padding:'6px 14px'}}>🐝 Spelling Bee</a>
+              <a href="/languages" style={{fontSize:12,fontWeight:700,color:'#7C5CBF',textDecoration:'none',background:'rgba(124,92,191,0.1)',border:'1px solid rgba(124,92,191,0.25)',borderRadius:100,padding:'6px 14px'}}>🌍 Languages</a>
+              <a href="/countdown" style={{fontSize:12,fontWeight:700,color:'#63D2FF',textDecoration:'none',background:'rgba(99,210,255,0.1)',border:'1px solid rgba(99,210,255,0.25)',borderRadius:100,padding:'6px 14px'}}>⏱️ Countdown</a>
+              <a href="/leaderboard" style={{fontSize:12,fontWeight:700,color:'#A8E063',textDecoration:'none',background:'rgba(168,224,99,0.1)',border:'1px solid rgba(168,224,99,0.25)',borderRadius:100,padding:'6px 14px'}}>🏆 Leaderboard</a>
             </div>
           </div>
         ) : (
