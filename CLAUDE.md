@@ -252,34 +252,109 @@ npm run lint     # ESLint
 
 **NewWorldEdu | newworld.education**
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Session Snapshot (auto-updated)
 <!-- This section is auto-updated by .claude/update-claude-md.sh Stop hook -->
-<!-- Last sync: 2026-03-29 19:19 -->
+<!-- Last sync: 2026-03-30 23:42 -->
 
-**Platform counts**: 41 pages, 38 utils, 63 API routes, 7 components, 23 cron jobs
+**Platform counts**: 47 pages, 63 utils, 64 API routes, 8 components, 23 cron jobs
 
-**All pages**: _app,arts,arts-for-all,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,kids,languages,leaderboard,login,music,music-for-all,news,parent,past-papers,phonics,pricing,privacy,reading,reading-for-all,referral,school,special-needs,spelling-bee,start,student-dashboard,study-plan,subscribe,summer,terms,textbooks,zayd-mode
+**All pages**: _app,arts,arts-for-all,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,login,music,music-for-all,news,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,school,sing,special-needs,spelling-bee,spelling-uae,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,voice-lab,zayd-mode
 
-**All utils**: academicExcellence,analytics,artsKnowledge,autoImprover,betterVoice,cambridgeExaminer,chineseContent,contentProtection,dailyQuestionEmail,db,emailTemplates,getKnowledgeForTopic,globalKnowledgeBase,motherTongue,notify,patternEngine,phonicsKB,productGate,readingKnowledge,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,starkyIntents,starkyPrompt,summerKnowledge,supabase,systemPrompts,translateCache,uaeMandatorySubjects,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,weaknessDetector,youngLearnerKB
+**All utils**: academicExcellence,americanCurriculumKB,analytics,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeExaminer,cbseKnowledge,chineseContent,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,getKnowledgeForTopic,globalKnowledgeBase,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,kbWishlist,literatureArabicKB,motherTongue,notify,patternEngine,phonicsKB,platformLearningEngine,practiceKB,productGate,readingKnowledge,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,singingGoalsKB,singingKB,starkyIntents,starkyPrompt,summerKnowledge,supabase,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,youngLearnerKB
 
 **Last 10 commits**:
 ```
-a3c567c Footer country flags — switch anytime, no overlay on first visit
-92ca6ad UAE Mandatory Subjects knowledge base — 4 subjects, all stages
-c1ee341 Other country: curriculum picker with global message
-64bba63 UAE curriculum selector — 6 curricula supported
-ce5b866 Country detection and selector — Pakistan, UAE, Other
-bb0653d Daily report: articles section + News label cleanup + email dedup
-b55756b Fix duplicate error emails — deduplication via KV lock
-e077615 Grade selector: remove age labels, fix heading, hide floating buttons
-e00add9 Microphone fix — real-time transcript + auto-send + pulse animation
-806f67f 9 teaching enhancements APPENDED to PERSONA_LOCK
+1d13868 UAE Arabic deep intelligence + mobile button responsiveness
+14d690d Wire hearing engine into anthropic.js — fires FIRST, frames all input
+61ae305 Hearing Engine KB — Starky's input-side listening intelligence
+0ead781 Wire deliberatePracticeLayer + architectureEnhancements into anthropic.js
+9eb99bc Voice Lab — 10-feature voice learning hub, premium design
+3fd197e Architecture Enhancements — 10 cognitive intelligence layers
+e848681 Deliberate Practice Layer — master intelligence enhancing every KB
+6982441 KB Quality Scoring + KB Wishlist — measure and prioritise knowledge gaps
+1482c39 Homework Practice KB — assignments, voice evaluation, return protocol
+37e1b90 Practice KB — the complete science and philosophy of deliberate practice
 ```
 
 **Files changed in last commit**:
 ```
-pages/index.jsx
+components/StarkyBubble.jsx
+pages/_app.jsx
+utils/hearingEngineKB.js
 ```
 
-**Uncommitted changes**: .claude/update-claude-md.sh
+**Uncommitted changes**: CLAUDE.md
 **Untracked files**: none

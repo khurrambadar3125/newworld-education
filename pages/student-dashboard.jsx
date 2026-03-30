@@ -223,6 +223,19 @@ export default function StudentDashboard() {
           ))}
         </div>
 
+        {/* ═══ DAILY STUDY TIME ═══ */}
+        {hasData && (
+          <div style={{ ...S.card, marginBottom: 20, background: "rgba(79,142,247,0.06)", border: "1px solid rgba(79,142,247,0.15)" }}>
+            <div style={{ fontWeight: 900, fontSize: isMobile ? 16 : 18, marginBottom: 6 }}>
+              Today: {Math.round(totalMinutes / Math.max(1, monthSessions))} minutes with Starky
+            </div>
+            <div style={{ display: "flex", gap: 16, fontSize: 12, color: "rgba(255,255,255,0.5)" }}>
+              <span>Your 7-day average: {Math.round(totalMinutes / 7)} minutes</span>
+              <span style={{ color: "rgba(74,222,128,0.8)" }}>Top students: 45+ minutes</span>
+            </div>
+          </div>
+        )}
+
         {/* ═══ EMPTY STATE ═══ */}
         {!loading && !hasData && (
           <div style={{ ...S.card, textAlign: "center", padding: "40px 24px", marginBottom: 28 }}>
@@ -379,6 +392,27 @@ export default function StudentDashboard() {
                   <span style={{ fontWeight: 700, fontSize: 13, flex: 1 }}>{s.name}</span>
                   <span style={{ fontSize: 11, color: "rgba(255,255,255,0.4)" }}>{s.topics.slice(-1)[0] || ''}</span>
                 </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* ═══ YOUR STARKY JOURNEY ═══ */}
+        {hasData && (
+          <div style={{ marginBottom: 28 }}>
+            <h2 style={{ fontSize: 18, fontWeight: 900, margin: "0 0 6px" }}>Your Starky Journey</h2>
+            <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", margin: "0 0 14px" }}>
+              {monthSessions} sessions · {subjects.reduce((t, s) => t + (s.topics?.length || 0), 0)} topics covered · {streak} days studying
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+              {subjects.slice(0, 10).map((s, i) => (
+                <a key={i} href={`/demo?subject=${encodeURIComponent(s.name)}`}
+                  style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 14px", background: "rgba(255,255,255,0.02)", borderRadius: 10, textDecoration: "none", color: "#fff", cursor: "pointer" }}>
+                  <span style={{ fontSize: 11, color: "rgba(255,255,255,0.4)", minWidth: 70 }}>{daysAgo(s.lastStudied) || '—'}</span>
+                  <span style={{ fontWeight: 700, fontSize: 13, flex: 1 }}>{s.name}</span>
+                  <span style={{ fontSize: 11, color: "rgba(79,142,247,0.7)" }}>{s.sessions} session{s.sessions !== 1 ? 's' : ''}</span>
+                  <span style={{ fontSize: 12, color: "rgba(255,255,255,0.3)" }}>→</span>
+                </a>
               ))}
             </div>
           </div>

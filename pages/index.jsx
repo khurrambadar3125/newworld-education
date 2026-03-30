@@ -1065,6 +1065,32 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Cross-platform section */}
+      <section className="sec" style={{padding:'clamp(40px,8vw,56px) clamp(20px,4vw,40px)',borderTop:'1px solid rgba(255,255,255,0.06)',borderBottom:'1px solid rgba(255,255,255,0.06)'}}>
+        <div style={{maxWidth:700,margin:'0 auto',textAlign:'center'}}>
+          <h2 style={{fontSize:'clamp(22px,4vw,30px)',fontWeight:900,margin:'0 0 8px',lineHeight:1.3}}>Starky is always with you.</h2>
+          <p style={{fontSize:'clamp(14px,1.5vw,16px)',color:'rgba(255,255,255,0.5)',margin:'0 0 32px',lineHeight:1.7}}>Phone, tablet, or computer — your sessions, your progress, your history. Always in sync.</p>
+          <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(180px,1fr))',gap:20,marginBottom:24}}>
+            <div style={{textAlign:'center',padding:20}}>
+              <div style={{fontSize:40,marginBottom:10}}>📱</div>
+              <div style={{fontWeight:800,fontSize:16,marginBottom:6}}>Mobile</div>
+              <div style={{fontSize:13,color:'rgba(255,255,255,0.5)',lineHeight:1.7}}>Most students study on their phone. Starky is built for it.</div>
+            </div>
+            <div style={{textAlign:'center',padding:20}}>
+              <div style={{fontSize:40,marginBottom:10}}>💻</div>
+              <div style={{fontWeight:800,fontSize:16,marginBottom:6}}>Desktop</div>
+              <div style={{fontSize:13,color:'rgba(255,255,255,0.5)',lineHeight:1.7}}>Deep study sessions on your laptop. Full screen, full focus.</div>
+            </div>
+            <div style={{textAlign:'center',padding:20}}>
+              <div style={{fontSize:40,marginBottom:10}}>📟</div>
+              <div style={{fontWeight:800,fontSize:16,marginBottom:6}}>Tablet</div>
+              <div style={{fontSize:13,color:'rgba(255,255,255,0.5)',lineHeight:1.7}}>Read, write and learn. Starky works perfectly on your iPad.</div>
+            </div>
+          </div>
+          <p style={{fontSize:14,color:'rgba(255,255,255,0.4)',margin:0}}>No app to download. Open your browser. Start learning.</p>
+        </div>
+      </section>
+
       {/* How it works — for parents who want to understand Starky */}
       <section className="sec" style={{background:'rgba(79,142,247,0.04)',borderTop:'1px solid rgba(79,142,247,0.1)',borderBottom:'1px solid rgba(79,142,247,0.1)'}}>
         <div className="sl">How Starky works</div>

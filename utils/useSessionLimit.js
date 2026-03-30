@@ -29,6 +29,7 @@ export function isExemptEmail(email) {
 }
 
 import { useState, useEffect, useCallback } from "react";
+import { isSaturdayFreeSubject } from "../pages/starky-saturdays";
 
 // PERMANENT: 10 free sessions for all users. No time limit. No credit card.
 // After 10 sessions, show upgrade prompt. Partner schools get unlimited via free_access_until date.
@@ -139,7 +140,19 @@ export const useSessionLimit = (email) => {
     }
   }, []);
 
-  const isExempt = isExemptEmail(email) || isSEN || hasReferralReward;
+  // Starky Saturdays: check if today's free subject matches user's current subject
+  const [isSaturdayFree, setIsSaturdayFree] = useState(false);
+  useEffect(() => {
+    try {
+      const mem = JSON.parse(localStorage.getItem(`nw_session_memory_${email}`) || '{}');
+      const currentSubject = mem.currentSubject || mem.lastSubject || '';
+      if (currentSubject && isSaturdayFreeSubject(currentSubject)) {
+        setIsSaturdayFree(true);
+      }
+    } catch {}
+  }, [email]);
+
+  const isExempt = isExemptEmail(email) || isSEN || hasReferralReward || isSaturdayFree;
   const dailyLimit = paid ? PAID_DAILY_LIMIT : FREE_DAILY_LIMIT;
   const trialExpired = !trial.trialActive && !paid;
 

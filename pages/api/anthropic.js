@@ -10,7 +10,7 @@ import { getKnowledgeForTopic } from '../../utils/getKnowledgeForTopic';
 import { detectExcellenceTrigger, getSituationalExcellence, getReadingList } from '../../utils/academicExcellence';
 import { checkContentViolation, checkExcludedAuthors } from '../../utils/contentProtection';
 import { getCurrentPhase, getPhasePromptInjection } from '../../lib/academic-calendar';
-import { detectWeakness, saveWeakness } from '../../utils/weaknessDetector';
+import { detectWeakness, saveWeakness, detectNanoWeakness, saveNanoMastery } from '../../utils/weaknessDetector';
 import { getBookKnowledge } from '../../utils/readingKnowledge';
 import { checkMisconception } from '../../utils/cambridgeExaminer';
 import { getUAEMandatoryPrompt, isUAEMandatoryTopic } from '../../utils/uaeMandatorySubjects';
@@ -484,6 +484,10 @@ export default async function handler(req, res) {
             ];
             detectWeakness(last3, currentSubject, userProfile.email).then(weakness => {
               if (weakness) saveWeakness(getSupabase(), weakness);
+            }).catch(() => {});
+            // Nano-level weakness detection — granular sub-topic scoring
+            detectNanoWeakness(last3, currentSubject, userProfile.email).then(nanoResult => {
+              if (nanoResult) saveNanoMastery(getSupabase(), nanoResult);
             }).catch(() => {});
           }
         });
