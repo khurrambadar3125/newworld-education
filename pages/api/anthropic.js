@@ -22,6 +22,7 @@ import { getUAEExcellencePrompt } from '../../utils/uaeAcademicExcellence';
 import { getUAESummerPrompt } from '../../utils/uaeSummerKnowledge';
 import { getArabicSupportPrompt, isArabicTopic } from '../../utils/arabicSupportKB';
 import { getLiteratureArabicPrompt, isArabicLiteratureRequest } from '../../utils/literatureArabicKB';
+import { getVoiceEvalPrompt, isVoiceTopic } from '../../utils/voiceEvaluationKB';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -323,6 +324,13 @@ export default async function handler(req, res) {
         if (isArabicLiteratureRequest(message)) {
           built.systemPrompt += getLiteratureArabicPrompt(message);
         }
+      }
+
+      // ── Voice & speech evaluation — all countries ──
+      if (isVoiceTopic(message)) {
+        const gradeGroup = built.meta?.gradeGroup || 'MIDDLE';
+        const motherTongue = userProfile?.motherTongue || (userProfile?.country === 'UAE' ? 'arabic' : 'urdu');
+        built.systemPrompt += getVoiceEvalPrompt(gradeGroup, motherTongue);
       }
 
       // ── Academic phase injection — adapts Starky to the Cambridge calendar ──
