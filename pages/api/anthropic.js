@@ -26,6 +26,7 @@ import { getVoiceEvalPrompt, isVoiceTopic } from '../../utils/voiceEvaluationKB'
 import { getUniversalMicPrompt } from '../../utils/universalMicPrompt';
 import { getDeliberatePracticePrompt } from '../../utils/deliberatePracticeLayer';
 import { getArchitectureEnhancementsPrompt } from '../../utils/architectureEnhancements';
+import { getHearingEnginePrompt } from '../../utils/hearingEngineKB';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -247,6 +248,9 @@ export default async function handler(req, res) {
     });
 
     if (built.systemPrompt && message) {
+      // ── Hearing Engine — fires FIRST, frames how Starky interprets all input ──
+      built.systemPrompt = getHearingEnginePrompt(userProfile?.country || 'PK', userProfile?.senCondition || userProfile?.senType || null) + '\n\n' + built.systemPrompt;
+
       const currentSubject = sessionMemory?.currentSubject || userProfile?.lastSubject || '';
       const topicKnowledge = getKnowledgeForTopic(message, currentSubject);
       if (topicKnowledge) {
