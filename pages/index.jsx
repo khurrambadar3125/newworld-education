@@ -748,6 +748,7 @@ export default function Home() {
               <a href="/drill?context=ib">🌐 IB Prep</a>
               <a href="/drill?context=emsat">🇦🇪 EmSAT Prep</a>
               <a href="/summer-uae">☀️ Summer Programme</a>
+              <a href="/phonics-uae">🔤 Bilingual Phonics</a>
               <a href="/homework">📝 Homework Help</a>
               <a href="/essay">✍️ Essay Marking</a>
               <a href="/textbooks">📖 Textbooks</a>
