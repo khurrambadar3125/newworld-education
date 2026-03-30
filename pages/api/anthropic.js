@@ -23,6 +23,7 @@ import { getUAESummerPrompt } from '../../utils/uaeSummerKnowledge';
 import { getArabicSupportPrompt, isArabicTopic } from '../../utils/arabicSupportKB';
 import { getLiteratureArabicPrompt, isArabicLiteratureRequest } from '../../utils/literatureArabicKB';
 import { getVoiceEvalPrompt, isVoiceTopic } from '../../utils/voiceEvaluationKB';
+import { getUniversalMicPrompt } from '../../utils/universalMicPrompt';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -324,6 +325,11 @@ export default async function handler(req, res) {
         if (isArabicLiteratureRequest(message)) {
           built.systemPrompt += getLiteratureArabicPrompt(message);
         }
+      }
+
+      // ── Universal mic prompt — when voice input detected ──
+      if (req.body?.voiceInput || req.body?.source === 'mic') {
+        built.systemPrompt += getUniversalMicPrompt();
       }
 
       // ── Voice & speech evaluation — all countries ──
