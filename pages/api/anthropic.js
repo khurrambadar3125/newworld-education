@@ -486,8 +486,25 @@ export default async function handler(req, res) {
               if (weakness) saveWeakness(getSupabase(), weakness);
             }).catch(() => {});
             // Nano-level weakness detection — granular sub-topic scoring
+            // Also maps nano-topics to Starky Atoms for automatic mastery tracking
             detectNanoWeakness(last3, currentSubject, userProfile.email).then(nanoResult => {
-              if (nanoResult) saveNanoMastery(getSupabase(), nanoResult);
+              if (nanoResult) {
+                saveNanoMastery(getSupabase(), nanoResult);
+                // Auto-update atom mastery map — the Atom Map fills itself as student studies
+                if (nanoResult.nano_topic && typeof nanoResult.score === 'number') {
+                  const atomId = nanoResult.nano_topic.replace(/\./g, '_');
+                  fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/api/atoms/track-mastery`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                      student_id: userProfile.email,
+                      atom_id: `${currentSubject.toLowerCase().replace(/\s+/g, '_')}_${atomId}`,
+                      subject: currentSubject.toLowerCase(),
+                      score: nanoResult.score,
+                    }),
+                  }).catch(() => {});
+                }
+              }
             }).catch(() => {});
           }
         });

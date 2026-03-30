@@ -11,7 +11,7 @@
  */
 
 // Cambridge grade point values for calculation
-const GRADE_POINTS = {
+export const GRADE_POINTS = {
   'A*': 9, 'A': 8, 'B': 7, 'C': 6, 'D': 5, 'E': 4, 'U': 1,
   'a*': 9, 'a': 8, 'b': 7, 'c': 6, 'd': 5, 'e': 4, 'u': 1,
 };

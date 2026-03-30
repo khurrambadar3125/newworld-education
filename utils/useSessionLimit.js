@@ -29,7 +29,7 @@ export function isExemptEmail(email) {
 }
 
 import { useState, useEffect, useCallback } from "react";
-import { isSaturdayFreeSubject } from "../pages/starky-saturdays";
+import { isSaturdayFreeSubject } from "./saturdayFreeLogic";
 
 // PERMANENT: 10 free sessions for all users. No time limit. No credit card.
 // After 10 sessions, show upgrade prompt. Partner schools get unlimited via free_access_until date.

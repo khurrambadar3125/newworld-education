@@ -272,12 +272,58 @@ export default function DemoPage() {
   useEffect(() => { setMessages([]); setInput(""); }, [activeId]);
   useEffect(() => { chatEndRef.current?.scrollIntoView({ behavior: "smooth" }); }, [messages, loading]);
 
+  // ── Engagement tracking: persist currentSubject + session timing ──
+  const sessionStartRef = useRef(Date.now());
+  const messageCountRef = useRef(0);
+
+  // Persist currentSubject to localStorage so Starky Saturdays bypass works
+  useEffect(() => {
+    try {
+      const email = JSON.parse(localStorage.getItem('nw_user') || '{}').email;
+      if (email && subject?.label) {
+        const key = `nw_session_memory_${email}`;
+        const mem = JSON.parse(localStorage.getItem(key) || '{}');
+        mem.currentSubject = subject.label;
+        mem.lastSubject = subject.label;
+        localStorage.setItem(key, JSON.stringify(mem));
+      }
+    } catch {}
+  }, [activeId]);
+
+  // Log session engagement on page unload
+  useEffect(() => {
+    const logSession = () => {
+      try {
+        const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+        const userMsgs = messageCountRef.current;
+        if (userMsgs < 2) return; // Don't log trivial sessions
+        const data = {
+          session_id: `demo_${sessionStartRef.current}`,
+          session_start: new Date(sessionStartRef.current).toISOString(),
+          session_end: new Date().toISOString(),
+          messages_count: userMsgs,
+          student_initiated_messages: userMsgs,
+          extended: userMsgs > 10,
+          abandoned: false,
+          country: profile.country || 'PK',
+          curriculum: profile.curriculum || 'Cambridge',
+          subject: subject?.label || '',
+          condition: profile.senCondition || '',
+        };
+        navigator.sendBeacon('/api/platform/log-session', JSON.stringify(data));
+      } catch {}
+    };
+    window.addEventListener('beforeunload', logSession);
+    return () => window.removeEventListener('beforeunload', logSession);
+  }, []);
+
   const send = async (text) => {
     const t = text || input.trim();
     if (!t && !imageData) return;
     if (loading) return;
     if (limitReached) { setShowLimit(true); return; }
     recordCall();
+    messageCountRef.current++;
     const currentImage = imageData;
     setInput("");
     setImageData(null);

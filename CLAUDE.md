@@ -327,9 +327,10 @@ npm run lint     # ESLint
 
 
 
+
 ## Session Snapshot (auto-updated)
 <!-- This section is auto-updated by .claude/update-claude-md.sh Stop hook -->
-<!-- Last sync: 2026-03-31 00:18 -->
+<!-- Last sync: 2026-03-31 00:19 -->
 
 **Platform counts**: 51 pages, 66 utils, 64 API routes, 8 components, 23 cron jobs
 
@@ -339,6 +340,7 @@ npm run lint     # ESLint
 
 **Last 10 commits**:
 ```
+d2d0542 CLAUDE.md session snapshot — 51 pages, 66 utils, 4 new pages, 3 new KBs
 b38a9a0 Mega build: pain points KB, nano-weakness detection, mocks, Starky Saturdays, responsible AI, outcome tracking, cross-platform section
 1d13868 UAE Arabic deep intelligence + mobile button responsiveness
 14d690d Wire hearing engine into anthropic.js — fires FIRST, frames all input
@@ -348,27 +350,12 @@ b38a9a0 Mega build: pain points KB, nano-weakness detection, mocks, Starky Satur
 3fd197e Architecture Enhancements — 10 cognitive intelligence layers
 e848681 Deliberate Practice Layer — master intelligence enhancing every KB
 6982441 KB Quality Scoring + KB Wishlist — measure and prioritise knowledge gaps
-1482c39 Homework Practice KB — assignments, voice evaluation, return protocol
 ```
 
 **Files changed in last commit**:
 ```
 CLAUDE.md
-pages/api/anthropic.js
-pages/api/platform/log-session.js
-pages/index.jsx
-pages/mocks.jsx
-pages/our-results.jsx
-pages/responsible-ai.jsx
-pages/starky-saturdays.jsx
-pages/student-dashboard.jsx
-utils/cambridgeExaminer.js
-utils/cambridgePainPointsKB.js
-utils/outcomeTrackingKB.js
-utils/responsibleAIPolicy.js
-utils/useSessionLimit.js
-utils/weaknessDetector.js
 ```
 
-**Uncommitted changes**: CLAUDE.md
+**Uncommitted changes**: none
 **Untracked files**: none

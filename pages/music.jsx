@@ -283,7 +283,7 @@ export default function MusicPage() {
         <div style={{ marginTop:32, paddingTop:20, borderTop:"1px solid rgba(255,255,255,0.05)", textAlign:"center" }}>
           <p style={{ fontSize:11, color:"rgba(255,255,255,0.2)", lineHeight:1.8, maxWidth:560, margin:"0 auto" }}>
             NewWorldEdu is an educational platform — not a replacement for qualified music teachers.{" "}
-            <a href="/disclaimer" style={{ color:"rgba(255,255,255,0.3)", textDecoration:"underline" }}>Disclaimer</a>
+            <a href="/terms" style={{ color:"rgba(255,255,255,0.3)", textDecoration:"underline" }}>Disclaimer</a>
             {" · "}© 2026 NewWorldEdu
           </p>
         </div>

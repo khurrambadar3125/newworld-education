@@ -7,6 +7,8 @@ const MENU_GROUPS = [
     title: 'Learn',
     items: [
       { href: '/drill',        label: '🎯 Practice Drill' },
+      { href: '/atoms',        label: '⚛️ Atoms' },
+      { href: '/mocks',        label: '📝 Starky Mocks' },
       { href: '/past-papers',  label: '📚 Past Papers' },
       { href: '/homework',     label: '📝 Homework Help' },
       { href: '/essay',        label: '✍️ Essay Marking' },
@@ -22,6 +24,8 @@ const MENU_GROUPS = [
       { href: '/countdown',    label: '⏱️ Exam Countdown' },
       { href: '/subscribe',    label: '📬 Daily Questions' },
       { href: '/leaderboard',  label: '🏆 Leaderboard' },
+      { href: '/starky-saturdays', label: '🌟 Starky Saturdays' },
+      { href: '/voice-lab',    label: '🎙️ Voice Lab' },
     ],
   },
   {
@@ -39,6 +43,8 @@ const MENU_GROUPS = [
       { href: '/special-needs',label: '💜 Special Needs' },
       { href: '/dashboard',    label: '📊 Teacher Dashboard' },
       { href: '/school',       label: '🏫 For Schools' },
+      { href: '/our-results',  label: '🏆 Our Results' },
+      { href: '/responsible-ai', label: '🛡️ Responsible AI' },
     ],
   },
 ];

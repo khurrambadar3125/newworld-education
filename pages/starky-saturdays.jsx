@@ -1,39 +1,19 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
+import { getThisWeeksFreeSubject, isSaturdayFreeSubject, isSaturday, FREE_ROTATION } from '../utils/saturdayFreeLogic';
 
-const FREE_ROTATION = [
-  { week: 1, subject: 'Mathematics', icon: '📐', tip: 'Master algebra, geometry, and trigonometry with unlimited sessions' },
-  { week: 2, subject: 'Physics', icon: '⚡', tip: 'Forces, energy, waves, electricity — all free today' },
-  { week: 3, subject: 'Chemistry', icon: '🧪', tip: 'Bonding, reactions, organic chemistry — unlimited access' },
-  { week: 4, subject: 'Biology', icon: '🧬', tip: 'Cells, genetics, ecology, enzymes — study all day' },
-  { week: 5, subject: 'English Language', icon: '📝', tip: 'Comprehension, summary, essay writing — practice without limits' },
-  { week: 6, subject: 'Economics', icon: '📊', tip: 'Supply, demand, macro, micro — all marks free today' },
-];
+// Extended tips for display on this page
+const TIPS = {
+  'Mathematics': 'Master algebra, geometry, and trigonometry with unlimited sessions',
+  'Physics': 'Forces, energy, waves, electricity — all free today',
+  'Chemistry': 'Bonding, reactions, organic chemistry — unlimited access',
+  'Biology': 'Cells, genetics, ecology, enzymes — study all day',
+  'English Language': 'Comprehension, summary, essay writing — practice without limits',
+  'Economics': 'Supply, demand, macro, micro — all marks free today',
+};
 
-function getWeekNumber() {
-  const now = new Date();
-  const start = new Date(now.getFullYear(), 0, 1);
-  const week = Math.ceil(((now - start) / 86400000 + start.getDay() + 1) / 7);
-  return week;
-}
-
-function isSaturday() {
-  // Check in PKT timezone (UTC+5)
-  const now = new Date();
-  const pkt = new Date(now.getTime() + (5 * 60 * 60 * 1000) - (now.getTimezoneOffset() * 60000));
-  return pkt.getDay() === 6;
-}
-
-export function getThisWeeksFreeSubject() {
-  const week = getWeekNumber();
-  return FREE_ROTATION[(week - 1) % FREE_ROTATION.length];
-}
-
-export function isSaturdayFreeSubject(userSubject) {
-  if (!isSaturday()) return false;
-  const free = getThisWeeksFreeSubject();
-  return userSubject?.toLowerCase().includes(free.subject.toLowerCase());
-}
+// Re-export for backwards compatibility
+export { getThisWeeksFreeSubject, isSaturdayFreeSubject };
 
 export default function StarkySaturdays() {
   const [isMobile, setIsMobile] = useState(false);
@@ -89,7 +69,7 @@ export default function StarkySaturdays() {
             {thisWeek.subject}
           </div>
           <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: 14, margin: '0 0 20px' }}>
-            {thisWeek.tip}
+            {TIPS[thisWeek.subject] || ''}
           </p>
           {saturday && (
             <a href={`/demo?subject=${encodeURIComponent(thisWeek.subject)}`}
