@@ -1,3 +1,5 @@
+// PROTECTED FILE — do not modify without
+// explicit instruction from Khurram.
 /**
  * pages/api/anthropic.js
  * Starky API — streaming, rate limiting, circuit breaker, prompt caching.

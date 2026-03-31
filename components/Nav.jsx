@@ -1,3 +1,5 @@
+// PROTECTED FILE — do not modify without
+// explicit instruction from Khurram.
 import { useState } from 'react';
 import Link from 'next/link';
 import { useTheme } from '../pages/_app';

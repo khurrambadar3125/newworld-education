@@ -1,3 +1,5 @@
+// PROTECTED FILE — do not modify without
+// explicit instruction from Khurram.
 // ============================================================
 // STARKY ATOMS KNOWLEDGE BASE
 // Version: 6.0 — 2,168 atoms across 27 subjects (17 O Level + 10 A Level, 4 new A Level subjects added 31 Mar 2026)
