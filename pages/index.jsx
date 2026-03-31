@@ -129,26 +129,30 @@ export default function Home() {
 
   }, []);
 
-  // ── Nano goal pre-fill: /?goal=... auto-launches chat with that message ──
-  const goalHandled = useRef(false);
+  // ── Nano goal pre-fill: /?message=...&subject=... auto-launches chat ──
+  const [nanoMode, setNanoMode] = useState(false);
+  const nanoHandled = useRef(false);
   useEffect(() => {
-    if (goalHandled.current) return;
+    if (nanoHandled.current) return;
     try {
       const params = new URLSearchParams(window.location.search);
-      const goal = params.get('goal');
-      if (!goal) return;
-      goalHandled.current = true;
-      // Auto-select O Level grade if none selected, then launch chat and send
+      const nanoMessage = params.get('message');
+      if (!nanoMessage) return;
+      nanoHandled.current = true;
+      setNanoMode(true);
+      const nanoSubject = params.get('subject');
+      // Set subject context if provided
+      if (nanoSubject) setSelectedSubject(nanoSubject);
+      // Auto-select O Level grade if none selected
       const saved = localStorage.getItem('nw_user');
       const profile = saved ? JSON.parse(saved) : null;
       if (!selectedGrade) setSelectedGrade({ id: 'grade9', label: 'Grade 9', age: '14-15', emoji: '📐' });
       setTimeout(() => {
         if (!chatStarted) {
-          launchChat(profile, null);
+          launchChat(profile, nanoSubject);
         }
         setTimeout(() => {
-          setInput(goal);
-          // Auto-send after short delay to let chat initialise
+          setInput(nanoMessage);
           setTimeout(() => {
             const btn = document.querySelector('.sb2');
             if (btn && !btn.disabled) btn.click();
@@ -491,6 +495,11 @@ export default function Home() {
             <button className="ib" onClick={() => { if (messages.length > 2 && !confirm('Leave this chat? Your conversation will be lost.')) return; setChatStarted(false); setMessages([]); stopSpeaking(); }}>← Back</button>
           </div>
         </div>
+        {nanoMode && (
+          <a href="/nano" style={{display:'block',padding:'8px 16px',background:'rgba(201,168,76,0.08)',borderBottom:'1px solid rgba(201,168,76,0.15)',fontSize:13,fontWeight:700,color:'#C9A84C',textDecoration:'none',textAlign:'center'}}>
+            &larr; Back to your Nano journey
+          </a>
+        )}
         {!isLimitReached && remaining <= 2 && (
           <div className={`sb ${remaining <= 1 ? 'd' : 'w'}`}>{remaining} session{remaining !== 1 ? 's' : ''} remaining today</div>
         )}
@@ -500,8 +509,12 @@ export default function Home() {
             : <div key={i} className={`msg ${m.role}`}>{m.content}</div>
           )}
           {loading && <div className="msg assistant typing">Starky is thinking…</div>}
-          {/* Quick suggestion chips — grade-appropriate */}
-          {(messages.length <= 1 || (messages.length > 0 && messages.length % 6 === 0)) && !loading && (
+          {/* Nano loading state */}
+          {nanoMode && messages.length <= 1 && !loading && (
+            <div style={{textAlign:'center',padding:'16px 0',color:'rgba(201,168,76,0.7)',fontSize:14,fontWeight:600}}>Starting your Nano goal...</div>
+          )}
+          {/* Quick suggestion chips — grade-appropriate (hidden in nano mode) */}
+          {!nanoMode && (messages.length <= 1 || (messages.length > 0 && messages.length % 6 === 0)) && !loading && (
             <div style={{display:'flex',flexWrap:'wrap',gap:8,padding:'8px 0'}}>
               {(isYoung
                 ? (selectedSubject
