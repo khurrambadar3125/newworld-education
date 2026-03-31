@@ -818,6 +818,7 @@ export default function Home() {
             <>
               <div style={{padding:'14px 16px 4px',fontSize:11,fontWeight:800,letterSpacing:'0.08em',textTransform:'uppercase',color:'rgba(255,255,255,0.3)'}}>Learn</div>
               <a href="/drill">🎯 Practice Drill</a>
+              <a href="/nano">🎯 Nano</a>
               <a href="/drill?context=ib">🌐 IB Prep</a>
               <a href="/drill?context=emsat">🇦🇪 EmSAT Prep</a>
               <a href="/summer-uae">☀️ Summer Programme</a>
@@ -851,6 +852,7 @@ export default function Home() {
             <>
               <div style={{padding:'14px 16px 4px',fontSize:11,fontWeight:800,letterSpacing:'0.08em',textTransform:'uppercase',color:'rgba(255,255,255,0.3)'}}>Learn</div>
               <a href="/drill">🎯 Practice Drill</a>
+              <a href="/nano">🎯 Nano</a>
               <a href="/past-papers">📚 Past Papers</a>
               <a href="/homework">📝 Homework Help</a>
               <a href="/essay">✍️ Essay Marking</a>
@@ -1290,6 +1292,7 @@ export default function Home() {
           <a href="/pricing">Pricing</a>
           <a href="/past-papers">Past Papers</a>
           <a href="/drill">Practice Drill</a>
+          <a href="/nano">Nano</a>
           <a href="/textbooks">Textbooks</a>
           <a href="/homework">Homework Help</a>
           <a href="/arts">Arts</a>
