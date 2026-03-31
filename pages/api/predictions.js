@@ -3,10 +3,18 @@
  */
 import { getSupabase } from '../../utils/supabase';
 
+import { validateStudentAccess, isAdmin } from '../../utils/apiAuth';
+
 export default async function handler(req, res) {
   if (req.method !== 'GET') return res.status(405).json({ error: 'Method not allowed' });
   const email = req.query.email;
   if (!email) return res.status(400).json({ error: 'Email required' });
+
+  // Auth: student can only view their own predictions, or admin
+  if (!isAdmin(req)) {
+    const access = validateStudentAccess(req, email);
+    if (!access.valid) return res.status(403).json({ error: 'Unauthorised' });
+  }
 
   const sb = getSupabase();
   if (!sb) return res.status(200).json({ predictions: [] });

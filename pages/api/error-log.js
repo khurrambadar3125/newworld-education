@@ -2,8 +2,21 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Rate limit: max 5 error reports per IP per minute to prevent email spam
+const errorRateMap = new Map();
+function checkErrorRate(req) {
+  const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || 'unknown';
+  const now = Date.now();
+  const entry = errorRateMap.get(ip);
+  if (!entry || now - entry.t > 60000) { errorRateMap.set(ip, { t: now, c: 1 }); return true; }
+  if (entry.c >= 5) return false;
+  entry.c++;
+  return true;
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
+  if (!checkErrorRate(req)) return res.status(429).json({ ok: false, error: 'Rate limited' });
 
   const { message, stack, component, url, time } = req.body || {};
 

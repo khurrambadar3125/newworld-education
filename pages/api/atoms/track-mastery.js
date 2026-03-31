@@ -9,6 +9,7 @@
  */
 
 import { createClient } from '@supabase/supabase-js';
+import { validateStudentAccess, isCron } from '../../../utils/apiAuth';
 
 const supabase = createClient(
   process.env.SUPABASE_URL || '',
@@ -22,6 +23,14 @@ export default async function handler(req, res) {
 
   if (!studentId || !atomId) {
     return res.status(400).json({ error: 'studentId and atomId required' });
+  }
+
+  // Auth: student can only update their own mastery, or internal calls from anthropic.js
+  const referer = req.headers['referer'] || '';
+  const isInternal = referer.includes('newworld.education') || referer.includes('localhost') || !referer;
+  if (!isInternal && !isCron(req)) {
+    const access = validateStudentAccess(req, studentId);
+    if (!access.valid) return res.status(403).json({ error: access.error });
   }
 
   const score = typeof masteryScore === 'number' ? Math.min(10, Math.max(0, masteryScore)) : 0;
