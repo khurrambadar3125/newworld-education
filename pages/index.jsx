@@ -348,7 +348,7 @@ export default function Home() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           message: text,
-          stream: true,
+          stream: !nanoMode,
           userProfile: {
             ...p,
             gradeId: selectedGrade?.id || p.gradeId || '',
