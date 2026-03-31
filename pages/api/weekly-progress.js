@@ -204,7 +204,7 @@ export default withErrorAlert(async function handler(req, res) {
   if (req.method !== 'GET') return res.status(405).json({ error: 'GET only' });
   const isTest = req.query.test === 'true';
   if (!isTest && !isAuthorised(req)) return res.status(401).json({ error: 'Unauthorised' });
-  const testEmail = 'khurram@newworld.education';
+  const testEmail = 'khurrambadar@gmail.com';
 
   try {
     // 1. Get all students with mastery records
