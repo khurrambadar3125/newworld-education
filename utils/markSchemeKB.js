@@ -185,6 +185,32 @@ const MARK_SCHEME_KB = [
     examinerNote: "For top marks, haemoglobin 'combines with' oxygen to form oxyhaemoglobin — 'carries' is a lower-level answer that may not score full marks at IGCSE.",
     markSchemeQuote: "haemoglobin combines with oxygen (1) to form oxyhaemoglobin (1)"
   },
+  {
+    id: "ms_bio_009",
+    subject: "biology",
+    level: "o_level",
+    topic: "Enzymes",
+    concept: "enzyme specificity",
+    acceptedPhrases: [
+      "complementary shape",
+      "active site has a complementary shape to the substrate",
+      "enzyme-substrate complex",
+      "substrate binds to the active site",
+      "only the specific substrate can bind because its shape is complementary to the active site"
+    ],
+    rejectedPhrases: [
+      "lock and key",
+      "fits like a lock and key",
+      "the enzyme is specific",
+      "only one substrate fits",
+      "the enzyme matches the substrate"
+    ],
+    examinerNote: "Students commonly write 'fits like a lock and key' — examiners do not award this phrase. 'Complementary shape' is required. Writing 'the enzyme is specific' without explaining WHY (complementary shape) scores 0 for the explanation mark.",
+    markSchemeQuote: "active site has a complementary shape to the substrate (1) substrate binds to the active site forming an enzyme-substrate complex (1) only the specific substrate can bind because its shape is complementary (1)",
+    commandWord: "explain",
+    modelAnswer: "The enzyme is specific to its substrate because the active site has a complementary shape to the substrate molecule. This means only that specific substrate can bind to form an enzyme-substrate complex. Other molecules cannot bind because their shape is not complementary to the active site.",
+    marks: 3
+  },
 
   // ═══════════════════════════════════════════
   // CHEMISTRY
