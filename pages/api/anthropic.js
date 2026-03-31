@@ -33,7 +33,7 @@ import { getCommandWordInjection } from '../../utils/commandWordEngine';
 import { getExaminerReportInjection } from '../../utils/examinerReportsKB';
 import { checkStudentAnswer } from '../../utils/markSchemeKB';
 import { detectExtendedResponse, getExtendedResponseInjection } from '../../utils/extendedResponseKB';
-import { SUPREME_EXAMINER_PERSONA, checkDialect, getDialectInjection } from '../../utils/cambridgeDialectKB';
+import { SUPREME_EXAMINER_PERSONA, CAMBRIDGE_DIALECT, CAMBRIDGE_HIDDEN_RULES, CAMBRIDGE_MARKING_PHILOSOPHY, checkDialect, getDialectInjection } from '../../utils/cambridgeDialectKB';
 import { getSupabase } from '../../utils/supabase';
 import { reportCircuitBreaker } from '../../utils/errorAlert';
 
@@ -138,6 +138,58 @@ async function callWithRetry(createFn, maxRetries = 2) {
       await new Promise(r => setTimeout(r, delay));
     }
   }
+}
+
+// ─── Supreme Examiner Persona v2 — comprehensive Cambridge examining standard ──
+
+const NEW_SUPREME_PERSONA = `You are Starky — trained to the standard of a Senior Cambridge Examiner with 20 years of marking O and A Level scripts.
+
+Cambridge examining is a precise dialect. The same knowledge in wrong words = 0. The same knowledge in Cambridge dialect = full marks.
+
+EXAMINER MINDSET 1 — DIALECT FIRST
+Before answering, ask: what phrase does the Cambridge mark scheme use for this exact concept? Not what is correct in English — what Cambridge accepts.
+
+EXAMINER MINDSET 2 — MARK ARCHITECTURE
+Count the marks available. Build exactly that many distinct points. Each point must be independently mark-scheme-worthy. Never combine two mark points into one.
+
+EXAMINER MINDSET 3 — COMMAND WORD ABSOLUTE
+STATE/NAME/GIVE: one fact per mark. No explanation. More words = more risk.
+DESCRIBE: what happens. No why. For graphs: quote specific values.
+EXPLAIN: what + why. Must include because/therefore/so/this means. Without connective = no second mark.
+SUGGEST: apply to unfamiliar context. Must reference the specific situation. Cannot be a memorised answer.
+EVALUATE/ASSESS/DISCUSS: arguments FOR + arguments AGAINST + weighing + definitive conclusion. No conclusion = cannot reach Band 1.
+CALCULATE: formula first, substitution, working line by line, answer with units. Answer alone = 0 marks.
+
+EXAMINER MINDSET 4 — SELF-VERIFICATION
+After formulating every answer, run:
+□ Command word compliance — right type?
+□ Dialect check — Cambridge phrases used?
+□ Rejected phrases avoided?
+□ Mark count correct?
+□ Subject rules followed: Chemistry: state symbols? Physics: units? Biology: glucose not food? Maths: all working? Economics: conclusion? History: specific evidence? English: effect on reader?
+If any check fails: rewrite before sending.
+
+EXAMINER MINDSET 5 — MARKING PHILOSOPHY
+${CAMBRIDGE_MARKING_PHILOSOPHY.corePhilosophy}
+Apply ECF (${CAMBRIDGE_MARKING_PHILOSOPHY.markingConventions.ECF}).
+Apply BOD (${CAMBRIDGE_MARKING_PHILOSOPHY.markingConventions.BOD}).
+Recognise ORA (${CAMBRIDGE_MARKING_PHILOSOPHY.markingConventions.ORA}).
+Extended writing: ${CAMBRIDGE_MARKING_PHILOSOPHY.markingConventions.levelOfResponse}
+
+WHAT MAKES A* DIFFERENT FROM A:
+A students know the content. A* students know the dialect AND the marking philosophy AND examiner psychology. Examiners marking 500 scripts scan for key phrases. Your answers must be scannable — key phrases visible, mark points clear, structure matching command. An A* answer is one the examiner marks in 30 seconds and gives full marks with complete confidence.`;
+
+function buildDialectCheck(subject) {
+  const subjectKey = (subject || '').toLowerCase().replace(/\s+/g, '_');
+  const dialectEntries = CAMBRIDGE_DIALECT.filter(d => d.subject === subjectKey || d.subject === 'english').slice(0, 15);
+  const hiddenRules = CAMBRIDGE_HIDDEN_RULES[subjectKey] || [];
+  if (!dialectEntries.length && !hiddenRules.length) return '';
+
+  const accepts = dialectEntries.map(d => `• ${d.concept}: "${d.cambridgeAccepts[0]}"`).join('\n');
+  const rejects = dialectEntries.flatMap(d => d.cambridgeRejects.slice(0, 2).map(r => `NOT: "${r}" (${d.concept})`)).join('\n');
+  const rules = hiddenRules.map((r, i) => `${i + 1}. ${r}`).join('\n');
+
+  return `\n\nLIVE DIALECT VERIFICATION — ${subject?.toUpperCase() || 'ALL SUBJECTS'}\n\nCAMBRIDGE ACCEPTS:\n${accepts}\n\nCAMBRIDGE REJECTS:\n${rejects}\n\n${rules ? `HIDDEN RULES FOR THIS SUBJECT:\n${rules}\n\n` : ''}VERIFICATION: Before responding, scan your answer for any REJECTED phrase and replace with ACCEPTED phrase. If student used a REJECTED phrase, correct it explicitly: "You wrote '[rejected]' — Cambridge requires '[accepted]'."`;
 }
 
 // ─── Main handler ─────────────────────────────────────────────────────────────
@@ -260,8 +312,14 @@ export default async function handler(req, res) {
       // ── Hearing Engine — fires FIRST, frames how Starky interprets all input ──
       built.systemPrompt = getHearingEnginePrompt(userProfile?.country || 'PK', userProfile?.senCondition || userProfile?.senType || null) + '\n\n' + built.systemPrompt;
 
-      // ── SUPREME EXAMINER PERSONA — transforms Starky into a Cambridge Principal Examiner ──
-      built.systemPrompt += '\n\n' + SUPREME_EXAMINER_PERSONA;
+      // ── SUPREME EXAMINER PERSONA v2 — Cambridge Principal Examiner with self-verification ──
+      built.systemPrompt += '\n\n' + NEW_SUPREME_PERSONA;
+
+      // ── LIVE DIALECT CHECKER — inject accepted/rejected phrases + hidden rules per subject ──
+      const dialectSubject = sessionMemory?.currentSubject || userProfile?.lastSubject || '';
+      if (dialectSubject) {
+        built.systemPrompt += buildDialectCheck(dialectSubject);
+      }
 
       // ── FIRST_NANO_SESSION — make the first Nano experience unforgettable ──
       if (message.includes('[FIRST_NANO_SESSION]')) {
