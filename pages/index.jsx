@@ -328,7 +328,9 @@ export default function Home() {
     // After 2 free messages, prompt registration to save progress
     const msgCount = messages.filter(m => m.role === 'user').length;
     if (!userProfile && msgCount >= 2) { setShowRegModal(true); return; }
-    const userMsg = { role: 'user', content: text };
+    const nanoGoalMatch = text.match(/The goal is:\s*"([^"]+)"/);
+    const displayContent = nanoGoalMatch ? `⚛️ Nano Goal: ${nanoGoalMatch[1]}` : text;
+    const userMsg = { role: 'user', content: text, displayContent };
     const newMsgs = [...messages, userMsg];
     setMessages(newMsgs);
     setInput('');
@@ -575,7 +577,7 @@ export default function Home() {
         <div className="cm">
           {messages.map((m, i) => m.role === 'assistant'
             ? <div key={i} className={`msg ${m.role}`} dangerouslySetInnerHTML={{ __html: formatMsg(m.content) }} />
-            : <div key={i} className={`msg ${m.role}`}>{m.content}</div>
+            : <div key={i} className={`msg ${m.role}`}>{m.displayContent || m.content}</div>
           )}
           {loading && <div className="msg assistant typing">Starky is thinking…</div>}
           {/* Nano loading state */}
