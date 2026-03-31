@@ -489,8 +489,8 @@ export default function ChallengePage() {
           </div>
         )}
 
-        {/* Question picker — collapsed at bottom */}
-        <details style={{ marginTop: 32 }}>
+        {/* Question picker — only in answer mode */}
+        {mode === 'answer' && <details style={{ marginTop: 32 }}>
           <summary style={{ cursor: 'pointer', fontSize: 13, fontWeight: 700, color: 'rgba(250,246,235,0.35)', padding: '8px 0' }}>Choose a different question ({CHALLENGES.length} available)</summary>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 10 }}>
             {shuffled.map((c, i) => (
@@ -501,7 +501,7 @@ export default function ChallengePage() {
               </button>
             ))}
           </div>
-        </details>
+        </details>}
 
         {/* CTA */}
         <div style={{ textAlign: 'center', marginTop: 40, padding: '24px 0', borderTop: '1px solid rgba(250,246,235,0.06)' }}>
