@@ -250,8 +250,7 @@ export default function NixorDeck() {
   const SlideComponent = SLIDES[slide];
 
   return (
-    <div style={{ width: '100vw', height: '100vh', background: NAVY, fontFamily: "'Sora',-apple-system,sans-serif", overflow: 'hidden', cursor: 'none', position: 'relative' }}
-      onClick={(e) => { if (e.clientX > window.innerWidth / 2) next(); else prev(); }}>
+    <div style={{ width: '100vw', height: '100vh', background: NAVY, fontFamily: "'Sora',-apple-system,sans-serif", overflow: 'hidden', position: 'relative' }}>
       <Head>
         <title>NewWorldEdu — Nixor Presentation</title>
         <meta name="robots" content="noindex" />
@@ -260,11 +259,29 @@ export default function NixorDeck() {
       <style jsx global>{`
         @keyframes deckFadeIn { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
         .deck-slide { animation: deckFadeIn 0.4s ease both; }
+        .deck-arrow { opacity: 0.15; transition: opacity 0.2s; }
+        .deck-arrow:hover { opacity: 0.7; }
       `}</style>
 
       <div className="deck-slide" key={slide} style={{ width: '100%', height: '100%' }}>
         <SlideComponent />
       </div>
+
+      {/* Left arrow */}
+      {slide > 0 && (
+        <button className="deck-arrow" onClick={prev}
+          style={{ position: 'absolute', left: 16, top: '50%', transform: 'translateY(-50%)', background: 'rgba(250,246,235,0.08)', border: 'none', borderRadius: 12, width: 48, height: 48, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22, color: WHITE, zIndex: 10 }}>
+          &#8592;
+        </button>
+      )}
+
+      {/* Right arrow */}
+      {slide < total - 1 && (
+        <button className="deck-arrow" onClick={next}
+          style={{ position: 'absolute', right: 16, top: '50%', transform: 'translateY(-50%)', background: 'rgba(201,168,76,0.15)', border: `1px solid rgba(201,168,76,0.3)`, borderRadius: 12, width: 48, height: 48, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22, color: GOLD, zIndex: 10 }}>
+          &#8594;
+        </button>
+      )}
 
       {/* Progress bar */}
       <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 3, background: 'rgba(250,246,235,0.06)' }}>
