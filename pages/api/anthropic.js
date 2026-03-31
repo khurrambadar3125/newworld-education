@@ -629,27 +629,26 @@ export default async function handler(req, res) {
             }, 3000);
             // Delay nano detection by 6s — runs after weakness detection finishes
             setTimeout(() => {
-            detectNanoWeakness(last3, currentSubject, userProfile.email).then(nanoResult => {
-              if (nanoResult) {
-                saveNanoMastery(getSupabase(), nanoResult);
-                // Auto-update atom mastery map — the Atom Map fills itself as student studies
-                if (nanoResult.nano_topic && typeof nanoResult.score === 'number') {
-                  const atomId = nanoResult.nano_topic.replace(/\./g, '_');
-                  fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/api/atoms/track-mastery`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                      studentId: userProfile.email,
-                      atomId: `${currentSubject.toLowerCase().replace(/\s+/g, '_')}_${atomId}`,
-                      masteryScore: nanoResult.score,
-                    }),
-                  }).catch(() => {});
+              detectNanoWeakness(last3, currentSubject, userProfile.email).then(nanoResult => {
+                if (nanoResult) {
+                  saveNanoMastery(getSupabase(), nanoResult);
+                  if (nanoResult.nano_topic && typeof nanoResult.score === 'number') {
+                    const atomId = nanoResult.nano_topic.replace(/\./g, '_');
+                    fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/api/atoms/track-mastery`, {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({
+                        studentId: userProfile.email,
+                        atomId: `${currentSubject.toLowerCase().replace(/\s+/g, '_')}_${atomId}`,
+                        masteryScore: nanoResult.score,
+                      }),
+                    }).catch(() => {});
+                  }
                 }
-              }
-            }).catch(() => {});
-          }
-            }, 6000);
-        });
+              }).catch(() => {});
+            }, 6000); // end setTimeout nano detection
+          } // end if (currentSubject)
+        }); // end stream.on('end')
 
         stream.on('error', (err) => {
           console.error('[STARKY STREAM ERROR]', err?.message);
