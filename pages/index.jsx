@@ -348,7 +348,7 @@ export default function Home() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           message: text,
-          stream: !nanoMode,
+          stream: !text.includes('Nano Goal'),
           userProfile: {
             ...p,
             gradeId: selectedGrade?.id || p.gradeId || '',
@@ -451,6 +451,14 @@ export default function Home() {
       } catch(e) {}
     } catch(e) {
       setMessages([...newMsgs, { role: 'assistant', content: 'Starky is busy — please try again in a moment!' }]);
+      // Report client-side failure to error-log so Khurram gets an email
+      try {
+        fetch('/api/error-log', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: `Starky chat failed: ${e?.message || 'unknown'}`, stack: e?.stack || '', url: window.location.href, time: new Date().toISOString(), component: 'sendMessage' }),
+        }).catch(() => {});
+      } catch {}
     } finally {
       setLoading(false);
     }
