@@ -1,5 +1,6 @@
 import { Resend } from 'resend';
 import { saveSubscriber, isSubscribed } from '../../utils/db';
+import { withErrorAlert } from '../../utils/errorAlert';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -14,7 +15,7 @@ function checkSubRate(ip) {
   return true;
 }
 
-export default async function handler(req, res) {
+export default withErrorAlert(async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
 
   const ip = req.headers['x-forwarded-for'] || 'unknown';
@@ -98,4 +99,4 @@ export default async function handler(req, res) {
     console.error('Subscribe error:', err);
     return res.status(500).json({ error: 'Something went wrong. Please try again.' });
   }
-}
+});

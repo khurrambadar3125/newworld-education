@@ -4,6 +4,7 @@
  */
 
 import Anthropic from '@anthropic-ai/sdk';
+import { withErrorAlert } from '../../../utils/errorAlert';
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 30000 });
 
@@ -11,7 +12,7 @@ const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 3
 const TIME_LIMITS = { 'O Level': 3600, 'A Level': 5400 };
 const QUESTION_COUNT = 10;
 
-export default async function handler(req, res) {
+export default withErrorAlert(async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
 
   const { subject, grade, email } = req.body;
@@ -47,4 +48,4 @@ export default async function handler(req, res) {
     console.error('[mocks/generate] Error:', err.message);
     return res.status(500).json({ error: 'Failed to generate mock paper' });
   }
-}
+});

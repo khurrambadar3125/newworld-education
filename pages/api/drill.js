@@ -10,6 +10,7 @@
 
 import Anthropic from '@anthropic-ai/sdk';
 import { getKnowledgeForTopic } from '../../utils/getKnowledgeForTopic';
+import { withErrorAlert } from '../../utils/errorAlert';
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 25000 });
 
@@ -173,7 +174,7 @@ function checkDrillRate(ip) {
 setInterval(() => { const now = Date.now(); for (const [k, v] of drillRateMap) { if (now - v.t > 120000) drillRateMap.delete(k); } }, 300000);
 
 // ── Handler ──────────────────────────────────────────────────────────────────
-export default async function handler(req, res) {
+export default withErrorAlert(async function handler(req, res) {
   const origin = req.headers.origin;
   const allowed = ['https://newworld.education','https://www.newworld.education','http://localhost:3000'];
   if (allowed.includes(origin)) res.setHeader('Access-Control-Allow-Origin', origin);
@@ -274,4 +275,4 @@ export default async function handler(req, res) {
     if (action === 'hint') return res.status(200).json({ hint:'Think about what you already know about this topic — start with the basics!' });
     return res.status(500).json({ correct:false, quality:0, score:0, maxScore:1, feedback:'Something went wrong. Please try again!', examinerTip:'', modelAnswer:'' });
   }
-}
+});

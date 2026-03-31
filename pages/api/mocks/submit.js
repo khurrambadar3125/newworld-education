@@ -5,6 +5,7 @@
 
 import Anthropic from '@anthropic-ai/sdk';
 import { createClient } from '@supabase/supabase-js';
+import { withErrorAlert } from '../../../utils/errorAlert';
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 30000 });
 const supabase = createClient(process.env.SUPABASE_URL || '', process.env.SUPABASE_SECRET_KEY || '');
@@ -23,7 +24,7 @@ function getGrade(percentage, level) {
   return 'U';
 }
 
-export default async function handler(req, res) {
+export default withErrorAlert(async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
 
   const { email, subject, grade, answers, questions, duration } = req.body;
@@ -111,4 +112,4 @@ export default async function handler(req, res) {
     console.error('[mocks/submit] Error:', err.message);
     return res.status(500).json({ error: 'Failed to grade mock exam' });
   }
-}
+});

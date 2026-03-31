@@ -1,9 +1,10 @@
 import { Redis } from '@upstash/redis';
 import { notify } from '../../utils/notify';
+import { withErrorAlert } from '../../utils/errorAlert';
 
 const kv = new Redis({ url: process.env.KV_REST_API_URL, token: process.env.KV_REST_API_TOKEN });
 
-export default async function handler(req, res) {
+export default withErrorAlert(async function handler(req, res) {
   // GET — child fetches their assignment
   if (req.method === 'GET') {
     const { email } = req.query;
@@ -80,4 +81,4 @@ export default async function handler(req, res) {
   }
 
   return res.status(405).end();
-}
+});

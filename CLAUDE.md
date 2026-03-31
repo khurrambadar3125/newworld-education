@@ -380,11 +380,15 @@ npm run lint     # ESLint
 
 
 
+
+
+
+
 ## Session Snapshot (auto-updated)
 <!-- This section is auto-updated by .claude/update-claude-md.sh Stop hook -->
-<!-- Last sync: 2026-03-31 12:06 -->
+<!-- Last sync: 2026-03-31 12:24 -->
 
-**Platform counts**: 52 pages, 73 utils, 71 API routes, 8 components, 24 cron jobs
+**Platform counts**: 52 pages, 73 utils, 71 API routes, 8 components, 23 cron jobs
 
 **All pages**: _app,arts,arts-for-all,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,login,mocks,music,music-for-all,nano,news,our-results,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,responsible-ai,school,sing,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,voice-lab,zayd-mode
 
@@ -392,6 +396,7 @@ npm run lint     # ESLint
 
 **Last 10 commits**:
 ```
+5413ed4 Add Nano intelligence: mark scheme KB, extended response coach, Socratic protocol, first-session experience, weekly progress email
 97264d8 Add Nano to homepage nav — UAE menu, Pakistan menu, footer
 01e882b Add PROTECTED FILE comment to 4 core files
 2edb300 Fix query param handling across entire platform — 6 files
@@ -401,19 +406,20 @@ c035ea2 Fix Nano page selection flow + goal pre-fill on homepage
 91867cc Add Accounting AL, History AL, Psychology AL, Sociology AL — 2,168 total atoms
 fb661ca Add Command Word Engine + Examiner Reports KB — 2 new injection layers
 99e761e Rename Atoms → Nano: redesigned learning journey page
-66e05b0 Top-up Maths AL, Business AL, CS AL — 1,808 total atoms
 ```
 
 **Files changed in last commit**:
 ```
+CLAUDE.md
+pages/api/anthropic.js
+pages/api/weekly-progress.js
 pages/index.jsx
+pages/nano.jsx
+utils/extendedResponseKB.js
+utils/markSchemeKB.js
+vercel.json
 ```
 
 **Uncommitted changes**: CLAUDE.md
-pages/api/anthropic.js
-pages/index.jsx
-pages/nano.jsx
-vercel.json
-**Untracked files**: pages/api/cron/weekly-progress.js
-utils/extendedResponseKB.js
-utils/markSchemeKB.js
+pages/api/weekly-progress.js
+**Untracked files**: none

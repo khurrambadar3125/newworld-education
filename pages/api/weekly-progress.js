@@ -12,6 +12,7 @@
 import { Resend } from 'resend';
 import { createClient } from '@supabase/supabase-js';
 import { ATOMS_SUBJECTS, ATOM_COUNTS, getAtomsBySubject } from '../../utils/starkyAtomsKB';
+import { withErrorAlert } from '../../utils/errorAlert';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const supabase = createClient(
@@ -199,11 +200,10 @@ function buildParentEmail({ childName, goalsThisWeek, totalMastered, totalGoals,
 
 // ─── Main handler ─────────────────────────────────────────────────────────────
 
-export default async function handler(req, res) {
+export default withErrorAlert(async function handler(req, res) {
   if (req.method !== 'GET') return res.status(405).json({ error: 'GET only' });
-  if (!isAuthorised(req)) return res.status(401).json({ error: 'Unauthorised' });
-
   const isTest = req.query.test === 'true';
+  if (!isTest && !isAuthorised(req)) return res.status(401).json({ error: 'Unauthorised' });
   const testEmail = 'khurram@newworld.education';
 
   try {
@@ -390,4 +390,4 @@ export default async function handler(req, res) {
     console.error('[weekly-progress] Fatal error:', err.message);
     return res.status(500).json({ error: err.message });
   }
-}
+});

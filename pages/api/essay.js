@@ -1,12 +1,14 @@
 /**
  * pages/api/essay.js
  * Cambridge-style essay marking — O Level & A Level
- * 
+ *
  * POST { subject, level, question, essay, markScheme? }
  * → { totalScore, maxScore, grade, band, sections[], examinerVerdict, improvements[], modelOpener }
  */
 
-export default async function handler(req, res) {
+import { withErrorAlert } from '../../utils/errorAlert';
+
+export default withErrorAlert(async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   const { subject, level, question, essay, markScheme } = req.body;
@@ -95,4 +97,4 @@ Return ONLY this JSON (no markdown, no text outside JSON):
     console.error('essay.js error:', err);
     return res.status(500).json({ error: 'Marking failed. Please try again.' });
   }
-}
+});

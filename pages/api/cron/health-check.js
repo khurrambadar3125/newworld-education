@@ -12,11 +12,24 @@ const PAGES = [
   { path: '/homework',      name: 'Homework Helper' },
   { path: '/pricing',       name: 'Pricing' },
   { path: '/past-papers',   name: 'Past Papers' },
+  { path: '/nano',          name: 'Starky Nano' },
+  { path: '/mocks',         name: 'Starky Mocks' },
+  { path: '/reading',       name: 'Reading' },
+  { path: '/phonics',       name: 'Phonics' },
+  { path: '/sing',          name: 'Sing' },
+  { path: '/voice-lab',     name: 'Voice Lab' },
+  { path: '/study-plan',    name: 'Study Plan' },
+  { path: '/leaderboard',   name: 'Leaderboard' },
+  { path: '/subscribe',     name: 'Subscribe' },
+  { path: '/login',         name: 'Login' },
 ];
 
 const API_ENDPOINTS = [
   { path: '/api/anthropic',            name: 'Starky API',      method: 'POST', body: { messages: [{ role: 'user', content: 'ping' }] } },
   { path: '/api/cron/daily-question',  name: 'Daily Cron Auth', method: 'POST', expectStatus: 401 },
+  { path: '/api/health',               name: 'Health API',      method: 'GET' },
+  { path: '/api/weekly-progress',      name: 'Weekly Progress', method: 'GET', expectStatus: 401 },
+  { path: '/api/atoms/get-mastery',    name: 'Atom Mastery',    method: 'GET', expectStatus: 400 },
 ];
 
 export default async function handler(req, res) {
@@ -134,7 +147,7 @@ export default async function handler(req, res) {
           <strong>⚡ Action Required:</strong> The pages marked ❌ above are showing errors to real users right now. 
           Reply to this email or open your terminal and run:
           <br><br>
-          <code style="background:#f5f5f5;padding:4px 8px;border-radius:4px">cd /Users/whitestar/newworld-platform && npm run build 2>&1 | tail -20</code>
+          <code style="background:#f5f5f5;padding:4px 8px;border-radius:4px">cd /Users/khurramb/projects/newworld-platform && npm run build 2>&1 | tail -20</code>
         </div>` : ''}
 
         <div style="margin-top:24px;padding:16px;background:#f9f9f9;border-radius:8px;border-left:4px solid #4F8EF7">

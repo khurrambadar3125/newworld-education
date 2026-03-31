@@ -34,6 +34,7 @@ import { getExaminerReportInjection } from '../../utils/examinerReportsKB';
 import { checkStudentAnswer } from '../../utils/markSchemeKB';
 import { detectExtendedResponse, getExtendedResponseInjection } from '../../utils/extendedResponseKB';
 import { getSupabase } from '../../utils/supabase';
+import { reportCircuitBreaker } from '../../utils/errorAlert';
 
 export const config = {
   api: {
@@ -96,6 +97,7 @@ function recordCircuitFailure() {
   if (circuitFailures >= CIRCUIT_THRESHOLD) {
     circuitOpenUntil = Date.now() + CIRCUIT_COOLDOWN;
     console.error('[CIRCUIT BREAKER] OPEN — too many failures, cooling down for 60s');
+    reportCircuitBreaker({ failures: circuitFailures, cooldownSeconds: CIRCUIT_COOLDOWN / 1000 }).catch(() => {});
   }
 }
 
