@@ -297,6 +297,18 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           }
           [data-theme="cream"] body { background: #FFF8F0 !important; color: #2C1810 !important; }
 
+          /* Global minimum contrast boost for dark theme — prevents unreadable text */
+          :root[data-theme="dark"] {
+            --text-muted: rgba(255,255,255,0.6);
+            --text-faint: rgba(255,255,255,0.4);
+          }
+          /* Force minimum text opacity on dark backgrounds — accessibility fix */
+          @media (prefers-color-scheme: dark) {
+            body[style*="background"] *, div[style*="background:#0"] *, div[style*="background: #0"] * {
+              --min-text: rgba(255,255,255,0.55);
+            }
+          }
+
           /* Dyslexia-friendly font */
           [data-font="dyslexic"], [data-font="dyslexic"] * {
             font-family: 'Open Dyslexic', 'OpenDyslexic', 'Comic Sans MS', sans-serif !important;

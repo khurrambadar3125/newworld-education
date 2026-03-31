@@ -35,7 +35,7 @@ import { checkStudentAnswer } from '../../utils/markSchemeKB';
 import { detectExtendedResponse, getExtendedResponseInjection } from '../../utils/extendedResponseKB';
 import { SUPREME_EXAMINER_PERSONA, CAMBRIDGE_DIALECT, CAMBRIDGE_HIDDEN_RULES, CAMBRIDGE_MARKING_PHILOSOPHY, checkDialect, getDialectInjection } from '../../utils/cambridgeDialectKB';
 import { getSupabase } from '../../utils/supabase';
-import { reportCircuitBreaker } from '../../utils/errorAlert';
+import { reportCircuitBreaker, reportError } from '../../utils/errorAlert';
 
 export const config = {
   api: {
@@ -583,6 +583,15 @@ export default async function handler(req, res) {
     // This saves ~90% on input token costs for repeat messages
     // PERMANENT: Prompt caching is mandatory. Reduces API costs by ~80%.
     // Never remove this without explicit approval from Khurram.
+
+    // Safety: cap system prompt at ~50K chars (~12K tokens) to prevent timeout/context overflow
+    // Haiku handles up to 200K tokens but large prompts = slow responses = "Starky is busy"
+    const MAX_PROMPT_CHARS = 50000;
+    if (built.systemPrompt.length > MAX_PROMPT_CHARS) {
+      console.warn(`[STARKY] System prompt too large: ${built.systemPrompt.length} chars. Trimming.`);
+      built.systemPrompt = built.systemPrompt.slice(0, MAX_PROMPT_CHARS);
+    }
+
     const systemBlocks = [
       { type: 'text', text: built.systemPrompt, cache_control: { type: 'ephemeral' } },
     ];
@@ -651,11 +660,13 @@ export default async function handler(req, res) {
         stream.on('error', (err) => {
           console.error('[STARKY STREAM ERROR]', err?.message);
           recordCircuitFailure();
+          reportError({ endpoint: '/api/anthropic (stream)', error: err, severity: 'high', context: { subject: sessionMemory?.currentSubject, promptLength: built.systemPrompt?.length } }).catch(() => {});
           res.write(`data: ${JSON.stringify({ type: 'error', error: 'Something went wrong. Please try again!' })}\n\n`);
           res.end();
         });
       } catch (err) {
         recordCircuitFailure();
+        reportError({ endpoint: '/api/anthropic (stream setup)', error: err, severity: 'critical', context: { subject: sessionMemory?.currentSubject, promptLength: built.systemPrompt?.length } }).catch(() => {});
         // If streaming setup fails, fall back to error response
         if (!res.headersSent) {
           res.setHeader('Content-Type', 'application/json');
@@ -689,6 +700,7 @@ export default async function handler(req, res) {
       type: error?.type,
       hasImage: !!req.body?.imageBase64,
     });
+    reportError({ endpoint: '/api/anthropic', error, severity: 'critical', req, context: { status: error?.status, type: error?.type, promptLength: built?.systemPrompt?.length } }).catch(() => {});
 
     if (error?.status === 401) {
       return res.status(500).json({ error: 'AI service error. Please contact support.' });
