@@ -465,6 +465,12 @@ export default function ChallengePage() {
                   </div>
                 )}
 
+                {/* Product suggestions */}
+                <div style={{ display: 'flex', gap: 8, marginBottom: 16, flexWrap: 'wrap' }}>
+                  <a href="/nano" style={{ flex: 1, minWidth: 140, textAlign: 'center', padding: '10px 14px', borderRadius: 10, background: 'rgba(201,168,76,0.06)', border: '1px solid rgba(201,168,76,0.15)', textDecoration: 'none', fontSize: 12, fontWeight: 700, color: '#C9A84C' }}>⚛️ Master this in Nano</a>
+                  <a href="/drill" style={{ flex: 1, minWidth: 140, textAlign: 'center', padding: '10px 14px', borderRadius: 10, background: 'rgba(79,142,247,0.06)', border: '1px solid rgba(79,142,247,0.15)', textDecoration: 'none', fontSize: 12, fontWeight: 700, color: '#4F8EF7' }}>⚡ Practice in Drill</a>
+                </div>
+
                 {/* Action buttons */}
                 <div style={{ display: 'flex', gap: 10, flexDirection: isMobile ? 'column' : 'row' }}>
                   <button onClick={() => { setAnswer(''); setResult(null); setShowHint(false); setTimeout(() => answerRef.current?.focus(), 200); }}
@@ -475,6 +481,11 @@ export default function ChallengePage() {
                     style={{ flex: 1, padding: '14px', borderRadius: 12, border: 'none', background: '#C9A84C', color: '#0A1628', fontSize: 14, fontWeight: 900, cursor: 'pointer', fontFamily: "'Sora',sans-serif" }}>
                     Next question →
                   </button>
+                </div>
+                <div style={{ textAlign: 'center', marginTop: 12 }}>
+                  <a href={fromDeck ? '/nixor' : '/'} style={{ fontSize: 13, color: 'rgba(250,246,235,0.35)', textDecoration: 'none', fontWeight: 600 }}>
+                    {fromDeck ? '← Back to presentation' : '← Back to home'}
+                  </a>
                 </div>
               </div>
             )}

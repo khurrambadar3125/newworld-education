@@ -108,7 +108,7 @@ export default function Mocks() {
         setStep('briefing');
         setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
       }
-    } catch {}
+    } catch (e) { setError('Failed to generate questions. Please try again.'); }
     setLoading(false);
   };
 
@@ -164,7 +164,7 @@ export default function Mocks() {
       setResults(data);
       setStep('results');
       setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
-    } catch {}
+    } catch (e) { setError('Marking failed. Please try again.'); }
     setLoading(false);
   };
 
