@@ -190,12 +190,8 @@ export default function Home() {
         }
         if (autoMsg) {
           setTimeout(() => {
-            setInput(autoMsg);
-            setTimeout(() => {
-              const btn = document.querySelector('.sb2');
-              if (btn && !btn.disabled) btn.click();
-            }, 400);
-          }, 300);
+            sendMessage(autoMsg);
+          }, 1200);
         }
       }, 200);
     } catch {}
