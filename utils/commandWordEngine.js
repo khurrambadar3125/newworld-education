@@ -90,6 +90,13 @@ const COMMAND_WORDS = [
     weakExample: 'Describe the graph. Answer: the rate increases because temperature rises.',
     strongExample: 'The rate increases from 2 cm3/s at 20\u00B0C to 8 cm3/s at 40\u00B0C. The rate doubles for every 10\u00B0C rise in temperature.',
     subjects: ['chemistry', 'physics', 'biology', 'mathematics', 'economics', 'english', 'business', 'computer_science', 'accounting', 'history', 'geography', 'islamiyat', 'pakistan_studies', 'sociology'],
+    subjectVariations: {
+      biology: 'For graphs: must quote specific values from axes. "Increases then decreases" = 0 marks. "Increases from 20 to 80 units between pH 2 and pH 7, then decreases to 0 at pH 12" = full marks.',
+      chemistry: 'For experiments: must describe observable changes only \u2014 colour, precipitate, gas, temperature change. Must not explain why changes occur.',
+      physics: 'For motion: must reference specific values from data. Must distinguish between constant speed, acceleration, deceleration, and stationary.',
+      geography: 'For patterns: must identify general trend AND exceptions. Must use compass directions for spatial patterns.',
+      history: 'NOT a useful command word at A Level \u2014 describes only earns Band 3 maximum. Answering a describe question analytically still only earns describe marks.',
+    },
   },
 
   {
@@ -123,6 +130,14 @@ const COMMAND_WORDS = [
     weakExample: 'Explain why diffusion is faster at higher temperatures. Answer: because particles have more energy.',
     strongExample: 'At higher temperatures particles have greater kinetic energy therefore they move faster. This means the concentration gradient is maintained and the rate of net movement from high to low concentration increases.',
     subjects: ['chemistry', 'physics', 'biology', 'mathematics', 'economics', 'english', 'business', 'computer_science', 'accounting', 'history', 'geography', 'islamiyat', 'pakistan_studies', 'sociology'],
+    subjectVariations: {
+      biology: 'Requires: what happens (1 mark) + mechanism/why (1 mark). "Because" is the trigger word. Missing mechanism = missing mark.',
+      chemistry: 'Requires: observation (1 mark) + particle/molecular reason (1 mark). Must reference particles/molecules/ions not just macroscopic observation.',
+      physics: 'Requires: what happens (1 mark) + physical principle (1 mark). Must name the relevant law or principle.',
+      economics: 'Requires: theoretical mechanism (1 mark) + effect on market/stakeholder (1 mark). Diagram expected for 4+ marks.',
+      history: 'Requires: factor stated (1 mark) + developed explanation with evidence (1-2 marks). "Because" is insufficient without specific historical evidence.',
+      english: 'Requires: technique identified (1 mark) + effect on reader explained (1 mark). "Because" not enough — must explain reader response specifically.',
+    },
   },
 
   {
@@ -292,6 +307,12 @@ const COMMAND_WORDS = [
     weakExample: 'Evaluate the use of nuclear power. Answer: Nuclear power is good because it produces a lot of energy.',
     strongExample: 'Nuclear power produces large amounts of energy with no CO2 emissions, addressing climate change. However waste remains radioactive for thousands of years and accidents like Chernobyl cause lasting environmental damage. On balance the long-term waste problem outweighs the short-term energy benefits unless safe storage can be guaranteed.',
     subjects: ['chemistry', 'physics', 'biology', 'economics', 'english', 'business', 'computer_science', 'history', 'geography', 'islamiyat', 'pakistan_studies', 'sociology'],
+    subjectVariations: {
+      economics: 'Requires: advantages (1-2 marks) + disadvantages (1-2 marks) + conclusion stating which outweighs and why (1 mark). Conclusion mark only awarded if both sides discussed first.',
+      history: 'Requires: evidence supporting view (1-2 marks) + counter-evidence (1-2 marks) + sustained judgement (1 mark). Judgement must be definitive — "it is more important because" not "it depends".',
+      biology: 'Requires: advantages of method/process (1 mark) + limitations/disadvantages (1 mark) + overall assessment (1 mark). Scientific evidence required throughout.',
+      business: 'Requires: financial/quantitative evidence (1 mark) + non-financial factors (1 mark) + overall recommendation linked to specific business context (1 mark). Generic conclusions score lower band.',
+    },
   },
 
   {
@@ -473,6 +494,137 @@ const COMMAND_WORDS = [
     strongExample: 'Draw line PQ through vertex A parallel to BC. Angle PAB = angle ABC (alternate angles, PQ \u2225 BC). Angle QAC = angle ACB (alternate angles). Angles PAB + BAC + QAC = 180\u00B0 (angles on a straight line). Therefore ABC + BAC + ACB = 180\u00B0.',
     subjects: ['mathematics'],
   },
+
+  // ═══ ENHANCED COMMAND WORDS — March 2026 ═══════════════════
+
+  {
+    word: 'sketch',
+    definition: 'Draw a diagram without precise measurements — showing correct shape and key features only.',
+    marksSignalled: '2-3 marks. Shape and labels matter, precision does not.',
+    mustInclude: ['correct shape', 'key labels', 'axes labelled if graph'],
+    willLoseMarks: ['attempting precise measurements when not asked', 'missing labels entirely'],
+    subjects: ['physics', 'chemistry', 'biology', 'mathematics'],
+  },
+  {
+    word: 'draw',
+    definition: 'Produce an accurate diagram with correct proportions and all labels.',
+    marksSignalled: '2-4 marks. Accuracy and completeness both required.',
+    mustInclude: ['ruled lines where appropriate', 'all parts labelled', 'correct proportions'],
+    willLoseMarks: ['freehand when ruler needed', 'missing labels', 'wrong proportions'],
+    subjects: ['physics', 'chemistry', 'biology'],
+  },
+  {
+    word: 'complete',
+    definition: 'Fill in missing information in a given structure — table, diagram, equation or passage.',
+    marksSignalled: '1-3 marks. One mark per blank typically.',
+    mustInclude: ['all blanks filled', 'correct format matching existing entries'],
+    willLoseMarks: ['leaving blanks', 'changing format of existing entries'],
+    subjects: ['chemistry', 'physics', 'biology', 'mathematics', 'economics', 'business', 'computer_science', 'accounting', 'history', 'geography'],
+  },
+  {
+    word: 'label',
+    definition: 'Add names to parts of a diagram already drawn.',
+    marksSignalled: '1 mark per label. Name only, no description.',
+    mustInclude: ['correct name for each part', 'clear line from label to part'],
+    willLoseMarks: ['description instead of name', 'label pointing to wrong part'],
+    subjects: ['biology', 'physics', 'chemistry'],
+  },
+  {
+    word: 'annotate',
+    definition: 'Add notes to a diagram explaining the function or significance of parts.',
+    marksSignalled: '2-3 marks. Notes must add information beyond labels.',
+    mustInclude: ['explanatory notes not just names', 'notes must add information beyond labels'],
+    willLoseMarks: ['labels only — no explanation', 'irrelevant notes'],
+    subjects: ['biology', 'geography', 'history'],
+  },
+  {
+    word: 'measure',
+    definition: 'Find a value using a given diagram, graph or instrument.',
+    marksSignalled: '1-2 marks. Value must include units.',
+    mustInclude: ['numerical value with units', 'method shown if more than one step'],
+    willLoseMarks: ['value without units', 'estimating when precision is required'],
+    subjects: ['physics', 'chemistry', 'mathematics'],
+  },
+  {
+    word: 'plot',
+    definition: 'Mark data points on a graph and draw line of best fit if required.',
+    marksSignalled: '2-4 marks. Points, scale, line, labels all carry marks.',
+    mustInclude: ['all points plotted accurately', 'appropriate scale', 'line of best fit if asked', 'axes labelled with units'],
+    willLoseMarks: ['joining points with straight lines when curve needed', 'missing axis labels', 'scale not using more than half grid'],
+    subjects: ['mathematics', 'physics', 'chemistry', 'biology', 'economics'],
+  },
+  {
+    word: 'show',
+    definition: 'Demonstrate something is true by providing evidence or working — the answer is given, prove it.',
+    marksSignalled: '3-4 marks. Every step must be shown explicitly.',
+    mustInclude: ['complete working', 'each step shown explicitly', 'reaching the given answer without using it in working'],
+    willLoseMarks: ['circular argument — using given answer to prove itself', 'missing steps in working'],
+    subjects: ['mathematics', 'physics', 'chemistry'],
+  },
+  {
+    word: 'find',
+    definition: 'Obtain an answer showing appropriate working.',
+    marksSignalled: '2-3 marks. Less formal than Calculate but working still required.',
+    mustInclude: ['answer', 'working shown', 'units if numerical'],
+    willLoseMarks: ['answer without working', 'missing units'],
+    subjects: ['mathematics', 'physics', 'chemistry'],
+  },
+  {
+    word: 'estimate',
+    definition: 'Produce an approximate answer using rounded or simplified values.',
+    marksSignalled: '2-3 marks. Order of magnitude must be correct.',
+    mustInclude: ['order of magnitude correct', 'simplified values stated', 'method shown even if approximate'],
+    willLoseMarks: ['precise calculation when approximation asked for', 'no method shown'],
+    subjects: ['mathematics', 'physics', 'economics'],
+  },
+  {
+    word: 'classify',
+    definition: 'Arrange items into groups based on shared characteristics.',
+    marksSignalled: '1-2 marks per item classified.',
+    mustInclude: ['correct group for each item', 'groups clearly labelled'],
+    willLoseMarks: ['description instead of classification', 'items in wrong groups'],
+    subjects: ['biology', 'chemistry', 'history'],
+  },
+  {
+    word: 'compare and contrast',
+    definition: 'Identify both similarities AND differences — both required.',
+    marksSignalled: '3-4 marks. Must have BOTH similarities AND differences.',
+    mustInclude: ['explicit similarity statements', 'explicit difference statements', 'comparative language: whereas/however/similarly/in contrast'],
+    willLoseMarks: ['describing each separately', 'only similarities or only differences', 'no comparative connectives'],
+    subjects: ['chemistry', 'physics', 'biology', 'economics', 'business', 'computer_science', 'history', 'geography', 'sociology'],
+  },
+  {
+    word: 'outline',
+    definition: 'Give a brief account covering main points without detail.',
+    marksSignalled: '2-3 marks. Conciseness rewarded.',
+    mustInclude: ['all main points covered', 'concise — no unnecessary detail'],
+    willLoseMarks: ['excessive detail', 'missing key points in favour of detail'],
+    subjects: ['history', 'economics', 'biology'],
+  },
+  {
+    word: 'account for',
+    definition: 'Give reasons for — more detailed than explain, requires full causal chain.',
+    marksSignalled: '3-4 marks. All contributing factors needed.',
+    mustInclude: ['all contributing factors', 'causal chain showing how factors connect', 'specific rather than general reasons'],
+    willLoseMarks: ['partial explanation', 'general statements without specifics'],
+    subjects: ['history', 'economics', 'geography'],
+  },
+  {
+    word: 'interpret',
+    definition: 'Explain the meaning or significance of data, a source, or result.',
+    marksSignalled: '2-3 marks. Meaning must be stated, not just described.',
+    mustInclude: ['meaning stated clearly', 'reference to specific data/evidence', 'significance explained not just described'],
+    willLoseMarks: ['description without meaning', 'ignoring the specific data given'],
+    subjects: ['history', 'economics', 'geography', 'biology'],
+  },
+  {
+    word: 'construct',
+    definition: 'Build or create something — a table, graph, equation, argument.',
+    marksSignalled: '2-4 marks. All required elements must be present.',
+    mustInclude: ['all required elements present', 'correct format', 'accurate content'],
+    willLoseMarks: ['missing elements', 'wrong format', 'inaccurate construction'],
+    subjects: ['mathematics', 'chemistry', 'physics', 'economics'],
+  },
 ];
 
 
@@ -586,8 +738,18 @@ function escapeRegex(s) {
 }
 
 
+const COMMAND_WORD_HIERARCHY = {
+  level1_recall: ['state', 'name', 'give', 'identify', 'list', 'label', 'complete'],
+  level2_description: ['describe', 'outline', 'sketch', 'draw', 'plot', 'annotate'],
+  level3_explanation: ['explain', 'account for', 'show', 'demonstrate'],
+  level4_application: ['suggest', 'predict', 'deduce', 'estimate', 'calculate', 'find', 'determine', 'measure', 'construct'],
+  level5_analysis: ['analyse', 'examine', 'interpret', 'classify', 'compare', 'contrast', 'compare and contrast', 'distinguish between'],
+  level6_evaluation: ['evaluate', 'assess', 'discuss', 'justify', 'to what extent', 'how far do you agree', 'critically evaluate', 'comment on'],
+};
+
 module.exports = {
   COMMAND_WORDS,
+  COMMAND_WORD_HIERARCHY,
   EXAM_TECHNIQUE_RULES,
   getCommandWord,
   getCommandWordsBySubject,
