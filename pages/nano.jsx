@@ -40,6 +40,14 @@ export default function NanoPage() {
   const [unitFilter, setUnitFilter] = useState('all');
   const [levelFilter, setLevelFilter] = useState('all');
 
+  const [allMasteryMap, setAllMasteryMap] = useState({});
+  const [allSubjectMastery, setAllSubjectMastery] = useState({});
+  const [weeklyGoals, setWeeklyGoals] = useState(0);
+  const [strongestSubject, setStrongestSubject] = useState(null);
+  const [userEmail, setUserEmail] = useState(null);
+  const [isFirstNanoSession, setIsFirstNanoSession] = useState(false);
+  const [showWelcome, setShowWelcome] = useState(false);
+
   const goalsRef = useRef(null);
   const gridRef = useRef(null);
 
@@ -47,6 +55,50 @@ export default function NanoPage() {
     const fn = () => setIsMobile(window.innerWidth < 768);
     fn(); window.addEventListener('resize', fn);
     return () => window.removeEventListener('resize', fn);
+  }, []);
+
+  // Load all mastery data on mount — powers subject cards, momentum, recommendations
+  useEffect(() => {
+    try {
+      const email = JSON.parse(localStorage.getItem('nw_user') || '{}').email;
+      if (!email) return;
+      setUserEmail(email);
+      fetch(`/api/atoms/get-mastery?studentId=${encodeURIComponent(email)}`)
+        .then(r => r.json())
+        .then(data => {
+          const records = data.mastery || [];
+          const aMap = {};
+          records.forEach(r => { aMap[r.atom_id] = r; });
+          setAllMasteryMap(aMap);
+          if (records.length === 0 && !localStorage.getItem('nw_nano_welcomed')) {
+            setIsFirstNanoSession(true);
+            setShowWelcome(true);
+          }
+          const sMap = {};
+          const sMasteredCounts = {};
+          const weekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString();
+          let wCount = 0;
+          ATOMS_SUBJECTS.forEach(s => {
+            const sa = getAtomsBySubject(s.id);
+            const mastered = sa.filter(a => aMap[a.id]?.mastery_score >= 7).length;
+            sMap[s.id] = { mastered, total: sa.length };
+            sMasteredCounts[s.id] = mastered;
+          });
+          records.forEach(r => {
+            if (r.mastery_score >= 7 && r.last_seen > weekAgo) wCount++;
+          });
+          setAllSubjectMastery(sMap);
+          setWeeklyGoals(wCount);
+          let bestId = null, bestCount = 0;
+          Object.entries(sMasteredCounts).forEach(([id, count]) => {
+            if (count > bestCount) { bestCount = count; bestId = id; }
+          });
+          if (bestId && bestCount > 0) {
+            const subj = ATOMS_SUBJECTS.find(s => s.id === bestId);
+            setStrongestSubject(subj || null);
+          }
+        }).catch(() => {});
+    } catch {}
   }, []);
 
   // Load atoms when subject selected
@@ -117,7 +169,7 @@ export default function NanoPage() {
       nextGoal = atoms.find(a => !mastery[a.id] || mastery[a.id].mastery_score < 7);
     }
     const remaining = atoms.length - masteredCount;
-    const estMinutes = remaining * 3;
+    const estMinutes = remaining * 8;
     return { weakestUnit, worstPct, nextGoal, remaining, estMinutes };
   }, [atoms, mastery, unitMap, masteredCount]);
 
@@ -125,8 +177,44 @@ export default function NanoPage() {
     ? ATOMS_SUBJECTS
     : ATOMS_SUBJECTS.filter(s => s.level === levelFilter);
 
-  const starkyMessage = (goalText) =>
-    `Starky, teach me: ${goalText}. Then test me with a Cambridge exam question and mark my answer.`;
+  // Recommended next goal — high weight, lowest difficulty, not mastered
+  const recommendedGoal = useMemo(() => {
+    if (!userEmail) return null;
+    let best = null, bestSubject = null;
+    for (const s of ATOMS_SUBJECTS) {
+      const sa = getAtomsBySubject(s.id);
+      for (const a of sa) {
+        if (allMasteryMap[a.id]?.mastery_score >= 7) continue;
+        if (!best) { best = a; bestSubject = s; continue; }
+        if (a.examWeight === 'high' && best.examWeight !== 'high') { best = a; bestSubject = s; continue; }
+        if (a.examWeight !== 'high' && best.examWeight === 'high') continue;
+        if (a.difficulty < best.difficulty) { best = a; bestSubject = s; }
+      }
+    }
+    return best ? { goal: best, subject: bestSubject } : null;
+  }, [allMasteryMap, userEmail]);
+
+  // Sorted + grouped atoms for unit-based rendering
+  const sortedGroupedAtoms = useMemo(() => {
+    const target = unitFilter === 'all' ? atoms : (unitMap[unitFilter] || []);
+    const groups = {};
+    target.forEach(a => { if (!groups[a.unit]) groups[a.unit] = []; groups[a.unit].push(a); });
+    return Object.entries(groups).map(([unit, uAtoms]) => ({
+      unit,
+      atoms: [...uAtoms].sort((a, b) => {
+        const sA = mastery[a.id]?.mastery_score || 0;
+        const sB = mastery[b.id]?.mastery_score || 0;
+        const rankA = sA >= 7 ? 2 : sA >= 1 ? 0 : 1;
+        const rankB = sB >= 7 ? 2 : sB >= 1 ? 0 : 1;
+        return rankA - rankB;
+      }),
+    }));
+  }, [atoms, unitFilter, unitMap, mastery]);
+
+  const buildNanoMessage = (goal, goalNumber, subject, isFirst = false) => {
+    const firstPrefix = isFirst ? `[FIRST_NANO_SESSION]\n\nThis is my first time using Starky Nano. I am about to work on my very first Nano goal.\n\nStarky — please:\n1. Welcome me warmly to Nano\n2. Tell me in ONE sentence what makes Nano different from just reading notes\n3. Then begin the 5-step lesson for this goal as normal\n\nAfter I complete this goal and you confirm NANO_GOAL_COMPLETE, also say:\n"That is Goal 1 complete. You have started your Nano journey. Students who complete their first 10 goals improve their exam results by an average of one full grade. You have begun."\n\n` : '';
+    return `${firstPrefix}Starky, I am working on Nano Goal ${goalNumber} in ${subject}.\n\nThe goal is: "${goal.atom}"\n\nPlease follow these exact steps:\n\nSTEP 1 — TEACH\nExplain this concept clearly in 3-4 sentences. Use simple language. Give one real-world example if it helps. Do not test me yet.\n\nSTEP 2 — CHECK UNDERSTANDING\nAsk me ONE question to check I understood your explanation. Wait for my answer before moving on.\n\nSTEP 3 — CAMBRIDGE EXAM QUESTION\nGive me the real Cambridge exam question for this concept. Tell me how many marks it is worth. Tell me the command word and what it requires.\n\nSTEP 4 — MARK MY ANSWER\nWhen I submit my answer, mark it against the Cambridge mark scheme. Tell me:\n- Which marks I earned and why\n- Which marks I lost and why\n- The exact phrases Cambridge wants to see\n\nSTEP 5 — CONFIRM COMPLETION\nIf I score full marks (or at least 70%):\nSay exactly this: "NANO_GOAL_COMPLETE:${goal.id}"\nThen say: "Goal ${goalNumber} mastered. Well done. You are ready for the next goal."\n\nIf I do not score full marks:\nGive me one more attempt with a hint.\nDo not confirm completion until I reach 70% or above.\n\nMy subject context: ${subject}\nMy goal ID: ${goal.id}\nMy goal difficulty: ${goal.difficulty}/5\nMy exam weight: ${goal.examWeight}`;
+  };
 
   const handleSelectSubject = (s) => {
     setSelected(s);
@@ -192,7 +280,52 @@ export default function NanoPage() {
         </div>
       </div>
 
+      {/* ═══ FIRST NANO SESSION WELCOME ═══ */}
+      {showWelcome && (
+        <div className="nano-fadein" style={{ maxWidth: 600, margin: '0 auto', padding: isMobile ? '0 20px 32px' : '0 24px 40px' }}>
+          <div style={{ background: 'rgba(201,168,76,0.04)', border: '1px solid rgba(201,168,76,0.2)', borderRadius: 20, padding: isMobile ? '32px 20px' : '40px 36px', textAlign: 'center' }}>
+            <div style={{ fontSize: 40, marginBottom: 16 }}>&#9883;&#65039;</div>
+            <h2 style={{ fontSize: isMobile ? 22 : 28, fontWeight: 900, color: '#C9A84C', margin: '0 0 20px', lineHeight: 1.3 }}>Welcome to Starky Nano</h2>
+            <p style={{ fontSize: isMobile ? 14 : 16, color: 'rgba(250,246,235,0.7)', lineHeight: 1.8, margin: '0 0 20px', fontStyle: 'italic', maxWidth: 460, marginLeft: 'auto', marginRight: 'auto' }}>
+              &ldquo;Every A* student in Cambridge history mastered the same content you&apos;re about to study. The difference was how deeply they understood each concept &mdash; not how much they covered.&rdquo;
+            </p>
+            <p style={{ fontSize: isMobile ? 13 : 15, color: 'rgba(250,246,235,0.55)', lineHeight: 1.7, margin: '0 0 12px', maxWidth: 460, marginLeft: 'auto', marginRight: 'auto' }}>
+              Starky Nano breaks every Cambridge subject into individual learning goals. Master one goal at a time. Starky teaches it. Starky tests it. You own it before you move on.
+            </p>
+            <p style={{ fontSize: isMobile ? 13 : 15, color: '#C9A84C', fontWeight: 700, margin: '0 0 24px' }}>
+              Start with one goal today. That&apos;s all it takes to begin.
+            </p>
+            <button onClick={() => { setShowWelcome(false); localStorage.setItem('nw_nano_welcomed', '1'); }}
+              className="nano-learn-btn"
+              style={{ fontSize: 16, fontWeight: 700, color: '#0A1628', background: '#C9A84C', border: 'none', borderRadius: 12, padding: '14px 36px', cursor: 'pointer' }}>
+              Choose Your First Subject &rarr;
+            </button>
+          </div>
+        </div>
+      )}
+
       <div style={{ maxWidth: 900, margin: '0 auto', padding: isMobile ? '0 16px 40px' : '0 24px 60px' }}>
+
+        {/* ═══ MOMENTUM BAR (logged in users) ═══ */}
+        {userEmail && (weeklyGoals > 0 || strongestSubject) && (
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginBottom: 20, justifyContent: 'center' }}>
+            {weeklyGoals > 0 && (
+              <div style={{ background: 'rgba(255,140,0,0.08)', border: '1px solid rgba(255,140,0,0.2)', borderRadius: 10, padding: '8px 16px', fontSize: 13, fontWeight: 700, color: '#FF8C00' }}>
+                &#128293; You&apos;ve mastered {weeklyGoals} goal{weeklyGoals !== 1 ? 's' : ''} this week
+              </div>
+            )}
+            {strongestSubject && (
+              <div style={{ background: 'rgba(201,168,76,0.08)', border: '1px solid rgba(201,168,76,0.2)', borderRadius: 10, padding: '8px 16px', fontSize: 13, fontWeight: 700, color: '#C9A84C' }}>
+                &#9889; Strongest: {strongestSubject.label}
+              </div>
+            )}
+            {strongestSubject && allSubjectMastery[strongestSubject.id] && allSubjectMastery[strongestSubject.id].mastered < allSubjectMastery[strongestSubject.id].total && (
+              <div style={{ background: 'rgba(79,142,247,0.08)', border: '1px solid rgba(79,142,247,0.2)', borderRadius: 10, padding: '8px 16px', fontSize: 13, fontWeight: 700, color: '#4F8EF7' }}>
+                &#128200; {allSubjectMastery[strongestSubject.id].total - allSubjectMastery[strongestSubject.id].mastered} goals to finish {strongestSubject.label}
+              </div>
+            )}
+          </div>
+        )}
 
         {/* ═══ LEVEL FILTER TABS ═══ */}
         <div ref={gridRef} style={{ display: 'flex', gap: 8, marginBottom: 20, justifyContent: 'center' }}>
@@ -216,13 +349,50 @@ export default function NanoPage() {
                 style={{ background: isSelected ? 'rgba(201,168,76,0.08)' : 'rgba(250,246,235,0.03)', border: isSelected ? '2px solid #C9A84C' : '1px solid rgba(250,246,235,0.06)', borderRadius: 14, padding: isMobile ? '18px 10px' : '22px 14px', cursor: 'pointer', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
                 <div style={{ fontSize: 28, marginBottom: 6 }}>{s.icon}</div>
                 <div style={{ fontWeight: 800, fontSize: 14, color: '#FAF6EB', marginBottom: 2 }}>{s.label}</div>
-                <div style={{ fontSize: 10, color: 'rgba(250,246,235,0.35)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 8 }}>{s.level}</div>
-                <div style={{ fontSize: 20, fontWeight: 900, color: '#C9A84C' }}>{s.totalAtoms}</div>
-                <div style={{ fontSize: 10, color: 'rgba(250,246,235,0.3)' }}>goals</div>
+                <div style={{ fontSize: 10, color: 'rgba(250,246,235,0.35)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 6 }}>{s.level}</div>
+                {(() => {
+                  const sm = allSubjectMastery[s.id];
+                  const sMastered = sm?.mastered || 0;
+                  const sTotal = sm?.total || s.totalAtoms;
+                  const sPct = sTotal > 0 ? Math.round((sMastered / sTotal) * 100) : 0;
+                  const sRemaining = sTotal - sMastered;
+                  const sMinutes = sRemaining * 8;
+                  const sTime = sMinutes < 60 ? `~${sMinutes} min` : `~${Math.round(sMinutes / 60)} hrs`;
+                  const status = sMastered === 0 ? 'not_started' : sMastered >= sTotal ? 'complete' : 'in_progress';
+                  return (
+                    <>
+                      <ProgressRing percent={sPct} size={40} stroke={3} color={status === 'complete' ? '#4CC97B' : '#C9A84C'} />
+                      <div style={{ fontSize: 11, fontWeight: 700, color: 'rgba(250,246,235,0.5)', marginTop: 4 }}>{sMastered} of {sTotal}</div>
+                      {sRemaining > 0 && <div style={{ fontSize: 10, color: 'rgba(250,246,235,0.25)', marginTop: 2 }}>{sTime} left</div>}
+                      <div style={{ display: 'inline-block', fontSize: 9, fontWeight: 800, marginTop: 6, padding: '2px 8px', borderRadius: 4, textTransform: 'uppercase', letterSpacing: '0.05em',
+                        ...(status === 'complete' ? { background: 'rgba(76,201,123,0.15)', color: '#4CC97B', border: '1px solid rgba(76,201,123,0.3)' } : status === 'in_progress' ? { background: 'rgba(201,168,76,0.12)', color: '#C9A84C', border: '1px solid rgba(201,168,76,0.25)' } : { background: 'rgba(250,246,235,0.04)', color: 'rgba(250,246,235,0.3)', border: '1px solid rgba(250,246,235,0.06)' })
+                      }}>{status === 'complete' ? '\u2705 Complete' : status === 'in_progress' ? 'In progress' : 'Not started'}</div>
+                    </>
+                  );
+                })()}
               </button>
             );
           })}
         </div>
+
+        {/* ═══ RECOMMENDED NEXT GOAL ═══ */}
+        {!selected && recommendedGoal && (
+          <div className="nano-fadein" style={{ background: 'rgba(201,168,76,0.04)', border: '1px solid rgba(201,168,76,0.15)', borderRadius: 16, padding: isMobile ? '20px' : '24px', marginBottom: 28 }}>
+            <div style={{ fontSize: 10, fontWeight: 700, color: 'rgba(250,246,235,0.35)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 10 }}>&#127919; Recommended Next Goal</div>
+            <div style={{ fontSize: 12, fontWeight: 700, color: '#C9A84C', marginBottom: 6 }}>{recommendedGoal.subject.icon} {recommendedGoal.subject.label} — {recommendedGoal.subject.level}</div>
+            <div style={{ fontSize: 15, fontWeight: 700, color: '#FAF6EB', lineHeight: 1.55, marginBottom: 10 }}>{recommendedGoal.goal.atom}</div>
+            <div style={{ display: 'flex', gap: 10, alignItems: 'center', marginBottom: 14, flexWrap: 'wrap' }}>
+              <DifficultyDots level={recommendedGoal.goal.difficulty} />
+              <span style={{ fontSize: 9, padding: '2px 7px', borderRadius: 4, fontWeight: 700, textTransform: 'uppercase', background: 'rgba(201,168,76,0.12)', color: '#C9A84C', border: '1px solid rgba(201,168,76,0.25)' }}>
+                {recommendedGoal.goal.examWeight === 'high' ? 'HIGH WEIGHT' : 'MED WEIGHT'}
+              </span>
+            </div>
+            <a href={`/?message=${encodeURIComponent(buildNanoMessage(recommendedGoal.goal, 1, recommendedGoal.subject.label, isFirstNanoSession))}&subject=${encodeURIComponent(recommendedGoal.subject.label)}&from=nano&goalId=${encodeURIComponent(recommendedGoal.goal.id)}&goalNumber=1`}
+              className="nano-learn-btn" style={{ display: 'inline-block', fontSize: 14, fontWeight: 700, color: '#C9A84C', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 10, padding: '10px 24px', textDecoration: 'none' }}>
+              Learn this with Starky &rarr;
+            </a>
+          </div>
+        )}
 
         {/* ═══ GOALS SECTION (when subject selected) ═══ */}
         {selected && atoms.length > 0 && (
@@ -291,70 +461,92 @@ export default function NanoPage() {
               })}
             </div>
 
-            {/* ── Goals List ── */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginBottom: 28 }}>
-              {filteredAtoms.map((a, idx) => {
-                const m = mastery[a.id];
-                const score = m?.mastery_score || 0;
-                const isMastered = score >= 7;
-                const inProgress = score >= 1 && score < 7;
-                const goalNum = unitFilter === 'all' ? atoms.indexOf(a) + 1 : idx + 1;
-
+            {/* ── Goals List (grouped by unit, sorted by status) ── */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 0, marginBottom: 28 }}>
+              {sortedGroupedAtoms.map(group => {
+                const unitAtomsFull = unitMap[group.unit] || [];
+                const unitMastered = unitAtomsFull.filter(a => mastery[a.id]?.mastery_score >= 7).length;
+                const unitPct = unitAtomsFull.length > 0 ? Math.round((unitMastered / unitAtomsFull.length) * 100) : 0;
+                const unitComplete = unitMastered === unitAtomsFull.length && unitAtomsFull.length > 0;
                 return (
-                  <div key={a.id} className="nano-goal-row"
-                    style={{ display: 'flex', alignItems: isMobile ? 'flex-start' : 'center', gap: isMobile ? 10 : 14, padding: isMobile ? '14px 12px' : '14px 18px', background: 'rgba(250,246,235,0.02)', borderRadius: 12, border: '1px solid rgba(250,246,235,0.04)', flexDirection: isMobile ? 'column' : 'row' }}>
-
-                    {/* Top row: number + status + goal text */}
-                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12, flex: 1, minWidth: 0, width: isMobile ? '100%' : 'auto' }}>
-                      {/* Goal number */}
-                      <div style={{ fontSize: 11, fontWeight: 800, color: 'rgba(250,246,235,0.2)', minWidth: 28, flexShrink: 0, paddingTop: 2 }}>
-                        #{goalNum}
-                      </div>
-
-                      {/* Mastery status icon */}
-                      <div style={{ fontSize: 16, flexShrink: 0, paddingTop: 1 }}>
-                        {isMastered ? '\u2705' : inProgress ? '\u26A1' : '\u25CB'}
-                      </div>
-
-                      {/* Goal text + metadata */}
-                      <div style={{ flex: 1, minWidth: 0 }}>
-                        <div style={{ fontSize: 13, fontWeight: 600, color: isMastered ? 'rgba(250,246,235,0.45)' : '#FAF6EB', lineHeight: 1.55, textDecoration: isMastered ? 'line-through' : 'none', textDecorationColor: 'rgba(250,246,235,0.15)' }}>
-                          {a.atom}
+                  <div key={group.unit} style={{ marginBottom: 12 }}>
+                    {/* Unit header */}
+                    <div style={{ padding: '14px 18px 10px', borderRadius: '12px 12px 0 0',
+                      background: unitComplete ? 'rgba(76,201,123,0.04)' : 'rgba(250,246,235,0.02)',
+                      ...(unitComplete ? { boxShadow: '0 0 20px rgba(201,168,76,0.08)' } : {}) }}>
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
+                        <div style={{ fontSize: 13, fontWeight: 800, color: unitComplete ? '#4CC97B' : '#FAF6EB' }}>
+                          {group.unit} {unitComplete && '\u2705'}
                         </div>
-                        <div style={{ display: 'flex', gap: 10, alignItems: 'center', marginTop: 6, flexWrap: 'wrap' }}>
-                          <DifficultyDots level={a.difficulty} />
-                          <span style={{
-                            fontSize: 9, padding: '2px 7px', borderRadius: 4, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.03em',
-                            background: a.examWeight === 'high' ? 'rgba(201,168,76,0.12)' : 'rgba(250,246,235,0.04)',
-                            color: a.examWeight === 'high' ? '#C9A84C' : 'rgba(250,246,235,0.3)',
-                            border: `1px solid ${a.examWeight === 'high' ? 'rgba(201,168,76,0.25)' : 'rgba(250,246,235,0.06)'}`,
-                          }}>
-                            {a.examWeight === 'high' ? 'HIGH' : 'MED'}
-                          </span>
-                          {isMastered && (
-                            <span style={{ fontSize: 10, fontWeight: 700, color: '#4CC97B' }}>Mastered</span>
-                          )}
-                          {inProgress && (
-                            <span style={{ fontSize: 10, fontWeight: 700, color: '#C9A84C' }}>In progress</span>
-                          )}
+                        <div style={{ fontSize: 11, color: 'rgba(250,246,235,0.4)', fontWeight: 600 }}>
+                          {unitMastered} of {unitAtomsFull.length} mastered
                         </div>
+                      </div>
+                      <div style={{ height: 4, background: 'rgba(250,246,235,0.06)', borderRadius: 2, overflow: 'hidden' }}>
+                        <div style={{ height: '100%', width: `${unitPct}%`, background: unitComplete ? '#4CC97B' : '#C9A84C', borderRadius: 2, transition: 'width 0.6s ease' }} />
                       </div>
                     </div>
+                    {/* Goals in this unit */}
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 4, paddingTop: 4 }}>
+                      {group.atoms.map(a => {
+                        const m = mastery[a.id];
+                        const score = m?.mastery_score || 0;
+                        const isMastered = score >= 7;
+                        const inProgress = score >= 1 && score < 7;
+                        const goalNum = atoms.indexOf(a) + 1;
 
-                    {/* Learn with Starky button */}
-                    {!isMastered && (
-                      <a href={`/?message=${encodeURIComponent(starkyMessage(a.atom))}&subject=${encodeURIComponent(selected.label)}&from=nano`}
-                        className="nano-learn-btn"
-                        style={{
-                          flexShrink: 0, fontSize: 13, fontWeight: 700, color: '#C9A84C',
-                          border: '1px solid rgba(201,168,76,0.3)', borderRadius: 10,
-                          padding: isMobile ? '10px 0' : '9px 18px',
-                          textDecoration: 'none', whiteSpace: 'nowrap', textAlign: 'center',
-                          width: isMobile ? '100%' : 'auto', display: 'block',
-                        }}>
-                        Learn with Starky &rarr;
-                      </a>
-                    )}
+                        return (
+                          <div key={a.id} className="nano-goal-row"
+                            style={{ display: 'flex', alignItems: isMobile ? 'flex-start' : 'center', gap: isMobile ? 10 : 14, padding: isMobile ? '14px 12px' : '14px 18px', background: 'rgba(250,246,235,0.02)', borderRadius: 12, border: '1px solid rgba(250,246,235,0.04)', flexDirection: isMobile ? 'column' : 'row' }}>
+
+                            <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12, flex: 1, minWidth: 0, width: isMobile ? '100%' : 'auto' }}>
+                              <div style={{ fontSize: 11, fontWeight: 800, color: 'rgba(250,246,235,0.2)', minWidth: 28, flexShrink: 0, paddingTop: 2 }}>
+                                #{goalNum}
+                              </div>
+                              <div style={{ fontSize: 16, flexShrink: 0, paddingTop: 1 }}>
+                                {isMastered ? '\u2705' : inProgress ? '\u26A1' : '\u25CB'}
+                              </div>
+                              <div style={{ flex: 1, minWidth: 0 }}>
+                                <div style={{ fontSize: 13, fontWeight: 600, color: isMastered ? 'rgba(250,246,235,0.45)' : '#FAF6EB', lineHeight: 1.55, textDecoration: isMastered ? 'line-through' : 'none', textDecorationColor: 'rgba(250,246,235,0.15)' }}>
+                                  {a.atom}
+                                </div>
+                                <div style={{ display: 'flex', gap: 10, alignItems: 'center', marginTop: 6, flexWrap: 'wrap' }}>
+                                  <DifficultyDots level={a.difficulty} />
+                                  <span style={{
+                                    fontSize: 9, padding: '2px 7px', borderRadius: 4, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.03em',
+                                    background: a.examWeight === 'high' ? 'rgba(201,168,76,0.12)' : 'rgba(250,246,235,0.04)',
+                                    color: a.examWeight === 'high' ? '#C9A84C' : 'rgba(250,246,235,0.3)',
+                                    border: `1px solid ${a.examWeight === 'high' ? 'rgba(201,168,76,0.25)' : 'rgba(250,246,235,0.06)'}`,
+                                  }}>
+                                    {a.examWeight === 'high' ? 'HIGH' : 'MED'}
+                                  </span>
+                                  {isMastered && (
+                                    <span style={{ fontSize: 10, fontWeight: 700, color: '#4CC97B' }}>Mastered</span>
+                                  )}
+                                  {inProgress && (
+                                    <span style={{ fontSize: 10, fontWeight: 700, color: '#C9A84C' }}>In progress</span>
+                                  )}
+                                </div>
+                              </div>
+                            </div>
+
+                            {!isMastered && (
+                              <a href={`/?message=${encodeURIComponent(buildNanoMessage(a, goalNum, selected.label, isFirstNanoSession))}&subject=${encodeURIComponent(selected.label)}&from=nano&goalId=${encodeURIComponent(a.id)}&goalNumber=${goalNum}`}
+                                className="nano-learn-btn"
+                                style={{
+                                  flexShrink: 0, fontSize: 13, fontWeight: 700, color: '#C9A84C',
+                                  border: '1px solid rgba(201,168,76,0.3)', borderRadius: 10,
+                                  padding: isMobile ? '10px 0' : '9px 18px',
+                                  textDecoration: 'none', whiteSpace: 'nowrap', textAlign: 'center',
+                                  width: isMobile ? '100%' : 'auto', display: 'block',
+                                }}>
+                                Learn with Starky &rarr;
+                              </a>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 );
               })}

@@ -74,6 +74,8 @@ const SUBJECTS_ALEVEL = [
 function formatMsg(text) {
   if (!text) return '<span style="opacity:0.4">...</span>';
   if (text === '...') return '<span style="opacity:0.4">Starky is typing...</span>';
+  text = text.replace(/NANO_GOAL_COMPLETE:[a-z0-9_]+/g, '');
+  text = text.replace(/\[FIRST_NANO_SESSION\]/g, '');
   return text
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
     .replace(/^#{1,3}\s+(.+)$/gm, '<strong style="font-size:1.1em">$1</strong>')
@@ -134,7 +136,10 @@ export default function Home() {
   // ── Query param handler: /?message=&subject=&grade=&goal=&from= ──
   const [paramFrom, setParamFrom] = useState(null);
   const [nanoMode, setNanoMode] = useState(false);
+  const [nanoGoalComplete, setNanoGoalComplete] = useState(null);
+  const [showNanoCelebration, setShowNanoCelebration] = useState(false);
   const paramHandled = useRef(false);
+  const nanoGoalRef = useRef(null);
   useEffect(() => {
     if (paramHandled.current) return;
     try {
@@ -144,10 +149,13 @@ export default function Home() {
       const urlSubject = params.get('subject');
       const urlGrade = params.get('grade');
       const urlFrom = params.get('from');
+      const urlGoalId = params.get('goalId');
+      const urlGoalNumber = params.get('goalNumber');
       // Need at least one actionable param
       if (!urlMessage && !urlGoal && !urlSubject && !urlGrade) return;
       paramHandled.current = true;
       if (urlFrom) setParamFrom(urlFrom);
+      if (urlGoalId) nanoGoalRef.current = { goalId: urlGoalId, goalNumber: urlGoalNumber, subject: urlSubject };
       if (urlMessage || urlGoal) setNanoMode(true);
       // Set subject context
       if (urlSubject) setSelectedSubject(urlSubject);
@@ -392,6 +400,28 @@ export default function Home() {
       if (!res.headers.get('content-type')?.includes('text/event-stream')) {
         setMessages([...newMsgs, { role: 'assistant', content: finalReply }]);
       }
+      // ── Nano Goal Completion Detection ──
+      if (nanoMode && finalReply) {
+        const nanoMatch = finalReply.match(/NANO_GOAL_COMPLETE:([a-z0-9_]+)/);
+        if (nanoMatch) {
+          const completedGoalId = nanoMatch[1];
+          const goalNum = nanoGoalRef.current?.goalNumber;
+          const goalSubject = nanoGoalRef.current?.subject || selectedSubject;
+          setNanoGoalComplete({ goalId: completedGoalId, goalNumber: goalNum, subject: goalSubject });
+          setShowNanoCelebration(true);
+          setTimeout(() => setShowNanoCelebration(false), 2500);
+          try {
+            const sid = p?.email || userProfile?.email;
+            if (sid) {
+              fetch('/api/atoms/track-mastery', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ studentId: sid, atomId: completedGoalId, masteryScore: 8 }),
+              }).catch(() => {});
+            }
+          } catch {}
+        }
+      }
       try { recordCall(); } catch(e) {}
       // UAE Summer Passport — increment stamp after each session
       try {
@@ -531,6 +561,14 @@ export default function Home() {
             &larr; Back to {paramFrom === 'nano' || !paramFrom ? 'Nano' : paramFrom === 'study-plan' ? 'Study Plan' : paramFrom === 'starky-saturdays' ? 'Starky Saturdays' : paramFrom === 'dashboard' ? 'Dashboard' : paramFrom.charAt(0).toUpperCase() + paramFrom.slice(1)}
           </a>
         )}
+        {showNanoCelebration && (
+          <div style={{position:'absolute',top:0,left:0,right:0,bottom:0,display:'flex',alignItems:'center',justifyContent:'center',background:'rgba(201,168,76,0.95)',zIndex:50,animation:'nanoFadeIn 0.3s ease'}}>
+            <div style={{textAlign:'center',color:'#0A1628'}}>
+              <div style={{fontSize:48}}>&#9989;</div>
+              <div style={{fontSize:22,fontWeight:900,marginTop:8}}>Goal Complete!</div>
+            </div>
+          </div>
+        )}
         {!isLimitReached && remaining <= 2 && (
           <div className={`sb ${remaining <= 1 ? 'd' : 'w'}`}>{remaining} session{remaining !== 1 ? 's' : ''} remaining today</div>
         )}
@@ -574,6 +612,14 @@ export default function Home() {
             </div>
           )}
           <div ref={messagesEndRef} />
+          {nanoGoalComplete && !showNanoCelebration && (
+            <div style={{textAlign:'center',padding:'12px 0'}}>
+              <a href={`/nano?subject=${encodeURIComponent(nanoGoalComplete.subject || '')}&autostart=next&afterGoal=${encodeURIComponent(nanoGoalComplete.goalId)}`}
+                style={{display:'inline-block',background:'rgba(201,168,76,0.12)',border:'1px solid rgba(201,168,76,0.3)',borderRadius:10,padding:'10px 24px',fontSize:14,fontWeight:700,color:'#C9A84C',textDecoration:'none'}}>
+                &rarr; Continue to Next Goal
+              </a>
+            </div>
+          )}
         </div>
         {isLimitReached ? (
           <div className="lw"><p>You've used all your free sessions for today.<br />Upgrade to keep learning without limits.</p><Link href="/pricing"><a>See Plans →</a></Link>

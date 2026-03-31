@@ -348,34 +348,72 @@ npm run lint     # ESLint
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Session Snapshot (auto-updated)
 <!-- This section is auto-updated by .claude/update-claude-md.sh Stop hook -->
-<!-- Last sync: 2026-03-31 09:50 -->
+<!-- Last sync: 2026-03-31 12:06 -->
 
-**Platform counts**: 52 pages, 69 utils, 70 API routes, 8 components, 23 cron jobs
+**Platform counts**: 52 pages, 73 utils, 71 API routes, 8 components, 24 cron jobs
 
-**All pages**: _app,arts,arts-for-all,atoms,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,login,mocks,music,music-for-all,news,our-results,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,responsible-ai,school,sing,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,voice-lab,zayd-mode
+**All pages**: _app,arts,arts-for-all,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,login,mocks,music,music-for-all,nano,news,our-results,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,responsible-ai,school,sing,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,voice-lab,zayd-mode
 
-**All utils**: academicExcellence,americanCurriculumKB,analytics,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,getKnowledgeForTopic,globalKnowledgeBase,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,kbWishlist,literatureArabicKB,motherTongue,notify,outcomeTrackingKB,patternEngine,phonicsKB,physicsAtomsOLevel,platformLearningEngine,practiceKB,productGate,readingKnowledge,responsibleAIPolicy,saturdayFreeLogic,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,singingGoalsKB,singingKB,starkyAtomsKB,starkyIntents,starkyPrompt,summerKnowledge,supabase,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,youngLearnerKB
+**All utils**: academicExcellence,americanCurriculumKB,analytics,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,commandWordEngine,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,examinerReportsKB,extendedResponseKB,getKnowledgeForTopic,globalKnowledgeBase,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,kbWishlist,literatureArabicKB,markSchemeKB,motherTongue,notify,outcomeTrackingKB,patternEngine,phonicsKB,physicsAtomsOLevel,platformLearningEngine,practiceKB,productGate,readingKnowledge,responsibleAIPolicy,saturdayFreeLogic,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,singingGoalsKB,singingKB,starkyAtomsKB,starkyIntents,starkyPrompt,summerKnowledge,supabase,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,youngLearnerKB
 
 **Last 10 commits**:
 ```
+97264d8 Add Nano to homepage nav — UAE menu, Pakistan menu, footer
+01e882b Add PROTECTED FILE comment to 4 core files
+2edb300 Fix query param handling across entire platform — 6 files
+2681552 Wire Nano→Chat→Nano loop: message/subject params, back bar, hide chips
+c035ea2 Fix Nano page selection flow + goal pre-fill on homepage
+96b6e92 Add YOUNG_LEARNER_SINGING_PROTOCOL to singingKB.js — ages 5-10
+91867cc Add Accounting AL, History AL, Psychology AL, Sociology AL — 2,168 total atoms
+fb661ca Add Command Word Engine + Examiner Reports KB — 2 new injection layers
+99e761e Rename Atoms → Nano: redesigned learning journey page
 66e05b0 Top-up Maths AL, Business AL, CS AL — 1,808 total atoms
-ea8779f Expand Maths AL, Business AL, CS AL — 1,758 total atoms
-b7f02be Massive expansion: A Level sciences expanded + Maths/Business/CS A Level added — 1,645 total
-6d0e031 Add Chemistry, Physics, Biology A Level — 1,459 total atoms across 20 subjects
-00061c5 English Literature + Urdu hit 75 each — 1,305 total atoms
-608e170 Expand Geography, Commerce, Urdu, English Literature — 1,275 total atoms
-6be32ce Add Geography, Commerce, Islamiyat expansion, Urdu, English Literature — 1,175 total atoms across 17 subjects
-2298df8 Add Islamiyat (2058) + Sociology (2251) — crossed 1,000 atoms milestone
-84d1884 Expand 5 thin subjects — Maths +32, Econ +43, English +35, Bio +39, Physics +36
-a62438a Add History (2147) + Pakistan Studies (2059) — 176 atoms, total now 670
 ```
 
 **Files changed in last commit**:
 ```
-utils/starkyAtomsKB.js
+pages/index.jsx
 ```
 
 **Uncommitted changes**: CLAUDE.md
-**Untracked files**: none
+pages/api/anthropic.js
+pages/index.jsx
+pages/nano.jsx
+vercel.json
+**Untracked files**: pages/api/cron/weekly-progress.js
+utils/extendedResponseKB.js
+utils/markSchemeKB.js

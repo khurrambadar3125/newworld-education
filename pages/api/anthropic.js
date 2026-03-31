@@ -31,6 +31,8 @@ import { getArchitectureEnhancementsPrompt } from '../../utils/architectureEnhan
 import { getHearingEnginePrompt } from '../../utils/hearingEngineKB';
 import { getCommandWordInjection } from '../../utils/commandWordEngine';
 import { getExaminerReportInjection } from '../../utils/examinerReportsKB';
+import { checkStudentAnswer } from '../../utils/markSchemeKB';
+import { detectExtendedResponse, getExtendedResponseInjection } from '../../utils/extendedResponseKB';
 import { getSupabase } from '../../utils/supabase';
 
 export const config = {
@@ -255,6 +257,36 @@ export default async function handler(req, res) {
       // ── Hearing Engine — fires FIRST, frames how Starky interprets all input ──
       built.systemPrompt = getHearingEnginePrompt(userProfile?.country || 'PK', userProfile?.senCondition || userProfile?.senType || null) + '\n\n' + built.systemPrompt;
 
+      // ── FIRST_NANO_SESSION — make the first Nano experience unforgettable ──
+      if (message.includes('[FIRST_NANO_SESSION]')) {
+        const subjectCtx = sessionMemory?.currentSubject || userProfile?.lastSubject || 'this subject';
+        built.systemPrompt += `\n\nFIRST NANO SESSION PROTOCOL:\nThis is the student's very first Nano session. Make this unforgettable.\n\nBe warmer than usual. Be more encouraging. After welcoming them, say something like:\n"Most students who use Nano consistently for 4 weeks improve by at least one grade. You're about to understand exactly why. Let's start with your first goal."\n\nThen proceed with the standard 5-step Nano lesson. Be rigorous — the warmth must not come at the expense of Cambridge precision. Both together is the point.\n\nAfter NANO_GOAL_COMPLETE on the first goal, add:\n"Goal 1 — mastered. This is how it starts. One goal at a time. See you at the next one."`;
+      }
+
+      // ── SOCRATIC_PROTOCOL — ask what they know before explaining ──
+      const msgLower = message.toLowerCase();
+      const isNanoOrMock = msgLower.includes('nano goal') || msgLower.includes('starky mock') || msgLower.includes('step 1') || msgLower.includes('step 2') || msgLower.includes('working on nano');
+      const isDirectRequest = msgLower.includes('just tell me') || msgLower.includes('i have literally no idea') || msgLower.includes('i have no idea') || msgLower.includes('i\'ve never heard');
+      const isLogisticsOnly = /\b(when is|what time|how long is|exam date|paper \d|how many papers|format of)\b/i.test(message);
+      if (!isNanoOrMock && !isLogisticsOnly) {
+        const socraticTriggers = [
+          /explain\s+/i, /what\s+is\s+/i, /what\s+are\s+/i,
+          /tell\s+me\s+about\s+/i, /define\s+/i, /teach\s+me/i,
+          /how\s+does\s+.+\s+work/i, /i\s+don'?t\s+understand/i,
+          /what\s+does\s+.+\s+mean/i, /can\s+you\s+explain/i,
+        ];
+        const isSocratic = socraticTriggers.some(r => r.test(message));
+        if (isSocratic) {
+          const topicMatch = message.match(/(?:explain|what (?:is|are|does)|tell me about|define|teach me about|how does|don'?t understand|mean)\s+(.+?)(?:\?|\.|\!|$)/i);
+          const topic = topicMatch ? topicMatch[1].trim().replace(/[?.!]$/, '') : 'this concept';
+          if (isDirectRequest) {
+            built.systemPrompt += `\n\nSOCRATIC PROTOCOL (DIRECT MODE):\nThe student asked about "${topic}" but said they have no prior knowledge. Teach directly.\nBut ALWAYS end with Step 3 — after explaining, ask:\n"Now — without looking at what I wrote — can you explain ${topic} back to me in one sentence? Use your own words."\nNEVER skip this check.`;
+          } else {
+            built.systemPrompt += `\n\nSOCRATIC PROTOCOL:\nThe student has asked you to explain something. Do NOT explain it immediately.\n\nSTEP 1 — ASK FIRST (always):\n"Before I explain — what do you already think ${topic} means? Even if you're not sure, give me your best guess. One sentence is fine."\n\nSTEP 2 — BUILD ON THEIR ANSWER:\nWhatever they say:\n- If correct: "Yes — and let me add the Cambridge precision to that..."\n- If partially correct: "You've got the right instinct. The Cambridge version adds one critical piece..."\n- If incorrect: "Good try — that's a very common misconception. Here's why it's actually different..."\n- If "I don't know": teach directly, then immediately check: "Now you've heard it — explain it back to me in your own words."\n\nSTEP 3 — ALWAYS end with a check:\nAfter explaining anything, ask:\n"Now — without looking at what I wrote — can you explain ${topic} back to me in one sentence? Use your own words."\n\nNEVER skip Step 3. Even when teaching directly. Always ask the student to reproduce the concept in their own words before moving on.`;
+          }
+        }
+      }
+
       const currentSubject = sessionMemory?.currentSubject || userProfile?.lastSubject || '';
       const topicKnowledge = getKnowledgeForTopic(message, currentSubject);
       if (topicKnowledge) {
@@ -428,6 +460,25 @@ export default async function handler(req, res) {
 
       // ── Examiner Report Check — catch mistakes examiners specifically penalise ──
       built.systemPrompt += getExaminerReportInjection(message, currentSubject || '');
+
+      // ── MARK_SCHEME_CHECKER — catch rejected phrases and inject corrections ──
+      if (currentSubject && message) {
+        const msCorrections = checkStudentAnswer(currentSubject, message);
+        if (msCorrections.length > 0) {
+          const correctionLines = msCorrections.map(c =>
+            `"${c.rejected}" → should be "${c.accepted}" (${c.concept}: ${c.examinerNote})`
+          ).join('\n');
+          built.systemPrompt += `\n\nMARK SCHEME LANGUAGE CHECK:\nThe student used imprecise language that Cambridge mark schemes reject:\n${correctionLines}\nCorrect this explicitly and explain why Cambridge requires the precise wording.`;
+        }
+      }
+
+      // ── EXTENDED_RESPONSE_COACH — guide students through 6+ mark questions ──
+      if (message) {
+        const extDetection = detectExtendedResponse(message);
+        if (extDetection) {
+          built.systemPrompt += getExtendedResponseInjection(extDetection.marks, currentSubject || '');
+        }
+      }
     }
 
     // ── Handle escalation ──────────────────────────────────────────────────
