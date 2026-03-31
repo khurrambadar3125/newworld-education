@@ -512,51 +512,40 @@ export default async function handler(req, res) {
         }
       } catch {}
 
-      // ── Deliberate Practice Layer — spaced repetition, retrieval, interleaving ──
-      built.systemPrompt += getDeliberatePracticePrompt(currentSubject || null, userProfile?.senCondition || userProfile?.senType || null);
+      // ── PRIORITY INJECTION QUEUE — only inject layers relevant to THIS message ──
+      // Budget: ~8000 chars for optional layers. Core layers (persona, hearing, dialect check) already injected above.
+      const OPTIONAL_BUDGET = 8000;
+      let optionalUsed = 0;
+      const inject = (text) => {
+        if (!text || optionalUsed + text.length > OPTIONAL_BUDGET) return;
+        built.systemPrompt += text;
+        optionalUsed += text.length;
+      };
 
-      // ── Architecture Enhancements — 10 cognitive intelligence layers ──
-      const isExamSeason = new Date().getMonth() >= 3 && new Date().getMonth() <= 5;
-      built.systemPrompt += getArchitectureEnhancementsPrompt(null, currentSubject || null, isExamSeason);
-
-      // ── Command Word Detection — correct students who don't meet command word requirements ──
-      built.systemPrompt += getCommandWordInjection(message);
-
-      // ── Examiner Report Check — catch mistakes examiners specifically penalise ──
-      built.systemPrompt += getExaminerReportInjection(message, currentSubject || '');
-
-      // ── MARK_SCHEME_CHECKER — catch rejected phrases and inject corrections ──
+      // TIER 1 — REACTIVE: Only fire when student's message triggers them (highest value)
       if (currentSubject && message) {
         const msCorrections = checkStudentAnswer(currentSubject, message);
         if (msCorrections.length > 0) {
-          const correctionLines = msCorrections.map(c =>
-            `"${c.rejected}" → should be "${c.accepted}" (${c.concept}: ${c.examinerNote})`
-          ).join('\n');
-          built.systemPrompt += `\n\nMARK SCHEME LANGUAGE CHECK:\nThe student used imprecise language that Cambridge mark schemes reject:\n${correctionLines}\nCorrect this explicitly and explain why Cambridge requires the precise wording.`;
+          inject(`\n\nMARK SCHEME LANGUAGE CHECK:\n${msCorrections.map(c => `"${c.rejected}" → should be "${c.accepted}" (${c.concept}: ${c.examinerNote})`).join('\n')}\nCorrect this explicitly.`);
+        }
+        const dialectCorrections = checkDialect(currentSubject, message);
+        if (dialectCorrections.length > 0) {
+          inject(`\n\nCAMBRIDGE DIALECT ALERT:\n${dialectCorrections.slice(0, 3).map(c => `"${c.found}" → "${c.required}"`).join('\n')}\nCorrect each one.`);
         }
       }
-
-      // ── CAMBRIDGE DIALECT — correct everyday language to Cambridge register ──
-      if (currentSubject) {
-        built.systemPrompt += getDialectInjection(currentSubject);
-        if (message) {
-          const dialectCorrections = checkDialect(currentSubject, message);
-          if (dialectCorrections.length > 0) {
-            const dLines = dialectCorrections.slice(0, 5).map(c =>
-              `"${c.found}" → Cambridge requires: "${c.required}"${c.context ? ` (${c.context})` : ''}`
-            ).join('\n');
-            built.systemPrompt += `\n\nCAMBRIDGE DIALECT ALERT:\nThe student used everyday language that loses marks:\n${dLines}\nCorrect each one. Show them the Cambridge version and make them use it.`;
-          }
-        }
-      }
-
-      // ── EXTENDED_RESPONSE_COACH — guide students through 6+ mark questions ──
       if (message) {
         const extDetection = detectExtendedResponse(message);
-        if (extDetection) {
-          built.systemPrompt += getExtendedResponseInjection(extDetection.marks, currentSubject || '');
-        }
+        if (extDetection) inject(getExtendedResponseInjection(extDetection.marks, currentSubject || ''));
       }
+
+      // TIER 2 — CONTEXTUAL: Fire based on subject/topic context (medium value)
+      inject(getCommandWordInjection(message));
+      inject(getExaminerReportInjection(message, currentSubject || ''));
+
+      // TIER 3 — BACKGROUND: Always useful but lower priority (trimmed if budget exceeded)
+      inject(getDeliberatePracticePrompt(currentSubject || null, userProfile?.senCondition || userProfile?.senType || null));
+      const isExamSeason = new Date().getMonth() >= 3 && new Date().getMonth() <= 5;
+      inject(getArchitectureEnhancementsPrompt(null, currentSubject || null, isExamSeason));
     }
 
     // ── Handle escalation ──────────────────────────────────────────────────
