@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import Head from 'next/head';
 import { ATOMS_SUBJECTS, ATOM_COUNTS, getAtomsBySubject } from '../utils/starkyAtomsKB';
 
@@ -22,14 +22,26 @@ function ProgressRing({ percent, size = 64, stroke = 5, color = '#C9A84C' }) {
   );
 }
 
+/* ───── Difficulty Dots ───── */
+function DifficultyDots({ level, max = 5 }) {
+  return (
+    <span style={{ fontSize: 10, letterSpacing: 2, color: 'rgba(201,168,76,0.6)' }}>
+      {Array.from({ length: max }, (_, i) => i < level ? '\u25CF' : '\u25CB').join('')}
+    </span>
+  );
+}
+
 /* ───── Nano Page ───── */
 export default function NanoPage() {
   const [isMobile, setIsMobile] = useState(false);
   const [selected, setSelected] = useState(null);
   const [atoms, setAtoms] = useState([]);
   const [mastery, setMastery] = useState({});
-  const [expandedUnit, setExpandedUnit] = useState(null);
-  const [levelFilter, setLevelFilter] = useState('all'); // 'all' | 'O Level' | 'A Level'
+  const [unitFilter, setUnitFilter] = useState('all');
+  const [levelFilter, setLevelFilter] = useState('all');
+
+  const goalsRef = useRef(null);
+  const gridRef = useRef(null);
 
   useEffect(() => {
     const fn = () => setIsMobile(window.innerWidth < 768);
@@ -41,7 +53,7 @@ export default function NanoPage() {
   useEffect(() => {
     if (!selected) return;
     setAtoms(getAtomsBySubject(selected.id));
-    setExpandedUnit(null);
+    setUnitFilter('all');
 
     try {
       const email = JSON.parse(localStorage.getItem('nw_user') || '{}').email;
@@ -57,6 +69,15 @@ export default function NanoPage() {
     } catch {}
   }, [selected]);
 
+  // Scroll to goals when subject selected
+  useEffect(() => {
+    if (selected && atoms.length > 0 && goalsRef.current) {
+      setTimeout(() => {
+        goalsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+  }, [selected, atoms]);
+
   // Group atoms by unit
   const unitMap = useMemo(() => {
     const map = {};
@@ -67,44 +88,59 @@ export default function NanoPage() {
     return map;
   }, [atoms]);
 
-  const masteredCount = Object.values(mastery).filter(m => m.mastery_score >= 8).length;
+  const units = useMemo(() => Object.keys(unitMap), [unitMap]);
+
+  // Filtered atoms by unit tab
+  const filteredAtoms = useMemo(() => {
+    if (unitFilter === 'all') return atoms;
+    return unitMap[unitFilter] || [];
+  }, [atoms, unitFilter, unitMap]);
+
+  const masteredCount = Object.values(mastery).filter(m => m.mastery_score >= 7).length;
   const pct = atoms.length > 0 ? Math.round((masteredCount / atoms.length) * 100) : 0;
 
   // Progress intelligence
   const progressData = useMemo(() => {
     if (!atoms.length) return null;
-
-    // Weakest unit
     let weakestUnit = null;
     let worstPct = 101;
     Object.entries(unitMap).forEach(([unit, unitAtoms]) => {
-      const unitMastered = unitAtoms.filter(a => mastery[a.id]?.mastery_score >= 8).length;
+      const unitMastered = unitAtoms.filter(a => mastery[a.id]?.mastery_score >= 7).length;
       const unitPct = Math.round((unitMastered / unitAtoms.length) * 100);
       if (unitPct < worstPct) { worstPct = unitPct; weakestUnit = unit; }
     });
-
-    // Next recommended goal: first unmastered atom in weakest unit, or first unmastered overall
     let nextGoal = null;
     if (weakestUnit && unitMap[weakestUnit]) {
-      nextGoal = unitMap[weakestUnit].find(a => !mastery[a.id] || mastery[a.id].mastery_score < 8);
+      nextGoal = unitMap[weakestUnit].find(a => !mastery[a.id] || mastery[a.id].mastery_score < 7);
     }
     if (!nextGoal) {
-      nextGoal = atoms.find(a => !mastery[a.id] || mastery[a.id].mastery_score < 8);
+      nextGoal = atoms.find(a => !mastery[a.id] || mastery[a.id].mastery_score < 7);
     }
-
     const remaining = atoms.length - masteredCount;
-    const estMinutes = remaining * 3; // ~3 min per goal
-
+    const estMinutes = remaining * 3;
     return { weakestUnit, worstPct, nextGoal, remaining, estMinutes };
   }, [atoms, mastery, unitMap, masteredCount]);
 
-  // Filtered subjects by level
   const filteredSubjects = levelFilter === 'all'
     ? ATOMS_SUBJECTS
     : ATOMS_SUBJECTS.filter(s => s.level === levelFilter);
 
   const starkyMessage = (goalText) =>
     `Starky, teach me: ${goalText}. Then test me with a Cambridge exam question and mark my answer.`;
+
+  const handleSelectSubject = (s) => {
+    setSelected(s);
+  };
+
+  const handleBack = () => {
+    setSelected(null);
+    setAtoms([]);
+    setMastery({});
+    setUnitFilter('all');
+    setTimeout(() => {
+      gridRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 50);
+  };
 
   return (
     <div style={{ minHeight: '100vh', background: '#0A1628', fontFamily: "'Sora',-apple-system,sans-serif", color: '#FAF6EB' }}>
@@ -118,10 +154,14 @@ export default function NanoPage() {
         .nano-fadein { animation: nanoFadeIn 0.4s ease both; }
         .nano-subject-card { transition: all 0.2s ease; }
         .nano-subject-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
-        .nano-goal-row { transition: all 0.15s ease; }
+        .nano-goal-row { transition: all 0.15s ease; min-height: 44px; }
         .nano-goal-row:hover { background: rgba(201,168,76,0.06) !important; }
         .nano-learn-btn { transition: all 0.2s ease; }
         .nano-learn-btn:hover { background: #C9A84C !important; color: #0A1628 !important; }
+        .nano-unit-tab { transition: all 0.2s ease; white-space: nowrap; }
+        .nano-unit-tab:hover { background: rgba(201,168,76,0.1) !important; }
+        .nano-back-btn { transition: all 0.2s ease; }
+        .nano-back-btn:hover { color: #C9A84C !important; }
       `}</style>
 
       {/* ═══ HERO ═══ */}
@@ -152,10 +192,10 @@ export default function NanoPage() {
         </div>
       </div>
 
-      <div style={{ maxWidth: 880, margin: '0 auto', padding: isMobile ? '0 16px 40px' : '0 24px 60px' }}>
+      <div style={{ maxWidth: 900, margin: '0 auto', padding: isMobile ? '0 16px 40px' : '0 24px 60px' }}>
 
         {/* ═══ LEVEL FILTER TABS ═══ */}
-        <div style={{ display: 'flex', gap: 8, marginBottom: 20, justifyContent: 'center' }}>
+        <div ref={gridRef} style={{ display: 'flex', gap: 8, marginBottom: 20, justifyContent: 'center' }}>
           {['all', 'O Level', 'A Level'].map(level => {
             const isActive = levelFilter === level;
             return (
@@ -172,7 +212,7 @@ export default function NanoPage() {
           {filteredSubjects.map(s => {
             const isSelected = selected?.id === s.id;
             return (
-              <button key={s.id} onClick={() => setSelected(s)} className="nano-subject-card"
+              <button key={s.id} onClick={() => handleSelectSubject(s)} className="nano-subject-card"
                 style={{ background: isSelected ? 'rgba(201,168,76,0.08)' : 'rgba(250,246,235,0.03)', border: isSelected ? '2px solid #C9A84C' : '1px solid rgba(250,246,235,0.06)', borderRadius: 14, padding: isMobile ? '18px 10px' : '22px 14px', cursor: 'pointer', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
                 <div style={{ fontSize: 28, marginBottom: 6 }}>{s.icon}</div>
                 <div style={{ fontWeight: 800, fontSize: 14, color: '#FAF6EB', marginBottom: 2 }}>{s.label}</div>
@@ -184,149 +224,140 @@ export default function NanoPage() {
           })}
         </div>
 
-        {/* ═══ NANO JOURNEY (when subject selected) ═══ */}
+        {/* ═══ GOALS SECTION (when subject selected) ═══ */}
         {selected && atoms.length > 0 && (
-          <div className="nano-fadein">
+          <div ref={goalsRef} className="nano-fadein">
 
-            {/* ── Progress Intelligence ── */}
-            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 14, marginBottom: 24 }}>
-
-              {/* Overall progress card */}
-              <div style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 16, padding: isMobile ? '20px' : '24px', display: 'flex', alignItems: 'center', gap: 20 }}>
-                <ProgressRing percent={pct} size={80} stroke={6} color="#C9A84C" />
-                <div style={{ flex: 1 }}>
-                  <div style={{ fontWeight: 900, fontSize: 20, marginBottom: 4, color: '#FAF6EB' }}>
-                    {masteredCount} <span style={{ fontWeight: 400, fontSize: 14, color: 'rgba(250,246,235,0.5)' }}>of {atoms.length} goals mastered</span>
-                  </div>
-                  <div style={{ fontSize: 12, color: 'rgba(250,246,235,0.4)', lineHeight: 1.5 }}>
-                    {selected.label} {selected.level}
-                  </div>
-                  {progressData && progressData.remaining > 0 && (
-                    <div style={{ fontSize: 12, color: 'rgba(201,168,76,0.7)', marginTop: 4 }}>
-                      ~{progressData.estMinutes < 60 ? `${progressData.estMinutes} min` : `${Math.round(progressData.estMinutes / 60)} hrs`} to complete
-                    </div>
-                  )}
+            {/* ── Header with back button ── */}
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16, flexWrap: 'wrap', gap: 10 }}>
+              <div>
+                <button onClick={handleBack} className="nano-back-btn"
+                  style={{ background: 'none', border: 'none', color: 'rgba(250,246,235,0.5)', fontSize: 13, fontWeight: 700, cursor: 'pointer', padding: '4px 0', marginBottom: 6 }}>
+                  &larr; All Subjects
+                </button>
+                <h2 style={{ fontSize: isMobile ? 20 : 24, fontWeight: 900, margin: 0, color: '#FAF6EB' }}>
+                  {selected.icon} {selected.label} — {selected.level}
+                </h2>
+                <div style={{ fontSize: 13, color: 'rgba(250,246,235,0.4)', marginTop: 4 }}>
+                  {atoms.length} Nano goals
                 </div>
               </div>
+              <ProgressRing percent={pct} size={64} stroke={5} color="#C9A84C" />
+            </div>
 
-              {/* Intelligence card */}
-              <div style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 16, padding: isMobile ? '20px' : '24px' }}>
-                {progressData && (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-                    {progressData.weakestUnit && (
-                      <div>
-                        <div style={{ fontSize: 10, fontWeight: 700, color: 'rgba(250,246,235,0.35)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 4 }}>Weakest Unit</div>
-                        <div style={{ fontSize: 14, fontWeight: 700, color: '#FAF6EB' }}>{progressData.weakestUnit}</div>
-                        <div style={{ fontSize: 11, color: 'rgba(250,246,235,0.4)' }}>{progressData.worstPct}% mastered</div>
-                      </div>
-                    )}
-                    {progressData.nextGoal && (
-                      <div>
-                        <div style={{ fontSize: 10, fontWeight: 700, color: 'rgba(250,246,235,0.35)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 4 }}>Next Recommended</div>
-                        <div style={{ fontSize: 13, fontWeight: 600, color: '#FAF6EB', lineHeight: 1.5 }}>{progressData.nextGoal.atom}</div>
-                        <a href={`/demo?subject=${encodeURIComponent(selected.label)}&message=${encodeURIComponent(starkyMessage(progressData.nextGoal.atom))}`}
-                          className="nano-learn-btn"
-                          style={{ display: 'inline-block', marginTop: 8, fontSize: 12, fontWeight: 700, color: '#C9A84C', border: '1px solid rgba(201,168,76,0.4)', borderRadius: 8, padding: '6px 14px', textDecoration: 'none' }}>
-                          Learn this next
-                        </a>
-                      </div>
-                    )}
+            {/* ── Progress Intelligence ── */}
+            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 14, marginBottom: 20 }}>
+              <div style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 14, padding: isMobile ? '16px' : '20px' }}>
+                <div style={{ fontWeight: 900, fontSize: 18, marginBottom: 4, color: '#FAF6EB' }}>
+                  {masteredCount} <span style={{ fontWeight: 400, fontSize: 13, color: 'rgba(250,246,235,0.5)' }}>of {atoms.length} mastered</span>
+                </div>
+                {progressData && progressData.remaining > 0 && (
+                  <div style={{ fontSize: 12, color: 'rgba(201,168,76,0.7)' }}>
+                    ~{progressData.estMinutes < 60 ? `${progressData.estMinutes} min` : `${Math.round(progressData.estMinutes / 60)} hrs`} to complete
                   </div>
                 )}
-                {!progressData && (
-                  <div style={{ color: 'rgba(250,246,235,0.4)', fontSize: 14 }}>Select a subject to see your progress</div>
+              </div>
+              <div style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 14, padding: isMobile ? '16px' : '20px' }}>
+                {progressData?.weakestUnit && (
+                  <div>
+                    <div style={{ fontSize: 10, fontWeight: 700, color: 'rgba(250,246,235,0.35)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 4 }}>Weakest Unit</div>
+                    <div style={{ fontSize: 13, fontWeight: 700, color: '#FAF6EB' }}>{progressData.weakestUnit}</div>
+                    <div style={{ fontSize: 11, color: 'rgba(250,246,235,0.4)' }}>{progressData.worstPct}% mastered</div>
+                  </div>
+                )}
+                {progressData?.nextGoal && (
+                  <div style={{ marginTop: progressData.weakestUnit ? 10 : 0 }}>
+                    <div style={{ fontSize: 10, fontWeight: 700, color: 'rgba(250,246,235,0.35)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 4 }}>Next Recommended</div>
+                    <div style={{ fontSize: 12, fontWeight: 600, color: '#FAF6EB', lineHeight: 1.5, maxHeight: 36, overflow: 'hidden' }}>{progressData.nextGoal.atom}</div>
+                  </div>
                 )}
               </div>
             </div>
 
-            {/* ── Unit-by-unit journey ── */}
-            <div style={{ marginBottom: 28 }}>
-              <h2 style={{ fontSize: 18, fontWeight: 900, margin: '0 0 14px', color: '#FAF6EB' }}>
-                {selected.icon} {selected.label} — Learning Journey
-              </h2>
+            {/* ── Unit Filter Tabs ── */}
+            <div style={{ display: 'flex', gap: 6, marginBottom: 16, overflowX: 'auto', WebkitOverflowScrolling: 'touch', paddingBottom: 4 }}>
+              <button onClick={() => setUnitFilter('all')} className="nano-unit-tab"
+                style={{ background: unitFilter === 'all' ? 'rgba(201,168,76,0.15)' : 'rgba(250,246,235,0.04)', border: unitFilter === 'all' ? '1px solid rgba(201,168,76,0.4)' : '1px solid rgba(250,246,235,0.06)', borderRadius: 8, padding: '6px 14px', color: unitFilter === 'all' ? '#C9A84C' : 'rgba(250,246,235,0.45)', fontSize: 12, fontWeight: 700, cursor: 'pointer', flexShrink: 0 }}>
+                All Units
+              </button>
+              {units.map(unit => {
+                const isActive = unitFilter === unit;
+                return (
+                  <button key={unit} onClick={() => setUnitFilter(unit)} className="nano-unit-tab"
+                    style={{ background: isActive ? 'rgba(201,168,76,0.15)' : 'rgba(250,246,235,0.04)', border: isActive ? '1px solid rgba(201,168,76,0.4)' : '1px solid rgba(250,246,235,0.06)', borderRadius: 8, padding: '6px 14px', color: isActive ? '#C9A84C' : 'rgba(250,246,235,0.45)', fontSize: 12, fontWeight: 700, cursor: 'pointer', flexShrink: 0 }}>
+                    {unit}
+                  </button>
+                );
+              })}
+            </div>
 
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                {Object.entries(unitMap).map(([unit, unitAtoms]) => {
-                  const isExpanded = expandedUnit === unit;
-                  const unitMastered = unitAtoms.filter(a => mastery[a.id]?.mastery_score >= 8).length;
-                  const unitPct = Math.round((unitMastered / unitAtoms.length) * 100);
-                  const unitSeen = unitAtoms.filter(a => mastery[a.id]?.times_seen > 0 && mastery[a.id]?.mastery_score < 8).length;
+            {/* ── Goals List ── */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginBottom: 28 }}>
+              {filteredAtoms.map((a, idx) => {
+                const m = mastery[a.id];
+                const score = m?.mastery_score || 0;
+                const isMastered = score >= 7;
+                const inProgress = score >= 1 && score < 7;
+                const goalNum = unitFilter === 'all' ? atoms.indexOf(a) + 1 : idx + 1;
 
-                  return (
-                    <div key={unit}>
-                      <button onClick={() => setExpandedUnit(isExpanded ? null : unit)}
-                        style={{ width: '100%', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 14, textAlign: 'left', background: isExpanded ? 'rgba(201,168,76,0.06)' : 'rgba(250,246,235,0.03)', border: isExpanded ? '1px solid rgba(201,168,76,0.2)' : '1px solid rgba(250,246,235,0.06)', borderRadius: 14, padding: isMobile ? '14px' : '16px 20px', transition: 'all 0.2s' }}>
-                        <span style={{ fontSize: 14, color: 'rgba(250,246,235,0.4)', transform: isExpanded ? 'rotate(90deg)' : 'none', transition: 'transform 0.2s', flexShrink: 0 }}>&#9654;</span>
-                        <div style={{ flex: 1, minWidth: 0 }}>
-                          <div style={{ fontWeight: 800, fontSize: 14, color: '#FAF6EB' }}>{unit}</div>
-                          <div style={{ fontSize: 11, color: 'rgba(250,246,235,0.4)', marginTop: 2 }}>
-                            {unitAtoms.length} goals &middot; {unitMastered} mastered{unitSeen > 0 ? ` · ${unitSeen} in progress` : ''}
-                          </div>
+                return (
+                  <div key={a.id} className="nano-goal-row"
+                    style={{ display: 'flex', alignItems: isMobile ? 'flex-start' : 'center', gap: isMobile ? 10 : 14, padding: isMobile ? '14px 12px' : '14px 18px', background: 'rgba(250,246,235,0.02)', borderRadius: 12, border: '1px solid rgba(250,246,235,0.04)', flexDirection: isMobile ? 'column' : 'row' }}>
+
+                    {/* Top row: number + status + goal text */}
+                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12, flex: 1, minWidth: 0, width: isMobile ? '100%' : 'auto' }}>
+                      {/* Goal number */}
+                      <div style={{ fontSize: 11, fontWeight: 800, color: 'rgba(250,246,235,0.2)', minWidth: 28, flexShrink: 0, paddingTop: 2 }}>
+                        #{goalNum}
+                      </div>
+
+                      {/* Mastery status icon */}
+                      <div style={{ fontSize: 16, flexShrink: 0, paddingTop: 1 }}>
+                        {isMastered ? '\u2705' : inProgress ? '\u26A1' : '\u25CB'}
+                      </div>
+
+                      {/* Goal text + metadata */}
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        <div style={{ fontSize: 13, fontWeight: 600, color: isMastered ? 'rgba(250,246,235,0.45)' : '#FAF6EB', lineHeight: 1.55, textDecoration: isMastered ? 'line-through' : 'none', textDecorationColor: 'rgba(250,246,235,0.15)' }}>
+                          {a.atom}
                         </div>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
-                          <div style={{ width: isMobile ? 60 : 100, height: 6, borderRadius: 100, background: 'rgba(250,246,235,0.06)', overflow: 'hidden' }}>
-                            <div style={{ height: '100%', borderRadius: 100, background: unitPct === 100 ? '#4CC97B' : '#C9A84C', width: `${unitPct}%`, transition: 'width 0.4s ease' }} />
-                          </div>
-                          <span style={{ fontSize: 12, fontWeight: 700, color: unitPct === 100 ? '#4CC97B' : '#C9A84C', minWidth: 35, textAlign: 'right' }}>
-                            {unitPct === 100 ? 'Done' : `${unitPct}%`}
+                        <div style={{ display: 'flex', gap: 10, alignItems: 'center', marginTop: 6, flexWrap: 'wrap' }}>
+                          <DifficultyDots level={a.difficulty} />
+                          <span style={{
+                            fontSize: 9, padding: '2px 7px', borderRadius: 4, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.03em',
+                            background: a.examWeight === 'high' ? 'rgba(201,168,76,0.12)' : 'rgba(250,246,235,0.04)',
+                            color: a.examWeight === 'high' ? '#C9A84C' : 'rgba(250,246,235,0.3)',
+                            border: `1px solid ${a.examWeight === 'high' ? 'rgba(201,168,76,0.25)' : 'rgba(250,246,235,0.06)'}`,
+                          }}>
+                            {a.examWeight === 'high' ? 'HIGH' : 'MED'}
                           </span>
+                          {isMastered && (
+                            <span style={{ fontSize: 10, fontWeight: 700, color: '#4CC97B' }}>Mastered</span>
+                          )}
+                          {inProgress && (
+                            <span style={{ fontSize: 10, fontWeight: 700, color: '#C9A84C' }}>In progress</span>
+                          )}
                         </div>
-                      </button>
-
-                      {isExpanded && (
-                        <div className="nano-fadein" style={{ marginLeft: isMobile ? 0 : 16, marginTop: 6, display: 'flex', flexDirection: 'column', gap: 4 }}>
-                          {unitAtoms.map(a => {
-                            const m = mastery[a.id];
-                            const score = m?.mastery_score || 0;
-                            const isMastered = score >= 8;
-                            const inProgress = m?.times_seen > 0 && !isMastered;
-
-                            return (
-                              <div key={a.id} className="nano-goal-row"
-                                style={{ display: 'flex', alignItems: 'center', gap: 12, padding: isMobile ? '12px' : '12px 16px', background: 'rgba(250,246,235,0.02)', borderRadius: 12, border: '1px solid rgba(250,246,235,0.04)' }}>
-                                {/* Status indicator */}
-                                <div style={{ width: 28, height: 28, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 13, flexShrink: 0,
-                                  background: isMastered ? 'rgba(76,201,123,0.15)' : inProgress ? 'rgba(201,168,76,0.12)' : 'rgba(250,246,235,0.04)',
-                                  border: `1px solid ${isMastered ? 'rgba(76,201,123,0.3)' : inProgress ? 'rgba(201,168,76,0.25)' : 'rgba(250,246,235,0.08)'}`,
-                                  color: isMastered ? '#4CC97B' : inProgress ? '#C9A84C' : 'rgba(250,246,235,0.25)' }}>
-                                  {isMastered ? '\u2713' : inProgress ? '\u25CF' : '\u25CB'}
-                                </div>
-
-                                {/* Goal text */}
-                                <div style={{ flex: 1, minWidth: 0 }}>
-                                  <div style={{ fontSize: 13, fontWeight: 600, color: isMastered ? 'rgba(250,246,235,0.5)' : '#FAF6EB', lineHeight: 1.5, textDecoration: isMastered ? 'line-through' : 'none', textDecorationColor: 'rgba(250,246,235,0.2)' }}>{a.atom}</div>
-                                  <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginTop: 4 }}>
-                                    <span style={{ fontSize: 10, color: 'rgba(201,168,76,0.5)', letterSpacing: 1 }}>
-                                      {'\u2605'.repeat(a.difficulty)}{'\u2606'.repeat(5 - a.difficulty)}
-                                    </span>
-                                    {a.examWeight === 'high' && (
-                                      <span style={{ fontSize: 9, padding: '2px 6px', borderRadius: 4, fontWeight: 700, textTransform: 'uppercase', background: 'rgba(255,107,107,0.12)', color: '#FF6B6B', border: '1px solid rgba(255,107,107,0.2)' }}>
-                                        High weight
-                                      </span>
-                                    )}
-                                  </div>
-                                </div>
-
-                                {/* Learn with Starky button */}
-                                {!isMastered && (
-                                  <a href={`/demo?subject=${encodeURIComponent(selected.label)}&message=${encodeURIComponent(starkyMessage(a.atom))}`}
-                                    className="nano-learn-btn"
-                                    style={{ flexShrink: 0, fontSize: 12, fontWeight: 700, color: '#C9A84C', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 10, padding: isMobile ? '8px 12px' : '8px 16px', textDecoration: 'none', whiteSpace: 'nowrap' }}>
-                                    Learn with Starky &rarr;
-                                  </a>
-                                )}
-                                {isMastered && (
-                                  <span style={{ fontSize: 11, fontWeight: 700, color: '#4CC97B', flexShrink: 0 }}>Mastered</span>
-                                )}
-                              </div>
-                            );
-                          })}
-                        </div>
-                      )}
+                      </div>
                     </div>
-                  );
-                })}
-              </div>
+
+                    {/* Learn with Starky button */}
+                    {!isMastered && (
+                      <a href={`/?goal=${encodeURIComponent(starkyMessage(a.atom))}`}
+                        className="nano-learn-btn"
+                        style={{
+                          flexShrink: 0, fontSize: 13, fontWeight: 700, color: '#C9A84C',
+                          border: '1px solid rgba(201,168,76,0.3)', borderRadius: 10,
+                          padding: isMobile ? '10px 0' : '9px 18px',
+                          textDecoration: 'none', whiteSpace: 'nowrap', textAlign: 'center',
+                          width: isMobile ? '100%' : 'auto', display: 'block',
+                        }}>
+                        Learn with Starky &rarr;
+                      </a>
+                    )}
+                  </div>
+                );
+              })}
             </div>
 
             {/* ── Mastered goals summary ── */}
@@ -339,7 +370,7 @@ export default function NanoPage() {
                   </h3>
                 </div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-                  {atoms.filter(a => mastery[a.id]?.mastery_score >= 8).map(a => (
+                  {atoms.filter(a => mastery[a.id]?.mastery_score >= 7).map(a => (
                     <span key={a.id} style={{ fontSize: 11, fontWeight: 600, background: 'rgba(76,201,123,0.1)', border: '1px solid rgba(76,201,123,0.2)', borderRadius: 8, padding: '4px 10px', color: 'rgba(250,246,235,0.7)', maxWidth: 260, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                       {a.atom.length > 50 ? a.atom.slice(0, 47) + '...' : a.atom}
                     </span>
@@ -350,7 +381,7 @@ export default function NanoPage() {
           </div>
         )}
 
-        {/* ═══ EMPTY STATE (no subject selected) ═══ */}
+        {/* ═══ EMPTY STATE ═══ */}
         {!selected && (
           <div style={{ textAlign: 'center', padding: '40px 20px', color: 'rgba(250,246,235,0.35)', fontSize: 15 }}>
             Pick a subject above to start your learning journey

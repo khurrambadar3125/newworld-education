@@ -129,6 +129,35 @@ export default function Home() {
 
   }, []);
 
+  // ── Nano goal pre-fill: /?goal=... auto-launches chat with that message ──
+  const goalHandled = useRef(false);
+  useEffect(() => {
+    if (goalHandled.current) return;
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const goal = params.get('goal');
+      if (!goal) return;
+      goalHandled.current = true;
+      // Auto-select O Level grade if none selected, then launch chat and send
+      const saved = localStorage.getItem('nw_user');
+      const profile = saved ? JSON.parse(saved) : null;
+      if (!selectedGrade) setSelectedGrade({ id: 'grade9', label: 'Grade 9', age: '14-15', emoji: '📐' });
+      setTimeout(() => {
+        if (!chatStarted) {
+          launchChat(profile, null);
+        }
+        setTimeout(() => {
+          setInput(goal);
+          // Auto-send after short delay to let chat initialise
+          setTimeout(() => {
+            const btn = document.querySelector('.sb2');
+            if (btn && !btn.disabled) btn.click();
+          }, 400);
+        }, 300);
+      }, 200);
+    } catch {}
+  }, []);
+
   useEffect(() => {
     if (typeof window === 'undefined') return;
     if ('speechSynthesis' in window) {
