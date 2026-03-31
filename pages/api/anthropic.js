@@ -33,6 +33,7 @@ import { getCommandWordInjection } from '../../utils/commandWordEngine';
 import { getExaminerReportInjection } from '../../utils/examinerReportsKB';
 import { checkStudentAnswer } from '../../utils/markSchemeKB';
 import { detectExtendedResponse, getExtendedResponseInjection } from '../../utils/extendedResponseKB';
+import { SUPREME_EXAMINER_PERSONA, checkDialect, getDialectInjection } from '../../utils/cambridgeDialectKB';
 import { getSupabase } from '../../utils/supabase';
 import { reportCircuitBreaker } from '../../utils/errorAlert';
 
@@ -259,6 +260,9 @@ export default async function handler(req, res) {
       // ── Hearing Engine — fires FIRST, frames how Starky interprets all input ──
       built.systemPrompt = getHearingEnginePrompt(userProfile?.country || 'PK', userProfile?.senCondition || userProfile?.senType || null) + '\n\n' + built.systemPrompt;
 
+      // ── SUPREME EXAMINER PERSONA — transforms Starky into a Cambridge Principal Examiner ──
+      built.systemPrompt += '\n\n' + SUPREME_EXAMINER_PERSONA;
+
       // ── FIRST_NANO_SESSION — make the first Nano experience unforgettable ──
       if (message.includes('[FIRST_NANO_SESSION]')) {
         const subjectCtx = sessionMemory?.currentSubject || userProfile?.lastSubject || 'this subject';
@@ -471,6 +475,20 @@ export default async function handler(req, res) {
             `"${c.rejected}" → should be "${c.accepted}" (${c.concept}: ${c.examinerNote})`
           ).join('\n');
           built.systemPrompt += `\n\nMARK SCHEME LANGUAGE CHECK:\nThe student used imprecise language that Cambridge mark schemes reject:\n${correctionLines}\nCorrect this explicitly and explain why Cambridge requires the precise wording.`;
+        }
+      }
+
+      // ── CAMBRIDGE DIALECT — correct everyday language to Cambridge register ──
+      if (currentSubject) {
+        built.systemPrompt += getDialectInjection(currentSubject);
+        if (message) {
+          const dialectCorrections = checkDialect(currentSubject, message);
+          if (dialectCorrections.length > 0) {
+            const dLines = dialectCorrections.slice(0, 5).map(c =>
+              `"${c.found}" → Cambridge requires: "${c.required}"${c.context ? ` (${c.context})` : ''}`
+            ).join('\n');
+            built.systemPrompt += `\n\nCAMBRIDGE DIALECT ALERT:\nThe student used everyday language that loses marks:\n${dLines}\nCorrect each one. Show them the Cambridge version and make them use it.`;
+          }
         }
       }
 
