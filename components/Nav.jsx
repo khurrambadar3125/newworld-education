@@ -7,7 +7,7 @@ const MENU_GROUPS = [
     title: 'Learn',
     items: [
       { href: '/drill',        label: '🎯 Practice Drill' },
-      { href: '/atoms',        label: '⚛️ Atoms' },
+      { href: '/nano',         label: '🎯 Nano' },
       { href: '/mocks',        label: '📝 Starky Mocks' },
       { href: '/past-papers',  label: '📚 Past Papers' },
       { href: '/homework',     label: '📝 Homework Help' },

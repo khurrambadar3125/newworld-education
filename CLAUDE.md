@@ -331,11 +331,28 @@ npm run lint     # ESLint
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Session Snapshot (auto-updated)
 <!-- This section is auto-updated by .claude/update-claude-md.sh Stop hook -->
-<!-- Last sync: 2026-03-31 01:00 -->
+<!-- Last sync: 2026-03-31 09:50 -->
 
-**Platform counts**: 52 pages, 69 utils, 69 API routes, 8 components, 23 cron jobs
+**Platform counts**: 52 pages, 69 utils, 70 API routes, 8 components, 23 cron jobs
 
 **All pages**: _app,arts,arts-for-all,atoms,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,login,mocks,music,music-for-all,news,our-results,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,responsible-ai,school,sing,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,voice-lab,zayd-mode
 
@@ -343,21 +360,21 @@ npm run lint     # ESLint
 
 **Last 10 commits**:
 ```
-20ac88a Physics O Level expanded atoms — 216 atoms from agent (2,624 lines)
-5437115 Audit fixes + Starky Atoms system — knowledge map, mastery tracking, missing APIs
-d2d0542 CLAUDE.md session snapshot — 51 pages, 66 utils, 4 new pages, 3 new KBs
-b38a9a0 Mega build: pain points KB, nano-weakness detection, mocks, Starky Saturdays, responsible AI, outcome tracking, cross-platform section
-1d13868 UAE Arabic deep intelligence + mobile button responsiveness
-14d690d Wire hearing engine into anthropic.js — fires FIRST, frames all input
-61ae305 Hearing Engine KB — Starky's input-side listening intelligence
-0ead781 Wire deliberatePracticeLayer + architectureEnhancements into anthropic.js
-9eb99bc Voice Lab — 10-feature voice learning hub, premium design
-3fd197e Architecture Enhancements — 10 cognitive intelligence layers
+66e05b0 Top-up Maths AL, Business AL, CS AL — 1,808 total atoms
+ea8779f Expand Maths AL, Business AL, CS AL — 1,758 total atoms
+b7f02be Massive expansion: A Level sciences expanded + Maths/Business/CS A Level added — 1,645 total
+6d0e031 Add Chemistry, Physics, Biology A Level — 1,459 total atoms across 20 subjects
+00061c5 English Literature + Urdu hit 75 each — 1,305 total atoms
+608e170 Expand Geography, Commerce, Urdu, English Literature — 1,275 total atoms
+6be32ce Add Geography, Commerce, Islamiyat expansion, Urdu, English Literature — 1,175 total atoms across 17 subjects
+2298df8 Add Islamiyat (2058) + Sociology (2251) — crossed 1,000 atoms milestone
+84d1884 Expand 5 thin subjects — Maths +32, Econ +43, English +35, Bio +39, Physics +36
+a62438a Add History (2147) + Pakistan Studies (2059) — 176 atoms, total now 670
 ```
 
 **Files changed in last commit**:
 ```
-utils/physicsAtomsOLevel.js
+utils/starkyAtomsKB.js
 ```
 
 **Uncommitted changes**: CLAUDE.md
