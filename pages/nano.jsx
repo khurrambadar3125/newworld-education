@@ -343,7 +343,7 @@ export default function NanoPage() {
 
                     {/* Learn with Starky button */}
                     {!isMastered && (
-                      <a href={`/?message=${encodeURIComponent(starkyMessage(a.atom))}&subject=${encodeURIComponent(selected.label)}`}
+                      <a href={`/?message=${encodeURIComponent(starkyMessage(a.atom))}&subject=${encodeURIComponent(selected.label)}&from=nano`}
                         className="nano-learn-btn"
                         style={{
                           flexShrink: 0, fontSize: 13, fontWeight: 700, color: '#C9A84C',

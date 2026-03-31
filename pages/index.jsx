@@ -129,35 +129,64 @@ export default function Home() {
 
   }, []);
 
-  // ── Nano goal pre-fill: /?message=...&subject=... auto-launches chat ──
+  // ── Query param handler: /?message=&subject=&grade=&goal=&from= ──
+  const [paramFrom, setParamFrom] = useState(null);
   const [nanoMode, setNanoMode] = useState(false);
-  const nanoHandled = useRef(false);
+  const paramHandled = useRef(false);
   useEffect(() => {
-    if (nanoHandled.current) return;
+    if (paramHandled.current) return;
     try {
       const params = new URLSearchParams(window.location.search);
-      const nanoMessage = params.get('message');
-      if (!nanoMessage) return;
-      nanoHandled.current = true;
-      setNanoMode(true);
-      const nanoSubject = params.get('subject');
-      // Set subject context if provided
-      if (nanoSubject) setSelectedSubject(nanoSubject);
-      // Auto-select O Level grade if none selected
+      const urlMessage = params.get('message');
+      const urlGoal = params.get('goal');
+      const urlSubject = params.get('subject');
+      const urlGrade = params.get('grade');
+      const urlFrom = params.get('from');
+      // Need at least one actionable param
+      if (!urlMessage && !urlGoal && !urlSubject && !urlGrade) return;
+      paramHandled.current = true;
+      if (urlFrom) setParamFrom(urlFrom);
+      if (urlMessage || urlGoal) setNanoMode(true);
+      // Set subject context
+      if (urlSubject) setSelectedSubject(urlSubject);
+      // Set grade from param or default to Grade 9
+      if (urlGrade) {
+        const g = urlGrade.toLowerCase();
+        const gradeMatch = [
+          { ids: ['kg'], obj: { id: 'kg', label: 'KG', age: '4-5', emoji: '🌱' } },
+          { ids: ['grade1','grade 1'], obj: { id: 'grade1', label: 'Grade 1', age: '5-6', emoji: '⭐' } },
+          { ids: ['grade2','grade 2'], obj: { id: 'grade2', label: 'Grade 2', age: '6-7', emoji: '🌈' } },
+          { ids: ['grade3','grade 3'], obj: { id: 'grade3', label: 'Grade 3', age: '7-8', emoji: '🚀' } },
+          { ids: ['grade4','grade 4'], obj: { id: 'grade4', label: 'Grade 4', age: '8-9', emoji: '🌊' } },
+          { ids: ['grade5','grade 5'], obj: { id: 'grade5', label: 'Grade 5', age: '9-10', emoji: '🔬' } },
+          { ids: ['grade6','grade 6'], obj: { id: 'grade6', label: 'Grade 6', age: '10-11', emoji: '📗' } },
+          { ids: ['grade7','grade 7'], obj: { id: 'grade7', label: 'Grade 7', age: '11-12', emoji: '📘' } },
+          { ids: ['grade8','grade 8'], obj: { id: 'grade8', label: 'Grade 8', age: '12-13', emoji: '📙' } },
+          { ids: ['grade9','grade 9','o level','olevel'], obj: { id: 'grade9', label: 'Grade 9', age: '14-15', emoji: '📐' } },
+          { ids: ['grade10','grade 10'], obj: { id: 'grade10', label: 'Grade 10', age: '15-16', emoji: '🎯' } },
+          { ids: ['alevel','a level','a-level'], obj: { id: 'alevel', label: 'A Level', age: '16-18', emoji: '🏆' } },
+        ].find(m => m.ids.some(id => g.includes(id)));
+        if (gradeMatch) setSelectedGrade(gradeMatch.obj);
+      } else if (!selectedGrade) {
+        setSelectedGrade({ id: 'grade9', label: 'Grade 9', age: '14-15', emoji: '📐' });
+      }
+      // Build the message to send
+      const autoMsg = urlMessage || (urlGoal ? `Starky, teach me: ${urlGoal}. Then test me with a Cambridge exam question and mark my answer.` : null);
       const saved = localStorage.getItem('nw_user');
       const profile = saved ? JSON.parse(saved) : null;
-      if (!selectedGrade) setSelectedGrade({ id: 'grade9', label: 'Grade 9', age: '14-15', emoji: '📐' });
       setTimeout(() => {
         if (!chatStarted) {
-          launchChat(profile, nanoSubject);
+          launchChat(profile, urlSubject);
         }
-        setTimeout(() => {
-          setInput(nanoMessage);
+        if (autoMsg) {
           setTimeout(() => {
-            const btn = document.querySelector('.sb2');
-            if (btn && !btn.disabled) btn.click();
-          }, 400);
-        }, 300);
+            setInput(autoMsg);
+            setTimeout(() => {
+              const btn = document.querySelector('.sb2');
+              if (btn && !btn.disabled) btn.click();
+            }, 400);
+          }, 300);
+        }
       }, 200);
     } catch {}
   }, []);
@@ -495,9 +524,9 @@ export default function Home() {
             <button className="ib" onClick={() => { if (messages.length > 2 && !confirm('Leave this chat? Your conversation will be lost.')) return; setChatStarted(false); setMessages([]); stopSpeaking(); }}>← Back</button>
           </div>
         </div>
-        {nanoMode && (
-          <a href="/nano" style={{display:'block',padding:'8px 16px',background:'rgba(201,168,76,0.08)',borderBottom:'1px solid rgba(201,168,76,0.15)',fontSize:13,fontWeight:700,color:'#C9A84C',textDecoration:'none',textAlign:'center'}}>
-            &larr; Back to your Nano journey
+        {(nanoMode || paramFrom) && (
+          <a href={paramFrom ? `/${paramFrom}` : '/nano'} style={{display:'block',padding:'8px 16px',background:'rgba(201,168,76,0.08)',borderBottom:'1px solid rgba(201,168,76,0.15)',fontSize:13,fontWeight:700,color:'#C9A84C',textDecoration:'none',textAlign:'center'}}>
+            &larr; Back to {paramFrom === 'nano' || !paramFrom ? 'Nano' : paramFrom === 'study-plan' ? 'Study Plan' : paramFrom === 'starky-saturdays' ? 'Starky Saturdays' : paramFrom === 'dashboard' ? 'Dashboard' : paramFrom.charAt(0).toUpperCase() + paramFrom.slice(1)}
           </a>
         )}
         {!isLimitReached && remaining <= 2 && (

@@ -204,7 +204,7 @@ export default function StudyPlanPage() {
                       </div>
                     </div>
                     {!isWeekend && topic && !done && (
-                      <a href={`/demo?subject=${encodeURIComponent(topic.subject)}&focus=${encodeURIComponent(topic.topic)}`}
+                      <a href={`/demo?subject=${encodeURIComponent(topic.subject)}&focus=${encodeURIComponent(topic.topic)}&from=study-plan`}
                         style={{ fontSize: 11, color: "#4F8EF7", textDecoration: "none", fontWeight: 700, whiteSpace: "nowrap" }}>
                         Start →
                       </a>

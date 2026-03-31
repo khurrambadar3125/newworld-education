@@ -287,7 +287,7 @@ export default function StudentDashboard() {
               {weakSpots.map((w, i) => {
                 const sevColor = w.severity === 'high' ? '#FF6B6B' : w.severity === 'medium' ? '#FFC300' : 'rgba(255,255,255,0.4)';
                 return (
-                  <a key={i} href={`/demo?subject=${encodeURIComponent(w.subject)}&focus=${encodeURIComponent(w.weakness_category)}`}
+                  <a key={i} href={`/demo?subject=${encodeURIComponent(w.subject)}&focus=${encodeURIComponent(w.weakness_category)}&from=dashboard`}
                     style={{ ...S.card, textDecoration: "none", color: "#fff", cursor: "pointer" }}>
                     <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
                       <span style={{ width: 8, height: 8, borderRadius: "50%", background: sevColor, flexShrink: 0 }} />
@@ -336,7 +336,7 @@ export default function StudentDashboard() {
             <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: "0 0 14px" }}>Based on patterns across all NewWorldEdu students with similar profiles</p>
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
               {predictions.map((p, i) => (
-                <a key={i} href={`/demo?subject=${encodeURIComponent(p.subject)}&focus=${encodeURIComponent(p.predicted_weakness || '')}`}
+                <a key={i} href={`/demo?subject=${encodeURIComponent(p.subject)}&focus=${encodeURIComponent(p.predicted_weakness || '')}&from=dashboard`}
                   style={{ ...S.card, textDecoration: "none", color: "#fff", cursor: "pointer", borderColor: "rgba(167,139,250,0.2)", background: "rgba(167,139,250,0.04)" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
                     <span style={{ fontSize: 14 }}>🔮</span>
@@ -371,7 +371,7 @@ export default function StudentDashboard() {
                       {r.relevance}
                     </div>
                   )}
-                  <a href={`/demo?subject=${encodeURIComponent(r.subject || '')}&focus=${encodeURIComponent(r.category || '')}`}
+                  <a href={`/demo?subject=${encodeURIComponent(r.subject || '')}&focus=${encodeURIComponent(r.category || '')}&from=dashboard`}
                     style={{ display: "inline-block", background: "rgba(79,142,247,0.15)", border: "1px solid rgba(79,142,247,0.3)", borderRadius: 10, padding: "8px 16px", color: "#4F8EF7", fontWeight: 700, fontSize: 12, textDecoration: "none" }}>
                     Start this session →
                   </a>
@@ -406,7 +406,7 @@ export default function StudentDashboard() {
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
               {subjects.slice(0, 10).map((s, i) => (
-                <a key={i} href={`/demo?subject=${encodeURIComponent(s.name)}`}
+                <a key={i} href={`/demo?subject=${encodeURIComponent(s.name)}&from=dashboard`}
                   style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 14px", background: "rgba(255,255,255,0.02)", borderRadius: 10, textDecoration: "none", color: "#fff", cursor: "pointer" }}>
                   <span style={{ fontSize: 11, color: "rgba(255,255,255,0.4)", minWidth: 70 }}>{daysAgo(s.lastStudied) || '—'}</span>
                   <span style={{ fontWeight: 700, fontSize: 13, flex: 1 }}>{s.name}</span>

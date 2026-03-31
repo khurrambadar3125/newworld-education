@@ -72,7 +72,7 @@ export default function StarkySaturdays() {
             {TIPS[thisWeek.subject] || ''}
           </p>
           {saturday && (
-            <a href={`/demo?subject=${encodeURIComponent(thisWeek.subject)}`}
+            <a href={`/demo?subject=${encodeURIComponent(thisWeek.subject)}&from=starky-saturdays`}
               style={{ display: 'inline-block', background: 'linear-gradient(135deg,#4ADE80,#22C55E)', borderRadius: 14, padding: '14px 32px', color: '#fff', fontWeight: 800, fontSize: 16, textDecoration: 'none' }}>
               Start free session now
             </a>

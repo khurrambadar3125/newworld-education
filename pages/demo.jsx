@@ -220,6 +220,7 @@ export default function DemoPage() {
   const [loading, setLoading] = useState(false);
   const chatEndRef = useRef(null);
   const inputRef = useRef(null);
+  const [fromPage, setFromPage] = useState(null);
 
   // Read active child from parent portal OR nw_user to pick the right default tab
   const [childName, setChildName] = useState('');
@@ -257,6 +258,49 @@ export default function DemoPage() {
         else if (g.includes('alevel')) setActiveId('alevel');
       }
       if (user.name) setChildName(user.name);
+    } catch {}
+  }, []);
+
+  // ── Read URL query params: ?subject=, ?focus=, ?from= ──
+  const paramHandled = useRef(false);
+  useEffect(() => {
+    if (paramHandled.current) return;
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const urlSubject = params.get('subject');
+      const urlFocus = params.get('focus');
+      const urlFrom = params.get('from');
+      if (!urlSubject && !urlFocus) return;
+      paramHandled.current = true;
+      if (urlFrom) setFromPage(urlFrom);
+      // Map subject name to the closest tab
+      if (urlSubject) {
+        const s = urlSubject.toLowerCase();
+        if (['mathematics','maths','math','additional mathematics'].some(k => s.includes(k))) {
+          setActiveId('maths');
+        } else if (s.includes('a level') || s.includes('a_level') || s.includes('economics') || ['chemistry al','physics al','biology al','mathematics al','business al','cs al','accounting al','history al','psychology al','sociology al'].some(k => s.replace(/_/g,' ').includes(k))) {
+          setActiveId('alevel');
+        } else if (['kg','grade 1','grade 2','grade 3','grade 4','grade 5','primary','nursery'].some(k => s.includes(k))) {
+          setActiveId('primary');
+        } else if (['grade 6','grade 7','grade 8','grade 9','middle'].some(k => s.includes(k))) {
+          setActiveId('middle');
+        } else if (['university','bba','mba','marketing'].some(k => s.includes(k))) {
+          setActiveId('university');
+        } else {
+          setActiveId('olevel');
+        }
+      }
+      // Auto-send focus message after a short delay
+      if (urlFocus) {
+        const msg = `Help me with: ${urlFocus}` + (urlSubject ? ` (${urlSubject})` : '');
+        setTimeout(() => {
+          setInput(msg);
+          setTimeout(() => {
+            const sendBtn = document.querySelector('[data-send-btn]');
+            if (sendBtn && !sendBtn.disabled) sendBtn.click();
+          }, 400);
+        }, 500);
+      }
     } catch {}
   }, []);
 
@@ -490,6 +534,13 @@ export default function DemoPage() {
         ))}
       </div>
 
+      {/* Back to referrer bar */}
+      {fromPage && (
+        <a href={`/${fromPage}`} style={{ display: 'block', padding: '8px 16px', background: 'rgba(201,168,76,0.08)', borderBottom: '1px solid rgba(201,168,76,0.15)', fontSize: 13, fontWeight: 700, color: '#C9A84C', textDecoration: 'none', textAlign: 'center' }}>
+          &larr; Back to {fromPage === 'nano' ? 'Nano' : fromPage === 'study-plan' ? 'Study Plan' : fromPage === 'starky-saturdays' ? 'Starky Saturdays' : fromPage.charAt(0).toUpperCase() + fromPage.slice(1)}
+        </a>
+      )}
+
       {/* CHAT */}
       <div style={{ flex: 1, overflowY: "auto", padding: isMobile ? "12px" : "20px 28px" }}>
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
@@ -617,6 +668,7 @@ export default function DemoPage() {
               }}
             />
             <button
+              data-send-btn
               onClick={() => send()}
               disabled={(!input.trim() && !imageData) || loading}
               style={{
