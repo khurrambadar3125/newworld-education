@@ -67,7 +67,7 @@ function AuthBridge() {
 }
 
 // Pages that render their own nav — don't show the shared Nav on these
-const PAGES_WITH_OWN_NAV = ['/', '/past-papers', '/special-needs', '/login', '/start', '/nixor'];
+const PAGES_WITH_OWN_NAV = ['/', '/past-papers', '/special-needs', '/login', '/start', '/nixor', '/challenge'];
 
 // Catch unhandled errors globally — prevent white screen from async failures
 if (typeof window !== 'undefined') {
@@ -509,8 +509,8 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
         <InstallBanner />
         {showNav && <Nav current={router.pathname} />}
         <ErrorBoundary><Component {...pageProps} /></ErrorBoundary>
-        {!['/special-needs','/nixor'].includes(router.pathname) && <StarkyBubble />}
-        {!['/special-needs','/music-for-all','/reading-for-all','/arts-for-all','/nixor'].includes(router.pathname) && <VoiceChatBar />}
+        {!['/special-needs','/nixor','/challenge'].includes(router.pathname) && <StarkyBubble />}
+        {!['/special-needs','/music-for-all','/reading-for-all','/arts-for-all','/nixor','/challenge'].includes(router.pathname) && <VoiceChatBar />}
       </ThemeProvider>
     </SessionProvider>
   );

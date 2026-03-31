@@ -15,6 +15,22 @@ export default async function handler(req, res) {
   const { question, answer, subject, level, commandWord, marks } = req.body;
   if (!question || !answer) return res.status(400).json({ error: 'question and answer required' });
 
+  // ── ASK STARKY MODE: Nixor team asks a question, Starky answers like a Cambridge examiner ──
+  if (answer === '__ASK_STARKY_MODE__') {
+    try {
+      const response = await client.messages.create({
+        model: 'claude-3-haiku-20240307',
+        max_tokens: 1200,
+        system: [{ type: 'text', text: `${SUPREME_EXAMINER_PERSONA}\n\nYou are demonstrating your Cambridge examiner knowledge to a school principal. Be precise, authoritative, and deeply impressive. Show that you know Cambridge mark schemes better than any human tutor. Use the exact Cambridge dialect. Reference mark scheme phrases, command word requirements, and examiner report insights. Be concise but devastating in your precision.`, cache_control: { type: 'ephemeral' } }],
+        messages: [{ role: 'user', content: question }],
+      });
+      const text = response.content?.[0]?.text || 'No response.';
+      return res.status(200).json({ askMode: true, answer: text });
+    } catch (err) {
+      return res.status(500).json({ error: 'Failed. Try again.' });
+    }
+  }
+
   try {
     const response = await client.messages.create({
       model: 'claude-3-haiku-20240307',

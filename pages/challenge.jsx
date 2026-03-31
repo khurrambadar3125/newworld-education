@@ -132,7 +132,13 @@ export default function ChallengePage() {
   const [showHint, setShowHint] = useState(false);
   const [shuffled, setShuffled] = useState([]);
   const [idx, setIdx] = useState(0);
+  const [mode, setMode] = useState('answer'); // answer | ask
+  const [askQuestion, setAskQuestion] = useState('');
+  const [askResult, setAskResult] = useState(null);
+  const [askLoading, setAskLoading] = useState(false);
+  const [fromDeck, setFromDeck] = useState(false);
   const answerRef = useRef(null);
+  const questionRef = useRef(null);
 
   useEffect(() => {
     const fn = () => setIsMobile(window.innerWidth < 768);
@@ -144,6 +150,7 @@ export default function ChallengePage() {
     const s = [...CHALLENGES].sort(() => Math.random() - 0.5);
     setShuffled(s);
     setChallenge(s[0]);
+    if (typeof window !== 'undefined' && document.referrer.includes('/nixor')) setFromDeck(true);
   }, []);
 
   const selectChallenge = (c, i) => {
@@ -152,7 +159,10 @@ export default function ChallengePage() {
     setAnswer('');
     setResult(null);
     setShowHint(false);
-    setTimeout(() => answerRef.current?.focus(), 200);
+    setTimeout(() => {
+      questionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      answerRef.current?.focus();
+    }, 150);
   };
 
   const nextChallenge = () => {
@@ -185,6 +195,31 @@ export default function ChallengePage() {
     setLoading(false);
   };
 
+  const submitAskStarky = async () => {
+    if (!askQuestion.trim() || askLoading) return;
+    setAskLoading(true);
+    setAskResult(null);
+    try {
+      const res = await fetch('/api/challenge-answer', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          question: askQuestion.trim(),
+          answer: '__ASK_STARKY_MODE__',
+          subject: 'general',
+          level: 'O Level',
+          commandWord: 'explain',
+          marks: 3,
+        }),
+      });
+      const data = await res.json();
+      setAskResult(data);
+    } catch {
+      setAskResult({ error: 'Something went wrong. Try again.' });
+    }
+    setAskLoading(false);
+  };
+
   const cwGuide = challenge ? COMMAND_WORD_GUIDE[challenge.commandWord] : null;
   const pct = result?.marksAwarded != null ? Math.round((result.marksAwarded / (result.totalMarks || challenge?.marks || 1)) * 100) : null;
   const gradeColor = pct >= 80 ? '#4ADE80' : pct >= 60 ? '#FFC300' : pct != null ? '#FF6B6B' : '#4F8EF7';
@@ -204,16 +239,51 @@ export default function ChallengePage() {
 
       {/* Header */}
       <header style={{ padding: '14px 24px', borderBottom: '1px solid rgba(250,246,235,0.06)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <a href="/" style={{ textDecoration: 'none', fontWeight: 900, fontSize: 15, color: '#FAF6EB' }}>
-          NewWorldEdu<span style={{ color: '#C9A84C', marginLeft: 4 }}>★</span>
-        </a>
-        <div style={{ fontSize: 11, fontWeight: 700, color: '#C9A84C', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Cambridge Challenge</div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          {fromDeck && <a href="/nixor" style={{ fontSize: 12, color: 'rgba(250,246,235,0.4)', textDecoration: 'none', fontWeight: 700 }}>&larr; Back to deck</a>}
+          <a href="/" style={{ textDecoration: 'none', fontWeight: 900, fontSize: 15, color: '#FAF6EB' }}>
+            NewWorldEdu<span style={{ color: '#C9A84C', marginLeft: 4 }}>★</span>
+          </a>
+        </div>
+        <div style={{ display: 'flex', gap: 6 }}>
+          <button onClick={() => { setMode('answer'); setAskResult(null); }} style={{ background: mode === 'answer' ? 'rgba(201,168,76,0.15)' : 'rgba(250,246,235,0.04)', border: mode === 'answer' ? '1px solid rgba(201,168,76,0.4)' : '1px solid rgba(250,246,235,0.08)', borderRadius: 8, padding: '6px 14px', color: mode === 'answer' ? '#C9A84C' : 'rgba(250,246,235,0.4)', fontSize: 11, fontWeight: 700, cursor: 'pointer' }}>Answer a question</button>
+          <button onClick={() => { setMode('ask'); setResult(null); }} style={{ background: mode === 'ask' ? 'rgba(79,142,247,0.15)' : 'rgba(250,246,235,0.04)', border: mode === 'ask' ? '1px solid rgba(79,142,247,0.4)' : '1px solid rgba(250,246,235,0.08)', borderRadius: 8, padding: '6px 14px', color: mode === 'ask' ? '#4F8EF7' : 'rgba(250,246,235,0.4)', fontSize: 11, fontWeight: 700, cursor: 'pointer' }}>Ask Starky anything</button>
+        </div>
       </header>
 
       <div style={{ maxWidth: 680, margin: '0 auto', padding: isMobile ? '24px 16px 60px' : '40px 24px 80px' }}>
 
+        {/* ═══ ASK STARKY MODE ═══ */}
+        {mode === 'ask' && (
+          <div className="challenge-fadein">
+            <div style={{ textAlign: 'center', marginBottom: 32 }}>
+              <h1 style={{ fontSize: isMobile ? 26 : 38, fontWeight: 900, margin: '0 0 12px', lineHeight: 1.2 }}>
+                Ask Starky{' '}
+                <span style={{ background: 'linear-gradient(135deg,#4F8EF7,#6366F1)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>anything.</span>
+              </h1>
+              <p style={{ color: 'rgba(250,246,235,0.5)', fontSize: 15, margin: 0, lineHeight: 1.7, maxWidth: 520, marginLeft: 'auto', marginRight: 'auto' }}>
+                Ask any Cambridge exam question, any topic, any subject. Starky answers with the precision of a Senior Cambridge Examiner — mark scheme phrases, command word awareness, examiner report knowledge.
+              </p>
+            </div>
+            <textarea value={askQuestion} onChange={e => setAskQuestion(e.target.value)} placeholder="Ask any Cambridge question... e.g. &quot;Explain why increasing temperature increases the rate of reaction&quot;" disabled={askLoading}
+              style={{ width: '100%', minHeight: 120, padding: '16px', borderRadius: 14, border: '1px solid rgba(79,142,247,0.2)', background: 'rgba(79,142,247,0.04)', color: '#FAF6EB', fontSize: 15, lineHeight: 1.7, fontFamily: 'inherit', outline: 'none', resize: 'vertical', boxSizing: 'border-box', marginBottom: 12 }} />
+            <button onClick={submitAskStarky} disabled={askLoading || !askQuestion.trim()}
+              style={{ width: '100%', padding: '16px 28px', borderRadius: 14, border: 'none', background: askLoading ? 'rgba(79,142,247,0.3)' : '#4F8EF7', color: '#fff', fontSize: 16, fontWeight: 900, cursor: askLoading ? 'default' : 'pointer', fontFamily: "'Sora',sans-serif", opacity: !askQuestion.trim() ? 0.4 : 1 }}>
+              {askLoading ? <span style={{ animation: 'pulse 1.5s infinite' }}>Starky is thinking...</span> : 'Ask Starky →'}
+            </button>
+            {askResult && !askResult.error && (
+              <div className="challenge-fadein" style={{ marginTop: 20, background: 'rgba(79,142,247,0.04)', border: '1px solid rgba(79,142,247,0.15)', borderRadius: 16, padding: isMobile ? '20px' : '28px' }}>
+                <div style={{ fontSize: 12, fontWeight: 800, color: '#4F8EF7', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 12 }}>Starky — Cambridge Examiner Response</div>
+                <div style={{ fontSize: 15, color: 'rgba(250,246,235,0.8)', lineHeight: 1.9, whiteSpace: 'pre-line' }}>{askResult.answer}</div>
+              </div>
+            )}
+            {askResult?.error && <div style={{ color: '#FF6B6B', textAlign: 'center', marginTop: 16, fontSize: 14 }}>{askResult.error}</div>}
+          </div>
+        )}
+
+        {/* ═══ ANSWER MODE ═══ */}
         {/* Hero — only before first answer */}
-        {!result && !loading && (
+        {mode === 'answer' && !result && !loading && (
           <div style={{ textAlign: 'center', marginBottom: 32 }} className="challenge-fadein">
             <h1 style={{ fontSize: isMobile ? 26 : 38, fontWeight: 900, margin: '0 0 12px', lineHeight: 1.2 }}>
               Can you score{' '}
@@ -227,8 +297,8 @@ export default function ChallengePage() {
           </div>
         )}
 
-        {challenge && (
-          <div className="challenge-fadein">
+        {mode === 'answer' && challenge && (
+          <div className="challenge-fadein" ref={questionRef}>
             {/* Question Card */}
             <div style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(201,168,76,0.2)', borderRadius: 20, padding: isMobile ? '20px' : '28px', marginBottom: 16 }}>
               {/* Subject + Level badge */}
