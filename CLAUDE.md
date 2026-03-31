@@ -384,42 +384,48 @@ npm run lint     # ESLint
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Session Snapshot (auto-updated)
 <!-- This section is auto-updated by .claude/update-claude-md.sh Stop hook -->
-<!-- Last sync: 2026-03-31 12:24 -->
+<!-- Last sync: 2026-03-31 13:19 -->
 
-**Platform counts**: 52 pages, 73 utils, 71 API routes, 8 components, 23 cron jobs
+**Platform counts**: 52 pages, 74 utils, 72 API routes, 8 components, 23 cron jobs
 
 **All pages**: _app,arts,arts-for-all,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,login,mocks,music,music-for-all,nano,news,our-results,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,responsible-ai,school,sing,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,voice-lab,zayd-mode
 
-**All utils**: academicExcellence,americanCurriculumKB,analytics,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,commandWordEngine,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,examinerReportsKB,extendedResponseKB,getKnowledgeForTopic,globalKnowledgeBase,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,kbWishlist,literatureArabicKB,markSchemeKB,motherTongue,notify,outcomeTrackingKB,patternEngine,phonicsKB,physicsAtomsOLevel,platformLearningEngine,practiceKB,productGate,readingKnowledge,responsibleAIPolicy,saturdayFreeLogic,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,singingGoalsKB,singingKB,starkyAtomsKB,starkyIntents,starkyPrompt,summerKnowledge,supabase,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,youngLearnerKB
+**All utils**: academicExcellence,americanCurriculumKB,analytics,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,commandWordEngine,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,errorAlert,examinerReportsKB,extendedResponseKB,getKnowledgeForTopic,globalKnowledgeBase,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,kbWishlist,literatureArabicKB,markSchemeKB,motherTongue,notify,outcomeTrackingKB,patternEngine,phonicsKB,physicsAtomsOLevel,platformLearningEngine,practiceKB,productGate,readingKnowledge,responsibleAIPolicy,saturdayFreeLogic,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,singingGoalsKB,singingKB,starkyAtomsKB,starkyIntents,starkyPrompt,summerKnowledge,supabase,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,youngLearnerKB
 
 **Last 10 commits**:
 ```
+5b4254f Rebuild Nano lessons with subject-aware templates — science, humanities, english, maths, business
+711ae71 Clean Nano chat display + enhance Steps 3-4 with Cambridge precision
+03eb888 Fix test email address — send to khurrambadar@gmail.com not khurram@newworld.education
+37b1800 Add seed-test endpoint for weekly progress email testing
+6de25d3 Expand health-check to full platform — 51 pages + 30 API endpoints
+80a215f Fix PWA/app caching — force revalidation on HTML pages so deployments appear immediately
+59cf8b9 Add centralized error alerting — email Khurram on API failures, circuit breaker, cron errors
 5413ed4 Add Nano intelligence: mark scheme KB, extended response coach, Socratic protocol, first-session experience, weekly progress email
 97264d8 Add Nano to homepage nav — UAE menu, Pakistan menu, footer
 01e882b Add PROTECTED FILE comment to 4 core files
-2edb300 Fix query param handling across entire platform — 6 files
-2681552 Wire Nano→Chat→Nano loop: message/subject params, back bar, hide chips
-c035ea2 Fix Nano page selection flow + goal pre-fill on homepage
-96b6e92 Add YOUNG_LEARNER_SINGING_PROTOCOL to singingKB.js — ages 5-10
-91867cc Add Accounting AL, History AL, Psychology AL, Sociology AL — 2,168 total atoms
-fb661ca Add Command Word Engine + Examiner Reports KB — 2 new injection layers
-99e761e Rename Atoms → Nano: redesigned learning journey page
 ```
 
 **Files changed in last commit**:
 ```
-CLAUDE.md
-pages/api/anthropic.js
-pages/api/weekly-progress.js
 pages/index.jsx
 pages/nano.jsx
-utils/extendedResponseKB.js
-utils/markSchemeKB.js
-vercel.json
 ```
 
 **Uncommitted changes**: CLAUDE.md
-pages/api/weekly-progress.js
 **Untracked files**: none

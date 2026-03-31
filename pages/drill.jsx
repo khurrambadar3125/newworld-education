@@ -195,6 +195,7 @@ export default function DrillPage() {
   const [topic, setTopic] = useState('');
   const [difficulty, setDifficulty] = useState('medium');
   const [questionType, setQuestionType] = useState('mixed');
+  const [drillType, setDrillType] = useState(''); // weak_spots | command_words | mark_scheme | calculations | past_paper
   const [urlContext, setUrlContext] = useState(null); // summer track context
 
   // Camera
@@ -579,8 +580,32 @@ export default function DrillPage() {
             </>
           )}
 
+          {/* ═══ DRILL TYPE SELECTOR ═══ */}
+          {mode === 'exam' && !drillType && (
+            <div style={{display:'flex',flexDirection:'column',gap:10,marginBottom:16}}>
+              <div style={{fontSize:16,fontWeight:800,marginBottom:4}}>Choose your drill type</div>
+              {[
+                { id: 'weak_spots', icon: '⚡', label: 'Weak Spots', desc: 'Questions from your lowest-scoring Nano goals. Fix what\'s broken.', note: 'Personalised — needs login', color: '#FF6B6B' },
+                { id: 'command_words', icon: '📝', label: 'Command Words', desc: 'Same topic, different command words. Master what Cambridge is actually asking.', color: '#4F8EF7' },
+                { id: 'mark_scheme', icon: '🎯', label: 'Mark Scheme Language', desc: 'Drill the exact phrases Cambridge requires. Write them until they are automatic.', color: '#C9A84C' },
+                { id: 'calculations', icon: '🔢', label: 'Calculations', desc: 'Method under time pressure. Show all working. Units required.', note: 'Maths / Science / Accounting', color: '#4ADE80' },
+                { id: 'past_paper', icon: '📚', label: 'Past Paper Style', desc: 'Cambridge-style questions by topic. Timed. Marked against the real mark scheme.', color: '#A78BFA' },
+              ].map(dt => (
+                <button key={dt.id} onClick={() => setDrillType(dt.id)} style={{ background: `${dt.color}08`, border: `1px solid ${dt.color}33`, borderRadius: 14, padding: '16px 18px', cursor: 'pointer', textAlign: 'left', transition: 'all 0.15s' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 4 }}>
+                    <span style={{ fontSize: 22 }}>{dt.icon}</span>
+                    <span style={{ fontWeight: 800, fontSize: 15, color: dt.color }}>{dt.label}</span>
+                  </div>
+                  <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)', lineHeight: 1.6, marginLeft: 32 }}>{dt.desc}</div>
+                  {dt.note && <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', marginLeft: 32, marginTop: 2 }}>{dt.note}</div>}
+                </button>
+              ))}
+              <button onClick={() => { setMode(''); setDrillType(''); }} style={{ ...S.ghostBtn, marginTop: 4, fontSize: 12 }}>← Back to mode select</button>
+            </div>
+          )}
+
           {/* Level */}
-          {mode === 'exam' && <><div style={S.card}>
+          {mode === 'exam' && drillType && <><div style={S.card}>
             <span style={S.label}>Exam Level</span>
             <div style={S.grid2}>
               {['O Level','A Level'].map(l => (
@@ -654,14 +679,14 @@ export default function DrillPage() {
 
           </>
           }
-          {mode === 'exam' && <><div ref={startRef} /><button
+          {mode === 'exam' && drillType && <><div ref={startRef} /><button
             style={{...S.primaryBtn, opacity:(!subject||!topic) && !cameraImage ? 0.4 : 1, cursor:(!subject||!topic) && !cameraImage ? 'not-allowed' : 'pointer'}}
             onClick={startSession}
             disabled={(!subject||!topic) && !cameraImage}
           >
             {cameraImage ? 'Drill from my photo →' : `Start ${SESSION_LENGTH}-Question Drill →`}
           </button>
-          <button style={{...S.ghostBtn,marginTop:8}} onClick={() => { setMode(''); setSubject(''); setTopic(''); }}>← Back</button>
+          <button style={{...S.ghostBtn,marginTop:8}} onClick={() => { setMode(''); setDrillType(''); setSubject(''); setTopic(''); }}>← Back</button>
           </>
           }
 
@@ -1002,6 +1027,19 @@ export default function DrillPage() {
             }}>
               📧 Share Results
             </button>
+          </div>
+
+          {/* ═══ NANO → DRILL → MOCK LOOP ═══ */}
+          <div style={{...S.card, borderColor:'rgba(201,168,76,0.2)', background:'rgba(201,168,76,0.04)', marginTop:16}}>
+            <span style={{...S.label, color:'#C9A84C'}}>What to do next</span>
+            <a href="/nano" style={{display:'block', padding:'12px 0', borderBottom:'1px solid rgba(255,255,255,0.05)', textDecoration:'none', color:'#fff', fontSize:13, lineHeight:1.7}}>
+              <span style={{color:'#C9A84C', fontWeight:700}}>⚛️ Nano:</span> Go deeper on your weakest topic — master it one goal at a time
+              <span style={{display:'block', color:'#4F8EF7', fontWeight:700, marginTop:4}}>→ Open Starky Nano</span>
+            </a>
+            <a href="/mocks" style={{display:'block', padding:'12px 0', textDecoration:'none', color:'#fff', fontSize:13, lineHeight:1.7}}>
+              <span style={{color:'#C9A84C', fontWeight:700}}>📝 Mocks:</span> Test yourself under timed exam conditions with full marking
+              <span style={{display:'block', color:'#4F8EF7', fontWeight:700, marginTop:4}}>→ Take a Starky Mock</span>
+            </a>
           </div>
 
           <div style={{ display:'flex', gap:8, marginTop:12 }}>

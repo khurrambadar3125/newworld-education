@@ -57,10 +57,10 @@ export default withErrorAlert(async function handler(req, res) {
           const gradeResponse = await client.messages.create({
             model: 'claude-3-haiku-20240307',
             max_tokens: 300,
-            system: `You are a Cambridge ${grade || 'O Level'} examiner marking a ${subject} answer. Be fair but strict. Return ONLY valid JSON.`,
+            system: `You are a Cambridge ${grade || 'O Level'} examiner marking a ${subject} answer. Be strict but fair. Mark using this exact structure and return ONLY valid JSON.`,
             messages: [{
               role: 'user',
-              content: `Question (${q.marks} marks): ${q.question}\nMark scheme hint: ${q.markSchemeHint || 'Use Cambridge standards'}\nStudent answer: ${studentAnswer || '(no answer)'}\n\nReturn JSON: {"marksAwarded":0-${q.marks},"correct":true/false,"feedback":"...","examinerTip":"..."}`
+              content: `Question (${q.marks} marks): ${q.question}\nMark scheme hint: ${q.markSchemeHint || 'Use Cambridge standards'}\nStudent answer: ${studentAnswer || '(no answer)'}\n\nMark this answer with:\n1. COMMAND WORD CHECK: What command word was used? Did the student respond correctly to it?\n2. MARK SCHEME LANGUAGE: Did they use accepted Cambridge phrases or imprecise alternatives?\n3. EXAMINER REPORT: Any known examiner-flagged mistake for this topic?\n4. Each mark point: earned or missed, with the exact phrase that earns each missed mark.\n5. Model full-mark answer.\n\nReturn JSON: {"marksAwarded":0-${q.marks},"correct":true/false,"commandWordVerdict":"correct type|wrong type","feedback":"detailed marking with mark points","examinerTip":"specific examiner warning if applicable","modelAnswer":"full mark answer"}`
             }],
           });
 
@@ -75,6 +75,8 @@ export default withErrorAlert(async function handler(req, res) {
               marksAvailable: q.marks || 1,
               feedback: result.feedback || '',
               examinerTip: result.examinerTip || null,
+              commandWordVerdict: result.commandWordVerdict || null,
+              modelAnswer: result.modelAnswer || null,
             });
           } else {
             feedback.push({ correct: false, marksAwarded: 0, marksAvailable: q.marks || 1, feedback: 'Could not grade this answer.', examinerTip: null });
