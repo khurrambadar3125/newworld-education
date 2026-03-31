@@ -306,6 +306,372 @@ ${corrections}
 Every correction is a mark saved on exam day.`;
 }
 
+// ─────────────────────────────────────────────
+// CAMBRIDGE MARKING PHILOSOPHY
+// How Cambridge examiners actually think
+// ─────────────────────────────────────────────
+
+const CAMBRIDGE_MARKING_PHILOSOPHY = {
+  corePhilosophy: "Cambridge mark schemes reward positive achievement. Examiners look for what students know, not what they don't.",
+  markingConventions: {
+    ECF: "Error Carried Forward — correct method using wrong earlier answer still earns marks",
+    BOD: "Benefit of Doubt — ambiguous answers that could be correct get the mark",
+    ORA: "Or Reverse Argument — valid reverse statement earns the mark",
+    OWTTE: "Or Words To That Effect — concept matters not exact phrasing",
+    levelOfResponse: "Extended writing is marked by quality of argument not quantity of points. Band 1 requires sustained argument with conclusion.",
+  },
+  markSchemeNotation: {
+    "/": "Alternative accepted answers",
+    ";": "Mark point boundary",
+    "()": "Required clarification",
+    "NOT": "Explicitly rejected — scores 0",
+    "IGNORE": "Neither gains nor loses marks",
+    "DO NOT ALLOW": "Contradicts Cambridge understanding — must be corrected",
+  },
+};
+
+// ─────────────────────────────────────────────
+// CAMBRIDGE DIALECT — Full precision entries
+// Every concept Cambridge tests with exact
+// accepted/rejected phrases
+// ─────────────────────────────────────────────
+
+const CAMBRIDGE_DIALECT = [
+  // ═══ BIOLOGY ═══
+  {
+    concept: 'osmosis',
+    cambridgeAccepts: ['net movement of water molecules from a region of higher water potential to a region of lower water potential through a partially permeable membrane', 'net movement of water molecules', 'partially permeable membrane', 'water potential gradient'],
+    cambridgeRejects: ['water moves', 'from dilute to concentrated', 'semi-permeable membrane', 'movement of water'],
+    markSchemeNote: 'All three components required — missing "net" loses 1 mark, missing "water molecules" loses 1 mark, missing "partially permeable" loses 1 mark.',
+    subject: 'biology',
+    level: 'o_level',
+  },
+  {
+    concept: 'enzyme denaturation',
+    cambridgeAccepts: ['denatured', 'active site changes shape', 'tertiary structure is altered', 'enzyme is denatured'],
+    cambridgeRejects: ['killed', 'destroyed', 'broken down', 'dies', 'stops working'],
+    markSchemeNote: 'Enzymes are proteins, not living organisms. They cannot be "killed". Only "denatured" is accepted.',
+    subject: 'biology',
+    level: 'o_level',
+  },
+  {
+    concept: 'enzyme specificity',
+    cambridgeAccepts: ['complementary shape to the substrate', 'active site is complementary in shape', 'enzyme-substrate complex'],
+    cambridgeRejects: ['lock and key', 'fits perfectly', 'matches the substrate'],
+    markSchemeNote: 'Lock and key may get 1 mark at O Level only — scores 0 at A Level. "Complementary shape" is the required phrase.',
+    subject: 'biology',
+    level: 'o_level',
+  },
+  {
+    concept: 'active transport',
+    cambridgeAccepts: ['movement against the concentration gradient', 'requires ATP', 'requires energy from respiration', 'active process using energy'],
+    cambridgeRejects: ['uphill', 'requires energy', 'uses energy to move things'],
+    markSchemeNote: 'At A Level, "requires energy" alone is insufficient — must specify ATP or energy from respiration. Must state "against concentration gradient".',
+    subject: 'biology',
+    level: 'o_level',
+  },
+  {
+    concept: 'mitosis outcome',
+    cambridgeAccepts: ['two genetically identical cells', 'two genetically identical daughter cells', 'diploid cells'],
+    cambridgeRejects: ['identical cells', 'same cells', 'clones', 'copies'],
+    markSchemeNote: 'Must say "genetically identical" — "identical" or "same" alone does not score.',
+    subject: 'biology',
+    level: 'o_level',
+  },
+  {
+    concept: 'photosynthesis energy',
+    cambridgeAccepts: ['light energy', 'light energy absorbed by chlorophyll', 'light energy converted to chemical energy'],
+    cambridgeRejects: ['energy', 'heat energy', 'sun energy', 'solar energy'],
+    markSchemeNote: 'Must specify "light energy" — "energy" alone is too vague and will not score.',
+    subject: 'biology',
+    level: 'o_level',
+  },
+  {
+    concept: 'haemoglobin and oxygen',
+    cambridgeAccepts: ['haemoglobin combines with oxygen to form oxyhaemoglobin', 'haemoglobin associates with oxygen', 'binds to oxygen'],
+    cambridgeRejects: ['carries oxygen', 'absorbs oxygen', 'holds oxygen'],
+    markSchemeNote: '"Combines with" is the precise term. "Carries" is everyday language that may not score full marks at IGCSE.',
+    subject: 'biology',
+    level: 'o_level',
+  },
+  {
+    concept: 'diffusion',
+    cambridgeAccepts: ['net movement of particles from a region of higher concentration to a region of lower concentration', 'net movement down a concentration gradient'],
+    cambridgeRejects: ['movement of particles', 'particles spread out', 'things move from high to low'],
+    markSchemeNote: 'Must include "net" and "concentration gradient". Missing "net" loses the first mark.',
+    subject: 'biology',
+    level: 'o_level',
+  },
+  {
+    concept: 'respiration energy',
+    cambridgeAccepts: ['energy released', 'energy is released from glucose', 'ATP produced'],
+    cambridgeRejects: ['energy made', 'energy created', 'energy produced'],
+    markSchemeNote: 'Energy is "released" not "made" or "produced". Energy cannot be created (conservation of energy).',
+    subject: 'biology',
+    level: 'o_level',
+  },
+
+  // ═══ CHEMISTRY ═══
+  {
+    concept: 'effect of temperature on rate',
+    cambridgeAccepts: ['more frequent successful collisions', 'more particles have energy greater than or equal to activation energy', 'increased kinetic energy of particles'],
+    cambridgeRejects: ['more collisions', 'particles move faster', 'reaction goes faster'],
+    markSchemeNote: 'Two separate marks — collision frequency AND activation energy both required. "More collisions" without "successful" loses mark 1. Omitting activation energy loses mark 2.',
+    subject: 'chemistry',
+    level: 'o_level',
+  },
+  {
+    concept: 'ionic bonding',
+    cambridgeAccepts: ['transfer of electrons', 'electrostatic attraction between oppositely charged ions', 'metal loses electrons, non-metal gains electrons'],
+    cambridgeRejects: ['sharing of electrons', 'gives electrons', 'attraction between ions'],
+    markSchemeNote: 'Must say "oppositely charged" ions — "attraction between ions" alone is insufficient. Transfer NOT sharing.',
+    subject: 'chemistry',
+    level: 'o_level',
+  },
+  {
+    concept: 'covalent bonding',
+    cambridgeAccepts: ['sharing of a pair of electrons', 'shared pair of electrons', 'atoms share one or more pairs of electrons'],
+    cambridgeRejects: ['sharing electrons', 'atoms share electrons'],
+    markSchemeNote: 'Must say "pair of electrons" or "electron pairs" — "sharing electrons" without "pair" does not score.',
+    subject: 'chemistry',
+    level: 'o_level',
+  },
+  {
+    concept: 'dynamic equilibrium',
+    cambridgeAccepts: ['rate of forward reaction equals rate of reverse reaction', 'concentrations of reactants and products remain constant'],
+    cambridgeRejects: ['reaction has stopped', 'concentrations are equal', 'balanced'],
+    markSchemeNote: 'Must mention BOTH rates (forward AND reverse) as equal. Mentioning only one rate does not score.',
+    subject: 'chemistry',
+    level: 'o_level',
+  },
+  {
+    concept: 'electrolysis cathode',
+    cambridgeAccepts: ['reduction occurs at cathode', 'cations gain electrons at cathode', 'cathode is negative electrode'],
+    cambridgeRejects: ['cathode is positive', 'anode is negative'],
+    markSchemeNote: 'Must state BOTH gain electrons AND reduced for full marks. Cathode is NEGATIVE in electrolysis.',
+    subject: 'chemistry',
+    level: 'o_level',
+  },
+  {
+    concept: 'acid definition O Level',
+    cambridgeAccepts: ['substance that produces hydrogen ions in solution', 'produces H+ ions in aqueous solution'],
+    cambridgeRejects: ['contains hydrogen', 'has H atoms'],
+    markSchemeNote: 'Must say "produces H+ ions in solution" — "contains hydrogen" is insufficient.',
+    subject: 'chemistry',
+    level: 'o_level',
+  },
+  {
+    concept: 'acid definition A Level',
+    cambridgeAccepts: ['proton donor', 'species that donates H+', 'Bronsted-Lowry acid'],
+    cambridgeRejects: ['produces H+ ions', 'gives H+ ions'],
+    markSchemeNote: 'At A Level, "proton donor" is required (Bronsted-Lowry definition). O Level language does not score.',
+    subject: 'chemistry',
+    level: 'a_level',
+  },
+  {
+    concept: 'catalyst',
+    cambridgeAccepts: ['provides alternative reaction pathway with lower activation energy', 'lowers activation energy', 'alternative pathway'],
+    cambridgeRejects: ['speeds up reaction', 'reduces energy needed', 'makes reaction faster'],
+    markSchemeNote: '"Speeds up reaction" alone is insufficient. Must state "alternative pathway" AND "lower activation energy".',
+    subject: 'chemistry',
+    level: 'o_level',
+  },
+
+  // ═══ PHYSICS ═══
+  {
+    concept: 'weight vs mass',
+    cambridgeAccepts: ['weight is a force measured in newtons', 'mass is amount of matter measured in kilograms', 'weight = mass × gravitational field strength'],
+    cambridgeRejects: ['weight is how heavy something is', 'weight and mass are the same'],
+    markSchemeNote: 'Weight is a FORCE (N). Mass is measured in kg. Must distinguish clearly.',
+    subject: 'physics',
+    level: 'o_level',
+  },
+  {
+    concept: 'velocity vs speed',
+    cambridgeAccepts: ['velocity is speed in a stated direction', 'velocity is a vector quantity', 'speed with direction'],
+    cambridgeRejects: ['velocity is faster', 'velocity is the same as speed'],
+    markSchemeNote: 'Must include "direction" — without it, the definition cannot distinguish velocity from speed.',
+    subject: 'physics',
+    level: 'o_level',
+  },
+  {
+    concept: 'work done',
+    cambridgeAccepts: ['force multiplied by distance moved in the direction of the force', 'W = Fd where d is in direction of force'],
+    cambridgeRejects: ['force times distance', 'energy used'],
+    markSchemeNote: '"In the direction of the force" is essential — without this qualifier the definition loses a mark.',
+    subject: 'physics',
+    level: 'o_level',
+  },
+  {
+    concept: 'electric current',
+    cambridgeAccepts: ['rate of flow of charge', 'charge per unit time', 'I = Q/t'],
+    cambridgeRejects: ['flow of electrons', 'electricity flowing', 'electrons moving'],
+    markSchemeNote: '"Rate of flow of CHARGE" not "flow of electrons". In electrolytes, ions carry current, not electrons.',
+    subject: 'physics',
+    level: 'o_level',
+  },
+  {
+    concept: 'transverse waves',
+    cambridgeAccepts: ['oscillations perpendicular to direction of energy transfer', 'vibrations at right angles to wave direction'],
+    cambridgeRejects: ['waves go up and down', 'particles move up and down'],
+    markSchemeNote: 'Must use "perpendicular" or "at right angles" to "direction of energy transfer".',
+    subject: 'physics',
+    level: 'o_level',
+  },
+  {
+    concept: 'longitudinal waves',
+    cambridgeAccepts: ['oscillations parallel to direction of energy transfer', 'compressions and rarefactions', 'vibrations along the direction of wave travel'],
+    cambridgeRejects: ['waves go back and forth', 'particles push each other'],
+    markSchemeNote: 'Must use "parallel" and ideally mention "compressions and rarefactions".',
+    subject: 'physics',
+    level: 'o_level',
+  },
+  {
+    concept: 'power',
+    cambridgeAccepts: ['rate of energy transfer', 'energy transferred per unit time', 'work done per unit time', 'P = W/t', 'P = E/t'],
+    cambridgeRejects: ['amount of energy', 'how much energy', 'total energy'],
+    markSchemeNote: '"Rate" is the key word. Power = energy per TIME. "Amount of energy" is energy, not power.',
+    subject: 'physics',
+    level: 'o_level',
+  },
+
+  // ═══ ECONOMICS ═══
+  {
+    concept: 'demand definition',
+    cambridgeAccepts: ['quantity consumers are willing and able to buy at a given price', 'effective demand', 'willingness and ability to purchase'],
+    cambridgeRejects: ['how much people want', 'amount bought', 'what people need'],
+    markSchemeNote: 'Must include BOTH "willing" AND "able" AND "at a given price". Missing any one loses a mark.',
+    subject: 'economics',
+    level: 'o_level',
+  },
+  {
+    concept: 'market equilibrium',
+    cambridgeAccepts: ['quantity demanded equals quantity supplied', 'no excess demand or excess supply', 'market clearing price'],
+    cambridgeRejects: ['demand equals supply', 'everything is sold', 'market is balanced'],
+    markSchemeNote: 'Must say "quantity demanded" and "quantity supplied" — not "demand" and "supply".',
+    subject: 'economics',
+    level: 'o_level',
+  },
+  {
+    concept: 'price elasticity of demand',
+    cambridgeAccepts: ['percentage change in quantity demanded divided by percentage change in price', '%ΔQd / %ΔP'],
+    cambridgeRejects: ['change in demand divided by change in price', 'how much demand changes with price'],
+    markSchemeNote: 'Must be PERCENTAGE changes. Must say "quantity demanded" not "demand".',
+    subject: 'economics',
+    level: 'o_level',
+  },
+  {
+    concept: 'inflation',
+    cambridgeAccepts: ['sustained rise in the general price level', 'persistent increase in the general level of prices'],
+    cambridgeRejects: ['prices rising', 'things getting more expensive', 'cost of living goes up'],
+    markSchemeNote: 'Must include "sustained" (not temporary) and "general" (not one product). Both words are mark-earning.',
+    subject: 'economics',
+    level: 'o_level',
+  },
+
+  // ═══ ENGLISH ═══
+  {
+    concept: 'language analysis structure',
+    cambridgeAccepts: ['identify technique, embed quotation, explain effect on reader', 'writer uses [technique] in "[quote]" which creates a sense of [effect]'],
+    cambridgeRejects: ['technique identified without effect', 'this is effective', 'the writer uses a metaphor'],
+    markSchemeNote: 'Must do ALL THREE: technique + quote + effect. 2 out of 3 does not score full marks. "This is effective" without explaining WHAT effect scores 0.',
+    subject: 'english',
+    level: 'o_level',
+  },
+  {
+    concept: 'summary writing',
+    cambridgeAccepts: ['points in own words', 'paraphrased content', 'concise and accurate'],
+    cambridgeRejects: ['lifted phrases from passage', 'copied text', 'direct quotation in summary'],
+    markSchemeNote: 'Lifted phrases score 0 even if content is correct. Must be in own words.',
+    subject: 'english',
+    level: 'o_level',
+  },
+
+  // ═══ MATHEMATICS ═══
+  {
+    concept: 'probability answers',
+    cambridgeAccepts: ['value between 0 and 1', 'fraction', 'decimal between 0 and 1'],
+    cambridgeRejects: ['percentage', 'greater than 1', 'ratio format'],
+    markSchemeNote: 'Probability MUST be between 0 and 1. Percentage answers score 0 even if calculation is correct.',
+    subject: 'mathematics',
+    level: 'o_level',
+  },
+  {
+    concept: 'show that questions',
+    cambridgeAccepts: ['independent derivation working towards given answer', 'show every step of working', 'do not use given answer in working'],
+    cambridgeRejects: ['circular argument using given answer', 'substituting the answer in', 'working backwards from answer'],
+    markSchemeNote: 'Using the given answer in your working is a circular argument and scores 0 for ALL method marks.',
+    subject: 'mathematics',
+    level: 'o_level',
+  },
+];
+
+// ─────────────────────────────────────────────
+// CAMBRIDGE HIDDEN RULES
+// The unwritten rules examiners enforce
+// ─────────────────────────────────────────────
+
+const CAMBRIDGE_HIDDEN_RULES = {
+  chemistry: [
+    'State symbols (s)(l)(g)(aq) required in all equations — missing = mark lost',
+    'Write formula before substituting values in calculations',
+    'Never change formulae when balancing — coefficients only',
+    'Organic structures: every bond must be shown correctly',
+    'Percentage yield and atom economy are different — confusing scores 0',
+  ],
+  physics: [
+    'Units required on ALL numerical answers — correct answer without units loses final mark',
+    'Ray diagrams must be ruled with directional arrows',
+    'g = 9.8 N/kg unless question states otherwise — not 10',
+    'Graph descriptions must quote specific values — "increases" alone is incomplete',
+  ],
+  biology: [
+    'Never say "food" — say glucose in biological processes',
+    'Osmosis refers to water only — never "glucose moves by osmosis"',
+    'Cell surface membrane and cell wall are different structures',
+    'Punnett squares must show gametes — missing gametes loses marks',
+    'Mitosis order: interphase, prophase, metaphase, anaphase, telophase',
+  ],
+  economics: [
+    'Diagram without labels scores 0 — every axis, curve and point must be labelled',
+    'Evaluation requires conclusion — "it depends" alone is not a conclusion',
+    'Shift OF curve vs movement ALONG curve — confusing loses marks',
+    'Percentage change: always use original value as denominator',
+  ],
+  history: [
+    'Narrative scores Band 3 maximum — analysis of significance reaches Band 1',
+    'Every claim needs specific evidence: dates, names, events',
+    'Counter-argument required for Band 1',
+    'A Level: historiography expected — name a historian and engage with their interpretation',
+    'Conclusion must be a definitive judgement',
+  ],
+  english_literature: [
+    'Block quotations suggest imprecise selection — use embedded quotes',
+    'Describing what happens = retelling = Band 3 maximum',
+    'Context must be woven into analysis not a separate paragraph',
+    'Effect on reader is the mark — technique without effect = half marks',
+  ],
+  mathematics: [
+    'Show that: never use given answer in working — circular = 0',
+    'Method marks available for wrong answers — always show working',
+    'Round only at final answer — carry full precision through working',
+    'Probability tree branches must sum to 1 at each node',
+  ],
+  accounting: [
+    'Accounting equation must balance at every step',
+    'Depreciation: deduct from asset AND show as expense — missing either loses marks',
+    'Revenue vs capital expenditure distinction tested every year',
+    'Ratio requires comparison to benchmark — ratio alone cannot earn evaluation marks',
+    'Cash and profit are different — confusing is most penalised error',
+  ],
+  computer_science: [
+    'Pseudocode must be consistent — mixing conventions loses marks',
+    'Trace tables must show every variable change at every step',
+    'Big O: simplified form only — O(n²) not O(2n²+3n)',
+    'Binary conversion: show working — answer only scores 0',
+  ],
+};
+
 module.exports = {
   UNIVERSAL_DIALECT,
   SCIENCE_DIALECT,
@@ -314,6 +680,9 @@ module.exports = {
   MATHS_DIALECT,
   BUSINESS_DIALECT,
   SUPREME_EXAMINER_PERSONA,
+  CAMBRIDGE_MARKING_PHILOSOPHY,
+  CAMBRIDGE_DIALECT,
+  CAMBRIDGE_HIDDEN_RULES,
   getDialectBySubject,
   checkDialect,
   getDialectInjection,
