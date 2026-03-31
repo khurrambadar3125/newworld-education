@@ -159,10 +159,11 @@ export default function ChallengePage() {
     setAnswer('');
     setResult(null);
     setShowHint(false);
+    setAskResult(null);
     setTimeout(() => {
-      questionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      answerRef.current?.focus();
-    }, 150);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setTimeout(() => answerRef.current?.focus(), 300);
+    }, 100);
   };
 
   const nextChallenge = () => {
@@ -493,7 +494,7 @@ export default function ChallengePage() {
           <summary style={{ cursor: 'pointer', fontSize: 13, fontWeight: 700, color: 'rgba(250,246,235,0.35)', padding: '8px 0' }}>Choose a different question ({CHALLENGES.length} available)</summary>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 10 }}>
             {shuffled.map((c, i) => (
-              <button key={c.id} onClick={() => selectChallenge(c, i)}
+              <button key={c.id} onClick={() => { setMode('answer'); selectChallenge(c, i); }}
                 style={{ background: challenge?.id === c.id ? 'rgba(201,168,76,0.08)' : 'rgba(250,246,235,0.02)', border: challenge?.id === c.id ? '1px solid rgba(201,168,76,0.3)' : '1px solid rgba(250,246,235,0.06)', borderRadius: 12, padding: '12px 16px', cursor: 'pointer', textAlign: 'left' }}>
                 <div style={{ fontSize: 13, fontWeight: 700, color: '#FAF6EB', marginBottom: 2 }}>{c.subject} — {c.commandWord}</div>
                 <div style={{ fontSize: 11, color: 'rgba(250,246,235,0.4)' }}>{c.question.slice(0, 60)}...</div>
