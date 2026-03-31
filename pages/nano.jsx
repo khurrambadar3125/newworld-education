@@ -57,6 +57,35 @@ export default function NanoPage() {
     return () => window.removeEventListener('resize', fn);
   }, []);
 
+  // Handle autostart URL params (from "Continue to Next Goal" button)
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const urlSubject = params.get('subject');
+      const urlAutostart = params.get('autostart');
+      const urlAfterGoal = params.get('afterGoal');
+      if (urlSubject && urlAutostart === 'next') {
+        // Find the subject
+        const matchedSubject = ATOMS_SUBJECTS.find(s => s.label.toLowerCase() === urlSubject.toLowerCase());
+        if (matchedSubject) {
+          setSelected(matchedSubject);
+          // After atoms load, find next goal after the completed one
+          setTimeout(() => {
+            const subjectAtoms = getAtomsBySubject(matchedSubject.id);
+            if (urlAfterGoal) {
+              const completedIdx = subjectAtoms.findIndex(a => a.id === urlAfterGoal);
+              const nextGoal = completedIdx >= 0 ? subjectAtoms[completedIdx + 1] : subjectAtoms[0];
+              if (nextGoal) {
+                const goalNum = subjectAtoms.indexOf(nextGoal) + 1;
+                window.location.href = `/?message=${encodeURIComponent(buildNanoMessage(nextGoal, goalNum, matchedSubject.label, false))}&subject=${encodeURIComponent(matchedSubject.label)}&from=nano&goalId=${encodeURIComponent(nextGoal.id)}&goalNumber=${goalNum}`;
+              }
+            }
+          }, 300);
+        }
+      }
+    } catch {}
+  }, []);
+
   // Load all mastery data on mount — powers subject cards, momentum, recommendations
   useEffect(() => {
     try {

@@ -605,7 +605,7 @@ export default function DrillPage() {
                   {dt.note && <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', marginLeft: 32, marginTop: 2 }}>{dt.note}</div>}
                 </button>
               ))}
-              <button onClick={() => { setMode(''); setDrillType(''); }} style={{ ...S.ghostBtn, marginTop: 4, fontSize: 12 }}>← Back to mode select</button>
+              <button onClick={() => { setMode(''); setDrillType(''); setSubject(''); setTopic(''); }} style={{ ...S.ghostBtn, marginTop: 4, fontSize: 12 }}>← Back to mode select</button>
             </div>
           )}
 

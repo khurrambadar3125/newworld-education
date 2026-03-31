@@ -398,22 +398,22 @@ export default async function handler(req, res) {
 
       // ── IB Diploma injection — for UAE students on IB curriculum ──
       if (userProfile?.uaeCurriculum === 'ib' || isIBTopic(message)) {
-        built.systemPrompt += getIBDiplomaPrompt(subject);
+        built.systemPrompt += getIBDiplomaPrompt(currentSubject);
       }
 
       // ── American curriculum injection — for UAE students on US curriculum ──
       if (userProfile?.uaeCurriculum === 'american' || isAmericanCurriculumTopic(message)) {
-        built.systemPrompt += getAmericanCurriculumPrompt(subject);
+        built.systemPrompt += getAmericanCurriculumPrompt(currentSubject);
       }
 
       // ── CBSE curriculum injection — for UAE students on Indian curriculum ──
       if (userProfile?.uaeCurriculum === 'cbse' || isCBSETopic(message)) {
-        built.systemPrompt += getCBSECurriculumPrompt(subject);
+        built.systemPrompt += getCBSECurriculumPrompt(currentSubject);
       }
 
       // ── UAE MoE curriculum injection — for government school students ──
       if (userProfile?.uaeCurriculum === 'moe' || isMoETopic(message)) {
-        built.systemPrompt += getMoECurriculumPrompt(subject);
+        built.systemPrompt += getMoECurriculumPrompt(currentSubject);
       }
 
       // ── UAE Academic Excellence — deep examiner intelligence for all curricula ──
@@ -634,10 +634,9 @@ export default async function handler(req, res) {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
-                      student_id: userProfile.email,
-                      atom_id: `${currentSubject.toLowerCase().replace(/\s+/g, '_')}_${atomId}`,
-                      subject: currentSubject.toLowerCase(),
-                      score: nanoResult.score,
+                      studentId: userProfile.email,
+                      atomId: `${currentSubject.toLowerCase().replace(/\s+/g, '_')}_${atomId}`,
+                      masteryScore: nanoResult.score,
                     }),
                   }).catch(() => {});
                 }
