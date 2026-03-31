@@ -328,8 +328,10 @@ export default function Home() {
     // After 2 free messages, prompt registration to save progress
     const msgCount = messages.filter(m => m.role === 'user').length;
     if (!userProfile && msgCount >= 2) { setShowRegModal(true); return; }
-    const nanoGoalMatch = text.match(/The goal is:\s*"([^"]+)"/);
-    const displayContent = nanoGoalMatch ? `⚛️ Nano Goal: ${nanoGoalMatch[1]}` : text;
+    const nanoGoalMatch = text.match(/Nano Goal (\d+) in .+\.\nThe goal:\s*"([^"]+)"/) || text.match(/The goal(?:\s+is)?:\s*"([^"]+)"/);
+    const displayContent = nanoGoalMatch
+      ? (nanoGoalMatch[2] ? `⚛️ Nano Goal ${nanoGoalMatch[1]}: ${nanoGoalMatch[2].length > 60 ? nanoGoalMatch[2].slice(0, 57) + '...' : nanoGoalMatch[2]}` : `⚛️ Nano Goal: ${nanoGoalMatch[1].length > 60 ? nanoGoalMatch[1].slice(0, 57) + '...' : nanoGoalMatch[1]}`)
+      : text;
     const userMsg = { role: 'user', content: text, displayContent };
     const newMsgs = [...messages, userMsg];
     setMessages(newMsgs);
