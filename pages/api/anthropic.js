@@ -123,17 +123,19 @@ async function triggerParentAlert({ alertType, alertLevel, alertMessage, student
 
 // ─── Retry with exponential backoff ──────────────────────────────────────────
 
-async function callWithRetry(createFn, maxRetries = 2) {
+async function callWithRetry(createFn, maxRetries = 1) {
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
     try {
       return await createFn();
     } catch (err) {
       // Don't retry on client errors (400, 401, 413)
       if (err?.status && err.status < 500 && err.status !== 429) throw err;
+      // Don't retry on rate limit — retrying makes it worse
+      if (err?.status === 429) throw err;
       // Don't retry on last attempt
       if (attempt === maxRetries) throw err;
-      // Exponential backoff: 1s, 2s
-      const delay = Math.pow(2, attempt) * 1000;
+      // Exponential backoff: 2s
+      const delay = 2000;
       console.warn(`[STARKY API] Retry ${attempt + 1}/${maxRetries} after ${delay}ms:`, err?.message);
       await new Promise(r => setTimeout(r, delay));
     }
@@ -612,18 +614,21 @@ export default async function handler(req, res) {
           res.write(`data: ${JSON.stringify({ type: 'done', response: fullText, meta: built.meta })}\n\n`);
           res.end();
 
-          // Background: detect Cambridge weaknesses (never blocks response)
+          // Background: detect Cambridge weaknesses (staggered to prevent API burst)
           const currentSubject = sessionMemory?.currentSubject || userProfile?.lastSubject || '';
           if (currentSubject && message && fullText && userProfile?.email) {
             const last3 = [
               ...(built.messages || []).slice(-2),
               { role: 'assistant', content: fullText },
             ];
-            detectWeakness(last3, currentSubject, userProfile.email).then(weakness => {
-              if (weakness) saveWeakness(getSupabase(), weakness);
-            }).catch(() => {});
-            // Nano-level weakness detection — granular sub-topic scoring
-            // Also maps nano-topics to Starky Atoms for automatic mastery tracking
+            // Delay weakness detection by 3s to avoid rate limit burst
+            setTimeout(() => {
+              detectWeakness(last3, currentSubject, userProfile.email).then(weakness => {
+                if (weakness) saveWeakness(getSupabase(), weakness);
+              }).catch(() => {});
+            }, 3000);
+            // Delay nano detection by 6s — runs after weakness detection finishes
+            setTimeout(() => {
             detectNanoWeakness(last3, currentSubject, userProfile.email).then(nanoResult => {
               if (nanoResult) {
                 saveNanoMastery(getSupabase(), nanoResult);
@@ -643,6 +648,7 @@ export default async function handler(req, res) {
               }
             }).catch(() => {});
           }
+            }, 6000);
         });
 
         stream.on('error', (err) => {
