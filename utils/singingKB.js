@@ -596,3 +596,142 @@ export function generateSummerReport(profile, studentName) {
     genre: profile.singing_genre,
   };
 }
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// YOUNG LEARNER SINGING PROTOCOL — ages 5-10
+// Starky uses this protocol automatically when the student is a young learner
+// or in young learner / SEN mode.
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export const YOUNG_LEARNER_SONGS = {
+  urdu: [
+    { title: 'Sohni Dharti', desc: 'Pakistan national children\'s song — simple melody, patriotic, easy words', ageRange: '5-10', difficulty: 1 },
+    { title: 'Mast Qalandar (simplified)', desc: 'Repetitive chorus, children love it — simplified version for young voices', ageRange: '7-10', difficulty: 2 },
+    { title: 'Aloo Kachalu', desc: 'Classic Urdu nursery rhyme — playful, bouncy, perfect for ages 5-7', ageRange: '5-7', difficulty: 1 },
+    { title: 'Billo Rani', desc: 'Simple Urdu children\'s song — gentle melody, easy to learn', ageRange: '5-8', difficulty: 1 },
+  ],
+  english: [
+    { title: 'Twinkle Twinkle Little Star', desc: 'Universal starting point — 5-note range, every child knows it', ageRange: '5-7', difficulty: 1 },
+    { title: 'Do Re Mi (from Sound of Music)', desc: 'Teaches solfège naturally through play — builds musical ear', ageRange: '6-10', difficulty: 2 },
+    { title: 'You Are My Sunshine', desc: 'Simple, warm, builds confidence — gentle melody, reassuring lyrics', ageRange: '5-9', difficulty: 1 },
+    { title: 'Row Row Row Your Boat', desc: 'Good for breath control and round singing — can be done as a canon', ageRange: '5-7', difficulty: 1 },
+  ],
+  bollywood: [
+    { title: 'Lakdi Ki Kathi', desc: 'Simple, rhythmic, great for young children — iconic Bollywood children\'s song', ageRange: '5-8', difficulty: 1 },
+    { title: 'Chanda Mama', desc: 'Classic lullaby — gentle range, builds head voice naturally', ageRange: '5-7', difficulty: 1 },
+    { title: 'Chhota Baccha Jaan Ke Na', desc: 'Fun, playful, children love the energy — great for movement', ageRange: '5-9', difficulty: 1 },
+  ],
+  arabic: [
+    { title: 'Yalla Yalla', desc: 'Simple, repetitive — good starting song for UAE children', ageRange: '5-8', difficulty: 1 },
+    { title: 'Ana Watani', desc: 'Patriotic UAE children\'s song — builds pride and gentle vocal control', ageRange: '6-10', difficulty: 2 },
+  ],
+};
+
+export const SESSION_STRUCTURE_YOUNG = {
+  totalDuration: '10-15 minutes maximum',
+  phases: [
+    { minutes: '1-2', name: 'Physical + Voice Warm-up', desc: 'Body warm-up then voice warm-up — never skip' },
+    { minutes: '3-10', name: 'Song Learning', desc: 'One song only — whole-part-whole method' },
+    { minutes: '11-13', name: 'Full Performance Run-through', desc: 'Child sings the whole song — this is THEIR moment' },
+    { minutes: '14-15', name: 'Celebration Ending', desc: 'Specific praise, milestone check, parent note' },
+  ],
+  performanceEnding: {
+    beforePerformance: 'Now sing it one more time — this is YOUR performance. I am your audience.',
+    afterPerformance: 'That was a real performance. I am so proud of you. Your voice is getting stronger every time.',
+  },
+};
+
+export const YOUNG_LEARNER_SINGING_PROTOCOL = {
+
+  // ── SECTION 1: Physical Warm-up (always first) ──
+  physicalWarmUp: {
+    order: 1,
+    rule: 'ALWAYS do this before any singing. Never skip.',
+    script: `Before we sing, let's wake up our body.
+Stand up tall like a tree.
+Take a big breath in through your nose...
+and blow it out slowly like you're blowing a birthday candle.
+Let's do that 3 times.`,
+  },
+
+  // ── SECTION 2: Voice Warm-up (always second) ──
+  voiceWarmUp: {
+    order: 2,
+    rule: 'ALWAYS do this after physical warm-up. Never skip.',
+    script: `Now let's wake up our voice.
+Can you make a siren sound?
+Start low... and go high...
+Now come back down low again.
+Let's do that twice.`,
+  },
+
+  // ── SECTION 3: Teaching Method ──
+  teachingMethod: {
+    order: 3,
+    name: 'Whole-Part-Whole',
+    steps: [
+      'Sing or play the WHOLE song once so the child hears it completely before attempting it',
+      'Teach phrase by phrase — line 1 only first, child repeats, Starky praises specifically',
+      'Add line 2 — child sings lines 1 and 2 together',
+      'Continue adding one line at a time until the whole song is learned',
+      'End with a full performance of the WHOLE song',
+    ],
+    neverDo: [
+      'NEVER give the whole song to sing at once',
+      'NEVER correct more than one thing per session',
+      'NEVER use the word "wrong"',
+    ],
+    insteadOfWrong: 'Let\'s try that line one more time.',
+  },
+
+  // ── SECTION 4: Praise Rules ──
+  praiseRules: {
+    order: 4,
+    rule: 'Specific praise only — never generic.',
+    banned: [
+      'Good job!',
+      'Well done!',
+      'Nice!',
+      'Great!',
+    ],
+    goodExamples: [
+      'I love how you held that note at the end — that took real breath control.',
+      'Your voice sounded so clear on that line.',
+      'You remembered all the words — well done.',
+      'I noticed you took a big breath before that long phrase — that is exactly what singers do.',
+      'You sang that high note without any strain — your voice is really opening up.',
+      'The way you sang that softly was beautiful — controlling your volume is a real skill.',
+    ],
+  },
+
+  // ── SECTION 5: Song Repertoire ──
+  songRepertoire: YOUNG_LEARNER_SONGS,
+
+  // ── SECTION 6: Session Structure ──
+  sessionStructure: SESSION_STRUCTURE_YOUNG,
+
+  // ── SECTION 7: Parent Report After Session ──
+  parentReport: {
+    order: 7,
+    rule: 'Generate after EVERY young learner singing session.',
+    template: `{childName} practiced singing today for {minutes} minutes.
+We worked on {songName}.
+Today's focus: {focus}.
+Improvement noticed: {observation}.
+Practice for tomorrow: {suggestion}.`,
+    focusOptions: ['breath control', 'pitch', 'memory', 'rhythm', 'expression', 'confidence', 'diction'],
+  },
+
+  // ── SECTION 8: Signs of Progress to Celebrate ──
+  milestones: {
+    order: 8,
+    signs: [
+      { milestone: 'First time child sings without prompting', celebration: 'You just sang on your own without me asking — that means you WANTED to sing. That is a milestone.' },
+      { milestone: 'First time child holds a note for 3+ beats', celebration: 'You just held that note for a long time — that means your breath control is getting stronger. That is a milestone. Remember this moment.' },
+      { milestone: 'First time child sings a whole phrase in one breath', celebration: 'You just sang that whole line in one breath — real singers do that. That is a milestone. Remember this moment.' },
+      { milestone: 'First time child sings in tune on a familiar song', celebration: 'You just sang every note in the right place — your ear is getting sharper. That is a milestone. Remember this moment.' },
+      { milestone: 'First time child performs without stopping', celebration: 'You just sang the whole song from start to finish without stopping — that is a real performance. That is a milestone. Remember this moment.' },
+    ],
+    milestonePhrase: 'That is a milestone. Remember this moment. You just {achievement} for the first time.',
+  },
+};
