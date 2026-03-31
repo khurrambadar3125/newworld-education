@@ -506,6 +506,7 @@ export default function SpellingBee() {
       const first = w[0];
       setSpeedOptions(generateSpeedOptions(first.word, g));
       setScreen('play');
+      setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
       return;
     }
 
@@ -519,6 +520,7 @@ export default function SpellingBee() {
       setPlaced([]);
     }
     setScreen('play');
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
 
     // TTS for classic
     if (m === 'classic') {

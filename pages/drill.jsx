@@ -349,6 +349,7 @@ export default function DrillPage() {
     setQuestionType('mixed');
     setSessionResults([]); setQuestionNum(0); setLiveScore(0); setLiveMax(0); setCombo(0);
     setPhase('drilling');
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
 
     // Pick a random topic from the subject
     const allTopics = getTopics(qsSubject);
@@ -362,6 +363,7 @@ export default function DrillPage() {
     if (cameraImage) {
       setSessionResults([]); setQuestionNum(0); setLiveScore(0); setLiveMax(0); setCombo(0);
       setPhase('drilling');
+      setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
       generateQuestion(topic || 'From uploaded question', cameraImage);
       setCameraImage(null);
       return;
@@ -369,6 +371,7 @@ export default function DrillPage() {
     if (!subject || !topic) return;
     setSessionResults([]); setQuestionNum(0); setLiveScore(0); setLiveMax(0); setCombo(0);
     setPhase('drilling');
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
     generateQuestion(topic);
   };
 
@@ -383,6 +386,7 @@ export default function DrillPage() {
       let data;
       try { data = await res.json(); } catch { throw new Error('Invalid response'); }
       setFeedback(data);
+      setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
       const t = question.topic || topic;
       const quality = typeof data.quality === 'number' ? Math.max(0, Math.min(5, data.quality)) : (data.correct === true ? 4 : data.correct === false ? 1 : 2);
       sr.recordAnswer(subject, t, quality);
@@ -422,6 +426,7 @@ export default function DrillPage() {
       logSession(subject, SESSION_LENGTH, sessionPct);
       try { recordCall(); } catch {} // Count drill session against daily limit
       setPhase('summary');
+      setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
       // Notify parent of drill results (fire and forget)
       try {
         const p = userProfile || {};
@@ -1005,7 +1010,7 @@ export default function DrillPage() {
             </div>
           )}
 
-          <button style={S.primaryBtn} onClick={() => { setPhase('drilling'); setQuestionNum(0); setSessionResults([]); setLiveScore(0); setLiveMax(0); setCombo(0); setError(''); setFeedback(null); generateQuestion(topic); }}>
+          <button style={S.primaryBtn} onClick={() => { setPhase('drilling'); setQuestionNum(0); setSessionResults([]); setLiveScore(0); setLiveMax(0); setCombo(0); setError(''); setFeedback(null); generateQuestion(topic); setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100); }}>
             Drill Again 🔄
           </button>
 

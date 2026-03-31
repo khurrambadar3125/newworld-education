@@ -38,6 +38,7 @@ export default function VoiceLabPage() {
   const startFeature = (f) => {
     setFeature(f);
     setStep('active');
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
     let greeting = '';
     if (f.id === 'reading-fluency') greeting = `**Reading Fluency Check**\n\nRead this passage aloud. Speak clearly and at your natural pace.\n\n---\n${f.passage}\n---\n\nWhen you\'re ready, press the mic or type what you read.`;
     else if (f.id === 'pronunciation') greeting = `**Pronunciation Trainer**\n\nI\'ll give you 10 words. Say each one clearly.\n\nFirst word: **${f.words[0]}**\n\nSay it aloud or type it.`;

@@ -76,6 +76,7 @@ export default function Mocks() {
         localStorage.setItem('nw_mocks_registration', JSON.stringify({ form, subjects: selectedSubjects }));
         setRegistered(true);
         setStep('subjects');
+        setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
       } else {
         setError(data.error || 'Registration failed');
       }
@@ -105,6 +106,7 @@ export default function Mocks() {
         setAnswers({});
         setBriefingSubject(subject);
         setStep('briefing');
+        setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
       }
     } catch {}
     setLoading(false);
@@ -114,6 +116,7 @@ export default function Mocks() {
     setMockSession(prev => ({ ...prev, startTime: Date.now() }));
     setTimeLeft(mockSession?.timeLimit || 3600);
     setStep('exam');
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
   };
 
   // Get command words and examiner warnings for briefing
@@ -136,7 +139,10 @@ export default function Mocks() {
 
   const submitAnswer = (qIndex, answer) => {
     setAnswers(prev => ({ ...prev, [qIndex]: answer }));
-    if (qIndex < questions.length - 1) setCurrentQ(qIndex + 1);
+    if (qIndex < questions.length - 1) {
+      setCurrentQ(qIndex + 1);
+      setTimeout(() => window.scrollTo({ top: 200, behavior: 'smooth' }), 100);
+    }
   };
 
   const submitMock = async () => {
@@ -157,6 +163,7 @@ export default function Mocks() {
       const data = await res.json();
       setResults(data);
       setStep('results');
+      setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
     } catch {}
     setLoading(false);
   };
@@ -404,7 +411,7 @@ export default function Mocks() {
                     onChange={e => setAnswers(prev => ({ ...prev, [currentQ]: e.target.value }))}
                     style={{ ...S.input, minHeight: 120, resize: 'vertical', marginBottom: 0 }}
                   />
-                  <button onClick={() => { if (currentQ < questions.length - 1) setCurrentQ(currentQ + 1); }}
+                  <button onClick={() => { if (currentQ < questions.length - 1) { setCurrentQ(currentQ + 1); setTimeout(() => window.scrollTo({ top: 200, behavior: 'smooth' }), 100); } }}
                     style={{ ...S.btn, marginTop: 12 }}>
                     {currentQ < questions.length - 1 ? 'Next Question →' : 'Review Answers'}
                   </button>
@@ -500,7 +507,7 @@ export default function Mocks() {
             </div>
 
             <div style={{ display: 'flex', gap: 10, marginTop: 16 }}>
-              <button onClick={() => { setStep('subjects'); setResults(null); }} style={{ ...S.btn, flex: 1 }}>
+              <button onClick={() => { setStep('subjects'); setResults(null); setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100); }} style={{ ...S.btn, flex: 1 }}>
                 Take another mock
               </button>
               <a href="/student-dashboard" style={{ ...S.btn, flex: 1, textAlign: 'center', textDecoration: 'none', background: 'rgba(255,255,255,0.08)' }}>

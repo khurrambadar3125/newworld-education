@@ -82,6 +82,7 @@ export default function ReadingPage() {
     if (!stage || !topic) return;
     setMessages([{ role:"assistant", content:`📚 Welcome to Reading with Starky!\n\nYou're a **${stage.name}** student (${stage.ages}) and we're working on **${topic}** today.\n\nReady to dive in? Ask me anything, share something you're reading, or I can set you a task to start.` }]);
     setStep(3);
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
   };
 
   const sendMessage = async (text) => {
@@ -158,7 +159,7 @@ export default function ReadingPage() {
             <div style={{ fontSize:11, fontWeight:900, color:"rgba(255,255,255,0.3)", letterSpacing:2, textAlign:"center", marginBottom:16 }}>SELECT YOUR LEVEL</div>
             <div style={{ display:"grid", gridTemplateColumns:isMobile?"1fr":"repeat(2,1fr)", gap:14 }}>
               {STAGES.map(s => (
-                <button key={s.id} onClick={() => { setStage(s); setStep(2); }}
+                <button key={s.id} onClick={() => { setStage(s); setStep(2); setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100); }}
                   style={{ border:"2px solid "+s.color+"30", cursor:"pointer", background:s.color+"08", borderRadius:20, padding:"22px 20px", textAlign:"left", color:"#fff", fontFamily:"inherit", transition:"all 0.2s" }}
                   onMouseEnter={e => { e.currentTarget.style.background=s.color+"18"; e.currentTarget.style.borderColor=s.color; e.currentTarget.style.transform="translateY(-2px)"; }}
                   onMouseLeave={e => { e.currentTarget.style.background=s.color+"08"; e.currentTarget.style.borderColor=s.color+"30"; e.currentTarget.style.transform="none"; }}>
@@ -214,7 +215,7 @@ export default function ReadingPage() {
                 <div style={{ fontWeight:900, fontSize:13, color:accent }}>{stage.name} · {stage.ages}</div>
                 <div style={{ fontSize:12, color:"rgba(255,255,255,0.4)" }}>{topic} · {stage.grades}</div>
               </div>
-              <button onClick={() => setStep(2)} style={{ border:"1px solid rgba(255,255,255,0.1)", cursor:"pointer", background:"rgba(255,255,255,0.06)", borderRadius:10, padding:"5px 10px", color:"rgba(255,255,255,0.4)", fontSize:11, fontWeight:700, fontFamily:"inherit" }}>Change Topic</button>
+              <button onClick={() => { setStep(2); setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100); }} style={{ border:"1px solid rgba(255,255,255,0.1)", cursor:"pointer", background:"rgba(255,255,255,0.06)", borderRadius:10, padding:"5px 10px", color:"rgba(255,255,255,0.4)", fontSize:11, fontWeight:700, fontFamily:"inherit" }}>Change Topic</button>
             </div>
             <div style={{ background:"rgba(255,255,255,0.03)", border:"1px solid rgba(255,255,255,0.08)", borderRadius:20, overflow:"hidden" }}>
               <div style={{ height:isMobile?420:500, overflowY:"auto", padding:isMobile?14:20, display:"flex", flexDirection:"column", gap:12 }}>

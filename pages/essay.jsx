@@ -103,6 +103,7 @@ export default function EssayPage() {
       if (!r.ok || data.error) setError(data?.error || 'Marking failed. Please try again.');
       else {
         setResult(data);
+        setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
         try { localStorage.removeItem('nw_essay_draft'); } catch {}
         // Signal collection — essay marking
         try {

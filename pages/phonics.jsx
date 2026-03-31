@@ -58,6 +58,7 @@ export default function PhonicsPage() {
 
     setMessages([{ role: "assistant", content: greeting }]);
     setStep(3);
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
   };
 
   const sendMessage = async (text) => {
@@ -154,7 +155,7 @@ export default function PhonicsPage() {
               {PHASES.map((p, i) => {
                 const prog = progress[p.id];
                 return (
-                  <button key={p.id} onClick={() => { sndTick(); setPhase(p); setStep(2); }}
+                  <button key={p.id} onClick={() => { sndTick(); setPhase(p); setStep(2); setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100); }}
                     style={{ ...S.btn, display: "flex", alignItems: "center", gap: 14, background: `${p.color}10`, border: `2px solid ${p.color}30`, borderRadius: 18, padding: "16px 18px", textAlign: "left", animation: `fadeUp 0.4s ease ${i * 0.08}s both`, width: "100%" }}>
                     <div style={{ fontSize: 36, lineHeight: 1 }}>{p.emoji}</div>
                     <div style={{ flex: 1 }}>

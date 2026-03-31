@@ -69,6 +69,7 @@ export default function StudyPlanPage() {
     setExamWindow(ew);
     localStorage.setItem('nw_exam_window', JSON.stringify(ew));
     setSetupMode(false);
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
   };
 
   const toggleComplete = (date) => {
