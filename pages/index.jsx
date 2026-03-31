@@ -189,9 +189,37 @@ export default function Home() {
           launchChat(profile, urlSubject);
         }
         if (autoMsg) {
-          setTimeout(() => {
-            sendMessage(autoMsg);
-          }, 1200);
+          // Wait for chat to initialize, then send directly via fetch (bypass sendMessage state issues)
+          setTimeout(async () => {
+            try {
+              const p = profile || {};
+              setChatStarted(true);
+              const nanoGoalMatch = autoMsg.match(/Nano Goal (\d+) in .+\.\nThe goal:\s*"([^"]+)"/);
+              const displayContent = nanoGoalMatch ? `⚛️ Nano Goal ${nanoGoalMatch[1]}: ${nanoGoalMatch[2]?.slice(0,57)}...` : autoMsg.slice(0,80) + '...';
+              setMessages(prev => [...prev, { role: 'user', content: autoMsg, displayContent }]);
+              setLoading(true);
+              const res = await fetch('/api/anthropic', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  message: autoMsg,
+                  stream: false,
+                  userProfile: { ...p, gradeId: selectedGrade?.id || p.gradeId || 'olevel1', grade: selectedGrade?.label || p.grade || 'O Level' },
+                  sessionMemory: { currentSubject: urlSubject || '' },
+                }),
+              });
+              if (!res.ok) throw new Error(`API ${res.status}`);
+              const data = await res.json();
+              const reply = data.response || data.content || 'Starky could not respond. Please try again.';
+              setMessages(prev => [...prev, { role: 'assistant', content: reply }]);
+            } catch (e) {
+              console.error('[NANO AUTO-SEND ERROR]', e);
+              setMessages(prev => [...prev, { role: 'assistant', content: `Starky is busy — please try again. (${e?.message || 'unknown'})` }]);
+              try { fetch('/api/error-log', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: `Nano auto-send failed: ${e?.message}`, url: window.location.href, time: new Date().toISOString() }) }).catch(() => {}); } catch {}
+            } finally {
+              setLoading(false);
+            }
+          }, 1500);
         }
       }, 200);
     } catch {}
