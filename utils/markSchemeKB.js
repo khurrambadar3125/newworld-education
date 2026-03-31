@@ -237,6 +237,32 @@ const MARK_SCHEME_KB = [
     markSchemeQuote: "more frequent successful collisions (1) per unit time (1)"
   },
   {
+    id: "ms_chem_009",
+    subject: "chemistry",
+    level: "o_level",
+    topic: "Rates of reaction",
+    concept: "effect of temperature on rate",
+    acceptedPhrases: [
+      "more kinetic energy",
+      "particles move faster",
+      "more frequent successful collisions",
+      "greater proportion of particles have energy equal to or greater than the activation energy",
+      "more particles exceed the activation energy"
+    ],
+    rejectedPhrases: [
+      "more collisions",
+      "particles collide more",
+      "particles move around more",
+      "reaction goes faster",
+      "higher temperature makes it react quicker"
+    ],
+    examinerNote: "Students who write only 'more collisions' lose mark 2 — Cambridge requires 'more frequent SUCCESSFUL collisions'. Students who omit activation energy entirely cannot score mark 3. All three mark points are needed for full marks.",
+    markSchemeQuote: "particles have more kinetic energy / move faster (1) more frequent successful collisions (1) greater proportion of particles have energy >= activation energy (1)",
+    commandWord: "explain",
+    modelAnswer: "Increasing temperature gives particles more kinetic energy, so they move faster. This leads to more frequent successful collisions between reacting particles. A greater proportion of particles now have energy equal to or greater than the activation energy.",
+    marks: 3
+  },
+  {
     id: "ms_chem_002",
     subject: "chemistry",
     level: "o_level",
