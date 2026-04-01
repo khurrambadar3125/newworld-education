@@ -6,47 +6,43 @@ import { useTheme } from '../pages/_app';
 
 const MENU_GROUPS = [
   {
-    title: 'Learn',
+    title: 'Study',
     items: [
-      { href: '/drill',        label: '🎯 Practice Drill' },
-      { href: '/nano',         label: '🎯 Nano' },
-      { href: '/mocks',        label: '📝 Starky Mocks' },
+      { href: '/nano',         label: '⚛️ Starky Nano' },
+      { href: '/drill',        label: '⚡ Practice Drill' },
+      { href: '/mocks',        label: '📝 Mock Exams' },
+      { href: '/challenge',    label: '🎯 Cambridge Challenge' },
+    ],
+  },
+  {
+    title: 'Exam Prep',
+    items: [
       { href: '/past-papers',  label: '📚 Past Papers' },
-      { href: '/homework',     label: '📝 Homework Help' },
+      { href: '/countdown',    label: '⏱️ Exam Countdown' },
       { href: '/essay',        label: '✍️ Essay Marking' },
+      { href: '/homework',     label: '📝 Homework Help' },
+    ],
+  },
+  {
+    title: 'Explore',
+    items: [
       { href: '/textbooks',    label: '📖 Textbooks' },
-      { href: '/languages',   label: '🌍 Languages' },
+      { href: '/languages',    label: '🌍 Languages' },
       { href: '/spelling-bee', label: '🐝 Spelling Bee' },
+      { href: '/voice-lab',    label: '🎙️ Voice Lab' },
+      { href: '/reading',      label: '📚 Reading' },
+      { href: '/arts',         label: '🎨 Arts' },
+      { href: '/music',        label: '🎵 Music' },
       { href: '/kids',         label: '🌟 Kids Zone' },
     ],
   },
   {
-    title: 'Tools',
-    items: [
-      { href: '/countdown',    label: '⏱️ Exam Countdown' },
-      { href: '/subscribe',    label: '📬 Daily Questions' },
-      { href: '/leaderboard',  label: '🏆 Leaderboard' },
-      { href: '/starky-saturdays', label: '🌟 Starky Saturdays' },
-      { href: '/voice-lab',    label: '🎙️ Voice Lab' },
-    ],
-  },
-  {
-    title: 'Creative',
-    items: [
-      { href: '/arts',         label: '🎨 Arts' },
-      { href: '/music',        label: '🎵 Music' },
-      { href: '/reading',      label: '📚 Reading' },
-    ],
-  },
-  {
-    title: 'Parents & Schools',
+    title: 'For Parents',
     items: [
       { href: '/parent',       label: '👨‍👩‍👧 Parent Portal' },
       { href: '/special-needs',label: '💜 Special Needs' },
       { href: '/dashboard',    label: '📊 Teacher Dashboard' },
       { href: '/school',       label: '🏫 For Schools' },
-      { href: '/our-results',  label: '🏆 Our Results' },
-      { href: '/responsible-ai', label: '🛡️ Responsible AI' },
     ],
   },
 ];
@@ -131,7 +127,6 @@ export default function Nav({ current, accent }) {
           <button className="nw-nav-burger" onClick={toggleTheme} aria-label="Toggle light/dark mode" title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}>
             {theme === 'dark' ? '☀️' : '🌙'}
           </button>
-          <Link href="/pricing"><a className="nw-nav-plans">Plans</a></Link>
           <button className="nw-nav-burger" onClick={() => toggleMenu()} aria-label="Menu">
             {open ? '✕' : '☰'}
           </button>
