@@ -90,6 +90,24 @@ const GRADE_BOUNDARIES = {
   pakistan_studies_w25_p2: { maxMarks: 75, A: 53, B: 44, C: 35, D: 30, E: 25, note: 'Source: Cambridge 2059 November 2025' },
   pakistan_studies_w25_overall: { maxMarks: 150, 'A*': 120, A: 102, B: 84, C: 66, D: 56, E: 46, note: 'Source: Cambridge 2059 November 2025' },
 
+  // ═══════════════════════════════════════════════════════════
+  // CHEMISTRY 5070
+  // ═══════════════════════════════════════════════════════════
+
+  // ── Chemistry June 2023 ──
+  chemistry_s23_p1: { maxMarks: 40, A: 25, B: 20, C: 14, D: 12, E: 11, note: 'Paper 1 MCQ. Source: Cambridge 5070 June 2023' },
+  chemistry_s23_p2: { maxMarks: 80, A: 52, B: 37, C: 22, D: 18, E: 14, note: 'Paper 2 Theory. Source: Cambridge 5070 June 2023' },
+  chemistry_s23_p3: { maxMarks: 40, A: 30, B: 24, C: 18, D: 16, E: 13, note: 'Paper 3 Practical. Source: Cambridge 5070 June 2023' },
+  chemistry_s23_p4: { maxMarks: 40, A: 28, B: 22, C: 16, D: 14, E: 12, note: 'Paper 4 Alternative to Practical. Source: Cambridge 5070 June 2023' },
+  chemistry_s23_overall: { maxMarks: 200, 'A*': 166, A: 133, B: 100, C: 67, D: 57, E: 47, note: 'Overall (Option AX: P1+P2+P3). Source: Cambridge 5070 June 2023' },
+
+  // ── Chemistry November 2023 ──
+  chemistry_w23_p1: { maxMarks: 40, A: 24, B: 19, C: 15, D: 13, E: 12, note: 'Paper 1 MCQ. Source: Cambridge 5070 November 2023' },
+  chemistry_w23_p2: { maxMarks: 80, A: 54, B: 40, C: 25, D: 20, E: 15, note: 'Paper 2 Theory. Source: Cambridge 5070 November 2023' },
+  chemistry_w23_p3: { maxMarks: 40, A: 30, B: 25, C: 21, D: 18, E: 15, note: 'Paper 3 Practical. Source: Cambridge 5070 November 2023' },
+  chemistry_w23_p4: { maxMarks: 40, A: 29, B: 24, C: 19, D: 16, E: 13, note: 'Paper 4 Alternative to Practical. Source: Cambridge 5070 November 2023' },
+  chemistry_w23_overall: { maxMarks: 200, 'A*': 164, A: 134, B: 104, C: 75, D: 63, E: 52, note: 'Overall (Option AX: P1+P2+P3). Source: Cambridge 5070 November 2023' },
+
 };
 
 // ── GRADE PREDICTION ──────────────────────────────────────────
