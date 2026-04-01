@@ -43,6 +43,14 @@ function validateQuestion(questionText, type, options, correctAnswer) {
   return null; // Valid
 }
 
+// ── Enforce correct marks for question type ──────────────────────
+function enforceMarks(type, marks) {
+  // MCQs are ALWAYS 1 mark — you either pick the right answer or you don't
+  if (type === 'mcq') return 1;
+  // Structured: clamp to reasonable range
+  return Math.max(1, Math.min(marks || 3, 12));
+}
+
 // ── Save a question to the bank ──────────────────────────────────
 export async function saveQuestion({
   subject, level, topic, difficulty = 'medium', type = 'mcq',
@@ -71,7 +79,7 @@ export async function saveQuestion({
     options: options || null,
     correct_answer: correctAnswer,
     mark_scheme: markScheme || null,
-    marks,
+    marks: enforceMarks(type, marks),
     command_word: commandWord || null,
     source,
   }).select('id').single();
@@ -107,7 +115,7 @@ export async function saveQuestionsBatch(questions) {
     options: q.options || null,
     correct_answer: q.correctAnswer,
     mark_scheme: q.markScheme || null,
-    marks: q.marks || 1,
+    marks: enforceMarks(q.type || 'mcq', q.marks || 1),
     command_word: q.commandWord || null,
     source: q.source || 'ai_generated',
   }));
