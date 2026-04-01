@@ -604,6 +604,39 @@ const CAMBRIDGE_DIALECT = [
     subject: 'mathematics',
     level: 'o_level',
   },
+  // ── PAKISTAN STUDIES — From Cambridge 2059 June 2021 Examiner Report ──
+  {
+    concept: 'source inference question',
+    cambridgeAccepts: ['the source suggests that', 'from the source I can infer', 'the source shows evidence of', 'according to the source', 'I can infer from the source that ... because the source states/shows'],
+    cambridgeRejects: ['general knowledge about the topic without source reference — scores zero marks', 'answers that do not mention the source at all — scores zero marks'],
+    markSchemeNote: 'Must reference the source. Inference without source reference = zero. Examiner confirmed June 2021.',
+    subject: 'pakistan_studies',
+    level: 'o_level',
+  },
+  {
+    concept: 'secondary industry',
+    cambridgeAccepts: ['uses or changes raw materials', 'processes raw materials into finished products', 'converts raw materials into manufactured goods'],
+    cambridgeRejects: ['manufacturing products alone — insufficient', 'making things — too vague', 'factories — describes location not the process'],
+    markSchemeNote: 'Must include "uses or changes raw materials". Examiner confirmed June 2021 this phrase is required.',
+    subject: 'pakistan_studies',
+    level: 'o_level',
+  },
+  {
+    concept: 'underemployment',
+    cambridgeAccepts: ['working fewer hours than desired', 'working below skill or qualification level', 'not working to full capacity', 'employed but underutilised'],
+    cambridgeRejects: ['confusing with unemployment', 'having no job — that is unemployment', 'being lazy or unproductive'],
+    markSchemeNote: 'Must distinguish from unemployment. Examiner confirmed June 2021 this was widely misunderstood.',
+    subject: 'pakistan_studies',
+    level: 'o_level',
+  },
+  {
+    concept: 'sustainable development',
+    cambridgeAccepts: ['meeting present needs without compromising future generations\' ability to meet their own needs', 'development that meets the needs of the present without compromising the future'],
+    cambridgeRejects: ['environmentally friendly alone — insufficient', 'sustainable means doing things sustainably — circular', 'green or eco-friendly without the future generations component'],
+    markSchemeNote: 'Must include future generations component. Examiner confirmed June 2021.',
+    subject: 'pakistan_studies',
+    level: 'o_level',
+  },
 ];
 
 // ─────────────────────────────────────────────
@@ -669,6 +702,23 @@ const CAMBRIDGE_HIDDEN_RULES = {
     'Trace tables must show every variable change at every step',
     'Big O: simplified form only — O(n²) not O(2n²+3n)',
     'Binary conversion: show working — answer only scores 0',
+  ],
+  // ── PAKISTAN STUDIES — Source: Cambridge 2059 June 2021 Examiner Report ──
+  pakistan_studies: [
+    'Source questions: must reference the source or score zero — general knowledge answers without source reference are not credited regardless of accuracy',
+    'Part (d) questions: both sides of the argument MUST be developed — one-sided answers are capped at 5 marks maximum out of 8',
+    'Part (d) questions: place-specific examples are required for top marks — without examples maximum is 5 marks',
+    'Describe questions: state what happens or what you can see — no reasons needed and adding reasons does not gain extra marks',
+    'Explain questions: must include because/therefore/as a result — description without explanation is capped at Level 2',
+    'To what extent questions: must weigh evidence on both sides AND reach a conclusion — one-sided answer cannot reach Level 3',
+    'Vague language scores zero: "proper", "better", "good", "infrastructure", "pollution" without specific detail — always be precise',
+    'Do not copy from the question: lifted phrases from the question stem score zero and waste time',
+    'Traditional irrigation: always give BOTH the name AND the description of how it works',
+    'Graph questions: always quote specific values — "increases" without data loses marks',
+    'Map questions: only refer to places shown on the map — do not answer from memory',
+    'No double credit: the same point in different words scores zero the second time',
+    'Secondary industry: the phrase "uses or changes raw materials" is required — "manufacturing" alone is insufficient',
+    'Underemployment ≠ unemployment: confusing these two is the most common error on the employment topic',
   ],
 };
 
