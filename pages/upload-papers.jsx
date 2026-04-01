@@ -29,7 +29,8 @@ function pairFiles(files) {
 
     // Extract grouping key: code_session_variant e.g. "0625_w24_12"
     const match = f.name.match(/(\d{4})_([smw]\d{2})_(?:qp|ms|in)_?(\d{0,2})/i);
-    const key = match ? `${match[1]}_${match[2]}_${match[3] || '0'}` : f.name;
+    const variant = match?.[3] ? String(parseInt(match[3], 10)) : '0';
+    const key = match ? `${match[1]}_${match[2]}_${variant}` : f.name;
 
     if (!groups[key]) groups[key] = { qp: null, ms: null, key };
     if (type === 'qp' || type === 'unknown') groups[key].qp = groups[key].qp || f;

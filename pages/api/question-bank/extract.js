@@ -15,19 +15,11 @@ import { isAdmin } from '../../../utils/apiAuth';
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 60000 });
 
-// Parse PDF text using pdfjs-dist
+// Parse PDF text using pdf-parse (works on Vercel serverless)
 async function extractPDFText(buffer) {
-  const pdfjsLib = require('pdfjs-dist/legacy/build/pdf.js');
-  const data = new Uint8Array(buffer);
-  const doc = await pdfjsLib.getDocument({ data }).promise;
-  const pages = [];
-  for (let i = 1; i <= doc.numPages; i++) {
-    const page = await doc.getPage(i);
-    const content = await page.getTextContent();
-    const text = content.items.map(item => item.str).join(' ');
-    pages.push(text);
-  }
-  return { text: pages.join('\n\n--- PAGE BREAK ---\n\n'), numPages: doc.numPages };
+  const pdfParse = require('pdf-parse');
+  const result = await pdfParse(buffer);
+  return { text: result.text, numPages: result.numpages };
 }
 
 // Use Claude to parse questions from extracted text
