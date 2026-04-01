@@ -32,6 +32,7 @@ export default function FreePracticeTest() {
   const [captureError, setCaptureError] = useState('');
 
   // Test
+  const [error, setError] = useState('');
   const [questions, setQuestions] = useState([]);
   const [currentQ, setCurrentQ] = useState(0);
   const [answers, setAnswers] = useState([]);
@@ -67,24 +68,31 @@ export default function FreePracticeTest() {
     finally { setCapturing(false); }
   };
 
-  // ── Load question from question bank ──────────────────────────
+  // ── Load question via AI generation ────────────────────────────
   const loadQuestion = async () => {
     setLoading(true); setFeedback(null); setSelectedOption('');
     try {
-      const res = await fetch('/api/question-bank/serve', {
+      const res = await fetch('/api/drill', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          subject, level, difficulty: 'medium',
-          type: 'mcq', curriculum: 'cambridge',
-          excludeIds: questions.map(q => q._bankId).filter(Boolean),
+          action: 'generate', level, subject,
+          topic: 'General', difficulty: 'medium', questionType: 'mcq',
         }),
       });
       if (res.ok) {
         const q = await res.json();
-        setQuestions(prev => [...prev, q]);
+        if (q && q.question) {
+          setQuestions(prev => [...prev, q]);
+        } else {
+          setError('Could not generate question. Please try again.');
+        }
+      } else {
+        setError('Could not generate question. Please try again.');
       }
-    } catch {}
+    } catch {
+      setError('Network error. Please try again.');
+    }
     finally { setLoading(false); }
   };
 

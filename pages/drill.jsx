@@ -287,30 +287,9 @@ export default function DrillPage() {
     if (type === 'mixed') type = questionNum % 2 === 0 ? 'mcq' : 'structured';
 
     try {
-      // ── Question Bank first (skip for image uploads and special contexts) ──
-      if (!imageData && !urlContext && mode !== 'young') {
-        try {
-          const bankRes = await fetch('/api/question-bank/serve', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              subject, level, topic: t, difficulty,
-              type, curriculum: 'cambridge', excludeIds: servedBankIds,
-            }),
-          });
-          if (bankRes.ok) {
-            const bankData = await bankRes.json();
-            if (bankData && bankData.question) {
-              if (bankData._bankId) setServedBankIds(prev => [...prev, bankData._bankId]);
-              setQuestion(bankData);
-              setLoading(false);
-              return;
-            }
-          }
-        } catch {
-          // Question bank unavailable — fall through to direct AI generation
-        }
-      }
+      // ── Question Bank disabled — only human-verified questions will be served
+      // when the bank is populated from verified past papers in the future.
+      // For now, all questions are generated fresh by AI per session via /api/drill.
 
       // ── Fallback: direct AI generation via /api/drill ──────────────────────
       const body = { action:'generate', level, subject, topic:t, difficulty, questionType:type };

@@ -89,10 +89,6 @@
       "schedule": "0 3 * * 0"
     },
     {
-      "path": "/api/cron/question-bank-grow",
-      "schedule": "0 21 * * *"
-    },
-    {
       "path": "/api/cron/lead-drip",
       "schedule": "0 3 * * *"
     }
