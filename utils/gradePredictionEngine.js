@@ -108,6 +108,16 @@ const GRADE_BOUNDARIES = {
   chemistry_w23_p4: { maxMarks: 40, A: 29, B: 24, C: 19, D: 16, E: 13, note: 'Paper 4 Alternative to Practical. Source: Cambridge 5070 November 2023' },
   chemistry_w23_overall: { maxMarks: 200, 'A*': 164, A: 134, B: 104, C: 75, D: 63, E: 52, note: 'Overall (Option AX: P1+P2+P3). Source: Cambridge 5070 November 2023' },
 
+  // ═══════════════════════════════════════════════════════════
+  // BIOLOGY 5090
+  // ═══════════════════════════════════════════════════════════
+
+  // ── Biology June 2024 ──
+  biology_s24_p1: { maxMarks: 40, A: 32, B: 26, C: 20, D: 17, E: 15, note: 'Paper 1 MCQ. Source: Cambridge 5090 June 2024' },
+  biology_s24_p2: { maxMarks: 80, A: 49, B: 38, C: 27, D: 23, E: 17, note: 'Paper 2 Theory. Source: Cambridge 5090 June 2024' },
+  biology_s24_p3: { maxMarks: 40, A: 30, B: 27, C: 24, D: 20, E: 17, note: 'Paper 3 Practical. Source: Cambridge 5090 June 2024' },
+  biology_s24_p4: { maxMarks: 40, A: 29, B: 26, C: 23, D: 19, E: 16, note: 'Paper 4 Alternative to Practical. Source: Cambridge 5090 June 2024' },
+
 };
 
 // ── GRADE PREDICTION ──────────────────────────────────────────
