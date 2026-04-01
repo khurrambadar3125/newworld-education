@@ -49,14 +49,14 @@ export default async function handler(req, res) {
     excludeIds = [],
   } = req.body || {};
 
-  if (!subject || !topic) {
-    return res.status(400).json({ error: 'subject and topic are required' });
+  if (!subject) {
+    return res.status(400).json({ error: 'subject is required' });
   }
 
   try {
     // ── Step 1: Try to serve from question bank ──────────────────
     const bankQuestion = await getRandomQuestion({
-      subject, level, topic, difficulty,
+      subject, level, topic: topic || undefined, difficulty,
       type: questionType, curriculum, excludeIds,
     });
 

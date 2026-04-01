@@ -75,7 +75,7 @@ export default function FreePracticeTest() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          subject, level, topic: '__RANDOM__', difficulty: 'medium',
+          subject, level, difficulty: 'medium',
           type: 'mcq', curriculum: 'cambridge',
           excludeIds: questions.map(q => q._bankId).filter(Boolean),
         }),
@@ -94,16 +94,50 @@ export default function FreePracticeTest() {
     const q = questions[currentQ];
     setLoading(true);
     try {
-      const res = await fetch('/api/drill', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          action: 'grade', level, subject, topic: q.topic,
-          question: q.question, studentAnswer: selectedOption,
-          questionType: 'mcq', options: q.options, marks: q.marks || 1,
-        }),
-      });
-      const data = await res.json();
+      // For MCQs, we can grade locally if we have the correct option
+      const correctOption = q.correctOption;
+      let data;
+      if (correctOption && q.type === 'mcq') {
+        const isCorrect = selectedOption === correctOption;
+        // Try AI grading for rich feedback, but fall back to local grading
+        try {
+          const res = await fetch('/api/drill', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              action: 'grade', level, subject, topic: q.topic,
+              question: q.question, studentAnswer: selectedOption,
+              questionType: 'mcq', options: q.options, marks: q.marks || 1,
+            }),
+          });
+          data = await res.json();
+          if (data.error || (!data.feedback && !data.correct && data.correct !== false)) throw new Error('bad response');
+        } catch {
+          // Local fallback grading
+          data = {
+            correct: isCorrect,
+            score: isCorrect ? 1 : 0,
+            maxScore: 1,
+            quality: isCorrect ? 4 : 1,
+            feedback: isCorrect
+              ? 'Correct! Well done.'
+              : `The correct answer is ${correctOption}: ${q.options?.[correctOption] || ''}. ${q.markSchemeHint || ''}`,
+            examinerTip: q.markSchemeHint || '',
+            modelAnswer: `${correctOption}: ${q.options?.[correctOption] || ''}`,
+          };
+        }
+      } else {
+        const res = await fetch('/api/drill', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            action: 'grade', level, subject, topic: q.topic,
+            question: q.question, studentAnswer: selectedOption,
+            questionType: 'mcq', options: q.options, marks: q.marks || 1,
+          }),
+        });
+        data = await res.json();
+      }
       setFeedback(data);
       setScore(s => s + (data.score || 0));
       setMaxScore(m => m + (data.maxScore || 1));
