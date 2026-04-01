@@ -245,7 +245,15 @@ export default function Home() {
     }
   }, []);
 
-  useEffect(() => { messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' }); }, [messages]);
+  useEffect(() => {
+    // Scroll to START of latest message (not end) so user reads from top
+    if (messages.length > 1 && !loading) {
+      const msgs = document.querySelectorAll('.msg');
+      const last = msgs[msgs.length - 1];
+      if (last) { last.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
+    }
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
 
   const speakText = useCallback((text) => {
     if (!synthRef.current) return;

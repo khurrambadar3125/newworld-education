@@ -568,7 +568,17 @@ export default function PastPapersPage() {
     fn(); window.addEventListener("resize",fn);
     return ()=>window.removeEventListener("resize",fn);
   },[]);
-  useEffect(()=>{ chatEndRef.current?.scrollIntoView({behavior:"smooth"}); },[messages,loading]);
+  useEffect(()=>{
+    if (messages.length > 0 && !loading) {
+      // Scroll to START of latest message so user reads from the top
+      const msgs = document.querySelectorAll('[data-chat-msg]');
+      const last = msgs[msgs.length - 1];
+      if (last) last.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      else chatEndRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  },[messages,loading]);
   useEffect(()=>{ setProgress(loadProgress()); },[]);
 
   // ── PDF UPLOAD ───────────────────────────────────────────────────────────
@@ -975,7 +985,7 @@ export default function PastPapersPage() {
           <div style={{ ...S.card, overflow:"hidden", display:"flex", flexDirection:"column" }}>
             <div style={{ height:isMobile?340:460, overflowY:"auto", padding:isMobile?14:20, display:"flex", flexDirection:"column", gap:14 }}>
               {messages.map((msg,i)=>(
-                <div key={i} style={{ display:"flex", justifyContent:msg.role==="user"?"flex-end":"flex-start", gap:10 }}>
+                <div key={i} data-chat-msg style={{ display:"flex", justifyContent:msg.role==="user"?"flex-end":"flex-start", gap:10 }}>
                   {msg.role==="assistant"&&(
                     <div style={{ width:28, height:28, borderRadius:"50%", background:`${subject.color}20`, border:`1px solid ${subject.color}44`, display:"flex", alignItems:"center", justifyContent:"center", fontSize:13, flexShrink:0, marginTop:2 }}>{subject.emoji}</div>
                   )}

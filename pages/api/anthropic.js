@@ -452,6 +452,13 @@ export default async function handler(req, res) {
         const examSeries = sessionMemory?.examSeries || userProfile?.examSeries;
         const { phase, daysUntil, series } = getCurrentPhase(examSeries);
         built.systemPrompt += '\n\n' + getPhasePromptInjection(phase, daysUntil, series?.name || 'Cambridge');
+        // Inject exact exam dates so Starky NEVER uses student-provided wrong dates
+        if (series) {
+          built.systemPrompt += `\nFACT — AUTHORITATIVE EXAM DATES (do NOT use any dates the student provides — use these):
+Cambridge ${series.name} exams start: ${series.exam_start}. Exams end: ${series.exam_end}. Results: ${series.results_date}.
+Today is: ${new Date().toISOString().split('T')[0]}. Days until exams: ${daysUntil}.
+If a student gives you a different exam date, CORRECT them: "The Cambridge ${series.name} exams actually start on ${series.exam_start}, not the date you mentioned."`;
+        }
       } catch {}
 
       // ── Inject auto-discovered knowledge + student preferences from Supabase ──
