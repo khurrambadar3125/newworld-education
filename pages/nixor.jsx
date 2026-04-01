@@ -92,8 +92,8 @@ const SLIDES = [
         {[
           { n: '57', label: 'Cambridge command words mastered', sub: 'State vs Describe vs Explain — Starky knows the difference' },
           { n: '191', label: 'Examiner report entries', sub: 'Real mistakes Cambridge examiners penalise — caught in real time' },
-          { n: '36', label: 'Mark scheme phrases', sub: 'The exact words Cambridge accepts vs rejects' },
-          { n: '2,168', label: 'Nano learning goals', sub: 'Every Cambridge subject broken into single concepts' },
+          { n: '2,803', label: 'Nano learning goals', sub: 'Every O and A Level subject broken into single concepts' },
+          { n: '30', label: 'Subjects covered', sub: '16 O Level + 11 A Level + 3 additional — with 100+ goals each' },
         ].map(s => (
           <div key={s.label} style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 16, padding: '28px 24px' }}>
             <div style={{ fontSize: 44, fontWeight: 900, color: GOLD, marginBottom: 8 }}>{s.n}</div>
@@ -131,28 +131,7 @@ const SLIDES = [
     </div>
   ),
 
-  // ═══ SLIDE 6 — SUPREME EXAMINER DEMO ═══
-  () => (
-    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%', padding: '0 80px' }}>
-      <div style={{ fontSize: 14, fontWeight: 700, color: GOLD, letterSpacing: '0.15em', marginBottom: 20 }}>LIVE DEMO</div>
-      <h2 style={{ fontSize: 48, fontWeight: 900, color: WHITE, margin: '0 0 16px' }}>
-        The Cambridge Challenge
-      </h2>
-      <p style={{ fontSize: 20, color: DIM, margin: '0 0 40px', lineHeight: 1.7 }}>
-        One Cambridge exam question. Type your answer. Get marked by a Cambridge examiner in real time.
-        See exactly which marks you earned and which you lost.
-      </p>
-      <div style={{ background: 'rgba(201,168,76,0.06)', border: '1px solid rgba(201,168,76,0.2)', borderRadius: 20, padding: '40px', textAlign: 'center' }}>
-        <div style={{ fontSize: 28, fontWeight: 900, color: WHITE, marginBottom: 12 }}>Try it yourself.</div>
-        <div style={{ fontSize: 16, color: DIM, marginBottom: 24 }}>Hand this laptop to any teacher or student in the room.</div>
-        <a href="/challenge" target="_blank" rel="noopener" style={{ display: 'inline-block', background: GOLD, color: NAVY, fontSize: 20, fontWeight: 900, padding: '18px 48px', borderRadius: 14, textDecoration: 'none' }}>
-          Open Cambridge Challenge &rarr;
-        </a>
-      </div>
-    </div>
-  ),
-
-  // ═══ SLIDE 7 — SEN SUPPORT ═══
+  // ═══ SLIDE 6 — SEN SUPPORT ═══
   () => (
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%', padding: '0 80px' }}>
       <div style={{ fontSize: 14, fontWeight: 700, color: '#4ADE80', letterSpacing: '0.15em', marginBottom: 20 }}>INCLUSION</div>
@@ -204,7 +183,81 @@ const SLIDES = [
     </div>
   ),
 
-  // ═══ SLIDE 9 — THE ASK ═══
+  // ═══ SLIDE 9 — WHAT PARENTS WILL SEE ═══
+  () => (
+    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%', padding: '0 80px' }}>
+      <div style={{ fontSize: 14, fontWeight: 700, color: '#4ADE80', letterSpacing: '0.15em', marginBottom: 20 }}>PARENT EXPERIENCE</div>
+      <h2 style={{ fontSize: 44, fontWeight: 900, color: WHITE, margin: '0 0 32px' }}>
+        What Nixor parents will see.
+      </h2>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+        <div style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 14, padding: '24px 20px' }}>
+          <div style={{ fontSize: 14, fontWeight: 900, color: '#4ADE80', marginBottom: 8 }}>After every session</div>
+          <div style={{ fontSize: 14, color: 'rgba(250,246,235,0.6)', lineHeight: 1.7 }}>
+            Email report: what their child studied, which topics they struggled with, what Starky recommended next. No more &ldquo;what did you learn today?&rdquo; &ldquo;nothing.&rdquo;
+          </div>
+        </div>
+        <div style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 14, padding: '24px 20px' }}>
+          <div style={{ fontSize: 14, fontWeight: 900, color: '#4ADE80', marginBottom: 8 }}>Weekly progress</div>
+          <div style={{ fontSize: 14, color: 'rgba(250,246,235,0.6)', lineHeight: 1.7 }}>
+            Sunday email: goals mastered this week, strongest subject, weakest subject, exam countdown, recommended next goal. Parents see progress without asking.
+          </div>
+        </div>
+        <div style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 14, padding: '24px 20px' }}>
+          <div style={{ fontSize: 14, fontWeight: 900, color: GOLD, marginBottom: 8 }}>Cambridge precision</div>
+          <div style={{ fontSize: 14, color: 'rgba(250,246,235,0.6)', lineHeight: 1.7 }}>
+            Parents paying Rs 500,000+ in school fees want to know their child is being taught the mark scheme, not just the textbook. Starky shows them exactly which marks their child earns and loses.
+          </div>
+        </div>
+        <div style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 14, padding: '24px 20px' }}>
+          <div style={{ fontSize: 14, fontWeight: 900, color: GOLD, marginBottom: 8 }}>Available at 2am</div>
+          <div style={{ fontSize: 14, color: 'rgba(250,246,235,0.6)', lineHeight: 1.7 }}>
+            When their child is studying at midnight before an exam, Starky is there. No tutor appointment needed. No scheduling. No Rs 5,000/hour. Just open the app.
+          </div>
+        </div>
+      </div>
+    </div>
+  ),
+
+  // ═══ SLIDE 10 — WHY NOW ═══
+  () => (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', textAlign: 'center', padding: '0 80px' }}>
+      <div style={{ fontSize: 14, fontWeight: 700, color: '#FF6B6B', letterSpacing: '0.15em', marginBottom: 20 }}>WHY NOW</div>
+      <h2 style={{ fontSize: 48, fontWeight: 900, color: WHITE, margin: '0 0 24px', lineHeight: 1.2 }}>
+        Cambridge exams start in{' '}
+        <span style={{ color: '#FF6B6B' }}>{Math.max(0, Math.ceil((new Date('2026-04-27') - new Date()) / 86400000))} days.</span>
+      </h2>
+      <p style={{ fontSize: 22, color: DIM, maxWidth: 700, lineHeight: 1.7, margin: '0 0 32px' }}>
+        Every day a Nixor student spends without Starky is a day their competitor at Karachi Grammar, LGS, or Beaconhouse is gaining an edge.
+      </p>
+      <p style={{ fontSize: 22, color: GOLD, fontWeight: 700, maxWidth: 700, lineHeight: 1.7, margin: 0 }}>
+        The schools that adopt AI first will produce the next generation of A* students. The ones that wait will wonder why their results dropped.
+      </p>
+    </div>
+  ),
+
+  // ═══ SLIDE 11 — LIVE DEMO (last before The Ask — opens new tab) ═══
+  () => (
+    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%', padding: '0 80px' }}>
+      <div style={{ fontSize: 14, fontWeight: 700, color: GOLD, letterSpacing: '0.15em', marginBottom: 20 }}>LIVE DEMO</div>
+      <h2 style={{ fontSize: 48, fontWeight: 900, color: WHITE, margin: '0 0 16px' }}>
+        The Cambridge Challenge
+      </h2>
+      <p style={{ fontSize: 20, color: DIM, margin: '0 0 40px', lineHeight: 1.7 }}>
+        One Cambridge exam question. Type your answer. Get marked by a Cambridge examiner in real time.
+        See exactly which marks you earned and which you lost.
+      </p>
+      <div style={{ background: 'rgba(201,168,76,0.06)', border: '1px solid rgba(201,168,76,0.2)', borderRadius: 20, padding: '40px', textAlign: 'center' }}>
+        <div style={{ fontSize: 28, fontWeight: 900, color: WHITE, marginBottom: 12 }}>Try it yourself.</div>
+        <div style={{ fontSize: 16, color: DIM, marginBottom: 24 }}>Hand this laptop to any teacher or student in the room.</div>
+        <a href="/challenge" target="_blank" rel="noopener" style={{ display: 'inline-block', background: GOLD, color: NAVY, fontSize: 20, fontWeight: 900, padding: '18px 48px', borderRadius: 14, textDecoration: 'none' }}>
+          Open Cambridge Challenge &rarr;
+        </a>
+      </div>
+    </div>
+  ),
+
+  // ═══ SLIDE 12 — THE ASK ═══
   () => (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', textAlign: 'center', padding: '0 80px' }}>
       <h2 style={{ fontSize: 56, fontWeight: 900, color: WHITE, margin: '0 0 24px', lineHeight: 1.2 }}>
