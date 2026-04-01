@@ -125,6 +125,28 @@ const GRADE_BOUNDARIES = {
   biology_w24_p4: { maxMarks: 40, A: 27, B: 23, C: 19, D: 15, E: 12, note: 'Paper 4 Alternative to Practical. Source: Cambridge 5090 November 2024' },
   biology_w24_overall: { maxMarks: 200, 'A*': 159, A: 133, B: 107, C: 82, D: 70, E: 59, note: 'Overall (Option AX: P1+P2+P3). Source: Cambridge 5090 November 2024' },
 
+  // ═══════════════════════════════════════════════════════════
+  // MATHEMATICS 4024
+  // ═══════════════════════════════════════════════════════════
+  maths_s22_p1: { maxMarks: 80, A: 56, B: 40, C: 25, D: 19, E: 13, note: 'Paper 1. Source: Cambridge 4024 June 2022' },
+  maths_s22_p2: { maxMarks: 100, A: 67, B: 47, C: 27, D: 20, E: 13, note: 'Paper 2. Source: Cambridge 4024 June 2022' },
+  maths_s22_overall: { maxMarks: 200, 'A*': 168, A: 137, B: 97, C: 58, D: 43, E: 29, note: 'Source: Cambridge 4024 June 2022' },
+  maths_w22_p1: { maxMarks: 80, A: 57, B: 45, C: 33, D: 24, E: 16, note: 'Paper 1. Source: Cambridge 4024 November 2022' },
+  maths_w22_p2: { maxMarks: 100, A: 65, B: 47, C: 29, D: 22, E: 14, note: 'Paper 2. Source: Cambridge 4024 November 2022' },
+  maths_w22_overall: { maxMarks: 200, 'A*': 168, A: 136, B: 103, C: 70, D: 52, E: 34, note: 'Source: Cambridge 4024 November 2022' },
+  maths_s23_p1: { maxMarks: 80, A: 59, B: 43, C: 27, D: 21, E: 15, note: 'Paper 1. Source: Cambridge 4024 June 2023' },
+  maths_s23_p2: { maxMarks: 100, A: 63, B: 45, C: 28, D: 23, E: 17, note: 'Paper 2. Source: Cambridge 4024 June 2023' },
+  maths_s23_overall: { maxMarks: 200, 'A*': 168, A: 137, B: 99, C: 62, D: 49, E: 36, note: 'Source: Cambridge 4024 June 2023' },
+  maths_w23_p1: { maxMarks: 80, A: 58, B: 45, C: 31, D: 22, E: 13, note: 'Paper 1. Source: Cambridge 4024 November 2023' },
+  maths_w23_p2: { maxMarks: 100, A: 77, B: 55, C: 34, D: 27, E: 20, note: 'Paper 2. Source: Cambridge 4024 November 2023' },
+  maths_w23_overall: { maxMarks: 200, 'A*': 175, A: 150, B: 111, C: 73, D: 54, E: 36, note: 'Source: Cambridge 4024 November 2023' },
+  maths_s24_p1: { maxMarks: 80, A: 63, B: 46, C: 29, D: 22, E: 16, note: 'Paper 1. Source: Cambridge 4024 June 2024' },
+  maths_s24_p2: { maxMarks: 100, A: 67, B: 48, C: 29, D: 23, E: 18, note: 'Paper 2. Source: Cambridge 4024 June 2024' },
+  maths_s24_overall: { maxMarks: 200, 'A*': 173, A: 146, B: 105, C: 65, D: 51, E: 38, note: 'Source: Cambridge 4024 June 2024' },
+  maths_w24_p1: { maxMarks: 80, A: 64, B: 51, C: 38, D: 27, E: 17, note: 'Paper 1. Source: Cambridge 4024 November 2024' },
+  maths_w24_p2: { maxMarks: 100, A: 68, B: 50, C: 32, D: 24, E: 15, note: 'Paper 2. Source: Cambridge 4024 November 2024' },
+  maths_w24_overall: { maxMarks: 200, 'A*': 174, A: 148, B: 114, C: 80, D: 58, E: 36, note: 'Source: Cambridge 4024 November 2024' },
+
 };
 
 // ── GRADE PREDICTION ──────────────────────────────────────────
