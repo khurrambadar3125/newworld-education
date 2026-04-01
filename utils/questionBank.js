@@ -13,6 +13,36 @@ import { getSupabase } from './supabase';
 
 const TABLE = 'question_bank';
 
+// ── Quality validation — reject bad questions before saving ──────
+const BAD_PATTERNS = [
+  '__random__', '__random', '{topic}', '{subject}', '{level}', '{difficulty}',
+  '[insert', '[your', '[topic', '[subject', '[name', '[placeholder',
+  'placeholder', 'todo', 'fixme', 'lorem ipsum', 'example question',
+  'sample question', 'test question here', 'undefined polygon',
+];
+
+function validateQuestion(questionText, type, options, correctAnswer) {
+  if (!questionText || questionText.length < 15) return 'Question too short';
+  if (!correctAnswer) return 'Missing correct answer';
+
+  const lower = questionText.toLowerCase();
+  for (const bad of BAD_PATTERNS) {
+    if (lower.includes(bad)) return `Contains bad pattern: ${bad}`;
+  }
+
+  if (type === 'mcq') {
+    if (!options || typeof options !== 'object') return 'MCQ missing options';
+    const keys = Object.keys(options);
+    if (keys.length < 4) return 'MCQ needs 4 options';
+    if (!['A', 'B', 'C', 'D'].includes(correctAnswer)) return `Invalid MCQ answer: ${correctAnswer}`;
+    for (const k of ['A', 'B', 'C', 'D']) {
+      if (!options[k] || options[k].length < 1) return `MCQ option ${k} is empty`;
+    }
+  }
+
+  return null; // Valid
+}
+
 // ── Save a question to the bank ──────────────────────────────────
 export async function saveQuestion({
   subject, level, topic, difficulty = 'medium', type = 'mcq',
@@ -21,6 +51,10 @@ export async function saveQuestion({
 }) {
   const sb = getSupabase();
   if (!sb) throw new Error('Supabase not configured');
+
+  // Quality gate: reject bad questions
+  const validationError = validateQuestion(questionText, type, options, correctAnswer);
+  if (validationError) return { saved: false, reason: validationError };
 
   // Deduplicate: skip if near-identical question exists
   const isDupe = await isDuplicate(subject, topic, questionText);
@@ -54,7 +88,15 @@ export async function saveQuestionsBatch(questions) {
   const sb = getSupabase();
   if (!sb) throw new Error('Supabase not configured');
 
-  const rows = questions.map(q => ({
+  // Filter out invalid questions before saving
+  const validQuestions = questions.filter(q => {
+    const err = validateQuestion(q.questionText, q.type || 'mcq', q.options, q.correctAnswer);
+    if (err) console.log('[QuestionBank] Batch rejected:', err, '-', (q.questionText || '').slice(0, 50));
+    return !err;
+  });
+  if (validQuestions.length === 0) return { saved: 0, ids: [] };
+
+  const rows = validQuestions.map(q => ({
     subject: q.subject,
     level: q.level,
     topic: q.topic,
@@ -107,7 +149,17 @@ export async function fetchQuestions({
     console.error('[QuestionBank] Fetch error:', error.message);
     return [];
   }
-  return data || [];
+
+  // Post-fetch quality filter: never serve broken questions
+  return (data || []).filter(q => {
+    if (!q.question_text || q.question_text.length < 15) return false;
+    const lower = q.question_text.toLowerCase();
+    for (const bad of BAD_PATTERNS) { if (lower.includes(bad)) return false; }
+    if (q.type === 'mcq') {
+      if (!q.options || !['A', 'B', 'C', 'D'].includes(q.correct_answer)) return false;
+    }
+    return true;
+  });
 }
 
 // ── Get a single random question matching criteria ───────────────
