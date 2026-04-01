@@ -410,34 +410,78 @@ npm run lint     # ESLint
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Session Snapshot (auto-updated)
 <!-- This section is auto-updated by .claude/update-claude-md.sh Stop hook -->
-<!-- Last sync: 2026-03-31 14:37 -->
+<!-- Last sync: 2026-04-01 11:56 -->
 
-**Platform counts**: 53 pages, 75 utils, 73 API routes, 8 components, 23 cron jobs
+**Platform counts**: 54 pages, 77 utils, 73 API routes, 8 components, 23 cron jobs
 
-**All pages**: _app,arts,arts-for-all,challenge,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,login,mocks,music,music-for-all,nano,news,our-results,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,responsible-ai,school,sing,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,voice-lab,zayd-mode
+**All pages**: _app,arts,arts-for-all,challenge,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,login,mocks,music,music-for-all,nano,news,nixor,our-results,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,responsible-ai,school,sing,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,voice-lab,zayd-mode
 
-**All utils**: academicExcellence,americanCurriculumKB,analytics,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeDialectKB,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,commandWordEngine,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,errorAlert,examinerReportsKB,extendedResponseKB,getKnowledgeForTopic,globalKnowledgeBase,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,kbWishlist,literatureArabicKB,markSchemeKB,motherTongue,notify,outcomeTrackingKB,patternEngine,phonicsKB,physicsAtomsOLevel,platformLearningEngine,practiceKB,productGate,readingKnowledge,responsibleAIPolicy,saturdayFreeLogic,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,singingGoalsKB,singingKB,starkyAtomsKB,starkyIntents,starkyPrompt,summerKnowledge,supabase,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,youngLearnerKB
+**All utils**: academicExcellence,americanCurriculumKB,analytics,apiAuth,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeDialectKB,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,commandWordEngine,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,errorAlert,examinerReportsKB,extendedResponseKB,getKnowledgeForTopic,globalKnowledgeBase,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,kbWishlist,literatureArabicKB,markSchemeKB,motherTongue,notify,outcomeTrackingKB,patternEngine,phonicsKB,physicsAtomsOLevel,platformLearningEngine,practiceKB,productGate,readingKnowledge,realtimeLearning,responsibleAIPolicy,saturdayFreeLogic,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,singingGoalsKB,singingKB,starkyAtomsKB,starkyIntents,starkyPrompt,summerKnowledge,supabase,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,youngLearnerKB
 
 **Last 10 commits**:
 ```
-787f888 Expand command words to 57 + examiner reports to 191 entries across 15 subjects
-a8d149a Upgrade Supreme Examiner to v2 — 5 examiner mindsets + live dialect verification
-f75eff1 Add Cambridge Marking Philosophy, 32 Dialect entries, Hidden Rules for 9 subjects
-6c8fb24 Add Cambridge Challenge — the Nixor boardroom demo page
-53a6b1a Add Cambridge Dialect KB + Supreme Examiner Persona — the Nixor build
-0fa6718 Add temperature effect on rate to mark scheme KB — kinetic energy, successful collisions, activation energy
-64ef118 Add enzyme specificity to mark scheme KB — complementary shape, not lock and key
-52e4514 Rebuild Mocks (3 phases) + Drill (5 modes) — complete A* training loop
-5b4254f Rebuild Nano lessons with subject-aware templates — science, humanities, english, maths, business
-711ae71 Clean Nano chat display + enhance Steps 3-4 with Cambridge precision
+b5cd730 Restructure Nav: student-first priority, Plans removed from top bar
+b285437 Add Learning Tools section + group subjects + Skip button on landing page
+3a7981c Remove Plans button from landing page header — reduce friction for students
+69a8985 Build real-time per-message learning loop + fix Nano pacing
+b7aa789 Remove unverified per-subject exam dates — only use verified series window
+1ea22e9 Inject subject-specific Cambridge exam dates — Zone 4 Pakistan timetable
+a4c5b90 Fix chat scroll position + inject authoritative exam dates
+c8e31db Fix Nano auto-send: bypass sendMessage entirely, use direct fetch
+d1260fb Add visible error details to Starky busy message for debugging
+ea9ecc5 Fix Nano auto-send: call sendMessage directly instead of simulated button click
 ```
 
 **Files changed in last commit**:
 ```
-utils/commandWordEngine.js
-utils/examinerReportsKB.js
+components/Nav.jsx
 ```
 
 **Uncommitted changes**: CLAUDE.md
