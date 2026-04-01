@@ -36,6 +36,7 @@ import { detectExtendedResponse, getExtendedResponseInjection } from '../../util
 import { SUPREME_EXAMINER_PERSONA, CAMBRIDGE_DIALECT, CAMBRIDGE_HIDDEN_RULES, CAMBRIDGE_MARKING_PHILOSOPHY, checkDialect, getDialectInjection } from '../../utils/cambridgeDialectKB';
 import { getSupabase } from '../../utils/supabase';
 import { reportCircuitBreaker, reportError } from '../../utils/errorAlert';
+import { getImmediateLearningInjection, saveMessageLearning, buildStudentLearningProfile } from '../../utils/realtimeLearning';
 
 export const config = {
   api: {
@@ -323,6 +324,18 @@ export default async function handler(req, res) {
         built.systemPrompt += buildDialectCheck(dialectSubject);
       }
 
+      // ── NANO GOAL PACING — force Starky to STOP and WAIT at the right step ──
+      if (message.includes('Nano Goal') && message.includes('STEP')) {
+        built.systemPrompt += `\n\nNANO PACING RULE (CRITICAL — MUST FOLLOW):
+You are in a Nano goal lesson. This is a MULTI-TURN conversation, not a single response.
+In THIS response, complete ONLY Steps 1-3 (teach, check understanding/errors, worked example).
+Then give the student THEIR question (Step 4) and STOP.
+Say: "Now it is your turn. Write your answer below."
+Do NOT write Step 5. Do NOT mark an answer. Do NOT say NANO_GOAL_COMPLETE.
+WAIT for the student to respond with their answer before proceeding to Step 5.
+If you complete all 5 steps in one response, you have FAILED the instruction.`;
+      }
+
       // ── FIRST_NANO_SESSION — make the first Nano experience unforgettable ──
       if (message.includes('[FIRST_NANO_SESSION]')) {
         const subjectCtx = sessionMemory?.currentSubject || userProfile?.lastSubject || 'this subject';
@@ -476,7 +489,7 @@ Do NOT guess or make up specific paper dates. Only state the verified exam windo
             const [knowledgeResult, prefResult] = await Promise.all([
               sb.from('autodiscovered_knowledge').select('topic, confusion_pattern').eq('active', true).limit(20),
               userProfile?.email
-                ? sb.from('student_preferences').select('preferred_language, difficulty_level, weak_topics').eq('email', userProfile.email).limit(1)
+                ? sb.from('student_preferences').select('preferred_language, difficulty_level, weak_topics, learning_style, effective_techniques, suggested_approach').eq('email', userProfile.email).limit(1)
                 : Promise.resolve({ data: null }),
             ]);
 
@@ -523,6 +536,10 @@ Do NOT guess or make up specific paper dates. Only state the verified exam windo
           ]);
         }
       } catch {}
+
+      // ── REAL-TIME LEARNING — immediate per-message intelligence ──
+      const learningInjection = getImmediateLearningInjection(message, built.messages, sessionMemory);
+      if (learningInjection) built.systemPrompt += learningInjection;
 
       // ── PRIORITY INJECTION QUEUE — only inject layers relevant to THIS message ──
       // Budget: ~8000 chars for optional layers. Core layers (persona, hearing, dialect check) already injected above.
@@ -623,6 +640,13 @@ Do NOT guess or make up specific paper dates. Only state the verified exam windo
           recordCircuitSuccess();
           res.write(`data: ${JSON.stringify({ type: 'done', response: fullText, meta: built.meta })}\n\n`);
           res.end();
+
+          // Real-time learning: save per-message signals (non-blocking)
+          if (userProfile?.email && message) {
+            setTimeout(() => {
+              saveMessageLearning(getSupabase(), userProfile.email, message, fullText, sessionMemory?.currentSubject || '', { grade: userProfile?.grade }).catch(() => {});
+            }, 1000);
+          }
 
           // Background: detect Cambridge weaknesses (staggered to prevent API burst)
           const currentSubject = sessionMemory?.currentSubject || userProfile?.lastSubject || '';
