@@ -31,6 +31,63 @@ async function extractPDFText(buffer) {
 }
 
 // Use Claude to parse questions from extracted text
+// Auto-detect subject, level, paper number, and session from PDF header text
+function detectMetadata(qpText) {
+  const meta = { subject: 'Unknown', level: 'O Level', paper: 'Unknown', session: 'Unknown' };
+
+  // Detect level: A Level or O Level (IGCSE)
+  if (/A Level|AS Level|AS & A Level|9702|9701|9700|9709/i.test(qpText)) {
+    meta.level = 'A Level';
+  }
+
+  // Detect subject code + paper variant e.g. "0625/12" or "9702/22"
+  const codeMatch = qpText.match(/(\d{4})\/(\d{2})/);
+  if (codeMatch) {
+    meta.paper = codeMatch[2]; // e.g. "12", "22"
+    const code = codeMatch[1];
+    // Map common Cambridge subject codes
+    const CODES = {
+      '0580':'Mathematics','0606':'Additional Mathematics','0625':'Physics','0620':'Chemistry',
+      '0610':'Biology','0450':'Business Studies','0455':'Economics','0478':'Computer Science',
+      '0452':'Accounting','0417':'ICT','0460':'Geography','0470':'History','0453':'Commerce',
+      '0500':'English Language','0475':'Literature in English','0448':'Pakistan Studies',
+      '0493':'Islamiyat','0495':'Sociology','0486':'Literature in English','0587':'Urdu',
+      '2058':'Islamiyat','2059':'Pakistan Studies','7110':'Statistics',
+      '9702':'Physics','9701':'Chemistry','9700':'Biology','9709':'Mathematics',
+      '9706':'Accounting','9708':'Economics','9618':'Computer Science','9990':'Psychology',
+      '9093':'English Language','9084':'Law','9696':'Geography','9489':'History',
+    };
+    if (CODES[code]) meta.subject = CODES[code];
+  }
+
+  // Detect subject from text if code didn't match
+  if (meta.subject === 'Unknown') {
+    const subjectPatterns = [
+      [/Physics/i, 'Physics'], [/Chemistry/i, 'Chemistry'], [/Biology/i, 'Biology'],
+      [/Mathematics|Maths/i, 'Mathematics'], [/Additional Math/i, 'Additional Mathematics'],
+      [/Business Studies/i, 'Business Studies'], [/Economics/i, 'Economics'],
+      [/Computer Science/i, 'Computer Science'], [/Accounting/i, 'Accounting'],
+      [/Geography/i, 'Geography'], [/History/i, 'History'], [/English Language/i, 'English Language'],
+      [/Pakistan Studies/i, 'Pakistan Studies'], [/Islamiyat/i, 'Islamiyat'],
+      [/Psychology/i, 'Psychology'], [/Sociology/i, 'Sociology'], [/Law/i, 'Law'],
+    ];
+    for (const [regex, name] of subjectPatterns) {
+      if (regex.test(qpText.slice(0, 2000))) { meta.subject = name; break; }
+    }
+  }
+
+  // Detect session: "October/November 2024" → "w24", "May/June 2024" → "s24", "February/March" → "m24"
+  const sessionMatch = qpText.match(/(October\/November|May\/June|February\/March)\s+(20\d{2})/i);
+  if (sessionMatch) {
+    const yr = sessionMatch[2].slice(2);
+    if (/october/i.test(sessionMatch[1])) meta.session = `w${yr}`;
+    else if (/may/i.test(sessionMatch[1])) meta.session = `s${yr}`;
+    else if (/february/i.test(sessionMatch[1])) meta.session = `m${yr}`;
+  }
+
+  return meta;
+}
+
 async function parseQuestions(qpText, msText, subject, level) {
   const response = await client.messages.create({
     model: 'claude-3-haiku-20240307',
@@ -89,42 +146,66 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
   if (!isAdmin(req)) return res.status(401).json({ error: 'Admin auth required' });
 
-  const { qpBase64, msBase64, subject, level, paper, session } = req.body || {};
+  const { files } = req.body || {};
 
-  if (!qpBase64 || !msBase64) {
-    return res.status(400).json({ error: 'Both question paper (qpBase64) and mark scheme (msBase64) are required' });
+  if (!files || !Array.isArray(files) || files.length < 2) {
+    return res.status(400).json({ error: 'Upload at least 2 PDF files (question paper + mark scheme)' });
   }
 
   try {
-    // Extract text from both PDFs
-    const qpBuffer = Buffer.from(qpBase64, 'base64');
-    const msBuffer = Buffer.from(msBase64, 'base64');
+    // Extract text from all uploaded PDFs
+    const results = await Promise.all(files.map(async (f) => {
+      const buffer = Buffer.from(f.base64, 'base64');
+      const extracted = await extractPDFText(buffer);
+      return { name: f.name, ...extracted };
+    }));
 
-    const [qpResult, msResult] = await Promise.all([
-      extractPDFText(qpBuffer),
-      extractPDFText(msBuffer),
-    ]);
+    // Auto-detect which is QP and which is MS
+    let qpResult = null, msResult = null;
+    for (const r of results) {
+      const nameLower = r.name.toLowerCase();
+      if (nameLower.includes('_ms_') || nameLower.includes('_ms.') || nameLower.includes('mark scheme') || /\bms\b/.test(nameLower)) {
+        msResult = r;
+      } else {
+        qpResult = qpResult || r; // first non-MS file is QP
+      }
+    }
+    // Fallback: if names don't help, check content for "mark scheme"
+    if (!msResult || !qpResult) {
+      for (const r of results) {
+        if (/mark scheme/i.test(r.text.slice(0, 500))) {
+          msResult = r;
+        } else {
+          qpResult = qpResult || r;
+        }
+      }
+    }
+    if (!qpResult || !msResult) {
+      return res.status(400).json({ error: 'Could not identify which PDF is the question paper and which is the mark scheme. Name files with _qp_ and _ms_.' });
+    }
+
+    // Auto-detect metadata from the QP text
+    const meta = detectMetadata(qpResult.text);
 
     // Parse questions and map answers
-    const questions = await parseQuestions(qpResult.text, msResult.text, subject, level);
+    const questions = await parseQuestions(qpResult.text, msResult.text, meta.subject, meta.level);
 
     // Clean up and validate
     const cleaned = questions.map(q => ({
       ...q,
       marks: q.type === 'mcq' ? 1 : (q.marks || 1),
-      subject: subject || 'Unknown',
-      level: level || 'O Level',
-      paper: paper || 'Unknown',
-      session: session || 'Unknown',
+      subject: meta.subject,
+      level: meta.level,
+      paper: meta.paper,
+      session: meta.session,
     }));
 
     return res.status(200).json({
       questions: cleaned,
       meta: {
-        subject,
-        level,
-        paper,
-        session,
+        ...meta,
+        qpFile: qpResult.name,
+        msFile: msResult.name,
         qpPages: qpResult.numPages,
         msPages: msResult.numPages,
         totalQuestions: cleaned.length,
