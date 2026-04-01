@@ -38,7 +38,7 @@ const CODES = {
   '0500':'English Language','0475':'Literature in English','0448':'Pakistan Studies',
   '0493':'Islamiyat','0495':'Sociology','0486':'Literature in English','0587':'Urdu',
   '2058':'Islamiyat','2059':'Pakistan Studies','7110':'Statistics',
-  '1123':'English Language','5070':'Chemistry','5090':'Biology','5054':'Physics','4024':'Mathematics','4037':'Additional Mathematics',
+  '1123':'English Language','2281':'Economics','7115':'Business Studies','5070':'Chemistry','5090':'Biology','5054':'Physics','4024':'Mathematics','4037':'Additional Mathematics',
   '9702':'Physics','9701':'Chemistry','9700':'Biology','9709':'Mathematics',
   '9706':'Accounting','9708':'Economics','9618':'Computer Science','9990':'Psychology',
   '9093':'English Language','9084':'Law','9696':'Geography','9489':'History',
