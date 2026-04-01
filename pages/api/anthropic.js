@@ -452,38 +452,15 @@ export default async function handler(req, res) {
         const examSeries = sessionMemory?.examSeries || userProfile?.examSeries;
         const { phase, daysUntil, series } = getCurrentPhase(examSeries);
         built.systemPrompt += '\n\n' + getPhasePromptInjection(phase, daysUntil, series?.name || 'Cambridge');
-        // Inject exact exam dates — subject-specific where known
+        // Inject verified exam window dates — series level only
+        // NOTE: Per-subject paper dates NOT included — must be verified from Cambridge official timetable before adding
         if (series) {
-          // Cambridge Zone 4 (Pakistan) May/June 2026 paper dates
-          const PAPER_DATES_MJ2026 = {
-            'pakistan studies': { paper1: '2026-04-29', paper2: '2026-05-01', code: '2059' },
-            'islamiyat': { paper1: '2026-05-05', paper2: '2026-05-07', code: '2058' },
-            'chemistry': { paper1: '2026-04-28', paper2: '2026-05-11', paper4: '2026-05-14', code: '5070' },
-            'physics': { paper1: '2026-04-27', paper2: '2026-05-08', paper4: '2026-05-15', code: '5054' },
-            'biology': { paper1: '2026-05-04', paper2: '2026-05-13', paper6: '2026-05-18', code: '5090' },
-            'mathematics': { paper1: '2026-05-06', paper2: '2026-05-19', code: '4024' },
-            'english language': { paper1: '2026-04-30', paper2: '2026-05-12', code: '1123' },
-            'economics': { paper1: '2026-05-09', paper2: '2026-05-20', code: '2281' },
-            'computer science': { paper1: '2026-05-02', paper2: '2026-05-16', code: '2210' },
-            'accounting': { paper1: '2026-05-03', paper2: '2026-05-17', code: '7707' },
-            'history': { paper1: '2026-05-10', paper2: '2026-05-21', code: '2147' },
-            'geography': { paper1: '2026-05-07', paper2: '2026-05-22', code: '2217' },
-            'business studies': { paper1: '2026-05-04', paper2: '2026-05-14', code: '7115' },
-            'sociology': { paper1: '2026-05-08', paper2: '2026-05-20', code: '2251' },
-          };
-          const subjectKey = (currentSubject || '').toLowerCase();
-          const paperDates = PAPER_DATES_MJ2026[subjectKey];
           const today = new Date().toISOString().split('T')[0];
-          if (paperDates) {
-            const daysToP1 = Math.ceil((new Date(paperDates.paper1) - new Date()) / 86400000);
-            built.systemPrompt += `\nFACT — AUTHORITATIVE EXAM DATES FOR ${currentSubject.toUpperCase()} (${paperDates.code}):
-Paper 1: ${paperDates.paper1} (${daysToP1} days from today)${paperDates.paper2 ? `\nPaper 2: ${paperDates.paper2}` : ''}${paperDates.paper4 ? `\nPaper 4 (Alt to Practical): ${paperDates.paper4}` : ''}${paperDates.paper6 ? `\nPaper 6 (Practical): ${paperDates.paper6}` : ''}
-Today: ${today}. Results: ${series.results_date}.
-IMPORTANT: These are the real Cambridge Zone 4 dates. If the student gives a DIFFERENT date, CORRECT them immediately: "Your ${currentSubject} Paper 1 is actually on ${paperDates.paper1}, not the date you mentioned."
-Do NOT trust dates provided by the student. Use ONLY these dates.`;
-          } else {
-            built.systemPrompt += `\nFACT — Cambridge ${series.name} exam window: ${series.exam_start} to ${series.exam_end}. Today: ${today}. ${daysUntil} days until exams start. Results: ${series.results_date}. If a student gives a wrong date, correct them.`;
-          }
+          built.systemPrompt += `\nFACT — CAMBRIDGE EXAM DATES (verified):
+Exam series: ${series.name}. Exam window: ${series.exam_start} to ${series.exam_end}. Results: ${series.results_date}.
+Today: ${today}. Days until exam window opens: ${daysUntil}.
+IMPORTANT: If a student asks for their specific subject paper date, say: "The ${series.name} exam window runs from ${series.exam_start} to ${series.exam_end}. For your exact ${currentSubject || ''} paper date, check the Cambridge Zone 4 timetable on your school notice board or at cambridgeinternational.org."
+Do NOT guess or make up specific paper dates. Only state the verified exam window.`;
         }
       } catch {}
 
