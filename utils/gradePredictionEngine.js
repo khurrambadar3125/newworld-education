@@ -16,20 +16,38 @@ const GRADE_BOUNDARIES = {
 
   // ── PAKISTAN STUDIES 2059 — June 2021 ──
   // Source: Cambridge CAIE 2059_s21_gt Official Grade Thresholds
-  pakistan_studies_p1: {
+  pakistan_studies_s21_p1: {
     maxMarks: 75,
     A: 46, B: 37, C: 29, D: 23, E: 18,
     note: 'Component 1 — History and Culture of Pakistan. Source: Cambridge 2059 June 2021 Grade Thresholds',
   },
-  pakistan_studies_p2: {
+  pakistan_studies_s21_p2: {
     maxMarks: 75,
     A: 45, B: 38, C: 31, D: 25, E: 19,
     note: 'Component 2 — Environment of Pakistan. Source: Cambridge 2059 June 2021 Grade Thresholds',
   },
-  pakistan_studies_overall: {
+  pakistan_studies_s21_overall: {
     maxMarks: 150,
     'A*': 107, A: 91, B: 75, C: 60, D: 48, E: 37,
     note: 'Overall combined grade. Maximum 150 after weighting. Components 01 and 02 combined. A* does not exist at individual component level — only overall. Source: Cambridge 2059 June 2021 Grade Thresholds',
+  },
+
+  // ── PAKISTAN STUDIES 2059 — November 2021 ──
+  // Source: Cambridge CAIE 2059_w21_gt Official Grade Thresholds
+  pakistan_studies_w21_p1: {
+    maxMarks: 75,
+    A: 46, B: 38, C: 31, D: 24, E: 18,
+    note: 'Component 1 — History and Culture of Pakistan. Source: Cambridge 2059 November 2021 Grade Thresholds',
+  },
+  pakistan_studies_w21_p2: {
+    maxMarks: 75,
+    A: 42, B: 35, C: 27, D: 23, E: 18,
+    note: 'Component 2 — Environment of Pakistan. Source: Cambridge 2059 November 2021 Grade Thresholds',
+  },
+  pakistan_studies_w21_overall: {
+    maxMarks: 150,
+    'A*': 103, A: 88, B: 73, C: 58, D: 47, E: 36,
+    note: 'Overall combined grade. Source: Cambridge 2059 November 2021 Grade Thresholds',
   },
 
 };
