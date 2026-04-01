@@ -90,6 +90,17 @@ Return JSON array: [{"question":"...","type":"structured","difficulty":"medium o
 }
 
 export default async function handler(req, res) {
+  // ── DISABLED: AI question generation disabled — verified sources only ──
+  // Question bank now populated exclusively from official Cambridge past papers
+  // uploaded via scripts/upload-papers.mjs or /upload-papers page.
+  // AI-generated questions are no longer acceptable.
+  // To re-enable, remove this early return.
+  return res.status(200).json({
+    status: 'disabled',
+    reason: 'AI question generation disabled — verified sources only. Upload past papers via scripts/upload-papers.mjs',
+    bankStats: 'Use /api/question-bank/serve-batch to check bank contents',
+  });
+
   if (process.env.CRON_SECRET && req.headers.authorization !== `Bearer ${process.env.CRON_SECRET}`) {
     return res.status(401).end();
   }

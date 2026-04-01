@@ -67,7 +67,19 @@ export default async function handler(req, res) {
       });
     }
 
-    // ── Step 2: Fallback — AI-generate + capture ─────────────────
+    // ── Step 2: If bank is empty, return empty instead of AI hallucination ──
+    // For subjects with verified past papers, we serve real questions only.
+    // AI fallback kept for subjects not yet in the bank (will be removed as bank grows).
+    if (!bankQuestion) {
+      // Check if this subject has ANY verified questions — if so, don't fall back to AI
+      const { fetchQuestions: fetchAny } = require('../../../utils/questionBank');
+      const anyForSubject = await fetchAny({ subject, level, curriculum, limit: 1 });
+      if (anyForSubject.length > 0) {
+        return res.status(200).json({ error: 'no_matching_question', message: `No verified question found for topic "${topic}". Try a different topic.`, _source: 'bank_empty_for_topic' });
+      }
+    }
+
+    // ── AI fallback — ONLY for subjects with zero bank questions ─────────────────
     const diffDesc = DIFFICULTY_MAP[difficulty] || DIFFICULTY_MAP.medium;
     const randomPos = ['A', 'B', 'C', 'D'][Math.floor(Math.random() * 4)];
 

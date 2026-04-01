@@ -8,107 +8,18 @@
 import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 
-const CHALLENGES = [
-  {
-    id: 'bio_enzyme',
-    subject: 'Biology',
-    level: 'O Level',
-    commandWord: 'Explain',
-    marks: 3,
-    question: 'Explain why enzymes are described as specific.',
-    hint: 'Think about shape. Think about the active site. Think about what can bind.',
-    topic: 'Enzymes',
-  },
-  {
-    id: 'chem_rate',
-    subject: 'Chemistry',
-    level: 'O Level',
-    commandWord: 'Explain',
-    marks: 3,
-    question: 'Explain why increasing the temperature increases the rate of a chemical reaction.',
-    hint: 'Three mark points: kinetic energy, collisions, activation energy.',
-    topic: 'Rates of Reaction',
-  },
-  {
-    id: 'phys_weight',
-    subject: 'Physics',
-    level: 'O Level',
-    commandWord: 'Explain',
-    marks: 2,
-    question: 'Explain the difference between mass and weight.',
-    hint: 'One is a force. One is not. Units matter.',
-    topic: 'Forces',
-  },
-  {
-    id: 'econ_demand',
-    subject: 'Economics',
-    level: 'O Level',
-    commandWord: 'Distinguish',
-    marks: 2,
-    question: 'Distinguish between a change in demand and a change in quantity demanded.',
-    hint: 'One shifts the curve. One moves along it.',
-    topic: 'Demand',
-  },
-  {
-    id: 'eng_analyse',
-    subject: 'English Language',
-    level: 'O Level',
-    commandWord: 'Analyse',
-    marks: 3,
-    question: 'Analyse how the writer uses language to create a sense of danger in the following extract:\n\n"The silence pressed against him like something solid, broken only by the distant crack of splitting ice."',
-    hint: 'Name the technique. Quote. Explain the effect on the reader.',
-    topic: 'Language Analysis',
-  },
-  {
-    id: 'bio_osmosis',
-    subject: 'Biology',
-    level: 'O Level',
-    commandWord: 'Define',
-    marks: 2,
-    question: 'Define osmosis.',
-    hint: 'Every qualifying word is a mark point. Miss one word, lose one mark.',
-    topic: 'Osmosis',
-  },
-  {
-    id: 'chem_ionic',
-    subject: 'Chemistry',
-    level: 'O Level',
-    commandWord: 'Describe',
-    marks: 3,
-    question: 'Describe the formation of an ionic bond between sodium and chlorine.',
-    hint: 'Transfer, not sharing. State what happens to the electrons. Name the ions formed.',
-    topic: 'Chemical Bonding',
-  },
-  {
-    id: 'phys_current',
-    subject: 'Physics',
-    level: 'O Level',
-    commandWord: 'State',
-    marks: 1,
-    question: 'State what is meant by electric current.',
-    hint: 'One sentence. Precise. Not "flow of electrons".',
-    topic: 'Electricity',
-  },
-  {
-    id: 'hist_eval',
-    subject: 'History',
-    level: 'O Level',
-    commandWord: 'Evaluate',
-    marks: 4,
-    question: 'Evaluate the significance of the Lahore Resolution (1940) in the creation of Pakistan.',
-    hint: 'State what it was. Explain why it mattered. Consider counter-arguments. Reach a judgement.',
-    topic: 'Creation of Pakistan',
-  },
-  {
-    id: 'math_show',
-    subject: 'Mathematics',
-    level: 'O Level',
-    commandWord: 'Show that',
-    marks: 3,
-    question: 'The nth term of a sequence is 3n + 7. Show that the sum of the first 20 terms is 690.',
-    hint: 'Do NOT start with 690. Work forward. Show every step.',
-    topic: 'Sequences',
-  },
+// Fallback challenges — used only if the question bank API fails
+const FALLBACK_CHALLENGES = [
+  { id: 'bio_enzyme', subject: 'Biology', level: 'O Level', commandWord: 'Explain', marks: 3, question: 'Explain why enzymes are described as specific.', hint: 'Think about shape. Think about the active site. Think about what can bind.', topic: 'Enzymes' },
+  { id: 'chem_rate', subject: 'Chemistry', level: 'O Level', commandWord: 'Explain', marks: 3, question: 'Explain why increasing the temperature increases the rate of a chemical reaction.', hint: 'Three mark points: kinetic energy, collisions, activation energy.', topic: 'Rates of Reaction' },
+  { id: 'phys_weight', subject: 'Physics', level: 'O Level', commandWord: 'Explain', marks: 2, question: 'Explain the difference between mass and weight.', hint: 'One is a force. One is not. Units matter.', topic: 'Forces' },
+  { id: 'econ_demand', subject: 'Economics', level: 'O Level', commandWord: 'Distinguish', marks: 2, question: 'Distinguish between a change in demand and a change in quantity demanded.', hint: 'One shifts the curve. One moves along it.', topic: 'Demand' },
+  { id: 'eng_analyse', subject: 'English Language', level: 'O Level', commandWord: 'Analyse', marks: 3, question: 'Analyse how the writer uses language to create a sense of danger in the following extract:\n\n"The silence pressed against him like something solid, broken only by the distant crack of splitting ice."', hint: 'Name the technique. Quote. Explain the effect on the reader.', topic: 'Language Analysis' },
+  { id: 'bio_osmosis', subject: 'Biology', level: 'O Level', commandWord: 'Define', marks: 2, question: 'Define osmosis.', hint: 'Every qualifying word is a mark point. Miss one word, lose one mark.', topic: 'Osmosis' },
+  { id: 'chem_ionic', subject: 'Chemistry', level: 'O Level', commandWord: 'Describe', marks: 3, question: 'Describe the formation of an ionic bond between sodium and chlorine.', hint: 'Transfer, not sharing. State what happens to the electrons. Name the ions formed.', topic: 'Chemical Bonding' },
+  { id: 'phys_current', subject: 'Physics', level: 'O Level', commandWord: 'State', marks: 1, question: 'State what is meant by electric current.', hint: 'One sentence. Precise. Not "flow of electrons".', topic: 'Electricity' },
+  { id: 'hist_eval', subject: 'History', level: 'O Level', commandWord: 'Evaluate', marks: 4, question: 'Evaluate the significance of the Lahore Resolution (1940) in the creation of Pakistan.', hint: 'State what it was. Explain why it mattered. Consider counter-arguments. Reach a judgement.', topic: 'Creation of Pakistan' },
+  { id: 'math_show', subject: 'Mathematics', level: 'O Level', commandWord: 'Show that', marks: 3, question: 'The nth term of a sequence is 3n + 7. Show that the sum of the first 20 terms is 690.', hint: 'Do NOT start with 690. Work forward. Show every step.', topic: 'Sequences' },
 ];
 
 const COMMAND_WORD_GUIDE = {
@@ -147,9 +58,44 @@ export default function ChallengePage() {
   }, []);
 
   useEffect(() => {
-    const s = [...CHALLENGES].sort(() => Math.random() - 0.5);
-    setShuffled(s);
-    setChallenge(s[0]);
+    // Try loading verified questions from the bank first
+    async function loadChallenges() {
+      try {
+        const res = await fetch('/api/question-bank/serve-batch', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ level: 'O Level', limit: 10 }),
+        });
+        if (res.ok) {
+          const data = await res.json();
+          if (data.questions?.length >= 5) {
+            const bankChallenges = data.questions.map((q, i) => ({
+              id: q._bankId || `bank_${i}`,
+              subject: q.subject || 'General',
+              level: q.level || 'O Level',
+              commandWord: q.commandWord || (q.type === 'mcq' ? 'Select' : 'Explain'),
+              marks: q.marks || 1,
+              question: q.question,
+              hint: q.markSchemeHint || 'Think carefully about what the examiner is looking for.',
+              topic: q.topic || 'General',
+              type: q.type,
+              options: q.options,
+              correctOption: q.correctOption,
+              _source: 'verified_bank',
+            }));
+            const s = bankChallenges.sort(() => Math.random() - 0.5);
+            setShuffled(s);
+            setChallenge(s[0]);
+            return;
+          }
+        }
+      } catch { /* fall through to fallback */ }
+      // Fallback to hardcoded challenges
+      const s = [...FALLBACK_CHALLENGES].sort(() => Math.random() - 0.5);
+      setShuffled(s);
+      setChallenge(s[0]);
+    }
+    loadChallenges();
     if (typeof window !== 'undefined' && document.referrer.includes('/nixor')) setFromDeck(true);
   }, []);
 

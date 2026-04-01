@@ -12,6 +12,7 @@ import Anthropic from '@anthropic-ai/sdk';
 import { Resend } from 'resend';
 import { dailyQuestionEmail } from '../../../utils/dailyQuestionEmail';
 import { getAllSubscribers, recordQuestionSent, getRecentQuestions } from '../../../utils/db';
+import { getRandomQuestion, toClientFormat } from '../../../utils/questionBank';
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 const resend    = new Resend(process.env.RESEND_API_KEY);
@@ -22,6 +23,19 @@ function isAuthorised(req) {
 }
 
 async function generateQuestion(grade, subject, recentQuestions = []) {
+  // ── VERIFIED BANK FIRST — try real Cambridge past paper questions ──
+  try {
+    const level = (grade || '').includes('A Level') ? 'A Level' : 'O Level';
+    const bankQ = await getRandomQuestion({ subject, level, curriculum: 'cambridge' });
+    if (bankQ) {
+      const formatted = toClientFormat(bankQ);
+      return `${formatted.question}${formatted.marks ? ` [${formatted.marks} marks]` : ''}`;
+    }
+  } catch (bankErr) {
+    console.error('[daily-question] Bank fetch failed, using AI fallback:', bankErr.message);
+  }
+
+  // ── AI FALLBACK — only if bank has no questions for this subject ──
   const avoidList = recentQuestions.length > 0
     ? `\n\nDo NOT repeat these recent questions:\n${recentQuestions.slice(0, 10).map((q, i) => `${i+1}. ${q}`).join('\n')}`
     : '';
