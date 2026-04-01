@@ -137,7 +137,7 @@ Extract ALL questions. For each question return:
 export const config = {
   api: {
     bodyParser: {
-      sizeLimit: '20mb',
+      sizeLimit: '50mb',
     },
   },
 };
@@ -148,44 +148,70 @@ export default async function handler(req, res) {
 
   const { files } = req.body || {};
 
-  if (!files || !Array.isArray(files) || files.length < 2) {
-    return res.status(400).json({ error: 'Upload at least 2 PDF files (question paper + mark scheme)' });
+  if (!files || !Array.isArray(files) || files.length < 1) {
+    return res.status(400).json({ error: 'Upload at least 1 PDF file' });
   }
 
   try {
-    // Extract text from all uploaded PDFs
-    const results = await Promise.all(files.map(async (f) => {
-      const buffer = Buffer.from(f.base64, 'base64');
-      const extracted = await extractPDFText(buffer);
-      return { name: f.name, ...extracted };
-    }));
+    // Cambridge file naming: {code}_{session}_{type}_{variant}.pdf
+    // Types: qp = question paper, ms = mark scheme, in = insert (question paper for some subjects),
+    //        er = examiner report, gt = grade thresholds, ci = confidential instructions
+    // We only care about: qp/in (questions) and ms (answers). Skip er, gt, ci, sp, sm, sf, etc.
 
-    // Auto-detect which is QP and which is MS
-    let qpResult = null, msResult = null;
-    for (const r of results) {
-      const nameLower = r.name.toLowerCase();
-      if (nameLower.includes('_ms_') || nameLower.includes('_ms.') || nameLower.includes('mark scheme') || /\bms\b/.test(nameLower)) {
-        msResult = r;
-      } else {
-        qpResult = qpResult || r; // first non-MS file is QP
-      }
-    }
-    // Fallback: if names don't help, check content for "mark scheme"
-    if (!msResult || !qpResult) {
-      for (const r of results) {
-        if (/mark scheme/i.test(r.text.slice(0, 500))) {
-          msResult = r;
+    // Classify files by type from filename
+    const classified = files.map(f => {
+      const nameLower = f.name.toLowerCase();
+      let type = 'unknown';
+      if (/_qp[_.]/.test(nameLower) || /_qp\d/.test(nameLower)) type = 'qp';
+      else if (/_in[_.]/.test(nameLower) || /_in\d/.test(nameLower)) type = 'qp'; // insert = question paper
+      else if (/_ms[_.]/.test(nameLower) || /_ms\d/.test(nameLower)) type = 'ms';
+      else if (/_er[_.]/.test(nameLower) || /_gt[_.]/.test(nameLower) || /_ci[_.]/.test(nameLower) ||
+               /_sp[_.]/.test(nameLower) || /_sm[_.]/.test(nameLower) || /_sf[_.]/.test(nameLower)) type = 'skip';
+      return { ...f, fileType: type };
+    });
+
+    const qpFiles = classified.filter(f => f.fileType === 'qp');
+    const msFiles = classified.filter(f => f.fileType === 'ms');
+    const unknownFiles = classified.filter(f => f.fileType === 'unknown');
+    const skippedFiles = classified.filter(f => f.fileType === 'skip');
+
+    // If we couldn't classify from names, check content
+    if (qpFiles.length === 0 || msFiles.length === 0) {
+      for (const f of unknownFiles) {
+        const buffer = Buffer.from(f.base64, 'base64');
+        const extracted = await extractPDFText(buffer);
+        if (/mark scheme/i.test(extracted.text.slice(0, 1000))) {
+          msFiles.push({ ...f, fileType: 'ms' });
         } else {
-          qpResult = qpResult || r;
+          qpFiles.push({ ...f, fileType: 'qp' });
         }
       }
     }
-    if (!qpResult || !msResult) {
-      return res.status(400).json({ error: 'Could not identify which PDF is the question paper and which is the mark scheme. Name files with _qp_ and _ms_.' });
+
+    if (qpFiles.length === 0 || msFiles.length === 0) {
+      return res.status(400).json({
+        error: `Could not find both question paper and mark scheme. Got ${qpFiles.length} QP(s), ${msFiles.length} MS(s). Skipped: ${skippedFiles.map(f => f.name).join(', ') || 'none'}. Make sure you include both the question paper (_qp_ or _in_) and mark scheme (_ms_) files.`,
+      });
     }
+
+    // Extract text from the QP and MS files
+    const qpBuffer = Buffer.from(qpFiles[0].base64, 'base64');
+    const msBuffer = Buffer.from(msFiles[0].base64, 'base64');
+    const [qpResult, msResult] = await Promise.all([
+      extractPDFText(qpBuffer),
+      extractPDFText(msBuffer),
+    ]);
+    qpResult.name = qpFiles[0].name;
+    msResult.name = msFiles[0].name;
 
     // Auto-detect metadata from the QP text
     const meta = detectMetadata(qpResult.text);
+    // Also try to get metadata from filename (e.g. 2059_s21_qp_12.pdf)
+    const fnMatch = qpFiles[0].name.match(/(\d{4})_([smw]\d{2})_(?:qp|in)_?(\d{0,2})/i);
+    if (fnMatch) {
+      if (meta.session === 'Unknown') meta.session = fnMatch[2];
+      if (meta.paper === 'Unknown' && fnMatch[3]) meta.paper = fnMatch[3];
+    }
 
     // Parse questions and map answers
     const questions = await parseQuestions(qpResult.text, msResult.text, meta.subject, meta.level);
@@ -211,6 +237,7 @@ export default async function handler(req, res) {
         totalQuestions: cleaned.length,
         verified: cleaned.filter(q => q.verified).length,
         unverified: cleaned.filter(q => !q.verified).length,
+        skipped: skippedFiles.map(f => f.name),
       },
     });
 
