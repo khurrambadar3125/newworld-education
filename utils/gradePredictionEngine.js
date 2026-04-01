@@ -118,6 +118,13 @@ const GRADE_BOUNDARIES = {
   biology_s24_p3: { maxMarks: 40, A: 30, B: 27, C: 24, D: 20, E: 17, note: 'Paper 3 Practical. Source: Cambridge 5090 June 2024' },
   biology_s24_p4: { maxMarks: 40, A: 29, B: 26, C: 23, D: 19, E: 16, note: 'Paper 4 Alternative to Practical. Source: Cambridge 5090 June 2024' },
 
+  // ── Biology November 2024 ──
+  biology_w24_p1: { maxMarks: 40, A: 30, B: 25, C: 20, D: 18, E: 16, note: 'Paper 1 MCQ. Source: Cambridge 5090 November 2024' },
+  biology_w24_p2: { maxMarks: 80, A: 49, B: 37, C: 26, D: 22, E: 18, note: 'Paper 2 Theory. Source: Cambridge 5090 November 2024' },
+  biology_w24_p3: { maxMarks: 40, A: 27, B: 23, C: 19, D: 15, E: 12, note: 'Paper 3 Practical. Source: Cambridge 5090 November 2024' },
+  biology_w24_p4: { maxMarks: 40, A: 27, B: 23, C: 19, D: 15, E: 12, note: 'Paper 4 Alternative to Practical. Source: Cambridge 5090 November 2024' },
+  biology_w24_overall: { maxMarks: 200, 'A*': 159, A: 133, B: 107, C: 82, D: 70, E: 59, note: 'Overall (Option AX: P1+P2+P3). Source: Cambridge 5090 November 2024' },
+
 };
 
 // ── GRADE PREDICTION ──────────────────────────────────────────
