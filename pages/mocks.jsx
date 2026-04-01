@@ -54,9 +54,14 @@ export default function Mocks() {
     } catch {}
   }, []);
 
-  // Timer
+  // Timer — auto-submit when time runs out
   useEffect(() => {
-    if (timeLeft === null || timeLeft <= 0) return;
+    if (timeLeft === null || timeLeft < 0) return;
+    if (timeLeft === 0 && step === 'exam' && !loading) {
+      submitMock();
+      return;
+    }
+    if (timeLeft <= 0) return;
     const t = setInterval(() => setTimeLeft(prev => prev > 0 ? prev - 1 : 0), 1000);
     return () => clearInterval(t);
   }, [timeLeft]);
@@ -138,7 +143,10 @@ export default function Mocks() {
   };
 
   const submitAnswer = (qIndex, answer) => {
-    setAnswers(prev => ({ ...prev, [qIndex]: answer }));
+    const newAnswers = { ...answers, [qIndex]: answer };
+    setAnswers(newAnswers);
+    // Save exam progress to localStorage in case user leaves
+    try { localStorage.setItem('nw_mock_progress', JSON.stringify({ answers: newAnswers, questions, mockSession, currentQ: qIndex, timeLeft })); } catch {}
     if (qIndex < questions.length - 1) {
       setCurrentQ(qIndex + 1);
       setTimeout(() => window.scrollTo({ top: 200, behavior: 'smooth' }), 100);
@@ -507,7 +515,7 @@ export default function Mocks() {
             </div>
 
             <div style={{ display: 'flex', gap: 10, marginTop: 16 }}>
-              <button onClick={() => { setStep('subjects'); setResults(null); setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100); }} style={{ ...S.btn, flex: 1 }}>
+              <button onClick={() => { setStep('subjects'); setResults(null); setQuestions([]); setAnswers({}); setCurrentQ(0); try { localStorage.removeItem('nw_mock_progress'); } catch {} setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100); }} style={{ ...S.btn, flex: 1 }}>
                 Take another mock
               </button>
               <a href="/student-dashboard" style={{ ...S.btn, flex: 1, textAlign: 'center', textDecoration: 'none', background: 'rgba(255,255,255,0.08)' }}>

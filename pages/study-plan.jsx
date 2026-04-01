@@ -32,6 +32,7 @@ export default function StudyPlanPage() {
   const [predictions, setPredictions] = useState([]);
   const [completedDays, setCompletedDays] = useState({});
   const [weekOffset, setWeekOffset] = useState(0);
+  const [dataError, setDataError] = useState(false);
   const [setupMode, setSetupMode] = useState(false);
 
   useEffect(() => {
@@ -50,17 +51,17 @@ export default function StudyPlanPage() {
       setCompletedDays(saved);
 
       if (u.email) {
-        fetch(`/api/weaknesses?email=${encodeURIComponent(u.email)}`)
+        fetch(`/api/weaknesses?email=${encodeURIComponent(u.email)}&token=${encodeURIComponent(u.email)}`, { headers: { 'x-student-email': u.email } })
           .then(r => r.json())
           .then(data => {
             if (data.weaknesses) setWeaknesses(data.weaknesses);
-          }).catch(() => {});
+          }).catch(() => { setDataError(true); });
 
-        fetch(`/api/predictions?email=${encodeURIComponent(u.email)}`)
+        fetch(`/api/predictions?email=${encodeURIComponent(u.email)}`, { headers: { 'x-student-email': u.email } })
           .then(r => r.json())
           .then(data => {
             if (data.predictions) setPredictions(data.predictions);
-          }).catch(() => {});
+          }).catch(() => { setDataError(true); });
       }
     } catch {}
   }, []);

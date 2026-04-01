@@ -1019,6 +1019,16 @@ export default function PastPapersPage() {
                 </div>
               )}
               <div ref={chatEndRef}/>
+              {/* Exit button — prevents infinite chat loop */}
+              {messages.length > 2 && (
+                <div style={{textAlign:'center',padding:'12px 0'}}>
+                  <div style={{display:'flex',gap:8,justifyContent:'center',flexWrap:'wrap'}}>
+                    <a href="/nano" style={{fontSize:12,fontWeight:700,color:'#C9A84C',textDecoration:'none',padding:'8px 16px',border:'1px solid rgba(201,168,76,0.3)',borderRadius:8}}>⚛️ Study in Nano</a>
+                    <a href="/drill" style={{fontSize:12,fontWeight:700,color:'#4F8EF7',textDecoration:'none',padding:'8px 16px',border:'1px solid rgba(79,142,247,0.3)',borderRadius:8}}>⚡ Practice Drill</a>
+                    <a href="/" style={{fontSize:12,fontWeight:700,color:'rgba(255,255,255,0.4)',textDecoration:'none',padding:'8px 16px',border:'1px solid rgba(255,255,255,0.1)',borderRadius:8}}>← Home</a>
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Input */}

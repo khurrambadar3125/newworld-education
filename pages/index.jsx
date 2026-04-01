@@ -866,8 +866,9 @@ export default function Home() {
 
       {/* Registration Modal */}
       {showRegModal && (
-        <div className="mo" onClick={e => { if (e.target.classList.contains('mo') && !regName.trim() && !regEmail.trim()) setShowRegModal(false); }}>
+        <div className="mo" onClick={e => { if (e.target.classList.contains('mo')) setShowRegModal(false); }}>
           <div className="md">
+            <button onClick={() => setShowRegModal(false)} style={{position:'absolute',top:12,right:12,background:'none',border:'none',color:'rgba(255,255,255,0.4)',fontSize:20,cursor:'pointer',padding:4}}>✕</button>
             <h2>Almost there! ★</h2>
             <p>Create your account to start learning with Starky. We'll send you a learning report after your first session.</p>
             <div className="mf">
