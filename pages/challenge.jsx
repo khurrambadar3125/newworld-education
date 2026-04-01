@@ -448,7 +448,7 @@ export default function ChallengePage() {
 
         {/* Question picker — only in answer mode */}
         {mode === 'answer' && <details style={{ marginTop: 32 }}>
-          <summary style={{ cursor: 'pointer', fontSize: 13, fontWeight: 700, color: 'rgba(250,246,235,0.35)', padding: '8px 0' }}>Choose a different question ({CHALLENGES.length} available)</summary>
+          <summary style={{ cursor: 'pointer', fontSize: 13, fontWeight: 700, color: 'rgba(250,246,235,0.35)', padding: '8px 0' }}>Choose a different question ({shuffled.length} available)</summary>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 10 }}>
             {shuffled.map((c, i) => (
               <button key={c.id} onClick={() => { setMode('answer'); selectChallenge(c, i); }}
