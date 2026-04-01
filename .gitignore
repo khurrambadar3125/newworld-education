@@ -26,6 +26,8 @@ yarn-error.log*
 
 # env files
 .env*.local
+.env.seed
+.seed-progress.json
 
 # vercel
 .vercel
