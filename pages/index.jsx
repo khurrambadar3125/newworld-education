@@ -1178,21 +1178,40 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Subject pills — only show when O or A level selected */}
+          {/* Subject pills — grouped by category with Skip option */}
           {(selectedGrade?.id?.includes('olevel')||selectedGrade?.id?.includes('alevel')) && (
             <>
-              <p style={{fontSize:12,color:'rgba(255,255,255,0.35)',marginBottom:14}}>Tap a subject to start — Starky launches instantly ★</p>
-              <div style={{display:'flex',flexWrap:'wrap',gap:8,justifyContent:'center',marginBottom:8}}>
-                {(selectedGrade?.id?.includes('olevel') ? SUBJECTS_OLEVEL : SUBJECTS_ALEVEL).map(s=>(
-                  <button key={s}
-                    onClick={()=>{ setSelectedSubject(s); if(!userProfile){setShowRegModal(true);}else{launchChat(null,s);} }}
-                    style={{padding:'9px 18px',borderRadius:100,border:'1px solid rgba(255,255,255,0.1)',fontSize:12,fontWeight:600,cursor:'pointer',fontFamily:"'Sora',sans-serif",transition:'all 0.15s',WebkitTapHighlightColor:'transparent',background:'rgba(255,255,255,0.05)',color:'rgba(255,255,255,0.7)'}}
-                    onMouseEnter={e=>{e.currentTarget.style.background='rgba(124,92,191,0.3)';e.currentTarget.style.borderColor='rgba(167,139,250,0.5)';e.currentTarget.style.color='#A78BFA';}}
-                    onMouseLeave={e=>{e.currentTarget.style.background='rgba(255,255,255,0.05)';e.currentTarget.style.borderColor='rgba(255,255,255,0.1)';e.currentTarget.style.color='rgba(255,255,255,0.7)';}}>
-                    {s}
-                  </button>
-                ))}
-              </div>
+              <p style={{fontSize:12,color:'rgba(255,255,255,0.35)',marginBottom:14}}>Tap a subject to start — or skip and Starky will ask you ★</p>
+              <button onClick={()=>{ if(!userProfile){setShowRegModal(true);}else{launchChat(null,null);} }}
+                style={{display:'block',margin:'0 auto 16px',padding:'10px 28px',borderRadius:100,border:'1px solid rgba(79,142,247,0.3)',background:'rgba(79,142,247,0.08)',fontSize:13,fontWeight:700,color:'#4F8EF7',cursor:'pointer',fontFamily:"'Sora',sans-serif"}}>
+                Skip — Starky will ask me &rarr;
+              </button>
+              {[
+                { label: '🔬 Sciences', subjects: ['Mathematics','Additional Mathematics','Physics','Chemistry','Biology','Statistics','Computer Science'] },
+                { label: '📝 Humanities', subjects: ['Pakistan Studies','History','Geography','Sociology','Economics','Islamiyat','Psychology'] },
+                { label: '📖 Languages', subjects: ['English Language','Literature in English','First Language Urdu','Second Language Urdu','Arabic','French'] },
+                { label: '💼 Business', subjects: ['Business Studies','Accounting','Commerce','Travel & Tourism'] },
+              ].map(group => {
+                const allSubjects = selectedGrade?.id?.includes('olevel') ? SUBJECTS_OLEVEL : SUBJECTS_ALEVEL;
+                const available = group.subjects.filter(s => allSubjects.includes(s));
+                if (!available.length) return null;
+                return (
+                  <div key={group.label} style={{marginBottom:12}}>
+                    <div style={{fontSize:11,fontWeight:700,color:'rgba(255,255,255,0.3)',marginBottom:6,textTransform:'uppercase',letterSpacing:'0.05em'}}>{group.label}</div>
+                    <div style={{display:'flex',flexWrap:'wrap',gap:8,justifyContent:'center'}}>
+                      {available.map(s=>(
+                        <button key={s}
+                          onClick={()=>{ setSelectedSubject(s); if(!userProfile){setShowRegModal(true);}else{launchChat(null,s);} }}
+                          style={{padding:'9px 18px',borderRadius:100,border:'1px solid rgba(255,255,255,0.1)',fontSize:12,fontWeight:600,cursor:'pointer',fontFamily:"'Sora',sans-serif",transition:'all 0.15s',WebkitTapHighlightColor:'transparent',background:'rgba(255,255,255,0.05)',color:'rgba(255,255,255,0.7)'}}
+                          onMouseEnter={e=>{e.currentTarget.style.background='rgba(124,92,191,0.3)';e.currentTarget.style.borderColor='rgba(167,139,250,0.5)';e.currentTarget.style.color='#A78BFA';}}
+                          onMouseLeave={e=>{e.currentTarget.style.background='rgba(255,255,255,0.05)';e.currentTarget.style.borderColor='rgba(255,255,255,0.1)';e.currentTarget.style.color='rgba(255,255,255,0.7)';}}>
+                          {s}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
               <p style={{fontSize:11,color:'rgba(255,255,255,0.25)',marginTop:10}}>30 years of past papers · All mark schemes · Free</p>
             </>
           )}
@@ -1203,6 +1222,34 @@ export default function Home() {
           )}
         </div>
       </section>}
+
+      {/* Learning Tools — feature Nano, Drill, Mocks, Challenge */}
+      <section className="ft">
+        <div className="sl">Your Learning Toolkit</div>
+        <div className="st">Four ways to master Cambridge — pick one and start</div>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))',gap:12,marginTop:16}}>
+          <a href="/nano" style={{background:'rgba(201,168,76,0.06)',border:'1px solid rgba(201,168,76,0.2)',borderRadius:16,padding:'20px 18px',textDecoration:'none',display:'block'}}>
+            <div style={{fontSize:28,marginBottom:8}}>&#9883;&#65039;</div>
+            <div style={{fontWeight:900,fontSize:15,color:'#C9A84C',marginBottom:4}}>Starky Nano</div>
+            <div style={{fontSize:12,color:'rgba(255,255,255,0.5)',lineHeight:1.6}}>Learn one goal at a time. Starky teaches it, tests it, confirms mastery. 2,803 goals across 30 subjects.</div>
+          </a>
+          <a href="/drill" style={{background:'rgba(79,142,247,0.06)',border:'1px solid rgba(79,142,247,0.2)',borderRadius:16,padding:'20px 18px',textDecoration:'none',display:'block'}}>
+            <div style={{fontSize:28,marginBottom:8}}>&#9889;</div>
+            <div style={{fontWeight:900,fontSize:15,color:'#4F8EF7',marginBottom:4}}>Practice Drill</div>
+            <div style={{fontSize:12,color:'rgba(255,255,255,0.5)',lineHeight:1.6}}>5 drill modes: Weak Spots, Command Words, Mark Scheme Language, Calculations, Past Paper Style.</div>
+          </a>
+          <a href="/mocks" style={{background:'rgba(167,139,250,0.06)',border:'1px solid rgba(167,139,250,0.2)',borderRadius:16,padding:'20px 18px',textDecoration:'none',display:'block'}}>
+            <div style={{fontSize:28,marginBottom:8}}>&#128221;</div>
+            <div style={{fontWeight:900,fontSize:15,color:'#A78BFA',marginBottom:4}}>Starky Mocks</div>
+            <div style={{fontSize:12,color:'rgba(255,255,255,0.5)',lineHeight:1.6}}>Timed mock exams with pre-exam briefing, question guides, and Cambridge examiner-level marking.</div>
+          </a>
+          <a href="/challenge" style={{background:'rgba(74,222,128,0.06)',border:'1px solid rgba(74,222,128,0.2)',borderRadius:16,padding:'20px 18px',textDecoration:'none',display:'block'}}>
+            <div style={{fontSize:28,marginBottom:8}}>&#127919;</div>
+            <div style={{fontWeight:900,fontSize:15,color:'#4ADE80',marginBottom:4}}>Cambridge Challenge</div>
+            <div style={{fontSize:12,color:'rgba(255,255,255,0.5)',lineHeight:1.6}}>One question. Type your answer. Get marked in real time. See exactly which marks you earned.</div>
+          </a>
+        </div>
+      </section>
 
       <section className="ft">
         <div className="sl">Why Starky</div>
