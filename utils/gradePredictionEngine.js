@@ -50,6 +50,46 @@ const GRADE_BOUNDARIES = {
     note: 'Overall combined grade. Source: Cambridge 2059 November 2021 Grade Thresholds',
   },
 
+  // ── June 2022 ──
+  pakistan_studies_s22_p1: { maxMarks: 75, A: 45, B: 36, C: 27, D: 22, E: 17, note: 'Source: Cambridge 2059 June 2022' },
+  pakistan_studies_s22_p2: { maxMarks: 75, A: 45, B: 37, C: 29, D: 23, E: 18, note: 'Source: Cambridge 2059 June 2022' },
+  pakistan_studies_s22_overall: { maxMarks: 150, 'A*': 107, A: 90, B: 73, C: 56, D: 45, E: 35, note: 'Source: Cambridge 2059 June 2022' },
+
+  // ── November 2022 ──
+  pakistan_studies_w22_p1: { maxMarks: 75, A: 46, B: 38, C: 30, D: 23, E: 15, note: 'Source: Cambridge 2059 November 2022' },
+  pakistan_studies_w22_p2: { maxMarks: 75, A: 43, B: 34, C: 26, D: 19, E: 13, note: 'Source: Cambridge 2059 November 2022' },
+  pakistan_studies_w22_overall: { maxMarks: 150, 'A*': 106, A: 89, B: 72, C: 56, D: 42, E: 28, note: 'Source: Cambridge 2059 November 2022' },
+
+  // ── June 2023 ──
+  pakistan_studies_s23_p1: { maxMarks: 75, A: 45, B: 37, C: 29, D: 23, E: 17, note: 'Source: Cambridge 2059 June 2023' },
+  pakistan_studies_s23_p2: { maxMarks: 75, A: 46, B: 37, C: 28, D: 23, E: 18, note: 'Source: Cambridge 2059 June 2023' },
+  pakistan_studies_s23_overall: { maxMarks: 150, 'A*': 108, A: 91, B: 74, C: 57, D: 46, E: 35, note: 'Source: Cambridge 2059 June 2023' },
+
+  // ── November 2023 ──
+  pakistan_studies_w23_p1: { maxMarks: 75, A: 46, B: 37, C: 28, D: 22, E: 16, note: 'Source: Cambridge 2059 November 2023' },
+  pakistan_studies_w23_p2: { maxMarks: 75, A: 45, B: 36, C: 27, D: 22, E: 17, note: 'Source: Cambridge 2059 November 2023' },
+  pakistan_studies_w23_overall: { maxMarks: 150, 'A*': 109, A: 91, B: 73, C: 55, D: 44, E: 33, note: 'Source: Cambridge 2059 November 2023' },
+
+  // ── June 2024 ──
+  pakistan_studies_s24_p1: { maxMarks: 75, A: 47, B: 39, C: 32, D: 26, E: 20, note: 'Source: Cambridge 2059 June 2024' },
+  pakistan_studies_s24_p2: { maxMarks: 75, A: 47, B: 38, C: 29, D: 23, E: 18, note: 'Source: Cambridge 2059 June 2024' },
+  pakistan_studies_s24_overall: { maxMarks: 150, 'A*': 111, A: 94, B: 77, C: 61, D: 49, E: 38, note: 'Source: Cambridge 2059 June 2024' },
+
+  // ── November 2024 ──
+  pakistan_studies_w24_p1: { maxMarks: 75, A: 48, B: 40, C: 31, D: 25, E: 20, note: 'Source: Cambridge 2059 November 2024' },
+  pakistan_studies_w24_p2: { maxMarks: 75, A: 50, B: 40, C: 31, D: 26, E: 21, note: 'Source: Cambridge 2059 November 2024' },
+  pakistan_studies_w24_overall: { maxMarks: 150, 'A*': 116, A: 98, B: 80, C: 62, D: 51, E: 41, note: 'Source: Cambridge 2059 November 2024' },
+
+  // ── June 2025 ──
+  pakistan_studies_s25_p1: { maxMarks: 75, A: 44, B: 36, C: 29, D: 23, E: 18, note: 'Source: Cambridge 2059 June 2025' },
+  pakistan_studies_s25_p2: { maxMarks: 75, A: 48, B: 39, C: 30, D: 25, E: 20, note: 'Source: Cambridge 2059 June 2025' },
+  pakistan_studies_s25_overall: { maxMarks: 150, 'A*': 109, A: 92, B: 75, C: 59, D: 48, E: 38, note: 'Source: Cambridge 2059 June 2025' },
+
+  // ── November 2025 ──
+  pakistan_studies_w25_p1: { maxMarks: 75, A: 49, B: 40, C: 31, D: 26, E: 21, note: 'Source: Cambridge 2059 November 2025' },
+  pakistan_studies_w25_p2: { maxMarks: 75, A: 53, B: 44, C: 35, D: 30, E: 25, note: 'Source: Cambridge 2059 November 2025' },
+  pakistan_studies_w25_overall: { maxMarks: 150, 'A*': 120, A: 102, B: 84, C: 66, D: 56, E: 46, note: 'Source: Cambridge 2059 November 2025' },
+
 };
 
 // ── GRADE PREDICTION ──────────────────────────────────────────
