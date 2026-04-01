@@ -898,7 +898,6 @@ export default function Home() {
       <nav className="nav">
         <a href="/" className="nl">NewWorldEdu<span>★</span></a>
         <div className="nr">
-          <a href="/pricing" className="np">Plans</a>
           <button className="nh" onClick={toggleTheme} aria-label="Toggle light/dark mode" title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}>{theme === 'dark' ? '☀️' : '🌙'}</button>
           <button className="nh" onClick={() => { const next = !menuOpen; setMenuOpen(next); document.body.style.overflow = next ? 'hidden' : ''; }}>{menuOpen?'✕':'☰'}</button>
         </div>
