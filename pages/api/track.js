@@ -55,7 +55,8 @@ export default async function handler(req, res) {
 
     res.status(200).json({ ok: true });
   } catch (err) {
-    // Silent fail — never break the user experience
+    // Don't break user experience but log the failure
+    console.error('[TRACK ERROR]', err?.message || err);
     res.status(200).json({ ok: true });
   }
 }

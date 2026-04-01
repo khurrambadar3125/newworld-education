@@ -69,7 +69,7 @@ export default async function handler(req, res) {
         // Auto-fix: trigger news publishing
         try {
           const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.newworld.education';
-          await fetch(`${base}/api/cron/publish-news?secret=${process.env.CRON_SECRET}`);
+          await fetch(`${base}/api/cron/publish-news`, { headers: { 'Authorization': `Bearer ${process.env.CRON_SECRET}` } });
           results.fixes.push({ name: 'News Publishing', action: 'Triggered publish-news cron' });
         } catch {}
       } else {

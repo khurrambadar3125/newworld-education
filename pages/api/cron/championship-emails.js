@@ -40,7 +40,7 @@ async function markSent(email, key) {
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
-  if (req.headers.authorization !== `Bearer ${process.env.CRON_SECRET}`) return res.status(401).end();
+  if (process.env.CRON_SECRET && req.headers.authorization !== `Bearer ${process.env.CRON_SECRET}`) return res.status(401).end();
 
   const stats = { claimReminders48h: 0, claimReminders5d: 0, countdown7d: 0, countdown3d: 0, countdown1d: 0, freeMonthsWarning: 0, errors: 0 };
 

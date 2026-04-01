@@ -30,7 +30,7 @@ async function getBehaviour(email, event) {
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
-  if (req.headers.authorization !== `Bearer ${process.env.CRON_SECRET}`) return res.status(401).end();
+  if (process.env.CRON_SECRET && req.headers.authorization !== `Bearer ${process.env.CRON_SECRET}`) return res.status(401).end();
 
   const stats = { visited_no_join: 0, joined_no_referrals: 0, one_then_stopped: 0, almost_valid: 0, competitive_nudge: 0, errors: 0 };
 
