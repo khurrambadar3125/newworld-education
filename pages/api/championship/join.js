@@ -102,7 +102,7 @@ export default async function handler(req, res) {
         await kv.set(`championship:userschool:${email}`, school.trim());
         // Increment school points
         const schoolPts = parseInt(await kv.get(`championship:school:${normalized}`) || '0');
-        await kv.set(`championship:school:${normalized}`, schoolPts);
+        await kv.set(`championship:school:${normalized}`, schoolPts + 1);
       }
 
       // Initialise points

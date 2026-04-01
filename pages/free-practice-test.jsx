@@ -11,8 +11,8 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
-const SUBJECTS_OLEVEL = ['Biology','Chemistry','Physics','Mathematics','English Language','Economics','Computer Science','Pakistan Studies','Accounting','Business Studies'];
-const SUBJECTS_ALEVEL = ['Biology','Chemistry','Physics','Mathematics','Economics','Computer Science','English Language','Psychology','Business Studies','Accounting'];
+const SUBJECTS_OLEVEL = ['Biology','Chemistry','Physics','Mathematics','English Language','Economics','Computer Science','Pakistan Studies','Accounting','Business Studies','Geography','History','Islamiyat','Urdu','Sociology','Additional Mathematics','Statistics','Literature in English'];
+const SUBJECTS_ALEVEL = ['Biology','Chemistry','Physics','Mathematics','Economics','Computer Science','English Language','Psychology','Business Studies','Accounting','Geography','History','Sociology','Law','Further Mathematics'];
 
 export default function FreePracticeTest() {
   const [isMob, setIsMob] = useState(false);
@@ -98,34 +98,19 @@ export default function FreePracticeTest() {
       const correctOption = q.correctOption;
       let data;
       if (correctOption && q.type === 'mcq') {
+        // MCQ: DETERMINISTIC grading — NEVER trust AI for right/wrong
         const isCorrect = selectedOption === correctOption;
-        // Try AI grading for rich feedback, but fall back to local grading
-        try {
-          const res = await fetch('/api/drill', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              action: 'grade', level, subject, topic: q.topic,
-              question: q.question, studentAnswer: selectedOption,
-              questionType: 'mcq', options: q.options, marks: q.marks || 1,
-            }),
-          });
-          data = await res.json();
-          if (data.error || (!data.feedback && !data.correct && data.correct !== false)) throw new Error('bad response');
-        } catch {
-          // Local fallback grading
-          data = {
-            correct: isCorrect,
-            score: isCorrect ? 1 : 0,
-            maxScore: 1,
-            quality: isCorrect ? 4 : 1,
-            feedback: isCorrect
-              ? 'Correct! Well done.'
-              : `The correct answer is ${correctOption}: ${q.options?.[correctOption] || ''}. ${q.markSchemeHint || ''}`,
-            examinerTip: q.markSchemeHint || '',
-            modelAnswer: `${correctOption}: ${q.options?.[correctOption] || ''}`,
-          };
-        }
+        data = {
+          correct: isCorrect,
+          score: isCorrect ? 1 : 0,
+          maxScore: 1,
+          quality: isCorrect ? 4 : 1,
+          feedback: isCorrect
+            ? 'Correct! Well done.'
+            : `The correct answer is ${correctOption}: ${q.options?.[correctOption] || ''}. ${q.markSchemeHint || ''}`,
+          examinerTip: q.markSchemeHint || '',
+          modelAnswer: `${correctOption}: ${q.options?.[correctOption] || ''}`,
+        };
       } else {
         const res = await fetch('/api/drill', {
           method: 'POST',

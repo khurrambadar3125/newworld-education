@@ -123,6 +123,7 @@ ${optText}Student's answer: "${studentAnswer}"
 Marks available: ${marks || (questionType === 'mcq' ? 1 : 3)}
 
 Grade exactly as a Cambridge examiner. Be precise, fair, constructive.
+IMPORTANT: Always respond in ENGLISH. Cambridge exams require English answers. Even if the student wrote in Urdu or another language, your feedback, examiner tip, and model answer MUST be in English. You may briefly note in feedback if the student needs to answer in English.
 
 Return this JSON:
 {
@@ -130,9 +131,9 @@ Return this JSON:
   "quality": 0-5 where 0=blackout, 1=wrong, 2=partial understanding, 3=correct but incomplete, 4=correct good explanation, 5=perfect Cambridge answer,
   "score": marks awarded as integer,
   "maxScore": total marks available,
-  "feedback": "2-3 sentences — warm, specific, in Starky's voice. What they got right, what was missing, encouraging.",
-  "examinerTip": "One precise Cambridge examiner tip — the exact keyword/phrase mark schemes require for this topic",
-  "modelAnswer": "Ideal Cambridge mark scheme answer — exactly what earns full marks"
+  "feedback": "2-3 sentences IN ENGLISH — warm, specific, in Starky's voice. What they got right, what was missing, encouraging.",
+  "examinerTip": "One precise Cambridge examiner tip IN ENGLISH — the exact keyword/phrase mark schemes require for this topic",
+  "modelAnswer": "Ideal Cambridge mark scheme answer IN ENGLISH — exactly what earns full marks"
 }`;
 }
 

@@ -25,8 +25,8 @@ export default withErrorAlert(async function handler(req, res) {
       system: `You are a Cambridge ${grade || 'O Level'} examiner creating a mock exam paper for ${subject}. Generate exactly ${QUESTION_COUNT} questions that represent a real Cambridge exam. Mix question types: 4 MCQs + 6 structured questions. Each question must include marks allocation. Return ONLY valid JSON array.`,
       messages: [{
         role: 'user',
-        content: `Generate ${QUESTION_COUNT} Cambridge ${grade || 'O Level'} ${subject} mock exam questions. Return JSON array:
-[{"question":"...","type":"mcq"|"structured","marks":1-6,"options":["A","B","C","D"]|null,"correctOption":"A"|null,"topic":"...","difficulty":"easy"|"medium"|"hard","markSchemeHint":"..."}]`
+        content: `Generate ${QUESTION_COUNT} Cambridge ${grade || 'O Level'} ${subject} mock exam questions. IMPORTANT: MCQs MUST have marks:1 (always 1 mark, never more). Structured questions can have marks:2-6. Return JSON array:
+[{"question":"...","type":"mcq"|"structured","marks":"1 for MCQ, 2-6 for structured","options":{"A":"...","B":"...","C":"...","D":"..."}|null,"correctOption":"A"|null,"topic":"...","difficulty":"easy"|"medium"|"hard","markSchemeHint":"..."}]`
       }],
     });
 
@@ -36,7 +36,11 @@ export default withErrorAlert(async function handler(req, res) {
       return res.status(200).json({ questions: [], error: 'Could not generate questions' });
     }
 
-    const questions = JSON.parse(jsonMatch[0]);
+    const questions = JSON.parse(jsonMatch[0]).map(q => ({
+      ...q,
+      // MCQs are ALWAYS 1 mark — enforce server-side
+      marks: q.type === 'mcq' ? 1 : Math.max(1, Math.min(q.marks || 3, 8)),
+    }));
     return res.status(200).json({
       questions,
       timeLimit: TIME_LIMITS[grade] || 3600,

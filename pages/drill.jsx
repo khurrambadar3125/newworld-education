@@ -241,6 +241,16 @@ export default function DrillPage() {
 
   useEffect(() => {
     try { const s = localStorage.getItem('nw_user'); if (s) setUserProfile(JSON.parse(s)); } catch {}
+    // Restore last drill settings (so student doesn't re-pick mode/level/subject every time)
+    try {
+      const saved = localStorage.getItem('nw_drill_prefs');
+      if (saved) {
+        const prefs = JSON.parse(saved);
+        if (prefs.mode) setMode(prefs.mode);
+        if (prefs.level) setLevel(prefs.level);
+        if (prefs.subject) setSubject(prefs.subject);
+      }
+    } catch {}
     // Read URL query params for summer track context
     const q = router.query;
     if (q.subject && !subject) setSubject(decodeURIComponent(q.subject));
@@ -398,6 +408,8 @@ export default function DrillPage() {
       return;
     }
     if (!subject || !topic) return;
+    // Save drill preferences so student doesn't re-pick every time
+    try { localStorage.setItem('nw_drill_prefs', JSON.stringify({ mode, level, subject })); } catch {}
     setSessionResults([]); setQuestionNum(0); setLiveScore(0); setLiveMax(0); setCombo(0);
     setPhase('drilling');
     setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
@@ -411,9 +423,33 @@ export default function DrillPage() {
     if (!answer && !forceSubmit) return;
     setLoading(true);
     try {
-      const res = await fetch('/api/drill', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ action:'grade', level, subject, topic:question.topic||topic, question:question.question, studentAnswer:answer||'(no answer — time ran out)', questionType:question.type, options:question.options, marks:question.marks }) });
       let data;
-      try { data = await res.json(); } catch { throw new Error('Invalid response'); }
+
+      // ── MCQ: DETERMINISTIC grading — never trust AI for right/wrong ─────
+      if (question.type === 'mcq' && question.correctOption) {
+        const isCorrect = answer === question.correctOption;
+        // Still ask AI for feedback text, but OVERRIDE the correct/score fields
+        try {
+          const res = await fetch('/api/drill', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ action:'grade', level, subject, topic:question.topic||topic, question:question.question, studentAnswer:answer||'(no answer — time ran out)', questionType:'mcq', options:question.options, marks:1 }) });
+          data = await res.json();
+        } catch {
+          data = {};
+        }
+        // OVERRIDE AI's correct/incorrect judgment with deterministic check
+        data.correct = isCorrect;
+        data.score = isCorrect ? 1 : 0;
+        data.maxScore = 1;
+        if (!isCorrect) {
+          data.feedback = data.feedback || `The correct answer is ${question.correctOption}: ${question.options?.[question.correctOption] || ''}. ${question.markSchemeHint || ''}`;
+          data.modelAnswer = `${question.correctOption}: ${question.options?.[question.correctOption] || ''}`;
+        }
+      }
+      // ── Structured: AI grading (partial credit makes sense here) ────────
+      else {
+        const res = await fetch('/api/drill', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ action:'grade', level, subject, topic:question.topic||topic, question:question.question, studentAnswer:answer||'(no answer — time ran out)', questionType:question.type, options:question.options, marks:question.marks }) });
+        try { data = await res.json(); } catch { throw new Error('Invalid response'); }
+      }
+
       setFeedback(data);
       setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
       const t = question.topic || topic;
@@ -544,12 +580,12 @@ export default function DrillPage() {
           {!mode && (
             <div style={{display:'flex',flexDirection:'column',gap:12,marginBottom:16}}>
               <button onClick={() => setMode('young')} style={{background:'rgba(255,179,71,0.08)',border:'2px solid rgba(255,179,71,0.3)',borderRadius:18,padding:'20px 18px',cursor:'pointer',textAlign:'left'}}>
-                <div style={{fontSize:26,marginBottom:6}}>🌟 Adventure Mode</div>
+                <div style={{fontSize:26,marginBottom:6,color:'#fff'}}>🌟 Adventure Mode</div>
                 <div style={{fontWeight:800,fontSize:15,color:'#FFB347',marginBottom:4}}>KG — Grade 9</div>
                 <div style={{fontSize:13,color:'rgba(255,255,255,0.5)',lineHeight:1.6}}>Fun questions, no pressure, lots of encouragement. Ages 3–14.</div>
               </button>
               <button onClick={() => setMode('exam')} style={{background:'rgba(79,142,247,0.08)',border:'2px solid rgba(79,142,247,0.3)',borderRadius:18,padding:'20px 18px',cursor:'pointer',textAlign:'left'}}>
-                <div style={{fontSize:26,marginBottom:6}}>🎓 Exam Mode</div>
+                <div style={{fontSize:26,marginBottom:6,color:'#fff'}}>🎓 Exam Mode</div>
                 <div style={{fontWeight:800,fontSize:15,color:'#4F8EF7',marginBottom:4}}>O Level — A Level</div>
                 <div style={{fontSize:13,color:'rgba(255,255,255,0.5)',lineHeight:1.6}}>Cambridge-style questions, timer, mark schemes, examiner tips.</div>
               </button>
