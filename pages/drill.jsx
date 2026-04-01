@@ -259,6 +259,9 @@ export default function DrillPage() {
   const topics = subject ? getTopics(subject) : [];
   const dueTopics = subject ? sr.getDueTopics(subject) : [];
 
+  // Track which question IDs have been served this session (avoid repeats)
+  const [servedBankIds, setServedBankIds] = useState([]);
+
   // ── Generate question ────────────────────────────────────────────────────────
   const generateQuestion = useCallback(async (targetTopic, imageData) => {
     setLoading(true); setError(''); setFeedback(null);
@@ -274,6 +277,32 @@ export default function DrillPage() {
     if (type === 'mixed') type = questionNum % 2 === 0 ? 'mcq' : 'structured';
 
     try {
+      // ── Question Bank first (skip for image uploads and special contexts) ──
+      if (!imageData && !urlContext && mode !== 'young') {
+        try {
+          const bankRes = await fetch('/api/question-bank/serve', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              subject, level, topic: t, difficulty,
+              type, curriculum: 'cambridge', excludeIds: servedBankIds,
+            }),
+          });
+          if (bankRes.ok) {
+            const bankData = await bankRes.json();
+            if (bankData && bankData.question) {
+              if (bankData._bankId) setServedBankIds(prev => [...prev, bankData._bankId]);
+              setQuestion(bankData);
+              setLoading(false);
+              return;
+            }
+          }
+        } catch {
+          // Question bank unavailable — fall through to direct AI generation
+        }
+      }
+
+      // ── Fallback: direct AI generation via /api/drill ──────────────────────
       const body = { action:'generate', level, subject, topic:t, difficulty, questionType:type };
       if (urlContext) body.context = urlContext;
       if (imageData) { body.imageBase64 = imageData.base64; body.imageType = imageData.type; }
@@ -284,7 +313,7 @@ export default function DrillPage() {
       setQuestion(data);
     } catch { setError('Failed to generate question. Please try again.'); }
     finally { setLoading(false); }
-  }, [level, subject, topic, difficulty, questionType, questionNum]);
+  }, [level, subject, topic, difficulty, questionType, questionNum, mode, urlContext, servedBankIds]);
 
   // ── Get hint ─────────────────────────────────────────────────────────────────
   const getHint = async () => {
@@ -397,6 +426,16 @@ export default function DrillPage() {
         const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
         recordDrillSignal({ email: profile.email || 'anonymous', subject, topic: t, score: data.score || 0, maxScore: data.maxScore || 1, timePerQuestion: 0, hintsUsed: hint ? 1 : 0, completed: true });
       } catch {}
+      // Question bank — record performance for quality scoring
+      if (question._bankId) {
+        try {
+          fetch('/api/question-bank/record', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ questionId: question._bankId, score: data.score || 0, maxScore: data.maxScore || 1 }),
+          });
+        } catch {}
+      }
       setLiveScore(s => s + (data.score || 0));
       setLiveMax(m => m + (data.maxScore || 1));
       setCombo(c => {
