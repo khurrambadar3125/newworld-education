@@ -11,6 +11,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { getKnowledgeForTopic } from '../../utils/getKnowledgeForTopic';
 import { withErrorAlert } from '../../utils/errorAlert';
+import { getRandomQuestion, toClientFormat } from '../../utils/questionBank';
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 25000 });
 
@@ -199,6 +200,40 @@ export default withErrorAlert(async function handler(req, res) {
     let messages;
 
     if (action === 'generate') {
+      // ── VERIFIED BANK FIRST — no AI hallucinations for O/A Level ──
+      // Try serving from the verified question bank before AI generation
+      if (!isYoungLearner(params.level) && !params.imageBase64) {
+        try {
+          const bankQ = await getRandomQuestion({
+            subject: params.subject,
+            level: params.level || 'O Level',
+            topic: params.topic || undefined,
+            type: params.questionType || undefined,
+            curriculum: 'cambridge',
+            excludeIds: params.excludeIds || [],
+          });
+          if (bankQ) {
+            const formatted = toClientFormat(bankQ);
+            return res.status(200).json({ ...formatted, _source: 'verified_bank', _bankId: bankQ.id });
+          }
+          // If no topic match, try without topic filter (broader search)
+          if (params.topic) {
+            const broaderQ = await getRandomQuestion({
+              subject: params.subject,
+              level: params.level || 'O Level',
+              curriculum: 'cambridge',
+              excludeIds: params.excludeIds || [],
+            });
+            if (broaderQ) {
+              const formatted = toClientFormat(broaderQ);
+              return res.status(200).json({ ...formatted, _source: 'verified_bank', _bankId: broaderQ.id });
+            }
+          }
+        } catch (bankErr) {
+          console.error('[DRILL] Bank fetch failed, falling back to AI:', bankErr.message);
+        }
+      }
+      // ── AI fallback — only if bank has no matching questions ──
       prompt = buildGeneratePrompt(params);
       systemPrompt = isYoungLearner(params.level) ? SYSTEM_YOUNG : SYSTEM;
       // Add context-specific system prompt for UAE tracks

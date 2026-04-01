@@ -1,10 +1,12 @@
 /**
  * /api/mocks/generate — Generate a timed mock paper for a subject
- * Uses Claude Haiku to generate exam-style questions
+ * VERIFIED BANK FIRST: pulls from real Cambridge past papers.
+ * AI fallback only if bank doesn't have enough questions.
  */
 
 import Anthropic from '@anthropic-ai/sdk';
 import { withErrorAlert } from '../../../utils/errorAlert';
+import { fetchQuestions, toClientFormat } from '../../../utils/questionBank';
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 30000 });
 
@@ -19,34 +21,81 @@ export default withErrorAlert(async function handler(req, res) {
   if (!subject) return res.status(400).json({ error: 'Subject required' });
 
   try {
+    // ── STEP 1: Try verified question bank first ──────────────────
+    let bankQuestions = [];
+    try {
+      // Fetch a larger pool and randomly sample for variety
+      const pool = await fetchQuestions({
+        subject,
+        level: grade || 'O Level',
+        curriculum: 'cambridge',
+        limit: 50,
+      });
+      if (pool.length >= QUESTION_COUNT) {
+        // Shuffle and pick QUESTION_COUNT
+        const shuffled = pool.sort(() => Math.random() - 0.5);
+        bankQuestions = shuffled.slice(0, QUESTION_COUNT).map(q => ({
+          ...toClientFormat(q),
+          marks: q.type === 'mcq' ? 1 : Math.max(1, Math.min(q.marks || 3, 8)),
+        }));
+      } else if (pool.length > 0) {
+        // Use what we have from the bank
+        bankQuestions = pool.map(q => ({
+          ...toClientFormat(q),
+          marks: q.type === 'mcq' ? 1 : Math.max(1, Math.min(q.marks || 3, 8)),
+        }));
+      }
+    } catch (bankErr) {
+      console.error('[mocks/generate] Bank fetch failed:', bankErr.message);
+    }
+
+    // If bank has enough questions, serve them directly — no AI needed
+    if (bankQuestions.length >= QUESTION_COUNT) {
+      return res.status(200).json({
+        questions: bankQuestions,
+        timeLimit: TIME_LIMITS[grade] || 3600,
+        subject,
+        grade,
+        generatedAt: new Date().toISOString(),
+        _source: 'verified_bank',
+        _bankCount: bankQuestions.length,
+      });
+    }
+
+    // ── STEP 2: AI fallback for remaining questions ──────────────
+    const needed = QUESTION_COUNT - bankQuestions.length;
     const response = await client.messages.create({
       model: /* PERMANENT: Haiku only */ 'claude-3-haiku-20240307',
       max_tokens: 2000,
-      system: `You are a Cambridge ${grade || 'O Level'} examiner creating a mock exam paper for ${subject}. Generate exactly ${QUESTION_COUNT} questions that represent a real Cambridge exam. Mix question types: 4 MCQs + 6 structured questions. Each question must include marks allocation. Return ONLY valid JSON array.`,
+      system: `You are a Cambridge ${grade || 'O Level'} examiner creating a mock exam paper for ${subject}. Generate exactly ${needed} questions that represent a real Cambridge exam. Mix question types: MCQs and structured questions. Each question must include marks allocation. Return ONLY valid JSON array.`,
       messages: [{
         role: 'user',
-        content: `Generate ${QUESTION_COUNT} Cambridge ${grade || 'O Level'} ${subject} mock exam questions. IMPORTANT: MCQs MUST have marks:1 (always 1 mark, never more). Structured questions can have marks:2-6. Return JSON array:
+        content: `Generate ${needed} Cambridge ${grade || 'O Level'} ${subject} mock exam questions. IMPORTANT: MCQs MUST have marks:1 (always 1 mark, never more). Structured questions can have marks:2-6. Return JSON array:
 [{"question":"...","type":"mcq"|"structured","marks":"1 for MCQ, 2-6 for structured","options":{"A":"...","B":"...","C":"...","D":"..."}|null,"correctOption":"A"|null,"topic":"...","difficulty":"easy"|"medium"|"hard","markSchemeHint":"..."}]`
       }],
     });
 
     const text = response.content?.[0]?.text || '';
     const jsonMatch = text.match(/\[[\s\S]*\]/);
-    if (!jsonMatch) {
-      return res.status(200).json({ questions: [], error: 'Could not generate questions' });
+    let aiQuestions = [];
+    if (jsonMatch) {
+      aiQuestions = JSON.parse(jsonMatch[0]).map(q => ({
+        ...q,
+        marks: q.type === 'mcq' ? 1 : Math.max(1, Math.min(q.marks || 3, 8)),
+        _source: 'ai_generated',
+      }));
     }
 
-    const questions = JSON.parse(jsonMatch[0]).map(q => ({
-      ...q,
-      // MCQs are ALWAYS 1 mark — enforce server-side
-      marks: q.type === 'mcq' ? 1 : Math.max(1, Math.min(q.marks || 3, 8)),
-    }));
+    const allQuestions = [...bankQuestions, ...aiQuestions];
     return res.status(200).json({
-      questions,
+      questions: allQuestions,
       timeLimit: TIME_LIMITS[grade] || 3600,
       subject,
       grade,
       generatedAt: new Date().toISOString(),
+      _source: bankQuestions.length > 0 ? 'mixed' : 'ai_generated',
+      _bankCount: bankQuestions.length,
+      _aiCount: aiQuestions.length,
     });
   } catch (err) {
     console.error('[mocks/generate] Error:', err.message);
