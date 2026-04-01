@@ -51,6 +51,29 @@ function enforceMarks(type, marks) {
   return Math.max(1, Math.min(marks || 3, 12));
 }
 
+// ── MCQ verification — second AI pass to confirm correct answer ──
+let _verifyClient = null;
+export async function verifyMCQ(questionText, options, claimedCorrect) {
+  if (!process.env.ANTHROPIC_API_KEY) return { verified: true }; // Skip if no key
+  try {
+    if (!_verifyClient) {
+      const Anthropic = (await import('@anthropic-ai/sdk')).default;
+      _verifyClient = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 10000 });
+    }
+    const response = await _verifyClient.messages.create({
+      model: 'claude-3-haiku-20240307',
+      max_tokens: 50,
+      system: 'You verify MCQ answers. Return ONLY one letter: A, B, C, or D. Nothing else.',
+      messages: [{ role: 'user', content: `${questionText}\nA: ${options.A}\nB: ${options.B}\nC: ${options.C}\nD: ${options.D}\nWhich is correct?` }],
+    });
+    const answer = response.content[0].text.trim().charAt(0);
+    if (!['A', 'B', 'C', 'D'].includes(answer)) return { verified: true }; // Can't parse, allow
+    return { verified: answer === claimedCorrect, aiAnswer: answer };
+  } catch {
+    return { verified: true }; // Network error, allow through
+  }
+}
+
 // ── Save a question to the bank ──────────────────────────────────
 export async function saveQuestion({
   subject, level, topic, difficulty = 'medium', type = 'mcq',
@@ -63,6 +86,15 @@ export async function saveQuestion({
   // Quality gate: reject bad questions
   const validationError = validateQuestion(questionText, type, options, correctAnswer);
   if (validationError) return { saved: false, reason: validationError };
+
+  // MCQ verification: second AI pass confirms the correct answer
+  if (type === 'mcq' && options && correctAnswer) {
+    const { verified, aiAnswer } = await verifyMCQ(questionText, options, correctAnswer);
+    if (!verified) {
+      console.log(`[QuestionBank] MCQ REJECTED — claimed ${correctAnswer} but verified ${aiAnswer}: ${questionText.slice(0, 60)}`);
+      return { saved: false, reason: `MCQ answer mismatch: claimed ${correctAnswer}, verified ${aiAnswer}` };
+    }
+  }
 
   // Deduplicate: skip if near-identical question exists
   const isDupe = await isDuplicate(subject, topic, questionText);
