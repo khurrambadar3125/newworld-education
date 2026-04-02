@@ -119,8 +119,8 @@ async function parseQuestions(qpText, msText, subject, level) {
       'anthropic-version': '2023-06-01',
     },
     body: JSON.stringify({
-      model: 'claude-3-haiku-20240307',
-      max_tokens: 4096,
+      model: 'claude-sonnet-4-20250514', // Admin tool only — Khurram's uploads. Students use Haiku.
+      max_tokens: 8192,
       system: `You extract Cambridge exam questions from past papers. You are given:
 1. The QUESTION PAPER text (all questions)
 2. The MARK SCHEME text (all correct answers)
