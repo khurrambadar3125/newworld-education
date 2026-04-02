@@ -42,6 +42,8 @@ const CODES = {
   '9609':'Business','9618':'Computer Science','9702':'Physics','9701':'Chemistry','9700':'Biology','9706':'Accounting','9709':'Mathematics','9990':'Psychology',
   '9706':'Accounting','9708':'Economics','9618':'Computer Science','9990':'Psychology',
   '9093':'English Language','9084':'Law','9696':'Geography','9489':'History',
+  '9699':'Sociology','9389':'History','9479':'Art & Design',
+  '9231':'Further Mathematics','9695':'Literature in English',
 };
 
 // ── Classify file type from name ──────────────────────────────────
@@ -162,45 +164,64 @@ Extract ALL questions as a JSON array. Be concise — keep text short:
   return JSON.parse(raw);
 }
 
-// ── Save to Supabase ──────────────────────────────────────
+// ── Save to Supabase (with retry on connection errors) ──────────────────────
 async function saveToSupabase(questions) {
   let saved = 0, errors = 0;
 
   for (const q of questions) {
     if (!q.verified) continue;
 
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/question_bank`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'apikey': SUPABASE_SECRET_KEY,
-        'Authorization': `Bearer ${SUPABASE_SECRET_KEY}`,
-        'Prefer': 'return=minimal',
-      },
-      body: JSON.stringify({
-        subject: q.subject,
-        level: q.level,
-        topic: q.topic || 'General',
-        difficulty: 'medium',
-        type: q.type || 'mcq',
-        curriculum: 'cambridge',
-        question_text: q.question,
-        options: q.options || null,
-        correct_answer: q.correctAnswer || '',
-        mark_scheme: q.type === 'mcq' ? null : q.correctAnswer,
-        marks: q.type === 'mcq' ? 1 : (q.marks || 1),
-        command_word: null,
-        source: 'past_paper',
-        verified: true,
-      }),
-    });
+    const row = {
+      subject: q.subject,
+      level: q.level,
+      topic: q.topic || 'General',
+      difficulty: 'medium',
+      type: q.type || 'mcq',
+      curriculum: 'cambridge',
+      question_text: q.question,
+      options: q.options || null,
+      correct_answer: q.correctAnswer || '',
+      mark_scheme: q.type === 'mcq' ? null : q.correctAnswer,
+      marks: q.type === 'mcq' ? 1 : (q.marks || 1),
+      command_word: null,
+      source: 'past_paper',
+      verified: true,
+    };
+    // Add session/paper for Exam Compass if available
+    if (q.session) row.session = q.session;
+    if (q.paper) row.paper = q.paper;
+    const body = JSON.stringify(row);
 
-    if (!res.ok) {
-      const err = await res.text();
-      console.error(`  Save error: ${err.slice(0, 100)}`);
-      errors++;
-    } else {
-      saved++;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        const res = await fetch(`${SUPABASE_URL}/rest/v1/question_bank`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'apikey': SUPABASE_SECRET_KEY,
+            'Authorization': `Bearer ${SUPABASE_SECRET_KEY}`,
+            'Prefer': 'return=minimal',
+          },
+          body,
+        });
+
+        if (!res.ok) {
+          const err = await res.text();
+          console.error(`  Save error: ${err.slice(0, 100)}`);
+          errors++;
+        } else {
+          saved++;
+        }
+        break; // success or non-retryable error
+      } catch (fetchErr) {
+        if (attempt < 2) {
+          console.log(`  Connection error, retrying in ${(attempt + 1) * 3}s...`);
+          await new Promise(r => setTimeout(r, (attempt + 1) * 3000));
+        } else {
+          console.error(`  Save failed after 3 attempts: ${fetchErr.message}`);
+          errors++;
+        }
+      }
     }
   }
 
@@ -256,6 +277,7 @@ async function main() {
   let totalSaved = 0;
 
   for (const pair of pairs) {
+   try {
     const qp = pair.qps[0]; // Use first QP file
     const ms = pair.ms;
     console.log(`--- ${qp.name} + ${ms.name} ---`);
@@ -272,7 +294,7 @@ async function main() {
     const meta = detectMetadata(qpResult.text, qp.name);
     console.log(`  Detected: ${meta.subject} | ${meta.level} | Paper ${meta.paper} | ${meta.session}`);
 
-    // Parse questions (with retry on overload)
+    // Parse questions (with retry on overload + connection errors)
     console.log('  Extracting questions with Claude...');
     let questions;
     for (let attempt = 0; attempt < 3; attempt++) {
@@ -280,8 +302,8 @@ async function main() {
         questions = await parseQuestions(qpResult.text, msResult.text, meta.subject, meta.level);
         break;
       } catch (err) {
-        if (err.message.includes('Overloaded') && attempt < 2) {
-          console.log(`  API overloaded, waiting ${(attempt + 1) * 5}s before retry...`);
+        if (attempt < 2 && (err.message.includes('Overloaded') || err.message.includes('fetch failed') || err.message.includes('ECONNRESET') || err.message.includes('TIMEOUT'))) {
+          console.log(`  Error: ${err.message.slice(0, 60)}, retrying in ${(attempt + 1) * 5}s...`);
           await new Promise(r => setTimeout(r, (attempt + 1) * 5000));
           continue;
         }
@@ -307,6 +329,8 @@ async function main() {
       verified: true, // official Cambridge paper = always verified
       subject: meta.subject,
       level: meta.level,
+      session: meta.session !== 'Unknown' ? meta.session : null,
+      paper: meta.paper !== 'Unknown' ? meta.paper : null,
       marks: q.type === 'mcq' ? 1 : (q.marks || 1),
     }));
 
@@ -315,6 +339,9 @@ async function main() {
     const { saved, errors } = await saveToSupabase(tagged);
     console.log(`  SAVED: ${saved} questions${errors > 0 ? ` | Errors: ${errors}` : ''}\n`);
     totalSaved += saved;
+   } catch (paperErr) {
+    console.error(`  PAPER ERROR: ${paperErr.message.slice(0, 80)} — skipping, continuing...\n`);
+   }
   }
 
   console.log(`\n=== TOTAL: ${totalSaved} questions saved from ${pairs.length} papers ===\n`);

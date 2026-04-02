@@ -12,6 +12,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { getRandomQuestion, saveQuestion, toClientFormat } from '../../../utils/questionBank';
 import { getKnowledgeForTopic } from '../../../utils/getKnowledgeForTopic';
+import { checkRateLimit } from '../../../utils/rateLimit';
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 25000 });
 

@@ -404,22 +404,38 @@ export default function DrillPage() {
     try {
       let data;
 
-      // ── MCQ: DETERMINISTIC grading — never trust AI for right/wrong ─────
-      if (question.type === 'mcq' && question.correctOption) {
+      // ── MCQ: SERVER-SIDE grading — answer never sent to client ─────
+      if (question.type === 'mcq' && question._bankId) {
+        try {
+          const gradeRes = await fetch('/api/question-bank/grade', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ bankId: question._bankId, answer: answer || '' }) });
+          const gradeData = await gradeRes.json();
+          data = {
+            correct: gradeData.correct,
+            score: gradeData.correct ? 1 : 0,
+            maxScore: 1,
+            feedback: gradeData.feedback || (gradeData.correct ? 'Correct!' : 'Incorrect'),
+            modelAnswer: gradeData.modelAnswer || gradeData.correctAnswer,
+            markSchemeHint: gradeData.markSchemeHint,
+          };
+        } catch {
+          // If grade API fails, show neutral message — never guess
+          data = { correct: null, score: 0, maxScore: 1, feedback: 'Could not verify answer. Please try again.', modelAnswer: '' };
+        }
+      }
+      // ── MCQ: AI-generated (no bankId) — client fallback ─────
+      else if (question.type === 'mcq' && question.correctOption) {
         const isCorrect = answer === question.correctOption;
-        // Still ask AI for feedback text, but OVERRIDE the correct/score fields
         try {
           const res = await fetch('/api/drill', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ action:'grade', level, subject, topic:question.topic||topic, question:question.question, studentAnswer:answer||'(no answer — time ran out)', questionType:'mcq', options:question.options, marks:1 }) });
           data = await res.json();
         } catch {
           data = {};
         }
-        // OVERRIDE AI's correct/incorrect judgment with deterministic check
         data.correct = isCorrect;
         data.score = isCorrect ? 1 : 0;
         data.maxScore = 1;
         if (!isCorrect) {
-          data.feedback = data.feedback || `The correct answer is ${question.correctOption}: ${question.options?.[question.correctOption] || ''}. ${question.markSchemeHint || ''}`;
+          data.feedback = data.feedback || `The correct answer is ${question.correctOption}: ${question.options?.[question.correctOption] || ''}`;
           data.modelAnswer = `${question.correctOption}: ${question.options?.[question.correctOption] || ''}`;
         }
       }
@@ -451,6 +467,12 @@ export default function DrillPage() {
           });
         } catch {}
       }
+      // Mastery tracking — feed every answer into the learning engine
+      fetch('/api/study-plan', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'record', questionId: question._bankId || null, subject, level, topic: t, correct: !!data.correct }),
+      }).catch(() => {}); // Silent fail OK — mastery is secondary to drill experience
       setLiveScore(s => s + (data.score || 0));
       setLiveMax(m => m + (data.maxScore || 1));
       setCombo(c => {
@@ -877,7 +899,8 @@ export default function DrillPage() {
                   <div style={{display:'flex', flexDirection:'column', gap:8, marginBottom:16}}>
                     {Object.entries(question.options).map(([key, val]) => {
                       const isSelected = selectedOption===key;
-                      const isCorrect = key===question.correctOption;
+                      const correctKey = question.correctOption || (feedback.modelAnswer || '').charAt(0);
+                      const isCorrect = key===correctKey;
                       let bg='rgba(255,255,255,.03)', border='rgba(255,255,255,.06)', color='rgba(255,255,255,.4)';
                       if (isCorrect) { bg='rgba(74,222,128,.1)'; border='rgba(74,222,128,.35)'; color='#4ADE80'; }
                       if (isSelected && !isCorrect) { bg='rgba(248,113,113,.1)'; border='rgba(248,113,113,.35)'; color='#F87171'; }

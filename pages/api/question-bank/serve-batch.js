@@ -10,9 +10,14 @@
  */
 
 import { fetchQuestions, toClientFormat } from '../../../utils/questionBank';
+import { checkRateLimit } from '../../../utils/rateLimit';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
+
+  const { ok, remaining } = await checkRateLimit(req, 200);
+  res.setHeader('X-RateLimit-Remaining', remaining);
+  if (!ok) return res.status(429).json({ error: 'Rate limit exceeded. Try again later.' });
 
   const {
     subject, level = 'O Level', limit = 10,

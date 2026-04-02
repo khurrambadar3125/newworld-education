@@ -80,7 +80,7 @@ export default function ChallengePage() {
               topic: q.topic || 'General',
               type: q.type,
               options: q.options,
-              correctOption: q.correctOption,
+              _bankId: q._bankId,
               _source: 'verified_bank',
             }));
             const s = bankChallenges.sort(() => Math.random() - 0.5);

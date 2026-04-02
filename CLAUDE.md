@@ -455,34 +455,252 @@ npm run lint     # ESLint
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Session Snapshot (auto-updated)
 <!-- This section is auto-updated by .claude/update-claude-md.sh Stop hook -->
-<!-- Last sync: 2026-04-01 11:56 -->
+<!-- Last sync: 2026-04-03 01:16 -->
 
-**Platform counts**: 54 pages, 77 utils, 73 API routes, 8 components, 23 cron jobs
+**Platform counts**: 60 pages, 84 utils, 88 API routes, 8 components, 25 cron jobs
 
-**All pages**: _app,arts,arts-for-all,challenge,championship,contact,countdown,dashboard,demo,drill,essay,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,login,mocks,music,music-for-all,nano,news,nixor,our-results,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,responsible-ai,school,sing,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,voice-lab,zayd-mode
+**All pages**: _app,arts,arts-for-all,challenge,championship,contact,countdown,dashboard,demo,drill,essay,exam-compass,free-practice-test,garageschool,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,learn,login,mocks,music,music-for-all,nano,news,nixor,nixordemo,our-results,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,responsible-ai,school,sing,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,upload-papers,voice-lab,zayd-mode
 
-**All utils**: academicExcellence,americanCurriculumKB,analytics,apiAuth,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeDialectKB,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,commandWordEngine,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,errorAlert,examinerReportsKB,extendedResponseKB,getKnowledgeForTopic,globalKnowledgeBase,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,kbWishlist,literatureArabicKB,markSchemeKB,motherTongue,notify,outcomeTrackingKB,patternEngine,phonicsKB,physicsAtomsOLevel,platformLearningEngine,practiceKB,productGate,readingKnowledge,realtimeLearning,responsibleAIPolicy,saturdayFreeLogic,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,singingGoalsKB,singingKB,starkyAtomsKB,starkyIntents,starkyPrompt,summerKnowledge,supabase,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,youngLearnerKB
+**All utils**: academicExcellence,americanCurriculumKB,analytics,apiAuth,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeDialectKB,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,commandWordEngine,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,errorAlert,examCompassEngine,examinerReportsKB,extendedResponseKB,getKnowledgeForTopic,globalKnowledgeBase,gradePredictionEngine,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,kbWishlist,literatureArabicKB,markSchemeKB,masteryEngine,motherTongue,notify,outcomeTrackingKB,patternEngine,phonicsKB,physicsAtomsOLevel,platformLearningEngine,practiceKB,productGate,questionBank,rateLimit,readingKnowledge,realtimeLearning,responsibleAIPolicy,saturdayFreeLogic,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,singingGoalsKB,singingKB,spacedRepEngine,starkyAtomsKB,starkyIntents,starkyPrompt,studyPlanEngine,summerKnowledge,supabase,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,youngLearnerKB
 
 **Last 10 commits**:
 ```
-b5cd730 Restructure Nav: student-first priority, Plans removed from top bar
-b285437 Add Learning Tools section + group subjects + Skip button on landing page
-3a7981c Remove Plans button from landing page header — reduce friction for students
-69a8985 Build real-time per-message learning loop + fix Nano pacing
-b7aa789 Remove unverified per-subject exam dates — only use verified series window
-1ea22e9 Inject subject-specific Cambridge exam dates — Zone 4 Pakistan timetable
-a4c5b90 Fix chat scroll position + inject authoritative exam dates
-c8e31db Fix Nano auto-send: bypass sendMessage entirely, use direct fetch
-d1260fb Add visible error details to Starky busy message for debugging
-ea9ecc5 Fix Nano auto-send: call sendMessage directly instead of simulated button click
+e0fcf75 Add Psychology 9990 code — 18,842 verified questions across 18 subjects
+1050df8 Add A Level codes: Business 9609, CS 9618, Accounting 9706
+70c392a Switch upload scripts to Sonnet — admin tool, better accuracy + 8K tokens
+32e6049 Fix API overload — add retry with backoff + 2s delay between papers
+2c161c8 Add 5 new subjects + process Desktop backlog — massive expansion
+3760e46 Add Accounting 7707 — 207 questions from 4 sessions
+4a745d8 Fix build — CHALLENGES renamed to FALLBACK_CHALLENGES, missed one reference
+6aa210f Add nixordemo page — replaces obsolete spotlightdubai version
+a3196dd Add Computer Science 2210 — 357 questions from 6 sessions
+b3c3e11 Add Commerce 7100 — 407 questions from 6 sessions
 ```
 
 **Files changed in last commit**:
 ```
-components/Nav.jsx
+scripts/upload-papers.mjs
 ```
 
 **Uncommitted changes**: CLAUDE.md
-**Untracked files**: none
+pages/api/auth/[...nextauth].js
+pages/api/question-bank/serve-batch.js
+pages/api/question-bank/serve.js
+pages/challenge.jsx
+pages/drill.jsx
+pages/free-practice-test.jsx
+scripts/upload-papers.mjs
+utils/questionBank.js
+**Untracked files**: .env.vercel
+pages/api/exam-compass.js
+pages/api/question-bank/grade.js
+pages/api/study-plan.js
+pages/api/todays-plan.js
+pages/exam-compass.jsx
+pages/learn.jsx
+scripts/backfill-sessions.mjs
+scripts/extract-sat-books.mjs
+utils/examCompassEngine.js
+utils/masteryEngine.js
+utils/rateLimit.js
+utils/spacedRepEngine.js
+utils/studyPlanEngine.js

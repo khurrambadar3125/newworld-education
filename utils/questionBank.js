@@ -353,18 +353,40 @@ export async function findThinTopics({ minQuestions = 10, curriculum = 'cambridg
   return thin.sort((a, b) => a.count - b.count);
 }
 
-// ── Convert DB row to drill.jsx format ───────────────────────────
+// ── Convert DB row to drill.jsx format (answers stripped for security) ────────
 export function toClientFormat(dbRow) {
   return {
     _bankId: dbRow.id,
     question: dbRow.question_text,
     type: dbRow.type,
     options: dbRow.options || undefined,
-    correctOption: dbRow.type === 'mcq' ? dbRow.correct_answer : undefined,
+    // correctOption and markSchemeHint NOT sent — grade server-side via /api/question-bank/grade
     topic: dbRow.topic,
     difficulty: dbRow.difficulty,
     marks: dbRow.marks,
-    markSchemeHint: dbRow.mark_scheme || dbRow.correct_answer,
+  };
+}
+
+// ── Grade MCQ server-side by bank ID ─────────────────────────────────────────
+export async function gradeByBankId(bankId, studentAnswer) {
+  if (!bankId || !studentAnswer) return { correct: false, error: 'Missing bankId or answer' };
+  const supabase = getSupabase();
+  const { data, error } = await supabase
+    .from('question_bank')
+    .select('correct_answer, mark_scheme, type, options, question_text')
+    .eq('id', bankId)
+    .single();
+  if (error || !data) return { correct: false, error: 'Question not found' };
+
+  const correct = data.type === 'mcq'
+    ? studentAnswer.trim().toUpperCase() === (data.correct_answer || '').trim().toUpperCase()
+    : null; // structured questions graded by AI in drill.js
+
+  return {
+    correct,
+    correctAnswer: data.correct_answer,
+    markSchemeHint: data.mark_scheme || data.correct_answer,
+    options: data.options,
   };
 }
 

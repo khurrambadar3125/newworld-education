@@ -102,23 +102,24 @@ export default function FreePracticeTest() {
     const q = questions[currentQ];
     setLoading(true);
     try {
-      // For MCQs, we can grade locally if we have the correct option
-      const correctOption = q.correctOption;
       let data;
-      if (correctOption && q.type === 'mcq') {
-        // MCQ: DETERMINISTIC grading — NEVER trust AI for right/wrong
-        const isCorrect = selectedOption === correctOption;
-        data = {
-          correct: isCorrect,
-          score: isCorrect ? 1 : 0,
-          maxScore: 1,
-          quality: isCorrect ? 4 : 1,
-          feedback: isCorrect
-            ? 'Correct! Well done.'
-            : `The correct answer is ${correctOption}: ${q.options?.[correctOption] || ''}. ${q.markSchemeHint || ''}`,
-          examinerTip: q.markSchemeHint || '',
-          modelAnswer: `${correctOption}: ${q.options?.[correctOption] || ''}`,
-        };
+      // Server-side MCQ grading for verified bank questions
+      if (q._bankId && q.type === 'mcq') {
+        try {
+          const gradeRes = await fetch('/api/question-bank/grade', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ bankId: q._bankId, answer: selectedOption }) });
+          const gradeData = await gradeRes.json();
+          data = {
+            correct: gradeData.correct,
+            score: gradeData.correct ? 1 : 0,
+            maxScore: 1,
+            quality: gradeData.correct ? 4 : 1,
+            feedback: gradeData.feedback || (gradeData.correct ? 'Correct!' : 'Incorrect'),
+            examinerTip: gradeData.markSchemeHint || '',
+            modelAnswer: gradeData.modelAnswer || gradeData.correctAnswer,
+          };
+        } catch {
+          data = { correct: null, score: 0, maxScore: 1, quality: 2, feedback: 'Could not verify answer. Please try again.', modelAnswer: '' };
+        }
       } else {
         const res = await fetch('/api/drill', {
           method: 'POST',
@@ -352,11 +353,11 @@ export default function FreePracticeTest() {
                       {Object.entries(questions[currentQ].options).map(([key, val]) => (
                         <button key={key} onClick={() => !feedback && setSelectedOption(key)} style={{
                           background: feedback
-                            ? key === (questions[currentQ].correctOption || feedback.modelAnswer)
+                            ? key === (feedback.modelAnswer || '').charAt(0)
                               ? 'rgba(74,222,128,.12)' : key === selectedOption && !feedback.correct ? 'rgba(248,113,113,.12)' : 'rgba(255,255,255,.04)'
                             : selectedOption === key ? 'rgba(79,142,247,.15)' : 'rgba(255,255,255,.04)',
                           border: `1px solid ${feedback
-                            ? key === (questions[currentQ].correctOption || feedback.modelAnswer) ? 'rgba(74,222,128,.4)' : key === selectedOption && !feedback.correct ? 'rgba(248,113,113,.4)' : 'rgba(255,255,255,.08)'
+                            ? key === (feedback.modelAnswer || '').charAt(0) ? 'rgba(74,222,128,.4)' : key === selectedOption && !feedback.correct ? 'rgba(248,113,113,.4)' : 'rgba(255,255,255,.08)'
                             : selectedOption === key ? 'rgba(79,142,247,.5)' : 'rgba(255,255,255,.08)'}`,
                           borderRadius:10, padding:'13px 16px', cursor: feedback ? 'default' : 'pointer',
                           color:'rgba(255,255,255,.8)', fontSize:14, textAlign:'left',
