@@ -364,6 +364,8 @@ export function toClientFormat(dbRow) {
     topic: dbRow.topic,
     difficulty: dbRow.difficulty,
     marks: dbRow.marks,
+    image_url: dbRow.image_url || undefined,
+    source_page: dbRow.source_page || undefined,
   };
 }
 
