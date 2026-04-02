@@ -272,15 +272,28 @@ async function main() {
     const meta = detectMetadata(qpResult.text, qp.name);
     console.log(`  Detected: ${meta.subject} | ${meta.level} | Paper ${meta.paper} | ${meta.session}`);
 
-    // Parse questions
+    // Parse questions (with retry on overload)
     console.log('  Extracting questions with Claude...');
     let questions;
-    try {
-      questions = await parseQuestions(qpResult.text, msResult.text, meta.subject, meta.level);
-    } catch (err) {
-      console.error(`  Claude error: ${err.message}`);
-      continue;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        questions = await parseQuestions(qpResult.text, msResult.text, meta.subject, meta.level);
+        break;
+      } catch (err) {
+        if (err.message.includes('Overloaded') && attempt < 2) {
+          console.log(`  API overloaded, waiting ${(attempt + 1) * 5}s before retry...`);
+          await new Promise(r => setTimeout(r, (attempt + 1) * 5000));
+          continue;
+        }
+        console.error(`  Claude error: ${err.message}`);
+        questions = null;
+        break;
+      }
     }
+    if (!questions) continue;
+
+    // Small delay between papers to avoid API rate limits
+    await new Promise(r => setTimeout(r, 2000));
 
     // These are official Cambridge papers — all questions are valid
     const aiVerified = questions.filter(q => q.verified).length;
