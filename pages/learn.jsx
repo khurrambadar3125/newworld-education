@@ -10,6 +10,11 @@ import { useState, useEffect } from 'react';
 import { useSession } from 'next-auth/react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import ProgressRing from '../components/ProgressRing';
+import StreakFlame from '../components/StreakFlame';
+import XPBar from '../components/XPBar';
+import SkillTree from '../components/SkillTree';
+import BottomNav from '../components/BottomNav';
 
 const SUBJECTS = [
   'Mathematics','Additional Mathematics','Physics','Chemistry','Biology',
@@ -204,6 +209,8 @@ export default function Learn() {
 
         </div>
       </div>
+
+      <BottomNav />
     </>
   );
 }

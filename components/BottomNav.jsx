@@ -1,0 +1,65 @@
+/**
+ * components/BottomNav.jsx — Mobile-first bottom navigation bar
+ */
+
+import { useRouter } from 'next/router';
+
+const TABS = [
+  { path: '/learn', label: 'Learn', icon: '📚', activeIcon: '📖' },
+  { path: '/drill', label: 'Drill', icon: '⚡', activeIcon: '⚡' },
+  { path: '/mocks', label: 'Mocks', icon: '📝', activeIcon: '📝' },
+  { path: '/progress', label: 'Progress', icon: '📊', activeIcon: '📊' },
+  { path: '/student-dashboard', label: 'Profile', icon: '👤', activeIcon: '👤' },
+];
+
+// Pages where bottom nav should appear
+const SHOW_ON = ['/learn', '/drill', '/mocks', '/progress', '/student-dashboard', '/challenge', '/exam-compass', '/free-practice-test'];
+
+export default function BottomNav() {
+  const router = useRouter();
+  const currentPath = router.pathname;
+
+  // Only show on student-facing pages
+  if (!SHOW_ON.some(p => currentPath.startsWith(p))) return null;
+
+  return (
+    <>
+      {/* Spacer to prevent content from hiding behind nav */}
+      <div style={{ height: 70 }} />
+
+      <nav style={{
+        position: 'fixed', bottom: 0, left: 0, right: 0,
+        height: 64, background: 'rgba(10,10,10,.95)',
+        borderTop: '1px solid rgba(255,255,255,.06)',
+        display: 'flex', justifyContent: 'space-around', alignItems: 'center',
+        padding: '0 8px',
+        backdropFilter: 'blur(20px)',
+        WebkitBackdropFilter: 'blur(20px)',
+        zIndex: 1000,
+      }}>
+        {TABS.map(tab => {
+          const active = currentPath === tab.path;
+          return (
+            <button key={tab.path} onClick={() => router.push(tab.path)}
+              style={{
+                background: 'none', border: 'none', cursor: 'pointer',
+                display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2,
+                padding: '8px 12px', borderRadius: 10,
+                WebkitTapHighlightColor: 'transparent',
+              }}>
+              <span style={{ fontSize: 22, filter: active ? 'none' : 'grayscale(0.5) opacity(0.5)' }}>
+                {active ? tab.activeIcon : tab.icon}
+              </span>
+              <span style={{
+                fontSize: 10, fontWeight: 700,
+                color: active ? '#4F8EF7' : 'rgba(255,255,255,.35)',
+              }}>
+                {tab.label}
+              </span>
+            </button>
+          );
+        })}
+      </nav>
+    </>
+  );
+}
