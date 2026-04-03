@@ -35,14 +35,15 @@ export default function Learn() {
   const [overview, setOverview] = useState(null);
   const [mastery, setMastery] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   // Load overview on mount
   useEffect(() => {
     if (status !== 'authenticated') return;
     fetch('/api/todays-plan')
-      .then(r => r.json())
+      .then(r => { if (!r.ok) throw new Error('Failed to load'); return r.json(); })
       .then(data => { setOverview(data); setLoading(false); })
-      .catch(() => setLoading(false));
+      .catch(err => { setError(err.message); setLoading(false); });
   }, [status]);
 
   // Load subject-specific plan
@@ -127,6 +128,7 @@ export default function Learn() {
 
           {/* Loading */}
           {loading && <div style={{ textAlign: 'center', padding: 40, color: 'rgba(255,255,255,.4)' }}>Loading your plan...</div>}
+          {error && <div style={{ textAlign: 'center', padding: 24, color: '#F97316', background: 'rgba(249,115,22,.08)', borderRadius: 12, margin: '16px 0' }}>Something went wrong. <button onClick={() => window.location.reload()} style={{ color: '#4F8EF7', background: 'none', border: 'none', cursor: 'pointer', fontWeight: 700 }}>Try again</button></div>}
 
           {/* Today's Plan */}
           {plan && !loading && (

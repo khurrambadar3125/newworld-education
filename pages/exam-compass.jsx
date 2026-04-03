@@ -38,14 +38,15 @@ export default function TopicRadar() {
   const [nextSession, setNextSession] = useState('');
 
   // Load available subjects on mount
+  const [loadError, setLoadError] = useState(false);
   useEffect(() => {
     fetch('/api/exam-compass?action=subjects')
-      .then(r => r.json())
+      .then(r => { if (!r.ok) throw new Error(); return r.json(); })
       .then(data => {
         setSubjects(data.subjects || []);
         setNextSession(data.nextSession || '');
       })
-      .catch(() => {});
+      .catch(() => setLoadError(true));
   }, []);
 
   const filteredSubjects = subjects.filter(s => s.level === selectedLevel);
