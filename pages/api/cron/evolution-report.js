@@ -6,7 +6,7 @@
 
 import { getSupabase } from '../../../utils/supabase';
 import { Resend } from 'resend';
-import Anthropic from '@anthropic-ai/sdk';
+import { getAnthropicClient } from '/../../utils/anthropicClient';
 
 export default async function handler(req, res) {
   if (process.env.CRON_SECRET && req.headers.authorization !== `Bearer ${process.env.CRON_SECRET}`) {
@@ -126,7 +126,7 @@ export default async function handler(req, res) {
     // ── Claude-generated recommendations ─────────────────────────────
     let aiRecommendations = '';
     try {
-      const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+      const anthropic = getAnthropicClient();
       const analysisPrompt = `You are the AI advisor for NewWorld Education, an AI tutoring platform in Pakistan (KG to A-Levels). Analyse this week's data and give me 3-5 SPECIFIC, ACTIONABLE recommendations to improve the platform. Be concrete — say exactly what to change in prompts, UI, or features.
 
 WEEK DATA:

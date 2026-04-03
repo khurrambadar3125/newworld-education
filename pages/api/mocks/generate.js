@@ -4,11 +4,11 @@
  * AI fallback only if bank doesn't have enough questions.
  */
 
-import Anthropic from '@anthropic-ai/sdk';
+import { getAnthropicClient } from '/../../utils/anthropicClient';
 import { withErrorAlert } from '../../../utils/errorAlert';
 import { fetchQuestions, toClientFormat } from '../../../utils/questionBank';
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 30000 });
+const client = getAnthropicClient();
 
 // Time limits per grade level (seconds)
 const TIME_LIMITS = { 'O Level': 3600, 'A Level': 5400 };

@@ -26,6 +26,13 @@ const MENU_GROUPS = [
     ],
   },
   {
+    title: 'Test Prep',
+    items: [
+      { href: '/sat',          label: '🎓 SAT Prep' },
+      { href: '/free-practice-test', label: '📋 Free Practice Test' },
+    ],
+  },
+  {
     title: 'Explore',
     items: [
       { href: '/textbooks',    label: '📖 Textbooks' },

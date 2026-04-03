@@ -8,13 +8,13 @@
  * ─────────────────────────────────────────────────────
  */
 
-import Anthropic from '@anthropic-ai/sdk';
+import { getAnthropicClient } from '/../../utils/anthropicClient';
 import { Resend } from 'resend';
 import { dailyQuestionEmail } from '../../../utils/dailyQuestionEmail';
 import { getAllSubscribers, recordQuestionSent, getRecentQuestions } from '../../../utils/db';
 import { getRandomQuestion, toClientFormat } from '../../../utils/questionBank';
 
-const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const anthropic = getAnthropicClient();
 const resend    = new Resend(process.env.RESEND_API_KEY);
 
 function isAuthorised(req) {

@@ -4,13 +4,13 @@
  * Takes a question + student answer, marks with full examiner precision.
  */
 
-import Anthropic from '@anthropic-ai/sdk';
+import { getAnthropicClient } from '/../utils/anthropicClient';
 import { SUPREME_EXAMINER_PERSONA, CAMBRIDGE_DIALECT, CAMBRIDGE_HIDDEN_RULES } from '../../utils/cambridgeDialectKB';
 import { EXAMINER_REPORTS } from '../../utils/examinerReportsKB';
 import { COMMAND_WORDS } from '../../utils/commandWordEngine';
 import { MARK_SCHEME_KB } from '../../utils/markSchemeKB';
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 30000 });
+const client = getAnthropicClient();
 
 // Detect subject from question text
 function detectSubject(text) {

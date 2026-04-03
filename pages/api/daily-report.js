@@ -7,7 +7,7 @@ import { kv } from "@vercel/kv";
 import Anthropic from "@anthropic-ai/sdk";
 import nodemailer from "nodemailer";
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const client = getAnthropicClient();
 
 // ── EMAIL SENDER ──────────────────────────────────────────────────────────────
 async function sendEmail(subject, htmlBody) {

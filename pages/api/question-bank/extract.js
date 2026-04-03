@@ -10,10 +10,10 @@
  * Admin-only. Questions returned for review before saving.
  */
 
-import Anthropic from '@anthropic-ai/sdk';
+import { getAnthropicClient } from '/../../utils/anthropicClient';
 import { isAdmin } from '../../../utils/apiAuth';
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 60000 });
+const client = getAnthropicClient();
 
 // Parse PDF text using pdf-parse (works on Vercel serverless)
 async function extractPDFText(buffer) {

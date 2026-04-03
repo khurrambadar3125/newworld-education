@@ -5,9 +5,9 @@
  * Uses Claude Haiku for speed and cost efficiency.
  */
 
-import Anthropic from '@anthropic-ai/sdk';
+import { getAnthropicClient } from '/../utils/anthropicClient';
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 20000 });
+const client = getAnthropicClient();
 
 // ─── Rate limiting (in-memory, per-user, 10 calls/min) ─────────────────────
 const rateLimitMap = new Map();

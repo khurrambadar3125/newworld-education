@@ -1,11 +1,11 @@
 import { Redis } from '@upstash/redis';
 import { Resend } from 'resend';
-import Anthropic from '@anthropic-ai/sdk';
+import { getAnthropicClient } from '/../../utils/anthropicClient';
 import { weeklyStudyPlanEmail } from '../../../utils/emailTemplates';
 import { getDefaultStudyPlan } from '../../../utils/sessionAnalysis';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const anthropic = getAnthropicClient();
 const kv = new Redis({ url: process.env.KV_REST_API_URL, token: process.env.KV_REST_API_TOKEN });
 
 export default async function handler(req, res) {

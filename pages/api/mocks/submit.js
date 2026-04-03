@@ -3,11 +3,11 @@
  * Uses Claude Haiku to grade answers against Cambridge mark schemes
  */
 
-import Anthropic from '@anthropic-ai/sdk';
+import { getAnthropicClient } from '/../../utils/anthropicClient';
 import { createClient } from '@supabase/supabase-js';
 import { withErrorAlert } from '../../../utils/errorAlert';
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 30000 });
+const client = getAnthropicClient();
 const supabase = createClient(process.env.SUPABASE_URL || '', process.env.SUPABASE_SECRET_KEY || '');
 
 // Cambridge grade boundaries (approximate)

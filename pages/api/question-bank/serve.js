@@ -9,12 +9,12 @@
  * Returns: question in drill.jsx-compatible format + _bankId for tracking
  */
 
-import Anthropic from '@anthropic-ai/sdk';
+import { getAnthropicClient } from '/../../utils/anthropicClient';
 import { getRandomQuestion, saveQuestion, toClientFormat } from '../../../utils/questionBank';
 import { getKnowledgeForTopic } from '../../../utils/getKnowledgeForTopic';
 import { checkRateLimit } from '../../../utils/rateLimit';
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 25000 });
+const client = getAnthropicClient();
 
 const SYSTEM = `You are an expert Cambridge examiner and question setter with 30 years of experience.
 You know every mark scheme, examiner report, and common misconception for all Cambridge subjects.

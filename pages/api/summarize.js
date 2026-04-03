@@ -7,9 +7,9 @@
  *   { summary, weakTopics, currentSubject }
  */
 
-import Anthropic from '@anthropic-ai/sdk';
+import { getAnthropicClient } from '/../utils/anthropicClient';
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const client = getAnthropicClient();
 
 const ALLOWED_ORIGINS = [
   'https://newworld.education',

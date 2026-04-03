@@ -4,12 +4,12 @@
  * PERMANENT: News publishing drives SEO and Google News indexing.
  */
 
-import Anthropic from '@anthropic-ai/sdk';
+import { getAnthropicClient } from '/../../utils/anthropicClient';
 import { getSupabase } from '../../../utils/supabase';
 
 export const config = { api: { bodyParser: true }, maxDuration: 120 };
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 30000 });
+const client = getAnthropicClient();
 
 // Exam-season topic calendar — final sprint before May/June 2026
 const PARENT_ANXIETY = [
