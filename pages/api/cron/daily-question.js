@@ -31,6 +31,15 @@ async function generateQuestion(grade, subject, recentQuestions = []) {
       const formatted = toClientFormat(bankQ);
       return `${formatted.question}${formatted.marks ? ` [${formatted.marks} marks]` : ''}`;
     }
+    // Cross-pollinate: 15% chance of SAT question for Maths/English
+    const satMap = { 'Mathematics': 'SAT', 'Additional Mathematics': 'SAT', 'English Language': 'SAT' };
+    if (satMap[subject] && Math.random() < 0.15) {
+      const satQ = await getRandomQuestion({ subject: satMap[subject], curriculum: 'sat' });
+      if (satQ) {
+        const formatted = toClientFormat(satQ);
+        return `[SAT-style challenge] ${formatted.question}`;
+      }
+    }
   } catch (bankErr) {
     console.error('[daily-question] Bank fetch failed, using AI fallback:', bankErr.message);
   }

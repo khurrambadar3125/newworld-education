@@ -204,6 +204,7 @@ export default withErrorAlert(async function handler(req, res) {
       // Try serving from the verified question bank before AI generation
       if (!isYoungLearner(params.level) && !params.imageBase64) {
         try {
+          // 1. Try Cambridge bank first (primary source)
           const bankQ = await getRandomQuestion({
             subject: params.subject,
             level: params.level || 'O Level',
@@ -216,7 +217,7 @@ export default withErrorAlert(async function handler(req, res) {
             const formatted = toClientFormat(bankQ);
             return res.status(200).json({ ...formatted, _source: 'verified_bank', _bankId: bankQ.id });
           }
-          // If no topic match, try without topic filter (broader search)
+          // 2. If no topic match, try without topic filter
           if (params.topic) {
             const broaderQ = await getRandomQuestion({
               subject: params.subject,
@@ -227,6 +228,21 @@ export default withErrorAlert(async function handler(req, res) {
             if (broaderQ) {
               const formatted = toClientFormat(broaderQ);
               return res.status(200).json({ ...formatted, _source: 'verified_bank', _bankId: broaderQ.id });
+            }
+          }
+          // 3. Cross-pollinate: serve SAT question for Maths/English (different angle, same concepts)
+          const satSubjectMap = { 'Mathematics': 'SAT', 'Additional Mathematics': 'SAT', 'English Language': 'SAT' };
+          const satSubject = satSubjectMap[params.subject];
+          if (satSubject && Math.random() < 0.2) { // 20% chance of SAT cross-question
+            const satQ = await getRandomQuestion({
+              subject: satSubject,
+              curriculum: 'sat',
+              type: params.questionType || undefined,
+              excludeIds: params.excludeIds || [],
+            });
+            if (satQ) {
+              const formatted = toClientFormat(satQ);
+              return res.status(200).json({ ...formatted, _source: 'sat_cross', _bankId: satQ.id, _crossLabel: 'SAT-style challenge' });
             }
           }
         } catch (bankErr) {

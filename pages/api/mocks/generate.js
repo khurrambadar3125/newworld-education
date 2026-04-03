@@ -49,6 +49,20 @@ export default withErrorAlert(async function handler(req, res) {
       console.error('[mocks/generate] Bank fetch failed:', bankErr.message);
     }
 
+    // Cross-pollinate: add 1-2 SAT-style bonus questions for Maths/English mocks
+    const satCrossSubjects = { 'Mathematics': 'SAT', 'Additional Mathematics': 'SAT', 'English Language': 'SAT' };
+    if (satCrossSubjects[subject] && bankQuestions.length >= QUESTION_COUNT) {
+      try {
+        const satPool = await fetchQuestions({ subject: satCrossSubjects[subject], curriculum: 'sat', type: 'mcq', limit: 5 });
+        if (satPool.length > 0) {
+          const satBonus = satPool.sort(() => Math.random() - 0.5).slice(0, 2).map(q => ({
+            ...toClientFormat(q), marks: 1, _source: 'sat_cross', _crossLabel: 'SAT-style bonus',
+          }));
+          bankQuestions = [...bankQuestions, ...satBonus];
+        }
+      } catch {}
+    }
+
     // If bank has enough questions, serve them directly — no AI needed
     if (bankQuestions.length >= QUESTION_COUNT) {
       return res.status(200).json({
