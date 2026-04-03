@@ -4,7 +4,7 @@
 // with AI-generated diagnosis and specific actionable fixes
 
 import { kv } from "@vercel/kv";
-import Anthropic from "@anthropic-ai/sdk";
+import { getAnthropicClient } from '../../utils/anthropicClient';
 import nodemailer from "nodemailer";
 
 const client = getAnthropicClient();

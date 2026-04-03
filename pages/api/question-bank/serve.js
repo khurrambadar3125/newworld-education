@@ -9,7 +9,7 @@
  * Returns: question in drill.jsx-compatible format + _bankId for tracking
  */
 
-import { getAnthropicClient } from '/../../utils/anthropicClient';
+import { getAnthropicClient } from '../../../utils/anthropicClient';
 import { getRandomQuestion, saveQuestion, toClientFormat } from '../../../utils/questionBank';
 import { getKnowledgeForTopic } from '../../../utils/getKnowledgeForTopic';
 import { checkRateLimit } from '../../../utils/rateLimit';

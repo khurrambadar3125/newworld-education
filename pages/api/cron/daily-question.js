@@ -8,7 +8,7 @@
  * ─────────────────────────────────────────────────────
  */
 
-import { getAnthropicClient } from '/../../utils/anthropicClient';
+import { getAnthropicClient } from '../../../utils/anthropicClient';
 import { Resend } from 'resend';
 import { dailyQuestionEmail } from '../../../utils/dailyQuestionEmail';
 import { getAllSubscribers, recordQuestionSent, getRecentQuestions } from '../../../utils/db';

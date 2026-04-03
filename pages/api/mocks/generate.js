@@ -4,7 +4,7 @@
  * AI fallback only if bank doesn't have enough questions.
  */
 
-import { getAnthropicClient } from '/../../utils/anthropicClient';
+import { getAnthropicClient } from '../../../utils/anthropicClient';
 import { withErrorAlert } from '../../../utils/errorAlert';
 import { fetchQuestions, toClientFormat } from '../../../utils/questionBank';
 

@@ -1,6 +1,6 @@
 import { Redis } from '@upstash/redis';
 import { Resend } from 'resend';
-import { getAnthropicClient } from '/../../utils/anthropicClient';
+import { getAnthropicClient } from '../../../utils/anthropicClient';
 import { weeklyStudyPlanEmail } from '../../../utils/emailTemplates';
 import { getDefaultStudyPlan } from '../../../utils/sessionAnalysis';
 

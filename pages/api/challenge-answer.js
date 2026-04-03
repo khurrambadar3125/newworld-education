@@ -4,7 +4,7 @@
  * Takes a question + student answer, marks with full examiner precision.
  */
 
-import { getAnthropicClient } from '/../utils/anthropicClient';
+import { getAnthropicClient } from '../../utils/anthropicClient';
 import { SUPREME_EXAMINER_PERSONA, CAMBRIDGE_DIALECT, CAMBRIDGE_HIDDEN_RULES } from '../../utils/cambridgeDialectKB';
 import { EXAMINER_REPORTS } from '../../utils/examinerReportsKB';
 import { COMMAND_WORDS } from '../../utils/commandWordEngine';

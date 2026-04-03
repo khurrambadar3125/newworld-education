@@ -3,7 +3,7 @@
  * Uses Claude Haiku to grade answers against Cambridge mark schemes
  */
 
-import { getAnthropicClient } from '/../../utils/anthropicClient';
+import { getAnthropicClient } from '../../../utils/anthropicClient';
 import { createClient } from '@supabase/supabase-js';
 import { withErrorAlert } from '../../../utils/errorAlert';
 

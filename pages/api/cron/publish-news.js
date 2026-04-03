@@ -4,7 +4,7 @@
  * PERMANENT: News publishing drives SEO and Google News indexing.
  */
 
-import { getAnthropicClient } from '/../../utils/anthropicClient';
+import { getAnthropicClient } from '../../../utils/anthropicClient';
 import { getSupabase } from '../../../utils/supabase';
 
 export const config = { api: { bodyParser: true }, maxDuration: 120 };

@@ -5,7 +5,7 @@
  * Uses Claude Haiku for speed and cost efficiency.
  */
 
-import { getAnthropicClient } from '/../utils/anthropicClient';
+import { getAnthropicClient } from '../../utils/anthropicClient';
 
 const client = getAnthropicClient();
 

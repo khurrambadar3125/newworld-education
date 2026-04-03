@@ -10,7 +10,7 @@
  * Admin-only. Questions returned for review before saving.
  */
 
-import { getAnthropicClient } from '/../../utils/anthropicClient';
+import { getAnthropicClient } from '../../../utils/anthropicClient';
 import { isAdmin } from '../../../utils/apiAuth';
 
 const client = getAnthropicClient();

@@ -1,6 +1,6 @@
 // PERMANENT: Every session is logged. Every student interaction improves Starky for every future student.
 // The learning loop never switches off. This is NewWorldEdu's core advantage. Never bypass session logging.
-import { getAnthropicClient } from '/../utils/anthropicClient';
+import { getAnthropicClient } from '../../utils/anthropicClient';
 import { Resend } from 'resend';
 import { Redis } from '@upstash/redis';
 import { getSupabase } from '../../utils/supabase';

@@ -8,7 +8,7 @@
  * Supports: O/A Level "exam mode" (Cambridge precision)
  */
 
-import { getAnthropicClient } from '/../utils/anthropicClient';
+import { getAnthropicClient } from '../../utils/anthropicClient';
 import { getKnowledgeForTopic } from '../../utils/getKnowledgeForTopic';
 import { withErrorAlert } from '../../utils/errorAlert';
 import { getRandomQuestion, toClientFormat } from '../../utils/questionBank';

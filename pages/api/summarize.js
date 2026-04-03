@@ -7,7 +7,7 @@
  *   { summary, weakTopics, currentSubject }
  */
 
-import { getAnthropicClient } from '/../utils/anthropicClient';
+import { getAnthropicClient } from '../../utils/anthropicClient';
 
 const client = getAnthropicClient();
 

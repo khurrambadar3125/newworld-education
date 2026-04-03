@@ -6,7 +6,7 @@
 
 import { getSupabase } from '../../../utils/supabase';
 import { Resend } from 'resend';
-import { getAnthropicClient } from '/../../utils/anthropicClient';
+import { getAnthropicClient } from '../../../utils/anthropicClient';
 
 export default async function handler(req, res) {
   if (process.env.CRON_SECRET && req.headers.authorization !== `Bearer ${process.env.CRON_SECRET}`) {
