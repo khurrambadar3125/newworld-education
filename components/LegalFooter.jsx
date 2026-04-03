@@ -25,9 +25,9 @@ export default function LegalFooter({ sen = false, sat = false }) {
 
         {/* General educational disclaimer */}
         <p style={{ fontSize: 11, color: 'rgba(255,255,255,.3)', lineHeight: 1.6, marginBottom: 12 }}>
-          Starky is an AI educational assistant, not a human teacher. Content is sourced from verified examination materials but may contain errors. Exam forecasts are study prioritisation tools, not guarantees.
+          Starky is an AI educational assistant, not a human teacher. Content is sourced from publicly available examination materials but may contain errors. Exam forecasts are study prioritisation tools, not guarantees. NewWorld Education is an independent platform and is not affiliated with, endorsed by, or licensed by any examination body, educational institution, or SEN framework provider.
           {sat && ' SAT is a registered trademark of the College Board, which is not affiliated with NewWorld Education.'}
-          {' '}Cambridge Assessment International Education, AQA, Pearson/Edexcel, and other examination body names are trademarks of their respective owners.
+          {' '}All examination body names, educational frameworks, and assessment standards referenced are trademarks or intellectual property of their respective owners.
         </p>
 
         {/* IP notice */}

@@ -307,7 +307,7 @@ export default function PhonicsPage() {
       {/* Footer */}
       <footer style={{ padding: "40px 16px 20px", textAlign: "center", borderTop: "1px solid rgba(255,255,255,0.04)", marginTop: 48 }}>
         <div style={{ fontSize: 11, color: "rgba(255,255,255,0.2)" }}>
-          Phonics programme based on Letters and Sounds (UK DfES 2007) · Orton-Gillingham multisensory method
+          Phonics approach informed by evidence-based structured literacy research
         </div>
       </footer>
       <LegalFooter sen={true} />

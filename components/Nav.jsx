@@ -8,15 +8,17 @@ const MENU_GROUPS = [
   {
     title: 'Study',
     items: [
-      { href: '/nano',         label: '⚛️ Starky Nano' },
+      { href: '/learn',        label: '📖 Today\'s Plan' },
       { href: '/drill',        label: '⚡ Practice Drill' },
       { href: '/mocks',        label: '📝 Mock Exams' },
       { href: '/challenge',    label: '🎯 Cambridge Challenge' },
+      { href: '/nano',         label: '⚛️ Starky Nano' },
     ],
   },
   {
     title: 'Exam Prep',
     items: [
+      { href: '/exam-compass', label: '🧭 Exam Compass' },
       { href: '/past-papers',  label: '📚 Past Papers' },
       { href: '/countdown',    label: '⏱️ Exam Countdown' },
       { href: '/essay',        label: '✍️ Essay Marking' },
@@ -41,6 +43,7 @@ const MENU_GROUPS = [
     items: [
       { href: '/parent',       label: '👨‍👩‍👧 Parent Portal' },
       { href: '/special-needs',label: '💜 Special Needs' },
+      { href: '/progress',     label: '📊 Progress' },
       { href: '/dashboard',    label: '📊 Teacher Dashboard' },
       { href: '/school',       label: '🏫 For Schools' },
     ],
