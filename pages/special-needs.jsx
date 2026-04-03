@@ -14,6 +14,7 @@ import { useState, useRef, useEffect } from "react";
 import Head from "next/head";
 import { useSessionLimit } from "../utils/useSessionLimit";
 import { getFullSENKnowledge } from "../utils/senKnowledge";
+import LegalFooter from "../components/LegalFooter";
 // Special-needs page uses the FULL knowledge base since it's the dedicated SEN section
 const addKnowledgeToPrompt = (prompt) => prompt + "\n\n" + getFullSENKnowledge();
 
@@ -3761,6 +3762,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
         )}
       </div>
 
+      <LegalFooter sen={true} />
     </div>
   );
 }

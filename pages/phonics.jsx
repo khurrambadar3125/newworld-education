@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import Head from "next/head";
 import { useSessionLimit } from "../utils/useSessionLimit";
+import LegalFooter from "../components/LegalFooter";
 import { PHASES, PHONICS_SYSTEM_PROMPT, getPhonicsPhaseContext } from "../utils/phonicsKB";
 import { CONTENT_PROTECTION } from "../utils/contentProtection";
 
@@ -308,8 +309,8 @@ export default function PhonicsPage() {
         <div style={{ fontSize: 11, color: "rgba(255,255,255,0.2)" }}>
           Phonics programme based on Letters and Sounds (UK DfES 2007) · Orton-Gillingham multisensory method
         </div>
-        <div style={{ fontSize: 11, color: "rgba(255,255,255,0.15)", marginTop: 4 }}>© 2026 NewWorldEdu · khurram@newworld.education</div>
       </footer>
+      <LegalFooter sen={true} />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
+import LegalFooter from "../components/LegalFooter";
 
 /**
  * /iep — Individualized Education Program for SEN students
@@ -343,9 +344,7 @@ export default function IEPPage() {
         </>)}
       </div>
 
-      <footer style={{ padding: "20px 16px", textAlign: "center", borderTop: "1px solid rgba(255,255,255,0.04)" }}>
-        <div style={{ fontSize: 11, color: "rgba(255,255,255,0.2)" }}>© 2026 NewWorldEdu · khurram@newworld.education</div>
-      </footer>
+      <LegalFooter sen={true} />
     </div>
   );
 }

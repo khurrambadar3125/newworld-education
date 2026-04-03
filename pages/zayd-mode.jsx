@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Head from "next/head";
+import LegalFooter from "../components/LegalFooter";
 
 /**
  * /zayd-mode — Visual matching mode for severe autism
@@ -355,6 +356,7 @@ export default function ZaydMode() {
         </div>
       )}
 
+      <LegalFooter sen={true} />
       <style>{`
         @keyframes fadeUp { from { opacity:1; transform:translate(-50%,-50%) scale(1); } to { opacity:0; transform:translate(-50%,-70%) scale(1.5); } }
       `}</style>

@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import Head from "next/head";
 import { useSessionLimit } from "../utils/useSessionLimit";
+import LegalFooter from "../components/LegalFooter";
 import { ARABIC_UNIQUE_SOUNDS, ENGLISH_HARD_FOR_ARABIC, BILINGUAL_MAPPINGS, UAE_PHONICS_WORDS, getUAEPhonicsPrompt } from "../utils/uaePhonicsKB";
 
 const PROG_KEY = "nw_phonics_uae_progress";
@@ -301,6 +302,7 @@ export default function PhonicsUAEPage() {
           </button>
         </div>
       </div>
+      <LegalFooter sen={true} />
     </>
   );
 }
