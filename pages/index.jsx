@@ -916,7 +916,6 @@ export default function Home() {
               <a href="/summer-uae">☀️ Summer Programme</a>
               <a href="/phonics-uae">🔤 Bilingual Phonics</a>
               <a href="/spelling-uae">🐝 Spelling Bee</a>
-              <a href="/sing">🎤 Singing</a>
               <a href="/voice-lab">🎙️ Voice Lab</a>
               <a href="/homework">📝 Homework Help</a>
               <a href="/essay">✍️ Essay Marking</a>
@@ -951,7 +950,6 @@ export default function Home() {
               <a href="/textbooks">📖 Textbooks</a>
               <a href="/languages">🌍 Languages</a>
               <a href="/spelling-bee">🐝 Spelling Bee</a>
-              <a href="/sing">🎤 Singing</a>
               <a href="/voice-lab">🎙️ Voice Lab</a>
               <div style={{padding:'14px 16px 4px',fontSize:11,fontWeight:800,letterSpacing:'0.08em',textTransform:'uppercase',color:'rgba(255,255,255,0.3)'}}>Tools</div>
               <a href="/countdown">⏱️ Exam Countdown</a>
