@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import Link from 'next/link';
 import { useSessionMemory, detectAndSaveMistake } from '../utils/useSessionMemory';
 import { useTheme } from '../pages/_app';
@@ -29,6 +29,16 @@ function formatStarkyMsg(text) {
     .replace(/\n/g, '<br>');
   return html;
 }
+
+// Memoized message component — prevents re-rendering all messages when typing
+import React from 'react';
+const MemoizedMessage = React.memo(function MemoizedMessage({ role, content }) {
+  return (
+    <div className={`starky-msg ${role}`} aria-label={role === 'assistant' ? 'Starky says' : 'You said'}
+      dangerouslySetInnerHTML={role === 'assistant' ? { __html: formatStarkyMsg(content) } : undefined}
+    >{role === 'user' ? content : undefined}</div>
+  );
+});
 
 export default function StarkyBubble() {
   const [open, setOpen] = useState(false);
@@ -918,9 +928,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
 
             <div className="starky-messages" role="log" aria-label="Chat with Starky" aria-live="polite">
               {messages.map((m, i) => (
-                <div key={i} className={`starky-msg ${m.role}`} aria-label={m.role === 'assistant' ? 'Starky says' : 'You said'}
-                  dangerouslySetInnerHTML={m.role === 'assistant' ? { __html: formatStarkyMsg(m.content) } : undefined}
-                >{m.role === 'user' ? m.content : undefined}</div>
+                <MemoizedMessage key={i} role={m.role} content={m.content} />
               ))}
 
               {/* Quick-tap subject buttons for young kids (KG-Grade 5) */}
