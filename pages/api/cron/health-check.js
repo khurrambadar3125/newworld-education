@@ -52,7 +52,7 @@ const PAGES = [
   { path: '/referral',          name: 'Referral' },
   { path: '/responsible-ai',    name: 'Responsible AI' },
   { path: '/school',            name: 'School' },
-  { path: '/sing',              name: 'Sing' },
+  // /sing removed — needs Web Audio API pitch detection, rebuild later
   { path: '/special-needs',     name: 'Special Needs' },
   { path: '/spelling-bee',      name: 'Spelling Bee' },
   { path: '/spelling-uae',      name: 'Spelling UAE' },
