@@ -195,7 +195,7 @@ addQuestions('Additional Mathematics', 'O Level', '4037',
 const TOTAL_QUESTIONS = QUESTION_SPECS.length;
 
 export default async function handler(req, res) {
-  const auth = req.headers.authorization || req.query.secret;
+  const auth = req.headers.authorization;
   if (auth !== process.env.CRON_SECRET && auth !== `Bearer ${process.env.CRON_SECRET}`) {
     return res.status(401).json({ error: 'Unauthorized' });
   }

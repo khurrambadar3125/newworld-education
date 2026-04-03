@@ -461,7 +461,7 @@ const QUESTIONS = [
 
 export default async function handler(req, res) {
   // Auth check
-  const auth = req.headers.authorization || req.query.secret;
+  const auth = req.headers.authorization;
   if (auth !== process.env.CRON_SECRET && auth !== `Bearer ${process.env.CRON_SECRET}`) {
     return res.status(401).json({ error: 'Unauthorized' });
   }

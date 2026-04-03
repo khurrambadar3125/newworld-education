@@ -59,7 +59,7 @@ const CTAS = [
 const CATEGORIES = ['Cambridge Updates', 'Study Tips', 'Pakistan Education', 'Exam Tips', 'School News'];
 
 export default async function handler(req, res) {
-  const auth = req.headers.authorization || req.query.secret;
+  const auth = req.headers.authorization;
   if (auth !== process.env.CRON_SECRET && auth !== `Bearer ${process.env.CRON_SECRET}`) {
     return res.status(401).json({ error: 'Unauthorized' });
   }

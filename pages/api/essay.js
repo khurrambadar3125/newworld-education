@@ -7,9 +7,13 @@
  */
 
 import { withErrorAlert } from '../../utils/errorAlert';
+import { checkRateLimit } from '../../utils/rateLimit';
 
 export default withErrorAlert(async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
+
+  const { ok } = await checkRateLimit(req, 30); // 30 essays per hour max
+  if (!ok) return res.status(429).json({ error: 'Rate limit exceeded. Try again later.' });
 
   const { subject, level, question, essay, markScheme } = req.body;
   if (!subject || !question || !essay)

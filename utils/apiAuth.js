@@ -19,10 +19,10 @@ function getStudentFromRequest(req) {
   if (auth?.startsWith('Bearer ')) {
     return { email: auth.slice(7).trim().toLowerCase(), authenticated: true };
   }
-  // Check custom header
+  // x-student-email header — treat as UNAUTHENTICATED (can be spoofed)
   const headerEmail = req.headers['x-student-email'];
   if (headerEmail) {
-    return { email: headerEmail.trim().toLowerCase(), authenticated: true };
+    return { email: headerEmail.trim().toLowerCase(), authenticated: false };
   }
   // Check body
   const bodyEmail = req.body?.email || req.body?.studentId || req.body?.studentEmail;
@@ -65,7 +65,7 @@ function validateStudentAccess(req, requestedStudentId) {
  * Check if request has admin credentials
  */
 function isAdmin(req) {
-  const pw = req.headers['x-admin-password'] || req.query?.password;
+  const pw = req.headers['x-admin-password'];  // Headers only — never query params
   return pw && (pw === process.env.DASHBOARD_PASSWORD || pw === process.env.DASHBOARD_ADMIN_PASSWORD);
 }
 
@@ -73,7 +73,7 @@ function isAdmin(req) {
  * Check if request has cron secret
  */
 function isCron(req) {
-  const auth = req.headers['authorization'] || req.query?.secret;
+  const auth = req.headers['authorization'];  // Headers only — never query params
   return auth === `Bearer ${process.env.CRON_SECRET}` || auth === process.env.CRON_SECRET;
 }
 

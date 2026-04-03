@@ -12,13 +12,22 @@ import { NextResponse } from 'next/server';
 
 // Bots to BLOCK — AI training, scraping, harvesting
 const BLOCKED_BOTS = [
+  // AI training bots
   'gptbot', 'chatgpt-user', 'google-extended', 'claude-web', 'anthropic-ai',
-  'ccbot', 'bytespider', 'amazonbot', 'ahrefsbot', 'semrushbot', 'mj12bot',
-  'dotbot', 'blexbot', 'dataforseobot', 'petalbot', 'megaindex', 'sogou',
-  'yandexbot', 'baiduspider', 'diffbot', 'perplexitybot', 'cohere-ai',
-  'youbot', 'meta-externalagent', 'ai2bot', 'applebot-extended', 'omgili',
-  'scrapy', 'python-requests', 'go-http-client', 'java/', 'wget', 'curl/',
-  'httrack', 'harvest', 'collector', 'extractor',
+  'ccbot', 'diffbot', 'perplexitybot', 'cohere-ai', 'youbot', 'ai2bot',
+  'meta-externalagent', 'applebot-extended', 'omgili',
+  // Content scrapers
+  'bytespider', 'amazonbot', 'ahrefsbot', 'semrushbot', 'mj12bot',
+  'dotbot', 'blexbot', 'dataforseobot', 'petalbot', 'megaindex',
+  'sogou', 'yandexbot', 'baiduspider',
+  // Scraping libraries
+  'scrapy', 'python-requests', 'python-urllib', 'go-http-client', 'java/',
+  'wget', 'curl/', 'httrack', 'harvest', 'collector', 'extractor',
+  'libwww', 'lwp-', 'httpx', 'aiohttp', 'node-fetch', 'axios/',
+  // Headless browsers used for scraping
+  'phantomjs', 'headlesschrome', 'selenium', 'puppeteer',
+  // Generic bots
+  'bot/', 'spider/', 'crawl/',
 ];
 
 // Bots to ALLOW — search engines + social media previews

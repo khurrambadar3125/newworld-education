@@ -7,7 +7,8 @@
 import { getSupabase } from '../../utils/supabase';
 
 export default async function handler(req, res) {
-  const detailed = req.query.secret === process.env.CRON_SECRET || req.query.password === process.env.DASHBOARD_PASSWORD;
+  const authHeader = req.headers.authorization || '';
+  const detailed = authHeader === `Bearer ${process.env.CRON_SECRET}` || authHeader === `Bearer ${process.env.DASHBOARD_PASSWORD}`;
   const sb = getSupabase();
   const health = { status: 'ok', timestamp: new Date().toISOString(), checks: {} };
 

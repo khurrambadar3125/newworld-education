@@ -1,15 +1,25 @@
 import { getStudentMemory } from '../../utils/db';
+import { getServerSession } from 'next-auth';
+import { authOptions } from './auth/[...nextauth]';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
+
+  // Require authenticated session — parent must be logged in
+  const session = await getServerSession(req, res, authOptions);
+  if (!session?.user?.email) {
+    return res.status(401).json({ error: 'Authentication required. Please sign in.' });
+  }
 
   const { parentEmail, childEmail } = req.body;
   if (!parentEmail || !childEmail) {
     return res.status(400).json({ error: 'parentEmail and childEmail required' });
   }
 
-  // Simple auth: parent must provide their own email + child's email
-  // In production, this should verify a parent-child relationship in KV
+  // Verify the logged-in user IS the parent requesting data
+  if (session.user.email.toLowerCase() !== parentEmail.toLowerCase()) {
+    return res.status(403).json({ error: 'You can only access data for your own linked children.' });
+  }
   try {
     const memory = await getStudentMemory(childEmail);
     if (!memory) {
