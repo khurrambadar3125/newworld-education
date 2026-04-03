@@ -909,10 +909,13 @@ export default function Home() {
           {userCountry === 'UAE' ? (
             <>
               <div style={{padding:'14px 16px 4px',fontSize:11,fontWeight:800,letterSpacing:'0.08em',textTransform:'uppercase',color:'rgba(255,255,255,0.3)'}}>Learn</div>
+              <a href="/learn">📖 Today's Plan</a>
               <a href="/drill">🎯 Practice Drill</a>
-              <a href="/nano">🎯 Nano</a>
+              <a href="/nano">⚛️ Nano</a>
+              <a href="/mocks">📝 Mock Exams</a>
               <a href="/drill?context=ib">🌐 IB Prep</a>
               <a href="/drill?context=emsat">🇦🇪 EmSAT Prep</a>
+              <a href="/sat">🎓 SAT Prep</a>
               <a href="/summer-uae">☀️ Summer Programme</a>
               <a href="/phonics-uae">🔤 Bilingual Phonics</a>
               <a href="/spelling-uae">🐝 Spelling Bee</a>
@@ -923,6 +926,8 @@ export default function Home() {
               <a href="/languages">🌍 Languages</a>
               <a href="/reading">📚 Reading</a>
               <div style={{padding:'14px 16px 4px',fontSize:11,fontWeight:800,letterSpacing:'0.08em',textTransform:'uppercase',color:'rgba(255,255,255,0.3)'}}>Tools</div>
+              <a href="/exam-compass">🧭 Exam Compass</a>
+              <a href="/progress">📊 My Progress</a>
               <a href="/countdown">⏱️ Exam Countdown</a>
               <a href="/subscribe">📬 Daily Questions</a>
               <a href="/leaderboard">🏆 Leaderboard</a>
@@ -942,9 +947,12 @@ export default function Home() {
           ) : (
             <>
               <div style={{padding:'14px 16px 4px',fontSize:11,fontWeight:800,letterSpacing:'0.08em',textTransform:'uppercase',color:'rgba(255,255,255,0.3)'}}>Learn</div>
+              <a href="/learn">📖 Today's Plan</a>
               <a href="/drill">🎯 Practice Drill</a>
-              <a href="/nano">🎯 Nano</a>
+              <a href="/nano">⚛️ Nano</a>
+              <a href="/mocks">📝 Mock Exams</a>
               <a href="/past-papers">📚 Past Papers</a>
+              <a href="/sat">🎓 SAT Prep</a>
               <a href="/homework">📝 Homework Help</a>
               <a href="/essay">✍️ Essay Marking</a>
               <a href="/textbooks">📖 Textbooks</a>
@@ -952,6 +960,8 @@ export default function Home() {
               <a href="/spelling-bee">🐝 Spelling Bee</a>
               <a href="/voice-lab">🎙️ Voice Lab</a>
               <div style={{padding:'14px 16px 4px',fontSize:11,fontWeight:800,letterSpacing:'0.08em',textTransform:'uppercase',color:'rgba(255,255,255,0.3)'}}>Tools</div>
+              <a href="/exam-compass">🧭 Exam Compass</a>
+              <a href="/progress">📊 My Progress</a>
               <a href="/countdown">⏱️ Exam Countdown</a>
               <a href="/subscribe">📬 Daily Questions</a>
               <a href="/leaderboard">🏆 Leaderboard</a>
