@@ -1,15 +1,132 @@
-User-agent: *
+# NewWorld Education — Robot Access Policy
+# Only search engines and social media preview bots are allowed.
+# All AI training bots, scrapers, and content harvesters are blocked.
+
+# ── Allow: Search engines (needed for indexing + Google News) ──
+User-agent: Googlebot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /dashboard
 Disallow: /start
+Disallow: /upload-papers
+
+User-agent: Googlebot-News
+Allow: /news
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /dashboard
+
+# ── Allow: Social media bots (link previews for sharing) ──
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# ── BLOCK: AI training bots ──
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Anthropic-AI
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Perplexitybot
+Disallow: /
+
+User-agent: Cohere-ai
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+# ── BLOCK: Content scrapers and harvesters ──
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+# ── BLOCK: Everything else by default ──
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
+Disallow: /dashboard
+Disallow: /start
+Disallow: /upload-papers
 Disallow: /share/
 Disallow: /join/
 Disallow: /claim/
 
-User-agent: Googlebot-News
-Allow: /news/
-
+# Sitemaps
 Sitemap: https://www.newworld.education/api/sitemap
 Sitemap: https://www.newworld.education/api/news-sitemap
