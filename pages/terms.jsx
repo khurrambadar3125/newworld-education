@@ -9,28 +9,72 @@ export default function Terms() {
       </Head>
       <div style={{maxWidth:680,margin:'0 auto'}}>
         <h1 style={{fontSize:28,fontWeight:900,marginBottom:24}}>Terms of Service</h1>
-        <p style={{color:'rgba(255,255,255,0.4)',fontSize:13,marginBottom:32}}>Last updated: March 2026</p>
+        <p style={{color:'rgba(255,255,255,0.4)',fontSize:13,marginBottom:32}}>Last updated: April 2026</p>
 
         <div style={{fontSize:15,lineHeight:1.8,color:'rgba(255,255,255,0.75)'}}>
           <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>1. Service Description</h2>
-          <p>NewWorld Education provides personalised educational tutoring through our platform at newworld.education. Our tutor "Starky" assists students with homework help, exam preparation, essay marking, and practice drills for Cambridge O Level, A Level, and Pakistan board examinations.</p>
+          <p>NewWorld Education ("we", "us", "the Platform") provides AI-assisted educational tutoring through newworld.education. Our AI tutor "Starky" assists students with homework help, exam preparation, essay marking, practice drills, and study planning for Cambridge O Level, A Level, SAT, UK Key Stage, Functional Skills, and other curricula. The Platform also provides specialised support for students with Special Educational Needs (SEN).</p>
 
           <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>2. Acceptable Use</h2>
-          <p>Our platform is for educational purposes only. Users must not attempt to use Starky for non-educational purposes, generate harmful content, or misuse the platform. We reserve the right to suspend accounts that violate these terms.</p>
+          <p>Our platform is for educational purposes only. Users must not: (a) use the platform for non-educational purposes; (b) generate harmful, offensive, or inappropriate content; (c) attempt to extract, scrape, or systematically download content from the question bank; (d) redistribute, resell, or commercially exploit any content obtained from the Platform; (e) misrepresent the Platform's outputs as professional clinical, medical, or therapeutic advice. We reserve the right to suspend accounts that violate these terms.</p>
 
-          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>3. Tutoring Disclaimer</h2>
-          <p>Starky is a digital tutor, not a human teacher. While we strive for accuracy in all educational content, generated responses may occasionally contain errors. Students should verify critical exam-related information with their teachers or official Cambridge resources.</p>
+          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>3. AI Tutoring Disclaimer</h2>
+          <p>Starky is an artificial intelligence educational assistant, not a human teacher, therapist, counsellor, or medical professional. While we use verified content from official sources (including Cambridge Assessment International Education past papers, UK national assessments, and standardised test materials), and strive for accuracy in all educational content:</p>
+          <ul style={{paddingLeft:20,marginTop:8}}>
+            <li>AI-generated responses may occasionally contain errors or inaccuracies.</li>
+            <li>Students should verify critical exam-related information with their teachers or official examination body resources.</li>
+            <li>The Platform does not guarantee any particular exam result, grade, or academic outcome.</li>
+            <li>Topic forecasts (Exam Compass) are data-driven study prioritisation tools based on pattern analysis, not guarantees of what will appear on any examination.</li>
+          </ul>
 
-          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>4. Subscriptions & Payments</h2>
-          <p>Paid subscriptions are billed monthly via PayPal. All plans include a 7-day free trial. You may cancel at any time. Refunds are available within 30 days of purchase if you are unsatisfied with the service.</p>
+          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>4. Special Educational Needs (SEN) Disclaimer</h2>
+          <p style={{fontWeight:700,color:'#F97316'}}>IMPORTANT: Please read this section carefully.</p>
+          <p>The Platform's SEN features are educational support tools only. They are <strong>NOT</strong>:</p>
+          <ul style={{paddingLeft:20,marginTop:8}}>
+            <li><strong>Not a diagnostic tool.</strong> The Platform does not diagnose any medical, psychological, neurological, or developmental condition. Any condition-specific features are activated based on information provided by the parent/guardian or user, not by the Platform's own assessment.</li>
+            <li><strong>Not a substitute for professional assessment.</strong> If you suspect your child has a special educational need, learning difficulty, or disability, consult a qualified educational psychologist, paediatrician, speech and language therapist, or other appropriate clinical professional.</li>
+            <li><strong>Not medical or therapeutic advice.</strong> The Platform does not provide medical advice, clinical treatment, therapeutic intervention, behaviour management plans, or mental health counselling. Content related to conditions (ADHD, autism, dyslexia, etc.) is for educational context only.</li>
+            <li><strong>Not a replacement for an IEP/EHCP.</strong> Any goals, plans, or progress reports generated by the Platform are supplementary educational tools. They do not replace formal Individual Education Plans (IEPs), Education Health and Care Plans (EHCPs), or professional educational assessments.</li>
+            <li><strong>Not crisis support.</strong> If a child is in distress, experiencing a mental health crisis, or is at risk of harm, contact local emergency services, a safeguarding lead, or a crisis helpline immediately. The Platform is not equipped to handle emergencies.</li>
+          </ul>
+          <p>The Platform's SEN features use evidence-based educational frameworks (including the UK Engagement Model, P-Scales, Pre-Key Stage Standards, Blank's Levels of Questioning, and Colourful Semantics) as references for educational content delivery. These frameworks are used under fair educational use and remain the intellectual property of their respective creators and governing bodies.</p>
+          <p>Parents/guardians are responsible for the accuracy of any SEN-related information provided to the Platform and for ensuring the Platform's educational support is appropriate for their child's needs.</p>
 
-          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>5. Child Safety</h2>
-          <p>We take child safety seriously. Our platform includes automated detection of distress signals and abuse disclosures, with immediate alerts to parents/guardians. We do not allow any harmful, inappropriate, or non-educational content.</p>
+          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>5. Intellectual Property</h2>
+          <p><strong>Our Content:</strong> The Platform's question bank, teaching knowledge bases, AI tutor personality, algorithms, code, and design are the intellectual property of NewWorld Education. Unauthorised reproduction, distribution, scraping, or commercial use is strictly prohibited.</p>
+          <p><strong>Third-Party Content:</strong> Past paper questions, mark schemes, and examiner reports are sourced from publicly available educational materials published by Cambridge Assessment International Education (CAIE), the UK Department for Education (DfE), AQA, Pearson/Edexcel, City & Guilds, NCFE, the College Board (SAT), and other examination bodies. These materials remain the intellectual property of their respective owners. Our use of these materials is for educational purposes under fair use/fair dealing provisions. We do not claim ownership of examination content produced by third parties.</p>
+          <p><strong>User Content:</strong> Any content you submit (answers, essays, messages) remains yours. By using the Platform, you grant us a limited licence to process your content solely for the purpose of providing educational services and improving the Platform.</p>
 
-          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>6. Data & Privacy</h2>
-          <p>Your use of our platform is also governed by our <a href="/privacy" style={{color:'#4F8EF7'}}>Privacy Policy</a>. We collect only the data necessary to provide personalised tutoring and parent reports.</p>
+          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>6. Limitation of Liability</h2>
+          <p>To the maximum extent permitted by applicable law:</p>
+          <ul style={{paddingLeft:20,marginTop:8}}>
+            <li>NewWorld Education, its founders, employees, and AI systems (including Starky) shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from the use of the Platform.</li>
+            <li>We are not liable for any academic outcomes, examination results, or educational decisions made based on the Platform's content or recommendations.</li>
+            <li>We are not liable for any clinical, medical, psychological, or therapeutic outcomes related to the use of SEN features.</li>
+            <li>We are not liable for errors or inaccuracies in AI-generated content, topic forecasts, grade predictions, or study plans.</li>
+            <li>We are not liable for any loss of data, service interruptions, or technical failures.</li>
+            <li>The Platform is provided "as is" without warranties of any kind, express or implied, including but not limited to fitness for a particular purpose, accuracy, or reliability.</li>
+          </ul>
 
-          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>7. Contact</h2>
+          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>7. Content Accuracy & Question Bank</h2>
+          <p>Our question bank contains verified questions extracted from official examination papers using AI-assisted processing. While we verify answers against official mark schemes, we cannot guarantee 100% accuracy in the extraction and matching process. Users should report any errors to <a href="mailto:hello@newworld.education" style={{color:'#4F8EF7'}}>hello@newworld.education</a>.</p>
+
+          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>8. Subscriptions & Payments</h2>
+          <p>Paid subscriptions are billed monthly. You may cancel at any time. Refunds are available within 30 days of purchase if you are unsatisfied with the service. Free tier users receive 10 sessions at no cost with no credit card required.</p>
+
+          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>9. Child Safety & Safeguarding</h2>
+          <p>We take child safety seriously. Our platform includes: automated detection of distress signals; content protection filtering (profanity, harmful content, jailbreak attempts); age-appropriate content delivery; and secure data handling. We comply with applicable child protection regulations. Parents/guardians are encouraged to monitor their child's use of the Platform.</p>
+
+          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>10. Data & Privacy</h2>
+          <p>Your use of our platform is governed by our <a href="/privacy" style={{color:'#4F8EF7'}}>Privacy Policy</a>. We collect only the data necessary to provide personalised tutoring and parent reports. Student data is never sold to third parties.</p>
+
+          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>11. Governing Law</h2>
+          <p>These terms are governed by the laws of the United Arab Emirates. Any disputes shall be resolved through the courts of Dubai, UAE.</p>
+
+          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>12. Changes to Terms</h2>
+          <p>We may update these terms from time to time. Continued use of the Platform after changes constitutes acceptance of the updated terms.</p>
+
+          <h2 style={{fontSize:18,fontWeight:800,marginTop:32,marginBottom:8,color:'#fff'}}>13. Contact</h2>
           <p>For questions about these terms, contact us at <a href="mailto:hello@newworld.education" style={{color:'#4F8EF7'}}>hello@newworld.education</a>.</p>
         </div>
       </div>
