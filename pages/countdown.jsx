@@ -10,7 +10,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-
+import LegalFooter from '../components/LegalFooter';
 const TIMETABLE_URL = 'https://www.cambridgeinternational.org/Images/745759-june-2026-zone-4-timetable.pdf';
 
 const OLEVEL_SUBJECTS = [
@@ -344,6 +344,6 @@ export default function CountdownPage() {
 
         </div>
       </div>
-    </>
+      <LegalFooter />    </>
   );
 }

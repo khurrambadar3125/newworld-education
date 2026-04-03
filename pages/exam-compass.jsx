@@ -8,7 +8,7 @@
 
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
-
+import LegalFooter from '../components/LegalFooter';
 const LEVEL_OPTIONS = ['O Level', 'A Level'];
 
 const SCORE_COLORS = {
@@ -211,6 +211,7 @@ export default function TopicRadar() {
           )}
         </div>
       </div>
+      <LegalFooter />
     </>
   );
 }

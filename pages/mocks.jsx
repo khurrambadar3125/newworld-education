@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import { COMMAND_WORDS } from '../utils/commandWordEngine';
 import { EXAMINER_REPORTS } from '../utils/examinerReportsKB';
-
+import LegalFooter from '../components/LegalFooter';
 const O_LEVEL_SUBJECTS = [
   'Physics (5054)', 'Chemistry (5070)', 'Biology (5090)', 'Mathematics (4024)',
   'Additional Mathematics (4037)', 'English Language (1123)', 'English Literature (2010)',
@@ -530,6 +530,6 @@ export default function Mocks() {
       <footer style={{ padding: '20px 16px', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
         <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.2)' }}>© 2026 NewWorldEdu · newworld.education</div>
       </footer>
-    </div>
+      <LegalFooter />    </div>
   );
 }

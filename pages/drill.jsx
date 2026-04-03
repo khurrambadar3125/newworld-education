@@ -10,7 +10,7 @@ import Link from 'next/link';
 import { useSpacedRep } from '../utils/useSpacedRep';
 import useStreaks, { StreakWidget } from '../utils/useStreaks';
 import { useSessionLimit, SessionLimitBanner, LimitReachedModal } from '../utils/useSessionLimit';
-
+import LegalFooter from '../components/LegalFooter';
 /* ─── Audio feedback engine ─── */
 let _audioCtx = null;
 function getAudioCtx() { if (!_audioCtx) try { _audioCtx = new (window.AudioContext || window.webkitAudioContext)(); } catch {} return _audioCtx; }
@@ -1134,6 +1134,6 @@ export default function DrillPage() {
         </div>
       </div>
       {showLimitModal && <LimitReachedModal onClose={() => setShowLimitModal(false)} />}
-    </>
+      <LegalFooter />    </>
   );
 }

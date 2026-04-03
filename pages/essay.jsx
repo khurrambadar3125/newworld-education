@@ -7,7 +7,7 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-
+import LegalFooter from '../components/LegalFooter';
 const SUBJECTS = {
   olevel: ['English Language', 'Literature in English', 'History', 'Pakistan Studies',
            'Economics', 'Business Studies', 'Geography', 'Sociology', 'Islamiyat'],
@@ -370,6 +370,6 @@ export default function EssayPage() {
           )}
         </div>
       </div>
-    </>
+      <LegalFooter />    </>
   );
 }

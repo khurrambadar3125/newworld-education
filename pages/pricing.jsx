@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-
+import LegalFooter from '../components/LegalFooter';
 const PLANS = [
   {
     id: 'starter',
@@ -450,6 +450,6 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-    </>
+      <LegalFooter />    </>
   );
 }

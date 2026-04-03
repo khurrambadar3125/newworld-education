@@ -10,7 +10,7 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-
+import LegalFooter from '../components/LegalFooter';
 const SUBJECTS_OLEVEL = ['Biology','Chemistry','Physics','Mathematics','English Language','Economics','Computer Science','Pakistan Studies','Accounting','Business Studies','Geography','History','Islamiyat','Urdu','Sociology','Additional Mathematics','Statistics','Literature in English'];
 const SUBJECTS_ALEVEL = ['Biology','Chemistry','Physics','Mathematics','Economics','Computer Science','English Language','Psychology','Business Studies','Accounting','Geography','History','Sociology','Law','Further Mathematics'];
 
@@ -483,6 +483,6 @@ export default function FreePracticeTest() {
 
         </div>
       </div>
-    </>
+      <LegalFooter />    </>
   );
 }

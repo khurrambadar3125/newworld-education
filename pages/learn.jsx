@@ -15,7 +15,7 @@ import StreakFlame from '../components/StreakFlame';
 import XPBar from '../components/XPBar';
 import SkillTree from '../components/SkillTree';
 import BottomNav from '../components/BottomNav';
-
+import LegalFooter from '../components/LegalFooter';
 const SUBJECTS = [
   'Mathematics','Additional Mathematics','Physics','Chemistry','Biology',
   'Economics','Business Studies','Accounting','Computer Science',
@@ -210,6 +210,7 @@ export default function Learn() {
         </div>
       </div>
 
+      <LegalFooter />
       <BottomNav />
     </>
   );

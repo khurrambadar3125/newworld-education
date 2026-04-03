@@ -16,7 +16,7 @@ import TopicHeatMap from '../components/TopicHeatMap';
 import BadgeGrid from '../components/BadgeGrid';
 import SkillTree from '../components/SkillTree';
 import BottomNav from '../components/BottomNav';
-
+import LegalFooter from '../components/LegalFooter';
 const SUBJECTS = [
   'Mathematics','Physics','Chemistry','Biology','Economics',
   'Accounting','Computer Science','Pakistan Studies',
@@ -212,6 +212,7 @@ export default function Progress() {
         </div>
       </div>
 
+      <LegalFooter />
       <BottomNav />
     </>
   );

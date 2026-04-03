@@ -7,7 +7,7 @@
 
 import { useState } from 'react';
 import Head from 'next/head';
-
+import LegalFooter from '../components/LegalFooter';
 const NAVY = '#080C18';
 const GOLD = '#C9A84C';
 const BLUE = '#4F8EF7';
@@ -50,7 +50,7 @@ export default function NixorDemoPage() {
     <>
       <Head>
         <title>NewWorldEdu for Nixor College — AI-Powered Cambridge Tutoring</title>
-        <meta name="description" content="Pakistan's first Cambridge O and A Level institution powered by AI. 4,507 verified past paper questions. Zero hallucinations." />
+        <meta name="description" content="AI-powered Cambridge O and A Level tutoring for Nixor College. Thousands of verified past paper questions with mark scheme answers." />
         <meta name="robots" content="noindex" />
       </Head>
 
@@ -77,7 +77,7 @@ export default function NixorDemoPage() {
             {[
               { n: '4,507', l: 'Verified Cambridge\npast paper questions' },
               { n: '10', l: 'O Level subjects\nwith full coverage' },
-              { n: 'Zero', l: 'AI hallucinations\nall answers from mark schemes' },
+              { n: '100%', l: 'Mark scheme verified\nanswers from official sources' },
               { n: '24/7', l: 'Available always\nno booking required' },
             ].map(st => (
               <div key={st.n}>
@@ -119,7 +119,7 @@ export default function NixorDemoPage() {
           <div style={s.section}>
             <div style={{ textAlign: 'center', marginBottom: 40 }}>
               <h2 style={s.heading}>Not AI-generated. <span style={s.gold}>Verified from source.</span></h2>
-              <p style={s.sub}>Every question comes from official Cambridge past papers. Every answer comes from the official mark scheme. Zero hallucinations.</p>
+              <p style={s.sub}>Questions sourced from Cambridge past papers. Answers matched against official mark schemes. AI-assisted extraction may occasionally contain errors.</p>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 16 }}>
               {[
@@ -255,6 +255,7 @@ export default function NixorDemoPage() {
           <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.15)', marginTop: 8 }}>NewWorldEdu — Academic excellence, available everywhere</div>
         </div>
       </div>
+      <LegalFooter />
     </>
   );
 }
