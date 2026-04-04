@@ -29,6 +29,7 @@ const MENU_GROUPS = [
   {
     title: 'Test Prep',
     items: [
+      { href: '/entrance-tests', label: '🎯 Entrance Tests' },
       { href: '/daily-challenge', label: '🏆 Daily Challenge' },
       { href: '/sat',          label: '🎓 SAT Prep' },
       { href: '/free-practice-test', label: '📋 Free Practice Test' },
