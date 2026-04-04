@@ -70,5 +70,19 @@ ${optionsHtml}
 <div style="background:#0d1a2d;border:1px solid rgba(59,130,246,0.2);border-radius:10px;padding:14px 16px;margin-top:4px">
   <div style="color:#60a5fa;font-size:11px;font-weight:600;letter-spacing:1px;margin-bottom:4px">💡 WHY THIS QUESTION?</div>
   <div style="color:#8888aa;font-size:13px;line-height:1.6">Starky picked this based on your grade and subject. One question a day, done consistently, is worth more than three hours of cramming the night before an exam.</div>
+</div>
+
+<div style="text-align:center;margin:20px 0 8px">
+  <div style="color:#555;font-size:11px;margin-bottom:8px">CHALLENGE A FRIEND</div>
+  <a href="https://wa.me/?text=${encodeURIComponent('📚 My daily study question from NewWorldEdu! Can you answer it?\n\n' + question.slice(0, 120) + '...\n\nGet your own daily question free: https://www.newworld.education/subscribe')}" style="display:inline-block;background:#25D366;color:#fff;padding:10px 24px;border-radius:100px;text-decoration:none;font-weight:700;font-size:13px;margin-right:8px">
+    💬 Share on WhatsApp
+  </a>
+  <a href="https://www.newworld.education/subscribe" style="display:inline-block;background:#1DA1F2;color:#fff;padding:10px 24px;border-radius:100px;text-decoration:none;font-weight:700;font-size:13px">
+    📬 Subscribe Free
+  </a>
+</div>
+
+<div style="text-align:center;color:#444;font-size:11px;margin-top:12px">
+  Forward this email to a friend studying ${subject} — they'll thank you.
 </div>`);
 }

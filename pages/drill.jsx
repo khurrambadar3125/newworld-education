@@ -11,6 +11,21 @@ import { useSpacedRep } from '../utils/useSpacedRep';
 import useStreaks, { StreakWidget } from '../utils/useStreaks';
 import { useSessionLimit, SessionLimitBanner, LimitReachedModal } from '../utils/useSessionLimit';
 import LegalFooter from '../components/LegalFooter';
+
+// Viral sharing after session
+function ShareSessionButtons({ subject, score, maxScore, correct, total }) {
+  const msg = `🎯 I just scored ${correct}/${total} (${maxScore > 0 ? Math.round((score/maxScore)*100) : 0}%) on ${subject} at NewWorldEdu! Can you beat me?`;
+  const url = 'https://www.newworld.education/free-practice-test';
+  const encoded = encodeURIComponent(`${msg}\n\nTry it free: ${url}`);
+  const btn = (bg) => ({ display:'inline-flex', alignItems:'center', gap:6, padding:'10px 18px', borderRadius:10, border:'none', cursor:'pointer', fontSize:13, fontWeight:700, background:bg, color:'#fff', textDecoration:'none' });
+  return (
+    <div style={{display:'flex', gap:8, flexWrap:'wrap', justifyContent:'center'}}>
+      <a href={`https://wa.me/?text=${encoded}`} target="_blank" rel="noopener noreferrer" style={btn('#25D366')}>💬 WhatsApp</a>
+      <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(msg + ' ' + url)}`} target="_blank" rel="noopener noreferrer" style={btn('#1DA1F2')}>🐦 Tweet</a>
+    </div>
+  );
+}
+
 /* ─── Audio feedback engine ─── */
 let _audioCtx = null;
 function getAudioCtx() { if (!_audioCtx) try { _audioCtx = new (window.AudioContext || window.webkitAudioContext)(); } catch {} return _audioCtx; }
@@ -1051,6 +1066,11 @@ export default function DrillPage() {
               </div>
             );
           })()}
+          {/* Share your score — viral growth */}
+          <div style={{textAlign:'center', marginBottom:16}}>
+            <div style={{fontSize:12, fontWeight:700, color:'rgba(255,255,255,.35)', marginBottom:8}}>SHARE YOUR SCORE</div>
+            <ShareSessionButtons subject={subject} score={liveScore} maxScore={liveMax} correct={correctCount} total={sessionResults.length} />
+          </div>
           {/* Streak */}
           <div style={{marginBottom:16}}><StreakWidget userId={userProfile?.email || userProfile?.name || 'guest'} /></div>
 

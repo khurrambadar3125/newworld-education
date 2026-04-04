@@ -435,6 +435,21 @@ export default function FreePracticeTest() {
                 ))}
               </div>
 
+              {/* Share score — viral growth */}
+              <div style={{ marginBottom:20 }}>
+                <div style={{ fontSize:11, fontWeight:700, color:'rgba(255,255,255,.3)', marginBottom:8, letterSpacing:1 }}>CHALLENGE A FRIEND</div>
+                <div style={{ display:'flex', gap:8, justifyContent:'center', flexWrap:'wrap' }}>
+                  <a href={`https://wa.me/?text=${encodeURIComponent(`🎯 I scored ${score}/${maxScore} (${pct}%) on ${subject} at NewWorldEdu! Can you beat me?\n\nTry free: https://www.newworld.education/free-practice-test`)}`} target="_blank" rel="noopener noreferrer"
+                    style={{ display:'inline-flex', alignItems:'center', gap:6, padding:'10px 18px', borderRadius:10, background:'#25D366', color:'#fff', fontSize:13, fontWeight:700, textDecoration:'none' }}>
+                    💬 Challenge on WhatsApp
+                  </a>
+                  <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`🎯 I scored ${pct}% on ${subject} at @NewWorldEdu! Can you beat me? https://www.newworld.education/free-practice-test`)}`} target="_blank" rel="noopener noreferrer"
+                    style={{ display:'inline-flex', alignItems:'center', gap:6, padding:'10px 18px', borderRadius:10, background:'#1DA1F2', color:'#fff', fontSize:13, fontWeight:700, textDecoration:'none' }}>
+                    🐦 Share Score
+                  </a>
+                </div>
+              </div>
+
               {/* CTA */}
               <div style={{
                 background:'linear-gradient(135deg,rgba(79,142,247,.1),rgba(99,102,241,.1))',
