@@ -86,7 +86,7 @@ export default function GarageSchoolPage() {
 
         <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 14 }}>
           {[
-            { icon: '⚛️', title: 'Starky Nano', desc: '47,000+ verified questions across 34+ subjects. Master one goal at a time. Starky teaches it, tests it, confirms mastery.' },
+            { icon: '⚛️', title: 'Starky Nano', desc: '50,000+ verified questions across 34+ subjects. Master one goal at a time. Starky teaches it, tests it, confirms mastery.' },
             { icon: '⚡', title: 'Practice Drill', desc: '5 drill modes including Weak Spots — automatically finds what each student struggles with and drills it.' },
             { icon: '📝', title: 'Mock Exams', desc: 'Timed exams with Cambridge-level marking. Pre-exam briefing. Post-exam revision plan.' },
             { icon: '💜', title: 'Special Needs Support', desc: '17 conditions, PhD-level SEN support. ADHD, dyslexia, autism, hearing impairment, Down Syndrome — all supported with adaptive teaching.' },
@@ -112,7 +112,7 @@ export default function GarageSchoolPage() {
             {[
               { n: '550+', l: 'Students' },
               { n: '25', l: 'Years' },
-              { n: '47,000+', l: 'Verified Questions' },
+              { n: '50,000+', l: 'Verified Questions' },
               { n: '34+', l: 'Subjects Covered' },
               { n: '24/7', l: 'AI Tutor Available' },
               { n: '₨0', l: 'Cost to Students' },

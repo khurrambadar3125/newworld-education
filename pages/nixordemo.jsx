@@ -61,7 +61,7 @@ export default function NixorDemoPage() {
           <div style={{ fontSize: 14, fontWeight: 700, color: GOLD, letterSpacing: '0.15em', marginBottom: 24 }}>NEWWORLDEDU FOR NIXOR COLLEGE</div>
           <h1 style={{ fontSize: 48, fontWeight: 900, color: '#fff', lineHeight: 1.15, marginBottom: 20, maxWidth: 800, margin: '0 auto 20px' }}>
             Pakistan's first Cambridge institution powered by{' '}
-            <span style={s.gold}>47,000+ verified past paper questions</span>
+            <span style={s.gold}>50,000+ verified past paper questions</span>
           </h1>
           <p style={{ fontSize: 20, color: DIM, maxWidth: 650, margin: '0 auto 40px', lineHeight: 1.7 }}>
             No more coaching centres. No more AI hallucinations. Every question your students practise is a real Cambridge question with the real mark scheme answer.
@@ -75,7 +75,7 @@ export default function NixorDemoPage() {
         <div style={{ background: 'rgba(255,255,255,0.02)', borderTop: '1px solid rgba(255,255,255,0.04)', borderBottom: '1px solid rgba(255,255,255,0.04)' }}>
           <div style={{ ...s.section, padding: '48px 24px', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 24, textAlign: 'center' }}>
             {[
-              { n: '47,000+', l: 'Verified Cambridge\npast paper questions' },
+              { n: '50,000+', l: 'Verified Cambridge\npast paper questions' },
               { n: '34+', l: 'Cambridge + Edexcel\nsubjects covered' },
               { n: '100%', l: 'Mark scheme verified\nanswers from official sources' },
               { n: '24/7', l: 'Available always\nno booking required' },
@@ -124,7 +124,7 @@ export default function NixorDemoPage() {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 16 }}>
               {[
                 { title: 'ChatGPT', items: ['Generates questions from training data', 'Answers can be confidently wrong', 'No mark scheme knowledge', 'No examiner report intelligence', 'Cannot predict Cambridge grades'], bad: true },
-                { title: 'Starky', items: ['47,000+ real Cambridge past paper questions', 'Every answer from the official mark scheme', '64 examiner report insights loaded', '70+ grade boundaries from 2021-2025', 'Predicted grade from real Cambridge data'], bad: false },
+                { title: 'Starky', items: ['50,000+ real Cambridge past paper questions', 'Every answer from the official mark scheme', '64 examiner report insights loaded', '70+ grade boundaries from 2021-2025', 'Predicted grade from real Cambridge data'], bad: false },
                 { title: 'Human Tutor', items: ['Limited to 1 student at a time', 'Rs 5,000-15,000 per hour', 'Unavailable at 11pm', 'May not know latest mark schemes', 'Cannot track every student daily'], bad: true },
               ].map(col => (
                 <div key={col.title} style={{ ...s.card, borderColor: col.bad ? 'rgba(255,255,255,0.06)' : 'rgba(201,168,76,0.3)', background: col.bad ? 'rgba(255,255,255,0.02)' : 'rgba(201,168,76,0.04)' }}>
@@ -172,7 +172,7 @@ export default function NixorDemoPage() {
             <h2 style={{ ...s.heading, textAlign: 'center' }}>What Makes Starky <span style={s.gold}>Different</span></h2>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginTop: 32 }}>
               {[
-                { title: 'Verified Question Bank', desc: '47,000+ questions extracted from official Cambridge past papers with mark scheme answers. No AI generation. Every answer traceable to the source document.' },
+                { title: 'Verified Question Bank', desc: '50,000+ questions extracted from official Cambridge past papers with mark scheme answers. No AI generation. Every answer traceable to the source document.' },
                 { title: 'Examiner Intelligence', desc: 'Insights from official Cambridge Principal Examiner Reports. Starky knows exactly what loses marks and warns students before they make the same mistakes.' },
                 { title: 'Cambridge Dialect', desc: 'Mark scheme language precision. "Net movement of water molecules" not "water moves". "Denatured" not "killed". The exact phrases that earn marks.' },
                 { title: 'Grade Prediction', desc: '70+ official grade boundaries from 2021-2025. Predicted Cambridge grade based on real thresholds, not estimates.' },
@@ -215,7 +215,7 @@ export default function NixorDemoPage() {
             <h2 style={{ ...s.heading, textAlign: 'center' }}>The Nixor Partnership</h2>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 20, marginTop: 32 }}>
               {[
-                { n: '1', title: 'Pilot Now', sub: 'No cost. No commitment.', items: ['8 weeks free access for all Nixor students', 'Nothing to install — opens in any browser', 'Weekly engagement report shared with Nixor', '47,000+ verified questions available immediately'], active: true },
+                { n: '1', title: 'Pilot Now', sub: 'No cost. No commitment.', items: ['8 weeks free access for all Nixor students', 'Nothing to install — opens in any browser', 'Weekly engagement report shared with Nixor', '50,000+ verified questions available immediately'], active: true },
                 { n: '2', title: 'Results Month 2', sub: 'Publishable grade improvement data.', items: ['Predicted grade per student shared with faculty', 'Subject-level weakness analysis across cohort', 'Strongest and weakest topics visible by class', 'Before vs after Starky grade comparison'], active: false },
                 { n: '3', title: 'The Nixor AI Lab', sub: "Pakistan's first AI-integrated A Level college.", items: ['Timetabled Starky Hours in free periods', 'Co-branded Nixor AI experience', 'Faculty dashboard with aggregate analytics', 'The hybrid model — Cambridge excellence + AI'], active: false },
               ].map(p => (

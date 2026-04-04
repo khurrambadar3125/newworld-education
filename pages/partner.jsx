@@ -33,7 +33,7 @@ export default function PartnerPage() {
     <>
       <Head>
         <title>Partner With Us — NewWorld Education</title>
-        <meta name="description" content="Free AI tutoring for your school. 46,000+ verified questions, 30+ subjects, Cambridge and Edexcel. No cost for schools. Parents upgrade for home use." />
+        <meta name="description" content="Free AI tutoring for your school. 50,000+ verified questions, 30+ subjects, Cambridge and Edexcel. No cost for schools. Parents upgrade for home use." />
       </Head>
 
       <div style={{ background: NAVY, color: '#fff', fontFamily: "'Inter','Sora',-apple-system,sans-serif", minHeight: '100vh' }}>
@@ -45,7 +45,7 @@ export default function PartnerPage() {
             Give your students a <span style={{ color: BLUE }}>world-class AI tutor</span> — at zero cost to your school
           </h1>
           <p style={{ fontSize: 20, color: DIM, maxWidth: 650, margin: '0 auto 40px', lineHeight: 1.7 }}>
-            46,000+ verified past paper questions. Cambridge and Edexcel. 30+ subjects. 24/7. In any language. Free for your school.
+            50,000+ verified past paper questions. Cambridge and Edexcel. 30+ subjects. 24/7. In any language. Free for your school.
           </p>
           <a href="#partner-form" style={{ display: 'inline-block', background: BLUE, color: '#fff', fontSize: 16, fontWeight: 800, padding: '16px 40px', borderRadius: 12, textDecoration: 'none' }}>
             Partner With Us — Free
@@ -56,7 +56,7 @@ export default function PartnerPage() {
         <div style={{ background: 'rgba(255,255,255,0.02)', borderTop: '1px solid rgba(255,255,255,0.04)', borderBottom: '1px solid rgba(255,255,255,0.04)' }}>
           <div style={{ ...s.section, padding: '48px 24px', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 24, textAlign: 'center' }}>
             {[
-              { n: '46,000+', l: 'Verified questions\nfrom past papers' },
+              { n: '50,000+', l: 'Verified questions\nfrom past papers' },
               { n: '30+', l: 'Cambridge + Edexcel\nsubjects covered' },
               { n: '8', l: 'Languages in\ndictionary bank' },
               { n: '24/7', l: 'Available always\nno booking needed' },
@@ -76,7 +76,7 @@ export default function PartnerPage() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 16 }}>
             {[
               { title: 'Private Tutor', price: '$32-52/hr', items: ['1 subject only', 'Available 2 hrs/week', 'Limited to tutor\'s knowledge', 'No progress tracking', 'No mark scheme access', 'Costs $260-415/month'], bad: true },
-              { title: 'Starky (NewWorldEdu)', price: '$9.99/mo', items: ['ALL 30+ subjects', 'Available 24/7', '46,000+ verified questions', 'Real-time progress tracking', 'Every mark scheme memorized', '25-40x cheaper than a tutor'], bad: false },
+              { title: 'Starky (NewWorldEdu)', price: '$9.99/mo', items: ['ALL 30+ subjects', 'Available 24/7', '50,000+ verified questions', 'Real-time progress tracking', 'Every mark scheme memorized', '25-40x cheaper than a tutor'], bad: false },
               { title: 'Free ChatGPT', price: 'Free', items: ['Makes up answers confidently', 'No mark scheme knowledge', 'No exam board awareness', 'No progress tracking', 'Cannot grade accurately', 'Students practice wrong content'], bad: true },
             ].map(col => (
               <div key={col.title} style={{ ...s.card, borderColor: col.bad ? 'rgba(255,255,255,0.06)' : 'rgba(79,142,247,0.3)', background: col.bad ? 'rgba(255,255,255,0.02)' : 'rgba(79,142,247,0.04)' }}>

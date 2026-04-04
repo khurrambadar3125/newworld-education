@@ -187,7 +187,7 @@ export default function BecomeNewton() {
           <div style={{ maxWidth: 650, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16, textAlign: 'center' }}>
             {[
               { n: '10', l: 'Levels' },
-              { n: '5,000+', l: 'Maths Questions' },
+              { n: '50,000+', l: 'Maths Questions' },
               { n: '6', l: 'Exam Boards' },
               { n: '15+', l: 'Languages' },
             ].map(s => (
