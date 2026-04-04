@@ -9,6 +9,7 @@ const MENU_GROUPS = [
     title: 'Study',
     items: [
       { href: '/learn',        label: '📖 Today\'s Plan' },
+      { href: '/become-newton', label: '🍎 Become Newton — Maths' },
       { href: '/drill',        label: '⚡ Practice Drill' },
       { href: '/mocks',        label: '📝 Mock Exams' },
       { href: '/challenge',    label: '🎯 Cambridge Challenge' },
