@@ -85,6 +85,10 @@
       "schedule": "0 */6 * * *"
     },
     {
+      "path": "/api/cron/brain-update",
+      "schedule": "0 21 * * *"
+    },
+    {
       "path": "/api/weekly-progress",
       "schedule": "0 3 * * 0"
     },
