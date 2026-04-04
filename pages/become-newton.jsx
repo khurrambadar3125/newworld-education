@@ -203,7 +203,7 @@ export default function BecomeNewton() {
         <div style={{ maxWidth: 650, margin: '0 auto', padding: '40px 20px', textAlign: 'center' }}>
           <div style={{ fontSize: 48, marginBottom: 12 }}>🍎</div>
           <h2 style={{ fontSize: 24, fontWeight: 900, marginBottom: 12 }}>
-            Newton didn't have a tutor. <span style={{ color: GOLD }}>You do.</span>
+            Newton didn't have a tutor. <span style={{ color: GOLD }}>You have one who thinks like Newton.</span>
           </h2>
           <p style={{ fontSize: 15, color: 'rgba(255,255,255,.45)', lineHeight: 1.8, marginBottom: 24, maxWidth: 500, margin: '0 auto 24px' }}>
             Every question from Cambridge, Edexcel, and SAT — combined. Every answer verified against the mark scheme. Every topic broken into tiny steps you can master in 3 minutes. In any language you speak.
