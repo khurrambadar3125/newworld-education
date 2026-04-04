@@ -73,16 +73,21 @@ ${optionsHtml}
 </div>
 
 <div style="text-align:center;margin:20px 0 8px">
-  <div style="color:#555;font-size:11px;margin-bottom:8px">CHALLENGE A FRIEND</div>
-  <a href="https://wa.me/?text=${encodeURIComponent('📚 My daily study question from NewWorldEdu! Can you answer it?\n\n' + question.slice(0, 120) + '...\n\nGet your own daily question free: https://www.newworld.education/subscribe')}" style="display:inline-block;background:#25D366;color:#fff;padding:10px 24px;border-radius:100px;text-decoration:none;font-weight:700;font-size:13px;margin-right:8px">
-    💬 Share on WhatsApp
-  </a>
-  <a href="https://www.newworld.education/subscribe" style="display:inline-block;background:#1DA1F2;color:#fff;padding:10px 24px;border-radius:100px;text-decoration:none;font-weight:700;font-size:13px">
-    📬 Subscribe Free
-  </a>
+  <div style="color:#555;font-size:11px;margin-bottom:10px">SHARE WITH FRIENDS</div>
+  <div>
+    <a href="https://wa.me/?text=${encodeURIComponent('📚 Daily study question from NewWorldEdu! Try it:\n\n' + question.slice(0, 100) + '...\n\nhttps://www.newworld.education/subscribe')}" style="display:inline-block;background:#25D366;color:#fff;padding:8px 14px;border-radius:100px;text-decoration:none;font-weight:700;font-size:11px;margin:3px">WhatsApp</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.newworld.education/daily-challenge" style="display:inline-block;background:#1877F2;color:#fff;padding:8px 14px;border-radius:100px;text-decoration:none;font-weight:700;font-size:11px;margin:3px">Facebook</a>
+    <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent('📚 Free daily study questions! https://www.newworld.education/daily-challenge')}" style="display:inline-block;background:#1DA1F2;color:#fff;padding:8px 14px;border-radius:100px;text-decoration:none;font-weight:700;font-size:11px;margin:3px">X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.newworld.education/daily-challenge" style="display:inline-block;background:#0A66C2;color:#fff;padding:8px 14px;border-radius:100px;text-decoration:none;font-weight:700;font-size:11px;margin:3px">LinkedIn</a>
+  </div>
+  <div style="margin-top:6px">
+    <a href="https://www.newworld.education/daily-challenge" style="display:inline-block;background:linear-gradient(135deg,#833AB4,#FD1D1D,#F77737);color:#fff;padding:8px 14px;border-radius:100px;text-decoration:none;font-weight:700;font-size:11px;margin:3px">Instagram Story</a>
+    <a href="https://www.newworld.education/subscribe" style="display:inline-block;background:#4F8EF7;color:#fff;padding:8px 14px;border-radius:100px;text-decoration:none;font-weight:700;font-size:11px;margin:3px">📬 Subscribe Free</a>
+  </div>
 </div>
 
-<div style="text-align:center;color:#444;font-size:11px;margin-top:12px">
-  Forward this email to a friend studying ${subject} — they'll thank you.
+<div style="text-align:center;color:#444;font-size:11px;margin-top:10px">
+  Forward this email to a friend studying ${subject} — they'll thank you.<br>
+  <a href="https://www.newworld.education/daily-challenge" style="color:#4F8EF7">🏆 Today's Daily Challenge</a> — same 5 questions for everyone!
 </div>`);
 }

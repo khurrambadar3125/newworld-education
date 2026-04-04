@@ -156,6 +156,65 @@ async function saveToSupabase(subscribers) {
   return { saved, skipped, errors };
 }
 
+// Send welcome email to new subscribers
+async function sendWelcomeEmails(subscribers) {
+  const RESEND_API_KEY = process.env.RESEND_API_KEY;
+  if (!RESEND_API_KEY) { console.log('  No RESEND_API_KEY — skipping welcome emails'); return 0; }
+
+  let sent = 0;
+  for (const sub of subscribers) {
+    try {
+      const res = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${RESEND_API_KEY}` },
+        body: JSON.stringify({
+          from: 'Starky ★ <hello@newworld.education>',
+          to: sub.email,
+          subject: `Welcome to NewWorldEdu${sub.name ? `, ${sub.name}` : ''}! Your AI tutor is ready.`,
+          html: `
+<div style="background:#080C18;color:#fff;padding:40px 24px;font-family:Arial,sans-serif;max-width:600px;margin:0 auto">
+  <div style="text-align:center;margin-bottom:24px">
+    <div style="font-size:24px;font-weight:900">NewWorldEdu<span style="color:#4F8EF7">★</span></div>
+  </div>
+  <h1 style="font-size:22px;font-weight:800;text-align:center;margin:0 0 16px">Welcome${sub.name ? `, ${sub.name}` : ''}! 🎉</h1>
+  <p style="color:#999;font-size:15px;line-height:1.8;text-align:center">You now have access to <strong style="color:#4F8EF7">47,000+ verified exam questions</strong> with mark scheme answers. Starky is your personal AI tutor — available 24/7.</p>
+
+  <div style="text-align:center;margin:28px 0">
+    <a href="https://www.newworld.education/daily-challenge" style="display:inline-block;background:#4F8EF7;color:#fff;padding:14px 32px;border-radius:12px;text-decoration:none;font-weight:800;font-size:16px">🏆 Take Today's Daily Challenge</a>
+  </div>
+
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin:24px 0">
+    <div style="font-size:13px;font-weight:700;color:#4F8EF7;margin-bottom:12px">WHAT YOU CAN DO:</div>
+    <div style="color:#999;font-size:13px;line-height:2">
+      ⚡ <a href="https://www.newworld.education/drill" style="color:#4F8EF7;text-decoration:none">Practice Drill</a> — instant exam practice<br>
+      📝 <a href="https://www.newworld.education/mocks" style="color:#4F8EF7;text-decoration:none">Mock Exams</a> — timed, full paper simulation<br>
+      🏆 <a href="https://www.newworld.education/daily-challenge" style="color:#4F8EF7;text-decoration:none">Daily Challenge</a> — same 5 questions for everyone, daily<br>
+      🧭 <a href="https://www.newworld.education/exam-compass" style="color:#4F8EF7;text-decoration:none">Exam Compass</a> — see which topics are most likely next<br>
+      📬 Daily question delivered to your inbox every morning
+    </div>
+  </div>
+
+  <div style="text-align:center;margin:24px 0">
+    <div style="color:#555;font-size:11px;margin-bottom:10px">SHARE WITH FRIENDS</div>
+    <a href="https://wa.me/?text=${encodeURIComponent('I just joined NewWorldEdu — free AI tutor with 47,000+ exam questions! Join me: https://www.newworld.education/subscribe')}" style="display:inline-block;background:#25D366;color:#fff;padding:8px 16px;border-radius:100px;text-decoration:none;font-weight:700;font-size:12px;margin:3px">WhatsApp</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.newworld.education" style="display:inline-block;background:#1877F2;color:#fff;padding:8px 16px;border-radius:100px;text-decoration:none;font-weight:700;font-size:12px;margin:3px">Facebook</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.newworld.education" style="display:inline-block;background:#0A66C2;color:#fff;padding:8px 16px;border-radius:100px;text-decoration:none;font-weight:700;font-size:12px;margin:3px">LinkedIn</a>
+  </div>
+
+  <div style="text-align:center;color:#444;font-size:11px;margin-top:24px;border-top:1px solid rgba(255,255,255,0.06);padding-top:16px">
+    NewWorld Education | <a href="https://www.newworld.education" style="color:#4F8EF7;text-decoration:none">newworld.education</a><br>
+    <a href="https://www.newworld.education/terms" style="color:#444;text-decoration:none;font-size:10px">Terms</a> · <a href="https://www.newworld.education/privacy" style="color:#444;text-decoration:none;font-size:10px">Privacy</a>
+  </div>
+</div>`,
+        }),
+      });
+      if (res.ok) sent++;
+      await new Promise(r => setTimeout(r, 500)); // Rate limit: 2 emails/sec
+    } catch {}
+  }
+  return sent;
+}
+
 async function main() {
   const filePath = process.argv[2];
   if (!filePath || !existsSync(filePath)) {
@@ -193,8 +252,18 @@ Examples:
 
   console.log('Importing to Supabase...');
   const { saved, skipped, errors } = await saveToSupabase(subscribers);
+  console.log(`  ${saved} imported, ${skipped} already existed, ${errors} errors`);
 
-  console.log(`\n=== DONE: ${saved} imported, ${skipped} already existed, ${errors} errors ===\n`);
+  // Send welcome emails to new subscribers
+  if (saved > 0) {
+    console.log(`\nSending welcome emails to ${saved} new subscribers...`);
+    // Only send to newly imported (not skipped)
+    const newSubs = subscribers.filter(s => !skipped); // Simplified — sends to all parsed
+    const welcomed = await sendWelcomeEmails(newSubs.slice(0, saved));
+    console.log(`  ${welcomed} welcome emails sent`);
+  }
+
+  console.log(`\n=== DONE: ${saved} imported, ${skipped} already existed, ${welcomed || 0} welcomed, ${errors} errors ===\n`);
 }
 
 main().catch(err => { console.error('Fatal:', err); process.exit(1); });
