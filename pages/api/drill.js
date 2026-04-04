@@ -194,6 +194,10 @@ export default withErrorAlert(async function handler(req, res) {
   const { action, ...params } = req.body || {};
   if (!action) return res.status(400).json({ error:'action required' });
 
+  // Country-aware curriculum: UAE users get Edexcel + Cambridge, Pakistan gets Cambridge only
+  const userCountry = params.country || req.headers['x-user-country'] || 'PK';
+  const isUAE = userCountry === 'UAE';
+
   try {
     let prompt;
     let systemPrompt = SYSTEM;
@@ -204,8 +208,8 @@ export default withErrorAlert(async function handler(req, res) {
       // Try serving from the verified question bank before AI generation
       if (!isYoungLearner(params.level) && !params.imageBase64) {
         try {
-          // 1. Try Cambridge bank first (primary source)
-          const bankQ = await getRandomQuestion({
+          // 1. Try bank first — Cambridge for all, Edexcel for UAE
+          let bankQ = await getRandomQuestion({
             subject: params.subject,
             level: params.level || 'O Level',
             topic: params.topic || undefined,
@@ -213,6 +217,17 @@ export default withErrorAlert(async function handler(req, res) {
             curriculum: 'cambridge',
             excludeIds: params.excludeIds || [],
           });
+          // UAE: also try Edexcel bank if Cambridge didn't match
+          if (!bankQ && isUAE) {
+            bankQ = await getRandomQuestion({
+              subject: params.subject,
+              level: params.level || 'O Level',
+              topic: params.topic || undefined,
+              type: params.questionType || undefined,
+              curriculum: 'edexcel',
+              excludeIds: params.excludeIds || [],
+            });
+          }
           if (bankQ) {
             const formatted = toClientFormat(bankQ);
             return res.status(200).json({ ...formatted, _source: 'verified_bank', _bankId: bankQ.id });

@@ -293,6 +293,8 @@ export default function DrillPage() {
 
       // ── Fallback: direct AI generation via /api/drill ──────────────────────
       const body = { action:'generate', level, subject, topic:t, difficulty, questionType:type };
+      // Pass country for curriculum-aware content serving
+      try { body.country = localStorage.getItem('user_country') || 'PK'; } catch { body.country = 'PK'; }
       if (urlContext) body.context = urlContext;
       if (imageData) { body.imageBase64 = imageData.base64; body.imageType = imageData.type; }
       const res = await fetch('/api/drill', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body) });

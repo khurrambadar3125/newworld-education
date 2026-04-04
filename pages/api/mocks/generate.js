@@ -17,20 +17,26 @@ const QUESTION_COUNT = 10;
 export default withErrorAlert(async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
 
-  const { subject, grade, email } = req.body;
+  const { subject, grade, email, country } = req.body;
   if (!subject) return res.status(400).json({ error: 'Subject required' });
+  const isUAE = (country || req.headers['x-user-country'] || 'PK') === 'UAE';
 
   try {
     // ── STEP 1: Try verified question bank first ──────────────────
     let bankQuestions = [];
     try {
-      // Fetch a larger pool and randomly sample for variety
-      const pool = await fetchQuestions({
+      // Fetch from Cambridge first, then Edexcel for UAE
+      let pool = await fetchQuestions({
         subject,
         level: grade || 'O Level',
         curriculum: 'cambridge',
         limit: 50,
       });
+      // UAE: supplement with Edexcel questions
+      if (isUAE) {
+        const edexcelPool = await fetchQuestions({ subject, level: grade || 'O Level', curriculum: 'edexcel', limit: 20 });
+        pool = [...pool, ...edexcelPool];
+      }
       if (pool.length >= QUESTION_COUNT) {
         // Shuffle and pick QUESTION_COUNT
         const shuffled = pool.sort(() => Math.random() - 0.5);
