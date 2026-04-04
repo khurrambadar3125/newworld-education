@@ -8,6 +8,7 @@
 
 import { useState } from 'react';
 import Head from 'next/head';
+import LegalFooter from '../components/LegalFooter';
 
 const NAVY = '#0A1628';
 const GOLD = '#C9A84C';
@@ -47,7 +48,7 @@ export default function GarageSchoolPage() {
 
         <p style={{ fontSize: isMobile ? 16 : 20, color: 'rgba(250,246,235,0.6)', lineHeight: 1.8, maxWidth: 640, margin: '0 auto 32px' }}>
           In 1999, Shabina Mustafa started teaching 14 children in her garage in Clifton, Karachi.
-          25 years later, over 550 underprivileged children study at The Garage School.
+          Over 25 years later, over 550 underprivileged children study at The Garage School.
           Now, every one of them gets a personal AI tutor.
         </p>
 
@@ -85,10 +86,10 @@ export default function GarageSchoolPage() {
 
         <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 14 }}>
           {[
-            { icon: '⚛️', title: 'Starky Nano', desc: '2,803 learning goals across 30 subjects. Master one goal at a time. Starky teaches it, tests it, confirms mastery.' },
+            { icon: '⚛️', title: 'Starky Nano', desc: '47,000+ verified questions across 34+ subjects. Master one goal at a time. Starky teaches it, tests it, confirms mastery.' },
             { icon: '⚡', title: 'Practice Drill', desc: '5 drill modes including Weak Spots — automatically finds what each student struggles with and drills it.' },
             { icon: '📝', title: 'Mock Exams', desc: 'Timed exams with Cambridge-level marking. Pre-exam briefing. Post-exam revision plan.' },
-            { icon: '💜', title: 'Special Needs Support', desc: '240 adaptive teaching profiles. Students with ADHD, dyslexia, hearing impairment — all supported.' },
+            { icon: '💜', title: 'Special Needs Support', desc: '17 conditions, PhD-level SEN support. ADHD, dyslexia, autism, hearing impairment, Down Syndrome — all supported with adaptive teaching.' },
             { icon: '🎙️', title: 'Voice Enabled', desc: 'Students can speak to Starky in Urdu or English. Perfect for early learners who can\'t type yet.' },
             { icon: '📧', title: 'Teacher Reports', desc: 'Every session logged. Teachers see which students are struggling and which topics need classroom reinforcement.' },
             { icon: '🌍', title: 'Urdu + English', desc: 'Starky auto-detects language. Students can ask in Roman Urdu and get Cambridge-precise answers.' },
@@ -111,8 +112,8 @@ export default function GarageSchoolPage() {
             {[
               { n: '550+', l: 'Students' },
               { n: '25', l: 'Years' },
-              { n: '2,803', l: 'AI Learning Goals' },
-              { n: '30', l: 'Subjects Covered' },
+              { n: '47,000+', l: 'Verified Questions' },
+              { n: '34+', l: 'Subjects Covered' },
               { n: '24/7', l: 'AI Tutor Available' },
               { n: '₨0', l: 'Cost to Students' },
             ].map(s => (
@@ -171,15 +172,7 @@ export default function GarageSchoolPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer style={{ padding: '24px 16px', textAlign: 'center', borderTop: '1px solid rgba(250,246,235,0.04)' }}>
-        <div style={{ fontSize: 11, color: 'rgba(250,246,235,0.2)' }}>
-          &copy; 2026 NewWorldEdu &middot; The Garage School &middot; Safi Benevolent Trust
-        </div>
-        <div style={{ fontSize: 11, color: 'rgba(250,246,235,0.15)', marginTop: 4 }}>
-          newworld.education &middot; thegarageschool.com
-        </div>
-      </footer>
+      <LegalFooter />
     </div>
   );
 }
