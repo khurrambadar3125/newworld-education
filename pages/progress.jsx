@@ -31,22 +31,23 @@ export default function Progress() {
   const [overview, setOverview] = useState(null);
   const [loading, setLoading] = useState(true);
   const [tab, setTab] = useState('overview'); // overview, mastery, badges
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     if (status !== 'authenticated') return;
     fetch('/api/todays-plan')
-      .then(r => r.json())
+      .then(r => { if (!r.ok) throw new Error('Failed to load'); return r.json(); })
       .then(data => { setOverview(data); setLoading(false); })
-      .catch(() => setLoading(false));
+      .catch(err => { setError(err.message); setLoading(false); });
   }, [status]);
 
   useEffect(() => {
     if (!subject || status !== 'authenticated') return;
     setLoading(true);
     fetch(`/api/study-plan?action=mastery&subject=${encodeURIComponent(subject)}&level=${encodeURIComponent(level)}`)
-      .then(r => r.json())
+      .then(r => { if (!r.ok) throw new Error('Failed to load'); return r.json(); })
       .then(data => { setMastery(data.mastery || []); setLoading(false); })
-      .catch(() => setLoading(false));
+      .catch(err => { setError(err.message); setLoading(false); });
   }, [subject, level, status]);
 
   if (status === 'loading') return null;
@@ -157,6 +158,15 @@ export default function Progress() {
           )}
 
           {loading && <div style={{ textAlign: 'center', padding: 40, color: 'rgba(255,255,255,.4)' }}>Loading...</div>}
+          {error && <div style={{ textAlign: 'center', padding: 24, color: '#F97316', background: 'rgba(249,115,22,.08)', borderRadius: 12, margin: '16px 0' }}>Something went wrong. <button onClick={() => window.location.reload()} style={{ color: '#4F8EF7', background: 'none', border: 'none', cursor: 'pointer', fontWeight: 700 }}>Try again</button></div>}
+          {!loading && !error && totalAnswered === 0 && !subject && (
+            <div style={{ textAlign: 'center', padding: 40, background: 'rgba(255,255,255,.03)', borderRadius: 14, border: '1px solid rgba(255,255,255,.06)' }}>
+              <div style={{ fontSize: 40, marginBottom: 12 }}>📚</div>
+              <div style={{ fontSize: 16, fontWeight: 700, marginBottom: 8 }}>Start learning to see your progress</div>
+              <div style={{ fontSize: 13, color: 'rgba(255,255,255,.4)', marginBottom: 20 }}>Answer questions in drill or mocks to build your progress dashboard.</div>
+              <a href="/drill" style={{ background: '#4F8EF7', color: '#fff', padding: '10px 28px', borderRadius: 10, fontWeight: 700, fontSize: 14, textDecoration: 'none' }}>Start a Drill</a>
+            </div>
+          )}
 
           {/* Overview Tab */}
           {tab === 'overview' && mastery.length > 0 && !loading && (

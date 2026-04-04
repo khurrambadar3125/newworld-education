@@ -13,7 +13,7 @@ const TABS = [
 ];
 
 // Pages where bottom nav should appear
-const SHOW_ON = ['/learn', '/drill', '/mocks', '/progress', '/student-dashboard', '/challenge', '/exam-compass', '/free-practice-test'];
+const SHOW_ON = ['/learn', '/drill', '/mocks', '/progress', '/student-dashboard', '/challenge', '/exam-compass', '/free-practice-test', '/nano', '/homework', '/essay', '/past-papers', '/special-needs', '/sat'];
 
 export default function BottomNav() {
   const router = useRouter();
