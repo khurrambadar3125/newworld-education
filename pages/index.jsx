@@ -1072,10 +1072,10 @@ export default function Home() {
           </>
         ) : (
           <div className="pr">
-            <div className="pi"><div className="pn">16</div><div className="pl">Languages</div></div>
+            <div className="pi"><div className="pn">50K+</div><div className="pl">Questions</div></div>
             <div className="pi"><div className="pn">24/7</div><div className="pl">Available</div></div>
-            <div className="pi"><div className="pn">KG–A</div><div className="pl">All Grades</div></div>
-            <div className="pi"><div className="pn">7 Days</div><div className="pl">Free Trial</div></div>
+            <div className="pi"><div className="pn">34+</div><div className="pl">Subjects</div></div>
+            <div className="pi"><div className="pn">Free</div><div className="pl">To Start</div></div>
           </div>
         )}
       </section>
@@ -1279,10 +1279,7 @@ export default function Home() {
         <div style={{maxWidth:600,margin:'0 auto'}}>
           <h2 style={{fontSize:'clamp(22px,4vw,30px)',fontWeight:900,margin:'0 0 16px',lineHeight:1.3}}>The examiner inside the tutor.</h2>
           <div style={{fontSize:'clamp(14px,1.5vw,16px)',color:'rgba(255,255,255,0.55)',lineHeight:1.9}}>
-            <p style={{margin:'0 0 16px'}}>Most tutors teach the subject. Starky teaches the mark scheme.</p>
-            <p style={{margin:'0 0 16px'}}>Every Cambridge examiner publishes a report after every exam series listing exactly what students got wrong. Starky has read all of them — for every subject, every paper, going back 30 years.</p>
-            <p style={{margin:'0 0 16px'}}>When you make a mistake, Starky does not just correct it. It tells you why Cambridge deducts the mark, how frequently it appears in past papers, and exactly what to write instead.</p>
-            <p style={{margin:0}}>That is not AI tutoring. That is what a world-class private tutor does after years with a student — except Starky does it from session one.</p>
+            <p style={{margin:0}}>Most tutors teach the subject. Starky teaches the mark scheme. 50,000+ verified questions. Every answer from the official mark scheme. Starky knows exactly what loses marks — and tells you what to write instead. From session one.</p>
           </div>
         </div>
       </section>
@@ -1397,10 +1394,10 @@ export default function Home() {
           </div>
           {[
             ['Available','24/7','3x per week'],
-            ['Subjects','All subjects','1-2 subjects'],
-            ['Cost/month','Rs 8,300','Rs 8,000-15,000 per subject'],
-            ['Past papers','30 years of papers','From memory'],
-            ['Parent reports','After every session','Rarely'],
+            ['Subjects','34+ subjects','1-2 subjects'],
+            ['Cost/month','$9.99','$260-415 per subject'],
+            ['Questions','50,000+ verified','From memory'],
+            ['Progress','Real-time tracking','Rarely reported'],
             ['Patience','Unlimited','Human'],
           ].map(([label,starky,tutor],i) => (
             <div key={i} style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',borderBottom:i<5?'1px solid rgba(255,255,255,0.04)':'none'}}>
@@ -1434,25 +1431,20 @@ export default function Home() {
           🏆 Refer Friends — Win Meta Ray-Ban + Free Months
         </a>
         <div className="flinks">
-          <a href="/special-needs">Special Needs</a>
-          <a href="/parent">Parents</a>
-          <a href="/pricing">Pricing</a>
-          <a href="/past-papers">Past Papers</a>
-          <a href="/drill">Practice Drill</a>
-          <a href="/nano">Nano</a>
-          <a href="/textbooks">Textbooks</a>
-          <a href="/homework">Homework Help</a>
-          <a href="/arts">Arts</a>
-          <a href="/music">Music</a>
-          <a href="/reading">Reading</a>
-          <a href="/arts-for-all">Arts for All</a>
-          <a href="/music-for-all">Music for All</a>
-          <a href="/reading-for-all">Reading for All</a>
-          <a href="/ibcc">IBCC Calculator</a>
-          <a href="/school">For Schools</a>
-          <a href="/subscribe">Daily Questions</a>
-          <a href="/leaderboard">Leaderboard</a>
-          <a href="/dashboard">Teacher Dashboard</a>
+          <a href="/learn">📖 Today's Plan</a>
+          <a href="/become-newton">🍎 Become Newton</a>
+          <a href="/entrance-tests">🎯 Entrance Tests</a>
+          <a href="/drill">⚡ Practice Drill</a>
+          <a href="/mocks">📝 Mock Exams</a>
+          <a href="/daily-challenge">🏆 Daily Challenge</a>
+          <a href="/exam-compass">🧭 Exam Compass</a>
+          <a href="/sat">🎓 SAT Prep</a>
+          <a href="/past-papers">📚 Past Papers</a>
+          <a href="/special-needs">💜 Special Needs</a>
+          <a href="/parent">👨‍👩‍👧 Parents</a>
+          <a href="/partner">🏫 School Partnerships</a>
+          <a href="/pricing">💳 Pricing</a>
+          <a href="/subscribe">📬 Daily Questions</a>
         </div>
         <div style={{display:'flex',gap:16,justifyContent:'center',marginTop:8,flexWrap:'wrap'}}>
           <a href="/championship" style={{color:'rgba(255,195,0,0.5)',fontSize:12,textDecoration:'none',fontWeight:700}}>🏆 Refer & Win — Championship + Free Months</a>

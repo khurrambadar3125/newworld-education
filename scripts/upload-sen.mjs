@@ -143,7 +143,7 @@ async function parseQuestions(qpText, msText, meta) {
       'anthropic-version': '2023-06-01',
     },
     body: JSON.stringify({
-      model: 'claude-sonnet-4-20250514',
+      model: 'claude-3-haiku-20240307',
       max_tokens: 8192,
       system: `You extract exam questions from UK educational assessment papers. ${levelDesc}
 

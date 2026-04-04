@@ -11,7 +11,6 @@ import { useState, useEffect, useCallback } from 'react';
 const COUNTRIES = [
   { code: 'PK', flag: '🇵🇰', label: 'Pakistan' },
   { code: 'UAE', flag: '🇦🇪', label: 'UAE' },
-  { code: 'OTHER', flag: '🌍', label: 'Other' },
 ];
 
 const UAE_CURRICULA = [

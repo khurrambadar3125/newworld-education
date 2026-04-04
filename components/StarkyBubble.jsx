@@ -411,7 +411,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
         throw new Error(data.error || `API returned ${res.status}`);
       }
 
-      const reply = data.response || data.content || 'Something went wrong. Try again!';
+      const reply = data.response || data.content || 'Starky is taking a brief rest — high demand right now. Please try again in a moment. The intelligence never sleeps for long!';
 
       setMessages([...newMsgs, { role: 'assistant', content: reply }]);
       setImageData(null);
@@ -556,12 +556,12 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
         // ── Non-streaming path (images, fallback) ────────────────────────
         let data;
         try { data = await res.json(); } catch { data = {}; }
-        reply = data.response || data.content || 'Something went wrong. Try again!';
+        reply = data.response || data.content || 'Starky is taking a brief rest — high demand right now. Please try again in a moment. The intelligence never sleeps for long!';
         setMessages([...newMsgs, { role: 'assistant', content: reply }]);
       }
 
       if (!reply) {
-        reply = 'Something went wrong. Try again!';
+        reply = 'Starky is taking a brief rest — high demand right now. Please try again in a moment. The intelligence never sleeps for long!';
         // Update the streaming message if it was left empty
         setMessages(prev => {
           const updated = [...prev];
@@ -935,7 +935,7 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
               {(() => {
                 const gId = (userProfile?.gradeId || '').toLowerCase();
                 const isKid = ['kg','grade1','grade2','grade3','grade4','grade5'].includes(gId);
-                if (!isKid || loading || messages.length > 2) return null;
+                if (!isKid || !gId || loading || messages.length > 2) return null;
                 const kidSubjects = [
                   { emoji: '🔢', label: 'Maths', msg: 'I want to learn Maths!' },
                   { emoji: '📖', label: 'English', msg: 'I want to learn English!' },
