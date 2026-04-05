@@ -9,6 +9,7 @@
  */
 
 import { getSupabase } from '../../utils/supabase';
+import { SYLLABUS } from '../../utils/syllabusStructure';
 
 // Group raw topics into modules (syllabus-aligned from official Cambridge syllabuses)
 const MODULE_MAP = {
@@ -197,26 +198,57 @@ export default async function handler(req, res) {
       .filter(t => t.questionCount >= 2)
       .sort((a, b) => b.questionCount - a.questionCount);
 
-    // Group into modules
-    const moduleMap = MODULE_MAP[subject];
+    // Group into modules using proper syllabus structure
+    const syllabus = SYLLABUS[subject];
     let modules;
 
-    if (moduleMap) {
-      modules = moduleMap.map(m => {
-        const matched = topics.filter(t =>
-          m.keywords.some(kw => t.topic.toLowerCase().includes(kw))
-        );
-        return { module: m.module, topics: matched, totalQuestions: matched.reduce((s, t) => s + t.questionCount, 0) };
-      }).filter(m => m.topics.length > 0);
+    if (syllabus?.themes) {
+      // Use textbook-accurate structure: themes → sections
+      modules = [];
+      const matchedTopics = new Set();
 
-      // Add unmatched topics as "Other"
-      const matchedTopics = new Set(modules.flatMap(m => m.topics.map(t => t.topic)));
+      for (const theme of syllabus.themes) {
+        const themeModule = { module: theme.name, sections: [], topics: [], totalQuestions: 0 };
+
+        for (const section of theme.sections) {
+          const matched = topics.filter(t =>
+            section.keywords.some(kw => t.topic.toLowerCase().includes(kw))
+          );
+          matched.forEach(t => matchedTopics.add(t.topic));
+
+          if (matched.length > 0) {
+            themeModule.topics.push(...matched);
+            themeModule.totalQuestions += matched.reduce((s, t) => s + t.questionCount, 0);
+          }
+          themeModule.sections.push({
+            id: section.id,
+            name: section.name,
+            topicCount: matched.length,
+            questionCount: matched.reduce((s, t) => s + t.questionCount, 0),
+          });
+        }
+
+        if (themeModule.topics.length > 0) {
+          modules.push(themeModule);
+        }
+      }
+
+      // Add unmatched topics
       const unmatched = topics.filter(t => !matchedTopics.has(t.topic));
       if (unmatched.length > 0) {
-        modules.push({ module: 'Other Topics', topics: unmatched, totalQuestions: unmatched.reduce((s, t) => s + t.questionCount, 0) });
+        modules.push({ module: 'Other Topics', topics: unmatched, totalQuestions: unmatched.reduce((s, t) => s + t.questionCount, 0), sections: [] });
       }
     } else {
-      modules = autoGroupTopics(topics);
+      // Fallback: use MODULE_MAP or auto-group
+      const moduleMap = MODULE_MAP[subject];
+      if (moduleMap) {
+        modules = moduleMap.map(m => {
+          const matched = topics.filter(t => m.keywords.some(kw => t.topic.toLowerCase().includes(kw)));
+          return { module: m.module, topics: matched, totalQuestions: matched.reduce((s, t) => s + t.questionCount, 0), sections: [] };
+        }).filter(m => m.topics.length > 0);
+      } else {
+        modules = autoGroupTopics(topics);
+      }
     }
 
     // Get mastery data if user is logged in
