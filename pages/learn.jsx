@@ -15,6 +15,7 @@ import StreakFlame from '../components/StreakFlame';
 import XPBar from '../components/XPBar';
 import SkillTree from '../components/SkillTree';
 import BottomNav from '../components/BottomNav';
+import { useJourney } from '../utils/journeyTracker';
 import LegalFooter from '../components/LegalFooter';
 const SUBJECTS = [
   'Mathematics','Additional Mathematics','Physics','Chemistry','Biology',
@@ -106,6 +107,24 @@ export default function Learn() {
                 : 'Ready to learn?'}
             </div>
           </div>
+
+          {/* Continue where you left off */}
+          {(() => {
+            try {
+              const j = JSON.parse(localStorage.getItem('nw_journey') || '{}');
+              if (j.current?.page === 'nano-teach' && j.current?.subject) {
+                return (
+                  <a href={`/nano-teach?subject=${encodeURIComponent(j.current.subject)}&topic=${encodeURIComponent(j.current.topic || '')}&level=${encodeURIComponent(j.current.level || 'O Level')}`}
+                    style={{ display: 'block', padding: '14px 18px', marginBottom: 16, borderRadius: 12, background: 'rgba(79,142,247,.08)', border: '1px solid rgba(79,142,247,.2)', textDecoration: 'none', color: '#fff' }}>
+                    <div style={{ fontSize: 11, fontWeight: 700, color: '#4F8EF7', marginBottom: 4 }}>CONTINUE WHERE YOU LEFT OFF</div>
+                    <div style={{ fontSize: 15, fontWeight: 700 }}>{j.current.topic || j.current.subject} — Step {j.current.step || 1}/4</div>
+                    <div style={{ fontSize: 12, color: 'rgba(255,255,255,.4)', marginTop: 2 }}>{j.current.subject} · {j.current.level || 'O Level'}</div>
+                  </a>
+                );
+              }
+            } catch {}
+            return null;
+          })()}
 
           {/* Subject selector */}
           <div style={S.sectionTitle}>YOUR SUBJECT</div>

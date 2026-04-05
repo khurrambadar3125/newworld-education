@@ -16,9 +16,11 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import LegalFooter from '../components/LegalFooter';
 import BottomNav from '../components/BottomNav';
+import { useJourney } from '../utils/journeyTracker';
 
 export default function NanoTeach() {
   const router = useRouter();
+  const journey = useJourney();
   const { subject, topic, level = 'O Level' } = router.query;
 
   const [data, setData] = useState(null);
@@ -35,6 +37,13 @@ export default function NanoTeach() {
   const [practiceSelected, setPracticeSelected] = useState(null);
   const [practiceFeedback, setPracticeFeedback] = useState(null);
   const [results, setResults] = useState([]);
+
+  // Track journey position on every phase change
+  useEffect(() => {
+    if (subject) {
+      journey.enter('nano-teach', { subject, topic, level, step: phase === 'learn' ? 1 : phase === 'guided' ? 2 : phase === 'practice' ? 3 : 4, nextTopic: data?.nextTopic });
+    }
+  }, [phase, subject]);
 
   useEffect(() => {
     if (!subject) return;
