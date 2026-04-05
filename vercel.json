@@ -89,6 +89,10 @@
       "schedule": "0 21 * * *"
     },
     {
+      "path": "/api/cron/teaching-grow",
+      "schedule": "0 5 * * *"
+    },
+    {
       "path": "/api/weekly-progress",
       "schedule": "0 3 * * 0"
     },
