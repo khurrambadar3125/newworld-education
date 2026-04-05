@@ -54,6 +54,13 @@ export default async function handler(req, res) {
       return res.status(200).json({ error: 'No questions available for this topic', questions: [] });
     }
 
+    // Prioritize MCQs (better UX for nano-teach) — move them to front
+    pool.sort((a, b) => {
+      if (a.type === 'mcq' && b.type !== 'mcq') return -1;
+      if (a.type !== 'mcq' && b.type === 'mcq') return 1;
+      return 0;
+    });
+
     // Need minimum 2 questions (1 worked + 1 practice). Ideal is 5+.
     if (pool.length < 2) {
       return res.status(200).json({ error: 'Not enough questions for a full lesson. Try another topic.', questions: [] });
