@@ -188,6 +188,12 @@ export default function NanoTeach() {
               <button onClick={() => setPhase('guided')} style={S.btn(true)}>
                 I understand — test me →
               </button>
+              <div style={{ textAlign: 'center', marginTop: 12 }}>
+                <a href={`/?message=${encodeURIComponent(`I'm learning ${topic || subject} and need help understanding: ${we?.question?.slice(0, 80)}`)}&subject=${encodeURIComponent(subject)}&from=nano-teach&returnTo=${encodeURIComponent(router.asPath)}`}
+                  style={{ fontSize: 12, color: 'rgba(255,255,255,.3)', textDecoration: 'none' }}>
+                  Stuck? Ask Starky for help →
+                </a>
+              </div>
             </>
           )}
 
@@ -261,6 +267,14 @@ export default function NanoTeach() {
                 <button onClick={submitGuided} disabled={!guidedSelected} style={S.btn(!!guidedSelected)}>Submit Answer</button>
               ) : (
                 <button onClick={() => { setPhase('practice'); setPracticeIdx(0); }} style={S.btn(true)}>Continue to Practice →</button>
+              )}
+              {!guidedFeedback && (
+                <div style={{ textAlign: 'center', marginTop: 12 }}>
+                  <a href={`/?message=${encodeURIComponent(`I'm stuck on this ${topic || subject} question: ${gq?.question?.slice(0, 80)}`)}&subject=${encodeURIComponent(subject)}&from=nano-teach&returnTo=${encodeURIComponent(router.asPath)}`}
+                    style={{ fontSize: 12, color: 'rgba(255,255,255,.3)', textDecoration: 'none' }}>
+                    Stuck? Ask Starky →
+                  </a>
+                </div>
               )}
             </>
           )}

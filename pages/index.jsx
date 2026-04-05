@@ -602,11 +602,16 @@ export default function Home() {
             <button className="ib" onClick={() => { if (messages.length > 2 && !confirm('Leave this chat? Your conversation will be lost.')) return; setChatStarted(false); setMessages([]); stopSpeaking(); }}>← Back</button>
           </div>
         </div>
-        {(nanoMode || paramFrom) && (
-          <a href={paramFrom ? `/${paramFrom}` : '/nano'} style={{display:'block',padding:'8px 16px',background:'rgba(201,168,76,0.08)',borderBottom:'1px solid rgba(201,168,76,0.15)',fontSize:13,fontWeight:700,color:'#C9A84C',textDecoration:'none',textAlign:'center'}}>
-            &larr; Back to {paramFrom === 'nano' || !paramFrom ? 'Nano' : paramFrom === 'study-plan' ? 'Study Plan' : paramFrom === 'starky-saturdays' ? 'Starky Saturdays' : paramFrom === 'dashboard' ? 'Dashboard' : paramFrom.charAt(0).toUpperCase() + paramFrom.slice(1)}
-          </a>
-        )}
+        {(nanoMode || paramFrom) && (() => {
+          const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+          const returnTo = urlParams?.get('returnTo');
+          const backLabel = paramFrom === 'nano-teach' ? 'Back to Lesson' : paramFrom === 'nano' || !paramFrom ? 'Nano' : paramFrom === 'study-plan' ? 'Study Plan' : paramFrom === 'starky-saturdays' ? 'Starky Saturdays' : paramFrom === 'dashboard' ? 'Dashboard' : paramFrom.charAt(0).toUpperCase() + paramFrom.slice(1);
+          return (
+            <a href={returnTo || (paramFrom ? `/${paramFrom}` : '/nano')} style={{display:'block',padding:'8px 16px',background:'rgba(201,168,76,0.08)',borderBottom:'1px solid rgba(201,168,76,0.15)',fontSize:13,fontWeight:700,color:'#C9A84C',textDecoration:'none',textAlign:'center'}}>
+              &larr; {backLabel}
+            </a>
+          );
+        })()}
         {showNanoCelebration && (
           <div style={{position:'absolute',top:0,left:0,right:0,bottom:0,display:'flex',alignItems:'center',justifyContent:'center',background:'rgba(201,168,76,0.95)',zIndex:50,animation:'nanoFadeIn 0.3s ease'}}>
             <div style={{textAlign:'center',color:'#0A1628'}}>
