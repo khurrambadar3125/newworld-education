@@ -116,7 +116,7 @@ export default function NanoTeach() {
         <div style={{ fontSize: 40, marginBottom: 12 }}>📚</div>
         <div style={{ fontSize: 16, fontWeight: 700, marginBottom: 8 }}>No lessons available for this topic yet</div>
         <div style={{ fontSize: 13, color: 'rgba(255,255,255,.4)', marginBottom: 20 }}>We're building the bank. Try another topic.</div>
-        <button onClick={() => router.push('/learn')} style={{ background: '#4F8EF7', color: '#fff', border: 'none', borderRadius: 10, padding: '10px 24px', fontWeight: 700, cursor: 'pointer' }}>Go to Today's Plan</button>
+        <button onClick={() => router.push('/study?subject=' + encodeURIComponent(subject) + '&level=' + encodeURIComponent(level))} style={{ background: '#4F8EF7', color: '#fff', border: 'none', borderRadius: 10, padding: '10px 24px', fontWeight: 700, cursor: 'pointer' }}>Go to Back to Study</button>
       </div>
     </div></div>
   );
@@ -297,7 +297,7 @@ export default function NanoTeach() {
               <div style={{ display: 'flex', gap: 6, marginBottom: 16 }}>
                 {(data.practiceQuestions || []).map((_, i) => (
                   <div key={i} style={{ flex: 1, height: 4, borderRadius: 2,
-                    background: i < practiceIdx ? (results[i + 1]?.correct ? '#4ADE80' : '#EF4444') : i === practiceIdx ? '#F97316' : 'rgba(255,255,255,.1)' }} />
+                    background: i < practiceIdx ? (results[i + 1]?.correct ? '#4ADE80' : '#EF4444') : i === practiceIdx && practiceFeedback ? (practiceFeedback.correct ? '#4ADE80' : '#EF4444') : i === practiceIdx ? '#F97316' : 'rgba(255,255,255,.1)' }} />
                 ))}
               </div>
 
@@ -403,9 +403,9 @@ export default function NanoTeach() {
                     Retry This Topic
                   </button>
                 )}
-                <button onClick={() => router.push('/learn')}
+                <button onClick={() => router.push('/study?subject=' + encodeURIComponent(subject) + '&level=' + encodeURIComponent(level))}
                   style={{ background: 'rgba(255,255,255,.06)', color: '#fff', border: '1px solid rgba(255,255,255,.1)', borderRadius: 10, padding: '12px 24px', fontWeight: 700, fontSize: 14, cursor: 'pointer' }}>
-                  Today's Plan
+                  Back to Study
                 </button>
               </div>
             </div>

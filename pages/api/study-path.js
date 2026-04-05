@@ -80,13 +80,16 @@ export default async function handler(req, res) {
 
   try {
     // Get all topics for this subject with question counts
-    const { data: topicData } = await supabase
+    let query = supabase
       .from('question_bank')
       .select('topic')
       .eq('subject', subject)
       .eq('verified', true)
       .not('topic', 'is', null)
       .limit(5000);
+    // Filter by level if not mixing
+    if (level) query = query.eq('level', level);
+    const { data: topicData } = await query;
 
     if (!topicData?.length) {
       return res.status(200).json({ subject, level, modules: [], totalTopics: 0 });

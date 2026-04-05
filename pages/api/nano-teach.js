@@ -54,16 +54,22 @@ export default async function handler(req, res) {
       return res.status(200).json({ error: 'No questions available for this topic', questions: [] });
     }
 
+    // Need minimum 2 questions (1 worked + 1 practice). Ideal is 5+.
+    if (pool.length < 2) {
+      return res.status(200).json({ error: 'Not enough questions for a full lesson. Try another topic.', questions: [] });
+    }
+
     // Sort by difficulty: easy first for worked example
     const sorted = pool.sort((a, b) => {
-      const diff = { easy: 0, very_easy: 0, medium: 1, hard: 2 };
+      const diff = { easy: 0, very_easy: 0, medium: 1, hard: 2, very_hard: 3 };
       return (diff[a.difficulty] || 1) - (diff[b.difficulty] || 1);
     });
 
-    // Pick teaching set: 1 worked + 1 guided + 3 practice
+    // Pick teaching set: 1 worked + 1 guided + up to 3 practice (flexible)
     const workedExample = sorted[0]; // easiest = worked example
-    const guidedQuestion = sorted[1] || sorted[0]; // second easiest = guided
-    const practiceQuestions = sorted.slice(2, 5); // rest = practice
+    const guidedQuestion = sorted.length > 2 ? sorted[1] : sorted[0]; // avoid duplicate if only 2
+    const practiceStart = sorted.length > 2 ? 2 : 1;
+    const practiceQuestions = sorted.slice(practiceStart, practiceStart + 3); // flexible count
 
     // For worked example: include the FULL answer (this IS the lesson)
     const workedFormatted = {

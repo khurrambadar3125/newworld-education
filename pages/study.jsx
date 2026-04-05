@@ -41,17 +41,18 @@ export default function Study() {
     if (!subject) return;
     setLoading(true);
     journey.enter('study', { subject, level });
-    fetch(`/api/study-path?subject=${encodeURIComponent(subject)}&level=${encodeURIComponent(level)}`)
-      .then(r => r.json())
+    const headers = {};
+    try { const email = JSON.parse(localStorage.getItem('nw_user') || '{}').email; if (email) headers['x-student-email'] = email; } catch {}
+    fetch(`/api/study-path?subject=${encodeURIComponent(subject)}&level=${encodeURIComponent(level)}`, { headers })
+      .then(r => { if (!r.ok) throw new Error('Failed'); return r.json(); })
       .then(data => {
         setModules(data.modules || []);
         setTotalQuestions(data.totalQuestions || 0);
         setLoading(false);
-        // Auto-expand first incomplete module
         const first = (data.modules || []).find(m => m.progress < 100);
         if (first) setExpandedModule(first.module);
       })
-      .catch(() => setLoading(false));
+      .catch(() => { setLoading(false); setModules([]); });
   }, [subject, level]);
 
   // Check for continue from journey
