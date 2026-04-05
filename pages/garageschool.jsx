@@ -86,7 +86,7 @@ export default function GarageSchoolPage() {
 
         <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 14 }}>
           {[
-            { icon: '⚛️', title: 'Starky Nano', desc: '50,000+ verified questions across 34+ subjects. Master one goal at a time. Starky teaches it, tests it, confirms mastery.' },
+            { icon: '⚛️', title: 'Structured Study Paths', desc: '50,000+ verified questions across 17 textbook-accurate subjects. Learn → Guided → Practice → Master. Exact chapters from real Cambridge coursebooks.' },
             { icon: '⚡', title: 'Practice Drill', desc: '5 drill modes including Weak Spots — automatically finds what each student struggles with and drills it.' },
             { icon: '📝', title: 'Mock Exams', desc: 'Timed exams with Cambridge-level marking. Pre-exam briefing. Post-exam revision plan.' },
             { icon: '💜', title: 'Special Needs Support', desc: '17 conditions, PhD-level SEN support. ADHD, dyslexia, autism, hearing impairment, Down Syndrome — all supported with adaptive teaching.' },
@@ -153,8 +153,8 @@ export default function GarageSchoolPage() {
           The Garage School becomes the first school in Pakistan where every student — regardless of background, income, or ability — has access to an AI tutor trained to Cambridge examiner standards. If it works here, it works anywhere.
         </p>
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <a href="/challenge" style={{ display: 'inline-block', background: GOLD, color: NAVY, fontSize: 15, fontWeight: 900, padding: '14px 32px', borderRadius: 12, textDecoration: 'none' }}>
-            Try Starky Now →
+          <a href="/study" style={{ display: 'inline-block', background: GOLD, color: NAVY, fontSize: 15, fontWeight: 900, padding: '14px 32px', borderRadius: 12, textDecoration: 'none' }}>
+            Start Learning Now →
           </a>
           <a href="/school" style={{ display: 'inline-block', background: 'transparent', border: `2px solid ${GOLD}`, color: GOLD, fontSize: 15, fontWeight: 900, padding: '12px 32px', borderRadius: 12, textDecoration: 'none' }}>
             School Partnerships →

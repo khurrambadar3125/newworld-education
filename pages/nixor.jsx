@@ -28,8 +28,8 @@ const SLIDES = [
       <p style={{ fontSize: 18, color: DIM, marginBottom: 32 }}>Cambridge O and A Level &middot; Pakistan and UAE &middot; 24/7</p>
       <div style={{ display: 'flex', gap: 16, justifyContent: 'center' }}>
         {[
-          { n: '2,803', l: 'Nano Goals' },
-          { n: 'Examiner-Standard', l: 'Answers' },
+          { n: '50,000+', l: 'Verified Questions' },
+          { n: '17 Subjects', l: 'Textbook Chapters' },
           { n: 'Predicted', l: 'Cambridge Grade' },
         ].map(s => (
           <div key={s.l} style={{ border: `1px solid ${BORDER}`, borderRadius: 8, padding: '14px 28px', minWidth: 180 }}>
@@ -38,7 +38,7 @@ const SLIDES = [
           </div>
         ))}
       </div>
-      <div style={{ marginTop: 32, fontSize: 14, color: 'rgba(250,246,235,0.2)' }}>newworld.education/challenge</div>
+      <div style={{ marginTop: 32, fontSize: 14, color: 'rgba(250,246,235,0.2)' }}>newworld.education/study</div>
     </div>
   ),
 
@@ -101,7 +101,7 @@ const SLIDES = [
           { title: 'Cambridge Dialect', desc: '32 precision entries — exact phrases Cambridge mark schemes accept and reject. "Denatured" not "killed". "Net movement of water molecules" not "water moves".' },
           { title: 'Command Word Mastery', desc: '57 command words fully mapped with subject-specific variations. Before every answer, Starky tells students exactly what Cambridge requires.' },
           { title: 'Examiner Reports (191+)', desc: '191 mistakes Cambridge examiners have specifically flagged across 15 subjects — loaded and active on every single response.' },
-          { title: 'Nano Learning (2,803)', desc: '2,803 sequential Cambridge goals across 30 subjects. Starky teaches each one, tests it, marks it, and only advances when mastery is genuine.' },
+          { title: 'Structured Study Paths', desc: '17 subjects with exact textbook chapters. Learn → Guided → Practice → Master. 50,000+ verified questions from the bank. Zero AI dependency for core learning.' },
           { title: 'Predicted Grade', desc: 'Based on Nano mastery, mock scores and study consistency — shows each student their predicted Cambridge grade and exactly what to fix.' },
           { title: 'SEN — First in the World', desc: 'Dedicated mode for deaf, autistic, and students with learning differences. 240 teaching profiles. No other Cambridge AI platform has attempted this.' },
         ].map(c => (
@@ -127,7 +127,7 @@ const SLIDES = [
         </div>
         <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 14, padding: '28px 24px' }}>
           <div style={{ fontSize: 14, fontWeight: 800, color: GOLD, marginBottom: 16 }}>NewWorldEdu — Today</div>
-          {['Cambridge depth — all 30 O and A Level subjects live', 'Pakistan live tonight — Urdu support included', 'UAE expansion post-summer 2026', 'SEN dedicated mode — first in the world', '191+ examiner report mistakes loaded', '2,803 Nano goals — sequential mastery learning'].map((t, i) => (
+          {['50,000+ verified questions — real Cambridge past papers', 'Pakistan live tonight — Urdu support included', '17 subjects with textbook-accurate chapters', 'SEN dedicated mode — first in the world', '96+ examiner reports loaded', 'Structured study paths: Learn → Guided → Practice → Master'].map((t, i) => (
             <div key={i} style={{ fontSize: 14, color: 'rgba(250,246,235,0.7)', padding: '8px 0', borderBottom: i < 5 ? '1px solid rgba(255,255,255,0.04)' : 'none' }}>
               <span style={{ color: '#4ADE80', marginRight: 8 }}>&#10003;</span>{t}
             </div>
@@ -184,7 +184,7 @@ const SLIDES = [
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
         <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 14, padding: '28px 24px' }}>
           <div style={{ fontSize: 13, fontWeight: 800, color: GOLD, letterSpacing: '0.1em', marginBottom: 16 }}>FOR YOUR STUDENTS</div>
-          {['Cambridge examiner intelligence at midnight', 'Mark scheme language — not just correct answers', 'Predicted grade updates every session', '2,803 Nano goals — master every subject atom by atom', 'Starky Mocks with instant AI marking', 'No more coaching centre dependency'].map(t => (
+          {['Cambridge examiner intelligence at midnight', 'Mark scheme language — not just correct answers', 'Predicted grade updates every session', 'Structured study paths — textbook chapters, not random topics', 'Starky Mocks with instant AI marking', 'No more coaching centre dependency'].map(t => (
             <div key={t} style={{ fontSize: 14, color: 'rgba(250,246,235,0.6)', padding: '8px 0' }}>&rarr; {t}</div>
           ))}
         </div>
@@ -205,8 +205,8 @@ const SLIDES = [
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: 16 }}>
         {[
           { n: '1', title: 'Student opens Starky', desc: 'Phone, tablet or computer. No app. No download. Opens instantly — even at 11pm before an exam.' },
-          { n: '2', title: 'Selects subject and goal', desc: 'Nano page shows their full Cambridge journey — 2,803 goals by subject, unit and exam weight.' },
-          { n: '3', title: 'Starky teaches and tests', desc: '5-step lesson: teach → check → Cambridge question → mark → complete. Advances only on genuine mastery.' },
+          { n: '2', title: 'Opens structured study path', desc: 'Textbook-accurate chapters — Chemistry 22ch, Physics 25ch, Maths 10ch. Exactly as their coursebook reads.' },
+          { n: '3', title: '4-step nano lesson', desc: 'Step 1: Worked example with answer. Step 2: Guided with hints. Step 3: Practice — real past paper Qs. Step 4: Mastery confirmed.' },
           { n: '4', title: 'Grade prediction updates', desc: "After every session the student's predicted Cambridge grade updates. Teacher sees the same data." },
         ].map(s => (
           <div key={s.n} style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 14, padding: '24px 20px', textAlign: 'center' }}>
@@ -218,7 +218,7 @@ const SLIDES = [
       </div>
       <div style={{ textAlign: 'center', marginTop: 24 }}>
         <span style={{ fontSize: 13, fontWeight: 700, color: GOLD, letterSpacing: '0.1em' }}>LIVE DEMO</span>
-        <span style={{ fontSize: 14, color: DIM, marginLeft: 12 }}>newworld.education/challenge — Ask Starky any Cambridge question right now.</span>
+        <span style={{ fontSize: 14, color: DIM, marginLeft: 12 }}>newworld.education/study — Open the structured study path right now.</span>
       </div>
     </div>
   ),
@@ -229,10 +229,10 @@ const SLIDES = [
       <div style={{ fontSize: 13, fontWeight: 700, color: GOLD, letterSpacing: '0.15em', marginBottom: 28, textAlign: 'center' }}>THE PLATFORM TODAY</div>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: 14 }}>
         {[
-          { n: '4,000+', l: 'Cambridge questions\nanswered successfully' },
-          { n: '100%', l: 'Accuracy on\nquality audit' },
-          { n: '2,803', l: 'Nano goals across\n30 Cambridge subjects' },
-          { n: '191+', l: 'Examiner report\nmistakes loaded' },
+          { n: '50,000+', l: 'Verified past paper\nquestions in the bank' },
+          { n: '17', l: 'Subjects with textbook-\naccurate chapter structure' },
+          { n: '34+', l: 'Cambridge + Edexcel\nsubjects covered' },
+          { n: '96+', l: 'Examiner reports\nloaded' },
           { n: '24/7', l: 'Always available\nno booking required' },
           { n: '16+', l: 'Languages including\nUrdu and Arabic' },
           { n: 'Rs 2,850', l: 'Per student per month\nvs Rs 15,000+/hr tutor' },
@@ -284,10 +284,10 @@ const SLIDES = [
       <p style={{ fontSize: 22, color: DIM, lineHeight: 1.6, margin: '0 0 40px' }}>
         Not to replace what makes Nixor great.<br />To give your students everything else.
       </p>
-      <a href="/challenge" target="_blank" rel="noopener" style={{ display: 'block', background: GOLD, color: NAVY, fontSize: 22, fontWeight: 900, padding: '20px 40px', borderRadius: 14, textDecoration: 'none', textAlign: 'center', maxWidth: 500, margin: '0 auto' }}>
-        newworld.education/challenge
+      <a href="/study" target="_blank" rel="noopener" style={{ display: 'block', background: GOLD, color: NAVY, fontSize: 22, fontWeight: 900, padding: '20px 40px', borderRadius: 14, textDecoration: 'none', textAlign: 'center', maxWidth: 500, margin: '0 auto' }}>
+        newworld.education/study
       </a>
-      <div style={{ textAlign: 'center', marginTop: 12, fontSize: 14, color: DIM, fontStyle: 'italic' }}>Ask Starky anything right now.</div>
+      <div style={{ textAlign: 'center', marginTop: 12, fontSize: 14, color: DIM, fontStyle: 'italic' }}>Open the structured study path right now. Pick any subject.</div>
       <div style={{ textAlign: 'center', marginTop: 24, fontSize: 14, fontWeight: 700, color: WHITE }}>Available now. No setup. No cost to begin.</div>
     </div>
   ),

@@ -66,8 +66,8 @@ export default function NixorDemoPage() {
           <p style={{ fontSize: 20, color: DIM, maxWidth: 650, margin: '0 auto 40px', lineHeight: 1.7 }}>
             No more coaching centres. No more AI hallucinations. Every question your students practise is a real Cambridge question with the real mark scheme answer.
           </p>
-          <a href="/challenge" style={{ display: 'inline-block', background: GOLD, color: NAVY, fontSize: 16, fontWeight: 800, padding: '16px 40px', borderRadius: 12, textDecoration: 'none' }}>
-            Try Starky Now — Ask Any Cambridge Question
+          <a href="/study" style={{ display: 'inline-block', background: GOLD, color: NAVY, fontSize: 16, fontWeight: 800, padding: '16px 40px', borderRadius: 12, textDecoration: 'none' }}>
+            Start Structured Learning — 17 Subjects, Real Textbook Chapters
           </a>
         </div>
 
@@ -176,7 +176,7 @@ export default function NixorDemoPage() {
                 { title: 'Examiner Intelligence', desc: 'Insights from official Cambridge Principal Examiner Reports. Starky knows exactly what loses marks and warns students before they make the same mistakes.' },
                 { title: 'Cambridge Dialect', desc: 'Mark scheme language precision. "Net movement of water molecules" not "water moves". "Denatured" not "killed". The exact phrases that earn marks.' },
                 { title: 'Grade Prediction', desc: '70+ official grade boundaries from 2021-2025. Predicted Cambridge grade based on real thresholds, not estimates.' },
-                { title: 'Nano Learning (2,803 Goals)', desc: 'Sequential mastery across 30 subjects. Each atom taught, tested, and marked. Only advances when mastery is genuine.' },
+                { title: 'Structured Study Paths', desc: '17 subjects with textbook-accurate chapters from real Cambridge coursebooks. Learn → Guided → Practice → Master. Zero AI dependency — every question from the verified bank.' },
                 { title: 'SEN — First in the World', desc: 'Dedicated modes for deaf, autistic, and students with learning differences. 240 teaching profiles. No other Cambridge AI platform has this.' },
                 { title: 'Drill, Mocks, Challenge', desc: 'Every practice feature serves from the verified bank. Real Cambridge questions in drill mode, mock exams, and free practice tests.' },
                 { title: 'Every Language', desc: '16+ languages including Urdu, Arabic, and Roman Urdu. Students can ask in their language, get Cambridge-standard answers.' },
@@ -196,9 +196,9 @@ export default function NixorDemoPage() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: 16, marginTop: 32 }}>
             {[
               { n: '1', title: 'Student opens Starky', desc: 'Phone, tablet or computer. No app. No download. Opens instantly.' },
-              { n: '2', title: 'Picks subject and topic', desc: 'Nano page shows their full Cambridge journey by subject, unit and exam weight.' },
-              { n: '3', title: 'Practises with real questions', desc: 'Every question from a real Cambridge past paper. Every answer from the real mark scheme.' },
-              { n: '4', title: 'Grade prediction updates', desc: 'After every session, predicted Cambridge grade updates based on official grade boundaries.' },
+              { n: '2', title: 'Opens structured study path', desc: 'Textbook-accurate chapters — Chemistry 22 chapters, Physics 25, Maths 10 — exactly as their coursebook reads.' },
+              { n: '3', title: 'Learns, then practises', desc: 'Step 1: Worked example with answer. Step 2: Guided question with hints. Step 3: Practice — 3 real past paper questions. Step 4: Mastery confirmed.' },
+              { n: '4', title: 'Mastery tracked per chapter', desc: 'Every topic mastery-tracked. Spaced repetition brings back weak areas. Grade prediction updates from official boundaries.' },
             ].map(step => (
               <div key={step.n} style={{ ...s.card, textAlign: 'center' }}>
                 <div style={{ width: 48, height: 48, borderRadius: '50%', background: GOLD, color: NAVY, fontSize: 20, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px' }}>{step.n}</div>
@@ -245,10 +245,10 @@ export default function NixorDemoPage() {
           <p style={{ fontSize: 24, color: GOLD, fontWeight: 700, marginBottom: 32 }}>
             Starky is built to support exactly those students.
           </p>
-          <a href="/challenge" style={{ display: 'inline-block', background: GOLD, color: NAVY, fontSize: 18, fontWeight: 900, padding: '18px 48px', borderRadius: 14, textDecoration: 'none', marginBottom: 16 }}>
-            Try Starky Now
+          <a href="/study" style={{ display: 'inline-block', background: GOLD, color: NAVY, fontSize: 18, fontWeight: 900, padding: '18px 48px', borderRadius: 14, textDecoration: 'none', marginBottom: 16 }}>
+            Start Learning Now
           </a>
-          <div style={{ fontSize: 14, color: DIM, marginBottom: 32 }}>newworld.education/challenge</div>
+          <div style={{ fontSize: 14, color: DIM, marginBottom: 32 }}>newworld.education/study</div>
           <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.3)' }}>
             Khurram Badar — <a href="mailto:khurram@newworld.education" style={{ color: GOLD, textDecoration: 'none' }}>khurram@newworld.education</a>
           </div>
