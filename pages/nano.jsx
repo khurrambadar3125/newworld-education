@@ -77,7 +77,7 @@ export default function NanoPage() {
               const nextGoal = completedIdx >= 0 ? subjectAtoms[completedIdx + 1] : subjectAtoms[0];
               if (nextGoal) {
                 const goalNum = subjectAtoms.indexOf(nextGoal) + 1;
-                window.location.href = `/nano-learn?subject=${encodeURIComponent(matchedSubject.label)}&topic=${encodeURIComponent(nextGoal.topic || nextGoal.name || '')}&level=O+Level&goalId=${encodeURIComponent(nextGoal.id)}`;
+                window.location.href = `/nano-teach?subject=${encodeURIComponent(matchedSubject.label)}&topic=${encodeURIComponent(nextGoal.topic || nextGoal.name || '')}&level=O+Level&goalId=${encodeURIComponent(nextGoal.id)}`;
               }
             }
           }, 300);
@@ -464,7 +464,7 @@ export default function NanoPage() {
                 {recommendedGoal.goal.examWeight === 'high' ? 'HIGH WEIGHT' : 'MED WEIGHT'}
               </span>
             </div>
-            <a href={`/nano-learn?subject=${encodeURIComponent(recommendedGoal.subject.label)}&topic=${encodeURIComponent(recommendedGoal.goal.topic || recommendedGoal.goal.name || '')}&level=O+Level&goalId=${encodeURIComponent(recommendedGoal.goal.id)}`}
+            <a href={`/nano-teach?subject=${encodeURIComponent(recommendedGoal.subject.label)}&topic=${encodeURIComponent(recommendedGoal.goal.topic || recommendedGoal.goal.name || '')}&level=O+Level&goalId=${encodeURIComponent(recommendedGoal.goal.id)}`}
               className="nano-learn-btn" style={{ display: 'inline-block', fontSize: 14, fontWeight: 700, color: '#C9A84C', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 10, padding: '10px 24px', textDecoration: 'none' }}>
               Start Learning &rarr;
             </a>
@@ -608,7 +608,7 @@ export default function NanoPage() {
                             </div>
 
                             {!isMastered && (
-                              <a href={`/nano-learn?subject=${encodeURIComponent(selected.label)}&topic=${encodeURIComponent(a.topic || a.name || '')}&level=O+Level&goalId=${encodeURIComponent(a.id)}`}
+                              <a href={`/nano-teach?subject=${encodeURIComponent(selected.label)}&topic=${encodeURIComponent(a.topic || a.name || '')}&level=O+Level&goalId=${encodeURIComponent(a.id)}`}
                                 className="nano-learn-btn"
                                 style={{
                                   flexShrink: 0, fontSize: 13, fontWeight: 700, color: '#C9A84C',
