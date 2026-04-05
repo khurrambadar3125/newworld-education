@@ -77,7 +77,7 @@ export default function NanoPage() {
               const nextGoal = completedIdx >= 0 ? subjectAtoms[completedIdx + 1] : subjectAtoms[0];
               if (nextGoal) {
                 const goalNum = subjectAtoms.indexOf(nextGoal) + 1;
-                window.location.href = `/?message=${encodeURIComponent(buildNanoMessage(nextGoal, goalNum, matchedSubject.label, false))}&subject=${encodeURIComponent(matchedSubject.label)}&from=nano&goalId=${encodeURIComponent(nextGoal.id)}&goalNumber=${goalNum}`;
+                window.location.href = `/nano-learn?subject=${encodeURIComponent(matchedSubject.label)}&topic=${encodeURIComponent(nextGoal.topic || nextGoal.name || '')}&level=O+Level&goalId=${encodeURIComponent(nextGoal.id)}`;
               }
             }
           }, 300);
@@ -464,9 +464,9 @@ export default function NanoPage() {
                 {recommendedGoal.goal.examWeight === 'high' ? 'HIGH WEIGHT' : 'MED WEIGHT'}
               </span>
             </div>
-            <a href={`/?message=${encodeURIComponent(buildNanoMessage(recommendedGoal.goal, 1, recommendedGoal.subject.label, isFirstNanoSession))}&subject=${encodeURIComponent(recommendedGoal.subject.label)}&from=nano&goalId=${encodeURIComponent(recommendedGoal.goal.id)}&goalNumber=1`}
+            <a href={`/nano-learn?subject=${encodeURIComponent(recommendedGoal.subject.label)}&topic=${encodeURIComponent(recommendedGoal.goal.topic || recommendedGoal.goal.name || '')}&level=O+Level&goalId=${encodeURIComponent(recommendedGoal.goal.id)}`}
               className="nano-learn-btn" style={{ display: 'inline-block', fontSize: 14, fontWeight: 700, color: '#C9A84C', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 10, padding: '10px 24px', textDecoration: 'none' }}>
-              Learn this with Starky &rarr;
+              Start Learning &rarr;
             </a>
           </div>
         )}
@@ -608,7 +608,7 @@ export default function NanoPage() {
                             </div>
 
                             {!isMastered && (
-                              <a href={`/?message=${encodeURIComponent(buildNanoMessage(a, goalNum, selected.label, isFirstNanoSession))}&subject=${encodeURIComponent(selected.label)}&from=nano&goalId=${encodeURIComponent(a.id)}&goalNumber=${goalNum}`}
+                              <a href={`/nano-learn?subject=${encodeURIComponent(selected.label)}&topic=${encodeURIComponent(a.topic || a.name || '')}&level=O+Level&goalId=${encodeURIComponent(a.id)}`}
                                 className="nano-learn-btn"
                                 style={{
                                   flexShrink: 0, fontSize: 13, fontWeight: 700, color: '#C9A84C',
