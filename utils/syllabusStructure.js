@@ -451,3 +451,59 @@ export const SYLLABUS = {
 export function getStudyModules(subject) {
   return SYLLABUS[subject] || null;
 }
+
+/**
+ * Get all subject names from SYLLABUS
+ */
+export function getSyllabusSubjects() {
+  return Object.keys(SYLLABUS);
+}
+
+/**
+ * Get flat list of section/chapter names for a subject — used by drill, nano, past-papers
+ * Returns array of strings: ['States of matter', 'Atomic structure', ...]
+ */
+export function getTopicsForSubject(subject) {
+  const entry = SYLLABUS[subject];
+  if (!entry?.themes) return [];
+  const topics = [];
+  for (const theme of entry.themes) {
+    for (const section of theme.sections) {
+      topics.push(section.name);
+    }
+  }
+  return topics;
+}
+
+/**
+ * Get structured themes with sections for a subject — used by study, nano
+ * Returns array: [{ theme: 'Physical Chemistry', sections: [{id, name, keywords}] }]
+ */
+export function getThemesForSubject(subject) {
+  const entry = SYLLABUS[subject];
+  if (!entry?.themes) return [];
+  return entry.themes.map(t => ({
+    theme: t.name,
+    sections: t.sections,
+  }));
+}
+
+/**
+ * Get subject code (e.g. '5070' for Chemistry)
+ */
+export function getSubjectCode(subject) {
+  return SYLLABUS[subject]?.code || null;
+}
+
+/**
+ * Get all subjects with metadata — used by drill, mocks, nano subject grids
+ * Returns array: [{ name: 'Chemistry', code: '5070', level: 'O Level', topicCount: 22 }]
+ */
+export function getAllSubjectsWithMeta() {
+  return Object.entries(SYLLABUS).map(([name, data]) => ({
+    name,
+    code: data.code,
+    level: data.level,
+    topicCount: data.themes.reduce((sum, t) => sum + t.sections.length, 0),
+  }));
+}

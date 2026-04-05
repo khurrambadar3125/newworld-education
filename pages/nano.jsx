@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Head from 'next/head';
 import { ATOMS_SUBJECTS, ATOM_COUNTS, getAtomsBySubject } from '../utils/starkyAtomsKB';
+import { SYLLABUS, getTopicsForSubject, getThemesForSubject } from '../utils/syllabusStructure';
 
 /* ───── Progress Ring ───── */
 function ProgressRing({ percent, size = 64, stroke = 5, color = '#C9A84C' }) {
@@ -341,13 +342,13 @@ export default function NanoPage() {
           </span>
         </h1>
         <p style={{ color: 'rgba(250,246,235,0.55)', fontSize: isMobile ? 15 : 17, margin: '0 0 28px', lineHeight: 1.7, maxWidth: 560, marginLeft: 'auto', marginRight: 'auto' }}>
-          Every Cambridge O and A Level subject broken into single learning goals. Pick one, learn it with Starky, get tested with a real exam question. Repeat until mastery.
+          Every Cambridge subject with exact textbook chapters. Pick a chapter, learn with a worked example, practice with real past paper questions. Master one chapter at a time.
         </p>
         <div style={{ display: 'flex', justifyContent: 'center', gap: isMobile ? 24 : 48 }}>
           {[
-            { value: ATOM_COUNTS.total.toLocaleString(), label: 'Learning goals' },
-            { value: ATOMS_SUBJECTS.length, label: 'Subjects' },
-            { value: '~3 min', label: 'Per goal' },
+            { value: Object.keys(SYLLABUS).length, label: 'Subjects' },
+            { value: Object.values(SYLLABUS).reduce((s, d) => s + d.themes.reduce((t, th) => t + th.sections.length, 0), 0), label: 'Textbook chapters' },
+            { value: '50,000+', label: 'Verified questions' },
           ].map(s => (
             <div key={s.label} style={{ textAlign: 'center' }}>
               <div style={{ fontSize: isMobile ? 22 : 28, fontWeight: 900, color: '#C9A84C' }}>{s.value}</div>
@@ -426,7 +427,8 @@ export default function NanoPage() {
                 style={{ background: isSelected ? 'rgba(201,168,76,0.08)' : 'rgba(250,246,235,0.03)', border: isSelected ? '2px solid #C9A84C' : '1px solid rgba(250,246,235,0.06)', borderRadius: 14, padding: isMobile ? '18px 10px' : '22px 14px', cursor: 'pointer', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
                 <div style={{ fontSize: 28, marginBottom: 6 }}>{s.icon}</div>
                 <div style={{ fontWeight: 800, fontSize: 14, color: '#FAF6EB', marginBottom: 2 }}>{s.label}</div>
-                <div style={{ fontSize: 10, color: 'rgba(250,246,235,0.35)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 6 }}>{s.level}</div>
+                <div style={{ fontSize: 10, color: 'rgba(250,246,235,0.35)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 2 }}>{s.level}</div>
+                {SYLLABUS[s.label] && <div style={{ fontSize: 9, color: 'rgba(201,168,76,0.5)', fontWeight: 600 }}>{getTopicsForSubject(s.label).length} chapters</div>}
                 {(() => {
                   const sm = allSubjectMastery[s.id];
                   const sMastered = sm?.mastered || 0;
@@ -486,7 +488,7 @@ export default function NanoPage() {
                   {selected.icon} {selected.label} — {selected.level}
                 </h2>
                 <div style={{ fontSize: 13, color: 'rgba(250,246,235,0.4)', marginTop: 4 }}>
-                  {atoms.length} Nano goals
+                  {SYLLABUS[selected.label] ? `${getTopicsForSubject(selected.label).length} textbook chapters` : `${atoms.length} Nano goals`}
                 </div>
               </div>
               <ProgressRing percent={pct} size={64} stroke={5} color="#C9A84C" />

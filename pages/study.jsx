@@ -16,8 +16,11 @@ import LegalFooter from '../components/LegalFooter';
 import BottomNav from '../components/BottomNav';
 import { useJourney } from '../utils/journeyTracker';
 
+import { getSyllabusSubjects } from '../utils/syllabusStructure';
+
+const _syllabusOLevel = getSyllabusSubjects();
 const SUBJECTS = {
-  'O Level': ['Mathematics','Chemistry','Physics','Biology','Economics','Accounting','Computer Science','Pakistan Studies','English Language','Business Studies','Commerce','History','Geography','Sociology','Islamiyat','Urdu','Additional Mathematics'],
+  'O Level': _syllabusOLevel,
   'A Level': ['Mathematics','Chemistry','Physics','Biology','Economics','Business','Computer Science','Psychology','Accounting','History','Geography','Sociology','English Language','Law','Further Mathematics','Literature in English'],
 };
 
@@ -150,7 +153,7 @@ export default function Study() {
                 <div>
                   <button onClick={() => { setSubject(''); setModules([]); }} style={{ background: 'none', border: 'none', color: '#4F8EF7', fontSize: 13, fontWeight: 700, cursor: 'pointer', padding: 0, marginBottom: 4, display: 'block' }}>← Change Subject</button>
                   <div style={{ fontSize: 20, fontWeight: 900 }}>{subject}</div>
-                  <div style={{ fontSize: 12, color: 'rgba(255,255,255,.35)' }}>{modules.length} modules · {totalQuestions} questions</div>
+                  <div style={{ fontSize: 12, color: 'rgba(255,255,255,.35)' }}>{modules.length} textbook chapters · {totalQuestions} questions</div>
                 </div>
                 <div style={{ textAlign: 'center' }}>
                   <div style={{ fontSize: 28, fontWeight: 900, color: overallProgress >= 60 ? '#4ADE80' : '#4F8EF7' }}>{overallProgress}%</div>

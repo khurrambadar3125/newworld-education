@@ -17,12 +17,8 @@ import SkillTree from '../components/SkillTree';
 import BottomNav from '../components/BottomNav';
 import { useJourney } from '../utils/journeyTracker';
 import LegalFooter from '../components/LegalFooter';
-const SUBJECTS = [
-  'Mathematics','Additional Mathematics','Physics','Chemistry','Biology',
-  'Economics','Business Studies','Accounting','Computer Science',
-  'Pakistan Studies','Islamiyat','History','Geography','Sociology',
-  'English Language','Commerce','Urdu',
-];
+import { getSyllabusSubjects } from '../utils/syllabusStructure';
+const SUBJECTS = getSyllabusSubjects();
 
 const MASTERY_COLORS = ['#555','#EF4444','#F97316','#EAB308','#4ADE80','#4F8EF7'];
 const MASTERY_NAMES = ['Not Started','Recall','Apply','Analyze','Exam Ready','Mastered'];

@@ -12,6 +12,7 @@ import { useRouter } from 'next/router';
 import LegalFooter from '../components/LegalFooter';
 import BottomNav from '../components/BottomNav';
 
+import { getTopicsForSubject } from '../utils/syllabusStructure';
 const GOLD = '#C9A84C';
 
 // The Newton Journey — 10 levels from counting to genius
@@ -47,14 +48,14 @@ const LEVELS = [
   {
     id: 5, name: 'Cambridge Scholar', icon: '🎓', color: '#4F8EF7',
     desc: 'Full O Level Mathematics. Every topic the examiner tests.',
-    topics: ['Number', 'Algebra', 'Geometry', 'Statistics', 'Probability', 'Mensuration', 'Matrices', 'Vectors', 'Transformations'],
+    topics: getTopicsForSubject('Mathematics'),
     ageRange: 'O Level / IGCSE', difficulty: 'Advanced',
     sources: ['Cambridge 4024', 'Edexcel 4MA1', 'SAT Math'],
   },
   {
     id: 6, name: 'Beyond O Level', icon: '🚀', color: '#4F8EF7',
     desc: 'Additional Mathematics. Functions, calculus introduction, kinematics.',
-    topics: ['Functions', 'Quadratics', 'Binomial Theorem', 'Calculus Intro', 'Kinematics', 'Trigonometric Identities'],
+    topics: getTopicsForSubject('Additional Mathematics'),
     ageRange: 'Additional Maths', difficulty: 'Advanced',
     sources: ['Cambridge 4037', 'Edexcel Further Pure'],
   },

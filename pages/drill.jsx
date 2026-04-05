@@ -62,35 +62,19 @@ function DrillConfetti() {
   );
 }
 
-const TOPICS = {
-  'Biology': ['Cell Structure & Organisation','Diffusion, Osmosis & Active Transport','Biological Molecules','Enzymes','Plant Nutrition (Photosynthesis)','Animal Nutrition & Digestion','Gas Exchange','Transport in Plants','Transport in Humans (Circulatory System)','Respiration','Excretion & Homeostasis','Coordination & Response (Nervous System)','Hormones & Endocrine System','Reproduction','Inheritance & Genetics','Variation & Natural Selection','Ecology & Environment','Human Influences on the Environment'],
-  'Chemistry': ['Atomic Structure & The Periodic Table','Chemical Bonding','Stoichiometry & Moles','Acids, Bases & Salts','The Mole & Calculations','Electrolysis','Energy Changes in Chemical Reactions','Rates of Reaction','Equilibrium (Le Chatelier\'s Principle)','Redox Reactions','Group Properties (Group 1, 2, 7, 0)','Transition Metals','Organic Chemistry — Alkanes & Alkenes','Organic Chemistry — Alcohols & Acids','Polymers','Nitrogen & Sulfur Chemistry','Extraction of Metals','Water Chemistry'],
-  'Physics': ['Measurements & Units','Motion (Kinematics)','Forces & Newton\'s Laws','Momentum & Impulse','Work, Energy & Power','Pressure','Thermal Physics (Heat Transfer)','Thermal Properties of Matter','Waves — Properties & Behaviour','Light & Optics','Sound','Electrostatics','Current Electricity & Circuits','Magnetic Effects of Current','Electromagnetic Induction','Atomic Structure & Radioactivity','Nuclear Physics','Space Physics'],
-  'Mathematics': ['Number (Fractions, Decimals, Percentages)','Algebra — Expressions & Equations','Sequences & Series','Functions','Coordinate Geometry (Straight Lines)','Quadratic Equations & Graphs','Simultaneous Equations','Indices & Surds','Trigonometry (SOH CAH TOA)','Trigonometry (Sine & Cosine Rules)','Circle Theorems','Mensuration (Area & Volume)','Vectors','Matrices','Probability','Statistics (Mean, Median, Mode)','Differentiation','Integration'],
-  'Economics': ['Basic Economic Problem','Supply & Demand','Price Elasticity','Market Structures','Production & Costs','National Income & GDP','Economic Growth','Unemployment','Inflation','Monetary Policy','Fiscal Policy','International Trade','Balance of Payments','Exchange Rates','Development Economics','Market Failure & Externalities'],
-  'English Language': ['Reading Comprehension','Inference & Deduction','Summary Writing','Directed Writing','Descriptive Writing','Narrative Writing','Argumentative & Persuasive Writing','Report & Letter Writing','Language Analysis (Writer\'s Techniques)','Vocabulary in Context'],
-  'Computer Science': ['Data Representation (Binary, Hex)','Number Conversions','Logic Gates & Boolean Algebra','Algorithms & Pseudocode','Flowcharts','Programming Concepts','Data Structures (Arrays, Lists)','Searching & Sorting Algorithms','Databases','Computer Networks','Internet & Web Technologies','Security & Encryption','Operating Systems','Hardware Components','Software Development Lifecycle'],
-  'Pakistan Studies': ['Land & People of Pakistan','Physical Geography of Pakistan','Climate of Pakistan','Agriculture in Pakistan','Industry & Trade','Population & Urbanisation','Movement for Pakistan','Creation of Pakistan (1947)','Constitutional Development','Political History (1947–present)','Economic Development','Social Issues & Development'],
-  'Geography': ['River Processes & Landforms','Earthquakes & Volcanoes','Weather & Climate','Rocks & Weathering','Population','Settlement','Migration','Urbanisation','Industry','Tourism','Agriculture & Food','Environmental Management','Map Skills (Grid References, Scale, Cross-sections)'],
-  'History': ['Source Analysis Skills','WWI Causes & Consequences','Treaty of Versailles','League of Nations','Rise of Dictators','WWII Causes & Consequences','Cold War','Arab-Israeli Conflict','Indian Independence','Decolonisation','Civil Rights','International Relations 1919–1945','International Relations 1945–2000'],
-  'Business Studies': ['Business Objectives & Stakeholders','Forms of Business Organisation','Marketing Mix','Market Research','Production Methods','Quality Management','Finance — Sources & Cash Flow','Profit & Loss, Break-Even','Human Resource Management','Motivation Theory','External Environment','Globalisation & Multinationals'],
-  'Accounting': ['Double Entry Bookkeeping','Trial Balance','Income Statement (Trading & Profit/Loss)','Balance Sheet','Bank Reconciliation','Depreciation','Provisions for Bad Debts','Corrections of Errors','Suspense Accounts','Control Accounts','Cash Flow Statements','Incomplete Records','Partnership Accounts','Ratio Analysis'],
-  'Sociology': ['Research Methods','Family','Education','Crime & Deviance','Social Inequality','Media','Social Stratification','Poverty','Globalisation','Theory — Functionalism','Theory — Marxism','Theory — Feminism','Theory — Interactionism'],
-  'Additional Mathematics': ['Quadratics & Polynomials','Indices & Surds','Logarithms & Exponentials','Trigonometry (Identities & Equations)','Coordinate Geometry (Circles & Lines)','Differentiation (Chain, Product, Quotient)','Integration (Definite & Indefinite)','Kinematics (Displacement, Velocity, Acceleration)','Binomial Theorem','Permutations & Combinations','Matrices','Vectors in 2D'],
-  'Statistics': ['Data Collection & Sampling','Averages & Measures of Spread','Cumulative Frequency & Box Plots','Histograms & Frequency Density','Probability (Combined Events)','Tree Diagrams & Venn Diagrams','Binomial Distribution','Normal Distribution','Correlation & Regression','Time Series','Index Numbers','Chi-Squared Test'],
-  'Islamiyat': ['Life of the Prophet ﷺ — Makkan Period','Life of the Prophet ﷺ — Madinan Period','Quran — Selected Passages','Hadith — Selected Hadith','The Rightly-Guided Caliphs','Pillars of Islam','Articles of Faith','Islamic Practices (Worship)','Islamic Ethics & Morality','Islamic History — Spread of Islam'],
-  'Urdu': ['Reading Comprehension (نثر)','Poetry Comprehension (نظم)','Essay Writing (مضمون نویسی)','Letter Writing (خط نویسی)','Summary Writing','Grammar (قواعد)','Translation','Vocabulary & Idioms (محاورے)','Story Writing','Dialogue Writing'],
-  'Literature in English': ['Drama — Set Text Analysis','Prose — Set Text Analysis','Poetry Anthology','Unseen Poetry','Character Analysis','Theme Analysis','Writer\'s Techniques','Context (Social & Historical)','Comparative Analysis','Quotation Analysis'],
-  'Psychology': ['Research Methods & Ethics','Cognitive Psychology','Social Psychology','Learning Theories','Biological Psychology','Abnormality','Health Psychology','Organisational Psychology'],
-  'Law': ['English Legal System','Criminal Law — Offences Against Person','Criminal Law — Offences Against Property','Law of Tort — Negligence','Law of Tort — Nuisance & Occupiers','Contract Law — Formation','Contract Law — Terms & Vitiating Factors','Human Rights Law','Judicial Precedent','Statutory Interpretation'],
-  'Further Mathematics': ['Proof by Induction','Complex Numbers','Polar Coordinates','Matrices (Eigenvalues & Eigenvectors)','Differential Equations','Vectors (3D)','Hyperbolic Functions','Further Calculus','Further Probability','Further Mechanics'],
-  'Commerce': ['Home Trade & Retail','Wholesale & Distribution','International Trade','Transport & Communication','Insurance','Banking & Finance','Advertising','Business Documents','E-Commerce','Government & Trade'],
-};
+// Topics pulled from textbook-accurate SYLLABUS structure
+import { getTopicsForSubject } from '../utils/syllabusStructure';
 
 const DEFAULT_TOPICS = ['Key Concepts & Definitions','Core Theory','Data Analysis','Extended Response','Case Studies','Application Questions','Exam Technique','Common Mistakes'];
-const getTopics = (subject) => TOPICS[subject] || DEFAULT_TOPICS;
+const getTopics = (subject) => {
+  const syllabusTopics = getTopicsForSubject(subject);
+  return syllabusTopics.length > 0 ? syllabusTopics : DEFAULT_TOPICS;
+};
 
-const SUBJECTS_OLEVEL = ['Biology','Chemistry','Physics','Mathematics','English Language','Economics','Computer Science','Pakistan Studies','Accounting','Business Studies','Geography','History','Sociology','Additional Mathematics','Statistics'];
+// O Level subjects from SYLLABUS + extras not yet in textbook structure
+import { getSyllabusSubjects } from '../utils/syllabusStructure';
+const _syllabusSubjects = getSyllabusSubjects();
+const SUBJECTS_OLEVEL = [..._syllabusSubjects, ...['Statistics'].filter(s => !_syllabusSubjects.includes(s))];
 const SUBJECTS_ALEVEL = ['Biology','Chemistry','Physics','Mathematics','Further Mathematics','Economics','Computer Science','English Language','Psychology','Business Studies','Accounting','Sociology','Geography','History','Law'];
 
 const GRADES_YOUNG = [
