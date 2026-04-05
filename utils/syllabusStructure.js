@@ -1,64 +1,221 @@
 /**
- * utils/syllabusStructure.js — Textbook-accurate syllabus structure
+ * utils/syllabusStructure.js — EXACT textbook chapter structure
  * ─────────────────────────────────────────────────────────────────
- * Mirrors the ACTUAL Cambridge O Level and A Level textbook structure.
- * Each subject has: themes/papers → sections → topics
+ * Source: Actual Cambridge IGCSE/O Level Coursebooks
+ * Photographed from Yusuf Khurram's O2 textbooks (Haque Academy, Karachi)
+ * + Dina Khurram's O1 textbooks
  *
- * Sources: Official Cambridge syllabuses + endorsed textbooks
- * This file is THE source of truth for /study page modules.
- *
- * NOTE: This needs to be expanded with actual textbook chapter data
- * as textbook PDFs are obtained and read.
+ * Every chapter name and sub-topic is EXACTLY as printed in the textbook.
+ * This is the source of truth for /study page modules.
  */
 
 export const SYLLABUS = {
+
   // ════════════════════════════════════════════════════════════
-  // GEOGRAPHY 2217
-  // Source: Cambridge IGCSE & O Level Geography (Guinness & Nagle, 3rd Ed)
+  // CHEMISTRY 5070 — Cambridge IGCSE Chemistry Coursebook
+  // 22 Chapters
   // ════════════════════════════════════════════════════════════
-  'Geography': {
-    code: '2217', level: 'O Level',
+  'Chemistry': {
+    code: '5070', level: 'O Level',
     themes: [
-      {
-        name: 'Theme 1: Population and Settlement',
-        sections: [
-          { id: '1.1', name: 'Population Dynamics', keywords: ['population', 'birth rate', 'death rate', 'natural increase', 'growth'] },
-          { id: '1.2', name: 'Migration', keywords: ['migration', 'immigration', 'emigration', 'refugee', 'push', 'pull'] },
-          { id: '1.3', name: 'Population Structure', keywords: ['population structure', 'pyramid', 'age', 'dependency'] },
-          { id: '1.4', name: 'Population Density and Distribution', keywords: ['density', 'distribution', 'sparsely', 'densely'] },
-          { id: '1.5', name: 'Settlements and Service Provision', keywords: ['settlement', 'rural', 'service', 'hierarchy', 'function'] },
-          { id: '1.6', name: 'Urban Settlements', keywords: ['urban', 'land use', 'cbd', 'zone', 'suburb'] },
-          { id: '1.7', name: 'Urbanisation', keywords: ['urbanisation', 'squatter', 'shanty', 'megacity', 'rapid growth'] },
-        ],
-      },
-      {
-        name: 'Theme 2: The Natural Environment',
-        sections: [
-          { id: '2.1', name: 'Earthquakes and Volcanoes', keywords: ['earthquake', 'volcano', 'tectonic', 'plate', 'seismic', 'eruption', 'magma'] },
-          { id: '2.2', name: 'Rivers', keywords: ['river', 'flood', 'erosion', 'deposition', 'meander', 'waterfall', 'delta', 'drainage'] },
-          { id: '2.3', name: 'Coasts', keywords: ['coast', 'wave', 'cliff', 'beach', 'spit', 'erosion', 'deposition', 'coral', 'mangrove'] },
-          { id: '2.4', name: 'Weather', keywords: ['weather', 'temperature', 'rainfall', 'wind', 'cloud', 'pressure', 'humidity'] },
-          { id: '2.5', name: 'Climate and Natural Vegetation', keywords: ['climate', 'vegetation', 'tropical', 'rainforest', 'desert', 'equatorial', 'ecosystem'] },
-        ],
-      },
-      {
-        name: 'Theme 3: Economic Development',
-        sections: [
-          { id: '3.1', name: 'Development', keywords: ['development', 'indicator', 'hdi', 'gdp', 'inequality', 'employment'] },
-          { id: '3.2', name: 'Food Production', keywords: ['food', 'agriculture', 'farming', 'subsistence', 'commercial', 'shortage', 'famine'] },
-          { id: '3.3', name: 'Industry', keywords: ['industry', 'manufacturing', 'primary', 'secondary', 'tertiary', 'location', 'globalisation'] },
-          { id: '3.4', name: 'Tourism', keywords: ['tourism', 'tourist', 'ecotourism', 'sustainable', 'national park'] },
-          { id: '3.5', name: 'Energy', keywords: ['energy', 'fossil fuel', 'renewable', 'nuclear', 'solar', 'wind', 'hydroelectric'] },
-          { id: '3.6', name: 'Water', keywords: ['water', 'supply', 'demand', 'dam', 'irrigation', 'shortage', 'pollution'] },
-          { id: '3.7', name: 'Environmental Risks of Economic Development', keywords: ['pollution', 'deforestation', 'desertification', 'global warming', 'sustainable', 'conservation'] },
-        ],
-      },
+      { name: 'Physical Chemistry', sections: [
+        { id: '1', name: 'States of matter', keywords: ['state', 'solid', 'liquid', 'gas', 'kinetic', 'diffusion', 'mixture'] },
+        { id: '2', name: 'Atomic structure', keywords: ['atomic', 'atom', 'element', 'isotope', 'electron', 'proton', 'neutron', 'configuration'] },
+        { id: '3', name: 'Chemical bonding', keywords: ['bond', 'ionic', 'covalent', 'metallic', 'giant', 'structure'] },
+        { id: '4', name: 'Chemical formulae and equations', keywords: ['formula', 'equation', 'chemical name', 'symbol'] },
+        { id: '5', name: 'Chemical calculations', keywords: ['mole', 'avogadro', 'chemical equation', 'solution chemistry', 'calculation'] },
+        { id: '6', name: 'Electrochemistry', keywords: ['electrolysis', 'electrical conductivity', 'hydrogen', 'fuel'] },
+        { id: '7', name: 'Chemical energetics', keywords: ['energetics', 'exothermic', 'endothermic', 'physical', 'chemical change'] },
+        { id: '8', name: 'Rates of reaction', keywords: ['rate', 'factor', 'collision theory', 'catalyst'] },
+        { id: '9', name: 'Reversible reactions and equilibrium', keywords: ['reversible', 'equilibrium', 'haber', 'contact', 'fertiliser'] },
+        { id: '10', name: 'Redox reactions', keywords: ['redox', 'combustion', 'oxidation', 'reduction'] },
+      ]},
+      { name: 'Inorganic Chemistry', sections: [
+        { id: '11', name: 'Acids and bases', keywords: ['acid', 'base', 'alkali', 'pH', 'neutralisation', 'characteristic'] },
+        { id: '12', name: 'Preparation of salts', keywords: ['salt', 'preparation', 'importance'] },
+        { id: '13', name: 'The Periodic Table', keywords: ['periodic', 'classifying', 'trend', 'group', 'period'] },
+        { id: '14', name: 'Metallic elements and alloys', keywords: ['metallic', 'property', 'use', 'alloy'] },
+        { id: '15', name: 'Reactivity of metals', keywords: ['reactivity', 'series', 'metal displacement'] },
+        { id: '16', name: 'Extraction and corrosion of metals', keywords: ['extraction', 'corrosion', 'rusting'] },
+        { id: '17', name: 'Chemistry of our environment', keywords: ['air quality', 'carbon dioxide', 'methane', 'climate', 'water'] },
+      ]},
+      { name: 'Organic Chemistry', sections: [
+        { id: '18', name: 'Introduction to organic chemistry', keywords: ['organic', 'compound', 'structural', 'homologous', 'isomerism'] },
+        { id: '19', name: 'Reactions of organic compounds', keywords: ['characteristic reaction', 'ethanol', 'carboxylic', 'ester'] },
+        { id: '20', name: 'Petrochemicals and polymers', keywords: ['petroleum', 'product', 'polymer', 'plastic'] },
+      ]},
+      { name: 'Experimental Chemistry', sections: [
+        { id: '21', name: 'Experimental design and separation techniques', keywords: ['experimental', 'separation', 'purification', 'chromatography'] },
+        { id: '22', name: 'Chemical analysis', keywords: ['analysis', 'cation', 'anion', 'gas', 'titration', 'quantitative'] },
+      ]},
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════════
+  // PHYSICS 5054 — Cambridge IGCSE Physics Coursebook
+  // 25 Chapters
+  // ════════════════════════════════════════════════════════════
+  'Physics': {
+    code: '5054', level: 'O Level',
+    themes: [
+      { name: 'General Physics', sections: [
+        { id: '1', name: 'Making measurements', keywords: ['measurement', 'length', 'volume', 'density', 'time'] },
+        { id: '2', name: 'Describing motion', keywords: ['speed', 'distance-time', 'acceleration', 'motion'] },
+        { id: '3', name: 'Forces and motion', keywords: ['force', 'mass', 'weight', 'gravity', 'falling', 'acceleration', 'momentum', 'scalar', 'vector'] },
+        { id: '4', name: 'Turning effects', keywords: ['moment', 'calculating moment', 'stability', 'centre of gravity'] },
+        { id: '5', name: 'Forces and matter', keywords: ['solid', 'stretching', 'spring', 'spring constant', 'pressure'] },
+        { id: '6', name: 'Energy stores and transfers', keywords: ['energy store', 'energy transfer', 'conservation', 'energy calculation'] },
+        { id: '7', name: 'Energy resources', keywords: ['energy resource', 'energy from the sun'] },
+        { id: '8', name: 'Work and power', keywords: ['work', 'calculating work', 'power', 'calculating power'] },
+      ]},
+      { name: 'Thermal Physics', sections: [
+        { id: '9', name: 'The kinetic particle model of matter', keywords: ['kinetic', 'particle', 'state of matter', 'gas', 'temperature', 'celsius', 'gas law'] },
+        { id: '10', name: 'Thermal properties of matter', keywords: ['thermal expansion', 'specific heat', 'changing state', 'latent heat'] },
+        { id: '11', name: 'Thermal energy transfers', keywords: ['conduction', 'convection', 'radiation', 'thermal energy transfer'] },
+      ]},
+      { name: 'Waves', sections: [
+        { id: '12', name: 'Sound', keywords: ['sound', 'making sound', 'how does sound travel', 'speed of sound', 'hearing'] },
+        { id: '13', name: 'Light', keywords: ['light', 'reflection', 'refraction', 'total internal reflection', 'lens', 'dispersion'] },
+        { id: '14', name: 'Properties of waves', keywords: ['wave', 'describing wave', 'speed frequency wavelength', 'wave phenomena'] },
+        { id: '15', name: 'The electromagnetic spectrum', keywords: ['electromagnetic', 'wave', 'hazard', 'communicating'] },
+      ]},
+      { name: 'Electricity and Magnetism', sections: [
+        { id: '16', name: 'Magnetism', keywords: ['permanent magnet', 'magnetic field'] },
+        { id: '17', name: 'Static electricity', keywords: ['charging', 'discharging', 'static', 'electric field'] },
+        { id: '18', name: 'Electrical quantities', keywords: ['current', 'electric circuit', 'voltage', 'resistance', 'electrical energy', 'work', 'power'] },
+        { id: '19', name: 'Electrical circuits', keywords: ['circuit component', 'combination', 'electrical safety'] },
+        { id: '20', name: 'Electromagnetic forces', keywords: ['magnetic effect', 'current-carrying conductor', 'electric motor', 'beam', 'charged particle'] },
+        { id: '21', name: 'Electromagnetic induction', keywords: ['generating electricity', 'power line', 'transformer'] },
+      ]},
+      { name: 'Atomic Physics', sections: [
+        { id: '22', name: 'The nuclear atom', keywords: ['nuclear', 'atomic structure', 'proton', 'neutron', 'electron'] },
+        { id: '23', name: 'Radioactivity', keywords: ['radioactivity', 'radioactive decay', 'activity', 'half-life', 'radioisotope'] },
+      ]},
+      { name: 'Space Physics', sections: [
+        { id: '24', name: 'Earth and the Solar System', keywords: ['earth', 'sun', 'moon', 'solar system'] },
+        { id: '25', name: 'Stars and the Universe', keywords: ['star', 'galaxy', 'universe'] },
+      ]},
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════════
+  // MATHEMATICS 4024 — Cambridge O Level Mathematics Coursebook
+  // 10 Chapters
+  // ════════════════════════════════════════════════════════════
+  'Mathematics': {
+    code: '4024', level: 'O Level',
+    themes: [
+      { name: 'Number and Algebra', sections: [
+        { id: '1', name: 'Number', keywords: ['number', 'practical arithmetic', 'types of number', 'sequence', 'pattern', 'fraction', 'decimal', 'percentage', 'ordering', 'estimation', 'standard form', 'index', 'ratio', 'proportion', 'limit', 'accuracy', 'surd'] },
+        { id: '2', name: 'Algebra', keywords: ['algebra', 'formula', 'bracket', 'simplifying', 'linear equation', 'simultaneous', 'factorising', 'quadratic', 'completing the square', 'algebraic fraction', 'changing the subject', 'inequality', 'indices in algebra', 'proportion'] },
+      ]},
+      { name: 'Measurement and Geometry', sections: [
+        { id: '3', name: 'Mensuration', keywords: ['area', 'perimeter', 'circle', 'arc', 'sector', 'volume', 'prism', 'surface area'] },
+        { id: '4', name: 'Geometry', keywords: ['angle', 'constructing triangle', 'polygon', 'parallel line', 'pythagoras', 'symmetry', 'similarity', 'area of similar figure', 'volume of similar figure', 'tangent', 'circle theorem'] },
+        { id: '5', name: 'Trigonometry', keywords: ['right-angled triangle', 'elevation', 'depression', 'bearing', 'scale drawing', 'sine rule', 'cosine rule', 'area of triangle', 'trigonometry in three dimensions'] },
+      ]},
+      { name: 'Data and Functions', sections: [
+        { id: '6', name: 'Graphs', keywords: ['line segment', 'straight-line graph', 'parallel', 'perpendicular', 'travel graph', 'quadratic function', 'gradient', 'graphical solution'] },
+        { id: '7', name: 'Transformations and vectors', keywords: ['single transformation', 'combined transformation', 'column vector', 'position vector', 'vector geometry'] },
+        { id: '8', name: 'Sets and functions', keywords: ['set', 'notation', 'symbol', 'venn diagram', 'function', 'inverse function', 'composite function'] },
+        { id: '9', name: 'Statistics', keywords: ['collecting', 'organising', 'displaying data', 'scatter diagram', 'mean', 'median', 'mode', 'grouping data', 'estimating mean', 'grouped', 'continuous'] },
+        { id: '10', name: 'Probability', keywords: ['probability', 'event', 'outcome', 'experimental', 'relative frequency', 'independent', 'tree diagram', 'dependent'] },
+      ]},
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════════
+  // COMPUTER SCIENCE 2210 — Cambridge IGCSE & O Level CS Coursebook
+  // 11 Chapters (Paper 1: Ch 1-6, Paper 2: Ch 7-11)
+  // ════════════════════════════════════════════════════════════
+  'Computer Science': {
+    code: '2210', level: 'O Level',
+    themes: [
+      { name: 'Paper 1: Computer Systems', sections: [
+        { id: '1', name: 'Data representation', keywords: ['binary', 'hexadecimal', 'negative number', 'text', 'image', 'sound', 'data storage', 'data compression'] },
+        { id: '2', name: 'Data transmission', keywords: ['data packet', 'packet switching', 'method of transmission', 'usb', 'detecting error', 'encryption'] },
+        { id: '3', name: 'Hardware', keywords: ['cpu', 'fetch stage', 'decode stage', 'execute stage', 'performance', 'input', 'output', 'data storage', 'virtual memory', 'cloud storage', 'network hardware'] },
+        { id: '4', name: 'Software', keywords: ['types of software', 'operating system', 'interrupt', 'programming language', 'translator', 'ide'] },
+        { id: '5', name: 'The internet and its uses', keywords: ['internet', 'world wide web', 'web page', 'web browser', 'digital currency', 'cyber security'] },
+        { id: '6', name: 'Automated and emerging technologies', keywords: ['automated system', 'robotics', 'robots in context', 'artificial intelligence'] },
+      ]},
+      { name: 'Paper 2: Algorithms and Programming', sections: [
+        { id: '7', name: 'Algorithm design and problem solving', keywords: ['program development', 'life cycle', 'analysis', 'design', 'pseudocode', 'coding', 'testing', 'common algorithm', 'trace table', 'finding purpose', 'finding error'] },
+        { id: '8', name: 'Programming', keywords: ['programming concept', 'data type', 'input', 'output', 'arithmetic operator', 'sequence', 'selection', 'iteration', 'totalling', 'counting', 'string manipulation', 'nested statement', 'subroutine', 'library routine', 'maintainable program', 'array', 'file handling'] },
+        { id: '9', name: 'Databases', keywords: ['database structure', 'sql', 'select', 'from', 'where', 'order by', 'sum', 'count'] },
+        { id: '10', name: 'Boolean logic', keywords: ['logic gate', 'not', 'and', 'or', 'nand', 'nor', 'xor', 'logic expression', 'truth table', 'problem statement'] },
+        { id: '11', name: 'Programming scenarios practice', keywords: ['programming scenario', 'method', 'identifying input', 'process', 'output', 'writing code', 'practically carrying out'] },
+      ]},
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════════
+  // ACCOUNTING 7707 — Cambridge O Level Accounting Coursebook
+  // 4 Sections, 22 Chapters
+  // ════════════════════════════════════════════════════════════
+  'Accounting': {
+    code: '7707', level: 'O Level',
+    themes: [
+      { name: 'Section 1: Introduction', sections: [
+        { id: '1', name: 'Introduction to accounting', keywords: ['introduction', 'accounting', 'purpose'] },
+        { id: '2', name: 'Double entry book-keeping – Part A', keywords: ['double entry', 'book-keeping', 'ledger', 'debit', 'credit'] },
+        { id: '3', name: 'The trial balance', keywords: ['trial balance'] },
+        { id: '4', name: 'Double entry book-keeping – Part B', keywords: ['double entry', 'part b', 'returns', 'discount'] },
+        { id: '5', name: 'Petty cash books', keywords: ['petty cash', 'imprest'] },
+      ]},
+      { name: 'Section 2: Business Documents', sections: [
+        { id: '6', name: 'Business documents', keywords: ['business document', 'invoice', 'receipt', 'credit note'] },
+        { id: '7', name: 'Books of prime entry', keywords: ['prime entry', 'day book', 'journal'] },
+      ]},
+      { name: 'Section 3: Financial Statements', sections: [
+        { id: '8', name: 'Financial statements – Part A', keywords: ['financial statement', 'income statement', 'trading account'] },
+        { id: '9', name: 'Financial statements – Part B', keywords: ['financial statement', 'balance sheet', 'statement of financial position'] },
+        { id: '10', name: 'Accounting rules', keywords: ['accounting rule', 'concept', 'convention', 'principle'] },
+        { id: '11', name: 'Other payables and other receivables', keywords: ['payable', 'receivable', 'accrual', 'prepayment'] },
+        { id: '12', name: 'Accounting for depreciation and disposal of non-current assets', keywords: ['depreciation', 'disposal', 'non-current asset'] },
+        { id: '13', name: 'Irrecoverable debts and provisions for doubtful debts', keywords: ['irrecoverable', 'bad debt', 'doubtful debt', 'provision'] },
+      ]},
+      { name: 'Section 4: Advanced Topics', sections: [
+        { id: '14', name: 'Bank reconciliation statements', keywords: ['bank reconciliation', 'bank statement'] },
+        { id: '15', name: 'Journal entries and correction of errors', keywords: ['journal', 'correction', 'error', 'suspense'] },
+        { id: '16', name: 'Control accounts', keywords: ['control account', 'sales ledger', 'purchase ledger'] },
+        { id: '17', name: 'Incomplete records', keywords: ['incomplete record', 'single entry', 'margin', 'mark-up'] },
+        { id: '18', name: 'Accounts of clubs and societies', keywords: ['club', 'society', 'subscription', 'receipts and payments'] },
+        { id: '19', name: 'Partnerships', keywords: ['partnership', 'profit sharing', 'appropriation', 'capital account', 'current account'] },
+        { id: '20', name: 'Manufacturing accounts', keywords: ['manufacturing', 'prime cost', 'factory overhead', 'production cost'] },
+        { id: '21', name: 'Limited companies', keywords: ['limited company', 'share', 'dividend', 'retained earnings'] },
+        { id: '22', name: 'Analysis and interpretation', keywords: ['ratio', 'analysis', 'interpretation', 'gross profit', 'net profit', 'liquidity', 'efficiency'] },
+      ]},
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════════
+  // ENGLISH LANGUAGE 1123 — Cambridge O Level English Language Coursebook
+  // Part 1: Reading (5 chapters) + Part 2: Writing (5 chapters)
+  // ════════════════════════════════════════════════════════════
+  'English Language': {
+    code: '1123', level: 'O Level',
+    themes: [
+      { name: 'Part 1: Reading', sections: [
+        { id: '1', name: 'Reading skills and strategies', keywords: ['reading skill', 'reading strategy', 'types of text'] },
+        { id: '2', name: 'Reading for comprehension', keywords: ['vocabulary', 'reading strategy', 'own words', 'explicit', 'implicit', 'opinion', 'attitude'] },
+        { id: '3', name: 'Analysing and explaining writers\' effects', keywords: ['writer\'s effect', 'language', 'meaning', 'idea', 'figurative', 'atmosphere', 'setting', 'sensory language'] },
+        { id: '4', name: 'Summary writing', keywords: ['reading for ideas', 'remodelling', 'coherent writing', 'summary'] },
+        { id: '5', name: 'Reading practice', keywords: ['reading practice', 'comprehension practice'] },
+      ]},
+      { name: 'Part 2: Writing', sections: [
+        { id: '6', name: 'Writing skills', keywords: ['writing skill', 'audience', 'purpose', 'voice', 'vocabulary', 'grammar', 'structure', 'plan'] },
+        { id: '7', name: 'Directed writing', keywords: ['directed writing', 'key evaluation', 'evaluate', 'discursive', 'point of view', 'letter', 'email', 'speech'] },
+        { id: '8', name: 'Descriptive writing', keywords: ['descriptive', 'describing place', 'describing event', 'describing people'] },
+        { id: '9', name: 'Narrative writing', keywords: ['narrative', 'story', 'planning', 'story opening', 'character', 'situation', 'art of storytelling', 'narration', 'ending'] },
+        { id: '10', name: 'Writing practice', keywords: ['writing practice'] },
+      ]},
     ],
   },
 
   // ════════════════════════════════════════════════════════════
   // PAKISTAN STUDIES 2059
-  // Paper 1: History & Culture | Paper 2: Environment of Pakistan
+  // Paper 1: History | Paper 2: Geography
   // ════════════════════════════════════════════════════════════
   'Pakistan Studies': {
     code: '2059', level: 'O Level',
@@ -88,394 +245,209 @@ export const SYLLABUS = {
   },
 
   // ════════════════════════════════════════════════════════════
-  // HISTORY 2147
-  // Source: Cambridge O Level History syllabus 2024-2026
-  // ════════════════════════════════════════════════════════════
-  'History': {
-    code: '2147', level: 'O Level',
-    themes: [
-      {
-        name: 'Section 1: Core Content',
-        sections: [
-          { id: '1', name: 'Was the Treaty of Versailles fair?', keywords: ['versailles', 'treaty', 'wilson', 'clemenceau', 'lloyd george', 'reparation'] },
-          { id: '2', name: 'To what extent was the League of Nations a success?', keywords: ['league of nations', 'mandate', 'collective security', 'abyssinia', 'manchuria'] },
-          { id: '3', name: 'Why had international peace collapsed by 1939?', keywords: ['hitler', 'appeasement', 'nazi', 'munich', 'sudetenland', 'rhineland', 'anschluss'] },
-          { id: '4', name: 'Who was to blame for the Cold War?', keywords: ['cold war', 'truman', 'stalin', 'iron curtain', 'berlin blockade', 'nato', 'warsaw'] },
-          { id: '5', name: 'How effectively did the USA contain communism?', keywords: ['containment', 'korea', 'vietnam', 'cuba', 'missile crisis', 'domino theory'] },
-          { id: '6', name: 'How secure was the USSR\'s control over Eastern Europe?', keywords: ['hungary', 'czechoslovakia', 'solidarity', 'gorbachev', 'berlin wall', 'perestroika', 'glasnost'] },
-        ],
-      },
-      {
-        name: 'Section 2: Depth Studies',
-        sections: [
-          { id: 'A', name: 'The First World War, 1914-18', keywords: ['world war 1', 'trench', 'somme', 'gallipoli', 'stalemate'] },
-          { id: 'B', name: 'Germany, 1918-45', keywords: ['weimar', 'nazi germany', 'hitler', 'reichstag', 'holocaust', 'propaganda'] },
-          { id: 'C', name: 'Russia, 1905-41', keywords: ['russia', 'revolution', 'tsar', 'lenin', 'bolshevik', 'stalin', 'collectivisation'] },
-          { id: 'D', name: 'The United States, 1919-41', keywords: ['america', 'roaring twenties', 'wall street', 'great depression', 'new deal', 'roosevelt'] },
-        ],
-      },
-    ],
-  },
-
-  // ════════════════════════════════════════════════════════════
-  // ISLAMIYAT 2058
-  // Paper 1 + Paper 2
-  // ════════════════════════════════════════════════════════════
-  'Islamiyat': {
-    code: '2058', level: 'O Level',
-    themes: [
-      {
-        name: 'Paper 1',
-        sections: [
-          { id: 'P1.1', name: 'Major Themes of the Quran', keywords: ['quran', 'surah', 'ayah', 'theme', 'tawhid', 'risalah', 'akhirah'] },
-          { id: 'P1.2', name: 'History and Importance of the Quran', keywords: ['revelation', 'compilation', 'preservation', 'mushaf', 'uthman'] },
-          { id: 'P1.3', name: 'Life and Importance of Prophet Muhammad (PBUH)', keywords: ['prophet', 'muhammad', 'makkah', 'madinah', 'hijrah', 'seerah', 'battle'] },
-          { id: 'P1.4', name: 'The First Islamic Community', keywords: ['community', 'ummah', 'madinah', 'charter', 'brotherhood', 'mosque'] },
-        ],
-      },
-      {
-        name: 'Paper 2',
-        sections: [
-          { id: 'P2.1', name: 'Major Teachings in the Hadiths', keywords: ['hadith', 'hadis', 'teaching', 'saying', 'sunnah'] },
-          { id: 'P2.2', name: 'History and Importance of the Hadiths', keywords: ['hadith collection', 'bukhari', 'muslim', 'chain', 'isnad', 'classification'] },
-          { id: 'P2.3', name: 'The Rightly Guided Caliphs', keywords: ['caliph', 'abu bakr', 'umar', 'uthman', 'ali', 'rashidun', 'succession'] },
-          { id: 'P2.4', name: 'Articles of Faith and Pillars of Islam', keywords: ['pillar', 'shahadah', 'salah', 'zakat', 'sawm', 'hajj', 'iman', 'tawhid', 'angels', 'books', 'prophets', 'qadr'] },
-        ],
-      },
-    ],
-  },
-
-  // ════════════════════════════════════════════════════════════
-  // URDU 3247
-  // Paper 1: Language + Paper 2: Composition
-  // ════════════════════════════════════════════════════════════
-  'Urdu': {
-    code: '3247', level: 'O Level',
-    themes: [
-      {
-        name: 'Paper 1: Language',
-        sections: [
-          { id: 'P1.1', name: 'Comprehension (فہم و ادراک)', keywords: ['comprehension', 'passage', 'understanding', 'extract'] },
-          { id: 'P1.2', name: 'Summary Writing (خلاصہ نویسی)', keywords: ['summary', 'خلاصہ', 'concise'] },
-          { id: 'P1.3', name: 'Grammar (قواعد)', keywords: ['grammar', 'قواعد', 'verb', 'noun', 'sentence'] },
-          { id: 'P1.4', name: 'Translation (ترجمہ)', keywords: ['translation', 'ترجمہ', 'english to urdu', 'urdu to english'] },
-        ],
-      },
-      {
-        name: 'Paper 2: Composition',
-        sections: [
-          { id: 'P2.1', name: 'Essay Writing (مضمون نگاری)', keywords: ['essay', 'مضمون', 'composition', 'writing'] },
-          { id: 'P2.2', name: 'Letter Writing (خط نگاری)', keywords: ['letter', 'خط', 'formal', 'informal', 'application'] },
-          { id: 'P2.3', name: 'Story Writing (کہانی نگاری)', keywords: ['story', 'کہانی', 'narrative', 'plot'] },
-          { id: 'P2.4', name: 'Dialogue Writing (مکالمہ نگاری)', keywords: ['dialogue', 'مکالمہ', 'conversation'] },
-          { id: 'P2.5', name: 'Poetry & Literary Devices (شاعری و ادبی صنائع)', keywords: ['poetry', 'شاعری', 'تشبیہ', 'استعارہ', 'literary', 'metaphor', 'simile'] },
-        ],
-      },
-    ],
-  },
-
-  // ════════════════════════════════════════════════════════════
-  // ECONOMICS 2281
-  // ════════════════════════════════════════════════════════════
-  'Economics': {
-    code: '2281', level: 'O Level',
-    themes: [
-      {
-        name: 'Microeconomics',
-        sections: [
-          { id: '1', name: 'The Basic Economic Problem', keywords: ['economic problem', 'scarcity', 'opportunity cost', 'factor', 'production possibility'] },
-          { id: '2', name: 'The Allocation of Resources', keywords: ['demand', 'supply', 'price', 'market', 'elasticity', 'equilibrium', 'allocation'] },
-          { id: '3', name: 'Microeconomic Decision Makers', keywords: ['bank', 'household', 'worker', 'trade union', 'firm', 'money'] },
-        ],
-      },
-      {
-        name: 'Macroeconomics',
-        sections: [
-          { id: '4', name: 'Government and the Macroeconomy', keywords: ['fiscal', 'monetary', 'inflation', 'unemployment', 'growth', 'gdp', 'tax', 'government', 'budget'] },
-          { id: '5', name: 'Economic Development', keywords: ['development', 'poverty', 'living standard', 'hdi'] },
-          { id: '6', name: 'International Trade and Globalisation', keywords: ['trade', 'globalisation', 'tariff', 'exchange rate', 'balance of payment', 'multinational', 'protection'] },
-        ],
-      },
-    ],
-  },
-
-  // ════════════════════════════════════════════════════════════
-  // ACCOUNTING 7707
-  // ════════════════════════════════════════════════════════════
-  'Accounting': {
-    code: '7707', level: 'O Level',
-    themes: [
-      {
-        name: 'Accounting Fundamentals',
-        sections: [
-          { id: '1', name: 'Introduction to Accounting', keywords: ['accounting equation', 'book-keeping', 'basic term', 'concept'] },
-          { id: '2', name: 'Sources and Recording of Data', keywords: ['double entry', 'ledger', 'journal', 'prime entry', 'document', 'receipt'] },
-          { id: '3', name: 'Verification of Records', keywords: ['trial balance', 'bank reconciliation', 'control account', 'correction', 'error', 'suspense'] },
-        ],
-      },
-      {
-        name: 'Financial Reporting',
-        sections: [
-          { id: '4', name: 'Accounting Procedures', keywords: ['depreciation', 'disposal', 'accrual', 'prepayment', 'bad debt', 'provision', 'inventory', 'capital', 'revenue'] },
-          { id: '5', name: 'Financial Statements', keywords: ['income statement', 'balance sheet', 'financial statement', 'profit', 'loss', 'partnership', 'sole trader', 'club', 'incomplete'] },
-          { id: '6', name: 'Analysis and Interpretation', keywords: ['ratio', 'analysis', 'interpret', 'gross profit', 'net profit', 'liquidity', 'return'] },
-        ],
-      },
-    ],
-  },
-
-  // ════════════════════════════════════════════════════════════
-  // COMPUTER SCIENCE 2210
-  // ════════════════════════════════════════════════════════════
-  'Computer Science': {
-    code: '2210', level: 'O Level',
-    themes: [
-      {
-        name: 'Computer Systems',
-        sections: [
-          { id: '1', name: 'Data Representation', keywords: ['binary', 'hexadecimal', 'data representation', 'ascii', 'unicode', 'image', 'sound', 'compression'] },
-          { id: '2', name: 'Data Transmission', keywords: ['transmission', 'serial', 'parallel', 'error', 'check', 'protocol'] },
-          { id: '3', name: 'Hardware', keywords: ['hardware', 'processor', 'memory', 'storage', 'input', 'output', 'cpu'] },
-          { id: '4', name: 'Software', keywords: ['software', 'operating system', 'utility', 'application', 'compiler', 'interpreter'] },
-          { id: '5', name: 'The Internet', keywords: ['internet', 'network', 'web', 'email', 'security', 'encryption', 'protocol'] },
-          { id: '6', name: 'Automated and Emerging Technologies', keywords: ['automated', 'robot', 'artificial intelligence', 'emerging', 'sensor'] },
-        ],
-      },
-      {
-        name: 'Algorithms and Programming',
-        sections: [
-          { id: '7', name: 'Algorithm Design', keywords: ['algorithm', 'flowchart', 'pseudocode', 'problem-solving', 'trace table'] },
-          { id: '8', name: 'Programming', keywords: ['programming', 'variable', 'loop', 'array', 'function', 'procedure', 'string', 'file'] },
-          { id: '9', name: 'Databases', keywords: ['database', 'sql', 'query', 'record', 'field', 'table', 'primary key'] },
-          { id: '10', name: 'Boolean Logic', keywords: ['boolean', 'logic gate', 'truth table', 'and', 'or', 'not', 'nand', 'nor'] },
-        ],
-      },
-    ],
-  },
-
-  // ════════════════════════════════════════════════════════════
-  // BUSINESS STUDIES 7115
-  // ════════════════════════════════════════════════════════════
-  'Business Studies': {
-    code: '7115', level: 'O Level',
-    themes: [
-      { name: 'Business Fundamentals', sections: [
-        { id: '1', name: 'Understanding Business Activity', keywords: ['business', 'enterprise', 'stakeholder', 'objective', 'growth', 'sole trader', 'partnership', 'limited'] },
-        { id: '2', name: 'People in Business', keywords: ['motivation', 'recruitment', 'training', 'organisation', 'communication', 'leadership'] },
-      ]},
-      { name: 'Business Operations', sections: [
-        { id: '3', name: 'Marketing', keywords: ['marketing', 'market research', 'segmentation', 'product', 'price', 'promotion', 'place', 'brand'] },
-        { id: '4', name: 'Operations Management', keywords: ['production', 'productivity', 'quality', 'stock', 'location', 'cost', 'break-even'] },
-      ]},
-      { name: 'Business Environment', sections: [
-        { id: '5', name: 'Financial Information', keywords: ['finance', 'cash flow', 'income statement', 'balance sheet', 'source of finance', 'ratio'] },
-        { id: '6', name: 'External Influences', keywords: ['government', 'economic', 'legal', 'environmental', 'ethical', 'globalisation', 'exchange rate'] },
-      ]},
-    ],
-  },
-
-  // ════════════════════════════════════════════════════════════
-  // ENGLISH LANGUAGE 1123
-  // ════════════════════════════════════════════════════════════
-  'English Language': {
-    code: '1123', level: 'O Level',
-    themes: [
-      {
-        name: 'Paper 1: Reading',
-        sections: [
-          { id: 'P1.1', name: 'Comprehension', keywords: ['comprehension', 'reading', 'passage', 'extract', 'meaning', 'inference', 'explicit', 'implicit'] },
-          { id: 'P1.2', name: 'Writer\'s Effect and Language', keywords: ['language', 'technique', 'effect', 'imagery', 'metaphor', 'simile', 'tone', 'style'] },
-          { id: 'P1.3', name: 'Summary Writing', keywords: ['summary', 'summarise', 'key points', 'concise'] },
-        ],
-      },
-      {
-        name: 'Paper 2: Writing',
-        sections: [
-          { id: 'P2.1', name: 'Directed Writing', keywords: ['directed', 'speech', 'letter', 'report', 'article', 'persuasive', 'argument'] },
-          { id: 'P2.2', name: 'Composition: Narrative', keywords: ['narrative', 'story', 'creative', 'plot', 'character'] },
-          { id: 'P2.3', name: 'Composition: Descriptive', keywords: ['descriptive', 'description', 'scene', 'atmosphere', 'senses'] },
-        ],
-      },
-    ],
-  },
-
-  // ════════════════════════════════════════════════════════════
-  // SOCIOLOGY 2251
-  // ════════════════════════════════════════════════════════════
-  'Sociology': {
-    code: '2251', level: 'O Level',
-    themes: [
-      { name: 'Core Concepts', sections: [
-        { id: '1', name: 'Research Methods', keywords: ['research', 'method', 'survey', 'interview', 'questionnaire', 'observation', 'data'] },
-        { id: '2', name: 'Identity and Social Control', keywords: ['identity', 'social control', 'socialisation', 'norms', 'values', 'culture'] },
-        { id: '3', name: 'Social Stratification', keywords: ['stratification', 'class', 'inequality', 'poverty', 'wealth', 'gender', 'ethnicity'] },
-      ]},
-      { name: 'Social Institutions', sections: [
-        { id: '4', name: 'Family', keywords: ['family', 'household', 'marriage', 'divorce', 'nuclear', 'extended'] },
-        { id: '5', name: 'Education', keywords: ['education', 'school', 'curriculum', 'achievement', 'attainment'] },
-        { id: '6', name: 'Crime and Deviance', keywords: ['crime', 'deviance', 'punishment', 'prison', 'law', 'police'] },
-      ]},
-    ],
-  },
-
-  // ════════════════════════════════════════════════════════════
-  // COMMERCE 7100
-  // ════════════════════════════════════════════════════════════
-  'Commerce': {
-    code: '7100', level: 'O Level',
-    themes: [
-      { name: 'Commerce and Trade', sections: [
-        { id: '1', name: 'Commerce and Production', keywords: ['commerce', 'production', 'supply chain', 'trade', 'digital'] },
-        { id: '2', name: 'Commercial Operations', keywords: ['retail', 'wholesale', 'enterprise', 'outsourcing', 'communication'] },
-        { id: '3', name: 'Globalisation of Trade', keywords: ['international', 'global', 'import', 'export', 'supply chain risk'] },
-      ]},
-      { name: 'Supporting Commerce', sections: [
-        { id: '4', name: 'Logistics', keywords: ['transport', 'warehouse', 'logistics', 'distribution'] },
-        { id: '5', name: 'Aids to Trade', keywords: ['advertising', 'banking', 'insurance', 'finance'] },
-        { id: '6', name: 'Sustainability and Ethics', keywords: ['sustainability', 'ethics', 'consumer protection', 'environment'] },
-      ]},
-    ],
-  },
-
-  // ════════════════════════════════════════════════════════════
-  // ADDITIONAL MATHEMATICS 4037
-  // ════════════════════════════════════════════════════════════
-  'Additional Mathematics': {
-    code: '4037', level: 'O Level',
-    themes: [
-      { name: 'Pure Mathematics', sections: [
-        { id: '1', name: 'Algebra', keywords: ['algebra', 'equation', 'inequality', 'quadratic', 'polynomial', 'remainder', 'factor', 'binomial', 'simultaneous'] },
-        { id: '2', name: 'Functions', keywords: ['function', 'inverse', 'composite', 'modulus', 'logarithm', 'exponential'] },
-        { id: '3', name: 'Coordinate Geometry', keywords: ['coordinate', 'straight line', 'circle', 'gradient', 'midpoint', 'perpendicular'] },
-        { id: '4', name: 'Trigonometry', keywords: ['trigonometry', 'sine', 'cosine', 'tangent', 'identity', 'radian', 'amplitude'] },
-        { id: '5', name: 'Calculus', keywords: ['differentiation', 'integration', 'derivative', 'gradient', 'tangent', 'area under', 'stationary', 'maximum', 'minimum'] },
-      ]},
-      { name: 'Applied Mathematics', sections: [
-        { id: '6', name: 'Vectors', keywords: ['vector', 'magnitude', 'direction', 'position', 'displacement'] },
-        { id: '7', name: 'Kinematics', keywords: ['kinematics', 'velocity', 'displacement', 'acceleration', 'motion'] },
-        { id: '8', name: 'Probability and Statistics', keywords: ['probability', 'permutation', 'combination', 'relative frequency'] },
-      ]},
-    ],
-  },
-
-  // ════════════════════════════════════════════════════════════
-  // MATHEMATICS 4024
-  // ════════════════════════════════════════════════════════════
-  'Mathematics': {
-    code: '4024', level: 'O Level',
-    themes: [
-      { name: 'Number and Algebra', sections: [
-        { id: '1', name: 'Number', keywords: ['number', 'fraction', 'decimal', 'percentage', 'ratio', 'proportion', 'standard form', 'index', 'integer'] },
-        { id: '2', name: 'Algebra and Graphs', keywords: ['algebra', 'equation', 'expression', 'formula', 'inequality', 'sequence', 'simultaneous', 'quadratic', 'graph', 'function'] },
-      ]},
-      { name: 'Geometry and Measurement', sections: [
-        { id: '3', name: 'Geometry', keywords: ['geometry', 'angle', 'triangle', 'circle', 'polygon', 'pythagoras', 'symmetry', 'congruent', 'similar'] },
-        { id: '4', name: 'Mensuration', keywords: ['area', 'volume', 'perimeter', 'surface area', 'arc', 'sector', 'cylinder', 'cone', 'sphere'] },
-        { id: '5', name: 'Trigonometry', keywords: ['trigonometry', 'sine', 'cosine', 'tangent', 'bearing', 'elevation', 'depression'] },
-        { id: '6', name: 'Vectors and Transformations', keywords: ['vector', 'transformation', 'translation', 'rotation', 'reflection', 'enlargement', 'matrix'] },
-      ]},
-      { name: 'Statistics and Probability', sections: [
-        { id: '7', name: 'Statistics', keywords: ['statistics', 'mean', 'median', 'mode', 'histogram', 'pie chart', 'cumulative', 'frequency'] },
-        { id: '8', name: 'Probability', keywords: ['probability', 'tree diagram', 'venn diagram', 'independent', 'conditional'] },
-      ]},
-    ],
-  },
-
-  // ════════════════════════════════════════════════════════════
-  // CHEMISTRY 5070
-  // ════════════════════════════════════════════════════════════
-  'Chemistry': {
-    code: '5070', level: 'O Level',
-    themes: [
-      { name: 'Physical Chemistry', sections: [
-        { id: '1', name: 'Atomic Structure', keywords: ['atomic', 'atom', 'element', 'periodic', 'electron', 'proton', 'neutron', 'isotope'] },
-        { id: '2', name: 'Bonding and Structure', keywords: ['bond', 'ionic', 'covalent', 'metallic', 'structure', 'alloy', 'giant'] },
-        { id: '3', name: 'Stoichiometry', keywords: ['mole', 'stoichiometry', 'formula', 'equation', 'calculation', 'mass', 'concentration'] },
-        { id: '4', name: 'States of Matter', keywords: ['state', 'solid', 'liquid', 'gas', 'diffusion', 'kinetic'] },
-        { id: '5', name: 'Energy Changes', keywords: ['energy', 'exothermic', 'endothermic', 'enthalpy', 'combustion'] },
-      ]},
-      { name: 'Inorganic Chemistry', sections: [
-        { id: '6', name: 'Acids, Bases and Salts', keywords: ['acid', 'base', 'salt', 'pH', 'neutrali', 'alkali', 'indicator'] },
-        { id: '7', name: 'The Periodic Table', keywords: ['periodic', 'group', 'period', 'noble gas', 'halogen', 'alkali metal', 'transition'] },
-        { id: '8', name: 'Metals', keywords: ['metal', 'reactivity', 'extraction', 'ore', 'rust', 'corrosion', 'redox', 'alloy'] },
-        { id: '9', name: 'Electrolysis', keywords: ['electrolysis', 'electrode', 'electrolyte', 'anode', 'cathode'] },
-      ]},
-      { name: 'Organic Chemistry', sections: [
-        { id: '10', name: 'Organic Chemistry', keywords: ['organic', 'alkane', 'alkene', 'polymer', 'hydrocarbon', 'ethanol', 'fermentation', 'cracking'] },
-      ]},
-      { name: 'Chemistry in Society', sections: [
-        { id: '11', name: 'Rates of Reaction', keywords: ['rate', 'catalyst', 'collision', 'activation', 'surface area'] },
-        { id: '12', name: 'Air and Water', keywords: ['air', 'water', 'pollution', 'rusting', 'nitrogen', 'oxygen', 'carbon dioxide'] },
-      ]},
-    ],
-  },
-
-  // ════════════════════════════════════════════════════════════
-  // PHYSICS 5054
-  // ════════════════════════════════════════════════════════════
-  'Physics': {
-    code: '5054', level: 'O Level',
-    themes: [
-      { name: 'General Physics', sections: [
-        { id: '1', name: 'Measurement', keywords: ['measurement', 'length', 'time', 'mass', 'instrument', 'unit', 'error'] },
-        { id: '2', name: 'Motion', keywords: ['motion', 'speed', 'velocity', 'acceleration', 'distance', 'time graph'] },
-        { id: '3', name: 'Forces', keywords: ['force', 'newton', 'gravity', 'weight', 'friction', 'pressure', 'moment', 'turning'] },
-        { id: '4', name: 'Energy, Work and Power', keywords: ['energy', 'work', 'power', 'efficiency', 'kinetic', 'potential', 'conservation'] },
-      ]},
-      { name: 'Thermal Physics', sections: [
-        { id: '5', name: 'Thermal Effects', keywords: ['thermal', 'heat', 'temperature', 'specific heat', 'latent heat', 'expansion'] },
-        { id: '6', name: 'Transfer of Thermal Energy', keywords: ['conduction', 'convection', 'radiation', 'insulation'] },
-      ]},
-      { name: 'Waves', sections: [
-        { id: '7', name: 'Waves and Sound', keywords: ['wave', 'sound', 'frequency', 'wavelength', 'amplitude', 'echo', 'ultrasound'] },
-        { id: '8', name: 'Light', keywords: ['light', 'reflection', 'refraction', 'lens', 'mirror', 'spectrum', 'total internal'] },
-      ]},
-      { name: 'Electricity and Magnetism', sections: [
-        { id: '9', name: 'Electricity', keywords: ['electric', 'current', 'voltage', 'resistance', 'circuit', 'ohm', 'series', 'parallel'] },
-        { id: '10', name: 'Magnetism and Electromagnetism', keywords: ['magnet', 'electromagnetic', 'motor', 'generator', 'transformer', 'induction'] },
-      ]},
-      { name: 'Atomic Physics', sections: [
-        { id: '11', name: 'Radioactivity', keywords: ['nuclear', 'radioactiv', 'half-life', 'alpha', 'beta', 'gamma', 'fission', 'fusion'] },
-      ]},
-    ],
-  },
-
-  // ════════════════════════════════════════════════════════════
   // BIOLOGY 5090
   // ════════════════════════════════════════════════════════════
   'Biology': {
     code: '5090', level: 'O Level',
     themes: [
-      { name: 'Cell Biology and Organisation', sections: [
-        { id: '1', name: 'Cell Structure and Organisation', keywords: ['cell', 'organelle', 'microscop', 'tissue', 'organ', 'membrane'] },
-        { id: '2', name: 'Diffusion, Osmosis and Active Transport', keywords: ['diffusion', 'osmosis', 'active transport', 'membrane', 'concentration'] },
-        { id: '3', name: 'Enzymes', keywords: ['enzyme', 'catalyst', 'substrate', 'active site', 'denatured', 'pH'] },
+      { name: 'Cell Biology', sections: [
+        { id: '1', name: 'Cell structure and organisation', keywords: ['cell', 'organelle', 'microscop', 'tissue', 'organ', 'membrane'] },
+        { id: '2', name: 'Diffusion, osmosis and active transport', keywords: ['diffusion', 'osmosis', 'active transport', 'membrane', 'concentration'] },
+        { id: '3', name: 'Enzymes', keywords: ['enzyme', 'catalyst', 'substrate', 'active site', 'denatured'] },
       ]},
       { name: 'Nutrition and Transport', sections: [
-        { id: '4', name: 'Nutrition in Plants', keywords: ['photosynthesis', 'chlorophyll', 'light', 'carbon dioxide', 'leaf', 'starch'] },
-        { id: '5', name: 'Nutrition in Humans', keywords: ['nutrition', 'digestion', 'food', 'diet', 'vitamin', 'protein', 'carbohydrate', 'fat'] },
-        { id: '6', name: 'Transport in Plants', keywords: ['xylem', 'phloem', 'transpiration', 'root', 'stem', 'water'] },
-        { id: '7', name: 'Transport in Humans', keywords: ['blood', 'heart', 'circulation', 'artery', 'vein', 'capillary', 'plasma'] },
+        { id: '4', name: 'Nutrition in plants', keywords: ['photosynthesis', 'chlorophyll', 'light', 'carbon dioxide', 'leaf'] },
+        { id: '5', name: 'Nutrition in humans', keywords: ['nutrition', 'digestion', 'food', 'diet', 'vitamin', 'protein'] },
+        { id: '6', name: 'Transport in plants', keywords: ['xylem', 'phloem', 'transpiration', 'root', 'stem'] },
+        { id: '7', name: 'Transport in humans', keywords: ['blood', 'heart', 'circulation', 'artery', 'vein'] },
       ]},
       { name: 'Respiration and Coordination', sections: [
-        { id: '8', name: 'Respiration', keywords: ['respiration', 'aerobic', 'anaerobic', 'glucose', 'oxygen', 'carbon dioxide', 'ATP'] },
-        { id: '9', name: 'Gas Exchange', keywords: ['gas exchange', 'lung', 'alveoli', 'breathing', 'diaphragm', 'ribs'] },
-        { id: '10', name: 'Coordination and Response', keywords: ['nervous', 'hormone', 'brain', 'reflex', 'synapse', 'receptor', 'effector', 'insulin'] },
-        { id: '11', name: 'Homeostasis', keywords: ['homeostasis', 'temperature', 'blood sugar', 'kidney', 'excretion', 'skin'] },
+        { id: '8', name: 'Respiration', keywords: ['respiration', 'aerobic', 'anaerobic', 'glucose', 'oxygen'] },
+        { id: '9', name: 'Gas exchange', keywords: ['gas exchange', 'lung', 'alveoli', 'breathing'] },
+        { id: '10', name: 'Coordination and response', keywords: ['nervous', 'hormone', 'brain', 'reflex', 'synapse', 'insulin'] },
+        { id: '11', name: 'Homeostasis', keywords: ['homeostasis', 'temperature', 'blood sugar', 'kidney', 'excretion'] },
       ]},
       { name: 'Reproduction and Ecology', sections: [
-        { id: '12', name: 'Reproduction', keywords: ['reproduction', 'sexual', 'asexual', 'flower', 'pollination', 'fertilisation', 'germination'] },
-        { id: '13', name: 'Inheritance', keywords: ['inherit', 'gene', 'DNA', 'chromosome', 'mitosis', 'meiosis', 'mutation', 'allele', 'dominant', 'recessive'] },
-        { id: '14', name: 'Ecology', keywords: ['ecology', 'environment', 'ecosystem', 'food chain', 'food web', 'pollution', 'conservation', 'habitat'] },
+        { id: '12', name: 'Reproduction', keywords: ['reproduction', 'sexual', 'asexual', 'flower', 'pollination'] },
+        { id: '13', name: 'Inheritance', keywords: ['inherit', 'gene', 'DNA', 'chromosome', 'mitosis', 'meiosis', 'mutation'] },
+        { id: '14', name: 'Ecology', keywords: ['ecology', 'environment', 'ecosystem', 'food chain', 'pollution'] },
       ]},
     ],
   },
+
+  // ════════════════════════════════════════════════════════════
+  // GEOGRAPHY 2217
+  // ════════════════════════════════════════════════════════════
+  'Geography': { code: '2217', level: 'O Level', themes: [
+    { name: 'Theme 1: Population and Settlement', sections: [
+      { id: '1.1', name: 'Population Dynamics', keywords: ['population', 'birth rate', 'death rate', 'natural increase'] },
+      { id: '1.2', name: 'Migration', keywords: ['migration', 'immigration', 'emigration', 'refugee'] },
+      { id: '1.3', name: 'Population Structure', keywords: ['population structure', 'pyramid', 'age', 'dependency'] },
+      { id: '1.4', name: 'Population Density and Distribution', keywords: ['density', 'distribution', 'sparse', 'dense'] },
+      { id: '1.5', name: 'Settlements and Service Provision', keywords: ['settlement', 'rural', 'service', 'hierarchy'] },
+      { id: '1.6', name: 'Urban Settlements', keywords: ['urban', 'land use', 'cbd', 'suburb'] },
+      { id: '1.7', name: 'Urbanisation', keywords: ['urbanisation', 'squatter', 'shanty', 'megacity'] },
+    ]},
+    { name: 'Theme 2: The Natural Environment', sections: [
+      { id: '2.1', name: 'Earthquakes and Volcanoes', keywords: ['earthquake', 'volcano', 'tectonic', 'plate'] },
+      { id: '2.2', name: 'Rivers', keywords: ['river', 'flood', 'erosion', 'deposition', 'meander'] },
+      { id: '2.3', name: 'Coasts', keywords: ['coast', 'wave', 'cliff', 'beach', 'spit'] },
+      { id: '2.4', name: 'Weather', keywords: ['weather', 'temperature', 'rainfall', 'wind', 'cloud'] },
+      { id: '2.5', name: 'Climate and Natural Vegetation', keywords: ['climate', 'vegetation', 'tropical', 'rainforest', 'desert'] },
+    ]},
+    { name: 'Theme 3: Economic Development', sections: [
+      { id: '3.1', name: 'Development', keywords: ['development', 'indicator', 'hdi', 'inequality'] },
+      { id: '3.2', name: 'Food Production', keywords: ['food', 'agriculture', 'farming', 'shortage'] },
+      { id: '3.3', name: 'Industry', keywords: ['industry', 'manufacturing', 'primary', 'secondary'] },
+      { id: '3.4', name: 'Tourism', keywords: ['tourism', 'tourist', 'ecotourism'] },
+      { id: '3.5', name: 'Energy', keywords: ['energy', 'fossil fuel', 'renewable', 'nuclear'] },
+      { id: '3.6', name: 'Water', keywords: ['water', 'supply', 'demand', 'dam'] },
+      { id: '3.7', name: 'Environmental Risks', keywords: ['pollution', 'deforestation', 'global warming', 'sustainable'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // ECONOMICS 2281
+  // ════════════════════════════════════════════════════════════
+  'Economics': { code: '2281', level: 'O Level', themes: [
+    { name: 'Microeconomics', sections: [
+      { id: '1', name: 'The Basic Economic Problem', keywords: ['economic problem', 'scarcity', 'opportunity cost'] },
+      { id: '2', name: 'The Allocation of Resources', keywords: ['demand', 'supply', 'price', 'market', 'elasticity'] },
+      { id: '3', name: 'Microeconomic Decision Makers', keywords: ['bank', 'household', 'worker', 'trade union', 'firm'] },
+    ]},
+    { name: 'Macroeconomics', sections: [
+      { id: '4', name: 'Government and the Macroeconomy', keywords: ['fiscal', 'monetary', 'inflation', 'unemployment', 'growth'] },
+      { id: '5', name: 'Economic Development', keywords: ['development', 'poverty', 'living standard'] },
+      { id: '6', name: 'International Trade', keywords: ['trade', 'globalisation', 'tariff', 'exchange rate'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // ISLAMIYAT 2058
+  // ════════════════════════════════════════════════════════════
+  'Islamiyat': { code: '2058', level: 'O Level', themes: [
+    { name: 'Paper 1', sections: [
+      { id: 'P1.1', name: 'Major Themes of the Quran', keywords: ['quran', 'surah', 'ayah', 'theme', 'tawhid'] },
+      { id: 'P1.2', name: 'History and Importance of the Quran', keywords: ['revelation', 'compilation', 'preservation'] },
+      { id: 'P1.3', name: 'Life and Importance of Prophet Muhammad (PBUH)', keywords: ['prophet', 'muhammad', 'makkah', 'madinah', 'hijrah'] },
+      { id: 'P1.4', name: 'The First Islamic Community', keywords: ['community', 'ummah', 'brotherhood'] },
+    ]},
+    { name: 'Paper 2', sections: [
+      { id: 'P2.1', name: 'Major Teachings in the Hadiths', keywords: ['hadith', 'teaching', 'sunnah'] },
+      { id: 'P2.2', name: 'History and Importance of the Hadiths', keywords: ['hadith collection', 'bukhari', 'muslim'] },
+      { id: 'P2.3', name: 'The Rightly Guided Caliphs', keywords: ['caliph', 'abu bakr', 'umar', 'uthman', 'ali'] },
+      { id: 'P2.4', name: 'Articles of Faith and Pillars of Islam', keywords: ['pillar', 'shahadah', 'salah', 'zakat', 'hajj', 'iman'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // HISTORY 2147
+  // ════════════════════════════════════════════════════════════
+  'History': { code: '2147', level: 'O Level', themes: [
+    { name: 'Section 1: Core Content', sections: [
+      { id: '1', name: 'Was the Treaty of Versailles fair?', keywords: ['versailles', 'treaty', 'wilson'] },
+      { id: '2', name: 'To what extent was the League of Nations a success?', keywords: ['league of nations', 'mandate'] },
+      { id: '3', name: 'Why had international peace collapsed by 1939?', keywords: ['hitler', 'appeasement', 'nazi'] },
+      { id: '4', name: 'Who was to blame for the Cold War?', keywords: ['cold war', 'truman', 'stalin'] },
+      { id: '5', name: 'How effectively did the USA contain communism?', keywords: ['containment', 'korea', 'vietnam', 'cuba'] },
+      { id: '6', name: 'How secure was the USSR\'s control over Eastern Europe?', keywords: ['hungary', 'czechoslovakia', 'berlin wall'] },
+    ]},
+    { name: 'Section 2: Depth Studies', sections: [
+      { id: 'A', name: 'The First World War', keywords: ['world war 1', 'trench', 'somme'] },
+      { id: 'B', name: 'Germany, 1918-45', keywords: ['weimar', 'nazi', 'hitler', 'holocaust'] },
+      { id: 'C', name: 'Russia, 1905-41', keywords: ['russia', 'revolution', 'tsar', 'lenin', 'stalin'] },
+      { id: 'D', name: 'The United States, 1919-41', keywords: ['america', 'roaring twenties', 'great depression'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // URDU 3247
+  // ════════════════════════════════════════════════════════════
+  'Urdu': { code: '3247', level: 'O Level', themes: [
+    { name: 'Paper 1: Language', sections: [
+      { id: 'P1.1', name: 'Comprehension (فہم و ادراک)', keywords: ['comprehension', 'passage'] },
+      { id: 'P1.2', name: 'Summary Writing (خلاصہ نویسی)', keywords: ['summary', 'خلاصہ'] },
+      { id: 'P1.3', name: 'Grammar (قواعد)', keywords: ['grammar', 'قواعد'] },
+      { id: 'P1.4', name: 'Translation (ترجمہ)', keywords: ['translation', 'ترجمہ'] },
+    ]},
+    { name: 'Paper 2: Composition', sections: [
+      { id: 'P2.1', name: 'Essay Writing (مضمون نگاری)', keywords: ['essay', 'مضمون'] },
+      { id: 'P2.2', name: 'Letter Writing (خط نگاری)', keywords: ['letter', 'خط'] },
+      { id: 'P2.3', name: 'Story Writing (کہانی نگاری)', keywords: ['story', 'کہانی'] },
+      { id: 'P2.4', name: 'Dialogue Writing (مکالمہ نگاری)', keywords: ['dialogue', 'مکالمہ'] },
+      { id: 'P2.5', name: 'Poetry & Literary Devices (شاعری)', keywords: ['poetry', 'شاعری', 'literary'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // BUSINESS STUDIES 7115
+  // ════════════════════════════════════════════════════════════
+  'Business Studies': { code: '7115', level: 'O Level', themes: [
+    { name: 'Business Fundamentals', sections: [
+      { id: '1', name: 'Understanding Business Activity', keywords: ['business', 'enterprise', 'stakeholder'] },
+      { id: '2', name: 'People in Business', keywords: ['motivation', 'recruitment', 'training'] },
+    ]},
+    { name: 'Business Operations', sections: [
+      { id: '3', name: 'Marketing', keywords: ['marketing', 'market research', 'product', 'price'] },
+      { id: '4', name: 'Operations Management', keywords: ['production', 'productivity', 'quality'] },
+    ]},
+    { name: 'Business Environment', sections: [
+      { id: '5', name: 'Financial Information', keywords: ['finance', 'cash flow', 'income statement'] },
+      { id: '6', name: 'External Influences', keywords: ['government', 'economic', 'legal', 'globalisation'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // COMMERCE 7100
+  // ════════════════════════════════════════════════════════════
+  'Commerce': { code: '7100', level: 'O Level', themes: [
+    { name: 'Commerce and Trade', sections: [
+      { id: '1', name: 'Commerce and Production', keywords: ['commerce', 'production', 'supply chain'] },
+      { id: '2', name: 'Commercial Operations', keywords: ['retail', 'wholesale', 'enterprise'] },
+      { id: '3', name: 'Globalisation of Trade', keywords: ['international', 'global', 'import', 'export'] },
+    ]},
+    { name: 'Supporting Commerce', sections: [
+      { id: '4', name: 'Logistics', keywords: ['transport', 'warehouse', 'logistics'] },
+      { id: '5', name: 'Aids to Trade', keywords: ['advertising', 'banking', 'insurance'] },
+      { id: '6', name: 'Sustainability and Ethics', keywords: ['sustainability', 'ethics', 'consumer'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // SOCIOLOGY 2251
+  // ════════════════════════════════════════════════════════════
+  'Sociology': { code: '2251', level: 'O Level', themes: [
+    { name: 'Core Concepts', sections: [
+      { id: '1', name: 'Research Methods', keywords: ['research', 'method', 'survey'] },
+      { id: '2', name: 'Identity and Social Control', keywords: ['identity', 'social control', 'socialisation'] },
+      { id: '3', name: 'Social Stratification', keywords: ['stratification', 'class', 'inequality'] },
+    ]},
+    { name: 'Social Institutions', sections: [
+      { id: '4', name: 'Family', keywords: ['family', 'household', 'marriage'] },
+      { id: '5', name: 'Education', keywords: ['education', 'school', 'achievement'] },
+      { id: '6', name: 'Crime and Deviance', keywords: ['crime', 'deviance', 'punishment'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // ADDITIONAL MATHEMATICS 4037
+  // ════════════════════════════════════════════════════════════
+  'Additional Mathematics': { code: '4037', level: 'O Level', themes: [
+    { name: 'Pure Mathematics', sections: [
+      { id: '1', name: 'Algebra', keywords: ['algebra', 'equation', 'inequality', 'quadratic', 'polynomial'] },
+      { id: '2', name: 'Functions', keywords: ['function', 'inverse', 'composite', 'modulus', 'logarithm'] },
+      { id: '3', name: 'Coordinate Geometry', keywords: ['coordinate', 'straight line', 'circle', 'gradient'] },
+      { id: '4', name: 'Trigonometry', keywords: ['trigonometry', 'sine', 'cosine', 'tangent', 'identity'] },
+      { id: '5', name: 'Calculus', keywords: ['differentiation', 'integration', 'derivative', 'gradient'] },
+    ]},
+    { name: 'Applied Mathematics', sections: [
+      { id: '6', name: 'Vectors', keywords: ['vector', 'magnitude', 'direction'] },
+      { id: '7', name: 'Kinematics', keywords: ['kinematics', 'velocity', 'displacement', 'acceleration'] },
+      { id: '8', name: 'Probability and Statistics', keywords: ['probability', 'permutation', 'combination'] },
+    ]},
+  ]},
 };
 
-/**
- * Get modules for /study page
- * Returns themes with sections, matching bank topics via keywords
- */
 export function getStudyModules(subject) {
   return SYLLABUS[subject] || null;
 }
