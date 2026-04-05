@@ -271,7 +271,7 @@ export default withErrorAlert(async function handler(req, res) {
       if (params.context === 'emsat') systemPrompt += '\nYou are generating EmSAT-style questions for UAE Ministry of Education students. Questions must match EmSAT format, difficulty, and scoring. Use UAE context: AED currency, Dubai/Abu Dhabi examples, UAE government and society.';
       else if (params.context === 'ib') systemPrompt += '\nYou are generating IB Diploma-style questions. Use IB command terms precisely. Questions must align with IB assessment objectives and criteria. Reference the IB mark band descriptors.';
       // Inject topic-specific misconceptions and examiner tips
-      const topicKnowledge = getKnowledgeForTopic(params.topic || '', params.subject || '');
+      const topicKnowledge = await getKnowledgeForTopic(params.topic || '', params.subject || '');
       if (topicKnowledge) systemPrompt += '\n' + topicKnowledge;
 
       // If image provided, use vision

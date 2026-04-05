@@ -21,7 +21,7 @@ import KNOWLEDGE_BASE from './globalKnowledgeBase';
  * @param {string} [subject] — optional subject context (e.g. "Chemistry")
  * @returns {string} — formatted knowledge block to inject into prompt, or ''
  */
-export function getKnowledgeForTopic(message, subject) {
+export async function getKnowledgeForTopic(message, subject) {
   if (!message || message.length < 3) return '';
   const msg = message.toLowerCase();
 
@@ -98,5 +98,26 @@ export function getKnowledgeForTopic(message, subject) {
     return lines.join('\n');
   });
 
-  return '\n\n' + blocks.join('\n\n');
+  let result = '\n\n' + blocks.join('\n\n');
+
+  // Inject brain data from Vercel KV (autonomous intelligence)
+  try {
+    const { kv } = await import('@vercel/kv');
+    const hardTopics = await kv.get(`brain:hard_topics:${subject}`);
+    const phrases = await kv.get(`brain:mark_scheme_phrases:${subject}`);
+    if (hardTopics) {
+      const parsed = typeof hardTopics === 'string' ? JSON.parse(hardTopics) : hardTopics;
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        result += '\n\nSTARKY BRAIN — HARD TOPICS (students struggle with these):\n' + parsed.slice(0, 3).map(t => `  • ${t}`).join('\n');
+      }
+    }
+    if (phrases) {
+      const parsed = typeof phrases === 'string' ? JSON.parse(phrases) : phrases;
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        result += '\n\nSTARKY BRAIN — KEY MARK SCHEME PHRASES:\n' + parsed.slice(0, 5).map(p => `  • ${p}`).join('\n');
+      }
+    }
+  } catch {} // KV not available in dev — silent fail
+
+  return result;
 }
