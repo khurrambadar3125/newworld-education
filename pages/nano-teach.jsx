@@ -1,7 +1,8 @@
 /**
  * pages/nano-teach.jsx — Platform Education: TEACH then TEST
  * ─────────────────────────────────────────────────────────────────
- * 4-step nano teaching flow. 3 minutes. One concept.
+ * 5-step nano teaching flow. One concept per session.
+ * Step 0: NOTES — read key points, definitions, examiner tips (2-3 min)
  * Step 1: LEARN — worked example (answer IS the lesson)
  * Step 2: GUIDED — question with hints
  * Step 3: PRACTICE — 3 questions, no hints
@@ -24,7 +25,8 @@ export default function NanoTeach() {
   const { subject, topic, level = 'O Level' } = router.query;
 
   const [data, setData] = useState(null);
-  const [phase, setPhase] = useState('learn'); // learn | guided | practice | master
+  const [notes, setNotes] = useState(null);
+  const [phase, setPhase] = useState('notes'); // notes | learn | guided | practice | master
   const [loading, setLoading] = useState(true);
 
   // Guided state
@@ -48,10 +50,24 @@ export default function NanoTeach() {
   useEffect(() => {
     if (!subject) return;
     setLoading(true);
-    fetch(`/api/nano-teach?subject=${encodeURIComponent(subject)}&topic=${encodeURIComponent(topic || '')}&level=${encodeURIComponent(level)}`)
-      .then(r => r.json())
-      .then(d => { setData(d); setLoading(false); })
-      .catch(() => setLoading(false));
+
+    // Fetch questions and notes in parallel
+    const questionsPromise = fetch(`/api/nano-teach?subject=${encodeURIComponent(subject)}&topic=${encodeURIComponent(topic || '')}&level=${encodeURIComponent(level)}`)
+      .then(r => r.json()).catch(() => null);
+
+    const notesPromise = fetch(`/api/nano-notes?subject=${encodeURIComponent(subject)}&topic=${encodeURIComponent(topic || '')}&level=${encodeURIComponent(level)}`)
+      .then(r => r.json()).catch(() => null);
+
+    Promise.all([questionsPromise, notesPromise]).then(([qData, nData]) => {
+      setData(qData);
+      if (nData?.available && nData.note) {
+        setNotes(nData.note);
+        setPhase('notes');
+      } else {
+        setPhase('learn'); // Skip notes if not available
+      }
+      setLoading(false);
+    });
   }, [subject, topic, level]);
 
   const gradeAnswer = async (bankId, answer) => {
@@ -142,10 +158,91 @@ export default function NanoTeach() {
 
           {/* Phase indicators */}
           <div style={{ display: 'flex', gap: 6, marginBottom: 20 }}>
-            {['LEARN', 'GUIDED', 'PRACTICE', 'MASTER'].map((p, i) => (
+            {(notes ? ['NOTES', 'LEARN', 'GUIDED', 'PRACTICE', 'MASTER'] : ['LEARN', 'GUIDED', 'PRACTICE', 'MASTER']).map((p) => (
               <span key={p} style={S.phase(phase === p.toLowerCase())}>{p}</span>
             ))}
           </div>
+
+          {/* ═══ STEP 0: NOTES — Key points, definitions, examiner tips ═══ */}
+          {phase === 'notes' && notes && (
+            <>
+              <div style={{ fontSize: 12, fontWeight: 700, color: '#C9A84C', letterSpacing: 1, marginBottom: 12 }}>📝 REVISION NOTES — Read before you practise ({notes.readTime || '8 min'})</div>
+
+              {/* Key Points */}
+              <div style={S.card}>
+                <div style={{ fontSize: 11, fontWeight: 700, color: '#C9A84C', letterSpacing: 1, marginBottom: 10 }}>KEY POINTS</div>
+                {(notes.keyPoints || []).map((point, i) => (
+                  <div key={i} style={{ fontSize: 14, lineHeight: 1.7, padding: '6px 0', borderBottom: i < notes.keyPoints.length - 1 ? '1px solid rgba(255,255,255,.04)' : 'none', color: 'rgba(255,255,255,.8)' }}>
+                    <span style={{ color: '#4ADE80', marginRight: 8, fontWeight: 700 }}>•</span>{point}
+                  </div>
+                ))}
+              </div>
+
+              {/* Definitions */}
+              {notes.definitions?.length > 0 && (
+                <div style={S.card}>
+                  <div style={{ fontSize: 11, fontWeight: 700, color: '#4F8EF7', letterSpacing: 1, marginBottom: 10 }}>KEY DEFINITIONS</div>
+                  {notes.definitions.map((def, i) => (
+                    <div key={i} style={{ marginBottom: 10 }}>
+                      <span style={{ fontWeight: 800, color: '#4F8EF7' }}>{def.term}: </span>
+                      <span style={{ color: 'rgba(255,255,255,.7)', lineHeight: 1.6 }}>{def.definition}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Model Answer */}
+              {notes.modelAnswer && (
+                <div style={{ ...S.greenCard, background: 'rgba(201,168,76,.06)', borderColor: 'rgba(201,168,76,.2)' }}>
+                  <div style={{ fontSize: 11, fontWeight: 700, color: '#C9A84C', letterSpacing: 1, marginBottom: 8 }}>MODEL ANSWER — What full marks looks like</div>
+                  <div style={{ fontSize: 13, color: 'rgba(255,255,255,.5)', marginBottom: 6 }}>Q: {notes.modelAnswer.question} [{notes.modelAnswer.marks} marks]</div>
+                  <div style={{ fontSize: 14, color: 'rgba(255,255,255,.85)', lineHeight: 1.7, marginBottom: 8 }}>{notes.modelAnswer.answer}</div>
+                  {notes.modelAnswer.markBreakdown?.map((mb, i) => (
+                    <div key={i} style={{ fontSize: 12, color: '#4ADE80', padding: '2px 0' }}>✓ {mb}</div>
+                  ))}
+                </div>
+              )}
+
+              {/* Common Mistakes */}
+              {notes.commonMistakes?.length > 0 && (
+                <div style={{ ...S.card, borderColor: 'rgba(239,68,68,.2)', background: 'rgba(239,68,68,.04)' }}>
+                  <div style={{ fontSize: 11, fontWeight: 700, color: '#EF4444', letterSpacing: 1, marginBottom: 10 }}>⚠ DON'T LOSE MARKS</div>
+                  {notes.commonMistakes.map((mistake, i) => (
+                    <div key={i} style={{ fontSize: 13, color: 'rgba(255,255,255,.7)', lineHeight: 1.7, padding: '4px 0' }}>
+                      <span style={{ color: '#EF4444', marginRight: 6 }}>✗</span>{mistake}
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Examiner Tips */}
+              {notes.examinerTips?.length > 0 && (
+                <div style={{ ...S.card, borderColor: 'rgba(79,142,247,.2)', background: 'rgba(79,142,247,.04)' }}>
+                  <div style={{ fontSize: 11, fontWeight: 700, color: '#4F8EF7', letterSpacing: 1, marginBottom: 10 }}>💡 EXAMINER TIPS</div>
+                  {notes.examinerTips.map((tip, i) => (
+                    <div key={i} style={{ fontSize: 13, color: 'rgba(255,255,255,.7)', lineHeight: 1.7, padding: '4px 0' }}>
+                      <span style={{ color: '#4F8EF7', marginRight: 6 }}>→</span>{tip}
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Formulas */}
+              {notes.formulas?.length > 0 && (
+                <div style={S.card}>
+                  <div style={{ fontSize: 11, fontWeight: 700, color: 'rgba(255,255,255,.4)', letterSpacing: 1, marginBottom: 8 }}>FORMULAS</div>
+                  {notes.formulas.map((f, i) => (
+                    <div key={i} style={{ fontSize: 15, fontFamily: 'monospace', color: '#C9A84C', padding: '4px 0' }}>{f}</div>
+                  ))}
+                </div>
+              )}
+
+              {/* Continue to worked example */}
+              <button onClick={() => setPhase('learn')} style={S.btn(true)}>
+                I've read the notes — show me a worked example →
+              </button>
+            </>
+          )}
 
           {/* ═══ STEP 1: LEARN — Worked Example ═══ */}
           {phase === 'learn' && we && (
