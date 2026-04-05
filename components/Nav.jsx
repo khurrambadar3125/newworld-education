@@ -8,12 +8,11 @@ const MENU_GROUPS = [
   {
     title: 'Study',
     items: [
-      { href: '/learn',        label: '📖 Today\'s Plan' },
+      { href: '/study',        label: '📚 Study Path' },
       { href: '/become-newton', label: '🍎 Become Newton — Maths' },
       { href: '/drill',        label: '⚡ Practice Drill' },
       { href: '/mocks',        label: '📝 Mock Exams' },
-      { href: '/challenge',    label: '🎯 Cambridge Challenge' },
-      { href: '/nano',         label: '⚛️ Starky Nano' },
+      { href: '/daily-challenge', label: '🏆 Daily Challenge' },
     ],
   },
   {

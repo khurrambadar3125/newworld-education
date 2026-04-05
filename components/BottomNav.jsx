@@ -6,8 +6,8 @@ import { useRouter } from 'next/router';
 
 const TABS = [
   { path: '/', label: 'Home', icon: '🏠', activeIcon: '🏠' },
-  { path: '/learn', label: 'Learn', icon: '📚', activeIcon: '📖' },
-  { path: '/drill', label: 'Drill', icon: '⚡', activeIcon: '⚡' },
+  { path: '/study', label: 'Study', icon: '📚', activeIcon: '📖' },
+  { path: '/daily-challenge', label: 'Challenge', icon: '🏆', activeIcon: '🏆' },
   { path: '/progress', label: 'Progress', icon: '📊', activeIcon: '📊' },
   { path: '/student-dashboard', label: 'Profile', icon: '👤', activeIcon: '👤' },
 ];
