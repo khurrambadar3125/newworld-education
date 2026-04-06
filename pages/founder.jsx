@@ -29,7 +29,6 @@ const TIMELINE = [
 const MENTORS = [
   { name: 'Abdul Sattar Edhi', title: 'Pakistan\'s Greatest Humanitarian', quote: 'Accumulation is not the point. Impact is the point.' },
   { name: 'H.D. Habib', title: 'First Chairman, Habib Bank Limited', quote: null },
-  { name: 'Dr. Ishrat Hussain', title: 'Former Governor, State Bank of Pakistan', quote: null },
 ];
 
 export default function FounderPage() {
