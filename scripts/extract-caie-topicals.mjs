@@ -142,7 +142,6 @@ async function saveToSupabase(questions, meta) {
       mark_scheme: q.type !== 'mcq' ? String(q.correctAnswer || '').slice(0, 1000) : null,
       marks: parseInt(q.marks) || 1,
       source: 'past_paper',
-      source_paper: q.session || meta.paper || null,
       verified: q.verified !== false,
     });
 
