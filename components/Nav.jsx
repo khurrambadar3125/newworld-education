@@ -75,6 +75,7 @@ const SINDH_MENU_GROUPS = [
   ]},
   { title: 'More', items: [
     { href: '/garageschool', label: '🏫 The Garage School' },
+    { href: '/garage-admin', label: '📋 Teacher Dashboard' },
     { href: '/study', label: '🌍 Cambridge O & A Level' },
     { href: '/founder', label: '👤 Founder' },
   ]},
