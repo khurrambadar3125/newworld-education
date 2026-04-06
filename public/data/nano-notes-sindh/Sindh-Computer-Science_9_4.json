@@ -1,0 +1,110 @@
+{
+  "subject": "Computer Science",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "4",
+  "chapter_name": "Data Communication and Network",
+  "note_data": {
+    "title": "Data Communication and Network",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Data Communication is the process of transferring data from one location to another through transmission media",
+      "Network is a collection of computers and devices connected together to share resources and information",
+      "Transmission media includes guided media (cables) and unguided media (wireless)",
+      "Network topologies include Bus, Star, Ring, and Mesh configurations",
+      "LAN covers small areas like schools or offices, WAN covers large geographical areas like cities or countries",
+      "Internet is the largest network connecting millions of computers worldwide",
+      "Protocol is a set of rules that govern data communication between devices",
+      "Bandwidth determines the amount of data that can be transmitted per unit time",
+      "Network devices include Hub, Switch, Router, and Modem for data transmission"
+    ],
+    "definitions": [
+      {
+        "term": "Data Communication",
+        "definition": "Data communication is the process of transferring data from one location to another through some transmission media such as cables or wireless media."
+      },
+      {
+        "term": "Network",
+        "definition": "A network is a collection of computers and other devices connected together to share resources and communicate with each other."
+      },
+      {
+        "term": "LAN",
+        "definition": "Local Area Network (LAN) is a network that covers a small geographical area such as a building, school, or office."
+      },
+      {
+        "term": "WAN",
+        "definition": "Wide Area Network (WAN) is a network that covers a large geographical area such as a city, country, or continent."
+      },
+      {
+        "term": "Protocol",
+        "definition": "Protocol is a set of rules and standards that govern the communication between devices in a network."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between LAN and WAN.",
+        "answer": "LAN covers small areas like buildings or offices while WAN covers large geographical areas like cities or countries. LAN has higher speed and lower cost compared to WAN."
+      },
+      {
+        "type": "long",
+        "question": "Explain different types of network topologies with their advantages and disadvantages.",
+        "answer": "Network topologies include: 1) Bus Topology - All devices connected to single cable, advantage is low cost, disadvantage is single point failure. 2) Star Topology - All devices connected to central hub, advantage is easy to add devices, disadvantage is hub failure affects all. 3) Ring Topology - Devices connected in circular fashion, advantage is equal access, disadvantage is break affects whole network. 4) Mesh Topology - Every device connected to every other device, advantage is multiple paths, disadvantage is high cost."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which topology connects all devices to a central hub?",
+        "options": {
+          "A": "Bus",
+          "B": "Star",
+          "C": "Ring",
+          "D": "Mesh"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Internet is an example of which type of network?",
+        "options": {
+          "A": "LAN",
+          "B": "MAN",
+          "C": "WAN",
+          "D": "PAN"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which transmission media uses light signals?",
+        "options": {
+          "A": "Coaxial cable",
+          "B": "Twisted pair",
+          "C": "Fiber optic",
+          "D": "Radio waves"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse LAN with WAN - remember LAN is Local (small area), WAN is Wide (large area)",
+      "Mixing up network topologies - draw diagrams to remember the differences",
+      "Forgetting to mention both advantages and disadvantages when asked about topologies",
+      "Writing 'Internet' instead of 'internet' - Internet refers to the global network",
+      "Not explaining transmission media types clearly - guided vs unguided"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs about network types and topologies in every BSEK paper",
+      "Topology diagrams appear frequently - practice drawing Bus, Star, Ring, and Mesh",
+      "Questions about LAN vs WAN differences are very common in short questions",
+      "Always write complete definitions as given in textbook for full marks",
+      "Learn Pakistani examples like PTCL network, fiber optic cables in Karachi"
+    ],
+    "formulas": [
+      "Data Transfer Rate = Amount of Data / Time",
+      "Bandwidth = Maximum data transfer rate"
+    ],
+    "keyDiagram": "Network Topologies Diagram showing Bus (linear connection), Star (hub-centered), Ring (circular), and Mesh (interconnected) configurations with proper labeling of nodes and connections"
+  },
+  "created_at": "2026-04-06T06:42:25.341Z"
+}

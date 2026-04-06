@@ -65,8 +65,11 @@ export default function SindhBoardStudy() {
             <h1 style={{ fontSize: 26, fontWeight: 900, margin: '0 0 8px' }}>
               Matric Study Path
             </h1>
-            <p style={{ color: 'rgba(255,255,255,.4)', fontSize: 13 }}>
+            <p style={{ color: 'rgba(255,255,255,.4)', fontSize: 13, marginBottom: 4 }}>
               11 subjects · 159 chapters · Revision notes for every chapter
+            </p>
+            <p style={{ color: 'rgba(255,255,255,.25)', fontSize: 12 }}>
+              اردو · سنڌي · English · پښتو · پنجابی — Starky speaks your language
             </p>
           </div>
 
@@ -236,17 +239,29 @@ export default function SindhBoardStudy() {
 
           {/* IBA Pipeline */}
           {!selectedSubject && (
-            <div style={{ background: 'rgba(201,168,76,.04)', border: '1px solid rgba(201,168,76,.15)', borderRadius: 14, padding: '20px 16px', marginTop: 24, textAlign: 'center' }}>
-              <div style={{ fontSize: 12, fontWeight: 700, color: GOLD, letterSpacing: 1, marginBottom: 8 }}>YOUR PATH TO UNIVERSITY</div>
-              <div style={{ display: 'flex', gap: 6, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 12 }}>
-                {['Master Matric', '→', 'Entrance Test Prep', '→', 'IBA / LUMS / NUST'].map((s, i) => (
-                  <span key={i} style={{ fontSize: 12, fontWeight: s === '→' ? 400 : 700, color: s === '→' ? 'rgba(255,255,255,.3)' : GOLD }}>{s}</span>
-                ))}
-              </div>
-              <a href="/entrance-tests" style={{ fontSize: 13, color: '#4F8EF7', textDecoration: 'none', fontWeight: 700 }}>
-                Start entrance test prep →
+            <>
+              {/* Bootcamp CTA */}
+              <a href="/bootcamp-sindh" style={{ display: 'block', background: 'rgba(79,142,247,.06)', border: '1px solid rgba(79,142,247,.2)', borderRadius: 14, padding: '18px 16px', marginTop: 16, textDecoration: 'none', textAlign: 'center' }}>
+                <div style={{ fontSize: 15, fontWeight: 800, color: '#4F8EF7', marginBottom: 4 }}>🎯 Start a Bootcamp</div>
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,.4)' }}>Set your goal. Get a daily study plan. Follow it until exam day.</div>
               </a>
-            </div>
+
+              {/* University path */}
+              <div style={{ background: 'rgba(201,168,76,.04)', border: '1px solid rgba(201,168,76,.15)', borderRadius: 14, padding: '20px 16px', marginTop: 10, textAlign: 'center' }}>
+                <div style={{ fontSize: 12, fontWeight: 700, color: GOLD, letterSpacing: 1, marginBottom: 8 }}>YOUR FUTURE PATH</div>
+                <div style={{ display: 'flex', gap: 6, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 12 }}>
+                  {['Master Matric', '→', 'Intermediate (FSc)', '→', 'Entry Tests', '→', 'IBA / LUMS / NUST'].map((s, i) => (
+                    <span key={i} style={{ fontSize: 11, fontWeight: s === '→' ? 400 : 700, color: s === '→' ? 'rgba(255,255,255,.3)' : GOLD }}>{s}</span>
+                  ))}
+                </div>
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,.35)' }}>Master your Matric subjects first. Entry test prep unlocks after.</div>
+              </div>
+
+              {/* Ask Starky */}
+              <a href="/?message=I'm%20a%20Sindh%20Board%20student.%20Help%20me%20study." style={{ display: 'block', textAlign: 'center', fontSize: 13, color: '#4F8EF7', textDecoration: 'none', padding: '16px 0', marginTop: 8 }}>
+                Need help? Talk to Starky in Urdu, Sindhi, or English →
+              </a>
+            </>
           )}
 
         </div>

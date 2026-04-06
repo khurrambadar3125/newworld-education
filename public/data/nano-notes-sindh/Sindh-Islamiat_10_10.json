@@ -1,0 +1,91 @@
+{
+  "subject": "Islamiat",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "10",
+  "chapter_name": "Ahadees — Selected Hadith (Part II)",
+  "note_data": {
+    "title": "Ahadees — Selected Hadith (Part II)",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Hadith about seeking knowledge: 'Seek knowledge from the cradle to the grave' emphasizes lifelong learning in Islam",
+      "Hadith on cleanliness: 'Cleanliness is half of faith' shows the importance of physical and spiritual purity",
+      "Hadith about parents: 'Paradise lies at the feet of your mother' highlights the respect due to parents, especially mothers",
+      "Hadith on truthfulness: 'Truthfulness leads to righteousness and righteousness leads to Paradise' shows the virtue of honesty",
+      "Hadith about neighbors: 'He is not a believer who eats his fill while his neighbor goes hungry' teaches social responsibility",
+      "Hadith on charity: 'The upper hand is better than the lower hand' encourages giving rather than receiving",
+      "Hadith about justice: 'Be just, that is nearer to righteousness' emphasizes fairness in all dealings",
+      "Each Hadith provides practical guidance for Muslim daily life and moral conduct"
+    ],
+    "definitions": [
+      {
+        "term": "Hadith",
+        "definition": "The sayings, actions, and approvals of Prophet Muhammad (PBUH) which serve as the second source of Islamic law after the Quran"
+      },
+      {
+        "term": "Sunnah",
+        "definition": "The way of life and teachings of Prophet Muhammad (PBUH) which Muslims are encouraged to follow"
+      },
+      {
+        "term": "Narrator (Rawi)",
+        "definition": "A person who transmits or reports a Hadith from one generation to another"
+      },
+      {
+        "term": "Chain of Narration (Isnad)",
+        "definition": "The series of narrators through whom a Hadith has been transmitted from the Prophet (PBUH) to the compiler"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Write the Hadith about seeking knowledge and explain its importance.",
+        "answer": "The Hadith states: 'Seek knowledge from the cradle to the grave.' This emphasizes that learning is a continuous process throughout life and acquiring knowledge is a religious duty for every Muslim."
+      },
+      {
+        "type": "long",
+        "question": "Explain the Hadith about cleanliness and its practical applications in daily life.",
+        "answer": "The Hadith 'Cleanliness is half of faith' shows that cleanliness is essential in Islam. Practical applications include: 1) Personal hygiene through regular bathing and grooming 2) Maintaining clean clothes and environment 3) Performing ablution (Wudu) before prayers 4) Keeping mosques and homes clean 5) Environmental cleanliness in cities like Karachi to prevent diseases. This Hadith teaches that physical cleanliness reflects spiritual purity and is part of worship."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The Hadith 'Paradise lies at the feet of your mother' emphasizes:",
+        "options": {
+          "A": "Women's superiority",
+          "B": "Respect for parents",
+          "C": "Importance of mothers",
+          "D": "Family values"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "According to the Hadith, truthfulness leads to:",
+        "options": {
+          "A": "Success in business",
+          "B": "Righteousness",
+          "C": "Popularity",
+          "D": "Wealth"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often write Hadith text incorrectly - memorize exact wording from textbook",
+      "Mixing up different Ahadees and their meanings - study each separately",
+      "Not explaining practical applications when asked - always give real-life examples",
+      "Writing 'PBUH' as 'SAW' without full form - use complete respectful terms",
+      "Forgetting to mention the lesson/moral of each Hadith in answers"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and appears in short questions every year in BSEK papers",
+      "Memorize exact Arabic text and English translation of each Hadith from textbook",
+      "Always explain practical applications using Pakistani context (family life, society)",
+      "For long questions, structure answer: Hadith text + meaning + practical examples + conclusion"
+    ],
+    "formulas": [],
+    "keyDiagram": "No specific diagram required for this chapter, but students should know the chain of narration concept showing transmission from Prophet (PBUH) to companions to successors to compilers."
+  },
+  "created_at": "2026-04-06T06:39:16.154Z"
+}

@@ -1,0 +1,108 @@
+{
+  "subject": "Computer Science",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "12",
+  "chapter_name": "Functions",
+  "note_data": {
+    "title": "Functions",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Function is a sub-program or sub-routine that performs a specific task and can be called from the main program",
+      "Functions reduce program length, avoid repetition of code, and make programs easier to understand and debug",
+      "There are two types of functions: Built-in functions (provided by C language) and User-defined functions (created by programmer)",
+      "Function declaration tells the compiler about function name, return type, and parameters",
+      "Function definition contains the actual code that executes when function is called",
+      "Function call is used to execute the function from main program or another function",
+      "Return statement sends value back to the calling function",
+      "Parameters are values passed to function while arguments are actual values received by function"
+    ],
+    "definitions": [
+      {
+        "term": "Function",
+        "definition": "A function is a sub-program or sub-routine that performs a specific task and can be called from the main program or from another function"
+      },
+      {
+        "term": "Function Declaration",
+        "definition": "Function declaration tells the compiler about the function name, return type, and parameters but does not contain the function body"
+      },
+      {
+        "term": "Function Definition",
+        "definition": "Function definition contains the actual statements or code that executes when the function is called"
+      },
+      {
+        "term": "Built-in Functions",
+        "definition": "Built-in functions are pre-defined functions provided by C language such as printf(), scanf(), sqrt(), pow() etc."
+      },
+      {
+        "term": "User-defined Functions",
+        "definition": "User-defined functions are created by the programmer according to program requirements to perform specific tasks"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define function and write its advantages.",
+        "answer": "Function is a sub-program that performs specific task. Advantages: Reduces program length, avoids code repetition, makes program easier to understand and debug, allows code reusability."
+      },
+      {
+        "type": "long",
+        "question": "Differentiate between function declaration and function definition. Write a C program using user-defined function to calculate area of circle.",
+        "answer": "Function Declaration: Tells compiler about function name, return type and parameters without function body. Function Definition: Contains actual code that executes. Program: #include<stdio.h> float area(float r); int main(){ float radius, result; printf(\"Enter radius: \"); scanf(\"%f\", &radius); result = area(radius); printf(\"Area = %.2f\", result); return 0;} float area(float r){ return 3.14*r*r;}"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is a built-in function in C?",
+        "options": {
+          "A": "area()",
+          "B": "calculate()",
+          "C": "printf()",
+          "D": "myfunction()"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "What does function declaration specify?",
+        "options": {
+          "A": "Function body only",
+          "B": "Function name, return type and parameters",
+          "C": "Only function name",
+          "D": "Only return type"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The statement that sends value back to calling function is:",
+        "options": {
+          "A": "printf",
+          "B": "scanf",
+          "C": "return",
+          "D": "include"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse function declaration with function definition",
+      "Forgetting to write return statement in functions that return values",
+      "Not matching parameter types in function declaration and definition",
+      "Writing function call without proper arguments",
+      "Confusing built-in functions with user-defined functions in examples"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Always memorize the syntax of function declaration and definition",
+      "Practice writing complete C programs with user-defined functions",
+      "Remember to differentiate between declaration and definition with examples"
+    ],
+    "formulas": [
+      "Function declaration syntax: return_type function_name(parameter_list);",
+      "Function definition syntax: return_type function_name(parameter_list) { statements; return value; }"
+    ],
+    "keyDiagram": "Function structure diagram showing: Function Declaration → Function Definition → Function Call → Return Value flow. Also draw the complete structure of C program with user-defined function including #include, function declaration, main() function, and function definition."
+  },
+  "created_at": "2026-04-06T06:45:45.633Z"
+}

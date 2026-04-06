@@ -1,0 +1,106 @@
+{
+  "subject": "Computer Science",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "1",
+  "chapter_name": "Fundamentals of Computer",
+  "note_data": {
+    "title": "Fundamentals of Computer",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Computer is an electronic device that accepts data, processes it and gives meaningful information as output",
+      "Data is raw facts and figures without any meaning, while Information is processed data that has meaning",
+      "Computer works on IPO cycle: Input → Processing → Output",
+      "Main characteristics of computer: Speed, Accuracy, Storage, Versatility, Automation, Diligence",
+      "Computer generations are classified based on technology used: 1st (Vacuum tubes), 2nd (Transistors), 3rd (ICs), 4th (Microprocessors), 5th (AI)",
+      "Types of computers by size: Supercomputer, Mainframe, Mini computer, Microcomputer",
+      "Types of computers by purpose: General purpose and Special purpose computers",
+      "Computer applications include: Education, Business, Medicine, Engineering, Entertainment, Communication"
+    ],
+    "definitions": [
+      {
+        "term": "Computer",
+        "definition": "A computer is an electronic device that accepts data as input, processes it according to given instructions and produces meaningful information as output."
+      },
+      {
+        "term": "Data",
+        "definition": "Data consists of raw facts and figures that have no particular meaning by themselves."
+      },
+      {
+        "term": "Information",
+        "definition": "Information is processed data that has been organized and presented in a meaningful way."
+      },
+      {
+        "term": "Hardware",
+        "definition": "Hardware refers to the physical components of a computer system that can be touched and felt."
+      },
+      {
+        "term": "Software",
+        "definition": "Software is a set of instructions or programs that tells the computer what to do and how to do it."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between Data and Information.",
+        "answer": "Data consists of raw facts and figures that have no particular meaning by themselves, while Information is processed data that has been organized and presented in a meaningful way. For example, '25' is data but '25°C temperature in Karachi' is information."
+      },
+      {
+        "type": "long",
+        "question": "Write a detailed note on characteristics of computer.",
+        "answer": "Computer has following characteristics: 1) Speed - performs millions of operations per second 2) Accuracy - gives 100% accurate results if input is correct 3) Storage - can store large amounts of data permanently 4) Versatility - can perform different types of tasks 5) Automation - works automatically once programmed 6) Diligence - never gets tired and maintains same speed and accuracy 7) No feelings - cannot think on its own, only follows instructions."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which generation of computers used vacuum tubes?",
+        "options": {
+          "A": "Second generation",
+          "B": "First generation",
+          "C": "Third generation",
+          "D": "Fourth generation"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "What does IPO stand for in computer terminology?",
+        "options": {
+          "A": "Input Process Output",
+          "B": "Internal Processing Operation",
+          "C": "Input Processing Output",
+          "D": "Integrated Process Operation"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which type of computer is most powerful?",
+        "options": {
+          "A": "Mainframe",
+          "B": "Microcomputer",
+          "C": "Supercomputer",
+          "D": "Mini computer"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often write 'Input Process Output' instead of 'Input Processing Output' for IPO",
+      "Confusing data with information - remember data is raw, information is processed",
+      "Writing incomplete definitions - always include the complete textbook definition word by word",
+      "Missing examples in answers - always provide Pakistani context examples like Karachi temperature, Tarbela Dam data",
+      "Not mentioning all characteristics of computer in long answers - memorize all 6-7 characteristics"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs about computer generations and types in every BSEK paper",
+      "Definition questions are very common - memorize exact textbook definitions",
+      "Characteristics of computer is a frequent 5-8 mark question",
+      "Always draw IPO cycle diagram when explaining computer working",
+      "Use Pakistani examples in answers to get full marks"
+    ],
+    "formulas": [],
+    "keyDiagram": "IPO Cycle Diagram showing Input → Processing → Output with arrows, including examples like keyboard/mouse for input, CPU for processing, and monitor/printer for output"
+  },
+  "created_at": "2026-04-06T06:41:22.700Z"
+}

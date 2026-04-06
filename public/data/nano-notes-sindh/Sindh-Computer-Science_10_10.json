@@ -1,0 +1,110 @@
+{
+  "subject": "Computer Science",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "10",
+  "chapter_name": "Input/Output Handling in C++",
+  "note_data": {
+    "title": "Input/Output Handling in C++",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Input/Output operations in C++ are performed using stream objects that handle data flow",
+      "cin is the standard input stream object used to read data from keyboard",
+      "cout is the standard output stream object used to display data on screen",
+      "Extraction operator (>>) is used with cin to input data from user",
+      "Insertion operator (<<) is used with cout to output data to screen",
+      "getline() function is used to read complete line including spaces",
+      "Header file iostream.h must be included for input/output operations",
+      "Formatting functions like setw(), setprecision() help control output display",
+      "File handling allows programs to store and retrieve data from external files"
+    ],
+    "definitions": [
+      {
+        "term": "Stream",
+        "definition": "A stream is a sequence of bytes that flows from source to destination. It provides a uniform interface for input and output operations."
+      },
+      {
+        "term": "Input Stream",
+        "definition": "An input stream is a stream that brings data into the program from an external source like keyboard or file."
+      },
+      {
+        "term": "Output Stream",
+        "definition": "An output stream is a stream that sends data from the program to an external destination like screen or file."
+      },
+      {
+        "term": "Extraction Operator",
+        "definition": "The extraction operator (>>) extracts or reads data from the input stream and stores it in variables."
+      },
+      {
+        "term": "Insertion Operator",
+        "definition": "The insertion operator (<<) inserts or writes data from variables to the output stream."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between cin and cout.",
+        "answer": "cin is input stream object used to read data from keyboard using extraction operator (>>). cout is output stream object used to display data on screen using insertion operator (<<)."
+      },
+      {
+        "type": "long",
+        "question": "Write a note on Input/Output streams in C++. Explain with example.",
+        "answer": "Input/Output streams provide uniform interface for data transfer. Input streams like cin read data from external sources into program. Output streams like cout send data from program to external destinations. Example: cin >> name; reads user input into variable name. cout << 'Hello' << name; displays greeting with user's name. These operations require iostream.h header file."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which operator is used with cin for input?",
+        "options": {
+          "A": "<<",
+          "B": ">>",
+          "C": "&&",
+          "D": "||"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which header file is required for input/output operations?",
+        "options": {
+          "A": "stdio.h",
+          "B": "conio.h",
+          "C": "iostream.h",
+          "D": "string.h"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The getline() function is used to:",
+        "options": {
+          "A": "Read single character",
+          "B": "Read complete line with spaces",
+          "C": "Read only numbers",
+          "D": "Display output"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse >> with << operators - remember >> extracts (input), << inserts (output)",
+      "Forgetting to include iostream.h header file before using cin/cout",
+      "Using cin for strings with spaces - use getline() instead of cin >> for complete sentences",
+      "Not understanding that cin stops reading at first space character",
+      "Writing cout >> instead of cout << for output operations"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs about operators and header files in every BSEK paper",
+      "Always write #include<iostream.h> at top when writing C++ programs",
+      "Practice difference between cin and getline() - frequently asked in short questions",
+      "Remember exact definitions of stream, input stream, output stream - appear in define questions"
+    ],
+    "formulas": [
+      "cin >> variable_name;",
+      "cout << 'text' << variable_name;",
+      "getline(cin, string_variable);"
+    ],
+    "keyDiagram": "Input/Output Stream Flow Diagram showing data flow from keyboard through input stream to program variables, and from program variables through output stream to screen display"
+  },
+  "created_at": "2026-04-06T06:44:39.523Z"
+}

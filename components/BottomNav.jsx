@@ -4,16 +4,26 @@
 
 import { useRouter } from 'next/router';
 
+// Detect if student is Sindh Board (stored in localStorage)
+function getStudyPath() {
+  try {
+    const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+    const gradeId = profile.gradeId || '';
+    if (['grade9', 'grade10'].includes(gradeId) && (profile.board === 'sindh' || profile.curriculum === 'sindh')) return '/sindh-board';
+  } catch {}
+  return '/study';
+}
+
 const TABS = [
   { path: '/', label: 'Home', icon: '🏠', activeIcon: '🏠' },
-  { path: '/study', label: 'Study', icon: '📚', activeIcon: '📖' },
+  { path: 'dynamic_study', label: 'Study', icon: '📚', activeIcon: '📖' },
   { path: '/daily-challenge', label: 'Challenge', icon: '🏆', activeIcon: '🏆' },
   { path: '/progress', label: 'Progress', icon: '📊', activeIcon: '📊' },
   { path: '/student-dashboard', label: 'Profile', icon: '👤', activeIcon: '👤' },
 ];
 
 // Pages where bottom nav should appear
-const SHOW_ON = ['/study', '/learn', '/drill', '/mocks', '/progress', '/student-dashboard', '/challenge', '/exam-compass', '/free-practice-test', '/nano', '/nano-teach', '/nano-learn', '/homework', '/essay', '/past-papers', '/special-needs', '/sat', '/become-newton', '/entrance-tests', '/daily-challenge', '/bootcamp', '/sindh-board'];
+const SHOW_ON = ['/study', '/learn', '/drill', '/mocks', '/progress', '/student-dashboard', '/challenge', '/exam-compass', '/free-practice-test', '/nano', '/nano-teach', '/nano-learn', '/homework', '/essay', '/past-papers', '/special-needs', '/sat', '/become-newton', '/entrance-tests', '/daily-challenge', '/bootcamp', '/sindh-board', '/bootcamp-sindh'];
 
 export default function BottomNav() {
   const router = useRouter();
@@ -38,9 +48,10 @@ export default function BottomNav() {
         zIndex: 1000,
       }}>
         {TABS.map(tab => {
-          const active = currentPath === tab.path;
+          const resolvedPath = tab.path === 'dynamic_study' ? getStudyPath() : tab.path;
+          const active = currentPath === resolvedPath || (tab.path === 'dynamic_study' && (currentPath === '/study' || currentPath === '/sindh-board'));
           return (
-            <button key={tab.path} onClick={() => router.push(tab.path)}
+            <button key={tab.path} onClick={() => router.push(resolvedPath)}
               style={{
                 background: 'none', border: 'none', cursor: 'pointer',
                 display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2,

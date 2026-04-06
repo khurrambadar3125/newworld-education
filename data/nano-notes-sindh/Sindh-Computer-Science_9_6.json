@@ -1,0 +1,106 @@
+{
+  "subject": "Computer Science",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "6",
+  "chapter_name": "Web Development",
+  "note_data": {
+    "title": "Web Development",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "World Wide Web (WWW) is a collection of interconnected documents and resources linked by hyperlinks and URLs",
+      "HTML (HyperText Markup Language) is the standard markup language used to create web pages",
+      "Web browser is a software application used to access and view websites on the Internet",
+      "Website is a collection of related web pages containing text, images, videos or other digital assets",
+      "Homepage is the main page of a website that serves as the starting point for navigation",
+      "Hyperlink is a reference or navigation element in a document to another section or document",
+      "URL (Uniform Resource Locator) is the address used to access resources on the Internet",
+      "HTML tags are keywords enclosed in angle brackets that define elements and structure of web pages",
+      "Web server is a computer system that stores and delivers web pages to users over the Internet"
+    ],
+    "definitions": [
+      {
+        "term": "World Wide Web (WWW)",
+        "definition": "A collection of interconnected documents and other resources, linked by hyperlinks and URLs, accessible via the Internet using web browsers."
+      },
+      {
+        "term": "HTML",
+        "definition": "HyperText Markup Language is the standard markup language used to create and design web pages and web applications."
+      },
+      {
+        "term": "Web Browser",
+        "definition": "A software application used to access, retrieve and view websites, web pages and other content on the World Wide Web."
+      },
+      {
+        "term": "Website",
+        "definition": "A collection of related web pages, including multimedia content, typically identified with a common domain name and published on web servers."
+      },
+      {
+        "term": "URL",
+        "definition": "Uniform Resource Locator is a reference or address used to access resources on the Internet, specifying the location of a resource and the protocol used to access it."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define World Wide Web (WWW) and web browser.",
+        "answer": "WWW is a collection of interconnected documents linked by hyperlinks and URLs. Web browser is software used to access and view websites on the Internet."
+      },
+      {
+        "type": "long",
+        "question": "Explain the basic structure of HTML document with examples of common HTML tags.",
+        "answer": "HTML document has basic structure: DOCTYPE declaration, <html> root element, <head> section containing metadata and <body> section containing visible content. Common tags include <h1> to <h6> for headings, <p> for paragraphs, <a> for links, <img> for images, <div> for divisions, <br> for line breaks, and <ul>, <ol>, <li> for lists. Each tag has opening and closing format like <tag>content</tag>."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is the standard markup language for creating web pages?",
+        "options": {
+          "A": "CSS",
+          "B": "HTML",
+          "C": "JavaScript",
+          "D": "PHP"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "What does URL stand for?",
+        "options": {
+          "A": "Universal Resource Locator",
+          "B": "Uniform Resource Language",
+          "C": "Uniform Resource Locator",
+          "D": "Universal Resource Language"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which tag is used to create hyperlinks in HTML?",
+        "options": {
+          "A": "<link>",
+          "B": "<a>",
+          "C": "<href>",
+          "D": "<url>"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse WWW with Internet - WWW is a service that runs on Internet",
+      "Writing HTML tags without proper opening and closing brackets",
+      "Confusing URL with domain name - URL is complete address including protocol",
+      "Not memorizing exact textbook definitions for WWW, HTML and web browser",
+      "Mixing up different HTML tags and their purposes in answers"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs about HTML tags and web terminology in every BSEK paper",
+      "Definition questions about WWW, HTML, and web browser appear frequently",
+      "Always write complete HTML tag syntax with angle brackets in answers",
+      "Memorize the basic HTML document structure - it appears in long questions regularly"
+    ],
+    "formulas": [],
+    "keyDiagram": "Basic HTML Document Structure showing DOCTYPE declaration, html root element, head section (with title, meta tags), and body section (with headings, paragraphs, links, and other content elements) - students must draw this hierarchy clearly"
+  },
+  "created_at": "2026-04-06T06:43:10.957Z"
+}

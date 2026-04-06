@@ -1,0 +1,105 @@
+{
+  "subject": "Islamiat",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "9",
+  "chapter_name": "Tarjuma and Tafseer — Selected Verses (Part II)",
+  "note_data": {
+    "title": "Tarjuma and Tafseer — Selected Verses (Part II)",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Surah Al-Baqarah (2:255) — Ayat-ul-Kursi describes Allah's supreme authority and knowledge over all creation",
+      "Surah Al-Imran (3:26-27) — These verses emphasize Allah's absolute sovereignty over kingdoms and power",
+      "Surah An-Nisa (4:36) — Commands worship of Allah alone and kindness to parents, relatives, orphans and neighbors",
+      "Surah Al-Maidah (5:32) — Establishes the sanctity of human life and principles of justice",
+      "Surah Al-Anfal (8:46) — Emphasizes obedience to Allah and His Messenger and maintaining unity among Muslims",
+      "Surah At-Taubah (9:71) — Describes the characteristics of believing men and women and their mutual cooperation",
+      "Each verse contains specific moral, social and spiritual guidance for Muslims in their daily lives",
+      "Tafseer provides deeper understanding of the context, background and practical application of these verses"
+    ],
+    "definitions": [
+      {
+        "term": "Tarjuma",
+        "definition": "Translation of the Quranic text from Arabic to Urdu or any other language to understand its literal meaning"
+      },
+      {
+        "term": "Tafseer",
+        "definition": "Detailed explanation and interpretation of Quranic verses including their background, context, and practical application"
+      },
+      {
+        "term": "Ayat-ul-Kursi",
+        "definition": "The Throne Verse (2:255) which describes Allah's attributes of knowledge, power and authority over the entire universe"
+      },
+      {
+        "term": "Naskh",
+        "definition": "The principle of abrogation where later Quranic verses may supersede or modify earlier revealed verses"
+      },
+      {
+        "term": "Sabab-un-Nuzool",
+        "definition": "The specific circumstances, events or occasions that led to the revelation of particular Quranic verses"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Write the Urdu translation of Ayat-ul-Kursi (2:255).",
+        "answer": "اللہ کے سوا کوئی معبود نہیں، وہ زندہ ہے، سب کو سنبھالنے والا ہے۔ اسے نہ اونگھ آتی ہے نہ نیند۔ آسمانوں اور زمین میں جو کچھ ہے سب اسی کا ہے۔"
+      },
+      {
+        "type": "long",
+        "question": "Explain the main themes and lessons derived from Surah Al-Imran verses 26-27 with reference to Allah's sovereignty.",
+        "answer": "These verses highlight Allah's absolute sovereignty over all creation. Main themes include: (1) Allah alone grants and takes away worldly power and kingdoms (2) He honors whom He wills and humiliates whom He wills (3) All good comes from Allah's hand (4) Allah has power over everything (5) He alternates day and night (6) He brings forth living from dead and dead from living (7) He provides sustenance without measure to whom He chooses. These verses teach Muslims to recognize Allah's ultimate authority over all worldly affairs and to remain humble before His power."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Ayat-ul-Kursi is verse number ___ of Surah Al-Baqarah:",
+        "options": {
+          "A": "254",
+          "B": "255",
+          "C": "256",
+          "D": "257"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which Surah contains verses about Allah's sovereignty over kingdoms (26-27)?",
+        "options": {
+          "A": "Al-Baqarah",
+          "B": "An-Nisa",
+          "C": "Al-Imran",
+          "D": "Al-Maidah"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The verse about sanctity of human life is found in:",
+        "options": {
+          "A": "Surah Al-Baqarah",
+          "B": "Surah Al-Maidah",
+          "C": "Surah An-Nisa",
+          "D": "Surah At-Taubah"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse verse numbers and their corresponding Surahs",
+      "Writing incomplete Arabic text or Urdu translation of verses",
+      "Not explaining the context (Sabab-un-Nuzool) when asked for Tafseer",
+      "Mixing up themes and lessons from different verses",
+      "Not providing practical applications when explaining Tafseer"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question in BSEK papers",
+      "Memorize exact verse numbers and Surah names — frequently tested",
+      "Practice writing Arabic text and Urdu translations accurately",
+      "Always include context and practical lessons in Tafseer answers"
+    ],
+    "formulas": [],
+    "keyDiagram": "No specific diagram required for this chapter, but students should memorize the structure: Arabic text → Urdu translation → Context → Main themes → Practical application"
+  },
+  "created_at": "2026-04-06T06:38:51.589Z"
+}

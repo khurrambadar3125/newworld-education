@@ -1,0 +1,106 @@
+{
+  "subject": "Computer Science",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "8",
+  "chapter_name": "Problem Solving and Algorithm Designing",
+  "note_data": {
+    "title": "Problem Solving and Algorithm Designing",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Problem solving is a systematic approach to identify and resolve issues through logical steps",
+      "Algorithm is a step-by-step procedure to solve a specific problem in finite time",
+      "Flowchart is a graphical representation of an algorithm using standard symbols",
+      "Pseudocode is an informal high-level description of algorithm logic using natural language",
+      "Problem analysis involves understanding input, output, and processing requirements",
+      "Algorithm design follows top-down approach breaking complex problems into simpler sub-problems",
+      "Testing and debugging are essential phases to ensure algorithm correctness",
+      "Documentation helps in understanding and maintaining the algorithm"
+    ],
+    "definitions": [
+      {
+        "term": "Algorithm",
+        "definition": "An algorithm is a finite sequence of well-defined instructions to solve a particular problem or perform a computation in finite time."
+      },
+      {
+        "term": "Flowchart",
+        "definition": "A flowchart is a diagrammatic representation of an algorithm that uses standard geometric symbols connected by flow lines to show the sequence of operations."
+      },
+      {
+        "term": "Pseudocode",
+        "definition": "Pseudocode is an informal high-level description of a computer program's logic that uses structural conventions of programming languages but is intended for human reading."
+      },
+      {
+        "term": "Problem Solving",
+        "definition": "Problem solving is the process of identifying a problem, analyzing it, developing solutions, and implementing the best solution to achieve desired results."
+      },
+      {
+        "term": "Debugging",
+        "definition": "Debugging is the process of finding and removing errors or bugs from an algorithm or computer program to ensure correct execution."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define algorithm and write its characteristics.",
+        "answer": "Algorithm is a finite sequence of well-defined instructions to solve a problem. Characteristics: (1) Finite steps (2) Well-defined operations (3) Input and output (4) Effectiveness (5) Unambiguous"
+      },
+      {
+        "type": "long",
+        "question": "Write an algorithm and draw flowchart to find the largest number among three numbers entered by user.",
+        "answer": "Algorithm: 1. Start 2. Input A, B, C 3. If A>B and A>C then print A is largest 4. Else if B>C then print B is largest 5. Else print C is largest 6. Stop. Flowchart should include start/stop ovals, input/output parallelograms, decision diamonds, and process rectangles with proper flow lines."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which symbol is used for decision making in flowchart?",
+        "options": {
+          "A": "Rectangle",
+          "B": "Diamond",
+          "C": "Oval",
+          "D": "Parallelogram"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "What is the first step in problem solving process?",
+        "options": {
+          "A": "Implementation",
+          "B": "Testing",
+          "C": "Problem identification",
+          "D": "Algorithm design"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Pseudocode is written in:",
+        "options": {
+          "A": "Machine language",
+          "B": "Natural language",
+          "C": "Assembly language",
+          "D": "Binary code"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse flowchart symbols - remember diamond for decision, rectangle for process",
+      "Writing algorithm steps without proper sequence or missing Start/Stop",
+      "Not showing proper flow direction in flowcharts with arrows",
+      "Confusing pseudocode with actual programming code syntax",
+      "Not testing algorithm with different input values for verification"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs about flowchart symbols in every BSEK paper",
+      "Algorithm writing question (5-8 marks) appears frequently - practice common problems",
+      "Always draw flowchart symbols correctly - marks deducted for wrong shapes",
+      "Write algorithm steps in numbered format starting with 'Start' and ending with 'Stop'",
+      "Practice algorithms for: largest number, sum/average, factorial, even/odd checking"
+    ],
+    "formulas": [],
+    "keyDiagram": "Standard flowchart symbols: Oval (Start/Stop), Rectangle (Process), Diamond (Decision), Parallelogram (Input/Output), Circle (Connector). Students must memorize these shapes and their purposes as they appear in every exam."
+  },
+  "created_at": "2026-04-06T06:43:55.310Z"
+}

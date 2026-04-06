@@ -1,0 +1,107 @@
+{
+  "subject": "Computer Science",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "2",
+  "chapter_name": "Fundamentals of Operating System",
+  "note_data": {
+    "title": "Fundamentals of Operating System",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Operating System is a collection of programs that manages computer hardware and provides services to other programs",
+      "OS acts as an interface between user and computer hardware",
+      "Main functions of OS include process management, memory management, file management, and device management",
+      "Types of OS: Batch Processing, Multi-programming, Time Sharing, Real-time, and Distributed Operating Systems",
+      "Popular operating systems include Windows, Linux, UNIX, and DOS",
+      "Booting is the process of starting up a computer and loading the operating system into memory",
+      "GUI (Graphical User Interface) uses icons, windows, and menus while CLI (Command Line Interface) uses text commands",
+      "Device drivers are special programs that allow OS to communicate with hardware devices",
+      "Utility programs perform maintenance tasks like disk cleanup, antivirus scanning, and file compression"
+    ],
+    "definitions": [
+      {
+        "term": "Operating System",
+        "definition": "An Operating System is a collection of programs that manages computer hardware resources and provides common services for computer programs."
+      },
+      {
+        "term": "Booting",
+        "definition": "Booting is the process of starting up a computer system and loading the operating system from storage device into main memory."
+      },
+      {
+        "term": "Device Driver",
+        "definition": "A device driver is a computer program that operates or controls a particular type of device that is attached to a computer."
+      },
+      {
+        "term": "GUI",
+        "definition": "Graphical User Interface is a type of user interface that allows users to interact with electronic devices through graphical icons and visual indicators."
+      },
+      {
+        "term": "Multi-tasking",
+        "definition": "Multi-tasking is the ability of an operating system to execute more than one task or program simultaneously."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define Operating System and write its two main functions.",
+        "answer": "Operating System is a collection of programs that manages computer hardware resources and provides common services for computer programs. Two main functions: (1) Process Management (2) Memory Management"
+      },
+      {
+        "type": "long",
+        "question": "Explain the different types of Operating Systems with examples.",
+        "answer": "Types of Operating Systems: (1) Batch Processing OS - processes jobs in batches without user interaction, example: IBM mainframes (2) Multi-programming OS - multiple programs loaded in memory simultaneously, example: UNIX (3) Time Sharing OS - multiple users share computer resources, example: MULTICS (4) Real-time OS - provides immediate response, example: embedded systems in traffic lights (5) Distributed OS - manages multiple computers, example: cluster computing systems"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is NOT a function of Operating System?",
+        "options": {
+          "A": "Process Management",
+          "B": "Memory Management",
+          "C": "Virus Creation",
+          "D": "File Management"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "GUI stands for:",
+        "options": {
+          "A": "General User Interface",
+          "B": "Graphical User Interface",
+          "C": "Global User Interface",
+          "D": "Generic User Interface"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The process of starting a computer is called:",
+        "options": {
+          "A": "Loading",
+          "B": "Processing",
+          "C": "Booting",
+          "D": "Installing"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse Operating System with Application Software",
+      "Many students forget to mention that OS acts as interface between user and hardware",
+      "Students often mix up GUI and CLI definitions",
+      "Common mistake is writing incomplete definitions without mentioning 'collection of programs'",
+      "Students forget to give proper examples when explaining types of Operating Systems"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question in every BSEK paper",
+      "Always memorize the exact definition of Operating System - appears in every exam",
+      "Functions of OS is a very common 5-mark question",
+      "Difference between GUI and CLI frequently asked in short questions",
+      "Types of OS with examples is a popular 8-mark question"
+    ],
+    "formulas": [],
+    "keyDiagram": "Draw a block diagram showing User at top, Operating System in middle (containing Process Management, Memory Management, File Management, Device Management), and Computer Hardware at bottom with arrows showing interaction flow"
+  },
+  "created_at": "2026-04-06T06:41:43.086Z"
+}

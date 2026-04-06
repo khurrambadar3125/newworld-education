@@ -1,0 +1,108 @@
+{
+  "subject": "Computer Science",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "11",
+  "chapter_name": "Control Structure",
+  "note_data": {
+    "title": "Control Structure",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Control structures determine the order in which statements are executed in a program",
+      "There are three types: Sequential, Selection (Conditional), and Iteration (Looping)",
+      "Sequential structure executes statements one after another in the order they appear",
+      "Selection structure uses IF-ELSE and SWITCH statements to make decisions",
+      "Iteration structure repeats a block of code using FOR, WHILE, and DO-WHILE loops",
+      "Nested structures allow placing one control structure inside another",
+      "Flowcharts are graphical representations of control structures using standard symbols",
+      "Pseudocode is a structured English-like language to represent algorithms"
+    ],
+    "definitions": [
+      {
+        "term": "Control Structure",
+        "definition": "A control structure is a statement that determines the order in which other statements are executed in a program."
+      },
+      {
+        "term": "Sequential Structure",
+        "definition": "Sequential structure is a control structure in which statements are executed one after another in the order they appear in the program."
+      },
+      {
+        "term": "Selection Structure",
+        "definition": "Selection structure is a control structure that allows the program to choose between two or more alternative paths based on a condition."
+      },
+      {
+        "term": "Iteration Structure",
+        "definition": "Iteration structure is a control structure that repeats a statement or block of statements while a condition is true."
+      },
+      {
+        "term": "Nested Structure",
+        "definition": "Nested structure is placing one control structure inside another control structure."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define control structure and write its types.",
+        "answer": "Control structure is a statement that determines the order in which other statements are executed in a program. Types: 1) Sequential 2) Selection 3) Iteration"
+      },
+      {
+        "type": "long",
+        "question": "Explain different types of control structures with examples and flowcharts.",
+        "answer": "1) Sequential Structure: Executes statements in order. Example: Input, Process, Output. 2) Selection Structure: Uses IF-ELSE for decision making. Example: IF marks>=50 THEN 'Pass' ELSE 'Fail'. 3) Iteration Structure: Repeats code block. Example: FOR loop to calculate sum of numbers from 1 to 10. Each type has specific flowchart symbols and serves different programming purposes."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which control structure executes statements in sequence?",
+        "options": {
+          "A": "Selection",
+          "B": "Sequential",
+          "C": "Iteration",
+          "D": "Nested"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "IF-ELSE statement is an example of:",
+        "options": {
+          "A": "Sequential structure",
+          "B": "Iteration structure",
+          "C": "Selection structure",
+          "D": "None of these"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which symbol is used for decision making in flowchart?",
+        "options": {
+          "A": "Rectangle",
+          "B": "Circle",
+          "C": "Diamond",
+          "D": "Oval"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse selection structure with iteration structure",
+      "Forgetting to draw proper flowchart symbols - diamond for decision, rectangle for process",
+      "Not writing exact textbook definitions word by word",
+      "Mixing up FOR loop syntax with WHILE loop syntax",
+      "Not showing proper entry and exit points in nested structure diagrams"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question worth 8 marks in BSEK papers",
+      "Always draw flowchart symbols accurately - this appears every year",
+      "Memorize the exact definitions as given in STBB textbook",
+      "Practice writing pseudocode for common problems like finding largest number"
+    ],
+    "formulas": [
+      "FOR loop syntax: FOR variable = start TO end STEP increment",
+      "WHILE loop syntax: WHILE condition DO statements ENDWHILE"
+    ],
+    "keyDiagram": "Flowchart symbols: Oval (Start/End), Rectangle (Process), Diamond (Decision), Parallelogram (Input/Output), Circle (Connector). Students must memorize and draw these symbols correctly with proper arrows showing flow direction."
+  },
+  "created_at": "2026-04-06T06:44:59.150Z"
+}

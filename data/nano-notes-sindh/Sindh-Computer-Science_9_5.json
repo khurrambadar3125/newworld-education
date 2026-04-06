@@ -1,0 +1,108 @@
+{
+  "subject": "Computer Science",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "5",
+  "chapter_name": "Computer Security and Ethics",
+  "note_data": {
+    "title": "Computer Security and Ethics",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Computer security is the protection of computer systems and information from harm, theft, and unauthorized use",
+      "Computer ethics is a set of moral principles that regulate the use of computers and technology",
+      "Computer crimes include hacking, virus creation, software piracy, and data theft",
+      "Antivirus software is a program designed to detect, prevent, and remove malicious software",
+      "Password protection is the first line of defense against unauthorized access to computer systems",
+      "Data backup is the process of copying and archiving computer data to prevent data loss",
+      "Firewall is a security system that monitors and controls incoming and outgoing network traffic",
+      "Copyright laws protect intellectual property rights of software developers and content creators",
+      "Privacy concerns arise from unauthorized collection and use of personal information",
+      "Digital divide refers to the gap between those who have access to modern technology and those who do not"
+    ],
+    "definitions": [
+      {
+        "term": "Computer Security",
+        "definition": "Computer security is the protection of computer systems and information from harm, theft, and unauthorized use. It involves implementing measures to prevent unauthorized access and protect data integrity."
+      },
+      {
+        "term": "Computer Ethics",
+        "definition": "Computer ethics is a set of moral principles that regulate the use of computers and technology. It deals with what is right and wrong in the digital world."
+      },
+      {
+        "term": "Computer Virus",
+        "definition": "A computer virus is a malicious program that replicates itself and spreads from one computer to another, often causing damage to files and system performance."
+      },
+      {
+        "term": "Hacking",
+        "definition": "Hacking is the unauthorized access to computer systems or networks with the intent to steal, modify, or destroy data."
+      },
+      {
+        "term": "Software Piracy",
+        "definition": "Software piracy is the unauthorized copying, distribution, or use of copyrighted software without proper licensing or permission from the copyright holder."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define computer security and write any two security measures.",
+        "answer": "Computer security is the protection of computer systems and information from harm, theft, and unauthorized use. Two security measures are: 1) Password protection 2) Antivirus software installation."
+      },
+      {
+        "type": "long",
+        "question": "Explain different types of computer crimes with examples. How can we prevent them?",
+        "answer": "Computer crimes include: 1) Hacking - unauthorized access to systems (Prevention: strong passwords, firewalls) 2) Virus attacks - malicious programs damaging systems (Prevention: antivirus software, regular updates) 3) Software piracy - illegal copying of software (Prevention: purchasing licensed software) 4) Identity theft - stealing personal information (Prevention: secure browsing, data encryption) 5) Cyberbullying - harassment through digital platforms (Prevention: reporting mechanisms, digital literacy). Prevention methods include user education, legal frameworks, technical safeguards, and regular system updates."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is NOT a type of computer crime?",
+        "options": {
+          "A": "Hacking",
+          "B": "Software piracy",
+          "C": "Data backup",
+          "D": "Identity theft"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "What is the primary function of antivirus software?",
+        "options": {
+          "A": "To increase computer speed",
+          "B": "To detect and remove malicious software",
+          "C": "To create backup copies",
+          "D": "To manage network connections"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which security measure controls network traffic?",
+        "options": {
+          "A": "Password",
+          "B": "Antivirus",
+          "C": "Firewall",
+          "D": "Backup"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse computer security with computer ethics - security is protection, ethics is moral principles",
+      "Mixing up types of malware - virus replicates itself, while trojan disguises as legitimate software",
+      "Writing incomplete definitions - always include the complete textbook definition word for word",
+      "Forgetting to mention examples when asked about computer crimes",
+      "Confusing prevention methods with types of crimes in long questions"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Definitions of computer security and ethics are frequently asked - memorize exact textbook wordings",
+      "Long questions often ask to explain computer crimes with examples and prevention methods",
+      "Learn the difference between various security measures like firewall, antivirus, and password protection",
+      "Practice writing about ethical issues in Pakistani context like digital divide in rural Sindh"
+    ],
+    "formulas": [],
+    "keyDiagram": "Security Layers Diagram - showing multiple layers of computer security including physical security, access control, firewalls, antivirus software, and data encryption working together to protect computer systems"
+  },
+  "created_at": "2026-04-06T06:42:48.850Z"
+}

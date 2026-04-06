@@ -1,0 +1,110 @@
+{
+  "subject": "Computer Science",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "9",
+  "chapter_name": "Basics of Programming C++",
+  "note_data": {
+    "title": "Basics of Programming C++",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "C++ is a high-level programming language developed by Bjarne Stroustrup at Bell Labs in 1983",
+      "Program is a set of instructions written in a programming language to solve a specific problem",
+      "Algorithm is a step-by-step procedure to solve a particular problem in a finite number of steps",
+      "Flowchart is a graphical representation of an algorithm using standard symbols",
+      "Pseudocode is an artificial and informal language that helps programmers develop algorithms",
+      "C++ program structure includes header files, main() function, and program statements",
+      "Variables are memory locations that store data values that can be changed during program execution",
+      "Data types in C++ include int, float, char, and double to specify the type of data",
+      "Input/output operations use cin for input and cout for output with iostream header file"
+    ],
+    "definitions": [
+      {
+        "term": "Program",
+        "definition": "A program is a set of instructions written in a programming language to solve a specific problem or to perform a particular task on a computer."
+      },
+      {
+        "term": "Algorithm",
+        "definition": "An algorithm is a step-by-step procedure or method for solving a problem in a finite number of steps."
+      },
+      {
+        "term": "Flowchart",
+        "definition": "A flowchart is a graphical representation of an algorithm or program using standard symbols to show the flow of control."
+      },
+      {
+        "term": "Variable",
+        "definition": "A variable is a named memory location that stores data values which can be changed during program execution."
+      },
+      {
+        "term": "C++",
+        "definition": "C++ is a high-level, object-oriented programming language developed by Bjarne Stroustrup at Bell Labs in 1983."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define algorithm and write its characteristics.",
+        "answer": "Algorithm is a step-by-step procedure to solve a problem in finite steps. Characteristics: (1) Input (2) Output (3) Definiteness (4) Finiteness (5) Effectiveness"
+      },
+      {
+        "type": "long",
+        "question": "Write the structure of C++ program with example. Also explain different data types used in C++.",
+        "answer": "C++ Program Structure: (1) Header files (#include<iostream>) (2) Using namespace std (3) Main function int main() (4) Program statements (5) Return 0. Data types: int (whole numbers), float (decimal numbers), char (single character), double (large decimal numbers). Example program showing variable declaration and basic input/output operations."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "C++ programming language was developed by:",
+        "options": {
+          "A": "Dennis Ritchie",
+          "B": "Bjarne Stroustrup",
+          "C": "James Gosling",
+          "D": "Bill Gates"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which header file is used for input/output operations in C++?",
+        "options": {
+          "A": "#include<stdio.h>",
+          "B": "#include<iostream>",
+          "C": "#include<math.h>",
+          "D": "#include<conio.h>"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The symbol used for output in C++ is:",
+        "options": {
+          "A": "cin",
+          "B": "cout",
+          "C": ">>",
+          "D": "printf"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often forget to write #include<iostream> header file in C++ programs",
+      "Confusing cin (input) with cout (output) operators",
+      "Not drawing proper flowchart symbols - oval for start/end, rectangle for process, diamond for decision",
+      "Forgetting semicolon (;) at the end of C++ statements",
+      "Writing algorithm steps in programming language instead of simple English"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question in every BSEK paper",
+      "Always draw flowchart with proper symbols and flow direction",
+      "Memorize exact definitions - they appear word-for-word in exams",
+      "Practice writing simple C++ programs for calculating area, perimeter etc."
+    ],
+    "formulas": [
+      "Area of rectangle = length × width",
+      "Area of circle = π × radius²",
+      "Simple interest = (P × R × T) / 100"
+    ],
+    "keyDiagram": "Flowchart symbols diagram showing: Oval (Start/End), Rectangle (Process), Diamond (Decision), Parallelogram (Input/Output), Circle (Connector), and arrows showing flow direction. Students must memorize and draw these symbols correctly."
+  },
+  "created_at": "2026-04-06T06:44:17.123Z"
+}

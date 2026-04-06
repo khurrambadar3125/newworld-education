@@ -1,0 +1,108 @@
+{
+  "subject": "Computer Science",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "14",
+  "chapter_name": "Introduction to Scratch",
+  "note_data": {
+    "title": "Introduction to Scratch",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Scratch is a visual programming language developed by MIT Media Lab for teaching programming concepts to children and beginners",
+      "Scratch uses drag-and-drop blocks instead of typing code, making programming accessible to non-programmers",
+      "The Scratch interface consists of Stage, Sprites, Scripts Area, Blocks Palette, and Sprite List",
+      "Sprites are objects that can be programmed to move, change appearance, and interact with other sprites",
+      "Scripts are collections of blocks that control sprite behavior and are executed when triggered by events",
+      "Motion blocks control sprite movement, Looks blocks control appearance, Sound blocks control audio",
+      "Control blocks include loops (repeat, forever) and conditional statements (if-then)",
+      "Variables can be created to store and manipulate data in Scratch programs",
+      "Scratch programs run on the Stage which is 480 pixels wide and 360 pixels tall",
+      "Scratch files are saved with .sb3 extension and can be shared online through Scratch community"
+    ],
+    "definitions": [
+      {
+        "term": "Scratch",
+        "definition": "A visual programming language developed by MIT Media Lab that uses drag-and-drop blocks to create programs without typing code"
+      },
+      {
+        "term": "Sprite",
+        "definition": "An object in Scratch that can be programmed to move, change appearance, make sounds, and interact with other sprites"
+      },
+      {
+        "term": "Script",
+        "definition": "A collection of programming blocks connected together that control the behavior of sprites in Scratch"
+      },
+      {
+        "term": "Stage",
+        "definition": "The background area in Scratch where sprites move and interact, measuring 480 pixels wide by 360 pixels tall"
+      },
+      {
+        "term": "Blocks Palette",
+        "definition": "The area in Scratch interface that contains different categories of programming blocks that can be dragged to create scripts"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define Scratch programming language.",
+        "answer": "Scratch is a visual programming language developed by MIT Media Lab that uses drag-and-drop blocks to create programs without typing code. It is designed for teaching programming concepts to children and beginners."
+      },
+      {
+        "type": "long",
+        "question": "Explain the main components of Scratch interface with their functions.",
+        "answer": "The Scratch interface consists of five main components: 1) Stage - the background area where sprites perform, measuring 480x360 pixels 2) Sprites - programmable objects that can move and interact 3) Scripts Area - where blocks are assembled to create programs 4) Blocks Palette - contains categorized programming blocks (Motion, Looks, Sound, etc.) 5) Sprite List - shows all sprites in the project. Each component works together to provide a complete visual programming environment."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which organization developed Scratch programming language?",
+        "options": {
+          "A": "Microsoft",
+          "B": "MIT Media Lab",
+          "C": "Google",
+          "D": "Apple"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "What is the size of Scratch Stage?",
+        "options": {
+          "A": "360x480 pixels",
+          "B": "640x480 pixels",
+          "C": "480x360 pixels",
+          "D": "800x600 pixels"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "What file extension is used for Scratch projects?",
+        "options": {
+          "A": ".scr",
+          "B": ".sb2",
+          "C": ".sb3",
+          "D": ".scratch"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse Sprite with Stage - remember Sprite is the moving object, Stage is the background",
+      "Forgetting to mention MIT Media Lab when defining Scratch",
+      "Writing wrong Stage dimensions - it's 480 wide x 360 tall, not the reverse",
+      "Not explaining that Scratch uses visual blocks instead of text-based coding",
+      "Mixing up Scripts Area with Blocks Palette in interface description"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs about Scratch developers and interface components",
+      "Definition of Scratch appears frequently - memorize the exact wording including MIT Media Lab",
+      "Interface components question is very common in 5-8 mark questions",
+      "Remember the exact Stage dimensions as it appears in MCQs every year",
+      "Practice drawing and labeling the Scratch interface diagram"
+    ],
+    "formulas": [],
+    "keyDiagram": "Scratch Interface Diagram showing Stage (top left), Sprite List (bottom left), Blocks Palette (left side with categories like Motion, Looks, Sound, Events, Control, Sensing, Operators, Variables), and Scripts Area (right side). Label each component clearly with their functions."
+  },
+  "created_at": "2026-04-06T06:46:32.840Z"
+}

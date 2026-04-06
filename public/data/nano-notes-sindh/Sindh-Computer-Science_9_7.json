@@ -1,0 +1,106 @@
+{
+  "subject": "Computer Science",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "7",
+  "chapter_name": "Introduction to Database System",
+  "note_data": {
+    "title": "Introduction to Database System",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Database is a collection of related data organized in a systematic way for efficient storage and retrieval",
+      "Data is raw facts and figures which have no meaning by themselves until processed",
+      "Information is processed data that has meaning and is useful for decision making",
+      "DBMS (Database Management System) is a software that manages database operations like creation, maintenance and retrieval",
+      "File-based system stores data in separate files while database system stores data in integrated tables",
+      "Primary key is a field that uniquely identifies each record in a table",
+      "Record is a complete set of information about one item, while field is a single piece of data",
+      "Database reduces data redundancy, ensures data integrity and provides data security",
+      "Examples of databases include student record system in Karachi University, employee database in PTCL"
+    ],
+    "definitions": [
+      {
+        "term": "Database",
+        "definition": "A database is a collection of related data that is organized in a systematic way to provide efficient storage, retrieval and management of information."
+      },
+      {
+        "term": "Data",
+        "definition": "Data consists of raw facts and figures which have no meaning by themselves until they are processed."
+      },
+      {
+        "term": "Information",
+        "definition": "Information is processed data that has meaning and is useful for making decisions."
+      },
+      {
+        "term": "DBMS",
+        "definition": "Database Management System (DBMS) is a software system that enables users to create, maintain and control access to database."
+      },
+      {
+        "term": "Primary Key",
+        "definition": "Primary key is a field or combination of fields that uniquely identifies each record in a table."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between data and information.",
+        "answer": "Data consists of raw facts and figures with no meaning, while information is processed data that has meaning and is useful for decision making. For example, '25' is data but '25 degrees Celsius temperature in Karachi' is information."
+      },
+      {
+        "type": "long",
+        "question": "Write a detailed note on advantages of database system over file-based system.",
+        "answer": "Advantages include: (1) Reduced data redundancy - same data not stored multiple times (2) Data consistency - changes reflect everywhere (3) Data integrity - accuracy maintained (4) Data security - controlled access (5) Data sharing - multiple users can access (6) Backup and recovery - automatic data protection (7) Reduced storage space - eliminates duplicate data (8) Easy maintenance - centralized control makes updates easier."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which software is used to manage database operations?",
+        "options": {
+          "A": "Operating System",
+          "B": "DBMS",
+          "C": "Compiler",
+          "D": "Word Processor"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "A field that uniquely identifies each record is called:",
+        "options": {
+          "A": "Foreign Key",
+          "B": "Composite Key",
+          "C": "Primary Key",
+          "D": "Secondary Key"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Raw facts and figures with no meaning are called:",
+        "options": {
+          "A": "Information",
+          "B": "Data",
+          "C": "Knowledge",
+          "D": "Record"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse data with information - remember data is raw, information is processed",
+      "Writing DBMS full form incorrectly - it's Database Management System, not Database Managing System",
+      "Forgetting to mention 'uniquely identifies' when defining primary key",
+      "Mixing up advantages of database with features of database",
+      "Not giving Pakistani examples when asked for real-life database applications"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question about data vs information in every BSEK paper",
+      "Long question on advantages of database system appears frequently - memorize all 8 points",
+      "Define questions are very common - learn exact textbook definitions word by word",
+      "Always give Pakistani context examples like NADRA database, bank records, university systems"
+    ],
+    "formulas": [],
+    "keyDiagram": "Database Structure Diagram showing: User → DBMS → Database (containing Tables with Records and Fields). Also draw File-based vs Database System comparison diagram showing multiple files vs integrated database."
+  },
+  "created_at": "2026-04-06T06:43:32.991Z"
+}

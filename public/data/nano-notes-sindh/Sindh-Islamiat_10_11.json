@@ -1,0 +1,107 @@
+{
+  "subject": "Islamiat",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "11",
+  "chapter_name": "Muashra — Islamic Society",
+  "note_data": {
+    "title": "Muashra — Islamic Society",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Islamic Society is based on Tawheed (Oneness of Allah), Risalat (Prophethood) and Akhirat (Life after death)",
+      "Quran and Sunnah are the primary sources of guidance for establishing an Islamic society",
+      "Justice (Adl) is the foundation of Islamic social order — all members are equal before Allah",
+      "Brotherhood (Ukhuwwat) creates unity among Muslims regardless of race, color or status",
+      "Consultation (Shura) is the Islamic method of decision-making in society",
+      "Amr bil Ma'ruf wa Nahi an al-Munkar (enjoining good and forbidding evil) is every Muslim's responsibility",
+      "Economic system based on prohibition of Riba (interest) and promotion of Zakat",
+      "Social security through Baitul Mal ensures welfare of poor, orphans and needy",
+      "Education is compulsory for every Muslim male and female in Islamic society"
+    ],
+    "definitions": [
+      {
+        "term": "Islamic Society (Muashra)",
+        "definition": "A society which is established according to the principles of Islam, where Quran and Sunnah are the supreme law and Allah's sovereignty is accepted"
+      },
+      {
+        "term": "Shura",
+        "definition": "The Islamic principle of consultation in which important matters are decided through mutual consultation among qualified people"
+      },
+      {
+        "term": "Adl (Justice)",
+        "definition": "The Islamic concept of justice which means giving everyone their due rights without any discrimination based on race, color, wealth or status"
+      },
+      {
+        "term": "Ukhuwwat",
+        "definition": "Islamic brotherhood which creates unity among all Muslims and makes them like members of one family"
+      },
+      {
+        "term": "Amr bil Ma'ruf wa Nahi an al-Munkar",
+        "definition": "The Islamic obligation to enjoin what is right and forbid what is wrong, which is the duty of every Muslim in society"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Write any four characteristics of Islamic Society.",
+        "answer": "1) Based on Tawheed 2) Quran and Sunnah as supreme law 3) Justice and equality for all 4) Brotherhood among Muslims"
+      },
+      {
+        "type": "long",
+        "question": "Explain the role of Shura in Islamic Society with examples from early Islamic period.",
+        "answer": "Shura means consultation which is fundamental principle of Islamic governance. Quran commands 'those who conduct their affairs by mutual consultation.' Prophet (PBUH) consulted companions in Battle of Uhud. Abu Bakr (RA) was selected as Caliph through Shura. Umar (RA) formed committee of six companions to select next Caliph. Shura ensures participation of qualified people in decision-making, prevents dictatorship, and reflects democratic spirit of Islam. Modern Islamic states like Pakistan should implement Shura through elected assemblies and councils."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which is the primary source of guidance for Islamic Society?",
+        "options": {
+          "A": "Ijma",
+          "B": "Qiyas",
+          "C": "Quran and Sunnah",
+          "D": "Ijtihad"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "What does 'Shura' mean in Islamic context?",
+        "options": {
+          "A": "Justice",
+          "B": "Consultation",
+          "C": "Brotherhood",
+          "D": "Worship"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The concept of Amr bil Ma'ruf wa Nahi an al-Munkar means:",
+        "options": {
+          "A": "Prayer and fasting",
+          "B": "Enjoining good and forbidding evil",
+          "C": "Paying Zakat",
+          "D": "Performing Hajj"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse Shura with Ijma — Shura is consultation, Ijma is consensus",
+      "Writing incomplete definitions — always mention Quran and Sunnah as basis",
+      "Forgetting to give examples from early Islamic period in long answers",
+      "Mixing up Adl (justice) with Ihsan (excellence) in definitions",
+      "Not mentioning Prophet's (PBUH) consultation with companions as examples"
+    ],
+    "examTips": [
+      "This chapter usually has 2 MCQs and 1 long question in BSEK papers",
+      "Always start long answers by mentioning Quran and Sunnah as foundation",
+      "Examples from Khulafa-e-Rashida period are essential for full marks",
+      "Memorize exact definitions — BSEK expects word-to-word textbook language",
+      "Connect Islamic society principles with modern Pakistan's constitution"
+    ],
+    "formulas": [],
+    "keyDiagram": "Pyramid diagram showing Islamic Society structure: Allah's Sovereignty at top, then Quran & Sunnah, then Shura (consultation), then Justice & Brotherhood at base with all citizens"
+  },
+  "created_at": "2026-04-06T06:39:43.539Z"
+}

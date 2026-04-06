@@ -1,0 +1,108 @@
+{
+  "subject": "Islamiat",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "14",
+  "chapter_name": "Muslim Scientists and Scholars",
+  "note_data": {
+    "title": "Muslim Scientists and Scholars",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Islam encourages the pursuit of knowledge and scientific research as mentioned in the Quran: 'Read in the name of your Lord who created'",
+      "Muslim scientists made revolutionary contributions during the Golden Age of Islam (8th-13th centuries)",
+      "Al-Khwarizmi (780-850 CE) — Father of Algebra, introduced Arabic numerals and developed algebraic methods",
+      "Ibn Sina (Avicenna) (980-1037 CE) — Greatest physician and philosopher, wrote 'Al-Qanun fil Tibb' (Canon of Medicine)",
+      "Al-Razi (854-925 CE) — Distinguished between smallpox and measles, pioneer in surgery and medical ethics",
+      "Ibn al-Haytham (965-1040 CE) — Father of Optics, developed scientific method and camera obscura",
+      "Al-Biruni (973-1048 CE) — Polymath who calculated Earth's circumference and studied Indian culture",
+      "Ibn Rushd (Averroes) (1126-1198 CE) — Great philosopher and commentator on Aristotle",
+      "These scholars combined religious knowledge with scientific research, showing Islam's compatibility with science",
+      "Their contributions laid the foundation for modern medicine, mathematics, astronomy, and chemistry"
+    ],
+    "definitions": [
+      {
+        "term": "Golden Age of Islam",
+        "definition": "The period from 8th to 13th centuries when Muslim civilization reached its peak in science, philosophy, medicine and other fields"
+      },
+      {
+        "term": "Al-Jabr",
+        "definition": "The Arabic word for algebra, first systematically developed by Al-Khwarizmi in his book 'Hisab al-jabr w'al-muqābala'"
+      },
+      {
+        "term": "Canon of Medicine",
+        "definition": "A medical encyclopedia written by Ibn Sina that served as the standard medical textbook in Europe and the Islamic world for over 600 years"
+      },
+      {
+        "term": "Camera Obscura",
+        "definition": "An optical device invented by Ibn al-Haytham that projects an image of its surroundings on a screen, forming the basis of modern photography"
+      },
+      {
+        "term": "Scientific Method",
+        "definition": "The systematic approach to investigation developed by Ibn al-Haytham involving observation, hypothesis, experimentation and conclusion"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Write the contributions of Al-Khwarizmi in mathematics.",
+        "answer": "Al-Khwarizmi developed algebra (Al-Jabr), introduced Arabic numerals to Europe, created algebraic methods for solving equations, and his works were translated into Latin influencing European mathematics."
+      },
+      {
+        "type": "long",
+        "question": "Discuss the scientific contributions of Ibn Sina and Al-Razi in the field of medicine.",
+        "answer": "Ibn Sina: (1) Wrote 'Al-Qanun fil Tibb' - comprehensive medical encyclopedia (2) Described diseases like tuberculosis and diabetes (3) Developed techniques for surgery (4) His work remained standard textbook for 600 years. Al-Razi: (1) Distinguished between smallpox and measles (2) Pioneer in surgery and use of alcohol as antiseptic (3) Wrote 'Al-Hawi' - largest medical encyclopedia (4) Established medical ethics (5) First to use mercury as medicine. Both combined observation with treatment, advancing medical science significantly."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Who is known as the 'Father of Algebra'?",
+        "options": {
+          "A": "Ibn Sina",
+          "B": "Al-Khwarizmi",
+          "C": "Al-Razi",
+          "D": "Ibn Rushd"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The book 'Al-Qanun fil Tibb' was written by:",
+        "options": {
+          "A": "Al-Razi",
+          "B": "Ibn al-Haytham",
+          "C": "Ibn Sina",
+          "D": "Al-Biruni"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which Muslim scientist is known as the 'Father of Optics'?",
+        "options": {
+          "A": "Al-Khwarizmi",
+          "B": "Ibn al-Haytham",
+          "C": "Al-Biruni",
+          "D": "Ibn Rushd"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse Ibn Sina with Al-Razi - remember Ibn Sina wrote Canon of Medicine, Al-Razi distinguished smallpox from measles",
+      "Mixing up time periods - Golden Age was 8th-13th centuries, not earlier",
+      "Forgetting to mention specific book names like 'Al-Qanun fil Tibb' and 'Hisab al-jabr w'al-muqābala'",
+      "Not explaining how Islam encouraged scientific research - always quote Quranic verses about seeking knowledge",
+      "Writing modern names instead of Arabic names (Avicenna instead of Ibn Sina, Averroes instead of Ibn Rushd)"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question worth 5-8 marks in BSEK papers",
+      "Always memorize the exact years of birth and death - frequently asked",
+      "Learn the Arabic names of famous books as they appear in MCQs",
+      "Connect scientific contributions with Islamic teachings about seeking knowledge",
+      "Practice writing contributions of each scientist in bullet points for quick recall"
+    ],
+    "formulas": [],
+    "keyDiagram": "Timeline diagram showing Golden Age of Islam (8th-13th centuries) with major Muslim scientists, their birth-death years, and key contributions arranged chronologically"
+  },
+  "created_at": "2026-04-06T06:40:59.905Z"
+}

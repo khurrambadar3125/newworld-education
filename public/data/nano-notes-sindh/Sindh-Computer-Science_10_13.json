@@ -1,0 +1,110 @@
+{
+  "subject": "Computer Science",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "13",
+  "chapter_name": "Digital Logic and Design",
+  "note_data": {
+    "title": "Digital Logic and Design",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Digital systems work with discrete signals having only two states: 0 (LOW) and 1 (HIGH)",
+      "Logic gates are electronic circuits that perform logical operations on input signals",
+      "Basic logic gates are: AND, OR, NOT, NAND, NOR, XOR, and XNOR",
+      "Boolean algebra is a mathematical system used to analyze and design digital circuits",
+      "Truth tables show all possible input combinations and their corresponding outputs",
+      "De Morgan's laws state that complement of product equals sum of complements, and complement of sum equals product of complements",
+      "Logic circuits can be simplified using Boolean algebra rules and Karnaugh maps",
+      "Combinational circuits have outputs that depend only on present inputs"
+    ],
+    "definitions": [
+      {
+        "term": "Digital System",
+        "definition": "A system that processes discrete signals having only finite number of values, typically binary values 0 and 1"
+      },
+      {
+        "term": "Logic Gate",
+        "definition": "An electronic circuit that performs a logical operation on one or more binary inputs and produces a single binary output"
+      },
+      {
+        "term": "Boolean Algebra",
+        "definition": "A mathematical system dealing with binary variables and logical operations AND, OR, and NOT"
+      },
+      {
+        "term": "Truth Table",
+        "definition": "A table that shows all possible combinations of input variables and their corresponding output values"
+      },
+      {
+        "term": "Combinational Circuit",
+        "definition": "A digital circuit whose output depends only on the present combination of inputs"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "State De Morgan's laws with Boolean expressions.",
+        "answer": "First Law: (A.B)' = A' + B' (complement of product equals sum of complements)\nSecond Law: (A+B)' = A'.B' (complement of sum equals product of complements)"
+      },
+      {
+        "type": "long",
+        "question": "Draw the logic symbols, write Boolean expressions and truth tables for AND, OR, and NOT gates.",
+        "answer": "AND Gate: Y = A.B, output is 1 only when both inputs are 1\nOR Gate: Y = A+B, output is 0 only when both inputs are 0\nNOT Gate: Y = A', output is complement of input\n[Students must draw proper IEEE symbols and complete truth tables with all combinations]"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The Boolean expression for NAND gate is:",
+        "options": {
+          "A": "Y = A.B",
+          "B": "Y = (A.B)'",
+          "C": "Y = A+B",
+          "D": "Y = (A+B)'"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "According to De Morgan's law, (A+B)' is equal to:",
+        "options": {
+          "A": "A'.B'",
+          "B": "A'+B'",
+          "C": "A.B",
+          "D": "A+B"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "The output of XOR gate is 1 when:",
+        "options": {
+          "A": "Both inputs are same",
+          "B": "Both inputs are different",
+          "C": "Both inputs are 1",
+          "D": "Both inputs are 0"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse AND (.) and OR (+) operators in Boolean expressions",
+      "Drawing incorrect logic gate symbols - always use IEEE standard symbols",
+      "Mixing up NAND and NOR gate truth tables",
+      "Forgetting to apply De Morgan's laws correctly when simplifying expressions",
+      "Not showing all steps when solving Boolean algebra problems"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 short + 1 long question in BSEK papers",
+      "Always draw neat logic gate symbols using ruler - marks are deducted for poor diagrams",
+      "Memorize truth tables for all basic gates - they appear in every exam",
+      "Practice Boolean algebra simplification as numerical questions are common",
+      "Learn IEEE symbols exactly as shown in STBB textbook"
+    ],
+    "formulas": [
+      "De Morgan's Laws: (A.B)' = A' + B' and (A+B)' = A'.B'",
+      "Boolean Identities: A + 0 = A, A.1 = A, A + A' = 1, A.A' = 0",
+      "XOR: A ⊕ B = A'.B + A.B'"
+    ],
+    "keyDiagram": "IEEE standard logic gate symbols for AND, OR, NOT, NAND, NOR, XOR gates with proper input/output labels and Boolean expressions underneath each gate"
+  },
+  "created_at": "2026-04-06T06:46:09.384Z"
+}
