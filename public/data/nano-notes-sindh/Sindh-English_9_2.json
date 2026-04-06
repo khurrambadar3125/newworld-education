@@ -1,0 +1,109 @@
+{
+  "subject": "English",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "2",
+  "chapter_name": "Vocabulary",
+  "note_data": {
+    "title": "Vocabulary",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Vocabulary refers to the collection of words and their meanings that a person knows and uses",
+      "Context clues help determine the meaning of unfamiliar words through surrounding text",
+      "Synonyms are words with similar meanings while antonyms are words with opposite meanings",
+      "Root words, prefixes, and suffixes form the foundation of word formation in English",
+      "Homophones are words that sound alike but have different meanings and spellings",
+      "Compound words are formed by joining two or more simple words to create new meaning",
+      "Technical vocabulary includes specialized terms used in specific fields or subjects",
+      "Word families consist of words that share the same root but have different forms"
+    ],
+    "definitions": [
+      {
+        "term": "Vocabulary",
+        "definition": "The collection of words and their meanings that a person knows and uses in speaking and writing"
+      },
+      {
+        "term": "Context Clues",
+        "definition": "Hints or information found in surrounding text that help readers understand the meaning of unfamiliar words"
+      },
+      {
+        "term": "Synonyms",
+        "definition": "Words that have the same or nearly the same meaning as another word"
+      },
+      {
+        "term": "Antonyms",
+        "definition": "Words that have opposite meanings to another word"
+      },
+      {
+        "term": "Root Word",
+        "definition": "The basic word to which prefixes and suffixes are added to form new words"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define vocabulary and give two examples.",
+        "answer": "Vocabulary is the collection of words and their meanings that a person knows and uses in speaking and writing. Examples: book, pen, school, Karachi."
+      },
+      {
+        "type": "long",
+        "question": "Explain the importance of vocabulary in language learning. How can students improve their vocabulary?",
+        "answer": "Vocabulary is essential for effective communication and comprehension. It helps in: 1) Better understanding of texts 2) Clear expression of ideas 3) Academic success 4) Improved reading skills. Students can improve vocabulary by: reading newspapers, using dictionary, learning word meanings, practicing synonyms and antonyms, and using new words in daily conversation."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "What is a synonym for 'big'?",
+        "options": {
+          "A": "small",
+          "B": "large",
+          "C": "thin",
+          "D": "short"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The antonym of 'hot' is:",
+        "options": {
+          "A": "warm",
+          "B": "cool",
+          "C": "cold",
+          "D": "heat"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Words that sound alike but have different meanings are called:",
+        "options": {
+          "A": "synonyms",
+          "B": "antonyms",
+          "C": "homophones",
+          "D": "compound words"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse synonyms with antonyms",
+      "Mixing up homophones like 'there', 'their', and 'they're'",
+      "Not using context clues to understand word meanings",
+      "Memorizing words without understanding their proper usage",
+      "Confusing compound words with separate words"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs on synonyms, antonyms, and word meanings",
+      "Short questions on definitions appear frequently - memorize exact textbook definitions",
+      "Practice identifying context clues in given passages",
+      "Learn common Pakistani context examples for better marks"
+    ],
+    "formulas": [
+      "Root word + Prefix = New word",
+      "Root word + Suffix = New word",
+      "Word 1 + Word 2 = Compound word"
+    ],
+    "keyDiagram": "Word Formation Tree showing root word in center with branches showing prefixes on left and suffixes on right, demonstrating how new words are formed"
+  },
+  "created_at": "2026-04-06T06:47:13.099Z"
+}

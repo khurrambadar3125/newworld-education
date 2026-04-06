@@ -1,0 +1,109 @@
+{
+  "subject": "English",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "11",
+  "chapter_name": "Grammar — Advanced Punctuation",
+  "note_data": {
+    "title": "Grammar — Advanced Punctuation",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Semicolon (;) is used to join two independent clauses that are closely related in meaning",
+      "Colon (:) is used before a list, explanation, or quotation that follows a complete statement",
+      "Dash (—) is used to show a sudden break or change in thought, or to emphasize information",
+      "Parentheses ( ) are used to enclose additional information that is not essential to the main sentence",
+      "Brackets [ ] are used to enclose editorial comments or corrections within quoted material",
+      "Ellipsis (...) indicates omitted words or an incomplete thought in writing",
+      "Hyphen (-) connects compound words and divides words at the end of lines",
+      "Quotation marks (' ') or (\" \") enclose direct speech, titles of short works, and special terms"
+    ],
+    "definitions": [
+      {
+        "term": "Semicolon",
+        "definition": "A punctuation mark (;) used to separate two independent clauses that are closely connected in meaning and could stand as separate sentences"
+      },
+      {
+        "term": "Colon",
+        "definition": "A punctuation mark (:) used after a complete statement to introduce a list, explanation, quotation, or example"
+      },
+      {
+        "term": "Dash",
+        "definition": "A punctuation mark (—) used to indicate a sudden break in thought, to set off parenthetical expressions, or to emphasize certain parts of a sentence"
+      },
+      {
+        "term": "Ellipsis",
+        "definition": "Three consecutive dots (...) used to indicate the omission of words from a quoted passage or to show hesitation or incomplete thoughts"
+      },
+      {
+        "term": "Parentheses",
+        "definition": "Punctuation marks ( ) used to enclose supplementary or explanatory information that is not essential to the main meaning of the sentence"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define semicolon and give one example of its use.",
+        "answer": "Semicolon is a punctuation mark (;) used to separate two independent clauses that are closely connected in meaning. Example: Karachi is the largest city in Pakistan; it is also the economic hub of the country."
+      },
+      {
+        "type": "long",
+        "question": "Explain the uses of colon and dash with examples from Pakistani context.",
+        "answer": "Colon (:) has three main uses: (1) Before a list - Pakistan has four provinces: Punjab, Sindh, KPK, and Balochistan. (2) Before an explanation - The reason is clear: education is the key to success. (3) Before a quotation - Quaid-e-Azam said: 'Work, work, and work.' Dash (—) is used for: (1) Sudden break in thought - The cricket match was exciting—until it started raining. (2) Emphasis - Only one thing matters—hard work. (3) Parenthetical expressions - The students—especially those from Karachi—performed well."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which punctuation mark is used to join two closely related independent clauses?",
+        "options": {
+          "A": "Comma",
+          "B": "Semicolon",
+          "C": "Colon",
+          "D": "Dash"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "What does an ellipsis (...) indicate in writing?",
+        "options": {
+          "A": "End of sentence",
+          "B": "Question",
+          "C": "Omitted words",
+          "D": "Exclamation"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which punctuation is used before introducing a list?",
+        "options": {
+          "A": "Semicolon",
+          "B": "Dash",
+          "C": "Colon",
+          "D": "Parentheses"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse semicolon with comma—semicolon joins independent clauses, comma joins dependent clauses",
+      "Using colon after incomplete statements—colon must follow a complete sentence",
+      "Confusing dash with hyphen—dash is longer and used differently than hyphen",
+      "Overusing parentheses for essential information—parentheses are only for non-essential details",
+      "Forgetting to use quotation marks for direct speech and titles of short works"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Memorize exact definitions as they appear in textbook—BSEK expects word-for-word answers",
+      "Practice identifying punctuation errors in given sentences—common in subjective section",
+      "Remember Pakistani examples for better marks—examiners prefer local context",
+      "Learn the difference between similar punctuation marks—frequently tested concept"
+    ],
+    "formulas": [
+      "Independent Clause + Semicolon + Independent Clause",
+      "Complete Statement + Colon + List/Explanation/Quotation"
+    ],
+    "keyDiagram": "Punctuation Hierarchy Chart showing: Period (.) for complete stops, Semicolon (;) for major pauses, Comma (,) for minor pauses, and their relationships in sentence structure"
+  },
+  "created_at": "2026-04-06T06:50:40.822Z"
+}

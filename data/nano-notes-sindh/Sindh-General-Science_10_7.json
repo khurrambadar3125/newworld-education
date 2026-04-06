@@ -1,0 +1,110 @@
+{
+  "subject": "General Science",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "7",
+  "chapter_name": "Energy",
+  "note_data": {
+    "title": "Energy",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Energy is the ability to do work and is measured in Joules (J)",
+      "Kinetic Energy = ½mv² where m is mass and v is velocity",
+      "Potential Energy = mgh where m is mass, g is acceleration due to gravity, and h is height",
+      "Law of Conservation of Energy: Energy can neither be created nor destroyed, it can only be transformed from one form to another",
+      "Renewable energy sources include solar, wind, hydro, and biomass while non-renewable sources include coal, oil, and natural gas",
+      "Pakistan's major hydroelectric projects include Tarbela Dam, Mangla Dam, and Warsak Dam",
+      "Thermal energy is the internal energy of a substance due to random motion of its molecules",
+      "Nuclear energy is released during nuclear fission and fusion reactions",
+      "Efficiency = (Useful Energy Output / Total Energy Input) × 100%"
+    ],
+    "definitions": [
+      {
+        "term": "Energy",
+        "definition": "Energy is the capacity or ability to do work"
+      },
+      {
+        "term": "Kinetic Energy",
+        "definition": "The energy possessed by a body due to its motion"
+      },
+      {
+        "term": "Potential Energy",
+        "definition": "The energy possessed by a body due to its position or configuration"
+      },
+      {
+        "term": "Renewable Energy",
+        "definition": "Energy sources that can be replenished naturally in a short period of time"
+      },
+      {
+        "term": "Non-renewable Energy",
+        "definition": "Energy sources that cannot be replenished once they are exhausted"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define energy and write its SI unit.",
+        "answer": "Energy is the capacity or ability to do work. Its SI unit is Joule (J)."
+      },
+      {
+        "type": "long",
+        "question": "State and explain the law of conservation of energy with examples.",
+        "answer": "The law of conservation of energy states that energy can neither be created nor destroyed, it can only be transformed from one form to another. The total energy of an isolated system remains constant. Examples: (1) In a pendulum, kinetic energy converts to potential energy and vice versa (2) In hydroelectric power plants like Tarbela Dam, potential energy of water converts to kinetic energy then to electrical energy (3) In thermal power plants, chemical energy of fuel converts to thermal energy then to electrical energy."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The SI unit of energy is:",
+        "options": {
+          "A": "Watt",
+          "B": "Joule",
+          "C": "Newton",
+          "D": "Kilogram"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which of the following is a renewable source of energy?",
+        "options": {
+          "A": "Coal",
+          "B": "Natural gas",
+          "C": "Solar energy",
+          "D": "Petroleum"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The energy possessed by a moving car is called:",
+        "options": {
+          "A": "Potential energy",
+          "B": "Kinetic energy",
+          "C": "Thermal energy",
+          "D": "Chemical energy"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse kinetic energy with potential energy - remember KE is due to motion, PE is due to position",
+      "Always write the complete formula before substituting values in numerical problems",
+      "Don't forget to convert units to SI system before calculation (kg, m, s)",
+      "Students mix up renewable and non-renewable energy sources",
+      "Always state the law of conservation of energy exactly as given in textbook"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Numerical problems on KE and PE formulas are very common - practice calculations",
+      "Energy conservation law explanation with examples is a frequent 5-8 mark question",
+      "Memorize Pakistani examples like Tarbela Dam for hydroelectric energy"
+    ],
+    "formulas": [
+      "Kinetic Energy (KE) = ½mv²",
+      "Potential Energy (PE) = mgh",
+      "Efficiency = (Useful Energy Output / Total Energy Input) × 100%"
+    ],
+    "keyDiagram": "Energy transformation diagram showing conversion between different forms of energy (kinetic ↔ potential ↔ thermal ↔ electrical ↔ chemical) with examples like pendulum, hydroelectric dam, and thermal power plant"
+  },
+  "created_at": "2026-04-06T06:53:40.424Z"
+}

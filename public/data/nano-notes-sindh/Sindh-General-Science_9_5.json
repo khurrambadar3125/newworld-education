@@ -1,0 +1,107 @@
+{
+  "subject": "General Science",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "5",
+  "chapter_name": "Diseases, Causes and Prevention",
+  "note_data": {
+    "title": "Diseases, Causes and Prevention",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Disease is defined as any disturbance in the structure and function of the body or mind",
+      "Diseases are classified into two main types: communicable (infectious) and non-communicable (non-infectious)",
+      "Communicable diseases are caused by pathogens like bacteria, viruses, fungi and parasites that spread from one person to another",
+      "Non-communicable diseases are not spread from person to person and include genetic disorders, deficiency diseases and degenerative diseases",
+      "Prevention is better than cure - vaccination, proper hygiene and balanced diet help prevent diseases",
+      "Common communicable diseases in Pakistan include tuberculosis, hepatitis, malaria, dengue fever and cholera",
+      "AIDS is caused by HIV virus which destroys the immune system making body vulnerable to infections",
+      "Deficiency diseases like rickets (Vitamin D), scurvy (Vitamin C) and beriberi (Vitamin B1) can be prevented by balanced diet",
+      "Personal hygiene, environmental sanitation and safe drinking water are essential for disease prevention"
+    ],
+    "definitions": [
+      {
+        "term": "Disease",
+        "definition": "Disease is any disturbance in the structure and function of the body or mind that results in physical or mental disorder"
+      },
+      {
+        "term": "Communicable Disease",
+        "definition": "A disease that can be transmitted from one person to another through various means is called communicable disease"
+      },
+      {
+        "term": "Pathogen",
+        "definition": "A disease-causing organism such as bacteria, virus, fungi or parasite is called a pathogen"
+      },
+      {
+        "term": "Immunity",
+        "definition": "The ability of the body to resist and fight against diseases is called immunity"
+      },
+      {
+        "term": "Vaccination",
+        "definition": "The process of introducing weakened or dead pathogens into the body to develop immunity against specific diseases is called vaccination"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define disease and write two examples of communicable diseases.",
+        "answer": "Disease is any disturbance in the structure and function of the body or mind. Examples: Tuberculosis, Malaria."
+      },
+      {
+        "type": "long",
+        "question": "Explain the causes and prevention of AIDS.",
+        "answer": "AIDS is caused by HIV virus. Causes: unprotected sexual contact, contaminated blood transfusion, sharing infected needles, mother to child transmission. Prevention: safe sexual practices, screening blood before transfusion, avoiding sharing of needles, awareness campaigns, proper sterilization of medical instruments."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which disease is caused by deficiency of Vitamin C?",
+        "options": {
+          "A": "Rickets",
+          "B": "Scurvy",
+          "C": "Beriberi",
+          "D": "Night blindness"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "AIDS is caused by:",
+        "options": {
+          "A": "Bacteria",
+          "B": "Fungi",
+          "C": "Virus",
+          "D": "Parasite"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which of the following is a non-communicable disease?",
+        "options": {
+          "A": "Tuberculosis",
+          "B": "Malaria",
+          "C": "Diabetes",
+          "D": "Cholera"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse communicable with non-communicable diseases",
+      "Mixing up deficiency diseases with their respective vitamins",
+      "Writing incomplete definitions - always include both structure and function disturbance for disease definition",
+      "Forgetting to mention prevention methods when asked about disease prevention",
+      "Confusing pathogens - remember bacteria, viruses, fungi and parasites are all different types"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question about disease types in every BSEK paper",
+      "AIDS prevention methods are frequently asked in long questions worth 5-8 marks",
+      "Memorize exact definitions as they appear in STBB textbook",
+      "Classification of diseases diagram appears regularly - practice drawing it",
+      "Deficiency diseases and their vitamin sources are common MCQ topics"
+    ],
+    "formulas": [],
+    "keyDiagram": "Classification of Diseases flowchart showing Disease branching into Communicable (caused by pathogens: bacteria, virus, fungi, parasite) and Non-communicable (genetic disorders, deficiency diseases, degenerative diseases)"
+  },
+  "created_at": "2026-04-06T06:52:58.803Z"
+}

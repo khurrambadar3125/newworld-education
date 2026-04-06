@@ -1,0 +1,105 @@
+{
+  "subject": "English",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "6",
+  "chapter_name": "Writing Skills",
+  "note_data": {
+    "title": "Writing Skills",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Writing is a skill that requires practice and proper techniques to communicate ideas effectively",
+      "Paragraph writing must have a topic sentence, supporting details, and concluding sentence",
+      "Essay writing follows introduction, body paragraphs, and conclusion structure",
+      "Letter writing includes formal and informal types with specific formats and conventions",
+      "Story writing requires proper plot, characters, setting, and moral lesson",
+      "Application writing follows formal format with sender's address, date, recipient's address, subject, and signature",
+      "Comprehension answers must be written in complete sentences using words from the passage",
+      "Grammar and spelling accuracy is essential for effective written communication"
+    ],
+    "definitions": [
+      {
+        "term": "Paragraph",
+        "definition": "A paragraph is a group of sentences that develops one main idea. It has a topic sentence, supporting details, and a concluding sentence."
+      },
+      {
+        "term": "Essay",
+        "definition": "An essay is a piece of writing that presents and develops a particular topic in a systematic manner with introduction, body, and conclusion."
+      },
+      {
+        "term": "Formal Letter",
+        "definition": "A formal letter is written to officials, authorities, or business purposes using official language and proper format."
+      },
+      {
+        "term": "Informal Letter",
+        "definition": "An informal letter is written to friends, relatives, or close acquaintances using friendly and casual language."
+      },
+      {
+        "term": "Application",
+        "definition": "An application is a formal written request made to an authority for some specific purpose like leave, admission, or job."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "What are the parts of a paragraph?",
+        "answer": "A paragraph has three parts: topic sentence (main idea), supporting details (explanations and examples), and concluding sentence (summary or final thought)."
+      },
+      {
+        "type": "long",
+        "question": "Write an application to your Principal requesting three days leave due to illness.",
+        "answer": "The Principal\nABC High School\nKarachi\n\nSubject: Application for sick leave\n\nSir,\nI beg to state that I am suffering from fever and cannot attend school. Kindly grant me leave for three days from [date] to [date]. I shall be grateful.\n\nYours obediently,\n[Name]\nClass IX\nRoll No: [number]"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which part of a letter contains the writer's address?",
+        "options": {
+          "A": "Heading",
+          "B": "Body",
+          "C": "Closing",
+          "D": "Signature"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "The first sentence of a paragraph is called:",
+        "options": {
+          "A": "Supporting sentence",
+          "B": "Topic sentence",
+          "C": "Concluding sentence",
+          "D": "Opening sentence"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "In formal letters, we use:",
+        "options": {
+          "A": "Yours lovingly",
+          "B": "Your friend",
+          "C": "Yours obediently",
+          "D": "With love"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students forget to write sender's address and date in letters and applications",
+      "Many students write incomplete sentences in comprehension answers",
+      "Students often mix formal and informal language in the same letter",
+      "Forgetting to write subject line in formal applications",
+      "Not following proper paragraph structure with topic and concluding sentences"
+    ],
+    "examTips": [
+      "Letter writing appears in every BSEK paper - memorize both formal and informal formats",
+      "Always write complete sentences when answering comprehension questions",
+      "Practice essay writing on common topics like 'My Country Pakistan' and 'Importance of Education'",
+      "Remember to write your address on the right side in informal letters"
+    ],
+    "formulas": [],
+    "keyDiagram": "Letter Format Diagram: Shows placement of sender's address (top right), date (below address), recipient's address (left side), subject line, salutation, body paragraphs, closing, and signature"
+  },
+  "created_at": "2026-04-06T06:48:50.030Z"
+}

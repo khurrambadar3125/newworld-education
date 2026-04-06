@@ -1,0 +1,107 @@
+{
+  "subject": "General Science",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "6",
+  "chapter_name": "Environment and Natural Resources",
+  "note_data": {
+    "title": "Environment and Natural Resources",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Environment consists of all living and non-living things surrounding an organism that affect its life and development",
+      "Natural resources are materials and energy sources found in nature that are useful to humans without being created by human activity",
+      "Renewable resources can be replenished naturally over time like solar energy, wind energy, and water",
+      "Non-renewable resources are finite and cannot be replaced once used, such as coal, oil, and natural gas",
+      "Pakistan's major water resources include River Indus, Chenab, Ravi, Jhelum and major dams like Tarbela and Mangla",
+      "Air pollution in Karachi is caused by vehicular emissions, industrial waste, and burning of fossil fuels",
+      "Deforestation leads to soil erosion, loss of biodiversity, and climate change",
+      "Conservation methods include afforestation, use of renewable energy, recycling, and reducing waste",
+      "Greenhouse effect is the trapping of heat in Earth's atmosphere by greenhouse gases like CO₂ and methane"
+    ],
+    "definitions": [
+      {
+        "term": "Environment",
+        "definition": "The sum total of all living and non-living things surrounding an organism that influence its life, growth and development"
+      },
+      {
+        "term": "Natural Resources",
+        "definition": "Materials and energy sources found in nature that are useful to humans in their natural form without being created by human activity"
+      },
+      {
+        "term": "Renewable Resources",
+        "definition": "Natural resources that can be replenished or restored naturally within a human lifetime through natural processes"
+      },
+      {
+        "term": "Conservation",
+        "definition": "The careful use and protection of natural resources to prevent their depletion and ensure their availability for future generations"
+      },
+      {
+        "term": "Pollution",
+        "definition": "The addition of harmful substances to the environment that causes adverse effects on living organisms and natural systems"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between renewable and non-renewable resources with examples.",
+        "answer": "Renewable resources can be replenished naturally like solar energy, wind, water. Non-renewable resources cannot be replaced once used like coal, oil, natural gas. Renewable resources are sustainable while non-renewable are finite."
+      },
+      {
+        "type": "long",
+        "question": "Write a detailed note on water resources of Pakistan and their importance.",
+        "answer": "Pakistan's water resources include: 1) Rivers - Indus, Chenab, Ravi, Jhelum form the backbone 2) Dams - Tarbela (world's largest earth-filled dam), Mangla Dam provide irrigation and electricity 3) Groundwater - tube wells extract water for agriculture 4) Importance: irrigation for crops, hydroelectric power generation, domestic use, industrial purposes. Challenges: water scarcity, pollution, inefficient use. Conservation needed through better management and reducing wastage."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is a renewable resource?",
+        "options": {
+          "A": "Coal",
+          "B": "Natural gas",
+          "C": "Solar energy",
+          "D": "Petroleum"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Tarbela Dam is built on which river?",
+        "options": {
+          "A": "River Chenab",
+          "B": "River Indus",
+          "C": "River Ravi",
+          "D": "River Jhelum"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The main cause of greenhouse effect is:",
+        "options": {
+          "A": "Oxygen",
+          "B": "Nitrogen",
+          "C": "Carbon dioxide",
+          "D": "Hydrogen"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse renewable with non-renewable resources - remember renewable can be naturally replenished",
+      "Writing incomplete definitions - always mention 'natural processes' for renewable resources",
+      "Forgetting Pakistani examples like Tarbela Dam, Mangla Dam in answers about water resources",
+      "Not explaining the importance/benefits when asked to write notes on natural resources",
+      "Mixing up causes and effects of pollution - be clear about what causes what"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question worth 5-8 marks in BSEK papers",
+      "Always give Pakistani examples - Tarbela Dam, Karachi pollution, Indus River system",
+      "Definition questions are very common - memorize exact textbook definitions word by word",
+      "Conservation methods question appears frequently - prepare a complete list with explanations",
+      "Draw and label diagrams for carbon cycle and water cycle if asked"
+    ],
+    "formulas": [],
+    "keyDiagram": "Carbon Cycle diagram showing photosynthesis, respiration, decomposition, and combustion processes with CO₂ exchange between atmosphere, plants, animals, and fossil fuels. Water Cycle diagram showing evaporation, condensation, precipitation, and collection stages."
+  },
+  "created_at": "2026-04-06T06:53:21.465Z"
+}

@@ -1,0 +1,109 @@
+{
+  "subject": "English",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "10",
+  "chapter_name": "Grammar — Tenses (Advanced)",
+  "note_data": {
+    "title": "Grammar — Tenses (Advanced)",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Perfect tenses express actions completed at a specific time or before another action",
+      "Perfect Continuous tenses show duration of action up to a particular moment",
+      "Present Perfect: has/have + past participle (for actions with present relevance)",
+      "Past Perfect: had + past participle (for actions completed before another past action)",
+      "Future Perfect: will have + past participle (for actions to be completed by future time)",
+      "Present Perfect Continuous: has/have been + verb-ing (for ongoing actions till present)",
+      "Past Perfect Continuous: had been + verb-ing (for duration before past moment)",
+      "Future Perfect Continuous: will have been + verb-ing (for duration till future point)",
+      "Use time expressions correctly: already, just, ever, never, since, for, by the time"
+    ],
+    "definitions": [
+      {
+        "term": "Perfect Tense",
+        "definition": "A tense that expresses an action completed at a definite time or before another action takes place."
+      },
+      {
+        "term": "Perfect Continuous Tense",
+        "definition": "A tense that expresses the duration of an action up to a particular moment in time."
+      },
+      {
+        "term": "Present Perfect Tense",
+        "definition": "A tense formed by has/have + past participle, used to express actions completed in the past but having relevance to the present."
+      },
+      {
+        "term": "Past Perfect Tense",
+        "definition": "A tense formed by had + past participle, used to express an action completed before another action in the past."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define Present Perfect Tense with one example.",
+        "answer": "Present Perfect Tense is formed by has/have + past participle, used to express actions completed in the past but having relevance to the present. Example: I have visited Karachi many times."
+      },
+      {
+        "type": "long",
+        "question": "Differentiate between Past Perfect and Past Perfect Continuous tenses with examples.",
+        "answer": "Past Perfect Tense is formed by had + past participle and expresses an action completed before another past action. Example: The train had left before I reached the station. Past Perfect Continuous is formed by had been + verb-ing and shows duration of action before a past moment. Example: It had been raining for three hours when the match was cancelled. The key difference is that Past Perfect shows completion while Past Perfect Continuous emphasizes duration."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which tense is used in: 'The students _____ their homework before the teacher arrived'?",
+        "options": {
+          "A": "had completed",
+          "B": "have completed",
+          "C": "will have completed",
+          "D": "are completing"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "The correct form of Present Perfect Continuous is:",
+        "options": {
+          "A": "has/have + past participle",
+          "B": "has/have been + verb-ing",
+          "C": "had been + verb-ing",
+          "D": "will have been + verb-ing"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "'By next year, they _____ the Tarbela Dam project.' Which tense fits?",
+        "options": {
+          "A": "will complete",
+          "B": "have completed",
+          "C": "will have completed",
+          "D": "had completed"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse Present Perfect with Simple Past tense",
+      "Using wrong auxiliary verbs (has/have/had) with different subjects",
+      "Mixing time expressions - using 'since' with time periods instead of 'for'",
+      "Forgetting to use past participle form in perfect tenses",
+      "Confusing Perfect and Perfect Continuous tenses usage"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 short question in every BSEK paper",
+      "Memorize the exact definitions word-by-word as given in textbook",
+      "Practice identifying time expressions to choose correct perfect tense",
+      "Always write the formula before giving examples in long answers"
+    ],
+    "formulas": [
+      "Present Perfect: Subject + has/have + past participle",
+      "Past Perfect: Subject + had + past participle",
+      "Future Perfect: Subject + will have + past participle",
+      "Present Perfect Continuous: Subject + has/have been + verb-ing",
+      "Past Perfect Continuous: Subject + had been + verb-ing",
+      "Future Perfect Continuous: Subject + will have been + verb-ing"
+    ],
+    "keyDiagram": "Timeline diagram showing sequence of perfect tenses - Past Perfect (completed before past), Present Perfect (past action with present relevance), Future Perfect (completion before future time)"
+  },
+  "created_at": "2026-04-06T06:50:16.647Z"
+}

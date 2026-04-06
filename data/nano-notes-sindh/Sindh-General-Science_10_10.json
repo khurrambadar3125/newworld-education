@@ -1,0 +1,106 @@
+{
+  "subject": "General Science",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "10",
+  "chapter_name": "Science and Technology",
+  "note_data": {
+    "title": "Science and Technology",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Science is systematic and organized knowledge obtained through observation and experimentation about the natural world",
+      "Technology is the practical application of scientific knowledge for the benefit of mankind",
+      "Pure science is the study of science for the sake of knowledge without considering its practical applications",
+      "Applied science is the application of scientific knowledge to solve practical problems of human life",
+      "Engineering is the practical application of science and mathematics to design and build structures, machines, and systems",
+      "Biotechnology is the use of living organisms or their products to make useful substances or processes",
+      "Information Technology (IT) is the use of computers and telecommunications to store, retrieve, transmit and manipulate data",
+      "Pakistan's major technological achievements include nuclear technology, Tarbela Dam, and agricultural developments",
+      "Science and technology have revolutionized communication, transportation, medicine, and agriculture in Pakistan"
+    ],
+    "definitions": [
+      {
+        "term": "Science",
+        "definition": "Science is systematic and organized knowledge obtained through observation and experimentation about the natural world."
+      },
+      {
+        "term": "Technology",
+        "definition": "Technology is the practical application of scientific knowledge for the benefit of mankind."
+      },
+      {
+        "term": "Pure Science",
+        "definition": "Pure science is the study of science for the sake of knowledge without considering its practical applications."
+      },
+      {
+        "term": "Applied Science",
+        "definition": "Applied science is the application of scientific knowledge to solve practical problems of human life."
+      },
+      {
+        "term": "Biotechnology",
+        "definition": "Biotechnology is the use of living organisms or their products to make useful substances or processes."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between pure science and applied science.",
+        "answer": "Pure science is the study of science for knowledge sake without practical applications, while applied science is the application of scientific knowledge to solve practical problems of human life."
+      },
+      {
+        "type": "long",
+        "question": "Write a note on the role of science and technology in the development of Pakistan.",
+        "answer": "Science and technology have played vital roles in Pakistan's development: (1) Nuclear technology for energy and defense (2) Tarbela and Mangla dams for hydroelectric power (3) Green Revolution improving agricultural productivity (4) Medical technology improving healthcare (5) Information technology advancing communication (6) Industrial development through engineering applications (7) Space technology with satellite launches (8) Educational advancement through modern teaching methods."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is an example of applied science?",
+        "options": {
+          "A": "Study of atomic structure",
+          "B": "Making fertilizers from chemicals",
+          "C": "Discovery of new elements",
+          "D": "Understanding plant photosynthesis"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Tarbela Dam is an example of:",
+        "options": {
+          "A": "Pure science",
+          "B": "Biotechnology",
+          "C": "Engineering technology",
+          "D": "Information technology"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The use of bacteria to produce insulin is an example of:",
+        "options": {
+          "A": "Information technology",
+          "B": "Biotechnology",
+          "C": "Nuclear technology",
+          "D": "Mechanical engineering"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse pure science with applied science - remember pure is for knowledge, applied is for practical use",
+      "Writing incomplete definitions - always write the complete textbook definition word by word",
+      "Forgetting to mention Pakistani examples like Tarbela Dam, nuclear technology in long answers",
+      "Mixing up biotechnology with information technology definitions",
+      "Not explaining the benefits of science and technology in Pakistani context"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Definition questions are very common - memorize exact textbook definitions",
+      "Long questions often ask about Pakistan's technological achievements",
+      "Always give Pakistani examples when discussing applications of science and technology"
+    ],
+    "formulas": [],
+    "keyDiagram": "Flow chart showing relationship between Science → Technology → Engineering → Applications, with examples of each branch including Pakistani achievements like nuclear technology, dams, and agricultural developments"
+  },
+  "created_at": "2026-04-06T06:54:51.283Z"
+}

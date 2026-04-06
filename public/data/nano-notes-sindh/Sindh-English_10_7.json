@@ -1,0 +1,108 @@
+{
+  "subject": "English",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "7",
+  "chapter_name": "Reading — Advanced Comprehension",
+  "note_data": {
+    "title": "Reading — Advanced Comprehension",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Comprehension is the ability to understand and grasp the meaning of written text",
+      "Critical reading involves analyzing, evaluating and interpreting the author's ideas and arguments",
+      "Context clues help determine the meaning of unfamiliar words from surrounding sentences",
+      "Main idea is the central point or message that the author wants to convey in a passage",
+      "Supporting details are facts, examples or explanations that prove or explain the main idea",
+      "Inference means drawing conclusions based on information that is not directly stated",
+      "Tone refers to the author's attitude toward the subject matter being discussed",
+      "Summary writing requires identifying key points and expressing them in your own words concisely"
+    ],
+    "definitions": [
+      {
+        "term": "Comprehension",
+        "definition": "The ability to understand and grasp the meaning of written or spoken language"
+      },
+      {
+        "term": "Context Clues",
+        "definition": "Hints or suggestions found within a sentence, paragraph or passage that help readers understand the meaning of new or unfamiliar words"
+      },
+      {
+        "term": "Main Idea",
+        "definition": "The most important point or central message that an author is trying to communicate in a paragraph or passage"
+      },
+      {
+        "term": "Inference",
+        "definition": "A logical conclusion drawn from evidence and reasoning rather than from explicit statements in the text"
+      },
+      {
+        "term": "Tone",
+        "definition": "The attitude or feeling that an author expresses toward a subject through choice of words and writing style"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "What is the difference between main idea and supporting details?",
+        "answer": "Main idea is the central message of a passage while supporting details are facts, examples or explanations that prove or explain the main idea."
+      },
+      {
+        "type": "long",
+        "question": "Explain the importance of context clues in reading comprehension with examples.",
+        "answer": "Context clues are essential for understanding unfamiliar words without using a dictionary. They help readers: 1) Determine word meanings from surrounding text 2) Improve reading fluency 3) Enhance vocabulary naturally 4) Better understand author's intended meaning. Examples include definition clues (author defines the word), synonym clues (similar words nearby), antonym clues (opposite words), and example clues (illustrations provided)."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The central message of a passage is called:",
+        "options": {
+          "A": "Supporting detail",
+          "B": "Context clue",
+          "C": "Main idea",
+          "D": "Inference"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Drawing conclusions not directly stated in text is called:",
+        "options": {
+          "A": "Summary",
+          "B": "Inference",
+          "C": "Tone",
+          "D": "Context"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Hints that help understand unfamiliar words are:",
+        "options": {
+          "A": "Main ideas",
+          "B": "Supporting details",
+          "C": "Context clues",
+          "D": "Summaries"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse main idea with supporting details - always identify the central message first",
+      "Not reading the entire passage before answering questions leads to incorrect responses",
+      "Ignoring context clues and immediately assuming they don't know word meanings",
+      "Writing summaries that are too long - summaries should be 1/3 the length of original text",
+      "Mixing personal opinions with author's stated ideas when making inferences"
+    ],
+    "examTips": [
+      "This chapter appears in every BSEK paper with 2-3 MCQs and 1 long comprehension passage",
+      "Always read questions first, then read the passage to save time",
+      "Underline key words in questions and find them in the passage",
+      "Practice identifying main idea in first and last sentences of paragraphs"
+    ],
+    "formulas": [
+      "Summary Length = 1/3 of Original Text",
+      "Reading Strategy = Question → Passage → Answer"
+    ],
+    "keyDiagram": "Reading Process Flowchart: Preview → Read → Question → Summarize → Review - Students must memorize this 5-step reading process"
+  },
+  "created_at": "2026-04-06T06:49:11.010Z"
+}

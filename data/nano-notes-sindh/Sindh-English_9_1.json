@@ -1,0 +1,106 @@
+{
+  "subject": "English",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "1",
+  "chapter_name": "Reading Comprehension",
+  "note_data": {
+    "title": "Reading Comprehension",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Reading comprehension is the ability to read text, process it and understand its meaning",
+      "Skimming means reading quickly to get the general idea of the passage",
+      "Scanning means looking for specific information or details in a text",
+      "Context clues help determine the meaning of unfamiliar words from surrounding text",
+      "Main idea is the central point or most important concept in a paragraph or passage",
+      "Supporting details are facts, examples or explanations that support the main idea",
+      "Inference means drawing conclusions based on evidence and reasoning rather than explicit statements",
+      "Summarizing involves identifying key points and presenting them in a condensed form"
+    ],
+    "definitions": [
+      {
+        "term": "Reading Comprehension",
+        "definition": "The ability to read text, process it mentally and understand its meaning"
+      },
+      {
+        "term": "Skimming",
+        "definition": "A reading technique used to quickly identify the main ideas of a text"
+      },
+      {
+        "term": "Scanning",
+        "definition": "A reading technique used to find specific information by looking through text quickly"
+      },
+      {
+        "term": "Context Clues",
+        "definition": "Hints found within a sentence, paragraph, or passage that help the reader understand the meaning of new or unfamiliar words"
+      },
+      {
+        "term": "Main Idea",
+        "definition": "The central point or message that the author wants to communicate to the reader"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define reading comprehension and state its importance.",
+        "answer": "Reading comprehension is the ability to read text, process it and understand its meaning. It is important because it helps students understand written material, improves vocabulary, and develops critical thinking skills."
+      },
+      {
+        "type": "long",
+        "question": "Explain the difference between skimming and scanning with examples. How do these techniques help in reading comprehension?",
+        "answer": "Skimming is reading quickly to get the general idea of a passage, like reading newspaper headlines to know daily news. Scanning is looking for specific information, like finding a particular name in a telephone directory. Skimming helps identify main topics quickly while scanning helps locate specific details efficiently. Both techniques save time and improve reading speed while maintaining comprehension of important information."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "What is the main purpose of skimming?",
+        "options": {
+          "A": "To find specific information",
+          "B": "To get the general idea quickly",
+          "C": "To memorize the text",
+          "D": "To translate the passage"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Context clues help readers to:",
+        "options": {
+          "A": "Read faster",
+          "B": "Write better",
+          "C": "Understand unfamiliar words",
+          "D": "Memorize passages"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The central message of a passage is called:",
+        "options": {
+          "A": "Supporting detail",
+          "B": "Context clue",
+          "C": "Main idea",
+          "D": "Summary"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse skimming with scanning - remember skimming is for general idea, scanning is for specific details",
+      "Writing main idea too specifically instead of the central theme of entire passage",
+      "Not using context clues and immediately saying 'word meaning not known'",
+      "Making inferences without proper evidence from the text",
+      "Including personal opinions instead of text-based answers in comprehension questions"
+    ],
+    "examTips": [
+      "Reading comprehension appears in every BSEK paper with 8-12 marks weightage",
+      "Always read the passage twice - first for general understanding, second for specific answers",
+      "Underline key words in questions to identify what type of answer is required",
+      "For MCQs, eliminate obviously wrong options first",
+      "Keep answers within word limits specified in questions"
+    ],
+    "formulas": [],
+    "keyDiagram": "No specific diagram required for this chapter, but students should practice passage marking techniques - underlining main ideas, circling keywords, and numbering supporting details"
+  },
+  "created_at": "2026-04-06T06:46:54.579Z"
+}

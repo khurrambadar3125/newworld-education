@@ -1,0 +1,103 @@
+{
+  "subject": "English",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "5",
+  "chapter_name": "Grammar — Punctuation",
+  "note_data": {
+    "title": "Grammar — Punctuation",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Punctuation marks are essential signs used to make the meaning of sentences clear and to separate sentences from one another",
+      "Full stop (.) is used at the end of declarative sentences and after abbreviations like Dr., Mr., etc.",
+      "Comma (,) is used to separate words in a series, before conjunctions in compound sentences, and to set off introductory phrases",
+      "Semicolon (;) is used to join two independent clauses that are closely related in meaning",
+      "Colon (:) is used before lists, explanations, and formal quotations",
+      "Question mark (?) is placed at the end of direct questions only",
+      "Exclamation mark (!) is used after exclamatory sentences expressing strong emotions",
+      "Quotation marks (' ') are used to enclose direct speech and exact words spoken by someone",
+      "Apostrophe (') is used to show possession and in contractions like don't, can't",
+      "Capital letters are used at the beginning of sentences, proper nouns like Karachi, Sindh, and titles"
+    ],
+    "definitions": [
+      {
+        "term": "Punctuation",
+        "definition": "Punctuation is the system of using marks to make the meaning clear and to separate sentences and their elements"
+      },
+      {
+        "term": "Direct Speech",
+        "definition": "Direct speech is the exact words spoken by a person, enclosed in quotation marks"
+      },
+      {
+        "term": "Indirect Speech",
+        "definition": "Indirect speech is reporting what someone said without using their exact words, without quotation marks"
+      },
+      {
+        "term": "Apostrophe",
+        "definition": "An apostrophe is a punctuation mark used to indicate possession or the omission of letters in contractions"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define punctuation and write the uses of comma.",
+        "answer": "Punctuation is the system of using marks to make meaning clear. Comma is used: (1) to separate words in series (2) before conjunctions in compound sentences (3) to set off introductory phrases (4) after yes, no, well."
+      },
+      {
+        "type": "long",
+        "question": "Punctuate the following passage and explain the punctuation marks used: why are you going to lahore asked ahmed i want to visit my uncle replied hassan",
+        "answer": "'Why are you going to Lahore?' asked Ahmed. 'I want to visit my uncle,' replied Hassan. Marks used: (1) Capital letters for proper noun Lahore and beginning of sentences (2) Question mark after direct question (3) Quotation marks for direct speech (4) Comma after introductory phrases (5) Full stop at end of statements."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which punctuation mark is used before a list of items?",
+        "options": {
+          "A": "Semicolon",
+          "B": "Colon",
+          "C": "Comma",
+          "D": "Full stop"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "In which sentence is the apostrophe correctly used?",
+        "options": {
+          "A": "The boys book",
+          "B": "The boy's book",
+          "C": "The boys' book's",
+          "D": "The boy book's"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "What punctuation is needed: 'I visited Karachi Lahore and Islamabad'",
+        "options": {
+          "A": "Commas only",
+          "B": "Semicolons only",
+          "C": "Commas and full stop",
+          "D": "No punctuation needed"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often forget to use capital letters for proper nouns like Sindhi, Pakistani, Karachi",
+      "Confusion between its (possessive) and it's (contraction)",
+      "Using question mark after indirect questions like 'He asked what time it was'",
+      "Placing comma before 'and' in simple series incorrectly",
+      "Forgetting to close quotation marks in direct speech"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 punctuation exercise in every BSEK paper",
+      "Memorize the exact uses of each punctuation mark as given in textbook",
+      "Practice punctuating passages with Pakistani names and places",
+      "Always check for capital letters at sentence beginnings and proper nouns"
+    ],
+    "formulas": [],
+    "keyDiagram": "Punctuation marks chart showing symbols and their primary uses: Full stop (.), Comma (,), Semicolon (;), Colon (:), Question mark (?), Exclamation mark (!), Quotation marks (' '), Apostrophe (')"
+  },
+  "created_at": "2026-04-06T06:48:27.500Z"
+}

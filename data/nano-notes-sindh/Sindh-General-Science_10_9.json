@@ -1,0 +1,110 @@
+{
+  "subject": "General Science",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "9",
+  "chapter_name": "Basic Electronics",
+  "note_data": {
+    "title": "Basic Electronics",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Electronics is the branch of science which deals with the study of flow and control of electrons in a vacuum or semiconductor",
+      "Thermionic emission occurs when electrons are emitted from a heated metal surface due to thermal energy",
+      "Diode valve contains cathode (negative electrode) and anode (positive electrode) in an evacuated glass tube",
+      "Forward bias occurs when P-junction is connected to positive terminal and N-junction to negative terminal of battery",
+      "Reverse bias occurs when P-junction is connected to negative terminal and N-junction to positive terminal of battery",
+      "Transistor is a three-terminal semiconductor device used for amplification and switching",
+      "NPN transistor has emitter and collector made of N-type material with base of P-type material",
+      "PNP transistor has emitter and collector made of P-type material with base of N-type material",
+      "Logic gates are electronic circuits that perform logical operations on input signals to produce output signals"
+    ],
+    "definitions": [
+      {
+        "term": "Electronics",
+        "definition": "Electronics is the branch of science which deals with the study of flow and control of electrons in a vacuum or semiconductor."
+      },
+      {
+        "term": "Thermionic Emission",
+        "definition": "The phenomenon of emission of electrons from a heated metal surface is called thermionic emission."
+      },
+      {
+        "term": "Diode",
+        "definition": "A diode is a two-terminal electronic device which allows current to flow in one direction only."
+      },
+      {
+        "term": "Transistor",
+        "definition": "A transistor is a three-terminal semiconductor device used for amplification of weak signals and as a switch."
+      },
+      {
+        "term": "Logic Gate",
+        "definition": "Logic gates are electronic circuits that perform logical operations on one or more input signals to produce a single output signal."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define thermionic emission and name the factors affecting it.",
+        "answer": "Thermionic emission is the phenomenon of emission of electrons from a heated metal surface. Factors affecting: (1) Temperature of metal surface (2) Work function of metal (3) Surface area of cathode."
+      },
+      {
+        "type": "long",
+        "question": "Explain the working of NPN transistor with proper diagram and describe its applications.",
+        "answer": "NPN transistor has emitter (N-type), base (P-type), and collector (N-type). Forward bias applied between emitter-base junction, reverse bias between base-collector junction. Electrons flow from emitter to collector through base. Small base current controls large collector current, providing amplification. Applications: (1) Amplifier circuits (2) Switching circuits (3) Oscillator circuits (4) Radio and TV circuits in Pakistan Television Corporation transmitters."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "In forward bias condition of PN junction diode:",
+        "options": {
+          "A": "P-junction connected to negative terminal",
+          "B": "N-junction connected to positive terminal",
+          "C": "P-junction connected to positive terminal",
+          "D": "No current flows"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The output of AND gate is 1 when:",
+        "options": {
+          "A": "Any input is 1",
+          "B": "All inputs are 1",
+          "C": "All inputs are 0",
+          "D": "Any input is 0"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "In NPN transistor, the base is made of:",
+        "options": {
+          "A": "N-type material",
+          "B": "P-type material",
+          "C": "Metal",
+          "D": "Insulator"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse forward bias and reverse bias conditions - remember P to positive for forward bias",
+      "Mixing up NPN and PNP transistor configurations - NPN has P-type base, PNP has N-type base",
+      "Forgetting to draw proper circuit symbols for diodes and transistors in diagrams",
+      "Confusing AND gate with OR gate truth tables - AND needs all inputs to be 1",
+      "Not mentioning Pakistani context examples like PTV transmitters or Karachi electronics industry"
+    ],
+    "examTips": [
+      "Chapter 9 always has 1-2 MCQs on logic gates and transistor types in BSEK papers",
+      "Draw proper circuit symbols - diode triangle and transistor symbols appear every year",
+      "Truth tables for logic gates are frequently asked - memorize AND, OR, NOT gates",
+      "Thermionic emission definition and factors question appears in 70% of past papers",
+      "Always mention Pakistani electronics applications like PTV, radio stations in Karachi"
+    ],
+    "formulas": [
+      "For transistor: β = Ic/Ib (current amplification factor)",
+      "For diode equation: I = Is(e^(qV/kT) - 1)"
+    ],
+    "keyDiagram": "NPN Transistor circuit diagram showing emitter (E), base (B), collector (C) with proper biasing - emitter-base forward biased, base-collector reverse biased. Include current flow arrows and voltage sources. This diagram appears in 80% of BSEK papers."
+  },
+  "created_at": "2026-04-06T06:54:31.606Z"
+}

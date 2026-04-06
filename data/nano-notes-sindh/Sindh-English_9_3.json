@@ -1,0 +1,109 @@
+{
+  "subject": "English",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "3",
+  "chapter_name": "Grammar — Core Concepts",
+  "note_data": {
+    "title": "Grammar — Core Concepts",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Grammar is the system of rules that governs the structure of language and enables effective communication",
+      "Parts of Speech are eight categories: Noun, Pronoun, Verb, Adjective, Adverb, Preposition, Conjunction, and Interjection",
+      "A sentence must have a subject and a predicate to express a complete thought",
+      "Tenses indicate the time of action and are divided into Present, Past, and Future with four forms each",
+      "Active Voice shows the subject performing the action while Passive Voice shows the subject receiving the action",
+      "Direct Speech reports exact words spoken while Indirect Speech reports the meaning without exact words",
+      "Clauses are groups of words containing subject and predicate; Independent clauses express complete thoughts",
+      "Phrases are groups of words without subject-predicate combination that function as single parts of speech"
+    ],
+    "definitions": [
+      {
+        "term": "Grammar",
+        "definition": "Grammar is the system of rules and principles that govern the structure, formation, and use of words, phrases, and sentences in a language."
+      },
+      {
+        "term": "Sentence",
+        "definition": "A sentence is a group of words that expresses a complete thought and contains at least one subject and one predicate."
+      },
+      {
+        "term": "Clause",
+        "definition": "A clause is a group of words that contains both a subject and a predicate and forms part of a sentence."
+      },
+      {
+        "term": "Active Voice",
+        "definition": "Active voice is a form of sentence construction where the subject performs the action expressed by the verb."
+      },
+      {
+        "term": "Tense",
+        "definition": "Tense is a grammatical category that indicates the time of action or state of being expressed by the verb."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define Grammar and write its importance.",
+        "answer": "Grammar is the system of rules that governs language structure. It is important because it enables clear communication, helps in proper sentence formation, and makes language meaningful and understandable."
+      },
+      {
+        "type": "long",
+        "question": "Write a detailed note on Parts of Speech with examples.",
+        "answer": "Parts of Speech are eight categories: 1) Noun - names of persons, places, things (Karachi, Pakistan) 2) Pronoun - replaces nouns (he, she, it) 3) Verb - shows action or state (runs, is) 4) Adjective - describes nouns (beautiful, tall) 5) Adverb - modifies verbs, adjectives (quickly, very) 6) Preposition - shows relationship (in, on, at) 7) Conjunction - joins words/sentences (and, but, or) 8) Interjection - expresses emotion (Alas! Hurray!). Each part has specific functions in sentence construction and proper identification is essential for grammatical accuracy."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which part of speech is the word 'beautiful' in the sentence 'Lahore is a beautiful city'?",
+        "options": {
+          "A": "Noun",
+          "B": "Adjective",
+          "C": "Adverb",
+          "D": "Verb"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Identify the tense: 'Students will study at University of Karachi.'",
+        "options": {
+          "A": "Present Tense",
+          "B": "Past Tense",
+          "C": "Future Tense",
+          "D": "Present Perfect"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Convert to passive voice: 'Ali writes a letter.'",
+        "options": {
+          "A": "A letter writes Ali",
+          "B": "A letter is written by Ali",
+          "C": "A letter was written by Ali",
+          "D": "Ali is writing a letter"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse adjectives with adverbs - remember adjectives modify nouns, adverbs modify verbs",
+      "Mixing up active and passive voice conversion rules - always change subject to object",
+      "Incorrect tense identification - focus on helping verbs and main verb forms",
+      "Confusing phrases with clauses - clauses have subject + predicate, phrases don't",
+      "Wrong preposition usage - memorize common preposition combinations with Pakistani examples"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 short question in every BSEK paper",
+      "Parts of speech identification appears in every exam - practice with Pakistani context",
+      "Voice conversion questions are very common - learn the formula by heart",
+      "Tense questions often use Pakistani locations like Islamabad, Hyderabad in examples",
+      "Always write definitions exactly as given in STBB textbook for full marks"
+    ],
+    "formulas": [
+      "Active to Passive: Subject + Verb + Object → Object + is/am/are/was/were + V3 + by + Subject",
+      "Direct to Indirect: He said, 'I am going' → He said that he was going"
+    ],
+    "keyDiagram": "Grammar Tree Diagram showing sentence breakdown into Subject and Predicate, further subdivided into their components with examples using Pakistani names and places"
+  },
+  "created_at": "2026-04-06T06:47:38.927Z"
+}

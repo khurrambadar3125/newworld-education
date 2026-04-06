@@ -1,0 +1,111 @@
+{
+  "subject": "General Science",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "3",
+  "chapter_name": "Biochemistry and Biotechnology",
+  "note_data": {
+    "title": "Biochemistry and Biotechnology",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Biochemistry is the branch of chemistry that deals with the chemical processes within and related to living organisms",
+      "Biotechnology is the use of living systems and organisms to develop or make products for human welfare",
+      "Carbohydrates are organic compounds composed of carbon, hydrogen and oxygen in the ratio 1:2:1",
+      "Proteins are complex organic compounds made up of amino acids joined by peptide bonds",
+      "Lipids are organic compounds that are insoluble in water but soluble in organic solvents",
+      "Enzymes are biological catalysts that speed up biochemical reactions without being consumed",
+      "DNA (Deoxyribonucleic acid) carries genetic information in all living organisms",
+      "Fermentation is the anaerobic breakdown of organic compounds by microorganisms",
+      "Genetic engineering involves the direct manipulation of genes to produce desired characteristics",
+      "Pakistan uses biotechnology in agriculture, medicine and food production industries"
+    ],
+    "definitions": [
+      {
+        "term": "Biochemistry",
+        "definition": "The branch of chemistry that deals with the chemical processes within and related to living organisms"
+      },
+      {
+        "term": "Biotechnology",
+        "definition": "The use of living systems and organisms to develop or make products for human welfare"
+      },
+      {
+        "term": "Enzyme",
+        "definition": "A biological catalyst that speeds up biochemical reactions without being consumed in the process"
+      },
+      {
+        "term": "Fermentation",
+        "definition": "The anaerobic breakdown of organic compounds by microorganisms to produce energy and various products"
+      },
+      {
+        "term": "Genetic Engineering",
+        "definition": "The direct manipulation of genes using biotechnology to alter the genetic makeup of organisms"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define biotechnology and give two examples of its applications in Pakistan.",
+        "answer": "Biotechnology is the use of living systems and organisms to develop or make products for human welfare. Examples in Pakistan: Production of insulin for diabetic patients, development of high-yield wheat varieties for agriculture."
+      },
+      {
+        "type": "long",
+        "question": "Explain the structure and functions of proteins. Why are they called building blocks of life?",
+        "answer": "Proteins are complex organic compounds made of amino acids joined by peptide bonds. Structure: Primary (amino acid sequence), secondary (alpha helix/beta sheet), tertiary (3D folding), quaternary (multiple chains). Functions: 1) Structural support (collagen), 2) Catalysis (enzymes), 3) Transport (hemoglobin), 4) Defense (antibodies), 5) Storage (albumin). Called building blocks because they form essential structures and control all life processes through enzymes and other functional proteins."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is the correct ratio of C:H:O in carbohydrates?",
+        "options": {
+          "A": "1:1:1",
+          "B": "1:2:1",
+          "C": "2:1:1",
+          "D": "1:1:2"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The building blocks of proteins are:",
+        "options": {
+          "A": "Fatty acids",
+          "B": "Nucleotides",
+          "C": "Amino acids",
+          "D": "Simple sugars"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Fermentation is carried out in the absence of:",
+        "options": {
+          "A": "Carbon dioxide",
+          "B": "Oxygen",
+          "C": "Water",
+          "D": "Glucose"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse biochemistry with biotechnology - remember biochemistry studies chemical processes, biotechnology uses organisms for products",
+      "Writing wrong C:H:O ratio for carbohydrates - it's always 1:2:1",
+      "Confusing amino acids with nucleotides - amino acids make proteins, nucleotides make DNA/RNA",
+      "Not mentioning 'anaerobic' when defining fermentation",
+      "Forgetting Pakistani examples in biotechnology applications"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Memorize exact definitions - they appear word-for-word in exams",
+      "Always give Pakistani examples for biotechnology applications",
+      "Draw protein structure diagram - it appears frequently in long questions",
+      "Remember the 1:2:1 ratio for carbohydrates - common MCQ topic"
+    ],
+    "formulas": [
+      "General formula for carbohydrates: Cn(H2O)n",
+      "Glucose: C6H12O6"
+    ],
+    "keyDiagram": "Structure of protein showing primary structure (amino acid chain), secondary structure (alpha helix/beta pleated sheet), tertiary structure (3D folding) and quaternary structure (multiple polypeptide chains). Label amino acids, peptide bonds, and different structural levels."
+  },
+  "created_at": "2026-04-06T06:52:16.548Z"
+}

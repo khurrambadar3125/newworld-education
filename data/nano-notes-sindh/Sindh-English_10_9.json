@@ -1,0 +1,111 @@
+{
+  "subject": "English",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "9",
+  "chapter_name": "Grammar — Phrases and Clauses",
+  "note_data": {
+    "title": "Grammar — Phrases and Clauses",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "A phrase is a group of words that does not contain both a subject and a predicate",
+      "A clause is a group of words that contains both a subject and a predicate",
+      "Independent clause can stand alone as a complete sentence and expresses a complete thought",
+      "Dependent clause cannot stand alone and depends on main clause for complete meaning",
+      "Noun phrase functions as a noun in a sentence (e.g., The beautiful gardens of Karachi)",
+      "Prepositional phrase begins with a preposition and ends with its object (e.g., near Tarbela Dam)",
+      "Adjective clause modifies a noun or pronoun and usually begins with relative pronouns",
+      "Adverb clause modifies verbs, adjectives or other adverbs and shows time, place, cause, etc."
+    ],
+    "definitions": [
+      {
+        "term": "Phrase",
+        "definition": "A phrase is a group of related words that does not contain both a subject and a predicate and cannot stand alone as a complete sentence."
+      },
+      {
+        "term": "Clause",
+        "definition": "A clause is a group of words that contains both a subject and a predicate."
+      },
+      {
+        "term": "Independent Clause",
+        "definition": "An independent clause is a group of words that contains a subject and a predicate and can stand alone as a complete sentence expressing a complete thought."
+      },
+      {
+        "term": "Dependent Clause",
+        "definition": "A dependent clause is a group of words that contains a subject and a predicate but cannot stand alone as a complete sentence and depends on the main clause for its complete meaning."
+      },
+      {
+        "term": "Noun Phrase",
+        "definition": "A noun phrase is a group of words that functions as a noun in a sentence and consists of a noun and its modifiers."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define phrase and clause with one example each.",
+        "answer": "Phrase: A group of words without subject and predicate (e.g., in the morning). Clause: A group of words with subject and predicate (e.g., when the sun rises)."
+      },
+      {
+        "type": "long",
+        "question": "Differentiate between independent and dependent clauses with examples from Pakistani context.",
+        "answer": "Independent Clause: Can stand alone as complete sentence. Example: 'Karachi is the largest city of Pakistan.' Dependent Clause: Cannot stand alone, needs main clause. Example: 'Because it is the commercial hub' - this depends on main clause. Independent clauses express complete thoughts while dependent clauses are incomplete and start with subordinating conjunctions like because, when, if, although."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is a dependent clause?",
+        "options": {
+          "A": "Lahore is beautiful",
+          "B": "When we visited Shalimar Gardens",
+          "C": "The Indus River flows",
+          "D": "Students study hard"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Identify the noun phrase in: 'The tall minarets of Badshahi Mosque are magnificent.'",
+        "options": {
+          "A": "are magnificent",
+          "B": "of Badshahi Mosque",
+          "C": "The tall minarets",
+          "D": "tall minarets of Badshahi Mosque"
+        },
+        "correct": "D"
+      },
+      {
+        "question": "Which type of phrase is 'near the River Indus'?",
+        "options": {
+          "A": "Noun phrase",
+          "B": "Verb phrase",
+          "C": "Prepositional phrase",
+          "D": "Adjective phrase"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse phrases with clauses - remember clauses must have both subject and predicate",
+      "Mixing up independent and dependent clauses - check if it can stand alone as complete sentence",
+      "Forgetting to identify the complete noun phrase including all modifiers",
+      "Not recognizing subordinating conjunctions that start dependent clauses (because, when, if, although)",
+      "Writing incomplete definitions - always mention 'subject and predicate' for clauses"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Memorize exact definitions - they appear word-for-word in define questions",
+      "Practice identifying phrases and clauses in Pakistani context sentences",
+      "Learn common subordinating conjunctions that start dependent clauses",
+      "Differentiation questions between independent/dependent clauses are very common"
+    ],
+    "formulas": [
+      "Phrase = Group of words WITHOUT subject + predicate",
+      "Clause = Group of words WITH subject + predicate",
+      "Independent Clause = Complete thought + can stand alone",
+      "Dependent Clause = Incomplete thought + needs main clause"
+    ],
+    "keyDiagram": "Sentence Structure Tree: Show how sentences break down into clauses, then into phrases, then into individual words. Main branches: Independent Clause and Dependent Clause, with sub-branches showing different types of phrases (Noun, Verb, Prepositional, Adjective, Adverb phrases)"
+  },
+  "created_at": "2026-04-06T06:49:54.427Z"
+}

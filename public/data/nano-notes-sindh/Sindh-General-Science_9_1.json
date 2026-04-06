@@ -1,0 +1,102 @@
+{
+  "subject": "General Science",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "1",
+  "chapter_name": "Introduction and Role of Science",
+  "note_data": {
+    "title": "Introduction and Role of Science",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Science is the systematic study of nature and natural phenomena through observation, experimentation and logical reasoning",
+      "Scientific method consists of observation, hypothesis formation, experimentation, analysis and conclusion",
+      "Science has three main branches: Physics (study of matter and energy), Chemistry (study of composition and properties of matter), Biology (study of living organisms)",
+      "Technology is the practical application of scientific knowledge for human welfare and progress",
+      "Science and technology have revolutionized human life in fields like medicine, agriculture, transportation and communication",
+      "Pakistan has made significant contributions in nuclear technology, space research through SUPARCO, and medical research",
+      "Scientific attitude includes curiosity, open-mindedness, honesty, patience and logical thinking",
+      "Science helps in solving problems related to health, environment, food production and energy crisis in Pakistan"
+    ],
+    "definitions": [
+      {
+        "term": "Science",
+        "definition": "Science is the systematic study of nature and natural phenomena through observation, experimentation and logical reasoning to establish facts and principles."
+      },
+      {
+        "term": "Scientific Method",
+        "definition": "Scientific method is a systematic approach to solve scientific problems which includes observation, hypothesis formation, experimentation, analysis of data and drawing conclusions."
+      },
+      {
+        "term": "Technology",
+        "definition": "Technology is the practical application of scientific knowledge and principles for the betterment and welfare of mankind."
+      },
+      {
+        "term": "Hypothesis",
+        "definition": "A hypothesis is a tentative explanation or educated guess about a natural phenomenon that can be tested through experimentation."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define science and write its main branches.",
+        "answer": "Science is the systematic study of nature through observation, experimentation and logical reasoning. Its main branches are: 1) Physics - study of matter and energy, 2) Chemistry - study of composition of matter, 3) Biology - study of living organisms."
+      },
+      {
+        "type": "long",
+        "question": "Explain the scientific method with steps and write the role of science in Pakistan's development.",
+        "answer": "Scientific Method Steps: 1) Observation - carefully watching natural phenomena, 2) Hypothesis - forming tentative explanation, 3) Experimentation - testing hypothesis under controlled conditions, 4) Analysis - examining results and data, 5) Conclusion - accepting or rejecting hypothesis. Role in Pakistan: Science has helped Pakistan in nuclear technology (Karachi Nuclear Power Plant), space research (SUPARCO), agriculture (new crop varieties), medicine (vaccines production), and water management (Tarbela and Mangla dams)."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which step comes first in scientific method?",
+        "options": {
+          "A": "Hypothesis",
+          "B": "Observation",
+          "C": "Experimentation",
+          "D": "Conclusion"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The study of living organisms is called:",
+        "options": {
+          "A": "Physics",
+          "B": "Chemistry",
+          "C": "Biology",
+          "D": "Technology"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "SUPARCO is Pakistan's organization for:",
+        "options": {
+          "A": "Nuclear research",
+          "B": "Space research",
+          "C": "Medical research",
+          "D": "Agricultural research"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse science with technology - remember science is study, technology is application",
+      "Writing wrong sequence of scientific method steps - always start with observation",
+      "Not mentioning Pakistani examples in role of science questions",
+      "Giving incomplete definitions without mentioning 'systematic study' and 'logical reasoning'",
+      "Confusing hypothesis with theory - hypothesis is tentative, theory is well-established"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs about branches of science and scientific method",
+      "Definition of science appears in every BSEK paper - memorize word by word",
+      "Always give Pakistani examples when asked about role of science",
+      "Scientific method steps question is very common - remember the sequence",
+      "Draw simple flowchart of scientific method if asked for diagram"
+    ],
+    "formulas": [],
+    "keyDiagram": "Scientific Method Flowchart: Observation → Hypothesis → Experimentation → Analysis → Conclusion (with arrows showing the cyclic process and feedback loops)"
+  },
+  "created_at": "2026-04-06T06:51:30.032Z"
+}

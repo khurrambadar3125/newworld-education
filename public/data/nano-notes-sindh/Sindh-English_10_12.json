@@ -1,0 +1,107 @@
+{
+  "subject": "English",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "12",
+  "chapter_name": "Writing — Essays and Composition",
+  "note_data": {
+    "title": "Writing — Essays and Composition",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Essay is a short literary composition that expresses the writer's thoughts and feelings on a particular subject",
+      "Introduction should contain the main theme and thesis statement of the essay",
+      "Body paragraphs must develop the main idea with proper examples and supporting details",
+      "Conclusion should summarize the main points and provide final thoughts on the topic",
+      "Unity, coherence, and emphasis are the three essential qualities of good composition",
+      "Descriptive essays paint a picture using sensory details and vivid language",
+      "Narrative essays tell a story with proper sequence of events, characters, and setting",
+      "Argumentative essays present logical arguments with evidence to support a particular viewpoint",
+      "Proper paragraph structure includes topic sentence, supporting sentences, and concluding sentence"
+    ],
+    "definitions": [
+      {
+        "term": "Essay",
+        "definition": "A short literary composition that expresses the writer's thoughts, feelings, and opinions on a particular subject in a systematic and organized manner"
+      },
+      {
+        "term": "Unity",
+        "definition": "The quality of composition where all sentences and paragraphs relate to one central idea or theme"
+      },
+      {
+        "term": "Coherence",
+        "definition": "The logical arrangement of ideas and smooth flow of thoughts from one sentence to another and from one paragraph to another"
+      },
+      {
+        "term": "Thesis Statement",
+        "definition": "A single sentence that clearly states the main argument or central idea of the entire essay"
+      },
+      {
+        "term": "Topic Sentence",
+        "definition": "The first sentence of a paragraph that introduces the main idea to be discussed in that paragraph"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "What are the three main parts of an essay? Explain briefly.",
+        "answer": "The three main parts of an essay are: (1) Introduction - presents the topic and thesis statement, (2) Body - develops the main idea with supporting details, (3) Conclusion - summarizes main points and provides final thoughts."
+      },
+      {
+        "type": "long",
+        "question": "Write an essay on 'Quaid-e-Azam Muhammad Ali Jinnah' (150-200 words).",
+        "answer": "Quaid-e-Azam Muhammad Ali Jinnah was the founder of Pakistan and a great leader. Born on December 25, 1876, in Karachi, he became a lawyer and politician. He led the Muslim League and fought for the rights of Muslims in the subcontinent. His vision of a separate homeland for Muslims became reality on August 14, 1947, when Pakistan was created. Jinnah believed in unity, faith, and discipline. He emphasized education, hard work, and honesty. As the first Governor-General of Pakistan, he laid the foundation of our nation. His famous speech about minorities' rights and religious freedom showed his democratic vision. Sadly, he died on September 11, 1948, just one year after independence. Today, we remember him as Baba-e-Qaum (Father of the Nation). His mausoleum in Karachi reminds us of his sacrifices. We should follow his principles to make Pakistan a strong and prosperous country. May Allah bless his soul."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which part of an essay contains the thesis statement?",
+        "options": {
+          "A": "Body",
+          "B": "Introduction",
+          "C": "Conclusion",
+          "D": "Bibliography"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "What is the main purpose of a topic sentence?",
+        "options": {
+          "A": "To conclude the paragraph",
+          "B": "To provide examples",
+          "C": "To introduce the main idea of paragraph",
+          "D": "To list references"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Unity in composition means:",
+        "options": {
+          "A": "Using difficult words",
+          "B": "All ideas relate to central theme",
+          "C": "Writing long paragraphs",
+          "D": "Using many quotations"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students forget to write proper introduction and conclusion in essays",
+      "Many students do not maintain unity and write off-topic sentences",
+      "Using incorrect paragraph structure without proper topic sentences",
+      "Writing essays without proper planning and organization of ideas",
+      "Not providing concrete examples to support the main arguments"
+    ],
+    "examTips": [
+      "Always make an outline before writing essays - this helps organize thoughts",
+      "Practice writing essays on Pakistani topics like national heroes, festivals, and social issues",
+      "Remember to write 150-200 words for essay questions as specified in BSEK papers",
+      "Use simple and clear language rather than complex vocabulary",
+      "Check spelling, grammar, and punctuation before submitting the answer"
+    ],
+    "formulas": [],
+    "keyDiagram": "Essay Structure Diagram: Introduction (Hook + Background + Thesis Statement) → Body Paragraph 1 (Topic Sentence + Supporting Details + Examples) → Body Paragraph 2 (Topic Sentence + Supporting Details + Examples) → Conclusion (Restate Thesis + Summary + Final Thought)"
+  },
+  "created_at": "2026-04-06T06:51:06.426Z"
+}

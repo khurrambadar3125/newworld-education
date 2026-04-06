@@ -1,0 +1,114 @@
+{
+  "subject": "English",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "4",
+  "chapter_name": "Grammar — Tenses",
+  "note_data": {
+    "title": "Grammar — Tenses",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Tense is the form of a verb that shows the time of an action or state of being",
+      "There are three main tenses: Present, Past, and Future, each with four forms",
+      "Present Tense expresses actions happening now or habitual actions",
+      "Past Tense shows actions that have already happened or completed states",
+      "Future Tense indicates actions that will happen or states that will exist",
+      "Each tense has four aspects: Simple, Continuous, Perfect, and Perfect Continuous",
+      "Simple tenses express basic actions without emphasis on duration or completion",
+      "Continuous tenses show ongoing actions using 'be' + present participle (-ing form)",
+      "Perfect tenses indicate completed actions using 'have/has/had' + past participle",
+      "Sequence of tenses must be maintained in complex sentences for grammatical accuracy"
+    ],
+    "definitions": [
+      {
+        "term": "Tense",
+        "definition": "Tense is the form of a verb that shows the time of an action or state of being"
+      },
+      {
+        "term": "Present Tense",
+        "definition": "Present Tense is used to express actions that are happening now, habitual actions, or general truths"
+      },
+      {
+        "term": "Past Tense",
+        "definition": "Past Tense is used to express actions that have already happened or states that existed in the past"
+      },
+      {
+        "term": "Future Tense",
+        "definition": "Future Tense is used to express actions that will happen or states that will exist in the future"
+      },
+      {
+        "term": "Perfect Tense",
+        "definition": "Perfect Tense shows completed actions in relation to a specific time, formed with auxiliary verbs 'have', 'has', or 'had' plus past participle"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define tense and name its three main types.",
+        "answer": "Tense is the form of a verb that shows the time of an action or state of being. The three main types are: Present Tense, Past Tense, and Future Tense."
+      },
+      {
+        "type": "long",
+        "question": "Write a detailed note on Present Tense with examples.",
+        "answer": "Present Tense expresses actions happening now or habitual actions. It has four forms: (1) Simple Present: I study in Karachi Grammar School. (2) Present Continuous: Students are playing cricket in the ground. (3) Present Perfect: The government has built Tarbela Dam. (4) Present Perfect Continuous: It has been raining in Sindh for three hours. Simple Present shows routine actions, Present Continuous shows ongoing actions, Present Perfect shows completed actions with present relevance, and Present Perfect Continuous shows actions continuing from past to present."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which tense is used in the sentence 'The train will have left Karachi station by 6 PM'?",
+        "options": {
+          "A": "Future Simple",
+          "B": "Future Perfect",
+          "C": "Future Continuous",
+          "D": "Present Perfect"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Identify the tense: 'Ahmed has been studying at Sindh University for two years.'",
+        "options": {
+          "A": "Present Perfect",
+          "B": "Past Perfect Continuous",
+          "C": "Present Perfect Continuous",
+          "D": "Past Continuous"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The sentence 'I go to school daily' is an example of:",
+        "options": {
+          "A": "Present Continuous",
+          "B": "Simple Present",
+          "C": "Present Perfect",
+          "D": "Future Simple"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse Simple Past with Present Perfect when using time expressions",
+      "Incorrect use of auxiliary verbs in forming Perfect tenses (mixing 'have' and 'had')",
+      "Using Present Continuous for habitual actions instead of Simple Present",
+      "Forgetting to change tense in reported speech according to sequence of tenses rules",
+      "Mixing up Past Continuous with Past Perfect Continuous formations"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 short question in every BSEK paper",
+      "Memorize the exact definitions as they appear in STBB textbook",
+      "Practice identifying tenses in sentences with Pakistani context examples",
+      "Sequence of tenses questions appear frequently in long questions section",
+      "Always provide examples when writing notes on tenses for full marks"
+    ],
+    "formulas": [
+      "Simple Present: Subject + V1 + Object",
+      "Present Continuous: Subject + am/is/are + V1+ing + Object",
+      "Present Perfect: Subject + have/has + V3 + Object",
+      "Past Simple: Subject + V2 + Object",
+      "Future Simple: Subject + will + V1 + Object"
+    ],
+    "keyDiagram": "Tense Chart showing three main tenses (Present, Past, Future) with their four forms each: Simple, Continuous, Perfect, and Perfect Continuous. Each form should show structure formula and one example sentence using Pakistani context."
+  },
+  "created_at": "2026-04-06T06:48:02.271Z"
+}

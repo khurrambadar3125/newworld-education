@@ -1,0 +1,111 @@
+{
+  "subject": "General Science",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "11",
+  "chapter_name": "The Space and Nuclear Program of Pakistan",
+  "note_data": {
+    "title": "The Space and Nuclear Program of Pakistan",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Pakistan's nuclear program began in 1972 under Dr. Abdus Salam's guidance for peaceful purposes",
+      "Pakistan Atomic Energy Commission (PAEC) was established in 1956 to develop nuclear technology",
+      "Karachi Nuclear Power Plant (KANUPP) was Pakistan's first nuclear power plant, started in 1972",
+      "Space and Upper Atmosphere Research Commission (SUPARCO) was established in 1961",
+      "Pakistan's first satellite Badr-1 was launched in 1990 from China",
+      "Nuclear reactors produce electricity through controlled nuclear fission reactions",
+      "Pakistan became a nuclear power in 1998 after conducting nuclear tests in Chagai, Balochistan",
+      "Nuclear technology is used for medical purposes, agriculture, and electricity generation",
+      "Pakistan's space program focuses on satellite technology and communication systems",
+      "Nuclear energy is a clean source of power that reduces dependence on fossil fuels"
+    ],
+    "definitions": [
+      {
+        "term": "Nuclear Fission",
+        "definition": "The process in which a heavy nucleus splits into two or more lighter nuclei with the release of a large amount of energy"
+      },
+      {
+        "term": "Nuclear Reactor",
+        "definition": "A device in which controlled nuclear fission reactions take place to produce heat energy which is converted into electrical energy"
+      },
+      {
+        "term": "Radioactive Decay",
+        "definition": "The spontaneous disintegration of unstable atomic nuclei with the emission of radiations"
+      },
+      {
+        "term": "Satellite",
+        "definition": "An artificial object that orbits around the Earth and is used for communication, weather forecasting, and navigation"
+      },
+      {
+        "term": "Nuclear Energy",
+        "definition": "The energy released during nuclear reactions, either fission or fusion, which can be used for peaceful or military purposes"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Write the names of Pakistan's nuclear power plants.",
+        "answer": "KANUPP (Karachi Nuclear Power Plant), CHASNUPP-1, CHASNUPP-2, CHASNUPP-3, and CHASNUPP-4 located in Chashma, Punjab."
+      },
+      {
+        "type": "long",
+        "question": "Write a detailed note on Pakistan's space program and its achievements.",
+        "answer": "Pakistan's space program began with the establishment of SUPARCO in 1961. Major achievements include: (1) Launch of Badr-1 satellite in 1990, (2) Development of communication satellites, (3) Weather monitoring systems, (4) Remote sensing technology for agriculture, (5) Collaboration with China for satellite launches, (6) Development of indigenous satellite technology, (7) Space research for national development, (8) Training of Pakistani astronauts and scientists."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Pakistan's first nuclear power plant is located in:",
+        "options": {
+          "A": "Lahore",
+          "B": "Karachi",
+          "C": "Islamabad",
+          "D": "Chashma"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "SUPARCO was established in:",
+        "options": {
+          "A": "1956",
+          "B": "1961",
+          "C": "1972",
+          "D": "1990"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Pakistan's first satellite was:",
+        "options": {
+          "A": "Badr-1",
+          "B": "Paksat-1",
+          "C": "Rehbar-1",
+          "D": "Badr-2"
+        },
+        "correct": "A"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse PAEC establishment date (1956) with nuclear program start date (1972)",
+      "Many write wrong location of KANUPP - it's in Karachi, not Chashma",
+      "Students forget that Badr-1 was launched from China, not from Pakistan",
+      "Confusion between nuclear fission and nuclear fusion processes",
+      "Writing incomplete names - always write full forms like Pakistan Atomic Energy Commission"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs about dates and names in every BSEK paper",
+      "Timeline questions are very common - memorize key dates (1956, 1961, 1972, 1990, 1998)",
+      "Long questions often ask about nuclear program benefits or space program achievements",
+      "Always mention both peaceful and defense applications of nuclear technology",
+      "Draw simple diagram of nuclear reactor if asked about nuclear power generation"
+    ],
+    "formulas": [
+      "E = mc² (Einstein's mass-energy equation)",
+      "Nuclear binding energy = (Mass defect) × c²"
+    ],
+    "keyDiagram": "Simple block diagram of Nuclear Power Plant showing: Nuclear Reactor → Steam Generator → Turbine → Generator → Electrical Output, with cooling system and control rods in reactor"
+  },
+  "created_at": "2026-04-06T06:55:16.003Z"
+}

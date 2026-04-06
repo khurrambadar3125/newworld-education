@@ -1,0 +1,107 @@
+{
+  "subject": "English",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "8",
+  "chapter_name": "Vocabulary — Idioms and Figures of Speech",
+  "note_data": {
+    "title": "Vocabulary — Idioms and Figures of Speech",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "An idiom is a group of words whose meaning cannot be understood from the individual words but has a special meaning of its own",
+      "Figures of speech are expressions that use words in a non-literal way to create emphasis, clarity, or fresh meaning",
+      "Simile compares two different things using 'like' or 'as' to show similarity",
+      "Metaphor makes a direct comparison between two unlike things without using 'like' or 'as'",
+      "Personification gives human qualities, characteristics, or actions to non-human objects or abstract ideas",
+      "Hyperbole is deliberate exaggeration used for emphasis or dramatic effect",
+      "Alliteration is the repetition of the same initial consonant sound in consecutive or closely connected words",
+      "Onomatopoeia refers to words that imitate the natural sound they represent",
+      "Irony is the use of words to convey a meaning opposite to their literal meaning"
+    ],
+    "definitions": [
+      {
+        "term": "Idiom",
+        "definition": "A group of words whose meaning cannot be understood from the individual words but has a special meaning of its own"
+      },
+      {
+        "term": "Simile",
+        "definition": "A figure of speech that compares two different things using 'like' or 'as' to show similarity"
+      },
+      {
+        "term": "Metaphor",
+        "definition": "A figure of speech that makes a direct comparison between two unlike things without using 'like' or 'as'"
+      },
+      {
+        "term": "Personification",
+        "definition": "A figure of speech that gives human qualities, characteristics, or actions to non-human objects or abstract ideas"
+      },
+      {
+        "term": "Hyperbole",
+        "definition": "A figure of speech involving deliberate exaggeration used for emphasis or dramatic effect"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define idiom with one example.",
+        "answer": "An idiom is a group of words whose meaning cannot be understood from the individual words but has a special meaning of its own. Example: 'It's raining cats and dogs' means it's raining heavily."
+      },
+      {
+        "type": "long",
+        "question": "Explain any five figures of speech with examples from Pakistani context.",
+        "answer": "1. Simile: The Indus River flows like a silver ribbon through Sindh. 2. Metaphor: Karachi is the heart of Pakistan's economy. 3. Personification: The minaret of Badshahi Mosque kissed the sky. 4. Hyperbole: I've told you a million times to study for BSEK exams. 5. Alliteration: The bustling bazaars of Lahore attract tourists."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "'Break a leg' is an example of:",
+        "options": {
+          "A": "Simile",
+          "B": "Metaphor",
+          "C": "Idiom",
+          "D": "Personification"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "'The wind whispered through the trees' contains which figure of speech?",
+        "options": {
+          "A": "Simile",
+          "B": "Personification",
+          "C": "Hyperbole",
+          "D": "Alliteration"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "'As brave as a lion' is an example of:",
+        "options": {
+          "A": "Metaphor",
+          "B": "Personification",
+          "C": "Simile",
+          "D": "Irony"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse simile with metaphor — remember simile uses 'like' or 'as'",
+      "Writing literal meanings instead of figurative meanings for idioms",
+      "Mixing up personification with metaphor — personification specifically gives human qualities",
+      "Not providing Pakistani context examples when asked in BSEK papers",
+      "Forgetting to underline or highlight the figure of speech in given examples"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 short question worth 3-5 marks in BSEK papers",
+      "Always memorize at least 10 common idioms with meanings — they appear every year",
+      "Practice identifying figures of speech in Urdu poetry translations",
+      "Use Pakistani examples (cities, rivers, landmarks) to score extra marks",
+      "Learn the exact textbook definitions word-by-word for 'Define' type questions"
+    ],
+    "formulas": [],
+    "keyDiagram": "Create a mind map with 'Figures of Speech' in center, branching out to: Simile (with 'like/as'), Metaphor (direct comparison), Personification (human qualities), Hyperbole (exaggeration), Alliteration (sound repetition), and Onomatopoeia (sound words)"
+  },
+  "created_at": "2026-04-06T06:49:31.284Z"
+}

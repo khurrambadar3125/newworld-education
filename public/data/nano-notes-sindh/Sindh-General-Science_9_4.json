@@ -1,0 +1,108 @@
+{
+  "subject": "General Science",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "4",
+  "chapter_name": "Man and Health",
+  "note_data": {
+    "title": "Man and Health",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Health is a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity",
+      "Disease is any condition which interferes with the normal functioning of the body or mind",
+      "Communicable diseases are those diseases which can spread from one person to another through various means",
+      "Non-communicable diseases are those diseases which do not spread from one person to another",
+      "Pathogen is any disease-causing microorganism such as bacteria, virus, fungi or protozoa",
+      "Vector is an organism that carries disease-causing microorganisms from infected to healthy individuals",
+      "Antibiotics are chemical substances produced by microorganisms that kill or inhibit the growth of other microorganisms",
+      "Vaccination is the process of introducing weakened or dead pathogens into the body to develop immunity",
+      "Personal hygiene includes cleanliness of body, clothes, teeth, hair and surroundings to prevent diseases",
+      "Environmental sanitation involves proper disposal of waste, clean water supply and control of disease vectors"
+    ],
+    "definitions": [
+      {
+        "term": "Health",
+        "definition": "Health is a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity"
+      },
+      {
+        "term": "Disease",
+        "definition": "Disease is any condition which interferes with the normal functioning of the body or mind"
+      },
+      {
+        "term": "Pathogen",
+        "definition": "Pathogen is any disease-causing microorganism such as bacteria, virus, fungi or protozoa"
+      },
+      {
+        "term": "Antibiotics",
+        "definition": "Antibiotics are chemical substances produced by microorganisms that kill or inhibit the growth of other microorganisms"
+      },
+      {
+        "term": "Vaccination",
+        "definition": "Vaccination is the process of introducing weakened or dead pathogens into the body to develop immunity against specific diseases"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between communicable and non-communicable diseases.",
+        "answer": "Communicable diseases can spread from one person to another through air, water, food or direct contact (e.g., tuberculosis, malaria). Non-communicable diseases do not spread from person to person (e.g., diabetes, heart disease)."
+      },
+      {
+        "type": "long",
+        "question": "Write a detailed note on prevention and control of communicable diseases.",
+        "answer": "Prevention of communicable diseases includes: (i) Personal hygiene - regular bathing, clean clothes, hand washing (ii) Environmental sanitation - proper sewage disposal, clean water supply (iii) Vector control - elimination of breeding places of mosquitoes and flies (iv) Vaccination - immunization against diseases like polio, measles (v) Isolation of patients - separating infected individuals (vi) Use of antibiotics - for bacterial infections (vii) Health education - creating awareness about disease prevention."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is a communicable disease?",
+        "options": {
+          "A": "Diabetes",
+          "B": "Tuberculosis",
+          "C": "Heart disease",
+          "D": "Cancer"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Antibiotics are effective against:",
+        "options": {
+          "A": "Viruses only",
+          "B": "Bacteria only",
+          "C": "Both bacteria and viruses",
+          "D": "Fungi only"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Anopheles mosquito is a vector for:",
+        "options": {
+          "A": "Dengue fever",
+          "B": "Malaria",
+          "C": "Typhoid",
+          "D": "Tuberculosis"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse communicable and non-communicable diseases - remember communicable means 'can spread'",
+      "Writing incomplete definitions - always write the complete textbook definition word by word",
+      "Mixing up vectors and pathogens - vector carries the pathogen, pathogen causes the disease",
+      "Forgetting to mention that antibiotics work only against bacteria, not viruses",
+      "Not drawing proper labels in diagrams of disease transmission cycles"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1-2 short questions in every BSEK paper",
+      "Definition of health appears in 90% of papers - memorize it exactly",
+      "Disease prevention methods question is very common - prepare detailed points",
+      "Always draw and label diagrams for malaria and dengue transmission cycles",
+      "Learn examples of Pakistani context diseases like dengue in Karachi, malaria in Sindhi rural areas"
+    ],
+    "formulas": [],
+    "keyDiagram": "Life cycle of malaria parasite showing transmission between Anopheles mosquito and human host - must include labels for sporozoites, liver stage, blood stage, gametocytes, and mosquito gut stages"
+  },
+  "created_at": "2026-04-06T06:52:37.934Z"
+}
