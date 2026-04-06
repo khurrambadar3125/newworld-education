@@ -1,0 +1,86 @@
+{
+  "subject": "Computer Science",
+  "subject_code": "2210",
+  "level": "O Level",
+  "theme": "Paper 2: Algorithms and Programming",
+  "chapter_id": "9",
+  "chapter_name": "Databases",
+  "note_data": {
+    "title": "Databases",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **database** is a collection of related data organised in a structured way to allow efficient storage and retrieval",
+      "A **table** consists of rows (records) and columns (fields) where each row represents one entity and each column represents one attribute",
+      "A **primary key** is a unique identifier for each record in a table that cannot be null or duplicated",
+      "**SQL SELECT** statement retrieves specific data from one or more tables in a database",
+      "**WHERE clause** filters records based on specified conditions to limit the results returned",
+      "**ORDER BY** clause sorts the retrieved data in ascending (ASC) or descending (DESC) order based on specified fields",
+      "**COUNT function** returns the number of records that match the specified criteria in a query",
+      "**SUM function** calculates the total of all values in a specified numeric field"
+    ],
+    "definitions": [
+      {
+        "term": "Database",
+        "definition": "A collection of related data organised in a structured way that allows efficient storage, retrieval and manipulation of information"
+      },
+      {
+        "term": "Primary Key",
+        "definition": "A field or combination of fields that uniquely identifies each record in a table and cannot contain null or duplicate values"
+      },
+      {
+        "term": "SQL",
+        "definition": "Structured Query Language - a programming language used to manage and manipulate data stored in relational databases"
+      },
+      {
+        "term": "Query",
+        "definition": "A request for specific data from a database using SQL commands to retrieve, insert, update or delete records"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Write",
+        "instruction": "For SQL questions, write the exact syntax with correct spelling and punctuation"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A school database contains a table called STUDENTS with fields: StudentID, Name, Class, Age, Marks. Write an SQL statement to display the names of all students in class 10A with marks greater than 75, sorted by marks in descending order.",
+      "marks": 4,
+      "answer": "SELECT Name FROM STUDENTS WHERE Class = '10A' AND Marks > 75 ORDER BY Marks DESC;",
+      "markBreakdown": [
+        "Mark 1: Correct SELECT Name FROM STUDENTS",
+        "Mark 2: Correct WHERE Class = '10A' AND Marks > 75",
+        "Mark 3: Correct ORDER BY Marks",
+        "Mark 4: Correct DESC and semicolon"
+      ]
+    },
+    "commonMistakes": [
+      "Never write 'WHERE Class = 10A' — always use quotes for text values 'WHERE Class = '10A''",
+      "Students often forget the semicolon at the end of SQL statements",
+      "Writing 'SORT BY' instead of 'ORDER BY' loses marks",
+      "Confusing COUNT(*) which counts all records with COUNT(fieldname) which counts non-null values in that field",
+      "Using = instead of > or < for numerical comparisons in WHERE clauses"
+    ],
+    "examinerTips": [
+      "SQL questions appear in every Paper 2 - practice the exact syntax",
+      "Always check spelling of SQL keywords - they must be exact",
+      "Remember to use quotes around text values but not around numbers",
+      "When using ORDER BY, specify ASC or DESC even though ASC is default"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Database structure diagram showing tables with field names, data types, and primary key indicators. Include relationship lines between tables if multiple tables are involved."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:46:30.255Z",
+  "updated_at": "2026-04-06T03:46:30.255Z"
+}

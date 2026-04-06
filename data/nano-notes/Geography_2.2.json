@@ -1,0 +1,94 @@
+{
+  "subject": "Geography",
+  "subject_code": "2217",
+  "level": "O Level",
+  "theme": "Theme 2: The Natural Environment",
+  "chapter_id": "2.2",
+  "chapter_name": "Rivers",
+  "note_data": {
+    "title": "Rivers",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Hydraulic action** occurs when water forces air into cracks in rocks, causing them to break apart",
+      "**Attrition** happens when rocks and stones carried by the river knock against each other and break into smaller pieces",
+      "**Lateral erosion** creates **meanders** by eroding the outer bank where water flows fastest",
+      "**Deposition** occurs when a river loses energy and drops its load, creating features like **levees** and **deltas**",
+      "**Flooding** happens when discharge exceeds the capacity of the river channel",
+      "Rivers transport material by **traction** (rolling), **saltation** (bouncing), **suspension** (carried in water), and **solution** (dissolved)",
+      "**Oxbow lakes** form when meanders are cut off from the main river channel",
+      "**Waterfalls** form where hard rock overlies soft rock, creating a vertical drop through differential erosion",
+      "River valleys change from **V-shaped** in upper course to **flat and wide** in lower course due to lateral erosion"
+    ],
+    "definitions": [
+      {
+        "term": "Meander",
+        "definition": "A large bend in a river formed by lateral erosion on the outer bank and deposition on the inner bank"
+      },
+      {
+        "term": "Flood",
+        "definition": "When a river's discharge exceeds the capacity of its channel, causing water to overflow onto the floodplain"
+      },
+      {
+        "term": "Hydraulic action",
+        "definition": "A type of erosion where moving water forces air into cracks in rocks, causing them to break apart"
+      },
+      {
+        "term": "Deposition",
+        "definition": "The laying down of sediment carried by a river when it loses energy"
+      },
+      {
+        "term": "Delta",
+        "definition": "A triangular area of deposited sediment at the mouth of a river where it meets a sea or lake"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Say what you can see or what happens step by step"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences using comparative words like 'whereas', 'however', 'both'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how meanders are formed. [3 marks]",
+      "marks": 3,
+      "answer": "Rivers flow faster on the outside of bends due to deeper water, causing lateral erosion through hydraulic action and abrasion. This erodes the outer bank, making the bend wider. On the inside of the bend, the river flows more slowly in shallow water, so deposition occurs, forming a slip-off slope. Over time, this process makes the bend larger, forming a meander.",
+      "markBreakdown": [
+        "Mark 1: Faster flow on outside of bend causes erosion",
+        "Mark 2: Slower flow on inside causes deposition",
+        "Mark 3: Process continues over time to form larger bend/meander"
+      ]
+    },
+    "commonMistakes": [
+      "Never say rivers 'dig down' - always say 'erode vertically' or use specific erosion processes",
+      "Students often confuse attrition with abrasion - attrition is rocks hitting each other, abrasion is rocks hitting the riverbed",
+      "Don't say waterfalls 'move backwards' - say 'retreat upstream' through headward erosion",
+      "Never just say 'the river slows down' - explain WHY it loses energy (less gradient, increased friction, larger channel)",
+      "Students forget that deposition requires LOSS OF ENERGY, not just slow flow"
+    ],
+    "examinerTips": [
+      "River landforms appear in Paper 2 almost every year - especially meanders and waterfalls",
+      "Always draw labelled diagrams for landform formation questions",
+      "Use examples from Pakistan like River Indus flooding or Tarbela Dam for water management",
+      "Link human activities to river processes - deforestation increases surface runoff and flooding"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Cross-section of a meander showing fast flow and erosion on outer bank, slow flow and deposition on inner bank, with arrows indicating water flow direction and processes occurring"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:57:23.270Z",
+  "updated_at": "2026-04-06T03:57:23.270Z"
+}

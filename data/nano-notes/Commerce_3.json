@@ -1,0 +1,97 @@
+{
+  "subject": "Commerce",
+  "subject_code": "7100",
+  "level": "O Level",
+  "theme": "Commerce and Trade",
+  "chapter_id": "3",
+  "chapter_name": "Globalisation of Trade",
+  "note_data": {
+    "title": "Globalisation of Trade",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Globalisation** is the process by which businesses develop international influence through worldwide operations and trade",
+      "**International trade** allows countries to specialise in producing goods where they have a comparative advantage",
+      "**Imports** are goods and services bought from foreign countries, increasing consumer choice but reducing domestic employment",
+      "**Exports** are goods and services sold to foreign countries, earning foreign currency and creating domestic employment",
+      "**Free trade** involves removal of trade barriers like tariffs and quotas between countries",
+      "**Trade barriers** include tariffs (taxes on imports), quotas (limits on quantities), and embargoes (complete bans)",
+      "**Multinational corporations (MNCs)** operate in multiple countries, bringing investment but may exploit cheap labour",
+      "**Balance of trade** is the difference between a country's exports and imports over a given period",
+      "Pakistan exports textiles, rice, and leather goods while importing oil, machinery, and technology"
+    ],
+    "definitions": [
+      {
+        "term": "Globalisation",
+        "definition": "The process by which businesses develop international influence through worldwide operations and increased international trade"
+      },
+      {
+        "term": "Import",
+        "definition": "Goods and services purchased by one country from another country"
+      },
+      {
+        "term": "Export",
+        "definition": "Goods and services sold by one country to another country"
+      },
+      {
+        "term": "Free Trade",
+        "definition": "International trade without restrictions such as tariffs, quotas or other trade barriers"
+      },
+      {
+        "term": "Multinational Corporation",
+        "definition": "A business that operates in more than one country with production facilities or offices in different countries"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the advantages AND disadvantages with detailed explanations"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Weigh up both sides and reach a reasoned conclusion about which is more important"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two advantages of international trade for a country like Pakistan. [6 marks]",
+      "marks": 6,
+      "answer": "One advantage is increased foreign currency earnings. This is because when Pakistan exports goods like textiles and rice, foreign buyers pay in their currency which can be converted to dollars or other foreign currencies. This helps Pakistan pay for essential imports like oil and machinery. Another advantage is access to goods not produced domestically. This is because Pakistan can import products like advanced technology and tropical fruits that cannot be efficiently produced locally, giving consumers greater choice and businesses access to better equipment.",
+      "markBreakdown": [
+        "Mark 1: Advantage 1 identified - foreign currency earnings",
+        "Mark 2: Explanation of advantage 1 with example",
+        "Mark 3: Further development of advantage 1",
+        "Mark 4: Advantage 2 identified - access to goods not produced domestically",
+        "Mark 5: Explanation of advantage 2 with example",
+        "Mark 6: Further development of advantage 2"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'globalisation only has benefits' — always consider both advantages and disadvantages",
+      "Students often confuse imports with exports — remember imports come IN, exports go OUT",
+      "Don't write 'free trade means trade is free' — explain it means trade without barriers",
+      "Avoid saying 'MNCs are always bad' — they bring investment and jobs as well as potential problems",
+      "Never ignore the impact on domestic industries when discussing international trade benefits"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2, especially questions about advantages and disadvantages",
+      "Always use Pakistani examples like textile exports to China or oil imports from Saudi Arabia",
+      "Balance your answers - if asked about globalisation, mention both positive and negative effects",
+      "Learn the difference between trade barriers - tariffs, quotas, and embargoes are different"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Trade flow diagram showing Pakistan's major exports (textiles, rice, leather) going to different countries and major imports (oil, machinery, chemicals) coming from various trading partners with arrows indicating direction of trade"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:11:32.303Z",
+  "updated_at": "2026-04-06T04:11:32.303Z"
+}

@@ -1,0 +1,88 @@
+{
+  "subject": "History",
+  "subject_code": "2147",
+  "level": "O Level",
+  "theme": "Section 2: Depth Studies",
+  "chapter_id": "A",
+  "chapter_name": "The First World War",
+  "note_data": {
+    "title": "The First World War",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Trench warfare** developed because both sides dug defensive positions to protect themselves from machine gun fire and artillery",
+      "The **Western Front** became a stalemate with trenches stretching from the English Channel to Switzerland",
+      "**No man's land** was the area between opposing trenches, filled with barbed wire and shell craters",
+      "The **Battle of the Somme** (1916) resulted in over one million casualties for minimal territorial gains",
+      "**Shell shock** was a psychological condition affecting soldiers due to constant bombardment and stress",
+      "**Poison gas** was first used by Germany at Ypres in 1915, leading to the development of gas masks",
+      "**Going over the top** meant leaving the trenches to attack enemy positions across no man's land",
+      "Trench conditions included problems with **rats, lice, trench foot** and disease due to poor sanitation",
+      "The **Christmas Truce** of 1914 showed temporary humanity between opposing forces before warfare intensified"
+    ],
+    "definitions": [
+      {
+        "term": "Trench warfare",
+        "definition": "A type of fighting where soldiers dug deep ditches for protection and fought from fixed defensive positions"
+      },
+      {
+        "term": "No man's land",
+        "definition": "The area between opposing trenches that was dangerous to cross due to enemy fire and obstacles"
+      },
+      {
+        "term": "Shell shock",
+        "definition": "A psychological condition caused by the stress and trauma of warfare, affecting soldiers' mental health"
+      },
+      {
+        "term": "Stalemate",
+        "definition": "A situation where neither side could make significant advances, resulting in deadlock"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give 2-3 detailed points about what something was like, including specific examples"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this led to'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Describe the conditions in the trenches during World War One. [5 marks]",
+      "marks": 5,
+      "answer": "Trenches were muddy and waterlogged, causing soldiers to develop trench foot from standing in water for long periods. Rats infested the trenches, feeding on food scraps and dead bodies, growing to the size of cats. Soldiers suffered from lice infestations which caused constant itching and spread disease. The smell was terrible due to poor sanitation, rotting food and bodies. Soldiers faced constant danger from sniper fire and random artillery bombardments, causing psychological stress.",
+      "markBreakdown": [
+        "Mark 1: Muddy conditions/trench foot",
+        "Mark 2: Rat infestation",
+        "Mark 3: Lice problems",
+        "Mark 4: Poor sanitation/smell",
+        "Mark 5: Constant danger/psychological effects"
+      ]
+    },
+    "commonMistakes": [
+      "Never say trenches were 'bad' - always give specific details like rats, lice, trench foot",
+      "Students often forget to mention the psychological impact of trench warfare on soldiers",
+      "Don't confuse the Battle of the Somme (1916) with the Battle of Verdun (1916)",
+      "Never say soldiers 'enjoyed' the Christmas Truce - it was temporary and warfare resumed",
+      "Students often exaggerate - stick to factual conditions rather than dramatic language"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 as a 5-mark 'Describe' question",
+      "Always include specific examples of trench conditions for full marks",
+      "Remember both physical and psychological effects on soldiers",
+      "Link trench warfare to the development of new weapons and tactics"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Cross-section diagram showing trench system with front line trench, communication trenches, barbed wire, no man's land, and key features like fire step and duck boards"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:04:21.986Z",
+  "updated_at": "2026-04-06T04:04:21.986Z"
+}

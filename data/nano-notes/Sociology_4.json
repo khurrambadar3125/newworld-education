@@ -1,0 +1,95 @@
+{
+  "subject": "Sociology",
+  "subject_code": "2251",
+  "level": "O Level",
+  "theme": "Social Institutions",
+  "chapter_id": "4",
+  "chapter_name": "Family",
+  "note_data": {
+    "title": "Family",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Nuclear family** consists of parents and their dependent children living together in one household",
+      "**Extended family** includes relatives beyond parents and children, such as grandparents, aunts, uncles and cousins",
+      "**Marriage** is a legally or socially recognized union between two people, creating kinship ties",
+      "**Household** refers to all people living together in the same dwelling, who may or may not be related",
+      "**Patriarchal family** is male-dominated where the father has authority and makes major decisions",
+      "**Matriarchal family** is female-dominated where the mother has authority and controls family decisions",
+      "**Monogamy** is marriage to one partner at a time, while **polygamy** allows multiple spouses",
+      "**Arranged marriage** occurs when families choose partners for their children, common in Pakistani culture",
+      "**Joint family system** involves multiple generations living together, sharing resources and responsibilities"
+    ],
+    "definitions": [
+      {
+        "term": "Nuclear family",
+        "definition": "A family unit consisting of two parents and their dependent children living together in one household"
+      },
+      {
+        "term": "Extended family",
+        "definition": "A family unit that includes relatives beyond the nuclear family, such as grandparents, aunts, uncles and cousins"
+      },
+      {
+        "term": "Marriage",
+        "definition": "A legally or socially recognized union between two people that creates kinship ties and mutual obligations"
+      },
+      {
+        "term": "Household",
+        "definition": "All persons living together in the same dwelling, whether related by blood, marriage or not"
+      },
+      {
+        "term": "Kinship",
+        "definition": "Relationships between people based on blood ties (consanguinity) or marriage (affinity)"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed characteristics or features of family types"
+      },
+      {
+        "commandWord": "Assess",
+        "instruction": "Weigh up advantages and disadvantages, give a balanced conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two functions of the family in society. [4 marks]",
+      "marks": 4,
+      "answer": "One function is socialization because the family teaches children the norms, values and culture of society, helping them learn acceptable behavior. Another function is economic support because family members provide financial assistance and share resources, ensuring basic needs like food, shelter and clothing are met.",
+      "markBreakdown": [
+        "Mark 1: Identifies socialization as a function",
+        "Mark 2: Explains how family socializes children into society's norms and values",
+        "Mark 3: Identifies economic support as a function",
+        "Mark 4: Explains how family provides financial assistance and resources"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse family with household - family is based on kinship ties, household is about living arrangements",
+      "Students often write 'extended family lives together' - clarify that extended family can live separately but maintain close ties",
+      "Don't assume nuclear family is always better - acknowledge cultural variations like joint families in Pakistan",
+      "Never say arranged marriage is 'forced' - distinguish between arranged (family involvement) and forced (no consent)",
+      "Students mix up patriarchal (male authority) with patrilineal (descent through father's line)"
+    ],
+    "examinerTips": [
+      "Family appears in every Paper 2 exam - learn all family types thoroughly",
+      "Use Pakistani examples like joint family systems in rural Punjab for cultural context",
+      "Always distinguish between family structure (who belongs) and family functions (what it does)",
+      "Remember that family forms vary across cultures - avoid Western bias in answers"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Family tree diagram showing nuclear family (parents + children) at center, with extended family members (grandparents, aunts, uncles, cousins) branching outward to illustrate kinship relationships and family structure"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:14:10.815Z",
+  "updated_at": "2026-04-06T04:14:10.815Z"
+}

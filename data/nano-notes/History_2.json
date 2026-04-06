@@ -1,0 +1,89 @@
+{
+  "subject": "History",
+  "subject_code": "2147",
+  "level": "O Level",
+  "theme": "Section 1: Core Content",
+  "chapter_id": "2",
+  "chapter_name": "To what extent was the League of Nations a success?",
+  "note_data": {
+    "title": "To what extent was the League of Nations a success?",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The League of Nations was established in 1920 to **maintain world peace** and prevent future wars through collective security",
+      "The League successfully **resolved disputes** in the 1920s including the Aaland Islands (1921) and Bulgaria-Greece (1925) through arbitration",
+      "The **mandate system** allowed the League to supervise former German and Ottoman territories, preparing them for independence",
+      "The League's **humanitarian work** was highly successful, including refugee assistance, health improvements, and combating slavery",
+      "Major powers' **absence weakened** the League - USA never joined, USSR excluded until 1934, Germany excluded until 1926",
+      "The League **failed to prevent aggression** in the 1930s including Japan's invasion of Manchuria (1931) and Italy's invasion of Abyssinia (1935)",
+      "**Economic sanctions** proved ineffective as they required unanimous agreement and major trading nations often refused to participate",
+      "The League lacked **military force** of its own and depended entirely on member nations to provide troops for enforcement",
+      "**Structural weaknesses** included the need for unanimous decisions in the Council and Assembly, making quick action impossible"
+    ],
+    "definitions": [
+      {
+        "term": "Collective Security",
+        "definition": "The principle that an attack on one League member would be treated as an attack on all members, who would act together to stop aggression"
+      },
+      {
+        "term": "Mandate System",
+        "definition": "A system where the League of Nations supervised former German and Ottoman territories through mandatory powers until they were ready for independence"
+      },
+      {
+        "term": "Economic Sanctions",
+        "definition": "Trade restrictions and financial penalties imposed by League members against aggressive nations to force them to withdraw"
+      },
+      {
+        "term": "Arbitration",
+        "definition": "A peaceful method of settling disputes where both sides agree to accept the League's decision"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "To what extent",
+        "instruction": "Argue both sides with evidence, then reach a balanced judgement about how far the statement is true"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why the League of Nations failed to stop Japanese aggression in Manchuria. [6 marks]",
+      "marks": 6,
+      "answer": "The League failed to stop Japanese aggression in Manchuria because it lacked military power of its own and had to rely on member nations to provide forces, which they were unwilling to do for a distant conflict. Economic sanctions were ineffective because the USA, not a League member, continued trading with Japan, undermining the boycott. The League's slow decision-making process meant that by the time the Lytton Commission reported in 1932, Japan had already established the puppet state of Manchukuo. Additionally, European powers were more concerned with the economic depression at home than with events in Asia, so they were reluctant to take strong action that might harm their own recovery.",
+      "markBreakdown": [
+        "Mark 1: League lacked military force",
+        "Mark 2: USA continued trading",
+        "Mark 3: Slow decision-making process",
+        "Mark 4: European powers focused on Depression",
+        "Mark 5: Development of first point",
+        "Mark 6: Development of second point"
+      ]
+    },
+    "commonMistakes": [
+      "Never say the League 'disbanded in 1939' — it continued until 1946 when it was replaced by the United Nations",
+      "Students often confuse the League's humanitarian successes with its peacekeeping failures — be clear which aspect you're discussing",
+      "Don't blame the League's failure entirely on the absence of major powers — it had structural problems even with its existing members",
+      "Avoid saying sanctions 'never worked' — they were successful in minor disputes like Bulgaria-Greece but failed against major powers",
+      "Students often forget that the League had some successes in the 1920s — don't focus only on 1930s failures"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 — learn both successes and failures with specific examples",
+      "Always distinguish between the League's different functions: peacekeeping, humanitarian work, and mandates",
+      "Use specific dates and examples — Manchuria 1931, Abyssinia 1935, Aaland Islands 1921",
+      "For 'to what extent' questions, structure your answer: successes, failures, then balanced conclusion"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Timeline diagram showing League successes (1920s) and failures (1930s) with specific events marked to demonstrate the decline from effective peacekeeping to inability to stop aggression"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:02:19.623Z",
+  "updated_at": "2026-04-06T04:02:19.623Z"
+}

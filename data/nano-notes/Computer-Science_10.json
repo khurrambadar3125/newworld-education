@@ -1,0 +1,101 @@
+{
+  "subject": "Computer Science",
+  "subject_code": "2210",
+  "level": "O Level",
+  "theme": "Paper 2: Algorithms and Programming",
+  "chapter_id": "10",
+  "chapter_name": "Boolean logic",
+  "note_data": {
+    "title": "Boolean logic",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Logic gates** are electronic circuits that process binary inputs to produce a single binary output",
+      "**NOT gate** produces output 1 when input is 0, and output 0 when input is 1 (inverter)",
+      "**AND gate** produces output 1 only when all inputs are 1, otherwise output is 0",
+      "**OR gate** produces output 1 when at least one input is 1, output is 0 only when all inputs are 0",
+      "**NAND gate** produces the opposite output of an AND gate (NOT AND)",
+      "**NOR gate** produces the opposite output of an OR gate (NOT OR)",
+      "**XOR gate** produces output 1 when inputs are different, output 0 when inputs are the same",
+      "**Truth tables** show all possible input combinations and their corresponding outputs for logic gates",
+      "**Logic expressions** use operators AND (.), OR (+), and NOT (bar over variable) to represent Boolean operations",
+      "Problem statements can be converted to logic expressions by identifying conditions that must be true"
+    ],
+    "definitions": [
+      {
+        "term": "Logic gate",
+        "definition": "An electronic circuit that performs a logical operation on one or more binary inputs to produce a single binary output"
+      },
+      {
+        "term": "Truth table",
+        "definition": "A table showing all possible combinations of inputs to a logic gate or circuit and the corresponding outputs"
+      },
+      {
+        "term": "Boolean expression",
+        "definition": "A mathematical expression using Boolean operators (AND, OR, NOT) and variables that can only have values 0 or 1"
+      },
+      {
+        "term": "NAND gate",
+        "definition": "A logic gate that produces the inverted output of an AND gate, giving output 0 only when all inputs are 1"
+      },
+      {
+        "term": "XOR gate",
+        "definition": "A logic gate that produces output 1 when the inputs are different and output 0 when the inputs are the same"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the gate name or output value directly. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the gate function + reason using 'because' or 'this produces'"
+      },
+      {
+        "commandWord": "Complete",
+        "instruction": "Fill in all missing values in truth table systematically"
+      },
+      {
+        "commandWord": "Draw",
+        "instruction": "Draw correct logic gate symbol with inputs and outputs clearly labelled"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Complete the truth table for the logic expression: A AND (B OR NOT C)\n\n| A | B | C | Output |\n|---|---|---|--------|\n| 0 | 0 | 0 |        |\n| 0 | 0 | 1 |        |\n| 0 | 1 | 0 |        |\n| 0 | 1 | 1 |        |\n| 1 | 0 | 0 |        |\n| 1 | 0 | 1 |        |\n| 1 | 1 | 0 |        |\n| 1 | 1 | 1 |        |",
+      "marks": 4,
+      "answer": "| A | B | C | Output |\n|---|---|---|--------|\n| 0 | 0 | 0 |   0    |\n| 0 | 0 | 1 |   0    |\n| 0 | 1 | 0 |   0    |\n| 0 | 1 | 1 |   0    |\n| 1 | 0 | 0 |   1    |\n| 1 | 0 | 1 |   0    |\n| 1 | 1 | 0 |   1    |\n| 1 | 1 | 1 |   1    |",
+      "markBreakdown": [
+        "Mark 1: Correctly identifies NOT C values",
+        "Mark 2: Correctly calculates B OR NOT C",
+        "Mark 3: Correctly applies AND operation with A",
+        "Mark 4: All 8 output values correct"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse NAND with AND — NAND gives opposite output to AND gate",
+      "Students often mix up XOR and OR — XOR gives 0 when both inputs are the same",
+      "Never write logic expressions using words — always use symbols: . for AND, + for OR, bar for NOT",
+      "Students frequently forget to work step by step in complex expressions — always evaluate brackets first",
+      "Never draw logic gate symbols incorrectly — learn the exact shapes for each gate type"
+    ],
+    "examinerTips": [
+      "Boolean logic appears in every Paper 2 exam, usually worth 8-12 marks",
+      "Always show working when completing truth tables for partial credit",
+      "Draw logic gate symbols neatly with clear input and output labels",
+      "Check your truth table has 2^n rows where n is the number of input variables"
+    ],
+    "formulas": [
+      "Number of rows in truth table = 2^n (where n = number of inputs)",
+      "AND: A.B or A∧B",
+      "OR: A+B or A∨B",
+      "NOT: Ā or ¬A"
+    ],
+    "keyDiagramDescription": "Logic gate symbols showing NOT (triangle with circle), AND (D-shaped), OR (curved), NAND (AND with circle), NOR (OR with circle), XOR (OR with curved inputs) with input/output lines clearly marked"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:46:54.420Z",
+  "updated_at": "2026-04-06T03:46:54.420Z"
+}

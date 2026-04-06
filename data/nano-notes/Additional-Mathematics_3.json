@@ -1,0 +1,93 @@
+{
+  "subject": "Additional Mathematics",
+  "subject_code": "4037",
+  "level": "O Level",
+  "theme": "Pure Mathematics",
+  "chapter_id": "3",
+  "chapter_name": "Coordinate Geometry",
+  "note_data": {
+    "title": "Coordinate Geometry",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **gradient** of a straight line passing through points (x₁, y₁) and (x₂, y₂) is m = (y₂ - y₁)/(x₂ - x₁)",
+      "The equation of a straight line is **y = mx + c** where m is gradient and c is y-intercept",
+      "**Parallel lines** have equal gradients: m₁ = m₂",
+      "**Perpendicular lines** have gradients where m₁ × m₂ = -1",
+      "The **distance** between two points (x₁, y₁) and (x₂, y₂) is d = √[(x₂ - x₁)² + (y₂ - y₁)²]",
+      "The **midpoint** of a line segment joining (x₁, y₁) and (x₂, y₂) is ((x₁ + x₂)/2, (y₁ + y₂)/2)",
+      "The general equation of a **circle** with centre (a, b) and radius r is (x - a)² + (y - b)² = r²",
+      "A **tangent to a circle** at any point is perpendicular to the radius at that point",
+      "The equation **x² + y² + 2gx + 2fy + c = 0** represents a circle with centre (-g, -f) and radius √(g² + f² - c)"
+    ],
+    "definitions": [
+      {
+        "term": "Gradient",
+        "definition": "The measure of steepness of a line, calculated as the ratio of vertical change to horizontal change"
+      },
+      {
+        "term": "Tangent",
+        "definition": "A straight line that touches a circle at exactly one point"
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "Two lines that intersect at right angles (90°)"
+      },
+      {
+        "term": "Radius",
+        "definition": "The distance from the centre of a circle to any point on its circumference"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Find",
+        "instruction": "Calculate the exact value using appropriate formula and show working clearly"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Prove the given result by substituting values and demonstrating the equality"
+      },
+      {
+        "commandWord": "Determine",
+        "instruction": "Find the answer through calculation or logical reasoning with full working"
+      }
+    ],
+    "modelAnswer": {
+      "question": "The line y = 2x + 3 is perpendicular to line L at point P(1, 5). Find the equation of line L.",
+      "marks": 3,
+      "answer": "Gradient of given line = 2. Since lines are perpendicular, gradient of L × 2 = -1. Therefore gradient of L = -1/2. Using y - y₁ = m(x - x₁): y - 5 = -1/2(x - 1). Simplifying: y = -1/2x + 9/2",
+      "markBreakdown": [
+        "Mark 1: Gradient of L = -1/2",
+        "Mark 2: Substituting point P(1, 5) into equation",
+        "Mark 3: Correct final equation y = -1/2x + 9/2"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse perpendicular condition m₁ × m₂ = -1 with parallel condition m₁ = m₂",
+      "Students often forget to use the distance formula correctly - always square before adding under the square root",
+      "When expanding circle equations, students miss the factor of 2 in 2gx and 2fy terms",
+      "Never substitute coordinates incorrectly - always check which is x-coordinate and which is y-coordinate",
+      "Students often forget that radius must be positive when finding circle equations"
+    ],
+    "examinerTips": [
+      "Coordinate geometry appears in every Paper 2 - usually worth 8-12 marks total",
+      "Always draw a clear diagram showing points, lines and circles with proper labels",
+      "Check your answer by substituting coordinates back into your equation",
+      "Use exact values (fractions/surds) unless specifically asked to round"
+    ],
+    "formulas": [
+      "Gradient: m = (y₂ - y₁)/(x₂ - x₁)",
+      "Distance: d = √[(x₂ - x₁)² + (y₂ - y₁)²]",
+      "Midpoint: ((x₁ + x₂)/2, (y₁ + y₂)/2)",
+      "Line equation: y - y₁ = m(x - x₁)",
+      "Circle: (x - a)² + (y - b)² = r²",
+      "General circle: x² + y² + 2gx + 2fy + c = 0"
+    ],
+    "keyDiagramDescription": "Coordinate plane showing a circle with centre marked, radius drawn, and a tangent line touching at one point with the radius perpendicular to the tangent at point of contact"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:16:03.399Z",
+  "updated_at": "2026-04-06T04:16:03.399Z"
+}

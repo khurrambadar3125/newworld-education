@@ -1,0 +1,83 @@
+{
+  "subject": "Urdu",
+  "subject_code": "3247",
+  "level": "O Level",
+  "theme": "Paper 2: Composition",
+  "chapter_id": "P2.2",
+  "chapter_name": "Letter Writing (خط نگاری)",
+  "note_data": {
+    "title": "Letter Writing (خط نگاری)",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Formal letter structure** must include: date, address, salutation, body paragraphs, closing, and signature",
+      "**Informal letter format** requires: date, dear + name, conversational tone, personal closing like 'your loving friend'",
+      "**Business letter language** should be polite, clear, and use formal vocabulary like 'آپ کا خط ملا' (received your letter)",
+      "**Complaint letters** must state the problem clearly, explain the impact, and request specific action",
+      "**Application letters** need to mention the position, relevant qualifications, and express enthusiasm",
+      "**Invitation letters** should include event details: date, time, venue, occasion, and RSVP request",
+      "**Letter to editor** format requires newspaper name, date, subject line, and formal closing 'شکریہ' (thank you)",
+      "**Personal letters** can include family news, health inquiries, and use of affectionate terms like 'محترم' (respected)"
+    ],
+    "definitions": [
+      {
+        "term": "خط نگاری (Khat Nigari)",
+        "definition": "The art of letter writing that follows specific formats and conventions for different types of correspondence"
+      },
+      {
+        "term": "سلام (Salaam)",
+        "definition": "Formal greeting used at the beginning of letters, equivalent to 'Dear Sir/Madam'"
+      },
+      {
+        "term": "خط کا اختتام (Khat ka Ikhtitam)",
+        "definition": "Letter closing that varies by formality level - from 'آپ کا فرمانبردار' (your obedient) for formal to 'محبت سے' (with love) for informal"
+      },
+      {
+        "term": "عرضی (Arzi)",
+        "definition": "A formal application or petition letter typically written to authorities or institutions"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Write a letter",
+        "instruction": "Follow the exact format for the letter type specified. Include all required elements: date, address, greeting, body, closing."
+      },
+      {
+        "commandWord": "Draft",
+        "instruction": "Create a complete letter with proper Urdu expressions and maintain consistent tone throughout"
+      }
+    ],
+    "modelAnswer": {
+      "question": "اپنے دوست کو عید کی دعوت کا خط لکھیں۔ (Write a letter to your friend inviting him for Eid celebration)",
+      "marks": 15,
+      "answer": "کراچی\n15 اپریل 2024\n\nعزیز دوست احمد،\nالسلام علیکم\n\nامید ہے آپ خیریت سے ہوں گے۔ عید الفطر کا مبارک موقع قریب آ رہا ہے اور میں آپ کو اپنے گھر عید منانے کی دعوت دینا چاہتا ہوں۔\n\nعید کا دن ہمارے یہاں بہت خوشی سے منایا جائے گا۔ صبح نماز عید کے بعد دوپہر میں کھانا ہوگا۔ آپ اپنے اہل خانہ کے ساتھ تشریف لائیں۔\n\nبرائے کرم 20 اپریل تک بتا دیں کہ آپ آ سکیں گے یا نہیں تاکہ تیاری مکمل ہو سکے۔\n\nآپ کے جواب کا انتظار ہے۔\n\nآپ کا دوست\nعلی",
+      "markBreakdown": [
+        "Mark 1-2: Correct format with date and address",
+        "Mark 3-4: Appropriate greeting and closing",
+        "Mark 5-10: Content - invitation details, event information",
+        "Mark 11-13: Language accuracy and vocabulary",
+        "Mark 14-15: Overall coherence and cultural appropriateness"
+      ]
+    },
+    "commonMistakes": [
+      "Never mix formal and informal language in the same letter - maintain consistent tone throughout",
+      "Students often forget to include the date and address which loses format marks",
+      "Writing English words in Urdu letters instead of proper Urdu equivalents",
+      "Using wrong closing phrases - 'آپ کا فرمانبردار' for informal letters to friends is inappropriate",
+      "Not providing specific details in invitation letters like date, time, and venue information"
+    ],
+    "examinerTips": [
+      "Letter writing appears in every Paper 2 and carries 15 marks - practice different types regularly",
+      "Always read the question carefully to identify if formal or informal tone is required",
+      "Use appropriate Urdu phrases and expressions rather than direct translations from English",
+      "Pakistani cultural context should be reflected in examples and situations mentioned"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Standard letter format diagram showing placement of: date (top right), address (sender's), salutation (left aligned), body paragraphs (justified), closing phrase (right aligned), and signature (bottom right)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:08:57.044Z",
+  "updated_at": "2026-04-06T04:08:57.044Z"
+}

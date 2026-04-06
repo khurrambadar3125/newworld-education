@@ -1,0 +1,96 @@
+{
+  "subject": "Commerce",
+  "subject_code": "7100",
+  "level": "O Level",
+  "theme": "Supporting Commerce",
+  "chapter_id": "5",
+  "chapter_name": "Aids to Trade",
+  "note_data": {
+    "title": "Aids to Trade",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Aids to trade** are services that support and facilitate the exchange of goods and services between producers and consumers",
+      "**Advertising** informs potential customers about products and persuades them to purchase goods or services",
+      "**Banking** provides financial services including accepting deposits, lending money, and facilitating payments between traders",
+      "**Insurance** provides protection against financial loss from risks such as fire, theft, accident, or death",
+      "**Transport** moves goods from producers to consumers across different locations",
+      "**Communication** enables traders to exchange information about prices, quantities, and delivery arrangements",
+      "**Warehousing** provides storage facilities for goods between production and sale",
+      "**Commercial banks** offer services like current accounts, overdrafts, and letters of credit to facilitate trade"
+    ],
+    "definitions": [
+      {
+        "term": "Aids to Trade",
+        "definition": "Services that support and facilitate the exchange of goods and services between producers and consumers"
+      },
+      {
+        "term": "Advertising",
+        "definition": "A form of communication used to inform and persuade potential customers about products or services"
+      },
+      {
+        "term": "Insurance",
+        "definition": "A contract that provides financial protection against specified risks in exchange for payment of premiums"
+      },
+      {
+        "term": "Commercial Bank",
+        "definition": "A financial institution that accepts deposits and provides loans and other financial services to businesses and individuals"
+      },
+      {
+        "term": "Warehouse",
+        "definition": "A large building used for storing goods before they are distributed to retailers or customers"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Identify",
+        "instruction": "Name or select the correct answer from your knowledge"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics or features in detail"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain three ways banks aid trade. [6 marks]",
+      "marks": 6,
+      "answer": "Banks provide loans to businesses because this gives traders the capital needed to purchase stock and equipment. Banks offer current accounts because this allows businesses to make and receive payments safely. Banks provide foreign exchange services because this enables traders to convert currencies when trading internationally.",
+      "markBreakdown": [
+        "Mark 1: Loans identification",
+        "Mark 2: Loans explanation",
+        "Mark 3: Current accounts identification",
+        "Mark 4: Current accounts explanation",
+        "Mark 5: Foreign exchange identification",
+        "Mark 6: Foreign exchange explanation"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'banks give money' — always say 'banks provide loans' or 'banks lend money'",
+      "Students often confuse insurance with assurance — insurance covers uncertain events, assurance covers certain events like death",
+      "Don't just list aids to trade — always explain HOW they help trade",
+      "Never say advertising 'makes people buy' — say it 'informs and persuades customers'",
+      "Students forget that warehousing helps with timing - storing goods until needed"
+    ],
+    "examinerTips": [
+      "Aids to trade appears in almost every Paper 1 and Paper 2 examination",
+      "Always give specific examples when explaining how each aid helps trade",
+      "For banking questions, mention at least 3 services: loans, current accounts, foreign exchange",
+      "Insurance questions often ask for types - remember life, fire, motor, marine insurance"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Flow diagram showing Producer → Aids to Trade (Advertising, Banking, Insurance, Transport, Communication, Warehousing) → Consumer, with arrows showing how each aid facilitates the flow of goods and services"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:12:13.463Z",
+  "updated_at": "2026-04-06T04:12:13.463Z"
+}

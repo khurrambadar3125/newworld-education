@@ -1,0 +1,98 @@
+{
+  "subject": "Computer Science",
+  "subject_code": "2210",
+  "level": "O Level",
+  "theme": "Paper 1: Computer Systems",
+  "chapter_id": "6",
+  "chapter_name": "Automated and emerging technologies",
+  "note_data": {
+    "title": "Automated and emerging technologies",
+    "readTime": "8 min",
+    "keyPoints": [
+      "An **automated system** uses sensors to input data, a processor to make decisions, and actuators to produce outputs without human intervention",
+      "**Feedback loops** allow automated systems to monitor their outputs and make adjustments using sensors to detect changes in the environment",
+      "**Robots** are programmable machines that can perform tasks automatically, consisting of sensors, processors, actuators, and end effectors",
+      "Robots are used in **manufacturing** for tasks like welding and assembly because they provide consistent quality and can work continuously",
+      "**Artificial Intelligence (AI)** enables machines to simulate human intelligence through machine learning, pattern recognition, and decision making",
+      "**Machine learning** allows systems to improve performance by learning from data without being explicitly programmed for every scenario",
+      "**Expert systems** use knowledge bases and inference engines to solve problems in specific domains like medical diagnosis",
+      "**Virtual reality** creates immersive 3D environments using headsets and motion sensors for training and entertainment applications",
+      "**Autonomous vehicles** use GPS, cameras, and sensors to navigate without human control, processing real-time data to make driving decisions"
+    ],
+    "definitions": [
+      {
+        "term": "Automated system",
+        "definition": "A system that uses sensors to collect data, processors to make decisions, and actuators to produce outputs without human intervention"
+      },
+      {
+        "term": "Artificial Intelligence",
+        "definition": "The simulation of human intelligence by machines through learning, reasoning, and problem-solving capabilities"
+      },
+      {
+        "term": "Robot",
+        "definition": "A programmable machine capable of carrying out actions automatically using sensors, processors, and actuators"
+      },
+      {
+        "term": "Machine learning",
+        "definition": "A method of artificial intelligence where systems automatically learn and improve from experience without being explicitly programmed"
+      },
+      {
+        "term": "Expert system",
+        "definition": "An AI system that uses a knowledge base and inference engine to solve problems in a specific domain like a human expert"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed explanation of how the system works including inputs, processes, and outputs"
+      },
+      {
+        "commandWord": "Discuss",
+        "instruction": "Give advantages AND disadvantages with examples for each point"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how an automated car washing system works. [6]",
+      "marks": 6,
+      "answer": "Sensors detect when a car enters the washing bay and measure the car's dimensions. The processor receives input data from the sensors and controls the sequence of operations. Actuators control the movement of brushes and spray nozzles. Water jets and detergent are applied automatically based on the car's size. The system uses feedback from sensors to adjust pressure and timing. The car is dried using automated blowers before the exit barrier opens.",
+      "markBreakdown": [
+        "Mark 1: Sensors detect car entry/dimensions",
+        "Mark 2: Processor controls operations sequence",
+        "Mark 3: Actuators control brushes/nozzles",
+        "Mark 4: Automatic application of water/detergent",
+        "Mark 5: Feedback adjusts pressure/timing",
+        "Mark 6: Automated drying and exit"
+      ]
+    },
+    "commonMistakes": [
+      "Never say robots 'think' — always say they 'process data according to programmed instructions'",
+      "Students often confuse automation with robotics — automation doesn't always require physical movement",
+      "Don't say AI systems 'understand' — they 'recognize patterns' or 'match data'",
+      "Never describe robots as having emotions or consciousness — they follow programmed algorithms",
+      "Students forget to mention feedback loops when explaining how automated systems self-regulate"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 with 6-8 mark questions",
+      "Always mention sensors, processors, and actuators when describing automated systems",
+      "Use real-world examples from Pakistani context like automated toll systems on motorways",
+      "For AI questions, focus on data processing rather than human-like thinking",
+      "Draw block diagrams showing input → process → output for automated systems"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Block diagram showing: Sensors (input) → Processor (decision making) → Actuators (output) → Environment, with feedback loop from environment back to sensors"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:45:24.264Z",
+  "updated_at": "2026-04-06T03:45:24.264Z"
+}

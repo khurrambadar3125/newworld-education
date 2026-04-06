@@ -1,0 +1,95 @@
+{
+  "subject": "Additional Mathematics",
+  "subject_code": "4037",
+  "level": "O Level",
+  "theme": "Applied Mathematics",
+  "chapter_id": "7",
+  "chapter_name": "Kinematics",
+  "note_data": {
+    "title": "Kinematics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Displacement** is the distance moved in a specified direction from a fixed point",
+      "**Velocity** is the rate of change of displacement with respect to time",
+      "**Acceleration** is the rate of change of velocity with respect to time",
+      "Use **v² = u² + 2as** when time is not given or required in the problem",
+      "Draw a **velocity-time graph** to visualize motion and calculate displacement using area under curve",
+      "For **projectile motion**, treat horizontal and vertical components separately using appropriate equations",
+      "When object reaches maximum height in projectile motion, **vertical velocity = 0**",
+      "**Gradient of displacement-time graph** gives velocity at that instant",
+      "**Gradient of velocity-time graph** gives acceleration at that instant"
+    ],
+    "definitions": [
+      {
+        "term": "Displacement",
+        "definition": "The distance moved in a specified direction from a fixed point"
+      },
+      {
+        "term": "Velocity",
+        "definition": "The rate of change of displacement with respect to time"
+      },
+      {
+        "term": "Acceleration",
+        "definition": "The rate of change of velocity with respect to time"
+      },
+      {
+        "term": "Projectile motion",
+        "definition": "Motion of an object under the influence of gravity alone"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working clearly. State the formula, substitute values, give final answer with units."
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Use appropriate kinematic equations and show complete method"
+      },
+      {
+        "commandWord": "Sketch",
+        "instruction": "Draw accurate graph with labeled axes and key values marked"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A cricket ball is thrown vertically upward from ground level in Lahore with initial velocity 20 m/s. Taking g = 10 m/s², find the maximum height reached.",
+      "marks": 3,
+      "answer": "At maximum height, v = 0. Using v² = u² + 2as where u = 20 m/s, v = 0, a = -10 m/s². 0² = 20² + 2(-10)s. 0 = 400 - 20s. s = 20 m. Maximum height = 20 m.",
+      "markBreakdown": [
+        "Mark 1: Correct identification that v = 0 at maximum height",
+        "Mark 2: Correct substitution into v² = u² + 2as with negative acceleration",
+        "Mark 3: Correct calculation giving s = 20 m"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse distance with displacement — displacement has direction, distance does not",
+      "Students often forget to use negative acceleration when object moves against gravity",
+      "Always check if acceleration is constant before using kinematic equations",
+      "Never use average velocity formula when acceleration is not zero",
+      "Students often confuse speed with velocity — velocity includes direction"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 2 examination",
+      "Always draw a diagram showing directions and label all given information",
+      "Check units are consistent throughout your calculation",
+      "For projectile motion questions, always separate into horizontal and vertical components"
+    ],
+    "formulas": [
+      "v = u + at",
+      "s = ut + ½at²",
+      "v² = u² + 2as",
+      "s = ½(u + v)t"
+    ],
+    "keyDiagramDescription": "Velocity-time graph showing straight line for constant acceleration, with area under curve representing displacement and gradient representing acceleration"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:17:23.021Z",
+  "updated_at": "2026-04-06T04:17:23.021Z"
+}

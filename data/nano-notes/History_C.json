@@ -1,0 +1,98 @@
+{
+  "subject": "History",
+  "subject_code": "2147",
+  "level": "O Level",
+  "theme": "Section 2: Depth Studies",
+  "chapter_id": "C",
+  "chapter_name": "Russia, 1905-41",
+  "note_data": {
+    "title": "Russia, 1905-41",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **1905 Revolution** was caused by Russia's defeat in the Russo-Japanese War (1904-05) and Bloody Sunday massacre which led to strikes, mutinies and peasant unrest",
+      "Tsar Nicholas II issued the **October Manifesto** in 1905 promising a constitutional monarchy and an elected parliament (Duma) to end the revolution",
+      "**World War One** caused massive military defeats, food shortages, inflation and loss of confidence in Tsar Nicholas II, leading to his abdication in February 1917",
+      "The **Provisional Government** failed because it continued fighting in WWI, delayed land reforms, and could not solve Russia's economic problems",
+      "**Lenin's April Theses** promised 'Peace, Land and Bread' and 'All Power to the Soviets' which gained Bolshevik support among workers, soldiers and peasants",
+      "The **October Revolution 1917** saw Bolsheviks seize key points in Petrograd including the Winter Palace, overthrowing the Provisional Government",
+      "**War Communism** (1918-21) involved grain requisitioning, nationalization of industry, and ban on private trade to support the Red Army in the Civil War",
+      "The **New Economic Policy** (NEP) 1921-28 allowed private trade and small businesses while keeping state control of heavy industry and banking",
+      "**Stalin's Five-Year Plans** from 1928 aimed to rapidly industrialize the USSR through state planning and setting production targets",
+      "**Collectivization** forced peasants into collective farms (kolkhoz) leading to the Ukrainian famine of 1932-33 and elimination of kulaks as a class"
+    ],
+    "definitions": [
+      {
+        "term": "Bolsheviks",
+        "definition": "Lenin's revolutionary party that believed in a small group of professional revolutionaries leading the proletariat to overthrow capitalism and establish a socialist state"
+      },
+      {
+        "term": "Soviet",
+        "definition": "Workers' and soldiers' councils that emerged in 1905 and 1917 as alternative centers of power to the Tsarist government"
+      },
+      {
+        "term": "Kulaks",
+        "definition": "Wealthy peasants who owned land and employed other peasants, targeted by Stalin for elimination during collectivization"
+      },
+      {
+        "term": "War Communism",
+        "definition": "Emergency economic policy 1918-21 involving state control of production, grain requisitioning from peasants, and abolition of private trade"
+      },
+      {
+        "term": "Collectivization",
+        "definition": "Stalin's policy of combining individual peasant farms into large collective farms controlled by the state to increase agricultural efficiency and feed industrial workers"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed factual account - what happened, when, where, who was involved"
+      },
+      {
+        "commandWord": "Why",
+        "instruction": "Give 2-3 reasons with explanation. Start each reason with 'One reason was...' or 'Another reason was...'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Why did the Provisional Government fail? [6 marks]",
+      "marks": 6,
+      "answer": "One reason the Provisional Government failed was because it continued Russia's involvement in World War One. This was unpopular because Russian soldiers were deserting, the army lacked supplies, and the people wanted peace as promised by the Bolsheviks. Another reason was that it failed to redistribute land to the peasants. The government delayed land reforms until after the war, but peasants wanted immediate action and began seizing land illegally. A third reason was economic problems. The government could not control inflation or food shortages in the cities, leading to strikes and unrest that weakened its authority.",
+      "markBreakdown": [
+        "Mark 1: Continued involvement in WWI",
+        "Mark 2: Explanation of why this caused failure",
+        "Mark 3: Failed to redistribute land",
+        "Mark 4: Explanation about peasant demands",
+        "Mark 5: Economic problems",
+        "Mark 6: Explanation of impact of economic crisis"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse the February Revolution (abdication of Tsar) with the October Revolution (Bolshevik takeover)",
+      "Students often say Lenin caused the 1905 Revolution - he was in exile and had little influence at this time",
+      "Don't say Stalin immediately took power after Lenin's death - there was a power struggle from 1924-1929",
+      "Avoid saying the NEP was communist - it actually allowed private enterprise and was a retreat from pure communism",
+      "Never describe the Provisional Government as elected - it was appointed by the Duma and lacked democratic legitimacy"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2 - especially causes of 1917 revolutions",
+      "Always distinguish between immediate and long-term causes when explaining revolutions",
+      "Use specific examples and dates - examiners reward precise factual knowledge",
+      "For Stalin's policies, always mention both achievements and costs/failures"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Timeline showing: 1905 Revolution → October Manifesto → WWI → February 1917 Revolution → Provisional Government → October 1917 Revolution → Civil War → War Communism → NEP → Stalin's Five-Year Plans and Collectivization"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:05:19.646Z",
+  "updated_at": "2026-04-06T04:05:19.646Z"
+}

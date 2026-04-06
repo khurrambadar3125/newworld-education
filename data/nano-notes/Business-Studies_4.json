@@ -1,0 +1,100 @@
+{
+  "subject": "Business Studies",
+  "subject_code": "7115",
+  "level": "O Level",
+  "theme": "Business Operations",
+  "chapter_id": "4",
+  "chapter_name": "Operations Management",
+  "note_data": {
+    "title": "Operations Management",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Production** is the transformation of inputs (resources) into outputs (goods and services)",
+      "**Job production** produces one-off items to meet specific customer requirements, leading to high costs but unique products",
+      "**Batch production** produces groups of identical products, allowing economies of scale while maintaining some flexibility",
+      "**Flow production** produces large quantities of standardized products continuously, achieving lowest unit costs through specialization",
+      "**Productivity** measures output per worker per time period and can be increased through training, technology, or motivation",
+      "**Quality control** involves checking products after production to identify defects, while **quality assurance** prevents defects during production",
+      "**Lean production** eliminates waste through just-in-time delivery, reducing storage costs and improving cash flow",
+      "**Technology** in production reduces labor costs, improves accuracy, but requires high initial investment and may cause unemployment",
+      "Location decisions consider proximity to markets, raw materials, labor supply, and government incentives"
+    ],
+    "definitions": [
+      {
+        "term": "Production",
+        "definition": "The process of converting inputs (raw materials, labor, capital) into outputs (goods and services)"
+      },
+      {
+        "term": "Productivity",
+        "definition": "The output per worker in a given time period"
+      },
+      {
+        "term": "Quality control",
+        "definition": "The process of checking goods after production to ensure they meet the required standard"
+      },
+      {
+        "term": "Quality assurance",
+        "definition": "The process of ensuring quality standards are met during production to prevent defects"
+      },
+      {
+        "term": "Lean production",
+        "definition": "A production method that aims to minimize waste and maximize efficiency"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyze",
+        "instruction": "Examine the advantages AND disadvantages with detailed explanations"
+      },
+      {
+        "commandWord": "Recommend",
+        "instruction": "Give a clear choice with justification based on the business context"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two advantages of flow production for a textile manufacturer in Faisalabad. [6]",
+      "marks": 6,
+      "answer": "One advantage is lower unit costs. This is because fixed costs such as machinery and factory rent are spread over a large number of units, reducing the cost per item and increasing profit margins. Another advantage is consistent quality. This is because standardized processes and machinery ensure each product meets the same specification, reducing customer complaints and returns which protects the business reputation.",
+      "markBreakdown": [
+        "Mark 1: Lower unit costs identified",
+        "Mark 2: Explanation about spreading fixed costs",
+        "Mark 3: Development about profit margins",
+        "Mark 4: Consistent quality identified",
+        "Mark 5: Explanation about standardized processes",
+        "Mark 6: Development about reputation/returns"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'better quality' — always specify 'consistent quality' or 'improved quality control'",
+      "Students confuse quality control (checking after) with quality assurance (preventing during)",
+      "Don't just state 'lower costs' — specify 'lower unit costs' or 'lower average costs'",
+      "Avoid saying 'more profit' — say 'higher profit margins' or 'increased profitability'",
+      "Never write 'faster production' — write 'higher output' or 'increased productivity'"
+    ],
+    "examinerTips": [
+      "Operations Management appears in every Paper 1 and most Paper 2 exams",
+      "Always use business context when explaining production methods",
+      "Draw labeled diagrams for quality control vs quality assurance questions",
+      "Link production choices to business size and market type for full marks"
+    ],
+    "formulas": [
+      "Productivity = Output ÷ Number of workers",
+      "Productivity = Output ÷ Time taken"
+    ],
+    "keyDiagramDescription": "Quality control diagram showing inspection after production vs Quality assurance diagram showing checks during each stage of production"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:53:04.401Z",
+  "updated_at": "2026-04-06T03:53:04.401Z"
+}

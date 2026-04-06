@@ -1,0 +1,97 @@
+{
+  "subject": "Geography",
+  "subject_code": "2217",
+  "level": "O Level",
+  "theme": "Theme 3: Economic Development",
+  "chapter_id": "3.2",
+  "chapter_name": "Food Production",
+  "note_data": {
+    "title": "Food Production",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Subsistence farming** produces food mainly for the farmer's family with little surplus for sale",
+      "**Commercial farming** produces crops and livestock primarily for sale to make profit",
+      "**Intensive farming** uses high inputs of capital, labour or fertilizers per unit area to maximize yields",
+      "**Extensive farming** uses low inputs per unit area but covers large areas with lower yields per hectare",
+      "**Irrigation** is the artificial watering of crops essential in areas with low rainfall like Pakistan's Punjab",
+      "**Food security** exists when all people have access to sufficient, safe and nutritious food at all times",
+      "**Green Revolution** increased crop yields through high-yielding varieties, fertilizers and pesticides",
+      "**Cash crops** like cotton and sugarcane are grown specifically for sale rather than subsistence",
+      "Food shortages occur due to **drought, flooding, pests, diseases** and poor distribution systems"
+    ],
+    "definitions": [
+      {
+        "term": "Subsistence farming",
+        "definition": "A type of farming where food is produced mainly for the farmer's own family with little or no surplus for sale"
+      },
+      {
+        "term": "Commercial farming",
+        "definition": "A type of farming where crops and livestock are produced primarily for sale to make a profit"
+      },
+      {
+        "term": "Intensive farming",
+        "definition": "A farming system that uses high inputs of capital, labour, fertilizers or technology per unit area to achieve high yields"
+      },
+      {
+        "term": "Food security",
+        "definition": "When all people have physical and economic access to sufficient, safe and nutritious food to meet their dietary needs"
+      },
+      {
+        "term": "Cash crop",
+        "definition": "A crop grown specifically for sale rather than for the farmer's own consumption"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Say what you can see without explaining why"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between two farming types"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how physical factors affect food production in Pakistan. [6 marks]",
+      "marks": 6,
+      "answer": "Climate affects food production because Pakistan has monsoon rains from June-September which provide water for rice cultivation in Punjab. Temperature affects crops because wheat requires cool winters and warm summers which Pakistan's continental climate provides. Relief affects farming because flat plains like the Indus Valley are suitable for mechanized agriculture and irrigation. Soil fertility affects yields because alluvial soils deposited by rivers like the Indus are rich in nutrients needed for crop growth. Water supply affects production because irrigation from rivers like Chenab and Ravi allows farming in areas with low rainfall. Drainage affects farming because waterlogged soils in Sindh reduce crop yields and limit agricultural productivity.",
+      "markBreakdown": [
+        "Mark 1: Climate/monsoon explanation",
+        "Mark 2: Temperature/continental climate explanation",
+        "Mark 3: Relief/plains explanation",
+        "Mark 4: Soil/alluvial explanation",
+        "Mark 5: Water supply/irrigation explanation",
+        "Mark 6: Drainage/waterlogging explanation"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'good climate' — always specify temperature, rainfall amounts or seasonal patterns",
+      "Students often confuse intensive with commercial farming — intensive refers to inputs per area, commercial refers to purpose",
+      "Don't just list factors — always explain HOW each factor affects food production",
+      "Never say 'fertile soil' without explaining what makes it fertile (nutrients, organic matter, pH)",
+      "Avoid saying 'modern technology' — be specific about tractors, fertilizers, irrigation systems"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2 — learn Pakistan examples",
+      "Always use specific place names like Punjab, Sindh, Balochistan when giving examples",
+      "For 6-mark questions, aim for 3 factors with explanations rather than 6 simple points",
+      "Case study knowledge of farming in Pakistan earns extra marks"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Systems diagram showing inputs (seeds, fertilizers, labor, machinery), processes (plowing, planting, harvesting), outputs (crops, livestock products) and feedback loops in farming systems"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:59:24.203Z",
+  "updated_at": "2026-04-06T03:59:24.203Z"
+}

@@ -1,0 +1,90 @@
+{
+  "subject": "History",
+  "subject_code": "2147",
+  "level": "O Level",
+  "theme": "Section 1: Core Content",
+  "chapter_id": "1",
+  "chapter_name": "Was the Treaty of Versailles fair?",
+  "note_data": {
+    "title": "Was the Treaty of Versailles fair?",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **Treaty of Versailles** was signed on 28 June 1919 between Germany and the Allied Powers after World War I",
+      "**Article 231 (War Guilt Clause)** forced Germany to accept full responsibility for causing the war and all resulting damage",
+      "Germany's **military was severely restricted** - army limited to 100,000 men, no tanks, submarines or military aircraft allowed",
+      "**Territorial losses** included Alsace-Lorraine to France, Eupen-Malmédy to Belgium, and the Polish Corridor which separated East Prussia from Germany",
+      "**Reparations** of £6.6 billion were imposed on Germany to compensate for war damage, creating severe economic hardship",
+      "The **Rhineland was demilitarized** and occupied by Allied forces for 15 years as a buffer zone",
+      "**Wilson's Fourteen Points** promoted self-determination and a League of Nations, but many points were ignored in the final treaty",
+      "The treaty was considered **harsh by Germans** who called it a 'Diktat' (dictated peace) as they had no say in negotiations",
+      "**Allied disagreements** emerged between Wilson's idealism, Clemenceau's desire for revenge, and Lloyd George's pragmatic approach"
+    ],
+    "definitions": [
+      {
+        "term": "Treaty of Versailles",
+        "definition": "The peace settlement signed on 28 June 1919 that officially ended the war between Germany and the Allied Powers"
+      },
+      {
+        "term": "Article 231 (War Guilt Clause)",
+        "definition": "The clause that forced Germany to accept full responsibility for causing World War I and all resulting damage"
+      },
+      {
+        "term": "Reparations",
+        "definition": "Compensation payments Germany was forced to pay to the Allied Powers for war damage, set at £6.6 billion"
+      },
+      {
+        "term": "Fourteen Points",
+        "definition": "President Wilson's peace plan based on principles of self-determination, free trade, and establishing a League of Nations"
+      },
+      {
+        "term": "Diktat",
+        "definition": "German term meaning 'dictated peace' - their view that the treaty was imposed without their participation in negotiations"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "How far do you agree",
+        "instruction": "Give arguments for AND against, then reach a balanced conclusion with your own judgement"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why many Germans opposed the Treaty of Versailles. [6 marks]",
+      "marks": 6,
+      "answer": "Many Germans opposed the Treaty of Versailles because of the War Guilt Clause (Article 231) which forced Germany to accept full responsibility for the war, which they believed was unfair as other countries had also contributed to the outbreak. They also opposed it because of the harsh reparations of £6.6 billion which crippled the German economy and caused hyperinflation and unemployment. Additionally, Germans were angry about the severe military restrictions which limited their army to 100,000 men and banned tanks, submarines and aircraft, making Germany defenseless. Finally, they opposed the territorial losses including the Polish Corridor which separated East Prussia from the rest of Germany and put many Germans under foreign rule, violating the principle of self-determination.",
+      "markBreakdown": [
+        "Mark 1-2: War Guilt Clause and explanation",
+        "Mark 3-4: Reparations and economic impact",
+        "Mark 5-6: Military restrictions and territorial losses with explanations"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'the treaty caused World War II' — always say 'the treaty contributed to conditions that helped Hitler rise to power'",
+      "Students often confuse the amount of reparations — it was £6.6 billion, not £6.6 million",
+      "Don't just list treaty terms — always explain WHY they were seen as unfair or fair",
+      "Never say Germany was 'not allowed to join the League of Nations permanently' — they were initially excluded but joined in 1926",
+      "Students often forget that Wilson's Fourteen Points were largely ignored in the final treaty negotiations"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in both Paper 1 and Paper 2 questions",
+      "Always provide specific examples when discussing fairness - use actual treaty clauses and figures",
+      "For 'How far' questions, consider multiple perspectives - Allied, German, and neutral viewpoints",
+      "Remember that different Allied leaders had different aims which affected the treaty's terms"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Map showing territorial changes imposed by the Treaty of Versailles, including areas lost by Germany (Alsace-Lorraine, Polish Corridor, Saar Basin), demilitarized zones (Rhineland), and new nations created"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:01:51.261Z",
+  "updated_at": "2026-04-06T04:01:51.262Z"
+}

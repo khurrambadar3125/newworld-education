@@ -1,0 +1,92 @@
+{
+  "subject": "History",
+  "subject_code": "2147",
+  "level": "O Level",
+  "theme": "Section 1: Core Content",
+  "chapter_id": "5",
+  "chapter_name": "How effectively did the USA contain communism?",
+  "note_data": {
+    "title": "How effectively did the USA contain communism?",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Containment** was the US policy to stop the spread of communism without directly attacking existing communist states",
+      "The **Truman Doctrine** (1947) promised US support to countries threatened by communist takeover, starting with Greece and Turkey",
+      "The **Marshall Plan** (1947) provided economic aid to rebuild Western Europe and prevent communist influence through poverty",
+      "In **Korea (1950-53)**, containment was partially successful - South Korea remained non-communist but North Korea stayed communist, creating a divided country",
+      "The **Cuban Missile Crisis** (1962) showed containment's limitations - Cuba remained communist despite US opposition, but nuclear war was avoided",
+      "In **Vietnam (1964-75)**, containment failed completely - South Vietnam fell to communism despite massive US military involvement and over 58,000 American deaths",
+      "**NATO** (1949) successfully contained Soviet expansion in Europe through collective security",
+      "The **domino theory** suggested if one country fell to communism, neighboring countries would follow like falling dominoes",
+      "Containment was more successful in Europe than in Asia due to stronger economic recovery and clearer political divisions"
+    ],
+    "definitions": [
+      {
+        "term": "Containment",
+        "definition": "US foreign policy to prevent the spread of communism to new countries without directly attacking existing communist states"
+      },
+      {
+        "term": "Truman Doctrine",
+        "definition": "US policy (1947) promising military and economic aid to countries threatened by communist takeover"
+      },
+      {
+        "term": "Marshall Plan",
+        "definition": "US economic aid program (1947-51) providing $13 billion to rebuild Western Europe and prevent communist influence"
+      },
+      {
+        "term": "Domino Theory",
+        "definition": "US belief that if one country fell to communism, neighboring countries would quickly follow"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "How far",
+        "instruction": "Evaluate both sides - successes AND failures of containment with specific examples"
+      },
+      {
+        "commandWord": "Why",
+        "instruction": "Give reasons with explanations - link causes to consequences clearly"
+      }
+    ],
+    "modelAnswer": {
+      "question": "How far was the USA successful in containing communism in the 1950s and 1960s? [10 marks]",
+      "marks": 10,
+      "answer": "The USA had mixed success in containing communism. Successes included Korea where South Korea remained non-communist after the Korean War (1950-53), showing containment could work with military intervention. NATO (1949) successfully prevented Soviet expansion in Europe through collective security. The Marshall Plan rebuilt Western European economies, making them resistant to communist influence. However, containment also had major failures. Cuba became communist in 1959 and remained so despite US opposition and the Bay of Pigs invasion (1961). Most significantly, containment completely failed in Vietnam where South Vietnam fell to communism in 1975 despite massive US military involvement. The Berlin Wall (1961) also showed containment's limits in Europe. Overall, containment was more successful in Europe where economic recovery was strong, but failed in developing countries where poverty and nationalism made communist ideas more appealing.",
+      "markBreakdown": [
+        "Marks 1-2: Identifies successes like Korea, NATO",
+        "Marks 3-4: Explains why these were successful",
+        "Marks 5-6: Identifies failures like Cuba, Vietnam",
+        "Marks 7-8: Explains reasons for failures",
+        "Marks 9-10: Makes overall judgment with supporting evidence"
+      ]
+    },
+    "commonMistakes": [
+      "Never say containment 'completely failed' - it had both successes and failures",
+      "Students often confuse the Korean War outcome - it was a stalemate, not a clear victory",
+      "Don't just describe events - always explain how they show containment working or failing",
+      "Avoid saying the Cold War 'ended' in the 1960s - it continued until 1991",
+      "Never ignore the European successes when discussing containment effectiveness"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 - learn specific examples from different regions",
+      "Always evaluate BOTH successes and failures for 'How far' questions",
+      "Use specific dates and statistics (e.g., 58,000 US deaths in Vietnam) for higher marks",
+      "Link containment to other Cold War policies like the Marshall Plan and NATO"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Timeline showing major containment events: Truman Doctrine (1947) → Marshall Plan (1947) → NATO (1949) → Korean War (1950-53) → Cuban Revolution (1959) → Bay of Pigs (1961) → Cuban Missile Crisis (1962) → Vietnam War escalation (1964) → Fall of Saigon (1975)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:03:34.433Z",
+  "updated_at": "2026-04-06T04:03:34.433Z"
+}

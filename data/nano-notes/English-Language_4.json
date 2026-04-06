@@ -1,0 +1,81 @@
+{
+  "subject": "English Language",
+  "subject_code": "1123",
+  "level": "O Level",
+  "theme": "Part 1: Reading",
+  "chapter_id": "4",
+  "chapter_name": "Summary writing",
+  "note_data": {
+    "title": "Summary writing",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Read the passage carefully** to identify relevant ideas that answer the specific question asked",
+      "**Select only relevant material** - ignore examples, repetition, and irrelevant details that don't answer the question",
+      "**Use your own words** wherever possible - do not copy phrases directly from the original text",
+      "**Remodel sentences** by changing sentence structure, using synonyms, and combining ideas effectively",
+      "Write in **continuous prose** using proper paragraphs, not bullet points or note form",
+      "Maintain **logical sequence** and use connectives to link ideas coherently",
+      "**Stay within the word limit** (120-160 words) - going over loses marks automatically",
+      "**Write in third person** avoiding 'I think' or personal opinions - stick to facts from the passage",
+      "Include **all key points** from the passage that answer the question to maximize content marks"
+    ],
+    "definitions": [
+      {
+        "term": "Summary",
+        "definition": "A shortened version of a text written in your own words, containing only the main points relevant to the question"
+      },
+      {
+        "term": "Remodelling",
+        "definition": "Changing the structure and vocabulary of original sentences while keeping the same meaning"
+      },
+      {
+        "term": "Coherent writing",
+        "definition": "Writing that flows logically with clear connections between ideas using appropriate connectives"
+      },
+      {
+        "term": "Continuous prose",
+        "definition": "Writing in complete sentences organized into proper paragraphs, not in note or list format"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Summarise",
+        "instruction": "Write a shortened version in your own words covering all relevant points within the word limit"
+      },
+      {
+        "commandWord": "Write a summary",
+        "instruction": "Identify key points, remodel in own words, write in continuous prose staying within word count"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Write a summary of the benefits of solar energy mentioned in the passage. Write your answer in continuous writing (not note form). Your summary should be between 120-160 words.",
+      "marks": 15,
+      "answer": "Solar energy provides numerous environmental and economic advantages. It produces electricity without harmful emissions, helping reduce air pollution and combat climate change. Unlike fossil fuels, solar power is renewable and inexhaustible, ensuring long-term energy security. Installation costs have decreased significantly, making solar panels more affordable for households and businesses. Once installed, solar systems require minimal maintenance and provide free electricity for decades, resulting in substantial savings on energy bills. Solar technology creates employment opportunities in manufacturing, installation, and maintenance sectors. Rural communities benefit particularly as solar power can reach remote areas where traditional electricity infrastructure is expensive to establish. Additionally, solar energy reduces dependence on imported fossil fuels, improving national energy independence. The technology continues advancing, with more efficient panels and better storage solutions being developed. Countries like Pakistan can utilize abundant sunshine to generate clean electricity, supporting sustainable development goals while meeting growing energy demands.",
+      "markBreakdown": [
+        "Content: 8 marks for including all relevant points",
+        "Language: 7 marks for own words, coherent writing, and staying within word limit"
+      ]
+    },
+    "commonMistakes": [
+      "Copying chunks of text directly instead of using own words - this loses language marks",
+      "Including irrelevant details or examples that don't answer the specific question asked",
+      "Writing in note form or bullet points instead of continuous prose paragraphs",
+      "Exceeding the word limit - summaries over 160 words lose marks automatically",
+      "Adding personal opinions or information not in the passage - stick to given facts only"
+    ],
+    "examinerTips": [
+      "Summary appears in Paper 2 Section A every year for 15 marks total",
+      "Spend 5 minutes reading and selecting relevant points before writing",
+      "Count words carefully - aim for 140-150 words to stay safely within limit",
+      "Use synonyms and change sentence structure to show language skills"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "No diagram required for summary writing - focus on text analysis and remodelling skills"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:48:55.767Z",
+  "updated_at": "2026-04-06T03:48:55.767Z"
+}

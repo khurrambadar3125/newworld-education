@@ -1,0 +1,98 @@
+{
+  "subject": "Business Studies",
+  "subject_code": "7115",
+  "level": "O Level",
+  "theme": "Business Fundamentals",
+  "chapter_id": "2",
+  "chapter_name": "People in Business",
+  "note_data": {
+    "title": "People in Business",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Motivation** is the reason why employees want to work well and work effectively for the business",
+      "**Financial motivation** includes piece rate, commission, profit sharing, and performance-related pay to encourage higher productivity",
+      "**Non-financial motivation** includes job rotation, job enlargement, job enrichment, and team working to increase job satisfaction",
+      "**Recruitment** is the process of identifying that the business needs to employ someone up to the point where applications have arrived at the business",
+      "**Selection** is the process of interviewing and choosing the best candidate for the job from those who have applied",
+      "**Internal recruitment** involves appointing existing employees to new posts within the business, which saves costs and motivates staff",
+      "**External recruitment** involves appointing people from outside the business, which brings new ideas and skills",
+      "**Training** improves employee performance and includes induction training, on-the-job training, and off-the-job training",
+      "**Job description** outlines the tasks, duties and responsibilities of the job",
+      "**Person specification** outlines the qualifications, skills and experience needed to do the job effectively"
+    ],
+    "definitions": [
+      {
+        "term": "Motivation",
+        "definition": "The reason why employees want to work well and work effectively for the business"
+      },
+      {
+        "term": "Recruitment",
+        "definition": "The process of identifying that the business needs to employ someone up to the point where applications have arrived at the business"
+      },
+      {
+        "term": "Training",
+        "definition": "The process of teaching employees the skills needed to do their job effectively"
+      },
+      {
+        "term": "Job description",
+        "definition": "A document that outlines the tasks, duties and responsibilities of a particular job"
+      },
+      {
+        "term": "Delegation",
+        "definition": "Giving a subordinate the authority to perform particular tasks"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Identify",
+        "instruction": "Name or select from given information. No explanation required."
+      },
+      {
+        "commandWord": "Outline",
+        "instruction": "Give main features or general principles. Brief explanation needed."
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two ways a business could motivate its employees. [6 marks]",
+      "marks": 6,
+      "answer": "One way is to offer performance-related pay. This means employees receive extra payment based on how well they perform their job. This motivates employees because they have a financial incentive to work harder and more effectively. Another way is job enlargement. This means giving employees more tasks of a similar level to make their job more varied. This motivates employees because it makes their work less boring and repetitive, increasing job satisfaction.",
+      "markBreakdown": [
+        "Mark 1: Performance-related pay identified",
+        "Mark 2: Definition of performance-related pay",
+        "Mark 3: Explanation of why it motivates",
+        "Mark 4: Job enlargement identified",
+        "Mark 5: Definition of job enlargement",
+        "Mark 6: Explanation of why it motivates"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'money always motivates' — some employees are motivated by non-financial factors like recognition",
+      "Students often confuse job enlargement (more tasks same level) with job enrichment (more challenging tasks)",
+      "Don't just list recruitment stages — explain why each stage is important for selecting the right candidate",
+      "Never say training is 'expensive waste' — always explain benefits like increased productivity and reduced accidents",
+      "Students often forget that internal recruitment creates another vacancy that needs filling"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every exam paper - learn all motivation theories thoroughly",
+      "Always give specific examples when explaining motivation methods",
+      "For recruitment questions, mention both advantages AND disadvantages of internal/external recruitment",
+      "Training questions often ask about costs vs benefits - prepare both sides"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Maslow's hierarchy of needs pyramid showing physiological needs at bottom, then safety, social, esteem, and self-actualization at top. Essential for explaining different motivation factors."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:52:21.275Z",
+  "updated_at": "2026-04-06T03:52:21.275Z"
+}

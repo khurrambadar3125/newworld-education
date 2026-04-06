@@ -1,0 +1,96 @@
+{
+  "subject": "Geography",
+  "subject_code": "2217",
+  "level": "O Level",
+  "theme": "Theme 2: The Natural Environment",
+  "chapter_id": "2.3",
+  "chapter_name": "Coasts",
+  "note_data": {
+    "title": "Coasts",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Waves** are formed by wind blowing over the sea surface creating energy that moves towards the coast",
+      "**Destructive waves** have high frequency, strong backwash and weak swash, causing erosion of beaches and cliffs",
+      "**Constructive waves** have low frequency, weak backwash and strong swash, depositing sediment to build beaches",
+      "**Hydraulic action** occurs when waves crash against cliffs forcing air into cracks, compressing it and weakening the rock",
+      "**Abrasion** happens when waves pick up stones and sand and hurl them at the cliff face, wearing it away",
+      "**Longshore drift** transports sediment along the coast when waves approach at an angle due to prevailing winds",
+      "A **spit** forms when longshore drift deposits sediment in a bay or where the coastline changes direction",
+      "**Beaches** are formed by constructive waves depositing sand and shingle in bays between headlands",
+      "**Headlands and bays** develop when soft rock erodes faster than hard rock, creating an irregular coastline",
+      "**Coastal management** includes hard engineering (sea walls, groynes) and soft engineering (beach nourishment, dune regeneration)"
+    ],
+    "definitions": [
+      {
+        "term": "Wave",
+        "definition": "The movement of energy through water caused by wind blowing over the sea surface"
+      },
+      {
+        "term": "Cliff",
+        "definition": "A steep rock face formed by wave erosion at the coast"
+      },
+      {
+        "term": "Beach",
+        "definition": "An area of deposited sediment (sand, shingle or pebbles) found between high and low tide marks"
+      },
+      {
+        "term": "Spit",
+        "definition": "A long, narrow ridge of deposited sediment extending from the coast into the sea"
+      },
+      {
+        "term": "Longshore drift",
+        "definition": "The movement of sediment along the coast by wave action in the direction of the prevailing wind"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Say what you can see - use data from maps/diagrams and geographical terms"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give a reasonable idea with a brief explanation"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how a spit is formed. [4 marks]",
+      "marks": 4,
+      "answer": "A spit forms due to longshore drift transporting sediment along the coast. Waves approach the beach at an angle due to the prevailing wind direction. The swash carries sediment up the beach at an angle but the backwash carries it straight back down due to gravity. This zigzag movement transports sediment along the coast. When the coastline changes direction or there is a bay, the sediment continues to be deposited in the sea, forming a long narrow ridge called a spit.",
+      "markBreakdown": [
+        "Mark 1: Longshore drift transports sediment",
+        "Mark 2: Waves approach at an angle due to prevailing wind",
+        "Mark 3: Swash moves at angle, backwash straight back",
+        "Mark 4: Deposition occurs where coastline changes direction"
+      ]
+    },
+    "commonMistakes": [
+      "Never say waves 'crash into rocks' - always say 'waves erode cliffs through hydraulic action and abrasion'",
+      "Students often confuse constructive and destructive waves - remember destructive waves destroy beaches, constructive waves build them",
+      "Don't just say 'weathering breaks down rocks' - specify salt weathering and freeze-thaw weathering at coasts",
+      "Never say spits are formed by 'currents' - always explain longshore drift process with swash and backwash",
+      "Students forget to mention prevailing wind direction when explaining longshore drift"
+    ],
+    "examinerTips": [
+      "Coastal processes appear almost every year in Paper 2 - learn the step-by-step formation processes",
+      "Always draw labelled diagrams for landform formation questions to gain full marks",
+      "Use correct sequence words: 'firstly', 'then', 'over time', 'eventually' when explaining formation",
+      "Include specific examples of coastal management from your own region (e.g., Karachi coastline protection)"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Cross-section of a cliff showing wave erosion at the base, with labels for high tide, low tide, wave-cut notch, and overhang. Also diagram showing longshore drift with arrows indicating wave direction, swash and backwash movement."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:57:49.073Z",
+  "updated_at": "2026-04-06T03:57:49.073Z"
+}

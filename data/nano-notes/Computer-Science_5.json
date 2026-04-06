@@ -1,0 +1,95 @@
+{
+  "subject": "Computer Science",
+  "subject_code": "2210",
+  "level": "O Level",
+  "theme": "Paper 1: Computer Systems",
+  "chapter_id": "5",
+  "chapter_name": "The internet and its uses",
+  "note_data": {
+    "title": "The internet and its uses",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **internet** is a worldwide collection of interconnected networks that communicate using TCP/IP protocols",
+      "The **World Wide Web** is a service that uses the internet to access websites and web pages through hyperlinks",
+      "A **web browser** is software that requests, receives, and displays web pages from web servers",
+      "**HTTP** (HyperText Transfer Protocol) is used to transfer web pages, while **HTTPS** adds encryption for security",
+      "**Digital currency** uses cryptographic techniques and exists only in electronic form, with no physical coins or notes",
+      "**Cyber security** involves protecting computer systems and networks from digital attacks, theft, and damage",
+      "**URLs** (Uniform Resource Locators) specify the location of web resources using format: protocol://domain/path",
+      "**ISPs** (Internet Service Providers) provide internet access to homes and businesses through various connection methods"
+    ],
+    "definitions": [
+      {
+        "term": "Internet",
+        "definition": "A worldwide collection of interconnected networks that communicate using standard protocols"
+      },
+      {
+        "term": "World Wide Web",
+        "definition": "A service that uses the internet to access websites consisting of linked web pages"
+      },
+      {
+        "term": "Web browser",
+        "definition": "Software application used to access and display web pages from web servers"
+      },
+      {
+        "term": "Digital currency",
+        "definition": "Electronic money that uses cryptographic techniques for secure transactions and exists only in digital form"
+      },
+      {
+        "term": "Cyber security",
+        "definition": "The practice of protecting computer systems, networks and data from digital attacks and unauthorized access"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed characteristics or features of the concept"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities and differences between two things"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the difference between the internet and the World Wide Web. [4 marks]",
+      "marks": 4,
+      "answer": "The internet is a worldwide collection of interconnected networks that communicate using TCP/IP protocols. The World Wide Web is a service that runs on the internet. The internet provides the infrastructure for data transmission between computers. The World Wide Web uses this infrastructure to access websites and web pages through hyperlinks and web browsers.",
+      "markBreakdown": [
+        "Mark 1: Internet is interconnected networks",
+        "Mark 2: WWW is a service on the internet",
+        "Mark 3: Internet provides infrastructure/data transmission",
+        "Mark 4: WWW uses browsers/hyperlinks to access websites"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'internet and WWW are the same thing' — they are different: internet is infrastructure, WWW is a service",
+      "Students often confuse web browser with web server — browser displays pages, server stores and sends them",
+      "Don't say digital currency is 'fake money' — say it exists only in electronic form with cryptographic security",
+      "Never describe cyber security as just 'antivirus' — it includes protecting networks, data, and systems from all digital threats",
+      "Students mix up HTTP and HTML — HTTP transfers web pages, HTML is the markup language used to create them"
+    ],
+    "examinerTips": [
+      "Internet vs WWW distinction appears frequently in Paper 1 and Paper 2",
+      "Always mention 'cryptographic techniques' when defining digital currency",
+      "For cyber security questions, give specific examples like firewalls, encryption, secure passwords",
+      "URL questions often ask for protocol identification — remember http:// or https://",
+      "Browser questions may ask about features like bookmarks, history, cookies"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Network diagram showing computers connected through routers and ISPs to illustrate internet infrastructure, with web servers and clients accessing WWW services"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:44:58.579Z",
+  "updated_at": "2026-04-06T03:44:58.579Z"
+}

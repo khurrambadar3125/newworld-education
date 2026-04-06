@@ -1,0 +1,103 @@
+{
+  "subject": "Additional Mathematics",
+  "subject_code": "4037",
+  "level": "O Level",
+  "theme": "Applied Mathematics",
+  "chapter_id": "8",
+  "chapter_name": "Probability and Statistics",
+  "note_data": {
+    "title": "Probability and Statistics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Probability** of an event = (Number of favourable outcomes)/(Total number of possible outcomes)",
+      "**Mutually exclusive events** cannot occur at the same time, so P(A ∩ B) = 0",
+      "For **independent events**, P(A and B) = P(A) × P(B)",
+      "**Addition rule**: P(A ∪ B) = P(A) + P(B) - P(A ∩ B)",
+      "**Conditional probability**: P(A|B) = P(A ∩ B)/P(B) where P(B) ≠ 0",
+      "**Permutations** consider order: ⁿPᵣ = n!/(n-r)! for arranging r objects from n objects",
+      "**Combinations** ignore order: ⁿCᵣ = n!/(r!(n-r)!) for selecting r objects from n objects",
+      "**Tree diagrams** multiply probabilities along branches and add probabilities of different paths",
+      "**Expected value** E(X) = Σ(x × P(x)) for all possible values of X",
+      "For **binomial distribution**: P(X = r) = ⁿCᵣ × pʳ × (1-p)ⁿ⁻ʳ"
+    ],
+    "definitions": [
+      {
+        "term": "Probability",
+        "definition": "A measure of the likelihood that an event will occur, expressed as a number between 0 and 1 inclusive"
+      },
+      {
+        "term": "Independent events",
+        "definition": "Events where the outcome of one event does not affect the probability of the other event occurring"
+      },
+      {
+        "term": "Permutation",
+        "definition": "An arrangement of objects where the order matters"
+      },
+      {
+        "term": "Combination",
+        "definition": "A selection of objects where the order does not matter"
+      },
+      {
+        "term": "Conditional probability",
+        "definition": "The probability of an event occurring given that another event has already occurred"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working steps clearly and give the final answer"
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Show the method and working to reach the numerical answer"
+      },
+      {
+        "commandWord": "Determine",
+        "instruction": "Work out the answer showing clear mathematical reasoning"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A cricket team has 8 Pakistani players and 3 foreign players. If 3 players are selected at random to give interviews, find the probability that exactly 2 are Pakistani players.",
+      "marks": 4,
+      "answer": "Total players = 8 + 3 = 11\nTotal ways to select 3 players = ¹¹C₃ = 11!/(3!×8!) = 165\nWays to select exactly 2 Pakistani players = ⁸C₂ × ³C₁ = 28 × 3 = 84\nProbability = 84/165 = 28/55",
+      "markBreakdown": [
+        "Mark 1: Total players = 11",
+        "Mark 2: Total ways = ¹¹C₃ = 165",
+        "Mark 3: Favourable outcomes = ⁸C₂ × ³C₁ = 84",
+        "Mark 4: Final probability = 28/55"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse permutations with combinations — always check if order matters",
+      "Students often forget to subtract P(A ∩ B) in the addition rule",
+      "Never multiply probabilities for mutually exclusive events — use addition instead",
+      "Students frequently confuse P(A|B) with P(B|A) — they are not the same",
+      "Never add probabilities along branches in tree diagrams — multiply along branches, add across different paths"
+    ],
+    "examinerTips": [
+      "Probability questions appear in every Paper 2 examination",
+      "Always express final probability as a simplified fraction unless asked for decimal",
+      "Draw tree diagrams for multi-stage probability problems for full marks",
+      "Show factorial calculations clearly when using permutation and combination formulas"
+    ],
+    "formulas": [
+      "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)",
+      "P(A|B) = P(A ∩ B)/P(B)",
+      "ⁿPᵣ = n!/(n-r)!",
+      "ⁿCᵣ = n!/(r!(n-r)!)",
+      "E(X) = Σ(x × P(x))",
+      "P(X = r) = ⁿCᵣ × pʳ × (1-p)ⁿ⁻ʳ"
+    ],
+    "keyDiagramDescription": "Tree diagram showing all possible outcomes with probabilities on each branch, multiplying along branches for individual outcomes and adding different paths for final probability"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:17:48.188Z",
+  "updated_at": "2026-04-06T04:17:48.188Z"
+}

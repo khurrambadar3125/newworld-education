@@ -1,0 +1,97 @@
+{
+  "subject": "Sociology",
+  "subject_code": "2251",
+  "level": "O Level",
+  "theme": "Core Concepts",
+  "chapter_id": "2",
+  "chapter_name": "Identity and Social Control",
+  "note_data": {
+    "title": "Identity and Social Control",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Identity** is the sense of who a person is based on their group membership, personal characteristics and social roles",
+      "**Social control** refers to the ways society regulates and enforces conformity to norms and values through sanctions",
+      "**Primary socialisation** occurs in early childhood within the family where basic norms, values and language are learned",
+      "**Secondary socialisation** takes place in institutions like schools, peer groups and media which reinforce or modify learned behaviour",
+      "**Formal social control** uses official agencies like police, courts and schools with written rules and legal sanctions",
+      "**Informal social control** operates through family, friends and community using unwritten expectations and social pressure",
+      "**Positive sanctions** reward conformity through praise, awards or social approval to encourage desired behaviour",
+      "**Negative sanctions** punish deviance through criticism, exclusion or legal penalties to discourage unwanted behaviour",
+      "**Role models** are individuals whose behaviour is copied during socialisation, particularly important in identity formation"
+    ],
+    "definitions": [
+      {
+        "term": "Identity",
+        "definition": "The sense of who a person is, formed through socialisation and influenced by social groups, roles and personal characteristics"
+      },
+      {
+        "term": "Social control",
+        "definition": "The methods used by society to regulate behaviour and ensure conformity to established norms and values"
+      },
+      {
+        "term": "Socialisation",
+        "definition": "The lifelong process by which individuals learn the norms, values and behaviour patterns of their society"
+      },
+      {
+        "term": "Sanctions",
+        "definition": "Rewards or punishments used to encourage conformity or discourage deviance from social norms"
+      },
+      {
+        "term": "Agents of socialisation",
+        "definition": "The people, groups and institutions responsible for teaching individuals how to behave in society"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of features/characteristics with examples"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down into parts, examine relationships, give advantages/disadvantages"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how the family acts as an agent of socialisation. [6 marks]",
+      "marks": 6,
+      "answer": "The family is the primary agent of socialisation where children first learn basic norms and values. Parents teach children language, manners and moral values through daily interaction and role modelling. The family also transmits cultural traditions and religious beliefs, such as Pakistani families teaching Islamic values and Urdu language. Children learn gender roles by observing parental behaviour and receiving different treatment based on their sex. The family uses sanctions like praise for good behaviour and punishment for bad behaviour to shape the child's conduct. Through emotional bonds and constant contact, the family has the strongest influence on identity formation during the crucial early years.",
+      "markBreakdown": [
+        "Mark 1: Family as primary agent teaching basic norms/values",
+        "Mark 2: Parents teach through interaction/role modelling",
+        "Mark 3: Cultural/religious transmission with example",
+        "Mark 4: Gender role socialisation",
+        "Mark 5: Use of sanctions to shape behaviour",
+        "Mark 6: Emotional influence on identity formation"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse primary socialisation (family/early childhood) with secondary socialisation (later institutions)",
+      "Students often forget to give examples of sanctions - always specify positive (praise/rewards) and negative (punishment/criticism)",
+      "Don't just list agents of socialisation - explain HOW they socialise individuals",
+      "Avoid saying 'social control stops crime' - it regulates ALL behaviour, not just deviance",
+      "Never describe identity as fixed - emphasise it develops and changes through socialisation"
+    ],
+    "examinerTips": [
+      "Identity questions appear frequently in Paper 1 and Paper 2 - learn multiple examples",
+      "Always distinguish between formal and informal social control with clear examples",
+      "Use Pakistani context: family respect for elders, Islamic values, arranged marriages as socialisation examples",
+      "For 6-mark questions, aim for 3 developed points with examples rather than 6 simple points"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Agents of Socialisation diagram showing Primary (family) at center, with Secondary agents (school, peer group, media, workplace, religion) surrounding it, with arrows showing influence on individual identity formation"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:13:22.893Z",
+  "updated_at": "2026-04-06T04:13:22.893Z"
+}

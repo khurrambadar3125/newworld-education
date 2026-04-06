@@ -1,0 +1,97 @@
+{
+  "subject": "English Language",
+  "subject_code": "1123",
+  "level": "O Level",
+  "theme": "Part 1: Reading",
+  "chapter_id": "5",
+  "chapter_name": "Reading practice",
+  "note_data": {
+    "title": "Reading practice",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Identify** key information by scanning for specific details, names, dates, and statistics mentioned in the passage",
+      "**Extract** relevant information by reading the question first, then locating the answer in the text using keywords",
+      "**Interpret** implicit meanings by reading between the lines and understanding what the writer suggests without directly stating",
+      "**Distinguish** between facts and opinions by identifying objective statements versus subjective viewpoints or judgments",
+      "**Analyze** the writer's purpose by examining language choices, tone, and intended audience to determine their aim",
+      "**Evaluate** effectiveness of language techniques such as metaphors, repetition, or emotive language in achieving the writer's purpose",
+      "**Summarize** main points by selecting only the most important information and expressing it concisely in your own words",
+      "**Quote selectively** by choosing brief, relevant phrases that directly support your answer rather than copying large chunks"
+    ],
+    "definitions": [
+      {
+        "term": "Implicit meaning",
+        "definition": "Information that is suggested or hinted at in the text but not directly stated"
+      },
+      {
+        "term": "Inference",
+        "definition": "A logical conclusion drawn from evidence and clues provided in the text"
+      },
+      {
+        "term": "Context clues",
+        "definition": "Words or phrases surrounding an unknown word that help determine its meaning"
+      },
+      {
+        "term": "Bias",
+        "definition": "A one-sided viewpoint that favors a particular perspective while ignoring others"
+      },
+      {
+        "term": "Tone",
+        "definition": "The writer's attitude toward the subject matter, revealed through word choice and style"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact directly from the text in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this shows that' to link cause and effect"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give a possible reason or interpretation based on evidence from the text"
+      },
+      {
+        "commandWord": "How",
+        "instruction": "Identify the method/technique + explain its effect on the reader"
+      },
+      {
+        "commandWord": "Why",
+        "instruction": "Give the purpose/reason + explain the intended outcome or effect"
+      }
+    ],
+    "modelAnswer": {
+      "question": "How does the writer make the description of Lahore's traffic effective? Use details from the text in your answer.",
+      "marks": 3,
+      "answer": "The writer uses sensory imagery such as 'deafening horns blared' to help readers hear the chaos. The metaphor 'rivers of rickshaws' creates a vivid picture of continuous flowing traffic. The list 'cars, buses, motorcycles, donkey carts' shows the variety and adds to the sense of overwhelming confusion.",
+      "markBreakdown": [
+        "Mark 1: Identifies technique (sensory imagery) + effect",
+        "Mark 2: Identifies technique (metaphor) + effect",
+        "Mark 3: Identifies technique (list) + effect"
+      ]
+    },
+    "commonMistakes": [
+      "Never copy large chunks of text — always select brief, relevant quotes that directly answer the question",
+      "Students often identify techniques but forget to explain their effect on the reader",
+      "Don't confuse the writer's opinion with facts — look for bias indicators like 'clearly', 'obviously', 'surely'",
+      "Avoid making up information not in the text — all answers must be supported by textual evidence",
+      "Never give personal opinions when asked about the writer's viewpoint — focus on what the text reveals"
+    ],
+    "examinerTips": [
+      "Reading comprehension appears in both Paper 1 and Paper 2 carrying significant marks",
+      "Always read questions before the passage to know what to look for",
+      "Use the mark allocation to guide answer length — 3 marks typically needs 3 clear points",
+      "Highlight or underline key words in questions like 'how', 'why', 'effectiveness' to focus your response"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "No specific diagram required for reading practice, but students should understand the structure of approaching any text: Question → Keywords → Scan text → Select evidence → Explain effect"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:49:20.039Z",
+  "updated_at": "2026-04-06T03:49:20.039Z"
+}

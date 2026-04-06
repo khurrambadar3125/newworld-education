@@ -1,0 +1,92 @@
+{
+  "subject": "English Language",
+  "subject_code": "1123",
+  "level": "O Level",
+  "theme": "Part 1: Reading",
+  "chapter_id": "3",
+  "chapter_name": "Analysing and explaining writers' effects",
+  "note_data": {
+    "title": "Analysing and explaining writers' effects",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Writers' effects** are achieved through deliberate language choices to create specific responses in readers",
+      "**Figurative language** (metaphors, similes, personification) creates vivid imagery and deeper meaning beyond literal interpretation",
+      "**Sensory language** appeals to the five senses to make descriptions more engaging and realistic for readers",
+      "**Atmosphere** is created through word choice, sentence structure, and imagery to establish mood and tone",
+      "**Setting** is established through descriptive language that places readers in a specific time and location",
+      "**Language techniques** work together to reinforce the writer's main ideas and themes throughout the text",
+      "**Word choice** (diction) includes connotations and associations that add layers of meaning beyond dictionary definitions",
+      "**Sound effects** (alliteration, onomatopoeia, rhythm) enhance the auditory experience and emphasize key points"
+    ],
+    "definitions": [
+      {
+        "term": "Writers' effects",
+        "definition": "The deliberate impact a writer creates on readers through specific language choices and techniques"
+      },
+      {
+        "term": "Figurative language",
+        "definition": "Non-literal language that uses comparisons and imagery to create meaning beyond the surface level"
+      },
+      {
+        "term": "Atmosphere",
+        "definition": "The mood or feeling created by the writer's language choices that influences how readers respond to the text"
+      },
+      {
+        "term": "Sensory language",
+        "definition": "Words and phrases that appeal to the five senses to create vivid, realistic descriptions"
+      },
+      {
+        "term": "Connotation",
+        "definition": "The implied or suggested meaning of a word beyond its literal dictionary definition"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Identify",
+        "instruction": "Pick out specific words, phrases, or techniques from the text. Quote directly."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "State the technique + explain its effect using 'This creates...' or 'This makes the reader feel...'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Identify technique + explain effect + comment on why the writer chose this method"
+      }
+    ],
+    "modelAnswer": {
+      "question": "How does the writer use language to create atmosphere in this description of a monsoon storm? 'The angry clouds gathered like warriors preparing for battle, while thunder roared its terrible warning across the trembling earth.'",
+      "marks": 4,
+      "answer": "The writer uses personification in 'angry clouds' to create a threatening atmosphere by giving the clouds human emotions of rage. The simile 'like warriors preparing for battle' reinforces the sense of danger and conflict in nature. The verb 'roared' uses sound imagery to emphasize the power and violence of the storm. The personification of 'trembling earth' makes the reader feel the fear and vulnerability of everything in the storm's path.",
+      "markBreakdown": [
+        "Mark 1: Identifies personification in 'angry clouds'",
+        "Mark 2: Explains threatening/dangerous atmosphere",
+        "Mark 3: Identifies simile 'like warriors preparing for battle'",
+        "Mark 4: Explains reinforcement of conflict/danger"
+      ]
+    },
+    "commonMistakes": [
+      "Never just identify techniques - always explain their effects on the reader",
+      "Students often say 'it makes it more interesting' - be specific about what emotion or response is created",
+      "Avoid listing multiple techniques without explaining how each one works",
+      "Don't confuse the writer's intention with the character's feelings - focus on reader response",
+      "Never write 'the author uses adjectives' - identify the specific adjectives and their effects"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 2 Reading section - usually worth 8-12 marks total",
+      "Always quote the specific words/phrases you're analysing before explaining their effects",
+      "Use phrases like 'This creates...', 'This makes the reader feel...', 'The effect is...' to show analysis",
+      "Look for patterns - writers often use multiple techniques together to reinforce the same effect"
+    ],
+    "formulas": [
+      "QUOTE + TECHNIQUE + EFFECT = Full marks for language analysis"
+    ],
+    "keyDiagramDescription": "Language techniques pyramid: Word level (individual words, connotations) → Sentence level (structure, punctuation) → Text level (overall atmosphere, themes)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:48:30.988Z",
+  "updated_at": "2026-04-06T03:48:30.988Z"
+}

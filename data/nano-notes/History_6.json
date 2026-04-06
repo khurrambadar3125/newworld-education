@@ -1,0 +1,89 @@
+{
+  "subject": "History",
+  "subject_code": "2147",
+  "level": "O Level",
+  "theme": "Section 1: Core Content",
+  "chapter_id": "6",
+  "chapter_name": "How secure was the USSR's control over Eastern Europe?",
+  "note_data": {
+    "title": "How secure was the USSR's control over Eastern Europe?",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **Hungarian Rising (1956)** showed USSR would use military force to maintain control when Nagy attempted to withdraw from Warsaw Pact",
+      "**Soviet invasion of Czechoslovakia (1968)** demonstrated the Brezhnev Doctrine - USSR would intervene to preserve communist rule",
+      "The **Berlin Wall (1961)** was built to prevent East Germans escaping to West Berlin, showing USSR's insecurity about control",
+      "**Nagy was executed** in 1958, showing USSR would eliminate opposition leaders who challenged Soviet control",
+      "**Dubček was removed** from power and replaced with pro-Soviet leader Husák after Prague Spring",
+      "The **Warsaw Pact** was used to justify Soviet military intervention in Hungary and Czechoslovakia",
+      "**Thousands of refugees fled** from Hungary and Czechoslovakia, showing popular opposition to Soviet control",
+      "**Western powers did not intervene** militarily in 1956 or 1968, allowing USSR to maintain control through force",
+      "The **Iron Curtain remained intact** despite uprisings, showing USSR's determination to maintain buffer zone"
+    ],
+    "definitions": [
+      {
+        "term": "Hungarian Rising",
+        "definition": "Anti-Soviet uprising in October 1956 when Hungarians demanded withdrawal from Warsaw Pact and free elections, crushed by Soviet tanks"
+      },
+      {
+        "term": "Prague Spring",
+        "definition": "Period of political liberalization in Czechoslovakia in 1968 under Dubček, ended by Soviet invasion in August 1968"
+      },
+      {
+        "term": "Brezhnev Doctrine",
+        "definition": "Policy stating that USSR would use force to maintain communist governments in Eastern Europe, announced after 1968 invasion of Czechoslovakia"
+      },
+      {
+        "term": "Berlin Wall",
+        "definition": "Barrier built by East Germany in 1961 to prevent East Berliners escaping to West Berlin, symbol of divided Europe"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "How far",
+        "instruction": "Argue both sides with evidence, then reach a judgement. Use 'However' to show balance."
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why the USSR invaded Czechoslovakia in 1968. [6 marks]",
+      "marks": 6,
+      "answer": "The USSR invaded Czechoslovakia because Dubček's reforms threatened Soviet control. The Prague Spring introduced press freedom and multi-party elections which could spread to other satellite states. The USSR feared Czechoslovakia might leave the Warsaw Pact like Nagy attempted in Hungary. Brezhnev was determined to maintain the buffer zone against NATO. The invasion showed the USSR would use military force to preserve communist governments in Eastern Europe.",
+      "markBreakdown": [
+        "Mark 1: Dubček's reforms threatened control",
+        "Mark 2: Press freedom/elections could spread",
+        "Mark 3: Fear of leaving Warsaw Pact",
+        "Mark 4: Need to maintain buffer zone",
+        "Mark 5: Preserve communist governments",
+        "Mark 6: Developed explanation with linkage"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'Russia invaded' — always say 'USSR invaded' for the correct historical period",
+      "Students often confuse Hungarian Rising (1956) with Prague Spring (1968) — learn the dates",
+      "Don't say 'Berlin Wall stopped all escapes' — some people still escaped but numbers greatly reduced",
+      "Never write 'communism was unpopular' without evidence — use specific examples like refugee numbers",
+      "Don't confuse Nagy (Hungary) with Dubček (Czechoslovakia) — learn which leader belongs to which country"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 - especially 'How far' questions about Soviet control",
+      "Always use specific evidence like dates, names and numbers for full marks",
+      "Compare the two uprisings to show pattern of Soviet control and resistance",
+      "Link events to wider Cold War context for top level marks"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Timeline showing: Hungarian Rising (1956) → Berlin Wall built (1961) → Prague Spring & Soviet invasion (1968), with outcomes showing continued Soviet control"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:03:57.923Z",
+  "updated_at": "2026-04-06T04:03:57.923Z"
+}

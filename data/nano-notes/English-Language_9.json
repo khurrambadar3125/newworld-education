@@ -1,0 +1,92 @@
+{
+  "subject": "English Language",
+  "subject_code": "1123",
+  "level": "O Level",
+  "theme": "Part 2: Writing",
+  "chapter_id": "9",
+  "chapter_name": "Narrative writing",
+  "note_data": {
+    "title": "Narrative writing",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Narrative writing** tells a story with a clear beginning, middle and end that engages the reader throughout",
+      "**Planning** is essential - create a story outline with main events, character details and plot structure before writing",
+      "**Story openings** must hook the reader immediately using dialogue, action, description or an intriguing situation",
+      "**Character development** requires showing personality through actions, dialogue and thoughts rather than just telling",
+      "**Setting and atmosphere** should be established early using sensory details and descriptive language",
+      "**Plot structure** follows exposition, rising action, climax, falling action and resolution for maximum impact",
+      "**Dialogue** must sound natural, advance the plot and reveal character - avoid unrealistic speech patterns",
+      "**Narrative techniques** include first person, third person, flashbacks and foreshadowing to enhance storytelling",
+      "**Effective endings** provide closure while leaving a lasting impression - avoid rushed or inconclusive conclusions"
+    ],
+    "definitions": [
+      {
+        "term": "Narrative",
+        "definition": "A story that recounts a sequence of events with characters, setting, plot and theme"
+      },
+      {
+        "term": "Plot",
+        "definition": "The sequence of events that make up a story, including conflict and resolution"
+      },
+      {
+        "term": "Characterization",
+        "definition": "The method by which writers reveal the personality and traits of characters"
+      },
+      {
+        "term": "Setting",
+        "definition": "The time, place and social environment in which a story takes place"
+      },
+      {
+        "term": "Climax",
+        "definition": "The turning point or most intense moment in a story where the main conflict reaches its peak"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Write",
+        "instruction": "Create a complete narrative with clear structure, developed characters and engaging plot"
+      },
+      {
+        "commandWord": "Continue",
+        "instruction": "Maintain the style, tone and characters established in the given opening"
+      },
+      {
+        "commandWord": "Plan",
+        "instruction": "Create a detailed outline showing plot structure, character details and key events"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Write a story that begins: 'The electricity had been out for three hours when Fatima heard the footsteps on the roof.'",
+      "marks": 25,
+      "answer": "The electricity had been out for three hours when Fatima heard the footsteps on the roof. Her heart hammered against her ribs as she clutched her younger brother's hand in the suffocating darkness of their Lahore home. 'Probably just a cat,' she whispered, but her trembling voice betrayed her fear. The monsoon rain had stopped, leaving an eerie silence that made every creak and groan of the old house sound menacing. Another thud, deliberate and heavy. Definitely not a cat. Fatima's mind raced - their parents were at the hospital with grandmother, leaving her responsible for eight-year-old Hassan. She grabbed the torch from the kitchen drawer, its weak beam barely penetrating the gloom. As she crept toward the staircase leading to the roof terrace, Hassan whimpered behind her. The footsteps continued, slow and purposeful. Taking a deep breath, Fatima pushed open the door and stepped onto the wet terrace. 'Hello?' she called shakily. A figure emerged from behind the water tank - their elderly neighbor, Uncle Mahmood, clutching a flashlight and looking equally startled. 'Beta, I was checking my antenna after the storm,' he explained sheepishly. 'The power lines are down.' Relief flooded through Fatima as she began to laugh, the tension melting away like the puddles around their feet.",
+      "markBreakdown": [
+        "Marks 1-5: Engaging opening that continues naturally",
+        "Marks 6-10: Well-developed characters and setting",
+        "Marks 11-15: Clear plot structure with building tension",
+        "Marks 16-20: Effective use of descriptive language",
+        "Marks 21-25: Satisfying resolution with appropriate tone"
+      ]
+    },
+    "commonMistakes": [
+      "Never write dialogue without speech marks - always use correct punctuation for conversation",
+      "Students often rush the ending - take time to create a satisfying conclusion that ties up loose ends",
+      "Avoid switching between first and third person narration within the same story",
+      "Don't introduce too many characters - focus on developing fewer characters well rather than many poorly",
+      "Never ignore the given opening - continue naturally from the provided starting point"
+    ],
+    "examinerTips": [
+      "Narrative writing appears in Paper 2 Section B every year - practice different story types regularly",
+      "Spend 5-10 minutes planning your story structure before writing to avoid plot holes",
+      "Use Pakistani settings and cultural references to make your writing authentic and relatable",
+      "Show emotions through actions and dialogue rather than simply stating 'he was angry'"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Story mountain diagram showing exposition at base, rising action climbing up, climax at peak, falling action descending, and resolution at bottom right - essential for planning narrative structure"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:51:06.838Z",
+  "updated_at": "2026-04-06T03:51:06.838Z"
+}

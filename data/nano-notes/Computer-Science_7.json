@@ -1,0 +1,96 @@
+{
+  "subject": "Computer Science",
+  "subject_code": "2210",
+  "level": "O Level",
+  "theme": "Paper 2: Algorithms and Programming",
+  "chapter_id": "7",
+  "chapter_name": "Algorithm design and problem solving",
+  "note_data": {
+    "title": "Algorithm design and problem solving",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Program development life cycle** has 5 stages: Analysis, Design, Coding, Testing, Maintenance",
+      "**Analysis** involves understanding the problem, identifying inputs/processes/outputs, and defining requirements",
+      "**Design** stage creates the algorithm using pseudocode or flowcharts before writing actual code",
+      "**Pseudocode** uses structured English to represent algorithm logic without syntax rules",
+      "**Coding** translates the design into a specific programming language with correct syntax",
+      "**Testing** uses test data (normal, extreme, erroneous) to check the program works correctly",
+      "**Trace tables** show how variables change step-by-step during algorithm execution",
+      "**Common algorithms** include input validation, counting occurrences, finding totals, finding maximum/minimum",
+      "To **find the purpose** of an algorithm, trace through with sample data and observe the output",
+      "**Logic errors** are found by desk checking or trace tables when output is incorrect but program runs"
+    ],
+    "definitions": [
+      {
+        "term": "Algorithm",
+        "definition": "A sequence of instructions that can be followed to complete a task"
+      },
+      {
+        "term": "Pseudocode",
+        "definition": "A method of writing algorithms using structured English without programming language syntax"
+      },
+      {
+        "term": "Trace table",
+        "definition": "A table showing how the values of variables change as each step of an algorithm is executed"
+      },
+      {
+        "term": "Test data",
+        "definition": "Data used to test a program including normal, extreme and erroneous values"
+      },
+      {
+        "term": "Logic error",
+        "definition": "An error in the algorithm that produces incorrect output but allows the program to run"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Complete the trace table",
+        "instruction": "Work through each line step by step, showing exact values"
+      },
+      {
+        "commandWord": "Identify the purpose",
+        "instruction": "Trace with sample data then state what the algorithm achieves"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Complete the trace table for this algorithm: INPUT Num1, INPUT Num2, Total ← 0, Count ← 0, WHILE Count < 2 DO: Total ← Total + Num1, Count ← Count + 1, Total ← Total + Num2, ENDWHILE, OUTPUT Total. Use inputs Num1 = 5, Num2 = 3.",
+      "marks": 4,
+      "answer": "Num1: 5, Num2: 3, Total: 0→5→8→11→14, Count: 0→1→2, Output: 14",
+      "markBreakdown": [
+        "Mark 1: Initial values correct",
+        "Mark 2: First iteration values correct",
+        "Mark 3: Second iteration values correct",
+        "Mark 4: Final output correct"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'the program is tested' — always say 'the program is tested using test data'",
+      "Students often confuse syntax errors with logic errors — syntax errors stop compilation",
+      "Don't trace variables that aren't in the table — only complete what's asked",
+      "Never skip steps in trace tables — show every single change to variables",
+      "Students write 'the algorithm adds numbers' instead of being specific about what it calculates"
+    ],
+    "examinerTips": [
+      "Trace table questions appear in almost every Paper 2 exam",
+      "Always show your working when identifying algorithm purpose",
+      "Use the exact values given in the question for trace tables",
+      "Purpose questions need specific answers like 'finds the largest number' not 'processes data'"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Program development life cycle showing 5 connected stages: Analysis → Design → Coding → Testing → Maintenance, with arrows showing the flow and possible returns to previous stages"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:45:45.922Z",
+  "updated_at": "2026-04-06T03:45:45.922Z"
+}

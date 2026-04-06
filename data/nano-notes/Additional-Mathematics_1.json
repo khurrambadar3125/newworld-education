@@ -1,0 +1,94 @@
+{
+  "subject": "Additional Mathematics",
+  "subject_code": "4037",
+  "level": "O Level",
+  "theme": "Pure Mathematics",
+  "chapter_id": "1",
+  "chapter_name": "Algebra",
+  "note_data": {
+    "title": "Algebra",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Quadratic equations** can be solved by factorisation, completing the square, or using the quadratic formula",
+      "The **discriminant** b² - 4ac determines the nature of roots: positive gives real distinct roots, zero gives equal roots, negative gives no real roots",
+      "For **inequalities**, reverse the inequality sign when multiplying or dividing by a negative number",
+      "**Linear simultaneous equations** can be solved by elimination or substitution method",
+      "**Polynomial division** uses long division or synthetic division to find quotient and remainder",
+      "**Factor theorem** states that (x - a) is a factor of f(x) if and only if f(a) = 0",
+      "**Remainder theorem** states that when polynomial f(x) is divided by (x - a), the remainder is f(a)",
+      "**Quadratic inequalities** are solved by finding critical values and testing intervals on a number line",
+      "**Partial fractions** decompose rational expressions into simpler fractions for integration or simplification"
+    ],
+    "definitions": [
+      {
+        "term": "Discriminant",
+        "definition": "The expression b² - 4ac in a quadratic equation ax² + bx + c = 0, which determines the nature of the roots"
+      },
+      {
+        "term": "Factor Theorem",
+        "definition": "If f(a) = 0, then (x - a) is a factor of polynomial f(x)"
+      },
+      {
+        "term": "Remainder Theorem",
+        "definition": "When polynomial f(x) is divided by (x - a), the remainder equals f(a)"
+      },
+      {
+        "term": "Quadratic Formula",
+        "definition": "x = (-b ± √(b² - 4ac))/2a for solving ax² + bx + c = 0"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Solve",
+        "instruction": "Find all values that satisfy the equation or inequality, showing clear algebraic steps"
+      },
+      {
+        "commandWord": "Factorise",
+        "instruction": "Write as a product of factors in simplest form"
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Calculate the exact value using appropriate algebraic methods"
+      },
+      {
+        "commandWord": "Hence",
+        "instruction": "Use the previous result directly in your solution"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Solve the inequality x² - 5x + 6 < 0",
+      "marks": 3,
+      "answer": "x² - 5x + 6 = 0\n(x - 2)(x - 3) = 0\nx = 2 or x = 3\nTesting intervals: x < 2 gives positive, 2 < x < 3 gives negative, x > 3 gives positive\nTherefore 2 < x < 3",
+      "markBreakdown": [
+        "Mark 1: Correct factorisation (x - 2)(x - 3) = 0",
+        "Mark 2: Finding critical values x = 2 and x = 3",
+        "Mark 3: Correct solution 2 < x < 3"
+      ]
+    },
+    "commonMistakes": [
+      "Never forget to reverse inequality sign when multiplying/dividing by negative — always check the sign",
+      "Students often write x = 2, 3 instead of 2 < x < 3 for quadratic inequalities",
+      "Never use quadratic formula when factorisation is simpler — examiners expect the most efficient method",
+      "Students confuse factor theorem and remainder theorem — factor gives zero, remainder gives f(a)",
+      "Never leave answers as decimals when exact form is required — use surds or fractions"
+    ],
+    "examinerTips": [
+      "Quadratic equations appear in every paper — master all three solution methods",
+      "Always show substitution clearly when using factor theorem",
+      "Draw number line for inequality questions to avoid sign errors",
+      "Check solutions by substitution back into original equation"
+    ],
+    "formulas": [
+      "x = (-b ± √(b² - 4ac))/2a",
+      "Discriminant = b² - 4ac",
+      "Sum of roots = -b/a, Product of roots = c/a"
+    ],
+    "keyDiagramDescription": "Number line showing critical points and sign testing intervals for quadratic inequalities, with open/closed circles indicating included/excluded values"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:15:19.941Z",
+  "updated_at": "2026-04-06T04:15:19.942Z"
+}

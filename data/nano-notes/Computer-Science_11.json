@@ -1,0 +1,94 @@
+{
+  "subject": "Computer Science",
+  "subject_code": "2210",
+  "level": "O Level",
+  "theme": "Paper 2: Algorithms and Programming",
+  "chapter_id": "11",
+  "chapter_name": "Programming scenarios practice",
+  "note_data": {
+    "title": "Programming scenarios practice",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Programming scenarios** require systematic identification of inputs, processes and outputs before writing any code",
+      "**Input identification** involves determining all data that must be entered by the user or read from files",
+      "**Process identification** requires breaking down the problem into logical steps including calculations, comparisons and data manipulation",
+      "**Output identification** specifies what results must be displayed, printed or stored after processing",
+      "**Pseudocode planning** should be completed before writing actual program code to ensure logical flow",
+      "**Variable declaration** must include appropriate data types (INTEGER, REAL, STRING, BOOLEAN) based on the data being stored",
+      "**Validation checks** should be implemented to ensure input data meets specified criteria before processing",
+      "**Testing strategies** must include normal, boundary and erroneous data to verify program functionality",
+      "**Code structure** should follow logical sequence: input → validation → process → output with appropriate comments"
+    ],
+    "definitions": [
+      {
+        "term": "Programming scenario",
+        "definition": "A real-world problem that requires a complete program solution including input, processing and output stages"
+      },
+      {
+        "term": "Input validation",
+        "definition": "The process of checking that data entered meets specified criteria before it is processed by the program"
+      },
+      {
+        "term": "Boundary data",
+        "definition": "Test data that uses values at the limits of acceptable ranges to check program handles edge cases correctly"
+      },
+      {
+        "term": "Trace table",
+        "definition": "A method of dry-running code by manually tracking variable values through each step of program execution"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Identify",
+        "instruction": "List the specific inputs, processes or outputs without explanation"
+      },
+      {
+        "commandWord": "Write",
+        "instruction": "Produce complete code with correct syntax, variable names and logical structure"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give the method/process and explain how it works using technical terms"
+      },
+      {
+        "commandWord": "Test",
+        "instruction": "Provide specific test data with expected outcomes for normal, boundary and erroneous cases"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A school in Lahore needs a program to calculate student exam grades. Students enter their marks for 3 subjects (0-100). The program calculates the average and displays the grade: A (80+), B (70-79), C (60-69), D (50-59), F (below 50). Identify the inputs, processes and outputs for this scenario.",
+      "marks": 6,
+      "answer": "INPUTS: Three subject marks (INTEGER values 0-100)\nPROCESSES: Validate marks are in range 0-100, Calculate average = (mark1 + mark2 + mark3) / 3, Determine grade using IF statements based on average\nOUTPUTS: Average mark (REAL), Grade letter (STRING), Appropriate message displaying results",
+      "markBreakdown": [
+        "Mark 1: Correct identification of three subject marks as inputs",
+        "Mark 2: Validation process identified",
+        "Mark 3: Average calculation process",
+        "Mark 4: Grade determination process",
+        "Mark 5: Average as output",
+        "Mark 6: Grade letter as output"
+      ]
+    },
+    "commonMistakes": [
+      "Students write code immediately without planning inputs, processes and outputs first",
+      "Forgetting to include validation checks for input data ranges and data types",
+      "Using incorrect data types - mixing up INTEGER and REAL for calculations involving division",
+      "Not providing complete test data sets including boundary values and invalid inputs",
+      "Writing incomplete IF..THEN..ELSE statements that don't cover all possible grade ranges"
+    ],
+    "examinerTips": [
+      "Programming scenarios appear in Paper 2 Section B and are worth 15-20 marks",
+      "Always plan IPO (Input-Process-Output) before writing any code",
+      "Include validation for all inputs to demonstrate good programming practice",
+      "Use meaningful variable names that clearly indicate their purpose",
+      "Test your logic with boundary values like 79.5 vs 80 for grade boundaries"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "IPO diagram showing three columns: Inputs (user data entry), Processes (calculations and decisions), Outputs (results displayed), with arrows showing data flow from left to right"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:47:19.000Z",
+  "updated_at": "2026-04-06T03:47:19.000Z"
+}
