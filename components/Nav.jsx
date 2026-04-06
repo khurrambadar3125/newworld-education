@@ -55,6 +55,7 @@ const MENU_GROUPS = [
       { href: '/progress',     label: '📊 Progress' },
       { href: '/dashboard',    label: '📊 Teacher Dashboard' },
       { href: '/school',       label: '🏫 For Schools' },
+      { href: '/founder',      label: '👤 Founder' },
     ],
   },
 ];

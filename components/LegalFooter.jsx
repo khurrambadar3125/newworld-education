@@ -42,6 +42,7 @@ export default function LegalFooter({ sen = false, sat = false }) {
             { label: 'Privacy Policy', href: '/privacy' },
             { label: 'Responsible AI', href: '/responsible-ai' },
             { label: 'Contact', href: 'mailto:hello@newworld.education' },
+            { label: 'Founder', href: '/founder' },
           ].map(({ label, href }) => (
             <a key={label} href={href} style={{ fontSize: 11, color: 'rgba(255,255,255,.3)', textDecoration: 'none' }}>
               {label}
