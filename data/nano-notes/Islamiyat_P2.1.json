@@ -97,47 +97,7 @@
       "Examiner Report 2021: 'Some students quoted Hadiths incorrectly or made up teachings' — stick to well-known, authentic Hadiths you have studied rather than inventing content"
     ],
     "keyDiagram": "Create a two-column comparison chart with 'Hadith Teaching' on the left and 'Practical Application' on the right. For each chosen Hadith, draw arrows connecting specific teachings to modern examples. Include sub-categories like 'Personal Practice,' 'Family Life,' 'Community Action,' and 'Worship' to organize applications systematically.",
-    "quickRecap": "Hadiths contain the Prophet's sayings and actions that guide Muslim beliefs and practices. Choose well-known Hadiths you can explain thoroughly. Always distinguish between what the Hadith teaches Muslims to believe versus how they can act on those beliefs. Provide specific, practical examples of modern application rather than vague statements.",
-    "source": "verified_teacher_notes",
-    "citation": "Notes sourced from verified teacher materials. Mojza.org (Sir Usman Hameed, Sir Yousuf Memon) and KEN Academy (Sir Umar Khan). All Quranic references and Hadith attributions verified by qualified Islamiyat teachers.",
-    "verifiedPDFs": [
-      {
-        "name": "Paper 1 Topical Compilation (2009-2025)",
-        "url": "/books/islamiyat-verified/OL-Islamiyat-Topical-Compilation-P1-2009-2025-Final.pdf",
-        "source": "Mojza.org"
-      },
-      {
-        "name": "Paper 2 Topical Compilation (2009-2025)",
-        "url": "/books/islamiyat-verified/OL-Islamiyat-Topical-Compilation-P2-2009-2025-Final.pdf",
-        "source": "Mojza.org"
-      },
-      {
-        "name": "Islamiat Reference List",
-        "url": "/books/islamiyat-verified/Islamiat-Reference-list.pdf",
-        "source": "Mojza.org"
-      },
-      {
-        "name": "Timeline of Events",
-        "url": "/books/islamiyat-verified/Islamiat-Timeline.pdf",
-        "source": "Mojza.org"
-      },
-      {
-        "name": "Difficult Questions from Examiner Reports",
-        "url": "/books/islamiyat-verified/Difficult-Questions-according-to-ER.pdf",
-        "source": "Mojza.org"
-      },
-      {
-        "name": "Hajj Rituals Sheet",
-        "url": "/books/islamiyat-verified/Hajj-Rituals-Sheet.pdf",
-        "source": "Mojza.org"
-      },
-      {
-        "name": "Summary of Battles",
-        "url": "/books/islamiyat-verified/Summary-of-Battles-Sheet1.pdf",
-        "source": "Mojza.org"
-      }
-    ],
-    "disclaimer": "This content references verified materials from qualified Islamiyat teachers. NewWorld Education does not independently author religious content. All Quranic verses, Hadith, and Islamic teachings should be verified with qualified scholars."
+    "quickRecap": "Hadiths contain the Prophet's sayings and actions that guide Muslim beliefs and practices. Choose well-known Hadiths you can explain thoroughly. Always distinguish between what the Hadith teaches Muslims to believe versus how they can act on those beliefs. Provide specific, practical examples of modern application rather than vague statements."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -145,6 +105,5 @@
   "mistakes_count": 4,
   "created_at": "2026-04-05T20:45:22.815Z",
   "updated_at": "2026-04-05T20:45:22.815Z",
-  "enriched_at": "2026-04-06T15:58:49.855Z",
-  "verified_source": true
+  "enriched_at": "2026-04-06T15:58:49.855Z"
 }
