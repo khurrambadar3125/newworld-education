@@ -98,22 +98,22 @@ export default function SindhBootcamp() {
               <div style={{ fontSize: 48, marginBottom: 16 }}>🎯</div>
               <h1 style={{ fontSize: 28, fontWeight: 900, marginBottom: 8 }}>Matric <span style={{ color: GOLD }}>Bootcamp</span></h1>
               <p style={{ color: 'rgba(255,255,255,.5)', fontSize: 15, lineHeight: 1.7, marginBottom: 24, maxWidth: 400, margin: '0 auto 24px' }}>
-                Apna goal bataao. Main tumhara personal study plan banata hoon — har roz, har chapter, exam tak.
+                Apna goal bataiye. Main aap ka personal study plan banata hoon — har roz, har chapter, exam tak.
               </p>
               <p style={{ color: 'rgba(255,255,255,.3)', fontSize: 13, marginBottom: 24 }}>
                 Tell me your goal. I'll create your daily plan until exam day.
               </p>
-              <input type="text" placeholder="Tumhara naam? (Your name)" value={studentName}
+              <input type="text" placeholder="Aap ka naam? (Your name)" value={studentName}
                 onChange={e => setStudentName(e.target.value)}
                 style={{ width: '100%', padding: '14px 16px', borderRadius: 10, border: '1px solid rgba(255,255,255,.1)', background: 'rgba(255,255,255,.05)', color: '#fff', fontSize: 16, textAlign: 'center', outline: 'none', marginBottom: 12, boxSizing: 'border-box' }} />
-              <button onClick={() => setStep('class')} style={S.btn(studentName.length > 0)}>Shuru karein →</button>
+              <button onClick={() => setStep('class')} style={S.btn(studentName.length > 0)}>Chalein, shuru karein →</button>
             </div>
           )}
 
           {step === 'class' && (
             <>
               <button onClick={() => setStep('welcome')} style={{ background: 'none', border: 'none', color: '#4F8EF7', fontSize: 13, fontWeight: 700, cursor: 'pointer', marginBottom: 16 }}>← Back</button>
-              <h2 style={{ fontSize: 22, fontWeight: 900, marginBottom: 16 }}>{studentName}, kaun si class?</h2>
+              <h2 style={{ fontSize: 22, fontWeight: 900, marginBottom: 16 }}>{studentName}, aap kaun si class mein hain?</h2>
               <div style={{ display: 'flex', gap: 12 }}>
                 {[9, 10].map(c => (
                   <button key={c} onClick={() => { setSelectedClass(c); setStep('subjects'); }}
@@ -130,8 +130,8 @@ export default function SindhBootcamp() {
           {step === 'subjects' && (
             <>
               <button onClick={() => setStep('class')} style={{ background: 'none', border: 'none', color: '#4F8EF7', fontSize: 13, fontWeight: 700, cursor: 'pointer', marginBottom: 16 }}>← Back</button>
-              <h2 style={{ fontSize: 22, fontWeight: 900, marginBottom: 4 }}>Kaun se subjects, {studentName}?</h2>
-              <p style={{ color: 'rgba(255,255,255,.4)', fontSize: 13, marginBottom: 16 }}>Ek ya sab — jo chaaho select karo.</p>
+              <h2 style={{ fontSize: 22, fontWeight: 900, marginBottom: 4 }}>Aap ke subjects, {studentName}?</h2>
+              <p style={{ color: 'rgba(255,255,255,.4)', fontSize: 13, marginBottom: 16 }}>Ek ya sab — jo chahein select karein.</p>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 8 }}>
                 {SUBJECTS.map(s => {
                   const selected = selectedSubjects.includes(s);
@@ -154,7 +154,7 @@ export default function SindhBootcamp() {
           {step === 'goal' && (
             <>
               <button onClick={() => setStep('subjects')} style={{ background: 'none', border: 'none', color: '#4F8EF7', fontSize: 13, fontWeight: 700, cursor: 'pointer', marginBottom: 16 }}>← Back</button>
-              <h2 style={{ fontSize: 22, fontWeight: 900, marginBottom: 16 }}>Tumhara goal kya hai?</h2>
+              <h2 style={{ fontSize: 22, fontWeight: 900, marginBottom: 16 }}>Aap ka goal kya hai?</h2>
               {GOALS.map(g => (
                 <button key={g.id} onClick={() => { setSelectedGoal(g); }}
                   style={{ ...S.card, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 14,
@@ -168,7 +168,7 @@ export default function SindhBootcamp() {
                 </button>
               ))}
               <button onClick={createPlan} style={{ ...S.btn(!!selectedGoal), background: selectedGoal ? GOLD : 'rgba(255,255,255,.06)', color: selectedGoal ? '#0a0a0a' : '#fff' }}>
-                🎯 Mera Bootcamp Shuru Karo
+                🎯 Mera Bootcamp Shuru Karein
               </button>
             </>
           )}
@@ -196,8 +196,8 @@ export default function SindhBootcamp() {
               {todaysTasks.length === 0 && (
                 <div style={{ ...S.card, textAlign: 'center', background: 'rgba(74,222,128,.04)', borderColor: 'rgba(74,222,128,.2)' }}>
                   <div style={{ fontSize: 28, marginBottom: 8 }}>🎉</div>
-                  <div style={{ fontSize: 16, fontWeight: 800, color: '#4ADE80' }}>Aaj ka kaam hogaya!</div>
-                  <div style={{ fontSize: 13, color: 'rgba(255,255,255,.5)' }}>Kal aana — naye chapters milenge.</div>
+                  <div style={{ fontSize: 16, fontWeight: 800, color: '#4ADE80' }}>Aaj ka kaam hogaya! Bohat ache!</div>
+                  <div style={{ fontSize: 13, color: 'rgba(255,255,255,.5)' }}>Kal aaiye — naye chapters milenge, InshaAllah.</div>
                 </div>
               )}
 

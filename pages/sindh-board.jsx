@@ -222,10 +222,10 @@ export default function SindhBoardStudy() {
                               </div>
                             )}
 
-                            {/* Ask Starky */}
-                            <a href={`/?message=${encodeURIComponent(`I'm studying ${selectedSubject} Class ${selectedClass}, chapter "${ch.name}" (Sindh Board). Can you explain the key concepts?`)}`}
+                            {/* Ask Starky — with return URL so student comes back */}
+                            <a href={`/?message=${encodeURIComponent(`I'm studying ${selectedSubject} Class ${selectedClass}, chapter "${ch.name}" (Sindh Board). Please explain the key concepts briefly then tell me to go back to my notes and practice.`)}&returnTo=${encodeURIComponent('/sindh-board')}`}
                               style={{ display: 'block', textAlign: 'center', fontSize: 12, color: '#4F8EF7', textDecoration: 'none', padding: '10px 0', marginTop: 8 }}>
-                              Don't understand? Ask Starky →
+                              Samajh nahi aaya? Starky se poochein →
                             </a>
                           </>
                         )}
