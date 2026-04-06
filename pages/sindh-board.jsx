@@ -30,6 +30,8 @@ export default function SindhBoardStudy() {
   const [chapters, setChapters] = useState([]);
   const [expandedChapter, setExpandedChapter] = useState(null);
   const [noteData, setNoteData] = useState({});
+  const [mcqAnswers, setMcqAnswers] = useState({}); // { 'subject_class_chId_qIdx': 'B' }
+  const [mcqRevealed, setMcqRevealed] = useState({}); // { 'subject_class_chId_qIdx': true }
 
   useEffect(() => {
     if (!selectedSubject) { setChapters([]); return; }
@@ -214,24 +216,76 @@ export default function SindhBoardStudy() {
                               </div>
                             )}
 
-                            {/* MCQs */}
-                            {note.mcqs?.length > 0 && (
-                              <div style={{ marginTop: 16 }}>
-                                <div style={{ fontSize: 12, fontWeight: 700, color: GOLD, marginBottom: 8, letterSpacing: 1 }}>PRACTICE MCQs</div>
-                                {note.mcqs.map((q, j) => (
-                                  <div key={j} style={{ background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.08)', borderRadius: 10, padding: '14px 16px', marginBottom: 8 }}>
-                                    <div style={{ fontSize: 14, color: 'rgba(255,255,255,.85)', marginBottom: 10, lineHeight: 1.6 }}>{q.question}</div>
-                                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6 }}>
-                                      {Object.entries(q.options || {}).map(([key, val]) => (
-                                        <div key={key} style={{ fontSize: 13, color: key === q.correct ? '#4ADE80' : 'rgba(255,255,255,.5)', padding: '8px 12px', borderRadius: 8, background: key === q.correct ? 'rgba(74,222,128,.08)' : 'rgba(255,255,255,.02)', border: key === q.correct ? '1px solid rgba(74,222,128,.2)' : '1px solid rgba(255,255,255,.04)', fontWeight: key === q.correct ? 700 : 400 }}>
-                                          {key}) {val}
-                                        </div>
-                                      ))}
-                                    </div>
+                            {/* MCQs — INTERACTIVE: student clicks to answer */}
+                            {note.mcqs?.length > 0 && (() => {
+                              const mcqKey = (j) => `${selectedSubject}_${selectedClass}_${ch.id}_${j}`;
+                              const answeredCount = note.mcqs.filter((_, j) => mcqRevealed[mcqKey(j)]).length;
+                              const correctCount = note.mcqs.filter((q, j) => mcqAnswers[mcqKey(j)] === q.correct).length;
+                              const allDone = answeredCount === note.mcqs.length;
+
+                              return (
+                                <div style={{ marginTop: 16 }}>
+                                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
+                                    <div style={{ fontSize: 12, fontWeight: 700, color: GOLD, letterSpacing: 1 }}>PRACTICE MCQs — Jawab dein</div>
+                                    {answeredCount > 0 && <div style={{ fontSize: 12, fontWeight: 700, color: correctCount === answeredCount ? '#4ADE80' : '#F97316' }}>{correctCount}/{answeredCount} sahi</div>}
                                   </div>
-                                ))}
-                              </div>
-                            )}
+                                  {note.mcqs.map((q, j) => {
+                                    const key = mcqKey(j);
+                                    const selected = mcqAnswers[key];
+                                    const revealed = mcqRevealed[key];
+                                    const isCorrect = selected === q.correct;
+
+                                    return (
+                                      <div key={j} style={{ background: 'rgba(255,255,255,.04)', border: `1px solid ${revealed ? (isCorrect ? 'rgba(74,222,128,.2)' : 'rgba(239,68,68,.2)') : 'rgba(255,255,255,.08)'}`, borderRadius: 10, padding: '14px 16px', marginBottom: 8 }}>
+                                        <div style={{ fontSize: 14, color: 'rgba(255,255,255,.85)', marginBottom: 10, lineHeight: 1.6 }}>{q.question}</div>
+                                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6 }}>
+                                          {Object.entries(q.options || {}).map(([optKey, val]) => {
+                                            const isSelected = selected === optKey;
+                                            const isAnswer = optKey === q.correct;
+                                            let bg = 'rgba(255,255,255,.03)';
+                                            let border = '1px solid rgba(255,255,255,.06)';
+                                            let color = 'rgba(255,255,255,.6)';
+                                            let weight = 400;
+
+                                            if (revealed) {
+                                              if (isAnswer) { bg = 'rgba(74,222,128,.1)'; border = '1px solid rgba(74,222,128,.3)'; color = '#4ADE80'; weight = 700; }
+                                              else if (isSelected && !isAnswer) { bg = 'rgba(239,68,68,.1)'; border = '1px solid rgba(239,68,68,.3)'; color = '#EF4444'; weight = 700; }
+                                            } else if (isSelected) {
+                                              bg = 'rgba(79,142,247,.1)'; border = '1px solid rgba(79,142,247,.3)'; color = '#4F8EF7'; weight = 700;
+                                            }
+
+                                            return (
+                                              <button key={optKey}
+                                                onClick={() => {
+                                                  if (revealed) return;
+                                                  setMcqAnswers(prev => ({ ...prev, [key]: optKey }));
+                                                  // Auto-reveal after selection
+                                                  setTimeout(() => setMcqRevealed(prev => ({ ...prev, [key]: true })), 400);
+                                                }}
+                                                style={{ fontSize: 13, color, padding: '10px 12px', borderRadius: 8, background: bg, border, fontWeight: weight, cursor: revealed ? 'default' : 'pointer', textAlign: 'left', transition: 'all 0.2s' }}>
+                                                {optKey}) {val}
+                                              </button>
+                                            );
+                                          })}
+                                        </div>
+                                        {revealed && (
+                                          <div style={{ marginTop: 8, fontSize: 13, fontWeight: 700, color: isCorrect ? '#4ADE80' : '#EF4444' }}>
+                                            {isCorrect ? '✓ Shabash! Bilkul sahi!' : `✗ Sahi jawab: ${q.correct}) — dobara parh ke try karein`}
+                                          </div>
+                                        )}
+                                      </div>
+                                    );
+                                  })}
+                                  {allDone && (
+                                    <div style={{ textAlign: 'center', padding: '12px 0', marginTop: 4 }}>
+                                      <div style={{ fontSize: 15, fontWeight: 800, color: correctCount === note.mcqs.length ? '#4ADE80' : correctCount >= note.mcqs.length / 2 ? '#F97316' : '#EF4444' }}>
+                                        {correctCount === note.mcqs.length ? `Perfect! Sab sahi! 🎉` : `${correctCount}/${note.mcqs.length} sahi — ${correctCount < note.mcqs.length / 2 ? 'Notes dobara parhein' : 'Ache! Agle chapter pe chalein'}`}
+                                      </div>
+                                    </div>
+                                  )}
+                                </div>
+                              );
+                            })()}
 
                             {/* Next chapter suggestion */}
                             {(() => {
