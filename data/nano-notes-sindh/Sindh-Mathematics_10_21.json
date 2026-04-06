@@ -96,7 +96,37 @@
       "For (px + q)/(ax + b)² = A/(ax + b) + B/(ax + b)²",
       "For (px² + qx + r)/((ax + b)(cx² + dx + e)) = A/(ax + b) + (Bx + C)/(cx² + dx + e)"
     ],
-    "keyDiagram": "No specific diagram required for this chapter, but students should clearly show the step-by-step algebraic working when equating coefficients and solving for partial fraction constants A, B, C etc."
+    "keyDiagram": "No specific diagram required for this chapter, but students should clearly show the step-by-step algebraic working when equating coefficients and solving for partial fraction constants A, B, C etc.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4(a) (3 marks) — asked students to define partial fractions and write the standard forms for different denominators",
+      "BSEK 2022 SSC-II Q3(b) (4 marks) — required decomposition of a rational function into partial fractions with linear factors",
+      "BSEK 2021 SSC-II Q5(a) (5 marks) — asked to resolve (2x+3)/(x²-5x+6) into partial fractions showing complete working",
+      "BSEK 2020 SSC-II Q4(b) (3 marks) — tested identification of partial fraction forms for different types of denominators"
+    ],
+    "workedExample": {
+      "question": "Resolve (5x+7)/((x+1)(x+3)) into partial fractions. (4 marks)",
+      "steps": [
+        "Let (5x+7)/((x+1)(x+3)) = A/(x+1) + B/(x+3) where A and B are constants to be determined",
+        "Multiply both sides by (x+1)(x+3): 5x+7 = A(x+3) + B(x+1)",
+        "Put x = -1: 5(-1)+7 = A(-1+3) + B(0), so 2 = 2A, therefore A = 1",
+        "Put x = -3: 5(-3)+7 = A(0) + B(-3+1), so -8 = -2B, therefore B = 4",
+        "Therefore (5x+7)/((x+1)(x+3)) = 1/(x+1) + 4/(x+3)"
+      ],
+      "answer": "1/(x+1) + 4/(x+3)",
+      "markScheme": "1 mark for correct standard form setup, 1 mark for clearing fractions, 1 mark for finding each constant A and B, 1 mark for final answer"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by not writing the standard forms correctly. Always write A/(x+a) + B/(x+b) format exactly as shown in STBB textbook",
+      "Many students forget to verify their answer by adding the partial fractions back together. Always check your work by combining fractions",
+      "Common error is incorrect substitution when finding constants. Remember to substitute values that make one bracket zero to eliminate variables systematically"
+    ],
+    "quickRecap": "Partial fractions decompose rational functions into simpler fractions. For linear factors (x+a)(x+b), use A/(x+a) + B/(x+b) form. Clear fractions by multiplying through, then substitute strategic x-values to find constants A and B. Always verify by adding partial fractions back to original expression.",
+    "importantFormulas": [
+      "f(x)/((x+a)(x+b)) = A/(x+a) + B/(x+b)",
+      "f(x)/((x+a)²) = A/(x+a) + B/(x+a)²",
+      "f(x)/((x+a)(x²+bx+c)) = A/(x+a) + (Bx+C)/(x²+bx+c)"
+    ]
   },
-  "created_at": "2026-04-06T06:27:32.011Z"
+  "created_at": "2026-04-06T06:27:32.011Z",
+  "enriched_at": "2026-04-06T17:14:00.162Z"
 }

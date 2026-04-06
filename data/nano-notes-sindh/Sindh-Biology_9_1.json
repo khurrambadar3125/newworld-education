@@ -100,7 +100,31 @@
       "Always write complete definitions with exact textbook language"
     ],
     "formulas": [],
-    "keyDiagram": "Levels of Biological Organization diagram showing hierarchy from molecules to biosphere with examples at each level (commonly asked to draw and label in exams)"
+    "keyDiagram": "Levels of Biological Organization diagram showing hierarchy from molecules to biosphere with examples at each level (commonly asked to draw and label in exams)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q1 (3 marks) — asked students to define biology and list its main branches with examples",
+      "BSEK 2022 SSC-II Q2 (5 marks) — required definitions of living characteristics and explanation of how they distinguish living from non-living",
+      "BSEK 2021 SSC-II Q3 (4 marks) — tested knowledge of biological organization levels from cell to biosphere",
+      "BSEK 2020 SSC-II Q1 (2 marks) — simple definition of biology and its importance in daily life"
+    ],
+    "workedExample": {
+      "question": "Define biology and explain any three characteristics of living organisms. (5 marks)",
+      "steps": [
+        "Write the exact textbook definition of biology",
+        "List three characteristics of living organisms",
+        "Provide brief explanation for each characteristic using textbook language"
+      ],
+      "answer": "Biology is the scientific study of life and living organisms. Three characteristics of living organisms are: (1) Growth and Development - all living things increase in size and complexity over time, (2) Reproduction - living organisms produce offspring of their own kind to continue their species, (3) Response to Stimuli - living things react to changes in their environment to maintain survival.",
+      "markScheme": "1 mark for correct definition of biology, 1 mark each for naming three characteristics (3 marks), 1 mark for overall coherent explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for defining biology and living characteristics.",
+      "Avoid giving examples when only definitions are asked. Sindh Board marks strictly according to textbook definitions, not practical applications.",
+      "When listing characteristics of living organisms, use the exact terminology from the textbook. Writing 'living things grow' instead of 'growth and development' may lose marks."
+    ],
+    "quickRecap": "Biology is the scientific study of life and living organisms. Living organisms show specific characteristics: growth and development, reproduction, metabolism, response to stimuli, homeostasis, cellular organization, and heredity. These characteristics distinguish living from non-living things. Biology has many branches including botany, zoology, microbiology, and ecology.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:13:37.859Z"
+  "created_at": "2026-04-06T06:13:37.859Z",
+  "enriched_at": "2026-04-06T16:49:29.165Z"
 }

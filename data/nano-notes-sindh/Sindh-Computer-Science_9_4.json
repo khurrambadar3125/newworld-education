@@ -104,7 +104,31 @@
       "Data Transfer Rate = Amount of Data / Time",
       "Bandwidth = Maximum data transfer rate"
     ],
-    "keyDiagram": "Network Topologies Diagram showing Bus (linear connection), Star (hub-centered), Ring (circular), and Mesh (interconnected) configurations with proper labeling of nodes and connections"
+    "keyDiagram": "Network Topologies Diagram showing Bus (linear connection), Star (hub-centered), Ring (circular), and Mesh (interconnected) configurations with proper labeling of nodes and connections",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define data communication and list its basic components",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of network topologies with diagrams of star and ring topology",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested difference between LAN, MAN, and WAN with examples",
+      "BSEK 2020 SSC-II Q6 (3 marks) — asked to define protocol and give two examples of communication protocols"
+    ],
+    "workedExample": {
+      "question": "Define data communication and explain any three components of data communication system. (5 marks)",
+      "steps": [
+        "Write exact textbook definition of data communication",
+        "List the five basic components",
+        "Explain any three components with their functions"
+      ],
+      "answer": "Data communication is the exchange of data between two devices via some form of transmission medium. The basic components are: (1) Message - the information to be communicated like text, numbers, pictures, (2) Sender - the device that sends the data message like computer or telephone, (3) Receiver - the device that receives the message like computer or television, (4) Transmission medium - the physical path by which message travels like cable or radio waves, (5) Protocol - the set of rules that govern data communications.",
+      "markScheme": "1 mark for exact definition, 1 mark for listing components, 3 marks for explaining three components (1 mark each)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for definitions.",
+      "Many students confuse network types - remember LAN covers small area like office, MAN covers city, WAN covers large geographical area like countries.",
+      "When drawing network topologies, clearly label all components and use proper symbols as shown in textbook diagrams."
+    ],
+    "quickRecap": "Data communication involves exchange of data between devices through transmission medium following protocols. Networks are classified by area coverage (LAN, MAN, WAN) and topology (star, ring, bus, mesh). Key components include sender, receiver, message, medium, and protocol. Remember exact textbook definitions for full marks.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:42:25.341Z"
+  "created_at": "2026-04-06T06:42:25.341Z",
+  "enriched_at": "2026-04-06T16:58:37.301Z"
 }

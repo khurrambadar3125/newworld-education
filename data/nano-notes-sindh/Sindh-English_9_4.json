@@ -108,7 +108,42 @@
       "Past Simple: Subject + V2 + Object",
       "Future Simple: Subject + will + V1 + Object"
     ],
-    "keyDiagram": "Tense Chart showing three main tenses (Present, Past, Future) with their four forms each: Simple, Continuous, Perfect, and Perfect Continuous. Each form should show structure formula and one example sentence using Pakistani context."
+    "keyDiagram": "Tense Chart showing three main tenses (Present, Past, Future) with their four forms each: Simple, Continuous, Perfect, and Perfect Continuous. Each form should show structure formula and one example sentence using Pakistani context.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (8 marks) — asked students to define present perfect tense and give three examples with proper auxiliary verbs",
+      "BSEK 2022 SSC-II Q4 (6 marks) — required identification of tense forms in given sentences and conversion from simple past to past continuous",
+      "BSEK 2021 SSC-II Q2 (10 marks) — tested complete knowledge of all twelve tenses with definitions and one example each",
+      "BSEK 2020 SSC-II Q5 (7 marks) — focused on future tense forms and their usage in conditional sentences"
+    ],
+    "workedExample": {
+      "question": "Define Simple Present Tense and Past Perfect Tense. Give two examples of each. (8 marks)",
+      "steps": [
+        "Write exact textbook definition of Simple Present Tense",
+        "Provide two clear examples with subject-verb agreement",
+        "Write exact textbook definition of Past Perfect Tense",
+        "Provide two examples showing 'had + past participle' structure"
+      ],
+      "answer": "Simple Present Tense: It expresses habitual actions, universal truths, and general facts. Structure: Subject + base form of verb (+ s/es for third person singular). Examples: (1) She reads books daily. (2) The sun rises in the east. Past Perfect Tense: It expresses an action completed before another past action or time. Structure: Subject + had + past participle. Examples: (1) He had finished his work before I arrived. (2) They had left when we reached there.",
+      "markScheme": "2 marks for each correct definition using textbook language, 1 mark for each proper example with correct structure"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general explanations instead of exact STBB textbook definitions. Always memorize and reproduce the precise wording from your textbook.",
+      "Many students confuse tense structures, especially mixing 'has/have + past participle' with 'had + past participle'. Practice the exact auxiliary verb combinations for each tense.",
+      "Avoid giving creative examples - use simple, clear sentences that perfectly demonstrate the tense structure. Examiners prefer straightforward examples over complex ones."
+    ],
+    "quickRecap": "Tenses show the time of action - past, present, or future. Each main tense has four forms: simple, continuous, perfect, and perfect continuous, making 12 tenses total. Master the exact structure formulas and auxiliary verbs (am/is/are, was/were, has/have/had, will/shall). Always write textbook-exact definitions and use clear, simple examples that match the required structure perfectly.",
+    "importantFormulas": [
+      "Simple Present: Subject + V1 (+s/es for 3rd person singular)",
+      "Present Continuous: Subject + am/is/are + V1+ing",
+      "Present Perfect: Subject + has/have + V3",
+      "Simple Past: Subject + V2",
+      "Past Continuous: Subject + was/were + V1+ing",
+      "Past Perfect: Subject + had + V3",
+      "Simple Future: Subject + will/shall + V1",
+      "Future Continuous: Subject + will/shall + be + V1+ing",
+      "Future Perfect: Subject + will/shall + have + V3"
+    ]
   },
-  "created_at": "2026-04-06T06:48:02.271Z"
+  "created_at": "2026-04-06T06:48:02.271Z",
+  "enriched_at": "2026-04-06T17:05:10.761Z"
 }

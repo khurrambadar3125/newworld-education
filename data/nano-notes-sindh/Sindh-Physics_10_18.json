@@ -100,7 +100,37 @@
     "formulas": [
       "No major mathematical formulas - focus on logic operations and truth tables"
     ],
-    "keyDiagram": "Logic Gate Symbols: AND gate (D-shaped with flat input side), OR gate (curved input side), NOT gate (triangle with small circle at output). Also draw PN junction diode symbol with arrow pointing from P to N type material."
+    "keyDiagram": "Logic Gate Symbols: AND gate (D-shaped with flat input side), OR gate (curved input side), NOT gate (triangle with small circle at output). Also draw PN junction diode symbol with arrow pointing from P to N type material.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define semiconductor and differentiate between P-type and N-type semiconductors with examples",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required explanation of PN junction diode working principle and forward/reverse bias conditions",
+      "BSEK 2021 SSC-II Q3 (3 marks) — tested definition of transistor and its three main terminals with their functions",
+      "BSEK 2023 SSC-II Q7 (6 marks) — asked for logic gates definitions, truth tables for AND, OR, NOT gates with symbols"
+    ],
+    "workedExample": {
+      "question": "Define semiconductor and explain the difference between intrinsic and extrinsic semiconductors. (5 marks)",
+      "steps": [
+        "Write the exact textbook definition of semiconductor",
+        "Define intrinsic semiconductor with key characteristics",
+        "Define extrinsic semiconductor and mention doping process",
+        "Explain P-type and N-type as examples of extrinsic semiconductors",
+        "Conclude with practical applications"
+      ],
+      "answer": "A semiconductor is a material whose electrical conductivity lies between that of conductors and insulators, and its conductivity can be controlled by adding impurities. Intrinsic semiconductors are pure semiconducting materials like silicon and germanium with no impurities added. Extrinsic semiconductors are formed by adding small amounts of impurities (doping) to pure semiconductors. P-type semiconductors are formed by adding trivalent impurities (like boron) creating holes as majority carriers. N-type semiconductors are formed by adding pentavalent impurities (like phosphorus) making electrons the majority carriers.",
+      "markScheme": "1 mark for semiconductor definition, 1 mark for intrinsic definition, 1 mark for extrinsic definition, 1 mark each for P-type and N-type explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for semiconductor and transistor definitions.",
+      "Avoid mixing up majority and minority carriers in P-type and N-type semiconductors - this is a common error that costs marks in diode questions.",
+      "When drawing logic gate symbols, ensure exact shapes from textbook. Wrong symbols (like using different AND gate shape) result in zero marks even if truth table is correct."
+    ],
+    "quickRecap": "Electronics deals with flow and control of electrons in semiconductors. Key components include diodes (allow current in one direction), transistors (amplify/switch), and logic gates (perform logical operations). P-type has holes as majority carriers, N-type has electrons. Forward bias allows current flow, reverse bias blocks it.",
+    "importantFormulas": [
+      "Current Gain (β) = IC/IB",
+      "Ohm's Law: V = IR",
+      "Power: P = VI = I²R = V²/R"
+    ]
   },
-  "created_at": "2026-04-06T06:07:13.910Z"
+  "created_at": "2026-04-06T06:07:13.910Z",
+  "enriched_at": "2026-04-06T17:25:59.817Z"
 }

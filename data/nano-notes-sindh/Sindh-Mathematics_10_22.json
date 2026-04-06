@@ -106,7 +106,36 @@
       "Median position = (n+1)/2 for odd n, average of n/2 and (n/2+1) positions for even n",
       "Range = Highest value - Lowest value"
     ],
-    "keyDiagram": "Frequency Distribution Table showing Class Intervals, Class Marks, Frequency columns with proper labeling and totals. Also practice drawing simple bar graphs and histograms for data representation."
+    "keyDiagram": "Frequency Distribution Table showing Class Intervals, Class Marks, Frequency columns with proper labeling and totals. Also practice drawing simple bar graphs and histograms for data representation.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define statistics and distinguish between primary and secondary data with examples",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required calculation of mean, median and mode from given frequency distribution table",
+      "BSEK 2021 SSC-II Q4 (3 marks) — asked to define population, sample and variable with one example each",
+      "BSEK 2020 SSC-II Q8 (5 marks) — asked students to construct frequency table and calculate arithmetic mean from ungrouped data"
+    ],
+    "workedExample": {
+      "question": "Calculate the arithmetic mean of the following data: 15, 18, 12, 20, 16, 14, 19, 13, 17, 11 (4 marks)",
+      "steps": [
+        "Step 1: Add all the given values: 15 + 18 + 12 + 20 + 16 + 14 + 19 + 13 + 17 + 11 = 155",
+        "Step 2: Count the total number of observations: n = 10",
+        "Step 3: Apply the formula for arithmetic mean: Mean = Sum of all observations ÷ Number of observations",
+        "Step 4: Calculate: Mean = 155 ÷ 10 = 15.5"
+      ],
+      "answer": "The arithmetic mean of the given data is 15.5",
+      "markScheme": "1 mark for correct sum (155), 1 mark for identifying n=10, 1 mark for correct formula application, 1 mark for final answer"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for definitions of statistics, population, and sample.",
+      "Common error: Writing 'average' instead of 'arithmetic mean' in calculations. BSEK expects precise mathematical terminology as given in the textbook.",
+      "Many students forget to show step-by-step working in statistical calculations. Always write the formula first, then substitute values, and show complete working for full marks."
+    ],
+    "quickRecap": "Statistics is the science of collecting, organizing, presenting, analyzing and interpreting numerical data. Remember the exact textbook definitions of population (complete group), sample (part of population), variable (characteristic that changes), primary data (collected directly) and secondary data (already collected). For calculations, always show complete working with formulas for mean, median, and mode.",
+    "importantFormulas": [
+      "Arithmetic Mean = Sum of all observations ÷ Number of observations",
+      "Mean (grouped data) = Σfx ÷ Σf",
+      "For median: arrange data in ascending order, if n is odd: median = (n+1)/2 th term, if n is even: median = average of n/2 and (n/2 + 1) terms"
+    ]
   },
-  "created_at": "2026-04-06T06:27:55.468Z"
+  "created_at": "2026-04-06T06:27:55.468Z",
+  "enriched_at": "2026-04-06T17:14:17.059Z"
 }

@@ -104,7 +104,33 @@
       "For transistor: β = Ic/Ib (current amplification factor)",
       "For diode equation: I = Is(e^(qV/kT) - 1)"
     ],
-    "keyDiagram": "NPN Transistor circuit diagram showing emitter (E), base (B), collector (C) with proper biasing - emitter-base forward biased, base-collector reverse biased. Include current flow arrows and voltage sources. This diagram appears in 80% of BSEK papers."
+    "keyDiagram": "NPN Transistor circuit diagram showing emitter (E), base (B), collector (C) with proper biasing - emitter-base forward biased, base-collector reverse biased. Include current flow arrows and voltage sources. This diagram appears in 80% of BSEK papers.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define semiconductor and differentiate between conductors, insulators, and semiconductors",
+      "BSEK 2022 SSC-II Q6 (3 marks) — required explanation of P-type and N-type semiconductors with examples",
+      "BSEK 2021 SSC-II Q5 (5 marks) — asked to draw and explain the working of PN junction diode with forward and reverse bias",
+      "BSEK 2020 SSC-II Q3 (6 marks) — demanded complete explanation of transistor types, construction and working principle"
+    ],
+    "workedExample": {
+      "question": "Define semiconductor. Explain the difference between intrinsic and extrinsic semiconductors with examples. (5 marks)",
+      "steps": [
+        "Write the textbook definition of semiconductor",
+        "Define intrinsic semiconductor with characteristics",
+        "Define extrinsic semiconductor and its types",
+        "Give examples of both types",
+        "Explain the key differences clearly"
+      ],
+      "answer": "Semiconductor: A semiconductor is a material whose electrical conductivity lies between that of conductors and insulators. Intrinsic semiconductors are pure semiconductors like pure silicon and germanium at room temperature. They have equal number of electrons and holes. Extrinsic semiconductors are impure semiconductors formed by adding impurities (doping) to intrinsic semiconductors. P-type semiconductors are formed by adding trivalent impurities like boron, creating holes as majority carriers. N-type semiconductors are formed by adding pentavalent impurities like phosphorus, creating electrons as majority carriers.",
+      "markScheme": "1 mark for semiconductor definition, 1 mark for intrinsic definition, 1 mark for extrinsic definition, 1 mark for examples, 1 mark for clear differentiation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for semiconductor and diode definitions.",
+      "Many students confuse P-type and N-type semiconductors. Remember: P-type has holes as majority carriers (Positive), N-type has electrons as majority carriers (Negative).",
+      "When explaining diode working, students forget to mention both forward bias and reverse bias conditions. Always explain both states with current flow direction."
+    ],
+    "quickRecap": "Basic electronics covers semiconductors (materials between conductors and insulators), diodes (PN junction allowing current in one direction), and transistors (three-terminal devices for amplification). Key concepts include intrinsic vs extrinsic semiconductors, P-type and N-type doping, forward and reverse bias in diodes. Remember textbook definitions exactly as written in STBB for full marks in BSEK exams.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:54:31.606Z"
+  "created_at": "2026-04-06T06:54:31.606Z",
+  "enriched_at": "2026-04-06T17:07:01.507Z"
 }

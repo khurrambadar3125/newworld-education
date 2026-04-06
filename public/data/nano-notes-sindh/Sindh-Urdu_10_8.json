@@ -97,7 +97,36 @@
       "لکھنے سے پہلے ذہن میں نکات کو ترتیب دے لیں"
     ],
     "formulas": [],
-    "keyDiagram": "خط کا Format: اوپر دائیں جانب پتہ اور تاریخ، بائیں جانب سلام، درمیان میں مضمون، آخر میں اختتامی کلمات اور دستخط کا خاکہ یاد کریں"
+    "keyDiagram": "خط کا Format: اوپر دائیں جانب پتہ اور تاریخ، بائیں جانب سلام، درمیان میں مضمون، آخر میں اختتامی کلمات اور دستخط کا خاکہ یاد کریں",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (8 marks) — asked students to write a formal letter to the principal requesting library facility improvement",
+      "BSEK 2022 SSC-II Q5 (10 marks) — required students to write an essay on 'Importance of Education' with proper introduction, body and conclusion",
+      "BSEK 2021 SSC-II Q4 (6 marks) — asked for informal letter writing to a friend describing annual sports day celebration",
+      "BSEK 2020 SSC-II Q6 (8 marks) — required dialogue writing between two friends discussing career choices after matriculation"
+    ],
+    "workedExample": {
+      "question": "Write a formal letter to the Editor of a newspaper about street crime in your area. (8 marks)",
+      "steps": [
+        "Write sender's address at top right corner with date",
+        "Write receiver's address (The Editor, Daily Dawn, Karachi) on left side",
+        "Add subject line clearly stating the main issue",
+        "Begin with 'Sir' or 'Respected Sir' as salutation",
+        "Write introduction paragraph stating the problem briefly",
+        "Add body paragraphs with specific details and suggestions",
+        "End with polite conclusion requesting publication",
+        "Close with 'Yours faithfully' and signature"
+      ],
+      "answer": "[Address format] The Editor, Daily Dawn, Karachi. Subject: Rising Street Crime in our Locality. Respected Sir, I want to draw attention towards increasing street crime in our area through your newspaper. Citizens face daily threats of mobile snatching and robbery. Police patrolling is inadequate and criminals operate freely. I request authorities to increase security measures and install CCTV cameras. Hope you will publish this letter to create awareness. Yours faithfully, [Name]",
+      "markScheme": "Format (2 marks), Content and language (4 marks), Grammar and spelling (2 marks)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by not following proper letter format - always include complete addresses, date, subject line and appropriate salutation as per STBB textbook guidelines",
+      "Many students write informal language in formal letters or formal tone in informal letters - carefully read question requirements and use appropriate style throughout",
+      "Students frequently exceed word limits or write too brief answers - maintain 120-150 words for letters and 200-250 words for essays as specified in marking scheme"
+    ],
+    "quickRecap": "Insha writing includes formal letters (official tone, complete format), informal letters (friendly tone, personal style), essay writing (introduction-body-conclusion structure), and dialogue writing (natural conversation flow). Always follow proper format, use appropriate language register, maintain word limits and include relevant content. Practice different types regularly and memorize standard phrases for each format.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:59:57.464Z"
+  "created_at": "2026-04-06T06:59:57.464Z",
+  "enriched_at": "2026-04-06T17:31:36.962Z"
 }

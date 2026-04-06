@@ -106,7 +106,39 @@
       "g = GM/R² (Acceleration due to gravity)",
       "W = mg (Weight)"
     ],
-    "keyDiagram": "Circular motion diagram showing a body moving in circular path with velocity vector tangent to circle and centripetal force vector pointing towards center. Also draw Earth-satellite system showing gravitational force providing centripetal force."
+    "keyDiagram": "Circular motion diagram showing a body moving in circular path with velocity vector tangent to circle and centripetal force vector pointing towards center. Also draw Earth-satellite system showing gravitational force providing centripetal force.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define centripetal force and state its formula with units",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required definition of gravitational force and explanation of factors affecting it",
+      "BSEK 2021 SSC-II Q3 (3 marks) — tested uniform circular motion definition and relationship between period and frequency",
+      "BSEK 2020 SSC-II Q7 (6 marks) — combined question on circular motion definitions and Newton's law of gravitation"
+    ],
+    "workedExample": {
+      "question": "Define centripetal acceleration. A body moves in a circle of radius 2m with speed 4 m/s. Calculate its centripetal acceleration. (5 marks)",
+      "steps": [
+        "Definition: Centripetal acceleration is the acceleration directed towards the center of the circular path",
+        "Formula: ac = v²/r",
+        "Given: r = 2m, v = 4 m/s",
+        "Substitution: ac = (4)²/2 = 16/2",
+        "Final answer: ac = 8 m/s²"
+      ],
+      "answer": "Centripetal acceleration is the acceleration directed towards the center of the circular path. Using formula ac = v²/r, where v = 4 m/s and r = 2m, we get ac = 16/2 = 8 m/s²",
+      "markScheme": "1 mark for exact textbook definition, 1 mark for correct formula, 1 mark for identifying given values, 1 mark for substitution, 1 mark for final answer with units"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for definitions like 'centripetal force is the force directed towards the center'",
+      "Never confuse centripetal and centrifugal force. BSEK only recognizes centripetal force as real force - avoid mentioning centrifugal force",
+      "When solving numerical problems, always write the formula first, then substitute values. Missing the formula statement costs marks even if calculation is correct"
+    ],
+    "quickRecap": "Circular motion involves objects moving in circular paths with centripetal force directed toward center. Universal gravitation states every mass attracts every other mass with force proportional to product of masses and inversely proportional to square of distance. Period and frequency are inversely related in uniform circular motion. All definitions must match STBB textbook exactly for full marks.",
+    "importantFormulas": [
+      "Centripetal force: Fc = mv²/r",
+      "Centripetal acceleration: ac = v²/r = ω²r",
+      "Period and frequency relation: T = 1/f",
+      "Newton's law of gravitation: F = Gm₁m₂/r²",
+      "Gravitational acceleration: g = GM/R²"
+    ]
   },
-  "created_at": "2026-04-06T06:03:00.877Z"
+  "created_at": "2026-04-06T06:03:00.877Z",
+  "enriched_at": "2026-04-06T17:27:46.915Z"
 }

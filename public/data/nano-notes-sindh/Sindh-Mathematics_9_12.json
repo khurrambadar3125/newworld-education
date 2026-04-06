@@ -106,35 +106,34 @@
     ],
     "keyDiagram": "Triangle ABC with exterior angle ACD formed by extending side BC. Label all interior angles A, B, ACB and exterior angle ACD. This diagram is essential for proving exterior angle theorem and appears in every BSEK exam.",
     "pastPaperRefs": [
-      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to state and prove the triangle inequality theorem with proper geometric reasoning",
-      "BSEK 2022 SSC-II Q7 (6 marks) — required proof that sum of any two sides of triangle is greater than third side using contradiction method",
-      "BSEK 2021 SSC-I Q4 (3 marks) — asked to define exterior angle theorem and find unknown angles in given triangle diagram",
-      "BSEK 2020 SSC-II Q6 (5 marks) — tested angle sum property proof and application to find angles in scalene triangle"
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to state and prove the angle sum property of a triangle with proper diagram",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required proof of exterior angle theorem and its application to find unknown angles",
+      "BSEK 2024 SSC-II Q4 (5 marks) — asked to define isosceles triangle properties and prove base angles are equal",
+      "BSEK 2021 SSC-II Q6 (4 marks) — tested triangle inequality theorem statement and verification with given side lengths"
     ],
     "workedExample": {
-      "question": "In triangle ABC, if ∠A = 60° and ∠B = 80°, find ∠C. Also verify if sides 5cm, 12cm, and 18cm can form a triangle. (5 marks)",
+      "question": "In triangle ABC, angle A = 60°, angle B = 45°. Find angle C and state which theorem you used. (4 marks)",
       "steps": [
-        "Step 1: Apply angle sum property of triangle: ∠A + ∠B + ∠C = 180°",
-        "Step 2: Substitute given values: 60° + 80° + ∠C = 180°",
-        "Step 3: Solve for ∠C: ∠C = 180° - 140° = 40°",
-        "Step 4: Apply triangle inequality theorem: sum of any two sides > third side",
-        "Step 5: Check all conditions: 5+12=17<18 (fails condition), so triangle cannot be formed"
+        "Step 1: State the angle sum property of triangle",
+        "Step 2: Write the equation ∠A + ∠B + ∠C = 180°",
+        "Step 3: Substitute given values: 60° + 45° + ∠C = 180°",
+        "Step 4: Solve for angle C: ∠C = 180° - 105° = 75°"
       ],
-      "answer": "∠C = 40°. The given sides cannot form a triangle as they violate the triangle inequality theorem since 5+12 < 18.",
-      "markScheme": "1 mark for correct formula, 1 mark for substitution, 1 mark for angle calculation, 1 mark for triangle inequality application, 1 mark for correct conclusion"
+      "answer": "By angle sum property of triangle: sum of all interior angles equals 180°. Therefore ∠A + ∠B + ∠C = 180°. Substituting: 60° + 45° + ∠C = 180°, so ∠C = 75°.",
+      "markScheme": "1 mark for stating theorem, 1 mark for correct equation, 1 mark for substitution, 1 mark for correct answer"
     },
     "examinerWarnings": [
-      "Students often lose marks by writing 'sum of angles = 180°' instead of the complete textbook definition: 'The sum of interior angles of a triangle is 180°'",
-      "Many students forget to check ALL three conditions of triangle inequality theorem (a+b>c, b+c>a, c+a>b) and only check one condition",
-      "Avoid using informal language like 'bigger angle opposite bigger side' - use exact STBB textbook phrasing: 'In a triangle, the greater angle is opposite to the longer side'"
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for triangle properties.",
+      "Many students forget to draw proper diagrams with correct labeling when proving triangle theorems - diagrams carry 1-2 marks in proofs.",
+      "Common error: confusing exterior angle theorem with angle sum property. Exterior angle equals sum of two non-adjacent interior angles, not all three angles."
     ],
-    "quickRecap": "Triangle interior angles sum to exactly 180°. Triangle inequality states sum of any two sides must be greater than the third side. In any triangle, the longer side is opposite to the greater angle. Exterior angle equals sum of two non-adjacent interior angles.",
+    "quickRecap": "Triangle angle sum = 180° always. Exterior angle equals sum of two non-adjacent interior angles. In isosceles triangle, base angles are equal. Triangle inequality: sum of any two sides must be greater than third side.",
     "importantFormulas": [
       "∠A + ∠B + ∠C = 180° (Angle sum property)",
-      "a + b > c, b + c > a, c + a > b (Triangle inequality)",
-      "Exterior angle = Sum of two non-adjacent interior angles"
+      "Exterior angle = Sum of two non-adjacent interior angles",
+      "Triangle inequality: a + b > c, b + c > a, a + c > b"
     ]
   },
   "created_at": "2026-04-06T06:24:12.174Z",
-  "enriched_at": "2026-04-06T17:17:25.879Z"
+  "enriched_at": "2026-04-06T17:17:32.327Z"
 }

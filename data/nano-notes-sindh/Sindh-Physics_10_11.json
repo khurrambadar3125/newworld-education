@@ -106,7 +106,38 @@
       "Q = mL (Heat = mass × latent heat)",
       "C = mc (Heat capacity = mass × specific heat capacity)"
     ],
-    "keyDiagram": "Heat transfer methods diagram showing: 1) Conduction in metal rod with particles vibrating 2) Convection in water with circulation arrows 3) Radiation from sun to earth with wave lines. Label each method clearly with examples."
+    "keyDiagram": "Heat transfer methods diagram showing: 1) Conduction in metal rod with particles vibrating 2) Convection in water with circulation arrows 3) Radiation from sun to earth with wave lines. Label each method clearly with examples.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define heat and temperature with two differences between them",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of three methods of heat transfer with one example each",
+      "BSEK 2021 SSC-II Q4 (3 marks) — asked to define specific heat capacity and write its formula",
+      "BSEK 2020 SSC-II Q8 (5 marks) — calculation problem on heat energy using Q = mcΔT formula"
+    ],
+    "workedExample": {
+      "question": "Define heat and temperature. State any two differences between them. (5 marks)",
+      "steps": [
+        "Define heat using exact textbook definition",
+        "Define temperature using exact textbook definition",
+        "State first difference clearly",
+        "State second difference clearly"
+      ],
+      "answer": "Heat: Heat is a form of energy that flows from a body at higher temperature to a body at lower temperature. Temperature: Temperature is the degree of hotness or coldness of a body. Differences: (1) Heat is a form of energy while temperature is the degree of hotness. (2) Heat is measured in Joules while temperature is measured in Celsius or Kelvin.",
+      "markScheme": "1 mark for heat definition, 1 mark for temperature definition, 1.5 marks for each difference stated correctly"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for heat and temperature definitions.",
+      "Many students confuse heat and temperature concepts. Remember: heat is energy transfer, temperature is degree of hotness - never interchange these terms.",
+      "In calculation problems, students forget to write the formula first before substitution. Always write Q = mcΔT, then substitute values to get full marks."
+    ],
+    "quickRecap": "Heat is energy transfer from hot to cold bodies, measured in Joules. Temperature is degree of hotness, measured in Celsius/Kelvin. Heat transfers through conduction (direct contact), convection (fluid movement), and radiation (electromagnetic waves). Use Q = mcΔT for heat calculations where m is mass, c is specific heat capacity, and ΔT is temperature change.",
+    "importantFormulas": [
+      "Q = mcΔT (Heat energy formula)",
+      "Q = Heat energy (Joules)",
+      "m = mass (kg)",
+      "c = specific heat capacity (J/kg°C)",
+      "ΔT = change in temperature (°C)"
+    ]
   },
-  "created_at": "2026-04-06T06:04:28.417Z"
+  "created_at": "2026-04-06T06:04:28.417Z",
+  "enriched_at": "2026-04-06T17:24:04.100Z"
 }

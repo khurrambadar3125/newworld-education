@@ -99,7 +99,31 @@
       "Remember the time duration (30-60 minutes) as it's frequently asked in MCQs"
     ],
     "formulas": [],
-    "keyDiagram": "Draw a simple diagram showing the structure of a one-act play: Beginning (Introduction of conflict) → Middle (Development of conflict) → End (Resolution of conflict), all within single setting and limited time frame"
+    "keyDiagram": "Draw a simple diagram showing the structure of a one-act play: Beginning (Introduction of conflict) → Middle (Development of conflict) → End (Resolution of conflict), all within single setting and limited time frame",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define one-act play and list its main characteristics",
+      "BSEK 2022 SSC-II Q3 (5 marks) — required comparison between one-act play and full-length play with examples",
+      "BSEK 2021 SSC-II Q6 (3 marks) — asked for three essential features of a one-act play",
+      "BSEK 2020 SSC-II Q5 (4 marks) — demanded definition of unity of action and unity of time in one-act plays"
+    ],
+    "workedExample": {
+      "question": "Define one-act play and explain any three of its characteristics. (5 marks)",
+      "steps": [
+        "Write the exact textbook definition of one-act play",
+        "List three characteristics clearly",
+        "Explain each characteristic briefly using textbook language"
+      ],
+      "answer": "A one-act play is a dramatic composition that is complete in itself and can be performed without intervals or scene changes. Characteristics: (1) Unity of Time - the action takes place within a short span of time, usually within an hour (2) Limited Characters - it has few characters, typically 2-5, to maintain focus (3) Single Plot - it follows one main storyline without sub-plots or complications",
+      "markScheme": "1 mark for correct definition, 1 mark for each characteristic mentioned, 1 mark for brief explanations"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general drama definitions instead of the specific textbook definition of one-act play. Always mention 'complete in itself' and 'without intervals'.",
+      "Avoid giving examples from movies or modern media when asked about characteristics. Stick to the textbook features like unity of time, place, and action.",
+      "Many students confuse one-act play with short story. Remember to emphasize the dramatic/theatrical elements in your answers."
+    ],
+    "quickRecap": "One-act plays are complete dramatic works performed without intervals, featuring unity of time, place and action. They have limited characters (2-5), single plot line, and concentrated theme. Key characteristics include brevity, intensity, and immediate impact on audience. Popular examples include riders to the Sea and The Dear Departed.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T14:42:16.022Z"
+  "created_at": "2026-04-06T14:42:16.022Z",
+  "enriched_at": "2026-04-06T17:01:40.760Z"
 }

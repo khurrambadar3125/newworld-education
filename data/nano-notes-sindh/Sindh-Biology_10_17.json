@@ -100,7 +100,32 @@
       "Applications of biotechnology in Pakistan context may be asked - mention cotton and wheat varieties"
     ],
     "formulas": [],
-    "keyDiagram": "Fermentation Process Diagram: Draw a sealed container with yeast cells, glucose molecules converting to ethanol and CO2 bubbles. Label: (1) Yeast cells (2) Glucose (sugar) (3) Ethanol (4) Carbon dioxide gas (5) Anaerobic conditions. Show the equation: C6H12O6 → 2C2H5OH + 2CO2"
+    "keyDiagram": "Fermentation Process Diagram: Draw a sealed container with yeast cells, glucose molecules converting to ethanol and CO2 bubbles. Label: (1) Yeast cells (2) Glucose (sugar) (3) Ethanol (4) Carbon dioxide gas (5) Anaerobic conditions. Show the equation: C6H12O6 → 2C2H5OH + 2CO2",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define biotechnology and list two applications in agriculture",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required explanation of genetic engineering process and one example",
+      "BSEK 2021 SSC-II Q3 (3 marks) — asked to differentiate between traditional and modern biotechnology",
+      "BSEK 2020 SSC-II Q5 (6 marks) — demanded definition of fermentation and its role in biotechnology with examples"
+    ],
+    "workedExample": {
+      "question": "Define biotechnology. Explain the process of genetic engineering with one example. (6 marks)",
+      "steps": [
+        "Write exact STBB definition of biotechnology",
+        "Define genetic engineering using textbook terminology",
+        "Explain the 4-step process of genetic engineering",
+        "Provide one clear example with specific details"
+      ],
+      "answer": "Biotechnology is the use of living organisms or their products to modify human health and environment. Genetic engineering is the technique of manipulating genes in living organisms to produce desired characteristics. Process: (1) Isolation of desired gene (2) Insertion into vector (3) Introduction into host organism (4) Selection of transformed organisms. Example: Insertion of human insulin gene into bacteria to produce human insulin for diabetes treatment.",
+      "markScheme": "1 mark for biotechnology definition, 1 mark for genetic engineering definition, 3 marks for process steps, 1 mark for correct example"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for biotechnology and genetic engineering definitions.",
+      "Avoid mixing up traditional biotechnology (fermentation, brewing) with modern biotechnology (genetic engineering, tissue culture). Clearly distinguish between the two.",
+      "When explaining genetic engineering process, students frequently forget to mention the vector step. Always include all four steps: isolation, insertion into vector, introduction into host, and selection."
+    ],
+    "quickRecap": "Biotechnology uses living organisms to benefit humans and environment. Traditional biotechnology includes fermentation and brewing, while modern biotechnology involves genetic engineering and tissue culture. Genetic engineering follows four steps: gene isolation, vector insertion, host introduction, and organism selection. Key applications include insulin production, crop improvement, and antibiotic manufacturing.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:19:31.191Z"
+  "created_at": "2026-04-06T06:19:31.191Z",
+  "enriched_at": "2026-04-06T16:49:00.244Z"
 }

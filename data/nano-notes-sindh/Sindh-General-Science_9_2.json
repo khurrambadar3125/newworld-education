@@ -106,7 +106,32 @@
       "pH = -log[H+]",
       "Density = Mass/Volume"
     ],
-    "keyDiagram": "pH scale showing values 0-14 with examples: Battery acid (pH 0), Lemon juice (pH 2), Pure water (pH 7), Baking soda (pH 9), Household ammonia (pH 11), Sodium hydroxide (pH 14). Mark acidic (0-6), neutral (7), and basic (8-14) regions clearly."
+    "keyDiagram": "pH scale showing values 0-14 with examples: Battery acid (pH 0), Lemon juice (pH 2), Pure water (pH 7), Baking soda (pH 9), Household ammonia (pH 11), Sodium hydroxide (pH 14). Mark acidic (0-6), neutral (7), and basic (8-14) regions clearly.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define chemistry and explain its three main branches with examples",
+      "BSEK 2022 SSC-II Q2 (3 marks) — required definition of matter and classification into pure substances and mixtures",
+      "BSEK 2024 SSC-I Q1 (5 marks) — students had to explain the role of chemistry in daily life with five specific examples",
+      "BSEK 2023 SSC-I Q4 (3 marks) — asked for exact textbook definitions of element, compound and mixture"
+    ],
+    "workedExample": {
+      "question": "Define chemistry and explain any three branches of chemistry with one example each. (5 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of chemistry",
+        "Step 2: Name three main branches clearly",
+        "Step 3: Define each branch using STBB textbook language",
+        "Step 4: Give one specific example for each branch"
+      ],
+      "answer": "Chemistry is the branch of science which deals with the study of composition, structure and properties of matter and the changes it undergoes during chemical reactions. Three branches are: (1) Organic Chemistry: The branch of chemistry that deals with the study of carbon compounds. Example: Study of methane (CH₄). (2) Inorganic Chemistry: The branch of chemistry that deals with the study of all elements and their compounds except carbon compounds. Example: Study of sodium chloride (NaCl). (3) Physical Chemistry: The branch of chemistry that deals with the study of physical properties of substances. Example: Study of boiling point of water.",
+      "markScheme": "1 mark for correct definition of chemistry, 1 mark each for naming and defining three branches (3 marks), 1 mark for three correct examples"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for definitions of chemistry, matter, element, compound and mixture.",
+      "Many students confuse organic chemistry with biochemistry. Remember organic chemistry only deals with carbon compounds, not just living things.",
+      "When giving examples of chemistry in daily life, be specific (cooking food, making soap, photosynthesis) rather than vague statements like 'chemistry is everywhere'."
+    ],
+    "quickRecap": "Chemistry studies composition, structure and properties of matter. Matter exists as elements (one type of atom), compounds (chemically combined elements), or mixtures (physically combined substances). Three main branches: Organic (carbon compounds), Inorganic (non-carbon compounds), Physical (physical properties). Chemistry applications include medicine, food production, cosmetics, and industrial processes.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:51:54.857Z"
+  "created_at": "2026-04-06T06:51:54.857Z",
+  "enriched_at": "2026-04-06T17:07:32.780Z"
 }

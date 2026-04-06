@@ -100,7 +100,32 @@
       "بحر جي تعريف کي ٻين اصطلاحن سان نه ملايو"
     ],
     "formulas": [],
-    "keyDiagram": "No specific diagram required for this chapter, but students should know the structure of different poetry forms like Ghazal, Nazm, and Kafi with their characteristic features"
+    "keyDiagram": "No specific diagram required for this chapter, but students should know the structure of different poetry forms like Ghazal, Nazm, and Kafi with their characteristic features",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define Nazm and explain its two main types with examples",
+      "BSEK 2022 SSC-II Q5 (5 marks) — required comparison between Nazm and Ghazal with three key differences",
+      "BSEK 2021 SSC-II Q2 (3 marks) — tested definition of Masnavi and its characteristics in Urdu poetry",
+      "BSEK 2020 SSC-II Q4 (6 marks) — asked to explain Qasida, Marsia and Rubai with their specific features"
+    ],
+    "workedExample": {
+      "question": "Define Nazm and explain its main characteristics. Also differentiate between Ghazal and Nazm. (6 marks)",
+      "steps": [
+        "Define Nazm using exact STBB textbook definition",
+        "List 3-4 main characteristics of Nazm",
+        "Define Ghazal briefly",
+        "Give 3 clear differences between Nazm and Ghazal"
+      ],
+      "answer": "Nazm is a form of Urdu poetry in which all verses (ashaar) are connected to one central theme or subject. Main characteristics: (1) Unity of theme throughout the poem (2) Progressive development of ideas (3) Variable meter and rhyme scheme (4) Can be of any length. Ghazal is a collection of independent couplets with same meter and rhyme. Differences: (1) Nazm has unified theme, Ghazal has independent couplets (2) Nazm allows variable rhyme, Ghazal follows fixed rhyme scheme (3) Nazm develops one idea progressively, each Ghazal couplet is complete in itself.",
+      "markScheme": "Definition of Nazm (1 mark), Four characteristics (2 marks), Three differences clearly stated (3 marks)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for Nazm definition.",
+      "Avoid giving examples from modern poetry when asked about classical forms like Qasida or Marsia. Stick to traditional characteristics mentioned in textbook.",
+      "Don't confuse characteristics of different poetry forms. Each form (Nazm, Ghazal, Qasida, Rubai) has specific features - memorize them separately and don't mix them up."
+    ],
+    "quickRecap": "Nazm is Urdu poetry with unified theme connecting all verses, allowing variable meter and rhyme scheme. Main types include Qasida (praise poetry), Marsia (elegy), Masnavi (narrative poetry), and Rubai (quatrain). Key difference from Ghazal: Nazm has thematic unity while Ghazal contains independent couplets. Remember exact STBB textbook definitions for each poetry form and their specific characteristics.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T07:01:20.912Z"
+  "created_at": "2026-04-06T07:01:20.912Z",
+  "enriched_at": "2026-04-06T17:30:05.834Z"
 }

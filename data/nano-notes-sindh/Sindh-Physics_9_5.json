@@ -106,7 +106,38 @@
       "tan α = B sinθ/(A + B cosθ) (Direction of resultant)",
       "Ax = A cosθ, Ay = A sinθ (Components)"
     ],
-    "keyDiagram": "Parallelogram diagram showing two vectors A and B as adjacent sides, resultant R as diagonal, with angle θ between vectors and angle α for direction of resultant. Must include proper arrowheads and labels."
+    "keyDiagram": "Parallelogram diagram showing two vectors A and B as adjacent sides, resultant R as diagonal, with angle θ between vectors and angle α for direction of resultant. Must include proper arrowheads and labels.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define scalar and vector quantities with two examples each",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required addition of two vectors using parallelogram law with diagram",
+      "BSEK 2024 SSC-II Q4 (3 marks) — asked to differentiate between displacement and distance as vector and scalar",
+      "BSEK 2021 SSC-II Q8 (5 marks) — demanded resolution of forces into rectangular components with calculations"
+    ],
+    "workedExample": {
+      "question": "Define vector quantity and find the resultant of two forces 3N and 4N acting at right angles to each other. (5 marks)",
+      "steps": [
+        "Define vector quantity using STBB textbook definition",
+        "Draw diagram showing two perpendicular forces",
+        "Apply Pythagorean theorem: R² = F₁² + F₂²",
+        "Substitute values: R² = 3² + 4² = 9 + 16 = 25",
+        "Calculate: R = √25 = 5N"
+      ],
+      "answer": "Vector quantity is a physical quantity which has both magnitude and direction. Examples: force, velocity, displacement. Resultant = 5N at angle θ = tan⁻¹(4/3) = 53.13° with 3N force.",
+      "markScheme": "1 mark for exact definition, 1 mark for diagram, 1 mark for formula, 1 mark for calculation, 1 mark for final answer with direction"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for vector and scalar definitions.",
+      "Never confuse distance with displacement or speed with velocity - clearly state which is scalar and which is vector with proper reasoning.",
+      "When drawing vector diagrams, always use arrows and label magnitudes clearly. Missing arrows or unlabeled vectors lose marks in BSEK papers."
+    ],
+    "quickRecap": "Vector quantities have both magnitude and direction (force, velocity, displacement) while scalar quantities have only magnitude (distance, speed, mass). Vectors can be added using triangle law, parallelogram law, or rectangular components method. Always remember to include direction in final answers and use proper vector notation with arrows in diagrams.",
+    "importantFormulas": [
+      "Resultant of perpendicular vectors: R = √(A² + B²)",
+      "Components: Fx = F cos θ, Fy = F sin θ",
+      "Magnitude: |F| = √(Fx² + Fy²)",
+      "Direction: θ = tan⁻¹(Fy/Fx)"
+    ]
   },
-  "created_at": "2026-04-06T06:02:18.851Z"
+  "created_at": "2026-04-06T06:02:18.851Z",
+  "enriched_at": "2026-04-06T17:27:16.793Z"
 }

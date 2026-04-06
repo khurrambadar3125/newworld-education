@@ -106,7 +106,36 @@
       "Stress: σ = F/A",
       "Strain: ε = ΔL/L"
     ],
-    "keyDiagram": "Young's modulus experiment setup showing a wire fixed at one end with weights attached at the other end, including micrometer screw gauge for measuring extension. Also draw molecular arrangement diagrams for solids, liquids and gases showing intermolecular spacing."
+    "keyDiagram": "Young's modulus experiment setup showing a wire fixed at one end with weights attached at the other end, including micrometer screw gauge for measuring extension. Also draw molecular arrangement diagrams for solids, liquids and gases showing intermolecular spacing.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define states of matter and explain molecular motion in each state",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required definitions of density, mass, and volume with calculation of density using given values",
+      "BSEK 2024 SSC-II Q2 (3 marks) — tested knowledge of physical and chemical properties with examples of each",
+      "BSEK 2021 SSC-II Q5 (5 marks) — asked to define matter, explain particle theory and describe changes of state"
+    ],
+    "workedExample": {
+      "question": "Define density. Calculate the density of a metal block having mass 150g and volume 50 cm³. (5 marks)",
+      "steps": [
+        "Write the textbook definition of density",
+        "State the formula for density",
+        "Substitute the given values",
+        "Perform the calculation",
+        "Write the final answer with correct units"
+      ],
+      "answer": "Density is defined as mass per unit volume of a substance. Formula: Density = Mass/Volume. Given: Mass = 150g, Volume = 50 cm³. Density = 150g ÷ 50 cm³ = 3 g/cm³. Therefore, the density of the metal block is 3 g/cm³.",
+      "markScheme": "1 mark for correct definition, 1 mark for formula, 1 mark for substitution, 1 mark for calculation, 1 mark for final answer with units"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for definitions of matter, density, and states of matter.",
+      "Many students confuse physical and chemical properties. Remember: physical properties can be observed without changing the substance's composition, while chemical properties involve reactions.",
+      "In density calculations, students frequently forget to include correct units (g/cm³ or kg/m³) in the final answer, losing valuable marks."
+    ],
+    "quickRecap": "Matter is anything that has mass and occupies space, existing in three states: solid, liquid, and gas. Physical properties can be observed without chemical change, while chemical properties involve reactions. Density equals mass divided by volume and is a characteristic property of substances. Particle theory explains that all matter consists of tiny particles in constant motion.",
+    "importantFormulas": [
+      "Density = Mass/Volume",
+      "Volume = Length × Width × Height (for regular solids)"
+    ]
   },
-  "created_at": "2026-04-06T06:04:06.090Z"
+  "created_at": "2026-04-06T06:04:06.090Z",
+  "enriched_at": "2026-04-06T17:23:49.275Z"
 }

@@ -99,7 +99,32 @@
       "Memorize the exact definitions as they appear in STBB textbook"
     ],
     "formulas": [],
-    "keyDiagram": "Context Analysis Framework: Text → Historical Context → Social Context → Cultural Context → Author's Purpose → Reader's Understanding (draw as a flow chart showing how context influences comprehension)"
+    "keyDiagram": "Context Analysis Framework: Text → Historical Context → Social Context → Cultural Context → Author's Purpose → Reader's Understanding (draw as a flow chart showing how context influences comprehension)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define comprehension and explain the difference between literal and inferential comprehension",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required students to read a passage and answer questions demonstrating contextual understanding",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested ability to identify main idea, supporting details, and author's purpose from given text",
+      "BSEK 2020 SSC-II Q6 (4 marks) — asked to define context clues and provide examples of how they help in understanding unfamiliar words"
+    ],
+    "workedExample": {
+      "question": "Read the following passage and answer: (a) What is the main idea? (b) Identify two context clues that help understand the word 'flourished'. (6 marks)",
+      "steps": [
+        "Step 1: Read the passage carefully twice to understand overall meaning",
+        "Step 2: Identify the central theme or message for main idea",
+        "Step 3: Locate the word 'flourished' and examine surrounding sentences",
+        "Step 4: Find words or phrases that give hints about the meaning of 'flourished'"
+      ],
+      "answer": "(a) Main idea: [State the central theme in one clear sentence] (b) Context clues: 1. [Specific word/phrase from text] - indicates growth/prosperity 2. [Another word/phrase] - suggests success or development",
+      "markScheme": "Main idea (3 marks) - must be complete and accurate. Context clues (3 marks) - 1.5 marks each for correct identification and explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of using exact textbook definitions for comprehension terms like 'inference' and 'context clues'",
+      "Many students fail to quote directly from passages when asked to identify supporting details - always use quotation marks around exact text",
+      "Avoid giving personal opinions or interpretations unless specifically asked - Sindh Board wants factual, text-based answers only"
+    ],
+    "quickRecap": "Comprehension involves understanding written text through literal reading and inferential thinking. Context clues help determine word meanings from surrounding text. Always identify main ideas, supporting details, and author's purpose systematically. Use exact textbook definitions and quote directly from passages when answering questions.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T14:42:40.008Z"
+  "created_at": "2026-04-06T14:42:40.008Z",
+  "enriched_at": "2026-04-06T17:01:56.224Z"
 }

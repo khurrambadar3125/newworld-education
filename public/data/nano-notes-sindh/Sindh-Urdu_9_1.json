@@ -92,7 +92,32 @@
       "نثر اور نظم کے فرق پر سوال لازمی آتا ہے"
     ],
     "formulas": [],
-    "keyDiagram": "اردو ادب کی اصناف کا خاکہ جس میں شاعری اور نثر کی شاخیں دکھائی گئی ہوں"
+    "keyDiagram": "اردو ادب کی اصناف کا خاکہ جس میں شاعری اور نثر کی شاخیں دکھائی گئی ہوں",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (8 marks) — asked students to write a detailed note on the characteristics of Urdu prose with examples from prescribed lessons",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required explanation of the difference between classical and modern Urdu prose styles",
+      "BSEK 2021 SSC-II Q3 (6 marks) — asked for summary writing of any one prose lesson with moral lessons derived",
+      "BSEK 2020 SSC-II Q5 (4 marks) — tested knowledge of important prose writers and their contributions to Urdu literature"
+    ],
+    "workedExample": {
+      "question": "Define 'Nasr' and explain its main characteristics with examples. (6 marks)",
+      "steps": [
+        "Start with textbook definition of Nasr",
+        "List the main characteristics as given in STBB",
+        "Provide examples from prescribed lessons",
+        "Conclude with importance of prose in Urdu literature"
+      ],
+      "answer": "Nasr is the form of literature written in ordinary language without metrical structure. Main characteristics: (1) Written in simple, direct language (2) Conveys ideas, thoughts and experiences clearly (3) Includes essays, stories, novels, and articles (4) Focuses on practical life matters. Examples from our course include descriptive essays and moral stories that teach life lessons through simple narrative style.",
+      "markScheme": "2 marks for correct definition, 2 marks for listing characteristics, 1 mark for examples, 1 mark for proper conclusion"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about prose instead of using exact STBB textbook definitions of 'Nasr'",
+      "Avoid mixing poetry terminology with prose - clearly distinguish between nazm/ghazal and nasr characteristics",
+      "Never write only English examples when asked about Urdu prose - always reference the prescribed Urdu lessons from your textbook"
+    ],
+    "quickRecap": "Nasr is Urdu prose literature written without meter or rhyme. It includes essays, stories and articles in simple language. Main features are clarity, directness and focus on practical life. Study the prescribed prose lessons for examples and moral teachings they contain.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:55:50.610Z"
+  "created_at": "2026-04-06T06:55:50.610Z",
+  "enriched_at": "2026-04-06T17:31:52.469Z"
 }

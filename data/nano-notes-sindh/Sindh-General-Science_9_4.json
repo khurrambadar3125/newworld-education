@@ -102,7 +102,31 @@
       "Learn examples of Pakistani context diseases like dengue in Karachi, malaria in Sindhi rural areas"
     ],
     "formulas": [],
-    "keyDiagram": "Life cycle of malaria parasite showing transmission between Anopheles mosquito and human host - must include labels for sporozoites, liver stage, blood stage, gametocytes, and mosquito gut stages"
+    "keyDiagram": "Life cycle of malaria parasite showing transmission between Anopheles mosquito and human host - must include labels for sporozoites, liver stage, blood stage, gametocytes, and mosquito gut stages",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define health according to WHO and list factors affecting human health",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of communicable and non-communicable diseases with two examples each",
+      "BSEK 2021 SSC-II Q4 (5 marks) — asked to describe the role of balanced diet in maintaining good health",
+      "BSEK 2020 SSC-II Q6 (3 marks) — definition of malnutrition and its types"
+    ],
+    "workedExample": {
+      "question": "Define health according to WHO. Explain any three factors that affect human health. (7 marks)",
+      "steps": [
+        "Write the exact WHO definition of health from STBB textbook",
+        "List three factors affecting health clearly",
+        "Explain each factor with proper detail as per textbook"
+      ],
+      "answer": "Health according to WHO: 'Health is a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity.' Three factors affecting human health are: 1) Nutrition - Proper balanced diet provides essential nutrients for body functions and prevents malnutrition diseases. 2) Environment - Clean air, water and surroundings prevent spread of diseases and infections. 3) Personal hygiene - Regular cleanliness practices like bathing, brushing teeth prevent bacterial and viral infections.",
+      "markScheme": "WHO definition (2 marks), listing three factors (1 mark), explaining each factor correctly (4 marks total)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about health instead of the exact WHO definition from STBB textbook",
+      "Avoid mixing communicable and non-communicable disease examples - clearly categorize them as asked in the question",
+      "When explaining factors affecting health, provide specific examples rather than vague statements to earn full marks"
+    ],
+    "quickRecap": "Health is WHO-defined complete physical, mental, social well-being. Communicable diseases spread through contact/vectors while non-communicable don't spread. Balanced diet provides essential nutrients preventing malnutrition. Personal hygiene and clean environment are crucial for disease prevention.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:52:37.934Z"
+  "created_at": "2026-04-06T06:52:37.934Z",
+  "enriched_at": "2026-04-06T17:08:02.434Z"
 }

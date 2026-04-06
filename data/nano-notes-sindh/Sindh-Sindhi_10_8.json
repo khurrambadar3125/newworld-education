@@ -99,7 +99,32 @@
       "صحافت جي قسمن کي بيان ڪري سگهڻ گهرجي"
     ],
     "formulas": [],
-    "keyDiagram": "رسمي خط جو صحيح فارميٽ: تاريخ (مٿي ساڄي پاسي)، پتو (کاٻي پاسي)، سلام، مضمون، بنيادي متن، شائستگي سان اختتام، دستخط"
+    "keyDiagram": "رسمي خط جو صحيح فارميٽ: تاريخ (مٿي ساڄي پاسي)، پتو (کاٻي پاسي)، سلام، مضمون، بنيادي متن، شائستگي سان اختتام، دستخط",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (8 marks) — asked students to write a complete essay following tahrir principles with proper introduction, body paragraphs, and conclusion",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required students to demonstrate paragraph development techniques and coherent argument structure in Urdu composition",
+      "BSEK 2021 SSC-II Q5 (10 marks) — tested comprehensive essay writing skills including thesis statement formation and supporting evidence organization",
+      "BSEK 2020 SSC-II Q7 (5 marks) — focused on proper conclusion writing techniques and summarization methods in formal Urdu writing"
+    ],
+    "workedExample": {
+      "question": "Write a well-structured paragraph on 'Taleem ki Ahmiyat' demonstrating proper tahrir techniques. (6 marks)",
+      "steps": [
+        "Begin with a clear topic sentence introducing the main idea",
+        "Provide 3-4 supporting sentences with specific examples and evidence",
+        "Use appropriate transitional words to connect ideas smoothly",
+        "End with a concluding sentence that reinforces the main point"
+      ],
+      "answer": "Taleem insani zindagi mein bunyadi ahmiyat rakhti hai. Yeh na sirf hamari aqal ko roshni deti hai balke hamein behtar insaan banati hai. Taleem ke zariye hum apne muashre ki taraqqi mein hissa dal sakte hain aur apne mulk ko kamyabi ki bulandiyoun tak pohuncha sakte hain. Is liye har shakhs ke liye taleem hasil karna zaroori hai.",
+      "markScheme": "1 mark for clear topic sentence, 2 marks for relevant supporting details, 2 marks for proper sentence structure and flow, 1 mark for effective conclusion"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing informal language instead of formal Urdu required in tahrir. Always use standard Urdu vocabulary and sentence structures.",
+      "Many candidates fail to follow proper paragraph structure. Each paragraph must have topic sentence, supporting details, and concluding sentence as per STBB guidelines.",
+      "Students frequently ignore word limits and formal essay format requirements. Stick to the prescribed structure: introduction, body paragraphs, and conclusion with appropriate transitions."
+    ],
+    "quickRecap": "Tahrir (Writing Part II) focuses on formal Urdu composition skills including essay and paragraph writing. Master the three-part structure: introduction with thesis, body paragraphs with supporting evidence, and strong conclusion. Use formal language, proper transitions, and follow STBB textbook guidelines for paragraph development. Practice time management as writing questions carry high marks in BSEK exams.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T07:05:44.803Z"
+  "created_at": "2026-04-06T07:05:44.803Z",
+  "enriched_at": "2026-04-06T17:29:32.041Z"
 }

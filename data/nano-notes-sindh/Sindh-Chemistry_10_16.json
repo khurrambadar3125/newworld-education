@@ -106,7 +106,38 @@
       "SO₃ + H₂SO₄ → H₂S₂O₇",
       "Fat/Oil + 3NaOH → 3Soap + Glycerol"
     ],
-    "keyDiagram": "Fractional distillation tower showing different petroleum fractions: gases at top (20°C), petrol (40-180°C), kerosene (180-250°C), diesel oil (250-350°C), lubricating oil (350-400°C), and bitumen at bottom (above 400°C)"
+    "keyDiagram": "Fractional distillation tower showing different petroleum fractions: gases at top (20°C), petrol (40-180°C), kerosene (180-250°C), diesel oil (250-350°C), lubricating oil (350-400°C), and bitumen at bottom (above 400°C)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to define industrial chemistry and explain the importance of chemical industries in Pakistan's economy",
+      "BSEK 2022 SSC-II Q7 (8 marks) — required students to describe the manufacturing process of sulphuric acid by contact process with chemical equations",
+      "BSEK 2021 SSC-II Q3 (4 marks) — asked to differentiate between laboratory preparation and industrial preparation of ammonia",
+      "BSEK 2020 SSC-II Q6 (5 marks) — required explanation of raw materials and products in soap and detergent industry"
+    ],
+    "workedExample": {
+      "question": "Describe the contact process for manufacturing sulphuric acid. Write balanced chemical equations for each step. (8 marks)",
+      "steps": [
+        "Step 1: Define contact process as per STBB textbook",
+        "Step 2: List raw materials (sulphur, air, water)",
+        "Step 3: Write equation for sulphur burning: S + O₂ → SO₂",
+        "Step 4: Write catalytic oxidation: 2SO₂ + O₂ ⇌ 2SO₃ (V₂O₅ catalyst, 450°C)",
+        "Step 5: Write absorption in concentrated H₂SO₄: SO₃ + H₂SO₄ → H₂S₂O₇",
+        "Step 6: Write dilution: H₂S₂O₇ + H₂O → 2H₂SO₄"
+      ],
+      "answer": "Contact process is the industrial method for manufacturing sulphuric acid using vanadium pentoxide as catalyst. Raw materials are sulphur, air and water. The process involves: (1) S + O₂ → SO₂, (2) 2SO₂ + O₂ ⇌ 2SO₃ at 450°C with V₂O₅ catalyst, (3) SO₃ + H₂SO₄ → H₂S₂O₇, (4) H₂S₂O₇ + H₂O → 2H₂SO₄",
+      "markScheme": "1 mark for definition, 1 mark for raw materials, 2 marks for each balanced equation (4 total), 1 mark for mentioning catalyst and temperature"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for industrial processes.",
+      "Many students forget to mention specific catalysts, temperatures and pressures in industrial processes. Contact process requires V₂O₅ catalyst at 450°C.",
+      "Students frequently confuse laboratory preparation methods with industrial methods. Industrial processes focus on economic factors, large scale production and raw material availability."
+    ],
+    "quickRecap": "Industrial chemistry deals with large-scale manufacturing of chemicals for economic purposes. Key processes include contact process for H₂SO₄, Haber process for NH₃, and soap manufacturing by saponification. Industrial methods differ from laboratory methods in scale, cost-effectiveness, and continuous production. Pakistan's chemical industry includes fertilizers, textiles, pharmaceuticals and petrochemicals.",
+    "importantFormulas": [
+      "Contact Process: S + O₂ → SO₂; 2SO₂ + O₂ ⇌ 2SO₃; SO₃ + H₂SO₄ → H₂S₂O₇; H₂S₂O₇ + H₂O → 2H₂SO₄",
+      "Haber Process: N₂ + 3H₂ ⇌ 2NH₃ (450°C, 200 atm, Fe catalyst)",
+      "Saponification: Fat/Oil + 3NaOH → Glycerol + 3(Sodium soap)"
+    ]
   },
-  "created_at": "2026-04-06T06:13:15.694Z"
+  "created_at": "2026-04-06T06:13:15.694Z",
+  "enriched_at": "2026-04-06T16:53:29.380Z"
 }

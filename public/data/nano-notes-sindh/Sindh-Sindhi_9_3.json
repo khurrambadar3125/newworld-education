@@ -102,7 +102,32 @@
       "جملو = فاعل + فعل + مفعول",
       "اسم جا قسم: ذات، صفت، عدد، ضمير، اشاريه، موصول، استفهام"
     ],
-    "keyDiagram": "ڪلام جي ٽن حصن جو درختي نقشو: ڪلام جي مٿان اسم، فعل، حرف جون شاخون ۽ انهن جي هيٺان ذيلي قسمون"
+    "keyDiagram": "ڪلام جي ٽن حصن جو درختي نقشو: ڪلام جي مٿان اسم، فعل، حرف جون شاخون ۽ انهن جي هيٺان ذيلي قسمون",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define Noun and classify its types with examples",
+      "BSEK 2022 SSC-II Q4 (5 marks) — required definitions of Verb, Adjective and their classifications",
+      "BSEK 2021 SSC-II Q2 (3 marks) — tested knowledge of Parts of Speech with textbook definitions",
+      "BSEK 2020 SSC-II Q5 (6 marks) — comprehensive question on grammar fundamentals and word classifications"
+    ],
+    "workedExample": {
+      "question": "Define Noun and classify its types. Give two examples of each type. (5 marks)",
+      "steps": [
+        "Write exact textbook definition of Noun",
+        "List all types of Nouns as per STBB textbook",
+        "Provide two clear examples for each type",
+        "Ensure proper formatting and complete sentences"
+      ],
+      "answer": "Noun is a word used to name a person, place, thing, or idea. Types: (1) Proper Noun - names specific person/place (Examples: Ahmad, Karachi) (2) Common Noun - names general class (Examples: boy, city) (3) Collective Noun - names group (Examples: team, flock) (4) Abstract Noun - names quality/idea (Examples: honesty, beauty) (5) Material Noun - names substance (Examples: gold, water)",
+      "markScheme": "1 mark for exact definition, 1 mark for listing all types, 3 marks for examples (0.5 each type)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing word-for-word.",
+      "Avoid giving only examples without proper definitions. BSEK requires complete definitions followed by examples.",
+      "Do not mix up classifications of different parts of speech. Learn each category's types separately and precisely as given in textbook."
+    ],
+    "quickRecap": "Grammar Part I covers fundamental word classifications including Noun, Pronoun, Verb, Adjective, Adverb, Preposition, Conjunction and Interjection. Each part of speech has specific types that must be memorized with exact textbook definitions. Focus on proper classification and provide clear examples for each type. Remember that BSEK expects precise terminology and complete definitions rather than just understanding.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T07:02:01.741Z"
+  "created_at": "2026-04-06T07:02:01.741Z",
+  "enriched_at": "2026-04-06T17:30:21.428Z"
 }

@@ -100,7 +100,36 @@
       "Opposite angles in cyclic quadrilateral: ∠A + ∠C = 180°, ∠B + ∠D = 180°",
       "Central angle = 2 × Inscribed angle (on same arc)"
     ],
-    "keyDiagram": "Draw a circle with center O, diameter AB, point C on semicircle, and triangle ACB inscribed. Also draw a cyclic quadrilateral PQRS with all vertices on circle circumference. Label all angles and mark equal angles in same segment."
+    "keyDiagram": "Draw a circle with center O, diameter AB, point C on semicircle, and triangle ACB inscribed. Also draw a cyclic quadrilateral PQRS with all vertices on circle circumference. Label all angles and mark equal angles in same segment.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to state the angle in a segment theorem and prove it using inscribed angle properties",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required definition of angle in a segment and calculation of angles using the theorem",
+      "BSEK 2021 SSC-II Q3 (3 marks) — tested understanding of angles in same segment being equal with numerical example",
+      "BSEK 2020 SSC-II Q5 (4 marks) — asked to differentiate between angle in semicircle and angle in segment with examples"
+    ],
+    "workedExample": {
+      "question": "In a circle with center O, points A, B, C, D lie on the circumference such that AB is a chord. If angle ACB = 35°, find angle ADB. Justify your answer using angle in a segment theorem. (5 marks)",
+      "steps": [
+        "Identify that points C and D are on the same side of chord AB",
+        "Apply the angle in a segment theorem which states: angles subtended by the same chord in the same segment are equal",
+        "Since both angle ACB and angle ADB are subtended by chord AB in the same segment",
+        "Therefore, angle ADB = angle ACB = 35°"
+      ],
+      "answer": "Angle ADB = 35°. By the angle in a segment theorem, angles subtended by the same chord in the same segment of a circle are equal.",
+      "markScheme": "1 mark for identifying same segment, 2 marks for correct theorem statement, 1 mark for application, 1 mark for final answer"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing: 'angles subtended by the same chord in the same segment are equal'",
+      "Do not confuse 'angle in a segment' with 'angle at the center'. Clearly specify whether the angle is at circumference or center",
+      "When proving, students forget to mention 'same segment' - angles must be on the same side of the chord to be equal"
+    ],
+    "quickRecap": "Angle in a segment theorem states that angles subtended by the same chord in the same segment of a circle are equal. This applies only when both angles are on the same side of the chord. Special case: angle in semicircle is always 90°. Always state the theorem exactly as in STBB textbook for full marks.",
+    "importantFormulas": [
+      "Angle in semicircle = 90°",
+      "Angles subtended by same chord in same segment are equal",
+      "Angle at center = 2 × angle at circumference (when subtended by same arc)"
+    ]
   },
-  "created_at": "2026-04-06T06:30:07.731Z"
+  "created_at": "2026-04-06T06:30:07.731Z",
+  "enriched_at": "2026-04-06T17:15:54.838Z"
 }

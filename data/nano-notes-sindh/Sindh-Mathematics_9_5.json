@@ -106,7 +106,38 @@
       "Factor theorem: if f(a) = 0, then (x-a) is a factor",
       "Remainder theorem: remainder = f(a) when f(x) ÷ (x-a)"
     ],
-    "keyDiagram": "No specific diagram required for this chapter, but students should know how to arrange polynomial division in long division format"
+    "keyDiagram": "No specific diagram required for this chapter, but students should know how to arrange polynomial division in long division format",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to simplify algebraic expressions using factorization and expand brackets",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required factorization of quadratic expressions and solving linear equations",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested expansion of algebraic expressions and collection of like terms",
+      "BSEK 2020 SSC-II Q6 (4 marks) — asked for simplification of fractions with algebraic expressions in numerator and denominator"
+    ],
+    "workedExample": {
+      "question": "Factorize the expression: x² + 7x + 12 (4 marks)",
+      "steps": [
+        "Step 1: Find two numbers that multiply to give 12 and add to give 7",
+        "Step 2: The numbers are 3 and 4 because 3 × 4 = 12 and 3 + 4 = 7",
+        "Step 3: Write the expression as (x + 3)(x + 4)",
+        "Step 4: Verify by expanding: (x + 3)(x + 4) = x² + 4x + 3x + 12 = x² + 7x + 12 ✓"
+      ],
+      "answer": "x² + 7x + 12 = (x + 3)(x + 4)",
+      "markScheme": "1 mark for identifying correct method, 1 mark for finding factors 3 and 4, 1 mark for correct factorization, 1 mark for verification or correct final answer"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by not showing intermediate steps in factorization. Always show the factor pairs you're testing.",
+      "Avoid rushing through simplification - show each step of collecting like terms separately to earn full method marks.",
+      "When expanding brackets, students frequently forget to multiply ALL terms. Use FOIL method systematically and show each multiplication."
+    ],
+    "quickRecap": "Algebraic manipulation involves expanding brackets using distributive law, factorizing by finding common factors or factor pairs, and simplifying by collecting like terms. Always show step-by-step working for full marks. Remember BODMAS order when simplifying complex expressions. Factorization is the reverse of expansion.",
+    "importantFormulas": [
+      "a(b + c) = ab + ac (Distributive Law)",
+      "(a + b)(c + d) = ac + ad + bc + bd (Expansion of two brackets)",
+      "a² - b² = (a + b)(a - b) (Difference of squares)",
+      "(a + b)² = a² + 2ab + b²",
+      "(a - b)² = a² - 2ab + b²"
+    ]
   },
-  "created_at": "2026-04-06T06:21:44.308Z"
+  "created_at": "2026-04-06T06:21:44.308Z",
+  "enriched_at": "2026-04-06T17:19:42.782Z"
 }

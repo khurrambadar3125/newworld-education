@@ -99,7 +99,36 @@
       "Remember to write your address on the right side in informal letters"
     ],
     "formulas": [],
-    "keyDiagram": "Letter Format Diagram: Shows placement of sender's address (top right), date (below address), recipient's address (left side), subject line, salutation, body paragraphs, closing, and signature"
+    "keyDiagram": "Letter Format Diagram: Shows placement of sender's address (top right), date (below address), recipient's address (left side), subject line, salutation, body paragraphs, closing, and signature",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (8 marks) — asked students to write a formal letter to the Principal requesting leave, demonstrating proper format and tone",
+      "BSEK 2022 SSC-II Q6 (10 marks) — required students to write a descriptive essay on 'My School' using specific paragraph structure",
+      "BSEK 2021 SSC-II Q5 (6 marks) — asked for dialogue writing between two friends discussing exam preparation with proper punctuation",
+      "BSEK 2023 SSC-I Q3 (5 marks) — tested story writing skills with given opening line and moral lesson requirement"
+    ],
+    "workedExample": {
+      "question": "Write a formal letter to your Principal requesting permission to organize a science exhibition in your school. (8 marks)",
+      "steps": [
+        "Step 1: Write sender's address in top right corner with date",
+        "Step 2: Write receiver's address (The Principal) on left side below date",
+        "Step 3: Write subject line clearly stating the purpose",
+        "Step 4: Use formal salutation 'Respected Sir/Madam'",
+        "Step 5: Write introduction paragraph stating your request",
+        "Step 6: Write body paragraph explaining reasons and benefits",
+        "Step 7: Write conclusion requesting permission politely",
+        "Step 8: End with formal closing 'Your obedient student' and signature"
+      ],
+      "answer": "[Sender's Address]\n[Date]\n\nThe Principal,\n[School Name]\n[School Address]\n\nSubject: Request for permission to organize science exhibition\n\nRespected Sir,\n\nI am a student of class IX-A and writing to request permission for organizing a science exhibition in our school premises.\n\nThe science exhibition will help students display their innovative projects and encourage scientific thinking among peers. It will also provide platform for students to explain their experiments to visitors and gain confidence.\n\nI humbly request you to grant permission for this educational activity.\n\nYour obedient student,\n[Name]\n[Class and Section]",
+      "markScheme": "Format and addresses (2 marks), Subject and salutation (1 mark), Introduction stating purpose (2 marks), Body with reasons (2 marks), Conclusion and formal closing (1 mark)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by not following the exact letter/essay format given in STBB textbook. Always include sender's address, date, and proper salutation in formal letters.",
+      "Avoid mixing formal and informal language in the same piece of writing. Maintain consistent tone throughout as specified in textbook examples.",
+      "Never write less than the required word count or number of paragraphs mentioned in the question - this results in automatic mark deduction regardless of content quality."
+    ],
+    "quickRecap": "Writing skills include formal letters (with proper format: address, date, subject, salutation, body, closing), informal letters (personal tone with complete address), essay writing (introduction, body paragraphs, conclusion), story writing (beginning, middle, end with moral), and dialogue writing (proper punctuation and natural conversation flow). Always follow STBB textbook formats exactly and maintain appropriate tone for each type of writing.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:48:50.030Z"
+  "created_at": "2026-04-06T06:48:50.030Z",
+  "enriched_at": "2026-04-06T17:05:47.576Z"
 }

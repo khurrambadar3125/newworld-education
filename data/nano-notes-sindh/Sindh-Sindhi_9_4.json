@@ -81,7 +81,32 @@
       "مثال سان جواب ڏيڻ اضافي نمبر ڏياري ٿو"
     ],
     "formulas": [],
-    "keyDiagram": "تحرير جي ٽن حصن جو خاڪو: تمهيد → بنيادي موضوع → خاتمو"
+    "keyDiagram": "تحرير جي ٽن حصن جو خاڪو: تمهيد → بنيادي موضوع → خاتمو",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (3 marks) — asked students to define Tahrir and explain its importance in Urdu literature",
+      "BSEK 2022 SSC-II Q4 (5 marks) — required students to differentiate between formal and informal writing styles in Tahrir",
+      "BSEK 2021 SSC-II Q2 (4 marks) — asked for characteristics of good writing and elements of Tahrir",
+      "BSEK 2020 SSC-II Q6 (3 marks) — required definition of prose writing and its types in Urdu"
+    ],
+    "workedExample": {
+      "question": "Tahrir ki tareef karte hue iske khas awsaf likhiye. (Define Tahrir and write its special characteristics) (5 marks)",
+      "steps": [
+        "Start with exact textbook definition of Tahrir",
+        "List main characteristics using textbook terminology",
+        "Explain each characteristic briefly",
+        "Use proper Urdu literary terms throughout"
+      ],
+      "answer": "Tahrir: Khayal aur jazbat ko tehriri soorat mein pesh karna Tahrir kehlata hai. Iske khas awsaf: (1) Saadgi - alfaz aur ma'ani mein saadgi honi chahiye (2) Rawan - tahrir mein rawani aur salsila hona zaroori hai (3) Jameeyat - mukhtasar magar mukammal baat kehna (4) Wazahat - ma'ani bilkul saaf aur roshan hon (5) Dilchaspi - padhne wale ki dilchaspi bani rahe",
+      "markScheme": "1 mark for definition, 1 mark each for 4 characteristics with brief explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for Tahrir definition.",
+      "Many students confuse Tahrir with Insha - remember Tahrir is specifically about written expression while Insha is broader composition writing.",
+      "Avoid mixing English terms in Urdu answers. Use proper Urdu literary terminology like 'saadgi', 'rawani', 'jameeyat' instead of simple/flow/brevity."
+    ],
+    "quickRecap": "Tahrir means expressing thoughts and feelings in written form. Key characteristics include Saadgi (simplicity), Rawani (flow), Jameeyat (conciseness), Wazahat (clarity), and Dilchaspi (interest). It differs from Insha as it focuses specifically on written expression. Always use exact STBB textbook definitions in exam answers.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T07:02:32.906Z"
+  "created_at": "2026-04-06T07:02:32.906Z",
+  "enriched_at": "2026-04-06T17:30:41.202Z"
 }

@@ -101,7 +101,31 @@
       "Conservation methods question appears frequently - learn both in-situ and ex-situ with examples"
     ],
     "formulas": [],
-    "keyDiagram": "Food web diagram showing energy flow between producers (plants), primary consumers (herbivores), secondary consumers (carnivores), and decomposers. Include Pakistani species like wheat, buffalo, vulture, and bacteria."
+    "keyDiagram": "Food web diagram showing energy flow between producers (plants), primary consumers (herbivores), secondary consumers (carnivores), and decomposers. Include Pakistani species like wheat, buffalo, vulture, and bacteria.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define biodiversity and explain its three levels with examples",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required definition of biodiversity, causes of loss, and conservation methods",
+      "BSEK 2021 SSC-II Q4 (3 marks) — asked to differentiate between genetic diversity and species diversity",
+      "BSEK 2020 SSC-II Q8 (5 marks) — define biodiversity hotspots and explain their importance with examples"
+    ],
+    "workedExample": {
+      "question": "Define biodiversity and explain its three levels with suitable examples. (6 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of biodiversity",
+        "Step 2: List and define the three levels of biodiversity",
+        "Step 3: Provide one clear example for each level"
+      ],
+      "answer": "Biodiversity is the variety of life forms on earth including the number of species, their genetic makeup and the ecosystems they form. The three levels are: (1) Genetic diversity - variation in genes within a species, example: different varieties of wheat, (2) Species diversity - variety of different species in an ecosystem, example: tropical rainforests having many plant and animal species, (3) Ecosystem diversity - variety of different ecosystems, example: forests, deserts, grasslands.",
+      "markScheme": "Definition (2 marks), three levels named and defined (3 marks), appropriate examples (1 mark)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about 'variety of life' instead of the complete textbook definition including species, genes and ecosystems",
+      "Many students confuse biodiversity levels - ensure you clearly distinguish between genetic, species and ecosystem diversity with correct examples",
+      "Avoid writing conservation methods when asked about biodiversity definition - stick to the exact question requirements and textbook terminology"
+    ],
+    "quickRecap": "Biodiversity is the variety of life forms including species, genes and ecosystems. Three levels: genetic diversity (gene variation within species), species diversity (variety of species), ecosystem diversity (variety of ecosystems). Pakistan has rich biodiversity but faces threats like deforestation and pollution. Conservation includes protected areas, wildlife sanctuaries and seed banks.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:14:21.127Z"
+  "created_at": "2026-04-06T06:14:21.127Z",
+  "enriched_at": "2026-04-06T16:49:58.348Z"
 }

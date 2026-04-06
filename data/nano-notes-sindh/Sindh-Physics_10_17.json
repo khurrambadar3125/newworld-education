@@ -105,7 +105,36 @@
       "Power in transformer: VpIp = VsIs (ideal transformer)",
       "EMF = BLv (for moving conductor)"
     ],
-    "keyDiagram": "Step-up transformer diagram showing laminated iron core, primary coil (fewer turns), secondary coil (more turns), with AC input and higher AC output. Label all parts including core, coils, and voltage directions."
+    "keyDiagram": "Step-up transformer diagram showing laminated iron core, primary coil (fewer turns), secondary coil (more turns), with AC input and higher AC output. Label all parts including core, coils, and voltage directions.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define magnetic field and explain how iron filings demonstrate magnetic field lines",
+      "BSEK 2022 SSC-II Q7 (5 marks) — required explanation of electromagnetic induction with Fleming's right-hand rule",
+      "BSEK 2021 SSC-II Q4 (3 marks) — tested difference between temporary and permanent magnets with examples",
+      "BSEK 2020 SSC-II Q6 (6 marks) — asked to draw and explain working of electric motor with labeled diagram"
+    ],
+    "workedExample": {
+      "question": "Define electromagnetic induction and state Fleming's right-hand rule. Draw a labeled diagram showing electromagnetic induction in a coil. (6 marks)",
+      "steps": [
+        "Write exact textbook definition of electromagnetic induction",
+        "State Fleming's right-hand rule with proper finger positions",
+        "Draw labeled diagram of coil with magnet and induced current direction",
+        "Explain the working principle in simple terms"
+      ],
+      "answer": "Electromagnetic induction: The phenomenon of producing electric current in a conductor when it moves in a magnetic field or when magnetic field around it changes. Fleming's right-hand rule: If the thumb, first finger and middle finger of right hand are stretched mutually perpendicular to each other, with thumb showing direction of motion, first finger showing magnetic field direction, then middle finger shows direction of induced current. [Diagram: Coil with moving magnet, labeled N-S poles, induced current direction, and galvanometer]",
+      "markScheme": "Definition (2 marks), Fleming's rule statement (2 marks), Labeled diagram (2 marks)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for magnetism definitions.",
+      "Many students confuse Fleming's left-hand rule (motor) with right-hand rule (generator). Remember: Right for Generator, Left for Motor.",
+      "In electromagnetic induction diagrams, students forget to show current direction or label galvanometer. Always include all components mentioned in textbook diagrams."
+    ],
+    "quickRecap": "Magnetism involves magnetic fields around magnets with N-S poles that attract opposites and repel likes. Electromagnets use current through coils to create temporary magnetism. Electromagnetic induction generates current when conductors move in magnetic fields (Fleming's right-hand rule). Motors convert electrical energy to mechanical energy using magnetic force on current-carrying conductors.",
+    "importantFormulas": [
+      "Magnetic force on current-carrying conductor: F = BIL",
+      "Fleming's Left-hand Rule: First finger = Field, Middle finger = Current, Thumb = Motion (Motor)",
+      "Fleming's Right-hand Rule: Thumb = Motion, First finger = Field, Middle finger = Current (Generator)"
+    ]
   },
-  "created_at": "2026-04-06T06:06:50.562Z"
+  "created_at": "2026-04-06T06:06:50.562Z",
+  "enriched_at": "2026-04-06T17:25:42.941Z"
 }

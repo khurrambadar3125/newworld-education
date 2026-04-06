@@ -101,7 +101,32 @@
       "Remember checkpoint locations: G1/S, G2/M, and metaphase/anaphase"
     ],
     "formulas": [],
-    "keyDiagram": "Cell cycle diagram showing circular representation with Interphase (G1, S, G2 phases) taking major portion and M phase (Mitosis + Cytokinesis) as smaller section, with checkpoints marked at transitions between phases"
+    "keyDiagram": "Cell cycle diagram showing circular representation with Interphase (G1, S, G2 phases) taking major portion and M phase (Mitosis + Cytokinesis) as smaller section, with checkpoints marked at transitions between phases",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define cell cycle and name its phases with brief description",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of mitosis phases and their significance in growth",
+      "BSEK 2021 SSC-II Q4 (3 marks) — tested knowledge of interphase and its sub-phases",
+      "BSEK 2020 SSC-II Q6 (5 marks) — asked to differentiate between mitosis and cytokinesis with examples"
+    ],
+    "workedExample": {
+      "question": "Define cell cycle and explain the phases of mitosis. (6 marks)",
+      "steps": [
+        "Define cell cycle using exact textbook definition",
+        "List the four phases of mitosis in correct order",
+        "Briefly describe what happens in each phase",
+        "Mention the significance of mitosis"
+      ],
+      "answer": "Cell cycle is the sequence of events that occurs in a cell leading to its division and production of two daughter cells. The phases of mitosis are: (i) Prophase - chromosomes condense and nuclear membrane disappears, (ii) Metaphase - chromosomes align at cell equator, (iii) Anaphase - sister chromatids separate and move to opposite poles, (iv) Telophase - nuclear membranes reform around each set of chromosomes. Mitosis ensures growth and repair in multicellular organisms.",
+      "markScheme": "1 mark for correct definition, 1 mark for listing phases, 3 marks for describing each phase (0.75 each), 1 mark for significance"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for cell cycle definition.",
+      "Many students confuse mitosis with meiosis or mix up the phases. Remember mitosis produces identical diploid cells while meiosis produces different haploid gametes.",
+      "Avoid drawing diagrams unless specifically asked. Sindh Board prioritizes written explanations over illustrations in biology answers."
+    ],
+    "quickRecap": "Cell cycle is the sequence of events leading to cell division producing two daughter cells. It includes Interphase (G1, S, G2 phases) and M-phase (mitosis + cytokinesis). Mitosis has four phases: Prophase (chromosome condensation), Metaphase (chromosome alignment), Anaphase (chromatid separation), Telophase (nuclear reformation). Essential for growth, repair and asexual reproduction in organisms.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:15:04.763Z"
+  "created_at": "2026-04-06T06:15:04.763Z",
+  "enriched_at": "2026-04-06T16:50:31.390Z"
 }

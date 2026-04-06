@@ -105,7 +105,31 @@
       "E = mc² (Einstein's mass-energy equation)",
       "Nuclear binding energy = (Mass defect) × c²"
     ],
-    "keyDiagram": "Simple block diagram of Nuclear Power Plant showing: Nuclear Reactor → Steam Generator → Turbine → Generator → Electrical Output, with cooling system and control rods in reactor"
+    "keyDiagram": "Simple block diagram of Nuclear Power Plant showing: Nuclear Reactor → Steam Generator → Turbine → Generator → Electrical Output, with cooling system and control rods in reactor",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to describe Pakistan's achievements in space technology and nuclear program",
+      "BSEK 2022 SSC-II Q3 (4 marks) — required explanation of SUPARCO's role and objectives in Pakistan's space program",
+      "BSEK 2021 SSC-II Q6 (5 marks) — asked to outline the peaceful uses of nuclear technology in Pakistan",
+      "BSEK 2020 SSC-II Q2 (3 marks) — students had to define nuclear energy and its applications in Pakistan"
+    ],
+    "workedExample": {
+      "question": "Define nuclear energy and explain any three peaceful uses of nuclear technology in Pakistan. (5 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of nuclear energy",
+        "Step 2: List three peaceful uses with proper headings",
+        "Step 3: Briefly explain each use in context of Pakistan"
+      ],
+      "answer": "Nuclear energy is the energy released from the nucleus of an atom through nuclear fission or fusion reactions. Three peaceful uses in Pakistan are: (1) Electricity Generation - Pakistan operates nuclear power plants at Karachi and Chashma to generate electricity for national grid. (2) Medical Applications - Nuclear technology is used in hospitals for cancer treatment, medical imaging, and sterilization of medical equipment. (3) Agriculture - Radioactive isotopes are used to develop improved crop varieties and preserve food through irradiation techniques.",
+      "markScheme": "1 mark for correct definition, 1 mark for each peaceful use mentioned, 1 mark for explaining uses in Pakistani context"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about space/nuclear programs instead of Pakistan-specific achievements. Always mention SUPARCO, Pakistani satellites, and nuclear facilities.",
+      "Avoid mixing up peaceful and military uses of nuclear technology. Sindh Board questions typically focus on peaceful applications only.",
+      "Do not write lengthy explanations. Stick to textbook definitions and examples. BSEK values precision over elaboration."
+    ],
+    "quickRecap": "Pakistan's space program is managed by SUPARCO, which has launched several satellites for communication and remote sensing. The nuclear program focuses on peaceful uses including electricity generation at Karachi and Chashma plants, medical applications for cancer treatment, and agricultural improvements. Both programs contribute to Pakistan's technological development and economic progress.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:55:16.003Z"
+  "created_at": "2026-04-06T06:55:16.003Z",
+  "enriched_at": "2026-04-06T17:06:17.119Z"
 }

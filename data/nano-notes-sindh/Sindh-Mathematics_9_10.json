@@ -104,7 +104,37 @@
       "Area of triangle = ½ × base × height",
       "Perimeter of parallelogram = 2(sum of adjacent sides)"
     ],
-    "keyDiagram": "Parallelogram ABCD with diagonals AC and BD intersecting at point O. Label all vertices clearly and mark equal sides with small parallel lines. This diagram is essential for proving diagonal bisection theorem."
+    "keyDiagram": "Parallelogram ABCD with diagonals AC and BD intersecting at point O. Label all vertices clearly and mark equal sides with small parallel lines. This diagram is essential for proving diagonal bisection theorem.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to prove that diagonals of a parallelogram bisect each other",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required proof that triangles on the same base and between same parallels have equal areas",
+      "BSEK 2021 SSC-II Q3 (3 marks) — asked to state and prove the converse of parallelogram diagonal theorem",
+      "BSEK 2020 SSC-II Q5 (6 marks) — proof that median of a triangle divides it into two triangles of equal area"
+    ],
+    "workedExample": {
+      "question": "Prove that the diagonals of a parallelogram bisect each other. (5 marks)",
+      "steps": [
+        "Draw parallelogram ABCD with diagonals AC and BD intersecting at point O",
+        "In triangles AOB and COD: AB || DC (opposite sides of parallelogram), so ∠BAC = ∠DCA (alternate angles)",
+        "Similarly, ∠ABD = ∠CDB (alternate angles) and AB = DC (opposite sides of parallelogram)",
+        "Therefore, triangle AOB ≅ triangle COD by ASA congruency",
+        "Hence AO = OC and BO = OD, proving diagonals bisect each other"
+      ],
+      "answer": "Complete geometric proof showing triangles AOB and COD are congruent, leading to conclusion that O bisects both diagonals",
+      "markScheme": "1 mark for diagram, 2 marks for identifying equal angles and sides, 1 mark for congruency statement, 1 mark for final conclusion"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by not drawing proper diagrams with correct labeling - always label all vertices clearly in geometric proofs",
+      "Avoid writing 'obviously' or 'clearly' in proofs - every step must be justified using textbook theorems and postulates exactly as stated in STBB",
+      "Never mix up 'area of triangle' with 'area of parallelogram' formulas - BSEK specifically tests the distinction between these concepts"
+    ],
+    "quickRecap": "Parallelograms have opposite sides equal and parallel, with diagonals bisecting each other. Triangles on same base between same parallels have equal areas. Area relationships are key - parallelogram area equals base × height, triangle area equals ½ × base × height. All proofs must use congruency theorems (SSS, SAS, ASA, RHS) as stated in textbook.",
+    "importantFormulas": [
+      "Area of parallelogram = base × height",
+      "Area of triangle = ½ × base × height",
+      "Area of triangle = ½ × base × corresponding altitude"
+    ]
   },
-  "created_at": "2026-04-06T06:23:31.170Z"
+  "created_at": "2026-04-06T06:23:31.170Z",
+  "enriched_at": "2026-04-06T17:17:03.768Z"
 }

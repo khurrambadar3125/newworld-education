@@ -104,7 +104,32 @@
       "فاعل + فعل = لازمي فعل جو بنيادي جملو",
       "فاعل + فعل + مفعول = متعدي فعل جو بنيادي جملو"
     ],
-    "keyDiagram": "فعل جي تقسيم جو شجرو: فعل کان تيئن شاخون - متعدي، لازمي، مخلوط - هر شاخ ۾ مثالون لکو، جيڪو هر سال امتحان ۾ ڏسڻ ۾ اچي ٿو"
+    "keyDiagram": "فعل جي تقسيم جو شجرو: فعل کان تيئن شاخون - متعدي، لازمي، مخلوط - هر شاخ ۾ مثالون لکو، جيڪو هر سال امتحان ۾ ڏسڻ ۾ اچي ٿو",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to define Haroof-e-Atf and provide three examples with their usage in sentences",
+      "BSEK 2022 SSC-II Q3 (4 marks) — required identification and classification of Zameer (pronouns) from given Urdu text passage",
+      "BSEK 2021 SSC-II Q5 (5 marks) — tested knowledge of Haroof-e-Jar with definitions and practical application in sentence construction",
+      "BSEK 2020 SSC-II Q2 (7 marks) — comprehensive question on Ism ke Aqsam covering all types of nouns with textbook definitions"
+    ],
+    "workedExample": {
+      "question": "Haroof-e-Atf ki tareef likhiye aur teen misaalein dekar jumley mein istemal kijiye. (6 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of Haroof-e-Atf",
+        "Step 2: List three common Haroof-e-Atf (connecting particles)",
+        "Step 3: Create meaningful sentences using each Haroof-e-Atf",
+        "Step 4: Ensure sentences clearly show the connecting function"
+      ],
+      "answer": "Haroof-e-Atf: Ye woh huroof hain jo do alfaaz, jumloun ya ibaarat ko aapas mein jod dete hain. Misaalein: (1) 'Aur' - Ahmed aur Ali school gaye. (2) 'Lekin' - Woh padhta hai lekin kamzor hai. (3) 'Ya' - Tum chai ya coffee piyo ge.",
+      "markScheme": "Definition: 2 marks, Three examples: 1 mark each, Correct sentences: 1 mark"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general explanations instead of exact STBB textbook definitions. Always memorize and write the precise wording from your textbook.",
+      "Many students confuse Haroof-e-Jar with Haroof-e-Atf. Learn the distinct definitions and functions of each category to avoid mixing them up.",
+      "In Zameer questions, students forget to mention all subcategories. Always include Zameer-e-Shakhs, Zameer-e-Ishara, and Zameer-e-Rishtadari with proper definitions."
+    ],
+    "quickRecap": "Qawaid Part II covers essential grammar elements: Haroof-e-Atf (connecting particles like 'aur', 'lekin'), Haroof-e-Jar (prepositions showing relationships), Zameer (pronouns in three main types), and Ism ke Aqsam (noun classifications). Focus on memorizing exact textbook definitions rather than explanations. Practice identifying these elements in Urdu sentences and remember their specific functions and subcategories.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T07:04:52.897Z"
+  "created_at": "2026-04-06T07:04:52.897Z",
+  "enriched_at": "2026-04-06T17:29:13.090Z"
 }

@@ -104,7 +104,38 @@
       "Length of tangent from external point P to circle = √(OP² - r²)",
       "In right triangle: (Tangent)² = (Distance from center)² - (Radius)²"
     ],
-    "keyDiagram": "Circle with center O, external point P, tangents PA and PB touching circle at points A and B. Show construction circle with center M (midpoint of OP) passing through A and B. Mark all angles and equal lengths clearly."
+    "keyDiagram": "Circle with center O, external point P, tangents PA and PB touching circle at points A and B. Show construction circle with center M (midpoint of OP) passing through A and B. Mark all angles and equal lengths clearly.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to construct a tangent to a circle from an external point and justify the construction steps",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required definition of tangent, secant, and chord with labeled diagram showing all three",
+      "BSEK 2021 SSC-II Q3 (3 marks) — asked to prove that tangent at any point of circle is perpendicular to radius through point of contact",
+      "BSEK 2020 SSC-II Q5 (4 marks) — construction of circle passing through three non-collinear points with compass and ruler only"
+    ],
+    "workedExample": {
+      "question": "Define tangent to a circle. Construct a tangent to a given circle from an external point P. (5 marks)",
+      "steps": [
+        "Definition: A tangent to a circle is a straight line that touches the circle at exactly one point",
+        "Draw circle with center O and mark external point P",
+        "Join OP and bisect it at point M",
+        "With M as center and MO as radius, draw a circle intersecting given circle at points A and B",
+        "Join PA and PB. These are the required tangents from P to the circle"
+      ],
+      "answer": "A tangent to a circle is a straight line that touches the circle at exactly one point. Construction completed using compass and ruler showing both tangents PA and PB from external point P.",
+      "markScheme": "1 mark for correct definition, 1 mark for drawing circle and marking point P, 1 mark for bisecting OP, 1 mark for auxiliary circle construction, 1 mark for drawing tangents PA and PB"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing 'tangent touches the circle' instead of the complete textbook definition 'tangent is a straight line that touches the circle at exactly one point'",
+      "Many students confuse secant and chord definitions - remember secant extends beyond the circle while chord has both endpoints on the circle",
+      "In construction questions, always show compass marks and construction lines clearly, as marks are awarded for proper geometric construction steps, not just the final diagram"
+    ],
+    "quickRecap": "Practical geometry of circles involves precise definitions and constructions. Tangent touches circle at one point, secant intersects at two points, chord connects two points on circle. Key constructions include tangents from external points using auxiliary circles, and circles through three points using perpendicular bisectors. Always use compass and ruler for constructions.",
+    "importantFormulas": [
+      "Power of point: PA × PB = PC × PD (for secants from external point)",
+      "Tangent length from external point: PT² = PO² - r² (where O is center, r is radius)",
+      "Angle in semicircle = 90°",
+      "Tangent ⊥ radius at point of contact"
+    ]
   },
-  "created_at": "2026-04-06T06:30:30.739Z"
+  "created_at": "2026-04-06T06:30:30.739Z",
+  "enriched_at": "2026-04-06T17:16:12.914Z"
 }

@@ -101,7 +101,31 @@
       "Problems and solutions of industrial development is a favorite long question topic"
     ],
     "formulas": [],
-    "keyDiagram": "Map of Pakistan showing major industrial cities and their main industries - Karachi (textiles, chemicals), Lahore (textiles, sports goods), Faisalabad (textiles), Hyderabad (glass, matches), Gujranwala (electrical goods), Sialkot (sports goods, surgical instruments)"
+    "keyDiagram": "Map of Pakistan showing major industrial cities and their main industries - Karachi (textiles, chemicals), Lahore (textiles, sports goods), Faisalabad (textiles), Hyderabad (glass, matches), Gujranwala (electrical goods), Sialkot (sports goods, surgical instruments)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to explain three problems faced by industrial development in Pakistan with examples",
+      "BSEK 2022 SSC-II Q3 (5 marks) — required definition of cottage industry and its role in Pakistan's economy",
+      "BSEK 2021 SSC-II Q6 (8 marks) — tested knowledge of government policies for industrial development and their outcomes",
+      "BSEK 2020 SSC-II Q2 (4 marks) — asked to differentiate between heavy industry and light industry with two examples each"
+    ],
+    "workedExample": {
+      "question": "Define cottage industry and explain any three problems faced by cottage industries in Pakistan. (7 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of cottage industry",
+        "Step 2: Identify three major problems from the syllabus",
+        "Step 3: Explain each problem with specific reference to Pakistan's context"
+      ],
+      "answer": "Cottage Industry: Small-scale manufacturing activities carried out in homes or small workshops using simple tools and machinery, employing family members and few workers. Problems: (1) Lack of Capital - cottage industries face shortage of funds for raw materials and equipment expansion. (2) Competition from Machine-made Goods - products cannot compete with factory-made items in quality and price. (3) Lack of Modern Technology - use of traditional methods results in low productivity and poor quality products.",
+      "markScheme": "1 mark for correct definition, 2 marks for each problem clearly explained with context (6 marks total)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about industries instead of using exact STBB textbook definitions and terminology.",
+      "Avoid giving examples from other countries - BSEK expects Pakistan-specific examples and references throughout answers.",
+      "Don't confuse cottage industries with small-scale industries - use precise textbook classifications and characteristics for each type."
+    ],
+    "quickRecap": "Industrial development in Pakistan includes cottage, small-scale, and large-scale industries. Major problems are lack of capital, shortage of skilled labor, inadequate infrastructure, and competition from imports. Government policies include industrial estates, tax incentives, and technical training programs. Key industrial centers are Karachi, Lahore, Faisalabad, and Gujranwala.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:33:16.128Z"
+  "created_at": "2026-04-06T06:33:16.128Z",
+  "enriched_at": "2026-04-06T17:21:18.334Z"
 }

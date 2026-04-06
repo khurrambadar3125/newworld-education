@@ -96,7 +96,32 @@
       "Time management is crucial - spend 25-30 minutes on essay questions in the exam"
     ],
     "formulas": [],
-    "keyDiagram": "Essay Structure Pyramid: Introduction (Hook + Background + Thesis) at top, Body Paragraphs (Topic Sentence + Evidence + Analysis + Transition) in middle section, Conclusion (Restate Thesis + Summary + Final Thought) at base"
+    "keyDiagram": "Essay Structure Pyramid: Introduction (Hook + Background + Thesis) at top, Body Paragraphs (Topic Sentence + Evidence + Analysis + Transition) in middle section, Conclusion (Restate Thesis + Summary + Final Thought) at base",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4(b) (8 marks) — asked students to write an essay on character analysis from prescribed literature text",
+      "BSEK 2022 SSC-II Q5(a) (10 marks) — required essay writing on themes from short story with proper structure and textbook examples",
+      "BSEK 2021 SSC-II Q3(c) (6 marks) — asked for essay on moral lesson from drama with introduction, body and conclusion",
+      "BSEK 2020 SSC-II Q4(a) (8 marks) — demanded structured essay on poetry appreciation using literary devices from prescribed poems"
+    ],
+    "workedExample": {
+      "question": "Write an essay on the character of Antonio in 'The Merchant of Venice' highlighting his friendship and sacrifice. (10 marks)",
+      "steps": [
+        "Write introduction defining Antonio as protagonist and stating thesis about his character traits",
+        "Develop first body paragraph on Antonio's loyal friendship with textbook examples and quotes",
+        "Create second body paragraph on his spirit of sacrifice with specific incidents from play",
+        "Write conclusion summarizing Antonio's noble character and its significance in the play"
+      ],
+      "answer": "Antonio, the merchant of Venice, is the protagonist of Shakespeare's play who embodies the qualities of true friendship and selfless sacrifice. His character serves as an example of nobility and generosity in the commercial world of Venice.\n\nAntonio's friendship with Bassanio demonstrates unconditional loyalty. When Bassanio needs money to court Portia, Antonio readily agrees to help despite having no ready cash. He tells Bassanio, 'My purse, my person, my extremest means lie all unlocked to your occasions.' This shows his willingness to risk everything for friendship.\n\nThe spirit of sacrifice is Antonio's defining trait. He borrows money from Shylock, accepting the dangerous bond of a pound of flesh to help his friend. Even when facing death, he maintains his dignity and accepts his fate calmly, showing true Christian forgiveness and sacrifice.\n\nIn conclusion, Antonio represents the Renaissance ideal of friendship and sacrifice, making him one of Shakespeare's most noble characters whose generosity drives the entire plot of the play.",
+      "markScheme": "2 marks for proper introduction with thesis, 3 marks each for body paragraphs with textbook examples and quotes, 2 marks for strong conclusion linking to play's themes"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general essays without using specific examples and quotes from prescribed literature texts. Always include textbook references.",
+      "Many students forget proper essay structure (introduction, body paragraphs, conclusion) which costs marks in organization. Follow the exact format taught in STBB textbook.",
+      "Avoid giving personal opinions or modern interpretations. Stick to the themes and character analysis as presented in the prescribed textbook commentary and notes."
+    ],
+    "quickRecap": "Essay writing from literature requires proper structure with introduction, body paragraphs, and conclusion. Always use specific examples and quotes from prescribed texts. Focus on themes, character analysis, and moral lessons as presented in textbook. Maintain formal academic tone throughout the essay.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T14:44:26.292Z"
+  "created_at": "2026-04-06T14:44:26.292Z",
+  "enriched_at": "2026-04-06T17:00:51.349Z"
 }

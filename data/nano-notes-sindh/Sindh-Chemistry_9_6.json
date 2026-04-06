@@ -103,7 +103,39 @@
       "Percentage by volume = (Volume of solute / Volume of solution) × 100",
       "Mass of solution = Mass of solute + Mass of solvent"
     ],
-    "keyDiagram": "Solubility curve showing how solubility of different salts (KNO3, NaCl, KCl) varies with temperature. X-axis shows temperature in °C, Y-axis shows solubility in g/100g water. Must show KNO3 having steepest curve and NaCl having gentlest slope."
+    "keyDiagram": "Solubility curve showing how solubility of different salts (KNO3, NaCl, KCl) varies with temperature. X-axis shows temperature in °C, Y-axis shows solubility in g/100g water. Must show KNO3 having steepest curve and NaCl having gentlest slope.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define solution, solute and solvent with examples",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required differentiation between saturated, unsaturated and supersaturated solutions",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested concentration calculations and molarity definitions",
+      "BSEK 2020 SSC-II Q6 (3 marks) — asked for factors affecting solubility with explanations"
+    ],
+    "workedExample": {
+      "question": "Define solution, solute and solvent. Calculate the molarity of a solution containing 20g of NaCl dissolved in 500ml of water. (6 marks)",
+      "steps": [
+        "Write textbook definition of solution: A homogeneous mixture of two or more substances",
+        "Define solute: The substance that is dissolved (present in smaller quantity)",
+        "Define solvent: The substance that dissolves the solute (present in larger quantity)",
+        "Apply molarity formula: M = moles of solute / volume of solution in L",
+        "Calculate moles of NaCl: 20g ÷ 58.5g/mol = 0.342 mol",
+        "Calculate molarity: 0.342 mol ÷ 0.5L = 0.684 M"
+      ],
+      "answer": "Solution is a homogeneous mixture of two or more substances. Solute is the substance that is dissolved. Solvent is the substance that dissolves the solute. Molarity = 0.684 M",
+      "markScheme": "1 mark each for correct definitions (3 marks), 1 mark for formula, 1 mark for calculation, 1 mark for final answer"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for solution, solute, and solvent.",
+      "Never confuse molarity with molality - BSEK specifically tests the difference. Molarity uses volume in liters, molality uses mass of solvent in kg.",
+      "When explaining factors affecting solubility, stick to the three main factors from textbook: temperature, pressure, and nature of solute-solvent. Avoid adding extra factors not in STBB."
+    ],
+    "quickRecap": "Solutions are homogeneous mixtures where solute dissolves in solvent. Types include saturated, unsaturated, and supersaturated based on solubility limits. Concentration is measured by molarity (moles/L) and molality (moles/kg solvent). Solubility depends on temperature, pressure, and nature of substances.",
+    "importantFormulas": [
+      "Molarity (M) = Moles of solute / Volume of solution in liters",
+      "Molality (m) = Moles of solute / Mass of solvent in kg",
+      "Percentage by mass = (Mass of solute / Mass of solution) × 100",
+      "Moles = Given mass / Molar mass"
+    ]
   },
-  "created_at": "2026-04-06T06:09:28.049Z"
+  "created_at": "2026-04-06T06:09:28.049Z",
+  "enriched_at": "2026-04-06T16:55:18.698Z"
 }

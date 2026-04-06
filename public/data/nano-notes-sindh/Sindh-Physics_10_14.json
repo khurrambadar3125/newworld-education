@@ -106,7 +106,39 @@
       "1/f = 1/u + 1/v (lens formula)",
       "m = v/u (magnification)"
     ],
-    "keyDiagram": "Ray diagram showing refraction through rectangular glass block - incident ray bends towards normal when entering glass (denser medium) and away from normal when leaving glass (entering air). Include angles i₁, r₁, i₂, r₂ and show lateral displacement"
+    "keyDiagram": "Ray diagram showing refraction through rectangular glass block - incident ray bends towards normal when entering glass (denser medium) and away from normal when leaving glass (entering air). Include angles i₁, r₁, i₂, r₂ and show lateral displacement",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define refraction and state Snell's law with mathematical expression",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required explanation of total internal reflection with conditions and one practical application",
+      "BSEK 2021 SSC-II Q3 (3 marks) — asked for definition of critical angle and factors affecting refractive index",
+      "BSEK 2020 SSC-II Q5 (5 marks) — demanded explanation of simple microscope working with ray diagram and magnification formula"
+    ],
+    "workedExample": {
+      "question": "Define refraction of light. State Snell's law and write its mathematical form. Calculate the refractive index of glass if light travels from air to glass at incident angle 60° and refracted angle 35°. (6 marks)",
+      "steps": [
+        "Step 1: Write textbook definition of refraction",
+        "Step 2: State Snell's law in words",
+        "Step 3: Write mathematical expression n₁sin θ₁ = n₂sin θ₂",
+        "Step 4: Identify given values and substitute in formula",
+        "Step 5: Calculate using sin 60° = 0.866 and sin 35° = 0.574"
+      ],
+      "answer": "Refraction is the bending of light when it passes from one transparent medium to another having different optical density. Snell's law states that the ratio of sine of angle of incidence to sine of angle of refraction is constant for given pair of media. Mathematical form: n₁sin θ₁ = n₂sin θ₂. Given: θ₁ = 60°, θ₂ = 35°, n₁ = 1 (air). Using formula: 1 × sin 60° = n₂ × sin 35°, therefore n₂ = sin 60°/sin 35° = 0.866/0.574 = 1.51",
+      "markScheme": "1 mark for definition, 1 mark for Snell's law statement, 1 mark for formula, 1 mark for identifying values, 2 marks for correct calculation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for refraction and optical terms.",
+      "Many students confuse total internal reflection conditions - remember it occurs when light travels from denser to rarer medium AND angle of incidence exceeds critical angle.",
+      "In ray diagram questions, students forget to show normal lines and proper arrow directions. Always draw neat diagrams with labeled angles and use ruler for straight lines."
+    ],
+    "quickRecap": "Refraction is bending of light between different media following Snell's law (n₁sin θ₁ = n₂sin θ₂). Total internal reflection occurs from denser to rarer medium when incident angle exceeds critical angle. Simple microscope uses single convex lens for magnification (M = D/f). Compound microscope uses objective and eyepiece lenses for higher magnification.",
+    "importantFormulas": [
+      "Snell's Law: n₁sin θ₁ = n₂sin θ₂",
+      "Refractive Index: n = sin i / sin r = c / v",
+      "Critical Angle: sin C = 1/n (for denser to rarer medium)",
+      "Simple Microscope Magnification: M = D/f (where D = 25 cm)",
+      "Lens Formula: 1/f = 1/u + 1/v"
+    ]
   },
-  "created_at": "2026-04-06T06:05:40.009Z"
+  "created_at": "2026-04-06T06:05:40.009Z",
+  "enriched_at": "2026-04-06T17:24:54.131Z"
 }

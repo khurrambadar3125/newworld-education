@@ -103,7 +103,32 @@
       "Percentage purity = (Mass of pure substance / Total mass of sample) × 100",
       "Molarity = Number of moles of solute / Volume of solution in dm³"
     ],
-    "keyDiagram": "Classification chart of Analytical Chemistry showing main branches: Qualitative Analysis and Quantitative Analysis, with Quantitative further divided into Classical Methods (Gravimetric, Volumetric, Colorimetric) and Instrumental Methods (Spectroscopic, Chromatographic, Electroanalytical)"
+    "keyDiagram": "Classification chart of Analytical Chemistry showing main branches: Qualitative Analysis and Quantitative Analysis, with Quantitative further divided into Classical Methods (Gravimetric, Volumetric, Colorimetric) and Instrumental Methods (Spectroscopic, Chromatographic, Electroanalytical)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define qualitative and quantitative analysis with two examples each",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of flame test procedure and identification of three metal ions",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested knowledge of acid-base indicators and their color changes in different solutions",
+      "BSEK 2020 SSC-II Q6 (4 marks) — asked to differentiate between physical and chemical methods of analysis"
+    ],
+    "workedExample": {
+      "question": "Define qualitative analysis and quantitative analysis. Explain the flame test method for identifying sodium ions. (6 marks)",
+      "steps": [
+        "Write exact textbook definition of qualitative analysis",
+        "Write exact textbook definition of quantitative analysis",
+        "Explain flame test procedure step by step",
+        "State the specific flame color for sodium ions"
+      ],
+      "answer": "Qualitative analysis is the process of identifying the constituents present in a substance without determining their quantities. Quantitative analysis is the process of determining the exact amounts or concentrations of constituents present in a substance. Flame test procedure: (1) Clean a platinum wire loop with dilute HCl (2) Dip the clean wire into the sample solution (3) Hold the wire in the non-luminous flame of Bunsen burner (4) Observe the flame color. Sodium ions produce a bright yellow flame color.",
+      "markScheme": "1 mark for qualitative definition, 1 mark for quantitative definition, 3 marks for flame test steps, 1 mark for sodium flame color"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for analytical chemistry definitions.",
+      "Many students confuse qualitative and quantitative analysis. Remember: qualitative = what is present, quantitative = how much is present.",
+      "In flame test questions, students forget to mention cleaning the platinum wire with dilute HCl first. This step is essential and always carries marks."
+    ],
+    "quickRecap": "Analytical chemistry involves qualitative analysis (identifying what substances are present) and quantitative analysis (determining how much is present). Common qualitative methods include flame tests, precipitation reactions, and indicator tests. Physical methods use instruments while chemical methods use chemical reactions. Always write textbook-exact definitions in BSEK exams.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:12:51.016Z"
+  "created_at": "2026-04-06T06:12:51.016Z",
+  "enriched_at": "2026-04-06T16:53:10.064Z"
 }

@@ -100,7 +100,32 @@
       "For long answers, provide definition + example + explanation for each device"
     ],
     "formulas": [],
-    "keyDiagram": "Create a mind map with 'Literary Devices' at center, branching out to: Metaphor, Simile, Personification, Symbolism, Irony, Alliteration, Imagery - each with definition and example"
+    "keyDiagram": "Create a mind map with 'Literary Devices' at center, branching out to: Metaphor, Simile, Personification, Symbolism, Irony, Alliteration, Imagery - each with definition and example",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to define theme and identify two themes from a given poem with examples",
+      "BSEK 2022 SSC-II Q7 (8 marks) — required definition of metaphor, simile, and personification with one example of each from prescribed text",
+      "BSEK 2021 SSC-II Q3 (5 marks) — asked to differentiate between alliteration and assonance with textbook definitions",
+      "BSEK 2020 SSC-II Q6 (7 marks) — required identification and explanation of three literary devices used in a specific stanza"
+    ],
+    "workedExample": {
+      "question": "Define theme and identify any two themes from the poem 'The Road Not Taken' with examples. (6 marks)",
+      "steps": [
+        "First, provide the exact textbook definition of theme",
+        "Identify the first theme with a specific example from the poem",
+        "Identify the second theme with a specific example from the poem",
+        "Ensure examples directly support the identified themes"
+      ],
+      "answer": "Theme is the central idea or message that the author wants to convey through the literary work. Two themes from 'The Road Not Taken' are: (1) Choice and Decision-Making - shown through 'Two roads diverged in a yellow wood, And sorry I could not travel both' which represents life's difficult choices. (2) Individualism - demonstrated by 'I took the one less traveled by, And that has made all the difference' showing the speaker's unique path in life.",
+      "markScheme": "2 marks for correct textbook definition of theme, 2 marks for each theme identification (1 mark for naming + 1 mark for relevant example)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for literary device definitions.",
+      "Avoid giving only the example without proper definition - BSEK requires both definition and example for full marks in literary device questions.",
+      "Do not confuse similar devices like metaphor and simile - clearly state the presence or absence of comparison words like 'as' or 'like' in your explanations."
+    ],
+    "quickRecap": "Theme is the central message of a literary work, while literary devices are techniques writers use to enhance meaning. Key devices include simile (comparison with 'like'/'as'), metaphor (direct comparison), personification (human qualities to non-human), alliteration (repeated initial sounds), and symbolism (deeper meaning representation). Always provide textbook definitions followed by relevant examples from prescribed texts.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T14:44:48.173Z"
+  "created_at": "2026-04-06T14:44:48.173Z",
+  "enriched_at": "2026-04-06T16:59:39.975Z"
 }

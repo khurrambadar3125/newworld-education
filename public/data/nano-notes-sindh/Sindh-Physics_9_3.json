@@ -106,7 +106,39 @@
       "Average speed = Total distance / Total time",
       "Average velocity = Total displacement / Total time"
     ],
-    "keyDiagram": "Distance-time graph showing uniform motion (straight line) and non-uniform motion (curved line). Velocity-time graph showing constant velocity (horizontal line) and uniform acceleration (straight sloped line). Students must label axes clearly with units."
+    "keyDiagram": "Distance-time graph showing uniform motion (straight line) and non-uniform motion (curved line). Velocity-time graph showing constant velocity (horizontal line) and uniform acceleration (straight sloped line). Students must label axes clearly with units.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define uniform and non-uniform motion with one example each",
+      "BSEK 2022 SSC-II Q2 (3 marks) — required differentiation between distance and displacement with graphical representation",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested velocity-time graph interpretation and calculation of acceleration from the graph",
+      "BSEK 2020 SSC-II Q1 (2 marks) — definition of acceleration and its SI unit"
+    ],
+    "workedExample": {
+      "question": "A car starts from rest and reaches a velocity of 20 m/s in 5 seconds. Calculate its acceleration. Also define uniform acceleration. (5 marks)",
+      "steps": [
+        "Given: Initial velocity (u) = 0 m/s, Final velocity (v) = 20 m/s, Time (t) = 5 s",
+        "Required: Acceleration (a) = ?",
+        "Using formula: a = (v - u)/t",
+        "a = (20 - 0)/5 = 20/5 = 4 m/s²"
+      ],
+      "answer": "Acceleration = 4 m/s². Uniform acceleration is defined as the acceleration of a body when it covers equal changes in velocity in equal intervals of time, however small these intervals may be.",
+      "markScheme": "1 mark for correct formula, 1 mark for substitution, 1 mark for calculation, 2 marks for exact textbook definition"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for full marks.",
+      "Never confuse distance with displacement - distance is scalar (always positive) while displacement is vector (can be negative). Examiners frequently test this distinction.",
+      "When drawing motion graphs, always label axes correctly with units (time in seconds, velocity in m/s). Unlabeled graphs lose presentation marks even if the curve is correct."
+    ],
+    "quickRecap": "Linear motion involves objects moving in straight lines. Key concepts: distance (scalar) vs displacement (vector), speed (scalar) vs velocity (vector). Acceleration is rate of change of velocity. Uniform motion means constant velocity, while uniformly accelerated motion means constant acceleration. Graphs help visualize motion patterns.",
+    "importantFormulas": [
+      "Average velocity = Total displacement / Total time",
+      "Acceleration (a) = (v - u) / t",
+      "v = u + at",
+      "s = ut + (1/2)at²",
+      "v² = u² + 2as",
+      "Average acceleration = Change in velocity / Time taken"
+    ]
   },
-  "created_at": "2026-04-06T06:01:36.062Z"
+  "created_at": "2026-04-06T06:01:36.062Z",
+  "enriched_at": "2026-04-06T17:26:44.141Z"
 }

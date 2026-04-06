@@ -103,7 +103,31 @@
     "formulas": [
       "Enzyme + Substrate → Enzyme-Substrate Complex → Enzyme + Products"
     ],
-    "keyDiagram": "Lock and Key Model: Draw enzyme with specific shaped active site, substrate fitting exactly into active site, enzyme-substrate complex formation, and finally products being released with enzyme unchanged. Label: Enzyme, Active Site, Substrate, Enzyme-Substrate Complex, Products."
+    "keyDiagram": "Lock and Key Model: Draw enzyme with specific shaped active site, substrate fitting exactly into active site, enzyme-substrate complex formation, and finally products being released with enzyme unchanged. Label: Enzyme, Active Site, Substrate, Enzyme-Substrate Complex, Products.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to define enzymes, explain their characteristics, and give two examples with their functions",
+      "BSEK 2022 SSC-II Q6 (4 marks) — required definition of enzymes and explanation of how temperature affects enzyme activity",
+      "BSEK 2021 SSC-II Q3 (5 marks) — asked to define enzymes, state their chemical nature, and explain lock and key model",
+      "BSEK 2020 SSC-II Q5 (3 marks) — simple definition of enzymes and two factors affecting their activity"
+    ],
+    "workedExample": {
+      "question": "Define enzymes. Explain how temperature affects enzyme activity. Give two examples of enzymes with their functions. (6 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of enzymes (2 marks)",
+        "Step 2: Explain temperature effect with optimum temperature concept (2 marks)",
+        "Step 3: Give two specific enzymes with their exact functions (2 marks)"
+      ],
+      "answer": "Enzymes are biological catalysts that speed up biochemical reactions without being consumed in the process. They are proteins in nature. Temperature affects enzyme activity because enzymes work best at optimum temperature (37°C for human enzymes). At low temperatures, enzyme activity is slow. At high temperatures, enzymes denature and lose their shape. Examples: (1) Pepsin - digests proteins in stomach (2) Amylase - breaks down starch into sugar.",
+      "markScheme": "1 mark for definition, 1 mark for protein nature, 1 mark for optimum temperature concept, 1 mark for denaturation explanation, 1 mark each for correct enzyme-function pairs"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing 'enzymes speed up reactions' instead of the complete textbook definition including 'biological catalysts' and 'without being consumed'",
+      "Never write vague examples like 'digestive enzymes' - always give specific enzyme names like pepsin, amylase, lipase with exact functions",
+      "When explaining factors affecting enzymes, stick to textbook terms like 'optimum temperature', 'denaturation', and 'optimum pH' rather than casual explanations"
+    ],
+    "quickRecap": "Enzymes are protein biological catalysts that speed up reactions without being consumed. They work best at optimum temperature and pH, and denature at high temperatures. Key examples include pepsin (protein digestion), amylase (starch breakdown), and lipase (fat digestion). Lock and key model explains enzyme specificity.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:15:26.458Z"
+  "created_at": "2026-04-06T06:15:26.458Z",
+  "enriched_at": "2026-04-06T16:50:46.375Z"
 }

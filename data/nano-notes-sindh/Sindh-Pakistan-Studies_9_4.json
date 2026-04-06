@@ -103,7 +103,33 @@
       "Temperature conversion: °F = (°C × 9/5) + 32",
       "°C = (°F - 32) × 5/9"
     ],
-    "keyDiagram": "Map of Pakistan showing five physiographic divisions - Northern Mountains (Karakoram, Hindukush, Himalayas), Potwar Plateau, Indus Plain (Upper and Lower), Balochistan Plateau, and Coastal Areas. Mark major cities like Karachi, Lahore, Islamabad and important features."
+    "keyDiagram": "Map of Pakistan showing five physiographic divisions - Northern Mountains (Karakoram, Hindukush, Himalayas), Potwar Plateau, Indus Plain (Upper and Lower), Balochistan Plateau, and Coastal Areas. Mark major cities like Karachi, Lahore, Islamabad and important features.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define monsoon climate and explain its effects on agriculture in Pakistan",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of Pakistan's location and its impact on climate with geographical coordinates",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested knowledge of major landforms of Pakistan including northern mountains, plains and coastal areas",
+      "BSEK 2020 SSC-II Q2 (3 marks) — asked for exact definition of continental climate and its characteristics in Pakistan"
+    ],
+    "workedExample": {
+      "question": "Define monsoon climate and explain its main features in Pakistan. (5 marks)",
+      "steps": [
+        "Step 1: Write the exact STBB textbook definition of monsoon climate",
+        "Step 2: Identify the two main monsoon seasons in Pakistan",
+        "Step 3: Explain the characteristics of summer monsoon",
+        "Step 4: Explain the characteristics of winter monsoon",
+        "Step 5: Conclude with monsoon's overall impact on Pakistan"
+      ],
+      "answer": "Monsoon climate is a seasonal wind system that reverses its direction twice a year and brings rainfall. Pakistan experiences monsoon climate with two main seasons: Summer monsoon (June-September) brings hot, humid winds from Arabian Sea causing heavy rainfall in Punjab and upper Sindh. Winter monsoon (December-February) brings cold, dry winds from Central Asia causing little rainfall. This climate system is vital for Pakistan's agriculture and water resources.",
+      "markScheme": "1 mark for correct definition, 1 mark for identifying two seasons, 1 mark for summer monsoon features, 1 mark for winter monsoon features, 1 mark for conclusion about importance"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about weather instead of using exact STBB textbook definitions for climate terms. Always memorize textbook definitions word-for-word.",
+      "Many students confuse landforms with climate features. Keep geographical features (mountains, plains) separate from climate discussions (temperature, rainfall, winds).",
+      "Avoid giving examples from other countries when explaining Pakistan's climate. Stick strictly to Pakistani geographical coordinates, cities, and regions mentioned in STBB textbook."
+    ],
+    "quickRecap": "Pakistan is located between 24°N-37°N and 61°E-75°E with diverse landforms including northern mountains, Indus plains, and coastal areas. The country experiences monsoon climate with hot summers and mild winters. Summer monsoons bring vital rainfall for agriculture while winter monsoons are generally dry. Pakistan's location gives it continental climate in north and tropical climate in south.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:32:30.462Z"
+  "created_at": "2026-04-06T06:32:30.462Z",
+  "enriched_at": "2026-04-06T17:23:17.101Z"
 }

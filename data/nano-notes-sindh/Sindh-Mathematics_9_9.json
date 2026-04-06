@@ -103,7 +103,34 @@
       "If △ABC ≅ △PQR, then AB = PQ, BC = QR, AC = PR and ∠A = ∠P, ∠B = ∠Q, ∠C = ∠R",
       "CPCTC: Corresponding Parts of Congruent Triangles are Equal"
     ],
-    "keyDiagram": "Draw two triangles ABC and PQR side by side with corresponding sides and angles marked with equal signs. Label all vertices clearly and show which sides/angles are equal using small marks or arrows. This standard diagram appears in most congruency questions."
+    "keyDiagram": "Draw two triangles ABC and PQR side by side with corresponding sides and angles marked with equal signs. Label all vertices clearly and show which sides/angles are equal using small marks or arrows. This standard diagram appears in most congruency questions.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to state and prove the SAS congruence criterion with a diagram",
+      "BSEK 2022 SSC-II Q7 (8 marks) — required proof that two triangles are congruent using ASA criterion and finding corresponding sides",
+      "BSEK 2021 SSC-II Q3 (4 marks) — asked to define congruent triangles and list all four congruence criteria",
+      "BSEK 2020 SSC-II Q6 (5 marks) — asked to prove triangles congruent using RHS criterion and state corresponding parts"
+    ],
+    "workedExample": {
+      "question": "In triangles ABC and PQR, AB = PQ = 5 cm, BC = QR = 7 cm, and AC = PR = 6 cm. Prove that triangle ABC ≅ triangle PQR and find the measure of angle B if angle Q = 60°. (6 marks)",
+      "steps": [
+        "Given: AB = PQ = 5 cm, BC = QR = 7 cm, AC = PR = 6 cm",
+        "To prove: △ABC ≅ △PQR",
+        "In △ABC and △PQR: AB = PQ (given), BC = QR (given), AC = PR (given)",
+        "By SSS congruence criterion, △ABC ≅ △PQR",
+        "Since triangles are congruent, corresponding angles are equal",
+        "Therefore, ∠B = ∠Q = 60°"
+      ],
+      "answer": "△ABC ≅ △PQR by SSS criterion. Since corresponding parts of congruent triangles are equal, ∠B = 60°",
+      "markScheme": "1 mark for writing given data, 2 marks for identifying equal sides, 2 marks for applying SSS criterion correctly, 1 mark for finding angle B"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing 'triangles are equal' instead of 'triangles are congruent'. Always use the exact term 'congruent'.",
+      "Many students forget to state the congruence criterion (SSS, SAS, ASA, RHS) when proving triangles congruent. Always mention which criterion you are using.",
+      "Avoid writing general statements about triangle similarity. BSEK requires exact textbook definitions such as 'Two triangles are congruent if their corresponding sides and angles are equal'."
+    ],
+    "quickRecap": "Congruent triangles have equal corresponding sides and angles. Four congruence criteria: SSS (three sides equal), SAS (two sides and included angle), ASA (two angles and included side), RHS (right angle, hypotenuse, and one side). When triangles are congruent, all corresponding parts (CPCT) are equal. Always state which criterion proves congruence.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:23:10.162Z"
+  "created_at": "2026-04-06T06:23:10.162Z",
+  "enriched_at": "2026-04-06T17:20:47.291Z"
 }

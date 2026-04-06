@@ -97,7 +97,32 @@
       "Practice writing notes on Pakistani handicrafts and folk music"
     ],
     "formulas": [],
-    "keyDiagram": "Map of Pakistan showing four provinces with their languages, traditional dresses, food items, and folk dances labeled in each province"
+    "keyDiagram": "Map of Pakistan showing four provinces with their languages, traditional dresses, food items, and folk dances labeled in each province",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (8 marks) — asked students to explain the main features of Pakistani culture with examples",
+      "BSEK 2022 SSC-II Q4 (6 marks) — required definition of culture and description of Pakistan's cultural diversity",
+      "BSEK 2021 SSC-II Q2 (10 marks) — asked to discuss the role of religion, language and traditions in Pakistani culture",
+      "BSEK 2020 SSC-II Q5 (5 marks) — asked students to define cultural heritage and give examples from Pakistan"
+    ],
+    "workedExample": {
+      "question": "Define culture and explain any four main features of Pakistani culture. (8 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of culture",
+        "Step 2: List four main features clearly with headings",
+        "Step 3: Explain each feature with specific examples from Pakistan",
+        "Step 4: Ensure answer follows STBB textbook terminology"
+      ],
+      "answer": "Culture is the way of life of a society including its beliefs, customs, traditions, language, arts, and social institutions. Four main features of Pakistani culture are: 1) Religion: Islam is the dominant religion shaping Pakistani culture, influencing daily life, festivals like Eid, and moral values. 2) Language: Urdu is the national language while regional languages like Punjabi, Sindhi, Pashto and Balochi represent cultural diversity. 3) Arts and Crafts: Traditional handicrafts like truck art, carpets, pottery and calligraphy reflect cultural identity. 4) Food and Dress: Traditional foods like biryani, kebabs and clothing like shalwar kameez represent Pakistani cultural heritage.",
+      "markScheme": "2 marks for correct definition of culture, 1.5 marks for each of the four features with proper explanation and examples"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about culture instead of Pakistan-specific examples. Always relate answers to Pakistani context.",
+      "Avoid using personal opinions or modern interpretations. Stick to textbook definitions and traditional cultural elements as mentioned in STBB.",
+      "Many students confuse cultural features with geographical or political aspects. Focus only on cultural elements like religion, language, arts, traditions and social customs."
+    ],
+    "quickRecap": "Culture is the complete way of life of a society including beliefs, customs and traditions. Pakistani culture is primarily influenced by Islam as the dominant religion. Key features include diverse languages (Urdu national, regional varieties), rich arts and crafts traditions, and distinctive food and clothing. Cultural unity exists despite ethnic and linguistic diversity across different provinces.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:34:06.199Z"
+  "created_at": "2026-04-06T06:34:06.199Z",
+  "enriched_at": "2026-04-06T17:21:51.709Z"
 }

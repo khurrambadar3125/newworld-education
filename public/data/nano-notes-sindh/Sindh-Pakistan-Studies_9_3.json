@@ -100,7 +100,31 @@
       "Comparison questions between different constitutions are very common"
     ],
     "formulas": [],
-    "keyDiagram": "Constitutional Timeline Chart showing progression from 1947 (Interim Constitution) → 1956 (First Constitution/Islamic Republic) → 1958 (Martial Law) → 1962 (Presidential System) → 1969 (Martial Law) → 1973 (Parliamentary System/Current Constitution)"
+    "keyDiagram": "Constitutional Timeline Chart showing progression from 1947 (Interim Constitution) → 1956 (First Constitution/Islamic Republic) → 1958 (Martial Law) → 1962 (Presidential System) → 1969 (Martial Law) → 1973 (Parliamentary System/Current Constitution)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to explain the main features of 1973 Constitution of Pakistan",
+      "BSEK 2022 SSC-II Q3 (4 marks) — required definition of constitutional development and its importance in Pakistan",
+      "BSEK 2021 SSC-II Q5 (8 marks) — tested knowledge of constitutional history from 1947-1973 with specific dates",
+      "BSEK 2020 SSC-II Q2 (5 marks) — asked to compare features of 1956, 1962 and 1973 constitutions"
+    ],
+    "workedExample": {
+      "question": "Define Constitutional Development and explain any three features of 1973 Constitution of Pakistan. (7 marks)",
+      "steps": [
+        "Step 1: Write exact textbook definition of Constitutional Development",
+        "Step 2: List three main features of 1973 Constitution",
+        "Step 3: Briefly explain each feature in 2-3 lines using textbook language"
+      ],
+      "answer": "Constitutional Development means the gradual process of making and improving the constitution of a country to establish a proper system of government. Three features of 1973 Constitution: (1) Federal System - Pakistan was declared a federal republic with provinces having specific powers. (2) Parliamentary System - Prime Minister as head of government and President as head of state. (3) Islamic Provisions - Islam declared as state religion and no law can be made against Quran and Sunnah.",
+      "markScheme": "Definition (2 marks), Three features identified (3 marks), Explanation of features (2 marks)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about democracy instead of textbook-exact definitions of constitutional terms. Always use the STBB textbook phrasing.",
+      "Many students confuse dates of different constitutions (1956, 1962, 1973). Learn exact years and avoid mixing up constitutional features.",
+      "Avoid writing lengthy essays about political history. Sindh Board wants precise, point-wise answers with specific constitutional features only."
+    ],
+    "quickRecap": "Constitutional Development in Pakistan involved three main constitutions: 1956 (first constitution, presidential system), 1962 (presidential system under Ayub Khan), and 1973 (current parliamentary system with Islamic provisions). The 1973 Constitution established Pakistan as an Islamic Federal Republic with parliamentary democracy. Key features include federal structure, fundamental rights, Islamic provisions, and separation of powers between federal and provincial governments.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:32:06.037Z"
+  "created_at": "2026-04-06T06:32:06.037Z",
+  "enriched_at": "2026-04-06T17:23:00.564Z"
 }

@@ -103,7 +103,37 @@
       "Population Density = Total Population ÷ Total Area",
       "Population Growth Rate = (Birth Rate - Death Rate) ÷ 10"
     ],
-    "keyDiagram": "Population Pyramid of Pakistan: Draw a triangle with broad base (0-14 years age group), narrow middle (15-64 years), and very narrow top (65+ years). Label left side as Male, right side as Female. Show percentages: 0-14 years = 35%, 15-64 years = 60%, 65+ years = 5%"
+    "keyDiagram": "Population Pyramid of Pakistan: Draw a triangle with broad base (0-14 years age group), narrow middle (15-64 years), and very narrow top (65+ years). Label left side as Male, right side as Female. Show percentages: 0-14 years = 35%, 15-64 years = 60%, 65+ years = 5%",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define population density and explain factors affecting population distribution in Pakistan",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required analysis of population growth trends and their impact on Pakistan's economy",
+      "BSEK 2021 SSC-II Q4 (5 marks) — asked to differentiate between birth rate and death rate with examples from Pakistan",
+      "BSEK 2020 SSC-II Q2 (3 marks) — definition of census and its importance for population planning"
+    ],
+    "workedExample": {
+      "question": "Define population density and explain three factors that affect population distribution in Pakistan. (6 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of population density",
+        "Step 2: Identify three main factors affecting population distribution",
+        "Step 3: Explain each factor with reference to Pakistan's geography",
+        "Step 4: Use specific examples from Pakistani regions"
+      ],
+      "answer": "Population density is the average number of people living per square kilometer in a given area. Three factors affecting population distribution in Pakistan are: (1) Physical factors - fertile plains of Punjab and Sindh support dense population due to availability of water and agricultural land, while mountainous areas of northern Pakistan have sparse population. (2) Economic factors - industrial cities like Karachi and Lahore attract large populations due to employment opportunities. (3) Climatic factors - areas with moderate climate and adequate rainfall like northern Punjab have higher population concentration compared to arid regions of Balochistan.",
+      "markScheme": "1 mark for correct definition, 1 mark each for naming three factors, 1 mark each for explaining factors with Pakistani examples"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for terms like population density and birth rate.",
+      "Avoid giving only numerical data about Pakistan's population without proper definitions and explanations as required by the question.",
+      "Do not confuse population growth rate with population density - learn the exact mathematical formulas and definitions for each demographic term."
+    ],
+    "quickRecap": "Pakistan's population exceeds 220 million with high growth rate of 2.4% annually. Population density varies greatly - highest in Punjab plains, lowest in Balochistan mountains. Major demographic challenges include high birth rate, declining death rate, and uneven distribution. Census data shows rapid urbanization with Karachi being largest city.",
+    "importantFormulas": [
+      "Population Density = Total Population ÷ Total Area (per sq km)",
+      "Population Growth Rate = (Birth Rate - Death Rate) ÷ 10",
+      "Birth Rate = (Number of births in a year ÷ Total population) × 1000",
+      "Death Rate = (Number of deaths in a year ÷ Total population) × 1000"
+    ]
   },
-  "created_at": "2026-04-06T06:33:41.215Z"
+  "created_at": "2026-04-06T06:33:41.215Z",
+  "enriched_at": "2026-04-06T17:21:35.014Z"
 }

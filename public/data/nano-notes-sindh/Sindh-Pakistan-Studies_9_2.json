@@ -101,7 +101,32 @@
       "Timeline of events is frequently asked - practice chronological order"
     ],
     "formulas": [],
-    "keyDiagram": "Timeline diagram showing major events: Muslim League formation (1906) → Khilafat Movement (1919-24) → Allama Iqbal's Address (1930) → Lahore Resolution (1940) → Direct Action Day (1946) → 3rd June Plan (1947) → Independence (14 August 1947)"
+    "keyDiagram": "Timeline diagram showing major events: Muslim League formation (1906) → Khilafat Movement (1919-24) → Allama Iqbal's Address (1930) → Lahore Resolution (1940) → Direct Action Day (1946) → 3rd June Plan (1947) → Independence (14 August 1947)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (6 marks) — asked students to explain the role of Quaid-e-Azam in the Pakistan Movement with specific events",
+      "BSEK 2022 SSC-II Q4 (5 marks) — required definition of Two-Nation Theory and its importance in creation of Pakistan",
+      "BSEK 2021 SSC-II Q2 (4 marks) — asked to describe the Lahore Resolution 1940 and its significance",
+      "BSEK 2020 SSC-II Q6 (7 marks) — required explanation of factors leading to partition of India in 1947"
+    ],
+    "workedExample": {
+      "question": "Define Two-Nation Theory and explain its role in the creation of Pakistan. (6 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of Two-Nation Theory",
+        "Step 2: Explain the concept that Hindus and Muslims are separate nations",
+        "Step 3: Mention key proponents like Sir Syed Ahmad Khan and Allama Iqbal",
+        "Step 4: Connect how this theory justified the demand for separate homeland"
+      ],
+      "answer": "Two-Nation Theory states that Hindus and Muslims are two separate nations with different religions, cultures, and ways of life, and cannot live together in one country. This theory was first presented by Sir Syed Ahmad Khan and later developed by Allama Iqbal. Muslims and Hindus have different religious beliefs, social customs, languages, and historical backgrounds. The theory became the ideological foundation for the creation of Pakistan, as Muslims demanded a separate homeland where they could practice their religion and preserve their culture freely without Hindu dominance.",
+      "markScheme": "1 mark for definition, 1 mark for separate nations concept, 1 mark for mentioning Sir Syed/Iqbal, 1 mark for differences mentioned, 2 marks for connection to Pakistan's creation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about Pakistan Movement instead of using exact textbook definitions for terms like Two-Nation Theory, Pakistan Resolution, etc.",
+      "Avoid mixing up dates and events - clearly distinguish between Lahore Resolution (1940), Cripps Mission (1942), and Cabinet Mission Plan (1946) with their specific details",
+      "Always mention key personalities with their exact titles as given in STBB textbook - write 'Quaid-e-Azam Muhammad Ali Jinnah' not just 'Jinnah', and include their specific contributions"
+    ],
+    "quickRecap": "Pakistan was created based on Two-Nation Theory which stated Muslims and Hindus are separate nations. Key events include Lahore Resolution 1940 demanding separate homeland, various British proposals like Cripps Mission and Cabinet Mission Plan, and final partition in 1947. Quaid-e-Azam Muhammad Ali Jinnah led the Pakistan Movement while other leaders like Allama Iqbal provided ideological foundation. The struggle involved both constitutional methods and mass movements until independence was achieved.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:31:43.299Z"
+  "created_at": "2026-04-06T06:31:43.299Z",
+  "enriched_at": "2026-04-06T17:22:43.616Z"
 }

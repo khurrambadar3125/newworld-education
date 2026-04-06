@@ -107,7 +107,38 @@
       "a³ + b³ = (a + b)(a² - ab + b²)",
       "a³ - b³ = (a - b)(a² + ab + b²)"
     ],
-    "keyDiagram": "No specific diagram required for this chapter, but students should practice organizing factorization steps in a systematic tabular format showing: Original Expression → Method Used → Identity Applied → Final Factored Form"
+    "keyDiagram": "No specific diagram required for this chapter, but students should practice organizing factorization steps in a systematic tabular format showing: Original Expression → Method Used → Identity Applied → Final Factored Form",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to factorize 4x² - 9y² using difference of squares method",
+      "BSEK 2022 SSC-II Q7 (5 marks) — required factorization of quadratic expression ax² + bx + c by grouping method",
+      "BSEK 2021 SSC-II Q4 (3 marks) — tested factorization by taking out common factors from algebraic expressions",
+      "BSEK 2020 SSC-II Q6 (4 marks) — asked to factorize perfect square trinomials and verify the answer"
+    ],
+    "workedExample": {
+      "question": "Factorize: 6x² + 11x + 3 (4 marks)",
+      "steps": [
+        "Step 1: Identify coefficients a = 6, b = 11, c = 3",
+        "Step 2: Find factors of ac = 18 that add to b = 11 (9 and 2)",
+        "Step 3: Rewrite middle term: 6x² + 9x + 2x + 3",
+        "Step 4: Group terms: 3x(2x + 3) + 1(2x + 3)",
+        "Step 5: Factor out common binomial: (2x + 3)(3x + 1)"
+      ],
+      "answer": "The factorized form is (2x + 3)(3x + 1)",
+      "markScheme": "1 mark for correct method, 1 mark for finding factor pairs, 1 mark for grouping correctly, 1 mark for final answer"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by not showing complete steps in factorization - always write each step clearly as per STBB textbook method",
+      "Common mistake is incorrect signs when factoring - double-check by expanding the factored form to verify your answer",
+      "Many students confuse factorization methods - clearly identify whether to use common factors, grouping, or special products before starting"
+    ],
+    "quickRecap": "Factorization is expressing an algebraic expression as a product of its factors. Main methods include: taking out common factors, grouping method, and using special products (difference of squares, perfect square trinomials). Always verify your answer by expanding the factored form. Choose the appropriate method based on the structure of the given expression.",
+    "importantFormulas": [
+      "a² - b² = (a + b)(a - b) [Difference of squares]",
+      "a² + 2ab + b² = (a + b)² [Perfect square trinomial]",
+      "a² - 2ab + b² = (a - b)² [Perfect square trinomial]",
+      "x² + (a + b)x + ab = (x + a)(x + b) [Factoring quadratics]"
+    ]
   },
-  "created_at": "2026-04-06T06:21:23.668Z"
+  "created_at": "2026-04-06T06:21:23.668Z",
+  "enriched_at": "2026-04-06T17:19:27.936Z"
 }

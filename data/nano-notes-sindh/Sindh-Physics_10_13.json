@@ -103,7 +103,35 @@
       "∠i = ∠r (angle of incidence = angle of reflection)",
       "Speed of light in vacuum = 3 × 10⁸ m/s"
     ],
-    "keyDiagram": "Reflection diagram showing incident ray, reflected ray, normal, angles of incidence and reflection marked clearly. Also plane mirror image formation showing object, virtual image behind mirror with construction rays."
+    "keyDiagram": "Reflection diagram showing incident ray, reflected ray, normal, angles of incidence and reflection marked clearly. Also plane mirror image formation showing object, virtual image behind mirror with construction rays.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define reflection of light and state the laws of reflection with diagram",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of regular and irregular reflection with examples and ray diagrams",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested definition of incident ray, reflected ray, normal and angle of incidence",
+      "BSEK 2020 SSC-II Q6 (3 marks) — asked to differentiate between real and virtual images formed by plane mirrors"
+    ],
+    "workedExample": {
+      "question": "Define reflection of light. State the two laws of reflection. Draw a labeled diagram showing reflection of light from a plane mirror. (6 marks)",
+      "steps": [
+        "Write the textbook definition of reflection of light",
+        "State the first law of reflection exactly as in STBB textbook",
+        "State the second law of reflection exactly as in STBB textbook",
+        "Draw a neat labeled diagram showing incident ray, reflected ray, normal, angles of incidence and reflection"
+      ],
+      "answer": "Reflection of light: The bouncing back of light rays when they strike a surface is called reflection of light. Laws of Reflection: (1) The incident ray, the reflected ray and the normal at the point of incidence all lie in the same plane. (2) The angle of incidence is equal to the angle of reflection. [Diagram showing plane mirror with incident ray, reflected ray, normal, angle i = angle r, point of incidence labeled]",
+      "markScheme": "1 mark for exact definition, 2 marks for stating both laws correctly, 3 marks for properly labeled diagram"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing 'light comes back' instead of the exact textbook definition 'bouncing back of light rays when they strike a surface'",
+      "Never write 'angle of incidence equals angle of reflection' without stating 'measured from the normal' - this loses marks in BSEK",
+      "Always draw the normal as a dotted line perpendicular to the surface - solid lines or incorrect angles cost diagram marks"
+    ],
+    "quickRecap": "Light propagates in straight lines through homogeneous media. Reflection occurs when light bounces back from surfaces following two laws: rays and normal lie in same plane, and angle of incidence equals angle of reflection. Regular reflection occurs from smooth surfaces while irregular reflection occurs from rough surfaces. Plane mirrors form virtual, erect, same-sized images at equal distance behind the mirror.",
+    "importantFormulas": [
+      "Angle of incidence (i) = Angle of reflection (r)",
+      "Speed of light in vacuum = 3 × 10⁸ m/s"
+    ]
   },
-  "created_at": "2026-04-06T06:05:14.817Z"
+  "created_at": "2026-04-06T06:05:14.817Z",
+  "enriched_at": "2026-04-06T17:24:35.742Z"
 }

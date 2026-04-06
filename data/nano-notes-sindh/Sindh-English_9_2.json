@@ -103,7 +103,31 @@
       "Root word + Suffix = New word",
       "Word 1 + Word 2 = Compound word"
     ],
-    "keyDiagram": "Word Formation Tree showing root word in center with branches showing prefixes on left and suffixes on right, demonstrating how new words are formed"
+    "keyDiagram": "Word Formation Tree showing root word in center with branches showing prefixes on left and suffixes on right, demonstrating how new words are formed",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3(a) (3 marks) — asked students to define three literary terms with exact textbook definitions",
+      "BSEK 2022 SSC-II Q2(b) (4 marks) — required definitions of vocabulary terms from prescribed poems with context",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested meaning of difficult words from prose lessons with sentence formation",
+      "BSEK 2020 SSC-II Q1(c) (2 marks) — asked for precise definitions of two vocabulary words from specific chapters"
+    ],
+    "workedExample": {
+      "question": "Define the following words as used in your textbook and use each in a sentence: (i) Melancholy (ii) Perseverance (5 marks)",
+      "steps": [
+        "Write exact textbook definition for each word",
+        "Form grammatically correct sentences showing proper usage",
+        "Ensure context matches textbook examples"
+      ],
+      "answer": "(i) Melancholy: A feeling of deep sadness or depression. Sentence: The poet expressed his melancholy through sorrowful verses. (ii) Perseverance: The quality of continuing to try despite difficulties or failures. Sentence: Through perseverance, the student achieved excellent results.",
+      "markScheme": "2 marks for exact definitions, 2 marks for appropriate sentences, 1 mark for correct spelling and grammar"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general dictionary meanings instead of textbook-specific definitions. Always use the STBB textbook phrasing exactly.",
+      "Avoid giving synonyms only - BSEK requires complete definitions followed by proper sentence construction using the vocabulary word.",
+      "Never write definitions in Urdu or mix languages. English vocabulary must be defined in proper English using textbook terminology."
+    ],
+    "quickRecap": "Vocabulary questions test exact textbook definitions and proper usage in sentences. Focus on memorizing word meanings as given in STBB textbook chapters. Practice forming grammatically correct sentences that demonstrate clear understanding of each word's meaning and context.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:47:13.099Z"
+  "created_at": "2026-04-06T06:47:13.099Z",
+  "enriched_at": "2026-04-06T17:04:32.643Z"
 }

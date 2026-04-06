@@ -103,7 +103,39 @@
       "Past Perfect Continuous: Subject + had been + verb-ing",
       "Future Perfect Continuous: Subject + will have been + verb-ing"
     ],
-    "keyDiagram": "Timeline diagram showing sequence of perfect tenses - Past Perfect (completed before past), Present Perfect (past action with present relevance), Future Perfect (completion before future time)"
+    "keyDiagram": "Timeline diagram showing sequence of perfect tenses - Past Perfect (completed before past), Present Perfect (past action with present relevance), Future Perfect (completion before future time)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to identify tense forms and convert sentences from simple past to past perfect continuous",
+      "BSEK 2022 SSC-II Q3 (8 marks) — required definition of perfect tenses with examples and formation rules",
+      "BSEK 2021 SSC-II Q5 (5 marks) — tested identification of tense errors in given sentences and correction with proper tense forms",
+      "BSEK 2020 SSC-II Q2 (7 marks) — asked for complete conjugation of verbs in all twelve tense forms with helping verbs"
+    ],
+    "workedExample": {
+      "question": "Define Present Perfect Continuous Tense with its formation rule and provide two examples. Convert the following sentence into Past Perfect Tense: 'The students complete their homework.' (8 marks)",
+      "steps": [
+        "Step 1: Write the exact STBB textbook definition of Present Perfect Continuous Tense",
+        "Step 2: State the formation rule using the formula structure",
+        "Step 3: Provide two clear examples following the formation rule",
+        "Step 4: Identify the given sentence structure and convert systematically to Past Perfect Tense"
+      ],
+      "answer": "Present Perfect Continuous Tense expresses an action that began in the past and is still continuing in the present. Formation: Subject + has/have + been + V1+ing + object. Examples: (1) I have been reading this book for two hours. (2) They have been playing cricket since morning. Conversion: 'The students had completed their homework.' (Past Perfect uses had + V3)",
+      "markScheme": "Definition (2 marks), Formation rule (2 marks), Two examples (2 marks), Correct conversion (2 marks)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general explanations instead of exact STBB textbook definitions for tense rules and formations.",
+      "Many candidates confuse helping verbs in perfect tenses - always memorize that Present Perfect uses has/have, Past Perfect uses had, Future Perfect uses will have.",
+      "Common error is mixing up continuous and perfect continuous tenses - remember continuous uses only 'be' forms while perfect continuous uses 'have/has/had + been'."
+    ],
+    "quickRecap": "Twelve tenses: 4 Simple (do/does, did, will do), 4 Continuous (am/is/are doing, was/were doing, will be doing), 4 Perfect (has/have done, had done, will have done). Perfect Continuous adds 'been + V1+ing' to perfect forms. Each tense has specific helping verbs and formation rules that must be memorized exactly from STBB textbook. Focus on identifying time indicators and selecting appropriate tense accordingly.",
+    "importantFormulas": [
+      "Simple Present: Subject + V1/V1+s + Object",
+      "Present Continuous: Subject + am/is/are + V1+ing + Object",
+      "Present Perfect: Subject + has/have + V3 + Object",
+      "Present Perfect Continuous: Subject + has/have + been + V1+ing + Object",
+      "Past Perfect: Subject + had + V3 + Object",
+      "Future Perfect: Subject + will have + V3 + Object"
+    ]
   },
-  "created_at": "2026-04-06T06:50:16.647Z"
+  "created_at": "2026-04-06T06:50:16.647Z",
+  "enriched_at": "2026-04-06T17:02:33.174Z"
 }

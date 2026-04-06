@@ -101,7 +101,32 @@
       "Ushr on irrigated land = 5% of produce",
       "Ushr on rain-fed land = 10% of produce"
     ],
-    "keyDiagram": "Structure of Pakistan's Welfare State showing Government at center connected to: Education System, Healthcare System, Social Security, Zakat & Ushr, Employment Programs, and Poverty Alleviation Schemes"
+    "keyDiagram": "Structure of Pakistan's Welfare State showing Government at center connected to: Education System, Healthcare System, Social Security, Zakat & Ushr, Employment Programs, and Poverty Alleviation Schemes",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define welfare state and explain its main features",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required comparison between Pakistan's welfare provisions and Islamic welfare system",
+      "BSEK 2021 SSC-II Q3 (3 marks) — tested knowledge of Pakistan's constitutional welfare responsibilities",
+      "BSEK 2020 SSC-II Q5 (5 marks) — examined Pakistan's welfare institutions and their functions"
+    ],
+    "workedExample": {
+      "question": "Define welfare state and explain how Pakistan is working towards becoming a welfare state. (6 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of welfare state",
+        "Step 2: List Pakistan's constitutional welfare provisions from Article 37-40",
+        "Step 3: Mention specific welfare institutions and programs",
+        "Step 4: Conclude with Pakistan's progress towards welfare state goals"
+      ],
+      "answer": "A welfare state is a system of government in which the state plays a key role in protecting and promoting the economic and social well-being of its citizens. Pakistan is working towards becoming a welfare state through: (1) Constitutional provisions in Articles 37-40 ensuring basic necessities, education, and healthcare (2) Institutions like Bait-ul-Mal, Pakistan Poverty Alleviation Fund, and Benazir Income Support Program (3) Free education initiatives and health insurance schemes (4) Zakat system for wealth redistribution. Pakistan follows Islamic welfare principles while establishing modern welfare mechanisms.",
+      "markScheme": "1 mark for correct definition, 2 marks for constitutional provisions, 2 marks for specific institutions/programs, 1 mark for conclusion"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about helping people instead of using the exact textbook definition of welfare state from STBB.",
+      "Avoid mixing up welfare state features with democracy or economic system features - stick to social welfare aspects only.",
+      "Always mention specific Pakistani institutions like Bait-ul-Mal and BISP rather than giving vague examples of welfare programs."
+    ],
+    "quickRecap": "A welfare state ensures citizens' economic and social well-being through government action. Pakistan's Constitution (Articles 37-40) mandates welfare provisions. Key institutions include Bait-ul-Mal, BISP, and Zakat system. Pakistan combines Islamic welfare principles with modern welfare mechanisms to achieve welfare state objectives.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:34:57.104Z"
+  "created_at": "2026-04-06T06:34:57.104Z",
+  "enriched_at": "2026-04-06T17:21:03.253Z"
 }

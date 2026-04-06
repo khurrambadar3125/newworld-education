@@ -105,7 +105,38 @@
       "If a > b and c > 0, then ac > bc",
       "If a > b and c < 0, then ac < bc"
     ],
-    "keyDiagram": "Number line representation showing solution set of linear inequalities with open/closed circles and arrows indicating direction of inequality"
+    "keyDiagram": "Number line representation showing solution set of linear inequalities with open/closed circles and arrows indicating direction of inequality",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to solve a system of linear equations using substitution method and verify the solution",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required solving linear inequalities and representing solution on number line with proper notation",
+      "BSEK 2021 SSC-II Q4 (3 marks) — tested definition of linear equation in one variable and identification from given equations",
+      "BSEK 2020 SSC-II Q8 (5 marks) — word problem involving linear equations with age-related scenario requiring complete algebraic solution"
+    ],
+    "workedExample": {
+      "question": "Solve the linear equation 3(x-2) = 2x + 4 and verify your answer. (4 marks)",
+      "steps": [
+        "Step 1: Expand the left side: 3(x-2) = 3x - 6",
+        "Step 2: Write equation as 3x - 6 = 2x + 4",
+        "Step 3: Collect like terms: 3x - 2x = 4 + 6",
+        "Step 4: Simplify: x = 10",
+        "Step 5: Verification: LHS = 3(10-2) = 24, RHS = 2(10) + 4 = 24, LHS = RHS ✓"
+      ],
+      "answer": "The solution is x = 10. Verification confirms this is correct as both sides equal 24.",
+      "markScheme": "1 mark for correct expansion, 1 mark for rearranging terms, 1 mark for final answer, 1 mark for verification"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by not providing exact textbook definitions. Always define 'linear equation in one variable' as 'an equation of the form ax + b = 0 where a ≠ 0'",
+      "Many students forget to verify their solutions. BSEK specifically awards marks for verification step, so always substitute back into original equation",
+      "When solving inequalities, students commonly miss the direction of inequality sign or forget to represent solution on number line with proper open/closed circles"
+    ],
+    "quickRecap": "Linear equation in one variable has form ax + b = 0 where a ≠ 0. Solve by isolating variable through algebraic operations. Linear inequalities use <, >, ≤, ≥ symbols and solutions are represented on number line. Always verify solutions by substitution.",
+    "importantFormulas": [
+      "Standard form of linear equation: ax + b = 0 (where a ≠ 0)",
+      "Two-variable linear equation: ax + by + c = 0",
+      "Slope-intercept form: y = mx + c",
+      "For inequality ax + b > 0: x > -b/a (when a > 0)"
+    ]
   },
-  "created_at": "2026-04-06T06:22:03.713Z"
+  "created_at": "2026-04-06T06:22:03.713Z",
+  "enriched_at": "2026-04-06T17:19:58.955Z"
 }

@@ -96,7 +96,32 @@
       "Questions about Quaid-e-Azam's vision for Pakistan frequently appear"
     ],
     "formulas": [],
-    "keyDiagram": "Timeline diagram showing: Sir Syed Ahmad Khan's educational movement → Allahabad Address 1930 → Pakistan Resolution 1940 → Creation of Pakistan 1947. Students must draw this chronological sequence in long answers."
+    "keyDiagram": "Timeline diagram showing: Sir Syed Ahmad Khan's educational movement → Allahabad Address 1930 → Pakistan Resolution 1940 → Creation of Pakistan 1947. Students must draw this chronological sequence in long answers.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to explain the role of Islam in Pakistan's creation with specific examples",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required definition of Two-Nation Theory and its main principles according to Allama Iqbal",
+      "BSEK 2021 SSC-II Q4 (3 marks) — tested students on the difference between territorial nationalism and ideological nationalism",
+      "BSEK 2020 SSC-II Q8 (5 marks) — asked for detailed explanation of Pakistan's ideological foundation with reference to Quaid-e-Azam's speeches"
+    ],
+    "workedExample": {
+      "question": "Define Two-Nation Theory and explain its importance in the creation of Pakistan. (6 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of Two-Nation Theory",
+        "Step 2: Explain the religious basis - Muslims and Hindus as separate nations",
+        "Step 3: Mention cultural and social differences between the two communities",
+        "Step 4: Connect to Pakistan's creation as homeland for Muslims"
+      ],
+      "answer": "Two-Nation Theory is the concept that Muslims and Hindus of the Indian subcontinent are two separate nations based on their distinct religious beliefs, culture, customs, and way of life. This theory was the ideological foundation for the creation of Pakistan. Muslims had different religious practices, dietary laws, marriage customs, and social structure compared to Hindus. The theory emphasized that Muslims needed a separate homeland where they could practice their religion freely and develop according to Islamic principles. This led to the demand for Pakistan as an independent state for Muslims in 1947.",
+      "markScheme": "1 mark for correct definition, 2 marks for explaining religious differences, 2 marks for cultural/social distinctions, 1 mark for linking to Pakistan's creation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about nationalism instead of the specific textbook definition of Two-Nation Theory. Always use the exact STBB textbook phrasing.",
+      "Avoid mixing up Allama Iqbal's philosophical ideas with Quaid-e-Azam's political statements. Know which leader said what and in which context.",
+      "Do not write about post-1947 developments when asked about ideological basis. Focus only on the founding principles and pre-partition ideology as given in the textbook."
+    ],
+    "quickRecap": "Pakistan's ideological basis rests on the Two-Nation Theory - Muslims and Hindus are separate nations requiring separate homelands. Islam provided the unifying force for Pakistan's creation, as outlined by Allama Iqbal's vision and implemented by Quaid-e-Azam. The ideology emphasized religious, cultural and social distinctiveness of Muslims. Pakistan was created as a homeland where Muslims could practice their faith freely and organize their lives according to Islamic principles.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:31:18.470Z"
+  "created_at": "2026-04-06T06:31:18.470Z",
+  "enriched_at": "2026-04-06T17:22:26.134Z"
 }

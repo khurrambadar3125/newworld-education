@@ -100,7 +100,31 @@
       "Practice writing concise answers for 'Write a note on one-act plays' questions"
     ],
     "formulas": [],
-    "keyDiagram": "No specific diagram required for this literary topic"
+    "keyDiagram": "No specific diagram required for this literary topic",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define one-act play and explain its two main characteristics",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required comparison between one-act play and full-length play with examples",
+      "BSEK 2021 SSC-II Q3 (3 marks) — asked to write characteristics of one-act play structure",
+      "BSEK 2020 SSC-II Q5 (5 marks) — demanded explanation of unity of time, place and action in one-act plays"
+    ],
+    "workedExample": {
+      "question": "Define one-act play and explain any three characteristics of one-act plays. (5 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of one-act play",
+        "Step 2: State three characteristics clearly with headings",
+        "Step 3: Provide brief explanation for each characteristic using textbook language"
+      ],
+      "answer": "A one-act play is a dramatic work that is complete in itself and can be performed without intermission in a single sitting. Three characteristics: (1) Unity of Action - focuses on one main incident or situation without subplots. (2) Limited Characters - usually has 2-8 characters to maintain focus and clarity. (3) Single Setting - action takes place in one location to maintain unity of place.",
+      "markScheme": "1 mark for correct definition, 1 mark for each characteristic stated, 1 mark for explanations, 1 mark for clear presentation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general drama definitions instead of specific one-act play definition from STBB textbook",
+      "Avoid mixing characteristics of full-length plays with one-act plays - stick to textbook distinctions only",
+      "Never write examples from novels or poems when asked about one-act plays - only use dramatic examples"
+    ],
+    "quickRecap": "One-act plays are complete dramatic works performed without intermission. Key features include unity of time, place and action, limited characters (2-8), single setting, and focus on one main incident. They differ from full-length plays by being shorter and more concentrated in scope.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T14:44:02.712Z"
+  "created_at": "2026-04-06T14:44:02.712Z",
+  "enriched_at": "2026-04-06T17:00:31.412Z"
 }

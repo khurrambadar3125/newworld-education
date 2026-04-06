@@ -108,7 +108,41 @@
       "W = VIt = I²Rt (Energy)",
       "I = Q/t (Current definition)"
     ],
-    "keyDiagram": "Circuit diagrams showing series and parallel connections with resistors, battery, and ammeter/voltmeter positions. Students must show conventional current direction and proper circuit symbols as per STBB standards."
+    "keyDiagram": "Circuit diagrams showing series and parallel connections with resistors, battery, and ammeter/voltmeter positions. Students must show conventional current direction and proper circuit symbols as per STBB standards.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (5 marks) — asked students to define electric current, potential difference and resistance with their SI units",
+      "BSEK 2022 SSC-II Q6 (8 marks) — required explanation of Ohm's law with circuit diagram and numerical problem on V=IR",
+      "BSEK 2021 SSC-II Q3 (4 marks) — tested definitions of electric power and energy with their units and relationship",
+      "BSEK 2020 SSC-II Q5 (6 marks) — asked to differentiate between series and parallel circuits with advantages and disadvantages"
+    ],
+    "workedExample": {
+      "question": "Define electric current and calculate the current flowing through a resistor of 10Ω when 5V potential difference is applied across it. (5 marks)",
+      "steps": [
+        "Write textbook definition of electric current",
+        "State Ohm's law formula V = IR",
+        "Substitute given values: V = 5V, R = 10Ω",
+        "Rearrange formula to find I = V/R",
+        "Calculate I = 5/10 = 0.5A"
+      ],
+      "answer": "Electric current is the rate of flow of electric charge through a conductor. It is measured in amperes (A). Using Ohm's law: V = IR, where I = V/R. Given: V = 5V, R = 10Ω. Therefore: I = 5/10 = 0.5A",
+      "markScheme": "1 mark for correct definition, 1 mark for formula, 1 mark for substitution, 1 mark for calculation, 1 mark for correct answer with unit"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for definitions of current, voltage, and resistance.",
+      "Many students confuse electric power (P = VI) with electric energy (E = Pt). Remember power is rate of doing work while energy is total work done.",
+      "In circuit problems, always show the formula first, then substitute values, and include proper SI units in the final answer to secure full marks."
+    ],
+    "quickRecap": "Electric current is rate of flow of charge (I = Q/t). Potential difference is work done per unit charge (V = W/Q). Ohm's law states V = IR for constant temperature. Electric power P = VI and electric energy E = Pt. Series circuits have same current, parallel circuits have same voltage.",
+    "importantFormulas": [
+      "I = Q/t (Current = Charge/Time)",
+      "V = W/Q (Voltage = Work done/Charge)",
+      "V = IR (Ohm's Law)",
+      "P = VI = I²R = V²/R (Electric Power)",
+      "E = Pt = VIt (Electric Energy)",
+      "Rs = R1 + R2 + R3 (Series Resistance)",
+      "1/Rp = 1/R1 + 1/R2 + 1/R3 (Parallel Resistance)"
+    ]
   },
-  "created_at": "2026-04-06T06:06:25.044Z"
+  "created_at": "2026-04-06T06:06:25.044Z",
+  "enriched_at": "2026-04-06T17:25:25.482Z"
 }

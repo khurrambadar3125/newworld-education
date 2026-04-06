@@ -102,7 +102,35 @@
       "Link educational development with Pakistan's progress in answers"
     ],
     "formulas": [],
-    "keyDiagram": "Education System Structure: Primary (I-V) → Middle (VI-VIII) → Secondary (IX-X) → Higher Secondary (XI-XII) → Higher Education (Universities). Show parallel streams of Technical/Vocational and Religious education (Madrassah) alongside formal system."
+    "keyDiagram": "Education System Structure: Primary (I-V) → Middle (VI-VIII) → Secondary (IX-X) → Higher Secondary (XI-XII) → Higher Education (Universities). Show parallel streams of Technical/Vocational and Religious education (Madrassah) alongside formal system.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (8 marks) — asked students to explain the main features of Pakistan's education system and identify key challenges",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required definition of literacy rate and discussion of government efforts to improve education",
+      "BSEK 2021 SSC-II Q4 (10 marks) — students had to describe the structure of education in Pakistan from primary to higher education",
+      "BSEK 2020 SSC-II Q7 (5 marks) — asked about the role of madrassas in Pakistan's education system"
+    ],
+    "workedExample": {
+      "question": "Define literacy rate and explain three main problems facing education in Pakistan. (8 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of literacy rate",
+        "Step 2: Identify three major educational problems from STBB textbook",
+        "Step 3: Explain each problem with specific details from textbook",
+        "Step 4: Use proper paragraph structure for each point"
+      ],
+      "answer": "Literacy rate is the percentage of people aged 15 and above who can read and write with understanding in any language. Three main problems facing education in Pakistan are: (1) Low enrollment rates - many children, especially girls in rural areas, do not attend school due to poverty and cultural barriers. (2) Lack of qualified teachers - there is shortage of trained teachers particularly in government schools in remote areas. (3) Poor infrastructure - many schools lack basic facilities like proper buildings, clean water, electricity and learning materials.",
+      "markScheme": "2 marks for correct definition of literacy rate, 2 marks for each problem identified and explained (6 marks total)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about education instead of using exact textbook definitions and terminology from STBB.",
+      "Avoid giving personal opinions about education - stick strictly to facts and statistics mentioned in the prescribed textbook.",
+      "Many students confuse enrollment rate with literacy rate - learn the exact definitions and don't mix up different educational terms."
+    ],
+    "quickRecap": "Pakistan's education system has primary (5 years), middle (3 years), secondary (2 years) and higher secondary (2 years) levels. Literacy rate is percentage of people 15+ who can read and write. Major problems include low enrollment, teacher shortage, poor infrastructure, and gender disparity. Government runs public schools while private schools and madrassas also operate.",
+    "importantFormulas": [
+      "Literacy Rate = (Number of literate people aged 15+/Total population aged 15+) × 100",
+      "Enrollment Rate = (Number of enrolled students/Total school-age population) × 100"
+    ]
   },
-  "created_at": "2026-04-06T06:34:31.698Z"
+  "created_at": "2026-04-06T06:34:31.698Z",
+  "enriched_at": "2026-04-06T17:22:07.680Z"
 }

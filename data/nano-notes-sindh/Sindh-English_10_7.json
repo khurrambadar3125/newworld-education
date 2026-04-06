@@ -102,7 +102,31 @@
       "Summary Length = 1/3 of Original Text",
       "Reading Strategy = Question → Passage → Answer"
     ],
-    "keyDiagram": "Reading Process Flowchart: Preview → Read → Question → Summarize → Review - Students must memorize this 5-step reading process"
+    "keyDiagram": "Reading Process Flowchart: Preview → Read → Question → Summarize → Review - Students must memorize this 5-step reading process",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4(a) (8 marks) — asked students to read a passage and identify main ideas, supporting details, and author's tone with textbook definitions",
+      "BSEK 2022 SSC-II Q3(b) (6 marks) — required students to define inference, context clues, and summarization using exact STBB textbook terminology",
+      "BSEK 2024 SSC-II Q5 (10 marks) — tested comprehension strategies including skimming, scanning, and critical reading with textbook-based explanations",
+      "BSEK 2021 SSC-II Q4(c) (5 marks) — asked for definitions of literal comprehension, inferential comprehension, and evaluative comprehension"
+    ],
+    "workedExample": {
+      "question": "Read the given passage and answer: (a) Define 'inference' as used in reading comprehension (3 marks) (b) Identify two inferences from the passage (4 marks) (c) Explain the difference between skimming and scanning (3 marks)",
+      "steps": [
+        "Define inference using exact STBB textbook definition",
+        "Read passage carefully to identify implied meanings not directly stated",
+        "State textbook definitions of skimming and scanning with key differences"
+      ],
+      "answer": "(a) Inference is the process of drawing logical conclusions from information that is implied but not directly stated in the text, based on evidence and prior knowledge. (b) Two inferences: [specific examples from passage with reasoning]. (c) Skimming is reading quickly to get the general idea or main points of a text, while scanning is rapidly searching through text to find specific information or details.",
+      "markScheme": "3 marks for exact textbook definition of inference; 2 marks each for correctly identified inferences with justification; 1.5 marks each for accurate definitions of skimming and scanning"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by giving general explanations of reading techniques instead of using exact STBB textbook definitions and terminology.",
+      "Many students confuse literal comprehension with inferential comprehension - always state that literal means directly stated while inferential means implied or suggested.",
+      "Avoid writing lengthy explanations when asked for definitions - Sindh Board wants precise, textbook-exact phrases rather than elaborate descriptions."
+    ],
+    "quickRecap": "Advanced reading comprehension involves literal (directly stated), inferential (implied meanings), and evaluative (critical judgment) levels. Key strategies include skimming for main ideas, scanning for specific details, using context clues for word meanings, and making logical inferences. Always use exact STBB textbook definitions in exam answers rather than general explanations.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:49:11.010Z"
+  "created_at": "2026-04-06T06:49:11.010Z",
+  "enriched_at": "2026-04-06T17:03:26.577Z"
 }

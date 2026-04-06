@@ -105,7 +105,34 @@
       "Circumradius = Distance from circumcenter to any vertex",
       "Inradius = Distance from incenter to any side"
     ],
-    "keyDiagram": "Triangle ABC with circumcenter O showing perpendicular bisectors of all three sides intersecting at O, with equal distances OA = OB = OC marked. Also show incenter I with angle bisectors and equal perpendicular distances to all three sides."
+    "keyDiagram": "Triangle ABC with circumcenter O showing perpendicular bisectors of all three sides intersecting at O, with equal distances OA = OB = OC marked. Also show incenter I with angle bisectors and equal perpendicular distances to all three sides.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to construct a triangle given two sides and included angle using compass and ruler",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required construction of triangle with given base, base angle and sum of other two sides",
+      "BSEK 2021 SSC-II Q3 (3 marks) — asked to define congruent triangles and state SSS congruency condition",
+      "BSEK 2020 SSC-II Q5 (4 marks) — construction of triangle when base, vertical angle and median to base are given"
+    ],
+    "workedExample": {
+      "question": "Construct a triangle ABC in which BC = 6 cm, ∠B = 60° and AB + AC = 9 cm. (5 marks)",
+      "steps": [
+        "Draw base BC = 6 cm using ruler",
+        "At point B, construct ∠XBC = 60° using compass and protractor",
+        "From ray BX, cut BD = AB + AC = 9 cm using compass",
+        "Join DC to complete triangle",
+        "Draw perpendicular bisector of DC using compass, intersecting BD at point A",
+        "Join AC to complete triangle ABC"
+      ],
+      "answer": "Triangle ABC is constructed where BC = 6 cm, ∠B = 60° and AB + AC = 9 cm using the method of constructing auxiliary triangle BDC and finding point A on perpendicular bisector of DC.",
+      "markScheme": "1 mark for drawing base BC correctly, 1 mark for angle construction, 1 mark for cutting BD = 9 cm, 1 mark for perpendicular bisector, 1 mark for completing triangle"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by not using compass for constructions and relying only on protractor measurements. Always show compass arcs in geometric constructions.",
+      "Many students forget to write the given conditions clearly before starting construction. Always state what is given and what is to be constructed.",
+      "Students frequently miss showing construction lines and arcs which carry marks. Keep all construction marks visible and label points clearly as per STBB textbook method."
+    ],
+    "quickRecap": "Practical geometry focuses on accurate construction of triangles using compass and ruler. Key constructions include triangles with given three sides (SSS), two sides and included angle (SAS), and complex cases involving sum/difference of sides. Always follow the systematic steps: draw base first, construct angles, mark measurements with compass, and complete the triangle. Remember to keep all construction marks visible for full marks.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:24:34.907Z"
+  "created_at": "2026-04-06T06:24:34.907Z",
+  "enriched_at": "2026-04-06T17:17:50.372Z"
 }

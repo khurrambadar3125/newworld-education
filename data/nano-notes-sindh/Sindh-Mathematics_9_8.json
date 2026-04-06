@@ -101,7 +101,39 @@
       "Sum of roots = -b/a",
       "Product of roots = c/a"
     ],
-    "keyDiagram": "Nature of roots diagram showing three cases: Δ > 0 (two distinct real roots on number line), Δ = 0 (one repeated real root), Δ < 0 (no real roots, complex conjugate pair)"
+    "keyDiagram": "Nature of roots diagram showing three cases: Δ > 0 (two distinct real roots on number line), Δ = 0 (one repeated real root), Δ < 0 (no real roots, complex conjugate pair)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define quadratic equation and solve by factorization method",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required solving quadratic equation using quadratic formula with complete steps",
+      "BSEK 2024 SSC-II Q4 (5 marks) — asked to find nature of roots using discriminant and solve given equation",
+      "BSEK 2021 SSC-II Q6 (4 marks) — define standard form of quadratic equation and solve by completing square method"
+    ],
+    "workedExample": {
+      "question": "Solve the quadratic equation 2x² - 7x + 3 = 0 using quadratic formula. (6 marks)",
+      "steps": [
+        "Step 1: Identify coefficients a = 2, b = -7, c = 3",
+        "Step 2: Write quadratic formula x = [-b ± √(b² - 4ac)] / 2a",
+        "Step 3: Calculate discriminant: b² - 4ac = (-7)² - 4(2)(3) = 49 - 24 = 25",
+        "Step 4: Substitute values: x = [7 ± √25] / 4 = [7 ± 5] / 4",
+        "Step 5: Find both roots: x₁ = (7+5)/4 = 3 and x₂ = (7-5)/4 = 1/2"
+      ],
+      "answer": "The roots are x = 3 and x = 1/2",
+      "markScheme": "1 mark for identifying coefficients, 1 mark for writing formula, 1 mark for discriminant, 2 marks for substitution, 1 mark for final answer"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by not writing the standard form ax² + bx + c = 0 when defining quadratic equation. Always state this exact form from STBB textbook.",
+      "Many students forget to write ± symbol in quadratic formula, losing crucial marks. Always show both positive and negative cases clearly.",
+      "Students frequently skip the discriminant calculation step. BSEK marking scheme awards separate marks for finding b² - 4ac value before substitution."
+    ],
+    "quickRecap": "A quadratic equation has standard form ax² + bx + c = 0 where a ≠ 0. It can be solved by factorization, completing square, or quadratic formula x = [-b ± √(b² - 4ac)] / 2a. The discriminant b² - 4ac determines nature of roots: positive gives real unequal roots, zero gives real equal roots, negative gives complex roots. Always identify coefficients first and show all calculation steps for full marks.",
+    "importantFormulas": [
+      "Standard form: ax² + bx + c = 0 (where a ≠ 0)",
+      "Quadratic formula: x = [-b ± √(b² - 4ac)] / 2a",
+      "Discriminant: Δ = b² - 4ac",
+      "Sum of roots: α + β = -b/a",
+      "Product of roots: αβ = c/a"
+    ]
   },
-  "created_at": "2026-04-06T06:22:46.570Z"
+  "created_at": "2026-04-06T06:22:46.570Z",
+  "enriched_at": "2026-04-06T17:20:32.108Z"
 }

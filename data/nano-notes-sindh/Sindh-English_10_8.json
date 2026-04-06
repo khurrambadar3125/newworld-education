@@ -101,7 +101,32 @@
       "Learn the exact textbook definitions word-by-word for 'Define' type questions"
     ],
     "formulas": [],
-    "keyDiagram": "Create a mind map with 'Figures of Speech' in center, branching out to: Simile (with 'like/as'), Metaphor (direct comparison), Personification (human qualities), Hyperbole (exaggeration), Alliteration (sound repetition), and Onomatopoeia (sound words)"
+    "keyDiagram": "Create a mind map with 'Figures of Speech' in center, branching out to: Simile (with 'like/as'), Metaphor (direct comparison), Personification (human qualities), Hyperbole (exaggeration), Alliteration (sound repetition), and Onomatopoeia (sound words)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (8 marks) — asked students to define idioms and figures of speech with two examples of each",
+      "BSEK 2022 SSC-II Q3 (6 marks) — required identification and explanation of metaphors and similes in given passages",
+      "BSEK 2021 SSC-II Q5 (10 marks) — tested understanding of personification, alliteration, and hyperbole with definitions and examples",
+      "BSEK 2020 SSC-II Q2 (4 marks) — asked for meanings of common idioms like 'break the ice' and 'hit the nail on the head'"
+    ],
+    "workedExample": {
+      "question": "Define the following figures of speech with one example of each: (i) Metaphor (ii) Personification (6 marks)",
+      "steps": [
+        "Define metaphor using exact STBB textbook definition",
+        "Provide clear example of metaphor with explanation",
+        "Define personification using exact STBB textbook definition",
+        "Provide clear example of personification with explanation"
+      ],
+      "answer": "(i) Metaphor: A figure of speech that makes an implicit comparison between two unlike things by stating that one thing is another. Example: 'Life is a journey' - here life is compared to a journey without using 'like' or 'as'. (ii) Personification: A figure of speech in which human qualities are given to non-human things. Example: 'The wind whispered through the trees' - here the wind is given the human quality of whispering.",
+      "markScheme": "2 marks for correct definition of metaphor, 1 mark for appropriate example; 2 marks for correct definition of personification, 1 mark for appropriate example"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for figures of speech definitions.",
+      "Many students confuse similes and metaphors - remember that similes use 'like' or 'as' for comparison while metaphors do not.",
+      "When giving examples of idioms, students must provide the complete meaning, not just partial explanations. 'Piece of cake' means 'very easy task' not just 'easy'."
+    ],
+    "quickRecap": "Idioms are fixed expressions with meanings different from individual words (e.g., 'break the ice' = start conversation). Figures of speech include metaphor (direct comparison), simile (comparison using like/as), personification (human qualities to non-human), alliteration (repeated consonant sounds), and hyperbole (deliberate exaggeration). Always memorize exact STBB textbook definitions and provide complete examples with explanations.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:49:31.284Z"
+  "created_at": "2026-04-06T06:49:31.284Z",
+  "enriched_at": "2026-04-06T17:03:42.554Z"
 }

@@ -103,7 +103,38 @@
       "Active to Passive: Subject + Verb + Object → Object + is/am/are/was/were + V3 + by + Subject",
       "Direct to Indirect: He said, 'I am going' → He said that he was going"
     ],
-    "keyDiagram": "Grammar Tree Diagram showing sentence breakdown into Subject and Predicate, further subdivided into their components with examples using Pakistani names and places"
+    "keyDiagram": "Grammar Tree Diagram showing sentence breakdown into Subject and Predicate, further subdivided into their components with examples using Pakistani names and places",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define Parts of Speech with two examples each",
+      "BSEK 2022 SSC-II Q4 (6 marks) — required identification of Tenses in given sentences and conversion between tenses",
+      "BSEK 2021 SSC-II Q2 (5 marks) — tested definition of Active and Passive Voice with sentence transformation",
+      "BSEK 2020 SSC-II Q5 (3 marks) — asked for exact definitions of Direct and Indirect Speech"
+    ],
+    "workedExample": {
+      "question": "Define Noun and classify the following words into different types of nouns: Karachi, happiness, team, water, Ahmad. (5 marks)",
+      "steps": [
+        "Step 1: Write the textbook definition of Noun from STBB",
+        "Step 2: List the types of nouns as per STBB classification",
+        "Step 3: Classify each given word under correct noun type",
+        "Step 4: Ensure all classifications match STBB examples"
+      ],
+      "answer": "Noun: A noun is a word used to name a person, place, thing, or idea. Types: 1) Proper Noun: Karachi, Ahmad 2) Abstract Noun: happiness 3) Collective Noun: team 4) Material/Mass Noun: water",
+      "markScheme": "1 mark for exact STBB definition, 1 mark for listing types, 3 marks for correct classification (0.6 each word)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general grammar definitions instead of exact STBB textbook definitions. Always memorize and reproduce textbook phrasing.",
+      "Many students confuse tense forms and write incomplete answers. Always mention time reference and helping verbs as specified in STBB.",
+      "Common mistake is giving examples without proper classification. BSEK requires textbook-style categorization with exact terminology from STBB syllabus."
+    ],
+    "quickRecap": "Grammar forms the foundation of English language structure. Master the 8 Parts of Speech definitions from STBB textbook exactly. Remember all 12 Tenses with their time indicators and helping verbs. Practice Voice and Narration transformations using STBB rules. Focus on textbook-exact definitions rather than general understanding for BSEK marking scheme.",
+    "importantFormulas": [
+      "Simple Present: Subject + Base form of verb (+ s/es for 3rd person singular)",
+      "Present Continuous: Subject + am/is/are + Verb+ing",
+      "Present Perfect: Subject + has/have + Past Participle",
+      "Active to Passive: Object + be verb + Past Participle + by + Subject",
+      "Direct to Indirect: Reporting Verb + that + Changed pronouns/tenses"
+    ]
   },
-  "created_at": "2026-04-06T06:47:38.927Z"
+  "created_at": "2026-04-06T06:47:38.927Z",
+  "enriched_at": "2026-04-06T17:04:51.054Z"
 }

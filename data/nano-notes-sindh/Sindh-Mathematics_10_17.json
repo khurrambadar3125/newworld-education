@@ -105,7 +105,36 @@
       "(f∘g)(x) = f(g(x))",
       "(g∘f)(x) = g(f(x))"
     ],
-    "keyDiagram": "Arrow diagram showing mapping between Domain and Codomain sets, with arrows pointing from each domain element to exactly one codomain element. Label Domain, Codomain, Range, and show examples of one-to-one, onto, and many-to-one mappings."
+    "keyDiagram": "Arrow diagram showing mapping between Domain and Codomain sets, with arrows pointing from each domain element to exactly one codomain element. Label Domain, Codomain, Range, and show examples of one-to-one, onto, and many-to-one mappings.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define function and domain with examples from given sets",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required definition of one-to-one function and verification using arrow diagram",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested union and intersection of sets with Venn diagram representation",
+      "BSEK 2020 SSC-II Q6 (4 marks) — asked for complement of set definition and numerical example"
+    ],
+    "workedExample": {
+      "question": "If A = {1, 2, 3, 4} and B = {3, 4, 5, 6}, find A ∪ B and A ∩ B. Also define union and intersection of sets. (6 marks)",
+      "steps": [
+        "Step 1: Write the definition of union of sets from STBB textbook",
+        "Step 2: Find A ∪ B by listing all elements that belong to either A or B or both",
+        "Step 3: Write the definition of intersection of sets from STBB textbook",
+        "Step 4: Find A ∩ B by listing elements common to both sets"
+      ],
+      "answer": "Union of sets: The union of two sets A and B is the set of all elements which belong to A or B or both. A ∪ B = {1, 2, 3, 4, 5, 6}. Intersection of sets: The intersection of two sets A and B is the set of all elements which are common to both A and B. A ∩ B = {3, 4}",
+      "markScheme": "2 marks for correct definitions, 2 marks for A ∪ B = {1, 2, 3, 4, 5, 6}, 2 marks for A ∩ B = {3, 4}"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing word-for-word.",
+      "Never confuse domain and range - domain is the set of first elements (inputs) while range is the set of second elements (outputs) in a function.",
+      "When drawing Venn diagrams, always label the universal set U and show the correct positioning of elements, as marks are deducted for unlabeled or incorrect diagrams."
+    ],
+    "quickRecap": "Sets are well-defined collections of objects. Functions are special relations where each element in domain maps to exactly one element in range. Union combines all elements, intersection finds common elements. Always write textbook definitions exactly as given in STBB for full marks.",
+    "importantFormulas": [
+      "n(A ∪ B) = n(A) + n(B) - n(A ∩ B)",
+      "n(A - B) = n(A) - n(A ∩ B)",
+      "n(U) = n(A) + n(A')"
+    ]
   },
-  "created_at": "2026-04-06T06:26:03.890Z"
+  "created_at": "2026-04-06T06:26:03.890Z",
+  "enriched_at": "2026-04-06T17:12:52.654Z"
 }

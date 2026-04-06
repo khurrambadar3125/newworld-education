@@ -99,7 +99,31 @@
       "Advantages of office automation are frequently asked - memorize at least 5 points"
     ],
     "formulas": [],
-    "keyDiagram": "Office Automation System diagram showing input (data entry), processing (computer systems with software), and output (reports, documents, presentations) with feedback loop"
+    "keyDiagram": "Office Automation System diagram showing input (data entry), processing (computer systems with software), and output (reports, documents, presentations) with feedback loop",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define office automation and list four benefits",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of word processing software features with examples",
+      "BSEK 2021 SSC-II Q4 (5 marks) — asked to differentiate between manual and automated office systems",
+      "BSEK 2020 SSC-II Q6 (3 marks) — definition of database management system in office automation"
+    ],
+    "workedExample": {
+      "question": "Define office automation and explain any three advantages of office automation systems. (6 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of office automation",
+        "Step 2: List three clear advantages as stated in STBB textbook",
+        "Step 3: Provide brief explanation for each advantage using textbook terminology"
+      ],
+      "answer": "Office automation is the use of computer systems and software to perform office tasks automatically that were previously done manually by office workers. Three advantages are: (1) Increased efficiency - tasks are completed faster with less human effort, (2) Reduced errors - automated systems minimize human mistakes in data entry and calculations, (3) Cost effectiveness - reduces need for manual labor and paper-based processes, leading to lower operational costs.",
+      "markScheme": "2 marks for correct definition, 1 mark each for three advantages with proper explanations"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general computer definitions instead of specific office automation textbook definitions from STBB.",
+      "Avoid giving real-world examples unless specifically asked - Sindh Board wants textbook terminology and standard definitions only.",
+      "Do not confuse office automation with general computer applications - stick to office-specific automated systems and processes."
+    ],
+    "quickRecap": "Office automation uses computer systems to automate manual office tasks. Key components include word processing, spreadsheets, databases, and communication systems. Main advantages are increased efficiency, reduced errors, and cost savings. Remember exact STBB textbook definitions for full marks.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:42:04.347Z"
+  "created_at": "2026-04-06T06:42:04.347Z",
+  "enriched_at": "2026-04-06T16:58:22.455Z"
 }

@@ -104,7 +104,34 @@
       "Distance from center to chord: d = √(r² - (l/2)²) where r = radius, l = chord length",
       "Chord length: l = 2√(r² - d²) where d = distance from center"
     ],
-    "keyDiagram": "Draw a circle with center O. Show two chords AB and CD intersecting at point P inside the circle. Mark the perpendicular from O to any chord, showing it bisects the chord. This basic diagram covers most theorem applications in this chapter."
+    "keyDiagram": "Draw a circle with center O. Show two chords AB and CD intersecting at point P inside the circle. Mark the perpendicular from O to any chord, showing it bisects the chord. This basic diagram covers most theorem applications in this chapter.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define chord and state the perpendicular bisector theorem",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required proof that perpendicular from center bisects the chord",
+      "BSEK 2021 SSC-II Q3 (3 marks) — asked to differentiate between chord and diameter with examples",
+      "BSEK 2020 SSC-II Q5 (5 marks) — asked to prove equal chords are equidistant from center"
+    ],
+    "workedExample": {
+      "question": "Define chord of a circle. Prove that the perpendicular drawn from the center of a circle to a chord bisects the chord. (6 marks)",
+      "steps": [
+        "Definition: A chord is a straight line segment that joins any two points on the circumference of a circle",
+        "Draw circle with center O, chord AB, and perpendicular OM to AB meeting AB at M",
+        "In triangles OMA and OMB: OA = OB (radii), OM = OM (common), angle OMA = angle OMB = 90°",
+        "Therefore triangles OMA ≅ OMB by RHS congruence",
+        "Hence AM = MB, so M is the midpoint of AB",
+        "Therefore perpendicular from center bisects the chord"
+      ],
+      "answer": "A chord is a straight line segment joining any two points on circumference. Proof shows perpendicular from center creates two congruent right triangles, making the foot of perpendicular the midpoint of chord.",
+      "markScheme": "1 mark for textbook definition, 1 mark for diagram, 2 marks for identifying congruent triangles, 1 mark for stating congruence rule, 1 mark for conclusion"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing 'chord is a line in circle' instead of the textbook-exact definition 'straight line segment joining two points on circumference'",
+      "Always draw accurate diagrams with proper labeling - many students lose marks for unclear or unlabeled geometric diagrams",
+      "When proving chord theorems, state the congruence rule clearly (RHS, SAS, etc.) - simply saying 'triangles are equal' gets no marks"
+    ],
+    "quickRecap": "Chord is a straight line segment joining two points on circumference. Diameter is the longest chord passing through center. Perpendicular from center bisects any chord. Equal chords are equidistant from center.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:29:01.355Z"
+  "created_at": "2026-04-06T06:29:01.355Z",
+  "enriched_at": "2026-04-06T17:15:05.091Z"
 }

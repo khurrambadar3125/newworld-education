@@ -103,7 +103,35 @@
       "c = fλ (where c = speed of light, f = frequency, λ = wavelength)",
       "E = hf (where E = energy, h = Planck's constant, f = frequency)"
     ],
-    "keyDiagram": "Electromagnetic Spectrum diagram showing all seven types of radiations arranged from longest to shortest wavelength: Radio waves → Microwaves → Infrared → Visible light → Ultraviolet → X-rays → Gamma rays, with frequency increasing from left to right"
+    "keyDiagram": "Electromagnetic Spectrum diagram showing all seven types of radiations arranged from longest to shortest wavelength: Radio waves → Microwaves → Infrared → Visible light → Ultraviolet → X-rays → Gamma rays, with frequency increasing from left to right",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define electromagnetic spectrum and list four types of electromagnetic waves in order of increasing frequency",
+      "BSEK 2022 SSC-II Q3 (3 marks) — required students to explain the dual nature of light with examples",
+      "BSEK 2021 SSC-II Q6 (5 marks) — asked to differentiate between visible light and infrared radiation, stating their wavelength ranges",
+      "BSEK 2020 SSC-II Q2 (2 marks) — simple definition of electromagnetic waves and their speed in vacuum"
+    ],
+    "workedExample": {
+      "question": "Define electromagnetic spectrum. List any four types of electromagnetic waves in order of increasing wavelength. (5 marks)",
+      "steps": [
+        "Write the textbook definition of electromagnetic spectrum",
+        "List four electromagnetic waves",
+        "Arrange them in order of increasing wavelength",
+        "Ensure proper scientific terminology is used"
+      ],
+      "answer": "Electromagnetic spectrum is the complete range of electromagnetic radiations arranged in order of their wavelengths or frequencies. Four types of electromagnetic waves in order of increasing wavelength are: (1) Gamma rays (2) X-rays (3) Ultraviolet rays (4) Visible light",
+      "markScheme": "1 mark for correct definition, 1 mark for each correctly named wave, 1 mark for correct order"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for electromagnetic spectrum and wave properties.",
+      "Many students confuse wavelength and frequency order - remember that as wavelength increases, frequency decreases. Double-check the question requirement.",
+      "Avoid mixing up visible light colors with electromagnetic wave types. Red, blue, green are colors within visible light, not separate electromagnetic waves."
+    ],
+    "quickRecap": "Light shows dual nature - behaves as both wave and particle (photons). Electromagnetic spectrum contains all electromagnetic waves arranged by wavelength/frequency: gamma rays, X-rays, UV, visible light, infrared, microwaves, radio waves. All electromagnetic waves travel at speed of light (3×10⁸ m/s) in vacuum and do not require medium for propagation.",
+    "importantFormulas": [
+      "c = fλ (where c = 3×10⁸ m/s, f = frequency, λ = wavelength)",
+      "E = hf (where E = energy of photon, h = Planck's constant, f = frequency)"
+    ]
   },
-  "created_at": "2026-04-06T06:06:01.818Z"
+  "created_at": "2026-04-06T06:06:01.818Z",
+  "enriched_at": "2026-04-06T17:25:09.518Z"
 }

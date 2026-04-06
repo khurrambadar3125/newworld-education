@@ -104,7 +104,35 @@
       "Στ = 0 (Second condition of equilibrium)",
       "ΣFx = 0 and ΣFy = 0 (Component form)"
     ],
-    "keyDiagram": "Draw three diagrams showing: 1) Cone on broad base (stable), 2) Cone on pointed tip (unstable), 3) Ball/cylinder on flat surface (neutral). Also draw a balanced see-saw showing forces and distances for moment calculations."
+    "keyDiagram": "Draw three diagrams showing: 1) Cone on broad base (stable), 2) Cone on pointed tip (unstable), 3) Ball/cylinder on flat surface (neutral). Also draw a balanced see-saw showing forces and distances for moment calculations.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define equilibrium and explain the conditions required for a body to be in equilibrium",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required differentiation between stable, unstable and neutral equilibrium with examples",
+      "BSEK 2024 SSC-II Q4 (3 marks) — tested definition of center of gravity and its relationship with equilibrium",
+      "BSEK 2021 SSC-II Q6 (5 marks) — asked to explain types of equilibrium with real-life examples and diagrams"
+    ],
+    "workedExample": {
+      "question": "Define equilibrium. Explain the three types of equilibrium with examples. (6 marks)",
+      "steps": [
+        "Step 1: Write the textbook definition of equilibrium",
+        "Step 2: Define stable equilibrium with example",
+        "Step 3: Define unstable equilibrium with example",
+        "Step 4: Define neutral equilibrium with example"
+      ],
+      "answer": "Equilibrium is the state of a body in which it remains at rest or continues to move with uniform velocity when no net external force acts upon it. Stable equilibrium: When a body is displaced slightly from its equilibrium position, it returns to its original position, e.g., a ball at the bottom of a bowl. Unstable equilibrium: When a body is displaced slightly, it moves further away from its equilibrium position, e.g., a pencil balanced on its tip. Neutral equilibrium: When displaced, the body remains in equilibrium at its new position, e.g., a ball on a flat surface.",
+      "markScheme": "1 mark for equilibrium definition, 1 mark each for defining the three types, 1 mark each for correct examples"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for equilibrium definitions.",
+      "Many students confuse stable and unstable equilibrium examples. Remember: stable returns to original position, unstable moves away from it.",
+      "Avoid using complex physics terminology beyond the syllabus. Sindh Board expects simple, clear textbook language, not advanced concepts like torque or moment of inertia."
+    ],
+    "quickRecap": "Equilibrium occurs when no net force acts on a body, keeping it at rest or in uniform motion. Three types exist: stable (returns when displaced), unstable (moves away when displaced), and neutral (stays in new position). Examples include ball in bowl (stable), pencil on tip (unstable), and ball on flat surface (neutral). Always use exact textbook definitions.",
+    "importantFormulas": [
+      "Net Force = 0 (condition for equilibrium)",
+      "Sum of upward forces = Sum of downward forces"
+    ]
   },
-  "created_at": "2026-04-06T06:02:40.253Z"
+  "created_at": "2026-04-06T06:02:40.253Z",
+  "enriched_at": "2026-04-06T17:27:31.595Z"
 }

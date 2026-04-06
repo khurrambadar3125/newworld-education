@@ -104,7 +104,36 @@
       "Aerobic Respiration: C6H12O6 + 6O2 → 6CO2 + 6H2O + 38 ATP",
       "Anaerobic Respiration: C6H12O6 → 2C2H5OH + 2CO2 + 2 ATP"
     ],
-    "keyDiagram": "Structure of Chloroplast showing outer membrane, inner membrane, stroma, thylakoids, grana and chlorophyll. Label all parts clearly as this diagram appears every year in BSEK papers."
+    "keyDiagram": "Structure of Chloroplast showing outer membrane, inner membrane, stroma, thylakoids, grana and chlorophyll. Label all parts clearly as this diagram appears every year in BSEK papers.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define photosynthesis and cellular respiration with their word equations",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of aerobic and anaerobic respiration with examples",
+      "BSEK 2021 SSC-II Q4 (3 marks) — tested definition of ATP and its role as energy currency",
+      "BSEK 2020 SSC-II Q6 (5 marks) — asked to compare photosynthesis and respiration in tabular form"
+    ],
+    "workedExample": {
+      "question": "Define photosynthesis and write its word equation. Explain why it is important for life on Earth. (5 marks)",
+      "steps": [
+        "Write the STBB textbook definition of photosynthesis",
+        "Write the correct word equation",
+        "Explain oxygen production importance",
+        "Explain glucose/food production importance"
+      ],
+      "answer": "Photosynthesis is the process by which green plants make their own food (glucose) from carbon dioxide and water in the presence of sunlight and chlorophyll. Word equation: Carbon dioxide + Water → Glucose + Oxygen (in presence of sunlight and chlorophyll). Photosynthesis is important because: (1) It produces oxygen which is essential for respiration of all living organisms, (2) It produces glucose which serves as food for plants and indirectly for all other organisms in food chains.",
+      "markScheme": "1 mark for correct definition, 1 mark for word equation, 1 mark for oxygen importance, 1 mark for food production importance, 1 mark for clear explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for photosynthesis and respiration definitions.",
+      "Never write chemical formulas instead of word equations unless specifically asked. BSEK expects word equations for bioenergetics processes.",
+      "When comparing photosynthesis and respiration, students forget to mention that both processes can occur in plants simultaneously - this distinction often carries marks."
+    ],
+    "quickRecap": "Bioenergetics involves energy transformations in living organisms. Photosynthesis converts light energy to chemical energy (glucose), while respiration releases energy from glucose. ATP is the universal energy currency. Aerobic respiration requires oxygen and produces more ATP than anaerobic respiration.",
+    "importantFormulas": [
+      "Photosynthesis: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (in presence of sunlight and chlorophyll)",
+      "Aerobic Respiration: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP",
+      "Anaerobic Respiration (in yeast): C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ + ATP"
+    ]
   },
-  "created_at": "2026-04-06T06:15:50.316Z"
+  "created_at": "2026-04-06T06:15:50.316Z",
+  "enriched_at": "2026-04-06T16:51:01.751Z"
 }

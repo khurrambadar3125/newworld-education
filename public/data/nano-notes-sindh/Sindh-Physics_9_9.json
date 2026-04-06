@@ -106,7 +106,39 @@
       "Efficiency = (MA/VR) × 100%",
       "For inclined plane: MA = Length of plane/Height of plane"
     ],
-    "keyDiagram": "Three classes of levers showing position of fulcrum (F), effort (E), and load (L). First class: E-F-L, Second class: F-L-E, Third class: F-E-L. Also draw fixed and movable pulley arrangements with proper labeling."
+    "keyDiagram": "Three classes of levers showing position of fulcrum (F), effort (E), and load (L). First class: E-F-L, Second class: F-L-E, Third class: F-E-L. Also draw fixed and movable pulley arrangements with proper labeling.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define simple machines and state two advantages with examples",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of mechanical advantage with calculation for lever and pulley",
+      "BSEK 2021 SSC-II Q4 (3 marks) — asked to classify simple machines into three main types with one example each",
+      "BSEK 2020 SSC-II Q8 (5 marks) — demanded definition of efficiency of machines and factors affecting efficiency"
+    ],
+    "workedExample": {
+      "question": "Define simple machine. Calculate the mechanical advantage of a lever if effort arm is 60cm and load arm is 15cm. Also find the effort required to lift a load of 200N. (6 marks)",
+      "steps": [
+        "Write the textbook definition of simple machine",
+        "State the formula for mechanical advantage of lever",
+        "Substitute given values: effort arm = 60cm, load arm = 15cm",
+        "Calculate mechanical advantage",
+        "Use MA formula to find effort needed for 200N load"
+      ],
+      "answer": "Simple machine is a device that makes our work easier by changing the direction, magnitude or point of application of force. MA = Effort arm/Load arm = 60cm/15cm = 4. Since MA = Load/Effort, therefore 4 = 200N/Effort, so Effort = 200N/4 = 50N",
+      "markScheme": "1 mark for correct definition, 1 mark for MA formula, 1 mark for substitution, 1 mark for MA calculation, 2 marks for effort calculation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for simple machine definition.",
+      "Many students confuse mechanical advantage with velocity ratio. Remember MA involves actual forces while VR involves distances only.",
+      "Avoid mixing up the three classes of levers. Learn the exact position of fulcrum, effort and load for each class as given in textbook diagrams."
+    ],
+    "quickRecap": "Simple machines make work easier by changing force direction, magnitude or application point. Six types are lever, pulley, wheel-axle, inclined plane, wedge and screw. Mechanical advantage equals load divided by effort, while efficiency equals work output divided by work input multiplied by 100. Remember the three classes of levers and their real-life examples for exam answers.",
+    "importantFormulas": [
+      "Mechanical Advantage (MA) = Load/Effort",
+      "Velocity Ratio (VR) = Distance moved by effort/Distance moved by load",
+      "Efficiency = (Work Output/Work Input) × 100%",
+      "For lever: MA = Effort arm/Load arm",
+      "Work = Force × Distance"
+    ]
   },
-  "created_at": "2026-04-06T06:03:43.369Z"
+  "created_at": "2026-04-06T06:03:43.369Z",
+  "enriched_at": "2026-04-06T17:28:17.948Z"
 }

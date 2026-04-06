@@ -105,7 +105,39 @@
       "Area of triangle = 1/2 × area of parallelogram (on same base and between same parallels)",
       "Ratio of areas of similar triangles = (ratio of corresponding sides)²"
     ],
-    "keyDiagram": "Draw two parallelograms ABCD and ABEF sharing the same base AB, with vertices C, D, E, F lying on parallel lines. Show the perpendicular height between the parallel lines. This diagram demonstrates that both parallelograms have equal areas and is essential for theorem proofs."
+    "keyDiagram": "Draw two parallelograms ABCD and ABEF sharing the same base AB, with vertices C, D, E, F lying on parallel lines. Show the perpendicular height between the parallel lines. This diagram demonstrates that both parallelograms have equal areas and is essential for theorem proofs.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to prove that triangles on equal bases and between same parallels are equal in area",
+      "BSEK 2022 SSC-II Q3 (5 marks) — required proof that parallelograms on same base and between same parallels have equal areas",
+      "BSEK 2021 SSC-II Q6 (4 marks) — tested the theorem about triangle and parallelogram on same base and between same parallels",
+      "BSEK 2020 SSC-II Q5 (7 marks) — comprehensive question on area theorems including trapezium area formula derivation"
+    ],
+    "workedExample": {
+      "question": "Prove that triangles on equal bases and between the same parallels are equal in area. (6 marks)",
+      "steps": [
+        "Draw two triangles ABC and DEF with equal bases BC = EF",
+        "Place both triangles between same parallel lines",
+        "Construct parallelograms BCPQ and EFRS on same bases and between same parallels",
+        "Apply theorem: Parallelograms on equal bases and between same parallels are equal in area",
+        "Use theorem: Triangle is half the area of parallelogram on same base and between same parallels",
+        "Therefore, Area of triangle ABC = Area of triangle DEF"
+      ],
+      "answer": "Given: Triangles ABC and DEF with BC = EF, lying between same parallels. To Prove: Area of △ABC = Area of △DEF. Construction and proof using parallelogram area theorems and the relationship between triangle and parallelogram areas.",
+      "markScheme": "2 marks for correct given/to prove, 1 mark for construction, 2 marks for applying relevant theorems, 1 mark for conclusion"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by not stating the 'given' and 'to prove' clearly in theorem proofs. Always write these sections exactly as shown in STBB textbook.",
+      "Many students confuse area theorems with congruency theorems. Remember that equal areas doesn't mean congruent triangles - stick to area relationships only.",
+      "Avoid using coordinate geometry or measurement methods. BSEK expects pure geometric proofs using established theorems as per Sindh textbook methodology."
+    ],
+    "quickRecap": "Area theorems deal with equal areas under specific conditions. Key concepts: triangles/parallelograms on equal bases between same parallels have equal areas. Triangle area is half of parallelogram on same base between same parallels. Trapezium area uses parallel sides formula. All proofs require proper construction and application of established theorems.",
+    "importantFormulas": [
+      "Area of triangle = (1/2) × base × height",
+      "Area of parallelogram = base × height",
+      "Area of trapezium = (1/2) × (sum of parallel sides) × height",
+      "Triangle area = (1/2) × parallelogram area (on same base and between same parallels)"
+    ]
   },
-  "created_at": "2026-04-06T06:24:59.089Z"
+  "created_at": "2026-04-06T06:24:59.089Z",
+  "enriched_at": "2026-04-06T17:18:07.963Z"
 }

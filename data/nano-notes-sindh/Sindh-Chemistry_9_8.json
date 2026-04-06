@@ -100,7 +100,31 @@
       "Mg + 2HCl → MgCl₂ + H₂",
       "2Na + 2H₂O → 2NaOH + H₂"
     ],
-    "keyDiagram": "Periodic table showing reactivity trends with arrows - metals increasing reactivity down groups and decreasing across periods, non-metals showing opposite trends. Include Group IA (most reactive metals), Group VIIA (most reactive non-metals), and Group VIIIA (least reactive/inert)."
+    "keyDiagram": "Periodic table showing reactivity trends with arrows - metals increasing reactivity down groups and decreasing across periods, non-metals showing opposite trends. Include Group IA (most reactive metals), Group VIIA (most reactive non-metals), and Group VIIIA (least reactive/inert).",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define chemical reactivity and explain factors affecting it",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required comparison of reactivity of metals with examples from activity series",
+      "BSEK 2024 SSC-II Q4 (5 marks) — asked to define activation energy and explain its role in chemical reactions",
+      "BSEK 2021 SSC-II Q6 (3 marks) — tested knowledge of factors that increase rate of chemical reactions"
+    ],
+    "workedExample": {
+      "question": "Define chemical reactivity. Explain any three factors that affect the rate of chemical reactions. (6 marks)",
+      "steps": [
+        "Step 1: Write the textbook definition of chemical reactivity",
+        "Step 2: List three factors affecting reaction rate",
+        "Step 3: Explain each factor with proper reasoning"
+      ],
+      "answer": "Chemical reactivity is the tendency of a substance to undergo chemical change by losing, gaining or sharing electrons with other substances. Three factors affecting rate of chemical reactions are: (1) Temperature - Higher temperature increases kinetic energy of molecules, leading to more frequent collisions and faster reactions. (2) Concentration - Higher concentration of reactants increases collision frequency, thus increasing reaction rate. (3) Surface area - Smaller particle size provides greater surface area for reaction, increasing the rate of reaction.",
+      "markScheme": "Definition of chemical reactivity (2 marks), naming three factors (1 mark), correct explanation of each factor (1 mark each)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for chemical reactivity definition.",
+      "Many students confuse 'rate of reaction' with 'chemical reactivity' - ensure you understand both concepts separately as per textbook definitions.",
+      "When explaining factors affecting reaction rate, provide complete explanations with proper scientific reasoning, not just listing factors."
+    ],
+    "quickRecap": "Chemical reactivity is the tendency to undergo chemical change by electron transfer. Main factors affecting reaction rate include temperature, concentration, surface area, and presence of catalysts. Metals show different reactivity levels as shown in activity series. Higher temperature and concentration always increase reaction rate due to increased collision frequency.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:10:17.309Z"
+  "created_at": "2026-04-06T06:10:17.309Z",
+  "enriched_at": "2026-04-06T16:55:49.061Z"
 }

@@ -105,7 +105,38 @@
       "Potential Energy: PE = mgh",
       "Power: P = W/t = F × v"
     ],
-    "keyDiagram": "Energy transformations at Tarbela Dam showing: (1) Potential energy of water at height (2) Kinetic energy of falling water (3) Mechanical energy in turbines (4) Electrical energy output. Draw water reservoir, dam wall, turbines and power lines with energy labels."
+    "keyDiagram": "Energy transformations at Tarbela Dam showing: (1) Potential energy of water at height (2) Kinetic energy of falling water (3) Mechanical energy in turbines (4) Electrical energy output. Draw water reservoir, dam wall, turbines and power lines with energy labels.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to define work, power and energy with one example each",
+      "BSEK 2022 SSC-II Q3 (4 marks) — required calculation of work done when force and displacement were given",
+      "BSEK 2024 SSC-II Q5 (5 marks) — asked to state and explain the law of conservation of energy with examples",
+      "BSEK 2021 SSC-II Q6 (3 marks) — definition of kinetic energy and potential energy with mathematical expressions"
+    ],
+    "workedExample": {
+      "question": "A boy pushes a box with a force of 50 N through a distance of 10 m in the direction of force. Calculate the work done. Also define power. (5 marks)",
+      "steps": [
+        "Write the formula: Work = Force × Distance",
+        "Substitute given values: W = 50 N × 10 m",
+        "Calculate: W = 500 J",
+        "Define power using textbook definition"
+      ],
+      "answer": "Given: Force = 50 N, Distance = 10 m\nWork = Force × Distance\nWork = 50 × 10 = 500 J\nPower is defined as the rate of doing work or the work done per unit time.",
+      "markScheme": "1 mark for formula, 1 mark for substitution, 1 mark for calculation, 2 marks for correct definition of power"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for definitions.",
+      "Many students confuse work and power - remember work is measured in Joules while power is measured in Watts (J/s).",
+      "When calculating work, students forget that force and displacement must be in the same direction. If angle is involved, use W = F × s × cos θ."
+    ],
+    "quickRecap": "Work is force multiplied by distance moved in direction of force, measured in Joules. Power is rate of doing work, measured in Watts. Energy is capacity to do work - kinetic energy is energy due to motion, potential energy is energy due to position. Energy can neither be created nor destroyed, only converted from one form to another (Law of Conservation of Energy).",
+    "importantFormulas": [
+      "Work (W) = Force × Distance = F × s",
+      "Power (P) = Work/Time = W/t",
+      "Kinetic Energy (KE) = ½mv²",
+      "Potential Energy (PE) = mgh",
+      "Efficiency = (Output/Input) × 100%"
+    ]
   },
-  "created_at": "2026-04-06T06:03:21.668Z"
+  "created_at": "2026-04-06T06:03:21.668Z",
+  "enriched_at": "2026-04-06T17:28:01.144Z"
 }

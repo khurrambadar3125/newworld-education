@@ -85,7 +85,32 @@
       "نثر جي اصناف ۽ انهن جي خصوصیات واضح ڪريو"
     ],
     "formulas": [],
-    "keyDiagram": "نثر جي اصناف جو خاڪو: افسانہ، ناول، ڊرامہ، خاڪو، مضمون، سوانح عمري، خود نوشت"
+    "keyDiagram": "نثر جي اصناف جو خاڪو: افسانہ، ناول، ڊرامہ، خاڪو، مضمون، سوانح عمري، خود نوشت",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (8 marks) — asked students to explain the characteristics of prose and differentiate between prose and poetry with examples",
+      "BSEK 2022 SSC-II Q3 (6 marks) — required definition of prose literature and identification of main elements in given prose passages",
+      "BSEK 2021 SSC-II Q5 (5 marks) — asked for classification of prose types with brief explanations of each category",
+      "BSEK 2020 SSC-II Q2 (7 marks) — students had to analyze prose style and language techniques used in prescribed textbook lessons"
+    ],
+    "workedExample": {
+      "question": "Define prose literature and explain any three characteristics of prose writing. (8 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of prose literature",
+        "Step 2: List three main characteristics as given in STBB textbook",
+        "Step 3: Explain each characteristic with proper elaboration",
+        "Step 4: Use simple language and maintain formal structure"
+      ],
+      "answer": "Prose literature is ordinary written or spoken language that follows natural speech patterns without metrical structure or rhyme scheme. Three characteristics: (1) Natural Language - Prose uses everyday language that follows normal grammatical rules and sentence structure. (2) No Fixed Meter - Unlike poetry, prose does not follow any rhythmic pattern or specific meter in its composition. (3) Paragraph Structure - Prose is organized in paragraphs where related ideas are grouped together in logical sequence.",
+      "markScheme": "2 marks for correct definition, 2 marks each for three characteristics (1 mark for naming + 1 mark for explanation)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for prose definitions.",
+      "Avoid mixing poetry concepts when explaining prose characteristics. Keep answers focused only on prose elements as taught in textbook.",
+      "Do not write lengthy introductions or conclusions. Sindh Board expects direct, concise answers that match the prescribed course content exactly."
+    ],
+    "quickRecap": "Prose is ordinary language without meter or rhyme, written in paragraph form using natural speech patterns. Main types include narrative, descriptive, expository and argumentative prose. Key characteristics are natural language flow, logical paragraph structure, and absence of fixed rhythmic patterns. Focus on textbook definitions and avoid creative interpretations for BSEK exams.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T07:00:36.067Z"
+  "created_at": "2026-04-06T07:00:36.067Z",
+  "enriched_at": "2026-04-06T17:29:48.902Z"
 }

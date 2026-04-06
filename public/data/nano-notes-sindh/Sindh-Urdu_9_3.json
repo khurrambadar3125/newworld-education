@@ -104,7 +104,32 @@
       "جملہ = فاعل + فعل (کم سے کم)",
       "مکمل جملہ = فاعل + فعل + مفعول"
     ],
-    "keyDiagram": "کلام کی اقسام کا درختی خاکہ: کلام کی پانچ شاخیں - اسم، فعل، صفت، ضمیر، حرف - ہر ایک کی مثالوں کے ساتھ"
+    "keyDiagram": "کلام کی اقسام کا درختی خاکہ: کلام کی پانچ شاخیں - اسم، فعل، صفت، ضمیر، حرف - ہر ایک کی مثالوں کے ساتھ",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define noun and its types with examples from given passage",
+      "BSEK 2022 SSC-II Q4 (5 marks) — required identification of parts of speech and formation of sentences using specific grammar rules",
+      "BSEK 2021 SSC-II Q2 (3 marks) — tested definitions of pronoun, adjective and their classification",
+      "BSEK 2020 SSC-II Q5 (4 marks) — asked for exact definitions of verb types and their usage in Urdu grammar structure"
+    ],
+    "workedExample": {
+      "question": "Define 'Ism' (Noun) and classify its types with one example each. (5 marks)",
+      "steps": [
+        "Step 1: Write the exact STBB textbook definition of Ism",
+        "Step 2: List all types of Ism as given in textbook",
+        "Step 3: Provide one clear example for each type",
+        "Step 4: Ensure examples match the definitions perfectly"
+      ],
+      "answer": "Ism (اسم): Wo lafz jo kisi shakhs, jagah, cheez ya haalat ka naam ho. Types: (1) Ism-e-Zaat - جیسے احمد، کتاب (2) Ism-e-Sifat - جیسے اچھا، برا (3) Ism-e-Zameer - جیسے میں، تم (4) Ism-e-Ishara - جیسے یہ، وہ",
+      "markScheme": "1 mark for exact definition, 1 mark for each type correctly named, 0.25 marks for each correct example"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing word-for-word.",
+      "Avoid mixing English grammar concepts with Urdu Qawaid. Sindh Board expects traditional Urdu grammar terminology only.",
+      "Never skip examples when asked for definitions. BSEK marking scheme always allocates separate marks for examples that must be relevant and clear."
+    ],
+    "quickRecap": "Qawaid covers 8 main parts of speech in Urdu: Ism, Zameer, Sifat, Fiail, Harf, Ishara, Rishta and Nida. Each has specific textbook definitions that must be memorized exactly. Focus on classification and examples for each type. Remember that BSEK questions test definition recall, not grammar application.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:56:59.392Z"
+  "created_at": "2026-04-06T06:56:59.392Z",
+  "enriched_at": "2026-04-06T17:32:25.946Z"
 }

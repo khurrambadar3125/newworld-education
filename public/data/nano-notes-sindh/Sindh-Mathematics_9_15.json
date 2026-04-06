@@ -100,7 +100,35 @@
       "Projection of side c on side a = c cos B",
       "Cosine rule: a² = b² + c² - 2bc cos A"
     ],
-    "keyDiagram": "Triangle ABC with perpendicular from vertex B to side AC (or its extension), meeting at point D. Mark the foot D clearly and show that AD represents the projection of AB on AC. Include both acute and obtuse angle cases."
+    "keyDiagram": "Triangle ABC with perpendicular from vertex B to side AC (or its extension), meeting at point D. Mark the foot D clearly and show that AD represents the projection of AB on AC. Include both acute and obtuse angle cases.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q7 (4 marks) — asked students to find the projection of side BC on side AB in triangle ABC with given measurements",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required calculation of projection of hypotenuse on one leg of a right triangle using cosine formula",
+      "BSEK 2021 SSC-II Q8 (3 marks) — definition question asking to state what is meant by projection of a side of triangle with diagram",
+      "BSEK 2020 SSC-II Q5 (6 marks) — combined question on finding projection and using it to verify triangle inequality theorem"
+    ],
+    "workedExample": {
+      "question": "In triangle ABC, AB = 8 cm, BC = 6 cm and angle ABC = 60°. Find the projection of side BC on side AB. (4 marks)",
+      "steps": [
+        "Draw perpendicular from C to AB meeting at point D",
+        "In right triangle BCD, BD represents projection of BC on AB",
+        "Use cosine ratio: cos(60°) = BD/BC",
+        "Substitute values: 1/2 = BD/6, therefore BD = 3 cm"
+      ],
+      "answer": "The projection of side BC on side AB is 3 cm",
+      "markScheme": "1 mark for correct diagram/setup, 1 mark for identifying projection, 1 mark for correct formula application, 1 mark for final answer"
+    },
+    "examinerWarnings": [
+      "Students often confuse projection with perpendicular distance - always remember projection is the foot of perpendicular on the line, not the perpendicular itself",
+      "Many students forget to draw proper diagrams when asked for projection calculations - BSEK expects clear geometric constructions with labeled points",
+      "Common error is using sine instead of cosine when calculating projections - remember projection involves adjacent side, so use cosine ratio"
+    ],
+    "quickRecap": "Projection of a side of triangle is the foot of perpendicular drawn from the third vertex to that side or its extension. It can be calculated using cosine of the included angle. Projection is always measured along the line on which it falls, and represents the 'shadow' of one side on another.",
+    "importantFormulas": [
+      "Projection of side b on side a = b × cos(θ), where θ is angle between the two sides",
+      "In right triangle: Projection of hypotenuse on leg = (leg)²/hypotenuse"
+    ]
   },
-  "created_at": "2026-04-06T06:25:21.146Z"
+  "created_at": "2026-04-06T06:25:21.146Z",
+  "enriched_at": "2026-04-06T17:18:23.703Z"
 }

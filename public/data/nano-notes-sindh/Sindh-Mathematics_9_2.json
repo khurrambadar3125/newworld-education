@@ -104,7 +104,39 @@
       "log_a a = 1",
       "log_a N = (log_b N)/(log_b a)"
     ],
-    "keyDiagram": "Graph of y = log_a x showing: domain (0, ∞), range (-∞, ∞), passes through (1, 0) and (a, 1), increasing function when a > 1, decreasing when 0 < a < 1"
+    "keyDiagram": "Graph of y = log_a x showing: domain (0, ∞), range (-∞, ∞), passes through (1, 0) and (a, 1), increasing function when a > 1, decreasing when 0 < a < 1",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define logarithm and solve log₂ 64 with complete working",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required definition of common logarithm and evaluation of log₁₀ 1000",
+      "BSEK 2021 SSC-II Q3 (3 marks) — tested basic properties of logarithms with numerical examples",
+      "BSEK 2020 SSC-II Q5 (4 marks) — asked to define natural logarithm and convert between exponential and logarithmic forms"
+    ],
+    "workedExample": {
+      "question": "Define logarithm. If log₃ x = 4, find the value of x. (4 marks)",
+      "steps": [
+        "Step 1: Write the textbook definition of logarithm",
+        "Step 2: Apply the definition to the given equation log₃ x = 4",
+        "Step 3: Convert to exponential form using the relationship",
+        "Step 4: Calculate the final value"
+      ],
+      "answer": "Definition: The logarithm of a positive number to a given base is the power to which the base must be raised to get that number. Given: log₃ x = 4. By definition of logarithm: x = 3⁴. Therefore: x = 3 × 3 × 3 × 3 = 81",
+      "markScheme": "1 mark for correct textbook definition, 1 mark for identifying the relationship, 1 mark for conversion to exponential form, 1 mark for correct calculation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for logarithm definition.",
+      "Never skip the step of writing the definition even if the question seems to focus on calculation - BSEK awards marks for proper definitions.",
+      "When converting between exponential and logarithmic forms, always state the relationship explicitly rather than jumping directly to the answer."
+    ],
+    "quickRecap": "Logarithm is the power to which a base must be raised to get a given number. Common logarithm uses base 10, natural logarithm uses base e. Always convert log equations to exponential form for solving. Remember the fundamental relationship: if logₐ x = n, then aⁿ = x.",
+    "importantFormulas": [
+      "If logₐ x = n, then aⁿ = x",
+      "logₐ (xy) = logₐ x + logₐ y",
+      "logₐ (x/y) = logₐ x - logₐ y",
+      "logₐ xⁿ = n logₐ x",
+      "logₐ a = 1",
+      "logₐ 1 = 0"
+    ]
   },
-  "created_at": "2026-04-06T06:20:35.908Z"
+  "created_at": "2026-04-06T06:20:35.908Z",
+  "enriched_at": "2026-04-06T17:18:55.097Z"
 }

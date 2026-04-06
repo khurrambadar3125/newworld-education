@@ -107,7 +107,38 @@
       "v = 2d/t (for echo)",
       "d = vt/2 (minimum distance for echo)"
     ],
-    "keyDiagram": "Longitudinal wave showing compressions and rarefactions with wavelength marked between two consecutive compressions. Also draw transverse wave showing amplitude, wavelength, crest and trough clearly labeled."
+    "keyDiagram": "Longitudinal wave showing compressions and rarefactions with wavelength marked between two consecutive compressions. Also draw transverse wave showing amplitude, wavelength, crest and trough clearly labeled.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define longitudinal and transverse waves with examples",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required explanation of wave properties: amplitude, frequency, wavelength and time period",
+      "BSEK 2024 SSC-II Q3 (5 marks) — tested difference between sound waves and light waves with characteristics",
+      "BSEK 2023 SSC-II Q8 (3 marks) — asked to state factors affecting speed of sound in air"
+    ],
+    "workedExample": {
+      "question": "Define wave motion and explain the difference between longitudinal and transverse waves with one example each. (6 marks)",
+      "steps": [
+        "Define wave motion using STBB textbook definition",
+        "Define transverse waves with particle motion direction",
+        "Give example of transverse wave (light waves)",
+        "Define longitudinal waves with particle motion direction",
+        "Give example of longitudinal wave (sound waves)",
+        "Clearly state the key difference in particle motion"
+      ],
+      "answer": "Wave motion is the transfer of energy from one place to another without transfer of matter. Transverse waves are waves in which particles of medium vibrate perpendicular to direction of wave propagation, example: light waves. Longitudinal waves are waves in which particles of medium vibrate parallel to direction of wave propagation, example: sound waves. The main difference is the direction of particle vibration relative to wave direction.",
+      "markScheme": "1 mark for wave motion definition, 1 mark for transverse wave definition, 1 mark for transverse example, 1 mark for longitudinal definition, 1 mark for longitudinal example, 1 mark for stating difference"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for wave definitions.",
+      "Do not confuse frequency with time period - frequency is number of vibrations per second, time period is time for one complete vibration.",
+      "When explaining sound wave properties, stick to textbook explanations rather than real-world applications which are not required in BSEK marking scheme."
+    ],
+    "quickRecap": "Waves transfer energy without transferring matter. Transverse waves have perpendicular particle vibration (light), longitudinal have parallel vibration (sound). Key properties are amplitude, frequency, wavelength and time period. Sound needs medium to travel, travels faster in solids than gases.",
+    "importantFormulas": [
+      "Wave speed = Frequency × Wavelength (v = f × λ)",
+      "Frequency = 1 / Time period (f = 1/T)",
+      "Speed of sound in air = 340 m/s (at room temperature)"
+    ]
   },
-  "created_at": "2026-04-06T06:04:53.211Z"
+  "created_at": "2026-04-06T06:04:53.211Z",
+  "enriched_at": "2026-04-06T17:24:19.595Z"
 }

@@ -96,7 +96,33 @@
       "River names and their tributaries are common in both MCQs and short questions"
     ],
     "formulas": [],
-    "keyDiagram": "Map of Pakistan showing major rivers (Indus river system), important dams (Tarbela, Mangla, Warsak), and mineral locations (Sui gas field, coal mines). Students must be able to mark and label all major rivers and dams on Pakistan map."
+    "keyDiagram": "Map of Pakistan showing major rivers (Indus river system), important dams (Tarbela, Mangla, Warsak), and mineral locations (Sui gas field, coal mines). Students must be able to mark and label all major rivers and dams on Pakistan map.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define natural resources and classify Pakistan's mineral resources",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required explanation of importance of water resources and agricultural resources of Pakistan",
+      "BSEK 2021 SSC-II Q3 (5 marks) — asked to differentiate between renewable and non-renewable resources with examples from Pakistan",
+      "BSEK 2020 SSC-II Q7 (3 marks) — asked students to list three major forest resources of Pakistan and their economic importance"
+    ],
+    "workedExample": {
+      "question": "Define natural resources and explain the importance of water resources in Pakistan's economy. (5 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of natural resources",
+        "Step 2: Identify Pakistan's major water resources (rivers, glaciers, groundwater)",
+        "Step 3: Explain importance for agriculture (irrigation)",
+        "Step 4: Explain importance for hydroelectric power generation",
+        "Step 5: Mention industrial and domestic uses"
+      ],
+      "answer": "Natural resources are materials and substances that occur naturally in the environment and are useful to humans for economic purposes. Pakistan's water resources include rivers (Indus, Jhelum, Chenab, Ravi, Sutlej), glaciers in northern areas, and groundwater. These resources are vital for Pakistan's economy as they provide irrigation for agriculture which employs 70% of population, generate hydroelectric power through dams like Tarbela and Mangla, supply water for industries like textiles and chemicals, and meet domestic water needs of the population.",
+      "markScheme": "1 mark for correct definition, 1 mark for identifying water sources, 1 mark each for agricultural, power generation, and industrial/domestic importance"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for defining natural resources, renewable resources, and non-renewable resources.",
+      "Avoid giving examples without proper classification. When listing Pakistan's resources, clearly categorize them as renewable (forests, water) or non-renewable (minerals, fossil fuels) as per textbook.",
+      "Do not write lengthy explanations for short-answer questions. Stick to the mark allocation - if it's 3 marks, give exactly 3 distinct points as mentioned in the textbook."
+    ],
+    "quickRecap": "Natural resources are naturally occurring materials useful for economic purposes, classified as renewable (forests, water, soil) and non-renewable (minerals, oil, gas). Pakistan's major resources include water resources (Indus river system), mineral resources (coal, natural gas, rock salt), agricultural resources (fertile soil, favorable climate), and forest resources (coniferous and deciduous forests). These resources form the backbone of Pakistan's economy through agriculture, industry, and energy production.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:32:51.243Z"
+  "created_at": "2026-04-06T06:32:51.243Z",
+  "enriched_at": "2026-04-06T17:23:34.410Z"
 }

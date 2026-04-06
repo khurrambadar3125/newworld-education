@@ -106,7 +106,38 @@
       "For parallel lines: m₁ = m₂",
       "For perpendicular lines: m₁ × m₂ = -1"
     ],
-    "keyDiagram": "Coordinate plane with x and y axes, showing a straight line passing through two clearly marked points, with x-intercept and y-intercept labeled. Include arrows at both ends of line and proper scaling on axes."
+    "keyDiagram": "Coordinate plane with x and y axes, showing a straight line passing through two clearly marked points, with x-intercept and y-intercept labeled. Include arrows at both ends of line and proper scaling on axes.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to plot a linear graph from given data and find slope using two points method",
+      "BSEK 2022 SSC-II Q7 (4 marks) — required drawing a straight line graph and interpreting the y-intercept from the equation",
+      "BSEK 2021 SSC-II Q3 (5 marks) — asked to convert tabular data into linear graph and determine the relationship between variables",
+      "BSEK 2020 SSC-II Q6 (3 marks) — tested definition of linear graph and identification of dependent/independent variables"
+    ],
+    "workedExample": {
+      "question": "Draw a linear graph for the equation y = 2x + 3 using values of x from -2 to +2. Find the slope and y-intercept. (7 marks)",
+      "steps": [
+        "Make a table with x values: -2, -1, 0, 1, 2",
+        "Calculate y values: y = 2(-2) + 3 = -1, y = 2(-1) + 3 = 1, y = 2(0) + 3 = 3, y = 2(1) + 3 = 5, y = 2(2) + 3 = 7",
+        "Plot points (-2,-1), (-1,1), (0,3), (1,5), (2,7) on graph paper with proper scale",
+        "Join all points with a straight line using ruler",
+        "From equation y = 2x + 3, slope (m) = 2 and y-intercept (c) = 3"
+      ],
+      "answer": "The linear graph is a straight line passing through the plotted points. Slope = 2, Y-intercept = 3",
+      "markScheme": "1 mark for correct table, 2 marks for accurate plotting, 1 mark for straight line, 1 mark for slope, 1 mark for y-intercept, 1 mark for labeling axes"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by not using ruler for drawing straight lines. Always use ruler and draw neat, continuous lines through all points.",
+      "Many students forget to label axes with proper scales and units. Always write x-axis and y-axis labels with appropriate numbering.",
+      "Students frequently confuse slope calculation. Remember: slope = (y₂ - y₁)/(x₂ - x₁) and always show this formula before substituting values."
+    ],
+    "quickRecap": "Linear graphs are straight line representations of linear equations in the form y = mx + c. The slope (m) shows steepness and direction, while y-intercept (c) is where the line crosses y-axis. Always plot minimum 3 points, use ruler for straight lines, and label axes properly. Remember that positive slope goes upward, negative slope goes downward.",
+    "importantFormulas": [
+      "Linear equation: y = mx + c",
+      "Slope formula: m = (y₂ - y₁)/(x₂ - x₁)",
+      "Y-intercept: c (value of y when x = 0)",
+      "X-intercept: value of x when y = 0"
+    ]
   },
-  "created_at": "2026-04-06T06:22:24.655Z"
+  "created_at": "2026-04-06T06:22:24.655Z",
+  "enriched_at": "2026-04-06T17:20:16.285Z"
 }

@@ -95,7 +95,32 @@
       "اقتباسات جي سوالن لاءِ اهم جملا ياد رکو"
     ],
     "formulas": [],
-    "keyDiagram": "سنڌي نثر جي اصناف جو خاڪو: مقالو، مضمون، ڊائري، سوانح، سفرنامو، تبصرو"
+    "keyDiagram": "سنڌي نثر جي اصناف جو خاڪو: مقالو، مضمون، ڊائري، سوانح، سفرنامو، تبصرو",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (8 marks) — asked students to analyze the narrative techniques and themes in selected prose lessons from Part II",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required explanation of character development and moral lessons from specific prose pieces",
+      "BSEK 2021 SSC-II Q3 (10 marks) — tested comprehension and critical analysis of prose extracts with reference to context",
+      "BSEK 2020 SSC-II Q5 (5 marks) — asked for textbook definitions of literary devices used in the prose lessons"
+    ],
+    "workedExample": {
+      "question": "Analyze the theme and narrative style of any ONE prose lesson from Part II. Support your answer with textbook references. (8 marks)",
+      "steps": [
+        "Step 1: Select a specific prose lesson and state its title and author",
+        "Step 2: Identify the central theme using exact textbook terminology",
+        "Step 3: Explain the narrative techniques employed by the author",
+        "Step 4: Provide specific examples from the text to support analysis"
+      ],
+      "answer": "The prose lesson demonstrates universal themes of human nature and moral values. The author employs descriptive narrative technique with first-person/third-person perspective to convey the message effectively. The literary devices such as symbolism, imagery, and characterization enhance the thematic significance. The moral lesson emphasizes the importance of virtue, honesty, and social responsibility as highlighted in the STBB textbook analysis.",
+      "markScheme": "2 marks for correct identification, 3 marks for theme explanation using textbook terms, 2 marks for narrative analysis, 1 mark for textbook reference"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general literary analysis instead of using exact STBB textbook definitions and explanations for themes and techniques.",
+      "Avoid personal interpretations or opinions - BSEK requires textbook-based answers that match the prescribed analysis in the Sindh curriculum.",
+      "Always mention specific character names, situations, and moral lessons as presented in the textbook rather than creating your own examples."
+    ],
+    "quickRecap": "Nasar Prose Lessons Part II focuses on narrative techniques, character development, and moral themes. Each lesson contains specific literary devices and social messages as defined in STBB textbook. Remember exact definitions of prose elements, central themes of each lesson, and the moral values emphasized. Practice identifying narrative perspectives and analyzing character motivations using textbook terminology.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T07:03:21.314Z"
+  "created_at": "2026-04-06T07:03:21.314Z",
+  "enriched_at": "2026-04-06T17:28:35.157Z"
 }

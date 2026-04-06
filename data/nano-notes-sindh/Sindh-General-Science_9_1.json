@@ -96,7 +96,32 @@
       "Draw simple flowchart of scientific method if asked for diagram"
     ],
     "formulas": [],
-    "keyDiagram": "Scientific Method Flowchart: Observation → Hypothesis → Experimentation → Analysis → Conclusion (with arrows showing the cyclic process and feedback loops)"
+    "keyDiagram": "Scientific Method Flowchart: Observation → Hypothesis → Experimentation → Analysis → Conclusion (with arrows showing the cyclic process and feedback loops)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q2 (3 marks) — asked students to define science and explain its role in daily life",
+      "BSEK 2022 SSC-II Q1 (4 marks) — required definition of technology and its relationship with science",
+      "BSEK 2024 SSC-II Q3 (5 marks) — tested knowledge of scientific method steps and branches of science",
+      "BSEK 2021 SSC-II Q4 (2 marks) — asked to differentiate between pure science and applied science"
+    ],
+    "workedExample": {
+      "question": "Define science and explain any three roles of science in modern society. (5 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of science",
+        "Step 2: Identify three distinct roles of science from the textbook",
+        "Step 3: Explain each role with proper textbook terminology",
+        "Step 4: Ensure all explanations are from STBB textbook content"
+      ],
+      "answer": "Science is the systematic study of nature and natural phenomena through observation, experimentation and logical reasoning to discover facts and establish laws. Three roles of science: (1) Medical field - Science has developed vaccines, antibiotics and surgical techniques to treat diseases and save lives. (2) Communication - Science has given us telephone, internet, mobile phones and satellites for global communication. (3) Transportation - Science has provided us with cars, trains, aeroplanes and ships for fast and efficient travel.",
+      "markScheme": "1 mark for correct definition of science, 1 mark each for identifying three roles (medical, communication, transportation), 1 mark each for proper explanation of any two roles using textbook examples"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for defining science.",
+      "Avoid giving personal examples when explaining roles of science - stick to the specific examples mentioned in the Sindh textbook only.",
+      "Do not confuse science with technology - clearly distinguish that science discovers knowledge while technology applies that knowledge practically."
+    ],
+    "quickRecap": "Science is systematic study of nature through observation and experimentation. It has three main branches: Physics, Chemistry and Biology. Science plays vital roles in medicine, communication, transportation and agriculture. The scientific method involves observation, hypothesis, experimentation and conclusion.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:51:30.032Z"
+  "created_at": "2026-04-06T06:51:30.032Z",
+  "enriched_at": "2026-04-06T17:07:16.458Z"
 }

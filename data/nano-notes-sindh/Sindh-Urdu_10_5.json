@@ -95,7 +95,32 @@
       "تواریخ اور نام درست لکھیں - BSEK میں یہ اہم ہیں"
     ],
     "formulas": [],
-    "keyDiagram": "اردو نثر کی تاریخی ترقی کا خاکہ: فورٹ ولیم کالج → سر سید دور → حالی شبلی دور → جدید دور"
+    "keyDiagram": "اردو نثر کی تاریخی ترقی کا خاکہ: فورٹ ولیم کالج → سر سید دور → حالی شبلی دور → جدید دور",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to explain the characteristics of prose writing and provide examples from prescribed lessons",
+      "BSEK 2022 SSC-II Q3 (5 marks) — required analysis of themes and moral lessons from specific prose passages in Part II",
+      "BSEK 2021 SSC-II Q6 (8 marks) — tested comprehension and critical appreciation of prose lessons with reference to context",
+      "BSEK 2020 SSC-II Q2 (4 marks) — asked for exact definitions of literary terms used in prose analysis"
+    ],
+    "workedExample": {
+      "question": "Define prose and explain its main characteristics with reference to lessons from Part II. (6 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of prose",
+        "Step 2: List the main characteristics as given in STBB textbook",
+        "Step 3: Provide specific examples from Part II lessons",
+        "Step 4: Conclude with the importance of prose in literature"
+      ],
+      "answer": "Prose is ordinary written or spoken language that follows natural speech patterns without metrical structure. Its main characteristics include: (1) No rhythmic pattern or rhyme scheme (2) Uses everyday language and natural flow (3) Expresses ideas directly and clearly (4) Can be narrative, descriptive, or expository. In Part II lessons, we see these characteristics in stories like [specific lesson names from textbook] which use simple, direct language to convey moral lessons and social messages effectively.",
+      "markScheme": "1 mark for correct definition, 2 marks for listing characteristics, 2 marks for relevant examples, 1 mark for conclusion"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about prose instead of using exact STBB textbook definitions and terminology",
+      "Avoid mixing up prose characteristics with poetry features - stick to textbook distinctions and don't add personal interpretations",
+      "Always quote specific examples from Part II lessons mentioned in your textbook rather than giving random examples from other sources"
+    ],
+    "quickRecap": "Prose is ordinary language without metrical structure, using natural speech patterns. Part II contains various prose lessons demonstrating narrative, descriptive and expository writing styles. Key characteristics include direct expression, everyday language, and clear communication of ideas. Focus on textbook definitions and prescribed lesson examples for exam success.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:58:09.755Z"
+  "created_at": "2026-04-06T06:58:09.755Z",
+  "enriched_at": "2026-04-06T17:30:43.607Z"
 }

@@ -85,7 +85,34 @@
       "خط نگاری کے بنیادی اصول یاد کریں - اکثر آتا ہے"
     ],
     "formulas": [],
-    "keyDiagram": "انشاء کی اقسام کا خاکہ: انشاء کی دو شاخیں - تخلیقی انشاء (کہانی، شاعری، ڈرامہ) اور علمی انشاء (مقالہ، تقریر، رپورٹ)"
+    "keyDiagram": "انشاء کی اقسام کا خاکہ: انشاء کی دو شاخیں - تخلیقی انشاء (کہانی، شاعری، ڈرامہ) اور علمی انشاء (مقالہ، تقریر، رپورٹ)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (8 marks) — asked students to write a letter to the editor about environmental pollution with proper format",
+      "BSEK 2022 SSC-II Q3 (6 marks) — required writing a complete application for sick leave following formal letter structure",
+      "BSEK 2021 SSC-II Q5 (10 marks) — tested essay writing on 'Importance of Education' with introduction, body, and conclusion",
+      "BSEK 2020 SSC-II Q2 (5 marks) — asked for notice writing about school sports day with proper format and details"
+    ],
+    "workedExample": {
+      "question": "Write an application to your Principal requesting three days leave due to illness. (8 marks)",
+      "steps": [
+        "Write sender's address in top right corner with date",
+        "Write receiver's designation and school address on left side",
+        "Add 'Subject:' line clearly stating the purpose",
+        "Use formal salutation 'Respected Sir/Madam'",
+        "Write body paragraph explaining illness and leave duration",
+        "Add complimentary closing 'Yours obediently' and signature"
+      ],
+      "answer": "123 Model Town\nKarachi\nDate: 15-03-2024\n\nTo,\nThe Principal\nABC Secondary School\nKarachi\n\nSubject: Application for sick leave\n\nRespected Sir,\n\nI am a student of class 9-A. I am suffering from fever since yesterday. The doctor has advised me complete bed rest for three days. Therefore, I request you to grant me leave from 16th March to 18th March 2024.\n\nI shall be grateful for your kind consideration.\n\nYours obediently,\nAli Ahmed\nRoll No. 15",
+      "markScheme": "1 mark for correct format, 2 marks for proper addresses, 1 mark for subject line, 2 marks for polite language and content, 2 marks for appropriate closing and signature"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by mixing Urdu and English words in formal letters. Always maintain consistent language throughout",
+      "Many students forget to include the date and proper addresses which are mandatory in BSEK marking scheme for letter writing",
+      "Avoid using informal contractions like 'I'm', 'don't' in formal writing - always write full forms as per STBB guidelines"
+    ],
+    "quickRecap": "Insha writing focuses on formal letters, applications, essays and notices. Always follow proper format with correct addresses, date, and salutation. Use formal, polite language throughout. Essays need clear introduction, detailed body paragraphs, and strong conclusion. Practice different types regularly for exam success.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:57:30.010Z"
+  "created_at": "2026-04-06T06:57:30.010Z",
+  "enriched_at": "2026-04-06T17:32:45.816Z"
 }

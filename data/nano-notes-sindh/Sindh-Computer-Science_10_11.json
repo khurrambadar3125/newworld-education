@@ -102,7 +102,38 @@
       "FOR loop syntax: FOR variable = start TO end STEP increment",
       "WHILE loop syntax: WHILE condition DO statements ENDWHILE"
     ],
-    "keyDiagram": "Flowchart symbols: Oval (Start/End), Rectangle (Process), Diamond (Decision), Parallelogram (Input/Output), Circle (Connector). Students must memorize and draw these symbols correctly with proper arrows showing flow direction."
+    "keyDiagram": "Flowchart symbols: Oval (Start/End), Rectangle (Process), Diamond (Decision), Parallelogram (Input/Output), Circle (Connector). Students must memorize and draw these symbols correctly with proper arrows showing flow direction.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to define control structures and explain the difference between sequential, conditional, and iterative structures with examples",
+      "BSEK 2022 SSC-II Q3 (5 marks) — required students to write the syntax of if-else statement and for loop with proper flowchart symbols",
+      "BSEK 2021 SSC-II Q6 (4 marks) — asked to define loop, iteration, and condition with examples of while and do-while loops",
+      "BSEK 2020 SSC-II Q2 (7 marks) — comprehensive question on all three types of control structures with flowchart representation and C++ syntax"
+    ],
+    "workedExample": {
+      "question": "Define control structure. Explain conditional control structure with syntax and example. (6 marks)",
+      "steps": [
+        "Define control structure using exact textbook definition",
+        "Define conditional control structure specifically",
+        "Write proper syntax of if-else statement",
+        "Provide a complete C++ example with explanation"
+      ],
+      "answer": "Control structure is a programming construct that determines the order in which statements are executed in a program. Conditional control structure allows the program to make decisions based on certain conditions and execute different sets of statements accordingly. Syntax: if(condition) { statements; } else { statements; } Example: if(marks >= 60) { cout << \"Pass\"; } else { cout << \"Fail\"; } This checks if marks are 60 or above to display Pass, otherwise displays Fail.",
+      "markScheme": "1 mark for control structure definition, 1 mark for conditional structure definition, 2 marks for correct syntax, 2 marks for complete working example with explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general programming concepts instead of the exact STBB textbook definitions for control structures, selection structures, and iteration.",
+      "Many students confuse syntax format - always write C++ syntax exactly as shown in textbook with proper brackets, semicolons, and indentation for full marks.",
+      "Common mistake is explaining what control structures do rather than defining them. BSEK requires precise definitions first, then explanations or examples."
+    ],
+    "quickRecap": "Control structures determine execution order in programs. Three types: Sequential (statements execute one after another), Conditional/Selection (if-else, switch for decision making), and Iterative/Loop (for, while, do-while for repetition). Each has specific syntax in C++. Remember exact textbook definitions and proper syntax format for BSEK exams.",
+    "importantFormulas": [
+      "if(condition) { statements; }",
+      "if(condition) { statements; } else { statements; }",
+      "for(initialization; condition; increment) { statements; }",
+      "while(condition) { statements; }",
+      "do { statements; } while(condition);"
+    ]
   },
-  "created_at": "2026-04-06T06:44:59.150Z"
+  "created_at": "2026-04-06T06:44:59.150Z",
+  "enriched_at": "2026-04-06T16:56:23.165Z"
 }

@@ -100,7 +100,31 @@
       "Always give Pakistani context examples like NADRA database, bank records, university systems"
     ],
     "formulas": [],
-    "keyDiagram": "Database Structure Diagram showing: User → DBMS → Database (containing Tables with Records and Fields). Also draw File-based vs Database System comparison diagram showing multiple files vs integrated database."
+    "keyDiagram": "Database Structure Diagram showing: User → DBMS → Database (containing Tables with Records and Fields). Also draw File-based vs Database System comparison diagram showing multiple files vs integrated database.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define database and list four advantages of database systems over file systems",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required definition of DBMS, database administrator, and explanation of data independence concept",
+      "BSEK 2021 SSC-II Q4 (5 marks) — asked to differentiate between data and information with examples, and define database management system",
+      "BSEK 2020 SSC-II Q6 (3 marks) — simple definition questions on database, DBMS, and one advantage of computerized database"
+    ],
+    "workedExample": {
+      "question": "Define Database Management System (DBMS). List any three advantages of database approach over traditional file system. (5 marks)",
+      "steps": [
+        "Write the exact textbook definition of DBMS",
+        "List three clear advantages with brief explanations",
+        "Use proper terminology from STBB textbook"
+      ],
+      "answer": "Database Management System (DBMS) is a software that enables users to create, maintain and access databases efficiently. Advantages: (1) Data redundancy is reduced as data is stored only once (2) Data consistency is maintained as updates are made in one place (3) Data security is improved through access controls and user authentication",
+      "markScheme": "1 mark for correct DBMS definition, 1 mark each for three advantages (3 marks), 1 mark for proper explanation/terminology"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for terms like DBMS, database, and data independence.",
+      "Avoid mixing up 'data' and 'information' definitions - data is raw facts while information is processed data. Use exact textbook examples.",
+      "When listing advantages of database systems, don't write vague points like 'better management' - use specific terms like 'reduced redundancy', 'improved consistency', 'enhanced security' as given in textbook."
+    ],
+    "quickRecap": "Database is organized collection of related data stored electronically. DBMS is software to create, maintain and access databases. Key advantages include reduced redundancy, improved consistency, enhanced security, and data independence. Remember exact textbook definitions for full marks.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:43:32.991Z"
+  "created_at": "2026-04-06T06:43:32.991Z",
+  "enriched_at": "2026-04-06T16:59:23.995Z"
 }

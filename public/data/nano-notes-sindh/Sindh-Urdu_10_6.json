@@ -100,7 +100,32 @@
       "شعری اصطلاحات کی exact definitions حفظ کریں"
     ],
     "formulas": [],
-    "keyDiagram": "نظم کی شجرہ بندی — پابند نظم، آزاد نظم، اور نثری نظم کی تقسیم کا خاکہ جو امتحان میں اکثر مانگا جاتا ہے"
+    "keyDiagram": "نظم کی شجرہ بندی — پابند نظم، آزاد نظم، اور نثری نظم کی تقسیم کا خاکہ جو امتحان میں اکثر مانگا جاتا ہے",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to define Free Verse and explain its characteristics with examples from prescribed poems",
+      "BSEK 2022 SSC-II Q3 (4 marks) — required explanation of difference between Narrative Poetry and Lyric Poetry with textbook definitions",
+      "BSEK 2021 SSC-II Q5 (5 marks) — tested knowledge of Sonnet structure and required students to identify rhyme scheme patterns",
+      "BSEK 2020 SSC-II Q2 (3 marks) — asked for exact definition of Epic Poetry and its main characteristics"
+    ],
+    "workedExample": {
+      "question": "Define Sonnet and explain its two main types with their rhyme schemes. (6 marks)",
+      "steps": [
+        "Write the exact textbook definition of Sonnet",
+        "Name the two main types clearly",
+        "Explain Petrarchan Sonnet structure and rhyme scheme",
+        "Explain Shakespearean Sonnet structure and rhyme scheme"
+      ],
+      "answer": "A Sonnet is a lyrical poem consisting of fourteen lines written in iambic pentameter with a specific rhyme scheme. The two main types are: (1) Petrarchan/Italian Sonnet: divided into octave (8 lines) with rhyme scheme ABBAABBA and sestet (6 lines) with rhyme scheme CDECDE or CDCDCD. (2) Shakespearean/English Sonnet: consists of three quatrains and a final couplet with rhyme scheme ABABCDCDEFEFGG.",
+      "markScheme": "1 mark for correct definition, 1 mark for naming both types, 2 marks for Petrarchan explanation, 2 marks for Shakespearean explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about poetry instead of textbook-exact definitions. Always use the STBB textbook phrasing for definitions.",
+      "Many students confuse Free Verse with Blank Verse - remember Free Verse has no regular meter or rhyme while Blank Verse has iambic pentameter but no rhyme.",
+      "When explaining rhyme schemes, students must write the exact pattern (ABAB, AABB etc.) and not just describe it as 'alternate' or 'consecutive' rhyming."
+    ],
+    "quickRecap": "Nazm includes various poetic forms: Free Verse (no meter/rhyme), Blank Verse (iambic pentameter, no rhyme), Sonnet (14 lines, specific rhyme schemes), Epic (long narrative), Lyric (personal emotions), Ballad (narrative song-like), and Ode (elaborate lyrical). Remember exact rhyme scheme patterns and structural requirements for each form.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:58:46.218Z"
+  "created_at": "2026-04-06T06:58:46.218Z",
+  "enriched_at": "2026-04-06T17:30:59.070Z"
 }

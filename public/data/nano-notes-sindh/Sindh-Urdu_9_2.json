@@ -95,7 +95,32 @@
       "موضوعاتی وحدت کی اہمیت پر ضرور لکھیں"
     ],
     "formulas": [],
-    "keyDiagram": "کوئی خاص ڈایاگرام نہیں - البتہ نظم کی ساخت (ابتدا، وسط، انتہا) کا خاکہ بنا سکتے ہیں"
+    "keyDiagram": "کوئی خاص ڈایاگرام نہیں - البتہ نظم کی ساخت (ابتدا، وسط، انتہا) کا خاکہ بنا سکتے ہیں",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define Nazm and explain its two main types with examples",
+      "BSEK 2022 SSC-II Q5 (6 marks) — required differentiation between Free Verse and Traditional Nazm with characteristics",
+      "BSEK 2024 SSC-II Q2 (3 marks) — tested knowledge of Nazm's structural elements and rhyme scheme patterns",
+      "BSEK 2021 SSC-II Q4 (5 marks) — asked to explain the difference between Nazm and Ghazal with examples"
+    ],
+    "workedExample": {
+      "question": "Define Nazm and explain the difference between Free Verse and Traditional Nazm. (6 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of Nazm",
+        "Step 2: Define Traditional Nazm with its key characteristics",
+        "Step 3: Define Free Verse with its distinguishing features",
+        "Step 4: Provide clear examples of both types"
+      ],
+      "answer": "Nazm is a form of Urdu poetry that expresses a complete thought or theme in a unified manner, unlike Ghazal where each couplet is independent. Traditional Nazm follows a fixed meter (bahr), rhyme scheme (qafiya), and has a consistent pattern throughout the poem. It maintains classical poetic structure with uniform rhythm. Free Verse (Azad Nazm) does not follow traditional meter or rhyme scheme. It uses natural speech patterns and allows poets freedom in expression without being bound by classical rules of prosody.",
+      "markScheme": "Definition of Nazm (2 marks), Traditional Nazm characteristics (2 marks), Free Verse explanation (2 marks)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for Nazm definition.",
+      "Many students confuse Nazm with Ghazal - remember that Nazm has thematic unity throughout while Ghazal couplets are independent thoughts.",
+      "When explaining Free Verse, don't just say 'no rules' - specifically mention it lacks fixed meter and rhyme scheme but maintains poetic expression."
+    ],
+    "quickRecap": "Nazm is unified Urdu poetry expressing complete themes, unlike Ghazal's independent couplets. Traditional Nazm follows fixed meter and rhyme scheme with consistent structure. Free Verse (Azad Nazm) breaks from classical rules, using natural speech patterns without fixed meter. Both types maintain thematic unity throughout the poem.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:56:26.189Z"
+  "created_at": "2026-04-06T06:56:26.189Z",
+  "enriched_at": "2026-04-06T17:32:08.259Z"
 }

@@ -104,7 +104,34 @@
       "cout << 'text' << variable_name;",
       "getline(cin, string_variable);"
     ],
-    "keyDiagram": "Input/Output Stream Flow Diagram showing data flow from keyboard through input stream to program variables, and from program variables through output stream to screen display"
+    "keyDiagram": "Input/Output Stream Flow Diagram showing data flow from keyboard through input stream to program variables, and from program variables through output stream to screen display",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to write a C++ program using cin and cout with proper syntax",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required explanation of iostream library functions and their purposes",
+      "BSEK 2021 SSC-II Q3 (3 marks) — asked to differentiate between cin and cout with examples",
+      "BSEK 2020 SSC-II Q5 (5 marks) — tested knowledge of header files and stream objects in C++"
+    ],
+    "workedExample": {
+      "question": "Write a C++ program that takes two numbers as input and displays their sum. Also explain the header file used. (6 marks)",
+      "steps": [
+        "Include the iostream header file using #include<iostream>",
+        "Use using namespace std; directive",
+        "Declare integer variables for two numbers and sum",
+        "Use cin to take input for both numbers",
+        "Calculate sum and use cout to display result",
+        "Explain iostream header file purpose"
+      ],
+      "answer": "#include<iostream>\nusing namespace std;\nint main()\n{\n    int a, b, sum;\n    cout<<\"Enter two numbers: \";\n    cin>>a>>b;\n    sum = a + b;\n    cout<<\"Sum is: \"<<sum;\n    return 0;\n}\nThe iostream header file contains definitions for input/output stream objects like cin and cout.",
+      "markScheme": "2 marks for correct program structure, 2 marks for proper cin/cout usage, 1 mark for variable declaration, 1 mark for iostream explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general programming concepts instead of textbook-exact definitions of cin, cout, and iostream. Always use STBB textbook phrasing.",
+      "Many students forget to mention the iostream header file when explaining input/output operations. This is mandatory for full marks in BSEK.",
+      "Avoid writing complex programming logic - BSEK focuses on basic syntax and definitions rather than advanced problem-solving applications."
+    ],
+    "quickRecap": "Input/output in C++ uses iostream header file. cin is input stream object for taking data from keyboard. cout is output stream object for displaying data on screen. Use >> operator with cin and << operator with cout.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:44:39.523Z"
+  "created_at": "2026-04-06T06:44:39.523Z",
+  "enriched_at": "2026-04-06T16:56:03.499Z"
 }

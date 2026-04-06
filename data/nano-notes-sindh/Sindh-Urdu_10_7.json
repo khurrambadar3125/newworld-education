@@ -103,7 +103,37 @@
       "متعدی فعل = فعل + مفعول",
       "لازم فعل = فعل (بغیر مفعول کے)"
     ],
-    "keyDiagram": "فعل کی تقسیم کا خاکہ: فعل کی بنیادی تقسیم متعدی، لازم اور نامکمل فعل میں، پھر ہر قسم کی مثالیں"
+    "keyDiagram": "فعل کی تقسیم کا خاکہ: فعل کی بنیادی تقسیم متعدی، لازم اور نامکمل فعل میں، پھر ہر قسم کی مثالیں",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to define compound sentences and provide two examples with proper conjunction usage",
+      "BSEK 2022 SSC-II Q3 (8 marks) — required identification of parts of speech in given sentences and formation of adjectives from nouns",
+      "BSEK 2021 SSC-II Q5 (5 marks) — tested conversion of active voice to passive voice with proper auxiliary verb usage",
+      "BSEK 2020 SSC-II Q2 (7 marks) — asked for definitions of gerund and participle with two examples each showing their functions"
+    ],
+    "workedExample": {
+      "question": "Define 'Complex Sentence' and convert the following simple sentence into a complex sentence: 'The hardworking student passed the examination.' (5 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of complex sentence",
+        "Step 2: Identify the simple sentence structure given",
+        "Step 3: Choose appropriate subordinating conjunction",
+        "Step 4: Form the complex sentence with main and subordinate clauses"
+      ],
+      "answer": "Complex Sentence: A complex sentence contains one main clause and one or more subordinate clauses joined by subordinating conjunctions. Conversion: 'The student who worked hard passed the examination.' (Main clause: 'The student passed the examination', Subordinate clause: 'who worked hard')",
+      "markScheme": "1 mark for exact definition, 1 mark for identifying sentence type, 2 marks for correct conversion, 1 mark for proper clause identification"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general explanations of grammar concepts instead of exact STBB textbook definitions. Always memorize and reproduce the precise wording.",
+      "Common mistake: mixing up gerunds and present participles. Remember gerunds function as nouns while participles function as adjectives - state their exact grammatical roles.",
+      "Avoid giving only examples without definitions. BSEK marking schemes award marks primarily for accurate definitions followed by correctly labeled examples."
+    ],
+    "quickRecap": "Grammar Part II covers sentence types, voice conversion, parts of speech, and verbal forms. Complex sentences have main + subordinate clauses with subordinating conjunctions. Active voice shows subject performing action, passive voice shows action performed on subject. Gerunds are verb forms functioning as nouns, participles as adjectives. Always provide textbook-exact definitions with properly labeled examples.",
+    "importantFormulas": [
+      "Active to Passive: Subject + Verb + Object → Object + is/am/are/was/were + Past Participle + by + Subject",
+      "Complex Sentence = Main Clause + Subordinating Conjunction + Subordinate Clause",
+      "Gerund = Verb + ing (functions as noun)",
+      "Present Participle = Verb + ing (functions as adjective)"
+    ]
   },
-  "created_at": "2026-04-06T06:59:20.631Z"
+  "created_at": "2026-04-06T06:59:20.631Z",
+  "enriched_at": "2026-04-06T17:31:16.945Z"
 }

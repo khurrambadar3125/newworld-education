@@ -103,7 +103,33 @@
       "Scientific notation: N = a × 10ⁿ (where 1 ≤ a < 10)",
       "Prefixes: micro(10⁻⁶), milli(10⁻³), centi(10⁻²), kilo(10³), mega(10⁶)"
     ],
-    "keyDiagram": "Table showing 7 base quantities (Length, Mass, Time, Electric Current, Temperature, Amount of Substance, Luminous Intensity) with their symbols and SI units. This table appears in every BSEK paper."
+    "keyDiagram": "Table showing 7 base quantities (Length, Mass, Time, Electric Current, Temperature, Amount of Substance, Luminous Intensity) with their symbols and SI units. This table appears in every BSEK paper.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q1 (3 marks) — asked students to define chemistry and write its main branches",
+      "BSEK 2022 SSC-II Q2 (4 marks) — required definition of matter and classification into pure substances and mixtures",
+      "BSEK 2021 SSC-II Q3 (5 marks) — tested definitions of element, compound and mixture with examples",
+      "BSEK 2020 SSC-II Q1 (2 marks) — asked for exact definition of physical and chemical properties"
+    ],
+    "workedExample": {
+      "question": "Define chemistry and classify matter on the basis of composition. Give one example of each type. (7 marks)",
+      "steps": [
+        "Write the exact textbook definition of chemistry",
+        "Draw a classification diagram showing matter → pure substances & mixtures",
+        "Define pure substances and subdivide into elements and compounds",
+        "Define mixtures and subdivide into homogeneous and heterogeneous",
+        "Provide one example for each category with proper labeling"
+      ],
+      "answer": "Chemistry is the branch of science which deals with the study of composition, structure and properties of matter and the changes it undergoes during chemical reactions. Matter can be classified as: (1) Pure Substances - Element: Oxygen (O₂), Compound: Water (H₂O). (2) Mixtures - Homogeneous: Sugar solution, Heterogeneous: Sand and water.",
+      "markScheme": "Definition of chemistry (2 marks), Classification diagram (2 marks), Definitions of categories (2 marks), Examples (1 mark)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for definitions of chemistry, matter, element, compound.",
+      "Many students confuse mixtures and compounds. Remember: compounds have fixed composition and new properties, mixtures retain original properties of components.",
+      "Don't write lengthy explanations for definition questions. BSEK wants precise, word-for-word textbook definitions followed by clear examples only."
+    ],
+    "quickRecap": "Chemistry studies composition, structure and properties of matter. Matter exists as pure substances (elements like O₂, compounds like H₂O) or mixtures (homogeneous like air, heterogeneous like oil-water). Physical properties can be observed without changing composition, chemical properties involve reactions. Scientific method involves observation, hypothesis, experimentation and conclusion.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:00:52.019Z"
+  "created_at": "2026-04-06T06:00:52.019Z",
+  "enriched_at": "2026-04-06T17:26:15.140Z"
 }

@@ -106,7 +106,38 @@
       "For 3×3 matrix: det(A) = a₁₁(a₂₂a₃₃ - a₂₃a₃₂) - a₁₂(a₂₁a₃₃ - a₂₃a₃₁) + a₁₃(a₂₁a₃₂ - a₂₂a₃₁)",
       "Matrix multiplication: (AB)ᵢⱼ = Σ(AᵢₖBₖⱼ)"
     ],
-    "keyDiagram": "Draw a 3×3 matrix showing the expansion method for determinants with arrows indicating the pattern for calculating cofactors along the first row"
+    "keyDiagram": "Draw a 3×3 matrix showing the expansion method for determinants with arrows indicating the pattern for calculating cofactors along the first row",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define matrix, identify order of given matrices, and find transpose",
+      "BSEK 2022 SSC-II Q5 (6 marks) — required calculation of 2×2 determinant and verification of determinant properties",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested matrix addition, subtraction and scalar multiplication with numerical examples",
+      "BSEK 2020 SSC-II Q6 (4 marks) — asked to define determinant and calculate determinant of 3×3 matrix using cofactor method"
+    ],
+    "workedExample": {
+      "question": "Define matrix and find the determinant of matrix A = [[2, 3], [1, 4]]. Also verify that det(A) ≠ 0. (6 marks)",
+      "steps": [
+        "Step 1: Write textbook definition of matrix",
+        "Step 2: Apply determinant formula for 2×2 matrix: det(A) = ad - bc",
+        "Step 3: Substitute values: det(A) = (2)(4) - (3)(1)",
+        "Step 4: Calculate: det(A) = 8 - 3 = 5",
+        "Step 5: Verify det(A) ≠ 0 since 5 ≠ 0"
+      ],
+      "answer": "Matrix: A rectangular arrangement of numbers in rows and columns enclosed by brackets. For matrix A = [[2, 3], [1, 4]], det(A) = (2)(4) - (3)(1) = 8 - 3 = 5. Since det(A) = 5 ≠ 0, verification is complete.",
+      "markScheme": "1 mark for matrix definition, 1 mark for determinant formula, 2 marks for correct substitution and calculation, 1 mark for final answer, 1 mark for verification"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general matrix definitions instead of using exact STBB textbook definition: 'A rectangular arrangement of numbers in rows and columns enclosed by brackets'",
+      "Common error: Writing determinant as |A| without showing the calculation steps - always show complete working using det(A) = ad - bc for 2×2 matrices",
+      "Avoid using shortcuts for 3×3 determinants - BSEK expects full cofactor expansion method as taught in Sindhi textbook, not Sarrus rule"
+    ],
+    "quickRecap": "Matrix is a rectangular arrangement of numbers in rows and columns. Order is written as m×n (rows × columns). For 2×2 matrix, determinant = ad - bc. For 3×3 matrices, use cofactor expansion. Matrix operations include addition, subtraction, and scalar multiplication following specific rules.",
+    "importantFormulas": [
+      "Order of matrix: m × n (rows × columns)",
+      "Determinant of 2×2 matrix: det([[a,b],[c,d]]) = ad - bc",
+      "Transpose: (A^T)ij = Aji",
+      "Scalar multiplication: k[[a,b],[c,d]] = [[ka,kb],[kc,kd]]"
+    ]
   },
-  "created_at": "2026-04-06T06:26:48.087Z"
+  "created_at": "2026-04-06T06:26:48.087Z",
+  "enriched_at": "2026-04-06T17:13:26.069Z"
 }

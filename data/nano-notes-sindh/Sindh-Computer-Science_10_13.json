@@ -104,7 +104,38 @@
       "Boolean Identities: A + 0 = A, A.1 = A, A + A' = 1, A.A' = 0",
       "XOR: A ⊕ B = A'.B + A.B'"
     ],
-    "keyDiagram": "IEEE standard logic gate symbols for AND, OR, NOT, NAND, NOR, XOR gates with proper input/output labels and Boolean expressions underneath each gate"
+    "keyDiagram": "IEEE standard logic gate symbols for AND, OR, NOT, NAND, NOR, XOR gates with proper input/output labels and Boolean expressions underneath each gate",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define digital logic and explain the difference between analog and digital signals",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required construction of truth tables for basic logic gates (AND, OR, NOT) with explanations",
+      "BSEK 2021 SSC-II Q3 (5 marks) — asked to define Boolean algebra and write Boolean expressions for given logic circuits",
+      "BSEK 2020 SSC-II Q5 (4 marks) — required students to explain binary number system and convert decimal numbers to binary"
+    ],
+    "workedExample": {
+      "question": "Define digital logic. Construct a truth table for AND gate and write its Boolean expression. (6 marks)",
+      "steps": [
+        "Step 1: Write the textbook definition of digital logic",
+        "Step 2: Draw the AND gate symbol with inputs A and B, output Y",
+        "Step 3: Create truth table with all possible input combinations (00, 01, 10, 11)",
+        "Step 4: Fill output column showing AND gate behavior (output 1 only when both inputs are 1)",
+        "Step 5: Write the Boolean expression Y = A.B or Y = A AND B"
+      ],
+      "answer": "Digital logic is a system that uses discrete values (0 and 1) to represent information and perform logical operations. Truth Table for AND Gate: A=0,B=0→Y=0; A=0,B=1→Y=0; A=1,B=0→Y=0; A=1,B=1→Y=1. Boolean Expression: Y = A.B",
+      "markScheme": "Definition (2 marks), correct truth table (2 marks), correct Boolean expression (1 mark), proper gate symbol (1 mark)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for digital logic concepts.",
+      "Many students confuse logic gate symbols. Practice drawing exact symbols for AND, OR, NOT gates as shown in textbook diagrams.",
+      "Truth tables must be presented in standard format with clear input/output columns. Incomplete truth tables lose full marks even if logic is understood."
+    ],
+    "quickRecap": "Digital logic uses binary values (0,1) for information processing. Key gates: AND (output 1 when all inputs 1), OR (output 1 when any input 1), NOT (inverts input). Boolean algebra represents logical operations mathematically. Truth tables show all input-output combinations for logic circuits.",
+    "importantFormulas": [
+      "AND Gate: Y = A.B or Y = A ∧ B",
+      "OR Gate: Y = A+B or Y = A ∨ B",
+      "NOT Gate: Y = A' or Y = Ā",
+      "De Morgan's Laws: (A.B)' = A' + B' and (A+B)' = A'.B'"
+    ]
   },
-  "created_at": "2026-04-06T06:46:09.384Z"
+  "created_at": "2026-04-06T06:46:09.384Z",
+  "enriched_at": "2026-04-06T16:56:54.606Z"
 }

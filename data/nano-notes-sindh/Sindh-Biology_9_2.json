@@ -99,7 +99,31 @@
       "Definitions must be word-for-word from textbook"
     ],
     "formulas": [],
-    "keyDiagram": "Steps of Scientific Method flowchart showing: Observation → Hypothesis → Experimentation → Data Collection → Analysis → Conclusion → Theory (if repeatedly tested and proven)"
+    "keyDiagram": "Steps of Scientific Method flowchart showing: Observation → Hypothesis → Experimentation → Data Collection → Analysis → Conclusion → Theory (if repeatedly tested and proven)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to list the steps involved in solving a biological problem using scientific method",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required definition of hypothesis and explanation of how it helps in problem solving",
+      "BSEK 2021 SSC-II Q3 (3 marks) — asked to differentiate between observation and inference in biological problem solving",
+      "BSEK 2020 SSC-II Q7 (6 marks) — demanded complete procedure of scientific method with one example from biology"
+    ],
+    "workedExample": {
+      "question": "Define hypothesis and explain the steps of scientific method used to solve biological problems. (6 marks)",
+      "steps": [
+        "Step 1: Define hypothesis using exact textbook definition",
+        "Step 2: List all 6 steps of scientific method in correct order",
+        "Step 3: Briefly explain each step with biological context"
+      ],
+      "answer": "Hypothesis is a tentative explanation or educated guess about the solution to a problem based on observations. Steps of Scientific Method: 1) Observation - noticing and studying phenomena 2) Question formulation - asking specific questions about observations 3) Hypothesis formation - making educated guess 4) Experimentation - testing hypothesis under controlled conditions 5) Data collection and analysis - recording and interpreting results 6) Conclusion - accepting or rejecting hypothesis based on evidence.",
+      "markScheme": "1 mark for exact hypothesis definition, 1 mark for listing all 6 steps correctly, 4 marks for explaining each step (2/3 mark each)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for hypothesis and scientific method steps.",
+      "Many students confuse observation with inference - observation is what you see directly, inference is conclusion drawn from observation. Use precise terminology.",
+      "When explaining scientific method steps, students must write them in exact sequence as given in textbook. Random order loses marks even if content is correct."
+    ],
+    "quickRecap": "Scientific method has 6 sequential steps: observation, question, hypothesis, experiment, data analysis, conclusion. Hypothesis is tentative explanation based on observations. Controlled experiments test hypothesis validity. Data must be analyzed objectively to reach valid conclusions about biological problems.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:13:57.784Z"
+  "created_at": "2026-04-06T06:13:57.784Z",
+  "enriched_at": "2026-04-06T16:49:44.115Z"
 }

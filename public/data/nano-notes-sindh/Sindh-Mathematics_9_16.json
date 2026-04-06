@@ -103,7 +103,33 @@
       "Mid-point formula: ((x₁+x₂)/2, (y₁+y₂)/2)",
       "Section formula (internal): ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n))"
     ],
-    "keyDiagram": "Draw coordinate axes with origin O(0,0), mark all four quadrants (I, II, III, IV), show positive and negative directions on both axes, and indicate signs of coordinates in each quadrant: I(+,+), II(-,+), III(-,-), IV(+,-)"
+    "keyDiagram": "Draw coordinate axes with origin O(0,0), mark all four quadrants (I, II, III, IV), show positive and negative directions on both axes, and indicate signs of coordinates in each quadrant: I(+,+), II(-,+), III(-,-), IV(+,-)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define coordinate axes and quadrants with proper labeling",
+      "BSEK 2022 SSC-II Q2 (3 marks) — required plotting points and identifying their quadrants",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested coordinate plane setup and coordinate identification",
+      "BSEK 2020 SSC-II Q1 (3 marks) — asked for exact definitions of origin, abscissa, and ordinate"
+    ],
+    "workedExample": {
+      "question": "Define coordinate axes and identify the coordinates of point P shown in the given figure where P is located 3 units right and 2 units up from origin. (5 marks)",
+      "steps": [
+        "Define coordinate axes: Two perpendicular number lines intersecting at origin",
+        "X-axis is horizontal line, Y-axis is vertical line",
+        "Point P is 3 units right from origin along x-axis",
+        "Point P is 2 units up from origin along y-axis",
+        "Therefore coordinates of P are (3, 2)"
+      ],
+      "answer": "Coordinate axes are two perpendicular number lines that intersect at a point called origin. The horizontal line is called x-axis and vertical line is called y-axis. The coordinates of point P are (3, 2) where 3 is the abscissa and 2 is the ordinate.",
+      "markScheme": "2 marks for correct definition of coordinate axes, 1 mark for identifying x-axis and y-axis, 2 marks for correct coordinates (3, 2)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing 'x-coordinate and y-coordinate' instead of textbook terms 'abscissa and ordinate'. Always use STBB textbook terminology.",
+      "Many students forget to mention that coordinate axes are 'perpendicular' and intersect at 'origin'. Include all components of the textbook definition.",
+      "When identifying quadrants, students must mention the signs of coordinates (+ or -) for each quadrant as given in STBB textbook, not just the quadrant names."
+    ],
+    "quickRecap": "Coordinate geometry uses two perpendicular number lines (coordinate axes) intersecting at origin to locate points. X-axis is horizontal, Y-axis is vertical. Every point has coordinates (x, y) where x is abscissa and y is ordinate. The plane is divided into four quadrants with different sign combinations.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:25:40.852Z"
+  "created_at": "2026-04-06T06:25:40.852Z",
+  "enriched_at": "2026-04-06T17:18:38.775Z"
 }

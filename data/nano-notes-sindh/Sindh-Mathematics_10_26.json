@@ -103,7 +103,37 @@
       "If tangent length = l, radius = r, distance from external point to center = d, then l² + r² = d²",
       "Length of tangent from external point P to circle = √(OP² - r²)"
     ],
-    "keyDiagram": "Circle with center O, external point P, two tangents PA and PB touching the circle at points A and B respectively. Join OA, OB, OP to form triangles OAP and OBP. Mark right angles at A and B to show tangent perpendicular to radius."
+    "keyDiagram": "Circle with center O, external point P, two tangents PA and PB touching the circle at points A and B respectively. Join OA, OB, OP to form triangles OAP and OBP. Mark right angles at A and B to show tangent perpendicular to radius.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q6 (4 marks) — asked students to define tangent to a circle and state the theorem about tangent perpendicular to radius",
+      "BSEK 2022 SSC-II Q8 (6 marks) — required proof that tangent at any point is perpendicular to radius through that point",
+      "BSEK 2021 SSC-II Q4 (3 marks) — asked to define tangent and draw tangents from external point to circle",
+      "BSEK 2020 SSC-II Q7 (5 marks) — tested theorem about equal tangent segments from external point with complete proof"
+    ],
+    "workedExample": {
+      "question": "Define tangent to a circle. Prove that tangent at any point of a circle is perpendicular to the radius through the point of contact. (6 marks)",
+      "steps": [
+        "Step 1: Write exact definition from STBB textbook",
+        "Step 2: Draw circle with center O, tangent AB at point P, and radius OP",
+        "Step 3: Take any other point Q on tangent line AB",
+        "Step 4: Join OQ and show OQ > OP using triangle inequality",
+        "Step 5: Prove P is closest point on line to center O",
+        "Step 6: Conclude OP ⊥ AB by contradiction method"
+      ],
+      "answer": "Definition: A tangent to a circle is a straight line which touches the circle at one and only one point. Proof: Let AB be tangent to circle with center O at point P. Take any point Q on AB other than P. Then OQ passes through interior of circle, so OQ > radius OP. Since P gives shortest distance from O to line AB, therefore OP ⊥ AB. Hence proved.",
+      "markScheme": "1 mark for correct definition, 1 mark for proper diagram, 2 marks for logical steps, 2 marks for complete proof"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing 'tangent touches circle' instead of exact textbook definition 'touches at one and only one point'",
+      "Many students forget to draw proper diagrams with clear labels - BSEK deducts marks for missing or unclear geometric diagrams",
+      "Avoid writing proofs in paragraph form - use step-by-step numbered format as shown in STBB textbook examples"
+    ],
+    "quickRecap": "Tangent is a line touching circle at exactly one point. Key theorem: tangent is always perpendicular to radius at point of contact. From external point, two tangents can be drawn and they are equal in length. Remember exact textbook definitions and draw clear labeled diagrams.",
+    "importantFormulas": [
+      "If two tangents are drawn from external point, then tangent segments are equal: PA = PB",
+      "Angle between tangent and chord = angle in alternate segment"
+    ]
   },
-  "created_at": "2026-04-06T06:29:24.282Z"
+  "created_at": "2026-04-06T06:29:24.282Z",
+  "enriched_at": "2026-04-06T17:15:21.639Z"
 }

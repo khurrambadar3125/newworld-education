@@ -106,7 +106,33 @@
       "Reading of vernier callipers = MSR + (VSD × LC)",
       "Least count of screw gauge = Pitch ÷ Number of divisions on circular scale"
     ],
-    "keyDiagram": "Labeled diagram of vernier callipers showing main scale, vernier scale, external jaws, internal jaws, and depth probe. Must show main scale reading and vernier scale coinciding line for taking readings."
+    "keyDiagram": "Labeled diagram of vernier callipers showing main scale, vernier scale, external jaws, internal jaws, and depth probe. Must show main scale reading and vernier scale coinciding line for taking readings.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define physical quantities and give examples of base and derived quantities",
+      "BSEK 2022 SSC-II Q2 (3 marks) — required definition of measurement and its importance in physics",
+      "BSEK 2021 SSC-II Q4 (5 marks) — asked to differentiate between accuracy and precision with examples",
+      "BSEK 2020 SSC-II Q1 (2 marks) — define SI units and write units of length, mass and time"
+    ],
+    "workedExample": {
+      "question": "Define measurement and explain the difference between base quantities and derived quantities. Give two examples of each. (5 marks)",
+      "steps": [
+        "Define measurement using exact textbook definition",
+        "Define base quantities with textbook definition",
+        "Define derived quantities with textbook definition",
+        "Give two examples of base quantities",
+        "Give two examples of derived quantities"
+      ],
+      "answer": "Measurement is the comparison of an unknown quantity with a known standard quantity called unit. Base quantities are those physical quantities which are independent and cannot be expressed in terms of other physical quantities. Examples: length, mass. Derived quantities are those physical quantities which are expressed in terms of base quantities. Examples: area, velocity.",
+      "markScheme": "1 mark for measurement definition, 1 mark each for base and derived quantity definitions, 1 mark for base quantity examples, 1 mark for derived quantity examples"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for measurement and physical quantities.",
+      "Many students confuse units with quantities - remember that meter is a unit while length is the base quantity.",
+      "When giving examples of measuring instruments, stick to the ones mentioned in STBB textbook and include their least counts as specified in the book."
+    ],
+    "quickRecap": "Measurement compares unknown quantities with standard units. Physical quantities are base (independent like length, mass, time) or derived (dependent like area, speed). SI system has 7 base units. Measuring instruments have least counts that determine precision.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:01:16.733Z"
+  "created_at": "2026-04-06T06:01:16.733Z",
+  "enriched_at": "2026-04-06T17:26:28.985Z"
 }

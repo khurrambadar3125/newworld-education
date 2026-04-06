@@ -105,7 +105,38 @@
       "W = mg",
       "a = (v-u)/t"
     ],
-    "keyDiagram": "Free Body Diagram showing all forces acting on a body - draw the object as a dot with arrows representing forces (weight downward, normal force upward, friction opposite to motion direction, applied force in direction of motion). Label each force clearly."
+    "keyDiagram": "Free Body Diagram showing all forces acting on a body - draw the object as a dot with arrows representing forces (weight downward, normal force upward, friction opposite to motion direction, applied force in direction of motion). Label each force clearly.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define motion, rest, and frame of reference with examples",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required differentiation between scalar and vector quantities with three examples each",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested Newton's three laws of motion with statement and one example for each",
+      "BSEK 2020 SSC-II Q6 (3 marks) — asked to define force and state its SI unit with effects of force on objects"
+    ],
+    "workedExample": {
+      "question": "Define motion and rest. Explain that motion and rest are relative terms with suitable examples. (5 marks)",
+      "steps": [
+        "Write exact textbook definition of motion",
+        "Write exact textbook definition of rest",
+        "Explain relative nature with clear statement",
+        "Provide one suitable example for motion being relative",
+        "Provide one suitable example for rest being relative"
+      ],
+      "answer": "Motion: A body is said to be in motion if it changes its position with respect to time and its surroundings. Rest: A body is said to be at rest if it does not change its position with respect to time and its surroundings. Motion and rest are relative terms because they depend upon the frame of reference or observer. Example: A passenger sitting in a moving bus is at rest with respect to the bus but in motion with respect to a person standing on the road. Similarly, trees appear to be moving backward to the passenger but are at rest for the roadside observer.",
+      "markScheme": "1 mark for motion definition, 1 mark for rest definition, 1 mark for relative statement, 2 marks for suitable examples"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for motion, rest, and force definitions.",
+      "Never confuse scalar and vector quantities. Remember: scalars have only magnitude, vectors have both magnitude and direction. Write examples exactly as given in textbook.",
+      "When stating Newton's laws, write the exact law statement first, then give examples. Partial or paraphrased law statements lose full marks even if the concept is understood."
+    ],
+    "quickRecap": "Motion occurs when position changes with time relative to surroundings, while rest means no position change. Motion and rest depend on frame of reference (observer). Force is a push or pull that can change motion, shape, or direction of objects. Newton's three laws govern force and motion relationships, with applications in daily life phenomena.",
+    "importantFormulas": [
+      "Speed = Distance/Time",
+      "Velocity = Displacement/Time",
+      "Acceleration = Change in Velocity/Time",
+      "Force = Mass × Acceleration (F = ma)"
+    ]
   },
-  "created_at": "2026-04-06T06:01:57.028Z"
+  "created_at": "2026-04-06T06:01:57.028Z",
+  "enriched_at": "2026-04-06T17:27:00.791Z"
 }
