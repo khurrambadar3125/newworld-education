@@ -79,15 +79,27 @@ export default function NanoTeach() {
     return res.json();
   };
 
+  // Record answer across ALL learning loop systems
+  const recordToLoop = (bankId, topicName, correct, score = correct ? 1 : 0) => {
+    const email = (() => { try { return JSON.parse(localStorage.getItem('nw_user') || '{}').email; } catch { return null; } })();
+    // 1. Mastery tracking
+    fetch('/api/study-plan', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'record', questionId: bankId, subject, level, topic: topicName || topic, correct })
+    }).catch(() => {});
+    // 2. Question bank performance
+    if (bankId) {
+      fetch('/api/question-bank/record', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ questionId: bankId, score, maxScore: 1 })
+      }).catch(() => {});
+    }
+  };
+
   const submitGuided = async () => {
     if (!guidedSelected || !data?.guidedQuestion) return;
     const fb = await gradeAnswer(data.guidedQuestion._bankId, guidedSelected);
     setGuidedFeedback(fb);
     setResults(prev => [...prev, { correct: fb.correct }]);
-    // Track mastery
-    fetch('/api/study-plan', { method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'record', questionId: data.guidedQuestion._bankId, subject, level, topic: data.guidedQuestion.topic || topic, correct: fb.correct })
-    }).catch(() => {});
+    recordToLoop(data.guidedQuestion._bankId, data.guidedQuestion.topic || topic, fb.correct);
   };
 
   const submitPractice = async () => {
@@ -96,9 +108,7 @@ export default function NanoTeach() {
     const fb = await gradeAnswer(q._bankId, practiceSelected);
     setPracticeFeedback(fb);
     setResults(prev => [...prev, { correct: fb.correct }]);
-    fetch('/api/study-plan', { method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'record', questionId: q._bankId, subject, level, topic: q.topic || topic, correct: fb.correct })
-    }).catch(() => {});
+    recordToLoop(q._bankId, q.topic || topic, fb.correct);
   };
 
   const nextPractice = () => {
