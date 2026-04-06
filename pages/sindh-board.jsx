@@ -30,8 +30,19 @@ export default function SindhBoardStudy() {
   const [chapters, setChapters] = useState([]);
   const [expandedChapter, setExpandedChapter] = useState(null);
   const [noteData, setNoteData] = useState({});
-  const [mcqAnswers, setMcqAnswers] = useState({}); // { 'subject_class_chId_qIdx': 'B' }
-  const [mcqRevealed, setMcqRevealed] = useState({}); // { 'subject_class_chId_qIdx': true }
+  // Load saved progress from localStorage
+  const loadProgress = () => { try { return JSON.parse(localStorage.getItem('nw_sindh_progress') || '{}'); } catch { return {}; } };
+  const saveProgress = (data) => { try { localStorage.setItem('nw_sindh_progress', JSON.stringify(data)); } catch {} };
+
+  const [mcqAnswers, setMcqAnswers] = useState(() => loadProgress().mcqAnswers || {});
+  const [mcqRevealed, setMcqRevealed] = useState(() => loadProgress().mcqRevealed || {});
+  const [completedChapters, setCompletedChapters] = useState(() => loadProgress().completedChapters || {});
+  const [chapterScores, setChapterScores] = useState(() => loadProgress().chapterScores || {});
+
+  // Save progress whenever it changes
+  useEffect(() => {
+    saveProgress({ mcqAnswers, mcqRevealed, completedChapters, chapterScores });
+  }, [mcqAnswers, mcqRevealed, completedChapters, chapterScores]);
 
   useEffect(() => {
     if (!selectedSubject) { setChapters([]); return; }
@@ -101,6 +112,37 @@ export default function SindhBoardStudy() {
             ))}
           </div>
 
+          {/* Overall Progress Dashboard */}
+          {!selectedSubject && (() => {
+            const totalChapters = subjects.reduce((sum, s) => sum + (SINDH_SYLLABUS[s.name]?.[`class${selectedClass}`]?.chapters?.length || 0), 0);
+            const totalDone = Object.keys(completedChapters).filter(k => k.includes(`_${selectedClass}_`)).length;
+            const totalCorrect = Object.values(chapterScores).filter(s => s).reduce((sum, s) => sum + (s.correct || 0), 0);
+            const totalMcqs = Object.values(chapterScores).filter(s => s).reduce((sum, s) => sum + (s.total || 0), 0);
+            const overallPct = totalChapters > 0 ? Math.round((totalDone / totalChapters) * 100) : 0;
+
+            return totalDone > 0 ? (
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8, marginBottom: 16 }}>
+                <div style={S.card}>
+                  <div style={{ fontSize: 22, fontWeight: 900, color: '#4F8EF7' }}>{totalDone}/{totalChapters}</div>
+                  <div style={{ fontSize: 10, color: 'rgba(255,255,255,.4)' }}>Chapters done</div>
+                  <div style={{ height: 3, background: 'rgba(255,255,255,.06)', borderRadius: 2, marginTop: 4 }}>
+                    <div style={{ height: '100%', width: `${overallPct}%`, background: '#4F8EF7', borderRadius: 2 }} />
+                  </div>
+                </div>
+                <div style={S.card}>
+                  <div style={{ fontSize: 22, fontWeight: 900, color: totalMcqs > 0 && totalCorrect / totalMcqs >= 0.7 ? '#4ADE80' : '#F97316' }}>
+                    {totalMcqs > 0 ? Math.round((totalCorrect / totalMcqs) * 100) : 0}%
+                  </div>
+                  <div style={{ fontSize: 10, color: 'rgba(255,255,255,.4)' }}>MCQ accuracy</div>
+                </div>
+                <div style={S.card}>
+                  <div style={{ fontSize: 22, fontWeight: 900, color: GOLD }}>{totalCorrect}</div>
+                  <div style={{ fontSize: 10, color: 'rgba(255,255,255,.4)' }}>Questions correct</div>
+                </div>
+              </div>
+            ) : null;
+          })()}
+
           {/* Subject Grid */}
           {!selectedSubject && (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 8 }}>
@@ -108,18 +150,26 @@ export default function SindhBoardStudy() {
                 const classChapters = selectedClass === 9
                   ? SINDH_SYLLABUS[s.name]?.class9?.chapters?.length || 0
                   : SINDH_SYLLABUS[s.name]?.class10?.chapters?.length || 0;
+                const doneCount = (SINDH_SYLLABUS[s.name]?.[`class${selectedClass}`]?.chapters || [])
+                  .filter(c => completedChapters[`${s.name}_${selectedClass}_${c.id}`]).length;
+                const pct = classChapters > 0 ? Math.round((doneCount / classChapters) * 100) : 0;
                 return (
                   <button key={s.name} onClick={() => setSelectedSubject(s.name)}
                     style={{
                       ...S.card, cursor: 'pointer', textAlign: 'left',
-                      background: 'rgba(255,255,255,.05)', borderColor: 'rgba(255,255,255,.1)',
+                      background: pct >= 100 ? 'rgba(74,222,128,.06)' : 'rgba(255,255,255,.05)',
+                      borderColor: pct >= 100 ? 'rgba(74,222,128,.2)' : 'rgba(255,255,255,.1)',
                     }}
                     onMouseOver={e => { e.currentTarget.style.borderColor = 'rgba(201,168,76,.4)'; e.currentTarget.style.background = 'rgba(201,168,76,.08)'; }}
-                    onMouseOut={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,.1)'; e.currentTarget.style.background = 'rgba(255,255,255,.05)'; }}>
-                    <div style={{ fontSize: 15, fontWeight: 800, color: '#FAF6EB' }}>{s.name}</div>
-                    <div style={{ fontSize: 11, color: 'rgba(255,255,255,.45)', marginTop: 2 }}>
-                      {classChapters} chapters · {s.group}
+                    onMouseOut={e => { e.currentTarget.style.borderColor = pct >= 100 ? 'rgba(74,222,128,.2)' : 'rgba(255,255,255,.1)'; e.currentTarget.style.background = pct >= 100 ? 'rgba(74,222,128,.06)' : 'rgba(255,255,255,.05)'; }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <div style={{ fontSize: 15, fontWeight: 800, color: '#FAF6EB' }}>{s.name}</div>
+                      {doneCount > 0 && <div style={{ fontSize: 11, fontWeight: 700, color: pct >= 100 ? '#4ADE80' : '#4F8EF7' }}>{pct}%</div>}
                     </div>
+                    <div style={{ fontSize: 11, color: 'rgba(255,255,255,.45)', marginTop: 2 }}>
+                      {doneCount > 0 ? `${doneCount}/${classChapters} done` : `${classChapters} chapters`} · {s.group}
+                    </div>
+                    {doneCount > 0 && <div style={{ height: 3, background: 'rgba(255,255,255,.06)', borderRadius: 2, marginTop: 6 }}><div style={{ height: '100%', width: `${pct}%`, background: pct >= 100 ? '#4ADE80' : '#4F8EF7', borderRadius: 2 }} /></div>}
                   </button>
                 );
               })}
@@ -151,6 +201,9 @@ export default function SindhBoardStudy() {
                 const isExpanded = expandedChapter === ch.id;
                 const noteKey = `${selectedSubject}_${selectedClass}_${ch.id}`;
                 const note = noteData[noteKey];
+                const chKey = `${selectedSubject}_${selectedClass}_${ch.id}`;
+                const isDone = completedChapters[chKey];
+                const score = chapterScores[chKey];
 
                 return (
                   <div key={ch.id} style={{ marginBottom: 6 }}>
@@ -161,20 +214,22 @@ export default function SindhBoardStudy() {
                       }}
                       style={{
                         width: '100%', padding: '14px 16px', borderRadius: 12, cursor: 'pointer',
-                        background: isExpanded ? 'rgba(79,142,247,.06)' : 'rgba(255,255,255,.05)',
-                        border: isExpanded ? '2px solid rgba(79,142,247,.3)' : '1px solid rgba(255,255,255,.1)',
+                        background: isDone ? 'rgba(74,222,128,.04)' : isExpanded ? 'rgba(79,142,247,.06)' : 'rgba(255,255,255,.05)',
+                        border: isDone ? '1px solid rgba(74,222,128,.2)' : isExpanded ? '2px solid rgba(79,142,247,.3)' : '1px solid rgba(255,255,255,.1)',
                         textAlign: 'left', color: '#FAF6EB', display: 'flex', alignItems: 'center', gap: 12,
                       }}>
                       <div style={{
                         width: 32, height: 32, borderRadius: 16, flexShrink: 0,
-                        background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.1)',
+                        background: isDone ? 'rgba(74,222,128,.1)' : 'rgba(255,255,255,.04)',
+                        border: `1px solid ${isDone ? 'rgba(74,222,128,.3)' : 'rgba(255,255,255,.1)'}`,
                         display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        fontSize: 13, fontWeight: 800, color: 'rgba(255,255,255,.4)',
+                        fontSize: isDone ? 14 : 13, fontWeight: 800, color: isDone ? '#4ADE80' : 'rgba(255,255,255,.4)',
                       }}>
-                        {ch.id}
+                        {isDone ? '✓' : ch.id}
                       </div>
                       <div style={{ flex: 1 }}>
-                        <div style={{ fontSize: 15, fontWeight: 800, color: '#FAF6EB' }}>{ch.name}</div>
+                        <div style={{ fontSize: 15, fontWeight: 800, color: isDone ? 'rgba(255,255,255,.5)' : '#FAF6EB' }}>{ch.name}</div>
+                        {score && <div style={{ fontSize: 11, color: score.correct === score.total ? '#4ADE80' : '#F97316' }}>{score.correct}/{score.total} MCQs correct</div>}
                       </div>
                       <span style={{ color: 'rgba(255,255,255,.2)', fontSize: 14 }}>{isExpanded ? '▾' : '▸'}</span>
                     </button>
@@ -276,13 +331,23 @@ export default function SindhBoardStudy() {
                                       </div>
                                     );
                                   })}
-                                  {allDone && (
-                                    <div style={{ textAlign: 'center', padding: '12px 0', marginTop: 4 }}>
-                                      <div style={{ fontSize: 15, fontWeight: 800, color: correctCount === note.mcqs.length ? '#4ADE80' : correctCount >= note.mcqs.length / 2 ? '#F97316' : '#EF4444' }}>
-                                        {correctCount === note.mcqs.length ? `Perfect! Sab sahi! 🎉` : `${correctCount}/${note.mcqs.length} sahi — ${correctCount < note.mcqs.length / 2 ? 'Notes dobara parhein' : 'Ache! Agle chapter pe chalein'}`}
+                                  {allDone && (() => {
+                                    // Mark chapter as completed + save score
+                                    const chKey = `${selectedSubject}_${selectedClass}_${ch.id}`;
+                                    if (!completedChapters[chKey]) {
+                                      setTimeout(() => {
+                                        setCompletedChapters(prev => ({ ...prev, [chKey]: true }));
+                                        setChapterScores(prev => ({ ...prev, [chKey]: { correct: correctCount, total: note.mcqs.length, date: new Date().toISOString() } }));
+                                      }, 0);
+                                    }
+                                    return (
+                                      <div style={{ textAlign: 'center', padding: '12px 0', marginTop: 4 }}>
+                                        <div style={{ fontSize: 15, fontWeight: 800, color: correctCount === note.mcqs.length ? '#4ADE80' : correctCount >= note.mcqs.length / 2 ? '#F97316' : '#EF4444' }}>
+                                          {correctCount === note.mcqs.length ? `Perfect! Sab sahi! 🎉` : `${correctCount}/${note.mcqs.length} sahi — ${correctCount < note.mcqs.length / 2 ? 'Notes dobara parhein' : 'Ache! Agle chapter pe chalein'}`}
+                                        </div>
                                       </div>
-                                    </div>
-                                  )}
+                                    );
+                                  })()}
                                 </div>
                               );
                             })()}
