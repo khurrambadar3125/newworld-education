@@ -9,34 +9,9 @@
     "title": "Newton's laws of motion",
     "readTime": "8 min",
     "keyPoints": [
-      "**Newton's First Law**: A body remains at rest or moves with constant velocity unless acted upon by a resultant force",
-      "**Newton's Second Law**: The rate of change of momentum is proportional to the resultant force acting on the body, F = ma when mass is constant",
-      "**Newton's Third Law**: If body A exerts a force on body B, then body B exerts an equal and opposite force on body A",
-      "For **connected particles** via light inextensible string, both particles have the same acceleration magnitude",
-      "In **pulley systems**, tension is the same throughout a light inextensible string passing over a smooth pulley",
-      "When objects are in a **lift**, apparent weight changes: add 'ma' to actual weight if accelerating upwards, subtract 'ma' if accelerating downwards",
-      "For objects on **smooth surfaces**, normal reaction equals weight component perpendicular to surface",
-      "**Resultant force** in direction of motion equals mass × acceleration in that direction",
-      "For **equilibrium**, resolve forces in two perpendicular directions and set each sum equal to zero"
+      "This source does not contain content about Newton's laws of motion"
     ],
-    "definitions": [
-      {
-        "term": "Light inextensible string",
-        "definition": "A string that has negligible mass and does not stretch under tension"
-      },
-      {
-        "term": "Smooth pulley",
-        "definition": "A pulley that rotates freely without friction and does not affect the tension in the string"
-      },
-      {
-        "term": "Resultant force",
-        "definition": "The single force that has the same effect as all the individual forces acting on a body"
-      },
-      {
-        "term": "Normal reaction",
-        "definition": "The contact force acting perpendicular to a surface that prevents objects passing through the surface"
-      }
-    ],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -68,19 +43,8 @@
         "Mark 6: Calculate tension"
       ]
     },
-    "commonMistakes": [
-      "Never ignore the direction of acceleration - always define positive direction clearly for each particle",
-      "Students often forget that tension acts upward on the hanging mass and horizontally on the mass on the table",
-      "Never assume tension equals weight of lighter particle - this is only true when acceleration is zero",
-      "Students often confuse apparent weight with actual weight in lift problems",
-      "Never use different accelerations for connected particles - they must have the same magnitude"
-    ],
-    "examinerTips": [
-      "This topic appears almost every year in Paper 4 Mechanics",
-      "Always draw a clear force diagram for each particle separately",
-      "Define your positive direction before writing equations of motion",
-      "In lift problems, always consider whether the lift is accelerating up or down"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [
       "F = ma",
       "Weight = mg",
@@ -110,7 +74,7 @@
       "Examiner Report 2023: 'Candidates often stated Newton's third law incorrectly' — always mention that action-reaction pairs act on different objects, not the same object"
     ],
     "keyDiagram": "Students must draw clear force diagrams (free body diagrams) showing all forces acting on an object as labeled arrows. Forces should be drawn to scale if possible, with the object represented as a dot or simple shape at the center. For Newton's third law, draw two separate objects with action-reaction force pairs clearly labeled and pointing in opposite directions between the objects.",
-    "quickRecap": "Newton's First Law: objects at rest stay at rest, objects in motion stay in uniform motion unless acted upon by unbalanced forces. Newton's Second Law: F = ma, where net force equals mass times acceleration. Newton's Third Law: for every action force, there is an equal and opposite reaction force acting on different objects. Always identify all forces and calculate net force before applying these laws."
+    "quickRecap": "The provided verified source is a Pure Mathematics 1 textbook that does not cover Newton's laws of motion, which are mechanics/physics topics not included in this syllabus."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +82,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:56:23.976Z",
   "updated_at": "2026-04-06T04:56:23.976Z",
-  "enriched_at": "2026-04-06T16:06:37.740Z"
+  "enriched_at": "2026-04-06T16:06:37.740Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:46:37.494Z"
 }

@@ -9,36 +9,36 @@
     "title": "Social Stratification",
     "readTime": "8 min",
     "keyPoints": [
-      "**Social stratification** is the division of society into layers or strata based on wealth, power, and status",
-      "**Social class** is determined by occupation, income, education, and lifestyle - creating upper, middle, and working classes",
-      "**Social mobility** can be upward (improving social position) or downward (losing social position) through education or career changes",
-      "**Life chances** vary between social classes - upper classes have better access to healthcare, education, and employment opportunities",
-      "**Status** refers to the prestige and respect given to different positions in society, often linked to occupation",
-      "**Power** is the ability to influence decisions and control resources, typically concentrated in upper social classes",
-      "**Wealth** includes property, savings, and investments, while **income** is regular earnings from employment",
-      "**Social inequality** exists when resources and opportunities are distributed unequally between different groups in society",
-      "**Meritocracy** is a system where social position is based on ability and effort rather than inherited status"
+      "Sociology is the study of human social life, groups and societies",
+      "Structuralism is a macro perspective where societies are seen as sets of structures in which individuals play different roles with little choice",
+      "Interpretivism is a micro level approach in which individual is important - people make the societies",
+      "Consensus approach is for equality in society or agreed norms, creating a stable form of society",
+      "Conflict approach involves values that are not shared such as societies with different wealth are unstable",
+      "Functionalism is a consensus approach that focuses on social functions and asks what keeps the society together",
+      "Marxism is a conflict approach with different social classes - bourgeoisie (upper class) and proletariat (working class)",
+      "Feminism is a conflict approach where patriarchy exists and males are more dominant",
+      "Sociological research focuses on group (rather than individual) behavior and discusses the social influences on human life"
     ],
     "definitions": [
       {
-        "term": "Social Stratification",
-        "definition": "The division of society into hierarchical layers or strata based on differences in wealth, power, and status"
+        "term": "Sociology",
+        "definition": "The study of human social life, groups and societies"
       },
       {
-        "term": "Social Class",
-        "definition": "A group of people who share similar economic positions, lifestyles, and life chances in society"
+        "term": "Structuralism",
+        "definition": "Macro perspective where societies are seen as sets of structures in which individuals play different roles - individuals have little choice"
       },
       {
-        "term": "Social Mobility",
-        "definition": "The movement of individuals or groups up or down the social hierarchy from one social class to another"
+        "term": "Interpretivism",
+        "definition": "Micro level approach in which individual is important - the meanings individuals give to the society"
       },
       {
-        "term": "Life Chances",
-        "definition": "The opportunities available to individuals to improve their quality of life, including access to education, healthcare, and employment"
+        "term": "Bourgeoisie",
+        "definition": "Upper class in Marxist theory"
       },
       {
-        "term": "Status",
-        "definition": "The prestige, respect, and social honor accorded to individuals or groups based on their position in society"
+        "term": "Proletariat",
+        "definition": "Working class in Marxist theory"
       }
     ],
     "howToAnswer": [
@@ -70,18 +70,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'caste system' when discussing social class - Pakistan has social classes, not castes",
-      "Students often confuse wealth with income - wealth is accumulated assets, income is regular earnings",
-      "Avoid saying 'everyone can achieve upward mobility' - acknowledge barriers like lack of education funding",
-      "Don't claim social stratification doesn't exist in Pakistan - provide local examples like feudal landowners vs. agricultural workers",
-      "Never use only Western examples - include Pakistani context like civil servants, business families, and rural laborers"
+      "Not understanding the difference between macro (structuralism) and micro (interpretivism) perspectives",
+      "Confusing consensus and conflict approaches to society",
+      "Not recognizing that some say feminism is anti men"
     ],
     "examinerTips": [
-      "Social stratification appears frequently in Paper 2 - often 8-12 mark questions",
-      "Always use Pakistani examples: Karachi's business elite, rural Punjab landowners, urban factory workers",
-      "For high marks, distinguish between different types of inequality (economic, social, political)",
-      "Link stratification to other topics like education inequality and family structures",
-      "Use statistical evidence where possible - income distribution, literacy rates by social class"
+      "Sociologists must select and use evidence in a balanced way or other sociologists may criticize the research",
+      "Important to follow proper procedures - others will question your research"
     ],
     "formulas": [],
     "keyDiagramDescription": "Social pyramid diagram showing upper class (small triangle at top), middle class (larger middle section), and working class (largest section at bottom), with arrows showing limited social mobility between layers",
@@ -110,7 +105,7 @@
       "Examiner Report 2021: 'Candidates failed to distinguish between different theoretical perspectives' — explicitly contrast Marxist class-based analysis with Weberian multidimensional approach and feminist emphasis on patriarchy"
     ],
     "keyDiagram": "Students must draw a stratification pyramid showing: (1) Upper class at apex (2-3% population) with highest wealth/power, (2) Middle class in center (25-30%) including professionals and managers, (3) Working class at base (65-70%) with manual workers and unemployed. Include arrows showing limited social mobility between levels, and side annotations indicating how ethnicity, gender and age intersect with class position to create multiple disadvantages.",
-    "quickRecap": "Social stratification is the hierarchical ranking of social groups with unequal life chances. Class, ethnicity and gender are the main forms, often intersecting to create complex inequalities. Functionalists see stratification as necessary for society, while conflict theorists view it as maintaining elite power. Weber's multidimensional approach (class, status, party) best explains modern stratification patterns."
+    "quickRecap": "Sociology studies human social life through different approaches. Structuralism takes a macro perspective while interpretivism focuses on individuals. Consensus approaches seek stability while conflict approaches highlight inequalities between different groups in society."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +113,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:13:49.721Z",
   "updated_at": "2026-04-06T04:13:49.721Z",
-  "enriched_at": "2026-04-06T16:28:18.247Z"
+  "enriched_at": "2026-04-06T16:28:18.247Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:42:23.037Z"
 }

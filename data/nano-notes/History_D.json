@@ -8,38 +8,8 @@
   "note_data": {
     "title": "The United States, 1919-41",
     "readTime": "8 min",
-    "keyPoints": [
-      "The **Roaring Twenties** (1920s) saw unprecedented economic prosperity with mass production, consumer goods, and stock market speculation creating a boom period.",
-      "**Prohibition** (1920-33) banned alcohol production and sale, leading to organized crime, bootlegging, and widespread law-breaking that undermined government authority.",
-      "The **Stock Market Crash** of October 1929 triggered the Great Depression when share prices collapsed, wiping out millions of investors and destroying confidence.",
-      "**Mass unemployment** reached 25% by 1933 as banks failed, businesses closed, and industrial production fell by 50% from 1929 levels.",
-      "President **Hoover's policies** failed because he relied on voluntary cooperation from businesses and refused direct government intervention to help the unemployed.",
-      "**Roosevelt's New Deal** (1933-39) used alphabet agencies like the CCC, WPA, and TVA to provide jobs, relief, and economic recovery through government spending.",
-      "The **Dust Bowl** (1930s) destroyed farming in the Great Plains when drought and poor farming methods created dust storms, forcing migration to California.",
-      "**Social Security Act** (1935) established unemployment insurance and old-age pensions, creating America's first federal welfare system for workers."
-    ],
-    "definitions": [
-      {
-        "term": "Prohibition",
-        "definition": "The constitutional ban on manufacturing, selling, and transporting alcohol in the United States from 1920 to 1933 under the 18th Amendment."
-      },
-      {
-        "term": "New Deal",
-        "definition": "President Franklin Roosevelt's program of government intervention from 1933-39 using federal agencies and spending to combat the Great Depression."
-      },
-      {
-        "term": "Stock Market Crash",
-        "definition": "The collapse of share prices on Wall Street in October 1929 that triggered the Great Depression and wiped out millions of investors."
-      },
-      {
-        "term": "Dust Bowl",
-        "definition": "The environmental disaster of the 1930s when drought and soil erosion created dust storms across the Great Plains, destroying agriculture."
-      },
-      {
-        "term": "Alphabet Agencies",
-        "definition": "New Deal programs known by their initials (CCC, WPA, TVA) that provided jobs and relief during the Great Depression."
-      }
-    ],
+    "keyPoints": [],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -71,20 +41,8 @@
         "Mark 6: Long-term reform to prevent future crises"
       ]
     },
-    "commonMistakes": [
-      "Never say 'the Wall Street Crash caused the Depression' — always explain HOW it caused unemployment and business failures",
-      "Students often confuse the Stock Market Crash (October 1929) with the start of the New Deal (1933) — there was a 3-year gap",
-      "Don't just list New Deal agencies — always explain their PURPOSE (relief, recovery, or reform)",
-      "Never say Prohibition 'didn't work' — explain WHY it failed (organized crime, impossible to enforce, public opposition)",
-      "Students often ignore the social impact — always mention effects on ordinary people, families, and communities"
-    ],
-    "examinerTips": [
-      "This topic appears almost every year in Paper 2 — focus on causes and consequences",
-      "Always use specific statistics: 25% unemployment, 5000 bank failures, 50% drop in industrial production",
-      "Learn key dates: 1920-33 (Prohibition), October 1929 (Wall Street Crash), 1933 (New Deal begins)",
-      "For essay questions, contrast the 1920s boom with 1930s depression to show the dramatic change",
-      "Remember to evaluate — was the New Deal successful? Did it end the Depression or did World War 2?"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [],
     "keyDiagramDescription": "Timeline showing 1919-29 (Economic Boom/Roaring Twenties), October 1929 (Wall Street Crash), 1929-33 (Great Depression/Hoover's failed policies), 1933-41 (Roosevelt's New Deal), with key events and statistics marked at each stage.",
     "pastPaperRefs": [
@@ -111,7 +69,7 @@
       "Examiner Report 2021: 'Candidates frequently wrote about the 1920s boom without linking it to the later crash' — connect overproduction, speculation, and inequality in the 1920s to the economic collapse that followed"
     ],
     "keyDiagram": "Students must be able to draw a cause-and-effect flowchart showing: 1920s Economic Problems (overproduction, unequal wealth distribution, stock speculation, weak banking) → Wall Street Crash October 1929 → Great Depression effects (unemployment, bank failures, poverty) → Roosevelt's New Deal response (Relief, Recovery, Reform programs) → Partial recovery by 1941. Include specific statistics like 25% unemployment at Depression's peak and major New Deal agencies like CCC, WPA, and SSA.",
-    "quickRecap": "USA went from 1920s prosperity to 1930s Depression after the 1929 Wall Street Crash. Underlying problems included overproduction, speculation, and inequality. Roosevelt's New Deal provided relief through job creation, recovery via economic programs, and reform of banking and social security. By 1941, partial recovery occurred but full employment only returned with WWII preparation."
+    "quickRecap": "No relevant information available in the verified source for the topic 'The United States, 1919-41'."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -119,5 +77,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:05:48.516Z",
   "updated_at": "2026-04-06T04:05:48.516Z",
-  "enriched_at": "2026-04-06T16:09:38.483Z"
+  "enriched_at": "2026-04-06T16:09:38.483Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:41:47.159Z"
 }

@@ -9,36 +9,36 @@
     "title": "Extraction and corrosion of metals",
     "readTime": "8 min",
     "keyPoints": [
-      "Metals are extracted from their **ores** using reduction, electrolysis or displacement reactions depending on their position in the reactivity series",
-      "Carbon can only reduce metals **less reactive than carbon** - this includes iron, zinc, lead, and copper",
-      "Metals **more reactive than carbon** (like aluminium) must be extracted by **electrolysis** of molten compounds",
-      "**Rusting** requires both oxygen and water to be present - removing either prevents rusting completely",
-      "Rusting is the **oxidation of iron** to form hydrated iron(III) oxide (rust)",
-      "Prevention methods include **galvanising** (zinc coating), **painting**, **oiling**, or **alloying** to make stainless steel",
-      "**Sacrificial protection** uses a more reactive metal like zinc or magnesium to protect iron from rusting",
-      "Iron is extracted in the **blast furnace** using coke (carbon), limestone (calcium carbonate), and iron ore",
-      "**Displacement reactions** occur when a more reactive metal displaces a less reactive metal from its compound"
+      "Filtration is used for separating insoluble solid from liquid because liquid particles are small enough to go through filter paper pores while solid particles are too large",
+      "Crystallization is used for obtaining solid from solid and liquid solution - it involves heating solution to evaporate solvent to produce hot saturated solution, then crystals of pure solid form on cooling",
+      "Distillation is used for obtaining pure liquid from solution by heating solution until it boils, pure liquid turns to vapour and leaves flask, vapour is cooled by condenser and changes back to liquid called distillate",
+      "Fractional distillation separates two liquids which are mixed (miscible) - mixture is heated and liquid with lowest boiling point comes out first at top of fractionating column",
+      "In filtration, the solid obtained is called residue and the liquid obtained is called filtrate",
+      "Distillation is possible because pure liquid changes to gas easily due to low boiling point while solid does not boil and remains in flask due to high boiling point",
+      "A saturated solution means no more solid can dissolve in it",
+      "Chromatography is used for mixture of organic compounds such as colour dyes",
+      "The constant temperature during distillation process equals the boiling point of pure liquid"
     ],
     "definitions": [
       {
-        "term": "Ore",
-        "definition": "A naturally occurring compound of a metal that can be extracted economically"
+        "term": "Compound",
+        "definition": "2 or more elements chemically joined together containing covalent or ionic bonds"
       },
       {
-        "term": "Reduction",
-        "definition": "The removal of oxygen from a compound or the gain of electrons"
+        "term": "Mixtures",
+        "definition": "2 or more substances which are not chemically joined together"
       },
       {
-        "term": "Rusting",
-        "definition": "The corrosion of iron in the presence of oxygen and water to form hydrated iron(III) oxide"
+        "term": "Miscible",
+        "definition": "Mixable - able to be mixed"
       },
       {
-        "term": "Galvanising",
-        "definition": "Coating iron or steel with a layer of zinc to prevent rusting"
+        "term": "Saturated solution",
+        "definition": "A solution where no more solid can dissolve in it"
       },
       {
-        "term": "Sacrificial protection",
-        "definition": "Using a more reactive metal to protect a less reactive metal from corrosion"
+        "term": "Distillate",
+        "definition": "Liquid obtained from distillation process, collected in conical flask"
       }
     ],
     "howToAnswer": [
@@ -67,17 +67,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'rust needs air' — always say 'rust needs oxygen and water'",
-      "Students often confuse galvanising with painting - galvanising provides sacrificial protection even when damaged",
-      "Don't say 'carbon reduces all metals' - carbon can only reduce metals less reactive than itself",
-      "Never write 'iron oxide' for rust - it must be 'hydrated iron(III) oxide'",
-      "Students forget that electrolysis uses molten compounds, not aqueous solutions for metal extraction"
+      "Confusing when to use crystallization versus distillation - crystallization obtains the solid (solute) while distillation obtains the liquid (solvent)",
+      "Not recognizing that any question asking for method to obtain crystals requires crystallization as the answer",
+      "Confusing residue and filtrate in filtration - residue is the solid obtained, filtrate is the liquid obtained"
     ],
     "examinerTips": [
-      "Extraction methods appear frequently in Paper 2 - learn the reactivity series order",
-      "Rusting prevention questions often ask for two methods - give different types (barrier + sacrificial)",
-      "Always state both oxygen AND water are needed for rusting - stating just 'air' loses marks",
-      "Blast furnace questions may ask for equations - practice the carbon monoxide reduction step"
+      "Any question that wants the method to obtain crystals, the process will be crystallization",
+      "Remember that soluble means can dissolve in water while insoluble means cannot dissolve in water"
     ],
     "formulas": [
       "2Fe + O₂ + 2H₂O → 2Fe(OH)₂ (simplified rusting)",
@@ -109,7 +105,7 @@
       "Examiner Report 2024: 'Candidates often listed rust prevention methods without explaining how they work' — when discussing galvanizing or painting, explain that they form a barrier preventing oxygen and water contact"
     ],
     "keyDiagram": "Students must be able to draw a labeled diagram of a blast furnace showing: the three main raw materials entering at the top (iron ore, coke, limestone), the hot air blast entering near the bottom, the different temperature zones, the chemical reactions occurring at each level, and the products leaving (molten iron at bottom, slag removal, waste gases at top). Include arrows showing direction of materials and label key temperatures (1500°C at bottom, 200°C at top).",
-    "quickRecap": "Metal extraction method depends on reactivity: unreactive metals found native, moderately reactive metals extracted by carbon reduction, highly reactive metals need electrolytic reduction. Rusting requires oxygen AND water - prevention methods create barriers (painting, oiling) or sacrificial protection (galvanizing). Carbon monoxide is the actual reducing agent in blast furnaces, not carbon itself."
+    "quickRecap": "Separation methods depend on the properties of substances in mixtures. Filtration separates insoluble solids from liquids, crystallization obtains pure solids from solutions, distillation obtains pure liquids from solutions, and fractional distillation separates miscible liquids. Each method works because of different physical properties like particle size, boiling points, and solubility."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -117,5 +113,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:56:21.425Z",
   "updated_at": "2026-04-05T20:56:21.425Z",
-  "enriched_at": "2026-04-06T15:59:31.251Z"
+  "enriched_at": "2026-04-06T15:59:31.251Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:13:03.292Z"
 }

@@ -9,32 +9,32 @@
     "title": "Electrochemistry",
     "readTime": "8 min",
     "keyPoints": [
-      "**Electrolysis** is the decomposition of an ionic compound using electrical energy when molten or in aqueous solution",
-      "During electrolysis, **cations** move to the cathode (negative electrode) and **anions** move to the anode (positive electrode)",
-      "At the cathode, **reduction** occurs (gain of electrons) and at the anode, **oxidation** occurs (loss of electrons)",
-      "In the electrolysis of water, **hydrogen gas** is produced at the cathode and **oxygen gas** is produced at the anode",
-      "The **volume of hydrogen** produced is twice the volume of oxygen because the ratio is 2H₂ : O₂",
-      "**Electrical conductivity** occurs in metals due to mobile electrons and in ionic solutions due to mobile ions",
-      "A **fuel cell** converts chemical energy directly into electrical energy using hydrogen and oxygen",
-      "In a hydrogen fuel cell, hydrogen is **oxidized** at the anode and oxygen is **reduced** at the cathode",
-      "Electrolysis can be used for **electroplating** metals and **extraction** of reactive metals like aluminum"
+      "Compound - 2 or more elements chemically joined together - Contains Covalent or Ionic Bonds",
+      "Mixtures - 2 or more substances which are not chemically joined together - Can consist of Elements, Compounds, or Elements + Compounds",
+      "Pure Substances have: Fixed composition, Fixed Mp/Bp, Produces only 1 spot on chromatogram, All molecules same",
+      "Mixtures have: Variable Composition, Variable Bp/Mp, 2 or more spots on Chromatogram, 2 or more diff. molecules",
+      "Insoluble solid & Liquid → Filtration - Liquid particles small enough to go thru filter paper pores, Solid particles too large",
+      "Solid & Liquid solution → Crystallization (Obtaining solid) - Formation of crystals from a cooling liquid/Saturated solution",
+      "Solid & Liquid solution → Distillation (Obtaining Liquid) - Pure liquid change to gas easily – Low BP, Solid does not boil – High BP",
+      "2 Liquids mixed (Miscible) → Fractional Distillation - Liquid with lowest BP comes out 1st",
+      "Mixture of Organic Compounds → Chromatography (Eg. Colour Dyes)"
     ],
     "definitions": [
       {
-        "term": "Electrolysis",
-        "definition": "The decomposition of an ionic compound using electrical energy when the compound is molten or in aqueous solution"
+        "term": "Soluble",
+        "definition": "can dissolve in water (eg. Salt)"
       },
       {
-        "term": "Electrolyte",
-        "definition": "A substance that conducts electricity when molten or in aqueous solution and is decomposed by the electric current"
+        "term": "Insoluble",
+        "definition": "cannot dissolve in water (eg. Sand)"
       },
       {
-        "term": "Fuel cell",
-        "definition": "A device that converts chemical energy directly into electrical energy using hydrogen and oxygen"
+        "term": "Miscible",
+        "definition": "mixable - (Able to be mixed)"
       },
       {
-        "term": "Electrode",
-        "definition": "A conductor through which electricity enters or leaves an electrolyte during electrolysis"
+        "term": "Saturated solution",
+        "definition": "no more solid can dissolve in it"
       }
     ],
     "howToAnswer": [
@@ -69,18 +69,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'electricity is conducted by atoms' — always say 'electricity is conducted by mobile electrons in metals or mobile ions in ionic solutions'",
-      "Students often confuse which electrode is positive/negative — remember cathode is negative, anode is positive",
-      "Never write H₂SO₄ as being discharged in dilute acid — it's always H⁺ and OH⁻ from water",
-      "Students forget to balance electrode equations or omit electrons completely",
-      "Don't confuse fuel cells with electrolysis — fuel cells produce electricity, electrolysis uses electricity"
+      "Confusing compounds and mixtures - compounds are chemically joined, mixtures are not",
+      "Not understanding that pure substances have fixed composition and melting/boiling points while mixtures have variable properties",
+      "Mixing up which separation method to use - filtration for insoluble solids, crystallization to obtain solid from solution, distillation to obtain liquid from solution"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2, especially electrolysis of water and simple salts",
-      "Always state the products at each electrode clearly and write balanced equations",
-      "Remember discharge rules: less reactive elements are discharged first",
-      "Draw and label electrolysis diagrams showing electron flow and ion movement",
-      "In Pakistan context: electroplating is used in Sialkot sports goods industry for metal coating"
+      "Any question that wants the method to obtain (make) crystals, the process will be 'Crystalisation'",
+      "The constant temperature of distillation process = Boiling Point of pure liquid"
     ],
     "formulas": [
       "2H⁺ + 2e⁻ → H₂ (cathode reaction)",
@@ -111,7 +106,7 @@
       "Examiner Report 2023: 'Candidates often failed to explain why certain ions are preferentially discharged' — mention reactivity series for cations and halide preference for anions, plus concentration effects"
     ],
     "keyDiagram": "Electrolysis setup showing: (1) Power supply with labeled positive and negative terminals, (2) Two inert electrodes (graphite/platinum) labeled as anode (+) and cathode (-), (3) Electrolyte solution/molten compound with ions moving toward opposite electrodes, (4) Arrows showing electron flow in external circuit from anode to cathode, (5) Gas collection tubes if gases are produced, (6) Clear labeling of all products formed at each electrode",
-    "quickRecap": "Electrolysis uses electrical energy to decompose ionic compounds - cations move to cathode (gain electrons), anions move to anode (lose electrons). In aqueous solutions, consider water and use reactivity series for preferential discharge. For molten compounds, only the original ions are present. Always write ionic half-equations showing electron transfer and remember OILRIG (Oxidation Is Loss, Reduction Is Gain of electrons)."
+    "quickRecap": "Compounds are elements chemically joined together while mixtures are substances not chemically joined. Pure substances have fixed properties while mixtures have variable properties. Different separation methods are used based on the type of mixture: filtration for insoluble solids, crystallization to obtain solids, distillation to obtain liquids, fractional distillation for miscible liquids, and chromatography for organic compounds."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +114,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:53:04.441Z",
   "updated_at": "2026-04-05T20:53:04.441Z",
-  "enriched_at": "2026-04-06T16:03:52.402Z"
+  "enriched_at": "2026-04-06T16:03:52.402Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:15:36.231Z"
 }

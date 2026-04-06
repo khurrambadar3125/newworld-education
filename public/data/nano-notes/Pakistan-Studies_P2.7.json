@@ -9,32 +9,32 @@
     "title": "Transport and Telecommunications",
     "readTime": "8 min",
     "keyPoints": [
-      "Pakistan has a **road network** of over 260,000 km connecting major cities and rural areas for economic development",
-      "The **railway system** covers approximately 7,791 km and is managed by Pakistan Railways for passenger and freight transport",
-      "**Karachi Port** is Pakistan's largest seaport handling 60% of the country's trade and cargo operations",
-      "**Port Qasim** is Pakistan's second largest port specializing in container traffic and industrial development",
-      "**Allama Iqbal International Airport** in Lahore and **Jinnah International Airport** in Karachi are major international airports",
-      "**Motorways** like M1, M2, and M9 provide high-speed road connections between major urban centers",
-      "**Telecommunications** infrastructure includes mobile networks, internet services, and fiber optic cables connecting urban and rural areas",
-      "The **China-Pakistan Economic Corridor (CPEC)** includes major transport infrastructure projects improving connectivity",
-      "**Gwadar Port** is being developed as a deep-sea port under CPEC to boost international trade"
+      "The Marathas were warriors from Deccan, recognized for their guerrilla fighting abilities and devotion to Hinduism",
+      "Jizya was an Islamic tax on non-muslims, abolished by Mughal Emperor Akbar but brought back by Aurungzeb",
+      "The greased cartridge issue in 1857 involved new en-field rifles with cartridges greased by pig and cow fat which had to be chewed off before use",
+      "The East India Company was established when Queen Elizabeth gave permission to merchants to set up EIC, landing in Surat in 1608",
+      "The Battle of Plassey in 1757 occurred when Mir Jafar betrayed the Indians and sided with the British, leading to Robert Clive's victory",
+      "Tipu Sultan was the son of Hyder Ali, known as the Tiger of Mysore, who ruled from 1782 to 1799 and fought bravely against the British",
+      "The Pitt's India Act was passed by British PM Williams Pitts in 1784, making Governor General a royal post and introducing provincial governors",
+      "The zamindars were landlords/tax collectors, wealthy and influential people who oppressed Muslims from 1800s onwards, especially in East Bengal",
+      "The Jihad Movement was started by Syed Ahmed Barelvi who believed an armed struggle was the only solution to the Muslims' problems"
     ],
     "definitions": [
       {
-        "term": "Transport infrastructure",
-        "definition": "The basic physical structures and facilities needed for the movement of people and goods including roads, railways, ports and airports"
+        "term": "Jizya",
+        "definition": "Islamic tax on non-muslims"
       },
       {
-        "term": "Seaport",
-        "definition": "A harbor facility where ships load and unload cargo and passengers, essential for international trade"
+        "term": "Suttee",
+        "definition": "Hindu tradition where widows were burnt alive with the body of their deceased husband"
       },
       {
-        "term": "Motorway",
-        "definition": "A high-speed, multi-lane highway designed for fast vehicular traffic with controlled access points"
+        "term": "East India Company",
+        "definition": "Company established when Queen Elizabeth gave permission to merchants to set up EIC"
       },
       {
-        "term": "Telecommunications",
-        "definition": "The transmission of information over significant distances through electronic means including telephone, internet and mobile networks"
+        "term": "Zamindars",
+        "definition": "Landlords/tax collectors, wealthy and influential people"
       }
     ],
     "howToAnswer": [
@@ -65,17 +65,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'transport helps people move around' — always explain economic benefits like connecting markets",
-      "Students often forget to mention specific Pakistani examples like Karachi Port or M2 Motorway",
-      "Avoid saying 'telecommunications are modern technology' — explain their role in business and economic development",
-      "Don't confuse Port Qasim with Gwadar Port — know their different locations and functions",
-      "Never give vague answers — always use specific statistics like '60% of trade' or 'over 260,000 km of roads'"
+      "Not explaining that cartridges were greased by both pig and cow fat, affecting both Muslims and Hindus",
+      "Confusing the sequence of events in the Battle of Plassey and the role of Mir Jafar's betrayal",
+      "Not understanding that Jizya was abolished by Akbar but brought back by Aurungzeb",
+      "Mixing up the different battles involving Tipu Sultan and when he was finally defeated"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2 questions about economic development",
-      "Always give Pakistani examples when discussing transport infrastructure",
-      "Learn specific statistics about road length, railway network, and port capacity",
-      "CPEC projects often appear in recent exam questions"
+      "Since the requirement of 4 mark questions is to write 4 valid statements, write each point with proper wording",
+      "Use the bullet points as concise starting points but expand each statement with proper wording in your answers"
     ],
     "formulas": [],
     "keyDiagramDescription": "Map of Pakistan showing major motorways (M1, M2, M9), railway lines, main ports (Karachi, Port Qasim, Gwadar), and international airports in major cities",
@@ -103,7 +100,7 @@
       "Examiner Report 2023: 'Students often gave vague answers about 'better communications' without specifying technologies or their effects' — be specific about types of telecommunications (mobile networks, broadband, satellite) and their precise impacts"
     ],
     "keyDiagram": "Students must be able to draw a hub-and-spoke transport network diagram showing: a central hub city connected by major transport routes (highways, railways, airports) to smaller regional centers, which then connect to rural areas via minor roads. Include labels for different transport modes, journey times, and costs. Show how goods, people, and information flow in both directions, with arrows indicating the hierarchy of connectivity from international gateways through national hubs to local networks.",
-    "quickRecap": "Transport and telecommunications are the circulatory system of economic development, connecting people, goods, and information across space. Better transport reduces costs and journey times, enabling trade and mobility, while improved telecommunications allow instant information exchange and access to services. Both reduce isolation of peripheral areas and create multiplier effects throughout the economy. Digital divide and transport poverty remain key challenges requiring targeted investment in infrastructure."
+    "quickRecap": "This section covers key historical events and figures in the Indian subcontinent including Mughal decline, British expansion through the East India Company, and various resistance movements. The content focuses on 4-mark questions requiring four valid statements each. Major topics include the Marathas, various battles like Plassey and Buxar, the 1857 War of Independence, and important figures like Tipu Sultan and Robert Clive."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -111,5 +108,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:50:33.712Z",
   "updated_at": "2026-04-05T20:50:33.712Z",
-  "enriched_at": "2026-04-06T15:59:24.115Z"
+  "enriched_at": "2026-04-06T15:59:24.115Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:20:31.177Z"
 }

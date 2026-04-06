@@ -9,31 +9,31 @@
     "title": "Writing practice",
     "readTime": "8 min",
     "keyPoints": [
-      "**Plan your writing** before you start - spend 5-10 minutes organizing ideas and structure",
-      "Use **varied sentence structures** - simple, compound and complex sentences for sophisticated writing",
-      "Show **clear paragraphing** with topic sentences that introduce each new idea",
-      "Use **precise vocabulary** and avoid repetition by employing synonyms and alternative expressions",
-      "Maintain **consistent register** throughout - formal for articles, persuasive for speeches, personal for letters",
-      "Include **specific details and examples** to support your points and engage the reader",
-      "End with a **strong conclusion** that reinforces your main argument or leaves a lasting impression",
-      "**Proofread carefully** for spelling, punctuation and grammar errors in the final 5 minutes"
+      "Argumentative essays follow a 5 paragraph structure: Introduction, 1st claim paragraph, 2nd claim paragraph, counter claims paragraph, and Conclusion",
+      "The last line of your introduction is your thesis statement",
+      "2nd paragraph contains 1st claim to support your thesis statement - give logic and evidence to support",
+      "3rd paragraph contains 2nd claim to support your thesis statement - give logic and evidence to support",
+      "4th paragraph includes 1 or 2 counter claims that go against your claim and then refute them with evidence",
+      "The body of your essay will contain the meat of your argument including relevant facts, statistics, narratives, testimonials",
+      "The body is your chance to leverage various modes of persuasion like appeal to emotion or logic",
+      "Your conclusion will offer a brief summary and reiterate how the meat of your essay ties back into your thesis statement"
     ],
     "definitions": [
       {
-        "term": "Register",
-        "definition": "The level of formality and style of language appropriate to the audience and purpose"
+        "term": "Thesis statement",
+        "definition": "Your statement of belief that appears as the last line of your introduction"
       },
       {
-        "term": "Discourse markers",
-        "definition": "Words and phrases that connect ideas and show relationships between sentences and paragraphs"
+        "term": "Body",
+        "definition": "The section that contains the meat of your argument with relevant facts, statistics, narratives, testimonials, and modes of persuasion"
       },
       {
-        "term": "Rhetorical devices",
-        "definition": "Techniques such as repetition, rhetorical questions and emotive language used to persuade or engage readers"
+        "term": "Counter claims",
+        "definition": "Claims that go against your argument which you must then refute with evidence"
       },
       {
-        "term": "Audience awareness",
-        "definition": "Writing in a way that considers the needs, interests and expectations of the intended readers"
+        "term": "Modes of persuasion",
+        "definition": "Techniques like appeal to emotion or logic used in the body of your essay"
       }
     ],
     "howToAnswer": [
@@ -67,17 +67,16 @@
       ]
     },
     "commonMistakes": [
-      "Never write without planning - this leads to rambling, unfocused responses that lose marks",
-      "Students often ignore the specified audience and write in inappropriate register for the task",
-      "Avoid using the same sentence patterns repeatedly - this makes writing monotonous and loses language marks",
-      "Never submit without proofreading - simple errors in spelling and punctuation cost valuable marks",
-      "Students frequently write too much description and not enough argument in persuasive tasks"
+      "Not developing all required points evenly in argumentative essays",
+      "Failing to use full sentences even in informal writing",
+      "Confusion with commonly confused words like their/there, seat/sit",
+      "Incorrect use of possessive pronouns",
+      "Problems with correct tenses and agreement"
     ],
     "examinerTips": [
-      "Writing tasks appear in Paper 2 and are worth 50% of the total marks - practice different formats regularly",
-      "Always identify the format, audience and purpose before you begin writing",
-      "Use the first paragraph to grab attention and the last paragraph to leave a lasting impression",
-      "Include Pakistani examples and contexts to make your writing more authentic and engaging"
+      "It is essential to read the question carefully and be clear about its particular focus",
+      "You might consider ending with a rhetorical question or some other striking comment",
+      "Greater focus on correct use of possessive pronouns is strongly recommended"
     ],
     "formulas": [],
     "keyDiagramDescription": "Writing process flowchart: Plan → Draft → Review → Edit → Proofread, with time allocations for each stage during the exam",
@@ -105,7 +104,7 @@
       "Examiner Report 2023: 'Weak openings were common, with many starting with clichéd phrases like 'Once upon a time'' — craft engaging opening lines that immediately establish tone, setting, or conflict to hook the reader"
     ],
     "keyDiagram": "Create a writing planning diamond: narrow opening hook at top, expanding to broad middle section with main content/arguments/plot development, then narrowing to focused conclusion at bottom. Annotate with: Hook/Thesis → Supporting points/evidence/narrative development → Linking phrases → Powerful conclusion. Include side branches for vocabulary choices, literary devices, and structural techniques to be woven throughout each section.",
-    "quickRecap": "Successful O Level writing requires clear structure with engaging openings and strong conclusions. Use varied sentence types, literary devices, and precise vocabulary throughout. Plan for 5 minutes, write for 35 minutes, proofread for 5 minutes. Always adapt your register and style to match the specific writing format required."
+    "quickRecap": "Argumentative essays require a 5-paragraph structure with thesis statement, supporting claims with evidence, counter-arguments, and conclusion. The body contains the meat of your argument using facts, statistics and persuasive techniques. Always refute counter claims with evidence and ensure your conclusion ties back to your thesis statement."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -113,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:51:34.386Z",
   "updated_at": "2026-04-06T03:51:34.386Z",
-  "enriched_at": "2026-04-06T16:06:24.870Z"
+  "enriched_at": "2026-04-06T16:06:24.870Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:22:13.570Z"
 }

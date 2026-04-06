@@ -9,36 +9,36 @@
     "title": "Books of prime entry",
     "readTime": "8 min",
     "keyPoints": [
-      "**Books of prime entry** are records where transactions are first recorded from source documents before posting to the ledger",
-      "**Sales day book** records all credit sales transactions from sales invoices",
-      "**Purchases day book** records all credit purchases transactions from purchase invoices",
-      "**Sales returns day book** records all goods returned by customers using credit notes issued",
-      "**Purchases returns day book** records all goods returned to suppliers using credit notes received",
-      "**Cash book** records all cash and bank transactions and serves as both a book of prime entry and part of the ledger",
-      "**Petty cash book** records small cash payments using the imprest system",
-      "**General journal** records transactions that cannot be recorded in other books of prime entry such as opening entries, closing entries, and correction of errors",
-      "Source documents provide evidence for transactions: invoices for sales/purchases, credit notes for returns, receipts for cash transactions"
+      "The process of accounting starts once the book-keeper finishes recording the financial transactions",
+      "Accounting deals with measuring, identifying, and communicating financial information recorded by the book-keeper which facilitates the preparation of financial statements",
+      "Bookkeeping involves recording financial transactions from source documents of a business whereas accounting deals with maintaining financial statements from the bookkeeping records",
+      "Assets are the resources owned and controlled by a company, with the formula: Assets = Capital + Liabilities",
+      "Current Assets are assets which have a monetary value or can be converted into cash within 12 months, examples include account receivables and cash",
+      "Non-Current Assets, also known as Fixed Assets, are assets acquired to earn revenue for the company and used for more than 12 months without being intended for resale",
+      "Capital is the number of resources and funds provided by the owner injected into the business, with the basic accounting equation: Capital = Assets - Liabilities",
+      "Liability is the money owed to another firm or an entity, with the formula: Liabilities = Assets - Capital",
+      "Goodwill refers to the intangible asset that represents the reputation, customer loyalty, brand value, and other non-physical attributes of a business"
     ],
     "definitions": [
       {
-        "term": "Book of prime entry",
-        "definition": "A record where business transactions are first entered from source documents before being posted to the ledger accounts"
+        "term": "Assets",
+        "definition": "The resources owned and controlled by a company"
       },
       {
-        "term": "Day book",
-        "definition": "A book of prime entry used to record specific types of transactions such as credit sales or credit purchases"
+        "term": "Current Assets",
+        "definition": "An asset which has a monetary value or can be converted into cash within 12 months"
       },
       {
-        "term": "Journal",
-        "definition": "A book of prime entry used to record transactions that cannot be entered in any other book of prime entry"
+        "term": "Non-Current Assets",
+        "definition": "Also known as Fixed Assets, these assets are acquired to earn revenue for the company and used for more than 12 months without being intended for resale"
       },
       {
-        "term": "Source document",
-        "definition": "An original document that provides evidence of a business transaction"
+        "term": "Capital",
+        "definition": "The number of resources and funds provided by the owner injected into the business"
       },
       {
-        "term": "Posting",
-        "definition": "The process of transferring entries from books of prime entry to the ledger accounts"
+        "term": "Liability",
+        "definition": "The money owed to another firm or an entity"
       }
     ],
     "howToAnswer": [
@@ -70,17 +70,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say books of prime entry are 'part of the ledger' — they are separate records that feed into the ledger",
-      "Students often confuse day books with ledger accounts — day books record transactions, ledger accounts show balances",
-      "Don't write 'cash book records cash' — specify it records cash receipts AND cash payments",
-      "Never say journal records 'all transactions' — it only records transactions that cannot go in other books of prime entry",
-      "Students forget that books of prime entry use source documents — always mention the link to source documents"
+      "Confusing bookkeeping with accounting - bookkeeping records transactions while accounting maintains financial statements",
+      "Incorrectly applying debit and credit rules - an increase in an asset is a debit and a decrease is a credit",
+      "Mixing up current and non-current assets based on the 12-month timeframe criterion"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 1 multiple choice and Paper 2 structured questions",
-      "Always specify whether transactions are 'credit' sales/purchases when describing day books",
-      "Learn the specific source documents for each book of prime entry",
-      "Practice identifying which book of prime entry to use for different transactions"
+      "Remember the basic accounting equation: Capital = Assets - Liabilities",
+      "Understand that goodwill may be subject to impairment if its value declines over time"
     ],
     "formulas": [],
     "keyDiagramDescription": "Flow diagram showing source documents → books of prime entry → ledger accounts, with examples of each book (sales day book, purchases day book, cash book, journal) and their corresponding source documents",
@@ -108,7 +104,7 @@
       "Examiner Report 2022: 'Candidates lost marks by not specifying whether cash transactions go in receipts or payments side' — always state 'Cash Receipts Book' or 'Cash Payments Book', not just 'Cash Book'"
     ],
     "keyDiagram": "Students must be able to draw a flow diagram showing: Source Documents → Books of Prime Entry → Ledger Accounts → Trial Balance. Include arrows showing the flow from invoices/receipts to day books/cash book, then to individual ledger accounts. Label each book of prime entry (Sales Day Book, Purchases Day Book, Returns Inward Day Book, Returns Outward Day Book, Cash Book, Petty Cash Book) with examples of transactions recorded in each.",
-    "quickRecap": "Books of prime entry are the first place transactions are recorded from source documents before posting to ledgers. Six main books: Sales Day Book (credit sales), Purchases Day Book (credit purchases), Returns books (goods returned), Cash Book (bank/cash receipts and payments), Petty Cash Book (small cash expenses). Key advantages include preparing control accounts and removing detail from ledgers. Remember to specify receipts/payments side for cash transactions."
+    "quickRecap": "Accounting begins after bookkeeping records financial transactions and involves measuring, identifying, and communicating financial information to prepare financial statements. Assets are resources owned by a company and are categorized as current (convertible to cash within 12 months) or non-current (used for more than 12 months). The fundamental relationship between assets, capital, and liabilities is expressed through the basic accounting equation: Capital = Assets - Liabilities."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -116,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:37:24.870Z",
   "updated_at": "2026-04-06T03:37:24.870Z",
-  "enriched_at": "2026-04-06T16:13:17.504Z"
+  "enriched_at": "2026-04-06T16:13:17.504Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:30:38.190Z"
 }

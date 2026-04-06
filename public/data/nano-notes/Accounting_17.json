@@ -9,36 +9,36 @@
     "title": "Incomplete Records",
     "readTime": "8 min",
     "keyPoints": [
-      "**Incomplete records** are records kept by businesses that do not follow the full double-entry bookkeeping system",
-      "**Single entry system** records only one aspect of each transaction, usually cash receipts and payments",
-      "**Opening capital** is calculated by preparing a statement of financial position at the start of the period",
-      "**Closing capital** is calculated by preparing a statement of financial position at the end of the period",
-      "**Net profit** is calculated using the formula: Closing Capital - Opening Capital + Drawings - Additional Capital",
-      "**Margin** is profit expressed as a percentage of selling price: (Profit ÷ Selling Price) × 100",
-      "**Mark-up** is profit expressed as a percentage of cost price: (Profit ÷ Cost Price) × 100",
-      "Missing figures are calculated by preparing control accounts for debtors, creditors, and cash",
-      "Total sales and purchases can be calculated using debtors and creditors control accounts when cash sales/purchases are given"
+      "Incomplete records occur when a business does not maintain complete double entry book-keeping records",
+      "A Statement of Affairs is prepared to determine the capital of a business when records are incomplete",
+      "Capital changes can be calculated using the accounting equation: Capital = Assets - Liabilities",
+      "The ratio method can be used to find missing figures in incomplete records",
+      "Accounting analysis involves working backwards from available information to reconstruct missing records",
+      "The Statement of Affairs serves as a substitute balance sheet when proper records are not available",
+      "Capital at the beginning can be found by preparing a Statement of Affairs",
+      "Missing sales or purchases can be calculated using control account principles",
+      "The basic accounting equation Assets = Capital + Liabilities is fundamental to solving incomplete records problems"
     ],
     "definitions": [
       {
         "term": "Incomplete Records",
-        "definition": "A system of recording transactions that does not follow the complete double-entry principle, usually recording only cash receipts and payments"
+        "definition": "Records where a business does not maintain complete double entry book-keeping system"
       },
       {
-        "term": "Single Entry System",
-        "definition": "A bookkeeping system that records only one aspect of each transaction, typically the cash effect"
+        "term": "Statement of Affairs",
+        "definition": "A statement prepared to determine the capital of a business when complete records are not available"
       },
       {
-        "term": "Margin",
-        "definition": "Profit expressed as a percentage of selling price"
+        "term": "Capital Changes",
+        "definition": "Variations in owner's equity calculated using the accounting equation"
       },
       {
-        "term": "Mark-up",
-        "definition": "Profit expressed as a percentage of cost price"
+        "term": "Ratio Method",
+        "definition": "A technique used to find missing figures in incomplete records using proportional relationships"
       },
       {
-        "term": "Net Assets",
-        "definition": "Total assets minus total liabilities, which equals capital"
+        "term": "Accounting Analysis",
+        "definition": "The process of working backwards from available information to reconstruct missing accounting records"
       }
     ],
     "howToAnswer": [
@@ -69,17 +69,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse margin with mark-up — margin uses selling price as denominator, mark-up uses cost price",
-      "Students often forget to add drawings when calculating profit using the capital comparison method",
-      "Never subtract additional capital introduced during the year — it should be subtracted from the profit calculation",
-      "Students frequently calculate opening/closing capital incorrectly by adding liabilities instead of subtracting them",
-      "Never use credit sales figure when asked for total sales — must include cash sales using debtors control account"
+      "Failing to use the correct accounting equation formula when calculating missing capital figures",
+      "Not preparing a Statement of Affairs as the starting point for incomplete records problems",
+      "Confusing the ratio method application when finding missing sales or purchase figures"
     ],
     "examinerTips": [
-      "This topic appears in Paper 2 almost every year, usually worth 15-20 marks",
-      "Always prepare a statement of financial position first to find opening and closing capital",
-      "Show all workings clearly for margin and mark-up calculations — partial marks are available",
-      "When preparing control accounts, ensure the missing figure balances the account"
+      "Always start incomplete records questions by preparing a Statement of Affairs to find opening capital",
+      "Use the accounting equation Capital = Assets - Liabilities systematically to find missing figures"
     ],
     "formulas": [
       "Net Profit = Closing Capital - Opening Capital + Drawings - Additional Capital",
@@ -111,7 +107,7 @@
       "Examiner Report 2024: 'Candidates frequently omitted the opening and closing inventory adjustments when calculating purchases' — always apply the formula: Purchases = Cost of Sales + Closing Inventory - Opening Inventory in incomplete records scenarios"
     ],
     "keyDiagram": "Students must be able to draw a 'Cash and Bank Summary' T-account format showing: Left side (receipts) - Opening balance, Cash sales, Cheques from debtors, Asset disposals, Capital introduced; Right side (payments) - Purchases, Expenses, Drawings, Asset purchases, Closing balance. This visual representation helps identify missing figures and ensures all cash movements are accounted for systematically.",
-    "quickRecap": "Incomplete records require reconstructing missing financial information from available data. Key approach: use opening/closing positions to find missing figures, distinguish between trading and non-trading receipts, and remember that cheques received usually represent debt collections. Always prepare cash summaries and statements of affairs to find unknown balances systematically."
+    "quickRecap": "Incomplete records problems arise when businesses don't maintain proper double entry book-keeping. The key approach is to prepare a Statement of Affairs to determine capital, then use the accounting equation and ratio method to find missing figures. This involves working backwards from available information through accounting analysis."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:41:10.307Z",
   "updated_at": "2026-04-06T03:41:10.307Z",
-  "enriched_at": "2026-04-06T16:08:54.290Z"
+  "enriched_at": "2026-04-06T16:08:54.290Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:28:22.615Z"
 }

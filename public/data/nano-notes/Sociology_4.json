@@ -9,36 +9,36 @@
     "title": "Family",
     "readTime": "8 min",
     "keyPoints": [
-      "**Nuclear family** consists of parents and their dependent children living together in one household",
-      "**Extended family** includes relatives beyond parents and children, such as grandparents, aunts, uncles and cousins",
-      "**Marriage** is a legally or socially recognized union between two people, creating kinship ties",
-      "**Household** refers to all people living together in the same dwelling, who may or may not be related",
-      "**Patriarchal family** is male-dominated where the father has authority and makes major decisions",
-      "**Matriarchal family** is female-dominated where the mother has authority and controls family decisions",
-      "**Monogamy** is marriage to one partner at a time, while **polygamy** allows multiple spouses",
-      "**Arranged marriage** occurs when families choose partners for their children, common in Pakistani culture",
-      "**Joint family system** involves multiple generations living together, sharing resources and responsibilities"
+      "Sociology is the study of human social life, groups and societies",
+      "Sociology explores the social factors that shape human behavior and the way that society influences our daily lives",
+      "Structuralism is a macro perspective where societies are seen as sets of structures in which individuals play different roles - individuals have little choice",
+      "Interpretivism is a micro level approach in which individual is important - people make the societies and their own thoughts are important",
+      "Consensus approach is for equality in society or agreed norms - this is a stable form of society",
+      "Conflict approach is where values are not shared such as societies with different wealth are unstable",
+      "Functionalism is a consensus approach that focuses on social functions and asks what keeps the society together",
+      "Marxism is a conflict approach with different social classes - bourgeoisie (upper class) and proletariat (working class)",
+      "Feminism is a conflict approach where patriarchy exists and males are more dominant"
     ],
     "definitions": [
       {
-        "term": "Nuclear family",
-        "definition": "A family unit consisting of two parents and their dependent children living together in one household"
+        "term": "Sociology",
+        "definition": "The study of human social life, groups and societies"
       },
       {
-        "term": "Extended family",
-        "definition": "A family unit that includes relatives beyond the nuclear family, such as grandparents, aunts, uncles and cousins"
+        "term": "Structuralism",
+        "definition": "Macro perspective where societies are seen as sets of structures in which individuals play different roles - individuals have little choice"
       },
       {
-        "term": "Marriage",
-        "definition": "A legally or socially recognized union between two people that creates kinship ties and mutual obligations"
+        "term": "Interpretivism",
+        "definition": "Micro level approach in which individual is important - the meanings individuals give to the society"
       },
       {
-        "term": "Household",
-        "definition": "All persons living together in the same dwelling, whether related by blood, marriage or not"
+        "term": "Functionalism",
+        "definition": "Consensus approach that focuses on social functions and asks what keeps the society together"
       },
       {
-        "term": "Kinship",
-        "definition": "Relationships between people based on blood ties (consanguinity) or marriage (affinity)"
+        "term": "Marxism",
+        "definition": "Conflict approach with different social classes - bourgeoisie (upper class) and proletariat (working class)"
       }
     ],
     "howToAnswer": [
@@ -71,17 +71,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse family with household - family is based on kinship ties, household is about living arrangements",
-      "Students often write 'extended family lives together' - clarify that extended family can live separately but maintain close ties",
-      "Don't assume nuclear family is always better - acknowledge cultural variations like joint families in Pakistan",
-      "Never say arranged marriage is 'forced' - distinguish between arranged (family involvement) and forced (no consent)",
-      "Students mix up patriarchal (male authority) with patrilineal (descent through father's line)"
+      "Confusing macro and micro perspectives between structuralism and interpretivism",
+      "Not understanding the difference between consensus and conflict approaches",
+      "Mixing up the different types of feminism - liberal, radical, and Marxist feminist"
     ],
     "examinerTips": [
-      "Family appears in every Paper 2 exam - learn all family types thoroughly",
-      "Use Pakistani examples like joint family systems in rural Punjab for cultural context",
-      "Always distinguish between family structure (who belongs) and family functions (what it does)",
-      "Remember that family forms vary across cultures - avoid Western bias in answers"
+      "Sociologists must select and use evidence in a balanced way or other sociologists may criticize the research",
+      "Focus on group (rather than individual) behavior and discuss the social influences on human life"
     ],
     "formulas": [],
     "keyDiagramDescription": "Family tree diagram showing nuclear family (parents + children) at center, with extended family members (grandparents, aunts, uncles, cousins) branching outward to illustrate kinship relationships and family structure",
@@ -109,7 +105,7 @@
       "Examiner Report 2022: 'Weaker responses failed to link family to broader social structures like class or gender inequality' — always connect family functions to wider societal power structures and social stratification systems"
     ],
     "keyDiagram": "Students must be able to draw a 'Family Functions Comparison Chart' showing three columns: Functionalist view (showing family as positive with functions like socialization, emotional support, economic cooperation), Marxist view (showing family as serving ruling class through reproducing labor power and ideology), and Feminist view (showing family as serving patriarchal interests through unpaid labor and male dominance). Include arrows showing how each perspective connects family to wider social structures (social order, capitalism, patriarchy respectively).",
-    "quickRecap": "Family is analyzed differently by major sociological perspectives: Functionalists see it as essential for social stability through socialization and emotional support. Marxists view family as reproducing capitalism by creating obedient workers and consumers. Feminists argue family serves patriarchal interests through women's unpaid domestic labor and emotional work. Key concepts include primary socialization, cultural capital transmission, ideological state apparatus, dual burden, and patriarchy."
+    "quickRecap": "Sociology studies human social life and societies through different approaches. Structuralism takes a macro view while interpretivism focuses on individual meanings. Consensus approaches like functionalism see shared values, while conflict approaches like Marxism and feminism highlight inequality and power struggles."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -117,5 +113,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:14:10.815Z",
   "updated_at": "2026-04-06T04:14:10.815Z",
-  "enriched_at": "2026-04-06T16:39:17.859Z"
+  "enriched_at": "2026-04-06T16:39:17.859Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:42:33.553Z"
 }

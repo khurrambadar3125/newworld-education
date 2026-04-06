@@ -9,36 +9,36 @@
     "title": "Rivers",
     "readTime": "8 min",
     "keyPoints": [
-      "**Hydraulic action** occurs when water forces air into cracks in rocks, causing them to break apart",
-      "**Attrition** happens when rocks and stones carried by the river knock against each other and break into smaller pieces",
-      "**Lateral erosion** creates **meanders** by eroding the outer bank where water flows fastest",
-      "**Deposition** occurs when a river loses energy and drops its load, creating features like **levees** and **deltas**",
-      "**Flooding** happens when discharge exceeds the capacity of the river channel",
-      "Rivers transport material by **traction** (rolling), **saltation** (bouncing), **suspension** (carried in water), and **solution** (dissolved)",
-      "**Oxbow lakes** form when meanders are cut off from the main river channel",
-      "**Waterfalls** form where hard rock overlies soft rock, creating a vertical drop through differential erosion",
-      "River valleys change from **V-shaped** in upper course to **flat and wide** in lower course due to lateral erosion"
+      "Rice is a kharif crop requiring warm temperatures for growth 20°C to 30°C, dry season for harvest, and monsoon rain for growth/flooding fields 1270-2000mms",
+      "Wheat is a rabi crop requiring mild/warm temperature 10degree – 20degree for growing and 20degrees for ripening, with light rain of dec-march helping growth",
+      "Cash crop farming uses large fields with higher capital required for modern irrigation system i.e. perennial canals, tubewells, sprinklers etc to use scientific methods",
+      "Subsistence farming utilizes small land with low capital invested, old irrigation methods like shaduf, desi variety of seeds, and most work done manually by family",
+      "Barani farming depends entirely on rainfall/rain-fed area with low banks/bunds constructed, traditional methods, and often sheep/goats reared as alternative source of income",
+      "Natural inundation farming can only be carried out after flooding, farmers have no control of water supply, variable seasonal cropping, and usually can only grow coarser grains",
+      "Important rabi crops include wheat, barley, grams, and pulses grown in areas with average winter temperatures above 10°C",
+      "Rice is not grown in areas which only practise barani farming because it requires over 1275mm rainfall in growing season",
+      "Winter crop growing enables double or multiple crop, provides job throughout the year, increases income of farmers and provides more source of foods"
     ],
     "definitions": [
       {
-        "term": "Meander",
-        "definition": "A large bend in a river formed by lateral erosion on the outer bank and deposition on the inner bank"
+        "term": "Cash crop",
+        "definition": "Crops grown for sale/profit/commercial rather than for consumption by the farmers"
       },
       {
-        "term": "Flood",
-        "definition": "When a river's discharge exceeds the capacity of its channel, causing water to overflow onto the floodplain"
+        "term": "Subsistence farming",
+        "definition": "Growing crops for own family"
       },
       {
-        "term": "Hydraulic action",
-        "definition": "A type of erosion where moving water forces air into cracks in rocks, causing them to break apart"
+        "term": "Kharif crop",
+        "definition": "Crops grown in warm season requiring temperatures 20°C to 30°C with monsoon rain"
       },
       {
-        "term": "Deposition",
-        "definition": "The laying down of sediment carried by a river when it loses energy"
+        "term": "Rabi crop",
+        "definition": "Crops grown in winter season requiring mild temperatures 10-20°C for growing"
       },
       {
-        "term": "Delta",
-        "definition": "A triangular area of deposited sediment at the mouth of a river where it meets a sea or lake"
+        "term": "Barani farming",
+        "definition": "Farming that depends entirely on rainfall/rain-fed area with traditional methods"
       }
     ],
     "howToAnswer": [
@@ -70,17 +70,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say rivers 'dig down' - always say 'erode vertically' or use specific erosion processes",
-      "Students often confuse attrition with abrasion - attrition is rocks hitting each other, abrasion is rocks hitting the riverbed",
-      "Don't say waterfalls 'move backwards' - say 'retreat upstream' through headward erosion",
-      "Never just say 'the river slows down' - explain WHY it loses energy (less gradient, increased friction, larger channel)",
-      "Students forget that deposition requires LOSS OF ENERGY, not just slow flow"
+      "Confusing kharif and rabi seasons - remember kharif needs warm temperatures and rabi needs mild temperatures",
+      "Not understanding that rice cannot be grown in barani areas due to insufficient rainfall requirements",
+      "Mixing up subsistence and cash crop farming characteristics and inputs"
     ],
     "examinerTips": [
-      "River landforms appear in Paper 2 almost every year - especially meanders and waterfalls",
-      "Always draw labelled diagrams for landform formation questions",
-      "Use examples from Pakistan like River Indus flooding or Tarbela Dam for water management",
-      "Link human activities to river processes - deforestation increases surface runoff and flooding"
+      "When describing farming types, focus on specific inputs like irrigation methods, machinery, and capital requirements",
+      "Remember to state both growing and ripening temperature requirements for crops, not just one"
     ],
     "formulas": [],
     "keyDiagramDescription": "Cross-section of a meander showing fast flow and erosion on outer bank, slow flow and deposition on inner bank, with arrows indicating water flow direction and processes occurring",
@@ -110,7 +106,7 @@
       "Examiner Report 2021: 'Candidates often stated that waterfalls form due to 'hard and soft rock' without explaining differential erosion' — always explain that soft rock erodes faster than hard rock, creating the vertical drop"
     ],
     "keyDiagram": "Students must be able to draw a cross-section of a river valley showing the three courses: Upper course with V-shaped valley, steep gradient, narrow channel and interlocking spurs; Middle course with wider valley floor, moderate gradient, meanders and possible floodplain; Lower course with wide floodplain, gentle gradient, large meanders, oxbow lakes and possible estuary. Include arrows showing water flow direction and label key features like river cliffs, slip-off slopes, and depositional areas.",
-    "quickRecap": "Rivers have three courses with distinct characteristics: steep upper course with waterfalls and V-shaped valleys, meandering middle course with moderate gradients, and gentle lower course with wide floodplains and oxbow lakes. Key processes are erosion (hydraulic action, abrasion, attrition), transportation (traction, saltation, suspension, solution), and deposition when velocity decreases. Formation sequences for landforms like oxbow lakes and waterfalls are commonly tested - learn the step-by-step processes."
+    "quickRecap": "Pakistan grows both kharif crops (like rice) in warm seasons and rabi crops (like wheat) in cooler seasons. Cash crop farming uses modern inputs and large capital while subsistence farming relies on traditional methods and family labor. Barani farming depends entirely on rainfall while some areas use natural flooding for agriculture."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +114,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:57:23.270Z",
   "updated_at": "2026-04-06T03:57:23.270Z",
-  "enriched_at": "2026-04-06T16:09:00.168Z"
+  "enriched_at": "2026-04-06T16:09:00.168Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:36:23.147Z"
 }

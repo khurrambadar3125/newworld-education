@@ -9,33 +9,33 @@
     "title": "Reversible reactions and equilibrium",
     "readTime": "8 min",
     "keyPoints": [
-      "A **reversible reaction** is one that can proceed in both the forward and backward directions simultaneously",
-      "At **dynamic equilibrium**, the rate of forward reaction equals the rate of backward reaction",
-      "The **Haber process** produces ammonia: N₂ + 3H₂ ⇌ 2NH₃ (exothermic reaction)",
-      "Haber process conditions: **450°C temperature, 200 atmospheres pressure, iron catalyst**",
-      "The **Contact process** produces sulfur trioxide: 2SO₂ + O₂ ⇌ 2SO₃ (exothermic reaction)",
-      "Contact process conditions: **450°C temperature, 1-2 atmospheres pressure, vanadium(V) oxide catalyst**",
-      "**Le Chatelier's principle**: if conditions change, equilibrium shifts to oppose the change",
-      "Increasing pressure favours the side with **fewer gaseous molecules**",
-      "Increasing temperature favours the **endothermic direction**",
-      "**Catalysts** speed up both forward and backward reactions equally, so equilibrium position is unchanged"
+      "Matter is made up of particles in three states: solid (fixed shape, high density, particles close together in orderly arrangement), liquid (no fixed shape, high density, particles close together but not in order), and gas (no fixed shape, low density, particles far apart with weak forces)",
+      "Melting is solid to liquid, particles gain energy and vibrate more, occurs at melting point, endothermic reaction because particles gain energy to break bonds",
+      "Freezing is liquid to solid, occurs at freezing point (also the m.p. of pure substance), exothermic reaction because particles give out energy to form bonds",
+      "For both freezing and melting, temperature remains constant during the process",
+      "Compounds are 2 or more elements chemically joined together (e.g. Sodium Chloride) containing covalent or ionic bonds",
+      "Mixtures are 2 or more substances which are not chemically joined together (e.g. Iron in Sulphur powder)",
+      "Pure substances have fixed composition, fixed Mp/Bp, produce only 1 spot on chromatogram, and all molecules are the same",
+      "Mixtures have variable composition, variable Bp/Mp, 2 or more spots on chromatogram, and 2 or more different molecules",
+      "Endothermic reaction means heat or energy enter (absorbed/gained) to break bonds",
+      "Exothermic means heat, energy exit (give out/lose) to form bonds"
     ],
     "definitions": [
       {
-        "term": "Reversible reaction",
-        "definition": "A chemical reaction that can proceed in both forward and backward directions"
+        "term": "Compound",
+        "definition": "2 or more elements chemically joined together, contains covalent or ionic bonds"
       },
       {
-        "term": "Dynamic equilibrium",
-        "definition": "The state where the rate of forward reaction equals the rate of backward reaction, and concentrations remain constant"
+        "term": "Mixture",
+        "definition": "2 or more substances which are not chemically joined together"
       },
       {
-        "term": "Le Chatelier's principle",
-        "definition": "If a system at equilibrium is subjected to a change, the equilibrium will shift to oppose that change"
+        "term": "Saturated solution",
+        "definition": "A solution where no more solid can dissolve in it"
       },
       {
-        "term": "Catalyst",
-        "definition": "A substance that increases the rate of a chemical reaction without being permanently changed"
+        "term": "Distillate",
+        "definition": "Liquid obtained from distillation process, collected in conical flask"
       }
     ],
     "howToAnswer": [
@@ -64,17 +64,13 @@
       ]
     },
     "commonMistakes": [
-      "Never use → for reversible reactions — always use ⇌ symbol",
-      "Students often say 'equilibrium stops' — it's dynamic so reactions continue at equal rates",
-      "Don't say catalysts 'shift equilibrium' — they only affect the rate of reaching equilibrium",
-      "Never confuse Haber (ammonia) with Contact (sulfur trioxide) process conditions",
-      "Students forget that fertiliser production requires ammonia to be converted to ammonium compounds"
+      "Confusing endothermic and exothermic - remember EN means energy ENTER, EX means energy EXIT",
+      "Thinking temperature changes during melting or freezing - it remains constant during both processes",
+      "Confusing pure substances and mixtures - pure substances have fixed properties while mixtures have variable properties"
     ],
     "examinerTips": [
-      "Reversible reactions appear in every Paper 2 — know both industrial processes thoroughly",
-      "Always include the ⇌ symbol when writing reversible reaction equations",
-      "Link industrial processes to Pakistan's agricultural needs for fertilisers",
-      "Remember that compromise conditions are used in industry to balance yield and rate"
+      "Any question that wants the method to obtain crystals, the process will be crystallization",
+      "Use electronic balance to measure mass of chemical, thermometer for temperature, and measuring cylinder OR burette OR pipette for volume of gas"
     ],
     "formulas": [
       "N₂ + 3H₂ ⇌ 2NH₃",
@@ -104,7 +100,7 @@
       "Examiner Report 2023: 'Weak responses did not link temperature changes to enthalpy values' — always identify whether the reaction is exothermic or endothermic before explaining temperature effects on equilibrium"
     ],
     "keyDiagram": "Energy vs Time graph showing: (1) Forward and backward reaction rates starting from different points, (2) Both rates changing over time until they meet at the same level, (3) Horizontal line after intersection point labeled 'Equilibrium reached - rates are equal', (4) Y-axis labeled 'Rate of reaction' and X-axis labeled 'Time', (5) Two curves clearly labeled 'Rate of forward reaction' and 'Rate of backward reaction'. This diagram demonstrates that equilibrium is dynamic with equal rates, not static.",
-    "quickRecap": "Equilibrium occurs when forward and backward reaction rates are equal in a closed system. Le Chatelier's principle states that if conditions change, the equilibrium shifts to oppose that change. Increasing temperature favors endothermic direction; increasing pressure favors the side with fewer gas molecules. Catalysts speed up both reactions equally so don't affect equilibrium position, only how quickly it's reached."
+    "quickRecap": "Matter exists in three states with different particle arrangements and forces. Changes of state involve energy transfer - melting is endothermic, freezing is exothermic, with constant temperature during the process. Pure substances have fixed properties while mixtures have variable properties, and various separation techniques can be used to purify mixtures."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -112,5 +108,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:54:00.352Z",
   "updated_at": "2026-04-05T20:54:00.352Z",
-  "enriched_at": "2026-04-06T16:04:54.300Z"
+  "enriched_at": "2026-04-06T16:04:54.300Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:16:21.114Z"
 }

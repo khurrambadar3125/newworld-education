@@ -9,36 +9,36 @@
     "title": "Graphs",
     "readTime": "8 min",
     "keyPoints": [
-      "The **gradient** of a line segment is calculated using m = (y₂ - y₁)/(x₂ - x₁) where (x₁,y₁) and (x₂,y₂) are two points on the line",
-      "**Parallel lines** have equal gradients and will never intersect",
-      "**Perpendicular lines** have gradients that multiply to give -1 (m₁ × m₂ = -1)",
-      "The equation of a **straight line** is y = mx + c where m is the gradient and c is the y-intercept",
-      "**Travel graphs** show distance on y-axis and time on x-axis, with gradient representing speed",
-      "**Quadratic functions** have the form y = ax² + bx + c and produce U-shaped or inverted U-shaped curves called parabolas",
-      "**Graphical solutions** to equations are found at intersection points of curves or lines",
-      "A horizontal line on a travel graph indicates the object is **stationary** (zero speed)",
-      "The **turning point** of a quadratic graph is the minimum or maximum point of the parabola"
+      "Natural numbers are all the positive integers from 1 to infinity, fractions or decimals are not included, they are also called Positive Integers",
+      "Whole Numbers are all the positive integers including zero",
+      "Integers include positive numbers, negative numbers or zero and are the most common word used by the examiner",
+      "Prime Numbers are numbers that have exactly 2 factors: 1 and the number itself",
+      "Rational numbers are any whole number that can be written as a pure fraction or decimal, they must either end (terminating decimals) or repeat (recurring decimals)",
+      "Irrational numbers are any number that cannot be expressed in the form of a fraction, examples include π, √2, √7",
+      "Squared numbers are multiplying the number with itself, the square of the number is called a Perfect Square and is always positive",
+      "Cube numbers are multiplying the number with itself that number of times, the cube of the number is called a Perfect cube and may be positive or negative",
+      "Candidates are required to memorise square numbers up till 15 for Paper 1"
     ],
     "definitions": [
       {
-        "term": "Gradient",
-        "definition": "The measure of steepness of a line calculated as rise over run or change in y divided by change in x"
+        "term": "Prime Numbers",
+        "definition": "Numbers that have exactly 2 factors: 1 and the number itself"
       },
       {
-        "term": "Parallel lines",
-        "definition": "Lines that have the same gradient and never meet or intersect"
+        "term": "Composite Numbers",
+        "definition": "Numbers that have more than two factors"
       },
       {
-        "term": "Perpendicular lines",
-        "definition": "Lines that meet at right angles (90°) and whose gradients multiply to give -1"
+        "term": "HCF (Highest common factor)",
+        "definition": "The largest number that is a common factor of two different numbers"
       },
       {
-        "term": "Quadratic function",
-        "definition": "A function of the form y = ax² + bx + c where a ≠ 0, which produces a parabolic curve"
+        "term": "LCM (Lowest common multiple)",
+        "definition": "The smallest number that is the multiple of two different numbers"
       },
       {
-        "term": "y-intercept",
-        "definition": "The point where a line crosses the y-axis, occurring when x = 0"
+        "term": "Reciprocals",
+        "definition": "The number obtained by interchanging the numerators and denominators of the original number"
       }
     ],
     "howToAnswer": [
@@ -70,17 +70,16 @@
       ]
     },
     "commonMistakes": [
-      "Never write gradient as (x₂ - x₁)/(y₂ - y₁) — always put y-values on top",
-      "Students often forget to include units when calculating speed from travel graphs",
-      "Never say parallel lines have the same y-intercept — they have the same gradient",
-      "Students confuse distance-time graphs with speed-time graphs when interpreting motion",
-      "Never read graphical solutions to the nearest integer unless specifically asked — give exact decimal values shown on the graph"
+      "Including fractions or decimals in natural numbers when they are not included",
+      "Forgetting that integers is the most common word used by the examiner",
+      "Not recognizing that squared numbers are always positive while cube numbers may be positive or negative",
+      "Repeating the same element in a set when you are not allowed to do this",
+      "Confusing terminating decimals (which end) with recurring decimals (which repeat)"
     ],
     "examinerTips": [
-      "Travel graphs appear frequently in Paper 2 — always check if axes show distance or displacement",
-      "When finding perpendicular gradient, use m₂ = -1/m₁ for quick calculation",
-      "Always extend lines neatly to find y-intercept when drawing straight line graphs",
-      "For quadratic graphs, plot at least 5 points and join with a smooth curve"
+      "Integers is the most common word used by the examiner",
+      "Candidates are required to memorise square numbers up till 15 for Paper 1",
+      "A colon ':' should be read as 'Such that' in set notation"
     ],
     "formulas": [
       "Gradient: m = (y₂ - y₁)/(x₂ - x₁)",
@@ -112,7 +111,7 @@
       "Examiner Report 2022: 'Candidates often forgot to substitute both x-coordinates correctly in the gradient formula' — ensure you identify both points clearly before applying (y₂-y₁)/(x₂-x₁)"
     ],
     "keyDiagram": "Draw a coordinate system showing a parabola (or given curve) with two distinct points A and B marked clearly. Draw a straight line connecting these points (the chord). Label the coordinates of both points, show the horizontal distance (x₂-x₁) and vertical distance (y₂-y₁) with dotted lines forming a right triangle. Include arrows indicating positive x and y directions, and annotate the gradient calculation alongside.",
-    "quickRecap": "Gradient of a line/chord = (y₂-y₁)/(x₂-x₁) where you have two points. For curves, substitute x-values into the equation to find corresponding y-coordinates first. Always simplify algebraically by factoring before canceling terms. Remember: chord connects two points, tangent touches at one point only."
+    "quickRecap": "Numbers are classified into various families including natural numbers (positive integers), whole numbers (including zero), integers (positive, negative or zero), and rational/irrational numbers. Prime numbers have exactly 2 factors while composite numbers have more than two factors. Students must memorize square numbers up to 15 for Paper 1 and understand that integers is the most commonly used term by examiners."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +119,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:24:18.709Z",
   "updated_at": "2026-04-05T21:24:18.709Z",
-  "enriched_at": "2026-04-06T16:08:01.831Z"
+  "enriched_at": "2026-04-06T16:08:01.831Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:25:56.018Z"
 }

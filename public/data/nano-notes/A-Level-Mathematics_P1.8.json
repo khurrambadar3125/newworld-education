@@ -9,33 +9,36 @@
     "title": "Integration",
     "readTime": "8 min",
     "keyPoints": [
-      "**Indefinite integration** is the reverse process of differentiation, written as ∫f(x)dx = F(x) + c where F'(x) = f(x)",
-      "**Constant of integration** (+c) must always be included in indefinite integrals to represent the family of possible antiderivatives",
-      "**Definite integration** ∫[a to b]f(x)dx gives a numerical value representing the area between the curve and x-axis from x = a to x = b",
-      "**Fundamental Theorem of Calculus** states that ∫[a to b]f(x)dx = [F(x)][a to b] = F(b) - F(a)",
-      "**Area under a curve** is calculated using definite integration, taking absolute values when the function is negative",
-      "**Area between two curves** f(x) and g(x) is found using ∫[a to b]|f(x) - g(x)|dx where curves intersect at x = a and x = b",
-      "**Volume of revolution** about x-axis is V = π∫[a to b][f(x)]²dx when curve y = f(x) is rotated",
-      "**Volume of revolution** about y-axis is V = π∫[c to d][g(y)]²dy when curve x = g(y) is rotated",
-      "**Integration by substitution** requires identifying u, finding du/dx, changing limits if definite, and substituting back",
-      "**Integration by parts** uses ∫udv = uv - ∫vdu, choosing u as the function that becomes simpler when differentiated"
+      "Integration is about reversing differentiation",
+      "Integration can be used for finding the area under a curve",
+      "Area calculations involve the concept of area as the limit of a sum",
+      "Areas below the x-axis require special consideration",
+      "Integration can find the area between two curves",
+      "Integration can find the area between a curve and the y-axis",
+      "The reverse chain rule is an integration technique",
+      "Improper integrals are covered as an integration topic",
+      "Integration can be used for finding volumes"
     ],
     "definitions": [
       {
-        "term": "Indefinite integral",
-        "definition": "The general antiderivative of a function f(x), written as ∫f(x)dx = F(x) + c, where F'(x) = f(x) and c is the constant of integration"
+        "term": "Integration",
+        "definition": "Reversing differentiation"
       },
       {
-        "term": "Definite integral",
-        "definition": "The numerical value ∫[a to b]f(x)dx = F(b) - F(a) representing the net area between the curve y = f(x) and the x-axis from x = a to x = b"
+        "term": "Area under a curve",
+        "definition": "Found using integration techniques"
       },
       {
-        "term": "Volume of revolution",
-        "definition": "The volume of the solid formed when a curve is rotated completely about an axis, calculated using π∫[a to b][f(x)]²dx for rotation about the x-axis"
+        "term": "Area as the limit of a sum",
+        "definition": "Method for calculating areas using integration"
       },
       {
-        "term": "Integration by parts",
-        "definition": "A technique for integrating products of functions using the formula ∫udv = uv - ∫vdu"
+        "term": "Reverse chain rule",
+        "definition": "Integration technique that reverses the chain rule from differentiation"
+      },
+      {
+        "term": "Improper integrals",
+        "definition": "Special type of integrals covered in the integration chapter"
       }
     ],
     "howToAnswer": [
@@ -63,19 +66,8 @@
         "Mark 4: Correct final answer 8/3"
       ]
     },
-    "commonMistakes": [
-      "Never forget the constant of integration (+c) in indefinite integrals — always include it even if not explicitly asked",
-      "Students often ignore when the curve goes below the x-axis in area calculations — must use absolute values or split the integral",
-      "Never substitute limits before integrating when using substitution method — change the limits or substitute back to original variable first",
-      "Students frequently confuse volume formulas — remember π∫[f(x)]²dx for rotation about x-axis, not just π∫f(x)dx",
-      "Never use integration by parts when simple power rule or standard results work — choose the simplest method first"
-    ],
-    "examinerTips": [
-      "Integration appears in every Paper 1 and Paper 2 — master the basic techniques thoroughly",
-      "Always sketch the region for area and volume questions to understand the problem geometry",
-      "Show clear substitution of limits in definite integrals for method marks",
-      "Volume of revolution questions often worth 6-8 marks — check your π factor and squared terms carefully"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [
       "∫xⁿdx = (xⁿ⁺¹)/(n+1) + c (n ≠ -1)",
       "∫(1/x)dx = ln|x| + c",
@@ -111,7 +103,7 @@
       "Examiner Report 2023: 'Common mistake was incorrectly applying the power rule, writing x^n+1/n instead of x^n+1/(n+1)' — remember to divide by the new power, not the original power"
     ],
     "keyDiagram": "Students must be able to sketch and interpret area under curve diagrams. Draw a parabola y = x² from x = 0 to x = 2, shade the region between the curve and x-axis. Label the curve equation, mark the limits clearly on x-axis (0 and 2), and indicate that the shaded area equals ∫₀² x²dx = [x³/3]₀² = 8/3. Include coordinate axes with appropriate scales and show that integration finds this area.",
-    "quickRecap": "Integration is the reverse of differentiation. Increase the power by 1, then divide by the new power: ∫xⁿdx = xⁿ⁺¹/(n+1) + c. For definite integrals, substitute the upper limit minus lower limit into your integrated function. Always include +c for indefinite integrals, and remember integration can find areas under curves."
+    "quickRecap": "Integration chapter covers reversing differentiation and finding areas under curves. The chapter includes area calculations as limits of sums, areas below the x-axis, and areas between curves. Advanced topics include the reverse chain rule, improper integrals, and finding volumes through integration."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -119,5 +111,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:50:46.121Z",
   "updated_at": "2026-04-06T04:50:46.121Z",
-  "enriched_at": "2026-04-06T16:09:48.007Z"
+  "enriched_at": "2026-04-06T16:09:48.007Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:48:00.104Z"
 }

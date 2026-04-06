@@ -9,36 +9,32 @@
     "title": "Vectors",
     "readTime": "8 min",
     "keyPoints": [
-      "A **vector** has both magnitude and direction, represented as a column vector or using i, j notation",
-      "The **magnitude** of vector a is written as |a| and calculated using Pythagoras' theorem",
-      "**Position vectors** describe the position of a point relative to the origin O",
-      "Vector **addition** follows the triangle rule: a + b = b + a (commutative property)",
-      "**Scalar multiplication** ka multiplies the magnitude by |k| and reverses direction if k < 0",
-      "Two vectors are **parallel** if one is a scalar multiple of the other: a = kb",
-      "The **zero vector** 0 has magnitude zero and undefined direction",
-      "Vector **subtraction** a - b represents the vector from point B to point A",
-      "**Unit vectors** have magnitude 1 and show direction only"
+      "The solution(s) of a pair of linear and/or non-linear equations correspond to the coordinates of the intersection point(s) of the graphs",
+      "A pair of simultaneous linear equations is of the form ax + by = p, cx + dy = q, where a, b, c and d are constants, x and y are variables to be determined",
+      "There is usually one solution to a pair of simultaneous linear equations",
+      "The methods most commonly used to solve simultaneous linear equations are elimination and substitution",
+      "In elimination, the coefficient of one of the variables is made the same in both equations. The equations are then either added or subtracted to form a single linear equation with only one variable",
+      "In substitution, a variable is made the subject of the chosen equation. This equation is then substituted into the equation that was not chosen to solve for the variable",
+      "A non-linear equation is not of the form ax + by = p",
+      "The method most commonly used to solve simultaneous non-linear equations is substitution",
+      "For non-linear equations: Step 1 - Use the linear equation to express one of the variables in terms of the other. Step 2 - Substitute it into the non-linear equation. Step 3 - Substitute the value(s) obtained in Step 2 into the linear equation to obtain the value of the other variable"
     ],
     "definitions": [
       {
-        "term": "Vector",
-        "definition": "A quantity that has both magnitude and direction"
+        "term": "Simultaneous linear equations",
+        "definition": "A pair of equations of the form ax + by = p, cx + dy = q, where a, b, c and d are constants, x and y are variables to be determined"
       },
       {
-        "term": "Magnitude",
-        "definition": "The length or size of a vector, always positive or zero"
+        "term": "Non-linear equation",
+        "definition": "An equation that is not of the form ax + by = p"
       },
       {
-        "term": "Position vector",
-        "definition": "A vector that describes the position of a point relative to a fixed origin"
+        "term": "Elimination method",
+        "definition": "The coefficient of one of the variables is made the same in both equations. The equations are then either added or subtracted to form a single linear equation with only one variable"
       },
       {
-        "term": "Unit vector",
-        "definition": "A vector with magnitude 1 that indicates direction only"
-      },
-      {
-        "term": "Parallel vectors",
-        "definition": "Vectors that have the same or opposite direction, where one is a scalar multiple of another"
+        "term": "Substitution method",
+        "definition": "A variable is made the subject of the chosen equation. This equation is then substituted into the equation that was not chosen to solve for the variable"
       }
     ],
     "howToAnswer": [
@@ -67,17 +63,13 @@
       ]
     },
     "commonMistakes": [
-      "Never write vectors without brackets - always use (x, y) or column vector notation",
-      "Students often forget to take the square root when finding magnitude",
-      "Writing |a| as negative - magnitude is always positive or zero",
-      "Confusing vector addition with scalar multiplication",
-      "Not showing that vectors are parallel by finding the scalar multiple k"
+      "Not making coefficients the same before adding or subtracting in elimination method",
+      "Forgetting to substitute back to find the second variable",
+      "Not using the linear equation first when solving non-linear simultaneous equations"
     ],
     "examinerTips": [
-      "Vector questions appear in every Paper 2 - usually worth 8-12 marks total",
-      "Always draw a clear diagram showing vectors as directed line segments",
-      "Show all steps when calculating magnitude using Pythagoras",
-      "For parallel vectors, always find the value of k where a = kb"
+      "Use the linear equation to express one variable in terms of the other when solving non-linear equations",
+      "Substitute the values of x into the linear equation to obtain the corresponding values of y"
     ],
     "formulas": [
       "|a| = √(x² + y²) for vector a = (x, y)",
@@ -110,7 +102,7 @@
       "Examiner Report 2022: 'Common error was treating vectors as scalars when solving simultaneous equations' — remember to equate corresponding components separately when solving vector equations"
     ],
     "keyDiagram": "Essential vector diagram should show: coordinate axes with unit vectors i and j clearly labeled, origin O marked, position vectors drawn as arrows from origin to points, displacement vectors shown between points (not from origin), velocity vectors drawn with appropriate direction and labeled with components. Include time parameter t in position equations when showing motion.",
-    "quickRecap": "Vectors have magnitude and direction, expressed as ai + bj. Position vectors start from origin, displacement vectors connect two points. To find unknown components, equate corresponding i and j parts separately. For motion problems, position = initial position + velocity × time. Collinear points satisfy r₂ = r₁ + λ(r₃ - r₁)."
+    "quickRecap": "Simultaneous equations can be linear or non-linear, with solutions corresponding to intersection points of graphs. Linear equations are commonly solved using elimination or substitution methods. For non-linear equations, substitution is the preferred method, starting with the linear equation to express one variable in terms of another."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +110,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:17:04.589Z",
   "updated_at": "2026-04-06T04:17:04.589Z",
-  "enriched_at": "2026-04-06T16:23:41.104Z"
+  "enriched_at": "2026-04-06T16:23:41.104Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:48:46.079Z"
 }

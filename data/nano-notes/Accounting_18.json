@@ -9,31 +9,31 @@
     "title": "Accounts of clubs and societies",
     "readTime": "8 min",
     "keyPoints": [
-      "**Clubs and societies** are non-profit organizations that prepare accounts to show how funds are used for members' benefit",
-      "**Receipts and Payments Account** is a summary of cash received and cash paid during a specific period",
-      "**Subscriptions** are the main source of income for clubs and include current year, arrears from previous year, and advance payments",
-      "**Income and Expenditure Account** is equivalent to a Profit and Loss Account but shows surplus or deficit instead of profit or loss",
-      "**Accumulated Fund** represents the capital of a club and equals assets minus liabilities",
-      "**Life membership fees** are treated as capital receipts and transferred to a separate Life Membership Fund",
-      "**Entrance fees** are usually treated as revenue receipts unless stated otherwise in the question",
-      "Subscriptions must be adjusted for **accruals** (owing) and **prepayments** (paid in advance) to find the correct amount for Income and Expenditure Account"
+      "Non-profit organisations are covered under Topic 14 and include what are non-profit organisations, accumulated funds, subscriptions, and final accounts of NPOs",
+      "Non-profit organisations have accumulated funds as a key component of their accounting structure",
+      "Subscriptions are a specific element that must be accounted for in non-profit organisations",
+      "Final accounts of NPOs (Non-Profit Organisations) have a specific structure different from other business types",
+      "Non-profit organisations are distinct from sole traders, partnerships, and limited companies in their accounting treatment",
+      "The accounting process deals with measuring, identifying, and communicating financial information which facilitates the preparation of financial statements",
+      "Bookkeeping involves recording financial transactions from source documents whereas accounting deals with maintaining financial statements from the bookkeeping records",
+      "Assets equal Capital plus Liabilities, and every transaction must maintain this fundamental accounting equation"
     ],
     "definitions": [
       {
-        "term": "Receipts and Payments Account",
-        "definition": "A summary of all cash receipts and cash payments during a specific period, similar to a cash book summary"
+        "term": "Assets",
+        "definition": "The resources owned and controlled by a company"
       },
       {
-        "term": "Income and Expenditure Account",
-        "definition": "An account prepared by non-profit organizations showing revenue income and expenditure to determine surplus or deficit"
+        "term": "Capital",
+        "definition": "The number of resources and funds provided by the owner injected into the business"
       },
       {
-        "term": "Accumulated Fund",
-        "definition": "The excess of assets over liabilities in a club or society, equivalent to capital in a business"
+        "term": "Liability",
+        "definition": "The money owed to another firm or an entity"
       },
       {
-        "term": "Subscriptions",
-        "definition": "Regular payments made by members to a club or society for membership benefits"
+        "term": "Accounting",
+        "definition": "The process that deals with measuring, identifying, and communicating financial information recorded by the book-keeper which facilitates the preparation of financial statements"
       }
     ],
     "howToAnswer": [
@@ -61,17 +61,13 @@
       ]
     },
     "commonMistakes": [
-      "Never add all subscription figures together - always adjust for accruals and prepayments",
-      "Students often confuse owing (add to cash received) with advance (deduct from cash received)",
-      "Never show profit/loss in Income and Expenditure Account - always use surplus/deficit",
-      "Students forget to show subscriptions owing as current assets and subscriptions in advance as current liabilities in Balance Sheet",
-      "Never treat all receipts as revenue - life membership and entrance fees may be capital"
+      "Confusing bookkeeping with accounting - bookkeeping involves recording financial transactions whereas accounting deals with maintaining financial statements",
+      "Incorrectly applying the accounting equation - Assets = Capital + Liabilities must always balance",
+      "Mixing up debit and credit entries - an increase in an asset is a debit and a decrease is a credit"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2 Question 4 or 5",
-      "Always read carefully whether entrance fees are revenue or capital receipts",
-      "Show clear workings for subscription adjustments to earn method marks",
-      "Remember that clubs have Accumulated Fund, not Capital"
+      "Remember that the accounting process starts once the book-keeper finishes recording the financial transactions",
+      "Understand that non-profit organisations have specific accounting requirements including accumulated funds and subscriptions treatment"
     ],
     "formulas": [
       "Subscription income = Cash received + Owing at end - Owing at start - Advance at end + Advance at start",
@@ -102,7 +98,7 @@
       "Examiner Report 2021: 'Common error was treating all equipment as revenue expenditure' — remember that equipment purchases are capital items shown in Balance Sheet, only depreciation goes to Income and Expenditure Account"
     ],
     "keyDiagram": "Students must draw a T-account format showing the relationship between Receipts & Payments Account (left side: opening cash, all receipts; right side: all payments, closing cash) and Income & Expenditure Account (left side: all expenses adjusted for accruals/prepayments; right side: all income adjusted for accruals/prepayments, with surplus/deficit balancing). Include arrows showing how items transfer between accounts, with cash items going to R&P Account and adjusted figures going to I&E Account. Show the Balance Sheet structure with Fixed Assets, Current Assets (including closing cash from R&P Account), Current Liabilities, and Accumulated Fund calculation.",
-    "quickRecap": "Clubs prepare Receipts & Payments Account (summary of cash book) and Income & Expenditure Account (like Profit & Loss for non-profits). Key difference: R&P shows actual cash movements, I&E shows adjusted income/expenses for the period. Accumulated Fund replaces Capital - calculate as Assets minus Liabilities. Always adjust subscriptions for prepayments/arrears when moving from cash-based to accruals-based accounts."
+    "quickRecap": "Non-profit organisations (clubs and societies) have specific accounting requirements covered under Topic 14. They involve accumulated funds, subscriptions, and specialized final accounts. The fundamental accounting equation Assets = Capital + Liabilities applies, and accounting involves measuring, identifying, and communicating financial information to prepare financial statements."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -110,5 +106,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:41:33.971Z",
   "updated_at": "2026-04-06T03:41:33.971Z",
-  "enriched_at": "2026-04-06T16:09:20.667Z"
+  "enriched_at": "2026-04-06T16:09:20.667Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:28:36.185Z"
 }

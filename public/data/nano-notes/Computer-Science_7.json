@@ -9,37 +9,37 @@
     "title": "Algorithm design and problem solving",
     "readTime": "8 min",
     "keyPoints": [
-      "**Program development life cycle** has 5 stages: Analysis, Design, Coding, Testing, Maintenance",
-      "**Analysis** involves understanding the problem, identifying inputs/processes/outputs, and defining requirements",
-      "**Design** stage creates the algorithm using pseudocode or flowcharts before writing actual code",
-      "**Pseudocode** uses structured English to represent algorithm logic without syntax rules",
-      "**Coding** translates the design into a specific programming language with correct syntax",
-      "**Testing** uses test data (normal, extreme, erroneous) to check the program works correctly",
-      "**Trace tables** show how variables change step-by-step during algorithm execution",
-      "**Common algorithms** include input validation, counting occurrences, finding totals, finding maximum/minimum",
-      "To **find the purpose** of an algorithm, trace through with sample data and observe the output",
-      "**Logic errors** are found by desk checking or trace tables when output is incorrect but program runs"
+      "Binary system uses base 2 with 0s and 1s and is used to store data in registers and process data in logic gates and computers",
+      "Hexadecimal system uses base 16 with digits 0 to 9 and alphabets A to F, and is used in colour codes, error codes and IP & MAC addresses",
+      "Hexadecimal is easily understandable, easier to debug, and takes less space on the screen",
+      "Overflow error is the result of carrying out a calculation that produces a value too large for the computer's allocated word size",
+      "Each shift left is equivalent to multiplying the binary number by 2^n, each shift right is equivalent to dividing the binary number by 2^n",
+      "Two's complement format is used to represent negative binary numbers where the leftmost bit is changed to a negative value",
+      "A character set is a list of all characters and symbols represented by a computer where each character and symbol has a unique value",
+      "Sampling is used by determining the amplitude of the sound after set intervals to give an approximate representation of the sound wave",
+      "Sample rate is the number of samples taken per second, sampling resolution is the number of bits required per sample",
+      "The accuracy of a sound file increases with greater sample rates and sampling resolutions, but so does the file size"
     ],
     "definitions": [
       {
-        "term": "Algorithm",
-        "definition": "A sequence of instructions that can be followed to complete a task"
+        "term": "Character set",
+        "definition": "A list of all characters and symbols represented by a computer"
       },
       {
-        "term": "Pseudocode",
-        "definition": "A method of writing algorithms using structured English without programming language syntax"
+        "term": "Overflow error",
+        "definition": "The result of carrying out a calculation that produces a value too large for the computer's allocated word size"
       },
       {
-        "term": "Trace table",
-        "definition": "A table showing how the values of variables change as each step of an algorithm is executed"
+        "term": "Sampling",
+        "definition": "Used by determining the amplitude of the sound after set intervals. This gives an approximate representation of the sound wave"
       },
       {
-        "term": "Test data",
-        "definition": "Data used to test a program including normal, extreme and erroneous values"
+        "term": "Sample rate",
+        "definition": "The number of samples taken per second"
       },
       {
-        "term": "Logic error",
-        "definition": "An error in the algorithm that produces incorrect output but allows the program to run"
+        "term": "Sampling resolution",
+        "definition": "The number of bits required per sample (i.e: bit depth)"
       }
     ],
     "howToAnswer": [
@@ -72,17 +72,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'the program is tested' — always say 'the program is tested using test data'",
-      "Students often confuse syntax errors with logic errors — syntax errors stop compilation",
-      "Don't trace variables that aren't in the table — only complete what's asked",
-      "Never skip steps in trace tables — show every single change to variables",
-      "Students write 'the algorithm adds numbers' instead of being specific about what it calculates"
+      "Forgetting that the extra carry in binary addition indicates that overflow error has occurred when the answer is greater than 255",
+      "Not recognizing that if leftmost 1 bits are lost while shifting to the left, an error will occur because the limit of the maximum number of left shifts possible will have been exceeded",
+      "Not understanding that if rightmost 1 bits are lost while shifting to the right, an error will occur because the limit of the maximum number of right shifts possible will have been exceeded"
     ],
     "examinerTips": [
-      "Trace table questions appear in almost every Paper 2 exam",
-      "Always show your working when identifying algorithm purpose",
-      "Use the exact values given in the question for trace tables",
-      "Purpose questions need specific answers like 'finds the largest number' not 'processes data'"
+      "When converting binary to hexadecimal, break into sets of 4 bits for easier conversion",
+      "Remember that in two's complement format, the leftmost bit determines the sign of the number"
     ],
     "formulas": [],
     "keyDiagramDescription": "Program development life cycle showing 5 connected stages: Analysis → Design → Coding → Testing → Maintenance, with arrows showing the flow and possible returns to previous stages",
@@ -110,7 +106,7 @@
       "Examiner Report 2021: 'Candidates frequently omitted proper loop termination conditions leading to infinite loops' — always ensure your loops have clear start, condition, and increment/decrement statements"
     ],
     "keyDiagram": "Students must be able to draw a problem-solving cycle diagram showing: 1) Problem identification (rectangle), 2) Analysis and decomposition (diamond), 3) Algorithm design (rectangle), 4) Implementation (rectangle), 5) Testing and evaluation (oval), with arrows showing the cyclical nature and feedback loops. Include decision points where the process may return to earlier stages if issues are found during testing.",
-    "quickRecap": "Algorithm design follows a structured approach: analyze the problem, break it into smaller sub-problems (decomposition), design step-by-step solutions using pseudocode or flowcharts, then test with sample data. Always initialize variables, use clear selection and iteration structures, and ensure proper input/output statements. Remember that algorithms must be unambiguous, finite, and produce the correct output for all valid inputs."
+    "quickRecap": "Data representation involves converting between binary, denary and hexadecimal number systems. Binary uses base 2 and is fundamental for computer processing, while hexadecimal uses base 16 and is beneficial for representing data like colour codes and addresses. Understanding overflow errors, binary shifts, and two's complement is essential for working with binary arithmetic. Text, sound and images are all converted to binary for computer processing using different encoding methods."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -118,5 +114,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:45:45.922Z",
   "updated_at": "2026-04-06T03:45:45.922Z",
-  "enriched_at": "2026-04-06T16:08:57.103Z"
+  "enriched_at": "2026-04-06T16:08:57.103Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:46:51.753Z"
 }

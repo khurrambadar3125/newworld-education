@@ -9,37 +9,37 @@
     "title": "Chemical bonding",
     "readTime": "8 min",
     "keyPoints": [
-      "**Ionic bonding** occurs between metals and non-metals through complete transfer of electrons",
-      "**Covalent bonding** occurs between non-metals through sharing of electrons",
-      "**Metallic bonding** occurs between metal atoms through a sea of delocalised electrons",
-      "Ionic compounds form **giant ionic structures** with high melting and boiling points",
-      "Covalent compounds can form **simple molecular structures** or **giant covalent structures**",
-      "Metallic compounds form **giant metallic structures** with delocalised electrons",
-      "Ionic compounds conduct electricity when **molten or dissolved** but not when solid",
-      "Metals conduct electricity due to **mobile delocalised electrons**",
-      "Simple molecular covalent compounds have **weak intermolecular forces** between molecules",
-      "Giant covalent structures like diamond and graphite have **very high melting points**"
+      "Compound - 2 or more elements chemically joined together - Contains Covalent or Ionic Bonds",
+      "Mixtures - 2 or more substances which are not chemically joined together",
+      "Pure Substances have: Fixed composition, Fixed Mp/Bp, Produces only 1 spot on chromatogram, All molecules same (equal)",
+      "Mixture has: Variable Composition, Variable Bp/Mp, 2 or more spots on Chromatogram, 2 or more diff. molecules",
+      "Insoluble solid & Liquid → Filtration",
+      "Solid & Liquid solution → Crystallization (Obtaining solid) – Solute",
+      "Solid & Liquid solution → Distillation (Obtaining Liquid) – Solvent",
+      "2 Liquids mixed (Miscible) → Fractional Distillation",
+      "Mixture of Organic Compounds → Chromatography (Eg. Colour Dyes)",
+      "Filtration possible because: Liquid particles small enough to go thru filter paper pores, Solid particles too large"
     ],
     "definitions": [
       {
-        "term": "Ionic bonding",
-        "definition": "The electrostatic attraction between oppositely charged ions formed by the complete transfer of electrons from metal atoms to non-metal atoms"
+        "term": "Compound",
+        "definition": "2 or more elements chemically joined together - Contains Covalent or Ionic Bonds"
       },
       {
-        "term": "Covalent bonding",
-        "definition": "The sharing of pairs of electrons between atoms"
+        "term": "Mixtures",
+        "definition": "2 or more substances which are not chemically joined together"
       },
       {
-        "term": "Metallic bonding",
-        "definition": "The electrostatic attraction between metal cations and a sea of delocalised electrons"
+        "term": "Saturated solution",
+        "definition": "no more solid can dissolve in it"
       },
       {
-        "term": "Giant structure",
-        "definition": "A three-dimensional arrangement of atoms or ions extending throughout the crystal"
+        "term": "Distillate",
+        "definition": "Liquid obtained (Collected in conical flask)"
       },
       {
-        "term": "Delocalised electrons",
-        "definition": "Electrons that are not associated with a particular atom but are free to move throughout the structure"
+        "term": "Miscible",
+        "definition": "mixable - (Able to be mixed)"
       }
     ],
     "howToAnswer": [
@@ -71,17 +71,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'atoms' in ionic compounds — always say 'ions'",
-      "Students often confuse intermolecular forces (between molecules) with intramolecular forces (within molecules)",
-      "Never say metals 'share' electrons — they have delocalised electrons",
-      "Don't confuse simple molecular structures with giant covalent structures",
-      "Students forget that graphite conducts electricity due to delocalised electrons between layers"
+      "Confusing compounds (chemically joined) with mixtures (not chemically joined)",
+      "Not understanding that pure substances have fixed Mp/Bp while mixtures have variable Bp/Mp",
+      "Mixing up when to use crystallization (obtaining solid) versus distillation (obtaining liquid)"
     ],
     "examinerTips": [
-      "This topic appears in almost every Paper 2 exam",
-      "Always relate properties to structure and bonding for full marks",
-      "Use dot-and-cross diagrams to show electron transfer or sharing",
-      "Remember that conductivity questions often ask about molten vs solid states"
+      "Any question that wants the method to obtain (make) crystals, the process will be 'Crystalisation'",
+      "The constant temperature of distillation process = Boiling Point of pure liquid"
     ],
     "formulas": [],
     "keyDiagramDescription": "Dot-and-cross diagrams showing electron arrangements in ionic compounds (e.g., NaCl, MgO) and covalent molecules (e.g., H2O, CH4). Also include simple diagrams of giant ionic, metallic, and covalent structures.",
@@ -108,7 +104,7 @@
       "Examiner Report 2023: 'Candidates frequently stated that ionic compounds conduct electricity without specifying the state' — always mention that ionic compounds only conduct when molten or dissolved, not as solids"
     ],
     "keyDiagram": "Students must master dot-and-cross diagrams showing: (1) All valence electrons as dots for one element, crosses for another (2) Shared electron pairs in covalent bonds positioned between atoms (3) Lone pairs clearly positioned on relevant atoms (4) Correct total electron count. For ionic compounds, show complete electron transfer with resulting charges. Include examples like H₂O, NH₃, CH₄ for covalent and NaCl, MgO for ionic.",
-    "quickRecap": "Three main bond types: ionic (metal + non-metal, electron transfer, high melting points), covalent (non-metal + non-metal, electron sharing, lower melting points), and metallic (metals only, delocalized electrons, conduct electricity). Molecular shape depends on electron pairs around central atom including lone pairs. Intermolecular forces are weaker than chemical bonds and affect physical properties like boiling point."
+    "quickRecap": "Compounds are elements chemically joined together while mixtures are substances not chemically joined. Pure substances have fixed properties while mixtures have variable properties. Different separation techniques are used: filtration for insoluble solids, crystallization to obtain solids, distillation to obtain liquids, and fractional distillation for miscible liquids."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -116,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:51:56.142Z",
   "updated_at": "2026-04-05T20:51:56.142Z",
-  "enriched_at": "2026-04-06T16:02:37.912Z"
+  "enriched_at": "2026-04-06T16:02:37.912Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:14:58.685Z"
 }

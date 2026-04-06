@@ -9,37 +9,37 @@
     "title": "Population Structure",
     "readTime": "8 min",
     "keyPoints": [
-      "**Population structure** refers to the composition of a population by age and gender, shown as percentages or absolute numbers",
-      "A **population pyramid** is a horizontal bar chart showing the age and sex structure of a population at a specific time",
-      "**Wide base pyramids** indicate high birth rates and young populations, typical of LEDCs like rural Pakistan",
-      "**Narrow base pyramids** show declining birth rates and ageing populations, common in MEDCs",
-      "**Dependency ratio** is calculated as (young dependents + elderly dependents) ÷ working population × 100",
-      "**Young dependents** are aged 0-14 years and **elderly dependents** are aged 65+ years",
-      "**Working population** includes people aged 15-64 years who are economically active",
-      "Population structure affects economic development through workforce availability and dependency burden",
-      "Pakistan shows a **youthful population structure** with over 35% under 15 years old",
-      "Population policies aim to change population structure by influencing birth and death rates"
+      "Rice is a kharif crop requiring warm temperatures for growth 20°C to 30°C and monsoon rain for growth/flooding fields 1270-2000mms",
+      "Wheat is a rabi crop requiring mild/warm temperature 10 degree – 20 degree for growing and 20 degrees for ripening",
+      "Cash crop farms use large fields with higher capital required for modern irrigation system i.e. perennial canals, tubewells, sprinklers",
+      "Subsistence farming utilizes small land with low capital invested because of poverty and old irrigation methods like shaduf",
+      "Barani farming depends entirely on rainfall/rain-fed area with low banks/bunds constructed and field size varies considerably",
+      "Natural inundation farming can only be carried out after flooding and farmers have no control of water supply with variable seasonal cropping",
+      "The two main tobacco growing districts in Pakistan are in NWFP: Mardan and Peshawar",
+      "Winter crop growing enables double or multiple crop, provides job throughout the year, and increases income of farmers",
+      "Rice is not grown in areas which only practise barani farming because it requires over 1275mm rainfall in growing season",
+      "Rabi crops require light rain of dec-march (western depression) to help in growth and dry period in may suitable for harvesting"
     ],
     "definitions": [
       {
-        "term": "Population structure",
-        "definition": "The composition of a population broken down by age and gender, usually expressed as percentages"
+        "term": "Cash crop",
+        "definition": "Crops grown for sale/profit/commercial rather than for consumption by the farmers"
       },
       {
-        "term": "Population pyramid",
-        "definition": "A horizontal bar chart that shows the age and sex structure of a population at a particular point in time"
+        "term": "Subsistence farming",
+        "definition": "Growing crops for own family"
       },
       {
-        "term": "Dependency ratio",
-        "definition": "The ratio of dependents (aged 0-14 and 65+) to the working population (aged 15-64), expressed as a percentage"
+        "term": "Cash crop farming",
+        "definition": "Growing for sale and profit purpose"
       },
       {
-        "term": "Young dependents",
-        "definition": "People aged 0-14 years who are not economically active and depend on the working population"
+        "term": "Kharif crop",
+        "definition": "Crops grown in warm season requiring temperatures 20°C to 30°C with monsoon rain"
       },
       {
-        "term": "Elderly dependents",
-        "definition": "People aged 65 years and over who are retired and depend on the working population for support"
+        "term": "Barani farming",
+        "definition": "Farming that depends entirely on rainfall/rain-fed area with banks/bunds constructed"
       }
     ],
     "howToAnswer": [
@@ -74,17 +74,15 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse age groups - young dependents are 0-14, working population is 15-64, elderly dependents are 65+",
-      "Students often forget to multiply by 100 when calculating dependency ratios",
-      "Never say 'population pyramid shows population growth' - it shows structure at one point in time, not growth over time",
-      "Students confuse wide base (high birth rate) with population increase - a wide base can occur even if population is stable",
-      "Never describe pyramids as 'triangular' or 'rectangular' - use precise terms like 'wide base', 'narrow base', 'bulge in middle'"
+      "Confusing kharif and rabi seasons - rice is kharif (warm season) while wheat is rabi (cool season)",
+      "Not understanding that rice cannot be grown in barani areas due to insufficient rainfall requirements",
+      "Mixing up subsistence and cash crop farming characteristics and inputs",
+      "Forgetting that natural inundation farming has no control over water supply unlike irrigation farming"
     ],
     "examinerTips": [
-      "Population structure appears in almost every Paper 2 exam, often with calculation questions",
-      "Always read pyramid scales carefully - some show percentages, others show absolute numbers",
-      "For 6-mark questions, give 3 points with explanations rather than 6 simple points",
-      "Use specific age ranges (0-14, 15-64, 65+) rather than vague terms like 'young' or 'old'"
+      "Remember specific temperature requirements: wheat needs 10-20°C for growing and 20°C for ripening",
+      "Include both human inputs and natural conditions when describing crop farming systems",
+      "State specific rainfall amounts - rice requires over 1275mm, wheat needs moderate rainfall 150mm-300mm"
     ],
     "formulas": [
       "Dependency Ratio = (Young Dependents + Elderly Dependents) ÷ Working Population × 100",
@@ -114,7 +112,7 @@
       "Examiner Report 2021: 'Students frequently gave vague answers like \"lots of old people\" without using proper terminology' — use precise terms like 'high proportion of old dependents' and 'low dependency ratio' rather than casual language"
     ],
     "keyDiagram": "Population pyramid showing contrasting MEDC vs LEDC structures. MEDC pyramid: narrow base (low birth rate), wide middle section (large economically active population), broad top (many elderly). LEDC pyramid: wide base (high birth rate), narrow middle (smaller working population), very narrow top (few elderly). Include age groups 0-19, 20-64, 65+ clearly labeled, with male/female sides and percentage scales. Add arrows showing population flow and dependency ratios.",
-    "quickRecap": "Population structure shows age and gender distribution in three groups: young dependents (0-19), economically active (20-64), and old dependents (65+). MEDCs have narrow bases, wide middles, and broad tops due to low birth/death rates. LEDCs show wide bases, narrow middles, and very narrow tops reflecting high birth rates and shorter life expectancy. Key impacts include dependency ratios affecting economic productivity and social service provision."
+    "quickRecap": "Pakistan grows both kharif crops (like rice) in warm seasons and rabi crops (like wheat) in cooler seasons. Cash crop farming uses modern inputs and large fields while subsistence farming relies on traditional methods and small plots. Different farming systems include irrigation, natural inundation, and barani (rainfall-dependent) farming, each with distinct characteristics and crop requirements."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -122,5 +120,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:54:59.704Z",
   "updated_at": "2026-04-06T03:54:59.704Z",
-  "enriched_at": "2026-04-06T16:06:40.440Z"
+  "enriched_at": "2026-04-06T16:06:40.440Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:34:31.649Z"
 }

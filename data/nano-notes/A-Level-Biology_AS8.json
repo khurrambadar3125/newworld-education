@@ -9,34 +9,9 @@
     "title": "Transport in mammals",
     "readTime": "8 min",
     "keyPoints": [
-      "**Circulatory system** is closed with blood contained in vessels at all times",
-      "**Double circulation** consists of pulmonary circulation (heart to lungs) and systemic circulation (heart to body)",
-      "**Heart** has four chambers: two atria receive blood, two ventricles pump blood out",
-      "**Arteries** carry blood away from heart, have thick muscular walls and narrow lumen",
-      "**Veins** carry blood to heart, have thin walls, wide lumen and valves to prevent backflow",
-      "**Capillaries** are one cell thick for efficient exchange of materials by diffusion",
-      "**Haemoglobin** has high affinity for oxygen in lungs and releases oxygen in tissues",
-      "**Cardiac cycle** involves systole (contraction) and diastole (relaxation) phases",
-      "**Blood pressure** is highest in arteries and lowest in veins due to distance from heart"
+      "Unable to extract - chapter content not provided"
     ],
-    "definitions": [
-      {
-        "term": "Double circulation",
-        "definition": "Blood passes through the heart twice in one complete circuit of the body"
-      },
-      {
-        "term": "Systole",
-        "definition": "Contraction phase of the cardiac cycle when blood is pumped out of the heart"
-      },
-      {
-        "term": "Haemoglobin",
-        "definition": "Red protein in red blood cells that combines reversibly with oxygen to transport it"
-      },
-      {
-        "term": "Tissue fluid",
-        "definition": "Fluid formed from blood plasma that bathes cells and allows exchange of materials"
-      }
-    ],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -66,17 +41,10 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'oxygenated blood in arteries' — pulmonary artery carries deoxygenated blood",
-      "Students confuse systole with diastole — systole is contraction, diastole is relaxation",
-      "Don't say veins have 'no muscle' — they have thin muscle walls, not absent",
-      "Never write 'blood cells carry oxygen' — it is haemoglobin in red blood cells",
-      "Avoid saying 'heart pumps blood' without specifying which chamber pumps where"
+      "Unable to extract - chapter content not provided"
     ],
     "examinerTips": [
-      "Transport questions appear in every Paper 2 - learn heart structure diagram thoroughly",
-      "Always state which chamber does what - left ventricle to body, right ventricle to lungs",
-      "For circulation questions, trace the path: body → vena cava → right atrium → right ventricle → pulmonary artery → lungs",
-      "Link structure to function in all vessel questions - thick walls in arteries for high pressure"
+      "Unable to extract - chapter content not provided"
     ],
     "formulas": [],
     "keyDiagramDescription": "Heart structure showing four chambers (RA, LA, RV, LV), major vessels (aorta, vena cavae, pulmonary artery/vein), and valves. Label direction of blood flow and indicate oxygenated vs deoxygenated blood.",
@@ -104,7 +72,7 @@
       "Examiner Report 2023: 'Candidates frequently gave vague answers about blood vessel adaptations' — always link specific structural features to their exact functions, don't just list structures without explaining how they help"
     ],
     "keyDiagram": "Students must be able to draw a detailed diagram of the heart showing: four chambers (left/right atria and ventricles) clearly labeled, major blood vessels (aorta, vena cava, pulmonary artery, pulmonary vein) with arrows showing blood flow direction, heart valves (bicuspid, tricuspid, semi-lunar) positioned correctly, and different shading or labeling to show oxygenated vs deoxygenated blood in different chambers and vessels.",
-    "quickRecap": "Heart has four chambers pumping blood in double circulation - pulmonary (heart-lungs-heart) and systemic (heart-body-heart). Arteries carry blood away from heart under high pressure with thick muscular walls. Veins return blood to heart under low pressure with valves and thin walls. Blood contains plasma (transports dissolved substances), red blood cells (oxygen transport), white blood cells (immunity), and platelets (clotting)."
+    "quickRecap": "Cannot provide summary without access to the actual chapter content from pages 157-179."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -112,5 +80,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:02:49.967Z",
   "updated_at": "2026-04-06T05:02:49.967Z",
-  "enriched_at": "2026-04-06T16:09:58.041Z"
+  "enriched_at": "2026-04-06T16:09:58.041Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:49:51.581Z"
 }

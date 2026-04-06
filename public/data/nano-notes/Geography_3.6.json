@@ -9,36 +9,36 @@
     "title": "Water",
     "readTime": "8 min",
     "keyPoints": [
-      "**Water supply** is the amount of water available from sources such as rivers, lakes, groundwater and precipitation",
-      "**Water demand** increases due to population growth, urbanisation, industrialisation and improved living standards",
-      "**Water stress** occurs when demand exceeds supply, leading to shortages and competition between users",
-      "**Dams** are built across rivers to store water for irrigation, hydroelectric power generation and domestic supply",
-      "**Multipurpose schemes** like the Indus Basin Project provide irrigation, flood control, hydroelectric power and water storage",
-      "**Groundwater depletion** occurs when water is extracted faster than natural recharge, causing water tables to fall",
-      "**Water pollution** reduces available clean water supply through contamination from sewage, industrial waste and agricultural chemicals",
-      "**Water conservation** methods include rainwater harvesting, drip irrigation, recycling and reducing wastage",
-      "**Conflicts over water** arise between countries sharing river basins and between different user groups"
+      "Wheat is a rabi crop requiring mild/warm temperature 10-20 degrees for growing and 20 degrees for ripening",
+      "Rice is a kharif crop requiring warm temperatures for growth 20°C to 30°C and monsoon rain for growth/flooding fields 1270-2000mms",
+      "Farming using natural rainfall/flooding can only be carried out after flooding and farmers have no control of water supply",
+      "Barani farming depends entirely on rainfall/rain-fed area with low banks/bunds constructed and traditional methods used",
+      "Rice is not grown in areas which only practise barani farming as it requires over 1275mm rainfall in growing season",
+      "Cash crop farms use modern irrigation system i.e. perennial canals, tubewells, sprinklers and scientific methods like HYV seeds",
+      "Subsistence farming uses small land with low capital invested because of poverty and old irrigation methods like shaduf",
+      "Winter crop growing enables double or multiple crop and provides job throughout the year",
+      "Further floods could destroy seedlings/standing crop and annual floods supply nutrients in natural inundation farming"
     ],
     "definitions": [
       {
-        "term": "Water supply",
-        "definition": "The amount of water available from natural sources such as rivers, lakes, groundwater and precipitation"
+        "term": "Cash crop",
+        "definition": "Crops grown for sale/profit/commercial rather than for consumption by the farmers"
       },
       {
-        "term": "Water demand",
-        "definition": "The amount of water required by people for domestic, agricultural and industrial purposes"
+        "term": "Subsistence farming",
+        "definition": "Growing crops for own family"
       },
       {
-        "term": "Dam",
-        "definition": "A barrier built across a river valley to control water flow and create a reservoir for water storage"
+        "term": "Cash crop farming",
+        "definition": "Growing for sale and profit purpose"
       },
       {
-        "term": "Multipurpose scheme",
-        "definition": "A large-scale water management project that serves several purposes such as irrigation, flood control, hydroelectric power and water supply"
+        "term": "Barani farming",
+        "definition": "Farming that depends entirely on rainfall/rain-fed area"
       },
       {
-        "term": "Water stress",
-        "definition": "A situation where water demand exceeds the available water supply in a region"
+        "term": "Natural inundation",
+        "definition": "Farming that depends on natural rainfall/flooding after flooding occurs"
       }
     ],
     "howToAnswer": [
@@ -73,17 +73,15 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'water scarcity' when the question asks about supply - always distinguish between supply (availability) and demand (requirements)",
-      "Students often confuse dams with barrages - dams store water in reservoirs, barrages divert water flow",
-      "Don't just list benefits of dams - always explain the problems such as displacement of people and environmental impacts",
-      "Never say water is 'dirty' - use specific terms like 'contaminated', 'polluted' or 'unsafe'",
-      "Students often forget to mention both physical and human factors affecting water supply"
+      "Not understanding that rice requires over 1275mm rainfall which nowhere in Pakistan has for barani farming",
+      "Confusing kharif and rabi seasons - wheat is rabi (winter) while rice is kharif (summer)",
+      "Not recognizing that farmers have no control of water supply in natural inundation farming",
+      "Assuming subsistence farms use the same inputs as cash crop farms when they use traditional methods and family labour"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2 questions worth 6-8 marks",
-      "Always use specific examples like Tarbela Dam in Pakistan or Aswan High Dam in Egypt",
-      "Draw and label diagrams of dams showing reservoir, spillway and power station for full marks",
-      "Case studies must include both benefits and problems of water management schemes"
+      "Remember that rabi crops require 90 days growing season at least from Oct-Mar with temperatures between 6-20 degrees",
+      "When describing natural inundation farming, mention that higher banks/bunds have to be built to hold as much water as possible",
+      "For crop seasons, link temperature requirements to timing - rice needs warm temperatures so is kharif, wheat needs mild temperatures so is rabi"
     ],
     "formulas": [],
     "keyDiagramDescription": "Cross-section diagram of a multipurpose dam showing: dam wall, reservoir, spillway, hydroelectric power station, irrigation canals, and flood control mechanisms. Label all components and show water flow directions.",
@@ -111,7 +109,7 @@
       "Examiner Report 2021: 'Students gave vague answers about water processes without specific examples' — always name specific processes like hydraulic action, abrasion, or solution when discussing water's role in landform development"
     ],
     "keyDiagram": "Water cycle diagram showing: evaporation from oceans/lakes (with arrows), condensation in clouds, precipitation as rain/snow, surface runoff into rivers, infiltration into soil, percolation to groundwater, water table line, and transpiration from vegetation. Must label all processes and show directional arrows clearly. Include sun as energy source and distinguish between different water stores (atmospheric, surface, groundwater).",
-    "quickRecap": "Water exists in three states: liquid, solid (ice/frozen), and gas (water vapour). It moves through the water cycle via evaporation, condensation, precipitation, runoff, and infiltration. Groundwater depth is measured from surface to water table in metres below ground level. Water processes like hydraulic action and solution are crucial in shaping landforms, especially in arid environments where occasional flash floods cause rapid erosion."
+    "quickRecap": "Pakistan grows both kharif crops (like rice) and rabi crops (like wheat) with different temperature and water requirements. Farming methods vary from cash crop farming using modern irrigation and machinery to subsistence farming using traditional methods. Some areas depend on natural inundation or barani farming which relies entirely on rainfall, limiting crop choices and yields."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +117,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:01:03.055Z",
   "updated_at": "2026-04-06T04:01:03.055Z",
-  "enriched_at": "2026-04-06T16:12:16.224Z"
+  "enriched_at": "2026-04-06T16:12:16.224Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:39:25.198Z"
 }

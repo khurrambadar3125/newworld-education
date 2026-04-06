@@ -9,33 +9,25 @@
     "title": "Control accounts",
     "readTime": "8 min",
     "keyPoints": [
-      "A **control account** is a summary account that contains the total of individual accounts in a subsidiary ledger",
-      "The **sales ledger control account** summarizes all individual customer accounts and shows total trade receivables",
-      "The **purchase ledger control account** summarizes all individual supplier accounts and shows total trade payables",
-      "Control accounts are prepared from **totals of books of prime entry**, not individual transactions",
-      "Debit entries in sales ledger control include: **credit sales, dishonored cheques, interest charged**",
-      "Credit entries in sales ledger control include: **cash received from customers, returns inwards, discounts allowed, bad debts written off**",
-      "Debit entries in purchase ledger control include: **cash paid to suppliers, returns outwards, discounts received**",
-      "Credit entries in purchase ledger control include: **credit purchases, goods returned by us to suppliers**",
-      "Control accounts help **detect errors** by comparing control account balance with total of individual ledger balances",
-      "The balance on control account should **equal the total of all individual account balances** in the subsidiary ledger"
+      "Control accounts are kept for specific reasons in accounting systems",
+      "Sales Ledger Control Account is one type of control account used",
+      "Purchase Ledger Control Account is another type of control account used",
+      "Contra Entry is a concept related to control accounts",
+      "Control accounts are covered as Topic 5 in the accounting syllabus",
+      "Control accounts help manage and control accounting records"
     ],
     "definitions": [
       {
-        "term": "Control account",
-        "definition": "A summary account that contains the total of a number of individual accounts from a subsidiary ledger"
+        "term": "Sales Ledger Control Account",
+        "definition": "A control account used to manage sales ledger transactions"
       },
       {
-        "term": "Sales ledger control account",
-        "definition": "A control account that summarizes all the individual customer accounts and shows the total amount owed by trade receivables"
+        "term": "Purchase Ledger Control Account",
+        "definition": "A control account used to manage purchase ledger transactions"
       },
       {
-        "term": "Purchase ledger control account",
-        "definition": "A control account that summarizes all the individual supplier accounts and shows the total amount owed to trade payables"
-      },
-      {
-        "term": "Subsidiary ledger",
-        "definition": "A ledger containing individual customer or supplier accounts that support the control account"
+        "term": "Contra Entry",
+        "definition": "An accounting entry concept related to control accounts"
       }
     ],
     "howToAnswer": [
@@ -68,17 +60,13 @@
       ]
     },
     "commonMistakes": [
-      "Never put individual transactions in control accounts — always use totals from books of prime entry",
-      "Students often put returns inwards on the debit side — it goes on credit side as it reduces what customers owe",
-      "Never include cash sales in sales ledger control — only credit sales appear",
-      "Students confuse discounts allowed (credit in sales ledger control) with discounts received (debit in purchase ledger control)",
-      "Never include individual customer names in control accounts — they show totals only"
+      "Not understanding why control accounts are kept",
+      "Confusing sales ledger control account with purchase ledger control account",
+      "Incorrectly handling contra entries in control accounts"
     ],
     "examinerTips": [
-      "Control accounts appear frequently in Paper 2 Section B",
-      "Always check that debits equal credits when preparing control accounts",
-      "Remember that control account balances appear on the trial balance",
-      "Practice identifying whether items are debit or credit entries"
+      "Understand the reasons why control accounts are kept",
+      "Be clear on the differences between sales and purchase ledger control accounts"
     ],
     "formulas": [],
     "keyDiagramDescription": "T-account format showing Sales Ledger Control Account with typical debit entries (opening balance, credit sales, dishonored cheques, interest) and credit entries (cash received, returns inwards, discounts allowed, bad debts, closing balance)",
@@ -106,7 +94,7 @@
       "Examiner Report 2024: 'Candidates often forgot to balance off the account properly' — always ensure both sides of the T-account have equal totals and show the closing balance carried down"
     ],
     "keyDiagram": "Students must be able to draw a T-account showing Sales Ledger Control Account with debit side containing: opening balance, credit sales, dishonoured cheques; and credit side containing: cash received, returns inwards, discounts allowed, bad debts written off, closing balance. Similarly for Purchases Ledger Control Account but reversed - credit side shows opening balance, credit purchases, and debit side shows cash paid, returns outwards, discounts received, closing balance.",
-    "quickRecap": "Control accounts are summary accounts that show total amounts owed by all customers (Sales Ledger Control) or owed to all suppliers (Purchases Ledger Control). They help detect errors by comparing with individual ledger totals and provide internal control through segregation of duties. Sales ledger control increases with sales and decreases with receipts, while purchases ledger control increases with purchases and decreases with payments."
+    "quickRecap": "Control accounts are important accounting tools that include Sales Ledger Control Accounts and Purchase Ledger Control Accounts. They are kept for specific reasons in accounting systems. Contra entries are also an important concept related to control accounts that students need to understand."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -114,5 +102,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:40:46.423Z",
   "updated_at": "2026-04-06T03:40:46.423Z",
-  "enriched_at": "2026-04-06T16:08:33.664Z"
+  "enriched_at": "2026-04-06T16:08:33.664Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:28:08.864Z"
 }

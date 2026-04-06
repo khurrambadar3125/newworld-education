@@ -9,36 +9,21 @@
     "title": "Introduction to organic chemistry",
     "readTime": "8 min",
     "keyPoints": [
-      "**Organic compounds** contain carbon atoms covalently bonded to hydrogen and other elements, forming the basis of all living matter",
-      "**Homologous series** are families of organic compounds with the same functional group and general formula, differing by CH₂ units",
-      "**Structural isomers** have the same molecular formula but different structural arrangements of atoms",
-      "**Functional groups** are specific arrangements of atoms that determine the chemical properties of organic molecules",
-      "**IUPAC nomenclature** follows systematic rules: identify longest carbon chain, number from end nearest functional group, name substituents alphabetically",
-      "**Empirical formula** shows the simplest whole number ratio of atoms, while **molecular formula** shows actual number of each type of atom",
-      "**Displayed formula** shows all covalent bonds and atoms, **structural formula** shows arrangement without showing all bonds",
-      "**Chain isomers** differ in carbon skeleton arrangement, **positional isomers** have functional groups in different positions",
-      "**Primary carbons** are bonded to one other carbon, **secondary** to two carbons, **tertiary** to three carbons"
+      "Organic chemistry involves representing organic molecules using various structural formulas",
+      "Functional groups are key structural features that determine chemical properties",
+      "Naming organic compounds follows systematic nomenclature rules",
+      "Bonding in organic molecules involves specific types of chemical bonds",
+      "Structural representation is fundamental to understanding organic chemistry",
+      "Organic chemistry forms Chapter 14 of the Cambridge A Level Chemistry curriculum"
     ],
     "definitions": [
       {
-        "term": "Homologous series",
-        "definition": "A family of organic compounds with the same functional group and general formula, where successive members differ by CH₂"
+        "term": "Functional groups",
+        "definition": "Key structural features in organic molecules that determine their chemical properties"
       },
       {
-        "term": "Structural isomers",
-        "definition": "Compounds with the same molecular formula but different structural arrangements of atoms"
-      },
-      {
-        "term": "Functional group",
-        "definition": "An atom or group of atoms responsible for the characteristic chemical reactions of a compound"
-      },
-      {
-        "term": "Empirical formula",
-        "definition": "The simplest whole number ratio of atoms of each element present in a compound"
-      },
-      {
-        "term": "General formula",
-        "definition": "The simplest algebraic formula for any member of a homologous series"
+        "term": "Organic molecules",
+        "definition": "Carbon-based molecules that can be represented using various structural formulas"
       }
     ],
     "howToAnswer": [
@@ -71,17 +56,13 @@
       ]
     },
     "commonMistakes": [
-      "Never write 'CH₃CH₂CH₂CH₂OH' for displayed formula — must show all individual bonds and atoms",
-      "Students often number carbon chain from wrong end — always start from end nearest functional group",
-      "Writing 'butyl alcohol' instead of IUPAC name 'butan-1-ol' — use systematic naming",
-      "Confusing empirical and molecular formulae — empirical is simplest ratio, molecular is actual numbers",
-      "Missing the -e when naming alkanes with functional groups (e.g. 'butan-1-ol' not 'butane-1-ol')"
+      "Incorrect representation of organic molecule structures",
+      "Misidentifying functional groups in organic compounds",
+      "Errors in systematic naming of organic compounds"
     ],
     "examinerTips": [
-      "Nomenclature questions appear in every Paper 1 and Paper 2 — learn IUPAC rules thoroughly",
-      "Always count carbons carefully when drawing isomers — easy marks lost through careless errors",
-      "For displayed formulae, show every single bond — condensed formulae lose marks",
-      "Check molecular formulae match when drawing isomers — must have same number of each atom"
+      "Focus on accurate representation of organic molecular structures",
+      "Master the systematic approach to naming organic compounds"
     ],
     "formulas": [
       "Alkanes: CₙH₂ₙ₊₂",
@@ -113,7 +94,7 @@
       "Examiner Report 2023: 'Candidates often gave incomplete explanations for homologous series properties' — always state that members differ by CH2, have similar chemical properties, and show gradual change in physical properties"
     ],
     "keyDiagram": "Students must be able to draw structural formulas showing: 1) Carbon atoms as C with four bonds each, 2) Hydrogen atoms bonded to carbons, 3) Clear representation of single, double, or triple bonds between carbons, 4) Proper arrangement showing the actual shape/connectivity of the molecule. For alkanes, show zigzag carbon chains with hydrogens filling remaining valencies. Include ability to convert between full structural formulas (showing all atoms and bonds) and condensed formulas (like CH3CH2CH3).",
-    "quickRecap": "Organic compounds contain carbon-hydrogen bonds and form the basis of all living matter. They can be represented by molecular formulas (showing ratios) or structural formulas (showing arrangements). Homologous series are families of organic compounds with the same functional group, differing by CH2 units. The simplest organic compounds are alkanes (CnH2n+2) which contain only single C-C and C-H bonds."
+    "quickRecap": "Introduction to organic chemistry covers the fundamental concepts of representing organic molecules, identifying functional groups, and systematic naming. The chapter establishes the foundation for understanding bonding in organic molecules and their structural representations, which are essential skills for A Level Chemistry students."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -121,5 +102,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:34:22.360Z",
   "updated_at": "2026-04-06T04:34:22.360Z",
-  "enriched_at": "2026-04-06T16:09:34.598Z"
+  "enriched_at": "2026-04-06T16:09:34.598Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:44:19.085Z"
 }

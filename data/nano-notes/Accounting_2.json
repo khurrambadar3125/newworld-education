@@ -9,36 +9,36 @@
     "title": "Double entry book-keeping – Part A",
     "readTime": "8 min",
     "keyPoints": [
-      "**Double entry book-keeping** requires every transaction to be recorded twice – once as a debit and once as a credit",
-      "The **accounting equation** must always balance: Assets = Capital + Liabilities",
-      "**Debit entries** record increases in assets and expenses, and decreases in capital and liabilities",
-      "**Credit entries** record increases in capital and liabilities, and decreases in assets and expenses",
-      "A **ledger** is a book containing all the accounts of a business organized systematically",
-      "Every **account** has two sides: debit side (left) and credit side (right)",
-      "The **trial balance** tests the arithmetical accuracy of the ledger by ensuring total debits equal total credits",
-      "**Source documents** such as invoices, receipts and vouchers provide evidence for all ledger entries",
-      "Each transaction affects at least **two accounts** and the total debits must equal total credits"
+      "The process of accounting starts once the book-keeper finishes recording the financial transactions",
+      "Accounting deals with measuring, identifying, and communicating financial information recorded by the book-keeper which facilitates the preparation of financial statements",
+      "Bookkeeping involves recording financial transactions from source documents of a business whereas accounting deals with maintaining financial statements from the bookkeeping records",
+      "Assets are the resources owned and controlled by a company - an increase in an asset is a debit and a decrease is a credit",
+      "Every asset can be categorised between two: Tangible and Intangible",
+      "Current Assets are assets which have a monetary value or can be converted into cash within 12 months",
+      "Non-Current Assets (also known as Fixed Assets) are assets acquired to earn revenue for the company and used for more than 12 months without being intended for resale",
+      "Capital is the number of resources and funds provided by the owner injected into the business - an increase in capital is a credit while a decrease or drawings is a debit",
+      "Liability is the money owed to another firm or an entity"
     ],
     "definitions": [
       {
-        "term": "Double entry book-keeping",
-        "definition": "A system of recording transactions where each transaction is recorded twice – once as a debit and once as a credit in different accounts"
+        "term": "Assets",
+        "definition": "The resources owned and controlled by a company"
       },
       {
-        "term": "Ledger",
-        "definition": "A book containing all the accounts of a business where transactions are recorded using the double entry system"
+        "term": "Capital",
+        "definition": "The number of resources and funds provided by the owner injected into the business"
       },
       {
-        "term": "Debit",
-        "definition": "An entry recorded on the left side of an account"
+        "term": "Liability",
+        "definition": "The money owed to another firm or an entity"
       },
       {
-        "term": "Credit",
-        "definition": "An entry recorded on the right side of an account"
+        "term": "Goodwill",
+        "definition": "The intangible asset that represents the reputation, customer loyalty, brand value, and other non-physical attributes of a business"
       },
       {
-        "term": "Trial balance",
-        "definition": "A list of all ledger account balances at a particular date to check that total debits equal total credits"
+        "term": "Current Assets",
+        "definition": "An asset which has a monetary value or can be converted into cash within 12 months"
       }
     ],
     "howToAnswer": [
@@ -66,17 +66,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'money goes in and out' — always say 'debit and credit entries are made'",
-      "Students often confuse debit with 'money coming in' — debit means left side of account, not cash received",
-      "Mixing up which accounts increase with debits vs credits — assets and expenses increase with debits",
-      "Forgetting to show both sides of the transaction when preparing ledger accounts",
-      "Writing 'Dr' and 'Cr' instead of 'Debit' and 'Credit' in exam answers"
+      "Confusing bookkeeping with accounting processes",
+      "Mixing up debit and credit entries for assets and capital",
+      "Not distinguishing between tangible and intangible assets",
+      "Confusing current assets with non-current assets based on the 12-month rule"
     ],
     "examinerTips": [
-      "This topic appears in every Paper 1 and Paper 2 examination",
-      "Always show the dual effect of transactions to demonstrate understanding",
-      "Use proper account format with clear headings and date columns",
-      "Check your trial balance totals are equal before submitting"
+      "Remember the basic accounting equation: Assets = Capital + Liabilities",
+      "Use the formulas provided: Capital = Assets - Liabilities and Liabilities = Assets - Capital"
     ],
     "formulas": [
       "Assets = Capital + Liabilities",
@@ -108,7 +105,7 @@
       "Examiner Report 2021: 'Candidates often provided incomplete explanations of the dual aspect concept' — always mention that every transaction affects at least two accounts AND that total debits equal total credits when explaining dual aspect"
     ],
     "keyDiagram": "Students must be able to draw the standard T-account format showing the account name at the top, with a vertical line dividing debit (left) and credit (right) sides. They should also be able to diagram the accounting equation: Assets = Liabilities + Capital, and show how this equation remains balanced after transactions. Additionally, students should memorize and draw the debit/credit rules chart showing which account types increase on debit side (Assets, Expenses) versus credit side (Liabilities, Capital, Income).",
-    "quickRecap": "Double entry book-keeping records every transaction in at least two accounts using debits and credits. Assets and Expenses increase on debit side; Liabilities, Capital and Income increase on credit side. The dual aspect concept ensures total debits always equal total credits. Master the basic rules: debit what comes in (assets) or expenses incurred, credit what goes out or income earned."
+    "quickRecap": "Accounting begins after bookkeeping is complete and involves measuring, identifying, and communicating financial information to prepare financial statements. The fundamental elements are Assets (resources owned by the company), Capital (owner's investment), and Liabilities (money owed to others). These are connected through the basic accounting equation: Assets = Capital + Liabilities."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -116,5 +113,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:35:31.509Z",
   "updated_at": "2026-04-06T03:35:31.509Z",
-  "enriched_at": "2026-04-06T16:10:07.257Z"
+  "enriched_at": "2026-04-06T16:10:07.257Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:28:57.337Z"
 }

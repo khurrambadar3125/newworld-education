@@ -9,37 +9,37 @@
     "title": "Population Density and Distribution",
     "readTime": "8 min",
     "keyPoints": [
-      "**Population density** is the number of people per unit area, usually measured per square kilometre",
-      "**Population distribution** refers to the way people are spread across the Earth's surface",
-      "**Dense** population areas have high numbers of people per square kilometre, often above 100 people/km²",
-      "**Sparse** population areas have low numbers of people per square kilometre, often below 10 people/km²",
-      "Physical factors affecting distribution include climate, relief, water supply, natural resources and soil fertility",
-      "Human factors affecting distribution include employment opportunities, transport links, government policies and historical factors",
-      "Pakistan shows uneven distribution with dense population in Punjab plains and sparse population in Balochistan deserts",
-      "River valleys like the Indus Valley have dense population due to fertile alluvial soils and reliable water supply",
-      "Mountainous areas like northern Pakistan have sparse population due to steep slopes and harsh climate",
-      "Urban areas like Karachi and Lahore have very high population density due to employment and services"
+      "Rabi crops like wheat require mild/warm temperature 10 degrees - 20 degrees for growing and 20 degrees for ripening",
+      "Rice is a kharif crop because it requires warm temperatures for growth 20°C to 30°C and monsoon rain for growth/flooding fields 1270-2000mms",
+      "Subsistence farming is growing crops for own family whereas cash crop is growing for sale and profit purpose",
+      "In cash crop farms large fields are used with higher capital required for modern irrigation system i.e. perennial canals, tubewells, sprinklers",
+      "Barani farming depends entirely on rainfall/rain-fed area with low banks/bunds constructed and farmers too poor to own tractors/lack of machines",
+      "Rice is not grown in areas which only practise barani farming because it requires over 1275mm rainfall in growing season",
+      "Natural inundation farming can only be carried out after flooding/must wait for floods with farmers having no control of water supply",
+      "Plain land for wheat farming allows easy use of machinery and is helpful for good irrigation system to be applied such as canal irrigation system",
+      "Winter crop growing enables double or multiple crops, provides jobs throughout the year and increases income of farmers",
+      "Tobacco growing uses human inputs like tractors to plough big areas in less time, harvestors for harvesting and spray of pesticides through machines"
     ],
     "definitions": [
       {
-        "term": "Population density",
-        "definition": "The number of people living in a given area, usually expressed as people per square kilometre"
+        "term": "Cash crop",
+        "definition": "Crops grown for sale/profit/commercial rather than for consumption by the farmers"
       },
       {
-        "term": "Population distribution",
-        "definition": "The way people are spread across the Earth's surface"
+        "term": "Subsistence farming",
+        "definition": "Growing crops for own family"
       },
       {
-        "term": "Dense population",
-        "definition": "Areas with a high number of people per unit area"
+        "term": "Barani farming",
+        "definition": "Farming that depends entirely on rainfall/rain-fed area"
       },
       {
-        "term": "Sparse population",
-        "definition": "Areas with a low number of people per unit area"
+        "term": "Natural inundation",
+        "definition": "Farming that makes use of natural flooding"
       },
       {
-        "term": "Sparsely populated",
-        "definition": "An area with few people living there in relation to its size"
+        "term": "Kharif crop",
+        "definition": "Crops that require warm temperatures 20°C to 30°C and monsoon rain for growth"
       }
     ],
     "howToAnswer": [
@@ -74,18 +74,15 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'overpopulation' when describing dense areas — always say 'densely populated'",
-      "Students often confuse density with distribution — density is HOW MANY, distribution is WHERE",
-      "Don't just list factors — always explain WHY each factor affects population",
-      "Never say 'no people live there' for sparse areas — say 'few people' or 'low population density'",
-      "Students forget to use data from maps when describing distribution patterns"
+      "Confusing kharif and rabi seasons - rice is kharif (warm season) while wheat is rabi (cool season)",
+      "Not understanding that barani farming cannot support rice cultivation due to insufficient rainfall",
+      "Mixing up subsistence and cash crop farming characteristics and inputs",
+      "Not recognizing that natural inundation farming gives farmers no control over water supply"
     ],
     "examinerTips": [
-      "This topic appears in almost every Paper 2 exam, often with maps to interpret",
-      "Always quote figures from population density maps to support your answers",
-      "Learn specific examples from Pakistan for both dense and sparse areas",
-      "Practice calculating population density using the formula",
-      "Look for patterns on maps — clusters, linear patterns, scattered settlements"
+      "When describing farming types, clearly distinguish between subsistence and cash crop farming inputs and methods",
+      "Remember specific temperature requirements: rabi crops need 10-20°C for growing, kharif crops need 20-30°C",
+      "Include specific rainfall amounts when discussing crop requirements - rice needs over 1275mm rainfall"
     ],
     "formulas": [
       "Population Density = Total Population ÷ Total Area"
@@ -114,7 +111,7 @@
       "Examiner Report 2021: 'Students often gave vague factors without explanation' — always explain HOW each factor affects population, don't just list factors like 'climate' without saying why hot/cold/wet/dry climates attract or repel people"
     ],
     "keyDiagram": "Students must be able to sketch and annotate a simple population distribution map showing: (1) Shaded areas representing different population densities using a key (e.g. dark shading = >100 people/km², light shading = 10-100 people/km², no shading = <10 people/km²), (2) Labels identifying physical features like mountains, rivers, coasts, deserts, (3) Annotations explaining the relationship between physical features and population density (e.g. 'High density along river valley - fertile soil and water supply', 'Low density in mountains - steep slopes, cold climate'), (4) A clear title and scale/key.",
-    "quickRecap": "Population density measures people per km² while distribution shows where people live across space. Physical factors (relief, climate, water, soil) and human factors (jobs, transport, services) create uneven patterns. High density occurs in river valleys, coastal plains and urban areas due to favorable conditions. Low density found in mountains, deserts and remote areas due to harsh conditions or lack of opportunities."
+    "quickRecap": "Different farming systems in Pakistan depend on various factors including temperature, rainfall and capital investment. Rabi crops like wheat grow in cooler months while kharif crops like rice need warm temperatures and high rainfall. Cash crop farming requires higher capital and modern inputs compared to subsistence farming. Barani farming relies entirely on natural rainfall while some areas use natural flooding for cultivation."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -122,5 +119,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:55:24.174Z",
   "updated_at": "2026-04-06T03:55:24.174Z",
-  "enriched_at": "2026-04-06T16:07:02.665Z"
+  "enriched_at": "2026-04-06T16:07:02.665Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:34:50.703Z"
 }

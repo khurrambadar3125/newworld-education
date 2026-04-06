@@ -9,32 +9,32 @@
     "title": "Rates of reaction",
     "readTime": "8 min",
     "keyPoints": [
-      "**Rate of reaction** is the speed at which reactants are used up or products are formed",
-      "For a reaction to occur, particles must **collide with sufficient energy** (activation energy) and correct orientation",
-      "Increasing **temperature** increases rate because particles move faster, collide more frequently and with greater energy",
-      "Increasing **concentration** of solutions increases rate because more particles in same volume leads to more frequent collisions",
-      "Increasing **pressure** of gases increases rate because particles are closer together, leading to more frequent collisions",
-      "Decreasing **particle size** (increasing surface area) increases rate because more surface is exposed for collisions",
-      "A **catalyst** increases rate by providing an alternative pathway with lower activation energy",
-      "Catalysts are **chemically unchanged** at the end of the reaction and can be reused",
-      "Rate can be measured by monitoring **gas volume produced**, **mass lost**, or **time for reaction to complete**"
+      "Filtration is used to separate insoluble solid from liquid - liquid particles are small enough to go through filter paper pores, solid particles are too large",
+      "Crystallisation is the formation of crystals from a cooling liquid or saturated solution - used to obtain solid from solid and liquid solution",
+      "Distillation is used to obtain pure liquid from solution by heating the solution until it boils, vapour is cooled by condenser and changes back to liquid",
+      "Fractional distillation separates 2 liquids which are mixed (miscible) - liquid with lowest BP comes out first at top of fractionating column",
+      "Chromatography is used to separate mixture of organic compounds such as colour dyes",
+      "In filtration, the solid obtained is called 'Residue' and the liquid obtained is called 'Filtrate'",
+      "In crystallisation, a saturated solution means no more solid can dissolve in it",
+      "In distillation, the liquid obtained is called 'Distillate' and is collected in conical flask",
+      "The constant temperature during distillation process equals the boiling point of the pure liquid"
     ],
     "definitions": [
       {
-        "term": "Rate of reaction",
-        "definition": "The speed at which reactants are used up or products are formed"
+        "term": "Soluble",
+        "definition": "can dissolve in water (eg. Salt)"
       },
       {
-        "term": "Catalyst",
-        "definition": "A substance that increases the rate of reaction without being chemically changed"
+        "term": "Insoluble",
+        "definition": "cannot dissolve in water (eg. Sand)"
       },
       {
-        "term": "Activation energy",
-        "definition": "The minimum energy that colliding particles need for a reaction to occur"
+        "term": "Miscible",
+        "definition": "mixable - able to be mixed"
       },
       {
-        "term": "Collision theory",
-        "definition": "For a reaction to occur, particles must collide with sufficient energy and correct orientation"
+        "term": "Saturated solution",
+        "definition": "no more solid can dissolve in it"
       }
     ],
     "howToAnswer": [
@@ -62,17 +62,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'molecules get excited' — always say 'particles move faster with more kinetic energy'",
-      "Students often confuse concentration with amount — it's particles per unit volume that matters",
-      "Don't say catalysts 'speed up particles' — they provide alternative pathway with lower activation energy",
-      "Never say surface area increases collisions — say it exposes more surface for collisions to occur",
-      "Students write 'more collisions' without saying they need sufficient energy (activation energy)"
+      "Confusing which separation method to use for different types of mixtures",
+      "Not understanding that crystallisation is always the answer when asked about making crystals",
+      "Forgetting that in fractional distillation, the liquid with lowest BP comes out first"
     ],
     "examinerTips": [
-      "Rate of reaction appears in every Paper 2 — often combined with practical skills",
-      "Always mention 'activation energy' when explaining temperature effects for full marks",
-      "Graph questions are common — know that steeper gradient = faster rate",
-      "Catalyst questions often ask for 'chemically unchanged' for the mark"
+      "Any question that wants the method to obtain (make) crystals, the process will be 'Crystallisation'",
+      "Remember that 'miscible' means mixable - able to be mixed"
     ],
     "formulas": [],
     "keyDiagramDescription": "Energy profile diagram showing activation energy barrier, with and without catalyst. Lower pathway with catalyst demonstrates how it speeds up reaction without changing overall energy change.",
@@ -99,7 +95,7 @@
       "Examiner Report 2023: 'Common error was stating catalysts are used up in reactions' — remember that catalysts are not consumed and can be recovered unchanged at the end"
     ],
     "keyDiagram": "Rate of reaction graph with two curves on same axes: x-axis shows 'Time (s)', y-axis shows 'Volume of gas produced (cm³)' or 'Mass lost (g)'. Draw one steep curve (higher temperature/concentration) and one gentler curve (lower temperature/concentration). Both curves must level off at same final value but steep curve reaches it faster. Label curves clearly and mark initial rate gradients with tangent lines.",
-    "quickRecap": "Rate of reaction measures how fast reactants turn into products. Four main factors increase rate: higher temperature (more kinetic energy), higher concentration (more particles per unit volume), larger surface area (more exposed particles), and catalysts (lower activation energy). Use collision theory to explain: more frequent and energetic collisions lead to faster reactions."
+    "quickRecap": "Different separation techniques are used for different types of mixtures. Filtration separates insoluble solids from liquids, crystallisation obtains pure solids from solutions, distillation obtains pure liquids from solutions, and fractional distillation separates miscible liquids. The choice of method depends on the physical properties of the substances being separated."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -107,5 +103,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:53:40.589Z",
   "updated_at": "2026-04-05T20:53:40.589Z",
-  "enriched_at": "2026-04-06T16:04:31.323Z"
+  "enriched_at": "2026-04-06T16:04:31.323Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:16:02.964Z"
 }

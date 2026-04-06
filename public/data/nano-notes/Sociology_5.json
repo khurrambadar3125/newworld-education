@@ -9,37 +9,37 @@
     "title": "Education",
     "readTime": "8 min",
     "keyPoints": [
-      "**Educational achievement** is measured by examination results, literacy rates, and progression to higher education",
-      "**Cultural capital** includes knowledge, skills, education, and advantages that give higher social status in society",
-      "**Hidden curriculum** refers to the informal learning of social norms, values, and expectations through schooling",
-      "**Meritocracy** is a system where advancement is based on individual ability and achievement rather than social background",
-      "**Educational inequality** exists when students from different social backgrounds have unequal access to educational opportunities",
-      "**Streaming** divides students into different ability groups which can create self-fulfilling prophecies",
-      "**Social mobility** through education allows individuals to move between social classes based on educational achievement",
-      "**Compensatory education** provides additional support to disadvantaged students to overcome social and economic barriers",
-      "**Teacher expectations** can influence student performance through labelling and differential treatment",
-      "**Educational selection** determines which students attend which types of schools or educational programs"
+      "Sociology is the study of human social life, groups and societies",
+      "Sociology explores the social factors that shape human behavior and the way that society influences our daily lives",
+      "Structuralism is a macro perspective where societies are seen as sets of structures in which individuals play different roles - individuals have little choice",
+      "Interpretivism is a micro level approach in which individual is important - we grow up in society norms but always have an opportunity to choose from different identities",
+      "Consensus approach focuses on equality in society or agreed norms - this is a stable form of society",
+      "Conflict approach is where values are not shared such as societies with different wealth are unstable",
+      "Functionalism is a consensus approach that focuses on social functions and asks what keeps the society together",
+      "Marxism is a conflict approach focusing on different social classes - bourgeoisie (upper class) and proletariat (working class)",
+      "Feminism is a conflict approach where patriarchy exists and males are more dominant",
+      "Sociological research involves selecting and using evidence in a balanced way or other sociologists may criticize the research"
     ],
     "definitions": [
       {
-        "term": "Cultural capital",
-        "definition": "The knowledge, skills, education, and advantages that give a person higher status in society, often passed down through families"
+        "term": "Sociology",
+        "definition": "The study of human social life, groups and societies"
       },
       {
-        "term": "Hidden curriculum",
-        "definition": "The informal learning of social norms, values, and expectations that occurs in schools alongside the formal curriculum"
+        "term": "Structuralism",
+        "definition": "Macro perspective where societies are seen as sets of structures in which individuals play different roles - individuals have little choice"
       },
       {
-        "term": "Meritocracy",
-        "definition": "A system where people advance based on their individual ability and achievement rather than their social background or family connections"
+        "term": "Interpretivism",
+        "definition": "Micro level approach in which individual is important - people make the societies"
       },
       {
-        "term": "Self-fulfilling prophecy",
-        "definition": "When teacher expectations about student performance influence how students actually perform, making the prediction come true"
+        "term": "Functionalism",
+        "definition": "Consensus approach that focuses on social functions and asks what keeps the society together"
       },
       {
-        "term": "Social mobility",
-        "definition": "The movement of individuals or groups between different social classes or economic positions in society"
+        "term": "Marxism",
+        "definition": "Conflict approach focusing on different social classes - bourgeoisie (upper class) and proletariat (working class)"
       }
     ],
     "howToAnswer": [
@@ -74,17 +74,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'poor students are less intelligent' — always focus on social factors affecting achievement",
-      "Students often confuse cultural capital with economic capital — cultural capital is about knowledge and skills, not money",
-      "Avoid saying 'working-class parents don't care about education' — explain structural barriers instead",
-      "Don't just list factors — always explain HOW each factor affects educational achievement",
-      "Never stereotype ethnic groups — focus on social class and individual circumstances"
+      "Not following proper research procedures - others will question your research",
+      "Not selecting and using evidence in a balanced way",
+      "Focusing on individual rather than group behavior when studying sociology"
     ],
     "examinerTips": [
-      "Educational inequality appears frequently in Paper 2 — learn multiple explanations",
-      "Use specific examples from Pakistani context like government vs private schools",
-      "Always distinguish between material and cultural factors affecting achievement",
-      "Questions often ask for both internal (school) and external (home/society) factors"
+      "Important to follow proper procedures - others will question your research",
+      "Sociologists must select and use evidence in a balanced way or other sociologists may criticize the research"
     ],
     "formulas": [],
     "keyDiagramDescription": "Draw a diagram showing factors affecting educational achievement with two columns: Internal factors (streaming, teacher expectations, hidden curriculum) and External factors (cultural capital, economic factors, parental attitudes)",
@@ -112,7 +108,7 @@
       "Examiner Report 2024: 'Students often described what happens in schools without explaining the sociological significance' — ensure you connect classroom practices like streaming or setting to broader theories about social reproduction and meritocracy"
     ],
     "keyDiagram": "Draw a 'Social Reproduction Cycle' diagram showing how social class perpetuates through education: Start with 'Family Social Class' at top, arrow down to 'Cultural Capital/Habitus', arrow to 'School Experience' (streaming, teacher expectations, curriculum), arrow to 'Educational Achievement', finally arrow back up to 'Adult Social Class/Employment'. Add side arrows showing 'Material Factors' (poverty, resources) and 'School Factors' (institutional practices) feeding into the cycle. This visually demonstrates how education reproduces rather than challenges social inequality.",
-    "quickRecap": "Education appears meritocratic but actually reproduces social inequality through cultural capital (Bourdieu), streaming effects, and institutional bias. Working-class and ethnic minority pupils face systematic disadvantages through ethnocentric curricula and middle-class assumptions. Key debate: does education create equality of opportunity or simply legitimize existing inequalities? Remember to distinguish between functionalist views (education = meritocracy) and conflict views (education = social reproduction)."
+    "quickRecap": "Sociology is the study of human social life, groups and societies, exploring social factors that shape human behavior. The main approaches include structuralism (macro perspective) and interpretivism (micro perspective), with consensus and conflict theories explaining how societies function. Proper research procedures and balanced evidence use are essential for credible sociological research."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -120,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:14:34.572Z",
   "updated_at": "2026-04-06T04:14:34.572Z",
-  "enriched_at": "2026-04-06T16:39:43.352Z"
+  "enriched_at": "2026-04-06T16:39:43.352Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:42:44.400Z"
 }

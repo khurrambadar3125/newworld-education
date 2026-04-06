@@ -9,36 +9,36 @@
     "title": "Limited companies",
     "readTime": "8 min",
     "keyPoints": [
-      "A **limited company** is a separate legal entity from its owners with liability limited to the amount invested",
-      "**Share capital** represents the money raised by issuing shares to shareholders who become part-owners of the company",
-      "**Ordinary shares** carry voting rights and variable dividends based on company profits",
-      "**Preference shares** receive fixed dividends before ordinary shareholders and have priority in liquidation",
-      "**Dividends** are distributions of profit to shareholders, declared by directors and paid from retained earnings",
-      "**Retained earnings** are accumulated profits kept in the business for reinvestment rather than distributed as dividends",
-      "**Reserves** include share premium, retained earnings and revaluation reserves which strengthen the company's financial position",
-      "Limited companies must prepare **statutory accounts** including Income Statement and Statement of Financial Position for shareholders",
-      "**Appropriation account** shows how net profit is distributed between dividends and retained earnings"
+      "Limited companies are a distinct type of business organization covered in the accounting syllabus alongside sole traders, partnerships, and manufacturing businesses",
+      "Companies have advantages and disadvantages that distinguish them from other business forms",
+      "Share capital is a fundamental component of company financing and must be understood for accounting purposes",
+      "There are different types of shares that companies can issue, each with specific characteristics",
+      "Dividends represent payments to shareholders and require specific accounting treatment",
+      "Debentures are another form of company financing that differs from share capital",
+      "Reserves form part of company equity and must be properly accounted for",
+      "Statement of Changes in Equity is a specific financial statement required for companies",
+      "Final accounts for companies differ from those prepared for sole traders and partnerships"
     ],
     "definitions": [
       {
-        "term": "Limited company",
-        "definition": "A business organization that is a separate legal entity from its owners, where shareholders' liability is limited to the amount they have invested in shares"
+        "term": "Assets",
+        "definition": "The resources owned and controlled by a company"
       },
       {
-        "term": "Share capital",
-        "definition": "The money raised by a company through issuing shares to shareholders, representing ownership in the company"
+        "term": "Current Assets",
+        "definition": "An asset which has a monetary value or can be converted into cash within 12 months. Examples include account receivables and cash"
       },
       {
-        "term": "Dividend",
-        "definition": "A payment made to shareholders from company profits as a return on their investment"
+        "term": "Non-Current Assets",
+        "definition": "Also known as Fixed Assets, these assets are acquired to earn revenue for the company and used for more than 12 months without being intended for resale. Examples include buildings and machinery, tools, and vehicles"
       },
       {
-        "term": "Retained earnings",
-        "definition": "Profits that have been kept in the business rather than distributed to shareholders as dividends"
+        "term": "Capital",
+        "definition": "The number of resources and funds provided by the owner injected into the business"
       },
       {
-        "term": "Ordinary shares",
-        "definition": "Shares that carry voting rights and receive variable dividends depending on company performance"
+        "term": "Liability",
+        "definition": "The money owed to another firm or an entity. Examples include bank loans and credit card debts"
       }
     ],
     "howToAnswer": [
@@ -71,17 +71,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'shareholders own the company' — always say 'shareholders are part-owners of the company'",
-      "Students often confuse share capital with loan capital - share capital represents ownership, loan capital is borrowed money",
-      "Don't write 'profit goes to shareholders' — write 'dividends are paid from retained earnings to shareholders'",
-      "Never say 'unlimited liability' when describing limited companies - always emphasize 'limited liability'",
-      "Students incorrectly think all profits must be paid as dividends - companies can retain profits for reinvestment"
+      "Confusing company accounting with sole trader accounting methods",
+      "Misunderstanding the relationship between assets, capital and liabilities in the basic accounting equation",
+      "Incorrectly treating different types of shares and their characteristics"
     ],
     "examinerTips": [
-      "Limited companies appear frequently in Paper 2 final accounts questions",
-      "Always distinguish between ordinary and preference shares when answering dividend questions",
-      "Remember to show appropriation of profit when preparing company accounts",
-      "Company accounts format differs from sole trader - include share capital and reserves sections"
+      "Remember that an increase in an asset is a debit and a decrease is a credit",
+      "Use the accounting equation: Assets = Capital + Liabilities to check your work"
     ],
     "formulas": [
       "Earnings per share = Net profit after tax ÷ Number of ordinary shares",
@@ -113,7 +109,7 @@
       "Examiner Report 2023: 'Candidates failed to explain the legal requirements for incorporation' — remember to mention minimum share capital, registration documents, and ongoing legal obligations when discussing formation"
     ],
     "keyDiagram": "Students should draw a comparison table with two columns: 'Private Limited Company (Ltd)' and 'Public Limited Company (PLC)'. Include rows for: Share trading (private sale vs public stock exchange), Minimum shareholders (1-2 vs 2), Share capital requirements, Control/ownership, Reporting requirements, and Examples. Use clear headings and ensure all key differences are visually distinct.",
-    "quickRecap": "Limited companies have separate legal identity from owners, providing limited liability protection. Private Ltd companies restrict share sales to known individuals, while PLCs can sell shares publicly on stock exchanges. Both require incorporation documents and ongoing legal compliance. Key advantage is limited liability; main disadvantage is loss of complete control and increased administrative burden."
+    "quickRecap": "Limited companies require specialized accounting treatment that differs from sole traders and partnerships. Companies involve share capital, different types of shares, dividends, debentures, and reserves. The final accounts for companies include specific statements like the Statement of Changes in Equity, and follow the fundamental accounting equation where assets equal capital plus liabilities."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -121,5 +117,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:42:40.568Z",
   "updated_at": "2026-04-06T03:42:40.568Z",
-  "enriched_at": "2026-04-06T16:10:52.927Z"
+  "enriched_at": "2026-04-06T16:10:52.927Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:29:25.566Z"
 }

@@ -9,37 +9,37 @@
     "title": "Commerce and Production",
     "readTime": "8 min",
     "keyPoints": [
-      "**Commerce** is the buying and selling of goods and services on a large scale",
-      "**Production** is the process of creating goods and services to satisfy human wants",
-      "**Primary production** involves extracting raw materials from nature, such as farming and mining",
-      "**Secondary production** involves converting raw materials into finished goods through manufacturing",
-      "**Tertiary production** involves providing services to consumers and businesses",
-      "The **supply chain** links all stages from raw materials to final consumer",
-      "**Added value** is created at each stage of the supply chain by transforming inputs",
-      "Commerce facilitates production by providing necessary services like transport, insurance and banking",
-      "**Direct production** satisfies the producer's own needs while **indirect production** is for exchange",
-      "The **chain of production** shows how goods pass through primary, secondary and tertiary stages"
+      "Commerce is study related to distribution of products from the producer (point of production) to the consumer (point of consumption)",
+      "Production is any activity which serves to satisfy human needs and wants",
+      "Utility of form: Any activity that changes the form of a product so that it becomes more useful to the consumer for example conversion of wood into more useful furniture",
+      "Utility of place: Any activity that transfers the goods or services to a location which is within easier assess to the consumer",
+      "Utility of time: Any activity that causes the availability of a product on time when it is needed",
+      "Primary production is obtaining raw materials or food from nature. Includes Extractive Industries for example mining, quarrying and Genetic Industries for example farming, forestry and fishing",
+      "Secondary production is making goods from raw materials. Includes Manufacturing, Processing and Constructing",
+      "Tertiary production assists industry to function, by providing commercial services and direct personal services",
+      "Specialization or Division of Labour is breaking down of a productive activity into simpler tasks so that a person specialist in that task can perform it",
+      "Production is completed only when goods reach point of consumption"
     ],
     "definitions": [
       {
         "term": "Commerce",
-        "definition": "The buying and selling of goods and services on a large scale, including all activities that help trade such as transport, insurance and banking"
+        "definition": "study related to distribution of products from the producer (point of production) to the consumer (point of consumption)"
       },
       {
-        "term": "Production",
-        "definition": "The process of creating goods and services to satisfy human wants using factors of production"
+        "term": "Products",
+        "definition": "the goods and services produced by a company, to satisfy needs and wants of customers"
       },
       {
-        "term": "Supply Chain",
-        "definition": "The sequence of processes involved in the production and distribution of goods from raw materials to final consumer"
+        "term": "Consumers",
+        "definition": "the ultimate users of goods and services produced"
       },
       {
-        "term": "Added Value",
-        "definition": "The increase in value of a product at each stage of production by transforming inputs into more useful outputs"
+        "term": "Needs",
+        "definition": "the things necessary for living, that is food, shelter and clothing"
       },
       {
-        "term": "Primary Production",
-        "definition": "The extraction of raw materials from nature, including farming, fishing, forestry and mining"
+        "term": "Wants",
+        "definition": "those goods and services which are not compulsory for living but makes life easier"
       }
     ],
     "howToAnswer": [
@@ -74,17 +74,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say commerce 'helps' production — always say commerce 'supports' or 'facilitates' production",
-      "Students often confuse production with productivity — production is creating goods, productivity is efficiency",
-      "Don't mix up the supply chain with distribution — supply chain includes all stages from raw materials",
-      "Avoid giving manufacturing as an example of tertiary production — it is secondary production",
-      "Never say banks 'give' money — they 'provide finance' or 'lend money'"
+      "Confusing needs with wants - needs are necessary for living while wants make life easier but are not compulsory",
+      "Thinking production ends at manufacturing stage - production is completed only when goods reach point of consumption",
+      "Not understanding that primary production products are in unusable state and must move to secondary stage"
     ],
     "examinerTips": [
-      "This topic appears in almost every Paper 1 Section A as basic knowledge",
-      "Always give Pakistani examples: cotton farming (primary), textile manufacturing (secondary), banking in Karachi (tertiary)",
-      "Draw the chain of production diagram showing primary → secondary → tertiary with examples",
-      "For 6-mark questions, give 3 ways with explanations rather than 6 points without explanation"
+      "Remember that manufacturing and tertiary activities are inter-related - tertiary activities distribute finished goods from factory to final consumer",
+      "Understand the three types of utility: form (changing product form), place (transferring to accessible location), and time (availability when needed)"
     ],
     "formulas": [],
     "keyDiagramDescription": "Chain of production diagram showing Primary Production (farmer growing cotton) → Secondary Production (textile factory making cloth) → Tertiary Production (retailer selling clothes to consumer), with commerce services (transport, banking, insurance) supporting each stage",
@@ -112,7 +108,7 @@
       "Examiner Report 2024: 'Candidates frequently mixed up direct and indirect services' — remember direct services go straight to consumers (banking, insurance) while indirect services support other businesses"
     ],
     "keyDiagram": "Draw a triangular interdependence diagram with 'INDUSTRY' at the top (showing raw materials → manufacturing → finished goods), 'COMMERCE' on the bottom left (showing wholesaling → retailing → consumers), and 'DIRECT SERVICES' on the bottom right (showing banking, insurance, transport). Use arrows between all three sections showing: Industry provides goods to Commerce, Commerce creates demand for Industry, Direct Services support both Industry and Commerce with essential services, while Industry and Commerce provide customers and business for Direct Services. Label each arrow with specific examples.",
-    "quickRecap": "Commerce involves the distribution and exchange of goods from producers to consumers through wholesaling and retailing. It depends on industry for goods to sell and direct services for banking, insurance, and transport support. E-commerce has transformed traditional retail patterns by enabling 24/7 shopping, global reach, and direct manufacturer-to-consumer sales. The three sectors (industry, commerce, direct services) are interdependent - each relies on the others to function effectively in the modern economy."
+    "quickRecap": "Commerce involves the distribution of products from producer to consumer through three stages of production. Primary production obtains raw materials from nature, secondary production converts them into useful goods, and tertiary production provides services to distribute these goods. Specialization increases efficiency by breaking down production into simpler tasks, creating various forms of utility to satisfy human needs and wants."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -120,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:10:45.916Z",
   "updated_at": "2026-04-06T04:10:45.917Z",
-  "enriched_at": "2026-04-06T16:24:49.455Z"
+  "enriched_at": "2026-04-06T16:24:49.455Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:43:12.980Z"
 }

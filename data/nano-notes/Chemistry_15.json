@@ -9,32 +9,32 @@
     "title": "Reactivity of metals",
     "readTime": "8 min",
     "keyPoints": [
-      "The **reactivity series** is the order of metals arranged in decreasing order of their reactivity",
-      "**More reactive metals** displace less reactive metals from solutions of their compounds",
-      "Metal **displacement reactions** involve the more reactive metal taking the place of the less reactive metal",
-      "**Hydrogen** is included in the reactivity series to show which metals react with acids",
-      "Metals above hydrogen in the reactivity series **react with dilute acids** to produce hydrogen gas",
-      "Metals below hydrogen in the reactivity series **do not react with dilute acids**",
-      "The **ease of extraction** of metals from their ores depends on their position in the reactivity series",
-      "More reactive metals require **more energy** to extract from their compounds than less reactive metals",
-      "**Rusting of iron** can be prevented by coating with more reactive metals like zinc (galvanizing)"
+      "Filtration is used for separating insoluble solid from liquid - liquid particles are small enough to go through filter paper pores while solid particles are too large",
+      "Crystallisation is used for obtaining solid from solid and liquid solution - involves heating solution to evaporate solvent, producing hot saturated solution, then crystals form on cooling",
+      "Distillation is used for obtaining pure liquid from solution - pure liquid has low BP and changes to gas easily while solid has high BP and remains in flask",
+      "Fractional distillation separates 2 miscible liquids - liquid with lowest BP comes out first at top of fractionating column",
+      "In filtration, the solid obtained is called 'Residue' and the liquid obtained is called 'Filtrate'",
+      "In distillation and fractional distillation, the liquid obtained is called 'Distillate' and is collected in conical flask",
+      "A saturated solution means no more solid can dissolve in it",
+      "The constant temperature during distillation process equals the boiling point of the pure liquid",
+      "Chromatography is used for separating mixture of organic compounds such as colour dyes"
     ],
     "definitions": [
       {
-        "term": "Reactivity series",
-        "definition": "The arrangement of metals in order of decreasing reactivity"
+        "term": "Soluble",
+        "definition": "can dissolve in water"
       },
       {
-        "term": "Displacement reaction",
-        "definition": "A reaction where a more reactive metal takes the place of a less reactive metal in a compound"
+        "term": "Insoluble",
+        "definition": "cannot dissolve in water"
       },
       {
-        "term": "Galvanizing",
-        "definition": "Coating iron with zinc to prevent rusting"
+        "term": "Miscible",
+        "definition": "mixable - able to be mixed"
       },
       {
-        "term": "Reduction",
-        "definition": "The removal of oxygen from a compound or the gain of electrons"
+        "term": "Saturated solution",
+        "definition": "no more solid can dissolve in it"
       }
     ],
     "howToAnswer": [
@@ -62,17 +62,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'stronger metal' — always say 'more reactive metal'",
-      "Students often confuse the direction of displacement — remember more reactive displaces less reactive",
-      "Don't write 'metals below hydrogen react with acids' — they do NOT react",
-      "Never say 'zinc protects iron by covering it' — zinc protects because it is more reactive and gets oxidized first",
-      "Students forget to include observations like color changes in displacement reactions"
+      "Confusing which separation method to use - remember filtration is for insoluble solid and liquid, crystallisation for obtaining solid from solution",
+      "Not understanding that crystallisation involves formation of crystals from cooling liquid or saturated solution",
+      "Mixing up the terms residue (solid from filtration) and distillate (liquid from distillation)"
     ],
     "examinerTips": [
-      "Reactivity series questions appear in almost every Paper 2",
-      "Always learn the order: Potassium, Sodium, Calcium, Magnesium, Aluminum, Zinc, Iron, Lead, Hydrogen, Copper, Silver, Gold",
-      "Use the mnemonic: Please Stop Calling Me A Zebra In Leeds Hospital Copper Silver Gold",
-      "For displacement reactions, always state the observation AND the explanation"
+      "Any question asking for method to obtain crystals, the process will be crystallisation",
+      "Remember that distillation works because pure liquid has low BP while solid has high BP"
     ],
     "formulas": [
       "Zn + CuSO₄ → ZnSO₄ + Cu",
@@ -104,7 +100,7 @@
       "Examiner Report 2022: 'Common error was stating metals react with water without specifying cold water, steam, or no reaction' — always specify the conditions (cold water, steam, or dilute acid) when describing metal reactivity"
     ],
     "keyDiagram": "Students must be able to draw the reactivity series as a vertical list with potassium at the top (most reactive) descending through sodium, calcium, magnesium, aluminum, zinc, iron, lead, copper, silver, and gold at the bottom (least reactive). Include horizontal lines to show: metals above aluminum react with cold water, metals from aluminum to lead react with steam, metals from zinc to lead react with dilute acids, and metals below lead (copper, silver, gold) do not react with dilute acids.",
-    "quickRecap": "The reactivity series ranks metals from most to least reactive: K, Na, Ca, Mg, Al, Zn, Fe, Pb, Cu, Ag, Au. More reactive metals displace less reactive metals from their compounds in displacement reactions. Metal reactivity decreases down the series - most reactive metals react with cold water, moderately reactive metals react with steam or dilute acids, least reactive metals don't react with water or acids."
+    "quickRecap": "Separation methods depend on the type of mixture: filtration for insoluble solid and liquid, crystallisation to obtain solid from solution, distillation to obtain pure liquid from solution, and fractional distillation for miscible liquids. Each method produces specific products with distinct names like residue, filtrate, and distillate."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -112,5 +108,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:55:57.091Z",
   "updated_at": "2026-04-05T20:55:57.091Z",
-  "enriched_at": "2026-04-06T15:59:10.284Z"
+  "enriched_at": "2026-04-06T15:59:10.284Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:12:48.232Z"
 }

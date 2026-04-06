@@ -9,37 +9,37 @@
     "title": "Coasts",
     "readTime": "8 min",
     "keyPoints": [
-      "**Waves** are formed by wind blowing over the sea surface creating energy that moves towards the coast",
-      "**Destructive waves** have high frequency, strong backwash and weak swash, causing erosion of beaches and cliffs",
-      "**Constructive waves** have low frequency, weak backwash and strong swash, depositing sediment to build beaches",
-      "**Hydraulic action** occurs when waves crash against cliffs forcing air into cracks, compressing it and weakening the rock",
-      "**Abrasion** happens when waves pick up stones and sand and hurl them at the cliff face, wearing it away",
-      "**Longshore drift** transports sediment along the coast when waves approach at an angle due to prevailing winds",
-      "A **spit** forms when longshore drift deposits sediment in a bay or where the coastline changes direction",
-      "**Beaches** are formed by constructive waves depositing sand and shingle in bays between headlands",
-      "**Headlands and bays** develop when soft rock erodes faster than hard rock, creating an irregular coastline",
-      "**Coastal management** includes hard engineering (sea walls, groynes) and soft engineering (beach nourishment, dune regeneration)"
+      "Rice is a kharif crop requiring warm temperatures for growth 20°C to 30°C and monsoon rain for growth/flooding fields 1270-2000mms",
+      "Wheat is a rabi crop requiring mild/warm temperature 10 degree – 20 degree for growing and 20 degrees for ripening",
+      "Cash crop farming uses large fields, higher capital required for modern irrigation system i.e. perennial canals, tubewells, sprinklers",
+      "Subsistence farming utilizes small land, low capital invested because of poverty, old irrigation methods like shaduf, desi variety of seeds used",
+      "Barani farming depends entirely on rainfall/rain-fed area with low banks/bunds constructed and often sheep/goats reared as alternative source of income",
+      "Natural inundation farming can only be carried out after flooding, farmers have no control of water supply, variable seasonal cropping",
+      "Tobacco growing uses human inputs like tractors for ploughing, harvesters for harvesting and spray of pesticides through machines",
+      "Wheat requires plain land for easy use of machinery, alluvial/loam/clay soils, 90 days growing season from Oct-Mar",
+      "Rice is not grown in barani farming areas because it requires over 1275mm rainfall in growing season, nowhere in Pakistan has this amount",
+      "Winter crop growing enables double or multiple crops, provides jobs throughout the year, increases farmers' income"
     ],
     "definitions": [
       {
-        "term": "Wave",
-        "definition": "The movement of energy through water caused by wind blowing over the sea surface"
+        "term": "Cash crop",
+        "definition": "Crops grown for sale/profit/commercial rather than for consumption by the farmers"
       },
       {
-        "term": "Cliff",
-        "definition": "A steep rock face formed by wave erosion at the coast"
+        "term": "Subsistence farming",
+        "definition": "Growing crops for own family"
       },
       {
-        "term": "Beach",
-        "definition": "An area of deposited sediment (sand, shingle or pebbles) found between high and low tide marks"
+        "term": "Cash crop farming",
+        "definition": "Growing for sale and profit purpose"
       },
       {
-        "term": "Spit",
-        "definition": "A long, narrow ridge of deposited sediment extending from the coast into the sea"
+        "term": "Kharif crop",
+        "definition": "Crops requiring warm temperatures and monsoon rain for growth"
       },
       {
-        "term": "Longshore drift",
-        "definition": "The movement of sediment along the coast by wave action in the direction of the prevailing wind"
+        "term": "Barani farming",
+        "definition": "Farming that depends entirely on rainfall/rain-fed area"
       }
     ],
     "howToAnswer": [
@@ -72,17 +72,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say waves 'crash into rocks' - always say 'waves erode cliffs through hydraulic action and abrasion'",
-      "Students often confuse constructive and destructive waves - remember destructive waves destroy beaches, constructive waves build them",
-      "Don't just say 'weathering breaks down rocks' - specify salt weathering and freeze-thaw weathering at coasts",
-      "Never say spits are formed by 'currents' - always explain longshore drift process with swash and backwash",
-      "Students forget to mention prevailing wind direction when explaining longshore drift"
+      "Confusing kharif and rabi crop seasons and their temperature requirements",
+      "Not understanding that rice cannot be grown in barani areas due to insufficient rainfall",
+      "Mixing up the human inputs differences between cash crop and subsistence farming"
     ],
     "examinerTips": [
-      "Coastal processes appear almost every year in Paper 2 - learn the step-by-step formation processes",
-      "Always draw labelled diagrams for landform formation questions to gain full marks",
-      "Use correct sequence words: 'firstly', 'then', 'over time', 'eventually' when explaining formation",
-      "Include specific examples of coastal management from your own region (e.g., Karachi coastline protection)"
+      "When describing farming types, specify the exact temperature ranges and rainfall requirements",
+      "Include specific examples of crops and their growing regions when asked"
     ],
     "formulas": [],
     "keyDiagramDescription": "Cross-section of a cliff showing wave erosion at the base, with labels for high tide, low tide, wave-cut notch, and overhang. Also diagram showing longshore drift with arrows indicating wave direction, swash and backwash movement.",
@@ -109,7 +105,7 @@
       "Examiner Report 2022: 'Candidates frequently omitted safety precautions in fieldwork questions' — always mention checking tide times, staying away from cliff edges, and working from safe positions when discussing coastal studies"
     ],
     "keyDiagram": "Students must draw a cross-section showing wave transformation from deep to shallow water. Include: deep water with long wavelength/low height waves on left, gradually decreasing wavelength and increasing height toward shore, seabed rising toward beach, and final breaking wave with crest toppling forward. Label wavelength, wave height, water depth, and direction of wave movement. Add annotations explaining friction with seabed causes changes.",
-    "quickRecap": "Waves change dramatically as they approach shore due to friction with the seabed in shallow water. Wavelength decreases while wave height increases, making waves steeper until they break when water depth equals 1.3 times wave height. Wave energy drives coastal erosion through hydraulic action and abrasion. Always consider safety when studying coasts - check tides, avoid cliff edges, and work from secure positions."
+    "quickRecap": "Pakistan agriculture involves different farming systems including cash crop farming with modern inputs, subsistence farming with traditional methods, and barani rain-fed farming. Crops are classified as kharif (warm season like rice) or rabi (cool season like wheat) based on temperature and rainfall requirements. Different regions specialize in different crops based on natural conditions and farming methods available."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -117,5 +113,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:57:49.073Z",
   "updated_at": "2026-04-06T03:57:49.073Z",
-  "enriched_at": "2026-04-06T16:09:19.724Z"
+  "enriched_at": "2026-04-06T16:09:19.724Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:36:42.936Z"
 }

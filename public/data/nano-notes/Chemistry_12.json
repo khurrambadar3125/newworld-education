@@ -9,37 +9,37 @@
     "title": "Preparation of salts",
     "readTime": "8 min",
     "keyPoints": [
-      "A **salt** is formed when hydrogen ions in an acid are replaced by metal ions or ammonium ions",
-      "**Soluble salts** are prepared by crystallisation from solution after neutralisation reactions",
-      "**Insoluble salts** are prepared by precipitation reactions between two soluble compounds",
-      "**Acid + metal → salt + hydrogen gas** (only for metals above hydrogen in reactivity series)",
-      "**Acid + base → salt + water** (neutralisation reaction using titration for exact amounts)",
-      "**Acid + carbonate → salt + water + carbon dioxide** (effervescence observed)",
-      "**Metal salt + another metal salt → two new salts** (precipitation method for insoluble salts)",
-      "Crystallisation involves heating to concentrate solution until crystals form on cooling",
-      "**Filtration** separates insoluble salt precipitates from the solution",
-      "**Washing with distilled water** removes impurities from the prepared salt crystals"
+      "Filtration separates insoluble solid from liquid - liquid particles small enough to go through filter paper pores, solid particles too large",
+      "Crystallization is used for obtaining solid from solid & liquid solution - produces crystals of pure solid on cooling",
+      "Distillation obtains pure liquid from solution - pure liquid has low BP and changes to gas easily, solid has high BP and remains in flask",
+      "Fractional distillation separates 2 liquids which are mixed (miscible) - liquid with lowest BP comes out first at top of fractionating column",
+      "Chromatography separates mixture of organic compounds like colour dyes",
+      "Solid obtained in filtration is called 'Residue', liquid obtained is called 'Filtrate'",
+      "In crystallization process: dissolve solid in solvent, heat solution to evaporate solvent, produces hot saturated solution, crystals form on cooling",
+      "In distillation, liquid obtained is called 'Distillate' and is collected in conical flask",
+      "Pure substances have fixed composition, fixed Mp/Bp, produce only 1 spot on chromatogram",
+      "Mixtures have variable composition, variable Bp/Mp, produce 2 or more spots on chromatogram"
     ],
     "definitions": [
       {
-        "term": "Salt",
-        "definition": "A compound formed when hydrogen ions in an acid are replaced by metal ions or ammonium ions"
+        "term": "Soluble",
+        "definition": "can dissolve in water (eg. Salt)"
       },
       {
-        "term": "Crystallisation",
-        "definition": "The process of obtaining pure crystals from a solution by evaporating the solvent"
+        "term": "Insoluble",
+        "definition": "cannot dissolve in water (eg. Sand)"
       },
       {
-        "term": "Precipitation",
-        "definition": "The formation of an insoluble solid when two solutions are mixed"
+        "term": "Miscible",
+        "definition": "mixable - (Able to be mixed)"
       },
       {
-        "term": "Neutralisation",
-        "definition": "The reaction between an acid and a base to form a salt and water"
+        "term": "Saturated solution",
+        "definition": "no more solid can dissolve in it"
       },
       {
-        "term": "Titration",
-        "definition": "A method to find the exact volume of acid needed to neutralise a known volume of alkali"
+        "term": "Crystallization",
+        "definition": "Formation of crystals from a cooling liquid/ Saturated solution"
       }
     ],
     "howToAnswer": [
@@ -72,17 +72,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'boil to dryness' for crystallisation — always say 'heat to concentrate then cool'",
-      "Students often forget to add 'excess' reactant when preparing soluble salts",
-      "Never say salts are 'dissolved' by washing — say 'impurities are removed'",
-      "Students confuse which method to use — soluble salts by crystallisation, insoluble salts by precipitation",
-      "Forgetting to mention 'washing with distilled water' to remove impurities from crystals"
+      "Confusing when to use crystallization vs distillation - crystallization obtains solid, distillation obtains liquid",
+      "Not understanding that filtration only works because solid particles are too large for filter paper pores",
+      "Mixing up the products - residue is solid from filtration, filtrate is liquid, distillate is from distillation"
     ],
     "examinerTips": [
-      "This topic appears every year in Paper 2 - know all three preparation methods",
-      "Always state whether the salt is soluble or insoluble to choose correct method",
-      "Include apparatus names: filter funnel, conical flask, evaporating dish",
-      "Observations score marks: effervescence, colour changes, precipitate formation"
+      "Any question that wants the method to obtain (make) crystals, the process will be 'Crystallization'",
+      "The constant temperature of distillation process equals the Boiling Point of pure liquid"
     ],
     "formulas": [
       "CuO + H₂SO₄ → CuSO₄ + H₂O",
@@ -116,7 +112,7 @@
       "Examiner Report 2024: 'Candidates confused precipitation with crystallization methods' — use precipitation for insoluble salts, crystallization for soluble salts from solution"
     ],
     "keyDiagram": "Students must draw the crystallization setup showing: beaker containing salt solution on tripod with gauze, Bunsen burner underneath for gentle heating, glass rod for testing saturation point, and evaporation dish as alternative. Include labels for 'gentle heating', 'saturated solution', and 'point where crystals form on glass rod'. For filtration, show funnel with filter paper, residue on paper, and filtrate collected below.",
-    "quickRecap": "Three main methods: acid + metal/oxide/carbonate (crystallization), acid + alkali (titration then crystallization), precipitation (mixing solutions). Always use excess solid reactant, filter unreacted material, gently heat to saturation point, cool to crystallize. Wash crystals with distilled water and dry between filter papers - never boil to dryness as this decomposes salts."
+    "quickRecap": "Separation methods depend on physical properties: filtration for insoluble solids uses particle size differences, crystallization obtains pure solid crystals from solutions, distillation obtains pure liquids using boiling point differences, and fractional distillation separates miscible liquids. Products have specific names: residue (solid from filtration), filtrate (liquid from filtration), and distillate (liquid from distillation)."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -124,5 +120,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:55:01.180Z",
   "updated_at": "2026-04-05T20:55:01.180Z",
-  "enriched_at": "2026-04-06T15:58:14.767Z"
+  "enriched_at": "2026-04-06T15:58:14.767Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:12:03.310Z"
 }

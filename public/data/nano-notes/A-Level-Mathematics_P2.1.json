@@ -9,33 +9,25 @@
     "title": "Algebra",
     "readTime": "8 min",
     "keyPoints": [
-      "For **modulus equations** |f(x)| = k, solve both f(x) = k and f(x) = -k, then check solutions in original equation",
-      "For **modulus inequalities** |f(x)| < k, solve -k < f(x) < k as a compound inequality",
-      "For **modulus inequalities** |f(x)| > k, solve f(x) > k OR f(x) < -k separately",
-      "**Polynomial division** uses the form P(x) = Q(x)D(x) + R(x) where degree of R(x) < degree of D(x)",
-      "**Remainder Theorem**: when P(x) is divided by (x - a), the remainder is P(a)",
-      "**Factor Theorem**: (x - a) is a factor of P(x) if and only if P(a) = 0",
-      "**Partial fractions** with linear factors: express A/(x-a) + B/(x-b) = (given fraction)",
-      "**Partial fractions** with repeated factors: use A/(x-a) + B/(x-a)² for factor (x-a)²",
-      "**Binomial expansion**: (a+b)ⁿ = Σ(ⁿCᵣ)aⁿ⁻ʳbʳ for positive integer n",
-      "**Binomial coefficient**: ⁿCᵣ = n!/(r!(n-r)!) where ⁿC₀ = ⁿCₙ = 1"
+      "Background algebra covers linear equations, changing the subject of a formula, and quadratic equations",
+      "Quadratic equations can be solved by factorisation when possible, or using the quadratic formula for equations that cannot be factorised",
+      "The graphs of quadratic functions show key features including maximum and minimum points",
+      "Simultaneous equations involve solving two or more equations together",
+      "Inequalities follow specific rules and methods for solving",
+      "Warning signs indicate common mistakes, misunderstandings or tricky points"
     ],
     "definitions": [
       {
-        "term": "Modulus",
-        "definition": "The modulus |x| is the positive value of x, defined as x when x ≥ 0 and -x when x < 0"
+        "term": "Background algebra",
+        "definition": "Foundational algebraic concepts including linear equations, changing the subject of a formula, and quadratic equations"
       },
       {
-        "term": "Polynomial",
-        "definition": "An expression of the form aₙxⁿ + aₙ₋₁xⁿ⁻¹ + ... + a₁x + a₀ where aₙ ≠ 0 and n is a non-negative integer"
+        "term": "Quadratic equations",
+        "definition": "Equations that can be solved by factorisation or using the quadratic formula when factorisation is not possible"
       },
       {
-        "term": "Partial Fraction",
-        "definition": "The decomposition of a rational function into simpler fractions with linear or quadratic denominators"
-      },
-      {
-        "term": "Binomial Coefficient",
-        "definition": "The coefficient ⁿCᵣ in the binomial expansion, representing the number of ways to choose r objects from n objects"
+        "term": "Simultaneous equations",
+        "definition": "Multiple equations that are solved together"
       }
     ],
     "howToAnswer": [
@@ -67,17 +59,13 @@
       ]
     },
     "commonMistakes": [
-      "Never ignore the modulus sign - always consider both positive and negative cases",
-      "Students often forget to check solutions in the original modulus equation",
-      "Never multiply out brackets when finding partial fractions - use substitution method instead",
-      "Students often confuse the forms for repeated factors in partial fractions",
-      "Never assume binomial expansion works for negative or fractional powers without stating conditions"
+      "Common mistakes, misunderstandings or tricky points are indicated by warning signs throughout the content",
+      "Equations that cannot be factorised require different solution methods",
+      "The quadratic formula must be used when factorisation is not possible"
     ],
     "examinerTips": [
-      "Modulus questions appear in every Paper 1, often combined with quadratics",
-      "Always show the substitution step clearly in partial fractions for method marks",
-      "State the range of validity when using binomial expansion",
-      "Draw sign diagrams for modulus inequalities to avoid errors"
+      "Discussion points with teachers are marked with specific symbols for important concepts",
+      "Students should attempt questions before looking up answers to understand mathematics fully"
     ],
     "formulas": [
       "|x| = x when x ≥ 0, |x| = -x when x < 0",
@@ -111,7 +99,7 @@
       "Examiner Report 2023: 'Candidates often forgot to state what the variable represents in word problems' — always define your variables clearly and give final answers in context"
     ],
     "keyDiagram": "Students should be able to sketch and label coordinate graphs showing: intersecting straight lines for simultaneous equations (showing solution as intersection point), parabolas for quadratic functions (marking vertex, axis of symmetry, and x-intercepts), and be able to plot points accurately using a table of values with clear axis labels and scales.",
-    "quickRecap": "Algebra involves manipulating expressions with letters and numbers. Master the four key skills: expanding brackets using FOIL, factorizing by finding common factors or using quadratic patterns, solving equations by isolating the variable, and substitution by replacing variables with given values. Always check answers by substituting back into original equations."
+    "quickRecap": "The algebra chapter covers fundamental concepts from background algebra through to complex equation solving. Key topics include linear and quadratic equations, with specific methods for factorisation and the quadratic formula. The content emphasizes proper understanding through practice and identifies common areas where students make mistakes."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -119,5 +107,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:51:11.136Z",
   "updated_at": "2026-04-06T04:51:11.136Z",
-  "enriched_at": "2026-04-06T16:10:04.342Z"
+  "enriched_at": "2026-04-06T16:10:04.342Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:48:11.270Z"
 }

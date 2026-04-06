@@ -9,36 +9,36 @@
     "title": "Experimental design and separation techniques",
     "readTime": "8 min",
     "keyPoints": [
-      "**Pure substances** have fixed melting and boiling points, while impure substances melt/boil over a range of temperatures",
-      "**Simple distillation** separates liquids with very different boiling points (difference >25°C) or separates a solvent from dissolved solids",
-      "**Fractional distillation** separates liquids with similar boiling points using a fractionating column packed with glass beads",
-      "**Paper chromatography** separates mixtures based on different solubilities in the solvent - more soluble substances travel further",
-      "**Rf value** = distance travelled by substance ÷ distance travelled by solvent front (always less than 1)",
-      "**Crystallisation** purifies soluble solids by dissolving in minimum hot water, filtering hot, then cooling to form crystals",
-      "**Filtration** separates insoluble solids from liquids using filter paper in a funnel",
-      "In experimental design, **control variables** must be kept constant to ensure a fair test",
-      "**Locating agents** like iodine vapour or ninhydrin are used to make colourless spots visible in chromatography"
+      "Filtration separates insoluble solid from liquid - liquid particles small enough to go through filter paper pores, solid particles too large",
+      "Crystallisation obtains solid from solid & liquid solution - process involves dissolving solid in solvent, heating to evaporate solvent, producing hot saturated solution, then crystals form on cooling",
+      "Distillation obtains pure liquid from solution - solution heated until it boils, pure liquid turns to vapour and leaves flask, vapour cooled by condenser and changes back to liquid called distillate",
+      "Fractional distillation separates 2 liquids which are mixed (miscible) - mixture heated, liquid with lowest BP comes out first at top of fractionating column",
+      "Pure substances have fixed composition, fixed Mp/Bp, produce only 1 spot on chromatogram, all molecules same",
+      "Mixtures have variable composition, variable Bp/Mp, 2 or more spots on chromatogram, 2 or more different molecules",
+      "Compounds are 2 or more elements chemically joined together containing covalent or ionic bonds",
+      "Mixtures are 2 or more substances which are not chemically joined together",
+      "Chromatography separates mixture of organic compounds like colour dyes"
     ],
     "definitions": [
       {
-        "term": "Pure substance",
-        "definition": "A substance that contains only one type of element or compound with fixed melting and boiling points"
+        "term": "Residue",
+        "definition": "Solid obtained from filtration"
       },
       {
-        "term": "Chromatography",
-        "definition": "A separation technique that separates mixtures based on the different solubilities of substances in a solvent"
+        "term": "Filtrate",
+        "definition": "Liquid obtained from filtration"
       },
       {
-        "term": "Rf value",
-        "definition": "The ratio of the distance travelled by a substance to the distance travelled by the solvent front"
+        "term": "Saturated solution",
+        "definition": "No more solid can dissolve in it"
       },
       {
-        "term": "Distillation",
-        "definition": "A separation technique that separates liquids based on their different boiling points"
+        "term": "Distillate",
+        "definition": "Liquid obtained from distillation or fractional distillation, collected in conical flask"
       },
       {
-        "term": "Crystallisation",
-        "definition": "A purification technique where a solute forms crystals when its hot saturated solution is cooled"
+        "term": "Miscible",
+        "definition": "Mixable - able to be mixed"
       }
     ],
     "howToAnswer": [
@@ -71,17 +71,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'boil the solution' for crystallisation - always say 'heat gently' or 'evaporate'",
-      "Students often confuse simple and fractional distillation - remember the 25°C boiling point difference rule",
-      "In chromatography, never say spots 'dissolve' in solvent - say they are 'carried up' or 'travel with' the solvent",
-      "Don't forget to mention 'minimum amount of hot water' in crystallisation methods",
-      "Students mix up residue and filtrate - residue stays on filter paper, filtrate passes through"
+      "Confusing when to use crystallisation vs distillation - crystallisation obtains the solid (solute), distillation obtains the liquid (solvent)",
+      "Not understanding that saturated solution means no more solid can dissolve",
+      "Mixing up properties of pure substances vs mixtures - pure substances have fixed composition and Mp/Bp, mixtures have variable composition and Mp/Bp"
     ],
     "examinerTips": [
-      "Separation techniques appear in every paper - learn the apparatus diagrams",
-      "Always calculate Rf values to 2 decimal places and show your working",
-      "For purity tests, mention both melting point AND boiling point determination",
-      "In method questions, use command words like 'heat', 'filter', 'collect' for clear instructions"
+      "Any question that wants the method to obtain crystals, the process will be crystallisation",
+      "The constant temperature of distillation process equals the boiling point of pure liquid"
     ],
     "formulas": [
       "Rf value = distance travelled by substance ÷ distance travelled by solvent front"
@@ -111,7 +107,7 @@
       "Examiner Report 2023: 'Candidates lose marks by not explaining WHY a technique works' — always link the separation method to the different physical properties being exploited"
     ],
     "keyDiagram": "Students must be able to draw a complete filtration setup showing: conical funnel in neck of conical flask, filter paper folded correctly in funnel, residue remaining on filter paper, clear filtrate collected in flask below. Include labels for all components and show mixture being poured down glass rod to prevent splashing. For distillation, draw complete apparatus with thermometer at correct height, condenser with cold water flow direction marked, and separate collection vessels.",
-    "quickRecap": "Experimental design requires clear identification of independent, dependent and controlled variables plus reliability measures. Separation techniques exploit different physical properties - filtration for insoluble solids, distillation for different boiling points, crystallization for different solubilities. Always consider the sequence of techniques needed for complex mixtures. Safety precautions and accurate labelled diagrams are essential for full marks."
+    "quickRecap": "Separation techniques depend on the type of mixture: filtration for insoluble solid and liquid, crystallisation to obtain solid from solution, distillation to obtain pure liquid from solution, fractional distillation for miscible liquids, and chromatography for organic compounds. Pure substances have fixed properties while mixtures have variable properties."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:58:07.651Z",
   "updated_at": "2026-04-05T20:58:07.651Z",
-  "enriched_at": "2026-04-06T16:01:48.772Z"
+  "enriched_at": "2026-04-06T16:01:48.772Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:14:29.706Z"
 }

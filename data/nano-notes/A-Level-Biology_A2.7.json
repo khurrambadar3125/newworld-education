@@ -9,38 +9,14 @@
     "title": "Biodiversity, classification and conservation",
     "readTime": "8 min",
     "keyPoints": [
-      "**Biodiversity** is the variety of life on Earth including genetic diversity, species diversity and ecosystem diversity",
-      "**Taxonomy** is the study of classification where organisms are grouped into hierarchical taxa based on shared characteristics",
-      "**Species** are groups of organisms that can interbreed to produce fertile offspring",
-      "**Conservation** involves the protection and management of species and ecosystems to maintain biodiversity",
-      "**In situ conservation** protects species in their natural habitat through national parks and nature reserves",
-      "**Ex situ conservation** protects species outside their natural habitat through seed banks, zoos and botanical gardens",
-      "**Endangered species** have very small population sizes and face high risk of extinction",
-      "**Ecosystem diversity** refers to the variety of different ecosystems and habitats in a region",
-      "Human activities cause **habitat destruction**, pollution, over-exploitation and climate change leading to biodiversity loss"
+      "This source contains the table of contents and copyright information for Cambridge International AS and A Level Biology Coursebook Fourth Edition",
+      "The coursebook covers topics from Cell structure through to Immunity and Practical skills for AS level",
+      "Chapter topics include biological molecules, enzymes, cell membranes and transport, mitotic cell cycle, nucleic acids and protein synthesis",
+      "Transport systems are covered for both plants (xylem and phloem) and mammals (cardiovascular system)",
+      "Disease-related topics include gas exchange and smoking, infectious diseases, and immunity",
+      "The book includes end-of-chapter questions and practical skills guidance"
     ],
-    "definitions": [
-      {
-        "term": "Biodiversity",
-        "definition": "The variety of life on Earth including genetic diversity within species, species diversity within communities and ecosystem diversity"
-      },
-      {
-        "term": "Species",
-        "definition": "A group of organisms that can interbreed to produce fertile offspring"
-      },
-      {
-        "term": "Conservation",
-        "definition": "The protection and management of species and ecosystems to maintain biodiversity for future generations"
-      },
-      {
-        "term": "Endangered species",
-        "definition": "A species with very small population size that faces high risk of extinction in the wild"
-      },
-      {
-        "term": "Taxonomy",
-        "definition": "The study of classification where organisms are identified, named and grouped into hierarchical taxa based on shared characteristics"
-      }
-    ],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -69,19 +45,8 @@
         "Mark 3: Ecosystem services essential for humans"
       ]
     },
-    "commonMistakes": [
-      "Never say 'animals and plants' — always use the term 'organisms' or 'species'",
-      "Students confuse species diversity with genetic diversity — species diversity is number of different species, genetic diversity is variation within a species",
-      "Don't just list conservation methods — always explain WHY each method helps preserve biodiversity",
-      "Never say conservation is 'just for animals' — must include plants, fungi and microorganisms",
-      "Students forget that taxonomy uses shared characteristics, not just physical appearance"
-    ],
-    "examinerTips": [
-      "This topic appears in Paper 2 almost every year, often linked to human impact",
-      "Always give specific examples of endangered species when discussing conservation",
-      "Link conservation methods to Pakistan examples like Chitral Gol National Park or mangrove forests in Karachi",
-      "Remember the taxonomic hierarchy: Kingdom, Phylum, Class, Order, Family, Genus, Species"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [
       "Simpson's Diversity Index: D = Σ(n/N)²",
       "Species richness = total number of species in community"
@@ -110,7 +75,7 @@
       "Examiner Report 2023: 'Candidates often gave vague answers about biodiversity importance' — always provide specific examples like genetic diversity for medicine, ecosystem services like pollination, and economic value of ecotourism"
     ],
     "keyDiagram": "Classification hierarchy pyramid showing Kingdom at top, then Phylum, Class, Order, Family, Genus, Species at bottom. Must include example organism (e.g., humans: Animalia → Chordata → Mammalia → Primates → Hominidae → Homo → sapiens). Should show how groups get smaller and more specific as you move down. Include note that species is defined as organisms that can interbreed to produce fertile offspring.",
-    "quickRecap": "Biodiversity includes genetic, species and ecosystem variety and is important for ecosystem stability, medicine and economics. Classification uses hierarchical system: Kingdom→Phylum→Class→Order→Family→Genus→Species, with binomial naming (Genus species). Conservation methods include captive breeding, seed banks, habitat protection and sustainable use. Threats include habitat loss, pollution, climate change and overexploitation."
+    "quickRecap": "This verified source shows only the contents page and copyright information from the Cambridge International AS and A Level Biology Coursebook Fourth Edition. The source does not contain any actual content about biodiversity, classification and conservation, only the book's structure and legal information."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +83,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:06:24.348Z",
   "updated_at": "2026-04-06T05:06:24.348Z",
-  "enriched_at": "2026-04-06T16:08:09.757Z"
+  "enriched_at": "2026-04-06T16:08:09.757Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:49:11.779Z"
 }

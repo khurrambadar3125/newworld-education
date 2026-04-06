@@ -9,38 +9,17 @@
     "title": "The Allocation of Resources",
     "readTime": "8 min",
     "keyPoints": [
-      "**Demand** is the quantity of a good or service that consumers are willing and able to buy at different prices during a given time period",
-      "**Supply** is the quantity of a good or service that producers are willing and able to sell at different prices during a given time period",
-      "**Market equilibrium** occurs where demand equals supply, determining the market price and quantity sold",
-      "**Price elasticity of demand** measures the responsiveness of quantity demanded to a change in price",
-      "When demand is **price elastic**, percentage change in quantity demanded is greater than percentage change in price",
-      "When demand is **price inelastic**, percentage change in quantity demanded is less than percentage change in price",
-      "**Income elasticity of demand** measures the responsiveness of quantity demanded to a change in consumer income",
-      "**Cross elasticity of demand** measures the responsiveness of quantity demanded for one good to a change in price of another good",
-      "**Price elasticity of supply** measures the responsiveness of quantity supplied to a change in price"
+      "Macroeconomics covers inflation as a key topic",
+      "Retail Price Index (RPI) is included in macroeconomic study",
+      "International trade forms part of macroeconomic analysis",
+      "Balance of payments is a fundamental macroeconomic concept",
+      "Exchange rates are covered in macroeconomic theory",
+      "Unemployment is a major macroeconomic topic",
+      "Taxation is included in macroeconomic study",
+      "Output and growth are key macroeconomic measures",
+      "Population factors affect macroeconomic analysis"
     ],
-    "definitions": [
-      {
-        "term": "Demand",
-        "definition": "The quantity of a good or service that consumers are willing and able to buy at different prices during a given time period"
-      },
-      {
-        "term": "Supply",
-        "definition": "The quantity of a good or service that producers are willing and able to sell at different prices during a given time period"
-      },
-      {
-        "term": "Market equilibrium",
-        "definition": "The point where demand equals supply, determining the market price and quantity traded"
-      },
-      {
-        "term": "Price elasticity of demand",
-        "definition": "A measure of the responsiveness of quantity demanded to a change in price"
-      },
-      {
-        "term": "Substitute goods",
-        "definition": "Goods that can be used instead of each other to satisfy the same want"
-      }
-    ],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -69,19 +48,8 @@
         "Mark 3: Correct interpretation of result"
       ]
     },
-    "commonMistakes": [
-      "Never say 'demand increases' when price falls — always say 'quantity demanded increases'",
-      "Students often forget to include 'willing AND able' in demand/supply definitions",
-      "Never ignore the negative sign in PED calculations — always interpret the absolute value",
-      "Students confuse movement along curves with shifts of curves",
-      "Never say elasticity measures 'how much' demand changes — always say 'responsiveness' or 'sensitivity'"
-    ],
-    "examinerTips": [
-      "Elasticity calculations appear frequently in Paper 2 — always show full working",
-      "Always draw and label diagrams for supply and demand questions",
-      "Use specific examples from Pakistan (wheat, rice, textiles) to illustrate concepts",
-      "Remember to interpret elasticity values — don't just calculate them"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [
       "PED = % change in quantity demanded ÷ % change in price",
       "YED = % change in quantity demanded ÷ % change in income",
@@ -114,7 +82,7 @@
       "Examiner Report 2023: 'Candidates often identified elastic/inelastic correctly but provided no economic explanation' — always explain why demand might be elastic/inelastic using factors like substitutes, necessity, time period, and proportion of income"
     ],
     "keyDiagram": "Price Elasticity of Demand curve comparison: Draw two demand curves on the same axes with Price (P) on y-axis and Quantity (Q) on x-axis. Show a steep demand curve labeled 'Price Inelastic Demand (PED < 1)' and a flatter demand curve labeled 'Price Elastic Demand (PED > 1)'. Mark identical price changes (P1 to P2) on both curves and show the resulting quantity changes (Q1 to Q2) are smaller for the inelastic curve and larger for the elastic curve. Include labels showing the percentage changes and PED calculations.",
-    "quickRecap": "Price elasticity of demand (PED) measures consumer responsiveness to price changes using the formula: % change in quantity demanded ÷ % change in price. PED < 1 means inelastic (consumers less responsive), PED > 1 means elastic (consumers more responsive). Key factors affecting PED include availability of substitutes, whether the good is a necessity or luxury, time period for adjustment, and proportion of income spent on the good."
+    "quickRecap": "The macroeconomics section covers major topics including inflation, international trade, unemployment, and taxation. These topics form the foundation of macroeconomic analysis for O Level Economics. The content includes examiner reports and topical questions for comprehensive study."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -122,5 +90,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:33:22.381Z",
   "updated_at": "2026-04-06T03:33:22.381Z",
-  "enriched_at": "2026-04-06T16:06:19.875Z"
+  "enriched_at": "2026-04-06T16:06:19.875Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:31:31.317Z"
 }

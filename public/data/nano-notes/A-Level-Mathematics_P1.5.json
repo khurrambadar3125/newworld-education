@@ -9,34 +9,18 @@
     "title": "Trigonometry",
     "readTime": "8 min",
     "keyPoints": [
-      "**Trigonometric identities** must be proven algebraically using known identities, not by substituting values",
-      "For **trigonometric equations**, find all solutions in the given range by considering the periodic nature",
-      "**Amplitude** is the coefficient of the trigonometric function that determines maximum displacement from the mean position",
-      "**Period** of f(x) = sin(nx) or cos(nx) is 2π/n, and for tan(nx) is π/n",
-      "Use the **CAST diagram** systematically to determine signs of trigonometric ratios in different quadrants",
-      "**Principal values** are the main solutions: sin⁻¹x gives [-π/2, π/2], cos⁻¹x gives [0, π], tan⁻¹x gives [-π/2, π/2]",
-      "Transform **a sin x + b cos x** to **R sin(x + α)** where R = √(a² + b²) and tan α = b/a",
-      "For **compound angle formulas**, memorize sin(A ± B) = sin A cos B ± cos A sin B exactly",
-      "**Double angle formulas**: cos 2A = cos²A - sin²A = 2cos²A - 1 = 1 - 2sin²A"
+      "Trigonometry background covers foundational concepts",
+      "Trigonometrical functions include sine, cosine, and tangent",
+      "Trigonometrical functions can be defined for angles of any size",
+      "The sine and cosine graphs have specific characteristics",
+      "The tangent graph has distinct properties",
+      "Equations can be solved using graphs of trigonometrical functions",
+      "Circular measure is used for angle measurement",
+      "Arc length of a circle can be calculated using trigonometry",
+      "Area of a sector of a circle involves trigonometrical calculations",
+      "Other trigonometrical functions exist beyond sine, cosine, and tangent"
     ],
-    "definitions": [
-      {
-        "term": "Amplitude",
-        "definition": "The maximum displacement from the equilibrium position in a periodic function"
-      },
-      {
-        "term": "Period",
-        "definition": "The smallest positive value of p for which f(x + p) = f(x) for all values of x"
-      },
-      {
-        "term": "Trigonometric Identity",
-        "definition": "An equation involving trigonometric functions that is true for all values of the variable for which both sides are defined"
-      },
-      {
-        "term": "Principal Value",
-        "definition": "The unique value of an inverse trigonometric function that lies within the restricted domain"
-      }
-    ],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "Prove",
@@ -66,19 +50,8 @@
         "Mark 4: Reject impossible solution and give final answers"
       ]
     },
-    "commonMistakes": [
-      "Never substitute numerical values to 'prove' an identity — always manipulate algebraically",
-      "Students often forget to check if solutions from quadratic equations are within the range of trigonometric functions",
-      "Don't confuse period with frequency — period of sin(2x) is π, not 2π",
-      "Never give calculator approximations for exact values — leave as π/6, π/4, etc.",
-      "Students miss solutions by not considering all quadrants where the trigonometric ratio is satisfied"
-    ],
-    "examinerTips": [
-      "Trigonometric equations appear in every Paper 1 — usually worth 6-8 marks",
-      "Always check your solutions by substituting back into the original equation",
-      "For R-formula questions, sketch the function to verify amplitude and phase shift",
-      "Use exact values (√2/2, 1/2, √3/2) not decimal approximations for special angles"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [
       "sin²x + cos²x = 1",
       "1 + tan²x = sec²x",
@@ -113,7 +86,7 @@
       "Examiner Report 2023: 'Candidates often rounded too early in multi-step problems' — keep full calculator values until the final step, then round to the specified number of decimal places or significant figures"
     ],
     "keyDiagram": "Students must master drawing and labeling right-angled triangles with the angle clearly marked, and all three sides labeled as hypotenuse (longest side, opposite the right angle), opposite (side facing the angle in question), and adjacent (side next to the angle in question, but not the hypotenuse). Include the angle symbol and ensure measurements/variables are clearly marked on appropriate sides.",
-    "quickRecap": "Remember SOH-CAH-TOA: Sin = Opposite/Hypotenuse, Cos = Adjacent/Hypotenuse, Tan = Opposite/Adjacent. For finding angles, use inverse functions (sin⁻¹, cos⁻¹, tan⁻¹). Always check your calculator is in degree mode. In 3D problems, identify the right-angled triangle within the shape first."
+    "quickRecap": "The trigonometry chapter in Cambridge A Level Mathematics covers trigonometrical functions for all angle sizes, their graphs, and applications to solving equations. It includes circular measure, calculations for arc length and sector area, and extends to other trigonometrical functions beyond the basic sine, cosine, and tangent."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -121,5 +94,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:49:26.452Z",
   "updated_at": "2026-04-06T04:49:26.452Z",
-  "enriched_at": "2026-04-06T16:08:52.816Z"
+  "enriched_at": "2026-04-06T16:08:52.816Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:47:29.399Z"
 }

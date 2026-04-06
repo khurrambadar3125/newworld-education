@@ -9,37 +9,37 @@
     "title": "Probability and Statistics",
     "readTime": "8 min",
     "keyPoints": [
-      "**Probability** of an event = (Number of favourable outcomes)/(Total number of possible outcomes)",
-      "**Mutually exclusive events** cannot occur at the same time, so P(A ∩ B) = 0",
-      "For **independent events**, P(A and B) = P(A) × P(B)",
-      "**Addition rule**: P(A ∪ B) = P(A) + P(B) - P(A ∩ B)",
-      "**Conditional probability**: P(A|B) = P(A ∩ B)/P(B) where P(B) ≠ 0",
-      "**Permutations** consider order: ⁿPᵣ = n!/(n-r)! for arranging r objects from n objects",
-      "**Combinations** ignore order: ⁿCᵣ = n!/(r!(n-r)!) for selecting r objects from n objects",
-      "**Tree diagrams** multiply probabilities along branches and add probabilities of different paths",
-      "**Expected value** E(X) = Σ(x × P(x)) for all possible values of X",
-      "For **binomial distribution**: P(X = r) = ⁿCᵣ × pʳ × (1-p)ⁿ⁻ʳ"
+      "The solution(s) of a pair of linear and/or non-linear equations correspond to the coordinates of the intersection point(s) of the graphs",
+      "A pair of simultaneous linear equations is of the form ax + by = p, cx + dy = q, where a, b, c and d are constants, x and y are variables to be determined",
+      "There is usually one solution to a pair of simultaneous linear equations",
+      "The methods most commonly used to solve simultaneous linear equations are elimination and substitution",
+      "In elimination, the coefficient of one of the variables is made the same in both equations. The equations are then either added or subtracted to form a single linear equation with only one variable",
+      "In substitution, a variable is made the subject of the chosen equation. This equation is then substituted into the equation that was not chosen to solve for the variable",
+      "A non-linear equation is not of the form ax + by = p",
+      "The method most commonly used to solve simultaneous non-linear equations is substitution",
+      "For substitution method: Step 1: Use the linear equation to express one of the variables in terms of the other. Step 2: Substitute it into the non-linear equation. Step 3: Substitute the value(s) obtained in Step 2 into the linear equation to obtain the value of the other variable",
+      "When solving simultaneous non-linear equations, substitute the values of x into the linear equation to obtain the corresponding values of y"
     ],
     "definitions": [
       {
-        "term": "Probability",
-        "definition": "A measure of the likelihood that an event will occur, expressed as a number between 0 and 1 inclusive"
+        "term": "Simultaneous linear equations",
+        "definition": "A pair of simultaneous linear equations is of the form ax + by = p, cx + dy = q, where a, b, c and d are constants, x and y are variables to be determined"
       },
       {
-        "term": "Independent events",
-        "definition": "Events where the outcome of one event does not affect the probability of the other event occurring"
+        "term": "Non-linear equation",
+        "definition": "A non-linear equation is not of the form ax + by = p"
       },
       {
-        "term": "Permutation",
-        "definition": "An arrangement of objects where the order matters"
+        "term": "Elimination method",
+        "definition": "The coefficient of one of the variables is made the same in both equations. The equations are then either added or subtracted to form a single linear equation with only one variable"
       },
       {
-        "term": "Combination",
-        "definition": "A selection of objects where the order does not matter"
+        "term": "Substitution method",
+        "definition": "A variable is made the subject of the chosen equation. This equation is then substituted into the equation that was not chosen to solve for the variable"
       },
       {
-        "term": "Conditional probability",
-        "definition": "The probability of an event occurring given that another event has already occurred"
+        "term": "Solution of simultaneous equations",
+        "definition": "The solution(s) of a pair of linear and/or non-linear equations correspond to the coordinates of the intersection point(s) of the graphs"
       }
     ],
     "howToAnswer": [
@@ -72,17 +72,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse permutations with combinations — always check if order matters",
-      "Students often forget to subtract P(A ∩ B) in the addition rule",
-      "Never multiply probabilities for mutually exclusive events — use addition instead",
-      "Students frequently confuse P(A|B) with P(B|A) — they are not the same",
-      "Never add probabilities along branches in tree diagrams — multiply along branches, add across different paths"
+      "Not using the linear equation to express one variable in terms of the other when solving non-linear equations",
+      "Forgetting to substitute values back into the linear equation to find corresponding values",
+      "Not simplifying equations properly during elimination or substitution"
     ],
     "examinerTips": [
-      "Probability questions appear in every Paper 2 examination",
-      "Always express final probability as a simplified fraction unless asked for decimal",
-      "Draw tree diagrams for multi-stage probability problems for full marks",
-      "Show factorial calculations clearly when using permutation and combination formulas"
+      "Use the linear equation to express one of the variables in terms of the other when solving simultaneous non-linear equations",
+      "Substitute the values of x into the linear equation to obtain the corresponding values of y"
     ],
     "formulas": [
       "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)",
@@ -116,7 +112,7 @@
       "Examiner Report 2021: 'Poor accuracy in reading values from cumulative frequency curves' — use a ruler and read carefully from the curve, not the plotted points"
     ],
     "keyDiagram": "Tree diagram showing all possible outcomes with probabilities on branches and final outcomes at endpoints. Must include: clear branching structure, probability fractions/decimals on each branch, final probabilities calculated by multiplying along paths, all probabilities checking to sum to 1. For cumulative frequency: smooth curve (not joining plotted points) with clearly labeled axes and scale, showing upper class boundaries on x-axis.",
-    "quickRecap": "Probability ranges from 0 to 1, with all outcomes summing to 1. For dependent events, multiply conditional probabilities; for independent events, multiply original probabilities. Mean from frequency table uses midpoints: Σ(fx)/Σf. Cumulative frequency curves help find median (50th percentile) and quartiles (25th and 75th percentiles)."
+    "quickRecap": "Simultaneous equations can be solved using elimination or substitution methods. For linear equations, either method works well, but for non-linear equations, substitution is most commonly used. The key is to use the linear equation to express one variable in terms of another, then substitute into the non-linear equation. Always substitute back to find corresponding values of both variables."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -124,5 +120,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:17:48.188Z",
   "updated_at": "2026-04-06T04:17:48.188Z",
-  "enriched_at": "2026-04-06T16:24:17.640Z"
+  "enriched_at": "2026-04-06T16:24:17.640Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:49:13.465Z"
 }

@@ -9,36 +9,36 @@
     "title": "Marketing",
     "readTime": "8 min",
     "keyPoints": [
-      "**Marketing** is the process of identifying, anticipating and satisfying customer needs profitably",
-      "**Market research** provides information about customers, competitors and market trends to reduce business risk",
-      "**Primary research** involves collecting new data directly from customers through surveys, interviews and observations",
-      "**Secondary research** uses existing data from government statistics, internet sources and market reports",
-      "**Product** is a good or service that satisfies customer needs and wants",
-      "**Price** is the amount customers pay for a product and affects demand, profit margins and market positioning",
-      "**Market segmentation** divides customers into groups with similar characteristics such as age, income or location",
-      "**Marketing mix** consists of the 4Ps: Product, Price, Place and Promotion working together to satisfy customer needs",
-      "**Brand** is a name, symbol or design that distinguishes a product from competitors and builds customer loyalty"
+      "The aim of a business in the private sector is to survive by making a profit",
+      "Businesses gain a larger market-share by increasing the sales of their products against competitors, which may involve reducing prices",
+      "To win the loyalty of customers and encourage repeat sales, businesses need to be reliable and provide a quality service to their customers",
+      "Primary production involves acquiring raw materials and is sometimes known as extractive production",
+      "Secondary production is the manufacturing and assembly process, involving converting raw materials into components and assembling the product",
+      "Tertiary production refers to the commercial services that support the production and distribution process",
+      "All limited companies are incorporated, which means they can sue or own assets in their own right",
+      "The owners of limited companies are not personally liable for the firm's debts - their losses are limited to the amount they invested in the business",
+      "A public limited company (PLC) can sell its shares on the Stock Market, while a private limited company (Ltd) cannot"
     ],
     "definitions": [
       {
-        "term": "Marketing",
-        "definition": "The process of identifying, anticipating and satisfying customer needs profitably"
+        "term": "market-share",
+        "definition": "a percentage of overall sales in an industry"
       },
       {
-        "term": "Market research",
-        "definition": "The collection and analysis of information about customers, competitors and the market"
+        "term": "repeat sales",
+        "definition": "Customers returning to buy the product from the same business"
       },
       {
-        "term": "Primary research",
-        "definition": "Collection of new data directly from customers for a specific purpose"
+        "term": "incorporated",
+        "definition": "firm with separate legal existence"
       },
       {
-        "term": "Secondary research",
-        "definition": "Use of existing data that has already been collected by someone else"
+        "term": "limited liability",
+        "definition": "owners are not personally liable for the firm's debts - their losses are limited to the amount they invested in the business"
       },
       {
-        "term": "Market segmentation",
-        "definition": "Dividing customers into groups with similar needs, wants or characteristics"
+        "term": "unlimited liability",
+        "definition": "the owners are personally liable for the firm's debts, and may have to pay them out of their own pocket"
       }
     ],
     "howToAnswer": [
@@ -73,17 +73,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say market research 'guarantees success' — always say it 'reduces risk' or 'increases chances of success'",
-      "Students often confuse primary and secondary research sources — questionnaires are primary, government statistics are secondary",
-      "Don't just list the 4Ps — explain how each element works together to satisfy customer needs",
-      "Avoid saying price is 'just about profit' — explain how it affects demand and market positioning",
-      "Never say marketing is 'just advertising' — it includes research, product development, pricing and distribution"
+      "Confusing that sole traders have no separate legal existence from their owner",
+      "Not understanding that private limited companies cannot sell shares on the Stock Market unlike PLCs",
+      "Assuming owners of limited companies are always involved in running the business unless elected to Board of Directors"
     ],
     "examinerTips": [
-      "Marketing questions appear in every Paper 1 and Paper 2 exam",
-      "Always use Pakistani business examples like National Foods, Engro or Gul Ahmed for context",
-      "When explaining market research methods, give specific examples of what data would be collected",
-      "For evaluation questions, consider both customer and business perspectives"
+      "Both types of limited company must indicate their status in their name, usually by using the abbreviation PLC or Ltd",
+      "Remember that both public and private limited companies must audit their accounts and have them available for inspection"
     ],
     "formulas": [],
     "keyDiagramDescription": "Marketing mix diagram showing the 4Ps (Product, Price, Place, Promotion) arranged around 'Customer Satisfaction' in the center, with arrows showing how each element influences customer decisions",
@@ -111,7 +107,7 @@
       "Examiner Report 2023: 'Weak responses on market research methods lacked clear distinction between primary and secondary' — always specify that primary research is collected first-hand (surveys, interviews) while secondary uses existing data (government statistics, competitor reports)"
     ],
     "keyDiagram": "The Marketing Mix (4 Ps) Diagram: Draw a circle divided into four equal segments labeled Product (features, quality, design), Price (strategies like penetration/skimming), Place (distribution channels, location), and Promotion (advertising, sales promotion, public relations). Include arrows pointing outward from each segment to show how they work together to satisfy customer needs in the target market. Add 'Customer Needs' in the center and 'Market Research' as an outer ring to show these inform all decisions.",
-    "quickRecap": "Marketing is identifying and satisfying customer needs profitably through market research, product development, and the marketing mix (4 Ps: Product, Price, Place, Promotion). Market segmentation divides customers into groups for targeted approaches. A marketing budget is a financial plan for marketing activities over a specified time period. Primary research collects new data while secondary research uses existing information."
+    "quickRecap": "Private sector businesses aim to survive by making profit and gaining market-share through competitive sales and quality service. The three stages of production are primary (extracting raw materials), secondary (manufacturing), and tertiary (commercial services). Limited companies have separate legal existence with limited liability, while sole traders face unlimited liability but have easier control and setup."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:52:42.625Z",
   "updated_at": "2026-04-06T03:52:42.625Z",
-  "enriched_at": "2026-04-06T16:06:47.241Z"
+  "enriched_at": "2026-04-06T16:06:47.241Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:32:45.779Z"
 }

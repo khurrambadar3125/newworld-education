@@ -9,37 +9,14 @@
     "title": "Series",
     "readTime": "8 min",
     "keyPoints": [
-      "An **arithmetic series** has constant common difference d between consecutive terms, with nth term Un = a + (n-1)d",
-      "The sum of the first n terms of an arithmetic series is **Sn = n/2[2a + (n-1)d]** or **Sn = n/2(first term + last term)**",
-      "A **geometric series** has constant common ratio r between consecutive terms, with nth term Un = ar^(n-1)",
-      "The sum of the first n terms of a geometric series is **Sn = a(1-r^n)/(1-r)** when r ≠ 1, or **Sn = na** when r = 1",
-      "A geometric series converges to a **sum to infinity S∞ = a/(1-r)** if and only if **|r| < 1**",
-      "The **binomial series** expansion is **(1+x)^n = 1 + nx + n(n-1)x²/2! + n(n-1)(n-2)x³/3! + ...** valid when |x| < 1",
-      "For negative or fractional powers, the binomial series is an **infinite series** that converges only when **|x| < 1**",
-      "When finding the sum to infinity, first check that **|r| < 1**, otherwise the series diverges and has no finite sum"
+      "Series content is found in Chapter 3: Sequences and series on page 75",
+      "The chapter covers definitions and notation for sequences and series",
+      "Arithmetic progressions are covered as a key topic in series",
+      "Geometric progressions form another major component of the series chapter",
+      "Binomial expansions are included within the series chapter",
+      "The material was originally part of the MEI Structured Mathematics series and adapted for Cambridge International A & AS level Mathematics syllabus"
     ],
-    "definitions": [
-      {
-        "term": "Arithmetic Series",
-        "definition": "A series where each term is obtained by adding a constant value (common difference) to the previous term"
-      },
-      {
-        "term": "Geometric Series",
-        "definition": "A series where each term is obtained by multiplying the previous term by a constant value (common ratio)"
-      },
-      {
-        "term": "Sum to Infinity",
-        "definition": "The value that an infinite geometric series approaches when |r| < 1, given by S∞ = a/(1-r)"
-      },
-      {
-        "term": "Common Ratio",
-        "definition": "The constant value r by which each term is multiplied to get the next term in a geometric sequence"
-      },
-      {
-        "term": "Convergent Series",
-        "definition": "An infinite series that approaches a finite limit as the number of terms approaches infinity"
-      }
-    ],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "Find",
@@ -67,19 +44,8 @@
         "Mark 6: Correct calculation of S∞"
       ]
     },
-    "commonMistakes": [
-      "Never write S∞ without first checking |r| < 1 — always verify the convergence condition",
-      "Students often confuse arithmetic and geometric formulas — check whether you add or multiply to get the next term",
-      "Never use Sn = na for geometric series — this only applies when r = 1 exactly",
-      "Students forget to use brackets with negative ratios — (-1/2)^5 ≠ -1/2^5",
-      "Never assume a series converges — always state and verify the condition |r| < 1 for sum to infinity questions"
-    ],
-    "examinerTips": [
-      "Series questions appear in every Paper 1, usually worth 8-12 marks total",
-      "Always identify the type of series first before selecting the appropriate formula",
-      "Show the convergence check |r| < 1 explicitly for full marks in sum to infinity questions",
-      "In binomial expansion questions, state the validity condition |x| < 1 for full marks"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [
       "Arithmetic: Un = a + (n-1)d, Sn = n/2[2a + (n-1)d]",
       "Geometric: Un = ar^(n-1), Sn = a(1-r^n)/(1-r), S∞ = a/(1-r) when |r| < 1",
@@ -109,7 +75,7 @@
       "Examiner Report 2023: 'Candidates often forgot to state conditions for convergence of geometric series' — always mention that |r| < 1 when finding the sum to infinity of a geometric series"
     ],
     "keyDiagram": "Students should be able to sketch a diagram showing the terms of a series as bars or points on a number line, with clear labels for the first term (a), common difference (d) or common ratio (r), and the general term. For geometric series, include a visual representation showing how terms decrease in magnitude when |r| < 1 for convergence.",
-    "quickRecap": "Series are the sum of sequence terms. Arithmetic series: Sₙ = n/2[2a + (n-1)d] where a is first term, d is common difference. Geometric series: Sₙ = a(1-rⁿ)/(1-r) for finite sum, S∞ = a/(1-r) when |r| < 1. Always identify if series is arithmetic (constant difference) or geometric (constant ratio) first."
+    "quickRecap": "The Series chapter is Chapter 3 in the Cambridge A Level Mathematics Pure Mathematics 1 textbook. It covers sequences and series fundamentals including definitions, notation, arithmetic progressions, geometric progressions, and binomial expansions. The content has been specifically adapted from MEI materials for the Cambridge International syllabus."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -117,5 +83,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:49:52.461Z",
   "updated_at": "2026-04-06T04:49:52.461Z",
-  "enriched_at": "2026-04-06T16:09:09.186Z"
+  "enriched_at": "2026-04-06T16:09:09.186Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:47:38.068Z"
 }

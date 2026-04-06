@@ -9,35 +9,35 @@
     "title": "External Influences",
     "readTime": "8 min",
     "keyPoints": [
-      "**Government** can influence business through taxation, subsidies, legislation and regulation",
-      "**Economic factors** include interest rates, inflation, unemployment and exchange rates which affect business costs and demand",
-      "**Legal constraints** such as employment law, consumer protection and environmental regulations must be followed by all businesses",
-      "**Globalisation** increases competition but also provides opportunities for businesses to expand into new markets",
-      "**Technology** changes create both opportunities for innovation and threats to traditional business models",
-      "**Environmental factors** such as climate change and pollution create new regulations and consumer expectations",
-      "**Social and cultural changes** affect consumer preferences and business practices",
-      "**Competition** from other businesses forces firms to improve quality, reduce prices or innovate"
+      "The aim of a business in the private sector is to survive by making a profit",
+      "Businesses gain a larger market-share by increasing the sales of their products against competitors",
+      "Primary production involves acquiring raw materials such as metals, coal, oil, rubber, foodstuffs and fish",
+      "Secondary production is the manufacturing and assembly process, converting raw materials into components",
+      "Tertiary production refers to commercial services that support production and distribution process",
+      "All limited companies are incorporated which means they can sue or own assets in their own right",
+      "Sole traders do not have a separate legal existence from their owner and have unlimited liability",
+      "Partnerships are businesses owned by two or more people with a deed of partnership contract drawn up"
     ],
     "definitions": [
       {
-        "term": "External influences",
-        "definition": "Factors outside the business that affect its operations and performance but cannot be controlled by the business"
+        "term": "Market-share",
+        "definition": "a percentage of overall sales in an industry"
       },
       {
-        "term": "Globalisation",
-        "definition": "The process by which businesses operate on an international scale and develop international influence"
+        "term": "Incorporated",
+        "definition": "firm with separate legal existence"
       },
       {
-        "term": "Interest rate",
-        "definition": "The cost of borrowing money or the reward for saving money, expressed as a percentage"
+        "term": "Limited liability",
+        "definition": "losses are limited to the amount they invested in the business"
       },
       {
-        "term": "Inflation",
-        "definition": "A general increase in prices and fall in the purchasing value of money"
+        "term": "Unlimited liability",
+        "definition": "owners are personally liable for the firm's debts, and may have to pay them out of their own pocket"
       },
       {
-        "term": "Exchange rate",
-        "definition": "The value of one currency expressed in terms of another currency"
+        "term": "Audit",
+        "definition": "an independent check on the accounts of the company"
       }
     ],
     "howToAnswer": [
@@ -72,17 +72,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse internal and external influences - government policies are external, not internal factors",
-      "Students often give vague answers about 'government helping business' - be specific about HOW (taxation, subsidies, regulations)",
-      "Don't just state the influence exists - always explain the IMPACT on the business",
-      "Avoid saying 'globalisation is good/bad' - explain specific advantages AND disadvantages",
-      "Never ignore the Pakistani context when examples are needed"
+      "Confusing that PLC owners are not involved in running the business unless elected to Board of Directors",
+      "Not understanding that sole traders may employ workers but are still owned by one person",
+      "Assuming all limited companies must audit accounts when there are exceptions for smaller private limited companies"
     ],
     "examinerTips": [
-      "External influences questions appear in every paper - learn specific examples for each type",
-      "Always link economic factors to business impact - costs, revenue, profits, cash flow",
-      "Use Pakistani examples: textile exports, agricultural subsidies, technology imports",
-      "For evaluation questions, consider both positive and negative impacts before concluding"
+      "Both types of company must indicate their status in their name using PLC or Ltd to show limited liability",
+      "Remember that primary production is sometimes known as extractive production"
     ],
     "formulas": [],
     "keyDiagramDescription": "External influences diagram showing business in center with arrows pointing inward from: Government (taxes, laws), Economic (interest rates, inflation), Social (demographics, culture), Technology (automation, internet), Environmental (climate, resources), Competition (rivals, substitutes)",
@@ -110,7 +106,7 @@
       "Examiner Report 2023: 'Weak responses repeated the same point in different words' — ensure each reason is genuinely distinct (unemployment vs economic growth vs competition are separate concepts)"
     ],
     "keyDiagram": "Government Support Cycle Diagram: Draw a circular flow showing Government Support (grants, tax breaks, advice) → New Business Start-ups → Economic Benefits (jobs, competition, innovation, tax revenue) → Benefits to Government (reduced welfare costs, increased tax income, economic growth) → More Resources for Support. Include arrows showing the cyclical nature and label each stage with specific examples.",
-    "quickRecap": "Governments support business start-ups for four main economic reasons: reducing unemployment by creating jobs, increasing market competition to benefit consumers, providing wider variety of goods/services through innovation, and boosting economic output/GDP. Remember to explain HOW each benefit occurs, not just WHAT the benefit is. Focus on the government's perspective and economic outcomes for society."
+    "quickRecap": "Private sector businesses aim to survive by making profit and gaining market-share. Production involves three stages: primary (acquiring raw materials), secondary (manufacturing), and tertiary (commercial services). Business structures include sole traders with unlimited liability, partnerships with shared ownership, and limited companies with separate legal existence and limited liability."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -118,5 +114,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:53:48.022Z",
   "updated_at": "2026-04-06T03:53:48.022Z",
-  "enriched_at": "2026-04-06T16:07:46.476Z"
+  "enriched_at": "2026-04-06T16:07:46.476Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:33:27.868Z"
 }

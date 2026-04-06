@@ -9,36 +9,36 @@
     "title": "Financial statements – Part A",
     "readTime": "8 min",
     "keyPoints": [
-      "**Trading account** shows the gross profit or gross loss for a trading period by calculating sales minus cost of sales",
-      "**Income statement** shows the net profit or net loss for a period by deducting expenses from gross profit",
-      "**Sales** (turnover) represents the revenue from selling goods to customers during the accounting period",
-      "**Cost of sales** is calculated as opening inventory plus purchases minus closing inventory",
-      "**Gross profit** is the profit made before deducting business expenses (Sales - Cost of sales)",
-      "**Expenses** are costs incurred in running the business such as rent, wages, electricity, and insurance",
-      "**Net profit** is the final profit after deducting all expenses from gross profit",
-      "Trading account and income statement can be presented as **one combined statement** or as **two separate statements**",
-      "**Closing inventory** appears as a credit in trading account and as a current asset in the statement of financial position"
+      "The process of accounting starts once the book-keeper finishes recording the financial transactions",
+      "It deals with measuring, identifying, and communicating financial information recorded by the book-keeper which facilitates the preparation of financial statements",
+      "Bookkeeping involves recording financial transactions from source documents of a business whereas accounting deals with maintaining financial statements from the bookkeeping records",
+      "Assets are the resources owned and controlled by a company, with the formula: Assets = Capital + Liabilities",
+      "An increase in an asset is a debit and a decrease is a credit",
+      "Current Assets are assets which have a monetary value or can be converted into cash within 12 months",
+      "Non-Current Assets are also known as Fixed Assets, these assets are acquired to earn revenue for the company and used for more than 12 months without being intended for resale",
+      "Capital is the number of resources and funds provided by the owner injected into the business",
+      "An increase in capital is a credit while a decrease or drawings is a debit"
     ],
     "definitions": [
       {
-        "term": "Trading account",
-        "definition": "A financial statement that calculates the gross profit or gross loss by showing sales revenue minus the cost of sales"
+        "term": "Assets",
+        "definition": "The resources owned and controlled by a company"
       },
       {
-        "term": "Income statement",
-        "definition": "A financial statement that shows the net profit or net loss by deducting expenses from gross profit"
+        "term": "Current Assets",
+        "definition": "An asset which has a monetary value or can be converted into cash within 12 months. Examples include account receivables and cash"
       },
       {
-        "term": "Cost of sales",
-        "definition": "The cost of goods that have been sold during the accounting period, calculated as opening inventory plus purchases minus closing inventory"
+        "term": "Non-Current Assets",
+        "definition": "Also known as Fixed Assets, these assets are acquired to earn revenue for the company and used for more than 12 months without being intended for resale. Examples include buildings and machinery, tools, and vehicles"
       },
       {
-        "term": "Gross profit",
-        "definition": "The profit earned from trading activities before deducting business expenses, calculated as sales minus cost of sales"
+        "term": "Capital",
+        "definition": "The number of resources and funds provided by the owner injected into the business"
       },
       {
-        "term": "Net profit",
-        "definition": "The final profit remaining after deducting all business expenses from gross profit"
+        "term": "Goodwill",
+        "definition": "Goodwill refers to the intangible asset that represents the reputation, customer loyalty, brand value, and other non-physical attributes of a business. It arises when one company acquires another company for a price higher than the fair value of its net assets"
       }
     ],
     "howToAnswer": [
@@ -70,17 +70,13 @@
       ]
     },
     "commonMistakes": [
-      "Never include closing inventory in cost of sales calculation - always deduct it",
-      "Students often forget to include carriage inwards as part of purchases in cost of sales",
-      "Never put expenses like rent and wages in the trading account - these go in the income statement",
-      "Students confuse sales returns with purchases returns when calculating net sales and net purchases",
-      "Never show negative gross profit as a loss - always state 'Gross loss' clearly"
+      "Confusing bookkeeping with accounting - bookkeeping involves recording financial transactions while accounting deals with maintaining financial statements",
+      "Incorrectly applying debit and credit rules - increases in assets are debits, decreases are credits",
+      "Mixing up current and non-current assets classification based on the 12-month timeframe"
     ],
     "examinerTips": [
-      "Trading account questions appear in almost every Paper 2 exam",
-      "Always show your workings for cost of sales calculation step by step",
-      "Use proper headings and underline totals for presentation marks",
-      "Remember to label your final answer as 'Gross profit' or 'Net profit'"
+      "Remember the basic accounting equation: Assets = Capital + Liabilities",
+      "Understand that goodwill may be subject to impairment if its value declines over time"
     ],
     "formulas": [
       "Cost of sales = Opening inventory + Purchases - Closing inventory",
@@ -111,7 +107,7 @@
       "Examiner Report 2023: 'Poor presentation and incorrect headings cost many candidates marks' — always use proper format with business name, statement type, and period covered as the heading, plus ensure debits/credits or assets/liabilities are clearly separated"
     ],
     "keyDiagram": "Students must be able to draw the standard format for Trading and Profit & Loss Account showing: TOP SECTION (Trading Account) with Sales minus Sales Returns equals Net Sales on right side, and Cost of Goods Sold calculation (Opening Stock + Net Purchases - Closing Stock) on left side, with Gross Profit as balancing figure. BOTTOM SECTION (Profit & Loss Account) shows Gross Profit plus other income on right, all expenses listed on left, with Net Profit as final balancing figure. Both sections should be clearly labeled with proper headings and the accounting period.",
-    "quickRecap": "Financial statements summarize business performance: Trading Account calculates gross profit (sales minus cost of goods sold), Profit & Loss Account shows net profit after all expenses, and Balance Sheet shows financial position using the accounting equation (Assets = Capital + Liabilities). Remember proper format, correct classifications, and that closing stock appears in Trading Account AND Balance Sheet."
+    "quickRecap": "Accounting starts after bookkeeping is complete and involves measuring, identifying, and communicating financial information to prepare financial statements. Assets are resources owned by a company and can be classified as current (convertible to cash within 12 months) or non-current (used for more than 12 months). The fundamental accounting equation is Assets = Capital + Liabilities, with specific debit and credit rules applying to each component."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:37:46.474Z",
   "updated_at": "2026-04-06T03:37:46.474Z",
-  "enriched_at": "2026-04-06T16:13:40.976Z"
+  "enriched_at": "2026-04-06T16:13:40.976Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:30:51.238Z"
 }

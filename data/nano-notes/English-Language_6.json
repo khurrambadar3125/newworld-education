@@ -9,35 +9,35 @@
     "title": "Writing skills",
     "readTime": "8 min",
     "keyPoints": [
-      "Identify **audience** and **purpose** clearly before writing to ensure appropriate tone and content",
-      "Use **varied vocabulary** including sophisticated words, idiomatic expressions and technical terms when appropriate",
-      "Apply **Standard English grammar** with accurate tenses, subject-verb agreement and sentence construction",
-      "Structure writing with clear **introduction, development and conclusion** using appropriate paragraphs",
-      "Create a detailed **plan** showing main points and supporting details before writing",
-      "Adopt consistent **voice** (formal/informal) that matches audience and purpose throughout",
-      "Use **discourse markers** (however, furthermore, consequently) to link ideas coherently",
-      "Apply **punctuation accurately** including complex punctuation for effect and clarity"
+      "Paper 1 Writing consists of two sections: Section 1 Directed Writing (30 marks) and Section 2 Composition (30 marks)",
+      "Section 1 requires a response of 200-300 words to one compulsory writing task",
+      "Section 2 offers a choice of five essay titles: 1 descriptive, 2 argumentative, 2 narrative, requiring 350-500 words",
+      "Argumentative essays should follow a 5-paragraph structure: introduction with thesis statement, two body paragraphs with claims and evidence, counter-argument paragraph, and conclusion",
+      "The introduction should contain your thesis statement as the last line and offer a tease as to why the reader should continue reading",
+      "Body paragraphs contain the meat of your argument with relevant facts, statistics, narratives, testimonials, and modes of persuasion like appeal to emotion or logic",
+      "The counter-argument paragraph should include 1 or 2 counter claims that go against your claim and then refute them with evidence",
+      "Assessment covers five writing objectives: articulate experience, sequence facts and ideas, use appropriate vocabulary, use appropriate register, and accurate spelling, punctuation and grammar"
     ],
     "definitions": [
       {
-        "term": "Audience",
-        "definition": "The specific group of people for whom the writing is intended, affecting choice of vocabulary, tone and content"
+        "term": "Thesis statement",
+        "definition": "Your statement of belief that appears as the last line of your introduction"
       },
       {
-        "term": "Purpose",
-        "definition": "The reason for writing such as to inform, persuade, entertain, advise or describe"
+        "term": "Directed Writing",
+        "definition": "Section 1 compulsory writing task worth 30 marks requiring 200-300 words"
       },
       {
-        "term": "Voice",
-        "definition": "The consistent tone and style adopted throughout the writing that reflects the relationship between writer and reader"
+        "term": "Composition",
+        "definition": "Section 2 writing task worth 30 marks requiring 350-500 words, choosing from descriptive, argumentative or narrative essays"
+      },
+      {
+        "term": "Task Fulfilment",
+        "definition": "Assessment criteria worth 15 marks covering understanding of purpose, awareness of situation and audience, appropriate format, and development of required points"
       },
       {
         "term": "Register",
-        "definition": "The level of formality in language that matches the audience and purpose"
-      },
-      {
-        "term": "Discourse markers",
-        "definition": "Words and phrases that connect ideas and show relationships between sentences and paragraphs"
+        "definition": "Language style appropriate to audience and context as required by assessment objective W4"
       }
     ],
     "howToAnswer": [
@@ -64,17 +64,16 @@
       ]
     },
     "commonMistakes": [
-      "Never use informal language like 'gonna' or 'cos' in formal writing — always use Standard English",
-      "Students often forget to plan and produce unstructured writing with poor paragraph organization",
-      "Never use the same simple vocabulary throughout — always vary word choices and use sophisticated alternatives",
-      "Students frequently ignore audience and use inappropriate tone for the intended reader",
-      "Never write without clear purpose — always ensure every paragraph serves the writing objective"
+      "Not developing bullet points as evenly as possible in Section 1 tasks",
+      "Using commonly confused words like their/there, seat/sit",
+      "Incorrect use of possessive pronouns",
+      "Not writing in full sentences even in informal writing",
+      "Problems with correct tenses and agreement"
     ],
     "examinerTips": [
-      "Writing tasks appear in both Paper 1 and Paper 2 with different formats and requirements",
-      "Always spend 5 minutes planning before writing to ensure clear structure and content",
-      "Read the question twice to identify exact audience, purpose and format requirements",
-      "Use the full range of punctuation including semicolons and colons for higher marks"
+      "It is essential to read the question carefully and be clear about its particular focus",
+      "In Section 1 tasks it is important to develop the bullet points as evenly as possible",
+      "It is essential to write in full sentences, even in informal writing – for example, 'I hope your family are all well' rather than 'Hope your family are all well'"
     ],
     "formulas": [],
     "keyDiagramDescription": "Planning framework showing: Audience identification → Purpose clarification → Structure outline (introduction/development/conclusion) → Key points with supporting details → Vocabulary and tone decisions",
@@ -102,7 +101,7 @@
       "Examiner Report 2023: 'Candidates often ignored the specific requirements of the question type' — in argumentative essays, ensure you present counterarguments, not just your own viewpoint"
     ],
     "keyDiagram": "Create a writing planning template with four sections: 1) Question Analysis Box (highlight key words, identify text type and audience), 2) Content Web (central topic with branching ideas, examples, and vocabulary), 3) Structure Outline (introduction hook, main body points 1-3, conclusion summary), 4) Language Checklist (sentence variety goals, literary devices to include, technical accuracy reminders). This visual framework ensures comprehensive planning within time constraints.",
-    "quickRecap": "Writing success depends on thorough planning, clear structure, and varied language. Spend 5 minutes analyzing the question and planning your response. Use topic sentences to start paragraphs and link ideas smoothly. Include complex sentences, descriptive vocabulary, and literary devices appropriate to your text type. Always reserve 5 minutes for proofreading to catch errors and improve clarity."
+    "quickRecap": "Cambridge O Level English Language Paper 1 consists of Directed Writing (200-300 words) and Composition (350-500 words). Argumentative essays require a 5-paragraph structure with thesis statement, supporting claims with evidence, counter-arguments, and conclusion. Assessment focuses on task fulfilment and language accuracy across five key writing objectives."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -110,5 +109,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:49:41.850Z",
   "updated_at": "2026-04-06T03:49:41.850Z",
-  "enriched_at": "2026-04-06T16:08:43.060Z"
+  "enriched_at": "2026-04-06T16:08:43.060Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:23:26.556Z"
 }

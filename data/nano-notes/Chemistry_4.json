@@ -9,36 +9,36 @@
     "title": "Chemical formulae and equations",
     "readTime": "8 min",
     "keyPoints": [
-      "A **chemical formula** shows the types and numbers of atoms present in a compound using chemical symbols",
-      "A **chemical equation** shows the reactants and products in a chemical reaction with correct formulae and balanced numbers",
-      "The **state symbols** (s), (l), (g), and (aq) must be included to show the physical state of each substance",
-      "**Balancing equations** requires equal numbers of each type of atom on both sides of the equation",
-      "**Ionic compounds** are named by stating the metal ion first, then the non-metal ion with '-ide' or '-ate' ending",
-      "**Molecular compounds** use prefixes (mono-, di-, tri-) to indicate the number of atoms of each element",
-      "The **law of conservation of mass** states that atoms cannot be created or destroyed in chemical reactions",
-      "**Word equations** show the names of reactants and products, while **symbol equations** use chemical formulae",
-      "**Coefficients** (large numbers) in front of formulae show the number of molecules or formula units involved"
+      "Compound - 2 or more elements chemically joined together - Contains Covalent or Ionic Bonds",
+      "Mixtures - 2 or more substances which are not chemically joined together - Can consist of Elements, Compounds, or Elements + Compounds",
+      "Pure Substances have: Fixed composition, Fixed Mp/Bp, Produces only 1 spot on chromatogram, All molecules same (equal)",
+      "Mixtures have: Variable Composition, Variable Bp/Mp, 2 or more spots on Chromatogram, 2 or more diff. molecules",
+      "Insoluble solid & Liquid → Filtration",
+      "Solid & Liquid solution → Crystallization (Obtaining solid) – Solute",
+      "Solid & Liquid solution → Distillation (Obtaining Liquid) – Solvent",
+      "2 Liquids mixed (Miscible) → Fractional Distillation",
+      "Mixture of Organic Compounds → Chromatography (Eg. Colour Dyes)"
     ],
     "definitions": [
       {
-        "term": "Chemical formula",
-        "definition": "A representation showing the types and numbers of atoms present in a compound using chemical symbols and subscript numbers"
+        "term": "Compound",
+        "definition": "2 or more elements chemically joined together - Contains Covalent or Ionic Bonds"
       },
       {
-        "term": "Chemical equation",
-        "definition": "A representation of a chemical reaction showing reactants and products with their correct formulae and balanced coefficients"
+        "term": "Mixtures",
+        "definition": "2 or more substances which are not chemically joined together"
       },
       {
-        "term": "Molecular formula",
-        "definition": "A formula that shows the actual number of atoms of each element in one molecule of a compound"
+        "term": "Saturated solution",
+        "definition": "no more solid can dissolve in it"
       },
       {
-        "term": "State symbols",
-        "definition": "Letters in brackets that show the physical state: (s) solid, (l) liquid, (g) gas, (aq) aqueous solution"
+        "term": "Miscible",
+        "definition": "mixable - (Able to be mixed)"
       },
       {
-        "term": "Balanced equation",
-        "definition": "A chemical equation where the number of atoms of each element is the same on both sides of the equation"
+        "term": "Distillate",
+        "definition": "Liquid obtained (Collected in conical flask)"
       }
     ],
     "howToAnswer": [
@@ -70,17 +70,13 @@
       ]
     },
     "commonMistakes": [
-      "Never write coefficients as subscripts - 2H₂O not H₄O",
-      "Students often forget state symbols or use incorrect ones like (d) for dissolved",
-      "Writing unbalanced equations and thinking they are complete",
-      "Confusing molecular formulae with empirical formulae",
-      "Changing subscripts when balancing instead of adding coefficients"
+      "Confusing compounds (chemically joined) with mixtures (not chemically joined)",
+      "Not understanding that pure substances have fixed composition while mixtures have variable composition",
+      "Mixing up filtration methods - using wrong separation technique for different mixture types"
     ],
     "examinerTips": [
-      "Chemical equations appear in every paper - practice balancing daily",
-      "Always check your balanced equation by counting atoms on each side",
-      "State symbols are often worth separate marks - never omit them",
-      "Learn common ion formulae and charges to write correct compound formulae"
+      "Any question that wants the method to obtain (make) crystals, the process will be 'Crystallisation'",
+      "The constant temperature of distillation process = Boiling Point of pure liquid"
     ],
     "formulas": [
       "CaCO₃ → CaO + CO₂",
@@ -111,7 +107,7 @@
       "Examiner Report 2023: 'Common error was not balancing equations properly' — always count atoms of each element on both sides and ensure they are equal before adding state symbols"
     ],
     "keyDiagram": "Students should be able to draw a step-by-step method flowchart showing: 1) Write word equation, 2) Replace words with chemical formulae, 3) Balance by adding coefficients (never change formulae), 4) Add state symbols in brackets. Include a visual example showing the progression from 'magnesium + oxygen → magnesium oxide' through to '2Mg(s) + O₂(g) → 2MgO(s)' with arrows between each step.",
-    "quickRecap": "Chemical formulae show the ratio of atoms in compounds using element symbols and subscript numbers. Balanced equations have equal numbers of each type of atom on both sides. State symbols (s), (l), (g), (aq) show the physical state of substances. Always write correct formulae first, then balance by adding coefficients, never change the formulae themselves."
+    "quickRecap": "Matter can exist as compounds (elements chemically joined) or mixtures (substances not chemically joined). Pure substances have fixed properties while mixtures have variable properties. Different separation techniques are used based on the type of mixture: filtration for insoluble solids, crystallization to obtain solids from solution, distillation to obtain pure liquids, fractional distillation for miscible liquids, and chromatography for organic compounds."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:52:17.234Z",
   "updated_at": "2026-04-05T20:52:17.234Z",
-  "enriched_at": "2026-04-06T16:03:09.053Z"
+  "enriched_at": "2026-04-06T16:03:09.053Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:15:10.973Z"
 }

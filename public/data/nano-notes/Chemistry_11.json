@@ -9,36 +9,36 @@
     "title": "Acids and bases",
     "readTime": "8 min",
     "keyPoints": [
-      "**Acids** are substances that produce hydrogen ions (H+) when dissolved in water",
-      "**Bases** are substances that react with acids to form salt and water only",
-      "**Alkalis** are bases that are soluble in water and produce hydroxide ions (OH-)",
-      "**pH scale** ranges from 0-14, with acids below 7, neutral at 7, and alkalis above 7",
-      "**Neutralisation** is the reaction between an acid and a base to produce salt and water only",
-      "**Universal indicator** shows pH by changing colour: red (pH 1-3), orange (pH 4-6), green (pH 7), blue (pH 8-11), purple (pH 12-14)",
-      "Strong acids like **hydrochloric acid** are completely ionised in water, weak acids like **ethanoic acid** are partially ionised",
-      "Common acids include **hydrochloric acid (HCl)**, **sulfuric acid (H2SO4)** and **nitric acid (HNO3)**",
-      "Common alkalis include **sodium hydroxide (NaOH)**, **potassium hydroxide (KOH)** and **ammonia solution (NH3)**"
+      "Compound - 2 or more elements chemically joined together - Contains Covalent or Ionic Bonds",
+      "Mixtures - 2 or more substances which are not chemically joined together - Can consist of Elements, Compounds, or Elements + Compounds",
+      "Pure Substances have: Fixed composition, Fixed Mp/Bp, Produces only 1 spot on chromatogram, All molecules same (equal)",
+      "Mixtures have: Variable Composition, Variable Bp/Mp, 2 or more spots on Chromatogram, 2 or more diff. molecules",
+      "Insoluble solid & Liquid → Filtration",
+      "Solid & Liquid solution → Crystallization (Obtaining solid) – Solute",
+      "Solid & Liquid solution → Distillation (Obtaining Liquid) – Solvent",
+      "2 Liquids mixed (Miscible) → Fractional Distillation",
+      "Mixture of Organic Compounds → Chromatography (Eg. Colour Dyes)"
     ],
     "definitions": [
       {
-        "term": "Acid",
-        "definition": "A substance that produces hydrogen ions (H+) when dissolved in water"
+        "term": "Soluble",
+        "definition": "can dissolve in water (eg. Salt)"
       },
       {
-        "term": "Base",
-        "definition": "A substance that reacts with acids to form salt and water only"
+        "term": "Insoluble",
+        "definition": "cannot dissolve in water (eg. Sand)"
       },
       {
-        "term": "Alkali",
-        "definition": "A base that is soluble in water and produces hydroxide ions (OH-)"
+        "term": "Miscible",
+        "definition": "mixable - (Able to be mixed)"
       },
       {
-        "term": "pH",
-        "definition": "A measure of the concentration of hydrogen ions in solution"
+        "term": "Saturated solution",
+        "definition": "no more solid can dissolve in it"
       },
       {
-        "term": "Neutralisation",
-        "definition": "The reaction between an acid and a base to produce salt and water only"
+        "term": "Distillate",
+        "definition": "Liquid obtained (Collected in conical flask)"
       }
     ],
     "howToAnswer": [
@@ -70,17 +70,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'acids contain hydrogen' — always say 'acids produce hydrogen ions when dissolved in water'",
-      "Students often confuse bases and alkalis — remember all alkalis are bases but not all bases are alkalis",
-      "Never write H+ and OH- without mentioning they are ions",
-      "Don't say 'neutralisation produces salt and water and heat' — only mention salt and water in the definition",
-      "Students write 'pH 7 is neutral' but forget to state what acidic and alkaline pH ranges are"
+      "Confusing compounds (chemically joined) with mixtures (not chemically joined)",
+      "Not recognizing that pure substances have fixed melting/boiling points while mixtures have variable ones",
+      "Mixing up when to use crystallization (obtaining solid) versus distillation (obtaining liquid)"
     ],
     "examinerTips": [
-      "This topic appears every year in Paper 2 — often combined with salts preparation",
-      "Always use the exact phrase 'salt and water only' when defining neutralisation",
-      "pH questions often ask for specific colour changes with universal indicator",
-      "Learn the difference between strong/weak acids and concentrated/dilute acids"
+      "Any question that wants the method to obtain (make) crystals, the process will be 'Crystalisation'",
+      "The constant temperature of distillation process = Boiling Point of pure liquid"
     ],
     "formulas": [
       "HCl + NaOH → NaCl + H2O",
@@ -112,7 +108,7 @@
       "Examiner Report 2022: 'Candidates lost marks by not specifying the medium' — always state 'in aqueous solution' or 'in water' when defining acids and bases using H⁺ and OH⁻ ions"
     ],
     "keyDiagram": "Students must be able to draw a pH scale from 0-14 showing: acidic region (0-6.9) in red, neutral point (7.0) in green, and alkaline region (7.1-14) in blue. Include common examples: battery acid (pH 0), lemon juice (pH 2), pure water (pH 7), baking soda (pH 9), household ammonia (pH 11), and sodium hydroxide (pH 14). Mark strong acids (pH 0-1), weak acids (pH 3-6), weak bases (pH 8-11), and strong bases (pH 13-14).",
-    "quickRecap": "Acids release H⁺ ions in water (pH < 7), bases release OH⁻ ions (pH > 7). Strong acids/bases completely ionise, weak ones partially ionise with equilibrium arrows. Universal indicator shows pH: red (acidic), green (neutral), blue (alkaline). Metal + acid → salt + hydrogen; acid + base → salt + water (neutralisation)."
+    "quickRecap": "Compounds are elements chemically joined together while mixtures are substances not chemically joined. Pure substances have fixed properties while mixtures have variable properties. Different separation methods are used based on the type of mixture: filtration for insoluble solids, crystallization to obtain solids from solutions, distillation to obtain pure liquids, fractional distillation for miscible liquids, and chromatography for organic compounds."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:54:38.960Z",
   "updated_at": "2026-04-05T20:54:38.960Z",
-  "enriched_at": "2026-04-06T15:57:54.307Z"
+  "enriched_at": "2026-04-06T15:57:54.307Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:11:46.689Z"
 }

@@ -8,40 +8,8 @@
   "note_data": {
     "title": "Germany, 1918-45",
     "readTime": "8 min",
-    "keyPoints": [
-      "The **Weimar Republic** was established in 1919 after Germany's defeat in WWI and faced immediate problems including the Treaty of Versailles, economic crises, and political opposition",
-      "The **hyperinflation crisis of 1923** destroyed middle-class savings when the government printed money to pay reparations, making basic goods cost billions of marks",
-      "The **Golden Age (1924-1929)** saw temporary recovery under Stresemann with American loans, cultural revival, and improved international relations through the Locarno Pact",
-      "The **Wall Street Crash of 1929** led to economic depression in Germany with 6 million unemployed by 1932, destroying confidence in democratic government",
-      "**Hitler's rise to power (1929-1933)** was achieved through legal means, exploiting economic crisis and promising to restore German greatness while using propaganda and violence",
-      "The **Nazi dictatorship (1933-1939)** was established through the Enabling Act, elimination of opposition parties, and creation of a police state with the SS and Gestapo",
-      "**Nazi economic policies** reduced unemployment through public works programs like autobahn construction and rearmament, while controlling workers through the Labour Front",
-      "**Nazi social policies** promoted traditional family values, used Hitler Youth to indoctrinate children, and persecuted minorities including Jews, Roma, and disabled people",
-      "The **Holocaust (1941-1945)** was the systematic murder of 6 million Jews and other minorities through ghettos, mass shootings, and extermination camps",
-      "**Nazi Germany's defeat (1945)** came after total war, Allied bombing, and Hitler's suicide, leaving the country divided and occupied"
-    ],
-    "definitions": [
-      {
-        "term": "Weimar Republic",
-        "definition": "The democratic government of Germany from 1919-1933, named after the town where the constitution was written"
-      },
-      {
-        "term": "Hyperinflation",
-        "definition": "Rapid increase in prices when money becomes worthless, occurring in Germany in 1923 when bread cost billions of marks"
-      },
-      {
-        "term": "Enabling Act",
-        "definition": "Law passed in March 1933 giving Hitler power to make laws without the Reichstag for four years"
-      },
-      {
-        "term": "Holocaust",
-        "definition": "The systematic persecution and murder of 6 million Jews by Nazi Germany between 1941-1945"
-      },
-      {
-        "term": "Anschluss",
-        "definition": "The union of Austria with Nazi Germany in March 1938, forbidden by the Treaty of Versailles"
-      }
-    ],
+    "keyPoints": [],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -70,19 +38,8 @@
         "Mark 5-6: Political opposition from left and right with specific examples"
       ]
     },
-    "commonMistakes": [
-      "Never say 'Hitler was elected' — always say 'Hitler was appointed Chancellor by Hindenburg in January 1933'",
-      "Students often confuse the SA (stormtroopers) with the SS (elite guard) — SA were the brownshirts used for violence, SS were the black-uniformed elite",
-      "Don't write 'Jews were killed' — use specific terms like 'systematically murdered in extermination camps'",
-      "Never say the Weimar Republic was 'weak' without explaining why — give specific examples like Article 48 or proportional representation",
-      "Students often ignore the period 1924-1929 — this 'Golden Age' is crucial for explaining why democracy failed"
-    ],
-    "examinerTips": [
-      "This topic appears in almost every Paper 2 — focus on causation and change over time",
-      "Always use specific dates and statistics — unemployment figures, election results, casualty numbers",
-      "Link events together — show how the Treaty of Versailles led to economic problems which helped Hitler rise",
-      "Use German terms correctly — Reichstag (parliament), Führer (leader), Lebensraum (living space)"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [],
     "keyDiagramDescription": "Timeline showing three phases: Weimar Crisis (1919-1923), Golden Age (1924-1929), and Nazi Rise and Rule (1930-1945) with key events marked",
     "pastPaperRefs": [
@@ -110,7 +67,7 @@
       "Examiner Report 2021: 'Candidates frequently described Nazi policies without explaining their impact or effectiveness' — when discussing Nazi control, always evaluate success/failure with specific evidence like election results or resistance levels"
     ],
     "keyDiagram": "Timeline of key events 1918-45: Start with German defeat and abdication (November 1918), mark Treaty of Versailles (1919), Weimar constitution, hyperinflation (1923), Golden Age (1924-29), Wall Street Crash (1929), Nazi electoral breakthrough (1930), Hitler becomes Chancellor (January 1933), Enabling Act (March 1933), Night of Long Knives (1934), Nuremberg Laws (1935), Kristallnacht (1938), and outbreak of war (1939). Use different colors for Weimar period (1918-33) versus Nazi period (1933-45). Include unemployment figures and Nazi vote percentages at key points.",
-    "quickRecap": "Germany 1918-45 covers the collapse of imperial Germany, the troubled Weimar Republic (1918-33), and Nazi dictatorship (1933-45). Key themes: Treaty of Versailles created long-term resentment, economic crises (hyperinflation 1923, Depression 1929-32) destabilized democracy, and Hitler exploited these weaknesses through propaganda and violence. Once in power, Nazis established total control through legal revolution, terror, and coordination of all aspects of German society."
+    "quickRecap": "No relevant information available in the verified source for the topic Germany, 1918-45."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -118,5 +75,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:04:51.068Z",
   "updated_at": "2026-04-06T04:04:51.068Z",
-  "enriched_at": "2026-04-06T16:08:53.727Z"
+  "enriched_at": "2026-04-06T16:08:53.727Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:41:22.584Z"
 }

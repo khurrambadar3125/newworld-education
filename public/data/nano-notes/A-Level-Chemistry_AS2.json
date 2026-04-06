@@ -9,32 +9,21 @@
     "title": "Atomic structure",
     "readTime": "8 min",
     "keyPoints": [
-      "An **atom** consists of a nucleus containing protons and neutrons, surrounded by electrons in energy levels or shells",
-      "**Electrons** occupy orbitals which are regions of space where there is a high probability of finding an electron",
-      "The **principal quantum number (n)** indicates the energy level or shell, with n=1 being closest to the nucleus",
-      "**s-orbitals** are spherical, **p-orbitals** are dumbbell shaped, and each orbital can hold a maximum of 2 electrons",
-      "**Electronic configuration** shows the arrangement of electrons in orbitals, written as 1s² 2s² 2p⁶ etc.",
-      "**First ionisation energy** is the energy required to remove one mole of electrons from one mole of gaseous atoms",
-      "Ionisation energy **decreases down a group** because atomic radius increases and nuclear attraction decreases",
-      "Ionisation energy **increases across a period** because nuclear charge increases while shielding remains similar",
-      "**Successive ionisation energies** show large jumps when electrons are removed from inner shells closer to the nucleus"
+      "Elements and atoms form the foundation of atomic structure",
+      "Inside the atom contains the basic components that make up atomic structure",
+      "Numbers of nucleons are fundamental to understanding atomic composition",
+      "Isotopes are variations of atoms with different nucleon numbers",
+      "The number of protons, neutrons and electrons determines atomic identity",
+      "Atomic structure is directly connected to electronic structure in atoms"
     ],
     "definitions": [
       {
-        "term": "Orbital",
-        "definition": "A region of space around the nucleus where there is a high probability of finding an electron"
+        "term": "Isotopes",
+        "definition": "Referenced as a key component of atomic structure with varying numbers of nucleons"
       },
       {
-        "term": "First ionisation energy",
-        "definition": "The energy required to remove one mole of electrons from one mole of gaseous atoms to form one mole of gaseous 1+ ions"
-      },
-      {
-        "term": "Electronic configuration",
-        "definition": "The arrangement of electrons in orbitals around the nucleus of an atom"
-      },
-      {
-        "term": "Shielding effect",
-        "definition": "The reduction in nuclear attraction experienced by outer electrons due to repulsion from inner shell electrons"
+        "term": "Nucleons",
+        "definition": "Particles that make up the atomic nucleus, with their numbers being significant to atomic identity"
       }
     ],
     "howToAnswer": [
@@ -66,17 +55,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'electrons orbit the nucleus' — always say 'electrons occupy orbitals around the nucleus'",
-      "Students often write electronic configurations incorrectly by not following the order 1s² 2s² 2p⁶ 3s²",
-      "Never say ionisation energy decreases because 'atoms get bigger' — say 'atomic radius increases so nuclear attraction decreases'",
-      "Students confuse first ionisation energy definition by omitting 'gaseous' atoms and ions",
-      "Never ignore shielding effect when explaining ionisation energy trends down groups"
+      "Confusion about the relationship between protons, neutrons and electrons",
+      "Misunderstanding isotope variations",
+      "Difficulty with nucleon counting"
     ],
     "examinerTips": [
-      "Ionisation energy questions appear in every Paper 2 - learn the definition word perfect",
-      "Always state electronic configurations when explaining periodic trends",
-      "Draw orbital diagrams clearly with boxes and arrows for electron spin",
-      "Questions often link atomic structure to bonding and periodicity in Paper 2"
+      "Focus on understanding the numbers of protons, neutrons and electrons",
+      "Remember that isotopes are key to atomic structure concepts"
     ],
     "formulas": [],
     "keyDiagramDescription": "Orbital shapes diagram showing spherical s-orbital and dumbbell-shaped p-orbitals in 3D, plus electronic configuration notation with arrows showing electron spin pairing",
@@ -104,7 +89,7 @@
       "Examiner Report 2023: 'Candidates often stated that isotopes have different numbers of protons' — remember isotopes have the same number of protons but different numbers of neutrons"
     ],
     "keyDiagram": "Students must be able to draw an atom showing: (1) Central nucleus containing protons (p) and neutrons (n) clearly labeled, (2) Concentric circles representing electron shells, (3) Electrons shown as dots or crosses on the shells, (4) Correct electron arrangement following the 2,8,8,2 pattern, (5) All particles labeled with their charges if required. The diagram should be proportional with nucleus much smaller than electron shells.",
-    "quickRecap": "Atoms contain protons (+1 charge), neutrons (0 charge) in the nucleus, and electrons (-1 charge) in shells around the nucleus. Atomic number = protons = electrons in neutral atoms. Mass number = protons + neutrons. Isotopes have same protons but different neutrons, giving same chemical properties but different physical properties."
+    "quickRecap": "Atomic structure covers elements and atoms, focusing on what's inside the atom. The numbers of nucleons (protons and neutrons) are crucial, along with understanding isotopes and how to determine the numbers of protons, neutrons and electrons in different atoms."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -112,5 +97,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:30:00.893Z",
   "updated_at": "2026-04-06T04:30:00.893Z",
-  "enriched_at": "2026-04-06T16:11:23.334Z"
+  "enriched_at": "2026-04-06T16:11:23.334Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:45:04.094Z"
 }

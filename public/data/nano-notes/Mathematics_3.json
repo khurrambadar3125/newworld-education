@@ -9,32 +9,32 @@
     "title": "Mensuration",
     "readTime": "8 min",
     "keyPoints": [
-      "**Area of circle** = πr² where r is the radius",
-      "**Circumference of circle** = 2πr or πd where d is the diameter",
-      "**Arc length** = (θ/360°) × 2πr where θ is the angle at centre in degrees",
-      "**Area of sector** = (θ/360°) × πr² where θ is the angle at centre in degrees",
-      "**Volume of prism** = area of cross-section × length",
-      "**Surface area of cylinder** = 2πr² + 2πrh where h is the height",
-      "**Volume of cylinder** = πr²h where r is radius and h is height",
-      "**Perimeter of rectangle** = 2(l + w) and **area** = l × w",
-      "For **compound shapes**, break into simpler shapes and add/subtract areas as appropriate"
+      "Natural numbers are all the positive integers from 1 to infinity, fractions or decimals are not included and they are also called Positive Integers",
+      "Whole Numbers are all the positive Integers including zero",
+      "Integers include positive numbers, negative numbers or zero and are the most common word used by the examiner",
+      "Prime Numbers are numbers that have exactly 2 factors; 1 and the number itself",
+      "Composite Numbers are numbers that have more than two factors",
+      "Rational numbers are any whole number that can be written as a pure fraction or decimal and must either end (terminating decimals) or repeat (recurring decimals)",
+      "Irrational numbers are any number that cannot be expressed in the form of a fraction",
+      "Real numbers are all the numbers that exist and include all rational and irrational numbers",
+      "Squared Numbers are multiplying the number with itself, are always positive, and candidates are required to memorise square numbers up till 15 for Paper 1"
     ],
     "definitions": [
       {
-        "term": "Arc",
-        "definition": "Part of the circumference of a circle between two points"
+        "term": "HCF (Highest common factor)",
+        "definition": "The largest number that is a common factor of two different numbers"
       },
       {
-        "term": "Sector",
-        "definition": "Part of a circle enclosed by two radii and an arc"
+        "term": "LCM (Lowest common multiple)",
+        "definition": "The smallest number that is the multiple of two different numbers"
       },
       {
-        "term": "Prism",
-        "definition": "A 3D shape with uniform cross-section throughout its length"
+        "term": "Reciprocals",
+        "definition": "The number obtained by interchanging the numerators and denominators of the original number"
       },
       {
-        "term": "Surface Area",
-        "definition": "The total area of all faces of a 3D shape"
+        "term": "Set",
+        "definition": "An organised, unique collection of elements where you are not allowed to repeat the same element"
       }
     ],
     "howToAnswer": [
@@ -63,17 +63,14 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse radius and diameter - always check which is given in the question",
-      "Students often forget to convert angle to fraction of 360° when calculating arc length or sector area",
-      "Always include correct units in final answer - marks are lost for missing units",
-      "Never use the wrong π value - use the value given in the question or π = 3.142 if not specified",
-      "Students often add areas when they should subtract for compound shapes with holes"
+      "Including fractions or decimals in natural numbers when they should only be positive integers",
+      "Confusing integers with natural numbers - integers include negative numbers and zero",
+      "Not recognizing that you cannot repeat the same element in a set",
+      "Forgetting that squared numbers are always positive while cube numbers may be positive or negative"
     ],
     "examinerTips": [
-      "Mensuration appears in every Paper 2 - usually worth 8-12 marks total",
-      "Always draw and label a clear diagram for 3D shapes to avoid confusion",
-      "Show the formula first, then substitute values for method marks",
-      "Round final answers to 3 significant figures unless stated otherwise"
+      "Integers are the most common word used by the examiner",
+      "Candidates are required to memorise square numbers up till 15 for Paper 1"
     ],
     "formulas": [
       "Area of circle = πr²",
@@ -109,7 +106,7 @@
       "Examiner Report 2022: 'Common errors included using diameter instead of radius in calculations' — always identify whether the given measurement is radius or diameter before substituting into formulas"
     ],
     "keyDiagram": "Students must be able to draw and label a cylinder showing radius (r), height (h), and curved surface when 'unrolled' as a rectangle with dimensions 2πr × h. Also essential: cone diagram showing radius (r), height (h), and slant height (l), with the relationship l² = r² + h² clearly marked. Include cross-sections showing how composite shapes are formed.",
-    "quickRecap": "Mensuration involves calculating area, volume and surface area of 2D and 3D shapes. Key formulas: cylinder volume = πr²h, cone volume = ⅓πr²h, sphere volume = ⅘πr³. Always check if you need total or curved surface area. For composite shapes, break down into simpler components and add/subtract volumes as needed."
+    "quickRecap": "Numbers are classified into different families including natural numbers, whole numbers, integers, rational and irrational numbers. Prime numbers have exactly 2 factors while composite numbers have more than two factors. Sets are organised collections of unique elements with specific notation and operations. Understanding these fundamental concepts is essential for O Level Mathematics."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -117,5 +114,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:23:09.181Z",
   "updated_at": "2026-04-05T21:23:09.181Z",
-  "enriched_at": "2026-04-06T16:07:00.147Z"
+  "enriched_at": "2026-04-06T16:07:00.147Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:25:06.218Z"
 }

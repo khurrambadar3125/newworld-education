@@ -115,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:38:24.085Z",
   "updated_at": "2026-04-06T04:38:24.085Z",
-  "enriched_at": "2026-04-06T16:07:50.169Z"
+  "enriched_at": "2026-04-06T16:07:50.169Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:43:36.852Z"
 }

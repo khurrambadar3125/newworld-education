@@ -9,36 +9,36 @@
     "title": "Globalisation of Trade",
     "readTime": "8 min",
     "keyPoints": [
-      "**Globalisation** is the process by which businesses develop international influence through worldwide operations and trade",
-      "**International trade** allows countries to specialise in producing goods where they have a comparative advantage",
-      "**Imports** are goods and services bought from foreign countries, increasing consumer choice but reducing domestic employment",
-      "**Exports** are goods and services sold to foreign countries, earning foreign currency and creating domestic employment",
-      "**Free trade** involves removal of trade barriers like tariffs and quotas between countries",
-      "**Trade barriers** include tariffs (taxes on imports), quotas (limits on quantities), and embargoes (complete bans)",
-      "**Multinational corporations (MNCs)** operate in multiple countries, bringing investment but may exploit cheap labour",
-      "**Balance of trade** is the difference between a country's exports and imports over a given period",
-      "Pakistan exports textiles, rice, and leather goods while importing oil, machinery, and technology"
+      "Commerce is study related to distribution of products from the producer (point of production) to the consumer (point of consumption)",
+      "Specialization or Division of Labour is breaking down of a productive activity into simpler tasks so that a person specialist in that task can perform it",
+      "Primary production is obtaining raw materials or food from nature and includes extractive industries and genetic industries",
+      "Secondary production is making goods from raw materials and includes manufacturing, processing and constructing",
+      "Tertiary production assists industry to function, by providing commercial services and direct personal services",
+      "Production is completed only when goods reach point of consumption",
+      "Manufacturing is concerned with producing goods from raw materials, tertiary activities are concerned with the distribution of finished goods from the factory to the final consumer",
+      "Utility of form changes the form of a product so that it becomes more useful to the consumer",
+      "Specialization at country level occurs when a certain country devotes itself mainly to produce certain products which it exports to other countries"
     ],
     "definitions": [
       {
-        "term": "Globalisation",
-        "definition": "The process by which businesses develop international influence through worldwide operations and increased international trade"
+        "term": "Commerce",
+        "definition": "study related to distribution of products from the producer (point of production) to the consumer (point of consumption)"
       },
       {
-        "term": "Import",
-        "definition": "Goods and services purchased by one country from another country"
+        "term": "Products",
+        "definition": "the goods and services produced by a company, to satisfy needs and wants of customers"
       },
       {
-        "term": "Export",
-        "definition": "Goods and services sold by one country to another country"
+        "term": "Production",
+        "definition": "any activity which serves to satisfy human needs and wants"
       },
       {
-        "term": "Free Trade",
-        "definition": "International trade without restrictions such as tariffs, quotas or other trade barriers"
+        "term": "Needs",
+        "definition": "the things necessary for living, that is food, shelter and clothing"
       },
       {
-        "term": "Multinational Corporation",
-        "definition": "A business that operates in more than one country with production facilities or offices in different countries"
+        "term": "Wants",
+        "definition": "those goods and services which are not compulsory for living but makes life easier"
       }
     ],
     "howToAnswer": [
@@ -73,17 +73,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'globalisation only has benefits' — always consider both advantages and disadvantages",
-      "Students often confuse imports with exports — remember imports come IN, exports go OUT",
-      "Don't write 'free trade means trade is free' — explain it means trade without barriers",
-      "Avoid saying 'MNCs are always bad' — they bring investment and jobs as well as potential problems",
-      "Never ignore the impact on domestic industries when discussing international trade benefits"
+      "Thinking production is complete when goods are manufactured - products are in unusable state after primary production and at wrong place after secondary production",
+      "Confusing needs and wants - needs are necessary for living while wants make life easier but are not compulsory",
+      "Not understanding that specialization has disadvantages including work becoming boring and interdependency increasing"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2, especially questions about advantages and disadvantages",
-      "Always use Pakistani examples like textile exports to China or oil imports from Saudi Arabia",
-      "Balance your answers - if asked about globalisation, mention both positive and negative effects",
-      "Learn the difference between trade barriers - tariffs, quotas, and embargoes are different"
+      "Remember that production has three distinct stages - primary (raw materials), secondary (manufacturing) and tertiary (distribution and services)",
+      "Understand that manufacturing and tertiary activities are inter-related as tertiary activities distribute finished goods from factory to final consumer"
     ],
     "formulas": [],
     "keyDiagramDescription": "Trade flow diagram showing Pakistan's major exports (textiles, rice, leather) going to different countries and major imports (oil, machinery, chemicals) coming from various trading partners with arrows indicating direction of trade",
@@ -111,7 +107,7 @@
       "Examiner Report 2021: 'Weak responses failed to use relevant examples of multinational corporations or specific trade agreements' — always include concrete examples such as NAFTA, EU single market, or specific MNCs like Apple or Toyota"
     ],
     "keyDiagram": "Global Trade Flow Diagram: Draw a world map showing major trade routes with arrows indicating direction and volume of trade. Include three layers: (1) Traditional trade routes between adjacent countries shown as thin arrows, (2) Regional trade blocs (EU, NAFTA, ASEAN) shown as thick bidirectional arrows within regions, (3) Global supply chains shown as dotted lines connecting multiple continents (e.g., raw materials from Africa → manufacturing in Asia → markets in Europe/America). Label key features: major ports, free trade zones, and barriers (tariffs, quotas). This diagram illustrates the complexity and interconnectedness of modern global trade versus simple bilateral trade.",
-    "quickRecap": "Globalisation of trade refers to the increasing integration of national economies through international trade, facilitated by technological advances, reduced transport costs, and removal of trade barriers. Key drivers include multinational corporations, trade liberalisation policies, and improved communication systems. Benefits include access to larger markets, lower prices for consumers, and economic growth, while drawbacks include increased competition for domestic industries and potential job losses. Students must be able to distinguish between simple international trade and the complex, interconnected global economy."
+    "quickRecap": "Commerce involves the distribution of products from producer to consumer through three stages of production. Primary production obtains raw materials, secondary production manufactures goods, and tertiary production provides commercial services for distribution. Specialization allows countries, regions and firms to focus on specific products or tasks, creating efficiency but also interdependency."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:11:32.303Z",
   "updated_at": "2026-04-06T04:11:32.303Z",
-  "enriched_at": "2026-04-06T16:25:38.212Z"
+  "enriched_at": "2026-04-06T16:25:38.212Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:43:44.923Z"
 }

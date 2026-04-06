@@ -9,36 +9,36 @@
     "title": "Urbanisation",
     "readTime": "8 min",
     "keyPoints": [
-      "**Urbanisation** is the increase in the proportion of people living in urban areas compared to rural areas",
-      "**Push factors** drive people from rural areas including lack of employment, poor healthcare, natural disasters, and agricultural mechanisation",
-      "**Pull factors** attract people to urban areas including better job opportunities, improved services, education, and entertainment facilities",
-      "**Megacities** are urban areas with populations over 10 million people, such as Karachi which has over 16 million inhabitants",
-      "**Squatter settlements** are illegal housing areas built on land not owned by the inhabitants, often using temporary materials",
-      "**Shanty towns** develop due to rapid rural-urban migration when formal housing cannot meet demand, lacking basic services like water and electricity",
-      "Urban growth creates **housing shortages** leading to overcrowding and development of informal settlements on marginal land",
-      "**Traffic congestion** increases in cities due to more vehicles, inadequate road infrastructure, and poor public transport systems",
-      "Urban areas face **pollution problems** including air pollution from vehicles and industries, and water pollution from inadequate sewage treatment"
+      "Subsistence farming is growing crops for own family whereas cash crop is growing for sale and profit purpose",
+      "In cash crop farms large fields are used and higher capital required for modern irrigation system i.e. perennial canals, tubewells, sprinklers etc",
+      "Cash crop farms use scientific methods e.g. hyv seeds, machinery (tractors and harvestor), chemical fertilizers and greater use of pesticides and herbicides for plant protection",
+      "In small scale subsistence farming small land utilizes and low capital invested because of poverty",
+      "Subsistence farms use old irrigation methods like shaduf, desi variety of seeds and most work done manually by family",
+      "Barani farming depends entirely on rainfall/rain-fed area with low banks/bunds constructed and field size varies considerably",
+      "Farmers in barani areas too poor to own tractors/lack of machines/traditional methods and use animal dung/no fertiliser",
+      "Some years rainfall is insufficient/crops fail with low yields in barani farming",
+      "Farming using natural inundation can only be carried out after flooding/must wait for floods with farmers having no control of water supply"
     ],
     "definitions": [
       {
-        "term": "Urbanisation",
-        "definition": "The increase in the proportion of people living in urban areas compared to rural areas"
+        "term": "Cash crop",
+        "definition": "Crops grown for sale/profit/commercial rather than for consumption by the farmers"
       },
       {
-        "term": "Megacity",
-        "definition": "An urban area with a population of over 10 million people"
+        "term": "Subsistence farming",
+        "definition": "Growing crops for own family"
       },
       {
-        "term": "Squatter settlement",
-        "definition": "Illegal housing built on land not owned by the inhabitants, using temporary materials and lacking basic services"
+        "term": "Cash crop farming",
+        "definition": "Growing for sale and profit purpose"
       },
       {
-        "term": "Rural-urban migration",
-        "definition": "The movement of people from countryside areas to towns and cities"
+        "term": "Barani farming",
+        "definition": "Farming that depends entirely on rainfall/rain-fed area"
       },
       {
-        "term": "Shanty town",
-        "definition": "An area of poor quality housing, lacking in amenities such as water supply, sewerage and electricity"
+        "term": "Natural inundation farming",
+        "definition": "Farming which depends on natural flooding and can only be carried out after flooding"
       }
     ],
     "howToAnswer": [
@@ -73,17 +73,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'people want better lives' - always specify what attracts them (employment, services, education)",
-      "Students often forget to distinguish between push and pull factors - always identify which type",
-      "Don't just list problems of cities - explain why these problems occur due to rapid urbanisation",
-      "Never say 'squatters are lazy' - explain they have no choice due to housing shortages and poverty",
-      "Students confuse shanty towns with slums - shanty towns are temporary, slums can be permanent but poor quality"
+      "Confusing subsistence and cash crop farming purposes",
+      "Not understanding that barani farming depends entirely on rainfall with no irrigation",
+      "Assuming natural inundation farming provides consistent water supply when farmers actually have no control",
+      "Not recognizing the poverty constraints in traditional farming methods"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2 - often linked with population questions",
-      "Always use specific examples like Karachi, Lahore or Orangi Town for Pakistani context",
-      "Case study of a city in a developing country is frequently examined - learn Karachi well",
-      "Problems and solutions questions are common - learn both negative and positive impacts"
+      "Clearly distinguish between subsistence farming (for family consumption) and cash crop farming (for sale and profit)",
+      "Remember that barani farming characteristics include dependence on rainfall, traditional methods due to poverty, and variable yields"
     ],
     "formulas": [],
     "keyDiagramDescription": "Urban land use model showing CBD in center, surrounded by inner city (including squatter settlements), suburbs, and rural-urban fringe. Include transport routes and direction of urban growth.",
@@ -110,7 +107,7 @@
       "Examiner Report 2024: 'Candidates often described consequences without explaining the process' — always explain HOW re-urbanisation leads to gentrification and displacement, not just that it happens"
     ],
     "keyDiagram": "Urban Settlement Cycle Diagram: Draw a circular flow diagram showing the four stages - urbanisation (rural to urban migration), suburbanisation (movement to city edges), counterurbanisation (movement to rural areas), and re-urbanisation (return to city centers). Include arrows showing population movement directions, timeframes (urbanisation: industrial period, suburbanisation: 1950s-70s, counterurbanisation: 1970s-90s, re-urbanisation: 1990s-present), and driving factors for each stage (job opportunities, car ownership, quality of life, urban regeneration).",
-    "quickRecap": "Urbanisation is the increase in proportion of people living in urban areas, driven by rural-urban migration and natural increase. It follows a cycle: initial urbanisation, then suburbanisation (movement to edges), counterurbanisation (movement to rural areas), and re-urbanisation (return to city centers). Key consequences include gentrification, displacement of original residents, improved services, and increased property prices. Always use specific examples like London Docklands for re-urbanisation."
+    "quickRecap": "Agricultural systems in Pakistan vary significantly based on water supply and economic capacity. Subsistence farming focuses on family consumption using traditional methods on small plots, while cash crop farming uses modern technology and large fields for commercial production. Barani farming depends entirely on rainfall with farmers often too poor for modern equipment, while natural inundation farming relies on seasonal flooding with no farmer control over water supply."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:56:35.854Z",
   "updated_at": "2026-04-06T03:56:35.854Z",
-  "enriched_at": "2026-04-06T16:08:12.600Z"
+  "enriched_at": "2026-04-06T16:08:12.600Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:35:44.205Z"
 }

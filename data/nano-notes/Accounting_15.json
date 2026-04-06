@@ -9,35 +9,35 @@
     "title": "Journal entries and correction of errors",
     "readTime": "8 min",
     "keyPoints": [
-      "A **journal** is a book of original entry where transactions are first recorded in chronological order",
-      "**Correction of errors** involves identifying mistakes and making appropriate journal entries to rectify them",
-      "A **suspense account** is a temporary account used when trial balance does not balance due to errors",
-      "Errors that affect trial balance totals include single entry, wrong amounts, and omitted entries",
-      "Errors that do not affect trial balance include wrong account classification, compensating errors, and complete omission",
-      "Journal entries must show debit and credit entries with narration explaining the transaction",
-      "When correcting errors, reverse the wrong entry and record the correct entry",
-      "All corrections must be properly documented with clear narration for audit trail"
+      "The process of accounting starts once the book-keeper finishes recording the financial transactions",
+      "Accounting deals with measuring, identifying, and communicating financial information recorded by the book-keeper which facilitates the preparation of financial statements",
+      "Bookkeeping involves recording financial transactions from source documents of a business whereas accounting deals with maintaining financial statements from the bookkeeping records",
+      "An increase in an asset is a debit and a decrease is a credit",
+      "An increase in capital is a credit while a decrease or drawings is a debit",
+      "Assets can be categorised between two: Tangible and Intangible",
+      "Current Assets are assets which have a monetary value or can be converted into cash within 12 months",
+      "Non-Current Assets are also known as Fixed Assets, these assets are acquired to earn revenue for the company and used for more than 12 months without being intended for resale"
     ],
     "definitions": [
       {
-        "term": "Journal",
-        "definition": "A book of original entry where all transactions are recorded in chronological order before being posted to ledger accounts"
+        "term": "Assets",
+        "definition": "The resources owned and controlled by a company"
       },
       {
-        "term": "Suspense Account",
-        "definition": "A temporary account created to make the trial balance agree when there are errors that cause the totals to differ"
+        "term": "Capital",
+        "definition": "The number of resources and funds provided by the owner injected into the business"
       },
       {
-        "term": "Error of Commission",
-        "definition": "An error where a transaction is recorded in the wrong account but within the correct class of account"
+        "term": "Liability",
+        "definition": "The money owed to another firm or an entity"
       },
       {
-        "term": "Error of Omission",
-        "definition": "An error where a transaction is completely left out from the books of account"
+        "term": "Goodwill",
+        "definition": "The intangible asset that represents the reputation, customer loyalty, brand value, and other non-physical attributes of a business"
       },
       {
-        "term": "Compensating Error",
-        "definition": "Two or more errors that cancel each other out so the trial balance still balances"
+        "term": "Current Assets",
+        "definition": "An asset which has a monetary value or can be converted into cash within 12 months"
       }
     ],
     "howToAnswer": [
@@ -68,17 +68,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'Cash Account' when correcting credit sales errors — always use 'Sales Account'",
-      "Students often forget to close the suspense account after all corrections",
-      "Writing incomplete narration — always explain what error is being corrected",
-      "Confusing which errors affect trial balance and which do not",
-      "Forgetting to show the net effect on profit when closing suspense account"
+      "Confusing bookkeeping with accounting processes",
+      "Mixing up debit and credit entries for assets and capital",
+      "Incorrectly categorizing assets as current or non-current based on the 12-month rule"
     ],
     "examinerTips": [
-      "Journal entries and error correction appear in Paper 2 almost every year",
-      "Always show proper journal format with columns for debit and credit",
-      "Calculate suspense account balance carefully — it must equal trial balance difference",
-      "Practice identifying error types as this determines correction method"
+      "Remember the basic accounting equation: Assets = Capital + Liabilities",
+      "Use the fundamental formulas: Capital = Assets - Liabilities and Liabilities = Assets - Capital"
     ],
     "formulas": [
       "Suspense Account Balance = Trial Balance Difference",
@@ -108,7 +104,7 @@
       "Examiner Report 2023: 'Candidates often recorded correction entries in the wrong direction' — always think whether the original error overstated or understated the account before writing the correcting journal entry"
     ],
     "keyDiagram": "Students must be able to draw a T-account layout for the Suspense Account showing: opening balance on appropriate side, correction entries with clear narrations (Dr/Cr for each error), and closing balance (should be nil after all corrections). Include arrows showing the flow from error identification to journal entry to suspense account posting.",
-    "quickRecap": "Journal entries correct accounting errors through double-entry postings. Errors affecting only one side of the accounting equation create suspense account balances. Sales returns journals record credit notes issued, with totals transferred to sales returns account. Always indicate ledger transfers and ensure suspense accounts clear to zero after corrections."
+    "quickRecap": "Accounting begins after bookkeeping records financial transactions and involves measuring, identifying, and communicating financial information to prepare financial statements. Assets are resources owned by a company, capital represents owner's funds injected into the business, and liabilities are amounts owed to others. The basic accounting equation Assets = Capital + Liabilities forms the foundation of all accounting records."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -116,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:40:26.124Z",
   "updated_at": "2026-04-06T03:40:26.124Z",
-  "enriched_at": "2026-04-06T16:08:11.091Z"
+  "enriched_at": "2026-04-06T16:08:11.091Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:27:58.760Z"
 }

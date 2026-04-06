@@ -9,36 +9,36 @@
     "title": "Weather",
     "readTime": "8 min",
     "keyPoints": [
-      "**Weather** is the day-to-day condition of the atmosphere at a particular place and time, including temperature, rainfall, wind speed and direction, humidity and cloud cover",
-      "**Temperature** is measured using a thermometer in degrees Celsius, recorded in a Stevenson Screen to ensure accurate readings away from direct sunlight",
-      "**Rainfall** is measured using a rain gauge and recorded in millimetres, with the gauge placed away from buildings and trees to avoid interference",
-      "**Wind direction** is measured using a wind vane and shows where the wind is coming from, while **wind speed** is measured using an anemometer in kilometres per hour",
-      "**Cloud cover** is measured in oktas (eighths of sky covered) and affects temperature by blocking incoming solar radiation during day and trapping heat at night",
-      "Weather instruments must be placed in a **Stevenson Screen** which is painted white, has louvred sides, raised 1.2m above ground, and faces away from the sun",
-      "**Diurnal temperature range** is the difference between maximum and minimum temperature in 24 hours and varies with season, latitude and proximity to sea",
-      "Coastal areas like Karachi have **smaller diurnal temperature ranges** because water heats and cools more slowly than land",
-      "**Prevailing winds** are the most common wind direction in an area and significantly influence local weather patterns and rainfall distribution"
+      "Rice is a kharif crop requiring warm temperatures for growth 20°C to 30°C, dry season for harvest, monsoon rain for growth/flooding fields 1270-2000mms",
+      "Wheat is a rabi crop requiring mild/warm temperature 10-20 degrees for growing and 20 degrees for ripening, with light rain of Dec-March helping growth",
+      "Cash crop farming uses large fields, higher capital required for modern irrigation system like perennial canals, tubewells, sprinklers and scientific methods",
+      "Subsistence farming utilizes small land, low capital invested because of poverty, old irrigation methods like shaduf, and most work done manually by family",
+      "Barani farming depends entirely on rainfall, uses traditional methods, farmers too poor to own tractors, often sheep/goats reared as alternative source of income",
+      "Natural inundation farming can only be carried out after flooding, farmers have no control of water supply, higher banks/bunds built to hold water",
+      "Rabi crops enable double or multiple cropping, provide jobs throughout the year, increase farmers' income and provide more food sources",
+      "Rice is not grown in barani farming areas because it requires over 1275mm rainfall in growing season, preferably over 2000mm which nowhere in Pakistan has",
+      "Tobacco growing areas use tractors for ploughing big areas, harvestors for harvesting, and spray of pesticides through machines"
     ],
     "definitions": [
       {
-        "term": "Weather",
-        "definition": "The day-to-day condition of the atmosphere at a particular place and time"
+        "term": "Cash crop",
+        "definition": "Crops grown for sale/profit/commercial rather than for consumption by the farmers"
       },
       {
-        "term": "Climate",
-        "definition": "The average weather conditions of a place recorded over a period of at least 30 years"
+        "term": "Subsistence farming",
+        "definition": "Growing crops for own family"
       },
       {
-        "term": "Stevenson Screen",
-        "definition": "A white wooden box with louvred sides, raised 1.2m above ground, used to house weather instruments and protect them from direct sunlight and precipitation"
+        "term": "Barani farming",
+        "definition": "Farming that depends entirely on rainfall/rain-fed area"
       },
       {
-        "term": "Diurnal temperature range",
-        "definition": "The difference between the maximum and minimum temperature recorded in a 24-hour period"
+        "term": "Kharif crop",
+        "definition": "Crops requiring warm temperatures and monsoon rain for growth"
       },
       {
-        "term": "Prevailing wind",
-        "definition": "The most frequent wind direction recorded at a weather station over a period of time"
+        "term": "Natural inundation",
+        "definition": "Farming that depends on natural flooding and must wait for floods"
       }
     ],
     "howToAnswer": [
@@ -71,17 +71,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'climate changes daily' — weather changes daily, climate is long-term average",
-      "Students often confuse wind direction - winds are named after where they come from, not where they go to",
-      "Don't say thermometer measures 'heat' — it measures temperature in degrees Celsius",
-      "Never place weather instruments in direct sunlight or near buildings — this gives inaccurate readings",
-      "Students often forget that Stevenson Screen must be painted white to reflect heat and prevent overheating of instruments"
+      "Confusing kharif and rabi seasons - rice needs warm temperatures so winter/rabi season is too cold",
+      "Not understanding that barani farming areas cannot grow rice due to insufficient rainfall",
+      "Mixing up subsistence and cash crop farming characteristics"
     ],
     "examinerTips": [
-      "Weather appears frequently in Paper 2 with data interpretation questions",
-      "Always use figures from weather data tables when describing patterns",
-      "Draw and label diagrams of weather instruments for full marks in equipment questions",
-      "Remember the difference between weather and climate - examiners test this regularly"
+      "When describing farming types, clearly distinguish between capital requirements and methods used",
+      "Remember specific temperature ranges for crops - wheat needs 10-20°C for growing, 20-30°C for ripening"
     ],
     "formulas": [
       "Diurnal temperature range = Maximum temperature - Minimum temperature"
@@ -111,7 +107,7 @@
       "Examiner Report 2022: 'Candidates gave vague answers about temperature effects' — be specific about daily heating/cooling cycles and seasonal freeze-thaw patterns"
     ],
     "keyDiagram": "Students must draw a freeze-thaw weathering sequence showing: 1) Intact rock with hairline crack, 2) Water entering the crack during day/warm period, 3) Ice formation at night/cold period with expanded crack (show 9% expansion), 4) Repeated cycles leading to rock splitting completely. Label: water, ice, crack expansion, pressure arrows, and temperature conditions. Include cross-sectional view showing progressive widening of cracks.",
-    "quickRecap": "Weathering breaks rocks down in place through physical (freeze-thaw, heating/cooling, root action) and chemical processes. Freeze-thaw occurs when water expands 9% upon freezing in rock cracks. Temperature fluctuations cause expansion and contraction stress. Climate determines weathering rates - more water and temperature changes mean faster weathering."
+    "quickRecap": "Pakistan grows both kharif crops like rice requiring warm temperatures and monsoon rain, and rabi crops like wheat needing cooler temperatures and light winter rain. Cash crop farming uses modern methods and high capital, while subsistence farming relies on traditional methods and family labor. Barani farming depends entirely on rainfall and uses traditional methods due to poverty."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:58:15.492Z",
   "updated_at": "2026-04-06T03:58:15.492Z",
-  "enriched_at": "2026-04-06T16:09:38.537Z"
+  "enriched_at": "2026-04-06T16:09:38.537Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:37:03.028Z"
 }

@@ -9,36 +9,36 @@
     "title": "Operations Management",
     "readTime": "8 min",
     "keyPoints": [
-      "**Production** is the transformation of inputs (resources) into outputs (goods and services)",
-      "**Job production** produces one-off items to meet specific customer requirements, leading to high costs but unique products",
-      "**Batch production** produces groups of identical products, allowing economies of scale while maintaining some flexibility",
-      "**Flow production** produces large quantities of standardized products continuously, achieving lowest unit costs through specialization",
-      "**Productivity** measures output per worker per time period and can be increased through training, technology, or motivation",
-      "**Quality control** involves checking products after production to identify defects, while **quality assurance** prevents defects during production",
-      "**Lean production** eliminates waste through just-in-time delivery, reducing storage costs and improving cash flow",
-      "**Technology** in production reduces labor costs, improves accuracy, but requires high initial investment and may cause unemployment",
-      "Location decisions consider proximity to markets, raw materials, labor supply, and government incentives"
+      "The aim of a business in the private sector is to survive by making a profit",
+      "Primary production involves acquiring raw materials such as metals, coal, oil, rubber, foodstuffs and fish - sometimes known as extractive production",
+      "Secondary production is the manufacturing and assembly process, involving converting raw materials into components and assembling the product",
+      "Tertiary production refers to commercial services that support the production and distribution process, including insurance, transport, advertising, warehousing and retail",
+      "All limited companies are incorporated, meaning they can sue or own assets in their own right and owners are not personally liable for the firm's debts",
+      "A public limited company (PLC) can sell its shares on the Stock Market, while a private limited company (Ltd) cannot",
+      "Sole traders do not have a separate legal existence from their owner and have unlimited liability for the firm's debts",
+      "Partnerships are businesses owned by two or more people with a deed of partnership contract stating capital contributions and profit/loss sharing",
+      "Private limited companies are easy and inexpensive to set up but lack capital due to no share issue"
     ],
     "definitions": [
       {
-        "term": "Production",
-        "definition": "The process of converting inputs (raw materials, labor, capital) into outputs (goods and services)"
+        "term": "Market share",
+        "definition": "A percentage of overall sales in an industry"
       },
       {
-        "term": "Productivity",
-        "definition": "The output per worker in a given time period"
+        "term": "Incorporated",
+        "definition": "Firm with separate legal existence"
       },
       {
-        "term": "Quality control",
-        "definition": "The process of checking goods after production to ensure they meet the required standard"
+        "term": "Audit",
+        "definition": "An independent check on the accounts of the company"
       },
       {
-        "term": "Quality assurance",
-        "definition": "The process of ensuring quality standards are met during production to prevent defects"
+        "term": "Unlimited liability",
+        "definition": "Where owners are personally liable for the firm's debts and may have to pay them out of their own pocket"
       },
       {
-        "term": "Lean production",
-        "definition": "A production method that aims to minimize waste and maximize efficiency"
+        "term": "Sleeping partner",
+        "definition": "A partner who invests in the business but does not have dealings in the day to day running of the enterprise"
       }
     ],
     "howToAnswer": [
@@ -73,17 +73,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'better quality' — always specify 'consistent quality' or 'improved quality control'",
-      "Students confuse quality control (checking after) with quality assurance (preventing during)",
-      "Don't just state 'lower costs' — specify 'lower unit costs' or 'lower average costs'",
-      "Avoid saying 'more profit' — say 'higher profit margins' or 'increased profitability'",
-      "Never write 'faster production' — write 'higher output' or 'increased productivity'"
+      "Confusing that PLC shares can be sold on Stock Market while Ltd shares cannot",
+      "Not understanding that limited company owners are not involved in running the business unless elected to Board of Directors",
+      "Mixing up that sole traders have unlimited liability while limited companies have limited liability",
+      "Forgetting that both PLC and Ltd must indicate their status in their name using abbreviations"
     ],
     "examinerTips": [
-      "Operations Management appears in every Paper 1 and most Paper 2 exams",
-      "Always use business context when explaining production methods",
-      "Draw labeled diagrams for quality control vs quality assurance questions",
-      "Link production choices to business size and market type for full marks"
+      "Remember the three stages of production form the chain of production: primary (extractive), secondary (manufacturing), tertiary (services)",
+      "Understand that limited liability means losses are limited to the amount invested in the business, protecting personal assets"
     ],
     "formulas": [
       "Productivity = Output ÷ Number of workers",
@@ -114,7 +111,7 @@
       "Examiner Report 2022: 'Weak responses on lean production focused only on waste reduction' — remember to discuss multiple benefits including inventory reduction, flexibility, and customer responsiveness"
     ],
     "keyDiagram": "Production Methods Comparison Chart: Draw a three-column table showing Job Production (one-off products, high cost, high quality), Batch Production (groups of products, medium cost, standardized), and Flow Production (continuous process, low unit cost, high volume). Include examples under each method and indicate suitability for different business sizes.",
-    "quickRecap": "Operations management covers production methods (job, batch, flow), quality management (control vs assurance), and lean production techniques. Job production suits small businesses making unique products, while flow production works for mass market goods. Lean production reduces waste and inventory costs through just-in-time delivery and continuous improvement. Quality assurance prevents defects during production, while quality control checks finished products."
+    "quickRecap": "Business activities are divided into primary (extractive), secondary (manufacturing) and tertiary (services) production stages. Private sector businesses aim to survive by making profit and gaining market share. Business structures include sole traders with unlimited liability, partnerships with shared expertise, and limited companies (Ltd/PLC) with incorporated status and limited liability protection."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -122,5 +119,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:53:04.401Z",
   "updated_at": "2026-04-06T03:53:04.401Z",
-  "enriched_at": "2026-04-06T16:07:05.253Z"
+  "enriched_at": "2026-04-06T16:07:05.253Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:32:58.491Z"
 }

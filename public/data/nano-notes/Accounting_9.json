@@ -9,37 +9,37 @@
     "title": "Financial statements – Part B",
     "readTime": "8 min",
     "keyPoints": [
-      "**Balance sheet** shows the financial position of a business at a specific date",
-      "**Statement of financial position** is an alternative name for the balance sheet",
-      "Balance sheet must **balance** - Total assets = Capital + Liabilities",
-      "**Non-current assets** are assets expected to be used for more than one year",
-      "**Current assets** are assets expected to be converted to cash within one year",
-      "**Current liabilities** are debts due to be paid within one year",
-      "**Non-current liabilities** are debts due to be paid after more than one year",
-      "**Working capital** is current assets minus current liabilities",
-      "Assets are listed in order of **permanence** (non-current first, then current)",
-      "Current assets are listed in order of **liquidity** (least liquid first)"
+      "The process of accounting starts once the book-keeper finishes recording the financial transactions",
+      "Accounting deals with measuring, identifying, and communicating financial information recorded by the book-keeper which facilitates the preparation of financial statements",
+      "Bookkeeping involves recording financial transactions from source documents of a business whereas accounting deals with maintaining financial statements from the bookkeeping records",
+      "Assets are the resources owned and controlled by a company, where an increase in an asset is a debit and a decrease is a credit",
+      "Current Assets are assets which have a monetary value or can be converted into cash within 12 months, examples include account receivables and cash",
+      "Non-Current Assets, also known as Fixed Assets, are assets acquired to earn revenue for the company and used for more than 12 months without being intended for resale",
+      "Capital is the number of resources and funds provided by the owner injected into the business, where an increase in capital is a credit while a decrease or drawings is a debit",
+      "Liability is the money owed to another firm or an entity, examples include bank loans and credit card debts",
+      "The Basic Accounting Equation is: Assets = Capital + Liabilities",
+      "Goodwill refers to the intangible asset that represents the reputation, customer loyalty, brand value, and other non-physical attributes of a business"
     ],
     "definitions": [
       {
-        "term": "Balance Sheet",
-        "definition": "A financial statement that shows the assets, liabilities and capital of a business at a specific date"
+        "term": "Assets",
+        "definition": "The resources owned and controlled by a company"
       },
       {
-        "term": "Non-current assets",
-        "definition": "Assets that are expected to be used in the business for more than one year"
+        "term": "Current Assets",
+        "definition": "An asset which has a monetary value or can be converted into cash within 12 months"
       },
       {
-        "term": "Current assets",
-        "definition": "Assets that are expected to be converted into cash within one year"
+        "term": "Non-Current Assets",
+        "definition": "Also known as Fixed Assets, these assets are acquired to earn revenue for the company and used for more than 12 months without being intended for resale"
       },
       {
-        "term": "Working capital",
-        "definition": "Current assets minus current liabilities"
+        "term": "Capital",
+        "definition": "The number of resources and funds provided by the owner injected into the business"
       },
       {
-        "term": "Current liabilities",
-        "definition": "Debts that are due to be paid within one year"
+        "term": "Liability",
+        "definition": "The money owed to another firm or an entity"
       }
     ],
     "howToAnswer": [
@@ -71,17 +71,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'fixed assets' — always say 'non-current assets' for Cambridge O Level",
-      "Students often list current assets in wrong order - should be inventory, trade receivables, bank, cash",
-      "Forgetting to show subtotals for current assets, current liabilities and net current assets",
-      "Writing 'profit and loss account' instead of 'statement of profit or loss'",
-      "Not showing that the balance sheet balances by having equal totals"
+      "Confusing bookkeeping with accounting - bookkeeping records transactions while accounting maintains financial statements",
+      "Incorrect application of debit and credit rules for assets and capital",
+      "Misunderstanding the timeframe distinction between current and non-current assets"
     ],
     "examinerTips": [
-      "Balance sheet questions appear in every Paper 2 - worth 15-20 marks",
-      "Always show workings when calculating figures for the balance sheet",
-      "Use proper headings: 'Statement of Financial Position as at [date]'",
-      "Double-check that your balance sheet balances before moving to next question"
+      "Remember that goodwill may be subject to impairment if its value declines over time",
+      "Use the basic accounting equation: Assets = Capital + Liabilities to check your work"
     ],
     "formulas": [
       "Working Capital = Current Assets - Current Liabilities",
@@ -112,7 +108,7 @@
       "Examiner Report 2023: 'Students often failed to show proper workings for ratio calculations' — always show your working when calculating ratios like gross profit margin (gross profit ÷ sales × 100) as method marks are awarded even if final answer is wrong"
     ],
     "keyDiagram": "Students must be able to draw a standard Balance Sheet layout showing: ASSETS section with Non-current assets (Property, Equipment less Depreciation) followed by Current assets (Stock, Debtors, Bank, Cash) totaling to Total Assets. Then EQUITY AND LIABILITIES section with Capital (Opening + Profit - Drawings) followed by Current liabilities (Creditors, Accruals, Bank overdraft). The fundamental equation Assets = Capital + Liabilities must balance, with clear subtotals and a professional T-account format.",
-    "quickRecap": "Financial statements Part B covers preparation of trading accounts (sales less cost of goods sold equals gross profit), profit and loss accounts (gross profit less expenses equals net profit), and balance sheets (assets must equal capital plus liabilities). Remember: carriage inwards goes in trading account, carriage outwards in P&L account. Always show workings for ratio calculations and ensure proper classification of current vs non-current items in balance sheets."
+    "quickRecap": "Accounting begins after bookkeeping finishes recording transactions and involves measuring, identifying, and communicating financial information to prepare financial statements. Assets are resources owned by a company, capital represents owner's investment, and liabilities are amounts owed to others. The fundamental equation Assets = Capital + Liabilities must always balance."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -120,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:38:05.827Z",
   "updated_at": "2026-04-06T03:38:05.827Z",
-  "enriched_at": "2026-04-06T16:14:08.271Z"
+  "enriched_at": "2026-04-06T16:14:08.271Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:31:03.178Z"
 }

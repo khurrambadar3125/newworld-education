@@ -9,35 +9,35 @@
     "title": "Logistics",
     "readTime": "8 min",
     "keyPoints": [
-      "**Logistics** is the process of planning, implementing and controlling the efficient flow of goods from origin to consumption",
-      "**Transport** moves goods from producers to consumers using road, rail, air, water and pipeline methods",
-      "**Warehousing** provides storage facilities for goods before they are needed by consumers or retailers",
-      "**Just-in-time delivery** reduces storage costs by delivering goods only when needed by the customer",
-      "**Distribution channels** are the routes goods take from manufacturer to final consumer",
-      "**Inventory management** controls stock levels to balance storage costs with customer demand",
-      "**Supply chain management** coordinates all activities from raw materials to final delivery to consumers",
-      "**Containerization** reduces handling costs and damage by using standardized shipping containers"
+      "Commerce is study related to distribution of products from the producer (point of production) to the consumer (point of consumption)",
+      "Production is completed only when goods reach point of consumption",
+      "Primary production is obtaining raw materials or food from nature and includes extractive industries (mining, quarrying) and genetic industries (farming, forestry and fishing)",
+      "Secondary production is making goods from raw materials and includes manufacturing, processing and constructing",
+      "Tertiary production assists industry to function by providing commercial services and direct personal services",
+      "Commercial services are all services which are related to distribution of goods and services from producers to customers for example communication, finance, insurance, retailers and wholesalers",
+      "Utility of place is any activity that transfers the goods or services to a location which is within easier assess to the consumer",
+      "Manufacturing is concerned with producing goods from raw materials, tertiary activities are concerned with the distribution of finished goods from the factory to the final consumer"
     ],
     "definitions": [
       {
-        "term": "Logistics",
-        "definition": "The process of planning, implementing and controlling the efficient flow of goods, services and information from point of origin to point of consumption"
+        "term": "Commerce",
+        "definition": "study related to distribution of products from the producer (point of production) to the consumer (point of consumption)"
       },
       {
-        "term": "Warehouse",
-        "definition": "A building used for storing goods before they are distributed to retailers or consumers"
+        "term": "Products",
+        "definition": "the goods and services produced by a company, to satisfy needs and wants of customers"
       },
       {
-        "term": "Just-in-time delivery",
-        "definition": "A system where goods are delivered exactly when needed, reducing storage costs and waste"
+        "term": "Production",
+        "definition": "any activity which serves to satisfy human needs and wants"
       },
       {
-        "term": "Distribution channel",
-        "definition": "The route taken by goods as they move from producer to final consumer"
+        "term": "Needs",
+        "definition": "the things necessary for living, that is food, shelter and clothing"
       },
       {
-        "term": "Supply chain",
-        "definition": "The network of organizations involved in producing and delivering a product from raw materials to final consumer"
+        "term": "Wants",
+        "definition": "those goods and services which are not compulsory for living but makes life easier"
       }
     ],
     "howToAnswer": [
@@ -72,17 +72,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'logistics is transport' — logistics includes transport, warehousing, inventory management and information systems",
-      "Students often confuse warehouses with factories — warehouses store finished goods, factories manufacture goods",
-      "Don't say 'just-in-time saves money' — explain HOW it saves money (reduces storage costs, reduces waste)",
-      "Never say 'transport is only by road' — include all five methods: road, rail, air, water, pipeline",
-      "Students forget to explain WHY containerization is beneficial — mention reduced handling costs and damage"
+      "Thinking production is complete when goods are manufactured - production is completed only when goods reach point of consumption",
+      "Confusing needs with wants - needs are necessary for living while wants make life easier but are not compulsory",
+      "Not understanding that primary production products are in unusable state and must move to secondary stage"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2 Section B questions worth 8-12 marks",
-      "Always give BOTH advantage AND explanation for full marks in 'explain' questions",
-      "Use Pakistani examples: Karachi Port for containerization, NLC for road transport",
-      "Distribution channel diagrams often appear — practice drawing manufacturer→wholesaler→retailer→consumer"
+      "Remember that commerce focuses on distribution from producer to consumer",
+      "Understand the three stages of production and how they connect - primary provides raw materials, secondary processes them, tertiary distributes the finished goods"
     ],
     "formulas": [],
     "keyDiagramDescription": "Distribution channel diagram showing the flow: Manufacturer → Wholesaler → Retailer → Consumer, with arrows indicating the direction of goods flow and information feedback",
@@ -110,7 +106,7 @@
       "Examiner Report 2022: 'Candidates frequently omitted key components when defining logistics' — ensure your definition includes point of origin, point of consumption, and flow management in your answer"
     ],
     "keyDiagram": "Supply Chain Flow Diagram: Draw a horizontal arrow showing the flow from 'Point of Origin (Supplier)' → 'Warehousing/Storage' → 'Transportation' → 'Distribution Centers' → 'Point of Consumption (Customer)'. Include bidirectional arrows above showing 'Information Flow' and below showing 'Resource Flow'. Label each stage and add boxes for 'Inventory Management' and 'Order Processing' connected to the main flow.",
-    "quickRecap": "Logistics is the management of goods, information, and resources flow from origin to consumption. It includes transportation (road, rail, pipeline), warehousing, and inventory management. Global logistics operates internationally while domestic operates nationally. Modern logistics uses technology like warehouse robots for order fulfillment and automated inventory systems."
+    "quickRecap": "Commerce is the study of distributing products from producers to consumers. Production involves three stages: primary (obtaining raw materials from nature), secondary (making goods from raw materials), and tertiary (providing services to distribute goods). Production is only complete when goods reach the point of consumption, not just when they are manufactured."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -118,5 +114,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:11:53.299Z",
   "updated_at": "2026-04-06T04:11:53.299Z",
-  "enriched_at": "2026-04-06T16:26:07.345Z"
+  "enriched_at": "2026-04-06T16:26:07.345Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:43:58.627Z"
 }

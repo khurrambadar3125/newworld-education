@@ -9,31 +9,37 @@
     "title": "Economic growth and sustainability",
     "readTime": "8 min",
     "keyPoints": [
-      "**Economic growth** is measured by the percentage change in real GDP per capita over time, showing increased productive capacity",
-      "**Sustainable development** meets present needs without compromising future generations' ability to meet their own needs",
-      "**HDI (Human Development Index)** combines life expectancy, education levels and real GDP per capita to measure development beyond income",
-      "Economic growth may not reduce **income inequality** - benefits may be concentrated among higher income groups",
-      "**Absolute poverty** occurs when income falls below minimum needed for survival, while **relative poverty** is income below a certain percentage of median income",
-      "Environmental costs of growth include resource depletion, pollution and climate change which reduce future productive capacity",
-      "**Inclusive growth** ensures benefits reach all sections of society, particularly the poor and marginalized groups",
-      "Government intervention through progressive taxation and transfer payments can reduce inequality while maintaining growth incentives"
+      "The basic economic problem is scarcity - wants are unlimited and resources are finite, so choices have to be made",
+      "Opportunity cost is the value of the next best alternative forgone when making a choice",
+      "Economic agents (consumers, producers, governments) all face opportunity cost when making decisions with finite resources",
+      "Production decisions involve three key questions: what to produce, how to produce it, and for whom to produce it",
+      "Ceteris paribus assumes all other things are held constant when analyzing economic relationships",
+      "Making decisions at the margin means considering what the next step or action means for additional cost or benefit",
+      "The law of diminishing marginal returns states that each extra unit consumed gives less utility",
+      "Short run has at least one fixed factor of production, long run has all factors variable, very long run includes external variables like government rules and technology",
+      "Positive statements are objective and can be tested with factual evidence",
+      "Normative statements are subjective, based on value judgements and opinion rather than factual evidence"
     ],
     "definitions": [
       {
-        "term": "Economic growth",
-        "definition": "The increase in real GDP over time, measured as a percentage change in the productive capacity of an economy"
+        "term": "Opportunity cost",
+        "definition": "The value of the next best alternative forgone"
       },
       {
-        "term": "Sustainable development",
-        "definition": "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs"
+        "term": "Ceteris paribus",
+        "definition": "A key assumption made in economics that assumes all other things are held constant or are equal"
       },
       {
-        "term": "HDI (Human Development Index)",
-        "definition": "A composite measure of development combining life expectancy at birth, education levels and real GDP per capita"
+        "term": "Law of diminishing marginal returns",
+        "definition": "Each extra unit of a good or service consumed gives the consumer less utility"
       },
       {
-        "term": "Income inequality",
-        "definition": "The unequal distribution of income across different participants in an economy, often measured by the Gini coefficient"
+        "term": "Positive statements",
+        "definition": "Objective statements that can be tested with factual evidence, and can consequently be rejected or accepted"
+      },
+      {
+        "term": "Normative statements",
+        "definition": "Statements based on value judgements that are subjective and based on opinion rather than factual evidence"
       }
     ],
     "howToAnswer": [
@@ -68,17 +74,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse economic growth with development - growth is quantitative (GDP), development includes qualitative factors",
-      "Students often ignore environmental sustainability when discussing long-term growth",
-      "Don't assume growth automatically reduces poverty - need to explain distribution mechanisms",
-      "Never use nominal GDP - always refer to real GDP when measuring growth",
-      "Students confuse absolute and relative poverty - be precise with definitions"
+      "Confusing opportunity cost with the original price paid rather than the value of the next best alternative",
+      "Not recognizing that positive statements use words like 'will' and 'is' while normative statements use 'should'",
+      "Failing to apply ceteris paribus assumption when analyzing economic effects"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2 essays and Paper 3 data response questions",
-      "Always consider both short-term and long-term effects when evaluating sustainability",
-      "Use Pakistani examples like CPEC projects or textile industry growth where relevant",
-      "Link to other topics like market failure (environmental externalities) and government intervention"
+      "Look for words such as 'will' and 'is' to identify positive statements",
+      "Look for words such as 'should' and suggestions that one action is more credible than another to identify normative statements"
     ],
     "formulas": [
       "Economic growth rate = (Real GDP year 2 - Real GDP year 1) / Real GDP year 1 × 100",
@@ -110,7 +112,7 @@
       "Examiner Report 2021: 'Students gave vague environmental examples' — use specific, real-world examples of environmental costs like named pollutants or actual deforestation statistics"
     ],
     "keyDiagram": "Draw a graph with two curves over time: 'Economic Output' rising steeply upward, and 'Environmental Quality' declining downward, showing the trade-off. Label the x-axis 'Time' and y-axis 'Level'. Add a dotted horizontal line labeled 'Sustainability Threshold' where environmental quality becomes critically low. Mark the intersection point as 'Crisis Point' where continued growth becomes impossible due to environmental collapse.",
-    "quickRecap": "Economic growth increases GDP but may harm sustainability through pollution and resource depletion. Sustainable development meets current needs without compromising future generations. Key conflict: short-term growth often damages environment, threatening long-term economic capacity. Examples include deforestation for agriculture and industrial pollution affecting health and productivity."
+    "quickRecap": "Economics deals with scarcity where unlimited wants meet finite resources, requiring choices that involve opportunity cost. Economic analysis uses ceteris paribus assumptions and marginal decision-making. Distinguish between testable positive statements and opinion-based normative statements when evaluating economic claims."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -118,5 +120,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:10:09.907Z",
   "updated_at": "2026-04-06T05:10:09.907Z",
-  "enriched_at": "2026-04-06T16:06:40.919Z"
+  "enriched_at": "2026-04-06T16:06:40.919Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:50:40.191Z"
 }

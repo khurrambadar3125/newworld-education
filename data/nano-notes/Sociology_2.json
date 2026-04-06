@@ -9,36 +9,36 @@
     "title": "Identity and Social Control",
     "readTime": "8 min",
     "keyPoints": [
-      "**Identity** is the sense of who a person is based on their group membership, personal characteristics and social roles",
-      "**Social control** refers to the ways society regulates and enforces conformity to norms and values through sanctions",
-      "**Primary socialisation** occurs in early childhood within the family where basic norms, values and language are learned",
-      "**Secondary socialisation** takes place in institutions like schools, peer groups and media which reinforce or modify learned behaviour",
-      "**Formal social control** uses official agencies like police, courts and schools with written rules and legal sanctions",
-      "**Informal social control** operates through family, friends and community using unwritten expectations and social pressure",
-      "**Positive sanctions** reward conformity through praise, awards or social approval to encourage desired behaviour",
-      "**Negative sanctions** punish deviance through criticism, exclusion or legal penalties to discourage unwanted behaviour",
-      "**Role models** are individuals whose behaviour is copied during socialisation, particularly important in identity formation"
+      "Sociology is the study of human social life, groups and societies that explores the social factors that shape human behavior and the way that society influences our daily lives",
+      "Structuralism is a macro perspective where societies are seen as sets of structures in which individuals play different roles and individuals have little choice",
+      "Interpretivism is a micro level approach in which individual is important - we grow up in society norms but always have an opportunity to choose from different identities",
+      "Consensus approach is for equality in society or agreed norms where values can be shared on religion for instance, creating a stable form of society",
+      "Conflict approach is where values are not shared such as societies with different wealth are unstable",
+      "Functionalism is a consensus approach that focuses on social functions and asks what keeps the society together",
+      "Marxism is a conflict approach with different social classes - bourgeoisie (upper class) and proletariat (working class) where radical change and equality are required",
+      "Feminism is a conflict approach where patriarchy exists and males are more dominant, with discrimination for women existing in work, education etc",
+      "Sociological research requires sociologists to select and use evidence in a balanced way or other sociologists may criticize the research"
     ],
     "definitions": [
       {
-        "term": "Identity",
-        "definition": "The sense of who a person is, formed through socialisation and influenced by social groups, roles and personal characteristics"
+        "term": "Sociology",
+        "definition": "The study of human social life, groups and societies"
       },
       {
-        "term": "Social control",
-        "definition": "The methods used by society to regulate behaviour and ensure conformity to established norms and values"
+        "term": "Structuralism",
+        "definition": "Macro perspective where societies are seen as sets of structures in which individuals play different roles - individuals have little choice"
       },
       {
-        "term": "Socialisation",
-        "definition": "The lifelong process by which individuals learn the norms, values and behaviour patterns of their society"
+        "term": "Interpretivism",
+        "definition": "Micro level approach in which individual is important - people make the societies"
       },
       {
-        "term": "Sanctions",
-        "definition": "Rewards or punishments used to encourage conformity or discourage deviance from social norms"
+        "term": "Bourgeoisie",
+        "definition": "Upper class in Marxist theory"
       },
       {
-        "term": "Agents of socialisation",
-        "definition": "The people, groups and institutions responsible for teaching individuals how to behave in society"
+        "term": "Proletariat",
+        "definition": "Working class in Marxist theory"
       }
     ],
     "howToAnswer": [
@@ -73,17 +73,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse primary socialisation (family/early childhood) with secondary socialisation (later institutions)",
-      "Students often forget to give examples of sanctions - always specify positive (praise/rewards) and negative (punishment/criticism)",
-      "Don't just list agents of socialisation - explain HOW they socialise individuals",
-      "Avoid saying 'social control stops crime' - it regulates ALL behaviour, not just deviance",
-      "Never describe identity as fixed - emphasise it develops and changes through socialisation"
+      "Confusing macro and micro perspectives when discussing structuralism versus interpretivism",
+      "Not understanding that consensus approaches focus on stability while conflict approaches highlight instability",
+      "Failing to distinguish between different types of feminism - liberal, radical, and Marxist feminist approaches"
     ],
     "examinerTips": [
-      "Identity questions appear frequently in Paper 1 and Paper 2 - learn multiple examples",
-      "Always distinguish between formal and informal social control with clear examples",
-      "Use Pakistani context: family respect for elders, Islamic values, arranged marriages as socialisation examples",
-      "For 6-mark questions, aim for 3 developed points with examples rather than 6 simple points"
+      "Focus on group rather than individual behavior and discuss the social influences on human life",
+      "Follow proper procedures in research as others will question your research"
     ],
     "formulas": [],
     "keyDiagramDescription": "Agents of Socialisation diagram showing Primary (family) at center, with Secondary agents (school, peer group, media, workplace, religion) surrounding it, with arrows showing influence on individual identity formation",
@@ -112,7 +108,7 @@
       "Examiner Report 2022: 'Weaker responses failed to address the influence of intersectionality' — remember that identity is shaped by multiple factors (class, gender, ethnicity, age) working together, not single influences in isolation"
     ],
     "keyDiagram": "The Identity Formation Wheel: Draw a circle divided into 6 segments representing key influences on identity - Family (primary socialization), Education (secondary socialization), Peer Groups (informal control), Media (cultural transmission), Workplace (adult socialization), and Religion/Ideology (value systems). Place 'Individual Identity' at the center with arrows pointing inward from each segment. Add outer ring showing 'Social Control Mechanisms' - formal (laws, institutions) and informal (norms, sanctions). Use different colors to distinguish ascribed characteristics (age, ethnicity) from achieved characteristics (occupation, lifestyle choices).",
-    "quickRecap": "Identity is formed through primary socialization (family) and secondary socialization (education, peers, media). Social control operates through formal mechanisms (laws, institutions) and informal mechanisms (norms, peer pressure). Key factors shaping identity include class, gender, ethnicity, and age, often working together through intersectionality. Modern identity is increasingly fluid and multiple rather than fixed and singular."
+    "quickRecap": "Sociology studies human social life through different theoretical approaches. Structuralism takes a macro perspective focusing on social structures, while interpretivism emphasizes individual choice and meaning. Consensus theories like functionalism focus on social stability, while conflict theories like Marxism and feminism highlight inequality and the need for change."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:13:22.893Z",
   "updated_at": "2026-04-06T04:13:22.893Z",
-  "enriched_at": "2026-04-06T16:27:54.274Z"
+  "enriched_at": "2026-04-06T16:27:54.274Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:42:12.673Z"
 }

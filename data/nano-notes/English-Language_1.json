@@ -9,37 +9,37 @@
     "title": "Reading skills and strategies",
     "readTime": "8 min",
     "keyPoints": [
-      "**Scanning** involves reading quickly to locate specific information such as names, dates, or figures",
-      "**Skimming** means reading rapidly to understand the general meaning and main ideas of a text",
-      "**Close reading** requires careful analysis of language, structure and meaning to understand implicit messages",
-      "**Narrative texts** tell a story with characters, setting, plot and may include dialogue",
-      "**Informative texts** provide facts, explanations or instructions using formal language and clear structure",
-      "**Persuasive texts** aim to convince readers through emotional language, rhetorical questions and strong opinions",
-      "**Inference** means working out meaning that is suggested but not directly stated in the text",
-      "**Context clues** help determine word meanings through surrounding words and phrases",
-      "**Topic sentences** introduce the main idea of each paragraph, usually appearing at the beginning",
-      "**Concluding sentences** summarize or reinforce the main point at the end of paragraphs or texts"
+      "Paper 1 Writing is 1 hour 30 minutes with two sections: Section 1 Directed Writing (30 marks) and Section 2 Composition (30 marks)",
+      "Section 1 requires a response of 200-300 words for directed writing tasks like informal letters",
+      "Section 2 requires a response of 350-500 words from a choice of five essay titles: 1 descriptive/2 argumentative/2 narrative",
+      "Argumentative essays should follow a 5 paragraph structure: introduction with thesis statement, two body paragraphs with claims and evidence, counter-argument paragraph, and conclusion",
+      "The 30 marks for Section 1 are allocated as follows: Task Fulfilment 15 marks, Language 15 marks",
+      "For task fulfilment, all required points must be developed in detail, fully amplified and well organised with tone and register entirely appropriate",
+      "Language assessment requires highly accurate writing with varied sentence structures, wide and precise vocabulary, and accurate punctuation and spelling",
+      "In argumentative essays, the body contains the meat of your argument including relevant facts, statistics, narratives, testimonials leveraging modes of persuasion like appeal to emotion or logic",
+      "It is essential to read the question carefully and develop bullet points as evenly as possible in Section 1 tasks",
+      "Paragraphs must have unity, be linked, and show evidence of planning"
     ],
     "definitions": [
       {
-        "term": "Scanning",
-        "definition": "Reading technique used to locate specific pieces of information quickly without reading every word"
+        "term": "Thesis statement",
+        "definition": "Your statement of belief that appears as the last line of your introduction"
       },
       {
-        "term": "Skimming",
-        "definition": "Reading technique used to gain an overall understanding of the main ideas by reading quickly through the text"
+        "term": "Task Fulfilment",
+        "definition": "Good understanding of purpose, clear awareness of situation and audience, format entirely appropriate, all required points developed in detail"
       },
       {
-        "term": "Inference",
-        "definition": "The process of drawing logical conclusions from evidence and information presented in a text"
+        "term": "Directed Writing",
+        "definition": "Section 1 compulsory writing task where candidates write a response of 200-300 words"
       },
       {
-        "term": "Context clues",
-        "definition": "Words or phrases surrounding an unfamiliar word that help determine its meaning"
+        "term": "Modes of persuasion",
+        "definition": "Various persuasive techniques like appeal to emotion or logic used in the body of argumentative essays"
       },
       {
-        "term": "Explicit information",
-        "definition": "Information that is directly stated and clearly visible in the text"
+        "term": "Counter claims",
+        "definition": "1 or 2 claims that go against your argument which you then refute with evidence in the 4th paragraph"
       }
     ],
     "howToAnswer": [
@@ -71,18 +71,16 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse scanning with skimming - scanning finds specific details, skimming finds general meaning",
-      "Students often quote too much when summarizing instead of using their own words for main points only",
-      "Never ignore context clues when working out word meanings - always look at surrounding words",
-      "Students frequently state explicit information when asked to infer - inference requires reading between the lines",
-      "Never use the same reading technique for all purposes - match the technique to the specific reading task"
+      "Commonly confused words, for example, their/there, seat/sit",
+      "Incorrect use of possessive pronouns",
+      "Not writing in full sentences, even in informal writing – for example, 'I hope your family are all well' rather than 'Hope your family are all well'",
+      "Incorrect tenses and agreement",
+      "Not developing bullet points as evenly as possible in Section 1 tasks"
     ],
     "examinerTips": [
-      "Paper 2 Reading always tests different text types - practice identifying narrative, informative and persuasive features",
-      "Questions worth 3+ marks require explanation with evidence from the text",
-      "Time management is crucial - use skimming first to understand overall content before detailed reading",
-      "Look for command words carefully - 'state' needs less detail than 'explain'",
-      "Pakistani cultural contexts often appear - familiarity with local examples helps comprehension"
+      "It is essential to read the question carefully and be clear about its particular focus",
+      "Greater focus on correct use of possessive pronouns is strongly recommended",
+      "Concentration on correct tenses and agreement would improve candidates' writing in both sections"
     ],
     "formulas": [],
     "keyDiagramDescription": "Text types comparison table showing narrative (story elements), informative (facts/explanations), and persuasive (opinions/arguments) with their key features and language characteristics",
@@ -110,7 +108,7 @@
       "Examiner Report 2023: 'Weaker responses simply retold the content rather than analyzing presentation' — focus on HOW the writer presents ideas, not just WHAT they say about the topic"
     ],
     "keyDiagram": "Create a 'Reading Analysis Framework' diagram with three connected boxes: 1) IDENTIFY (What techniques/content?) 2) ANALYZE (How does it work?) 3) EVALUATE (What effect on reader?). Include arrows showing the progression and add examples under each box: quotes/techniques under Identify, language analysis under Analyze, and reader response under Evaluate. This visual framework helps structure all reading comprehension responses systematically.",
-    "quickRecap": "Always read questions before the passage to focus your reading. Support every point with embedded quotations from the text. Don't just identify language techniques—analyze their effects on the reader. Structure responses with clear topic sentences and avoid simply retelling the story."
+    "quickRecap": "Cambridge O Level English Language Paper 1 consists of two sections: Directed Writing (200-300 words) and Composition (350-500 words), each worth 30 marks. Assessment focuses on task fulfilment and language accuracy, with marks split equally between these criteria. Students must pay attention to format, audience, detailed development of required points, and accurate use of grammar, vocabulary and punctuation."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -118,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:47:43.169Z",
   "updated_at": "2026-04-06T03:47:43.171Z",
-  "enriched_at": "2026-04-06T16:06:00.657Z"
+  "enriched_at": "2026-04-06T16:06:00.657Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:22:00.260Z"
 }

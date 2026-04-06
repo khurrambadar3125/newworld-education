@@ -9,32 +9,32 @@
     "title": "Urban Settlements",
     "readTime": "8 min",
     "keyPoints": [
-      "**Urban settlements** have populations greater than 10,000 people with high building density and limited open space",
-      "The **Central Business District (CBD)** is located in the city centre with the highest land values and tallest buildings",
-      "**Land use zones** form concentric circles around the CBD due to varying land values and accessibility",
-      "**Suburbs** are residential areas on the city outskirts with lower building density and more open space",
-      "**Industrial zones** locate near transport links such as railways and main roads for easy movement of goods",
-      "Land values are highest in the **CBD** and decrease with distance from the city centre",
-      "**Urban sprawl** occurs when cities expand outwards into surrounding rural areas",
-      "**Traffic congestion** in the CBD results from narrow streets and high concentration of businesses",
-      "**Mixed land use** occurs where different functions overlap, especially between zones"
+      "Subsistence farming is growing crops for own family where as cash crop is growing for sale and profit purpose",
+      "In cash crop farms large fields are used with higher capital required for modern irrigation system i.e. perennical canals, tubewells, sprinklers",
+      "Cash crop farms use scientific methods e.g hyv seeds, machinery(tractors and harvestor) use of chemical fertilizers and greater use of pesticides and herbicides for plant protection",
+      "In small scall subsistence farming small land utlizes with low capital invested because of poverty",
+      "Subsistence farms use old irrigation methods like shaduf and desi variety of seeds are used",
+      "Most of the work in subsistence farming is done manually and done by the family with draft power utilized for ploughing",
+      "Barani farming depends entirely on rainfall/rain-fed area with low banks/bunds constructed and field size varies considerably",
+      "Barani farmers are too poor to own tractors/lack of machines/traditional methods and use animal dung/no fertiliser",
+      "Farming using natural rainfall/flooding can only be carried out after flooding/must wait for floods with farmers having no control of water supply"
     ],
     "definitions": [
       {
-        "term": "Central Business District (CBD)",
-        "definition": "The commercial and business centre of a city with the highest land values, tallest buildings and greatest concentration of shops and offices"
+        "term": "Cash crop",
+        "definition": "Crops grown for sale/profit/commercial rather than for consumption by the farmers"
       },
       {
-        "term": "Urban settlement",
-        "definition": "A built-up area with a population greater than 10,000 people, high building density and limited open space"
+        "term": "Subsistence farming",
+        "definition": "Growing crops for own family"
       },
       {
-        "term": "Suburb",
-        "definition": "A residential area on the outskirts of a city with lower building density, more open space and family housing"
+        "term": "Cash crop farming",
+        "definition": "Growing for sale and profit purpose"
       },
       {
-        "term": "Land use zoning",
-        "definition": "The division of urban areas into different zones based on their main function such as residential, commercial or industrial"
+        "term": "Barani farming",
+        "definition": "Farming that depends entirely on rainfall/rain-fed area"
       }
     ],
     "howToAnswer": [
@@ -62,17 +62,15 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'CBD is in the middle' — always say 'CBD is the most accessible location with best transport links'",
-      "Students often confuse suburbs with rural areas — suburbs are still part of the urban area",
-      "Don't just list land uses — explain WHY they locate in specific zones (accessibility, land costs, space requirements)",
-      "Never say 'rich people live in suburbs' — explain that suburbs offer more space and family housing",
-      "Students forget that land values DECREASE with distance from CBD — this drives the zoning pattern"
+      "Confusing kharif and rabi seasons - wheat is rabi, rice is kharif",
+      "Not understanding that rice requires over 1275mm rainfall which nowhere in Pakistan has for barani farming",
+      "Mixing up subsistence and cash crop farming characteristics",
+      "Not recognizing that natural inundation farming must wait for floods while irrigation provides continuous water supply"
     ],
     "examinerTips": [
-      "Urban land use questions appear in every Paper 2 — learn the zone characteristics thoroughly",
-      "Always refer to accessibility and land values when explaining urban patterns",
-      "Use Pakistani examples: Karachi CBD (I.I. Chundrigar Road), Lahore suburbs (Defence, Gulberg)",
-      "Draw clear zone diagrams with labels for full marks in describe questions"
+      "For crop seasons, remember rabi requires mild/warm temperature 10degree-20degree for growing and 20degrees for ripening",
+      "When describing farming differences, contrast capital investment, field sizes, methods used and labor types",
+      "For natural conditions, include temperature ranges, rainfall amounts, soil types and seasonal requirements"
     ],
     "formulas": [],
     "keyDiagramDescription": "Concentric zone model showing CBD in centre, surrounded by rings of industrial zone, inner residential area, and outer suburbs, with land values and building heights decreasing outwards",
@@ -100,7 +98,7 @@
       "Examiner Report 2021: 'Candidates often ignored the command word assess/evaluate' — when asked to evaluate urban solutions, always give both advantages AND disadvantages with a conclusion"
     ],
     "keyDiagram": "Urban Hierarchy Pyramid: Draw a triangle divided into 4 levels. Top: Megacities (over 10 million, few in number, widest range of services). Second: Cities (100,000-10 million, regional centers, specialized services like universities). Third: Towns (10,000-100,000, local services, market centers). Bottom: Villages (under 10,000, most numerous, basic services only). Add arrows showing population size decreasing upward and number of settlements decreasing upward. Label sphere of influence expanding at each level.",
-    "quickRecap": "Urban settlements are classified by population size and functions into a hierarchy from villages to megacities. They grow through rural-urban migration (push/pull factors) and natural increase, especially rapidly in developing countries. Urban growth creates both opportunities (jobs, services) and problems (overcrowding, pollution, inequality). Solutions include site-and-service schemes, urban planning, and improving rural areas to reduce migration pressure."
+    "quickRecap": "Pakistani agriculture includes both subsistence farming (for family consumption) and cash crop farming (for profit). Cash crop farms use larger fields, modern machinery, and scientific methods, while subsistence farms are smaller with traditional methods and family labor. Different farming systems like barani (rain-fed) and natural inundation depend on rainfall and flooding patterns. Crops are classified as kharif (summer) or rabi (winter) based on growing seasons and temperature requirements."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -108,5 +106,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:56:10.460Z",
   "updated_at": "2026-04-06T03:56:10.460Z",
-  "enriched_at": "2026-04-06T16:07:53.310Z"
+  "enriched_at": "2026-04-06T16:07:53.310Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:35:27.157Z"
 }

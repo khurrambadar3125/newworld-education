@@ -9,39 +9,37 @@
     "title": "Hardware",
     "readTime": "8 min",
     "keyPoints": [
-      "**CPU** executes instructions in a continuous cycle: fetch, decode, execute",
-      "**Fetch stage** retrieves the next instruction from memory using the program counter",
-      "**Decode stage** interprets the instruction and determines what operation needs to be performed",
-      "**Execute stage** carries out the instruction using the ALU and registers",
-      "**CPU performance** is affected by clock speed, number of cores, and cache size",
-      "**Input devices** convert data into a form the computer can understand (keyboard, mouse, sensors)",
-      "**Output devices** convert processed data into a form humans can understand (monitor, printer, speaker)",
-      "**Primary storage** includes RAM and ROM - volatile and non-volatile memory respectively",
-      "**Secondary storage** provides permanent data storage (HDD, SSD, optical discs)",
-      "**Virtual memory** uses part of the hard disk as temporary RAM when physical memory is full",
-      "**Cloud storage** stores data on remote servers accessed via the internet",
-      "**Network hardware** includes routers, switches, and network interface cards for data transmission"
+      "Binary system is used to process data in logic gates/transistors, to store data in registers, and to process data on the computer",
+      "Denary is a base 10 system using digits 0 to 9, binary is a base 2 system using 0s and 1s, and hexadecimal is a base 16 system using digits 0 to 9 and alphabets A to F",
+      "Hexadecimal is used in colour codes, error codes and IP & MAC addresses because it is easily understandable, easier to debug, and takes less space on the screen",
+      "Each shift left is equivalent to multiplying the binary number by 2^n, and each shift right is equivalent to dividing the binary number by 2^n (where n is the number of places shifted)",
+      "Two's complement format is used to represent negative binary numbers, where the leftmost bit is changed to a negative value and determines the sign of the number",
+      "Overflow error is the result of carrying out a calculation that produces a value too large for the computer's allocated word size",
+      "A character set is a list of all characters and symbols represented by a computer, where each character and symbol has a unique value",
+      "Sampling is used by determining the amplitude of the sound after set intervals to give an approximate representation of the sound wave",
+      "Sample rate is the number of samples taken per second, and sampling resolution is the number of bits required per sample",
+      "The accuracy of a sound file increases with greater sample rates and sampling resolutions, but so does the file size"
     ],
     "definitions": [
       {
-        "term": "CPU",
-        "definition": "Central Processing Unit that executes program instructions by fetching, decoding and executing them"
+        "term": "Character set",
+        "definition": "A list of all characters and symbols represented by a computer"
       },
       {
-        "term": "Virtual Memory",
-        "definition": "Part of secondary storage used as additional RAM when physical memory is insufficient"
+        "term": "Overflow error",
+        "definition": "The result of carrying out a calculation that produces a value too large for the computer's allocated word size"
       },
       {
-        "term": "Cache Memory",
-        "definition": "High-speed memory between CPU and RAM that stores frequently accessed data"
+        "term": "Sampling",
+        "definition": "Used by determining the amplitude of the sound after set intervals. This gives an approximate representation of the sound wave"
       },
       {
-        "term": "ROM",
-        "definition": "Read Only Memory that stores the boot program and cannot be changed by normal computer operations"
+        "term": "Sample rate",
+        "definition": "The number of samples taken per second"
       },
       {
-        "term": "Network Interface Card",
-        "definition": "Hardware component that allows a computer to connect to a network"
+        "term": "Sampling resolution",
+        "definition": "The number of bits required per sample (i.e: bit depth)"
       }
     ],
     "howToAnswer": [
@@ -76,17 +74,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'CPU stores data permanently' — CPU only processes data temporarily",
-      "Students confuse RAM with ROM — RAM is volatile, ROM is non-volatile",
-      "Don't say 'virtual memory increases RAM' — it extends available memory using storage",
-      "Never write 'cache is slower than RAM' — cache is faster than RAM",
-      "Students mix up input and output devices — microphone is input, speaker is output"
+      "Losing the most significant 1 bits (leftmost bits) while shifting to the left will cause an error because the limit of the maximum number of left shifts possible will have been exceeded",
+      "Losing the rightmost 1 bits while shifting to the right will cause an error because the limit of the maximum number of right shifts possible will have been exceeded",
+      "Not recognizing when overflow error occurs - the extra carry in the answer indicates that overflow error has occurred",
+      "Forgetting that in two's complement format, the leftmost bit determines the sign of the number"
     ],
     "examinerTips": [
-      "CPU questions appear every year - memorize fetch-decode-execute cycle",
-      "Always mention 'program counter' when describing fetch stage",
-      "Storage questions often ask for comparisons - prepare RAM vs ROM table",
-      "Network hardware questions increasing - know router vs switch differences"
+      "When converting binary to hexadecimal, break into sets of 4 bits",
+      "For two's complement conversion, write the positive number in binary first, then invert all values, then add 1 to the inverted binary value"
     ],
     "formulas": [],
     "keyDiagramDescription": "CPU architecture diagram showing ALU, Control Unit, registers, and connections to memory via address/data/control buses. Include program counter and instruction register clearly labeled.",
@@ -113,7 +108,7 @@
       "Examiner Report 2024: 'Candidates wrote vague answers like \"memory\" instead of specific register names' — always use precise terminology like MAR and MDR rather than general terms"
     ],
     "keyDiagram": "Students must be able to draw a labeled CPU block diagram showing: Control Unit (CU) at the top coordinating everything, Arithmetic Logic Unit (ALU) for calculations, registers including Program Counter (PC), Memory Address Register (MAR), Memory Data Register (MDR), and Accumulator (ACC). Show buses connecting CPU to external memory: Address Bus (unidirectional from CPU), Data Bus (bidirectional), and Control Bus (bidirectional). Clearly separate internal CPU components from external components like RAM, storage devices, and input/output devices.",
-    "quickRecap": "CPU contains Control Unit (coordinates), ALU (calculations), and registers (PC, MAR, MDR, ACC). Fetch stage uses PC to find next instruction address, MAR to store that address, and MDR to hold the retrieved instruction. Only internal CPU components qualify as \"built into CPU\" - not external devices. Remember: ALU is execute stage only, never fetch stage."
+    "quickRecap": "Binary system uses base 2 (0s and 1s) to process and store data in computers, while hexadecimal uses base 16 and is beneficial for representing data like colour codes and IP addresses. Two's complement format represents negative numbers with the leftmost bit as the sign bit. Sound is converted to binary through sampling, where sample rate and resolution affect both accuracy and file size."
   },
   "read_time_minutes": 8,
   "key_points_count": 12,
@@ -121,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:44:12.015Z",
   "updated_at": "2026-04-06T03:44:12.016Z",
-  "enriched_at": "2026-04-06T16:07:25.575Z"
+  "enriched_at": "2026-04-06T16:07:25.575Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:45:46.770Z"
 }

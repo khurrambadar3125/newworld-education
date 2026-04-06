@@ -9,32 +9,32 @@
     "title": "Summary writing",
     "readTime": "8 min",
     "keyPoints": [
-      "**Read the passage carefully** to identify relevant ideas that answer the specific question asked",
-      "**Select only relevant material** - ignore examples, repetition, and irrelevant details that don't answer the question",
-      "**Use your own words** wherever possible - do not copy phrases directly from the original text",
-      "**Remodel sentences** by changing sentence structure, using synonyms, and combining ideas effectively",
-      "Write in **continuous prose** using proper paragraphs, not bullet points or note form",
-      "Maintain **logical sequence** and use connectives to link ideas coherently",
-      "**Stay within the word limit** (120-160 words) - going over loses marks automatically",
-      "**Write in third person** avoiding 'I think' or personal opinions - stick to facts from the passage",
-      "Include **all key points** from the passage that answer the question to maximize content marks"
+      "Paper 1 Writing is 1 hour 30 minutes with two sections: Section 1 Directed Writing (30 marks) and Section 2 Composition (30 marks)",
+      "Section 1 requires a response of 200-300 words to one compulsory writing task",
+      "Section 2 offers choice of five essay titles: 1 descriptive/2 argumentative/2 narrative with 350-500 words response",
+      "Argumentative essays should follow 5 paragraph structure: introduction with thesis statement, two body paragraphs with claims and evidence, counter-argument paragraph, and conclusion",
+      "The 30 marks for Section 1 are allocated as follows: Task Fulfilment 15 marks, Language 15 marks",
+      "All required points must be developed in detail, fully amplified and well organised for good Task Fulfilment",
+      "Language assessment requires sentence structures varied for particular effects and vocabulary wide and precise",
+      "Body paragraphs should include relevant facts, statistics, narratives, testimonials and leverage modes of persuasion like appeal to emotion or logic",
+      "Conclusion should offer brief summary, reiterate how essay ties back to thesis statement and might end with rhetorical question or striking comment"
     ],
     "definitions": [
       {
-        "term": "Summary",
-        "definition": "A shortened version of a text written in your own words, containing only the main points relevant to the question"
+        "term": "Thesis statement",
+        "definition": "Your statement of belief that appears as the last line of your introduction"
       },
       {
-        "term": "Remodelling",
-        "definition": "Changing the structure and vocabulary of original sentences while keeping the same meaning"
+        "term": "Task Fulfilment",
+        "definition": "Assessment criteria requiring good understanding of purpose, clear awareness of situation and audience, format entirely appropriate, and tone and register entirely appropriate"
       },
       {
-        "term": "Coherent writing",
-        "definition": "Writing that flows logically with clear connections between ideas using appropriate connectives"
+        "term": "Directed Writing",
+        "definition": "Section 1 compulsory writing task where candidates write a response of 200-300 words to test ability to write which communicates information clearly, accurately and economically"
       },
       {
-        "term": "Continuous prose",
-        "definition": "Writing in complete sentences organized into proper paragraphs, not in note or list format"
+        "term": "Modes of persuasion",
+        "definition": "Techniques used in argumentative writing body paragraphs such as appeal to emotion or logic"
       }
     ],
     "howToAnswer": [
@@ -57,17 +57,15 @@
       ]
     },
     "commonMistakes": [
-      "Copying chunks of text directly instead of using own words - this loses language marks",
-      "Including irrelevant details or examples that don't answer the specific question asked",
-      "Writing in note form or bullet points instead of continuous prose paragraphs",
-      "Exceeding the word limit - summaries over 160 words lose marks automatically",
-      "Adding personal opinions or information not in the passage - stick to given facts only"
+      "Not developing bullet points as evenly as possible in Section 1 tasks",
+      "Commonly confused words, for example, their/there, seat/sit",
+      "Incorrect use of possessive pronouns",
+      "Not writing in full sentences, even in informal writing",
+      "Incorrect tenses and agreement"
     ],
     "examinerTips": [
-      "Summary appears in Paper 2 Section A every year for 15 marks total",
-      "Spend 5 minutes reading and selecting relevant points before writing",
-      "Count words carefully - aim for 140-150 words to stay safely within limit",
-      "Use synonyms and change sentence structure to show language skills"
+      "It is essential to read the question carefully and be clear about its particular focus",
+      "Candidates should pay particular attention to commonly confused words and greater focus on correct use of possessive pronouns is strongly recommended"
     ],
     "formulas": [],
     "keyDiagramDescription": "No diagram required for summary writing - focus on text analysis and remodelling skills",
@@ -96,7 +94,7 @@
       "Examiner Report 2021: 'Students often included irrelevant details and examples' — only include points that directly answer what the question asks for, ignore background information and specific examples"
     ],
     "keyDiagram": "Students should be able to create a summary planning flowchart: 1) Read passage box → 2) Identify key points box (with bullet points) → 3) Group related ideas box → 4) Write first draft box → 5) Count words and edit box → 6) Final check box (own words, one paragraph, correct length). Include arrows between each stage and side notes showing 'Content marks' and 'Language marks' criteria.",
-    "quickRecap": "Summary writing requires extracting key points that answer the specific question, writing in your own words, and staying within exactly 120 words. Focus on content relevance rather than including everything from the passage. Always plan your points first, then write in one paragraph with logical flow between ideas."
+    "quickRecap": "Paper 1 Writing consists of Section 1 Directed Writing (200-300 words, 30 marks) and Section 2 Composition (350-500 words, 30 marks). Section 1 marks are split equally between Task Fulfilment and Language, requiring all points developed in detail with appropriate tone and register. Argumentative essays should follow a 5-paragraph structure with thesis statement, supporting claims with evidence, counter-arguments, and strong conclusion. Candidates must read questions carefully and avoid common mistakes with tenses, possessive pronouns, and confused words."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -104,5 +102,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:48:55.767Z",
   "updated_at": "2026-04-06T03:48:55.767Z",
-  "enriched_at": "2026-04-06T16:07:45.005Z"
+  "enriched_at": "2026-04-06T16:07:45.005Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:22:55.699Z"
 }

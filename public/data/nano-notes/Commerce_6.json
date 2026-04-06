@@ -9,35 +9,35 @@
     "title": "Sustainability and Ethics",
     "readTime": "8 min",
     "keyPoints": [
-      "**Sustainability** means meeting present needs without compromising the ability of future generations to meet their own needs",
-      "**Corporate Social Responsibility (CSR)** requires businesses to consider their impact on society and the environment, not just profits",
-      "**Ethical business practices** involve treating stakeholders fairly and operating with honesty and integrity in all business decisions",
-      "**Consumer rights** include the right to safety, information, choice, and to be heard when making complaints",
-      "**Environmental sustainability** requires businesses to minimize waste, reduce pollution, and use renewable resources where possible",
-      "**Fair trade** ensures producers in developing countries receive fair prices and decent working conditions",
-      "**Triple bottom line** approach considers profit, people, and planet when measuring business success",
-      "**Stakeholder approach** means considering the needs of employees, customers, suppliers, community, and shareholders equally"
+      "Commerce is study related to distribution of products from the producer (point of production) to the consumer (point of consumption)",
+      "Production is completed only when goods reach point of consumption",
+      "Primary production is obtaining raw materials or food from nature and includes extractive industries (mining, quarrying) and genetic industries (farming, forestry and fishing)",
+      "Secondary production is making goods from raw materials and includes manufacturing, processing and constructing",
+      "Tertiary production assists industry to function by providing commercial services and direct personal services",
+      "Commercial services are all services which are related to distribution of goods and services from producers to customers",
+      "Specialization or Division of Labour is breaking down of a productive activity into simpler tasks so that a person specialist in that task can perform it",
+      "Manufacturing is concerned with producing goods from raw materials, tertiary activities are concerned with the distribution of finished goods from the factory to the final consumer"
     ],
     "definitions": [
       {
-        "term": "Sustainability",
-        "definition": "Meeting present needs without compromising the ability of future generations to meet their own needs"
+        "term": "Commerce",
+        "definition": "study related to distribution of products from the producer (point of production) to the consumer (point of consumption)"
       },
       {
-        "term": "Corporate Social Responsibility (CSR)",
-        "definition": "The responsibility of businesses to consider their impact on society and the environment, not just profits"
+        "term": "Production",
+        "definition": "any activity which serves to satisfy human needs and wants"
       },
       {
-        "term": "Ethical business practices",
-        "definition": "Conducting business with honesty, integrity and fairness to all stakeholders"
+        "term": "Products",
+        "definition": "the goods and services produced by a company, to satisfy needs and wants of customers"
       },
       {
-        "term": "Fair trade",
-        "definition": "A trading partnership that ensures producers in developing countries receive fair prices and decent working conditions"
+        "term": "Needs",
+        "definition": "the things necessary for living, that is food, shelter and clothing"
       },
       {
-        "term": "Triple bottom line",
-        "definition": "Measuring business success based on profit, people and planet rather than just financial profit"
+        "term": "Wants",
+        "definition": "those goods and services which are not compulsory for living but makes life easier"
       }
     ],
     "howToAnswer": [
@@ -69,17 +69,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say sustainability is just about the environment — it includes social and economic factors too",
-      "Students often confuse CSR with charity work — CSR is about responsible business operations, not just donations",
-      "Don't just list consumer rights — always explain how they protect consumers in your answer",
-      "Avoid saying ethical practices reduce profits — explain how they can improve long-term profitability",
-      "Never suggest that only large businesses can be sustainable — small businesses can also adopt sustainable practices"
+      "Thinking production is complete when goods are manufactured - production is completed only when goods reach point of consumption",
+      "Confusing needs and wants - needs are necessary for living while wants make life easier but are not compulsory",
+      "Not understanding that primary production products are in unusable state and need to move to secondary stage"
     ],
     "examinerTips": [
-      "Sustainability questions appear frequently in Paper 2, especially asking for benefits and challenges",
-      "Always use Pakistani examples like textile industry sustainability or renewable energy projects",
-      "Link sustainability to stakeholder impact for higher marks",
-      "Remember that sustainability has economic, social AND environmental dimensions"
+      "Remember that commerce focuses on distribution from producer to consumer, not just production",
+      "Understand the three stages of production and how they connect - primary provides raw materials, secondary processes them, tertiary distributes them"
     ],
     "formulas": [],
     "keyDiagramDescription": "Stakeholder diagram showing business in center with arrows connecting to employees, customers, suppliers, community, shareholders, and government, demonstrating how CSR affects all groups",
@@ -107,7 +103,7 @@
       "Examiner Report 2023: 'Weak responses failed to consider trade-offs between different stakeholder interests' — acknowledge that ethical decisions often involve conflicts between stakeholder groups and explain how businesses might resolve these"
     ],
     "keyDiagram": "Sustainability Triangle (Triple Bottom Line): Draw an equilateral triangle with 'PROFIT' at the top vertex, 'PEOPLE' at bottom left, and 'PLANET' at bottom right. In the center, write 'SUSTAINABLE BUSINESS'. Add arrows between each point showing interconnections. Include brief annotations: Profit (economic viability, long-term returns), People (employee welfare, community impact, fair trade), Planet (environmental protection, resource conservation). This shows how businesses must balance all three elements for true sustainability.",
-    "quickRecap": "Sustainability requires businesses to balance profit, people, and planet considerations for long-term success. Ethical business practices involve considering all stakeholder impacts, not just shareholders. Key areas include environmental responsibility, fair employment practices, and transparent supply chains. Modern consumers and investors increasingly reward sustainable businesses, making ethics a competitive advantage rather than just a cost."
+    "quickRecap": "Commerce studies the distribution of products from producer to consumer through three stages of production. Primary production obtains raw materials from nature, secondary production processes them into finished goods, and tertiary production provides the commercial services needed to distribute goods to final consumers. Production is only complete when goods reach the point of consumption."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -115,5 +111,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:12:32.600Z",
   "updated_at": "2026-04-06T04:12:32.600Z",
-  "enriched_at": "2026-04-06T16:26:58.202Z"
+  "enriched_at": "2026-04-06T16:26:58.202Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:44:24.378Z"
 }

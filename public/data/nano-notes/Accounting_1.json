@@ -9,35 +9,35 @@
     "title": "Introduction to accounting",
     "readTime": "8 min",
     "keyPoints": [
-      "**Accounting** is the recording, classifying and summarizing of financial transactions and communicating the results to interested parties",
-      "The main purpose of accounting is to **provide financial information** to help users make informed economic decisions",
-      "**Internal users** include managers, owners and employees who need information for planning, controlling and decision-making",
-      "**External users** include investors, lenders, suppliers, customers and government who need information to assess financial performance",
-      "Accounting provides information about **financial position** (what the business owns and owes) and **financial performance** (profit or loss)",
-      "**Stewardship** means managers are accountable to owners for how they have used the business resources",
-      "Accounting helps in **planning** future activities, **controlling** current operations and **decision-making** for the business",
-      "Financial information must be **relevant, reliable, comparable and understandable** to be useful to users"
+      "The process of accounting starts once the book-keeper finishes recording the financial transactions",
+      "It deals with measuring, identifying, and communicating financial information recorded by the book-keeper which facilitates the preparation of financial statements",
+      "Bookkeeping involves recording financial transactions from source documents of a business whereas accounting deals with maintaining financial statements from the bookkeeping records",
+      "Assets are the resources owned and controlled by a company, where an increase in an asset is a debit and a decrease is a credit",
+      "Current Assets are assets which have a monetary value or can be converted into cash within 12 months, such as account receivables and cash",
+      "Non-Current Assets, also known as Fixed Assets, are assets acquired to earn revenue for the company and used for more than 12 months without being intended for resale",
+      "Capital is the number of resources and funds provided by the owner injected into the business, where an increase in capital is a credit while a decrease or drawings is a debit",
+      "Liability is the money owed to another firm or an entity, such as bank loans and credit card debts"
     ],
     "definitions": [
       {
-        "term": "Accounting",
-        "definition": "The recording, classifying and summarizing of financial transactions and communicating the results to interested parties"
+        "term": "Assets",
+        "definition": "The resources owned and controlled by a company"
       },
       {
-        "term": "Internal users",
-        "definition": "People within the business who use accounting information for planning, controlling and decision-making"
+        "term": "Current Assets",
+        "definition": "An asset which has a monetary value or can be converted into cash within 12 months"
       },
       {
-        "term": "External users",
-        "definition": "People outside the business who use accounting information to make economic decisions about the business"
+        "term": "Non-Current Assets",
+        "definition": "Also known as Fixed Assets, these assets are acquired to earn revenue for the company and used for more than 12 months without being intended for resale"
       },
       {
-        "term": "Stewardship",
-        "definition": "The responsibility of managers to account to owners for how they have used the business resources"
+        "term": "Capital",
+        "definition": "The number of resources and funds provided by the owner injected into the business"
       },
       {
-        "term": "Financial position",
-        "definition": "What the business owns (assets) and what it owes (liabilities) at a particular point in time"
+        "term": "Goodwill",
+        "definition": "The intangible asset that represents the reputation, customer loyalty, brand value, and other non-physical attributes of a business"
       }
     ],
     "howToAnswer": [
@@ -70,17 +70,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say accounting is 'just bookkeeping' — always say it includes communicating results to users",
-      "Students often confuse internal and external users — remember managers are internal, investors are external",
-      "Don't say accounting 'makes profit' — say it 'measures and reports profit'",
-      "Never give examples as definitions — define the term then give examples separately",
-      "Students forget that stewardship means accountability to owners, not just managing resources"
+      "Confusing bookkeeping with accounting - bookkeeping records transactions while accounting maintains financial statements",
+      "Mixing up debit and credit rules for assets and capital",
+      "Not distinguishing between tangible and intangible assets properly"
     ],
     "examinerTips": [
-      "This topic appears every year as foundation knowledge for other topics",
-      "Always distinguish between recording transactions and communicating results",
-      "Questions often ask for users and their information needs — learn specific examples",
-      "Purpose questions need the reason WHY accounting is done, not just WHAT it does"
+      "Remember the basic accounting equation: Assets = Capital + Liabilities",
+      "Understand that goodwill arises when one company acquires another for a price higher than the fair value of its net assets"
     ],
     "formulas": [],
     "keyDiagramDescription": "Accounting process flow: Financial transactions → Recording → Classifying → Summarizing → Communicating to internal users (managers, owners, employees) and external users (investors, lenders, suppliers, government)",
@@ -108,7 +104,7 @@
       "Examiner Report 2023: 'Candidates frequently mixed up revenue recognition and expense recognition principles' — remember that revenue recognition (realization concept) deals with when to record income, while matching deals with when to record expenses"
     ],
     "keyDiagram": "Students should be able to draw the Accounting Concepts Framework diagram showing the four fundamental concepts in interconnected boxes: Going Concern (top), Accruals/Matching (left), Prudence/Conservatism (right), and Consistency (bottom). Arrows should connect all concepts showing they work together. Each box should include a brief definition and example. This diagram often appears in 4-6 mark questions asking students to 'illustrate' or 'demonstrate understanding' of accounting concepts.",
-    "quickRecap": "Accounting concepts are fundamental principles that guide financial reporting. The four key concepts are: Going Concern (business continues operating), Accruals/Matching (match revenues with related expenses in same period), Prudence (don't overstate assets/income, do provide for losses), and Consistency (use same methods year after year). These concepts ensure financial statements are reliable, comparable and give a true and fair view of business performance."
+    "quickRecap": "Accounting begins after bookkeeping finishes recording transactions and involves measuring, identifying, and communicating financial information to prepare financial statements. The fundamental elements are assets (resources owned), capital (owner's investment), and liabilities (money owed). Assets can be current (convertible to cash within 12 months) or non-current (used for more than 12 months), and the basic equation is Assets = Capital + Liabilities."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -116,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:35:12.671Z",
   "updated_at": "2026-04-06T03:35:12.673Z",
-  "enriched_at": "2026-04-06T16:05:59.549Z"
+  "enriched_at": "2026-04-06T16:05:59.549Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:26:48.313Z"
 }

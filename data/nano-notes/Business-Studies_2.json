@@ -9,37 +9,37 @@
     "title": "People in Business",
     "readTime": "8 min",
     "keyPoints": [
-      "**Motivation** is the reason why employees want to work well and work effectively for the business",
-      "**Financial motivation** includes piece rate, commission, profit sharing, and performance-related pay to encourage higher productivity",
-      "**Non-financial motivation** includes job rotation, job enlargement, job enrichment, and team working to increase job satisfaction",
-      "**Recruitment** is the process of identifying that the business needs to employ someone up to the point where applications have arrived at the business",
-      "**Selection** is the process of interviewing and choosing the best candidate for the job from those who have applied",
-      "**Internal recruitment** involves appointing existing employees to new posts within the business, which saves costs and motivates staff",
-      "**External recruitment** involves appointing people from outside the business, which brings new ideas and skills",
-      "**Training** improves employee performance and includes induction training, on-the-job training, and off-the-job training",
-      "**Job description** outlines the tasks, duties and responsibilities of the job",
-      "**Person specification** outlines the qualifications, skills and experience needed to do the job effectively"
+      "The aim of a business in the private sector is to survive by making a profit",
+      "Primary production involves acquiring raw materials such as metals, coal, oil, rubber, foodstuffs and fish - sometimes known as extractive production",
+      "Secondary production is the manufacturing and assembly process, converting raw materials into components and assembling products",
+      "Tertiary production refers to commercial services that support production and distribution including insurance, transport, advertising, warehousing, retail, teaching and health care",
+      "All limited companies are incorporated, meaning they can sue or own assets in their own right and have limited liability",
+      "A public limited company (PLC) can sell its shares on the Stock Market, while a private limited company (Ltd) cannot",
+      "Sole traders do not have a separate legal existence from their owner and have unlimited liability for the firm's debts",
+      "Partnerships are businesses owned by two or more people with a deed of partnership contract drawn up",
+      "Private limited companies are easy and inexpensive to set up but lack capital due to no share issue",
+      "Public limited companies can raise large amounts of capital from share issue and benefit from economies of scale"
     ],
     "definitions": [
       {
-        "term": "Motivation",
-        "definition": "The reason why employees want to work well and work effectively for the business"
+        "term": "Market share",
+        "definition": "A percentage of overall sales in an industry"
       },
       {
-        "term": "Recruitment",
-        "definition": "The process of identifying that the business needs to employ someone up to the point where applications have arrived at the business"
+        "term": "Incorporated",
+        "definition": "Firm with separate legal existence"
       },
       {
-        "term": "Training",
-        "definition": "The process of teaching employees the skills needed to do their job effectively"
+        "term": "Audit",
+        "definition": "An independent check on the accounts of the company"
       },
       {
-        "term": "Job description",
-        "definition": "A document that outlines the tasks, duties and responsibilities of a particular job"
+        "term": "Unlimited liability",
+        "definition": "Where the sole trader can be forced to sell personal assets to cover any business debts"
       },
       {
-        "term": "Delegation",
-        "definition": "Giving a subordinate the authority to perform particular tasks"
+        "term": "Limited liability",
+        "definition": "Their losses are limited to the amount they invested in the business"
       }
     ],
     "howToAnswer": [
@@ -74,17 +74,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'money always motivates' — some employees are motivated by non-financial factors like recognition",
-      "Students often confuse job enlargement (more tasks same level) with job enrichment (more challenging tasks)",
-      "Don't just list recruitment stages — explain why each stage is important for selecting the right candidate",
-      "Never say training is 'expensive waste' — always explain benefits like increased productivity and reduced accidents",
-      "Students often forget that internal recruitment creates another vacancy that needs filling"
+      "Confusing that PLC shares can be sold on Stock Market while Ltd shares cannot",
+      "Not understanding that sole traders have unlimited liability while limited companies have limited liability",
+      "Mixing up the three stages of production - primary (extractive), secondary (manufacturing) and tertiary (services)",
+      "Forgetting that limited companies must indicate their status using PLC or Ltd in their name"
     ],
     "examinerTips": [
-      "This topic appears in almost every exam paper - learn all motivation theories thoroughly",
-      "Always give specific examples when explaining motivation methods",
-      "For recruitment questions, mention both advantages AND disadvantages of internal/external recruitment",
-      "Training questions often ask about costs vs benefits - prepare both sides"
+      "Remember that both types of limited company must audit their accounts and have them available for inspection",
+      "Note that businesses gain larger market-share by increasing sales against competitors, which may involve reducing prices"
     ],
     "formulas": [],
     "keyDiagramDescription": "Maslow's hierarchy of needs pyramid showing physiological needs at bottom, then safety, social, esteem, and self-actualization at top. Essential for explaining different motivation factors.",
@@ -113,7 +110,7 @@
       "Examiner Report 2021: 'Candidates frequently mixed up different payment systems and their effects' — clearly distinguish between time rate (fixed wage), piece rate (per unit produced), commission (percentage of sales), and profit sharing when discussing motivation"
     ],
     "keyDiagram": "Maslow's Hierarchy of Needs pyramid with 5 levels from bottom to top: Physiological needs (food, shelter, basic salary), Safety needs (job security, safe working conditions), Social needs (teamwork, belonging to groups), Esteem needs (recognition, status, promotion), Self-actualization (creativity, personal growth, challenging work). Students must be able to draw this pyramid, label each level, give workplace examples for each level, and explain how businesses can satisfy each need to motivate employees.",
-    "quickRecap": "People in business covers recruitment (internal vs external), selection methods (interviews, tests), training (on-the-job vs off-the-job), motivation theories (Maslow's hierarchy, financial vs non-financial), and payment systems (time rate, piece rate, commission). Key exam focus: always apply motivation theories to specific business contexts and justify recruitment choices based on business needs. Remember that different payment methods suit different job types and business objectives."
+    "quickRecap": "Private sector businesses aim to survive by making a profit through primary, secondary and tertiary production stages. Business structures include sole traders (unlimited liability), partnerships (shared ownership), and limited companies (limited liability). Public limited companies can sell shares on the Stock Market while private limited companies cannot, but both have separate legal existence from their owners."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -121,5 +118,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:52:21.275Z",
   "updated_at": "2026-04-06T03:52:21.275Z",
-  "enriched_at": "2026-04-06T16:06:24.670Z"
+  "enriched_at": "2026-04-06T16:06:24.670Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:32:29.653Z"
 }

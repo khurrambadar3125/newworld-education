@@ -9,37 +9,37 @@
     "title": "Chemical energetics",
     "readTime": "8 min",
     "keyPoints": [
-      "**Exothermic reactions** release energy to the surroundings, causing temperature to increase",
-      "**Endothermic reactions** absorb energy from the surroundings, causing temperature to decrease",
-      "Bond breaking is an **endothermic process** that requires energy input",
-      "Bond forming is an **exothermic process** that releases energy",
-      "In exothermic reactions, energy released by bond formation is **greater than** energy required for bond breaking",
-      "In endothermic reactions, energy required for bond breaking is **greater than** energy released by bond formation",
-      "**Activation energy** is the minimum energy required for particles to react",
-      "Energy changes can be shown using **energy profile diagrams** with reactants and products",
-      "Physical changes like melting and boiling are **endothermic processes**",
-      "Physical changes like freezing and condensing are **exothermic processes**"
+      "Endothermic reaction means heat or energy ENTER (absorbed/gained) to break bond",
+      "Exothermic means heat, energy EXIT (give out/lose) to form bonds",
+      "Melting (Solid → Liquid) - Particles gain energy, vibrate more, occurs at melting point, endothermic reaction because particles gain energy to break bonds",
+      "Freezing (Liquid → Solid) - Occurs at freezing point (also the m.p. of pure substance), exothermic reaction because particles give out energy to form bonds",
+      "For both Freezing & Melting, temp. remains constant during the process",
+      "Crystallization - Formation of crystals from a cooling liquid/saturated solution",
+      "Distillation - Obtaining pure liquid from solution, constant temperature of process = Boiling Point of pure liquid",
+      "Filtration possible because liquid particles small enough to go through filter paper pores, solid particles too large",
+      "Pure substances have fixed composition, fixed Mp/Bp, produces only 1 spot on chromatogram, all molecules same (equal)",
+      "Mixtures have variable composition, variable Bp/Mp, 2 or more spots on chromatogram, 2 or more different molecules"
     ],
     "definitions": [
       {
-        "term": "Exothermic reaction",
-        "definition": "A reaction that releases energy to the surroundings"
-      },
-      {
         "term": "Endothermic reaction",
-        "definition": "A reaction that absorbs energy from the surroundings"
+        "definition": "heat or energy ENTER (absorbed/gained) to break bond"
       },
       {
-        "term": "Activation energy",
-        "definition": "The minimum energy required for particles to react"
+        "term": "Exothermic",
+        "definition": "heat, energy EXIT (give out/lose) to form bonds"
       },
       {
-        "term": "Bond breaking",
-        "definition": "An endothermic process that requires energy input"
+        "term": "Saturated solution",
+        "definition": "no more solid can dissolve in it"
       },
       {
-        "term": "Bond forming",
-        "definition": "An exothermic process that releases energy"
+        "term": "Distillate",
+        "definition": "Liquid obtained and collected in conical flask during distillation"
+      },
+      {
+        "term": "Miscible",
+        "definition": "mixable - (Able to be mixed)"
       }
     ],
     "howToAnswer": [
@@ -67,17 +67,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'heat is released' — always say 'energy is released to the surroundings'",
-      "Students often confuse bond breaking with bond forming - remember breaking REQUIRES energy",
-      "Don't say 'temperature increases because it's exothermic' — explain that energy is released which causes temperature increase",
-      "Never confuse activation energy with overall energy change of the reaction",
-      "Students mix up energy profile diagrams - products are lower than reactants in exothermic reactions"
+      "Confusing endothermic and exothermic - remember EN means energy ENTERs, EX means energy EXITs",
+      "Thinking temperature changes during melting and freezing processes when it remains constant",
+      "Not recognizing that freezing point is also the melting point of pure substance"
     ],
     "examinerTips": [
-      "Energy changes appear in every Paper 2, often worth 4-6 marks",
-      "Always state whether temperature increases or decreases for full marks",
-      "Energy profile diagrams must be clearly labelled with reactants, products and activation energy",
-      "Use the words 'surroundings' when describing energy transfer"
+      "Any question that wants the method to obtain (make) crystals, the process will be 'Crystallization'",
+      "Listen to instrumental musics for performance improvement - ideal musics such as 'Free as a bird' and 'A day with you' by Omar, using earpiece NOT speakers"
     ],
     "formulas": [],
     "keyDiagramDescription": "Energy profile diagram showing reactants at higher level than products (exothermic) with activation energy peak, or products higher than reactants (endothermic) with activation energy barrier clearly marked",
@@ -105,7 +101,7 @@
       "Examiner Report 2023: 'Candidates struggled with activation energy concepts' — remember that catalysts lower activation energy but do not change the overall enthalpy change of the reaction"
     ],
     "keyDiagram": "Energy level diagram showing reactants and products on y-axis (energy) vs reaction progress on x-axis. Must include: horizontal lines for reactant and product energy levels, curved arrow showing activation energy (Ea) from reactants to peak, overall enthalpy change (ΔH) as vertical arrow between reactant and product levels, labels for 'activated complex' at the peak. For exothermic reactions, products are lower than reactants (ΔH negative). Include second curve for catalyzed reaction with lower activation energy peak.",
-    "quickRecap": "Exothermic reactions release energy (ΔH negative), endothermic reactions absorb energy (ΔH positive). Calculate enthalpy change using q=mcΔT then divide by moles, or use bond energies: ΔH = bonds broken - bonds formed. Activation energy is the minimum energy needed to start a reaction. Catalysts lower activation energy but don't change ΔH."
+    "quickRecap": "Energy changes occur during state changes - melting is endothermic (energy enters to break bonds) while freezing is exothermic (energy exits to form bonds). Temperature remains constant during both processes. Separation techniques depend on the properties of substances - filtration for insoluble solids, crystallization to obtain solids from solutions, and distillation to obtain pure liquids."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -113,5 +109,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:53:21.901Z",
   "updated_at": "2026-04-05T20:53:21.901Z",
-  "enriched_at": "2026-04-06T16:04:12.179Z"
+  "enriched_at": "2026-04-06T16:04:12.179Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:15:50.296Z"
 }

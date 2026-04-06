@@ -9,34 +9,17 @@
     "title": "Coordinate geometry",
     "readTime": "8 min",
     "keyPoints": [
-      "The **equation of a straight line** can be written as y = mx + c where m is the gradient and c is the y-intercept",
-      "**Gradient** of a line through points (x₁, y₁) and (x₂, y₂) is m = (y₂ - y₁)/(x₂ - x₁)",
-      "**Parallel lines** have equal gradients and **perpendicular lines** have gradients whose product is -1",
-      "The **equation of a circle** with centre (a, b) and radius r is (x - a)² + (y - b)² = r²",
-      "To find **points of intersection**, solve the equations simultaneously by substitution or elimination",
-      "A **tangent to a circle** touches the circle at exactly one point and is perpendicular to the radius at that point",
-      "The **distance** between two points (x₁, y₁) and (x₂, y₂) is √[(x₂ - x₁)² + (y₂ - y₁)²]",
-      "To find the **centre and radius** of a circle, complete the square for both x and y terms",
-      "**Discriminant** determines intersection: Δ > 0 (two points), Δ = 0 (one point/tangent), Δ < 0 (no intersection)"
+      "Co-ordinates are fundamental to coordinate geometry",
+      "The gradient of a line is a key concept for understanding linear relationships",
+      "The distance between two points can be calculated using coordinate geometry methods",
+      "The mid-point of a line joining two points is an important calculation",
+      "The equation of a straight line has standard forms that must be understood",
+      "Finding the equation of a line is a core skill in coordinate geometry",
+      "The intersection of two lines can be found using algebraic methods",
+      "Drawing curves requires understanding of coordinate plotting",
+      "The intersection of a line and a curve involves solving simultaneous equations"
     ],
-    "definitions": [
-      {
-        "term": "Gradient",
-        "definition": "The measure of steepness of a line, calculated as the change in y divided by the change in x"
-      },
-      {
-        "term": "Tangent",
-        "definition": "A straight line that touches a circle at exactly one point"
-      },
-      {
-        "term": "Chord",
-        "definition": "A straight line joining two points on the circumference of a circle"
-      },
-      {
-        "term": "Perpendicular bisector",
-        "definition": "A line that passes through the midpoint of a line segment and is perpendicular to it"
-      }
-    ],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "Find",
@@ -61,19 +44,8 @@
         "Mark 3: Correctly identify radius as 5"
       ]
     },
-    "commonMistakes": [
-      "Never write gradient as Δx/Δy — always write as Δy/Δx",
-      "Students often forget to change signs when completing the square for circle equations",
-      "Writing perpendicular gradient as negative reciprocal instead of stating m₁ × m₂ = -1",
-      "Forgetting to take the square root when finding radius from r²",
-      "Not showing substitution steps clearly when finding intersection points"
-    ],
-    "examinerTips": [
-      "Coordinate geometry appears in every Paper 1 and often combines with other topics",
-      "Always show substitution working when solving simultaneous equations",
-      "Check your gradient calculations by ensuring the fraction is in simplest form",
-      "When finding intersections, always verify answers by substituting back into original equations"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [
       "Gradient: m = (y₂ - y₁)/(x₂ - x₁)",
       "Distance: d = √[(x₂ - x₁)² + (y₂ - y₁)²]",
@@ -105,7 +77,7 @@
       "Examiner Report 2023: 'Candidates often failed to simplify their final equations or left answers with fractions when integers were expected' — always check if your equation can be simplified by multiplying through by the LCM"
     ],
     "keyDiagram": "Students must be able to draw a coordinate plane showing two points A(x₁, y₁) and B(x₂, y₂) connected by a line, with the midpoint M clearly marked at ((x₁+x₂)/2, (y₁+y₂)/2). The diagram should include right-angled triangles to illustrate distance calculations, showing the horizontal distance |x₂-x₁| and vertical distance |y₂-y₁|, with the hypotenuse representing the actual distance √[(x₂-x₁)² + (y₂-y₁)²].",
-    "quickRecap": "Distance between points: d = √[(x₂-x₁)² + (y₂-y₁)²]. Midpoint formula: M = ((x₁+x₂)/2, (y₁+y₂)/2). Gradient: m = (y₂-y₁)/(x₂-x₁). Line equation: y - y₁ = m(x - x₁). Parallel lines have equal gradients; perpendicular lines have gradients that multiply to -1."
+    "quickRecap": "The coordinate geometry chapter covers fundamental concepts including coordinates, gradients, distances, and mid-points. Students learn to find equations of straight lines and determine intersections between lines and curves. The chapter emphasizes both plotting and sketching skills alongside algebraic methods for solving geometric problems."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -113,5 +85,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:48:39.959Z",
   "updated_at": "2026-04-06T04:48:39.959Z",
-  "enriched_at": "2026-04-06T16:08:03.122Z"
+  "enriched_at": "2026-04-06T16:08:03.122Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:47:13.409Z"
 }

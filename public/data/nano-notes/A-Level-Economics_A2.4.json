@@ -9,36 +9,37 @@
     "title": "International trade",
     "readTime": "8 min",
     "keyPoints": [
-      "**Comparative advantage** exists when a country can produce a good at a lower opportunity cost than another country, forming the basis for mutually beneficial trade",
-      "Countries should **specialise** in producing goods where they have comparative advantage and trade with other countries to maximise total output",
-      "**Protectionism** involves government policies to restrict imports through tariffs, quotas, subsidies or non-tariff barriers to protect domestic industries",
-      "The **World Trade Organisation (WTO)** promotes free trade by reducing trade barriers and resolving trade disputes between member countries",
-      "**Trading blocs** like customs unions and free trade areas reduce barriers between member countries but may create trade diversion from more efficient producers",
-      "**Exchange rates** affect international competitiveness - a depreciation makes exports cheaper and imports more expensive, improving the current account",
-      "The **balance of payments** records all economic transactions between a country and the rest of the world, consisting of current and capital/financial accounts",
-      "A **current account deficit** occurs when imports of goods and services exceed exports, requiring financing through the capital/financial account",
-      "Trade creation occurs when a trading bloc leads to imports from more efficient producers within the bloc, increasing economic welfare"
+      "The basic economic problem is scarcity - wants are unlimited and resources are finite, so choices have to be made",
+      "Opportunity cost is the value of the next best alternative forgone when making a choice",
+      "Opportunity cost is important to economic agents such as consumers, producers and governments",
+      "When producing goods, three questions must be considered: what to produce, how to produce it, and for whom to produce it",
+      "Ceteris paribus is a key assumption in economics that all other things are held constant or equal",
+      "Economic theory suggests that each extra unit of a good or service consumed gives less utility - the law of diminishing marginal returns",
+      "In the short run, at least one factor of production is fixed; in the long run, all factors are variable",
+      "Positive statements are objective and can be tested with factual evidence",
+      "Normative statements are based on value judgements and are subjective, based on opinion rather than factual evidence",
+      "The factors of production are land, labour, capital and enterprise (CELL)"
     ],
     "definitions": [
       {
-        "term": "Comparative advantage",
-        "definition": "The ability of a country to produce a good or service at a lower opportunity cost than another country"
+        "term": "Opportunity cost",
+        "definition": "The value of the next best alternative forgone"
       },
       {
-        "term": "Protectionism",
-        "definition": "Government policies designed to restrict imports and protect domestic industries from foreign competition"
+        "term": "Ceteris paribus",
+        "definition": "A key assumption made in economics that assumes all other things are held constant or are equal"
       },
       {
-        "term": "Balance of payments",
-        "definition": "A record of all economic transactions between residents of a country and the rest of the world over a given period"
+        "term": "Law of diminishing marginal returns",
+        "definition": "Economic theory that suggests each extra unit of a good or service consumed gives the consumer less utility"
       },
       {
-        "term": "Trading bloc",
-        "definition": "A group of countries that have agreed to reduce or eliminate trade barriers between member countries"
+        "term": "Positive statements",
+        "definition": "Objective statements that can be tested with factual evidence, and can consequently be rejected or accepted"
       },
       {
-        "term": "Current account",
-        "definition": "A component of the balance of payments recording trade in goods and services, investment income and transfers"
+        "term": "Normative statements",
+        "definition": "Statements based on value judgements that are subjective and based on opinion rather than factual evidence"
       }
     ],
     "howToAnswer": [
@@ -75,18 +76,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse absolute advantage with comparative advantage - comparative advantage is about opportunity cost, not total output",
-      "Students often forget that both countries gain from trade even when one has absolute advantage in all goods",
-      "Never say protectionism always reduces welfare - consider infant industry and strategic trade arguments",
-      "Students confuse trade creation with trade diversion when analysing trading blocs",
-      "Never ignore the impact of exchange rate changes on import/export prices and competitiveness"
+      "Confusing positive and normative statements - look for words like 'will' and 'is' for positive, 'should' for normative",
+      "Not recognizing that opportunity cost applies regardless of starting price - it's the value that could be gained from the next best alternative",
+      "Forgetting that different economists may make different judgements from the same statistic"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 4 essays - practice 25-mark questions on protectionism and trading blocs",
-      "Always use numerical examples to demonstrate comparative advantage calculations",
-      "For balance of payments questions, remember the accounts must sum to zero",
-      "Consider both static and dynamic gains from trade in evaluation questions",
-      "Use real-world examples like CPEC, EU, NAFTA to illustrate trading relationships"
+      "Look for key words: 'will' and 'is' indicate positive statements; 'should' indicates normative statements",
+      "Remember that positive statements suggest one action is more credible than another and can be tested"
     ],
     "formulas": [
       "Opportunity cost = What is given up ÷ What is gained",
@@ -116,7 +112,7 @@
       "Examiner Report 2021: 'Weak responses did not use diagrams to support tariff analysis' — always draw supply and demand curves showing deadweight loss when discussing trade barriers"
     ],
     "keyDiagram": "Supply and Demand diagram showing tariff effects: Draw domestic supply (upward sloping) and demand (downward sloping) curves intersecting above world price line (horizontal). Add tariff by shifting world price up. Show areas: consumer surplus loss (triangle + rectangle), producer surplus gain (rectangle), government revenue (rectangle), and deadweight loss (two triangles). Label axes as Price (Y) and Quantity (X), mark free trade quantity, tariff quantity, world price, and domestic price with tariff.",
-    "quickRecap": "International trade occurs due to comparative advantage - countries should specialize in goods with lowest opportunity costs. Free trade increases global efficiency and consumer choice but may harm domestic producers. Governments use tariffs, quotas, and subsidies as protectionist measures, creating deadweight losses. Trade benefits include specialization gains, economies of scale, and increased competition driving innovation."
+    "quickRecap": "Economics deals with scarcity where unlimited wants meet finite resources, creating opportunity costs. Decision-making involves choosing between alternatives, with positive statements being testable facts and normative statements being opinions. The factors of production (capital, entrepreneurship, land, labour) are organized to address what, how, and for whom to produce goods and services."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -124,5 +120,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:10:36.730Z",
   "updated_at": "2026-04-06T05:10:36.730Z",
-  "enriched_at": "2026-04-06T16:07:01.154Z"
+  "enriched_at": "2026-04-06T16:07:01.154Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:50:53.565Z"
 }

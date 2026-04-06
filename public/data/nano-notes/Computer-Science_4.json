@@ -9,36 +9,36 @@
     "title": "Software",
     "readTime": "8 min",
     "keyPoints": [
-      "**System software** manages the computer hardware and provides a platform for other software to run",
-      "**Application software** performs specific tasks for the user such as word processing or gaming",
-      "**Operating system** manages hardware resources, provides user interface, and controls file management",
-      "**Interrupt** is a signal sent to the processor to request immediate attention from the operating system",
-      "**High-level programming languages** use English-like commands and are easier for humans to understand",
-      "**Low-level programming languages** are closer to machine code and include assembly language",
-      "**Compiler** translates the entire high-level program into machine code before execution",
-      "**Interpreter** translates and executes high-level program code line by line during runtime",
-      "**Integrated Development Environment (IDE)** provides tools for writing, testing and debugging programs in one package"
+      "Binary system uses base 2 with 0s and 1s to process data in logic gates/transistors, store data in registers, and process data on computers",
+      "Hexadecimal uses base 16 system with digits 0-9 and alphabets A-F, used in colour codes, error codes and IP & MAC addresses because it is easily understandable, easier to debug, and takes less space on the screen",
+      "Each shift left is equivalent to multiplying the binary number by 2^n (where n is the number of places shifted)",
+      "Each shift right is equivalent to dividing the binary number by 2^n (where n is the number of places shifted)",
+      "Two's complement format is used to represent negative binary numbers where the leftmost bit is changed to a negative value and determines the sign of the number",
+      "Overflow error occurs when the value is greater than the maximum value of the register - it is the result of carrying out a calculation that produces a value too large for the computer's allocated word size",
+      "A character set is a list of all characters and symbols represented by a computer where each character and symbol has a unique value",
+      "Sampling is used by determining the amplitude of the sound after set intervals to give an approximate representation of the sound wave",
+      "The accuracy of a sound file increases with greater sample rates and sampling resolutions, but so does the file size"
     ],
     "definitions": [
       {
-        "term": "Operating System",
-        "definition": "System software that manages computer hardware resources and provides services for application programs"
+        "term": "Character set",
+        "definition": "A list of all characters and symbols represented by a computer where each character and symbol has a unique value"
       },
       {
-        "term": "Interrupt",
-        "definition": "A signal sent to the processor requesting immediate attention, causing the processor to suspend current activities"
+        "term": "Sampling",
+        "definition": "Used by determining the amplitude of the sound after set intervals. This gives an approximate representation of the sound wave"
       },
       {
-        "term": "Compiler",
-        "definition": "A translator that converts the entire high-level language program into machine code before execution"
+        "term": "Sample rate",
+        "definition": "The number of samples taken per second"
       },
       {
-        "term": "Interpreter",
-        "definition": "A translator that converts and executes high-level language program code one line at a time"
+        "term": "Sampling resolution",
+        "definition": "The number of bits required per sample (i.e: bit depth)"
       },
       {
-        "term": "IDE",
-        "definition": "Integrated Development Environment - software that provides comprehensive tools for software development including editor, compiler and debugger"
+        "term": "Overflow error",
+        "definition": "The result of carrying out a calculation that produces a value too large for the computer's allocated word size"
       }
     ],
     "howToAnswer": [
@@ -71,17 +71,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'compiler is faster' — always say 'compiled programs run faster because translation has already occurred'",
-      "Students often confuse system software with hardware — system software is still software, not physical components",
-      "Don't say 'interrupt stops the processor' — say 'interrupt causes processor to suspend current activities temporarily'",
-      "Avoid saying 'high-level languages are better' — explain they are 'easier for humans to understand' instead",
-      "Never write 'IDE compiles programs' — IDE contains a compiler as one of its tools"
+      "Losing leftmost 1 bits while shifting left will cause an error because the limit of maximum number of left shifts possible will have been exceeded",
+      "Losing rightmost 1 bits while shifting right will cause an error because the limit of maximum number of right shifts possible will have been exceeded",
+      "Not recognizing when overflow error occurs - when the extra carry in the answer indicates that overflow error has occurred and the answer is greater than the maximum value the register can store"
     ],
     "examinerTips": [
-      "Software questions appear in every Paper 2 exam, usually worth 8-12 marks total",
-      "Always distinguish between 'during execution' for interpreter and 'before execution' for compiler",
-      "When comparing translators, mention both speed of execution AND ease of debugging",
-      "For operating system questions, focus on 'manages resources' rather than listing features"
+      "When converting binary to hexadecimal, break into sets of 4 bits from right to left",
+      "For two's complement conversion of negative numbers: write the positive number in binary, invert all the values, then add 1 to the inverted binary value"
     ],
     "formulas": [],
     "keyDiagramDescription": "Software classification diagram showing System Software (Operating System, Utility Software, Device Drivers) and Application Software (General Purpose, Special Purpose) with examples under each category",
@@ -110,7 +106,7 @@
       "Examiner Report 2022: 'Candidates frequently missed key features when describing open-source software' — always mention source code access, modification rights, and redistribution when explaining open-source software"
     ],
     "keyDiagram": "Software Classification Hierarchy: Draw a tree diagram with 'Software' at the top, branching into 'System Software' and 'Application Software'. Under System Software: Operating Systems, Device Drivers, Utilities (with examples like antivirus, disk cleanup). Under Application Software: General Purpose (word processors, spreadsheets, databases) and Special Purpose (payroll systems, library systems). Include a separate box showing 'Software Licensing' with Proprietary vs Open-source branches, listing key characteristics and examples for each.",
-    "quickRecap": "Software splits into system software (manages computer operations - OS, drivers, utilities) and application software (user tasks - Word, games, browsers). Proprietary software restricts source code access and modification (Windows, Photoshop), while open-source allows full access and modification (Linux, Firefox). Always give specific examples and mention source code access when discussing licensing types."
+    "quickRecap": "Data representation involves converting between binary, denary and hexadecimal number systems. Binary uses base 2 for computer processing, while hexadecimal uses base 16 for easier human readability in applications like error codes and addresses. Two's complement represents negative numbers, and logical shifts multiply or divide by powers of 2. Text, sound and images are all converted to binary using character sets, sampling, and pixel representation respectively."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +114,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:44:33.108Z",
   "updated_at": "2026-04-06T03:44:33.108Z",
-  "enriched_at": "2026-04-06T16:07:46.359Z"
+  "enriched_at": "2026-04-06T16:07:46.359Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:46:04.168Z"
 }

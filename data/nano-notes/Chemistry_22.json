@@ -9,37 +9,37 @@
     "title": "Chemical analysis",
     "readTime": "8 min",
     "keyPoints": [
-      "**Qualitative analysis** identifies what substances are present in a sample",
-      "**Quantitative analysis** determines how much of a substance is present in a sample",
-      "**Flame tests** identify metal cations by their characteristic flame colours - sodium gives yellow, copper gives blue-green",
-      "**Precipitation reactions** with sodium hydroxide identify metal cations - aluminium gives white precipitate that dissolves in excess NaOH",
-      "**Gas tests** use specific reagents - hydrogen pops with a lighted splint, carbon dioxide turns limewater milky",
-      "**Anion tests** use silver nitrate for halides - chloride gives white precipitate, bromide gives cream, iodide gives yellow",
-      "**Titration** is used to find the exact volume of acid needed to neutralise a known volume of alkali",
-      "The **end point** in acid-alkali titration is when the indicator changes colour permanently",
-      "**Concordant results** in titration are within 0.1 cm³ of each other and are used to calculate the mean",
-      "**Molar calculations** from titration use the formula: moles = concentration × volume (in dm³)"
+      "Pure substances have fixed composition, fixed melting/boiling point, produce only 1 spot on chromatogram, and all molecules are the same",
+      "Mixtures have variable composition, variable boiling/melting point, produce 2 or more spots on chromatogram, and contain 2 or more different molecules",
+      "Compounds are 2 or more elements chemically joined together and contain covalent or ionic bonds",
+      "Mixtures are 2 or more substances which are not chemically joined together",
+      "Filtration separates insoluble solid from liquid - liquid particles are small enough to go through filter paper pores while solid particles are too large",
+      "Crystallization is used for obtaining solid from solid and liquid solution by forming crystals from a cooling liquid or saturated solution",
+      "Distillation is used for obtaining pure liquid from solution - pure liquid has low boiling point and changes to gas easily while solid has high boiling point",
+      "Fractional distillation separates 2 liquids which are mixed (miscible) - the liquid with lowest boiling point comes out first at the top of fractionating column",
+      "Chromatography is used for separating mixture of organic compounds such as color dyes",
+      "The solid obtained in filtration is called 'Residue' and the liquid obtained is called 'Filtrate'"
     ],
     "definitions": [
       {
-        "term": "Qualitative analysis",
-        "definition": "Chemical tests to identify what substances are present in a sample"
+        "term": "Compound",
+        "definition": "2 or more elements chemically joined together"
       },
       {
-        "term": "Quantitative analysis",
-        "definition": "Chemical tests to determine how much of a substance is present in a sample"
+        "term": "Mixture",
+        "definition": "2 or more substances which are not chemically joined together"
       },
       {
-        "term": "Titration",
-        "definition": "A technique to find the exact volume of one solution needed to react completely with a known volume of another solution"
+        "term": "Saturated solution",
+        "definition": "A solution where no more solid can dissolve in it"
       },
       {
-        "term": "End point",
-        "definition": "The point in a titration when the indicator changes colour permanently, showing neutralisation is complete"
+        "term": "Miscible",
+        "definition": "Mixable - able to be mixed"
       },
       {
-        "term": "Concordant results",
-        "definition": "Titration results that are within 0.1 cm³ of each other"
+        "term": "Crystallization",
+        "definition": "Formation of crystals from a cooling liquid/saturated solution OR obtaining solid from solid and liquid solution"
       }
     ],
     "howToAnswer": [
@@ -71,17 +71,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'the flame turns blue' for copper - always say 'blue-green flame colour'",
-      "Students often forget to clean the wire loop between tests leading to contamination",
-      "Never say 'add excess sodium hydroxide' without first stating the initial observation",
-      "Students confuse precipitation tests - iron(II) gives green precipitate, iron(III) gives brown precipitate",
-      "In titration calculations, forgetting to convert cm³ to dm³ by dividing by 1000"
+      "Confusing whether a substance is pure or a mixture - check if it has fixed or variable boiling/melting point",
+      "Not understanding that crystallization is always the method to obtain crystals from solutions",
+      "Mixing up filtrate and residue - filtrate is the liquid that passes through, residue is the solid that remains"
     ],
     "examinerTips": [
-      "Gas tests appear almost every year - learn all five gas tests thoroughly",
-      "Always state the colour of precipitates clearly - white, cream, yellow, green, brown",
-      "In titration questions, always calculate the mean using only concordant results",
-      "Flame test colours are frequently examined - sodium yellow, potassium lilac, calcium brick red"
+      "Any question that wants the method to obtain crystals, the process will be 'Crystallization'",
+      "The constant temperature during distillation equals the boiling point of the pure liquid"
     ],
     "formulas": [
       "moles = concentration × volume (in dm³)",
@@ -113,7 +109,7 @@
       "Examiner Report 2024: 'Candidates often described flame colors incorrectly or too vaguely' — be specific: sodium gives YELLOW flame, potassium gives LILAC flame, copper gives BLUE-GREEN flame"
     ],
     "keyDiagram": "Students must be able to draw a test tube rack showing the precipitation test setup: 3-4 test tubes in a rack, each containing ~2cm depth of test solution, with a dropper bottle adding reagent (labeled as 'NaOH solution' or 'BaCl₂ + HCl'), and visible colored precipitates at the bottom of tubes. Include labels for precipitate colors (green, orange/brown, blue, white) and safety equipment (goggles, gloves). Also show the flame test setup: Bunsen burner with blue flame, nichrome wire being held in flame, and colored flame emission clearly illustrated.",
-    "quickRecap": "Chemical analysis uses specific reagents to identify ions through characteristic reactions. Flame tests give colored flames (Na=yellow, K=lilac, Cu=blue-green). Precipitation tests with NaOH identify metal ions (Fe²⁺=green, Fe³⁺=orange/brown, Cu²⁺=blue precipitates). Anion tests include barium chloride + acid for sulfates (white precipitate) and silver nitrate + acid for halides. Always state reagents, observations, and conclusions clearly."
+    "quickRecap": "Chemical analysis involves distinguishing between pure substances and mixtures using their different properties. Pure substances have fixed compositions and melting/boiling points, while mixtures are variable. Different separation techniques are used based on the nature of the mixture: filtration for insoluble solids, crystallization to obtain pure solids, distillation for pure liquids, fractional distillation for miscible liquids, and chromatography for organic compounds."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -121,5 +117,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:58:30.793Z",
   "updated_at": "2026-04-05T20:58:30.793Z",
-  "enriched_at": "2026-04-06T16:02:11.888Z"
+  "enriched_at": "2026-04-06T16:02:11.888Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:14:46.508Z"
 }

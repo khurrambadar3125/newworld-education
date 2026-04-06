@@ -9,32 +9,32 @@
     "title": "Petty cash books",
     "readTime": "8 min",
     "keyPoints": [
-      "**Petty cash** is a small amount of cash kept in the office for making small payments such as tea, stamps, and taxi fares",
-      "The **imprest system** maintains a fixed float where the petty cashier is reimbursed for the exact amount spent during the period",
-      "**Petty cash book** is both a book of prime entry and part of the ledger system, recording all small cash transactions",
-      "The petty cash book has **debit side** showing money received and **credit side** showing payments made with analysis columns",
-      "Analysis columns on the credit side separate payments into categories such as **postage, stationery, travel, cleaning**",
-      "At period end, the **balance carried down** shows cash remaining, which should equal the physical cash count",
-      "**Reimbursement** restores the petty cash float to its original imprest amount at the start of each period",
-      "VAT may be shown separately in petty cash entries when the business is registered for VAT",
-      "The petty cash book balance appears as a **current asset** in the statement of financial position"
+      "The process of accounting starts once the book-keeper finishes recording the financial transactions",
+      "It deals with measuring, identifying, and communicating financial information recorded by the book-keeper which facilitates the preparation of financial statements",
+      "Bookkeeping involves recording financial transactions from source documents of a business whereas accounting deals with maintaining financial statements from the bookkeeping records",
+      "Assets are the resources owned and controlled by a company",
+      "An increase in an asset is a debit and a decrease is a credit",
+      "Capital is the number of resources and funds provided by the owner injected into the business",
+      "An increase in capital is a credit while a decrease or drawings is a debit",
+      "Liability is the money owed to another firm or an entity",
+      "Formula: Assets=Capital+Liabilities"
     ],
     "definitions": [
       {
-        "term": "Petty cash",
-        "definition": "A small amount of cash kept in the office to make small payments for items such as postage, stationery and refreshments"
+        "term": "Assets",
+        "definition": "The resources owned and controlled by a company"
       },
       {
-        "term": "Imprest system",
-        "definition": "A system where a fixed amount of petty cash is maintained and the petty cashier is reimbursed for the exact amount spent during the period"
+        "term": "Capital",
+        "definition": "The number of resources and funds provided by the owner injected into the business"
       },
       {
-        "term": "Float",
-        "definition": "The fixed amount of money maintained in the petty cash box under the imprest system"
+        "term": "Liability",
+        "definition": "The money owed to another firm or an entity"
       },
       {
-        "term": "Analysis columns",
-        "definition": "Columns in the petty cash book that classify payments according to their nature, such as postage, stationery, and travel expenses"
+        "term": "Goodwill",
+        "definition": "The intangible asset that represents the reputation, customer loyalty, brand value, and other non-physical attributes of a business"
       }
     ],
     "howToAnswer": [
@@ -69,17 +69,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say petty cash is for 'big expenses' — always specify it is for small payments only",
-      "Students often forget to balance the petty cash book by showing balance carried down and brought down",
-      "Never put the reimbursement on the credit side — it always goes on the debit side as money received",
-      "Students confuse the float amount with the reimbursement amount — reimbursement equals total payments, not the original float",
-      "Never show VAT as a separate expense category — it is part of the total amount paid and shown in the VAT column"
+      "Confusing bookkeeping with accounting - bookkeeping records transactions while accounting deals with maintaining financial statements",
+      "Getting the debit and credit rules wrong for assets and capital",
+      "Mixing up the basic accounting equation formulas"
     ],
     "examinerTips": [
-      "Petty cash book questions appear regularly in Paper 2 for 8-12 marks",
-      "Always show analysis columns with appropriate headings when preparing a petty cash book",
-      "Remember to calculate and show the reimbursement amount when asked about the imprest system",
-      "Check that your petty cash book balances - opening balance plus receipts minus payments equals closing balance"
+      "Remember that accounting starts after bookkeeping is finished",
+      "Learn the basic accounting equation: Assets=Capital+Liabilities"
     ],
     "formulas": [
       "Reimbursement amount = Total payments made during the period",
@@ -112,7 +108,7 @@
       "Examiner Report 2021: 'Poor analysis column headings caused mark deduction' — use specific expense categories like 'Postage', 'Stationery', not vague terms like 'General'"
     ],
     "keyDiagram": "Draw a petty cash book with receipts side (left) showing Date, Details, Amount columns, and payments side (right) showing Date, Details, Voucher No., Total, then analysis columns for different expense categories (Postage, Travel, Stationery, etc.). Show opening balance entry, individual transactions with analysis, totals line, balance carried down, and restoration entry. Include proper ruling and clear column headings with $ signs for monetary columns.",
-    "quickRecap": "Petty cash book records small cash transactions using the imprest system. Receipts side shows opening balance and restoration entries. Payments side analyzes expenses by category in separate columns. Always balance the book by ensuring receipts equal payments plus closing balance. Restore the imprest amount by transferring cash from main cashier to maintain the fixed petty cash float."
+    "quickRecap": "Accounting begins after bookkeeping records financial transactions from source documents. It involves measuring, identifying, and communicating financial information to prepare financial statements. The basic accounting equation Assets=Capital+Liabilities shows the relationship between what a business owns, owes, and the owner's investment."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:36:44.314Z",
   "updated_at": "2026-04-06T03:36:44.314Z",
-  "enriched_at": "2026-04-06T16:12:34.751Z"
+  "enriched_at": "2026-04-06T16:12:34.751Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:30:13.399Z"
 }

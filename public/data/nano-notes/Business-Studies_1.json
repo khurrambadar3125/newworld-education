@@ -9,37 +9,37 @@
     "title": "Understanding Business Activity",
     "readTime": "8 min",
     "keyPoints": [
-      "A **business** combines scarce resources to produce goods and services to satisfy human wants for profit",
-      "**Enterprise** is the skill and risk-taking ability of the person who brings together other factors of production to start a business",
-      "**Primary sector** businesses extract natural resources from the earth, such as farming, fishing, mining and oil extraction",
-      "**Secondary sector** businesses manufacture goods using raw materials from the primary sector",
-      "**Tertiary sector** businesses provide services to consumers and other businesses",
-      "**Stakeholders** are individuals or groups who have an interest in a business and can affect or be affected by the business activities",
-      "**Internal stakeholders** include owners, managers, employees who work inside the business",
-      "**External stakeholders** include customers, suppliers, government, local community who are outside the business",
-      "Businesses create **employment** opportunities and contribute to **economic growth** in the country",
-      "**Added value** is the difference between the selling price of a product and the cost of materials used to make it"
+      "The aim of a business in the private sector is to survive by making a profit, whether a sole trader or thousands of shareholders in a Public Limited Company",
+      "Primary production involves acquiring raw materials like metals, coal, oil, rubber and foodstuffs - sometimes known as extractive production",
+      "Secondary production is the manufacturing and assembly process, converting raw materials into components and assembling the product",
+      "Tertiary production refers to commercial services that support production and distribution like insurance, transport, advertising, warehousing and retail",
+      "All limited companies are incorporated, meaning they have separate legal existence and can sue or own assets in their own right",
+      "Public limited companies (PLC) can sell shares on the Stock Market, while private limited companies (Ltd) cannot",
+      "Sole traders do not have separate legal existence from their owner and have unlimited liability for the firm's debts",
+      "Partnerships are businesses owned by two or more people with a deed of partnership contract stating capital contributions and profit sharing",
+      "Limited companies must indicate their status using PLC or Ltd to show traders that liability is limited",
+      "Businesses gain larger market-share by increasing sales against competitors and winning customer loyalty through reliable quality service"
     ],
     "definitions": [
       {
-        "term": "Business",
-        "definition": "An organization that uses resources to produce goods or services which are sold to customers for a profit"
+        "term": "Market-share",
+        "definition": "a percentage of overall sales in an industry"
       },
       {
-        "term": "Enterprise",
-        "definition": "The skill and risk-taking ability of the person who brings together the other factors of production to start a business"
+        "term": "Incorporated",
+        "definition": "firm with separate legal existence"
       },
       {
-        "term": "Stakeholder",
-        "definition": "Any person or group with a direct interest in the performance and activities of a business"
+        "term": "Unlimited liability",
+        "definition": "where the sole trader can be forced to sell personal assets to cover any business debts"
       },
       {
-        "term": "Added Value",
-        "definition": "The difference between the selling price of a product and the cost of bought-in materials"
+        "term": "Limited liability",
+        "definition": "their losses are limited to the amount they invested in the business"
       },
       {
-        "term": "Opportunity Cost",
-        "definition": "The next best alternative given up when making a choice"
+        "term": "Audit",
+        "definition": "an independent check on the accounts of the company"
       }
     ],
     "howToAnswer": [
@@ -74,17 +74,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'profit is the aim' - always say 'profit is one of the aims' because businesses have multiple objectives",
-      "Students often confuse stakeholders with shareholders - stakeholders include ALL interested parties, not just owners",
-      "Avoid saying 'primary sector is agriculture' - it includes ALL extraction of natural resources",
-      "Never define added value as 'profit' - it is selling price minus cost of materials only, not all costs",
-      "Students mix up internal and external stakeholders - employees are internal, customers are external"
+      "Confusing that PLC owners are not involved in running the business unless elected to Board of Directors",
+      "Not understanding that sole traders have no separate legal existence from their owner",
+      "Thinking private limited companies can sell shares on the Stock Market when only PLCs can"
     ],
     "examinerTips": [
-      "This topic appears in almost every paper - learn stakeholder conflicts well",
-      "Always give Pakistani examples when asked for business examples",
-      "Added value questions are common - practice calculating the difference between selling price and material costs",
-      "Business objectives questions often worth 6+ marks in Paper 2"
+      "Remember that both PLC and Ltd must indicate their status in their name to let traders know liability is limited",
+      "Understand the three stages of production form a chain providing consumers with finished goods"
     ],
     "formulas": [
       "Added Value = Selling Price - Cost of Materials"
@@ -114,7 +110,7 @@
       "Examiner Report 2022: 'Candidates often listed benefits of training without explaining the impact on the business' — always connect training benefits to business outcomes like increased productivity, reduced costs, or improved quality"
     ],
     "keyDiagram": "The Business Activity Chain diagram showing the flow: INPUTS (land, labor, capital, enterprise) → BUSINESS PROCESS (adding value through transformation) → OUTPUTS (goods and services) → CUSTOMER SATISFACTION. Include arrows showing the flow and label each stage clearly. Add 'VALUE ADDED' above the business process box to show how businesses transform inputs into more valuable outputs. This diagram is essential for explaining how all businesses operate regardless of size or sector.",
-    "quickRecap": "Business activity transforms inputs (factors of production) into outputs (goods/services) by adding value. All businesses exist to satisfy customer needs and wants while making profit. They operate in primary (extraction), secondary (manufacturing) or tertiary (services) sectors. Government supports start-ups to reduce unemployment, increase competition, and boost economic growth."
+    "quickRecap": "Private sector businesses aim to survive by making profit and gaining market-share through competitive sales and customer loyalty. Production occurs in three stages: primary (extracting raw materials), secondary (manufacturing), and tertiary (supporting services). Business structures range from sole traders with unlimited liability to limited companies with separate legal existence, each having distinct advantages and disadvantages."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -122,5 +118,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:51:58.455Z",
   "updated_at": "2026-04-06T03:51:58.456Z",
-  "enriched_at": "2026-04-06T16:06:01.187Z"
+  "enriched_at": "2026-04-06T16:06:01.187Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:32:16.881Z"
 }

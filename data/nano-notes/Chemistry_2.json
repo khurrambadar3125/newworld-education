@@ -9,37 +9,37 @@
     "title": "Atomic structure",
     "readTime": "8 min",
     "keyPoints": [
-      "An **atom** consists of a nucleus containing protons and neutrons, surrounded by electrons in shells",
-      "The **nucleus** is positively charged and contains most of the mass of the atom",
-      "**Protons** have a relative charge of +1 and relative mass of 1",
-      "**Neutrons** have no charge (neutral) and relative mass of 1",
-      "**Electrons** have a relative charge of -1 and negligible mass",
-      "**Atomic number** equals the number of protons in the nucleus",
-      "**Mass number** equals the total number of protons and neutrons",
-      "**Isotopes** are atoms of the same element with the same number of protons but different numbers of neutrons",
-      "**Electron configuration** shows how electrons are arranged in shells around the nucleus",
-      "The first shell holds a maximum of 2 electrons, second and third shells hold a maximum of 8 electrons each"
+      "Matter is made up of particles in three states with different properties",
+      "Solid: Particles close together, orderly arranged, held by strong forces in fixed positions, fixed shape, high density",
+      "Liquid: Particles close together, NOT in order, strong forces between particles, vibrate & free to move, no fixed shape, high density",
+      "Gas: Particles far apart, weak forces between particles, free to move around, no fixed shape, low density, pressure due to particles bouncing off walls",
+      "Melting (Solid → Liquid): Particles gain energy, vibrate more, occurs at melting point, endothermic reaction because particles gain energy to break bonds",
+      "Freezing (Liquid → Solid): Occurs at freezing point (also the m.p. of pure substance), exothermic reaction because particles give out energy to form bonds",
+      "For both freezing & melting, temperature remains constant during the process",
+      "Compound: 2 or more elements chemically joined together, contains covalent or ionic bonds",
+      "Mixtures: 2 or more substances which are not chemically joined together, can consist of elements, compounds, or elements + compounds",
+      "Pure substances have fixed composition, fixed Mp/Bp, produce only 1 spot on chromatogram, all molecules same"
     ],
     "definitions": [
       {
-        "term": "Atom",
-        "definition": "The smallest particle of an element that can take part in a chemical reaction"
+        "term": "Endothermic reaction",
+        "definition": "Heat or energy ENTER (absorbed/gained) to break bond"
       },
       {
-        "term": "Element",
-        "definition": "A substance that contains only one type of atom"
+        "term": "Exothermic reaction",
+        "definition": "Heat, energy EXIT (give out/lose) to form bonds"
       },
       {
-        "term": "Isotope",
-        "definition": "Atoms of the same element with the same number of protons but different numbers of neutrons"
+        "term": "Saturated solution",
+        "definition": "No more solid can dissolve in it"
       },
       {
-        "term": "Atomic number",
-        "definition": "The number of protons in the nucleus of an atom"
+        "term": "Miscible",
+        "definition": "Mixable - able to be mixed"
       },
       {
-        "term": "Mass number",
-        "definition": "The total number of protons and neutrons in the nucleus of an atom"
+        "term": "Distillate",
+        "definition": "Liquid obtained from distillation process, collected in conical flask"
       }
     ],
     "howToAnswer": [
@@ -72,17 +72,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say electrons are 'in the nucleus' — electrons are in shells around the nucleus",
-      "Students often confuse mass number with atomic number — mass number includes neutrons",
-      "Never say isotopes have 'different atomic numbers' — isotopes have the same atomic number",
-      "Students forget that atoms are neutral overall — equal numbers of protons and electrons",
-      "Never say 'molecules' when describing atomic structure — use 'atoms'"
+      "Confusing endothermic and exothermic - remember EN means energy ENTERS, EX means energy EXITS",
+      "Thinking temperature changes during melting/freezing - it remains constant during the process",
+      "Mixing up filtration products - solid obtained is 'Residue', liquid obtained is 'Filtrate'",
+      "Not recognizing that freezing point is also the melting point of pure substance"
     ],
     "examinerTips": [
-      "This topic appears in almost every paper — master the definitions",
-      "Always show working when calculating numbers of subatomic particles",
-      "Draw clear, labelled diagrams of atomic structure for full marks",
-      "Remember to use the notation ᴬₓE where A is mass number and Z is atomic number"
+      "Any question asking for method to obtain crystals, the process will be 'Crystallisation'",
+      "The constant temperature of distillation process equals the boiling point of pure liquid"
     ],
     "formulas": [
       "Number of neutrons = Mass number - Atomic number",
@@ -113,7 +110,7 @@
       "Examiner Report 2024: 'Common error was not accounting for charge when determining electron number in ions' — always add electrons for negative ions and subtract for positive ions before writing configuration"
     ],
     "keyDiagram": "Students must be able to draw atomic orbital diagrams showing electron spin arrangements using boxes and arrows. Draw energy levels as horizontal lines with 1s lowest, then 2s, 2p (three boxes at same level), 3s, 3p (three boxes), 4s, 3d (five boxes), 4p etc. Show electrons as arrows: ↑ for first electron in orbital, ↑↓ for paired electrons. Include labels for each sublevel and demonstrate Hund's rule by filling orbitals singly before pairing.",
-    "quickRecap": "Electrons fill orbitals in order of increasing energy: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p. Each orbital holds maximum 2 electrons with opposite spins. For ions, remove electrons from highest energy orbitals first (4s before 3d). Electronic configuration determines chemical properties and bonding behavior."
+    "quickRecap": "Matter consists of particles arranged differently in solids, liquids and gases, with different forces between them. Pure substances have fixed properties while mixtures have variable composition. Changes of state involve energy transfer - melting is endothermic, freezing is exothermic, but temperature stays constant during these processes. Separation methods depend on the physical properties of the substances being separated."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -121,5 +118,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:51:38.120Z",
   "updated_at": "2026-04-05T20:51:38.120Z",
-  "enriched_at": "2026-04-06T16:01:01.510Z"
+  "enriched_at": "2026-04-06T16:01:01.510Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:14:00.016Z"
 }

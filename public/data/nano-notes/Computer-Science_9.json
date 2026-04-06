@@ -9,31 +9,31 @@
     "title": "Databases",
     "readTime": "8 min",
     "keyPoints": [
-      "A **database** is a collection of related data organised in a structured way to allow efficient storage and retrieval",
-      "A **table** consists of rows (records) and columns (fields) where each row represents one entity and each column represents one attribute",
-      "A **primary key** is a unique identifier for each record in a table that cannot be null or duplicated",
-      "**SQL SELECT** statement retrieves specific data from one or more tables in a database",
-      "**WHERE clause** filters records based on specified conditions to limit the results returned",
-      "**ORDER BY** clause sorts the retrieved data in ascending (ASC) or descending (DESC) order based on specified fields",
-      "**COUNT function** returns the number of records that match the specified criteria in a query",
-      "**SUM function** calculates the total of all values in a specified numeric field"
+      "Binary system is used to process data in logic gates/transistors and to store data in registers",
+      "Denary is base 10 system using digits 0 to 9, Binary is base 2 system using 0s and 1s, Hexadecimal is base 16 system using digits 0 to 9 and alphabets A to F",
+      "Hexadecimal is used in colour codes, error codes and IP & MAC addresses because it is easily understandable, easier to debug, and takes less space on the screen",
+      "Overflow error is the result of carrying out a calculation that produces a value too large for the computer's allocated word size",
+      "Each shift left is equivalent to multiplying the binary number by 2^n, each shift right is equivalent to dividing the binary number by 2^n",
+      "Two's complement format is used to represent negative binary numbers, where the leftmost bit is changed to a negative value",
+      "A character set is a list of all characters and symbols represented by a computer, where each character and symbol has a unique value",
+      "Sampling is used by determining the amplitude of the sound after set intervals to give an approximate representation of the sound wave"
     ],
     "definitions": [
       {
-        "term": "Database",
-        "definition": "A collection of related data organised in a structured way that allows efficient storage, retrieval and manipulation of information"
+        "term": "Character set",
+        "definition": "A list of all characters and symbols represented by a computer"
       },
       {
-        "term": "Primary Key",
-        "definition": "A field or combination of fields that uniquely identifies each record in a table and cannot contain null or duplicate values"
+        "term": "Overflow error",
+        "definition": "The result of carrying out a calculation that produces a value too large for the computer's allocated word size"
       },
       {
-        "term": "SQL",
-        "definition": "Structured Query Language - a programming language used to manage and manipulate data stored in relational databases"
+        "term": "Sampling",
+        "definition": "Used by determining the amplitude of the sound after set intervals. This gives an approximate representation of the sound wave"
       },
       {
-        "term": "Query",
-        "definition": "A request for specific data from a database using SQL commands to retrieve, insert, update or delete records"
+        "term": "Sample rate",
+        "definition": "The number of samples taken per second"
       }
     ],
     "howToAnswer": [
@@ -62,17 +62,14 @@
       ]
     },
     "commonMistakes": [
-      "Never write 'WHERE Class = 10A' — always use quotes for text values 'WHERE Class = '10A''",
-      "Students often forget the semicolon at the end of SQL statements",
-      "Writing 'SORT BY' instead of 'ORDER BY' loses marks",
-      "Confusing COUNT(*) which counts all records with COUNT(fieldname) which counts non-null values in that field",
-      "Using = instead of > or < for numerical comparisons in WHERE clauses"
+      "Losing leftmost 1 bits while shifting left causes an error because the limit of maximum number of left shifts possible will have been exceeded",
+      "Losing rightmost 1 bits while shifting right causes an error because the limit of maximum number of right shifts possible will have been exceeded",
+      "Not recognizing overflow error when the extra carry in the answer indicates the value is greater than the maximum register value",
+      "Forgetting that the leftmost bit in two's complement format determines the sign of the number"
     ],
     "examinerTips": [
-      "SQL questions appear in every Paper 2 - practice the exact syntax",
-      "Always check spelling of SQL keywords - they must be exact",
-      "Remember to use quotes around text values but not around numbers",
-      "When using ORDER BY, specify ASC or DESC even though ASC is default"
+      "For binary to hexadecimal conversion, break the binary number into sets of 4 bits",
+      "In two's complement format, convert negative denary to binary by writing the positive value in binary, inverting all values, then adding 1"
     ],
     "formulas": [],
     "keyDiagramDescription": "Database structure diagram showing tables with field names, data types, and primary key indicators. Include relationship lines between tables if multiple tables are involved.",
@@ -101,7 +98,7 @@
       "Examiner Report 2024: 'Candidates frequently gave vague database terminology definitions' — always provide specific examples from the given database scenario when defining fields, entities, or keys"
     ],
     "keyDiagram": "Students must be able to draw a two-table database relationship diagram showing: Table 1 with primary key highlighted, Table 2 with foreign key highlighted, and an arrow connecting the foreign key to the primary key it references. Include field names, data types, and show sample data in at least 3 records per table. Mark primary keys with 'PK' and foreign keys with 'FK' annotations.",
-    "quickRecap": "Databases store data in tables with rows (records) and columns (fields). Primary keys uniquely identify records, foreign keys link tables together. SQL SELECT statements retrieve data using WHERE clauses for conditions. Data types include text/alphanumeric, numeric/real, date/time, and boolean - choose based on what the field stores."
+    "quickRecap": "Binary system uses base 2 to process and store data in computers, while hexadecimal uses base 16 for easier representation in applications like error codes. Overflow errors occur when calculations exceed the computer's word size limits. Two's complement format represents negative numbers using the leftmost bit as a sign indicator."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -109,5 +106,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:46:30.255Z",
   "updated_at": "2026-04-06T03:46:30.255Z",
-  "enriched_at": "2026-04-06T16:09:37.696Z"
+  "enriched_at": "2026-04-06T16:09:37.696Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:47:21.523Z"
 }

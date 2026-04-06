@@ -9,36 +9,36 @@
     "title": "States of matter",
     "readTime": "8 min",
     "keyPoints": [
-      "**Solids** have a fixed shape and volume because particles are closely packed in a regular arrangement",
-      "**Liquids** have a fixed volume but take the shape of their container because particles are close together but can move around each other",
-      "**Gases** have no fixed shape or volume because particles are far apart and move randomly in all directions",
-      "**Kinetic theory** states that all particles are in constant motion and the amount of kinetic energy increases with temperature",
-      "**Diffusion** is the net movement of particles from a region of high concentration to a region of low concentration",
-      "Diffusion occurs faster in gases than liquids because gas particles move faster and are further apart",
-      "**Heating** a substance increases the kinetic energy of particles causing them to move faster and vibrate more",
-      "**Changes of state** occur when particles gain or lose enough energy to overcome intermolecular forces",
-      "**Mixtures** can be separated because the components retain their individual properties and are not chemically bonded"
+      "Matter is made up of particles",
+      "Solid: Fixed shape, High Density - Particles close together, Orderly Arranged, Held by strong forces in fixed positions",
+      "Liquid: No fixed shape, High Density - Particles close together, NOT in order, Strong forces between particles, Vibrate & Free to move",
+      "Gas: No fixed shape, Low density - Particles Far apart, Weak forces between particles, Free to move around, Pressure is due to the particles bouncing off walls of container",
+      "Melting (Solid → Liquid): Particles gain energy, Vibrate more, Occurs at melting point, Endothermic Reaction because particles gain energy to break bonds",
+      "Freezing (Liquid → Solid): Occurs at freezing point (Also the m.p. of pure substance), Exothermic Reaction because particles give out energy to form bonds",
+      "For both Freezing & Melting, temp. remains constant during the process",
+      "Endothermic reaction means heat or energy ENTER (absorbed/gained) to break bond",
+      "Exothermic means heat, energy EXIT (give out/lose) to form bonds"
     ],
     "definitions": [
       {
-        "term": "Diffusion",
-        "definition": "The net movement of particles from a region of high concentration to a region of low concentration"
+        "term": "Compound",
+        "definition": "2 or more elements chemically joined together, Contains Covalent or Ionic Bonds"
       },
       {
-        "term": "Kinetic energy",
-        "definition": "The energy possessed by particles due to their motion"
+        "term": "Mixtures",
+        "definition": "2 or more substances which are not chemically joined together"
       },
       {
-        "term": "Mixture",
-        "definition": "Two or more substances that are not chemically combined and can be separated by physical methods"
+        "term": "Saturated solution",
+        "definition": "no more solid can dissolve in it"
       },
       {
-        "term": "Melting point",
-        "definition": "The temperature at which a solid changes to a liquid"
+        "term": "Miscible",
+        "definition": "mixable - (Able to be mixed)"
       },
       {
-        "term": "Boiling point",
-        "definition": "The temperature at which a liquid changes to a gas throughout the liquid"
+        "term": "Distillate",
+        "definition": "Liquid obtained (Collected in conical flask)"
       }
     ],
     "howToAnswer": [
@@ -70,17 +70,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'molecules stop moving' at absolute zero — always say 'particles have minimum kinetic energy'",
-      "Students often confuse evaporation with boiling — evaporation occurs at surface only, boiling occurs throughout",
-      "Never say 'particles get bigger when heated' — particles move faster and further apart but stay same size",
-      "Don't confuse diffusion with osmosis — diffusion is for any particles, osmosis is specifically water through membrane",
-      "Students incorrectly say 'gases have no forces' — gases have weak intermolecular forces, not zero forces"
+      "Confusing endothermic and exothermic processes in melting and freezing",
+      "Thinking temperature changes during melting and freezing processes when it remains constant",
+      "Not understanding that freezing point is also the melting point of pure substance"
     ],
     "examinerTips": [
-      "Particle diagrams appear in almost every paper — always show correct spacing and arrangement",
-      "When explaining diffusion, always mention 'net movement' not just 'movement'",
-      "Use kinetic theory to explain all changes of state for full marks",
-      "For mixture separation questions, always state the property difference being used"
+      "Any question that wants the method to obtain (make) crystals, the process will be 'Crystallisation'",
+      "The constant temperature of distillation process = Boiling Point of pure liquid"
     ],
     "formulas": [],
     "keyDiagramDescription": "Particle arrangement diagrams showing: solids with particles in regular, close-packed arrangement; liquids with particles close but irregular; gases with particles far apart and random. Include arrows to show particle movement.",
@@ -107,7 +103,7 @@
       "Examiner Report 2024: 'Candidates lost marks by not relating particle behavior to macroscopic properties' — always explain how particle arrangement and movement directly explains observable properties like melting point and electrical conductivity"
     ],
     "keyDiagram": "Students must be able to draw particle diagrams showing: (1) Solid - particles in regular arrangement, touching, vibrating about fixed positions; (2) Liquid - particles close together but irregular arrangement, able to move past each other; (3) Gas - particles far apart, random arrangement, moving rapidly in all directions. Include arrows to show particle movement and label states clearly.",
-    "quickRecap": "Solids have particles in fixed, regular arrangements that only vibrate. Liquids have particles close together but able to move past each other. Gases have particles far apart moving rapidly and randomly. Giant structures (ionic, metallic, covalent) have strong forces throughout the lattice giving high melting points."
+    "quickRecap": "Matter consists of particles arranged differently in solids (fixed positions), liquids (close but mobile), and gases (far apart and free moving). State changes involve energy transfer - melting is endothermic while freezing is exothermic, but temperature remains constant during these processes. Compounds are elements chemically joined while mixtures are substances not chemically combined."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -115,5 +111,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:51:19.791Z",
   "updated_at": "2026-04-05T20:51:19.793Z",
-  "enriched_at": "2026-04-06T15:57:02.949Z"
+  "enriched_at": "2026-04-06T15:57:02.949Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:11:19.883Z"
 }

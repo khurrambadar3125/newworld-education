@@ -8,40 +8,8 @@
   "note_data": {
     "title": "Microeconomic Decision Makers",
     "readTime": "8 min",
-    "keyPoints": [
-      "**Banks** provide financial services including accepting deposits, lending money, and facilitating payments between customers",
-      "**Households** are consumers that make spending decisions and supply factors of production (land, labour, capital) to firms",
-      "**Workers** supply labour in exchange for wages and seek to maximize their income and job satisfaction",
-      "**Trade unions** are organizations of workers that aim to improve wages, working conditions, and job security through collective bargaining",
-      "**Firms** are business organizations that combine factors of production to produce goods and services for profit",
-      "Banks earn profit through the difference between interest charged on loans and interest paid on deposits (**net interest margin**)",
-      "Households face the economic problem of **unlimited wants but limited income**, requiring them to make choices",
-      "Workers may join trade unions to increase their **bargaining power** against employers",
-      "Trade unions can use **industrial action** such as strikes to pressure employers during wage negotiations",
-      "Firms aim to **maximize profit** by minimizing costs and maximizing revenue"
-    ],
-    "definitions": [
-      {
-        "term": "Bank",
-        "definition": "A financial institution that accepts deposits from customers and lends money to borrowers for profit"
-      },
-      {
-        "term": "Household",
-        "definition": "A group of people living together who make joint economic decisions about spending and saving"
-      },
-      {
-        "term": "Trade Union",
-        "definition": "An organization of workers formed to protect and improve their wages, working conditions, and employment rights"
-      },
-      {
-        "term": "Firm",
-        "definition": "A business organization that combines factors of production to produce goods or services"
-      },
-      {
-        "term": "Collective Bargaining",
-        "definition": "The process where trade unions negotiate with employers on behalf of workers regarding wages and working conditions"
-      }
-    ],
+    "keyPoints": [],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -73,19 +41,8 @@
         "Mark 6: Clear link to employment protection"
       ]
     },
-    "commonMistakes": [
-      "Never say banks 'store money' — always say banks 'accept deposits and lend money for profit'",
-      "Students often confuse households with firms — households consume, firms produce",
-      "Don't say trade unions 'control wages' — they 'negotiate wages through collective bargaining'",
-      "Never say workers 'always benefit' from trade unions — consider both advantages and disadvantages",
-      "Students often forget that banks face costs (interest on deposits, staff wages) when explaining profit"
-    ],
-    "examinerTips": [
-      "Questions on trade unions appear frequently - learn both benefits and drawbacks",
-      "Bank questions often require explanation of how banks make profit - mention interest rate difference",
-      "When discussing households, link to opportunity cost and the economic problem",
-      "Use Pakistani examples: HBL, UBL for banks; textile workers' unions in Karachi for trade unions"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [],
     "keyDiagramDescription": "Circular flow diagram showing households supplying factors to firms in exchange for income, then spending this income on goods and services, with banks facilitating savings and investment flows",
     "pastPaperRefs": [
@@ -111,7 +68,7 @@
       "Examiner Report 2024: 'Weak evaluation in banking questions' — always consider both benefits and drawbacks of commercial bank activities, such as efficiency gains versus financial instability risks"
     ],
     "keyDiagram": "Credit Creation Diagram: Draw a flowchart showing how an initial deposit of $1000 creates multiple loans through the fractional reserve system. Show Bank A receiving $1000, keeping 10% reserve ($100), lending $900 to Bank B, which keeps $90 reserve and lends $810, continuing the cycle. Calculate total money created using the money multiplier formula (1/reserve ratio). Label each stage clearly with deposit amounts, reserves held, and loans made.",
-    "quickRecap": "Commercial banks are profit-seeking institutions that accept deposits and provide loans, serving as financial intermediaries. They create credit through fractional reserve banking, provide payment systems, and facilitate economic growth by channeling savings to investment. Key exam focus: distinguish from central banks, explain credit creation process, evaluate both benefits (economic growth, efficiency) and risks (financial instability, pro-cyclical lending)."
+    "quickRecap": "The provided source material does not contain sufficient content about microeconomic decision makers to create a revision note."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -119,5 +76,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:33:46.445Z",
   "updated_at": "2026-04-06T03:33:46.445Z",
-  "enriched_at": "2026-04-06T16:06:40.100Z"
+  "enriched_at": "2026-04-06T16:06:40.100Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:31:39.119Z"
 }

@@ -9,36 +9,25 @@
     "title": "Further kinetics",
     "readTime": "8 min",
     "keyPoints": [
-      "**Rate equation** has the form rate = k[A]^m[B]^n where k is the rate constant and m, n are orders",
-      "**Order of reaction** can only be determined from experimental data, not from the stoichiometric equation",
-      "**Overall order** is the sum of all individual orders (m + n + ...)",
-      "**Rate constant k** has units that depend on the overall order: mol^(1-n) dm^(3(n-1)) s^-1",
-      "**Half-life** is constant for first-order reactions and equals ln2/k = 0.693/k",
-      "**Rate-determining step** is the slowest step in a multi-step mechanism",
-      "**Pre-equilibrium** occurs when fast reversible steps reach equilibrium before the rate-determining step",
-      "**Arrhenius equation** ln k = ln A - Ea/RT shows temperature dependence of rate constant",
-      "A **catalyst** provides an alternative pathway with lower activation energy but does not appear in the rate equation"
+      "Reaction kinetics studies the rates at which chemical reactions occur",
+      "The effect of concentration on rate of reaction is a key factor to understand",
+      "Temperature has a significant effect on the rate of reaction",
+      "Catalysis plays an important role in affecting reaction rates",
+      "Enzymes are biological catalysts that affect reaction rates",
+      "Rate of reaction is covered as part of the broader chemistry curriculum alongside equilibrium"
     ],
     "definitions": [
       {
-        "term": "Rate equation",
-        "definition": "An equation that relates the rate of reaction to the concentrations of reactants raised to appropriate powers"
+        "term": "Reaction kinetics",
+        "definition": "The study of rates of reaction"
       },
       {
-        "term": "Order of reaction",
-        "definition": "The power to which the concentration of a reactant is raised in the rate equation"
+        "term": "Catalysis",
+        "definition": "Process involving catalysts that affect reaction rates"
       },
       {
-        "term": "Rate constant",
-        "definition": "The proportionality constant in the rate equation that is independent of concentration but depends on temperature"
-      },
-      {
-        "term": "Half-life",
-        "definition": "The time taken for the concentration of a reactant to fall to half its initial value"
-      },
-      {
-        "term": "Rate-determining step",
-        "definition": "The slowest step in a multi-step reaction mechanism that controls the overall rate of reaction"
+        "term": "Enzymes",
+        "definition": "Biological catalysts"
       }
     ],
     "howToAnswer": [
@@ -70,17 +59,13 @@
       ]
     },
     "commonMistakes": [
-      "Never deduce order from stoichiometric coefficients — order must come from experimental rate data",
-      "Students often forget that rate constant units change with overall order",
-      "Never say concentration affects rate constant — k is independent of concentration",
-      "Students confuse half-life formula: t₁/₂ = 0.693/k only applies to first-order reactions",
-      "Never include intermediates in the rate equation — only reactants that appear before or in the rate-determining step"
+      "Not understanding the relationship between concentration and rate",
+      "Confusing the effects of temperature on reaction rate",
+      "Misunderstanding how catalysts work in reactions"
     ],
     "examinerTips": [
-      "Rate equations appear in every Paper 4 and frequently in Paper 2",
-      "Always check units of rate constant match the overall order",
-      "For mechanisms, species in rate equation must appear in or before rate-determining step",
-      "Use initial rates method or half-life data to determine order experimentally"
+      "Focus on understanding the effect of concentration on rate of reaction",
+      "Make sure to distinguish between different types of catalysts including enzymes"
     ],
     "formulas": [
       "rate = k[A]^m[B]^n",
@@ -113,7 +98,7 @@
       "Examiner Report 2023: 'Poor explanations of how catalysts work at molecular level' — always mention that catalysts provide alternative reaction pathways with lower activation energy, not just 'speed up reactions'"
     ],
     "keyDiagram": "Maxwell-Boltzmann distribution curves showing effect of temperature on reaction rates. Draw two curves on same axes - lower temperature (higher peak, shifts left) and higher temperature (lower peak, shifts right). Mark activation energy Ea as vertical line. Shade areas under curves beyond Ea to show more molecules have sufficient energy at higher temperature. Label axes: y-axis 'Number of molecules', x-axis 'Kinetic energy'. Include arrow showing temperature increase.",
-    "quickRecap": "Rate equations show how concentration affects reaction rate: rate = k[A]ᵐ[B]ⁿ where m,n are orders determined experimentally. Higher temperature increases rate due to more molecules exceeding activation energy (Maxwell-Boltzmann distribution). Catalysts provide alternative pathways with lower activation energy. Rate constant units depend on overall reaction order."
+    "quickRecap": "Reaction kinetics is the study of rates of reaction. Key factors affecting reaction rates include concentration of reactants and temperature. Catalysis, including biological enzymes, plays an important role in controlling reaction rates."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -121,5 +106,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:36:44.143Z",
   "updated_at": "2026-04-06T04:36:44.143Z",
-  "enriched_at": "2026-04-06T16:06:22.243Z"
+  "enriched_at": "2026-04-06T16:06:22.243Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:43:05.717Z"
 }

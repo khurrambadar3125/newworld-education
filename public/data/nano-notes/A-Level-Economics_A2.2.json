@@ -9,36 +9,37 @@
     "title": "Labour market",
     "readTime": "8 min",
     "keyPoints": [
-      "**Labour supply** increases as wage rates rise because higher wages attract more workers and encourage longer working hours",
-      "**Labour demand** is derived demand - firms demand labour because consumers demand the goods and services labour produces",
-      "**Marginal revenue product (MRP)** determines labour demand - firms employ workers until MRP equals marginal cost of labour",
-      "A profit-maximizing firm employs labour where **MRP = MCL** (marginal cost of labour)",
-      "**Trade unions** can increase wages through collective bargaining, restricting labour supply, or increasing productivity",
-      "**Monopsony** occurs when there is only one buyer of labour in a market, leading to wages below competitive levels",
-      "Wage differentials exist due to differences in **marginal revenue productivity**, skills, qualifications, and market conditions",
-      "**Economic rent** is the payment to a factor of production above its transfer earnings",
-      "Labour market imperfections include lack of information, immobility of labour, and barriers to entry"
+      "The basic economic problem is scarcity - wants are unlimited and resources are finite, so choices have to be made",
+      "Opportunity cost is the value of the next best alternative forgone when making a choice",
+      "Economic agents (consumers, producers, governments) must make choices due to finite resources",
+      "Three key production questions: What to produce (determined by consumer preferences), How to produce it (minimizing costs for profit), For whom to produce it (those with greatest purchasing power)",
+      "Ceteris paribus assumes all other things are held constant or equal when analyzing economic effects",
+      "The law of diminishing marginal returns states that each extra unit consumed gives less utility",
+      "In the short run, at least one factor of production is fixed; in the long run, all factors are variable",
+      "Positive statements are objective and can be tested with factual evidence",
+      "Normative statements are subjective, based on value judgements and opinion",
+      "The four factors of production are Capital, Entrepreneurship, Land, and Labour (CELL)"
     ],
     "definitions": [
       {
-        "term": "Marginal Revenue Product (MRP)",
-        "definition": "The additional revenue generated from employing one more unit of labour, calculated as marginal product × marginal revenue"
+        "term": "Opportunity cost",
+        "definition": "The value of the next best alternative forgone"
       },
       {
-        "term": "Trade union",
-        "definition": "An organization of workers that aims to protect and improve the pay and working conditions of its members through collective bargaining"
+        "term": "Ceteris paribus",
+        "definition": "A key assumption made in economics that assumes all other things are held constant or are equal"
       },
       {
-        "term": "Monopsony",
-        "definition": "A market structure where there is only one buyer of labour, giving that employer significant power to influence wages"
+        "term": "Law of diminishing marginal returns",
+        "definition": "Each extra unit of a good or service consumed gives the consumer less utility"
       },
       {
-        "term": "Transfer earnings",
-        "definition": "The minimum payment required to keep a factor of production in its current use"
+        "term": "Positive statements",
+        "definition": "Objective statements that can be tested with factual evidence, and can consequently be rejected or accepted"
       },
       {
-        "term": "Economic rent",
-        "definition": "The payment to a factor of production over and above its transfer earnings"
+        "term": "Normative statements",
+        "definition": "Statements based on value judgements that are subjective and based on opinion rather than factual evidence"
       }
     ],
     "howToAnswer": [
@@ -73,17 +74,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'supply and demand determine wages' - always explain the role of MRP in determining labour demand",
-      "Students often confuse economic rent with commercial rent paid for buildings",
-      "Don't just state trade unions 'increase wages' - explain the specific methods they use",
-      "Avoid saying monopsonies always pay minimum wage - they pay below competitive equilibrium but above minimum wage",
-      "Never ignore the role of labour productivity when explaining wage differentials"
+      "Confusing positive and normative statements - look for key words like 'will/is' for positive and 'should' for normative",
+      "Forgetting that opportunity cost applies regardless of original price - it's about the next best alternative forgone",
+      "Not understanding that different economists may make different judgements from the same statistic"
     ],
     "examinerTips": [
-      "Labour market questions appear in almost every Paper 2 - especially wage determination",
-      "Always draw and label diagrams for MRP analysis - shows MRP curve as labour demand",
-      "Use real examples: textile workers in Faisalabad, IT professionals in Karachi for wage differentials",
-      "Link labour market analysis to government policies like minimum wage in Pakistan"
+      "Look for words such as 'will' and 'is' to identify positive statements",
+      "Look for words such as 'should' and statements suggesting one action is more credible than another to identify normative statements"
     ],
     "formulas": [
       "MRP = MP × MR",
@@ -114,7 +111,7 @@
       "Examiner Report 2023: 'Weak responses failed to use labour market terminology' — always use precise terms like 'derived demand', 'occupational mobility', and 'wage differentials' rather than general language"
     ],
     "keyDiagram": "Students must be able to draw supply and demand curves for labour markets. The diagram should show: wage rate on Y-axis, quantity of labour on X-axis, upward-sloping supply curve (SL), downward-sloping demand curve (DL), equilibrium point where they intersect showing equilibrium wage and employment level. For wage differentials, draw two separate diagrams side by side - one showing high-skilled labour (limited supply, high demand, high wage) and one showing low-skilled labour (abundant supply, lower demand, lower wage). Always label axes clearly and show equilibrium points.",
-    "quickRecap": "Labour markets work through supply and demand - workers supply labour, firms demand it. Wages are determined by the interaction of these forces. Higher wages result from limited supply (due to skills/training requirements) and/or high demand (essential/valuable work). Unemployment occurs when labour supply exceeds demand at current wage rates. Government can intervene through minimum wages, training programs, and employment policies."
+    "quickRecap": "Scarcity creates the basic economic problem requiring choices, leading to opportunity cost. Economic analysis uses ceteris paribus assumptions and considers short/long run timeframes. Positive statements can be tested objectively while normative statements reflect subjective value judgements. The four factors of production (CELL) are the economic resources used in production."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -122,5 +119,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:09:46.864Z",
   "updated_at": "2026-04-06T05:09:46.864Z",
-  "enriched_at": "2026-04-06T16:06:21.970Z"
+  "enriched_at": "2026-04-06T16:06:21.970Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:50:26.958Z"
 }

@@ -9,32 +9,32 @@
     "title": "Programming scenarios practice",
     "readTime": "8 min",
     "keyPoints": [
-      "**Programming scenarios** require systematic identification of inputs, processes and outputs before writing any code",
-      "**Input identification** involves determining all data that must be entered by the user or read from files",
-      "**Process identification** requires breaking down the problem into logical steps including calculations, comparisons and data manipulation",
-      "**Output identification** specifies what results must be displayed, printed or stored after processing",
-      "**Pseudocode planning** should be completed before writing actual program code to ensure logical flow",
-      "**Variable declaration** must include appropriate data types (INTEGER, REAL, STRING, BOOLEAN) based on the data being stored",
-      "**Validation checks** should be implemented to ensure input data meets specified criteria before processing",
-      "**Testing strategies** must include normal, boundary and erroneous data to verify program functionality",
-      "**Code structure** should follow logical sequence: input → validation → process → output with appropriate comments"
+      "Binary system is used to process data in logic gates/transistors, to store data in registers, and to process data on the computer",
+      "Denary is base 10 using digits 0-9, Binary is base 2 using 0s and 1s, Hexadecimal is base 16 using digits 0-9 and alphabets A-F",
+      "Hexadecimal is used in colour codes, error codes and IP & MAC addresses because it is easily understandable, easier to debug, and takes less space on the screen",
+      "For binary to hexadecimal conversion, break binary into sets of 4 digits",
+      "Each shift left is equivalent to multiplying the binary number by 2^n, each shift right is equivalent to dividing the binary number by 2^n",
+      "Overflow error occurs when the value is greater than the maximum value of the register",
+      "Two's complement format is used to represent negative binary numbers where the leftmost bit is changed to a negative value",
+      "A character set is a list of all characters and symbols represented by a computer where each character and symbol has a unique value",
+      "Sampling is used by determining the amplitude of the sound after set intervals to give an approximate representation of the sound wave"
     ],
     "definitions": [
       {
-        "term": "Programming scenario",
-        "definition": "A real-world problem that requires a complete program solution including input, processing and output stages"
+        "term": "Character set",
+        "definition": "A list of all characters and symbols represented by a computer"
       },
       {
-        "term": "Input validation",
-        "definition": "The process of checking that data entered meets specified criteria before it is processed by the program"
+        "term": "Sampling",
+        "definition": "Used by determining the amplitude of the sound after set intervals. This gives an approximate representation of the sound wave"
       },
       {
-        "term": "Boundary data",
-        "definition": "Test data that uses values at the limits of acceptable ranges to check program handles edge cases correctly"
+        "term": "Sample rate",
+        "definition": "The number of samples taken per second"
       },
       {
-        "term": "Trace table",
-        "definition": "A method of dry-running code by manually tracking variable values through each step of program execution"
+        "term": "Sampling resolution",
+        "definition": "The number of bits required per sample (i.e: bit depth)"
       }
     ],
     "howToAnswer": [
@@ -69,18 +69,14 @@
       ]
     },
     "commonMistakes": [
-      "Students write code immediately without planning inputs, processes and outputs first",
-      "Forgetting to include validation checks for input data ranges and data types",
-      "Using incorrect data types - mixing up INTEGER and REAL for calculations involving division",
-      "Not providing complete test data sets including boundary values and invalid inputs",
-      "Writing incomplete IF..THEN..ELSE statements that don't cover all possible grade ranges"
+      "Forgetting that overflow error occurs when carrying out a calculation that produces a value too large for the computer's allocated word size",
+      "Losing leftmost 1 bits while shifting left or rightmost 1 bits while shifting right will cause errors",
+      "Not remembering that in two's complement format the leftmost bit determines the sign of the number",
+      "Confusing the process of converting negative denary to binary - must write positive binary first, then invert all values, then add 1"
     ],
     "examinerTips": [
-      "Programming scenarios appear in Paper 2 Section B and are worth 15-20 marks",
-      "Always plan IPO (Input-Process-Output) before writing any code",
-      "Include validation for all inputs to demonstrate good programming practice",
-      "Use meaningful variable names that clearly indicate their purpose",
-      "Test your logic with boundary values like 79.5 vs 80 for grade boundaries"
+      "Remember that hexadecimal has fewer digits for the same value compared to binary, making it easier to work with",
+      "When converting binary to hexadecimal, always break into sets of 4 digits from right to left"
     ],
     "formulas": [],
     "keyDiagramDescription": "IPO diagram showing three columns: Inputs (user data entry), Processes (calculations and decisions), Outputs (results displayed), with arrows showing data flow from left to right",
@@ -109,7 +105,7 @@
       "Examiner Report 2023: 'Candidates frequently mixed up assignment and comparison operators' — remember to use ← or = for assignment and = or == for comparison depending on the pseudocode style required"
     ],
     "keyDiagram": "Students must be able to draw a program flow diagram showing: START oval, INPUT parallelogram for data entry, PROCESS rectangles for calculations/operations, DECISION diamonds for IF statements and loop conditions with YES/NO paths, OUTPUT parallelogram for displaying results, and END oval. Arrows must show clear flow direction, and decision points must have clearly labeled paths for different conditions.",
-    "quickRecap": "Programming scenarios require identifying inputs, processes, and outputs first. Always include validation for user inputs and use appropriate loop structures (FOR for known iterations, WHILE/REPEAT for unknown). Remember to initialize variables, handle edge cases, and provide clear output messages. Practice common scenarios like calculators, grade systems, and inventory management."
+    "quickRecap": "Binary is the fundamental number system used by computers for processing and storing data. Number system conversions between denary, binary and hexadecimal follow specific methods including breaking binary into sets of 4 for hexadecimal conversion. Binary operations include logical shifts for multiplication/division and two's complement for representing negative numbers. Text and sound are converted to binary through character sets and sampling respectively."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -117,5 +113,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:47:19.000Z",
   "updated_at": "2026-04-06T03:47:19.000Z",
-  "enriched_at": "2026-04-06T16:06:43.215Z"
+  "enriched_at": "2026-04-06T16:06:43.215Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:45:16.827Z"
 }

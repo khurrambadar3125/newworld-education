@@ -9,36 +9,25 @@
     "title": "Energy, work and power",
     "readTime": "8 min",
     "keyPoints": [
-      "**Work done** by a constant force equals force × displacement in the direction of force (W = Fs cos θ)",
-      "**Kinetic energy** of a particle is ½mv² where m is mass and v is speed",
-      "**Gravitational potential energy** is mgh above a chosen reference level",
-      "**Work-energy theorem**: work done by all forces equals change in kinetic energy",
-      "**Conservation of mechanical energy**: KE + PE = constant when only conservative forces act",
-      "**Power** is the rate of doing work, measured in watts (P = W/t)",
-      "**Instantaneous power** equals force × velocity in direction of force (P = Fv cos θ)",
-      "Energy is always **conserved** but may be converted between different forms",
-      "Non-conservative forces like **friction** convert mechanical energy to heat energy"
+      "This is Pure Mathematics 1 content from Cambridge International A and AS Level Mathematics",
+      "The material was originally part of the MEI Structured Mathematics series and carefully adapted for Cambridge syllabus",
+      "Content covers 8 main chapters: Algebra, Co-ordinate geometry, Sequences and series, Functions, Differentiation, Integration, Trigonometry, and Vectors",
+      "Questions are reproduced from Cambridge International Examinations A & AS level Mathematics papers",
+      "The book includes standard mathematical results for differentiation and integration",
+      "Graphical calculators and computers are not permitted in examinations"
     ],
     "definitions": [
       {
-        "term": "Work",
-        "definition": "Work done by a force is the product of the force and the displacement in the direction of the force"
+        "term": "Warning sign (!)",
+        "definition": "Used where a common mistake, misunderstanding or tricky point is being described"
       },
       {
-        "term": "Kinetic Energy",
-        "definition": "The energy possessed by a body due to its motion, equal to ½mv²"
+        "term": "Discussion symbol (?)",
+        "definition": "Means that you want to discuss a point with your teacher"
       },
       {
-        "term": "Potential Energy",
-        "definition": "The energy possessed by a body due to its position in a force field"
-      },
-      {
-        "term": "Power",
-        "definition": "The rate of doing work or the rate of energy transfer"
-      },
-      {
-        "term": "Conservative Force",
-        "definition": "A force for which the work done is independent of the path taken and depends only on initial and final positions"
+        "term": "ICT icon",
+        "definition": "Indicates where you could use a graphic calculator or a computer"
       }
     ],
     "howToAnswer": [
@@ -71,17 +60,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse work and energy - work is energy transferred, energy is capacity to do work",
-      "Students often forget that work = F × s × cos θ, not just F × s when force is at an angle",
-      "Don't use v = u + at when energy methods are more appropriate for the question",
-      "Never say 'energy is lost' - always say 'energy is converted to heat/sound' etc.",
-      "Students mix up instantaneous power P = Fv with average power P = W/t"
+      "Common mistakes, misunderstandings and tricky points are marked with the warning sign (!)",
+      "Students should attempt questions before looking up answers to understand mathematics fully",
+      "Misunderstanding occurs when students don't engage with discussion points marked with (?)"
     ],
     "examinerTips": [
-      "Energy questions appear in every Paper 4, often worth 8-12 marks",
-      "Always state which energy principle you are using (conservation, work-energy theorem)",
-      "Draw energy bar charts or diagrams when asked to explain energy changes",
-      "Check units carefully - work and energy in joules (J), power in watts (W)"
+      "Have a go at answering questions before looking up answers to understand the mathematics fully",
+      "Graphical calculators and computers are not permitted in examinations"
     ],
     "formulas": [
       "W = Fs cos θ",
@@ -114,7 +99,7 @@
       "Examiner Report 2021: 'Candidates often calculated kinetic energy incorrectly by forgetting the ½ factor' — remember KE = ½mv², not mv²"
     ],
     "keyDiagram": "Energy transfer diagram showing: Initial energy store → Energy transfer process (with efficiency arrow showing useful energy output and wasted energy) → Final energy store. Include arrows labeled with energy types (kinetic, gravitational potential, thermal, etc.) and numerical values where given. Always show that total energy input = useful energy output + wasted energy.",
-    "quickRecap": "Work = force × distance (W = Fs), measured in Joules. Kinetic energy = ½mv², gravitational potential energy = mgh. Power = work done ÷ time taken (P = W/t), measured in Watts. Energy is always conserved but can be transferred between different forms, with some energy usually wasted as heat due to friction."
+    "quickRecap": "This is Cambridge International A & AS Level Pure Mathematics 1 content adapted from MEI Structured Mathematics. It covers 8 chapters from Algebra through Vectors. Students should engage with discussion points and attempt questions before checking answers, while noting that calculators are not permitted in exams."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -122,5 +107,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:56:45.999Z",
   "updated_at": "2026-04-06T04:56:45.999Z",
-  "enriched_at": "2026-04-06T16:06:56.318Z"
+  "enriched_at": "2026-04-06T16:06:56.318Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:46:48.028Z"
 }

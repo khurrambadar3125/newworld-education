@@ -9,36 +9,36 @@
     "title": "Automated and emerging technologies",
     "readTime": "8 min",
     "keyPoints": [
-      "An **automated system** uses sensors to input data, a processor to make decisions, and actuators to produce outputs without human intervention",
-      "**Feedback loops** allow automated systems to monitor their outputs and make adjustments using sensors to detect changes in the environment",
-      "**Robots** are programmable machines that can perform tasks automatically, consisting of sensors, processors, actuators, and end effectors",
-      "Robots are used in **manufacturing** for tasks like welding and assembly because they provide consistent quality and can work continuously",
-      "**Artificial Intelligence (AI)** enables machines to simulate human intelligence through machine learning, pattern recognition, and decision making",
-      "**Machine learning** allows systems to improve performance by learning from data without being explicitly programmed for every scenario",
-      "**Expert systems** use knowledge bases and inference engines to solve problems in specific domains like medical diagnosis",
-      "**Virtual reality** creates immersive 3D environments using headsets and motion sensors for training and entertainment applications",
-      "**Autonomous vehicles** use GPS, cameras, and sensors to navigate without human control, processing real-time data to make driving decisions"
+      "Binary system is used to process data in logic gates/transistors, to store data in registers, and to process data on the computer",
+      "Hexadecimal is used in colour codes, error codes and IP & MAC addresses because it is easily understandable, easier to debug, and takes less space on the screen",
+      "Overflow error is the result of carrying out a calculation that produces a value too large for the computer's allocated word size",
+      "Each shift left is equivalent to multiplying the binary number by 2^n (where n is the number of places shifted)",
+      "Each shift right is equivalent to dividing the binary number by 2^n (where n is the number of places shifted)",
+      "Two's complement format is used to represent negative binary numbers, where the leftmost bit is changed to a negative value",
+      "A character set is a list of all characters and symbols represented by a computer, with each character and symbol having a unique value",
+      "Sampling is used by determining the amplitude of the sound after set intervals, giving an approximate representation of the sound wave",
+      "The accuracy of a sound file increases with greater sample rates and sampling resolutions, but so does the file size"
     ],
     "definitions": [
       {
-        "term": "Automated system",
-        "definition": "A system that uses sensors to collect data, processors to make decisions, and actuators to produce outputs without human intervention"
+        "term": "Character set",
+        "definition": "A list of all characters and symbols represented by a computer"
       },
       {
-        "term": "Artificial Intelligence",
-        "definition": "The simulation of human intelligence by machines through learning, reasoning, and problem-solving capabilities"
+        "term": "Overflow error",
+        "definition": "The result of carrying out a calculation that produces a value too large for the computer's allocated word size"
       },
       {
-        "term": "Robot",
-        "definition": "A programmable machine capable of carrying out actions automatically using sensors, processors, and actuators"
+        "term": "Sampling",
+        "definition": "Used by determining the amplitude of the sound after set intervals. This gives an approximate representation of the sound wave"
       },
       {
-        "term": "Machine learning",
-        "definition": "A method of artificial intelligence where systems automatically learn and improve from experience without being explicitly programmed"
+        "term": "Sample rate",
+        "definition": "The number of samples taken per second"
       },
       {
-        "term": "Expert system",
-        "definition": "An AI system that uses a knowledge base and inference engine to solve problems in a specific domain like a human expert"
+        "term": "Sampling resolution",
+        "definition": "The number of bits required per sample (i.e: bit depth)"
       }
     ],
     "howToAnswer": [
@@ -73,18 +73,15 @@
       ]
     },
     "commonMistakes": [
-      "Never say robots 'think' — always say they 'process data according to programmed instructions'",
-      "Students often confuse automation with robotics — automation doesn't always require physical movement",
-      "Don't say AI systems 'understand' — they 'recognize patterns' or 'match data'",
-      "Never describe robots as having emotions or consciousness — they follow programmed algorithms",
-      "Students forget to mention feedback loops when explaining how automated systems self-regulate"
+      "Forgetting that overflow error occurs when the value is greater than the maximum value of the register",
+      "Not recognizing that if leftmost 1 bits are lost while shifting to the left, an error will occur",
+      "Not understanding that if rightmost 1 bits are lost while shifting to the right, an error will occur",
+      "Confusing the conversion methods between different number systems",
+      "Not properly applying two's complement format by forgetting to invert all values and add 1"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2 with 6-8 mark questions",
-      "Always mention sensors, processors, and actuators when describing automated systems",
-      "Use real-world examples from Pakistani context like automated toll systems on motorways",
-      "For AI questions, focus on data processing rather than human-like thinking",
-      "Draw block diagrams showing input → process → output for automated systems"
+      "When converting from denary to hexadecimal, use successive division by 16 and read the remainders from bottom to top",
+      "For binary to hexadecimal conversion, break the binary number into sets of 4 bits starting from the right"
     ],
     "formulas": [],
     "keyDiagramDescription": "Block diagram showing: Sensors (input) → Processor (decision making) → Actuators (output) → Environment, with feedback loop from environment back to sensors",
@@ -111,7 +108,7 @@
       "Examiner Report 2023: 'Candidates often gave vague disadvantages like 'expensive' without context' — always explain WHY it's expensive (training costs, hardware requirements, maintenance) and the impact on different stakeholders"
     ],
     "keyDiagram": "Draw a flowchart showing an AI decision-making process: Input Data → Data Processing (sensors/cameras collect information) → Machine Learning Algorithm (pattern recognition and analysis) → Decision Making (AI makes choice based on learned patterns) → Output/Action → Feedback Loop (results fed back to improve future decisions). Include labels for each stage and show the circular nature of machine learning with the feedback loop. Add examples at each stage like 'camera detects pedestrian' → 'image processing' → 'pattern matching with training data' → 'apply brakes' → 'record successful stop for future learning'.",
-    "quickRecap": "Emerging technologies include AI, IoT, robotics, and VR/AR that are transforming industries through automation and smart decision-making. AI learns from data to make predictions, while automation follows pre-set instructions. Key advantages: increased efficiency, 24/7 operation, improved accuracy. Key disadvantages: job displacement, high costs, security vulnerabilities, lack of human judgment. Always provide specific real-world examples and explain impacts on different stakeholders."
+    "quickRecap": "Data representation involves converting between binary, denary, and hexadecimal number systems. Binary is fundamental as computers use it to process and store data in logic gates and registers. Hexadecimal provides a more compact representation that's easier for humans to read and debug. Understanding overflow errors, logical shifts, and two's complement is essential for working with binary arithmetic and negative numbers."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:45:24.264Z",
   "updated_at": "2026-04-06T03:45:24.264Z",
-  "enriched_at": "2026-04-06T16:08:37.450Z"
+  "enriched_at": "2026-04-06T16:08:37.450Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:46:35.499Z"
 }

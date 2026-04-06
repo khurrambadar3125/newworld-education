@@ -9,38 +9,14 @@
     "title": "Chemical Bonding",
     "readTime": "8 min",
     "keyPoints": [
-      "**Ionic bonding** occurs between metals and non-metals through transfer of electrons from metal atoms to non-metal atoms",
-      "**Covalent bonding** involves sharing of electron pairs between non-metal atoms",
-      "**Dative covalent bonding** forms when one atom provides both electrons in a shared pair",
-      "**Metallic bonding** involves electrostatic attraction between positive metal ions and delocalised electrons",
-      "**Electronegativity** is the ability of an atom to attract bonding electrons in a covalent bond",
-      "**VSEPR theory** predicts molecular shapes based on electron pair repulsion around central atom",
-      "**Van der Waals forces** are weak intermolecular forces including London dispersion forces and permanent dipole interactions",
-      "**Hydrogen bonding** occurs between hydrogen bonded to N, O, or F and lone pairs on N, O, or F atoms",
-      "**Bond polarity** depends on electronegativity difference between bonded atoms"
+      "Chemical bonding chapter covers types of chemical bonding including ionic, covalent, and metallic bonding",
+      "Shapes of molecules and molecular geometry are key topics within covalent bonding",
+      "Intermolecular forces are distinct from chemical bonds and affect physical properties",
+      "Hydrogen bonding is a specific type of intermolecular force with particular significance",
+      "The relationship between bonding type and physical properties is fundamental",
+      "Electronic structure from Chapter 3 provides the foundation for understanding chemical bonding"
     ],
-    "definitions": [
-      {
-        "term": "Ionic bonding",
-        "definition": "The electrostatic attraction between oppositely charged ions formed by electron transfer"
-      },
-      {
-        "term": "Covalent bonding",
-        "definition": "The electrostatic attraction between two nuclei and a shared pair of electrons"
-      },
-      {
-        "term": "Dative covalent bonding",
-        "definition": "A covalent bond in which one atom provides both electrons in the shared pair"
-      },
-      {
-        "term": "Electronegativity",
-        "definition": "The ability of an atom to attract bonding electrons in a covalent bond"
-      },
-      {
-        "term": "Van der Waals forces",
-        "definition": "Weak intermolecular forces of attraction between molecules"
-      }
-    ],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -69,19 +45,8 @@
         "Mark 3: Bond angle less than 109.5° due to lone pair repulsion"
       ]
     },
-    "commonMistakes": [
-      "Never say 'electrons are shared equally' in polar covalent bonds — always specify 'unequally shared'",
-      "Students often confuse molecular shape with electron pair geometry — shape depends only on bonding pairs",
-      "Never say 'molecules have ionic bonding' — ionic bonding exists between ions, not molecules",
-      "Students often forget that dative bonds are shown with arrows (→) not lines in diagrams",
-      "Never confuse intermolecular forces with intramolecular bonds — they are different types of attractions"
-    ],
-    "examinerTips": [
-      "Bond angles appear frequently in Paper 2 — always relate to electron pair repulsion",
-      "Draw dot-and-cross diagrams clearly showing outer electrons only for full marks",
-      "VSEPR questions worth 3-4 marks appear almost every year",
-      "Always state the number of electron pairs before predicting molecular shape"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [],
     "keyDiagramDescription": "VSEPR shapes diagram showing linear (2 pairs), trigonal planar (3 pairs), tetrahedral (4 pairs), trigonal bipyramidal (5 pairs), and octahedral (6 pairs) arrangements with bond angles labeled",
     "pastPaperRefs": [
@@ -107,7 +72,7 @@
       "Examiner Report 2023: 'Candidates frequently stated that ionic compounds conduct electricity without mentioning mobility of ions' — always explain that ions must be free to move (molten/dissolved) for electrical conduction"
     ],
     "keyDiagram": "Students must master drawing dot-and-cross diagrams showing: outer shell electrons only, different symbols for electrons from different atoms (dots vs crosses), correct bonding arrangements, and any lone pairs. For ionic compounds, show electron transfer with arrows and write charges on resulting ions. For covalent compounds, show shared electron pairs between atoms. Practice drawing water (bent), ammonia (pyramidal), methane (tetrahedral), and carbon dioxide (linear) structures.",
-    "quickRecap": "Chemical bonds form when atoms achieve stable electron configurations. Ionic bonding involves electron transfer between metals and non-metals, creating oppositely charged ions. Covalent bonding involves electron sharing between non-metals. Metallic bonding involves delocalized electrons in a 'sea' around metal cations. Bond type determines physical properties like melting point, electrical conductivity, and solubility."
+    "quickRecap": "The Chemical bonding chapter covers the three main types of chemical bonding: ionic, covalent, and metallic. It includes molecular shapes, intermolecular forces including hydrogen bonding, and how different bonding types affect physical properties. This builds on the electronic structure concepts from earlier chapters."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -115,5 +80,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:30:23.417Z",
   "updated_at": "2026-04-06T04:30:23.417Z",
-  "enriched_at": "2026-04-06T16:11:43.687Z"
+  "enriched_at": "2026-04-06T16:11:43.687Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:45:11.676Z"
 }

@@ -9,36 +9,36 @@
     "title": "Other payables and other receivables",
     "readTime": "8 min",
     "keyPoints": [
-      "**Accruals** are expenses incurred during the accounting period but not yet paid, recorded as current liabilities",
-      "**Prepayments** are expenses paid in advance for future periods, recorded as current assets",
-      "**Other receivables** are amounts owed TO the business that are not trade debtors, such as rent receivable",
-      "**Other payables** are amounts owed BY the business that are not trade creditors, such as wages payable",
-      "Accruals increase expenses and increase liabilities in the statement of financial position",
-      "Prepayments reduce current period expenses and create assets in the statement of financial position",
-      "Year-end adjustments ensure expenses are matched to the correct accounting period following the **matching principle**",
-      "Insurance, rent, and telephone are common examples requiring accrual or prepayment adjustments",
-      "The **going concern concept** assumes the business will continue, justifying prepayment treatment as assets"
+      "Assets are the resources owned and controlled by a company",
+      "An increase in an asset is a debit and a decrease is a credit",
+      "Assets can be categorised between two types: Tangible and Intangible",
+      "Current Assets are assets which have a monetary value or can be converted into cash within 12 months",
+      "Non-Current Assets are also known as Fixed Assets, acquired to earn revenue for the company and used for more than 12 months without being intended for resale",
+      "Tangible assets can be divided into two categories: inventory (things a company sells) and fixed assets (things a company uses to make its products or provide services)",
+      "Intangible assets include things like patents, trademarks, brand recognition and goodwill",
+      "Current Liability is the amount of money owed to be paid within a specific timeframe",
+      "The basic accounting equation is: Assets = Capital + Liabilities"
     ],
     "definitions": [
       {
-        "term": "Accrual",
-        "definition": "An expense that has been incurred during the accounting period but has not yet been paid"
+        "term": "Assets",
+        "definition": "The resources owned and controlled by a company"
       },
       {
-        "term": "Prepayment",
-        "definition": "A payment made in advance for goods or services to be received in a future accounting period"
+        "term": "Current Assets",
+        "definition": "An asset which has a monetary value or can be converted into cash within 12 months. Examples include account receivables and cash"
       },
       {
-        "term": "Other receivables",
-        "definition": "Amounts owed to the business that are not trade debtors, such as rent receivable or insurance claims"
+        "term": "Non-Current Assets",
+        "definition": "Also known as Fixed Assets, these assets are acquired to earn revenue for the company and used for more than 12 months without being intended for resale. Examples include buildings and machinery, tools, and vehicles"
       },
       {
-        "term": "Other payables",
-        "definition": "Amounts owed by the business that are not trade creditors, such as accrued expenses or wages payable"
+        "term": "Tangible Assets",
+        "definition": "Something you can touch, like a building, equipment, or furniture in an office. Can be divided into inventory and fixed assets"
       },
       {
-        "term": "Matching principle",
-        "definition": "The accounting concept that expenses should be matched against the revenues of the same accounting period"
+        "term": "Intangible Assets",
+        "definition": "Things a company owns that can't be touched or seen. They include things like patents, trademarks, brand recognition and goodwill"
       }
     ],
     "howToAnswer": [
@@ -71,17 +71,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say accruals are assets — they are always liabilities representing amounts owed",
-      "Students often confuse accruals with prepayments — accruals are unpaid expenses, prepayments are paid in advance",
-      "Never include accruals and prepayments with trade debtors/creditors — they are separate items",
-      "Students forget to adjust the expense account — both the balance sheet AND income statement are affected",
-      "Never ignore timing — always check which accounting period the expense relates to"
+      "Confusing tangible and intangible assets classification",
+      "Incorrectly identifying current versus non-current assets based on the 12-month timeframe",
+      "Mixing up debit and credit entries for asset increases and decreases"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2, often worth 4-6 marks",
-      "Always show your workings when calculating monthly/daily amounts",
-      "Draw T-accounts to show the double entry effect clearly",
-      "Remember accruals increase both expenses and liabilities"
+      "Remember that tangible assets provide value to a company and can be sold or used as collateral for loans",
+      "It's harder to put a price on intangible assets compared to tangible assets, but they are still a valuable part of a company's overall assets"
     ],
     "formulas": [
       "Monthly expense = Annual expense ÷ 12",
@@ -116,7 +112,7 @@
       "Examiner Report 2022: 'Common error was placing prepayments and accruals in wrong sections of statement of financial position' — always classify prepaid expenses and accrued income as CURRENT ASSETS, accrued expenses and prepaid income as CURRENT LIABILITIES"
     ],
     "keyDiagram": "T-account diagram showing four scenarios: 1) Prepaid Expense (Asset side: 'Prepaid Insurance $X') 2) Accrued Expense (Liability side: 'Wages Owing $X') 3) Accrued Income (Asset side: 'Rent Receivable $X') 4) Prepaid Income (Liability side: 'Rent Received in Advance $X'). Each T-account should show the adjustment process from trial balance figure to final statement figures, with arrows indicating whether amounts are added or subtracted.",
-    "quickRecap": "Other payables are accrued expenses (amounts owed but not yet paid) and prepaid income (amounts received but not yet earned) - both are current liabilities. Other receivables are accrued income (amounts earned but not yet received) and prepaid expenses (amounts paid but not yet used) - both are current assets. Always adjust trial balance figures before preparing final statements. Remember: if it's owed TO you or paid BY you in advance = asset; if it's owed BY you or paid TO you in advance = liability."
+    "quickRecap": "Assets are resources owned and controlled by a company, classified as either tangible (can be touched) or intangible (cannot be touched). Current assets can be converted to cash within 12 months, while non-current assets are used for more than 12 months. Asset increases are debited and decreases are credited in accounting records."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -124,5 +120,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:38:50.371Z",
   "updated_at": "2026-04-06T03:38:50.371Z",
-  "enriched_at": "2026-04-06T16:06:42.263Z"
+  "enriched_at": "2026-04-06T16:06:42.263Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:27:11.622Z"
 }

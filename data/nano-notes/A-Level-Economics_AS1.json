@@ -9,37 +9,37 @@
     "title": "Basic Economic Ideas",
     "readTime": "8 min",
     "keyPoints": [
-      "**Scarcity** exists because human wants are unlimited but resources are finite, creating the fundamental economic problem",
-      "**Opportunity cost** is the value of the next best alternative foregone when making a choice",
-      "The **Production Possibility Frontier (PPF)** shows the maximum possible output combinations of two goods with given resources and technology",
-      "Points inside the PPF represent **inefficient production** where resources are unemployed or misallocated",
-      "Points on the PPF show **productive efficiency** where maximum output is achieved with available resources",
-      "Points outside the PPF are **unattainable** with current resources and technology",
-      "An outward shift of the PPF indicates **economic growth** due to increased resources or improved technology",
-      "**Economic systems** determine how the three basic questions are answered: what to produce, how to produce, for whom to produce",
-      "A **free market economy** relies on price mechanism and private ownership to allocate resources",
-      "A **command economy** uses central planning and government control to allocate resources"
+      "The basic economic problem is scarcity - wants are unlimited and resources are finite, so choices have to be made",
+      "Opportunity cost is the value of the next best alternative forgone when making a choice",
+      "Economic agents (consumers, producers, governments) must make choices due to finite resources",
+      "Production decisions involve three key questions: what to produce, how to produce it, and for whom to produce it",
+      "Ceteris paribus assumes all other things are held constant or equal when analyzing economic effects",
+      "Making decisions at the margin involves considering what the next step or action means for the consumer",
+      "In the short run at least one factor of production is fixed, in the long run all factors are variable",
+      "Positive statements are objective and can be tested with factual evidence",
+      "Normative statements are based on value judgements and are subjective",
+      "The factors of production are land, labour, capital and enterprise (CELL)"
     ],
     "definitions": [
       {
-        "term": "Scarcity",
-        "definition": "The fundamental economic problem arising from unlimited human wants but limited resources available to satisfy them"
+        "term": "Opportunity cost",
+        "definition": "The value of the next best alternative forgone"
       },
       {
-        "term": "Opportunity Cost",
-        "definition": "The value of the next best alternative foregone when making an economic choice"
+        "term": "Ceteris paribus",
+        "definition": "A key assumption made in economics that assumes all other things are held constant or are equal"
       },
       {
-        "term": "Production Possibility Frontier",
-        "definition": "A curve showing the maximum possible output combinations of two goods that can be produced with given resources and technology"
+        "term": "Law of diminishing marginal returns",
+        "definition": "Economic theory that suggests each extra unit of a good or service consumed gives the consumer less utility"
       },
       {
-        "term": "Economic System",
-        "definition": "The way in which a country organizes the production and distribution of goods and services"
+        "term": "Positive statements",
+        "definition": "Objective statements that can be tested with factual evidence, and can consequently be rejected or accepted"
       },
       {
-        "term": "Productive Efficiency",
-        "definition": "When maximum output is produced from given inputs, represented by any point on the PPF"
+        "term": "Normative statements",
+        "definition": "Statements based on value judgements that are subjective and based on opinion rather than factual evidence"
       }
     ],
     "howToAnswer": [
@@ -72,17 +72,13 @@
       ]
     },
     "commonMistakes": [
-      "Never define opportunity cost as 'what you give up' — always specify 'the next best alternative foregone'",
-      "Students often confuse productive efficiency (on PPF) with allocative efficiency (optimal combination for society)",
-      "Don't say PPF shows 'what should be produced' — it shows what CAN be produced with given resources",
-      "Never calculate opportunity cost by adding — always use subtraction to find what is foregone",
-      "Students wrongly think points inside PPF are impossible — they are possible but inefficient"
+      "Confusing positive and normative statements - look for key words like 'will/is' for positive and 'should' for normative",
+      "Forgetting that opportunity cost applies regardless of original price - it's about the value forgone",
+      "Not understanding that scarcity applies to all economic agents, not just individuals"
     ],
     "examinerTips": [
-      "PPF diagrams appear in 80% of Paper 2 exams — always draw and label axes clearly",
-      "For opportunity cost calculations, show your working step by step for method marks",
-      "Use Pakistani examples: wheat vs cotton production, or education vs healthcare spending",
-      "Economic growth questions often link to PPF shifts — mention both increased resources AND improved technology"
+      "Look for words such as 'will' and 'is' to identify positive statements",
+      "Look for words such as 'should' to identify normative statements, especially if suggesting one action is more credible than another"
     ],
     "formulas": [
       "Opportunity Cost = Quantity of good Y foregone ÷ Quantity of good X gained"
@@ -112,7 +108,7 @@
       "Examiner Report 2023: 'Candidates frequently listed factors of production without explaining their economic role' — always explain how each factor contributes to production process, not just identify land, labor, capital and enterprise"
     ],
     "keyDiagram": "Production Possibility Curve (PPC): Draw a curved line bowed outward from the origin on a graph with two goods on each axis (e.g., cars vs computers). Mark points on the curve to show maximum efficient production combinations, a point inside the curve showing underutilized resources, and a point outside showing currently unattainable production. Label the axes clearly and include arrows showing the direction of economic growth (outward shift of entire curve). Always include labels for 'efficient production', 'inefficient production', and 'unattainable production' with specific points marked A, B, and C respectively.",
-    "quickRecap": "The basic economic problem stems from unlimited wants but limited resources, creating scarcity. This forces choices, and every choice has an opportunity cost - the value of the next best alternative given up. Resources (factors of production) are land, labor, capital, and enterprise. The Production Possibility Curve shows maximum output combinations and illustrates opportunity cost through the trade-offs between producing different goods."
+    "quickRecap": "Economics starts with the basic problem of scarcity - unlimited wants but finite resources requiring choices. Every choice has an opportunity cost (the value of the next best alternative forgone). Economic agents make decisions at the margin considering additional costs and benefits. Positive statements can be tested objectively while normative statements involve value judgements and opinions."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -120,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:07:11.764Z",
   "updated_at": "2026-04-06T05:07:11.765Z",
-  "enriched_at": "2026-04-06T16:07:28.502Z"
+  "enriched_at": "2026-04-06T16:07:28.502Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:51:07.474Z"
 }

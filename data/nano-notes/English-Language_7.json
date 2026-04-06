@@ -9,31 +9,31 @@
     "title": "Directed Writing",
     "readTime": "8 min",
     "keyPoints": [
-      "**Format** must be appropriate to the text type (letter includes address, salutation, complimentary close; email includes To/From/Subject; speech includes addressing audience)",
-      "**Audience awareness** - language register and tone must suit the intended reader (formal for officials, persuasive for general public)",
-      "**Purpose** must be clearly fulfilled throughout - inform, persuade, argue, or advise as specified in the question",
-      "**Content points** from the stimulus text must be selected, developed and used relevantly to support your argument",
-      "**Personal response** and evaluation of ideas shows higher-order thinking beyond simple repetition of stimulus material",
-      "**Discursive approach** presents balanced arguments with clear reasoning when task requires discussion of different viewpoints",
-      "**Language variety** includes sophisticated vocabulary, varied sentence structures, and rhetorical devices appropriate to text type",
-      "**Logical structure** with clear introduction, developed paragraphs, and effective conclusion that reinforces main argument"
+      "Directed Writing is Section 1 of Paper 1 Writing, worth 30 marks total",
+      "Candidates write a response of 200-300 words for the compulsory writing task",
+      "The 30 marks are allocated as follows: Task Fulfilment 15 marks, Language 15 marks",
+      "Good understanding of purpose and clear awareness of situation and audience are required",
+      "Format must be entirely appropriate and all required points developed in detail, fully amplified and well organised",
+      "Tone and register must be entirely appropriate to the task",
+      "Language should be highly accurate with sentence structures varied for particular effects",
+      "Paragraphs must have unity, are linked, and show evidence of planning"
     ],
     "definitions": [
       {
+        "term": "Task Fulfilment",
+        "definition": "Worth 15 marks - requires good understanding of purpose, clear awareness of situation and audience, entirely appropriate format, all required points developed in detail, fully amplified and well organised, given information well used to justify personal opinion and interpretation, and tone and register entirely appropriate"
+      },
+      {
+        "term": "Language",
+        "definition": "Worth 15 marks - requires highly accurate writing with sentence structures varied for particular effects, verb forms largely correct with appropriate tenses consistently used, vocabulary wide and precise, punctuation accurate and helpful, and paragraphs with unity that are linked"
+      },
+      {
         "term": "Directed Writing",
-        "definition": "A writing task that requires candidates to write in a specific format, for a particular audience and purpose, using stimulus material as a foundation"
+        "definition": "Section 1 of Paper 1 Writing where candidates are presented with one compulsory writing task and write a response of 200-300 words"
       },
       {
-        "term": "Discursive Writing",
-        "definition": "Writing that presents different viewpoints on an issue in a balanced way, exploring various perspectives before reaching a reasoned conclusion"
-      },
-      {
-        "term": "Register",
-        "definition": "The level of formality in language appropriate to the audience, purpose and context of the writing task"
-      },
-      {
-        "term": "Stimulus Material",
-        "definition": "The provided text(s) containing information, ideas and viewpoints that candidates must use as a basis for their directed writing response"
+        "term": "Assessment Objectives",
+        "definition": "W1 Articulate experience and express what is thought, felt and imagined; W2 Sequence facts, ideas and opinions; W3 Use a range of appropriate vocabulary; W4 Use register appropriate to audience and context; W5 Make accurate use of spelling, punctuation and grammar"
       }
     ],
     "howToAnswer": [
@@ -67,18 +67,16 @@
       ]
     },
     "commonMistakes": [
-      "Never write in the wrong format - always check whether it's a letter, email, or speech and include ALL required format features",
-      "Students often simply copy chunks from stimulus material instead of selecting, adapting and developing relevant points",
-      "Avoid using the same register throughout - formal letters to officials need different language than speeches to students",
-      "Never ignore the audience - writing 'Hello guys' in a formal letter to a government minister loses format marks",
-      "Students often present only one viewpoint instead of evaluating different perspectives as required by the question"
+      "Commonly confused words, for example, their/there, seat/sit",
+      "Incorrect use of possessive pronouns",
+      "Not writing in full sentences, even in informal writing – for example, 'Hope your family are all well' rather than 'I hope your family are all well'",
+      "Incorrect tenses and agreement",
+      "Not developing the bullet points as evenly as possible in Section 1 tasks"
     ],
     "examinerTips": [
-      "This question appears in Paper 2 Question 1 and is worth 25 marks - spend 45 minutes including 10 minutes planning",
-      "Always read the stimulus material twice and highlight key points before starting to write",
-      "Use Pakistani contexts and examples to make your writing more authentic and engaging",
-      "Plan your argument structure before writing - introduction, 2-3 main points with development, conclusion",
-      "Save 5 minutes to check format features, spelling and basic grammar errors"
+      "It is essential to read the question carefully and be clear about its particular focus",
+      "In Section 1 tasks it is important to develop the bullet points as evenly as possible",
+      "Concentration on correct tenses and agreement would improve candidates' writing in both sections"
     ],
     "formulas": [],
     "keyDiagramDescription": "Create a planning template showing: Format checklist (address/salutation for letters, greeting for speeches), Content boxes for main arguments with supporting evidence, and Language register reminders for different audiences",
@@ -107,7 +105,7 @@
       "Examiner Report 2023: 'Candidates frequently exceeded or fell short of word limits, affecting their marks significantly' — always plan your writing to meet the specified word count of 600-900 words"
     ],
     "keyDiagram": "Create a planning template showing the standard structure: Header (text type, audience, purpose), Introduction (hook + thesis), Body Paragraphs (topic sentence + evidence + analysis), Counter-argument section, Conclusion (restate thesis + broader implications). Include arrows showing logical flow and boxes indicating where to incorporate persuasive techniques specific to the text type (rhetorical questions for speeches, statistics for reports, anecdotes for articles).",
-    "quickRecap": "Directed writing requires you to write 600-900 words in a specific format (article, speech, letter, report) for a particular audience. Always identify your purpose, maintain appropriate register throughout, and structure your response with clear introduction, developed body paragraphs with evidence, and strong conclusion. Plan before writing to ensure you meet word count and include text-type specific features."
+    "quickRecap": "Directed Writing is the compulsory Section 1 task worth 30 marks, requiring a 200-300 word response. Marks are split equally between Task Fulfilment (15 marks) and Language (15 marks). Success requires appropriate format, detailed development of all required points, and highly accurate language with varied sentence structures and appropriate tone and register."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -115,5 +113,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:50:16.502Z",
   "updated_at": "2026-04-06T03:50:16.502Z",
-  "enriched_at": "2026-04-06T16:09:08.276Z"
+  "enriched_at": "2026-04-06T16:09:08.276Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:23:41.328Z"
 }

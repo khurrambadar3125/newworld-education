@@ -9,37 +9,37 @@
     "title": "Boolean logic",
     "readTime": "8 min",
     "keyPoints": [
-      "**Logic gates** are electronic circuits that process binary inputs to produce a single binary output",
-      "**NOT gate** produces output 1 when input is 0, and output 0 when input is 1 (inverter)",
-      "**AND gate** produces output 1 only when all inputs are 1, otherwise output is 0",
-      "**OR gate** produces output 1 when at least one input is 1, output is 0 only when all inputs are 0",
-      "**NAND gate** produces the opposite output of an AND gate (NOT AND)",
-      "**NOR gate** produces the opposite output of an OR gate (NOT OR)",
-      "**XOR gate** produces output 1 when inputs are different, output 0 when inputs are the same",
-      "**Truth tables** show all possible input combinations and their corresponding outputs for logic gates",
-      "**Logic expressions** use operators AND (.), OR (+), and NOT (bar over variable) to represent Boolean operations",
-      "Problem statements can be converted to logic expressions by identifying conditions that must be true"
+      "Binary system uses base 2 with only 0s and 1s, used to store data in registers and process data in logic gates and computers",
+      "Hexadecimal system uses base 16 with digits 0 to 9 and alphabets A to F, used in colour codes, error codes and IP & MAC addresses",
+      "To convert binary to hexadecimal, break the binary number into sets of 4 bits and convert each group",
+      "Overflow error occurs when the value is greater than the maximum value of the register - when carrying out a calculation that produces a value too large for the computer's allocated word size",
+      "Each shift left is equivalent to multiplying the binary number by 2^n, each shift right is equivalent to dividing the binary number by 2^n",
+      "Two's complement format is used to represent negative binary numbers where the leftmost bit is changed to a negative value",
+      "To convert negative denary to binary in two's complement format: write the positive number in binary, invert all values, then add 1",
+      "ASCII is a 7-bit code for English language only, Extended ASCII is 8-bit for English with some non-English symbols, Unicode is 16/32-bit for multiple languages",
+      "Sound waves are sampled using an ADC where sampling is determining the amplitude after set intervals to give an approximate representation",
+      "Sample rate is the number of samples taken per second, sampling resolution is the number of bits required per sample"
     ],
     "definitions": [
       {
-        "term": "Logic gate",
-        "definition": "An electronic circuit that performs a logical operation on one or more binary inputs to produce a single binary output"
+        "term": "Character set",
+        "definition": "A list of all characters and symbols represented by a computer where each character and symbol has a unique value"
       },
       {
-        "term": "Truth table",
-        "definition": "A table showing all possible combinations of inputs to a logic gate or circuit and the corresponding outputs"
+        "term": "Overflow error",
+        "definition": "The result of carrying out a calculation that produces a value too large for the computer's allocated word size"
       },
       {
-        "term": "Boolean expression",
-        "definition": "A mathematical expression using Boolean operators (AND, OR, NOT) and variables that can only have values 0 or 1"
+        "term": "Sampling",
+        "definition": "Used by determining the amplitude of the sound after set intervals. This gives an approximate representation of the sound wave"
       },
       {
-        "term": "NAND gate",
-        "definition": "A logic gate that produces the inverted output of an AND gate, giving output 0 only when all inputs are 1"
+        "term": "Sample rate",
+        "definition": "The number of samples taken per second"
       },
       {
-        "term": "XOR gate",
-        "definition": "A logic gate that produces output 1 when the inputs are different and output 0 when the inputs are the same"
+        "term": "Sampling resolution",
+        "definition": "The number of bits required per sample (i.e: bit depth)"
       }
     ],
     "howToAnswer": [
@@ -72,17 +72,14 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse NAND with AND — NAND gives opposite output to AND gate",
-      "Students often mix up XOR and OR — XOR gives 0 when both inputs are the same",
-      "Never write logic expressions using words — always use symbols: . for AND, + for OR, bar for NOT",
-      "Students frequently forget to work step by step in complex expressions — always evaluate brackets first",
-      "Never draw logic gate symbols incorrectly — learn the exact shapes for each gate type"
+      "Losing leftmost 1 bits when shifting left causes an error because the limit of maximum number of left shifts possible will have been exceeded",
+      "Losing rightmost 1 bits when shifting right causes an error because the limit of maximum number of right shifts possible will have been exceeded",
+      "Not recognizing overflow error when the extra carry in binary addition indicates the answer is greater than the maximum register value",
+      "Forgetting that in two's complement the leftmost bit determines the sign of the number"
     ],
     "examinerTips": [
-      "Boolean logic appears in every Paper 2 exam, usually worth 8-12 marks",
-      "Always show working when completing truth tables for partial credit",
-      "Draw logic gate symbols neatly with clear input and output labels",
-      "Check your truth table has 2^n rows where n is the number of input variables"
+      "When converting binary to hexadecimal, always break into sets of 4 bits first",
+      "Remember that hexadecimal is easily understandable, easier to debug, and takes less space on the screen"
     ],
     "formulas": [
       "Number of rows in truth table = 2^n (where n = number of inputs)",
@@ -114,7 +111,7 @@
       "Examiner Report 2023: 'Common error was incorrect simplification, removing essential terms' — verify simplified expressions by substituting test values back into both original and simplified forms to ensure they're equivalent"
     ],
     "keyDiagram": "Students must be able to draw and label a truth table with input columns (A, B, C, etc.) clearly headed, all possible input combinations listed systematically (000, 001, 010, 011, etc.), and output column(s) properly calculated. Include logic gate symbols (AND, OR, NOT, NAND, NOR, XOR) with correct IEEE standard symbols, proper input/output labels, and the ability to trace signal flow from inputs through gates to final output.",
-    "quickRecap": "Boolean logic uses AND (.), OR (+), and NOT (̅) operations on binary values. Sum-of-products expressions combine product terms with OR operators, where each product term represents a row in the truth table where output = 1. Always use proper notation: A̅ for NOT A, A.B for A AND B, A+B for A OR B. Verify answers by testing with sample input values."
+    "quickRecap": "Binary uses base 2 for computer processing, while hexadecimal uses base 16 for efficient data representation in addresses and codes. Overflow errors occur when calculations exceed register capacity, and logical shifts multiply or divide by powers of 2. Two's complement represents negative numbers, and various encoding systems like ASCII and Unicode convert text to binary for computer processing."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -122,5 +119,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:46:54.420Z",
   "updated_at": "2026-04-06T03:46:54.420Z",
-  "enriched_at": "2026-04-06T16:06:22.238Z"
+  "enriched_at": "2026-04-06T16:06:22.238Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:44:59.315Z"
 }

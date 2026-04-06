@@ -8,40 +8,8 @@
   "note_data": {
     "title": "History and Importance of the Hadiths",
     "readTime": "8 min",
-    "keyPoints": [
-      "**Hadith** are the sayings, actions and silent approvals of Prophet Muhammad (pbuh)",
-      "The **collection of hadith** began during the Prophet's lifetime when some companions wrote down his sayings",
-      "**Imam Bukhari** (810-870 CE) compiled Sahih al-Bukhari, considered the most authentic collection of hadith after the Quran",
-      "**Imam Muslim** (815-875 CE) compiled Sahih Muslim, the second most authentic hadith collection",
-      "Bukhari examined over **600,000 hadith** but only included 7,275 in his collection due to strict authentication criteria",
-      "Muslim scholars used the **science of hadith criticism** (ilm al-hadith) to verify the authenticity of narrations",
-      "The **chain of transmission** (isnad) and the **text of the hadith** (matn) were both carefully examined",
-      "Hadith provide **practical guidance** for implementing Quranic teachings in daily life",
-      "Hadith explain the **context and meaning** of many Quranic verses",
-      "The **preservation of hadith** was essential for understanding and following the Sunnah of the Prophet"
-    ],
-    "definitions": [
-      {
-        "term": "Hadith",
-        "definition": "The sayings, actions and silent approvals of Prophet Muhammad (pbuh) that provide guidance for Muslims"
-      },
-      {
-        "term": "Isnad",
-        "definition": "The chain of transmission that traces a hadith back to its original source through reliable narrators"
-      },
-      {
-        "term": "Matn",
-        "definition": "The actual text or content of a hadith, which must be consistent with Quranic teachings"
-      },
-      {
-        "term": "Sahih",
-        "definition": "The highest grade of hadith authenticity, meaning the hadith is sound and reliable"
-      },
-      {
-        "term": "Sunnah",
-        "definition": "The way of life and practices of Prophet Muhammad (pbuh) as recorded in authentic hadith"
-      }
-    ],
+    "keyPoints": [],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -67,19 +35,8 @@
         "Mark 4: Preserved Sunnah for future generations"
       ]
     },
-    "commonMistakes": [
-      "Never confuse hadith with Quran - hadith are sayings of the Prophet, not divine revelation",
-      "Students often mix up Bukhari and Muslim - remember Bukhari came first and is considered more authentic",
-      "Don't say hadith were only collected after the Prophet's death - collection began during his lifetime",
-      "Never ignore the importance of isnad - the chain of transmission is crucial for authenticity",
-      "Students sometimes forget that weak hadith exist - not all hadith are equally reliable"
-    ],
-    "examinerTips": [
-      "This topic appears frequently in Paper 2 questions about sources of Islamic law",
-      "Always mention specific numbers when discussing Bukhari's collection (600,000 examined, 7,275 accepted)",
-      "Learn the names and dates of major hadith compilers for full marks",
-      "Understand the technical terms (isnad, matn, sahih) as they show detailed knowledge"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [],
     "keyDiagramDescription": "A flowchart showing the hadith collection process: Prophet's sayings → Companions' memory/writing → Early collections → Critical examination of isnad and matn → Final authenticated collections (Bukhari, Muslim, etc.)",
     "pastPaperRefs": [
@@ -106,7 +63,7 @@
       "Examiner Report 2024: 'Weak responses gave vague examples of application' — provide specific, detailed examples of how Muslims practice Hadith teachings in daily life, not general statements about 'being good'"
     ],
     "keyDiagram": "Create a two-column comparison chart with 'Hadith Text' on the left and 'Practical Application' on the right. Include at least 4-5 major Hadiths (about faith, prayer, charity, character, and community) with specific modern examples of how each is practiced. Add arrows connecting belief concepts to daily actions, and include a bottom section showing how Hadiths complement Quranic teachings in guiding Muslim behavior.",
-    "quickRecap": "Hadiths are the recorded sayings and actions of Prophet Muhammad that provide practical guidance for Muslim beliefs and daily life. They rank as the second most important source of Islamic law after the Quran. Key Hadiths cover the five pillars, moral character, and social responsibilities. In exams, always quote the Hadith accurately, explain the belief it teaches, and provide specific examples of how Muslims apply it today."
+    "quickRecap": "The verified source text does not contain information about the History and Importance of Hadiths. The source focuses on Major themes of the Quran with various Quranic passages for examination purposes."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -114,5 +71,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:45:47.392Z",
   "updated_at": "2026-04-05T20:45:47.392Z",
-  "enriched_at": "2026-04-06T15:59:16.726Z"
+  "enriched_at": "2026-04-06T15:59:16.726Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:17:57.472Z"
 }

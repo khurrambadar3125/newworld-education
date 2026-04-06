@@ -9,37 +9,37 @@
     "title": "Programming",
     "readTime": "8 min",
     "keyPoints": [
-      "**Data types** include integer, real/float, Boolean, character, and string - each stores different types of data",
-      "**Input** operations read data from user/file using commands like INPUT or READ, **output** operations display data using PRINT or OUTPUT",
-      "**Arithmetic operators** include + (addition), - (subtraction), * (multiplication), / (division), MOD (remainder), DIV (integer division)",
-      "**Sequence** executes statements one after another, **selection** uses IF-THEN-ELSE to choose paths, **iteration** repeats code using FOR, WHILE, or REPEAT loops",
-      "**Totalling** adds values using a running total variable, **counting** increments a counter variable inside loops",
-      "**String manipulation** includes concatenation (&), LENGTH(), MID(), LEFT(), RIGHT() functions to process text data",
-      "**Nested statements** place one control structure inside another, such as IF statements inside loops or loops inside other loops",
-      "**Subroutines** are named blocks of code that can be called repeatedly - procedures perform actions, functions return values",
-      "**Arrays** store multiple values of the same data type using an index to access individual elements",
-      "**File handling** includes OPENFILE, READFILE, WRITEFILE, CLOSEFILE operations to store and retrieve data permanently"
+      "Binary system is used to process data in logic gates/transistors, store data in registers, and process data on the computer",
+      "Denary uses base 10 system with digits 0 to 9, Binary uses base 2 system with 0s and 1s, Hexadecimal uses base 16 system with digits 0 to 9 and alphabets A to F",
+      "Hexadecimal is used in colour codes, error codes and IP & MAC addresses because it is easily understandable, easier to debug, and takes less space on the screen",
+      "Each shift left is equivalent to multiplying the binary number by 2^n (where n is the number of places shifted)",
+      "Each shift right is equivalent to dividing the binary number by 2^n (where n is the number of places shifted)",
+      "Two's complement format is used to represent negative binary numbers where the leftmost bit is changed to a negative value and determines the sign of the number",
+      "Overflow error occurs when the value is greater than the maximum value of the register",
+      "A character set is a list of all characters and symbols represented by a computer where each character and symbol has a unique value",
+      "A sound wave is sampled for sound to be converted to binary using an ADC by determining the amplitude of the sound after set intervals",
+      "The accuracy of a sound file increases with greater sample rates and sampling resolutions, but so does the file size"
     ],
     "definitions": [
       {
-        "term": "Algorithm",
-        "definition": "A sequence of step-by-step instructions to solve a problem"
+        "term": "Character set",
+        "definition": "A list of all characters and symbols represented by a computer"
       },
       {
-        "term": "Variable",
-        "definition": "A named storage location in memory that holds a value which can change during program execution"
+        "term": "Overflow error",
+        "definition": "The result of carrying out a calculation that produces a value too large for the computer's allocated word size"
       },
       {
-        "term": "Array",
-        "definition": "A data structure that stores multiple values of the same data type using a single identifier with index positions"
+        "term": "Sampling",
+        "definition": "Used by determining the amplitude of the sound after set intervals. This gives an approximate representation of the sound wave"
       },
       {
-        "term": "Loop",
-        "definition": "A programming construct that repeats a block of code until a specified condition is met"
+        "term": "Sample rate",
+        "definition": "The number of samples taken per second"
       },
       {
-        "term": "Subroutine",
-        "definition": "A named block of code that performs a specific task and can be called from other parts of the program"
+        "term": "Sampling resolution",
+        "definition": "The number of bits required per sample (i.e: bit depth)"
       }
     ],
     "howToAnswer": [
@@ -72,17 +72,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'loop' - always specify FOR loop, WHILE loop, or REPEAT loop for full marks",
-      "Students forget to initialize totalling variables to 0 before the loop starts",
-      "Writing array[5] instead of array[1 TO 5] when declaring array size",
-      "Confusing procedures (perform actions) with functions (return values) in subroutine questions",
-      "Not using correct pseudocode syntax - must use ←, INPUT, OUTPUT, not = or print"
+      "If the leftmost 1 bits are lost while shifting to the left, an error will occur because the limit of the maximum number of left shifts possible will have been exceeded",
+      "If the rightmost 1 bits are lost while shifting to the right, an error will occur because the limit of the maximum number of right shifts possible will have been exceeded",
+      "The extra carry in the answer indicates that overflow error has occurred when the answer is greater than 255 in an 8-bit register"
     ],
     "examinerTips": [
-      "Programming appears in Paper 2 Section B worth 15-20 marks every year",
-      "Always show variable initialization clearly in algorithm questions",
-      "Use correct pseudocode syntax from the syllabus - marks lost for incorrect notation",
-      "Trace tables often follow algorithm questions - practice step-by-step execution"
+      "For binary to hexadecimal conversion, break into sets of 4 binary digits",
+      "When converting negative denary to binary in two's complement format, first write the positive value in binary, then invert all values, then add 1 to the inverted binary value"
     ],
     "formulas": [
       "Average = Total / Count",
@@ -115,7 +111,7 @@
       "Examiner Report 2024: 'Candidates frequently omitted validation loops in their algorithms' — always include WHILE or REPEAT loops for input validation, not just single IF statements for error checking"
     ],
     "keyDiagram": "Students must be able to draw a flowchart showing input validation with decision diamonds for range checks (e.g., 1-14 for day number), type checks (integer/string validation), error message outputs, and loop structures that return to input when validation fails. The flowchart should show the complete validation process from initial input through successful validation to program continuation, including specific programming constructs like IF-THEN-ELSE statements and WHILE/REPEAT loops.",
-    "quickRecap": "Programming concepts focus on procedures (grouped statements under one identifier), parameters (data passed to procedures), and input validation (range/type checks with loops). Functions always return values while procedures may not. High-level language features for readability include meaningful identifiers, comments, and modular structure. Always include validation loops, not just single error checks, in algorithms."
+    "quickRecap": "Binary system uses base 2 for computer processing while hexadecimal uses base 16 for more compact representation. Two's complement format represents negative numbers with the leftmost bit as negative. Overflow errors occur when calculations exceed the register's maximum value, and logical shifts multiply or divide by powers of 2."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -123,5 +119,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:46:09.488Z",
   "updated_at": "2026-04-06T03:46:09.488Z",
-  "enriched_at": "2026-04-06T16:09:17.060Z"
+  "enriched_at": "2026-04-06T16:09:17.060Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:47:08.519Z"
 }

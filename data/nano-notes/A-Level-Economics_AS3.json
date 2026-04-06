@@ -9,36 +9,37 @@
     "title": "Government microeconomic intervention",
     "readTime": "8 min",
     "keyPoints": [
-      "**Maximum prices** are set below market equilibrium to make goods more affordable, creating excess demand and shortages",
-      "**Minimum prices** are set above market equilibrium to protect producers, creating excess supply and surpluses",
-      "**Indirect taxes** shift supply curve leftward, increasing market price and reducing quantity traded",
-      "**Subsidies** shift supply curve rightward, decreasing market price and increasing quantity traded",
-      "**Market failure** occurs when free market allocation of resources is inefficient, requiring government intervention",
-      "**Negative externalities** arise when third parties suffer costs not reflected in market price, leading to overproduction",
-      "**Positive externalities** occur when third parties receive benefits not reflected in market price, leading to underproduction",
-      "**Deadweight loss** represents the welfare loss to society from government intervention or market failure",
-      "Government intervention aims to correct market failures but may create new inefficiencies"
+      "The basic economic problem is scarcity - wants are unlimited and resources are finite, so choices have to be made",
+      "Opportunity cost is the value of the next best alternative forgone when making a choice",
+      "Economic agents (consumers, producers and governments) all face opportunity cost decisions due to finite resources",
+      "Three fundamental production questions: What to produce (determined by consumer preferences), How to produce it (producers seek profits and minimize costs), For whom to produce it (those with greatest purchasing power)",
+      "Ceteris paribus assumes all other things are held constant or equal when analyzing economic effects",
+      "The law of diminishing marginal returns states that each extra unit of a good consumed gives the consumer less utility",
+      "In the short run, at least one factor of production is fixed, limiting response to price changes",
+      "In the long run, all factors of production are variable, allowing firms to increase capacity",
+      "Positive statements are objective and can be tested with factual evidence - look for words like 'will' and 'is'",
+      "Normative statements are based on value judgements and opinion - look for words like 'should' and suggestions that one action is better than another"
     ],
     "definitions": [
       {
-        "term": "Maximum price",
-        "definition": "A price ceiling set by government below the free market equilibrium price to make goods more affordable for consumers"
+        "term": "Opportunity cost",
+        "definition": "The value of the next best alternative forgone"
       },
       {
-        "term": "Minimum price",
-        "definition": "A price floor set by government above the free market equilibrium price to ensure producers receive a minimum income"
+        "term": "Ceteris paribus",
+        "definition": "A key assumption made in economics that assumes all other things are held constant or are equal"
       },
       {
-        "term": "Market failure",
-        "definition": "When the free market mechanism fails to achieve an efficient allocation of resources, either through complete market failure or partial market failure"
+        "term": "Law of diminishing marginal returns",
+        "definition": "Each extra unit of a good or service consumed gives the consumer less utility"
       },
       {
-        "term": "Negative externality",
-        "definition": "A cost imposed on a third party who is not involved in the production or consumption decision, leading to social cost exceeding private cost"
+        "term": "Positive statements",
+        "definition": "Objective statements that can be tested with factual evidence, and can consequently be rejected or accepted"
       },
       {
-        "term": "Subsidy",
-        "definition": "A payment made by government to producers to encourage production and consumption of a particular good or service"
+        "term": "Normative statements",
+        "definition": "Statements based on value judgements that are subjective and based on opinion rather than factual evidence"
       }
     ],
     "howToAnswer": [
@@ -73,18 +74,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say maximum prices increase supply - they create shortages by reducing incentive to produce",
-      "Students often confuse maximum and minimum prices - remember maximum = ceiling (low), minimum = floor (high)",
-      "Don't ignore the welfare effects - always mention deadweight loss in evaluation questions",
-      "Never say taxes only affect consumers - they affect both consumer and producer surplus",
-      "Students forget to mention enforcement costs and black markets as problems with price controls"
+      "Confusing positive and normative statements - remember positive statements can be tested while normative are based on opinion",
+      "Forgetting that opportunity cost applies to all economic agents, not just consumers",
+      "Not understanding that ceteris paribus is essential for isolating the effects of one variable"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2 - especially price controls and taxation",
-      "Always draw labelled diagrams for analysis questions - they can earn up to 4 marks",
-      "Use Pakistani examples: wheat subsidies, minimum wage for agricultural workers, fuel price controls",
-      "For externality questions, distinguish clearly between private and social costs/benefits",
-      "In evaluation, consider both intended and unintended consequences of intervention"
+      "Look for key words: 'will' and 'is' indicate positive statements, 'should' indicates normative statements",
+      "Remember that making decisions at the margin involves considering what the additional cost or benefit will be"
     ],
     "formulas": [
       "Social Cost = Private Cost + External Cost",
@@ -116,7 +112,7 @@
       "Examiner Report 2023: 'Weak understanding of tax incidence shown' — remember that the burden of indirect taxes is shared between consumers and producers depending on price elasticity of demand"
     ],
     "keyDiagram": "Supply and demand diagram showing government intervention effects. Draw downward-sloping demand curve and upward-sloping supply curve intersecting at equilibrium. For taxes: shift supply left/up, show new higher price and lower quantity, mark tax per unit and tax burden split. For subsidies: shift supply right/down, show lower price and higher quantity, mark subsidy per unit. For price controls: draw horizontal line at controlled price, show resulting shortage (maximum price) or surplus (minimum price).",
-    "quickRecap": "Government intervenes in markets through taxes (increase prices, reduce consumption), subsidies (decrease prices, increase consumption), and price controls (maximum prices create shortages, minimum prices create surpluses). Interventions aim to correct market failures but create unintended consequences. Tax burden depends on price elasticity - inelastic demand means consumers bear more burden."
+    "quickRecap": "Economics deals with scarcity where unlimited wants meet finite resources, creating opportunity cost. Economic agents must make choices about what, how, and for whom to produce. Positive statements can be tested objectively while normative statements are based on value judgements. The law of diminishing marginal returns affects decision-making at the margin."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -124,5 +120,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:08:03.654Z",
   "updated_at": "2026-04-06T05:08:03.654Z",
-  "enriched_at": "2026-04-06T16:08:12.115Z"
+  "enriched_at": "2026-04-06T16:08:12.115Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:51:33.961Z"
 }

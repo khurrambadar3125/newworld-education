@@ -9,37 +9,37 @@
     "title": "Financial Information",
     "readTime": "8 min",
     "keyPoints": [
-      "**Cash flow** is the money flowing in and out of a business over a period of time",
-      "A **cash flow forecast** predicts the cash inflows and outflows for future months",
-      "**Net cash flow** = Cash inflows - Cash outflows for each month",
-      "**Opening balance** + Net cash flow = **Closing balance** for each month",
-      "**Income statement** shows the profit or loss made by a business over a period of time",
-      "**Revenue** is the total income received from selling goods or services",
-      "**Cost of sales** includes costs directly involved in making the product",
-      "**Gross profit** = Revenue - Cost of sales",
-      "**Net profit** = Gross profit - Expenses",
-      "**Working capital** = Current assets - Current liabilities"
+      "The aim of a business in the private sector is to survive by making a profit",
+      "Primary production involves acquiring raw materials such as metals, coal, oil, rubber, foodstuffs and fish - sometimes known as extractive production",
+      "Secondary production is the manufacturing and assembly process, converting raw materials into components and assembling the product",
+      "Tertiary production refers to commercial services that support production and distribution process, including insurance, transport, advertising, warehousing and retail",
+      "All limited companies are incorporated, meaning they can sue or own assets in their own right and owners have limited liability",
+      "A public limited company (PLC) can sell its shares on the Stock Market, while a private limited company (Ltd) cannot",
+      "Sole traders do not have a separate legal existence from their owner and have unlimited liability for the firm's debts",
+      "Partnerships are businesses owned by two or more people with a deed of partnership contract stating capital contributions and profit sharing",
+      "Private limited companies are easy and inexpensive to set up but lack capital due to no share issue",
+      "Public limited companies can raise large amounts of capital from share issues and benefit from economies of scale"
     ],
     "definitions": [
       {
-        "term": "Cash flow",
-        "definition": "The movement of money into and out of a business over a period of time"
+        "term": "Market share",
+        "definition": "a percentage of overall sales in an industry"
       },
       {
-        "term": "Net cash flow",
-        "definition": "The difference between cash inflows and cash outflows in a given period"
+        "term": "Incorporated",
+        "definition": "firm with separate legal existence"
       },
       {
-        "term": "Income statement",
-        "definition": "A financial document that shows the revenue, costs and profit or loss of a business over a period of time"
+        "term": "Audit",
+        "definition": "an independent check on the accounts of the company"
       },
       {
-        "term": "Gross profit",
-        "definition": "Revenue minus cost of sales"
+        "term": "Unlimited liability",
+        "definition": "owners are personally liable for the firm's debts, and may have to pay them out of their own pocket"
       },
       {
-        "term": "Net profit",
-        "definition": "Gross profit minus expenses"
+        "term": "Sleeping partner",
+        "definition": "who invests in the business but does not have dealings in the day to day running of the enterprise"
       }
     ],
     "howToAnswer": [
@@ -74,17 +74,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'cash flow forecast shows profit' — it shows cash movements, not profit",
-      "Students confuse revenue with profit — revenue is total income before costs",
-      "Don't mix up gross profit and net profit — gross profit is before expenses",
-      "Never say 'cash and profit are the same' — a profitable business can still have cash flow problems",
-      "Students forget to show working in calculations — always write the formula first"
+      "Confusing limited and unlimited liability - sole traders and partnerships have unlimited liability while limited companies have limited liability",
+      "Not understanding that PLCs can sell shares on the Stock Market while private limited companies cannot",
+      "Mixing up the three stages of production - primary (extractive), secondary (manufacturing) and tertiary (services)"
     ],
     "examinerTips": [
-      "Cash flow calculations appear in almost every Paper 1 and Paper 2",
-      "Always check your cash flow forecast calculations — closing balance becomes next month's opening balance",
-      "For income statements, follow the exact order: Revenue - Cost of sales = Gross profit - Expenses = Net profit",
-      "Use Pakistani business examples like textile factories in Faisalabad or rice exports from Punjab for context"
+      "Both types of limited company must indicate their status in their name using PLC or Ltd to let traders know their liability is limited",
+      "Remember that owners of limited companies are not involved in running the business unless elected to the Board of Directors"
     ],
     "formulas": [
       "Net cash flow = Cash inflows - Cash outflows",
@@ -118,7 +114,7 @@
       "Examiner Report 2021: 'Weak responses simply stated ratio values without interpretation' — always explain what the calculated ratios mean for business performance and decision-making"
     ],
     "keyDiagram": "Students must be able to draw and label a simple balance sheet structure showing: ASSETS (Fixed Assets: premises, equipment, vehicles; Current Assets: inventory, debtors, cash) = CAPITAL AND LIABILITIES (Capital: owner's equity, retained profits; Long-term liabilities: bank loans; Current liabilities: creditors, overdraft). The diagram should clearly show the accounting equation: Assets = Capital + Liabilities, with arrows indicating the flow and relationship between components.",
-    "quickRecap": "Financial information includes profit and loss accounts (showing revenue, costs, and profit over time), balance sheets (showing assets, liabilities, and capital at a point in time), and cash flow forecasts (predicting money in and out). Key ratios measure profitability, liquidity, and efficiency. Remember: profit ≠ cash flow, and businesses need both profitability and liquidity to survive."
+    "quickRecap": "Private sector businesses aim to survive by making profit through primary, secondary and tertiary production stages. Business structures include sole traders with unlimited liability, partnerships with shared ownership, and limited companies (private Ltd and public PLC) with limited liability and separate legal existence. Each structure has distinct advantages and disadvantages regarding capital, control, and liability."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -126,5 +122,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:53:26.032Z",
   "updated_at": "2026-04-06T03:53:26.032Z",
-  "enriched_at": "2026-04-06T16:07:27.357Z"
+  "enriched_at": "2026-04-06T16:07:27.357Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:33:14.205Z"
 }

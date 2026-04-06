@@ -9,36 +9,36 @@
     "title": "Tourism",
     "readTime": "8 min",
     "keyPoints": [
-      "**Tourism** is the temporary movement of people to destinations outside their normal place of work and residence for leisure, business or other purposes",
-      "**Economic benefits** include foreign exchange earnings, employment creation, and development of infrastructure and services",
-      "**Environmental impacts** can be positive (conservation funding) or negative (pollution, habitat destruction, overcrowding)",
-      "**Social impacts** include cultural exchange and preservation, but also loss of traditional culture and increased crime",
-      "**Ecotourism** is responsible travel to natural areas that conserves the environment and improves the welfare of local people",
-      "**Mass tourism** involves large numbers of tourists visiting popular destinations, often causing environmental degradation and overcrowding",
-      "**Sustainable tourism** meets the needs of present tourists while protecting and enhancing opportunities for the future",
-      "Tourism requires good **accessibility** through transport links, **accommodation** facilities, and **attractions** both natural and human-made",
-      "**Multiplier effect** occurs when tourist spending creates employment and income that circulates through the local economy"
+      "Cash crop farming uses large fields with higher capital required for modern irrigation systems like perennial canals, tubewells, and sprinklers",
+      "Cash crop farms utilize scientific methods including HYV seeds, machinery like tractors and harvestors, chemical fertilizers and greater use of pesticides and herbicides",
+      "Subsistence farming uses small land with low capital invested, old irrigation methods like shaduf, and desi variety of seeds with most work done manually by family",
+      "Rabi crops like wheat require mild/warm temperatures 10-20 degrees for growing and 20 degrees for ripening, with light rain from December-March helping growth",
+      "Rice is a kharif crop requiring warm temperatures 20-30°C for growth, 1270-2000mm monsoon rain for flooding fields, and dry season for harvest",
+      "Barani farming depends entirely on rainfall with low banks/bunds constructed, traditional methods used due to farmers being too poor to own tractors",
+      "Natural inundation farming differs from irrigation as farmers have no control of water supply, seasonal cropping only possible, and higher banks needed to hold water",
+      "Tobacco growing uses human inputs including tractors for ploughing, harvestors for harvesting, and spray of pesticides through machines",
+      "Winter crop growing enables double or multiple cropping, provides jobs throughout the year, increases farmer income and provides more food sources"
     ],
     "definitions": [
       {
-        "term": "Tourism",
-        "definition": "The temporary movement of people to destinations outside their normal place of work and residence for leisure, business or other purposes"
+        "term": "Cash crop",
+        "definition": "Crops grown for sale/profit/commercial rather than for consumption by the farmers"
       },
       {
-        "term": "Ecotourism",
-        "definition": "Responsible travel to natural areas that conserves the environment and improves the welfare of local people"
+        "term": "Subsistence farming",
+        "definition": "Growing crops for own family"
       },
       {
-        "term": "Mass tourism",
-        "definition": "Large numbers of tourists visiting popular destinations, typically involving package holidays and standardized facilities"
+        "term": "Cash crop farming",
+        "definition": "Growing for sale and profit purpose"
       },
       {
-        "term": "Sustainable tourism",
-        "definition": "Tourism that meets the needs of present tourists and host regions while protecting and enhancing opportunities for the future"
+        "term": "Barani farming",
+        "definition": "Farming that depends entirely on rainfall/rain-fed area with low banks/bunds constructed"
       },
       {
-        "term": "Multiplier effect",
-        "definition": "The process by which tourist spending creates employment and income that circulates through the local economy, generating further economic activity"
+        "term": "Natural inundation",
+        "definition": "Farming that depends on natural rainfall/flooding and can only be carried out after flooding"
       }
     ],
     "howToAnswer": [
@@ -73,17 +73,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say tourism is 'always good' or 'always bad' - always discuss both positive and negative impacts",
-      "Students often confuse ecotourism with adventure tourism - ecotourism specifically focuses on conservation",
-      "Don't just list impacts - always explain HOW tourism causes each impact using 'because'",
-      "Never say tourism 'destroys culture' - be specific about cultural changes like loss of traditional practices",
-      "Avoid vague statements like 'damages environment' - be specific about pollution, erosion, habitat loss"
+      "Confusing kharif and rabi seasons - rice is kharif requiring warm temperatures while wheat is rabi requiring cooler temperatures",
+      "Not understanding that rice cannot be grown in barani farming areas as it requires over 1275mm rainfall which nowhere in Pakistan receives",
+      "Mixing up subsistence and cash crop farming characteristics - subsistence uses family labor while cash crop farms hire labor",
+      "Incorrectly stating crop requirements - wheat needs 90 days growing season and specific temperature ranges for growth and ripening"
     ],
     "examinerTips": [
-      "Tourism questions appear regularly in Paper 2 - often worth 6-8 marks",
-      "Case studies are essential - learn examples from both LEDCs and MEDCs",
-      "Always consider economic, social AND environmental impacts for full marks",
-      "Use Pakistani examples like Skardu, Hunza Valley or Murree for local context"
+      "When describing natural inundation scenes, mention specific features like flat flooded areas, earth banks/bunds about 1 metre high, and prepared fields",
+      "For crop season explanations, always link temperature requirements to specific degree ranges and mention rainfall patterns like western depression for wheat"
     ],
     "formulas": [],
     "keyDiagramDescription": "Butler's Tourism Life Cycle model showing stages: exploration, involvement, development, consolidation, stagnation, and either decline or rejuvenation. Essential for explaining how tourist destinations develop and change over time.",
@@ -110,7 +107,7 @@
       "Examiner Report 2022: 'Students often ignored the command word assess/evaluate' — when asked to assess tourism impacts, you must weigh up positives against negatives and reach a conclusion"
     ],
     "keyDiagram": "Butler's Tourism Life Cycle Model - draw a graph with 'Number of Tourists' on Y-axis and 'Time' on X-axis. Show 6 stages: Exploration (few tourists, pristine environment), Involvement (local facilities develop), Development (external investment, rapid growth), Consolidation (growth slows, tourism dominates economy), Stagnation (peak capacity, environmental/social problems), then either Decline (outdated facilities, competition) or Rejuvenation (new attractions, rebranding). Label key features at each stage.",
-    "quickRecap": "Tourism creates economic benefits (jobs, foreign currency, infrastructure) but also problems (environmental damage, cultural change, overdependence). Impacts change over Butler's lifecycle from positive in early stages to negative at maturity. Mass tourism has different impacts than ecotourism or cultural tourism. Success depends on sustainable management balancing economic gains with environmental and social costs."
+    "quickRecap": "Pakistan's agriculture involves different farming systems: cash crop farming uses modern inputs and large fields for profit, while subsistence farming relies on traditional methods for family consumption. Crops are seasonal - kharif crops like rice need warm temperatures and monsoon rains, while rabi crops like wheat need cooler temperatures and winter rainfall. Barani farming depends entirely on natural rainfall with traditional methods used due to low capital investment."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:00:12.335Z",
   "updated_at": "2026-04-06T04:00:12.335Z",
-  "enriched_at": "2026-04-06T16:11:28.425Z"
+  "enriched_at": "2026-04-06T16:11:28.425Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:38:44.380Z"
 }

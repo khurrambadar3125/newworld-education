@@ -9,36 +9,36 @@
     "title": "Redox reactions",
     "readTime": "8 min",
     "keyPoints": [
-      "**Oxidation** is the gain of oxygen, loss of hydrogen, or loss of electrons",
-      "**Reduction** is the loss of oxygen, gain of hydrogen, or gain of electrons",
-      "**Redox reactions** involve both oxidation and reduction occurring simultaneously",
-      "In terms of electron transfer, oxidation involves **loss of electrons** and reduction involves **gain of electrons** (OIL RIG)",
-      "**Combustion** is always an oxidation reaction where substances react with oxygen",
-      "The substance that causes oxidation is called the **oxidizing agent** and is itself reduced",
-      "The substance that causes reduction is called the **reducing agent** and is itself oxidized",
-      "**Displacement reactions** are redox reactions where more reactive metals displace less reactive metals from their compounds",
-      "In the reaction between hydrogen and copper oxide, hydrogen is **oxidized** to water and copper oxide is **reduced** to copper"
+      "Filtration separates insoluble solid from liquid - liquid particles small enough to go through filter paper pores, solid particles too large",
+      "Crystallization is obtaining solid from solid & liquid solution OR formation of crystals from a cooling liquid/saturated solution",
+      "Distillation is obtaining pure liquid from solution - pure liquid has low BP and changes to gas easily, solid does not boil so remains in flask",
+      "Fractional distillation separates 2 liquids which are mixed (miscible) - liquid with lowest BP comes out first at top of fractionating column",
+      "Chromatography separates mixture of organic compounds (eg. colour dyes)",
+      "In filtration: solid obtained is called 'Residue', liquid obtained is called 'Filtrate'",
+      "In crystallization: process involves heating solution to evaporate solvent, producing hot saturated solution, then crystals of pure solid formed on cooling",
+      "In distillation: solution boils, pure liquid turns to vapour, vapour cooled by condenser changes back to liquid called 'Distillate'",
+      "The constant temperature of distillation process equals the boiling point of pure liquid"
     ],
     "definitions": [
       {
-        "term": "Oxidation",
-        "definition": "The gain of oxygen, loss of hydrogen, or loss of electrons"
+        "term": "Soluble",
+        "definition": "can dissolve in water (eg. Salt)"
       },
       {
-        "term": "Reduction",
-        "definition": "The loss of oxygen, gain of hydrogen, or gain of electrons"
+        "term": "Insoluble",
+        "definition": "cannot dissolve in water (eg. Sand)"
       },
       {
-        "term": "Redox reaction",
-        "definition": "A reaction in which both oxidation and reduction occur simultaneously"
+        "term": "Miscible",
+        "definition": "mixable - (Able to be mixed)"
       },
       {
-        "term": "Oxidizing agent",
-        "definition": "A substance that causes oxidation in another substance and is itself reduced"
+        "term": "Saturated solution",
+        "definition": "no more solid can dissolve in it"
       },
       {
-        "term": "Reducing agent",
-        "definition": "A substance that causes reduction in another substance and is itself oxidized"
+        "term": "Distillate",
+        "definition": "liquid obtained from distillation, collected in conical flask"
       }
     ],
     "howToAnswer": [
@@ -67,17 +67,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'zinc loses oxygen' in displacement reactions — always say 'zinc loses electrons'",
-      "Students often confuse oxidizing agent with the substance being oxidized — the oxidizing agent is reduced",
-      "Don't forget that in redox reactions, if one substance is oxidized, another must be reduced",
-      "Never write 'copper gains oxygen' when copper ions become copper atoms — write 'copper gains electrons'",
-      "Students often miss that combustion reactions are always oxidation reactions"
+      "Confusing when to use crystallization vs distillation - crystallization obtains solid (solute), distillation obtains liquid (solvent)",
+      "Not understanding that fractional distillation separates liquids based on different boiling points",
+      "Forgetting that in filtration, the solid particles are too large to pass through filter paper pores"
     ],
     "examinerTips": [
-      "Redox appears in every Paper 2 — often linked with reactivity series questions",
-      "Use OIL RIG mnemonic: Oxidation Is Loss (of electrons), Reduction Is Gain (of electrons)",
-      "Always identify both the substance oxidized AND reduced for full marks",
-      "Displacement reactions in Paper 3 often require redox explanations"
+      "Any question that wants the method to obtain (make) crystals, the process will be 'Crystallization'",
+      "Remember that the constant temperature of distillation process equals the boiling point of pure liquid"
     ],
     "formulas": [
       "Zn + CuSO₄ → ZnSO₄ + Cu",
@@ -109,7 +105,7 @@
       "Examiner Report 2024: 'Common error was not showing working for oxidation state calculations' — always show each step when calculating oxidation states, especially for complex ions and compounds"
     ],
     "keyDiagram": "Students must be able to draw electron transfer diagrams showing oxidation (electron loss) and reduction (electron gain) with half-equations. Include: species before and after reaction, electrons shown with e⁻ symbol, arrows indicating electron movement direction, clear labeling of which species is oxidized/reduced, and oxidation states marked above each relevant atom. For example: Zn → Zn²⁺ + 2e⁻ (oxidation) and Cu²⁺ + 2e⁻ → Cu (reduction).",
-    "quickRecap": "Redox involves simultaneous oxidation (loss of electrons, increase in oxidation state) and reduction (gain of electrons, decrease in oxidation state). Calculate oxidation states by assigning known values first, then solving for unknowns ensuring the sum equals the overall charge. Identify redox by looking for oxidation state changes - if any atom changes oxidation state, it's redox. Remember OIL RIG: Oxidation Is Loss, Reduction Is Gain of electrons."
+    "quickRecap": "Separation methods depend on the physical properties of substances in mixtures. Filtration uses particle size differences, crystallization and distillation use solubility differences, fractional distillation uses boiling point differences, and chromatography separates organic compounds. Each method produces specific products with standard names like residue, filtrate, and distillate."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -117,5 +113,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:54:19.811Z",
   "updated_at": "2026-04-05T20:54:19.811Z",
-  "enriched_at": "2026-04-06T15:57:33.899Z"
+  "enriched_at": "2026-04-06T15:57:33.899Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:11:34.812Z"
 }

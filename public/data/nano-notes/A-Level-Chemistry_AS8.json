@@ -9,36 +9,25 @@
     "title": "Reaction kinetics",
     "readTime": "8 min",
     "keyPoints": [
-      "**Rate of reaction** is the change in concentration of a reactant or product per unit time, measured in mol dm⁻³ s⁻¹",
-      "**Order of reaction** with respect to a reactant is the power to which the concentration of that reactant is raised in the rate equation",
-      "**Rate constant k** has units that depend on the overall order: zero order = mol dm⁻³ s⁻¹, first order = s⁻¹, second order = mol⁻¹ dm³ s⁻¹",
-      "**Half-life** is the time taken for the concentration of a reactant to decrease to half its original value",
-      "**Activation energy** is the minimum energy required for a reaction to occur when particles collide",
-      "A **catalyst** increases the rate of reaction by providing an alternative reaction pathway with lower activation energy",
-      "The **Boltzmann distribution** shows that only particles with energy ≥ Ea can react successfully",
-      "Increasing temperature shifts the Boltzmann distribution to higher energies, increasing the proportion of particles with energy ≥ Ea",
-      "Rate-determining step is the slowest step in a multi-step reaction mechanism that determines the overall rate"
+      "Reaction kinetics is the study of rates of chemical reactions",
+      "Concentration affects the rate of reaction - higher concentration generally increases reaction rate",
+      "Temperature affects the rate of reaction - higher temperature increases reaction rate",
+      "Catalysis involves the use of catalysts to increase reaction rates without being consumed",
+      "Enzymes are biological catalysts that speed up biochemical reactions",
+      "Rate of reaction studies help understand how fast reactions proceed under different conditions"
     ],
     "definitions": [
       {
-        "term": "Rate of reaction",
-        "definition": "The change in concentration of a reactant or product per unit time"
+        "term": "Reaction kinetics",
+        "definition": "The study of rates of chemical reactions"
       },
       {
-        "term": "Order of reaction",
-        "definition": "The power to which the concentration of a reactant is raised in the rate equation"
+        "term": "Catalysis",
+        "definition": "The process of using catalysts to increase reaction rates"
       },
       {
-        "term": "Rate constant",
-        "definition": "The proportionality constant in the rate equation that is independent of concentration but varies with temperature"
-      },
-      {
-        "term": "Activation energy",
-        "definition": "The minimum energy required for a reaction to occur when particles collide"
-      },
-      {
-        "term": "Half-life",
-        "definition": "The time taken for the concentration of a reactant to decrease to half its original value"
+        "term": "Enzymes",
+        "definition": "Biological catalysts that speed up biochemical reactions"
       }
     ],
     "howToAnswer": [
@@ -69,19 +58,8 @@
         "Mark 3: Greater proportion of particles have energy ≥ Ea / more successful collisions"
       ]
     },
-    "commonMistakes": [
-      "Never say 'particles move faster' — always say 'particles have greater kinetic energy'",
-      "Students often confuse order with stoichiometry — order must be determined experimentally, not from the balanced equation",
-      "Don't say 'more collisions' — say 'more successful collisions' or 'greater proportion of collisions have energy ≥ Ea'",
-      "Students forget that catalysts are not used up in the reaction and appear in both forward and reverse reactions",
-      "Never say temperature 'gives particles more energy' — say temperature 'increases the kinetic energy of particles'"
-    ],
-    "examinerTips": [
-      "Rate equations and orders appear in every Paper 2 — practice determining order from initial rates data",
-      "Always draw and label the Boltzmann distribution curve when explaining temperature effects",
-      "Remember rate constant units change with overall order — learn the pattern",
-      "For catalyst questions, always mention 'alternative pathway with lower activation energy'"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [
       "rate = k[A]^m[B]^n",
       "k = Ae^(-Ea/RT)",
@@ -113,7 +91,7 @@
       "Examiner Report 2023: 'Weak responses just stated factors without explanation' — always link your answer to collision theory and mention activation energy when explaining how factors affect reaction rate"
     ],
     "keyDiagram": "Energy profile diagram showing: x-axis labeled 'Reaction progress/time', y-axis labeled 'Energy'. Draw reactants energy level, products energy level (lower for exothermic), activation energy peak. For catalysts, draw second curve with lower activation energy peak but same start and end points. Label: reactants, products, activation energy (Ea), activation energy with catalyst (lower), and energy change (ΔH). Include arrows showing energy differences.",
-    "quickRecap": "Reaction rate depends on collision frequency and activation energy. Temperature, concentration, pressure (gases), surface area, and catalysts all affect rate via collision theory. Higher temperature = more kinetic energy = more successful collisions. Catalysts lower activation energy without being consumed. Always explain using particles, collisions, and activation energy in exam answers."
+    "quickRecap": "Reaction kinetics examines the rates at which chemical reactions occur. Key factors affecting reaction rates include concentration and temperature, with higher values typically increasing reaction speed. Catalysts and enzymes can accelerate reactions without being consumed in the process."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -121,5 +99,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:32:13.181Z",
   "updated_at": "2026-04-06T04:32:13.181Z",
-  "enriched_at": "2026-04-06T16:13:40.483Z"
+  "enriched_at": "2026-04-06T16:13:40.483Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:45:54.045Z"
 }

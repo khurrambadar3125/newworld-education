@@ -9,36 +9,36 @@
     "title": "Algebra",
     "readTime": "8 min",
     "keyPoints": [
-      "**Simplify** expressions by collecting like terms and removing brackets using distributive property",
-      "**Solve linear equations** by performing the same operation to both sides to isolate the variable",
-      "**Solve simultaneous equations** using substitution method or elimination method",
-      "**Factorise** quadratic expressions by finding two numbers that multiply to give c and add to give b",
-      "**Complete the square** by writing x² + bx + c in the form (x + p)² + q",
-      "**Solve quadratic equations** by factorising, using the quadratic formula, or completing the square",
-      "**Change the subject** of a formula by rearranging to make the required variable the subject",
-      "**Solve inequalities** by treating them like equations but reversing the inequality sign when multiplying or dividing by a negative number",
-      "**Apply laws of indices** when multiplying (add powers), dividing (subtract powers), and raising to a power (multiply powers)"
+      "Natural numbers are all the positive integers from 1 to Infinity and are also called Positive Integers",
+      "Integers include positive numbers, negative numbers or zero and are the most common word used by the examiner",
+      "Prime numbers are numbers that have exactly 2 factors: 1 and the number itself",
+      "Rational numbers are any whole number that can be written as a pure fraction or decimal and must either end (terminating decimals) or repeat (recurring decimals)",
+      "Irrational numbers are any number that cannot be expressed in the form of a fraction, such as π, √2, √7",
+      "Candidates are required to memorise square numbers up till 15 for Paper 1",
+      "HCF (Highest common factor) is the largest number that is a common factor of two different numbers",
+      "LCM (Lowest common multiple) is the smallest number that is the multiple of two different numbers",
+      "A set is an organised, unique collection of elements and you are not allowed to repeat the same element in a set"
     ],
     "definitions": [
       {
-        "term": "Like terms",
-        "definition": "Terms that have exactly the same variable parts, which can be added or subtracted"
+        "term": "Prime Numbers",
+        "definition": "Numbers that have exactly 2 factors; 1 and the number itself"
       },
       {
-        "term": "Linear equation",
-        "definition": "An equation where the highest power of the variable is 1"
+        "term": "Composite Numbers",
+        "definition": "Numbers that have more than two factors"
       },
       {
-        "term": "Quadratic expression",
-        "definition": "An algebraic expression of the form ax² + bx + c where a ≠ 0"
+        "term": "Terminating Decimals",
+        "definition": "Decimal numbers which end after a certain number of decimal places"
       },
       {
-        "term": "Factorising",
-        "definition": "Writing an expression as a product of its factors"
+        "term": "Recurring Decimals",
+        "definition": "Decimal numbers which keep repeating a digit or group of digits"
       },
       {
-        "term": "Subject of a formula",
-        "definition": "The variable that appears by itself on one side of the equation"
+        "term": "Real numbers",
+        "definition": "All the numbers that exist. These include all rational and irrational numbers"
       }
     ],
     "howToAnswer": [
@@ -70,17 +70,16 @@
       ]
     },
     "commonMistakes": [
-      "Never write 3x × 2x = 6x — always remember 3x × 2x = 6x²",
-      "Students often forget to change the inequality sign when multiplying or dividing by negative numbers",
-      "When factorising, students write factors that don't expand back to the original expression",
-      "In simultaneous equations, students solve for one variable but forget to find the other",
-      "When completing the square, students forget the constant term adjustment"
+      "Confusing natural numbers with whole numbers - natural numbers don't include zero",
+      "Thinking that squared numbers can be negative - they are always positive",
+      "Not recognizing that integers are the most common word used by the examiner",
+      "Forgetting that cube numbers may be positive or negative, unlike square numbers",
+      "Repeating elements in a set when you are not allowed to repeat the same element"
     ],
     "examinerTips": [
-      "Algebra appears in every paper - practice daily for fluency",
-      "Always check your answers by substituting back into original equations",
-      "Show all working steps clearly - method marks are available even if final answer is wrong",
-      "When changing subject of formula, work systematically and show each step"
+      "Integers are the most common word used by the examiner",
+      "Candidates are required to memorise square numbers up till 15 for Paper 1",
+      "A colon ':' should be read as 'Such that' in set notation"
     ],
     "formulas": [
       "Quadratic formula: x = (-b ± √(b² - 4ac)) / 2a",
@@ -113,7 +112,7 @@
       "Examiner Report 2024: 'Common error was incorrectly applying binomial theorem with fractional indices' — remember that for (1+x)^n where n is not a positive integer, the expansion is infinite and you must stop at the required term"
     ],
     "keyDiagram": "For algebraic expansion visualization, students should draw a grid method diagram (also called the box method) showing how each term in the first bracket multiplies with each term in the second bracket. For binomial expansions, a coefficient triangle or Pascal's triangle adaptation for fractional powers helps track the pattern of coefficients systematically.",
-    "quickRecap": "Algebra involves manipulating expressions using fundamental operations and laws. Key skills include expanding brackets using FOIL or grid methods, collecting like terms with same variables and powers, and applying binomial theorem for expressions like (a+b)^n. Always work systematically, watch negative signs carefully, and simplify coefficients as fractions when needed. For binomial expansions with fractional or negative powers, use the general formula and stop at the required term."
+    "quickRecap": "Numbers are classified into various families including natural numbers, integers, and real numbers, with integers being the most commonly used term by examiners. Prime numbers have exactly 2 factors while composite numbers have more than two factors. Rational numbers can be expressed as fractions and include terminating or recurring decimals, while irrational numbers cannot be expressed as fractions. Sets are organized collections of unique elements with specific notation and operations."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -121,5 +120,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:22:48.191Z",
   "updated_at": "2026-04-05T21:22:48.191Z",
-  "enriched_at": "2026-04-06T16:06:39.338Z"
+  "enriched_at": "2026-04-06T16:06:39.338Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:24:50.639Z"
 }

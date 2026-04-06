@@ -9,33 +9,33 @@
     "title": "The Periodic Table",
     "readTime": "8 min",
     "keyPoints": [
-      "Elements are arranged in **periods** (horizontal rows) and **groups** (vertical columns) in order of increasing atomic number",
-      "Elements in the same **group** have the same number of electrons in their outer shell and similar chemical properties",
-      "Elements in the same **period** have the same number of electron shells",
-      "**Atomic radius** decreases across a period from left to right due to increased nuclear charge",
-      "**Atomic radius** increases down a group due to increased number of electron shells",
-      "**Metallic character** decreases across a period from left to right",
-      "**Metallic character** increases down a group",
-      "**Group 1** elements (alkali metals) become more reactive down the group",
-      "**Group 17** elements (halogens) become less reactive down the group",
-      "**Group 18** elements (noble gases) are unreactive due to complete outer electron shells"
+      "Filtration separates insoluble solid from liquid because liquid particles are small enough to go through filter paper pores while solid particles are too large",
+      "Crystallisation is used for obtaining solid from solid & liquid solution or formation of crystals from a cooling liquid/saturated solution",
+      "Distillation obtains pure liquid from solution - pure liquid has low BP and changes to gas easily while solid does not boil and has high BP",
+      "Fractional Distillation separates 2 liquids which are mixed (miscible) - liquid with lowest BP comes out first at top of fractionating column",
+      "Chromatography separates mixture of organic compounds (eg. colour dyes)",
+      "In filtration, solid obtained is called 'Residue' and liquid obtained is called 'Filtrate'",
+      "In distillation and fractional distillation, liquid obtained is called 'Distillate' and is collected in conical flask",
+      "A saturated solution means no more solid can dissolve in it",
+      "Compounds contain 2 or more elements chemically joined together and contain covalent or ionic bonds",
+      "Mixtures are 2 or more substances which are not chemically joined together and can consist of elements, compounds, or elements + compounds"
     ],
     "definitions": [
       {
-        "term": "Period",
-        "definition": "A horizontal row of elements in the periodic table with the same number of electron shells"
+        "term": "Compound",
+        "definition": "2 or more elements chemically joined together. Contains Covalent or Ionic Bonds"
       },
       {
-        "term": "Group",
-        "definition": "A vertical column of elements in the periodic table with the same number of electrons in their outer shell"
+        "term": "Mixtures",
+        "definition": "2 or more substances which are not chemically joined together"
       },
       {
-        "term": "Atomic number",
-        "definition": "The number of protons in the nucleus of an atom"
+        "term": "Saturated solution",
+        "definition": "No more solid can dissolve in it"
       },
       {
-        "term": "Periodic trend",
-        "definition": "A pattern in properties that repeats across periods or down groups in the periodic table"
+        "term": "Miscible",
+        "definition": "Mixable - (Able to be mixed)"
       }
     ],
     "howToAnswer": [
@@ -67,17 +67,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'atomic weight' — always say 'relative atomic mass' or 'atomic number'",
-      "Students often confuse groups and periods — remember groups are vertical columns",
-      "Don't say elements have 'full outer shells' — say 'complete outer electron shells'",
-      "Never say 'Group 0' for noble gases — always use 'Group 18'",
-      "Students mix up trends — atomic radius increases down groups but decreases across periods"
+      "Confusing pure substances with mixtures - pure substances have fixed composition and fixed Mp/Bp while mixtures have variable composition and variable Bp/Mp",
+      "Not understanding that any question asking for method to obtain crystals will use crystallisation process",
+      "Forgetting that the constant temperature during distillation equals the boiling point of pure liquid"
     ],
     "examinerTips": [
-      "Periodic table trends appear in almost every Paper 2 exam",
-      "Always state both the trend AND the reason for full marks",
-      "Use the periodic table provided in exams to identify groups and periods",
-      "Remember: Group number = number of outer electrons (for Groups 1, 2, 13-18)"
+      "Any question that wants the method to obtain (make) crystals, the process will be 'Crystallisation'",
+      "Remember that soluble means can dissolve in water (eg. Salt) and insoluble means cannot dissolve in water (eg. Sand)"
     ],
     "formulas": [],
     "keyDiagramDescription": "Periodic table showing 18 groups (vertical columns) and 7 periods (horizontal rows), with metals on the left, non-metals on the right, and metalloids along the diagonal line",
@@ -105,7 +101,7 @@
       "Examiner Report 2021: 'Candidates failed to link electron arrangement to periodic table position' — always show electron configuration when explaining element position"
     ],
     "keyDiagram": "Students must be able to draw a simplified periodic table showing: Groups I-VIII labeled vertically (columns), Periods 1-3 labeled horizontally (rows), positions of first 20 elements with their symbols, and clear indication that group number = outer shell electrons, period number = number of electron shells. Include hydrogen in its unique position and show the transition between metals (left) and non-metals (right).",
-    "quickRecap": "The periodic table arranges elements by increasing atomic number. Group number (vertical columns) equals outer shell electrons, explaining similar chemical properties. Period number (horizontal rows) equals number of electron shells. Elements in the same group react similarly because they have the same outer electron arrangement."
+    "quickRecap": "Separation methods depend on the properties of substances being separated. Filtration uses particle size differences, crystallisation obtains solids from solutions, distillation separates based on boiling point differences, and chromatography separates organic compounds. Pure substances have fixed properties while mixtures have variable properties and can be separated by physical methods."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -113,5 +109,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:55:17.767Z",
   "updated_at": "2026-04-05T20:55:17.767Z",
-  "enriched_at": "2026-04-06T15:58:31.710Z"
+  "enriched_at": "2026-04-06T15:58:31.710Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:12:18.433Z"
 }

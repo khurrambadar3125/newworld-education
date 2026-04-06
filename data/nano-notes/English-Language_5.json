@@ -9,35 +9,35 @@
     "title": "Reading practice",
     "readTime": "8 min",
     "keyPoints": [
-      "**Identify** key information by scanning for specific details, names, dates, and statistics mentioned in the passage",
-      "**Extract** relevant information by reading the question first, then locating the answer in the text using keywords",
-      "**Interpret** implicit meanings by reading between the lines and understanding what the writer suggests without directly stating",
-      "**Distinguish** between facts and opinions by identifying objective statements versus subjective viewpoints or judgments",
-      "**Analyze** the writer's purpose by examining language choices, tone, and intended audience to determine their aim",
-      "**Evaluate** effectiveness of language techniques such as metaphors, repetition, or emotive language in achieving the writer's purpose",
-      "**Summarize** main points by selecting only the most important information and expressing it concisely in your own words",
-      "**Quote selectively** by choosing brief, relevant phrases that directly support your answer rather than copying large chunks"
+      "Paper 1 Writing is 1 hour 30 minutes with two sections: Section 1 Directed Writing (30 marks) and Section 2 Composition (30 marks)",
+      "Section 1 requires a response of 200-300 words to one compulsory writing task",
+      "Section 2 offers a choice of five titles: 1 descriptive, 2 argumentative, 2 narrative essays requiring 350-500 words",
+      "Argumentative essays should follow 5 paragraphs: Introduction with thesis statement, 2 body paragraphs with claims and evidence, 1 paragraph with counter claims that are refuted, and conclusion",
+      "The 30 marks for Section 1 are allocated as follows: Task Fulfilment 15 marks, Language 15 marks",
+      "All required points must be developed in detail, fully amplified and well organised with given information well used to justify personal opinion",
+      "Language assessment looks for highly accurate writing with sentence structures varied for particular effects and vocabulary wide and precise",
+      "Body paragraphs should include relevant facts, statistics, narratives, testimonials and leverage various modes of persuasion like appeal to emotion or logic"
     ],
     "definitions": [
       {
-        "term": "Implicit meaning",
-        "definition": "Information that is suggested or hinted at in the text but not directly stated"
+        "term": "Thesis statement",
+        "definition": "Your statement of belief that appears as the last line of your introduction"
       },
       {
-        "term": "Inference",
-        "definition": "A logical conclusion drawn from evidence and clues provided in the text"
+        "term": "Task Fulfilment",
+        "definition": "Good understanding of purpose, clear awareness of situation and audience, format entirely appropriate, all required points developed in detail"
       },
       {
-        "term": "Context clues",
-        "definition": "Words or phrases surrounding an unknown word that help determine its meaning"
+        "term": "Directed Writing",
+        "definition": "Section 1 compulsory writing task where candidates write a response of 200-300 words"
       },
       {
-        "term": "Bias",
-        "definition": "A one-sided viewpoint that favors a particular perspective while ignoring others"
+        "term": "Composition",
+        "definition": "Section 2 where candidates complete one writing task from a choice of five titles, writing 350-500 words"
       },
       {
-        "term": "Tone",
-        "definition": "The writer's attitude toward the subject matter, revealed through word choice and style"
+        "term": "Counter claims",
+        "definition": "1 or 2 claims that go against your argument which you then refute with evidence"
       }
     ],
     "howToAnswer": [
@@ -73,17 +73,16 @@
       ]
     },
     "commonMistakes": [
-      "Never copy large chunks of text — always select brief, relevant quotes that directly answer the question",
-      "Students often identify techniques but forget to explain their effect on the reader",
-      "Don't confuse the writer's opinion with facts — look for bias indicators like 'clearly', 'obviously', 'surely'",
-      "Avoid making up information not in the text — all answers must be supported by textual evidence",
-      "Never give personal opinions when asked about the writer's viewpoint — focus on what the text reveals"
+      "Not developing the bullet points as evenly as possible in Section 1 tasks",
+      "Confusing commonly confused words, for example, their/there, seat/sit",
+      "Incorrect use of possessive pronouns",
+      "Not writing in full sentences, even in informal writing",
+      "Incorrect tenses and agreement"
     ],
     "examinerTips": [
-      "Reading comprehension appears in both Paper 1 and Paper 2 carrying significant marks",
-      "Always read questions before the passage to know what to look for",
-      "Use the mark allocation to guide answer length — 3 marks typically needs 3 clear points",
-      "Highlight or underline key words in questions like 'how', 'why', 'effectiveness' to focus your response"
+      "It is essential to read the question carefully and be clear about its particular focus",
+      "In Section 1 tasks it is important to develop the bullet points as evenly as possible",
+      "Concentration on correct tenses and agreement would improve candidates' writing in both sections"
     ],
     "formulas": [],
     "keyDiagramDescription": "No specific diagram required for reading practice, but students should understand the structure of approaching any text: Question → Keywords → Scan text → Select evidence → Explain effect",
@@ -112,7 +111,7 @@
       "Examiner Report 2022: 'Candidates frequently copied large chunks of text instead of selecting specific examples' — be selective and quote only the relevant words or phrases that demonstrate the technique"
     ],
     "keyDiagram": "Create a three-column analysis table: Column 1 'Quotation' (exact words from text in quotation marks), Column 2 'Technique' (metaphor, simile, adjective, alliteration, etc.), Column 3 'Effect/Impression' (emotion conveyed + impact on reader). Practice filling this table for different text types - narrative, descriptive, argumentative - as the approach remains consistent across all reading comprehension questions.",
-    "quickRecap": "Reading practice requires three key skills: precise quotation from texts, identification of language techniques, and explanation of effects on readers. Always quote exact words in quotation marks, name the specific technique used, then explain both the emotion/idea conveyed and the impression created. For comprehension questions, scan the specified paragraphs systematically and select only relevant details that directly answer what is asked."
+    "quickRecap": "Paper 1 Writing consists of two sections: compulsory Directed Writing (200-300 words) and Composition choice (350-500 words). Both sections are worth 30 marks each, split between Task Fulfilment and Language. Success requires careful attention to format, audience, detailed development of points, and accurate language use."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -120,5 +119,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:49:20.039Z",
   "updated_at": "2026-04-06T03:49:20.039Z",
-  "enriched_at": "2026-04-06T16:08:04.335Z"
+  "enriched_at": "2026-04-06T16:08:04.335Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:23:11.843Z"
 }

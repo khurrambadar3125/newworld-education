@@ -9,36 +9,36 @@
     "title": "Petrochemicals and polymers",
     "readTime": "8 min",
     "keyPoints": [
-      "**Petroleum** is a mixture of hydrocarbons separated by fractional distillation into fractions with different boiling points",
-      "**Cracking** breaks down long-chain alkanes into shorter, more useful alkenes and alkanes using heat and catalysts",
-      "**Alkenes** are unsaturated hydrocarbons that can undergo addition polymerisation to form polymers",
-      "**Polymers** are large molecules formed when many small molecules (monomers) join together by covalent bonds",
-      "**Addition polymerisation** occurs when alkene monomers join together without eliminating any small molecules",
-      "**Plastics** are synthetic polymers that can be moulded into shape when heated",
-      "**Thermoplastics** can be repeatedly heated and reshaped, while **thermosetting plastics** cannot be reshaped once formed",
-      "**Polyethene** is formed from ethene monomers and is used for plastic bags and containers",
-      "**PVC (polyvinyl chloride)** is formed from chloroethene and is used for pipes and clothing"
+      "Filtration separates insoluble solid from liquid because liquid particles are small enough to go through filter paper pores while solid particles are too large",
+      "Crystallization is the formation of crystals from a cooling liquid or saturated solution to obtain solid from solid and liquid solution",
+      "Distillation obtains pure liquid from solution by heating the solution until it boils, turning pure liquid to vapour which is cooled by condenser back to liquid called distillate",
+      "Fractional distillation separates 2 liquids which are mixed (miscible) by heating mixture so liquid with lowest BP comes out first at top of fractionating column",
+      "In filtration, solid obtained is called residue and liquid obtained is called filtrate",
+      "A saturated solution means no more solid can dissolve in it",
+      "Crystallization process involves dissolving solid in solvent, heating solution to evaporate solvent producing hot saturated solution, then crystals of pure solid form on cooling",
+      "Distillation is possible because pure liquid changes to gas easily due to low BP while solid does not boil so remains in flask due to high BP",
+      "Chromatography separates mixture of organic compounds such as colour dyes"
     ],
     "definitions": [
       {
-        "term": "Polymer",
-        "definition": "A large molecule formed when many small molecules (monomers) join together by covalent bonds"
+        "term": "Compound",
+        "definition": "2 or more elements chemically joined together containing covalent or ionic bonds"
       },
       {
-        "term": "Monomer",
-        "definition": "A small molecule that can join with other identical molecules to form a polymer"
+        "term": "Mixtures",
+        "definition": "2 or more substances which are not chemically joined together"
       },
       {
-        "term": "Addition polymerisation",
-        "definition": "A reaction where alkene monomers join together to form a polymer without eliminating any small molecules"
+        "term": "Soluble",
+        "definition": "can dissolve in water"
       },
       {
-        "term": "Cracking",
-        "definition": "The breaking down of long-chain alkanes into shorter, more useful alkenes and alkanes using heat and catalysts"
+        "term": "Insoluble",
+        "definition": "cannot dissolve in water"
       },
       {
-        "term": "Plastic",
-        "definition": "A synthetic polymer that can be moulded into shape when heated"
+        "term": "Miscible",
+        "definition": "mixable - able to be mixed"
       }
     ],
     "howToAnswer": [
@@ -71,17 +71,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'polythene' — always say 'polyethene' for the polymer of ethene",
-      "Students often forget to show continuation bonds (brackets and n) in polymer structures",
-      "Never confuse addition polymerisation with condensation polymerisation — addition has no small molecule eliminated",
-      "Students often draw monomer structures instead of polymer structures when asked for polymer",
-      "Never say polymers are formed by 'mixing' monomers — they join by covalent bonds"
+      "Confusing when to use crystallization versus distillation - crystallization obtains solid while distillation obtains liquid",
+      "Not understanding that saturated solution means no more solid can dissolve in it",
+      "Mixing up residue and filtrate in filtration - solid obtained is residue, liquid obtained is filtrate"
     ],
     "examinerTips": [
-      "Polymer questions appear almost every year in Paper 2 Section B",
-      "Always draw continuation bonds when showing polymer structures for full marks",
-      "Learn the exact names: polyethene, polypropene, polyvinyl chloride (PVC)",
-      "Pakistan's plastic industry in Karachi produces many of these polymers - good context for uses"
+      "Any question that wants the method to obtain crystals, the process will be crystallization",
+      "The constant temperature of distillation process equals the boiling point of pure liquid"
     ],
     "formulas": [
       "nC₂H₄ → (C₂H₄)ₙ",
@@ -112,7 +108,7 @@
       "Examiner Report 2021: 'Candidates frequently gave vague uses for polymers' — be specific (e.g., 'plastic bottles' not just 'containers', 'carrier bags' not just 'packaging')"
     ],
     "keyDiagram": "Students must be able to draw the polymerization of ethene showing: (1) Monomer structure H₂C=CH₂ with clear double bond (2) Arrow with conditions 'high pressure, catalyst' (3) Polymer structure with repeat unit [-CH₂-CH₂-]ₙ in square brackets (4) Show how double bond breaks and single bonds form between monomers. Include at least 3 repeat units when asked to show polymer structure.",
-    "quickRecap": "Petrochemicals are chemicals derived from crude oil fractions like naphtha. Addition polymerization joins alkene monomers by breaking C=C double bonds to form long chain polymers like poly(ethene) and poly(propene). No small molecules are eliminated in addition reactions. Common polymer uses: poly(ethene) for bags/bottles, PVC for pipes/window frames, polystyrene for packaging."
+    "quickRecap": "Separation methods depend on the type of mixture: filtration for insoluble solid and liquid, crystallization to obtain solid from solution, distillation to obtain pure liquid from solution, and fractional distillation for miscible liquids. Each method works based on different physical properties like particle size, boiling points, and solubility."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:57:45.020Z",
   "updated_at": "2026-04-05T20:57:45.020Z",
-  "enriched_at": "2026-04-06T16:01:25.251Z"
+  "enriched_at": "2026-04-06T16:01:25.251Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:14:14.722Z"
 }

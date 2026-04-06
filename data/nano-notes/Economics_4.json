@@ -8,39 +8,8 @@
   "note_data": {
     "title": "Government and the Macroeconomy",
     "readTime": "8 min",
-    "keyPoints": [
-      "**Fiscal policy** is the use of government spending and taxation to influence the economy",
-      "**Monetary policy** is the use of interest rates and money supply to control economic activity",
-      "Government can use **expansionary fiscal policy** (increase spending/reduce taxes) to reduce unemployment and stimulate growth",
-      "Government can use **contractionary fiscal policy** (reduce spending/increase taxes) to control inflation",
-      "**Expansionary monetary policy** (lower interest rates) encourages borrowing and investment but may cause inflation",
-      "**Contractionary monetary policy** (higher interest rates) reduces borrowing and spending to control inflation",
-      "Government faces **policy conflicts** - policies to reduce unemployment may increase inflation",
-      "**Supply-side policies** aim to increase productive capacity of the economy through education, training and infrastructure",
-      "Government spending on infrastructure like CPEC projects can increase **long-term economic growth**"
-    ],
-    "definitions": [
-      {
-        "term": "Fiscal policy",
-        "definition": "The use of government spending and taxation to influence the level of economic activity"
-      },
-      {
-        "term": "Monetary policy",
-        "definition": "The use of interest rates and control of money supply to influence the level of economic activity"
-      },
-      {
-        "term": "Budget deficit",
-        "definition": "When government spending exceeds government revenue in a given time period"
-      },
-      {
-        "term": "Inflation",
-        "definition": "A sustained increase in the general price level"
-      },
-      {
-        "term": "Supply-side policies",
-        "definition": "Government policies aimed at increasing the productive capacity of the economy"
-      }
-    ],
+    "keyPoints": [],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -72,19 +41,8 @@
         "Mark 6: Reduce corporation tax encourages investment and job creation"
       ]
     },
-    "commonMistakes": [
-      "Never say 'print more money' for fiscal policy - this is monetary policy",
-      "Students often confuse fiscal policy (government spending/tax) with monetary policy (interest rates)",
-      "Don't just list policies - always explain HOW they work to achieve the objective",
-      "Never ignore policy conflicts - reducing unemployment may increase inflation",
-      "Students forget that fiscal policy has time lags - effects are not immediate"
-    ],
-    "examinerTips": [
-      "This topic appears in almost every Paper 2 - learn both fiscal and monetary policies thoroughly",
-      "Always explain the transmission mechanism - how the policy leads to the desired outcome",
-      "Use Pakistani examples like CPEC infrastructure spending or SBP interest rate changes",
-      "For 'discuss' questions, always mention policy conflicts and limitations"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [],
     "keyDiagramDescription": "Phillips Curve showing inverse relationship between inflation and unemployment - useful for explaining policy trade-offs. Also aggregate demand/supply diagrams to show effects of fiscal and monetary policies on price level and output.",
     "pastPaperRefs": [
@@ -111,7 +69,7 @@
       "Examiner Report 2021: 'Weak answers did not link policy tools to specific macroeconomic objectives' — always explicitly state whether policies aim to control inflation, reduce unemployment, promote growth, or achieve external balance"
     ],
     "keyDiagram": "Students must be able to draw an AD-AS diagram showing the effects of fiscal policy. The diagram should include: correctly labeled axes (Price Level on Y-axis, Real GDP on X-axis), downward-sloping AD curve, upward-sloping AS curve, initial equilibrium point, and arrows showing shifts in AD (rightward for expansionary fiscal policy, leftward for contractionary). Students should annotate the diagram showing the effects on price level and output, and be able to explain the multiplier effect graphically.",
-    "quickRecap": "Government uses fiscal policy (taxation/spending), monetary policy (interest rates/money supply), and supply-side policies to achieve macroeconomic objectives. Expansionary policies stimulate economic activity but may cause inflation. Contractionary policies reduce inflation but may increase unemployment. Policy effectiveness depends on economic conditions, time lags, and potential conflicts between objectives like the Phillips Curve trade-off between inflation and unemployment."
+    "quickRecap": "Source content insufficient for meaningful revision note creation."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +77,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:34:07.027Z",
   "updated_at": "2026-04-06T03:34:07.027Z",
-  "enriched_at": "2026-04-06T16:06:59.808Z"
+  "enriched_at": "2026-04-06T16:06:59.808Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:31:47.207Z"
 }

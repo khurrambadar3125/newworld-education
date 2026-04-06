@@ -9,36 +9,36 @@
     "title": "Food Production",
     "readTime": "8 min",
     "keyPoints": [
-      "**Subsistence farming** produces food mainly for the farmer's family with little surplus for sale",
-      "**Commercial farming** produces crops and livestock primarily for sale to make profit",
-      "**Intensive farming** uses high inputs of capital, labour or fertilizers per unit area to maximize yields",
-      "**Extensive farming** uses low inputs per unit area but covers large areas with lower yields per hectare",
-      "**Irrigation** is the artificial watering of crops essential in areas with low rainfall like Pakistan's Punjab",
-      "**Food security** exists when all people have access to sufficient, safe and nutritious food at all times",
-      "**Green Revolution** increased crop yields through high-yielding varieties, fertilizers and pesticides",
-      "**Cash crops** like cotton and sugarcane are grown specifically for sale rather than subsistence",
-      "Food shortages occur due to **drought, flooding, pests, diseases** and poor distribution systems"
+      "The two main tobacco growing districts in Pakistan are in NWFP: Mardan and Peshawar",
+      "Important grain crops include Rice (Kharif), Millet (kharif), Maize (kharif), and Wheat (Rabi)",
+      "Rabi crops require mild/warm temperature 10degree – 20degree for growing and 20degrees for ripening, with light rain of dec-march (western depression) helping growth",
+      "Cash crop farms use large fields, higher capital, modern irrigation system (perennial canals, tubewells, sprinklers), scientific methods (HYV seeds, machinery like tractors and harvestor), chemical fertilizers and greater use of pesticides and herbicides",
+      "Subsistence farming utilizes small land, low capital invested because of poverty, old irrigation methods like shaduf, desi variety of seeds, most work done manually by family, draft power for ploughing",
+      "Rice is a kharif crop because it requires warm temperatures for growth 20°C to 30°C, monsoon rain for growth/flooding fields 1270-2000mms, and dry season for harvest",
+      "Barani farming depends entirely on rainfall, uses low banks/bunds constructed, field size varies considerably, ploughing after/if rain falls, farmers too poor to own tractors/traditional methods",
+      "Winter cropping enables double or multiple crop, provides job throughout the year, increases income of farmers, provides more source of foods, and wheat grown in excess is exported increasing foreign exchange",
+      "Farming using natural inundation can only be carried out after flooding, farmers have no control of water supply, seasonal cropping, variable yields, and annual floods supply nutrients"
     ],
     "definitions": [
       {
-        "term": "Subsistence farming",
-        "definition": "A type of farming where food is produced mainly for the farmer's own family with little or no surplus for sale"
-      },
-      {
-        "term": "Commercial farming",
-        "definition": "A type of farming where crops and livestock are produced primarily for sale to make a profit"
-      },
-      {
-        "term": "Intensive farming",
-        "definition": "A farming system that uses high inputs of capital, labour, fertilizers or technology per unit area to achieve high yields"
-      },
-      {
-        "term": "Food security",
-        "definition": "When all people have physical and economic access to sufficient, safe and nutritious food to meet their dietary needs"
-      },
-      {
         "term": "Cash crop",
-        "definition": "A crop grown specifically for sale rather than for the farmer's own consumption"
+        "definition": "Crops grown for sale/profit/commercial rather than for consumption by the farmers"
+      },
+      {
+        "term": "Subsistence farming",
+        "definition": "Growing crops for own family"
+      },
+      {
+        "term": "Cash crop farming",
+        "definition": "Growing for sale and profit purpose"
+      },
+      {
+        "term": "Barani farming",
+        "definition": "Farming that depends entirely on rainfall/rain-fed area"
+      },
+      {
+        "term": "Natural inundation farming",
+        "definition": "Farming that makes use of natural flooding and must wait for floods"
       }
     ],
     "howToAnswer": [
@@ -73,17 +73,15 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'good climate' — always specify temperature, rainfall amounts or seasonal patterns",
-      "Students often confuse intensive with commercial farming — intensive refers to inputs per area, commercial refers to purpose",
-      "Don't just list factors — always explain HOW each factor affects food production",
-      "Never say 'fertile soil' without explaining what makes it fertile (nutrients, organic matter, pH)",
-      "Avoid saying 'modern technology' — be specific about tractors, fertilizers, irrigation systems"
+      "Confusing kharif and rabi seasons - remember wheat is rabi, rice is kharif",
+      "Not understanding that rice cannot be grown in barani areas because it requires over 1275mm rainfall in growing season",
+      "Mixing up subsistence and cash crop farming characteristics - subsistence uses family labor and small fields, cash crops use hired labor and large fields",
+      "Forgetting that rabi crops need specific temperature ranges: 10-20°C for growing, 20°C for ripening"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2 — learn Pakistan examples",
-      "Always use specific place names like Punjab, Sindh, Balochistan when giving examples",
-      "For 6-mark questions, aim for 3 factors with explanations rather than 6 simple points",
-      "Case study knowledge of farming in Pakistan earns extra marks"
+      "When describing natural conditions for crops, include temperature ranges, rainfall amounts, soil types, and seasonal requirements",
+      "For farming system comparisons, contrast capital investment, field size, irrigation methods, labor types, and machinery use",
+      "Remember to distinguish between different types of farming based on water source: irrigation, natural inundation, and barani (rainfall dependent)"
     ],
     "formulas": [],
     "keyDiagramDescription": "Systems diagram showing inputs (seeds, fertilizers, labor, machinery), processes (plowing, planting, harvesting), outputs (crops, livestock products) and feedback loops in farming systems",
@@ -111,7 +109,7 @@
       "Examiner Report 2022: 'Candidates often ignored environmental consequences or gave vague answers like pollution' — be specific about environmental impacts such as soil erosion, water table depletion, or biodiversity loss with clear cause-effect relationships"
     ],
     "keyDiagram": "Students must be able to draw and label an intensive farming system diagram showing: greenhouse/polytunnel structure with temperature control, drip irrigation pipes leading to plant roots, automated systems (sensors, timers), hydroponic growing medium or soil with fertilizer application points, and ventilation systems. Include arrows showing inputs (water, nutrients, energy) and outputs (increased crop yields). Label should show how each technological component contributes to increased production efficiency.",
-    "quickRecap": "Technology increases food production through precision methods like drip irrigation (direct water delivery), HYV/GM crops (higher yields), mechanization (faster processing), and controlled environments (greenhouses). Key environmental costs include deforestation, soil erosion, water pollution and biodiversity loss. Always explain HOW technology works and WHY it increases yields - don't just list examples."
+    "quickRecap": "Pakistan grows both kharif crops (rice, millet, maize in summer) and rabi crops (wheat in winter) using different farming systems. Cash crop farming uses modern inputs and large fields for profit, while subsistence farming uses traditional methods on small plots for family consumption. Different areas practice irrigation farming, natural inundation farming, or barani (rainfall-dependent) farming depending on water availability."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +117,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:59:24.203Z",
   "updated_at": "2026-04-06T03:59:24.203Z",
-  "enriched_at": "2026-04-06T16:10:44.439Z"
+  "enriched_at": "2026-04-06T16:10:44.439Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:38:04.500Z"
 }

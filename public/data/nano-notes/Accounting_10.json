@@ -9,36 +9,36 @@
     "title": "Accounting rules",
     "readTime": "8 min",
     "keyPoints": [
-      "**Accounting concepts** are fundamental principles that guide the preparation of financial statements",
-      "The **business entity concept** states that the business is separate from the owner and business transactions are recorded separately from personal transactions",
-      "The **money measurement concept** means only transactions that can be measured in monetary terms are recorded in the books of accounts",
-      "The **going concern concept** assumes that the business will continue to operate for the foreseeable future",
-      "The **accruals concept** records income when earned and expenses when incurred, regardless of when cash is received or paid",
-      "The **consistency concept** requires the same accounting methods to be used from one period to another",
-      "The **prudence concept** means income is only recorded when realized but all known losses and expenses are recorded",
-      "**Accounting conventions** are practices that have evolved over time to solve practical accounting problems",
-      "The **materiality convention** states that items of little value need not be treated with strict theoretical correctness"
+      "The process of accounting starts once the book-keeper finishes recording the financial transactions",
+      "Accounting deals with measuring, identifying, and communicating financial information recorded by the book-keeper which facilitates the preparation of financial statements",
+      "Bookkeeping involves recording financial transactions from source documents of a business whereas accounting deals with maintaining financial statements from the bookkeeping records",
+      "Assets are the resources owned and controlled by a company - an increase in an asset is a debit and a decrease is a credit",
+      "The basic accounting equation is: Assets = Capital + Liabilities",
+      "Current Assets are assets which have a monetary value or can be converted into cash within 12 months",
+      "Non-Current Assets (also known as Fixed Assets) are assets acquired to earn revenue for the company and used for more than 12 months without being intended for resale",
+      "Capital is the number of resources and funds provided by the owner injected into the business",
+      "Liability is the money owed to another firm or an entity"
     ],
     "definitions": [
       {
-        "term": "Business entity concept",
-        "definition": "The business is treated as separate from the owner and business transactions are recorded separately from personal transactions of the owner"
+        "term": "Assets",
+        "definition": "The resources owned and controlled by a company"
       },
       {
-        "term": "Accruals concept",
-        "definition": "Income is recorded when earned and expenses are recorded when incurred, regardless of when cash is received or paid"
+        "term": "Capital",
+        "definition": "The number of resources and funds provided by the owner injected into the business"
       },
       {
-        "term": "Going concern concept",
-        "definition": "The assumption that the business will continue to operate for the foreseeable future"
+        "term": "Liability",
+        "definition": "The money owed to another firm or an entity"
       },
       {
-        "term": "Prudence concept",
-        "definition": "Income is only recorded when it is certain to be received but all known losses and expenses are recorded immediately"
+        "term": "Current Assets",
+        "definition": "An asset which has a monetary value or can be converted into cash within 12 months"
       },
       {
-        "term": "Consistency concept",
-        "definition": "The same accounting methods and policies should be used from one accounting period to another"
+        "term": "Goodwill",
+        "definition": "The intangible asset that represents the reputation, customer loyalty, brand value, and other non-physical attributes of a business"
       }
     ],
     "howToAnswer": [
@@ -66,17 +66,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse accruals concept with cash accounting - accruals ignores when cash is received/paid",
-      "Students often mix up prudence concept with other concepts - prudence only records certain income but all known expenses",
-      "Don't say 'matching concept' - the correct term is 'accruals concept' in Cambridge O Level",
-      "Never give personal examples when explaining business entity concept - always use business transactions vs personal transactions",
-      "Students forget that going concern affects asset valuation - assets valued at cost not break-up value"
+      "Confusing bookkeeping with accounting - bookkeeping records transactions while accounting maintains financial statements",
+      "Incorrectly categorizing assets as current when they are used for more than 12 months",
+      "Mixing up debit and credit rules for assets and capital"
     ],
     "examinerTips": [
-      "Accounting concepts appear in Paper 1 MCQ and Paper 2 every year - usually 4-6 marks total",
-      "Always give practical business examples when explaining concepts for full marks",
-      "Questions often ask which concept is being applied in a scenario - read carefully",
-      "Learn the exact definitions - examiners look for key phrases like 'when earned' and 'when incurred'"
+      "Remember the basic accounting equation: Assets = Capital + Liabilities",
+      "Distinguish between tangible assets (can be touched) and intangible assets (cannot be touched or seen)"
     ],
     "formulas": [],
     "keyDiagramDescription": "No specific diagram required for this topic, but create a concept map showing the relationship between different accounting concepts and their applications",
@@ -103,7 +99,7 @@
       "Examiner Report 2021: 'Students incorrectly stated that dual aspect means having two books of accounts' — remember that dual aspect refers to every transaction affecting two accounts with equal amounts"
     ],
     "keyDiagram": "Draw the Accounting Equation triangle showing Assets at the top, with Capital and Liabilities at the base corners. Include arrows showing how the dual aspect concept maintains the equation balance (Assets = Capital + Liabilities) after every transaction. Add example transactions around the triangle showing increases/decreases to demonstrate how changes in one element require balancing changes elsewhere.",
-    "quickRecap": "Accounting concepts are fundamental rules that guide how financial transactions are recorded and presented. Key concepts include business entity (business separate from owner), dual aspect (every transaction affects two accounts equally), money measurement (only monetary transactions recorded), and historical cost (assets recorded at purchase price). These concepts ensure consistency, reliability and comparability of financial statements across different businesses and time periods."
+    "quickRecap": "Accounting starts after bookkeeping and involves measuring, identifying, and communicating financial information to prepare financial statements. Assets are resources owned by a company, capital represents owner's investment, and liabilities are amounts owed. The fundamental relationship is expressed in the accounting equation: Assets = Capital + Liabilities."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -111,5 +107,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:38:26.161Z",
   "updated_at": "2026-04-06T03:38:26.161Z",
-  "enriched_at": "2026-04-06T16:06:19.969Z"
+  "enriched_at": "2026-04-06T16:06:19.969Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:27:00.039Z"
 }

@@ -9,36 +9,36 @@
     "title": "Environmental Risks",
     "readTime": "8 min",
     "keyPoints": [
-      "**Pollution** is the contamination of air, water or land by harmful substances that damage the environment and human health",
-      "**Deforestation** is the permanent clearing of forests for agriculture, urbanization or logging, leading to soil erosion and loss of biodiversity",
-      "**Global warming** is the gradual increase in Earth's average temperature due to increased greenhouse gas concentrations in the atmosphere",
-      "**Sustainable development** meets the needs of the present without compromising the ability of future generations to meet their own needs",
-      "**Carbon dioxide emissions** from burning fossil fuels are the main cause of the enhanced greenhouse effect",
-      "**Acid rain** is formed when sulfur dioxide and nitrogen oxides react with water vapor in the atmosphere to form weak acids",
-      "**Desertification** is the degradation of land in arid areas due to overgrazing, deforestation and climate change",
-      "**Ozone layer depletion** is caused by CFCs which break down ozone molecules, allowing harmful UV radiation to reach Earth's surface",
-      "**Renewable energy sources** such as solar, wind and hydroelectric power produce no greenhouse gas emissions during operation"
+      "Cash crop farming requires higher capital for modern irrigation systems like perennial canals, tubewells, and sprinklers compared to subsistence farming",
+      "Cash crop farms use large fields, machinery like tractors and harvesters, chemical fertilizers and greater use of pesticides and herbicides for plant protection",
+      "Subsistence farming utilizes small land with low capital investment, old irrigation methods like shaduf, desi variety of seeds, and most work done manually by family",
+      "Rabi crops like wheat require mild/warm temperature 10-20 degrees for growing and 20 degrees for ripening, with light rain of Dec-March helping growth",
+      "Rice is a kharif crop requiring warm temperatures 20-30°C for growth, monsoon rain for flooding fields (1270-2000mm), and dry season for harvest",
+      "Natural inundation farming differs from irrigation as farmers have no control of water supply, seasonal cropping rarely possible, and variable yields with risk of flood damage",
+      "Barani farming depends entirely on rainfall with farmers too poor to own tractors, using traditional methods and animal dung, with some years having insufficient rainfall causing crop failure",
+      "Growing rabi crops in winter enables double or multiple cropping, provides jobs throughout the year, increases farmer income and food sources",
+      "Plain land favors wheat growth for easy use of machinery and good irrigation systems, with alluvial/loam/clay soils made fertile by rivers"
     ],
     "definitions": [
       {
-        "term": "Pollution",
-        "definition": "The contamination of air, water or land by harmful substances that damage the environment and human health"
+        "term": "Cash crop",
+        "definition": "Crops grown for sale/profit/commercial rather than for consumption by the farmers"
       },
       {
-        "term": "Deforestation",
-        "definition": "The permanent clearing of forests for human activities such as agriculture, logging or urban development"
+        "term": "Subsistence farming",
+        "definition": "Growing crops for own family"
       },
       {
-        "term": "Global warming",
-        "definition": "The gradual increase in Earth's average temperature due to increased concentrations of greenhouse gases in the atmosphere"
+        "term": "Cash crop farming",
+        "definition": "Growing for sale and profit purpose"
       },
       {
-        "term": "Sustainable development",
-        "definition": "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs"
+        "term": "Barani farming",
+        "definition": "Farming that depends entirely on rainfall/rain-fed area"
       },
       {
-        "term": "Greenhouse effect",
-        "definition": "The process by which greenhouse gases trap heat in Earth's atmosphere, keeping the planet warm enough to support life"
+        "term": "Natural inundation",
+        "definition": "Farming that depends on natural rainfall/flooding and must wait for floods"
       }
     ],
     "howToAnswer": [
@@ -71,18 +71,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'greenhouse effect is bad' — it's natural and essential. Say 'enhanced greenhouse effect' causes problems",
-      "Students often confuse ozone depletion with global warming — these are separate environmental issues",
-      "Don't just list pollution types — always explain the effects and consequences",
-      "Avoid saying 'save the environment' in exam answers — use specific terms like 'reduce emissions' or 'conserve biodiversity'",
-      "Never write 'global warming causes climate change' — global warming IS climate change"
+      "Confusing kharif and rabi seasons - wheat is rabi (winter) while rice, millet and maize are kharif (summer)",
+      "Not understanding that rice cannot be grown in barani farming areas as it requires over 1275mm rainfall which nowhere in Pakistan receives",
+      "Mixing up temperature requirements - rabi crops need 10-20°C for growing while kharif crops like rice need 20-30°C",
+      "Failing to distinguish between subsistence and cash crop farming inputs and methods"
     ],
     "examinerTips": [
-      "Environmental risks questions appear in every Paper 2 - worth learning thoroughly",
-      "Always link human activities to environmental consequences for full marks",
-      "Use case study examples like Karachi's air pollution or Chittagong ship-breaking for higher marks",
-      "Draw and label diagrams for greenhouse effect and acid rain formation",
-      "Learn specific statistics about CO2 levels and temperature increases for top band answers"
+      "When describing farming systems, clearly distinguish between inputs used in cash crop versus subsistence farming",
+      "Remember that crop seasons are determined by temperature and rainfall requirements - link these to specific temperature ranges from the source"
     ],
     "formulas": [],
     "keyDiagramDescription": "Greenhouse effect diagram showing solar radiation entering atmosphere, some reflected by clouds, some absorbed by Earth's surface, and infrared radiation trapped by greenhouse gases (CO2, methane, water vapor) with arrows indicating heat being re-radiated back to Earth",
@@ -110,7 +106,7 @@
       "Examiner Report 2024: 'Candidates frequently confused sources of air pollution with effects of air pollution' — focus on what creates the pollution (factories, power stations) not what it causes (health problems, acid rain)"
     ],
     "keyDiagram": "Urban Air Pollution Sources Diagram: Draw a city skyline showing a factory with smoke stacks emitting dark smoke, a power station with cooling towers, construction cranes with dust clouds, residential areas with chimneys, and waste disposal sites with methane emissions. Label each source clearly and use arrows to show pollutants entering the atmosphere. Include AQI scale on the side showing pollution levels from good (0-50) to hazardous (300+).",
-    "quickRecap": "Environmental risks from air pollution come from multiple urban sources beyond traffic. Key non-traffic sources include factories/industry, power stations, construction sites, domestic heating, and waste burning. When analyzing pollution data, look for positive correlations between pollution sources and air quality measurements. Always read questions carefully to avoid including excluded sources like traffic."
+    "quickRecap": "Pakistan's agriculture involves different farming systems: cash crop farming uses modern inputs and machinery for profit, while subsistence farming relies on traditional methods for family consumption. Crops are classified as kharif (summer) or rabi (winter) based on temperature and rainfall needs. Specialized systems like barani (rain-fed) and natural inundation farming depend entirely on natural water sources with variable outcomes."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +114,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:01:25.651Z",
   "updated_at": "2026-04-06T04:01:25.651Z",
-  "enriched_at": "2026-04-06T16:12:36.273Z"
+  "enriched_at": "2026-04-06T16:12:36.273Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:39:43.771Z"
 }

@@ -9,37 +9,37 @@
     "title": "Transformations and vectors",
     "readTime": "8 min",
     "keyPoints": [
-      "A **translation** moves every point the same distance in the same direction and is described by a column vector",
-      "A **reflection** maps every point to its mirror image across a line of symmetry",
-      "A **rotation** turns a shape about a fixed point called the centre of rotation through a given angle",
-      "An **enlargement** changes the size of a shape by a scale factor from a centre of enlargement",
-      "**Combined transformations** are performed in the order given, with the first transformation applied to the original shape",
-      "A **column vector** represents displacement and is written as (x/y) where x is horizontal and y is vertical movement",
-      "A **position vector** describes the position of a point relative to the origin",
-      "**Vector addition** is performed by adding corresponding components: (a/b) + (c/d) = (a+c/b+d)",
-      "The **magnitude** of vector (a/b) is calculated using √(a² + b²)",
-      "**Parallel vectors** are scalar multiples of each other"
+      "Natural numbers are all positive integers from 1 to infinity, and fractions or decimals are not included",
+      "Whole numbers are all positive integers including zero",
+      "Integers include positive numbers, negative numbers or zero - this is the most common word used by the examiner",
+      "Prime numbers have exactly 2 factors: 1 and the number itself",
+      "Rational numbers are any whole number that can be written as a pure fraction or decimal - they must either end (terminating decimals) or repeat (recurring decimals)",
+      "Irrational numbers are any number that cannot be expressed in the form of a fraction, such as π, √2, √7",
+      "Squared numbers are always positive and candidates are required to memorise square numbers up till 15 for Paper 1",
+      "Cube numbers may be positive or negative",
+      "HCF (Highest common factor) is the largest number that is a common factor of two different numbers",
+      "LCM (Lowest common multiple) is the smallest number that is the multiple of two different numbers"
     ],
     "definitions": [
       {
-        "term": "Translation",
-        "definition": "A transformation that moves every point the same distance in the same direction"
+        "term": "Set",
+        "definition": "An organised, unique collection of elements where you are not allowed to repeat the same element"
       },
       {
-        "term": "Column vector",
-        "definition": "A way of representing translation or displacement written as (x/y)"
+        "term": "Prime Numbers",
+        "definition": "Numbers that have exactly 2 factors: 1 and the number itself"
       },
       {
-        "term": "Position vector",
-        "definition": "A vector that describes the position of a point relative to the origin"
+        "term": "Composite Numbers",
+        "definition": "Numbers that have more than two factors"
       },
       {
-        "term": "Magnitude of a vector",
-        "definition": "The length of a vector calculated using Pythagoras' theorem"
+        "term": "Proper Fractions",
+        "definition": "Fractions for which the numerator is smaller than the denominator"
       },
       {
-        "term": "Parallel vectors",
-        "definition": "Vectors that are scalar multiples of each other"
+        "term": "Improper Fractions",
+        "definition": "Fractions for which the numerator is larger than the denominator"
       }
     ],
     "howToAnswer": [
@@ -68,17 +68,14 @@
       ]
     },
     "commonMistakes": [
-      "Never write vectors as (x,y) — always use column notation with brackets",
-      "Students often forget to apply transformations in the correct order for combined transformations",
-      "Writing position vectors without stating 'from the origin'",
-      "Confusing vector addition with scalar multiplication",
-      "Not showing the direction clearly when describing rotations (clockwise/anticlockwise)"
+      "Including fractions or decimals when listing natural numbers",
+      "Forgetting that squared numbers are always positive while cube numbers may be positive or negative",
+      "Repeating the same element in a set when sets must contain unique elements only",
+      "Confusing terminating decimals (which end) with recurring decimals (which repeat)"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2",
-      "Always draw a coordinate grid and plot points for transformation questions",
-      "State the type of transformation first, then give all details",
-      "For combined transformations, clearly show each step separately"
+      "Integers is the most common word used by the examiner",
+      "Candidates are required to memorise square numbers up till 15 for Paper 1"
     ],
     "formulas": [
       "Magnitude of vector (a/b) = √(a² + b²)",
@@ -110,7 +107,7 @@
       "Examiner Report 2024: 'Candidates often drew shapes inaccurately or failed to use a ruler for straight lines' — always use appropriate drawing instruments and plot coordinates precisely on the grid"
     ],
     "keyDiagram": "A coordinate grid showing an original shape and its translated image, with the translation vector clearly marked. The diagram should show corresponding vertices labeled (e.g., A, A'), arrows indicating the direction of translation, and the vector written in column notation. Grid lines must be clearly visible for accurate plotting, and both shapes should be drawn with straight edges using a ruler.",
-    "quickRecap": "Translation moves every point of a shape by the same vector without rotation or reflection. Add the vector components to each coordinate: (x,y) + (a,b) = (x+a, y+b). Always write vectors in column form and use a ruler for accurate drawing. Check your arithmetic carefully, especially with negative numbers."
+    "quickRecap": "Numbers are classified into different families including natural numbers, whole numbers, integers, rational and irrational numbers. Prime numbers have exactly 2 factors while composite numbers have more than two factors. Sets are organised collections of unique elements with specific notation and operations. Fractions can be proper, improper, or mixed numbers, and can be converted between decimal and percentage forms."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -118,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:24:39.405Z",
   "updated_at": "2026-04-05T21:24:39.405Z",
-  "enriched_at": "2026-04-06T16:08:28.486Z"
+  "enriched_at": "2026-04-06T16:08:28.486Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:26:08.267Z"
 }

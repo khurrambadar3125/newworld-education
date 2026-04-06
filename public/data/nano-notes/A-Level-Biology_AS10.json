@@ -9,39 +9,15 @@
     "title": "Infectious disease",
     "readTime": "8 min",
     "keyPoints": [
-      "**Pathogens** are disease-causing organisms including bacteria, viruses, fungi and protoctists that invade host tissues",
-      "**Primary defences** prevent pathogen entry and include skin as a barrier and stomach acid that destroys pathogens",
-      "**Phagocytosis** involves white blood cells engulfing pathogens and destroying them using lysosomes",
-      "**Lymphocytes** produce specific antibodies complementary to antigens on pathogen surfaces",
-      "**Antibodies** are Y-shaped proteins that bind to specific antigens causing agglutination and neutralisation",
-      "**Active immunity** develops when lymphocytes produce antibodies and memory cells after antigen exposure",
-      "**Vaccination** introduces antigens to stimulate antibody production and memory cell formation without causing disease",
-      "**HIV** attacks helper T lymphocytes reducing the immune response leading to AIDS",
-      "**Memory cells** remain in blood after infection and enable rapid secondary immune response upon re-exposure",
-      "**Passive immunity** provides temporary protection through antibodies from another organism"
+      "Chapter 10 covers infectious diseases with worldwide importance",
+      "Cholera is included as a major infectious disease topic",
+      "Malaria is covered as a significant infectious disease",
+      "Acquired immune deficiency syndrome (AIDS) is studied",
+      "Tuberculosis (TB) is examined as an infectious disease",
+      "Measles is included in the infectious diseases chapter",
+      "Antibiotics are covered as part of infectious disease treatment"
     ],
-    "definitions": [
-      {
-        "term": "Pathogen",
-        "definition": "A disease-causing organism that invades and damages host tissues"
-      },
-      {
-        "term": "Antibody",
-        "definition": "A Y-shaped protein produced by lymphocytes that is complementary to and binds with specific antigens"
-      },
-      {
-        "term": "Active immunity",
-        "definition": "Immunity developed when lymphocytes are stimulated to produce antibodies and memory cells"
-      },
-      {
-        "term": "Vaccination",
-        "definition": "The introduction of antigens into the body to stimulate an immune response and memory cell formation"
-      },
-      {
-        "term": "Phagocytosis",
-        "definition": "The process by which white blood cells engulf and destroy pathogens using lysosomes"
-      }
-    ],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -71,19 +47,8 @@
         "Mark 4: Rapid secondary response upon re-infection"
       ]
     },
-    "commonMistakes": [
-      "Never say antibodies kill pathogens — antibodies bind to antigens causing agglutination",
-      "Students confuse active and passive immunity — active involves producing your own antibodies",
-      "Don't say vaccines contain weakened pathogens — they contain antigens from pathogens",
-      "Never say white blood cells produce antibodies — only lymphocytes produce antibodies",
-      "Students forget that HIV specifically attacks helper T lymphocytes, not all white blood cells"
-    ],
-    "examinerTips": [
-      "This topic appears almost every year in Paper 2",
-      "Always distinguish between primary and secondary immune responses",
-      "Learn the specific sequence: antigen recognition → lymphocyte activation → antibody production → memory cell formation",
-      "HIV questions often link to reduced immunity and opportunistic infections"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [],
     "keyDiagramDescription": "Structure of an antibody showing Y-shape with variable regions that bind to specific antigens, and constant regions. Also draw phagocytosis sequence showing engulfment and lysosome fusion.",
     "pastPaperRefs": [
@@ -111,7 +76,7 @@
       "Examiner Report 2021: 'Candidates often mixed up active and passive immunity' — remember active immunity involves making your own antibodies (vaccination/infection), passive immunity receives ready-made antibodies (breast milk/injection)"
     ],
     "keyDiagram": "Students must be able to draw and label the process of phagocytosis: (1) White blood cell detects pathogen using chemical signals, (2) Cell membrane extends around pathogen forming pseudopodia, (3) Pathogen enclosed in food vacuole inside cytoplasm, (4) Digestive enzymes released into vacuole, (5) Pathogen broken down and digested, (6) Waste materials removed from cell. Include clear labels for white blood cell, pathogen, cell membrane, pseudopodia, food vacuole, and digestive enzymes.",
-    "quickRecap": "Infectious diseases are caused by pathogens (bacteria, viruses, fungi, protozoa) that enter through broken barriers. The body defends using white blood cells through phagocytosis and antibody production. Vaccination provides active immunity by introducing antigens to create memory cells. Antibiotics only work against bacteria, not viruses, because viruses reproduce inside host cells."
+    "quickRecap": "Chapter 10 of the Cambridge A Level Biology course covers infectious diseases of worldwide importance. The chapter examines major diseases including cholera, malaria, AIDS, tuberculosis, and measles. Antibiotics and their role in treating infectious diseases are also covered in this chapter."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -119,5 +84,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:03:31.052Z",
   "updated_at": "2026-04-06T05:03:31.052Z",
-  "enriched_at": "2026-04-06T16:08:54.210Z"
+  "enriched_at": "2026-04-06T16:08:54.210Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:49:28.086Z"
 }

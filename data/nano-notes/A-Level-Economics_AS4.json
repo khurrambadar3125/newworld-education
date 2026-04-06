@@ -9,36 +9,41 @@
     "title": "The macroeconomy",
     "readTime": "8 min",
     "keyPoints": [
-      "**Gross Domestic Product (GDP)** is the total value of all final goods and services produced within a country's borders in a given time period",
-      "**Aggregate demand** is the total planned expenditure on goods and services at different price levels in an economy (C + I + G + X - M)",
-      "**Aggregate supply** is the total quantity of goods and services that all firms in an economy are willing and able to supply at different price levels",
-      "**National income** can be measured using three methods: expenditure method, income method, and output method - all should give the same result",
-      "The **circular flow of income** shows how money moves between households, firms, government and foreign sector through injections and withdrawals",
-      "**Injections** into the circular flow are investment (I), government spending (G) and exports (X)",
-      "**Withdrawals** from the circular flow are savings (S), taxation (T) and imports (M)",
-      "Economic equilibrium occurs when total injections equal total withdrawals (I + G + X = S + T + M)",
-      "The **multiplier effect** means an initial injection into the economy leads to a proportionally larger increase in national income"
+      "The basic economic problem is scarcity - wants are unlimited and resources are finite, so choices have to be made",
+      "Opportunity cost is the value of the next best alternative forgone when making a choice",
+      "Economic agents (consumers, producers and governments) all face opportunity cost decisions due to finite resources",
+      "Three key production questions: What to produce (determined by consumer preferences), How to produce it (producers seek profits and minimize costs), For whom to produce it (those with greatest purchasing power)",
+      "Ceteris paribus assumes all other things are held constant or equal - a key assumption in economics",
+      "Making decisions at the margin involves considering what the additional cost or benefit will be from the next step or action",
+      "The law of diminishing marginal returns states that each extra unit of a good or service consumed gives less utility",
+      "Short run: at least one factor of production is fixed; Long run: all factors of production are variable; Very long run: all factors and external inputs are variable",
+      "Positive statements are objective and can be tested with factual evidence, using words like 'will' and 'is'",
+      "Normative statements are based on value judgements and opinion, using words like 'should' and suggesting one action is better than another"
     ],
     "definitions": [
       {
-        "term": "Gross Domestic Product",
-        "definition": "The total value of all final goods and services produced within a country's borders in a given time period, usually one year"
+        "term": "Opportunity cost",
+        "definition": "The value of the next best alternative forgone"
       },
       {
-        "term": "Aggregate Demand",
-        "definition": "The total planned expenditure on goods and services at different price levels in an economy over a given time period"
+        "term": "Ceteris paribus",
+        "definition": "A key assumption made in economics that assumes all other things are held constant or are equal"
       },
       {
-        "term": "Aggregate Supply",
-        "definition": "The total quantity of goods and services that all firms in an economy are willing and able to supply at different price levels"
+        "term": "Law of diminishing marginal returns",
+        "definition": "Economic theory that each extra unit of a good or service consumed gives the consumer less utility"
       },
       {
-        "term": "National Income",
-        "definition": "The total value of income earned by factors of production owned by a country's residents in a given time period"
+        "term": "Positive statements",
+        "definition": "Objective statements that can be tested with factual evidence, and can consequently be rejected or accepted"
       },
       {
-        "term": "Circular Flow",
-        "definition": "A model showing how money moves around the economy between households, firms, government and the foreign sector through flows of income and expenditure"
+        "term": "Normative statements",
+        "definition": "Statements based on value judgements that are subjective and based on opinion rather than factual evidence"
+      },
+      {
+        "term": "Factors of production",
+        "definition": "Economic resources including land, labour, capital and enterprise"
       }
     ],
     "howToAnswer": [
@@ -73,18 +78,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say GDP includes second-hand goods — GDP only counts newly produced goods and services",
-      "Students often confuse nominal GDP with real GDP — real GDP is adjusted for inflation",
-      "Don't say investment means buying shares — in macroeconomics, investment means spending on capital goods",
-      "Never include transfer payments like pensions in GDP — these are not payments for current production",
-      "Students mix up withdrawals and injections — savings, taxes and imports are withdrawals, not injections"
+      "Confusing positive and normative statements - look for key indicator words like 'will/is' versus 'should'",
+      "Not recognizing that opportunity cost applies to all economic agents including consumers, producers and governments",
+      "Forgetting that ceteris paribus is essential for isolating the effects of economic changes"
     ],
     "examinerTips": [
-      "This topic appears in almost every Paper 2 exam — learn the components of AD thoroughly",
-      "Always draw and label the circular flow diagram when explaining injections and withdrawals",
-      "Use Pakistani examples like Gwadar port construction for government investment",
-      "Show your working clearly in GDP calculations using C + I + G + (X-M)",
-      "Link macroeconomic concepts to current Pakistani economic issues like inflation and unemployment"
+      "Look for words such as 'will' and 'is' to identify positive statements",
+      "Look for words such as 'should' to identify normative statements, especially when suggesting one action is more credible than another"
     ],
     "formulas": [
       "GDP = C + I + G + (X - M)",
@@ -115,7 +115,7 @@
       "Examiner Report 2023: 'Weak responses on inflation failed to identify different types' — always distinguish between demand-pull inflation (excess demand) and cost-push inflation (rising production costs)"
     ],
     "keyDiagram": "The Circular Flow of Income diagram showing households, firms, government, and foreign sector. Draw households providing factors of production to firms (receiving income) and firms providing goods/services to households (receiving expenditure). Add government injections (spending) and leakages (taxes), plus imports (leakages) and exports (injections). Label all flows clearly and show how injections increase national income while leakages reduce it.",
-    "quickRecap": "The macroeconomy focuses on whole economy performance measured by GDP, inflation, unemployment, and balance of payments. Governments use fiscal policy (taxes and spending) and monetary policy (interest rates) to achieve economic objectives. Key concepts include the multiplier effect, trade-offs between objectives, and the circular flow of income showing how money moves through the economy."
+    "quickRecap": "Economics deals with scarcity where unlimited wants meet finite resources, creating opportunity cost - the value of the next best alternative forgone. Economic agents make decisions at the margin considering additional costs and benefits. Positive statements can be tested with evidence while normative statements reflect value judgements and opinions."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -123,5 +123,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:08:30.073Z",
   "updated_at": "2026-04-06T05:08:30.073Z",
-  "enriched_at": "2026-04-06T16:08:29.544Z"
+  "enriched_at": "2026-04-06T16:08:29.544Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:51:47.842Z"
 }

@@ -9,37 +9,37 @@
     "title": "Number",
     "readTime": "8 min",
     "keyPoints": [
-      "**Natural numbers** are positive integers: 1, 2, 3, 4, ... (used for counting)",
-      "**Rational numbers** can be expressed as p/q where p and q are integers and q ≠ 0",
-      "**Irrational numbers** cannot be expressed as a fraction (e.g., √2, π, surds)",
-      "**Standard form** is written as a × 10ⁿ where 1 ≤ a < 10 and n is an integer",
-      "When **ordering** numbers, convert all to the same form (decimals or fractions) first",
-      "**Percentage change** = (new value - original value) ÷ original value × 100%",
-      "In **ratio and proportion**, if a:b = c:d, then ad = bc (cross multiplication)",
-      "**Estimation** requires rounding numbers to 1 significant figure before calculating",
-      "**Surds** in simplest form have no perfect square factors under the square root sign",
-      "**Upper and lower bounds** depend on the degree of accuracy given in the question"
+      "Natural numbers are all the positive integers from 1 to infinity, also called Positive Integers. Fractions or decimals are not included.",
+      "Integers include positive numbers, negative numbers or zero and are the most common word used by the examiner.",
+      "Prime numbers have exactly 2 factors: 1 and the number itself.",
+      "Rational numbers are any whole number that can be written as a pure fraction or decimal. They must either end (terminating decimals) or repeat (recurring decimals).",
+      "Irrational numbers are any number that cannot be expressed in the form of a fraction, such as π, √2, √7.",
+      "Square numbers are always positive and candidates are required to memorise square numbers up till 15 for Paper 1.",
+      "Cube numbers may be positive or negative.",
+      "HCF (Highest common factor) is the largest number that is a common factor of two different numbers.",
+      "LCM (Lowest common multiple) is the smallest number that is the multiple of two different numbers.",
+      "A set is an organised, unique collection of elements. You are not allowed to repeat the same element in a set."
     ],
     "definitions": [
       {
-        "term": "Prime Number",
-        "definition": "A natural number greater than 1 that has exactly two factors: 1 and itself"
+        "term": "Natural numbers",
+        "definition": "All the positive integers from 1 to infinity. Fractions or decimals are not included. They are also called Positive Integers"
       },
       {
-        "term": "Standard Form",
-        "definition": "A number written in the form a × 10ⁿ where 1 ≤ a < 10 and n is an integer"
+        "term": "Prime numbers",
+        "definition": "Numbers that have exactly 2 factors: 1 and the number itself"
       },
       {
-        "term": "Surd",
-        "definition": "An irrational number involving a square root that cannot be simplified to give a rational number"
+        "term": "Rational numbers",
+        "definition": "Any whole number, that can be written as a pure fraction or decimal. Numbers that can be expressed in the form of a ratio. They must either end (terminating decimals) or repeat (recurring decimals)"
       },
       {
-        "term": "Significant Figures",
-        "definition": "The meaningful digits in a number, counting from the first non-zero digit"
+        "term": "Irrational numbers",
+        "definition": "Any number that cannot be expressed in the form of a fraction"
       },
       {
-        "term": "Percentage",
-        "definition": "A fraction expressed as parts per hundred, written with the symbol %"
+        "term": "Reciprocals",
+        "definition": "The number obtained by interchanging the numerators and denominators of the original number. When a number doesn't have a denominator, 1 is put to reciprocate it"
       }
     ],
     "howToAnswer": [
@@ -71,17 +71,13 @@
       ]
     },
     "commonMistakes": [
-      "Never write 0.34 × 10⁷ as final answer in standard form — always adjust to 3.4 × 10⁶",
-      "Students often forget that 1 ≤ a < 10 in standard form, writing answers like 14.7 × 10⁶",
-      "When converting fractions to percentages, students multiply by 10 instead of 100",
-      "In ratio problems, students add the ratios instead of using cross multiplication",
-      "Students round too early in multi-step calculations, losing accuracy marks"
+      "Including fractions or decimals in natural numbers when they are not included",
+      "Repeating the same element in a set when you are not allowed to repeat elements",
+      "Confusing proper fractions (numerator smaller than denominator) with improper fractions (numerator larger than denominator)"
     ],
     "examinerTips": [
-      "Standard form appears in almost every Paper 2, worth 2-4 marks typically",
-      "Always check your standard form answer: coefficient between 1 and 10",
-      "For estimation questions, show your rounded numbers clearly for method marks",
-      "Percentage questions often test reverse percentages — practice finding original values"
+      "Integers are the most common word used by the examiner",
+      "Candidates are required to memorise square numbers up till 15 for Paper 1"
     ],
     "formulas": [
       "Percentage = (part/whole) × 100%",
@@ -114,7 +110,7 @@
       "Examiner Report 2022: 'Candidates often forgot to subtract from 1 when finding upper tail probabilities' — remember P(Z > a) = 1 - P(Z ≤ a) from normal tables"
     ],
     "keyDiagram": "Students must be able to sketch a normal distribution curve showing the mean (1250), the sample value (1300), and clearly shade the area representing P(X̄ > 1300) in the upper tail. The diagram should include the standardized z-value (1.042) on a second sketch showing the standard normal distribution N(0,1), with the shaded area clearly labeled as 0.149.",
-    "quickRecap": "For normal distribution problems: identify if dealing with individual values or sample means (divide σ by √n for means). Always standardize using Z = (x-μ)/σ. Use normal tables to find probabilities, remembering upper tail = 1 - table value. Keep precision in calculations and clearly show the area you're finding on a sketch."
+    "quickRecap": "Numbers are classified into various families including natural numbers, integers, rational and irrational numbers. Prime numbers have exactly 2 factors while composite numbers have more than two factors. Sets are organised collections of unique elements with specific notation and operations. Fractions can be proper, improper, or mixed numbers, and can be converted between fractions, decimals and percentages."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -122,5 +118,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:22:26.686Z",
   "updated_at": "2026-04-05T21:22:26.687Z",
-  "enriched_at": "2026-04-06T16:05:55.875Z"
+  "enriched_at": "2026-04-06T16:05:55.875Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:24:20.649Z"
 }

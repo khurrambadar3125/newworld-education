@@ -9,37 +9,37 @@
     "title": "Earthquakes and Volcanoes",
     "readTime": "8 min",
     "keyPoints": [
-      "**Earthquakes** occur when tectonic plates move suddenly along fault lines, releasing stored energy as seismic waves",
-      "**Volcanoes** form where molten rock (magma) reaches the Earth's surface through weaknesses in the crust",
-      "Most earthquakes and volcanoes occur at **plate boundaries** where tectonic plates meet and interact",
-      "**Destructive plate boundaries** create the most powerful earthquakes and explosive volcanoes due to oceanic plates subducting beneath continental plates",
-      "**Constructive plate boundaries** produce less violent volcanic activity as plates move apart and magma rises to fill the gap",
-      "**Conservative plate boundaries** cause earthquakes but no volcanic activity as plates slide past each other horizontally",
-      "The **focus** is the point underground where an earthquake originates, while the **epicentre** is the point directly above on the surface",
-      "Earthquake magnitude is measured using the **Richter scale** from 1-10, with each number representing a ten-fold increase in energy",
-      "**Primary effects** of earthquakes include building collapse and ground shaking, while **secondary effects** include tsunamis and landslides",
-      "Pakistan experiences earthquakes along the **collision boundary** between the Indo-Australian and Eurasian plates, particularly in northern regions like Kashmir"
+      "Rabi crops like wheat require mild/warm temperature 10 degree – 20 degree for growing and 20 degrees for ripening",
+      "Light rain of dec-march (western depression) help in the growth of wheat",
+      "Rice is a kharif crop because it requires warm temperatures for growth 20° C to 30° C and monsoon rain for growth/flooding fields 1270-2000mms",
+      "Winter/rabi season is too cold for rice (even in south)",
+      "In cash crop farms large fields are used with higher capital required for modern irrigation system i.e. perennial canals, tubewells, sprinklers",
+      "Cash crop farms use scientific methods e.g hyv seeds, machinery (tractors and harvestor), chemical fertilizers and greater use of pesticides and herbicides",
+      "Barani farming depends entirely on rainfall/rain-fed area with low banks/bunds constructed and farmers too poor to own tractors/lack of machines",
+      "Some years rainfall is insufficient in barani farming causing crops to fail with low yields",
+      "Rice is not grown in areas which only practise barani farming because it requires over 1275mm rainfall in growing season",
+      "Growing rabi crops in winter enables double or multiple crop, provides job throughout the year and increases income of farmers"
     ],
     "definitions": [
       {
-        "term": "Tectonic plates",
-        "definition": "Large sections of the Earth's crust that move slowly on the semi-molten mantle beneath"
+        "term": "Cash crop",
+        "definition": "Crops grown for sale/profit/commercial rather than for consumption by the farmers"
       },
       {
-        "term": "Focus",
-        "definition": "The point underground where an earthquake originates and energy is first released"
+        "term": "Subsistence farming",
+        "definition": "Growing crops for own family"
       },
       {
-        "term": "Epicentre",
-        "definition": "The point on the Earth's surface directly above the focus of an earthquake"
+        "term": "Cash crop farming",
+        "definition": "Growing for sale and profit purpose"
       },
       {
-        "term": "Magma",
-        "definition": "Molten rock found beneath the Earth's surface that becomes lava when it reaches the surface"
+        "term": "Kharif crop",
+        "definition": "Crops that require warm temperatures and monsoon rain for growth"
       },
       {
-        "term": "Subduction",
-        "definition": "The process where an oceanic plate moves beneath a continental plate at a destructive plate boundary"
+        "term": "Barani farming",
+        "definition": "Farming that depends entirely on rainfall/rain-fed area with low banks/bunds constructed"
       }
     ],
     "howToAnswer": [
@@ -72,17 +72,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'plates crash into each other' — always say 'plates converge' or 'move towards each other'",
-      "Students often confuse focus with epicentre — focus is underground, epicentre is on the surface",
-      "Never say volcanoes 'explode' — say they 'erupt' with varying degrees of violence",
-      "Students mix up primary and secondary effects — primary effects happen immediately, secondary effects happen afterwards",
-      "Don't say earthquakes are 'caused by plates moving' — they are caused by the sudden release of pressure when plates stick then slip"
+      "Confusing kharif and rabi seasons - rice is kharif (warm season) while wheat is rabi (cool season)",
+      "Not understanding that rice cannot be grown in barani farming areas due to insufficient rainfall",
+      "Mixing up subsistence and cash crop farming characteristics and inputs"
     ],
     "examinerTips": [
-      "This topic appears in almost every Paper 2 exam — learn plate boundary diagrams thoroughly",
-      "Always draw labelled diagrams for plate boundary questions to earn full marks",
-      "Use specific examples like the 2005 Kashmir earthquake (magnitude 7.6) for Pakistan context",
-      "Learn the difference between constructive, destructive and conservative boundaries — this is frequently tested"
+      "When describing crop seasons, always link to specific temperature ranges - rabi needs 10-20°C for growing, 20°C for ripening",
+      "For rice cultivation, mention both temperature requirements (20-30°C) and rainfall needs (1270-2000mm)"
     ],
     "formulas": [],
     "keyDiagramDescription": "Cross-section diagram showing destructive plate boundary with oceanic plate subducting beneath continental plate, including labels for focus, epicentre, volcano formation, and direction of plate movement",
@@ -110,7 +106,7 @@
       "Examiner Report 2022: 'Weak responses failed to use comparative examples between MEDCs and LEDCs' — always contrast earthquake preparation capabilities between developed nations (Japan, California) and developing countries (Haiti, Nepal) to show varying effectiveness"
     ],
     "keyDiagram": "Students must draw a cross-section diagram showing earthquake preparation measures: underground showing fault line with seismic monitoring stations, surface level showing earthquake-resistant buildings with reinforced foundations, cross-bracing, and flexible joints, plus emergency evacuation routes and assembly points. Label key features: seismometers, base isolation systems, building codes compliance, and emergency infrastructure. Include annotation explaining how each feature reduces earthquake impact.",
-    "quickRecap": "Earthquakes occur at plate boundaries due to sudden energy release along faults, measured by Richter scale. Volcanoes form where magma reaches surface, creating shield, composite, or cinder cone types. Both concentrate along Ring of Fire and mid-ocean ridges. Preparation includes monitoring, building codes, and emergency planning, but effectiveness varies greatly between MEDCs and LEDCs due to economic constraints."
+    "quickRecap": "Pakistan grows both kharif crops (like rice in warm monsoon season) and rabi crops (like wheat in cooler winter). Cash crop farming uses modern inputs and technology for profit, while subsistence farming feeds families with traditional methods. Barani farming relies entirely on natural rainfall and often faces crop failures due to insufficient water."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -118,5 +114,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:56:58.999Z",
   "updated_at": "2026-04-06T03:56:58.999Z",
-  "enriched_at": "2026-04-06T16:08:37.456Z"
+  "enriched_at": "2026-04-06T16:08:37.456Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:36:03.649Z"
 }

@@ -9,32 +9,32 @@
     "title": "Coordinate Geometry",
     "readTime": "8 min",
     "keyPoints": [
-      "The **gradient** of a straight line passing through points (x₁, y₁) and (x₂, y₂) is m = (y₂ - y₁)/(x₂ - x₁)",
-      "The equation of a straight line is **y = mx + c** where m is gradient and c is y-intercept",
-      "**Parallel lines** have equal gradients: m₁ = m₂",
-      "**Perpendicular lines** have gradients where m₁ × m₂ = -1",
-      "The **distance** between two points (x₁, y₁) and (x₂, y₂) is d = √[(x₂ - x₁)² + (y₂ - y₁)²]",
-      "The **midpoint** of a line segment joining (x₁, y₁) and (x₂, y₂) is ((x₁ + x₂)/2, (y₁ + y₂)/2)",
-      "The general equation of a **circle** with centre (a, b) and radius r is (x - a)² + (y - b)² = r²",
-      "A **tangent to a circle** at any point is perpendicular to the radius at that point",
-      "The equation **x² + y² + 2gx + 2fy + c = 0** represents a circle with centre (-g, -f) and radius √(g² + f² - c)"
+      "The solution(s) of a pair of linear and/or non-linear equations correspond to the coordinates of the intersection point(s) of the graphs",
+      "A pair of simultaneous linear equations is of the form ax + by = p, cx + dy = q, where a, b, c and d are constants, x and y are variables to be determined",
+      "There is usually one solution to a pair of simultaneous linear equations",
+      "The elimination method involves making the coefficient of one of the variables the same in both equations, then adding or subtracting to form a single linear equation with only one variable",
+      "The substitution method involves making a variable the subject of the chosen equation, then substituting this into the other equation",
+      "A non-linear equation is not of the form ax + by = p",
+      "For simultaneous non-linear equations, use the linear equation to express one of the variables in terms of the other",
+      "Substitute the linear expression into the non-linear equation to solve",
+      "Substitute the value(s) obtained back into the linear equation to obtain the value of the other variable"
     ],
     "definitions": [
       {
-        "term": "Gradient",
-        "definition": "The measure of steepness of a line, calculated as the ratio of vertical change to horizontal change"
+        "term": "Simultaneous linear equations",
+        "definition": "A pair of equations of the form ax + by = p, cx + dy = q, where a, b, c and d are constants, x and y are variables to be determined"
       },
       {
-        "term": "Tangent",
-        "definition": "A straight line that touches a circle at exactly one point"
+        "term": "Non-linear equation",
+        "definition": "An equation that is not of the form ax + by = p"
       },
       {
-        "term": "Perpendicular",
-        "definition": "Two lines that intersect at right angles (90°)"
+        "term": "Elimination method",
+        "definition": "The coefficient of one of the variables is made the same in both equations. The equations are then either added or subtracted to form a single linear equation with only one variable"
       },
       {
-        "term": "Radius",
-        "definition": "The distance from the centre of a circle to any point on its circumference"
+        "term": "Substitution method",
+        "definition": "A variable is made the subject of the chosen equation. This equation is then substituted into the equation that was not chosen to solve for the variable"
       }
     ],
     "howToAnswer": [
@@ -62,17 +62,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse perpendicular condition m₁ × m₂ = -1 with parallel condition m₁ = m₂",
-      "Students often forget to use the distance formula correctly - always square before adding under the square root",
-      "When expanding circle equations, students miss the factor of 2 in 2gx and 2fy terms",
-      "Never substitute coordinates incorrectly - always check which is x-coordinate and which is y-coordinate",
-      "Students often forget that radius must be positive when finding circle equations"
+      "Not using the linear equation to express variables when solving non-linear simultaneous equations",
+      "Forgetting to substitute back into the linear equation to find the corresponding values of the other variable",
+      "Not properly expanding when substituting expressions into quadratic equations"
     ],
     "examinerTips": [
-      "Coordinate geometry appears in every Paper 2 - usually worth 8-12 marks total",
-      "Always draw a clear diagram showing points, lines and circles with proper labels",
-      "Check your answer by substituting coordinates back into your equation",
-      "Use exact values (fractions/surds) unless specifically asked to round"
+      "Use the linear equation to express one of the variables in terms of the other when dealing with non-linear simultaneous equations",
+      "Always substitute the values obtained back into the linear equation to obtain the corresponding values of the other variable"
     ],
     "formulas": [
       "Gradient: m = (y₂ - y₁)/(x₂ - x₁)",
@@ -108,7 +104,7 @@
       "Examiner Report 2024: 'Common errors included incorrect calculation of perpendicular gradients and sign mistakes in coordinate substitution' — remember that perpendicular gradients multiply to give -1, and check positive/negative signs carefully"
     ],
     "keyDiagram": "Students must be able to sketch a coordinate plane showing: a curve with clearly marked point of contact, tangent line (touching curve at one point), normal line (perpendicular to tangent), intersection points with axes labeled with coordinates, and gradient triangles showing rise/run calculations. Include proper labeling of all coordinates, especially where lines meet axes.",
-    "quickRecap": "Coordinate geometry combines algebra with geometric shapes on the x-y plane. Key formulas: distance = √[(x₂-x₁)² + (y₂-y₁)²], midpoint = ((x₁+x₂)/2, (y₁+y₂)/2), gradient = (y₂-y₁)/(x₂-x₁). Perpendicular gradients multiply to give -1. When finding curve equations from differential equations, always use given points to find integration constants."
+    "quickRecap": "Simultaneous equations can be linear or non-linear, with solutions corresponding to intersection points of graphs. Linear equations are solved using elimination or substitution methods. For non-linear simultaneous equations, use the linear equation to express one variable in terms of another, substitute into the non-linear equation, then find corresponding values by substituting back into the linear equation."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -116,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:16:03.399Z",
   "updated_at": "2026-04-06T04:16:03.399Z",
-  "enriched_at": "2026-04-06T16:22:27.275Z"
+  "enriched_at": "2026-04-06T16:22:27.275Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:48:01.087Z"
 }

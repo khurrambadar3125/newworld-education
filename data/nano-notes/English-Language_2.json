@@ -9,36 +9,36 @@
     "title": "Reading for comprehension",
     "readTime": "8 min",
     "keyPoints": [
-      "**Explicit information** is directly stated in the passage and can be found word-for-word in the text",
-      "**Implicit information** requires inference and reading between the lines to understand what is suggested but not directly stated",
-      "When answering in **your own words**, never copy phrases longer than 2-3 words from the passage",
-      "**Author's attitude** questions require identifying tone words like positive, negative, critical, admiring, or neutral",
-      "**Opinion questions** ask for the writer's viewpoint - look for evaluative language and judgment words",
-      "Use **context clues** around unfamiliar vocabulary to determine meaning from surrounding words",
-      "**Scanning** helps locate specific information quickly by looking for key words and phrases",
-      "**Skimming** gives you the general idea and main points before detailed reading",
-      "Always **quote exactly** when the question asks for words or phrases from the passage"
+      "Candidates answer two questions: the compulsory question in Section 1 and one question from Section 2",
+      "Section 1: Directed Writing (30 marks) - Candidates write a response of 200–300 words",
+      "Section 2: Composition (30 marks) - Candidates write a response of 350–500 words",
+      "Argumentative essays follow 5 paragraphs: Introduction with thesis statement, 2 body paragraphs with claims and evidence, 1 paragraph with counter claims that are refuted, and conclusion",
+      "The 30 marks are allocated as follows: Task Fulfilment 15 marks, Language 15 marks",
+      "Good understanding of purpose, clear awareness of situation and audience, format entirely appropriate",
+      "All required points developed in detail, fully amplified and well organised",
+      "The body of your essay will contain the meat of your argument with relevant facts, statistics, narratives, testimonials",
+      "Sentence structures varied for particular effects, verb forms largely correct and appropriate tenses consistently used"
     ],
     "definitions": [
       {
-        "term": "Explicit information",
-        "definition": "Information that is clearly and directly stated in the text without need for interpretation"
+        "term": "Thesis statement",
+        "definition": "Your statement of belief that appears as the last line of your introduction"
       },
       {
-        "term": "Implicit information",
-        "definition": "Information that is suggested or hinted at but not directly stated, requiring the reader to make inferences"
+        "term": "Task Fulfilment",
+        "definition": "Assessment criteria worth 15 marks evaluating understanding of purpose, awareness of situation and audience, format appropriateness, and development of required points"
       },
       {
-        "term": "Context clues",
-        "definition": "Words or phrases surrounding an unfamiliar word that help determine its meaning"
+        "term": "Directed Writing",
+        "definition": "Compulsory writing task in Section 1 worth 30 marks requiring 200–300 words"
       },
       {
-        "term": "Author's attitude",
-        "definition": "The writer's feelings, opinions or stance toward the subject being discussed"
+        "term": "Counter claims",
+        "definition": "1 or 2 claims that go against your argument which you then refute with evidence"
       },
       {
-        "term": "Inference",
-        "definition": "A logical conclusion drawn from evidence and reasoning rather than explicit statements"
+        "term": "Modes of persuasion",
+        "definition": "Various techniques like appeal to emotion or logic used in the body of argumentative essays"
       }
     ],
     "howToAnswer": [
@@ -74,17 +74,16 @@
       ]
     },
     "commonMistakes": [
-      "Never copy long phrases when asked for 'own words' - paraphrase using different vocabulary",
-      "Students often confuse explicit (stated) with implicit (suggested) information",
-      "Don't give personal opinions when asked for the author's attitude or viewpoint",
-      "Avoid looking for implicit meaning when information is clearly stated explicitly",
-      "Never ignore context clues when determining word meanings - use surrounding text"
+      "Commonly confused words, for example, their/there, seat/sit",
+      "Incorrect use of possessive pronouns",
+      "Writing incomplete sentences in informal writing - for example, 'Hope your family are all well' rather than 'I hope your family are all well'",
+      "Incorrect tenses and agreement",
+      "Not developing the bullet points as evenly as possible in Section 1 tasks"
     ],
     "examinerTips": [
-      "Reading comprehension appears in Paper 2 and is worth 25 marks - practice daily",
-      "Read the questions first to know what to look for in the passage",
-      "Underline key words in questions to focus your search for answers",
-      "For attitude questions, look for adjectives and adverbs that show the writer's feelings"
+      "It is essential to read the question carefully and be clear about its particular focus",
+      "In Section 1 tasks it is important to develop the bullet points as evenly as possible",
+      "It is essential to write in full sentences, even in informal writing"
     ],
     "formulas": [],
     "keyDiagramDescription": "No specific diagram required for this topic - focus on text analysis and annotation techniques",
@@ -112,7 +111,7 @@
       "Examiner Report 2023: 'Students frequently copied large chunks of text without explanation' — always analyze and interpret quotations rather than simply repeating them"
     ],
     "keyDiagram": "Students should be able to create a 'Question Type Recognition Chart' with three columns: Question Stems (e.g., 'How does the writer show...', 'What impression do you get...', 'Why does the writer use...'), Required Skills (literal comprehension, inference, language analysis), and Response Structure (point-evidence-analysis format). This visual guide helps students quickly identify what each question type demands and structure appropriate responses.",
-    "quickRecap": "Reading comprehension requires three key skills: literal understanding (what the text actually says), inference (reading between the lines), and language analysis (how writers create effects through word choice, imagery, and structure). Always support answers with specific quotations and explain how language techniques create meaning. Practice identifying question types to structure responses appropriately and avoid copying text without analysis."
+    "quickRecap": "Cambridge O Level English Language Paper 1 consists of two sections: compulsory Directed Writing (200-300 words) and Composition (350-500 words). Each section is worth 30 marks split between Task Fulfilment and Language. Argumentative essays require a 5-paragraph structure with thesis statement, supporting claims with evidence, counter-arguments that are refuted, and a strong conclusion."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +119,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:48:05.871Z",
   "updated_at": "2026-04-06T03:48:05.871Z",
-  "enriched_at": "2026-04-06T16:06:48.457Z"
+  "enriched_at": "2026-04-06T16:06:48.457Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:22:26.985Z"
 }

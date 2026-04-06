@@ -9,35 +9,35 @@
     "title": "Manufacturing accounts",
     "readTime": "8 min",
     "keyPoints": [
-      "**Prime cost** consists of direct materials, direct labour, and direct expenses only",
-      "**Factory overhead** includes all indirect manufacturing costs such as factory rent, factory insurance, and depreciation of plant and machinery",
-      "**Production cost** equals prime cost plus factory overhead (production cost = prime cost + factory overhead)",
-      "**Work in progress** represents partly finished goods at the beginning and end of the accounting period",
-      "**Factory cost of goods produced** equals production cost plus opening work in progress minus closing work in progress",
-      "**Direct materials** equals opening stock plus purchases minus closing stock of raw materials",
-      "Manufacturing accounts are prepared to calculate the **cost of goods produced** which is then transferred to the trading account",
-      "Factory overhead is **absorbed** into production cost and distributed over all units produced during the period"
+      "Manufacturing accounts are specialized financial statements for businesses that produce goods rather than simply buy and sell them",
+      "There are different types of inventories in manufacturing businesses that must be properly categorized and valued",
+      "Manufacturing businesses require specific final accounts that differ from trading businesses",
+      "The process involves measuring, identifying, and communicating financial information recorded by the book-keeper which facilitates the preparation of financial statements",
+      "Manufacturing accounts deal with maintaining financial statements from the bookkeeping records",
+      "Assets can be categorized as tangible (things you can touch like buildings, equipment, or furniture) and intangible (things like patents, trademarks, brand recognition and goodwill)",
+      "Current assets have monetary value or can be converted into cash within 12 months, while non-current assets are used for more than 12 months without being intended for resale",
+      "The basic accounting equation applies: Assets = Capital + Liabilities"
     ],
     "definitions": [
       {
-        "term": "Prime cost",
-        "definition": "The total of direct materials, direct labour and direct expenses incurred in manufacturing"
+        "term": "Manufacturing Accounts",
+        "definition": "Specialized financial statements for manufacturing businesses covered in Topic 13"
       },
       {
-        "term": "Factory overhead",
-        "definition": "All indirect costs incurred in the factory during production such as factory rent, factory insurance and depreciation of plant and machinery"
+        "term": "Current Assets",
+        "definition": "An asset which has a monetary value or can be converted into cash within 12 months. Examples include account receivables and cash"
       },
       {
-        "term": "Production cost",
-        "definition": "Prime cost plus factory overhead representing the total cost of manufacturing goods"
+        "term": "Non-Current Assets",
+        "definition": "Also known as Fixed Assets, these assets are acquired to earn revenue for the company and used for more than 12 months without being intended for resale. Examples include buildings and machinery, tools, and vehicles"
       },
       {
-        "term": "Work in progress",
-        "definition": "Partly finished goods that are still in the process of manufacture at the end of the accounting period"
+        "term": "Tangible Assets",
+        "definition": "Something you can touch, like a building, equipment, or furniture in an office. Tangible assets can be divided into two categories: inventory (things a company sells) and fixed assets (things a company uses to make its products or provide services)"
       },
       {
-        "term": "Direct materials",
-        "definition": "Raw materials that can be directly identified with and allocated to specific units of production"
+        "term": "Accounting",
+        "definition": "The process that starts once the book-keeper finishes recording the financial transactions. It deals with measuring, identifying, and communicating financial information recorded by the book-keeper which facilitates the preparation of financial statements"
       }
     ],
     "howToAnswer": [
@@ -65,17 +65,13 @@
       ]
     },
     "commonMistakes": [
-      "Never include factory overhead in prime cost — prime cost only includes direct costs",
-      "Students often forget to adjust for opening and closing work in progress when calculating factory cost of goods produced",
-      "Never include selling and distribution expenses in manufacturing accounts — these belong in profit and loss account",
-      "Students confuse direct and indirect costs — factory supervisor salary is indirect, machine operator salary is direct",
-      "Never add closing work in progress — it should be deducted to find factory cost of goods produced"
+      "Confusing bookkeeping with accounting - bookkeeping involves recording financial transactions while accounting deals with maintaining financial statements",
+      "Incorrectly categorizing assets as current vs non-current based on the 12-month rule",
+      "Mixing up tangible and intangible assets and their proper classification"
     ],
     "examinerTips": [
-      "Manufacturing accounts appear frequently in Paper 2 Section B",
-      "Always use the three-section format: Prime cost, Factory overhead, Work in progress adjustments",
-      "Show all calculations separately before entering into the manufacturing account",
-      "The figure for factory cost of goods produced transfers to the trading account as purchases"
+      "Remember that manufacturing businesses have different types of inventories that must be properly identified and categorized",
+      "Understand that final accounts of manufacturing businesses differ from simple trading businesses"
     ],
     "formulas": [
       "Prime cost = Direct materials + Direct labour + Direct expenses",
@@ -107,7 +103,7 @@
       "Examiner Report 2021: 'Poor presentation of manufacturing account format' — always use proper headings, show prime cost subtotal clearly, and transfer final figure to trading account as cost of goods manufactured"
     ],
     "keyDiagram": "Students must be able to draw the manufacturing account format showing three distinct sections: (1) Raw Materials section with opening stock + purchases - closing stock = consumed, (2) Prime Cost section adding raw materials consumed + direct labor + direct expenses, (3) Factory Cost section adding prime cost + factory overheads + opening WIP - closing WIP = factory cost of production. The diagram should show clear arrows indicating the flow and transfer of the final figure to the trading account as 'Cost of Goods Manufactured'.",
-    "quickRecap": "Manufacturing accounts calculate the cost of producing goods in a factory. Start with raw materials consumed (opening + purchases - closing), add direct wages for prime cost, then add factory overheads and adjust for work-in-progress. The final factory cost of production transfers to the trading account. Remember: only include factory-related expenses, not administrative costs."
+    "quickRecap": "Manufacturing accounts are specialized financial statements for businesses that produce goods, requiring specific treatment of different types of inventories. The accounting process involves measuring, identifying, and communicating financial information to prepare financial statements. Manufacturing businesses require unique final accounts that differ from trading businesses, and proper classification of assets and liabilities using the fundamental accounting equation."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -115,5 +111,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:42:18.118Z",
   "updated_at": "2026-04-06T03:42:18.118Z",
-  "enriched_at": "2026-04-06T16:10:29.479Z"
+  "enriched_at": "2026-04-06T16:10:29.479Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:29:11.999Z"
 }

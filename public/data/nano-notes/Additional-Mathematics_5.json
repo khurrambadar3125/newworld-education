@@ -9,32 +9,32 @@
     "title": "Calculus",
     "readTime": "8 min",
     "keyPoints": [
-      "**Differentiation** finds the gradient of a curve at any point and gives the rate of change",
-      "**Integration** is the reverse process of differentiation and finds the area under a curve",
-      "The **derivative** of xⁿ is nxⁿ⁻¹ using the power rule",
-      "The **gradient function** dy/dx gives the gradient at any point on the curve y = f(x)",
-      "**Definite integration** between limits a and b gives the exact area under the curve",
-      "**Indefinite integration** includes a constant of integration +C",
-      "**Chain rule** is used for differentiating composite functions: dy/dx = dy/du × du/dx",
-      "**Product rule** for differentiating uv is u(dv/dx) + v(du/dx)",
-      "**Stationary points** occur where dy/dx = 0 and can be maximum, minimum or point of inflection"
+      "The solution(s) of a pair of linear and/or non-linear equations correspond to the coordinates of the intersection point(s) of the graphs",
+      "A pair of simultaneous linear equations is of the form ax + by = p, cx + dy = q, where a, b, c and d are constants, x and y are variables to be determined",
+      "There is usually one solution to a pair of simultaneous linear equations",
+      "The methods most commonly used to solve simultaneous linear equations are Elimination and Substitution",
+      "In elimination, the coefficient of one of the variables is made the same in both equations. The equations are then either added or subtracted to form a single linear equation with only one variable",
+      "In substitution, a variable is made the subject of the chosen equation. This equation is then substituted into the equation that was not chosen to solve for the variable",
+      "A non-linear equation is not of the form ax + by = p",
+      "The method most commonly used to solve simultaneous non-linear equations is Substitution",
+      "For non-linear equations: Step 1: Use the linear equation to express one of the variables in terms of the other. Step 2: Substitute it into the non-linear equation. Step 3: Substitute the value(s) obtained in Step 2 into the linear equation to obtain the value of the other variable"
     ],
     "definitions": [
       {
-        "term": "Derivative",
-        "definition": "The gradient of the tangent to a curve at a given point, representing the rate of change"
+        "term": "Simultaneous linear equations",
+        "definition": "A pair of simultaneous linear equations is of the form ax + by = p, cx + dy = q, where a, b, c and d are constants, x and y are variables to be determined"
       },
       {
-        "term": "Integration",
-        "definition": "The reverse process of differentiation, used to find areas under curves and original functions"
+        "term": "Non-linear equation",
+        "definition": "A non-linear equation is not of the form ax + by = p"
       },
       {
-        "term": "Stationary point",
-        "definition": "A point on a curve where the gradient is zero (dy/dx = 0)"
+        "term": "Elimination method",
+        "definition": "The coefficient of one of the variables is made the same in both equations. The equations are then either added or subtracted to form a single linear equation with only one variable"
       },
       {
-        "term": "Definite integral",
-        "definition": "Integration between two limits that gives a numerical value for the area under a curve"
+        "term": "Substitution method",
+        "definition": "A variable is made the subject of the chosen equation. This equation is then substituted into the equation that was not chosen to solve for the variable"
       }
     ],
     "howToAnswer": [
@@ -62,17 +62,13 @@
       ]
     },
     "commonMistakes": [
-      "Never forget the constant of integration +C in indefinite integrals",
-      "Students often confuse the limits in definite integration - always substitute upper limit first then subtract lower limit",
-      "Writing dx/dy instead of dy/dx when finding gradients",
-      "Forgetting to use the chain rule when differentiating composite functions",
-      "Not showing the substitution step clearly when evaluating definite integrals"
+      "Not making coefficients the same before adding or subtracting in elimination method",
+      "Forgetting to substitute back into the linear equation to find the other variable in non-linear problems",
+      "Not expanding brackets correctly when substituting expressions"
     ],
     "examinerTips": [
-      "Differentiation and integration questions appear in every Paper 2",
-      "Always check your differentiation by differentiating your integral back to the original function",
-      "Show substitution steps clearly for full marks in definite integration",
-      "Use brackets when substituting negative values into expressions"
+      "Use the linear equation to express one variable in terms of the other when solving non-linear simultaneous equations",
+      "Always substitute the values of x into the linear equation to obtain the corresponding values of y"
     ],
     "formulas": [
       "d/dx(xⁿ) = nxⁿ⁻¹",
@@ -106,7 +102,7 @@
       "Examiner Report 2023: 'Common error was writing Δy = dy instead of Δy ≈ dy/dx × Δx' — remember that small changes use the approximation formula, not exact differentials"
     ],
     "keyDiagram": "Students must be able to sketch a curve showing a tangent line at point (a, f(a)), with clear labels showing: the point of tangency, the tangent line with gradient f'(a), small increments Δx and Δy marked, and the approximation Δy ≈ f'(a)Δx illustrated as the rise of the tangent line over the interval Δx. Include arrows showing the actual curve change versus the linear approximation.",
-    "quickRecap": "For small changes: Δy ≈ (dy/dx) × Δx. First find dy/dx using differentiation (implicit if needed), then substitute the given point to get a numerical value for the gradient. Finally multiply by the small change in x (often written as h) to get the approximate change in y. Always check units and signs in your final answer."
+    "quickRecap": "Simultaneous equations can be linear or non-linear, with solutions corresponding to intersection points of graphs. Linear equations are commonly solved using elimination or substitution methods. For non-linear equations, use the linear equation to express one variable in terms of another, substitute into the non-linear equation, then find both variables. There is usually one solution to a pair of simultaneous linear equations."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -114,5 +110,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:16:44.221Z",
   "updated_at": "2026-04-06T04:16:44.221Z",
-  "enriched_at": "2026-04-06T16:23:21.446Z"
+  "enriched_at": "2026-04-06T16:23:21.446Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:48:30.241Z"
 }

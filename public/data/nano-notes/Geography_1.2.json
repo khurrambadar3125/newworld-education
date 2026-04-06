@@ -9,37 +9,37 @@
     "title": "Migration",
     "readTime": "8 min",
     "keyPoints": [
-      "**Migration** is the movement of people from one place to another with the intention of settling permanently or temporarily",
-      "**Immigration** is the movement of people into a country, while **emigration** is the movement of people out of a country",
-      "**Push factors** are negative conditions that force people to leave their origin, such as natural disasters, poverty, war, and unemployment",
-      "**Pull factors** are positive attractions that draw people to a destination, such as better job opportunities, education, healthcare, and political stability",
-      "**Voluntary migration** occurs when people choose to move freely, while **forced migration** occurs when people are compelled to move against their will",
-      "**Internal migration** is movement within a country (rural to urban), while **international migration** is movement between countries",
-      "**Refugees** are people forced to leave their country due to persecution, war, or violence and cannot return safely",
-      "Migration has **economic impacts** including remittances sent home, labour shortages in origin areas, and increased labour supply in destination areas",
-      "Migration has **social impacts** including family separation, cultural mixing, pressure on services, and demographic changes",
-      "Migration has **political impacts** including brain drain, tensions between communities, and changes in government policies"
+      "Cash crop farms use large fields and require higher capital for modern irrigation systems like perennial canals, tubewells, and sprinklers",
+      "Cash crop farms utilize scientific methods including HYV seeds, machinery like tractors and harvestors, chemical fertilizers and greater use of pesticides and herbicides",
+      "Subsistence farming uses small land with low capital investment, old irrigation methods like shaduf, desi variety of seeds, and most work done manually by family",
+      "Rabi crops like wheat require mild/warm temperature 10-20 degrees for growing and 20 degrees for ripening, with light rain from Dec-March helping growth",
+      "Rice is a kharif crop because it requires warm temperatures 20-30°C for growth, monsoon rain for flooding fields (1270-2000mm), and dry season for harvest",
+      "Barani farming depends entirely on rainfall with low banks/bunds constructed, farmers too poor to own tractors using traditional methods and animal dung",
+      "Natural inundation farming differs from irrigation as farmers have no control of water supply, variable seasonal cropping, and usually can only grow coarser grains",
+      "Winter crop cultivation enables double or multiple cropping, provides jobs throughout the year, increases farmer income and provides more food sources",
+      "Rice is not grown in barani farming areas because it requires over 1275mm rainfall in growing season, preferably over 2000mm, which nowhere in Pakistan receives",
+      "Important grain crops include Rice and Maize (kharif crops) and Wheat (rabi crop), with main wheat growing areas including Gujranwala, Nausharo Firoz and Nawabshah"
     ],
     "definitions": [
       {
-        "term": "Migration",
-        "definition": "The movement of people from one place to another with the intention of settling there permanently or temporarily"
+        "term": "Cash crop",
+        "definition": "Crops grown for sale/profit/commercial rather than for consumption by the farmers"
       },
       {
-        "term": "Refugee",
-        "definition": "A person who has been forced to leave their country due to persecution, war or violence and cannot return safely"
+        "term": "Subsistence farming",
+        "definition": "Growing crops for own family"
       },
       {
-        "term": "Push factors",
-        "definition": "Negative conditions in the origin that force or encourage people to leave an area"
+        "term": "Cash crop farming",
+        "definition": "Growing for sale and profit purpose"
       },
       {
-        "term": "Pull factors",
-        "definition": "Positive attractions or conditions in the destination that draw people to move to an area"
+        "term": "Kharif crop",
+        "definition": "Crops that require warm temperatures for growth, monsoon rain, and are harvested in dry season"
       },
       {
-        "term": "Brain drain",
-        "definition": "The emigration of highly skilled and educated people from their home country to other countries"
+        "term": "Barani farming",
+        "definition": "Farming that depends entirely on rainfall/rain-fed area with low banks/bunds constructed and traditional methods used"
       }
     ],
     "howToAnswer": [
@@ -74,18 +74,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'people move for better life' — always specify what aspects (jobs, education, healthcare)",
-      "Students often confuse immigration with emigration — remember immigration is INTO a country",
-      "Don't just list factors — always explain WHY they cause migration using 'because' or 'this is because'",
-      "Never say refugees 'choose' to move — they are forced to move due to persecution or conflict",
-      "Don't confuse internal migration (within country) with international migration (between countries)"
+      "Confusing kharif and rabi seasons - remember rabi crops need mild temperatures 10-20°C while kharif crops need warm temperatures 20-30°C",
+      "Thinking rice can be grown in barani areas - rice requires over 1275mm rainfall which nowhere in Pakistan receives naturally",
+      "Not understanding that natural inundation farming has no control over water supply unlike irrigation systems",
+      "Mixing up subsistence and cash crop characteristics - subsistence uses family labor and small fields while cash crops use hired labor and large fields"
     ],
     "examinerTips": [
-      "Migration questions appear frequently in Paper 2 - practice explaining push and pull factors",
-      "Always give specific examples when explaining impacts of migration",
-      "Use Pakistani examples: rural-urban migration to Karachi, Afghan refugees in Pakistan",
-      "For 6-mark questions, aim for 3 different points with explanations",
-      "Remember to distinguish between voluntary and forced migration in your answers"
+      "When describing farming differences, clearly contrast the capital requirements, field sizes, irrigation methods, and labor types between subsistence and cash crop farming",
+      "For crop seasonality questions, always link temperature and rainfall requirements to the specific growing season and mention the geographic areas where suitable conditions exist"
     ],
     "formulas": [],
     "keyDiagramDescription": "Migration flow diagram showing origin and destination connected by arrow, with push factors (negative) at origin and pull factors (positive) at destination. Include barriers/obstacles that may prevent migration such as distance, cost, language, and government policies.",
@@ -113,7 +109,7 @@
       "Examiner Report 2022: 'Students described migration without explaining impacts on population structure' — always link migration to specific demographic changes like age pyramids, dependency ratios, and birth/death rates"
     ],
     "keyDiagram": "Lee's Push-Pull Migration Model: Draw two boxes labeled 'Origin' and 'Destination' connected by an arrow. In Origin box, list push factors (unemployment, conflict, natural disasters, poor services). In Destination box, list pull factors (job opportunities, safety, better climate, superior healthcare/education). Add 'Intervening Obstacles' across the arrow (distance, cost, immigration laws, language barriers). Include examples like Mexico→USA migration with specific push/pull factors.",
-    "quickRecap": "Migration involves permanent movement between places, classified as internal (within country) or international (between countries). Push factors force people to leave (unemployment, conflict), while pull factors attract them to destinations (jobs, safety). Governments control international migration through visa systems and border controls, but economic needs limit this control. Positive net migration creates younger population structures and higher birth rates in receiving areas."
+    "quickRecap": "Pakistani agriculture involves different farming systems from subsistence farming using small fields and family labor to cash crop farming requiring large capital and modern machinery. Crops are seasonal with kharif crops like rice needing warm temperatures and monsoon rains, while rabi crops like wheat need mild temperatures and light winter rains. Barani farming depends entirely on natural rainfall while other systems use irrigation or natural inundation, each with distinct characteristics and crop limitations."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -121,5 +117,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:54:32.349Z",
   "updated_at": "2026-04-06T03:54:32.349Z",
-  "enriched_at": "2026-04-06T16:06:20.685Z"
+  "enriched_at": "2026-04-06T16:06:20.685Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:34:12.054Z"
 }

@@ -9,32 +9,32 @@
     "title": "Trigonometry",
     "readTime": "8 min",
     "keyPoints": [
-      "In a **right-angled triangle**, sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse, tan θ = opposite/adjacent",
-      "**Angle of elevation** is the angle above the horizontal line when looking upward",
-      "**Angle of depression** is the angle below the horizontal line when looking downward",
-      "**Bearing** is the direction measured clockwise from North, always given as a three-figure bearing (e.g., 045°)",
-      "**Sine rule**: a/sin A = b/sin B = c/sin C, used when given two angles and one side or two sides and a non-included angle",
-      "**Cosine rule**: a² = b² + c² - 2bc cos A, used when given two sides and the included angle or three sides",
-      "**Area of triangle** = ½ab sin C where a and b are two sides and C is the included angle",
-      "For **three-dimensional problems**, identify right-angled triangles by drawing clear diagrams showing the required angle or distance",
-      "Always use **exact values** where possible: sin 30° = ½, cos 60° = ½, sin 60° = √3/2, cos 30° = √3/2, tan 60° = √3"
+      "Natural numbers are all the positive integers from 1 to infinity, fractions or decimals are not included",
+      "Whole numbers are all the positive integers including zero",
+      "Integers include positive numbers, negative numbers or zero and are the most common word used by the examiner",
+      "Prime numbers have exactly 2 factors: 1 and the number itself",
+      "Composite numbers have more than two factors",
+      "Rational numbers can be expressed in the form of a ratio and must either end (terminating decimals) or repeat (recurring decimals)",
+      "Irrational numbers cannot be expressed in the form of a fraction, such as π, √2, √7",
+      "Real numbers include all rational and irrational numbers - all the numbers that exist",
+      "HCF (Highest common factor) is the largest number that is a common factor of two different numbers, while LCM (Lowest common multiple) is the smallest number that is the multiple of two different numbers"
     ],
     "definitions": [
       {
-        "term": "Angle of elevation",
-        "definition": "The angle measured upward from the horizontal to the line of sight"
+        "term": "Natural numbers",
+        "definition": "All the positive integers from 1 to infinity. Fractions or decimals are not included. They are also called Positive Integers"
       },
       {
-        "term": "Angle of depression",
-        "definition": "The angle measured downward from the horizontal to the line of sight"
+        "term": "Prime numbers",
+        "definition": "Numbers that have exactly 2 factors: 1 and the number itself"
       },
       {
-        "term": "Bearing",
-        "definition": "The direction of travel measured clockwise from North, expressed as a three-figure angle"
+        "term": "Rational numbers",
+        "definition": "Any whole number that can be written as a pure fraction or decimal. Numbers that can be expressed in the form of a ratio"
       },
       {
-        "term": "Sine rule",
-        "definition": "a/sin A = b/sin B = c/sin C, relating the sides and angles of any triangle"
+        "term": "Set",
+        "definition": "An organised, unique collection of elements. You are not allowed to repeat the same element in a set"
       }
     ],
     "howToAnswer": [
@@ -63,18 +63,15 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse angle of elevation with angle of depression - elevation is above horizontal, depression is below",
-      "Students often forget to convert bearing problems into triangle angles - always find the angle inside the triangle",
-      "Using sine rule when cosine rule is needed - use sine rule only when given two angles and one side or two sides and non-included angle",
-      "Forgetting to use exact values for special angles (30°, 45°, 60°) when asked",
-      "In 3D problems, students fail to identify the correct right-angled triangle containing the required angle"
+      "Including fractions or decimals when listing natural numbers",
+      "Confusing integers (which include negative numbers) with natural numbers or whole numbers",
+      "Repeating the same element in a set when sets must contain unique elements only",
+      "Confusing HCF and LCM - HCF is the largest common factor while LCM is the smallest common multiple"
     ],
     "examinerTips": [
-      "This topic appears in almost every Paper 2, usually worth 6-8 marks",
-      "Always draw and label diagrams clearly - marks are awarded for correct diagrams",
-      "For bearing problems, mark North direction clearly on your diagram",
-      "In 3D problems, draw separate 2D triangles to avoid confusion",
-      "Check calculator is in degree mode before starting trigonometry questions"
+      "Integers are the most common word used by the examiner",
+      "Candidates are required to memorise square numbers up till 15 for Paper 1",
+      "A colon ':' in set notation should be read as 'such that'"
     ],
     "formulas": [
       "sin θ = opp/hyp, cos θ = adj/hyp, tan θ = opp/adj",
@@ -106,7 +103,7 @@
       "Examiner Report 2023: 'Common error was using wrong triangle in bearings questions' — when solving bearing problems, always draw North lines and identify the angle being calculated clearly"
     ],
     "keyDiagram": "Draw a right-angled triangle clearly labeled with: hypotenuse (longest side opposite the right angle), opposite side (opposite to the angle being used), adjacent side (next to the angle being used). Mark the angle with an arc and label it θ or the given letter. Include the trigonometric ratios: SOH (sin = opp/hyp), CAH (cos = adj/hyp), TOA (tan = opp/adj) written beside the triangle.",
-    "quickRecap": "SOH-CAH-TOA: sin = opposite/hypotenuse, cos = adjacent/hypotenuse, tan = opposite/adjacent. For angles of elevation/depression, draw the triangle first and identify which sides you know. Special angles: sin 30° = ½, cos 60° = ½, sin 45° = cos 45° = 1/√2, tan 45° = 1. Always check calculator is in degree mode and give answers to required accuracy."
+    "quickRecap": "Numbers are classified into different families including natural numbers (positive integers), whole numbers (including zero), integers (positive, negative or zero), and real numbers (all numbers that exist). Prime numbers have exactly two factors while composite numbers have more than two. Sets are organised collections of unique elements with specific notation symbols for operations like union and intersection."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -114,5 +111,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:23:54.951Z",
   "updated_at": "2026-04-05T21:23:54.951Z",
-  "enriched_at": "2026-04-06T16:07:41.109Z"
+  "enriched_at": "2026-04-06T16:07:41.109Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:25:38.885Z"
 }

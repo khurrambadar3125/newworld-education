@@ -9,35 +9,12 @@
     "title": "Group 2",
     "readTime": "8 min",
     "keyPoints": [
-      "Group 2 elements are **alkaline earth metals** with electronic configuration ns² where n is the outer shell",
-      "Group 2 elements show **metallic bonding** and form **ionic compounds** with oxidation state +2",
-      "**Atomic radius increases** down Group 2 due to additional electron shells",
-      "**First ionisation energy decreases** down Group 2 as outer electrons are further from nucleus and more shielded",
-      "**Reactivity increases** down Group 2 because ionisation energies decrease making electron loss easier",
-      "**Thermal stability of carbonates increases** down Group 2: MgCO₃ < CaCO₃ < SrCO₃ < BaCO₃",
-      "**Thermal stability of nitrates increases** down Group 2 following the same pattern as carbonates",
-      "Group 2 hydroxides become **more soluble** down the group: Mg(OH)₂ < Ca(OH)₂ < Sr(OH)₂ < Ba(OH)₂",
-      "Group 2 sulfates become **less soluble** down the group: MgSO₄ > CaSO₄ > SrSO₄ > BaSO₄",
-      "**Flame test colours**: Mg - no colour, Ca - brick red, Sr - crimson red, Ba - green"
+      "Group 2 elements have characteristic physical properties that show trends down the group",
+      "Group 2 elements undergo specific reactions that follow predictable patterns",
+      "Thermal decomposition of Group 2 carbonates and nitrates occurs under specific conditions",
+      "Group 2 compounds have important practical uses in various applications"
     ],
-    "definitions": [
-      {
-        "term": "Alkaline earth metals",
-        "definition": "Group 2 elements that form alkaline solutions when their oxides react with water"
-      },
-      {
-        "term": "Thermal decomposition",
-        "definition": "Breaking down of a compound by heat into two or more simpler substances"
-      },
-      {
-        "term": "Polarising power",
-        "definition": "The ability of a cation to distort the electron cloud of an anion"
-      },
-      {
-        "term": "Lattice enthalpy",
-        "definition": "The enthalpy change when one mole of an ionic solid is formed from gaseous ions under standard conditions"
-      }
-    ],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -66,19 +43,8 @@
         "Mark 3: Higher charge density causes greater polarisation of carbonate ion"
       ]
     },
-    "commonMistakes": [
-      "Never say 'atomic size' — always say 'atomic radius' or 'ionic radius'",
-      "Students often confuse solubility trends: hydroxides increase, sulfates decrease down Group 2",
-      "Don't say 'stability increases because atoms get bigger' — explain using charge density and polarising power",
-      "Never write M²⁺ in equations — always specify the actual metal (Mg²⁺, Ca²⁺, etc.)",
-      "Students forget that MgCO₃ and Mg(NO₃)₂ decompose at relatively low temperatures compared to other Group 2 compounds"
-    ],
-    "examinerTips": [
-      "Thermal stability questions appear frequently - learn the charge density explanation",
-      "Always give specific examples when discussing trends (e.g. Mg vs Ba)",
-      "Solubility questions often test both hydroxides and sulfates - learn both trends",
-      "Flame tests are commonly tested - memorise colours exactly as given in syllabus"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [
       "MCO₃ → MO + CO₂",
       "M(NO₃)₂ → MO + 2NO₂ + ½O₂",
@@ -110,7 +76,7 @@
       "Examiner Report 2023: 'Weak explanations of reactivity trends often missed the key concept of ionization energy' — always mention that reactivity increases down Group 2 because first and second ionization energies decrease, making electron loss easier"
     ],
     "keyDiagram": "Reactivity trend diagram showing Group 2 elements (Mg, Ca, Sr, Ba) with vertical arrows indicating: atomic radius increases downward, ionization energy decreases downward, reactivity with water increases downward. Include observations: Mg - very slow reaction with steam, Ca - steady bubbling with cold water, Sr - vigorous bubbling, Ba - very vigorous reaction. Show relative positions and trends clearly with labeled arrows.",
-    "quickRecap": "Group 2 elements become more reactive down the group as ionization energies decrease. Hydroxides become more soluble (Mg(OH)₂ insoluble → Ba(OH)₂ soluble) while sulfates become less soluble (MgSO₄ soluble → BaSO₄ insoluble). All form 2+ ions and react with water to produce hydrogen gas. Thermal stability of carbonates and nitrates increases down the group due to decreasing charge density of cations."
+    "quickRecap": "Group 2 elements display characteristic physical properties and undergo predictable reactions. The thermal decomposition behavior of their carbonates and nitrates follows specific patterns. These elements and their compounds have significant practical applications."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -118,5 +84,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:33:00.193Z",
   "updated_at": "2026-04-06T04:33:00.193Z",
-  "enriched_at": "2026-04-06T16:08:32.382Z"
+  "enriched_at": "2026-04-06T16:08:32.382Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:43:53.743Z"
 }

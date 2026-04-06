@@ -9,36 +9,36 @@
     "title": "Trade and Commerce",
     "readTime": "8 min",
     "keyPoints": [
-      "**Trade** is the exchange of goods and services between countries, essential for Pakistan's economic development",
-      "Pakistan's main **exports** include textiles (60% of total exports), rice, cotton, leather goods, and sports equipment",
-      "Major **imports** include petroleum products, machinery, chemicals, fertilizers, and electrical equipment",
-      "China is Pakistan's largest **trading partner**, followed by USA, UAE, and Saudi Arabia under CPEC",
-      "**Balance of trade** shows Pakistan usually has a trade deficit as imports exceed exports in value",
-      "The **China-Pakistan Economic Corridor (CPEC)** has increased trade volume and improved infrastructure",
-      "**Gwadar Port** serves as a strategic deep-water port enhancing Pakistan's trade capacity",
-      "Pakistan faces trade challenges including **energy shortages**, poor infrastructure, and limited industrial capacity",
-      "**Free Trade Agreements** with countries like China and Sri Lanka have boosted Pakistan's trade relations"
+      "The East India Company was established when Queen Elizabeth gave permission to merchants to set up EIC",
+      "EIC landed in Surat in 1608 and was given permission to trade in 1612",
+      "EIC established bases and gained monopoly of trade, with influence growing all over India",
+      "Robert Clive was commander of EIC army that defeated Nawab Siraj-ud Daula and became governor of Bengal",
+      "Battle of Plassey in 1757 saw Mir Jafar betray the Indians and side with the British",
+      "After Battle of Buxar, EIC took over Bihar, Orissa, and Oudh with British influence greatly increased",
+      "Pitt's India Act passed by British PM Williams Pitts in 1784 made Governor General a royal post",
+      "Zamindars were landlords/tax collectors, wealthy and influential people who oppressed Muslims from 1800s onwards",
+      "The British passed laws against practices like Suttee (banned in Bengal in 1829) and Thuggees (destroyed by 1830)"
     ],
     "definitions": [
       {
-        "term": "Trade",
-        "definition": "The exchange of goods and services between countries involving imports and exports"
+        "term": "East India Company",
+        "definition": "Company established when Queen Elizabeth gave permission to merchants to set up EIC, landed in Surat in 1608 and gained monopoly of trade"
       },
       {
-        "term": "Export",
-        "definition": "Goods and services sold by Pakistan to other countries to earn foreign exchange"
+        "term": "Jizya",
+        "definition": "Islamic tax on non-muslims, abolished by Mughal Emperor Akbar but brought back by Aurungzeb"
       },
       {
-        "term": "Import",
-        "definition": "Goods and services bought by Pakistan from other countries using foreign exchange"
+        "term": "Suttee",
+        "definition": "Hindu tradition where widows were burnt alive with the body of their deceased husband"
       },
       {
-        "term": "Balance of Trade",
-        "definition": "The difference between the value of a country's exports and imports over a period"
+        "term": "Zamindars",
+        "definition": "Landlords/tax collectors, wealthy and influential people who imposed tax on beard and oppressed Muslims"
       },
       {
-        "term": "Trading Partner",
-        "definition": "A country with which Pakistan has significant trade relations through imports and exports"
+        "term": "Thuggees",
+        "definition": "Armed robbers, who claimed to be serving a goddess named Kali and murdered people spreading terror"
       }
     ],
     "howToAnswer": [
@@ -71,17 +71,14 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse trade deficit with budget deficit - trade deficit is specifically about imports vs exports",
-      "Students often forget to mention specific Pakistani exports like textiles and rice in answers",
-      "Don't just list trading partners - explain WHY they are important (e.g., China due to CPEC)",
-      "Students confuse Gwadar Port with Karachi Port - know their different roles",
-      "Never say 'Pakistan only exports agricultural products' - include textiles and manufactured goods"
+      "Not explaining that cartridges were greased by pig and cow fat which had to be chewed off before use",
+      "Forgetting that Mir Jafar betrayed the Indians and sided with the British at Battle of Plassey",
+      "Not mentioning that British influence greatly increased after Battle of Buxar",
+      "Confusing the timeline - Suttee was banned in Bengal in 1829, Thuggees destroyed in 1830"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2 Section B questions",
-      "Always use specific examples of Pakistani exports and imports for full marks",
-      "Questions often link trade with economic development - be ready to connect both topics",
-      "CPEC and Gwadar Port are current affairs - examiners expect these in modern trade answers"
+      "Write 4 valid statements for 4 mark questions, with each bullet point representing one statement",
+      "Use proper wording to expand the concise bullet points provided in your answers"
     ],
     "formulas": [
       "Balance of Trade = Value of Exports - Value of Imports"
@@ -112,7 +109,7 @@
       "Examiner Report 2022: 'Weak evaluation skills shown when comparing transport options' — always weigh up costs vs benefits and consider which option suits the country's economic structure best"
     ],
     "keyDiagram": "Draw a flow chart showing: Transport Infrastructure Improvements → Reduced Trade Costs → Increased Import/Export Volume → Economic Benefits (employment, foreign exchange, GDP growth). Include branches showing different transport modes (air for high-value/perishable goods, sea for bulk/manufactured goods, land for regional trade) with their respective advantages and trade types.",
-    "quickRecap": "Transport infrastructure is crucial for trade competitiveness by reducing costs and improving access to international markets. Different transport modes suit different goods - seaports for bulk/manufactured exports, airports for high-value/time-sensitive goods. For Pakistan, seaport improvements typically offer greater trade growth potential due to the country's export structure. Always link transport improvements to specific economic outcomes and use country-relevant examples."
+    "quickRecap": "The East India Company established trading bases from 1608 and gradually expanded control through key battles like Plassey (1757) and Buxar. British colonial rule was formalized through acts like Pitt's India Act (1784) while local powers like zamindars and practices like Suttee were regulated. This period saw growing British dominance over Indian commerce and administration."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +117,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:50:09.964Z",
   "updated_at": "2026-04-05T20:50:09.964Z",
-  "enriched_at": "2026-04-06T15:59:02.826Z"
+  "enriched_at": "2026-04-06T15:59:02.826Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:20:16.221Z"
 }

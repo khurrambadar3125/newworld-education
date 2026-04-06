@@ -9,36 +9,36 @@
     "title": "Commercial Operations",
     "readTime": "8 min",
     "keyPoints": [
-      "**Retail trade** involves selling goods directly to the final consumer in small quantities for personal use",
-      "**Wholesale trade** involves buying goods in large quantities from manufacturers and selling them to retailers in smaller quantities",
-      "Retailers provide services such as **convenience of location**, product display, after-sales service, and credit facilities to consumers",
-      "Wholesalers provide services including **bulk breaking**, storage, transport, market information, and credit to both manufacturers and retailers",
-      "**Chain of distribution** shows the flow of goods from manufacturer → wholesaler → retailer → consumer",
-      "Types of retailers include **independent retailers** (single shop ownership), multiple shops (chain stores), supermarkets, and department stores",
-      "**E-commerce** allows businesses to sell products online, reducing costs and reaching wider markets globally",
-      "Wholesalers reduce costs for manufacturers by providing **storage facilities** and reducing the number of transactions needed",
-      "**Direct selling** occurs when manufacturers sell directly to consumers, eliminating intermediaries"
+      "Commerce is study related to distribution of products from the producer (point of production) to the consumer (point of consumption)",
+      "Primary production is obtaining raw materials or food from nature and includes extractive industries (mining, quarrying) and genetic industries (farming, forestry and fishing)",
+      "Secondary production is making goods from raw materials and includes manufacturing, processing and constructing",
+      "Tertiary production assists industry to function by providing commercial services and direct personal services",
+      "Specialization or Division of Labour is breaking down of a productive activity into simpler tasks so that a person specialist in that task can perform it",
+      "Commercial services are all services which are related to distribution of goods and services from producers to customers for example communication, finance, insurance, retailers and wholesalers",
+      "Direct personal services are provision of personal services directly to the consumer without anyone else involved for example teacher, actor and tailor",
+      "Manufacturing is concerned with producing goods from raw materials, tertiary activities are concerned with the distribution of finished goods from the factory to the final consumer",
+      "Production is completed only when goods reach point of consumption"
     ],
     "definitions": [
       {
-        "term": "Retail trade",
-        "definition": "The sale of goods in small quantities directly to the final consumer for personal use"
+        "term": "Commerce",
+        "definition": "study related to distribution of products from the producer (point of production) to the consumer (point of consumption)"
       },
       {
-        "term": "Wholesale trade",
-        "definition": "The purchase of goods in large quantities from manufacturers and their sale in smaller quantities to retailers"
+        "term": "Products",
+        "definition": "the goods and services produced by a company, to satisfy needs and wants of customers"
       },
       {
-        "term": "Chain of distribution",
-        "definition": "The route taken by goods from the manufacturer to the final consumer"
+        "term": "Production",
+        "definition": "any activity which serves to satisfy human needs and wants"
       },
       {
-        "term": "Multiple shops",
-        "definition": "A number of retail outlets selling similar goods that are owned by the same company"
+        "term": "Needs",
+        "definition": "the things necessary for living, that is food, shelter and clothing"
       },
       {
-        "term": "E-commerce",
-        "definition": "The buying and selling of goods and services using the internet"
+        "term": "Wants",
+        "definition": "those goods and services which are not compulsory for living but makes life easier"
       }
     ],
     "howToAnswer": [
@@ -73,17 +73,15 @@
       ]
     },
     "commonMistakes": [
-      "Never say wholesalers sell to consumers - they only sell to retailers or other businesses",
-      "Students often confuse multiple shops with department stores - multiple shops sell similar goods, department stores sell different types of goods in separate departments",
-      "Don't say e-commerce is just buying online - it includes both buying AND selling using the internet",
-      "Never say retailers buy in large quantities - they buy in small quantities suitable for resale to consumers",
-      "Students often forget to explain HOW the service benefits the business - always give the reason why it helps"
+      "Thinking production ends at manufacturing stage - production is completed only when goods reach point of consumption",
+      "Confusing needs and wants - needs are necessary for living while wants make life easier but are not compulsory",
+      "Not understanding that products are in unusable state after primary production and need to move to secondary stage",
+      "Missing that tertiary production provides both commercial services and direct personal services"
     ],
     "examinerTips": [
-      "Chain of distribution questions appear frequently - memorize the exact sequence: manufacturer → wholesaler → retailer → consumer",
-      "Always give specific examples when explaining services - e.g., 'storage reduces costs because retailers don't need large warehouses'",
-      "Questions often ask for advantages AND disadvantages - make sure to address both parts equally",
-      "Use Pakistani examples like Daraz for e-commerce or local wholesale markets in Karachi for context"
+      "Remember that specialization has both advantages (increased output, better quality, mass production) and disadvantages (work becomes boring, interdependency increases, decline in craftsmanship)",
+      "Understand the flow from primary to secondary to tertiary production and why each stage is necessary",
+      "Know that manufacturing and tertiary activities are inter-related - without tertiary activities finished goods would not be sold"
     ],
     "formulas": [],
     "keyDiagramDescription": "Chain of Distribution diagram showing the flow: Manufacturer → Wholesaler → Retailer → Consumer, with arrows indicating direction of goods flow and services provided at each stage",
@@ -110,7 +108,7 @@
       "Examiner Report 2021: 'Candidates frequently gave generic advantages without application' — use the business scenario given in the question to make your answer relevant and specific"
     ],
     "keyDiagram": "Production Methods Comparison Chart: Draw a table with three columns (Job, Batch, Flow) and rows for: Product type (unique/groups/identical), Volume (low/medium/high), Cost per unit (high/medium/low), Quality consistency (variable/some variation/standardized), and Examples (wedding dress/bakery goods/cars). Include arrows showing the spectrum from flexible but expensive (job) to efficient but inflexible (flow).",
-    "quickRecap": "Job production makes unique products one at a time (high cost, flexible). Batch production makes groups of similar products (medium cost and flexibility). Flow production makes identical products continuously (low cost, standardized). Technology and automation increase efficiency but require high initial investment and may cause unemployment."
+    "quickRecap": "Commerce focuses on distributing products from producers to consumers through three stages of production. Primary production obtains raw materials from nature, secondary production converts them into finished goods, and tertiary production provides services to distribute these goods to consumers. Specialization breaks down production into simpler tasks, creating efficiency but also interdependency between different stages and services."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:11:09.163Z",
   "updated_at": "2026-04-06T04:11:09.163Z",
-  "enriched_at": "2026-04-06T16:25:08.572Z"
+  "enriched_at": "2026-04-06T16:25:08.572Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:43:25.542Z"
 }

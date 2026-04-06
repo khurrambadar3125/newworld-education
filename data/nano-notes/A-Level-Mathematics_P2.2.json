@@ -9,29 +9,9 @@
     "title": "Logarithmic and exponential functions",
     "readTime": "8 min",
     "keyPoints": [
-      "The **exponential function** e^x has domain ℝ and range (0, ∞), with derivative d/dx(e^x) = e^x",
-      "The **natural logarithm** ln x has domain (0, ∞) and range ℝ, with derivative d/dx(ln x) = 1/x",
-      "**Logarithm laws**: ln(ab) = ln a + ln b, ln(a/b) = ln a - ln b, ln(a^n) = n ln a",
-      "The functions e^x and ln x are **inverse functions**, so ln(e^x) = x and e^(ln x) = x",
-      "For equations of the form a^x = b, take **natural logarithm of both sides** to get x ln a = ln b",
-      "The graph of y = ln x passes through (1, 0) and has a **vertical asymptote** at x = 0",
-      "The graph of y = e^x passes through (0, 1) and has a **horizontal asymptote** at y = 0",
-      "To solve equations involving ln and exponentials, use the fact that **if ln A = ln B, then A = B**"
+      "Content for logarithmic and exponential functions chapter is not available in the provided verified source"
     ],
-    "definitions": [
-      {
-        "term": "Natural logarithm",
-        "definition": "The logarithm to base e, written as ln x, where ln x = y means e^y = x"
-      },
-      {
-        "term": "Exponential function",
-        "definition": "The function f(x) = e^x where e ≈ 2.718 is Euler's number"
-      },
-      {
-        "term": "Inverse functions",
-        "definition": "Functions f and g where f(g(x)) = x and g(f(x)) = x for all values in their domains"
-      }
-    ],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "Solve",
@@ -56,19 +36,8 @@
         "Mark 3: Final answer x = ln 2"
       ]
     },
-    "commonMistakes": [
-      "Never write ln(e^x) = ln e × ln x — always remember ln(e^x) = x",
-      "Students often forget the domain restrictions: ln x only exists for x > 0",
-      "Writing e^(ln x) = e × ln x instead of e^(ln x) = x",
-      "Forgetting to check solutions are valid (positive for ln functions)",
-      "Using log instead of ln — Cambridge always uses natural logarithm unless stated otherwise"
-    ],
-    "examinerTips": [
-      "This topic appears in Paper 2 almost every year, often combined with differentiation",
-      "Always leave answers in exact form using ln and e unless asked for decimal approximation",
-      "When sketching, clearly mark intercepts and asymptotes for full marks",
-      "Check your calculator is in the correct mode when evaluating exponential expressions"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [
       "ln(ab) = ln a + ln b",
       "ln(a/b) = ln a - ln b",
@@ -102,7 +71,7 @@
       "Examiner Report 2023: 'Candidates frequently made errors when applying log rules, especially log(a/b) = log(a) - log(b)' — practice logarithm laws extensively and check each step carefully"
     ],
     "keyDiagram": "Graph showing y = aˣ (exponential) and y = log_a(x) as reflections in y = x. Mark key points: (0,1) and (1,a) on exponential curve, (1,0) and (a,1) on log curve. Show asymptotes: x-axis for exponential, y-axis for logarithmic. Include domain and range labels. For a > 1, both functions are increasing; for 0 < a < 1, both are decreasing. Essential for transformation questions.",
-    "quickRecap": "Logarithms and exponentials are inverse functions: if y = aˣ then x = log_a(y). Key laws: log_a(xy) = log_a(x) + log_a(y), log_a(x/y) = log_a(x) - log_a(y), log_a(xⁿ) = n·log_a(x). Always check solutions are valid (positive arguments for logs). Use change of base formula: log_a(x) = ln(x)/ln(a) for calculator work."
+    "quickRecap": "The verified source provided does not contain the actual chapter content on logarithmic and exponential functions, only the book's preliminary pages and table of contents."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -110,5 +79,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:51:32.443Z",
   "updated_at": "2026-04-06T04:51:32.443Z",
-  "enriched_at": "2026-04-06T16:10:24.937Z"
+  "enriched_at": "2026-04-06T16:10:24.937Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:48:18.115Z"
 }

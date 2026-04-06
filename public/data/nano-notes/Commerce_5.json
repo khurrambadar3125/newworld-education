@@ -9,35 +9,35 @@
     "title": "Aids to Trade",
     "readTime": "8 min",
     "keyPoints": [
-      "**Aids to trade** are services that support and facilitate the exchange of goods and services between producers and consumers",
-      "**Advertising** informs potential customers about products and persuades them to purchase goods or services",
-      "**Banking** provides financial services including accepting deposits, lending money, and facilitating payments between traders",
-      "**Insurance** provides protection against financial loss from risks such as fire, theft, accident, or death",
-      "**Transport** moves goods from producers to consumers across different locations",
-      "**Communication** enables traders to exchange information about prices, quantities, and delivery arrangements",
-      "**Warehousing** provides storage facilities for goods between production and sale",
-      "**Commercial banks** offer services like current accounts, overdrafts, and letters of credit to facilitate trade"
+      "Commerce is study related to distribution of products from the producer (point of production) to the consumer (point of consumption)",
+      "Primary production is obtaining raw materials or food from nature, includes extractive industries (mining, quarrying) and genetic industries (farming, forestry, fishing)",
+      "Secondary production is making goods from raw materials, includes manufacturing, processing and constructing - products are ready to use but are at wrong place",
+      "Tertiary production assists industry to function by providing commercial services and direct personal services",
+      "Commercial services are all services which are related to distribution of goods and services from producers to customers for example communication, finance, insurance, retailers and wholesalers",
+      "Direct personal services are provision of personal services directly to the consumer without anyone else involved for example teacher, actor and tailor",
+      "Manufacturing is concerned with producing goods from raw materials, tertiary activities are concerned with the distribution of finished goods from the factory to the final consumer",
+      "Production is completed only when goods reach point of consumption"
     ],
     "definitions": [
       {
-        "term": "Aids to Trade",
-        "definition": "Services that support and facilitate the exchange of goods and services between producers and consumers"
+        "term": "Commerce",
+        "definition": "study related to distribution of products from the producer (point of production) to the consumer (point of consumption)"
       },
       {
-        "term": "Advertising",
-        "definition": "A form of communication used to inform and persuade potential customers about products or services"
+        "term": "Primary Production",
+        "definition": "obtaining raw materials or food from nature, includes extractive industries and genetic industries"
       },
       {
-        "term": "Insurance",
-        "definition": "A contract that provides financial protection against specified risks in exchange for payment of premiums"
+        "term": "Secondary Production",
+        "definition": "making goods from raw materials, includes manufacturing, processing and constructing"
       },
       {
-        "term": "Commercial Bank",
-        "definition": "A financial institution that accepts deposits and provides loans and other financial services to businesses and individuals"
+        "term": "Commercial Services",
+        "definition": "all services which are related to distribution of goods and services from producers to customers for example communication, finance, insurance, retailers and wholesalers"
       },
       {
-        "term": "Warehouse",
-        "definition": "A large building used for storing goods before they are distributed to retailers or customers"
+        "term": "Direct Personal Services",
+        "definition": "provision of personal services directly to the consumer without anyone else involved for example teacher, actor and tailor"
       }
     ],
     "howToAnswer": [
@@ -72,17 +72,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'banks give money' — always say 'banks provide loans' or 'banks lend money'",
-      "Students often confuse insurance with assurance — insurance covers uncertain events, assurance covers certain events like death",
-      "Don't just list aids to trade — always explain HOW they help trade",
-      "Never say advertising 'makes people buy' — say it 'informs and persuades customers'",
-      "Students forget that warehousing helps with timing - storing goods until needed"
+      "Thinking production is complete at the secondary stage when goods are manufactured",
+      "Confusing commercial services with direct personal services",
+      "Not understanding that products are in unusable state after primary production"
     ],
     "examinerTips": [
-      "Aids to trade appears in almost every Paper 1 and Paper 2 examination",
-      "Always give specific examples when explaining how each aid helps trade",
-      "For banking questions, mention at least 3 services: loans, current accounts, foreign exchange",
-      "Insurance questions often ask for types - remember life, fire, motor, marine insurance"
+      "Remember that production is completed only when goods reach point of consumption",
+      "Understand how manufacturing and tertiary activities are inter-related - manufacturing produces goods while tertiary distributes them"
     ],
     "formulas": [],
     "keyDiagramDescription": "Flow diagram showing Producer → Aids to Trade (Advertising, Banking, Insurance, Transport, Communication, Warehousing) → Consumer, with arrows showing how each aid facilitates the flow of goods and services",
@@ -112,7 +108,7 @@
       "Examiner Report 2021: 'Weak responses simply named services without showing understanding of their role in facilitating international trade' — connect each aid to overcoming specific barriers in global commerce"
     ],
     "keyDiagram": "Draw a circular flow diagram showing: CENTER - 'International Trade Transaction' surrounded by 6 interconnected circles: Banking (currency exchange, payments), Insurance (risk coverage), Transport (goods movement), Warehousing (storage), Communication (information flow), and Advertising (market information). Use arrows showing how each aid supports the central trade process. Label each arrow with specific functions like 'Letters of Credit' for banking or 'Marine Insurance' for insurance services.",
-    "quickRecap": "Aids to trade are support services that facilitate but don't directly participate in buying/selling goods. Key aids include banking (payments, exchange), insurance (risk coverage), transport (goods movement), and communication (information flow). They're essential because they reduce costs, manage international risks, and enable global business operations. Remember: aids SUPPORT trade, they don't conduct it directly."
+    "quickRecap": "Commerce focuses on distributing products from producers to consumers through three stages of production. Primary production obtains raw materials, secondary production manufactures goods, and tertiary production provides services to distribute goods to consumers. Production is only complete when goods reach the point of consumption."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -120,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:12:13.463Z",
   "updated_at": "2026-04-06T04:12:13.463Z",
-  "enriched_at": "2026-04-06T16:26:36.429Z"
+  "enriched_at": "2026-04-06T16:26:36.429Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:44:09.515Z"
 }

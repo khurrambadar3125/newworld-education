@@ -9,36 +9,36 @@
     "title": "Industry",
     "readTime": "8 min",
     "keyPoints": [
-      "**Primary industries** extract raw materials directly from the earth or sea, such as mining, fishing, forestry and agriculture",
-      "**Secondary industries** manufacture goods by processing raw materials or assembling components, including food processing, textiles and steel production",
-      "**Tertiary industries** provide services to people and businesses, such as education, healthcare, banking and retail",
-      "**Quaternary industries** involve research, information technology and knowledge-based activities such as software development and scientific research",
-      "**Heavy industries** use large amounts of raw materials and energy to produce bulky products like steel, ships and chemicals",
-      "**Light industries** produce small, high-value goods using less raw materials and energy, such as electronics, pharmaceuticals and precision instruments",
-      "Industrial location factors include **raw materials, energy supply, transport links, labour supply, markets and government policies**",
-      "**Agglomeration** occurs when industries cluster together to share costs, services and skilled workers",
-      "**Industrial inertia** means industries remain in original locations even when advantages have disappeared due to established infrastructure and skilled workforce"
+      "Rice is a kharif crop requiring warm temperatures 20°C to 30°C, monsoon rain 1270-2000mm for growth/flooding fields, and dry season for harvest",
+      "Wheat is a rabi crop requiring mild/warm temperature 10-20 degrees for growing and 20 degrees for ripening, with light rain of Dec-March helping growth",
+      "Cash crop farms use large fields, higher capital, modern irrigation systems like perennial canals and tubewells, machinery like tractors and harvestors, chemical fertilizers and greater use of pesticides",
+      "Subsistence farms utilize small land, low capital invested because of poverty, old irrigation methods like shaduf, desi variety of seeds, work done manually by family, draft power for ploughing",
+      "The two main tobacco growing districts in Pakistan are Mardan and Peshawar in NWFP",
+      "Important grain crops include Rice (kharif), Millet (kharif), Maize (kharif), and Wheat (rabi)",
+      "Barani farming depends entirely on rainfall, uses traditional methods, farmers too poor to own tractors, low yields, and some years rainfall is insufficient causing crops to fail",
+      "Natural inundation farming can only be carried out after flooding, farmers have no control of water supply, seasonal cropping rarely possible, lower yields, and further floods could destroy crops",
+      "Winter crop growing enables double or multiple cropping, provides jobs throughout the year, increases farmers' income, and wheat grown in excess is exported increasing foreign exchange"
     ],
     "definitions": [
       {
-        "term": "Primary industry",
-        "definition": "Industries that extract raw materials directly from the earth or sea, such as mining, farming, fishing and forestry"
+        "term": "Cash crop",
+        "definition": "Crops grown for sale/profit/commercial rather than for consumption by the farmers"
       },
       {
-        "term": "Secondary industry",
-        "definition": "Industries that manufacture goods by processing raw materials or assembling components into finished products"
+        "term": "Subsistence farming",
+        "definition": "Growing crops for own family"
       },
       {
-        "term": "Tertiary industry",
-        "definition": "Industries that provide services to people and businesses rather than producing goods"
+        "term": "Cash crop farming",
+        "definition": "Growing for sale and profit purpose"
       },
       {
-        "term": "Industrial inertia",
-        "definition": "The tendency for industries to remain in their original location even when the original advantages no longer exist"
+        "term": "Kharif crop",
+        "definition": "Crops that require warm temperatures for growth and monsoon rain"
       },
       {
-        "term": "Agglomeration",
-        "definition": "The clustering of industries in the same area to benefit from shared services, costs and skilled labour"
+        "term": "Barani farming",
+        "definition": "Rain-fed farming that depends entirely on rainfall"
       }
     ],
     "howToAnswer": [
@@ -71,17 +71,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say industries are located 'near resources' — always specify which raw materials and why they are needed",
-      "Students often confuse primary and secondary industries — remember primary extracts, secondary manufactures",
-      "Don't just list location factors — always explain WHY each factor is important for that specific industry",
-      "Never say 'cheap labour' — say 'large supply of labour' or 'skilled workforce' as wage levels vary globally",
-      "Avoid saying industries locate 'near cities' — specify whether for markets, labour supply or transport links"
+      "Confusing kharif and rabi seasons - remember rice needs warm temperatures so is kharif, wheat needs mild temperatures so is rabi",
+      "Not understanding that rice cannot be grown in barani areas because it requires over 1275mm rainfall which nowhere in Pakistan receives",
+      "Mixing up subsistence and cash crop farming characteristics - subsistence uses family labor and small fields, cash crops use hired labor and large fields"
     ],
     "examinerTips": [
-      "Industry questions appear regularly in Paper 2 Section A and Section B",
-      "Always use specific examples when explaining industrial location - Pakistan's textile industry in Karachi/Faisalabad",
-      "Learn the differences between heavy and light industries with examples",
-      "Practice explaining location factors for specific industries like iron/steel, textiles, and food processing"
+      "For crop seasons, always link temperature requirements to the season - rabi crops need 10-20°C, kharif crops need 20-30°C",
+      "When describing farming differences, contrast capital investment, field size, irrigation methods, and labor use between subsistence and cash crop farms"
     ],
     "formulas": [],
     "keyDiagramDescription": "Industrial location triangle showing the relationship between raw materials, markets, and transport links, with additional factors like labour, energy, and government policy affecting industrial location decisions",
@@ -109,7 +105,7 @@
       "Examiner Report 2022: 'Candidates frequently failed to use specific country examples when discussing industrial change management' — always name specific countries like Germany's Ruhr Valley or UK's Midlands when analyzing industrial transformation"
     ],
     "keyDiagram": "Students must be able to draw Weber's Industrial Location Theory triangle showing the relationship between raw materials, markets, and labor in determining optimal industrial location. The triangle should show: 1) Raw material sources at two corners, 2) Market at the third corner, 3) Point of minimum transport costs in the center, 4) Arrows indicating transport costs, 5) Isodapanes (lines of equal transport cost) around the optimal location point. Include labels for 'material index' and 'labor orientation' factors that can pull industry away from the least-cost transport point.",
-    "quickRecap": "Industrial location depends on five key factors: raw materials, markets, labor, transport, and government policy. Weber's theory shows industries locate to minimize transport costs between materials and markets. Labor-intensive industries seek cheap labor areas, while high-tech industries need skilled workers. Government incentives and industrial estates can override natural location advantages."
+    "quickRecap": "Pakistan grows both kharif crops (rice, millet, maize) needing warm temperatures and rabi crops (wheat, barley) needing mild temperatures. Cash crop farming uses modern methods, large fields and hired labor while subsistence farming uses traditional methods, small fields and family labor. Barani farming depends entirely on rainfall while irrigated farming provides more control and higher yields."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -117,5 +113,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:59:48.374Z",
   "updated_at": "2026-04-06T03:59:48.374Z",
-  "enriched_at": "2026-04-06T16:11:06.239Z"
+  "enriched_at": "2026-04-06T16:11:06.239Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:38:22.007Z"
 }

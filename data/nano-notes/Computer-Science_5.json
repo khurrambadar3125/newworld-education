@@ -9,35 +9,35 @@
     "title": "The internet and its uses",
     "readTime": "8 min",
     "keyPoints": [
-      "The **internet** is a worldwide collection of interconnected networks that communicate using TCP/IP protocols",
-      "The **World Wide Web** is a service that uses the internet to access websites and web pages through hyperlinks",
-      "A **web browser** is software that requests, receives, and displays web pages from web servers",
-      "**HTTP** (HyperText Transfer Protocol) is used to transfer web pages, while **HTTPS** adds encryption for security",
-      "**Digital currency** uses cryptographic techniques and exists only in electronic form, with no physical coins or notes",
-      "**Cyber security** involves protecting computer systems and networks from digital attacks, theft, and damage",
-      "**URLs** (Uniform Resource Locators) specify the location of web resources using format: protocol://domain/path",
-      "**ISPs** (Internet Service Providers) provide internet access to homes and businesses through various connection methods"
+      "Binary system is used to process data in logic gates/transistors, to store data in registers, and to process data on the computer",
+      "Hexadecimal is used in colour codes, error codes and IP & MAC addresses because it is easily understandable, easier to debug, and takes less space on the screen",
+      "Overflow error is the result of carrying out a calculation that produces a value too large for the computer's allocated word size",
+      "Each shift left is equivalent to multiplying the binary number by 2^n (where n is the number of places shifted)",
+      "Each shift right is equivalent to dividing the binary number by 2^n (where n is the number of places shifted)",
+      "Two's complement format is used to represent negative binary numbers, where the leftmost bit is changed to a negative value",
+      "A character set is a list of all characters and symbols represented by a computer, with each character and symbol having a unique value",
+      "Sampling is used by determining the amplitude of the sound after set intervals to give an approximate representation of the sound wave"
     ],
     "definitions": [
       {
-        "term": "Internet",
-        "definition": "A worldwide collection of interconnected networks that communicate using standard protocols"
+        "term": "Character set",
+        "definition": "A list of all characters and symbols represented by a computer"
       },
       {
-        "term": "World Wide Web",
-        "definition": "A service that uses the internet to access websites consisting of linked web pages"
+        "term": "Overflow error",
+        "definition": "The result of carrying out a calculation that produces a value too large for the computer's allocated word size"
       },
       {
-        "term": "Web browser",
-        "definition": "Software application used to access and display web pages from web servers"
+        "term": "Sampling",
+        "definition": "Used by determining the amplitude of the sound after set intervals. This gives an approximate representation of the sound wave"
       },
       {
-        "term": "Digital currency",
-        "definition": "Electronic money that uses cryptographic techniques for secure transactions and exists only in digital form"
+        "term": "Sample rate",
+        "definition": "The number of samples taken per second"
       },
       {
-        "term": "Cyber security",
-        "definition": "The practice of protecting computer systems, networks and data from digital attacks and unauthorized access"
+        "term": "Sampling resolution",
+        "definition": "The number of bits required per sample (i.e: bit depth)"
       }
     ],
     "howToAnswer": [
@@ -70,18 +70,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'internet and WWW are the same thing' — they are different: internet is infrastructure, WWW is a service",
-      "Students often confuse web browser with web server — browser displays pages, server stores and sends them",
-      "Don't say digital currency is 'fake money' — say it exists only in electronic form with cryptographic security",
-      "Never describe cyber security as just 'antivirus' — it includes protecting networks, data, and systems from all digital threats",
-      "Students mix up HTTP and HTML — HTTP transfers web pages, HTML is the markup language used to create them"
+      "If the leftmost 1 bits are lost while shifting to the left, an error will occur because the limit of the maximum number of left shifts possible will have been exceeded",
+      "If the rightmost 1 bits are lost while shifting to the right, an error will occur because the limit of the maximum number of right shifts possible will have been exceeded",
+      "Overflow error occurs when the value is greater than the maximum value of the register"
     ],
     "examinerTips": [
-      "Internet vs WWW distinction appears frequently in Paper 1 and Paper 2",
-      "Always mention 'cryptographic techniques' when defining digital currency",
-      "For cyber security questions, give specific examples like firewalls, encryption, secure passwords",
-      "URL questions often ask for protocol identification — remember http:// or https://",
-      "Browser questions may ask about features like bookmarks, history, cookies"
+      "Break binary numbers into sets of 4 when converting to hexadecimal",
+      "The accuracy of a sound file increases with greater sample rates and sampling resolutions, but so does the file size"
     ],
     "formulas": [],
     "keyDiagramDescription": "Network diagram showing computers connected through routers and ISPs to illustrate internet infrastructure, with web servers and clients accessing WWW services",
@@ -109,7 +104,7 @@
       "Examiner Report 2022: 'Weak responses on TCP/IP layers confused the functions of Internet and Transport layers' — remember Transport handles packet creation/sequencing while Internet handles IP addressing/routing"
     ],
     "keyDiagram": "Students must draw a TCP/IP stack showing 4 layers (Application, Transport, Internet, Link) with arrows indicating data flow. Show a message entering at Application layer, passing down through each layer with headers being added (encapsulation), then at receiving end show reverse process with headers being removed (de-encapsulation) as data moves up the layers. Include labels showing what each layer adds: Transport adds port numbers, Internet adds IP addresses, Link adds MAC addresses.",
-    "quickRecap": "Internet uses packet switching - data broken into packets, sent independently via optimal routes, reassembled at destination. TCP/IP protocol suite uses 4-layer stack with adjacent-layer communication only. Messages flow top-to-bottom when sending, bottom-to-top when receiving, with each layer adding/removing headers. Transport layer handles packet creation and sequencing, Internet layer handles IP addressing and routing."
+    "quickRecap": "Binary is fundamental for computer processing and data storage. Hexadecimal provides a more compact and readable representation for codes and addresses. Understanding overflow errors and binary shifts is crucial for data manipulation. Two's complement enables negative number representation in binary systems."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -117,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:44:58.579Z",
   "updated_at": "2026-04-06T03:44:58.579Z",
-  "enriched_at": "2026-04-06T16:08:08.930Z"
+  "enriched_at": "2026-04-06T16:08:08.930Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:46:19.664Z"
 }

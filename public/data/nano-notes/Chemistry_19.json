@@ -9,32 +9,32 @@
     "title": "Reactions of organic compounds",
     "readTime": "8 min",
     "keyPoints": [
-      "**Ethanol** undergoes oxidation with acidified potassium dichromate(VI) to form ethanoic acid",
-      "**Carboxylic acids** react with alcohols to form esters and water in the presence of concentrated sulfuric acid",
-      "**Esterification** is a condensation reaction because a small molecule (water) is eliminated",
-      "**Ethanoic acid** reacts with sodium carbonate to produce sodium ethanoate, carbon dioxide and water",
-      "**Carboxylic acids** react with metals to produce a salt and hydrogen gas",
-      "**Esters** can be hydrolysed by heating with dilute acid or alkali to form carboxylic acid and alcohol",
-      "**Characteristic reaction** of alcohols is oxidation to form carboxylic acids when heated with acidified K₂Cr₂O₇",
-      "**Fermentation** of glucose produces ethanol and carbon dioxide using yeast as a catalyst",
-      "**Ethanol** burns in air with a clean blue flame to produce carbon dioxide and water"
+      "Filtration separates insoluble solid from liquid - liquid particles small enough to go through filter paper pores, solid particles too large",
+      "Crystallization obtains solid from solid & liquid solution - process involves dissolving solid in solvent, heating to evaporate solvent, producing hot saturated solution, then crystals of pure solid form on cooling",
+      "Distillation obtains pure liquid from solution - solution boils, pure liquid turns to vapour, vapour cooled by condenser and changes back to liquid called 'Distillate'",
+      "Fractional Distillation separates 2 liquids which are mixed (miscible) - liquid with lowest BP comes out first at top of fractionating column",
+      "Chromatography separates mixture of organic compounds (e.g. colour dyes)",
+      "In filtration: solid obtained is called 'Residue' and liquid obtained is called 'Filtrate'",
+      "Distillation is possible because pure liquid has low BP and changes to gas easily, while solid does not boil (high BP) so remains in flask",
+      "A saturated solution means no more solid can dissolve in it",
+      "The constant temperature during distillation process equals the boiling point of pure liquid"
     ],
     "definitions": [
       {
-        "term": "Esterification",
-        "definition": "The reaction between a carboxylic acid and an alcohol to form an ester and water"
+        "term": "Soluble",
+        "definition": "can dissolve in water (eg. Salt)"
       },
       {
-        "term": "Fermentation",
-        "definition": "The breakdown of glucose by yeast in the absence of air to produce ethanol and carbon dioxide"
+        "term": "Insoluble",
+        "definition": "cannot dissolve in water (eg. Sand)"
       },
       {
-        "term": "Hydrolysis",
-        "definition": "The breakdown of a compound by reaction with water"
+        "term": "Miscible",
+        "definition": "mixable - (Able to be mixed)"
       },
       {
-        "term": "Oxidation",
-        "definition": "The addition of oxygen or removal of hydrogen from a compound"
+        "term": "Crystallization",
+        "definition": "Obtaining solid from Solid & Liquid solution OR Formation of crystals from a cooling liquid/Saturated solution"
       }
     ],
     "howToAnswer": [
@@ -62,17 +62,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'potassium dichromate' alone — always say 'acidified potassium dichromate(VI)'",
-      "Students often write 'ethyl ethanoate' instead of drawing the structural formula correctly",
-      "Don't confuse hydrolysis with hydrogenation — hydrolysis involves breaking bonds with water",
-      "Never say esters are formed by 'dehydration' — always use 'condensation reaction'",
-      "Students forget that fermentation requires absence of air/oxygen"
+      "Confusing which separation method to use for different types of mixtures",
+      "Not understanding that crystallization is always the method to obtain crystals from solutions",
+      "Mixing up the terms 'residue' and 'filtrate' in filtration"
     ],
     "examinerTips": [
-      "Esterification appears in almost every Paper 2 — learn the mechanism",
-      "Always include concentrated H₂SO₄ as catalyst in esterification equations",
-      "Colour changes with dichromate are frequently tested — orange to green",
-      "Draw structural formulas for esters showing the C-O-C=O arrangement clearly"
+      "Any question that wants the method to obtain (make) crystals, the process will be 'Crystallization'",
+      "Remember that mixtures are impure substances that need purification methods"
     ],
     "formulas": [
       "C₂H₅OH + [O] → CH₃COOH + H₂O",
@@ -104,7 +100,7 @@
       "Examiner Report 2022: 'Candidates frequently could not identify chiral centres correctly' — a chiral carbon must be bonded to exactly four different atoms or groups, mark it clearly with an asterisk in your answer"
     ],
     "keyDiagram": "Students must be able to draw hydrogen bonding between molecules showing: (1) the molecules with correct structural formulas, (2) partial charges δ+ on hydrogen and δ- on the electronegative atom, (3) dotted line representing the hydrogen bond between lone pair on electronegative atom and hydrogen, (4) bond angle approximately 180° for strongest hydrogen bond. Example: H₂O···H-O-CH₃ with all charges and lone pairs clearly marked.",
-    "quickRecap": "Organic reactions include addition (alkenes + H₂/Br₂), substitution (haloalkanes + OH⁻), elimination (haloalkanes + OH⁻/ethanol), and esterification (alcohol + carboxylic acid). Optical isomers occur when a carbon has 4 different groups attached. Hydrogen bonding requires H bonded to N, O, or F, shown with partial charges and dotted lines. Always check reaction conditions to predict the product type."
+    "quickRecap": "Separation methods depend on the type of mixture: filtration for insoluble solid and liquid, crystallization to obtain solid from solution, distillation to obtain pure liquid from solution, and fractional distillation for miscible liquids. Each method works based on different physical properties like particle size, boiling points, or solubility. The choice of separation technique depends on whether you want to recover the solid or liquid component."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -112,5 +108,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:57:23.240Z",
   "updated_at": "2026-04-05T20:57:23.240Z",
-  "enriched_at": "2026-04-06T16:00:37.008Z"
+  "enriched_at": "2026-04-06T16:00:37.008Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:13:45.777Z"
 }

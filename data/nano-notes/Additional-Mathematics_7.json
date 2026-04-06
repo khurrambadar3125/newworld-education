@@ -9,32 +9,32 @@
     "title": "Kinematics",
     "readTime": "8 min",
     "keyPoints": [
-      "**Displacement** is the distance moved in a specified direction from a fixed point",
-      "**Velocity** is the rate of change of displacement with respect to time",
-      "**Acceleration** is the rate of change of velocity with respect to time",
-      "Use **v² = u² + 2as** when time is not given or required in the problem",
-      "Draw a **velocity-time graph** to visualize motion and calculate displacement using area under curve",
-      "For **projectile motion**, treat horizontal and vertical components separately using appropriate equations",
-      "When object reaches maximum height in projectile motion, **vertical velocity = 0**",
-      "**Gradient of displacement-time graph** gives velocity at that instant",
-      "**Gradient of velocity-time graph** gives acceleration at that instant"
+      "The solution(s) of a pair of linear and/or non-linear equations correspond to the coordinates of the intersection point(s) of the graphs",
+      "A pair of simultaneous linear equations is of the form ax + by = p, cx + dy = q, where a, b, c and d are constants, x and y are variables to be determined",
+      "There is usually one solution to a pair of simultaneous linear equations",
+      "Methods of solving simultaneous linear equations include elimination, substitution, and graphical method",
+      "In elimination method, the coefficient of one of the variables is made the same in both equations. The equations are then either added or subtracted to form a single linear equation with only one variable",
+      "In substitution method, a variable is made the subject of the chosen equation. This equation is then substituted into the equation that was not chosen to solve for the variable",
+      "A non-linear equation is not of the form ax + by = p",
+      "For simultaneous non-linear equations, use the linear equation to express one of the variables in terms of the other, then substitute it into the non-linear equation",
+      "Substitute the value(s) obtained into the linear equation to obtain the value of the other variable"
     ],
     "definitions": [
       {
-        "term": "Displacement",
-        "definition": "The distance moved in a specified direction from a fixed point"
+        "term": "Simultaneous linear equations",
+        "definition": "A pair of equations of the form ax + by = p, cx + dy = q, where a, b, c and d are constants, x and y are variables to be determined"
       },
       {
-        "term": "Velocity",
-        "definition": "The rate of change of displacement with respect to time"
+        "term": "Non-linear equation",
+        "definition": "An equation that is not of the form ax + by = p"
       },
       {
-        "term": "Acceleration",
-        "definition": "The rate of change of velocity with respect to time"
+        "term": "Elimination method",
+        "definition": "The coefficient of one of the variables is made the same in both equations. The equations are then either added or subtracted to form a single linear equation with only one variable"
       },
       {
-        "term": "Projectile motion",
-        "definition": "Motion of an object under the influence of gravity alone"
+        "term": "Substitution method",
+        "definition": "A variable is made the subject of the chosen equation. This equation is then substituted into the equation that was not chosen to solve for the variable"
       }
     ],
     "howToAnswer": [
@@ -66,17 +66,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse distance with displacement — displacement has direction, distance does not",
-      "Students often forget to use negative acceleration when object moves against gravity",
-      "Always check if acceleration is constant before using kinematic equations",
-      "Never use average velocity formula when acceleration is not zero",
-      "Students often confuse speed with velocity — velocity includes direction"
+      "Not making coefficients the same before adding or subtracting in elimination method",
+      "Forgetting to substitute back to find the second variable",
+      "Not using the linear equation first when solving simultaneous non-linear equations"
     ],
     "examinerTips": [
-      "This topic appears in every Paper 2 examination",
-      "Always draw a diagram showing directions and label all given information",
-      "Check units are consistent throughout your calculation",
-      "For projectile motion questions, always separate into horizontal and vertical components"
+      "Use the linear equation to express one variable in terms of the other when solving simultaneous non-linear equations",
+      "Substitute the values of x into the linear equation to obtain the corresponding values of y"
     ],
     "formulas": [
       "v = u + at",
@@ -108,7 +104,7 @@
       "Examiner Report 2022: 'Common error was incorrect application of product rule in differentiation' — always expand (t+a)(t+b)² correctly before differentiating or use product rule systematically"
     ],
     "keyDiagram": "Students must be able to draw a displacement-time graph showing: positive and negative displacement regions, turning points where velocity equals zero, and be able to sketch the corresponding velocity-time graph below it. The area under the velocity-time curve represents displacement change, while the absolute area gives distance travelled. Mark clearly the axes (s vs t and v vs t), zero lines, and any given time intervals.",
-    "quickRecap": "Velocity = ds/dt, acceleration = dv/dt = d²s/dt². When v = 0, particle changes direction. Distance travelled requires integrating |v|, while displacement change integrates v directly. Always differentiate displacement to get velocity, then set equal to zero to find turning points."
+    "quickRecap": "Simultaneous equations can be linear or non-linear, with solutions corresponding to intersection points of graphs. Linear equations are solved using elimination or substitution methods. For non-linear systems, use the linear equation to express one variable in terms of another, substitute into the non-linear equation, then find both variable values."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -116,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:17:23.021Z",
   "updated_at": "2026-04-06T04:17:23.021Z",
-  "enriched_at": "2026-04-06T16:23:59.535Z"
+  "enriched_at": "2026-04-06T16:23:59.535Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:48:58.056Z"
 }

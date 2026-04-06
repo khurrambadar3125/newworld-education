@@ -9,32 +9,32 @@
     "title": "Business documents",
     "readTime": "8 min",
     "keyPoints": [
-      "A **business document** is a written record that provides evidence of a business transaction",
-      "An **invoice** is sent by the seller to the buyer showing goods sold, quantity, price and amount due",
-      "A **receipt** is given by the seller to the buyer as proof that payment has been received",
-      "A **credit note** is sent by the seller to the buyer to reduce the amount owed when goods are returned or overcharged",
-      "Business documents provide **audit trail** for checking accuracy of accounting records",
-      "Documents must contain **essential information** including date, names, amounts and transaction details",
-      "**Debit note** is sent by the buyer to the seller requesting a credit note for returns or overcharges",
-      "**Statement of account** shows the balance owed by a customer at a particular date",
-      "Documents help resolve **disputes** between buyer and seller about transactions"
+      "The process of accounting starts once the book-keeper finishes recording the financial transactions",
+      "Accounting deals with measuring, identifying, and communicating financial information recorded by the book-keeper which facilitates the preparation of financial statements",
+      "Bookkeeping involves recording financial transactions from source documents of a business whereas accounting deals with maintaining financial statements from the bookkeeping records",
+      "Source documents are the starting point for recording financial transactions in bookkeeping",
+      "Financial transactions must be recorded from source documents before accounting processes can begin",
+      "Source documents provide the evidence needed for book-keepers to record business transactions",
+      "The accounting process depends on accurate recording from source documents",
+      "Business documents serve as source documents that initiate the accounting cycle",
+      "Source documents are essential for maintaining proper financial records"
     ],
     "definitions": [
       {
-        "term": "Invoice",
-        "definition": "A document sent by the seller to the buyer showing details of goods sold and amount due for payment"
+        "term": "Accounting",
+        "definition": "The process that deals with measuring, identifying, and communicating financial information recorded by the book-keeper which facilitates the preparation of financial statements"
       },
       {
-        "term": "Receipt",
-        "definition": "A document given by the seller to the buyer as proof that payment has been received"
+        "term": "Bookkeeping",
+        "definition": "Recording financial transactions from source documents of a business"
       },
       {
-        "term": "Credit note",
-        "definition": "A document sent by the seller to the buyer to reduce the amount owed when goods are returned or an overcharge has occurred"
+        "term": "Source Documents",
+        "definition": "Documents of a business from which financial transactions are recorded"
       },
       {
-        "term": "Business document",
-        "definition": "A written record that provides evidence of a business transaction"
+        "term": "Financial Statements",
+        "definition": "Statements prepared from financial information recorded by the book-keeper through the accounting process"
       }
     ],
     "howToAnswer": [
@@ -62,17 +62,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse invoice with receipt — invoice requests payment, receipt confirms payment received",
-      "Students often think credit note increases amount owed — it always reduces the debt",
-      "Don't say 'bill' in exams — always use the term 'invoice' for formal business documents",
-      "Never say credit note is sent by buyer — it is always sent by the seller to the buyer",
-      "Students mix up debit note and credit note — debit note is sent BY buyer TO seller"
+      "Confusing bookkeeping with accounting - bookkeeping records transactions while accounting deals with financial statements",
+      "Starting accounting processes before book-keeper finishes recording transactions",
+      "Not using source documents as the basis for recording financial transactions"
     ],
     "examinerTips": [
-      "Business documents appear in every Paper 1 and Paper 2 exam",
-      "Always state WHO sends the document TO whom for full marks",
-      "Learn the direction of flow: Invoice seller→buyer, Receipt seller→buyer, Credit note seller→buyer",
-      "Questions often ask for TWO reasons why documents are issued — prepare multiple examples"
+      "Remember that accounting starts only after book-keeper finishes recording financial transactions",
+      "Understand the distinction between bookkeeping (recording from source documents) and accounting (preparing financial statements)"
     ],
     "formulas": [],
     "keyDiagramDescription": "Flow diagram showing seller and buyer with arrows indicating direction of documents: Invoice (seller to buyer), Payment (buyer to seller), Receipt (seller to buyer), Credit note (seller to buyer for returns)",
@@ -102,7 +98,7 @@
       "Examiner Report 2023: 'Weak responses failed to distinguish between debit and credit notes' — debit notes are sent by the buyer to reduce what they owe, credit notes are sent by the seller to reduce what is owed to them"
     ],
     "keyDiagram": "Students must be able to draw a flowchart showing the document flow in a credit transaction: Customer (Purchase Order) → Supplier (Quotation) → Supplier (Invoice + Delivery Note) → Customer receives goods → Any disputes (Debit Note ↔ Credit Note) → Supplier (Statement) → Customer (Payment) → Supplier (Receipt). Include arrows showing direction of document flow and indicate which documents are source documents vs. those recorded in books of prime entry.",
-    "quickRecap": "Business documents flow in sequence: quotation → purchase order → invoice → delivery note → statement → payment → receipt. Source documents (like delivery notes and quotations) provide information but aren't recorded in ledgers. Only invoices, credit notes, and payment documents create ledger entries. Remember: invoices come before payment, receipts come after payment."
+    "quickRecap": "Business documents serve as source documents from which bookkeepers record financial transactions. The accounting process begins only after the book-keeper completes recording these transactions. Accounting then involves measuring, identifying, and communicating this financial information to prepare financial statements, while bookkeeping focuses on the initial recording from source documents."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -110,5 +106,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:37:05.006Z",
   "updated_at": "2026-04-06T03:37:05.006Z",
-  "enriched_at": "2026-04-06T16:12:56.038Z"
+  "enriched_at": "2026-04-06T16:12:56.038Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:30:26.180Z"
 }

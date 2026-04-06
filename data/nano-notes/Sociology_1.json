@@ -9,37 +9,37 @@
     "title": "Research Methods",
     "readTime": "8 min",
     "keyPoints": [
-      "**Primary research** involves collecting new data directly from sources through methods like interviews, questionnaires and observations",
-      "**Secondary research** uses existing data that has already been collected by other researchers, such as official statistics, books and media reports",
-      "**Surveys** are research methods that collect data from large numbers of people using structured questionnaires to identify patterns and trends",
-      "**Sampling** involves selecting a representative group from the target population to study, ensuring findings can be generalized to the whole population",
-      "**Reliability** means the research method produces consistent results when repeated under the same conditions by different researchers",
-      "**Validity** refers to whether the research method measures what it claims to measure and produces accurate, truthful data",
-      "**Quantitative data** consists of numerical information that can be statistically analyzed, such as percentages, graphs and tables",
-      "**Qualitative data** provides detailed, descriptive information about people's opinions, feelings and experiences in their own words",
-      "**Pilot studies** are small-scale trial runs of research methods to test and improve the design before conducting the main study",
-      "**Ethical considerations** include obtaining informed consent, protecting confidentiality and ensuring no harm comes to research participants"
+      "Sociology is the study of human social life, groups and societies",
+      "Sociology explores the social factors that shape human behavior and the way that society influences our daily lives",
+      "Structuralism is a macro perspective where societies are seen as sets of structures in which individuals play different roles - individuals have little choice",
+      "Interpretivism is a micro level approach in which individual is important - people make the societies and meanings individuals give to society matter",
+      "Consensus approach focuses on equality in society or agreed norms, creating stable forms of society",
+      "Conflict approach involves societies where values are not shared such as societies with different wealth are unstable",
+      "Functionalism is a consensus approach that focuses on social functions and asks what keeps the society together",
+      "Marxism is a conflict approach focusing on different social classes - bourgeoisie (upper class) and proletariat (working class)",
+      "Feminism is a conflict approach where patriarchy exists and males are more dominant",
+      "Sociological research involves primary or secondary research types and sociologists must select and use evidence in a balanced way"
     ],
     "definitions": [
       {
-        "term": "Survey",
-        "definition": "A research method that collects data from a large number of people using structured questions to identify patterns and trends in society"
+        "term": "Sociology",
+        "definition": "The study of human social life, groups and societies"
       },
       {
-        "term": "Sample",
-        "definition": "A smaller group selected from the target population to represent the whole group being studied"
+        "term": "Structuralism",
+        "definition": "Macro perspective where societies are seen as sets of structures in which individuals play different roles - individuals have little choice"
       },
       {
-        "term": "Hypothesis",
-        "definition": "A testable statement or prediction about the relationship between two or more variables that guides the research"
+        "term": "Interpretivism",
+        "definition": "Micro level approach in which individual is important - the meanings individuals give to the society"
       },
       {
-        "term": "Bias",
-        "definition": "When research results are distorted or unfair because the researcher's own views or the research method influences the findings"
+        "term": "Bourgeoisie",
+        "definition": "Upper class in Marxist theory"
       },
       {
-        "term": "Population",
-        "definition": "The entire group of people that the researcher wants to study and make conclusions about"
+        "term": "Proletariat",
+        "definition": "Working class in Marxist theory"
       }
     ],
     "howToAnswer": [
@@ -72,18 +72,13 @@
       ]
     },
     "commonMistakes": [
-      "Students confuse primary and secondary research - remember primary means collecting NEW data yourself",
-      "Never say surveys are 'easy' - always explain they are 'cost-effective' or 'time-efficient'",
-      "Students often forget that reliability means CONSISTENCY, not just accuracy",
-      "Don't confuse population with sample - population is everyone, sample is the selected group",
-      "Avoid saying qualitative data is 'better' than quantitative - each has different purposes and uses"
+      "Not following proper procedures in research - others will question your research",
+      "Not selecting and using evidence in a balanced way - other sociologists may criticize the research",
+      "Confusing macro and micro perspectives in structuralism vs interpretivism"
     ],
     "examinerTips": [
-      "Research methods appears in every Paper 1 and Paper 2 - guaranteed marks if revised well",
-      "Always give Pakistani examples when discussing research contexts (e.g., studying education in Lahore schools)",
-      "For evaluation questions, give equal weight to advantages AND disadvantages",
-      "Learn the exact definitions of key terms as 'define' questions are very common",
-      "Practice drawing and labeling the research process diagram - often worth 3-4 marks"
+      "Important to follow proper procedures - others will question your research",
+      "Sociologists must select and use evidence in a balanced way or other sociologists may criticize the research"
     ],
     "formulas": [],
     "keyDiagramDescription": "Research Process Flowchart showing: Research Question → Hypothesis → Choose Method → Select Sample → Collect Data → Analyze Results → Draw Conclusions. Include feedback loops showing how conclusions can lead to new research questions.",
@@ -111,7 +106,7 @@
       "Examiner Report 2022: 'Students frequently confused research methods with data types' — remember that questionnaires and interviews are methods, while quantitative and qualitative describe the type of data they produce"
     ],
     "keyDiagram": "Students must be able to draw the Research Methods Classification Chart: A hierarchical diagram showing Primary Methods (top branch splitting into Quantitative: questionnaires, structured interviews, experiments; and Qualitative: unstructured interviews, participant observation, ethnography) and Secondary Methods (bottom branch splitting into Quantitative: official statistics, existing surveys; and Qualitative: personal documents, media analysis). Include sampling types (random, systematic, stratified, opportunity) as sub-branches under primary methods.",
-    "quickRecap": "Research methods divide into primary (collect new data) and secondary (use existing data). Primary methods include quantitative (questionnaires, structured interviews, experiments) and qualitative (unstructured interviews, participant observation). Always specify sampling technique and link method choice to research aims. Secondary sources include official statistics, documents, and media content."
+    "quickRecap": "Sociology is the study of human social life, groups and societies, exploring social factors that shape human behavior. There are two main approaches: structuralism (macro perspective) and interpretivism (micro perspective). Research can follow consensus or conflict approaches, with major theories including functionalism, Marxism, and feminism. Proper research procedures and balanced use of evidence are essential."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -119,5 +114,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:12:57.517Z",
   "updated_at": "2026-04-06T04:12:57.519Z",
-  "enriched_at": "2026-04-06T16:27:29.211Z"
+  "enriched_at": "2026-04-06T16:27:29.211Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:41:58.935Z"
 }

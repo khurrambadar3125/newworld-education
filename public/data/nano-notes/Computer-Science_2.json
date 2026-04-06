@@ -9,35 +9,35 @@
     "title": "Data transmission",
     "readTime": "8 min",
     "keyPoints": [
-      "A **data packet** is a unit of data made up of a header, payload and trailer that is transmitted across a network",
-      "**Packet switching** is a method of data transmission where data is broken down into packets that are sent independently across a network",
-      "**USB (Universal Serial Bus)** is a standard for connecting devices to computers that allows data transmission and power supply",
-      "**Error detection** methods include parity checks, checksum and check digits to identify transmission errors",
-      "**Encryption** is the process of converting plaintext into ciphertext using an algorithm and key to secure data during transmission",
-      "**Serial transmission** sends data one bit at a time along a single wire, while **parallel transmission** sends multiple bits simultaneously along multiple wires",
-      "**Simplex transmission** allows data flow in one direction only, **half-duplex** allows data flow in both directions but not simultaneously, **full-duplex** allows simultaneous data flow in both directions",
-      "**Protocols** are rules that govern how data is transmitted between devices on a network"
+      "Binary system is used to process data in logic gates/transistors, to store data in registers, and to process data on the computer",
+      "Hexadecimal is used in colour codes, error codes and IP & MAC addresses because it is easily understandable, easier to debug, and takes less space on the screen",
+      "Overflow error is the result of carrying out a calculation that produces a value too large for the computer's allocated word size",
+      "Each shift left is equivalent to multiplying the binary number by 2^n (where n is the number of places shifted)",
+      "Each shift right is equivalent to dividing the binary number by 2^n (where n is the number of places shifted)",
+      "Two's complement format is used to represent negative binary numbers where the leftmost bit is changed to a negative value",
+      "Text is converted to binary to be processed by a computer using character sets where each character and symbol has a unique value",
+      "A sound wave is sampled for sound to be converted to binary using an ADC, where sampling is used by determining the amplitude of the sound after set intervals"
     ],
     "definitions": [
       {
-        "term": "Data packet",
-        "definition": "A unit of data that consists of a header (containing routing information), payload (actual data) and trailer (error checking information)"
+        "term": "Character set",
+        "definition": "A list of all characters and symbols represented by a computer"
       },
       {
-        "term": "Packet switching",
-        "definition": "A method of data transmission where data is divided into packets that are sent independently across a network and reassembled at the destination"
+        "term": "Sampling",
+        "definition": "Used by determining the amplitude of the sound after set intervals. This gives an approximate representation of the sound wave"
       },
       {
-        "term": "Encryption",
-        "definition": "The process of converting readable data (plaintext) into an unreadable form (ciphertext) using an algorithm and encryption key"
+        "term": "Sample rate",
+        "definition": "The number of samples taken per second"
       },
       {
-        "term": "Parity check",
-        "definition": "An error detection method that adds an extra bit to ensure the total number of 1s is either even (even parity) or odd (odd parity)"
+        "term": "Sampling resolution",
+        "definition": "The number of bits required per sample (i.e: bit depth)"
       },
       {
-        "term": "Protocol",
-        "definition": "A set of rules that defines how data is transmitted between devices on a network"
+        "term": "Overflow error",
+        "definition": "The result of carrying out a calculation that produces a value too large for the computer's allocated word size"
       }
     ],
     "howToAnswer": [
@@ -70,17 +70,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'packets are sent together' — always say 'packets are sent independently and may take different routes'",
-      "Students often forget to mention that packets are reassembled in the correct order at the destination",
-      "Don't confuse encryption with error detection — encryption secures data while error detection identifies transmission errors",
-      "Never say 'USB is only for storage devices' — USB can connect many types of devices including keyboards, mice, and printers",
-      "Students often think parallel transmission is always faster — it's only faster over short distances due to interference"
+      "Forgetting that if the leftmost 1 bits are lost while shifting to the left, an error will occur because the limit of the maximum number of left shifts possible will have been exceeded",
+      "Not recognizing that if the rightmost 1 bits are lost while shifting to the right, an error will occur because the limit of the maximum number of right shifts possible will have been exceeded",
+      "Confusing that overflow error occurs when the value is greater than the maximum value of the register"
     ],
     "examinerTips": [
-      "Packet switching questions appear frequently in Paper 2 — always mention independent transmission and reassembly",
-      "For error detection questions, give specific examples like parity checks or checksums",
-      "When comparing transmission methods, always give at least one advantage and disadvantage of each",
-      "Encryption questions often ask for both the process AND why it's needed"
+      "When converting binary to hexadecimal, break into sets of 4 bits for easier conversion",
+      "Remember that the leftmost bit in two's complement format determines the sign of the number"
     ],
     "formulas": [],
     "keyDiagramDescription": "Packet structure diagram showing header (source/destination addresses, packet number), payload (actual data), and trailer (error checking bits). Network diagram showing multiple possible routes between source and destination with packets taking different paths.",
@@ -108,7 +104,7 @@
       "Examiner Report 2022: 'Candidates failed to explain why serial is better for networks specifically' — always mention that serial transmission is more reliable over long distances due to reduced interference and skew"
     ],
     "keyDiagram": "Students must be able to draw a comparison diagram showing: (1) Serial transmission - single wire with bits labeled 1,0,1,1,0 flowing one after another in sequence, (2) Parallel transmission - multiple wires (typically 8) with bits transmitted simultaneously across each wire. Include arrows showing data flow direction and label each wire clearly. Add timing diagrams showing how parallel bits can become skewed over long distances while serial bits remain in sequence.",
-    "quickRecap": "Serial transmission sends data one bit at a time down a single wire, making it reliable over long distances with less interference. Parallel transmission sends multiple bits simultaneously but suffers from skew over distance. Serial is used for networks due to reliability, while parallel offers speed advantages for short distances. Remember: method (serial/parallel) is different from direction (simplex/duplex)."
+    "quickRecap": "Binary system is fundamental for computer processing and data storage. Data can be converted between binary, denary, and hexadecimal number systems using specific methods. Binary operations include addition, logical shifts, and two's complement for negative numbers, with potential overflow errors when values exceed register limits."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -116,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:43:50.306Z",
   "updated_at": "2026-04-06T03:43:50.306Z",
-  "enriched_at": "2026-04-06T16:07:04.448Z"
+  "enriched_at": "2026-04-06T16:07:04.448Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:45:32.300Z"
 }

@@ -9,32 +9,32 @@
     "title": "Functions",
     "readTime": "8 min",
     "keyPoints": [
-      "A **function** is a relation where each element in the domain maps to exactly one element in the range",
-      "The **domain** is the complete set of possible values of the independent variable (input values)",
-      "The **range** is the complete set of possible values of the dependent variable (output values)",
-      "For **inverse functions**, if f(x) = y, then f⁻¹(y) = x, and the domain of f becomes the range of f⁻¹",
-      "**Composite functions** fg(x) means f(g(x)) - apply g first, then apply f to the result",
-      "The **modulus function** |x| gives the positive value: |x| = x when x ≥ 0, and |x| = -x when x < 0",
-      "For **logarithmic functions**, log_a(x) is defined only when x > 0 and a > 0, a ≠ 1",
-      "To find the **inverse function**, interchange x and y, then solve for y",
-      "**One-to-one functions** pass both the vertical line test and horizontal line test"
+      "The solution(s) of a pair of linear and/or non-linear equations correspond to the coordinates of the intersection point(s) of the graphs",
+      "A pair of simultaneous linear equations is of the form ax + by = p, cx + dy = q, where a, b, c and d are constants, x and y are variables to be determined",
+      "There is usually one solution to a pair of simultaneous linear equations",
+      "The methods most commonly used to solve simultaneous linear equations are elimination and substitution",
+      "In elimination method, the coefficient of one of the variables is made the same in both equations. The equations are then either added or subtracted to form a single linear equation with only one variable",
+      "In substitution method, a variable is made the subject of the chosen equation. This equation is then substituted into the equation that was not chosen to solve for the variable",
+      "A non-linear equation is not of the form ax + by = p",
+      "The method most commonly used to solve simultaneous non-linear equations is substitution",
+      "For simultaneous non-linear equations: Step 1: Use the linear equation to express one of the variables in terms of the other. Step 2: Substitute it into the non-linear equation. Step 3: Substitute the value(s) obtained in Step 2 into the linear equation to obtain the value of the other variable"
     ],
     "definitions": [
       {
-        "term": "Function",
-        "definition": "A relation where each element in the domain maps to exactly one element in the range"
+        "term": "Simultaneous linear equations",
+        "definition": "A pair of simultaneous linear equations is of the form ax + by = p, cx + dy = q, where a, b, c and d are constants, x and y are variables to be determined"
       },
       {
-        "term": "Inverse Function",
-        "definition": "A function f⁻¹ such that if f(a) = b, then f⁻¹(b) = a, where the domain and range are interchanged"
+        "term": "Non-linear equation",
+        "definition": "A non-linear equation is not of the form ax + by = p"
       },
       {
-        "term": "Composite Function",
-        "definition": "A function formed by applying one function to the result of another, written as fg(x) = f(g(x))"
+        "term": "Elimination method",
+        "definition": "The coefficient of one of the variables is made the same in both equations. The equations are then either added or subtracted to form a single linear equation with only one variable"
       },
       {
-        "term": "Modulus Function",
-        "definition": "A function that gives the absolute value: |x| = x if x ≥ 0, and |x| = -x if x < 0"
+        "term": "Substitution method",
+        "definition": "A variable is made the subject of the chosen equation. This equation is then substituted into the equation that was not chosen to solve for the variable"
       }
     ],
     "howToAnswer": [
@@ -66,17 +66,13 @@
       ]
     },
     "commonMistakes": [
-      "Writing fg(x) as f(x)g(x) instead of f(g(x)) - composite means function of function, not multiplication",
-      "Forgetting to state domain restrictions for logarithmic and modulus functions",
-      "Not interchanging domain and range when finding inverse functions",
-      "Confusing f⁻¹(x) with 1/f(x) - inverse function is not the reciprocal",
-      "Not checking that inverse function exists by verifying one-to-one property"
+      "Not using the linear equation to express variables in terms of each other when solving non-linear systems",
+      "Forgetting to substitute values back into the linear equation to find corresponding variable values",
+      "Not expanding brackets correctly when substituting expressions into non-linear equations"
     ],
     "examinerTips": [
-      "Functions appear in every Paper 2 - worth 15-20 marks typically",
-      "Always state domain and range using correct notation (inequalities or set notation)",
-      "For composite functions, work from inside out: fg(x) means do g first, then f",
-      "Check inverse functions by verifying ff⁻¹(x) = x"
+      "Use the linear equation to express one of the variables in terms of the other when solving simultaneous non-linear equations",
+      "Substitute the values of x into the linear equation to obtain the corresponding values of y"
     ],
     "formulas": [
       "|x| = x when x ≥ 0, |x| = -x when x < 0",
@@ -112,7 +108,7 @@
       "Examiner Report 2022: 'Candidates frequently forgot to take the cube root in the final step' — when y³ appears in a relationship, remember to express your final answer as y = ∛(...) not y³ = ..."
     ],
     "keyDiagram": "Function mapping diagram showing domain and range as two ovals connected by arrows. Left oval (domain) contains input values, right oval (range/codomain) contains output values. Each input has exactly one arrow pointing to an output. Include labels for domain, codomain, range, and show examples of one-to-one vs many-to-one mappings. For composite functions, draw three ovals showing x → g(x) → f(g(x)) with appropriate domain restrictions clearly marked.",
-    "quickRecap": "A function maps each input to exactly one output. Domain = all possible input values, Range = all actual output values. For composite function fg(x) = f(g(x)) to exist, the range of g must be contained in the domain of f. When finding functions from graphs of transformed variables (like y³ vs x²), substitute coordinates to find the relationship then rearrange for y."
+    "quickRecap": "Simultaneous equations can be linear or non-linear, with solutions corresponding to intersection points of graphs. Linear equations are commonly solved using elimination or substitution methods. For non-linear systems, use the linear equation to express one variable in terms of another, substitute into the non-linear equation, then find corresponding values using the linear equation."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:15:41.544Z",
   "updated_at": "2026-04-06T04:15:41.544Z",
-  "enriched_at": "2026-04-06T16:22:05.568Z"
+  "enriched_at": "2026-04-06T16:22:05.568Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:47:49.137Z"
 }

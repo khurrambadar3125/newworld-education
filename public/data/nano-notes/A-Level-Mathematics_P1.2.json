@@ -9,38 +9,14 @@
     "title": "Functions",
     "readTime": "8 min",
     "keyPoints": [
-      "A **function** f is a relation where each element in the domain maps to exactly one element in the range",
-      "The **domain** is the complete set of possible input values (x-values) for which the function is defined",
-      "The **range** is the complete set of possible output values (y-values) that the function can produce",
-      "For composite function **fog(x) = f(g(x))**, substitute g(x) into function f, working from right to left",
-      "An **inverse function f⁻¹** exists only when f is one-to-one (each y-value corresponds to exactly one x-value)",
-      "To find f⁻¹(x): write y = f(x), rearrange to make x the subject, then interchange x and y",
-      "For a function to have an inverse, it must pass the **horizontal line test** (no horizontal line intersects the graph more than once)",
-      "The domain of f⁻¹ equals the range of f, and the range of f⁻¹ equals the domain of f",
-      "The graphs of f and f⁻¹ are **reflections of each other** in the line y = x"
+      "Functions chapter covers the language of functions, composite functions, and inverse functions",
+      "The book is specifically adapted for Cambridge International A & AS level Mathematics syllabus",
+      "Material was originally published as part of the MEI Structured Mathematics series",
+      "Functions appear as Chapter 4 in the Pure Mathematics 1 content structure",
+      "The chapter is positioned after sequences and series, and before differentiation",
+      "Functions content spans pages 106-122 in the textbook"
     ],
-    "definitions": [
-      {
-        "term": "Function",
-        "definition": "A relation where each element in the domain maps to exactly one element in the codomain"
-      },
-      {
-        "term": "Domain",
-        "definition": "The complete set of possible input values for which the function is defined"
-      },
-      {
-        "term": "Range",
-        "definition": "The complete set of actual output values that the function produces"
-      },
-      {
-        "term": "Composite function",
-        "definition": "A function formed by applying one function to the result of another, written as fog(x) = f(g(x))"
-      },
-      {
-        "term": "Inverse function",
-        "definition": "A function f⁻¹ that undoes the operation of f, where f⁻¹(f(x)) = x and f(f⁻¹(x)) = x"
-      }
-    ],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -66,17 +42,12 @@
       ]
     },
     "commonMistakes": [
-      "Writing fg(x) = f(x) × g(x) instead of f(g(x)) - composite means substitution, not multiplication",
-      "When finding inverse functions, students forget to interchange x and y at the final step",
-      "Stating domain as 'all real numbers' when restrictions apply - always check for square roots, fractions, or given conditions",
-      "Confusing the order in composite functions - fog(x) means apply g first, then f",
-      "Not restricting the domain when finding inverse functions of many-to-one functions"
+      "Common mistakes are marked with warning signs (!) throughout the book",
+      "Tricky points are specifically highlighted to help students avoid misunderstandings"
     ],
     "examinerTips": [
-      "Functions appear in every Paper 1, often combined with transformations or coordinate geometry",
-      "Always state the domain clearly using correct notation (inequalities or set notation)",
-      "When finding inverse functions, check your answer by verifying f(f⁻¹(x)) = x",
-      "For composite functions, work systematically from the inside out"
+      "Questions from Cambridge International Examinations A & AS level Mathematics papers are included for practice",
+      "ICT icon indicates where graphic calculators or computers could be used, though these are not permitted in examinations"
     ],
     "formulas": [
       "fog(x) = f(g(x))",
@@ -110,7 +81,7 @@
       "Examiner Report 2023: 'Common error was not verifying that f⁻¹(f(x)) = x after finding the inverse function' — always verify your inverse by showing both f⁻¹(f(x)) = x and f(f⁻¹(x)) = x when asked"
     ],
     "keyDiagram": "Students must be able to draw and interpret function mapping diagrams showing the relationship between domain and range. The diagram should show two ovals (domain set and codomain set) with arrows indicating the mapping rule. For one-to-one functions, each element in the domain maps to a unique element in the codomain. For onto functions, every element in the codomain is mapped to. Include labels for domain, codomain, range, and show examples of functions that are one-to-one, onto, both, or neither.",
-    "quickRecap": "Functions map each input to exactly one output. Key notation: f(x) is function value, fg(x) means f(g(x)) not f×g, f⁻¹(x) is the inverse function. Composite functions work from inside out: fg(2) means find g(2) first, then apply f to that result. Always verify inverse functions and check domain restrictions. One-to-one functions pass the horizontal line test, while all functions must pass the vertical line test."
+    "quickRecap": "The Functions chapter in Cambridge A Level Pure Mathematics 1 covers three main areas: the language of functions, composite functions, and inverse functions. This content is part of the official Cambridge International syllabus and includes practice questions from past examination papers. The material emphasizes common mistakes and provides warnings about tricky concepts to help students avoid misunderstandings."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +89,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:48:18.355Z",
   "updated_at": "2026-04-06T04:48:18.355Z",
-  "enriched_at": "2026-04-06T16:07:45.014Z"
+  "enriched_at": "2026-04-06T16:07:45.014Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:47:05.630Z"
 }

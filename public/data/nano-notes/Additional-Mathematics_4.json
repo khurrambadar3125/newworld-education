@@ -9,32 +9,32 @@
     "title": "Trigonometry",
     "readTime": "8 min",
     "keyPoints": [
-      "**Sine rule**: a/sin A = b/sin B = c/sin C applies to any triangle",
-      "**Cosine rule**: a² = b² + c² - 2bc cos A applies to any triangle",
-      "**Area formula**: Area = ½ab sin C for any triangle with two sides and included angle",
-      "**Pythagorean identity**: sin²θ + cos²θ = 1 for all values of θ",
-      "**Tangent identity**: tan θ = sin θ/cos θ for all values where cos θ ≠ 0",
-      "**Complementary angles**: sin(90° - θ) = cos θ and cos(90° - θ) = sin θ",
-      "**Negative angles**: sin(-θ) = -sin θ, cos(-θ) = cos θ, tan(-θ) = -tan θ",
-      "**Angle sum formulas**: sin(A ± B) = sin A cos B ± cos A sin B",
-      "**Double angle formulas**: sin 2θ = 2 sin θ cos θ, cos 2θ = cos²θ - sin²θ"
+      "The solution(s) of a pair of linear and/or non-linear equations correspond to the coordinates of the intersection point(s) of the graphs",
+      "A pair of simultaneous linear equations is of the form ax + by = p, cx + dy = q, where a, b, c and d are constants, x and y are variables to be determined",
+      "There is usually one solution to a pair of simultaneous linear equations",
+      "The methods most commonly used to solve simultaneous linear equations are elimination and substitution",
+      "In elimination, the coefficient of one of the variables is made the same in both equations. The equations are then either added or subtracted to form a single linear equation with only one variable",
+      "In substitution, a variable is made the subject of the chosen equation. This equation is then substituted into the equation that was not chosen to solve for the variable",
+      "A non-linear equation is not of the form ax + by = p",
+      "The method most commonly used to solve simultaneous non-linear equations is substitution",
+      "For simultaneous non-linear equations: Step 1: Use the linear equation to express one of the variables in terms of the other. Step 2: Substitute it into the non-linear equation. Step 3: Substitute the value(s) obtained in Step 2 into the linear equation to obtain the value of the other variable"
     ],
     "definitions": [
       {
-        "term": "Sine rule",
-        "definition": "In any triangle ABC, a/sin A = b/sin B = c/sin C where a, b, c are sides opposite to angles A, B, C respectively"
+        "term": "Simultaneous linear equations",
+        "definition": "A pair of equations of the form ax + by = p, cx + dy = q, where a, b, c and d are constants, x and y are variables to be determined"
       },
       {
-        "term": "Cosine rule",
-        "definition": "In any triangle ABC, a² = b² + c² - 2bc cos A where a is the side opposite to angle A"
+        "term": "Non-linear equation",
+        "definition": "An equation that is not of the form ax + by = p"
       },
       {
-        "term": "Trigonometric identity",
-        "definition": "An equation involving trigonometric functions that is true for all permissible values of the variable"
+        "term": "Elimination method",
+        "definition": "The coefficient of one of the variables is made the same in both equations. The equations are then either added or subtracted to form a single linear equation with only one variable"
       },
       {
-        "term": "Complementary angles",
-        "definition": "Two angles whose sum is 90 degrees"
+        "term": "Substitution method",
+        "definition": "A variable is made the subject of the chosen equation. This equation is then substituted into the equation that was not chosen to solve for the variable"
       }
     ],
     "howToAnswer": [
@@ -66,17 +66,13 @@
       ]
     },
     "commonMistakes": [
-      "Never use degrees and radians together in the same calculation",
-      "Students often use sine rule when cosine rule is required - check what information is given",
-      "Always check if angle is acute or obtuse when using sine rule - sin θ = sin(180° - θ)",
-      "Never leave answers as decimals when exact values are expected",
-      "Students forget to use the correct angle in area formula - must be the included angle between two given sides"
+      "Not making the coefficient of one variable the same in both equations when using elimination",
+      "Forgetting to substitute back into the linear equation when solving simultaneous non-linear equations",
+      "Not expanding correctly when substituting expressions into non-linear equations"
     ],
     "examinerTips": [
-      "Trigonometry appears in every Paper 2 - usually 15-20 marks total",
-      "Always draw a clear labelled diagram for triangle problems",
-      "Learn exact values: sin 30° = ½, sin 45° = √2/2, sin 60° = √3/2",
-      "Show each step when proving identities - examiners award method marks"
+      "Use the linear equation to express one variable in terms of the other when solving simultaneous non-linear equations",
+      "Substitute the values obtained back into the linear equation to find the corresponding values of the other variable"
     ],
     "formulas": [
       "a/sin A = b/sin B = c/sin C",
@@ -111,7 +107,7 @@
       "Examiner Report 2023: 'Candidates lost marks by not rounding to the required number of decimal places or significant figures' — read the question carefully for accuracy requirements and round only the final answer"
     ],
     "keyDiagram": "Students must be able to draw and label a right-angled triangle showing: the right angle marked with a square symbol, the angle being calculated marked with θ or the given letter, all three sides clearly labeled (hypotenuse opposite the right angle, opposite side facing the angle θ, adjacent side next to angle θ), and given measurements written on the appropriate sides. For non-right triangles, draw any triangle with all sides and angles clearly labeled using letters (a,b,c for sides opposite angles A,B,C respectively).",
-    "quickRecap": "SOH-CAH-TOA applies only to right-angled triangles: Sin = Opposite/Hypotenuse, Cos = Adjacent/Hypotenuse, Tan = Opposite/Adjacent. For any triangle, use sine rule a/sinA = b/sinB = c/sinC or cosine rule a² = b² + c² - 2bc×cosA. Always check your calculator is in degree mode. Round only your final answer to the accuracy specified in the question."
+    "quickRecap": "Simultaneous equations can be solved using elimination or substitution methods. For linear equations, elimination involves making coefficients equal and adding/subtracting equations. For non-linear equations, substitution is most common - express one variable from the linear equation and substitute into the non-linear equation. The solutions correspond to intersection points of the graphs."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:16:23.161Z",
   "updated_at": "2026-04-06T04:16:23.161Z",
-  "enriched_at": "2026-04-06T16:22:47.959Z"
+  "enriched_at": "2026-04-06T16:22:47.959Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:48:15.693Z"
 }

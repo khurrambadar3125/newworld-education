@@ -9,36 +9,36 @@
     "title": "Probability",
     "readTime": "8 min",
     "keyPoints": [
-      "**Probability** of an event = Number of favourable outcomes ÷ Total number of possible outcomes",
-      "All probabilities lie between **0 and 1** inclusive, where 0 means impossible and 1 means certain",
-      "Sum of all probabilities for all possible outcomes of an event **equals 1**",
-      "**Experimental probability** = Number of times event occurs ÷ Total number of trials",
-      "**Independent events** do not affect each other's outcomes - multiply probabilities: P(A and B) = P(A) × P(B)",
-      "**Dependent events** affect each other - second probability changes based on first outcome",
-      "For **mutually exclusive events**: P(A or B) = P(A) + P(B)",
-      "**Tree diagrams** show all possible outcomes with probabilities on branches - multiply along branches, add down columns",
-      "**Relative frequency** approaches theoretical probability as number of trials increases"
+      "Natural numbers are all the positive integers from 1 to infinity, fractions or decimals are not included",
+      "Whole numbers are all the positive integers including zero",
+      "Integers include positive numbers, negative numbers or zero and are the most common word used by the examiner",
+      "Prime numbers are numbers that have exactly 2 factors; 1 and the number itself",
+      "Composite numbers are numbers that have more than two factors",
+      "Rational numbers are any whole number that can be written as a pure fraction or decimal and must either end (terminating decimals) or repeat (recurring decimals)",
+      "Irrational numbers are any number that cannot be expressed in the form of a fraction",
+      "Squared numbers are always positive and candidates are required to memorise square numbers up till 15 for Paper 1",
+      "Cube numbers may be positive or negative"
     ],
     "definitions": [
       {
-        "term": "Probability",
-        "definition": "A measure of how likely an event is to occur, expressed as a number between 0 and 1"
+        "term": "Natural numbers",
+        "definition": "All the positive integers from 1 to infinity. Fractions or decimals are not included. They are also called Positive Integers"
       },
       {
-        "term": "Independent events",
-        "definition": "Two or more events where the outcome of one event does not affect the probability of the other event(s)"
+        "term": "Prime numbers",
+        "definition": "Numbers that have exactly 2 factors; 1 and the number itself"
       },
       {
-        "term": "Dependent events",
-        "definition": "Two or more events where the outcome of one event affects the probability of the other event(s)"
+        "term": "Rational numbers",
+        "definition": "Any whole number, that can be written as a pure fraction or decimal. Numbers that can be expressed in the form of a ratio. They must either end (terminating decimals) or repeat (recurring decimals)"
       },
       {
-        "term": "Mutually exclusive events",
-        "definition": "Two events that cannot occur at the same time"
+        "term": "HCF (Highest common factor)",
+        "definition": "The largest number that is a common factor of two different numbers"
       },
       {
-        "term": "Experimental probability",
-        "definition": "The probability of an event based on the results of an experiment or trial"
+        "term": "LCM (Lowest common multiple)",
+        "definition": "The smallest number that is the multiple of two different numbers"
       }
     ],
     "howToAnswer": [
@@ -70,17 +70,14 @@
       ]
     },
     "commonMistakes": [
-      "Never add probabilities for independent events - always multiply probabilities along tree diagram branches",
-      "Students often forget that P(not A) = 1 - P(A) when finding complementary probabilities",
-      "Never use experimental probability formula for theoretical probability questions",
-      "Students confuse 'at least one' with 'exactly one' - at least one means one or more",
-      "Never write probability greater than 1 or less than 0 - always check answers are reasonable"
+      "Including fractions or decimals when listing natural numbers",
+      "Confusing integers with whole numbers - integers include negative numbers",
+      "Not recognizing that squared numbers are always positive while cube numbers may be positive or negative",
+      "Repeating the same element in a set when sets are organized, unique collections of elements"
     ],
     "examinerTips": [
-      "Probability questions appear in every Paper 2 - usually worth 6-8 marks total",
-      "Always draw tree diagrams for two-stage probability questions to avoid errors",
-      "Show all working even for simple calculations - method marks available",
-      "Convert between fractions, decimals and percentages as requested in question"
+      "Integers are the most common word used by the examiner",
+      "Candidates are required to memorise square numbers up till 15 for Paper 1"
     ],
     "formulas": [
       "P(event) = Number of favourable outcomes ÷ Total number of outcomes",
@@ -113,7 +110,7 @@
       "Examiner Report 2023: 'Candidates often mixed up binomial and geometric distributions in combined probability questions' — clearly identify whether you need probability of exactly r successes (binomial) or probability of first success on trial r (geometric)"
     ],
     "keyDiagram": "Venn diagram showing two overlapping circles A and B within a rectangle (sample space S). Mark regions clearly as A∩B (intersection), A∩B' (A only), A'∩B (B only), and A'∩B' (neither). For conditional probability P(A|B), shade only circle B as the new sample space, then highlight A∩B within it. Include probability values in each region and show that P(A|B) = P(A∩B)/P(B) geometrically.",
-    "quickRecap": "Probability questions often test conditional probability P(A|B) = P(A∩B)/P(B), probability density functions where ∫f(x)dx = 1, and combinations of binomial/geometric distributions. Always identify the sample space first, use tree diagrams for sequential events, and remember that conditional probability changes the sample space. Check answers are between 0 and 1, and show all working clearly for method marks."
+    "quickRecap": "The number family includes natural numbers (positive integers from 1 to infinity), whole numbers (positive integers including zero), and integers (positive, negative numbers or zero). Prime numbers have exactly 2 factors while composite numbers have more than two factors. Rational numbers can be expressed as fractions and either terminate or repeat as decimals, while irrational numbers cannot be expressed as fractions."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -121,5 +118,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:25:43.870Z",
   "updated_at": "2026-04-05T21:25:43.870Z",
-  "enriched_at": "2026-04-06T16:06:16.095Z"
+  "enriched_at": "2026-04-06T16:06:16.095Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:24:37.543Z"
 }

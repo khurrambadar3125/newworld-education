@@ -9,31 +9,31 @@
     "title": "Sets and functions",
     "readTime": "8 min",
     "keyPoints": [
-      "A **set** is a collection of well-defined objects called elements",
-      "Use **set-builder notation** {x : condition} or **list notation** {a, b, c} to describe sets",
-      "The **universal set** ξ contains all elements under consideration in a particular context",
-      "**Venn diagrams** use overlapping circles to show relationships between sets with the universal set as a rectangle",
-      "A **function** is a mapping where each element in the domain maps to exactly one element in the range",
-      "The **inverse function** f⁻¹(x) reverses the effect of function f(x), so f⁻¹(f(x)) = x",
-      "A **composite function** (g ∘ f)(x) = g(f(x)) means apply f first, then apply g to the result",
-      "**Domain** is the set of input values, **range** is the set of possible output values"
+      "A set is an organised, unique collection of elements where you are not allowed to repeat the same element in a set",
+      "Set notation uses ':' which should be read as 'Such that', ℰ for Universal set, ∈ for 'is an element of', and ∉ for 'is not an element of'",
+      "A' represents the Complement of set A, which is the set containing all the elements of the universal set but those of set A",
+      "A ∪ B represents Union of A and B, which is the set produced by writing all the elements of both sets",
+      "A ∩ B represents Intersection of A and B, which is the set produced by noting down the elements common in both the sets",
+      "A ⊆ B means A is a subset of B, while A ⊂ B means A is a proper subset of B",
+      "The empty/null set is represented by ∅, and n(A) represents the number of elements in set A",
+      "Venn Diagrams can be used to visualize set relationships, showing unions, intersections, and complements graphically"
     ],
     "definitions": [
       {
-        "term": "Function",
-        "definition": "A mapping from a set of inputs (domain) to a set of outputs (range) where each input has exactly one output"
+        "term": "Set",
+        "definition": "An organised, unique collection of elements where you are not allowed to repeat the same element in a set"
       },
       {
-        "term": "Inverse function",
-        "definition": "A function f⁻¹ that reverses the mapping of function f, where f⁻¹(f(x)) = x for all x in the domain"
+        "term": "Union (A ∪ B)",
+        "definition": "The set produced by writing all the elements of both sets"
       },
       {
-        "term": "Composite function",
-        "definition": "The combination of two functions where the output of the first function becomes the input of the second function"
+        "term": "Intersection (A ∩ B)",
+        "definition": "The set produced by noting down the elements common in both the sets"
       },
       {
-        "term": "Universal set",
-        "definition": "The set containing all elements under consideration in a particular problem"
+        "term": "Complement (A')",
+        "definition": "The set containing all the elements of the universal set but those of set A"
       }
     ],
     "howToAnswer": [
@@ -62,17 +62,13 @@
       ]
     },
     "commonMistakes": [
-      "Writing f⁻¹(x) = 1/f(x) instead of finding the actual inverse function",
-      "Confusing (f ∘ g)(x) with (g ∘ f)(x) - the order matters in composite functions",
-      "Not showing all elements clearly in Venn diagram regions",
-      "Forgetting to state domain restrictions when finding inverse functions",
-      "Writing ∈ instead of ⊆ when describing subset relationships"
+      "Repeating the same element in a set when sets must contain unique elements only",
+      "Confusing subset notation A ⊆ B with proper subset notation A ⊂ B",
+      "Misreading the colon ':' in set notation instead of reading it as 'Such that'"
     ],
     "examinerTips": [
-      "Functions appear in Paper 2 almost every year, often worth 8-12 marks",
-      "Always check your inverse function by verifying f(f⁻¹(x)) = x",
-      "For Venn diagrams, shade the required region clearly and label with numbers",
-      "Show working step-by-step for composite functions to earn method marks"
+      "Remember that you are not allowed to repeat the same element in a set",
+      "Read ':' as 'Such that' when interpreting set notation"
     ],
     "formulas": [
       "n(A ∪ B) = n(A) + n(B) - n(A ∩ B)",
@@ -104,7 +100,7 @@
       "Examiner Report 2022: 'Candidates often gave single values instead of ranges when finding domains' — remember that set of values typically means an interval or union of intervals, not isolated points"
     ],
     "keyDiagram": "Students must master the number line representation showing solution sets with open/closed circles and shaded regions. For inequalities like a < x < b, use open circles at endpoints with shaded region between. For unions like x < a or x > b, show two separate shaded regions with a gap. Include proper labeling of critical values and clear indication of included/excluded boundaries.",
-    "quickRecap": "Sets define collections of elements, while functions map inputs to unique outputs. When finding solution sets, always consider domain restrictions and boundary conditions. Modulus inequalities require splitting into positive and negative cases. Set notation uses brackets correctly: round brackets ( ) exclude endpoints, square brackets [ ] include them."
+    "quickRecap": "Sets are organised, unique collections of elements with no repetition allowed. Key operations include union (all elements from both sets), intersection (common elements only), and complement (elements in universal set but not in the given set). Set notation uses specific symbols like ∪, ∩, and ' to represent these operations, with Venn diagrams providing visual representation of set relationships."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -112,5 +108,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:24:59.568Z",
   "updated_at": "2026-04-05T21:24:59.568Z",
-  "enriched_at": "2026-04-06T16:08:46.452Z"
+  "enriched_at": "2026-04-06T16:08:46.452Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:26:22.815Z"
 }

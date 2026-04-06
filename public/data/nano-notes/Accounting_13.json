@@ -9,32 +9,18 @@
     "title": "Irrecoverable debts and provisions for doubtful debts",
     "readTime": "8 min",
     "keyPoints": [
-      "**Irrecoverable debts** are debts that are considered uncollectable and must be written off completely from the books",
-      "Irrecoverable debts are charged as an **expense to the profit and loss account** in the period they are written off",
-      "**Provision for doubtful debts** is an estimate of debts that may become irrecoverable in the future",
-      "Provisions are created by debiting profit and loss account and crediting provision for doubtful debts account",
-      "**Increase in provision** is charged as an expense to profit and loss account",
-      "**Decrease in provision** is credited as income to profit and loss account",
-      "Debtors are shown in the balance sheet at their **net value** (gross debtors minus provision)",
-      "Recovery of previously written off irrecoverable debts is credited to profit and loss account as income",
-      "Provision is usually calculated as a **percentage of debtors** or based on age analysis of debts"
+      "Irrecoverable debts are debts that cannot be recovered from customers and must be written off from the accounts",
+      "Double entries are required when dealing with irrecoverable debts to properly record the loss in the accounting system",
+      "Provision of debts is created to account for potential future losses from customers who may not pay their outstanding amounts",
+      "The process involves identifying debts that are unlikely to be collected and making appropriate accounting adjustments",
+      "Irrecoverable debts directly impact the profit and loss account as they represent actual losses to the business",
+      "Provision for doubtful debts is an estimate of potential losses and helps in presenting a more accurate financial position",
+      "Both irrecoverable debts and provisions for doubtful debts affect the value of accounts receivable shown in the balance sheet"
     ],
     "definitions": [
       {
-        "term": "Irrecoverable debt",
-        "definition": "A debt that is considered uncollectable and must be written off completely from the books of account"
-      },
-      {
-        "term": "Provision for doubtful debts",
-        "definition": "An estimate of the amount of existing debtors that may become irrecoverable in the future"
-      },
-      {
-        "term": "Net debtors",
-        "definition": "The amount of debtors after deducting the provision for doubtful debts"
-      },
-      {
-        "term": "Recovery of irrecoverable debt",
-        "definition": "Money received from a debtor whose debt was previously written off as irrecoverable"
+        "term": "Irrecoverable Debts",
+        "definition": "Debts that cannot be recovered from customers and must be written off from the accounts"
       }
     ],
     "howToAnswer": [
@@ -67,17 +53,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'bad debts' in exam answers — always use 'irrecoverable debts' for Cambridge marking",
-      "Students often forget to show irrecoverable debts and provision changes separately in P&L calculations",
-      "Common error: Adding provision changes instead of subtracting decreases from expenses",
-      "Students confuse gross debtors with net debtors when calculating required provision percentage",
-      "Writing off irrecoverable debts from provision account instead of writing off directly from debtors"
+      "Confusing irrecoverable debts with provision for doubtful debts",
+      "Incorrectly recording the double entries for debt write-offs",
+      "Not distinguishing between actual losses and estimated potential losses"
     ],
     "examinerTips": [
-      "This topic appears in every Paper 2 exam, often combined with final accounts questions",
-      "Always show separate workings for provision calculations and P&L impacts",
-      "Recovery of irrecoverable debts is ALWAYS income to P&L account, never reduces the expense",
-      "When preparing accounts, show both gross debtors and provision separately in balance sheet workings"
+      "Ensure correct double entries are made when writing off irrecoverable debts",
+      "Understand the difference between irrecoverable debts and provision of debts"
     ],
     "formulas": [
       "Provision required = Debtors × Provision percentage",
@@ -108,7 +90,7 @@
       "Examiner Report 2021: 'Common error was adding the full provision amount to expenses instead of only the movement' — only the increase or decrease in provision affects the income statement, not the total provision balance"
     ],
     "keyDiagram": "T-account layout showing: (1) Trade Receivables account with opening balance, credit sales, and deductions for irrecoverable debts, (2) Provision for Doubtful Debts account showing opening balance, any decreases/increases, and closing balance, (3) Irrecoverable Debts Expense account showing debts written off plus movement in provision. Include arrows showing the flow from receivables to provision to expense accounts.",
-    "quickRecap": "Irrecoverable debts are actual write-offs that reduce receivables and create an expense. Provisions are estimates for future losses based on a percentage of receivables. Only the movement in provision affects profit, not the total balance. In the statement of financial position, show receivables minus provision to give net receivables figure."
+    "quickRecap": "Irrecoverable debts are amounts that cannot be collected from customers and must be written off using proper double entries. Provision of debts is created to estimate potential future losses. Both concepts are essential for accurate financial reporting and affect the accounts receivable balance."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -116,5 +98,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:39:38.395Z",
   "updated_at": "2026-04-06T03:39:38.395Z",
-  "enriched_at": "2026-04-06T16:07:28.220Z"
+  "enriched_at": "2026-04-06T16:07:28.220Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:27:36.574Z"
 }

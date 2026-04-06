@@ -9,36 +9,36 @@
     "title": "Population",
     "readTime": "8 min",
     "keyPoints": [
-      "Pakistan's **population** has grown rapidly from 34 million in 1947 to over 220 million in 2017 due to high birth rates and declining death rates",
-      "**Census** data shows population growth rate of approximately 2.4% annually, making Pakistan the world's fifth most populous country",
-      "**Employment** opportunities are concentrated in agriculture (42%), services (37%) and industry (21%) sectors",
-      "**Unemployment** rates are highest among youth (15-24 years) at approximately 8-10% due to lack of job creation and skills mismatch",
-      "**Migration** occurs from rural to urban areas as people seek better employment, education and healthcare opportunities",
-      "**Urbanisation** has increased rapidly with urban population growing from 17% in 1951 to 36% in 2017",
-      "Major cities like Karachi, Lahore and Faisalabad experience rapid growth causing pressure on infrastructure and services",
-      "**Internal migration** includes movement from northern areas to Punjab and Sindh for economic opportunities",
-      "**Population density** varies greatly with highest concentrations in Punjab plains and Indus valley regions"
+      "The Marathas were warriors from Deccan recognized for their guerrilla fighting abilities and devotion to Hinduism",
+      "Jizya was an Islamic tax on non-muslims that was abolished by Mughal Emperor Akbar but brought back by Aurungzeb",
+      "Suttee was a Hindu tradition where widows were burnt alive with the body of their deceased husband, banned by the British in Bengal in 1829",
+      "The greased cartridge issue in 1857 involved new en-field rifles with cartridges greased by pig and cow fat which had to be chewed off before use",
+      "The East India Company was established when Queen Elizabeth gave permission to merchants to set up EIC, landing in Surat in 1608",
+      "The Battle of Plassey in 1757 occurred when Mir Jafar betrayed the Indians and sided with the British, leading to Robert Clive defeating Nawab's army",
+      "Tipu Sultan was the son of Hyder Ali, known as the Tiger of Mysore, who was defeated and killed in the fourth battle of Mysore by Lord Wellesley in 1799",
+      "The zamindars were landlords/tax collectors, wealthy and influential people who imposed tax on beard which annoyed Muslims",
+      "The Jihad Movement was started by Syed Ahmed Barelvi who believed an armed struggle is the only solution to the Muslims' problems"
     ],
     "definitions": [
       {
-        "term": "Census",
-        "definition": "An official count of population conducted every 10 years to collect demographic, social and economic data"
+        "term": "Jizya",
+        "definition": "Islamic tax on non-muslims"
       },
       {
-        "term": "Urbanisation",
-        "definition": "The process by which an increasing proportion of a population lives in towns and cities rather than rural areas"
+        "term": "Suttee",
+        "definition": "Hindu tradition where widows were burnt alive with the body of their deceased husband"
       },
       {
-        "term": "Migration",
-        "definition": "The movement of people from one place to another, either within a country (internal) or between countries (external)"
+        "term": "East India Company",
+        "definition": "Company established when Queen Elizabeth gave permission to merchants to set up EIC"
       },
       {
-        "term": "Population density",
-        "definition": "The number of people living per square kilometer in a given area"
+        "term": "Zamindars",
+        "definition": "Landlords/tax collectors, wealthy and influential people"
       },
       {
-        "term": "Unemployment",
-        "definition": "The condition where people who are able and willing to work cannot find suitable employment"
+        "term": "Thuggees",
+        "definition": "Armed robbers, who claimed to be serving a goddess named Kali"
       }
     ],
     "howToAnswer": [
@@ -73,17 +73,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'overpopulation' — always say 'rapid population growth' as Pakistan has resources but distribution issues",
-      "Students often confuse migration with immigration/emigration — internal migration is movement within Pakistan",
-      "Don't just list census figures — explain what the data shows about population trends",
-      "Avoid saying unemployment is only due to population growth — mention skills mismatch and economic factors",
-      "Never ignore regional variations — population density varies greatly across Pakistan's provinces"
+      "Writing concise bullet points instead of proper wording for 4 mark questions",
+      "Not providing 4 valid statements for 4 mark questions",
+      "Failing to read syllabus content thoroughly alongside topical preparation"
     ],
     "examinerTips": [
-      "Population questions appear in every Paper 2 - learn key statistics from latest census",
-      "Always give Pakistani examples when discussing urbanisation (Karachi, Lahore growth)",
-      "Link population issues to other topics like agriculture, industry and resources",
-      "Use specific data from 2017 census for full marks in statistical questions"
+      "The requirement of 4 mark questions is to write 4 valid statements",
+      "You should write each point with proper wording, not concise bullet points"
     ],
     "formulas": [
       "Population density = Total population ÷ Total area",
@@ -114,7 +110,7 @@
       "Examiner Report 2023: 'Weak responses on demographic transition model mixed up birth and death rate patterns' — remember Stage 1 has high birth AND death rates, Stage 4 has low birth AND death rates"
     ],
     "keyDiagram": "Population pyramid diagram showing age-sex structure with males on left, females on right, age groups in 5-year bands from 0-4 at bottom to 85+ at top. Must label axes (age groups vertically, population numbers/percentages horizontally), include title, and be able to draw three shapes: expansive pyramid (wide base, narrow top - rapid growth), constrictive pyramid (narrow base, wider middle - declining growth), and stationary pyramid (relatively straight sides - stable growth). Include ability to shade and compare two time periods.",
-    "quickRecap": "Population studies cover distribution (where people live), density (people per km²), and structure (age-sex composition shown in pyramids). Key processes include natural increase (births minus deaths), migration (push/pull factors), and demographic transition (4 stages from high birth/death rates to low rates). Aging populations create economic burdens while young populations face resource pressures."
+    "quickRecap": "This section covers key historical events and figures in Pakistan Studies including the Marathas, Mughal policies like Jizya, British colonial expansion through the East India Company, and resistance movements. The 1857 War of Independence was triggered by issues like greased cartridges and involved figures like the Rani of Jhansi. For 4 mark questions, students must provide 4 valid statements with proper wording rather than concise bullet points."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -122,5 +118,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:50:58.591Z",
   "updated_at": "2026-04-05T20:50:58.591Z",
-  "enriched_at": "2026-04-06T15:59:46.557Z"
+  "enriched_at": "2026-04-06T15:59:46.557Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:20:44.484Z"
 }

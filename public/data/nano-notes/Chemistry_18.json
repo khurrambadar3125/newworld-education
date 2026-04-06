@@ -9,35 +9,35 @@
     "title": "Introduction to organic chemistry",
     "readTime": "8 min",
     "keyPoints": [
-      "**Organic compounds** are compounds that contain carbon atoms bonded to hydrogen atoms",
-      "**Structural formula** shows the arrangement of atoms in a molecule and how they are bonded",
-      "**Homologous series** is a family of organic compounds with the same functional group and general formula",
-      "Members of a homologous series differ by **CH₂** and have similar chemical properties but different physical properties",
-      "**Isomers** are compounds with the same molecular formula but different structural formulae",
-      "**Functional group** is the part of an organic molecule that determines its chemical properties",
-      "Carbon atoms can form **four covalent bonds** and can bond to other carbon atoms to form chains",
-      "Physical properties in a homologous series show **gradual change** as the carbon chain length increases"
+      "A compound contains 2 or more elements chemically joined together and contains covalent or ionic bonds",
+      "A mixture contains 2 or more substances which are not chemically joined together",
+      "Pure substances have fixed composition, fixed melting point/boiling point, produce only 1 spot on chromatogram, and all molecules are the same",
+      "Mixtures have variable composition, variable boiling point/melting point, 2 or more spots on chromatogram, and 2 or more different molecules",
+      "Insoluble solid and liquid are separated by filtration - liquid particles are small enough to go through filter paper pores but solid particles are too large",
+      "Crystallization is used to obtain solid from solid and liquid solution - process involves heating solution to evaporate solvent, producing hot saturated solution, then crystals of pure solid form on cooling",
+      "Distillation is used to obtain pure liquid from solution - pure liquid has low boiling point and changes to gas easily, while solid does not boil and remains in flask",
+      "Fractional distillation separates 2 liquids which are mixed (miscible) - liquid with lowest boiling point comes out first at top of fractionating column"
     ],
     "definitions": [
       {
-        "term": "Organic compound",
-        "definition": "A compound that contains carbon atoms bonded to hydrogen atoms"
+        "term": "Compound",
+        "definition": "2 or more elements chemically joined together"
       },
       {
-        "term": "Homologous series",
-        "definition": "A family of organic compounds with the same functional group and general formula"
+        "term": "Mixture",
+        "definition": "2 or more substances which are not chemically joined together"
       },
       {
-        "term": "Structural formula",
-        "definition": "A formula that shows the arrangement of atoms in a molecule and how they are bonded"
+        "term": "Saturated solution",
+        "definition": "A solution where no more solid can dissolve in it"
       },
       {
-        "term": "Isomers",
-        "definition": "Compounds with the same molecular formula but different structural formulae"
+        "term": "Residue",
+        "definition": "Solid obtained during filtration"
       },
       {
-        "term": "Functional group",
-        "definition": "The part of an organic molecule that determines its chemical properties"
+        "term": "Distillate",
+        "definition": "Liquid obtained during distillation or fractional distillation, collected in conical flask"
       }
     ],
     "howToAnswer": [
@@ -66,16 +66,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say organic compounds 'contain carbon' - always say 'contain carbon bonded to hydrogen'",
-      "Students often forget to show ALL hydrogen atoms in structural formulae",
-      "Drawing condensed formulae when structural formulae are asked for - show all bonds as lines",
-      "Confusing molecular formula with structural formula - structural shows arrangement of atoms",
-      "Saying isomers have 'different formulas' when they have the same molecular formula but different structural formulae"
+      "Confusing compounds with mixtures - compounds are chemically joined while mixtures are not chemically joined",
+      "Not understanding that pure substances have fixed melting/boiling points while mixtures have variable melting/boiling points",
+      "Thinking that all substances can be separated by the same method - different separation techniques are needed for different types of mixtures"
     ],
     "examinerTips": [
-      "This topic appears in every paper - know definitions word-perfect",
-      "Always count carbon and hydrogen atoms carefully when drawing structural formulae",
-      "Practice drawing isomers - this is a common 4-6 mark question"
+      "Any question that asks for the method to obtain crystals, the process will be crystallization",
+      "Remember that soluble means can dissolve in water while insoluble means cannot dissolve in water",
+      "The constant temperature during distillation equals the boiling point of the pure liquid"
     ],
     "formulas": [
       "CₙH₂ₙ₊₂ (alkanes general formula)"
@@ -105,7 +103,7 @@
       "Examiner Report 2024: 'Candidates often failed to explain catenation clearly' — always define catenation as the ability of carbon atoms to bond with other carbon atoms to form chains, not just 'carbon bonds to itself'"
     ],
     "keyDiagram": "Students must be able to draw the electron arrangement of carbon showing 4 electrons in the outer shell (2,4), and simple structural formulas showing carbon chains. Key diagram: Draw methane (CH₄) showing carbon in center with 4 hydrogen atoms arranged tetrahedrally, and ethane (C₂H₆) showing two carbon atoms bonded together with hydrogen atoms. Include dot-and-cross diagrams showing shared electron pairs in covalent bonds.",
-    "quickRecap": "Organic chemistry studies carbon-containing compounds (except CO₂, carbonates, etc.). Carbon has 4 valence electrons allowing 4 covalent bonds and catenation (chain formation). This creates millions of possible structures from simple alkanes to complex proteins. Examples include methane (fuel), ethanol (alcohol), and glucose (energy source)."
+    "quickRecap": "Matter exists as compounds (elements chemically joined) or mixtures (substances not chemically joined). Pure substances have fixed properties while mixtures have variable properties. Different separation techniques are used: filtration for insoluble solids, crystallization to obtain solids from solutions, distillation to obtain pure liquids, and fractional distillation to separate miscible liquids."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -113,5 +111,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:57:02.216Z",
   "updated_at": "2026-04-05T20:57:02.216Z",
-  "enriched_at": "2026-04-06T16:00:14.246Z"
+  "enriched_at": "2026-04-06T16:00:14.246Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:13:30.627Z"
 }

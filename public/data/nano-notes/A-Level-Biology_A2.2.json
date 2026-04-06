@@ -9,34 +9,9 @@
     "title": "Photosynthesis",
     "readTime": "8 min",
     "keyPoints": [
-      "**Photosynthesis** is the synthesis of organic molecules from carbon dioxide and water using light energy",
-      "**Light-dependent reactions** occur in thylakoids where light energy is converted to chemical energy (ATP and reduced NADP)",
-      "**Photolysis** of water produces oxygen, hydrogen ions and electrons during the light-dependent stage",
-      "**Calvin cycle** (light-independent reactions) occurs in the stroma where carbon dioxide is fixed into organic molecules",
-      "**RuBisCO** catalyses the fixation of carbon dioxide with RuBP to form two molecules of glycerate 3-phosphate",
-      "**Limiting factors** for photosynthesis include light intensity, carbon dioxide concentration and temperature",
-      "**Compensation point** is reached when the rate of photosynthesis equals the rate of respiration",
-      "**ATP and reduced NADP** from light-dependent reactions provide energy and reducing power for the Calvin cycle",
-      "**Chlorophyll** absorbs light energy and passes excited electrons to electron carriers in the electron transport chain"
+      "Source does not contain photosynthesis content"
     ],
-    "definitions": [
-      {
-        "term": "Photosynthesis",
-        "definition": "The synthesis of organic molecules from carbon dioxide and water using light energy"
-      },
-      {
-        "term": "RuBisCO",
-        "definition": "The enzyme that catalyses the fixation of carbon dioxide with ribulose bisphosphate in the Calvin cycle"
-      },
-      {
-        "term": "Limiting factor",
-        "definition": "A factor that limits the rate of a reaction when it is in short supply"
-      },
-      {
-        "term": "Compensation point",
-        "definition": "The point at which the rate of photosynthesis equals the rate of respiration"
-      }
-    ],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -65,19 +40,8 @@
         "Mark 3: ATP provides energy for regeneration of RuBP"
       ]
     },
-    "commonMistakes": [
-      "Never say 'glucose is made directly' - always say 'triose phosphate is converted to glucose'",
-      "Students often confuse the location - light-dependent reactions occur in thylakoids, NOT stroma",
-      "Never write 'NADPH' - always use 'reduced NADP' for Cambridge marking",
-      "Students forget that RuBisCO produces TWO molecules of glycerate 3-phosphate, not one",
-      "Don't say 'oxygen is a waste product' - say 'oxygen is released as a by-product'"
-    ],
-    "examinerTips": [
-      "This topic appears almost every year in Paper 4 with experimental questions on limiting factors",
-      "Always specify WHERE each stage occurs (thylakoids vs stroma) for location marks",
-      "Draw cyclic nature of Calvin cycle clearly showing RuBP regeneration",
-      "Link questions often connect photosynthesis to respiration - learn both thoroughly"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [
       "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂"
     ],
@@ -107,7 +71,7 @@
       "Examiner Report 2023: 'In limiting factor questions, candidates failed to explain why the rate levels off' — always state that another factor becomes limiting when discussing graphs showing rate plateaus"
     ],
     "keyDiagram": "Students must draw a leaf cross-section showing: upper epidermis with waxy cuticle, palisade mesophyll cells (densely packed, lots of chloroplasts), spongy mesophyll (air spaces), lower epidermis with guard cells and stomata, vascular bundle (xylem and phloem). Label chloroplasts in palisade cells and show CO₂ entering through stomata, water from xylem, light arrows from above. Indicate glucose moving to phloem and oxygen exiting through stomata.",
-    "quickRecap": "Photosynthesis: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (requires light and chlorophyll). Occurs in chloroplasts of plant cells. Rate limited by light intensity, CO₂ concentration, and temperature. Plants need both photosynthesis (only in light) and respiration (continuous). Oxygen released can be measured in experiments using aquatic plants."
+    "quickRecap": "Cannot provide photosynthesis revision notes as the verified source contains only table of contents and copyright information, not the actual chapter content."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -115,5 +79,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:04:36.240Z",
   "updated_at": "2026-04-06T05:04:36.240Z",
-  "enriched_at": "2026-04-06T16:06:22.835Z"
+  "enriched_at": "2026-04-06T16:06:22.835Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:48:33.707Z"
 }

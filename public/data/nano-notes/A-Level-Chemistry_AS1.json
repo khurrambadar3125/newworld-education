@@ -9,32 +9,30 @@
     "title": "Atoms, molecules and stoichiometry",
     "readTime": "8 min",
     "keyPoints": [
-      "**Relative atomic mass** is the weighted mean mass of an atom of an element compared to 1/12 of the mass of an atom of carbon-12",
-      "**Relative molecular mass** is the sum of the relative atomic masses of all atoms in a molecule",
-      "**One mole** is the amount of substance that contains as many elementary entities as there are atoms in exactly 12g of carbon-12",
-      "**Avogadro constant** (L) = 6.02 × 10²³ mol⁻¹, representing the number of particles in one mole",
-      "**Empirical formula** shows the simplest whole number ratio of atoms of each element in a compound",
-      "**Molecular formula** shows the actual number of atoms of each element in one molecule of a compound",
-      "**Stoichiometric calculations** use molar ratios from balanced equations to calculate quantities of reactants and products",
-      "**Percentage yield** = (actual yield ÷ theoretical yield) × 100%",
-      "**Limiting reagent** is the reactant that is completely consumed first and determines the amount of product formed"
+      "Masses of atoms and molecules form the foundation of stoichiometric calculations",
+      "Accurate relative atomic masses are essential for precise calculations",
+      "Amount of substance is measured in moles - the fundamental unit in chemistry",
+      "Mole calculations allow quantitative analysis of chemical reactions",
+      "Chemical formulae and chemical equations represent the composition and reactions of substances",
+      "Solutions and concentration calculations are crucial for practical chemistry",
+      "Calculations involving gas volumes connect the mole concept to physical properties"
     ],
     "definitions": [
       {
-        "term": "Mole",
-        "definition": "The amount of substance that contains as many elementary entities as there are atoms in exactly 12g of carbon-12"
+        "term": "Amount of substance",
+        "definition": "A fundamental quantity measured in moles"
       },
       {
-        "term": "Empirical formula",
-        "definition": "The simplest whole number ratio of atoms of each element in a compound"
+        "term": "Mole calculations",
+        "definition": "Quantitative calculations using the mole concept to analyze chemical reactions"
       },
       {
-        "term": "Relative atomic mass",
-        "definition": "The weighted mean mass of an atom of an element compared to 1/12 of the mass of an atom of carbon-12"
+        "term": "Chemical formulae",
+        "definition": "Representations showing the composition of chemical substances"
       },
       {
-        "term": "Avogadro constant",
-        "definition": "The number of particles in one mole of any substance, equal to 6.02 × 10²³ mol⁻¹"
+        "term": "Chemical equations",
+        "definition": "Representations showing chemical reactions and their stoichiometry"
       }
     ],
     "howToAnswer": [
@@ -65,19 +63,8 @@
         "Mark 3: Correct empirical formula CH₂O"
       ]
     },
-    "commonMistakes": [
-      "Never use Mr instead of Ar for relative atomic mass - they are different quantities",
-      "Students often forget to balance equations before doing stoichiometric calculations",
-      "Never round intermediate calculations - only round the final answer to appropriate significant figures",
-      "Students confuse empirical formula with molecular formula - empirical is the simplest ratio",
-      "Never write percentage yield greater than 100% without explaining experimental errors"
-    ],
-    "examinerTips": [
-      "Stoichiometry questions appear in every Paper 1 and Paper 2 - master the calculations",
-      "Always show working for calculations even if using a calculator",
-      "Check your empirical formula makes chemical sense - watch for common ratios like 1:2:1",
-      "In limiting reagent questions, calculate products from each reactant separately to find which gives less product"
-    ],
+    "commonMistakes": [],
+    "examinerTips": [],
     "formulas": [
       "n = m/M",
       "n = V/24",
@@ -111,7 +98,7 @@
       "Examiner Report 2023: 'Candidates lost marks by not showing working for mole calculations' — always show the formula n = m/Mr and substitute values clearly with units"
     ],
     "keyDiagram": "Students must be able to draw a simple particle diagram showing the difference between atoms, molecules and ions. Show single circles for atoms (e.g., He), connected circles for molecules (e.g., H₂, H₂O with correct bonding), and charged particles for ions (Na⁺, Cl⁻). Include a key showing what each symbol represents and ensure the diagram demonstrates understanding of particle nature at the atomic level.",
-    "quickRecap": "Remember the key formula triangle: moles = mass/Mr. Empirical formula uses simplest ratio of atoms, molecular formula is the actual ratio. Always balance equations first before stoichiometry. Avogadro's constant (6.02 × 10²³) connects moles to particles."
+    "quickRecap": "Chapter 1 covers the fundamental concepts of moles and equations in chemistry. The chapter begins with understanding masses of atoms and molecules, progresses through the mole concept and calculations, and extends to chemical formulae, equations, solutions, and gas volume calculations. These topics form the quantitative foundation essential for all further study in A Level Chemistry."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +106,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:29:38.620Z",
   "updated_at": "2026-04-06T04:29:38.621Z",
-  "enriched_at": "2026-04-06T16:08:10.123Z"
+  "enriched_at": "2026-04-06T16:08:10.123Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T19:43:46.737Z"
 }
