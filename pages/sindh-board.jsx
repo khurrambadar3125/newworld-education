@@ -225,12 +225,21 @@ export default function SindhBoardStudy() {
                               </div>
                             )}
 
-                            {/* Ask Starky — with grade context so Starky knows it's Sindh Board */}
-                            <a href={`/?message=${encodeURIComponent(`I'm studying ${selectedSubject} Class ${selectedClass}, chapter "${ch.name}" (Sindh Board). Please explain the key concepts briefly then tell me to go back to my notes and practice.`)}&returnTo=${encodeURIComponent('/sindh-board')}&grade=grade${selectedClass}`}
-                              onClick={() => { try { const p = JSON.parse(localStorage.getItem('nw_user') || '{}'); p.gradeId = 'grade' + selectedClass; p.board = 'sindh'; localStorage.setItem('nw_user', JSON.stringify(p)); } catch {} }}
-                              style={{ display: 'block', textAlign: 'center', fontSize: 13, fontWeight: 700, color: '#4F8EF7', textDecoration: 'none', padding: '12px 16px', marginTop: 8, background: 'rgba(79,142,247,.06)', borderRadius: 10, border: '1px solid rgba(79,142,247,.15)' }}>
-                              Samajh nahi aaya? Starky se poochein →
-                            </a>
+                            {/* Next chapter suggestion */}
+                            {(() => {
+                              const currentIdx = chapters.findIndex(c => c.id === ch.id);
+                              const nextCh = currentIdx >= 0 && currentIdx < chapters.length - 1 ? chapters[currentIdx + 1] : null;
+                              return nextCh ? (
+                                <button onClick={() => { setExpandedChapter(nextCh.id); loadNote(selectedSubject, selectedClass, nextCh.id); }}
+                                  style={{ display: 'block', width: '100%', textAlign: 'center', fontSize: 13, fontWeight: 700, color: '#4ADE80', padding: '12px 16px', marginTop: 12, background: 'rgba(74,222,128,.06)', borderRadius: 10, border: '1px solid rgba(74,222,128,.15)', cursor: 'pointer' }}>
+                                  Agle chapter: {nextCh.name} →
+                                </button>
+                              ) : (
+                                <div style={{ textAlign: 'center', fontSize: 13, color: '#4ADE80', fontWeight: 700, padding: '12px 0', marginTop: 8 }}>
+                                  Sab chapters hogaye! Bohat ache! 🎉
+                                </div>
+                              );
+                            })()}
                           </>
                         )}
                       </div>
@@ -261,10 +270,15 @@ export default function SindhBoardStudy() {
                 <div style={{ fontSize: 12, color: 'rgba(255,255,255,.35)' }}>Master your Matric subjects first. Entry test prep unlocks after.</div>
               </div>
 
-              {/* Ask Starky */}
-              <a href="/?message=I'm%20a%20Sindh%20Board%20student.%20Help%20me%20study." style={{ display: 'block', textAlign: 'center', fontSize: 13, color: '#4F8EF7', textDecoration: 'none', padding: '16px 0', marginTop: 8 }}>
-                Need help? Talk to Starky in Urdu, Sindhi, or English →
-              </a>
+              {/* Starky chat — stays on sindh-board, doesn't navigate away */}
+              <div style={{ textAlign: 'center', padding: '16px 0', marginTop: 8 }}>
+                <div style={{ fontSize: 13, color: 'rgba(255,255,255,.4)' }}>
+                  Koi sawaal hai? Starky aap ki madad karega — Urdu, Sindhi, ya English mein.
+                </div>
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,.25)', marginTop: 4 }}>
+                  Neeche Starky ka icon dabayein ★
+                </div>
+              </div>
             </>
           )}
 
