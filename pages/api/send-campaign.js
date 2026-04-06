@@ -14,10 +14,11 @@ import { getSupabase } from '../../utils/supabase';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Campaign email templates
-function parentCampaignEmail(name) {
+function parentCampaignEmail(name, spotsLeft) {
   const firstName = (name || 'there').split(' ')[0];
+  const spots = spotsLeft || 97;
   return {
-    subject: `${firstName}, your child's Cambridge tutor is ready — free`,
+    subject: `${firstName} — your child is invited (only ${spots} spots left)`,
     html: `
 <div style="font-family:'Sora',-apple-system,sans-serif;max-width:560px;margin:0 auto;background:#080C18;color:#FAF6EB;padding:40px 28px;border-radius:16px;">
 
@@ -25,42 +26,39 @@ function parentCampaignEmail(name) {
     <span style="font-size:14px;font-weight:900;color:#FAF6EB;">NewWorldEdu</span><span style="color:#C9A84C;margin-left:4px;">★</span>
   </div>
 
-  <h1 style="font-size:24px;font-weight:900;color:#FAF6EB;margin:0 0 16px;line-height:1.3;text-align:center;">
-    ${firstName}, your child deserves<br>
-    <span style="color:#C9A84C;">a tutor who never sleeps.</span>
-  </h1>
-
-  <p style="font-size:15px;color:rgba(250,246,235,0.6);line-height:1.8;margin:0 0 20px;">
-    Coaching centres charge Rs 25,000 per subject per month. Group classes. Fixed timings. Your child still comes home confused at 11pm.
-  </p>
-
-  <p style="font-size:15px;color:rgba(250,246,235,0.6);line-height:1.8;margin:0 0 20px;">
-    <strong style="color:#FAF6EB;">We built something different.</strong> A personal AI tutor that:
-  </p>
-
-  <div style="margin:0 0 24px;">
-    <div style="padding:8px 0;font-size:14px;color:rgba(250,246,235,0.7);">✓ Has <strong style="color:#C9A84C;">50,000+ real Cambridge past paper questions</strong> with mark scheme answers</div>
-    <div style="padding:8px 0;font-size:14px;color:rgba(250,246,235,0.7);">✓ Teaches in <strong style="color:#C9A84C;">exact mark-scheme language</strong> — the phrases that earn marks</div>
-    <div style="padding:8px 0;font-size:14px;color:rgba(250,246,235,0.7);">✓ Knows what <strong style="color:#C9A84C;">Cambridge examiners complain about</strong> and warns your child</div>
-    <div style="padding:8px 0;font-size:14px;color:rgba(250,246,235,0.7);">✓ Available at <strong style="color:#C9A84C;">11pm, 2am, exam morning</strong> — whenever they need it</div>
-    <div style="padding:8px 0;font-size:14px;color:rgba(250,246,235,0.7);">✓ Covers <strong style="color:#C9A84C;">17 subjects</strong> with exact textbook chapters</div>
+  <div style="text-align:center;margin-bottom:20px;">
+    <span style="background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.3);border-radius:100px;padding:6px 18px;font-size:13px;font-weight:700;color:#EF4444;">🔥 Only ${spots} spots left</span>
   </div>
 
-  <p style="font-size:15px;color:rgba(250,246,235,0.6);line-height:1.8;margin:0 0 24px;">
-    <strong style="color:#C9A84C;">10 free sessions.</strong> No credit card. No commitment. Just let them try.
+  <h1 style="font-size:24px;font-weight:900;color:#FAF6EB;margin:0 0 16px;line-height:1.3;text-align:center;">
+    ${firstName}, your child is invited to become a<br>
+    <span style="color:#C9A84C;">Founding Student.</span>
+  </h1>
+
+  <p style="font-size:15px;color:rgba(250,246,235,0.6);line-height:1.8;margin:0 0 20px;text-align:center;">
+    The first 100 students to join Pakistan's first AI Cambridge tutor receive a <strong style="color:#C9A84C;">mystery goody bag delivered to their door</strong> — plus 3 months of free premium access.
   </p>
 
+  <div style="background:rgba(201,168,76,0.04);border:1px solid rgba(201,168,76,0.15);border-radius:14px;padding:20px;margin:0 0 20px;">
+    <div style="font-size:12px;font-weight:700;color:#C9A84C;letter-spacing:1px;margin-bottom:12px;text-align:center;">FOUNDING STUDENTS GET</div>
+    <div style="padding:6px 0;font-size:14px;color:rgba(250,246,235,0.7);">🎁 Mystery Goody Bag — delivered free to your door</div>
+    <div style="padding:6px 0;font-size:14px;color:rgba(250,246,235,0.7);">⭐ 3 months FREE premium — all 17 Cambridge subjects</div>
+    <div style="padding:6px 0;font-size:14px;color:rgba(250,246,235,0.7);">📚 50,000+ verified past paper questions + revision notes</div>
+    <div style="padding:6px 0;font-size:14px;color:rgba(250,246,235,0.7);">🏆 Founding Student badge — forever on their profile</div>
+    <div style="padding:6px 0;font-size:14px;color:rgba(250,246,235,0.7);">🎯 Refer 3 friends → UPGRADED mystery box</div>
+  </div>
+
   <div style="text-align:center;margin:0 0 24px;">
-    <a href="https://www.newworld.education/try" style="display:inline-block;background:#C9A84C;color:#080C18;font-size:16px;font-weight:900;padding:16px 40px;border-radius:12px;text-decoration:none;">
-      Let them try — it's free →
+    <a href="https://www.newworld.education/founding" style="display:inline-block;background:#C9A84C;color:#080C18;font-size:16px;font-weight:900;padding:16px 40px;border-radius:12px;text-decoration:none;">
+      🎁 Claim Their Spot — Free
     </a>
   </div>
 
   <p style="font-size:13px;color:rgba(250,246,235,0.3);text-align:center;margin:0 0 4px;">
-    No app to download. Opens instantly in any browser.
+    No payment. No app. No commitment. Just an invitation.
   </p>
   <p style="font-size:13px;color:rgba(250,246,235,0.3);text-align:center;margin:0;">
-    Rs 2,850/month for ALL subjects after free sessions. That's less than ONE hour of tuition.
+    ${spots <= 20 ? '⚠️ Spots are filling fast.' : `${spots} spots remaining.`} Once they're gone, they're gone.
   </p>
 
   <div style="border-top:1px solid rgba(250,246,235,0.06);margin-top:32px;padding-top:20px;text-align:center;">
@@ -73,10 +71,11 @@ function parentCampaignEmail(name) {
   };
 }
 
-function studentCampaignEmail(name) {
+function studentCampaignEmail(name, spotsLeft) {
   const firstName = (name || 'there').split(' ')[0];
+  const spots = spotsLeft || 97;
   return {
-    subject: `${firstName} — can you beat this Cambridge question?`,
+    subject: `${firstName} — you're invited (goody bag + free access)`,
     html: `
 <div style="font-family:'Sora',-apple-system,sans-serif;max-width:560px;margin:0 auto;background:#080C18;color:#FAF6EB;padding:40px 28px;border-radius:16px;">
 
@@ -84,46 +83,42 @@ function studentCampaignEmail(name) {
     <span style="font-size:14px;font-weight:900;color:#FAF6EB;">NewWorldEdu</span><span style="color:#C9A84C;margin-left:4px;">★</span>
   </div>
 
-  <h1 style="font-size:24px;font-weight:900;color:#FAF6EB;margin:0 0 16px;line-height:1.3;text-align:center;">
-    ${firstName}, let's see if you can<br>
-    <span style="color:#C9A84C;">score full marks.</span>
-  </h1>
-
-  <div style="background:rgba(250,246,235,0.03);border:1px solid rgba(250,246,235,0.06);border-radius:14px;padding:20px;margin:0 0 20px;">
-    <div style="font-size:11px;font-weight:700;color:rgba(250,246,235,0.35);letter-spacing:1px;margin-bottom:8px;">CHEMISTRY · O LEVEL · 3 MARKS</div>
-    <div style="font-size:15px;color:rgba(250,246,235,0.8);line-height:1.7;">
-      Describe the arrangement and movement of particles in a solid. [3]
-    </div>
+  <div style="text-align:center;margin-bottom:20px;">
+    <span style="background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.3);border-radius:100px;padding:6px 18px;font-size:13px;font-weight:700;color:#EF4444;">🔥 Only ${spots} spots left</span>
   </div>
 
-  <p style="font-size:14px;color:rgba(250,246,235,0.5);line-height:1.7;margin:0 0 4px;">
-    Think you know? Most students lose 1 mark on this question.
-  </p>
-  <p style="font-size:14px;color:#C9A84C;font-weight:700;margin:0 0 24px;">
-    The mark scheme requires EXACT phrases. Do you know them?
+  <h1 style="font-size:24px;font-weight:900;color:#FAF6EB;margin:0 0 16px;line-height:1.3;text-align:center;">
+    ${firstName}, become a<br>
+    <span style="color:#C9A84C;">Founding Student.</span>
+  </h1>
+
+  <p style="font-size:15px;color:rgba(250,246,235,0.6);line-height:1.8;margin:0 0 20px;text-align:center;">
+    We're picking the first 100 Cambridge students in Pakistan to try something nobody's built before — a personal AI tutor that knows the mark scheme.
   </p>
 
+  <div style="background:rgba(201,168,76,0.04);border:1px solid rgba(201,168,76,0.15);border-radius:14px;padding:20px;margin:0 0 20px;">
+    <div style="font-size:12px;font-weight:700;color:#C9A84C;letter-spacing:1px;margin-bottom:12px;text-align:center;">YOU GET</div>
+    <div style="padding:6px 0;font-size:14px;color:rgba(250,246,235,0.7);">🎁 Mystery Goody Bag — delivered to your door (yes, really)</div>
+    <div style="padding:6px 0;font-size:14px;color:rgba(250,246,235,0.7);">⭐ 3 months FREE premium — every subject, every chapter</div>
+    <div style="padding:6px 0;font-size:14px;color:rgba(250,246,235,0.7);">📝 Revision notes that replace Rs 2,000 worth of printed notes</div>
+    <div style="padding:6px 0;font-size:14px;color:rgba(250,246,235,0.7);">🏆 Founding Student badge — you were here first</div>
+    <div style="padding:6px 0;font-size:14px;color:rgba(250,246,235,0.7);">🎯 Refer 3 friends → your goody bag gets UPGRADED</div>
+  </div>
+
   <div style="text-align:center;margin:0 0 24px;">
-    <a href="https://www.newworld.education/try" style="display:inline-block;background:#C9A84C;color:#080C18;font-size:16px;font-weight:900;padding:16px 40px;border-radius:12px;text-decoration:none;">
-      See the answer + study with Starky →
+    <a href="https://www.newworld.education/founding" style="display:inline-block;background:#C9A84C;color:#080C18;font-size:16px;font-weight:900;padding:16px 40px;border-radius:12px;text-decoration:none;">
+      🎁 Claim My Spot
     </a>
   </div>
 
-  <div style="margin:0 0 24px;">
-    <div style="padding:6px 0;font-size:13px;color:rgba(250,246,235,0.5);">📚 50,000+ verified Cambridge past paper questions</div>
-    <div style="padding:6px 0;font-size:13px;color:rgba(250,246,235,0.5);">📝 Revision notes for every chapter — saves Rs 1000s on printing</div>
-    <div style="padding:6px 0;font-size:13px;color:rgba(250,246,235,0.5);">🎯 Nano learning: Notes → Worked Example → Practice → Master</div>
-    <div style="padding:6px 0;font-size:13px;color:rgba(250,246,235,0.5);">🏆 Daily Challenge — same 5 questions for everyone. Can you top the leaderboard?</div>
-  </div>
-
-  <p style="font-size:13px;color:rgba(250,246,235,0.3);text-align:center;">
-    10 free sessions. No app to download. Opens in your browser.
+  <p style="font-size:13px;color:rgba(250,246,235,0.3);text-align:center;margin:0;">
+    No payment. No app. ${spots <= 20 ? 'Almost full.' : `${spots} spots remaining.`}
   </p>
 
   <div style="border-top:1px solid rgba(250,246,235,0.06);margin-top:32px;padding-top:20px;text-align:center;">
     <p style="font-size:11px;color:rgba(250,246,235,0.2);margin:0;">
-      NewWorldEdu · newworld.education<br>
-      AI-assisted learning. Not affiliated with Cambridge Assessment.
+      NewWorldEdu · newworld.education · Pakistan's first AI Cambridge tutor<br>
+      Not affiliated with Cambridge Assessment International Education.
     </p>
   </div>
 </div>`
