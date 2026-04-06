@@ -26,13 +26,7 @@ export default function GarageSchoolPage() {
         <meta name="description" content="The Garage School and NewWorldEdu bring AI-powered education to 550+ children in Karachi. Every child deserves a personal tutor." />
       </Head>
 
-      {/* Header */}
-      <header style={{ padding: '14px 24px', borderBottom: '1px solid rgba(250,246,235,0.06)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <a href="/" style={{ textDecoration: 'none', fontWeight: 900, fontSize: 15, color: WHITE }}>
-          NewWorldEdu<span style={{ color: GOLD, marginLeft: 4 }}>★</span>
-        </a>
-        <a href="/" style={{ fontSize: 12, color: 'rgba(250,246,235,0.4)', textDecoration: 'none', fontWeight: 700 }}>← Back to Home</a>
-      </header>
+      {/* No duplicate header — global nav from _app.jsx handles this */}
 
       {/* ═══ HERO ═══ */}
       <section style={{ textAlign: 'center', padding: isMobile ? '48px 20px 40px' : '80px 24px 60px', maxWidth: 800, margin: '0 auto' }}>
