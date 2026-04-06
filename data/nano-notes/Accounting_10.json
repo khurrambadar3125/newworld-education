@@ -1,0 +1,90 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 3: Financial Statements",
+  "chapter_id": "10",
+  "chapter_name": "Accounting rules",
+  "note_data": {
+    "title": "Accounting rules",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Accounting concepts** are fundamental principles that guide the preparation of financial statements",
+      "The **business entity concept** states that the business is separate from the owner and business transactions are recorded separately from personal transactions",
+      "The **money measurement concept** means only transactions that can be measured in monetary terms are recorded in the books of accounts",
+      "The **going concern concept** assumes that the business will continue to operate for the foreseeable future",
+      "The **accruals concept** records income when earned and expenses when incurred, regardless of when cash is received or paid",
+      "The **consistency concept** requires the same accounting methods to be used from one period to another",
+      "The **prudence concept** means income is only recorded when realized but all known losses and expenses are recorded",
+      "**Accounting conventions** are practices that have evolved over time to solve practical accounting problems",
+      "The **materiality convention** states that items of little value need not be treated with strict theoretical correctness"
+    ],
+    "definitions": [
+      {
+        "term": "Business entity concept",
+        "definition": "The business is treated as separate from the owner and business transactions are recorded separately from personal transactions of the owner"
+      },
+      {
+        "term": "Accruals concept",
+        "definition": "Income is recorded when earned and expenses are recorded when incurred, regardless of when cash is received or paid"
+      },
+      {
+        "term": "Going concern concept",
+        "definition": "The assumption that the business will continue to operate for the foreseeable future"
+      },
+      {
+        "term": "Prudence concept",
+        "definition": "Income is only recorded when it is certain to be received but all known losses and expenses are recorded immediately"
+      },
+      {
+        "term": "Consistency concept",
+        "definition": "The same accounting methods and policies should be used from one accounting period to another"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the name of the concept/convention only. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the definition + practical example using 'This means that...' or 'For example...'"
+      },
+      {
+        "commandWord": "Identify",
+        "instruction": "Name the specific accounting concept being applied in the given scenario"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the accruals concept and give one example of how it is applied. (3 marks)",
+      "marks": 3,
+      "answer": "The accruals concept means that income is recorded when earned and expenses are recorded when incurred, regardless of when cash is received or paid. For example, if rent is owed for December but paid in January, the rent expense is still recorded in December's accounts because this is when the expense was incurred.",
+      "markBreakdown": [
+        "Mark 1: Income recorded when earned",
+        "Mark 2: Expenses recorded when incurred/regardless of cash movement",
+        "Mark 3: Correct example given"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse accruals concept with cash accounting - accruals ignores when cash is received/paid",
+      "Students often mix up prudence concept with other concepts - prudence only records certain income but all known expenses",
+      "Don't say 'matching concept' - the correct term is 'accruals concept' in Cambridge O Level",
+      "Never give personal examples when explaining business entity concept - always use business transactions vs personal transactions",
+      "Students forget that going concern affects asset valuation - assets valued at cost not break-up value"
+    ],
+    "examinerTips": [
+      "Accounting concepts appear in Paper 1 MCQ and Paper 2 every year - usually 4-6 marks total",
+      "Always give practical business examples when explaining concepts for full marks",
+      "Questions often ask which concept is being applied in a scenario - read carefully",
+      "Learn the exact definitions - examiners look for key phrases like 'when earned' and 'when incurred'"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "No specific diagram required for this topic, but create a concept map showing the relationship between different accounting concepts and their applications"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:38:26.161Z",
+  "updated_at": "2026-04-06T03:38:26.161Z"
+}

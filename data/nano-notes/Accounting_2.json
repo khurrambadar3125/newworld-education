@@ -1,0 +1,93 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 1: Introduction",
+  "chapter_id": "2",
+  "chapter_name": "Double entry book-keeping – Part A",
+  "note_data": {
+    "title": "Double entry book-keeping – Part A",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Double entry book-keeping** requires every transaction to be recorded twice – once as a debit and once as a credit",
+      "The **accounting equation** must always balance: Assets = Capital + Liabilities",
+      "**Debit entries** record increases in assets and expenses, and decreases in capital and liabilities",
+      "**Credit entries** record increases in capital and liabilities, and decreases in assets and expenses",
+      "A **ledger** is a book containing all the accounts of a business organized systematically",
+      "Every **account** has two sides: debit side (left) and credit side (right)",
+      "The **trial balance** tests the arithmetical accuracy of the ledger by ensuring total debits equal total credits",
+      "**Source documents** such as invoices, receipts and vouchers provide evidence for all ledger entries",
+      "Each transaction affects at least **two accounts** and the total debits must equal total credits"
+    ],
+    "definitions": [
+      {
+        "term": "Double entry book-keeping",
+        "definition": "A system of recording transactions where each transaction is recorded twice – once as a debit and once as a credit in different accounts"
+      },
+      {
+        "term": "Ledger",
+        "definition": "A book containing all the accounts of a business where transactions are recorded using the double entry system"
+      },
+      {
+        "term": "Debit",
+        "definition": "An entry recorded on the left side of an account"
+      },
+      {
+        "term": "Credit",
+        "definition": "An entry recorded on the right side of an account"
+      },
+      {
+        "term": "Trial balance",
+        "definition": "A list of all ledger account balances at a particular date to check that total debits equal total credits"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Set out the ledger account with proper headings, debit/credit sides, and balances"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the principle of double entry book-keeping.",
+      "marks": 3,
+      "answer": "Double entry book-keeping requires every transaction to be recorded twice. Each transaction is recorded once as a debit entry in one account and once as a credit entry in another account. This ensures that the accounting equation (Assets = Capital + Liabilities) always remains balanced.",
+      "markBreakdown": [
+        "Mark 1: Every transaction recorded twice",
+        "Mark 2: Once as debit, once as credit",
+        "Mark 3: Keeps accounting equation balanced"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'money goes in and out' — always say 'debit and credit entries are made'",
+      "Students often confuse debit with 'money coming in' — debit means left side of account, not cash received",
+      "Mixing up which accounts increase with debits vs credits — assets and expenses increase with debits",
+      "Forgetting to show both sides of the transaction when preparing ledger accounts",
+      "Writing 'Dr' and 'Cr' instead of 'Debit' and 'Credit' in exam answers"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 1 and Paper 2 examination",
+      "Always show the dual effect of transactions to demonstrate understanding",
+      "Use proper account format with clear headings and date columns",
+      "Check your trial balance totals are equal before submitting"
+    ],
+    "formulas": [
+      "Assets = Capital + Liabilities",
+      "Total Debits = Total Credits"
+    ],
+    "keyDiagramDescription": "T-account format showing debit side (left) and credit side (right) with proper headings including account name, date, details, and amount columns"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:35:31.509Z",
+  "updated_at": "2026-04-06T03:35:31.509Z"
+}

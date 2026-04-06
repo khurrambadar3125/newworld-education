@@ -1,0 +1,95 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 4: Advanced Topics",
+  "chapter_id": "15",
+  "chapter_name": "Journal entries and correction of errors",
+  "note_data": {
+    "title": "Journal entries and correction of errors",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **journal** is a book of original entry where transactions are first recorded in chronological order",
+      "**Correction of errors** involves identifying mistakes and making appropriate journal entries to rectify them",
+      "A **suspense account** is a temporary account used when trial balance does not balance due to errors",
+      "Errors that affect trial balance totals include single entry, wrong amounts, and omitted entries",
+      "Errors that do not affect trial balance include wrong account classification, compensating errors, and complete omission",
+      "Journal entries must show debit and credit entries with narration explaining the transaction",
+      "When correcting errors, reverse the wrong entry and record the correct entry",
+      "All corrections must be properly documented with clear narration for audit trail"
+    ],
+    "definitions": [
+      {
+        "term": "Journal",
+        "definition": "A book of original entry where all transactions are recorded in chronological order before being posted to ledger accounts"
+      },
+      {
+        "term": "Suspense Account",
+        "definition": "A temporary account created to make the trial balance agree when there are errors that cause the totals to differ"
+      },
+      {
+        "term": "Error of Commission",
+        "definition": "An error where a transaction is recorded in the wrong account but within the correct class of account"
+      },
+      {
+        "term": "Error of Omission",
+        "definition": "An error where a transaction is completely left out from the books of account"
+      },
+      {
+        "term": "Compensating Error",
+        "definition": "Two or more errors that cancel each other out so the trial balance still balances"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Show proper journal format with Date, Account names, Dr/Cr columns, amounts, and narration"
+      }
+    ],
+    "modelAnswer": {
+      "question": "The trial balance total showed a difference of Rs.500. Investigation revealed: (i) Sales of Rs.1,200 were recorded as Rs.700 (ii) Rent paid Rs.800 was posted twice to rent account. Prepare journal entries to correct these errors.",
+      "marks": 6,
+      "answer": "Journal Entries:\n\nDr Sales Account Rs.500\nCr Suspense Account Rs.500\n(Being sales understated by Rs.500)\n\nDr Suspense Account Rs.800\nCr Rent Account Rs.800\n(Being rent overstated by double posting)\n\nDr Suspense Account Rs.300\nCr Profit and Loss Account Rs.300\n(Being net effect transferred to P&L)",
+      "markBreakdown": [
+        "Mark 1: Correct debit to Sales Rs.500",
+        "Mark 2: Correct credit to Suspense Rs.500",
+        "Mark 3: Correct debit to Suspense Rs.800",
+        "Mark 4: Correct credit to Rent Rs.800",
+        "Mark 5: Proper narration for both entries",
+        "Mark 6: Closing suspense account balance"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'Cash Account' when correcting credit sales errors — always use 'Sales Account'",
+      "Students often forget to close the suspense account after all corrections",
+      "Writing incomplete narration — always explain what error is being corrected",
+      "Confusing which errors affect trial balance and which do not",
+      "Forgetting to show the net effect on profit when closing suspense account"
+    ],
+    "examinerTips": [
+      "Journal entries and error correction appear in Paper 2 almost every year",
+      "Always show proper journal format with columns for debit and credit",
+      "Calculate suspense account balance carefully — it must equal trial balance difference",
+      "Practice identifying error types as this determines correction method"
+    ],
+    "formulas": [
+      "Suspense Account Balance = Trial Balance Difference",
+      "Net Effect on Profit = Final Suspense Account Balance"
+    ],
+    "keyDiagramDescription": "Suspense Account T-account showing opening balance (trial balance difference), corrections on both sides, and final balance transferred to Profit and Loss Account"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:40:26.124Z",
+  "updated_at": "2026-04-06T03:40:26.124Z"
+}

@@ -1,0 +1,94 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 2: Business Documents",
+  "chapter_id": "7",
+  "chapter_name": "Books of prime entry",
+  "note_data": {
+    "title": "Books of prime entry",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Books of prime entry** are records where transactions are first recorded from source documents before posting to the ledger",
+      "**Sales day book** records all credit sales transactions from sales invoices",
+      "**Purchases day book** records all credit purchases transactions from purchase invoices",
+      "**Sales returns day book** records all goods returned by customers using credit notes issued",
+      "**Purchases returns day book** records all goods returned to suppliers using credit notes received",
+      "**Cash book** records all cash and bank transactions and serves as both a book of prime entry and part of the ledger",
+      "**Petty cash book** records small cash payments using the imprest system",
+      "**General journal** records transactions that cannot be recorded in other books of prime entry such as opening entries, closing entries, and correction of errors",
+      "Source documents provide evidence for transactions: invoices for sales/purchases, credit notes for returns, receipts for cash transactions"
+    ],
+    "definitions": [
+      {
+        "term": "Book of prime entry",
+        "definition": "A record where business transactions are first entered from source documents before being posted to the ledger accounts"
+      },
+      {
+        "term": "Day book",
+        "definition": "A book of prime entry used to record specific types of transactions such as credit sales or credit purchases"
+      },
+      {
+        "term": "Journal",
+        "definition": "A book of prime entry used to record transactions that cannot be entered in any other book of prime entry"
+      },
+      {
+        "term": "Source document",
+        "definition": "An original document that provides evidence of a business transaction"
+      },
+      {
+        "term": "Posting",
+        "definition": "The process of transferring entries from books of prime entry to the ledger accounts"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Identify",
+        "instruction": "Name the specific book of prime entry without explanation"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics or features of the book of prime entry"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why businesses use books of prime entry. [3 marks]",
+      "marks": 3,
+      "answer": "Books of prime entry provide a chronological record of transactions which makes it easier to trace transactions back to source documents. They reduce errors because transactions are recorded systematically from source documents before posting to ledger accounts. They save time because similar transactions are grouped together making the posting process more efficient.",
+      "markBreakdown": [
+        "Mark 1: Chronological record/easier to trace transactions",
+        "Mark 2: Reduce errors/systematic recording",
+        "Mark 3: Save time/group similar transactions"
+      ]
+    },
+    "commonMistakes": [
+      "Never say books of prime entry are 'part of the ledger' — they are separate records that feed into the ledger",
+      "Students often confuse day books with ledger accounts — day books record transactions, ledger accounts show balances",
+      "Don't write 'cash book records cash' — specify it records cash receipts AND cash payments",
+      "Never say journal records 'all transactions' — it only records transactions that cannot go in other books of prime entry",
+      "Students forget that books of prime entry use source documents — always mention the link to source documents"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 1 multiple choice and Paper 2 structured questions",
+      "Always specify whether transactions are 'credit' sales/purchases when describing day books",
+      "Learn the specific source documents for each book of prime entry",
+      "Practice identifying which book of prime entry to use for different transactions"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Flow diagram showing source documents → books of prime entry → ledger accounts, with examples of each book (sales day book, purchases day book, cash book, journal) and their corresponding source documents"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:37:24.870Z",
+  "updated_at": "2026-04-06T03:37:24.870Z"
+}

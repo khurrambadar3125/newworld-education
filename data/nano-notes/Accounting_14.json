@@ -1,0 +1,93 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 4: Advanced Topics",
+  "chapter_id": "14",
+  "chapter_name": "Bank reconciliation statements",
+  "note_data": {
+    "title": "Bank reconciliation statements",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Bank reconciliation statement** is prepared to explain the differences between the cash book balance and the bank statement balance",
+      "**Unpresented cheques** are cheques issued by the business but not yet presented to the bank for payment",
+      "**Outstanding deposits** are amounts paid into the bank but not yet recorded on the bank statement",
+      "**Bank charges** and **interest received** appear on the bank statement before being recorded in the cash book",
+      "**Dishonoured cheques** are cheques that have been returned by the bank due to insufficient funds",
+      "Start the reconciliation with either the **cash book balance** or **bank statement balance** and adjust for timing differences",
+      "**Direct debits** and **standing orders** may appear on the bank statement but not in the cash book",
+      "**Bank errors** must be corrected by contacting the bank, while **cash book errors** require journal entries",
+      "The **adjusted cash book balance** must equal the **adjusted bank statement balance** after reconciliation"
+    ],
+    "definitions": [
+      {
+        "term": "Bank reconciliation statement",
+        "definition": "A statement prepared to explain the differences between the balance shown in the cash book and the balance shown on the bank statement"
+      },
+      {
+        "term": "Unpresented cheques",
+        "definition": "Cheques that have been issued and recorded in the cash book but have not yet been presented to the bank for payment"
+      },
+      {
+        "term": "Outstanding deposits",
+        "definition": "Amounts that have been paid into the bank and recorded in the cash book but do not yet appear on the bank statement"
+      },
+      {
+        "term": "Dishonoured cheque",
+        "definition": "A cheque that has been returned by the bank unpaid, usually due to insufficient funds in the drawer's account"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Prepare",
+        "instruction": "Create a full bank reconciliation statement showing all adjustments clearly with proper headings and calculations"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the reason why the difference exists, e.g. 'This is because the cheque was issued but not yet presented to the bank'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show the adjusted balance after adding/subtracting the reconciling items"
+      }
+    ],
+    "modelAnswer": {
+      "question": "The cash book shows a bank balance of Rs.15,400 (debit). The bank statement shows a balance of Rs.12,800 (credit). Unpresented cheques total Rs.3,200 and outstanding deposits are Rs.600. Prepare a bank reconciliation statement.",
+      "marks": 6,
+      "answer": "Bank Reconciliation Statement as at [date]\n\nBalance as per bank statement: Rs.12,800\nAdd: Outstanding deposits: Rs.600\n: Rs.13,400\nLess: Unpresented cheques: Rs.3,200\nAdjusted bank balance: Rs.10,200\n\nBalance as per cash book: Rs.15,400\nAdjusted cash book balance: Rs.15,400\n\nNote: There appears to be an error of Rs.5,200 that needs investigation.",
+      "markBreakdown": [
+        "Mark 1: Correct heading",
+        "Mark 2: Starting with bank statement balance Rs.12,800",
+        "Mark 3: Adding outstanding deposits Rs.600",
+        "Mark 4: Subtracting unpresented cheques Rs.3,200",
+        "Mark 5: Showing adjusted bank balance Rs.10,200",
+        "Mark 6: Comparing with cash book balance"
+      ]
+    },
+    "commonMistakes": [
+      "Never add unpresented cheques to bank statement balance — always subtract them because they reduce the bank balance",
+      "Students often confuse outstanding deposits with outstanding cheques — deposits increase bank balance, cheques decrease it",
+      "Never start reconciliation without stating which balance you are starting from (cash book or bank statement)",
+      "Students forget to update cash book for items appearing only on bank statement like bank charges or interest",
+      "Common error: treating credit balance as debit balance — always check if account is overdrawn"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 2 exam, usually worth 8-12 marks",
+      "Always show clear headings: 'Balance as per bank statement' or 'Balance as per cash book'",
+      "Remember the rule: Add outstanding deposits, subtract unpresented cheques when starting from bank statement",
+      "If balances don't reconcile after adjustments, state 'difference requires investigation'",
+      "Pakistani banks commonly use direct debits for utility bills — these often appear as reconciling items"
+    ],
+    "formulas": [
+      "Adjusted bank balance = Bank statement balance + Outstanding deposits - Unpresented cheques",
+      "Reconciliation check: Adjusted cash book balance = Adjusted bank statement balance"
+    ],
+    "keyDiagramDescription": "Bank reconciliation statement format showing bank statement balance at top, adding outstanding deposits, subtracting unpresented cheques, and comparing final adjusted balance with cash book balance"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:40:03.282Z",
+  "updated_at": "2026-04-06T03:40:03.282Z"
+}

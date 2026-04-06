@@ -1,0 +1,98 @@
+{
+  "subject": "Economics",
+  "subject_code": "2281",
+  "level": "O Level",
+  "theme": "Microeconomics",
+  "chapter_id": "3",
+  "chapter_name": "Microeconomic Decision Makers",
+  "note_data": {
+    "title": "Microeconomic Decision Makers",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Banks** provide financial services including accepting deposits, lending money, and facilitating payments between customers",
+      "**Households** are consumers that make spending decisions and supply factors of production (land, labour, capital) to firms",
+      "**Workers** supply labour in exchange for wages and seek to maximize their income and job satisfaction",
+      "**Trade unions** are organizations of workers that aim to improve wages, working conditions, and job security through collective bargaining",
+      "**Firms** are business organizations that combine factors of production to produce goods and services for profit",
+      "Banks earn profit through the difference between interest charged on loans and interest paid on deposits (**net interest margin**)",
+      "Households face the economic problem of **unlimited wants but limited income**, requiring them to make choices",
+      "Workers may join trade unions to increase their **bargaining power** against employers",
+      "Trade unions can use **industrial action** such as strikes to pressure employers during wage negotiations",
+      "Firms aim to **maximize profit** by minimizing costs and maximizing revenue"
+    ],
+    "definitions": [
+      {
+        "term": "Bank",
+        "definition": "A financial institution that accepts deposits from customers and lends money to borrowers for profit"
+      },
+      {
+        "term": "Household",
+        "definition": "A group of people living together who make joint economic decisions about spending and saving"
+      },
+      {
+        "term": "Trade Union",
+        "definition": "An organization of workers formed to protect and improve their wages, working conditions, and employment rights"
+      },
+      {
+        "term": "Firm",
+        "definition": "A business organization that combines factors of production to produce goods or services"
+      },
+      {
+        "term": "Collective Bargaining",
+        "definition": "The process where trade unions negotiate with employers on behalf of workers regarding wages and working conditions"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the issue and explain the links/chains of reasoning"
+      },
+      {
+        "commandWord": "Discuss",
+        "instruction": "Present arguments for and against, then reach a reasoned conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two reasons why workers join trade unions. [6 marks]",
+      "marks": 6,
+      "answer": "Workers join trade unions to increase their bargaining power when negotiating wages. This is because individual workers have little power against large employers, but trade unions can represent many workers collectively, giving them more influence in wage negotiations. Workers also join trade unions to improve their job security. This is because trade unions can negotiate with employers to prevent unfair dismissals and ensure proper procedures are followed when making workers redundant, protecting members from losing their jobs without good reason.",
+      "markBreakdown": [
+        "Mark 1: Increase bargaining power",
+        "Mark 2: Explanation of collective power vs individual worker",
+        "Mark 3: Clear link to wage negotiations",
+        "Mark 4: Improve job security",
+        "Mark 5: Explanation of protection from unfair dismissal",
+        "Mark 6: Clear link to employment protection"
+      ]
+    },
+    "commonMistakes": [
+      "Never say banks 'store money' — always say banks 'accept deposits and lend money for profit'",
+      "Students often confuse households with firms — households consume, firms produce",
+      "Don't say trade unions 'control wages' — they 'negotiate wages through collective bargaining'",
+      "Never say workers 'always benefit' from trade unions — consider both advantages and disadvantages",
+      "Students often forget that banks face costs (interest on deposits, staff wages) when explaining profit"
+    ],
+    "examinerTips": [
+      "Questions on trade unions appear frequently - learn both benefits and drawbacks",
+      "Bank questions often require explanation of how banks make profit - mention interest rate difference",
+      "When discussing households, link to opportunity cost and the economic problem",
+      "Use Pakistani examples: HBL, UBL for banks; textile workers' unions in Karachi for trade unions"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Circular flow diagram showing households supplying factors to firms in exchange for income, then spending this income on goods and services, with banks facilitating savings and investment flows"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:33:46.445Z",
+  "updated_at": "2026-04-06T03:33:46.445Z"
+}

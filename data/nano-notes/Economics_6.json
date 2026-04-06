@@ -1,0 +1,96 @@
+{
+  "subject": "Economics",
+  "subject_code": "2281",
+  "level": "O Level",
+  "theme": "Macroeconomics",
+  "chapter_id": "6",
+  "chapter_name": "International Trade",
+  "note_data": {
+    "title": "International Trade",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Comparative advantage** occurs when a country can produce a good at a lower opportunity cost than another country",
+      "**Specialisation** allows countries to concentrate on producing goods where they have comparative advantage, increasing total world output",
+      "**Free trade** removes barriers between countries, allowing goods and services to move freely across borders",
+      "**Tariffs** are taxes imposed on imported goods to protect domestic industries and raise government revenue",
+      "**Quotas** limit the quantity of goods that can be imported into a country in a given time period",
+      "**Exchange rates** determine the value of one currency in terms of another currency",
+      "A **depreciation** of currency makes exports cheaper and imports more expensive",
+      "**Globalisation** is the increasing integration of world economies through trade, investment and technology transfer",
+      "**Balance of trade** is the difference between the value of exports and imports of goods",
+      "**Protectionism** uses trade barriers to shield domestic industries from foreign competition"
+    ],
+    "definitions": [
+      {
+        "term": "Comparative advantage",
+        "definition": "The ability of a country to produce a good at a lower opportunity cost than another country"
+      },
+      {
+        "term": "Tariff",
+        "definition": "A tax imposed on imported goods to make them more expensive than domestic products"
+      },
+      {
+        "term": "Exchange rate",
+        "definition": "The price of one currency expressed in terms of another currency"
+      },
+      {
+        "term": "Globalisation",
+        "definition": "The increasing integration and interdependence of world economies through international trade, investment and technology transfer"
+      },
+      {
+        "term": "Quota",
+        "definition": "A physical limit on the quantity of a good that can be imported into a country in a given time period"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the cause and effect relationships, showing how one factor leads to another"
+      },
+      {
+        "commandWord": "Discuss",
+        "instruction": "Present arguments for and against, then reach a reasoned conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two benefits of international trade for Pakistan. [4 marks]",
+      "marks": 4,
+      "answer": "One benefit is access to a wider variety of goods and services. Pakistan can import goods that it cannot produce efficiently, such as advanced technology and machinery, giving consumers more choice. Another benefit is increased economic efficiency through specialisation. Pakistan can focus on producing goods where it has comparative advantage, such as textiles and rice, and trade these for goods other countries produce more efficiently, leading to higher total output and economic growth.",
+      "markBreakdown": [
+        "Mark 1: Identifies benefit - access to wider variety of goods",
+        "Mark 2: Explains how this benefits Pakistan - more consumer choice",
+        "Mark 3: Identifies second benefit - specialisation/efficiency gains",
+        "Mark 4: Explains how specialisation leads to higher output/growth"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse absolute advantage with comparative advantage - comparative advantage is about opportunity cost, not total output",
+      "Students often think tariffs always benefit the economy - remember they also increase prices for consumers",
+      "Don't say exchange rate depreciation is always good or bad - it helps exports but makes imports more expensive",
+      "Avoid saying globalisation only has positive effects - consider negative impacts on domestic industries",
+      "Never ignore the difference between balance of trade (goods only) and balance of payments (includes services)"
+    ],
+    "examinerTips": [
+      "International trade questions appear in every Paper 2 - expect 6-8 marks minimum",
+      "Always use Pakistan examples where possible (textile exports, agricultural products)",
+      "Draw supply and demand diagrams when explaining tariff effects for full marks",
+      "Remember to discuss both advantages and disadvantages when question asks about trade policies"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Supply and demand diagram showing effect of tariffs - domestic supply and demand curves with world price line, showing tariff raising price from world price to domestic price, creating deadweight loss triangle and government revenue rectangle"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:34:52.696Z",
+  "updated_at": "2026-04-06T03:34:52.696Z"
+}

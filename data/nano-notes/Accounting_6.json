@@ -1,0 +1,86 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 2: Business Documents",
+  "chapter_id": "6",
+  "chapter_name": "Business documents",
+  "note_data": {
+    "title": "Business documents",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **business document** is a written record that provides evidence of a business transaction",
+      "An **invoice** is sent by the seller to the buyer showing goods sold, quantity, price and amount due",
+      "A **receipt** is given by the seller to the buyer as proof that payment has been received",
+      "A **credit note** is sent by the seller to the buyer to reduce the amount owed when goods are returned or overcharged",
+      "Business documents provide **audit trail** for checking accuracy of accounting records",
+      "Documents must contain **essential information** including date, names, amounts and transaction details",
+      "**Debit note** is sent by the buyer to the seller requesting a credit note for returns or overcharges",
+      "**Statement of account** shows the balance owed by a customer at a particular date",
+      "Documents help resolve **disputes** between buyer and seller about transactions"
+    ],
+    "definitions": [
+      {
+        "term": "Invoice",
+        "definition": "A document sent by the seller to the buyer showing details of goods sold and amount due for payment"
+      },
+      {
+        "term": "Receipt",
+        "definition": "A document given by the seller to the buyer as proof that payment has been received"
+      },
+      {
+        "term": "Credit note",
+        "definition": "A document sent by the seller to the buyer to reduce the amount owed when goods are returned or an overcharge has occurred"
+      },
+      {
+        "term": "Business document",
+        "definition": "A written record that provides evidence of a business transaction"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Identify",
+        "instruction": "Name the document or pick out the relevant information from the question"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why a credit note would be issued by Karachi Traders to its customer. (3 marks)",
+      "marks": 3,
+      "answer": "A credit note would be issued when goods are returned by the customer because they are faulty or unwanted. It would also be issued if there has been an overcharge on the original invoice because the wrong price was used. The credit note reduces the amount owed by the customer because it corrects errors or adjusts for returned merchandise.",
+      "markBreakdown": [
+        "Mark 1: Goods returned/faulty goods",
+        "Mark 2: Overcharge/wrong price on invoice",
+        "Mark 3: Reduces amount owed by customer"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse invoice with receipt — invoice requests payment, receipt confirms payment received",
+      "Students often think credit note increases amount owed — it always reduces the debt",
+      "Don't say 'bill' in exams — always use the term 'invoice' for formal business documents",
+      "Never say credit note is sent by buyer — it is always sent by the seller to the buyer",
+      "Students mix up debit note and credit note — debit note is sent BY buyer TO seller"
+    ],
+    "examinerTips": [
+      "Business documents appear in every Paper 1 and Paper 2 exam",
+      "Always state WHO sends the document TO whom for full marks",
+      "Learn the direction of flow: Invoice seller→buyer, Receipt seller→buyer, Credit note seller→buyer",
+      "Questions often ask for TWO reasons why documents are issued — prepare multiple examples"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Flow diagram showing seller and buyer with arrows indicating direction of documents: Invoice (seller to buyer), Payment (buyer to seller), Receipt (seller to buyer), Credit note (seller to buyer for returns)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:37:05.006Z",
+  "updated_at": "2026-04-06T03:37:05.006Z"
+}

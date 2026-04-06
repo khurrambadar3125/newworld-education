@@ -1,0 +1,97 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 1: Introduction",
+  "chapter_id": "5",
+  "chapter_name": "Petty cash books",
+  "note_data": {
+    "title": "Petty cash books",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Petty cash** is a small amount of cash kept in the office for making small payments such as tea, stamps, and taxi fares",
+      "The **imprest system** maintains a fixed float where the petty cashier is reimbursed for the exact amount spent during the period",
+      "**Petty cash book** is both a book of prime entry and part of the ledger system, recording all small cash transactions",
+      "The petty cash book has **debit side** showing money received and **credit side** showing payments made with analysis columns",
+      "Analysis columns on the credit side separate payments into categories such as **postage, stationery, travel, cleaning**",
+      "At period end, the **balance carried down** shows cash remaining, which should equal the physical cash count",
+      "**Reimbursement** restores the petty cash float to its original imprest amount at the start of each period",
+      "VAT may be shown separately in petty cash entries when the business is registered for VAT",
+      "The petty cash book balance appears as a **current asset** in the statement of financial position"
+    ],
+    "definitions": [
+      {
+        "term": "Petty cash",
+        "definition": "A small amount of cash kept in the office to make small payments for items such as postage, stationery and refreshments"
+      },
+      {
+        "term": "Imprest system",
+        "definition": "A system where a fixed amount of petty cash is maintained and the petty cashier is reimbursed for the exact amount spent during the period"
+      },
+      {
+        "term": "Float",
+        "definition": "The fixed amount of money maintained in the petty cash box under the imprest system"
+      },
+      {
+        "term": "Analysis columns",
+        "definition": "Columns in the petty cash book that classify payments according to their nature, such as postage, stationery, and travel expenses"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Show the petty cash book with proper headings, dates, analysis columns and balancing"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show workings for reimbursement amount or balance calculations"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the advantages of using the imprest system for petty cash. (6 marks)",
+      "marks": 6,
+      "answer": "The imprest system provides proper control because a fixed amount is always maintained in the petty cash box. It enables easy checking because the cash in hand plus vouchers should equal the imprest amount. It provides automatic reimbursement because the exact amount spent is replenished each period. It reduces the risk of fraud because any discrepancy is immediately apparent. It simplifies record keeping because only one amount needs to be authorized initially. It ensures adequate cash is always available because the float is restored to the original amount.",
+      "markBreakdown": [
+        "Mark 1: Control - fixed amount maintained",
+        "Mark 2: Easy checking - cash plus vouchers equals imprest",
+        "Mark 3: Automatic reimbursement of exact amount spent",
+        "Mark 4: Reduces fraud risk - discrepancies apparent",
+        "Mark 5: Simplifies record keeping",
+        "Mark 6: Ensures adequate cash always available"
+      ]
+    },
+    "commonMistakes": [
+      "Never say petty cash is for 'big expenses' — always specify it is for small payments only",
+      "Students often forget to balance the petty cash book by showing balance carried down and brought down",
+      "Never put the reimbursement on the credit side — it always goes on the debit side as money received",
+      "Students confuse the float amount with the reimbursement amount — reimbursement equals total payments, not the original float",
+      "Never show VAT as a separate expense category — it is part of the total amount paid and shown in the VAT column"
+    ],
+    "examinerTips": [
+      "Petty cash book questions appear regularly in Paper 2 for 8-12 marks",
+      "Always show analysis columns with appropriate headings when preparing a petty cash book",
+      "Remember to calculate and show the reimbursement amount when asked about the imprest system",
+      "Check that your petty cash book balances - opening balance plus receipts minus payments equals closing balance"
+    ],
+    "formulas": [
+      "Reimbursement amount = Total payments made during the period",
+      "Cash in hand = Opening balance + Receipts - Payments",
+      "Imprest amount = Cash in hand + Total of vouchers"
+    ],
+    "keyDiagramDescription": "Petty cash book layout showing date column, details column, voucher number column, total amount column on both sides, with analysis columns (postage, stationery, travel, sundries, VAT) on the credit side only"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:36:44.314Z",
+  "updated_at": "2026-04-06T03:36:44.314Z"
+}

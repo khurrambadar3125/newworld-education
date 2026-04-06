@@ -1,0 +1,96 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 3: Financial Statements",
+  "chapter_id": "12",
+  "chapter_name": "Accounting for depreciation and disposal of non-current assets",
+  "note_data": {
+    "title": "Accounting for depreciation and disposal of non-current assets",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Depreciation** is the allocation of the cost of a non-current asset over its useful life",
+      "**Straight line method** calculates depreciation as (Cost - Residual value) ÷ Useful life",
+      "**Reducing balance method** applies a fixed percentage to the net book value each year",
+      "**Accumulated depreciation** is recorded as a credit balance in the ledger and shown as a deduction in the statement of financial position",
+      "When an asset is **disposed of**, the disposal account is debited with cost and credited with accumulated depreciation to find the net book value",
+      "**Profit on disposal** occurs when proceeds exceed net book value and is credited to the statement of profit or loss",
+      "**Loss on disposal** occurs when proceeds are less than net book value and is debited to the statement of profit or loss",
+      "The disposal account must be **balanced off** and any balance transferred to the statement of profit or loss",
+      "**Part exchange** involves trading an old asset plus cash for a new asset, requiring careful calculation of the allowance received"
+    ],
+    "definitions": [
+      {
+        "term": "Depreciation",
+        "definition": "The allocation of the cost of a non-current asset over its useful life to match expenses with revenues"
+      },
+      {
+        "term": "Net book value",
+        "definition": "The cost of an asset less accumulated depreciation"
+      },
+      {
+        "term": "Residual value",
+        "definition": "The estimated amount that could be obtained from disposal of an asset at the end of its useful life"
+      },
+      {
+        "term": "Useful life",
+        "definition": "The period over which an asset is expected to be used by the business"
+      },
+      {
+        "term": "Accumulated depreciation",
+        "definition": "The total amount of depreciation charged on an asset from the date of purchase to the date of the statement of financial position"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working clearly. Use the depreciation formula and show each step."
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "For disposal accounts, include all three elements: cost (Dr), accumulated depreciation (Cr), and proceeds (Cr)"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the method + reason, e.g., 'Straight line method because it allocates equal amounts each year'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A delivery van was purchased on 1 January 2020 for $24,000. It has a useful life of 4 years and a residual value of $4,000. The van was sold on 31 December 2022 for $8,500. Using the straight line method, calculate the profit or loss on disposal.",
+      "marks": 4,
+      "answer": "Annual depreciation = ($24,000 - $4,000) ÷ 4 = $5,000\nAccumulated depreciation (3 years) = $5,000 × 3 = $15,000\nNet book value = $24,000 - $15,000 = $9,000\nProceeds = $8,500\nLoss on disposal = $9,000 - $8,500 = $500",
+      "markBreakdown": [
+        "Mark 1: Correct annual depreciation calculation $5,000",
+        "Mark 2: Correct accumulated depreciation $15,000",
+        "Mark 3: Correct net book value $9,000",
+        "Mark 4: Correct loss on disposal $500"
+      ]
+    },
+    "commonMistakes": [
+      "Never subtract residual value when using reducing balance method - only subtract it in straight line method",
+      "Students often forget to calculate accumulated depreciation up to the date of disposal, not just for one year",
+      "Never call it 'depreciation account' - always use 'accumulated depreciation account'",
+      "Students confuse profit and loss on disposal - profit when proceeds > NBV, loss when proceeds < NBV",
+      "Never include depreciation for the year of disposal unless specifically stated"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every Paper 2 examination",
+      "Always show workings for depreciation calculations even if not asked",
+      "When preparing disposal accounts, use T-account format for clarity",
+      "Read disposal questions carefully - check if part exchange is involved"
+    ],
+    "formulas": [
+      "Straight line depreciation = (Cost - Residual value) ÷ Useful life",
+      "Reducing balance depreciation = Net book value × Depreciation rate %",
+      "Net book value = Cost - Accumulated depreciation",
+      "Profit/Loss on disposal = Proceeds - Net book value"
+    ],
+    "keyDiagramDescription": "T-account showing Asset Disposal Account with cost debited on left side, accumulated depreciation and proceeds credited on right side, with balancing figure being profit or loss on disposal"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:39:12.795Z",
+  "updated_at": "2026-04-06T03:39:12.795Z"
+}
