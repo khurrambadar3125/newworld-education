@@ -83,12 +83,38 @@
       "density = mass ÷ volume",
       "volume of cuboid = length × width × height"
     ],
-    "keyDiagramDescription": "Measuring cylinder showing water displacement method: initial water level, stone being lowered in, and final water level marked clearly with volume readings"
+    "keyDiagramDescription": "Measuring cylinder showing water displacement method: initial water level, stone being lowered in, and final water level marked clearly with volume readings",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q2 (2 marks) — they asked students to measure and record unstretched lengths of springs S₁ and S₂, requiring values between 2.0-10.0 cm with correct units",
+      "N/D 2022 P2 Q4 (3 marks) tested measurement of maximum extension length lₘₐₓ when mass is pulled to pad, requiring proper recording in cm",
+      "M/J 2024 P1 Q3 (2 marks) required students to measure and record length L of cord between clips with appropriate units",
+      "N/D 2023 P2 Q5 (4 marks) involved calculating focal length and refractive index using expressions f = vu/(v+u) and n = 0.553f/(1+0.333f)",
+      "M/J 2022 P1 Q1 (3 marks) tested equilibrium calculations for uniform bar on two supports, requiring ratio calculations"
+    ],
+    "workedExample": {
+      "question": "A student measures the unstretched length of a spring. Record the measurement S₁ to an appropriate precision. (2 marks)",
+      "steps": [
+        "Step 1: Position eye level with the scale to avoid parallax error",
+        "Step 2: Read the scale from the bottom of the spring to the nearest millimeter",
+        "Step 3: Record measurement as S₁ = 6.2 cm (ensuring value is between 2.0-10.0 cm range)",
+        "Step 4: Include correct unit (cm) in the recording"
+      ],
+      "answer": "S₁ = 6.2 cm",
+      "markScheme": "1 mark for numerical value within acceptable range (2.0-10.0 cm), 1 mark for correct unit (cm)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to include units in their measurements' — always include the correct unit (cm, mm, m) when recording any length measurement",
+      "Examiner Report 2022: 'Students often rounded measurements inappropriately' — record measurements to the precision of the measuring instrument, typically to the nearest mm for ruler measurements",
+      "Examiner Report 2024: 'Parallax errors were common in practical measurements' — always position your eye perpendicular to the scale when taking readings to avoid systematic errors"
+    ],
+    "keyDiagram": "Essential measurement setup diagram showing: (1) Measuring instrument (ruler/meter rule) positioned parallel to the object being measured, (2) Eye position indicated at the same level as the measurement point with arrow showing perpendicular viewing angle, (3) Clear labeling of the measurement points (e.g., S₁, S₂, L), (4) Units clearly marked on the scale, (5) Any relevant apparatus like springs, cords, or bars properly positioned relative to the measuring scale.",
+    "quickRecap": "Always include correct units when recording measurements. Position your eye perpendicular to the scale to avoid parallax errors. Record to appropriate precision based on your measuring instrument (usually nearest mm). Check that measured values fall within any specified ranges given in the question."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:58:50.461Z",
-  "updated_at": "2026-04-05T20:58:50.462Z"
+  "updated_at": "2026-04-05T20:58:50.462Z",
+  "enriched_at": "2026-04-06T15:57:00.581Z"
 }

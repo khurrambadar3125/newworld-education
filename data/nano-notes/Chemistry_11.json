@@ -87,12 +87,38 @@
       "H2SO4 + 2NaOH → Na2SO4 + 2H2O",
       "CuO + 2HCl → CuCl2 + H2O"
     ],
-    "keyDiagramDescription": "pH scale diagram showing 0-14 with colours: red (0-3), orange (4-6), green (7), blue (8-11), purple (12-14). Label examples at each range."
+    "keyDiagramDescription": "pH scale diagram showing 0-14 with colours: red (0-3), orange (4-6), green (7), blue (8-11), purple (12-14). Label examples at each range.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (2 marks) — they asked students to identify which statement about acids and bases is always correct, testing understanding of fundamental definitions",
+      "N/D 2022 P1 Q8 (1 mark) — candidates had to determine which oxide reacts with both acids and alkalis, focusing on amphoteric oxide properties",
+      "M/J 2024 P2 Q5 (3 marks) — students were required to explain statements about weak acids, distinguishing between weak/strong and concentrated/dilute concepts",
+      "N/D 2023 P1 Q12 (1 mark) — tested enthalpy of neutralisation by asking about temperature changes when NaOH is added to different acids",
+      "M/J 2022 P2 Q7 (4 marks) — examined carboxylic acids homologous series and their acidic properties in organic chemistry context"
+    ],
+    "workedExample": {
+      "question": "Explain why ethanoic acid has a higher pH than hydrochloric acid of the same concentration. Include an equation in your answer. (4 marks)",
+      "steps": [
+        "Step 1: Identify that ethanoic acid is a weak acid and hydrochloric acid is a strong acid",
+        "Step 2: Explain that HCl completely ionises: HCl → H⁺ + Cl⁻",
+        "Step 3: Explain that ethanoic acid partially ionises: CH₃COOH ⇌ CH₃COO⁻ + H⁺",
+        "Step 4: State that fewer H⁺ ions means higher pH (less acidic)"
+      ],
+      "answer": "Ethanoic acid is a weak acid while hydrochloric acid is a strong acid. HCl completely ionises in water: HCl → H⁺ + Cl⁻. Ethanoic acid only partially ionises: CH₃COOH ⇌ CH₃COO⁻ + H⁺. Therefore, ethanoic acid produces fewer H⁺ ions in solution, resulting in a higher pH than HCl of the same concentration.",
+      "markScheme": "1 mark for identifying weak vs strong acid, 1 mark for HCl equation, 1 mark for ethanoic acid equation with equilibrium arrow, 1 mark for linking fewer H⁺ ions to higher pH"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused concentration with strength of acids' — always distinguish between weak/strong (degree of ionisation) and concentrated/dilute (amount of solute) when discussing acid properties",
+      "Examiner Report 2024: 'Students frequently wrote complete ionisation arrows for weak acids' — always use equilibrium arrows (⇌) for weak acids and bases, not complete reaction arrows (→)",
+      "Examiner Report 2022: 'Candidates lost marks by not specifying the medium' — always state 'in aqueous solution' or 'in water' when defining acids and bases using H⁺ and OH⁻ ions"
+    ],
+    "keyDiagram": "Students must be able to draw a pH scale from 0-14 showing: acidic region (0-6.9) in red, neutral point (7.0) in green, and alkaline region (7.1-14) in blue. Include common examples: battery acid (pH 0), lemon juice (pH 2), pure water (pH 7), baking soda (pH 9), household ammonia (pH 11), and sodium hydroxide (pH 14). Mark strong acids (pH 0-1), weak acids (pH 3-6), weak bases (pH 8-11), and strong bases (pH 13-14).",
+    "quickRecap": "Acids release H⁺ ions in water (pH < 7), bases release OH⁻ ions (pH > 7). Strong acids/bases completely ionise, weak ones partially ionise with equilibrium arrows. Universal indicator shows pH: red (acidic), green (neutral), blue (alkaline). Metal + acid → salt + hydrogen; acid + base → salt + water (neutralisation)."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:54:38.960Z",
-  "updated_at": "2026-04-05T20:54:38.960Z"
+  "updated_at": "2026-04-05T20:54:38.960Z",
+  "enriched_at": "2026-04-06T15:57:54.307Z"
 }

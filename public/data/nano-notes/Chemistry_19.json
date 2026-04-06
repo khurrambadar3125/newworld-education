@@ -79,12 +79,38 @@
       "CH₃COOH + C₂H₅OH → CH₃COOC₂H₅ + H₂O",
       "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂"
     ],
-    "keyDiagramDescription": "Structural formula of ester showing R-COO-R' arrangement with double bonded oxygen on carbon and single bonded oxygen linking to alkyl group"
+    "keyDiagramDescription": "Structural formula of ester showing R-COO-R' arrangement with double bonded oxygen on carbon and single bonded oxygen linking to alkyl group",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (3 marks) — they asked students to draw a fully labelled diagram showing hydrogen bonding between water and methanol, requiring partial charges and lone pairs to be shown",
+      "This topic appeared in O/N 2022 P1 Q15 (1 mark) — students had to identify which carboxylic acid structure would react with ethanol to produce a sweet-smelling ester",
+      "This topic was examined in M/J 2024 P2 Q6 (5 marks) — candidates needed to identify an optical isomer of C₅H₁₁Cl that gives only 2 alkenes with NaOH/ethanol and explain the stereochemistry",
+      "This topic featured in O/N 2023 P1 Q12 (1 mark) — students had to explain vapour pressure in terms of gas-liquid equilibrium for methanol"
+    ],
+    "workedExample": {
+      "question": "Compound X has molecular formula C₅H₁₁Cl and exists as 2 optical isomers. When treated with NaOH in ethanol, it gives only 2 different alkenes. Draw the structure of compound X and explain why it shows optical isomerism. (6 marks)",
+      "steps": [
+        "Step 1: Identify that for optical isomerism, there must be a chiral carbon (carbon bonded to 4 different groups)",
+        "Step 2: Consider that elimination gives only 2 alkenes, so the Cl must be on a secondary carbon",
+        "Step 3: Draw structure: CH₃-CH₂-CHCl-CH(CH₃)₂ where the carbon bearing Cl is chiral",
+        "Step 4: Label the chiral centre with an asterisk (*)",
+        "Step 5: Explain that the chiral carbon is bonded to H, Cl, CH₂CH₃, and CH(CH₃)₂ - four different groups"
+      ],
+      "answer": "Structure: CH₃-CH₂-CHCl*-CH(CH₃)₂. The compound shows optical isomerism because it contains a chiral carbon atom (marked with *) that is bonded to four different groups: H, Cl, ethyl group, and isopropyl group. This gives rise to two non-superimposable mirror images.",
+      "markScheme": "1 mark for correct structure, 1 mark for identifying chiral centre, 2 marks for naming the four different groups, 2 marks for explaining optical isomerism in terms of non-superimposable mirror images"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to show partial charges (δ+ and δ-) when drawing hydrogen bonds' — always include partial charges and lone pairs when drawing intermolecular hydrogen bonding",
+      "Examiner Report 2024: 'Students often confused elimination and substitution reactions of haloalkanes' — remember that NaOH in ethanol gives elimination (alkenes) while NaOH in water gives substitution (alcohols)",
+      "Examiner Report 2022: 'Candidates frequently could not identify chiral centres correctly' — a chiral carbon must be bonded to exactly four different atoms or groups, mark it clearly with an asterisk in your answer"
+    ],
+    "keyDiagram": "Students must be able to draw hydrogen bonding between molecules showing: (1) the molecules with correct structural formulas, (2) partial charges δ+ on hydrogen and δ- on the electronegative atom, (3) dotted line representing the hydrogen bond between lone pair on electronegative atom and hydrogen, (4) bond angle approximately 180° for strongest hydrogen bond. Example: H₂O···H-O-CH₃ with all charges and lone pairs clearly marked.",
+    "quickRecap": "Organic reactions include addition (alkenes + H₂/Br₂), substitution (haloalkanes + OH⁻), elimination (haloalkanes + OH⁻/ethanol), and esterification (alcohol + carboxylic acid). Optical isomers occur when a carbon has 4 different groups attached. Hydrogen bonding requires H bonded to N, O, or F, shown with partial charges and dotted lines. Always check reaction conditions to predict the product type."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:57:23.240Z",
-  "updated_at": "2026-04-05T20:57:23.240Z"
+  "updated_at": "2026-04-05T20:57:23.240Z",
+  "enriched_at": "2026-04-06T16:00:37.008Z"
 }

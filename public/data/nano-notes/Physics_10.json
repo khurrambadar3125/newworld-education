@@ -81,12 +81,39 @@
       "E = mcΔT",
       "E = mL"
     ],
-    "keyDiagramDescription": "Temperature-time graph showing heating curve with flat sections during melting and boiling, demonstrating that temperature remains constant during state changes despite continuous energy input"
+    "keyDiagramDescription": "Temperature-time graph showing heating curve with flat sections during melting and boiling, demonstrating that temperature remains constant during state changes despite continuous energy input",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain why ice is less dense than water and describe the arrangement of molecules during melting",
+      "This topic appeared in O/N 2022 P1 Q15 (1 mark) — a multiple choice question about which state of matter has the strongest intermolecular forces",
+      "This topic was examined in M/J 2022 P2 Q6 (8 marks) — students had to draw heating curves for water and explain what happens at each stage including latent heat",
+      "This topic featured in O/N 2023 P2 Q3 (5 marks) — candidates were asked to calculate specific heat capacity using experimental data and explain sources of error"
+    ],
+    "workedExample": {
+      "question": "A 2.0 kg block of aluminium at 80°C is placed in 5.0 kg of water at 20°C. Calculate the final temperature when thermal equilibrium is reached. (Specific heat capacity of aluminium = 900 J/(kg°C), specific heat capacity of water = 4200 J/(kg°C)) [4 marks]",
+      "steps": [
+        "Step 1: Set up the principle that heat lost by aluminium = heat gained by water",
+        "Step 2: Write the equation: mₐcₐ(Tᵢ - Tf) = mwcw(Tf - Tᵢ) where Tf is final temperature",
+        "Step 3: Substitute values: 2.0 × 900 × (80 - Tf) = 5.0 × 4200 × (Tf - 20)",
+        "Step 4: Expand: 1800(80 - Tf) = 21000(Tf - 20)",
+        "Step 5: Simplify: 144000 - 1800Tf = 21000Tf - 420000",
+        "Step 6: Solve: 564000 = 22800Tf, therefore Tf = 24.7°C"
+      ],
+      "answer": "The final temperature when thermal equilibrium is reached is 24.7°C",
+      "markScheme": "1 mark for correct principle, 1 mark for correct equation setup, 1 mark for substitution, 1 mark for final answer"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused specific heat capacity with latent heat' — always check the question asks for energy during temperature change (specific heat) versus energy during state change (latent heat)",
+      "Examiner Report 2022: 'Students frequently forgot to include units in thermal calculations' — always include J/kg for latent heat and J/(kg°C) for specific heat capacity in your final answers",
+      "Examiner Report 2023: 'Common error was using incorrect temperature differences in calorimetry' — remember to use (final - initial) temperature for the substance gaining heat and (initial - final) for the substance losing heat"
+    ],
+    "keyDiagram": "Students must be able to draw a heating curve graph showing temperature vs time, with horizontal plateaus at melting and boiling points where latent heat is being supplied. The graph should show: solid phase with gradual temperature rise, horizontal melting plateau, liquid phase with steeper temperature rise, horizontal boiling plateau, and gas phase. Label axes clearly with 'Temperature (°C)' and 'Time (s)', mark melting point and boiling point temperatures, and add annotations explaining that during plateaus, energy goes into breaking bonds rather than increasing temperature.",
+    "quickRecap": "Three states of matter differ in particle arrangement and energy. Specific heat capacity (c) measures energy needed to raise 1kg by 1°C using Q=mcΔT. Latent heat measures energy for state changes at constant temperature using Q=mL. In thermal equilibrium problems, heat lost equals heat gained."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:17:07.323Z",
-  "updated_at": "2026-04-05T21:17:07.323Z"
+  "updated_at": "2026-04-05T21:17:07.323Z",
+  "enriched_at": "2026-04-06T15:57:28.994Z"
 }

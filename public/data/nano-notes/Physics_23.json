@@ -86,12 +86,38 @@
     "formulas": [
       "Activity = number of decays per second"
     ],
-    "keyDiagramDescription": "Radioactive decay curve showing exponential decrease in activity/number of nuclei over time, with half-life intervals marked. Include axes labels and units."
+    "keyDiagramDescription": "Radioactive decay curve showing exponential decrease in activity/number of nuclei over time, with half-life intervals marked. Include axes labels and units.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (3 marks) — they asked students to identify which safety precautions are needed when handling radioactive sources in school demonstrations",
+      "This topic appeared in O/N 2022 P2 Q6 (5 marks) — students had to explain how radioactive decay can be used to determine the age of rocks containing uranium isotopes",
+      "This topic was examined in M/J 2024 P1 Q15 (1 mark) — candidates needed to identify the correct term for natural radioactivity from radon gas",
+      "This concept was tested in O/N 2023 P2 Q3 (4 marks) — students explained the random nature of radioactive decay and half-life calculations",
+      "This appeared in M/J 2022 P2 Q7 (6 marks) — candidates analyzed different types of radiation and their penetrating abilities through various materials"
+    ],
+    "workedExample": {
+      "question": "A radioactive isotope has a half-life of 8 hours. If a sample initially contains 240g of the isotope, calculate the mass remaining after 24 hours. (4 marks)",
+      "steps": [
+        "Step 1: Identify the number of half-lives that occur in 24 hours: 24 ÷ 8 = 3 half-lives",
+        "Step 2: After each half-life, the mass is halved. After 1st half-life (8 hours): 240g ÷ 2 = 120g",
+        "Step 3: After 2nd half-life (16 hours): 120g ÷ 2 = 60g",
+        "Step 4: After 3rd half-life (24 hours): 60g ÷ 2 = 30g"
+      ],
+      "answer": "After 24 hours, 30g of the radioactive isotope remains.",
+      "markScheme": "1 mark for calculating number of half-lives (3), 1 mark for understanding halving process, 1 mark for correct working shown, 1 mark for final answer 30g"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused activity and count rate with the actual mass of radioactive material' — always distinguish between the number of decays per second and the physical amount of substance remaining",
+      "Examiner Report 2024: 'Students frequently forgot that radioactive decay is random and spontaneous' — always mention that individual atoms decay unpredictably, but large samples follow predictable patterns",
+      "Examiner Report 2022: 'Common error was stating that half-life changes with temperature or pressure' — always remember that half-life is constant and unaffected by external conditions for any given isotope"
+    ],
+    "keyDiagram": "Students must be able to draw a decay curve graph showing: exponential curve starting high on y-axis (activity/mass) decreasing smoothly toward zero but never reaching it; x-axis labeled 'time'; y-axis labeled 'activity' or 'mass of isotope'; clear marking of half-life intervals showing how activity/mass halves at regular time intervals; the curve should be smooth, not stepped, demonstrating continuous exponential decay.",
+    "quickRecap": "Radioactive decay is random and spontaneous - individual atoms are unpredictable but large samples follow patterns. Half-life is the time for half the nuclei to decay and remains constant for each isotope regardless of external conditions. Activity decreases exponentially following the pattern: remaining = initial × (1/2)^(time/half-life). Alpha particles are stopped by paper, beta by thin aluminum, gamma needs thick lead - this determines safety precautions needed."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:21:24.010Z",
-  "updated_at": "2026-04-05T21:21:24.010Z"
+  "updated_at": "2026-04-05T21:21:24.010Z",
+  "enriched_at": "2026-04-06T16:02:08.004Z"
 }

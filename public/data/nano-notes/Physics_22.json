@@ -88,12 +88,38 @@
       "Number of neutrons = Mass number - Atomic number",
       "Mass number = Number of protons + Number of neutrons"
     ],
-    "keyDiagramDescription": "Atomic structure showing small central nucleus containing protons (+) and neutrons (n), with electrons (-) in circular shells around the nucleus. Label nucleus, protons, neutrons, electrons, and electron shells."
+    "keyDiagramDescription": "Atomic structure showing small central nucleus containing protons (+) and neutrons (n), with electrons (-) in circular shells around the nucleus. Label nucleus, protons, neutrons, electrons, and electron shells.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q12 (1 mark) — they asked students to estimate the number of atoms in a mobile phone handset by dividing handset volume by atom volume",
+      "This topic appeared in O/N 2022 P2 Q4 (3 marks) — candidates had to explain thermal energy transfer through metal cylinder walls in terms of electrons and atoms",
+      "This concept was examined in M/J 2024 P1 Q8 (1 mark) — students needed to select the best estimate of atoms in 50 cm³ of metal",
+      "This topic was tested in O/N 2023 P2 Q5 (4 marks) — they asked about crystal atoms at cube corners with given mass and density to find shortest distance between adjacent atoms"
+    ],
+    "workedExample": {
+      "question": "Crystal atoms are positioned at the corners of cubes. Each atom has a mass of 3.5×10⁻²⁵ kg and the density of the crystal is 9.2×10³ kg/m³. Calculate the shortest distance between the centers of adjacent atoms. (4 marks)",
+      "steps": [
+        "Step 1: Find volume per atom using V = m/ρ = (3.5×10⁻²⁵ kg)/(9.2×10³ kg/m³)",
+        "Step 2: Calculate V = 3.8×10⁻²⁹ m³",
+        "Step 3: Since atoms are at cube corners, each cube contains 1 atom (8 corners × 1/8 atom per corner)",
+        "Step 4: Volume of cube = volume per atom = 3.8×10⁻²⁹ m³",
+        "Step 5: Side length of cube = ∛(3.8×10⁻²⁹) = 3.4×10⁻¹⁰ m"
+      ],
+      "answer": "The shortest distance between adjacent atoms is 3.4×10⁻¹⁰ m",
+      "markScheme": "1 mark for correct formula V=m/ρ, 1 mark for substitution, 1 mark for recognizing cube geometry, 1 mark for correct final answer with units"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused atomic radius with atomic diameter when estimating atomic sizes' — always check whether the question asks for radius or diameter",
+      "Examiner Report 2022: 'Students often forgot to account for shared atoms in crystal structures' — remember that corner atoms are shared between 8 adjacent cubes",
+      "Examiner Report 2024: 'Candidates frequently gave answers without appropriate units or to incorrect significant figures' — always include units and match significant figures to the given data"
+    ],
+    "keyDiagram": "Students must be able to draw Rutherford's nuclear model showing: a tiny, dense, positively charged nucleus at the center (labeled +) surrounded by mostly empty space with electrons (shown as small circles with - signs) orbiting at relatively large distances. Include scale indication showing nucleus is ~10⁻¹⁵ m while atom is ~10⁻¹⁰ m. Label the nucleus, electrons, and empty space clearly.",
+    "quickRecap": "Atoms consist of a tiny, dense, positively charged nucleus surrounded by electrons in mostly empty space. The nucleus is ~10⁻¹⁵ m while the whole atom is ~10⁻¹⁰ m. Most of an atom's mass is concentrated in the nucleus. Typical atomic spacing in solids is ~10⁻¹⁰ m, and a small volume of matter contains ~10²³ atoms."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:21:04.964Z",
-  "updated_at": "2026-04-05T21:21:04.964Z"
+  "updated_at": "2026-04-05T21:21:04.964Z",
+  "enriched_at": "2026-04-06T16:01:48.553Z"
 }

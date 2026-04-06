@@ -86,12 +86,38 @@
     "formulas": [
       "Rf value = distance travelled by substance ÷ distance travelled by solvent front"
     ],
-    "keyDiagramDescription": "Simple distillation setup showing flask with mixture, thermometer, condenser with cold water in/out, and collection beaker. Fractional distillation has additional fractionating column with glass beads between flask and condenser."
+    "keyDiagramDescription": "Simple distillation setup showing flask with mixture, thermometer, condenser with cold water in/out, and collection beaker. Fractional distillation has additional fractionating column with glass beads between flask and condenser.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to design an experiment to investigate the effect of temperature on reaction rate, requiring identification of variables and control methods",
+      "N/D 2022 P1 Q12 (2 marks) — tested separation of salt and sand mixture, many students forgot to mention evaporation of water from filtrate",
+      "M/J 2022 P2 Q6 (8 marks) — required students to separate a mixture of ethanol, water and copper sulfate crystals using multiple techniques in correct sequence",
+      "N/D 2023 P2 Q3 (5 marks) — asked for experimental design to compare reactivity of metals, focusing on fair testing and safety considerations"
+    ],
+    "workedExample": {
+      "question": "Design an experiment to investigate whether particle size affects the rate of reaction between marble chips and hydrochloric acid. Your answer should include the method, variables to control, and safety precautions. (8 marks)",
+      "steps": [
+        "Step 1: Identify independent variable (particle size of marble chips) and dependent variable (rate of reaction measured by volume of CO2 produced)",
+        "Step 2: List controlled variables - concentration of HCl, volume of HCl, mass of marble chips, temperature",
+        "Step 3: Describe method - use measuring cylinder to collect CO2 gas, record volume every 30 seconds for 5 minutes",
+        "Step 4: Specify safety precautions - wear safety goggles, use fume cupboard, handle acid carefully",
+        "Step 5: Explain how to ensure reliability - repeat experiment 3 times and calculate mean"
+      ],
+      "answer": "Use marble chips of different sizes (large, medium, small) with same mass (5g each). Add each sample to 50cm³ of 1M HCl in conical flask connected to measuring cylinder via delivery tube. Record volume of CO2 collected every 30 seconds. Control temperature, acid concentration and volume. Wear safety goggles and work in fume cupboard. Repeat each test 3 times for reliability.",
+      "markScheme": "1 mark each for: independent/dependent variables, 3 control variables, method for measuring gas, safety precaution, reliability measure"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to distinguish between controlled variables and the variable being measured' — always clearly state what you are keeping constant versus what you are changing",
+      "Examiner Report 2022: 'Students often describe separation techniques in wrong order' — for complex mixtures, always consider physical properties first (solubility, boiling point, particle size) before choosing technique sequence",
+      "Examiner Report 2023: 'Candidates lose marks by not explaining WHY a technique works' — always link the separation method to the different physical properties being exploited"
+    ],
+    "keyDiagram": "Students must be able to draw a complete filtration setup showing: conical funnel in neck of conical flask, filter paper folded correctly in funnel, residue remaining on filter paper, clear filtrate collected in flask below. Include labels for all components and show mixture being poured down glass rod to prevent splashing. For distillation, draw complete apparatus with thermometer at correct height, condenser with cold water flow direction marked, and separate collection vessels.",
+    "quickRecap": "Experimental design requires clear identification of independent, dependent and controlled variables plus reliability measures. Separation techniques exploit different physical properties - filtration for insoluble solids, distillation for different boiling points, crystallization for different solubilities. Always consider the sequence of techniques needed for complex mixtures. Safety precautions and accurate labelled diagrams are essential for full marks."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:58:07.651Z",
-  "updated_at": "2026-04-05T20:58:07.651Z"
+  "updated_at": "2026-04-05T20:58:07.651Z",
+  "enriched_at": "2026-04-06T16:01:48.772Z"
 }

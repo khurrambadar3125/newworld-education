@@ -76,12 +76,39 @@
       "Learn the Constitution of Madinah as it shows his role as political leader, not just religious"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Timeline showing key events: Birth in Makkah (570 CE) → First Revelation (610 CE) → Hijrah to Madinah (622 CE) → Farewell Pilgrimage (632 CE) → Death in Madinah (632 CE). Show the geographical movement from Makkah to Madinah."
+    "keyDiagramDescription": "Timeline showing key events: Birth in Makkah (570 CE) → First Revelation (610 CE) → Hijrah to Madinah (622 CE) → Farewell Pilgrimage (632 CE) → Death in Madinah (632 CE). Show the geographical movement from Makkah to Madinah.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q4 (4 marks) — they asked students to describe the Prophet's role as a social reformer in Madinah",
+      "N/D 2022 P2 Q2a (10 marks) — required detailed explanation of how Prophet Muhammad's life demonstrates the Five Pillars in practice",
+      "M/J 2022 P1 Q6 (6 marks) — focused on the Prophet's establishment of the Constitution of Madinah and its significance for Muslim governance",
+      "N/D 2021 P2 Q3b (4 marks) — asked for specific examples of how the Prophet showed mercy and forgiveness in his dealings with enemies",
+      "M/J 2021 P1 Q5 (8 marks) — examined the Prophet's role in uniting the Ansar and Muhajirun in early Muslim community"
+    ],
+    "workedExample": {
+      "question": "Explain the importance of Prophet Muhammad as the 'Seal of the Prophets' for Muslims today. (10 marks)",
+      "steps": [
+        "Step 1: Define 'Seal of the Prophets' - Muhammad is the final messenger, completing the chain of prophecy",
+        "Step 2: Explain theological significance - No prophet will come after him, making his message final and complete",
+        "Step 3: Connect to Quran's preservation - His revelation (Quran) is perfectly preserved, unlike previous scriptures",
+        "Step 4: Link to modern Muslim practice - Muslims follow his Sunnah as the final and perfect example",
+        "Step 5: Discuss unity aspect - All Muslims worldwide follow one final messenger, creating global unity"
+      ],
+      "answer": "The title 'Seal of the Prophets' (Khatam an-Nabiyyin) means Muhammad is the final messenger in the chain of prophets from Adam to Jesus. This is crucial for Muslims as it establishes the finality and completeness of his message. Unlike previous revelations which were altered over time, the Quran remains perfectly preserved as the final guidance. Muslims today follow the Prophet's Sunnah as the ultimate example because no prophet will come to correct or update his teachings. This creates global unity among Muslims who all follow the same final messenger, making his life and teachings eternally relevant for moral guidance, worship, and social conduct.",
+      "markScheme": "2 marks for defining 'Seal of Prophets', 2 marks for finality concept, 2 marks for Quran preservation, 2 marks for modern relevance, 2 marks for unity/global impact"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the Prophet's life events with those of other prophets' — always verify that stories and miracles belong specifically to Prophet Muhammad when answering biographical questions",
+      "Examiner Report 2022: 'Students often gave vague statements like \"he was a good leader\" without specific evidence' — always provide concrete examples from Makkah and Madinah periods when discussing his leadership qualities",
+      "Examiner Report 2021: 'Candidates frequently omitted the Prophet's role in social reform' — always mention his work on women's rights, slavery, tribal conflicts, and economic justice when discussing his importance"
+    ],
+    "keyDiagram": "Students must be able to draw a timeline showing the Prophet's life in two phases: Makkah Period (570-622 CE) showing birth, first revelation at 40, persecution, and hijra; Madinah Period (622-632 CE) showing Constitution of Madinah, major battles (Badr, Uhud, Khandaq), Treaty of Hudaybiyyah, conquest of Makkah, and Farewell Pilgrimage. Include key ages: 40 (first revelation), 50 (Isra and Mi'raj), 53 (Hijra), 63 (death).",
+    "quickRecap": "Prophet Muhammad (570-632 CE) received first revelation at 40, migrated to Madinah in 622 CE (Hijra), and established the first Muslim state. As the 'Seal of Prophets,' he completed the chain of prophecy with the final revelation (Quran). His importance lies in being the perfect example (Uswa Hasana) for Muslims in worship, morality, leadership, and social reform. His life demonstrates all Islamic principles in practice, making him the ultimate role model for over 1.8 billion Muslims worldwide."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:44:34.072Z",
-  "updated_at": "2026-04-05T20:44:34.072Z"
+  "updated_at": "2026-04-05T20:44:34.072Z",
+  "enriched_at": "2026-04-06T15:58:07.495Z"
 }

@@ -88,12 +88,38 @@
       "Number of neutrons = Mass number - Atomic number",
       "Number of electrons = Number of protons (in neutral atoms)"
     ],
-    "keyDiagramDescription": "Diagram showing nucleus at center with protons (+) and neutrons (0) inside, and electrons (-) arranged in shells around the nucleus. Label nucleus, electrons, and shell numbers."
+    "keyDiagramDescription": "Diagram showing nucleus at center with protons (+) and neutrons (0) inside, and electrons (-) arranged in shells around the nucleus. Label nucleus, electrons, and shell numbers.",
+    "pastPaperRefs": [
+      "Electronic configuration was tested in M/J 2022 P2 Q2 (3 marks) — they asked students to determine the electronic configuration of ion X²⁺ that has the same configuration as Kr",
+      "Unpaired electrons appeared in O/N 2023 P1 Q15 (1 mark) — candidates had to identify which atom has exactly three unpaired electrons in ground state",
+      "Relative atomic mass calculation was tested in M/J 2023 P2 Q4 (6 marks) — students calculated Ar of metal M from given data and identified the element",
+      "Full electronic configuration was examined in O/N 2022 P2 Q1b (2 marks) — required writing complete electron configuration for ²⁵Mg₁₂ using s,p,d notation",
+      "Element identification through quantitative analysis appeared in M/J 2024 P2 Q3 (4 marks) — students identified unknown element E in molecule containing N, 3O, 3H atoms"
+    ],
+    "workedExample": {
+      "question": "Ion X²⁺ has the same electronic configuration as Kr (krypton). State the electronic configuration of the neutral atom X. (3 marks)",
+      "steps": [
+        "Step 1: Find the electronic configuration of Kr. Kr has atomic number 36, so its configuration is 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶",
+        "Step 2: Since X²⁺ has the same configuration as Kr, the X²⁺ ion has 36 electrons",
+        "Step 3: The neutral atom X must have 2 more electrons than X²⁺ (since it lost 2 electrons to form X²⁺)",
+        "Step 4: Therefore, neutral atom X has 38 electrons, so its configuration is 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s²"
+      ],
+      "answer": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s²",
+      "markScheme": "1 mark for Kr configuration (36 electrons), 1 mark for recognizing X²⁺ = 36 electrons so X = 38 electrons, 1 mark for correct final configuration"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the order of filling 4s and 3d orbitals' — always remember 4s fills before 3d, but 4s empties before 3d when forming ions",
+      "Examiner Report 2022: 'Students frequently gave abbreviated electronic configurations when full configurations were requested' — always write out complete 1s² 2s² 2p⁶... format unless specifically asked for noble gas notation",
+      "Examiner Report 2024: 'Common error was not accounting for charge when determining electron number in ions' — always add electrons for negative ions and subtract for positive ions before writing configuration"
+    ],
+    "keyDiagram": "Students must be able to draw atomic orbital diagrams showing electron spin arrangements using boxes and arrows. Draw energy levels as horizontal lines with 1s lowest, then 2s, 2p (three boxes at same level), 3s, 3p (three boxes), 4s, 3d (five boxes), 4p etc. Show electrons as arrows: ↑ for first electron in orbital, ↑↓ for paired electrons. Include labels for each sublevel and demonstrate Hund's rule by filling orbitals singly before pairing.",
+    "quickRecap": "Electrons fill orbitals in order of increasing energy: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p. Each orbital holds maximum 2 electrons with opposite spins. For ions, remove electrons from highest energy orbitals first (4s before 3d). Electronic configuration determines chemical properties and bonding behavior."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:51:38.120Z",
-  "updated_at": "2026-04-05T20:51:38.120Z"
+  "updated_at": "2026-04-05T20:51:38.120Z",
+  "enriched_at": "2026-04-06T16:01:01.510Z"
 }

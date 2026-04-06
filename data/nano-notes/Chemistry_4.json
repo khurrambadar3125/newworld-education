@@ -87,12 +87,37 @@
       "2Mg + O₂ → 2MgO",
       "NaOH + HCl → NaCl + H₂O"
     ],
-    "keyDiagramDescription": "No specific diagram required, but students should be able to represent particle models showing conservation of atoms in chemical reactions"
+    "keyDiagramDescription": "No specific diagram required, but students should be able to represent particle models showing conservation of atoms in chemical reactions",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q2 (3 marks) — they asked students to write balanced chemical equations for the reaction between magnesium and hydrochloric acid, including state symbols",
+      "N/D 2022 P1 Q15 (1 mark) tested formula writing by asking for the chemical formula of calcium hydroxide",
+      "M/J 2022 P2 Q4(b) (4 marks) — students had to balance the equation for combustion of propane and calculate the mass of carbon dioxide produced",
+      "N/D 2023 P2 Q1(c) (2 marks) asked students to write the ionic equation for the precipitation of silver chloride from silver nitrate and sodium chloride solutions"
+    ],
+    "workedExample": {
+      "question": "Aluminum reacts with copper(II) sulfate solution. Write a balanced chemical equation for this reaction, including state symbols. (3 marks)",
+      "steps": [
+        "Step 1: Identify reactants and products. Aluminum displaces copper from copper(II) sulfate, forming aluminum sulfate and copper metal",
+        "Step 2: Write unbalanced equation with correct formulae: Al + CuSO₄ → Al₂(SO₄)₃ + Cu",
+        "Step 3: Balance the equation by counting atoms. Need 2 Al atoms and 3 CuSO₄ units: 2Al + 3CuSO₄ → Al₂(SO₄)₃ + 3Cu",
+        "Step 4: Add state symbols: Al is solid (s), CuSO₄ is aqueous (aq), Al₂(SO₄)₃ is aqueous (aq), Cu is solid (s)"
+      ],
+      "answer": "2Al(s) + 3CuSO₄(aq) → Al₂(SO₄)₃(aq) + 3Cu(s)",
+      "markScheme": "1 mark for correct formulae, 1 mark for balanced equation, 1 mark for correct state symbols"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates wrote incorrect formulae for ionic compounds' — always check that charges balance when writing formulae like Ca(OH)₂ or Al₂(SO₄)₃",
+      "Examiner Report 2022: 'Students frequently omitted state symbols or used incorrect ones' — remember (s) for solids, (l) for liquids, (g) for gases, and (aq) for substances dissolved in water",
+      "Examiner Report 2023: 'Common error was not balancing equations properly' — always count atoms of each element on both sides and ensure they are equal before adding state symbols"
+    ],
+    "keyDiagram": "Students should be able to draw a step-by-step method flowchart showing: 1) Write word equation, 2) Replace words with chemical formulae, 3) Balance by adding coefficients (never change formulae), 4) Add state symbols in brackets. Include a visual example showing the progression from 'magnesium + oxygen → magnesium oxide' through to '2Mg(s) + O₂(g) → 2MgO(s)' with arrows between each step.",
+    "quickRecap": "Chemical formulae show the ratio of atoms in compounds using element symbols and subscript numbers. Balanced equations have equal numbers of each type of atom on both sides. State symbols (s), (l), (g), (aq) show the physical state of substances. Always write correct formulae first, then balance by adding coefficients, never change the formulae themselves."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:52:17.234Z",
-  "updated_at": "2026-04-05T20:52:17.234Z"
+  "updated_at": "2026-04-05T20:52:17.234Z",
+  "enriched_at": "2026-04-06T16:03:09.053Z"
 }

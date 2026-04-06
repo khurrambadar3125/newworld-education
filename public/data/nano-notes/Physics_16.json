@@ -84,12 +84,38 @@
       "Plotting compass experiments often tested — remember neutral points between like poles"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Bar magnet showing curved magnetic field lines from north to south pole, with lines closer together near poles (stronger field) and further apart in middle (weaker field). Include arrows showing direction and demonstrate that lines never cross."
+    "keyDiagramDescription": "Bar magnet showing curved magnetic field lines from north to south pole, with lines closer together near poles (stronger field) and further apart in middle (weaker field). Include arrows showing direction and demonstrate that lines never cross.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how to magnetize a steel bar using the stroking method and describe the magnetic field pattern around a bar magnet",
+      "O/N 2022 P1 Q15 (1 mark) tested knowledge of magnetic materials by asking which material would be attracted to a magnet from a list including aluminum, copper, iron and plastic",
+      "M/J 2022 P2 Q6 (8 marks) required students to design an experiment to compare the strength of electromagnets, including apparatus list, method and safety precautions",
+      "O/N 2021 P2 Q3 (5 marks) tested understanding of Earth's magnetic field by asking students to explain why a compass needle points north and describe the magnetic field lines around Earth"
+    ],
+    "workedExample": {
+      "question": "A student wants to investigate the strength of an electromagnet. Describe how the student could investigate how the number of turns of wire affects the strength of the electromagnet. Include apparatus, method, and how to make the investigation fair. (6 marks)",
+      "steps": [
+        "Step 1: List apparatus - iron core, insulated copper wire, battery/power supply, ammeter, paper clips or iron filings for testing strength",
+        "Step 2: Describe method - wind different numbers of turns (e.g. 10, 20, 30, 40, 50) around the iron core, connect to circuit with ammeter",
+        "Step 3: Explain strength measurement - count how many paper clips the electromagnet can pick up for each number of turns",
+        "Step 4: Identify control variables - keep current constant (check with ammeter), use same iron core, same wire thickness, same battery voltage",
+        "Step 5: State safety precautions - avoid short circuits, don't overheat the wire"
+      ],
+      "answer": "Apparatus: iron nail/core, insulated copper wire, battery, ammeter, paper clips. Method: Wind different numbers of turns (10, 20, 30, 40, 50) around the iron core. Connect to battery through ammeter. For each setup, count maximum number of paper clips that can be picked up. Fair test: keep current constant (monitor with ammeter), use same iron core and wire throughout, same battery voltage. Plot graph of number of turns vs strength.",
+      "markScheme": "1 mark for suitable apparatus list, 1 mark for varying turns systematically, 1 mark for measuring strength quantitatively, 1 mark for keeping current constant, 1 mark for other control variables, 1 mark for safety/additional detail"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused temporary and permanent magnets' — always specify that iron is easily magnetized but loses magnetism quickly (temporary) while steel retains magnetism (permanent)",
+      "Examiner Report 2022: 'Students incorrectly drew magnetic field lines crossing each other' — remember magnetic field lines never cross and always go from North to South pole outside the magnet",
+      "Examiner Report 2021: 'Candidates failed to mention that magnetic forces can be attractive or repulsive' — always state that like poles repel and unlike poles attract when describing magnetic interactions"
+    ],
+    "keyDiagram": "Magnetic field pattern around a bar magnet: Draw a rectangular bar magnet labeled with N and S poles. Show curved field lines starting from North pole, curving outward and returning to South pole. Lines should be closer together near the poles (stronger field) and spread out in the middle. Include arrows on field lines pointing away from North toward South. Add the rule that field lines never cross each other.",
+    "quickRecap": "Magnets have North and South poles - like poles repel, unlike attract. Magnetic materials (iron, steel, nickel, cobalt) are attracted to magnets. Iron is temporary magnet, steel is permanent. Magnetic field lines go from N to S, never cross. Electromagnets use current through coil - strength increases with more turns or more current."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:19:04.816Z",
-  "updated_at": "2026-04-05T21:19:04.816Z"
+  "updated_at": "2026-04-05T21:19:04.816Z",
+  "enriched_at": "2026-04-06T15:59:23.264Z"
 }

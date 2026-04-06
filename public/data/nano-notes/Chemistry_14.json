@@ -76,12 +76,37 @@
       "When explaining alloy hardness, mention 'different sized atoms' and 'layers cannot slide easily'"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Metallic bonding diagram showing positive metal ions in a regular lattice with a 'sea' of delocalised electrons moving freely between them"
+    "keyDiagramDescription": "Metallic bonding diagram showing positive metal ions in a regular lattice with a 'sea' of delocalised electrons moving freely between them",
+    "pastPaperRefs": [
+      "Properties of metals were tested in M/J 2023 P2 Q3 (4 marks) — they asked students to describe two properties of metals and explain why metals are good conductors of electricity",
+      "Metallic bonding was examined in O/N 2022 P1 Q15 (1 mark) — multiple choice question asking what carries electrical current in metals",
+      "Alloy properties appeared in M/J 2024 P2 Q4b (3 marks) — students had to explain why steel is harder than pure iron",
+      "Metal identification from electron arrangement was tested in O/N 2023 P1 Q12 (1 mark) — candidates had to identify which elements were metals from diagrams showing electron shells"
+    ],
+    "workedExample": {
+      "question": "Explain why aluminum is used for electrical cables and describe the structure that allows this property. (4 marks)",
+      "steps": [
+        "Step 1: Identify the key property - aluminum conducts electricity well",
+        "Step 2: Describe metallic structure - aluminum atoms lose valence electrons to form positive metal ions",
+        "Step 3: Explain electron movement - these electrons become delocalized and form a 'sea of electrons'",
+        "Step 4: Link structure to property - the mobile electrons can move freely through the structure when voltage is applied"
+      ],
+      "answer": "Aluminum is used for electrical cables because it is a good conductor of electricity. In metallic aluminum, the atoms lose their outer electrons to form positive aluminum ions (Al³⁺). These electrons become delocalized and form a 'sea of electrons' that can move freely throughout the metallic structure. When a voltage is applied, these mobile electrons flow through the metal, carrying electric current.",
+      "markScheme": "1 mark for stating good electrical conductor, 1 mark for mentioning positive metal ions, 1 mark for delocalized/mobile electrons, 1 mark for explaining electron movement conducts electricity"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused metallic bonding with ionic bonding' — always mention delocalized electrons, not electron transfer between different atoms",
+      "Examiner Report 2022: 'Students often wrote vague answers like metals are strong' — be specific about properties: malleable, ductile, good thermal/electrical conductors",
+      "Examiner Report 2024: 'Candidates failed to explain why alloys are harder than pure metals' — always mention that different sized atoms disrupt the regular arrangement and prevent layers sliding"
+    ],
+    "keyDiagram": "Students must draw the metallic bonding diagram showing: positive metal ions arranged in a regular lattice structure, with negative electrons drawn as small circles or dots scattered throughout (representing the electron sea). Label the positive ions clearly (e.g., Na⁺, Mg²⁺) and indicate the delocalized electrons with arrows showing they can move freely. Include a note that these mobile electrons conduct electricity and heat.",
+    "quickRecap": "Metals have unique properties due to metallic bonding where atoms lose outer electrons to form positive ions in a 'sea' of delocalized electrons. These mobile electrons make metals good conductors of electricity and heat, while the non-directional bonding makes them malleable and ductile. Alloys are mixtures of metals that are often stronger than pure metals because different-sized atoms disrupt the regular structure. Key properties to remember: lustrous, high melting points, conduct heat/electricity, malleable, and ductile."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:55:38.146Z",
-  "updated_at": "2026-04-05T20:55:38.146Z"
+  "updated_at": "2026-04-05T20:55:38.146Z",
+  "enriched_at": "2026-04-06T15:58:52.621Z"
 }

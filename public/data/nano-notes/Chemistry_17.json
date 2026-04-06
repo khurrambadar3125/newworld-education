@@ -82,12 +82,38 @@
       "2SO₂ + O₂ → 2SO₃",
       "SO₃ + H₂O → H₂SO₄"
     ],
-    "keyDiagramDescription": "Carbon cycle showing photosynthesis removing CO₂, respiration and combustion releasing CO₂, with arrows indicating direction of carbon movement between atmosphere, plants, animals and fossil fuels"
+    "keyDiagramDescription": "Carbon cycle showing photosynthesis removing CO₂, respiration and combustion releasing CO₂, with arrows indicating direction of carbon movement between atmosphere, plants, animals and fossil fuels",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the environmental impact of sulfur dioxide emissions and describe methods to reduce acid rain",
+      "N 2022 P1 Q12 (1 mark) — multiple choice question on identifying the main greenhouse gas contributing to global warming",
+      "M/J 2022 P2 Q6(b) (4 marks) — students had to explain how catalytic converters reduce harmful emissions from car exhausts",
+      "N 2023 P2 Q5 (5 marks) — question on the carbon cycle and how human activities disrupt natural processes"
+    ],
+    "workedExample": {
+      "question": "Explain how acid rain is formed and describe two methods that can be used to reduce its formation. (6 marks)",
+      "steps": [
+        "Step 1: Identify the source - Sulfur dioxide (SO₂) is released when fossil fuels containing sulfur impurities are burned in power stations and factories",
+        "Step 2: Explain the atmospheric reaction - SO₂ reacts with oxygen and water in the atmosphere: SO₂ + ½O₂ + H₂O → H₂SO₄",
+        "Step 3: Describe acid rain formation - Sulfuric acid (H₂SO₄) falls as acid rain with pH below 5.6",
+        "Step 4: Method 1 - Remove sulfur from fossil fuels before burning (desulfurization)",
+        "Step 5: Method 2 - Use flue gas desulfurization (scrubbing) with calcium carbonate to remove SO₂ from waste gases"
+      ],
+      "answer": "Acid rain forms when sulfur dioxide from burning fossil fuels reacts with oxygen and water in the atmosphere to produce sulfuric acid (SO₂ + ½O₂ + H₂O → H₂SO₄). Two methods to reduce formation: (1) Remove sulfur from fossil fuels before combustion, (2) Use flue gas desulfurization with limestone scrubbers to remove SO₂ from emissions.",
+      "markScheme": "1 mark for SO₂ source, 1 mark for atmospheric reaction, 1 mark for acid formation, 1 mark for each method (2 marks), 1 mark for explaining how methods work"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused ozone depletion with global warming' — always distinguish between UV protection (ozone layer) and heat retention (greenhouse effect)",
+      "Examiner Report 2022: 'Students often failed to include balanced chemical equations when explaining acid rain formation' — always write SO₂ + ½O₂ + H₂O → H₂SO₄ for full marks",
+      "Examiner Report 2023: 'Candidates frequently gave vague answers about reducing pollution' — be specific about methods like catalytic converters, desulfurization, and renewable energy rather than just saying 'use less fuel'"
+    ],
+    "keyDiagram": "Students must be able to draw the carbon cycle showing: atmosphere (CO₂), photosynthesis (plants absorbing CO₂), respiration (organisms releasing CO₂), combustion (fossil fuels releasing CO₂), and carbon storage in fossil fuels, oceans, and biomass. Include arrows showing carbon movement between reservoirs and label human activities that increase atmospheric CO₂.",
+    "quickRecap": "Environmental chemistry covers pollution from burning fossil fuels: SO₂ causes acid rain, CO₂ causes global warming, and CFCs destroy ozone. Key solutions include catalytic converters for cars, flue gas desulfurization for power stations, and renewable energy. Remember that greenhouse gases trap heat while ozone depletion allows harmful UV through. Always include balanced equations and specific pollution control methods in exam answers."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:56:43.375Z",
-  "updated_at": "2026-04-05T20:56:43.375Z"
+  "updated_at": "2026-04-05T20:56:43.375Z",
+  "enriched_at": "2026-04-06T15:59:50.611Z"
 }

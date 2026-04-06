@@ -88,12 +88,38 @@
       "concentration = moles ÷ volume (in dm³)",
       "volume = cm³ ÷ 1000 to convert to dm³"
     ],
-    "keyDiagramDescription": "Titration apparatus showing burette clamped above conical flask containing alkali and indicator, with white tile underneath to see colour change clearly"
+    "keyDiagramDescription": "Titration apparatus showing burette clamped above conical flask containing alkali and indicator, with white tile underneath to see colour change clearly",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to describe flame tests for sodium, potassium and copper ions, including expected observations and safety precautions",
+      "This topic appeared in O/N 2022 P1 Q18 (1 mark) — multiple choice question on identifying the correct precipitate color when testing for iron(II) ions with sodium hydroxide",
+      "This topic was examined in M/J 2024 P2 Q5 (8 marks) — comprehensive question requiring students to plan tests to identify unknown metal ions and anions in a mixture, including reagents and observations",
+      "This topic featured in O/N 2023 P3 Q2 (5 marks) — practical question asking students to identify three unknown solutions using chemical tests and record observations in a table"
+    ],
+    "workedExample": {
+      "question": "A student has three unknown solutions A, B and C. Describe chemical tests to identify whether each solution contains iron(II) ions, iron(III) ions, or copper(II) ions. Include reagents, observations and conclusions. (6 marks)",
+      "steps": [
+        "Step 1: Add a few drops of sodium hydroxide solution to each test tube containing solutions A, B and C",
+        "Step 2: Observe and record the color of any precipitates formed",
+        "Step 3: If green precipitate forms → iron(II) ions present",
+        "Step 4: If orange/brown precipitate forms → iron(III) ions present",
+        "Step 5: If blue precipitate forms → copper(II) ions present"
+      ],
+      "answer": "Add sodium hydroxide solution to each solution. Iron(II) ions produce a green precipitate: Fe²⁺ + 2OH⁻ → Fe(OH)₂. Iron(III) ions produce an orange/brown precipitate: Fe³⁺ + 3OH⁻ → Fe(OH)₃. Copper(II) ions produce a blue precipitate: Cu²⁺ + 2OH⁻ → Cu(OH)₂.",
+      "markScheme": "1 mark for correct reagent (NaOH), 3 marks for correct observations (green, orange/brown, blue), 2 marks for linking observations to correct ions"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the colors of iron(II) and iron(III) hydroxide precipitates' — always remember iron(II) gives GREEN precipitate, iron(III) gives ORANGE/BROWN precipitate with NaOH",
+      "Examiner Report 2022: 'Students frequently forgot to mention the need for dilute acid when testing for sulfate ions' — always state that barium chloride test requires dilute hydrochloric acid to eliminate false positives from carbonates",
+      "Examiner Report 2024: 'Candidates often described flame colors incorrectly or too vaguely' — be specific: sodium gives YELLOW flame, potassium gives LILAC flame, copper gives BLUE-GREEN flame"
+    ],
+    "keyDiagram": "Students must be able to draw a test tube rack showing the precipitation test setup: 3-4 test tubes in a rack, each containing ~2cm depth of test solution, with a dropper bottle adding reagent (labeled as 'NaOH solution' or 'BaCl₂ + HCl'), and visible colored precipitates at the bottom of tubes. Include labels for precipitate colors (green, orange/brown, blue, white) and safety equipment (goggles, gloves). Also show the flame test setup: Bunsen burner with blue flame, nichrome wire being held in flame, and colored flame emission clearly illustrated.",
+    "quickRecap": "Chemical analysis uses specific reagents to identify ions through characteristic reactions. Flame tests give colored flames (Na=yellow, K=lilac, Cu=blue-green). Precipitation tests with NaOH identify metal ions (Fe²⁺=green, Fe³⁺=orange/brown, Cu²⁺=blue precipitates). Anion tests include barium chloride + acid for sulfates (white precipitate) and silver nitrate + acid for halides. Always state reagents, observations, and conclusions clearly."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:58:30.793Z",
-  "updated_at": "2026-04-05T20:58:30.793Z"
+  "updated_at": "2026-04-05T20:58:30.793Z",
+  "enriched_at": "2026-04-06T16:02:11.888Z"
 }

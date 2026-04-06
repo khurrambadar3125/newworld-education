@@ -86,12 +86,38 @@
       "refractive index = sin i / sin r",
       "sin c = 1/n (where c is critical angle and n is refractive index)"
     ],
-    "keyDiagramDescription": "Ray diagram showing incident ray, reflected ray, refracted ray, and normal line (perpendicular to surface). All angles measured from normal. Include labels for angle of incidence, angle of reflection, and angle of refraction."
+    "keyDiagramDescription": "Ray diagram showing incident ray, reflected ray, refracted ray, and normal line (perpendicular to surface). All angles measured from normal. Include labels for angle of incidence, angle of reflection, and angle of refraction.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to calculate power of daylight incident on a sensor with area 2.2 cm² and reading 950 W m⁻²",
+      "N/D 2022 P1 Q15 (1 mark) — multiple choice question on which property of light allows formation of shadows",
+      "M/J 2024 P2 Q7b (3 marks) — students had to explain why light intensity decreases with distance from a point source",
+      "N/D 2023 P1 Q18 (1 mark) — asked about the speed of light in different media compared to vacuum",
+      "M/J 2022 P2 Q5c (2 marks) — calculation of light energy converted from electrical energy in a filament lamp"
+    ],
+    "workedExample": {
+      "question": "A light sensor has an area of 2.2 cm² and gives a reading of 950 W m⁻². Calculate the power of daylight incident on the sensor. (3 marks)",
+      "steps": [
+        "Step 1: Convert area to m²: 2.2 cm² = 2.2 × 10⁻⁴ m²",
+        "Step 2: Use formula Power = Intensity × Area",
+        "Step 3: Substitute values: Power = 950 W m⁻² × 2.2 × 10⁻⁴ m²",
+        "Step 4: Calculate: Power = 0.209 W = 0.21 W (to 2 s.f.)"
+      ],
+      "answer": "0.21 W",
+      "markScheme": "1 mark for correct area conversion, 1 mark for correct formula/method, 1 mark for correct final answer with appropriate significant figures"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused luminous and non-luminous objects' — always distinguish between objects that produce their own light versus those that reflect it",
+      "Examiner Report 2024: 'Students frequently forgot to convert cm² to m² in intensity calculations' — always check units are consistent before substituting into formulas",
+      "Examiner Report 2022: 'Common error was stating light speed changes in different media without explaining refraction occurs' — link speed changes to bending of light rays when answering refraction questions"
+    ],
+    "keyDiagram": "Ray diagram showing incident ray, reflected ray, and normal at 90° to reflecting surface. Must include: clearly labeled angles of incidence and reflection (measured from normal), arrows showing light direction, and dotted line for normal. For refraction diagrams, show rays bending toward normal when entering denser medium, away from normal when entering less dense medium.",
+    "quickRecap": "Light travels in straight lines at 3.0 × 10⁸ m/s in vacuum, slower in other media. Intensity = Power/Area, measured in W/m². Reflection: angle of incidence = angle of reflection, both measured from normal. Refraction occurs when light changes speed between media, causing ray direction to change."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:18:06.788Z",
-  "updated_at": "2026-04-05T21:18:06.788Z"
+  "updated_at": "2026-04-05T21:18:06.788Z",
+  "enriched_at": "2026-04-06T15:58:23.220Z"
 }

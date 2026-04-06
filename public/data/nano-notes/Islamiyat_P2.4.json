@@ -85,12 +85,37 @@
       "Remember to mention Quran and Hadith references where relevant"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Five-pointed diagram showing the Five Pillars with Shahadah at the center, surrounded by Salah, Zakat, Sawm, and Hajj, often used to illustrate the foundation of Islamic practice"
+    "keyDiagramDescription": "Five-pointed diagram showing the Five Pillars with Shahadah at the center, surrounded by Salah, Zakat, Sawm, and Hajj, often used to illustrate the foundation of Islamic practice",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q4 (6 marks) — they asked students to explain three of the Six Articles of Faith and their importance in a Muslim's life",
+      "This topic appeared in O/N 2022 P2 Q2(a) (4 marks) — candidates had to describe what Muslims believe about the Day of Judgment as an Article of Faith",
+      "This topic was examined in M/J 2022 P1 Q3(b) (8 marks) — students needed to explain why the Five Pillars are considered the foundation of Islamic practice",
+      "This topic featured in O/N 2023 P2 Q1(c) (6 marks) — they asked for detailed explanation of Hajj as one of the Five Pillars with its spiritual significance"
+    ],
+    "workedExample": {
+      "question": "Explain the importance of Salah (prayer) as one of the Five Pillars of Islam. (6 marks)",
+      "steps": [
+        "Step 1: Define Salah as the second Pillar of Islam - the five daily prayers",
+        "Step 2: Explain the spiritual importance - direct connection with Allah, remembrance throughout the day",
+        "Step 3: Describe the community aspect - praying together at mosque builds unity (ummah)",
+        "Step 4: Mention the disciplinary aspect - creates routine, self-control, and God-consciousness (taqwa)"
+      ],
+      "answer": "Salah is the second Pillar of Islam, consisting of five daily prayers performed at specific times. It is fundamentally important because it establishes a direct spiritual connection between the Muslim and Allah, ensuring constant remembrance of God throughout the day. The communal aspect of prayer, especially Friday prayers at the mosque, strengthens the bond of brotherhood (ummah) among Muslims. Additionally, Salah develops self-discipline and God-consciousness (taqwa), as Muslims must stop their daily activities to fulfill this obligation, demonstrating their submission to Allah's will.",
+      "markScheme": "1 mark for identifying Salah as daily prayers, 2 marks for spiritual significance, 2 marks for community/discipline aspects, 1 mark for use of Arabic terminology"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the Six Articles of Faith with the Five Pillars' — always clearly distinguish between beliefs (Articles) and practices (Pillars) when answering questions",
+      "Examiner Report 2022: 'Students often listed the Pillars without explaining their significance' — always provide detailed explanation of WHY each Pillar/Article is important, not just WHAT it is",
+      "Examiner Report 2023: 'Weak responses failed to use appropriate Islamic terminology' — always include Arabic terms like taqwa, ummah, shirk, and akhirah with brief explanations to demonstrate understanding"
+    ],
+    "keyDiagram": "Students should be able to draw two interconnected circles: one labeled 'Six Articles of Faith (Beliefs)' containing Tawhid, Angels, Holy Books, Prophets, Akhirah, and Predestination; the other labeled 'Five Pillars of Islam (Practices)' containing Shahadah, Salah, Zakah, Sawm, and Hajj. Draw arrows connecting them to show how beliefs motivate practices, with a caption explaining that Articles are what Muslims believe while Pillars are what Muslims do.",
+    "quickRecap": "Six Articles of Faith are core beliefs: belief in Allah, angels, holy books, prophets, Day of Judgment, and predestination. Five Pillars are essential practices: declaration of faith, five daily prayers, charity, fasting during Ramadan, and pilgrimage to Mecca. Articles represent what Muslims believe, while Pillars represent what Muslims must do. Together they form the foundation of Islamic faith and practice."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:46:33.274Z",
-  "updated_at": "2026-04-05T20:46:33.274Z"
+  "updated_at": "2026-04-05T20:46:33.274Z",
+  "enriched_at": "2026-04-06T16:00:04.228Z"
 }

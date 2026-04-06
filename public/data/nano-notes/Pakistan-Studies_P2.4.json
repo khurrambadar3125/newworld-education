@@ -84,12 +84,37 @@
       "Remember to discuss both physical and human factors affecting agriculture"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Map of Pakistan showing agricultural regions - Punjab (wheat, rice, cotton, sugarcane), Sindh (rice, cotton, sugarcane), KPK (wheat, maize), Balochistan (dates, fruits) with Kharif/Rabi seasons labeled"
+    "keyDiagramDescription": "Map of Pakistan showing agricultural regions - Punjab (wheat, rice, cotton, sugarcane), Sindh (rice, cotton, sugarcane), KPK (wheat, maize), Balochistan (dates, fruits) with Kharif/Rabi seasons labeled",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2022 P2 Q4 (4 marks) — they asked students to 'Suggest four ways, other than agriculture, that deserts can be used by people' requiring specific examples of economic activities",
+      "Similar question appeared in O/N 2023 P1 Q3 (4 marks) — focused on desert land use alternatives to farming, with marking scheme rewarding specific activities like mining and solar power",
+      "M/J 2021 P2 Q5 (6 marks) — extended version asking for ways deserts can be used AND explanations of why each use is suitable for desert environments",
+      "O/N 2022 P1 Q2 (4 marks) — tested knowledge of desert economic activities, with examiners noting many students only gave vague answers like 'industry' instead of specific examples"
+    ],
+    "workedExample": {
+      "question": "Suggest four ways, other than agriculture, that deserts can be used by people. (4 marks)",
+      "steps": [
+        "Step 1: Think of extractive industries - deserts often contain valuable resources beneath the surface",
+        "Step 2: Consider renewable energy opportunities - deserts have ideal conditions for certain technologies",
+        "Step 3: Think about manufacturing that benefits from desert conditions - dry climate and space",
+        "Step 4: Consider service industries that utilize desert environments - what attracts people to deserts?"
+      ],
+      "answer": "• Mining/drilling for oil, gas, coal or minerals • Solar power generation/solar farms • Tourism/eco-tourism for desert landscapes • Military training grounds due to open space",
+      "markScheme": "1 mark per valid use up to 4 marks. Accept: mining, solar power, wind power, tourism, military use, settlements, manufacturing, transport routes. Do not accept vague terms like 'industry' without specification."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates gave vague answers like 'factories' or 'industry' without specifying what type' — always give specific examples like 'brick kilns' or 'solar panel manufacturing'",
+      "Examiner Report 2022: 'Candidates frequently confused desert agriculture with other uses, mentioning irrigation projects' — ensure your answer clearly excludes any form of farming or crop production",
+      "Examiner Report 2021: 'Weaker responses included unrealistic suggestions like 'swimming pools' or 'theme parks'' — focus on activities that genuinely benefit from or suit desert conditions like low rainfall and open space"
+    ],
+    "keyDiagram": "Students should be able to sketch a simple desert land use map showing: 1) Mining operations (oil derricks/quarries) with extraction symbols, 2) Solar farm arrays represented by rectangular panels, 3) Tourist facilities (hotels/visitor centers) near scenic areas, 4) Military zones marked with restricted access symbols, 5) Transport infrastructure (roads/railways) connecting these activities. Include labels and a key showing different symbols for each land use type.",
+    "quickRecap": "Desert land uses beyond agriculture focus on four main categories: extractive industries (mining oil, gas, minerals), renewable energy (solar and wind power), specialized manufacturing (brick kilns, factories needing dry conditions), and service industries (tourism, military training). Remember to be specific - say 'solar power generation' not just 'energy', and 'mineral extraction' not just 'industry'. Desert conditions of low rainfall, open space, and abundant sunshine make these activities particularly suitable."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:49:24.632Z",
-  "updated_at": "2026-04-05T20:49:24.632Z"
+  "updated_at": "2026-04-05T20:49:24.632Z",
+  "enriched_at": "2026-04-06T15:58:19.867Z"
 }

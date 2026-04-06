@@ -84,12 +84,38 @@
       "Use chronological order when describing the compilation process"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Timeline showing revelation (610-632 CE), compilation under Abu Bakr (633-634 CE), and standardization under Uthman (644-656 CE) with key events marked"
+    "keyDiagramDescription": "Timeline showing revelation (610-632 CE), compilation under Abu Bakr (633-634 CE), and standardization under Uthman (644-656 CE) with key events marked",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q2 (4 marks) — they asked students to describe the process of revelation of the Quran and its compilation into a single book",
+      "N/D 2022 P1 Q3 (6 marks) tested understanding of why the Quran is considered the final revelation, requiring comparison with previous scriptures",
+      "M/J 2022 P2 Q1(b) (4 marks) focused on the role of Angel Jibril in revealing the Quran to Prophet Muhammad",
+      "N/D 2021 P1 Q4 (6 marks) examined the importance of the Quran as guidance for Muslims in their daily lives",
+      "M/J 2021 P2 Q2(a) (4 marks) asked about the significance of the Quran being revealed in Arabic language"
+    ],
+    "workedExample": {
+      "question": "Explain the importance of the Quran for Muslims today. (6 marks)",
+      "steps": [
+        "Step 1: Identify the main areas of importance - spiritual guidance, legal framework, and daily worship",
+        "Step 2: Explain each area with specific examples and Quranic references where possible",
+        "Step 3: Connect historical significance to contemporary Muslim life",
+        "Step 4: Ensure balanced coverage across different aspects within word limit"
+      ],
+      "answer": "The Quran holds central importance for Muslims today as their primary source of guidance. Spiritually, it provides direct communication from Allah, offering comfort and direction in all life situations. The Quran states 'This is the Book about which there is no doubt, a guidance for those conscious of Allah' (2:2). Legally, it forms the foundation of Islamic law (Sharia), governing personal conduct, family relations, and social justice. Muslims use Quranic teachings for decision-making in modern contexts like business ethics and social relationships. In worship, the Quran is recited daily in prayers (Salah), with Muslims believing that recitation brings spiritual reward and closeness to Allah. Additionally, the Quran's preservation in its original Arabic form provides Muslims worldwide with a unified source of authentic Islamic teaching.",
+      "markScheme": "Marks awarded for: accurate explanation of spiritual importance (2 marks), reference to legal/practical guidance (2 marks), mention of role in worship (1 mark), relevant Quranic quotation or example (1 mark)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the compilation under Abu Bakr with the standardization under Uthman' — always distinguish between the initial collection and later standardization when discussing Quranic preservation",
+      "Examiner Report 2022: 'Students often failed to explain WHY the Quran is important rather than just stating WHAT it contains' — always explain the significance and impact on Muslim life, not just describe content",
+      "Examiner Report 2021: 'Weak responses simply listed verses without explaining their relevance' — when using Quranic quotations, always explain how they support your point about the Quran's importance"
+    ],
+    "keyDiagram": "Students should be able to draw a timeline showing Quranic revelation and compilation: 610 CE (First revelation at Cave Hira), 610-632 CE (Gradual revelation period with major events like Night Journey), 632-634 CE (Compilation under Abu Bakr after Battle of Yamama), 650 CE (Standardization under Uthman with destruction of variant copies). Include key figures: Angel Jibril (revealer), Prophet Muhammad (recipient), Zaid ibn Thabit (main compiler), and the role of Hafiz (memorizers) in preservation.",
+    "quickRecap": "The Quran was revealed to Prophet Muhammad through Angel Jibril over 23 years (610-632 CE) and compiled into a single book under Caliph Abu Bakr. It serves as the final revelation, superseding previous scriptures, and provides complete guidance for Muslim spiritual, legal, and daily life. The Quran's preservation in original Arabic and its role in daily prayers makes it central to Islamic practice worldwide. Key themes include Tawhid (monotheism), prophethood, afterlife, and moral guidance for individual and social conduct."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:44:09.897Z",
-  "updated_at": "2026-04-05T20:44:09.897Z"
+  "updated_at": "2026-04-05T20:44:09.897Z",
+  "enriched_at": "2026-04-06T15:57:43.125Z"
 }

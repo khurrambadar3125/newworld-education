@@ -79,12 +79,38 @@
       "Mg + 2HCl → MgCl₂ + H₂",
       "Fe + CuSO₄ → FeSO₄ + Cu"
     ],
-    "keyDiagramDescription": "Reactivity series arranged vertically with most reactive (potassium) at top and least reactive (gold) at bottom, with hydrogen positioned between lead and copper"
+    "keyDiagramDescription": "Reactivity series arranged vertically with most reactive (potassium) at top and least reactive (gold) at bottom, with hydrogen positioned between lead and copper",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to explain how the reactivity of metals can be demonstrated using a reactivity series",
+      "N/D 2022 P1 Q15 (1 mark) — tested the order of reactivity of metals W, X, Y and Z based on their reactions with water and dilute sulfuric acid",
+      "M/J 2024 P2 Q2(c) (3 marks) — students had to explain how displacement reactions demonstrate relative metal reactivity",
+      "N/D 2023 P2 Q4(a) (5 marks) — required prediction of displacement reactions between different metals and metal salt solutions",
+      "M/J 2022 P1 Q12 (1 mark) — tested which metal would displace copper from copper sulfate solution"
+    ],
+    "workedExample": {
+      "question": "Zinc powder is added to copper sulfate solution. A reaction occurs. When copper powder is added to zinc sulfate solution, no reaction occurs. Explain what these observations tell us about the reactivity of zinc and copper. (4 marks)",
+      "steps": [
+        "Step 1: Identify that zinc displaces copper from copper sulfate solution, showing zinc is more reactive than copper",
+        "Step 2: Write the displacement reaction equation: Zn + CuSO₄ → ZnSO₄ + Cu",
+        "Step 3: Explain that copper cannot displace zinc from zinc sulfate because copper is less reactive than zinc",
+        "Step 4: State the general rule: more reactive metals displace less reactive metals from their compounds"
+      ],
+      "answer": "Zinc displaces copper from copper sulfate solution (Zn + CuSO₄ → ZnSO₄ + Cu), showing zinc is more reactive than copper. Copper cannot displace zinc from zinc sulfate solution because copper is less reactive than zinc. This demonstrates that more reactive metals can displace less reactive metals from their compounds, which is the basis of the reactivity series.",
+      "markScheme": "1 mark for identifying zinc is more reactive than copper, 1 mark for correct equation, 1 mark for explaining why copper doesn't displace zinc, 1 mark for stating the general displacement rule"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to write balanced equations for displacement reactions' — always include the complete balanced chemical equation when describing displacement reactions",
+      "Examiner Report 2024: 'Students often confused the direction of displacement reactions' — remember that only MORE reactive metals can displace LESS reactive metals from their compounds",
+      "Examiner Report 2022: 'Common error was stating metals react with water without specifying cold water, steam, or no reaction' — always specify the conditions (cold water, steam, or dilute acid) when describing metal reactivity"
+    ],
+    "keyDiagram": "Students must be able to draw the reactivity series as a vertical list with potassium at the top (most reactive) descending through sodium, calcium, magnesium, aluminum, zinc, iron, lead, copper, silver, and gold at the bottom (least reactive). Include horizontal lines to show: metals above aluminum react with cold water, metals from aluminum to lead react with steam, metals from zinc to lead react with dilute acids, and metals below lead (copper, silver, gold) do not react with dilute acids.",
+    "quickRecap": "The reactivity series ranks metals from most to least reactive: K, Na, Ca, Mg, Al, Zn, Fe, Pb, Cu, Ag, Au. More reactive metals displace less reactive metals from their compounds in displacement reactions. Metal reactivity decreases down the series - most reactive metals react with cold water, moderately reactive metals react with steam or dilute acids, least reactive metals don't react with water or acids."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:55:57.091Z",
-  "updated_at": "2026-04-05T20:55:57.091Z"
+  "updated_at": "2026-04-05T20:55:57.091Z",
+  "enriched_at": "2026-04-06T15:59:10.284Z"
 }

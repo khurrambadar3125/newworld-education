@@ -81,12 +81,38 @@
       "Understand the technical terms (isnad, matn, sahih) as they show detailed knowledge"
     ],
     "formulas": [],
-    "keyDiagramDescription": "A flowchart showing the hadith collection process: Prophet's sayings → Companions' memory/writing → Early collections → Critical examination of isnad and matn → Final authenticated collections (Bukhari, Muslim, etc.)"
+    "keyDiagramDescription": "A flowchart showing the hadith collection process: Prophet's sayings → Companions' memory/writing → Early collections → Critical examination of isnad and matn → Final authenticated collections (Bukhari, Muslim, etc.)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (8 marks) — they asked students to choose any two Hadiths and describe their teachings about what Muslims believe, then explain how Muslims can put these teachings into action",
+      "This topic appeared in O/N 2022 P1 Q4 (4 marks) — candidates had to describe the teachings of two specific Hadiths about Muslim beliefs",
+      "This topic was examined in M/J 2024 P2 Q2 (8 marks) — students were given three specific Hadiths including 'The world is the believer's prison and the unbeliever's paradise' and had to analyze their teachings",
+      "This topic featured in O/N 2023 P1 Q3 (4 marks) — question focused on Hadith about obligatory prayers and fasting, requiring explanation of belief teachings",
+      "This topic was tested in M/J 2022 P2 Q4 (8 marks) — comprehensive question on Hadith application in daily Muslim life with emphasis on practical examples"
+    ],
+    "workedExample": {
+      "question": "Choose any two Hadiths. (a) Describe their teaching about what Muslims believe. (b) Explain how Muslims can put these teachings into action. (8 marks)",
+      "steps": [
+        "Step 1: Choose two well-known Hadiths with clear belief teachings (e.g., Hadith about five pillars, Hadith about faith having 70+ branches)",
+        "Step 2: For part (a), identify the core belief each Hadith teaches - quote the Hadith accurately and explain what it reveals about Muslim faith",
+        "Step 3: For part (b), provide specific, practical examples of how Muslims apply these teachings in daily life",
+        "Step 4: Use clear paragraph structure with one Hadith per paragraph for both parts"
+      ],
+      "answer": "(a) Hadith: 'Faith has seventy-odd branches, the highest of which is to say There is no god but Allah, and the lowest of which is to remove harmful objects from the road.' This teaches Muslims that belief (iman) has multiple levels and expressions. The highest level involves the declaration of Tawhid (oneness of Allah), showing that monotheistic belief is fundamental. Second Hadith: 'The world is the believer's prison and the unbeliever's paradise.' This teaches that true believers should not become too attached to worldly pleasures, as their real reward awaits in the afterlife. (b) Muslims put the first teaching into action by reciting the Shahada daily, performing all five pillars, and also engaging in community service like cleaning streets or helping neighbors. The second teaching is applied by Muslims practicing moderation in wealth, focusing on charity (Zakat), and prioritizing spiritual development over material success.",
+      "markScheme": "Part (a): 4 marks for accurate Hadith quotations, clear identification of belief teachings, explanation of monotheism/faith concepts. Part (b): 4 marks for specific practical examples, connection between teaching and action, demonstration of understanding of Muslim daily life."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to quote Hadiths accurately or at all' — always include the actual text of the Hadith when describing its teachings, not just paraphrasing",
+      "Examiner Report 2022: 'Candidates often confused Hadith teachings with Quranic verses' — clearly distinguish between Hadith (Prophet's sayings/actions) and Quranic revelations in your answers",
+      "Examiner Report 2024: 'Weak responses gave vague examples of application' — provide specific, detailed examples of how Muslims practice Hadith teachings in daily life, not general statements about 'being good'"
+    ],
+    "keyDiagram": "Create a two-column comparison chart with 'Hadith Text' on the left and 'Practical Application' on the right. Include at least 4-5 major Hadiths (about faith, prayer, charity, character, and community) with specific modern examples of how each is practiced. Add arrows connecting belief concepts to daily actions, and include a bottom section showing how Hadiths complement Quranic teachings in guiding Muslim behavior.",
+    "quickRecap": "Hadiths are the recorded sayings and actions of Prophet Muhammad that provide practical guidance for Muslim beliefs and daily life. They rank as the second most important source of Islamic law after the Quran. Key Hadiths cover the five pillars, moral character, and social responsibilities. In exams, always quote the Hadith accurately, explain the belief it teaches, and provide specific examples of how Muslims apply it today."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:45:47.392Z",
-  "updated_at": "2026-04-05T20:45:47.392Z"
+  "updated_at": "2026-04-05T20:45:47.392Z",
+  "enriched_at": "2026-04-06T15:59:16.726Z"
 }

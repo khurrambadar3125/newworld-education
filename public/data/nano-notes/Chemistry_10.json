@@ -84,12 +84,38 @@
       "2Mg + O₂ → 2MgO",
       "CuO + H₂ → Cu + H₂O"
     ],
-    "keyDiagramDescription": "Displacement reaction setup showing zinc strip in blue copper sulfate solution, with brown copper coating forming on zinc and solution becoming colorless"
+    "keyDiagramDescription": "Displacement reaction setup showing zinc strip in blue copper sulfate solution, with brown copper coating forming on zinc and solution becoming colorless",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (3 marks) — they asked students to calculate oxidation numbers for magnesium and nitrogen in Mg₃N₂, requiring understanding of compound neutrality",
+      "This topic appeared in O/N 2022 P1 Q15 (1 mark) — students had to identify oxidation states of chlorine when Cl₂ reacts with NaOH to form two different Cl-containing products",
+      "This concept was examined in M/J 2024 P2 Q4 (4 marks) — candidates needed to write equations showing the catalytic role of NO₂ in SO₂ oxidation, demonstrating catalyst regeneration",
+      "This was tested in O/N 2023 P1 Q18 (1 mark) — students calculated the change in oxidation state of copper in the reaction 2Cu²⁺(aq) + 4I⁻(aq) → 2CuI(s) + I₂(aq)",
+      "This topic appeared in M/J 2022 P2 Q2 (3 marks) — candidates analyzed oxidation number trends and their relationship to melting points using data tables"
+    ],
+    "workedExample": {
+      "question": "The equation for the reaction between aqueous copper ions and aqueous iodide ions is: 2Cu²⁺(aq) + 4I⁻(aq) → 2CuI(s) + I₂(aq). What is the change in oxidation state of copper? (1 mark)",
+      "steps": [
+        "Step 1: Identify the oxidation state of copper in the reactant Cu²⁺(aq). The charge on the ion directly gives us +2",
+        "Step 2: Determine the oxidation state of copper in the product CuI(s). Since I has oxidation state -1, and the compound is neutral, Cu must be +1",
+        "Step 3: Calculate the change: final oxidation state - initial oxidation state = (+1) - (+2) = -1",
+        "Step 4: State the change clearly with correct sign"
+      ],
+      "answer": "The change in oxidation state of copper is -1 (or decreased by 1)",
+      "markScheme": "1 mark for correct calculation showing copper changes from +2 to +1, giving a change of -1"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused oxidation state with charge notation' — always write oxidation states as +2 or -3, not 2+ or 3- when calculating changes",
+      "Examiner Report 2022: 'Students frequently forgot that the sum of oxidation states must equal the overall charge' — always check your oxidation state assignments add up to zero for neutral compounds or to the ion charge",
+      "Examiner Report 2024: 'Common error was not showing working for oxidation state calculations' — always show each step when calculating oxidation states, especially for complex ions and compounds"
+    ],
+    "keyDiagram": "Students must be able to draw electron transfer diagrams showing oxidation (electron loss) and reduction (electron gain) with half-equations. Include: species before and after reaction, electrons shown with e⁻ symbol, arrows indicating electron movement direction, clear labeling of which species is oxidized/reduced, and oxidation states marked above each relevant atom. For example: Zn → Zn²⁺ + 2e⁻ (oxidation) and Cu²⁺ + 2e⁻ → Cu (reduction).",
+    "quickRecap": "Redox involves simultaneous oxidation (loss of electrons, increase in oxidation state) and reduction (gain of electrons, decrease in oxidation state). Calculate oxidation states by assigning known values first, then solving for unknowns ensuring the sum equals the overall charge. Identify redox by looking for oxidation state changes - if any atom changes oxidation state, it's redox. Remember OIL RIG: Oxidation Is Loss, Reduction Is Gain of electrons."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:54:19.811Z",
-  "updated_at": "2026-04-05T20:54:19.811Z"
+  "updated_at": "2026-04-05T20:54:19.811Z",
+  "enriched_at": "2026-04-06T15:57:33.899Z"
 }

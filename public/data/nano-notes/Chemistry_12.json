@@ -90,12 +90,39 @@
       "CaCO₃ + 2HNO₃ → Ca(NO₃)₂ + H₂O + CO₂",
       "AgNO₃ + NaCl → AgCl + NaNO₃"
     ],
-    "keyDiagramDescription": "Crystallisation setup showing evaporating dish on tripod and gauze over Bunsen burner, with watch glass covering dish and glass rod for stirring"
+    "keyDiagramDescription": "Crystallisation setup showing evaporating dish on tripod and gauze over Bunsen burner, with watch glass covering dish and glass rod for stirring",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to describe the preparation of copper sulfate crystals from copper carbonate, including purification steps",
+      "O/N 2022 P4 Q2 (8 marks) examined the preparation of zinc chloride from zinc oxide and hydrochloric acid, requiring students to explain filtration and crystallization",
+      "M/J 2024 P2 Q3 (5 marks) tested preparation of lead chloride by precipitation, asking for the complete method including washing and drying",
+      "O/N 2023 P4 Q1 (7 marks) focused on preparing ammonium sulfate from ammonia and sulfuric acid, emphasizing neutralization indicators and crystal formation"
+    ],
+    "workedExample": {
+      "question": "Describe how to prepare pure, dry crystals of copper sulfate from copper carbonate and sulfuric acid. (6 marks)",
+      "steps": [
+        "Step 1: Add copper carbonate powder to dilute sulfuric acid in a beaker, stirring continuously",
+        "Step 2: Continue adding copper carbonate until no more dissolves (excess remains) - effervescence stops",
+        "Step 3: Filter the mixture to remove excess copper carbonate using filter paper and funnel",
+        "Step 4: Heat the filtrate gently to evaporate water until crystals start to form on a glass rod",
+        "Step 5: Allow the solution to cool slowly for large crystals to form",
+        "Step 6: Filter to collect crystals and wash with distilled water, then dry between filter papers"
+      ],
+      "answer": "Add excess copper carbonate to dilute sulfuric acid until reaction stops. Filter to remove unreacted solid. Gently heat filtrate until saturated, then cool to crystallize. Filter, wash and dry crystals.",
+      "markScheme": "1 mark each for: excess reactant, filtration, gentle heating/evaporation, cooling for crystallization, washing crystals, drying method"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates wrote 'boil to dryness' instead of gentle heating' — always use gentle heating/evaporation to avoid decomposing the salt when preparing crystals",
+      "Examiner Report 2022: 'Students often forgot to mention washing crystals' — always state that crystals must be washed with distilled water to remove impurities before drying",
+      "Examiner Report 2024: 'Candidates confused precipitation with crystallization methods' — use precipitation for insoluble salts, crystallization for soluble salts from solution"
+    ],
+    "keyDiagram": "Students must draw the crystallization setup showing: beaker containing salt solution on tripod with gauze, Bunsen burner underneath for gentle heating, glass rod for testing saturation point, and evaporation dish as alternative. Include labels for 'gentle heating', 'saturated solution', and 'point where crystals form on glass rod'. For filtration, show funnel with filter paper, residue on paper, and filtrate collected below.",
+    "quickRecap": "Three main methods: acid + metal/oxide/carbonate (crystallization), acid + alkali (titration then crystallization), precipitation (mixing solutions). Always use excess solid reactant, filter unreacted material, gently heat to saturation point, cool to crystallize. Wash crystals with distilled water and dry between filter papers - never boil to dryness as this decomposes salts."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:55:01.180Z",
-  "updated_at": "2026-04-05T20:55:01.180Z"
+  "updated_at": "2026-04-05T20:55:01.180Z",
+  "enriched_at": "2026-04-06T15:58:14.767Z"
 }

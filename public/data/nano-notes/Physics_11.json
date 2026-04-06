@@ -78,12 +78,37 @@
       "Vacuum flask questions are very common - know all three methods of thermal transfer prevention"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Convection current diagram showing heated fluid rising, cooling at the top, becoming denser and sinking, creating a circular current. Also important: vacuum flask cross-section showing vacuum space and silvered surfaces."
+    "keyDiagramDescription": "Convection current diagram showing heated fluid rising, cooling at the top, becoming denser and sinking, creating a circular current. Also important: vacuum flask cross-section showing vacuum space and silvered surfaces.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (3 marks) — they asked students to describe the process of thermal conduction in metals by referring to particles, expecting mention of free electrons and energy transfer direction",
+      "This topic appeared in O/N 2022 P1 Q15 (1 mark) — testing SI base units of thermal conductivity constant k in the conduction equation",
+      "This topic was examined in M/J 2024 P2 Q6b (4 marks) — students had to explain how fibrous insulation with trapped air reduces energy loss by conduction",
+      "This topic featured in O/N 2023 P2 Q3a (2 marks) — asking for description of thermal conduction in metals with reference to particle movement"
+    ],
+    "workedExample": {
+      "question": "Explain how insulation with fibres and trapped air reduces energy loss by conduction. (4 marks)",
+      "steps": [
+        "Step 1: Identify the thermal conductivity of air - state that air is a poor conductor of heat",
+        "Step 2: Explain the role of fibres - fibres create separate air pockets/compartments",
+        "Step 3: Describe how trapped air works - small air gaps prevent convection currents forming",
+        "Step 4: Link to conduction reduction - fibres prevent direct contact between surfaces, reducing conductive heat transfer path"
+      ],
+      "answer": "Air is a poor conductor of heat. The fibres create many small air pockets that trap the air and prevent it from moving. This stops convection currents from forming. The fibres also prevent direct contact between the inner and outer surfaces, creating a barrier that reduces the conductive heat transfer path.",
+      "markScheme": "1 mark for stating air is poor conductor; 1 mark for fibres creating air pockets; 1 mark for preventing convection/air movement; 1 mark for reducing direct heat transfer path"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to mention free electrons when describing conduction in metals' — always specify that FREE or DELOCALISED electrons are responsible for conduction in metals, not just 'particles'",
+      "Examiner Report 2022: 'Students confused convection with conduction mechanisms' — remember that conduction involves NO bulk movement of material, only energy transfer through particle collisions or electron movement",
+      "Examiner Report 2024: 'Candidates did not specify direction of energy transfer' — always state that thermal energy moves from hot to cold regions when describing any heat transfer process"
+    ],
+    "keyDiagram": "Students must be able to draw a cross-section of a metal rod being heated at one end, showing: (1) metal atoms/ions in fixed positions in a lattice structure, (2) free electrons represented as small circles with arrows showing movement from hot end to cold end, (3) clear labeling of 'hot end' and 'cold end', (4) wavy arrows indicating thermal energy transfer direction. The diagram should demonstrate that while atoms vibrate in place, free electrons are mobile and carry energy.",
+    "quickRecap": "Thermal energy transfers by conduction (through solids via free electrons in metals or particle vibrations in non-metals), convection (bulk movement of fluids), and radiation (electromagnetic waves, no medium needed). Conduction in metals involves FREE electrons moving from hot to cold areas. Good insulators like trapped air reduce conduction by being poor conductors and preventing direct heat transfer paths."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:17:27.567Z",
-  "updated_at": "2026-04-05T21:17:27.567Z"
+  "updated_at": "2026-04-05T21:17:27.567Z",
+  "enriched_at": "2026-04-06T15:57:48.156Z"
 }

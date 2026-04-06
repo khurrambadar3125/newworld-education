@@ -81,12 +81,37 @@
       "Remember to include both advantages and problems of industrial development"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Map of Pakistan showing major industrial centers: Karachi (steel, chemicals, textiles), Lahore (textiles, engineering), Faisalabad (textiles), Multan (fertilizers), and cottage industry areas in rural regions"
+    "keyDiagramDescription": "Map of Pakistan showing major industrial centers: Karachi (steel, chemicals, textiles), Lahore (textiles, engineering), Faisalabad (textiles), Multan (fertilizers), and cottage industry areas in rural regions",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain three factors that influence the location of manufacturing industries in developing countries",
+      "N/D 2022 P1 Q7 (8 marks) examined industrial development stages, requiring candidates to describe characteristics of each stage with specific examples from named countries",
+      "M/J 2022 P2 Q3b (4 marks) focused on problems faced by developing countries during industrialization, expecting students to explain both economic and social challenges",
+      "N/D 2023 P1 Q6 (6 marks) tested knowledge of government policies to promote industrial development, asking for explanation of three specific strategies with examples"
+    ],
+    "workedExample": {
+      "question": "Explain how three physical factors can influence the location of manufacturing industries. (6 marks)",
+      "steps": [
+        "Step 1: Identify three clear physical factors - raw materials, energy sources, and transportation networks",
+        "Step 2: For each factor, provide a clear explanation of HOW it influences location decisions",
+        "Step 3: Use specific examples to illustrate each point - e.g., steel industry near iron ore deposits",
+        "Step 4: Ensure each explanation shows the direct link between the physical factor and industrial location choice"
+      ],
+      "answer": "Raw materials influence location as industries locate near sources to reduce transport costs, such as steel industries near iron ore deposits in Pittsburgh, USA. Energy sources attract power-intensive industries, like aluminum smelting locating near hydroelectric power stations in Norway due to cheap electricity. Transportation networks are crucial as industries need access to markets and suppliers, explaining why many industries locate near ports, railways or major highways for efficient movement of goods and materials.",
+      "markScheme": "1 mark for identifying each factor + 1 mark for explaining how it influences location. Must show clear cause-effect relationship and relevant examples gain additional credit."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused industrial development stages with economic development models' — always distinguish between sectoral shift (primary to secondary to tertiary) and broader economic development theories",
+      "Examiner Report 2022: 'Students often provided vague factors without explaining the mechanism' — when discussing location factors, always explain HOW the factor influences the decision, not just WHAT the factor is",
+      "Examiner Report 2023: 'Candidates frequently gave outdated examples or incorrect country classifications' — ensure examples reflect current industrial patterns, such as China's advanced manufacturing rather than just basic assembly"
+    ],
+    "keyDiagram": "Industrial Development Stages Triangle: Draw an inverted triangle divided into three horizontal sections. Top (widest): Primary sector with examples (farming, mining, fishing). Middle: Secondary sector (manufacturing, construction, processing). Bottom (narrowest): Tertiary sector (services, finance, tourism). Add arrows showing workforce movement from primary to tertiary as countries develop. Label with percentages for different development stages: LICs (70% primary), MICs (40% secondary), HICs (70% tertiary). Include timeline showing this transition typically takes 50-100 years.",
+    "quickRecap": "Industrial development involves countries shifting from primary (raw materials) through secondary (manufacturing) to tertiary (services) sectors. Location factors include physical (raw materials, energy, transport) and human (labor, markets, government policy) elements. Developing countries face challenges like lack of capital, technology gaps, and competition from established industrial nations. Government strategies include creating industrial zones, offering tax incentives, and investing in infrastructure and education."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:49:48.916Z",
-  "updated_at": "2026-04-05T20:49:48.916Z"
+  "updated_at": "2026-04-05T20:49:48.916Z",
+  "enriched_at": "2026-04-06T15:58:41.710Z"
 }

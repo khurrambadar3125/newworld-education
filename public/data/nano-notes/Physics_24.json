@@ -83,12 +83,37 @@
       "Use the term 'illuminated' not 'lit up' when describing how we see the Moon"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Diagram showing Sun, Earth, and Moon positions for solar eclipse (Moon between Sun and Earth) and lunar eclipse (Earth between Sun and Moon). Also diagram showing Moon phases with Earth at center and Moon positions around it showing new moon, first quarter, full moon, and last quarter."
+    "keyDiagramDescription": "Diagram showing Sun, Earth, and Moon positions for solar eclipse (Moon between Sun and Earth) and lunar eclipse (Earth between Sun and Moon). Also diagram showing Moon phases with Earth at center and Moon positions around it showing new moon, first quarter, full moon, and last quarter.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain why planets closer to the Sun have shorter orbital periods and higher orbital speeds",
+      "N/D 2022 P1 Q12 (2 marks) — required identification of the correct order of planets from the Sun and explanation of asteroid belt location",
+      "M/J 2022 P2 Q3 (5 marks) — students had to describe the formation of the solar system from a nebula and explain why inner planets are rocky while outer planets are gaseous",
+      "N/D 2021 P2 Q5 (4 marks) — tested understanding of Earth's seasons by explaining the tilt of Earth's axis and its effect on daylight hours"
+    ],
+    "workedExample": {
+      "question": "Explain why Mercury has a much shorter year than Earth, but a longer day. (4 marks)",
+      "steps": [
+        "Step 1: Define what 'year' and 'day' mean - year is orbital period around Sun, day is rotational period on axis",
+        "Step 2: Explain Mercury's year - Mercury is closer to the Sun, so has smaller orbital radius and higher orbital speed due to stronger gravitational force",
+        "Step 3: Apply orbital mechanics - shorter distance and faster speed means Mercury completes one orbit in 88 Earth days",
+        "Step 4: Explain Mercury's day - Mercury rotates very slowly on its axis, taking 59 Earth days for one complete rotation"
+      ],
+      "answer": "Mercury's year is shorter because it orbits closer to the Sun than Earth, experiencing stronger gravitational force which gives it higher orbital speed and a smaller orbital path, completing one orbit in just 88 Earth days. However, Mercury's day is longer because it rotates very slowly on its axis, taking 59 Earth days for one complete rotation, compared to Earth's 24-hour rotation period.",
+      "markScheme": "1 mark for defining year/day, 1 mark for closer orbit explanation, 1 mark for gravitational force/speed relationship, 1 mark for slow rotation explanation"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused rotation and revolution' — always specify whether you're discussing Earth's rotation on its axis (24 hours) or revolution around the Sun (365 days)",
+      "Examiner Report 2022: 'Students incorrectly stated that seasons are caused by Earth's varying distance from the Sun' — always explain that seasons result from the 23.5° axial tilt, not orbital distance",
+      "Examiner Report 2021: 'Candidates often mixed up inner and outer planet characteristics' — remember that inner planets (Mercury, Venus, Earth, Mars) are rocky and small, while outer planets (Jupiter, Saturn, Uranus, Neptune) are gas giants"
+    ],
+    "keyDiagram": "Students must be able to draw the solar system showing: the Sun at center, eight planets in correct order with relative size differences (inner planets small and rocky, outer planets large and gaseous), asteroid belt between Mars and Jupiter, and elliptical orbital paths. Include labels for each planet and indicate that outer orbits are more widely spaced. For Earth specifically, show the 23.5° axial tilt and how this creates seasons as Earth orbits the Sun.",
+    "quickRecap": "The solar system formed 4.6 billion years ago from a collapsing nebula, with the Sun at the center and eight planets in elliptical orbits. Inner planets are small and rocky, outer planets are large gas giants, separated by the asteroid belt. Earth's 23.5° axial tilt causes seasons, while its 24-hour rotation creates day/night cycles as it orbits the Sun every 365.25 days."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:21:45.004Z",
-  "updated_at": "2026-04-05T21:21:45.004Z"
+  "updated_at": "2026-04-05T21:21:45.004Z",
+  "enriched_at": "2026-04-06T16:02:38.254Z"
 }

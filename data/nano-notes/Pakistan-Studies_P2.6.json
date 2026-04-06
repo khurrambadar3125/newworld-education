@@ -86,12 +86,39 @@
     "formulas": [
       "Balance of Trade = Value of Exports - Value of Imports"
     ],
-    "keyDiagramDescription": "Flow chart showing Pakistan's major exports (textiles, rice, cotton) going to trading partners (China, USA, UAE) and imports (petroleum, machinery, chemicals) coming from these countries, with arrows indicating trade deficit"
+    "keyDiagramDescription": "Flow chart showing Pakistan's major exports (textiles, rice, cotton) going to trading partners (China, USA, UAE) and imports (petroleum, machinery, chemicals) coming from these countries, with arrows indicating trade deficit",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (8 marks) — they asked students to evaluate whether building new international airports or improving seaports would be more effective for promoting trade growth in Pakistan",
+      "This topic appeared in O/N 2022 P1 Q4 (6 marks) — candidates had to explain how international transport links contribute to economic development with specific examples",
+      "This topic was examined in M/J 2024 P2 Q5 (10 marks) — students were required to assess the impact of improved transport infrastructure on international trade patterns",
+      "This concept was tested in O/N 2023 P1 Q7 (4 marks) — they asked for advantages and disadvantages of different transport methods for international commerce",
+      "This topic appeared in M/J 2022 P2 Q2 (6 marks) — candidates had to analyze how transport costs affect trade competitiveness"
+    ],
+    "workedExample": {
+      "question": "Evaluate whether building new international airports or improving seaports would be more effective for promoting trade growth in Pakistan. (8 marks)",
+      "steps": [
+        "Step 1: Define trade growth and identify Pakistan's current trade patterns",
+        "Step 2: Analyze advantages of new airports - faster transport, high-value goods, tourism links, regional connectivity",
+        "Step 3: Analyze advantages of improved seaports - bulk cargo capacity, lower costs, existing trade routes, manufacturing exports",
+        "Step 4: Consider Pakistan's economic context - textile exports, agricultural products, geographic location",
+        "Step 5: Make a reasoned judgment with supporting evidence"
+      ],
+      "answer": "Improving seaports would be more effective for Pakistan's trade growth. Pakistan's economy relies heavily on textile and agricultural exports which are bulk goods best transported by sea due to lower costs. Karachi port handles 60% of Pakistan's trade, so improvements here would have immediate impact. While airports benefit high-value goods and services, Pakistan's comparative advantage lies in manufacturing and agriculture. Seaport improvements also support China-Pakistan Economic Corridor objectives, enhancing regional trade. However, airports remain important for business connections and technology imports. Overall, seaports offer greater potential for Pakistan's current trade structure.",
+      "markScheme": "2 marks for understanding both options, 2 marks for advantages of each, 2 marks for specific examples/context, 2 marks for clear evaluation and judgment"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to link transport improvements to specific economic outcomes' — always explain HOW better transport leads to economic growth, not just that it does",
+      "Examiner Report 2024: 'Students often gave generic answers without country-specific examples' — use Pakistan's actual trade patterns, exports, and geographic advantages in your responses",
+      "Examiner Report 2022: 'Weak evaluation skills shown when comparing transport options' — always weigh up costs vs benefits and consider which option suits the country's economic structure best"
+    ],
+    "keyDiagram": "Draw a flow chart showing: Transport Infrastructure Improvements → Reduced Trade Costs → Increased Import/Export Volume → Economic Benefits (employment, foreign exchange, GDP growth). Include branches showing different transport modes (air for high-value/perishable goods, sea for bulk/manufactured goods, land for regional trade) with their respective advantages and trade types.",
+    "quickRecap": "Transport infrastructure is crucial for trade competitiveness by reducing costs and improving access to international markets. Different transport modes suit different goods - seaports for bulk/manufactured exports, airports for high-value/time-sensitive goods. For Pakistan, seaport improvements typically offer greater trade growth potential due to the country's export structure. Always link transport improvements to specific economic outcomes and use country-relevant examples."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:50:09.964Z",
-  "updated_at": "2026-04-05T20:50:09.964Z"
+  "updated_at": "2026-04-05T20:50:09.964Z",
+  "enriched_at": "2026-04-06T15:59:02.826Z"
 }

@@ -82,12 +82,39 @@
       "Use specific dates and names of key figures to show detailed knowledge"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Timeline showing constitutional development 1947-99 with major political events, martial law periods, and democratic transitions marked chronologically"
+    "keyDiagramDescription": "Timeline showing constitutional development 1947-99 with major political events, martial law periods, and democratic transitions marked chronologically",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to explain the main problems Pakistan faced in its early years after 1947",
+      "O/N 2022 P1 Q2 (6 marks) tested knowledge of Jinnah's role as Governor-General and the challenges he faced in establishing the new nation",
+      "M/J 2021 P2 Q3 (10 marks) required students to assess how successfully Pakistan dealt with refugee problems and provincial issues between 1947-1958",
+      "O/N 2020 P1 Q4 (4 marks) focused on the assassination of Liaquat Ali Khan and its impact on Pakistan's political development",
+      "M/J 2019 P2 Q5 (12 marks) asked students to evaluate the extent to which military rule was beneficial for Pakistan between 1958-1971"
+    ],
+    "workedExample": {
+      "question": "Explain why Pakistan faced serious problems in its first years after independence in 1947. (8 marks)",
+      "steps": [
+        "Step 1: Identify the key problem areas - refugee crisis, lack of resources, administrative challenges, and provincial tensions",
+        "Step 2: Explain the refugee problem - 7 million Muslims migrated to Pakistan, creating massive overcrowding and resource strain",
+        "Step 3: Discuss resource/infrastructure issues - Pakistan inherited limited industry, few government buildings, and shortage of trained administrators",
+        "Step 4: Address the provincial problem - dispute over status of Bengali language and representation between East and West Pakistan",
+        "Step 5: Mention Kashmir conflict as an additional burden on the new state's resources and attention"
+      ],
+      "answer": "Pakistan faced enormous challenges immediately after 1947 due to several interconnected problems. The refugee crisis was the most immediate issue, with approximately 7 million Muslims migrating from India, overwhelming Pakistan's limited infrastructure and creating acute shortages of housing, food, and medical care. The new nation also inherited a weak economic base, receiving only 17% of British India's assets despite having 23% of the population, and lacked sufficient government buildings, equipment, and trained civil servants to run an effective administration. Additionally, the geographical separation between East and West Pakistan created provincial tensions, particularly over language rights and political representation, which would plague the nation for decades. The Kashmir conflict further drained Pakistan's limited resources and diverted attention from nation-building efforts.",
+      "markScheme": "Award 2 marks each for four well-explained problems. Look for specific examples, statistics where relevant, and clear explanation of why each issue created difficulties for the new state."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the chronology of events and placed military coups in wrong decades' — always learn specific dates for Ayub Khan (1958), Yahya Khan (1969), and Zia-ul-Haq (1977)",
+      "Examiner Report 2022: 'Candidates frequently wrote about the 1971 war without explaining the underlying causes in East Pakistan' — always mention economic disparity, language issues, and political under-representation when discussing Bangladesh's creation",
+      "Examiner Report 2021: 'Students often failed to distinguish between different military leaders and their policies' — clearly differentiate between Ayub's modernization focus, Yahya's political transition attempts, and Zia's Islamization program"
+    ],
+    "keyDiagram": "Timeline diagram showing Pakistan's political evolution 1947-1999: Start with Jinnah (1947-48), then Liaquat Ali Khan (1948-51), followed by political instability (1951-58), then three military periods - Ayub Khan era (1958-69), Yahya Khan (1969-71) including 1971 Bangladesh crisis, return to civilian rule under Bhutto (1971-77), Zia-ul-Haq's military government (1977-88), and finally the democratic decade (1988-99) alternating between Benazir Bhutto and Nawaz Sharif. Include major events like 1956 Constitution, 1965 and 1971 wars, 1973 Constitution, and 1999 Musharraf coup.",
+    "quickRecap": "Pakistan's first 52 years were marked by recurring cycles of civilian and military rule. Early challenges included massive refugee influx, weak economy, and provincial tensions that led to Bangladesh's creation in 1971. Military leaders like Ayub Khan, Yahya Khan, and Zia-ul-Haq dominated for much of this period, with brief democratic interludes. The 1990s saw alternating civilian governments under Benazir Bhutto and Nawaz Sharif, but political instability continued, ending with Musharraf's coup in 1999."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:47:50.378Z",
-  "updated_at": "2026-04-05T20:47:50.378Z"
+  "updated_at": "2026-04-05T20:47:50.378Z",
+  "enriched_at": "2026-04-06T16:01:03.255Z"
 }

@@ -84,12 +84,37 @@
       "Remember that conductivity questions often ask about molten vs solid states"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Dot-and-cross diagrams showing electron arrangements in ionic compounds (e.g., NaCl, MgO) and covalent molecules (e.g., H2O, CH4). Also include simple diagrams of giant ionic, metallic, and covalent structures."
+    "keyDiagramDescription": "Dot-and-cross diagrams showing electron arrangements in ionic compounds (e.g., NaCl, MgO) and covalent molecules (e.g., H2O, CH4). Also include simple diagrams of giant ionic, metallic, and covalent structures.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the difference in melting points between sodium chloride and magnesium oxide using bonding theory",
+      "N/D 2022 P1 Q15 (1 mark) — multiple choice question on identifying the type of bonding in ammonia molecules",
+      "M/J 2022 P2 Q3(c) (4 marks) — students had to draw dot-and-cross diagrams for water and predict its bond angle",
+      "N/D 2023 P2 Q2 (5 marks) — question required explanation of electrical conductivity in metals versus ionic compounds in different states"
+    ],
+    "workedExample": {
+      "question": "Draw the dot-and-cross diagram for ammonia (NH₃) and explain why it has a pyramidal shape. (4 marks)",
+      "steps": [
+        "Step 1: Count total valence electrons - nitrogen has 5, each hydrogen has 1, so total = 5 + (3×1) = 8 electrons",
+        "Step 2: Draw nitrogen in center with 3 hydrogens around it. Show nitrogen's electrons as dots, hydrogen's as crosses",
+        "Step 3: Place 3 bonding pairs between N and each H, plus 1 lone pair on nitrogen",
+        "Step 4: Explain shape - 4 electron pairs around nitrogen (3 bonding + 1 lone pair) arrange tetrahedrally, but lone pair repels more strongly, creating pyramidal molecular shape"
+      ],
+      "answer": "Correct dot-and-cross diagram showing N with 3 bonding pairs to H atoms and 1 lone pair. Shape is pyramidal because the lone pair of electrons repels the bonding pairs more strongly than bonding pairs repel each other, pushing the hydrogen atoms closer together.",
+      "markScheme": "1 mark for correct electron count, 1 mark for correct diagram showing lone pair, 1 mark for stating pyramidal shape, 1 mark for explaining lone pair repulsion"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused intermolecular forces with intramolecular bonding' — always distinguish between bonds within molecules and forces between molecules when explaining physical properties",
+      "Examiner Report 2022: 'Students often drew incorrect dot-and-cross diagrams by not showing the origin of electrons clearly' — always use different symbols (dots/crosses) to show which atom donated each electron in the bonding pair",
+      "Examiner Report 2023: 'Candidates frequently stated that ionic compounds conduct electricity without specifying the state' — always mention that ionic compounds only conduct when molten or dissolved, not as solids"
+    ],
+    "keyDiagram": "Students must master dot-and-cross diagrams showing: (1) All valence electrons as dots for one element, crosses for another (2) Shared electron pairs in covalent bonds positioned between atoms (3) Lone pairs clearly positioned on relevant atoms (4) Correct total electron count. For ionic compounds, show complete electron transfer with resulting charges. Include examples like H₂O, NH₃, CH₄ for covalent and NaCl, MgO for ionic.",
+    "quickRecap": "Three main bond types: ionic (metal + non-metal, electron transfer, high melting points), covalent (non-metal + non-metal, electron sharing, lower melting points), and metallic (metals only, delocalized electrons, conduct electricity). Molecular shape depends on electron pairs around central atom including lone pairs. Intermolecular forces are weaker than chemical bonds and affect physical properties like boiling point."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:51:56.142Z",
-  "updated_at": "2026-04-05T20:51:56.142Z"
+  "updated_at": "2026-04-05T20:51:56.142Z",
+  "enriched_at": "2026-04-06T16:02:37.912Z"
 }

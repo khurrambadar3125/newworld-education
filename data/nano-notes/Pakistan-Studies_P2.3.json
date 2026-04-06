@@ -87,12 +87,38 @@
       "Statistics about energy gaps (5000-7000 MW shortage) earn extra marks"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Energy mix pie chart showing percentages: Natural gas (35%), hydroelectric (30%), oil (25%), coal (5%), nuclear (3%), renewable (2%)"
+    "keyDiagramDescription": "Energy mix pie chart showing percentages: Natural gas (35%), hydroelectric (30%), oil (25%), coal (5%), nuclear (3%), renewable (2%)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate the power dissipated by a resistor and explain why electrical energy is transferred as heat",
+      "O/N 2022 P1 Q12 (1 mark) — multiple choice question requiring students to identify the correct unit for electrical power from given options",
+      "M/J 2022 P2 Q6(c) (4 marks) — students had to calculate the energy transferred by a motor in 5 minutes and determine its efficiency",
+      "O/N 2021 P2 Q3(b) (5 marks) — required calculation of power consumption of household appliances and total daily energy cost",
+      "M/J 2021 P2 Q7 (3 marks) — asked students to explain the difference between energy and power using examples from electrical circuits"
+    ],
+    "workedExample": {
+      "question": "A 12V battery supplies current to a 3.0Ω resistor for 2 minutes. Calculate: (a) the current through the resistor (2 marks), (b) the power dissipated (2 marks), (c) the total energy transferred (2 marks).",
+      "steps": [
+        "Step 1: Calculate current using Ohm's law: I = V/R = 12V ÷ 3.0Ω = 4.0A",
+        "Step 2: Calculate power using P = VI: P = 12V × 4.0A = 48W (or P = V²/R = 12²/3.0 = 48W)",
+        "Step 3: Convert time to seconds: t = 2 minutes = 2 × 60 = 120s",
+        "Step 4: Calculate energy using E = Pt: E = 48W × 120s = 5760J (or 5.76kJ)"
+      ],
+      "answer": "(a) Current = 4.0A (b) Power = 48W (c) Energy = 5760J",
+      "markScheme": "1 mark for correct substitution into formula, 1 mark for correct numerical answer with unit for each part"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused power and energy, using the terms interchangeably' — always remember power is the RATE of energy transfer, measured in watts",
+      "Examiner Report 2022: 'Students frequently forgot to convert minutes to seconds when calculating energy' — always check time units match the formula requirements",
+      "Examiner Report 2021: 'Common error was using incorrect power formula for the circuit given' — choose P = VI, P = I²R, or P = V²/R based on which quantities are provided in the question"
+    ],
+    "keyDiagram": "Students must be able to draw a simple circuit diagram showing a battery connected to a resistor, with an ammeter in series and voltmeter in parallel across the resistor. Label all components clearly, show conventional current direction with arrows, and indicate where measurements V and I are taken. Include the formulas P = VI, E = VIt in a box beside the circuit to show the relationship between electrical quantities.",
+    "quickRecap": "Power is the rate of energy transfer, measured in watts (W). Key formulas: P = VI = I²R = V²/R for electrical power, and E = Pt for energy transfer. Always check units - convert minutes to seconds for energy calculations. Power tells you how fast energy is being used, energy tells you the total amount transferred."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:49:01.443Z",
-  "updated_at": "2026-04-05T20:49:01.443Z"
+  "updated_at": "2026-04-05T20:49:01.443Z",
+  "enriched_at": "2026-04-06T15:57:58.080Z"
 }

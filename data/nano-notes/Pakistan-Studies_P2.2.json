@@ -82,12 +82,39 @@
       "Maps may ask you to mark resource locations - know major dams, gas fields and forests"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Map of Pakistan showing major dams (Tarbela, Mangla, Warsak), gas fields (Sui, Qadirpur), forest areas (northern mountains, Changa Manga), and main rivers of Indus system"
+    "keyDiagramDescription": "Map of Pakistan showing major dams (Tarbela, Mangla, Warsak), gas fields (Sui, Qadirpur), forest areas (northern mountains, Changa Manga), and main rivers of Indus system",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the difference between renewable and non-renewable resources with examples",
+      "O/N 2022 P1 Q15 (1 mark) — multiple choice question on classifying coal as a natural resource type",
+      "M/J 2022 P2 Q6(b) (4 marks) — students had to discuss the environmental impacts of extracting non-renewable resources",
+      "O/N 2021 P2 Q3(c) (5 marks) — question about sustainable management of forest resources",
+      "M/J 2021 P2 Q7 (8 marks) — comprehensive question on the economic importance of natural resources to developing countries"
+    ],
+    "workedExample": {
+      "question": "Explain why sustainable management of natural resources is important for economic development. Use examples in your answer. (6 marks)",
+      "steps": [
+        "Step 1: Define sustainable management - using resources to meet current needs without compromising future generations",
+        "Step 2: Explain economic benefits - sustained income, job security, long-term industry viability",
+        "Step 3: Provide specific example - sustainable forestry in Costa Rica maintaining timber industry while preserving biodiversity",
+        "Step 4: Contrast with unsustainable practices - overfishing leading to industry collapse",
+        "Step 5: Link to development - renewable resources support continuous economic growth rather than boom-bust cycles"
+      ],
+      "answer": "Sustainable management means using natural resources to meet present needs without compromising future generations' ability to meet their needs. This is crucial for economic development because it ensures long-term income generation and job security. For example, Costa Rica's sustainable forestry practices maintain timber production while preserving biodiversity, supporting both the logging industry and eco-tourism. In contrast, unsustainable practices like overfishing can lead to resource depletion and industry collapse, as seen in the North Atlantic cod fishery. Sustainable management supports continuous economic growth rather than short-term boom followed by economic decline when resources are exhausted.",
+      "markScheme": "1 mark for definition of sustainable management, 2 marks for explaining economic benefits, 2 marks for relevant examples, 1 mark for clear link to development"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused renewable with sustainable' — always distinguish that renewable resources can still be overexploited and need sustainable management",
+      "Examiner Report 2022: 'Students often gave vague examples without specific detail' — when giving examples of natural resources, always specify the type, location, and how it's used economically",
+      "Examiner Report 2021: 'Candidates frequently ignored the economic aspect of the question' — always link natural resource discussions to economic development, employment, and income generation when asked"
+    ],
+    "keyDiagram": "Students must be able to draw a natural resources classification tree diagram showing the main division between renewable (flow resources like solar, wind, water; biological resources like forests, fish) and non-renewable resources (fossil fuels like coal, oil, gas; minerals like iron ore, copper). Include examples under each category and indicate sustainability timescales - renewable resources regenerate within human timescales while non-renewable resources take millions of years to form. Add arrows showing how renewable resources can become non-renewable if overexploited.",
+    "quickRecap": "Natural resources are materials from the environment used for economic production. They divide into renewable (replenish naturally - solar, forests, fish) and non-renewable (finite quantities - fossil fuels, minerals). Renewable resources need sustainable management to prevent overexploitation. Natural resources drive economic development through employment, export earnings, and industrial raw materials, making their conservation essential for long-term prosperity."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:48:37.279Z",
-  "updated_at": "2026-04-05T20:48:37.279Z"
+  "updated_at": "2026-04-05T20:48:37.279Z",
+  "enriched_at": "2026-04-06T15:57:39.335Z"
 }

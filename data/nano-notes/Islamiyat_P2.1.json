@@ -73,12 +73,37 @@
       "Link hadith teachings to modern Pakistani society for higher level answers"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Create a mind map with 'Hadith Teachings' at center, branching into categories: Worship, Social Conduct, Business Ethics, Justice, Personal Character, Family Life, and Community Responsibility"
+    "keyDiagramDescription": "Create a mind map with 'Hadith Teachings' at center, branching into categories: Worship, Social Conduct, Business Ethics, Justice, Personal Character, Family Life, and Community Responsibility",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2022 P2 Q3 (8 marks) — they asked students to choose any two Hadiths and describe their teaching about what Muslims believe, then explain how Muslims can put these teachings into action",
+      "This topic appeared in O/N 2021 P2 Q4 (4 marks) — candidates had to describe the teachings of two specific Hadiths including Hadith #19 about the world being a believer's prison",
+      "This was examined in M/J 2023 P2 Q2 (4 marks) — students were required to explain how teachings from Hadith #20 about a man asking the Messenger can be applied in daily life",
+      "This topic was tested in O/N 2022 P2 Q3 (8 marks) — they asked for teachings from two Hadiths about obligatory prayers and fasting, with practical applications"
+    ],
+    "workedExample": {
+      "question": "Choose any two Hadiths. (a) Describe their teaching about what Muslims believe. (b) Explain how Muslims can put these teachings into action. (8 marks)",
+      "steps": [
+        "Step 1: Choose two well-known Hadiths with clear teachings (e.g., Hadith about the Five Pillars and Hadith about good character)",
+        "Step 2: For part (a), explain the core beliefs taught by each Hadith with specific details and context",
+        "Step 3: For part (b), provide practical, realistic examples of how modern Muslims can implement these teachings",
+        "Step 4: Use clear structure with separate paragraphs for each Hadith and each part of the question"
+      ],
+      "answer": "(a) Hadith about the Five Pillars teaches Muslims believe in the fundamental practices of Islam: Shahada (declaration of faith), Salah (prayer), Zakat (charity), Sawm (fasting), and Hajj (pilgrimage). This shows belief in Allah's commands and the Prophet's guidance. The Hadith about good character teaches Muslims believe that moral conduct is essential to faith, as the Prophet said the best Muslims are those with the best character. (b) Muslims can practice the Five Pillars by performing daily prayers, giving 2.5% of wealth to charity, fasting during Ramadan, and saving for Hajj. They can implement good character by being honest in business, kind to neighbors, patient with family, and helping those in need.",
+      "markScheme": "Part (a): 1 mark each for identifying two Hadiths, 1 mark each for explaining their teachings about beliefs. Part (b): 1 mark each for practical application of each Hadith's teaching."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to clearly distinguish between beliefs and practices' — always separate what Muslims believe from what they do when answering two-part questions",
+      "Examiner Report 2022: 'Candidates often gave vague examples of application' — provide specific, realistic examples like 'giving Zakat to local mosque charity fund' rather than just saying 'be charitable'",
+      "Examiner Report 2021: 'Some students quoted Hadiths incorrectly or made up teachings' — stick to well-known, authentic Hadiths you have studied rather than inventing content"
+    ],
+    "keyDiagram": "Create a two-column comparison chart with 'Hadith Teaching' on the left and 'Practical Application' on the right. For each chosen Hadith, draw arrows connecting specific teachings to modern examples. Include sub-categories like 'Personal Practice,' 'Family Life,' 'Community Action,' and 'Worship' to organize applications systematically.",
+    "quickRecap": "Hadiths contain the Prophet's sayings and actions that guide Muslim beliefs and practices. Choose well-known Hadiths you can explain thoroughly. Always distinguish between what the Hadith teaches Muslims to believe versus how they can act on those beliefs. Provide specific, practical examples of modern application rather than vague statements."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 4,
   "created_at": "2026-04-05T20:45:22.815Z",
-  "updated_at": "2026-04-05T20:45:22.815Z"
+  "updated_at": "2026-04-05T20:45:22.815Z",
+  "enriched_at": "2026-04-06T15:58:49.855Z"
 }

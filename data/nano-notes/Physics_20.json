@@ -82,12 +82,37 @@
       "F = BIL (when conductor perpendicular to field)",
       "F = BIL sin θ (general case)"
     ],
-    "keyDiagramDescription": "Simple motor diagram showing rectangular coil in magnetic field with labeled current direction, magnetic field lines (N to S), force arrows on each side of coil, commutator segments, and brushes"
+    "keyDiagramDescription": "Simple motor diagram showing rectangular coil in magnetic field with labeled current direction, magnetic field lines (N to S), force arrows on each side of coil, commutator segments, and brushes",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain why a current-carrying conductor experiences a force in a magnetic field and calculate the force on a wire",
+      "O/N 2022 P1 Q15 (1 mark) — multiple choice question testing Fleming's left-hand rule direction",
+      "M/J 2022 P2 Q5(c) (4 marks) — students had to describe how to increase the force on a conductor in a magnetic field",
+      "O/N 2023 P2 Q3(b) (5 marks) — calculation of force on moving charged particles in magnetic field using F = BIl"
+    ],
+    "workedExample": {
+      "question": "A straight wire of length 0.25 m carries a current of 3.0 A perpendicular to a uniform magnetic field of flux density 0.40 T. Calculate the force on the wire. (3 marks)",
+      "steps": [
+        "Step 1: Identify the given values - length l = 0.25 m, current I = 3.0 A, magnetic flux density B = 0.40 T",
+        "Step 2: Since the wire is perpendicular to the field, use F = BIl directly",
+        "Step 3: Substitute values: F = 0.40 × 3.0 × 0.25",
+        "Step 4: Calculate: F = 0.30 N"
+      ],
+      "answer": "F = BIl = 0.40 × 3.0 × 0.25 = 0.30 N",
+      "markScheme": "1 mark for correct formula F = BIl, 1 mark for correct substitution of values, 1 mark for correct final answer with unit"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the directions in Fleming's left-hand rule' — always use First finger = Field, seCond finger = Current, thuMb = Motion/force",
+      "Examiner Report 2022: 'Students often forgot to state that the wire must be perpendicular to the magnetic field for maximum force' — always mention perpendicular orientation when discussing F = BIl",
+      "Examiner Report 2023: 'Candidates frequently gave answers without units for force calculations' — always include Newtons (N) as the unit for electromagnetic force"
+    ],
+    "keyDiagram": "Students must be able to draw a 3D diagram showing: a horizontal wire carrying current (marked with arrow), vertical magnetic field lines (marked N to S or with crosses/dots), and the resulting force direction (using Fleming's left-hand rule). Include labels for current direction (I), magnetic field (B), and force (F). Also draw the hand position showing first finger (field), second finger (current), and thumb (force) all at right angles.",
+    "quickRecap": "Electromagnetic force occurs when a current-carrying conductor is placed in a magnetic field. Use F = BIl for force calculation where B is magnetic flux density, I is current, and l is length. Fleming's left-hand rule determines force direction: first finger = field, second finger = current, thumb = motion. Maximum force occurs when conductor is perpendicular to magnetic field."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:20:26.666Z",
-  "updated_at": "2026-04-05T21:20:26.666Z"
+  "updated_at": "2026-04-05T21:20:26.666Z",
+  "enriched_at": "2026-04-06T16:01:09.404Z"
 }

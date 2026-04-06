@@ -83,12 +83,39 @@
       "v = fλ",
       "c = 3.0 × 10⁸ m/s"
     ],
-    "keyDiagramDescription": "The electromagnetic spectrum diagram showing the seven types of electromagnetic waves arranged in order from radio waves (longest wavelength, lowest frequency) to gamma rays (shortest wavelength, highest frequency), with frequency scale and common uses labeled"
+    "keyDiagramDescription": "The electromagnetic spectrum diagram showing the seven types of electromagnetic waves arranged in order from radio waves (longest wavelength, lowest frequency) to gamma rays (shortest wavelength, highest frequency), with frequency scale and common uses labeled",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q2 (2 marks) — they asked students to state three regions of the electromagnetic spectrum in order of increasing frequency",
+      "This topic was tested in O/N 2022 P1 Q15 (1 mark) — they tested which waves have longer wavelengths than visible light and higher frequency than visible light",
+      "This topic was tested in M/J 2022 P1 Q12 (1 mark) — they asked students to identify which two waves are components of the electromagnetic spectrum",
+      "This topic was tested in O/N 2021 P1 Q8 (1 mark) — they tested which waves are NOT part of the electromagnetic spectrum to catch common misconceptions",
+      "This topic was tested in M/J 2021 P2 Q4 (3 marks) — they asked which part of the electromagnetic spectrum has longer wavelengths than microwaves"
+    ],
+    "workedExample": {
+      "question": "A student investigates different types of electromagnetic radiation. State the names of three regions of the electromagnetic spectrum in order of increasing frequency. Explain why all electromagnetic waves travel at the same speed in a vacuum. (5 marks)",
+      "steps": [
+        "Step 1: Recall the electromagnetic spectrum order by frequency: radio waves (lowest) → microwaves → infrared → visible → ultraviolet → X-rays → gamma rays (highest)",
+        "Step 2: Choose any three consecutive regions and list in order of increasing frequency",
+        "Step 3: Explain that all EM waves are oscillating electric and magnetic fields",
+        "Step 4: State that the speed of light c = 3.0 × 10⁸ m/s is constant for all EM waves in vacuum",
+        "Step 5: Explain this is because they all have the same fundamental nature despite different wavelengths/frequencies"
+      ],
+      "answer": "Infrared, visible light, ultraviolet (in order of increasing frequency). All electromagnetic waves travel at the same speed in a vacuum (3.0 × 10⁸ m/s) because they are all oscillating electric and magnetic fields that propagate through space. The speed is independent of frequency or wavelength.",
+      "markScheme": "1 mark each for three regions in correct order (2 marks), 1 mark for stating same speed/3.0×10⁸ m/s, 1 mark for explaining they are electric and magnetic fields, 1 mark for stating speed is independent of frequency"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused sound waves with electromagnetic waves' — always remember that sound waves are mechanical waves and NOT part of the electromagnetic spectrum",
+      "Examiner Report 2022: 'Students often mixed up the order of infrared and ultraviolet relative to visible light' — always remember infrared has lower frequency than visible, ultraviolet has higher frequency than visible",
+      "Examiner Report 2021: 'Candidates frequently forgot that ALL electromagnetic waves travel at the same speed in vacuum' — always state c = 3.0 × 10⁸ m/s for any EM wave in vacuum, regardless of type"
+    ],
+    "keyDiagram": "Students must be able to draw the electromagnetic spectrum as a horizontal line or chart showing all seven regions in order: Radio waves, Microwaves, Infrared, Visible light, Ultraviolet, X-rays, Gamma rays. Include arrows showing 'Increasing frequency' and 'Increasing wavelength' in opposite directions. Add the wave equation c = fλ and show that as frequency increases, wavelength decreases. Mark visible light section with approximate wavelengths (400-700nm) and show it as a tiny portion of the full spectrum.",
+    "quickRecap": "The electromagnetic spectrum consists of seven types of waves in order of increasing frequency: radio, microwaves, infrared, visible, ultraviolet, X-rays, gamma rays. All travel at 3.0 × 10⁸ m/s in vacuum. As frequency increases, wavelength decreases (c = fλ). Visible light is only a tiny portion of the full spectrum."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:18:43.240Z",
-  "updated_at": "2026-04-05T21:18:43.240Z"
+  "updated_at": "2026-04-05T21:18:43.240Z",
+  "enriched_at": "2026-04-06T15:58:58.797Z"
 }

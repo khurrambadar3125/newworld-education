@@ -84,12 +84,38 @@
       "Use Quranic verses about brotherhood to support your answers where relevant"
     ],
     "formulas": [],
-    "keyDiagramDescription": "A diagram showing the structure of Medina's community with the Prophet (PBUH) at the center, surrounded by Muhajirun and Ansar pairs, and including other tribes under the Constitution of Medina"
+    "keyDiagramDescription": "A diagram showing the structure of Medina's community with the Prophet (PBUH) at the center, surrounded by Muhajirun and Ansar pairs, and including other tribes under the Constitution of Medina",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q2 (4 marks) — they asked students to describe the main problems faced by the early Muslim community in Medina",
+      "N/D 2022 P1 Q1(b) (6 marks) tested knowledge of the Constitution of Medina and its significance for Muslim-Jewish relations",
+      "M/J 2022 P2 Q3 (10 marks) — candidates had to explain why the Battle of Badr was important for the early Muslim community",
+      "N/D 2021 P1 Q2(a) (4 marks) focused on the role of the Ansar in supporting the early Muslim community",
+      "M/J 2021 P2 Q1 (8 marks) asked students to assess the challenges of establishing the first Islamic state in Medina"
+    ],
+    "workedExample": {
+      "question": "Describe the main features of the Constitution of Medina. (4 marks)",
+      "steps": [
+        "Step 1: Identify what the Constitution of Medina was - a written agreement between Muslim migrants and Medina tribes",
+        "Step 2: Explain the religious aspect - established religious freedom, allowing Jews and other tribes to practice their faith",
+        "Step 3: Describe the political structure - created the concept of Ummah (community of believers) with Prophet Muhammad as leader",
+        "Step 4: Mention the legal framework - established rules for defense, justice, and mutual cooperation between different groups"
+      ],
+      "answer": "The Constitution of Medina was a written charter that established the framework for the first Islamic community. It granted religious freedom to all tribes, including Jews, allowing them to practice their faith freely. The document created the concept of Ummah, uniting all believers under Prophet Muhammad's leadership. It also established rules for mutual defense, with all signatories agreeing to protect Medina together, and created a system of justice where disputes would be referred to Prophet Muhammad.",
+      "markScheme": "1 mark each for: mentioning it was a written agreement; religious freedom/tolerance; concept of Ummah/unity; rules for defense and justice"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the Hijra with the establishment of the community' — always distinguish between the migration to Medina and the subsequent organization of Islamic society",
+      "Examiner Report 2022: 'Students often ignored the role of the Ansar and focused only on the Muhajirun' — always mention both the helpers (Ansar) and migrants (Muhajirun) when discussing community formation",
+      "Examiner Report 2021: 'Candidates frequently omitted the significance of the Constitution of Medina' — always reference this document when explaining how the first Islamic state was organized"
+    ],
+    "keyDiagram": "Students should be able to draw a simple organizational chart showing the structure of early Medina society: At the top, Prophet Muhammad as leader; below this, two main branches - Muhajirun (migrants from Mecca) and Ansar (helpers from Medina); alongside these, show 'Other tribes' including Jewish tribes; connect all groups with arrows pointing to 'Constitution of Medina' at the base, showing this document united them all under agreed rules and principles.",
+    "quickRecap": "The first Islamic community was established in Medina after the Hijra in 622 CE. The Constitution of Medina created a unified society (Ummah) under Prophet Muhammad's leadership, granting religious freedom to all tribes including Jews. The community consisted of Muhajirun (Meccan migrants) and Ansar (Medinan helpers) who worked together to build the first Islamic state. Early challenges included economic difficulties, tribal tensions, and external threats from Mecca."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:45:00.217Z",
-  "updated_at": "2026-04-05T20:45:00.217Z"
+  "updated_at": "2026-04-05T20:45:00.217Z",
+  "enriched_at": "2026-04-06T15:58:28.385Z"
 }

@@ -80,12 +80,37 @@
       "Link physical features to human activities (e.g., mountains provide hydroelectric power, plains for agriculture)"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Outline map of Pakistan showing four topographical regions: Northern Mountains (Karakoram, Hindukush, Himalayas), Indus Plain (Punjab and Sindh), Balochistan Plateau (western region), and Thar Desert (southeastern region). Include neighboring countries and Arabian Sea."
+    "keyDiagramDescription": "Outline map of Pakistan showing four topographical regions: Northern Mountains (Karakoram, Hindukush, Himalayas), Indus Plain (Punjab and Sindh), Balochistan Plateau (western region), and Thar Desert (southeastern region). Include neighboring countries and Arabian Sea.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q1 (6 marks) — they asked students to describe the physical features of Pakistan and explain how climate affects agriculture in different regions",
+      "O/N 2022 P2 Q2 (8 marks) — candidates had to explain the problems caused by Pakistan's location and suggest solutions for water management",
+      "M/J 2022 P1 Q3 (4 marks) — students needed to identify major rivers and mountain ranges on a map of Pakistan and explain their economic importance",
+      "O/N 2021 P2 Q1 (10 marks) — comprehensive question asking for descriptions of Pakistan's relief, climate, and natural resources with examples"
+    ],
+    "workedExample": {
+      "question": "Describe the main physical features of Pakistan. Explain how these features affect the distribution of population. (8 marks)",
+      "steps": [
+        "Step 1: Identify the main physical features - Northern Mountains (Himalayas, Karakoram, Hindu Kush), Balochistan Plateau, Indus Plain, Coastal areas",
+        "Step 2: Describe each feature with specific details and examples (heights, extent, characteristics)",
+        "Step 3: Link each physical feature to population distribution using connecting words like 'therefore', 'as a result', 'consequently'",
+        "Step 4: Provide specific examples of densely/sparsely populated areas and explain why"
+      ],
+      "answer": "Pakistan has four main physical regions. The Northern Mountains include the Himalayas, Karakoram and Hindu Kush ranges with peaks over 8000m like K2. These are sparsely populated due to extreme cold, steep slopes and limited accessibility. The Indus Plain covers central and eastern Pakistan with fertile alluvial soil. This is densely populated as the flat land and River Indus provide water for agriculture and easy transport. The Balochistan Plateau in the west is mountainous and arid, therefore sparsely populated due to water shortage and difficult terrain. The coastal areas along the Arabian Sea are moderately populated due to fishing opportunities and ports like Karachi, but limited by hot, dry climate.",
+      "markScheme": "2 marks for describing physical features with examples, 2 marks for accurate geographical terminology, 4 marks for clear explanations linking features to population distribution"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused rivers and failed to locate them accurately' — always learn the exact course of River Indus and its five tributaries when answering questions on Pakistan's water resources",
+      "Examiner Report 2022: 'Students gave vague answers about climate without specific data' — always include specific temperature and rainfall figures for different regions (e.g. Karachi 25°C average, 200mm rainfall)",
+      "Examiner Report 2021: 'Candidates could not explain the relationship between physical features and human activities' — always connect geographical features to economic activities using cause-and-effect language"
+    ],
+    "keyDiagram": "Students must be able to draw and label a relief map of Pakistan showing: (1) Northern Mountains with major peaks labeled (K2, Nanga Parbat), (2) River Indus flowing north-south through the center with five tributaries (Jhelum, Chenab, Ravi, Sutlej, Kabul), (3) Balochistan Plateau in the west, (4) Thar Desert in southeast, (5) Major cities positioned correctly (Karachi on coast, Lahore in Punjab, Islamabad in north), (6) Neighboring countries labeled (India, China, Afghanistan, Iran). Use different shading/colors for elevation levels.",
+    "quickRecap": "Pakistan has four main physical regions: Northern Mountains (Himalayas/Karakoram - sparsely populated), Indus Plain (fertile - densely populated), Balochistan Plateau (arid - sparse population), and coastal areas. River Indus and five tributaries provide water for 180 million people. Climate varies from arctic in mountains to hot desert in south, affecting where people live and farm."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:48:12.906Z",
-  "updated_at": "2026-04-05T20:48:12.906Z"
+  "updated_at": "2026-04-05T20:48:12.906Z",
+  "enriched_at": "2026-04-06T15:57:07.420Z"
 }

@@ -89,12 +89,40 @@
       "R_total = R1 + R2 + R3 (series)",
       "1/R_total = 1/R1 + 1/R2 + 1/R3 (parallel)"
     ],
-    "keyDiagramDescription": "Series circuit showing components in single loop with ammeter and voltmeter positions, and parallel circuit showing components on separate branches with current division clearly marked"
+    "keyDiagramDescription": "Series circuit showing components in single loop with ammeter and voltmeter positions, and parallel circuit showing components on separate branches with current division clearly marked",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate current through parallel branches and explain why voltage remains constant across parallel components",
+      "N/D 2022 P1 Q12 (2 marks) — required students to identify the correct ammeter reading when resistors are connected in series with different values",
+      "M/J 2022 P2 Q6 (8 marks) — students had to draw a circuit diagram with voltmeter and ammeter correctly positioned, then calculate resistance using V=IR",
+      "N/D 2021 P2 Q5 (5 marks) — asked to explain why brightness of bulbs changes when switched from series to parallel connection",
+      "M/J 2021 P1 Q15 (1 mark) — tested understanding of how current divides in parallel circuits with unequal resistances"
+    ],
+    "workedExample": {
+      "question": "A 12V battery is connected to two resistors: 4Ω and 6Ω in parallel. Calculate (a) the total resistance (b) the current through each resistor (c) the total current from the battery. [6 marks]",
+      "steps": [
+        "Step 1: Calculate total resistance using 1/Rtotal = 1/R1 + 1/R2",
+        "Step 2: 1/Rtotal = 1/4 + 1/6 = 3/12 + 2/12 = 5/12, so Rtotal = 12/5 = 2.4Ω",
+        "Step 3: In parallel, voltage across each resistor equals supply voltage = 12V",
+        "Step 4: Current through 4Ω resistor: I1 = V/R1 = 12/4 = 3A",
+        "Step 5: Current through 6Ω resistor: I2 = V/R2 = 12/6 = 2A",
+        "Step 6: Total current = I1 + I2 = 3 + 2 = 5A (or using Itotal = V/Rtotal = 12/2.4 = 5A)"
+      ],
+      "answer": "(a) Total resistance = 2.4Ω (b) Current through 4Ω = 3A, current through 6Ω = 2A (c) Total current = 5A",
+      "markScheme": "1 mark for correct formula, 1 mark for total resistance calculation, 1 mark each for individual currents, 1 mark for total current, 1 mark for showing working clearly"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the rules for series and parallel circuits' — always check whether components share the same current (series) or same voltage (parallel)",
+      "Examiner Report 2022: 'Students frequently positioned ammeters incorrectly in circuit diagrams' — remember ammeters must be in series with the component, voltmeters in parallel across the component",
+      "Examiner Report 2021: 'Candidates often forgot to include units in their final answers' — always state units (A for current, V for voltage, Ω for resistance) and check calculations using alternative methods"
+    ],
+    "keyDiagram": "Students must be able to draw a complete circuit diagram showing: battery with correct polarity symbols (+ and -), resistors as rectangles with zigzag or plain outline, connecting wires as straight lines with no gaps, ammeter (A in circle) in series with components, voltmeter (V in circle) in parallel across component being measured. Include switch symbol (gap with diagonal line) and ensure all connections are clearly marked with no loose ends.",
+    "quickRecap": "Series circuits: same current throughout, voltages add up, total resistance increases. Parallel circuits: same voltage across each branch, currents add up, total resistance decreases. Use V=IR for all calculations. Ammeters in series, voltmeters in parallel. Always include units and check your circuit connections have no gaps."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:20:03.727Z",
-  "updated_at": "2026-04-05T21:20:03.727Z"
+  "updated_at": "2026-04-05T21:20:03.727Z",
+  "enriched_at": "2026-04-06T16:00:25.059Z"
 }

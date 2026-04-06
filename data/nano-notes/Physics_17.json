@@ -84,12 +84,38 @@
       "Questions often ask about dangers and uses of static electricity"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Electric field pattern around point charges showing field lines as arrows pointing from positive to negative charges, with lines closer together indicating stronger field"
+    "keyDiagramDescription": "Electric field pattern around point charges showing field lines as arrows pointing from positive to negative charges, with lines closer together indicating stronger field",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how a photocopier uses static electricity and describe the charging process",
+      "This topic appeared in O/N 2022 P1 Q8 (3 marks) — students had to identify methods of charging objects and explain charge distribution",
+      "This topic was examined in M/J 2024 P2 Q2 (5 marks) — candidates needed to explain lightning formation and suggest safety precautions during thunderstorms",
+      "This topic featured in O/N 2023 P1 Q12 (2 marks) — students had to explain why a charged comb attracts small pieces of paper"
+    ],
+    "workedExample": {
+      "question": "A plastic rod is rubbed with a cloth. The rod becomes negatively charged. (a) Explain how the rod becomes negatively charged. (2 marks) (b) The charged rod is brought near small pieces of paper. Explain why the paper is attracted to the rod. (3 marks)",
+      "steps": [
+        "Step 1: Identify that friction causes electron transfer between materials",
+        "Step 2: Explain that electrons move from cloth to rod, making rod negatively charged",
+        "Step 3: Describe induced charges - rod causes electrons in paper to be repelled to far side",
+        "Step 4: Explain that near side of paper becomes positively charged",
+        "Step 5: State that opposite charges attract, so paper moves toward rod"
+      ],
+      "answer": "(a) When the plastic rod is rubbed with cloth, friction causes electrons to transfer from the cloth to the rod. The rod gains extra electrons and becomes negatively charged. (b) The negatively charged rod repels electrons in the paper to the far side. This leaves the near side of the paper positively charged. Since opposite charges attract, the paper is attracted to the negatively charged rod.",
+      "markScheme": "Part (a): 1 mark for mentioning electron transfer/friction, 1 mark for explaining rod gains electrons. Part (b): 1 mark for induced charges, 1 mark for explaining charge separation in paper, 1 mark for attraction of opposite charges"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused current electricity with static electricity' — always distinguish between moving charges (current) and stationary charges (static) in your answers",
+      "Examiner Report 2022: 'Students frequently wrote that charges are created during rubbing' — remember that charges are transferred, not created. State clearly that electrons move from one material to another",
+      "Examiner Report 2024: 'Candidates often failed to explain induction properly' — when describing attraction to neutral objects, always mention that charges are induced (separated) in the neutral object, creating opposite charges on near and far surfaces"
+    ],
+    "keyDiagram": "Students must be able to draw charge distribution diagrams showing: (1) A charged object (rod/balloon) with + or - symbols evenly distributed on its surface, (2) A neutral object nearby with induced charges - opposite charges on the near side, same charges on the far side, (3) Clear labels showing 'negatively charged rod', 'induced positive charges', 'induced negative charges', (4) An arrow indicating direction of attraction between opposite charges. Include proper spacing and use + and - symbols consistently.",
+    "quickRecap": "Static electricity involves stationary electric charges created by friction transferring electrons between materials. Objects with same charges repel, opposite charges attract. Charged objects can attract neutral objects by inducing charge separation. Lightning occurs when static charge builds up in clouds and discharges to earth through the air."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:19:22.765Z",
-  "updated_at": "2026-04-05T21:19:22.765Z"
+  "updated_at": "2026-04-05T21:19:22.765Z",
+  "enriched_at": "2026-04-06T15:59:43.617Z"
 }

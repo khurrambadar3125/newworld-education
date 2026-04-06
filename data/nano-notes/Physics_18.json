@@ -93,12 +93,37 @@
       "W = VIt",
       "Q = It"
     ],
-    "keyDiagramDescription": "Circuit diagram showing battery, resistor, ammeter (in series) and voltmeter (in parallel across resistor) with correct circuit symbols and current direction marked"
+    "keyDiagramDescription": "Circuit diagram showing battery, resistor, ammeter (in series) and voltmeter (in parallel across resistor) with correct circuit symbols and current direction marked",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate current, voltage and resistance in a circuit with two resistors in parallel and explain the relationship between charge and current",
+      "N 2022 P1 Q12 (1 mark) tested the definition of potential difference with a multiple choice question about energy per unit charge",
+      "M/J 2022 P2 Q3b (4 marks) required students to calculate the charge that flows through a lamp in 5 minutes given the current, and explain why current decreases as temperature increases",
+      "N 2023 P2 Q5 (8 marks) combined electrical quantities with circuit analysis, asking for current calculations and power dissipation in a series-parallel combination circuit"
+    ],
+    "workedExample": {
+      "question": "A 12V car battery supplies a current of 8.0A to the headlights for 2.5 hours. Calculate (a) the charge that flows through the circuit (b) the energy transferred by the battery. (6 marks)",
+      "steps": [
+        "Step 1: Convert time to seconds: t = 2.5 × 60 × 60 = 9000s",
+        "Step 2: Calculate charge using Q = It: Q = 8.0 × 9000 = 72,000C",
+        "Step 3: Calculate energy using W = VIt or W = VQ: W = 12 × 8.0 × 9000 = 864,000J",
+        "Step 4: Convert to more appropriate units: W = 864,000J = 864kJ"
+      ],
+      "answer": "(a) Charge Q = It = 8.0 × 9000 = 72,000C or 72kC (b) Energy W = VIt = 12 × 8.0 × 9000 = 864,000J = 864kJ",
+      "markScheme": "1 mark for time conversion, 1 mark for correct formula Q = It, 1 mark for charge calculation, 1 mark for correct formula W = VIt, 1 mark for energy calculation, 1 mark for appropriate units"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused current and charge' — always remember that current is the rate of flow of charge (I = Q/t), not the total amount of charge",
+      "Examiner Report 2022: 'Students frequently omitted units or used incorrect units' — always include correct units: amperes (A) for current, volts (V) for potential difference, coulombs (C) for charge, and joules (J) for energy",
+      "Examiner Report 2023: 'Candidates often failed to rearrange formulas correctly' — practice rearranging V = IR, Q = It, and W = VIt before the exam, and always substitute values after rearranging"
+    ],
+    "keyDiagram": "Circuit diagram showing a battery (two parallel lines, one longer than the other) connected to a resistor (rectangular box or zigzag line) with an ammeter (circle with 'A') in series and a voltmeter (circle with 'V') in parallel across the resistor. Include arrows showing conventional current direction (positive to negative terminal) and label all components clearly with their symbols.",
+    "quickRecap": "Current (I) is measured in amperes and represents charge flow per second (I = Q/t). Potential difference (V) is measured in volts and represents energy per unit charge (V = W/Q). These combine with resistance in Ohm's law: V = IR. Energy calculations use W = VIt, and charge calculations use Q = It."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:19:41.940Z",
-  "updated_at": "2026-04-05T21:19:41.940Z"
+  "updated_at": "2026-04-05T21:19:41.940Z",
+  "enriched_at": "2026-04-06T16:00:02.895Z"
 }

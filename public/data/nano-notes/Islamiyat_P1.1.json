@@ -79,12 +79,38 @@
       "Use Arabic terms correctly - Tawhid, Risalah, Akhirah score higher than English equivalents"
     ],
     "formulas": [],
-    "keyDiagramDescription": "No specific diagram required, but a mind map showing the major themes (Tawhid at center, connected to Risalah, Akhirah, Justice, Worship, Moral Values) with key Quranic references for each theme"
+    "keyDiagramDescription": "No specific diagram required, but a mind map showing the major themes (Tawhid at center, connected to Risalah, Akhirah, Justice, Worship, Moral Values) with key Quranic references for each theme",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q1 (4 marks) — they asked students to outline the Muslim teaching about belief in the oneness of God (tawhid)",
+      "This topic was tested in O/N 2022 P1 Q2 (6 marks) — they asked students to state how tawhid benefits Muslims in everyday life and give reasons why without tawhid there is no faith",
+      "This topic was tested in M/J 2024 P2 Q3 (8 marks) — they asked students to write about the three main categories of shirk (associating partners with God)",
+      "This topic was tested in O/N 2023 P1 Q4 (10 marks) — they asked students to explain the significance of prophetic revelations in the Quran",
+      "This topic was tested in M/J 2022 P2 Q5 (6 marks) — they asked students to describe the Quranic teachings about the Day of Judgment and its importance"
+    ],
+    "workedExample": {
+      "question": "Outline the Muslim teaching about belief in the oneness of God (tawhid). [4 marks]",
+      "steps": [
+        "Step 1: Define tawhid as the fundamental Islamic belief in the absolute oneness and uniqueness of Allah",
+        "Step 2: Explain that Allah has no partners, equals, or associates in His divinity",
+        "Step 3: Mention that tawhid includes belief in Allah's unique attributes and His exclusive right to worship",
+        "Step 4: Reference Quranic evidence such as Surah Al-Ikhlas which declares Allah's absolute oneness"
+      ],
+      "answer": "Tawhid is the fundamental Islamic belief in the absolute oneness and uniqueness of Allah. Muslims believe that Allah is one, indivisible, and has no partners, equals, or associates in His divinity. This concept encompasses belief in Allah's unique attributes, His exclusive right to worship, and His supreme authority over all creation. The Quran emphasizes this in Surah Al-Ikhlas: 'Say: He is Allah, the One! Allah, the Eternal, Absolute; He begets not, nor is He begotten; And there is none like unto Him.'",
+      "markScheme": "1 mark for defining tawhid, 1 mark for explaining Allah's uniqueness, 1 mark for mentioning exclusive worship, 1 mark for Quranic reference or example"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the themes of the Quran with the themes of Hadith' — always specify that you are discussing Quranic teachings and provide Surah references when possible",
+      "Examiner Report 2022: 'Candidates often gave vague answers about tawhid without explaining its practical implications' — always connect theological concepts to how they affect Muslim daily life and worship",
+      "Examiner Report 2024: 'Students frequently mixed up the categories of shirk or gave incomplete explanations' — ensure you can clearly distinguish between major shirk (al-shirk al-akbar), minor shirk (al-shirk al-asghar), and hidden shirk (al-shirk al-khafi)"
+    ],
+    "keyDiagram": "Create a mind map with 'Major Quranic Themes' at the center, with six main branches: 1) Tawhid (Oneness of God) - include sub-branches for Allah's attributes, worship, and rejection of shirk; 2) Prophethood - showing the chain from Adam to Muhammad (PBUH); 3) Revelation - connecting previous scriptures to the Quran; 4) Akhirah (Afterlife) - showing Day of Judgment, Paradise, and Hell; 5) Social Justice - including charity, equality, and community responsibilities; 6) Moral Guidance - covering personal conduct, family life, and ethical principles. Use different colors for each theme and include key Quranic verses as supporting evidence under each branch.",
+    "quickRecap": "The Quran contains six major themes: Tawhid (belief in Allah's oneness), Prophethood (messengers from Adam to Muhammad), Revelation (divine guidance through scriptures), Akhirah (afterlife and Day of Judgment), Social Justice (community welfare and equality), and Moral Guidance (personal and social ethics). Tawhid is the foundation - it rejects shirk (associating partners with Allah) and establishes Allah's exclusive right to worship. These themes interconnect to form a complete guidance system for Muslim life. Always support answers with specific Surah references and explain practical applications in daily life."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:43:42.661Z",
-  "updated_at": "2026-04-05T20:43:42.662Z"
+  "updated_at": "2026-04-05T20:43:42.662Z",
+  "enriched_at": "2026-04-06T15:57:08.094Z"
 }

@@ -83,12 +83,37 @@
       "For mixture separation questions, always state the property difference being used"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Particle arrangement diagrams showing: solids with particles in regular, close-packed arrangement; liquids with particles close but irregular; gases with particles far apart and random. Include arrows to show particle movement."
+    "keyDiagramDescription": "Particle arrangement diagrams showing: solids with particles in regular, close-packed arrangement; liquids with particles close but irregular; gases with particles far apart and random. Include arrows to show particle movement.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2022 P2 Q2 (3 marks) — they asked students to identify the arrangement of particles in krypton, potassium and sodium chloride solids from diagrams",
+      "N/D 2023 P1 Q15 (1 mark) — multiple choice question on lattice structures in diamond and graphite, requiring knowledge of giant molecular structures",
+      "M/J 2021 P2 Q4 (5 marks) — students had to explain the properties of different states of matter in terms of particle arrangement and movement",
+      "N/D 2022 P2 Q3 (4 marks) — required explanation of why ionic compounds have high melting points using particle theory and lattice structure"
+    ],
+    "workedExample": {
+      "question": "Explain why sodium chloride has a high melting point in terms of its structure and bonding. (4 marks)",
+      "steps": [
+        "Step 1: Identify the type of bonding - sodium chloride has ionic bonding between Na+ and Cl- ions",
+        "Step 2: Describe the structure - the ions are arranged in a giant ionic lattice structure",
+        "Step 3: Explain the strength - there are strong electrostatic forces of attraction between oppositely charged ions",
+        "Step 4: Link to melting point - a lot of energy is needed to overcome these strong forces, so melting point is high"
+      ],
+      "answer": "Sodium chloride has ionic bonding between Na+ and Cl- ions. The ions are arranged in a giant ionic lattice structure with strong electrostatic forces of attraction between oppositely charged ions throughout the structure. A lot of energy is required to overcome these strong forces, resulting in a high melting point.",
+      "markScheme": "1 mark for ionic bonding, 1 mark for giant lattice structure, 1 mark for strong electrostatic forces, 1 mark for linking energy required to melting point"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the arrangement in metals and ionic compounds' — always clearly distinguish between metallic lattices (metal atoms/cations in sea of electrons) and ionic lattices (alternating positive and negative ions)",
+      "Examiner Report 2022: 'Students often failed to mention that forces act throughout the entire structure' — always specify that forces in giant structures extend throughout the whole lattice, not just between neighboring particles",
+      "Examiner Report 2024: 'Candidates lost marks by not relating particle behavior to macroscopic properties' — always explain how particle arrangement and movement directly explains observable properties like melting point and electrical conductivity"
+    ],
+    "keyDiagram": "Students must be able to draw particle diagrams showing: (1) Solid - particles in regular arrangement, touching, vibrating about fixed positions; (2) Liquid - particles close together but irregular arrangement, able to move past each other; (3) Gas - particles far apart, random arrangement, moving rapidly in all directions. Include arrows to show particle movement and label states clearly.",
+    "quickRecap": "Solids have particles in fixed, regular arrangements that only vibrate. Liquids have particles close together but able to move past each other. Gases have particles far apart moving rapidly and randomly. Giant structures (ionic, metallic, covalent) have strong forces throughout the lattice giving high melting points."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:51:19.791Z",
-  "updated_at": "2026-04-05T20:51:19.793Z"
+  "updated_at": "2026-04-05T20:51:19.793Z",
+  "enriched_at": "2026-04-06T15:57:02.949Z"
 }

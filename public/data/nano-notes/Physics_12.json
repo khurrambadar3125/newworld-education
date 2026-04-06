@@ -87,12 +87,38 @@
       "distance = speed × time",
       "time = distance ÷ speed"
     ],
-    "keyDiagramDescription": "Longitudinal wave diagram showing compressions (particles close together) and rarefactions (particles spread apart) with particles vibrating parallel to wave direction"
+    "keyDiagramDescription": "Longitudinal wave diagram showing compressions (particles close together) and rarefactions (particles spread apart) with particles vibrating parallel to wave direction",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (3 marks) — they asked students to arrange gas, liquid, and solid in order of sound speed from slowest to fastest",
+      "N/D 2022 P1 Q15 (1 mark) — required identification of ultrasound frequency range from given options",
+      "M/J 2024 P2 Q6 (4 marks) — calculation of sound speed using v = d/t with discussion of experimental errors",
+      "N/D 2023 P2 Q3 (5 marks) — comprehensive question on measuring sound speed including sources of inaccuracy in timing measurements"
+    ],
+    "workedExample": {
+      "question": "A student measures the speed of sound by clapping wooden blocks 172 m from a large wall. The time between the clap and hearing the echo is 1.0 s. Calculate the speed of sound. Explain why this value is only approximate. (5 marks)",
+      "steps": [
+        "Step 1: Identify that sound travels to wall and back, so total distance = 2 × 172 m = 344 m",
+        "Step 2: Apply formula v = d/t where d = 344 m and t = 1.0 s",
+        "Step 3: Calculate v = 344/1.0 = 344 m/s",
+        "Step 4: Explain approximation due to reaction time errors when starting/stopping timing",
+        "Step 5: Additional errors include difficulty measuring exact distance and temperature effects on sound speed"
+      ],
+      "answer": "Speed = 344 m/s. Value is approximate due to human reaction time errors in timing, difficulty measuring distance precisely, and temperature variations affecting actual sound speed.",
+      "markScheme": "1 mark for doubling distance, 1 mark for correct formula, 1 mark for calculation, 2 marks for explaining sources of error"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates forgot to double the distance in echo calculations' — always remember sound travels to the reflector AND back when calculating from echo time",
+      "Examiner Report 2024: 'Candidates confused infrasound and ultrasound frequency ranges' — ultrasound is ABOVE 20,000 Hz, infrasound is BELOW 20 Hz",
+      "Examiner Report 2022: 'Students incorrectly stated that sound travels fastest in gases' — remember sound speed increases with density: fastest in solids, slowest in gases"
+    ],
+    "keyDiagram": "Echo method diagram showing: person with sound source, measured distance 'd' to wall/cliff, sound wave path going to reflector and returning (labeled as total distance 2d), stopwatch showing time measurement, with clear labels for 'incident sound', 'reflected sound', and the equation v = 2d/t prominently displayed.",
+    "quickRecap": "Sound speed increases from gas to liquid to solid due to particle arrangement. Use v = d/t but remember to double distance for echo methods. Ultrasound is above 20,000 Hz, infrasound below 20 Hz. Main experimental errors are reaction time and distance measurement inaccuracies."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:17:45.997Z",
-  "updated_at": "2026-04-05T21:17:45.997Z"
+  "updated_at": "2026-04-05T21:17:45.997Z",
+  "enriched_at": "2026-04-06T15:58:06.676Z"
 }

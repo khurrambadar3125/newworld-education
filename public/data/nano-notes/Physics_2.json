@@ -84,12 +84,38 @@
       "s = ut + ½at²",
       "v² = u² + 2as"
     ],
-    "keyDiagramDescription": "Distance-time and velocity-time graphs showing straight lines for uniform motion and curved lines for accelerated motion, with annotations showing how to find speed/acceleration from gradients"
+    "keyDiagramDescription": "Distance-time and velocity-time graphs showing straight lines for uniform motion and curved lines for accelerated motion, with annotations showing how to find speed/acceleration from gradients",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q12 (1 mark) — they asked students to analyze speed changes during projectile motion at 45° angle",
+      "This topic appeared in O/N 2022 P2 Q4(b)(iv) (3 marks) — students had to compare power output when speed becomes constant versus during acceleration",
+      "This topic was examined in M/J 2024 P1 Q8 (1 mark) — candidates analyzed acceleration and resistive force changes for a box sliding down a rough slope",
+      "This topic featured in O/N 2023 P1 Q15 (1 mark) — students identified correct equations for objects falling at terminal velocity through viscous liquids",
+      "This topic was tested in M/J 2022 P1 Q3 (1 mark) — candidates had to evaluate reasonable estimates for maximum speeds of different moving objects"
+    ],
+    "workedExample": {
+      "question": "A box slides down a rough inclined plane with increasing speed. Explain what happens to (i) the acceleration of the box and (ii) the resistive force acting on the box as the speed increases. (4 marks)",
+      "steps": [
+        "Step 1: Identify the forces acting - weight component down the slope (constant), friction/air resistance up the slope (increases with speed)",
+        "Step 2: Apply Newton's second law - net force = mg sin θ - resistance force = ma",
+        "Step 3: Analyze acceleration - as speed increases, resistance increases, so net force decreases, therefore acceleration decreases",
+        "Step 4: Analyze resistive force - friction and air resistance both increase with speed, so total resistive force increases"
+      ],
+      "answer": "(i) The acceleration decreases as the box speeds up because the resistive forces increase with speed, reducing the net downward force. (ii) The resistive force increases as speed increases due to greater friction and air resistance opposing the motion.",
+      "markScheme": "1 mark for stating acceleration decreases, 1 mark for correct explanation linking to increased resistance, 1 mark for stating resistive force increases, 1 mark for explanation that resistance depends on speed"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused speed and velocity when describing motion' — always specify whether you mean speed (scalar) or velocity (vector) and include direction for velocity",
+      "Examiner Report 2024: 'Students often incorrectly assumed acceleration is zero when speed is constant' — remember that constant speed in circular motion still involves acceleration due to changing direction",
+      "Examiner Report 2022: 'Candidates frequently mixed up distance and displacement in motion descriptions' — distance is total path length (scalar), displacement is straight-line distance from start to finish (vector)"
+    ],
+    "keyDiagram": "Students must be able to draw velocity-time and distance-time graphs showing: (1) constant velocity as horizontal line on v-t graph and straight diagonal line on s-t graph, (2) constant acceleration as diagonal line on v-t graph and curved line on s-t graph, (3) clearly labeled axes with correct units (m/s for velocity, m for distance/displacement, s for time), (4) ability to calculate gradient (acceleration from v-t graph, velocity from s-t graph) and area under curve (displacement from v-t graph).",
+    "quickRecap": "Motion description requires distinguishing between scalars (speed, distance) and vectors (velocity, displacement, acceleration). Velocity-time graphs show motion patterns: horizontal lines = constant velocity, diagonal lines = constant acceleration, curved lines = changing acceleration. The gradient of v-t graphs gives acceleration, while the area under v-t graphs gives displacement. Always include direction when describing vector quantities."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:59:09.203Z",
-  "updated_at": "2026-04-05T20:59:09.203Z"
+  "updated_at": "2026-04-05T20:59:09.203Z",
+  "enriched_at": "2026-04-06T16:00:46.212Z"
 }

@@ -89,12 +89,38 @@
       "Population density = Total population ÷ Total area",
       "Population growth rate = (Birth rate - Death rate) + Net migration rate"
     ],
-    "keyDiagramDescription": "Population pyramid showing Pakistan's youthful age structure with wide base indicating high birth rates and narrow top showing lower life expectancy, demonstrating demographic transition stage"
+    "keyDiagramDescription": "Population pyramid showing Pakistan's youthful age structure with wide base indicating high birth rates and narrow top showing lower life expectancy, demonstrating demographic transition stage",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the causes and effects of rapid population growth in developing countries",
+      "N 2022 P1 Q2 (8 marks) tested population pyramids — candidates had to interpret age-sex structures and predict future population trends",
+      "M/J 2022 P2 Q3 (4 marks) focused on migration patterns — students needed to distinguish between push and pull factors with examples",
+      "N 2023 P1 Q5 (6 marks) examined population distribution — required explanation of physical and human factors affecting where people live",
+      "M/J 2021 P2 Q2 (5 marks) tested demographic transition model — students had to describe characteristics of each stage with birth/death rates"
+    ],
+    "workedExample": {
+      "question": "Explain why some countries have aging populations and describe the problems this may cause. (6 marks)",
+      "steps": [
+        "Step 1: Define aging population - when the proportion of elderly (65+) increases relative to younger age groups",
+        "Step 2: Explain causes - declining birth rates due to family planning, career priorities, high living costs; improved healthcare leading to increased life expectancy",
+        "Step 3: Identify economic problems - increased healthcare costs, pension burdens, smaller workforce, reduced tax revenue",
+        "Step 4: Identify social problems - increased demand for care services, housing modifications needed, family stress from caring responsibilities"
+      ],
+      "answer": "An aging population occurs when the proportion of elderly people (65+) increases relative to younger groups. This happens due to declining birth rates caused by family planning, career priorities and high living costs, combined with improved healthcare extending life expectancy. Economic problems include rising healthcare and pension costs, labor shortages reducing productivity, and decreased tax revenue from fewer working-age people. Social problems involve increased demand for specialized care services, need for accessible housing, and family stress from eldercare responsibilities.",
+      "markScheme": "2 marks for causes (birth rate decline + life expectancy increase), 2 marks for economic problems, 2 marks for social problems. Award marks for specific examples or elaboration."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused population density with population distribution' — always define density as people per km² and distribution as where people are located across an area",
+      "Examiner Report 2022: 'Students often failed to provide specific examples when discussing migration' — always include named countries/regions and actual push/pull factors like 'drought in Somalia' or 'job opportunities in UAE'",
+      "Examiner Report 2023: 'Weak responses on demographic transition model mixed up birth and death rate patterns' — remember Stage 1 has high birth AND death rates, Stage 4 has low birth AND death rates"
+    ],
+    "keyDiagram": "Population pyramid diagram showing age-sex structure with males on left, females on right, age groups in 5-year bands from 0-4 at bottom to 85+ at top. Must label axes (age groups vertically, population numbers/percentages horizontally), include title, and be able to draw three shapes: expansive pyramid (wide base, narrow top - rapid growth), constrictive pyramid (narrow base, wider middle - declining growth), and stationary pyramid (relatively straight sides - stable growth). Include ability to shade and compare two time periods.",
+    "quickRecap": "Population studies cover distribution (where people live), density (people per km²), and structure (age-sex composition shown in pyramids). Key processes include natural increase (births minus deaths), migration (push/pull factors), and demographic transition (4 stages from high birth/death rates to low rates). Aging populations create economic burdens while young populations face resource pressures."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:50:58.591Z",
-  "updated_at": "2026-04-05T20:50:58.591Z"
+  "updated_at": "2026-04-05T20:50:58.591Z",
+  "enriched_at": "2026-04-06T15:59:46.557Z"
 }

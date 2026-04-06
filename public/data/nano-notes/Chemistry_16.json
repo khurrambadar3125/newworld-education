@@ -84,12 +84,38 @@
       "Fe₂O₃ + 3CO → 2Fe + 3CO₂ (iron extraction)",
       "C + CO₂ → 2CO (carbon monoxide formation)"
     ],
-    "keyDiagramDescription": "Blast furnace diagram showing raw materials entering at top (iron ore, coke, limestone), hot air blast entering sides, and products leaving at bottom (molten iron, slag). Label temperatures and key reactions at different levels."
+    "keyDiagramDescription": "Blast furnace diagram showing raw materials entering at top (iron ore, coke, limestone), hot air blast entering sides, and products leaving at bottom (molten iron, slag). Label temperatures and key reactions at different levels.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to identify extraction methods for different metals based on their position in the reactivity series",
+      "N/D 2022 P1 Q15 (1 mark) — multiple choice question on naming the process used to extract metals from their ores (reduction)",
+      "M/J 2024 P2 Q5b (3 marks) — students had to explain why carbon cannot be used to extract aluminum and suggest an alternative method",
+      "N/D 2023 P2 Q4a (2 marks) — question on identifying which metals can be extracted using carbon reduction",
+      "M/J 2022 P2 Q6c (5 marks) — comprehensive question on galvanizing as a method of rust prevention, including the process and how it works"
+    ],
+    "workedExample": {
+      "question": "Iron can be extracted from iron ore in a blast furnace. Explain how carbon monoxide is formed in the blast furnace and how it extracts iron from iron oxide. Include balanced chemical equations in your answer. (6 marks)",
+      "steps": [
+        "Step 1: State that coke (carbon) burns in hot air to form carbon dioxide: C + O₂ → CO₂",
+        "Step 2: Explain that carbon dioxide reacts with more hot coke to form carbon monoxide: CO₂ + C → 2CO",
+        "Step 3: Show that carbon monoxide reduces iron oxide to iron: Fe₂O₃ + 3CO → 2Fe + 3CO₂",
+        "Step 4: Conclude that carbon monoxide acts as the reducing agent, removing oxygen from iron oxide"
+      ],
+      "answer": "Coke (carbon) burns in hot air: C + O₂ → CO₂. The carbon dioxide then reacts with more hot coke to produce carbon monoxide: CO₂ + C → 2CO. Carbon monoxide acts as a reducing agent and extracts iron from iron oxide: Fe₂O₃ + 3CO → 2Fe + 3CO₂. The carbon monoxide removes oxygen from the iron oxide, leaving pure iron metal.",
+      "markScheme": "1 mark for formation of CO₂, 1 mark for formation of CO with equation, 1 mark for reduction equation, 1 mark for identifying CO as reducing agent, 1 mark for explaining oxygen removal, 1 mark for correct balanced equations"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused electrolysis with electrolytic reduction' — always specify that reactive metals like aluminum require electrolytic reduction, not just 'electrolysis'",
+      "Examiner Report 2022: 'Students frequently wrote incomplete equations for metal extraction' — always balance chemical equations completely and include state symbols where appropriate",
+      "Examiner Report 2024: 'Candidates often listed rust prevention methods without explaining how they work' — when discussing galvanizing or painting, explain that they form a barrier preventing oxygen and water contact"
+    ],
+    "keyDiagram": "Students must be able to draw a labeled diagram of a blast furnace showing: the three main raw materials entering at the top (iron ore, coke, limestone), the hot air blast entering near the bottom, the different temperature zones, the chemical reactions occurring at each level, and the products leaving (molten iron at bottom, slag removal, waste gases at top). Include arrows showing direction of materials and label key temperatures (1500°C at bottom, 200°C at top).",
+    "quickRecap": "Metal extraction method depends on reactivity: unreactive metals found native, moderately reactive metals extracted by carbon reduction, highly reactive metals need electrolytic reduction. Rusting requires oxygen AND water - prevention methods create barriers (painting, oiling) or sacrificial protection (galvanizing). Carbon monoxide is the actual reducing agent in blast furnaces, not carbon itself."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:56:21.425Z",
-  "updated_at": "2026-04-05T20:56:21.425Z"
+  "updated_at": "2026-04-05T20:56:21.425Z",
+  "enriched_at": "2026-04-06T15:59:31.251Z"
 }

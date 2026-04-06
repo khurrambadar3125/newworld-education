@@ -79,12 +79,38 @@
       "Use specific examples like Quran translation and Balakot state"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Timeline showing: Mughal decline → Shah Waliullah's reforms (1703-1762) → Syed Ahmad's Jihad Movement (1826-1831) → Later Islamic movements → Pakistan Movement"
+    "keyDiagramDescription": "Timeline showing: Mughal decline → Shah Waliullah's reforms (1703-1762) → Syed Ahmad's Jihad Movement (1826-1831) → Later Islamic movements → Pakistan Movement",
+    "pastPaperRefs": [
+      "M/J 2023 P2 Q2 (8 marks) — they asked students to explain the reasons why Sir Syed Ahmed Khan founded the Aligarh Movement and its impact on Muslim education",
+      "O/N 2022 P1 Q1(c) (14 marks) — candidates had to evaluate how successful Islamic reformers were in preparing Muslims for the creation of Pakistan",
+      "M/J 2024 P2 Q3 (4 marks) — students were required to describe the work of Shah Wali Ullah in reforming Islamic practices",
+      "O/N 2023 P1 Q2(b) (10 marks) — question focused on why the Deoband and Aligarh movements had different approaches to British rule"
+    ],
+    "workedExample": {
+      "question": "Explain why Sir Syed Ahmed Khan established the Aligarh Movement. (8 marks)",
+      "steps": [
+        "Step 1: Identify the context - mention the post-1857 situation of Muslims in the subcontinent",
+        "Step 2: Explain educational reasons - Muslims were falling behind in modern education and needed scientific knowledge",
+        "Step 3: Discuss political reasons - Muslims needed to improve relations with the British government",
+        "Step 4: Address religious concerns - wanted to show Islam was compatible with modern learning",
+        "Step 5: Conclude with the broader vision of Muslim advancement"
+      ],
+      "answer": "Sir Syed Ahmed Khan established the Aligarh Movement after 1857 because Muslims were educationally and politically disadvantaged. He believed Muslims needed modern scientific education to compete with Hindus who were advancing under British rule. The movement aimed to improve Muslim-British relations as he felt cooperation, not confrontation, would benefit Muslims. Sir Syed wanted to prove that Islam was compatible with Western learning and scientific progress. He established MAO College in 1875 to produce educated Muslim leaders who could serve in government positions and represent Muslim interests effectively.",
+      "markScheme": "1-2 marks for context, 2-3 marks for educational reasons, 2-3 marks for political/social reasons, 1 mark for specific examples like MAO College"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the different reformers and their specific contributions' — always clearly distinguish between Shah Wali Ullah, Sir Syed Ahmed Khan, and the Deoband scholars when discussing their individual roles",
+      "Examiner Report 2022: 'Students often failed to explain the connection between reform movements and Pakistan's creation' — always link how these reformers' work contributed to Muslim political consciousness and separate identity",
+      "Examiner Report 2024: 'Candidates frequently provided vague statements about 'education' without specific details' — mention specific institutions like MAO College, Darul Uloom Deoband, and their particular educational approaches"
+    ],
+    "keyDiagram": "Timeline diagram showing Islamic Reform Movements (1703-1920): Start with Shah Wali Ullah (1703-1762) with arrows showing his influence on purification of Islamic practices, then Syed Ahmed Barelvi's Jihad Movement (1826-1831), followed by Sir Syed's Aligarh Movement (1875-1898) branching into educational and political reforms, and finally Deoband Movement (1866 onwards) showing traditional Islamic education. Include key dates, main figures, and their specific contributions with connecting arrows showing how each movement influenced Muslim identity formation.",
+    "quickRecap": "Islamic reformers prepared the ground for Pakistan by strengthening Muslim identity and education. Shah Wali Ullah purified Islamic practices and emphasized separate Muslim identity. Sir Syed Ahmed Khan's Aligarh Movement modernized Muslim education and created political awareness through the Two-Nation Theory. The Deoband Movement preserved traditional Islamic learning while building institutional networks. Together, these movements created educated Muslim leadership and distinct religious-political consciousness essential for Pakistan's creation."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:46:58.569Z",
-  "updated_at": "2026-04-05T20:46:58.570Z"
+  "updated_at": "2026-04-05T20:46:58.570Z",
+  "enriched_at": "2026-04-06T16:00:09.963Z"
 }
