@@ -62,11 +62,17 @@ async function extractPDFText(filePath, maxPages = 50) {
     const content = await page.getTextContent();
     pages.push(content.items.map(item => item.str).join(' '));
   }
-  return { text: pages.join('\n\n'), numPages: doc.numPages, processed: numToProcess };
+  // Clean text — remove null bytes, control chars, excessive whitespace
+  const cleanText = pages.join('\n\n')
+    .replace(/\0/g, '')
+    .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, ' ')
+    .replace(/\s{3,}/g, '  ')
+    .trim();
+  return { text: cleanText, numPages: doc.numPages, processed: numToProcess };
 }
 
 // ── Chunk text ──────────────────────────────────────
-function chunkText(text, maxChars = 6000) {
+function chunkText(text, maxChars = 4000) {
   const chunks = [];
   let start = 0;
   while (start < text.length) {
@@ -83,27 +89,18 @@ function chunkText(text, maxChars = 6000) {
 
 // ── Extract questions from chunk ──────────────────────────────
 async function extractFromChunk(chunk, meta) {
-  const prompt = `You extract Cambridge O Level ${meta.subject} (${meta.code}) exam questions from a topical past paper PDF.
+  // Clean the chunk for JSON safety
+  const safeChunk = chunk
+    .replace(/[\u0000-\u001F\u007F-\u009F]/g, ' ')
+    .replace(/\s{3,}/g, '  ')
+    .slice(0, 4000);
 
-This is from ${meta.paper || 'a past paper'} organized by topic. Extract ALL questions you can find.
-
-For MCQs: Extract question, all options (A-D), and correct answer.
-For structured questions: Extract question text, marks, and the mark scheme answer if visible.
-
-RULES:
-- Keep question text concise but complete (include data/values given)
-- Identify the TOPIC for each question (e.g., "Atomic Structure", "Electrochemistry", "Forces")
-- Set verified=true only if you can see the correct answer/mark scheme
-- Include the exam session if visible (e.g., "M/J 2019 P2 Q3")
-- Output ONLY a JSON array
+  const prompt = `Extract Cambridge ${meta.subject} exam questions from this text. For MCQs include options A-D and correct answer. For structured questions include marks and answer. Identify the topic. Return ONLY a JSON array:
+[{"question":"text","type":"mcq or structured","options":{"A":"opt","B":"opt","C":"opt","D":"opt"},"correctAnswer":"B","topic":"topic name","marks":1,"verified":true}]
+If no questions found return []
 
 TEXT:
-${chunk}
-
-Extract as JSON array:
-[{"question":"text","type":"mcq"|"structured","options":{"A":"...","B":"...","C":"...","D":"..."}|null,"correctAnswer":"answer","topic":"specific topic","marks":1,"session":"M/J 2019"|null,"verified":true|false}]
-
-If NO questions found, return: []`;
+${safeChunk}`;
 
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
@@ -114,12 +111,12 @@ If NO questions found, return: []`;
     },
     body: JSON.stringify({
       model: MODEL,
-      max_tokens: 8192,
+      max_tokens: 4000,
       messages: [{ role: 'user', content: prompt }],
     }),
   });
 
-  if (!res.ok) { const err = await res.text(); throw new Error(`API ${res.status}: ${err.slice(0, 100)}`); }
+  if (!res.ok) { const err = await res.text(); throw new Error(`API ${res.status}: ${err.slice(0, 200)}`); }
   const data = await res.json();
   let raw = data.content?.filter(b => b.type === 'text').map(b => b.text).join('').trim().replace(/```json|```/g, '').trim();
   const jsonStart = raw.indexOf('[');
@@ -139,11 +136,11 @@ async function saveToSupabase(questions, meta) {
       difficulty: 'medium',
       type: q.type === 'mcq' ? 'mcq' : 'structured',
       curriculum: 'cambridge',
-      question_text: q.question,
-      options: q.options || null,
-      correct_answer: q.correctAnswer || '',
-      mark_scheme: q.type !== 'mcq' ? (q.correctAnswer || '') : null,
-      marks: q.marks || 1,
+      question_text: (q.question || '').slice(0, 2000),
+      options: (q.options && typeof q.options === 'object') ? q.options : null,
+      correct_answer: String(q.correctAnswer || '').slice(0, 500),
+      mark_scheme: q.type !== 'mcq' ? String(q.correctAnswer || '').slice(0, 1000) : null,
+      marks: parseInt(q.marks) || 1,
       source: 'past_paper',
       source_paper: q.session || meta.paper || null,
       verified: q.verified !== false,
@@ -162,7 +159,11 @@ async function saveToSupabase(questions, meta) {
           body,
         });
         if (res.ok) { saved++; break; }
-        else { if (attempt === 2) errors++; await new Promise(r => setTimeout(r, 2000)); }
+        else {
+          const errText = await res.text();
+          if (attempt === 2) { errors++; if (errors <= 3) console.log(`    Save error: ${errText.slice(0, 150)}`); }
+          await new Promise(r => setTimeout(r, 2000));
+        }
       } catch { if (attempt === 2) errors++; await new Promise(r => setTimeout(r, 2000)); }
     }
   }
