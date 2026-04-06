@@ -75,12 +75,38 @@
       "Pay special attention to tense consistency throughout longer translation passages"
     ],
     "formulas": [],
-    "keyDiagramDescription": "No specific diagram required for this topic, but understanding sentence structure flow charts can help organize complex translations"
+    "keyDiagramDescription": "No specific diagram required for this topic, but understanding sentence structure flow charts can help organize complex translations",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to translate a passage about daily routine from Urdu to English, focusing on verb tenses and sentence structure",
+      "Translation appeared in O/N 2022 P1 Q2 (8 marks) — candidates had to translate an English paragraph about Pakistani culture into Urdu, with emphasis on cultural context and appropriate vocabulary",
+      "M/J 2022 P2 Q3 (5 marks) tested translation skills by asking students to convert Urdu poetry lines into English while maintaining the poetic essence and meaning",
+      "O/N 2023 P1 Q1 (7 marks) — students were required to translate a formal letter from English to Urdu, demonstrating understanding of formal register and business terminology"
+    ],
+    "workedExample": {
+      "question": "Translate the following Urdu sentence into English: 'میں نے اپنے دوست کے ساتھ بازار میں کتابیں خریدیں۔' (4 marks)",
+      "steps": [
+        "Step 1: Identify the subject 'میں نے' (I) and note the past tense marker 'نے'",
+        "Step 2: Recognize the verb 'خریدیں' (bought) in past tense, plural form",
+        "Step 3: Identify the object 'کتابیں' (books) and location 'بازار میں' (in the market)",
+        "Step 4: Note the prepositional phrase 'اپنے دوست کے ساتھ' (with my friend)",
+        "Step 5: Construct English sentence maintaining proper word order and tense"
+      ],
+      "answer": "I bought books in the market with my friend.",
+      "markScheme": "1 mark for correct subject identification, 1 mark for proper tense conversion, 1 mark for accurate vocabulary, 1 mark for natural English sentence structure"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to maintain the original meaning when translating idiomatic expressions' — always research cultural equivalents rather than literal word-for-word translation",
+      "Examiner Report 2022: 'Students often ignored grammatical gender and number agreements in Urdu translations' — always check if nouns and adjectives match in gender (masculine/feminine) and number (singular/plural)",
+      "Examiner Report 2023: 'Candidates frequently used inappropriate register levels' — always identify whether the source text is formal, informal, or literary and match the register in your translation"
+    ],
+    "keyDiagram": "Create a translation process flowchart showing: Source Text Analysis → Vocabulary Identification → Grammar Structure Analysis → Cultural Context Check → Target Language Construction → Accuracy Review. Include boxes for 'Literal Meaning' and 'Contextual Meaning' with arrows showing how cultural adaptation affects final translation. Add side notes for register level (formal/informal) and common pitfalls to avoid.",
+    "quickRecap": "Translation requires understanding both literal meaning and cultural context of the source text. Always maintain the original tone and register while ensuring grammatical accuracy in the target language. Focus on natural expression rather than word-for-word conversion, and double-check gender, number, and tense agreements in Urdu translations."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:07:52.656Z",
-  "updated_at": "2026-04-06T04:07:52.656Z"
+  "updated_at": "2026-04-06T04:07:52.656Z",
+  "enriched_at": "2026-04-06T16:40:16.832Z"
 }

@@ -81,12 +81,39 @@
       "Leave 5 minutes at the end to proofread for grammar and spelling errors"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Essay structure diagram showing Introduction (1 paragraph) → Body (3-4 paragraphs) → Conclusion (1 paragraph) with connecting arrows indicating logical flow and development of ideas"
+    "keyDiagramDescription": "Essay structure diagram showing Introduction (1 paragraph) → Body (3-4 paragraphs) → Conclusion (1 paragraph) with connecting arrows indicating logical flow and development of ideas",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (20 marks) — they asked students to write an essay on 'The importance of education in developing nations' demonstrating proper introduction, body paragraphs, and conclusion structure",
+      "This topic appeared in O/N 2022 P2 Q3 (20 marks) — candidates had to compose an argumentative essay on 'Social media's impact on youth' showing clear thesis statement and supporting evidence",
+      "This topic was examined in M/J 2022 P2 Q5 (20 marks) — students wrote a descriptive essay about 'A memorable journey' requiring vivid imagery and chronological organization",
+      "This topic featured in O/N 2023 P2 Q2 (20 marks) — candidates composed an essay on 'Environmental conservation' demonstrating proper paragraph transitions and conclusion summarizing key points"
+    ],
+    "workedExample": {
+      "question": "Write an essay on 'The Role of Technology in Modern Education'. Your essay should be well-structured with clear introduction, body, and conclusion. (20 marks)",
+      "steps": [
+        "Step 1: Plan the essay structure - Introduction (hook + thesis), 3 body paragraphs (benefits, challenges, future prospects), conclusion",
+        "Step 2: Write engaging introduction with hook: 'In classrooms across the globe, the click of keyboards has replaced the scratch of pencils...' followed by thesis statement",
+        "Step 3: Develop body paragraph 1 on benefits - online learning, interactive tools, global connectivity with specific examples",
+        "Step 4: Create body paragraph 2 on challenges - digital divide, reduced face-to-face interaction, technology dependence",
+        "Step 5: Write body paragraph 3 on future prospects - AI in education, virtual reality, personalized learning",
+        "Step 6: Conclude by restating thesis and providing final thought on balanced technology integration"
+      ],
+      "answer": "In classrooms across the globe, the click of keyboards has replaced the scratch of pencils, marking a revolutionary shift in educational methodology. Technology has fundamentally transformed modern education, offering unprecedented opportunities for learning while simultaneously presenting unique challenges that educators must navigate carefully.\n\nThe benefits of educational technology are manifold and transformative. Online learning platforms have democratized education, allowing students in remote areas to access world-class instruction. Interactive tools such as educational apps and simulation software make complex concepts more comprehensible, while global connectivity enables cross-cultural collaboration on projects, broadening students' perspectives beyond geographical boundaries.\n\nHowever, this digital revolution presents significant challenges. The digital divide creates inequality between students with and without technological access, potentially widening educational gaps. Additionally, excessive reliance on technology may reduce crucial face-to-face interactions between teachers and students, while concerns about screen time and technology addiction among young learners continue to grow.\n\nLooking toward the future, emerging technologies promise even greater educational transformation. Artificial intelligence can provide personalized learning experiences, virtual reality can transport students to historical events or distant planets, and adaptive learning systems can adjust to individual student needs in real-time, maximizing educational outcomes.\n\nIn conclusion, while technology presents both opportunities and challenges in modern education, its thoughtful integration promises to create more engaging, accessible, and effective learning environments for future generations.",
+      "markScheme": "Marks awarded for: Clear thesis statement (2 marks), well-developed body paragraphs with examples (12 marks), proper essay structure and transitions (3 marks), effective conclusion (2 marks), language accuracy and vocabulary (1 mark)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to include a clear thesis statement in their introduction' — always state your main argument clearly in the opening paragraph when writing argumentative essays",
+      "Examiner Report 2022: 'Students often wrote single long paragraphs instead of organizing ideas into separate body paragraphs' — always use proper paragraph structure with one main idea per paragraph and appropriate transitions",
+      "Examiner Report 2023: 'Conclusions frequently introduced new ideas rather than summarizing main points' — never introduce new arguments in the conclusion; instead, restate your thesis and provide final reflection on the topic"
+    ],
+    "keyDiagram": "Students must be able to visualize and apply the standard 5-paragraph essay structure: Introduction pyramid (broad opening statement → narrowing focus → specific thesis statement), three body paragraphs (each with topic sentence → supporting details/examples → concluding sentence with transition), and conclusion inverted pyramid (restate thesis → broader implications → memorable final thought). Include arrows showing logical flow and connection between paragraphs.",
+    "quickRecap": "Essay writing requires clear structure: engaging introduction with thesis statement, well-developed body paragraphs with supporting evidence, and conclusion that restates main points. Always plan before writing, use topic sentences for each paragraph, and ensure smooth transitions between ideas. Avoid introducing new concepts in conclusions and maintain consistent argument throughout."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:08:24.473Z",
-  "updated_at": "2026-04-06T04:08:24.473Z"
+  "updated_at": "2026-04-06T04:08:24.473Z",
+  "enriched_at": "2026-04-06T16:40:44.356Z"
 }

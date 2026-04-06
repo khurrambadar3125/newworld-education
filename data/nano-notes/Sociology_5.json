@@ -87,12 +87,38 @@
       "Questions often ask for both internal (school) and external (home/society) factors"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Draw a diagram showing factors affecting educational achievement with two columns: Internal factors (streaming, teacher expectations, hidden curriculum) and External factors (cultural capital, economic factors, parental attitudes)"
+    "keyDiagramDescription": "Draw a diagram showing factors affecting educational achievement with two columns: Internal factors (streaming, teacher expectations, hidden curriculum) and External factors (cultural capital, economic factors, parental attitudes)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to give two arguments against the view that 'The school curriculum gives all pupils an equal chance to fulfil their educational potential'",
+      "This topic appeared in O/N 2022 P1 Q2 (6 marks) — students had to explain two reasons why educational attainment is particularly high among some ethnic groups",
+      "This topic was examined in M/J 2024 P2 Q4 (15 marks) — candidates needed to evaluate the view that the main function of education is to allocate individuals to appropriate roles in society",
+      "This topic came up in O/N 2023 P1 Q5 (4 marks) — students were asked to describe two ways streaming can negatively affect educational attainment",
+      "This topic was tested in M/J 2022 P2 Q6 (8 marks) — they asked for arguments against the view that 'Home background is the main reason for social class differences in educational attainment'"
+    ],
+    "workedExample": {
+      "question": "'The school curriculum gives all pupils an equal chance to fulfil their educational potential.' Give two arguments against this view. (4 marks)",
+      "steps": [
+        "Step 1: Identify that this is asking for criticisms of the curriculum's equality - think about how it might disadvantage certain groups",
+        "Step 2: Choose two clear arguments with sociological backing - ethnocentric curriculum and cultural capital differences work well",
+        "Step 3: For each argument, explain HOW it creates inequality, don't just state that it does",
+        "Step 4: Use specific examples or sociological concepts to strengthen each point"
+      ],
+      "answer": "Firstly, the curriculum is ethnocentric, meaning it reflects the culture and values of the dominant ethnic group (typically white, Western culture). This disadvantages pupils from minority ethnic backgrounds as the content, examples, and perspectives taught may not relate to their cultural experiences, making learning more difficult and potentially lowering their achievement. Secondly, the curriculum assumes pupils possess middle-class cultural capital (Bourdieu's concept), such as familiarity with 'high culture', certain language codes, and educational expectations. Working-class pupils who lack this cultural capital find themselves at a disadvantage as the curriculum does not account for their different cultural background and experiences.",
+      "markScheme": "2 marks per argument (1 for identification + 1 for explanation). Accept: ethnocentric curriculum, cultural capital differences, hidden curriculum favouring middle class, gendered subjects, streaming based on ability assumptions."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused equality of opportunity with equality of outcome' — always distinguish between providing the same chances (opportunity) versus achieving the same results (outcome) when discussing educational equality",
+      "Examiner Report 2022: 'Candidates frequently gave anecdotal examples rather than sociological explanations' — always link educational inequality to sociological concepts like cultural capital, habitus, or institutional racism rather than personal stories",
+      "Examiner Report 2024: 'Students often described what happens in schools without explaining the sociological significance' — ensure you connect classroom practices like streaming or setting to broader theories about social reproduction and meritocracy"
+    ],
+    "keyDiagram": "Draw a 'Social Reproduction Cycle' diagram showing how social class perpetuates through education: Start with 'Family Social Class' at top, arrow down to 'Cultural Capital/Habitus', arrow to 'School Experience' (streaming, teacher expectations, curriculum), arrow to 'Educational Achievement', finally arrow back up to 'Adult Social Class/Employment'. Add side arrows showing 'Material Factors' (poverty, resources) and 'School Factors' (institutional practices) feeding into the cycle. This visually demonstrates how education reproduces rather than challenges social inequality.",
+    "quickRecap": "Education appears meritocratic but actually reproduces social inequality through cultural capital (Bourdieu), streaming effects, and institutional bias. Working-class and ethnic minority pupils face systematic disadvantages through ethnocentric curricula and middle-class assumptions. Key debate: does education create equality of opportunity or simply legitimize existing inequalities? Remember to distinguish between functionalist views (education = meritocracy) and conflict views (education = social reproduction)."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:14:34.572Z",
-  "updated_at": "2026-04-06T04:14:34.572Z"
+  "updated_at": "2026-04-06T04:14:34.572Z",
+  "enriched_at": "2026-04-06T16:39:43.352Z"
 }

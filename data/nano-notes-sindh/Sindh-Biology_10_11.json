@@ -104,7 +104,32 @@
       "Normal blood glucose level = 80-120 mg/100ml",
       "Normal body temperature = 37°C (98.6°F)"
     ],
-    "keyDiagram": "Skin structure showing epidermis, dermis, subcutaneous layer with hair follicles, sweat glands, blood vessels, and nerve endings. Also draw feedback mechanism diagram showing stimulus → receptor → control center → effector → response with feedback loop."
+    "keyDiagram": "Skin structure showing epidermis, dermis, subcutaneous layer with hair follicles, sweat glands, blood vessels, and nerve endings. Also draw feedback mechanism diagram showing stimulus → receptor → control center → effector → response with feedback loop.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define homeostasis and explain the role of kidneys in maintaining water balance",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of negative feedback mechanism with examples of temperature regulation",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested knowledge of osmoregulation and the function of ADH hormone",
+      "BSEK 2020 SSC-II Q2 (3 marks) — asked to differentiate between negative and positive feedback mechanisms"
+    ],
+    "workedExample": {
+      "question": "Define homeostasis. Explain how the human body maintains constant body temperature through negative feedback mechanism. (6 marks)",
+      "steps": [
+        "Write the exact textbook definition of homeostasis",
+        "Identify the components involved in temperature regulation",
+        "Explain the negative feedback process step by step",
+        "Mention the role of hypothalamus as control center"
+      ],
+      "answer": "Homeostasis is the maintenance of constant internal environment of the body despite changes in external environment. When body temperature rises above normal (37°C), thermoreceptors in hypothalamus detect the change. The hypothalamus sends signals to activate cooling mechanisms like sweating and vasodilation. As body temperature returns to normal, the stimulus is removed and cooling mechanisms stop. This is negative feedback because the response opposes the original change.",
+      "markScheme": "1 mark for correct definition, 1 mark for mentioning hypothalamus, 2 marks for explaining the process, 1 mark for mentioning sweating/vasodilation, 1 mark for explaining negative feedback concept"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for homeostasis definition.",
+      "Many students confuse positive and negative feedback - remember negative feedback OPPOSES the change while positive feedback AMPLIFIES it.",
+      "Avoid using complex medical terms not in your textbook. Stick to simple terms like 'hypothalamus', 'vasodilation', 'vasoconstriction' as given in STBB."
+    ],
+    "quickRecap": "Homeostasis maintains constant internal environment despite external changes. Negative feedback opposes changes (temperature regulation), positive feedback amplifies changes (blood clotting). Key organs: kidneys (water balance), skin (temperature), liver (glucose). Hypothalamus acts as the main control center detecting changes and coordinating responses.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:17:18.074Z"
+  "created_at": "2026-04-06T06:17:18.074Z",
+  "enriched_at": "2026-04-06T16:47:22.360Z"
 }

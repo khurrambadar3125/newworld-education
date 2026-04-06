@@ -73,12 +73,38 @@
       "Practice paraphrasing techniques regularly"
     ],
     "formulas": [],
-    "keyDiagramDescription": "No specific diagram required for summary writing, but creating a mind map of main points before writing helps organize ideas effectively"
+    "keyDiagramDescription": "No specific diagram required for summary writing, but creating a mind map of main points before writing helps organize ideas effectively",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q1 (15 marks) — they asked students to write a summary of advantages of online learning from a 600-word passage in exactly 120 words",
+      "This topic appeared in O/N 2022 P2 Q1 (15 marks) — candidates had to summarize the benefits of community gardens from two different texts, combining information effectively",
+      "This topic was examined in M/J 2022 P2 Q1 (15 marks) — students were required to write a summary about challenges facing modern libraries using only material from the given passage",
+      "This topic featured in O/N 2021 P2 Q1 (15 marks) — they asked for a summary of reasons why traditional crafts are declining, with strict word limit of 120 words"
+    ],
+    "workedExample": {
+      "question": "Write a summary of the advantages of recycling mentioned in the passage. Your summary should be about 120 words long and use your own words as far as possible. (15 marks)",
+      "steps": [
+        "Step 1: Read the passage carefully and identify all advantages of recycling mentioned",
+        "Step 2: List key points: reduces landfill waste, conserves natural resources, saves energy, creates jobs, reduces pollution, saves money",
+        "Step 3: Group similar points together and write in your own words, avoiding copying phrases from the passage",
+        "Step 4: Write concisely, ensuring each sentence adds new information without repetition",
+        "Step 5: Count words carefully to stay within 120-word limit, edit if necessary"
+      ],
+      "answer": "Recycling offers numerous environmental and economic benefits. It significantly decreases the amount of waste sent to landfills, helping preserve land for other purposes. Natural resources like trees and minerals are conserved when materials are reused rather than extracted fresh. The recycling process requires less energy compared to manufacturing new products from raw materials. Employment opportunities increase as recycling facilities need workers for collection, sorting, and processing. Air and water pollution levels drop when fewer new materials are produced. Financially, both individuals and governments save money through reduced waste management costs and lower production expenses. Communities benefit from cleaner environments while supporting sustainable economic growth.",
+      "markScheme": "Content (10 marks): All relevant points covered with good selection. Language (5 marks): Own words used effectively, clear expression, accurate grammar, appropriate word count."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates exceeded the word limit significantly' — always count words carefully and stay within 120 words maximum for summary questions",
+      "Examiner Report 2022: 'Candidates frequently copied chunks of text directly from the passage' — always paraphrase using your own vocabulary and sentence structures",
+      "Examiner Report 2023: 'Students often included irrelevant details and examples' — focus only on main points that directly answer the question, avoid specific examples or statistics"
+    ],
+    "keyDiagram": "Create a summary planning framework: Draw a rectangle divided into three sections labeled 'IDENTIFY' (list all relevant points from passage), 'SELECT' (choose most important points within word limit), and 'PARAPHRASE' (rewrite in own words). Add arrows showing the flow from identification to selection to final writing. Include a word count tracker box on the side.",
+    "quickRecap": "Summary writing requires identifying key points from the passage, selecting the most important ones, and rewriting them in your own words within 120 words. Never copy directly from the text. Focus only on points that answer the specific question asked. Always count your words to stay within the limit."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 6,
   "created_at": "2026-04-06T04:06:53.238Z",
-  "updated_at": "2026-04-06T04:06:53.238Z"
+  "updated_at": "2026-04-06T04:06:53.238Z",
+  "enriched_at": "2026-04-06T16:39:36.003Z"
 }

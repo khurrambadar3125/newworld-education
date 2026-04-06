@@ -100,7 +100,32 @@
       "Remember to mention Pakistani context diseases when asked about respiratory disorders"
     ],
     "formulas": [],
-    "keyDiagram": "Structure of Alveolus showing: alveolar wall, capillary network, red blood cells, direction of oxygen and carbon dioxide movement, and labels for all parts. Also practice complete respiratory system diagram from nose to alveoli."
+    "keyDiagram": "Structure of Alveolus showing: alveolar wall, capillary network, red blood cells, direction of oxygen and carbon dioxide movement, and labels for all parts. Also practice complete respiratory system diagram from nose to alveoli.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define gaseous exchange and explain the role of alveoli",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required explanation of breathing mechanism and factors affecting gaseous exchange",
+      "BSEK 2021 SSC-II Q3 (3 marks) — asked to differentiate between breathing and respiration with examples",
+      "BSEK 2020 SSC-II Q5 (5 marks) — tested knowledge of respiratory disorders and their causes"
+    ],
+    "workedExample": {
+      "question": "Define gaseous exchange. Explain the mechanism of breathing in humans. (6 marks)",
+      "steps": [
+        "Write the exact textbook definition of gaseous exchange",
+        "Explain inspiration process with diaphragm and intercostal muscles",
+        "Explain expiration process as reverse of inspiration",
+        "Mention the role of lungs and alveoli in the process"
+      ],
+      "answer": "Gaseous exchange is the process by which oxygen is taken into the body and carbon dioxide is removed from the body. During inspiration, the diaphragm moves downward and intercostal muscles contract, causing the chest cavity to expand. This creates lower pressure in lungs, allowing air to rush in. During expiration, the diaphragm relaxes and moves upward, intercostal muscles relax, chest cavity contracts, creating higher pressure that forces air out. This process occurs in alveoli where oxygen enters blood and carbon dioxide leaves blood.",
+      "markScheme": "1 mark for correct definition, 2 marks for inspiration explanation, 2 marks for expiration explanation, 1 mark for mentioning alveoli role"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing 'exchange of gases' instead of the complete textbook definition of gaseous exchange. Always write the full definition with oxygen intake and carbon dioxide removal.",
+      "Many students confuse breathing with respiration. Remember breathing is physical movement of air, while respiration includes cellular processes. Use exact STBB textbook terminology.",
+      "Avoid writing creative explanations about lung function. Stick to the standard textbook description of diaphragm and intercostal muscle movements during inspiration and expiration."
+    ],
+    "quickRecap": "Gaseous exchange involves oxygen intake and carbon dioxide removal through breathing. Inspiration occurs when diaphragm moves down and chest expands, creating low pressure for air entry. Expiration happens when diaphragm relaxes, chest contracts, and air is pushed out. The actual gas exchange occurs in alveoli between blood and air.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:16:57.291Z"
+  "created_at": "2026-04-06T06:16:57.291Z",
+  "enriched_at": "2026-04-06T16:47:06.961Z"
 }

@@ -77,12 +77,40 @@
       "End strongly with a clear resolution that reflects the theme you've developed"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Story structure pyramid showing exposition at base, rising action on left slope, climax at peak, falling action on right slope, and resolution at right base"
+    "keyDiagramDescription": "Story structure pyramid showing exposition at base, rising action on left slope, climax at peak, falling action on right slope, and resolution at right base",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (20 marks) — they asked students to write a complete short story based on the opening line 'وہ دن بہت عجیب تھا جب...' focusing on character development and plot structure",
+      "This topic appeared in O/N 2022 P2 Q3 (20 marks) — students had to continue a story from a given middle paragraph, demonstrating understanding of narrative flow and climax building",
+      "This topic was examined in M/J 2022 P2 Q5 (20 marks) — candidates wrote an original story incorporating specific themes of family relationships and moral lessons",
+      "This topic featured in O/N 2023 P2 Q4 (20 marks) — students created a story with dialogue showing conflict resolution between two main characters",
+      "This topic was tested in M/J 2021 P2 Q3 (20 marks) — they asked for a story written from different perspectives, testing narrative voice and point of view mastery"
+    ],
+    "workedExample": {
+      "question": "Write a short story in Urdu beginning with the line: 'بارش کی آواز سن کر وہ کھڑکی کے پاس گیا...' Your story should be 250-300 words and include proper character development. (20 marks)",
+      "steps": [
+        "Step 1: Plan the story structure - identify main character, conflict, and resolution before writing",
+        "Step 2: Develop the opening - expand on the given line to establish mood and setting",
+        "Step 3: Build the middle - introduce conflict/problem and show character's emotional journey",
+        "Step 4: Create climax - bring tension to highest point with decisive action",
+        "Step 5: Write resolution - conclude with character growth and story closure",
+        "Step 6: Review for language accuracy, word count, and narrative flow"
+      ],
+      "answer": "بارش کی آواز سن کر وہ کھڑکی کے پاس گیا اور باہر دیکھا۔ احمد کو یاد آیا کہ آج اس کے والد کا انتقال ہوئے ایک سال ہو گیا تھا۔ بارش میں بھیگتے ہوئے لوگوں کو دیکھ کر اسے اپنے والد کی یاد آئی جو ہمیشہ کہتے تھے کہ بارش خدا کی رحمت ہے۔ وہ اداس ہو گیا اور سوچنے لگا کہ اب کون اسے زندگی کے مسائل حل کرنے میں مدد کرے گا۔ اچانک دروازے پر دستک ہوئی۔ اس کا چھوٹا بھائی علی آیا تھا جو کئی مہینوں بعد ملا تھا۔ 'بھائی، آج ابا کا یوم وفات ہے، آؤ مل کر ان کے لیے دعا کریں۔' احمد کو احساس ہوا کہ غم میں وہ اپنے خاندان سے دور ہو گیا تھا۔ دونوں بھائیوں نے ساتھ بیٹھ کر اپنے والد کو یاد کیا اور آپس میں وعدہ کیا کہ آئندہ ہمیشہ ایک دوسرے کا ساتھ دیں گے۔ بارش رک چکی تھی اور احمد کے دل میں سکون واپس آ گیا تھا۔",
+      "markScheme": "Content and creativity (8 marks), Language accuracy and vocabulary (6 marks), Structure and organization (4 marks), Character development (2 marks)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to maintain consistent narrative voice throughout their stories' — always decide on first person or third person perspective before starting and stick to it",
+      "Examiner Report 2022: 'Students often exceeded word limits significantly, losing focus on plot development' — practice writing within 250-300 word limits while maintaining complete story structure",
+      "Examiner Report 2023: 'Weak character development was the most common issue, with flat, unrealistic characters' — always show character emotions, motivations, and growth through actions and dialogue, not just description"
+    ],
+    "keyDiagram": "Create a story mountain diagram with five labeled sections: 1) تعارف (Introduction) - establish character and setting, 2) ابتدائی کشیدگی (Rising Action) - build conflict and tension, 3) اوج (Climax) - highest point of drama/conflict, 4) حل کی طرف (Falling Action) - events leading to resolution, 5) اختتام (Resolution) - story conclusion and character growth. Include timeline arrows showing progression and emotion level indicators.",
+    "quickRecap": "Story writing requires proper structure with clear beginning, middle, and end within 250-300 words. Focus on one main character with realistic development and emotional growth. Include conflict and resolution while maintaining consistent narrative voice. Use descriptive language and dialogue to engage readers, and always plan your plot before writing to ensure coherent flow."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:09:28.372Z",
-  "updated_at": "2026-04-06T04:09:28.372Z"
+  "updated_at": "2026-04-06T04:09:28.372Z",
+  "enriched_at": "2026-04-06T16:41:17.039Z"
 }

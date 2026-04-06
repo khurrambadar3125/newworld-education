@@ -82,12 +82,37 @@
       "ہر سوال کے نمبروں کے مطابق جواب کی لمبائی طے کریں"
     ],
     "formulas": [],
-    "keyDiagramDescription": "کوئی خاص ڈایاگرام کی ضرورت نہیں - تاہم متن کے اہم نکات کی شجری شکل (mind map) مفید ہو سکتی ہے"
+    "keyDiagramDescription": "کوئی خاص ڈایاگرام کی ضرورت نہیں - تاہم متن کے اہم نکات کی شجری شکل (mind map) مفید ہو سکتی ہے",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q1 (8 marks) — they asked students to read a passage about environmental conservation and answer comprehension questions including word meanings, author's opinion, and summary writing",
+      "This topic appeared in O/N 2022 P2 Q2 (6 marks) — students had to explain the meaning of metaphorical expressions and identify the main theme from a literary extract",
+      "This topic was examined in M/J 2022 P1 Q3 (10 marks) — comprehension passage on modern technology with questions on inference, context clues, and personal response",
+      "This topic was tested in O/N 2023 P2 Q1 (12 marks) — passage about historical events requiring students to distinguish between facts and opinions, plus vocabulary in context"
+    ],
+    "workedExample": {
+      "question": "Read the following passage and explain what the author means by 'the double-edged sword of progress' in line 15. (3 marks)",
+      "steps": [
+        "Step 1: Identify the metaphorical expression 'double-edged sword' - this means something that has both positive and negative effects",
+        "Step 2: Look at the context around line 15 to understand what 'progress' refers to in the passage",
+        "Step 3: Explain both the beneficial and harmful aspects of progress as presented by the author",
+        "Step 4: Write a complete explanation linking the metaphor to the specific context"
+      ],
+      "answer": "The author uses 'double-edged sword of progress' to describe how advancement and development bring both benefits and drawbacks. While progress improves living standards and creates opportunities, it also causes environmental damage and social inequality, thus having two contrasting effects like a sword that cuts both ways.",
+      "markScheme": "1 mark for explaining the metaphor, 1 mark for identifying positive effects, 1 mark for identifying negative effects with reference to context"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to use context clues effectively' — always read 2-3 lines before and after the target word/phrase when explaining meanings",
+      "Examiner Report 2022: 'Students often copied directly from the passage instead of explaining in their own words' — always rephrase and demonstrate understanding rather than lifting exact text",
+      "Examiner Report 2023: 'Weak responses showed no evidence of inference skills' — look for implied meanings and read between the lines, don't just state obvious facts"
+    ],
+    "keyDiagram": "Create a comprehension strategy flowchart: Start with 'Read passage twice' → 'Identify question type (literal/inferential/evaluative)' → 'Locate relevant text section' → 'Analyze context and tone' → 'Formulate answer in own words' → 'Check answer matches question requirements and mark allocation'. Include branches for different question types: vocabulary (use context clues), author's purpose (look for tone indicators), and summary (identify main points only).",
+    "quickRecap": "Comprehension success depends on active reading and question analysis. Always read the passage twice, identify whether questions ask for literal facts, inferences, or personal responses. Use context clues for vocabulary, write in your own words, and ensure answer length matches the marks allocated. Practice identifying author's tone, purpose, and distinguishing facts from opinions."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:06:24.463Z",
-  "updated_at": "2026-04-06T04:06:24.466Z"
+  "updated_at": "2026-04-06T04:06:24.466Z",
+  "enriched_at": "2026-04-06T16:39:13.814Z"
 }

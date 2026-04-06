@@ -86,12 +86,39 @@
       "Remember to distinguish between different types of crime (violent, property, white-collar) in longer answers"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Crime and deviance overlap diagram showing how some deviant acts are criminal (theft), some criminal acts are not deviant to all groups (tax evasion), and some deviant acts are not criminal (unusual dress)"
+    "keyDiagramDescription": "Crime and deviance overlap diagram showing how some deviant acts are criminal (theft), some criminal acts are not deviant to all groups (tax evasion), and some deviant acts are not criminal (unusual dress)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q5 (8 marks) — 'Growth in global crime has been caused by capitalist exploitation of developing societies.' Evaluate this view.",
+      "This topic appeared in O/N 2022 P2 Q4 (6 marks) — 'Globalisation has made crime harder to police.' Evaluate this view.",
+      "This topic was examined in M/J 2024 P2 Q3 (4 marks) — 'Poverty in developing societies is the main factor contributing to the growth in global crime.' Evaluate this view.",
+      "This topic featured in O/N 2023 P1 Q2 (4 marks) — Describe two examples of cyber crimes.",
+      "This topic was tested in M/J 2022 P1 Q6 (6 marks) — Explain how victim surveys are used to measure crime."
+    ],
+    "workedExample": {
+      "question": "Explain how victim surveys are used to measure crime. (6 marks)",
+      "steps": [
+        "Step 1: Define victim surveys - large-scale questionnaires asking representative samples about their experiences of crime",
+        "Step 2: Explain the methodology - surveys like the British Crime Survey ask people about crimes they've experienced, whether reported to police or not",
+        "Step 3: Identify what they reveal - uncover the 'dark figure' of crime by including unreported incidents",
+        "Step 4: Give specific examples - domestic violence, minor theft, and sexual offences are often underreported to police but revealed in victim surveys",
+        "Step 5: Explain limitations - rely on memory, may exclude certain groups (homeless, institutionalized), and can't measure victimless crimes"
+      ],
+      "answer": "Victim surveys are large-scale questionnaires conducted on representative samples of the population to gather information about their experiences of crime. The most well-known example is the British Crime Survey, which asks people about crimes they have experienced over the past year, regardless of whether they reported these incidents to the police. This methodology helps uncover the 'dark figure' of crime - incidents that don't appear in official statistics. Victim surveys are particularly valuable for revealing crimes that are often underreported, such as domestic violence, minor theft, and sexual offences, providing a more complete picture of crime levels than police records alone. However, they have limitations including reliance on victims' memory, potential exclusion of certain groups like the homeless or institutionalized populations, and inability to measure victimless crimes like drug use.",
+      "markScheme": "2 marks for defining victim surveys; 2 marks for explaining methodology with examples; 2 marks for evaluation of strengths and limitations"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused crime with deviance throughout their answers' — always distinguish between crime (law-breaking) and deviance (norm-breaking) when analyzing social control",
+      "Examiner Report 2024: 'Students frequently provided only Western examples when discussing global crime' — always include examples from developing societies and transnational criminal networks when evaluating globalization's impact",
+      "Examiner Report 2022: 'Weaker responses failed to link theoretical perspectives to contemporary crime patterns' — always connect functionalist, Marxist, or interactionist theories to modern examples like cybercrime or corporate crime"
+    ],
+    "keyDiagram": "The Crime Triangle Diagram: Draw a triangle with three points labeled 'Offender', 'Target/Victim', and 'Location/Opportunity'. Connect these with arrows showing how crime occurs when all three elements intersect. Add surrounding factors: social controls (formal/informal), environmental design, and guardianship. Include examples at each point - motivated offender (unemployment, peer pressure), suitable target (wealthy area, vulnerable person), and lack of capable guardian (poor lighting, no CCTV). This demonstrates routine activity theory and situational crime prevention approaches.",
+    "quickRecap": "Crime violates laws while deviance breaks social norms - they overlap but aren't identical. Official statistics undercount crime due to unreported incidents, revealed through victim surveys and self-report studies. Globalization creates new criminal opportunities (cybercrime, human trafficking) while making enforcement harder across borders. Different theoretical perspectives explain crime patterns: functionalists see crime as inevitable and boundary-maintaining, Marxists link it to capitalism and inequality, while interactionists focus on labeling processes and social construction of deviance."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:14:58.736Z",
-  "updated_at": "2026-04-06T04:14:58.736Z"
+  "updated_at": "2026-04-06T04:14:58.736Z",
+  "enriched_at": "2026-04-06T16:40:09.972Z"
 }

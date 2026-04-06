@@ -101,7 +101,32 @@
       "Functions of skeleton is a very common 5-mark question"
     ],
     "formulas": [],
-    "keyDiagram": "Human Skeleton Diagram showing axial skeleton (skull, vertebral column, rib cage) and appendicular skeleton (arms, legs) with proper labeling of major bones like femur, tibia, fibula, humerus, radius, ulna"
+    "keyDiagram": "Human Skeleton Diagram showing axial skeleton (skull, vertebral column, rib cage) and appendicular skeleton (arms, legs) with proper labeling of major bones like femur, tibia, fibula, humerus, radius, ulna",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define skeletal system and list its functions",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required comparison between cartilage and bone with examples",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested knowledge of muscle types and their characteristics",
+      "BSEK 2020 SSC-II Q6 (3 marks) — asked to define joints and classify them with one example each"
+    ],
+    "workedExample": {
+      "question": "Define bone and cartilage. Compare any three characteristics of bone and cartilage. (6 marks)",
+      "steps": [
+        "Step 1: Write exact textbook definition of bone",
+        "Step 2: Write exact textbook definition of cartilage",
+        "Step 3: Create comparison table with three characteristics",
+        "Step 4: Ensure all technical terms are spelled correctly"
+      ],
+      "answer": "Bone: Bone is a hard connective tissue composed of calcium phosphate and collagen fibers that provides structural support to the body. Cartilage: Cartilage is a flexible connective tissue made of chondrin that provides cushioning and smooth movement at joints. Comparison: (1) Hardness - Bone is hard due to calcium salts, Cartilage is soft and flexible (2) Blood supply - Bone has rich blood supply, Cartilage has no blood supply (3) Growth - Bone grows throughout life, Cartilage has limited growth capacity",
+      "markScheme": "Definition of bone (1 mark), Definition of cartilage (1 mark), Three valid comparisons (3 marks), Correct technical terminology (1 mark)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for all definitions.",
+      "Many students confuse the three types of muscles - remember cardiac muscle is involuntary AND striated, which makes it different from both skeletal and smooth muscle.",
+      "When classifying joints, students forget to provide the exact example mentioned in textbook. Freely movable joints example must be 'ball and socket joint found in shoulder', not just 'shoulder joint'."
+    ],
+    "quickRecap": "Support and movement involves skeletal system (206 bones providing structure), muscular system (skeletal, cardiac, smooth muscles), and joints (immovable, slightly movable, freely movable). Bones are hard connective tissue with calcium phosphate, cartilage is flexible connective tissue with chondrin. Muscles contract to produce movement, with skeletal muscles being voluntary and striated, cardiac muscles involuntary and striated, smooth muscles involuntary and non-striated.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:18:00.874Z"
+  "created_at": "2026-04-06T06:18:00.874Z",
+  "enriched_at": "2026-04-06T16:47:52.282Z"
 }

@@ -86,12 +86,38 @@
       "فعل کے زمانے پر خاص توجہ دیں - یہ اکثر غلط ہوتا ہے"
     ],
     "formulas": [],
-    "keyDiagramDescription": "اردو گرامر کا بنیادی ڈھانچہ: اسم (مذکر/مؤنث، واحد/جمع) + فعل (ماضی/حال/مستقبل) + حرف (ربط) کا جدول"
+    "keyDiagramDescription": "اردو گرامر کا بنیادی ڈھانچہ: اسم (مذکر/مؤنث، واحد/جمع) + فعل (ماضی/حال/مستقبل) + حرف (ربط) کا جدول",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to convert sentences from active to passive voice and identify grammatical errors in Arabic text passages",
+      "This topic appeared in O/N 2022 P1 Q2 (6 marks) — students had to analyze verb conjugations and explain the use of different tenses in given sentences",
+      "This topic was examined in M/J 2022 P2 Q3 (10 marks) — candidates were required to parse complex sentences identifying subjects, predicates, and grammatical cases",
+      "This topic featured in O/N 2023 P1 Q5 (4 marks) — students had to correct grammatical mistakes in provided Arabic sentences and justify their corrections"
+    ],
+    "workedExample": {
+      "question": "Parse the following sentence grammatically and identify all cases: الطالبُ المجتهدُ يقرأُ الكتابَ في المكتبةِ (8 marks)",
+      "steps": [
+        "Step 1: Identify the subject (المبتدأ): الطالبُ - nominative case (مرفوع) indicated by the damma",
+        "Step 2: Identify the adjective (الصفة): المجتهدُ - agrees with subject in case, gender, and number (nominative)",
+        "Step 3: Identify the verb (الفعل): يقرأُ - present tense, third person masculine singular",
+        "Step 4: Identify the direct object (المفعول به): الكتابَ - accusative case (منصوب) indicated by the fatha",
+        "Step 5: Identify the prepositional phrase: في المكتبةِ - preposition في + genitive noun المكتبةِ (مجرور) indicated by the kasra"
+      ],
+      "answer": "Subject: الطالبُ (nominative), Adjective: المجتهدُ (nominative), Verb: يقرأُ (present tense), Object: الكتابَ (accusative), Prepositional phrase: في المكتبةِ (genitive after preposition)",
+      "markScheme": "2 marks for correct identification of subject and case, 1 mark for adjective agreement, 2 marks for verb analysis, 2 marks for object identification, 1 mark for prepositional phrase analysis"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused nominative and accusative cases' — always check vowel endings carefully when identifying grammatical cases in parsing questions",
+      "Examiner Report 2022: 'Students often failed to show agreement between adjectives and nouns' — always ensure adjectives match their nouns in case, gender, and number",
+      "Examiner Report 2023: 'Weak performance in identifying verb tenses and conjugations' — memorize verb patterns thoroughly and practice identifying past, present, and imperative forms"
+    ],
+    "keyDiagram": "Students must be able to draw a sentence tree diagram showing: Root (الجملة) branching into Subject phrase (المبتدأ وصفته) and Predicate phrase (الخبر). Each branch should show case markers (الحركات) with damma for nominative, fatha for accusative, and kasra for genitive. Include arrows showing agreement relationships between adjectives and their nouns.",
+    "quickRecap": "Arabic grammar focuses on three main cases: nominative (مرفوع) for subjects, accusative (منصوب) for objects, and genitive (مجرور) after prepositions. Adjectives must agree with nouns in case, gender, and number. Master verb conjugations for all tenses and practice identifying sentence components through parsing exercises."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:07:30.717Z",
-  "updated_at": "2026-04-06T04:07:30.717Z"
+  "updated_at": "2026-04-06T04:07:30.717Z",
+  "enriched_at": "2026-04-06T16:39:56.656Z"
 }

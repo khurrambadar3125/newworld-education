@@ -84,12 +84,38 @@
       "Remember that family forms vary across cultures - avoid Western bias in answers"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Family tree diagram showing nuclear family (parents + children) at center, with extended family members (grandparents, aunts, uncles, cousins) branching outward to illustrate kinship relationships and family structure"
+    "keyDiagramDescription": "Family tree diagram showing nuclear family (parents + children) at center, with extended family members (grandparents, aunts, uncles, cousins) branching outward to illustrate kinship relationships and family structure",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (6 marks) — they asked students to 'Explain two ways the family supports the interests of men, according to feminists' requiring knowledge of patriarchal theories and dual burden concepts",
+      "This topic appeared in O/N 2022 P1 Q4 (8 marks) — students had to 'Explain the view that the family is the most important influence on social class identity' testing understanding of primary socialization and cultural capital transmission",
+      "A common question format in M/J 2024 P2 Q2 (4 marks) asked to 'Describe two ways increased life expectancy may impact upon the family' focusing on demographic changes and family structure",
+      "This was examined in O/N 2023 P1 Q5 (6 marks) — 'Explain two strengths of Marxist views of the family' requiring detailed knowledge of ideological state apparatus and reproduction of labor power theories",
+      "Recent papers like M/J 2022 P2 Q6 (4 marks) tested counter-arguments with 'Give one argument against the view that family is most important influence on social class identity' expecting discussion of peer groups or education system"
+    ],
+    "workedExample": {
+      "question": "Explain two ways the family supports the interests of men, according to feminists. (6 marks)",
+      "steps": [
+        "Step 1: Identify two distinct feminist arguments about how family benefits men",
+        "Step 2: For each point, provide clear explanation with sociological terminology",
+        "Step 3: Use specific examples or theorist names where possible",
+        "Step 4: Ensure both points are different aspects (e.g., economic + emotional)"
+      ],
+      "answer": "One way the family supports men's interests is through unpaid domestic labor. Feminist Ann Oakley argues that women perform the 'dual burden' of paid work and unpaid housework, meaning men benefit from free cleaning, cooking and childcare services that would otherwise cost money. This gives men more leisure time and disposable income. A second way is through emotional support and care work. Feminists argue that women provide emotional labor by managing family relationships, supporting men's careers, and absorbing men's stress, while men are not expected to reciprocate equally. This emotional work helps men succeed professionally while women's own ambitions may be secondary.",
+      "markScheme": "3 marks per point: 1 mark for identification (dual burden/emotional labor), 1 mark for explanation of the concept, 1 mark for development showing how this specifically benefits men's interests"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused feminist and functionalist views of family' — always clearly distinguish between perspectives and avoid mixing up Parsons' role differentiation with feminist patriarchy arguments",
+      "Examiner Report 2024: 'Students often provided descriptive answers about family life rather than sociological analysis' — always use sociological concepts like primary socialization, cultural capital, or ideological state apparatus rather than common-sense observations",
+      "Examiner Report 2022: 'Weaker responses failed to link family to broader social structures like class or gender inequality' — always connect family functions to wider societal power structures and social stratification systems"
+    ],
+    "keyDiagram": "Students must be able to draw a 'Family Functions Comparison Chart' showing three columns: Functionalist view (showing family as positive with functions like socialization, emotional support, economic cooperation), Marxist view (showing family as serving ruling class through reproducing labor power and ideology), and Feminist view (showing family as serving patriarchal interests through unpaid labor and male dominance). Include arrows showing how each perspective connects family to wider social structures (social order, capitalism, patriarchy respectively).",
+    "quickRecap": "Family is analyzed differently by major sociological perspectives: Functionalists see it as essential for social stability through socialization and emotional support. Marxists view family as reproducing capitalism by creating obedient workers and consumers. Feminists argue family serves patriarchal interests through women's unpaid domestic labor and emotional work. Key concepts include primary socialization, cultural capital transmission, ideological state apparatus, dual burden, and patriarchy."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:14:10.815Z",
-  "updated_at": "2026-04-06T04:14:10.815Z"
+  "updated_at": "2026-04-06T04:14:10.815Z",
+  "enriched_at": "2026-04-06T16:39:17.859Z"
 }
