@@ -1,0 +1,106 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "23",
+  "chapter_name": "Pythagoras' Theorem",
+  "note_data": {
+    "title": "Pythagoras' Theorem",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Pythagoras' theorem states that in a right-angled triangle, the square of the hypotenuse is equal to the sum of squares of the other two sides",
+      "The theorem is written as: a² + b² = c², where c is the hypotenuse and a, b are the perpendicular sides",
+      "Converse of Pythagoras' theorem: If the square of one side of a triangle equals the sum of squares of the other two sides, then the triangle is right-angled",
+      "Pythagorean triplets are sets of three positive integers that satisfy the Pythagorean theorem (e.g., 3-4-5, 5-12-13)",
+      "The theorem is used to find the third side when two sides of a right triangle are known",
+      "In practical applications, it helps calculate distances, heights, and lengths in construction and surveying",
+      "The altitude drawn to the hypotenuse creates two smaller triangles similar to the original and to each other",
+      "Common Pythagorean triplets include: (3,4,5), (5,12,13), (8,15,17), (7,24,25), (9,40,41)"
+    ],
+    "definitions": [
+      {
+        "term": "Pythagoras' Theorem",
+        "definition": "In a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides."
+      },
+      {
+        "term": "Hypotenuse",
+        "definition": "The longest side of a right-angled triangle, opposite to the right angle."
+      },
+      {
+        "term": "Pythagorean Triplet",
+        "definition": "A set of three positive integers a, b, c such that a² + b² = c²."
+      },
+      {
+        "term": "Converse of Pythagoras' Theorem",
+        "definition": "If in a triangle, the square of one side equals the sum of squares of the other two sides, then the triangle is right-angled."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "State Pythagoras' theorem and write its formula.",
+        "answer": "Pythagoras' theorem states that in a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides. Formula: a² + b² = c²"
+      },
+      {
+        "type": "long",
+        "question": "A ladder 13m long rests against a wall of Karachi Municipal Corporation building. The foot of the ladder is 5m away from the base of the wall. Find the height at which the ladder touches the wall.",
+        "answer": "Given: Hypotenuse (ladder) = 13m, Base = 5m, Height = ?\nUsing Pythagoras' theorem: a² + b² = c²\n5² + h² = 13²\n25 + h² = 169\nh² = 169 - 25 = 144\nh = √144 = 12m\nTherefore, the ladder touches the wall at a height of 12 meters."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "In a right triangle, if two sides are 3 cm and 4 cm, what is the hypotenuse?",
+        "options": {
+          "A": "5 cm",
+          "B": "7 cm",
+          "C": "25 cm",
+          "D": "12 cm"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "Which of the following is a Pythagorean triplet?",
+        "options": {
+          "A": "(2, 3, 4)",
+          "B": "(5, 12, 13)",
+          "C": "(1, 2, 3)",
+          "D": "(6, 7, 8)"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "If a triangle has sides 8, 15, and 17 units, then it is:",
+        "options": {
+          "A": "Acute triangle",
+          "B": "Obtuse triangle",
+          "C": "Right triangle",
+          "D": "Scalene triangle"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often forget to take square root at the end when finding a side length",
+      "Confusing which side is the hypotenuse - always remember it's the longest side opposite to right angle",
+      "Not writing the formula before substituting values in numerical problems",
+      "Making calculation errors while squaring and finding square roots",
+      "Using Pythagoras' theorem for non-right triangles without checking"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 numerical problem in every BSEK paper",
+      "Always draw and label the right triangle diagram - it carries marks",
+      "Memorize common Pythagorean triplets (3-4-5, 5-12-13) for quick solving",
+      "Show all steps clearly in numerical problems for full marks",
+      "Practice both finding missing sides and verifying if triangles are right-angled"
+    ],
+    "formulas": [
+      "a² + b² = c² (Pythagoras' theorem)",
+      "c = √(a² + b²) (finding hypotenuse)",
+      "a = √(c² - b²) (finding perpendicular side)"
+    ],
+    "keyDiagram": "Right-angled triangle ABC with right angle at C, hypotenuse AB labeled as 'c', and perpendicular sides AC and BC labeled as 'b' and 'a' respectively. Mark the right angle with a small square."
+  },
+  "created_at": "2026-04-06T06:28:16.812Z"
+}

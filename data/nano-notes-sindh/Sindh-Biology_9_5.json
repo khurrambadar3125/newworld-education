@@ -1,0 +1,107 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "5",
+  "chapter_name": "Cell Cycle",
+  "note_data": {
+    "title": "Cell Cycle",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Cell cycle is the sequence of events that occurs in a cell leading to its division and the production of two daughter cells",
+      "Cell cycle consists of two main phases: Interphase (G1, S, G2) and M phase (Mitosis and Cytokinesis)",
+      "G1 phase is the gap phase where cell grows in size and organelles are duplicated",
+      "S phase is synthesis phase where DNA replication occurs and chromosome number doubles",
+      "G2 phase is second gap phase where proteins necessary for chromosome condensation are produced",
+      "M phase includes mitosis (nuclear division) and cytokinesis (cytoplasmic division)",
+      "Checkpoints control the cell cycle progression at G1/S, G2/M, and metaphase/anaphase transitions",
+      "Cancer cells have defective cell cycle control mechanisms leading to uncontrolled division",
+      "Cell cycle duration varies in different cell types - rapidly dividing cells like in bone marrow complete cycle in 24 hours"
+    ],
+    "definitions": [
+      {
+        "term": "Cell Cycle",
+        "definition": "The sequence of events that occurs in a cell leading to its division and the production of two daughter cells"
+      },
+      {
+        "term": "Interphase",
+        "definition": "The phase of cell cycle during which the cell grows and DNA is replicated, consisting of G1, S and G2 phases"
+      },
+      {
+        "term": "Mitosis",
+        "definition": "The process of nuclear division in which the nucleus divides to form two nuclei with identical sets of chromosomes"
+      },
+      {
+        "term": "Cytokinesis",
+        "definition": "The division of cytoplasm that follows nuclear division during cell division"
+      },
+      {
+        "term": "Checkpoint",
+        "definition": "Control mechanisms that ensure proper progression of cell cycle by checking for DNA damage and proper chromosome attachment"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define cell cycle and name its phases.",
+        "answer": "Cell cycle is the sequence of events that occurs in a cell leading to its division and the production of two daughter cells. Its phases are: Interphase (G1, S, G2) and M phase (Mitosis and Cytokinesis)."
+      },
+      {
+        "type": "long",
+        "question": "Describe the phases of cell cycle in detail.",
+        "answer": "Cell cycle consists of Interphase and M phase. Interphase has three sub-phases: G1 phase where cell grows and organelles duplicate, S phase where DNA replication occurs, and G2 phase where proteins for chromosome condensation are made. M phase includes mitosis (nuclear division with prophase, metaphase, anaphase, telophase) and cytokinesis (cytoplasmic division). Checkpoints control progression between phases."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "DNA replication occurs during which phase?",
+        "options": {
+          "A": "G1 phase",
+          "B": "S phase",
+          "C": "G2 phase",
+          "D": "M phase"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which of the following is NOT a phase of mitosis?",
+        "options": {
+          "A": "Prophase",
+          "B": "S phase",
+          "C": "Metaphase",
+          "D": "Anaphase"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Cell cycle checkpoints function to:",
+        "options": {
+          "A": "Speed up cell division",
+          "B": "Control cell cycle progression",
+          "C": "Increase DNA replication",
+          "D": "Decrease cell size"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse S phase with synthesis of proteins instead of DNA synthesis",
+      "Often mix up the order of mitotic phases - remember PMAT (Prophase, Metaphase, Anaphase, Telophase)",
+      "Forget that cytokinesis is separate from mitosis and is part of M phase",
+      "Confuse cell cycle with cell division - cell cycle includes both growth and division phases",
+      "Don't mention that checkpoints prevent damaged cells from dividing"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Always draw and label the cell cycle diagram - it appears frequently in exams",
+      "Memorize exact definitions as they appear in STBB textbook",
+      "Practice drawing mitosis phases diagram as it's commonly asked",
+      "Remember checkpoint locations: G1/S, G2/M, and metaphase/anaphase"
+    ],
+    "formulas": [],
+    "keyDiagram": "Cell cycle diagram showing circular representation with Interphase (G1, S, G2 phases) taking major portion and M phase (Mitosis + Cytokinesis) as smaller section, with checkpoints marked at transitions between phases"
+  },
+  "created_at": "2026-04-06T06:15:04.763Z"
+}

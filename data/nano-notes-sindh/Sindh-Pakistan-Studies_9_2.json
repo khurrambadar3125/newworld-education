@@ -1,0 +1,107 @@
+{
+  "subject": "Pakistan Studies",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "2",
+  "chapter_name": "Making of Pakistan",
+  "note_data": {
+    "title": "Making of Pakistan",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Pakistan Movement was the struggle of Muslims of the Indian subcontinent for a separate homeland",
+      "Two Nation Theory — Muslims and Hindus are two separate nations with distinct cultures, religions, and civilizations",
+      "Muslim League was founded in 1906 at Dacca (now Dhaka) to protect Muslim interests",
+      "Lahore Resolution 1940 — First formal demand for separate Muslim state(s)",
+      "Direct Action Day was observed on 16th August 1946 by Muslim League",
+      "3rd June Plan 1947 announced the partition of British India into two dominions",
+      "Pakistan came into existence on 14th August 1947 with Quaid-e-Azam as first Governor General",
+      "Major leaders: Quaid-e-Azam Muhammad Ali Jinnah, Allama Iqbal, Liaquat Ali Khan",
+      "Khilafat Movement (1919-1924) united Muslims against British policies",
+      "Cabinet Mission Plan 1946 proposed a weak federal structure which was rejected"
+    ],
+    "definitions": [
+      {
+        "term": "Two Nation Theory",
+        "definition": "The theory that Muslims and Hindus are two separate nations with different religions, cultures, civilizations, literature, and way of life, and therefore cannot live together as one nation"
+      },
+      {
+        "term": "Pakistan Movement",
+        "definition": "The political struggle of Muslims of the Indian subcontinent for the creation of a separate independent state for Muslims"
+      },
+      {
+        "term": "Lahore Resolution",
+        "definition": "The resolution passed on 23rd March 1940 at Lahore demanding that geographically contiguous units should be demarcated into regions where Muslims are numerically in majority"
+      },
+      {
+        "term": "Direct Action Day",
+        "definition": "16th August 1946 - The day observed by Muslim League to demonstrate the determination of Muslims for Pakistan and rejection of Cabinet Mission Plan"
+      },
+      {
+        "term": "3rd June Plan",
+        "definition": "The British plan announced on 3rd June 1947 by Lord Mountbatten for the partition of British India into two independent dominions - India and Pakistan"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "What is Two Nation Theory?",
+        "answer": "Two Nation Theory states that Muslims and Hindus are two separate nations with different religions, cultures, and civilizations, therefore they cannot live together as one nation."
+      },
+      {
+        "type": "long",
+        "question": "Discuss the main features of Lahore Resolution 1940.",
+        "answer": "Main features: (1) Passed on 23rd March 1940 at Minto Park Lahore (2) Moved by A.K. Fazlul Haq (3) Demanded separate independent states for Muslims (4) Areas where Muslims are in majority should be grouped together (5) These areas should be geographically contiguous (6) Constituent units should be autonomous and sovereign (7) Minorities' rights should be safeguarded (8) It was the first formal demand for Pakistan"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Lahore Resolution was passed in:",
+        "options": {
+          "A": "1939",
+          "B": "1940",
+          "C": "1941",
+          "D": "1942"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Direct Action Day was observed on:",
+        "options": {
+          "A": "14th August 1946",
+          "B": "15th August 1946",
+          "C": "16th August 1946",
+          "D": "23rd March 1946"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Muslim League was founded in:",
+        "options": {
+          "A": "1905",
+          "B": "1906",
+          "C": "1907",
+          "D": "1908"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often write 1906 as the year of Lahore Resolution instead of 1940",
+      "Confusing Direct Action Day date (16th August) with Independence Day (14th August)",
+      "Writing Cabinet Mission Plan features when asked about Lahore Resolution",
+      "Not mentioning A.K. Fazlul Haq as the mover of Lahore Resolution",
+      "Mixing up 3rd June Plan with other British plans"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question in every BSEK paper",
+      "Dates are very important - memorize all key dates (1906, 1940, 1946, 1947)",
+      "Always write the exact definition of Two Nation Theory as it appears in textbook",
+      "Timeline of events is frequently asked - practice chronological order"
+    ],
+    "formulas": [],
+    "keyDiagram": "Timeline diagram showing major events: Muslim League formation (1906) → Khilafat Movement (1919-24) → Allama Iqbal's Address (1930) → Lahore Resolution (1940) → Direct Action Day (1946) → 3rd June Plan (1947) → Independence (14 August 1947)"
+  },
+  "created_at": "2026-04-06T06:31:43.299Z"
+}

@@ -1,0 +1,103 @@
+{
+  "subject": "Pakistan Studies",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "8",
+  "chapter_name": "Culture of Pakistan",
+  "note_data": {
+    "title": "Culture of Pakistan",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Culture is the way of life of a group of people including their beliefs, customs, traditions, language, and social behavior",
+      "Pakistani culture is a blend of Islamic values, regional traditions, and historical influences from various civilizations",
+      "The four main components of Pakistani culture are: Language, Religion, Arts and Literature, and Social Customs",
+      "Urdu is the national language while regional languages like Sindhi, Punjabi, Pashto, and Balochi represent provincial cultures",
+      "Islamic festivals like Eid-ul-Fitr, Eid-ul-Adha, and Milad-un-Nabi are celebrated nationwide with great enthusiasm",
+      "Traditional Pakistani clothing includes Shalwar Kameez for both men and women, with regional variations",
+      "Pakistani cuisine varies by region - Sindhi Biryani, Punjabi Karahi, Peshawari Chapli Kebab, and Balochi Sajji",
+      "Folk music and dance forms like Bhangra, Luddi, Khattak, and Attan represent different provincial cultures",
+      "Pakistani arts include calligraphy, pottery, embroidery, and handicrafts that reflect Islamic and regional influences"
+    ],
+    "definitions": [
+      {
+        "term": "Culture",
+        "definition": "Culture is the way of life of a group of people including their beliefs, customs, traditions, language, arts, and social behavior that is passed from generation to generation"
+      },
+      {
+        "term": "Folk Music",
+        "definition": "Traditional music of the common people of a region passed down orally from generation to generation, expressing their emotions, stories, and cultural values"
+      },
+      {
+        "term": "Festival",
+        "definition": "A special day or period of celebration, typically for religious or cultural reasons, marked by special activities and customs"
+      },
+      {
+        "term": "Handicrafts",
+        "definition": "Articles made by hand using traditional skills and methods, representing the cultural heritage and artistic traditions of a region"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Write a note on Pakistani festivals.",
+        "answer": "Pakistani festivals are mainly based on Islamic calendar and regional traditions. Major festivals include Eid-ul-Fitr, Eid-ul-Adha, Milad-un-Nabi, Shab-e-Barat, and regional festivals like Basant and Shandur Polo Festival. These festivals promote unity, brotherhood, and preserve cultural values."
+      },
+      {
+        "type": "long",
+        "question": "Discuss the main elements of Pakistani culture.",
+        "answer": "Pakistani culture has four main elements: (1) Language - Urdu as national language and regional languages like Sindhi, Punjabi, Pashto, Balochi (2) Religion - Islam as the foundation of Pakistani culture and way of life (3) Arts and Literature - poetry, music, dance, handicrafts reflecting Islamic and regional traditions (4) Social Customs - hospitality, respect for elders, family values, traditional clothing, and food habits. These elements combine Islamic values with regional diversity to form unique Pakistani identity."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which is the national language of Pakistan?",
+        "options": {
+          "A": "Sindhi",
+          "B": "Punjabi",
+          "C": "Urdu",
+          "D": "Pashto"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Shandur Polo Festival is celebrated in:",
+        "options": {
+          "A": "Punjab",
+          "B": "Sindh",
+          "C": "Gilgit-Baltistan",
+          "D": "Balochistan"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which dance form belongs to Khyber Pakhtunkhwa?",
+        "options": {
+          "A": "Bhangra",
+          "B": "Attan",
+          "C": "Luddi",
+          "D": "Jhoomar"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse regional languages with national language - remember Urdu is national, others are provincial",
+      "Writing only Islamic festivals and forgetting regional/cultural festivals like Basant and Shandur",
+      "Not mentioning the four main components of culture in proper sequence",
+      "Confusing dance forms with their respective provinces - Attan (KPK), Bhangra (Punjab), Luddi (Sindh)",
+      "Writing culture definition without mentioning 'passed from generation to generation'"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs about languages, festivals, and regional arts",
+      "Always start culture definition with exact textbook wording",
+      "Questions about elements of Pakistani culture appear every year - memorize all four components",
+      "Regional festivals and their provinces are frequently asked in MCQs",
+      "Practice writing notes on Pakistani handicrafts and folk music"
+    ],
+    "formulas": [],
+    "keyDiagram": "Map of Pakistan showing four provinces with their languages, traditional dresses, food items, and folk dances labeled in each province"
+  },
+  "created_at": "2026-04-06T06:34:06.199Z"
+}

@@ -1,0 +1,106 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "28",
+  "chapter_name": "Angle in a Segment of a Circle",
+  "note_data": {
+    "title": "Angle in a Segment of a Circle",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "An angle in a segment is an angle formed by two chords meeting at a point on the circle",
+      "Angles in the same segment of a circle are equal",
+      "The angle in a semicircle is always 90° (right angle)",
+      "Angle in major segment is acute (less than 90°)",
+      "Angle in minor segment is obtuse (greater than 90°)",
+      "The angle at the center is twice the angle at the circumference standing on the same arc",
+      "Opposite angles of a cyclic quadrilateral are supplementary (sum = 180°)",
+      "If a quadrilateral is inscribed in a circle, it is called a cyclic quadrilateral"
+    ],
+    "definitions": [
+      {
+        "term": "Angle in a Segment",
+        "definition": "An angle in a segment of a circle is the angle formed by two chords drawn from any point on the arc of the segment to the endpoints of the chord forming the segment."
+      },
+      {
+        "term": "Cyclic Quadrilateral",
+        "definition": "A quadrilateral whose all four vertices lie on the circumference of a circle is called a cyclic quadrilateral."
+      },
+      {
+        "term": "Segment of a Circle",
+        "definition": "The region between a chord and the arc subtended by it is called a segment of the circle."
+      },
+      {
+        "term": "Arc",
+        "definition": "A part of the circumference of a circle is called an arc."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "State the theorem about angles in the same segment of a circle.",
+        "answer": "Angles in the same segment of a circle are equal. This means if two angles are subtended by the same arc from different points on the circle, they are equal in measure."
+      },
+      {
+        "type": "long",
+        "question": "Prove that the angle in a semicircle is a right angle. Also draw a neat diagram.",
+        "answer": "Given: A semicircle with diameter AB and point C on the semicircle. To Prove: ∠ACB = 90°. Proof: Join OC where O is center. In triangle OAC: OA = OC (radii), so ∠OAC = ∠OCA = α. In triangle OBC: OB = OC (radii), so ∠OBC = ∠OCB = β. Since AOB is a straight line: ∠AOC + ∠COB = 180°. Also, 2α + 2β = 180°, therefore α + β = 90°. In triangle ABC: ∠CAB + ∠CBA + ∠ACB = 180°, so α + β + ∠ACB = 180°. Therefore ∠ACB = 90°."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The angle in a semicircle is:",
+        "options": {
+          "A": "45°",
+          "B": "60°",
+          "C": "90°",
+          "D": "120°"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "In a cyclic quadrilateral ABCD, if ∠A = 70°, then ∠C is:",
+        "options": {
+          "A": "70°",
+          "B": "110°",
+          "C": "140°",
+          "D": "280°"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The angle at the center is how many times the angle at circumference on the same arc:",
+        "options": {
+          "A": "Equal",
+          "B": "Double",
+          "C": "Triple",
+          "D": "Half"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse angle in segment with angle at center",
+      "Forgetting to state 'angles in same segment are equal' before using the property",
+      "Not drawing proper diagrams with labeled points and arcs",
+      "Mixing up major and minor segments when identifying angle types",
+      "Not mentioning that opposite angles in cyclic quadrilateral are supplementary"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in BSEK papers",
+      "Always draw neat diagrams with proper labeling - marks are awarded for diagrams",
+      "Memorize the exact theorem statements as they appear in STBB textbook",
+      "Practice proving angle in semicircle theorem - appears frequently in long questions",
+      "Remember to write 'Given', 'To Prove', and 'Proof' clearly in theorem questions"
+    ],
+    "formulas": [
+      "Angle in semicircle = 90°",
+      "Opposite angles in cyclic quadrilateral: ∠A + ∠C = 180°, ∠B + ∠D = 180°",
+      "Central angle = 2 × Inscribed angle (on same arc)"
+    ],
+    "keyDiagram": "Draw a circle with center O, diameter AB, point C on semicircle, and triangle ACB inscribed. Also draw a cyclic quadrilateral PQRS with all vertices on circle circumference. Label all angles and mark equal angles in same segment."
+  },
+  "created_at": "2026-04-06T06:30:07.731Z"
+}

@@ -1,0 +1,107 @@
+{
+  "subject": "Islamiat",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "5",
+  "chapter_name": "Ibadat — Worship",
+  "note_data": {
+    "title": "Ibadat — Worship",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Ibadat means worship and submission to Allah (SWT) through prescribed acts and rituals",
+      "The purpose of Ibadat is to attain Taqwa (God-consciousness) and spiritual purification",
+      "Five pillars of Islam form the foundation of Islamic worship: Shahada, Salah, Zakah, Sawm, and Hajj",
+      "Salah is the most important pillar after Shahada and must be performed five times daily",
+      "Zakah purifies wealth and helps in social welfare by supporting the poor and needy",
+      "Sawm develops self-control, patience, and empathy for the less fortunate",
+      "Hajj unites Muslims from all over the world in worship and demonstrates equality before Allah",
+      "All forms of Ibadat strengthen the relationship between the servant and Allah (SWT)",
+      "Regular worship brings peace, discipline, and moral development in a Muslim's life"
+    ],
+    "definitions": [
+      {
+        "term": "Ibadat",
+        "definition": "Ibadat means worship, submission and obedience to Allah (SWT) through prescribed acts of devotion"
+      },
+      {
+        "term": "Taqwa",
+        "definition": "Taqwa is God-consciousness, fear of Allah, and righteousness that leads to avoiding sins and obeying Allah's commands"
+      },
+      {
+        "term": "Salah",
+        "definition": "Salah is the ritual prayer performed five times daily by Muslims as ordained by Allah (SWT)"
+      },
+      {
+        "term": "Zakah",
+        "definition": "Zakah is the obligatory charity paid annually by Muslims on their excess wealth to purify it and help the poor"
+      },
+      {
+        "term": "Sawm",
+        "definition": "Sawm is fasting during the month of Ramadan from dawn to sunset, abstaining from food, drink and marital relations"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define Ibadat and state its purpose.",
+        "answer": "Ibadat means worship, submission and obedience to Allah (SWT) through prescribed acts of devotion. Its purpose is to attain Taqwa (God-consciousness) and achieve spiritual purification."
+      },
+      {
+        "type": "long",
+        "question": "Write a detailed note on the importance of Salah in Islamic worship.",
+        "answer": "Salah is the second pillar of Islam and the most important act of worship after Shahada. It is performed five times daily at prescribed times. Salah establishes direct connection with Allah, develops discipline and punctuality, purifies the soul from sins, promotes equality among Muslims, and serves as a reminder of Allah throughout the day. It includes physical movements that represent humility before Allah. Regular Salah brings peace, spiritual satisfaction and moral development. The Prophet (PBUH) said Salah is the pillar of religion and the first thing to be questioned on the Day of Judgment."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "How many times is Salah performed daily?",
+        "options": {
+          "A": "Three times",
+          "B": "Four times",
+          "C": "Five times",
+          "D": "Six times"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which pillar of Islam purifies wealth?",
+        "options": {
+          "A": "Salah",
+          "B": "Zakah",
+          "C": "Sawm",
+          "D": "Hajj"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "What is the main purpose of Ibadat?",
+        "options": {
+          "A": "To gain wealth",
+          "B": "To attain Taqwa",
+          "C": "To become famous",
+          "D": "To gain power"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse Ibadat with Ibadah - always use the textbook spelling 'Ibadat'",
+      "Many students forget to mention 'prescribed acts' in the definition of Ibadat",
+      "Students mix up the number of daily prayers - always remember it's five times",
+      "Common error is writing 'fear of God' instead of 'fear of Allah' when defining Taqwa",
+      "Students forget to mention both spiritual and social benefits when discussing worship"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Always memorize exact definitions as they appear in STBB textbook",
+      "Questions on 'importance of worship' appear frequently in 5-8 mark questions",
+      "Make sure to write both individual and collective benefits of each pillar",
+      "Practice writing the five pillars in correct order for quick recall"
+    ],
+    "formulas": [],
+    "keyDiagram": "Five Pillars of Islam diagram showing: 1. Shahada (Declaration of Faith) 2. Salah (Prayer) 3. Zakah (Charity) 4. Sawm (Fasting) 5. Hajj (Pilgrimage) - arranged as pillars supporting the structure of Islam"
+  },
+  "created_at": "2026-04-06T06:37:06.767Z"
+}

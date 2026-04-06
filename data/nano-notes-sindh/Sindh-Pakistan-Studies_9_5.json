@@ -1,0 +1,102 @@
+{
+  "subject": "Pakistan Studies",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "5",
+  "chapter_name": "Resources of Pakistan",
+  "note_data": {
+    "title": "Resources of Pakistan",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Natural resources are materials or substances that occur naturally and are useful to humans",
+      "Pakistan has abundant water resources including rivers, lakes, and underground water",
+      "Major rivers of Pakistan are Indus, Jhelum, Chenab, Ravi, and Sutlej",
+      "Mineral resources include coal, natural gas, petroleum, iron ore, and rock salt",
+      "Forest resources cover about 4.8% of Pakistan's total land area",
+      "Agricultural resources make Pakistan primarily an agricultural country",
+      "Tarbela Dam on River Indus is the largest earth-filled dam in the world",
+      "Mangla Dam is built on River Jhelum for irrigation and electricity generation",
+      "Sui gas field in Balochistan is the largest natural gas field in Pakistan"
+    ],
+    "definitions": [
+      {
+        "term": "Natural Resources",
+        "definition": "Materials or substances that occur naturally in the environment and are useful to humans for their survival and development"
+      },
+      {
+        "term": "Renewable Resources",
+        "definition": "Resources that can be replenished naturally over time and do not get exhausted with use"
+      },
+      {
+        "term": "Non-renewable Resources",
+        "definition": "Resources that are available in limited quantities and cannot be replenished once exhausted"
+      },
+      {
+        "term": "Conservation",
+        "definition": "The wise use and protection of natural resources to prevent their wastage and ensure their availability for future generations"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Write the names of major rivers of Pakistan",
+        "answer": "The major rivers of Pakistan are: River Indus, River Jhelum, River Chenab, River Ravi, and River Sutlej. These rivers form the backbone of Pakistan's irrigation system."
+      },
+      {
+        "type": "long",
+        "question": "Write a detailed note on water resources of Pakistan",
+        "answer": "Pakistan has abundant water resources which include: 1) Rivers - Indus river system with five major rivers, 2) Lakes - natural and artificial lakes, 3) Underground water - accessed through tube wells, 4) Glaciers - in northern areas providing water to rivers, 5) Rainfall - monsoon rains, 6) Dams - Tarbela, Mangla, Warsak for storage and electricity. These resources are essential for agriculture, industry, and domestic use."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which is the largest earth-filled dam in the world?",
+        "options": {
+          "A": "Mangla Dam",
+          "B": "Tarbela Dam",
+          "C": "Warsak Dam",
+          "D": "Khanpur Dam"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Sui gas field is located in which province?",
+        "options": {
+          "A": "Punjab",
+          "B": "Sindh",
+          "C": "Balochistan",
+          "D": "KPK"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "What percentage of Pakistan's land is covered by forests?",
+        "options": {
+          "A": "3.5%",
+          "B": "4.8%",
+          "C": "6.2%",
+          "D": "7.1%"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse renewable and non-renewable resources - remember forests are renewable, minerals are non-renewable",
+      "Writing wrong percentages for forest coverage - it's 4.8% not 5%",
+      "Mixing up dam locations - Tarbela is on Indus, Mangla is on Jhelum",
+      "Forgetting to mention River Indus as the main river when listing rivers",
+      "Not including conservation methods when asked about resource management"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs about dams and gas fields in BSEK papers",
+      "Always memorize exact percentages and locations mentioned in textbook",
+      "Questions about conservation of resources appear frequently in long questions",
+      "River names and their tributaries are common in both MCQs and short questions"
+    ],
+    "formulas": [],
+    "keyDiagram": "Map of Pakistan showing major rivers (Indus river system), important dams (Tarbela, Mangla, Warsak), and mineral locations (Sui gas field, coal mines). Students must be able to mark and label all major rivers and dams on Pakistan map."
+  },
+  "created_at": "2026-04-06T06:32:51.243Z"
+}

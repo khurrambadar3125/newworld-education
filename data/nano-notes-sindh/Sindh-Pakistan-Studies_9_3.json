@@ -1,0 +1,106 @@
+{
+  "subject": "Pakistan Studies",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "3",
+  "chapter_name": "Constitutional Development in Islamic Republic of Pakistan",
+  "note_data": {
+    "title": "Constitutional Development in Islamic Republic of Pakistan",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Pakistan's constitutional journey began with the Government of India Act 1935 and Interim Constitution 1947",
+      "First Constitution of Pakistan was adopted on 23rd March 1956, making Pakistan the first Islamic Republic",
+      "1962 Constitution introduced Presidential system under Ayub Khan with indirect elections",
+      "1973 Constitution restored Parliamentary system under Zulfiqar Ali Bhutto and declared Islam as state religion",
+      "The 1973 Constitution is the current constitution with federal structure and bicameral legislature",
+      "Constitution provides fundamental rights including freedom of speech, religion, and movement",
+      "Islamic provisions include Federal Shariat Court and Council of Islamic Ideology",
+      "Amendment procedure requires two-thirds majority in both houses of Parliament"
+    ],
+    "definitions": [
+      {
+        "term": "Constitution",
+        "definition": "A written document that contains the fundamental laws and principles by which a country is governed and which establishes the powers and duties of the government and guarantees certain rights to the people"
+      },
+      {
+        "term": "Federal System",
+        "definition": "A system of government in which power is divided between a central authority and constituent political units like provinces"
+      },
+      {
+        "term": "Parliamentary System",
+        "definition": "A system of government in which the executive is responsible to the legislature and can be removed by a vote of no confidence"
+      },
+      {
+        "term": "Fundamental Rights",
+        "definition": "Basic human rights guaranteed by the constitution that protect citizens from arbitrary government action"
+      },
+      {
+        "term": "Islamic Republic",
+        "definition": "A state where Islam is the official religion and Islamic principles guide the laws and governance of the country"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "What is the difference between 1962 and 1973 Constitution?",
+        "answer": "1962 Constitution established Presidential system with indirect elections while 1973 Constitution restored Parliamentary system with direct elections and federal structure."
+      },
+      {
+        "type": "long",
+        "question": "Discuss the salient features of 1973 Constitution of Pakistan.",
+        "answer": "The 1973 Constitution has following features: (1) Federal system with four provinces (2) Parliamentary form of government (3) Islam as state religion (4) Fundamental rights guaranteed (5) Bicameral legislature - National Assembly and Senate (6) Independent judiciary (7) Prime Minister as chief executive (8) President as constitutional head (9) Islamic provisions like Federal Shariat Court and Council of Islamic Ideology (10) Amendment requires two-thirds majority"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Pakistan's first Constitution was adopted in:",
+        "options": {
+          "A": "1947",
+          "B": "1956",
+          "C": "1962",
+          "D": "1973"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The current Constitution of Pakistan was adopted in:",
+        "options": {
+          "A": "1956",
+          "B": "1962",
+          "C": "1973",
+          "D": "1985"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which Constitution introduced Presidential system in Pakistan?",
+        "options": {
+          "A": "1956 Constitution",
+          "B": "1962 Constitution",
+          "C": "1973 Constitution",
+          "D": "None of these"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse dates of different constitutions - remember 1956, 1962, 1973",
+      "Mixing up Presidential system (1962) with Parliamentary system (1956, 1973)",
+      "Forgetting to mention Islamic provisions in 1973 Constitution features",
+      "Writing constitutional amendment procedure incorrectly - it requires two-thirds majority",
+      "Not distinguishing between federal and unitary systems properly"
+    ],
+    "examTips": [
+      "Constitutional dates (1956, 1962, 1973) appear in every BSEK paper as MCQs",
+      "Salient features of 1973 Constitution is the most repeated long question",
+      "Always mention Islamic provisions when discussing any Pakistani constitution",
+      "Learn exact definitions as they appear in STBB textbook - word by word",
+      "Comparison questions between different constitutions are very common"
+    ],
+    "formulas": [],
+    "keyDiagram": "Constitutional Timeline Chart showing progression from 1947 (Interim Constitution) → 1956 (First Constitution/Islamic Republic) → 1958 (Martial Law) → 1962 (Presidential System) → 1969 (Martial Law) → 1973 (Parliamentary System/Current Constitution)"
+  },
+  "created_at": "2026-04-06T06:32:06.037Z"
+}

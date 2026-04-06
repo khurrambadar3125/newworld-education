@@ -1,0 +1,105 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "18",
+  "chapter_name": "Pharmacology",
+  "note_data": {
+    "title": "Pharmacology",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Pharmacology is the branch of biology that deals with the study of drugs, their sources, properties, effects on living organisms and their therapeutic uses",
+      "Drugs are chemical substances that affect the structure and function of living organisms when introduced into the body",
+      "Drug sources include plants (digitalis from foxglove), animals (insulin from pancreas), minerals (iron supplements), and synthetic sources",
+      "Drug classification includes stimulants (increase nervous system activity), depressants (decrease nervous system activity), hallucinogens (alter perception), and therapeutic drugs",
+      "Antibiotics are substances produced by microorganisms that kill or inhibit the growth of other microorganisms — discovered by Alexander Fleming",
+      "Drug abuse refers to the excessive and harmful use of drugs that leads to physical and psychological dependence",
+      "Tolerance occurs when the body requires increasingly larger doses of a drug to achieve the same effect",
+      "Withdrawal symptoms appear when a drug-dependent person stops taking the drug suddenly"
+    ],
+    "definitions": [
+      {
+        "term": "Pharmacology",
+        "definition": "The branch of biology that deals with the study of drugs, their sources, properties, effects on living organisms and their therapeutic uses"
+      },
+      {
+        "term": "Drug",
+        "definition": "A chemical substance that affects the structure and function of living organisms when introduced into the body"
+      },
+      {
+        "term": "Antibiotic",
+        "definition": "A substance produced by microorganisms that kills or inhibits the growth of other microorganisms"
+      },
+      {
+        "term": "Drug Abuse",
+        "definition": "The excessive and harmful use of drugs that leads to physical and psychological dependence"
+      },
+      {
+        "term": "Tolerance",
+        "definition": "A condition in which the body requires increasingly larger doses of a drug to achieve the same effect"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define pharmacology and write any two sources of drugs.",
+        "answer": "Pharmacology is the branch of biology that deals with the study of drugs, their sources, properties, effects on living organisms and their therapeutic uses. Two sources: (1) Plants - digitalis from foxglove (2) Animals - insulin from pancreas"
+      },
+      {
+        "type": "long",
+        "question": "What is drug abuse? Explain the harmful effects of drug abuse on human health.",
+        "answer": "Drug abuse is the excessive and harmful use of drugs that leads to physical and psychological dependence. Harmful effects: (1) Physical effects - damage to liver, heart, brain and other organs (2) Psychological effects - depression, anxiety, behavioral changes (3) Social effects - family problems, crime, loss of job (4) Development of tolerance requiring higher doses (5) Withdrawal symptoms when drug is stopped (6) Risk of infectious diseases like HIV/AIDS through shared needles (7) Economic burden on family and society"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Penicillin was discovered by:",
+        "options": {
+          "A": "Louis Pasteur",
+          "B": "Alexander Fleming",
+          "C": "Robert Koch",
+          "D": "Edward Jenner"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which of the following is a stimulant drug?",
+        "options": {
+          "A": "Alcohol",
+          "B": "Morphine",
+          "C": "Caffeine",
+          "D": "Barbiturates"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Insulin is obtained from:",
+        "options": {
+          "A": "Plants",
+          "B": "Animals",
+          "C": "Minerals",
+          "D": "Synthetic sources"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse drug tolerance with drug resistance",
+      "Writing incomplete definitions without mentioning 'effects on living organisms'",
+      "Forgetting to mention Alexander Fleming when discussing antibiotic discovery",
+      "Confusing stimulants with depressants - remember caffeine is stimulant, alcohol is depressant",
+      "Not writing sources of drugs with proper examples in answers"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question about drug sources or abuse in every BSEK paper",
+      "Always write the exact definition of pharmacology as it appears in textbook",
+      "Remember to give examples when listing drug sources",
+      "Drug abuse effects question appears frequently - memorize all physical, psychological and social effects"
+    ],
+    "formulas": [],
+    "keyDiagram": "Classification of drugs diagram showing main categories: Stimulants (caffeine, nicotine), Depressants (alcohol, morphine), Hallucinogens (LSD, marijuana), and Therapeutic drugs (antibiotics, vitamins). Also draw drug sources diagram showing Plants, Animals, Minerals, and Synthetic sources with examples."
+  },
+  "created_at": "2026-04-06T06:19:51.774Z"
+}

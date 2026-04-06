@@ -1,0 +1,112 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "22",
+  "chapter_name": "Basic Statistics",
+  "note_data": {
+    "title": "Basic Statistics",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Statistics is the science which deals with the collection, presentation, analysis and interpretation of numerical data",
+      "Data can be classified as Primary Data (collected directly) and Secondary Data (obtained from other sources)",
+      "Measures of Central Tendency include Mean, Median and Mode - these show the central value of data",
+      "Arithmetic Mean = Sum of all observations ÷ Number of observations",
+      "For grouped data, Mean = Σfx/Σf where f is frequency and x is class mark",
+      "Median is the middle value when data is arranged in ascending or descending order",
+      "Mode is the value that occurs most frequently in the data set",
+      "Range = Highest value - Lowest value, measures the spread of data",
+      "Frequency Distribution Table organizes raw data into classes with their frequencies"
+    ],
+    "definitions": [
+      {
+        "term": "Statistics",
+        "definition": "Statistics is the science which deals with the collection, presentation, analysis and interpretation of numerical data."
+      },
+      {
+        "term": "Primary Data",
+        "definition": "Primary data is the data collected directly by the investigator from the original source for the first time."
+      },
+      {
+        "term": "Arithmetic Mean",
+        "definition": "The arithmetic mean of a set of observations is the sum of all observations divided by the number of observations."
+      },
+      {
+        "term": "Median",
+        "definition": "The median is the middle value of the observations when they are arranged in ascending or descending order of magnitude."
+      },
+      {
+        "term": "Mode",
+        "definition": "The mode is the value which occurs most frequently in a set of observations."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define Primary Data and Secondary Data with examples.",
+        "answer": "Primary Data: Data collected directly by investigator from original source. Example: Survey of students' heights in your class. Secondary Data: Data obtained from other sources. Example: Population data from census reports."
+      },
+      {
+        "type": "long",
+        "question": "Find the mean, median and mode of the following data: Marks of 30 students in Mathematics test in a school in Karachi: 45, 50, 55, 45, 60, 50, 45, 65, 70, 50, 55, 45, 60, 55, 50, 65, 45, 55, 60, 50, 70, 55, 45, 60, 50, 55, 65, 45, 60, 55",
+        "answer": "Mean = Sum of all marks ÷ 30 = 1665 ÷ 30 = 55.5 marks. For Median: Arrange in order, middle values are 15th and 16th = (55+55) ÷ 2 = 55 marks. Mode: Most frequent value is 45 and 50 and 55 (each appears 7 times) - trimodal distribution."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "If the mean of 5 numbers is 12, what is the sum of these numbers?",
+        "options": {
+          "A": "60",
+          "B": "17",
+          "C": "5",
+          "D": "12"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "The median of the data 3, 7, 5, 9, 11, 2, 8 is:",
+        "options": {
+          "A": "5",
+          "B": "7",
+          "C": "8",
+          "D": "9"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Data collected from census reports is an example of:",
+        "options": {
+          "A": "Primary Data",
+          "B": "Secondary Data",
+          "C": "Both",
+          "D": "Neither"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often forget to arrange data in order before finding median",
+      "Confusing class mark with class interval in grouped data mean calculation",
+      "Not writing the formula before solving numerical problems",
+      "Mixing up definitions of primary and secondary data",
+      "Forgetting to divide by total frequency (Σf) in grouped data mean formula"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question about definitions in every BSEK paper",
+      "Long question on calculating mean, median, mode appears every year",
+      "Always write complete definitions word-for-word from textbook",
+      "Show all steps clearly in numerical problems for full marks",
+      "Practice frequency distribution table construction with Pakistani context data"
+    ],
+    "formulas": [
+      "Mean = Σx/n (for ungrouped data)",
+      "Mean = Σfx/Σf (for grouped data)",
+      "Median position = (n+1)/2 for odd n, average of n/2 and (n/2+1) positions for even n",
+      "Range = Highest value - Lowest value"
+    ],
+    "keyDiagram": "Frequency Distribution Table showing Class Intervals, Class Marks, Frequency columns with proper labeling and totals. Also practice drawing simple bar graphs and histograms for data representation."
+  },
+  "created_at": "2026-04-06T06:27:55.468Z"
+}

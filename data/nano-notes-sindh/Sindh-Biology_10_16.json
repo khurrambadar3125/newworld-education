@@ -1,0 +1,106 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "16",
+  "chapter_name": "Man and His Environment",
+  "note_data": {
+    "title": "Man and His Environment",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Environment consists of all living and non-living factors that surround an organism and affect its life",
+      "Human activities like industrialization, deforestation, and urbanization cause environmental pollution",
+      "Air pollution in Karachi is mainly caused by vehicle emissions, industrial waste, and burning of fossil fuels",
+      "Water pollution in River Indus and Karachi's coastline is due to industrial discharge and sewage",
+      "Deforestation in Pakistan leads to soil erosion, loss of biodiversity, and climate change",
+      "Conservation methods include afforestation, recycling, using renewable energy sources, and proper waste management",
+      "Global warming is caused by greenhouse gases like CO2, methane, and CFCs in the atmosphere",
+      "Ozone layer depletion is mainly caused by chlorofluorocarbons (CFCs) used in refrigerators and aerosols",
+      "Acid rain forms when sulfur dioxide and nitrogen oxides react with water vapor in atmosphere"
+    ],
+    "definitions": [
+      {
+        "term": "Environment",
+        "definition": "Environment is the sum total of all living and non-living factors that surround an organism and influence its survival, growth and reproduction."
+      },
+      {
+        "term": "Pollution",
+        "definition": "Pollution is the addition of harmful substances to the environment that cause damage to living organisms and their surroundings."
+      },
+      {
+        "term": "Global Warming",
+        "definition": "Global warming is the gradual increase in the average temperature of Earth's atmosphere due to increased concentration of greenhouse gases."
+      },
+      {
+        "term": "Acid Rain",
+        "definition": "Acid rain is precipitation that has become acidic due to atmospheric pollution, primarily from sulfur dioxide and nitrogen oxides."
+      },
+      {
+        "term": "Biodiversity",
+        "definition": "Biodiversity refers to the variety of living organisms found in different ecosystems on Earth."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Write any four causes of air pollution.",
+        "answer": "(i) Vehicle emissions (ii) Industrial smoke (iii) Burning of fossil fuels (iv) Agricultural burning of crops"
+      },
+      {
+        "type": "long",
+        "question": "Explain the effects of deforestation on environment. (5 marks)",
+        "answer": "Effects of deforestation: (i) Soil erosion - removal of trees causes topsoil to wash away (ii) Loss of biodiversity - destruction of habitats leads to extinction of species (iii) Climate change - less trees means less CO2 absorption (iv) Flooding - no tree roots to absorb rainwater (v) Desertification - fertile land becomes barren"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which gas is mainly responsible for global warming?",
+        "options": {
+          "A": "Oxygen",
+          "B": "Carbon dioxide",
+          "C": "Nitrogen",
+          "D": "Hydrogen"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Acid rain is formed when which gases react with water vapor?",
+        "options": {
+          "A": "CO2 and O2",
+          "B": "SO2 and NO2",
+          "C": "CH4 and CO",
+          "D": "N2 and H2"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The main cause of ozone layer depletion is:",
+        "options": {
+          "A": "Carbon dioxide",
+          "B": "Methane",
+          "C": "Chlorofluorocarbons",
+          "D": "Sulfur dioxide"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse pollution causes with effects - learn them separately",
+      "Don't mix up greenhouse gases - CO2 is main cause of global warming, CFCs cause ozone depletion",
+      "Always give Pakistani examples when asked about pollution (Karachi, River Indus, Tarbela Dam)",
+      "Write complete definitions word-by-word as given in textbook",
+      "Don't forget to mention both living and non-living factors when defining environment"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question about pollution causes in every BSEK paper",
+      "Long questions often ask about deforestation effects or conservation methods (5-8 marks)",
+      "Always memorize textbook definitions exactly - BSEK expects word-to-word answers",
+      "Use Pakistani context examples for better marks (Karachi's air pollution, River Indus contamination)"
+    ],
+    "formulas": [],
+    "keyDiagram": "Carbon Cycle diagram showing CO2 exchange between atmosphere, plants (photosynthesis), animals (respiration), and decomposers. Students must draw and label all processes clearly."
+  },
+  "created_at": "2026-04-06T06:19:07.688Z"
+}

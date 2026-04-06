@@ -1,0 +1,106 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "15",
+  "chapter_name": "Projection of a Side of a Triangle",
+  "note_data": {
+    "title": "Projection of a Side of a Triangle",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Projection of a side is the perpendicular distance from one vertex to the line containing the opposite side",
+      "In any triangle ABC, if D is the foot of perpendicular from B to AC, then AD is the projection of AB on AC",
+      "Projection can be positive or negative depending on the position of the foot of perpendicular",
+      "If the angle between two sides is acute, projection is positive; if obtuse, projection is negative",
+      "The formula for projection of side b on side a is: projection = b cos C",
+      "Projection is used to derive the cosine rule and solve various geometric problems",
+      "In right-angled triangles, one projection is always zero",
+      "Projection formula helps in finding unknown sides and angles in triangles"
+    ],
+    "definitions": [
+      {
+        "term": "Projection of a side",
+        "definition": "The projection of a side of a triangle on another side is the length of the perpendicular dropped from one end of the first side to the line containing the second side, measured from the foot of perpendicular to the other end of the second side."
+      },
+      {
+        "term": "Foot of perpendicular",
+        "definition": "The point where a perpendicular line from a vertex meets the opposite side (or its extension) is called the foot of perpendicular."
+      },
+      {
+        "term": "Positive projection",
+        "definition": "When the foot of perpendicular falls on the side itself (between the two vertices), the projection is said to be positive."
+      },
+      {
+        "term": "Negative projection",
+        "definition": "When the foot of perpendicular falls on the extension of the side (beyond one of the vertices), the projection is said to be negative."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define projection of a side of a triangle. When is it positive and when is it negative?",
+        "answer": "Projection of a side is the perpendicular distance from one vertex to the line containing opposite side. It is positive when foot of perpendicular lies on the side, negative when it lies on extension of the side."
+      },
+      {
+        "type": "long",
+        "question": "In triangle ABC, prove that the projection of side AB on side AC is AB cos A. Also derive the cosine rule using projections.",
+        "answer": "Let D be foot of perpendicular from B to AC. In right triangle ABD, cos A = AD/AB, so AD = AB cos A. This is projection of AB on AC. For cosine rule: BC² = (AC - AD)² + BD² = AC² + AD² - 2(AC)(AD) + BD² = AC² + AB² - 2(AC)(AB cos A) = b² + c² - 2bc cos A"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "In triangle ABC, if angle A is obtuse, then projection of AB on AC is:",
+        "options": {
+          "A": "positive",
+          "B": "negative",
+          "C": "zero",
+          "D": "undefined"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The projection of side b on side c in triangle ABC is:",
+        "options": {
+          "A": "b cos A",
+          "B": "b cos B",
+          "C": "b cos C",
+          "D": "c cos B"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "In a right-angled triangle ABC with right angle at C, the projection of BC on AB is:",
+        "options": {
+          "A": "BC cos A",
+          "B": "BC cos B",
+          "C": "BC sin A",
+          "D": "BC tan A"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse which side's projection is being calculated and use wrong angle in formula",
+      "Forgetting to consider negative projection when angle is obtuse",
+      "Not drawing proper diagram showing foot of perpendicular clearly",
+      "Mixing up the cosine rule derivation with projection formula",
+      "Using wrong notation - writing projection of AB on BC instead of projection of AB on AC"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Always draw the triangle with perpendicular clearly marked for full marks",
+      "Memorize the exact definition - BSEK asks for word-to-word textbook definitions",
+      "Practice both acute and obtuse angle cases for projection problems",
+      "Cosine rule derivation using projections is a favorite 8-mark question"
+    ],
+    "formulas": [
+      "Projection of side b on side a = b cos C",
+      "Projection of side c on side a = c cos B",
+      "Cosine rule: a² = b² + c² - 2bc cos A"
+    ],
+    "keyDiagram": "Triangle ABC with perpendicular from vertex B to side AC (or its extension), meeting at point D. Mark the foot D clearly and show that AD represents the projection of AB on AC. Include both acute and obtuse angle cases."
+  },
+  "created_at": "2026-04-06T06:25:21.146Z"
+}

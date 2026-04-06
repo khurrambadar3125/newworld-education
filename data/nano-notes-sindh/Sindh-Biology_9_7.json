@@ -1,0 +1,110 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "7",
+  "chapter_name": "Bioenergetics",
+  "note_data": {
+    "title": "Bioenergetics",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Bioenergetics is the study of energy transformations in living organisms",
+      "Photosynthesis converts light energy into chemical energy (glucose) using CO2 and water",
+      "Chloroplasts contain chlorophyll which absorbs light energy for photosynthesis",
+      "Light reaction occurs in thylakoids, dark reaction occurs in stroma",
+      "Cellular respiration breaks down glucose to release ATP energy in mitochondria",
+      "Aerobic respiration requires oxygen and produces 38 ATP molecules per glucose",
+      "Anaerobic respiration occurs without oxygen and produces only 2 ATP molecules",
+      "Fermentation is a type of anaerobic respiration producing alcohol or lactic acid",
+      "ATP is the universal energy currency of cells"
+    ],
+    "definitions": [
+      {
+        "term": "Bioenergetics",
+        "definition": "The study of energy transformations that occur in living organisms"
+      },
+      {
+        "term": "Photosynthesis",
+        "definition": "The process by which green plants synthesize glucose from carbon dioxide and water in the presence of sunlight and chlorophyll"
+      },
+      {
+        "term": "Cellular Respiration",
+        "definition": "The process of breaking down glucose molecules to release energy in the form of ATP"
+      },
+      {
+        "term": "ATP",
+        "definition": "Adenosine Triphosphate is the universal energy currency of cells that stores and releases energy"
+      },
+      {
+        "term": "Fermentation",
+        "definition": "A type of anaerobic respiration that produces alcohol or lactic acid as end products"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define photosynthesis and write its chemical equation.",
+        "answer": "Photosynthesis is the process by which green plants synthesize glucose from carbon dioxide and water in the presence of sunlight and chlorophyll. Chemical equation: 6CO2 + 6H2O + Light Energy → C6H12O6 + 6O2 + ATP"
+      },
+      {
+        "type": "long",
+        "question": "Describe the process of cellular respiration and differentiate between aerobic and anaerobic respiration.",
+        "answer": "Cellular respiration is the breakdown of glucose to release ATP energy. Aerobic respiration: Occurs with oxygen, produces 38 ATP, end products are CO2 and H2O, occurs in mitochondria. Anaerobic respiration: Occurs without oxygen, produces 2 ATP, end products are alcohol/lactic acid, occurs in cytoplasm. Aerobic is more efficient than anaerobic respiration."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "How many ATP molecules are produced during aerobic respiration?",
+        "options": {
+          "A": "2",
+          "B": "36",
+          "C": "38",
+          "D": "40"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "In which part of chloroplast does dark reaction occur?",
+        "options": {
+          "A": "Thylakoid",
+          "B": "Stroma",
+          "C": "Grana",
+          "D": "Cristae"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which gas is released during photosynthesis?",
+        "options": {
+          "A": "Carbon dioxide",
+          "B": "Nitrogen",
+          "C": "Oxygen",
+          "D": "Hydrogen"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse light reaction with dark reaction locations",
+      "Forgetting to write balanced chemical equations completely",
+      "Mixing up ATP production numbers in aerobic (38) vs anaerobic (2) respiration",
+      "Not mentioning chlorophyll when defining photosynthesis",
+      "Confusing fermentation products (alcohol vs lactic acid)"
+    ],
+    "examTips": [
+      "This chapter always has 1-2 MCQs about ATP production and photosynthesis location",
+      "Chemical equations of photosynthesis and respiration appear in every paper",
+      "Diagram of chloroplast structure is frequently asked - memorize all parts",
+      "Differentiation between aerobic and anaerobic respiration is a common 5-mark question"
+    ],
+    "formulas": [
+      "Photosynthesis: 6CO2 + 6H2O + Light Energy → C6H12O6 + 6O2 + ATP",
+      "Aerobic Respiration: C6H12O6 + 6O2 → 6CO2 + 6H2O + 38 ATP",
+      "Anaerobic Respiration: C6H12O6 → 2C2H5OH + 2CO2 + 2 ATP"
+    ],
+    "keyDiagram": "Structure of Chloroplast showing outer membrane, inner membrane, stroma, thylakoids, grana and chlorophyll. Label all parts clearly as this diagram appears every year in BSEK papers."
+  },
+  "created_at": "2026-04-06T06:15:50.316Z"
+}

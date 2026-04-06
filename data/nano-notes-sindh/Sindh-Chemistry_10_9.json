@@ -1,0 +1,97 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "9",
+  "chapter_name": "Chemical Equilibrium",
+  "note_data": {
+    "title": "Chemical Equilibrium",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Chemical equilibrium is a state in which the rate of forward reaction equals the rate of backward reaction",
+      "At equilibrium, concentrations of reactants and products remain constant but not equal",
+      "Equilibrium can only be achieved in a closed system where no substance can escape",
+      "Le Chatelier's principle states that if stress is applied to a system at equilibrium, the system shifts to counteract the stress",
+      "Factors affecting equilibrium: concentration, pressure, temperature, and catalyst",
+      "Catalyst increases the rate of both forward and backward reactions equally, hence does not affect equilibrium position",
+      "Increasing pressure favors the side with fewer gas molecules",
+      "Increasing temperature favors endothermic reaction direction",
+      "Industrial applications include Haber process for ammonia production and Contact process for sulfuric acid"
+    ],
+    "definitions": [
+      {
+        "term": "Chemical Equilibrium",
+        "definition": "A state of balance in which the rate of forward reaction is equal to the rate of backward reaction and the concentrations of reactants and products remain constant."
+      },
+      {
+        "term": "Reversible Reaction",
+        "definition": "A chemical reaction in which reactants form products and products can also form back the reactants under the same conditions."
+      },
+      {
+        "term": "Le Chatelier's Principle",
+        "definition": "If a stress is applied to a system at equilibrium, the equilibrium shifts in such a direction as to undo the effect of stress."
+      },
+      {
+        "term": "Dynamic Equilibrium",
+        "definition": "An equilibrium in which the forward and backward reactions continue to occur at equal rates."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "What are the characteristics of chemical equilibrium?",
+        "answer": "1) Rate of forward reaction equals rate of backward reaction 2) Concentrations of reactants and products remain constant 3) It is dynamic in nature 4) Can only be achieved in closed system"
+      },
+      {
+        "type": "long",
+        "question": "Explain Le Chatelier's principle with examples. How does change in pressure affect equilibrium?",
+        "answer": "Le Chatelier's principle states that if stress is applied to a system at equilibrium, the equilibrium shifts to counteract the stress. Effect of pressure: When pressure increases, equilibrium shifts to the side with fewer gas molecules. Example: N₂ + 3H₂ ⇌ 2NH₃. Left side has 4 molecules, right side has 2 molecules. Increasing pressure shifts equilibrium to right (forward direction) to produce more ammonia. This principle is used in Haber process for industrial ammonia production."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "At equilibrium, which statement is correct?",
+        "options": {
+          "A": "Forward reaction stops",
+          "B": "Concentrations become equal",
+          "C": "Rate of forward reaction equals rate of backward reaction",
+          "D": "Temperature becomes constant"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "According to Le Chatelier's principle, increasing temperature in N₂ + 3H₂ ⇌ 2NH₃ + Heat will:",
+        "options": {
+          "A": "Shift equilibrium to right",
+          "B": "Shift equilibrium to left",
+          "C": "Not affect equilibrium",
+          "D": "Stop the reaction"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse 'equal concentrations' with 'constant concentrations' at equilibrium",
+      "Forgetting that catalyst does not shift equilibrium position, only increases rate",
+      "Not understanding that equilibrium is dynamic - reactions continue but at equal rates",
+      "Mixing up the effect of temperature on exothermic vs endothermic reactions",
+      "Writing incomplete equilibrium expressions without proper arrows"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Le Chatelier's principle explanation with examples is frequently asked (5-8 marks)",
+      "Always mention 'closed system' when defining chemical equilibrium",
+      "Learn Haber process example - commonly asked in industrial applications",
+      "Practice drawing equilibrium graphs showing concentration vs time"
+    ],
+    "formulas": [
+      "For reaction aA + bB ⇌ cC + dD",
+      "At equilibrium: Rate forward = Rate backward",
+      "Equilibrium constant Kc = [C]^c[D]^d / [A]^a[B]^b"
+    ],
+    "keyDiagram": "Graph showing concentration vs time for reversible reaction - initially reactant concentration decreases and product concentration increases until both become constant at equilibrium. Both curves level off horizontally showing dynamic equilibrium state."
+  },
+  "created_at": "2026-04-06T06:10:39.035Z"
+}

@@ -1,0 +1,111 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "17",
+  "chapter_name": "Sets and Functions",
+  "note_data": {
+    "title": "Sets and Functions",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Set is a well-defined collection of distinct objects called elements or members",
+      "Function is a special type of relation where each element in domain has exactly one image in codomain",
+      "Domain is the set of all first elements (x-values) of ordered pairs in a function",
+      "Range is the set of all second elements (y-values) that are actually used in a function",
+      "Codomain is the set from which the second elements of ordered pairs are taken",
+      "One-to-one function means no two different elements of domain have same image",
+      "Onto function means range equals codomain - every element of codomain is used",
+      "Bijective function is both one-to-one and onto function",
+      "Composite function (f∘g)(x) = f(g(x)) - apply g first, then f to the result"
+    ],
+    "definitions": [
+      {
+        "term": "Function",
+        "definition": "A function is a relation in which each element of the domain is paired with exactly one element of the codomain"
+      },
+      {
+        "term": "Domain",
+        "definition": "The domain of a function is the set of all first components (x-values) of the ordered pairs"
+      },
+      {
+        "term": "Range",
+        "definition": "The range of a function is the set of all second components (y-values) that are actually used"
+      },
+      {
+        "term": "One-to-one Function",
+        "definition": "A function is called one-to-one if different elements of the domain have different images in the codomain"
+      },
+      {
+        "term": "Onto Function",
+        "definition": "A function is called onto if every element of the codomain is the image of at least one element of the domain"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define function and give an example.",
+        "answer": "A function is a relation in which each element of the domain is paired with exactly one element of the codomain. Example: f(x) = 2x + 3"
+      },
+      {
+        "type": "long",
+        "question": "Let f(x) = 3x - 2 and g(x) = x² + 1. Find (f∘g)(x) and (g∘f)(x). Also find their domains.",
+        "answer": "(f∘g)(x) = f(g(x)) = f(x² + 1) = 3(x² + 1) - 2 = 3x² + 3 - 2 = 3x² + 1. (g∘f)(x) = g(f(x)) = g(3x - 2) = (3x - 2)² + 1 = 9x² - 12x + 4 + 1 = 9x² - 12x + 5. Domain of both composite functions is R (all real numbers)."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "If f(x) = 2x + 3, then f(5) = ?",
+        "options": {
+          "A": "11",
+          "B": "13",
+          "C": "15",
+          "D": "17"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which of the following is NOT a function?",
+        "options": {
+          "A": "f(x) = x²",
+          "B": "f(x) = 2x + 1",
+          "C": "x² + y² = 4",
+          "D": "f(x) = √x"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "If f(x) = x - 1 and g(x) = x + 2, then (f∘g)(3) = ?",
+        "options": {
+          "A": "4",
+          "B": "5",
+          "C": "6",
+          "D": "7"
+        },
+        "correct": "A"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse domain and range - remember domain is input (x-values), range is output (y-values)",
+      "In composite functions, students apply functions in wrong order - (f∘g)(x) means f(g(x)), apply g first",
+      "Students think all relations are functions - a function must pass vertical line test",
+      "Confusing range and codomain - range is subset of codomain",
+      "Not writing function notation properly - always write f(x) = instead of just y ="
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question in every BSEK paper",
+      "Always draw arrow diagrams for function types - examiners expect proper diagrams",
+      "Memorize exact definitions word-by-word as they appear in textbook",
+      "Practice composite function calculations - very common in numericals",
+      "Learn to identify function types (one-to-one, onto, bijective) from given sets"
+    ],
+    "formulas": [
+      "If f(x) = ax + b, then f⁻¹(x) = (x - b)/a",
+      "(f∘g)(x) = f(g(x))",
+      "(g∘f)(x) = g(f(x))"
+    ],
+    "keyDiagram": "Arrow diagram showing mapping between Domain and Codomain sets, with arrows pointing from each domain element to exactly one codomain element. Label Domain, Codomain, Range, and show examples of one-to-one, onto, and many-to-one mappings."
+  },
+  "created_at": "2026-04-06T06:26:03.890Z"
+}

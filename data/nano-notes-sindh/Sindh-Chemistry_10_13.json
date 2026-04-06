@@ -1,0 +1,106 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "13",
+  "chapter_name": "Environmental Chemistry I: The Atmosphere",
+  "note_data": {
+    "title": "Environmental Chemistry I: The Atmosphere",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "The atmosphere is a layer of gases surrounding the Earth, held by gravitational force",
+      "Troposphere (0-12 km) contains 75% of atmospheric mass and all weather phenomena occur here",
+      "Stratosphere (12-50 km) contains the ozone layer which protects Earth from harmful UV radiations",
+      "Greenhouse effect is the warming of Earth's surface due to absorption of infrared radiation by greenhouse gases",
+      "Major greenhouse gases are CO₂, CH₄, N₂O, CFCs and water vapors",
+      "Ozone depletion is caused by CFCs (Chlorofluorocarbons) which release chlorine atoms in stratosphere",
+      "Air pollution in cities like Karachi is mainly due to vehicle emissions, industrial waste and burning of fossil fuels",
+      "Acid rain is formed when SO₂ and NO₂ react with water vapor to form H₂SO₄ and HNO₃"
+    ],
+    "definitions": [
+      {
+        "term": "Atmosphere",
+        "definition": "The atmosphere is a layer of gases that surrounds the Earth and is held in place by Earth's gravitational force"
+      },
+      {
+        "term": "Greenhouse Effect",
+        "definition": "The greenhouse effect is the process by which certain gases in the atmosphere absorb infrared radiation from Earth's surface and re-radiate it back, causing warming of the planet"
+      },
+      {
+        "term": "Ozone Layer",
+        "definition": "The ozone layer is a region in the stratosphere containing high concentration of ozone (O₃) molecules that absorbs most of the Sun's harmful ultraviolet radiation"
+      },
+      {
+        "term": "Air Pollution",
+        "definition": "Air pollution is the contamination of air by harmful substances that are not normally present or are present in abnormal quantities"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Write any four greenhouse gases and their sources.",
+        "answer": "CO₂ (burning fossil fuels), CH₄ (livestock, rice fields), N₂O (fertilizers), CFCs (refrigerants, aerosols). These gases trap heat in atmosphere causing global warming."
+      },
+      {
+        "type": "long",
+        "question": "Explain the structure of atmosphere with diagram. (8 marks)",
+        "answer": "Atmosphere has four layers: 1) Troposphere (0-12km): Contains 75% atmospheric mass, temperature decreases with height, weather occurs here 2) Stratosphere (12-50km): Contains ozone layer, temperature increases with height 3) Mesosphere (50-85km): Temperature decreases, meteors burn here 4) Thermosphere (85-600km): Temperature increases, contains ionosphere. Draw labeled diagram showing all layers with approximate heights."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which layer of atmosphere contains ozone layer?",
+        "options": {
+          "A": "Troposphere",
+          "B": "Stratosphere",
+          "C": "Mesosphere",
+          "D": "Thermosphere"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The major cause of acid rain is:",
+        "options": {
+          "A": "CO₂",
+          "B": "CH₄",
+          "C": "SO₂ and NO₂",
+          "D": "O₃"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which gas is responsible for ozone depletion?",
+        "options": {
+          "A": "CO₂",
+          "B": "CFCs",
+          "C": "CH₄",
+          "D": "N₂O"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse troposphere with stratosphere - remember troposphere is lowest layer where we live",
+      "Writing incomplete chemical reactions for acid rain formation without balancing equations",
+      "Mixing up greenhouse effect (good) with global warming (excessive greenhouse effect)",
+      "Not drawing proper labeled diagram of atmospheric layers with correct heights",
+      "Forgetting to mention Pakistani context like Karachi's air pollution in answers"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question worth 5-8 marks in BSEK papers",
+      "Always draw and label the atmospheric layers diagram - appears in 80% of papers",
+      "Memorize the exact heights of each atmospheric layer as given in textbook",
+      "Learn chemical equations for acid rain formation: SO₂ + H₂O → H₂SO₃, 2SO₂ + O₂ → 2SO₃, SO₃ + H₂O → H₂SO₄"
+    ],
+    "formulas": [
+      "SO₂ + H₂O → H₂SO₃",
+      "2SO₂ + O₂ → 2SO₃",
+      "SO₃ + H₂O → H₂SO₄",
+      "4NO₂ + 2H₂O + O₂ → 4HNO₃"
+    ],
+    "keyDiagram": "Atmospheric layers diagram showing Troposphere (0-12km), Stratosphere (12-50km) with ozone layer, Mesosphere (50-85km), and Thermosphere (85-600km). Include temperature variation curve and label each layer with characteristics."
+  },
+  "created_at": "2026-04-06T06:12:08.111Z"
+}

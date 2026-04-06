@@ -1,0 +1,110 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "11",
+  "chapter_name": "Homeostasis",
+  "note_data": {
+    "title": "Homeostasis",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Homeostasis is the tendency of living organisms to maintain constant internal environment despite changes in external environment",
+      "Feedback mechanism consists of three components: receptor, control center, and effector",
+      "Negative feedback reduces the effect of stimulus and maintains homeostasis",
+      "Positive feedback amplifies the effect of stimulus and is less common in biological systems",
+      "Kidneys maintain water balance through osmoregulation by producing concentrated or dilute urine",
+      "Skin regulates body temperature through vasodilation, vasoconstriction, sweating, and shivering",
+      "Liver maintains blood glucose level by converting glucose to glycogen (glycogenesis) and glycogen to glucose (glycogenolysis)",
+      "Pancreas produces insulin and glucagon hormones to control blood sugar levels",
+      "Thermoregulation in mammals involves hypothalamus as the control center for body temperature"
+    ],
+    "definitions": [
+      {
+        "term": "Homeostasis",
+        "definition": "The tendency of living organisms to maintain constant internal environment despite changes in external environment"
+      },
+      {
+        "term": "Feedback Mechanism",
+        "definition": "A control system that uses information from sensors to regulate the activities of effectors"
+      },
+      {
+        "term": "Negative Feedback",
+        "definition": "A control mechanism that reduces the effect of a stimulus and brings conditions back to normal"
+      },
+      {
+        "term": "Osmoregulation",
+        "definition": "The process by which organisms regulate water content and solute concentration in their body fluids"
+      },
+      {
+        "term": "Thermoregulation",
+        "definition": "The ability of an organism to keep its body temperature within certain boundaries"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define homeostasis and give two examples.",
+        "answer": "Homeostasis is the tendency of living organisms to maintain constant internal environment despite changes in external environment. Examples: regulation of body temperature and blood glucose level."
+      },
+      {
+        "type": "long",
+        "question": "Explain the role of skin in temperature regulation.",
+        "answer": "Skin regulates body temperature through: 1) Vasodilation - blood vessels near skin surface dilate to release heat, 2) Vasoconstriction - blood vessels constrict to conserve heat, 3) Sweating - evaporation of sweat cools the body, 4) Hair erection - traps air layer for insulation, 5) Subcutaneous fat acts as insulator. These mechanisms are controlled by hypothalamus which acts as thermostat."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which hormone decreases blood glucose level?",
+        "options": {
+          "A": "Glucagon",
+          "B": "Insulin",
+          "C": "Adrenaline",
+          "D": "Thyroxine"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The control center for body temperature regulation is:",
+        "options": {
+          "A": "Medulla",
+          "B": "Cerebrum",
+          "C": "Hypothalamus",
+          "D": "Cerebellum"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which process converts glucose to glycogen?",
+        "options": {
+          "A": "Glycogenolysis",
+          "B": "Glycogenesis",
+          "C": "Gluconeogenesis",
+          "D": "Glycolysis"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse glycogenesis with glycogenolysis",
+      "Many students write positive feedback examples for homeostasis instead of negative feedback",
+      "Students forget to mention hypothalamus as control center in thermoregulation",
+      "Mixing up insulin and glucagon functions in glucose regulation",
+      "Not explaining the complete feedback loop with receptor, control center, and effector"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Temperature regulation diagram appears frequently - memorize skin structure",
+      "Learn exact definitions word-for-word as they appear in STBB textbook",
+      "Practice drawing feedback mechanism diagrams with proper labels",
+      "Remember Pakistani context - mention effects of Karachi's hot climate on thermoregulation"
+    ],
+    "formulas": [
+      "Normal blood glucose level = 80-120 mg/100ml",
+      "Normal body temperature = 37°C (98.6°F)"
+    ],
+    "keyDiagram": "Skin structure showing epidermis, dermis, subcutaneous layer with hair follicles, sweat glands, blood vessels, and nerve endings. Also draw feedback mechanism diagram showing stimulus → receptor → control center → effector → response with feedback loop."
+  },
+  "created_at": "2026-04-06T06:17:18.074Z"
+}

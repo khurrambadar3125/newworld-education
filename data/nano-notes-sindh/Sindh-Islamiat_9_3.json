@@ -1,0 +1,107 @@
+{
+  "subject": "Islamiat",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "3",
+  "chapter_name": "Ahadees — Selected Hadith",
+  "note_data": {
+    "title": "Ahadees — Selected Hadith",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Hadith is the second source of Islamic Shariah after the Holy Quran",
+      "Prophet Muhammad (PBUH) said: 'I have left among you two things which if you hold fast, you will never go astray: the Book of Allah and my Sunnah'",
+      "The Hadith about cleanliness states: 'Cleanliness is half of faith' (At-Tahuru Shatru Al-Iman)",
+      "The Hadith about seeking knowledge: 'Seek knowledge from cradle to grave' emphasizes lifelong learning",
+      "The Hadith about parents: 'Paradise lies under the feet of your mother' shows the high status of mothers in Islam",
+      "The Hadith about social justice: 'Help your brother whether he is an oppressor or oppressed' teaches fairness",
+      "The Hadith about good conduct: 'The best of people are those who benefit others' promotes social service",
+      "These Ahadees provide practical guidance for Muslims in their daily lives",
+      "Each Hadith has a chain of narrators (Isnad) and text (Matn) that must be authentic"
+    ],
+    "definitions": [
+      {
+        "term": "Hadith",
+        "definition": "The sayings, actions, and approvals of Prophet Muhammad (PBUH) that serve as the second source of Islamic law after the Quran"
+      },
+      {
+        "term": "Sunnah",
+        "definition": "The way of life and example set by Prophet Muhammad (PBUH) including his practices, habits, and teachings"
+      },
+      {
+        "term": "Isnad",
+        "definition": "The chain of narrators who transmitted a particular Hadith from the Prophet (PBUH) to the compiler"
+      },
+      {
+        "term": "Matn",
+        "definition": "The actual text or content of a Hadith containing the words or description of the Prophet's (PBUH) action"
+      },
+      {
+        "term": "Sahih Hadith",
+        "definition": "An authentic Hadith with a reliable chain of narrators and accurate content that can be used for Islamic jurisprudence"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define Hadith and explain its importance in Islam.",
+        "answer": "Hadith refers to the sayings, actions, and approvals of Prophet Muhammad (PBUH). It is the second source of Islamic Shariah after the Quran and provides practical guidance for implementing Quranic teachings in daily life."
+      },
+      {
+        "type": "long",
+        "question": "Explain the Hadith about seeking knowledge and its significance in building a progressive society like Pakistan.",
+        "answer": "The Prophet (PBUH) said 'Seek knowledge from cradle to grave' which emphasizes that learning is a lifelong process. This Hadith shows that Islam promotes education for all ages and genders. In Pakistan's context, this teaching encourages both religious and worldly education. It motivates Muslims to acquire knowledge in science, technology, medicine, and other fields. This Hadith supports Pakistan's educational development and helps create an enlightened society. It also removes the misconception that Islam discourages modern education, showing that knowledge-seeking is a religious obligation that leads to national progress."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which Hadith emphasizes the importance of cleanliness?",
+        "options": {
+          "A": "Paradise lies under the feet of your mother",
+          "B": "Cleanliness is half of faith",
+          "C": "Seek knowledge from cradle to grave",
+          "D": "Help your brother whether oppressor or oppressed"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "What does 'Isnad' refer to in Hadith terminology?",
+        "options": {
+          "A": "The text of Hadith",
+          "B": "The narrator of Hadith",
+          "C": "The chain of narrators",
+          "D": "The compilation of Hadith"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "According to a famous Hadith, what lies under the feet of mothers?",
+        "options": {
+          "A": "Blessings",
+          "B": "Paradise",
+          "C": "Respect",
+          "D": "Honor"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse Hadith with Quran - remember Hadith is the Prophet's (PBUH) sayings, not divine revelation",
+      "Mixing up Isnad (chain of narrators) with Matn (text of Hadith)",
+      "Writing incomplete Hadith text - always write the complete Arabic phrase when asked",
+      "Forgetting to mention Prophet's (PBUH) name with proper respect (PBUH)",
+      "Not explaining the practical application of Ahadees in modern Pakistani society"
+    ],
+    "examTips": [
+      "This chapter usually appears as 1 MCQ and 1 short question worth 3-5 marks in BSEK papers",
+      "Memorize the exact Arabic text and English translation of each Hadith",
+      "Practice relating each Hadith to Pakistani society and modern context",
+      "Always write 'Prophet Muhammad (PBUH)' in full - never abbreviate in exams",
+      "Learn the practical lessons from each Hadith as separate points for long answers"
+    ],
+    "formulas": [],
+    "keyDiagram": "Create a flowchart showing: Prophet Muhammad (PBUH) → Companions → Tabi'in → Compilers → Modern Muslims, illustrating how Ahadees were transmitted through generations"
+  },
+  "created_at": "2026-04-06T06:36:15.792Z"
+}

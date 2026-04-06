@@ -1,0 +1,109 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "16",
+  "chapter_name": "Introduction to Coordinate Geometry",
+  "note_data": {
+    "title": "Introduction to Coordinate Geometry",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Coordinate geometry is a branch of mathematics which deals with the study of geometry using coordinates",
+      "The coordinate system consists of two perpendicular lines called axes - horizontal axis (x-axis) and vertical axis (y-axis)",
+      "The point of intersection of x-axis and y-axis is called the origin, denoted by O(0,0)",
+      "Any point in the plane is represented by an ordered pair (x,y) where x is abscissa and y is ordinate",
+      "The coordinate axes divide the plane into four parts called quadrants - I, II, III, and IV",
+      "Distance between two points A(x₁,y₁) and B(x₂,y₂) is given by d = √[(x₂-x₁)² + (y₂-y₁)²]",
+      "Mid-point of line segment joining points A(x₁,y₁) and B(x₂,y₂) is ((x₁+x₂)/2, (y₁+y₂)/2)",
+      "Section formula divides a line segment internally in the ratio m:n"
+    ],
+    "definitions": [
+      {
+        "term": "Coordinate Geometry",
+        "definition": "Coordinate geometry is a branch of mathematics which deals with the study of geometry using coordinates."
+      },
+      {
+        "term": "Abscissa",
+        "definition": "The x-coordinate of a point is called its abscissa."
+      },
+      {
+        "term": "Ordinate",
+        "definition": "The y-coordinate of a point is called its ordinate."
+      },
+      {
+        "term": "Origin",
+        "definition": "The point of intersection of coordinate axes is called the origin."
+      },
+      {
+        "term": "Quadrant",
+        "definition": "The coordinate axes divide the plane into four parts called quadrants."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define coordinate geometry and write the coordinates of origin.",
+        "answer": "Coordinate geometry is a branch of mathematics which deals with the study of geometry using coordinates. The coordinates of origin are (0,0)."
+      },
+      {
+        "type": "long",
+        "question": "Find the distance between points A(3,4) and B(7,1). Also find the coordinates of mid-point of AB.",
+        "answer": "Distance formula: d = √[(x₂-x₁)² + (y₂-y₁)²]\nd = √[(7-3)² + (1-4)²] = √[16 + 9] = √25 = 5 units\nMid-point formula: ((x₁+x₂)/2, (y₁+y₂)/2)\nMid-point = ((3+7)/2, (4+1)/2) = (5, 2.5)"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The point (-3, 2) lies in which quadrant?",
+        "options": {
+          "A": "I",
+          "B": "II",
+          "C": "III",
+          "D": "IV"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The distance between points (0,0) and (3,4) is:",
+        "options": {
+          "A": "5",
+          "B": "7",
+          "C": "12",
+          "D": "25"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "The coordinates of origin are:",
+        "options": {
+          "A": "(1,1)",
+          "B": "(0,1)",
+          "C": "(1,0)",
+          "D": "(0,0)"
+        },
+        "correct": "D"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse abscissa with ordinate - remember x comes first, then y",
+      "Always write the distance formula before solving distance problems",
+      "Students forget to take square root in distance formula",
+      "Wrong signs in quadrants - remember ASTC rule for signs",
+      "Not simplifying coordinates properly in mid-point calculations"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Memorize the quadrant diagram with signs - it appears every year",
+      "Distance and mid-point formulas are must-know for long questions",
+      "Practice plotting points on coordinate plane for better understanding"
+    ],
+    "formulas": [
+      "Distance formula: d = √[(x₂-x₁)² + (y₂-y₁)²]",
+      "Mid-point formula: ((x₁+x₂)/2, (y₁+y₂)/2)",
+      "Section formula (internal): ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n))"
+    ],
+    "keyDiagram": "Draw coordinate axes with origin O(0,0), mark all four quadrants (I, II, III, IV), show positive and negative directions on both axes, and indicate signs of coordinates in each quadrant: I(+,+), II(-,+), III(-,-), IV(+,-)"
+  },
+  "created_at": "2026-04-06T06:25:40.852Z"
+}

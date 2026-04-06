@@ -1,0 +1,113 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "11",
+  "chapter_name": "Organic Chemistry",
+  "note_data": {
+    "title": "Organic Chemistry",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Organic chemistry is the branch of chemistry that deals with the study of compounds of carbon except carbonates, bicarbonates, carbides and carbon monoxide and carbon dioxide",
+      "Carbon has atomic number 6 and electronic configuration 1s² 2s² 2p² with four valence electrons in outermost shell",
+      "Carbon shows catenation property - the ability to form bonds with other carbon atoms to form chains and rings",
+      "Carbon forms covalent bonds due to small size and shows tetravalency by forming four covalent bonds",
+      "Hydrocarbons are compounds containing only carbon and hydrogen atoms",
+      "Alkanes have general formula CnH2n+2, alkenes have CnH2n, and alkynes have CnH2n-2",
+      "Saturated hydrocarbons contain only single bonds while unsaturated hydrocarbons contain double or triple bonds",
+      "Functional groups are specific arrangements of atoms that give characteristic properties to organic compounds",
+      "Homologous series is a group of compounds with same functional group and similar chemical properties"
+    ],
+    "definitions": [
+      {
+        "term": "Organic Chemistry",
+        "definition": "Organic chemistry is the branch of chemistry that deals with the study of compounds of carbon except carbonates, bicarbonates, carbides and carbon monoxide and carbon dioxide"
+      },
+      {
+        "term": "Catenation",
+        "definition": "Catenation is the ability of carbon atoms to form bonds with other carbon atoms to form long chains and rings"
+      },
+      {
+        "term": "Hydrocarbons",
+        "definition": "Hydrocarbons are organic compounds which contain only carbon and hydrogen atoms"
+      },
+      {
+        "term": "Functional Group",
+        "definition": "A functional group is an atom or group of atoms that gives characteristic properties to an organic compound"
+      },
+      {
+        "term": "Homologous Series",
+        "definition": "A homologous series is a group of compounds having the same functional group and similar chemical properties"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define organic chemistry and give two examples of organic compounds.",
+        "answer": "Organic chemistry is the branch of chemistry that deals with the study of compounds of carbon except carbonates, bicarbonates, carbides and carbon monoxide and carbon dioxide. Examples: Methane (CH₄), Ethanol (C₂H₅OH)"
+      },
+      {
+        "type": "long",
+        "question": "Write a detailed note on the unique properties of carbon that make it suitable for forming organic compounds.",
+        "answer": "Carbon has unique properties: (1) Small size allows strong covalent bond formation (2) Tetravalency - forms four covalent bonds (3) Catenation - ability to form chains and rings with other carbon atoms (4) Forms single, double and triple bonds (5) Electronic configuration 1s² 2s² 2p² with 4 valence electrons (6) Forms stable compounds due to strong C-C and C-H bonds (7) Can bond with many elements like H, O, N, S, halogens"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which property of carbon allows it to form long chains?",
+        "options": {
+          "A": "Tetravalency",
+          "B": "Catenation",
+          "C": "Small size",
+          "D": "Electronegativity"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The general formula for alkanes is:",
+        "options": {
+          "A": "CnH2n",
+          "B": "CnH2n-2",
+          "C": "CnH2n+2",
+          "D": "CnH2n+1"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which of the following is NOT considered an organic compound?",
+        "options": {
+          "A": "Methane",
+          "B": "Ethanol",
+          "C": "Sodium carbonate",
+          "D": "Glucose"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often include CO₂, CO, carbonates and bicarbonates as organic compounds",
+      "Confusing the general formulas of alkanes (CnH2n+2), alkenes (CnH2n) and alkynes (CnH2n-2)",
+      "Writing incorrect structural formulas without showing all four bonds of carbon",
+      "Not memorizing the exact textbook definition of organic chemistry word-for-word",
+      "Mixing up saturated and unsaturated hydrocarbons"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and appears in short questions every year in BSEK papers",
+      "Always write the exact textbook definition of organic chemistry - marks are deducted for paraphrasing",
+      "Practice drawing structural formulas of first 4 alkanes - frequently asked",
+      "Memorize all general formulas and examples of each homologous series",
+      "Definition questions are very common - memorize all key terms exactly"
+    ],
+    "formulas": [
+      "Alkanes: CnH2n+2",
+      "Alkenes: CnH2n",
+      "Alkynes: CnH2n-2",
+      "Alcohols: CnH2n+1OH",
+      "Carboxylic acids: CnH2n+1COOH"
+    ],
+    "keyDiagram": "Structural formulas of first four alkanes (methane, ethane, propane, butane) showing tetrahedral arrangement of carbon bonds and complete structural representation with all C-H bonds clearly shown"
+  },
+  "created_at": "2026-04-06T06:11:22.032Z"
+}

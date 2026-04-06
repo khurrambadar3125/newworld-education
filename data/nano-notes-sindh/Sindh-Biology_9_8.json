@@ -1,0 +1,109 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "8",
+  "chapter_name": "Nutrition",
+  "note_data": {
+    "title": "Nutrition",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Nutrition is the process by which organisms obtain and utilize food materials for their growth, maintenance and energy requirements",
+      "Autotrophic nutrition — organisms synthesize their own food from simple inorganic substances (e.g., green plants)",
+      "Heterotrophic nutrition — organisms depend on other organisms for their food (e.g., animals, fungi)",
+      "Photosynthesis occurs in chloroplasts and requires sunlight, CO₂, water and chlorophyll to produce glucose and oxygen",
+      "Dark reaction (Calvin cycle) occurs in stroma while light reaction occurs in thylakoids of chloroplasts",
+      "Limiting factors of photosynthesis include light intensity, CO₂ concentration and temperature",
+      "Parasitic nutrition involves obtaining food from living host organisms (e.g., tapeworm, Plasmodium)",
+      "Saprophytic nutrition involves obtaining food from dead organic matter (e.g., mushrooms, bacteria)",
+      "Symbiotic nutrition involves mutual benefit between two organisms (e.g., lichens, nitrogen-fixing bacteria in legumes)"
+    ],
+    "definitions": [
+      {
+        "term": "Nutrition",
+        "definition": "The process by which organisms obtain and utilize food materials for their growth, maintenance and energy requirements"
+      },
+      {
+        "term": "Autotrophic Nutrition",
+        "definition": "The mode of nutrition in which organisms synthesize their own food from simple inorganic substances"
+      },
+      {
+        "term": "Photosynthesis",
+        "definition": "The process by which green plants synthesize glucose from carbon dioxide and water in the presence of sunlight and chlorophyll"
+      },
+      {
+        "term": "Parasitic Nutrition",
+        "definition": "The mode of nutrition in which organisms obtain their food from living host organisms"
+      },
+      {
+        "term": "Saprophytic Nutrition",
+        "definition": "The mode of nutrition in which organisms obtain their food from dead and decaying organic matter"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between autotrophic and heterotrophic nutrition.",
+        "answer": "Autotrophic nutrition: Organisms synthesize their own food from simple inorganic substances. Heterotrophic nutrition: Organisms depend on other organisms for their food."
+      },
+      {
+        "type": "long",
+        "question": "Describe the process of photosynthesis with its equation and factors affecting it.",
+        "answer": "Photosynthesis is the process by which green plants synthesize glucose from CO₂ and water using sunlight and chlorophyll. Equation: 6CO₂ + 6H₂O + sunlight → C₆H₁₂O₆ + 6O₂. It occurs in two stages: Light reaction (in thylakoids) and Dark reaction (in stroma). Limiting factors include light intensity, CO₂ concentration, temperature, and chlorophyll content. This process is vital for oxygen production and food chains in Pakistan's agricultural areas like Sindh province."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which part of chloroplast does dark reaction occur?",
+        "options": {
+          "A": "Thylakoid",
+          "B": "Stroma",
+          "C": "Grana",
+          "D": "Membrane"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "An example of saprophytic nutrition is:",
+        "options": {
+          "A": "Green plants",
+          "B": "Tapeworm",
+          "C": "Mushrooms",
+          "D": "Lichens"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The raw materials for photosynthesis are:",
+        "options": {
+          "A": "Glucose and oxygen",
+          "B": "CO₂ and water",
+          "C": "Sunlight and chlorophyll",
+          "D": "Starch and cellulose"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse raw materials (CO₂, H₂O) with products (glucose, O₂) in photosynthesis equation",
+      "Writing light reaction in stroma instead of thylakoids",
+      "Confusing parasitic and saprophytic nutrition examples",
+      "Not mentioning chlorophyll as essential requirement for photosynthesis",
+      "Forgetting to balance the photosynthesis equation properly"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Always write the complete balanced equation of photosynthesis — it appears every year",
+      "Memorize exact definitions as they appear in STBB textbook",
+      "Practice drawing and labeling chloroplast structure — frequently asked in diagrams",
+      "Learn examples of each type of nutrition with Pakistani context"
+    ],
+    "formulas": [
+      "6CO₂ + 6H₂O + sunlight → C₆H₁₂O₆ + 6O₂ (Photosynthesis)"
+    ],
+    "keyDiagram": "Structure of chloroplast showing outer membrane, inner membrane, stroma, thylakoids, and grana. Label parts where light and dark reactions occur. This diagram appears frequently in BSEK exams."
+  },
+  "created_at": "2026-04-06T06:16:11.207Z"
+}

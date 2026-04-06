@@ -1,0 +1,109 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "9",
+  "chapter_name": "Congruent Triangles",
+  "note_data": {
+    "title": "Congruent Triangles",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Two triangles are congruent if they have the same size and shape — all corresponding sides and angles are equal",
+      "Four conditions for congruence: SSS, SAS, ASA, and RHS (for right triangles only)",
+      "SSS: If three sides of one triangle are equal to three sides of another triangle, then triangles are congruent",
+      "SAS: If two sides and included angle of one triangle are equal to corresponding parts of another triangle",
+      "ASA: If two angles and included side of one triangle are equal to corresponding parts of another triangle",
+      "RHS: If hypotenuse and one side of right triangle are equal to hypotenuse and corresponding side of another right triangle",
+      "Corresponding parts of congruent triangles are equal (CPCTC)",
+      "Symbol for congruence is ≅, read as 'is congruent to'"
+    ],
+    "definitions": [
+      {
+        "term": "Congruent Triangles",
+        "definition": "Two triangles are said to be congruent if they have the same size and shape, i.e., all corresponding sides and angles are equal."
+      },
+      {
+        "term": "Corresponding Parts",
+        "definition": "The parts of two congruent triangles which are equal to each other are called corresponding parts."
+      },
+      {
+        "term": "SSS Condition",
+        "definition": "If the three sides of one triangle are respectively equal to the three sides of another triangle, then the two triangles are congruent."
+      },
+      {
+        "term": "SAS Condition",
+        "definition": "If two sides and the included angle of one triangle are respectively equal to two sides and the included angle of another triangle, then the two triangles are congruent."
+      },
+      {
+        "term": "ASA Condition",
+        "definition": "If two angles and the included side of one triangle are respectively equal to two angles and the included side of another triangle, then the two triangles are congruent."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "State the four conditions of congruency of triangles.",
+        "answer": "The four conditions are: (1) SSS - Side, Side, Side (2) SAS - Side, Angle, Side (3) ASA - Angle, Side, Angle (4) RHS - Right angle, Hypotenuse, Side"
+      },
+      {
+        "type": "long",
+        "question": "In triangle ABC and triangle PQR, AB = PQ, BC = QR and AC = PR. Prove that triangle ABC ≅ triangle PQR and find the corresponding angles.",
+        "answer": "Given: AB = PQ, BC = QR, AC = PR. To Prove: △ABC ≅ △PQR. Proof: In △ABC and △PQR, AB = PQ (given), BC = QR (given), AC = PR (given). Therefore by SSS condition, △ABC ≅ △PQR. Corresponding angles: ∠A = ∠P, ∠B = ∠Q, ∠C = ∠R (CPCTC)"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "In which condition of congruency, two sides and included angle are equal?",
+        "options": {
+          "A": "SSS",
+          "B": "SAS",
+          "C": "ASA",
+          "D": "RHS"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "RHS condition can only be applied to:",
+        "options": {
+          "A": "Equilateral triangles",
+          "B": "Isosceles triangles",
+          "C": "Right triangles",
+          "D": "Scalene triangles"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The symbol ≅ means:",
+        "options": {
+          "A": "Similar to",
+          "B": "Equal to",
+          "C": "Congruent to",
+          "D": "Parallel to"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse similarity with congruency - congruent triangles are equal in size and shape",
+      "Writing wrong corresponding vertices when stating congruency - order matters in △ABC ≅ △PQR",
+      "Using RHS condition for non-right triangles - it only applies to right triangles",
+      "Forgetting to state 'by CPCTC' when finding corresponding parts after proving congruency",
+      "Not clearly marking given information and what to prove in geometry proofs"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 long proof question in BSEK papers",
+      "Always draw and label diagrams clearly - marks are given for correct diagrams",
+      "Learn the exact statements of all four conditions - they are asked word-for-word",
+      "Practice writing 'Given, To Prove, Proof' format for all geometry proofs",
+      "Remember to write conclusion statement after completing any congruency proof"
+    ],
+    "formulas": [
+      "If △ABC ≅ △PQR, then AB = PQ, BC = QR, AC = PR and ∠A = ∠P, ∠B = ∠Q, ∠C = ∠R",
+      "CPCTC: Corresponding Parts of Congruent Triangles are Equal"
+    ],
+    "keyDiagram": "Draw two triangles ABC and PQR side by side with corresponding sides and angles marked with equal signs. Label all vertices clearly and show which sides/angles are equal using small marks or arrows. This standard diagram appears in most congruency questions."
+  },
+  "created_at": "2026-04-06T06:23:10.162Z"
+}

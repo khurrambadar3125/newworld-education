@@ -1,0 +1,108 @@
+{
+  "subject": "Islamiat",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "4",
+  "chapter_name": "Seerat-un-Nabi (PBUH)",
+  "note_data": {
+    "title": "Seerat-un-Nabi (PBUH)",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Prophet Muhammad (PBUH) was born in Makkah in 571 CE in the noble tribe of Quraish",
+      "His father Abdullah died before his birth and mother Aminah died when he was 6 years old",
+      "He was raised by his grandfather Abdul Muttalib and later by his uncle Abu Talib",
+      "Before Prophethood, he was known as 'As-Sadiq' (The Truthful) and 'Al-Ameen' (The Trustworthy)",
+      "He received first revelation (Wahi) in Cave Hira at the age of 40 through Angel Jibreel (AS)",
+      "The Hijra (Migration) from Makkah to Madinah took place in 622 CE, marking the beginning of Islamic calendar",
+      "He established the first Islamic state in Madinah with Constitution of Madinah (Misaq-e-Madinah)",
+      "The Treaty of Hudaybiyyah was signed in 6 AH which led to peaceful spread of Islam",
+      "Conquest of Makkah (Fatah Makkah) occurred in 8 AH without bloodshed, showing his merciful nature",
+      "He passed away in 11 AH in Madinah at the age of 63, completing the message of Islam"
+    ],
+    "definitions": [
+      {
+        "term": "Seerat",
+        "definition": "The biography, life history and conduct of Prophet Muhammad (PBUH) which serves as a perfect model for all mankind"
+      },
+      {
+        "term": "Wahi",
+        "definition": "Divine revelation sent by Allah to His Prophets through Angel Jibreel to guide humanity"
+      },
+      {
+        "term": "Hijra",
+        "definition": "The migration of Prophet Muhammad (PBUH) and his companions from Makkah to Madinah in 622 CE"
+      },
+      {
+        "term": "Misaq-e-Madinah",
+        "definition": "The Constitution of Madinah which established the first Islamic state and defined rights of Muslims, Jews and other communities"
+      },
+      {
+        "term": "Uswa-e-Hasana",
+        "definition": "The perfect example and ideal model of conduct set by Prophet Muhammad (PBUH) for all Muslims to follow"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "What is the importance of studying Seerat-un-Nabi (PBUH)?",
+        "answer": "Studying Seerat helps us understand the perfect character of Prophet (PBUH), provides guidance for all aspects of life, and shows us the practical implementation of Islamic teachings in daily life."
+      },
+      {
+        "type": "long",
+        "question": "Describe the early life of Prophet Muhammad (PBUH) before Prophethood.",
+        "answer": "Prophet Muhammad (PBUH) was born in Makkah in 571 CE. His father Abdullah died before his birth. His mother Aminah died when he was 6 years old. He was first cared for by his grandfather Abdul Muttalib and after his death by uncle Abu Talib. He worked as a shepherd and later as a trader. He was known for his honesty and trustworthiness, earning titles As-Sadiq and Al-Ameen. He married Hazrat Khadijah (RA) at age 25. He used to meditate in Cave Hira and received first revelation at age 40."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "At what age did Prophet Muhammad (PBUH) receive the first revelation?",
+        "options": {
+          "A": "35 years",
+          "B": "40 years",
+          "C": "45 years",
+          "D": "50 years"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "In which year did the Hijra take place?",
+        "options": {
+          "A": "621 CE",
+          "B": "622 CE",
+          "C": "623 CE",
+          "D": "624 CE"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "What was the name of the first wife of Prophet Muhammad (PBUH)?",
+        "options": {
+          "A": "Hazrat Aisha (RA)",
+          "B": "Hazrat Hafsa (RA)",
+          "C": "Hazrat Khadijah (RA)",
+          "D": "Hazrat Zainab (RA)"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse the dates of birth and death of Prophet (PBUH)",
+      "Many students mix up the sequence of events in Makkah and Madinah periods",
+      "Students sometimes forget to write (PBUH) after Prophet's name which loses marks",
+      "Confusion between Hijri and Christian calendar dates is common",
+      "Students often miss mentioning the titles As-Sadiq and Al-Ameen when writing about pre-Prophethood period"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and at least one long question in BSEK papers",
+      "Always memorize exact dates in both Hijri and Christian calendars",
+      "Practice writing the chronological sequence of major events",
+      "Remember to use respectful titles (PBUH), (AS), (RA) throughout your answers",
+      "Focus on the moral lessons from each incident in Seerat for better marks"
+    ],
+    "formulas": [],
+    "keyDiagram": "Timeline diagram showing major events in Prophet's life: Birth (571 CE), First Revelation (610 CE), Hijra (622 CE/1 AH), Treaty of Hudaybiyyah (6 AH), Conquest of Makkah (8 AH), Death (11 AH/632 CE)"
+  },
+  "created_at": "2026-04-06T06:36:42.458Z"
+}

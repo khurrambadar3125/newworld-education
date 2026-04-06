@@ -1,0 +1,112 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "12",
+  "chapter_name": "Biochemistry",
+  "note_data": {
+    "title": "Biochemistry",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Biochemistry is the branch of chemistry that deals with the chemical processes and substances in living organisms",
+      "Carbohydrates are polyhydroxy aldehydes or ketones with general formula Cn(H2O)n",
+      "Proteins are complex organic compounds made up of amino acids joined by peptide bonds",
+      "Lipids are esters of fatty acids and glycerol, insoluble in water but soluble in organic solvents",
+      "Enzymes are biological catalysts that speed up biochemical reactions without being consumed",
+      "Vitamins are organic compounds required in small amounts for normal growth and development",
+      "Nucleic acids (DNA and RNA) store and transmit genetic information in living cells",
+      "Carbohydrates provide energy (4 kcal/g), proteins build tissues, and lipids provide energy (9 kcal/g)"
+    ],
+    "definitions": [
+      {
+        "term": "Biochemistry",
+        "definition": "The branch of chemistry that deals with the chemical processes and substances that occur within living organisms"
+      },
+      {
+        "term": "Carbohydrates",
+        "definition": "Polyhydroxy aldehydes or ketones or compounds which yield these on hydrolysis with general formula Cn(H2O)n"
+      },
+      {
+        "term": "Proteins",
+        "definition": "Complex organic nitrogenous compounds made up of amino acids joined together by peptide bonds"
+      },
+      {
+        "term": "Enzyme",
+        "definition": "A biological catalyst that increases the rate of biochemical reactions without itself being permanently altered"
+      },
+      {
+        "term": "Lipids",
+        "definition": "Esters of fatty acids and alcohols which are insoluble in water but soluble in organic solvents like ether and chloroform"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define carbohydrates and give their general formula.",
+        "answer": "Carbohydrates are polyhydroxy aldehydes or ketones or compounds which yield these on hydrolysis. Their general formula is Cn(H2O)n where n is the number of carbon atoms."
+      },
+      {
+        "type": "long",
+        "question": "Write a detailed note on proteins including their structure, functions and sources.",
+        "answer": "Proteins are complex organic nitrogenous compounds made of amino acids. Structure: Primary (sequence), Secondary (α-helix, β-sheet), Tertiary (3D folding), Quaternary (multiple chains). Functions: Structural (collagen), Enzymatic (pepsin), Transport (hemoglobin), Defense (antibodies). Sources: Meat, fish, eggs, milk, pulses. Complete proteins contain all essential amino acids while incomplete lack some essential amino acids."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The general formula of carbohydrates is:",
+        "options": {
+          "A": "CnH2nOn",
+          "B": "Cn(H2O)n",
+          "C": "CnH2n+2",
+          "D": "CnH2nO2"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which of the following is NOT a function of proteins?",
+        "options": {
+          "A": "Energy storage",
+          "B": "Catalysis",
+          "C": "Structure",
+          "D": "Transport"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "The bond between amino acids in proteins is called:",
+        "options": {
+          "A": "Ionic bond",
+          "B": "Hydrogen bond",
+          "C": "Peptide bond",
+          "D": "Covalent bond"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse the general formula of carbohydrates - remember it's Cn(H2O)n, not CnH2nOn",
+      "Writing 'amino acid' instead of 'amino acids' when defining proteins",
+      "Forgetting to mention 'peptide bonds' when discussing protein structure",
+      "Mixing up functions of different biomolecules - carbohydrates for energy, proteins for structure",
+      "Not writing complete definitions word-for-word as given in STBB textbook"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Memorize exact definitions as they appear in STBB textbook - marks deducted for paraphrasing",
+      "Classification of carbohydrates (monosaccharides, disaccharides, polysaccharides) is frequently asked",
+      "Functions of proteins and examples are common 5-mark questions",
+      "Difference between DNA and RNA often appears as short question"
+    ],
+    "formulas": [
+      "General formula of carbohydrates: Cn(H2O)n",
+      "Glucose: C6H12O6",
+      "Sucrose: C12H22O11",
+      "Energy from carbohydrates: 4 kcal/g",
+      "Energy from lipids: 9 kcal/g"
+    ],
+    "keyDiagram": "Structure of amino acid showing amino group (-NH2), carboxyl group (-COOH), and R group attached to central carbon atom. This diagram frequently appears in BSEK exams when discussing protein structure."
+  },
+  "created_at": "2026-04-06T06:11:44.150Z"
+}

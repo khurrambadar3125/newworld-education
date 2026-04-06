@@ -1,0 +1,106 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "8",
+  "chapter_name": "Chemical Reactivity",
+  "note_data": {
+    "title": "Chemical Reactivity",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Chemical reactivity is the tendency of an element to take part in chemical reactions by losing, gaining or sharing electrons",
+      "Alkali metals (Group IA) are most reactive metals due to single valence electron which is easily lost",
+      "Halogens (Group VIIA) are most reactive non-metals due to seven valence electrons, need only one electron to complete octet",
+      "Reactivity of metals increases down the group and decreases across the period from left to right",
+      "Reactivity of non-metals decreases down the group and increases across the period from left to right",
+      "Noble gases (Group VIIIA) are least reactive due to complete outer electron shell",
+      "Activity series arranges metals in order of decreasing reactivity: K > Na > Ca > Mg > Al > Zn > Fe > Pb > H > Cu > Ag > Au",
+      "More reactive metals displace less reactive metals from their salt solutions"
+    ],
+    "definitions": [
+      {
+        "term": "Chemical Reactivity",
+        "definition": "Chemical reactivity is the tendency of an element to take part in chemical reactions by losing, gaining or sharing electrons to complete its outermost shell."
+      },
+      {
+        "term": "Activity Series",
+        "definition": "Activity series is an arrangement of metals in order of their decreasing reactivity."
+      },
+      {
+        "term": "Displacement Reaction",
+        "definition": "A displacement reaction is a chemical reaction in which a more reactive element displaces a less reactive element from its compound."
+      },
+      {
+        "term": "Noble Gases",
+        "definition": "Noble gases are elements of Group VIIIA which have complete outermost electron shell and are chemically inert or least reactive."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Why are alkali metals most reactive?",
+        "answer": "Alkali metals are most reactive because they have only one electron in their outermost shell which can be easily lost to achieve stable electronic configuration of nearest noble gas."
+      },
+      {
+        "type": "long",
+        "question": "Explain the trend of reactivity in periods and groups of periodic table with examples.",
+        "answer": "In groups: Reactivity of metals increases down the group because atomic size increases, valence electrons are farther from nucleus and easily removed. Example: Li < Na < K. Reactivity of non-metals decreases down the group because atomic size increases, attraction for additional electrons decreases. Example: F > Cl > Br. In periods: Reactivity of metals decreases across period because nuclear charge increases, electrons held more tightly. Reactivity of non-metals increases across period because nuclear charge increases, attraction for electrons increases. Example: Na > Mg > Al and N < O < F."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which metal is most reactive among the following?",
+        "options": {
+          "A": "Sodium",
+          "B": "Potassium",
+          "C": "Lithium",
+          "D": "Calcium"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which group of elements is least reactive?",
+        "options": {
+          "A": "Alkali metals",
+          "B": "Alkaline earth metals",
+          "C": "Halogens",
+          "D": "Noble gases"
+        },
+        "correct": "D"
+      },
+      {
+        "question": "In displacement reaction Zn + CuSO₄ → ZnSO₄ + Cu, zinc displaces copper because:",
+        "options": {
+          "A": "Zinc is less reactive than copper",
+          "B": "Zinc is more reactive than copper",
+          "C": "Both have same reactivity",
+          "D": "Copper is a noble metal"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse reactivity trends - remember metals become MORE reactive down the group, non-metals become LESS reactive",
+      "Don't mix up activity series order - learn the sequence K > Na > Ca > Mg > Al > Zn > Fe > Pb > H > Cu > Ag > Au",
+      "In displacement reactions, always remember more reactive displaces less reactive, not the opposite",
+      "Students forget that noble gases are inert due to complete outer shell, not due to single or seven electrons",
+      "Don't confuse Group numbers with electron configuration - Group IA has 1 valence electron, not atomic number 1"
+    ],
+    "examTips": [
+      "Activity series question appears in every BSEK paper - memorize the complete sequence",
+      "Reactivity trends usually asked as 5-8 mark long question - explain both period and group trends",
+      "Displacement reaction examples frequently asked - practice with Pakistani context like copper extraction",
+      "Definition of chemical reactivity is commonly asked - learn exact textbook wording",
+      "Draw electronic configuration diagrams to explain reactivity trends - this scores extra marks"
+    ],
+    "formulas": [
+      "Zn + CuSO₄ → ZnSO₄ + Cu",
+      "Mg + 2HCl → MgCl₂ + H₂",
+      "2Na + 2H₂O → 2NaOH + H₂"
+    ],
+    "keyDiagram": "Periodic table showing reactivity trends with arrows - metals increasing reactivity down groups and decreasing across periods, non-metals showing opposite trends. Include Group IA (most reactive metals), Group VIIA (most reactive non-metals), and Group VIIIA (least reactive/inert)."
+  },
+  "created_at": "2026-04-06T06:10:17.309Z"
+}

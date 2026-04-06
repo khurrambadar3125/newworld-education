@@ -1,0 +1,117 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "30",
+  "chapter_name": "Introduction to Trigonometry",
+  "note_data": {
+    "title": "Introduction to Trigonometry",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Trigonometry is the study of relationships between angles and sides of triangles",
+      "Six trigonometric ratios exist: sine, cosine, tangent, cosecant, secant, and cotangent",
+      "In a right-angled triangle, hypotenuse is the longest side opposite to the right angle",
+      "Perpendicular is the side opposite to the angle under consideration",
+      "Base is the side adjacent to the angle under consideration (excluding hypotenuse)",
+      "All trigonometric ratios are dimensionless quantities",
+      "sin²θ + cos²θ = 1 is the fundamental trigonometric identity",
+      "Complementary angles satisfy: sin θ = cos (90° - θ)",
+      "Values of trigonometric ratios for 0°, 30°, 45°, 60°, and 90° must be memorized"
+    ],
+    "definitions": [
+      {
+        "term": "Trigonometry",
+        "definition": "Trigonometry is a branch of mathematics which deals with the relationship between angles and sides of a triangle."
+      },
+      {
+        "term": "Sine Ratio",
+        "definition": "In a right-angled triangle, sine of an angle is defined as the ratio of the perpendicular to the hypotenuse. sin θ = perpendicular/hypotenuse"
+      },
+      {
+        "term": "Cosine Ratio",
+        "definition": "In a right-angled triangle, cosine of an angle is defined as the ratio of the base to the hypotenuse. cos θ = base/hypotenuse"
+      },
+      {
+        "term": "Tangent Ratio",
+        "definition": "In a right-angled triangle, tangent of an angle is defined as the ratio of the perpendicular to the base. tan θ = perpendicular/base"
+      },
+      {
+        "term": "Complementary Angles",
+        "definition": "Two angles are called complementary if their sum is 90°."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define trigonometry and write the three basic trigonometric ratios.",
+        "answer": "Trigonometry is a branch of mathematics which deals with the relationship between angles and sides of a triangle. The three basic ratios are: sin θ = perpendicular/hypotenuse, cos θ = base/hypotenuse, tan θ = perpendicular/base"
+      },
+      {
+        "type": "long",
+        "question": "In a right-angled triangle ABC, right-angled at B, if AC = 13 cm and BC = 5 cm, find all six trigonometric ratios of angle A.",
+        "answer": "Given: AC = 13 cm (hypotenuse), BC = 5 cm (perpendicular to angle A). Using Pythagoras theorem: AB² = AC² - BC² = 169 - 25 = 144, so AB = 12 cm (base). Therefore: sin A = 5/13, cos A = 12/13, tan A = 5/12, cosec A = 13/5, sec A = 13/12, cot A = 12/5"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "If sin θ = 3/5, then cos θ is:",
+        "options": {
+          "A": "3/4",
+          "B": "4/5",
+          "C": "5/4",
+          "D": "4/3"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The value of sin 60° is:",
+        "options": {
+          "A": "1/2",
+          "B": "√2/2",
+          "C": "√3/2",
+          "D": "1"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "If tan θ = 1, then θ equals:",
+        "options": {
+          "A": "30°",
+          "B": "45°",
+          "C": "60°",
+          "D": "90°"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse perpendicular and base when angle position changes",
+      "Forgetting to identify hypotenuse correctly (always opposite to right angle)",
+      "Not using Pythagoras theorem when one side is missing",
+      "Mixing up reciprocal ratios (cosec, sec, cot) with basic ratios",
+      "Incorrect memorization of standard angle values (30°, 45°, 60°)"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1-2 short questions in every BSEK paper",
+      "Always draw and label the triangle diagram - it carries marks",
+      "Memorize the standard angle table - appears in 80% of papers",
+      "Practice identifying perpendicular and base for different angle positions",
+      "Long questions often combine with Chapter 31 (Heights and Distances)"
+    ],
+    "formulas": [
+      "sin θ = perpendicular/hypotenuse",
+      "cos θ = base/hypotenuse",
+      "tan θ = perpendicular/base",
+      "cosec θ = 1/sin θ",
+      "sec θ = 1/cos θ",
+      "cot θ = 1/tan θ",
+      "sin²θ + cos²θ = 1",
+      "1 + tan²θ = sec²θ",
+      "1 + cot²θ = cosec²θ"
+    ],
+    "keyDiagram": "Right-angled triangle ABC with right angle at B, showing hypotenuse AC, perpendicular BC (to angle A), and base AB. Label all sides and mark the angle θ at A. This diagram must be drawn for every trigonometric problem."
+  },
+  "created_at": "2026-04-06T06:30:53.483Z"
+}

@@ -1,0 +1,110 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "10",
+  "chapter_name": "Parallelograms and Triangles",
+  "note_data": {
+    "title": "Parallelograms and Triangles",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "A parallelogram is a quadrilateral whose opposite sides are parallel",
+      "Opposite sides of a parallelogram are equal and parallel",
+      "Opposite angles of a parallelogram are equal",
+      "Diagonals of a parallelogram bisect each other",
+      "A diagonal divides a parallelogram into two congruent triangles",
+      "Triangles on the same base and between the same parallels are equal in area",
+      "A triangle and a parallelogram on the same base and between the same parallels have the ratio of areas 1:2",
+      "The median of a triangle divides it into two triangles of equal area"
+    ],
+    "definitions": [
+      {
+        "term": "Parallelogram",
+        "definition": "A quadrilateral whose opposite sides are parallel is called a parallelogram"
+      },
+      {
+        "term": "Rectangle",
+        "definition": "A parallelogram whose all angles are right angles is called a rectangle"
+      },
+      {
+        "term": "Rhombus",
+        "definition": "A parallelogram whose all sides are equal is called a rhombus"
+      },
+      {
+        "term": "Square",
+        "definition": "A rectangle whose all sides are equal is called a square"
+      },
+      {
+        "term": "Median of Triangle",
+        "definition": "A line segment joining a vertex of a triangle to the midpoint of the opposite side is called median"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Prove that opposite sides of a parallelogram are equal",
+        "answer": "In parallelogram ABCD, AB || DC and AD || BC. Using alternate interior angles and ASA congruence, triangles ABC and CDA are congruent. Hence AB = DC and AD = BC."
+      },
+      {
+        "type": "long",
+        "question": "Prove that the diagonals of a parallelogram bisect each other",
+        "answer": "Given: ABCD is a parallelogram with diagonals AC and BD intersecting at O. To Prove: AO = OC and BO = OD. Proof: In triangles AOB and COD, AB = CD (opposite sides), angle BAO = angle DCO (alternate angles), angle ABO = angle CDO (alternate angles). By ASA, triangle AOB ≅ triangle COD. Hence AO = OC and BO = OD."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "In a parallelogram ABCD, if angle A = 70°, then angle C is:",
+        "options": {
+          "A": "70°",
+          "B": "110°",
+          "C": "90°",
+          "D": "120°"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "The diagonals of a rectangle are:",
+        "options": {
+          "A": "Equal and perpendicular",
+          "B": "Equal but not perpendicular",
+          "C": "Unequal but perpendicular",
+          "D": "Unequal and not perpendicular"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "If triangle ABC and parallelogram PQRS are on the same base and between same parallels, then area of triangle : area of parallelogram is:",
+        "options": {
+          "A": "1:1",
+          "B": "2:1",
+          "C": "1:2",
+          "D": "1:3"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often forget to write 'Given' and 'To Prove' in geometry proofs",
+      "Confusing properties of rectangle and rhombus - remember rectangle has equal diagonals, rhombus has perpendicular diagonals",
+      "Not labeling vertices correctly in diagrams - always use ABCD for parallelograms",
+      "Writing angle measures incorrectly - opposite angles are equal, adjacent angles are supplementary",
+      "Forgetting to state which congruence rule (SAS, ASA, SSS) is being used in proofs"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 long proof question worth 5-8 marks",
+      "Always draw neat labeled diagrams - marks are awarded for correct diagrams",
+      "Memorize the standard proofs: opposite sides equal, diagonals bisect each other, triangles on same base",
+      "Practice drawing parallelogram with diagonals - this diagram appears in every BSEK paper",
+      "Learn the exact sequence of steps for each proof as given in STBB textbook"
+    ],
+    "formulas": [
+      "Area of parallelogram = base × height",
+      "Area of triangle = ½ × base × height",
+      "Perimeter of parallelogram = 2(sum of adjacent sides)"
+    ],
+    "keyDiagram": "Parallelogram ABCD with diagonals AC and BD intersecting at point O. Label all vertices clearly and mark equal sides with small parallel lines. This diagram is essential for proving diagonal bisection theorem."
+  },
+  "created_at": "2026-04-06T06:23:31.170Z"
+}

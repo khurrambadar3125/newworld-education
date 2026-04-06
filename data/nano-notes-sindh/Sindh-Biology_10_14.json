@@ -1,0 +1,107 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "14",
+  "chapter_name": "Reproduction",
+  "note_data": {
+    "title": "Reproduction",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Reproduction is the biological process by which new organisms are produced from existing organisms of the same species",
+      "Two main types of reproduction: Asexual reproduction (single parent) and Sexual reproduction (two parents)",
+      "Asexual reproduction methods include binary fission, budding, fragmentation, vegetative propagation, and spore formation",
+      "Sexual reproduction involves the fusion of male and female gametes to form a zygote",
+      "In plants, sexual reproduction occurs through pollination and fertilization in flowers",
+      "Human reproductive system consists of male and female reproductive organs with specific functions",
+      "Fertilization in humans occurs in the fallopian tube, followed by implantation in the uterus",
+      "Menstrual cycle is a monthly cycle in females involving ovulation and preparation for pregnancy",
+      "Family planning methods include natural methods, barrier methods, hormonal methods, and surgical methods"
+    ],
+    "definitions": [
+      {
+        "term": "Reproduction",
+        "definition": "The biological process by which living organisms produce new individuals of their own kind to continue their species"
+      },
+      {
+        "term": "Asexual Reproduction",
+        "definition": "A type of reproduction in which only one parent is involved and offspring are genetically identical to the parent"
+      },
+      {
+        "term": "Sexual Reproduction",
+        "definition": "A type of reproduction involving two parents where male and female gametes fuse to form offspring that are genetically different from parents"
+      },
+      {
+        "term": "Fertilization",
+        "definition": "The process of fusion of male gamete (sperm) with female gamete (ovum) to form a zygote"
+      },
+      {
+        "term": "Ovulation",
+        "definition": "The process of release of mature ovum from the ovary in the female reproductive cycle"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between asexual and sexual reproduction.",
+        "answer": "Asexual reproduction involves one parent and produces genetically identical offspring, while sexual reproduction involves two parents and produces genetically different offspring through gamete fusion."
+      },
+      {
+        "type": "long",
+        "question": "Describe the structure and function of male reproductive system in humans.",
+        "answer": "Male reproductive system consists of: Testes (produce sperm and testosterone), Scrotum (protects testes), Epididymis (stores sperm), Vas deferens (transports sperm), Seminal vesicles and prostate gland (produce seminal fluid), Urethra (pathway for sperm), Penis (copulatory organ). Functions include sperm production, hormone secretion, and delivery of sperm to female reproductive tract."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which method is an example of asexual reproduction?",
+        "options": {
+          "A": "Pollination",
+          "B": "Binary fission",
+          "C": "Fertilization",
+          "D": "Cross-breeding"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Fertilization in humans normally occurs in:",
+        "options": {
+          "A": "Uterus",
+          "B": "Ovary",
+          "C": "Fallopian tube",
+          "D": "Vagina"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The male hormone responsible for secondary sexual characteristics is:",
+        "options": {
+          "A": "Estrogen",
+          "B": "Progesterone",
+          "C": "Testosterone",
+          "D": "Insulin"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse asexual reproduction methods - remember budding occurs in hydra, binary fission in bacteria",
+      "Don't mix up male and female hormone names - testosterone is male, estrogen and progesterone are female",
+      "Always mention both structure and function when describing reproductive organs",
+      "Students forget that fertilization occurs in fallopian tube, not uterus",
+      "When writing about menstrual cycle, always mention the 28-day duration and ovulation on day 14"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and appears in both short and long questions in BSEK papers",
+      "Memorize the reproductive system diagrams - they appear frequently with labeling questions",
+      "Learn exact definitions word-by-word as BSEK expects textbook language",
+      "Practice drawing and labeling flower structure for plant reproduction",
+      "Family planning methods question appears almost every year - memorize all types with examples"
+    ],
+    "formulas": [],
+    "keyDiagram": "Human Male and Female Reproductive System diagrams showing labeled parts including testes, ovaries, fallopian tubes, uterus, penis, and associated glands. Also important: Flower structure diagram showing stamens, pistil, ovary, and other reproductive parts."
+  },
+  "created_at": "2026-04-06T06:18:23.097Z"
+}

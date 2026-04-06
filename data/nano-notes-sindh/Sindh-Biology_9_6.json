@@ -1,0 +1,109 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "6",
+  "chapter_name": "Enzymes",
+  "note_data": {
+    "title": "Enzymes",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Enzymes are biological catalysts that speed up biochemical reactions without being consumed",
+      "All enzymes are proteins made up of amino acids joined by peptide bonds",
+      "Enzymes work by lowering the activation energy required for reactions to occur",
+      "The active site is the specific region where substrate binds to the enzyme",
+      "Enzyme activity is affected by temperature, pH, enzyme concentration and substrate concentration",
+      "Optimum temperature for human enzymes is 37°C (body temperature)",
+      "Denaturation occurs when enzymes lose their shape due to high temperature or extreme pH",
+      "Lock and key model explains how enzymes are specific to their substrates",
+      "Cofactors and coenzymes help enzymes function properly",
+      "Enzyme inhibition can be competitive or non-competitive"
+    ],
+    "definitions": [
+      {
+        "term": "Enzyme",
+        "definition": "Enzymes are biological catalysts that speed up the rate of biochemical reactions without being consumed in the reaction."
+      },
+      {
+        "term": "Active Site",
+        "definition": "The active site is a specific region on the enzyme where the substrate binds and the reaction takes place."
+      },
+      {
+        "term": "Substrate",
+        "definition": "A substrate is the reactant molecule on which an enzyme acts to form products."
+      },
+      {
+        "term": "Denaturation",
+        "definition": "Denaturation is the process in which enzymes lose their natural shape and activity due to high temperature or extreme pH."
+      },
+      {
+        "term": "Cofactor",
+        "definition": "Cofactors are inorganic substances like metal ions that help enzymes to function properly."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "What is the effect of temperature on enzyme activity?",
+        "answer": "As temperature increases, enzyme activity increases up to optimum temperature (37°C for human enzymes). Beyond optimum temperature, enzymes denature and lose activity due to breakdown of protein structure."
+      },
+      {
+        "type": "long",
+        "question": "Explain the lock and key model of enzyme action. Also discuss factors affecting enzyme activity.",
+        "answer": "Lock and Key Model: Enzymes have specific active sites that are complementary in shape to their substrates, like a lock and key. Only specific substrate can bind to the active site forming enzyme-substrate complex, which then breaks down to form products and free enzyme. Factors affecting enzyme activity: (1) Temperature - increases activity up to optimum, then causes denaturation (2) pH - each enzyme has optimum pH, extreme pH denatures enzyme (3) Enzyme concentration - more enzymes mean faster reaction rate (4) Substrate concentration - increases rate until saturation point."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The optimum temperature for human enzymes is:",
+        "options": {
+          "A": "25°C",
+          "B": "37°C",
+          "C": "45°C",
+          "D": "100°C"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Enzymes are made up of:",
+        "options": {
+          "A": "Carbohydrates",
+          "B": "Lipids",
+          "C": "Proteins",
+          "D": "Nucleic acids"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The region where substrate binds to enzyme is called:",
+        "options": {
+          "A": "Binding site",
+          "B": "Active site",
+          "C": "Catalytic site",
+          "D": "Reaction site"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse enzymes with hormones - remember enzymes are catalysts, hormones are chemical messengers",
+      "Writing that enzymes are consumed in reactions - they are NOT consumed, they are reused",
+      "Forgetting to mention that all enzymes are proteins in definitions",
+      "Confusing cofactors (inorganic) with coenzymes (organic)",
+      "Not explaining that denaturation is irreversible process"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Always draw and label the lock and key model diagram - appears frequently",
+      "Memorize the exact definition of enzyme word-for-word from textbook",
+      "Temperature and pH graphs are common in long questions - practice drawing them"
+    ],
+    "formulas": [
+      "Enzyme + Substrate → Enzyme-Substrate Complex → Enzyme + Products"
+    ],
+    "keyDiagram": "Lock and Key Model: Draw enzyme with specific shaped active site, substrate fitting exactly into active site, enzyme-substrate complex formation, and finally products being released with enzyme unchanged. Label: Enzyme, Active Site, Substrate, Enzyme-Substrate Complex, Products."
+  },
+  "created_at": "2026-04-06T06:15:26.458Z"
+}

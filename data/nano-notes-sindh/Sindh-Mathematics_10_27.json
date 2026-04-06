@@ -1,0 +1,109 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "27",
+  "chapter_name": "Chords and Arcs",
+  "note_data": {
+    "title": "Chords and Arcs",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "A chord is a line segment that joins any two points on a circle",
+      "An arc is a part of the circumference of a circle between two points",
+      "Equal chords subtend equal arcs in the same circle or in congruent circles",
+      "The perpendicular from the center of a circle to a chord bisects the chord",
+      "Equal chords are equidistant from the center of the circle",
+      "The angle subtended by an arc at the center is double the angle subtended by the same arc at any point on the circle",
+      "Chords equidistant from the center are equal in length",
+      "The perpendicular bisector of a chord passes through the center of the circle"
+    ],
+    "definitions": [
+      {
+        "term": "Chord",
+        "definition": "A chord of a circle is a line segment that joins any two points on the circle."
+      },
+      {
+        "term": "Arc",
+        "definition": "An arc is a part of the circumference of a circle between two points on the circle."
+      },
+      {
+        "term": "Major Arc",
+        "definition": "The longer arc between two points on a circle is called the major arc."
+      },
+      {
+        "term": "Minor Arc",
+        "definition": "The shorter arc between two points on a circle is called the minor arc."
+      },
+      {
+        "term": "Central Angle",
+        "definition": "The angle subtended by an arc at the center of the circle is called the central angle."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Prove that equal chords of a circle are equidistant from the center.",
+        "answer": "Let AB and CD be two equal chords. Draw perpendiculars OM and ON from center O. In right triangles OMA and ONC, OA = OC (radii), AM = CN (half of equal chords), therefore OM = ON by Pythagoras theorem."
+      },
+      {
+        "type": "long",
+        "question": "Prove that the perpendicular from the center of a circle to a chord bisects the chord.",
+        "answer": "Given: Circle with center O, chord AB, OM ⊥ AB. To Prove: AM = MB. Proof: In triangles OMA and OMB, OA = OB (radii), OM = OM (common), ∠OMA = ∠OMB = 90°. Therefore triangles are congruent by RHS. Hence AM = MB by CPCT."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "If two chords of a circle are equal, then they are:",
+        "options": {
+          "A": "Parallel to each other",
+          "B": "Equidistant from the center",
+          "C": "Perpendicular to each other",
+          "D": "None of these"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The angle subtended by a semicircle at any point on the circle is:",
+        "options": {
+          "A": "45°",
+          "B": "60°",
+          "C": "90°",
+          "D": "180°"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "If the perpendicular distance from center to a chord is zero, then the chord is:",
+        "options": {
+          "A": "Radius",
+          "B": "Diameter",
+          "C": "Tangent",
+          "D": "Secant"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse major arc with minor arc when not specified clearly",
+      "Forgetting to state that chords must be in the same circle or congruent circles",
+      "Not drawing perpendicular from center properly in chord problems",
+      "Mixing up the relationship between central angle and inscribed angle",
+      "Not using the property that perpendicular from center bisects the chord"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question worth 3-4 marks in BSEK papers",
+      "Always draw clear diagrams - perpendicular from center to chord appears every year",
+      "Memorize the exact wordings of theorems as they are often asked for definitions",
+      "Practice numerical problems involving Pythagoras theorem with chord distances"
+    ],
+    "formulas": [
+      "If d is distance from center to chord of length 2l, then d² + l² = r² (where r is radius)",
+      "Central angle = 2 × Inscribed angle (for same arc)",
+      "Arc length = (θ/360°) × 2πr"
+    ],
+    "keyDiagram": "Circle with center O, chord AB, perpendicular OM from center to chord meeting at M (midpoint). Show radii OA and OB. This diagram must be drawn for most chord-related proofs."
+  },
+  "created_at": "2026-04-06T06:29:44.569Z"
+}

@@ -1,0 +1,110 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "25",
+  "chapter_name": "Chords of a Circle",
+  "note_data": {
+    "title": "Chords of a Circle",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "A chord is a line segment that joins any two points on a circle",
+      "The diameter is the longest chord of a circle passing through the center",
+      "Equal chords of a circle are equidistant from the center",
+      "The perpendicular from the center of a circle to a chord bisects the chord",
+      "Equal chords subtend equal angles at the center of the circle",
+      "If two chords intersect inside a circle, the product of their segments are equal",
+      "The angle in a semicircle is always a right angle (90°)",
+      "Chords equidistant from the center of a circle are equal in length"
+    ],
+    "definitions": [
+      {
+        "term": "Chord",
+        "definition": "A chord is a straight line segment whose endpoints both lie on the circle"
+      },
+      {
+        "term": "Diameter",
+        "definition": "A diameter is a chord that passes through the center of the circle and is the longest possible chord"
+      },
+      {
+        "term": "Perpendicular Bisector",
+        "definition": "A perpendicular bisector of a chord is a line that passes through the center of the circle and is perpendicular to the chord, dividing it into two equal parts"
+      },
+      {
+        "term": "Arc",
+        "definition": "An arc is a portion of the circumference of a circle between two points on the circle"
+      },
+      {
+        "term": "Segment",
+        "definition": "A segment is the region of a circle bounded by a chord and the arc subtended by the chord"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "State the theorem about perpendicular from center to chord.",
+        "answer": "The perpendicular from the center of a circle to a chord bisects the chord. Also, the line joining the center to the midpoint of a chord is perpendicular to the chord."
+      },
+      {
+        "type": "long",
+        "question": "In a circle with center O, two chords AB and CD intersect at point P inside the circle. If AP = 6 cm, PB = 4 cm, and CP = 8 cm, find PD. Also prove the theorem used.",
+        "answer": "Given: AP = 6 cm, PB = 4 cm, CP = 8 cm. By the intersecting chords theorem: AP × PB = CP × PD. Therefore: 6 × 4 = 8 × PD, 24 = 8 × PD, PD = 3 cm. Theorem: When two chords intersect inside a circle, the product of the segments of one chord equals the product of the segments of the other chord."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The longest chord of a circle is:",
+        "options": {
+          "A": "Radius",
+          "B": "Diameter",
+          "C": "Arc",
+          "D": "Tangent"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "If two chords of a circle are equal, then they are:",
+        "options": {
+          "A": "Parallel",
+          "B": "Perpendicular",
+          "C": "Equidistant from center",
+          "D": "None of these"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The angle in a semicircle is:",
+        "options": {
+          "A": "60°",
+          "B": "90°",
+          "C": "180°",
+          "D": "45°"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse chord with diameter - remember diameter is a special chord passing through center",
+      "Forgetting to state the theorem before applying it in proofs",
+      "Not drawing proper diagrams with clear labels for center O and chord points",
+      "Mixing up the intersecting chords theorem with other circle theorems",
+      "Not mentioning that perpendicular from center bisects the chord AND the arc"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question worth 3-5 marks in every BSEK paper",
+      "Always draw a neat circle diagram with center O clearly marked",
+      "Memorize the exact statement of perpendicular bisector theorem - appears every year",
+      "Practice numerical problems on intersecting chords - very common in long questions",
+      "Remember to write 'Hence Proved' at the end of theorem proofs"
+    ],
+    "formulas": [
+      "For intersecting chords: AP × PB = CP × PD",
+      "Distance from center to chord: d = √(r² - (l/2)²) where r = radius, l = chord length",
+      "Chord length: l = 2√(r² - d²) where d = distance from center"
+    ],
+    "keyDiagram": "Draw a circle with center O. Show two chords AB and CD intersecting at point P inside the circle. Mark the perpendicular from O to any chord, showing it bisects the chord. This basic diagram covers most theorem applications in this chapter."
+  },
+  "created_at": "2026-04-06T06:29:01.355Z"
+}

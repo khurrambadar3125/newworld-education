@@ -1,0 +1,109 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "15",
+  "chapter_name": "Analytical Chemistry",
+  "note_data": {
+    "title": "Analytical Chemistry",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Analytical Chemistry is the branch of chemistry that deals with the identification and determination of the composition of matter",
+      "Qualitative analysis determines what substances are present in a sample",
+      "Quantitative analysis determines how much of each substance is present in a sample",
+      "Classical methods include gravimetric analysis, volumetric analysis, and colorimetric analysis",
+      "Instrumental methods include spectroscopy, chromatography, and electroanalytical methods",
+      "Gravimetric analysis involves the measurement of mass to determine the amount of analyte",
+      "Volumetric analysis involves the measurement of volume of a solution of known concentration",
+      "Indicators are substances that change color at the equivalence point during titrations"
+    ],
+    "definitions": [
+      {
+        "term": "Analytical Chemistry",
+        "definition": "The branch of chemistry that deals with the identification and determination of the composition of matter"
+      },
+      {
+        "term": "Qualitative Analysis",
+        "definition": "The type of analysis that determines what substances are present in a sample"
+      },
+      {
+        "term": "Quantitative Analysis",
+        "definition": "The type of analysis that determines how much of each substance is present in a sample"
+      },
+      {
+        "term": "Gravimetric Analysis",
+        "definition": "A quantitative analytical method in which the amount of analyte is determined by measuring the mass of a pure compound containing the analyte"
+      },
+      {
+        "term": "Volumetric Analysis",
+        "definition": "A quantitative analytical method in which the amount of analyte is determined by measuring the volume of a solution of known concentration required to react completely with the analyte"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between qualitative and quantitative analysis.",
+        "answer": "Qualitative analysis determines what substances are present in a sample, while quantitative analysis determines how much of each substance is present in a sample."
+      },
+      {
+        "type": "long",
+        "question": "Explain gravimetric analysis with an example. What are its advantages and disadvantages?",
+        "answer": "Gravimetric analysis is a quantitative method where analyte amount is determined by measuring mass of a pure compound containing the analyte. Example: Determination of chloride ions by precipitating as AgCl. Advantages: High accuracy, no need for standards, simple equipment. Disadvantages: Time consuming, requires large sample size, limited to precipitate-forming reactions."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which method of analysis determines 'what' is present in a sample?",
+        "options": {
+          "A": "Quantitative analysis",
+          "B": "Qualitative analysis",
+          "C": "Gravimetric analysis",
+          "D": "Volumetric analysis"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "In gravimetric analysis, the amount of analyte is determined by:",
+        "options": {
+          "A": "Measuring volume",
+          "B": "Measuring mass",
+          "C": "Color change",
+          "D": "pH measurement"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Water quality testing at Tarbela Dam would primarily involve:",
+        "options": {
+          "A": "Only qualitative analysis",
+          "B": "Only quantitative analysis",
+          "C": "Both qualitative and quantitative analysis",
+          "D": "Neither type of analysis"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse qualitative analysis (what is present) with quantitative analysis (how much is present)",
+      "Forgetting to write exact textbook definitions word-for-word",
+      "Not mentioning both advantages and disadvantages when asked about analytical methods",
+      "Confusing gravimetric analysis (mass-based) with volumetric analysis (volume-based)",
+      "Not providing specific examples when explaining analytical methods"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Definition questions are very common - memorize exact textbook definitions",
+      "Comparison questions between different analytical methods frequently appear",
+      "Always provide Pakistani context examples like water testing in Karachi or Indus River analysis",
+      "Practice drawing the classification chart of analytical chemistry methods"
+    ],
+    "formulas": [
+      "Percentage purity = (Mass of pure substance / Total mass of sample) × 100",
+      "Molarity = Number of moles of solute / Volume of solution in dm³"
+    ],
+    "keyDiagram": "Classification chart of Analytical Chemistry showing main branches: Qualitative Analysis and Quantitative Analysis, with Quantitative further divided into Classical Methods (Gravimetric, Volumetric, Colorimetric) and Instrumental Methods (Spectroscopic, Chromatographic, Electroanalytical)"
+  },
+  "created_at": "2026-04-06T06:12:51.016Z"
+}
