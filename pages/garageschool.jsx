@@ -1,8 +1,8 @@
 /**
- * pages/garageschool.jsx — The Garage School × NewWorldEdu Partnership
+ * pages/garageschool.jsx — The Garage School × NewWorldEdu
  *
  * Shabina Mustafa founded The Garage School in 1999 with 14 children in her garage.
- * 25 years later, 550+ underprivileged children study there.
+ * 25 years later, 550+ children study there.
  * This page shows what AI-powered education can do for them.
  */
 
@@ -22,8 +22,8 @@ export default function GarageSchoolPage() {
   return (
     <div style={{ minHeight: '100vh', background: NAVY, fontFamily: "'Sora',-apple-system,sans-serif", color: WHITE }}>
       <Head>
-        <title>Shabina &amp; Khurram Collaboration — The Garage School × NewWorldEdu</title>
-        <meta name="description" content="The Garage School and NewWorldEdu bring AI-powered AI-powered tutoring to 550+ underprivileged children in Karachi. Pakistan's first AI school partnership." />
+        <title>The Garage School × NewWorldEdu — AI-Powered Education for Every Child</title>
+        <meta name="description" content="The Garage School and NewWorldEdu bring AI-powered education to 550+ children in Karachi. Every child deserves a personal tutor." />
       </Head>
 
       {/* Header */}
@@ -36,24 +36,19 @@ export default function GarageSchoolPage() {
 
       {/* ═══ HERO ═══ */}
       <section style={{ textAlign: 'center', padding: isMobile ? '48px 20px 40px' : '80px 24px 60px', maxWidth: 800, margin: '0 auto' }}>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: 16, alignItems: 'center', marginBottom: 28 }}>
-          <div style={{ fontSize: 11, fontWeight: 700, color: GOLD, letterSpacing: '0.12em', padding: '6px 16px', border: `1px solid ${GOLD}33`, borderRadius: 100, background: `${GOLD}08` }}>PARTNERSHIP</div>
-        </div>
-
         <h1 style={{ fontSize: isMobile ? 28 : 48, fontWeight: 900, margin: '0 0 20px', lineHeight: 1.15 }}>
-          Shabina &amp; Khurram{' '}
-          <span style={{ color: GOLD }}>Collaboration</span>
+          The Garage School{' '}
+          <span style={{ color: GOLD }}>× NewWorldEdu</span>
         </h1>
-        <div style={{ fontSize: 16, color: 'rgba(250,246,235,0.4)', marginBottom: 8 }}>The Garage School × NewWorldEdu</div>
 
         <p style={{ fontSize: isMobile ? 16 : 20, color: 'rgba(250,246,235,0.6)', lineHeight: 1.8, maxWidth: 640, margin: '0 auto 32px' }}>
           In 1999, Shabina Mustafa started teaching 14 children in her garage in Clifton, Karachi.
-          Over 25 years later, over 550 underprivileged children study at The Garage School.
+          Over 25 years later, over 550 children study at The Garage School.
           Now, every one of them gets a personal AI tutor.
         </p>
 
         <div style={{ fontSize: 15, color: GOLD, fontWeight: 700 }}>
-          Pakistan&apos;s first AI-powered school for underprivileged children.
+          Every child deserves a world-class education. AI makes it possible.
         </div>
       </section>
 
@@ -69,7 +64,7 @@ export default function GarageSchoolPage() {
             Shabina started teaching Somia and 13 other children in her garage at Minerva Court Apartments, Clifton. She hand-drew lined paper and made exercise books from scrap materials.
           </p>
           <p style={{ fontSize: 16, color: 'rgba(250,246,235,0.7)', lineHeight: 1.9, margin: '0 0 16px' }}>
-            Today, The Garage School — operated under the <strong style={{ color: WHITE }}>Safi Benevolent Trust</strong> (named after Shabina&apos;s late husband, Flight Lieutenant Syed Safi Mustafa, who was martyred in the 1971 war) — serves over <strong style={{ color: GOLD }}>550 underprivileged children</strong> from Shah Rasool Colony and Neelum Colony in DHA Phase-V, Karachi.
+            Today, The Garage School — operated under the <strong style={{ color: WHITE }}>Safi Benevolent Trust</strong> (named after Shabina&apos;s late husband, Flight Lieutenant Syed Safi Mustafa, who was martyred in the 1971 war) — serves over <strong style={{ color: GOLD }}>550 children</strong> from Shah Rasool Colony and Neelum Colony in DHA Phase-V, Karachi.
           </p>
           <p style={{ fontSize: 16, color: GOLD, lineHeight: 1.9, margin: 0, fontWeight: 700 }}>
             Shabina proved that one person, one garage, and one decision can change hundreds of lives. Now we add AI.
@@ -132,10 +127,7 @@ export default function GarageSchoolPage() {
           <div style={{ fontSize: 12, fontWeight: 700, color: 'rgba(250,246,235,0.35)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 16 }}>The Founder</div>
           <h3 style={{ fontSize: 22, fontWeight: 900, margin: '0 0 12px', color: WHITE }}>Shabina Mustafa</h3>
           <p style={{ fontSize: 15, color: 'rgba(250,246,235,0.6)', lineHeight: 1.8, margin: '0 0 12px' }}>
-            Widowed at 21 when Flight Lieutenant Syed Safi Mustafa was martyred in the 1971 war, Shabina raised her son alone while working 32 years at Saudi Arabian Airlines. After retirement, she dedicated her life to education.
-          </p>
-          <p style={{ fontSize: 15, color: 'rgba(250,246,235,0.6)', lineHeight: 1.8, margin: '0 0 12px' }}>
-            Recipient of the <strong style={{ color: WHITE }}>Azm Award (2011)</strong> for her contribution to education. Board President of Safi Benevolent Trust since 1999.
+            Recipient of the <strong style={{ color: WHITE }}>Azm Award (2011)</strong> for her contribution to education. Board President of Safi Benevolent Trust since 1999. Started with 14 children in a garage in Clifton — today, over 550 students.
           </p>
           <p style={{ fontSize: 15, color: GOLD, lineHeight: 1.8, margin: 0, fontStyle: 'italic' }}>
             &ldquo;Every child deserves the chance to read, write, and dream. A garage was enough to start. AI will take them further than I ever could alone.&rdquo;
@@ -153,18 +145,34 @@ export default function GarageSchoolPage() {
           The Garage School becomes the first school in Pakistan where every student — regardless of background, income, or ability — has access to an AI tutor. From Sindh Board Class 9 to IBA entry tests. If it works here, it works anywhere.
         </p>
 
-        {/* IBA Pipeline */}
+        {/* IBA Pipeline — clickable */}
         <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 28 }}>
-          {['Class 9-10 Matric', '→', 'Master every chapter', '→', 'IBA / LUMS / NUST Entry', '→', 'University'].map((step, i) => (
-            <span key={i} style={{ fontSize: 13, fontWeight: step === '→' ? 400 : 700, color: step === '→' ? 'rgba(250,246,235,0.3)' : GOLD, padding: step === '→' ? '0' : '6px 12px', border: step === '→' ? 'none' : `1px solid ${GOLD}33`, borderRadius: 8, background: step === '→' ? 'none' : `${GOLD}08` }}>{step}</span>
+          {[
+            { label: 'Class 9-10 Matric', href: '/sindh-board' },
+            { label: '→' },
+            { label: 'Master every chapter', href: '/bootcamp-sindh' },
+            { label: '→' },
+            { label: 'IBA / LUMS / NUST Entry', href: '/entrance-tests' },
+            { label: '→' },
+            { label: 'University', href: null },
+          ].map((step, i) => (
+            step.label === '→'
+              ? <span key={i} style={{ fontSize: 13, color: 'rgba(250,246,235,0.3)', alignSelf: 'center' }}>→</span>
+              : step.href
+                ? <a key={i} href={step.href} style={{ fontSize: 13, fontWeight: 700, color: GOLD, padding: '6px 12px', border: `1px solid ${GOLD}33`, borderRadius: 8, background: `${GOLD}08`, textDecoration: 'none', cursor: 'pointer', transition: 'all 0.2s' }}
+                    onMouseOver={e => { e.currentTarget.style.background = `${GOLD}20`; e.currentTarget.style.borderColor = GOLD; }}
+                    onMouseOut={e => { e.currentTarget.style.background = `${GOLD}08`; e.currentTarget.style.borderColor = `${GOLD}33`; }}>
+                    {step.label}
+                  </a>
+                : <span key={i} style={{ fontSize: 13, fontWeight: 700, color: GOLD, padding: '6px 12px', border: `1px solid ${GOLD}33`, borderRadius: 8, background: `${GOLD}08` }}>{step.label}</span>
           ))}
         </div>
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
           <a href="/sindh-board" style={{ display: 'inline-block', background: GOLD, color: NAVY, fontSize: 15, fontWeight: 900, padding: '14px 32px', borderRadius: 12, textDecoration: 'none' }}>
             Start Learning Now →
           </a>
-          <a href="/school" style={{ display: 'inline-block', background: 'transparent', border: `2px solid ${GOLD}`, color: GOLD, fontSize: 15, fontWeight: 900, padding: '12px 32px', borderRadius: 12, textDecoration: 'none' }}>
-            School Partnerships →
+          <a href="/bootcamp-sindh" style={{ display: 'inline-block', background: 'transparent', border: `2px solid ${GOLD}`, color: GOLD, fontSize: 15, fontWeight: 900, padding: '12px 32px', borderRadius: 12, textDecoration: 'none' }}>
+            Start a Bootcamp →
           </a>
         </div>
       </section>
