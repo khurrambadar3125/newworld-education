@@ -17,8 +17,11 @@ const GOLD = '#C9A84C';
 export default function GarageLogin() {
   const router = useRouter();
   const [name, setName] = useState('');
+  const [fatherName, setFatherName] = useState('');
   const [className, setClassName] = useState('');
   const [section, setSection] = useState('');
+  const [studentNumber, setStudentNumber] = useState('');
+  const [parentPhone, setParentPhone] = useState('');
   const [loading, setLoading] = useState(false);
 
   // Check if already logged in
@@ -37,6 +40,9 @@ export default function GarageLogin() {
 
     const profile = {
       name: name.trim(),
+      fatherName: fatherName.trim(),
+      studentNumber: studentNumber.trim(),
+      parentPhone: parentPhone.trim(),
       school: 'The Garage School',
       board: 'sindh',
       curriculum: 'sindh',
@@ -57,9 +63,11 @@ export default function GarageLogin() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: name.trim(),
-          email: `${name.trim().toLowerCase().replace(/\s+/g, '.')}@garageschool.student`,
+          email: `${studentNumber.trim() || name.trim().toLowerCase().replace(/\s+/g, '.')}@garageschool.student`,
           grade: className || 'Class 9',
+          subject: section || '',
           source: 'garage_school',
+          studyTime: parentPhone.trim(),
         }),
       });
     } catch {}
@@ -99,8 +107,16 @@ export default function GarageLogin() {
               onChange={e => setName(e.target.value)}
               style={S.input} />
 
-            <div style={{ display: 'flex', gap: 8, marginBottom: 10 }}>
-              {['Class 9', 'Class 10'].map(c => (
+            <input type="text" placeholder="Walid ka naam (Father's name)" value={fatherName}
+              onChange={e => setFatherName(e.target.value)}
+              style={S.input} />
+
+            <input type="text" placeholder="Student Number" value={studentNumber}
+              onChange={e => setStudentNumber(e.target.value)}
+              style={S.input} />
+
+            <div style={{ display: 'flex', gap: 6, marginBottom: 10, flexWrap: 'wrap' }}>
+              {['Class 6', 'Class 7', 'Class 8', 'Class 9', 'Class 10'].map(c => (
                 <button key={c} onClick={() => setClassName(c)}
                   style={{
                     flex: 1, padding: '12px 0', borderRadius: 10, cursor: 'pointer', fontSize: 14, fontWeight: 700,
@@ -113,15 +129,19 @@ export default function GarageLogin() {
               ))}
             </div>
 
-            <input type="text" placeholder="Section (optional)" value={section}
+            <input type="text" placeholder="Section" value={section}
               onChange={e => setSection(e.target.value)}
               style={S.input} />
 
-            <button onClick={handleRegister} disabled={!name.trim() || loading}
+            <input type="tel" placeholder="Parent ka phone number (WhatsApp)" value={parentPhone}
+              onChange={e => setParentPhone(e.target.value)}
+              style={S.input} />
+
+            <button onClick={handleRegister} disabled={!name.trim() || !studentNumber.trim() || loading}
               style={{
                 width: '100%', padding: 16, borderRadius: 12, border: 'none',
-                background: name.trim() ? GOLD : 'rgba(255,255,255,.06)',
-                color: name.trim() ? '#0a0a0a' : 'rgba(255,255,255,.3)',
+                background: (name.trim() && studentNumber.trim()) ? GOLD : 'rgba(255,255,255,.06)',
+                color: (name.trim() && studentNumber.trim()) ? '#0a0a0a' : 'rgba(255,255,255,.3)',
                 fontSize: 16, fontWeight: 900, cursor: name.trim() ? 'pointer' : 'default',
                 marginTop: 8,
               }}>
