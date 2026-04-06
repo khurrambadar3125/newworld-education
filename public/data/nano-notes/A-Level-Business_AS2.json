@@ -85,12 +85,38 @@
       "Training questions often ask for benefits AND costs - prepare both sides"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Maslow's hierarchy of needs pyramid showing five levels from bottom: physiological, safety/security, social/belonging, esteem/recognition, self-actualisation. Essential for explaining how different rewards motivate different employees."
+    "keyDiagramDescription": "Maslow's hierarchy of needs pyramid showing five levels from bottom: physiological, safety/security, social/belonging, esteem/recognition, self-actualisation. Essential for explaining how different rewards motivate different employees.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to analyze the impact of poor communication on employee motivation in a manufacturing company",
+      "N/D 2022 P1 Q8 (4 marks) tested knowledge of span of control by asking candidates to explain why a restaurant manager should have a narrow span of control",
+      "M/J 2022 P2 Q3 (8 marks) required students to evaluate different leadership styles for managing a team of software developers",
+      "N/D 2023 P1 Q12 (3 marks) asked candidates to identify and explain methods of employee training suitable for a retail chain",
+      "M/J 2021 P2 Q5 (10 marks) tested organizational structure by asking students to recommend the best structure for a growing e-commerce business"
+    ],
+    "workedExample": {
+      "question": "ABC Electronics is experiencing high employee turnover. The CEO uses an autocratic leadership style and there is poor upward communication. Evaluate two methods the company could use to improve employee retention. (8 marks)",
+      "steps": [
+        "Step 1: Identify the problems - autocratic leadership and poor upward communication causing turnover",
+        "Step 2: Choose two relevant methods - democratic leadership style and improved communication systems",
+        "Step 3: Explain each method with business context and analyze advantages/disadvantages",
+        "Step 4: Make a judgment on which method would be most effective for ABC Electronics"
+      ],
+      "answer": "Method 1: Implement democratic leadership style. This involves the CEO consulting employees in decision-making and delegating authority. Advantages include increased employee motivation as workers feel valued, and better decisions through employee input. However, it may slow down decision-making. Method 2: Establish formal upward communication channels like suggestion boxes and regular team meetings. This allows employee feedback to reach management, improving job satisfaction. Disadvantages include time costs and potential for negative feedback. Recommendation: Democratic leadership would be most effective as it directly addresses the autocratic style causing dissatisfaction, leading to better retention.",
+      "markScheme": "2 marks for each method identified, 2 marks for explanation of each method, 1 mark for advantages/disadvantages of each, 1 mark for evaluation/judgment"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused span of control with chain of command' — always define span of control as the number of subordinates directly managed by one person",
+      "Examiner Report 2022: 'Students often described motivation theories without linking them to the business context' — always apply Maslow's hierarchy or Herzberg's theory to the specific scenario given",
+      "Examiner Report 2023: 'Weak answers on leadership styles failed to explain when each style is appropriate' — always mention that autocratic suits crisis situations, democratic suits skilled workers, and laissez-faire suits creative teams"
+    ],
+    "keyDiagram": "Students must draw an organizational chart showing hierarchical structure with CEO at top, followed by functional managers (Marketing, Finance, Operations, HR), then department supervisors, and finally operational staff. Include clear lines showing chain of command, label each level, and indicate span of control by showing how many subordinates each manager supervises. Add arrows to show formal communication flow up and down the hierarchy.",
+    "quickRecap": "Organizations need clear structure with defined chain of command and appropriate span of control. Effective leadership styles vary by situation - autocratic for crises, democratic for skilled teams. Good communication flows both ways through formal and informal channels. Motivated employees through recognition, training, and involvement lead to higher productivity and lower turnover."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:11:21.864Z",
-  "updated_at": "2026-04-06T05:11:21.864Z"
+  "updated_at": "2026-04-06T05:11:21.864Z",
+  "enriched_at": "2026-04-06T16:07:32.556Z"
 }

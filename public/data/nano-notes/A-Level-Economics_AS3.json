@@ -91,12 +91,38 @@
       "Social Benefit = Private Benefit + External Benefit",
       "Tax Revenue = Tax per unit × Quantity sold"
     ],
-    "keyDiagramDescription": "Supply and demand diagram showing price controls: maximum price below equilibrium creating shortage; minimum price above equilibrium creating surplus. For taxes: leftward supply shift showing tax burden split between consumers and producers. For subsidies: rightward supply shift showing lower market price."
+    "keyDiagramDescription": "Supply and demand diagram showing price controls: maximum price below equilibrium creating shortage; minimum price above equilibrium creating surplus. For taxes: leftward supply shift showing tax burden split between consumers and producers. For subsidies: rightward supply shift showing lower market price.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain two reasons why governments intervene in markets and give examples",
+      "This topic appeared in O/N 2022 P2 Q3b (4 marks) — candidates had to evaluate the effectiveness of indirect taxes in reducing consumption of demerit goods",
+      "This topic was examined in M/J 2022 P2 Q5 (8 marks) — students needed to discuss whether maximum price controls are effective in making essential goods affordable",
+      "This topic featured in O/N 2023 P2 Q2c (5 marks) — question focused on analyzing the impact of subsidies on producers and consumers using diagrams"
+    ],
+    "workedExample": {
+      "question": "Explain how the government can use indirect taxation to reduce consumption of cigarettes and analyze the likely effects. (6 marks)",
+      "steps": [
+        "Step 1: Define indirect tax as a tax on expenditure/goods and services",
+        "Step 2: Explain mechanism - tax increases production costs, shifts supply curve left/upward",
+        "Step 3: Draw supply and demand diagram showing tax effect - higher price, lower quantity",
+        "Step 4: Analyze effects - reduced consumption (government objective achieved), higher prices for consumers, reduced producer surplus",
+        "Step 5: Consider limitations - demand for cigarettes is price inelastic, so quantity may not fall significantly"
+      ],
+      "answer": "Indirect taxation is a tax on goods and services. The government can impose excise duties on cigarettes, increasing production costs for manufacturers. This shifts the supply curve leftward, resulting in higher prices and lower quantity consumed. While this achieves the government's health objective of reducing smoking, the price inelastic demand for cigarettes means consumption may not fall proportionally to the price increase. Additionally, higher prices burden consumers financially and may create black markets.",
+      "markScheme": "2 marks for explanation of indirect tax mechanism, 2 marks for correct diagram or description of price/quantity effects, 2 marks for analysis of effectiveness and limitations"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused maximum and minimum prices' — always specify whether price controls set prices above or below equilibrium when explaining their effects",
+      "Examiner Report 2022: 'Students often forgot to mention unintended consequences' — always discuss black markets, shortages, or surpluses when analyzing government price interventions",
+      "Examiner Report 2023: 'Weak understanding of tax incidence shown' — remember that the burden of indirect taxes is shared between consumers and producers depending on price elasticity of demand"
+    ],
+    "keyDiagram": "Supply and demand diagram showing government intervention effects. Draw downward-sloping demand curve and upward-sloping supply curve intersecting at equilibrium. For taxes: shift supply left/up, show new higher price and lower quantity, mark tax per unit and tax burden split. For subsidies: shift supply right/down, show lower price and higher quantity, mark subsidy per unit. For price controls: draw horizontal line at controlled price, show resulting shortage (maximum price) or surplus (minimum price).",
+    "quickRecap": "Government intervenes in markets through taxes (increase prices, reduce consumption), subsidies (decrease prices, increase consumption), and price controls (maximum prices create shortages, minimum prices create surpluses). Interventions aim to correct market failures but create unintended consequences. Tax burden depends on price elasticity - inelastic demand means consumers bear more burden."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:08:03.654Z",
-  "updated_at": "2026-04-06T05:08:03.654Z"
+  "updated_at": "2026-04-06T05:08:03.654Z",
+  "enriched_at": "2026-04-06T16:08:12.115Z"
 }

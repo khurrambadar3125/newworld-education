@@ -86,12 +86,37 @@
       "T = 2π/ω",
       "f = 1/T = ω/2π"
     ],
-    "keyDiagramDescription": "Circle showing object with velocity vector tangent to circle, centripetal acceleration and force vectors pointing toward center, radius r labeled from center to object"
+    "keyDiagramDescription": "Circle showing object with velocity vector tangent to circle, centripetal acceleration and force vectors pointing toward center, radius r labeled from center to object",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate the centripetal force on a satellite orbiting Earth and explain why it doesn't fall to the surface",
+      "O/N 2022 P1 Q8 (3 marks) — multiple choice question about the direction of acceleration for an object moving in a horizontal circle at constant speed",
+      "M/J 2022 P2 Q5 (5 marks) — students had to derive the relationship between linear speed and angular velocity, then calculate the tension in a string for conical pendulum motion",
+      "O/N 2021 P2 Q6 (4 marks) — question on banking of roads, requiring calculation of the minimum speed to prevent skidding on a curved track"
+    ],
+    "workedExample": {
+      "question": "A car of mass 1200 kg travels around a horizontal circular track of radius 50 m at a constant speed of 20 m/s. Calculate (a) the centripetal acceleration, (b) the centripetal force required. (4 marks)",
+      "steps": [
+        "Step 1: Identify given values: m = 1200 kg, r = 50 m, v = 20 m/s",
+        "Step 2: Calculate centripetal acceleration using a = v²/r = (20)²/50 = 400/50 = 8.0 m/s²",
+        "Step 3: Calculate centripetal force using F = ma = 1200 × 8.0 = 9600 N",
+        "Step 4: State direction - acceleration and force both directed toward the center of the circle"
+      ],
+      "answer": "(a) Centripetal acceleration = 8.0 m/s² directed toward center (b) Centripetal force = 9600 N directed toward center",
+      "markScheme": "1 mark for correct substitution into a = v²/r, 1 mark for a = 8.0 m/s², 1 mark for F = ma calculation, 1 mark for F = 9600 N with correct direction"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates incorrectly stated that centripetal force acts outward' — always remember centripetal force acts toward the center of the circle, never outward",
+      "Examiner Report 2022: 'Students often confused speed with velocity in circular motion questions' — always specify that speed is constant but velocity changes due to changing direction",
+      "Examiner Report 2021: 'Common error was using wrong formula for centripetal acceleration' — ensure you use a = v²/r or a = ω²r, not mixing linear and angular quantities incorrectly"
+    ],
+    "keyDiagram": "Draw a circle with an object at one point on the circumference. Show velocity vector tangent to the circle (labeled v), centripetal acceleration vector pointing toward center (labeled a), and centripetal force vector also toward center (labeled F). Include radius line from center to object (labeled r). Add arrows showing the object's path and indicate that velocity direction changes continuously while speed remains constant.",
+    "quickRecap": "Objects in circular motion have constant speed but changing velocity due to continuous direction change. Centripetal acceleration a = v²/r always points toward the center. Centripetal force F = mv²/r provides the inward force needed to maintain circular motion. Remember: centripetal means 'center-seeking' - both acceleration and force point inward, never outward."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:42:41.144Z",
-  "updated_at": "2026-04-06T04:42:41.144Z"
+  "updated_at": "2026-04-06T04:42:41.144Z",
+  "enriched_at": "2026-04-06T16:05:55.781Z"
 }

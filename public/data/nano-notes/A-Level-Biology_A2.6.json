@@ -85,12 +85,40 @@
       "p + q = 1",
       "p² + 2pq + q² = 1"
     ],
-    "keyDiagramDescription": "Graph showing normal distribution curves for directional, stabilising and disruptive selection, with arrows indicating direction of selection pressure and resulting population changes over time"
+    "keyDiagramDescription": "Graph showing normal distribution curves for directional, stabilising and disruptive selection, with arrows indicating direction of selection pressure and resulting population changes over time",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how antibiotic resistance develops in bacteria through natural selection",
+      "N/D 2022 P1 Q15 (1 mark) — multiple choice question on which factor does NOT affect the rate of evolution in a population",
+      "M/J 2022 P2 Q6c (4 marks) — students had to describe how pesticide resistance could develop in a population of insects",
+      "N/D 2023 P2 Q3b (5 marks) — explain why some finches survived better than others during drought conditions on the Galapagos Islands",
+      "M/J 2021 P2 Q5a (3 marks) — define natural selection and give an example from nature"
+    ],
+    "workedExample": {
+      "question": "Explain how a population of moths could evolve to become darker in color over several generations in an industrial area. (6 marks)",
+      "steps": [
+        "Step 1: Identify the environmental pressure - industrial pollution creates dark, sooty surfaces",
+        "Step 2: Describe variation - moths show natural variation in color from light to dark",
+        "Step 3: Explain differential survival - dark moths are camouflaged better on sooty surfaces, so predators catch fewer dark moths than light ones",
+        "Step 4: State reproductive advantage - more dark moths survive to reproduce and pass on their genes",
+        "Step 5: Describe inheritance - dark color genes are passed to offspring",
+        "Step 6: Explain population change - over many generations, frequency of dark moths increases in the population"
+      ],
+      "answer": "In industrial areas with pollution, dark moths have a survival advantage because they are better camouflaged against sooty surfaces compared to light moths. Predators are less likely to spot and eat dark moths. This means more dark moths survive to reproduce and pass on their genes for dark coloration to their offspring. Over many generations, the proportion of dark moths in the population increases while light moths become less common, resulting in evolution of the population toward darker coloration.",
+      "markScheme": "1 mark each for: environmental pressure/selection pressure mentioned, variation in population, differential survival/reproduction, inheritance of characteristics, change in population over time, plus 1 mark for clear explanation"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused evolution with adaptation of individuals' — always explain that individuals adapt but populations evolve over generations",
+      "Examiner Report 2022: 'Students often forgot to mention that characteristics must be inherited' — always state that beneficial traits are passed from parents to offspring through genes",
+      "Examiner Report 2023: 'Candidates frequently wrote that organisms 'decide to evolve' or 'try to adapt' — remember that natural selection is not conscious and organisms do not choose to evolve"
+    ],
+    "keyDiagram": "Draw a flow chart showing the process of natural selection: Start with 'Population with variation' (show mixed colored circles), arrow to 'Environmental pressure' (predator or climate), arrow to 'Some individuals better adapted survive' (show fewer circles, mostly one color), arrow to 'Survivors reproduce' (circles with offspring), arrow to 'Beneficial alleles passed on' (DNA symbols), ending with 'Population composition changes over time' (mostly one color circles). Include labels for each stage and use different colors to show changes in population composition.",
+    "quickRecap": "Natural selection occurs when environmental pressures cause some individuals to survive and reproduce better than others. Beneficial characteristics are inherited and become more common in populations over time. This process leads to evolution - populations changing over generations, not individuals changing during their lifetime. Key examples include antibiotic resistance in bacteria and industrial melanism in moths."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:06:04.458Z",
-  "updated_at": "2026-04-06T05:06:04.458Z"
+  "updated_at": "2026-04-06T05:06:04.458Z",
+  "enriched_at": "2026-04-06T16:07:48.442Z"
 }

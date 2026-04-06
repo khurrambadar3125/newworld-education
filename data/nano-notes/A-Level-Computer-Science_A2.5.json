@@ -85,12 +85,39 @@
       "Link AI applications to real-world Pakistani contexts like agriculture, healthcare, or banking"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Neural network diagram showing input layer (data inputs), hidden layer(s) with weighted connections between nodes, and output layer producing final results. Each connection has a weight value, and nodes apply activation functions to process signals."
+    "keyDiagramDescription": "Neural network diagram showing input layer (data inputs), hidden layer(s) with weighted connections between nodes, and output layer producing final results. Each connection has a weight value, and nodes apply activation functions to process signals.",
+    "pastPaperRefs": [
+      "M/J 2023 P2 Q4 (6 marks) — they asked students to explain three ways artificial intelligence is used in modern vehicles and discuss one advantage and one disadvantage of each use",
+      "O/N 2022 P2 Q5c (4 marks) — candidates had to describe how machine learning differs from traditional programming and give two examples of machine learning applications",
+      "M/J 2022 P1 Q12 (2 marks) — multiple choice question testing knowledge of expert systems and their use in medical diagnosis",
+      "O/N 2021 P2 Q3b (5 marks) — students were required to explain how neural networks process information and describe their use in image recognition software"
+    ],
+    "workedExample": {
+      "question": "Explain how an expert system works and describe its use in medical diagnosis. (6 marks)",
+      "steps": [
+        "Step 1: Define what an expert system is - a computer program that mimics human expertise in a specific field",
+        "Step 2: Explain the knowledge base component - contains facts, rules and expertise from human specialists",
+        "Step 3: Describe the inference engine - processes user input against the knowledge base to reach conclusions",
+        "Step 4: Explain the user interface - allows doctors to input symptoms and receive diagnostic suggestions",
+        "Step 5: Give specific medical example - MYCIN system diagnoses bacterial infections and suggests treatments",
+        "Step 6: Mention advantages - consistent diagnosis, available 24/7, reduces human error"
+      ],
+      "answer": "An expert system is a computer program that mimics the decision-making ability of a human expert in a specific domain. It consists of a knowledge base containing facts, rules and expertise gathered from human specialists, and an inference engine that processes user queries against this knowledge to reach logical conclusions. In medical diagnosis, doctors input patient symptoms through a user interface, and the system suggests possible diagnoses and treatments. For example, the MYCIN system diagnoses bacterial infections by analyzing symptoms and medical history. Expert systems provide consistent diagnosis, are available 24/7, and help reduce human diagnostic errors.",
+      "markScheme": "1 mark for definition of expert system, 1 mark each for knowledge base and inference engine explanation, 2 marks for medical application description, 1 mark for specific advantage"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused artificial intelligence with simple automation' — always distinguish between rule-based programming and true AI that can learn and adapt",
+      "Examiner Report 2022: 'Students frequently gave vague examples like robots without explaining the AI component' — always specify how machine learning, neural networks or expert systems are actually used in your examples",
+      "Examiner Report 2021: 'Candidates often failed to explain both advantages AND disadvantages when asked' — ensure you provide balanced arguments and don't just focus on benefits of AI systems"
+    ],
+    "keyDiagram": "Draw a flowchart showing the components of an expert system: User Interface (top) connects bidirectionally to Inference Engine (center), which connects to Knowledge Base (left containing 'Facts, Rules, Expertise') and Working Memory (right containing 'Current session data'). Show arrows indicating data flow: user input goes down, system queries go between inference engine and knowledge base, and conclusions flow back up to user interface.",
+    "quickRecap": "AI systems include expert systems (mimic human expertise using knowledge base + inference engine), machine learning (computers learn from data without explicit programming), and neural networks (mimic brain structure for pattern recognition). Key applications: medical diagnosis, autonomous vehicles, recommendation systems, image recognition. Remember to distinguish true AI from simple automation and always give specific examples with clear AI components."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:19:13.037Z",
-  "updated_at": "2026-04-06T05:19:13.037Z"
+  "updated_at": "2026-04-06T05:19:13.037Z",
+  "enriched_at": "2026-04-06T16:07:26.213Z"
 }

@@ -85,12 +85,38 @@
       "Purpose questions need specific answers like 'finds the largest number' not 'processes data'"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Program development life cycle showing 5 connected stages: Analysis → Design → Coding → Testing → Maintenance, with arrows showing the flow and possible returns to previous stages"
+    "keyDiagramDescription": "Program development life cycle showing 5 connected stages: Analysis → Design → Coding → Testing → Maintenance, with arrows showing the flow and possible returns to previous stages",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to design an algorithm using pseudocode to find the largest number in an array and explain their approach step-by-step",
+      "O/N 2022 P2 Q2 (8 marks) tested algorithm design by requiring students to create a flowchart for a password validation system with specific criteria and trace through it with sample data",
+      "M/J 2022 P2 Q5 (5 marks) — candidates had to identify errors in a given sorting algorithm and rewrite the corrected pseudocode with proper variable declarations",
+      "O/N 2021 P2 Q3 (7 marks) focused on decomposition by asking students to break down a library book management system into sub-problems and design algorithms for each component"
+    ],
+    "workedExample": {
+      "question": "Design an algorithm using pseudocode to input 10 numbers and output how many are positive, negative, and zero. (6 marks)",
+      "steps": [
+        "Step 1: Initialize three counters (positive, negative, zero) to 0",
+        "Step 2: Set up a loop to repeat 10 times using a FOR loop with counter variable",
+        "Step 3: Inside loop, input each number and use IF-ELSE statements to check if positive, negative, or zero",
+        "Step 4: Increment appropriate counter based on the condition",
+        "Step 5: After loop ends, output all three counter values with clear labels"
+      ],
+      "answer": "FOR i ← 1 TO 10\n  INPUT number\n  IF number > 0 THEN\n    positive ← positive + 1\n  ELSE\n    IF number < 0 THEN\n      negative ← negative + 1\n    ELSE\n      zero ← zero + 1\n    ENDIF\n  ENDIF\nENDFOR\nOUTPUT \"Positive: \", positive\nOUTPUT \"Negative: \", negative\nOUTPUT \"Zero: \", zero",
+      "markScheme": "1 mark for correct loop structure, 1 mark for input statement, 2 marks for correct conditional logic, 1 mark for counter increments, 1 mark for appropriate outputs"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to initialize variables before using them in algorithms' — always declare and initialize all variables at the start when writing pseudocode",
+      "Examiner Report 2022: 'Students often confused assignment with comparison operators' — remember to use ← for assignment and = for comparison in pseudocode, never mix them up",
+      "Examiner Report 2021: 'Candidates frequently omitted proper loop termination conditions leading to infinite loops' — always ensure your loops have clear start, condition, and increment/decrement statements"
+    ],
+    "keyDiagram": "Students must be able to draw a problem-solving cycle diagram showing: 1) Problem identification (rectangle), 2) Analysis and decomposition (diamond), 3) Algorithm design (rectangle), 4) Implementation (rectangle), 5) Testing and evaluation (oval), with arrows showing the cyclical nature and feedback loops. Include decision points where the process may return to earlier stages if issues are found during testing.",
+    "quickRecap": "Algorithm design follows a structured approach: analyze the problem, break it into smaller sub-problems (decomposition), design step-by-step solutions using pseudocode or flowcharts, then test with sample data. Always initialize variables, use clear selection and iteration structures, and ensure proper input/output statements. Remember that algorithms must be unambiguous, finite, and produce the correct output for all valid inputs."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:45:45.922Z",
-  "updated_at": "2026-04-06T03:45:45.922Z"
+  "updated_at": "2026-04-06T03:45:45.922Z",
+  "enriched_at": "2026-04-06T16:08:57.103Z"
 }

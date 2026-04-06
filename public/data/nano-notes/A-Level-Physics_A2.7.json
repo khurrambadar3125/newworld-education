@@ -90,12 +90,37 @@
       "C = ε₀A/d",
       "W = ½QV = ½CV² = ½Q²/C"
     ],
-    "keyDiagramDescription": "Parallel plate capacitor showing uniform field lines perpendicular to plates, and radial field pattern around point charge with field lines radiating outward from positive charge"
+    "keyDiagramDescription": "Parallel plate capacitor showing uniform field lines perpendicular to plates, and radial field pattern around point charge with field lines radiating outward from positive charge",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to describe the electric field pattern around a charged sphere and explain how field strength varies with distance",
+      "O/N 2022 P1 Q12 (1 mark) — multiple choice question testing understanding of electric field direction around positive and negative point charges",
+      "M/J 2022 P2 Q3b (4 marks) — students had to calculate electric field strength at a point between two charged plates and explain the motion of a charged particle",
+      "O/N 2023 P2 Q5 (5 marks) — required drawing field lines around two opposite charges and explaining why field strength is greatest where lines are closest together"
+    ],
+    "workedExample": {
+      "question": "Two parallel plates are separated by 4.0 cm. A potential difference of 120 V is applied across the plates. Calculate the electric field strength between the plates and describe the motion of an electron placed between them. (4 marks)",
+      "steps": [
+        "Step 1: Identify the formula for uniform electric field: E = V/d",
+        "Step 2: Convert distance to metres: d = 4.0 cm = 0.040 m",
+        "Step 3: Calculate field strength: E = 120 V ÷ 0.040 m = 3000 V/m or 3000 N/C",
+        "Step 4: Determine electron motion: Electric field points from positive to negative plate, so electron (negative charge) experiences force towards positive plate and accelerates in that direction"
+      ],
+      "answer": "Electric field strength = 3000 V/m. The electron will accelerate towards the positive plate as it experiences a force opposite to the field direction.",
+      "markScheme": "1 mark for correct formula, 1 mark for unit conversion, 1 mark for correct calculation with units, 1 mark for describing electron motion towards positive plate"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused electric field direction with the direction of force on negative charges' — always remember field direction is defined as the direction of force on a POSITIVE test charge",
+      "Examiner Report 2022: 'Students frequently drew field lines crossing each other or starting/ending in empty space' — field lines must never cross and always start on positive charges and end on negative charges",
+      "Examiner Report 2023: 'Candidates often forgot to include units when calculating electric field strength' — always include V/m or N/C and ensure consistent unit usage throughout calculations"
+    ],
+    "keyDiagram": "Students must be able to draw electric field line patterns showing: (1) Field lines around a single positive charge radiating outward, (2) Field lines around a single negative charge pointing inward, (3) Field lines between two opposite charges curving from positive to negative, and (4) Uniform parallel field lines between two charged plates. Include arrows showing direction, ensure lines never cross, and show that closer spacing indicates stronger field strength.",
+    "quickRecap": "Electric field is the region where charged objects experience a force. Field strength E = F/q or E = V/d for uniform fields. Field lines show direction (positive to negative) and strength (spacing). Remember: field direction is defined by force on positive charges, and field strength is measured in V/m or N/C."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:44:59.691Z",
-  "updated_at": "2026-04-06T04:44:59.691Z"
+  "updated_at": "2026-04-06T04:44:59.691Z",
+  "enriched_at": "2026-04-06T16:09:38.503Z"
 }

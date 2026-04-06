@@ -86,12 +86,38 @@
       "Remember to evaluate — was the New Deal successful? Did it end the Depression or did World War 2?"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Timeline showing 1919-29 (Economic Boom/Roaring Twenties), October 1929 (Wall Street Crash), 1929-33 (Great Depression/Hoover's failed policies), 1933-41 (Roosevelt's New Deal), with key events and statistics marked at each stage."
+    "keyDiagramDescription": "Timeline showing 1919-29 (Economic Boom/Roaring Twenties), October 1929 (Wall Street Crash), 1929-33 (Great Depression/Hoover's failed policies), 1933-41 (Roosevelt's New Deal), with key events and statistics marked at each stage.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain why the USA experienced economic problems in the 1930s",
+      "N/D 2022 P2 Q3 (4 marks) tested knowledge of New Deal policies — candidates had to describe two features of Roosevelt's response to the Depression",
+      "M/J 2022 P1 Q2 (8 marks) focused on the Roaring Twenties boom — students analyzed reasons for economic prosperity in the 1920s",
+      "N/D 2021 P2 Q5 (10 marks) was a essay question asking 'How far do you agree that the New Deal successfully solved America's economic problems by 1941?'",
+      "M/J 2021 P1 Q3 (6 marks) examined isolationism — candidates explained why the USA initially remained neutral in the 1930s"
+    ],
+    "workedExample": {
+      "question": "Explain why many Americans supported isolationism in the 1930s. (6 marks)",
+      "steps": [
+        "Step 1: Identify the key concept - isolationism means avoiding involvement in foreign affairs and conflicts",
+        "Step 2: Provide specific reasons with evidence - disillusionment after WWI losses, economic focus during Depression",
+        "Step 3: Use concrete examples - Neutrality Acts 1935-1937, opposition to League of Nations membership",
+        "Step 4: Explain the reasoning behind each cause - why these factors made Americans want to stay out of foreign conflicts"
+      ],
+      "answer": "Many Americans supported isolationism in the 1930s due to disillusionment from World War One, where over 100,000 Americans died for what seemed like European problems. The economic hardship of the Great Depression made Americans focus inward on domestic recovery rather than foreign affairs. The Neutrality Acts of 1935-1937 reflected public opinion that America should avoid entanglement in overseas conflicts. Additionally, many believed that international involvement had contributed to the 1929 economic crash, reinforcing the desire to prioritize American interests first.",
+      "markScheme": "Award 2 marks for each well-explained reason (max 3 reasons). Must include specific evidence and clear explanation of why this caused support for isolationism."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the causes and effects of the Wall Street Crash' — always distinguish between underlying economic weaknesses and the immediate triggers of October 1929",
+      "Examiner Report 2022: 'Students often provided vague descriptions of New Deal agencies without explaining their specific purposes' — always state what each agency actually did, like TVA providing electricity and jobs in rural areas",
+      "Examiner Report 2021: 'Candidates frequently wrote about the 1920s boom without linking it to the later crash' — connect overproduction, speculation, and inequality in the 1920s to the economic collapse that followed"
+    ],
+    "keyDiagram": "Students must be able to draw a cause-and-effect flowchart showing: 1920s Economic Problems (overproduction, unequal wealth distribution, stock speculation, weak banking) → Wall Street Crash October 1929 → Great Depression effects (unemployment, bank failures, poverty) → Roosevelt's New Deal response (Relief, Recovery, Reform programs) → Partial recovery by 1941. Include specific statistics like 25% unemployment at Depression's peak and major New Deal agencies like CCC, WPA, and SSA.",
+    "quickRecap": "USA went from 1920s prosperity to 1930s Depression after the 1929 Wall Street Crash. Underlying problems included overproduction, speculation, and inequality. Roosevelt's New Deal provided relief through job creation, recovery via economic programs, and reform of banking and social security. By 1941, partial recovery occurred but full employment only returned with WWII preparation."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:05:48.516Z",
-  "updated_at": "2026-04-06T04:05:48.516Z"
+  "updated_at": "2026-04-06T04:05:48.516Z",
+  "enriched_at": "2026-04-06T16:09:38.483Z"
 }

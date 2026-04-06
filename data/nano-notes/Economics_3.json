@@ -87,12 +87,37 @@
       "Use Pakistani examples: HBL, UBL for banks; textile workers' unions in Karachi for trade unions"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Circular flow diagram showing households supplying factors to firms in exchange for income, then spending this income on goods and services, with banks facilitating savings and investment flows"
+    "keyDiagramDescription": "Circular flow diagram showing households supplying factors to firms in exchange for income, then spending this income on goods and services, with banks facilitating savings and investment flows",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to discuss the role and importance of commercial banks in a developed economy, requiring analysis of credit creation and financial intermediation",
+      "O/N 2022 P1 Q15 (1 mark) — multiple choice question on which actions of commercial banks could have led to the financial crisis, testing understanding of risky banking practices",
+      "M/J 2024 P2 Q3b (6 marks) — explain two benefits consumers may gain from having more commercial banks, focusing on competition and choice",
+      "O/N 2023 P2 Q5 (10 marks) — discuss whether central bank aims to control money supply while commercial banks aim to maximise profits, requiring evaluation of conflicting objectives"
+    ],
+    "workedExample": {
+      "question": "Discuss the role and importance of commercial banks in a developed economy. (8 marks)",
+      "steps": [
+        "Step 1: Define commercial banks as profit-seeking financial institutions that accept deposits and provide loans",
+        "Step 2: Explain key roles - financial intermediation (connecting savers and borrowers), credit creation through fractional reserve banking, providing payment systems",
+        "Step 3: Analyze importance - facilitate investment by channeling savings to productive uses, enable economic growth through business loans, provide liquidity to the economy",
+        "Step 4: Evaluate limitations - can create instability through excessive risk-taking, may restrict lending during recessions, profit motive may conflict with economic stability"
+      ],
+      "answer": "Commercial banks play crucial roles in developed economies through financial intermediation, connecting savers with borrowers and facilitating efficient capital allocation. They create credit through fractional reserve banking, multiplying the money supply and enabling investment. Their payment systems facilitate trade and commerce. However, their profit-maximizing behavior can lead to excessive risk-taking, as seen in financial crises, and pro-cyclical lending that amplifies economic fluctuations. Despite these limitations, commercial banks remain essential for economic growth and financial stability in developed economies.",
+      "markScheme": "Award marks for: definition (1), explanation of roles (3), analysis of importance (2), evaluation/limitations (2)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused commercial banks with central banks' — always clearly distinguish between profit-seeking commercial banks and policy-focused central banks when discussing banking functions",
+      "Examiner Report 2022: 'Students failed to explain the credit creation process adequately' — always mention fractional reserve banking and the money multiplier when discussing how commercial banks create credit",
+      "Examiner Report 2024: 'Weak evaluation in banking questions' — always consider both benefits and drawbacks of commercial bank activities, such as efficiency gains versus financial instability risks"
+    ],
+    "keyDiagram": "Credit Creation Diagram: Draw a flowchart showing how an initial deposit of $1000 creates multiple loans through the fractional reserve system. Show Bank A receiving $1000, keeping 10% reserve ($100), lending $900 to Bank B, which keeps $90 reserve and lends $810, continuing the cycle. Calculate total money created using the money multiplier formula (1/reserve ratio). Label each stage clearly with deposit amounts, reserves held, and loans made.",
+    "quickRecap": "Commercial banks are profit-seeking institutions that accept deposits and provide loans, serving as financial intermediaries. They create credit through fractional reserve banking, provide payment systems, and facilitate economic growth by channeling savings to investment. Key exam focus: distinguish from central banks, explain credit creation process, evaluate both benefits (economic growth, efficiency) and risks (financial instability, pro-cyclical lending)."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:33:46.445Z",
-  "updated_at": "2026-04-06T03:33:46.445Z"
+  "updated_at": "2026-04-06T03:33:46.445Z",
+  "enriched_at": "2026-04-06T16:06:40.100Z"
 }

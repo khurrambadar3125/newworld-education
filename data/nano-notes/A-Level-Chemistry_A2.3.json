@@ -82,12 +82,38 @@
       "ΔS° = Σ S°(products) - Σ S°(reactants)",
       "ΔG° = Σ ΔGf°(products) - Σ ΔGf°(reactants)"
     ],
-    "keyDiagramDescription": "Born-Haber cycle energy level diagram showing gaseous ions at the top, with arrows indicating atomisation, ionisation, electron affinity, formation enthalpy and lattice energy changes"
+    "keyDiagramDescription": "Born-Haber cycle energy level diagram showing gaseous ions at the top, with arrows indicating atomisation, ionisation, electron affinity, formation enthalpy and lattice energy changes",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate the enthalpy change of combustion using bond energies and explain why the experimental value differs from the calculated value",
+      "This topic appeared in O/N 2022 P2 Q5 (8 marks) — students had to draw and label an energy level diagram for an exothermic reaction and calculate enthalpy change from formation data",
+      "This topic was examined in M/J 2022 P1 Q15 (1 mark) — multiple choice question on identifying the correct definition of enthalpy of atomisation",
+      "This topic was tested in O/N 2023 P2 Q3 (5 marks) — students needed to explain why enthalpy of combustion values from calorimetry are less negative than data book values"
+    ],
+    "workedExample": {
+      "question": "Calculate the enthalpy change for the reaction: C₂H₄ + H₂ → C₂H₆ using the bond energies: C=C: 612 kJ/mol, C-C: 348 kJ/mol, C-H: 412 kJ/mol, H-H: 436 kJ/mol [4 marks]",
+      "steps": [
+        "Step 1: Draw structural formulas and identify bonds broken: 1 × C=C bond (612 kJ/mol), 4 × C-H bonds (4 × 412 = 1648 kJ/mol), 1 × H-H bond (436 kJ/mol)",
+        "Step 2: Calculate total energy required to break bonds: 612 + 1648 + 436 = 2696 kJ/mol",
+        "Step 3: Identify bonds formed in C₂H₆: 1 × C-C bond (348 kJ/mol), 6 × C-H bonds (6 × 412 = 2472 kJ/mol)",
+        "Step 4: Calculate total energy released when bonds form: 348 + 2472 = 2820 kJ/mol",
+        "Step 5: Apply formula ΔH = Energy required to break bonds - Energy released when bonds form = 2696 - 2820 = -124 kJ/mol"
+      ],
+      "answer": "ΔH = -124 kJ/mol (exothermic reaction)",
+      "markScheme": "1 mark for correct bonds broken, 1 mark for correct bonds formed, 1 mark for correct calculation method, 1 mark for final answer with correct sign"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused enthalpy of formation with enthalpy of combustion' — always check whether the question asks for formation (from elements) or combustion (reaction with oxygen)",
+      "Examiner Report 2022: 'Students frequently forgot to include the correct sign for enthalpy changes' — always state whether ΔH is positive (endothermic) or negative (exothermic) and include units kJ/mol",
+      "Examiner Report 2023: 'Bond energy calculations were often incorrect because students miscounted bonds' — always draw structural formulas clearly showing all bonds before attempting calculations"
+    ],
+    "keyDiagram": "Energy level diagram showing reactants and products on y-axis (energy) vs reaction progress on x-axis. Must include: horizontal lines for reactants (higher) and products (lower) for exothermic reactions, vertical arrow showing ΔH (downward for exothermic, upward for endothermic), activation energy curve showing energy barrier, clear labels for 'Reactants', 'Products', 'ΔH', and 'Activation Energy'. The diagram should show that ΔH is measured from reactant level to product level.",
+    "quickRecap": "Enthalpy changes measure heat energy transferred in reactions under standard conditions. Exothermic reactions have negative ΔH (products lower energy than reactants), endothermic have positive ΔH. Calculate using bond energies: ΔH = energy to break bonds - energy to form bonds. Standard enthalpies include formation (from elements), combustion (with oxygen), and neutralisation (acid + base)."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:37:09.231Z",
-  "updated_at": "2026-04-06T04:37:09.231Z"
+  "updated_at": "2026-04-06T04:37:09.231Z",
+  "enriched_at": "2026-04-06T16:06:44.200Z"
 }

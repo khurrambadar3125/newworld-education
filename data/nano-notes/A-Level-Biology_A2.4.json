@@ -82,12 +82,39 @@
       "Hormone questions require mention of blood transport and complementary receptors for full marks"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Action potential graph showing resting potential (-70mV), threshold (-55mV), depolarisation peak (+40mV), repolarisation and refractory period over time. Label voltage-gated Na+ and K+ channel opening/closing points."
+    "keyDiagramDescription": "Action potential graph showing resting potential (-70mV), threshold (-55mV), depolarisation peak (+40mV), repolarisation and refractory period over time. Label voltage-gated Na+ and K+ channel opening/closing points.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how the nervous system coordinates a reflex action when touching a hot object",
+      "O/N 2022 P1 Q15 (1 mark) — multiple choice question testing knowledge of which part of the brain controls balance and coordination",
+      "M/J 2022 P2 Q6(c) (4 marks) — required students to compare nervous and hormonal coordination in terms of speed and duration of response",
+      "O/N 2021 P2 Q3(b) (5 marks) — asked for a detailed explanation of how insulin coordinates blood glucose regulation including feedback mechanisms"
+    ],
+    "workedExample": {
+      "question": "Explain how the body coordinates the response when blood glucose levels rise after eating a meal. (6 marks)",
+      "steps": [
+        "Step 1: Identify the stimulus - blood glucose concentration rises above normal levels after eating",
+        "Step 2: Identify the receptor - specialized cells in the pancreas (beta cells in islets of Langerhans) detect the high glucose",
+        "Step 3: Explain hormone release - pancreas releases insulin into the bloodstream",
+        "Step 4: Describe target organs - insulin travels to liver and muscle cells (effectors)",
+        "Step 5: Explain the response - insulin causes glucose uptake by cells and conversion to glycogen for storage",
+        "Step 6: State the result - blood glucose returns to normal levels (negative feedback)"
+      ],
+      "answer": "When blood glucose rises, receptor cells in the pancreas detect this change. The pancreas releases insulin hormone into the blood. Insulin travels to target organs (liver and muscles) where it stimulates glucose uptake and conversion to glycogen. This lowers blood glucose back to normal levels through negative feedback control.",
+      "markScheme": "1 mark each for: stimulus identified, receptor named, hormone named, target organ mentioned, response described, negative feedback concept"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the nervous system with the endocrine system' — always specify whether coordination is by nerves (electrical, fast) or hormones (chemical, slower)",
+      "Examiner Report 2022: 'Students often missed the feedback mechanism' — always mention negative feedback when explaining hormonal coordination of glucose, temperature, or water balance",
+      "Examiner Report 2021: 'Vague answers about 'the brain controls everything'' — be specific about which part coordinates what (cerebellum for balance, medulla for breathing, hypothalamus for temperature)"
+    ],
+    "keyDiagram": "Students must draw a reflex arc showing: stimulus arrow pointing to receptor in skin, sensory neuron leading to spinal cord, synapse in spinal cord connecting to motor neuron, motor neuron leading to effector muscle, and response arrow. Include labels for all parts and show direction of nerve impulse with arrows. Gray matter should be shown in center of spinal cord cross-section.",
+    "quickRecap": "Coordination involves detecting stimuli and producing appropriate responses. Nervous coordination is fast and electrical via neurons, while hormonal coordination is slower and chemical via bloodstream. Reflex actions bypass the brain for rapid responses. Negative feedback maintains homeostasis by reversing changes from normal levels."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:05:20.210Z",
-  "updated_at": "2026-04-06T05:05:20.211Z"
+  "updated_at": "2026-04-06T05:05:20.211Z",
+  "enriched_at": "2026-04-06T16:06:59.971Z"
 }

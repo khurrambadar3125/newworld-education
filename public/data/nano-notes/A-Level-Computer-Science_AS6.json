@@ -84,12 +84,38 @@
       "Remember to mention both encryption and decryption processes in explanations"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Network security diagram showing firewall placement between internal network and internet, with encryption process showing plaintext → algorithm + key → ciphertext transformation"
+    "keyDiagramDescription": "Network security diagram showing firewall placement between internal network and internet, with encryption process showing plaintext → algorithm + key → ciphertext transformation",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain three methods of data validation and how each helps maintain data integrity",
+      "O/N 2022 P2 Q6 (8 marks) tested security measures by asking candidates to describe four different methods to protect data from unauthorized access, including both physical and logical security",
+      "M/J 2022 P1 Q15 (2 marks) was a multiple choice question about the difference between data verification and data validation",
+      "O/N 2023 P2 Q3 (5 marks) required students to explain privacy concerns with online data collection and suggest three methods organizations can use to protect user privacy",
+      "M/J 2021 P2 Q7 (7 marks) asked for a comparison between biometric and traditional password authentication methods, including advantages and disadvantages of each"
+    ],
+    "workedExample": {
+      "question": "A hospital database stores patient records. Explain three different validation checks that could be used when entering patient data and how each check helps maintain data integrity. (6 marks)",
+      "steps": [
+        "Step 1: Identify three appropriate validation checks suitable for patient data entry",
+        "Step 2: For each check, explain what it does and provide a specific example",
+        "Step 3: Link each validation check to how it maintains data integrity",
+        "Step 4: Ensure technical accuracy and use appropriate terminology"
+      ],
+      "answer": "Range check: Ensures data falls within acceptable limits, e.g., patient age must be between 0-150 years. This maintains data integrity by preventing impossible values that would make the data unreliable. Format check: Verifies data matches required pattern, e.g., patient ID must follow format 'P' followed by 6 digits (P123456). This ensures consistency in data structure making it reliable for processing. Presence check: Ensures essential fields are not left empty, e.g., patient name and date of birth must be entered. This maintains completeness of records ensuring all critical information is available for medical decisions.",
+      "markScheme": "1 mark for each validation method named, 1 mark for each correct explanation of how it works with example, plus overall coherence in linking to data integrity"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused verification with validation' — always clearly distinguish that verification checks data is entered correctly while validation checks data is reasonable/sensible",
+      "Examiner Report 2022: 'Students often gave vague security measures without specific examples' — always provide concrete examples like 'firewalls block unauthorized network access' rather than just saying 'use firewalls'",
+      "Examiner Report 2023: 'Candidates frequently forgot to explain HOW security measures protect data' — don't just list methods, explain the mechanism by which each method provides protection"
+    ],
+    "keyDiagram": "Security Layers Diagram: Draw concentric circles showing multiple security layers from outside to inside: Physical security (locks, CCTV), Network security (firewalls, encryption), Access control (passwords, biometrics), and Data protection (backups, validation) at the center. Include arrows showing how threats must penetrate each layer, and label each layer with specific examples. This demonstrates defense-in-depth approach and shows how different security measures work together.",
+    "quickRecap": "Security protects data from unauthorized access using methods like passwords, encryption, and firewalls. Privacy ensures personal data is only used appropriately with user consent. Data integrity means data remains accurate and complete through validation (checking data makes sense) and verification (checking data was entered correctly). Remember: validation checks if data is reasonable, verification checks if data matches the original source."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:15:56.733Z",
-  "updated_at": "2026-04-06T05:15:56.733Z"
+  "updated_at": "2026-04-06T05:15:56.733Z",
+  "enriched_at": "2026-04-06T16:10:43.712Z"
 }

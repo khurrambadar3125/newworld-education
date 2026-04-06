@@ -89,12 +89,37 @@
       "Natural Increase Rate = Birth Rate - Death Rate",
       "Population Growth Rate = Natural Increase + Net Migration"
     ],
-    "keyDiagramDescription": "Demographic Transition Model showing 5 stages with birth rate and death rate lines, population growth shaded area between them, and total population curve"
+    "keyDiagramDescription": "Demographic Transition Model showing 5 stages with birth rate and death rate lines, population growth shaded area between them, and total population curve",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how birth rate, death rate and migration affect population growth using a named case study",
+      "N/D 2022 P1 Q15 (1 mark) — multiple choice question on demographic transition model stages with population pyramid identification",
+      "M/J 2022 P2 Q3b (4 marks) — candidates had to describe and explain the population structure shown in a population pyramid for an aging population",
+      "N/D 2023 P2 Q5 (8 marks) — essay question requiring explanation of population policies in contrasting countries and their effectiveness"
+    ],
+    "workedExample": {
+      "question": "Study the population pyramid below. Describe and explain the population structure shown. (6 marks)",
+      "steps": [
+        "Step 1: Describe the shape - narrow base, wide middle, narrowing top indicates low birth rate, aging population",
+        "Step 2: Identify specific features - small proportion of young dependents (0-14), large working age population (15-64), significant elderly population (65+)",
+        "Step 3: Explain causes - economic development leads to lower birth rates, improved healthcare increases life expectancy",
+        "Step 4: Link to demographic transition - this represents Stage 4/5 of demographic transition model"
+      ],
+      "answer": "The population pyramid shows a constrictive/barrel shape with a narrow base and wide middle section. There is a small proportion of young people (0-14 years), indicating low birth rates. The large working-age population (15-64) suggests this is a developed country. The significant elderly population (65+) shows high life expectancy. This structure results from economic development reducing birth rates due to urbanization, education and career priorities. Improved healthcare and living standards increase life expectancy. This represents Stage 4 of the demographic transition model, typical of developed countries like Japan or Germany.",
+      "markScheme": "2 marks for accurate description of shape/structure, 2 marks for identifying age group proportions, 2 marks for explaining economic/social causes"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused population growth rate with population density' — always check whether the question asks about how fast population increases (growth rate) or how many people per km² (density)",
+      "Examiner Report 2022: 'Students frequently failed to use specific data from population pyramids' — always quote actual percentages or age ranges shown in the diagram rather than making general statements",
+      "Examiner Report 2023: 'Case study responses lacked specific place names and statistical evidence' — always include the country name, specific birth/death rates, and government policy names when discussing population policies"
+    ],
+    "keyDiagram": "Students must be able to draw and label the Demographic Transition Model showing 5 stages. Stage 1: High birth rate, high death rate (primitive societies). Stage 2: High birth rate, falling death rate (developing countries). Stage 3: Falling birth rate, low death rate (emerging economies). Stage 4: Low birth rate, low death rate (developed countries). Stage 5: Very low birth rate, low death rate (aging societies). Include population growth rate curve showing slow-rapid-slowing-stable-declining pattern. Label axes clearly: Time (x-axis) and Rate per 1000 people (y-axis).",
+    "quickRecap": "Population dynamics involves birth rates, death rates, migration and natural increase. The Demographic Transition Model has 5 stages from high BR/DR to very low BR/low DR. Population pyramids show age structure - wide base = young population, narrow base = aging population. Remember: population growth rate = (birth rate - death rate) + net migration rate."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:54:08.403Z",
-  "updated_at": "2026-04-06T03:54:08.404Z"
+  "updated_at": "2026-04-06T03:54:08.404Z",
+  "enriched_at": "2026-04-06T16:05:59.764Z"
 }

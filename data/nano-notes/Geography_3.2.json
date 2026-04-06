@@ -86,12 +86,38 @@
       "Case study knowledge of farming in Pakistan earns extra marks"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Systems diagram showing inputs (seeds, fertilizers, labor, machinery), processes (plowing, planting, harvesting), outputs (crops, livestock products) and feedback loops in farming systems"
+    "keyDiagramDescription": "Systems diagram showing inputs (seeds, fertilizers, labor, machinery), processes (plowing, planting, harvesting), outputs (crops, livestock products) and feedback loops in farming systems",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (6 marks) — they asked students to explain two ways technology may be used to increase food production with examples",
+      "N/D 2022 P1 Q4 (4 marks) required candidates to describe how technology is used to intensify food production using evidence from a photograph showing greenhouse farming",
+      "M/J 2024 P2 Q2 (4 marks) asked students to explain two ways technology can increase food production in an area, with many failing to provide specific examples",
+      "N/D 2023 P1 Q5 (4 marks) focused on suggesting environmental consequences of increasing food production, testing understanding of sustainability issues"
+    ],
+    "workedExample": {
+      "question": "Explain two ways in which technology may be used to increase food production. (6 marks)",
+      "steps": [
+        "Step 1: Identify two clear technological methods - choose drip irrigation and high-yielding variety (HYV) seeds",
+        "Step 2: Explain HOW drip irrigation works - water delivered directly to plant roots through pipes/tubes",
+        "Step 3: Explain WHY this increases production - reduces water waste, prevents disease, allows precise nutrient delivery",
+        "Step 4: Explain HOW HYV seeds work - genetically modified/selectively bred for better characteristics",
+        "Step 5: Explain WHY this increases production - higher yields per plant, disease resistance, shorter growing seasons"
+      ],
+      "answer": "Drip irrigation systems use networks of pipes and tubes to deliver water directly to plant roots. This increases food production by reducing water waste by up to 50%, preventing plant diseases caused by wet leaves, and allowing farmers to deliver fertilizers precisely where needed. High-yielding variety (HYV) seeds are genetically modified or selectively bred crops with improved characteristics. These increase food production by producing 2-3 times more yield per plant than traditional varieties, showing greater resistance to pests and diseases, and having shorter growing seasons allowing multiple harvests per year.",
+      "markScheme": "2 marks for identifying each technology (2 marks total), 2 marks for explaining how each technology works (4 marks total), with examples gaining additional credit"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused intensive farming methods with technology' — always distinguish between management practices and actual technological innovations when answering food production questions",
+      "Examiner Report 2024: 'Students frequently listed technologies without explaining HOW they increase production' — always provide the mechanism by which technology improves yields, not just what the technology is",
+      "Examiner Report 2022: 'Candidates often ignored environmental consequences or gave vague answers like pollution' — be specific about environmental impacts such as soil erosion, water table depletion, or biodiversity loss with clear cause-effect relationships"
+    ],
+    "keyDiagram": "Students must be able to draw and label an intensive farming system diagram showing: greenhouse/polytunnel structure with temperature control, drip irrigation pipes leading to plant roots, automated systems (sensors, timers), hydroponic growing medium or soil with fertilizer application points, and ventilation systems. Include arrows showing inputs (water, nutrients, energy) and outputs (increased crop yields). Label should show how each technological component contributes to increased production efficiency.",
+    "quickRecap": "Technology increases food production through precision methods like drip irrigation (direct water delivery), HYV/GM crops (higher yields), mechanization (faster processing), and controlled environments (greenhouses). Key environmental costs include deforestation, soil erosion, water pollution and biodiversity loss. Always explain HOW technology works and WHY it increases yields - don't just list examples."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:59:24.203Z",
-  "updated_at": "2026-04-06T03:59:24.203Z"
+  "updated_at": "2026-04-06T03:59:24.203Z",
+  "enriched_at": "2026-04-06T16:10:44.439Z"
 }

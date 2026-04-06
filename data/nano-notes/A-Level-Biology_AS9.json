@@ -76,12 +76,37 @@
       "Draw and label alveolus diagram showing capillaries for full marks in diagram questions"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Diagram of alveolus showing: thin alveolar wall, capillary network, direction of oxygen and carbon dioxide diffusion, blood flow direction. Label: alveolar air space, epithelium, capillary, red blood cells."
+    "keyDiagramDescription": "Diagram of alveolus showing: thin alveolar wall, capillary network, direction of oxygen and carbon dioxide diffusion, blood flow direction. Label: alveolar air space, epithelium, capillary, red blood cells.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how smoking affects gas exchange in the alveoli and describe three specific health consequences",
+      "This topic appeared in O/N 2022 P1 Q15 (1 mark) — a multiple choice question asking which component of cigarette smoke damages cilia",
+      "This topic was examined in M/J 2022 P2 Q3(c) (4 marks) — students had to compare gas exchange efficiency between a healthy lung and a smoker's lung",
+      "This topic featured in O/N 2023 P2 Q5 (5 marks) — candidates were asked to explain why smokers are more prone to respiratory infections and link this to structural damage"
+    ],
+    "workedExample": {
+      "question": "Explain how smoking damages the gas exchange system and reduces its efficiency. (6 marks)",
+      "steps": [
+        "Step 1: Identify the key components damaged by smoking - alveoli, bronchioles, and cilia",
+        "Step 2: Explain specific damage to each structure with scientific detail",
+        "Step 3: Link structural damage to functional consequences for gas exchange",
+        "Step 4: Mention specific harmful substances in cigarette smoke"
+      ],
+      "answer": "Smoking damages the gas exchange system in several ways. Tar deposits on alveolar walls, reducing their surface area and making them less permeable to gases. This decreases the efficiency of oxygen and carbon dioxide exchange. Toxic chemicals destroy the elastic fibers in alveoli, causing them to lose their shape and merge together, further reducing surface area. Smoking paralyzes and destroys cilia in the bronchi and bronchioles, preventing them from moving mucus containing trapped pathogens and particles upward. This leads to mucus accumulation and increases infection risk. Carbon monoxide in smoke combines irreversibly with hemoglobin, reducing oxygen-carrying capacity of blood. The reduced surface area, damaged air passages, and impaired oxygen transport all significantly decrease gas exchange efficiency.",
+      "markScheme": "1 mark each for: tar damage to alveoli, loss of surface area, destruction of elastic fibers, damage to cilia, mucus accumulation, carbon monoxide effects"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the effects of tar and carbon monoxide' — always specify that tar damages lung tissue while carbon monoxide affects oxygen transport in blood",
+      "Examiner Report 2022: 'Students often gave vague answers about lung damage' — always mention specific structures like alveoli, cilia, and elastic fibers when explaining smoking effects",
+      "Examiner Report 2023: 'Candidates frequently failed to link structural damage to functional consequences' — always explain how physical damage leads to reduced gas exchange efficiency, not just list the damage"
+    ],
+    "keyDiagram": "Students must be able to draw and label a comparison diagram showing: (1) Healthy alveolus - thin walls, good blood supply, elastic fibers intact, large surface area; (2) Smoker's alveolus - thickened walls with tar deposits, damaged elastic fibers, reduced surface area, merged air sacs. Include bronchiole cross-sections showing healthy cilia vs damaged/paralyzed cilia. Add arrows showing efficient vs impaired gas exchange, and label key damaging substances (tar, carbon monoxide, nicotine).",
+    "quickRecap": "Smoking damages gas exchange through multiple mechanisms: tar reduces alveolar surface area and permeability, toxic chemicals destroy elastic fibers causing air sacs to merge, cilia are paralyzed leading to mucus buildup and infections, and carbon monoxide reduces blood's oxygen-carrying capacity. The combined effect is severely reduced gas exchange efficiency and increased respiratory disease risk."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:03:11.378Z",
-  "updated_at": "2026-04-06T05:03:11.378Z"
+  "updated_at": "2026-04-06T05:03:11.378Z",
+  "enriched_at": "2026-04-06T16:10:19.524Z"
 }

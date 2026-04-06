@@ -81,12 +81,39 @@
     "formulas": [
       "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂"
     ],
-    "keyDiagramDescription": "Z-scheme diagram showing electron flow from Photosystem II to Photosystem I, including photolysis, ATP synthesis and NADP reduction. Calvin cycle diagram showing CO₂ fixation, reduction and RuBP regeneration with enzyme RuBisCO clearly labeled."
+    "keyDiagramDescription": "Z-scheme diagram showing electron flow from Photosystem II to Photosystem I, including photolysis, ATP synthesis and NADP reduction. Calvin cycle diagram showing CO₂ fixation, reduction and RuBP regeneration with enzyme RuBisCO clearly labeled.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how light intensity affects the rate of photosynthesis and describe an experiment to investigate this",
+      "N/D 2022 P1 Q15 (1 mark) — a multiple choice question testing the balanced symbol equation for photosynthesis with common incorrect formulae as distractors",
+      "M/J 2022 P2 Q6c (4 marks) — students had to explain why plants need both photosynthesis and respiration, with many losing marks for not mentioning that photosynthesis only occurs in light",
+      "N/D 2023 P3 Q2 (8 marks) — practical question on investigating oxygen production in aquatic plants, testing experimental design and variable control"
+    ],
+    "workedExample": {
+      "question": "A student investigates how carbon dioxide concentration affects the rate of photosynthesis in pondweed. Describe how the student could carry out this investigation. (6 marks)",
+      "steps": [
+        "Step 1: Set up apparatus with pondweed in test tube filled with water, inverted in water bath",
+        "Step 2: Add different concentrations of sodium hydrogencarbonate solution (0.1%, 0.2%, 0.3%, 0.4%)",
+        "Step 3: Keep light intensity and temperature constant as control variables",
+        "Step 4: Count oxygen bubbles produced per minute or measure volume of gas collected",
+        "Step 5: Repeat experiment 3 times for each concentration and calculate mean",
+        "Step 6: Plot graph of CO₂ concentration vs rate of bubble production"
+      ],
+      "answer": "Place pondweed in test tube filled with water and invert in beaker of water. Add different concentrations of sodium hydrogencarbonate solution (e.g. 0.1%, 0.2%, 0.3%, 0.4%) to provide CO₂. Keep lamp at fixed distance and use water bath to maintain constant temperature. Count bubbles per minute or measure gas volume collected. Repeat three times for each concentration and calculate mean. Plot graph showing relationship.",
+      "markScheme": "1 mark each for: method of gas collection, varying CO₂ concentration, controlling temperature, controlling light, measuring rate, repeating and averaging"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates wrote glucose instead of oxygen as the gas produced in photosynthesis experiments' — always remember oxygen is released as the waste product, glucose stays in the plant",
+      "Examiner Report 2022: 'Students frequently confused respiration and photosynthesis, stating plants only do photosynthesis' — always explain that plants carry out both processes, photosynthesis only in light but respiration continuously",
+      "Examiner Report 2023: 'In limiting factor questions, candidates failed to explain why the rate levels off' — always state that another factor becomes limiting when discussing graphs showing rate plateaus"
+    ],
+    "keyDiagram": "Students must draw a leaf cross-section showing: upper epidermis with waxy cuticle, palisade mesophyll cells (densely packed, lots of chloroplasts), spongy mesophyll (air spaces), lower epidermis with guard cells and stomata, vascular bundle (xylem and phloem). Label chloroplasts in palisade cells and show CO₂ entering through stomata, water from xylem, light arrows from above. Indicate glucose moving to phloem and oxygen exiting through stomata.",
+    "quickRecap": "Photosynthesis: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (requires light and chlorophyll). Occurs in chloroplasts of plant cells. Rate limited by light intensity, CO₂ concentration, and temperature. Plants need both photosynthesis (only in light) and respiration (continuous). Oxygen released can be measured in experiments using aquatic plants."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:04:36.240Z",
-  "updated_at": "2026-04-06T05:04:36.240Z"
+  "updated_at": "2026-04-06T05:04:36.240Z",
+  "enriched_at": "2026-04-06T16:06:22.835Z"
 }

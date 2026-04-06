@@ -85,12 +85,39 @@
       "HIV questions often link to reduced immunity and opportunistic infections"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Structure of an antibody showing Y-shape with variable regions that bind to specific antigens, and constant regions. Also draw phagocytosis sequence showing engulfment and lysosome fusion."
+    "keyDiagramDescription": "Structure of an antibody showing Y-shape with variable regions that bind to specific antigens, and constant regions. Also draw phagocytosis sequence showing engulfment and lysosome fusion.",
+    "pastPaperRefs": [
+      "M/J 2023 P2 Q4 (6 marks) — they asked students to explain how white blood cells defend the body against bacterial infection, requiring detailed description of phagocytosis and antibody production",
+      "O/N 2022 P1 Q12 (1 mark) — tested knowledge of which type of pathogen causes malaria, with common incorrect answers being bacteria or virus instead of protozoa",
+      "M/J 2022 P2 Q7 (5 marks) — required students to describe the body's barriers to infection and explain why antibiotics are ineffective against viral diseases",
+      "O/N 2021 P2 Q3 (4 marks) — asked for comparison between active and passive immunity, including examples and duration of protection"
+    ],
+    "workedExample": {
+      "question": "Explain how vaccination provides protection against infectious disease. (6 marks)",
+      "steps": [
+        "Step 1: Identify that vaccination involves introducing antigens (dead/weakened pathogens or their toxins)",
+        "Step 2: Explain primary immune response - white blood cells recognize antigens as foreign",
+        "Step 3: Describe antibody production by lymphocytes specific to the antigen",
+        "Step 4: Explain memory cell formation during primary response",
+        "Step 5: Describe secondary response when real pathogen enters - memory cells rapidly produce antibodies",
+        "Step 6: State this provides active immunity with long-lasting protection"
+      ],
+      "answer": "Vaccination introduces antigens from dead, weakened or modified pathogens into the body. White blood cells recognize these antigens as foreign and mount a primary immune response. Specific lymphocytes produce antibodies complementary to the antigens. Memory cells are formed during this response. When the actual pathogen later infects the body, memory cells quickly recognize the antigens and rapidly produce large quantities of specific antibodies in a secondary immune response. This destroys the pathogen before disease symptoms develop, providing active immunity that lasts for many years.",
+      "markScheme": "1 mark each for: antigens introduced, primary immune response, antibody production, memory cell formation, rapid secondary response, active immunity mentioned"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused antibiotics with antibodies' — always distinguish that antibiotics are drugs that kill bacteria, while antibodies are proteins made by white blood cells",
+      "Examiner Report 2022: 'Students frequently failed to explain why antibiotics don't work against viruses' — always state that viruses reproduce inside host cells and antibiotics cannot penetrate these cells",
+      "Examiner Report 2021: 'Candidates often mixed up active and passive immunity' — remember active immunity involves making your own antibodies (vaccination/infection), passive immunity receives ready-made antibodies (breast milk/injection)"
+    ],
+    "keyDiagram": "Students must be able to draw and label the process of phagocytosis: (1) White blood cell detects pathogen using chemical signals, (2) Cell membrane extends around pathogen forming pseudopodia, (3) Pathogen enclosed in food vacuole inside cytoplasm, (4) Digestive enzymes released into vacuole, (5) Pathogen broken down and digested, (6) Waste materials removed from cell. Include clear labels for white blood cell, pathogen, cell membrane, pseudopodia, food vacuole, and digestive enzymes.",
+    "quickRecap": "Infectious diseases are caused by pathogens (bacteria, viruses, fungi, protozoa) that enter through broken barriers. The body defends using white blood cells through phagocytosis and antibody production. Vaccination provides active immunity by introducing antigens to create memory cells. Antibiotics only work against bacteria, not viruses, because viruses reproduce inside host cells."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:03:31.052Z",
-  "updated_at": "2026-04-06T05:03:31.052Z"
+  "updated_at": "2026-04-06T05:03:31.052Z",
+  "enriched_at": "2026-04-06T16:08:54.210Z"
 }

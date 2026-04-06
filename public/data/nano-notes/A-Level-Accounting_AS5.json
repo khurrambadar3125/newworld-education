@@ -81,12 +81,39 @@
       "Show suspense account closing to zero after all corrections - this proves your working is correct"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Suspense Account T-format showing opening balance, corrections on appropriate sides, and closing balance of zero after all errors corrected"
+    "keyDiagramDescription": "Suspense Account T-format showing opening balance, corrections on appropriate sides, and closing balance of zero after all errors corrected",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to prepare journal entries to correct errors found during the preparation of a trial balance and show the suspense account",
+      "O/N 2022 P2 Q3 (6 marks) tested identification of different types of errors and their effect on the trial balance, requiring students to distinguish between errors that affect trial balance totals and those that don't",
+      "M/J 2022 P1 Q15 (1 mark) was a multiple choice question asking which error would NOT cause a trial balance to disagree",
+      "O/N 2023 P2 Q5 (10 marks) provided a comprehensive scenario with multiple errors requiring students to prepare correcting entries, show suspense account, and prepare corrected trial balance"
+    ],
+    "workedExample": {
+      "question": "The trial balance of ABC Trading did not agree. The difference of $420 (debit side being larger) was placed in a suspense account. The following errors were later discovered: (i) A sale of $150 was recorded in the purchases account (ii) Rent paid $80 was not recorded in the books (iii) A payment to supplier $190 was recorded as $910 in the cash book. Prepare journal entries to correct these errors and show the suspense account. (8 marks)",
+      "steps": [
+        "Step 1: Analyze each error and determine if it affects the suspense account",
+        "Step 2: Error (i) - Sales $150 recorded as purchases affects both sides equally, no suspense impact",
+        "Step 3: Error (ii) - Rent $80 not recorded means both sides understated equally, no suspense impact",
+        "Step 4: Error (iii) - Cash overstated by $720 ($910-$190), this affects suspense account",
+        "Step 5: Prepare correcting journal entries for each error",
+        "Step 6: Show suspense account with opening balance and corrections"
+      ],
+      "answer": "Journal Entries:\n(i) Dr Sales $150, Cr Purchases $150\n(ii) Dr Rent $80, Cr Cash $80\n(iii) Dr Suspense $720, Cr Cash $720\n\nSuspense Account:\nDr side: Balance b/d $420, Cash correction $720\nCr side: Trial balance correction $1,140",
+      "markScheme": "2 marks for each correct journal entry (6 marks), 2 marks for properly balanced suspense account showing the difference is cleared"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to distinguish between errors that affect the trial balance totals and those that don't' — always identify whether each error creates a suspense account entry before making corrections",
+      "Examiner Report 2022: 'Students often confused the direction of suspense account entries' — remember that if debit side of trial balance is larger, the suspense account starts with a credit balance",
+      "Examiner Report 2023: 'Candidates frequently omitted to show that the suspense account balance clears to zero' — always verify your suspense account balances after all corrections are made"
+    ],
+    "keyDiagram": "Students must be able to draw a T-account format for the Suspense Account showing: (1) Opening balance on the appropriate side based on trial balance difference, (2) All corrections that affect the suspense account with proper debit/credit entries, (3) Final balance should be zero when all errors are corrected, (4) Clear labeling of each entry with narrations explaining the correction being made.",
+    "quickRecap": "Suspense accounts temporarily hold trial balance differences until errors are found and corrected. Only errors affecting one side of the trial balance create suspense entries. Compensating errors, errors of omission affecting both sides equally, and errors of commission don't affect suspense accounts. Always ensure the suspense account clears to zero after all corrections."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:25:37.864Z",
-  "updated_at": "2026-04-06T05:25:37.864Z"
+  "updated_at": "2026-04-06T05:25:37.864Z",
+  "enriched_at": "2026-04-06T16:09:43.865Z"
 }

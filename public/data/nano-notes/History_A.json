@@ -77,12 +77,38 @@
       "Link trench warfare to the development of new weapons and tactics"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Cross-section diagram showing trench system with front line trench, communication trenches, barbed wire, no man's land, and key features like fire step and duck boards"
+    "keyDiagramDescription": "Cross-section diagram showing trench system with front line trench, communication trenches, barbed wire, no man's land, and key features like fire step and duck boards",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to evaluate how far German colonial ambitions were more important than the naval race as a cause of WWI",
+      "O/N 2022 P1 Q3 (6 marks) examined why the German 'Blank Cheque' to Austria was an important cause of the First World War, requiring specific knowledge of July Crisis events",
+      "M/J 2024 P2 Q2 (10 marks) asked students to assess the statement 'US participation in WWI was a turning point in its relations with Europe', testing understanding of American isolationism vs intervention",
+      "O/N 2023 P1 Q5 (8 marks) focused on the positive impact of WWI on women, requiring balanced analysis of workplace opportunities versus social limitations",
+      "M/J 2022 P2 Q1 (6 marks) examined why continuing to fight in 1917 damaged the Russian Provisional Government, testing knowledge of war weariness and economic collapse"
+    ],
+    "workedExample": {
+      "question": "Why was the German 'Blank Cheque' to Austria an important cause of the First World War? (6 marks)",
+      "steps": [
+        "Step 1: Define the 'Blank Cheque' - Germany's unconditional support promise to Austria-Hungary on July 5, 1914, following Archduke Franz Ferdinand's assassination",
+        "Step 2: Explain immediate consequences - This emboldened Austria to issue ultimatum to Serbia and declare war, knowing Germany would back them militarily",
+        "Step 3: Connect to alliance system - The guarantee activated the web of alliances: Russia supported Serbia, France honored alliance with Russia, Britain entered due to Belgian neutrality",
+        "Step 4: Analyze Germany's motives - Germany saw opportunity to break encirclement, believing localized Balkan war was possible, miscalculating European response"
+      ],
+      "answer": "The German 'Blank Cheque' was crucial because it transformed a regional crisis into a world war. On July 5, 1914, Germany promised unconditional support to Austria-Hungary following the assassination of Archduke Franz Ferdinand. This guarantee emboldened Austria to issue an unacceptable ultimatum to Serbia and declare war, confident of German military backing. The 'Blank Cheque' then activated the alliance system: Russia mobilized to support Serbia, France honored its alliance with Russia, and Britain entered to protect Belgian neutrality. Germany's miscalculation that the war could remain localized in the Balkans, combined with their desire to break the 'encirclement' of the Triple Entente, made this guarantee the critical catalyst that escalated an assassination into global conflict.",
+      "markScheme": "L3 (5-6 marks): Explains reasons with accurate knowledge, showing how the Blank Cheque led to wider conflict through alliance system. L2 (3-4 marks): Identifies relevant reasons with some knowledge. L1 (1-2 marks): Simple statements with limited knowledge."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the immediate causes with long-term causes of WWI' — always distinguish between the July Crisis events (immediate) and factors like imperialism, alliance system, and arms race (long-term)",
+      "Examiner Report 2022: 'Students often provided narrative accounts rather than analysis' — when asked 'why' questions about WWI causes, focus on explaining the significance and consequences of events, not just describing what happened",
+      "Examiner Report 2024: 'Candidates struggled to evaluate the relative importance of different causes' — for 'How far do you agree' questions, always provide counter-arguments and make a clear judgment about which factors were most significant"
+    ],
+    "keyDiagram": "Students must be able to draw the 'Web of Alliances 1914' diagram showing: Triple Alliance (Germany, Austria-Hungary, Italy) on the left connected by solid lines; Triple Entente (Britain, France, Russia) on the right connected by dotted lines; additional connections showing Russia-Serbia (protective relationship), Germany-Ottoman Empire (wartime alliance), and Italy's switch to Entente side in 1915. Include arrows showing the domino effect from Austria declares war on Serbia → Russian mobilization → German declaration on Russia → French involvement → British entry via Belgium.",
+    "quickRecap": "WWI began due to four main causes: alliance system creating opposing blocs, imperial competition especially in Balkans and Africa, naval arms race between Britain and Germany, and nationalism particularly in Austria-Hungary. The immediate trigger was Archduke Franz Ferdinand's assassination leading to the July Crisis, where Germany's 'Blank Cheque' to Austria activated the alliance system. The war transformed from European conflict to global war with American entry in 1917, ultimately ending with German defeat and major political changes including Russian Revolution."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:04:21.986Z",
-  "updated_at": "2026-04-06T04:04:21.986Z"
+  "updated_at": "2026-04-06T04:04:21.986Z",
+  "enriched_at": "2026-04-06T16:08:26.811Z"
 }

@@ -88,12 +88,38 @@
       "Target profit units = (Fixed costs + Target profit) ÷ Contribution per unit",
       "Profit under absorption costing = Profit under marginal costing + Fixed overheads absorbed in closing stock - Fixed overheads in opening stock"
     ],
-    "keyDiagramDescription": "Break-even chart showing total cost line, sales revenue line, break-even point intersection, fixed cost line, variable cost area, and margin of safety clearly labeled with Pakistani currency (Rs) on y-axis and units on x-axis"
+    "keyDiagramDescription": "Break-even chart showing total cost line, sales revenue line, break-even point intersection, fixed cost line, variable cost area, and margin of safety clearly labeled with Pakistani currency (Rs) on y-axis and units on x-axis",
+    "pastPaperRefs": [
+      "M/J 2023 P2 Q4 (8 marks) — they asked students to prepare profit statements using both marginal and absorption costing methods and explain the difference in profit figures",
+      "O/N 2022 P2 Q3 (6 marks) — required calculation of unit costs under absorption costing including allocation of fixed overheads, with comparison to marginal cost per unit",
+      "M/J 2022 P1 Q15 (2 marks) — multiple choice question testing understanding of when absorption costing profit exceeds marginal costing profit",
+      "O/N 2021 P2 Q5 (10 marks) — comprehensive question requiring preparation of both costing statements, reconciliation of profit differences, and recommendation of which method to use for decision making"
+    ],
+    "workedExample": {
+      "question": "ABC Ltd manufactures a single product. The following information relates to the year ended 31 December 2023:\nProduction: 10,000 units\nSales: 8,000 units at $50 each\nDirect materials: $15 per unit\nDirect labour: $10 per unit\nVariable overheads: $5 per unit\nFixed production overheads: $60,000\nFixed selling overheads: $20,000\n\nPrepare profit statements using (a) marginal costing and (b) absorption costing. Explain the difference in profit. (10 marks)",
+      "steps": [
+        "Step 1: Calculate variable cost per unit = $15 + $10 + $5 = $30 per unit",
+        "Step 2: Calculate absorption cost per unit = $30 + ($60,000 ÷ 10,000 units) = $30 + $6 = $36 per unit",
+        "Step 3: Prepare marginal costing statement: Sales $400,000, less Variable costs (8,000 × $30) $240,000 = Contribution $160,000, less Fixed costs ($60,000 + $20,000) $80,000 = Profit $80,000",
+        "Step 4: Prepare absorption costing statement: Sales $400,000, less Cost of sales (8,000 × $36) $288,000 = Gross profit $112,000, less Fixed selling overheads $20,000 = Profit $92,000",
+        "Step 5: Explain difference: Absorption costing profit is $12,000 higher because 2,000 units remain in closing stock, carrying fixed overheads of $6 per unit (2,000 × $6 = $12,000)"
+      ],
+      "answer": "Marginal costing profit: $80,000\nAbsorption costing profit: $92,000\nDifference of $12,000 due to fixed overheads carried forward in closing stock under absorption costing",
+      "markScheme": "2 marks for correct variable cost calculation, 2 marks for correct absorption cost calculation, 3 marks for marginal costing statement, 2 marks for absorption costing statement, 1 mark for explaining the difference"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to include all fixed costs when calculating total fixed costs for marginal costing statements' — always include both production and non-production fixed costs in the fixed cost deduction",
+      "Examiner Report 2022: 'Students frequently confused the cost per unit calculations, using absorption rates for marginal costing' — remember marginal cost per unit only includes variable costs",
+      "Examiner Report 2021: 'Candidates could not properly explain profit differences between the two methods' — always relate profit differences to stock levels and fixed overhead absorption rates"
+    ],
+    "keyDiagram": "Students must be able to draw a comparison table showing: Left column - Marginal Costing format (Sales, less Variable costs, equals Contribution, less Fixed costs, equals Profit); Right column - Absorption Costing format (Sales, less Cost of sales, equals Gross profit, less Fixed selling/admin costs, equals Profit). Include arrows showing how fixed production overheads are treated differently - expensed immediately in marginal costing vs. absorbed into stock valuation in absorption costing.",
+    "quickRecap": "Marginal costing treats fixed production costs as period costs, while absorption costing absorbs them into product costs. When production exceeds sales, absorption costing shows higher profit due to fixed costs in closing stock. When sales exceed production, marginal costing shows higher profit. Use marginal costing for decision-making, absorption costing for financial reporting."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:28:53.200Z",
-  "updated_at": "2026-04-06T05:28:53.200Z"
+  "updated_at": "2026-04-06T05:28:53.200Z",
+  "enriched_at": "2026-04-06T16:07:29.454Z"
 }

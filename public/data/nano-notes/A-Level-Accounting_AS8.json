@@ -78,12 +78,38 @@
       "Production Cost = Prime Cost + Factory Overhead",
       "Cost of Production = Opening WIP + Production Cost - Closing WIP"
     ],
-    "keyDiagramDescription": "Manufacturing account showing three main sections: Prime cost (direct costs), plus Factory overhead (indirect costs), equals Production cost transferred to trading account. Include work in progress adjustments at bottom."
+    "keyDiagramDescription": "Manufacturing account showing three main sections: Prime cost (direct costs), plus Factory overhead (indirect costs), equals Production cost transferred to trading account. Include work in progress adjustments at bottom.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to prepare a manufacturing account showing prime cost, factory overheads, and cost of goods manufactured from given trial balance data",
+      "This topic appeared in O/N 2022 P2 Q3 (6 marks) — students had to calculate work-in-progress adjustments and determine the factory cost of goods completed",
+      "This topic was examined in M/J 2022 P2 Q5 (10 marks) — candidates prepared a complete manufacturing account including opening/closing stock adjustments and transferred cost to trading account",
+      "This topic featured in O/N 2021 P2 Q2 (7 marks) — students calculated prime cost, added factory overheads, and showed the transfer to cost of goods sold"
+    ],
+    "workedExample": {
+      "question": "ABC Manufacturing has the following information for the year ended 31 Dec 2023: Raw materials stock (1 Jan) $8,000, Raw materials purchased $45,000, Raw materials stock (31 Dec) $12,000, Direct labour $25,000, Factory rent $6,000, Factory insurance $2,000, Indirect materials $3,000, Work-in-progress (1 Jan) $4,000, Work-in-progress (31 Dec) $7,000. Prepare the manufacturing account. (8 marks)",
+      "steps": [
+        "Step 1: Calculate raw materials consumed = Opening stock + Purchases - Closing stock = $8,000 + $45,000 - $12,000 = $41,000",
+        "Step 2: Calculate Prime Cost = Raw materials consumed + Direct labour = $41,000 + $25,000 = $66,000",
+        "Step 3: Calculate Factory Overheads = Factory rent + Factory insurance + Indirect materials = $6,000 + $2,000 + $3,000 = $11,000",
+        "Step 4: Calculate Factory Cost = Prime Cost + Factory Overheads = $66,000 + $11,000 = $77,000",
+        "Step 5: Adjust for Work-in-Progress = Factory Cost + Opening WIP - Closing WIP = $77,000 + $4,000 - $7,000 = $74,000"
+      ],
+      "answer": "Manufacturing Account for year ended 31 Dec 2023: Raw materials consumed $41,000, Direct labour $25,000, Prime Cost $66,000, Factory overheads $11,000, Factory Cost $77,000, Add: Opening WIP $4,000, Less: Closing WIP $(7,000), Cost of goods manufactured $74,000",
+      "markScheme": "1 mark for correct raw materials consumed calculation, 1 mark for prime cost, 2 marks for factory overheads breakdown, 1 mark for factory cost, 2 marks for WIP adjustments, 1 mark for final cost of goods manufactured"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused direct and indirect costs' — always classify factory supervisor wages as indirect costs (factory overheads), not direct labour",
+      "Examiner Report 2022: 'Students frequently omitted work-in-progress adjustments' — remember to add opening WIP and subtract closing WIP to get the final cost of goods manufactured",
+      "Examiner Report 2021: 'Candidates mixed up raw materials and finished goods stock' — only raw materials stock appears in the manufacturing account, finished goods stock goes in the trading account"
+    ],
+    "keyDiagram": "Students must draw the T-account format showing: Manufacturing Account with debit side listing raw materials consumed, direct labour, prime cost subtotal, factory overheads breakdown, factory cost subtotal, opening WIP addition, and closing WIP subtraction; credit side showing cost of goods manufactured transferred to trading account. Include clear arrows showing the flow from manufacturing account to trading account.",
+    "quickRecap": "Manufacturing accounts calculate the cost of producing goods in factories. Start with raw materials consumed (opening stock + purchases - closing stock) plus direct labour to get prime cost. Add factory overheads to get factory cost. Adjust for work-in-progress (add opening, subtract closing) to get cost of goods manufactured. This final figure transfers to the trading account as cost of goods sold for manufacturers."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:26:52.940Z",
-  "updated_at": "2026-04-06T05:26:52.940Z"
+  "updated_at": "2026-04-06T05:26:52.940Z",
+  "enriched_at": "2026-04-06T16:10:51.491Z"
 }

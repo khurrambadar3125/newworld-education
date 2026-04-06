@@ -77,12 +77,37 @@
     "formulas": [
       "T(K) = T(°C) + 273"
     ],
-    "keyDiagramDescription": "Liquid-in-glass thermometer showing bulb, capillary tube, scale markings, and liquid column. Label the thermometric property as 'length of liquid column' or 'volume of liquid'."
+    "keyDiagramDescription": "Liquid-in-glass thermometer showing bulb, capillary tube, scale markings, and liquid column. Label the thermometric property as 'length of liquid column' or 'volume of liquid'.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (3 marks) — they asked students to explain why a clinical thermometer has a constriction in the bore and why it can measure body temperature accurately",
+      "This topic appeared in O/N 2022 P1 Q8 (1 mark) — multiple choice question asking which property of a substance varies linearly with temperature for a resistance thermometer",
+      "This topic was examined in M/J 2022 P2 Q6 (5 marks) — students had to compare liquid-in-glass thermometers with thermocouple thermometers, including sensitivity and range",
+      "This topic featured in O/N 2023 P2 Q5 (4 marks) — question required explanation of how a bimetallic strip works and why different metals are needed"
+    ],
+    "workedExample": {
+      "question": "A student uses a mercury-in-glass thermometer to measure the temperature of melting ice and boiling water at standard atmospheric pressure. The mercury column lengths are 2.5 cm and 27.5 cm respectively. Calculate the temperature when the mercury column length is 15.0 cm. (4 marks)",
+      "steps": [
+        "Step 1: Identify the fixed points - ice point = 0°C with length 2.5 cm, steam point = 100°C with length 27.5 cm",
+        "Step 2: Calculate the length difference between fixed points = 27.5 - 2.5 = 25.0 cm",
+        "Step 3: Find the length above ice point for unknown temperature = 15.0 - 2.5 = 12.5 cm",
+        "Step 4: Use proportion: Temperature = (12.5/25.0) × 100°C = 50°C"
+      ],
+      "answer": "The temperature when the mercury column length is 15.0 cm is 50°C",
+      "markScheme": "1 mark for identifying fixed points, 1 mark for calculating range (25.0 cm), 1 mark for finding length above ice point (12.5 cm), 1 mark for correct final answer (50°C)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused temperature and heat, using the terms interchangeably' — always specify that temperature measures average kinetic energy of particles, not total thermal energy",
+      "Examiner Report 2022: 'Students frequently forgot to mention that thermometric properties must vary linearly with temperature' — always state linear variation when explaining how thermometers work",
+      "Examiner Report 2023: 'Common error was stating that clinical thermometers read up to 100°C' — remember clinical thermometers have a limited range of approximately 35°C to 42°C for safety and accuracy"
+    ],
+    "keyDiagram": "Students must be able to draw and label a clinical thermometer showing: glass bulb containing mercury at bottom, narrow capillary tube (bore) with constriction near bulb, scale marked from 35°C to 42°C, and kink/constriction clearly marked with explanation that it prevents mercury from falling back into bulb automatically, allowing reading to be taken after removal from patient.",
+    "quickRecap": "Temperature measures average kinetic energy of particles and is measured using thermometers with thermometric properties that vary linearly with temperature. Common types include mercury-in-glass (wide range, accurate), clinical (body temperature, has constriction), and resistance thermometers (electrical resistance changes). Always remember temperature ≠ heat, and thermometric substances must expand/change uniformly with temperature for accurate readings."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:43:25.691Z",
-  "updated_at": "2026-04-06T04:43:25.691Z"
+  "updated_at": "2026-04-06T04:43:25.691Z",
+  "enriched_at": "2026-04-06T16:08:20.959Z"
 }

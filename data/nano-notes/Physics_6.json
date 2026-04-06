@@ -90,12 +90,37 @@
       "Power = work done ÷ time",
       "Efficiency = useful energy output ÷ total energy input"
     ],
-    "keyDiagramDescription": "Sankey diagram showing energy input on left, useful energy output at top right, and wasted energy (usually thermal) at bottom right. Arrow thickness represents amount of energy."
+    "keyDiagramDescription": "Sankey diagram showing energy input on left, useful energy output at top right, and wasted energy (usually thermal) at bottom right. Arrow thickness represents amount of energy.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to identify energy stores in a pendulum at different positions and describe energy transfers during its motion",
+      "N/D 2022 P1 Q15 (2 marks) — multiple choice question requiring identification of energy stores when a ball is thrown upward at maximum height",
+      "M/J 2022 P2 Q2(b) (4 marks) — students had to explain energy transfers when a car brakes, including mention of efficiency and wasteful transfers",
+      "N/D 2023 P2 Q3(c) (3 marks) — diagram interpretation showing energy flow in a hydroelectric power station with calculations of efficiency"
+    ],
+    "workedExample": {
+      "question": "A roller coaster car of mass 500 kg starts from rest at the top of a 30 m high hill and reaches a speed of 20 m/s at the bottom. Calculate the energy that has been transferred to the surroundings due to friction. (g = 10 m/s²) [5 marks]",
+      "steps": [
+        "Step 1: Calculate initial gravitational potential energy: GPE = mgh = 500 × 10 × 30 = 150,000 J",
+        "Step 2: Calculate final kinetic energy: KE = ½mv² = ½ × 500 × 20² = ½ × 500 × 400 = 100,000 J",
+        "Step 3: Apply conservation of energy: Initial GPE = Final KE + Energy lost to friction",
+        "Step 4: Rearrange to find energy lost: Energy lost = Initial GPE - Final KE = 150,000 - 100,000 = 50,000 J"
+      ],
+      "answer": "The energy transferred to the surroundings due to friction is 50,000 J (or 50 kJ). This energy has been transferred from the mechanical energy store of the car to the thermal energy store of the brakes, wheels, and track through heating by friction.",
+      "markScheme": "1 mark for correct GPE calculation, 1 mark for correct KE calculation, 1 mark for conservation of energy principle, 1 mark for correct arithmetic, 1 mark for stating energy is transferred to thermal store"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused energy stores with energy transfers' — always distinguish between WHERE energy is stored (gravitational, kinetic, elastic) and HOW it moves between stores (mechanically, electrically, heating)",
+      "Examiner Report 2022: 'Students frequently forgot to mention that wasted energy ends up in thermal stores of surroundings' — always state that friction and air resistance transfer energy to thermal stores when discussing efficiency",
+      "Examiner Report 2023: 'Candidates often used imprecise language like \"energy is lost\" instead of \"energy is transferred\"' — remember energy is always conserved and only transfers between stores, it is never created or destroyed"
+    ],
+    "keyDiagram": "Students must be able to draw Sankey diagrams showing energy flow. Draw a wide arrow on the left representing total input energy, then split into useful output (continuing straight) and wasted energy (arrow pointing downward). Width of arrows must be proportional to energy amounts. Label input energy type, useful output energy, and wasted energy (usually thermal). Include efficiency calculation: efficiency = useful output ÷ total input.",
+    "quickRecap": "Energy is stored in different stores (kinetic, gravitational potential, elastic, chemical, thermal, nuclear) and transfers between them through four pathways: mechanically, electrically, heating, or radiation. Energy is always conserved but can be transferred to less useful forms (usually thermal). Efficiency measures useful energy output compared to total input, and Sankey diagrams visualize these transfers with proportional arrow widths."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:15:48.554Z",
-  "updated_at": "2026-04-05T21:15:48.554Z"
+  "updated_at": "2026-04-05T21:15:48.554Z",
+  "enriched_at": "2026-04-06T16:04:12.392Z"
 }

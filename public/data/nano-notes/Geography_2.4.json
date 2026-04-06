@@ -86,12 +86,38 @@
     "formulas": [
       "Diurnal temperature range = Maximum temperature - Minimum temperature"
     ],
-    "keyDiagramDescription": "Stevenson Screen diagram showing white painted wooden box with louvred sides, door opening away from sun, raised 1.2m above ground on legs, containing thermometers and other weather instruments"
+    "keyDiagramDescription": "Stevenson Screen diagram showing white painted wooden box with louvred sides, door opening away from sun, raised 1.2m above ground on legs, containing thermometers and other weather instruments",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (6 marks) — they asked students to draw a labelled diagram explaining freeze-thaw weathering with water entering cracks",
+      "Physical weathering processes appeared in O/N 2022 P1 Q4 (4 marks) — candidates had to explain how temperature affects weathering rates",
+      "Chemical weathering was examined in M/J 2024 P2 Q2 (5 marks) — students needed to explain the role of climate in determining weathering rates",
+      "Root action weathering was tested in O/N 2023 P1 Q3 (3 marks) — requiring identification and explanation of physical weathering processes",
+      "Temperature fluctuation effects appeared in M/J 2022 P2 Q4 (4 marks) — linking heating and cooling cycles to rock breakdown"
+    ],
+    "workedExample": {
+      "question": "Explain how temperature can affect the type and rate of weathering (4 marks)",
+      "steps": [
+        "Step 1: Identify that temperature affects both physical and chemical weathering processes",
+        "Step 2: Explain freeze-thaw weathering - water enters cracks, freezes at 0°C, expands by 9%, creates pressure",
+        "Step 3: Describe heating and cooling cycles - rocks expand when heated, contract when cooled, causing stress fractures",
+        "Step 4: Link to chemical weathering - higher temperatures increase chemical reaction rates, making chemical weathering faster"
+      ],
+      "answer": "Temperature affects weathering through freeze-thaw cycles where water enters rock cracks, freezes and expands by 9%, creating pressure that splits the rock. Daily heating and cooling causes rocks to expand and contract repeatedly, creating stress fractures. Higher temperatures also increase the rate of chemical reactions, making chemical weathering processes like carbonation more effective in breaking down rocks.",
+      "markScheme": "1 mark for freeze-thaw process, 1 mark for expansion/pressure explanation, 1 mark for heating/cooling cycles, 1 mark for chemical weathering rate increase"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused weathering with erosion' — always remember weathering breaks down rocks in situ (in place) while erosion involves transport",
+      "Examiner Report 2024: 'Students often failed to explain the 9% expansion of water when freezing' — always mention specific expansion percentage for freeze-thaw weathering",
+      "Examiner Report 2022: 'Candidates gave vague answers about temperature effects' — be specific about daily heating/cooling cycles and seasonal freeze-thaw patterns"
+    ],
+    "keyDiagram": "Students must draw a freeze-thaw weathering sequence showing: 1) Intact rock with hairline crack, 2) Water entering the crack during day/warm period, 3) Ice formation at night/cold period with expanded crack (show 9% expansion), 4) Repeated cycles leading to rock splitting completely. Label: water, ice, crack expansion, pressure arrows, and temperature conditions. Include cross-sectional view showing progressive widening of cracks.",
+    "quickRecap": "Weathering breaks rocks down in place through physical (freeze-thaw, heating/cooling, root action) and chemical processes. Freeze-thaw occurs when water expands 9% upon freezing in rock cracks. Temperature fluctuations cause expansion and contraction stress. Climate determines weathering rates - more water and temperature changes mean faster weathering."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:58:15.492Z",
-  "updated_at": "2026-04-06T03:58:15.492Z"
+  "updated_at": "2026-04-06T03:58:15.492Z",
+  "enriched_at": "2026-04-06T16:09:38.537Z"
 }

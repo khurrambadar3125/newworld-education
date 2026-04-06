@@ -84,12 +84,37 @@
       "Draw diagrams for interrupt handling and memory management for visual marks"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Interrupt handling cycle showing: 1) Interrupt signal received 2) Current state saved 3) Interrupt service routine executed 4) Original state restored. Also memory management diagram showing RAM divided into pages/frames with virtual memory extension to secondary storage."
+    "keyDiagramDescription": "Interrupt handling cycle showing: 1) Interrupt signal received 2) Current state saved 3) Interrupt service routine executed 4) Original state restored. Also memory management diagram showing RAM divided into pages/frames with virtual memory extension to secondary storage.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the difference between system software and application software, giving two examples of each",
+      "This topic appeared in O/N 2022 P2 Q2 (4 marks) — candidates had to describe the functions of an operating system and explain why it is essential for computer operation",
+      "This topic was examined in M/J 2022 P2 Q5 (5 marks) — students needed to explain the role of device drivers and why they are necessary for peripheral devices",
+      "This topic was tested in O/N 2023 P2 Q3 (3 marks) — they asked for the definition of utility software and two specific examples with their purposes"
+    ],
+    "workedExample": {
+      "question": "Explain what is meant by system software and describe three functions of an operating system. (6 marks)",
+      "steps": [
+        "Step 1: Define system software clearly - software that manages and controls computer hardware and provides a platform for other software to run",
+        "Step 2: Identify three key OS functions from: memory management, file management, process management, device management, user interface, security",
+        "Step 3: Explain each function with sufficient detail - what it does and why it's important",
+        "Step 4: Use appropriate technical terminology throughout"
+      ],
+      "answer": "System software is software that manages and controls the computer's hardware and provides a platform for application software to run. Three functions of an operating system are: (1) Memory management - allocates RAM to different programs and ensures they don't interfere with each other's memory space (2) File management - organizes files and folders on storage devices, handles file operations like saving, deleting and moving files (3) Process management - controls which programs run when, allocates processor time to different tasks and handles multitasking",
+      "markScheme": "1 mark for correct definition of system software, 1 mark for each correctly identified OS function (max 3), 1 mark for each adequate explanation of the function (max 3)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused system software with application software' — always clearly distinguish that system software manages hardware while application software performs user tasks",
+      "Examiner Report 2022: 'Candidates often gave vague descriptions of OS functions' — always provide specific details about what each function does, not just the name",
+      "Examiner Report 2023: 'Students frequently mixed up utility software examples' — ensure you can clearly explain what each utility does (antivirus, disk defragmenter, file compression etc.)"
+    ],
+    "keyDiagram": "Draw a layered diagram showing: Hardware (bottom layer), Operating System (middle layer managing hardware), and Application Software (top layer). Include arrows showing OS controls hardware and provides platform for applications. Add examples: Hardware (CPU, RAM, storage), OS functions (memory management, file management), Applications (word processor, games). This diagram demonstrates the relationship between system and application software.",
+    "quickRecap": "System software manages hardware and provides a platform for applications - includes operating systems, device drivers, and utilities. Operating systems have five key functions: memory management, file management, process management, device management, and providing user interface. Device drivers enable communication between OS and specific hardware. Utility software performs maintenance tasks like virus scanning and file compression."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:15:38.300Z",
-  "updated_at": "2026-04-06T05:15:38.300Z"
+  "updated_at": "2026-04-06T05:15:38.300Z",
+  "enriched_at": "2026-04-06T16:10:21.285Z"
 }

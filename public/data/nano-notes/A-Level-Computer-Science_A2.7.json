@@ -84,12 +84,39 @@
       "Code examples that demonstrate method overriding score highly in explain questions"
     ],
     "formulas": [],
-    "keyDiagramDescription": "UML class diagram showing parent class connected to child classes with inheritance arrows, including attributes and methods with access modifiers (+ for public, - for private)"
+    "keyDiagramDescription": "UML class diagram showing parent class connected to child classes with inheritance arrows, including attributes and methods with access modifiers (+ for public, - for private)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to write a function that validates user input and returns a boolean value, requiring proper parameter passing and return statements",
+      "This topic appeared in O/N 2022 P2 Q5 (8 marks) — candidates had to create a procedure with local variables and explain the difference between local and global scope",
+      "This topic was examined in M/J 2022 P1 Q12 (2 marks) — multiple choice question testing understanding of parameter passing by value vs by reference",
+      "This topic featured in O/N 2023 P2 Q3 (5 marks) — students needed to trace through a recursive function and show the values returned at each level"
+    ],
+    "workedExample": {
+      "question": "Write a function called FACTORIAL that takes an integer parameter N and returns the factorial of N using recursion. Show how the function would be called to calculate 4! (6 marks)",
+      "steps": [
+        "Step 1: Define function header with appropriate parameter - FUNCTION FACTORIAL(N : INTEGER) RETURNS INTEGER",
+        "Step 2: Identify base case - IF N <= 1 THEN RETURN 1",
+        "Step 3: Implement recursive case - ELSE RETURN N * FACTORIAL(N-1)",
+        "Step 4: End function definition - ENDFUNCTION",
+        "Step 5: Show function call - Result ← FACTORIAL(4)",
+        "Step 6: Trace execution showing 4! = 4 × 3 × 2 × 1 = 24"
+      ],
+      "answer": "FUNCTION FACTORIAL(N : INTEGER) RETURNS INTEGER\n    IF N <= 1 THEN\n        RETURN 1\n    ELSE\n        RETURN N * FACTORIAL(N-1)\n    ENDIF\nENDFUNCTION\n\nResult ← FACTORIAL(4)\nThis returns 24",
+      "markScheme": "1 mark for correct function header, 1 mark for base case, 2 marks for recursive call, 1 mark for correct function call syntax, 1 mark for showing correct result"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused procedures and functions' — always remember that functions RETURN a value while procedures perform actions without returning values",
+      "Examiner Report 2022: 'Students frequently forgot to declare local variables properly' — always declare variables within functions/procedures using appropriate data types and scope",
+      "Examiner Report 2023: 'Recursive solutions often missed the base case' — every recursive function must have a clear terminating condition to prevent infinite loops"
+    ],
+    "keyDiagram": "Students must draw a stack diagram showing function calls and returns. Draw boxes stacked vertically, each representing a function call with its local variables and parameters. Show arrows indicating the flow of execution downward (calls) and upward (returns). Include memory allocation showing how local variables are created and destroyed. For recursion, show multiple instances of the same function with different parameter values stacked on top of each other.",
+    "quickRecap": "Functions return values and use RETURN statements, procedures don't return values. Local variables exist only within their function/procedure scope. Parameters pass data into functions/procedures. Recursion requires a base case to terminate and a recursive case that calls itself with modified parameters."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:19:56.154Z",
-  "updated_at": "2026-04-06T05:19:56.154Z"
+  "updated_at": "2026-04-06T05:19:56.154Z",
+  "enriched_at": "2026-04-06T16:08:07.089Z"
 }

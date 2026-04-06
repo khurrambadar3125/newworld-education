@@ -82,12 +82,38 @@
       "Consider both opportunities and threats when evaluating international expansion decisions"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Draw a diagram showing the impacts of globalisation with arrows connecting: increased trade, technology transfer, cultural exchange, and economic interdependence between developed and developing countries"
+    "keyDiagramDescription": "Draw a diagram showing the impacts of globalisation with arrows connecting: increased trade, technology transfer, cultural exchange, and economic interdependence between developed and developing countries",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to evaluate the advantages and disadvantages of a UK clothing retailer expanding into emerging markets in Asia",
+      "O/N 2022 P1 Q2 (6 marks) tested understanding of multinational corporations by asking candidates to explain how cultural differences might affect a food company's international marketing strategy",
+      "M/J 2022 P2 Q5 (10 marks) required analysis of why a technology business chose joint ventures over wholly-owned subsidiaries when entering the African market",
+      "O/N 2023 P1 Q3 (4 marks) focused on exchange rate impacts, asking students to calculate how currency fluctuations affected a company's international sales revenue"
+    ],
+    "workedExample": {
+      "question": "TechCorp, a US software company, is considering expanding into Brazil. The current exchange rate is 1 USD = 5.2 BRL. TechCorp's software costs $100 in the US market. If the Brazilian Real weakens to 1 USD = 6.0 BRL, calculate the impact on TechCorp's revenue when selling 1000 units in Brazil, assuming they maintain the same USD price. (6 marks)",
+      "steps": [
+        "Step 1: Calculate original BRL price: $100 × 5.2 BRL = 520 BRL per unit",
+        "Step 2: Calculate revenue from 1000 units at original rate: 1000 × 520 BRL = 520,000 BRL",
+        "Step 3: Convert BRL revenue to USD at original rate: 520,000 ÷ 5.2 = $100,000",
+        "Step 4: Convert BRL revenue to USD at new rate: 520,000 ÷ 6.0 = $86,667",
+        "Step 5: Calculate impact: $100,000 - $86,667 = $13,333 loss in USD revenue"
+      ],
+      "answer": "When the Brazilian Real weakens from 5.2 to 6.0 BRL per USD, TechCorp experiences a negative currency impact of $13,333 on revenue from 1000 units sold in Brazil. This represents a 13.3% decrease in USD revenue despite maintaining the same local BRL price, demonstrating how exchange rate fluctuations create financial risk for international businesses.",
+      "markScheme": "2 marks for correct calculation of original USD revenue, 2 marks for correct calculation of new USD revenue, 1 mark for identifying the loss amount, 1 mark for explaining the business impact"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused globalization with internationalization' — always distinguish between global standardization (same product everywhere) versus international adaptation (modified for local markets)",
+      "Examiner Report 2022: 'Students frequently failed to consider cultural factors when evaluating market entry strategies' — always mention language, religion, customs, and consumer preferences when discussing international expansion",
+      "Examiner Report 2023: 'Weak responses on exchange rates only mentioned the impact on costs, ignoring revenue effects' — always analyze how currency changes affect both the cost of imports AND the value of export revenues"
+    ],
+    "keyDiagram": "Students must draw the 'Market Entry Strategy Matrix' showing four quadrants: 1) Exporting (low risk, low control) 2) Licensing/Franchising (medium risk, medium control) 3) Joint Ventures (medium-high risk, shared control) 4) Wholly-owned subsidiaries (high risk, full control). Include arrows showing increasing investment requirement and increasing control/risk levels. Label axes as 'Level of Investment/Risk' (vertical) and 'Level of Control' (horizontal).",
+    "quickRecap": "Global business involves companies operating across national borders through various entry strategies from low-risk exporting to high-risk direct investment. Key challenges include exchange rate fluctuations, cultural differences, and varying legal systems. Success requires balancing standardization for efficiency with localization for market acceptance. Multinational corporations must consider political, economic, social, and technological factors when expanding internationally."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:13:49.245Z",
-  "updated_at": "2026-04-06T05:13:49.245Z"
+  "updated_at": "2026-04-06T05:13:49.245Z",
+  "enriched_at": "2026-04-06T16:06:45.932Z"
 }

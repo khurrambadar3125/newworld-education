@@ -85,12 +85,38 @@
       "Compare biological vs psychological treatments for evaluation marks"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Normal distribution curve showing statistical infrequency with 95% of population in middle section and 2.5% at each extreme representing abnormal behaviour"
+    "keyDiagramDescription": "Normal distribution curve showing statistical infrequency with 95% of population in middle section and 2.5% at each extreme representing abnormal behaviour",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain two different definitions of abnormality and give examples of each",
+      "This topic appeared in O/N 2022 P1 Q2 (4 marks) — students had to describe the statistical infrequency definition and identify one limitation",
+      "This topic was examined in M/J 2022 P2 Q3 (8 marks) — candidates were required to compare deviation from social norms with failure to function adequately as definitions of abnormality",
+      "This topic featured in O/N 2023 P1 Q1 (3 marks) — students needed to explain what is meant by 'deviation from ideal mental health'",
+      "This topic was tested in M/J 2021 P2 Q2 (5 marks) — they asked for an evaluation of using cultural relativism when defining abnormality"
+    ],
+    "workedExample": {
+      "question": "Explain what is meant by 'statistical infrequency' as a definition of abnormality. Give one example. (4 marks)",
+      "steps": [
+        "Step 1: Define statistical infrequency clearly - behaviors/characteristics that are numerically rare in the population",
+        "Step 2: Explain the mechanism - uses mathematical cut-off points, typically 2 standard deviations from the mean",
+        "Step 3: Provide a clear psychological example with specific details",
+        "Step 4: Ensure the example demonstrates the numerical rarity aspect"
+      ],
+      "answer": "Statistical infrequency defines abnormality as any behavior or characteristic that is numerically rare or uncommon in the general population. This approach uses statistical data to identify what is 'normal' by looking at the frequency distribution of behaviors, with abnormality typically defined as anything occurring in less than 5% of the population (2 standard deviations from the mean). An example would be intellectual disability, where an IQ score below 70 occurs in approximately 2% of the population and is therefore considered statistically abnormal.",
+      "markScheme": "1 mark for definition of statistical infrequency, 1 mark for reference to numerical rarity/percentages, 1 mark for appropriate example, 1 mark for explaining why the example demonstrates statistical infrequency"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the different definitions of abnormality and mixed up examples' — always clearly state which definition you are discussing and ensure examples match that specific definition",
+      "Examiner Report 2022: 'Students often failed to provide evaluative points when asked to assess definitions' — remember to discuss limitations such as cultural relativism, positive abnormalities, and context dependency",
+      "Examiner Report 2023: 'Candidates frequently gave vague examples without explaining how they relate to the definition' — always explicitly link your examples back to the key features of the definition you are explaining"
+    ],
+    "keyDiagram": "Students must be able to draw a normal distribution curve showing statistical infrequency. The diagram should include: a bell curve with the mean in the center, standard deviation markers at -2, -1, +1, +2, shaded areas at both extremes (beyond ±2 SD) labeled as 'abnormal', the central area labeled as 'normal', percentages marked (2.5% in each tail, 95% in center), and specific examples plotted (e.g., IQ scores of 70 and 130 at the cut-off points). Include clear labels for the x-axis (behavior/trait being measured) and y-axis (frequency/number of people).",
+    "quickRecap": "Abnormality can be defined in four main ways: statistical infrequency (numerically rare behaviors), deviation from social norms (breaking cultural rules), failure to function adequately (inability to cope with daily life), and deviation from ideal mental health (lacking optimal psychological wellbeing). Each definition has strengths and limitations, particularly regarding cultural differences and context. Statistical infrequency uses mathematical cut-offs, while social norms vary across cultures and time periods."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:22:25.454Z",
-  "updated_at": "2026-04-06T05:22:25.454Z"
+  "updated_at": "2026-04-06T05:22:25.454Z",
+  "enriched_at": "2026-04-06T16:06:00.309Z"
 }

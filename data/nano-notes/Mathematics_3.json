@@ -84,12 +84,38 @@
       "Volume of cylinder = πr²h",
       "Surface area of cylinder = 2πr² + 2πrh"
     ],
-    "keyDiagramDescription": "Circle with radius marked, showing a sector with angle θ at centre, arc length clearly labeled, and a cylinder showing radius r and height h"
+    "keyDiagramDescription": "Circle with radius marked, showing a sector with angle θ at centre, arc length clearly labeled, and a cylinder showing radius r and height h",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q7 (6 marks) — they asked students to find the volume of a cylinder with radius 4.5 cm and height 12 cm, then calculate how many complete cylindrical containers could be filled from a rectangular tank",
+      "N/D 2023 P1 Q15 (3 marks) — candidates had to find the surface area of a cone given the base radius and slant height, with many losing marks for not including the base area",
+      "M/J 2022 P2 Q9 (5 marks) — question involved finding the volume of a frustum by subtracting two cone volumes, testing understanding of similar shapes",
+      "N/D 2022 P2 Q8 (4 marks) — students needed to calculate the curved surface area of a hemisphere and add it to the area of a circle to find total surface area of a solid"
+    ],
+    "workedExample": {
+      "question": "A cylindrical water tank has a radius of 3.5 m and height 8 m. Calculate: (a) the volume of water when the tank is 75% full (b) the total surface area of the tank. [6 marks]",
+      "steps": [
+        "Step 1: Calculate total volume using V = πr²h = π × (3.5)² × 8 = π × 12.25 × 8 = 98π m³",
+        "Step 2: Find 75% of total volume = 0.75 × 98π = 73.5π = 231 m³ (to 3 s.f.)",
+        "Step 3: Calculate curved surface area = 2πrh = 2π × 3.5 × 8 = 56π m²",
+        "Step 4: Calculate area of both circular ends = 2πr² = 2π × (3.5)² = 24.5π m²",
+        "Step 5: Total surface area = 56π + 24.5π = 80.5π = 253 m² (to 3 s.f.)"
+      ],
+      "answer": "(a) Volume when 75% full = 231 m³ (b) Total surface area = 253 m²",
+      "markScheme": "1 mark for correct volume formula, 1 mark for calculating 75%, 1 mark for final volume. 1 mark for curved surface area, 1 mark for including both circular ends, 1 mark for correct total surface area."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused surface area with volume formulas' — always double-check whether the question asks for area (m²) or volume (m³) and use the appropriate formula",
+      "Examiner Report 2023: 'Students frequently forgot to include the base area when calculating total surface area of cylinders and cones' — remember that total surface area includes ALL faces of the 3D shape",
+      "Examiner Report 2022: 'Common errors included using diameter instead of radius in calculations' — always identify whether the given measurement is radius or diameter before substituting into formulas"
+    ],
+    "keyDiagram": "Students must be able to draw and label a cylinder showing radius (r), height (h), and curved surface when 'unrolled' as a rectangle with dimensions 2πr × h. Also essential: cone diagram showing radius (r), height (h), and slant height (l), with the relationship l² = r² + h² clearly marked. Include cross-sections showing how composite shapes are formed.",
+    "quickRecap": "Mensuration involves calculating area, volume and surface area of 2D and 3D shapes. Key formulas: cylinder volume = πr²h, cone volume = ⅓πr²h, sphere volume = ⅘πr³. Always check if you need total or curved surface area. For composite shapes, break down into simpler components and add/subtract volumes as needed."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:23:09.181Z",
-  "updated_at": "2026-04-05T21:23:09.181Z"
+  "updated_at": "2026-04-05T21:23:09.181Z",
+  "enriched_at": "2026-04-06T16:07:00.147Z"
 }

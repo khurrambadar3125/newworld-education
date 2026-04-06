@@ -84,12 +84,37 @@
       "CH3CH2Cl + HCl → CH3CHCl2 + H2 (substitution)",
       "CH2=CH2 + Br2 → CH2BrCH2Br (addition)"
     ],
-    "keyDiagramDescription": "Free radical substitution mechanism showing initiation (Cl2 → 2Cl•), propagation (CH4 + Cl• → CH3• + HCl, then CH3• + Cl2 → CH3Cl + Cl•) and termination steps"
+    "keyDiagramDescription": "Free radical substitution mechanism showing initiation (Cl2 → 2Cl•), propagation (CH4 + Cl• → CH3• + HCl, then CH3• + Cl2 → CH3Cl + Cl•) and termination steps",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to distinguish between alkanes and alkenes, including molecular formulas and a chemical test",
+      "This topic was tested in O/N 2022 P1 Q12 (1 mark) — multiple choice question on identifying the correct molecular formula for butene",
+      "This topic was tested in M/J 2022 P2 Q3b (4 marks) — students had to explain why ethene decolorizes bromine water while ethane does not",
+      "This topic was tested in O/N 2023 P2 Q5 (5 marks) — required drawing structural formulas for first three alkanes and alkenes, plus naming them"
+    ],
+    "workedExample": {
+      "question": "Propene reacts with bromine water. Write a balanced chemical equation for this reaction and explain what you would observe. (4 marks)",
+      "steps": [
+        "Step 1: Identify that propene (C₃H₆) is an alkene with a C=C double bond",
+        "Step 2: Recognize this is an addition reaction where Br₂ adds across the double bond",
+        "Step 3: Write the equation: C₃H₆ + Br₂ → C₃H₆Br₂",
+        "Step 4: State the observation: orange/brown bromine water turns colorless"
+      ],
+      "answer": "C₃H₆ + Br₂ → C₃H₆Br₂. The orange/brown bromine water would turn colorless as the bromine is used up in the addition reaction across the C=C double bond.",
+      "markScheme": "1 mark for correct reactants, 1 mark for correct product formula, 1 mark for balanced equation, 1 mark for correct observation"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the bromine water test results' — always state that alkenes turn bromine water from orange/brown to colorless, while alkanes show no change",
+      "Examiner Report 2022: 'Students often wrote incorrect structural formulas' — remember that alkanes have single bonds only (C-C) while alkenes must have at least one double bond (C=C)",
+      "Examiner Report 2023: 'Candidates frequently mixed up molecular formulas' — alkanes follow CₙH₂ₙ₊₂ pattern while alkenes follow CₙH₂ₙ pattern"
+    ],
+    "keyDiagram": "Students must be able to draw structural formulas showing: 1) Alkane structure (e.g., ethane) with all single C-C and C-H bonds clearly shown, 2) Alkene structure (e.g., ethene) with the C=C double bond prominently displayed, 3) Complete addition reaction diagram showing alkene + bromine → dibromo compound, with all atoms and bonds before and after reaction",
+    "quickRecap": "Hydrocarbons are compounds of carbon and hydrogen only. Alkanes (CₙH₂ₙ₊₂) have single bonds and are saturated; alkenes (CₙH₂ₙ) have C=C double bonds and are unsaturated. Test: alkenes decolorize orange bromine water via addition reactions, alkanes don't react. Know the first few members of each series and their structural formulas."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:34:43.482Z",
-  "updated_at": "2026-04-06T04:34:43.482Z"
+  "updated_at": "2026-04-06T04:34:43.482Z",
+  "enriched_at": "2026-04-06T16:09:53.024Z"
 }

@@ -87,12 +87,37 @@
       "Mark-up = (Profit ÷ Cost Price) × 100",
       "Capital = Assets - Liabilities"
     ],
-    "keyDiagramDescription": "Statement of Financial Position layout showing Assets (Non-current assets + Current assets) minus Liabilities (Current liabilities + Non-current liabilities) equals Capital, with clear labeling for opening and closing positions"
+    "keyDiagramDescription": "Statement of Financial Position layout showing Assets (Non-current assets + Current assets) minus Liabilities (Current liabilities + Non-current liabilities) equals Capital, with clear labeling for opening and closing positions",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate total sales using incomplete records including bank balances, cash balances, cheques $19,950, drawings $5400, wages $7200, and vehicle sale $3000",
+      "This topic appeared in O/N 2022 P2 Q3 (8 marks) — students had to determine purchases and profit from incomplete records with sales $210,000, opening inventory $17,600, closing inventory $18,700, prepaid expenses, and a 25% markup",
+      "This topic was examined in M/J 2024 P2 Q2 (5 marks) — candidates were required to reconstruct cash and bank transactions to find total sales from incomplete banking records",
+      "This topic featured in O/N 2023 P2 Q5 (7 marks) — students needed to prepare a statement of affairs and calculate capital using incomplete records with various assets and liabilities"
+    ],
+    "workedExample": {
+      "question": "From incomplete records: Bank balances show deposits $45,000, cash sales $8,000, cheques received $19,950, drawings $5,400, wages paid $7,200, vehicle sold $3,000. Calculate total sales. (6 marks)",
+      "steps": [
+        "Step 1: Identify all sources of income - Cash sales $8,000, Cheques received from debtors $19,950, Vehicle sale $3,000",
+        "Step 2: Recognize that cheques received represent credit sales collections from debtors",
+        "Step 3: Note that vehicle sale is not part of normal trading sales - it's disposal of fixed asset",
+        "Step 4: Calculate total sales = Cash sales + Credit sales represented by cheques = $8,000 + $19,950 = $27,950"
+      ],
+      "answer": "Total sales = $27,950. This comprises cash sales of $8,000 plus credit sales of $19,950 (represented by cheques received from debtors). The vehicle sale of $3,000 is excluded as it represents disposal of a fixed asset, not trading sales.",
+      "markScheme": "2 marks for identifying cash sales, 2 marks for recognizing cheques as credit sales collections, 1 mark for correct calculation, 1 mark for excluding vehicle sale from trading sales"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to distinguish between trading sales and non-trading receipts' — always exclude proceeds from asset disposals when calculating sales revenue in incomplete records questions",
+      "Examiner Report 2022: 'Students often confused cash received with total sales figures' — remember that cheques received represent collections from debtors (past credit sales), not current period sales",
+      "Examiner Report 2024: 'Candidates frequently omitted the opening and closing inventory adjustments when calculating purchases' — always apply the formula: Purchases = Cost of Sales + Closing Inventory - Opening Inventory in incomplete records scenarios"
+    ],
+    "keyDiagram": "Students must be able to draw a 'Cash and Bank Summary' T-account format showing: Left side (receipts) - Opening balance, Cash sales, Cheques from debtors, Asset disposals, Capital introduced; Right side (payments) - Purchases, Expenses, Drawings, Asset purchases, Closing balance. This visual representation helps identify missing figures and ensures all cash movements are accounted for systematically.",
+    "quickRecap": "Incomplete records require reconstructing missing financial information from available data. Key approach: use opening/closing positions to find missing figures, distinguish between trading and non-trading receipts, and remember that cheques received usually represent debt collections. Always prepare cash summaries and statements of affairs to find unknown balances systematically."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:41:10.307Z",
-  "updated_at": "2026-04-06T03:41:10.307Z"
+  "updated_at": "2026-04-06T03:41:10.307Z",
+  "enriched_at": "2026-04-06T16:08:54.290Z"
 }

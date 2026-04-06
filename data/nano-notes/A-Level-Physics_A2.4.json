@@ -84,12 +84,39 @@
       "½mc² = (3/2)kT",
       "k = R/NA"
     ],
-    "keyDiagramDescription": "Molecular motion diagram showing gas molecules as point masses moving randomly in all directions within a cubic container, with arrows indicating elastic collisions with walls"
+    "keyDiagramDescription": "Molecular motion diagram showing gas molecules as point masses moving randomly in all directions within a cubic container, with arrows indicating elastic collisions with walls",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the kinetic theory assumptions and calculate pressure using the ideal gas equation",
+      "O/N 2022 P1 Q15 (1 mark) — multiple choice question testing understanding of which gases behave most like ideal gases at room temperature",
+      "M/J 2022 P2 Q3(b) (4 marks) — students had to explain why real gases deviate from ideal behavior at high pressure and low temperature",
+      "O/N 2021 P2 Q5 (5 marks) — calculation question involving changes in pressure, volume and temperature using combined gas laws",
+      "M/J 2021 P1 Q18 (1 mark) — tested understanding of the relationship between kinetic energy and absolute temperature"
+    ],
+    "workedExample": {
+      "question": "A sample of gas occupies 200 cm³ at 27°C and 1.5 × 10⁵ Pa. Calculate the volume occupied by the same gas at 127°C and 3.0 × 10⁵ Pa. (4 marks)",
+      "steps": [
+        "Step 1: Convert temperatures to Kelvin: T₁ = 27 + 273 = 300 K, T₂ = 127 + 273 = 400 K",
+        "Step 2: Identify known values: V₁ = 200 cm³, P₁ = 1.5 × 10⁵ Pa, P₂ = 3.0 × 10⁵ Pa, T₁ = 300 K, T₂ = 400 K",
+        "Step 3: Apply combined gas law: P₁V₁/T₁ = P₂V₂/T₂",
+        "Step 4: Rearrange for V₂: V₂ = (P₁V₁T₂)/(P₂T₁) = (1.5 × 10⁵ × 200 × 400)/(3.0 × 10⁵ × 300)",
+        "Step 5: Calculate: V₂ = (1.2 × 10¹⁰)/(9.0 × 10⁷) = 133 cm³"
+      ],
+      "answer": "The gas occupies 133 cm³ at the new conditions.",
+      "markScheme": "1 mark for temperature conversion, 1 mark for correct equation, 1 mark for substitution, 1 mark for final answer with units"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to convert Celsius to Kelvin' — always convert temperature to Kelvin (add 273) when using gas law equations",
+      "Examiner Report 2022: 'Students confused the assumptions of kinetic theory with properties of real gases' — clearly distinguish between ideal gas assumptions (no intermolecular forces, negligible molecular volume) and real gas behavior",
+      "Examiner Report 2021: 'Candidates often omitted units in gas law calculations' — always include appropriate units (Pa for pressure, m³ or cm³ for volume, K for temperature) in final answers"
+    ],
+    "keyDiagram": "Students must be able to draw a molecular model showing gas particles as small circles or dots randomly distributed in a container with arrows indicating random motion in all directions. The diagram should show particles well-spaced (to illustrate negligible molecular volume compared to container volume) and moving in straight lines between collisions with walls. Include labels for 'random motion', 'elastic collisions with walls', and 'negligible intermolecular forces'.",
+    "quickRecap": "Ideal gases follow the assumptions: negligible molecular volume, no intermolecular forces, elastic collisions, and random motion. Use PV = nRT for calculations, always converting Celsius to Kelvin. Real gases deviate from ideal behavior at high pressure (molecules closer together) and low temperature (slower motion, intermolecular forces more significant). Combined gas law: P₁V₁/T₁ = P₂V₂/T₂ for comparing different conditions."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:43:47.675Z",
-  "updated_at": "2026-04-06T04:43:47.675Z"
+  "updated_at": "2026-04-06T04:43:47.675Z",
+  "enriched_at": "2026-04-06T16:08:40.907Z"
 }

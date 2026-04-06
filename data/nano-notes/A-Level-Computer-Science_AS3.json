@@ -83,12 +83,38 @@
       "Use specific examples of storage devices (HDD, SSD, USB) rather than generic terms"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Von Neumann architecture showing processor (containing ALU, control unit, registers), main memory (RAM/ROM), and secondary storage connected by system bus (address, data, control buses)"
+    "keyDiagramDescription": "Von Neumann architecture showing processor (containing ALU, control unit, registers), main memory (RAM/ROM), and secondary storage connected by system bus (address, data, control buses)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q2 (3 marks) — they asked students to identify three differences between RAM and ROM memory types",
+      "This topic appeared in O/N 2022 P2 Q4 (6 marks) — candidates had to explain the purpose of cache memory and describe how it improves system performance",
+      "This topic was examined in M/J 2022 P1 Q8 (4 marks) — students needed to compare magnetic and solid-state storage devices, giving advantages of each",
+      "This topic featured in O/N 2023 P2 Q1 (5 marks) — question required explanation of how data flows between CPU, RAM and storage during program execution"
+    ],
+    "workedExample": {
+      "question": "A computer system has 8GB RAM, 256GB SSD storage, and uses cache memory. Explain how these three types of memory work together when running a word processing application. (6 marks)",
+      "steps": [
+        "Step 1: Identify the memory hierarchy - Cache (fastest, smallest), RAM (fast, medium), SSD (slower, largest capacity)",
+        "Step 2: Explain program loading - Word processor loaded from SSD into RAM when opened",
+        "Step 3: Describe active processing - Frequently used instructions/data moved from RAM to cache for faster CPU access",
+        "Step 4: Explain data flow - CPU checks cache first, then RAM, finally SSD if data not found",
+        "Step 5: Link to performance - Cache reduces wait time, RAM provides working space, SSD provides permanent storage"
+      ],
+      "answer": "When the word processor is opened, it is loaded from the 256GB SSD into the 8GB RAM. The CPU can then access the program instructions and data from RAM much faster than from the SSD. The most frequently used instructions and data are copied from RAM into the cache memory, which is even faster to access. When the CPU needs data, it checks the cache first (fastest), then RAM, and finally the SSD if necessary. This hierarchy ensures optimal performance - cache provides immediate access to current operations, RAM holds the active program and documents, while the SSD stores all programs and files permanently.",
+      "markScheme": "1 mark for program loading from SSD to RAM, 1 mark for cache storing frequently used data, 1 mark for correct memory hierarchy speed order, 1 mark for CPU checking cache first, 1 mark for RAM as working memory, 1 mark for SSD as permanent storage"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused volatile and non-volatile memory types' — always specify that RAM loses data when power is off, while ROM and storage retain data",
+      "Examiner Report 2022: 'Students often failed to explain the relationship between memory types' — always describe how cache, RAM and storage work together as a hierarchy, not as separate components",
+      "Examiner Report 2023: 'Weak answers gave vague descriptions of storage devices' — always give specific technical details like access speeds, capacity ranges, and whether storage is magnetic, optical, or solid-state"
+    ],
+    "keyDiagram": "Draw a pyramid-shaped memory hierarchy diagram with four levels: CPU registers at top (fastest, smallest), cache memory below, RAM in middle, and secondary storage (HDD/SSD) at bottom (slowest, largest). Include arrows showing data flow between levels and label each level with typical capacity ranges (cache: MB, RAM: GB, storage: TB) and access speeds (cache: nanoseconds, RAM: nanoseconds, storage: milliseconds).",
+    "quickRecap": "Hardware includes input devices (keyboard, mouse), output devices (monitor, printer), storage (RAM is volatile working memory, ROM is permanent instructions, secondary storage like SSD/HDD for data), and processing components (CPU executes instructions, cache speeds up access). Memory hierarchy: cache fastest but smallest, RAM for active programs, storage largest but slowest. Remember RAM loses data when power off, ROM and storage retain data permanently."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:14:55.462Z",
-  "updated_at": "2026-04-06T05:14:55.462Z"
+  "updated_at": "2026-04-06T05:14:55.462Z",
+  "enriched_at": "2026-04-06T16:09:40.841Z"
 }

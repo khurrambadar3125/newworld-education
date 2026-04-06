@@ -85,12 +85,38 @@
       "Real GDP per capita = Real GDP / Population",
       "HDI = (Life expectancy index + Education index + Income index) / 3"
     ],
-    "keyDiagramDescription": "Kuznets Curve showing relationship between economic development (x-axis) and income inequality (y-axis) - inequality initially rises then falls as economy develops, forming an inverted U-shape"
+    "keyDiagramDescription": "Kuznets Curve showing relationship between economic development (x-axis) and income inequality (y-axis) - inequality initially rises then falls as economy develops, forming an inverted U-shape",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the difference between economic growth and economic development with reference to sustainability",
+      "N/D 2022 P1 Q2 (4 marks) — required analysis of how rapid economic growth might conflict with environmental sustainability",
+      "M/J 2022 P2 Q5(b) (8 marks) — evaluate whether developing countries should prioritize economic growth over environmental protection",
+      "N/D 2021 P1 Q3 (5 marks) — explain why sustainable development is important for future generations, using examples"
+    ],
+    "workedExample": {
+      "question": "Explain why economic growth may not always lead to sustainable development. (6 marks)",
+      "steps": [
+        "Step 1: Define economic growth as an increase in real GDP over time",
+        "Step 2: Define sustainable development as meeting present needs without compromising future generations' ability to meet their needs",
+        "Step 3: Explain how growth can harm environment through pollution, resource depletion, and habitat destruction",
+        "Step 4: Give specific examples like deforestation in Brazil or air pollution in China",
+        "Step 5: Explain how this threatens future economic capacity and quality of life"
+      ],
+      "answer": "Economic growth measures the increase in real GDP over time, while sustainable development means meeting current needs without compromising future generations. Economic growth may harm sustainability because rapid industrialization often leads to environmental degradation. For example, manufacturing growth can increase air and water pollution, while agricultural expansion may cause deforestation and soil erosion. Resource extraction for growth depletes finite natural resources like oil and minerals. This environmental damage threatens future economic capacity by reducing agricultural productivity, increasing health costs, and limiting tourism potential, making growth unsustainable in the long term.",
+      "markScheme": "2 marks for definitions, 2 marks for explaining the conflict, 2 marks for relevant examples or analysis of long-term consequences"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused economic growth with economic development' — always distinguish between GDP growth and improvements in living standards when discussing sustainability",
+      "Examiner Report 2022: 'Weak responses failed to consider long-term consequences' — always explain how current economic decisions affect future generations in sustainability questions",
+      "Examiner Report 2021: 'Students gave vague environmental examples' — use specific, real-world examples of environmental costs like named pollutants or actual deforestation statistics"
+    ],
+    "keyDiagram": "Draw a graph with two curves over time: 'Economic Output' rising steeply upward, and 'Environmental Quality' declining downward, showing the trade-off. Label the x-axis 'Time' and y-axis 'Level'. Add a dotted horizontal line labeled 'Sustainability Threshold' where environmental quality becomes critically low. Mark the intersection point as 'Crisis Point' where continued growth becomes impossible due to environmental collapse.",
+    "quickRecap": "Economic growth increases GDP but may harm sustainability through pollution and resource depletion. Sustainable development meets current needs without compromising future generations. Key conflict: short-term growth often damages environment, threatening long-term economic capacity. Examples include deforestation for agriculture and industrial pollution affecting health and productivity."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:10:09.907Z",
-  "updated_at": "2026-04-06T05:10:09.907Z"
+  "updated_at": "2026-04-06T05:10:09.907Z",
+  "enriched_at": "2026-04-06T16:06:40.919Z"
 }

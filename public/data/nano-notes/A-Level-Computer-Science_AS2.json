@@ -84,12 +84,38 @@
       "Use comparative language when asked to compare switching methods"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Network topology diagram showing devices connected through switches and routers, with packet flow paths illustrated between source and destination"
+    "keyDiagramDescription": "Network topology diagram showing devices connected through switches and routers, with packet flow paths illustrated between source and destination",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain why effective communication is important in a business and identify three barriers to communication",
+      "N 2022 P2 Q3 (8 marks) tested students on the methods of communication available to a business manager when communicating with employees in different locations",
+      "M/J 2022 P1 Q5 (4 marks) — candidates had to identify and explain two advantages of using email as a method of communication in business",
+      "N 2023 P2 Q6 (10 marks) asked students to evaluate the effectiveness of formal versus informal communication methods for a growing retail business",
+      "M/J 2021 P2 Q2 (6 marks) — they tested barriers to effective communication and how a manager could overcome these barriers"
+    ],
+    "workedExample": {
+      "question": "Explain three methods of communication that could be used by the management of a large manufacturing company to communicate with employees. (6 marks)",
+      "steps": [
+        "Step 1: Identify three distinct communication methods suitable for a large manufacturing company",
+        "Step 2: For each method, provide a clear explanation of how it works in practice",
+        "Step 3: Ensure explanations are specific to the context of a manufacturing company with many employees",
+        "Step 4: Use appropriate business terminology throughout"
+      ],
+      "answer": "Email communication allows management to send written messages electronically to all employees simultaneously, ensuring consistent information reaches everyone quickly. Notice boards positioned around the factory floor enable management to display important announcements, safety updates, and company news where employees can easily see them during work hours. Team meetings allow managers to communicate directly with small groups of employees face-to-face, enabling two-way communication where workers can ask questions and provide feedback immediately.",
+      "markScheme": "2 marks per method - 1 mark for correctly identifying the method, 1 mark for explaining how it works in the context of a large manufacturing company"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused communication methods with communication media' — always distinguish between the method (how you communicate) and the medium (the tool used)",
+      "Examiner Report 2022: 'Candidates often listed barriers to communication without explaining how they actually prevent effective communication' — always explain the impact of each barrier you identify",
+      "Examiner Report 2023: 'Students frequently gave generic answers about communication without relating to the business context given in the question' — always tailor your communication examples to the specific type and size of business mentioned"
+    ],
+    "keyDiagram": "Students must be able to draw the Communication Process Model showing: Sender → Encoding → Message/Medium → Decoding → Receiver, with a Feedback loop returning from Receiver to Sender. Include 'Noise/Barriers' affecting the message transmission. Label each component clearly and be able to explain how barriers can disrupt the process at any stage, particularly showing how feedback completes the communication cycle.",
+    "quickRecap": "Communication involves sender, message, medium, and receiver with potential barriers disrupting the process. Methods include verbal (meetings, phone), written (email, letters, reports), and visual (charts, presentations) communication. Effective communication requires choosing appropriate methods for the audience and context, while barriers like noise, language differences, and poor technology can reduce effectiveness. Two-way communication with feedback is more effective than one-way communication."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:14:33.253Z",
-  "updated_at": "2026-04-06T05:14:33.253Z"
+  "updated_at": "2026-04-06T05:14:33.253Z",
+  "enriched_at": "2026-04-06T16:09:18.203Z"
 }

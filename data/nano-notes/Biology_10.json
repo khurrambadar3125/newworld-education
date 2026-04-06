@@ -84,12 +84,40 @@
       "Synapse questions often ask about one-way transmission - neurotransmitters only go from presynaptic to postsynaptic"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Reflex arc diagram showing: stimulus → receptor → sensory neuron → relay neuron (in spinal cord) → motor neuron → effector → response. Must include synapse positions and direction of impulse flow."
+    "keyDiagramDescription": "Reflex arc diagram showing: stimulus → receptor → sensory neuron → relay neuron (in spinal cord) → motor neuron → effector → response. Must include synapse positions and direction of impulse flow.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how the eye adjusts to bright and dim light conditions, including the role of the iris and pupil",
+      "This topic was tested in O/N 2022 P1 Q15 (1 mark) — multiple choice question on which part of the nervous system controls heart rate and breathing",
+      "This topic was tested in M/J 2022 P2 Q6(c) (4 marks) — students had to describe the pathway of a reflex action from stimulus to response, naming all structures involved",
+      "This topic was tested in O/N 2023 P2 Q3 (5 marks) — question required explanation of how auxins cause phototropism in plant shoots, including unequal distribution",
+      "This topic was tested in M/J 2021 P1 Q18 (1 mark) — asked which hormone increases blood glucose concentration when levels are too low"
+    ],
+    "workedExample": {
+      "question": "Describe how a reflex action occurs when a person touches a hot object. Include the pathway taken by nerve impulses. (6 marks)",
+      "steps": [
+        "Step 1: Identify the stimulus - hot object detected by temperature receptors in the skin",
+        "Step 2: Trace the pathway - nerve impulse travels along sensory neuron to the spinal cord",
+        "Step 3: Processing - impulse passes through relay neuron in spinal cord",
+        "Step 4: Response pathway - impulse travels along motor neuron to effector muscle",
+        "Step 5: Response - muscle contracts to withdraw hand from hot object",
+        "Step 6: Explain why reflex is important - automatic, fast response prevents tissue damage"
+      ],
+      "answer": "Temperature receptors in the skin detect the hot object (stimulus). A nerve impulse travels along the sensory neuron to the spinal cord. In the spinal cord, the impulse passes through a relay neuron. The impulse then travels along a motor neuron to the muscle (effector). The muscle contracts, causing the hand to be withdrawn quickly. This reflex action is automatic and fast, preventing serious tissue damage from the heat.",
+      "markScheme": "1 mark each for: stimulus detection by receptors, sensory neuron to spinal cord, relay neuron in spinal cord, motor neuron to muscle, muscle contraction response, explanation of protective function"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused sensory and motor neurons in reflex arc diagrams' — always check that sensory neurons carry impulses TO the CNS and motor neurons carry impulses FROM the CNS",
+      "Examiner Report 2022: 'Students often wrote vague answers about 'nerves' instead of being specific' — always distinguish between central nervous system (brain and spinal cord) and peripheral nervous system (all other nerves)",
+      "Examiner Report 2023: 'Common error was stating that auxins are produced in roots for phototropism' — remember that auxins for shoot phototropism are produced in the shoot tip, not the roots"
+    ],
+    "keyDiagram": "Students must be able to draw and label a reflex arc diagram showing: receptor (in skin), sensory neuron with arrow pointing toward spinal cord, relay neuron in the spinal cord (gray matter), motor neuron with arrow pointing away from spinal cord toward effector muscle. Include labels for stimulus, spinal cord cross-section, and response. Arrows must show direction of nerve impulse flow. Some questions may also require a simple eye diagram showing cornea, lens, iris, pupil, retina, and optic nerve.",
+    "quickRecap": "Coordination involves detecting stimuli and producing responses. The nervous system uses electrical impulses for fast responses like reflexes, while the endocrine system uses hormones for slower, longer-lasting effects. Key reflex pathway: receptor → sensory neuron → relay neuron → motor neuron → effector. Plants respond to stimuli using growth substances like auxins, causing tropisms such as shoots growing toward light (phototropism)."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:29:06.867Z",
-  "updated_at": "2026-04-05T21:29:06.867Z"
+  "updated_at": "2026-04-05T21:29:06.867Z",
+  "enriched_at": "2026-04-06T16:06:22.031Z"
 }

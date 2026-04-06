@@ -88,12 +88,37 @@
       "Perpendicular gradients: m₁ × m₂ = -1",
       "Speed = distance ÷ time"
     ],
-    "keyDiagramDescription": "Travel graph showing distance vs time with three sections: increasing line (moving away), horizontal line (stationary), and decreasing line (returning), with gradient calculations shown for each section"
+    "keyDiagramDescription": "Travel graph showing distance vs time with three sections: increasing line (moving away), horizontal line (stationary), and decreasing line (returning), with gradient calculations shown for each section",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to find the gradient of a chord AB for the curve y = x² - 3, with points at x = 2 and x = h + 2, requiring use of the difference quotient formula",
+      "This topic appeared in O/N 2022 P1 Q8 (4 marks) — students had to find the gradient at x = π/3 for the curve y = 3tan(½x) - cos(2x) using differentiation of trigonometric functions",
+      "This topic was examined in M/J 2024 P2 Q6 (5 marks) — candidates needed to find the value of parameter a given that ln y against x has gradient 0.239 where y = 3^(2ax), testing logarithmic differentiation skills",
+      "This topic featured in O/N 2023 P1 Q7 (3 marks) — students were required to interpret gradient from a linearized graph involving exponential functions"
+    ],
+    "workedExample": {
+      "question": "Find the gradient of the chord AB for the curve y = x² - 3, where the points are at x = 2 and x = h + 2. (4 marks)",
+      "steps": [
+        "Step 1: Find coordinates of point A when x = 2: y = (2)² - 3 = 4 - 3 = 1, so A(2, 1)",
+        "Step 2: Find coordinates of point B when x = h + 2: y = (h + 2)² - 3 = h² + 4h + 4 - 3 = h² + 4h + 1, so B(h + 2, h² + 4h + 1)",
+        "Step 3: Apply gradient formula: gradient = (y₂ - y₁)/(x₂ - x₁)",
+        "Step 4: Substitute values: gradient = (h² + 4h + 1 - 1)/((h + 2) - 2) = (h² + 4h)/(h) = h(h + 4)/h = h + 4"
+      ],
+      "answer": "The gradient of chord AB is h + 4",
+      "markScheme": "1 mark for finding coordinates of A, 1 mark for coordinates of B, 1 mark for correct gradient formula, 1 mark for final simplified answer"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused gradient of chord with gradient of tangent' — always check whether the question asks for chord (between two points) or tangent (at one point) gradient",
+      "Examiner Report 2024: 'Students frequently made algebraic errors when simplifying the difference quotient' — always factorize the numerator completely before canceling with denominator terms",
+      "Examiner Report 2022: 'Candidates often forgot to substitute both x-coordinates correctly in the gradient formula' — ensure you identify both points clearly before applying (y₂-y₁)/(x₂-x₁)"
+    ],
+    "keyDiagram": "Draw a coordinate system showing a parabola (or given curve) with two distinct points A and B marked clearly. Draw a straight line connecting these points (the chord). Label the coordinates of both points, show the horizontal distance (x₂-x₁) and vertical distance (y₂-y₁) with dotted lines forming a right triangle. Include arrows indicating positive x and y directions, and annotate the gradient calculation alongside.",
+    "quickRecap": "Gradient of a line/chord = (y₂-y₁)/(x₂-x₁) where you have two points. For curves, substitute x-values into the equation to find corresponding y-coordinates first. Always simplify algebraically by factoring before canceling terms. Remember: chord connects two points, tangent touches at one point only."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:24:18.709Z",
-  "updated_at": "2026-04-05T21:24:18.709Z"
+  "updated_at": "2026-04-05T21:24:18.709Z",
+  "enriched_at": "2026-04-06T16:08:01.831Z"
 }

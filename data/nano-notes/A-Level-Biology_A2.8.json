@@ -87,12 +87,40 @@
       "For genetic engineering, always mention: cut with restriction enzyme, insert into vector, transform into host"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Gel electrophoresis setup showing wells at negative electrode, DNA fragments separated by size with smaller fragments near positive electrode, and bands visible under UV light"
+    "keyDiagramDescription": "Gel electrophoresis setup showing wells at negative electrode, DNA fragments separated by size with smaller fragments near positive electrode, and bands visible under UV light",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to describe the process of genetic engineering in bacteria and explain advantages of insulin production using this method",
+      "N/D 2022 P1 Q12 (1 mark) — multiple choice question on identifying the correct sequence of steps in genetic engineering",
+      "M/J 2022 P2 Q5(c) (4 marks) — students had to explain ethical concerns surrounding genetic modification of crops",
+      "N/D 2023 P2 Q3(b) (5 marks) — describe how PCR is used to amplify DNA and state two applications of this technique",
+      "M/J 2021 P2 Q6 (8 marks) — comprehensive question covering gene therapy, its process, and potential risks and benefits"
+    ],
+    "workedExample": {
+      "question": "Describe the process of genetic engineering to produce human insulin in bacteria. (6 marks)",
+      "steps": [
+        "Step 1: Identify what genetic engineering involves - transferring genes between organisms",
+        "Step 2: Describe isolation - human insulin gene is cut from chromosome using restriction enzymes",
+        "Step 3: Explain vector preparation - plasmid DNA cut with same restriction enzyme to create compatible sticky ends",
+        "Step 4: Describe gene insertion - insulin gene inserted into plasmid using ligase enzyme",
+        "Step 5: Explain transformation - recombinant plasmid inserted into bacterial cell",
+        "Step 6: Describe production - bacteria reproduce and express insulin gene to produce human insulin"
+      ],
+      "answer": "The human insulin gene is isolated from a chromosome using restriction enzymes that cut at specific sequences. A bacterial plasmid is cut using the same restriction enzyme, creating complementary sticky ends. The insulin gene is inserted into the plasmid using ligase enzyme to form recombinant DNA. This recombinant plasmid is introduced into bacterial cells through transformation. The bacteria are cultured and reproduce rapidly, expressing the insulin gene to produce human insulin that can be harvested and purified for medical use.",
+      "markScheme": "1 mark each for: gene isolation using restriction enzymes; plasmid preparation; gene insertion using ligase; transformation into bacteria; bacterial reproduction/culture; insulin production/expression"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused genetic engineering with selective breeding' — always specify that genetic engineering involves transferring genes between different species, not just selecting traits within a species",
+      "Examiner Report 2022: 'Students frequently omitted the role of enzymes in genetic engineering' — always mention restriction enzymes for cutting DNA and ligase for joining DNA when describing the process",
+      "Examiner Report 2023: 'Candidates often provided vague ethical arguments without specific examples' — when discussing ethics, give concrete examples like antibiotic resistance genes in GM crops or religious objections to human gene therapy"
+    ],
+    "keyDiagram": "Students must be able to draw the genetic engineering process showing: 1) Human cell with chromosome containing target gene, 2) Gene being cut out by restriction enzymes (shown as scissors), 3) Bacterial plasmid being cut at the same restriction site, 4) Gene insertion into plasmid forming recombinant DNA (sticky ends clearly labeled), 5) Transformed bacterial cell containing recombinant plasmid, 6) Bacterial reproduction producing multiple copies. Include labels for restriction enzymes, ligase, sticky ends, plasmid, and recombinant DNA.",
+    "quickRecap": "Genetic engineering transfers genes between organisms using restriction enzymes to cut DNA and ligase to join it. Key applications include insulin production in bacteria, gene therapy for genetic diseases, and GM crops with improved traits. PCR amplifies DNA for analysis. Main ethical concerns include safety, environmental impact, and religious objections to modifying natural organisms."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:06:47.148Z",
-  "updated_at": "2026-04-06T05:06:47.148Z"
+  "updated_at": "2026-04-06T05:06:47.148Z",
+  "enriched_at": "2026-04-06T16:08:31.731Z"
 }

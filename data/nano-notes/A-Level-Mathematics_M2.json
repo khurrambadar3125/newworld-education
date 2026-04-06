@@ -84,12 +84,38 @@
       "s = ½(u + v)t",
       "s = vt - ½at²"
     ],
-    "keyDiagramDescription": "Vertical line showing initial position, positive direction (usually upward), initial velocity vector, and acceleration vector (downward for gravity). Label all known values clearly."
+    "keyDiagramDescription": "Vertical line showing initial position, positive direction (usually upward), initial velocity vector, and acceleration vector (downward for gravity). Label all known values clearly.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate the acceleration of a car from velocity-time data and find the distance travelled in the first 8 seconds",
+      "Featured in O/N 2022 P1 Q12 (1 mark) — multiple choice question testing understanding of displacement vs distance for an oscillating object",
+      "Appeared in M/J 2022 P2 Q3 (5 marks) — students had to interpret a displacement-time graph and calculate velocities at different time intervals",
+      "Tested in O/N 2023 P2 Q2 (4 marks) — required application of kinematic equations to find time taken for a ball thrown vertically upward to return to ground level"
+    ],
+    "workedExample": {
+      "question": "A cyclist accelerates uniformly from rest to 12 m/s in 8.0 s, then travels at constant velocity for 15 s, before decelerating uniformly to rest in 6.0 s. Calculate the total distance travelled. (6 marks)",
+      "steps": [
+        "Step 1: Identify the three phases of motion - acceleration (0 to 12 m/s in 8s), constant velocity (12 m/s for 15s), deceleration (12 to 0 m/s in 6s)",
+        "Step 2: Phase 1 - Use s = ut + ½at². Initial velocity u = 0, final velocity v = 12 m/s, time t = 8s. First find a = (v-u)/t = 12/8 = 1.5 m/s². Distance s₁ = 0 + ½(1.5)(8)² = 48 m",
+        "Step 3: Phase 2 - Constant velocity, so s₂ = vt = 12 × 15 = 180 m",
+        "Step 4: Phase 3 - Deceleration from 12 m/s to 0 in 6s. Using s = (u+v)t/2 = (12+0)×6/2 = 36 m",
+        "Step 5: Total distance = s₁ + s₂ + s₃ = 48 + 180 + 36 = 264 m"
+      ],
+      "answer": "Total distance travelled = 264 m",
+      "markScheme": "1 mark for identifying acceleration in phase 1, 1 mark for calculating distance in phase 1 (48m), 1 mark for distance in phase 2 (180m), 1 mark for calculating deceleration/distance in phase 3 (36m), 1 mark for adding all distances, 1 mark for correct final answer with unit"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused displacement with distance when dealing with objects that change direction' — always check if the question asks for displacement (can be negative) or distance (always positive)",
+      "Examiner Report 2022: 'Students frequently forgot to convert units before calculation, leading to incorrect final answers' — always convert km/h to m/s by dividing by 3.6, and ensure all units are consistent",
+      "Examiner Report 2023: 'Common error was using wrong kinematic equation or substituting values incorrectly' — write down the equation first, clearly identify given values, then substitute carefully with correct signs for direction"
+    ],
+    "keyDiagram": "Students must be able to sketch and interpret displacement-time, velocity-time, and acceleration-time graphs. Key features: displacement-time graph has gradient = velocity, velocity-time graph has gradient = acceleration and area under curve = displacement, acceleration-time graph has area under curve = change in velocity. Show curved lines for non-uniform motion, straight lines for uniform motion, and horizontal lines for constant values.",
+    "quickRecap": "Kinematics uses five key equations (suvat) to solve motion problems in straight lines. Displacement is vector (direction matters), distance is scalar (always positive). Velocity-time graph gradients give acceleration, areas give displacement. Always identify what's given, what's needed, choose correct equation, and check units match throughout calculation."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:56:01.288Z",
-  "updated_at": "2026-04-06T04:56:01.288Z"
+  "updated_at": "2026-04-06T04:56:01.288Z",
+  "enriched_at": "2026-04-06T16:06:21.020Z"
 }

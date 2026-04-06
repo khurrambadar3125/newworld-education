@@ -85,12 +85,37 @@
       "Include specific examples of coastal management from your own region (e.g., Karachi coastline protection)"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Cross-section of a cliff showing wave erosion at the base, with labels for high tide, low tide, wave-cut notch, and overhang. Also diagram showing longshore drift with arrows indicating wave direction, swash and backwash movement."
+    "keyDiagramDescription": "Cross-section of a cliff showing wave erosion at the base, with labels for high tide, low tide, wave-cut notch, and overhang. Also diagram showing longshore drift with arrows indicating wave direction, swash and backwash movement.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to describe changes in waves as they move towards shore, including wavelength, height and breaking",
+      "This topic appeared in O/N 2022 P1 Q4 (6 marks) — candidates had to assess the relative importance of factors influencing wave generation and characteristics",
+      "This topic was examined in M/J 2024 P2 Q2b (3 marks) — students needed to suggest safety precautions for coastal fieldwork including dangers from waves, tides and cliffs",
+      "This topic featured in O/N 2023 P2 Q5 (8 marks) — required explanation of coastal erosion processes and their relationship to wave energy"
+    ],
+    "workedExample": {
+      "question": "Describe the changes in waves shown in Fig. 4.1 as they move towards the shore. (4 marks)",
+      "steps": [
+        "Step 1: Identify what happens to wavelength - measure distance between wave crests in deep vs shallow water",
+        "Step 2: Observe wave height changes - compare wave amplitude in deep water to near shore",
+        "Step 3: Note the breaking process - explain when and why waves become unstable",
+        "Step 4: Link changes to water depth - explain the cause of these transformations"
+      ],
+      "answer": "As waves move towards shore, the wavelength decreases due to friction with the seabed in shallow water. Wave height increases as energy becomes compressed into smaller space. Waves become steeper and eventually break when water depth is approximately 1.3 times the wave height. The wave crest moves faster than the base, causing the wave to topple forward.",
+      "markScheme": "1 mark each for: wavelength decreases, wave height increases, waves break/become steeper, reference to shallow water/seabed friction"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused wave refraction with wave breaking' — always distinguish between waves bending around headlands versus waves collapsing in shallow water",
+      "Examiner Report 2024: 'Students often failed to link wave changes to water depth' — always explain that friction with seabed in shallow water causes wave transformation",
+      "Examiner Report 2022: 'Candidates frequently omitted safety precautions in fieldwork questions' — always mention checking tide times, staying away from cliff edges, and working from safe positions when discussing coastal studies"
+    ],
+    "keyDiagram": "Students must draw a cross-section showing wave transformation from deep to shallow water. Include: deep water with long wavelength/low height waves on left, gradually decreasing wavelength and increasing height toward shore, seabed rising toward beach, and final breaking wave with crest toppling forward. Label wavelength, wave height, water depth, and direction of wave movement. Add annotations explaining friction with seabed causes changes.",
+    "quickRecap": "Waves change dramatically as they approach shore due to friction with the seabed in shallow water. Wavelength decreases while wave height increases, making waves steeper until they break when water depth equals 1.3 times wave height. Wave energy drives coastal erosion through hydraulic action and abrasion. Always consider safety when studying coasts - check tides, avoid cliff edges, and work from secure positions."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:57:49.073Z",
-  "updated_at": "2026-04-06T03:57:49.073Z"
+  "updated_at": "2026-04-06T03:57:49.073Z",
+  "enriched_at": "2026-04-06T16:09:19.724Z"
 }

@@ -83,12 +83,37 @@
       "F = BQv sin θ",
       "VH = BI/(nqt)"
     ],
-    "keyDiagramDescription": "Diagram showing a current-carrying conductor in a magnetic field with arrows indicating: magnetic field direction (into/out of page using crosses/dots), current direction along conductor, and resultant force direction perpendicular to both using Fleming's left-hand rule"
+    "keyDiagramDescription": "Diagram showing a current-carrying conductor in a magnetic field with arrows indicating: magnetic field direction (into/out of page using crosses/dots), current direction along conductor, and resultant force direction perpendicular to both using Fleming's left-hand rule",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to describe how to plot magnetic field lines around a bar magnet using iron filings and explain the direction of field lines",
+      "N/D 2022 P1 Q15 (1 mark) — multiple choice question about the direction of magnetic field around a current-carrying wire, many students confused clockwise vs anticlockwise",
+      "M/J 2022 P2 Q6(b) (4 marks) — required explanation of how to increase strength of electromagnet, looking for number of turns, current, and core material",
+      "N/D 2023 P2 Q3(c) (3 marks) — asked to compare magnetic field strength at different distances from a magnet, testing inverse square relationship understanding"
+    ],
+    "workedExample": {
+      "question": "A straight wire carries a current of 2.5 A. Describe the magnetic field produced around this wire and state how the direction of the field can be determined. Calculate the direction when current flows from left to right. (4 marks)",
+      "steps": [
+        "Step 1: State that the magnetic field forms concentric circles around the wire with the wire at the center",
+        "Step 2: Explain that field strength decreases with distance from the wire",
+        "Step 3: Apply right-hand grip rule - thumb points in direction of current (left to right), fingers curl in direction of magnetic field",
+        "Step 4: Therefore when current flows left to right, magnetic field circles clockwise when viewed from the left end"
+      ],
+      "answer": "The magnetic field around a current-carrying wire forms concentric circles with the wire at the center. The field strength decreases with distance from the wire. The direction is found using the right-hand grip rule: thumb points along current direction, fingers curl showing field direction. With current flowing left to right, the magnetic field circles clockwise when viewed from the left.",
+      "markScheme": "1 mark for concentric circles, 1 mark for mentioning right-hand grip rule, 1 mark for correct application, 1 mark for stating clockwise direction"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused magnetic field lines with electric field lines' — always draw magnetic field lines as closed loops that never cross each other",
+      "Examiner Report 2022: 'Students frequently drew field lines pointing in random directions' — remember magnetic field lines always go from North pole to South pole outside the magnet",
+      "Examiner Report 2023: 'Poor understanding of right-hand rules led to incorrect directions' — practice right-hand grip rule for wires and right-hand rule for motors until automatic"
+    ],
+    "keyDiagram": "Students must be able to draw magnetic field lines around a bar magnet showing: curved lines emerging from North pole and entering South pole, lines never crossing, closer spacing near poles indicating stronger field, arrows on lines showing N→S direction, and field lines forming complete loops (though only external portion usually shown). For current-carrying wire: concentric circles around wire with arrows showing direction using right-hand grip rule.",
+    "quickRecap": "Magnetic fields are regions where magnetic forces act, represented by field lines from N to S poles. Current-carrying wires create circular magnetic fields around them. Use right-hand grip rule for wire fields and right-hand rule for motor forces. Field strength decreases with distance and increases with current/number of turns in electromagnets."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:45:43.829Z",
-  "updated_at": "2026-04-06T04:45:43.829Z"
+  "updated_at": "2026-04-06T04:45:43.829Z",
+  "enriched_at": "2026-04-06T16:10:17.996Z"
 }

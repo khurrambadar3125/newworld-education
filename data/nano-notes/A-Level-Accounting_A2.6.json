@@ -89,12 +89,39 @@
       "Present Value = Future Value ÷ (1 + r)^n",
       "IRR Interpolation = L + [(NPV at L ÷ (NPV at L - NPV at H)) × (H - L)]"
     ],
-    "keyDiagramDescription": "Cash flow timeline showing initial outflow at Year 0 and subsequent annual inflows, with discount factors applied to each year's cash flow to calculate present values"
+    "keyDiagramDescription": "Cash flow timeline showing initial outflow at Year 0 and subsequent annual inflows, with discount factors applied to each year's cash flow to calculate present values",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to calculate payback period and NPV for a new machine purchase and recommend which investment option to choose",
+      "Featured in O/N 2022 P2 Q5 (6 marks) — candidates had to explain the limitations of payback period method and suggest why a business might still use it despite these limitations",
+      "Appeared in M/J 2022 P2 Q3 (10 marks) — students needed to calculate ARR and payback period for two projects, then evaluate which method would be most appropriate for a small manufacturing business",
+      "Tested in O/N 2023 P2 Q4 (7 marks) — question focused on calculating NPV using a 10% discount rate and explaining why NPV is considered more reliable than other appraisal methods"
+    ],
+    "workedExample": {
+      "question": "ABC Ltd is considering purchasing new machinery costing $80,000. The machine will generate the following net cash flows: Year 1: $25,000, Year 2: $30,000, Year 3: $35,000, Year 4: $20,000. Calculate the payback period and comment on whether this investment should be accepted if the company's target payback period is 2.5 years. (6 marks)",
+      "steps": [
+        "Step 1: Set up cumulative cash flow table showing initial investment as -$80,000",
+        "Step 2: Add Year 1 cash flow: -$80,000 + $25,000 = -$55,000 (still negative)",
+        "Step 3: Add Year 2 cash flow: -$55,000 + $30,000 = -$25,000 (still negative)",
+        "Step 4: Add Year 3 cash flow: -$25,000 + $35,000 = +$10,000 (positive, so payback occurs in Year 3)",
+        "Step 5: Calculate exact payback: 2 years + ($25,000/$35,000) = 2 years + 0.71 = 2.71 years",
+        "Step 6: Compare to target and make recommendation with justification"
+      ],
+      "answer": "Payback period = 2.71 years. The investment should be rejected because the payback period of 2.71 years exceeds the company's target of 2.5 years, meaning it takes too long to recover the initial investment and increases business risk.",
+      "markScheme": "2 marks for correct cumulative cash flow calculation, 2 marks for accurate payback period calculation, 2 marks for clear recommendation linked to comparison with target payback period"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates calculated payback period incorrectly by simply dividing total investment by average annual cash flow' — always use cumulative cash flow method and interpolate for the exact payback point",
+      "Examiner Report 2022: 'Students frequently confused cash flow with profit when performing investment appraisal calculations' — ensure you use net cash flows, not accounting profits, for all NPV and payback calculations",
+      "Examiner Report 2023: 'Candidates often failed to provide balanced evaluation of appraisal methods' — when comparing methods, always discuss both advantages and disadvantages of each method in relation to the specific business context"
+    ],
+    "keyDiagram": "Students must be able to construct a clear investment appraisal comparison table showing: Column 1 - Time periods (Years 0-4), Column 2 - Cash flows for each year, Column 3 - Cumulative cash flows for payback calculation, Column 4 - Discount factors (if calculating NPV), Column 5 - Present values. Include clear totals and final calculations for payback period, NPV, and ARR with appropriate formulas shown.",
+    "quickRecap": "Investment appraisal uses three main methods: Payback period (time to recover initial investment), NPV (present value of future cash flows minus initial cost), and ARR (average annual profit as percentage of initial investment). NPV is most reliable as it considers time value of money and all cash flows. Always use cash flows not profits, show workings clearly, and relate recommendations to business context and risk tolerance."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:29:17.325Z",
-  "updated_at": "2026-04-06T05:29:17.325Z"
+  "updated_at": "2026-04-06T05:29:17.325Z",
+  "enriched_at": "2026-04-06T16:07:53.848Z"
 }

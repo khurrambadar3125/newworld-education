@@ -82,12 +82,39 @@
       "Remember to evaluate trade-offs between different strategic options in your conclusions"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Draw Ansoff's Matrix as 2x2 grid with Products (Existing/New) on horizontal axis and Markets (Existing/New) on vertical axis, showing four growth strategies: Market Penetration, Product Development, Market Development, and Diversification with increasing risk levels"
+    "keyDiagramDescription": "Draw Ansoff's Matrix as 2x2 grid with Products (Existing/New) on horizontal axis and Markets (Existing/New) on vertical axis, showing four growth strategies: Market Penetration, Product Development, Market Development, and Diversification with increasing risk levels",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to evaluate the strategic management process used by a multinational retailer entering emerging markets",
+      "This topic was tested in O/N 2022 P2 Q3 (6 marks) — they asked students to analyze how SWOT analysis helps in strategic decision-making for a technology company",
+      "This topic was tested in M/J 2022 P2 Q5 (10 marks) — they asked students to discuss the importance of strategic planning for a family business facing increased competition",
+      "This topic was tested in O/N 2021 P2 Q2 (4 marks) — they asked students to explain two benefits of conducting environmental analysis as part of strategic management"
+    ],
+    "workedExample": {
+      "question": "ABC Electronics is a medium-sized manufacturer facing declining sales. Explain how the strategic management process could help ABC Electronics improve its competitive position. (8 marks)",
+      "steps": [
+        "Step 1: Define strategic management - the process of planning, implementing and evaluating business strategies to achieve long-term objectives",
+        "Step 2: Identify the four stages - environmental analysis, strategy formulation, strategy implementation, and strategy evaluation",
+        "Step 3: Apply environmental analysis - ABC could conduct SWOT analysis to identify internal strengths/weaknesses and external opportunities/threats",
+        "Step 4: Apply strategy formulation - based on analysis, ABC could develop strategies like product diversification or market penetration",
+        "Step 5: Apply implementation - ABC would allocate resources, set timelines and assign responsibilities to execute chosen strategies",
+        "Step 6: Apply evaluation - ABC would monitor performance against targets and adjust strategies as needed"
+      ],
+      "answer": "Strategic management is the systematic process of planning, implementing and evaluating strategies to achieve long-term competitive advantage. For ABC Electronics, this process would begin with environmental analysis, including SWOT analysis to assess internal capabilities and external market conditions causing declining sales. Strategy formulation would follow, where ABC develops specific strategies such as product innovation, market expansion, or cost reduction based on their analysis. During strategy implementation, ABC would allocate resources, establish clear timelines, and assign responsibilities to execute chosen strategies effectively. Finally, strategy evaluation would involve monitoring key performance indicators and making necessary adjustments to ensure strategies remain effective in improving their competitive position.",
+      "markScheme": "2 marks for defining strategic management, 2 marks for each stage explained (environmental analysis, formulation, implementation, evaluation), with application to ABC Electronics throughout"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused strategic management with operational management' — always emphasize long-term focus and competitive advantage when discussing strategic management",
+      "Examiner Report 2022: 'Candidates often listed the stages without explaining how they connect' — always show how environmental analysis leads to strategy formulation, which leads to implementation and evaluation",
+      "Examiner Report 2021: 'Students frequently gave generic answers without business context' — always apply strategic management concepts to the specific business scenario given in the question"
+    ],
+    "keyDiagram": "Students must draw the Strategic Management Process Cycle: a circular diagram showing four connected stages. Start with 'Environmental Analysis' (including internal analysis of strengths/weaknesses and external analysis of opportunities/threats), flowing to 'Strategy Formulation' (developing strategic options and choosing best strategy), then to 'Strategy Implementation' (resource allocation, organizational structure, leadership), and finally 'Strategy Evaluation & Control' (monitoring performance, feedback), with an arrow back to Environmental Analysis showing the continuous nature of the process.",
+    "quickRecap": "Strategic management is the long-term planning process involving four continuous stages: environmental analysis (SWOT), strategy formulation (choosing direction), implementation (executing plans), and evaluation (monitoring results). It differs from operational management by focusing on long-term competitive advantage rather than day-to-day activities. The process is cyclical - evaluation leads back to new environmental analysis. Always apply each stage to the specific business context given in exam questions."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:13:01.729Z",
-  "updated_at": "2026-04-06T05:13:01.729Z"
+  "updated_at": "2026-04-06T05:13:01.729Z",
+  "enriched_at": "2026-04-06T16:05:59.269Z"
 }

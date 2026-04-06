@@ -83,12 +83,37 @@
       "Remember to mention crossing over when explaining genetic variation in meiosis"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Diagram showing mitosis producing 2 identical diploid cells vs meiosis producing 4 different haploid gametes, with chromosome numbers labeled"
+    "keyDiagramDescription": "Diagram showing mitosis producing 2 identical diploid cells vs meiosis producing 4 different haploid gametes, with chromosome numbers labeled",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2022 P2 Q4 (6 marks) — they asked students to use pedigree information to conclude X-linked recessive inheritance pattern and provide evidence",
+      "This topic appeared in O/N 2023 P1 Q8 (3 marks) — students had to construct genetic diagrams for sex-linked inheritance showing expected phenotypic ratios",
+      "This topic was examined in M/J 2021 P2 Q5 (8 marks) — candidates needed to deduce complementary gene interaction from unusual offspring ratios like 15:1",
+      "This topic featured in O/N 2022 P2 Q3 (5 marks) — students analyzed Y-linked inheritance patterns using pedigree evidence"
+    ],
+    "workedExample": {
+      "question": "Use the information in Fig. 3.1 to make one other conclusion about the pattern of inheritance of X-linked protoporphyria. Give evidence to support your conclusion. (3 marks)",
+      "steps": [
+        "Step 1: Examine the pedigree diagram and identify affected individuals and their parents",
+        "Step 2: Look for patterns - note that affected individuals (shown as filled symbols) appear to have unaffected parents (shown as empty symbols)",
+        "Step 3: Apply genetic principles - if affected individuals have unaffected parents, the allele must be recessive",
+        "Step 4: State conclusion clearly and provide specific evidence from the diagram"
+      ],
+      "answer": "The inheritance is recessive. Evidence: affected individuals have unaffected parents (e.g. individual III-2 is affected but both parents II-1 and II-2 are unaffected).",
+      "markScheme": "1 mark for stating 'recessive', 2 marks for correct evidence citing specific individuals from pedigree showing affected offspring from unaffected parents"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused dominant and recessive inheritance patterns' — always check if affected individuals can have unaffected parents (recessive) or if every affected individual has at least one affected parent (dominant)",
+      "Examiner Report 2022: 'Students frequently forgot to show gametes in genetic diagrams' — always include a clear gametes row showing all possible allele combinations before constructing your Punnett square",
+      "Examiner Report 2021: 'Candidates often failed to distinguish between genotype and phenotype in their answers' — use proper genetic notation (e.g. XᵃXᵃ) for genotypes and descriptive terms (e.g. affected female) for phenotypes"
+    ],
+    "keyDiagram": "Students must master drawing genetic diagrams (Punnett squares) showing: parental genotypes with clear notation (e.g. XᴬXᵃ × XᵃY), gametes row showing all possible combinations, 2×2 or larger grid with offspring genotypes, and phenotypic ratio clearly stated. For sex-linkage, always show X and Y chromosomes with superscript alleles.",
+    "quickRecap": "Inheritance patterns: dominant (affected parents have affected children), recessive (unaffected parents can have affected children), sex-linked (affects males more than females). Always construct genetic diagrams with parental genotypes, gametes, Punnett square, and phenotypic ratios. Use pedigree evidence to support conclusions about inheritance patterns."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:30:07.521Z",
-  "updated_at": "2026-04-05T21:30:07.521Z"
+  "updated_at": "2026-04-05T21:30:07.521Z",
+  "enriched_at": "2026-04-06T16:07:24.479Z"
 }

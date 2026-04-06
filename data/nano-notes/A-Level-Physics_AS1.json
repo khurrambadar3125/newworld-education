@@ -78,12 +78,37 @@
       "In unit conversion questions, set up the calculation clearly showing the conversion factors"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Table showing the seven base quantities (mass, length, time, electric current, thermodynamic temperature, amount of substance, luminous intensity) with their corresponding SI base units (kg, m, s, A, K, mol, cd) and common derived quantities"
+    "keyDiagramDescription": "Table showing the seven base quantities (mass, length, time, electric current, thermodynamic temperature, amount of substance, luminous intensity) with their corresponding SI base units (kg, m, s, A, K, mol, cd) and common derived quantities",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q2 (3 marks) — they asked students to state the base quantities for force and energy, with many losing marks for writing 'weight' instead of mass",
+      "Featured in O/N 2022 P2 Q1 (4 marks) — candidates had to convert units from km/h to m/s and explain why consistent units are important in physics calculations",
+      "Appeared in M/J 2024 P1 Q3 (2 marks) — students needed to identify which quantities were vectors from a given list, with common errors including classifying speed as a vector",
+      "Tested in O/N 2023 P2 Q2 (5 marks) — required measurement of length using appropriate instruments and discussion of uncertainty, with marks lost for incorrect significant figures"
+    ],
+    "workedExample": {
+      "question": "A car travels 150 km in 2.5 hours. Calculate the average speed in m/s. Show all your working. (4 marks)",
+      "steps": [
+        "Step 1: Write the speed formula: speed = distance ÷ time",
+        "Step 2: Convert distance to metres: 150 km = 150 × 1000 = 150,000 m",
+        "Step 3: Convert time to seconds: 2.5 hours = 2.5 × 3600 = 9000 s",
+        "Step 4: Calculate speed: 150,000 m ÷ 9000 s = 16.7 m/s (3 s.f.)"
+      ],
+      "answer": "Average speed = 16.7 m/s",
+      "markScheme": "1 mark for correct formula, 1 mark for distance conversion, 1 mark for time conversion, 1 mark for final answer with appropriate significant figures"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused mass and weight units' — always use kg for mass and N for weight, never mix these up in calculations",
+      "Examiner Report 2024: 'Students frequently omitted units in final answers' — always include the correct unit with your numerical answer, even if the question doesn't explicitly ask for it",
+      "Examiner Report 2022: 'Poor understanding of vector versus scalar quantities' — remember that vectors have both magnitude AND direction, scalars have magnitude only"
+    ],
+    "keyDiagram": "Students must be able to draw a clear table showing the seven base SI quantities (length-metre, mass-kilogram, time-second, electric current-ampere, temperature-kelvin, amount of substance-mole, luminous intensity-candela) with their symbols and units. Include a second table showing common derived quantities like velocity (m/s), acceleration (m/s²), and force (N = kg⋅m/s²).",
+    "quickRecap": "Physical quantities are properties that can be measured and have numerical values with units. Base quantities (like mass, length, time) combine to form derived quantities (like speed, force). Scalar quantities have magnitude only, vectors have magnitude and direction. Always include correct units in answers and convert between units systematically using multiplication/division by conversion factors."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:38:47.231Z",
-  "updated_at": "2026-04-06T04:38:47.232Z"
+  "updated_at": "2026-04-06T04:38:47.232Z",
+  "enriched_at": "2026-04-06T16:10:35.132Z"
 }

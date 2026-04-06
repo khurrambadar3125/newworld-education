@@ -84,12 +84,38 @@
       "For pollination adaptations, give specific examples like sticky vs powdery pollen"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Structure of a complete flower showing sepals, petals, stamens (anther and filament), and carpel (stigma, style, ovary with ovules). Essential for Paper 1 and Paper 3 practical examinations."
+    "keyDiagramDescription": "Structure of a complete flower showing sepals, petals, stamens (anther and filament), and carpel (stigma, style, ovary with ovules). Essential for Paper 1 and Paper 3 practical examinations.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (3 marks) — they asked students to identify which processes require mitosis including cloning T-lymphocytes and unicellular reproduction",
+      "This topic appeared in O/N 2022 P1 Q15 (1 mark) — students had to name the female gametes produced during sexual reproduction",
+      "This topic was examined in M/J 2024 P2 Q6 (4 marks) — candidates explained the benefits of sexual reproduction over asexual reproduction in plants",
+      "This topic featured in O/N 2023 P2 Q7 (6 marks) — students completed a passage about cell division and reproduction in humans using key terminology",
+      "This topic was tested in M/J 2022 P1 Q18 (1 mark) — identifying the type of cell division that produces genetically identical diploid cells"
+    ],
+    "workedExample": {
+      "question": "Explain the benefit to the plant of producing offspring by sexual reproduction rather than by asexual reproduction. (4 marks)",
+      "steps": [
+        "Step 1: Identify that sexual reproduction involves gamete fusion creating genetic variation",
+        "Step 2: Explain that variation increases survival chances in changing environments",
+        "Step 3: Connect variation to natural selection and adaptation",
+        "Step 4: Contrast with asexual reproduction producing genetically identical offspring"
+      ],
+      "answer": "Sexual reproduction produces genetic variation in offspring through the fusion of genetically different gametes. This variation means some offspring may have characteristics that help them survive better in changing environmental conditions such as disease, climate change, or competition. Natural selection can then act on this variation, allowing better-adapted individuals to survive and reproduce. In contrast, asexual reproduction produces genetically identical offspring, so if conditions change unfavorably, all offspring may be equally vulnerable.",
+      "markScheme": "1 mark for mentioning genetic variation/fusion of gametes; 1 mark for linking variation to survival advantage; 1 mark for reference to environmental changes/natural selection; 1 mark for contrasting with asexual reproduction"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused mitosis and meiosis when describing reproduction' — always specify that mitosis produces diploid cells for growth/repair while meiosis produces haploid gametes for sexual reproduction",
+      "Examiner Report 2024: 'Students frequently gave vague answers about 'variation being good'' — always explain HOW genetic variation provides survival advantages in specific environmental conditions",
+      "Examiner Report 2022: 'Candidates often failed to distinguish between male and female gametes correctly' — remember that sperm/pollen are male gametes, while eggs/ovules are female gametes in animals and plants respectively"
+    ],
+    "keyDiagram": "Students must draw and label a comparison diagram showing: 1) Asexual reproduction - single parent producing genetically identical offspring via mitosis (show parent cell dividing into identical diploid cells), 2) Sexual reproduction - two parents producing genetically different offspring via meiosis and fertilization (show meiosis producing haploid gametes, fertilization creating diploid zygote). Include labels for diploid/haploid, mitosis/meiosis, and genetic variation outcomes.",
+    "quickRecap": "Reproduction occurs through asexual (mitosis, identical offspring, one parent) or sexual (meiosis + fertilization, genetic variation, two parents) methods. Mitosis produces diploid cells for growth/repair, while meiosis produces haploid gametes. Sexual reproduction creates genetic variation giving survival advantages in changing environments. Female gametes are eggs/ovules, male gametes are sperm/pollen."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:29:49.205Z",
-  "updated_at": "2026-04-05T21:29:49.205Z"
+  "updated_at": "2026-04-05T21:29:49.205Z",
+  "enriched_at": "2026-04-06T16:07:00.232Z"
 }

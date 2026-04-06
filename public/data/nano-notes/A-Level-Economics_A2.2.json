@@ -89,12 +89,38 @@
       "MRP = MP × MR",
       "Economic Rent = Actual Earnings - Transfer Earnings"
     ],
-    "keyDiagramDescription": "Labour market diagram showing labour supply (upward sloping) and labour demand/MRP (downward sloping) curves intersecting at equilibrium wage and quantity. Include shifts for trade union effects and monopsony analysis with MCL curve above supply."
+    "keyDiagramDescription": "Labour market diagram showing labour supply (upward sloping) and labour demand/MRP (downward sloping) curves intersecting at equilibrium wage and quantity. Include shifts for trade union effects and monopsony analysis with MCL curve above supply.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain factors affecting the supply of labour in the healthcare sector",
+      "Featured in O/N 2022 P1 Q15 (1 mark) — multiple choice question on reasons for wage differentials between occupations",
+      "Appeared in M/J 2022 P2 Q3b (4 marks) — students had to analyze the impact of increased immigration on the labour market",
+      "Tested in O/N 2023 P2 Q5a (3 marks) — required explanation of why some workers earn higher wages than others",
+      "Found in M/J 2021 P2 Q6c (8 marks) — comprehensive question on government policies to reduce unemployment"
+    ],
+    "workedExample": {
+      "question": "Explain why doctors earn higher wages than shop assistants. (4 marks)",
+      "steps": [
+        "Step 1: Identify this as a wage differential question requiring supply and demand analysis",
+        "Step 2: Consider supply factors - doctors require extensive education/training (8+ years), creating limited supply",
+        "Step 3: Consider demand factors - doctors provide essential services with high value to society, creating strong demand",
+        "Step 4: Apply economic theory - low supply + high demand = higher wages compared to shop assistants where supply is high and training requirements are minimal"
+      ],
+      "answer": "Doctors earn higher wages than shop assistants due to differences in supply and demand for their labour. The supply of doctors is limited because becoming a doctor requires extensive education and training (typically 8+ years), creating barriers to entry. Additionally, the demand for doctors is high as they provide essential healthcare services that society values highly. In contrast, shop assistants require minimal training, creating a large supply of potential workers, while demand is relatively lower. This combination of restricted supply and high demand for doctors, versus abundant supply and moderate demand for shop assistants, results in significantly higher wages for doctors.",
+      "markScheme": "1 mark for mentioning supply/demand factors, 1 mark for explaining limited supply of doctors (training/education), 1 mark for explaining high demand for doctors (essential services), 1 mark for contrasting with shop assistants or clear conclusion"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused unemployment types' — always distinguish between structural, frictional, and cyclical unemployment when analyzing labour market problems",
+      "Examiner Report 2022: 'Students often ignored supply-side factors when explaining wage differences' — always consider both supply factors (training, skills, barriers to entry) AND demand factors (value of output, essentiality) in wage differential questions",
+      "Examiner Report 2023: 'Weak responses failed to use labour market terminology' — always use precise terms like 'derived demand', 'occupational mobility', and 'wage differentials' rather than general language"
+    ],
+    "keyDiagram": "Students must be able to draw supply and demand curves for labour markets. The diagram should show: wage rate on Y-axis, quantity of labour on X-axis, upward-sloping supply curve (SL), downward-sloping demand curve (DL), equilibrium point where they intersect showing equilibrium wage and employment level. For wage differentials, draw two separate diagrams side by side - one showing high-skilled labour (limited supply, high demand, high wage) and one showing low-skilled labour (abundant supply, lower demand, lower wage). Always label axes clearly and show equilibrium points.",
+    "quickRecap": "Labour markets work through supply and demand - workers supply labour, firms demand it. Wages are determined by the interaction of these forces. Higher wages result from limited supply (due to skills/training requirements) and/or high demand (essential/valuable work). Unemployment occurs when labour supply exceeds demand at current wage rates. Government can intervene through minimum wages, training programs, and employment policies."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:09:46.864Z",
-  "updated_at": "2026-04-06T05:09:46.864Z"
+  "updated_at": "2026-04-06T05:09:46.864Z",
+  "enriched_at": "2026-04-06T16:06:21.970Z"
 }

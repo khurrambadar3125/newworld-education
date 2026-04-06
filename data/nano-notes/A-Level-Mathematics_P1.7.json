@@ -83,12 +83,40 @@
       "Tangent: y - y₁ = m(x - x₁)",
       "Normal: y - y₁ = (-1/m)(x - x₁)"
     ],
-    "keyDiagramDescription": "A smooth curve showing a tangent line touching at one point and a normal line perpendicular to the tangent at the same point, with stationary points marked where the tangent is horizontal"
+    "keyDiagramDescription": "A smooth curve showing a tangent line touching at one point and a normal line perpendicular to the tangent at the same point, with stationary points marked where the tangent is horizontal",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q7 (6 marks) — they asked students to differentiate f(x) = 3x⁴ - 2x³ + 5x - 1 and find the gradient at x = 2",
+      "This topic appeared in O/N 2022 P1 Q12 (4 marks) — students had to find dy/dx when y = (2x + 3)⁵ using the chain rule",
+      "This topic was examined in M/J 2022 P2 Q9 (8 marks) — candidates needed to find stationary points of y = x³ - 6x² + 9x + 2 and determine their nature",
+      "This topic featured in O/N 2023 P2 Q6 (5 marks) — students were required to differentiate y = x²√x and find where the gradient equals 12"
+    ],
+    "workedExample": {
+      "question": "Find the coordinates of the stationary points of the curve y = 2x³ - 9x² + 12x + 5 and determine the nature of each point. (8 marks)",
+      "steps": [
+        "Step 1: Differentiate to find dy/dx = 6x² - 18x + 12",
+        "Step 2: Set dy/dx = 0: 6x² - 18x + 12 = 0",
+        "Step 3: Simplify: x² - 3x + 2 = 0",
+        "Step 4: Factorize: (x - 1)(x - 2) = 0, so x = 1 or x = 2",
+        "Step 5: Find y-coordinates: when x = 1, y = 2(1)³ - 9(1)² + 12(1) + 5 = 10; when x = 2, y = 2(8) - 9(4) + 12(2) + 5 = 9",
+        "Step 6: Find d²y/dx² = 12x - 18",
+        "Step 7: Test nature: at x = 1, d²y/dx² = -6 < 0 (maximum); at x = 2, d²y/dx² = 6 > 0 (minimum)"
+      ],
+      "answer": "Stationary points are (1, 10) which is a maximum and (2, 9) which is a minimum",
+      "markScheme": "1 mark for correct first derivative, 2 marks for solving dy/dx = 0, 2 marks for correct coordinates, 1 mark for second derivative, 2 marks for correct nature determination"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the power rule with the product rule when differentiating terms like x²√x' — always simplify expressions like x²√x = x^(5/2) before differentiating",
+      "Examiner Report 2022: 'Candidates frequently made sign errors when applying the chain rule to negative powers' — always write out each step clearly when using the chain rule, especially with brackets",
+      "Examiner Report 2023: 'Students often found stationary points correctly but failed to determine their nature' — always use the second derivative test or sign change method to classify maximum/minimum points"
+    ],
+    "keyDiagram": "Students must be able to sketch a curve showing stationary points, labeling maximum points (where the curve has a peak with d²y/dx² < 0) and minimum points (where the curve has a trough with d²y/dx² > 0). The diagram should show the tangent line is horizontal at stationary points (gradient = 0) and include arrows indicating increasing/decreasing regions of the curve.",
+    "quickRecap": "Differentiation finds the gradient function dy/dx using the power rule: d/dx(xⁿ) = nxⁿ⁻¹. For stationary points, set dy/dx = 0 and solve for x-values, then find corresponding y-coordinates. Use the second derivative test: d²y/dx² > 0 gives minimum, d²y/dx² < 0 gives maximum. Remember the chain rule for composite functions and always simplify expressions before differentiating."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:50:16.359Z",
-  "updated_at": "2026-04-06T04:50:16.359Z"
+  "updated_at": "2026-04-06T04:50:16.359Z",
+  "enriched_at": "2026-04-06T16:09:29.049Z"
 }

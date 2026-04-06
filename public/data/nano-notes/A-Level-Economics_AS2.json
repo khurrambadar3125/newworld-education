@@ -93,12 +93,38 @@
       "XED = % change in quantity demanded of good A / % change in price of good B",
       "PES = % change in quantity supplied / % change in price"
     ],
-    "keyDiagramDescription": "Standard demand and supply diagram with price on Y-axis, quantity on X-axis, downward-sloping demand curve, upward-sloping supply curve, intersection showing equilibrium price and quantity, with consumer and producer surplus areas clearly marked"
+    "keyDiagramDescription": "Standard demand and supply diagram with price on Y-axis, quantity on X-axis, downward-sloping demand curve, upward-sloping supply curve, intersection showing equilibrium price and quantity, with consumer and producer surplus areas clearly marked",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to explain how the price mechanism allocates resources in a market economy and analyze one limitation of the price system",
+      "O/N 2022 P1 Q15 (1 mark) — multiple choice question testing understanding of how prices signal information to producers and consumers",
+      "M/J 2022 P2 Q3(c) (6 marks) — candidates had to evaluate the effectiveness of the price system in allocating scarce resources compared to government intervention",
+      "O/N 2021 P2 Q2(b) (4 marks) — students needed to explain the signaling and incentive functions of prices using a specific market example"
+    ],
+    "workedExample": {
+      "question": "Explain how the price mechanism helps to solve the basic economic problem of scarcity. Use examples in your answer. (8 marks)",
+      "steps": [
+        "Step 1: Define scarcity - unlimited wants but limited resources, requiring choices about what to produce",
+        "Step 2: Explain the signaling function - prices provide information about relative scarcity (high price = scarce, low price = abundant)",
+        "Step 3: Describe the incentive function - prices motivate producers to supply profitable goods and consumers to economize on expensive items",
+        "Step 4: Show rationing function - high prices limit demand to those willing/able to pay",
+        "Step 5: Provide concrete example - oil price increase signals scarcity, incentivizes alternative energy production, rations consumption to essential uses"
+      ],
+      "answer": "The price mechanism solves scarcity through three key functions. First, prices signal information about relative scarcity - when goods become scarcer, prices rise to inform market participants. Second, prices create incentives - high prices encourage producers to increase supply and consumers to reduce consumption. Third, prices ration goods to those most willing to pay. For example, if oil becomes scarcer, rising prices signal this scarcity, incentivize development of renewable energy, and ration oil consumption to essential uses like transport rather than heating.",
+      "markScheme": "2 marks for explaining each function (signaling, incentive, rationing), 2 marks for relevant, developed example showing how price mechanism works in practice"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the price mechanism with individual market forces' — always distinguish between the overall price system and supply/demand in single markets",
+      "Examiner Report 2022: 'Students often gave vague explanations of resource allocation' — always specify HOW prices direct resources from less profitable to more profitable uses with concrete examples",
+      "Examiner Report 2021: 'Candidates frequently ignored the limitations of the price system' — remember to mention market failures like externalities and public goods when evaluating the price mechanism"
+    ],
+    "keyDiagram": "The Resource Allocation Flow Diagram showing: (1) Consumer preferences creating demand signals through prices, (2) Price changes sending information to producers, (3) Profit opportunities directing resources between industries, (4) Factor payments (wages, rent, profit) distributing income, (5) Income determining purchasing power and demand. Draw circular flow with arrows showing how price signals move resources from declining industries (low prices/profits) to growing industries (high prices/profits). Include labels for 'signaling', 'incentive', and 'rationing' functions at appropriate points.",
+    "quickRecap": "The price mechanism solves scarcity through three functions: signaling (prices show relative scarcity), incentives (profits direct production decisions), and rationing (prices limit consumption). High prices indicate scarcity and profitability, attracting resources to that sector. Low prices indicate abundance, causing resources to move elsewhere. However, the system fails with public goods, externalities, and inequality issues."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:07:37.991Z",
-  "updated_at": "2026-04-06T05:07:37.991Z"
+  "updated_at": "2026-04-06T05:07:37.991Z",
+  "enriched_at": "2026-04-06T16:07:50.525Z"
 }

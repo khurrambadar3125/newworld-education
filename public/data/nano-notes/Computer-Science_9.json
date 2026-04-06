@@ -75,12 +75,39 @@
       "When using ORDER BY, specify ASC or DESC even though ASC is default"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Database structure diagram showing tables with field names, data types, and primary key indicators. Include relationship lines between tables if multiple tables are involved."
+    "keyDiagramDescription": "Database structure diagram showing tables with field names, data types, and primary key indicators. Include relationship lines between tables if multiple tables are involved.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to write SQL statements to retrieve information from a database using SELECT and WHERE clauses with boolean conditions",
+      "This topic was tested in O/N 2022 P2 Q5 (6 marks) — they asked students to identify data types for database fields and suggest three possible queries that could be performed on a music database",
+      "This topic was tested in M/J 2024 P2 Q2 (5 marks) — they asked students to identify foreign keys and specify which database tables they are found in, testing understanding of table relationships",
+      "This topic was tested in O/N 2023 P2 Q4 (7 marks) — they asked students to complete definitions of database terminology including fields, entities, and foreign keys with specific examples from a given database schema"
+    ],
+    "workedExample": {
+      "question": "A music database contains a table called SONGS with fields: SongNumber, Title, Recorded, Minutes. (a) Identify the data type for each field (4 marks). (b) Write three different queries that could be performed on this database (3 marks).",
+      "steps": [
+        "Step 1: Analyze each field name to determine what type of data it stores",
+        "Step 2: For SongNumber - could be text/alphanumeric as it may contain letters and numbers",
+        "Step 3: For Title - text/alphanumeric as song titles contain words",
+        "Step 4: For Recorded - date/time as this stores when the song was recorded",
+        "Step 5: For Minutes - real/numeric as this stores decimal values for song length",
+        "Step 6: Think of three different types of queries: search, calculate, and sort operations"
+      ],
+      "answer": "(a) SongNumber: Text/Alphanumeric, Title: Text/Alphanumeric, Recorded: Date/Time, Minutes: Real/Numeric (b) Find all songs recorded after a specific date; Calculate total minutes of all songs; Sort songs by title alphabetically",
+      "markScheme": "1 mark for each correct data type identification. 1 mark for each realistic and different query type that uses the available fields appropriately."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused primary and foreign keys' — always remember that a foreign key in one table is the primary key in another table, creating the relationship",
+      "Examiner Report 2022: 'Students often wrote incomplete SQL statements' — always include the table name after FROM and ensure WHERE conditions use correct field names and syntax",
+      "Examiner Report 2024: 'Candidates frequently gave vague database terminology definitions' — always provide specific examples from the given database scenario when defining fields, entities, or keys"
+    ],
+    "keyDiagram": "Students must be able to draw a two-table database relationship diagram showing: Table 1 with primary key highlighted, Table 2 with foreign key highlighted, and an arrow connecting the foreign key to the primary key it references. Include field names, data types, and show sample data in at least 3 records per table. Mark primary keys with 'PK' and foreign keys with 'FK' annotations.",
+    "quickRecap": "Databases store data in tables with rows (records) and columns (fields). Primary keys uniquely identify records, foreign keys link tables together. SQL SELECT statements retrieve data using WHERE clauses for conditions. Data types include text/alphanumeric, numeric/real, date/time, and boolean - choose based on what the field stores."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:46:30.255Z",
-  "updated_at": "2026-04-06T03:46:30.255Z"
+  "updated_at": "2026-04-06T03:46:30.255Z",
+  "enriched_at": "2026-04-06T16:09:37.696Z"
 }

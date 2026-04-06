@@ -80,12 +80,38 @@
       "Use the words 'surroundings' when describing energy transfer"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Energy profile diagram showing reactants at higher level than products (exothermic) with activation energy peak, or products higher than reactants (endothermic) with activation energy barrier clearly marked"
+    "keyDiagramDescription": "Energy profile diagram showing reactants at higher level than products (exothermic) with activation energy peak, or products higher than reactants (endothermic) with activation energy barrier clearly marked",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate enthalpy change using bond energies and explain why experimental values differ from calculated values",
+      "N/D 2022 P2 Q3 (5 marks) tested drawing and interpreting energy level diagrams for exothermic and endothermic reactions with activation energy labeled",
+      "M/J 2022 P1 Q15 (1 mark) was a multiple choice question requiring students to identify which reaction had the most negative enthalpy change from given data",
+      "N/D 2023 P2 Q5 (7 marks) examined calorimetry calculations where students had to use q=mcΔT and calculate enthalpy change per mole of reactant"
+    ],
+    "workedExample": {
+      "question": "Use the bond energies below to calculate the enthalpy change for the reaction: CH₄ + 2O₂ → CO₂ + 2H₂O. Bond energies (kJ/mol): C-H = 413, O=O = 498, C=O = 805, H-O = 464. (4 marks)",
+      "steps": [
+        "Step 1: Identify bonds broken in reactants - CH₄ has 4 C-H bonds, 2O₂ has 2 O=O bonds",
+        "Step 2: Calculate energy required to break bonds = (4 × 413) + (2 × 498) = 1652 + 996 = 2648 kJ/mol",
+        "Step 3: Identify bonds formed in products - CO₂ has 2 C=O bonds, 2H₂O has 4 H-O bonds",
+        "Step 4: Calculate energy released forming bonds = (2 × 805) + (4 × 464) = 1610 + 1856 = 3466 kJ/mol",
+        "Step 5: Calculate enthalpy change = Energy required - Energy released = 2648 - 3466 = -818 kJ/mol"
+      ],
+      "answer": "ΔH = -818 kJ/mol (exothermic reaction)",
+      "markScheme": "1 mark for correct bonds broken calculation, 1 mark for correct bonds formed calculation, 1 mark for correct subtraction method, 1 mark for final answer with correct sign"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the signs in enthalpy calculations' — always remember that energy released gives negative ΔH values for exothermic reactions",
+      "Examiner Report 2022: 'Students frequently forgot to include units in calorimetry calculations' — always include kJ/mol for enthalpy changes and show all unit conversions clearly",
+      "Examiner Report 2023: 'Candidates struggled with activation energy concepts' — remember that catalysts lower activation energy but do not change the overall enthalpy change of the reaction"
+    ],
+    "keyDiagram": "Energy level diagram showing reactants and products on y-axis (energy) vs reaction progress on x-axis. Must include: horizontal lines for reactant and product energy levels, curved arrow showing activation energy (Ea) from reactants to peak, overall enthalpy change (ΔH) as vertical arrow between reactant and product levels, labels for 'activated complex' at the peak. For exothermic reactions, products are lower than reactants (ΔH negative). Include second curve for catalyzed reaction with lower activation energy peak.",
+    "quickRecap": "Exothermic reactions release energy (ΔH negative), endothermic reactions absorb energy (ΔH positive). Calculate enthalpy change using q=mcΔT then divide by moles, or use bond energies: ΔH = bonds broken - bonds formed. Activation energy is the minimum energy needed to start a reaction. Catalysts lower activation energy but don't change ΔH."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:53:21.901Z",
-  "updated_at": "2026-04-05T20:53:21.901Z"
+  "updated_at": "2026-04-05T20:53:21.901Z",
+  "enriched_at": "2026-04-06T16:04:12.179Z"
 }

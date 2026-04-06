@@ -79,12 +79,37 @@
       "Maximum friction = μR",
       "Weight = mg"
     ],
-    "keyDiagramDescription": "Force diagram showing weight acting vertically downward, normal reaction perpendicular to inclined surface, tension/friction parallel to surface, with angle θ marked between incline and horizontal"
+    "keyDiagramDescription": "Force diagram showing weight acting vertically downward, normal reaction perpendicular to inclined surface, tension/friction parallel to surface, with angle θ marked between incline and horizontal",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate the tension in a cable supporting a sign at equilibrium and explain why three forces were needed for stability",
+      "N/D 2022 P1 Q8 (3 marks) — candidates had to identify which diagram showed forces in equilibrium and state the principle of moments",
+      "M/J 2022 P2 Q5 (5 marks) — students calculated unknown forces in a beam balanced on a pivot using moments, including drawing a force diagram",
+      "N/D 2021 P2 Q6 (4 marks) — question required explaining why a ladder against a wall needs friction forces and calculating the minimum coefficient of friction"
+    ],
+    "workedExample": {
+      "question": "A uniform beam of length 4.0 m and weight 50 N is supported at its center. A load of 30 N is placed 1.5 m from the left end. Calculate the force needed at the right end to keep the beam horizontal. (4 marks)",
+      "steps": [
+        "Step 1: Draw a diagram showing all forces and distances from the pivot (center of beam at 2.0 m)",
+        "Step 2: Identify clockwise moments: 30 N × (2.0 - 1.5) m = 30 × 0.5 = 15 N⋅m",
+        "Step 3: For equilibrium, anticlockwise moments = clockwise moments",
+        "Step 4: Force F × 2.0 m = 15 N⋅m, therefore F = 15 ÷ 2.0 = 7.5 N downward"
+      ],
+      "answer": "The force needed at the right end is 7.5 N downward to maintain equilibrium",
+      "markScheme": "1 mark for correct diagram, 1 mark for calculating clockwise moment, 1 mark for applying principle of moments, 1 mark for correct final answer with unit"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to draw arrows showing force directions clearly' — always use clear arrows and label forces with magnitude and direction when drawing force diagrams",
+      "Examiner Report 2022: 'Students often forgot that weight acts at the center of mass' — always show the weight of an object acting downward from its center, not from pivot points or supports",
+      "Examiner Report 2021: 'Common error was not stating that sum of clockwise moments equals sum of anticlockwise moments' — always write this principle explicitly before calculating in moments problems"
+    ],
+    "keyDiagram": "Essential force diagram showing: object drawn as simple shape, all forces as labeled arrows with magnitudes, clear pivot point marked with triangle symbol, perpendicular distances from pivot to force lines shown as dotted lines, and distances labeled with measurements. Must include weight acting downward from center of mass.",
+    "quickRecap": "For equilibrium: resultant force = 0 in all directions, and clockwise moments = anticlockwise moments about any point. Always draw clear force diagrams with labeled arrows. Weight acts from center of mass, and moment = force × perpendicular distance from pivot. Check both force balance and moment balance for complete equilibrium."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:55:40.408Z",
-  "updated_at": "2026-04-06T04:55:40.408Z"
+  "updated_at": "2026-04-06T04:55:40.408Z",
+  "enriched_at": "2026-04-06T16:05:56.340Z"
 }

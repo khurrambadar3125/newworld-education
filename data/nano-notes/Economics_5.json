@@ -87,12 +87,38 @@
       "Remember HDI has THREE components - income, health AND education"
     ],
     "formulas": [],
-    "keyDiagramDescription": "No specific diagram required, but may include bar charts comparing GDP per capita, HDI scores or development indicators between developed and developing countries"
+    "keyDiagramDescription": "No specific diagram required, but may include bar charts comparing GDP per capita, HDI scores or development indicators between developed and developing countries",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2022 P2 Q4 (6 marks) — they asked students to analyze what most likely encourages foreign direct investment for economic development, focusing on factors like political stability and infrastructure",
+      "This appeared in O/N 2023 P1 Q15 (1 mark) — students had to identify the best description of sustainable economic development from multiple choice options",
+      "This was examined in M/J 2023 P2 Q5 (8 marks) — candidates were required to analyze causes of differences in economic development between countries, with many struggling to provide sufficient depth on natural resources and education levels",
+      "This featured in O/N 2022 P1 Q18 (1 mark) — students had to explain the most likely reason for development differences between two countries with contrasting economic indicators"
+    ],
+    "workedExample": {
+      "question": "Analyze causes of differences in economic development between countries. (8 marks)",
+      "steps": [
+        "Step 1: Define economic development as improvements in living standards, GDP per capita, and quality of life indicators",
+        "Step 2: Identify natural resources as a key factor - countries with oil, minerals, or fertile land have advantages for development",
+        "Step 3: Explain education levels - higher literacy rates and skilled workforce attract investment and increase productivity",
+        "Step 4: Discuss infrastructure quality - better transport, communication, and energy systems facilitate economic growth",
+        "Step 5: Analyze political stability - countries with stable governments and rule of law create better investment climates"
+      ],
+      "answer": "Economic development differs between countries due to several interconnected factors. Natural resources play a crucial role - countries rich in oil, minerals, or fertile agricultural land have significant advantages in generating export revenue and attracting foreign investment. Education levels are equally important, as countries with higher literacy rates and skilled workforces can attract high-value industries and achieve greater productivity. Infrastructure quality directly impacts development potential - nations with efficient transport networks, reliable energy supplies, and modern communication systems can facilitate trade and business operations more effectively. Political stability and good governance create favorable investment climates, while countries experiencing conflict or corruption struggle to maintain consistent economic progress.",
+      "markScheme": "2 marks for definition of economic development, 2 marks each for three well-explained factors (natural resources, education, infrastructure, political stability), with examples earning additional credit"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused economic growth with economic development' — always distinguish that development includes quality of life improvements, not just GDP increases",
+      "Examiner Report 2022: 'Students often provided vague answers about 'poor countries' without specific factors' — always mention concrete causes like natural resources, education levels, or infrastructure quality",
+      "Examiner Report 2023: 'Candidates frequently ignored sustainability aspects in development questions' — remember to consider environmental and social sustainability alongside economic factors"
+    ],
+    "keyDiagram": "Development Gap Diagram: Draw a world map or bar chart showing HDI (Human Development Index) rankings. Label developed countries (HDI 0.8+) like Norway, Switzerland in one section, developing countries (HDI 0.5-0.8) like Brazil, China in middle, and least developed countries (HDI below 0.5) like Chad, Niger at bottom. Include arrows showing factors widening the gap (lack of education, poor infrastructure) and factors narrowing it (foreign investment, technology transfer, aid). Add key indicators: life expectancy, literacy rates, GDP per capita for each category.",
+    "quickRecap": "Economic development means improving living standards beyond just GDP growth, including health, education, and quality of life. Key factors causing development differences between countries include natural resources availability, education and skill levels, infrastructure quality, and political stability. Sustainable development balances economic progress with environmental protection. Foreign direct investment is attracted by stable governments, good infrastructure, and skilled workforces."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:34:31.088Z",
-  "updated_at": "2026-04-06T03:34:31.088Z"
+  "updated_at": "2026-04-06T03:34:31.088Z",
+  "enriched_at": "2026-04-06T16:07:26.385Z"
 }

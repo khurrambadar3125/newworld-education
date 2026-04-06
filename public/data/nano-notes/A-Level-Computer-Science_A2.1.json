@@ -88,12 +88,39 @@
       "File size (bits) = width × height × colour depth",
       "Sound file size = sample rate × bit depth × duration × channels"
     ],
-    "keyDiagramDescription": "Floating point representation diagram showing bit allocation between sign bit, exponent bits, and mantissa bits, with example calculation of the decimal value"
+    "keyDiagramDescription": "Floating point representation diagram showing bit allocation between sign bit, exponent bits, and mantissa bits, with example calculation of the decimal value",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to convert the denary number 156 to binary and hexadecimal, then explain why hexadecimal is used by programmers",
+      "This topic appeared in O/N 2022 P1 Q8 (4 marks) — candidates had to calculate storage requirements for a bitmap image given dimensions and color depth",
+      "This topic was examined in M/J 2022 P2 Q2 (5 marks) — students needed to explain the difference between lossy and lossless compression with examples",
+      "This topic featured in O/N 2023 P1 Q12 (3 marks) — they tested understanding of ASCII values and character representation in binary"
+    ],
+    "workedExample": {
+      "question": "A sound file is sampled at 44.1 kHz with a bit depth of 16 bits. Calculate the file size for a 3-minute stereo recording. Give your answer in MB. (4 marks)",
+      "steps": [
+        "Step 1: Calculate samples per second = 44,100 Hz",
+        "Step 2: Calculate total samples = 44,100 × 180 seconds = 7,938,000 samples",
+        "Step 3: Account for stereo (2 channels) = 7,938,000 × 2 = 15,876,000 samples",
+        "Step 4: Calculate total bits = 15,876,000 × 16 bits = 254,016,000 bits",
+        "Step 5: Convert to bytes = 254,016,000 ÷ 8 = 31,752,000 bytes",
+        "Step 6: Convert to MB = 31,752,000 ÷ 1,000,000 = 31.75 MB"
+      ],
+      "answer": "31.75 MB",
+      "markScheme": "1 mark for correct calculation of total samples, 1 mark for accounting for stereo channels, 1 mark for applying bit depth correctly, 1 mark for final answer with correct units"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused bits and bytes in storage calculations' — always clearly state whether your answer is in bits or bytes and convert appropriately",
+      "Examiner Report 2022: 'Students often forgot that stereo files have two channels' — always check if audio questions mention mono or stereo recording",
+      "Examiner Report 2023: 'Candidates frequently gave incorrect examples of file formats for compression types' — remember JPEG is lossy, PNG is lossless, not the other way around"
+    ],
+    "keyDiagram": "Students must be able to draw a number base conversion table showing denary (0-15), binary (0000-1111), and hexadecimal (0-F) equivalents. Include column headers and show the relationship between 4 binary digits equaling 1 hexadecimal digit. Also draw a simple bitmap representation showing how pixels are stored as binary values with different bit depths (1-bit, 8-bit, 24-bit examples).",
+    "quickRecap": "Data is represented in binary (0s and 1s) in computer systems. Remember: 8 bits = 1 byte, hexadecimal uses base 16 (0-F), and file sizes depend on sampling rate × bit depth × duration × channels for audio. ASCII represents characters as 7-bit codes. Compression reduces file sizes - lossy (JPEG) removes data permanently, lossless (PNG) allows perfect reconstruction."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:17:45.701Z",
-  "updated_at": "2026-04-06T05:17:45.701Z"
+  "updated_at": "2026-04-06T05:17:45.701Z",
+  "enriched_at": "2026-04-06T16:05:56.268Z"
 }

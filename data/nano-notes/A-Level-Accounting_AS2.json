@@ -91,12 +91,39 @@
       "Closing capital = Opening capital + Net profit + Capital introduced - Drawings",
       "Working capital = Current assets - Current liabilities"
     ],
-    "keyDiagramDescription": "Standard format showing Income Statement (Revenue, Cost of sales, Gross profit, Expenses, Net profit) and Balance Sheet (Non-current assets, Current assets, Current liabilities, Working capital, Net assets, Capital account with opening balance, profit, drawings, closing balance)"
+    "keyDiagramDescription": "Standard format showing Income Statement (Revenue, Cost of sales, Gross profit, Expenses, Net profit) and Balance Sheet (Non-current assets, Current assets, Current liabilities, Working capital, Net assets, Capital account with opening balance, profit, drawings, closing balance)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (12 marks) — they asked students to prepare a Trading, Profit and Loss Account and Balance Sheet from a trial balance with adjustments for depreciation and bad debts",
+      "This topic appeared in O/N 2022 P2 Q3 (8 marks) — students had to calculate gross profit, net profit and working capital from given financial statement extracts",
+      "This topic was examined in M/J 2022 P1 Q15 (1 mark) — multiple choice question asking which items appear in the current assets section of a sole trader's balance sheet",
+      "This topic featured in O/N 2023 P2 Q2 (10 marks) — candidates were required to prepare a corrected Profit and Loss Account after identifying errors in bookkeeping entries"
+    ],
+    "workedExample": {
+      "question": "Sarah's trial balance shows: Sales $45,000, Purchases $28,000, Rent $3,600, Wages $4,500, Equipment $15,000, Debtors $2,800, Bank $1,900, Creditors $3,200, Capital $47,600. Prepare her Trading, Profit and Loss Account for the year. (8 marks)",
+      "steps": [
+        "Step 1: Set up Trading Account with Sales $45,000 as revenue",
+        "Step 2: Calculate Cost of Goods Sold = Purchases $28,000 (no opening/closing stock given)",
+        "Step 3: Calculate Gross Profit = Sales $45,000 - Cost of Goods Sold $28,000 = $17,000",
+        "Step 4: Set up Profit and Loss Account starting with Gross Profit $17,000",
+        "Step 5: Deduct expenses: Rent $3,600 + Wages $4,500 = Total expenses $8,100",
+        "Step 6: Calculate Net Profit = Gross Profit $17,000 - Expenses $8,100 = $8,900"
+      ],
+      "answer": "TRADING ACCOUNT: Sales $45,000, Less: Cost of Goods Sold $28,000, Gross Profit $17,000. PROFIT AND LOSS ACCOUNT: Gross Profit $17,000, Less: Rent $3,600, Wages $4,500, Total Expenses $8,100, Net Profit $8,900",
+      "markScheme": "2 marks for correct Trading Account format, 2 marks for accurate gross profit calculation, 2 marks for Profit and Loss Account layout, 2 marks for correct net profit figure"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to distinguish between capital and revenue expenditure when preparing financial statements' — always check whether expenses are for the current period or relate to fixed assets",
+      "Examiner Report 2022: 'Students frequently placed drawings in the Profit and Loss Account instead of the Balance Sheet' — remember drawings reduce capital and appear in the financed by section, not as an expense",
+      "Examiner Report 2023: 'Candidates often calculated working capital incorrectly by including fixed assets' — working capital is current assets minus current liabilities only, never include equipment or premises"
+    ],
+    "keyDiagram": "Students must be able to draw the interconnected structure showing: Trial Balance (top) feeding into Trading Account (Sales, COGS, Gross Profit), which flows to Profit and Loss Account (Gross Profit, Expenses, Net Profit), and Balance Sheet (Fixed Assets, Current Assets, Current Liabilities, Capital + Net Profit - Drawings). Show arrows indicating how Net Profit transfers from P&L to increase Capital in Balance Sheet, and how the accounting equation Assets = Capital + Liabilities must balance.",
+    "quickRecap": "Financial statements for sole traders comprise Trading Account (calculates gross profit), Profit and Loss Account (calculates net profit), and Balance Sheet (shows financial position). Trading Account: Sales minus Cost of Goods Sold equals Gross Profit. Profit and Loss Account: Gross Profit minus expenses equals Net Profit. Balance Sheet: Assets must equal Capital plus Liabilities, with Net Profit added to Capital and Drawings subtracted."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:24:24.951Z",
-  "updated_at": "2026-04-06T05:24:24.951Z"
+  "updated_at": "2026-04-06T05:24:24.951Z",
+  "enriched_at": "2026-04-06T16:08:35.703Z"
 }

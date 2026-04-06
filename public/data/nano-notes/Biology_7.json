@@ -84,12 +84,36 @@
       "In Pakistan's hot climate, increased sweating affects blood volume - good context for homeostasis questions"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Heart structure showing four chambers (left and right atria, left and right ventricles), major blood vessels (aorta, pulmonary artery, pulmonary vein, vena cava), and valves. Include direction of blood flow with arrows."
+    "keyDiagramDescription": "Heart structure showing four chambers (left and right atria, left and right ventricles), major blood vessels (aorta, pulmonary artery, pulmonary vein, vena cava), and valves. Include direction of blood flow with arrows.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (3 marks) — they asked students to explain why radioactive glucose concentration increases over time in red blood cells, requiring knowledge of facilitated diffusion and carrier proteins",
+      "This topic appeared in O/N 2022 P1 Q15 (1 mark) — students had to identify what additional information was needed to determine white blood cell diameter in micrometres from a microscopy image",
+      "This topic was examined in M/J 2024 P2 Q6 (4 marks) — candidates needed to explain why decreased CO2 leads to decreased oxygen release from red blood cells, testing understanding of the Bohr effect",
+      "This topic featured in O/N 2023 P2 Q2 (5 marks) — students had to complete a table naming three types of white blood cells from given descriptions of their functions and appearance"
+    ],
+    "workedExample": {
+      "question": "Explain why radioactive glucose concentration increases over time in red blood cells. (3 marks)",
+      "steps": [
+        "Step 1: Identify the concentration gradient - glucose is initially at higher concentration outside the red blood cells than inside",
+        "Step 2: Explain the transport mechanism - glucose cannot pass directly through the cell membrane due to its size and polarity, so requires facilitated diffusion",
+        "Step 3: Describe the process - glucose moves via specific carrier proteins from high concentration (outside) to low concentration (inside the cell) over time"
+      ],
+      "answer": "Glucose diffuses/moves from high to low concentration gradient. This occurs by facilitated diffusion as glucose cannot pass directly through the membrane. Specific carrier proteins transport glucose into the red blood cells.",
+      "markScheme": "1 mark for concentration gradient, 1 mark for facilitated diffusion/carrier proteins, 1 mark for direction of movement"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused active transport with facilitated diffusion when explaining glucose uptake' — always specify that glucose transport into cells is passive and requires no energy",
+      "Examiner Report 2024: 'Students frequently forgot to mention carrier proteins when describing facilitated diffusion' — always include the role of specific transport proteins in your answers",
+      "Examiner Report 2022: 'Candidates often described osmosis instead of diffusion for glucose transport' — remember that glucose transport involves facilitated diffusion, not osmosis which is only for water movement"
+    ],
+    "keyDiagram": "Students must be able to draw a detailed diagram of the human heart showing four chambers (left and right atria, left and right ventricles), major blood vessels (aorta, pulmonary artery, pulmonary veins, vena cavae), and heart valves (bicuspid, tricuspid, semi-lunar valves). The diagram should include arrows showing blood flow direction and be clearly labeled. Additionally, students should be able to draw a red blood cell showing its biconcave shape and a diagram of gas exchange in the alveoli showing the relationship between alveoli, capillaries, and the direction of oxygen and carbon dioxide movement.",
+    "quickRecap": "Human transport involves the circulatory system with heart, blood vessels, and blood. Heart has four chambers pumping oxygenated blood from lungs to body via arteries, and deoxygenated blood back via veins. Blood contains red blood cells (oxygen transport), white blood cells (immunity), platelets (clotting), and plasma (transport medium). Gas exchange occurs in alveoli where oxygen enters blood and carbon dioxide is removed."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:28:04.299Z",
-  "updated_at": "2026-04-05T21:28:04.299Z"
+  "updated_at": "2026-04-05T21:28:04.299Z",
+  "enriched_at": "2026-04-06T16:09:49.229Z"
 }

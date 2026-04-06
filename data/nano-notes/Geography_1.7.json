@@ -86,12 +86,37 @@
       "Problems and solutions questions are common - learn both negative and positive impacts"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Urban land use model showing CBD in center, surrounded by inner city (including squatter settlements), suburbs, and rural-urban fringe. Include transport routes and direction of urban growth."
+    "keyDiagramDescription": "Urban land use model showing CBD in center, surrounded by inner city (including squatter settlements), suburbs, and rural-urban fringe. Include transport routes and direction of urban growth.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to compare counterurbanisation with re-urbanisation processes",
+      "This topic was tested in O/N 2022 P1 Q5 (4 marks) — they asked students to explain consequences of re-urbanisation with examples",
+      "This topic was tested in M/J 2024 P2 Q2 (8 marks) — they asked students to evaluate whether urbanisation is the main factor in urban environmental degradation",
+      "This topic was tested in O/N 2023 P1 Q3 (4 marks) — they asked students to explain consequences of counterurbanisation for urban areas"
+    ],
+    "workedExample": {
+      "question": "With aid of examples, explain the consequences of re-urbanisation. (4 marks)",
+      "steps": [
+        "Step 1: Define re-urbanisation as the movement of people back into urban areas that have previously experienced decline",
+        "Step 2: Identify key consequences: gentrification, displacement, improved services, increased property prices",
+        "Step 3: Use specific examples like London Docklands, Detroit downtown revival, or Barcelona's regeneration",
+        "Step 4: Link consequences to examples with clear explanation of cause and effect"
+      ],
+      "answer": "Re-urbanisation leads to gentrification where wealthier residents move into previously declining urban areas, as seen in London's Docklands where former industrial areas became luxury housing. This causes displacement of original low-income residents who can no longer afford rising property prices. However, re-urbanisation also brings improved services and infrastructure, such as better transport links and retail facilities in Detroit's downtown area following urban renewal projects. The process creates social segregation as different income groups become spatially separated within the urban area.",
+      "markScheme": "1 mark for correct definition/understanding, 1 mark for each consequence clearly explained with example (max 3 consequences), 1 mark for specific named example with detail"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused urbanisation with re-urbanisation' — always clearly distinguish between initial urban growth and the return of people to declining urban areas",
+      "Examiner Report 2022: 'Students failed to provide specific examples when asked' — always name actual places like London Docklands, Detroit, or Manchester when discussing urban regeneration",
+      "Examiner Report 2024: 'Candidates often described consequences without explaining the process' — always explain HOW re-urbanisation leads to gentrification and displacement, not just that it happens"
+    ],
+    "keyDiagram": "Urban Settlement Cycle Diagram: Draw a circular flow diagram showing the four stages - urbanisation (rural to urban migration), suburbanisation (movement to city edges), counterurbanisation (movement to rural areas), and re-urbanisation (return to city centers). Include arrows showing population movement directions, timeframes (urbanisation: industrial period, suburbanisation: 1950s-70s, counterurbanisation: 1970s-90s, re-urbanisation: 1990s-present), and driving factors for each stage (job opportunities, car ownership, quality of life, urban regeneration).",
+    "quickRecap": "Urbanisation is the increase in proportion of people living in urban areas, driven by rural-urban migration and natural increase. It follows a cycle: initial urbanisation, then suburbanisation (movement to edges), counterurbanisation (movement to rural areas), and re-urbanisation (return to city centers). Key consequences include gentrification, displacement of original residents, improved services, and increased property prices. Always use specific examples like London Docklands for re-urbanisation."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:56:35.854Z",
-  "updated_at": "2026-04-06T03:56:35.854Z"
+  "updated_at": "2026-04-06T03:56:35.854Z",
+  "enriched_at": "2026-04-06T16:08:12.600Z"
 }

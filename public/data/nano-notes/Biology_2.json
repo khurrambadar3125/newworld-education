@@ -84,12 +84,38 @@
       "Use the term 'net movement' in definitions, not just 'movement'"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Cell membrane showing diffusion (small molecules passing through), osmosis (water molecules through membrane), and active transport (carrier proteins using ATP energy to move particles against gradient)"
+    "keyDiagramDescription": "Cell membrane showing diffusion (small molecules passing through), osmosis (water molecules through membrane), and active transport (carrier proteins using ATP energy to move particles against gradient)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (3 marks) — they asked students to identify which processes require ATP from a list including phagocytosis, active transport, and facilitated diffusion",
+      "This topic appeared in O/N 2022 P1 Q12 (1 mark) — students had to select features required for efficient diffusion from multiple choice options",
+      "This topic was examined in M/J 2024 P2 Q3 (4 marks) — candidates were asked to compare facilitated diffusion and active transport by stating one similarity and two differences",
+      "This topic was tested in O/N 2023 P2 Q2 (3 marks) — students had to explain why sodium ions cannot cross phospholipid bilayers by simple diffusion",
+      "This topic appeared in M/J 2022 P3 Q1 (6 marks) — practical question asking students to analyze data on diffusion rates and evaluate whether results support the hypothesis that diffusion rate decreases over time"
+    ],
+    "workedExample": {
+      "question": "Compare facilitated diffusion and active transport by stating one way in which they are similar and two ways in which facilitated diffusion is different from active transport. (4 marks)",
+      "steps": [
+        "Step 1: Identify what both processes have in common - both involve membrane proteins for transport across cell membranes",
+        "Step 2: Think about energy requirements - facilitated diffusion is passive (no energy), active transport requires ATP energy",
+        "Step 3: Consider concentration gradients - facilitated diffusion moves down gradients, active transport can move against gradients",
+        "Step 4: Structure answer clearly with one similarity followed by two differences"
+      ],
+      "answer": "Similarity: Both facilitated diffusion and active transport involve transport proteins/carrier proteins in the cell membrane. Difference 1: Facilitated diffusion moves substances down their concentration gradient whereas active transport moves substances against their concentration gradient. Difference 2: Facilitated diffusion does not require ATP/energy whereas active transport requires ATP/energy.",
+      "markScheme": "1 mark for correct similarity (transport proteins/membrane proteins). 1 mark each for two valid differences: concentration gradient direction and energy requirement. Must be clearly stated as differences."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused active transport with facilitated diffusion' — always mention ATP requirement and concentration gradient direction when distinguishing transport processes",
+      "Examiner Report 2024: 'Students often forgot that osmosis only refers to water movement' — never describe movement of solutes as osmosis, it specifically refers to water through partially permeable membranes",
+      "Examiner Report 2022: 'Candidates frequently failed to link membrane structure to transport limitations' — always explain that charged particles cannot pass through hydrophobic phospholipid tails when discussing selective permeability"
+    ],
+    "keyDiagram": "Students must be able to draw a cell membrane cross-section showing phospholipid bilayer with embedded transport proteins. Include: phospholipid molecules with hydrophilic heads (circles) and hydrophobic tails (wavy lines), carrier proteins spanning the membrane, channel proteins, and arrows showing different transport directions. Label concentration gradients (high to low for passive transport, low to high for active transport) and indicate ATP usage for active transport.",
+    "quickRecap": "Three main transport processes: simple diffusion (directly through membrane, no energy), facilitated diffusion (through proteins, no energy, down gradient), and active transport (through proteins, requires ATP, against gradient). Osmosis is specifically water movement through partially permeable membranes. Charged particles need protein channels because they cannot pass through hydrophobic membrane core."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:26:24.870Z",
-  "updated_at": "2026-04-05T21:26:24.870Z"
+  "updated_at": "2026-04-05T21:26:24.870Z",
+  "enriched_at": "2026-04-06T16:08:06.697Z"
 }

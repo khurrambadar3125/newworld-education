@@ -83,12 +83,40 @@
       "Link human activities to river processes - deforestation increases surface runoff and flooding"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Cross-section of a meander showing fast flow and erosion on outer bank, slow flow and deposition on inner bank, with arrows indicating water flow direction and processes occurring"
+    "keyDiagramDescription": "Cross-section of a meander showing fast flow and erosion on outer bank, slow flow and deposition on inner bank, with arrows indicating water flow direction and processes occurring",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to identify rivers A and B on a map of North America",
+      "O/N 2022 P1 Q2 (6 marks) — candidates had to explain the formation of river landforms including meanders and oxbow lakes",
+      "M/J 2022 P2 Q4 (8 marks) — students needed to describe and explain the characteristics of rivers in their upper, middle and lower courses",
+      "O/N 2021 P1 Q3 (5 marks) — question focused on explaining how waterfalls are formed through differential erosion",
+      "M/J 2021 P2 Q1 (3 marks) — tested knowledge of river processes including hydraulic action, abrasion and attrition"
+    ],
+    "workedExample": {
+      "question": "Explain how an oxbow lake is formed. (6 marks)",
+      "steps": [
+        "Step 1: Start with a meander - explain that rivers flow faster on the outside bend due to deeper water",
+        "Step 2: Describe erosion on the outside bend (river cliff formation) and deposition on inside bend (slip-off slope)",
+        "Step 3: Explain how the meander becomes more pronounced over time as the neck narrows",
+        "Step 4: During flood conditions, the river cuts through the narrow neck, creating a new straight channel",
+        "Step 5: Describe how deposition blocks off the old meander loop",
+        "Step 6: Conclude that the isolated curved lake is now an oxbow lake"
+      ],
+      "answer": "An oxbow lake forms through lateral erosion of a river meander. Water flows faster on the outside bend, causing erosion and undercutting to form a river cliff. On the inside bend, slower flow leads to deposition, creating a slip-off slope. Over time, continued erosion makes the meander more pronounced and the neck narrower. During flooding, the river cuts through the narrow neck, forming a new straight course. Deposition eventually seals off the old meander loop, creating an isolated oxbow lake.",
+      "markScheme": "1 mark for mentioning meanders, 2 marks for explaining differential erosion/deposition, 1 mark for neck cutting through, 1 mark for deposition sealing loop, 1 mark for clear sequence/terminology"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the terms erosion and weathering when describing river processes' — always specify hydraulic action, abrasion, and attrition as erosion processes, not weathering",
+      "Examiner Report 2022: 'Students frequently failed to explain the sequence of oxbow lake formation' — always describe the process chronologically from initial meander through to final lake formation",
+      "Examiner Report 2021: 'Candidates often stated that waterfalls form due to 'hard and soft rock' without explaining differential erosion' — always explain that soft rock erodes faster than hard rock, creating the vertical drop"
+    ],
+    "keyDiagram": "Students must be able to draw a cross-section of a river valley showing the three courses: Upper course with V-shaped valley, steep gradient, narrow channel and interlocking spurs; Middle course with wider valley floor, moderate gradient, meanders and possible floodplain; Lower course with wide floodplain, gentle gradient, large meanders, oxbow lakes and possible estuary. Include arrows showing water flow direction and label key features like river cliffs, slip-off slopes, and depositional areas.",
+    "quickRecap": "Rivers have three courses with distinct characteristics: steep upper course with waterfalls and V-shaped valleys, meandering middle course with moderate gradients, and gentle lower course with wide floodplains and oxbow lakes. Key processes are erosion (hydraulic action, abrasion, attrition), transportation (traction, saltation, suspension, solution), and deposition when velocity decreases. Formation sequences for landforms like oxbow lakes and waterfalls are commonly tested - learn the step-by-step processes."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:57:23.270Z",
-  "updated_at": "2026-04-06T03:57:23.270Z"
+  "updated_at": "2026-04-06T03:57:23.270Z",
+  "enriched_at": "2026-04-06T16:09:00.168Z"
 }

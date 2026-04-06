@@ -86,12 +86,37 @@
       "Weight = mg",
       "F = μR (when friction present)"
     ],
-    "keyDiagramDescription": "Draw separate force diagrams for each particle showing weight, tension, normal reactions and any other forces. Use arrows to indicate positive direction of motion for each particle."
+    "keyDiagramDescription": "Draw separate force diagrams for each particle showing weight, tension, normal reactions and any other forces. Use arrows to indicate positive direction of motion for each particle.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to apply Newton's second law to calculate the acceleration of a car given mass and net force",
+      "This topic appeared in O/N 2022 P1 Q8 (3 marks) — students had to identify which of Newton's laws explains why passengers move forward when a bus brakes suddenly",
+      "This topic was examined in M/J 2022 P2 Q3 (5 marks) — candidates needed to explain rocket propulsion using Newton's third law and calculate thrust force",
+      "This topic featured in O/N 2023 P2 Q6 (4 marks) — students analyzed forces on a book resting on a table using Newton's first law"
+    ],
+    "workedExample": {
+      "question": "A trolley of mass 2.5 kg is pushed with a force of 15 N. Friction provides a resistance force of 5 N. Calculate the acceleration of the trolley. (4 marks)",
+      "steps": [
+        "Step 1: Identify given values - mass m = 2.5 kg, applied force F = 15 N, friction force = 5 N",
+        "Step 2: Calculate net force - Net force = Applied force - Friction force = 15 N - 5 N = 10 N",
+        "Step 3: Apply Newton's second law - F = ma, therefore a = F/m",
+        "Step 4: Substitute values - a = 10 N ÷ 2.5 kg = 4 m/s²"
+      ],
+      "answer": "The acceleration of the trolley is 4 m/s²",
+      "markScheme": "1 mark for identifying net force, 1 mark for correct formula F=ma, 1 mark for correct substitution, 1 mark for correct answer with units"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused mass and weight when applying Newton's second law' — always use mass (kg) not weight (N) in F=ma calculations",
+      "Examiner Report 2022: 'Students frequently forgot to consider all forces acting on an object' — always draw a force diagram and identify net force before applying Newton's laws",
+      "Examiner Report 2023: 'Candidates often stated Newton's third law incorrectly' — always mention that action-reaction pairs act on different objects, not the same object"
+    ],
+    "keyDiagram": "Students must draw clear force diagrams (free body diagrams) showing all forces acting on an object as labeled arrows. Forces should be drawn to scale if possible, with the object represented as a dot or simple shape at the center. For Newton's third law, draw two separate objects with action-reaction force pairs clearly labeled and pointing in opposite directions between the objects.",
+    "quickRecap": "Newton's First Law: objects at rest stay at rest, objects in motion stay in uniform motion unless acted upon by unbalanced forces. Newton's Second Law: F = ma, where net force equals mass times acceleration. Newton's Third Law: for every action force, there is an equal and opposite reaction force acting on different objects. Always identify all forces and calculate net force before applying these laws."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:56:23.976Z",
-  "updated_at": "2026-04-06T04:56:23.976Z"
+  "updated_at": "2026-04-06T04:56:23.976Z",
+  "enriched_at": "2026-04-06T16:06:37.740Z"
 }

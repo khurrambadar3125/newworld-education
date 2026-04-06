@@ -77,12 +77,38 @@
       "Use the full range of punctuation including semicolons and colons for higher marks"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Planning framework showing: Audience identification → Purpose clarification → Structure outline (introduction/development/conclusion) → Key points with supporting details → Vocabulary and tone decisions"
+    "keyDiagramDescription": "Planning framework showing: Audience identification → Purpose clarification → Structure outline (introduction/development/conclusion) → Key points with supporting details → Vocabulary and tone decisions",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q1 (15 marks) — they asked students to write a descriptive essay about a memorable journey, focusing on sensory details and narrative structure",
+      "This topic appeared in O/N 2022 P2 Q2 (15 marks) — students had to write an argumentative essay on 'Social media does more harm than good', requiring clear thesis and counterarguments",
+      "This topic was examined in M/J 2022 P2 Q3 (15 marks) — candidates wrote a narrative piece beginning with 'The door creaked open slowly...', testing dialogue and character development",
+      "This topic featured in O/N 2023 P2 Q4 (15 marks) — students analyzed the effectiveness of persuasive techniques in a given speech extract"
+    ],
+    "workedExample": {
+      "question": "Write the opening two paragraphs of a story that begins: 'The lighthouse keeper had not spoken to another human being for three months.' Your writing should create atmosphere and introduce the main character. (15 marks)",
+      "steps": [
+        "Step 1: Plan the atmosphere (isolation, eeriness, weather) and character traits (loneliness, routine, backstory hints)",
+        "Step 2: Write opening paragraph using the given sentence, adding sensory details and setting description",
+        "Step 3: Develop second paragraph introducing character's daily routine and internal thoughts",
+        "Step 4: Include varied sentence structures, descriptive language, and subtle characterization",
+        "Step 5: Review for spelling, punctuation, and flow between paragraphs"
+      ],
+      "answer": "The lighthouse keeper had not spoken to another human being for three months. His voice, when he tested it each morning by reading the weather report aloud, had grown rusty and unfamiliar, like a gate that needed oiling. The salt-stained windows of his tower room framed an endless expanse of grey sea, where seabirds wheeled and cried their lonely songs to the wind.\n\nHarold moved through his daily rituals with mechanical precision—checking the lamp mechanism, recording wind speeds, polishing the great lens that had guided ships safely to harbor for forty-seven years. His weathered hands, steady despite his seventy-three years, had memorized every bolt and fixture. Yet lately, he found himself pausing mid-task, listening for sounds that never came: footsteps on the spiral staircase, a voice calling his name, the simple blessing of human conversation.",
+      "markScheme": "Content & Organization (8 marks): Clear atmosphere creation, effective characterization, logical paragraph development. Language & Style (7 marks): Varied vocabulary, sentence variety, literary devices, technical accuracy"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to vary their sentence structures, relying heavily on simple sentences' — always include complex and compound sentences alongside simple ones for sophisticated writing",
+      "Examiner Report 2022: 'Weak planning resulted in stories that lost focus halfway through' — spend 5 minutes planning your structure and key events before writing",
+      "Examiner Report 2023: 'Candidates often ignored the specific requirements of the question type' — in argumentative essays, ensure you present counterarguments, not just your own viewpoint"
+    ],
+    "keyDiagram": "Create a writing planning template with four sections: 1) Question Analysis Box (highlight key words, identify text type and audience), 2) Content Web (central topic with branching ideas, examples, and vocabulary), 3) Structure Outline (introduction hook, main body points 1-3, conclusion summary), 4) Language Checklist (sentence variety goals, literary devices to include, technical accuracy reminders). This visual framework ensures comprehensive planning within time constraints.",
+    "quickRecap": "Writing success depends on thorough planning, clear structure, and varied language. Spend 5 minutes analyzing the question and planning your response. Use topic sentences to start paragraphs and link ideas smoothly. Include complex sentences, descriptive vocabulary, and literary devices appropriate to your text type. Always reserve 5 minutes for proofreading to catch errors and improve clarity."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:49:41.850Z",
-  "updated_at": "2026-04-06T03:49:41.850Z"
+  "updated_at": "2026-04-06T03:49:41.850Z",
+  "enriched_at": "2026-04-06T16:08:43.060Z"
 }

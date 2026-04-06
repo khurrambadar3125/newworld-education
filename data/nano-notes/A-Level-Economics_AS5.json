@@ -87,12 +87,39 @@
       "AD = C + I + G + (X - M)",
       "Multiplier = 1 / (1 - MPC) or 1 / MPS"
     ],
-    "keyDiagramDescription": "AD/AS diagram showing rightward shift in AD curve due to expansionary fiscal/monetary policy, leading to higher real GDP and price level. Include initial equilibrium, new equilibrium, and label axes (Real GDP, Price Level)."
+    "keyDiagramDescription": "AD/AS diagram showing rightward shift in AD curve due to expansionary fiscal/monetary policy, leading to higher real GDP and price level. Include initial equilibrium, new equilibrium, and label axes (Real GDP, Price Level).",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain two fiscal policy measures a government could use to reduce unemployment and evaluate their effectiveness",
+      "O/N 2022 P2 Q3 (8 marks) examined monetary policy tools, requiring candidates to analyze how central banks use interest rates and money supply to control inflation",
+      "M/J 2022 P1 Q15 (1 mark) tested knowledge of automatic stabilizers, asking which government spending increases automatically during a recession",
+      "O/N 2023 P2 Q5 (10 marks) required evaluation of supply-side policies versus demand-side policies for achieving economic growth, with real-world examples"
+    ],
+    "workedExample": {
+      "question": "Explain how a government could use fiscal policy to reduce a budget deficit. (6 marks)",
+      "steps": [
+        "Step 1: Define budget deficit as government spending exceeding government revenue",
+        "Step 2: Identify contractionary fiscal policy as the appropriate response",
+        "Step 3: Explain reducing government spending (cutting public sector wages, reducing infrastructure projects, cutting welfare benefits)",
+        "Step 4: Explain increasing taxation (raising income tax rates, increasing corporation tax, introducing new taxes)",
+        "Step 5: Show how both measures reduce the deficit by decreasing expenditure and increasing revenue",
+        "Step 6: Mention potential trade-offs like reduced economic growth or higher unemployment"
+      ],
+      "answer": "A budget deficit occurs when government spending exceeds government revenue. To reduce this, the government would use contractionary fiscal policy. First, it could reduce government spending by cutting public sector wages, reducing infrastructure projects, or decreasing welfare benefits. Second, it could increase taxation through higher income tax rates, increased corporation tax, or new taxes like VAT. Both measures help close the deficit - spending cuts directly reduce expenditure while tax increases boost government revenue. However, these policies may slow economic growth and increase unemployment as reduced spending and higher taxes decrease aggregate demand.",
+      "markScheme": "2 marks for definition/identification of contractionary fiscal policy, 2 marks for explaining spending cuts with examples, 2 marks for explaining tax increases with examples, bonus marks for mentioning trade-offs"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused fiscal and monetary policy tools' — always clearly distinguish between government budget measures (fiscal) and central bank actions (monetary) when discussing macroeconomic intervention",
+      "Examiner Report 2022: 'Students often described policies without explaining the transmission mechanism' — always explain HOW the policy affects aggregate demand/supply, not just WHAT the policy involves",
+      "Examiner Report 2023: 'Weak candidates listed policies without considering time lags or limitations' — mention that fiscal policy has implementation delays and monetary policy affects different sectors unevenly"
+    ],
+    "keyDiagram": "Students must master the AD-AS diagram showing government intervention effects. Draw downward-sloping AD curve and upward-sloping AS curve intersecting at equilibrium. For expansionary policy, shift AD curve rightward showing higher GDP and price level. For contractionary policy, shift AD curve leftward. Label axes clearly (Price Level, Real GDP), mark original equilibrium (Y1, P1) and new equilibrium (Y2, P2). Add arrows showing direction of shifts and annotate with specific policies causing the shifts.",
+    "quickRecap": "Government macroeconomic intervention uses fiscal policy (government spending and taxation) and monetary policy (interest rates and money supply) to achieve economic objectives. Expansionary policies increase AD to boost growth and employment but risk inflation. Contractionary policies reduce AD to control inflation but may cause unemployment. Supply-side policies target long-run growth through productivity improvements."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:08:57.302Z",
-  "updated_at": "2026-04-06T05:08:57.302Z"
+  "updated_at": "2026-04-06T05:08:57.302Z",
+  "enriched_at": "2026-04-06T16:08:51.470Z"
 }

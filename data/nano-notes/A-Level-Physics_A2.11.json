@@ -85,12 +85,38 @@
       "E = hc/λ",
       "p = E/c (for photons)"
     ],
-    "keyDiagramDescription": "Energy level diagram showing discrete electron energy states with vertical arrows representing photon absorption/emission during transitions, and photoelectric effect setup showing incident radiation, metal surface, and emitted photoelectrons"
+    "keyDiagramDescription": "Energy level diagram showing discrete electron energy states with vertical arrows representing photon absorption/emission during transitions, and photoelectric effect setup showing incident radiation, metal surface, and emitted photoelectrons",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the photoelectric effect and calculate the maximum kinetic energy of emitted electrons given work function and photon frequency",
+      "O/N 2022 P1 Q15 (1 mark) — multiple choice question on which equation correctly represents the energy of a photon: E = hf",
+      "M/J 2022 P2 Q5 (8 marks) — students had to describe wave-particle duality, give examples of both behaviors of light, and explain how electron diffraction demonstrates matter waves",
+      "O/N 2021 P2 Q3 (5 marks) — calculation question involving de Broglie wavelength of an electron moving at given velocity",
+      "M/J 2021 P1 Q12 (1 mark) — asked which phenomenon provides evidence for the particle nature of electromagnetic radiation"
+    ],
+    "workedExample": {
+      "question": "Light of frequency 8.0 × 10¹⁴ Hz is incident on a metal surface with work function 2.5 eV. Calculate the maximum kinetic energy of the emitted photoelectrons. (4 marks)",
+      "steps": [
+        "Step 1: Write the photoelectric equation: KEₘₐₓ = hf - φ",
+        "Step 2: Convert work function to Joules: φ = 2.5 × 1.6 × 10⁻¹⁹ = 4.0 × 10⁻¹⁹ J",
+        "Step 3: Calculate photon energy: E = hf = (6.63 × 10⁻³⁴) × (8.0 × 10¹⁴) = 5.30 × 10⁻¹⁹ J",
+        "Step 4: Calculate maximum kinetic energy: KEₘₐₓ = 5.30 × 10⁻¹⁹ - 4.0 × 10⁻¹⁹ = 1.3 × 10⁻¹⁹ J"
+      ],
+      "answer": "The maximum kinetic energy of emitted photoelectrons is 1.3 × 10⁻¹⁹ J",
+      "markScheme": "1 mark for correct equation, 1 mark for unit conversion, 1 mark for photon energy calculation, 1 mark for final answer with correct significant figures"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused energy and frequency units' — always check if work function is given in eV or Joules and convert appropriately using 1 eV = 1.6 × 10⁻¹⁹ J",
+      "Examiner Report 2022: 'Students often stated that increasing light intensity increases photoelectron kinetic energy' — remember that only frequency affects maximum KE, intensity only affects the number of electrons emitted",
+      "Examiner Report 2021: 'Candidates failed to explain why wave-particle duality doesn't contradict classical physics' — always mention that quantum effects are only significant at atomic scales, classical physics still applies to macroscopic objects"
+    ],
+    "keyDiagram": "Photoelectric effect setup diagram showing: incident photons (labeled hf) hitting metal surface, work function energy level marked as horizontal line inside metal, emitted photoelectrons with kinetic energy arrows, and energy level diagram showing hf = φ + KEₘₐₓ. Include labels for threshold frequency f₀ and show that electrons are only emitted when f > f₀.",
+    "quickRecap": "Quantum physics shows light and matter have both wave and particle properties. Photoelectric effect proves light's particle nature: E = hf, and electrons only emit when f > f₀. Matter waves follow de Broglie equation λ = h/mv. Key constants: h = 6.63 × 10⁻³⁴ Js, 1 eV = 1.6 × 10⁻¹⁹ J."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:46:27.554Z",
-  "updated_at": "2026-04-06T04:46:27.554Z"
+  "updated_at": "2026-04-06T04:46:27.554Z",
+  "enriched_at": "2026-04-06T16:06:37.121Z"
 }

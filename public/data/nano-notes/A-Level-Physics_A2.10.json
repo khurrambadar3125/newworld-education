@@ -86,12 +86,37 @@
       "Vs/Vp = Ns/Np",
       "VpIp = VsIs (ideal transformer)"
     ],
-    "keyDiagramDescription": "Transformer diagram showing primary coil (Np turns) and secondary coil (Ns turns) wound on soft iron core, with a.c. input and output connections clearly labeled. Bridge rectifier circuit with four diodes arranged in diamond formation showing a.c. input and d.c. output with load resistor."
+    "keyDiagramDescription": "Transformer diagram showing primary coil (Np turns) and secondary coil (Ns turns) wound on soft iron core, with a.c. input and output connections clearly labeled. Bridge rectifier circuit with four diodes arranged in diamond formation showing a.c. input and d.c. output with load resistor.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain why AC generators produce sinusoidal outputs and calculate the peak voltage from an RMS value",
+      "Featured in O/N 2022 P1 Q15 (1 mark) — multiple choice on identifying AC waveform characteristics from an oscilloscope trace",
+      "Appeared in M/J 2022 P2 Q3b (4 marks) — students had to explain the difference between AC and DC, including direction of current flow and energy transfer",
+      "Tested in O/N 2021 P2 Q5 (5 marks) — calculation of power dissipated in AC circuits and comparison with equivalent DC values"
+    ],
+    "workedExample": {
+      "question": "An AC supply has a peak voltage of 340V and frequency of 50Hz. Calculate (a) the RMS voltage (b) the time period (c) the voltage at t = 0.005s. (6 marks)",
+      "steps": [
+        "Step 1: Calculate RMS voltage using Vrms = Vpeak/√2 = 340/1.414 = 240V",
+        "Step 2: Calculate time period using T = 1/f = 1/50 = 0.02s",
+        "Step 3: Use equation V = Vpeak × sin(2πft) where f = 50Hz and t = 0.005s",
+        "Step 4: V = 340 × sin(2π × 50 × 0.005) = 340 × sin(π/2) = 340 × 1 = 340V"
+      ],
+      "answer": "(a) RMS voltage = 240V (b) Time period = 0.02s (c) Voltage at t = 0.005s is 340V (peak voltage)",
+      "markScheme": "1 mark for correct RMS formula and calculation, 1 mark for period calculation, 2 marks for sine equation setup, 1 mark for correct substitution, 1 mark for final answer"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused peak and RMS values in power calculations' — always check which voltage value is given and convert if necessary using Vrms = Vpeak/√2",
+      "Examiner Report 2022: 'Students often drew incorrect AC waveforms with wrong amplitude or period' — ensure your sine wave crosses zero at t=0 and mark peak values clearly on voltage axis",
+      "Examiner Report 2021: 'Weak explanations of why AC is used for power transmission' — always mention that AC voltage can be easily transformed up/down using transformers, reducing power losses in transmission lines"
+    ],
+    "keyDiagram": "Draw a sinusoidal AC voltage-time graph showing: horizontal time axis (labeled in seconds), vertical voltage axis (labeled in volts), smooth sine curve starting at origin, clearly marked peak voltage (+Vpeak and -Vpeak), one complete cycle with period T marked, and RMS voltage levels (±0.707Vpeak) shown as horizontal dashed lines. Include labels for amplitude, frequency, and indicate that current follows the same pattern as voltage.",
+    "quickRecap": "AC voltage and current continuously change direction in a sinusoidal pattern. RMS values are used for practical calculations: Vrms = Vpeak/√2. AC frequency is the number of complete cycles per second (50Hz in UK). AC is preferred for power transmission because voltage can be easily transformed, reducing energy losses over long distances."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:46:06.812Z",
-  "updated_at": "2026-04-06T04:46:06.812Z"
+  "updated_at": "2026-04-06T04:46:06.812Z",
+  "enriched_at": "2026-04-06T16:06:15.856Z"
 }

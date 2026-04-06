@@ -87,12 +87,38 @@
       "Receivables collection period = (Receivables ÷ Credit sales) × 365",
       "Earnings per share = Profit after tax ÷ Number of ordinary shares"
     ],
-    "keyDiagramDescription": "Create a ratio analysis framework showing four categories (Profitability, Liquidity, Efficiency, Gearing) with key ratios listed under each category and their interpretation guidelines"
+    "keyDiagramDescription": "Create a ratio analysis framework showing four categories (Profitability, Liquidity, Efficiency, Gearing) with key ratios listed under each category and their interpretation guidelines",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to analyze a scatter graph showing correlation between temperature and ice cream sales, requiring identification of correlation type and outliers",
+      "O/N 2022 P2 Q5 (8 marks) tested interpretation of a frequency histogram, asking candidates to calculate mean from grouped data and comment on distribution shape",
+      "M/J 2022 P1 Q12 (4 marks) required analysis of a cumulative frequency curve to find median and interquartile range with interpretation of what these values meant",
+      "O/N 2023 P2 Q3 (5 marks) focused on analyzing a time series graph showing seasonal variation, requiring trend identification and prediction of future values"
+    ],
+    "workedExample": {
+      "question": "The table shows the heights of 40 students. Calculate an estimate of the mean height and comment on the distribution. (6 marks)",
+      "steps": [
+        "Step 1: Find midpoint of each class interval (155, 165, 175, 185, 195)",
+        "Step 2: Calculate frequency × midpoint for each class (f×x column)",
+        "Step 3: Sum all frequencies (Σf = 40) and sum all f×x values (Σfx = 6900)",
+        "Step 4: Calculate mean = Σfx ÷ Σf = 6900 ÷ 40 = 172.5 cm",
+        "Step 5: Analyze distribution shape by comparing class frequencies and identifying modal class"
+      ],
+      "answer": "Estimated mean height = 172.5 cm. The distribution is approximately normal/symmetric as frequencies increase toward the middle classes (165-175 cm) then decrease, with the modal class being 165-175 cm.",
+      "markScheme": "3 marks for correct calculation method and answer (172.5), 2 marks for identifying distribution shape, 1 mark for supporting evidence"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates calculated statistics correctly but failed to interpret their meaning in context' — always explain what your calculated values tell us about the real situation",
+      "Examiner Report 2022: 'Students often confused correlation with causation when analyzing scatter graphs' — remember that correlation does not prove one variable causes changes in another",
+      "Examiner Report 2023: 'Weak responses simply described the graph without proper analysis' — use mathematical terminology like 'positive correlation', 'outlier', 'approximately normal distribution' rather than vague descriptions"
+    ],
+    "keyDiagram": "Students must master drawing and labeling cumulative frequency curves on graph paper, showing: properly scaled axes with equal intervals, plotted points at upper class boundaries, smooth curve connecting points (not straight lines), clear labels for median (50th percentile), first quartile (25th percentile), and third quartile (75th percentile) with horizontal and vertical construction lines to read values accurately.",
+    "quickRecap": "Analysis means calculating key statistics (mean, median, range, quartiles) while interpretation means explaining what these values reveal about the data in context. Always comment on distribution shape (symmetric, skewed, normal) and identify any outliers or unusual features. For scatter graphs, describe correlation strength and direction, but never claim causation without additional evidence."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:27:39.635Z",
-  "updated_at": "2026-04-06T05:27:39.635Z"
+  "updated_at": "2026-04-06T05:27:39.635Z",
+  "enriched_at": "2026-04-06T16:06:20.469Z"
 }

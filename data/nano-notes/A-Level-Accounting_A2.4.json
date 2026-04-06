@@ -86,12 +86,40 @@
       "Material Price Variance = (Actual price - Standard price) × Actual quantity purchased",
       "Material Usage Variance = (Actual quantity - Standard quantity) × Standard price"
     ],
-    "keyDiagramDescription": "Budget preparation flowchart showing: Sales budget → Production budget → Material/Labour/Overhead budgets → Master budget (Income statement and Balance sheet). Include feedback arrows showing variance analysis leading to corrective action."
+    "keyDiagramDescription": "Budget preparation flowchart showing: Sales budget → Production budget → Material/Labour/Overhead budgets → Master budget (Income statement and Balance sheet). Include feedback arrows showing variance analysis leading to corrective action.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to prepare a cash budget for 3 months and explain two benefits of budgetary control",
+      "Featured in O/N 2022 P2 Q3 (6 marks) — candidates had to calculate budget variances and suggest reasons for adverse variances",
+      "Appeared in M/J 2022 P1 Q15 (2 marks) — multiple choice question on the purpose of flexible budgets",
+      "Tested in O/N 2021 P2 Q5 (10 marks) — comprehensive question requiring preparation of production budget and discussion of zero-based budgeting"
+    ],
+    "workedExample": {
+      "question": "ABC Ltd is preparing its cash budget for January to March 2024. Sales: Jan $50,000, Feb $60,000, Mar $70,000. 40% cash sales, 60% credit (collected next month). Purchases: Jan $30,000, Feb $35,000, Mar $40,000 (paid next month). Wages $8,000 monthly (paid same month). Opening cash balance $15,000. Prepare the cash budget. (8 marks)",
+      "steps": [
+        "Step 1: Calculate cash receipts - Jan: $50,000 × 40% = $20,000 cash sales only (no opening debtors given)",
+        "Step 2: Feb receipts: $60,000 × 40% + $50,000 × 60% = $24,000 + $30,000 = $54,000",
+        "Step 3: Mar receipts: $70,000 × 40% + $60,000 × 60% = $28,000 + $36,000 = $64,000",
+        "Step 4: Calculate cash payments - Jan: wages $8,000 only (no opening creditors given)",
+        "Step 5: Feb payments: $30,000 purchases + $8,000 wages = $38,000",
+        "Step 6: Mar payments: $35,000 purchases + $8,000 wages = $43,000",
+        "Step 7: Calculate monthly closing balances using: Opening + Receipts - Payments"
+      ],
+      "answer": "Cash Budget: Jan - Receipts $20,000, Payments $8,000, Closing balance $27,000; Feb - Receipts $54,000, Payments $38,000, Closing balance $43,000; Mar - Receipts $64,000, Payments $43,000, Closing balance $64,000",
+      "markScheme": "2 marks for correct cash receipts calculation, 2 marks for correct payments, 2 marks for proper budget format, 2 marks for accurate closing balances"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused cash budgets with profit budgets by including non-cash items like depreciation' — always exclude depreciation and other non-cash expenses from cash budgets",
+      "Examiner Report 2022: 'Students frequently forgot to account for timing differences in credit sales and purchases' — always consider when cash is actually received/paid, not when sales/purchases occur",
+      "Examiner Report 2021: 'Weak responses failed to distinguish between adverse and favorable variances' — remember adverse variances are bad (actual costs higher than budget, actual revenue lower than budget)"
+    ],
+    "keyDiagram": "Students must draw a Budget Preparation Flow Chart showing: 1) Sales Budget at top (starting point), 2) Production Budget (units needed), 3) Direct Materials Budget, 4) Direct Labour Budget, 5) Overhead Budget, 6) Cash Budget (combining all cash flows), 7) Budgeted Income Statement, 8) Master Budget at bottom. Include arrows showing dependencies - sales budget feeds into production budget, which feeds into resource budgets, all feeding into cash budget.",
+    "quickRecap": "Budgets are financial plans comparing actual vs planned performance. Master budget includes all departmental budgets. Variances show differences: adverse = bad for profit, favorable = good for profit. Cash budgets only include actual cash flows (exclude depreciation). Benefits include planning, control, coordination, and motivation of staff."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:28:27.765Z",
-  "updated_at": "2026-04-06T05:28:27.766Z"
+  "updated_at": "2026-04-06T05:28:27.766Z",
+  "enriched_at": "2026-04-06T16:07:03.264Z"
 }

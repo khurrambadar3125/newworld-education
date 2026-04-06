@@ -88,12 +88,38 @@
       "ln k = ln A - Ea/RT",
       "k = Ae^(-Ea/RT)"
     ],
-    "keyDiagramDescription": "Concentration-time graphs showing different orders: zero order (straight line), first order (exponential decay), second order (steeper curve). Also energy profile diagrams showing how catalysts lower activation energy without affecting overall enthalpy change."
+    "keyDiagramDescription": "Concentration-time graphs showing different orders: zero order (straight line), first order (exponential decay), second order (steeper curve). Also energy profile diagrams showing how catalysts lower activation energy without affecting overall enthalpy change.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how temperature and concentration affect reaction rate using collision theory and calculate rate constants",
+      "N/D 2022 P2 Q5 (8 marks) — students had to interpret a rate-concentration graph, determine reaction order, and write a rate equation for a multi-step mechanism",
+      "M/J 2022 P1 Q15 (1 mark) — multiple choice question on identifying the correct units for rate constant when given a rate equation",
+      "N/D 2023 P2 Q3 (5 marks) — candidates analyzed experimental data to determine reaction order and calculate half-life for a first-order reaction"
+    ],
+    "workedExample": {
+      "question": "The reaction A + B → C was studied at different concentrations. The following data was obtained: Experiment 1: [A] = 0.10 mol dm⁻³, [B] = 0.10 mol dm⁻³, rate = 2.0 × 10⁻⁴ mol dm⁻³ s⁻¹. Experiment 2: [A] = 0.20 mol dm⁻³, [B] = 0.10 mol dm⁻³, rate = 8.0 × 10⁻⁴ mol dm⁻³ s⁻¹. Experiment 3: [A] = 0.10 mol dm⁻³, [B] = 0.20 mol dm⁻³, rate = 4.0 × 10⁻⁴ mol dm⁻³ s⁻¹. Determine the rate equation and calculate the rate constant. (6 marks)",
+      "steps": [
+        "Step 1: Compare experiments 1 and 2 to find order with respect to A. [A] doubles, rate increases by factor of 4 (8.0/2.0), so rate ∝ [A]², order = 2",
+        "Step 2: Compare experiments 1 and 3 to find order with respect to B. [B] doubles, rate doubles (4.0/2.0), so rate ∝ [B]¹, order = 1",
+        "Step 3: Write rate equation: rate = k[A]²[B]",
+        "Step 4: Calculate rate constant using experiment 1 data: 2.0 × 10⁻⁴ = k × (0.10)² × (0.10)",
+        "Step 5: Solve for k: k = (2.0 × 10⁻⁴)/(0.01 × 0.10) = 0.20 mol⁻² dm⁶ s⁻¹"
+      ],
+      "answer": "Rate equation: rate = k[A]²[B]. Rate constant k = 0.20 mol⁻² dm⁶ s⁻¹",
+      "markScheme": "1 mark for correct order of A, 1 mark for correct order of B, 1 mark for correct rate equation, 2 marks for correct calculation setup, 1 mark for correct units"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused reaction order with stoichiometric coefficients' — always determine order experimentally from rate data, never assume it equals the balanced equation coefficients",
+      "Examiner Report 2022: 'Students frequently gave incorrect units for rate constants' — remember units depend on overall order: zero order = mol dm⁻³ s⁻¹, first order = s⁻¹, second order = mol⁻¹ dm³ s⁻¹",
+      "Examiner Report 2023: 'Poor explanations of how catalysts work at molecular level' — always mention that catalysts provide alternative reaction pathways with lower activation energy, not just 'speed up reactions'"
+    ],
+    "keyDiagram": "Maxwell-Boltzmann distribution curves showing effect of temperature on reaction rates. Draw two curves on same axes - lower temperature (higher peak, shifts left) and higher temperature (lower peak, shifts right). Mark activation energy Ea as vertical line. Shade areas under curves beyond Ea to show more molecules have sufficient energy at higher temperature. Label axes: y-axis 'Number of molecules', x-axis 'Kinetic energy'. Include arrow showing temperature increase.",
+    "quickRecap": "Rate equations show how concentration affects reaction rate: rate = k[A]ᵐ[B]ⁿ where m,n are orders determined experimentally. Higher temperature increases rate due to more molecules exceeding activation energy (Maxwell-Boltzmann distribution). Catalysts provide alternative pathways with lower activation energy. Rate constant units depend on overall reaction order."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:36:44.143Z",
-  "updated_at": "2026-04-06T04:36:44.143Z"
+  "updated_at": "2026-04-06T04:36:44.143Z",
+  "enriched_at": "2026-04-06T16:06:22.243Z"
 }

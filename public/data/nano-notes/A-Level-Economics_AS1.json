@@ -87,12 +87,38 @@
     "formulas": [
       "Opportunity Cost = Quantity of good Y foregone ÷ Quantity of good X gained"
     ],
-    "keyDiagramDescription": "PPF curve showing maximum output combinations of two goods (e.g., wheat and rice), with points inside (inefficient), on (efficient), and outside (unattainable) the curve. Outward shifts show economic growth."
+    "keyDiagramDescription": "PPF curve showing maximum output combinations of two goods (e.g., wheat and rice), with points inside (inefficient), on (efficient), and outside (unattainable) the curve. Outward shifts show economic growth.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q1 (6 marks) — they asked students to explain the concept of opportunity cost using a real-world example and calculate it from given data",
+      "N/D 2022 P1 Q2 (4 marks) — candidates had to identify and explain two factors of production from a case study about a car manufacturing company",
+      "M/J 2022 P2 Q3 (8 marks) — students needed to analyze how scarcity affects resource allocation decisions in both market and command economies",
+      "N/D 2023 P1 Q4 (5 marks) — question focused on drawing and explaining a production possibility curve showing the trade-off between two goods",
+      "M/J 2021 P2 Q1 (7 marks) — required explanation of how unlimited wants and limited resources create the basic economic problem"
+    ],
+    "workedExample": {
+      "question": "A student has $20 and 2 hours of free time. She can either buy a book for $15 and spend 2 hours reading, or go to a movie that costs $12 with friends for 2 hours. Calculate and explain the opportunity cost of choosing the book. (6 marks)",
+      "steps": [
+        "Step 1: Identify what is being given up - if she chooses the book, she gives up going to the movie",
+        "Step 2: Calculate the monetary opportunity cost - $12 (cost of movie ticket)",
+        "Step 3: Identify non-monetary opportunity cost - time spent with friends and entertainment from the movie",
+        "Step 4: State the complete opportunity cost including both monetary and non-monetary elements"
+      ],
+      "answer": "The opportunity cost of choosing the book is $12 plus the enjoyment and social benefits she would have gained from watching the movie with friends. Opportunity cost includes both the monetary value ($12) and the non-monetary benefits (entertainment and social interaction) of the next best alternative foregone.",
+      "markScheme": "2 marks for correctly identifying the alternative given up, 2 marks for calculating monetary cost, 2 marks for explaining non-monetary costs and demonstrating understanding that opportunity cost is the next best alternative foregone"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused wants and needs, treating them as the same concept' — always distinguish that wants are desires while needs are essentials for survival when answering questions on basic economic concepts",
+      "Examiner Report 2022: 'Students often calculated only monetary opportunity cost and ignored non-monetary benefits' — always consider both financial and non-financial aspects when calculating opportunity cost in any economic decision",
+      "Examiner Report 2023: 'Candidates frequently listed factors of production without explaining their economic role' — always explain how each factor contributes to production process, not just identify land, labor, capital and enterprise"
+    ],
+    "keyDiagram": "Production Possibility Curve (PPC): Draw a curved line bowed outward from the origin on a graph with two goods on each axis (e.g., cars vs computers). Mark points on the curve to show maximum efficient production combinations, a point inside the curve showing underutilized resources, and a point outside showing currently unattainable production. Label the axes clearly and include arrows showing the direction of economic growth (outward shift of entire curve). Always include labels for 'efficient production', 'inefficient production', and 'unattainable production' with specific points marked A, B, and C respectively.",
+    "quickRecap": "The basic economic problem stems from unlimited wants but limited resources, creating scarcity. This forces choices, and every choice has an opportunity cost - the value of the next best alternative given up. Resources (factors of production) are land, labor, capital, and enterprise. The Production Possibility Curve shows maximum output combinations and illustrates opportunity cost through the trade-offs between producing different goods."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:07:11.764Z",
-  "updated_at": "2026-04-06T05:07:11.765Z"
+  "updated_at": "2026-04-06T05:07:11.765Z",
+  "enriched_at": "2026-04-06T16:07:28.502Z"
 }

@@ -93,12 +93,37 @@
       "Current ratio = Current assets ÷ Current liabilities",
       "Acid test ratio = (Current assets - Stock) ÷ Current liabilities"
     ],
-    "keyDiagramDescription": "Break-even chart with x-axis showing output/sales volume, y-axis showing costs/revenue (PKR). Plot fixed costs (horizontal line), total costs (upward sloping), and total revenue (steeper upward slope). Mark break-even point where total costs and revenue intersect, showing margin of safety and profit/loss areas."
+    "keyDiagramDescription": "Break-even chart with x-axis showing output/sales volume, y-axis showing costs/revenue (PKR). Plot fixed costs (horizontal line), total costs (upward sloping), and total revenue (steeper upward slope). Mark break-even point where total costs and revenue intersect, showing margin of safety and profit/loss areas.",
+    "pastPaperRefs": [
+      "M/J 2023 P2 Q4 (6 marks) — they asked students to calculate gross profit margin and net profit margin for a business and explain what these ratios tell stakeholders about performance",
+      "O/N 2022 P1 Q12 (4 marks) — tested knowledge of double-entry bookkeeping by asking students to identify which accounts would be debited and credited for various transactions",
+      "M/J 2022 P2 Q3b (8 marks) — required students to prepare a trading and profit & loss account from given trial balance figures and additional information",
+      "O/N 2023 P2 Q5 (10 marks) — comprehensive question asking students to prepare a balance sheet and calculate return on capital employed, then comment on business liquidity"
+    ],
+    "workedExample": {
+      "question": "Calculate the gross profit margin and net profit margin for ABC Ltd using the following information: Sales Revenue $50,000, Cost of Goods Sold $30,000, Operating Expenses $12,000. Comment on what these ratios indicate about the business performance. (6 marks)",
+      "steps": [
+        "Step 1: Calculate Gross Profit = Sales Revenue - Cost of Goods Sold = $50,000 - $30,000 = $20,000",
+        "Step 2: Calculate Net Profit = Gross Profit - Operating Expenses = $20,000 - $12,000 = $8,000",
+        "Step 3: Calculate Gross Profit Margin = (Gross Profit ÷ Sales Revenue) × 100 = ($20,000 ÷ $50,000) × 100 = 40%",
+        "Step 4: Calculate Net Profit Margin = (Net Profit ÷ Sales Revenue) × 100 = ($8,000 ÷ $50,000) × 100 = 16%"
+      ],
+      "answer": "Gross Profit Margin = 40%, Net Profit Margin = 16%. The 40% gross profit margin indicates the business has good control over direct costs and maintains healthy markup on products. The 16% net profit margin shows reasonable overall profitability after all expenses, suggesting efficient cost management.",
+      "markScheme": "2 marks for correct calculations of each ratio, 2 marks for appropriate comments linking ratios to business performance"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused gross profit with net profit in ratio calculations' — always check whether the question asks for gross or net profit margins and use the correct profit figure",
+      "Examiner Report 2022: 'Students frequently mixed up debit and credit entries in double-entry questions' — remember the accounting equation: Assets and Expenses increase on debit side, Liabilities, Capital and Income increase on credit side",
+      "Examiner Report 2023: 'Candidates often failed to show workings for financial calculations' — always show your method step-by-step as marks are awarded for correct working even if final answer is wrong"
+    ],
+    "keyDiagram": "Students must be able to draw a T-account layout showing the debit side (left) and credit side (right) clearly labeled. Include examples of typical entries: debit side shows increases in assets/expenses and decreases in liabilities/capital/income; credit side shows decreases in assets/expenses and increases in liabilities/capital/income. Also draw a simple balance sheet format with Fixed Assets, Current Assets, Current Liabilities, Long-term Liabilities, and Capital clearly positioned and totals balancing.",
+    "quickRecap": "Finance and accounting covers financial statements (trading account, profit & loss account, balance sheet), double-entry bookkeeping (debits increase assets/expenses, credits increase liabilities/capital/income), and ratio analysis (profitability, liquidity, efficiency ratios). Key formulas: Gross Profit Margin = (Gross Profit ÷ Sales) × 100, Current Ratio = Current Assets ÷ Current Liabilities. Always show workings and use correct terminology in exam answers."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:12:37.072Z",
-  "updated_at": "2026-04-06T05:12:37.072Z"
+  "updated_at": "2026-04-06T05:12:37.072Z",
+  "enriched_at": "2026-04-06T16:08:37.750Z"
 }

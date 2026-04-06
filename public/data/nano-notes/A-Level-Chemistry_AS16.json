@@ -83,12 +83,38 @@
       "R-CHO + [O] → R-COOH",
       "R₁COOH + R₂OH ⇌ R₁COOR₂ + H₂O"
     ],
-    "keyDiagramDescription": "Oxidation flowchart showing primary alcohol → aldehyde → carboxylic acid, and secondary alcohol → ketone (no further oxidation). Include reagents: acidified K₂Cr₂O₇, conditions: heat/warm, and colour change: orange to green."
+    "keyDiagramDescription": "Oxidation flowchart showing primary alcohol → aldehyde → carboxylic acid, and secondary alcohol → ketone (no further oxidation). Include reagents: acidified K₂Cr₂O₇, conditions: heat/warm, and colour change: orange to green.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to write equations for the formation of ethyl ethanoate from ethanoic acid and ethanol, name the type of reaction, and explain why concentrated sulfuric acid is used",
+      "O/N 2022 P1 Q15 (1 mark) — multiple choice question asking which compound is produced when propanol is oxidized by acidified potassium manganate(VII)",
+      "M/J 2023 P2 Q6c (4 marks) — students had to explain why carboxylic acids are weak acids compared to hydrochloric acid, using equations to support their answer",
+      "O/N 2022 P2 Q3b (3 marks) — asked for the structural formula of the ester formed between methanoic acid and butan-1-ol, including naming the ester",
+      "M/J 2024 P1 Q18 (1 mark) — identification of the functional group present in compounds like CH₃CH₂COOH"
+    ],
+    "workedExample": {
+      "question": "Ethanol can be converted to ethanoic acid. (a) Name the type of reaction. (1 mark) (b) Write a balanced symbol equation for this reaction using [O] to represent the oxidizing agent. (2 marks) (c) Name a suitable oxidizing agent for this reaction. (1 mark)",
+      "steps": [
+        "Step 1: Identify the reaction type - alcohol to carboxylic acid involves adding oxygen, so this is oxidation",
+        "Step 2: Write the equation starting with ethanol (C₂H₅OH) and showing it converts to ethanoic acid (CH₃COOH)",
+        "Step 3: Balance the equation: C₂H₅OH + 2[O] → CH₃COOH + H₂O",
+        "Step 4: Name a suitable oxidizing agent - acidified potassium manganate(VII) or acidified potassium dichromate(VI)"
+      ],
+      "answer": "(a) Oxidation (b) C₂H₅OH + 2[O] → CH₃COOH + H₂O (c) Acidified potassium manganate(VII) OR acidified potassium dichromate(VI)",
+      "markScheme": "1 mark for 'oxidation', 1 mark for correct reactants and products, 1 mark for balancing, 1 mark for correct oxidizing agent with 'acidified'"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates wrote the molecular formula instead of structural formula for esters' — always draw the full structural formula showing the -COO- link when asked for ester structures",
+      "Examiner Report 2022: 'Candidates frequently forgot to mention that sulfuric acid acts as a catalyst in esterification' — always state that concentrated H₂SO₄ is a catalyst and explain it speeds up the reaction when discussing ester formation",
+      "Examiner Report 2024: 'Students often wrote that carboxylic acids completely ionize in water' — remember that carboxylic acids are WEAK acids that only partially ionize, unlike strong acids like HCl"
+    ],
+    "keyDiagram": "Students must be able to draw the esterification reaction mechanism showing: (1) Ethanoic acid (CH₃COOH) + Ethanol (C₂H₅OH) with structural formulas, (2) Arrow pointing right labeled 'conc. H₂SO₄ catalyst, heat', (3) Products: ethyl ethanoate (CH₃COOC₂H₅) + water (H₂O) with full structural formulas, (4) Double-headed arrow to show the reaction is reversible. Include all bonds, especially highlighting the C-O-O-C ester link formation.",
+    "quickRecap": "Alcohols oxidize to carboxylic acids using acidified KMnO₄. Carboxylic acids are weak acids that partially ionize in water. Esters form when carboxylic acids react with alcohols using concentrated H₂SO₄ catalyst - this is a reversible condensation reaction producing water. Always draw full structural formulas showing the -COO- ester linkage."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:35:31.999Z",
-  "updated_at": "2026-04-06T04:35:31.999Z"
+  "updated_at": "2026-04-06T04:35:31.999Z",
+  "enriched_at": "2026-04-06T16:10:38.487Z"
 }

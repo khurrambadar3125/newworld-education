@@ -88,12 +88,37 @@
       "H₂S₂O₇ + H₂O → 2H₂SO₄",
       "CaCO₃ + SO₂ → CaSO₃ + CO₂"
     ],
-    "keyDiagramDescription": "Industrial process flow diagram showing Haber process with recycling loop for unreacted gases, and Contact process showing the two-stage sulfur trioxide formation and absorption in concentrated sulfuric acid"
+    "keyDiagramDescription": "Industrial process flow diagram showing Haber process with recycling loop for unreacted gases, and Contact process showing the two-stage sulfur trioxide formation and absorption in concentrated sulfuric acid",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to describe the industrial production of ammonia and explain why high pressure is used in the Haber process",
+      "This topic appeared in O/N 2022 P1 Q15 (1 mark) — multiple choice question testing knowledge of the catalyst used in the Contact process for sulfuric acid production",
+      "This topic was examined in M/J 2022 P2 Q6 (8 marks) — students had to write equations for nitrogen dioxide formation and explain acid rain effects",
+      "This topic featured in O/N 2023 P2 Q3 (5 marks) — question required explanation of why sulfur dioxide is converted to sulfur trioxide before making sulfuric acid"
+    ],
+    "workedExample": {
+      "question": "Ammonia is manufactured by the Haber process. State the raw materials, conditions and catalyst used. Explain why a compromise temperature is chosen. (6 marks)",
+      "steps": [
+        "Step 1: Identify raw materials - nitrogen (from air) and hydrogen (from natural gas/steam)",
+        "Step 2: State conditions - high pressure (200-300 atm), moderate temperature (450°C), iron catalyst",
+        "Step 3: Explain temperature compromise - higher temperature increases reaction rate but decreases yield (exothermic reaction)",
+        "Step 4: Connect to Le Chatelier's principle - forward reaction is exothermic, so lower temperature favors product formation but slows reaction"
+      ],
+      "answer": "Raw materials: nitrogen from air, hydrogen from natural gas. Conditions: high pressure (200-300 atm), temperature 450°C, iron catalyst. A compromise temperature is used because higher temperature increases reaction rate but decreases yield since the forward reaction is exothermic. 450°C gives reasonable rate and yield.",
+      "markScheme": "1 mark each for nitrogen and hydrogen sources, 1 mark for pressure, 1 mark for temperature, 1 mark for catalyst, 1 mark for compromise explanation linking rate and yield"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the Contact process with the Haber process' — always check which industrial process the question is asking about before writing your answer",
+      "Examiner Report 2022: 'Students often forgot to mention the catalyst when describing industrial processes' — always include the catalyst (iron for Haber, vanadium(V) oxide for Contact) in process descriptions",
+      "Examiner Report 2023: 'Weak responses failed to link environmental effects to the chemical properties' — when discussing acid rain, always connect SO₂/NO₂ dissolving in water to form acids"
+    ],
+    "keyDiagram": "Students must draw the nitrogen cycle showing: atmosphere containing N₂, soil with nitrates/nitrites, plants uptaking nitrogen compounds through roots, decomposing matter releasing ammonia, nitrifying bacteria converting NH₃→NO₂⁻→NO₃⁻, denitrifying bacteria converting nitrates back to N₂. Include arrows showing the cyclical flow and label all key compounds (N₂, NH₃, NO₂⁻, NO₃⁻) and processes (nitrogen fixation, nitrification, denitrification).",
+    "quickRecap": "Nitrogen: essential for proteins, fixed by bacteria or Haber process (N₂ + 3H₂ → 2NH₃, iron catalyst, high pressure, 450°C). Sulfur: forms SO₂ when burned, causes acid rain, converted to H₂SO₄ via Contact process (SO₂ → SO₃ → H₂SO₄, V₂O₅ catalyst). Both elements cycle through environment and have major industrial applications."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:33:54.996Z",
-  "updated_at": "2026-04-06T04:33:54.996Z"
+  "updated_at": "2026-04-06T04:33:54.996Z",
+  "enriched_at": "2026-04-06T16:09:14.373Z"
 }

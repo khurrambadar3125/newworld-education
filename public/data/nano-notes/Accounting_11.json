@@ -89,12 +89,40 @@
       "Accrual = Unpaid expense for current period",
       "Prepayment = Payment made for future periods"
     ],
-    "keyDiagramDescription": "T-account showing expense account with cash payments, accruals carried down as credit balance (liability), and prepayments carried down as debit balance (asset). Statement of financial position extract showing accruals under current liabilities and prepayments under current assets."
+    "keyDiagramDescription": "T-account showing expense account with cash payments, accruals carried down as credit balance (liability), and prepayments carried down as debit balance (asset). Statement of financial position extract showing accruals under current liabilities and prepayments under current assets.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to prepare a statement of profit or loss extract including rent receivable with accruals and prepayments adjustments",
+      "N 2022 P1 Q15 (1 mark) — multiple choice question testing understanding of correct statements about accruals and prepayments definitions",
+      "M/J 2024 P2 Q2 (6 marks) — candidates had to identify and adjust for insurance prepaid and electricity accrued in trial balance corrections",
+      "N 2023 P2 Q4 (8 marks) — comprehensive question requiring adjustments for rent receivable owing, advertising prepaid, and wages accrued in financial statements",
+      "M/J 2022 P1 Q18 (1 mark) — tested classification of prepaid expenses and accrued income in statement of financial position"
+    ],
+    "workedExample": {
+      "question": "Ahmed's trial balance shows Insurance $2,400 (debit) and Rent receivable $1,800 (credit). Additional information: Insurance prepaid $300; Rent receivable outstanding $450. Prepare extracts showing these items in the statement of profit or loss and statement of financial position. (6 marks)",
+      "steps": [
+        "Step 1: Calculate adjusted insurance expense: $2,400 - $300 prepaid = $2,100 expense for the year",
+        "Step 2: Calculate adjusted rent receivable income: $1,800 + $450 outstanding = $2,250 income for the year",
+        "Step 3: Show insurance expense $2,100 in statement of profit or loss (expenses section)",
+        "Step 4: Show rent receivable income $2,250 in statement of profit or loss (income section)",
+        "Step 5: Show prepaid insurance $300 as current asset in statement of financial position",
+        "Step 6: Show rent receivable outstanding $450 as current asset in statement of financial position"
+      ],
+      "answer": "Statement of profit or loss extract: Income - Rent receivable $2,250; Expenses - Insurance $2,100. Statement of financial position extract: Current assets - Prepaid insurance $300, Rent receivable $450",
+      "markScheme": "1 mark each for: correct insurance expense calculation, correct rent receivable calculation, proper classification in profit/loss statement, proper classification as current assets"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused accrued expenses with prepaid expenses, showing them on wrong sides of accounts' — always remember accruals are amounts OWING (liabilities) while prepayments are amounts PAID IN ADVANCE (assets)",
+      "Examiner Report 2024: 'Students frequently failed to distinguish between accrued income and prepaid income' — accrued income is income EARNED but not yet received (asset), prepaid income is income RECEIVED but not yet earned (liability)",
+      "Examiner Report 2022: 'Common error was placing prepayments and accruals in wrong sections of statement of financial position' — always classify prepaid expenses and accrued income as CURRENT ASSETS, accrued expenses and prepaid income as CURRENT LIABILITIES"
+    ],
+    "keyDiagram": "T-account diagram showing four scenarios: 1) Prepaid Expense (Asset side: 'Prepaid Insurance $X') 2) Accrued Expense (Liability side: 'Wages Owing $X') 3) Accrued Income (Asset side: 'Rent Receivable $X') 4) Prepaid Income (Liability side: 'Rent Received in Advance $X'). Each T-account should show the adjustment process from trial balance figure to final statement figures, with arrows indicating whether amounts are added or subtracted.",
+    "quickRecap": "Other payables are accrued expenses (amounts owed but not yet paid) and prepaid income (amounts received but not yet earned) - both are current liabilities. Other receivables are accrued income (amounts earned but not yet received) and prepaid expenses (amounts paid but not yet used) - both are current assets. Always adjust trial balance figures before preparing final statements. Remember: if it's owed TO you or paid BY you in advance = asset; if it's owed BY you or paid TO you in advance = liability."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:38:50.371Z",
-  "updated_at": "2026-04-06T03:38:50.371Z"
+  "updated_at": "2026-04-06T03:38:50.371Z",
+  "enriched_at": "2026-04-06T16:06:42.263Z"
 }

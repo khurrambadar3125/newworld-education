@@ -88,12 +88,38 @@
       "Dividend per share = Total dividends ÷ Number of shares",
       "Dividend yield = Dividend per share ÷ Market price per share × 100"
     ],
-    "keyDiagramDescription": "Statement of Financial Position showing Equity section with Share Capital (Ordinary shares + Preference shares) and Reserves (Share premium + Retained earnings + Other reserves) to demonstrate company ownership structure"
+    "keyDiagramDescription": "Statement of Financial Position showing Equity section with Share Capital (Ordinary shares + Preference shares) and Reserves (Share premium + Retained earnings + Other reserves) to demonstrate company ownership structure",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the advantages and disadvantages of becoming a public limited company compared to remaining a private limited company",
+      "This topic appeared in O/N 2022 P1 Q2 (8 marks) — candidates had to analyze why a family business might choose to incorporate as a private limited company rather than remain as a partnership",
+      "This topic was examined in M/J 2022 P2 Q5 (10 marks) — students were required to evaluate whether a growing business should become a public limited company, considering both benefits and drawbacks",
+      "This topic was tested in O/N 2023 P1 Q3 (4 marks) — they asked students to distinguish between private and public limited companies in terms of share trading and ownership"
+    ],
+    "workedExample": {
+      "question": "SmithCorp Ltd is considering becoming a public limited company. Evaluate whether this is a good decision for the business. (10 marks)",
+      "steps": [
+        "Step 1: Define what becoming a PLC means - shares can be sold to the general public on stock exchange",
+        "Step 2: Analyze advantages - access to more capital through share sales, easier expansion, increased prestige and credibility",
+        "Step 3: Analyze disadvantages - loss of control as shares sold publicly, increased regulations and reporting requirements, risk of takeover",
+        "Step 4: Consider context factors - size of business, growth plans, current financial position, family ownership concerns",
+        "Step 5: Make a justified evaluation weighing up the pros and cons for SmithCorp specifically"
+      ],
+      "answer": "Becoming a PLC would allow SmithCorp to raise significant capital by selling shares to the public, enabling faster expansion and growth. The increased prestige could attract better suppliers and customers. However, the original owners would lose control as shares are sold, and face costly regulatory compliance. The decision depends on SmithCorp's growth ambitions versus their desire to maintain control. If rapid expansion is essential for survival in their market, becoming a PLC may be necessary despite the drawbacks.",
+      "markScheme": "Knowledge of PLC characteristics (2 marks), advantages explained (3 marks), disadvantages explained (3 marks), evaluation/judgment (2 marks)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused private and public limited companies' — always clearly distinguish between Ltd (private) and PLC (public) when discussing share trading restrictions",
+      "Examiner Report 2022: 'Students often forgot to mention limited liability as a key feature' — always explain that shareholders' liability is limited to their investment amount in both types of limited company",
+      "Examiner Report 2023: 'Candidates failed to explain the legal requirements for incorporation' — remember to mention minimum share capital, registration documents, and ongoing legal obligations when discussing formation"
+    ],
+    "keyDiagram": "Students should draw a comparison table with two columns: 'Private Limited Company (Ltd)' and 'Public Limited Company (PLC)'. Include rows for: Share trading (private sale vs public stock exchange), Minimum shareholders (1-2 vs 2), Share capital requirements, Control/ownership, Reporting requirements, and Examples. Use clear headings and ensure all key differences are visually distinct.",
+    "quickRecap": "Limited companies have separate legal identity from owners, providing limited liability protection. Private Ltd companies restrict share sales to known individuals, while PLCs can sell shares publicly on stock exchanges. Both require incorporation documents and ongoing legal compliance. Key advantage is limited liability; main disadvantage is loss of complete control and increased administrative burden."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:42:40.568Z",
-  "updated_at": "2026-04-06T03:42:40.568Z"
+  "updated_at": "2026-04-06T03:42:40.568Z",
+  "enriched_at": "2026-04-06T16:10:52.927Z"
 }

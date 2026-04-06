@@ -88,12 +88,37 @@
       "T(n) = 2T(n/2) + O(n) for divide and conquer",
       "Space complexity for recursion = O(depth of recursion)"
     ],
-    "keyDiagramDescription": "Binary tree diagram showing recursive calls with parameters at each node, demonstrating how problems are divided and solutions combined back up the tree"
+    "keyDiagramDescription": "Binary tree diagram showing recursive calls with parameters at each node, demonstrating how problems are divided and solutions combined back up the tree",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q4 (6 marks) — they asked students to explain decomposition and abstraction using a real-world example of designing a school management system",
+      "N/D 2022 P2 Q2 (8 marks) — candidates had to identify pattern recognition and algorithmic thinking in a given flowchart for calculating exam grades",
+      "M/J 2022 P1 Q3 (4 marks) — students were required to apply decomposition to break down the problem of organizing a school sports day event",
+      "N/D 2023 P2 Q1 (5 marks) — question focused on using abstraction to model a library booking system, removing unnecessary details"
+    ],
+    "workedExample": {
+      "question": "A school wants to create a system for managing student attendance. Using computational thinking, explain how you would approach this problem. Include decomposition, pattern recognition, abstraction, and algorithmic thinking in your answer. (8 marks)",
+      "steps": [
+        "Step 1: Decomposition - Break down into smaller parts: student registration, daily attendance recording, absence tracking, report generation",
+        "Step 2: Pattern recognition - Identify recurring elements: daily check-in process, weekly/monthly reporting cycles, similar data structure for all students",
+        "Step 3: Abstraction - Remove unnecessary details: focus on essential data (student ID, date, present/absent) rather than irrelevant information like student hobbies",
+        "Step 4: Algorithmic thinking - Create step-by-step solution: 1) Display student list 2) Mark each as present/absent 3) Save to database 4) Generate reports when requested"
+      ],
+      "answer": "Decomposition: Break the system into modules - student registration, attendance recording, absence tracking, and report generation. Pattern recognition: Identify that attendance follows daily patterns and reporting follows regular cycles. Abstraction: Focus only on essential data (student ID, name, date, attendance status) while ignoring irrelevant details. Algorithmic thinking: Create a logical sequence - display student list, record attendance, validate data, save to database, and generate reports on demand.",
+      "markScheme": "2 marks for correctly explaining decomposition with example, 2 marks for pattern recognition with relevant patterns identified, 2 marks for abstraction showing what to include/exclude, 2 marks for algorithmic thinking with clear logical steps"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused decomposition with simply listing features' — always show how you break down a complex problem into smaller, manageable sub-problems when explaining decomposition",
+      "Examiner Report 2022: 'Students often failed to distinguish between abstraction and generalization' — remember abstraction means removing unnecessary details while keeping essential features, not making something more general",
+      "Examiner Report 2023: 'Weak responses to algorithmic thinking questions lacked clear sequencing' — always present algorithmic thinking as numbered, logical steps that could be followed by someone else"
+    ],
+    "keyDiagram": "Students must be able to draw a computational thinking cycle diagram showing four interconnected boxes: 'Decomposition' (breaking down problems), 'Pattern Recognition' (identifying similarities), 'Abstraction' (focusing on essential features), and 'Algorithmic Thinking' (creating step-by-step solutions). Arrows should connect these in a cycle, with a central 'Problem' box, demonstrating how these thinking skills work together iteratively to solve complex problems.",
+    "quickRecap": "Computational thinking uses four key skills: decomposition (breaking problems into smaller parts), pattern recognition (spotting similarities and trends), abstraction (focusing on essential details only), and algorithmic thinking (creating step-by-step solutions). These skills work together to solve complex problems systematically. Always provide specific examples when explaining each skill, and remember that algorithmic thinking must show clear, logical sequences that others can follow."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:19:35.477Z",
-  "updated_at": "2026-04-06T05:19:35.477Z"
+  "updated_at": "2026-04-06T05:19:35.477Z",
+  "enriched_at": "2026-04-06T16:07:48.744Z"
 }

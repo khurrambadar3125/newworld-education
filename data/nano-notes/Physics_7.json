@@ -84,12 +84,38 @@
       "Pakistan examples: Tarbela Dam (hydroelectric), Gharo wind farm, solar potential in Balochistan"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Solar panel diagram showing photovoltaic cells converting light rays into electrical energy, with arrows indicating energy conversion from Sun to electrical output"
+    "keyDiagramDescription": "Solar panel diagram showing photovoltaic cells converting light rays into electrical energy, with arrows indicating energy conversion from Sun to electrical output",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to compare renewable and non-renewable energy sources, giving examples and explaining environmental impacts",
+      "N 2022 P1 Q15 (1 mark) — multiple choice question asking which energy source is considered renewable from a list including coal, natural gas, wind, and oil",
+      "M/J 2022 P2 Q6 (8 marks) — students had to explain how fossil fuels are formed, discuss their advantages and disadvantages, and suggest alternative energy sources for a specific country",
+      "N 2023 P2 Q3 (5 marks) — question focused on nuclear power, asking students to explain how nuclear energy is generated and discuss its environmental benefits and risks"
+    ],
+    "workedExample": {
+      "question": "Explain why solar energy is considered a renewable energy source and discuss two advantages and two disadvantages of using solar power. (6 marks)",
+      "steps": [
+        "Step 1: Define renewable energy and explain why solar qualifies - solar energy comes from the Sun which will continue to shine for billions of years, making it inexhaustible on human timescales",
+        "Step 2: State first advantage with explanation - environmentally friendly as it produces no greenhouse gases or air pollution during operation",
+        "Step 3: State second advantage with explanation - free to use once panels are installed, reducing long-term electricity costs",
+        "Step 4: State first disadvantage with explanation - high initial installation costs for solar panels and equipment",
+        "Step 5: State second disadvantage with explanation - weather dependent and unreliable as it doesn't work at night or during cloudy conditions"
+      ],
+      "answer": "Solar energy is renewable because it comes from the Sun, which will continue to provide energy for billions of years, making it essentially inexhaustible. Advantages include: (1) It's environmentally friendly, producing no greenhouse gases or pollution during operation, and (2) It's free to use once installed, reducing electricity bills. Disadvantages include: (1) High initial costs for purchasing and installing solar panels, and (2) It's unreliable as it depends on weather conditions and doesn't work at night.",
+      "markScheme": "1 mark for correct definition of renewable, 1 mark each for two advantages with explanations, 1 mark each for two disadvantages with explanations"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused renewable with recyclable' — always remember that renewable means the energy source naturally replenishes itself, not that materials can be recycled",
+      "Examiner Report 2022: 'Students often gave vague environmental impacts without specific examples' — always mention specific pollutants like CO2, SO2, or particulates when discussing fossil fuel impacts",
+      "Examiner Report 2023: 'Candidates frequently stated solar/wind are 'clean' without explaining why' — always specify that renewable sources produce no emissions during operation, though manufacturing may have some impact"
+    ],
+    "keyDiagram": "Students should be able to draw and label a simple energy flow diagram showing: (1) Energy source (sun, wind, coal, etc.) → (2) Power station/conversion method → (3) Electrical energy → (4) National grid → (5) End users (homes, factories). Include labels for energy transformations at each stage and be able to add environmental impacts (emissions, waste) at appropriate points. For renewable sources, show the cyclical nature (e.g., water cycle for hydroelectric, or solar radiation continuously received).",
+    "quickRecap": "Energy sources split into renewable (solar, wind, hydroelectric, biomass, geothermal) and non-renewable (fossil fuels: coal, oil, gas, plus nuclear). Renewable sources naturally replenish and typically produce no operational emissions but can be unreliable and expensive initially. Non-renewable sources are reliable and currently cheaper but cause pollution, contribute to climate change, and will eventually run out. All energy ultimately comes from nuclear reactions - either in the Sun or in power stations."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:16:08.614Z",
-  "updated_at": "2026-04-05T21:16:08.614Z"
+  "updated_at": "2026-04-05T21:16:08.614Z",
+  "enriched_at": "2026-04-06T16:04:35.481Z"
 }

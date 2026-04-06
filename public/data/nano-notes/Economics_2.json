@@ -88,12 +88,39 @@
       "XED = % change in quantity demanded of good A ÷ % change in price of good B",
       "PES = % change in quantity supplied ÷ % change in price"
     ],
-    "keyDiagramDescription": "Supply and demand curves intersecting at equilibrium point, with price on y-axis and quantity on x-axis. Label curves as S and D, equilibrium point as E, equilibrium price as Pe and equilibrium quantity as Qe."
+    "keyDiagramDescription": "Supply and demand curves intersecting at equilibrium point, with price on y-axis and quantity on x-axis. Label curves as S and D, equilibrium point as E, equilibrium price as Pe and equilibrium quantity as Qe.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q15 (1 mark) — they asked students to identify which situation demonstrates price elastic demand from multiple scenarios",
+      "O/N 2022 P2 Q4 (8 marks) examined price elasticity of demand for sports stadium seats, requiring calculation and analysis of responsiveness when prices increased 10%",
+      "M/J 2023 P2 Q6 (12 marks) assessed students' ability to compare the importance of income elasticity versus cross elasticity of demand for business decision-making",
+      "O/N 2022 P1 Q18 (1 mark) tested understanding of factors causing outward shifts in labor demand curves",
+      "M/J 2023 P1 Q22 (1 mark) examined effects of market consolidation on price elasticity of demand and long-run average costs"
+    ],
+    "workedExample": {
+      "question": "A sports stadium increases ticket prices by 10%. Demand for cheaper seats falls by 5% while demand for expensive seats falls by 12%. Calculate the price elasticity of demand for both types of seats and explain what this tells us about consumer responsiveness. (6 marks)",
+      "steps": [
+        "Step 1: Apply PED formula = % change in quantity demanded ÷ % change in price",
+        "Step 2: For cheaper seats: PED = -5% ÷ 10% = -0.5 (ignore negative sign)",
+        "Step 3: For expensive seats: PED = -12% ÷ 10% = -1.2",
+        "Step 4: Interpret results: cheaper seats are price inelastic (PED < 1), expensive seats are price elastic (PED > 1)",
+        "Step 5: Explain responsiveness: consumers are less responsive to price changes for cheaper seats, more responsive for expensive seats"
+      ],
+      "answer": "Cheaper seats: PED = 0.5 (price inelastic). Expensive seats: PED = 1.2 (price elastic). This shows consumers are more responsive to price changes for expensive seats, likely because they represent luxury purchases with available substitutes, while cheaper seats are more essential with fewer alternatives.",
+      "markScheme": "2 marks for correct calculations, 2 marks for identifying elastic/inelastic, 2 marks for explaining consumer responsiveness with reference to substitutes/necessity"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates calculated elasticity correctly but failed to ignore the negative sign when interpreting results' — always state whether demand is elastic or inelastic using the absolute value",
+      "Examiner Report 2022: 'Students frequently confused income elasticity with price elasticity of demand' — always check which type of elasticity the question is asking for and use the correct formula",
+      "Examiner Report 2023: 'Candidates often identified elastic/inelastic correctly but provided no economic explanation' — always explain why demand might be elastic/inelastic using factors like substitutes, necessity, time period, and proportion of income"
+    ],
+    "keyDiagram": "Price Elasticity of Demand curve comparison: Draw two demand curves on the same axes with Price (P) on y-axis and Quantity (Q) on x-axis. Show a steep demand curve labeled 'Price Inelastic Demand (PED < 1)' and a flatter demand curve labeled 'Price Elastic Demand (PED > 1)'. Mark identical price changes (P1 to P2) on both curves and show the resulting quantity changes (Q1 to Q2) are smaller for the inelastic curve and larger for the elastic curve. Include labels showing the percentage changes and PED calculations.",
+    "quickRecap": "Price elasticity of demand (PED) measures consumer responsiveness to price changes using the formula: % change in quantity demanded ÷ % change in price. PED < 1 means inelastic (consumers less responsive), PED > 1 means elastic (consumers more responsive). Key factors affecting PED include availability of substitutes, whether the good is a necessity or luxury, time period for adjustment, and proportion of income spent on the good."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:33:22.381Z",
-  "updated_at": "2026-04-06T03:33:22.381Z"
+  "updated_at": "2026-04-06T03:33:22.381Z",
+  "enriched_at": "2026-04-06T16:06:19.875Z"
 }

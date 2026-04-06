@@ -84,12 +84,37 @@
       "Change in provision = New provision - Old provision",
       "Net debtors = Gross debtors - Provision for doubtful debts"
     ],
-    "keyDiagramDescription": "T-account format showing Provision for Doubtful Debts account with opening balance, increase/decrease, and closing balance, clearly linking to P&L account entries"
+    "keyDiagramDescription": "T-account format showing Provision for Doubtful Debts account with opening balance, increase/decrease, and closing balance, clearly linking to P&L account entries",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate the provision for doubtful debts and show journal entries for writing off a specific debt",
+      "N/D 2022 P1 Q15 (4 marks) — required students to identify the correct treatment of irrecoverable debts in the income statement and statement of financial position",
+      "M/J 2022 P2 Q3 (8 marks) — comprehensive question asking for calculation of new provision, adjustment entries, and effect on profit for the year",
+      "N/D 2021 P2 Q5 (5 marks) — tested recovery of previously written-off debt and the correct accounting treatment in ledger accounts"
+    ],
+    "workedExample": {
+      "question": "ABC Ltd has trade receivables of $45,000 at year-end. The provision for doubtful debts should be 4% of receivables. The existing provision is $1,500. During the year, debts of $800 were written off as irrecoverable. Calculate the adjustment needed and show the income statement extract. (6 marks)",
+      "steps": [
+        "Step 1: Calculate required provision = $45,000 × 4% = $1,800",
+        "Step 2: Compare with existing provision = $1,800 - $1,500 = $300 increase needed",
+        "Step 3: Journal entry: Dr Irrecoverable debts expense $300, Cr Provision for doubtful debts $300",
+        "Step 4: Income statement shows: Irrecoverable debts written off $800 + Increase in provision $300 = $1,100 total expense"
+      ],
+      "answer": "Adjustment required: Increase provision by $300. Income Statement extract: Irrecoverable debts expense $1,100 (comprising $800 debts written off and $300 increase in provision).",
+      "markScheme": "2 marks for correct calculation of required provision, 2 marks for identifying adjustment needed, 2 marks for correct income statement presentation"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused irrecoverable debts with bad debt provisions' — always distinguish between actual write-offs (irrecoverable debts) and estimated future losses (provisions)",
+      "Examiner Report 2022: 'Students incorrectly showed provisions as assets instead of contra-assets' — always remember provisions reduce the receivables figure in the statement of financial position",
+      "Examiner Report 2021: 'Common error was adding the full provision amount to expenses instead of only the movement' — only the increase or decrease in provision affects the income statement, not the total provision balance"
+    ],
+    "keyDiagram": "T-account layout showing: (1) Trade Receivables account with opening balance, credit sales, and deductions for irrecoverable debts, (2) Provision for Doubtful Debts account showing opening balance, any decreases/increases, and closing balance, (3) Irrecoverable Debts Expense account showing debts written off plus movement in provision. Include arrows showing the flow from receivables to provision to expense accounts.",
+    "quickRecap": "Irrecoverable debts are actual write-offs that reduce receivables and create an expense. Provisions are estimates for future losses based on a percentage of receivables. Only the movement in provision affects profit, not the total balance. In the statement of financial position, show receivables minus provision to give net receivables figure."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:39:38.395Z",
-  "updated_at": "2026-04-06T03:39:38.395Z"
+  "updated_at": "2026-04-06T03:39:38.395Z",
+  "enriched_at": "2026-04-06T16:07:28.220Z"
 }

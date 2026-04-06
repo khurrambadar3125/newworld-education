@@ -81,12 +81,39 @@
     "formulas": [
       "Rf = distance moved by substance ÷ distance moved by solvent front"
     ],
-    "keyDiagramDescription": "Mass spectrum showing molecular ion peak and fragmentation pattern with m/z values on x-axis and relative abundance on y-axis"
+    "keyDiagramDescription": "Mass spectrum showing molecular ion peak and fragmentation pattern with m/z values on x-axis and relative abundance on y-axis",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to describe the test for sulfate ions using barium chloride solution and explain the observations",
+      "N/D 2022 P1 Q15 (1 mark) — multiple choice question on identifying the correct reagent for testing chloride ions",
+      "M/J 2022 P2 Q6(c) (4 marks) — students had to plan an investigation to distinguish between sodium carbonate and sodium hydrogencarbonate using analytical tests",
+      "N/D 2023 P2 Q3(b) (5 marks) — required description of flame tests for metal cations and explanation of safety precautions needed"
+    ],
+    "workedExample": {
+      "question": "A student has three unlabeled solutions: sodium chloride, sodium bromide, and sodium iodide. Describe how you would use chemical tests to identify each solution. (6 marks)",
+      "steps": [
+        "Step 1: Add dilute nitric acid to each solution to remove any carbonates that might interfere",
+        "Step 2: Add silver nitrate solution to each acidified solution",
+        "Step 3: Observe precipitate colors: white for chloride, cream for bromide, yellow for iodide",
+        "Step 4: To confirm, add dilute ammonia solution to each precipitate",
+        "Step 5: White precipitate (AgCl) dissolves in dilute ammonia, cream precipitate (AgBr) is insoluble",
+        "Step 6: Add concentrated ammonia to the cream precipitate - AgBr dissolves, AgI remains insoluble"
+      ],
+      "answer": "Add dilute nitric acid to remove carbonates, then silver nitrate solution. White precipitate indicates chloride (dissolves in dilute ammonia), cream precipitate indicates bromide (dissolves only in concentrated ammonia), yellow precipitate indicates iodide (insoluble in ammonia).",
+      "markScheme": "1 mark for nitric acid addition, 1 mark for silver nitrate test, 2 marks for correct precipitate colors, 2 marks for ammonia confirmatory tests"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to mention adding nitric acid before testing for halides' — always acidify solutions first to remove interfering carbonates",
+      "Examiner Report 2022: 'Students confused the colors of silver halide precipitates' — remember the mnemonic 'White Cream Yellow' for chloride, bromide, iodide respectively",
+      "Examiner Report 2023: 'Poor descriptions of gas tests were common' — always state both the test method AND the positive result observation clearly"
+    ],
+    "keyDiagram": "Students must be able to draw a labeled diagram of the apparatus for collecting and testing gases: showing a test tube with reaction mixture, delivery tube leading to an inverted test tube filled with water in a trough (for collecting gases), with labels for 'reaction mixture', 'delivery tube', 'gas collected', and 'water'. Include a separate diagram showing how to test the collected gas with appropriate reagents.",
+    "quickRecap": "Analytical chemistry involves systematic identification of ions using specific reagents. Always acidify with nitric acid before halide tests using silver nitrate. Remember precipitate colors: carbonates fizz with acid producing CO₂, sulfates give white precipitate with barium chloride. Gas tests require collection apparatus and specific reagents like limewater for CO₂."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:38:24.085Z",
-  "updated_at": "2026-04-06T04:38:24.085Z"
+  "updated_at": "2026-04-06T04:38:24.085Z",
+  "enriched_at": "2026-04-06T16:07:50.169Z"
 }

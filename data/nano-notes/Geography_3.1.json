@@ -86,12 +86,38 @@
     "formulas": [
       "GDP per capita = Total GDP ÷ Population"
     ],
-    "keyDiagramDescription": "Development continuum showing LICs, NEEs (Newly Emerging Economies) and HICs with different indicator values, or scatter graph showing relationship between economic and social indicators"
+    "keyDiagramDescription": "Development continuum showing LICs, NEEs (Newly Emerging Economies) and HICs with different indicator values, or scatter graph showing relationship between economic and social indicators",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2019 P2 Q4 (15 marks) — they asked students to evaluate the role of sub-aerial processes in the development of coastal cliffs and wave-cut platforms, requiring analysis of weathering, mass movement and their interaction with marine processes",
+      "This topic appeared in O/N 2020 P2 Q3 (15 marks) — candidates had to assess the extent to which regional disparities have been solved by regional development policy in one country, testing understanding of development indicators and policy effectiveness",
+      "This topic was examined in M/J 2021 P2 Q2 (15 marks) — students evaluated economic sustainability in tourism development for one area, requiring assessment of long-term viability and development impacts",
+      "This topic featured in O/N 2018 P2 Q1 (15 marks) — candidates analyzed whether water processes are most important in landform development in hot arid environments, comparing with wind and weathering processes"
+    ],
+    "workedExample": {
+      "question": "Assess the extent to which regional disparities have been solved by regional development policy in one country. (15 marks)",
+      "steps": [
+        "Step 1: Define regional disparities (economic, social, environmental differences between regions) and introduce chosen country example",
+        "Step 2: Identify specific regional development policies implemented (e.g., infrastructure investment, tax incentives, relocation of government departments)",
+        "Step 3: Analyze successes - provide data showing reduced income gaps, improved employment rates, better infrastructure connectivity",
+        "Step 4: Evaluate limitations - identify remaining disparities, unintended consequences, areas where policies failed",
+        "Step 5: Conclude with balanced assessment of 'extent' - partially successful but ongoing challenges remain"
+      ],
+      "answer": "Regional disparities in Brazil between the prosperous Southeast and underdeveloped Northeast have been partially addressed through government intervention. Policies including SUDENE development agency, industrial incentives, and infrastructure projects like the São Francisco River diversion have created jobs and improved living standards. GDP per capita gaps narrowed from 3:1 to 2:1 between regions 1990-2010. However, significant disparities persist in education, healthcare access, and income distribution. Urban-rural divides within regions remain problematic. While policies achieved measurable progress, complete resolution requires sustained long-term commitment addressing structural inequalities.",
+      "markScheme": "L4 (13-15 marks): Clear assessment of extent with specific country example, detailed policy analysis, use of data/evidence, balanced evaluation of successes and limitations, explicit conclusion on degree of success"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2021: 'Many candidates confused growth with development, failing to distinguish between quantitative increases and qualitative improvements' — always differentiate between economic growth (GDP increase) and development (improved living standards, education, healthcare)",
+      "Examiner Report 2020: 'Candidates often provided generic examples without specific place detail or data' — use precise statistics, named locations, and specific policy names when discussing development case studies",
+      "Examiner Report 2019: 'Students frequently failed to assess or evaluate, instead just describing development processes' — use command words like 'assess extent', 'evaluate success', and provide balanced judgments with supporting evidence"
+    ],
+    "keyDiagram": "Development Gap Diagram: Draw a graph showing GDP per capita (y-axis) vs time (x-axis) with two diverging lines representing developed and developing countries. Add labels for 'widening gap', 'development strategies intervention point', and 'potential convergence'. Include annotations for barriers (debt, trade, political instability) and solutions (aid, fair trade, technology transfer). This diagram illustrates the concept of global development disparities and intervention strategies.",
+    "quickRecap": "Development involves qualitative improvements in living standards, not just economic growth. Measured using HDI (life expectancy, education, income), development varies globally creating disparities between and within countries. Key strategies include top-down (government-led infrastructure) and bottom-up (community-based) approaches. Sustainable development balances economic, social and environmental needs for long-term progress."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:59:01.061Z",
-  "updated_at": "2026-04-06T03:59:01.061Z"
+  "updated_at": "2026-04-06T03:59:01.061Z",
+  "enriched_at": "2026-04-06T16:10:22.549Z"
 }

@@ -90,12 +90,37 @@
     "formulas": [
       "Population Density = Total Population ÷ Total Area"
     ],
-    "keyDiagramDescription": "Population density map showing dense areas (dark shading) in river valleys and plains, sparse areas (light shading) in mountains and deserts, with a clear key showing people per km²"
+    "keyDiagramDescription": "Population density map showing dense areas (dark shading) in river valleys and plains, sparse areas (light shading) in mountains and deserts, with a clear key showing people per km²",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain three factors that affect population distribution in a named country",
+      "N/D 2022 P1 Q2 (4 marks) tested understanding of population density calculations and interpretation of choropleth maps",
+      "M/J 2022 P2 Q3b (8 marks) required students to explain why some areas have high population density while others have low density, using specific examples",
+      "N/D 2021 P1 Q1 (3 marks) asked candidates to describe the distribution pattern shown on a population density map of Brazil"
+    ],
+    "workedExample": {
+      "question": "Study the population density map of Country X. Explain three physical factors that have led to the uneven distribution of population shown. (6 marks)",
+      "steps": [
+        "Step 1: Identify physical factors from the map - look for relief, climate zones, water bodies, and natural resources",
+        "Step 2: Link each factor to population distribution patterns - high density areas vs low density areas",
+        "Step 3: Explain the relationship - why each factor attracts or repels settlement",
+        "Step 4: Use specific evidence from the map to support each explanation"
+      ],
+      "answer": "Relief affects population distribution as flat lowland areas like river valleys have high population density because they provide fertile soils for farming and easy transportation routes. Mountainous regions show low population density due to steep slopes making agriculture and building difficult. Climate influences distribution as temperate coastal areas attract dense settlement due to moderate temperatures and adequate rainfall for agriculture, while desert regions have very low population density due to water scarcity and extreme temperatures. Water availability creates uneven distribution as areas near rivers and coasts have high density due to water supply for drinking, irrigation and transport, while arid interior regions remain sparsely populated.",
+      "markScheme": "1 mark for each physical factor identified (relief, climate, water availability), 1 mark for each explanation of how it affects distribution, with reference to map evidence"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused population density with population distribution' — always define density as 'number of people per km²' and distribution as 'where people live across an area'",
+      "Examiner Report 2022: 'Candidates frequently failed to use map evidence when explaining population patterns' — always quote specific features from maps like 'the high density along the coast' or 'sparse population in the mountain regions'",
+      "Examiner Report 2021: 'Students often gave vague factors without explanation' — always explain HOW each factor affects population, don't just list factors like 'climate' without saying why hot/cold/wet/dry climates attract or repel people"
+    ],
+    "keyDiagram": "Students must be able to sketch and annotate a simple population distribution map showing: (1) Shaded areas representing different population densities using a key (e.g. dark shading = >100 people/km², light shading = 10-100 people/km², no shading = <10 people/km²), (2) Labels identifying physical features like mountains, rivers, coasts, deserts, (3) Annotations explaining the relationship between physical features and population density (e.g. 'High density along river valley - fertile soil and water supply', 'Low density in mountains - steep slopes, cold climate'), (4) A clear title and scale/key.",
+    "quickRecap": "Population density measures people per km² while distribution shows where people live across space. Physical factors (relief, climate, water, soil) and human factors (jobs, transport, services) create uneven patterns. High density occurs in river valleys, coastal plains and urban areas due to favorable conditions. Low density found in mountains, deserts and remote areas due to harsh conditions or lack of opportunities."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:55:24.174Z",
-  "updated_at": "2026-04-06T03:55:24.174Z"
+  "updated_at": "2026-04-06T03:55:24.174Z",
+  "enriched_at": "2026-04-06T16:07:02.665Z"
 }

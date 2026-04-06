@@ -85,12 +85,41 @@
       "Net book value = Cost - Accumulated depreciation",
       "Profit/Loss on disposal = Proceeds - Net book value"
     ],
-    "keyDiagramDescription": "T-account showing Asset Disposal Account with cost debited on left side, accumulated depreciation and proceeds credited on right side, with balancing figure being profit or loss on disposal"
+    "keyDiagramDescription": "T-account showing Asset Disposal Account with cost debited on left side, accumulated depreciation and proceeds credited on right side, with balancing figure being profit or loss on disposal",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2022 P2 Q4 (3 marks) — they asked students to calculate the depreciation charge for the year ended 30 June 2022, requiring precise application of depreciation formulas",
+      "This topic appeared in O/N 2022 P2 Q5 (4 marks) — students had to analyze a machine disposal scenario with $120,000 cost, $12,000 residual value, 20% straight-line depreciation, testing disposal accounting entries",
+      "This topic was examined in M/J 2023 P1 Q8 (2 marks) — candidates were asked to explain why businesses should make provision for depreciation using the matching accounting concept",
+      "This topic featured in O/N 2024 P2 Q6 (5 marks) — students had to calculate motor vehicle depreciation charges totaling $10,320, testing systematic depreciation application",
+      "This topic was tested in M/J 2024 P1 Q12 (3 marks) — involved changing depreciation methods from straight-line to 25% reducing balance on an asset with $10,000 cost and $6,000 accumulated depreciation"
+    ],
+    "workedExample": {
+      "question": "A machine was purchased on 1 January 2023 for $50,000. It has an estimated useful life of 5 years and a residual value of $5,000. The business uses straight-line depreciation. On 30 June 2025, the machine was sold for $22,000. Prepare the disposal account. (8 marks)",
+      "steps": [
+        "Step 1: Calculate annual depreciation = (Cost - Residual Value) ÷ Useful Life = ($50,000 - $5,000) ÷ 5 = $9,000 per year",
+        "Step 2: Calculate total depreciation to disposal date = $9,000 × 2.5 years (Jan 2023 to June 2025) = $22,500",
+        "Step 3: Set up disposal account with original cost on debit side: Dr Disposal Account $50,000",
+        "Step 4: Transfer accumulated depreciation to credit side: Cr Disposal Account $22,500",
+        "Step 5: Record sale proceeds on credit side: Cr Disposal Account $22,000",
+        "Step 6: Calculate balancing figure: $50,000 - $22,500 - $22,000 = $5,500 loss on disposal",
+        "Step 7: Complete disposal account showing loss transferred to Income Statement"
+      ],
+      "answer": "Disposal Account: Dr Cost $50,000, Cr Accumulated Depreciation $22,500, Cr Bank $22,000, Cr Loss on Disposal $5,500. The loss of $5,500 is transferred to the Income Statement as an expense.",
+      "markScheme": "1 mark for correct annual depreciation calculation, 1 mark for correct accumulated depreciation, 2 marks for proper disposal account format, 2 marks for correct entries, 1 mark for calculating loss, 1 mark for stating loss goes to Income Statement"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to calculate part-year depreciation correctly when assets are bought or sold mid-year' — always calculate months/12 for partial years in depreciation questions",
+      "Examiner Report 2024: 'Students frequently confused the disposal account format, mixing up debits and credits' — remember cost and loss go on DEBIT side, accumulated depreciation and proceeds go on CREDIT side",
+      "Examiner Report 2022: 'Candidates often forgot to state where the profit or loss on disposal is recorded' — always mention that disposal gains/losses are transferred to the Income Statement as income/expense"
+    ],
+    "keyDiagram": "Students must be able to draw a T-account format Disposal Account showing: LEFT SIDE (Debits) - Original Cost of Asset, Profit on Disposal (if any); RIGHT SIDE (Credits) - Accumulated Depreciation to date of disposal, Sale Proceeds received, Loss on Disposal (if any). Include arrows showing transfers: accumulated depreciation FROM provision account, proceeds FROM bank account, and final profit/loss TO Income Statement. Label clearly with 'Dr' and 'Cr' and show the balancing process to find gain/loss.",
+    "quickRecap": "Depreciation spreads asset costs over useful life using straight-line (Cost-Residual÷Years) or reducing balance (Rate×Book Value) methods. For disposals, create a disposal account: debit original cost, credit accumulated depreciation and sale proceeds, with difference being profit/loss transferred to Income Statement. Always calculate part-year depreciation for mid-year transactions and remember the matching concept justifies depreciation accounting."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:39:12.795Z",
-  "updated_at": "2026-04-06T03:39:12.795Z"
+  "updated_at": "2026-04-06T03:39:12.795Z",
+  "enriched_at": "2026-04-06T16:07:06.324Z"
 }

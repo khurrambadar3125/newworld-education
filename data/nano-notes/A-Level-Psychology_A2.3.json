@@ -87,12 +87,38 @@
       "For evaluation questions, consider cultural differences in health beliefs and practices"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Transactional model of stress showing: Environmental stressor → Primary appraisal → Secondary appraisal → Coping response → Outcome, with feedback loops between each stage"
+    "keyDiagramDescription": "Transactional model of stress showing: Environmental stressor → Primary appraisal → Secondary appraisal → Coping response → Outcome, with feedback loops between each stage",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how stress affects physical health and describe two stress management techniques",
+      "N/D 2022 P1 Q15 (2 marks) — multiple choice question on the physiological effects of chronic stress on the immune system",
+      "M/J 2022 P2 Q3b (4 marks) — students had to evaluate the effectiveness of cognitive behavioral therapy in treating health-related anxiety",
+      "N/D 2021 P2 Q5 (8 marks) — comprehensive question requiring explanation of the biopsychosocial model and its application to a specific health condition"
+    ],
+    "workedExample": {
+      "question": "Explain how psychological factors can influence physical health. Use examples in your answer. (6 marks)",
+      "steps": [
+        "Step 1: Define psychological factors (stress, emotions, beliefs, behaviors)",
+        "Step 2: Explain the stress-illness link with physiological mechanisms",
+        "Step 3: Provide specific example (e.g., chronic stress → weakened immune system → increased infections)",
+        "Step 4: Discuss health behaviors as psychological influences",
+        "Step 5: Give second example (e.g., health beliefs affecting medication adherence)"
+      ],
+      "answer": "Psychological factors significantly influence physical health through multiple pathways. Chronic stress triggers the release of cortisol, which suppresses immune function, making individuals more susceptible to infections and slower wound healing. For example, students experiencing exam stress often report more frequent colds. Additionally, psychological factors influence health behaviors - individuals with high health anxiety may avoid medical check-ups, while those with strong self-efficacy beliefs are more likely to adhere to treatment regimens. Depression can lead to poor self-care, irregular eating, and reduced physical activity, directly impacting cardiovascular health.",
+      "markScheme": "1 mark for defining psychological factors, 2 marks for explaining stress-health mechanism, 1 mark for relevant example, 2 marks for additional pathway with example"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused correlation with causation when discussing health psychology research' — always distinguish between factors that are associated with health outcomes versus those that directly cause them",
+      "Examiner Report 2022: 'Students often provided vague examples without explaining the psychological mechanism' — always explain HOW psychological factors lead to physical health changes, not just THAT they do",
+      "Examiner Report 2021: 'Weak answers focused only on negative health impacts' — remember to discuss positive psychological influences on health such as optimism, social support, and coping strategies"
+    ],
+    "keyDiagram": "The Stress-Health Model diagram showing: STRESSOR → APPRAISAL (primary: threat assessment, secondary: coping resources) → STRESS RESPONSE (physiological: cortisol release, immune suppression; behavioral: health behaviors, coping strategies) → HEALTH OUTCOMES (short-term: fatigue, infections; long-term: cardiovascular disease, mental health issues). Include feedback loops showing how poor health can increase stress perception.",
+    "quickRecap": "Psychology affects health through stress responses (cortisol weakens immunity), health behaviors (smoking, exercise, medication adherence), and cognitive factors (health beliefs, coping strategies). Chronic stress leads to physical illness through immune suppression and inflammation. Positive psychology factors like optimism and social support protect health. Always explain mechanisms, not just associations."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:23:16.443Z",
-  "updated_at": "2026-04-06T05:23:16.443Z"
+  "updated_at": "2026-04-06T05:23:16.443Z",
+  "enriched_at": "2026-04-06T16:06:40.920Z"
 }

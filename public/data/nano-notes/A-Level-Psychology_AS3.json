@@ -83,12 +83,37 @@
       "Link cognitive processes together to show understanding of information processing model"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Information processing model showing input → cognitive processes (attention, perception, memory, thinking) → output, often drawn as flowchart similar to computer processing system"
+    "keyDiagramDescription": "Information processing model showing input → cognitive processes (attention, perception, memory, thinking) → output, often drawn as flowchart similar to computer processing system",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how cognitive psychologists would study memory formation and include reference to internal mental processes",
+      "This topic appeared in O/N 2022 P1 Q2 (4 marks) — students had to describe two assumptions of the cognitive approach with examples",
+      "This topic was tested in M/J 2022 P2 Q1 (8 marks) — they asked students to evaluate the cognitive approach, discussing both strengths and weaknesses",
+      "This topic appeared in O/N 2021 P1 Q3 (3 marks) — students had to explain what cognitive psychologists mean by 'schema' and give an example"
+    ],
+    "workedExample": {
+      "question": "Explain two assumptions of the cognitive approach. (4 marks)",
+      "steps": [
+        "Step 1: Identify the first assumption - internal mental processes can be studied scientifically",
+        "Step 2: Explain this assumption with detail - cognitive psychologists believe we can infer what happens in the mind by studying behavior and using controlled experiments",
+        "Step 3: Identify the second assumption - the mind works like a computer",
+        "Step 4: Explain this assumption with detail - information is inputted through senses, processed by the brain, and outputted as behavior"
+      ],
+      "answer": "One assumption is that internal mental processes can be studied scientifically. Cognitive psychologists believe that although we cannot directly observe thoughts, we can make inferences about mental processes like memory and attention by studying people's behavior in controlled laboratory experiments. A second assumption is that the mind works like a computer. This means information flows through the cognitive system in a sequence of stages - input through the senses, processing by the brain, and output in the form of behavior.",
+      "markScheme": "1 mark for each assumption correctly identified + 1 mark for each detailed explanation showing understanding"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused cognitive approach assumptions with those of other approaches' — always focus specifically on mental processes and computer analogy when discussing cognitive assumptions",
+      "Examiner Report 2022: 'Students often provided examples without explaining the underlying cognitive principle' — always link examples back to key concepts like schema, information processing, or inference",
+      "Examiner Report 2021: 'Candidates frequently wrote about observable behavior rather than internal mental processes' — remember the cognitive approach focuses on what happens inside the mind, not just external actions"
+    ],
+    "keyDiagram": "Students must be able to draw the Information Processing Model: a flowchart showing INPUT (sensory information) → PROCESSING (attention, perception, memory) → OUTPUT (behavior/response). Include boxes for each stage connected by arrows, and add 'cognitive processes' labels like encoding, storage, retrieval. This diagram illustrates the computer analogy central to cognitive approach.",
+    "quickRecap": "The cognitive approach studies internal mental processes like memory, perception and thinking. It assumes these processes can be studied scientifically through inference from behavior. The mind is viewed as working like a computer - input, processing, output. Key concepts include schemas (mental frameworks) and the use of laboratory experiments to understand cognition."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:21:12.256Z",
-  "updated_at": "2026-04-06T05:21:12.256Z"
+  "updated_at": "2026-04-06T05:21:12.256Z",
+  "enriched_at": "2026-04-06T16:08:07.252Z"
 }

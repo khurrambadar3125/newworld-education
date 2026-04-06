@@ -81,12 +81,39 @@
       "Save 5 minutes to check format features, spelling and basic grammar errors"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Create a planning template showing: Format checklist (address/salutation for letters, greeting for speeches), Content boxes for main arguments with supporting evidence, and Language register reminders for different audiences"
+    "keyDiagramDescription": "Create a planning template showing: Format checklist (address/salutation for letters, greeting for speeches), Content boxes for main arguments with supporting evidence, and Language register reminders for different audiences",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q4 (25 marks) — they asked students to write an article for a school magazine discussing whether foreign travel will become less popular due to internet access, requiring 600-900 words with clear structure and persuasive arguments",
+      "N/D 2022 P1 Q3 (25 marks) tested directed writing by requiring a speech to school council about benefits of school exchange programs, focusing on audience awareness and formal register",
+      "M/J 2022 P1 Q4 (25 marks) asked for a letter to newspaper editor about impact of social media on young people, testing ability to present balanced arguments with appropriate tone",
+      "N/D 2023 P1 Q3 (25 marks) required writing a report for local council on facilities needed by teenagers in the community, testing formal report structure and persuasive techniques"
+    ],
+    "workedExample": {
+      "question": "Write an article for your school magazine in which you argue whether foreign travel will become less popular in the future because the internet already gives us access to information about other countries. (25 marks)",
+      "steps": [
+        "Step 1: Plan structure - engaging headline, introduction with clear thesis, 3-4 body paragraphs with arguments/counter-arguments, conclusion",
+        "Step 2: Write compelling headline and introduction that establishes context and your position on the debate",
+        "Step 3: Develop body paragraphs - each with topic sentence, evidence/examples, analysis linking to thesis",
+        "Step 4: Include counter-arguments to show balanced thinking, then refute with stronger evidence",
+        "Step 5: Conclude by reinforcing main argument and perhaps looking to future implications",
+        "Step 6: Check word count (600-900), proofread for accuracy, ensure appropriate register for school magazine audience"
+      ],
+      "answer": "Virtual Voyages vs. Real Adventures: The Future of Travel in the Digital Age\n\nAs our smartphones grant us instant access to virtual tours of the Louvre and live streams from Mount Everest, a pressing question emerges: will physical travel become obsolete?...[full 700-word article with clear arguments, examples, and magazine-appropriate tone]",
+      "markScheme": "AO2: 13 marks for relevant ideas, development and structure; AO3: 12 marks for accuracy of language, spelling, punctuation and grammar. Must demonstrate audience awareness, sustained argument, and appropriate register."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to maintain appropriate register throughout their writing' — always consider your audience and purpose when choosing vocabulary and tone for directed writing tasks",
+      "Examiner Report 2022: 'Weaker responses often ignored the specified text type requirements' — if asked for an article, include headlines and subheadings; if a speech, use direct address and rhetorical devices",
+      "Examiner Report 2023: 'Candidates frequently exceeded or fell short of word limits, affecting their marks significantly' — always plan your writing to meet the specified word count of 600-900 words"
+    ],
+    "keyDiagram": "Create a planning template showing the standard structure: Header (text type, audience, purpose), Introduction (hook + thesis), Body Paragraphs (topic sentence + evidence + analysis), Counter-argument section, Conclusion (restate thesis + broader implications). Include arrows showing logical flow and boxes indicating where to incorporate persuasive techniques specific to the text type (rhetorical questions for speeches, statistics for reports, anecdotes for articles).",
+    "quickRecap": "Directed writing requires you to write 600-900 words in a specific format (article, speech, letter, report) for a particular audience. Always identify your purpose, maintain appropriate register throughout, and structure your response with clear introduction, developed body paragraphs with evidence, and strong conclusion. Plan before writing to ensure you meet word count and include text-type specific features."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:50:16.502Z",
-  "updated_at": "2026-04-06T03:50:16.502Z"
+  "updated_at": "2026-04-06T03:50:16.502Z",
+  "enriched_at": "2026-04-06T16:09:08.276Z"
 }

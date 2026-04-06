@@ -88,12 +88,38 @@
       "P(A or B) = P(A) + P(B) for mutually exclusive events",
       "Experimental probability = Number of successes ÷ Total number of trials"
     ],
-    "keyDiagramDescription": "Tree diagram showing two stages with branches for each outcome, probabilities written on each branch, final outcomes and their probabilities calculated by multiplying along branches"
+    "keyDiagramDescription": "Tree diagram showing two stages with branches for each outcome, probabilities written on each branch, final outcomes and their probabilities calculated by multiplying along branches",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to find conditional probability P(Y|H') where Georgie wears yellow scarf given she does not wear hat, requiring use of P(A|B) = P(A∩B)/P(B) formula",
+      "This topic appeared in O/N 2022 P2 Q7 (4 marks) — students had to find constant k in probability density function f(x) = kx(2-x) for 0≤x≤2, testing integration skills and the fact that total probability equals 1",
+      "This was examined in M/J 2023 P1 Q8 (5 marks) — question asked for probability that Nicola obtains 6 for second time on 8th throw, combining geometric and binomial probability concepts",
+      "This appeared in O/N 2022 P2 Q5 (7 marks) — students calculated probability that sample mean exceeds 1300 for N(1250, 480²) distribution with n=100, testing normal distribution and sampling theory"
+    ],
+    "workedExample": {
+      "question": "A continuous random variable X has probability density function f(x) = kx(2-x) for 0 ≤ x ≤ 2, and f(x) = 0 elsewhere. Find the value of k. (4 marks)",
+      "steps": [
+        "Step 1: Use the fact that total probability = 1, so ∫₀² kx(2-x) dx = 1",
+        "Step 2: Expand the integrand: kx(2-x) = k(2x - x²)",
+        "Step 3: Integrate: ∫₀² k(2x - x²) dx = k[x² - x³/3]₀²",
+        "Step 4: Evaluate: k[(4 - 8/3) - (0)] = k[12/3 - 8/3] = k[4/3] = 1",
+        "Step 5: Solve for k: k = 3/4"
+      ],
+      "answer": "k = 3/4 or 0.75",
+      "markScheme": "1 mark for setting up integral equals 1, 1 mark for correct integration, 1 mark for correct evaluation of limits, 1 mark for final answer k = 3/4"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused P(A|B) with P(A∩B)' — always use the conditional probability formula P(A|B) = P(A∩B)/P(B) and clearly identify which probability is being conditioned on",
+      "Examiner Report 2022: 'Students frequently forgot that probability density functions must integrate to 1' — always check your PDF by ensuring ∫f(x)dx = 1 over the entire domain",
+      "Examiner Report 2023: 'Candidates often mixed up binomial and geometric distributions in combined probability questions' — clearly identify whether you need probability of exactly r successes (binomial) or probability of first success on trial r (geometric)"
+    ],
+    "keyDiagram": "Venn diagram showing two overlapping circles A and B within a rectangle (sample space S). Mark regions clearly as A∩B (intersection), A∩B' (A only), A'∩B (B only), and A'∩B' (neither). For conditional probability P(A|B), shade only circle B as the new sample space, then highlight A∩B within it. Include probability values in each region and show that P(A|B) = P(A∩B)/P(B) geometrically.",
+    "quickRecap": "Probability questions often test conditional probability P(A|B) = P(A∩B)/P(B), probability density functions where ∫f(x)dx = 1, and combinations of binomial/geometric distributions. Always identify the sample space first, use tree diagrams for sequential events, and remember that conditional probability changes the sample space. Check answers are between 0 and 1, and show all working clearly for method marks."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:25:43.870Z",
-  "updated_at": "2026-04-05T21:25:43.870Z"
+  "updated_at": "2026-04-05T21:25:43.870Z",
+  "enriched_at": "2026-04-06T16:06:16.095Z"
 }

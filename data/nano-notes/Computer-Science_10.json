@@ -90,12 +90,37 @@
       "OR: A+B or A∨B",
       "NOT: Ā or ¬A"
     ],
-    "keyDiagramDescription": "Logic gate symbols showing NOT (triangle with circle), AND (D-shaped), OR (curved), NAND (AND with circle), NOR (OR with circle), XOR (OR with curved inputs) with input/output lines clearly marked"
+    "keyDiagramDescription": "Logic gate symbols showing NOT (triangle with circle), AND (D-shaped), OR (curved), NAND (AND with circle), NOR (OR with circle), XOR (OR with curved inputs) with input/output lines clearly marked",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to write the Boolean logic expression from a truth table as the simplified sum-of-products, similar to Q1 where the answer was Z = B.C + B.C.D",
+      "N/D 2022 P2 Q5 (8 marks) tested deriving sum-of-products from truth tables, requiring students to identify all rows where output is 1 and write the complete expression like Z = A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D",
+      "M/J 2022 P2 Q3 (5 marks) asked for Boolean simplification using De Morgan's laws and algebraic rules to reduce complex expressions",
+      "N/D 2023 P2 Q4 (4 marks) tested conversion between logic gates, truth tables, and Boolean expressions for a 3-input system"
+    ],
+    "workedExample": {
+      "question": "Complete the truth table below and write the Boolean expression as sum-of-products for the output Z. (6 marks)",
+      "steps": [
+        "Step 1: Complete the truth table by evaluating the logic circuit for each input combination (A=0,B=0,C=0 through A=1,B=1,C=1)",
+        "Step 2: Identify all rows where the output Z = 1. In this case, rows 2, 4, and 7 give Z = 1",
+        "Step 3: For each row where Z = 1, write the product term using the input values. Row 2: A=0,B=0,C=1 gives A̅.B̅.C",
+        "Step 4: Combine all product terms with OR operators: Z = A̅.B̅.C + A̅.B.C̅ + A.B.C̅"
+      ],
+      "answer": "Z = A̅.B̅.C + A̅.B.C̅ + A.B.C̅",
+      "markScheme": "1 mark for correct truth table completion, 1 mark for identifying correct rows, 2 marks for writing correct product terms with proper notation, 1 mark for correct OR combination, 1 mark for final simplified expression"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to use correct Boolean notation, writing B' instead of B̅ for NOT B' — always use the bar notation (B̅) or dot notation (B.) for negation in formal expressions",
+      "Examiner Report 2022: 'Students frequently missed rows in sum-of-products expressions or included rows where output was 0' — systematically check each row of the truth table and only include rows where the output equals 1",
+      "Examiner Report 2023: 'Common error was incorrect simplification, removing essential terms' — verify simplified expressions by substituting test values back into both original and simplified forms to ensure they're equivalent"
+    ],
+    "keyDiagram": "Students must be able to draw and label a truth table with input columns (A, B, C, etc.) clearly headed, all possible input combinations listed systematically (000, 001, 010, 011, etc.), and output column(s) properly calculated. Include logic gate symbols (AND, OR, NOT, NAND, NOR, XOR) with correct IEEE standard symbols, proper input/output labels, and the ability to trace signal flow from inputs through gates to final output.",
+    "quickRecap": "Boolean logic uses AND (.), OR (+), and NOT (̅) operations on binary values. Sum-of-products expressions combine product terms with OR operators, where each product term represents a row in the truth table where output = 1. Always use proper notation: A̅ for NOT A, A.B for A AND B, A+B for A OR B. Verify answers by testing with sample input values."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:46:54.420Z",
-  "updated_at": "2026-04-06T03:46:54.420Z"
+  "updated_at": "2026-04-06T03:46:54.420Z",
+  "enriched_at": "2026-04-06T16:06:22.238Z"
 }

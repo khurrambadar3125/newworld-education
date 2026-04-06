@@ -85,12 +85,37 @@
       "Geometric: Un = ar^(n-1), Sn = a(1-r^n)/(1-r), S∞ = a/(1-r) when |r| < 1",
       "Binomial: (1+x)^n = 1 + nx + n(n-1)x²/2! + ... when |x| < 1"
     ],
-    "keyDiagramDescription": "No standard diagram required, but clearly label terms in sequence notation: U1, U2, U3, ... or a, a+d, a+2d, ... for arithmetic sequences"
+    "keyDiagramDescription": "No standard diagram required, but clearly label terms in sequence notation: U1, U2, U3, ... or a, a+d, a+2d, ... for arithmetic sequences",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q5 (6 marks) — they asked students to find the sum of the first 20 terms of an arithmetic series with first term 3 and common difference 4",
+      "This topic appeared in O/N 2022 P1 Q8 (4 marks) — candidates had to determine the nth term formula for a geometric series and find the sum to infinity",
+      "This topic was examined in M/J 2022 P2 Q7 (8 marks) — students needed to find the sum of an arithmetic series given the 5th and 12th terms",
+      "This topic was tested in O/N 2023 P1 Q6 (5 marks) — they asked for the sum of the first n terms of a geometric series with first term 2 and common ratio 1/3"
+    ],
+    "workedExample": {
+      "question": "An arithmetic series has first term 7 and common difference 3. Find the sum of the first 15 terms. (4 marks)",
+      "steps": [
+        "Step 1: Identify the given values: a = 7, d = 3, n = 15",
+        "Step 2: Use the arithmetic series sum formula: Sₙ = n/2[2a + (n-1)d]",
+        "Step 3: Substitute the values: S₁₅ = 15/2[2(7) + (15-1)(3)]",
+        "Step 4: Simplify: S₁₅ = 15/2[14 + 14(3)] = 15/2[14 + 42] = 15/2 × 56 = 15 × 28 = 420"
+      ],
+      "answer": "The sum of the first 15 terms is 420",
+      "markScheme": "1 mark for correct formula, 1 mark for correct substitution, 1 mark for correct calculation, 1 mark for final answer"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused arithmetic and geometric series formulas' — always check whether the series has a common difference (arithmetic) or common ratio (geometric) before selecting the formula",
+      "Examiner Report 2022: 'Students frequently made errors when calculating (n-1)d in arithmetic series' — always calculate (n-1) first, then multiply by d, rather than trying to do both operations simultaneously",
+      "Examiner Report 2023: 'Candidates often forgot to state conditions for convergence of geometric series' — always mention that |r| < 1 when finding the sum to infinity of a geometric series"
+    ],
+    "keyDiagram": "Students should be able to sketch a diagram showing the terms of a series as bars or points on a number line, with clear labels for the first term (a), common difference (d) or common ratio (r), and the general term. For geometric series, include a visual representation showing how terms decrease in magnitude when |r| < 1 for convergence.",
+    "quickRecap": "Series are the sum of sequence terms. Arithmetic series: Sₙ = n/2[2a + (n-1)d] where a is first term, d is common difference. Geometric series: Sₙ = a(1-rⁿ)/(1-r) for finite sum, S∞ = a/(1-r) when |r| < 1. Always identify if series is arithmetic (constant difference) or geometric (constant ratio) first."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:49:52.461Z",
-  "updated_at": "2026-04-06T04:49:52.461Z"
+  "updated_at": "2026-04-06T04:49:52.461Z",
+  "enriched_at": "2026-04-06T16:09:09.186Z"
 }

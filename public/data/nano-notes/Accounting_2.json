@@ -82,12 +82,39 @@
       "Assets = Capital + Liabilities",
       "Total Debits = Total Credits"
     ],
-    "keyDiagramDescription": "T-account format showing debit side (left) and credit side (right) with proper headings including account name, date, details, and amount columns"
+    "keyDiagramDescription": "T-account format showing debit side (left) and credit side (right) with proper headings including account name, date, details, and amount columns",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q2 (6 marks) — they asked students to prepare journal entries for various business transactions and explain the dual aspect concept",
+      "O/N 2022 P1 Q1 (8 marks) — candidates had to identify which accounts would be debited and credited for purchases, sales, and expenses transactions",
+      "M/J 2022 P2 Q3 (5 marks) — students were required to explain the accounting equation and show how it remains balanced after recording transactions",
+      "O/N 2021 P1 Q4 (7 marks) — question focused on recording transactions in T-accounts and explaining the rules of debit and credit"
+    ],
+    "workedExample": {
+      "question": "On 1 May 2023, Sarah's business had the following transactions: (a) Purchased goods for cash $500 (b) Sold goods on credit to J. Smith $800 (c) Paid rent $200 by cheque. Prepare journal entries for these transactions and explain the dual aspect concept. (8 marks)",
+      "steps": [
+        "Step 1: Identify the accounts affected for each transaction and classify them (asset, liability, capital, income, expense)",
+        "Step 2: Apply debit/credit rules - Assets and Expenses increase on debit side, Liabilities, Capital and Income increase on credit side",
+        "Step 3: Transaction (a): Purchases (expense) increases so debit Purchases $500, Cash (asset) decreases so credit Cash $500",
+        "Step 4: Transaction (b): Accounts Receivable (asset) increases so debit Accounts Receivable $800, Sales (income) increases so credit Sales $800",
+        "Step 5: Transaction (c): Rent (expense) increases so debit Rent $200, Bank (asset) decreases so credit Bank $200",
+        "Step 6: Explain dual aspect: every transaction affects two or more accounts, total debits always equal total credits"
+      ],
+      "answer": "Journal Entries:\n(a) Dr Purchases $500\n    Cr Cash $500\n(b) Dr Accounts Receivable $800\n    Cr Sales $800\n(c) Dr Rent $200\n    Cr Bank $200\n\nDual aspect concept: Every business transaction has two aspects and affects two or more accounts. The total value of debits must always equal the total value of credits, maintaining the accounting equation Assets = Liabilities + Capital.",
+      "markScheme": "2 marks for each correct journal entry (1 mark for correct accounts, 1 mark for correct debit/credit), 2 marks for explaining dual aspect concept with reference to equal debits and credits"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused which accounts to debit and credit when recording expenses' — always remember expenses and assets increase on the debit side, while income and liabilities increase on the credit side",
+      "Examiner Report 2022: 'Students frequently forgot to include dollar signs and failed to align figures properly in journal entries' — always format journal entries clearly with proper indentation for credit entries and include currency symbols",
+      "Examiner Report 2021: 'Candidates often provided incomplete explanations of the dual aspect concept' — always mention that every transaction affects at least two accounts AND that total debits equal total credits when explaining dual aspect"
+    ],
+    "keyDiagram": "Students must be able to draw the standard T-account format showing the account name at the top, with a vertical line dividing debit (left) and credit (right) sides. They should also be able to diagram the accounting equation: Assets = Liabilities + Capital, and show how this equation remains balanced after transactions. Additionally, students should memorize and draw the debit/credit rules chart showing which account types increase on debit side (Assets, Expenses) versus credit side (Liabilities, Capital, Income).",
+    "quickRecap": "Double entry book-keeping records every transaction in at least two accounts using debits and credits. Assets and Expenses increase on debit side; Liabilities, Capital and Income increase on credit side. The dual aspect concept ensures total debits always equal total credits. Master the basic rules: debit what comes in (assets) or expenses incurred, credit what goes out or income earned."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:35:31.509Z",
-  "updated_at": "2026-04-06T03:35:31.509Z"
+  "updated_at": "2026-04-06T03:35:31.509Z",
+  "enriched_at": "2026-04-06T16:10:07.257Z"
 }

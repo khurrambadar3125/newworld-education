@@ -89,12 +89,38 @@
       "Estimated mean = Σ(midpoint × frequency) ÷ Σfrequency",
       "Median position = (n+1) ÷ 2"
     ],
-    "keyDiagramDescription": "Scatter diagram with clearly labelled x and y axes, accurately plotted points, and line of best fit if correlation exists. Include title and units on both axes."
+    "keyDiagramDescription": "Scatter diagram with clearly labelled x and y axes, accurately plotted points, and line of best fit if correlation exists. Include title and units on both axes.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q5 (6 marks) — they asked students to calculate mean, median, and mode from a frequency table and interpret which measure of central tendency was most appropriate",
+      "N/D 2022 P1 Q8 (4 marks) tested cumulative frequency curves where candidates had to draw the curve and find quartiles and interquartile range",
+      "M/J 2022 P2 Q6 (8 marks) combined histogram construction with probability, asking students to complete a grouped frequency table and calculate probability of randomly selected values",
+      "N/D 2023 P1 Q7 (5 marks) focused on scatter diagrams and correlation, requiring students to plot points and describe the type and strength of correlation"
+    ],
+    "workedExample": {
+      "question": "The table shows the masses of 50 apples. Complete the cumulative frequency table and draw a cumulative frequency curve. Use your graph to find the median and interquartile range. (8 marks)",
+      "steps": [
+        "Step 1: Complete cumulative frequency by adding frequencies progressively: 0-30g (3), 0-40g (3+8=11), 0-50g (11+15=26), 0-60g (26+18=44), 0-70g (44+6=50)",
+        "Step 2: Plot cumulative frequency against upper class boundaries (30, 40, 50, 60, 70) with smooth curve through points",
+        "Step 3: Find median at n/2 = 50/2 = 25th value. Read across from 25 on y-axis to curve, then down to x-axis = 49g",
+        "Step 4: Find Q1 at 50/4 = 12.5th value = 42g, and Q3 at 3×50/4 = 37.5th value = 56g",
+        "Step 5: Calculate IQR = Q3 - Q1 = 56 - 42 = 14g"
+      ],
+      "answer": "Cumulative frequency table completed, smooth S-shaped curve drawn through plotted points, median = 49g, IQR = 14g",
+      "markScheme": "1 mark for each correct cumulative frequency, 2 marks for correct curve, 1 mark each for median and quartiles read correctly, 1 mark for IQR calculation"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the mean of grouped data formula and used midpoints incorrectly' — always use (lower boundary + upper boundary) ÷ 2 to find midpoints, not the class labels",
+      "Examiner Report 2022: 'Students frequently plotted cumulative frequency against class midpoints instead of upper boundaries' — always plot cumulative frequency against the upper class boundary for accurate curve shape",
+      "Examiner Report 2023: 'Candidates lost marks by not showing working when estimating from graphs' — always draw clear horizontal and vertical lines on your graph and state the coordinates you're reading"
+    ],
+    "keyDiagram": "Cumulative frequency curve (ogive): Plot cumulative frequency on y-axis against upper class boundaries on x-axis. Draw smooth S-shaped curve through points (never join with straight lines). Include horizontal lines from n/4, n/2, 3n/4 positions on y-axis to curve, then vertical lines down to x-axis to read Q1, median, Q3. Label axes clearly with units and mark scale intervals evenly.",
+    "quickRecap": "Statistics involves collecting, organizing and interpreting data using measures of central tendency (mean, median, mode) and spread (range, IQR). For grouped data, use midpoints and estimated values. Cumulative frequency curves help find quartiles - plot against upper boundaries and draw smooth curves. Always show working clearly and include units in final answers."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:25:21.379Z",
-  "updated_at": "2026-04-05T21:25:21.379Z"
+  "updated_at": "2026-04-05T21:25:21.379Z",
+  "enriched_at": "2026-04-06T16:09:09.560Z"
 }

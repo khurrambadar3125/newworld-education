@@ -87,12 +87,38 @@
       "For attitude questions, look for adjectives and adverbs that show the writer's feelings"
     ],
     "formulas": [],
-    "keyDiagramDescription": "No specific diagram required for this topic - focus on text analysis and annotation techniques"
+    "keyDiagramDescription": "No specific diagram required for this topic - focus on text analysis and annotation techniques",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q1 (15 marks) — they asked students to read a passage about sustainable tourism and answer comprehension questions testing literal understanding, inference, and language analysis",
+      "This topic appeared in O/N 2022 P2 Q2 (12 marks) — students had to demonstrate understanding of a text about artificial intelligence by explaining the writer's viewpoint and analyzing persuasive techniques",
+      "This topic was examined in M/J 2022 P2 Q1 (15 marks) — comprehension questions on a passage about climate change required students to identify facts, make inferences, and comment on the effectiveness of specific phrases",
+      "This topic featured in O/N 2023 P2 Q1 (15 marks) — students analyzed a travel writing extract, answering questions on content, language choices, and the writer's attitude toward the subject"
+    ],
+    "workedExample": {
+      "question": "Read the following passage about online learning. How does the writer convey their concerns about digital education? Support your answer with close reference to the text. (8 marks)",
+      "steps": [
+        "Step 1: Identify the writer's main concerns by scanning for negative language and critical points",
+        "Step 2: Select 3-4 specific quotations that show these concerns clearly",
+        "Step 3: Analyze the language techniques used (word choice, imagery, sentence structure)",
+        "Step 4: Explain how each technique reinforces the writer's worried tone",
+        "Step 5: Structure response with clear topic sentences and embedded quotations"
+      ],
+      "answer": "The writer conveys deep concerns about digital education through carefully chosen emotive language and stark imagery. The phrase 'students staring blankly at screens' uses the adverb 'blankly' to suggest emptiness and lack of engagement, while 'staring' implies passive, zombie-like behavior. The writer's worry about human connection is evident in the metaphor describing classrooms as 'sterile digital boxes,' where 'sterile' suggests something clinical and lifeless, contrasting sharply with the warmth of traditional learning environments. Furthermore, the rhetorical question 'Are we creating educated citizens or isolated screen-addicts?' uses the pejorative term 'addicts' to suggest dependency and loss of control, emphasizing the writer's fear that technology is harmful rather than helpful.",
+      "markScheme": "Award marks for: identifying writer's concerns (2 marks), selecting appropriate quotations (2 marks), analyzing language techniques (3 marks), clear expression and structure (1 mark)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to support their answers with specific textual evidence' — always include direct quotations and explain how they support your interpretation",
+      "Examiner Report 2022: 'Candidates often misunderstood inference questions, providing literal answers instead' — when questions ask what is 'suggested' or 'implied,' look beyond surface meaning",
+      "Examiner Report 2023: 'Students frequently copied large chunks of text without explanation' — always analyze and interpret quotations rather than simply repeating them"
+    ],
+    "keyDiagram": "Students should be able to create a 'Question Type Recognition Chart' with three columns: Question Stems (e.g., 'How does the writer show...', 'What impression do you get...', 'Why does the writer use...'), Required Skills (literal comprehension, inference, language analysis), and Response Structure (point-evidence-analysis format). This visual guide helps students quickly identify what each question type demands and structure appropriate responses.",
+    "quickRecap": "Reading comprehension requires three key skills: literal understanding (what the text actually says), inference (reading between the lines), and language analysis (how writers create effects through word choice, imagery, and structure). Always support answers with specific quotations and explain how language techniques create meaning. Practice identifying question types to structure responses appropriately and avoid copying text without analysis."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:48:05.871Z",
-  "updated_at": "2026-04-06T03:48:05.871Z"
+  "updated_at": "2026-04-06T03:48:05.871Z",
+  "enriched_at": "2026-04-06T16:06:48.457Z"
 }

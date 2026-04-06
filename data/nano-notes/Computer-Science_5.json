@@ -84,12 +84,38 @@
       "Browser questions may ask about features like bookmarks, history, cookies"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Network diagram showing computers connected through routers and ISPs to illustrate internet infrastructure, with web servers and clients accessing WWW services"
+    "keyDiagramDescription": "Network diagram showing computers connected through routers and ISPs to illustrate internet infrastructure, with web servers and clients accessing WWW services",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to describe packet switching as a method of transmitting messages across the internet, requiring explanation of data breaking, independent routing, and reconstruction",
+      "O/N 2022 P1 Q7 (8 marks) tested TCP/IP protocol suite application when messages are sent through internet, expecting candidates to explain layer communication and message flow direction",
+      "M/J 2024 P2 Q3 (5 marks) examined the functions of Transport and Internet layers specifically, with marks awarded for packet creation, sequencing, flow control, and IP addressing",
+      "O/N 2023 P1 Q5 (4 marks) required completion of a table comparing modems and dedicated lines for internet transmission, testing understanding of analogue/digital conversion and connection types"
+    ],
+    "workedExample": {
+      "question": "Describe how the TCP/IP protocol suite is applied when a message is sent through the internet. (6 marks)",
+      "steps": [
+        "Step 1: Identify that TCP/IP uses a layered stack architecture with multiple protocol layers",
+        "Step 2: Explain communication occurs between adjacent layers only, not across multiple layers simultaneously",
+        "Step 3: Describe outbound message flow - message passes from top layer to bottom layer when being sent",
+        "Step 4: Describe inbound message flow - message passes from bottom layer to top layer when being received",
+        "Step 5: Mention specific layer functions - each layer adds/removes headers and performs specific protocols"
+      ],
+      "answer": "TCP/IP uses a layered protocol stack architecture. Communication occurs only between adjacent layers in the stack. When sending a message, data passes from the top layer (Application) down through each layer to the bottom (Link layer), with each layer adding appropriate headers. When receiving, the message travels from bottom layer up to the top layer, with each layer removing and processing its headers. This layered approach ensures reliable data transmission across the internet.",
+      "markScheme": "1 mark for layered stack, 1 mark for adjacent layer communication, 2 marks for correct message flow directions (top-to-bottom sending, bottom-to-top receiving), 1 mark for header processing, 1 mark for mentioning reliability/purpose"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused packet switching with circuit switching' — always emphasize that packets travel independently via different routes and are reassembled at destination",
+      "Examiner Report 2024: 'Students often omitted the reconstruction phase of packet switching' — always mention that packets must be reassembled in correct order at the receiving end",
+      "Examiner Report 2022: 'Weak responses on TCP/IP layers confused the functions of Internet and Transport layers' — remember Transport handles packet creation/sequencing while Internet handles IP addressing/routing"
+    ],
+    "keyDiagram": "Students must draw a TCP/IP stack showing 4 layers (Application, Transport, Internet, Link) with arrows indicating data flow. Show a message entering at Application layer, passing down through each layer with headers being added (encapsulation), then at receiving end show reverse process with headers being removed (de-encapsulation) as data moves up the layers. Include labels showing what each layer adds: Transport adds port numbers, Internet adds IP addresses, Link adds MAC addresses.",
+    "quickRecap": "Internet uses packet switching - data broken into packets, sent independently via optimal routes, reassembled at destination. TCP/IP protocol suite uses 4-layer stack with adjacent-layer communication only. Messages flow top-to-bottom when sending, bottom-to-top when receiving, with each layer adding/removing headers. Transport layer handles packet creation and sequencing, Internet layer handles IP addressing and routing."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:44:58.579Z",
-  "updated_at": "2026-04-06T03:44:58.579Z"
+  "updated_at": "2026-04-06T03:44:58.579Z",
+  "enriched_at": "2026-04-06T16:08:08.930Z"
 }

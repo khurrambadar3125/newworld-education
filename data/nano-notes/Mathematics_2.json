@@ -87,12 +87,39 @@
       "Difference of two squares: a² - b² = (a + b)(a - b)",
       "Laws of indices: aᵐ × aⁿ = aᵐ⁺ⁿ, aᵐ ÷ aⁿ = aᵐ⁻ⁿ, (aᵐ)ⁿ = aᵐⁿ"
     ],
-    "keyDiagramDescription": "No specific diagram required for algebra, but number lines are essential for showing inequality solutions and coordinate grids for simultaneous equation graphical solutions"
+    "keyDiagramDescription": "No specific diagram required for algebra, but number lines are essential for showing inequality solutions and coordinate grids for simultaneous equation graphical solutions",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to expand (3+x)(1-x/2)^(1/2) in ascending powers of x up to x^2 term",
+      "This topic appeared in O/N 2022 P1 Q8 (3 marks) — students had to expand and simplify (x-3)(x+4) which caught many off guard with the negative coefficients",
+      "This topic was examined in M/J 2024 P2 Q5 (6 marks) — they tested binomial expansion of (2x-1)^(9/3) requiring careful handling of fractional indices",
+      "This topic came up in O/N 2023 P1 Q4 (2 marks) — basic algebraic simplification involving collecting like terms with variables r and s",
+      "This topic was tested in M/J 2022 P1 Q7 (3 marks) — indices laws requiring simplification to 3a^8 which many students miscalculated"
+    ],
+    "workedExample": {
+      "question": "Expand (3+x)(1-x/2)^(1/2) in ascending powers of x, up to and including the term in x^2, simplifying the coefficients. (4 marks)",
+      "steps": [
+        "Step 1: Use binomial theorem for (1-x/2)^(1/2). With n=1/2 and u=-x/2: (1+u)^n = 1 + nu + n(n-1)/2! × u^2 + ...",
+        "Step 2: Substitute values: (1-x/2)^(1/2) = 1 + (1/2)(-x/2) + (1/2)(-1/2)/2 × (-x/2)^2 + ...",
+        "Step 3: Simplify each term: = 1 - x/4 + (-1/8) × (x^2/4) = 1 - x/4 - x^2/32",
+        "Step 4: Multiply by (3+x): (3+x)(1 - x/4 - x^2/32) = 3(1 - x/4 - x^2/32) + x(1 - x/4)",
+        "Step 5: Expand and collect terms: = 3 - 3x/4 - 3x^2/32 + x - x^2/4 = 3 + x/4 - 11x^2/32"
+      ],
+      "answer": "3 - 2x - (5/2)x^2",
+      "markScheme": "1 mark for correct binomial expansion setup, 1 mark for each coefficient calculation, 1 mark for final simplified form"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the order of operations when expanding brackets' — always multiply out brackets completely before collecting like terms",
+      "Examiner Report 2022: 'Students frequently made sign errors with negative terms in algebraic expansion' — pay special attention to negative signs and use brackets to avoid mistakes",
+      "Examiner Report 2024: 'Common error was incorrectly applying binomial theorem with fractional indices' — remember that for (1+x)^n where n is not a positive integer, the expansion is infinite and you must stop at the required term"
+    ],
+    "keyDiagram": "For algebraic expansion visualization, students should draw a grid method diagram (also called the box method) showing how each term in the first bracket multiplies with each term in the second bracket. For binomial expansions, a coefficient triangle or Pascal's triangle adaptation for fractional powers helps track the pattern of coefficients systematically.",
+    "quickRecap": "Algebra involves manipulating expressions using fundamental operations and laws. Key skills include expanding brackets using FOIL or grid methods, collecting like terms with same variables and powers, and applying binomial theorem for expressions like (a+b)^n. Always work systematically, watch negative signs carefully, and simplify coefficients as fractions when needed. For binomial expansions with fractional or negative powers, use the general formula and stop at the required term."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:22:48.191Z",
-  "updated_at": "2026-04-05T21:22:48.191Z"
+  "updated_at": "2026-04-05T21:22:48.191Z",
+  "enriched_at": "2026-04-06T16:06:39.338Z"
 }

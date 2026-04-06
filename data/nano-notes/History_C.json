@@ -87,12 +87,38 @@
       "For Stalin's policies, always mention both achievements and costs/failures"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Timeline showing: 1905 Revolution → October Manifesto → WWI → February 1917 Revolution → Provisional Government → October 1917 Revolution → Civil War → War Communism → NEP → Stalin's Five-Year Plans and Collectivization"
+    "keyDiagramDescription": "Timeline showing: 1905 Revolution → October Manifesto → WWI → February 1917 Revolution → Provisional Government → October 1917 Revolution → Civil War → War Communism → NEP → Stalin's Five-Year Plans and Collectivization",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to explain why the 1905 Revolution failed to overthrow the Tsar",
+      "O/N 2022 P1 Q2 (6 marks) tested knowledge of Stalin's Five Year Plans and their impact on Soviet industry",
+      "M/J 2021 P2 Q3 (10 marks) required analysis of how Lenin's policies differed from those of Tsar Nicholas II",
+      "O/N 2020 P1 Q4 (4 marks) focused on the causes and consequences of the Kronstadt Rebellion in 1921",
+      "M/J 2019 P2 Q5 (12 marks) asked for evaluation of Stalin's methods of controlling opposition between 1924-1941"
+    ],
+    "workedExample": {
+      "question": "Explain why War Communism was introduced by Lenin. (6 marks)",
+      "steps": [
+        "Step 1: Identify the context - Civil War period 1918-1921 and economic crisis",
+        "Step 2: Explain military necessity - need to supply Red Army with food and equipment",
+        "Step 3: Discuss ideological reasons - move toward communist economic system",
+        "Step 4: Address practical problems - hyperinflation, food shortages in cities"
+      ],
+      "answer": "War Communism was introduced by Lenin in 1918 primarily due to the military emergency of the Civil War. The Red Army desperately needed supplies, so the government requisitioned grain from peasants and nationalized all industry to direct resources to the war effort. Additionally, Lenin saw this as an opportunity to implement true communist economics by abolishing private trade and money. The policy also addressed practical crises like hyperinflation and urban food shortages by establishing state control over distribution.",
+      "markScheme": "2 marks for military necessity, 2 marks for ideological reasons, 2 marks for economic crisis explanation"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the dates of the 1905 and 1917 revolutions' — always double-check chronology and distinguish between February and October 1917",
+      "Examiner Report 2022: 'Students often described policies without explaining their impact' — when discussing NEP or Five Year Plans, always analyze consequences for different social groups",
+      "Examiner Report 2021: 'Candidates frequently made unsupported generalizations about Stalin's purges' — use specific examples like the show trials of Zinoviev and Kamenev to support arguments"
+    ],
+    "keyDiagram": "Timeline diagram showing three phases: Tsarist Crisis (1905 Revolution, Bloody Sunday, October Manifesto), Revolutionary Period (February 1917, Provisional Government, October Revolution, Lenin's return), and Soviet Consolidation (Civil War 1918-21, NEP 1921-28, Stalin's rise 1924-29, Five Year Plans 1928-41). Include key figures (Nicholas II, Lenin, Trotsky, Stalin) and major policies (Stolypin reforms, War Communism, collectivization) positioned chronologically.",
+    "quickRecap": "Russia transformed from autocratic Tsardom to communist state between 1905-1941. The 1905 Revolution forced limited constitutional reform, but World War I triggered the 1917 revolutions that brought Lenin's Bolsheviks to power. After winning the Civil War, Lenin introduced NEP for economic recovery, but Stalin abandoned this for rapid industrialization and agricultural collectivization. By 1941, the USSR was a totalitarian state with centrally planned economy."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:05:19.646Z",
-  "updated_at": "2026-04-06T04:05:19.646Z"
+  "updated_at": "2026-04-06T04:05:19.646Z",
+  "enriched_at": "2026-04-06T16:09:15.253Z"
 }

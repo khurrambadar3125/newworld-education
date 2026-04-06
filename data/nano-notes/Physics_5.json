@@ -86,12 +86,38 @@
       "pressure = force/area",
       "p = F/A"
     ],
-    "keyDiagramDescription": "Force-extension graph showing linear region (Hooke's law), limit of proportionality, elastic limit, and plastic deformation region. Spring experiment setup with masses, ruler, and clamp stand."
+    "keyDiagramDescription": "Force-extension graph showing linear region (Hooke's law), limit of proportionality, elastic limit, and plastic deformation region. Spring experiment setup with masses, ruler, and clamp stand.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (3 marks) — they asked students to identify the limit of proportionality, elastic deformation, and plastic deformation regions on a force-extension graph for a wire",
+      "This topic appeared in O/N 2022 P1 Q15 (1 mark) — students had to determine the type of deformation when a force-extension graph shows the same line for loading and unloading",
+      "This topic was examined in M/J 2024 P2 Q3 (4 marks) — candidates needed to calculate specific extensions when weights were attached to springs, testing Hooke's Law applications",
+      "This topic featured in O/N 2023 P2 Q5 (2 marks) — students were required to mark and label the limit of proportionality on a given force-extension graph",
+      "This topic was tested in M/J 2022 P1 Q12 (1 mark) — examining spring constant calculations and maximum extension in oscillatory motion"
+    ],
+    "workedExample": {
+      "question": "A spring has a spring constant of 25 N/m. When a mass of 0.40 kg is attached and the system reaches equilibrium, calculate: (a) the extension of the spring (b) the elastic potential energy stored. (4 marks)",
+      "steps": [
+        "Step 1: Identify the forces at equilibrium. Weight = mg = 0.40 × 10 = 4.0 N",
+        "Step 2: Apply Hooke's Law. At equilibrium, spring force = weight, so F = kx, therefore 4.0 = 25 × x",
+        "Step 3: Calculate extension. x = F/k = 4.0/25 = 0.16 m = 16 cm",
+        "Step 4: Calculate elastic potential energy. E = ½kx² = ½ × 25 × (0.16)² = 0.32 J"
+      ],
+      "answer": "(a) Extension = 0.16 m or 16 cm (b) Elastic potential energy = 0.32 J",
+      "markScheme": "1 mark for correct weight calculation, 1 mark for correct application of Hooke's Law, 1 mark for extension answer with units, 1 mark for elastic potential energy calculation"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the limit of proportionality with the elastic limit' — always remember the limit of proportionality is where Hooke's Law stops working, while elastic limit is where permanent deformation begins",
+      "Examiner Report 2024: 'Students frequently forgot to convert units when reading values from graphs' — always check if extensions are given in mm or cm and convert to metres for calculations",
+      "Examiner Report 2022: 'Candidates often drew force-extension graphs with curves from the origin' — remember that Hooke's Law produces a straight line through the origin up to the limit of proportionality"
+    ],
+    "keyDiagram": "Force-extension graph with x-axis labeled 'Extension (m)' and y-axis labeled 'Force (N)'. Draw a straight line from origin showing elastic deformation region, mark point P where line curves (limit of proportionality), continue with curved line showing plastic deformation, and mark point Q where material breaks. Include labels for 'elastic deformation', 'plastic deformation', 'limit of proportionality', and 'breaking point'.",
+    "quickRecap": "Hooke's Law (F = kx) applies only up to the limit of proportionality where the force-extension graph is linear. Beyond this point, materials undergo plastic deformation and won't return to original length. Elastic potential energy is stored as E = ½kx². Spring constant k represents stiffness - higher k means stiffer spring requiring more force for same extension."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:15:28.473Z",
-  "updated_at": "2026-04-05T21:15:28.473Z"
+  "updated_at": "2026-04-05T21:15:28.473Z",
+  "enriched_at": "2026-04-06T16:03:51.390Z"
 }

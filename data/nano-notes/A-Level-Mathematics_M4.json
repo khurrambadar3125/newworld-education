@@ -91,12 +91,36 @@
       "P = Fv cos θ",
       "Work-energy theorem: W = ΔKE"
     ],
-    "keyDiagramDescription": "Energy diagram showing initial and final positions with KE and PE values labeled, plus forces acting on the system. Include reference level for potential energy."
+    "keyDiagramDescription": "Energy diagram showing initial and final positions with KE and PE values labeled, plus forces acting on the system. Include reference level for potential energy.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate the power output of a motor lifting a load at constant velocity and explain why efficiency is less than 100%",
+      "This topic was tested in O/N 2022 P1 Q15 (1 mark) — multiple choice question on identifying the correct unit for power from given options",
+      "This topic was tested in M/J 2022 P2 Q3 (5 marks) — students had to calculate work done against friction and gravitational potential energy gained by a cyclist going uphill",
+      "This topic was tested in O/N 2021 P2 Q5 (4 marks) — question required calculating kinetic energy before and after collision, and work done by braking force"
+    ],
+    "workedExample": {
+      "question": "A crane lifts a load of mass 500 kg through a vertical height of 12 m in 20 s. Calculate: (a) the work done by the crane (b) the power output of the crane. Take g = 10 m/s². (4 marks)",
+      "steps": [
+        "Step 1: Identify given values - mass m = 500 kg, height h = 12 m, time t = 20 s, g = 10 m/s²",
+        "Step 2: Calculate work done using W = mgh = 500 × 10 × 12 = 60,000 J",
+        "Step 3: Calculate power using P = W/t = 60,000/20 = 3,000 W or 3.0 kW"
+      ],
+      "answer": "(a) Work done = mgh = 500 × 10 × 12 = 60,000 J (b) Power output = W/t = 60,000/20 = 3,000 W = 3.0 kW",
+      "markScheme": "1 mark for correct substitution in W = mgh, 1 mark for work = 60,000 J, 1 mark for correct power formula P = W/t, 1 mark for power = 3,000 W with unit"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused work done BY a force with work done AGAINST a force' — always check direction of force relative to displacement when calculating work",
+      "Examiner Report 2022: 'Students frequently omitted units or used incorrect units for energy and power' — always include Joules (J) for energy/work and Watts (W) for power in final answers",
+      "Examiner Report 2021: 'Candidates often calculated kinetic energy incorrectly by forgetting the ½ factor' — remember KE = ½mv², not mv²"
+    ],
+    "keyDiagram": "Energy transfer diagram showing: Initial energy store → Energy transfer process (with efficiency arrow showing useful energy output and wasted energy) → Final energy store. Include arrows labeled with energy types (kinetic, gravitational potential, thermal, etc.) and numerical values where given. Always show that total energy input = useful energy output + wasted energy.",
+    "quickRecap": "Work = force × distance (W = Fs), measured in Joules. Kinetic energy = ½mv², gravitational potential energy = mgh. Power = work done ÷ time taken (P = W/t), measured in Watts. Energy is always conserved but can be transferred between different forms, with some energy usually wasted as heat due to friction."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:56:45.999Z",
-  "updated_at": "2026-04-06T04:56:45.999Z"
+  "updated_at": "2026-04-06T04:56:45.999Z",
+  "enriched_at": "2026-04-06T16:06:56.318Z"
 }

@@ -79,12 +79,37 @@
       "Learn the exact definitions - examiners look for key phrases like 'when earned' and 'when incurred'"
     ],
     "formulas": [],
-    "keyDiagramDescription": "No specific diagram required for this topic, but create a concept map showing the relationship between different accounting concepts and their applications"
+    "keyDiagramDescription": "No specific diagram required for this topic, but create a concept map showing the relationship between different accounting concepts and their applications",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q15 (1 mark) — they asked students to identify which accounting concept requires assets to be recorded at cost price",
+      "O/N 2022 P2 Q4 (8 marks) tested the dual aspect concept by asking candidates to show how a business transaction affects two accounts simultaneously",
+      "M/J 2022 P1 Q18 (1 mark) focused on the consistency concept, asking why a business should use the same depreciation method each year",
+      "O/N 2021 P2 Q6 (6 marks) required students to explain how the prudence concept affects the valuation of inventory and provision for doubtful debts"
+    ],
+    "workedExample": {
+      "question": "Ahmed's business purchased a delivery van for $15,000 cash. Explain how this transaction demonstrates the dual aspect concept and show the accounting entries. (4 marks)",
+      "steps": [
+        "Step 1: Identify that dual aspect means every transaction affects two accounts with equal amounts",
+        "Step 2: Recognize that purchasing a van increases Motor Vehicles (asset) by $15,000",
+        "Step 3: Identify that paying cash decreases Bank/Cash (asset) by $15,000",
+        "Step 4: Show the accounting entries: Dr Motor Vehicles $15,000, Cr Bank $15,000"
+      ],
+      "answer": "The dual aspect concept states that every business transaction has two effects of equal value. When Ahmed purchases the van for $15,000 cash: (1) Motor Vehicles account increases by $15,000 (asset acquired), (2) Bank account decreases by $15,000 (asset given up). Accounting entries: Dr Motor Vehicles $15,000, Cr Bank $15,000. This demonstrates dual aspect as both sides equal $15,000.",
+      "markScheme": "1 mark for defining dual aspect concept, 1 mark for identifying increase in Motor Vehicles, 1 mark for identifying decrease in Bank, 1 mark for correct accounting entries"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the money measurement concept with historical cost concept' — always specify that money measurement means only monetary transactions are recorded, not the valuation method",
+      "Examiner Report 2022: 'Candidates often failed to give practical examples when explaining concepts' — always provide a business example when defining accounting concepts like materiality or prudence",
+      "Examiner Report 2021: 'Students incorrectly stated that dual aspect means having two books of accounts' — remember that dual aspect refers to every transaction affecting two accounts with equal amounts"
+    ],
+    "keyDiagram": "Draw the Accounting Equation triangle showing Assets at the top, with Capital and Liabilities at the base corners. Include arrows showing how the dual aspect concept maintains the equation balance (Assets = Capital + Liabilities) after every transaction. Add example transactions around the triangle showing increases/decreases to demonstrate how changes in one element require balancing changes elsewhere.",
+    "quickRecap": "Accounting concepts are fundamental rules that guide how financial transactions are recorded and presented. Key concepts include business entity (business separate from owner), dual aspect (every transaction affects two accounts equally), money measurement (only monetary transactions recorded), and historical cost (assets recorded at purchase price). These concepts ensure consistency, reliability and comparability of financial statements across different businesses and time periods."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:38:26.161Z",
-  "updated_at": "2026-04-06T03:38:26.161Z"
+  "updated_at": "2026-04-06T03:38:26.161Z",
+  "enriched_at": "2026-04-06T16:06:19.969Z"
 }

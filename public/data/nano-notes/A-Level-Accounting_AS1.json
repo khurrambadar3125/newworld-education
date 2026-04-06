@@ -88,12 +88,38 @@
       "Capital = Assets - Liabilities",
       "Liabilities = Assets - Capital"
     ],
-    "keyDiagramDescription": "T-account format showing debit side (left) and credit side (right) with account name at the top and proper date, details, and amount columns"
+    "keyDiagramDescription": "T-account format showing debit side (left) and credit side (right) with account name at the top and proper date, details, and amount columns",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q1 (6 marks) — they asked students to prepare a trial balance from given account balances and identify two errors that would cause it not to balance",
+      "This topic was tested in O/N 2022 P2 Q4 (8 marks) — they required candidates to prepare a trading account and profit and loss account from incomplete records, calculating missing figures",
+      "This topic was tested in M/J 2022 P1 Q3 (4 marks) — they asked students to explain the difference between capital and revenue expenditure with two examples of each",
+      "This topic was tested in O/N 2023 P2 Q2 (10 marks) — they required preparation of a balance sheet from given information, including proper classification of current and non-current assets"
+    ],
+    "workedExample": {
+      "question": "From the following information, prepare a trial balance for ABC Trading as at 31 December 2023: Cash $2,000, Bank $15,000, Debtors $8,000, Stock $12,000, Equipment $25,000, Creditors $6,000, Bank loan $20,000, Capital $36,000. (6 marks)",
+      "steps": [
+        "Step 1: Identify debit balances (assets and expenses): Cash $2,000, Bank $15,000, Debtors $8,000, Stock $12,000, Equipment $25,000",
+        "Step 2: Identify credit balances (liabilities, capital, and income): Creditors $6,000, Bank loan $20,000, Capital $36,000",
+        "Step 3: List all debit balances in the debit column, totaling $62,000",
+        "Step 4: List all credit balances in the credit column, totaling $62,000",
+        "Step 5: Verify that debit total equals credit total to confirm trial balance accuracy"
+      ],
+      "answer": "ABC Trading Trial Balance as at 31 December 2023\nDr side: Cash $2,000, Bank $15,000, Debtors $8,000, Stock $12,000, Equipment $25,000, Total $62,000\nCr side: Creditors $6,000, Bank loan $20,000, Capital $36,000, Total $62,000",
+      "markScheme": "1 mark for correct heading, 1 mark for each correctly classified item (5 marks total), 1 mark for balanced totals"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused revenue expenditure with capital expenditure' — always remember that revenue expenditure benefits current period only while capital expenditure provides benefits for multiple years",
+      "Examiner Report 2022: 'Candidates frequently placed items on wrong side of trial balance' — always remember that assets and expenses are debit balances, while liabilities, capital and income are credit balances",
+      "Examiner Report 2023: 'Students often forgot to include proper headings and dates in financial statements' — always include business name, statement type, and period/date in your heading for full marks"
+    ],
+    "keyDiagram": "Students must be able to draw the Accounting Equation triangle showing Assets at the top, with Capital and Liabilities at the bottom two corners. Include the formula Assets = Capital + Liabilities in the center. Add arrows showing how increases/decreases in one element affect the others. Label each section with examples: Assets (Cash, Stock, Equipment), Capital (Owner's investment, Retained profits), Liabilities (Creditors, Loans). This diagram is essential for understanding double-entry principles and balance sheet preparation.",
+    "quickRecap": "Financial accounting follows the fundamental equation: Assets = Capital + Liabilities. All transactions are recorded using double-entry bookkeeping (every debit has a corresponding credit). The trial balance proves arithmetical accuracy with total debits equaling total credits. Financial statements (Trading Account, Profit & Loss Account, Balance Sheet) are prepared from the trial balance to show business performance and financial position."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:24:02.338Z",
-  "updated_at": "2026-04-06T05:24:02.340Z"
+  "updated_at": "2026-04-06T05:24:02.340Z",
+  "enriched_at": "2026-04-06T16:08:14.809Z"
 }

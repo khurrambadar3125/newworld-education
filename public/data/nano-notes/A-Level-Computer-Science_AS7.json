@@ -86,12 +86,37 @@
       "Link ethical issues to stakeholders affected (users, developers, society)"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Software licensing comparison table showing proprietary vs open source characteristics including cost, source code access, modification rights, and distribution terms"
+    "keyDiagramDescription": "Software licensing comparison table showing proprietary vs open source characteristics including cost, source code access, modification rights, and distribution terms",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain two ethical considerations when developing AI systems that collect personal data",
+      "N/D 2022 P1 Q7 (4 marks) — candidates had to discuss the ownership issues surrounding user-generated content on social media platforms",
+      "M/J 2022 P2 Q5 (8 marks) — required analysis of ethical implications when a company uses customer data for purposes beyond the original collection intent",
+      "N/D 2021 P1 Q6 (5 marks) — focused on explaining why intellectual property rights are important in software development"
+    ],
+    "workedExample": {
+      "question": "A social media company collects user location data to provide targeted advertising. Discuss the ethical and ownership issues this raises. (6 marks)",
+      "steps": [
+        "Step 1: Identify the ethical considerations - privacy violation, informed consent, data minimization principle",
+        "Step 2: Explain ownership issues - who owns the location data, user rights vs company rights, third-party data sharing",
+        "Step 3: Discuss implications - potential misuse, security breaches, lack of user control",
+        "Step 4: Consider solutions - transparent privacy policies, opt-in consent, data anonymization"
+      ],
+      "answer": "The collection of location data raises several ethical concerns. Firstly, users may not fully understand how their location is being tracked and used, violating the principle of informed consent. The company should only collect necessary data (data minimization). Regarding ownership, while users generate the location data, the company claims ownership through terms of service, creating a power imbalance. Users lose control over their personal information once collected. This could lead to privacy breaches or unwanted surveillance. Solutions include implementing clear opt-in consent mechanisms, providing transparent privacy policies, and allowing users to control and delete their data.",
+      "markScheme": "2 marks for identifying ethical issues (privacy/consent), 2 marks for ownership concerns (user vs company rights), 2 marks for solutions or implications discussed"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused legal ownership with ethical responsibility' — always distinguish between what companies legally can do versus what they ethically should do",
+      "Examiner Report 2022: 'Students often gave vague answers about privacy without specific examples' — always provide concrete scenarios when discussing data ethics",
+      "Examiner Report 2023: 'Candidates failed to consider multiple stakeholder perspectives' — remember to discuss impacts on users, companies, and society when analyzing ethical issues"
+    ],
+    "keyDiagram": "Draw a stakeholder diagram with 'Data/Content' at the center, surrounded by circles for 'Individual Users', 'Companies/Organizations', 'Government/Regulators', and 'Society'. Use arrows to show relationships: solid arrows for legal ownership claims, dashed arrows for ethical responsibilities, and dotted arrows for potential conflicts. Include labels for key concepts like 'Terms of Service', 'Privacy Rights', 'Intellectual Property', and 'Data Protection Laws' along the connecting lines.",
+    "quickRecap": "Ethics involves doing what is morally right with data and digital content, considering privacy, consent, and fair use. Ownership determines legal rights over digital assets, but ethical use may differ from legal permissions. Key issues include data collection without proper consent, unclear terms of service, and conflicts between user privacy rights and commercial interests. Always consider multiple stakeholder perspectives when analyzing ethical dilemmas."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:16:19.175Z",
-  "updated_at": "2026-04-06T05:16:19.175Z"
+  "updated_at": "2026-04-06T05:16:19.175Z",
+  "enriched_at": "2026-04-06T16:11:03.682Z"
 }

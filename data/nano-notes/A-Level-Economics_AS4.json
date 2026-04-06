@@ -91,12 +91,37 @@
       "Equilibrium: Injections = Withdrawals (I + G + X = S + T + M)",
       "Multiplier = 1 / (1 - MPC) = 1 / MPS + MPT + MPM"
     ],
-    "keyDiagramDescription": "Circular flow diagram showing households and firms connected by real flows (goods/services and factors of production) and money flows (expenditure and income), with government and foreign sector showing injections (G, X, I) and withdrawals (T, M, S)"
+    "keyDiagramDescription": "Circular flow diagram showing households and firms connected by real flows (goods/services and factors of production) and money flows (expenditure and income), with government and foreign sector showing injections (G, X, I) and withdrawals (T, M, S)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how government fiscal policy can be used to reduce unemployment during a recession",
+      "This appeared in O/N 2022 P2 Q3 (8 marks) — candidates had to analyze the causes and consequences of inflation on different economic groups",
+      "This was examined in M/J 2022 P2 Q5 (4 marks) — students needed to distinguish between economic growth and economic development with examples",
+      "This topic featured in O/N 2023 P2 Q2 (6 marks) — the question required explanation of how changes in exchange rates affect a country's balance of payments"
+    ],
+    "workedExample": {
+      "question": "Explain how a government can use monetary policy to control inflation. (6 marks)",
+      "steps": [
+        "Step 1: Define monetary policy as the control of money supply and interest rates by the central bank",
+        "Step 2: Explain that to control inflation, the central bank raises interest rates",
+        "Step 3: Show the chain effect: higher interest rates → more expensive borrowing → reduced consumer spending and business investment",
+        "Step 4: Explain that reduced aggregate demand leads to lower price levels, controlling inflation"
+      ],
+      "answer": "Monetary policy involves the central bank controlling money supply and interest rates. To control inflation, the central bank increases interest rates, making borrowing more expensive for consumers and businesses. This reduces spending on goods and services, and decreases business investment. The fall in aggregate demand reduces pressure on prices, helping to control inflation. Higher interest rates also encourage saving rather than spending, further reducing demand in the economy.",
+      "markScheme": "2 marks for defining monetary policy, 2 marks for explaining the mechanism (higher interest rates), 2 marks for showing the chain effect on aggregate demand and prices"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused economic growth with economic development' — always distinguish that growth is quantitative (GDP increase) while development is qualitative (living standards improvement)",
+      "Examiner Report 2022: 'Students often failed to explain the multiplier effect when discussing government spending' — always mention how initial government expenditure creates multiple rounds of spending in the economy",
+      "Examiner Report 2023: 'Weak responses on inflation failed to identify different types' — always distinguish between demand-pull inflation (excess demand) and cost-push inflation (rising production costs)"
+    ],
+    "keyDiagram": "The Circular Flow of Income diagram showing households, firms, government, and foreign sector. Draw households providing factors of production to firms (receiving income) and firms providing goods/services to households (receiving expenditure). Add government injections (spending) and leakages (taxes), plus imports (leakages) and exports (injections). Label all flows clearly and show how injections increase national income while leakages reduce it.",
+    "quickRecap": "The macroeconomy focuses on whole economy performance measured by GDP, inflation, unemployment, and balance of payments. Governments use fiscal policy (taxes and spending) and monetary policy (interest rates) to achieve economic objectives. Key concepts include the multiplier effect, trade-offs between objectives, and the circular flow of income showing how money moves through the economy."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:08:30.073Z",
-  "updated_at": "2026-04-06T05:08:30.073Z"
+  "updated_at": "2026-04-06T05:08:30.073Z",
+  "enriched_at": "2026-04-06T16:08:29.544Z"
 }

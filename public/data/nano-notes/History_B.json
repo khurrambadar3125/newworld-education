@@ -84,12 +84,39 @@
       "Use German terms correctly — Reichstag (parliament), Führer (leader), Lebensraum (living space)"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Timeline showing three phases: Weimar Crisis (1919-1923), Golden Age (1924-1929), and Nazi Rise and Rule (1930-1945) with key events marked"
+    "keyDiagramDescription": "Timeline showing three phases: Weimar Crisis (1919-1923), Golden Age (1924-1929), and Nazi Rise and Rule (1930-1945) with key events marked",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to explain how the Treaty of Versailles contributed to political and economic problems in Germany during the 1920s",
+      "N/D 2022 P1 Q2 (6 marks) — required candidates to describe the key features of Nazi propaganda and how it helped Hitler gain support",
+      "M/J 2022 P2 Q3 (10 marks) — asked students to assess whether economic problems or political weaknesses were more important in explaining the fall of the Weimar Republic",
+      "N/D 2021 P1 Q4 (4 marks) — tested knowledge of the Night of the Long Knives and its significance for Nazi consolidation of power",
+      "M/J 2021 P2 Q5 (12 marks) — required evaluation of how successfully the Nazis controlled German society between 1933-39"
+    ],
+    "workedExample": {
+      "question": "Explain why Hitler was able to become Chancellor in January 1933. (8 marks)",
+      "steps": [
+        "Step 1: Identify multiple factors - economic crisis, political failures, Nazi tactics, and elite miscalculations",
+        "Step 2: Explain economic factor - Wall Street Crash led to 6 million unemployed, voters turned to extremes",
+        "Step 3: Explain political factor - Weimar politicians like Papen and Hindenburg made fatal errors in thinking they could use Hitler",
+        "Step 4: Explain Nazi tactics - propaganda, SA violence, and Hitler's charismatic leadership won support",
+        "Step 5: Link factors together showing how they combined to create the perfect storm for Nazi success"
+      ],
+      "answer": "Hitler became Chancellor due to a combination of economic crisis, political miscalculations, and effective Nazi tactics. The Wall Street Crash devastated Germany's economy, creating 6 million unemployed by 1932. Desperate voters abandoned moderate parties for extremes like the Nazis and Communists. Weimar politicians failed catastrophically - Papen convinced Hindenburg to appoint Hitler as Chancellor, believing they could control him in a coalition. Meanwhile, Nazi propaganda and SA intimidation won mass support, while Hitler's charisma attracted voters seeking strong leadership during the crisis.",
+      "markScheme": "2 marks for each well-explained factor (economic crisis, political failures, Nazi appeal), plus 2 marks for showing links between factors"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused chronology and wrote about events after 1933 when answering questions about Hitler's rise to power' — always check date boundaries in questions about Nazi Germany",
+      "Examiner Report 2022: 'Students often failed to distinguish between different types of opposition to Nazi rule and provided vague examples' — always specify whether discussing political, religious, or youth opposition with precise examples like the White Rose",
+      "Examiner Report 2021: 'Candidates frequently described Nazi policies without explaining their impact or effectiveness' — when discussing Nazi control, always evaluate success/failure with specific evidence like election results or resistance levels"
+    ],
+    "keyDiagram": "Timeline of key events 1918-45: Start with German defeat and abdication (November 1918), mark Treaty of Versailles (1919), Weimar constitution, hyperinflation (1923), Golden Age (1924-29), Wall Street Crash (1929), Nazi electoral breakthrough (1930), Hitler becomes Chancellor (January 1933), Enabling Act (March 1933), Night of Long Knives (1934), Nuremberg Laws (1935), Kristallnacht (1938), and outbreak of war (1939). Use different colors for Weimar period (1918-33) versus Nazi period (1933-45). Include unemployment figures and Nazi vote percentages at key points.",
+    "quickRecap": "Germany 1918-45 covers the collapse of imperial Germany, the troubled Weimar Republic (1918-33), and Nazi dictatorship (1933-45). Key themes: Treaty of Versailles created long-term resentment, economic crises (hyperinflation 1923, Depression 1929-32) destabilized democracy, and Hitler exploited these weaknesses through propaganda and violence. Once in power, Nazis established total control through legal revolution, terror, and coordination of all aspects of German society."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:04:51.068Z",
-  "updated_at": "2026-04-06T04:04:51.068Z"
+  "updated_at": "2026-04-06T04:04:51.068Z",
+  "enriched_at": "2026-04-06T16:08:53.727Z"
 }

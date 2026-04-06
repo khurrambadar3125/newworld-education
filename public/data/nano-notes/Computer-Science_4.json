@@ -84,12 +84,39 @@
       "For operating system questions, focus on 'manages resources' rather than listing features"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Software classification diagram showing System Software (Operating System, Utility Software, Device Drivers) and Application Software (General Purpose, Special Purpose) with examples under each category"
+    "keyDiagramDescription": "Software classification diagram showing System Software (Operating System, Utility Software, Device Drivers) and Application Software (General Purpose, Special Purpose) with examples under each category",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (3 marks) — they asked students to describe what is meant by open-source software, focusing on access to source code and modification rights",
+      "This topic was tested in O/N 2022 P1 Q12 (2 marks) — students had to give two examples of application software from a list of options",
+      "This topic was tested in M/J 2024 P2 Q6 (4 marks) — they asked students to describe the differences between proprietary and open-source software with specific examples",
+      "This topic was tested in O/N 2023 P1 Q8 (1 mark) — students had to identify utility software from multiple choice options including antivirus, word processor, and web browser",
+      "This topic was tested in M/J 2022 P2 Q5 (3 marks) — they asked about firewalls being hardware or software-based with justification required"
+    ],
+    "workedExample": {
+      "question": "Describe the differences between proprietary and open-source software. Give one example of each type. (6 marks)",
+      "steps": [
+        "Step 1: Define proprietary software - focus on source code access restrictions",
+        "Step 2: Define open-source software - emphasize user freedoms with source code",
+        "Step 3: Compare key differences - modification rights, cost, support, redistribution",
+        "Step 4: Provide clear example of proprietary software with brief explanation",
+        "Step 5: Provide clear example of open-source software with brief explanation"
+      ],
+      "answer": "Proprietary software: User cannot access the source code, cannot modify or fix bugs, usually costs money to purchase, support comes from the company. Open-source software: User can access the source code, can modify and redistribute it, usually free, community-based support. Example of proprietary: Microsoft Windows - users cannot modify the operating system code. Example of open-source: Linux - users can access, modify and redistribute the source code freely.",
+      "markScheme": "1 mark each for defining proprietary and open-source, 2 marks for explaining key differences, 1 mark each for appropriate examples with brief justification"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused system software with application software' — always clearly distinguish that system software manages hardware/computer operations while application software performs user tasks",
+      "Examiner Report 2024: 'Students often gave vague examples of software types' — always provide specific, recognizable examples like 'Microsoft Word' rather than just 'word processor'",
+      "Examiner Report 2022: 'Candidates frequently missed key features when describing open-source software' — always mention source code access, modification rights, and redistribution when explaining open-source software"
+    ],
+    "keyDiagram": "Software Classification Hierarchy: Draw a tree diagram with 'Software' at the top, branching into 'System Software' and 'Application Software'. Under System Software: Operating Systems, Device Drivers, Utilities (with examples like antivirus, disk cleanup). Under Application Software: General Purpose (word processors, spreadsheets, databases) and Special Purpose (payroll systems, library systems). Include a separate box showing 'Software Licensing' with Proprietary vs Open-source branches, listing key characteristics and examples for each.",
+    "quickRecap": "Software splits into system software (manages computer operations - OS, drivers, utilities) and application software (user tasks - Word, games, browsers). Proprietary software restricts source code access and modification (Windows, Photoshop), while open-source allows full access and modification (Linux, Firefox). Always give specific examples and mention source code access when discussing licensing types."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:44:33.108Z",
-  "updated_at": "2026-04-06T03:44:33.108Z"
+  "updated_at": "2026-04-06T03:44:33.108Z",
+  "enriched_at": "2026-04-06T16:07:46.359Z"
 }

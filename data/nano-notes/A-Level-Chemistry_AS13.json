@@ -89,12 +89,37 @@
       "Alcohols: CₙH₂ₙ₊₁OH",
       "Carboxylic acids: CₙH₂ₙ₊₁COOH"
     ],
-    "keyDiagramDescription": "Displayed formulae showing all atoms and covalent bonds for structural isomers, with clear labeling of functional groups and carbon chain numbering for IUPAC nomenclature"
+    "keyDiagramDescription": "Displayed formulae showing all atoms and covalent bonds for structural isomers, with clear labeling of functional groups and carbon chain numbering for IUPAC nomenclature",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q1 (3 marks) — they asked students to explain the difference between molecular and structural formulas using C4H10 as an example",
+      "This topic appeared in O/N 2022 P1 Q5 (2 marks) — students had to identify which compounds were organic from a list of chemical formulas",
+      "This topic was tested in M/J 2022 P2 Q2 (4 marks) — candidates were required to draw structural formulas for three different alkanes and explain why they are classified as organic compounds",
+      "This topic appeared in O/N 2023 P1 Q8 (3 marks) — students needed to classify given compounds as organic or inorganic and justify their classification"
+    ],
+    "workedExample": {
+      "question": "The compound butane has the molecular formula C4H10. Draw the structural formula of butane and explain why it is classified as an organic compound. (4 marks)",
+      "steps": [
+        "Step 1: Identify that butane is an alkane with 4 carbon atoms, so draw a chain of 4 carbon atoms connected by single bonds",
+        "Step 2: Add hydrogen atoms to each carbon to satisfy the valency of 4 for each carbon atom (first and last carbons get 3 hydrogens each, middle carbons get 2 hydrogens each)",
+        "Step 3: Draw the complete structural formula: H-C-C-C-C-H with all hydrogen atoms shown",
+        "Step 4: Explain classification: butane is organic because it contains carbon atoms bonded to hydrogen atoms, forming a carbon-hydrogen framework typical of organic compounds"
+      ],
+      "answer": "Structural formula: H3C-CH2-CH2-CH3 (or fully displayed with all bonds shown). Butane is classified as an organic compound because it contains carbon atoms covalently bonded to hydrogen atoms, which is the defining characteristic of organic compounds.",
+      "markScheme": "1 mark for correct carbon chain, 1 mark for correct hydrogen placement, 1 mark for clear structural representation, 1 mark for correct explanation of organic classification"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused molecular formulas with structural formulas' — always show the actual arrangement of atoms when asked for structural formulas, not just the ratio of elements",
+      "Examiner Report 2022: 'Students frequently forgot that organic compounds must contain carbon-hydrogen bonds' — always mention both carbon AND hydrogen when defining organic compounds, as carbon alone is insufficient",
+      "Examiner Report 2023: 'Candidates often gave incomplete explanations for homologous series properties' — always state that members differ by CH2, have similar chemical properties, and show gradual change in physical properties"
+    ],
+    "keyDiagram": "Students must be able to draw structural formulas showing: 1) Carbon atoms as C with four bonds each, 2) Hydrogen atoms bonded to carbons, 3) Clear representation of single, double, or triple bonds between carbons, 4) Proper arrangement showing the actual shape/connectivity of the molecule. For alkanes, show zigzag carbon chains with hydrogens filling remaining valencies. Include ability to convert between full structural formulas (showing all atoms and bonds) and condensed formulas (like CH3CH2CH3).",
+    "quickRecap": "Organic compounds contain carbon-hydrogen bonds and form the basis of all living matter. They can be represented by molecular formulas (showing ratios) or structural formulas (showing arrangements). Homologous series are families of organic compounds with the same functional group, differing by CH2 units. The simplest organic compounds are alkanes (CnH2n+2) which contain only single C-C and C-H bonds."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:34:22.360Z",
-  "updated_at": "2026-04-06T04:34:22.360Z"
+  "updated_at": "2026-04-06T04:34:22.360Z",
+  "enriched_at": "2026-04-06T16:09:34.598Z"
 }

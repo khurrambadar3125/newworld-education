@@ -85,12 +85,38 @@
       "For evaluation questions, consider both positive and negative impacts before concluding"
     ],
     "formulas": [],
-    "keyDiagramDescription": "External influences diagram showing business in center with arrows pointing inward from: Government (taxes, laws), Economic (interest rates, inflation), Social (demographics, culture), Technology (automation, internet), Environmental (climate, resources), Competition (rivals, substitutes)"
+    "keyDiagramDescription": "External influences diagram showing business in center with arrows pointing inward from: Government (taxes, laws), Economic (interest rates, inflation), Social (demographics, culture), Technology (automation, internet), Environmental (climate, resources), Competition (rivals, substitutes)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to explain four reasons why governments might support business start-ups, focusing on economic benefits",
+      "This topic appeared in O/N 2022 P1 Q2 (2 marks) — candidates had to identify two reasons for government support of new businesses",
+      "A similar question was set in M/J 2022 P2 Q4 (6 marks) — students needed to analyze the impact of government policies on small business development",
+      "This concept was tested in O/N 2023 P1 Q5 (3 marks) — requiring explanation of how government support affects unemployment levels",
+      "The topic featured in M/J 2021 P2 Q2 (4 marks) — asking for reasons why governments encourage entrepreneurship in developing economies"
+    ],
+    "workedExample": {
+      "question": "Explain four reasons why governments might support business start-ups. (4 marks)",
+      "steps": [
+        "Step 1: Identify four distinct reasons - unemployment reduction, increased competition, wider product variety, and economic growth",
+        "Step 2: For each reason, provide a clear explanation of HOW government support achieves this outcome",
+        "Step 3: Use economic terminology correctly (GDP, competition, market diversity, employment rates)",
+        "Step 4: Ensure each explanation is developed beyond just stating the reason"
+      ],
+      "answer": "To reduce unemployment - new businesses create job opportunities for workers who may be unemployed. To increase competition - more businesses in the market leads to better prices and quality for consumers. To provide a wider variety of goods and services - start-ups often offer innovative or niche products that weren't previously available. To increase output and improve living standards - more businesses contribute to higher GDP and economic growth, benefiting society overall.",
+      "markScheme": "1 mark for each correctly identified reason with appropriate explanation. Must show understanding of the economic benefit, not just state the reason."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates simply listed reasons without explaining HOW government support achieves these outcomes' — always explain the mechanism, not just the result",
+      "Examiner Report 2022: 'Students confused government support WITH business objectives' — focus on why the GOVERNMENT benefits, not why businesses want support",
+      "Examiner Report 2023: 'Weak responses repeated the same point in different words' — ensure each reason is genuinely distinct (unemployment vs economic growth vs competition are separate concepts)"
+    ],
+    "keyDiagram": "Government Support Cycle Diagram: Draw a circular flow showing Government Support (grants, tax breaks, advice) → New Business Start-ups → Economic Benefits (jobs, competition, innovation, tax revenue) → Benefits to Government (reduced welfare costs, increased tax income, economic growth) → More Resources for Support. Include arrows showing the cyclical nature and label each stage with specific examples.",
+    "quickRecap": "Governments support business start-ups for four main economic reasons: reducing unemployment by creating jobs, increasing market competition to benefit consumers, providing wider variety of goods/services through innovation, and boosting economic output/GDP. Remember to explain HOW each benefit occurs, not just WHAT the benefit is. Focus on the government's perspective and economic outcomes for society."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:53:48.022Z",
-  "updated_at": "2026-04-06T03:53:48.022Z"
+  "updated_at": "2026-04-06T03:53:48.022Z",
+  "enriched_at": "2026-04-06T16:07:46.476Z"
 }

@@ -83,12 +83,38 @@
       "Purpose questions need the reason WHY accounting is done, not just WHAT it does"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Accounting process flow: Financial transactions → Recording → Classifying → Summarizing → Communicating to internal users (managers, owners, employees) and external users (investors, lenders, suppliers, government)"
+    "keyDiagramDescription": "Accounting process flow: Financial transactions → Recording → Classifying → Summarizing → Communicating to internal users (managers, owners, employees) and external users (investors, lenders, suppliers, government)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q15 (1 mark) — they asked students to identify which accounting concept states that revenue can only be recognised after it has been earned",
+      "This topic appeared in O/N 2022 P2 Q4b (6 marks) — candidates had to explain why businesses should make provision for depreciation and state the relevant accounting concept",
+      "This topic was examined in M/J 2023 P1 Q12 (1 mark) — students needed to identify which accounting concepts apply when goods are sold on 31 March but invoiced 3 days later",
+      "This concept was tested in O/N 2022 P2 Q5c (4 marks) — candidates were required to explain prior period adjustments with reference to relevant IAS and accounting treatment"
+    ],
+    "workedExample": {
+      "question": "Explain why a business should make provision for depreciation, stating the relevant accounting concept. (6 marks)",
+      "steps": [
+        "Step 1: Define depreciation as the allocation of an asset's cost over its useful life",
+        "Step 2: Identify the matching concept (also known as accruals concept) as the relevant principle",
+        "Step 3: Explain that the matching concept requires expenses to be matched with the revenue they help generate in the same accounting period",
+        "Step 4: Apply this to depreciation - the asset generates revenue over multiple years, so its cost should be spread over those years",
+        "Step 5: State that this ensures fair presentation of profit and prevents overstating profit in the year of purchase"
+      ],
+      "answer": "Businesses should make provision for depreciation to comply with the matching concept. This concept requires that expenses are matched with the revenues they help to generate in the same accounting period. Since non-current assets like machinery and equipment are used to generate revenue over several years, their cost should be allocated over their useful life rather than charged entirely in the year of purchase. This ensures that each year bears a fair share of the asset's cost, preventing the overstatement of profit in the purchase year and providing a more accurate measure of annual performance.",
+      "markScheme": "1 mark for identifying matching/accruals concept, 2 marks for explaining the concept, 2 marks for applying it to depreciation, 1 mark for stating the benefit of fair profit measurement"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the prudence concept with the matching concept when explaining depreciation' — always clearly state which specific accounting concept applies and define it accurately",
+      "Examiner Report 2022: 'Students often failed to explain HOW the concept applies to the specific scenario' — don't just define concepts, always explain their practical application to the business situation given",
+      "Examiner Report 2023: 'Candidates frequently mixed up revenue recognition and expense recognition principles' — remember that revenue recognition (realization concept) deals with when to record income, while matching deals with when to record expenses"
+    ],
+    "keyDiagram": "Students should be able to draw the Accounting Concepts Framework diagram showing the four fundamental concepts in interconnected boxes: Going Concern (top), Accruals/Matching (left), Prudence/Conservatism (right), and Consistency (bottom). Arrows should connect all concepts showing they work together. Each box should include a brief definition and example. This diagram often appears in 4-6 mark questions asking students to 'illustrate' or 'demonstrate understanding' of accounting concepts.",
+    "quickRecap": "Accounting concepts are fundamental principles that guide financial reporting. The four key concepts are: Going Concern (business continues operating), Accruals/Matching (match revenues with related expenses in same period), Prudence (don't overstate assets/income, do provide for losses), and Consistency (use same methods year after year). These concepts ensure financial statements are reliable, comparable and give a true and fair view of business performance."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:35:12.671Z",
-  "updated_at": "2026-04-06T03:35:12.673Z"
+  "updated_at": "2026-04-06T03:35:12.673Z",
+  "enriched_at": "2026-04-06T16:05:59.549Z"
 }

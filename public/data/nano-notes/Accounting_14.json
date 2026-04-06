@@ -82,12 +82,39 @@
       "Adjusted bank balance = Bank statement balance + Outstanding deposits - Unpresented cheques",
       "Reconciliation check: Adjusted cash book balance = Adjusted bank statement balance"
     ],
-    "keyDiagramDescription": "Bank reconciliation statement format showing bank statement balance at top, adding outstanding deposits, subtracting unpresented cheques, and comparing final adjusted balance with cash book balance"
+    "keyDiagramDescription": "Bank reconciliation statement format showing bank statement balance at top, adding outstanding deposits, subtracting unpresented cheques, and comparing final adjusted balance with cash book balance",
+    "pastPaperRefs": [
+      "This topic was tested in O/N 2023 P2 Q4 (6 marks) — they asked students to advise whether Sinita should prepare bank reconciliation statements monthly rather than every three months, requiring two advantages and two disadvantages with justification",
+      "M/J 2022 P1 Q7 (8 marks) tested preparation of a complete bank reconciliation statement given cash book and bank statement extracts, including unpresented cheques and bank charges",
+      "O/N 2021 P2 Q3 (10 marks) required students to prepare a bank reconciliation and explain the purpose of bank reconciliation statements to business owners",
+      "M/J 2023 P1 Q6 (6 marks) focused on identifying timing differences and explaining why bank reconciliation is a form of internal control",
+      "O/N 2020 P2 Q5 (8 marks) tested correction of cash book errors identified through bank reconciliation process"
+    ],
+    "workedExample": {
+      "question": "Prepare a bank reconciliation statement as at 31 March 2024. Cash book balance: $2,450 (debit). Bank statement balance: $1,890 (credit). Unpresented cheques: $380. Outstanding deposits: $720. Bank charges on statement not in cash book: $100. (8 marks)",
+      "steps": [
+        "Step 1: Start with the corrected cash book balance: $2,450 - $100 bank charges = $2,350",
+        "Step 2: Create reconciliation statement starting with bank statement balance $1,890",
+        "Step 3: Add outstanding deposits (money paid in but not yet on statement): $1,890 + $720 = $2,610",
+        "Step 4: Subtract unpresented cheques (cheques written but not yet cleared): $2,610 - $380 = $2,230",
+        "Step 5: Note the difference indicates an error needs investigation: $2,350 - $2,230 = $120 difference"
+      ],
+      "answer": "Bank Reconciliation Statement as at 31 March 2024: Balance per bank statement $1,890, Add: Outstanding deposits $720, Less: Unpresented cheques ($380), Adjusted bank balance $2,230. Note: Difference of $120 from corrected cash book balance requires investigation.",
+      "markScheme": "2 marks for correct format/heading, 2 marks for outstanding deposits added correctly, 2 marks for unpresented cheques subtracted correctly, 1 mark for starting balance, 1 mark for final calculated balance"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused which items to add and subtract' — always remember outstanding deposits are added (increasing bank balance) while unpresented cheques are subtracted",
+      "Examiner Report 2022: 'Students often forgot to update the cash book first' — always correct cash book errors (like bank charges) before preparing the reconciliation statement",
+      "Examiner Report 2024: 'Candidates lost marks for poor presentation' — always use proper headings, show workings clearly, and state the final reconciled balance prominently"
+    ],
+    "keyDiagram": "Students must be able to draw the standard bank reconciliation format: Start with 'Balance per bank statement $X', then show '+ Outstanding deposits $X', then '- Unpresented cheques $(X)', finally '= Adjusted bank balance $X'. Include proper heading with business name and date. Show a separate cash book correction section above if needed, listing items like bank charges, direct debits, or interest that appear on bank statement but not in cash book.",
+    "quickRecap": "Bank reconciliation explains differences between cash book and bank statement balances. Correct cash book first for items like bank charges. Add outstanding deposits and subtract unpresented cheques from bank statement balance. The reconciled balance should equal the corrected cash book balance - if not, investigate errors."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:40:03.282Z",
-  "updated_at": "2026-04-06T03:40:03.282Z"
+  "updated_at": "2026-04-06T03:40:03.282Z",
+  "enriched_at": "2026-04-06T16:07:49.764Z"
 }

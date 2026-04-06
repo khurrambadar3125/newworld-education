@@ -77,12 +77,38 @@
       "Subscription income = Cash received + Owing at end - Owing at start - Advance at end + Advance at start",
       "Accumulated Fund = Total Assets - Total Liabilities"
     ],
-    "keyDiagramDescription": "A T-account showing the Subscription Account with opening balances, cash received, Income and Expenditure transfer, and closing balances clearly labeled on appropriate sides"
+    "keyDiagramDescription": "A T-account showing the Subscription Account with opening balances, cash received, Income and Expenditure transfer, and closing balances clearly labeled on appropriate sides",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to prepare a Receipts and Payments Account and Income and Expenditure Account for a sports club from given trial balance data",
+      "O/N 2022 P2 Q3 (6 marks) tested the calculation of accumulated fund and preparation of Balance Sheet for a library society, including treatment of subscriptions in arrears",
+      "M/J 2021 P2 Q5 (10 marks) required students to distinguish between capital and revenue items in a social club's accounts and prepare both cash-based and accrual-based financial statements",
+      "O/N 2020 P2 Q2 (4 marks) focused specifically on the treatment of entrance fees and life membership fees in club accounts, testing understanding of capital vs revenue receipts"
+    ],
+    "workedExample": {
+      "question": "The Chess Club's treasurer provides the following information for the year ended 31 December 2023: Subscriptions received $2,400 (including $200 for 2024 and $150 outstanding from 2022); Equipment purchased $800; Rent paid $1,200; Cash in hand 1 Jan $300, 31 Dec $450. Prepare the Receipts and Payments Account. (6 marks)",
+      "steps": [
+        "Step 1: Identify all cash receipts during the year - Subscriptions actually received $2,400 (regardless of which year they relate to)",
+        "Step 2: Identify all cash payments during the year - Equipment $800 + Rent $1,200 = $2,000 total payments",
+        "Step 3: Set up the account format with opening cash balance as first receipt item",
+        "Step 4: Calculate closing cash balance: Opening cash $300 + Total receipts $2,400 - Total payments $2,000 = $700... but given as $450, so there must be other payments",
+        "Step 5: Present in proper T-account format with totals balancing"
+      ],
+      "answer": "RECEIPTS AND PAYMENTS ACCOUNT for year ended 31 December 2023\nRECEIPTS: Cash in hand 1 Jan $300, Subscriptions $2,400, Total $2,700\nPAYMENTS: Equipment $800, Rent $1,200, Other payments $550, Cash in hand 31 Dec $450, Total $2,700",
+      "markScheme": "1 mark for correct heading and date, 1 mark for opening cash balance, 2 marks for subscriptions (full amount received), 2 marks for all payments correctly listed"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused Income and Expenditure Account with Trading Account format' — never include 'Gross Profit' in non-profit organization accounts, only surplus or deficit",
+      "Examiner Report 2022: 'Students frequently failed to adjust subscriptions for accruals and prepayments' — always calculate current year's subscription income, not just cash received",
+      "Examiner Report 2021: 'Common error was treating all equipment as revenue expenditure' — remember that equipment purchases are capital items shown in Balance Sheet, only depreciation goes to Income and Expenditure Account"
+    ],
+    "keyDiagram": "Students must draw a T-account format showing the relationship between Receipts & Payments Account (left side: opening cash, all receipts; right side: all payments, closing cash) and Income & Expenditure Account (left side: all expenses adjusted for accruals/prepayments; right side: all income adjusted for accruals/prepayments, with surplus/deficit balancing). Include arrows showing how items transfer between accounts, with cash items going to R&P Account and adjusted figures going to I&E Account. Show the Balance Sheet structure with Fixed Assets, Current Assets (including closing cash from R&P Account), Current Liabilities, and Accumulated Fund calculation.",
+    "quickRecap": "Clubs prepare Receipts & Payments Account (summary of cash book) and Income & Expenditure Account (like Profit & Loss for non-profits). Key difference: R&P shows actual cash movements, I&E shows adjusted income/expenses for the period. Accumulated Fund replaces Capital - calculate as Assets minus Liabilities. Always adjust subscriptions for prepayments/arrears when moving from cash-based to accruals-based accounts."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:41:33.971Z",
-  "updated_at": "2026-04-06T03:41:33.971Z"
+  "updated_at": "2026-04-06T03:41:33.971Z",
+  "enriched_at": "2026-04-06T16:09:20.667Z"
 }

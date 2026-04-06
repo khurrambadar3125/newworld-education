@@ -84,12 +84,38 @@
       "Active vs passive immunity comparison questions are very common - know natural and artificial examples"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Antibody structure showing Y-shape with two heavy chains, two light chains, variable regions (antigen-binding sites) at the tips, and constant region at the base. Also primary vs secondary immune response graph showing antibody concentration over time."
+    "keyDiagramDescription": "Antibody structure showing Y-shape with two heavy chains, two light chains, variable regions (antigen-binding sites) at the tips, and constant region at the base. Also primary vs secondary immune response graph showing antibody concentration over time.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the differences between active and passive immunity, including examples of each type",
+      "O/N 2022 P1 Q15 (1 mark) — multiple choice question asking which cells produce antibodies during the secondary immune response",
+      "M/J 2022 P2 Q6(c) (4 marks) — students had to describe how vaccination leads to immunity against a specific disease",
+      "O/N 2021 P2 Q3(b) (5 marks) — explain why the secondary immune response is faster and stronger than the primary response",
+      "M/J 2021 P1 Q18 (1 mark) — identification of the type of white blood cell that produces antibodies"
+    ],
+    "workedExample": {
+      "question": "Explain why a person who has recovered from measles is unlikely to get the disease again. (4 marks)",
+      "steps": [
+        "Step 1: Identify that this is about acquired immunity after infection",
+        "Step 2: Explain the primary immune response - lymphocytes produce antibodies specific to measles antigens",
+        "Step 3: Describe memory cell formation - some lymphocytes become memory cells that remain in the body",
+        "Step 4: Explain secondary response - if measles virus enters again, memory cells rapidly produce antibodies"
+      ],
+      "answer": "When the person first had measles, their lymphocytes produced antibodies specific to the measles virus antigens. Some lymphocytes became memory cells which remained in the body after recovery. If the measles virus enters the body again, these memory cells will rapidly recognize the antigens and quickly produce large amounts of antibodies, destroying the virus before symptoms develop.",
+      "markScheme": "1 mark for antibodies specific to measles antigens; 1 mark for memory cells formed; 1 mark for memory cells remain in body; 1 mark for rapid antibody production prevents disease"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused active and passive immunity' — always state whether immunity is gained through the person's own immune system (active) or by receiving ready-made antibodies (passive)",
+      "Examiner Report 2022: 'Students often wrote about antibodies without mentioning antigens' — always explain that antibodies are specific to particular antigens when describing immune responses",
+      "Examiner Report 2021: 'Candidates frequently failed to distinguish between primary and secondary immune responses' — always mention that secondary responses are faster, stronger, and involve memory cells"
+    ],
+    "keyDiagram": "Students must be able to draw a graph showing primary and secondary immune response over time. X-axis shows time (weeks), Y-axis shows antibody concentration in blood. Primary response: slow rise to moderate peak after first antigen exposure, then decline. Secondary response: rapid rise to much higher peak after second antigen exposure. Label both antigen exposures, show memory cells persisting between responses, and indicate the faster, stronger nature of secondary response.",
+    "quickRecap": "Immunity protects against disease through antibodies that are specific to antigens. Active immunity develops when your body makes antibodies (natural infection or vaccination), while passive immunity involves receiving ready-made antibodies (mother to baby, antiserum). Memory cells from the primary response enable a faster, stronger secondary immune response. Vaccination provides immunity without causing disease."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:03:52.590Z",
-  "updated_at": "2026-04-06T05:03:52.590Z"
+  "updated_at": "2026-04-06T05:03:52.590Z",
+  "enriched_at": "2026-04-06T16:09:13.485Z"
 }

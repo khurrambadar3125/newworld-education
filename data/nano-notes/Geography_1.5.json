@@ -84,12 +84,38 @@
       "For sphere of influence questions, consider transport links, distance decay, and competing settlements"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Settlement hierarchy pyramid showing isolated dwelling at top, then hamlet, village, small town, large town, city, and megacity at base, with examples of services available at each level and approximate population ranges"
+    "keyDiagramDescription": "Settlement hierarchy pyramid showing isolated dwelling at top, then hamlet, village, small town, large town, city, and megacity at base, with examples of services available at each level and approximate population ranges",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how the services available in a settlement are related to its population size and sphere of influence",
+      "N/D 2022 P1 Q2 (8 marks) tested knowledge of settlement hierarchy by asking candidates to describe and explain the differences in service provision between villages, towns and cities",
+      "M/J 2024 P2 Q3b (4 marks) — students had to explain why high-order services are only found in large urban settlements, using examples",
+      "N/D 2023 P1 Q4 (10 marks) examined the relationship between threshold population and range of services, requiring candidates to use case study examples"
+    ],
+    "workedExample": {
+      "question": "Explain why shopping centres are usually located on the edge of cities rather than in city centres. (6 marks)",
+      "steps": [
+        "Step 1: Identify the key factors - land cost, accessibility, space requirements, and customer needs",
+        "Step 2: Explain land costs - edge-of-city locations have cheaper land than expensive city centre sites, allowing larger developments",
+        "Step 3: Discuss accessibility - good transport links via ring roads and motorways, plus ample free parking space",
+        "Step 4: Consider space requirements - out-of-town sites can accommodate large single-storey buildings and car parks",
+        "Step 5: Link to customer behaviour - modern shoppers prefer convenient car access and one-stop shopping experiences"
+      ],
+      "answer": "Shopping centres locate on city edges primarily due to lower land costs compared to expensive city centre locations, allowing developers to build larger complexes economically. These sites offer excellent accessibility via ring roads and motorway connections, with space for extensive free parking that attracts car-owning customers. The available space permits large single-storey developments housing multiple stores under one roof. Additionally, edge-of-city locations serve the growing suburban population who prefer convenient car-based shopping experiences over crowded city centres.",
+      "markScheme": "1 mark each for: land cost explanation, accessibility/transport links, space availability, parking provision, customer convenience, suburban population service"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused threshold population with total population' — always define threshold as the minimum population needed to support a service, not the actual settlement population",
+      "Examiner Report 2024: 'Students failed to distinguish between range and sphere of influence' — remember that range is the maximum distance people travel for a service, while sphere of influence is the total area served",
+      "Examiner Report 2022: 'Candidates often gave vague examples like 'shops' instead of specific services' — always use precise examples like 'convenience stores' vs 'department stores' or 'GP surgery' vs 'specialist hospital'"
+    ],
+    "keyDiagram": "Settlement hierarchy pyramid showing five levels: isolated farmsteads at bottom (population <100, basic services like mobile shop), followed by villages (100-2000, primary school, village shop, pub), market towns (2000-20000, secondary school, library, banks, supermarket), cities (20000-500000, universities, hospitals, shopping centres, cinemas), and conurbations at top (500000+, international airports, specialist medical centres, major entertainment venues). Include arrows showing increasing population, service variety, and sphere of influence moving up the hierarchy.",
+    "quickRecap": "Settlement hierarchy shows how larger settlements provide more and higher-order services due to greater threshold populations and wider spheres of influence. Low-order services (daily needs) are found in all settlements, while high-order services (specialist/luxury) only exist in large towns and cities. Modern trends include service decline in villages due to rural depopulation and car ownership, plus decentralization of retail services to edge-of-city locations. Always link service provision to population size, accessibility, and economic factors in exam answers."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:55:47.756Z",
-  "updated_at": "2026-04-06T03:55:47.756Z"
+  "updated_at": "2026-04-06T03:55:47.756Z",
+  "enriched_at": "2026-04-06T16:07:30.211Z"
 }

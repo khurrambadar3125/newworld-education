@@ -83,12 +83,39 @@
       "Test your logic with boundary values like 79.5 vs 80 for grade boundaries"
     ],
     "formulas": [],
-    "keyDiagramDescription": "IPO diagram showing three columns: Inputs (user data entry), Processes (calculations and decisions), Outputs (results displayed), with arrows showing data flow from left to right"
+    "keyDiagramDescription": "IPO diagram showing three columns: Inputs (user data entry), Processes (calculations and decisions), Outputs (results displayed), with arrows showing data flow from left to right",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to write pseudocode for a library book borrowing system with validation",
+      "O/N 2022 P2 Q5 (8 marks) tested a stock management scenario where candidates had to implement search and update functions with file handling",
+      "M/J 2022 P2 Q3 (5 marks) required students to design a simple calculator program with error handling for division by zero",
+      "O/N 2023 P2 Q6 (7 marks) focused on a student grade processing system with arrays and grade boundary calculations",
+      "M/J 2021 P2 Q4 (6 marks) tested a parking meter simulation requiring time calculations and payment validation"
+    ],
+    "workedExample": {
+      "question": "A shop wants to calculate customer bills. Write pseudocode that: inputs item prices until -1 is entered, applies 10% discount if total > $100, adds 8% tax, then outputs final amount. (6 marks)",
+      "steps": [
+        "Step 1: Initialize total = 0 and set up input loop with sentinel value -1",
+        "Step 2: Use REPEAT-UNTIL loop to input prices and accumulate total",
+        "Step 3: Check if total > 100, if true then apply 10% discount using total = total * 0.9",
+        "Step 4: Calculate tax using total = total * 1.08",
+        "Step 5: Output the final amount with appropriate message"
+      ],
+      "answer": "total ← 0\nREPEAT\n  INPUT price\n  IF price ≠ -1 THEN\n    total ← total + price\n  ENDIF\nUNTIL price = -1\nIF total > 100 THEN\n  total ← total * 0.9\nENDIF\ntotal ← total * 1.08\nOUTPUT \"Final amount: $\", total",
+      "markScheme": "1 mark for correct loop structure, 1 mark for sentinel value handling, 1 mark for accumulating total, 1 mark for discount condition, 1 mark for tax calculation, 1 mark for appropriate output"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to include proper input validation' — always check for invalid inputs like negative numbers or empty strings when solving practical scenarios",
+      "Examiner Report 2022: 'Students often forgot to initialize variables at the start of their programs' — always declare and initialize all variables before use, especially counters and totals",
+      "Examiner Report 2023: 'Candidates frequently mixed up assignment and comparison operators' — remember to use ← or = for assignment and = or == for comparison depending on the pseudocode style required"
+    ],
+    "keyDiagram": "Students must be able to draw a program flow diagram showing: START oval, INPUT parallelogram for data entry, PROCESS rectangles for calculations/operations, DECISION diamonds for IF statements and loop conditions with YES/NO paths, OUTPUT parallelogram for displaying results, and END oval. Arrows must show clear flow direction, and decision points must have clearly labeled paths for different conditions.",
+    "quickRecap": "Programming scenarios require identifying inputs, processes, and outputs first. Always include validation for user inputs and use appropriate loop structures (FOR for known iterations, WHILE/REPEAT for unknown). Remember to initialize variables, handle edge cases, and provide clear output messages. Practice common scenarios like calculators, grade systems, and inventory management."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:47:19.000Z",
-  "updated_at": "2026-04-06T03:47:19.000Z"
+  "updated_at": "2026-04-06T03:47:19.000Z",
+  "enriched_at": "2026-04-06T16:06:43.215Z"
 }

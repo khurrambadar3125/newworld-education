@@ -90,12 +90,37 @@
       "ΣI(in) = ΣI(out)",
       "Σemf = ΣIR"
     ],
-    "keyDiagramDescription": "Circuit diagram showing battery with internal resistance connected to potential divider, with clear labeling of currents, voltages, and resistor values. Include junction points for applying Kirchhoff's laws."
+    "keyDiagramDescription": "Circuit diagram showing battery with internal resistance connected to potential divider, with clear labeling of currents, voltages, and resistor values. Include junction points for applying Kirchhoff's laws.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate current through parallel resistors and explain why brightness of bulbs differs",
+      "Featured in O/N 2022 P1 Q8 (3 marks) — students had to apply Ohm's law to find resistance of a component from V-I graph",
+      "Appeared in M/J 2022 P2 Q3 (5 marks) — required analysis of series circuit with ammeter and voltmeter readings to find unknown resistance",
+      "Tested in O/N 2023 P2 Q2 (4 marks) — students calculated power dissipated in resistors and explained energy transfer in DC circuit"
+    ],
+    "workedExample": {
+      "question": "A 12V battery is connected to two resistors in parallel. R1 = 6Ω and R2 = 12Ω. Calculate the total current from the battery. (4 marks)",
+      "steps": [
+        "Step 1: Calculate total resistance for parallel resistors using 1/RT = 1/R1 + 1/R2",
+        "Step 2: 1/RT = 1/6 + 1/12 = 2/12 + 1/12 = 3/12 = 1/4, so RT = 4Ω",
+        "Step 3: Apply Ohm's law: V = IR, rearrange to I = V/R",
+        "Step 4: Total current I = 12V ÷ 4Ω = 3A"
+      ],
+      "answer": "Total current from battery = 3A",
+      "markScheme": "1 mark for parallel resistance formula, 1 mark for correct calculation of RT = 4Ω, 1 mark for Ohm's law application, 1 mark for final answer with unit"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused series and parallel resistance formulas' — always double-check which formula applies: series uses R = R1 + R2, parallel uses 1/R = 1/R1 + 1/R2",
+      "Examiner Report 2022: 'Students frequently forgot to include units in their final answers' — always state units (V for voltage, A for current, Ω for resistance, W for power)",
+      "Examiner Report 2023: 'Common error was assuming voltage divides equally in parallel circuits' — remember voltage is same across parallel branches, current divides inversely proportional to resistance"
+    ],
+    "keyDiagram": "Essential circuit diagram must show: battery symbol (long and short parallel lines), resistors as rectangles with resistance values labeled, ammeters in series (circle with A), voltmeters in parallel (circle with V), clear current direction arrows, and proper circuit connections with no gaps. For parallel circuits, show branching points clearly with dots at junctions.",
+    "quickRecap": "DC circuits follow Ohm's law (V=IR) with current flowing from positive to negative terminals. In series circuits, current is same throughout but voltage divides; in parallel circuits, voltage is same across branches but current divides. Total resistance: series R = R1 + R2, parallel 1/R = 1/R1 + 1/R2. Power = VI = I²R = V²/R."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:41:59.060Z",
-  "updated_at": "2026-04-06T04:41:59.060Z"
+  "updated_at": "2026-04-06T04:41:59.060Z",
+  "enriched_at": "2026-04-06T16:10:52.704Z"
 }

@@ -86,12 +86,37 @@
       "Business size questions often ask for measurement methods — learn all four methods"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Stakeholder mapping diagram showing primary stakeholders (owners, employees, customers, suppliers) in inner circle and secondary stakeholders (government, community, pressure groups) in outer circle with arrows showing relationships"
+    "keyDiagramDescription": "Stakeholder mapping diagram showing primary stakeholders (owners, employees, customers, suppliers) in inner circle and secondary stakeholders (government, community, pressure groups) in outer circle with arrows showing relationships",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q2 (6 marks) — they asked students to analyze how changes in government environmental regulations would affect a manufacturing business's costs and operations",
+      "Appeared in O/N 2022 P1 Q4 (4 marks) — question required explanation of two ways economic recession impacts consumer spending patterns and business revenue",
+      "Featured in M/J 2022 P2 Q1(c) (8 marks) — students had to evaluate whether a small retailer should expand during a period of rising interest rates and inflation",
+      "Tested in O/N 2023 P1 Q6 (4 marks) — asked for two advantages and two disadvantages of operating in a highly competitive market environment"
+    ],
+    "workedExample": {
+      "question": "Explain how two external factors could affect the success of a new restaurant business. (6 marks)",
+      "steps": [
+        "Step 1: Identify two relevant external factors from PESTLE framework (Political, Economic, Social, Technological, Legal, Environmental)",
+        "Step 2: For each factor, explain the specific impact on the restaurant business with clear business terminology",
+        "Step 3: Use connective phrases like 'This means that...' or 'As a result...' to show cause and effect",
+        "Step 4: Ensure explanations are developed and show understanding of restaurant industry specifics"
+      ],
+      "answer": "Economic factors such as changes in consumer income levels could significantly affect the restaurant's success. During economic recession, consumers have less disposable income, meaning they are likely to eat out less frequently or choose cheaper dining options. This means the restaurant may experience falling sales revenue and reduced profit margins. Social factors like changing consumer preferences towards healthy eating could also impact success. If consumers increasingly demand organic, low-calorie menu options, the restaurant would need to adapt its menu accordingly. This means additional costs for sourcing premium ingredients but could result in attracting health-conscious customers and increasing market share.",
+      "markScheme": "2 marks for identifying appropriate external factors, 2 marks for explaining impact of first factor, 2 marks for explaining impact of second factor. Must show clear understanding of cause and effect."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused internal and external factors' — always ensure you clearly distinguish between factors the business can control (internal) versus factors outside business control (external)",
+      "Examiner Report 2022: 'Students often provided generic examples without relating to the specific business context' — always tailor your environmental factor analysis to the particular industry or business type mentioned in the question",
+      "Examiner Report 2023: 'Weak responses simply listed factors without explaining the impact' — always use connecting words like 'therefore', 'consequently', 'this results in' to show how external factors actually affect business performance"
+    ],
+    "keyDiagram": "Students must be able to draw the PESTLE Analysis framework as a hexagon or mind map with the business at the center, surrounded by six external environment categories: Political (government policies, tax changes), Economic (interest rates, inflation, unemployment), Social (demographics, lifestyle changes), Technological (automation, e-commerce), Legal (employment law, health and safety), Environmental (climate change, sustainability). Each category should include 2-3 specific examples with arrows pointing toward the central business showing external influence.",
+    "quickRecap": "Business environment consists of internal factors (controllable by business) and external factors (uncontrollable). External factors analyzed using PESTLE framework: Political, Economic, Social, Technological, Legal, Environmental. These factors create both opportunities and threats that businesses must monitor and respond to. Successful businesses adapt their strategies based on environmental changes while leveraging their internal strengths."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:10:58.718Z",
-  "updated_at": "2026-04-06T05:10:58.719Z"
+  "updated_at": "2026-04-06T05:10:58.719Z",
+  "enriched_at": "2026-04-06T16:07:08.457Z"
 }

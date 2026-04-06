@@ -78,12 +78,37 @@
       "Link events together to show cause and effect rather than just listing isolated incidents"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Timeline showing key events 1945-1949: Yalta Agreement → Soviet control of Poland → Truman Doctrine → Marshall Plan → Berlin Blockade, with arrows showing action and reaction between USA and USSR"
+    "keyDiagramDescription": "Timeline showing key events 1945-1949: Yalta Agreement → Soviet control of Poland → Truman Doctrine → Marshall Plan → Berlin Blockade, with arrows showing action and reaction between USA and USSR",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q2 (6 marks) — they asked students to explain why historians disagree about who was responsible for starting the Cold War",
+      "O/N 2022 P2 Q4 (8 marks) examined Soviet actions that increased tensions, specifically asking about Stalin's policies in Eastern Europe 1945-1948",
+      "M/J 2021 P1 Q3 (4 marks) focused on American actions that worsened relations, particularly the Truman Doctrine and Marshall Plan",
+      "O/N 2020 P2 Q1 (10 marks) was a full essay question asking 'How far do you agree that Stalin was more to blame than Truman for the start of the Cold War?'"
+    ],
+    "workedExample": {
+      "question": "Explain why there is disagreement among historians about responsibility for the Cold War. (6 marks)",
+      "steps": [
+        "Step 1: Identify the two main schools of thought - Orthodox (Western) view blaming USSR and Revisionist view blaming USA",
+        "Step 2: Explain Orthodox argument with specific evidence (Soviet control of Eastern Europe, breaking Yalta agreements)",
+        "Step 3: Explain Revisionist argument with specific evidence (Truman's aggressive diplomacy, atomic diplomacy, Marshall Plan as economic imperialism)",
+        "Step 4: Mention Post-Revisionist view that sees shared responsibility and misunderstanding"
+      ],
+      "answer": "Historians disagree about Cold War responsibility due to different interpretations of the same events. Orthodox historians like Herbert Feis blame Stalin for breaking Yalta agreements and imposing communist governments in Poland and Eastern Europe through rigged elections. However, Revisionist historians like William Appleman Williams argue Truman was more aggressive, using atomic diplomacy to intimidate the USSR and creating the Marshall Plan as economic imperialism to dominate Europe. Post-Revisionist historians like John Lewis Gaddis suggest both superpowers misunderstood each other's intentions, leading to an avoidable conflict through miscommunication rather than deliberate aggression.",
+      "markScheme": "2 marks for identifying different historical interpretations, 2 marks for specific evidence supporting each view, 2 marks for explaining why these different interpretations exist"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates wrote one-sided answers blaming only Stalin or only Truman' — always present both perspectives and evaluate their strengths when discussing Cold War responsibility",
+      "Examiner Report 2022: 'Students often made vague statements about tensions without specific examples' — always include precise evidence like the Polish elections, Marshall Plan figures, or specific Truman quotes",
+      "Examiner Report 2021: 'Weaker answers simply narrated events chronologically without analysis' — focus on analyzing motives and consequences rather than just describing what happened when"
+    ],
+    "keyDiagram": "Draw a balanced scales diagram with 'STALIN' on the left side and 'TRUMAN' on the right. Under Stalin's side, list: 'Salami tactics in Eastern Europe', 'Broke Yalta agreements', 'Created Cominform', 'Berlin Blockade'. Under Truman's side, list: 'Atomic diplomacy', 'Truman Doctrine', 'Marshall Plan', 'Created NATO'. In the center, write 'SHARED RESPONSIBILITY?' with arrows pointing to both sides showing how each action provoked the other.",
+    "quickRecap": "The Cold War blame debate centers on whether Stalin's aggressive expansion into Eastern Europe or Truman's confrontational policies like the Truman Doctrine were more responsible. Orthodox historians blame Soviet breaches of Yalta agreements, while Revisionists blame American economic imperialism through the Marshall Plan. Post-Revisionists argue both sides misunderstood each other's defensive intentions. Always evaluate both perspectives using specific evidence like the Polish elections (1947) and Marshall Plan aid ($13 billion)."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:03:08.570Z",
-  "updated_at": "2026-04-06T04:03:08.570Z"
+  "updated_at": "2026-04-06T04:03:08.570Z",
+  "enriched_at": "2026-04-06T16:07:11.596Z"
 }

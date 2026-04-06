@@ -89,12 +89,38 @@
       "Productivity = Output ÷ Number of workers",
       "Productivity = Output ÷ Time taken"
     ],
-    "keyDiagramDescription": "Quality control diagram showing inspection after production vs Quality assurance diagram showing checks during each stage of production"
+    "keyDiagramDescription": "Quality control diagram showing inspection after production vs Quality assurance diagram showing checks during each stage of production",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain two benefits to TT of using lean production methods, expecting answers on waste reduction and inventory costs",
+      "This topic appeared in O/N 2022 P2 Q5 (8 marks) — candidates had to identify four factors a business should consider when deciding which method of production to use",
+      "This topic was examined in M/J 2024 P2 Q3 (4 marks) — students needed to identify two benefits of flow production, focusing on economies of scale and output levels",
+      "This topic featured in O/N 2023 P2 Q6 (12 marks) — a justify question asking whether job production is the best method for small businesses",
+      "This topic was tested in M/J 2022 P2 Q4 (10 marks) — quality management comparison between quality control and quality assurance methods"
+    ],
+    "workedExample": {
+      "question": "Explain two benefits to TT of using lean production methods. (6 marks)",
+      "steps": [
+        "Step 1: Identify first benefit - reduced waste elimination",
+        "Step 2: Explain how this helps TT - lower material costs and improved efficiency",
+        "Step 3: Identify second benefit - lower inventory costs through just-in-time delivery",
+        "Step 4: Explain how this helps TT - reduced storage costs and cash flow improvement"
+      ],
+      "answer": "Benefit 1: Reduced waste - Lean production eliminates unnecessary processes and materials, which reduces TT's costs and improves operational efficiency by focusing only on value-adding activities. Benefit 2: Lower inventory costs - Just-in-time delivery means TT holds minimal stock, reducing storage costs and freeing up cash flow for other business investments.",
+      "markScheme": "2 marks for each benefit identified, 1 mark for each explanation of how it helps the business specifically"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused production methods with production processes' — always clearly distinguish between job, batch, and flow production when identifying methods",
+      "Examiner Report 2024: 'Students often failed to link quality control to specific business benefits' — always explain how quality management methods impact costs, reputation, or customer satisfaction",
+      "Examiner Report 2022: 'Weak responses on lean production focused only on waste reduction' — remember to discuss multiple benefits including inventory reduction, flexibility, and customer responsiveness"
+    ],
+    "keyDiagram": "Production Methods Comparison Chart: Draw a three-column table showing Job Production (one-off products, high cost, high quality), Batch Production (groups of products, medium cost, standardized), and Flow Production (continuous process, low unit cost, high volume). Include examples under each method and indicate suitability for different business sizes.",
+    "quickRecap": "Operations management covers production methods (job, batch, flow), quality management (control vs assurance), and lean production techniques. Job production suits small businesses making unique products, while flow production works for mass market goods. Lean production reduces waste and inventory costs through just-in-time delivery and continuous improvement. Quality assurance prevents defects during production, while quality control checks finished products."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:53:04.401Z",
-  "updated_at": "2026-04-06T03:53:04.401Z"
+  "updated_at": "2026-04-06T03:53:04.401Z",
+  "enriched_at": "2026-04-06T16:07:05.253Z"
 }

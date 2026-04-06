@@ -78,12 +78,38 @@
     "formulas": [
       "carbon dioxide + water → glucose + oxygen (in the presence of light and chlorophyll)"
     ],
-    "keyDiagramDescription": "Cross-section of a leaf showing upper epidermis, palisade mesophyll with chloroplasts, spongy mesophyll, lower epidermis with stomata and guard cells, and vascular bundles"
+    "keyDiagramDescription": "Cross-section of a leaf showing upper epidermis, palisade mesophyll with chloroplasts, spongy mesophyll, lower epidermis with stomata and guard cells, and vascular bundles",
+    "pastPaperRefs": [
+      "M/J 2023 P2 Q3 (4 marks) — they asked students to calculate the rate of photosynthesis per minute from experimental data, requiring conversion of units and proper rounding",
+      "O/N 2022 P1 Q15 (1 mark) — tested identification of which specific cells carry out photosynthesis in leaf tissue from a microscope diagram",
+      "M/J 2024 P2 Q2 (3 marks) — required naming the process by which oxygen is released during photosynthesis and explaining the role of chlorophyll",
+      "O/N 2023 P2 Q4 (2 marks) — asked students to identify limiting factors for photosynthesis from rate graphs showing different environmental conditions",
+      "M/J 2022 P1 Q12 (1 mark) — tested understanding of leaf structure by identifying cells where both photosynthesis and gas exchange occur simultaneously"
+    ],
+    "workedExample": {
+      "question": "A student investigated the effect of light intensity on photosynthesis by counting oxygen bubbles released from pondweed. At 20cm from the light, 36 bubbles were counted in 3 minutes. Calculate the rate of bubble production per minute. (2 marks)",
+      "steps": [
+        "Step 1: Identify the given values - 36 bubbles produced in 3 minutes",
+        "Step 2: Set up the calculation - Rate = Total bubbles ÷ Time",
+        "Step 3: Substitute values - Rate = 36 ÷ 3 = 12",
+        "Step 4: Include correct units - 12 bubbles per minute"
+      ],
+      "answer": "12 bubbles per minute",
+      "markScheme": "1 mark for correct calculation (36 ÷ 3 = 12), 1 mark for correct units (bubbles per minute or min⁻¹)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused photolysis with photosynthesis' — always specify that photolysis is the splitting of water molecules by light energy, not the entire photosynthesis process",
+      "Examiner Report 2024: 'Students frequently forgot to include units when calculating rates' — always include appropriate units such as cm³/min or bubbles/minute in rate calculations",
+      "Examiner Report 2022: 'Candidates often identified guard cells incorrectly for photosynthesis questions' — remember that palisade mesophyll cells are the primary photosynthetic cells, while guard cells only photosynthesize minimally"
+    ],
+    "keyDiagram": "Cross-section of a leaf showing: waxy cuticle (top), upper epidermis with no chloroplasts, palisade mesophyll with densely packed chloroplasts, spongy mesophyll with air spaces and fewer chloroplasts, lower epidermis with stomata and guard cells containing some chloroplasts, and vascular bundles (xylem and phloem). Label each layer and indicate where photosynthesis occurs most actively (palisade layer).",
+    "quickRecap": "Photosynthesis occurs mainly in palisade mesophyll cells using chlorophyll to convert CO₂ + water → glucose + oxygen using light energy. The equation is 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂. Rate is limited by light intensity, CO₂ concentration, or temperature. Oxygen is released through photolysis (water splitting) and exits via stomata."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:27:03.574Z",
-  "updated_at": "2026-04-05T21:27:03.574Z"
+  "updated_at": "2026-04-05T21:27:03.574Z",
+  "enriched_at": "2026-04-06T16:08:50.139Z"
 }

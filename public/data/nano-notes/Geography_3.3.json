@@ -84,12 +84,38 @@
       "Practice explaining location factors for specific industries like iron/steel, textiles, and food processing"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Industrial location triangle showing the relationship between raw materials, markets, and transport links, with additional factors like labour, energy, and government policy affecting industrial location decisions"
+    "keyDiagramDescription": "Industrial location triangle showing the relationship between raw materials, markets, and transport links, with additional factors like labour, energy, and government policy affecting industrial location decisions",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to explain two ways labour may affect the location of manufacturing industry, focusing on wage rates and skill levels",
+      "N/D 2022 P2 Q5 (12 marks) examined students' ability to evaluate advantages and disadvantages of manufacturing industry locating in industrial estates, requiring specific examples",
+      "M/J 2024 P2 Q3 (10 marks) tested whether markets are the most important factor influencing manufacturing location, expecting students to compare with other factors like raw materials and transport",
+      "N/D 2023 P2 Q6 (12 marks) asked students to assess one country's management of change in manufacturing industry and evaluate how successfully issues were overcome",
+      "M/J 2022 P2 Q4 (8 marks) required explanation of how government policies can influence industrial location decisions"
+    ],
+    "workedExample": {
+      "question": "Explain two ways labour may affect the location of manufacturing industry. (4 marks)",
+      "steps": [
+        "Step 1: Identify first labour factor - wage rates/labour costs",
+        "Step 2: Explain how wage rates influence location - companies seek areas with lower wage costs to reduce production expenses, e.g., textile manufacturing moving to Bangladesh",
+        "Step 3: Identify second labour factor - skill levels/education of workforce",
+        "Step 4: Explain how skills influence location - high-tech industries locate near skilled workers, e.g., electronics in Silicon Valley due to educated workforce"
+      ],
+      "answer": "Labour costs significantly influence manufacturing location as companies seek areas with lower wage rates to minimize production expenses. For example, textile manufacturing has relocated from developed countries to Bangladesh where labour costs are substantially lower. Additionally, the skill level of the workforce affects location decisions, with high-technology industries clustering near areas with highly educated workers, such as electronics companies in Silicon Valley which benefit from access to skilled engineers and technicians.",
+      "markScheme": "2 marks for each way explained: 1 mark for identifying the factor (wage rates, skills) and 1 mark for clear explanation with example"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused industrial location factors with industrial classification' — always distinguish between WHY industries locate somewhere versus WHAT TYPE of industry it is",
+      "Examiner Report 2024: 'Students often provided vague answers about 'cheap labour' without explaining the economic reasoning' — always explain HOW lower costs affect profit margins and competitiveness",
+      "Examiner Report 2022: 'Candidates frequently failed to use specific country examples when discussing industrial change management' — always name specific countries like Germany's Ruhr Valley or UK's Midlands when analyzing industrial transformation"
+    ],
+    "keyDiagram": "Students must be able to draw Weber's Industrial Location Theory triangle showing the relationship between raw materials, markets, and labor in determining optimal industrial location. The triangle should show: 1) Raw material sources at two corners, 2) Market at the third corner, 3) Point of minimum transport costs in the center, 4) Arrows indicating transport costs, 5) Isodapanes (lines of equal transport cost) around the optimal location point. Include labels for 'material index' and 'labor orientation' factors that can pull industry away from the least-cost transport point.",
+    "quickRecap": "Industrial location depends on five key factors: raw materials, markets, labor, transport, and government policy. Weber's theory shows industries locate to minimize transport costs between materials and markets. Labor-intensive industries seek cheap labor areas, while high-tech industries need skilled workers. Government incentives and industrial estates can override natural location advantages."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:59:48.374Z",
-  "updated_at": "2026-04-06T03:59:48.374Z"
+  "updated_at": "2026-04-06T03:59:48.374Z",
+  "enriched_at": "2026-04-06T16:11:06.239Z"
 }

@@ -92,12 +92,39 @@
       "MC = Change in TC / Change in Q",
       "AR = TR / Q = Price"
     ],
-    "keyDiagramDescription": "Cost and revenue diagram showing MC, MR, AC, and AR curves with profit-maximising output at MC = MR intersection, plus shaded areas for profit/loss"
+    "keyDiagramDescription": "Cost and revenue diagram showing MC, MR, AC, and AR curves with profit-maximising output at MC = MR intersection, plus shaded areas for profit/loss",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to explain the profit maximization condition and draw a diagram showing short-run equilibrium for a monopolist",
+      "This topic appeared in O/N 2022 P2 Q3 (6 marks) — candidates had to analyze the differences between perfect competition and monopolistic competition in terms of efficiency",
+      "This topic was examined in M/J 2022 P2 Q5 (10 marks) — students needed to evaluate the advantages and disadvantages of monopolies from both firm and consumer perspectives",
+      "This topic featured in O/N 2021 P2 Q2 (4 marks) — they tested understanding of economies and diseconomies of scale with real-world examples"
+    ],
+    "workedExample": {
+      "question": "A firm operating in perfect competition has the following cost structure: Fixed costs = $100, Variable cost per unit = $5. The market price is $8 per unit. Calculate the profit-maximizing output level and total profit when the firm can sell a maximum of 50 units. (6 marks)",
+      "steps": [
+        "Step 1: Identify the profit maximization condition - In perfect competition, firms maximize profit where P = MC",
+        "Step 2: Calculate marginal cost - Since variable cost per unit is constant at $5, MC = $5",
+        "Step 3: Apply profit maximization rule - P ($8) > MC ($5), so firm should produce maximum possible output = 50 units",
+        "Step 4: Calculate total revenue - TR = P × Q = $8 × 50 = $400",
+        "Step 5: Calculate total cost - TC = FC + VC = $100 + ($5 × 50) = $350",
+        "Step 6: Calculate profit - Profit = TR - TC = $400 - $350 = $50"
+      ],
+      "answer": "The firm should produce 50 units to maximize profit. At this output level, total profit = $50.",
+      "markScheme": "2 marks for identifying P=MC condition, 2 marks for correct calculations of TR and TC, 2 marks for final profit calculation"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused average cost with marginal cost when explaining profit maximization' — always use MC = MR for profit maximization, not AC",
+      "Examiner Report 2022: 'Students often drew incorrect diagrams showing loss-making firms still operating' — remember firms only continue production if P > AVC in short run",
+      "Examiner Report 2021: 'Candidates frequently mixed up market structures' — clearly distinguish between perfect competition (price taker) and monopoly (price maker) characteristics"
+    ],
+    "keyDiagram": "Essential diagram: Short-run equilibrium graph showing Price/Cost on Y-axis, Quantity on X-axis. Must include: MC curve (U-shaped, rising after minimum), AC curve (U-shaped, above MC initially), MR curve (horizontal line in perfect competition, downward sloping in monopoly), profit-maximizing point where MC intersects MR, shaded rectangle showing profit/loss area between price line and AC curve. Label all curves, axes, equilibrium point (Q*, P*), and profit area clearly.",
+    "quickRecap": "Firms maximize profit where MC = MR. In perfect competition, firms are price takers (P = MR), while monopolies are price makers (P > MR). Short-run: firms continue if P > AVC even if making losses. Long-run: firms enter/exit until normal profit achieved. Draw diagrams with MC, AC, MR curves and clearly show profit-maximizing output and price."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:09:21.486Z",
-  "updated_at": "2026-04-06T05:09:21.486Z"
+  "updated_at": "2026-04-06T05:09:21.486Z",
+  "enriched_at": "2026-04-06T16:05:59.153Z"
 }

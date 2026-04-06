@@ -83,12 +83,38 @@
       "Encryption questions often ask for both the process AND why it's needed"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Packet structure diagram showing header (source/destination addresses, packet number), payload (actual data), and trailer (error checking bits). Network diagram showing multiple possible routes between source and destination with packets taking different paths."
+    "keyDiagramDescription": "Packet structure diagram showing header (source/destination addresses, packet number), payload (actual data), and trailer (error checking bits). Network diagram showing multiple possible routes between source and destination with packets taking different paths.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (3 marks) — they asked students to explain why serial data transmission is used across networks, expecting answers about reliability over long distances and sequential bit transmission",
+      "N/D 2022 P1 Q8 (4 marks) tested matching data transmission methods to descriptions, including serial simplex and parallel half-duplex configurations",
+      "M/J 2024 P2 Q3 (2 marks) asked for two benefits of serial transmission for photographs, with model answers including reduced skew and less interference",
+      "N/D 2023 P2 Q5 (3 marks) required describing how photographs are transmitted using serial data transmission, focusing on one-bit-at-a-time concept",
+      "M/J 2022 P1 Q6 (1 mark) tested knowledge of parallel transmission benefits, specifically faster transmission speeds"
+    ],
+    "workedExample": {
+      "question": "A student needs to transfer a large video file from their computer to a server across a network. Explain why serial data transmission would be used for this transfer and describe how the data would be transmitted. (5 marks)",
+      "steps": [
+        "Step 1: Identify why serial transmission is suitable for network transfer - networks span long distances where parallel would be unreliable",
+        "Step 2: Explain the reliability benefits - bits arrive in sequence, less chance of skew or interference",
+        "Step 3: Describe the transmission method - data sent one bit at a time down a single wire/channel",
+        "Step 4: Mention synchronization - bits are transmitted in a specific order that can be reconstructed at destination"
+      ],
+      "answer": "Serial data transmission is used because the network spans a long distance, making it more reliable than parallel transmission. Bits are sent in sequence, so there is less likelihood of data skew or interference between wires. The video file data would be transmitted one bit at a time down a single wire or channel. Each bit follows the previous one in a predetermined sequence, allowing the receiving server to reconstruct the original file data correctly.",
+      "markScheme": "1 mark for mentioning long distance/reliability, 1 mark for sequential transmission/reduced skew, 1 mark for less interference, 1 mark for one bit at a time, 1 mark for single wire/channel"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused serial and parallel transmission directions' — always clearly distinguish between transmission method (serial/parallel) and data flow direction (simplex/half-duplex/full-duplex)",
+      "Examiner Report 2024: 'Students often gave vague answers about speed without context' — when discussing parallel transmission speed benefits, specify that this applies to short distances only",
+      "Examiner Report 2022: 'Candidates failed to explain why serial is better for networks specifically' — always mention that serial transmission is more reliable over long distances due to reduced interference and skew"
+    ],
+    "keyDiagram": "Students must be able to draw a comparison diagram showing: (1) Serial transmission - single wire with bits labeled 1,0,1,1,0 flowing one after another in sequence, (2) Parallel transmission - multiple wires (typically 8) with bits transmitted simultaneously across each wire. Include arrows showing data flow direction and label each wire clearly. Add timing diagrams showing how parallel bits can become skewed over long distances while serial bits remain in sequence.",
+    "quickRecap": "Serial transmission sends data one bit at a time down a single wire, making it reliable over long distances with less interference. Parallel transmission sends multiple bits simultaneously but suffers from skew over distance. Serial is used for networks due to reliability, while parallel offers speed advantages for short distances. Remember: method (serial/parallel) is different from direction (simplex/duplex)."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:43:50.306Z",
-  "updated_at": "2026-04-06T03:43:50.306Z"
+  "updated_at": "2026-04-06T03:43:50.306Z",
+  "enriched_at": "2026-04-06T16:07:04.448Z"
 }

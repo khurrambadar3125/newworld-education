@@ -88,12 +88,37 @@
       "I = I₀e^(-μx) (X-ray attenuation)",
       "x₁/₂ = ln(2)/μ (half-value thickness)"
     ],
-    "keyDiagramDescription": "X-ray attenuation graph showing exponential decay of intensity with thickness, and ultrasound reflection diagram showing incident, reflected and transmitted waves at tissue boundaries with different acoustic impedances"
+    "keyDiagramDescription": "X-ray attenuation graph showing exponential decay of intensity with thickness, and ultrasound reflection diagram showing incident, reflected and transmitted waves at tissue boundaries with different acoustic impedances",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how ultrasound is used in medical imaging and calculate the depth of a reflected sound from given time and speed data",
+      "N 2022 P2 Q5 (5 marks) tested X-ray production, asking candidates to describe how X-rays are generated in an X-ray tube and explain why a lead apron protects medical staff",
+      "M/J 2022 P1 Q12 (1 mark) was a multiple choice on the frequency range of ultrasound used in medical diagnosis",
+      "N 2023 P2 Q3 (4 marks) required students to compare the advantages and disadvantages of using X-rays versus ultrasound for medical imaging",
+      "M/J 2021 P2 Q6 (7 marks) tested understanding of how fiber optics work in endoscopes and asked for calculations involving critical angle"
+    ],
+    "workedExample": {
+      "question": "An ultrasound pulse is transmitted into a patient's body and the reflected pulse is detected 0.26 ms later. The speed of ultrasound in body tissue is 1500 m/s. Calculate the depth of the reflecting surface. (3 marks)",
+      "steps": [
+        "Step 1: Identify that the pulse travels to the reflecting surface AND back, so total distance = 2 × depth",
+        "Step 2: Use equation: distance = speed × time = 1500 m/s × 0.26 × 10⁻³ s = 0.39 m",
+        "Step 3: Calculate depth = total distance ÷ 2 = 0.39 m ÷ 2 = 0.195 m = 19.5 cm"
+      ],
+      "answer": "The ultrasound travels to the reflecting surface and back, so total distance = speed × time = 1500 × 0.26 × 10⁻³ = 0.39 m. Therefore depth = 0.39 ÷ 2 = 0.195 m or 19.5 cm",
+      "markScheme": "1 mark: Recognition that pulse travels twice the depth; 1 mark: Correct substitution into distance equation; 1 mark: Final answer with correct unit"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to recognize that ultrasound pulses travel to the target and back' — always remember to divide the calculated distance by 2 when finding depth using pulse-echo timing",
+      "Examiner Report 2022: 'Students often confused X-ray absorption with reflection' — clearly state that X-rays are absorbed differently by different tissues, not reflected like ultrasound",
+      "Examiner Report 2023: 'Candidates frequently gave incomplete explanations of total internal reflection in fiber optics' — always mention that light travels down the core by total internal reflection at the core-cladding boundary when the angle exceeds the critical angle"
+    ],
+    "keyDiagram": "Essential X-ray tube diagram showing: heated cathode filament (source of electrons), high voltage between cathode and anode (typically 50-100 kV), tungsten target anode, X-rays emerging at right angles to electron beam, lead shielding around tube with small exit window. Must label electron path, heat production at anode, and indicate that only 1% of energy becomes X-rays while 99% becomes heat.",
+    "quickRecap": "Medical physics covers three key imaging methods: X-rays (absorbed differently by tissues, good for bones), ultrasound (reflected at tissue boundaries, safe for pregnancy), and fiber optic endoscopes (use total internal reflection). Remember ultrasound calculations need dividing by 2 for depth. X-rays are produced when high-speed electrons hit a metal target, creating mainly heat with some X-ray photons."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:47:12.304Z",
-  "updated_at": "2026-04-06T04:47:12.304Z"
+  "updated_at": "2026-04-06T04:47:12.304Z",
+  "enriched_at": "2026-04-06T16:07:25.369Z"
 }

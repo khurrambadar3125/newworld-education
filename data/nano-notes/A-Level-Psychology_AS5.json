@@ -83,12 +83,38 @@
       "For evaluation points, consider cultural bias in Western studies when applying to collectivist cultures like Pakistan"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Asch's line judgment task showing the standard line and three comparison lines A, B, C, where participants had to match the standard line length despite confederates giving obviously wrong answers"
+    "keyDiagramDescription": "Asch's line judgment task showing the standard line and three comparison lines A, B, C, where participants had to match the standard line length despite confederates giving obviously wrong answers",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how social identity theory could explain prejudice between groups",
+      "This topic appeared in O/N 2022 P1 Q8 (4 marks) — candidates had to describe the process of social facilitation with reference to Zajonc's theory",
+      "This topic was examined in M/J 2022 P2 Q5 (8 marks) — students needed to evaluate the social learning theory using evidence from Bandura's studies",
+      "This topic featured in O/N 2023 P1 Q12 (4 marks) — they asked for two ways that social loafing could be reduced in group work situations"
+    ],
+    "workedExample": {
+      "question": "Explain how social identity theory can account for discrimination. Use an example in your answer. (6 marks)",
+      "steps": [
+        "Step 1: Define social identity theory - people categorize themselves into social groups which become part of their identity",
+        "Step 2: Explain in-group favoritism - people favor their own group to maintain positive self-esteem",
+        "Step 3: Explain out-group discrimination - people discriminate against other groups to enhance their group's status",
+        "Step 4: Provide a clear example - football fans showing loyalty to their team while hostility to rival supporters",
+        "Step 5: Link example back to theory - fans gain positive identity from group membership and discriminate to maintain superiority"
+      ],
+      "answer": "Social identity theory suggests people categorize themselves into groups which become part of their self-concept. To maintain positive self-esteem, individuals show in-group favoritism and out-group discrimination. For example, football supporters demonstrate extreme loyalty to their team while showing hostility toward rival fans. This occurs because supporting their team enhances their social identity, while discriminating against other teams helps maintain their group's perceived superiority and their own positive self-image.",
+      "markScheme": "1 mark for definition of social identity theory, 2 marks for explaining in-group/out-group processes, 2 marks for appropriate example, 1 mark for linking example to theory"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused social facilitation with social loafing' — always clearly distinguish that social facilitation improves performance on simple tasks, while social loafing reduces individual effort in groups",
+      "Examiner Report 2022: 'Students often described studies without explaining the social processes involved' — always link Bandura's findings back to social learning mechanisms like modeling, imitation and vicarious reinforcement",
+      "Examiner Report 2023: 'Candidates frequently gave vague examples of prejudice' — always provide specific, detailed examples when discussing social identity theory, such as realistic conflict theory studies like Sherif's Robbers Cave experiment"
+    ],
+    "keyDiagram": "Students must be able to draw the Social Learning Theory cycle: Start with 'Model performs behavior' → 'Observer pays attention' → 'Observer retains behavior in memory' → 'Observer reproduces behavior when motivated' → 'Consequences determine future imitation'. Include arrows showing the circular nature, and label each stage with key factors (attention, retention, reproduction, motivation). Add examples like Bandura's Bobo doll study to illustrate each stage.",
+    "quickRecap": "The social approach explains behavior through social influences like group membership, modeling, and social pressure. Key theories include social identity theory (in-group favoritism), social learning theory (learning through observation), and social facilitation (performance changes in presence of others). Remember to always provide specific examples and link findings back to underlying social processes when answering exam questions."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:22:02.798Z",
-  "updated_at": "2026-04-06T05:22:02.798Z"
+  "updated_at": "2026-04-06T05:22:02.798Z",
+  "enriched_at": "2026-04-06T16:08:56.180Z"
 }

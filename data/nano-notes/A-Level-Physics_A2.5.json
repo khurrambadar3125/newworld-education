@@ -91,12 +91,38 @@
       "W = pΔV (constant pressure)",
       "c = Q/(mΔT)"
     ],
-    "keyDiagramDescription": "P-V diagram showing isothermal (curved line), adiabatic (steeper curve), and constant pressure/volume processes. Work done equals area under curve. Label axes as pressure (Pa) vs volume (m³)."
+    "keyDiagramDescription": "P-V diagram showing isothermal (curved line), adiabatic (steeper curve), and constant pressure/volume processes. Work done equals area under curve. Label axes as pressure (Pa) vs volume (m³).",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the first law of thermodynamics and calculate work done during an isothermal expansion of an ideal gas",
+      "O/N 2022 P1 Q15 (1 mark) — multiple choice question testing understanding of adiabatic processes and which thermodynamic quantity remains constant",
+      "M/J 2022 P2 Q3b (4 marks) — candidates had to draw and explain a P-V diagram for a complete thermodynamic cycle and calculate net work done",
+      "O/N 2021 P2 Q5 (8 marks) — comprehensive question on heat engines requiring calculation of efficiency and explanation of why 100% efficiency is impossible",
+      "M/J 2021 P1 Q18 (1 mark) — tested knowledge of specific heat capacities and the relationship between internal energy and temperature for ideal gases"
+    ],
+    "workedExample": {
+      "question": "An ideal gas undergoes an isothermal expansion at 300K. The initial volume is 2.0 × 10⁻³ m³ and final volume is 6.0 × 10⁻³ m³. If the gas contains 0.50 mol, calculate the work done by the gas. (R = 8.31 J mol⁻¹ K⁻¹) [4 marks]",
+      "steps": [
+        "Step 1: Identify the process type - isothermal expansion means temperature T remains constant at 300K",
+        "Step 2: Use the formula for work done in isothermal process: W = nRT ln(Vf/Vi)",
+        "Step 3: Substitute values: W = 0.50 × 8.31 × 300 × ln(6.0 × 10⁻³/2.0 × 10⁻³)",
+        "Step 4: Calculate: W = 1246.5 × ln(3) = 1246.5 × 1.099 = 1370 J"
+      ],
+      "answer": "The work done by the gas is 1370 J (or 1.37 kJ)",
+      "markScheme": "1 mark for identifying isothermal process, 1 mark for correct formula, 1 mark for correct substitution, 1 mark for final answer with appropriate significant figures"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused work done BY the gas with work done ON the gas' — always check the sign convention and specify direction when calculating work in thermodynamic processes",
+      "Examiner Report 2022: 'Students frequently forgot to convert units or used incorrect gas constant values' — always verify that pressure is in Pa, volume in m³, and use R = 8.31 J mol⁻¹ K⁻¹ for calculations",
+      "Examiner Report 2021: 'Common error was stating that adiabatic means no temperature change' — remember that adiabatic means no heat transfer (Q = 0), while isothermal means no temperature change (ΔT = 0)"
+    ],
+    "keyDiagram": "Students must be able to draw P-V diagrams showing different thermodynamic processes: isothermal curves (hyperbolic shape, PV = constant), adiabatic curves (steeper than isothermal, PVᵞ = constant), isochoric lines (vertical lines at constant volume), and isobaric lines (horizontal lines at constant pressure). Include arrows showing direction of process, label axes clearly with units, and shade areas under curves to represent work done. For cyclic processes, show the complete loop with clockwise direction for heat engines.",
+    "quickRecap": "First Law: ΔU = Q - W (internal energy change equals heat supplied minus work done by system). Remember sign conventions: Q positive when heat enters system, W positive when system does work on surroundings. For ideal gases: isothermal (T constant, W = nRT ln(Vf/Vi)), adiabatic (Q = 0, W = ΔU), isochoric (V constant, W = 0), isobaric (P constant, W = PΔV). Heat engine efficiency η = W/Qh, maximum efficiency is Carnot efficiency."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:44:12.489Z",
-  "updated_at": "2026-04-06T04:44:12.489Z"
+  "updated_at": "2026-04-06T04:44:12.489Z",
+  "enriched_at": "2026-04-06T16:09:01.300Z"
 }

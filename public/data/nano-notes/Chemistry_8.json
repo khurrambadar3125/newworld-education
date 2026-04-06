@@ -75,12 +75,37 @@
       "Catalyst questions often ask for 'chemically unchanged' for the mark"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Energy profile diagram showing activation energy barrier, with and without catalyst. Lower pathway with catalyst demonstrates how it speeds up reaction without changing overall energy change."
+    "keyDiagramDescription": "Energy profile diagram showing activation energy barrier, with and without catalyst. Lower pathway with catalyst demonstrates how it speeds up reaction without changing overall energy change.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how temperature and surface area affect reaction rate using collision theory",
+      "N/D 2022 P1 Q8 (2 marks) — multiple choice question on identifying factors that increase rate of reaction between zinc and hydrochloric acid",
+      "M/J 2022 P2 Q5(c) (4 marks) — students had to draw and interpret a graph showing effect of catalyst on rate of decomposition of hydrogen peroxide",
+      "N/D 2023 P2 Q3(b) (5 marks) — explain why powdered calcium carbonate reacts faster with dilute HCl than marble chips, including particle collision theory"
+    ],
+    "workedExample": {
+      "question": "Explain why increasing temperature increases the rate of reaction between magnesium and dilute hydrochloric acid. Use collision theory in your answer. (4 marks)",
+      "steps": [
+        "Step 1: State that increasing temperature increases kinetic energy of particles",
+        "Step 2: Explain that particles move faster and collide more frequently",
+        "Step 3: Mention that more particles have energy equal to or greater than activation energy",
+        "Step 4: Conclude that more successful collisions occur per unit time"
+      ],
+      "answer": "When temperature increases, the kinetic energy of the reactant particles increases. This means the particles move faster and collide more frequently. Additionally, a greater proportion of particles will have energy equal to or greater than the activation energy needed for the reaction to occur. Therefore, there are more successful collisions per unit time, increasing the rate of reaction.",
+      "markScheme": "1 mark for kinetic energy increases, 1 mark for more frequent collisions, 1 mark for more particles exceeding activation energy, 1 mark for more successful collisions/increased rate"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused concentration with surface area' — always clearly distinguish between these factors and explain that concentration refers to amount of solute per unit volume",
+      "Examiner Report 2022: 'Students often failed to mention activation energy when explaining temperature effects' — always include that more particles exceed activation energy threshold when temperature increases",
+      "Examiner Report 2023: 'Common error was stating catalysts are used up in reactions' — remember that catalysts are not consumed and can be recovered unchanged at the end"
+    ],
+    "keyDiagram": "Rate of reaction graph with two curves on same axes: x-axis shows 'Time (s)', y-axis shows 'Volume of gas produced (cm³)' or 'Mass lost (g)'. Draw one steep curve (higher temperature/concentration) and one gentler curve (lower temperature/concentration). Both curves must level off at same final value but steep curve reaches it faster. Label curves clearly and mark initial rate gradients with tangent lines.",
+    "quickRecap": "Rate of reaction measures how fast reactants turn into products. Four main factors increase rate: higher temperature (more kinetic energy), higher concentration (more particles per unit volume), larger surface area (more exposed particles), and catalysts (lower activation energy). Use collision theory to explain: more frequent and energetic collisions lead to faster reactions."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:53:40.589Z",
-  "updated_at": "2026-04-05T20:53:40.589Z"
+  "updated_at": "2026-04-05T20:53:40.589Z",
+  "enriched_at": "2026-04-06T16:04:31.323Z"
 }

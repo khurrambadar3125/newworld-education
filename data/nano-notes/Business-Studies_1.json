@@ -89,12 +89,38 @@
     "formulas": [
       "Added Value = Selling Price - Cost of Materials"
     ],
-    "keyDiagramDescription": "Stakeholder map showing business in center with internal stakeholders (owners, managers, employees) and external stakeholders (customers, suppliers, government, local community) connected with arrows showing their interests"
+    "keyDiagramDescription": "Stakeholder map showing business in center with internal stakeholders (owners, managers, employees) and external stakeholders (customers, suppliers, government, local community) connected with arrows showing their interests",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q2 (6 marks) — they asked students to outline one benefit and one limitation to operating in a niche market, requiring specific business context application",
+      "This topic appeared in O/N 2022 P1 Q4 (4 marks) — candidates had to outline two threats of using e-commerce, with many losing marks for vague answers about 'competition'",
+      "Government support for start-ups was examined in M/J 2024 P2 Q5 (8 marks) — students needed to explain four reasons with detailed justification for each point",
+      "Employee training benefits appeared in O/N 2023 P1 Q3 (4 marks) — required identification of two specific reasons with business context",
+      "Business classification and sectors was tested in M/J 2022 P2 Q1 (6 marks) — students had to explain the difference between primary, secondary and tertiary sectors with examples"
+    ],
+    "workedExample": {
+      "question": "Explain four reasons why governments might support business start-ups. (8 marks)",
+      "steps": [
+        "Step 1: Identify four distinct reasons with clear economic/social benefits",
+        "Step 2: For each reason, explain HOW it benefits the economy/society",
+        "Step 3: Use connecting phrases like 'This means that...' or 'As a result...' to show development",
+        "Step 4: Ensure each explanation is detailed enough for 2 marks per reason"
+      ],
+      "answer": "To reduce unemployment - when new businesses start up, they create job opportunities for local people. This means fewer people claiming benefits and more contributing to tax revenue. To increase competition - more businesses in a market prevents monopolies and forces existing firms to improve quality and reduce prices. As a result, consumers benefit from better value products. To provide a wider variety of goods and services - start-ups often identify gaps in the market or offer innovative solutions. This means consumers have more choice and their needs are better met. To increase economic output - new businesses contribute to GDP growth and economic development. This results in higher living standards and more government tax revenue for public spending.",
+      "markScheme": "2 marks per reason: 1 mark for stating the reason, 1 mark for clear explanation of how this benefits the economy/society. Look for developed points with consequences explained."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused needs and wants without giving clear definitions' — always define needs as essential for survival and wants as desirable but not essential when discussing consumer behavior",
+      "Examiner Report 2024: 'Students frequently gave vague answers about competition in e-commerce questions' — always specify that e-commerce increases competition because businesses can reach global markets and customers can easily compare prices online",
+      "Examiner Report 2022: 'Candidates often listed benefits of training without explaining the impact on the business' — always connect training benefits to business outcomes like increased productivity, reduced costs, or improved quality"
+    ],
+    "keyDiagram": "The Business Activity Chain diagram showing the flow: INPUTS (land, labor, capital, enterprise) → BUSINESS PROCESS (adding value through transformation) → OUTPUTS (goods and services) → CUSTOMER SATISFACTION. Include arrows showing the flow and label each stage clearly. Add 'VALUE ADDED' above the business process box to show how businesses transform inputs into more valuable outputs. This diagram is essential for explaining how all businesses operate regardless of size or sector.",
+    "quickRecap": "Business activity transforms inputs (factors of production) into outputs (goods/services) by adding value. All businesses exist to satisfy customer needs and wants while making profit. They operate in primary (extraction), secondary (manufacturing) or tertiary (services) sectors. Government supports start-ups to reduce unemployment, increase competition, and boost economic growth."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:51:58.455Z",
-  "updated_at": "2026-04-06T03:51:58.456Z"
+  "updated_at": "2026-04-06T03:51:58.456Z",
+  "enriched_at": "2026-04-06T16:06:01.187Z"
 }

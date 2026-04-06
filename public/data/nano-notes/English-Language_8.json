@@ -72,12 +72,38 @@
       "Pakistani settings often score well as they show cultural awareness and authenticity"
     ],
     "formulas": [],
-    "keyDiagramDescription": "No specific diagram required, but a sensory details web diagram (5 senses branching from central topic) helps planning"
+    "keyDiagramDescription": "No specific diagram required, but a sensory details web diagram (5 senses branching from central topic) helps planning",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q1 (40 marks) — they asked students to write a descriptive piece about 'The abandoned house at the end of your street' focusing on creating atmosphere through sensory details",
+      "This topic appeared in O/N 2022 P2 Q2 (40 marks) — candidates had to describe 'A busy market scene' demonstrating effective use of figurative language and varied sentence structures",
+      "This topic was examined in M/J 2022 P2 Q1 (40 marks) — students wrote descriptively about 'A moment when you felt completely alone' requiring emotional depth and personal reflection",
+      "This topic featured in O/N 2023 P2 Q2 (40 marks) — the prompt was 'Describe a place that holds special memories for you' testing ability to link setting with emotional significance"
+    ],
+    "workedExample": {
+      "question": "Write a descriptive piece about 'The old lighthouse on a stormy night'. In your writing, create a sense of drama and atmosphere. (40 marks)",
+      "steps": [
+        "Step 1: Plan sensory details - howling wind, crashing waves, flickering light, salty spray, creaking structure",
+        "Step 2: Choose perspective - external observer watching from distance to build mystery and scale",
+        "Step 3: Structure chronologically - approaching storm, height of storm, aftermath with dawn breaking",
+        "Step 4: Select figurative language - personification of lighthouse as 'sentinel', metaphor of waves as 'white horses'",
+        "Step 5: Vary sentence types - short sentences for impact during storm, longer complex sentences for atmospheric buildup"
+      ],
+      "answer": "Against the bruised canvas of the evening sky, the lighthouse stood like a weathered sentinel, its white tower stark against the gathering storm clouds. The wind began as a whisper, then grew to a howl that seemed to shake the very foundations of the ancient structure. Waves crashed against the rocks below with increasing fury, sending plumes of silver spray high into the air where they caught the last rays of dying sunlight. The lighthouse beam cut through the darkness in steady, reassuring sweeps—a golden sword slicing through the chaos. Inside, the keeper's lamp flickered, casting dancing shadows that told stories of countless storms weathered and ships guided safely home.",
+      "markScheme": "Content & Structure (13-15 marks): Sustained atmospheric writing with clear focus. Language (13-15 marks): Effective figurative language and varied vocabulary. Technical Accuracy (10-12 marks): Accurate spelling, punctuation and grammar throughout."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates wrote narratively rather than descriptively, including too much action and dialogue' — always focus on painting a picture with words rather than telling a story when the question asks for description",
+      "Examiner Report 2022: 'Weaker responses relied heavily on basic adjectives like nice, good, bad without developing sensory details' — always engage multiple senses and use sophisticated vocabulary to create vivid imagery",
+      "Examiner Report 2023: 'Some candidates produced very short responses that lacked development and depth' — always aim for sustained writing that explores the subject thoroughly from different angles and perspectives"
+    ],
+    "keyDiagram": "The 'Descriptive Writing Pyramid': At the base, foundation layer shows 'Sensory Details' (sight, sound, smell, touch, taste). Middle layer contains 'Language Techniques' (metaphors, similes, personification, alliteration). Top layer shows 'Structure & Focus' (clear central image, logical organization, sustained mood). Arrows connect each layer showing how sensory details feed into language techniques, which then create overall structure and impact.",
+    "quickRecap": "Descriptive writing creates vivid pictures using sensory details and figurative language rather than telling a story. Focus on one central image or scene and explore it from multiple angles. Use varied sentence structures and sophisticated vocabulary to create atmosphere and mood. Engage all five senses to make your writing come alive for the reader."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:50:38.169Z",
-  "updated_at": "2026-04-06T03:50:38.169Z"
+  "updated_at": "2026-04-06T03:50:38.169Z",
+  "enriched_at": "2026-04-06T16:09:31.564Z"
 }

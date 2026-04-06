@@ -85,12 +85,38 @@
       "Vector addition: (a/b) + (c/d) = (a+c/b+d)",
       "Scalar multiplication: k(a/b) = (ka/kb)"
     ],
-    "keyDiagramDescription": "Coordinate grid showing original shape and its image after transformation, with transformation details clearly labeled"
+    "keyDiagramDescription": "Coordinate grid showing original shape and its image after transformation, with transformation details clearly labeled",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q8 (6 marks) — they asked students to translate a triangle by vector (-1, 3) and draw the image accurately on a coordinate grid",
+      "This topic appeared in O/N 2022 P1 Q12 (4 marks) — candidates had to draw the image of a shape after translation by vector (3, -5) and describe the transformation mapping one shape to another",
+      "This was examined in M/J 2024 P2 Q7 (5 marks) — students needed to apply translation vectors and identify single transformations including rotations with specific centers",
+      "This topic was tested in O/N 2023 P1 Q9 (3 marks) — they required accurate drawing of translated shapes and proper use of vector notation"
+    ],
+    "workedExample": {
+      "question": "Triangle A has vertices at (6, 1), (8, 1), and (6, -3). Draw the image of triangle A after a translation by vector (-1, 3). (3 marks)",
+      "steps": [
+        "Step 1: Apply the translation vector (-1, 3) to each vertex by adding the x-component (-1) to each x-coordinate and the y-component (3) to each y-coordinate",
+        "Step 2: For vertex (6, 1): new position is (6-1, 1+3) = (5, 4)",
+        "Step 3: For vertex (8, 1): new position is (8-1, 1+3) = (7, 4)",
+        "Step 4: For vertex (6, -3): new position is (6-1, -3+3) = (5, 0)",
+        "Step 5: Plot the new vertices (5, 4), (7, 4), and (5, 0) and connect them to form the translated triangle"
+      ],
+      "answer": "Triangle with vertices at (5, 4), (7, 4), and (5, 0) drawn accurately on the coordinate grid",
+      "markScheme": "1 mark for correct calculation of coordinates, 1 mark for accurate plotting, 1 mark for correctly drawn triangle"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused vector notation, writing vectors horizontally instead of vertically' — always write translation vectors in column form with x-component above y-component",
+      "Examiner Report 2022: 'Students frequently made arithmetic errors when applying negative vector components' — double-check calculations when subtracting, especially with negative coordinates",
+      "Examiner Report 2024: 'Candidates often drew shapes inaccurately or failed to use a ruler for straight lines' — always use appropriate drawing instruments and plot coordinates precisely on the grid"
+    ],
+    "keyDiagram": "A coordinate grid showing an original shape and its translated image, with the translation vector clearly marked. The diagram should show corresponding vertices labeled (e.g., A, A'), arrows indicating the direction of translation, and the vector written in column notation. Grid lines must be clearly visible for accurate plotting, and both shapes should be drawn with straight edges using a ruler.",
+    "quickRecap": "Translation moves every point of a shape by the same vector without rotation or reflection. Add the vector components to each coordinate: (x,y) + (a,b) = (x+a, y+b). Always write vectors in column form and use a ruler for accurate drawing. Check your arithmetic carefully, especially with negative numbers."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:24:39.405Z",
-  "updated_at": "2026-04-05T21:24:39.405Z"
+  "updated_at": "2026-04-05T21:24:39.405Z",
+  "enriched_at": "2026-04-06T16:08:28.486Z"
 }

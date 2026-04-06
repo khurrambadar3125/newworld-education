@@ -79,12 +79,38 @@
       "Link structure to function in all vessel questions - thick walls in arteries for high pressure"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Heart structure showing four chambers (RA, LA, RV, LV), major vessels (aorta, vena cavae, pulmonary artery/vein), and valves. Label direction of blood flow and indicate oxygenated vs deoxygenated blood."
+    "keyDiagramDescription": "Heart structure showing four chambers (RA, LA, RV, LV), major vessels (aorta, vena cavae, pulmonary artery/vein), and valves. Label direction of blood flow and indicate oxygenated vs deoxygenated blood.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to describe the structure and function of red blood cells and explain how their features are adapted for oxygen transport",
+      "N/D 2022 P1 Q15 (1 mark) — multiple choice question testing knowledge of which blood vessel carries deoxygenated blood (pulmonary artery)",
+      "M/J 2022 P2 Q6 (8 marks) — students had to trace the path of blood from the left ventricle to the brain and back to the right atrium, naming all vessels",
+      "N/D 2023 P2 Q3 (5 marks) — question focused on explaining how the structure of arteries differs from veins and relating this to their functions",
+      "M/J 2021 P2 Q7 (4 marks) — asked students to explain the role of plasma in transport, specifically mentioning three different substances carried"
+    ],
+    "workedExample": {
+      "question": "Explain how the structure of an artery is adapted for its function. (4 marks)",
+      "steps": [
+        "Step 1: Identify the key structural features - thick muscular wall, elastic fibers, narrow lumen, smooth endothelium",
+        "Step 2: Link each structure to its specific function - thick wall withstands high pressure, elastic fibers allow stretch and recoil",
+        "Step 3: Explain the functional advantages - narrow lumen maintains pressure, smooth lining reduces friction",
+        "Step 4: Connect to overall purpose - efficient transport of blood away from heart under high pressure"
+      ],
+      "answer": "Arteries have thick muscular walls that can withstand the high pressure of blood pumped from the heart. The elastic fibers in the wall allow the artery to stretch when blood is pumped in and recoil to help push blood forward. The narrow lumen helps maintain high blood pressure for efficient transport. The smooth endothelium lining reduces friction as blood flows through the vessel.",
+      "markScheme": "1 mark each for: thick wall/withstands pressure, elastic fibers/stretch and recoil, narrow lumen/maintains pressure, smooth lining/reduces friction"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the pulmonary artery and pulmonary vein' — always remember that pulmonary vessels are exceptions to the usual oxygenated/deoxygenated rule for arteries and veins",
+      "Examiner Report 2022: 'Students often described heart chambers incorrectly when tracing blood flow' — always specify left/right and atrium/ventricle clearly, and remember blood flows from atria to ventricles, never the reverse",
+      "Examiner Report 2023: 'Candidates frequently gave vague answers about blood vessel adaptations' — always link specific structural features to their exact functions, don't just list structures without explaining how they help"
+    ],
+    "keyDiagram": "Students must be able to draw a detailed diagram of the heart showing: four chambers (left/right atria and ventricles) clearly labeled, major blood vessels (aorta, vena cava, pulmonary artery, pulmonary vein) with arrows showing blood flow direction, heart valves (bicuspid, tricuspid, semi-lunar) positioned correctly, and different shading or labeling to show oxygenated vs deoxygenated blood in different chambers and vessels.",
+    "quickRecap": "Heart has four chambers pumping blood in double circulation - pulmonary (heart-lungs-heart) and systemic (heart-body-heart). Arteries carry blood away from heart under high pressure with thick muscular walls. Veins return blood to heart under low pressure with valves and thin walls. Blood contains plasma (transports dissolved substances), red blood cells (oxygen transport), white blood cells (immunity), and platelets (clotting)."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:02:49.967Z",
-  "updated_at": "2026-04-06T05:02:49.967Z"
+  "updated_at": "2026-04-06T05:02:49.967Z",
+  "enriched_at": "2026-04-06T16:09:58.041Z"
 }

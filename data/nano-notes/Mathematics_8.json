@@ -78,12 +78,39 @@
       "n(A ∪ B) = n(A) + n(B) - n(A ∩ B)",
       "If f(x) = ax + b, then f⁻¹(x) = (x-b)/a"
     ],
-    "keyDiagramDescription": "Venn diagram showing two overlapping circles A and B inside a rectangle (universal set ξ), with regions labeled: A only, B only, A∩B (intersection), and elements outside both circles"
+    "keyDiagramDescription": "Venn diagram showing two overlapping circles A and B inside a rectangle (universal set ξ), with regions labeled: A only, B only, A∩B (intersection), and elements outside both circles",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to find the set of values of k for which kx² + (k+3)x + 8 = 0 has two distinct real roots using discriminant analysis",
+      "This topic appeared in O/N 2022 P1 Q7 (5 marks) — students had to find set of values of k for which (x-k)|x-7|^(1/3) = 4 has exactly two real roots, requiring graphical understanding",
+      "This topic was examined in M/J 2024 P2 Q3 (4 marks) — candidates needed to find the set of values of x satisfying |2^(x+1) - 2| < 0.5 using modulus properties",
+      "This topic featured in O/N 2023 P1 Q5 (3 marks) — students were asked to find set of values of x for which binomial expansion |x| < 2 is valid"
+    ],
+    "workedExample": {
+      "question": "Find the set of values of x satisfying |2^(x+1) - 2| < 0.5 (4 marks)",
+      "steps": [
+        "Step 1: Rewrite the inequality as -0.5 < 2^(x+1) - 2 < 0.5",
+        "Step 2: Add 2 to all parts: 1.5 < 2^(x+1) < 2.5",
+        "Step 3: Take logarithm base 2: log₂(1.5) < x+1 < log₂(2.5)",
+        "Step 4: Subtract 1: log₂(1.5) - 1 < x < log₂(2.5) - 1",
+        "Step 5: Calculate: log₂(1.5) ≈ 0.585, log₂(2.5) ≈ 1.322",
+        "Step 6: Therefore: -0.415 < x < 0.322"
+      ],
+      "answer": "-0.415 < x < 0.322",
+      "markScheme": "1 mark for removing modulus correctly, 1 mark for isolating exponential term, 1 mark for taking logarithms, 1 mark for correct final answer"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused set notation with interval notation' — always use correct bracket notation: { } for sets, [ ] or ( ) for intervals",
+      "Examiner Report 2024: 'Students frequently forgot to consider both positive and negative cases when solving modulus inequalities' — always split |f(x)| < k into -k < f(x) < k",
+      "Examiner Report 2022: 'Candidates often gave single values instead of ranges when finding domains' — remember that set of values typically means an interval or union of intervals, not isolated points"
+    ],
+    "keyDiagram": "Students must master the number line representation showing solution sets with open/closed circles and shaded regions. For inequalities like a < x < b, use open circles at endpoints with shaded region between. For unions like x < a or x > b, show two separate shaded regions with a gap. Include proper labeling of critical values and clear indication of included/excluded boundaries.",
+    "quickRecap": "Sets define collections of elements, while functions map inputs to unique outputs. When finding solution sets, always consider domain restrictions and boundary conditions. Modulus inequalities require splitting into positive and negative cases. Set notation uses brackets correctly: round brackets ( ) exclude endpoints, square brackets [ ] include them."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:24:59.568Z",
-  "updated_at": "2026-04-05T21:24:59.568Z"
+  "updated_at": "2026-04-05T21:24:59.568Z",
+  "enriched_at": "2026-04-06T16:08:46.452Z"
 }

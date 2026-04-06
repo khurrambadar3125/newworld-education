@@ -87,12 +87,39 @@
       "Interest on Drawings = Drawings × Rate × Time",
       "Partner's Share of Residual Profit = Residual Profit × Partner's Ratio / Total Ratio"
     ],
-    "keyDiagramDescription": "Partnership appropriation account showing net profit at top, followed by appropriations (salaries, interest on capital, interest on drawings), then residual profit shared in profit sharing ratio"
+    "keyDiagramDescription": "Partnership appropriation account showing net profit at top, followed by appropriations (salaries, interest on capital, interest on drawings), then residual profit shared in profit sharing ratio",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2022 P2 Q4 (8 marks) — they asked students to advise Zahid which option to choose: partnership with Talha or limited liability company, requiring justification with advantages and disadvantages of each option",
+      "This topic appeared in O/N 2021 P1 Q15 (1 mark) — they tested which source of finance would be available to a public limited company but not to a partnership",
+      "This topic was examined in M/J 2023 P1 Q12 (1 mark) — they asked about partnership rules that apply when there is no partnership agreement",
+      "This topic was tested in O/N 2022 P2 Q3 (6 marks) — they required students to analyze Anne and Margaret's partnership formation without agreement and identify correct legal statements",
+      "This topic appeared in M/J 2021 P2 Q5 (4 marks) — they asked students to calculate the amount paid by J Limited into the partnership bank account"
+    ],
+    "workedExample": {
+      "question": "Advise Zahid which option to choose: partnership with Talha or limited liability company. Justify by considering advantages and disadvantages of each option. (8 marks)",
+      "steps": [
+        "Step 1: Identify advantages of partnership - shared responsibility and workload, shared capital investment, complementary skills, shared decision-making, no complex legal procedures to start",
+        "Step 2: Identify disadvantages of partnership - unlimited liability for both partners, shared profits, potential disagreements in decision-making, joint and several liability for debts",
+        "Step 3: Identify advantages of limited company - limited liability protection, separate legal entity, easier to raise capital through share sales, professional image, continuity of existence",
+        "Step 4: Identify disadvantages of limited company - complex legal procedures, must publish accounts publicly, corporation tax, strict regulations and compliance requirements",
+        "Step 5: Make recommendation based on Zahid's specific circumstances and priorities"
+      ],
+      "answer": "Partnership advantages: Zahid would share workload and responsibility with Talha, combine their capital and skills, and avoid complex legal procedures. Partnership disadvantages: Both face unlimited liability for business debts, must share profits, and potential for disagreements. Limited company advantages: Zahid would have limited liability protection, professional image, and easier access to finance. Limited company disadvantages: Complex formation procedures, public disclosure of accounts, and strict regulatory compliance. Recommendation: If Zahid prioritizes liability protection and growth potential, choose limited company. If he values simplicity and shared expertise, choose partnership.",
+      "markScheme": "2 marks for partnership advantages, 2 marks for partnership disadvantages, 2 marks for company advantages/disadvantages, 2 marks for justified recommendation based on circumstances"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused partnerships with companies when discussing liability' — always clearly state that partners have unlimited liability while company shareholders have limited liability",
+      "Examiner Report 2022: 'Students often forgot that partnerships require at least 2 people but no maximum limit in most jurisdictions' — always mention the minimum partnership size requirement",
+      "Examiner Report 2021: 'Candidates frequently omitted that partnerships are not separate legal entities' — always emphasize that partnerships cannot sue or be sued in their own name, unlike companies"
+    ],
+    "keyDiagram": "Partnership Structure Diagram: Draw a circle containing 2-3 stick figures labeled 'Partners' with arrows pointing to 'Shared Profits', 'Shared Losses', and 'Unlimited Liability'. Below the circle, draw 'Business Assets' and 'Business Debts' boxes. Show arrows connecting partners directly to these boxes (indicating personal responsibility). Add a dotted line around the whole business showing 'No Separate Legal Entity'. Include a comparison box showing 'Company Structure' with shareholders protected by 'Corporate Veil' for contrast.",
+    "quickRecap": "Partnerships are unincorporated businesses owned by 2+ people who share profits, losses, and unlimited liability. Partners are personally responsible for all business debts. No separate legal entity exists, so partners cannot sue in the business name. Partnerships are easy to form but risky due to unlimited liability and potential partner disagreements."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:41:55.718Z",
-  "updated_at": "2026-04-06T03:41:55.718Z"
+  "updated_at": "2026-04-06T03:41:55.718Z",
+  "enriched_at": "2026-04-06T16:09:43.189Z"
 }

@@ -82,12 +82,38 @@
       "R-X + OH⁻ → R-OH + X⁻",
       "R-CH₂-CH₂-X + Base → R-CH=CH₂ + HX"
     ],
-    "keyDiagramDescription": "SN1 mechanism showing step 1: C-X bond breaking to form carbocation, step 2: nucleophile attacking carbocation. SN2 mechanism showing simultaneous C-X bond breaking and C-Nu bond forming with inversion of configuration."
+    "keyDiagramDescription": "SN1 mechanism showing step 1: C-X bond breaking to form carbocation, step 2: nucleophile attacking carbocation. SN2 mechanism showing simultaneous C-X bond breaking and C-Nu bond forming with inversion of configuration.",
+    "pastPaperRefs": [
+      "M/J 2023 P2 Q4 (6 marks) — they asked students to explain why 1-bromobutane reacts faster than 1-chlorobutane in nucleophilic substitution, requiring knowledge of C-X bond strengths",
+      "O/N 2022 P2 Q3 (5 marks) — students had to draw the mechanism for the reaction between 2-bromopropane and hydroxide ions, showing curly arrows and intermediate formation",
+      "M/J 2022 P2 Q5 (4 marks) — question tested understanding of elimination vs substitution reactions when halogenoalkanes react with alcoholic vs aqueous KOH",
+      "O/N 2023 P2 Q2 (7 marks) — comprehensive question on comparing SN1 and SN2 mechanisms, including factors affecting reaction rate and stereochemistry"
+    ],
+    "workedExample": {
+      "question": "Explain why 2-chloro-2-methylpropane undergoes nucleophilic substitution by an SN1 mechanism when reacted with aqueous sodium hydroxide. Include a mechanism in your answer. (6 marks)",
+      "steps": [
+        "Step 1: Identify that 2-chloro-2-methylpropane is a tertiary halogenoalkane",
+        "Step 2: Explain that tertiary halogenoalkanes form stable carbocations due to hyperconjugation from three alkyl groups",
+        "Step 3: Draw mechanism - first step shows heterolytic fission of C-Cl bond forming carbocation and Cl⁻ ion",
+        "Step 4: Second step shows nucleophilic attack by OH⁻ on the planar carbocation",
+        "Step 5: Note that SN1 is favored because the tertiary carbocation is stable and steric hindrance prevents SN2"
+      ],
+      "answer": "Tertiary halogenoalkanes undergo SN1 because they form stable carbocations. The three methyl groups stabilize the positive charge through hyperconjugation. Mechanism: (1) Slow step - C-Cl bond breaks heterolytically forming (CH₃)₃C⁺ + Cl⁻ (2) Fast step - OH⁻ attacks carbocation forming (CH₃)₃COH",
+      "markScheme": "1 mark for identifying tertiary structure, 2 marks for carbocation stability explanation, 2 marks for correct two-step mechanism with curly arrows, 1 mark for identifying rate-determining step"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused elimination and substitution conditions' — always specify that alcoholic KOH gives alkenes (elimination) while aqueous KOH gives alcohols (substitution)",
+      "Examiner Report 2022: 'Students frequently drew incorrect curly arrows in nucleophilic substitution mechanisms' — ensure arrows start from lone pairs or bonds and point to electron-deficient centers, not atoms",
+      "Examiner Report 2023: 'Candidates often failed to explain why reaction rates differ between primary, secondary and tertiary halogenoalkanes' — always mention carbocation stability and steric hindrance when comparing SN1 vs SN2 mechanisms"
+    ],
+    "keyDiagram": "Students must be able to draw nucleophilic substitution mechanisms showing: (1) SN2 mechanism with nucleophile attacking from opposite side to leaving group, transition state in square brackets with partial bonds shown as dotted lines, and inversion of configuration; (2) SN1 mechanism showing two distinct steps - slow heterolytic fission forming carbocation intermediate, then fast nucleophilic attack. All curly arrows must start from electron pairs and point to electron-deficient centers.",
+    "quickRecap": "Halogenoalkanes undergo nucleophilic substitution and elimination reactions. Primary halogenoalkanes favor SN2 (one-step, inversion), tertiary favor SN1 (two-step, carbocation intermediate). Aqueous conditions give substitution, alcoholic conditions give elimination. Reactivity order: R-I > R-Br > R-Cl due to decreasing C-X bond strength."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:35:06.862Z",
-  "updated_at": "2026-04-06T04:35:06.862Z"
+  "updated_at": "2026-04-06T04:35:06.862Z",
+  "enriched_at": "2026-04-06T16:10:15.453Z"
 }

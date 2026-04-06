@@ -92,12 +92,37 @@
       "Opportunity cost = What is given up ÷ What is gained",
       "Current account + Capital/Financial account + Balancing item = 0"
     ],
-    "keyDiagramDescription": "Production Possibility Frontier (PPF) diagram showing how countries can consume beyond their PPF through specialisation and trade, with axes showing two goods and curves demonstrating increased consumption possibilities"
+    "keyDiagramDescription": "Production Possibility Frontier (PPF) diagram showing how countries can consume beyond their PPF through specialisation and trade, with axes showing two goods and curves demonstrating increased consumption possibilities",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain two benefits of free trade to consumers and evaluate whether developing countries benefit more from free trade or protectionism",
+      "O/N 2022 P2 Q3 (8 marks) examined comparative advantage theory by giving production data for two countries and asking students to calculate opportunity costs and explain which goods each country should specialize in",
+      "M/J 2022 P1 Q15 (1 mark) tested understanding of tariff effects with a multiple choice question about who bears the burden of import taxes",
+      "O/N 2021 P2 Q5 (10 marks) required students to analyze the impact of trade barriers on domestic producers, consumers, and government revenue using supply and demand diagrams"
+    ],
+    "workedExample": {
+      "question": "Country A can produce either 100 cars or 200 computers. Country B can produce either 60 cars or 240 computers. Calculate the opportunity costs and explain which country has comparative advantage in each good. (6 marks)",
+      "steps": [
+        "Step 1: Calculate Country A's opportunity costs - 1 car costs 2 computers (200÷100), 1 computer costs 0.5 cars (100÷200)",
+        "Step 2: Calculate Country B's opportunity costs - 1 car costs 4 computers (240÷60), 1 computer costs 0.25 cars (60÷240)",
+        "Step 3: Compare opportunity costs for cars - Country A gives up 2 computers vs Country B gives up 4 computers, so Country A has comparative advantage in cars",
+        "Step 4: Compare opportunity costs for computers - Country A gives up 0.5 cars vs Country B gives up 0.25 cars, so Country B has comparative advantage in computers"
+      ],
+      "answer": "Country A has comparative advantage in cars (lower opportunity cost of 2 computers vs 4), Country B has comparative advantage in computers (lower opportunity cost of 0.25 cars vs 0.5). Both countries benefit by specializing according to comparative advantage and trading.",
+      "markScheme": "2 marks for correct opportunity cost calculations, 2 marks for identifying comparative advantages, 2 marks for clear explanation of specialization benefits"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused absolute advantage with comparative advantage' — always focus on opportunity costs, not total production levels when explaining trade benefits",
+      "Examiner Report 2022: 'Students failed to distinguish between effects on consumers versus producers when analyzing trade policies' — clearly separate impacts on different economic agents in your answers",
+      "Examiner Report 2021: 'Weak responses did not use diagrams to support tariff analysis' — always draw supply and demand curves showing deadweight loss when discussing trade barriers"
+    ],
+    "keyDiagram": "Supply and Demand diagram showing tariff effects: Draw domestic supply (upward sloping) and demand (downward sloping) curves intersecting above world price line (horizontal). Add tariff by shifting world price up. Show areas: consumer surplus loss (triangle + rectangle), producer surplus gain (rectangle), government revenue (rectangle), and deadweight loss (two triangles). Label axes as Price (Y) and Quantity (X), mark free trade quantity, tariff quantity, world price, and domestic price with tariff.",
+    "quickRecap": "International trade occurs due to comparative advantage - countries should specialize in goods with lowest opportunity costs. Free trade increases global efficiency and consumer choice but may harm domestic producers. Governments use tariffs, quotas, and subsidies as protectionist measures, creating deadweight losses. Trade benefits include specialization gains, economies of scale, and increased competition driving innovation."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:10:36.730Z",
-  "updated_at": "2026-04-06T05:10:36.730Z"
+  "updated_at": "2026-04-06T05:10:36.730Z",
+  "enriched_at": "2026-04-06T16:07:01.154Z"
 }

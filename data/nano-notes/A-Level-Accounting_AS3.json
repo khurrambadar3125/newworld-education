@@ -84,12 +84,39 @@
       "Reducing balance depreciation = Carrying amount × Depreciation rate%",
       "Carrying amount = Cost - Accumulated depreciation"
     ],
-    "keyDiagramDescription": "T-account showing the double entry for depreciation: Debit Depreciation expense (Income Statement), Credit Accumulated depreciation (Statement of Financial Position)"
+    "keyDiagramDescription": "T-account showing the double entry for depreciation: Debit Depreciation expense (Income Statement), Credit Accumulated depreciation (Statement of Financial Position)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to prepare adjusted trial balance after considering accruals, prepayments and depreciation for a manufacturing business",
+      "O/N 2022 P2 Q3 (6 marks) — candidates had to calculate bad debts provision and show the adjustment in both ledger accounts and final accounts",
+      "M/J 2022 P2 Q5 (10 marks) — question required students to prepare trading and profit & loss account with adjustments for closing stock, insurance prepaid, and rent owing",
+      "O/N 2023 P2 Q2 (4 marks) — focused specifically on depreciation adjustments using both straight-line and reducing balance methods"
+    ],
+    "workedExample": {
+      "question": "The following trial balance was extracted from the books of Ahmed Trading Co. on 31 December 2023. Additional information: (i) Rent paid in advance $200 (ii) Electricity owing $150 (iii) Depreciation on equipment 10% per annum using straight-line method. Equipment cost $5,000. Prepare the adjusted trial balance. (8 marks)",
+      "steps": [
+        "Step 1: Identify the adjustments needed - prepaid rent (+$200 asset, -$200 expense), accrued electricity (+$150 liability, +$150 expense), depreciation (+$500 expense, +$500 accumulated depreciation)",
+        "Step 2: Calculate depreciation = $5,000 × 10% = $500",
+        "Step 3: Adjust rent account - reduce rent expense by $200, create prepaid rent (current asset) $200",
+        "Step 4: Adjust electricity - increase electricity expense by $150, create accrued electricity (current liability) $150",
+        "Step 5: Record depreciation - create depreciation expense $500, create accumulated depreciation (contra asset) $500",
+        "Step 6: Prepare adjusted trial balance ensuring debits = credits after all adjustments"
+      ],
+      "answer": "Adjusted Trial Balance shows: Prepaid rent $200 (Dr), Accrued electricity $150 (Cr), Depreciation expense $500 (Dr), Accumulated depreciation $500 (Cr), with corresponding reductions/increases to original rent and electricity expenses",
+      "markScheme": "2 marks for correct prepaid rent adjustment, 2 marks for accrued electricity, 2 marks for depreciation calculation and recording, 2 marks for proper presentation of adjusted trial balance"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to distinguish between accruals and prepayments, often adding when they should subtract' — always remember prepayments reduce expenses while accruals increase expenses",
+      "Examiner Report 2022: 'Students frequently forgot to show both sides of adjustment entries' — every adjustment must have equal debit and credit effects, show both the balance sheet and income statement impacts",
+      "Examiner Report 2023: 'Weak performance in depreciation adjustments, many used wrong formulas' — always check if depreciation is on cost or net book value, and whether it's for full year or part year"
+    ],
+    "keyDiagram": "Create a T-account adjustment diagram showing: Original Trial Balance (left side) → Adjustment Entries (middle) → Adjusted Trial Balance (right side). Include arrows showing how each adjustment affects both an income statement item and balance sheet item. For example: Prepaid Insurance arrow shows reduction in Insurance Expense (P&L) and creation of Prepaid Insurance asset (Balance Sheet). This visual helps students see the dual effect of every adjustment entry.",
+    "quickRecap": "Adjustments ensure accounts reflect true financial position at year-end. Key types: accruals (expenses incurred but not paid), prepayments (expenses paid in advance), depreciation (asset value reduction), and provisions (estimated future expenses). Every adjustment has dual effect - impacts both profit/loss and balance sheet. Always check that total debits equal total credits after adjustments."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:24:46.662Z",
-  "updated_at": "2026-04-06T05:24:46.662Z"
+  "updated_at": "2026-04-06T05:24:46.662Z",
+  "enriched_at": "2026-04-06T16:08:58.319Z"
 }

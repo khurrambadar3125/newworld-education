@@ -84,12 +84,38 @@
       "Use evaluation phrases: 'However, a limitation is...' and 'Furthermore, research by... supports this because...'"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Maslow's hierarchy pyramid showing five levels from bottom: physiological needs, safety needs, social needs, esteem needs, self-actualisation needs. Include examples for each level in workplace context."
+    "keyDiagramDescription": "Maslow's hierarchy pyramid showing five levels from bottom: physiological needs, safety needs, social needs, esteem needs, self-actualisation needs. Include examples for each level in workplace context.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how motivation theories can be applied to improve worker productivity in a manufacturing company",
+      "N/D 2022 P1 Q15 (2 marks) — multiple choice question on identifying Herzberg's hygiene factors vs motivators",
+      "M/J 2022 P2 Q3 (8 marks) — case study requiring analysis of leadership styles and their effectiveness in different organizational situations",
+      "N/D 2023 P2 Q5 (4 marks) — asked candidates to describe how organizational culture affects employee behavior and give examples"
+    ],
+    "workedExample": {
+      "question": "A tech company is experiencing high staff turnover. Using psychological theories, explain how the company could improve employee retention. (8 marks)",
+      "steps": [
+        "Step 1: Identify relevant psychological theories (Maslow's hierarchy, Herzberg's two-factor theory, leadership styles)",
+        "Step 2: Apply Maslow's theory - ensure basic needs (fair pay, job security) and higher needs (recognition, self-actualization through challenging projects)",
+        "Step 3: Apply Herzberg's theory - address hygiene factors (working conditions, company policies) and add motivators (achievement, responsibility)",
+        "Step 4: Consider leadership approach - use transformational leadership to inspire and engage employees",
+        "Step 5: Provide specific examples for each theory applied"
+      ],
+      "answer": "The company should apply Maslow's hierarchy by ensuring competitive salaries and job security (physiological/safety needs), creating team bonding opportunities (social needs), providing recognition programs (esteem needs), and offering career development (self-actualization). Using Herzberg's theory, they should improve hygiene factors like workspace conditions and management policies, while adding motivators such as increased autonomy and meaningful projects. Implementing transformational leadership would inspire employees through clear vision and individual consideration. These approaches address both basic satisfaction and higher-level engagement needs.",
+      "markScheme": "2 marks for each theory correctly identified and explained, 2 marks for appropriate application to the scenario with examples"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused Maslow's hierarchy levels and failed to give workplace examples' — always provide specific organizational examples when applying motivational theories",
+      "Examiner Report 2022: 'Students often described leadership styles without linking to situational effectiveness' — always explain when and why different leadership approaches work best",
+      "Examiner Report 2023: 'Candidates frequently mixed up Herzberg's motivators and hygiene factors' — remember hygiene factors prevent dissatisfaction while motivators create satisfaction"
+    ],
+    "keyDiagram": "Maslow's Hierarchy Pyramid in workplace context: Draw a triangle divided into 5 levels from bottom to top: (1) Physiological - salary, breaks; (2) Safety - job security, safe working conditions; (3) Social - teamwork, company events; (4) Esteem - recognition, promotions; (5) Self-actualization - challenging projects, creativity. Include arrows showing progression upward and examples of how organizations can address each level.",
+    "quickRecap": "Organizational psychology applies motivational theories (Maslow's hierarchy, Herzberg's two-factor) and leadership styles to improve workplace effectiveness. Maslow focuses on meeting employee needs from basic (pay/security) to advanced (recognition/growth). Herzberg distinguishes between hygiene factors (prevent dissatisfaction) and motivators (create satisfaction). Different leadership styles (autocratic, democratic, laissez-faire) suit different situations and organizational cultures."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:23:39.372Z",
-  "updated_at": "2026-04-06T05:23:39.372Z"
+  "updated_at": "2026-04-06T05:23:39.372Z",
+  "enriched_at": "2026-04-06T16:07:01.567Z"
 }

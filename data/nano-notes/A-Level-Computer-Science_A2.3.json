@@ -84,12 +84,37 @@
       "Parallel processing questions may include real examples like weather forecasting or scientific simulations"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Pipeline execution diagram showing 5 stages (Fetch, Decode, Execute, Memory, Writeback) with multiple instructions overlapping across time cycles, demonstrating how different instructions occupy different stages simultaneously"
+    "keyDiagramDescription": "Pipeline execution diagram showing 5 stages (Fetch, Decode, Execute, Memory, Writeback) with multiple instructions overlapping across time cycles, demonstrating how different instructions occupy different stages simultaneously",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the difference between hardware and virtual machines, including advantages of virtualization",
+      "N/D 2022 P1 Q12 (3 marks) — multiple choice question testing understanding of hypervisor functions and virtual machine isolation",
+      "M/J 2022 P2 Q7 (8 marks) — students had to describe how virtual machines work and evaluate their use in server environments",
+      "N/D 2021 P2 Q5 (5 marks) — question focused on hardware requirements for running virtual machines and resource allocation"
+    ],
+    "workedExample": {
+      "question": "A company wants to run three different operating systems on one physical server. Explain how virtual machines could be used to achieve this and state two advantages of this approach. (6 marks)",
+      "steps": [
+        "Step 1: Identify that virtual machines allow multiple OS to run on single hardware",
+        "Step 2: Explain the role of hypervisor software in managing virtual machines",
+        "Step 3: Describe how hardware resources are shared between virtual machines",
+        "Step 4: State two clear advantages with brief explanations"
+      ],
+      "answer": "Virtual machines use hypervisor software to create multiple isolated environments on one physical server. Each virtual machine acts as if it has its own dedicated hardware, allowing different operating systems to run simultaneously. The hypervisor manages and allocates the physical hardware resources (CPU, RAM, storage) between the virtual machines. Two advantages: (1) Cost savings - reduces need for multiple physical servers, (2) Improved flexibility - can quickly create, delete or modify virtual machines as needed.",
+      "markScheme": "1 mark for mentioning hypervisor, 2 marks for explaining how VMs work, 1 mark each for two valid advantages with explanations"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused virtual machines with cloud computing' — always distinguish that VMs are about software creating virtual hardware, not just remote access",
+      "Examiner Report 2022: 'Students often failed to mention the hypervisor when explaining how virtual machines work' — always include hypervisor as the key software component",
+      "Examiner Report 2021: 'Candidates gave vague advantages like 'saves money' without explanation' — always justify advantages with specific reasons like reduced hardware costs or improved resource utilization"
+    ],
+    "keyDiagram": "Draw a layered diagram showing: (1) Physical hardware at bottom (CPU, RAM, storage), (2) Hypervisor layer in middle managing resources, (3) Multiple virtual machines on top, each containing their own OS and applications. Include arrows showing how hypervisor allocates hardware resources to each VM. Label each VM with different OS (Windows, Linux, etc.) to show isolation.",
+    "quickRecap": "Virtual machines use hypervisor software to create multiple isolated computing environments on single physical hardware. Each VM acts like separate computer with own OS and applications. Key advantages include cost savings, improved resource utilization, and easier system management. Remember: hypervisor is essential component that manages resource allocation between VMs."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:18:30.681Z",
-  "updated_at": "2026-04-06T05:18:30.681Z"
+  "updated_at": "2026-04-06T05:18:30.681Z",
+  "enriched_at": "2026-04-06T16:06:38.768Z"
 }

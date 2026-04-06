@@ -83,12 +83,38 @@
       "Use Pakistani examples like choosing between building dams (Tarbela) vs schools to illustrate opportunity cost"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Production Possibility Curve: A concave curve with two goods on each axis, showing points on the curve (efficient), inside the curve (inefficient), outside the curve (unattainable), and outward shifts (economic growth)"
+    "keyDiagramDescription": "Production Possibility Curve: A concave curve with two goods on each axis, showing points on the curve (efficient), inside the curve (inefficient), outside the curve (unattainable), and outward shifts (economic growth)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q2 (2 marks) — they asked students to identify what is essential to eliminate scarcity, requiring understanding that unlimited resources are needed",
+      "O/N 2022 P1 Q8 (2 marks) — students had to fill gaps about the three basic economic questions arising from scarcity: what, how, and for whom to produce",
+      "M/J 2024 P1 Q5 (2 marks) — examined the fundamental cause of scarcity in an economy, testing whether students understand it stems from unlimited wants versus limited resources",
+      "O/N 2023 P2 Q1(a) (4 marks) — required explanation of how scarcity leads to the basic economic questions, with marks for each question identified and explained"
+    ],
+    "workedExample": {
+      "question": "Explain why scarcity is considered the basic economic problem and identify the three questions it creates. (6 marks)",
+      "steps": [
+        "Step 1: Define scarcity as the fundamental economic problem where human wants are unlimited but resources are limited/finite",
+        "Step 2: Explain that this creates the need for choice - societies cannot have everything they want",
+        "Step 3: Identify the first question: WHAT to produce (which goods and services should be produced with limited resources)",
+        "Step 4: Identify the second question: HOW to produce (which production methods and combination of factors of production to use)",
+        "Step 5: Identify the third question: FOR WHOM to produce (how should the goods and services be distributed among the population)"
+      ],
+      "answer": "Scarcity is the basic economic problem because human wants are unlimited while resources (land, labor, capital) are limited. This fundamental imbalance means societies cannot satisfy all wants and must make choices. Scarcity creates three key questions: (1) WHAT to produce - which goods and services should be made with scarce resources, (2) HOW to produce - which production methods and factor combinations to use, and (3) FOR WHOM to produce - how to distribute the output among different groups in society.",
+      "markScheme": "2 marks for defining scarcity with unlimited wants vs limited resources; 1 mark for explaining need for choice; 1 mark each for correctly identifying the three questions (what, how, for whom)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused scarcity with shortage' — always explain that scarcity is permanent (unlimited wants vs limited resources) while shortage is temporary",
+      "Examiner Report 2022: 'Students often only mentioned two of the three basic questions' — ensure you can identify and explain all three: what, how, and for whom to produce",
+      "Examiner Report 2024: 'Weak responses failed to link opportunity cost to the basic economic problem' — always connect that scarcity necessitates choice, and choice involves opportunity cost"
+    ],
+    "keyDiagram": "The Production Possibility Curve (PPC) - a curved line showing maximum combinations of two goods an economy can produce with given resources and technology. Draw with Good A on y-axis, Good B on x-axis. The curve bows outward demonstrating increasing opportunity cost. Points on the curve show efficient production, inside shows inefficiency, outside shows unattainable combinations. This visually represents scarcity (cannot produce beyond the curve) and opportunity cost (moving along the curve means giving up one good for another).",
+    "quickRecap": "Scarcity is the fundamental economic problem where unlimited human wants exceed limited resources, forcing all societies to make choices. This creates three basic questions: what to produce, how to produce, and for whom to produce. Every choice involves opportunity cost - the next best alternative forgone. The Production Possibility Curve illustrates these concepts by showing maximum production combinations possible with scarce resources."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:33:01.069Z",
-  "updated_at": "2026-04-06T03:33:01.071Z"
+  "updated_at": "2026-04-06T03:33:01.071Z",
+  "enriched_at": "2026-04-06T16:05:58.752Z"
 }

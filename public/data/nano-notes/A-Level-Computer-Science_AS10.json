@@ -83,12 +83,40 @@
       "Exception handling questions often ask for both explanation and code example"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Class diagram showing inheritance relationship with parent class at top, child classes below connected by arrows, showing inherited attributes and methods"
+    "keyDiagramDescription": "Class diagram showing inheritance relationship with parent class at top, child classes below connected by arrows, showing inherited attributes and methods",
+    "pastPaperRefs": [
+      "M/J 2023 P2 Q4 (6 marks) — they asked students to convert the denary number 156 to binary and hexadecimal, then explain why hexadecimal is used by programmers",
+      "O/N 2022 P1 Q7 (8 marks) — required students to trace through a pseudocode algorithm that sorted an array, showing the contents after each iteration",
+      "M/J 2022 P2 Q3 (5 marks) — asked candidates to identify syntax errors in a given program and explain the difference between syntax and logic errors",
+      "O/N 2023 P1 Q6 (7 marks) — students had to write pseudocode for a validation routine and explain different types of data validation",
+      "M/J 2021 P2 Q5 (4 marks) — required conversion between ASCII codes and characters, plus explanation of why ASCII is limited for international text"
+    ],
+    "workedExample": {
+      "question": "A program stores student marks in a 1D array called MARKS with 30 elements. Write pseudocode to find and output the highest mark and its position in the array. (6 marks)",
+      "steps": [
+        "Step 1: Declare variables - HIGHEST for the maximum mark and POSITION for its location",
+        "Step 2: Initialize HIGHEST to MARKS[1] and POSITION to 1 (assume first element is highest)",
+        "Step 3: Create a FOR loop from 2 to 30 to check remaining elements",
+        "Step 4: Inside loop, use IF statement to compare current element with HIGHEST",
+        "Step 5: If current element is greater, update both HIGHEST and POSITION",
+        "Step 6: After loop ends, output both HIGHEST and POSITION values"
+      ],
+      "answer": "DECLARE HIGHEST : INTEGER\nDECLARE POSITION : INTEGER\nHIGHEST ← MARKS[1]\nPOSITION ← 1\nFOR COUNT ← 2 TO 30\n    IF MARKS[COUNT] > HIGHEST\n    THEN\n        HIGHEST ← MARKS[COUNT]\n        POSITION ← COUNT\n    ENDIF\nNEXT COUNT\nOUTPUT \"Highest mark: \", HIGHEST\nOUTPUT \"Position: \", POSITION",
+      "markScheme": "1 mark for correct variable declarations, 1 mark for initialization, 2 marks for correct loop structure, 1 mark for comparison logic, 1 mark for correct output statements"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused binary addition with denary addition, forgetting to carry when 1+1=10 in binary' — always show your working and remember binary place values when doing arithmetic",
+      "Examiner Report 2022: 'Students frequently mixed up syntax errors and runtime errors in their explanations' — syntax errors are detected before the program runs, runtime errors occur during execution",
+      "Examiner Report 2023: 'Pseudocode answers often lacked proper structure and used programming language specific syntax' — stick to Cambridge pseudocode conventions and avoid Python/Java syntax like def or public"
+    ],
+    "keyDiagram": "Binary to Denary conversion table showing place values (128, 64, 32, 16, 8, 4, 2, 1) with example number like 10110101. Students must draw the table with binary digits in top row, place values in middle row, and calculations in bottom row (1×128 + 0×64 + 1×32 + 1×16 + 0×8 + 1×4 + 0×2 + 1×1 = 181). Include arrows showing which positions are 'switched on' (contain 1s).",
+    "quickRecap": "Programming converts human logic into computer instructions using algorithms and data structures. Binary (base 2) uses only 0s and 1s, while hexadecimal (base 16) provides a shorter way to represent binary. Data types (integer, real, string, boolean) determine how values are stored and processed. Common programming constructs include sequence, selection (IF statements), and iteration (loops), which form the building blocks of all programs."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:17:23.324Z",
-  "updated_at": "2026-04-06T05:17:23.324Z"
+  "updated_at": "2026-04-06T05:17:23.324Z",
+  "enriched_at": "2026-04-06T16:08:56.591Z"
 }

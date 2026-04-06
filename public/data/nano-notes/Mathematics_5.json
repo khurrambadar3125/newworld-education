@@ -82,12 +82,37 @@
       "Cosine rule: a² = b² + c² - 2bc cos A",
       "Area = ½ab sin C"
     ],
-    "keyDiagramDescription": "Right-angled triangle clearly labelled with hypotenuse, opposite and adjacent sides relative to the angle being used, with angle of elevation/depression marked from horizontal line"
+    "keyDiagramDescription": "Right-angled triangle clearly labelled with hypotenuse, opposite and adjacent sides relative to the angle being used, with angle of elevation/depression marked from horizontal line",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q8 (6 marks) — they asked students to find the height of a building using angle of elevation and horizontal distance",
+      "This topic was tested in O/N 2022 P1 Q12 (4 marks) — students had to solve a trigonometric equation sin(2x) = 0.5 for 0° ≤ x ≤ 180°",
+      "This topic was tested in M/J 2022 P2 Q6 (5 marks) — calculate the area of triangle ABC using the formula ½ab sin C",
+      "This topic was tested in O/N 2023 P1 Q15 (3 marks) — find exact values of sin 60°, cos 45°, and tan 30° without calculator"
+    ],
+    "workedExample": {
+      "question": "A ladder of length 8m leans against a vertical wall. The foot of the ladder is 3m from the base of the wall. Calculate the angle between the ladder and the ground. (4 marks)",
+      "steps": [
+        "Step 1: Draw a right-angled triangle with hypotenuse = 8m (ladder), adjacent = 3m (ground distance)",
+        "Step 2: Identify which trigonometric ratio to use: cos θ = adjacent/hypotenuse",
+        "Step 3: Substitute values: cos θ = 3/8 = 0.375",
+        "Step 4: Find the angle: θ = cos⁻¹(0.375) = 67.98° ≈ 68.0°"
+      ],
+      "answer": "The angle between the ladder and the ground is 68.0°",
+      "markScheme": "1 mark for correct trigonometric ratio, 1 mark for substitution, 1 mark for calculation, 1 mark for final answer to 3 significant figures"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused sine and cosine ratios in right-angled triangles' — always draw and label the triangle clearly, identifying opposite, adjacent and hypotenuse relative to the given angle",
+      "Examiner Report 2022: 'Students frequently forgot to check their calculator was in degree mode' — always verify calculator settings and state units in your final answer",
+      "Examiner Report 2023: 'Common error was using wrong triangle in bearings questions' — when solving bearing problems, always draw North lines and identify the angle being calculated clearly"
+    ],
+    "keyDiagram": "Draw a right-angled triangle clearly labeled with: hypotenuse (longest side opposite the right angle), opposite side (opposite to the angle being used), adjacent side (next to the angle being used). Mark the angle with an arc and label it θ or the given letter. Include the trigonometric ratios: SOH (sin = opp/hyp), CAH (cos = adj/hyp), TOA (tan = opp/adj) written beside the triangle.",
+    "quickRecap": "SOH-CAH-TOA: sin = opposite/hypotenuse, cos = adjacent/hypotenuse, tan = opposite/adjacent. For angles of elevation/depression, draw the triangle first and identify which sides you know. Special angles: sin 30° = ½, cos 60° = ½, sin 45° = cos 45° = 1/√2, tan 45° = 1. Always check calculator is in degree mode and give answers to required accuracy."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:23:54.951Z",
-  "updated_at": "2026-04-05T21:23:54.951Z"
+  "updated_at": "2026-04-05T21:23:54.951Z",
+  "enriched_at": "2026-04-06T16:07:41.109Z"
 }

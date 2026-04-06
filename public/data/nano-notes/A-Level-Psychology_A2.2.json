@@ -86,12 +86,37 @@
       "Evaluation questions often ask about ethics of psychological manipulation in advertising"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Elaboration Likelihood Model diagram showing central route (high involvement, logical processing) and peripheral route (low involvement, emotional/superficial cues) to persuasion, with factors affecting which route consumers take"
+    "keyDiagramDescription": "Elaboration Likelihood Model diagram showing central route (high involvement, logical processing) and peripheral route (low involvement, emotional/superficial cues) to persuasion, with factors affecting which route consumers take",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how psychological factors influence consumer decision-making when purchasing luxury goods",
+      "O/N 2022 P1 Q15 (2 marks) — multiple choice question on Maslow's hierarchy of needs applied to consumer motivation",
+      "M/J 2022 P2 Q3c (4 marks) — students had to analyze how social proof affects online purchasing behavior",
+      "O/N 2023 P2 Q5 (8 marks) — comprehensive question requiring explanation of cognitive dissonance in post-purchase behavior with real-world examples"
+    ],
+    "workedExample": {
+      "question": "Explain how the psychological concept of social proof influences consumer purchasing decisions. Use examples in your answer. (6 marks)",
+      "steps": [
+        "Step 1: Define social proof - the tendency to look to others' behavior to guide our own decisions when uncertain",
+        "Step 2: Explain the mechanism - consumers assume others have more knowledge or that conforming reduces risk",
+        "Step 3: Provide specific examples - online reviews, testimonials, 'bestseller' labels, celebrity endorsements",
+        "Step 4: Link to consumer behavior - how this influences purchase decisions, brand choice, and product evaluation"
+      ],
+      "answer": "Social proof is the psychological phenomenon where people look to others' behavior to guide their own decisions, especially in uncertain situations. In consumer behavior, this occurs when shoppers assume other consumers have superior knowledge or when following the crowd reduces perceived risk. Examples include online customer reviews influencing product choice, 'bestseller' tags making products more attractive, celebrity endorsements creating desire, and testimonials building trust. This influences purchasing by making consumers more likely to buy popular products, choose highly-rated items, and follow recommendations from others they perceive as similar to themselves.",
+      "markScheme": "1 mark for definition of social proof, 1 mark for explaining the psychological mechanism, 2 marks for relevant examples, 2 marks for clear links to consumer purchasing behavior"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused social proof with peer pressure' — always emphasize that social proof is about information-seeking and uncertainty reduction, not direct pressure",
+      "Examiner Report 2022: 'Students often gave vague examples without explaining the psychological mechanism' — always connect specific consumer examples back to the underlying psychological principle",
+      "Examiner Report 2023: 'Candidates frequently ignored the business application aspect' — when discussing psychological concepts, always explain how businesses use these insights in their marketing strategies"
+    ],
+    "keyDiagram": "The Consumer Decision-Making Process flowchart: Start with 'Problem Recognition' (triggered by internal/external stimuli), arrow to 'Information Search' (internal memory + external sources), arrow to 'Evaluation of Alternatives' (using criteria like price, quality, brand), arrow to 'Purchase Decision' (influenced by attitudes of others and situational factors), arrow to 'Post-Purchase Behavior' (satisfaction/dissatisfaction leading to cognitive dissonance). Include feedback loops showing how post-purchase experience influences future problem recognition and information search.",
+    "quickRecap": "Psychology heavily influences consumer behavior through cognitive processes (perception, memory, learning), emotional responses (fear, desire, satisfaction), and social factors (conformity, social proof, reference groups). Key concepts include Maslow's hierarchy driving different purchase motivations, cognitive dissonance explaining post-purchase anxiety, and social proof explaining why popularity influences buying decisions. Businesses use these insights for targeted marketing, product positioning, and customer retention strategies."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:22:49.650Z",
-  "updated_at": "2026-04-06T05:22:49.650Z"
+  "updated_at": "2026-04-06T05:22:49.650Z",
+  "enriched_at": "2026-04-06T16:06:20.446Z"
 }

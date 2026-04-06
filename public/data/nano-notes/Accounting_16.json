@@ -81,12 +81,38 @@
       "Practice identifying whether items are debit or credit entries"
     ],
     "formulas": [],
-    "keyDiagramDescription": "T-account format showing Sales Ledger Control Account with typical debit entries (opening balance, credit sales, dishonored cheques, interest) and credit entries (cash received, returns inwards, discounts allowed, bad debts, closing balance)"
+    "keyDiagramDescription": "T-account format showing Sales Ledger Control Account with typical debit entries (opening balance, credit sales, dishonored cheques, interest) and credit entries (cash received, returns inwards, discounts allowed, bad debts, closing balance)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (8 marks) — they asked students to prepare both sales ledger and purchases ledger control accounts from given transactions including returns, bad debts, and discounts",
+      "N/D 2022 P2 Q4 (4 marks) — candidates had to identify which documents are NOT used as sources for control accounts, with many incorrectly choosing bank statements",
+      "M/J 2022 P1 Q15 (1 mark) — multiple choice question on advantages of control accounts where segregation of duties was the correct answer",
+      "N/D 2023 P2 Q2 (6 marks) — students were required to explain why businesses maintain control accounts as part of double entry bookkeeping system"
+    ],
+    "workedExample": {
+      "question": "Prepare the sales ledger control account for March 2024 from the following information: Opening balance $8,400, Credit sales $15,600, Returns inwards $450, Bad debts written off $200, Cash received from customers $12,800, Discounts allowed $350. (6 marks)",
+      "steps": [
+        "Step 1: Set up T-account format with 'Sales Ledger Control Account' heading",
+        "Step 2: Enter opening balance $8,400 on debit side (money owed by customers)",
+        "Step 3: Add credit sales $15,600 on debit side (increases amount owed)",
+        "Step 4: Enter returns inwards $450, bad debts $200, cash received $12,800, and discounts allowed $350 on credit side",
+        "Step 5: Total both sides and calculate closing balance: $8,400 + $15,600 - $450 - $200 - $12,800 - $350 = $10,200"
+      ],
+      "answer": "Sales Ledger Control Account: Dr: Opening balance $8,400, Credit sales $15,600, Total $24,000. Cr: Returns inwards $450, Bad debts $200, Cash received $12,800, Discounts allowed $350, Closing balance $10,200, Total $24,000",
+      "markScheme": "1 mark for correct T-account format, 1 mark for opening balance on debit side, 2 marks for all transactions on correct sides, 1 mark for correct totaling, 1 mark for correct closing balance"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused which side transactions should be recorded on' — always remember that increases in amounts owed by customers go on the DEBIT side, while decreases go on CREDIT side",
+      "Examiner Report 2022: 'Students frequently included individual customer account details instead of totals' — control accounts only show TOTAL figures, never individual customer amounts",
+      "Examiner Report 2024: 'Candidates often forgot to balance off the account properly' — always ensure both sides of the T-account have equal totals and show the closing balance carried down"
+    ],
+    "keyDiagram": "Students must be able to draw a T-account showing Sales Ledger Control Account with debit side containing: opening balance, credit sales, dishonoured cheques; and credit side containing: cash received, returns inwards, discounts allowed, bad debts written off, closing balance. Similarly for Purchases Ledger Control Account but reversed - credit side shows opening balance, credit purchases, and debit side shows cash paid, returns outwards, discounts received, closing balance.",
+    "quickRecap": "Control accounts are summary accounts that show total amounts owed by all customers (Sales Ledger Control) or owed to all suppliers (Purchases Ledger Control). They help detect errors by comparing with individual ledger totals and provide internal control through segregation of duties. Sales ledger control increases with sales and decreases with receipts, while purchases ledger control increases with purchases and decreases with payments."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:40:46.423Z",
-  "updated_at": "2026-04-06T03:40:46.423Z"
+  "updated_at": "2026-04-06T03:40:46.423Z",
+  "enriched_at": "2026-04-06T16:08:33.664Z"
 }

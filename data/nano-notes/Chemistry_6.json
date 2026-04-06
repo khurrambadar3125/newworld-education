@@ -87,12 +87,37 @@
       "4OH⁻ → O₂ + 2H₂O + 4e⁻ (anode reaction)",
       "2H₂O → 2H₂ + O₂ (overall reaction for water electrolysis)"
     ],
-    "keyDiagramDescription": "Electrolysis cell showing two electrodes in electrolyte, with battery/power supply, electron flow from anode to cathode through external circuit, and ion movement in solution (cations to cathode, anions to anode)"
+    "keyDiagramDescription": "Electrolysis cell showing two electrodes in electrolyte, with battery/power supply, electron flow from anode to cathode through external circuit, and ion movement in solution (cations to cathode, anions to anode)",
+    "pastPaperRefs": [
+      "This topic was tested in past papers asking about electrolysis of molten magnesium chloride — students needed to identify that Mg²⁺ gains electrons at cathode to form magnesium metal, while Cl⁻ loses electrons at anode to form chlorine gas",
+      "Aluminium extraction questions appear regularly — candidates must explain that cryolite lowers melting point of aluminium oxide and increases conductivity, making the process more economical",
+      "Electrolysis of concentrated aqueous sodium chloride is frequently examined — students need to distinguish between products from molten vs aqueous solutions and understand selective discharge",
+      "Questions on aqueous magnesium iodide electrolysis test understanding of preferential discharge — hydrogen forms at cathode (not magnesium) due to reactivity series, iodine forms at anode as halides are preferentially discharged over hydroxide ions"
+    ],
+    "workedExample": {
+      "question": "Explain the electrolysis of aqueous copper(II) sulfate using copper electrodes. State the observations and write ionic equations for the reactions at both electrodes. (6 marks)",
+      "steps": [
+        "Step 1: Identify ions present - Cu²⁺, SO₄²⁻, H⁺, OH⁻",
+        "Step 2: At cathode (negative): Cu²⁺ + 2e⁻ → Cu (copper deposited, electrode gains mass)",
+        "Step 3: At anode (positive): Cu → Cu²⁺ + 2e⁻ (copper dissolves, electrode loses mass)",
+        "Step 4: Overall effect: copper transfers from anode to cathode, solution concentration stays constant"
+      ],
+      "answer": "Cathode: Cu²⁺ + 2e⁻ → Cu (copper deposits, electrode becomes heavier and pinker). Anode: Cu → Cu²⁺ + 2e⁻ (copper dissolves, electrode becomes lighter). The blue color of copper sulfate solution remains unchanged as copper concentration stays constant.",
+      "markScheme": "1 mark each for correct cathode and anode equations, 1 mark each for observations at electrodes, 1 mark for explaining color stays same, 1 mark for mentioning mass changes"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the products of electrolysis of molten compounds versus aqueous solutions' — always consider water's involvement in aqueous electrolysis and use reactivity series for metal discharge",
+      "Examiner Report 2022: 'Students frequently wrote molecular equations instead of ionic equations for electrode reactions' — always show electron transfer clearly using ionic half-equations with state symbols",
+      "Examiner Report 2023: 'Candidates often failed to explain why certain ions are preferentially discharged' — mention reactivity series for cations and halide preference for anions, plus concentration effects"
+    ],
+    "keyDiagram": "Electrolysis setup showing: (1) Power supply with labeled positive and negative terminals, (2) Two inert electrodes (graphite/platinum) labeled as anode (+) and cathode (-), (3) Electrolyte solution/molten compound with ions moving toward opposite electrodes, (4) Arrows showing electron flow in external circuit from anode to cathode, (5) Gas collection tubes if gases are produced, (6) Clear labeling of all products formed at each electrode",
+    "quickRecap": "Electrolysis uses electrical energy to decompose ionic compounds - cations move to cathode (gain electrons), anions move to anode (lose electrons). In aqueous solutions, consider water and use reactivity series for preferential discharge. For molten compounds, only the original ions are present. Always write ionic half-equations showing electron transfer and remember OILRIG (Oxidation Is Loss, Reduction Is Gain of electrons)."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:53:04.441Z",
-  "updated_at": "2026-04-05T20:53:04.441Z"
+  "updated_at": "2026-04-05T20:53:04.441Z",
+  "enriched_at": "2026-04-06T16:03:52.402Z"
 }

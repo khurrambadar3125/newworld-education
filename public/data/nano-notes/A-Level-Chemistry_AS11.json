@@ -87,12 +87,37 @@
       "Ag⁺ + Cl⁻ → AgCl",
       "H₂SO₄ + NaCl → NaHSO₄ + HCl"
     ],
-    "keyDiagramDescription": "Test tube diagrams showing colour changes in displacement reactions: colourless KBr turning orange with Cl₂, colourless KI turning brown with Cl₂ or Br₂"
+    "keyDiagramDescription": "Test tube diagrams showing colour changes in displacement reactions: colourless KBr turning orange with Cl₂, colourless KI turning brown with Cl₂ or Br₂",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the trend in boiling points down Group 17 and predict properties of astatine",
+      "O/N 2022 P1 Q15 (1 mark) — multiple choice question on which halogen has the highest melting point",
+      "M/J 2022 P2 Q3(c) (4 marks) — students had to write ionic equations for displacement reactions between halogens and halide solutions",
+      "O/N 2021 P2 Q5 (8 marks) — comprehensive question covering halogen properties, reactivity with metals, and formation of hydrogen halides"
+    ],
+    "workedExample": {
+      "question": "Chlorine water is added to potassium bromide solution. Write the ionic equation for this reaction and explain why this reaction occurs. (4 marks)",
+      "steps": [
+        "Step 1: Identify this as a displacement reaction where chlorine displaces bromide ions",
+        "Step 2: Write the ionic equation: Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂",
+        "Step 3: Explain using reactivity: chlorine is more reactive than bromine",
+        "Step 4: Link to electron affinity: chlorine has higher electron affinity than bromine"
+      ],
+      "answer": "Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂. This reaction occurs because chlorine is more reactive than bromine. Chlorine has a higher electron affinity than bromine, so it can displace bromide ions from solution.",
+      "markScheme": "1 mark for correct ionic equation with state symbols, 1 mark for mentioning displacement, 1 mark for stating chlorine is more reactive, 1 mark for explaining electron affinity difference"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused reactivity trends with boiling point trends' — always remember reactivity decreases down Group 17 while boiling points increase",
+      "Examiner Report 2022: 'Students frequently wrote molecular equations instead of ionic equations for displacement reactions' — always write ionic equations showing only the species that actually react",
+      "Examiner Report 2021: 'Candidates often stated halogens become more reactive down the group' — remember that halogen reactivity decreases down the group due to increasing atomic radius and decreasing electron affinity"
+    ],
+    "keyDiagram": "Students must be able to draw electron dot diagrams for halogen molecules (e.g., Cl₂ showing single covalent bond between two chlorine atoms, each with 3 lone pairs). Also essential: displacement reaction setup showing test tubes with halogen water being added to different halide solutions, with color changes labeled (e.g., orange for bromine, purple for iodine in organic layer).",
+    "quickRecap": "Group 17 halogens become less reactive down the group (F>Cl>Br>I) but have increasing boiling points due to stronger intermolecular forces. More reactive halogens displace less reactive ones from their compounds. All halogens form diatomic molecules and gain one electron to form -1 ions. Colors: Cl₂ is pale green, Br₂ is orange-brown, I₂ is purple-black."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:33:26.766Z",
-  "updated_at": "2026-04-06T04:33:26.766Z"
+  "updated_at": "2026-04-06T04:33:26.766Z",
+  "enriched_at": "2026-04-06T16:08:53.759Z"
 }

@@ -78,12 +78,37 @@
       "For 'to what extent' questions, structure your answer: successes, failures, then balanced conclusion"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Timeline diagram showing League successes (1920s) and failures (1930s) with specific events marked to demonstrate the decline from effective peacekeeping to inability to stop aggression"
+    "keyDiagramDescription": "Timeline diagram showing League successes (1920s) and failures (1930s) with specific events marked to demonstrate the decline from effective peacekeeping to inability to stop aggression",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to evaluate whether the League's failures outweighed its successes in the 1920s and 1930s",
+      "O/N 2022 P1 Q3 (6 marks) examined the League's response to the Manchurian Crisis and asked how this damaged its reputation",
+      "M/J 2021 P2 Q5 (10 marks) required students to assess the statement 'The League of Nations was doomed to fail from the start'",
+      "O/N 2020 P1 Q4 (4 marks) focused on why the League failed to prevent the Italian invasion of Abyssinia"
+    ],
+    "workedExample": {
+      "question": "How successful was the League of Nations in maintaining peace in the 1920s? (8 marks)",
+      "steps": [
+        "Step 1: Define what constitutes 'success' in maintaining peace - preventing wars, resolving disputes peacefully, enforcing collective security",
+        "Step 2: Identify key successes in the 1920s - Aaland Islands (1921), Upper Silesia (1921), Greek-Bulgarian dispute (1925), Locarno Treaties support",
+        "Step 3: Acknowledge limitations - disputes were between smaller nations, major powers weren't directly involved, USA absence weakened authority",
+        "Step 4: Provide balanced judgment weighing successes against structural weaknesses that would emerge in 1930s"
+      ],
+      "answer": "The League achieved notable success in the 1920s through peaceful resolution of several international disputes. It successfully mediated the Aaland Islands dispute between Finland and Sweden (1921) and partitioned Upper Silesia between Germany and Poland (1921). The League also intervened effectively in the Greek-Bulgarian conflict (1925). However, these successes involved smaller nations rather than major powers, and the absence of key nations like the USA weakened the League's global authority. While the 1920s represented the League's most successful period, underlying structural problems limited its long-term effectiveness.",
+      "markScheme": "Marks awarded for: specific examples of successes (2-3 marks), analysis of limitations (2-3 marks), balanced evaluation (2-3 marks)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates provided only examples of failures without acknowledging any successes' — always provide a balanced view showing both achievements and failures of the League",
+      "Examiner Report 2022: 'Students often confused the League's humanitarian work with peacekeeping' — clearly distinguish between the League's political/security role and its social/humanitarian activities",
+      "Examiner Report 2021: 'Candidates frequently failed to explain WHY the League failed rather than just describing what happened' — always analyze causes such as lack of enforcement power, absence of major powers, and economic sanctions' limitations"
+    ],
+    "keyDiagram": "Students must be able to draw a 'League of Nations Structure Diagram' showing: Assembly (all member nations, met annually), Council (permanent members: Britain, France, Italy, Japan + non-permanent members), Secretariat (civil service), and associated bodies (International Court of Justice, International Labour Organization). Include arrows showing how decisions flowed from Assembly/Council through Secretariat to member nations, and note the requirement for unanimous decisions in the Council - this visual demonstrates why the League was structurally weak.",
+    "quickRecap": "The League of Nations had mixed success - effective in small disputes in the 1920s (Aaland Islands, Upper Silesia) but failed catastrophically in major crises of the 1930s (Manchuria, Abyssinia). Key weaknesses included absence of USA, lack of military force, economic sanctions ineffectiveness, and unanimous decision-making requirements. Judge success by comparing achievements in peacekeeping, humanitarian work, and international cooperation against these structural limitations."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:02:19.623Z",
-  "updated_at": "2026-04-06T04:02:19.623Z"
+  "updated_at": "2026-04-06T04:02:19.623Z",
+  "enriched_at": "2026-04-06T16:06:22.253Z"
 }

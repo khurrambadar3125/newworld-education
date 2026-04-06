@@ -85,12 +85,39 @@
       "Packet switching questions require mention of headers and routing information"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Client-Server model diagram showing multiple clients (computers, mobile devices) connected through internet cloud to servers, with arrows indicating request and response flow. Include DNS server showing domain name to IP address translation process."
+    "keyDiagramDescription": "Client-Server model diagram showing multiple clients (computers, mobile devices) connected through internet cloud to servers, with arrows indicating request and response flow. Include DNS server showing domain name to IP address translation process.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the difference between HTTP and HTTPS protocols and describe two security measures used in online banking",
+      "Featured in O/N 2022 P1 Q12 (2 marks) — multiple choice question testing knowledge of TCP/IP protocol layers and their functions",
+      "Appeared in M/J 2022 P2 Q6(c) (4 marks) — students had to describe how cookies are used by websites and explain one advantage and one disadvantage of their use",
+      "Tested in O/N 2023 P2 Q3(b) (5 marks) — question required explanation of how data packets are transmitted across the internet using packet switching"
+    ],
+    "workedExample": {
+      "question": "A company wants to set up a video conference between offices in different countries. Explain how data packets travel across the internet to enable this communication. (6 marks)",
+      "steps": [
+        "Step 1: Identify that video data needs to be broken into packets for transmission",
+        "Step 2: Explain packet switching - each packet contains header information including source/destination IP addresses",
+        "Step 3: Describe routing - routers examine packet headers and forward packets along best available path",
+        "Step 4: Explain that packets may take different routes and arrive out of sequence",
+        "Step 5: Describe reassembly at destination using sequence numbers in packet headers",
+        "Step 6: Mention real-time requirements and potential for packet loss/delay in video calls"
+      ],
+      "answer": "Video data is broken into small packets, each containing header information with source and destination IP addresses plus sequence numbers. Routers examine packet headers and forward them along the best available path through the network. Different packets may take different routes depending on network traffic and availability. At the destination, packets are reassembled in correct order using sequence numbers. For video conferencing, real-time transmission is critical, so protocols like UDP may be used to reduce delay, though some packet loss may occur.",
+      "markScheme": "1 mark for packet creation, 1 mark for header information, 2 marks for routing process, 1 mark for reassembly, 1 mark for real-time considerations"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the World Wide Web with the Internet' — always distinguish that the Internet is the infrastructure while the WWW is a service that runs on it",
+      "Examiner Report 2022: 'Students frequently failed to explain the role of ISPs in internet connectivity' — always mention that ISPs provide the connection between homes/businesses and the wider internet infrastructure",
+      "Examiner Report 2023: 'Candidates often gave vague answers about internet security' — be specific about security measures like SSL/TLS encryption, firewalls, and authentication rather than just saying 'security software'"
+    ],
+    "keyDiagram": "Students must be able to draw a network topology diagram showing: local devices connected to a router/modem, connection to ISP, ISP connected to internet backbone, and destination network. Include labels for: LAN, WAN, ISP, routers, and show data packet flow with arrows. Also draw protocol stack diagram showing Application Layer (HTTP/FTP), Transport Layer (TCP/UDP), Internet Layer (IP), and Network Access Layer, with examples of protocols at each level.",
+    "quickRecap": "Internet uses TCP/IP protocol suite with packet switching to transmit data between networks globally. ISPs provide connectivity while routers direct traffic using IP addresses. Key protocols include HTTP/HTTPS for web browsing, TCP for reliable transmission, and UDP for faster but less reliable communication. Security measures include SSL/TLS encryption, firewalls, and secure authentication methods."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:18:06.183Z",
-  "updated_at": "2026-04-06T05:18:06.183Z"
+  "updated_at": "2026-04-06T05:18:06.183Z",
+  "enriched_at": "2026-04-06T16:06:20.364Z"
 }

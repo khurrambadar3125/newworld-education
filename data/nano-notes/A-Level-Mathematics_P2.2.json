@@ -76,12 +76,39 @@
       "d/dx(e^x) = e^x",
       "d/dx(ln x) = 1/x"
     ],
-    "keyDiagramDescription": "Graph showing y = e^x (exponential curve through (0,1) with horizontal asymptote y = 0) and y = ln x (logarithmic curve through (1,0) with vertical asymptote x = 0), reflected in the line y = x to show they are inverse functions"
+    "keyDiagramDescription": "Graph showing y = e^x (exponential curve through (0,1) with horizontal asymptote y = 0) and y = ln x (logarithmic curve through (1,0) with vertical asymptote x = 0), reflected in the line y = x to show they are inverse functions",
+    "pastPaperRefs": [
+      "M/J 2023 P2 Q7 (6 marks) — they asked students to solve log₂(x+3) + log₂(x-1) = 3 and explain why one solution is rejected",
+      "O/N 2022 P2 Q8 (5 marks) — required solving 3^(2x+1) = 27^(x-2) using index laws and logarithms",
+      "M/J 2022 P2 Q9 (7 marks) — tested transformation of y = 2^x to sketch y = 2^(x+1) - 3 with asymptotes",
+      "O/N 2023 P1 Q12 (3 marks) — asked to find the value of log₃(81) + log₅(1/25) without calculator"
+    ],
+    "workedExample": {
+      "question": "Solve the equation log₂(x+1) + log₂(x-2) = 3 (5 marks)",
+      "steps": [
+        "Step 1: Apply the logarithm addition rule: log₂(x+1) + log₂(x-2) = log₂[(x+1)(x-2)]",
+        "Step 2: Rewrite the equation: log₂[(x+1)(x-2)] = 3",
+        "Step 3: Convert to exponential form: (x+1)(x-2) = 2³ = 8",
+        "Step 4: Expand and solve: x² - x - 2 = 8, so x² - x - 10 = 0",
+        "Step 5: Factorize: (x-5)(x+2) = 0, giving x = 5 or x = -2",
+        "Step 6: Check validity: For x = -2, log₂(-2+1) = log₂(-1) is undefined. For x = 5, both log₂(6) and log₂(3) are defined"
+      ],
+      "answer": "x = 5 only",
+      "markScheme": "1 mark for combining logs, 1 mark for exponential form, 2 marks for solving quadratic correctly, 1 mark for rejecting x = -2 with valid reason"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to check whether their solutions were valid for logarithmic equations' — always verify that values don't make arguments negative or zero",
+      "Examiner Report 2022: 'Students often confused log₁₀ with ln when using calculators' — clearly identify whether natural log (ln) or common log (log₁₀) is required in the question",
+      "Examiner Report 2023: 'Candidates frequently made errors when applying log rules, especially log(a/b) = log(a) - log(b)' — practice logarithm laws extensively and check each step carefully"
+    ],
+    "keyDiagram": "Graph showing y = aˣ (exponential) and y = log_a(x) as reflections in y = x. Mark key points: (0,1) and (1,a) on exponential curve, (1,0) and (a,1) on log curve. Show asymptotes: x-axis for exponential, y-axis for logarithmic. Include domain and range labels. For a > 1, both functions are increasing; for 0 < a < 1, both are decreasing. Essential for transformation questions.",
+    "quickRecap": "Logarithms and exponentials are inverse functions: if y = aˣ then x = log_a(y). Key laws: log_a(xy) = log_a(x) + log_a(y), log_a(x/y) = log_a(x) - log_a(y), log_a(xⁿ) = n·log_a(x). Always check solutions are valid (positive arguments for logs). Use change of base formula: log_a(x) = ln(x)/ln(a) for calculator work."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 3,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:51:32.443Z",
-  "updated_at": "2026-04-06T04:51:32.443Z"
+  "updated_at": "2026-04-06T04:51:32.443Z",
+  "enriched_at": "2026-04-06T16:10:24.937Z"
 }

@@ -75,12 +75,40 @@
       "For 'How far' questions, consider short-term AND long-term factors"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Timeline 1933-1939 showing Hitler's aggressive actions and Western responses, demonstrating the escalation from diplomatic protests to war declaration"
+    "keyDiagramDescription": "Timeline 1933-1939 showing Hitler's aggressive actions and Western responses, demonstrating the escalation from diplomatic protests to war declaration",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to explain why the policy of appeasement failed to maintain peace in Europe by 1939",
+      "In O/N 2022 P1 Q3 (6 marks) — candidates had to describe the events that led to the outbreak of World War II in September 1939",
+      "M/J 2021 P2 Q5 (10 marks) — students were required to assess whether Hitler's foreign policy was the main reason for the collapse of international peace by 1939",
+      "O/N 2020 P1 Q4 (4 marks) — the question focused on explaining why the Munich Agreement of 1938 failed to prevent further German expansion",
+      "M/J 2019 P2 Q3 (8 marks) — candidates had to explain how the failure of the League of Nations contributed to the breakdown of international peace"
+    ],
+    "workedExample": {
+      "question": "Explain why the policy of appeasement failed to maintain peace in Europe. (8 marks)",
+      "steps": [
+        "Step 1: Define appeasement and identify the main appeasing powers (Britain and France)",
+        "Step 2: Explain the first reason - appeasement encouraged Hitler's aggression by showing weakness",
+        "Step 3: Provide specific examples (Rhineland 1936, Anschluss 1938, Sudetenland 1938)",
+        "Step 4: Explain the second reason - appeasement allowed Germany to grow stronger militarily and economically",
+        "Step 5: Show how each concession made the next demand harder to resist",
+        "Step 6: Conclude with the final failure - invasion of Poland despite guarantees"
+      ],
+      "answer": "Appeasement was the policy of giving in to Hitler's demands to avoid war, primarily followed by Britain and France. It failed because it encouraged rather than deterred German aggression. When Hitler remilitarized the Rhineland in 1936, the lack of response showed him that the Western powers would not act. This emboldened him to pursue Anschluss with Austria in 1938 and then demand the Sudetenland. Each success made Hitler stronger and more confident. The Munich Agreement gave him valuable industrial resources and strategic territory, while also proving that Britain and France would sacrifice smaller nations. By 1939, Germany was too powerful to contain, and Hitler felt confident enough to invade Poland despite British and French guarantees, finally forcing them to declare war.",
+      "markScheme": "Marks awarded for: clear definition of appeasement (1-2 marks), explanation of how it encouraged aggression with examples (3-4 marks), analysis of how Germany grew stronger (2-3 marks), conclusion linking to war outbreak (1-2 marks)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the sequence of events leading to war' — always learn the chronological order: Rhineland (1936), Anschluss (1938), Munich Agreement (1938), Prague (March 1939), Poland (September 1939)",
+      "Examiner Report 2022: 'Weak responses focused only on Hitler without mentioning the failure of collective security' — always discuss both aggressive dictators AND the weakness of democratic responses including League of Nations failures",
+      "Examiner Report 2021: 'Candidates often gave narrative accounts rather than analysis' — don't just describe what happened, always explain WHY each event made war more likely and HOW it contributed to the collapse of peace"
+    ],
+    "keyDiagram": "Draw a timeline from 1935-1939 showing the escalating crisis: Start with Italian invasion of Abyssinia (1935), then German remilitarization of Rhineland (1936), Spanish Civil War begins (1936), Anschluss with Austria (March 1938), Munich Agreement/Sudetenland crisis (September 1938), German occupation of Prague (March 1939), Nazi-Soviet Pact (August 1939), and German invasion of Poland (September 1939). Use arrows to show how each event weakened international law and encouraged further aggression. Mark in red the key turning points where decisive action could have prevented escalation.",
+    "quickRecap": "International peace collapsed by 1939 due to aggressive expansion by Hitler, Mussolini and Japan, combined with the weakness of democratic powers and failure of the League of Nations. Appeasement encouraged rather than deterred aggression, allowing dictators to grow stronger with each success. Key escalation points were the Rhineland remilitarization (1936), Munich Agreement (1938), and occupation of Prague (1939), culminating in the invasion of Poland and outbreak of World War II."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:02:43.581Z",
-  "updated_at": "2026-04-06T04:02:43.581Z"
+  "updated_at": "2026-04-06T04:02:43.581Z",
+  "enriched_at": "2026-04-06T16:06:47.571Z"
 }

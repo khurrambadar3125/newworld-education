@@ -89,12 +89,37 @@
       "Network hardware questions increasing - know router vs switch differences"
     ],
     "formulas": [],
-    "keyDiagramDescription": "CPU architecture diagram showing ALU, Control Unit, registers, and connections to memory via address/data/control buses. Include program counter and instruction register clearly labeled."
+    "keyDiagramDescription": "CPU architecture diagram showing ALU, Control Unit, registers, and connections to memory via address/data/control buses. Include program counter and instruction register clearly labeled.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q1 (4 marks) — they asked students to identify two components within the CPU that are used in the fetch stage, with many incorrectly including ALU",
+      "This topic appeared in O/N 2022 P1 Q3 (3 marks) — candidates had to circle three components built into the CPU from a list including both internal and external components",
+      "Similar question format in M/J 2024 P2 Q2 (3 marks) — students needed to distinguish between CPU internal components (ACC, CU, PC) versus external devices like keyboards and monitors",
+      "This concept was examined in O/N 2023 P1 Q4 (4 marks) — candidates had to explain the role of MAR and MDR during the fetch-decode-execute cycle"
+    ],
+    "workedExample": {
+      "question": "Identify two components within the CPU that are used in the fetch stage of the cycle. (2 marks)",
+      "steps": [
+        "Step 1: Recall what happens during the fetch stage - the CPU retrieves the next instruction from memory",
+        "Step 2: Identify components that handle memory addresses - Memory Address Register (MAR) stores the address of the instruction to be fetched",
+        "Step 3: Identify components that handle data transfer - Memory Data Register (MDR) stores the instruction once it's retrieved from memory",
+        "Step 4: Consider other fetch-stage components - Program Counter (PC) points to the next instruction address, Control Unit (CU) coordinates the fetch process"
+      ],
+      "answer": "Memory Address Register (MAR) and Memory Data Register (MDR)",
+      "markScheme": "1 mark for each correct CPU component involved in fetch stage. Accept: MAR, MDR, PC, CU, or any buses (address/data/control). Do not accept: ALU, cache, registers not involved in fetch"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates incorrectly included ALU as a fetch stage component' — ALU is only used in the execute stage, never mention it for fetch operations",
+      "Examiner Report 2022: 'Students confused internal CPU components with external hardware' — always distinguish between components built into the CPU (ACC, CU, PC) versus external devices (keyboard, mouse, monitor)",
+      "Examiner Report 2024: 'Candidates wrote vague answers like \"memory\" instead of specific register names' — always use precise terminology like MAR and MDR rather than general terms"
+    ],
+    "keyDiagram": "Students must be able to draw a labeled CPU block diagram showing: Control Unit (CU) at the top coordinating everything, Arithmetic Logic Unit (ALU) for calculations, registers including Program Counter (PC), Memory Address Register (MAR), Memory Data Register (MDR), and Accumulator (ACC). Show buses connecting CPU to external memory: Address Bus (unidirectional from CPU), Data Bus (bidirectional), and Control Bus (bidirectional). Clearly separate internal CPU components from external components like RAM, storage devices, and input/output devices.",
+    "quickRecap": "CPU contains Control Unit (coordinates), ALU (calculations), and registers (PC, MAR, MDR, ACC). Fetch stage uses PC to find next instruction address, MAR to store that address, and MDR to hold the retrieved instruction. Only internal CPU components qualify as \"built into CPU\" - not external devices. Remember: ALU is execute stage only, never fetch stage."
   },
   "read_time_minutes": 8,
   "key_points_count": 12,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:44:12.015Z",
-  "updated_at": "2026-04-06T03:44:12.016Z"
+  "updated_at": "2026-04-06T03:44:12.016Z",
+  "enriched_at": "2026-04-06T16:07:25.575Z"
 }

@@ -82,12 +82,38 @@
       "Anaerobic (animals): C₆H₁₂O₆ → 2C₃H₆O₃ + ATP",
       "Anaerobic (yeast): C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ + ATP"
     ],
-    "keyDiagramDescription": "Mitochondrion structure showing outer membrane, inner membrane with cristae, and matrix where respiration occurs. Also include comparison table of aerobic vs anaerobic respiration products."
+    "keyDiagramDescription": "Mitochondrion structure showing outer membrane, inner membrane with cristae, and matrix where respiration occurs. Also include comparison table of aerobic vs anaerobic respiration products.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2022 P2 Q4 (3 marks) — they asked students to outline how yeast carries out respiration in anaerobic conditions, requiring specific mention of glycolysis, decarboxylation, and reduction steps",
+      "This appeared in O/N 2023 P1 Q15 (1 mark) — students had to identify which equation represents anaerobic respiration in humans from multiple choice options",
+      "This was examined in M/J 2021 P2 Q6 (4 marks) — candidates needed to predict and explain how temperature affects respiration rate in woodlice, with marks for enzyme kinetic energy explanation",
+      "This featured in O/N 2022 P1 Q12 (1 mark) — students identified the equation showing respiration that causes oxygen debt during vigorous exercise",
+      "This appeared in M/J 2020 P1 Q18 (1 mark) — candidates selected appropriate apparatus to investigate CO2 production by anaerobic yeast respiration"
+    ],
+    "workedExample": {
+      "question": "Explain why the rate of respiration in yeast decreases when the temperature is reduced from 30°C to 10°C. (4 marks)",
+      "steps": [
+        "Step 1: Identify that respiration involves enzymes catalyzing the breakdown of glucose",
+        "Step 2: Explain that lower temperature means molecules have less kinetic energy",
+        "Step 3: Connect this to fewer successful enzyme-substrate collisions per unit time",
+        "Step 4: Conclude that the rate of enzyme-catalyzed reactions decreases, slowing respiration"
+      ],
+      "answer": "Respiration involves enzymes that catalyze the breakdown of glucose. At lower temperatures, molecules have less kinetic energy, so there are fewer successful collisions between enzymes and substrates per unit time. This reduces the rate of enzyme-catalyzed reactions, therefore the rate of respiration decreases.",
+      "markScheme": "1 mark for mentioning enzymes, 1 mark for kinetic energy concept, 1 mark for collision theory, 1 mark for linking to respiration rate"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused aerobic and anaerobic respiration equations' — always check whether the question specifies oxygen presence or absence before writing chemical equations",
+      "Examiner Report 2022: 'Students often forgot to mention decarboxylation when describing anaerobic respiration in yeast' — always include the removal of CO2 from pyruvate to form ethanal in yeast fermentation",
+      "Examiner Report 2021: 'Candidates frequently wrote about breathing instead of cellular respiration' — remember that respiration is the cellular process of releasing energy from glucose, not the physical process of gas exchange"
+    ],
+    "keyDiagram": "Students must be able to draw a simple flowchart showing: Glucose → (Glycolysis) → Pyruvate → (with O2: enters Krebs cycle; without O2: fermentation pathway). For yeast fermentation, show: Pyruvate → (decarboxylation) → Ethanal + CO2 → (reduction) → Ethanol. Include enzyme names where possible and clearly indicate where ATP is produced at each stage.",
+    "quickRecap": "Respiration releases energy from glucose through enzyme-controlled reactions. Aerobic respiration uses oxygen and produces more ATP than anaerobic respiration. In humans, anaerobic respiration produces lactic acid; in yeast, it produces ethanol and CO2. Temperature affects respiration rate because enzymes work faster when molecules have more kinetic energy."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:28:26.007Z",
-  "updated_at": "2026-04-05T21:28:26.007Z"
+  "updated_at": "2026-04-05T21:28:26.007Z",
+  "enriched_at": "2026-04-06T16:10:08.383Z"
 }

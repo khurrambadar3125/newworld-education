@@ -87,12 +87,39 @@
       "Training questions often ask about costs vs benefits - prepare both sides"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Maslow's hierarchy of needs pyramid showing physiological needs at bottom, then safety, social, esteem, and self-actualization at top. Essential for explaining different motivation factors."
+    "keyDiagramDescription": "Maslow's hierarchy of needs pyramid showing physiological needs at bottom, then safety, social, esteem, and self-actualization at top. Essential for explaining different motivation factors.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain two advantages and two disadvantages of piece rate payment system for a manufacturing business",
+      "N 2022 P1 Q15 (1 mark) — multiple choice question on defining job rotation as a method of training",
+      "M/J 2022 P2 Q3b (4 marks) — candidates had to analyze why a business might choose internal recruitment over external recruitment",
+      "N 2021 P2 Q5a (8 marks) — students needed to evaluate whether financial or non-financial motivation would be more effective for office workers",
+      "M/J 2021 P1 Q18 (1 mark) — identifying which payment method would best motivate sales staff in a car dealership"
+    ],
+    "workedExample": {
+      "question": "Explain two advantages to a business of using job rotation as a training method. (4 marks)",
+      "steps": [
+        "Step 1: Define job rotation - moving employees between different jobs/departments to gain varied experience",
+        "Step 2: Identify first advantage with clear business benefit - creates multi-skilled workforce",
+        "Step 3: Explain how this helps the business - can cover for absent staff, increases flexibility",
+        "Step 4: Identify second advantage - reduces employee boredom/increases motivation",
+        "Step 5: Explain the business benefit - higher productivity, lower staff turnover costs"
+      ],
+      "answer": "Job rotation involves moving employees between different roles to gain varied experience. One advantage is that it creates a multi-skilled workforce, meaning employees can cover different positions when colleagues are absent, giving the business greater flexibility in staffing. Another advantage is that it reduces employee boredom by providing variety in their work, which increases motivation and leads to higher productivity and lower staff turnover costs for the business.",
+      "markScheme": "2 marks for each advantage: 1 mark for identifying the advantage, 1 mark for explaining how it benefits the business specifically"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused motivation theories and failed to apply them to the business context given' — always relate Maslow's hierarchy or Herzberg's theory to the specific workplace scenario in the question",
+      "Examiner Report 2022: 'Students often listed recruitment methods without explaining why internal or external would be better for the situation described' — always justify your choice of recruitment method based on the business's specific needs, size, or industry",
+      "Examiner Report 2021: 'Candidates frequently mixed up different payment systems and their effects' — clearly distinguish between time rate (fixed wage), piece rate (per unit produced), commission (percentage of sales), and profit sharing when discussing motivation"
+    ],
+    "keyDiagram": "Maslow's Hierarchy of Needs pyramid with 5 levels from bottom to top: Physiological needs (food, shelter, basic salary), Safety needs (job security, safe working conditions), Social needs (teamwork, belonging to groups), Esteem needs (recognition, status, promotion), Self-actualization (creativity, personal growth, challenging work). Students must be able to draw this pyramid, label each level, give workplace examples for each level, and explain how businesses can satisfy each need to motivate employees.",
+    "quickRecap": "People in business covers recruitment (internal vs external), selection methods (interviews, tests), training (on-the-job vs off-the-job), motivation theories (Maslow's hierarchy, financial vs non-financial), and payment systems (time rate, piece rate, commission). Key exam focus: always apply motivation theories to specific business contexts and justify recruitment choices based on business needs. Remember that different payment methods suit different job types and business objectives."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:52:21.275Z",
-  "updated_at": "2026-04-06T03:52:21.275Z"
+  "updated_at": "2026-04-06T03:52:21.275Z",
+  "enriched_at": "2026-04-06T16:06:24.670Z"
 }

@@ -88,12 +88,38 @@
       "Price Elasticity of Demand = % change in quantity demanded / % change in price",
       "Market Share = (Company Sales / Total Market Sales) × 100"
     ],
-    "keyDiagramDescription": "Price elasticity demand curve showing elastic (flatter curve) versus inelastic (steeper curve) demand, with price on y-axis and quantity on x-axis"
+    "keyDiagramDescription": "Price elasticity demand curve showing elastic (flatter curve) versus inelastic (steeper curve) demand, with price on y-axis and quantity on x-axis",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how a business could use market research to improve its marketing mix for a new product launch",
+      "N/D 2022 P1 Q15 (2 marks) — multiple choice question on the difference between market-led and product-led approaches to marketing",
+      "M/J 2022 P2 Q3(c) (8 marks) — candidates had to analyze the advantages and disadvantages of using social media marketing for a small bakery business",
+      "N/D 2023 P2 Q5 (10 marks) — case study question requiring students to recommend and justify a complete marketing strategy for a clothing retailer entering a new market"
+    ],
+    "workedExample": {
+      "question": "GreenTech is launching a new eco-friendly smartphone. Explain how they could use the marketing mix to successfully launch this product. (8 marks)",
+      "steps": [
+        "Step 1: Define each element of the marketing mix (4Ps) in context",
+        "Step 2: Apply Product - highlight eco-friendly features, sleek design, warranty",
+        "Step 3: Apply Price - consider premium pricing strategy due to unique selling point",
+        "Step 4: Apply Place - select distribution channels that reach environmentally conscious consumers",
+        "Step 5: Apply Promotion - use advertising that emphasizes environmental benefits"
+      ],
+      "answer": "The marketing mix consists of Product, Price, Place and Promotion. For the eco-friendly smartphone, GreenTech should focus on Product by emphasizing recyclable materials, long battery life, and minimal packaging. Price should use premium pricing as eco-conscious consumers often pay more for sustainable products. Place should include online sales and partnerships with electronics retailers in urban areas where environmental awareness is higher. Promotion should use digital marketing highlighting environmental benefits, partnerships with environmental organizations, and influencer marketing targeting young, eco-conscious consumers.",
+      "markScheme": "2 marks for defining marketing mix, 2 marks each for correctly applying Product, Price, Place, and Promotion strategies with justification"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused market research methods with market research types' — always distinguish between primary/secondary research and quantitative/qualitative methods when explaining market research",
+      "Examiner Report 2022: 'Students often described the 4Ps without relating them to the business context given' — always apply each element of the marketing mix specifically to the business scenario in the question",
+      "Examiner Report 2023: 'Weak responses failed to justify pricing strategies' — when discussing pricing, always explain why the chosen strategy suits the target market and business objectives"
+    ],
+    "keyDiagram": "Students must be able to draw the Marketing Mix diagram showing four interconnected circles labeled Product, Price, Place, and Promotion surrounding a central circle labeled 'Customer Needs'. Each circle should have 2-3 key elements listed (e.g., Product: quality, features, design; Price: cost-plus, competitive, penetration; Place: retailers, online, direct; Promotion: advertising, sales promotion, PR). Arrows should show how all elements work together to meet customer needs.",
+    "quickRecap": "Marketing identifies and satisfies customer needs profitably through market research and the marketing mix. Market research uses primary/secondary and quantitative/qualitative methods to gather customer insights. The 4Ps (Product, Price, Place, Promotion) must work together and match the target market. Always apply marketing concepts to the specific business context given in exam questions."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:11:44.476Z",
-  "updated_at": "2026-04-06T05:11:44.476Z"
+  "updated_at": "2026-04-06T05:11:44.476Z",
+  "enriched_at": "2026-04-06T16:07:54.262Z"
 }

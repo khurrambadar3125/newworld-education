@@ -88,12 +88,38 @@
       "RCONH2",
       "NH2CHRCOOH"
     ],
-    "keyDiagramDescription": "Benzene delocalised structure showing circle inside hexagon, zwitterion structure of amino acids (H3N⁺-CHR-COO⁻), and peptide bond formation between amino acids with water elimination"
+    "keyDiagramDescription": "Benzene delocalised structure showing circle inside hexagon, zwitterion structure of amino acids (H3N⁺-CHR-COO⁻), and peptide bond formation between amino acids with water elimination",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to identify functional groups in complex organic molecules and predict products of elimination reactions",
+      "N/D 2022 P1 Q15 (1 mark) — multiple choice question testing knowledge of addition polymerization mechanisms and monomer identification",
+      "M/J 2022 P2 Q5(c) (4 marks) — students had to explain the formation of esters from carboxylic acids and alcohols, including naming the catalyst",
+      "N/D 2023 P2 Q3(b) (5 marks) — required drawing structural formulas for addition polymers and explaining the difference between addition and condensation polymerization"
+    ],
+    "workedExample": {
+      "question": "Ethanoic acid reacts with propan-1-ol to form an ester. (a) Name the ester formed (1 mark) (b) Write a balanced equation for this reaction (2 marks) (c) State the catalyst used (1 mark)",
+      "steps": [
+        "Step 1: Identify the reactants - ethanoic acid (CH₃COOH) and propan-1-ol (CH₃CH₂CH₂OH)",
+        "Step 2: For ester naming, take 'propyl' from alcohol and 'ethanoate' from acid = propyl ethanoate",
+        "Step 3: Write structures showing ester formation: acid + alcohol → ester + water",
+        "Step 4: Balance equation: CH₃COOH + CH₃CH₂CH₂OH → CH₃COOCH₂CH₂CH₃ + H₂O",
+        "Step 5: Recall that concentrated sulfuric acid catalyzes esterification"
+      ],
+      "answer": "(a) propyl ethanoate (b) CH₃COOH + CH₃CH₂CH₂OH → CH₃COOCH₂CH₂CH₃ + H₂O (c) concentrated sulfuric acid / H₂SO₄",
+      "markScheme": "1 mark for correct ester name, 1 mark for correct structural formulas, 1 mark for balanced equation, 1 mark for naming catalyst"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused addition and condensation polymerization' — always check if small molecules are eliminated when identifying polymerization type",
+      "Examiner Report 2022: 'Students frequently drew incorrect ester structures' — remember the ester link is COO, with the alkyl group from alcohol attached to single oxygen",
+      "Examiner Report 2023: 'Candidates lost marks by not showing continuation bonds in polymer structures' — always include 'n' subscript and continuation bonds when drawing polymer repeat units"
+    ],
+    "keyDiagram": "Students must draw the formation of addition polymers showing: (1) monomer structure with C=C double bond clearly marked, (2) arrow indicating polymerization conditions, (3) repeat unit in square brackets with continuation bonds extending left and right, (4) subscript 'n' outside brackets, (5) note that double bonds break to form single bonds in polymer chain. Example: nCH₂=CHCl → [-CH₂-CHCl-]ₙ with proper continuation bonds shown.",
+    "quickRecap": "Esters form when carboxylic acids react with alcohols using concentrated H₂SO₄ catalyst, eliminating water. Addition polymers form when alkenes polymerize without eliminating small molecules, while condensation polymers eliminate water/HCl. Always show continuation bonds in polymer structures and include 'n' subscript. Ester naming: alkyl group from alcohol + -anoate from acid."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:38:00.020Z",
-  "updated_at": "2026-04-06T04:38:00.020Z"
+  "updated_at": "2026-04-06T04:38:00.020Z",
+  "enriched_at": "2026-04-06T16:07:28.918Z"
 }

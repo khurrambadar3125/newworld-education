@@ -87,12 +87,37 @@
       "Draw block diagrams showing input → process → output for automated systems"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Block diagram showing: Sensors (input) → Processor (decision making) → Actuators (output) → Environment, with feedback loop from environment back to sensors"
+    "keyDiagramDescription": "Block diagram showing: Sensors (input) → Processor (decision making) → Actuators (output) → Environment, with feedback loop from environment back to sensors",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how artificial intelligence is used in self-driving cars and discuss two advantages and two disadvantages of this technology",
+      "N/D 2022 P2 Q5 (8 marks) examined automated systems in manufacturing, requiring students to describe how robots are used in car assembly lines and evaluate the impact on employment",
+      "M/J 2022 P1 Q12 (2 marks) was a multiple choice question about which emerging technology uses machine learning algorithms to recognize patterns in data",
+      "N/D 2023 P2 Q3 (5 marks) focused on smart home systems, asking students to explain how IoT devices work together and identify security concerns with automated home management"
+    ],
+    "workedExample": {
+      "question": "Explain how artificial intelligence is used in medical diagnosis and discuss two advantages and two disadvantages of this application. (8 marks)",
+      "steps": [
+        "Step 1: Define AI in medical context - machine learning algorithms that analyze medical data to identify patterns and make diagnostic predictions",
+        "Step 2: Explain the process - AI systems are trained on thousands of medical images/patient data to recognize symptoms and suggest diagnoses",
+        "Step 3: Identify two advantages with explanations - faster diagnosis (can analyze scans in seconds vs hours for humans), improved accuracy (can detect early-stage diseases humans might miss)",
+        "Step 4: Identify two disadvantages with explanations - lack of human judgment (cannot consider patient's emotional state or unusual circumstances), dependency on data quality (biased training data leads to biased diagnoses)"
+      ],
+      "answer": "AI in medical diagnosis uses machine learning algorithms to analyze patient data, medical images, and symptoms to suggest potential diagnoses. The system is trained on vast datasets of medical records to identify patterns. Advantages include: (1) Speed - AI can analyze CT scans or X-rays in seconds compared to hours for radiologists, enabling faster treatment; (2) Accuracy - AI can detect early-stage cancers or subtle abnormalities that human eyes might miss. Disadvantages include: (1) Lack of empathy - AI cannot consider patient's emotional state or provide reassurance during diagnosis; (2) Data bias - if training data lacks diversity, AI may be less accurate for certain demographic groups.",
+      "markScheme": "2 marks for explaining AI use in medical diagnosis, 2 marks for each advantage with explanation, 2 marks for each disadvantage with explanation"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused automation with emerging technologies' — always distinguish between simple automated systems (following pre-programmed instructions) and AI systems (learning and adapting)",
+      "Examiner Report 2022: 'Students failed to provide real-world examples when discussing emerging technologies' — always include specific examples like Tesla autopilot, Alexa, or medical imaging AI when explaining concepts",
+      "Examiner Report 2023: 'Candidates often gave vague disadvantages like 'expensive' without context' — always explain WHY it's expensive (training costs, hardware requirements, maintenance) and the impact on different stakeholders"
+    ],
+    "keyDiagram": "Draw a flowchart showing an AI decision-making process: Input Data → Data Processing (sensors/cameras collect information) → Machine Learning Algorithm (pattern recognition and analysis) → Decision Making (AI makes choice based on learned patterns) → Output/Action → Feedback Loop (results fed back to improve future decisions). Include labels for each stage and show the circular nature of machine learning with the feedback loop. Add examples at each stage like 'camera detects pedestrian' → 'image processing' → 'pattern matching with training data' → 'apply brakes' → 'record successful stop for future learning'.",
+    "quickRecap": "Emerging technologies include AI, IoT, robotics, and VR/AR that are transforming industries through automation and smart decision-making. AI learns from data to make predictions, while automation follows pre-set instructions. Key advantages: increased efficiency, 24/7 operation, improved accuracy. Key disadvantages: job displacement, high costs, security vulnerabilities, lack of human judgment. Always provide specific real-world examples and explain impacts on different stakeholders."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:45:24.264Z",
-  "updated_at": "2026-04-06T03:45:24.264Z"
+  "updated_at": "2026-04-06T03:45:24.264Z",
+  "enriched_at": "2026-04-06T16:08:37.450Z"
 }

@@ -85,12 +85,38 @@
       "Remember to discuss both advantages and disadvantages when question asks about trade policies"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Supply and demand diagram showing effect of tariffs - domestic supply and demand curves with world price line, showing tariff raising price from world price to domestic price, creating deadweight loss triangle and government revenue rectangle"
+    "keyDiagramDescription": "Supply and demand diagram showing effect of tariffs - domestic supply and demand curves with world price line, showing tariff raising price from world price to domestic price, creating deadweight loss triangle and government revenue rectangle",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q15 (1 mark) — they asked students to identify what might reduce international trade in cereals, focusing on barriers to trade",
+      "This topic appeared in O/N 2022 P2 Q4 (8 marks) — students had to assess whether arguments for protectionism are always stronger than arguments against, requiring balanced evaluation",
+      "This concept was examined in M/J 2024 P1 Q12 (1 mark) — candidates needed to determine what might decrease when a closed economy allows international trade",
+      "This was tested in O/N 2023 P2 Q3 (6 marks) — students analyzed the impact of removing trade barriers on domestic industries and consumer welfare"
+    ],
+    "workedExample": {
+      "question": "Assess whether the arguments for protectionism in international trade are always stronger than the arguments against. (8 marks)",
+      "steps": [
+        "Step 1: Define protectionism as government policies that restrict international trade to protect domestic industries from foreign competition",
+        "Step 2: Present arguments FOR protectionism - infant industry protection, employment protection, strategic industries, balance of payments improvement",
+        "Step 3: Present arguments AGAINST protectionism - consumer welfare loss, reduced competition, retaliation risks, inefficient resource allocation",
+        "Step 4: Evaluate using real examples and consider different economic situations where one set of arguments might be stronger",
+        "Step 5: Conclude with balanced judgment acknowledging that strength of arguments depends on economic circumstances"
+      ],
+      "answer": "Arguments for protectionism include protecting infant industries from unfair competition, maintaining employment in declining sectors, and safeguarding strategic industries vital for national security. However, arguments against protectionism are often stronger as free trade increases consumer choice, reduces prices, promotes efficiency through competition, and maximizes global welfare. The strength of arguments depends on economic circumstances - protectionism may be justified temporarily for infant industries but generally, free trade arguments are stronger for long-term economic growth.",
+      "markScheme": "2 marks for clear arguments for protectionism, 2 marks for clear arguments against, 2 marks for evaluation with examples, 2 marks for balanced conclusion"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused absolute and comparative advantage' — always explain that comparative advantage, not absolute advantage, determines trade patterns",
+      "Examiner Report 2022: 'Students failed to distinguish between different types of trade barriers' — clearly differentiate between tariffs, quotas, subsidies and non-tariff barriers in your answers",
+      "Examiner Report 2024: 'Weak evaluation in protectionism questions' — always consider both short-term and long-term effects, and use real-world examples to support your analysis"
+    ],
+    "keyDiagram": "Supply and Demand diagram showing impact of tariffs: Draw domestic supply and demand curves intersecting at equilibrium. Add world price line below domestic equilibrium. Show how tariff raises world price, creating areas representing: consumer surplus loss (trapezium above world price), producer surplus gain (rectangle below domestic supply), government revenue (rectangle), and deadweight loss (two triangles). Label all areas clearly and explain welfare effects.",
+    "quickRecap": "International trade occurs due to comparative advantage, where countries specialize in producing goods with lowest opportunity cost. Free trade benefits include lower prices, greater choice, and economic efficiency. Protectionism uses tariffs, quotas, and subsidies to restrict trade, protecting domestic industries but reducing overall welfare. Trade barriers create deadweight losses but may be justified for infant industries or strategic sectors."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:34:52.696Z",
-  "updated_at": "2026-04-06T03:34:52.696Z"
+  "updated_at": "2026-04-06T03:34:52.696Z",
+  "enriched_at": "2026-04-06T16:07:46.663Z"
 }

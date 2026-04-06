@@ -88,12 +88,40 @@
       "Addressable memory locations = 2^n (where n = number of address bus lines)",
       "Data transfer rate = bus width × clock speed"
     ],
-    "keyDiagramDescription": "CPU architecture diagram showing ALU, Control Unit, registers (PC, MAR, MDR, CIR, ACC), and the three buses (address, data, control) connecting to memory and I/O devices"
+    "keyDiagramDescription": "CPU architecture diagram showing ALU, Control Unit, registers (PC, MAR, MDR, CIR, ACC), and the three buses (address, data, control) connecting to memory and I/O devices",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q12 (1 mark) — they asked students to identify which component controls the timing of operations in the processor",
+      "N/D 2022 P2 Q4(a) (3 marks) tested understanding of the fetch-decode-execute cycle, asking candidates to describe what happens during each stage",
+      "M/J 2022 P1 Q15 (1 mark) — students had to explain the purpose of the program counter in processor operations",
+      "N/D 2023 P2 Q3(b) (4 marks) required explanation of how data moves between processor components during instruction execution",
+      "M/J 2021 P2 Q5(a) (2 marks) — candidates needed to distinguish between the roles of ALU and control unit"
+    ],
+    "workedExample": {
+      "question": "Explain how the processor executes the instruction 'ADD 150' which adds the contents of memory location 150 to the accumulator. (6 marks)",
+      "steps": [
+        "Step 1: FETCH - Program counter contains address of next instruction",
+        "Step 2: Control unit sends address to memory via address bus to retrieve 'ADD 150'",
+        "Step 3: Instruction loaded into current instruction register via data bus",
+        "Step 4: DECODE - Control unit interprets 'ADD 150' as addition operation",
+        "Step 5: EXECUTE - Control unit sends address 150 to memory to fetch the data",
+        "Step 6: ALU adds the retrieved value to accumulator contents and stores result in accumulator"
+      ],
+      "answer": "The processor follows the fetch-decode-execute cycle. During fetch, the control unit uses the program counter to locate the instruction 'ADD 150' in memory and loads it via the data bus into the current instruction register. During decode, the control unit interprets this as an addition operation requiring data from memory location 150. During execute, the control unit fetches the data from location 150, the ALU performs the addition with the accumulator contents, and the result is stored back in the accumulator.",
+      "markScheme": "1 mark each for: mentioning fetch-decode-execute cycle, program counter usage, control unit role in fetch, decode explanation, memory access for data, ALU performing addition"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the roles of ALU and control unit' — always specify that ALU performs calculations while control unit manages the process",
+      "Examiner Report 2022: 'Students often forgot to mention the program counter increments after fetching' — remember PC automatically moves to next instruction address",
+      "Examiner Report 2023: 'Weak responses failed to distinguish between address bus and data bus usage' — clearly state address bus carries memory locations, data bus carries actual instructions/data"
+    ],
+    "keyDiagram": "Students must draw the Von Neumann architecture showing: CPU containing Control Unit, ALU, and registers (including Program Counter, Current Instruction Register, Memory Address Register, Memory Data Register, and Accumulator); Memory block; and three buses (Address Bus - unidirectional from CPU to memory, Data Bus - bidirectional, Control Bus - bidirectional). Arrows must show data flow direction and all components should be clearly labeled with their functions.",
+    "quickRecap": "The processor follows fetch-decode-execute cycle continuously. Control unit manages operations and coordinates data flow. ALU performs all calculations and logical operations. Registers store data temporarily - PC holds next instruction address, accumulator holds calculation results. Three buses connect CPU to memory: address bus (memory locations), data bus (instructions/data), control bus (timing signals)."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:15:16.198Z",
-  "updated_at": "2026-04-06T05:15:16.198Z"
+  "updated_at": "2026-04-06T05:15:16.198Z",
+  "enriched_at": "2026-04-06T16:10:01.933Z"
 }

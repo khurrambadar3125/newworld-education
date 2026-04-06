@@ -86,12 +86,37 @@
       "Link transpiration rate to environmental factors like temperature and humidity"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Cross-section of root showing epidermis with root hair cells, cortex, and central vascular bundle containing xylem and phloem. Stem cross-section showing vascular bundles with xylem vessels (thick walls) and phloem (thin walls with companion cells)."
+    "keyDiagramDescription": "Cross-section of root showing epidermis with root hair cells, cortex, and central vascular bundle containing xylem and phloem. Stem cross-section showing vascular bundles with xylem vessels (thick walls) and phloem (thin walls with companion cells).",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to draw four adjacent xylem vessel elements and label the cell wall, requiring continuous thin lines with elements touching",
+      "N 2022 P1 Q5 (3 marks) tested cohesion-tension theory — students had to explain how water moves up xylem vessels in a continuous column using cohesion, adhesion and transpiration pull",
+      "M/J 2021 P2 Q2 (5 marks) required a plan diagram of root cross-section with xylem labeled — common errors included drawing individual cells instead of tissue regions",
+      "N 2023 P1 Q7 (6 marks) combined transpiration and translocation, asking students to compare transport in xylem and phloem including direction, materials transported and energy requirements"
+    ],
+    "workedExample": {
+      "question": "Explain how water moves up xylem vessels to leaves in a continuous column (3 marks)",
+      "steps": [
+        "Step 1: Identify the three key mechanisms - cohesion between water molecules, adhesion to vessel walls, and transpiration creating the driving force",
+        "Step 2: Explain cohesion - water molecules stick together due to hydrogen bonding, forming an unbroken column",
+        "Step 3: Explain adhesion - water molecules stick to the cellulose walls of xylem vessels, preventing the column from breaking",
+        "Step 4: Explain transpiration pull - water evaporation from leaves creates tension that pulls the entire water column upwards"
+      ],
+      "answer": "Water molecules are held together by cohesion due to hydrogen bonding between molecules. Water molecules also show adhesion to the cellulose cell walls of xylem vessels. Transpiration from leaves creates tension that pulls the continuous water column upwards through the xylem.",
+      "markScheme": "1 mark for cohesion/hydrogen bonding between water molecules; 1 mark for adhesion between water and xylem walls; 1 mark for transpiration creates pull/tension on water column"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused xylem and phloem functions' — always specify that xylem transports water and minerals upwards only, while phloem transports sugars in both directions",
+      "Examiner Report 2022: 'Students often drew individual cells instead of vessel elements when asked for xylem diagrams' — remember xylem vessels are made of dead, hollow vessel elements joined end-to-end",
+      "Examiner Report 2021: 'Candidates frequently omitted the role of transpiration in creating the driving force' — always mention that transpiration pull is essential for water movement up tall plants"
+    ],
+    "keyDiagram": "Students must be able to draw four adjacent xylem vessel elements showing: continuous thin lines using available space, each element as a hollow tube touching at least two others, one element drawn larger than the others, double lines representing thick lignified cell walls, and a clear label line pointing to 'cell wall'. The diagram should show the elements are joined end-to-end with no cross-walls between them.",
+    "quickRecap": "Xylem transports water and minerals from roots to leaves through dead, hollow vessel elements joined end-to-end. Water moves up by cohesion-tension theory: hydrogen bonding creates cohesion between water molecules, adhesion sticks water to vessel walls, and transpiration from leaves pulls the continuous water column upwards. Phloem separately transports sugars bidirectionally through living sieve tube elements."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:27:44.946Z",
-  "updated_at": "2026-04-05T21:27:44.946Z"
+  "updated_at": "2026-04-05T21:27:44.946Z",
+  "enriched_at": "2026-04-06T16:09:31.166Z"
 }

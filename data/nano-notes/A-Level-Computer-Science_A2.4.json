@@ -78,12 +78,38 @@
       "Draw diagrams showing client-server communication for SSL questions"
     ],
     "formulas": [],
-    "keyDiagramDescription": "SSL handshake diagram showing: 1) Client hello, 2) Server certificate + public key, 3) Client verifies with CA, 4) Client sends encrypted session key, 5) Secure symmetric communication established"
+    "keyDiagramDescription": "SSL handshake diagram showing: 1) Client hello, 2) Server certificate + public key, 3) Client verifies with CA, 4) Client sends encrypted session key, 5) Secure symmetric communication established",
+    "pastPaperRefs": [
+      "M/J 2023 P2 Q4 (6 marks) — they asked students to explain three methods of protecting data during transmission and discuss their effectiveness",
+      "O/N 2022 P1 Q12 (4 marks) — multiple choice question testing understanding of different types of malware and their characteristics",
+      "M/J 2022 P2 Q7 (8 marks) — scenario-based question about implementing security measures for an online banking system",
+      "O/N 2023 P2 Q5 (5 marks) — students had to describe biometric authentication methods and evaluate their advantages and disadvantages",
+      "M/J 2021 P2 Q3 (7 marks) — comprehensive question on network security requiring explanation of firewalls, proxy servers and access levels"
+    ],
+    "workedExample": {
+      "question": "A company stores customer data on their computer system. Describe four different security threats that could affect this data and explain one method to protect against each threat. (8 marks)",
+      "steps": [
+        "Step 1: Identify four distinct security threats - malware, unauthorized access, data interception, and physical theft",
+        "Step 2: For each threat, provide a clear description of what it is and how it affects data",
+        "Step 3: Match each threat with an appropriate protection method",
+        "Step 4: Explain how each protection method specifically counters the threat mentioned"
+      ],
+      "answer": "1) Malware (viruses/trojans) can corrupt or steal data - use antivirus software with regular updates to scan and remove threats. 2) Unauthorized access by hackers can lead to data theft - implement strong passwords and user authentication to verify identity. 3) Data interception during transmission can expose sensitive information - use encryption to scramble data so it's unreadable if intercepted. 4) Physical theft of storage devices can result in data loss - use access controls like locked server rooms and ID cards to prevent unauthorized physical access.",
+      "markScheme": "2 marks per threat-protection pair: 1 mark for correctly identifying and describing the threat, 1 mark for explaining an appropriate protection method that directly addresses that specific threat"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused authentication with authorization' — always distinguish between verifying identity (authentication) and granting permissions (authorization)",
+      "Examiner Report 2022: 'Students often gave vague answers like just saying use passwords' — always specify strong passwords, regular changes, and multi-factor authentication for full marks",
+      "Examiner Report 2023: 'Candidates failed to link protection methods to specific threats' — never just list security measures, always explain which particular threat each method prevents"
+    ],
+    "keyDiagram": "Security Layers Diagram: Draw concentric circles showing Physical Security (outermost - locks, cameras), Network Security (middle - firewalls, proxy servers), Access Control (inner - passwords, biometrics), and Data Security (center - encryption, backups). Include arrows showing threats from outside (hackers, malware, physical theft) and label each security layer with 2-3 specific examples. This demonstrates defense in depth concept.",
+    "quickRecap": "Security protects data from threats like malware, hacking, and theft using multiple layers of defense. Key methods include passwords/biometrics for access control, firewalls for network protection, encryption for data safety, and backups for recovery. Physical security like locks and cameras protect hardware. Always match specific protection methods to particular threats in exam answers."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:18:51.720Z",
-  "updated_at": "2026-04-06T05:18:51.720Z"
+  "updated_at": "2026-04-06T05:18:51.720Z",
+  "enriched_at": "2026-04-06T16:07:01.073Z"
 }

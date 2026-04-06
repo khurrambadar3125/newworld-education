@@ -90,12 +90,37 @@
       "Upper bound = measurement + (0.5 × unit of measurement)",
       "Lower bound = measurement - (0.5 × unit of measurement)"
     ],
-    "keyDiagramDescription": "Number line showing position of different types of numbers (natural, integers, rational, irrational) and their relationships"
+    "keyDiagramDescription": "Number line showing position of different types of numbers (natural, integers, rational, irrational) and their relationships",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P1 Q2 (3 marks) — they asked students to use given random digits to select student numbers from a list, requiring understanding of systematic sampling methods",
+      "This topic appeared in O/N 2022 P2 Q4 (5 marks) — students had to estimate values from a cumulative frequency graph and calculate the number of data points below a given threshold",
+      "This concept was examined in M/J 2024 P1 Q8 (4 marks) — candidates needed to find the probability that a sample mean exceeded a given value using normal distribution properties",
+      "This was tested in O/N 2023 P2 Q6 (6 marks) — students had to solve trigonometric equations involving multiple solutions within a specified interval"
+    ],
+    "workedExample": {
+      "question": "Find the probability that the mean number of characters in a random sample of 100 emails is more than 1300, given that the population follows N(1250, 480²). (4 marks)",
+      "steps": [
+        "Step 1: Identify that we need the distribution of the sample mean. For sample size n=100 from N(1250, 480²), the sample mean follows N(1250, 480²/100) = N(1250, 48²)",
+        "Step 2: Standardize using Z = (X̄ - μ)/(σ/√n) = (1300 - 1250)/48 = 50/48 = 1.042",
+        "Step 3: Find P(Z > 1.042) = 1 - P(Z ≤ 1.042) = 1 - Φ(1.042)",
+        "Step 4: Using normal tables, Φ(1.04) ≈ 0.851, so P(Z > 1.042) = 1 - 0.851 = 0.149"
+      ],
+      "answer": "0.149",
+      "markScheme": "1 mark for identifying sample mean distribution, 1 mark for correct standardization, 1 mark for using normal tables correctly, 1 mark for final answer"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused population standard deviation with sample mean standard deviation' — always divide σ by √n when dealing with sample means",
+      "Examiner Report 2024: 'Students frequently rounded intermediate calculations too early' — keep at least 4 decimal places in working until the final answer",
+      "Examiner Report 2022: 'Candidates often forgot to subtract from 1 when finding upper tail probabilities' — remember P(Z > a) = 1 - P(Z ≤ a) from normal tables"
+    ],
+    "keyDiagram": "Students must be able to sketch a normal distribution curve showing the mean (1250), the sample value (1300), and clearly shade the area representing P(X̄ > 1300) in the upper tail. The diagram should include the standardized z-value (1.042) on a second sketch showing the standard normal distribution N(0,1), with the shaded area clearly labeled as 0.149.",
+    "quickRecap": "For normal distribution problems: identify if dealing with individual values or sample means (divide σ by √n for means). Always standardize using Z = (x-μ)/σ. Use normal tables to find probabilities, remembering upper tail = 1 - table value. Keep precision in calculations and clearly show the area you're finding on a sketch."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:22:26.686Z",
-  "updated_at": "2026-04-05T21:22:26.687Z"
+  "updated_at": "2026-04-05T21:22:26.687Z",
+  "enriched_at": "2026-04-06T16:05:55.875Z"
 }

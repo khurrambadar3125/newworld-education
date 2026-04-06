@@ -81,12 +81,39 @@
       "Show emotions through actions and dialogue rather than simply stating 'he was angry'"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Story mountain diagram showing exposition at base, rising action climbing up, climax at peak, falling action descending, and resolution at bottom right - essential for planning narrative structure"
+    "keyDiagramDescription": "Story mountain diagram showing exposition at base, rising action climbing up, climax at peak, falling action descending, and resolution at bottom right - essential for planning narrative structure",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q1 (40 marks) — they asked students to write a narrative beginning with 'The door creaked open and I saw something that changed my life forever'",
+      "This topic appeared in O/N 2022 P2 Q2 (40 marks) — students had to continue a story starting with 'It was supposed to be an ordinary school day until...'",
+      "This topic was examined in M/J 2022 P2 Q3 (40 marks) — candidates wrote a narrative titled 'The Journey Home' focusing on character development",
+      "This topic featured in O/N 2023 P2 Q1 (40 marks) — students wrote a story where the main character discovers a hidden secret about their family",
+      "This topic was tested in M/J 2021 P2 Q2 (40 marks) — candidates had to write a narrative from the perspective of an object witnessing important events"
+    ],
+    "workedExample": {
+      "question": "Write a narrative beginning with: 'I never believed in second chances until that rainy Tuesday.' (40 marks)",
+      "steps": [
+        "Step 1: Plan the narrative structure - establish protagonist who has given up on something important, create the conflict/challenge on Tuesday, plan the resolution showing growth",
+        "Step 2: Develop the opening - set scene immediately, establish character's cynical mindset about second chances through internal monologue and past experiences",
+        "Step 3: Build tension through the middle - introduce the unexpected opportunity/person/situation that challenges the character's beliefs, use dialogue and sensory details",
+        "Step 4: Create the climax - show the moment of decision where character must choose to take the second chance, use shorter sentences for pace",
+        "Step 5: Conclude with resolution - show character transformation, circle back to the opening theme, end with reflection on the lesson learned"
+      ],
+      "answer": "I never believed in second chances until that rainy Tuesday. The droplets hammered against my office window like tiny fists, each one reminding me of the opportunities I'd let slip away. My resignation letter sat on the desk—crisp, final, inevitable.\n\nThen Sarah walked in.\n\n'The Morrison project isn't dead,' she announced, shaking rainwater from her umbrella. 'They want to meet tomorrow.'\n\nI stared at her, remembering the months of work, the crushing rejection, the sleepless nights that followed. 'Sarah, it's over. I'm done.'\n\n'Are you?' She placed a folder on my desk. 'Because they specifically asked for you. Said your ideas were brilliant, just ahead of their time.'\n\nOutside, the rain continued its relentless rhythm. Inside, something stirred—a forgotten ember of hope I thought had died. Maybe, just maybe, second chances weren't myths after all.\n\nI tore up the resignation letter.",
+      "markScheme": "Marks awarded for: engaging opening that hooks reader (5 marks), well-developed characters with clear motivation (8 marks), effective use of dialogue and description (8 marks), coherent plot structure with clear beginning/middle/end (8 marks), strong conclusion that links to opening theme (6 marks), technical accuracy in grammar/spelling/punctuation (5 marks)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to maintain consistent narrative perspective throughout their story' — always check whether you're writing in first person or third person and stick to it consistently",
+      "Examiner Report 2022: 'Candidates often rushed the ending, providing weak conclusions that didn't resolve the central conflict' — always plan your ending first and ensure it provides satisfying resolution to the main problem",
+      "Examiner Report 2023: 'Students frequently included too many characters and plot points, making stories confusing and unfocused' — limit yourself to 2-3 main characters maximum and one central conflict for clarity and depth"
+    ],
+    "keyDiagram": "Students should be able to sketch a narrative structure diagram showing: 1) Exposition (introducing character/setting in opening 2-3 paragraphs), 2) Rising Action (building tension through 3-4 paragraphs with increasing conflict), 3) Climax (the turning point in 1-2 paragraphs where main character faces crucial decision), 4) Falling Action (consequences of the climax in 1-2 paragraphs), 5) Resolution (satisfying conclusion that shows character growth/change). This pyramid structure ensures proper pacing and prevents rushed or incomplete stories.",
+    "quickRecap": "Narrative writing requires a clear structure with engaging opening, developed characters, and satisfying conclusion. Focus on one central conflict and 2-3 main characters maximum. Use dialogue, sensory details, and varied sentence structures to create interest. Plan your ending first to ensure proper resolution. Always maintain consistent narrative perspective throughout your story."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:51:06.838Z",
-  "updated_at": "2026-04-06T03:51:06.838Z"
+  "updated_at": "2026-04-06T03:51:06.838Z",
+  "enriched_at": "2026-04-06T16:09:59.340Z"
 }

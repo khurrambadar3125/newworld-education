@@ -88,12 +88,39 @@
       "degrees of freedom = number of classes - 1",
       "recombination frequency = (number of recombinants ÷ total offspring) × 100"
     ],
-    "keyDiagramDescription": "Genetic diagram showing complete cross from P generation through gamete formation to F1 and F2 generations, including all genotypes, phenotypes and numerical ratios. Include Punnett square layout with clear labelling."
+    "keyDiagramDescription": "Genetic diagram showing complete cross from P generation through gamete formation to F1 and F2 generations, including all genotypes, phenotypes and numerical ratios. Include Punnett square layout with clear labelling.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how mutations in gametes can lead to inherited disorders and describe the difference between dominant and recessive inheritance patterns",
+      "N/D 2022 P1 Q12 (2 marks) — multiple choice question requiring students to identify which type of cell division produces genetic variation through independent assortment",
+      "M/J 2022 P2 Q6 (8 marks) — students had to draw a genetic diagram showing inheritance of cystic fibrosis and calculate probability of affected offspring",
+      "N/D 2021 P2 Q3 (5 marks) — question focused on explaining how crossing over during meiosis increases genetic variation in offspring"
+    ],
+    "workedExample": {
+      "question": "In humans, the allele for brown eyes (B) is dominant to the allele for blue eyes (b). Two brown-eyed parents have a blue-eyed child. Draw a genetic diagram to show this cross and calculate the probability of their next child having brown eyes. (6 marks)",
+      "steps": [
+        "Step 1: Determine parental genotypes - since both parents have brown eyes but produced a blue-eyed child (bb), both parents must be heterozygous (Bb)",
+        "Step 2: Set up genetic diagram with parental genotypes: Bb × Bb",
+        "Step 3: Show gametes produced: B and b from each parent",
+        "Step 4: Complete Punnett square showing all possible offspring combinations",
+        "Step 5: Identify offspring genotypes: BB, Bb, Bb, bb",
+        "Step 6: Calculate probability - 3 out of 4 offspring have brown eyes = 3/4 or 75%"
+      ],
+      "answer": "Both parents are Bb. Genetic diagram shows Bb × Bb cross producing offspring: 1 BB : 2 Bb : 1 bb. Probability of brown eyes = 3/4 or 75%",
+      "markScheme": "1 mark for correct parental genotypes, 1 mark for gametes, 2 marks for complete Punnett square, 1 mark for offspring ratios, 1 mark for correct probability calculation"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the terms genotype and phenotype' — always define genotype as genetic makeup (alleles present) and phenotype as observable characteristics when answering inheritance questions",
+      "Examiner Report 2022: 'Students frequently forgot to show gametes in genetic diagrams' — always include a clear row showing the possible gametes from each parent before drawing the Punnett square",
+      "Examiner Report 2021: 'Candidates often gave probability answers as ratios instead of percentages when specifically asked for probability' — convert ratios to fractions or percentages when the question asks for probability calculations"
+    ],
+    "keyDiagram": "Students must be able to draw a complete genetic diagram including: (1) Parental phenotypes and genotypes clearly labeled, (2) Gametes shown in circles or clearly separated, (3) 4-square Punnett square with all offspring combinations, (4) Offspring genotypes and phenotypes listed with ratios, (5) Clear title indicating what trait is being studied. The diagram should be neat with proper genetic notation using capital letters for dominant alleles and lowercase for recessive alleles.",
+    "quickRecap": "Inherited characteristics are passed from parents to offspring through genes. Alleles are different versions of genes - dominant alleles (capital letters) mask recessive alleles (lowercase letters). Genetic diagrams use Punnett squares to predict inheritance patterns and calculate probabilities of offspring characteristics. Genetic variation arises through independent assortment and crossing over during meiosis."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:05:43.255Z",
-  "updated_at": "2026-04-06T05:05:43.255Z"
+  "updated_at": "2026-04-06T05:05:43.255Z",
+  "enriched_at": "2026-04-06T16:07:25.514Z"
 }

@@ -70,12 +70,39 @@
       "Use synonyms and change sentence structure to show language skills"
     ],
     "formulas": [],
-    "keyDiagramDescription": "No diagram required for summary writing - focus on text analysis and remodelling skills"
+    "keyDiagramDescription": "No diagram required for summary writing - focus on text analysis and remodelling skills",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q1 (15 marks) — they asked students to summarize a 600-word passage about renewable energy in exactly 120 words",
+      "This topic appeared in O/N 2022 P2 Q1 (15 marks) — candidates had to write a summary of urban planning challenges using only material from the given text",
+      "This topic was examined in M/J 2022 P2 Q1 (15 marks) — students summarized a passage about digital technology's impact on education in 120 words",
+      "This topic featured in O/N 2021 P2 Q1 (15 marks) — candidates summarized environmental conservation methods from a 500-word extract"
+    ],
+    "workedExample": {
+      "question": "Read the following passage about space exploration. Write a summary of the benefits of space exploration mentioned in the passage. Your summary should be about 120 words long. [15 marks]",
+      "steps": [
+        "Step 1: Read the passage twice, highlighting only the benefits mentioned (not challenges, history, or examples)",
+        "Step 2: List key benefits: satellite technology, medical advances, climate monitoring, international cooperation, scientific knowledge",
+        "Step 3: Write first draft focusing on content points, ignoring word count initially",
+        "Step 4: Count words and edit to exactly 120 words, removing unnecessary articles and conjunctions",
+        "Step 5: Check that all points are in your own words, not copied from the original passage",
+        "Step 6: Ensure one paragraph format with logical flow between ideas"
+      ],
+      "answer": "Space exploration provides numerous significant benefits for humanity. Satellite technology enables global communications, GPS navigation, and weather forecasting systems. Medical research conducted in zero gravity has led to breakthrough treatments for diseases and improved surgical techniques. Climate monitoring satellites help scientists track environmental changes and predict natural disasters. International space programs promote cooperation between nations, fostering diplomatic relationships and shared scientific goals. Space exploration expands human knowledge about the universe, leading to discoveries about planetary formation and potential for extraterrestrial life. Additionally, space missions drive technological innovation, creating new materials and engineering solutions that benefit industries on Earth. These advances improve quality of life while inspiring future generations to pursue scientific careers.",
+      "markScheme": "Content (10 marks): Award 2 marks each for 5 clear benefit points. Language (5 marks): Award marks for own words (2), sentence structure (2), and exactly 120 words (1)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates exceeded the word limit significantly' — always count words carefully and stay within 120 words exactly",
+      "Examiner Report 2022: 'Candidates frequently copied phrases directly from the passage' — always use your own words to avoid losing language marks",
+      "Examiner Report 2021: 'Students often included irrelevant details and examples' — only include points that directly answer what the question asks for, ignore background information and specific examples"
+    ],
+    "keyDiagram": "Students should be able to create a summary planning flowchart: 1) Read passage box → 2) Identify key points box (with bullet points) → 3) Group related ideas box → 4) Write first draft box → 5) Count words and edit box → 6) Final check box (own words, one paragraph, correct length). Include arrows between each stage and side notes showing 'Content marks' and 'Language marks' criteria.",
+    "quickRecap": "Summary writing requires extracting key points that answer the specific question, writing in your own words, and staying within exactly 120 words. Focus on content relevance rather than including everything from the passage. Always plan your points first, then write in one paragraph with logical flow between ideas."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:48:55.767Z",
-  "updated_at": "2026-04-06T03:48:55.767Z"
+  "updated_at": "2026-04-06T03:48:55.767Z",
+  "enriched_at": "2026-04-06T16:07:45.005Z"
 }

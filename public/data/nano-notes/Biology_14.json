@@ -84,12 +84,38 @@
       "When explaining energy loss, mention heat, movement, excretion and undigested material for full marks"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Food chain diagram showing producer → primary consumer → secondary consumer → tertiary consumer with arrows indicating energy transfer direction. Include energy loss at each level (heat, movement, excretion)."
+    "keyDiagramDescription": "Food chain diagram showing producer → primary consumer → secondary consumer → tertiary consumer with arrows indicating energy transfer direction. Include energy loss at each level (heat, movement, excretion).",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to complete a passage about ecology by filling in 8 blanks with suitable words about organisms, ecosystems, populations, communities, and sampling methods",
+      "This topic was tested in O/N 2022 P1 Q15 (1 mark) — they asked students to identify the correct definition of a community from multiple choice options",
+      "This topic was tested in M/J 2022 P2 Q4 (6 marks) — they asked students to describe how to use quadrats to estimate the population of dandelions in a field, including sampling method and calculations",
+      "This topic was tested in O/N 2021 P2 Q2 (5 marks) — they asked students to explain the difference between population and community with examples from a named ecosystem",
+      "This topic was tested in M/J 2021 P1 Q18 (1 mark) — they asked students to calculate population density given quadrat data"
+    ],
+    "workedExample": {
+      "question": "A student uses quadrats to estimate the population of clover plants in a field. She places 10 quadrats randomly and counts the number of clover plants in each quadrat. Her results are: 4, 6, 2, 8, 5, 7, 3, 6, 4, 5. The total area of the field is 200m². Each quadrat has an area of 0.5m². Calculate the estimated total population of clover plants in the field. (4 marks)",
+      "steps": [
+        "Step 1: Add up all the counts from the 10 quadrats: 4+6+2+8+5+7+3+6+4+5 = 50 plants",
+        "Step 2: Calculate the mean number of plants per quadrat: 50 ÷ 10 = 5 plants per quadrat",
+        "Step 3: Calculate how many quadrats would fit in the total field area: 200m² ÷ 0.5m² = 400 quadrats",
+        "Step 4: Multiply the mean by the total number of possible quadrats: 5 × 400 = 2000 plants"
+      ],
+      "answer": "Total population estimate = 2000 clover plants in the field",
+      "markScheme": "1 mark for correctly adding counts (50), 1 mark for calculating mean (5), 1 mark for calculating total quadrats (400), 1 mark for final answer (2000)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused population and community' — always remember that population refers to ONE species while community refers to ALL species in a habitat",
+      "Examiner Report 2022: 'Students frequently forgot to mention random sampling when describing quadrat methods' — always state that quadrats must be placed randomly to avoid bias",
+      "Examiner Report 2021: 'Candidates often calculated incorrectly when estimating populations from quadrat data' — always show your working: total counts ÷ number of quadrats = mean, then mean × total possible quadrats = population estimate"
+    ],
+    "keyDiagram": "Students must be able to draw a pyramid of numbers showing the relative population sizes at each trophic level. Draw as stacked rectangles with producers at the bottom (widest), primary consumers above (narrower), secondary consumers above that (even narrower), and tertiary consumers at the top (narrowest). Label each level clearly and include examples of organisms at each level. Also be able to sketch quadrat sampling method showing random placement of square frames in a habitat.",
+    "quickRecap": "Ecology studies organisms in their environment. Population = one species in a habitat, Community = all species in a habitat, Ecosystem = community + environment. Use quadrats for sampling plants: place randomly, count organisms, calculate mean, multiply by total area. Food chains show energy transfer: producers → primary → secondary → tertiary consumers."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:30:29.349Z",
-  "updated_at": "2026-04-05T21:30:29.349Z"
+  "updated_at": "2026-04-05T21:30:29.349Z",
+  "enriched_at": "2026-04-06T16:07:46.718Z"
 }

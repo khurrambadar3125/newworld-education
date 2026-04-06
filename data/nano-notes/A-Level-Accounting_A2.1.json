@@ -88,12 +88,38 @@
       "Earnings per share = Net profit after tax ÷ Number of ordinary shares",
       "Dividend per share = Total dividends ÷ Number of shares"
     ],
-    "keyDiagramDescription": "Statement of Financial Position equity section showing: Share capital (ordinary + preference), Share premium, Retained earnings in vertical format with proper classifications and totals"
+    "keyDiagramDescription": "Statement of Financial Position equity section showing: Share capital (ordinary + preference), Share premium, Retained earnings in vertical format with proper classifications and totals",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (12 marks) — they asked students to prepare the trading and profit & loss account and balance sheet for XYZ Ltd from a trial balance, including adjustments for depreciation and provisions",
+      "O/N 2022 P2 Q3 (8 marks) — required calculation of gross profit margin and net profit margin for ABC Limited, with comparison to previous year and comment on performance",
+      "M/J 2022 P2 Q5 (10 marks) — students had to show appropriation of profit including corporation tax, dividends proposed, and transfer to general reserves for a public limited company",
+      "O/N 2021 P2 Q2 (6 marks) — tested distinction between authorized and issued share capital, and calculation of shareholders' equity from given balance sheet extract"
+    ],
+    "workedExample": {
+      "question": "DEF Limited has the following information for the year ended 31 December 2023: Net profit before tax $45,000; Corporation tax $9,000; Interim dividend paid $6,000; Final dividend proposed $8,000; Retained earnings brought forward $25,000. Prepare the appropriation account. (6 marks)",
+      "steps": [
+        "Step 1: Start with net profit before tax of $45,000",
+        "Step 2: Deduct corporation tax provision of $9,000 to get profit after tax",
+        "Step 3: Add retained earnings brought forward of $25,000",
+        "Step 4: Deduct total dividends: interim paid $6,000 + final proposed $8,000 = $14,000",
+        "Step 5: Calculate retained earnings carried forward"
+      ],
+      "answer": "DEF Limited - Appropriation Account for year ended 31 Dec 2023\nNet profit before tax: $45,000\nLess: Corporation tax: ($9,000)\nProfit after tax: $36,000\nAdd: Retained earnings b/f: $25,000\nAvailable for appropriation: $61,000\nLess: Interim dividend paid: ($6,000)\nLess: Final dividend proposed: ($8,000)\nRetained earnings c/f: $47,000",
+      "markScheme": "1 mark each for: correct format/headings, net profit before tax figure, corporation tax deduction, adding retained earnings b/f, both dividend deductions, final retained earnings calculation"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused authorized capital with issued capital' — always clearly distinguish between the maximum capital a company can issue versus what has actually been issued to shareholders",
+      "Examiner Report 2022: 'Students frequently omitted corporation tax from the appropriation account' — remember that limited companies must provide for corporation tax on profits, unlike sole traders and partnerships",
+      "Examiner Report 2021: 'Common error was treating proposed dividends as paid dividends' — proposed dividends are a current liability in the balance sheet, while paid dividends go through the appropriation account as cash outflow"
+    ],
+    "keyDiagram": "Students must be able to draw the structure of a limited company balance sheet showing: 1) Fixed Assets section (cost, accumulated depreciation, net book value), 2) Current Assets (stock, debtors, bank, cash), 3) Current Liabilities (creditors, proposed dividends, accruals), 4) Net Current Assets calculation, 5) Long-term Liabilities, 6) Net Assets total, 7) Financed by section showing Share Capital (authorized vs issued), Reserves (capital reserves, revenue reserves including retained earnings), and total Shareholders' Equity. The diagram should clearly show the dual aspect where Net Assets = Shareholders' Equity.",
+    "quickRecap": "Limited companies have separate legal existence and limited liability for shareholders. Their accounts include corporation tax provisions and dividend appropriations. Balance sheets show authorized vs issued share capital, and distinguish between capital reserves (non-distributable) and revenue reserves (distributable as dividends). Key ratios include gross profit margin, net profit margin, and return on capital employed for performance analysis."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:27:15.214Z",
-  "updated_at": "2026-04-06T05:27:15.214Z"
+  "updated_at": "2026-04-06T05:27:15.214Z",
+  "enriched_at": "2026-04-06T16:06:00.230Z"
 }

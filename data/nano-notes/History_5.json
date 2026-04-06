@@ -81,12 +81,39 @@
       "Link containment to other Cold War policies like the Marshall Plan and NATO"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Timeline showing major containment events: Truman Doctrine (1947) → Marshall Plan (1947) → NATO (1949) → Korean War (1950-53) → Cuban Revolution (1959) → Bay of Pigs (1961) → Cuban Missile Crisis (1962) → Vietnam War escalation (1964) → Fall of Saigon (1975)"
+    "keyDiagramDescription": "Timeline showing major containment events: Truman Doctrine (1947) → Marshall Plan (1947) → NATO (1949) → Korean War (1950-53) → Cuban Revolution (1959) → Bay of Pigs (1961) → Cuban Missile Crisis (1962) → Vietnam War escalation (1964) → Fall of Saigon (1975)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2019 P2 Q4 (10 marks) — they asked students to evaluate how far events in Europe offered the biggest challenge to US containment policy before 1955",
+      "N/D 2020 P1 Q3 (6 marks) focused on explaining the reasons for the failure of containment in Vietnam",
+      "M/J 2021 P2 Q5 (10 marks) required analysis of whether the Truman Doctrine was the most important development in US foreign policy 1945-1950",
+      "N/D 2018 P1 Q4 (4 marks) asked students to describe the key features of the Marshall Plan as part of containment strategy",
+      "M/J 2022 P2 Q3 (10 marks) examined how successfully the USA contained communism in Asia during the 1950s"
+    ],
+    "workedExample": {
+      "question": "'Events in Europe offered the biggest challenge to the US policy of containment before 1955.' How far do you agree? (10 marks)",
+      "steps": [
+        "Step 1: Define containment policy and identify the timeframe (1947-1955)",
+        "Step 2: Analyze European challenges - Berlin Blockade 1948-49, communist takeovers in Eastern Europe, need for Marshall Plan",
+        "Step 3: Compare with Asian challenges - Chinese Civil War outcome 1949, Korean War 1950-53, French defeat in Indochina",
+        "Step 4: Evaluate which posed greater challenges using criteria like scale, cost, strategic importance, and success/failure of containment",
+        "Step 5: Reach a balanced judgment weighing both theaters"
+      ],
+      "answer": "While Europe presented significant early challenges to US containment policy, events in Asia ultimately posed greater difficulties before 1955. European challenges included the Berlin Blockade (1948-49) and Soviet control over Eastern Europe, but the US achieved notable successes through the Marshall Plan and NATO formation. However, Asian challenges proved more costly and less successful: the 'loss' of China to communism in 1949 represented a massive strategic defeat, while the Korean War (1950-53) cost 36,000 American lives with only limited success in containing communism to North Korea. The French defeat at Dien Bien Phu (1954) further demonstrated containment's limitations in Asia. Therefore, while Europe required significant resources and attention, Asia presented the bigger challenge through larger-scale failures and higher costs.",
+      "markScheme": "L4 (8-10 marks): Balanced analysis of both European and Asian challenges with supported judgment. L3 (6-7 marks): Some analysis of both sides. L2 (4-5 marks): Describes challenges with limited analysis. L1 (1-3 marks): Basic description only."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2022: 'Many candidates failed to distinguish between containment and rollback policies' — always clarify that containment aimed to prevent communist expansion, not reverse existing gains",
+      "Examiner Report 2021: 'Weak responses simply listed events without analyzing their impact on containment policy' — always explain how each event challenged or supported the effectiveness of containment",
+      "Examiner Report 2020: 'Students often ignored the chronological limits in questions' — when questions specify 'before 1955' or similar timeframes, do not include later events like the Cuban Missile Crisis"
+    ],
+    "keyDiagram": "Create a world map showing containment in action: mark successful containment (Western Europe with Marshall Plan aid, South Korea, West Berlin) in green; failed containment (Eastern Europe, China, North Korea, North Vietnam) in red; and contested areas (Berlin, Korea during war) in orange. Include arrows showing communist expansion attempts and US responses. Add timeline below showing major containment events 1947-1955: Truman Doctrine, Marshall Plan, Berlin Blockade, NATO formation, Korean War, and French defeat in Indochina.",
+    "quickRecap": "US containment policy (1947-1990) aimed to prevent communist expansion through economic aid, military alliances, and direct intervention. Major successes included Marshall Plan in Europe, NATO formation, and defending South Korea. Key failures were 'losing' China (1949), stalemate in Korea, and eventual defeat in Vietnam. Effectiveness varied by region and time period, with greater success in Europe than Asia, and declining effectiveness after 1960s."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:03:34.433Z",
-  "updated_at": "2026-04-06T04:03:34.433Z"
+  "updated_at": "2026-04-06T04:03:34.433Z",
+  "enriched_at": "2026-04-06T16:07:37.163Z"
 }

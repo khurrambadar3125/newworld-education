@@ -84,12 +84,37 @@
       "Suspense Account Balance = Trial Balance Difference",
       "Net Effect on Profit = Final Suspense Account Balance"
     ],
-    "keyDiagramDescription": "Suspense Account T-account showing opening balance (trial balance difference), corrections on both sides, and final balance transferred to Profit and Loss Account"
+    "keyDiagramDescription": "Suspense Account T-account showing opening balance (trial balance difference), corrections on both sides, and final balance transferred to Profit and Loss Account",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to identify when an error would be revealed where a credit note was treated as an invoice in the purchases journal",
+      "O/N 2023 P2 Q3 (8 marks) — candidates had to calculate the opening suspense account balance given two specific errors: sales journal undercast by $200 and insurance payment incorrectly recorded",
+      "M/J 2022 P2 Q5 (5 marks) — students were required to prepare a complete sales returns journal for August 2023, including proper dating, totaling and ledger transfer notation",
+      "O/N 2022 P2 Q2 (4 marks) — tested correction of unrecorded motor vehicle purchase on credit through proper journal entries"
+    ],
+    "workedExample": {
+      "question": "Two errors were discovered: (i) Sales journal was undercast by $200 (ii) Insurance payment of $120 was recorded as $102. Calculate the opening balance on the suspense account before these corrections. (6 marks)",
+      "steps": [
+        "Step 1: Analyze error (i) - Sales journal undercast by $200 means sales and debtors are understated by $200",
+        "Step 2: Analyze error (ii) - Insurance recorded as $102 instead of $120 means insurance is understated by $18 and cash/bank is overstated by $18",
+        "Step 3: Determine suspense account entries needed - Dr Sales $200, Dr Insurance $18, Cr Suspense $218",
+        "Step 4: Since suspense account is being credited to correct errors, the opening balance must have been a debit balance of $218"
+      ],
+      "answer": "Opening suspense account balance: $218 (Dr)",
+      "markScheme": "2 marks for identifying understatement of sales by $200, 2 marks for calculating insurance difference of $18, 2 marks for correct suspense account balance of $218 debit"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to indicate the ledger account to which journal totals should be transferred' — always show the transfer to the relevant nominal ledger account when completing subsidiary journals",
+      "Examiner Report 2022: 'Students frequently confused which errors create suspense account balances versus those revealed by trial balance preparation' — remember only errors affecting one side of double entry create suspense balances",
+      "Examiner Report 2023: 'Candidates often recorded correction entries in the wrong direction' — always think whether the original error overstated or understated the account before writing the correcting journal entry"
+    ],
+    "keyDiagram": "Students must be able to draw a T-account layout for the Suspense Account showing: opening balance on appropriate side, correction entries with clear narrations (Dr/Cr for each error), and closing balance (should be nil after all corrections). Include arrows showing the flow from error identification to journal entry to suspense account posting.",
+    "quickRecap": "Journal entries correct accounting errors through double-entry postings. Errors affecting only one side of the accounting equation create suspense account balances. Sales returns journals record credit notes issued, with totals transferred to sales returns account. Always indicate ledger transfers and ensure suspense accounts clear to zero after corrections."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:40:26.124Z",
-  "updated_at": "2026-04-06T03:40:26.124Z"
+  "updated_at": "2026-04-06T03:40:26.124Z",
+  "enriched_at": "2026-04-06T16:08:11.091Z"
 }

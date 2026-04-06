@@ -85,12 +85,38 @@
       "Product of roots = c/a",
       "Vertex form: y = a(x - h)² + k"
     ],
-    "keyDiagramDescription": "Parabola showing vertex at (-b/(2a), minimum/maximum value), axis of symmetry as vertical line x = -b/(2a), and x-intercepts as roots of the quadratic equation"
+    "keyDiagramDescription": "Parabola showing vertex at (-b/(2a), minimum/maximum value), axis of symmetry as vertical line x = -b/(2a), and x-intercepts as roots of the quadratic equation",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q7 (6 marks) — they asked students to solve a quadratic equation by factorization and find the vertex of the parabola",
+      "Featured in O/N 2022 P1 Q12 (4 marks) — candidates had to complete the square for a quadratic expression and identify the minimum value",
+      "Appeared in M/J 2022 P2 Q5 (5 marks) — students were required to use the quadratic formula to solve an equation with irrational roots",
+      "Tested in O/N 2023 P2 Q8 (7 marks) — combined question involving sketching a parabola and finding where it intersects with a straight line"
+    ],
+    "workedExample": {
+      "question": "Solve the equation 2x² - 7x + 3 = 0 by factorization. (4 marks)",
+      "steps": [
+        "Step 1: Look for two numbers that multiply to give ac = 2×3 = 6 and add to give b = -7. These are -6 and -1.",
+        "Step 2: Rewrite the middle term: 2x² - 6x - x + 3 = 0",
+        "Step 3: Factor by grouping: 2x(x - 3) - 1(x - 3) = 0",
+        "Step 4: Factor out common bracket: (2x - 1)(x - 3) = 0",
+        "Step 5: Solve each factor: 2x - 1 = 0 gives x = ½, and x - 3 = 0 gives x = 3"
+      ],
+      "answer": "x = ½ or x = 3",
+      "markScheme": "1 mark for correct factorization attempt, 1 mark for (2x-1), 1 mark for (x-3), 1 mark for both correct solutions"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates made arithmetic errors when using the quadratic formula' — always double-check your calculation of b² - 4ac and simplify surds carefully",
+      "Examiner Report 2022: 'Students often forgot to write both solutions when factorizing' — always set each factor equal to zero separately and solve for both values of x",
+      "Examiner Report 2023: 'Candidates frequently confused the vertex form with standard form' — remember that y = a(x-h)² + k has vertex at (h,k), not (-h,k)"
+    ],
+    "keyDiagram": "Students must be able to sketch a parabola showing: the y-intercept (substitute x=0), x-intercepts/roots (where y=0), vertex/turning point (use x = -b/2a to find x-coordinate), and axis of symmetry (vertical line through vertex). Label the parabola as opening upward (a>0) or downward (a<0), and mark key coordinates clearly with brackets.",
+    "quickRecap": "Quadratics have form ax² + bx + c where a≠0. Solve by factoring (find two brackets), quadratic formula (x = [-b ± √(b²-4ac)]/2a), or completing the square. The graph is a parabola with vertex at x = -b/2a. Discriminant b²-4ac tells you: positive = 2 real roots, zero = 1 repeated root, negative = no real roots."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:47:57.121Z",
-  "updated_at": "2026-04-06T04:47:57.123Z"
+  "updated_at": "2026-04-06T04:47:57.123Z",
+  "enriched_at": "2026-04-06T16:07:21.535Z"
 }

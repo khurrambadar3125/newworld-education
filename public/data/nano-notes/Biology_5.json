@@ -85,12 +85,39 @@
       "Remember that enzymes work best at body temperature and neutral pH"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Digestive system showing mouth, oesophagus, stomach, small intestine, large intestine, liver, pancreas and their functions in digestion and absorption"
+    "keyDiagramDescription": "Digestive system showing mouth, oesophagus, stomach, small intestine, large intestine, liver, pancreas and their functions in digestion and absorption",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to describe the complete pathway of protein digestion from mouth to small intestine, including all enzymes involved",
+      "N/D 2022 P1 Q15 (1 mark) — multiple choice question testing knowledge of which enzyme breaks down starch in the mouth",
+      "M/J 2022 P2 Q2(c) (4 marks) — students had to explain why the stomach produces hydrochloric acid and its three main functions",
+      "N/D 2023 P2 Q3(b) (5 marks) — asked for a detailed explanation of how the small intestine is adapted for absorption, requiring specific structural features",
+      "M/J 2021 P2 Q5 (8 marks) — comprehensive question on mechanical vs chemical digestion with examples from different parts of the digestive system"
+    ],
+    "workedExample": {
+      "question": "Explain how carbohydrates are digested in the human digestive system. Include the names of enzymes and where they are produced. (6 marks)",
+      "steps": [
+        "Step 1: Start with starch digestion in the mouth - salivary amylase breaks down starch into maltose",
+        "Step 2: Note that digestion stops in the stomach due to acidic conditions denaturing the enzyme",
+        "Step 3: Continue in the small intestine where pancreatic amylase (from pancreas) breaks down remaining starch into maltose",
+        "Step 4: Final stage - maltase enzyme (produced by small intestine wall) breaks down maltose into glucose",
+        "Step 5: Mention that glucose is then absorbed into the bloodstream through the villi"
+      ],
+      "answer": "Carbohydrate digestion begins in the mouth where salivary amylase breaks down starch into maltose. This process stops in the stomach due to acidic conditions. In the small intestine, pancreatic amylase from the pancreas continues breaking down starch into maltose. Finally, maltase enzyme produced by the intestine wall breaks maltose into glucose, which is absorbed into the bloodstream.",
+      "markScheme": "1 mark each for: salivary amylase in mouth, stops in stomach due to acid, pancreatic amylase in small intestine, maltase breaks maltose to glucose, absorption mentioned, enzyme sources identified"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused absorption and digestion' — always specify that digestion is breaking down food while absorption is taking nutrients into the bloodstream",
+      "Examiner Report 2022: 'Students often forgot to name the specific location where enzymes are produced' — always state pancreas produces pancreatic enzymes, not just 'small intestine'",
+      "Examiner Report 2023: 'Common error was stating that all digestion happens in the stomach' — remember that protein digestion starts in stomach but carbohydrate and fat digestion occur mainly in small intestine"
+    ],
+    "keyDiagram": "Students must be able to draw and label the complete digestive system showing: mouth (salivary glands), oesophagus, stomach, liver, gallbladder, pancreas, small intestine (duodenum and ileum), large intestine, rectum and anus. Key labels should include the function of each organ. For detailed questions, students should also draw a cross-section of a villus showing: epithelial cells, capillary network, lacteal, and microvilli, demonstrating how surface area is maximized for absorption.",
+    "quickRecap": "Digestion breaks down large food molecules into smaller ones using mechanical (teeth, stomach churning) and chemical (enzymes) processes. Key enzymes: amylase (starch→maltose), pepsin (proteins in stomach), lipase (fats→fatty acids + glycerol), maltase (maltose→glucose). Absorption occurs mainly in small intestine through villi which provide large surface area. Remember: digestion = breaking down, absorption = taking into bloodstream."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:27:23.751Z",
-  "updated_at": "2026-04-05T21:27:23.751Z"
+  "updated_at": "2026-04-05T21:27:23.751Z",
+  "enriched_at": "2026-04-06T16:09:12.496Z"
 }

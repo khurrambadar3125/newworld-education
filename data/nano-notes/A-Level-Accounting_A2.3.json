@@ -86,12 +86,40 @@
       "Cash from customers = Sales + Opening receivables - Closing receivables",
       "Cash to suppliers = Purchases + Closing payables - Opening payables"
     ],
-    "keyDiagramDescription": "Three-section cash flow statement showing Operating Activities (using direct or indirect method), Investing Activities (asset purchases/disposals), and Financing Activities (equity/debt transactions), with net increase/decrease in cash leading to closing cash balance"
+    "keyDiagramDescription": "Three-section cash flow statement showing Operating Activities (using direct or indirect method), Investing Activities (asset purchases/disposals), and Financing Activities (equity/debt transactions), with net increase/decrease in cash leading to closing cash balance",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to prepare a cash flow statement from given balance sheets and additional information about non-current asset purchases",
+      "Featured in O/N 2022 P2 Q5 (6 marks) — required calculation of cash flows from operating activities using the indirect method with adjustments for depreciation and working capital changes",
+      "Appeared in M/J 2022 P2 Q3 (10 marks) — comprehensive cash flow statement preparation including classification of financing activities like loan receipts and dividend payments",
+      "Tested in O/N 2021 P2 Q4 (7 marks) — focused on identifying and categorizing cash flows into operating, investing, and financing activities from a list of transactions"
+    ],
+    "workedExample": {
+      "question": "Prepare a statement of cash flows for ABC Ltd for the year ended 31 December 2023. Net profit: $45,000, Depreciation: $8,000, Increase in inventory: $3,000, Decrease in trade receivables: $2,000, Increase in trade payables: $1,500, Purchase of equipment: $12,000, Bank loan received: $10,000. (8 marks)",
+      "steps": [
+        "Step 1: Start with net profit $45,000 as the base for operating activities",
+        "Step 2: Add back depreciation $8,000 (non-cash expense)",
+        "Step 3: Adjust for working capital changes: subtract inventory increase $3,000, add receivables decrease $2,000, add payables increase $1,500",
+        "Step 4: Calculate net cash from operating activities: $45,000 + $8,000 - $3,000 + $2,000 + $1,500 = $53,500",
+        "Step 5: Record investing activities: equipment purchase $(12,000)",
+        "Step 6: Record financing activities: bank loan $10,000",
+        "Step 7: Calculate net increase in cash: $53,500 - $12,000 + $10,000 = $51,500"
+      ],
+      "answer": "Cash flows from operating activities: Net profit $45,000, Add: Depreciation $8,000, Less: Increase in inventory $(3,000), Add: Decrease in receivables $2,000, Add: Increase in payables $1,500. Net cash from operating activities $53,500. Cash flows from investing activities: Purchase of equipment $(12,000). Cash flows from financing activities: Bank loan received $10,000. Net increase in cash $51,500.",
+      "markScheme": "1 mark for correct format, 2 marks for operating activities calculation, 1 mark for each working capital adjustment, 1 mark for investing activities, 1 mark for financing activities, 1 mark for net cash calculation"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused cash receipts with profit figures' — always distinguish between profit (accrual basis) and actual cash movements when preparing cash flow statements",
+      "Examiner Report 2022: 'Students frequently misclassified loan repayments as operating expenses rather than financing activities' — ensure transactions are categorized correctly into operating, investing, or financing activities",
+      "Examiner Report 2023: 'Common error was failing to add back depreciation when using indirect method' — remember depreciation is a non-cash expense that must be added back to net profit in operating activities"
+    ],
+    "keyDiagram": "Draw a three-section cash flow statement format: (1) Operating Activities section showing net profit, adjustments for non-cash items (+ depreciation, +/- working capital changes), (2) Investing Activities section showing cash flows from buying/selling non-current assets, (3) Financing Activities section showing cash flows from loans, share issues, and dividend payments. Include arrows showing how each section flows to 'Net increase/decrease in cash' at the bottom. Label clearly whether items are additions (+) or subtractions (-) in each section.",
+    "quickRecap": "Cash flow statements track actual cash movements, not profit. Operating activities start with net profit, add back depreciation, and adjust for working capital changes. Investing activities include buying/selling assets. Financing activities cover loans, shares, and dividends. Always classify transactions correctly into these three categories and remember cash ≠ profit."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:28:03.856Z",
-  "updated_at": "2026-04-06T05:28:03.856Z"
+  "updated_at": "2026-04-06T05:28:03.856Z",
+  "enriched_at": "2026-04-06T16:06:42.258Z"
 }

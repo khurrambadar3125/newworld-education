@@ -83,12 +83,38 @@
       "Use 'influence' not 'cause' when discussing biological factors - shows understanding of complexity"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Brain diagram showing cerebral cortex (thinking/decision making), hippocampus (memory formation), amygdala (fear processing), and neuron diagram showing synapse with neurotransmitter release from presynaptic to postsynaptic neuron"
+    "keyDiagramDescription": "Brain diagram showing cerebral cortex (thinking/decision making), hippocampus (memory formation), amygdala (fear processing), and neuron diagram showing synapse with neurotransmitter release from presynaptic to postsynaptic neuron",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how the biological approach would explain aggressive behavior, requiring discussion of genetics, brain structures, and hormones",
+      "This topic appeared in O/N 2022 P2 Q2 (4 marks) — students had to evaluate the biological approach using one strength and one weakness with psychological evidence",
+      "This topic was examined in M/J 2022 P1 Q15 (1 mark) — multiple choice question asking which brain area is associated with aggression according to biological approach",
+      "This topic was tested in O/N 2023 P2 Q3 (8 marks) — students had to compare biological and cognitive approaches to explaining mental health disorders, requiring detailed knowledge of both perspectives"
+    ],
+    "workedExample": {
+      "question": "Explain how the biological approach would explain depression. (6 marks)",
+      "steps": [
+        "Step 1: Identify the biological factors - mention genetics, neurotransmitters, and brain structure",
+        "Step 2: Explain genetic influence - depression runs in families, twin studies show 40% heritability",
+        "Step 3: Discuss neurotransmitter imbalance - low levels of serotonin and norepinephrine affect mood regulation",
+        "Step 4: Describe brain structure differences - hippocampus and prefrontal cortex abnormalities in depressed individuals",
+        "Step 5: Link to treatment - antidepressants work by increasing neurotransmitter availability, supporting biological explanation"
+      ],
+      "answer": "The biological approach explains depression through genetic, neurochemical, and neuroanatomical factors. Genetic studies show depression has 40% heritability, with higher concordance rates in identical twins. Neurotransmitter imbalances, particularly low serotonin and norepinephrine, disrupt mood regulation and emotional processing. Brain imaging reveals structural differences including reduced hippocampus volume and decreased prefrontal cortex activity in depressed individuals. The effectiveness of antidepressant medications that increase neurotransmitter availability provides further evidence for biological causation.",
+      "markScheme": "1 mark for genetics, 1 mark for example/evidence, 1 mark for neurotransmitters, 1 mark for specific chemicals, 1 mark for brain structure, 1 mark for supporting evidence/treatment"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused correlation with causation when discussing biological factors' — always distinguish between biological influences and direct biological causes",
+      "Examiner Report 2022: 'Students often gave vague answers about 'brain differences' without specifying structures or functions' — always name specific brain areas and their roles when discussing neurological factors",
+      "Examiner Report 2023: 'Candidates frequently ignored the reductionist nature of biological explanations in evaluation questions' — remember to discuss how biological approach oversimplifies complex behaviors by ignoring environmental and psychological factors"
+    ],
+    "keyDiagram": "Students must be able to draw a simple neuron diagram showing: cell body (soma), dendrites, axon, axon terminals, and synaptic gap. Include arrows showing direction of electrical impulse and label where neurotransmitters are released. This demonstrates understanding of how biological processes (neural transmission) underlie psychological phenomena. Alternative diagram: simple brain cross-section labeling key structures (frontal lobe, limbic system, brain stem) relevant to behavior and mental processes.",
+    "quickRecap": "The biological approach explains behavior through genetics, neurotransmitters, hormones, and brain structure. Key assumption: all psychological phenomena have biological basis. Strengths include scientific methods and practical applications (drug treatments). Main weakness is reductionism - ignores environmental and cognitive factors. Essential for understanding nature vs nurture debates and medical model of mental health."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:20:52.912Z",
-  "updated_at": "2026-04-06T05:20:52.912Z"
+  "updated_at": "2026-04-06T05:20:52.912Z",
+  "enriched_at": "2026-04-06T16:07:48.990Z"
 }

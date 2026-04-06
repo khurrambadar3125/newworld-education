@@ -87,12 +87,38 @@
       "Interest on drawings = Drawings × Interest rate × Average time period",
       "Profit sharing = (Available profit after appropriations) × Partner's ratio"
     ],
-    "keyDiagramDescription": "Partnership accounts structure showing Appropriation Account (distributing net profit) flowing to individual Current Accounts (tracking each partner's running balance) and separate Capital Accounts (recording permanent capital contributions)"
+    "keyDiagramDescription": "Partnership accounts structure showing Appropriation Account (distributing net profit) flowing to individual Current Accounts (tracking each partner's running balance) and separate Capital Accounts (recording permanent capital contributions)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to prepare a profit and loss appropriation account for a partnership with unequal profit sharing ratios and interest on capital",
+      "O/N 2022 P2 Q3 (6 marks) — candidates had to calculate partners' current account balances after drawings, salary, and profit distribution",
+      "M/J 2022 P2 Q5 (10 marks) — required preparation of partners' capital and current accounts showing admission of a new partner with goodwill adjustments",
+      "O/N 2021 P2 Q4 (7 marks) — tested dissolution of partnership including realization of assets and settlement of partners' accounts"
+    ],
+    "workedExample": {
+      "question": "Amy and Ben are partners sharing profits 3:2. Amy receives salary $6,000 and interest on capital at 5% p.a. Their capitals are Amy $40,000, Ben $30,000. Net profit for the year was $28,000. Prepare the profit and loss appropriation account. (6 marks)",
+      "steps": [
+        "Step 1: Calculate interest on capital - Amy: $40,000 × 5% = $2,000, Ben: $30,000 × 5% = $1,500",
+        "Step 2: Total appropriations before profit share = Salary $6,000 + Interest $3,500 = $9,500",
+        "Step 3: Remaining profit for distribution = $28,000 - $9,500 = $18,500",
+        "Step 4: Share remaining profit 3:2 - Amy: $18,500 × 3/5 = $11,100, Ben: $18,500 × 2/5 = $7,400",
+        "Step 5: Total share per partner - Amy: $6,000 + $2,000 + $11,100 = $19,100, Ben: $1,500 + $7,400 = $8,900"
+      ],
+      "answer": "Profit and Loss Appropriation Account: Net Profit $28,000. Less: Salary to Amy $6,000, Interest on Capital Amy $2,000, Ben $1,500. Remaining profit $18,500 shared Amy $11,100, Ben $7,400. Total distribution Amy $19,100, Ben $8,900.",
+      "markScheme": "1 mark each for: correct interest calculations (2 marks), salary allocation (1 mark), remaining profit calculation (1 mark), correct profit sharing ratio application (1 mark), accurate totals (1 mark)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to distinguish between capital and current accounts' — always show fixed capital separately from fluctuating current account items like drawings and profit shares",
+      "Examiner Report 2022: 'Students incorrectly calculated interest on drawings for the full year' — remember to calculate interest on drawings from the date of withdrawal to year-end only",
+      "Examiner Report 2021: 'Candidates confused goodwill treatment when partners join or leave' — goodwill must be created and then written off, or existing partners' capitals adjusted by their sacrifice ratio"
+    ],
+    "keyDiagram": "Students must draw a T-account layout showing Partners' Current Accounts with debits (drawings, interest on drawings, share of loss) on the left and credits (opening balance, salary, interest on capital, profit share) on the right. Include separate columns for each partner and show the profit-sharing ratio clearly. Also draw the Profit and Loss Appropriation Account showing net profit at the top, then deductions for salaries and interest on capital, followed by the remaining profit distribution according to agreed ratios.",
+    "quickRecap": "Partnership accounts involve profit and loss appropriation (distributing profit after salaries and interest on capital according to agreed ratios) and maintaining separate capital and current accounts for each partner. Always apply the correct profit-sharing ratio to remaining profits only, not to the entire net profit. Remember that interest on capital and salaries are appropriations of profit, not expenses of the business."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:26:32.563Z",
-  "updated_at": "2026-04-06T05:26:32.563Z"
+  "updated_at": "2026-04-06T05:26:32.563Z",
+  "enriched_at": "2026-04-06T16:10:30.984Z"
 }

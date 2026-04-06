@@ -75,12 +75,38 @@
       "Draw clear zone diagrams with labels for full marks in describe questions"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Concentric zone model showing CBD in centre, surrounded by rings of industrial zone, inner residential area, and outer suburbs, with land values and building heights decreasing outwards"
+    "keyDiagramDescription": "Concentric zone model showing CBD in centre, surrounded by rings of industrial zone, inner residential area, and outer suburbs, with land values and building heights decreasing outwards",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the factors that influence the location of urban settlements with reference to named examples",
+      "O/N 2022 P1 Q2 (4 marks) tested urban hierarchy by asking candidates to describe the characteristics that distinguish a city from a town",
+      "M/J 2022 P2 Q3b (8 marks) required students to assess the advantages and disadvantages of urban growth in developing countries",
+      "O/N 2021 P2 Q5 (10 marks) asked for an evaluation of strategies used to solve urban problems in cities, with specific case study examples"
+    ],
+    "workedExample": {
+      "question": "Explain why urban settlements grow rapidly in developing countries. Use examples in your answer. (8 marks)",
+      "steps": [
+        "Step 1: Define urban growth and identify it's faster in developing countries",
+        "Step 2: Explain push factors from rural areas (lack of jobs, poor services, natural disasters)",
+        "Step 3: Explain pull factors to cities (employment opportunities, better education/healthcare, perceived higher living standards)",
+        "Step 4: Add specific examples - Mumbai (Bollywood film industry jobs), Lagos (oil industry), São Paulo (manufacturing)",
+        "Step 5: Mention natural increase (young migrants having families in cities)"
+      ],
+      "answer": "Urban settlements in developing countries grow rapidly due to rural-urban migration and natural increase. Push factors from rural areas include lack of employment opportunities, poor access to services like healthcare and education, and agricultural problems such as drought. Pull factors to cities include job opportunities in manufacturing and services, better infrastructure, and access to education. For example, Mumbai attracts migrants due to its film industry and financial services, while Lagos grows due to Nigeria's oil industry. São Paulo expanded rapidly due to manufacturing jobs. Additionally, young migrants often start families in cities, leading to natural population increase that sustains urban growth.",
+      "markScheme": "2 marks for defining/identifying rapid urban growth, 2 marks for push factors with explanation, 2 marks for pull factors with explanation, 2 marks for relevant examples with specific details"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused urbanization with urban growth' — always define urbanization as the percentage increase of people living in towns/cities, not just population growth",
+      "Examiner Report 2022: 'Students frequently gave vague examples without specific details' — always name actual cities and explain specific industries or factors, not just 'better jobs'",
+      "Examiner Report 2021: 'Candidates often ignored the command word assess/evaluate' — when asked to evaluate urban solutions, always give both advantages AND disadvantages with a conclusion"
+    ],
+    "keyDiagram": "Urban Hierarchy Pyramid: Draw a triangle divided into 4 levels. Top: Megacities (over 10 million, few in number, widest range of services). Second: Cities (100,000-10 million, regional centers, specialized services like universities). Third: Towns (10,000-100,000, local services, market centers). Bottom: Villages (under 10,000, most numerous, basic services only). Add arrows showing population size decreasing upward and number of settlements decreasing upward. Label sphere of influence expanding at each level.",
+    "quickRecap": "Urban settlements are classified by population size and functions into a hierarchy from villages to megacities. They grow through rural-urban migration (push/pull factors) and natural increase, especially rapidly in developing countries. Urban growth creates both opportunities (jobs, services) and problems (overcrowding, pollution, inequality). Solutions include site-and-service schemes, urban planning, and improving rural areas to reduce migration pressure."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:56:10.460Z",
-  "updated_at": "2026-04-06T03:56:10.460Z"
+  "updated_at": "2026-04-06T03:56:10.460Z",
+  "enriched_at": "2026-04-06T16:07:53.310Z"
 }

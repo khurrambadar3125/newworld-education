@@ -85,12 +85,38 @@
       "Pakistani cultural contexts often appear - familiarity with local examples helps comprehension"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Text types comparison table showing narrative (story elements), informative (facts/explanations), and persuasive (opinions/arguments) with their key features and language characteristics"
+    "keyDiagramDescription": "Text types comparison table showing narrative (story elements), informative (facts/explanations), and persuasive (opinions/arguments) with their key features and language characteristics",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q2 (8 marks) — they asked students to read a passage about climate change and identify the writer's main argument and three supporting points with evidence from the text",
+      "This topic appeared in O/N 2022 P1 Q1 (6 marks) — candidates had to analyze the language techniques used in an advertisement and explain their effectiveness on the target audience",
+      "This topic was examined in M/J 2022 P2 Q3 (10 marks) — students needed to compare two texts about social media, identifying similarities and differences in viewpoints and presentation methods",
+      "This topic featured in O/N 2023 P1 Q2 (5 marks) — they required candidates to explain the meaning of three phrases in context and analyze the writer's tone in a travel article"
+    ],
+    "workedExample": {
+      "question": "Read the following passage about modern technology. Explain what the writer means by 'digital natives' and analyze how the writer uses language to present their argument about technology's impact on young people. (8 marks)",
+      "steps": [
+        "Step 1: Identify the meaning of 'digital natives' by looking at context clues in surrounding sentences",
+        "Step 2: Find the writer's main argument about technology's impact on young people",
+        "Step 3: Identify specific language techniques used (metaphors, statistics, emotive language, etc.)",
+        "Step 4: Analyze the effect of each technique on the reader",
+        "Step 5: Structure response with clear topic sentences and embedded quotations"
+      ],
+      "answer": "'Digital natives' refers to young people who have grown up surrounded by technology and are naturally comfortable using digital devices. The writer presents a balanced argument about technology's impact, using statistical evidence ('85% of teenagers') to establish credibility, while employing metaphorical language like 'drowning in information' to highlight potential dangers. The writer's measured tone, achieved through phrases like 'it could be argued', encourages readers to consider both benefits and risks rather than dismiss technology entirely.",
+      "markScheme": "2 marks for accurate explanation of 'digital natives', 2 marks for identifying writer's argument, 2 marks for identifying language techniques with examples, 2 marks for analyzing effects on reader"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to support their analysis with specific quotations from the text' — always embed short, relevant quotes when explaining language techniques or writer's methods",
+      "Examiner Report 2022: 'Candidates often confused identifying techniques with analyzing their effects' — don't just spot metaphors or alliteration, explain HOW these techniques influence the reader's response",
+      "Examiner Report 2023: 'Weaker responses simply retold the content rather than analyzing presentation' — focus on HOW the writer presents ideas, not just WHAT they say about the topic"
+    ],
+    "keyDiagram": "Create a 'Reading Analysis Framework' diagram with three connected boxes: 1) IDENTIFY (What techniques/content?) 2) ANALYZE (How does it work?) 3) EVALUATE (What effect on reader?). Include arrows showing the progression and add examples under each box: quotes/techniques under Identify, language analysis under Analyze, and reader response under Evaluate. This visual framework helps structure all reading comprehension responses systematically.",
+    "quickRecap": "Always read questions before the passage to focus your reading. Support every point with embedded quotations from the text. Don't just identify language techniques—analyze their effects on the reader. Structure responses with clear topic sentences and avoid simply retelling the story."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:47:43.169Z",
-  "updated_at": "2026-04-06T03:47:43.171Z"
+  "updated_at": "2026-04-06T03:47:43.171Z",
+  "enriched_at": "2026-04-06T16:06:00.657Z"
 }

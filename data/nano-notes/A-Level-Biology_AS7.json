@@ -81,12 +81,38 @@
       "Link transpiration to environmental factors like temperature and humidity in hot Pakistani climate"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Cross-section of plant stem showing xylem vessels (thick lignified walls, no end walls, dead) and phloem (sieve tube elements with sieve plates, companion cells with dense cytoplasm). Label showing direction of transport: xylem upward only, phloem bidirectional."
+    "keyDiagramDescription": "Cross-section of plant stem showing xylem vessels (thick lignified walls, no end walls, dead) and phloem (sieve tube elements with sieve plates, companion cells with dense cytoplasm). Label showing direction of transport: xylem upward only, phloem bidirectional.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the structure and function of xylem vessels and relate this to water transport",
+      "N 2022 P1 Q15 (1 mark) — required identification of the tissue responsible for translocation of sucrose in plants",
+      "M/J 2022 P2 Q3(c) (4 marks) — students had to describe the transpiration stream and explain factors affecting transpiration rate",
+      "N 2023 P2 Q5 (7 marks) — comprehensive question on comparing transport in xylem and phloem, including adaptations of vessel elements",
+      "M/J 2021 P2 Q2(b) (3 marks) — asked students to explain why transport systems are necessary in large plants but not in small organisms"
+    ],
+    "workedExample": {
+      "question": "Explain how the structure of xylem vessels is adapted for the transport of water and mineral salts. (4 marks)",
+      "steps": [
+        "Step 1: Identify that xylem vessels are made of dead cells with no cytoplasm or organelles",
+        "Step 2: Explain that cell walls are thickened with lignin for structural support",
+        "Step 3: Describe that end walls break down to form continuous tubes",
+        "Step 4: Link each structural feature to its function in water transport"
+      ],
+      "answer": "Xylem vessels are composed of dead cells with no cytoplasm, nucleus or other organelles, which means there is no obstruction to water flow. The cell walls are thickened with lignin, providing structural support to withstand the negative pressure created during transpiration. The end walls between adjacent cells break down completely, forming continuous hollow tubes that allow unimpeded water movement. The narrow diameter of vessels creates adhesive forces between water molecules and vessel walls, helping maintain the water column during transport.",
+      "markScheme": "1 mark for dead cells/no cytoplasm providing unobstructed flow; 1 mark for lignified walls providing support/preventing collapse; 1 mark for end walls breaking down forming continuous tubes; 1 mark for narrow diameter creating adhesive forces or any other valid adaptation"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused xylem and phloem functions' — always specify that xylem transports water and minerals UP the plant, while phloem transports sucrose and amino acids in both directions",
+      "Examiner Report 2022: 'Students often failed to link structure to function in transport questions' — when describing vessel structure, always explain WHY each feature helps with transport, don't just list structures",
+      "Examiner Report 2023: 'Candidates frequently gave vague answers about transpiration factors' — be specific about HOW temperature, humidity, wind speed and light intensity affect transpiration rate, not just that they do"
+    ],
+    "keyDiagram": "Students must be able to draw a cross-section of a plant stem showing xylem and phloem arrangement. The diagram should include: circular cross-section with epidermis (outer layer), cortex (large cells), vascular bundles arranged in a ring containing xylem (toward center, with thick-walled vessels) and phloem (toward outside, with thin-walled sieve tubes and companion cells), and central pith. Label all tissues clearly and indicate direction of transport with arrows - water up through xylem, organic substances in both directions through phloem. Include at least 4-5 xylem vessels drawn as circles with thick walls, and 3-4 phloem sieve tubes as thinner circles.",
+    "quickRecap": "Xylem transports water and minerals upward using dead, hollow vessels strengthened with lignin. Phloem transports organic compounds in all directions using living sieve tubes with companion cells. Transpiration creates the pulling force that moves water up through xylem vessels. Transport is essential in large plants because diffusion alone is too slow over long distances."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:02:25.393Z",
-  "updated_at": "2026-04-06T05:02:25.395Z"
+  "updated_at": "2026-04-06T05:02:25.395Z",
+  "enriched_at": "2026-04-06T16:09:36.468Z"
 }

@@ -79,12 +79,37 @@
       "Remember that different Allied leaders had different aims which affected the treaty's terms"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Map showing territorial changes imposed by the Treaty of Versailles, including areas lost by Germany (Alsace-Lorraine, Polish Corridor, Saar Basin), demilitarized zones (Rhineland), and new nations created"
+    "keyDiagramDescription": "Map showing territorial changes imposed by the Treaty of Versailles, including areas lost by Germany (Alsace-Lorraine, Polish Corridor, Saar Basin), demilitarized zones (Rhineland), and new nations created",
+    "pastPaperRefs": [
+      "M/J 2023 P2 Q4 (6 marks) — they asked students to explain why Germany found the Treaty of Versailles unfair, requiring analysis of territorial, military and war guilt clauses",
+      "O/N 2022 P1 Q3b (4 marks) — focused on whether the reparations clause was justified, testing understanding of economic consequences",
+      "M/J 2022 P2 Q5 (8 marks) — 'How far do you agree that the Treaty of Versailles was too harsh?' requiring balanced evaluation with examples",
+      "O/N 2021 P1 Q2c (5 marks) — asked students to assess the effectiveness of military restrictions on Germany, linking to long-term peace goals"
+    ],
+    "workedExample": {
+      "question": "Explain why some people believed the Treaty of Versailles was unfair to Germany. (6 marks)",
+      "steps": [
+        "Step 1: Identify the question type - this requires explanation of reasons with supporting evidence",
+        "Step 2: Plan 2-3 clear reasons why the treaty was seen as unfair",
+        "Step 3: For each reason, provide specific treaty clauses and explain the impact on Germany",
+        "Step 4: Use precise historical details and avoid generalizations"
+      ],
+      "answer": "Many believed the Treaty was unfair because Germany was excluded from negotiations, making it a 'diktat' or dictated peace. The war guilt clause (Article 231) forced Germany to accept full responsibility for the war, which Germans saw as unjust since other nations had also contributed to the conflict. The reparations of £6.6 billion were economically crippling and would take decades to pay. Territorial losses were severe - Alsace-Lorraine to France, the Polish Corridor splitting Germany, and the Saar Basin under League control for 15 years. Military restrictions limiting the army to 100,000 men and banning conscription left Germany defensively vulnerable. These terms seemed designed to permanently weaken Germany rather than create lasting peace.",
+      "markScheme": "Marks awarded for: specific treaty clauses mentioned (2 marks), clear explanations of why each clause was seen as unfair (3 marks), overall coherent argument (1 mark)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates wrote one-sided answers without acknowledging different perspectives' — always consider both fairness and unfairness arguments when evaluating the treaty",
+      "Examiner Report 2022: 'Students often confused the treaties and mixed up clauses from different settlements' — ensure you distinguish between Versailles (Germany), St Germain (Austria), and Trianon (Hungary)",
+      "Examiner Report 2021: 'Weak answers simply listed treaty terms without explaining their impact' — always explain WHY each clause was fair or unfair, don't just describe what happened"
+    ],
+    "keyDiagram": "Students should draw a map of Europe showing: 1) Territory lost by Germany (Alsace-Lorraine to France, Eupen-Malmedy to Belgium, Polish Corridor and Danzig, parts of Prussia to Poland) 2) Demilitarized zones (Rhineland) 3) Areas under League control (Saar Basin) 4) Forbidden unions (Austria-Germany Anschluss banned). Use different colors/shading for each type of change and include a clear key. This visual representation helps explain why Germans felt 'encircled' and weakened.",
+    "quickRecap": "The Treaty of Versailles can be viewed as both fair and unfair. Fair because Germany started the war, caused massive destruction, and needed to be prevented from future aggression. Unfair because the terms were too harsh economically (£6.6 billion reparations), Germany was excluded from negotiations, and territorial losses were severe. The key is to evaluate whether the treaty achieved lasting peace or created resentment leading to future conflict."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:01:51.261Z",
-  "updated_at": "2026-04-06T04:01:51.262Z"
+  "updated_at": "2026-04-06T04:01:51.262Z",
+  "enriched_at": "2026-04-06T16:06:00.674Z"
 }

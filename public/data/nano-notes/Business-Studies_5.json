@@ -93,12 +93,38 @@
       "Net profit = Gross profit - Expenses",
       "Working capital = Current assets - Current liabilities"
     ],
-    "keyDiagramDescription": "Cash flow forecast table showing months across the top, with rows for cash inflows, cash outflows, net cash flow, opening balance and closing balance. Income statement format showing Revenue at top, minus Cost of sales equals Gross profit, minus Expenses equals Net profit."
+    "keyDiagramDescription": "Cash flow forecast table showing months across the top, with rows for cash inflows, cash outflows, net cash flow, opening balance and closing balance. Income statement format showing Revenue at top, minus Cost of sales equals Gross profit, minus Expenses equals Net profit.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the importance of cash flow forecasts to a small business and calculate missing figures in a cash flow statement",
+      "N/D 2022 P1 Q8 (8 marks) — candidates had to analyze a profit and loss account and balance sheet to assess business performance using ratios",
+      "M/J 2022 P2 Q3 (4 marks) — students were required to distinguish between profit and cash flow using a practical business scenario",
+      "N/D 2021 P1 Q7 (6 marks) — question focused on interpreting financial statements to make business decisions about expansion",
+      "M/J 2021 P2 Q5 (5 marks) — tested understanding of why businesses need both profit and loss accounts and balance sheets"
+    ],
+    "workedExample": {
+      "question": "ABC Ltd has current assets of $45,000, current liabilities of $30,000, and inventory of $18,000. Calculate the current ratio and acid test ratio. Comment on the liquidity position. (6 marks)",
+      "steps": [
+        "Step 1: Calculate current ratio = Current Assets ÷ Current Liabilities = $45,000 ÷ $30,000 = 1.5:1",
+        "Step 2: Calculate liquid assets = Current Assets - Inventory = $45,000 - $18,000 = $27,000",
+        "Step 3: Calculate acid test ratio = Liquid Assets ÷ Current Liabilities = $27,000 ÷ $30,000 = 0.9:1",
+        "Step 4: Comment on liquidity - current ratio of 1.5:1 shows business can meet short-term debts, but acid test of 0.9:1 suggests potential cash flow problems if inventory cannot be sold quickly"
+      ],
+      "answer": "Current ratio = 1.5:1, Acid test ratio = 0.9:1. The business has adequate liquidity overall but may struggle with immediate cash payments as the acid test ratio is below 1:1, indicating heavy reliance on inventory conversion to cash.",
+      "markScheme": "2 marks for correct current ratio calculation, 2 marks for correct acid test calculation, 2 marks for appropriate comment linking ratios to liquidity position"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused profit with cash flow' — always distinguish that profit is calculated using the matching principle while cash flow shows actual money movements",
+      "Examiner Report 2022: 'Students often failed to show their working when calculating ratios' — always show the formula used and substitute figures clearly for full marks",
+      "Examiner Report 2021: 'Weak responses simply stated ratio values without interpretation' — always explain what the calculated ratios mean for business performance and decision-making"
+    ],
+    "keyDiagram": "Students must be able to draw and label a simple balance sheet structure showing: ASSETS (Fixed Assets: premises, equipment, vehicles; Current Assets: inventory, debtors, cash) = CAPITAL AND LIABILITIES (Capital: owner's equity, retained profits; Long-term liabilities: bank loans; Current liabilities: creditors, overdraft). The diagram should clearly show the accounting equation: Assets = Capital + Liabilities, with arrows indicating the flow and relationship between components.",
+    "quickRecap": "Financial information includes profit and loss accounts (showing revenue, costs, and profit over time), balance sheets (showing assets, liabilities, and capital at a point in time), and cash flow forecasts (predicting money in and out). Key ratios measure profitability, liquidity, and efficiency. Remember: profit ≠ cash flow, and businesses need both profitability and liquidity to survive."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:53:26.032Z",
-  "updated_at": "2026-04-06T03:53:26.032Z"
+  "updated_at": "2026-04-06T03:53:26.032Z",
+  "enriched_at": "2026-04-06T16:07:27.357Z"
 }

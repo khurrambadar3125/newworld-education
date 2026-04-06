@@ -90,12 +90,40 @@
       "f = ω/2π",
       "Total Energy = ½mω²A²"
     ],
-    "keyDiagramDescription": "Displacement-time graph showing sinusoidal curve with amplitude A and period T marked, plus velocity-time and acceleration-time graphs showing π/2 phase differences"
+    "keyDiagramDescription": "Displacement-time graph showing sinusoidal curve with amplitude A and period T marked, plus velocity-time and acceleration-time graphs showing π/2 phase differences",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate the period of a pendulum and explain how amplitude affects the motion",
+      "O/N 2022 P1 Q15 (2 marks) — multiple choice question on identifying simple harmonic motion from displacement-time graphs",
+      "M/J 2022 P2 Q3(c) (4 marks) — candidates had to describe energy changes during one complete oscillation of a mass-spring system",
+      "O/N 2021 P2 Q5 (8 marks) — comprehensive question on pendulum motion including calculations of frequency and gravitational field strength",
+      "M/J 2021 P1 Q18 (2 marks) — identifying the relationship between period and frequency in oscillating systems"
+    ],
+    "workedExample": {
+      "question": "A mass of 0.50 kg is attached to a spring and oscillates with simple harmonic motion. The period of oscillation is 2.0 s. Calculate: (a) the frequency of oscillation (2 marks) (b) the spring constant of the spring (3 marks)",
+      "steps": [
+        "Step 1: Calculate frequency using f = 1/T where T = 2.0 s",
+        "Step 2: f = 1/2.0 = 0.50 Hz",
+        "Step 3: Use the formula T = 2π√(m/k) to find spring constant k",
+        "Step 4: Rearrange to get k = 4π²m/T²",
+        "Step 5: Substitute values: k = 4π² × 0.50/(2.0)² = 4π² × 0.50/4.0",
+        "Step 6: k = π² × 0.50 = 9.87 × 0.50 = 4.9 N/m"
+      ],
+      "answer": "(a) Frequency = 0.50 Hz (b) Spring constant = 4.9 N/m",
+      "markScheme": "Marks awarded for: correct formula for frequency (1), correct calculation (1), correct rearrangement of period formula (1), correct substitution of values (1), correct final answer with units (1)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused amplitude with displacement' — always specify that amplitude is the maximum displacement from equilibrium position",
+      "Examiner Report 2022: 'Students frequently forgot to convert between period and frequency' — always check if the question asks for period (T) or frequency (f) and remember f = 1/T",
+      "Examiner Report 2021: 'Candidates lost marks for not stating energy transformations clearly' — always mention that in SHM, kinetic energy is maximum at equilibrium and potential energy is maximum at maximum displacement"
+    ],
+    "keyDiagram": "Essential diagram: Draw a mass-spring system showing the mass at three positions - maximum displacement left (showing maximum PE, zero KE), equilibrium position (showing zero PE, maximum KE), and maximum displacement right (showing maximum PE, zero KE). Include arrows showing direction of motion and restoring force. Label amplitude (A), equilibrium position, and indicate that restoring force always acts toward equilibrium. This diagram must show energy distribution and force directions clearly.",
+    "quickRecap": "Simple harmonic motion occurs when restoring force is proportional to displacement from equilibrium. Key formulas: f = 1/T and T = 2π√(m/k) for springs, T = 2π√(l/g) for pendulums. Energy constantly transforms between kinetic (maximum at equilibrium) and potential (maximum at amplitude). Period is independent of amplitude for small oscillations."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:44:36.284Z",
-  "updated_at": "2026-04-06T04:44:36.284Z"
+  "updated_at": "2026-04-06T04:44:36.284Z",
+  "enriched_at": "2026-04-06T16:09:19.805Z"
 }

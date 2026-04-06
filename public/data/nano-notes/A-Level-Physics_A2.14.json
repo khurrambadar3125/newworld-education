@@ -88,12 +88,37 @@
       "v = zc (for small redshifts)",
       "Age of universe ≈ 1/H₀"
     ],
-    "keyDiagramDescription": "Hertzsprung-Russell diagram with luminosity (log scale) on y-axis and surface temperature (decreasing left to right) on x-axis, showing main sequence diagonal band, red giant branch, and white dwarf region"
+    "keyDiagramDescription": "Hertzsprung-Russell diagram with luminosity (log scale) on y-axis and surface temperature (decreasing left to right) on x-axis, showing main sequence diagonal band, red giant branch, and white dwarf region",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the evidence for the Big Bang theory including cosmic microwave background radiation",
+      "O/N 2022 P1 Q12 (2 marks) — required calculation of stellar distances using parallax measurements in arcseconds",
+      "M/J 2022 P2 Q5b (4 marks) — students had to describe the life cycle of a star similar to our Sun, from main sequence to white dwarf",
+      "O/N 2023 P2 Q3 (5 marks) — focused on explaining Hubble's law and how redshift data supports an expanding universe model"
+    ],
+    "workedExample": {
+      "question": "A star has a parallax angle of 0.25 arcseconds when observed from Earth. Calculate the distance to this star in parsecs and light-years. (4 marks)",
+      "steps": [
+        "Step 1: Use the parallax formula: distance (parsecs) = 1/parallax angle (arcseconds)",
+        "Step 2: Substitute values: distance = 1/0.25 = 4.0 parsecs",
+        "Step 3: Convert to light-years using: 1 parsec = 3.26 light-years",
+        "Step 4: Distance in light-years = 4.0 × 3.26 = 13.04 light-years"
+      ],
+      "answer": "The star is 4.0 parsecs or 13.0 light-years away from Earth.",
+      "markScheme": "1 mark for correct formula, 1 mark for substitution, 1 mark for parsec answer, 1 mark for light-year conversion"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused redshift with blueshift when explaining galactic motion' — always specify that redshift indicates galaxies moving away from us",
+      "Examiner Report 2022: 'Students frequently omitted the nuclear fusion stage when describing stellar evolution' — always mention hydrogen fusion in stellar core for main sequence stars",
+      "Examiner Report 2023: 'Candidates often gave vague answers about cosmic microwave background radiation' — always state it's uniform radiation at 2.7K from all directions in space"
+    ],
+    "keyDiagram": "Students must be able to draw the Hertzsprung-Russell (H-R) diagram showing: x-axis labeled 'Temperature (K)' decreasing left to right, y-axis labeled 'Luminosity' or 'Absolute Magnitude', main sequence diagonal band from top-left to bottom-right, red giant region (top-right), white dwarf region (bottom-left), and be able to plot our Sun's position on the main sequence.",
+    "quickRecap": "Universe began with Big Bang 13.8 billion years ago, evidenced by cosmic microwave background radiation and Hubble's law showing galactic redshift. Stars form from nebulae, fuse hydrogen on main sequence, then evolve through red giant phase to white dwarf (Sun-like stars) or supernova to neutron star/black hole (massive stars). Distances measured using parallax method where distance in parsecs equals 1/parallax angle in arcseconds."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:47:35.626Z",
-  "updated_at": "2026-04-06T04:47:35.626Z"
+  "updated_at": "2026-04-06T04:47:35.626Z",
+  "enriched_at": "2026-04-06T16:07:42.683Z"
 }

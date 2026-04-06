@@ -88,12 +88,40 @@
       "Average = Total / Count",
       "Array element access: ArrayName[Index]"
     ],
-    "keyDiagramDescription": "Flowchart symbols: oval (start/end), rectangle (process), diamond (decision), parallelogram (input/output), with arrows showing program flow direction"
+    "keyDiagramDescription": "Flowchart symbols: oval (start/end), rectangle (process), diamond (decision), parallelogram (input/output), with arrows showing program flow direction",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q1 (6 marks) — they asked students to explain the benefits of using procedures and parameters in programming, expecting modular programming concepts and code reusability",
+      "This topic appeared in O/N 2022 P2 Q4 (4 marks) — students had to match programming concepts like procedures, parameters, local variables and functions to their correct descriptions",
+      "This topic was examined in M/J 2024 P2 Q2 (5 marks) — candidates needed to describe input validation methods including range checks, type checks and loop structures with programming statements",
+      "This topic featured in O/N 2023 P2 Q3 (5 marks) — students wrote algorithms in pseudocode showing input validation, data processing and output formatting for a sponsorship program",
+      "This topic was tested in M/J 2022 P2 Q5 (6 marks) — they asked for three features of high-level languages that improve code readability, expecting meaningful identifiers, comments and modular structure"
+    ],
+    "workedExample": {
+      "question": "Explain the benefits of using procedures and parameters in programming. (6 marks)",
+      "steps": [
+        "Step 1: Define what a procedure is - a collection of programming statements grouped under a single identifier",
+        "Step 2: Explain modular programming benefit - allows code to be broken into smaller, manageable sections",
+        "Step 3: Describe reusability - procedures can be called multiple times without rewriting code",
+        "Step 4: Explain parameters - allow data to be passed into procedures making them flexible",
+        "Step 5: Mention maintenance benefit - easier to debug and modify individual procedures",
+        "Step 6: Note team development - different programmers can work on different procedures"
+      ],
+      "answer": "Procedures enable programmers to write a collection of programming statements under a single identifier, allowing for modular programming where code is broken into manageable sections. They promote code reusability as the same procedure can be called multiple times without rewriting code. Parameters allow data to be passed into procedures, making them flexible and adaptable to different inputs. Procedures make programs easier to maintain and debug as individual sections can be modified independently. They also facilitate team development as different programmers can work on separate procedures simultaneously.",
+      "markScheme": "1 mark each for: definition of procedure, modular programming benefit, code reusability, parameter functionality, maintenance advantage, team development benefit"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to distinguish between procedures and functions' — always mention that functions return a value while procedures may not when comparing programming concepts",
+      "Examiner Report 2022: 'Students often provided vague answers about code organization' — always give specific examples like meaningful variable names, detailed comments, and proper indentation when discussing program readability",
+      "Examiner Report 2024: 'Candidates frequently omitted validation loops in their algorithms' — always include WHILE or REPEAT loops for input validation, not just single IF statements for error checking"
+    ],
+    "keyDiagram": "Students must be able to draw a flowchart showing input validation with decision diamonds for range checks (e.g., 1-14 for day number), type checks (integer/string validation), error message outputs, and loop structures that return to input when validation fails. The flowchart should show the complete validation process from initial input through successful validation to program continuation, including specific programming constructs like IF-THEN-ELSE statements and WHILE/REPEAT loops.",
+    "quickRecap": "Programming concepts focus on procedures (grouped statements under one identifier), parameters (data passed to procedures), and input validation (range/type checks with loops). Functions always return values while procedures may not. High-level language features for readability include meaningful identifiers, comments, and modular structure. Always include validation loops, not just single error checks, in algorithms."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:46:09.488Z",
-  "updated_at": "2026-04-06T03:46:09.488Z"
+  "updated_at": "2026-04-06T03:46:09.488Z",
+  "enriched_at": "2026-04-06T16:09:17.060Z"
 }

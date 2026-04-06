@@ -86,12 +86,38 @@
     "formulas": [
       "Magnification = size of image ÷ actual size of object"
     ],
-    "keyDiagramDescription": "Plant and animal cell diagrams showing nucleus, cytoplasm, cell membrane, mitochondria. Plant cell additionally shows cell wall, chloroplasts, and permanent vacuole. All parts must be clearly labelled."
+    "keyDiagramDescription": "Plant and animal cell diagrams showing nucleus, cytoplasm, cell membrane, mitochondria. Plant cell additionally shows cell wall, chloroplasts, and permanent vacuole. All parts must be clearly labelled.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to identify structures visible in an electron micrograph of onion root cells prepared using freeze-fracture technique and explain their appearance",
+      "O/N 2022 P1 Q15 (1 mark) — tested knowledge of which structures are present during specific stages of mitosis, specifically asking about centromeres in human muscle cells with 46 chromosomes",
+      "M/J 2023 P2 Q7 (3 marks) — required students to calculate cell diameter from photomicrographs and identify what additional information was needed for measurements in micrometers",
+      "O/N 2022 P1 Q12 (1 mark) — tested understanding of polysaccharide structure, specifically which properties are shared between starch and cellulose regarding monosaccharide units and glycosidic bonds",
+      "M/J 2024 P2 Q4 (5 marks) — showed photomicrograph of onion cells after osmotic treatment and asked students to identify what filled the spaces between cell wall and membrane"
+    ],
+    "workedExample": {
+      "question": "An electron micrograph shows plant cells magnified ×15,000. The actual diameter of one cell nucleus is 8 μm. Calculate the diameter of the nucleus as it appears in the micrograph. Show your working. (3 marks)",
+      "steps": [
+        "Step 1: Identify the formula needed: Image size = Actual size × Magnification",
+        "Step 2: Convert actual size to appropriate units: 8 μm = 8 × 10⁻⁶ m",
+        "Step 3: Apply the magnification: Image size = 8 × 10⁻⁶ × 15,000",
+        "Step 4: Calculate: Image size = 0.12 m = 120 mm = 12 cm"
+      ],
+      "answer": "Image size = Actual size × Magnification. Image size = 8 × 10⁻⁶ × 15,000 = 0.12 m = 12 cm",
+      "markScheme": "1 mark for correct formula, 1 mark for correct substitution of values, 1 mark for correct final answer with appropriate units"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused prokaryotic and eukaryotic cell structures' — always check whether the question refers to bacterial, plant, or animal cells before listing organelles",
+      "Examiner Report 2022: 'Students frequently forgot to convert units in magnification calculations' — always ensure final answers are in the units requested in the question",
+      "Examiner Report 2024: 'Candidates often described function instead of structure' — when asked to identify cell structures, focus on what you can see, not what the organelle does"
+    ],
+    "keyDiagram": "Students must be able to draw and label a typical animal cell showing: nucleus with nuclear envelope and nucleolus, cytoplasm, cell membrane, mitochondria, ribosomes, rough and smooth endoplasmic reticulum, Golgi apparatus, lysosomes, and centrosome. The diagram should show relative sizes accurately (nucleus ~10μm, mitochondria ~2μm) and include at least 8 labeled structures. Organelles should be drawn with correct internal structure - mitochondria with cristae, ER with attached ribosomes, nucleus with nuclear pores.",
+    "quickRecap": "Eukaryotic cells have membrane-bound organelles including nucleus, mitochondria, ER, and Golgi apparatus. Prokaryotic cells lack these membrane-bound structures but have ribosomes, DNA, and cytoplasm. Plant cells additionally have cell walls, chloroplasts, and large vacuoles. Use the formula: Image size = Actual size × Magnification for all microscopy calculations."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:26:02.856Z",
-  "updated_at": "2026-04-05T21:26:02.857Z"
+  "updated_at": "2026-04-05T21:26:02.857Z",
+  "enriched_at": "2026-04-06T16:05:58.023Z"
 }

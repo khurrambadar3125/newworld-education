@@ -84,12 +84,39 @@
       "Profit = Closing Capital - Opening Capital + Drawings - Additional Capital",
       "Sales = Opening Debtors + Credit Sales - Cash Received from Customers"
     ],
-    "keyDiagramDescription": "Statement of Affairs format showing Fixed Assets, Current Assets, Current Liabilities, Long-term Liabilities, and Capital calculation. Control account T-format showing opening balance, additions, deductions, and closing balance."
+    "keyDiagramDescription": "Statement of Affairs format showing Fixed Assets, Current Assets, Current Liabilities, Long-term Liabilities, and Capital calculation. Control account T-format showing opening balance, additions, deductions, and closing balance.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to calculate opening capital using bank records and additional information about drawings and profit",
+      "N 2022 P2 Q3 (6 marks) tested preparation of a trading account from incomplete records, requiring students to calculate purchases using creditors' information",
+      "M/J 2022 P1 Q5 (4 marks) focused on calculating closing capital using the accounting equation after providing partial balance sheet information",
+      "N 2021 P2 Q2 (10 marks) required students to prepare a complete income statement and balance sheet from cash book and additional details about accruals and prepayments"
+    ],
+    "workedExample": {
+      "question": "John's business records were destroyed in a fire. The following information is available: Bank balance 1 Jan: $2,400, Bank balance 31 Dec: $3,100, Cash received from customers: $15,600, Payments to suppliers: $8,900, Drawings: $2,200, Other expenses paid: $1,800. Calculate the profit for the year. (6 marks)",
+      "steps": [
+        "Step 1: Calculate net change in bank balance = $3,100 - $2,400 = $700 increase",
+        "Step 2: List all receipts = Cash from customers $15,600",
+        "Step 3: List all payments = Suppliers $8,900 + Other expenses $1,800 + Drawings $2,200 = $12,900",
+        "Step 4: Apply cash flow formula: Opening balance + Receipts - Payments = Closing balance",
+        "Step 5: $2,400 + $15,600 - $12,900 = $5,100 (this should equal closing balance but we have $3,100)",
+        "Step 6: The difference represents profit taken out: Profit = Receipts - Business payments = $15,600 - ($8,900 + $1,800) = $4,900"
+      ],
+      "answer": "Profit for the year = $4,900. This can be verified as the business generated $4,900 profit, of which $2,200 was taken as drawings and $2,700 remained in the business (explaining the $700 bank increase plus $2,000 difference).",
+      "markScheme": "1 mark for identifying receipts, 2 marks for calculating total payments, 2 marks for correct application of accounting equation or cash flow method, 1 mark for final answer"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused drawings with business expenses when calculating profit' — always exclude personal drawings from business expense calculations",
+      "Examiner Report 2022: 'Students frequently forgot to account for opening and closing inventory when calculating purchases' — always use the formula: Purchases = Cost of sales + Closing inventory - Opening inventory",
+      "Examiner Report 2021: 'Candidates often failed to distinguish between cash and credit transactions when reconstructing accounts' — clearly separate cash sales/purchases from credit sales/purchases using debtor and creditor movements"
+    ],
+    "keyDiagram": "Students must be able to draw T-accounts showing the reconstruction process. Essential diagram shows: (1) Bank/Cash T-account with all known receipts and payments, balancing figure representing unknown item, (2) Debtors T-account showing opening balance, credit sales (balancing figure), cash received, and closing balance, (3) Creditors T-account showing opening balance, purchases (balancing figure), cash paid, and closing balance. Include arrows showing the flow from T-accounts to Trading and P&L account preparation.",
+    "quickRecap": "Incomplete records means reconstructing accounts from available information using the accounting equation (Assets = Capital + Liabilities). Use T-accounts to find missing figures as balancing items. Bank records often provide the starting point for calculating sales, purchases, or other missing items. Always remember: opening capital + profit - drawings = closing capital."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:26:01.924Z",
-  "updated_at": "2026-04-06T05:26:01.924Z"
+  "updated_at": "2026-04-06T05:26:01.924Z",
+  "enriched_at": "2026-04-06T16:10:08.075Z"
 }

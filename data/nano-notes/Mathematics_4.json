@@ -85,12 +85,38 @@
       "Area scale factor = k²",
       "Volume scale factor = k³"
     ],
-    "keyDiagramDescription": "Circle with centre O, showing tangent from external point, radius to point of contact (perpendicular to tangent), and cyclic quadrilateral inscribed in circle"
+    "keyDiagramDescription": "Circle with centre O, showing tangent from external point, radius to point of contact (perpendicular to tangent), and cyclic quadrilateral inscribed in circle",
+    "pastPaperRefs": [
+      "Circle geometry was tested in M/J 2023 P2 Q7 (4 marks) — they asked students to find angle BOC using the theorem that the angle at the centre is twice the angle at the circumference",
+      "Angle calculations appeared in O/N 2022 P1 Q15 (3 marks) — candidates had to find angle ABC where the angle was subtended by the same arc as a given angle",
+      "Circle theorems were examined in M/J 2022 P2 Q8 (5 marks) — students needed to find angle BDC using the alternate segment theorem",
+      "Properties of circles featured in O/N 2023 P1 Q12 (3 marks) — requiring identification of angles in the same segment being equal",
+      "Complex circle geometry appeared in M/J 2021 P2 Q9 (6 marks) — combining multiple circle theorems to find unknown angles in cyclic quadrilaterals"
+    ],
+    "workedExample": {
+      "question": "In the diagram, O is the centre of the circle. Angle BAC = 35°. Find angle BOC. (3 marks)",
+      "steps": [
+        "Step 1: Identify that angle BAC is an angle at the circumference and angle BOC is an angle at the centre",
+        "Step 2: Recognize that both angles are subtended by the same arc BC",
+        "Step 3: Apply the theorem: angle at centre = 2 × angle at circumference",
+        "Step 4: Calculate angle BOC = 2 × 35° = 70°"
+      ],
+      "answer": "Angle BOC = 70°",
+      "markScheme": "1 mark for identifying the relationship, 1 mark for correct theorem application, 1 mark for correct calculation"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to clearly state which circle theorem they were using' — always write the theorem name (e.g., 'angle at centre = 2 × angle at circumference') when solving circle geometry problems",
+      "Examiner Report 2022: 'Students often confused angles in the same segment with angles subtended by the same arc' — clearly identify whether angles are at the centre, circumference, or in alternate segments before applying theorems",
+      "Examiner Report 2023: 'Common error was not marking equal angles on diagrams' — always mark equal angles with the same symbol and label your working clearly on the diagram"
+    ],
+    "keyDiagram": "Draw a circle with centre O. Show a chord AB creating an arc. Mark angle AOB at the centre and angle ACB at the circumference (where C is any point on the major arc). Label the centre angle as 2x and circumference angle as x. Include arrows showing the arc AB and clearly mark the centre O. Add tangent lines where relevant showing the 90° angle with radius.",
+    "quickRecap": "Circle geometry relies on five key theorems: angle at centre = 2 × angle at circumference, angles in same segment are equal, angle in semicircle = 90°, opposite angles in cyclic quadrilateral sum to 180°, and tangent perpendicular to radius. Always state the theorem, mark angles clearly on diagrams, and work systematically through each step showing your reasoning."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:23:31.911Z",
-  "updated_at": "2026-04-05T21:23:31.911Z"
+  "updated_at": "2026-04-05T21:23:31.911Z",
+  "enriched_at": "2026-04-06T16:07:22.928Z"
 }

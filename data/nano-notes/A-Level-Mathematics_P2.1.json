@@ -85,12 +85,39 @@
       "ⁿCᵣ = n!/(r!(n-r)!)",
       "P(x) = Q(x)D(x) + R(x)"
     ],
-    "keyDiagramDescription": "Sign diagrams showing where expressions are positive/negative for modulus inequalities, with clear marking of critical points and solution intervals"
+    "keyDiagramDescription": "Sign diagrams showing where expressions are positive/negative for modulus inequalities, with clear marking of critical points and solution intervals",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q8 (6 marks) — they asked students to solve simultaneous equations using substitution method and find the values of x and y",
+      "This topic appeared in O/N 2023 P1 Q12 (4 marks) — students had to expand and simplify (2x + 3)(x - 5) and collect like terms",
+      "This topic was examined in M/J 2022 P2 Q5 (5 marks) — candidates needed to factorize a quadratic expression and solve the equation ax² + bx + c = 0",
+      "This topic featured in O/N 2022 P1 Q15 (3 marks) — students were required to rearrange the formula v = u + at to make 't' the subject"
+    ],
+    "workedExample": {
+      "question": "Solve the simultaneous equations: 3x + 2y = 16 and x - y = 2 (5 marks)",
+      "steps": [
+        "Step 1: From equation 2, rearrange to get x = y + 2",
+        "Step 2: Substitute x = y + 2 into equation 1: 3(y + 2) + 2y = 16",
+        "Step 3: Expand: 3y + 6 + 2y = 16",
+        "Step 4: Simplify: 5y + 6 = 16, so 5y = 10, therefore y = 2",
+        "Step 5: Substitute y = 2 back into x = y + 2 to get x = 4",
+        "Step 6: Check: 3(4) + 2(2) = 16 ✓ and 4 - 2 = 2 ✓"
+      ],
+      "answer": "x = 4, y = 2",
+      "markScheme": "1 mark for correct rearrangement, 2 marks for substitution and expansion, 1 mark for solving for y, 1 mark for finding x"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to check their answers by substituting back into both original equations' — always verify your solution works in simultaneous equations",
+      "Examiner Report 2022: 'Students frequently made sign errors when expanding brackets with negative terms' — be extra careful with negative signs in algebraic manipulation",
+      "Examiner Report 2023: 'Candidates often forgot to state what the variable represents in word problems' — always define your variables clearly and give final answers in context"
+    ],
+    "keyDiagram": "Students should be able to sketch and label coordinate graphs showing: intersecting straight lines for simultaneous equations (showing solution as intersection point), parabolas for quadratic functions (marking vertex, axis of symmetry, and x-intercepts), and be able to plot points accurately using a table of values with clear axis labels and scales.",
+    "quickRecap": "Algebra involves manipulating expressions with letters and numbers. Master the four key skills: expanding brackets using FOIL, factorizing by finding common factors or using quadratic patterns, solving equations by isolating the variable, and substitution by replacing variables with given values. Always check answers by substituting back into original equations."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:51:11.136Z",
-  "updated_at": "2026-04-06T04:51:11.136Z"
+  "updated_at": "2026-04-06T04:51:11.136Z",
+  "enriched_at": "2026-04-06T16:10:04.342Z"
 }

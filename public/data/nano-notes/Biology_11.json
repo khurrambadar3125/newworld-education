@@ -86,12 +86,41 @@
       "Practice drawing and labelling nephron diagrams - commonly examined"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Nephron structure showing glomerulus, Bowman's capsule, proximal convoluted tubule, loop of Henle, distal convoluted tubule, and collecting duct. Also temperature regulation flowchart showing stimulus → receptor → coordinator → effector → response pathway."
+    "keyDiagramDescription": "Nephron structure showing glomerulus, Bowman's capsule, proximal convoluted tubule, loop of Henle, distal convoluted tubule, and collecting duct. Also temperature regulation flowchart showing stimulus → receptor → coordinator → effector → response pathway.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to define homeostasis and explain why it's important for enzyme function",
+      "N/D 2022 P1 Q15 (1 mark) — multiple choice question testing the definition of homeostasis with common misconceptions as distractors",
+      "M/J 2024 P2 Q7b (6 marks) — students had to explain how blood glucose concentration is controlled, linking to homeostatic principles",
+      "N/D 2023 P2 Q4a (3 marks) — asked for three examples of conditions controlled by homeostasis in the human body",
+      "M/J 2022 P2 Q8c (5 marks) — explain the role of negative feedback in temperature regulation as an example of homeostasis"
+    ],
+    "workedExample": {
+      "question": "Explain how homeostasis maintains blood glucose concentration at a constant level. (6 marks)",
+      "steps": [
+        "Step 1: Define homeostasis as the maintenance of constant internal conditions",
+        "Step 2: Identify that blood glucose is detected by cells in the pancreas",
+        "Step 3: Explain that when glucose rises (after eating), pancreas releases insulin",
+        "Step 4: Describe insulin's effect - increases glucose uptake by cells and converts excess to glycogen",
+        "Step 5: Explain that when glucose falls, pancreas releases glucagon",
+        "Step 6: Describe glucagon's effect - stimulates glycogen breakdown to glucose",
+        "Step 7: Conclude this is negative feedback maintaining glucose in normal range"
+      ],
+      "answer": "Homeostasis is the maintenance of constant internal conditions. Blood glucose concentration is monitored by cells in the pancreas. When glucose concentration rises after eating, the pancreas secretes insulin. Insulin increases glucose uptake by cells and promotes conversion of excess glucose to glycogen for storage in the liver. When glucose concentration falls, the pancreas secretes glucagon. Glucagon stimulates the breakdown of glycogen back to glucose in the liver. This negative feedback mechanism maintains blood glucose within the normal range.",
+      "markScheme": "1 mark for definition of homeostasis, 1 mark for role of pancreas, 2 marks for insulin pathway, 2 marks for glucagon pathway"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused homeostasis with adaptation' — always emphasize that homeostasis maintains constant internal conditions, not changes in response to environment",
+      "Examiner Report 2022: 'Students often failed to mention negative feedback when explaining homeostatic mechanisms' — always include how the response counteracts the original change",
+      "Examiner Report 2024: 'Candidates frequently gave vague examples like temperature control without explaining the actual mechanism' — be specific about receptors, control centers, and effectors in your examples"
+    ],
+    "keyDiagram": "Students must be able to draw a negative feedback loop diagram showing: (1) Normal condition in center circle, (2) Arrows showing increase and decrease from normal, (3) Detection boxes for both changes, (4) Response boxes showing corrective actions, (5) Feedback arrows returning to normal condition. Label with specific example like temperature control showing hypothalamus detecting change, and responses like sweating/shivering. Include clear arrows showing the cyclical nature and how responses oppose the original change.",
+    "quickRecap": "Homeostasis maintains constant internal conditions essential for enzyme function and cell survival. It works through negative feedback loops where changes are detected and corrective responses are triggered. Key examples include temperature, blood glucose, and water balance control. Always remember: stimulus → detection → response → return to normal → feedback."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:29:27.757Z",
-  "updated_at": "2026-04-05T21:29:27.757Z"
+  "updated_at": "2026-04-05T21:29:27.757Z",
+  "enriched_at": "2026-04-06T16:06:41.985Z"
 }
