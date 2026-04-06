@@ -1,0 +1,106 @@
+{
+  "subject": "English Literature",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "10",
+  "chapter_name": "Themes and Literary Devices",
+  "note_data": {
+    "title": "Themes and Literary Devices",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Theme is the central idea or message that runs through a literary work and gives it meaning and purpose",
+      "Literary devices are techniques used by writers to convey their ideas more effectively and create special effects in their writing",
+      "Major themes include love, friendship, patriotism, social justice, nature, and human relationships",
+      "Common literary devices include metaphor, simile, personification, alliteration, symbolism, and irony",
+      "Imagery appeals to the five senses and helps create vivid pictures in the reader's mind",
+      "Symbolism uses objects, colors, or actions to represent deeper meanings beyond their literal sense",
+      "Irony occurs when there is a contrast between appearance and reality or expectation and outcome",
+      "Alliteration is the repetition of initial consonant sounds in consecutive words for rhythmic effect"
+    ],
+    "definitions": [
+      {
+        "term": "Theme",
+        "definition": "The central idea, message, or underlying meaning of a literary work that the author wants to convey to the readers"
+      },
+      {
+        "term": "Literary Device",
+        "definition": "A technique or method used by writers to convey meaning, create effects, and enhance their writing"
+      },
+      {
+        "term": "Metaphor",
+        "definition": "A figure of speech that makes a direct comparison between two unlike things without using 'like' or 'as'"
+      },
+      {
+        "term": "Simile",
+        "definition": "A figure of speech that compares two unlike things using the words 'like' or 'as'"
+      },
+      {
+        "term": "Symbolism",
+        "definition": "The use of symbols to represent ideas, qualities, or concepts beyond their literal meaning"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define theme with an example.",
+        "answer": "Theme is the central idea or message of a literary work. For example, the theme of Allama Iqbal's poetry is often patriotism and self-realization."
+      },
+      {
+        "type": "long",
+        "question": "Explain any five literary devices with examples from Pakistani literature.",
+        "answer": "1) Metaphor: Direct comparison without 'like/as' - 'Pakistan is a beacon of hope' 2) Simile: Comparison using 'like/as' - 'Brave like a lion of Punjab' 3) Personification: Giving human qualities to non-human things - 'River Indus weeps for Sindh' 4) Alliteration: Repetition of initial sounds - 'Sweet Shalimar gardens' 5) Symbolism: Using symbols for deeper meaning - Green in our flag symbolizes prosperity"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which literary device compares two things using 'like' or 'as'?",
+        "options": {
+          "A": "Metaphor",
+          "B": "Simile",
+          "C": "Personification",
+          "D": "Symbolism"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "What is the main theme of patriotic poetry?",
+        "options": {
+          "A": "Love for nature",
+          "B": "Social problems",
+          "C": "Love for country",
+          "D": "Religious devotion"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "'The mountains of Karakoram stood like silent guardians' is an example of:",
+        "options": {
+          "A": "Metaphor",
+          "B": "Irony",
+          "C": "Simile",
+          "D": "Alliteration"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse metaphor with simile - remember metaphor has NO 'like' or 'as'",
+      "Mixing up theme with plot - theme is the message, plot is what happens",
+      "Not providing proper examples from Pakistani context in answers",
+      "Writing incomplete definitions - always write the complete textbook definition",
+      "Confusing personification with symbolism - personification gives human qualities, symbolism represents deeper meanings"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question worth 5-8 marks in BSEK papers",
+      "Always memorize exact definitions as they appear in STBB textbook",
+      "Use Pakistani literary examples like Allama Iqbal, Faiz Ahmed Faiz when explaining devices",
+      "Practice identifying literary devices in given passages - common in exams",
+      "For long answers, provide definition + example + explanation for each device"
+    ],
+    "formulas": [],
+    "keyDiagram": "Create a mind map with 'Literary Devices' at center, branching out to: Metaphor, Simile, Personification, Symbolism, Irony, Alliteration, Imagery - each with definition and example"
+  },
+  "created_at": "2026-04-06T14:44:48.173Z"
+}

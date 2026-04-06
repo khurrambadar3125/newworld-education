@@ -1,0 +1,106 @@
+{
+  "subject": "English Literature",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "8",
+  "chapter_name": "One-Act Plays — Part II",
+  "note_data": {
+    "title": "One-Act Plays — Part II",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "One-act plays are complete dramatic works performed in a single act without intervals or scene changes",
+      "They focus on a single incident, situation, or character development within a limited timeframe",
+      "Unity of time, place, and action is strictly maintained in one-act plays",
+      "Character development is rapid and concentrated, revealing personality through dialogue and action",
+      "The climax occurs quickly due to the compressed nature of the form",
+      "Themes are usually simple and direct, avoiding complex sub-plots",
+      "Stage settings are minimal and realistic to maintain focus on the central conflict",
+      "One-act plays originated as a reaction against lengthy three or five-act dramas"
+    ],
+    "definitions": [
+      {
+        "term": "One-Act Play",
+        "definition": "A complete dramatic composition that is performed continuously without intervals, presenting a single situation or incident with unity of time, place and action."
+      },
+      {
+        "term": "Unity of Action",
+        "definition": "The principle that a play should have one main plot without any sub-plots that might distract attention from the central theme."
+      },
+      {
+        "term": "Unity of Time",
+        "definition": "The dramatic principle that the action of a play should occur within a single day or the actual time of performance."
+      },
+      {
+        "term": "Unity of Place",
+        "definition": "The dramatic principle that the action should occur in a single location throughout the play."
+      },
+      {
+        "term": "Climax",
+        "definition": "The highest point of dramatic tension in a play where the main conflict reaches its peak and the turning point occurs."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "What are the characteristics of a one-act play?",
+        "answer": "One-act plays have unity of time, place and action, focus on single incident, rapid character development, simple themes, and minimal stage settings."
+      },
+      {
+        "type": "long",
+        "question": "Write a detailed note on the structure and features of one-act plays.",
+        "answer": "One-act plays are complete dramatic works performed without intervals. They maintain strict unity of time, place and action. The structure includes rapid exposition, quick character development, immediate conflict presentation, swift climax, and prompt resolution. Features include: single setting, limited characters, concentrated dialogue, simple themes, realistic situations, and economical use of dramatic devices. They avoid sub-plots and focus entirely on the central conflict or situation."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "How many unities must be maintained in a one-act play?",
+        "options": {
+          "A": "Two",
+          "B": "Three",
+          "C": "Four",
+          "D": "Five"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The main characteristic of a one-act play is:",
+        "options": {
+          "A": "Multiple settings",
+          "B": "Complex sub-plots",
+          "C": "Single continuous action",
+          "D": "Long duration"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "One-act plays originated as a reaction against:",
+        "options": {
+          "A": "Short stories",
+          "B": "Lengthy multi-act dramas",
+          "C": "Poetry",
+          "D": "Novels"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse one-act plays with short stories - remember these are dramatic works for stage performance",
+      "Many forget to mention all three unities (time, place, action) when describing characteristics",
+      "Students often write about sub-plots when one-act plays specifically avoid them",
+      "Confusing climax with resolution - climax is the peak tension point, resolution follows it",
+      "Writing lengthy answers for short questions about simple definitions"
+    ],
+    "examTips": [
+      "This chapter usually appears as 1 MCQ and 1 short question worth 3-5 marks in BSEK papers",
+      "Always mention the three unities when discussing one-act play characteristics",
+      "Questions about 'features' and 'characteristics' appear frequently in past papers",
+      "Learn the exact definitions word-for-word as they appear in STBB textbook",
+      "Practice writing concise answers for 'Write a note on one-act plays' questions"
+    ],
+    "formulas": [],
+    "keyDiagram": "No specific diagram required for this literary topic"
+  },
+  "created_at": "2026-04-06T14:44:02.712Z"
+}

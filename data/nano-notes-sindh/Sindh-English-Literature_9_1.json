@@ -1,0 +1,106 @@
+{
+  "subject": "English Literature",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "1",
+  "chapter_name": "Short Stories — Part I",
+  "note_data": {
+    "title": "Short Stories — Part I",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Short story is a brief work of fiction that can be read in one sitting and focuses on a single incident or character",
+      "Elements of short story include: Plot, Character, Setting, Theme, Point of View, Style, and Tone",
+      "Plot is the sequence of events in a story that includes exposition, rising action, climax, falling action, and resolution",
+      "Character is a person, animal, or imaginary creature that takes part in the action of a story",
+      "Setting refers to the time and place where the events of a story occur",
+      "Theme is the central message or main idea that the author wants to convey through the story",
+      "Point of view is the perspective from which the story is told - first person, second person, or third person",
+      "Conflict is the struggle between opposing forces that drives the plot forward",
+      "Symbolism is the use of objects, colors, or actions to represent deeper meanings or ideas"
+    ],
+    "definitions": [
+      {
+        "term": "Short Story",
+        "definition": "A short story is a brief work of prose fiction that typically focuses on a single incident, character, or period of time and can be read in one sitting."
+      },
+      {
+        "term": "Plot",
+        "definition": "Plot is the sequence of events that make up a story, arranged in a specific order to create suspense, interest, and logical development."
+      },
+      {
+        "term": "Climax",
+        "definition": "Climax is the turning point or highest point of interest in a story where the main conflict reaches its peak."
+      },
+      {
+        "term": "Theme",
+        "definition": "Theme is the central idea, message, or underlying meaning of a literary work that the author wishes to convey to the readers."
+      },
+      {
+        "term": "Setting",
+        "definition": "Setting is the time and place in which the events of a story occur, including the physical location, historical period, and social environment."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define short story and mention its main characteristics.",
+        "answer": "A short story is a brief work of prose fiction focusing on a single incident or character. Its main characteristics are: brevity, single effect, limited characters, simple plot, and unity of time and place."
+      },
+      {
+        "type": "long",
+        "question": "Explain the elements of a short story in detail.",
+        "answer": "The main elements of a short story are: 1) Plot - sequence of events with beginning, middle, and end 2) Character - people in the story who drive the action 3) Setting - time and place of events 4) Theme - central message or idea 5) Point of view - perspective from which story is told 6) Style - author's way of writing 7) Tone - author's attitude toward the subject. Each element works together to create a unified artistic effect."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which element of a short story refers to the time and place of events?",
+        "options": {
+          "A": "Plot",
+          "B": "Character",
+          "C": "Setting",
+          "D": "Theme"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The turning point of a story is called:",
+        "options": {
+          "A": "Exposition",
+          "B": "Climax",
+          "C": "Resolution",
+          "D": "Rising action"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "A short story typically focuses on:",
+        "options": {
+          "A": "Multiple complex plots",
+          "B": "Many characters",
+          "C": "Single incident or character",
+          "D": "Long time periods"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse plot with theme - plot is what happens, theme is the message",
+      "Writing long definitions instead of precise textbook definitions",
+      "Mixing up climax with conclusion - climax is the peak, conclusion is the ending",
+      "Forgetting to mention all elements when asked about components of short story",
+      "Not giving examples from Pakistani context when explaining literary terms"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Memorize exact definitions as they appear in textbook - marks deducted for paraphrasing",
+      "Always mention all seven elements when asked about components of short story",
+      "Practice identifying elements in given story excerpts - common exam format"
+    ],
+    "formulas": [],
+    "keyDiagram": "Plot Diagram showing: Exposition (introduction) → Rising Action (building tension) → Climax (turning point) → Falling Action (events after climax) → Resolution (conclusion). Draw as mountain shape with climax at peak."
+  },
+  "created_at": "2026-04-06T14:41:27.958Z"
+}

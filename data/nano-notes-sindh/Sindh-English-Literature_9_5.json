@@ -1,0 +1,106 @@
+{
+  "subject": "English Literature",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "5",
+  "chapter_name": "Character Analysis",
+  "note_data": {
+    "title": "Character Analysis",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Character analysis is the detailed study of a character's personality, traits, motivations, and role in a literary work",
+      "There are three main types of characters: protagonist (main character), antagonist (opposing character), and supporting characters",
+      "Characters can be classified as round characters (complex, multi-dimensional) or flat characters (simple, one-dimensional)",
+      "Dynamic characters undergo change throughout the story while static characters remain unchanged",
+      "Direct characterization occurs when the author directly tells us about a character's traits",
+      "Indirect characterization reveals character traits through actions, dialogue, thoughts, and other characters' opinions",
+      "Character motivation refers to the reasons behind a character's actions and decisions",
+      "Physical appearance, social status, and background contribute to character development",
+      "Analyzing character relationships helps understand the overall theme and message of the literary work"
+    ],
+    "definitions": [
+      {
+        "term": "Character",
+        "definition": "A person, animal, or imaginary being who takes part in the action of a literary work"
+      },
+      {
+        "term": "Protagonist",
+        "definition": "The main character in a literary work, often the hero or heroine of the story"
+      },
+      {
+        "term": "Antagonist",
+        "definition": "The character or force that opposes the protagonist and creates conflict in the story"
+      },
+      {
+        "term": "Round Character",
+        "definition": "A character who is complex, fully developed, and has multiple personality traits"
+      },
+      {
+        "term": "Flat Character",
+        "definition": "A character who has only one or two personality traits and is not fully developed"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between round and flat characters.",
+        "answer": "Round characters are complex and multi-dimensional with various personality traits, while flat characters are simple and one-dimensional with limited traits."
+      },
+      {
+        "type": "long",
+        "question": "Write a detailed note on the methods of characterization used by authors.",
+        "answer": "Authors use two main methods of characterization: Direct characterization involves the author directly stating character traits. Indirect characterization reveals traits through: (1) Character's actions and behavior (2) Character's dialogue and speech patterns (3) Character's thoughts and feelings (4) Other characters' reactions and opinions (5) Physical appearance and surroundings. These methods help readers understand characters deeply and make the story more engaging."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "A character who remains unchanged throughout the story is called:",
+        "options": {
+          "A": "Dynamic character",
+          "B": "Static character",
+          "C": "Round character",
+          "D": "Protagonist"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The method where author directly tells about character's traits is:",
+        "options": {
+          "A": "Indirect characterization",
+          "B": "Character motivation",
+          "C": "Direct characterization",
+          "D": "Character development"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The main opposing force against the protagonist is called:",
+        "options": {
+          "A": "Supporting character",
+          "B": "Antagonist",
+          "C": "Flat character",
+          "D": "Dynamic character"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse protagonist with antagonist - remember protagonist is the main character",
+      "Mixing up round/flat with dynamic/static characters - round/flat refers to complexity, dynamic/static refers to change",
+      "Not providing examples from the text when analyzing characters",
+      "Forgetting to mention both direct and indirect characterization methods",
+      "Writing character summary instead of character analysis"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question about character types in every BSEK paper",
+      "Always quote examples from prescribed texts when analyzing characters",
+      "Learn the exact definitions - they are asked word-for-word in exams",
+      "Practice identifying character types from stories in your textbook like 'The Foolish Quack' and 'Bobbie's Adventure'"
+    ],
+    "formulas": [],
+    "keyDiagram": "Character Analysis Chart showing: Character Name → Physical Traits → Personality Traits → Role in Story → Type (Round/Flat, Dynamic/Static) → Relationship with other characters"
+  },
+  "created_at": "2026-04-06T14:43:00.693Z"
+}

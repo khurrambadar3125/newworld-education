@@ -1,0 +1,105 @@
+{
+  "subject": "English Literature",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "3",
+  "chapter_name": "One-Act Plays — Part I",
+  "note_data": {
+    "title": "One-Act Plays — Part I",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "A one-act play is a dramatic work that is complete in itself and consists of only one act without any division into scenes or acts",
+      "One-act plays are shorter in length and can be performed within 30-60 minutes unlike full-length plays",
+      "The action in a one-act play is concentrated and focused on a single situation or conflict",
+      "Characters in one-act plays are limited in number, usually 2-6 characters to maintain simplicity",
+      "The setting is usually confined to one place and time to maintain unity of action, time and place",
+      "One-act plays have a compact structure with clear beginning, middle and end within limited time frame",
+      "The theme of a one-act play is usually simple and deals with one main idea or message",
+      "Dialogue in one-act plays is crisp, direct and purposeful as there is no time for lengthy conversations"
+    ],
+    "definitions": [
+      {
+        "term": "One-Act Play",
+        "definition": "A one-act play is a complete dramatic work that consists of only one act and can be performed within 30-60 minutes with a single setting and limited characters."
+      },
+      {
+        "term": "Unity of Action",
+        "definition": "Unity of action means that the play should have one main plot or story line without any sub-plots to maintain focus and concentration."
+      },
+      {
+        "term": "Dramatic Conflict",
+        "definition": "Dramatic conflict is the struggle or opposition between two forces, characters or ideas that creates tension and interest in the play."
+      },
+      {
+        "term": "Setting",
+        "definition": "Setting refers to the time and place where the action of the play occurs, including the physical environment and historical period."
+      },
+      {
+        "term": "Dialogue",
+        "definition": "Dialogue is the conversation between characters in a play that reveals their thoughts, feelings, and advances the plot forward."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define one-act play and mention its two main characteristics.",
+        "answer": "A one-act play is a complete dramatic work consisting of only one act that can be performed within 30-60 minutes. Its main characteristics are: (1) Limited number of characters (2) Single setting and unity of time and place."
+      },
+      {
+        "type": "long",
+        "question": "Write a detailed note on the characteristics of a one-act play.",
+        "answer": "A one-act play has several distinct characteristics: (1) Single Act Structure - It consists of only one act without division into scenes (2) Limited Duration - Can be performed within 30-60 minutes (3) Limited Characters - Usually 2-6 characters to maintain simplicity (4) Single Setting - Action occurs in one place and time (5) Unity of Action - Focuses on one main conflict or situation (6) Compact Plot - Has clear beginning, middle and end (7) Simple Theme - Deals with one main idea (8) Crisp Dialogue - Direct and purposeful conversation without lengthy speeches. These characteristics make one-act plays suitable for short performances and easy to understand for audiences."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "A one-act play can typically be performed within:",
+        "options": {
+          "A": "2-3 hours",
+          "B": "30-60 minutes",
+          "C": "10-15 minutes",
+          "D": "4-5 hours"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The main requirement for unity of place in a one-act play is:",
+        "options": {
+          "A": "Multiple settings",
+          "B": "Outdoor setting only",
+          "C": "Single setting",
+          "D": "Historical setting"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "How many characters are usually present in a one-act play?",
+        "options": {
+          "A": "10-15 characters",
+          "B": "2-6 characters",
+          "C": "More than 20 characters",
+          "D": "Only 1 character"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse one-act plays with short stories - remember plays are meant for performance",
+      "Many students forget to mention 'unity of time, place and action' when describing characteristics",
+      "Students sometimes write that one-act plays have multiple acts - they have only ONE act",
+      "Avoid writing lengthy definitions - stick to textbook exact definitions for full marks",
+      "Don't mix up the time duration - one-act plays are 30-60 minutes, not hours"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question about characteristics in every BSEK paper",
+      "Always memorize the exact definition of one-act play - it appears in every exam",
+      "Practice writing the characteristics in point form for better presentation",
+      "Remember the time duration (30-60 minutes) as it's frequently asked in MCQs"
+    ],
+    "formulas": [],
+    "keyDiagram": "Draw a simple diagram showing the structure of a one-act play: Beginning (Introduction of conflict) → Middle (Development of conflict) → End (Resolution of conflict), all within single setting and limited time frame"
+  },
+  "created_at": "2026-04-06T14:42:16.022Z"
+}

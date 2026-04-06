@@ -1,0 +1,105 @@
+{
+  "subject": "English Literature",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "4",
+  "chapter_name": "Comprehension and Context",
+  "note_data": {
+    "title": "Comprehension and Context",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Comprehension is the ability to understand and interpret written text correctly",
+      "Context refers to the circumstances or setting in which a text is written or situation occurs",
+      "Reading comprehension involves identifying main ideas, supporting details, and implied meanings",
+      "Contextual clues help readers understand unfamiliar words and phrases within a passage",
+      "Literary devices like metaphors, similes, and personification enhance comprehension",
+      "Inference means drawing logical conclusions from given information in the text",
+      "Summary writing requires identifying key points and presenting them in condensed form",
+      "Critical reading involves analyzing author's purpose, tone, and intended audience"
+    ],
+    "definitions": [
+      {
+        "term": "Comprehension",
+        "definition": "The mental process of understanding and interpreting the meaning of written or spoken language"
+      },
+      {
+        "term": "Context",
+        "definition": "The circumstances, background, or setting that surrounds a particular event, statement, or text that helps determine its meaning"
+      },
+      {
+        "term": "Inference",
+        "definition": "A logical conclusion drawn from evidence and reasoning rather than from explicit statements in the text"
+      },
+      {
+        "term": "Summary",
+        "definition": "A brief statement or account of the main points of a text, omitting details and examples"
+      },
+      {
+        "term": "Main Idea",
+        "definition": "The central or most important thought of a paragraph or passage that tells what the text is mainly about"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define comprehension and explain its importance in reading.",
+        "answer": "Comprehension is the ability to understand and interpret written text. It is important because it helps readers extract meaning, analyze information, and apply knowledge effectively in academic and daily life situations."
+      },
+      {
+        "type": "long",
+        "question": "Explain the role of context in understanding literature. Give examples from Pakistani literary works.",
+        "answer": "Context plays a crucial role in understanding literature as it provides background information about the time period, social conditions, and cultural setting. For example, Allama Iqbal's poetry reflects the independence movement context. The historical context of partition helps understand the themes in Pakistani literature. Social context explains references to Pakistani customs and traditions. Understanding context helps readers appreciate the author's message, identify themes, and relate to characters' motivations and actions."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "What does 'context' mean in literature?",
+        "options": {
+          "A": "The plot of the story",
+          "B": "The background circumstances of the text",
+          "C": "The characters in the story",
+          "D": "The moral lesson"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which skill is NOT part of reading comprehension?",
+        "options": {
+          "A": "Identifying main ideas",
+          "B": "Making inferences",
+          "C": "Memorizing vocabulary",
+          "D": "Understanding context"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "What is the purpose of using contextual clues?",
+        "options": {
+          "A": "To write better essays",
+          "B": "To understand difficult words",
+          "C": "To memorize passages",
+          "D": "To identify characters"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse main idea with supporting details when answering comprehension questions",
+      "Many students fail to use contextual clues to understand unfamiliar words",
+      "Students often write personal opinions instead of textual evidence in inference questions",
+      "Common error is including too many details when writing summaries",
+      "Students sometimes ignore the cultural and historical context when analyzing Pakistani literature"
+    ],
+    "examTips": [
+      "This chapter usually appears as 2-3 MCQs and one comprehension passage in BSEK papers",
+      "Always read the passage twice before attempting questions",
+      "Practice identifying topic sentences and concluding statements",
+      "Memorize the exact definitions as they appear in STBB textbook"
+    ],
+    "formulas": [],
+    "keyDiagram": "Context Analysis Framework: Text → Historical Context → Social Context → Cultural Context → Author's Purpose → Reader's Understanding (draw as a flow chart showing how context influences comprehension)"
+  },
+  "created_at": "2026-04-06T14:42:40.008Z"
+}

@@ -1,0 +1,102 @@
+{
+  "subject": "English Literature",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "9",
+  "chapter_name": "Essay Writing from Literature",
+  "note_data": {
+    "title": "Essay Writing from Literature",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Essay writing from literature requires deep understanding of literary texts and themes studied in the course",
+      "Introduction must contain thesis statement that clearly presents the main argument about the literary work",
+      "Body paragraphs should provide textual evidence with proper quotations from the prescribed texts",
+      "Analysis of characters, themes, plot, setting, and literary devices forms the core of literary essays",
+      "Conclusion must summarize key points and restate thesis in different words",
+      "Use formal academic tone and avoid first person pronouns in literary essays",
+      "Reference specific scenes, dialogues, and incidents from texts like 'The Prisoner of Zenda' or poetry selections",
+      "Essays should demonstrate critical thinking and personal interpretation supported by textual evidence"
+    ],
+    "definitions": [
+      {
+        "term": "Literary Essay",
+        "definition": "A piece of writing that analyzes and interprets a literary work by examining its themes, characters, plot, and literary techniques to present a specific argument or viewpoint."
+      },
+      {
+        "term": "Thesis Statement",
+        "definition": "A clear, concise statement that presents the main argument or central idea of the essay, usually placed at the end of the introduction paragraph."
+      },
+      {
+        "term": "Textual Evidence",
+        "definition": "Direct quotations, paraphrases, or specific references from the literary text that support the writer's arguments and interpretations."
+      },
+      {
+        "term": "Literary Analysis",
+        "definition": "The process of examining and interpreting the elements of a literary work such as theme, character, plot, setting, and style to understand the author's purpose and meaning."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "What are the essential components of a literary essay?",
+        "answer": "A literary essay must have: introduction with thesis statement, body paragraphs with textual evidence and analysis, and conclusion summarizing main points."
+      },
+      {
+        "type": "long",
+        "question": "Explain the process of writing an effective literary essay with proper structure and technique.",
+        "answer": "An effective literary essay follows specific steps: 1) Choose a focused topic related to the literary work 2) Develop a clear thesis statement 3) Create an outline with main points 4) Write introduction with engaging hook and thesis 5) Develop body paragraphs with topic sentences, textual evidence, and analysis 6) Use transitions between paragraphs 7) Write conclusion that reinforces thesis 8) Revise for clarity and correctness 9) Use formal academic language throughout 10) Ensure proper citation of textual references."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which component is most essential in the introduction of a literary essay?",
+        "options": {
+          "A": "Personal opinions",
+          "B": "Thesis statement",
+          "C": "Plot summary",
+          "D": "Character description"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "What type of evidence is most important in literary essays?",
+        "options": {
+          "A": "Personal experiences",
+          "B": "General knowledge",
+          "C": "Textual evidence",
+          "D": "Historical facts"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which pronoun should be avoided in formal literary essays?",
+        "options": {
+          "A": "He",
+          "B": "She",
+          "C": "They",
+          "D": "I"
+        },
+        "correct": "D"
+      }
+    ],
+    "commonMistakes": [
+      "Students often write plot summary instead of literary analysis and interpretation",
+      "Many students forget to include thesis statement in the introduction paragraph",
+      "Using informal language and first person pronouns (I, me, my) in academic essays",
+      "Failing to provide textual evidence or quotations to support arguments and claims",
+      "Writing weak conclusions that simply repeat the introduction without reinforcing the thesis"
+    ],
+    "examTips": [
+      "Literary essay questions appear in Section C (Long Questions) worth 8-10 marks in BSEK papers",
+      "Always begin with outline planning before writing the full essay response",
+      "Practice writing essays on major themes from prescribed texts like friendship, loyalty, courage",
+      "Memorize key quotations from texts that can be used as textual evidence",
+      "Time management is crucial - spend 25-30 minutes on essay questions in the exam"
+    ],
+    "formulas": [],
+    "keyDiagram": "Essay Structure Pyramid: Introduction (Hook + Background + Thesis) at top, Body Paragraphs (Topic Sentence + Evidence + Analysis + Transition) in middle section, Conclusion (Restate Thesis + Summary + Final Thought) at base"
+  },
+  "created_at": "2026-04-06T14:44:26.292Z"
+}

@@ -1,0 +1,107 @@
+{
+  "subject": "English Literature",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "6",
+  "chapter_name": "Short Stories — Part II",
+  "note_data": {
+    "title": "Short Stories — Part II",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Short stories are brief fictional narratives that focus on a single incident or character development",
+      "Setting refers to the time, place, and social environment in which the story takes place",
+      "Plot structure includes exposition, rising action, climax, falling action, and resolution",
+      "Characterization is the method by which the author reveals the personality of characters",
+      "Theme is the central idea or message that the author wants to convey through the story",
+      "Point of view determines who tells the story - first person, second person, or third person",
+      "Symbolism is the use of objects, colors, or actions to represent deeper meanings",
+      "Conflict can be internal (within a character) or external (between characters or with society)",
+      "Irony occurs when there is a contrast between expectation and reality",
+      "Style refers to the author's distinctive way of writing including word choice and sentence structure"
+    ],
+    "definitions": [
+      {
+        "term": "Short Story",
+        "definition": "A brief work of fiction that usually focuses on a single incident, character, or period of time and can be read in one sitting"
+      },
+      {
+        "term": "Protagonist",
+        "definition": "The main character in a story who faces the central conflict and drives the plot forward"
+      },
+      {
+        "term": "Antagonist",
+        "definition": "The character or force that opposes the protagonist and creates conflict in the story"
+      },
+      {
+        "term": "Climax",
+        "definition": "The turning point or highest point of tension in a story where the main conflict reaches its peak"
+      },
+      {
+        "term": "Resolution",
+        "definition": "The conclusion of the story where conflicts are resolved and loose ends are tied up"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define the term 'setting' in a short story.",
+        "answer": "Setting refers to the time, place, and social environment in which the events of a story take place. It provides the background and context for the narrative."
+      },
+      {
+        "type": "long",
+        "question": "Explain the elements of plot structure in a short story with examples.",
+        "answer": "Plot structure consists of five main elements: (1) Exposition - introduces characters and setting, (2) Rising Action - develops conflict and builds tension, (3) Climax - the turning point of highest tension, (4) Falling Action - events after climax leading to resolution, (5) Resolution - conclusion where conflicts are resolved. Each element serves to advance the story and engage readers through carefully crafted narrative progression."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The central message or idea that an author conveys through a story is called:",
+        "options": {
+          "A": "Plot",
+          "B": "Setting",
+          "C": "Theme",
+          "D": "Character"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which point of view uses 'I' or 'we' to tell the story?",
+        "options": {
+          "A": "First person",
+          "B": "Second person",
+          "C": "Third person",
+          "D": "Omniscient"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "The use of objects or actions to represent deeper meanings is called:",
+        "options": {
+          "A": "Irony",
+          "B": "Symbolism",
+          "C": "Conflict",
+          "D": "Style"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse protagonist with antagonist - remember protagonist is the MAIN character",
+      "Many students mix up climax with resolution - climax is the peak tension, resolution is the ending",
+      "Students forget to explain HOW setting affects the story, not just WHERE it takes place",
+      "Writing theme as a single word instead of a complete statement or message",
+      "Confusing first person point of view with third person when identifying narrative perspective"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question in every BSEK paper",
+      "Always define literary terms exactly as given in the textbook",
+      "When analyzing stories, mention specific examples from the text to support your answers",
+      "Practice identifying different elements in Pakistani short stories for better understanding"
+    ],
+    "formulas": [],
+    "keyDiagram": "Plot Diagram: Draw a mountain-like structure showing Exposition (base left), Rising Action (slope up), Climax (peak), Falling Action (slope down), and Resolution (base right). This diagram frequently appears in BSEK exams."
+  },
+  "created_at": "2026-04-06T14:43:20.760Z"
+}
