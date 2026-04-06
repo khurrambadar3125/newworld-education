@@ -19,6 +19,14 @@ export default function GarageSchoolPage() {
   const [isMobile, setIsMobile] = useState(false);
   if (typeof window !== 'undefined' && !isMobile && window.innerWidth < 768) setIsMobile(true);
 
+  // Set Sindh Board context for any visitor — so nav routes correctly
+  if (typeof window !== 'undefined') {
+    try {
+      const p = JSON.parse(localStorage.getItem('nw_user') || '{}');
+      if (!p.board) { p.board = 'sindh'; p.curriculum = 'sindh'; localStorage.setItem('nw_user', JSON.stringify(p)); }
+    } catch {}
+  }
+
   return (
     <div style={{ minHeight: '100vh', background: NAVY, fontFamily: "'Sora',-apple-system,sans-serif", color: WHITE }}>
       <Head>

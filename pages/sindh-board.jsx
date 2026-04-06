@@ -19,6 +19,14 @@ export default function SindhBoardStudy() {
   const router = useRouter();
   const [selectedSubject, setSelectedSubject] = useState('');
   const [selectedClass, setSelectedClass] = useState(9);
+
+  // Always set Sindh Board context — so nav routes correctly everywhere
+  if (typeof window !== 'undefined') {
+    try {
+      const p = JSON.parse(localStorage.getItem('nw_user') || '{}');
+      if (p.board !== 'sindh') { p.board = 'sindh'; p.curriculum = 'sindh'; localStorage.setItem('nw_user', JSON.stringify(p)); }
+    } catch {}
+  }
   const [chapters, setChapters] = useState([]);
   const [expandedChapter, setExpandedChapter] = useState(null);
   const [noteData, setNoteData] = useState({});
