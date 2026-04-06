@@ -277,10 +277,19 @@ export default function DrillPage() {
     setSelectedOption(''); setStructuredAns(''); setHint(null); setTimedOut(false);
 
     let t = targetTopic || topic;
-    // "All Topics" mode: pick a random topic each question for variety
+    // "All Topics" mode: prioritize weak topics, then random
     if (t === '__ALL__') {
       const allTopics = getTopics(subject);
-      t = allTopics[Math.floor(Math.random() * allTopics.length)];
+      // Check for weak topics from mastery data (low mastery = prioritize)
+      const weakFromSession = sessionResults.filter(r => !r.correct).map(r => r.topic);
+      const dueFromSR = sr.getDueTopics(subject).map(d => d.topic || d);
+      const weakTopics = [...new Set([...weakFromSession, ...dueFromSR])].filter(w => allTopics.some(at => at.toLowerCase().includes(w?.toLowerCase?.() || '')));
+      // 50% chance to drill a weak topic if available, otherwise random
+      if (weakTopics.length > 0 && Math.random() < 0.5) {
+        t = weakTopics[Math.floor(Math.random() * weakTopics.length)];
+      } else {
+        t = allTopics[Math.floor(Math.random() * allTopics.length)];
+      }
     }
     let type = questionType;
     if (type === 'mixed') type = questionNum % 2 === 0 ? 'mcq' : 'structured';
