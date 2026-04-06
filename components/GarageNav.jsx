@@ -7,12 +7,12 @@ import { useRouter } from 'next/router';
 
 const TABS = [
   { path: '/sindh-board', label: 'Study', icon: '📚', activeIcon: '📖' },
+  { path: '/books', label: 'Books', icon: '📕', activeIcon: '📕' },
+  { path: '/sindh-dashboard', label: 'Progress', icon: '📊', activeIcon: '📊' },
   { path: '/bootcamp-sindh', label: 'Bootcamp', icon: '🎯', activeIcon: '🎯' },
-  { path: '/sindh-dashboard', label: 'My Progress', icon: '📊', activeIcon: '📊' },
-  { path: '/', label: 'Starky', icon: '★', activeIcon: '★' },
 ];
 
-const SHOW_ON = ['/sindh-board', '/bootcamp-sindh', '/sindh-dashboard', '/garageschool'];
+const SHOW_ON = ['/sindh-board', '/bootcamp-sindh', '/sindh-dashboard', '/garageschool', '/books'];
 
 export default function GarageNav() {
   const router = useRouter();

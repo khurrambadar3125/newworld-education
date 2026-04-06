@@ -64,6 +64,7 @@ const MENU_GROUPS = [
 const SINDH_MENU_GROUPS = [
   { title: 'Study', items: [
     { href: '/sindh-board', label: '📚 Matric Study Path' },
+    { href: '/books', label: '📕 Books & Syllabus' },
     { href: '/bootcamp-sindh', label: '🎯 Matric Bootcamp' },
     { href: '/sindh-dashboard', label: '📊 My Progress' },
   ]},

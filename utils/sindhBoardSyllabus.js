@@ -273,6 +273,33 @@ export const SINDH_SYLLABUS = {
   },
 
   // ════════════════════════════════════════════════════════════
+  // ENGLISH LITERATURE — STBB Prescribed Texts
+  // Prose (short stories), Poetry, and One-Act Plays
+  // ════════════════════════════════════════════════════════════
+  'English Literature': {
+    board: 'STBB', level: 'SSC', group: 'Compulsory',
+    class9: {
+      label: 'SSC-I English Literature',
+      chapters: [
+        { id: '1', name: 'Short Stories — Part I', keywords: ['short story', 'prose', 'narrative', 'plot', 'character', 'theme', 'setting'] },
+        { id: '2', name: 'Poetry — Part I', keywords: ['poem', 'poetry', 'verse', 'rhyme', 'stanza', 'imagery', 'metaphor', 'simile'] },
+        { id: '3', name: 'One-Act Plays — Part I', keywords: ['play', 'drama', 'dialogue', 'stage direction', 'act', 'scene', 'character'] },
+        { id: '4', name: 'Comprehension and Context', keywords: ['comprehension', 'context', 'reference', 'paraphrase', 'critical thinking'] },
+        { id: '5', name: 'Character Analysis', keywords: ['character', 'analysis', 'protagonist', 'antagonist', 'motivation', 'trait'] },
+      ],
+    },
+    class10: {
+      label: 'SSC-II English Literature',
+      chapters: [
+        { id: '6', name: 'Short Stories — Part II', keywords: ['short story', 'prose', 'moral', 'conflict', 'resolution', 'climax'] },
+        { id: '7', name: 'Poetry — Part II', keywords: ['poem', 'poetry', 'figure of speech', 'tone', 'mood', 'literary device'] },
+        { id: '8', name: 'One-Act Plays — Part II', keywords: ['play', 'drama', 'monologue', 'tragedy', 'comedy', 'irony'] },
+        { id: '9', name: 'Essay Writing from Literature', keywords: ['essay', 'literature essay', 'critical essay', 'analysis', 'argument'] },
+        { id: '10', name: 'Themes and Literary Devices', keywords: ['theme', 'literary device', 'symbolism', 'foreshadowing', 'allegory', 'allusion'] },
+      ],
+    },
+  },
+
   // ENGLISH — STBB "English for Class IX-X"
   // Competency-based structure (BSEK pattern)
   // SSC-I (Class 9): 6 competency areas
