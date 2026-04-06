@@ -67,8 +67,13 @@ const SINDH_MENU_GROUPS = [
     { href: '/bootcamp-sindh', label: '🎯 Matric Bootcamp' },
     { href: '/sindh-dashboard', label: '📊 My Progress' },
   ]},
-  { title: 'More', items: [
+  { title: 'Explore', items: [
+    { href: '/languages', label: '🌍 Languages' },
+    { href: '/spelling-bee', label: '🐝 Spelling Bee' },
+    { href: '/reading', label: '📚 Reading' },
     { href: '/entrance-tests', label: '🎓 Entrance Tests (IBA, NUST)' },
+  ]},
+  { title: 'More', items: [
     { href: '/garageschool', label: '🏫 The Garage School' },
     { href: '/study', label: '🌍 Cambridge O & A Level' },
     { href: '/founder', label: '👤 Founder' },
