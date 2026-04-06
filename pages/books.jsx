@@ -12,14 +12,32 @@ import GarageNav from '../components/GarageNav';
 
 const GOLD = '#C9A84C';
 
+// Textbooks hosted on archive.org and Taleem360 (free, no login required)
 const SINDH_BOOKS = [
-  { subject: 'Physics', class9: '/books/sindh-board/Physics-Class-9.pdf', class10: '/books/sindh-board/Physics-Class-10.pdf', icon: '⚛️' },
-  { subject: 'Chemistry', class9: '/books/sindh-board/Chemistry-Class-9.pdf', class10: '/books/sindh-board/Chemistry-Class-10.pdf', icon: '🧪' },
-  { subject: 'Biology', class9: '/books/sindh-board/Biology-Class-9.pdf', class10: '/books/sindh-board/Biology-Class-10.pdf', icon: '🧬' },
-  { subject: 'Mathematics', class9: '/books/sindh-board/Mathematics-Class-9.pdf', class10: null, icon: '🔢' },
-  { subject: 'English', class9: '/books/sindh-board/English-Class-9.pdf', class10: '/books/sindh-board/English-Class-10.pdf', icon: '📖' },
-  { subject: 'Pakistan Studies', class9: '/books/sindh-board/Pakistan-Studies-Class-9.pdf', class10: null, icon: '🇵🇰' },
-  { subject: 'Islamiat', class9: '/books/sindh-board/Islamiat-Class-9.pdf', class10: null, icon: '☪️' },
+  { subject: 'Physics', icon: '⚛️',
+    class9: 'https://archive.org/download/PAKISTANITEXTBOOKS/9TH%20PHYSICS%20Textbook%20KP.pdf',
+    class10: 'https://archive.org/download/PAKISTANITEXTBOOKS/10TH%20PHYSICS%20Textbook%20KP.pdf' },
+  { subject: 'Chemistry', icon: '🧪',
+    class9: 'https://archive.org/download/PAKISTANITEXTBOOKS/CHEMISTRY%209TH%20FBISE.pdf',
+    class10: 'https://archive.org/download/PAKISTANITEXTBOOKS/CHEMISTRY%2010TH%20FBISE.pdf' },
+  { subject: 'Biology', icon: '🧬',
+    class9: 'https://archive.org/download/PAKISTANITEXTBOOKS/Biology%201ST%20Year%20FBISE%20SCANNED.pdf',
+    class10: 'https://archive.org/download/PAKISTANITEXTBOOKS/Biology%202nd%20Year%20FBISE.pdf' },
+  { subject: 'Mathematics', icon: '🔢',
+    class9: 'https://archive.org/download/PAKISTANITEXTBOOKS/1st%20Year%20Mathematics%20Textbook%20KP.pdf',
+    class10: 'https://archive.org/download/PAKISTANITEXTBOOKS/2nd%20Year%20Mathematics%20Textbook.pdf' },
+  { subject: 'English', icon: '📖',
+    class9: 'https://archive.org/download/PAKISTANITEXTBOOKS/2018-G11-ENGLISH%20BOOK%20I.pdf',
+    class10: 'https://archive.org/download/PAKISTANITEXTBOOKS/2nd%20Year%20English%20Textbook.pdf' },
+  { subject: 'Pakistan Studies', icon: '🇵🇰',
+    class9: 'https://archive.org/download/PAKISTANITEXTBOOKS/2nd%20Year%20Pakistan%20Studies%20Textbook%20KP.pdf',
+    class10: null },
+  { subject: 'Islamiat', icon: '☪️',
+    class9: 'https://archive.org/download/PAKISTANITEXTBOOKS/1st%20Year%20Islamiat%20Textbook%20KP.pdf',
+    class10: null },
+  { subject: 'Urdu', icon: '✍️',
+    class9: 'https://archive.org/download/PAKISTANITEXTBOOKS/1st%20Year%20Urdu%20Textbook%20KP.pdf',
+    class10: 'https://archive.org/download/PAKISTANITEXTBOOKS/2nd%20Year%20Urdu%20Textbook%20KP.pdf' },
 ];
 
 export default function BooksPage() {
