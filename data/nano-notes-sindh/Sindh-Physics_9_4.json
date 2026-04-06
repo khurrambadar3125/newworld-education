@@ -1,0 +1,111 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "4",
+  "chapter_name": "Motion and Force",
+  "note_data": {
+    "title": "Motion and Force",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Motion is the change in position of a body with respect to time and place",
+      "Force is a push or pull that changes or tends to change the state of rest or uniform motion of a body",
+      "Newton's First Law: A body at rest remains at rest and a body in motion remains in uniform motion unless acted upon by an external force",
+      "Newton's Second Law: The rate of change of momentum is directly proportional to the applied force and takes place in the direction of force",
+      "Newton's Third Law: To every action there is always an equal and opposite reaction",
+      "Momentum is the product of mass and velocity of a moving body (p = mv)",
+      "Inertia is the property of matter by virtue of which it resists any change in its state of rest or uniform motion",
+      "Weight is the force with which earth attracts a body towards its center (W = mg)",
+      "Friction always opposes the relative motion between two surfaces in contact"
+    ],
+    "definitions": [
+      {
+        "term": "Force",
+        "definition": "Force is a push or pull that changes or tends to change the state of rest or uniform motion of a body."
+      },
+      {
+        "term": "Momentum",
+        "definition": "Momentum is the product of mass and velocity of a moving body."
+      },
+      {
+        "term": "Inertia",
+        "definition": "Inertia is the property of matter by virtue of which it resists any change in its state of rest or uniform motion."
+      },
+      {
+        "term": "Weight",
+        "definition": "Weight is the force with which earth attracts a body towards its center."
+      },
+      {
+        "term": "Friction",
+        "definition": "Friction is the force that opposes the relative motion between two surfaces in contact."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "State Newton's First Law of Motion.",
+        "answer": "A body at rest remains at rest and a body in motion remains in uniform motion unless acted upon by an external force. This law is also called the law of inertia."
+      },
+      {
+        "type": "long",
+        "question": "Derive the equation F = ma from Newton's Second Law of Motion.",
+        "answer": "According to Newton's Second Law: F ∝ (change in momentum)/time. F ∝ (mv - mu)/t. F ∝ m(v-u)/t. F ∝ ma (since a = (v-u)/t). Removing proportionality: F = kma. In SI units, k = 1. Therefore, F = ma. This is the mathematical form of Newton's Second Law."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The unit of momentum in SI system is:",
+        "options": {
+          "A": "kg m/s",
+          "B": "kg m/s²",
+          "C": "N",
+          "D": "kg"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "Newton's First Law is also known as:",
+        "options": {
+          "A": "Law of momentum",
+          "B": "Law of inertia",
+          "C": "Law of acceleration",
+          "D": "Law of gravity"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "If a car moving at 20 m/s has mass 1000 kg, its momentum is:",
+        "options": {
+          "A": "20 kg m/s",
+          "B": "1000 kg m/s",
+          "C": "20000 kg m/s",
+          "D": "50 kg m/s"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse mass and weight - remember weight = mg, not just mass",
+      "Writing momentum formula as p = m/v instead of p = mv",
+      "Forgetting to state Newton's laws word-for-word as given in textbook",
+      "Not drawing proper free body diagrams when solving force problems",
+      "Mixing up action-reaction pairs in Newton's Third Law examples"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long derivation question in every BSEK paper",
+      "Always memorize Newton's three laws exactly as written in STBB textbook",
+      "Practice drawing free body diagrams - they appear frequently in numerical problems",
+      "Learn examples of all three laws with Pakistani context (rickshaw, truck on GT Road, etc.)"
+    ],
+    "formulas": [
+      "F = ma",
+      "p = mv",
+      "W = mg",
+      "a = (v-u)/t"
+    ],
+    "keyDiagram": "Free Body Diagram showing all forces acting on a body - draw the object as a dot with arrows representing forces (weight downward, normal force upward, friction opposite to motion direction, applied force in direction of motion). Label each force clearly."
+  },
+  "created_at": "2026-04-06T06:01:57.028Z"
+}

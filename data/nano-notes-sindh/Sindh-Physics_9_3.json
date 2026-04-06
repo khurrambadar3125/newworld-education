@@ -1,0 +1,112 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "3",
+  "chapter_name": "Kinematics of Linear Motion",
+  "note_data": {
+    "title": "Kinematics of Linear Motion",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Kinematics deals with the motion of objects without considering the forces that cause the motion",
+      "Distance is a scalar quantity while displacement is a vector quantity",
+      "Speed is the rate of change of distance while velocity is the rate of change of displacement",
+      "Acceleration is the rate of change of velocity with respect to time",
+      "Three equations of motion: v = u + at, s = ut + ½at², v² = u² + 2as",
+      "Uniform motion means constant velocity (zero acceleration)",
+      "Non-uniform motion means changing velocity (non-zero acceleration)",
+      "Free fall is motion under gravity with acceleration g = 9.8 m/s²",
+      "Distance-time and velocity-time graphs help analyze motion patterns"
+    ],
+    "definitions": [
+      {
+        "term": "Kinematics",
+        "definition": "The branch of mechanics which deals with the motion of objects without considering the forces that cause the motion"
+      },
+      {
+        "term": "Displacement",
+        "definition": "The shortest distance between initial and final positions of a moving object in a specific direction"
+      },
+      {
+        "term": "Velocity",
+        "definition": "The rate of change of displacement with respect to time"
+      },
+      {
+        "term": "Acceleration",
+        "definition": "The rate of change of velocity with respect to time"
+      },
+      {
+        "term": "Uniform Motion",
+        "definition": "Motion in which an object covers equal distances in equal intervals of time"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between distance and displacement.",
+        "answer": "Distance is the total path length covered by an object (scalar). Displacement is the shortest distance between initial and final positions in a specific direction (vector)."
+      },
+      {
+        "type": "long",
+        "question": "Derive the equation v = u + at from first principles.",
+        "answer": "Let initial velocity = u, final velocity = v, acceleration = a, time = t. By definition, acceleration = (final velocity - initial velocity)/time. Therefore, a = (v - u)/t. Cross multiplying: at = v - u. Rearranging: v = u + at. This is the first equation of motion."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "A car traveling from Karachi to Hyderabad covers 150 km in 2 hours. Its average speed is:",
+        "options": {
+          "A": "75 km/h",
+          "B": "300 km/h",
+          "C": "150 km/h",
+          "D": "50 km/h"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "Which of the following represents uniform motion?",
+        "options": {
+          "A": "A freely falling body",
+          "B": "A car moving at 60 km/h",
+          "C": "A ball thrown upward",
+          "D": "A bicycle speeding up"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The acceleration due to gravity is:",
+        "options": {
+          "A": "9.8 m/s",
+          "B": "9.8 m/s²",
+          "C": "8.9 m/s²",
+          "D": "10 m/s"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse distance with displacement - remember displacement can be zero even if distance is not",
+      "Always write the formula before solving numerical problems",
+      "Mixing up speed and velocity - speed is scalar, velocity is vector",
+      "Forgetting to mention direction when dealing with vector quantities",
+      "Not converting units properly (km/h to m/s)"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long derivation question in every BSEK paper",
+      "Memorize all three equations of motion - derivations are frequently asked",
+      "Practice drawing distance-time and velocity-time graphs",
+      "Always show complete working in numerical problems"
+    ],
+    "formulas": [
+      "v = u + at",
+      "s = ut + ½at²",
+      "v² = u² + 2as",
+      "Average speed = Total distance / Total time",
+      "Average velocity = Total displacement / Total time"
+    ],
+    "keyDiagram": "Distance-time graph showing uniform motion (straight line) and non-uniform motion (curved line). Velocity-time graph showing constant velocity (horizontal line) and uniform acceleration (straight sloped line). Students must label axes clearly with units."
+  },
+  "created_at": "2026-04-06T06:01:36.062Z"
+}

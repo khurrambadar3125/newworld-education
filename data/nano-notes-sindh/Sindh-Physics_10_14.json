@@ -1,0 +1,112 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "14",
+  "chapter_name": "Refraction of Light and Optical Instruments",
+  "note_data": {
+    "title": "Refraction of Light and Optical Instruments",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Refraction is the bending of light when it passes from one medium to another of different optical density",
+      "Laws of Refraction: (1) The incident ray, refracted ray and normal all lie in the same plane (2) Snell's Law: sin i / sin r = constant",
+      "Refractive index is the ratio of speed of light in vacuum to speed of light in that medium (μ = c/v)",
+      "Critical angle is the angle of incidence in denser medium for which angle of refraction in rarer medium is 90°",
+      "Total internal reflection occurs when light travels from denser to rarer medium at angle greater than critical angle",
+      "Simple microscope (magnifying glass) uses a single convex lens to form virtual, erect and magnified image",
+      "Compound microscope uses two convex lenses - objective lens forms real inverted image, eyepiece acts as simple microscope",
+      "Telescope is used to see distant objects - objective lens forms real diminished image at focus of eyepiece",
+      "Power of lens P = 1/f where f is focal length in meters, unit is dioptre (D)"
+    ],
+    "definitions": [
+      {
+        "term": "Refraction",
+        "definition": "Refraction is the bending of light when it passes from one medium to another of different optical density"
+      },
+      {
+        "term": "Refractive Index",
+        "definition": "The refractive index of a material is the ratio of speed of light in vacuum to the speed of light in that material"
+      },
+      {
+        "term": "Critical Angle",
+        "definition": "The critical angle is the angle of incidence in the denser medium for which the angle of refraction in the rarer medium is 90°"
+      },
+      {
+        "term": "Total Internal Reflection",
+        "definition": "Total internal reflection is the phenomenon in which light is completely reflected back into the denser medium when it strikes the boundary at an angle greater than the critical angle"
+      },
+      {
+        "term": "Power of Lens",
+        "definition": "The power of a lens is the reciprocal of its focal length measured in meters"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "State the laws of refraction",
+        "answer": "First Law: The incident ray, refracted ray and normal to the surface all lie in the same plane. Second Law: The ratio of sine of angle of incidence to sine of angle of refraction is constant for given pair of media (Snell's Law)"
+      },
+      {
+        "type": "long",
+        "question": "Describe the construction and working of compound microscope with ray diagram",
+        "answer": "Construction: Compound microscope consists of two convex lenses - objective lens (short focal length) and eyepiece (longer focal length) mounted at opposite ends of a tube. Working: Object is placed just beyond focus of objective lens. Objective forms real, inverted and magnified image. This image acts as object for eyepiece. Eyepiece forms virtual, erect and further magnified image. Total magnification = magnification of objective × magnification of eyepiece"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The refractive index of water is 1.33. The speed of light in water is:",
+        "options": {
+          "A": "3 × 10⁸ m/s",
+          "B": "2.26 × 10⁸ m/s",
+          "C": "4 × 10⁸ m/s",
+          "D": "1.33 × 10⁸ m/s"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "For total internal reflection to occur:",
+        "options": {
+          "A": "Light must travel from rarer to denser medium",
+          "B": "Angle of incidence must be less than critical angle",
+          "C": "Light must travel from denser to rarer medium and angle of incidence must be greater than critical angle",
+          "D": "Light must travel perpendicular to surface"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The power of a lens having focal length 25 cm is:",
+        "options": {
+          "A": "4 D",
+          "B": "0.25 D",
+          "C": "25 D",
+          "D": "2.5 D"
+        },
+        "correct": "A"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse angle of incidence with angle of refraction in Snell's law calculations",
+      "Always convert focal length to meters before calculating power of lens",
+      "Students forget that for total internal reflection, light must travel from denser to rarer medium",
+      "In ray diagrams, students often draw refracted ray bending wrong direction",
+      "Students mix up the functions of objective and eyepiece in compound microscope"
+    ],
+    "examTips": [
+      "Ray diagrams for refraction through glass block and compound microscope appear in every BSEK paper",
+      "Memorize exact definitions word-by-word as they appear in STBB textbook",
+      "Practice numerical problems on refractive index, critical angle and power of lens",
+      "Remember to show all steps in derivations, especially for lens formula"
+    ],
+    "formulas": [
+      "μ = sin i / sin r = c/v",
+      "μ = 1/sin C (for critical angle)",
+      "P = 1/f (power of lens)",
+      "1/f = 1/u + 1/v (lens formula)",
+      "m = v/u (magnification)"
+    ],
+    "keyDiagram": "Ray diagram showing refraction through rectangular glass block - incident ray bends towards normal when entering glass (denser medium) and away from normal when leaving glass (entering air). Include angles i₁, r₁, i₂, r₂ and show lateral displacement"
+  },
+  "created_at": "2026-04-06T06:05:40.009Z"
+}

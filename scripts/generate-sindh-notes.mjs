@@ -131,8 +131,8 @@ for (const subjectName of subjects) {
   if (!entry) { console.error(`Subject not found: ${subjectName}`); continue; }
 
   const allChapters = [
-    ...entry.chapters.class9.map(c => ({ ...c, classNum: 9 })),
-    ...entry.chapters.class10.map(c => ({ ...c, classNum: 10 })),
+    ...(entry.class9?.chapters || []).map(c => ({ ...c, classNum: 9 })),
+    ...(entry.class10?.chapters || []).map(c => ({ ...c, classNum: 10 })),
   ];
 
   console.log(`📚 ${subjectName} — ${allChapters.length} chapters`);

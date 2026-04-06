@@ -1,0 +1,112 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "5",
+  "chapter_name": "Vectors",
+  "note_data": {
+    "title": "Vectors",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Vector — A physical quantity which has both magnitude and direction is called a vector",
+      "Scalar — A physical quantity which has only magnitude but no direction is called a scalar",
+      "Vectors are represented by arrows where length shows magnitude and arrowhead shows direction",
+      "Addition of vectors follows triangle law and parallelogram law",
+      "Resultant vector — The single vector which produces the same effect as produced by a number of vectors jointly",
+      "Component of vector — The perpendicular projection of a vector along any direction is called component",
+      "Unit vector — A vector of unit magnitude in any direction is called unit vector",
+      "Vectors can be added graphically by head-to-tail method or parallelogram method",
+      "Analytical method uses trigonometry to find resultant using Pythagorean theorem"
+    ],
+    "definitions": [
+      {
+        "term": "Vector",
+        "definition": "A physical quantity which has both magnitude and direction is called a vector"
+      },
+      {
+        "term": "Scalar",
+        "definition": "A physical quantity which has only magnitude but no direction is called a scalar"
+      },
+      {
+        "term": "Resultant Vector",
+        "definition": "The single vector which produces the same effect as produced by a number of vectors jointly is called resultant vector"
+      },
+      {
+        "term": "Unit Vector",
+        "definition": "A vector of unit magnitude in any direction is called unit vector"
+      },
+      {
+        "term": "Component of Vector",
+        "definition": "The perpendicular projection of a vector along any direction is called component of vector"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between scalar and vector quantities with examples.",
+        "answer": "Scalar has only magnitude (mass, time, temperature). Vector has both magnitude and direction (displacement, velocity, force). Scalars are added algebraically while vectors are added using special laws."
+      },
+      {
+        "type": "long",
+        "question": "State and explain parallelogram law of vector addition. Derive expression for resultant.",
+        "answer": "Parallelogram Law: If two vectors are represented by two adjacent sides of a parallelogram, then their resultant is represented by the diagonal of parallelogram. Derivation: R² = A² + B² + 2AB cosθ, where θ is angle between vectors A and B. Direction: tan α = B sinθ/(A + B cosθ)"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is a vector quantity?",
+        "options": {
+          "A": "Mass",
+          "B": "Time",
+          "C": "Displacement",
+          "D": "Temperature"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The magnitude of resultant of two equal vectors is maximum when angle between them is:",
+        "options": {
+          "A": "0°",
+          "B": "90°",
+          "C": "180°",
+          "D": "270°"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "Unit vector has magnitude:",
+        "options": {
+          "A": "Zero",
+          "B": "One",
+          "C": "Infinite",
+          "D": "Variable"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse scalar and vector - remember vectors need both magnitude AND direction",
+      "Forgetting to draw arrowheads on vector diagrams",
+      "Using simple addition for vectors instead of vector addition laws",
+      "Not converting angle to correct quadrant in analytical method",
+      "Mixing up sine and cosine in component calculations"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Parallelogram law derivation appears almost every year - memorize complete steps",
+      "Always draw proper vector diagrams with arrows and labels",
+      "Learn examples of scalar and vector quantities by heart",
+      "Practice analytical method problems with different angles"
+    ],
+    "formulas": [
+      "R² = A² + B² + 2AB cosθ (Parallelogram law)",
+      "R = √(A² + B²) (Perpendicular vectors)",
+      "tan α = B sinθ/(A + B cosθ) (Direction of resultant)",
+      "Ax = A cosθ, Ay = A sinθ (Components)"
+    ],
+    "keyDiagram": "Parallelogram diagram showing two vectors A and B as adjacent sides, resultant R as diagonal, with angle θ between vectors and angle α for direction of resultant. Must include proper arrowheads and labels."
+  },
+  "created_at": "2026-04-06T06:02:18.851Z"
+}

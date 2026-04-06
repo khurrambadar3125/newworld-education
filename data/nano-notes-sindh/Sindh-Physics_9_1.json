@@ -1,0 +1,109 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "1",
+  "chapter_name": "Introduction",
+  "note_data": {
+    "title": "Introduction",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Physics is the branch of science which deals with the study of matter, energy and their mutual relationship",
+      "Physical quantities are quantities which can be measured and have numerical values with proper units",
+      "Base quantities are fundamental quantities which cannot be expressed in terms of other quantities",
+      "Derived quantities are quantities which can be expressed in terms of base quantities",
+      "SI system has seven base units: meter, kilogram, second, ampere, kelvin, mole, candela",
+      "Significant figures are meaningful digits in a measured or calculated value",
+      "Scientific notation is used to express very large or very small numbers conveniently",
+      "Prefixes like micro, milli, kilo, mega are used to express multiples and sub-multiples of units"
+    ],
+    "definitions": [
+      {
+        "term": "Physics",
+        "definition": "Physics is the branch of science which deals with the study of matter, energy and their mutual relationship."
+      },
+      {
+        "term": "Physical Quantity",
+        "definition": "A physical quantity is a quantity which can be measured and has a numerical value with proper unit."
+      },
+      {
+        "term": "Base Quantity",
+        "definition": "Base quantities are fundamental quantities which cannot be expressed in terms of other physical quantities."
+      },
+      {
+        "term": "Derived Quantity",
+        "definition": "Derived quantities are quantities which can be expressed in terms of base quantities."
+      },
+      {
+        "term": "Unit",
+        "definition": "Unit is the standard amount of a physical quantity chosen to measure the physical quantity of the same kind."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define physics and give two examples of physical quantities.",
+        "answer": "Physics is the branch of science which deals with the study of matter, energy and their mutual relationship. Examples: length, mass, time, force, velocity."
+      },
+      {
+        "type": "long",
+        "question": "Differentiate between base quantities and derived quantities with examples. Also write their SI units.",
+        "answer": "Base quantities are fundamental quantities which cannot be expressed in terms of other quantities. Examples: length (meter), mass (kilogram), time (second). Derived quantities can be expressed in terms of base quantities. Examples: area (m²), velocity (m/s), force (kg⋅m/s²), density (kg/m³)."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is a base quantity?",
+        "options": {
+          "A": "Area",
+          "B": "Volume",
+          "C": "Mass",
+          "D": "Density"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The SI unit of electric current is:",
+        "options": {
+          "A": "Volt",
+          "B": "Ampere",
+          "C": "Ohm",
+          "D": "Watt"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "How many significant figures are in 0.00456?",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "5",
+          "D": "6"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse base quantities with derived quantities",
+      "Writing wrong SI units for physical quantities",
+      "Incorrect counting of significant figures, especially with zeros",
+      "Forgetting to write units in final answers",
+      "Mixing up prefixes and their numerical values (kilo = 10³, not 10²)"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 short question about definitions",
+      "Memorize all 7 base quantities and their SI units perfectly",
+      "Practice significant figures counting - very common in MCQs",
+      "Learn prefixes table by heart (micro to tera)",
+      "Always define terms exactly as written in STBB textbook"
+    ],
+    "formulas": [
+      "Scientific notation: N = a × 10ⁿ (where 1 ≤ a < 10)",
+      "Prefixes: micro(10⁻⁶), milli(10⁻³), centi(10⁻²), kilo(10³), mega(10⁶)"
+    ],
+    "keyDiagram": "Table showing 7 base quantities (Length, Mass, Time, Electric Current, Temperature, Amount of Substance, Luminous Intensity) with their symbols and SI units. This table appears in every BSEK paper."
+  },
+  "created_at": "2026-04-06T06:00:52.019Z"
+}

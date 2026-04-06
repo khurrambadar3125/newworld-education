@@ -1,0 +1,111 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "2",
+  "chapter_name": "Atomic Structure",
+  "note_data": {
+    "title": "Atomic Structure",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Atom is the smallest particle of an element that can take part in chemical reactions",
+      "Atom consists of three fundamental particles: electrons, protons and neutrons",
+      "Nucleus contains protons and neutrons while electrons revolve around the nucleus in orbits",
+      "Atomic number (Z) equals the number of protons in the nucleus of an atom",
+      "Mass number (A) equals the sum of protons and neutrons in the nucleus",
+      "Isotopes are atoms of the same element having same atomic number but different mass numbers",
+      "Electronic configuration shows the arrangement of electrons in different shells around the nucleus",
+      "Maximum number of electrons in any shell is given by 2n² formula where n is shell number",
+      "Valence shell is the outermost shell of an atom and valence electrons determine chemical properties"
+    ],
+    "definitions": [
+      {
+        "term": "Atom",
+        "definition": "Atom is the smallest particle of an element that can take part in chemical reactions."
+      },
+      {
+        "term": "Atomic Number",
+        "definition": "The number of protons present in the nucleus of an atom is called atomic number."
+      },
+      {
+        "term": "Mass Number",
+        "definition": "The sum of the number of protons and neutrons present in the nucleus of an atom is called mass number."
+      },
+      {
+        "term": "Isotopes",
+        "definition": "Atoms of the same element having same atomic number but different mass numbers are called isotopes."
+      },
+      {
+        "term": "Electronic Configuration",
+        "definition": "The arrangement of electrons in different shells around the nucleus is called electronic configuration."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define isotopes and give two examples.",
+        "answer": "Atoms of the same element having same atomic number but different mass numbers are called isotopes. Examples: Carbon-12 and Carbon-14, Hydrogen-1 and Hydrogen-2 (Deuterium)."
+      },
+      {
+        "type": "long",
+        "question": "Describe the structure of atom. Also write electronic configuration of first 18 elements.",
+        "answer": "Atom consists of nucleus and electrons. Nucleus contains protons (positive charge) and neutrons (no charge) while electrons (negative charge) revolve in shells. Electronic configurations: H(1), He(2), Li(2,1), Be(2,2), B(2,3), C(2,4), N(2,5), O(2,6), F(2,7), Ne(2,8), Na(2,8,1), Mg(2,8,2), Al(2,8,3), Si(2,8,4), P(2,8,5), S(2,8,6), Cl(2,8,7), Ar(2,8,8)."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The maximum number of electrons in M shell is:",
+        "options": {
+          "A": "2",
+          "B": "8",
+          "C": "18",
+          "D": "32"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which pair represents isotopes?",
+        "options": {
+          "A": "¹²C and ¹⁴N",
+          "B": "¹²C and ¹⁴C",
+          "C": "¹⁶O and ¹⁶S",
+          "D": "²³Na and ²⁴Mg"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The atomic number of an element having electronic configuration (2,8,6) is:",
+        "options": {
+          "A": "6",
+          "B": "8",
+          "C": "16",
+          "D": "18"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse mass number with atomic mass unit",
+      "Writing wrong electronic configuration by not following 2n² rule",
+      "Mixing up protons and neutrons in nucleus composition",
+      "Forgetting that isotopes have same chemical properties but different physical properties",
+      "Not writing complete symbol notation showing mass number and atomic number"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1-2 short questions in every BSEK paper",
+      "Electronic configuration of first 18 elements must be memorized - appears every year",
+      "Always draw atomic structure diagram with proper labeling of nucleus, shells and particles",
+      "Isotope examples and their uses are frequently asked in short questions",
+      "Formula 2n² for maximum electrons in shells is must-know for numerical problems"
+    ],
+    "formulas": [
+      "Maximum electrons in shell = 2n²",
+      "Mass number (A) = Protons + Neutrons",
+      "Number of neutrons = Mass number - Atomic number"
+    ],
+    "keyDiagram": "Atomic structure diagram showing nucleus with protons and neutrons, and electrons in K, L, M shells with proper electron distribution. Must label all particles and show that nucleus is at center with electrons revolving in circular orbits."
+  },
+  "created_at": "2026-04-06T06:07:55.813Z"
+}

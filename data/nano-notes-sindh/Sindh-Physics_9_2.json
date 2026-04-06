@@ -1,0 +1,112 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "2",
+  "chapter_name": "Measurement",
+  "note_data": {
+    "title": "Measurement",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Physics is a quantitative science — all measurements require magnitude and unit",
+      "SI System has 7 base units: metre (m), kilogram (kg), second (s), ampere (A), kelvin (K), mole (mol), candela (cd)",
+      "Length is measured using metre rule, vernier callipers, and screw gauge for different precisions",
+      "Vernier callipers can measure up to 0.1 mm accuracy, screw gauge up to 0.01 mm accuracy",
+      "Least count = Smallest division on main scale ÷ Total number of divisions on vernier scale",
+      "Mass is measured using physical balance, electronic balance, and beam balance",
+      "Time is measured using stopwatch, pendulum clock, and atomic clock",
+      "Significant figures follow specific rules — all non-zero digits are significant",
+      "Scientific notation is used to express very large or very small numbers",
+      "Accuracy refers to closeness to true value, precision refers to consistency of measurements"
+    ],
+    "definitions": [
+      {
+        "term": "Measurement",
+        "definition": "Comparison of an unknown quantity with some known fixed quantity of the same kind called unit"
+      },
+      {
+        "term": "Unit",
+        "definition": "A definite amount of a physical quantity taken as a standard for measurement of that quantity"
+      },
+      {
+        "term": "Least Count",
+        "definition": "The smallest measurement that can be taken accurately with a measuring instrument"
+      },
+      {
+        "term": "Vernier Callipers",
+        "definition": "An instrument used to measure internal and external diameters of tubes and thickness of sheets accurately"
+      },
+      {
+        "term": "Significant Figures",
+        "definition": "The number of digits in a measurement that are known with certainty plus one digit that is uncertain"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "What is the least count of vernier callipers? How is it calculated?",
+        "answer": "Least count of vernier callipers is 0.1 mm or 0.01 cm. It is calculated as: Least count = 1 MSD - 1 VSD = 1mm - 0.9mm = 0.1mm"
+      },
+      {
+        "type": "long",
+        "question": "Describe the construction and working of vernier callipers. How do you find the least count?",
+        "answer": "Vernier callipers consist of main scale and vernier scale. Main scale has fixed jaw, vernier scale has movable jaw. 10 divisions of vernier scale = 9 divisions of main scale. Reading = MSR + (VSD × LC) where MSR is main scale reading, VSD is vernier scale division that coincides with main scale. Least count = 1 MSD - 1 VSD = 0.1 mm. Used to measure external diameter, internal diameter, and depth."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The least count of vernier callipers is:",
+        "options": {
+          "A": "0.01 mm",
+          "B": "0.1 mm",
+          "C": "1 mm",
+          "D": "0.001 mm"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which instrument is used to measure the thickness of a coin?",
+        "options": {
+          "A": "Metre rule",
+          "B": "Measuring tape",
+          "C": "Vernier callipers",
+          "D": "Physical balance"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The number of significant figures in 0.0025 is:",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        },
+        "correct": "A"
+      }
+    ],
+    "commonMistakes": [
+      "Students often forget that zeros before decimal are not significant figures",
+      "Confusing least count of vernier callipers (0.1 mm) with screw gauge (0.01 mm)",
+      "Not writing proper units with final answers in numerical problems",
+      "Mixing up main scale reading with vernier scale reading in callipers",
+      "Forgetting to add MSR + (VSD × LC) formula in vernier callipers problems"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question about measuring instruments",
+      "Memorize the vernier callipers diagram and formula — appears every year",
+      "Practice significant figures rules — very common in MCQs",
+      "Learn exact definitions by heart — BSEK expects textbook language",
+      "Always show formula first, then substitute values in numerical problems"
+    ],
+    "formulas": [
+      "Least count of vernier callipers = 1 MSD - 1 VSD = 0.1 mm",
+      "Reading of vernier callipers = MSR + (VSD × LC)",
+      "Least count of screw gauge = Pitch ÷ Number of divisions on circular scale"
+    ],
+    "keyDiagram": "Labeled diagram of vernier callipers showing main scale, vernier scale, external jaws, internal jaws, and depth probe. Must show main scale reading and vernier scale coinciding line for taking readings."
+  },
+  "created_at": "2026-04-06T06:01:16.733Z"
+}
