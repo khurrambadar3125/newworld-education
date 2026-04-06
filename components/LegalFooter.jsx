@@ -43,6 +43,7 @@ export default function LegalFooter({ sen = false, sat = false }) {
             { label: 'Responsible AI', href: '/responsible-ai' },
             { label: 'Contact', href: 'mailto:hello@newworld.education' },
             { label: 'Founder', href: '/founder' },
+            { label: 'Garage School Login', href: '/garage-login' },
           ].map(({ label, href }) => (
             <a key={label} href={href} style={{ fontSize: 11, color: 'rgba(255,255,255,.3)', textDecoration: 'none' }}>
               {label}
