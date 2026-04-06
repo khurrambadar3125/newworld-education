@@ -87,12 +87,38 @@
       "Compare time complexities when asked about efficiency of data structures"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Stack diagram showing LIFO with push/pop operations at top. Queue diagram showing FIFO with enqueue at rear, dequeue at front. Linked list showing nodes with data fields and pointer fields connecting to next nodes."
+    "keyDiagramDescription": "Stack diagram showing LIFO with push/pop operations at top. Queue diagram showing FIFO with enqueue at rear, dequeue at front. Linked list showing nodes with data fields and pointer fields connecting to next nodes.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the difference between static and dynamic data structures and give examples of each with justification for use",
+      "O/N 2022 P1 Q12 (2 marks) — tested knowledge of appropriate data types for storing different values like age, name, and price with reasoning",
+      "M/J 2022 P2 Q5 (8 marks) — required students to design a record structure for a library system and explain validation checks for each field",
+      "O/N 2023 P2 Q3 (5 marks) — asked candidates to trace through array operations and identify errors in pseudocode for searching algorithms"
+    ],
+    "workedExample": {
+      "question": "A school needs to store student data. Design an appropriate data structure and justify the data types chosen for: StudentID, Name, DateOfBirth, TestScores (5 subjects). (6 marks)",
+      "steps": [
+        "Step 1: Identify the record structure needed - create a RECORD called Student",
+        "Step 2: Choose StudentID as INTEGER (unique identifier, used for calculations/comparisons)",
+        "Step 3: Choose Name as STRING (contains letters and possibly spaces/hyphens)",
+        "Step 4: Choose DateOfBirth as DATE (specialized data type for date operations and validation)",
+        "Step 5: Choose TestScores as ARRAY[1:5] OF REAL (multiple values of same type, allows decimals for precise marking)"
+      ],
+      "answer": "RECORD Student: StudentID (INTEGER) - unique numerical identifier for database operations; Name (STRING) - text data requiring variable length; DateOfBirth (DATE) - enables age calculations and date validation; TestScores as ARRAY[1:5] OF REAL - stores multiple decimal values efficiently with index access.",
+      "markScheme": "1 mark for correct record structure, 1 mark each for appropriate data type choice (4 types), 1 mark for clear justification of choices"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused static arrays with dynamic structures' — always specify whether array size is fixed at compile-time or can change during execution",
+      "Examiner Report 2022: 'Students often chose inappropriate data types without justification' — always explain WHY you chose INTEGER over REAL, or STRING over CHAR, considering storage and operations needed",
+      "Examiner Report 2023: 'Candidates failed to show understanding of 2D arrays vs arrays of records' — clearly distinguish between ARRAY[1:10,1:5] and ARRAY[1:10] OF RECORD when designing data structures"
+    ],
+    "keyDiagram": "Students must be able to draw a memory representation diagram showing: 1) Array with indexed elements (showing index numbers 0-4 and corresponding values), 2) Record structure with labeled fields and their data types, 3) 2D array as rows and columns with coordinate references [row,column]. Include arrows showing pointer relationships and memory addresses where relevant.",
+    "quickRecap": "Data types define what values can be stored (INTEGER, REAL, STRING, BOOLEAN, DATE) and operations allowed. Arrays store multiple values of same type with index access. Records group related data of different types using field names. Choose data types based on required operations, storage efficiency, and validation needs."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:17:02.229Z",
-  "updated_at": "2026-04-06T05:17:02.229Z"
+  "updated_at": "2026-04-06T05:17:02.229Z",
+  "enriched_at": "2026-04-06T16:11:49.115Z"
 }

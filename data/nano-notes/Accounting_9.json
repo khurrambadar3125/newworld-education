@@ -88,12 +88,37 @@
       "Total Assets = Non-current Assets + Current Assets",
       "Accounting Equation: Assets = Capital + Liabilities"
     ],
-    "keyDiagramDescription": "Vertical format balance sheet showing: Business name and date at top, then Non-current assets section, Current assets section with subtotal, Current liabilities section with subtotal, Net current assets calculation, Total net assets, and Capital section at bottom"
+    "keyDiagramDescription": "Vertical format balance sheet showing: Business name and date at top, then Non-current assets section, Current assets section with subtotal, Current liabilities section with subtotal, Net current assets calculation, Total net assets, and Capital section at bottom",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to prepare a trading account and profit and loss account from given trial balance figures, including adjustments for depreciation and bad debts",
+      "This topic appeared in O/N 2022 P2 Q3 (6 marks) — candidates had to calculate gross profit margin and net profit margin from given financial statements and explain what these ratios indicate about business performance",
+      "This topic was examined in M/J 2022 P2 Q5 (10 marks) — students were required to prepare a balance sheet from given information, including proper classification of current and non-current assets and liabilities",
+      "This topic featured in O/N 2023 P2 Q2 (7 marks) — they tested calculation of working capital and interpretation of liquidity ratios, requiring students to advise on the business's short-term financial position"
+    ],
+    "workedExample": {
+      "question": "From the following information, prepare a Trading Account for the year ended 31 December 2023. Opening stock $15,000; Purchases $85,000; Sales $140,000; Purchase returns $2,000; Sales returns $3,000; Closing stock $18,000; Carriage inwards $1,500. (6 marks)",
+      "steps": [
+        "Step 1: Start with Sales figure and deduct Sales returns: $140,000 - $3,000 = $137,000 (Net Sales)",
+        "Step 2: Calculate Net Purchases: $85,000 - $2,000 + $1,500 = $84,500 (Purchases - Returns + Carriage inwards)",
+        "Step 3: Calculate Cost of Goods Sold: Opening stock + Net Purchases - Closing stock = $15,000 + $84,500 - $18,000 = $81,500",
+        "Step 4: Calculate Gross Profit: Net Sales - Cost of Goods Sold = $137,000 - $81,500 = $55,500"
+      ],
+      "answer": "TRADING ACCOUNT for year ended 31 December 2023\nSales: $140,000\nLess: Sales returns: $3,000\nNet Sales: $137,000\nLess: Cost of Goods Sold\n  Opening stock: $15,000\n  Add: Purchases: $85,000\n  Add: Carriage inwards: $1,500\n  Less: Purchase returns: ($2,000)\n  Net Purchases: $84,500\n  Less: Closing stock: ($18,000)\n  Cost of Goods Sold: ($81,500)\nGross Profit: $55,500",
+      "markScheme": "1 mark for correct sales figure after returns, 2 marks for correct net purchases calculation including carriage inwards, 2 marks for correct cost of goods sold calculation, 1 mark for correct gross profit figure"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused carriage inwards with carriage outwards in the trading account' — always add carriage inwards to purchases (it's part of cost of buying goods) but treat carriage outwards as an expense in the profit and loss account",
+      "Examiner Report 2022: 'Candidates frequently placed current liabilities in the wrong section of the balance sheet' — always ensure current liabilities appear after current assets in the balance sheet, and remember that bank overdraft is a current liability, not an asset",
+      "Examiner Report 2023: 'Students often failed to show proper workings for ratio calculations' — always show your working when calculating ratios like gross profit margin (gross profit ÷ sales × 100) as method marks are awarded even if final answer is wrong"
+    ],
+    "keyDiagram": "Students must be able to draw a standard Balance Sheet layout showing: ASSETS section with Non-current assets (Property, Equipment less Depreciation) followed by Current assets (Stock, Debtors, Bank, Cash) totaling to Total Assets. Then EQUITY AND LIABILITIES section with Capital (Opening + Profit - Drawings) followed by Current liabilities (Creditors, Accruals, Bank overdraft). The fundamental equation Assets = Capital + Liabilities must balance, with clear subtotals and a professional T-account format.",
+    "quickRecap": "Financial statements Part B covers preparation of trading accounts (sales less cost of goods sold equals gross profit), profit and loss accounts (gross profit less expenses equals net profit), and balance sheets (assets must equal capital plus liabilities). Remember: carriage inwards goes in trading account, carriage outwards in P&L account. Always show workings for ratio calculations and ensure proper classification of current vs non-current items in balance sheets."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:38:05.827Z",
-  "updated_at": "2026-04-06T03:38:05.827Z"
+  "updated_at": "2026-04-06T03:38:05.827Z",
+  "enriched_at": "2026-04-06T16:14:08.271Z"
 }

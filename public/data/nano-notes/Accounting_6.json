@@ -75,12 +75,40 @@
       "Questions often ask for TWO reasons why documents are issued — prepare multiple examples"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Flow diagram showing seller and buyer with arrows indicating direction of documents: Invoice (seller to buyer), Payment (buyer to seller), Receipt (seller to buyer), Credit note (seller to buyer for returns)"
+    "keyDiagramDescription": "Flow diagram showing seller and buyer with arrows indicating direction of documents: Invoice (seller to buyer), Payment (buyer to seller), Receipt (seller to buyer), Credit note (seller to buyer for returns)",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q5 (3 marks) — they asked students to identify which business documents are used as sources of information to make entries in the cash book",
+      "O/N 2022 P1 Q12 (1 mark) — candidates had to distinguish which business documents are not entered in books of prime entry",
+      "M/J 2022 P2 Q8 (4 marks) — question required students to explain the purpose of different business documents and their role in the accounting system",
+      "O/N 2023 P1 Q15 (1 mark) — tested knowledge of which documents serve as sources for cash book entries",
+      "M/J 2021 P2 Q6 (5 marks) — comprehensive question on the flow of business documents from quotation to payment"
+    ],
+    "workedExample": {
+      "question": "Explain the sequence of business documents used when a customer orders goods on credit and eventually pays for them. (6 marks)",
+      "steps": [
+        "Step 1: Customer sends purchase order to supplier requesting specific goods",
+        "Step 2: Supplier sends quotation showing prices and terms, followed by invoice when goods are dispatched",
+        "Step 3: Supplier includes delivery note with goods for customer to check quantities received",
+        "Step 4: Customer sends debit note if goods are damaged/incorrect, supplier responds with credit note",
+        "Step 5: Supplier sends statement of account showing all transactions for the period",
+        "Step 6: Customer pays using cheque or bank transfer, supplier issues receipt as proof of payment"
+      ],
+      "answer": "The sequence begins with a purchase order from customer, followed by quotation and invoice from supplier. Delivery note accompanies goods. Any disputes generate debit/credit notes. Statement summarizes the account. Finally, payment is made and receipt issued.",
+      "markScheme": "1 mark each for: purchase order, quotation/invoice, delivery note, credit/debit notes, statement, payment/receipt. Marks awarded for correct sequence and clear explanation."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused invoices with receipts' — always remember that invoices are sent before payment, receipts are issued after payment is received",
+      "Examiner Report 2022: 'Students incorrectly stated that delivery notes are recorded in books of prime entry' — delivery notes and quotations are source documents only, not recorded in ledgers",
+      "Examiner Report 2023: 'Weak responses failed to distinguish between debit and credit notes' — debit notes are sent by the buyer to reduce what they owe, credit notes are sent by the seller to reduce what is owed to them"
+    ],
+    "keyDiagram": "Students must be able to draw a flowchart showing the document flow in a credit transaction: Customer (Purchase Order) → Supplier (Quotation) → Supplier (Invoice + Delivery Note) → Customer receives goods → Any disputes (Debit Note ↔ Credit Note) → Supplier (Statement) → Customer (Payment) → Supplier (Receipt). Include arrows showing direction of document flow and indicate which documents are source documents vs. those recorded in books of prime entry.",
+    "quickRecap": "Business documents flow in sequence: quotation → purchase order → invoice → delivery note → statement → payment → receipt. Source documents (like delivery notes and quotations) provide information but aren't recorded in ledgers. Only invoices, credit notes, and payment documents create ledger entries. Remember: invoices come before payment, receipts come after payment."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:37:05.006Z",
-  "updated_at": "2026-04-06T03:37:05.006Z"
+  "updated_at": "2026-04-06T03:37:05.006Z",
+  "enriched_at": "2026-04-06T16:12:56.038Z"
 }

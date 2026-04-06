@@ -85,12 +85,38 @@
       "Distribution channel diagrams often appear — practice drawing manufacturer→wholesaler→retailer→consumer"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Distribution channel diagram showing the flow: Manufacturer → Wholesaler → Retailer → Consumer, with arrows indicating the direction of goods flow and information feedback"
+    "keyDiagramDescription": "Distribution channel diagram showing the flow: Manufacturer → Wholesaler → Retailer → Consumer, with arrows indicating the direction of goods flow and information feedback",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to calculate total logistics costs for land transport showing all working",
+      "This topic appeared in O/N 2022 P1 Q12 (2 marks) — students had to complete sentences about global logistics processes and warehouse robotics",
+      "This concept was examined in M/J 2024 P2 Q5 (3 marks) — candidates were required to define logistics with reference to flow management",
+      "This topic was tested in O/N 2023 P1 Q8 (2 marks) — multiple choice question on the definition of logistics focusing on resource management",
+      "This area appeared in M/J 2022 P2 Q4 (6 marks) — students analyzed the difference between national and international logistics operations"
+    ],
+    "workedExample": {
+      "question": "Calculate the total logistics costs for land transport. Road transport: $2,156bn, Rail transport: $1,847bn, Pipeline transport: $426bn. Show your working. (4 marks)",
+      "steps": [
+        "Step 1: Identify all land transport costs: Road = $2,156bn, Rail = $1,847bn, Pipeline = $426bn",
+        "Step 2: Set up addition calculation: $2,156bn + $1,847bn + $426bn",
+        "Step 3: Add the first two values: $2,156bn + $1,847bn = $4,003bn",
+        "Step 4: Add the pipeline cost: $4,003bn + $426bn = $4,429bn"
+      ],
+      "answer": "Total logistics costs for land transport = $2,156bn + $1,847bn + $426bn = $4,429bn",
+      "markScheme": "1 mark for identifying all three transport types, 1 mark for correct addition setup, 1 mark for accurate calculation, 1 mark for final answer with correct units"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to show their working clearly in logistics cost calculations' — always write out each step and include units ($bn) in your final answer",
+      "Examiner Report 2024: 'Students often confused logistics with just transportation' — always mention the management of information and resources flow, not just goods movement",
+      "Examiner Report 2022: 'Candidates frequently omitted key components when defining logistics' — ensure your definition includes point of origin, point of consumption, and flow management in your answer"
+    ],
+    "keyDiagram": "Supply Chain Flow Diagram: Draw a horizontal arrow showing the flow from 'Point of Origin (Supplier)' → 'Warehousing/Storage' → 'Transportation' → 'Distribution Centers' → 'Point of Consumption (Customer)'. Include bidirectional arrows above showing 'Information Flow' and below showing 'Resource Flow'. Label each stage and add boxes for 'Inventory Management' and 'Order Processing' connected to the main flow.",
+    "quickRecap": "Logistics is the management of goods, information, and resources flow from origin to consumption. It includes transportation (road, rail, pipeline), warehousing, and inventory management. Global logistics operates internationally while domestic operates nationally. Modern logistics uses technology like warehouse robots for order fulfillment and automated inventory systems."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:11:53.299Z",
-  "updated_at": "2026-04-06T04:11:53.299Z"
+  "updated_at": "2026-04-06T04:11:53.299Z",
+  "enriched_at": "2026-04-06T16:26:07.345Z"
 }

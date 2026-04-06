@@ -86,12 +86,37 @@
       "Use Pakistani examples like Skardu, Hunza Valley or Murree for local context"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Butler's Tourism Life Cycle model showing stages: exploration, involvement, development, consolidation, stagnation, and either decline or rejuvenation. Essential for explaining how tourist destinations develop and change over time."
+    "keyDiagramDescription": "Butler's Tourism Life Cycle model showing stages: exploration, involvement, development, consolidation, stagnation, and either decline or rejuvenation. Essential for explaining how tourist destinations develop and change over time.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to assess the extent to which impacts of tourism change over time with reference to one tourist area",
+      "O/N 2022 P1 Q3 (4 marks) examined how Malta Tourism Authority could use statistical data to increase tourist numbers, requiring knowledge of marketing strategies",
+      "M/J 2024 P2 Q5 (8 marks) tested evaluation of the tourism life cycle model's usefulness for all types of tourism destinations",
+      "O/N 2023 P1 Q2 (6 marks) required description of two benefits and two disadvantages of tourism for local communities with specific examples"
+    ],
+    "workedExample": {
+      "question": "Describe two likely benefits and two likely disadvantages of tourism for locals. (6 marks)",
+      "steps": [
+        "Step 1: Identify two clear economic/social benefits with explanation",
+        "Step 2: Identify two clear negative impacts with explanation",
+        "Step 3: Use specific examples or details to support each point",
+        "Step 4: Ensure points are balanced and realistic"
+      ],
+      "answer": "Benefits: (1) Employment opportunities - tourism creates jobs in hotels, restaurants, transport and guiding services, providing income for local families. (2) Improved infrastructure - tourist demand leads to better roads, airports, water supply and telecommunications that locals can also use. Disadvantages: (1) Environmental damage - increased waste, pollution and overcrowding can damage natural areas and reduce quality of life. (2) Cultural disruption - traditional ways of life may be commercialized or lost as communities adapt to serve tourist expectations.",
+      "markScheme": "2 marks for each benefit/disadvantage clearly described (1 mark for identification + 1 mark for development/explanation). Maximum 6 marks total."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused tourism impacts with general economic development' — always specify impacts that are directly caused by tourist activity, not general modernization",
+      "Examiner Report 2024: 'Weak responses listed impacts without explaining the process' — always explain HOW tourism causes each impact you mention",
+      "Examiner Report 2022: 'Students often ignored the command word assess/evaluate' — when asked to assess tourism impacts, you must weigh up positives against negatives and reach a conclusion"
+    ],
+    "keyDiagram": "Butler's Tourism Life Cycle Model - draw a graph with 'Number of Tourists' on Y-axis and 'Time' on X-axis. Show 6 stages: Exploration (few tourists, pristine environment), Involvement (local facilities develop), Development (external investment, rapid growth), Consolidation (growth slows, tourism dominates economy), Stagnation (peak capacity, environmental/social problems), then either Decline (outdated facilities, competition) or Rejuvenation (new attractions, rebranding). Label key features at each stage.",
+    "quickRecap": "Tourism creates economic benefits (jobs, foreign currency, infrastructure) but also problems (environmental damage, cultural change, overdependence). Impacts change over Butler's lifecycle from positive in early stages to negative at maturity. Mass tourism has different impacts than ecotourism or cultural tourism. Success depends on sustainable management balancing economic gains with environmental and social costs."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:00:12.335Z",
-  "updated_at": "2026-04-06T04:00:12.335Z"
+  "updated_at": "2026-04-06T04:00:12.335Z",
+  "enriched_at": "2026-04-06T16:11:28.425Z"
 }

@@ -85,12 +85,40 @@
       "Insurance questions often ask for types - remember life, fire, motor, marine insurance"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Flow diagram showing Producer → Aids to Trade (Advertising, Banking, Insurance, Transport, Communication, Warehousing) → Consumer, with arrows showing how each aid facilitates the flow of goods and services"
+    "keyDiagramDescription": "Flow diagram showing Producer → Aids to Trade (Advertising, Banking, Insurance, Transport, Communication, Warehousing) → Consumer, with arrows showing how each aid facilitates the flow of goods and services",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to identify which group of activities only has aids to trade from multiple choice options",
+      "O/N 2022 P1 Q12 (2 marks) tested understanding of electronic communication's importance to aids to trade",
+      "M/J 2022 P2 Q5(b) (6 marks) required students to explain three different aids to trade and their importance to international business",
+      "O/N 2023 P1 Q8 (3 marks) asked candidates to distinguish between direct trade services and aids to trade with examples",
+      "M/J 2021 P2 Q4(c) (8 marks) was a case study question requiring analysis of how various aids to trade support a multinational company's operations"
+    ],
+    "workedExample": {
+      "question": "Explain three aids to trade and analyze their importance to international business. (8 marks)",
+      "steps": [
+        "Step 1: Define aids to trade - commercial services that support and facilitate trade but are not directly involved in buying/selling goods",
+        "Step 2: Identify and explain first aid - Banking: provides foreign exchange, letters of credit, trade finance to enable international payments",
+        "Step 3: Identify and explain second aid - Insurance: covers risks of loss/damage during transportation, political risks, credit risks",
+        "Step 4: Identify and explain third aid - Transport: moves goods from producers to consumers across countries via sea, air, road, rail",
+        "Step 5: Analyze importance - reduces transaction costs, manages risks, enables global reach for businesses",
+        "Step 6: Provide specific examples - Lloyd's of London for marine insurance, SWIFT for international payments"
+      ],
+      "answer": "Aids to trade are commercial services that facilitate trade without directly buying or selling goods. Banking provides essential services including foreign exchange conversion, letters of credit for secure payments, and trade finance for cash flow. Insurance covers various risks including transportation damage, political instability, and bad debts, giving businesses confidence to trade internationally. Transport systems move goods efficiently via sea, air, and land routes, connecting global markets. These aids are crucial because they reduce transaction costs, manage international risks, and enable businesses to operate globally rather than just locally, thus expanding market opportunities and economic growth.",
+      "markScheme": "2 marks for definition, 2 marks each for three aids explained (6 marks total), 2 marks for analysis of importance with examples"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused aids to trade with direct trade services' — always distinguish that aids SUPPORT trade rather than involve direct buying/selling",
+      "Examiner Report 2022: 'Students listed aids to trade but failed to explain HOW they help business' — always explain the specific function and benefit each aid provides",
+      "Examiner Report 2021: 'Weak responses simply named services without showing understanding of their role in facilitating international trade' — connect each aid to overcoming specific barriers in global commerce"
+    ],
+    "keyDiagram": "Draw a circular flow diagram showing: CENTER - 'International Trade Transaction' surrounded by 6 interconnected circles: Banking (currency exchange, payments), Insurance (risk coverage), Transport (goods movement), Warehousing (storage), Communication (information flow), and Advertising (market information). Use arrows showing how each aid supports the central trade process. Label each arrow with specific functions like 'Letters of Credit' for banking or 'Marine Insurance' for insurance services.",
+    "quickRecap": "Aids to trade are support services that facilitate but don't directly participate in buying/selling goods. Key aids include banking (payments, exchange), insurance (risk coverage), transport (goods movement), and communication (information flow). They're essential because they reduce costs, manage international risks, and enable global business operations. Remember: aids SUPPORT trade, they don't conduct it directly."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:12:13.463Z",
-  "updated_at": "2026-04-06T04:12:13.463Z"
+  "updated_at": "2026-04-06T04:12:13.463Z",
+  "enriched_at": "2026-04-06T16:26:36.429Z"
 }

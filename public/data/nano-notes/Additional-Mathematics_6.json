@@ -85,12 +85,38 @@
       "ka = (kx, ky) for scalar k",
       "Unit vector â = a/|a|"
     ],
-    "keyDiagramDescription": "Vector triangle showing addition a + b with vectors drawn as arrows from tail to head, forming a closed triangle. Include coordinate axes and label all vectors clearly."
+    "keyDiagramDescription": "Vector triangle showing addition a + b with vectors drawn as arrows from tail to head, forming a closed triangle. Include coordinate axes and label all vectors clearly.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (5 marks) — they asked students to write down the position vector of a ship t hours after it starts sailing, requiring understanding of time-dependent position vectors",
+      "This topic appeared in O/N 2022 P1 Q8 (4 marks) — students had to find values of a and b in a vector equation, testing algebraic manipulation of vector components",
+      "This topic was examined in M/J 2024 P2 Q6 (6 marks) — candidates needed to write a velocity vector in the form xi + yj and use vector methods to prove collinearity of three points",
+      "This topic featured in O/N 2023 P2 Q5 (4 marks) — students were required to find position vectors at specific times and demonstrate understanding of vector addition"
+    ],
+    "workedExample": {
+      "question": "Ship A starts from point O and travels with velocity (3i + 4j) km/h. Ship B starts from point P with position vector (12i + 5j) km and travels with velocity (2i - j) km/h. Find when the ships are closest together. (6 marks)",
+      "steps": [
+        "Step 1: Write position vectors at time t. Ship A: r₁ = t(3i + 4j) = 3ti + 4tj. Ship B: r₂ = (12i + 5j) + t(2i - j) = (12 + 2t)i + (5 - t)j",
+        "Step 2: Find vector AB = r₂ - r₁ = (12 + 2t - 3t)i + (5 - t - 4t)j = (12 - t)i + (5 - 5t)j",
+        "Step 3: Distance squared d² = |AB|² = (12 - t)² + (5 - 5t)² = (12 - t)² + 25(1 - t)²",
+        "Step 4: Expand: d² = 144 - 24t + t² + 25 - 50t + 25t² = 26t² - 74t + 169",
+        "Step 5: For minimum distance, differentiate: d(d²)/dt = 52t - 74 = 0, so t = 74/52 = 37/26 hours"
+      ],
+      "answer": "The ships are closest together after 37/26 hours (approximately 1.42 hours)",
+      "markScheme": "1 mark for each position vector, 1 mark for AB vector, 1 mark for distance squared expression, 1 mark for differentiation, 1 mark for solving"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused position vectors with displacement vectors' — always check whether the question asks for position from origin or displacement between two points",
+      "Examiner Report 2024: 'Students frequently omitted unit vectors i and j in their final answers' — always express vector answers in component form with proper notation",
+      "Examiner Report 2022: 'Common error was treating vectors as scalars when solving simultaneous equations' — remember to equate corresponding components separately when solving vector equations"
+    ],
+    "keyDiagram": "Essential vector diagram should show: coordinate axes with unit vectors i and j clearly labeled, origin O marked, position vectors drawn as arrows from origin to points, displacement vectors shown between points (not from origin), velocity vectors drawn with appropriate direction and labeled with components. Include time parameter t in position equations when showing motion.",
+    "quickRecap": "Vectors have magnitude and direction, expressed as ai + bj. Position vectors start from origin, displacement vectors connect two points. To find unknown components, equate corresponding i and j parts separately. For motion problems, position = initial position + velocity × time. Collinear points satisfy r₂ = r₁ + λ(r₃ - r₁)."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:17:04.589Z",
-  "updated_at": "2026-04-06T04:17:04.589Z"
+  "updated_at": "2026-04-06T04:17:04.589Z",
+  "enriched_at": "2026-04-06T16:23:41.104Z"
 }

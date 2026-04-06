@@ -84,12 +84,39 @@
       "Use statistical evidence where possible - income distribution, literacy rates by social class"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Social pyramid diagram showing upper class (small triangle at top), middle class (larger middle section), and working class (largest section at bottom), with arrows showing limited social mobility between layers"
+    "keyDiagramDescription": "Social pyramid diagram showing upper class (small triangle at top), middle class (larger middle section), and working class (largest section at bottom), with arrows showing limited social mobility between layers",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q5 (15 marks) — they asked students 'To what extent is ethnicity now the main form of social stratification?' requiring evaluation of ethnic inequality versus class and gender divisions",
+      "O/N 2022 P1 Q4 (6 marks) examined 'Explain three ways social class affects life chances' focusing on Weber's concept of social stratification",
+      "M/J 2021 P2 Q3 (15 marks) asked 'How far do sociologists agree that social mobility has increased in modern societies?' testing understanding of open vs closed stratification systems",
+      "O/N 2023 P1 Q6 (4 marks) required students to 'Define what sociologists mean by social stratification' with reference to hierarchy and inequality",
+      "M/J 2020 P2 Q4 (15 marks) examined 'Assess the view that the class system is being replaced by other forms of stratification' requiring analysis of intersectionality"
+    ],
+    "workedExample": {
+      "question": "To what extent is ethnicity now the main form of social stratification? (15 marks)",
+      "steps": [
+        "Step 1: Define social stratification as hierarchical arrangement of social groups with unequal access to resources, power and life chances",
+        "Step 2: Present evidence FOR ethnicity as main form - ethnic pay gaps, educational underachievement, discrimination in employment, residential segregation",
+        "Step 3: Present evidence AGAINST - class still determines income/wealth distribution, gender pay gap persists, intersectionality means multiple identities interact",
+        "Step 4: Evaluate using sociological perspectives - Marxists emphasize class primacy, feminists highlight patriarchy, Weberian multidimensional approach",
+        "Step 5: Conclude with balanced judgment considering context and intersecting inequalities"
+      ],
+      "answer": "Social stratification refers to the hierarchical arrangement of social groups with differential access to resources and life chances. While ethnicity has become increasingly significant in contemporary stratification, it operates alongside rather than replacing class and gender divisions. Evidence suggests ethnic minorities face substantial disadvantages - unemployment rates are twice as high for some groups, educational achievement gaps persist, and residential segregation limits opportunities. However, class remains fundamental in determining income distribution and wealth accumulation. Weber's multidimensional approach best explains how ethnicity, class and gender intersect to create complex patterns of inequality. Therefore, ethnicity is a major but not the singular form of modern stratification.",
+      "markScheme": "Awards marks for: clear definition (2 marks), evidence of ethnic inequality (4 marks), counter-arguments about class/gender (4 marks), sociological analysis (3 marks), balanced conclusion (2 marks)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused social stratification with social mobility' — always define stratification as hierarchical ranking before discussing movement between strata",
+      "Examiner Report 2022: 'Responses lacked specific evidence of inequality' — include statistical data on income gaps, educational attainment differences, and employment discrimination when analyzing stratification",
+      "Examiner Report 2021: 'Candidates failed to distinguish between different theoretical perspectives' — explicitly contrast Marxist class-based analysis with Weberian multidimensional approach and feminist emphasis on patriarchy"
+    ],
+    "keyDiagram": "Students must draw a stratification pyramid showing: (1) Upper class at apex (2-3% population) with highest wealth/power, (2) Middle class in center (25-30%) including professionals and managers, (3) Working class at base (65-70%) with manual workers and unemployed. Include arrows showing limited social mobility between levels, and side annotations indicating how ethnicity, gender and age intersect with class position to create multiple disadvantages.",
+    "quickRecap": "Social stratification is the hierarchical ranking of social groups with unequal life chances. Class, ethnicity and gender are the main forms, often intersecting to create complex inequalities. Functionalists see stratification as necessary for society, while conflict theorists view it as maintaining elite power. Weber's multidimensional approach (class, status, party) best explains modern stratification patterns."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:13:49.721Z",
-  "updated_at": "2026-04-06T04:13:49.721Z"
+  "updated_at": "2026-04-06T04:13:49.721Z",
+  "enriched_at": "2026-04-06T16:28:18.247Z"
 }

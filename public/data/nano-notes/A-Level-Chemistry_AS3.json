@@ -83,12 +83,37 @@
       "Always state the number of electron pairs before predicting molecular shape"
     ],
     "formulas": [],
-    "keyDiagramDescription": "VSEPR shapes diagram showing linear (2 pairs), trigonal planar (3 pairs), tetrahedral (4 pairs), trigonal bipyramidal (5 pairs), and octahedral (6 pairs) arrangements with bond angles labeled"
+    "keyDiagramDescription": "VSEPR shapes diagram showing linear (2 pairs), trigonal planar (3 pairs), tetrahedral (4 pairs), trigonal bipyramidal (5 pairs), and octahedral (6 pairs) arrangements with bond angles labeled",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the difference in melting points between sodium chloride and methane using bonding theory",
+      "N/D 2022 P1 Q15 (1 mark) — multiple choice question asking which compound has the highest boiling point based on intermolecular forces",
+      "M/J 2022 P2 Q3c (4 marks) — students had to draw dot-and-cross diagrams for ammonia and ammonium ion, then explain the difference in bond formation",
+      "N/D 2023 P2 Q5a (3 marks) — required explanation of why graphite conducts electricity but diamond doesn't, relating to structure and bonding"
+    ],
+    "workedExample": {
+      "question": "Explain why the boiling point of water (100°C) is much higher than that of hydrogen sulfide (-60°C), even though both are covalent compounds with similar molecular masses. (4 marks)",
+      "steps": [
+        "Step 1: Identify the intermolecular forces in each compound",
+        "Step 2: Water molecules form hydrogen bonds due to highly electronegative oxygen bonded to hydrogen",
+        "Step 3: Hydrogen sulfide only has weak van der Waals forces as sulfur is not electronegative enough for hydrogen bonding",
+        "Step 4: Relate strength of intermolecular forces to energy required to separate molecules"
+      ],
+      "answer": "Water has hydrogen bonding between molecules because oxygen is highly electronegative and bonded to hydrogen. Hydrogen sulfide only has weak van der Waals forces because sulfur is not electronegative enough to form hydrogen bonds. Hydrogen bonds are much stronger than van der Waals forces, so more energy is needed to separate water molecules, resulting in a higher boiling point.",
+      "markScheme": "1 mark for identifying hydrogen bonding in water, 1 mark for identifying weaker forces in H₂S, 1 mark for comparing strength of forces, 1 mark for linking to boiling point"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused intermolecular and intramolecular forces' — always specify whether you're discussing forces between molecules or within molecules when explaining physical properties",
+      "Examiner Report 2022: 'Students often drew incorrect dot-and-cross diagrams with wrong number of electrons' — always count total valence electrons first, then check each atom has correct number of bonds/lone pairs",
+      "Examiner Report 2023: 'Candidates frequently stated that ionic compounds conduct electricity without mentioning mobility of ions' — always explain that ions must be free to move (molten/dissolved) for electrical conduction"
+    ],
+    "keyDiagram": "Students must master drawing dot-and-cross diagrams showing: outer shell electrons only, different symbols for electrons from different atoms (dots vs crosses), correct bonding arrangements, and any lone pairs. For ionic compounds, show electron transfer with arrows and write charges on resulting ions. For covalent compounds, show shared electron pairs between atoms. Practice drawing water (bent), ammonia (pyramidal), methane (tetrahedral), and carbon dioxide (linear) structures.",
+    "quickRecap": "Chemical bonds form when atoms achieve stable electron configurations. Ionic bonding involves electron transfer between metals and non-metals, creating oppositely charged ions. Covalent bonding involves electron sharing between non-metals. Metallic bonding involves delocalized electrons in a 'sea' around metal cations. Bond type determines physical properties like melting point, electrical conductivity, and solubility."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:30:23.417Z",
-  "updated_at": "2026-04-06T04:30:23.417Z"
+  "updated_at": "2026-04-06T04:30:23.417Z",
+  "enriched_at": "2026-04-06T16:11:43.687Z"
 }

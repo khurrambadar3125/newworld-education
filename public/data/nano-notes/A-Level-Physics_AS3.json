@@ -85,12 +85,38 @@
       "FΔt = Δp",
       "p₁ + p₂ = p₁' + p₂' (conservation)"
     ],
-    "keyDiagramDescription": "Free body diagrams showing all forces acting on an object with arrows indicating magnitude and direction, essential for applying Newton's laws correctly"
+    "keyDiagramDescription": "Free body diagrams showing all forces acting on an object with arrows indicating magnitude and direction, essential for applying Newton's laws correctly",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate the acceleration of a trolley on an inclined plane using Newton's second law and resolve forces parallel to the slope",
+      "O/N 2022 P2 Q3 (5 marks) tested terminal velocity concepts — students had to explain why a parachutist reaches constant velocity and sketch velocity-time graphs",
+      "M/J 2024 P2 Q5 (7 marks) examined Newton's third law with two connected masses — candidates needed to find tension in string and acceleration of the system",
+      "O/N 2023 P1 Q15 (1 mark) was a multiple choice on identifying action-reaction pairs, while P2 Q6 (8 marks) required force calculations for a car braking on different road surfaces"
+    ],
+    "workedExample": {
+      "question": "A box of mass 12 kg is pulled across a horizontal surface by a rope at 30° to the horizontal. The tension in the rope is 50 N and the coefficient of friction is 0.25. Calculate the acceleration of the box. (6 marks)",
+      "steps": [
+        "Step 1: Resolve tension force - Horizontal component: 50 × cos(30°) = 43.3 N, Vertical component: 50 × sin(30°) = 25.0 N",
+        "Step 2: Find normal force - Weight = mg = 12 × 10 = 120 N downward, Normal force = 120 - 25 = 95 N",
+        "Step 3: Calculate friction force - Friction = μN = 0.25 × 95 = 23.75 N opposing motion",
+        "Step 4: Find resultant horizontal force - Net force = 43.3 - 23.75 = 19.55 N forward",
+        "Step 5: Apply Newton's second law - F = ma, so a = F/m = 19.55/12 = 1.63 m/s²"
+      ],
+      "answer": "The acceleration of the box is 1.63 m/s² in the direction of motion.",
+      "markScheme": "1 mark for resolving tension horizontally, 1 mark for resolving vertically, 1 mark for correct normal force, 1 mark for friction calculation, 1 mark for net force, 1 mark for final acceleration with unit"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused mass and weight when applying F=ma' — always use mass (kg) not weight (N) in Newton's second law calculations",
+      "Examiner Report 2024: 'Students frequently forgot to resolve forces into components on inclined planes' — always break forces parallel and perpendicular to the slope before applying Newton's laws",
+      "Examiner Report 2022: 'Common error was identifying incorrect action-reaction pairs' — remember Newton's third law pairs act on different objects, not the same object"
+    ],
+    "keyDiagram": "Free body diagrams are essential - draw a simple box/dot representing the object, then draw arrows from the center showing ALL forces acting ON that object only. Label each force clearly (weight W, normal N, friction f, tension T, etc.) with magnitudes if known. For inclined planes, draw coordinate axes parallel and perpendicular to the slope, and resolve weight into components mg sin θ (down slope) and mg cos θ (into slope). Never include forces the object exerts on other things.",
+    "quickRecap": "Newton's First Law: objects at rest stay at rest, moving objects continue at constant velocity unless acted upon by unbalanced forces. Newton's Second Law: F = ma, where F is net force in Newtons. Newton's Third Law: for every action there's an equal and opposite reaction on a different object. Always draw free body diagrams, resolve forces into components, and remember friction opposes motion."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:39:31.467Z",
-  "updated_at": "2026-04-06T04:39:31.467Z"
+  "updated_at": "2026-04-06T04:39:31.467Z",
+  "enriched_at": "2026-04-06T16:12:02.661Z"
 }

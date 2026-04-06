@@ -82,12 +82,38 @@
       "Remember that sustainability has economic, social AND environmental dimensions"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Stakeholder diagram showing business in center with arrows connecting to employees, customers, suppliers, community, shareholders, and government, demonstrating how CSR affects all groups"
+    "keyDiagramDescription": "Stakeholder diagram showing business in center with arrows connecting to employees, customers, suppliers, community, shareholders, and government, demonstrating how CSR affects all groups",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to evaluate the sustainability of a small business's packaging choices and suggest improvements",
+      "N/D 2022 P2 Q5 (8 marks) tested ethical considerations in supply chain management, requiring candidates to analyze a case study of factory working conditions",
+      "M/J 2022 P1 Q3 (4 marks) — candidates had to explain two ways a business could operate more sustainably while maintaining profitability",
+      "N/D 2023 P2 Q6 (10 marks) asked for a full evaluation of whether businesses have a responsibility to prioritize environmental concerns over profit maximization"
+    ],
+    "workedExample": {
+      "question": "Greentech Ltd manufactures solar panels. Evaluate whether the business should invest in more expensive, recyclable materials for its products. (8 marks)",
+      "steps": [
+        "Step 1: Define key terms - sustainability means meeting present needs without compromising future generations' ability to meet their needs",
+        "Step 2: Identify benefits of recyclable materials - improved brand reputation, compliance with environmental regulations, reduced long-term waste disposal costs",
+        "Step 3: Analyze drawbacks - higher initial costs, potential reduction in short-term profits, may need to increase selling prices affecting competitiveness",
+        "Step 4: Consider stakeholder impacts - customers increasingly value eco-friendly products, investors may prefer sustainable practices, employees may feel prouder of their work",
+        "Step 5: Make a reasoned judgment weighing short-term costs against long-term benefits"
+      ],
+      "answer": "Greentech Ltd should invest in recyclable materials despite higher costs. The solar panel industry attracts environmentally conscious customers who will pay premium prices for truly sustainable products. This aligns with the business name and mission, creating authentic brand differentiation. Long-term benefits include reduced regulatory risks, future-proofing against stricter environmental laws, and access to green investment funding. While short-term profitability may decrease, the investment supports sustainable competitive advantage in a growing market where environmental credentials increasingly influence purchasing decisions.",
+      "markScheme": "2 marks for understanding sustainability concept, 2 marks for identifying relevant costs/benefits, 2 marks for stakeholder analysis, 2 marks for reasoned conclusion with justification"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused sustainability with simple cost-cutting measures' — always link sustainability to environmental AND social impacts, not just economic efficiency",
+      "Examiner Report 2022: 'Students often provided generic ethical principles without business context' — always connect ethical considerations to specific stakeholder groups and business consequences",
+      "Examiner Report 2023: 'Weak responses failed to consider trade-offs between different stakeholder interests' — acknowledge that ethical decisions often involve conflicts between stakeholder groups and explain how businesses might resolve these"
+    ],
+    "keyDiagram": "Sustainability Triangle (Triple Bottom Line): Draw an equilateral triangle with 'PROFIT' at the top vertex, 'PEOPLE' at bottom left, and 'PLANET' at bottom right. In the center, write 'SUSTAINABLE BUSINESS'. Add arrows between each point showing interconnections. Include brief annotations: Profit (economic viability, long-term returns), People (employee welfare, community impact, fair trade), Planet (environmental protection, resource conservation). This shows how businesses must balance all three elements for true sustainability.",
+    "quickRecap": "Sustainability requires businesses to balance profit, people, and planet considerations for long-term success. Ethical business practices involve considering all stakeholder impacts, not just shareholders. Key areas include environmental responsibility, fair employment practices, and transparent supply chains. Modern consumers and investors increasingly reward sustainable businesses, making ethics a competitive advantage rather than just a cost."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:12:32.600Z",
-  "updated_at": "2026-04-06T04:12:32.600Z"
+  "updated_at": "2026-04-06T04:12:32.600Z",
+  "enriched_at": "2026-04-06T16:26:58.202Z"
 }

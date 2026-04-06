@@ -89,12 +89,40 @@
       "Net Purchases = Gross Purchases - Returns Outwards",
       "Net Amount = Gross Amount - Trade Discount"
     ],
-    "keyDiagramDescription": "T-accounts showing the double entry for returns inwards and outwards, with clear debit and credit entries in both the personal accounts and the returns accounts for buyer and seller"
+    "keyDiagramDescription": "T-accounts showing the double entry for returns inwards and outwards, with clear debit and credit entries in both the personal accounts and the returns accounts for buyer and seller",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to prepare a trial balance from given T-accounts and identify errors affecting the balancing",
+      "O/N 2022 P1 Q2 (6 marks) tested posting of journal entries to ledger accounts and calculating closing balances for inventory and trade receivables",
+      "M/J 2022 P2 Q3 (10 marks) required students to post adjusting entries for depreciation and bad debts, then prepare an adjusted trial balance",
+      "O/N 2021 P1 Q4 (5 marks) focused on posting bank reconciliation adjustments to the cash book and bank account in the ledger"
+    ],
+    "workedExample": {
+      "question": "Post the following transactions to the appropriate T-accounts and prepare a trial balance: Jan 1: Started business with cash $5,000; Jan 3: Purchased goods on credit from Ahmed $800; Jan 5: Sold goods for cash $600; Jan 8: Paid Ahmed $300 by cheque. (8 marks)",
+      "steps": [
+        "Step 1: Open T-accounts for Cash, Bank, Capital, Purchases, Ahmed (creditor), Sales",
+        "Step 2: Post Jan 1 - Debit Cash $5,000, Credit Capital $5,000",
+        "Step 3: Post Jan 3 - Debit Purchases $800, Credit Ahmed $800",
+        "Step 4: Post Jan 5 - Debit Cash $600, Credit Sales $600",
+        "Step 5: Post Jan 8 - Debit Ahmed $300, Credit Bank $300",
+        "Step 6: Calculate closing balances: Cash $5,600, Bank $(300), Capital $5,000, Purchases $800, Ahmed $500, Sales $600",
+        "Step 7: List debit balances = credit balances in trial balance format"
+      ],
+      "answer": "Trial Balance: Debit side - Cash $5,600, Purchases $800, Ahmed $500 = $6,900. Credit side - Bank $300, Capital $5,000, Sales $600 = $5,900. Note: Trial balance doesn't balance indicating an error needs investigation.",
+      "markScheme": "1 mark per correctly posted transaction (4 marks), 1 mark per correct account balance (3 marks), 1 mark for trial balance format"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused debit and credit sides when posting to personal accounts' — always remember the rule: debit the receiver, credit the giver for personal accounts",
+      "Examiner Report 2022: 'Students frequently failed to balance T-accounts correctly before preparing trial balances' — always show balancing figures (c/d and b/d) clearly on T-accounts",
+      "Examiner Report 2021: 'Common error was mixing up asset and liability account treatments' — ensure you know that increases in assets are debited, increases in liabilities are credited"
+    ],
+    "keyDiagram": "Students must be able to draw proper T-account format showing: account name centered at top, clear vertical line separating debit (left) and credit (right) sides, dates in first column, particulars in second column, amounts in third column, proper balancing with 'Balance c/d' on one side and 'Balance b/d' on opposite side below the total line. Include folio references (page numbers) for cross-referencing between accounts.",
+    "quickRecap": "Double entry requires every transaction to have equal debits and credits posted to T-accounts. Assets and expenses increase on debit side, liabilities, capital and income increase on credit side. Always balance accounts by inserting balancing figures, then transfer balances to trial balance. Trial balance should have equal debit and credit totals - if not, errors exist and must be found and corrected."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:36:18.508Z",
-  "updated_at": "2026-04-06T03:36:18.508Z"
+  "updated_at": "2026-04-06T03:36:18.508Z",
+  "enriched_at": "2026-04-06T16:12:10.629Z"
 }

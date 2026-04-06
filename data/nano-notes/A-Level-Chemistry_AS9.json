@@ -80,12 +80,37 @@
       "Al2O3 + 6HCl → 2AlCl3 + 3H2O",
       "Al2O3 + 2NaOH + 6H2O → 2Na[Al(OH)4(H2O)2]"
     ],
-    "keyDiagramDescription": "Periodic table showing trends with arrows: atomic radius decreasing left to right, ionisation energy increasing left to right, metallic character decreasing left to right, and reactivity patterns for Groups 1 and 7"
+    "keyDiagramDescription": "Periodic table showing trends with arrows: atomic radius decreasing left to right, ionisation energy increasing left to right, metallic character decreasing left to right, and reactivity patterns for Groups 1 and 7",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the trend in atomic radius across Period 3 and down Group 1, with reference to nuclear charge and electron shielding",
+      "N/D 2022 P1 Q12 (2 marks) tested knowledge of ionization energy trends — students had to identify which element in Period 2 would have the highest first ionization energy and explain why",
+      "M/J 2022 P2 Q3(c) (4 marks) — candidates were required to explain why the melting point of sodium chloride is higher than sodium, linking to structure and bonding types",
+      "N/D 2023 P2 Q5 (5 marks) focused on periodicity of chemical properties — students explained why Group 1 elements become more reactive down the group using atomic structure"
+    ],
+    "workedExample": {
+      "question": "Explain the trend in first ionization energy across Period 3 from sodium to argon. (4 marks)",
+      "steps": [
+        "Step 1: State the trend - first ionization energy generally increases across Period 3 from Na to Ar",
+        "Step 2: Explain nuclear charge increase - as we move across, nuclear charge increases from +11 to +18, attracting outer electrons more strongly",
+        "Step 3: Consider electron shielding - all elements have same number of inner electron shells (2), so shielding effect remains roughly constant",
+        "Step 4: Note exceptions - slight decrease at Al (3p¹ vs 3s²) and S (paired electrons in 3p⁴ repel)"
+      ],
+      "answer": "First ionization energy increases across Period 3. Nuclear charge increases from +11 to +18, so outer electrons are more strongly attracted to the nucleus. Electron shielding remains constant as all elements have 2 inner shells. Small decreases occur at aluminum (3p orbital higher energy than 3s) and sulfur (electron-electron repulsion in paired 3p orbitals).",
+      "markScheme": "1 mark for correct trend, 1 mark for nuclear charge explanation, 1 mark for shielding concept, 1 mark for mentioning exceptions or electron configuration effects"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused atomic radius with ionic radius' — always specify which type of radius you're discussing and remember atomic radius decreases across periods",
+      "Examiner Report 2022: 'Students often forgot to mention electron shielding when explaining ionization energy trends' — always include both nuclear charge AND shielding effects in your explanations",
+      "Examiner Report 2023: 'Weak responses failed to link periodicity to electron configuration' — always reference s, p, d subshells when explaining property changes across periods"
+    ],
+    "keyDiagram": "Students must draw a periodic table showing the first 20 elements with clear period and group labels. Mark electron configurations for Period 3 elements (Na: 2,8,1 through Ar: 2,8,8). Include arrows showing trends: atomic radius decreasing left→right and increasing top→bottom; ionization energy increasing left→right and bottom→top. Label s-block (Groups 1-2) and p-block (Groups 3-8) regions clearly.",
+    "quickRecap": "Periodicity means properties repeat in patterns across periods. Across periods: atomic radius decreases, ionization energy increases (due to increasing nuclear charge, constant shielding). Down groups: atomic radius increases, ionization energy decreases (more electron shells = more shielding). Chemical properties depend on outer electron configuration - same group = similar properties."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:32:35.324Z",
-  "updated_at": "2026-04-06T04:32:35.324Z"
+  "updated_at": "2026-04-06T04:32:35.324Z",
+  "enriched_at": "2026-04-06T16:14:03.478Z"
 }

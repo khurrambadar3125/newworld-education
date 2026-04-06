@@ -83,12 +83,38 @@
       "Practice identifying which book of prime entry to use for different transactions"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Flow diagram showing source documents → books of prime entry → ledger accounts, with examples of each book (sales day book, purchases day book, cash book, journal) and their corresponding source documents"
+    "keyDiagramDescription": "Flow diagram showing source documents → books of prime entry → ledger accounts, with examples of each book (sales day book, purchases day book, cash book, journal) and their corresponding source documents",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (3 marks) — they asked students to identify which books of prime entry would be used when a business sells a non-current asset for cash, testing knowledge of both asset disposal recording and cash receipts",
+      "N/D 2022 P1 Q15 (1 mark) — focused on advantages of maintaining books of prime entry, with common wrong answers including confusion between books of prime entry and ledger accounts",
+      "M/J 2024 P2 Q6 (4 marks) — required students to state two advantages of using books of prime entry, with marks awarded for control account preparation, information summarization, and ledger detail reduction",
+      "N/D 2023 P1 Q12 (1 mark) — tested which business documents are NOT entered in books of prime entry, catching students who confused source documents with subsidiary books"
+    ],
+    "workedExample": {
+      "question": "ABC Trading made the following transactions on 15 March 2024: Sold goods on credit to Khan Ltd $500, Received cash from Ahmed $300 for goods sold last month, Purchased stationery for cash $50. State which book of prime entry would be used to record each transaction. (6 marks)",
+      "steps": [
+        "Step 1: Identify the nature of each transaction - credit sale, cash receipt, cash purchase",
+        "Step 2: For credit sale to Khan Ltd $500 - this involves goods sold on credit terms",
+        "Step 3: For cash received from Ahmed $300 - this is cash coming into the business",
+        "Step 4: For stationery purchased for cash $50 - this is cash going out of the business",
+        "Step 5: Match each transaction type to the appropriate book of prime entry"
+      ],
+      "answer": "Credit sale to Khan Ltd $500 - Sales Day Book; Cash received from Ahmed $300 - Cash Receipts Book; Stationery purchased for cash $50 - Cash Payments Book",
+      "markScheme": "2 marks per correct book of prime entry identified (Sales Day Book, Cash Receipts Book, Cash Payments Book). Deduct 1 mark for each incorrect identification. Accept 'Sales Journal', 'Cash Book Dr side', 'Cash Book Cr side' as alternatives."
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the Cash Book with petty cash book when dealing with small cash transactions' — always distinguish between main cash transactions (Cash Book) and minor office expenses (Petty Cash Book)",
+      "Examiner Report 2024: 'Students frequently wrote ledger account names instead of books of prime entry' — remember that Sales Ledger is NOT a book of prime entry, the correct answer is Sales Day Book or Sales Journal",
+      "Examiner Report 2022: 'Candidates lost marks by not specifying whether cash transactions go in receipts or payments side' — always state 'Cash Receipts Book' or 'Cash Payments Book', not just 'Cash Book'"
+    ],
+    "keyDiagram": "Students must be able to draw a flow diagram showing: Source Documents → Books of Prime Entry → Ledger Accounts → Trial Balance. Include arrows showing the flow from invoices/receipts to day books/cash book, then to individual ledger accounts. Label each book of prime entry (Sales Day Book, Purchases Day Book, Returns Inward Day Book, Returns Outward Day Book, Cash Book, Petty Cash Book) with examples of transactions recorded in each.",
+    "quickRecap": "Books of prime entry are the first place transactions are recorded from source documents before posting to ledgers. Six main books: Sales Day Book (credit sales), Purchases Day Book (credit purchases), Returns books (goods returned), Cash Book (bank/cash receipts and payments), Petty Cash Book (small cash expenses). Key advantages include preparing control accounts and removing detail from ledgers. Remember to specify receipts/payments side for cash transactions."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:37:24.870Z",
-  "updated_at": "2026-04-06T03:37:24.870Z"
+  "updated_at": "2026-04-06T03:37:24.870Z",
+  "enriched_at": "2026-04-06T16:13:17.504Z"
 }

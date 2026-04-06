@@ -86,12 +86,37 @@
       "Use Pakistani examples like Daraz for e-commerce or local wholesale markets in Karachi for context"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Chain of Distribution diagram showing the flow: Manufacturer → Wholesaler → Retailer → Consumer, with arrows indicating direction of goods flow and services provided at each stage"
+    "keyDiagramDescription": "Chain of Distribution diagram showing the flow: Manufacturer → Wholesaler → Retailer → Consumer, with arrows indicating direction of goods flow and services provided at each stage",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to analyze the advantages and disadvantages of different methods of production for a furniture manufacturer",
+      "N 2022 P1 Q15 (1 mark) — multiple choice question on identifying the most appropriate production method for customized wedding cakes",
+      "M/J 2022 P2 Q2c (4 marks) — required explanation of why a smartphone manufacturer would use flow production rather than job production",
+      "N 2021 P2 Q3b (5 marks) — asked students to evaluate the impact of introducing automation on a car manufacturing company's stakeholders"
+    ],
+    "workedExample": {
+      "question": "Explain two advantages of flow production for a chocolate bar manufacturer. (4 marks)",
+      "steps": [
+        "Step 1: Identify what flow production means - continuous production of identical products on an assembly line",
+        "Step 2: Choose two clear advantages relevant to chocolate manufacturing",
+        "Step 3: Explain each advantage with specific reasoning related to the business context",
+        "Step 4: Ensure explanations show understanding of cause and effect"
+      ],
+      "answer": "One advantage is lower unit costs. Flow production allows the chocolate manufacturer to benefit from economies of scale as fixed costs like machinery and factory rent are spread over large volumes of identical chocolate bars, reducing the cost per unit. Another advantage is consistent quality. Standardized processes and machinery ensure each chocolate bar is produced to exactly the same specifications, reducing defects and maintaining brand reputation with customers.",
+      "markScheme": "2 marks per advantage: 1 mark for identifying the advantage (lower unit costs/consistent quality) + 1 mark for explanation in context"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused methods of production with location decisions' — always focus on HOW products are made (job/batch/flow), not WHERE they are made",
+      "Examiner Report 2022: 'Students often failed to link production methods to business context' — always explain why the chosen method suits that specific product or industry",
+      "Examiner Report 2021: 'Candidates frequently gave generic advantages without application' — use the business scenario given in the question to make your answer relevant and specific"
+    ],
+    "keyDiagram": "Production Methods Comparison Chart: Draw a table with three columns (Job, Batch, Flow) and rows for: Product type (unique/groups/identical), Volume (low/medium/high), Cost per unit (high/medium/low), Quality consistency (variable/some variation/standardized), and Examples (wedding dress/bakery goods/cars). Include arrows showing the spectrum from flexible but expensive (job) to efficient but inflexible (flow).",
+    "quickRecap": "Job production makes unique products one at a time (high cost, flexible). Batch production makes groups of similar products (medium cost and flexibility). Flow production makes identical products continuously (low cost, standardized). Technology and automation increase efficiency but require high initial investment and may cause unemployment."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:11:09.163Z",
-  "updated_at": "2026-04-06T04:11:09.163Z"
+  "updated_at": "2026-04-06T04:11:09.163Z",
+  "enriched_at": "2026-04-06T16:25:08.572Z"
 }

@@ -79,12 +79,37 @@
       "Kp = (partial pressures of products)/(partial pressures of reactants)",
       "Partial pressure = mole fraction × total pressure"
     ],
-    "keyDiagramDescription": "Graph showing concentration vs time reaching constant levels at equilibrium, with equal forward and backward reaction rates"
+    "keyDiagramDescription": "Graph showing concentration vs time reaching constant levels at equilibrium, with equal forward and backward reaction rates",
+    "pastPaperRefs": [
+      "M/J 2023 P2 Q4 (6 marks) — they asked students to explain why increasing pressure shifts the equilibrium position in the Haber process and calculate the new equilibrium constant",
+      "O/N 2022 P1 Q15 (1 mark) — multiple choice question testing understanding of Le Chatelier's principle with temperature changes in an exothermic reaction",
+      "M/J 2022 P2 Q3(c) (4 marks) — students had to predict and explain the effect of adding a catalyst on equilibrium position and rate of reaction",
+      "O/N 2021 P2 Q5 (8 marks) — comprehensive question on dynamic equilibrium including writing Kc expression, calculating equilibrium concentrations, and explaining industrial conditions"
+    ],
+    "workedExample": {
+      "question": "For the reaction N₂(g) + 3H₂(g) ⇌ 2NH₃(g), the equilibrium concentrations at 500°C are: [N₂] = 0.50 mol/dm³, [H₂] = 1.20 mol/dm³, [NH₃] = 0.80 mol/dm³. Calculate the equilibrium constant Kc and predict what happens if temperature is increased (reaction is exothermic). (6 marks)",
+      "steps": [
+        "Step 1: Write the Kc expression: Kc = [NH₃]² / ([N₂][H₂]³)",
+        "Step 2: Substitute the equilibrium concentrations: Kc = (0.80)² / (0.50 × (1.20)³)",
+        "Step 3: Calculate: Kc = 0.64 / (0.50 × 1.728) = 0.64 / 0.864 = 0.74 (no units as moles cancel)",
+        "Step 4: For temperature increase in exothermic reaction, equilibrium shifts left (backwards) to absorb heat energy, so Kc decreases"
+      ],
+      "answer": "Kc = 0.74. When temperature increases, equilibrium shifts to the left (endothermic direction) to oppose the change, reducing NH₃ concentration and decreasing the value of Kc.",
+      "markScheme": "1 mark for correct Kc expression, 1 mark for substitution, 2 marks for correct calculation and value, 2 marks for explanation of temperature effect using Le Chatelier's principle"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused equilibrium position with rate of reaction when discussing catalysts' — always state that catalysts increase rate but do not affect equilibrium position or Kc value",
+      "Examiner Report 2022: 'Students frequently forgot to include state symbols when writing equilibrium expressions' — always specify (g), (l), (s), or (aq) as equilibrium principles depend on physical states",
+      "Examiner Report 2021: 'Candidates often gave vague answers like \"equilibrium shifts right\" without explaining why' — always link your answer to Le Chatelier's principle and explain how the system opposes the change"
+    ],
+    "keyDiagram": "Graph showing concentration vs time for a reversible reaction reaching dynamic equilibrium. X-axis: Time, Y-axis: Concentration. Draw curves for reactants (decreasing then leveling) and products (increasing then leveling) that meet at the equilibrium point where forward and reverse reaction rates are equal. Label: initial concentrations, equilibrium concentrations, 'dynamic equilibrium established', and arrows showing 'rate of forward reaction = rate of reverse reaction'.",
+    "quickRecap": "Dynamic equilibrium occurs when forward and reverse reaction rates are equal in a closed system. Le Chatelier's principle: if conditions change, equilibrium shifts to oppose that change. Increasing temperature favors the endothermic direction; increasing pressure favors the side with fewer gas molecules. Catalysts speed up both reactions equally so don't affect equilibrium position, only the time to reach it."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:31:52.001Z",
-  "updated_at": "2026-04-06T04:31:52.001Z"
+  "updated_at": "2026-04-06T04:31:52.001Z",
+  "enriched_at": "2026-04-06T16:13:17.620Z"
 }

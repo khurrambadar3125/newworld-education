@@ -86,12 +86,38 @@
       "Practice drawing and labeling the research process diagram - often worth 3-4 marks"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Research Process Flowchart showing: Research Question → Hypothesis → Choose Method → Select Sample → Collect Data → Analyze Results → Draw Conclusions. Include feedback loops showing how conclusions can lead to new research questions."
+    "keyDiagramDescription": "Research Process Flowchart showing: Research Question → Hypothesis → Choose Method → Select Sample → Collect Data → Analyze Results → Draw Conclusions. Include feedback loops showing how conclusions can lead to new research questions.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q1 (15 marks) — they asked students to evaluate the view that quantitative research methods have more strengths than limitations",
+      "This topic was tested in O/N 2022 P2 Q2 (4 marks) — they asked students to describe two quantitative research methods",
+      "This topic was tested in M/J 2024 P2 Q3 (15 marks) — they asked students to evaluate the view that natural science methods should not be used in sociological research",
+      "This topic was tested in O/N 2023 P2 Q4 (8 marks) — they asked students to explain research methods and evidence to investigate migration patterns",
+      "This topic was tested in M/J 2022 P1 Source A (2 marks) — they asked students to identify two research methods used in a study"
+    ],
+    "workedExample": {
+      "question": "Explain the research methods and evidence you would choose to investigate why people migrate from one country to another. (8 marks)",
+      "steps": [
+        "Step 1: Choose two primary methods with clear sampling strategy (e.g., structured interviews with systematic sampling of recent migrants)",
+        "Step 2: Select one secondary source (e.g., government immigration statistics or UN migration reports)",
+        "Step 3: Explain practical reasons for each choice (interviews allow detailed exploration of personal motivations)",
+        "Step 4: Justify methods in context of migration research (statistics show patterns, interviews reveal individual experiences)"
+      ],
+      "answer": "I would use structured interviews with a systematic sample of recent migrants to gather detailed data about their personal reasons for migration, such as economic opportunities or family reunification. This method allows for standardized comparison while capturing individual experiences. I would also use government immigration statistics as secondary data to identify migration patterns and trends over time, providing quantitative context. Additionally, I would conduct a postal questionnaire survey to reach a larger sample across different locations, using stratified sampling by country of origin to ensure representation of diverse migration experiences.",
+      "markScheme": "2 marks for each primary method with sampling (4 marks total), 1 mark for secondary source, 3 marks for clear reasons and context linking methods to migration research"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to distinguish between structured and unstructured interviews' — always specify the type of interview and explain why that structure suits your research aim",
+      "Examiner Report 2024: 'Candidates often described methods without linking to sampling techniques' — always mention specific sampling methods (random, systematic, stratified) when discussing primary research",
+      "Examiner Report 2022: 'Students frequently confused research methods with data types' — remember that questionnaires and interviews are methods, while quantitative and qualitative describe the type of data they produce"
+    ],
+    "keyDiagram": "Students must be able to draw the Research Methods Classification Chart: A hierarchical diagram showing Primary Methods (top branch splitting into Quantitative: questionnaires, structured interviews, experiments; and Qualitative: unstructured interviews, participant observation, ethnography) and Secondary Methods (bottom branch splitting into Quantitative: official statistics, existing surveys; and Qualitative: personal documents, media analysis). Include sampling types (random, systematic, stratified, opportunity) as sub-branches under primary methods.",
+    "quickRecap": "Research methods divide into primary (collect new data) and secondary (use existing data). Primary methods include quantitative (questionnaires, structured interviews, experiments) and qualitative (unstructured interviews, participant observation). Always specify sampling technique and link method choice to research aims. Secondary sources include official statistics, documents, and media content."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:12:57.517Z",
-  "updated_at": "2026-04-06T04:12:57.519Z"
+  "updated_at": "2026-04-06T04:12:57.519Z",
+  "enriched_at": "2026-04-06T16:27:29.211Z"
 }

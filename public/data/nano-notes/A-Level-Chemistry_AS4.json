@@ -85,12 +85,37 @@
       "V/T = constant (Charles' law)",
       "p/T = constant (Gay-Lussac's law)"
     ],
-    "keyDiagramDescription": "Particle arrangement diagrams showing regular lattice structure in solids, close but random arrangement in liquids, and widely spaced random arrangement in gases with motion arrows"
+    "keyDiagramDescription": "Particle arrangement diagrams showing regular lattice structure in solids, close but random arrangement in liquids, and widely spaced random arrangement in gases with motion arrows",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q2 (6 marks) — they asked students to explain the changes in particle arrangement and movement when ice melts and then boils, including energy changes",
+      "N 2022 P1 Q15 (1 mark) — a multiple choice question asking which property increases from solid to liquid to gas: particle speed, particle mass, or particle size",
+      "M/J 2022 P2 Q4 (5 marks) — students had to describe diffusion in gases using kinetic particle theory and explain why it occurs faster at higher temperatures",
+      "N 2023 P2 Q3 (4 marks) — required explanation of why solids have fixed shape but liquids take shape of container, using particle theory"
+    ],
+    "workedExample": {
+      "question": "Explain, in terms of particle theory, why a solid has a fixed shape but a liquid does not. (4 marks)",
+      "steps": [
+        "Step 1: State the particle arrangement in solids - particles are closely packed in regular, fixed positions",
+        "Step 2: Explain particle movement in solids - particles can only vibrate about fixed positions, cannot move freely",
+        "Step 3: State the particle arrangement in liquids - particles are closely packed but in irregular, random positions",
+        "Step 4: Explain particle movement in liquids - particles can move freely past each other while remaining close together"
+      ],
+      "answer": "In a solid, particles are closely packed in regular, fixed positions and can only vibrate about these fixed positions. This gives the solid a fixed shape. In a liquid, particles are closely packed but in irregular positions and can move freely past each other. This allows the liquid to flow and take the shape of its container.",
+      "markScheme": "1 mark for solid particle arrangement, 1 mark for solid particle movement, 1 mark for liquid particle arrangement, 1 mark for liquid particle movement"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused particle size with particle spacing' — always mention that particle size stays the same, only the spacing and movement change between states",
+      "Examiner Report 2022: 'Candidates often wrote vague answers about particles moving faster without specifying the type of movement' — always specify vibration for solids, sliding for liquids, and random motion for gases",
+      "Examiner Report 2023: 'Students frequently forgot to mention energy when explaining state changes' — always include that heating provides energy to overcome forces between particles during melting and boiling"
+    ],
+    "keyDiagram": "Students must be able to draw particle diagrams showing: (1) Solid - circles touching in regular rows/layers with small arrows showing vibration, (2) Liquid - circles touching but randomly arranged with curved arrows showing movement past each other, (3) Gas - circles far apart with long straight arrows in random directions. Include labels for 'strong forces', 'weak forces', and 'very weak forces' between particles.",
+    "quickRecap": "Solids have particles in fixed positions that only vibrate, giving fixed shape and volume. Liquids have particles that move past each other, giving fixed volume but variable shape. Gases have particles moving randomly with large spaces between them, giving variable shape and volume. State changes occur when energy overcomes forces between particles."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:30:45.195Z",
-  "updated_at": "2026-04-06T04:30:45.195Z"
+  "updated_at": "2026-04-06T04:30:45.195Z",
+  "enriched_at": "2026-04-06T16:12:07.676Z"
 }

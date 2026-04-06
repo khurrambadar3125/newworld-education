@@ -88,12 +88,38 @@
       "ln k = ln A - Ea/RT",
       "t₁/₂ = 0.693/k (first order only)"
     ],
-    "keyDiagramDescription": "Boltzmann distribution curve showing number of particles vs kinetic energy, with vertical line at Ea and shaded area representing particles with sufficient energy to react. Show how curve shifts right at higher temperature."
+    "keyDiagramDescription": "Boltzmann distribution curve showing number of particles vs kinetic energy, with vertical line at Ea and shaded area representing particles with sufficient energy to react. Show how curve shifts right at higher temperature.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how temperature and concentration affect reaction rate using collision theory",
+      "N 2022 P1 Q15 (1 mark) — multiple choice question asking which factor does NOT affect reaction rate (answer: total volume of products)",
+      "M/J 2022 P2 Q6c (4 marks) — students had to draw and label energy profile diagrams for catalyzed vs uncatalyzed reactions",
+      "N 2023 P2 Q3b (5 marks) — experimental design question about measuring rate of reaction between magnesium and hydrochloric acid",
+      "M/J 2021 P2 Q5a (3 marks) — definition of catalyst and explanation of how it increases reaction rate"
+    ],
+    "workedExample": {
+      "question": "Explain why increasing temperature from 25°C to 35°C approximately doubles the rate of reaction between zinc and sulfuric acid. Use collision theory in your answer. (4 marks)",
+      "steps": [
+        "Step 1: State that reaction rate depends on frequency of successful collisions between reactant particles",
+        "Step 2: Explain that increasing temperature gives particles more kinetic energy so they move faster",
+        "Step 3: Link faster movement to more frequent collisions between zinc atoms and H+ ions",
+        "Step 4: State that more particles now have energy ≥ activation energy, so more collisions are successful"
+      ],
+      "answer": "According to collision theory, reaction rate depends on the frequency of successful collisions between reactant particles. When temperature increases from 25°C to 35°C, the zinc atoms and H+ ions gain more kinetic energy and move faster. This leads to more frequent collisions between the reactants. More importantly, a greater proportion of particles now possess energy equal to or greater than the activation energy, meaning more collisions result in successful reactions. Therefore the reaction rate approximately doubles.",
+      "markScheme": "1 mark for collision theory reference, 1 mark for increased kinetic energy/faster movement, 1 mark for more frequent collisions, 1 mark for more particles having activation energy"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused concentration with pressure' — always specify that concentration affects reaction rate for solutions, while pressure affects gaseous reactions",
+      "Examiner Report 2022: 'Students often wrote that catalysts are used up in reactions' — always state that catalysts remain chemically unchanged and can be recovered after the reaction",
+      "Examiner Report 2023: 'Weak responses just stated factors without explanation' — always link your answer to collision theory and mention activation energy when explaining how factors affect reaction rate"
+    ],
+    "keyDiagram": "Energy profile diagram showing: x-axis labeled 'Reaction progress/time', y-axis labeled 'Energy'. Draw reactants energy level, products energy level (lower for exothermic), activation energy peak. For catalysts, draw second curve with lower activation energy peak but same start and end points. Label: reactants, products, activation energy (Ea), activation energy with catalyst (lower), and energy change (ΔH). Include arrows showing energy differences.",
+    "quickRecap": "Reaction rate depends on collision frequency and activation energy. Temperature, concentration, pressure (gases), surface area, and catalysts all affect rate via collision theory. Higher temperature = more kinetic energy = more successful collisions. Catalysts lower activation energy without being consumed. Always explain using particles, collisions, and activation energy in exam answers."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:32:13.181Z",
-  "updated_at": "2026-04-06T04:32:13.181Z"
+  "updated_at": "2026-04-06T04:32:13.181Z",
+  "enriched_at": "2026-04-06T16:13:40.483Z"
 }

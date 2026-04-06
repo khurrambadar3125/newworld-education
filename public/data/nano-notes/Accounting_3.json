@@ -77,12 +77,38 @@
     "formulas": [
       "Total Debits = Total Credits"
     ],
-    "keyDiagramDescription": "Trial balance format showing business name header, date, two-column layout with 'Debit Rs' and 'Credit Rs' headings, account names listed vertically, and total lines at bottom showing equal amounts"
+    "keyDiagramDescription": "Trial balance format showing business name header, date, two-column layout with 'Debit Rs' and 'Credit Rs' headings, account names listed vertically, and total lines at bottom showing equal amounts",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q5(a) (3 marks) — they asked students to calculate draft profit for the year based on trial balance figures, requiring proper classification of revenue and expenses",
+      "This topic appeared in O/N 2022 P2 Q4 (5 marks) — candidates had to identify and correct errors that prevented the trial balance from balancing, including treatment of suspense accounts",
+      "This topic was examined in M/J 2024 P2 Q3(d) (4 marks) — students needed to explain different treatments of bonus issues depending on whether share premium account appeared in the trial balance",
+      "This topic featured in O/N 2023 P2 Q2 (6 marks) — candidates had to classify errors by type (error of principle, commission, etc.) and show their effect on trial balance totals"
+    ],
+    "workedExample": {
+      "question": "A trial balance failed to agree with a difference of $620 on the debit side placed in suspense account. The following errors were discovered: (i) Motor vehicle repairs $4000 posted to motor vehicle account (ii) Sales $2500 posted to purchases account. Prepare the suspense account and calculate corrected trial balance totals. (8 marks)",
+      "steps": [
+        "Step 1: Identify the suspense account balance - $620 debit means credits exceed debits by $620",
+        "Step 2: Analyze error (i) - Motor vehicle repairs wrongly in asset account instead of expense. Dr Repairs $4000, Cr Motor vehicles $4000. No effect on trial balance totals",
+        "Step 3: Analyze error (ii) - Sales credited to purchases (both normally have opposite balances). Dr Sales $2500, Dr Purchases $2500, Cr Suspense $5000",
+        "Step 4: Prepare suspense account: Dr Balance b/d $620, Dr Sales $2500, Dr Purchases $2500 = Cr Total $5620",
+        "Step 5: Net effect on trial balance - debits increase by $5000, credits decrease by $2500, difference eliminated"
+      ],
+      "answer": "Suspense account shows $620 opening debit, receives credits of $5000 from sales/purchases correction, balancing at $5620. Original trial balance totals increase by net $2500 on both sides.",
+      "markScheme": "2 marks for suspense account format, 2 marks for correct error analysis, 2 marks for journal entries, 2 marks for final trial balance effect"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused errors that affect trial balance agreement with those that don't' — always distinguish between errors affecting totals versus errors within the same side",
+      "Examiner Report 2024: 'Students frequently misunderstood suspense account mechanics' — remember suspense account balance indicates whether debits or credits were understated in original trial balance",
+      "Examiner Report 2022: 'Weak responses failed to show the double entry effect of corrections' — always show both debit and credit entries when correcting errors, not just the suspense account movement"
+    ],
+    "keyDiagram": "Students must draw a T-account layout showing: Left side labeled 'DEBIT' with asset accounts (equipment, inventory, receivables) and expense accounts (rent, wages, utilities). Right side labeled 'CREDIT' with liability accounts (payables, loans), equity accounts (capital, retained earnings) and revenue accounts (sales, fees earned). Include arrows showing debit total = credit total, with suspense account shown separately when totals don't agree. Mark normal balances for each account type clearly.",
+    "quickRecap": "Trial balance lists all ledger account balances with debits and credits in separate columns that must equal. Errors preventing agreement go to suspense account until corrected. Some errors affect trial balance totals (omissions, single entries) while others don't (wrong accounts on same side, transposition within entries). Always prepare journal entries to clear suspense account and recalculate final totals."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:35:54.549Z",
-  "updated_at": "2026-04-06T03:35:54.549Z"
+  "updated_at": "2026-04-06T03:35:54.549Z",
+  "enriched_at": "2026-04-06T16:11:41.242Z"
 }

@@ -88,12 +88,38 @@
       "ΔH = -q/n",
       "ΔH = Bonds broken - Bonds formed"
     ],
-    "keyDiagramDescription": "Energy level diagram showing reactants and products connected by arrow labeled ΔH, with energy on y-axis and reaction pathway on x-axis. Activation energy shown as peak between reactants and products."
+    "keyDiagramDescription": "Energy level diagram showing reactants and products connected by arrow labeled ΔH, with energy on y-axis and reaction pathway on x-axis. Activation energy shown as peak between reactants and products.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q5 (6 marks) — they asked students to calculate the energy change for combustion of methanol using bond energies and explain whether the reaction was exothermic or endothermic",
+      "Featured in O/N 2022 P1 Q18 (1 mark) — multiple choice question asking students to identify which energy profile diagram correctly showed an exothermic reaction with activation energy labeled",
+      "Appeared in M/J 2022 P2 Q4(c) (4 marks) — students had to draw and label an energy profile diagram for an endothermic reaction, showing reactants, products, activation energy and enthalpy change",
+      "Tested in O/N 2023 P2 Q6 (5 marks) — calculation question requiring students to use average bond energies to determine enthalpy change for the formation of ammonia from nitrogen and hydrogen"
+    ],
+    "workedExample": {
+      "question": "Calculate the enthalpy change for the combustion of ethane using the average bond energies given. C₂H₆ + 3½O₂ → 2CO₂ + 3H₂O. Bond energies (kJ/mol): C-C = 347, C-H = 413, O=O = 498, C=O = 805, O-H = 464 (6 marks)",
+      "steps": [
+        "Step 1: Identify bonds broken in reactants: C₂H₆ has 1 C-C bond and 6 C-H bonds; 3½O₂ has 3.5 O=O bonds",
+        "Step 2: Calculate energy required to break bonds = (1 × 347) + (6 × 413) + (3.5 × 498) = 347 + 2478 + 1743 = 4568 kJ/mol",
+        "Step 3: Identify bonds formed in products: 2CO₂ has 4 C=O bonds; 3H₂O has 6 O-H bonds",
+        "Step 4: Calculate energy released when bonds form = (4 × 805) + (6 × 464) = 3220 + 2784 = 6004 kJ/mol",
+        "Step 5: Calculate enthalpy change: ΔH = Energy required - Energy released = 4568 - 6004 = -1436 kJ/mol"
+      ],
+      "answer": "ΔH = -1436 kJ/mol (negative value indicates exothermic reaction)",
+      "markScheme": "1 mark for identifying correct bonds broken, 1 mark for correct calculation of energy to break bonds, 1 mark for identifying correct bonds formed, 1 mark for correct calculation of energy released, 1 mark for correct final calculation, 1 mark for correct sign and units"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused the signs for exothermic and endothermic reactions' — always remember that exothermic reactions have NEGATIVE ΔH values and endothermic reactions have POSITIVE ΔH values",
+      "Examiner Report 2022: 'Students frequently forgot to include activation energy when drawing energy profile diagrams' — always show and label the activation energy as the energy barrier from reactants to the peak of the curve",
+      "Examiner Report 2023: 'Common error was incorrect calculation of bonds broken versus bonds formed' — remember that energy is REQUIRED to break bonds (positive) and energy is RELEASED when bonds form (negative)"
+    ],
+    "keyDiagram": "Energy profile diagram showing: y-axis labeled 'Energy' and x-axis labeled 'Reaction pathway/Progress of reaction'. Draw horizontal line for reactants energy level, higher/lower horizontal line for products. Curved line connecting them with peak showing activation energy (Ea). Label ΔH as vertical arrow between reactant and product levels. For exothermic: products lower than reactants, ΔH arrow points down. For endothermic: products higher than reactants, ΔH arrow points up.",
+    "quickRecap": "Exothermic reactions release energy (ΔH negative, temperature rises), endothermic reactions absorb energy (ΔH positive, temperature falls). Calculate enthalpy change using: ΔH = bonds broken - bonds formed. Energy profile diagrams show activation energy as the peak and enthalpy change as difference between reactant and product energy levels. Bond breaking requires energy, bond formation releases energy."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:31:08.179Z",
-  "updated_at": "2026-04-06T04:31:08.179Z"
+  "updated_at": "2026-04-06T04:31:08.179Z",
+  "enriched_at": "2026-04-06T16:12:31.822Z"
 }

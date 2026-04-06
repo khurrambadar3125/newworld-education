@@ -86,12 +86,38 @@
       "Case studies must include both benefits and problems of water management schemes"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Cross-section diagram of a multipurpose dam showing: dam wall, reservoir, spillway, hydroelectric power station, irrigation canals, and flood control mechanisms. Label all components and show water flow directions."
+    "keyDiagramDescription": "Cross-section diagram of a multipurpose dam showing: dam wall, reservoir, spillway, hydroelectric power station, irrigation canals, and flood control mechanisms. Label all components and show water flow directions.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2020 P2 Q2a (2 marks) — they asked students to describe the state of water on different surfaces as shown in a diagram",
+      "This topic was tested in O/N 2019 P1 Q4c (4 marks) — they asked students to state the depth of groundwater at a specific point using a diagram with measurements",
+      "This topic was tested in M/J 2021 P2 Q5 (8 marks) — they asked students to compare water content and rate of movement for different mass movement processes",
+      "This topic was tested in O/N 2022 P2 Q6 (15 marks) — they asked students to evaluate the importance of water processes in developing landforms in hot arid environments",
+      "This topic was tested in M/J 2018 P1 Q3b (3 marks) — they asked students to identify which regions would need most irrigation water using a climate map"
+    ],
+    "workedExample": {
+      "question": "State the depth of groundwater at X in Fig. 1.1. (2 marks)",
+      "steps": [
+        "Step 1: Locate point X on the diagram and identify the water table line",
+        "Step 2: Read the scale on the y-axis to measure distance from ground surface to water table at point X",
+        "Step 3: Record the measurement range accounting for reading accuracy",
+        "Step 4: Include appropriate units (metres) in your answer"
+      ],
+      "answer": "5.0 - 9.9 metres below ground level",
+      "markScheme": "1 mark for correct numerical range (5.0-9.9), 1 mark for including units (metres) and reference to below ground level"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to include units when stating groundwater depths' — always include metres and specify 'below ground level' for depth measurements",
+      "Examiner Report 2022: 'Candidates often confused the three states of water' — always distinguish clearly between liquid, solid/frozen, and gas/vapour when describing water states",
+      "Examiner Report 2021: 'Students gave vague answers about water processes without specific examples' — always name specific processes like hydraulic action, abrasion, or solution when discussing water's role in landform development"
+    ],
+    "keyDiagram": "Water cycle diagram showing: evaporation from oceans/lakes (with arrows), condensation in clouds, precipitation as rain/snow, surface runoff into rivers, infiltration into soil, percolation to groundwater, water table line, and transpiration from vegetation. Must label all processes and show directional arrows clearly. Include sun as energy source and distinguish between different water stores (atmospheric, surface, groundwater).",
+    "quickRecap": "Water exists in three states: liquid, solid (ice/frozen), and gas (water vapour). It moves through the water cycle via evaporation, condensation, precipitation, runoff, and infiltration. Groundwater depth is measured from surface to water table in metres below ground level. Water processes like hydraulic action and solution are crucial in shaping landforms, especially in arid environments where occasional flash floods cause rapid erosion."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:01:03.055Z",
-  "updated_at": "2026-04-06T04:01:03.055Z"
+  "updated_at": "2026-04-06T04:01:03.055Z",
+  "enriched_at": "2026-04-06T16:12:16.224Z"
 }

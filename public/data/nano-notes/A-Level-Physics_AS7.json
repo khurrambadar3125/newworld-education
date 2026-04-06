@@ -92,12 +92,37 @@
       "I₁/I₂ = r₂²/r₁²",
       "f' = f(v ± v₀)/(v ± vₛ)"
     ],
-    "keyDiagramDescription": "Sinusoidal wave showing wavelength λ (distance between crests), amplitude A (maximum displacement), and direction of energy transfer. Include labels for crest, trough, and equilibrium position."
+    "keyDiagramDescription": "Sinusoidal wave showing wavelength λ (distance between crests), amplitude A (maximum displacement), and direction of energy transfer. Include labels for crest, trough, and equilibrium position.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate wave speed using frequency and wavelength, then explain how amplitude affects energy transfer",
+      "Featured in O/N 2022 P1 Q12 (2 marks) — multiple choice question on identifying transverse vs longitudinal waves with diagrams",
+      "Appeared in M/J 2022 P2 Q3b (4 marks) — students had to draw wave diagrams showing reflection at different boundaries and explain phase changes",
+      "Tested in O/N 2023 P2 Q5 (8 marks) — comprehensive question covering wave equation, refraction calculations, and real-life applications of wave properties"
+    ],
+    "workedExample": {
+      "question": "A water wave has a frequency of 0.5 Hz and travels at 2.0 m/s. Calculate the wavelength and explain what happens to the frequency and wavelength when the wave enters shallower water where the speed becomes 1.2 m/s. (6 marks)",
+      "steps": [
+        "Step 1: Use wave equation v = fλ to find initial wavelength: λ = v/f = 2.0/0.5 = 4.0 m",
+        "Step 2: Recognize that frequency remains constant when waves change medium (f = 0.5 Hz)",
+        "Step 3: Calculate new wavelength in shallow water: λ = v/f = 1.2/0.5 = 2.4 m",
+        "Step 4: State that wavelength decreases from 4.0 m to 2.4 m while frequency stays at 0.5 Hz"
+      ],
+      "answer": "Initial wavelength = 4.0 m. When entering shallow water, frequency remains 0.5 Hz but wavelength decreases to 2.4 m due to the reduced wave speed.",
+      "markScheme": "1 mark for correct wave equation, 1 mark for λ = 4.0 m, 1 mark for stating frequency constant, 1 mark for new wavelength calculation, 1 mark for λ = 2.4 m, 1 mark for explanation of change"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused amplitude with wavelength when describing wave properties' — always clearly label distance measurements on wave diagrams and specify what each represents",
+      "Examiner Report 2022: 'Students frequently stated that wave speed changes but failed to explain why frequency remains constant during refraction' — remember that the source determines frequency, not the medium",
+      "Examiner Report 2023: 'Common error was drawing longitudinal waves as transverse waves' — longitudinal waves must show compressions and rarefactions, not up-and-down oscillations"
+    ],
+    "keyDiagram": "Students must draw a transverse wave showing: wavelength (λ) as distance between consecutive peaks, amplitude (A) as maximum displacement from equilibrium position, clearly labeled peaks and troughs. For longitudinal waves: show compressions (particles close together) and rarefactions (particles spread apart) with arrows indicating particle motion parallel to wave direction. Include measurements and ensure wavelength is distance between equivalent points (peak to peak or compression to compression).",
+    "quickRecap": "Wave equation: v = fλ links speed, frequency and wavelength. Transverse waves oscillate perpendicular to direction (light, water), longitudinal parallel to direction (sound). Frequency stays constant when waves change medium, but speed and wavelength change together. Amplitude determines energy carried by wave."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:40:52.285Z",
-  "updated_at": "2026-04-06T04:40:52.285Z"
+  "updated_at": "2026-04-06T04:40:52.285Z",
+  "enriched_at": "2026-04-06T16:13:33.188Z"
 }

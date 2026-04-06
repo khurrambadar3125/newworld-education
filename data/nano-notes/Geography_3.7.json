@@ -85,12 +85,38 @@
       "Learn specific statistics about CO2 levels and temperature increases for top band answers"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Greenhouse effect diagram showing solar radiation entering atmosphere, some reflected by clouds, some absorbed by Earth's surface, and infrared radiation trapped by greenhouse gases (CO2, methane, water vapor) with arrows indicating heat being re-radiated back to Earth"
+    "keyDiagramDescription": "Greenhouse effect diagram showing solar radiation entering atmosphere, some reflected by clouds, some absorbed by Earth's surface, and infrared radiation trapped by greenhouse gases (CO2, methane, water vapor) with arrows indicating heat being re-radiated back to Earth",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4a (2 marks) — they asked students to 'Suggest two sources of air pollution (not including traffic) in a major city such as Hanoi'",
+      "This topic appeared in O/N 2022 P2 Q5c (3 marks) — students had to analyze data and determine if results support the hypothesis of a positive correlation between traffic and air pollution",
+      "This was examined in M/J 2024 P1 Q3b (2 marks) — candidates needed to identify non-traffic sources of urban air pollution",
+      "This topic was tested in O/N 2023 P2 Q6a (4 marks) — students analyzed AQI data to explain the relationship between vehicle numbers and air quality",
+      "This appeared in M/J 2022 P2 Q4d (3 marks) — candidates had to suggest sources of air pollution in major cities excluding traffic sources"
+    ],
+    "workedExample": {
+      "question": "Suggest two sources of air pollution (not including traffic) in a major city such as Hanoi. (2 marks)",
+      "steps": [
+        "Step 1: Think of major urban activities that release pollutants into the air, excluding vehicles",
+        "Step 2: Consider industrial activities - factories and power stations burn fossil fuels releasing emissions",
+        "Step 3: Consider domestic activities - heating systems and waste burning in urban areas",
+        "Step 4: Select two clear, distinct sources that are common in major cities"
+      ],
+      "answer": "Factories/industry releasing emissions from manufacturing processes; Power stations burning fossil fuels to generate electricity",
+      "markScheme": "1 mark for each valid non-traffic source of air pollution. Accept: factories/industry, power stations, construction sites, domestic heating, burning rubbish, methane from waste"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates wrote traffic-related answers despite the question specifically excluding traffic' — always read questions carefully and avoid mentioning cars, buses, or vehicles when traffic is excluded",
+      "Examiner Report 2022: 'Students often gave vague answers like 'pollution from buildings' without specifying the actual source' — always be specific about the activity causing pollution, such as 'construction dust' rather than just 'construction'",
+      "Examiner Report 2024: 'Candidates frequently confused sources of air pollution with effects of air pollution' — focus on what creates the pollution (factories, power stations) not what it causes (health problems, acid rain)"
+    ],
+    "keyDiagram": "Urban Air Pollution Sources Diagram: Draw a city skyline showing a factory with smoke stacks emitting dark smoke, a power station with cooling towers, construction cranes with dust clouds, residential areas with chimneys, and waste disposal sites with methane emissions. Label each source clearly and use arrows to show pollutants entering the atmosphere. Include AQI scale on the side showing pollution levels from good (0-50) to hazardous (300+).",
+    "quickRecap": "Environmental risks from air pollution come from multiple urban sources beyond traffic. Key non-traffic sources include factories/industry, power stations, construction sites, domestic heating, and waste burning. When analyzing pollution data, look for positive correlations between pollution sources and air quality measurements. Always read questions carefully to avoid including excluded sources like traffic."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:01:25.651Z",
-  "updated_at": "2026-04-06T04:01:25.651Z"
+  "updated_at": "2026-04-06T04:01:25.651Z",
+  "enriched_at": "2026-04-06T16:12:36.273Z"
 }

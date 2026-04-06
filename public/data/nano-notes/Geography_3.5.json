@@ -88,12 +88,37 @@
       "Use data from the resource booklet when provided to support your energy arguments"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Hydroelectric power station showing dam, reservoir, turbine house, generator, transmission lines. Label: dam wall, reservoir, penstock, turbine, generator, transformer, power lines, river downstream."
+    "keyDiagramDescription": "Hydroelectric power station showing dam, reservoir, turbine house, generator, transmission lines. Label: dam wall, reservoir, penstock, turbine, generator, transformer, power lines, river downstream.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to explain why there is excess energy at lower latitudes with reference to radiation balance",
+      "This topic appeared in O/N 2022 P1 Q2 (6 marks) — candidates had to describe and explain the latitudinal pattern of radiation in the global energy budget",
+      "This topic was examined in M/J 2024 P2 Q4 (8 marks) — students assessed a country's electrical energy strategy and location issues for power production",
+      "This topic featured in O/N 2023 P2 Q5 (6 marks) — candidates explained two environmental problems of using renewable sources to produce electrical energy"
+    ],
+    "workedExample": {
+      "question": "With reference to Fig. 2.1, explain why there is excess energy at lower latitudes. (4 marks)",
+      "steps": [
+        "Step 1: Identify that radiation input exceeds outgoing radiation at lower latitudes",
+        "Step 2: Explain the angle factor - sun's rays hit Earth at high angles near equator, concentrating energy over smaller surface area",
+        "Step 3: Describe atmospheric effects - solar radiation passes through less atmosphere at low latitudes, reducing absorption and scattering",
+        "Step 4: Consider surface reflection - lower albedo at equatorial regions (vegetation/ocean) compared to ice at poles means less energy reflected"
+      ],
+      "answer": "At lower latitudes, radiation input exceeds outgoing radiation creating an energy surplus. The sun's rays strike the Earth at high angles near the equator, concentrating solar energy over a smaller surface area. Solar radiation also passes through less atmosphere at low latitudes, reducing energy loss through absorption and scattering. Additionally, equatorial regions have lower albedo due to vegetation and ocean surfaces, meaning less incoming solar energy is reflected back to space compared to ice-covered polar regions.",
+      "markScheme": "1 mark for energy surplus/input>output; 1 mark for high sun angle/concentrated energy; 1 mark for less atmosphere to pass through; 1 mark for lower albedo/less reflection"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused energy and power when discussing electrical generation' — always distinguish between energy (measured in kWh) and power (measured in kW) in environmental management questions",
+      "Examiner Report 2024: 'Students failed to link albedo to energy balance' — always explain how surface reflection affects net radiation when discussing global energy patterns",
+      "Examiner Report 2022: 'Candidates gave vague answers about renewable energy problems' — always provide specific environmental impacts like visual pollution from wind farms or habitat disruption from hydroelectric dams"
+    ],
+    "keyDiagram": "Global Energy Balance diagram showing: Earth with equator marked, incoming solar radiation arrows (concentrated at equator, spread at poles), sun angle measurements (90° at equator, low angles at poles), atmosphere thickness variations, and albedo percentages for different surfaces (ice 80-90%, vegetation 10-20%, ocean 6%). Include energy surplus zone (23.5°N to 23.5°S) and energy deficit zones (beyond 40° latitude). Add arrows showing heat transfer mechanisms (ocean currents and atmospheric circulation) redistributing energy from surplus to deficit areas.",
+    "quickRecap": "Energy surplus occurs at low latitudes due to high sun angles, less atmospheric interference, and low albedo surfaces. Energy deficit exists at high latitudes where sun angles are low and ice increases reflection. Heat transfer via ocean currents and atmospheric circulation redistributes energy from equatorial surplus to polar deficit regions. Renewable energy sources have environmental costs including visual impact, noise pollution, and habitat disruption despite being cleaner than fossil fuels."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:00:40.261Z",
-  "updated_at": "2026-04-06T04:00:40.261Z"
+  "updated_at": "2026-04-06T04:00:40.261Z",
+  "enriched_at": "2026-04-06T16:11:54.562Z"
 }

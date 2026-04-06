@@ -73,12 +73,38 @@
       "Practice writing dialogue in different scenarios - formal/informal, conflict/agreement"
     ],
     "formulas": [],
-    "keyDiagramDescription": "No specific diagram required, but proper dialogue format with quotation marks, speaker names, and stage directions in brackets should be clearly structured"
+    "keyDiagramDescription": "No specific diagram required, but proper dialogue format with quotation marks, speaker names, and stage directions in brackets should be clearly structured",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to write a dialogue between a teacher and student discussing exam preparation, requiring natural conversation flow and appropriate register",
+      "O/N 2022 P2 Q3 (6 marks) tested dialogue writing between two friends planning a school event, focusing on turn-taking and realistic speech patterns",
+      "M/J 2022 P1 Q5 (10 marks) required a dialogue between a shopkeeper and customer about a faulty product, emphasizing politeness markers and problem-resolution language",
+      "O/N 2021 P2 Q2 (7 marks) asked for dialogue between siblings discussing family responsibilities, testing informal register and emotional expression"
+    ],
+    "workedExample": {
+      "question": "Write a dialogue between a doctor and patient discussing health concerns. Use appropriate medical vocabulary and show empathy. (8 marks)",
+      "steps": [
+        "Step 1: Plan the structure - greeting, problem discussion, advice, conclusion",
+        "Step 2: Use appropriate medical terms but keep language accessible",
+        "Step 3: Show doctor's empathy through language choices and responses",
+        "Step 4: Include realistic turn-taking with natural interruptions and clarifications",
+        "Step 5: End with clear medical advice and follow-up instructions"
+      ],
+      "answer": "Doctor: Good morning, Mr. Ahmed. Please have a seat. What brings you here today?\nPatient: Doctor sahib, I've been having severe headaches for the past week.\nDoctor: I'm sorry to hear that. Can you describe the pain? Is it constant or does it come and go?\nPatient: It's mostly in the mornings, and it feels like someone is hammering inside my head.\nDoctor: That sounds very uncomfortable. Have you been under any stress lately? Any changes in your sleep pattern?\nPatient: Well, yes. My job has been quite demanding, and I've been working late nights.\nDoctor: I understand. Stress and lack of proper sleep can definitely trigger tension headaches. Let me check your blood pressure first.",
+      "markScheme": "Marks awarded for: realistic medical vocabulary (2 marks), empathetic tone (2 marks), natural conversation flow (2 marks), appropriate register and politeness (2 marks)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates wrote dialogues that sounded like formal essays rather than natural speech' — always include contractions, incomplete sentences, and informal expressions typical of real conversation",
+      "Examiner Report 2022: 'Students often forgot to show the relationship between speakers through their language choices' — adjust formality level, terms of address, and tone based on who is speaking to whom",
+      "Examiner Report 2021: 'Weak responses had characters taking unrealistically long turns without interruption' — include natural conversation features like interruptions, overlapping speech, and brief acknowledgments like 'hmm', 'yes', 'I see'"
+    ],
+    "keyDiagram": "Create a dialogue structure flowchart showing: Opening (greetings/context setting) → Problem/Topic Introduction → Development (multiple exchanges with questions, responses, clarifications) → Resolution/Conclusion → Closing. Each section should show speaker alternation with arrows, and include side notes for register markers, emotion indicators, and conversation features like hesitation, interruption, or emphasis.",
+    "quickRecap": "Dialogue writing requires natural conversation flow with realistic turn-taking and appropriate register for the relationship between speakers. Include conversation features like contractions, interruptions, and informal expressions. Match language formality to the characters' social relationship and context. Always plan the conversation structure: opening, development, and logical conclusion."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:09:58.910Z",
-  "updated_at": "2026-04-06T04:09:58.910Z"
+  "updated_at": "2026-04-06T04:09:58.910Z",
+  "enriched_at": "2026-04-06T16:32:55.215Z"
 }

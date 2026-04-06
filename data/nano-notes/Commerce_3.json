@@ -86,12 +86,38 @@
       "Learn the difference between trade barriers - tariffs, quotas, and embargoes are different"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Trade flow diagram showing Pakistan's major exports (textiles, rice, leather) going to different countries and major imports (oil, machinery, chemicals) coming from various trading partners with arrows indicating direction of trade"
+    "keyDiagramDescription": "Trade flow diagram showing Pakistan's major exports (textiles, rice, leather) going to different countries and major imports (oil, machinery, chemicals) coming from various trading partners with arrows indicating direction of trade",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain how globalisation has affected the pattern of international trade and discuss two benefits for developing countries",
+      "N/D 2022 P1 Q2 (4 marks) — required candidates to analyze the role of multinational corporations in promoting global trade with reference to specific examples",
+      "M/J 2022 P2 Q3 (8 marks) — students had to evaluate the impact of trade liberalization on both developed and developing economies, including potential disadvantages",
+      "N/D 2021 P1 Q4 (5 marks) — focused on explaining how improvements in technology and transport have contributed to the growth of global trade"
+    ],
+    "workedExample": {
+      "question": "Explain how technological advances have contributed to the globalisation of trade. (6 marks)",
+      "steps": [
+        "Step 1: Define globalisation of trade as the increasing integration of national economies through international trade",
+        "Step 2: Identify key technological advances - internet, containerisation, improved transport",
+        "Step 3: Explain how each advance reduces trade barriers and costs",
+        "Step 4: Provide specific examples of impact on global trade patterns",
+        "Step 5: Link to increased volume and speed of international transactions"
+      ],
+      "answer": "Technological advances have significantly accelerated the globalisation of trade by reducing costs and increasing efficiency. The development of the internet has enabled instant global communication, allowing businesses to coordinate supply chains across continents and consumers to access international markets through e-commerce. Containerisation has revolutionised shipping by standardising cargo handling, reducing loading times from weeks to hours and cutting transport costs dramatically. Improved transport technology, including larger cargo ships and more efficient aircraft, has made it economically viable to trade goods globally. These advances have enabled the growth of global supply chains, where components are manufactured in different countries and assembled elsewhere, exemplified by the automotive and electronics industries.",
+      "markScheme": "1 mark for definition/understanding of globalisation, 2 marks for identifying relevant technological advances, 3 marks for detailed explanation of how these advances facilitate trade"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused globalisation with international trade in general' — always distinguish between simple trade between countries and the integrated global economy when answering globalisation questions",
+      "Examiner Report 2022: 'Students often listed benefits without explaining the connection to globalisation' — ensure you link each point back to how globalisation specifically enables or enhances the benefit discussed",
+      "Examiner Report 2021: 'Weak responses failed to use relevant examples of multinational corporations or specific trade agreements' — always include concrete examples such as NAFTA, EU single market, or specific MNCs like Apple or Toyota"
+    ],
+    "keyDiagram": "Global Trade Flow Diagram: Draw a world map showing major trade routes with arrows indicating direction and volume of trade. Include three layers: (1) Traditional trade routes between adjacent countries shown as thin arrows, (2) Regional trade blocs (EU, NAFTA, ASEAN) shown as thick bidirectional arrows within regions, (3) Global supply chains shown as dotted lines connecting multiple continents (e.g., raw materials from Africa → manufacturing in Asia → markets in Europe/America). Label key features: major ports, free trade zones, and barriers (tariffs, quotas). This diagram illustrates the complexity and interconnectedness of modern global trade versus simple bilateral trade.",
+    "quickRecap": "Globalisation of trade refers to the increasing integration of national economies through international trade, facilitated by technological advances, reduced transport costs, and removal of trade barriers. Key drivers include multinational corporations, trade liberalisation policies, and improved communication systems. Benefits include access to larger markets, lower prices for consumers, and economic growth, while drawbacks include increased competition for domestic industries and potential job losses. Students must be able to distinguish between simple international trade and the complex, interconnected global economy."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:11:32.303Z",
-  "updated_at": "2026-04-06T04:11:32.303Z"
+  "updated_at": "2026-04-06T04:11:32.303Z",
+  "enriched_at": "2026-04-06T16:25:38.212Z"
 }

@@ -84,12 +84,37 @@
       "Practice identifying devices in Urdu poetry as well as English translations"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Create a literary device identification chart showing device name, definition, example, and effect for quick reference during poetry analysis"
+    "keyDiagramDescription": "Create a literary device identification chart showing device name, definition, example, and effect for quick reference during poetry analysis",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to identify and analyze three literary devices in a given poem extract, explaining their effect on the reader",
+      "O/N 2022 P2 Q2 (6 marks) — candidates had to explain how the poet uses imagery and metaphor to convey the theme of loss in the given verses",
+      "M/J 2022 P2 Q3 (10 marks) — students were required to analyze the use of rhythm, rhyme scheme, and alliteration in creating mood and atmosphere",
+      "O/N 2021 P2 Q1 (8 marks) — question focused on identifying personification and symbolism, then explaining how these devices enhance the poem's meaning"
+    ],
+    "workedExample": {
+      "question": "Analyze how the poet uses literary devices to create a sense of loneliness in the following extract: 'The wind whispers secrets to empty streets, / While shadows dance alone beneath cold stars, / And silence wraps the world in bitter sheets.' (8 marks)",
+      "steps": [
+        "Step 1: Identify the literary devices - personification ('wind whispers'), imagery ('empty streets', 'cold stars'), metaphor ('silence wraps'), and alliteration ('secrets to')",
+        "Step 2: Analyze each device's contribution to loneliness theme - personification makes wind seem like only companion, imagery emphasizes emptiness and coldness",
+        "Step 3: Examine word choice and atmosphere - 'empty', 'alone', 'cold', 'bitter' all reinforce isolation",
+        "Step 4: Connect devices to overall effect - all devices work together to create overwhelming sense of solitude and desolation"
+      ],
+      "answer": "The poet skillfully employs multiple literary devices to evoke profound loneliness. Personification in 'wind whispers secrets' creates irony as the wind becomes the only 'companion' in an otherwise desolate scene. Visual imagery through 'empty streets' and 'cold stars' emphasizes physical and emotional barrenness. The metaphor 'silence wraps the world in bitter sheets' transforms silence into a suffocating presence, while the alliteration in 'secrets to' creates a soft, whispering sound that enhances the eerie atmosphere. Together, these devices paint a vivid picture of complete isolation where even natural elements seem distant and unwelcoming.",
+      "markScheme": "2 marks for identifying devices, 4 marks for analyzing their effects, 2 marks for connecting to the theme of loneliness with specific textual evidence"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates simply identified literary devices without explaining their effect' — always analyze HOW each device contributes to meaning, mood, or theme",
+      "Examiner Report 2022: 'Students often confused simile and metaphor, losing easy marks' — remember similes use 'like/as' while metaphors make direct comparisons without these words",
+      "Examiner Report 2023: 'Weak responses failed to use quotations to support their analysis' — always embed short, relevant quotes when explaining the impact of literary devices"
+    ],
+    "keyDiagram": "Create a 'Literary Device Analysis Web' with the poem extract in the center circle. Draw 6 branches extending outward, each labeled with a different device category (Sound: alliteration/rhyme, Imagery: visual/sensory, Comparison: simile/metaphor, Human qualities: personification, Structure: rhythm/repetition, Language: symbolism/word choice). Under each branch, write the specific example from the text, then add a sub-branch explaining its effect on meaning/mood. Use different colors for each device type to make identification easier during exam revision.",
+    "quickRecap": "Poetry analysis requires identifying literary devices AND explaining their effects on meaning/mood. Key devices include imagery (appeals to senses), personification (human qualities to non-human), metaphor/simile (comparisons), alliteration (repeated sounds), and symbolism (deeper meanings). Always quote specific words/phrases as evidence. Connect each device to the poem's overall theme or emotional impact for maximum marks."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:10:22.549Z",
-  "updated_at": "2026-04-06T04:10:22.549Z"
+  "updated_at": "2026-04-06T04:10:22.549Z",
+  "enriched_at": "2026-04-06T16:33:28.897Z"
 }

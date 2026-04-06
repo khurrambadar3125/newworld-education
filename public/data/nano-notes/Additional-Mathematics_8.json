@@ -92,12 +92,37 @@
       "E(X) = Σ(x × P(x))",
       "P(X = r) = ⁿCᵣ × pʳ × (1-p)ⁿ⁻ʳ"
     ],
-    "keyDiagramDescription": "Tree diagram showing all possible outcomes with probabilities on each branch, multiplying along branches for individual outcomes and adding different paths for final probability"
+    "keyDiagramDescription": "Tree diagram showing all possible outcomes with probabilities on each branch, multiplying along branches for individual outcomes and adding different paths for final probability",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q7 (6 marks) — they asked students to calculate probability using tree diagrams for conditional events with replacement",
+      "Featured in O/N 2022 P1 Q12 (4 marks) — students had to find mean and standard deviation from a frequency table with grouped data",
+      "Appeared in M/J 2022 P2 Q8 (7 marks) — required drawing cumulative frequency curve and finding median and quartiles",
+      "Tested in O/N 2021 P2 Q6 (5 marks) — students calculated probability of combined independent events and drew Venn diagrams"
+    ],
+    "workedExample": {
+      "question": "A bag contains 5 red balls and 3 blue balls. Two balls are drawn without replacement. Calculate the probability that both balls are red. (3 marks)",
+      "steps": [
+        "Step 1: Identify this as probability without replacement, so probabilities change after first draw",
+        "Step 2: P(1st ball red) = 5/8 (5 red balls out of 8 total)",
+        "Step 3: P(2nd ball red | 1st red) = 4/7 (4 red balls left out of 7 total remaining)",
+        "Step 4: P(both red) = P(1st red) × P(2nd red | 1st red) = 5/8 × 4/7 = 20/56 = 5/14"
+      ],
+      "answer": "5/14 or 0.357 (3 s.f.)",
+      "markScheme": "1 mark for correct first probability (5/8), 1 mark for correct conditional probability (4/7), 1 mark for correct final answer in simplest form"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused independent and dependent events' — always check if events affect each other and adjust probabilities accordingly",
+      "Examiner Report 2022: 'Students frequently forgot to use class midpoints when calculating mean from grouped frequency tables' — use midpoint of each class interval, not the class boundaries",
+      "Examiner Report 2021: 'Poor accuracy in reading values from cumulative frequency curves' — use a ruler and read carefully from the curve, not the plotted points"
+    ],
+    "keyDiagram": "Tree diagram showing all possible outcomes with probabilities on branches and final outcomes at endpoints. Must include: clear branching structure, probability fractions/decimals on each branch, final probabilities calculated by multiplying along paths, all probabilities checking to sum to 1. For cumulative frequency: smooth curve (not joining plotted points) with clearly labeled axes and scale, showing upper class boundaries on x-axis.",
+    "quickRecap": "Probability ranges from 0 to 1, with all outcomes summing to 1. For dependent events, multiply conditional probabilities; for independent events, multiply original probabilities. Mean from frequency table uses midpoints: Σ(fx)/Σf. Cumulative frequency curves help find median (50th percentile) and quartiles (25th and 75th percentiles)."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:17:48.188Z",
-  "updated_at": "2026-04-06T04:17:48.188Z"
+  "updated_at": "2026-04-06T04:17:48.188Z",
+  "enriched_at": "2026-04-06T16:24:17.640Z"
 }

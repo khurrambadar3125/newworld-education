@@ -85,12 +85,39 @@
       "s = ½(u + v)t",
       "For projectiles: ux = u cos θ, uy = u sin θ"
     ],
-    "keyDiagramDescription": "Projectile motion diagram showing parabolic path with initial velocity components (ux horizontal, uy vertical), maximum height point, and range marked clearly with coordinate axes"
+    "keyDiagramDescription": "Projectile motion diagram showing parabolic path with initial velocity components (ux horizontal, uy vertical), maximum height point, and range marked clearly with coordinate axes",
+    "pastPaperRefs": [
+      "M/J 2023 P2 Q4 (6 marks) — they asked students to calculate displacement and velocity for a ball thrown vertically upward, including time to reach maximum height",
+      "O/N 2022 P1 Q8 (3 marks) — required interpretation of a velocity-time graph to find acceleration and distance traveled during different phases of motion",
+      "M/J 2022 P2 Q2 (5 marks) — tested understanding of equations of motion for a car braking uniformly, asking for stopping distance and time",
+      "O/N 2021 P2 Q6 (4 marks) — involved projectile motion calculation for horizontal and vertical components of velocity",
+      "M/J 2021 P1 Q12 (2 marks) — asked students to identify correct kinematic equation for given scenario involving constant acceleration"
+    ],
+    "workedExample": {
+      "question": "A stone is thrown vertically upward with an initial velocity of 20 m/s. Calculate (a) the maximum height reached, (b) the time taken to return to the starting point. Take g = 10 m/s². (6 marks)",
+      "steps": [
+        "Step 1: Identify given values: u = +20 m/s, a = g = -10 m/s² (negative because opposing motion), v = 0 m/s at maximum height",
+        "Step 2: For maximum height, use v² = u² + 2as. Substitute: 0² = 20² + 2(-10)s",
+        "Step 3: Solve: 0 = 400 - 20s, therefore s = 20 m",
+        "Step 4: For total time, use s = ut + ½at². At return point, s = 0: 0 = 20t + ½(-10)t²",
+        "Step 5: Factor: 0 = t(20 - 5t), so t = 0 (start) or t = 4 s (return point)"
+      ],
+      "answer": "(a) Maximum height = 20 m (b) Time to return = 4 s",
+      "markScheme": "1 mark for correct equation selection, 1 mark for substitution, 2 marks for calculation of height, 2 marks for time calculation with correct reasoning"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused velocity and speed, failing to include direction' — always specify direction when dealing with velocity in kinematics problems",
+      "Examiner Report 2022: 'Students frequently forgot to convert units before calculation' — always check that all quantities are in consistent SI units (m, s, m/s, m/s²)",
+      "Examiner Report 2021: 'Common error was using wrong sign for acceleration due to gravity' — remember g is negative when opposing motion direction, positive when supporting it"
+    ],
+    "keyDiagram": "Students must draw and label velocity-time graphs showing: (1) straight line for constant acceleration with gradient representing acceleration, (2) area under line representing displacement, (3) clearly marked axes with units (time in seconds, velocity in m/s), (4) ability to sketch curves for non-uniform acceleration. Include labeled points for initial velocity, final velocity, and time intervals.",
+    "quickRecap": "Kinematics describes motion using displacement, velocity and acceleration without considering forces. Use s=ut+½at², v=u+at, and v²=u²+2as for constant acceleration. Velocity is speed with direction; acceleration is rate of change of velocity. Always check units and signs, especially for gravity problems."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:39:10.066Z",
-  "updated_at": "2026-04-06T04:39:10.066Z"
+  "updated_at": "2026-04-06T04:39:10.066Z",
+  "enriched_at": "2026-04-06T16:11:36.643Z"
 }

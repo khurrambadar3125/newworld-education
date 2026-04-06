@@ -89,12 +89,38 @@
       "Distance between adjacent nodes = λ/2",
       "Distance between adjacent antinodes = λ/2"
     ],
-    "keyDiagramDescription": "Stationary wave diagram showing sinusoidal pattern with clearly marked nodes (N) at zero displacement and antinodes (A) at maximum displacement, with λ/2 spacing between adjacent nodes/antinodes"
+    "keyDiagramDescription": "Stationary wave diagram showing sinusoidal pattern with clearly marked nodes (N) at zero displacement and antinodes (A) at maximum displacement, with λ/2 spacing between adjacent nodes/antinodes",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain why two loudspeakers produce regions of constructive and destructive interference, requiring knowledge of path difference and phase relationships",
+      "N 2022 P1 Q12 (1 mark) — multiple choice question testing understanding of conditions needed for observable interference patterns with coherent sources",
+      "M/J 2022 P2 Q3(b) (4 marks) — students had to calculate positions of maxima and minima for water waves passing through two gaps, using λ and path difference formulas",
+      "N 2023 P2 Q5 (8 marks) — comprehensive question on Young's double slit experiment requiring explanation of bright and dark fringes, plus calculation of fringe spacing",
+      "M/J 2021 P2 Q6(a) (3 marks) — asked students to state conditions for stationary waves and explain how nodes and antinodes form through superposition"
+    ],
+    "workedExample": {
+      "question": "Two coherent sources S1 and S2 are separated by 4.0 cm and emit water waves of wavelength 2.0 cm. Calculate the path difference at point P which is 8.0 cm from S1 and 6.0 cm from S2. State whether constructive or destructive interference occurs at P. (4 marks)",
+      "steps": [
+        "Step 1: Identify the distances from each source to point P: d1 = 8.0 cm from S1, d2 = 6.0 cm from S2",
+        "Step 2: Calculate path difference = |d1 - d2| = |8.0 - 6.0| = 2.0 cm",
+        "Step 3: Compare path difference to wavelength: path difference = 2.0 cm, wavelength λ = 2.0 cm",
+        "Step 4: Since path difference = nλ where n = 1 (whole number), constructive interference occurs at point P"
+      ],
+      "answer": "Path difference = 2.0 cm. Since this equals one wavelength (nλ where n=1), constructive interference occurs at point P, producing maximum amplitude.",
+      "markScheme": "1 mark for correct path difference calculation, 1 mark for comparing to wavelength, 1 mark for identifying constructive interference, 1 mark for correct reasoning about nλ condition"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused path difference with phase difference' — always state path difference in terms of wavelengths (nλ or (n+½)λ) when determining interference type",
+      "Examiner Report 2022: 'Students often forgot that sources must be coherent for observable interference' — always mention coherent sources (same frequency and constant phase relationship) in interference explanations",
+      "Examiner Report 2023: 'Weak responses failed to distinguish between superposition and interference' — remember superposition is the general principle, interference is the specific result when waves overlap"
+    ],
+    "keyDiagram": "Essential diagram shows two wave sources S1 and S2 producing circular wavefronts. Draw solid lines for wave crests, dashed lines for troughs. Mark point P with two path lines to each source, labeling distances d1 and d2. Include regions of constructive interference (where crests meet crests) and destructive interference (where crests meet troughs). Add arrows showing wave direction and label wavelength λ on the wavefronts.",
+    "quickRecap": "Superposition occurs when two or more waves overlap - amplitudes add algebraically at each point. Constructive interference happens when path difference = nλ (waves in phase), destructive when path difference = (n+½)λ (waves in antiphase). Sources must be coherent (same frequency, constant phase relationship) for observable interference patterns. Remember: superposition is the principle, interference is the observable result."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:41:15.059Z",
-  "updated_at": "2026-04-06T04:41:15.059Z"
+  "updated_at": "2026-04-06T04:41:15.059Z",
+  "enriched_at": "2026-04-06T16:13:59.141Z"
 }

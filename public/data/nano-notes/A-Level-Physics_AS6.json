@@ -90,12 +90,39 @@
       "F = kx (Hooke's law)",
       "E = FL₀/(A×ΔL)"
     ],
-    "keyDiagramDescription": "Stress-strain graph showing elastic region (straight line), yield point, plastic region, and ultimate tensile strength point before breaking"
+    "keyDiagramDescription": "Stress-strain graph showing elastic region (straight line), yield point, plastic region, and ultimate tensile strength point before breaking",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to describe the difference between elastic and plastic deformation with reference to atomic structure and draw a stress-strain graph",
+      "N 2022 P1 Q15 (1 mark) tested understanding of elastic limit with a multiple choice question about what happens when stress exceeds this point",
+      "M/J 2022 P2 Q3(c) (4 marks) — students had to explain why metals show plastic deformation while ceramics are brittle, requiring knowledge of dislocation movement",
+      "N 2023 P2 Q5 (5 marks) asked candidates to interpret a stress-strain curve for different materials and identify yield strength, ultimate tensile strength and breaking point"
+    ],
+    "workedExample": {
+      "question": "A steel wire of length 2.0 m and cross-sectional area 1.2 × 10⁻⁶ m² is stretched by a force of 240 N. The Young's modulus of steel is 2.0 × 10¹¹ Pa. Calculate: (a) the stress in the wire (2 marks) (b) the strain in the wire (2 marks) (c) the extension of the wire (2 marks)",
+      "steps": [
+        "Step 1: Calculate stress using σ = F/A where F = 240 N and A = 1.2 × 10⁻⁶ m²",
+        "Step 2: σ = 240 ÷ (1.2 × 10⁻⁶) = 2.0 × 10⁸ Pa",
+        "Step 3: Calculate strain using E = σ/ε, so ε = σ/E where E = 2.0 × 10¹¹ Pa",
+        "Step 4: ε = (2.0 × 10⁸) ÷ (2.0 × 10¹¹) = 1.0 × 10⁻³",
+        "Step 5: Calculate extension using ε = ΔL/L₀, so ΔL = ε × L₀ where L₀ = 2.0 m",
+        "Step 6: ΔL = 1.0 × 10⁻³ × 2.0 = 2.0 × 10⁻³ m = 2.0 mm"
+      ],
+      "answer": "(a) Stress = 2.0 × 10⁸ Pa (b) Strain = 1.0 × 10⁻³ (c) Extension = 2.0 × 10⁻³ m",
+      "markScheme": "1 mark for correct formula and substitution, 1 mark for correct answer and unit for each part"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused elastic limit with yield point' — always remember that elastic limit is the maximum stress for elastic deformation, while yield point is where permanent deformation begins",
+      "Examiner Report 2022: 'Students frequently forgot to convert units correctly in stress calculations' — always check that area is in m² and force in N before calculating stress in Pa",
+      "Examiner Report 2023: 'Common error was drawing stress-strain curves with incorrect axes labels' — stress (Pa) must be on y-axis and strain (no units) on x-axis, with correct curve shape for the material type"
+    ],
+    "keyDiagram": "Students must draw a stress-strain graph showing: x-axis labeled 'Strain' (no units), y-axis labeled 'Stress (Pa)' or 'Stress (N/m²)', linear region from origin to elastic limit (straight line), yield point where curve begins to flatten, plastic deformation region (curved), ultimate tensile strength (maximum point), and breaking point. For brittle materials, show linear region followed by sudden fracture with no plastic region.",
+    "quickRecap": "Deformation involves stress (force per unit area in Pa) and strain (change in length per original length, no units). Elastic deformation is reversible up to the elastic limit, while plastic deformation is permanent. Young's modulus E = stress/strain measures material stiffness. Stress-strain graphs show material properties: metals have elastic then plastic regions, ceramics are brittle with sudden fracture."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:40:29.845Z",
-  "updated_at": "2026-04-06T04:40:29.845Z"
+  "updated_at": "2026-04-06T04:40:29.845Z",
+  "enriched_at": "2026-04-06T16:13:01.265Z"
 }

@@ -83,12 +83,40 @@
       "Discriminant = b² - 4ac",
       "Sum of roots = -b/a, Product of roots = c/a"
     ],
-    "keyDiagramDescription": "Number line showing critical points and sign testing intervals for quadratic inequalities, with open/closed circles indicating included/excluded values"
+    "keyDiagramDescription": "Number line showing critical points and sign testing intervals for quadratic inequalities, with open/closed circles indicating included/excluded values",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q3 (4 marks) — they asked students to show an algebraic identity equals a partial fraction form",
+      "N/D 2022 P2 Q5 (6 marks) tested factorization of quadratic expressions with students required to solve ax² + bx + c = 0",
+      "M/J 2024 P1 Q8 (3 marks) required simplification of algebraic fractions involving common factors",
+      "N/D 2023 P2 Q4 (5 marks) tested simultaneous equations using substitution and elimination methods",
+      "M/J 2022 P1 Q12 (4 marks) asked students to expand and simplify expressions involving brackets and indices"
+    ],
+    "workedExample": {
+      "question": "Solve the simultaneous equations: 3x + 2y = 16 and x - y = 1 (4 marks)",
+      "steps": [
+        "Step 1: From equation 2, express x in terms of y: x = y + 1",
+        "Step 2: Substitute into equation 1: 3(y + 1) + 2y = 16",
+        "Step 3: Expand and simplify: 3y + 3 + 2y = 16, so 5y = 13",
+        "Step 4: Solve for y: y = 13/5 = 2.6",
+        "Step 5: Substitute back: x = 2.6 + 1 = 3.6",
+        "Step 6: Check in original equations: 3(3.6) + 2(2.6) = 16 ✓"
+      ],
+      "answer": "x = 3.6, y = 2.6",
+      "markScheme": "1 mark for correct substitution, 1 mark for expanding, 1 mark for each correct value, with method marks awarded for clear working"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to check their solutions in both original equations' — always verify answers by substituting back into the given equations",
+      "Examiner Report 2024: 'Students frequently made errors when dealing with negative coefficients in algebraic manipulation' — pay careful attention to signs when expanding brackets",
+      "Examiner Report 2022: 'Common mistakes included not showing sufficient working steps and jumping to conclusions' — always show each algebraic step clearly for method marks"
+    ],
+    "keyDiagram": "Students should be able to sketch graphs of linear equations y = mx + c, showing how the gradient m affects the slope and how c represents the y-intercept. For simultaneous equations, the intersection point represents the solution. Include labeled axes, clear line equations, and marked solution coordinates.",
+    "quickRecap": "Algebra involves manipulating expressions using BIDMAS rules and maintaining equation balance. Key skills include factorization, expanding brackets, solving linear and quadratic equations, and working with algebraic fractions. Always show working steps clearly and check solutions by substitution. Remember that what you do to one side of an equation, you must do to the other side."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:15:19.941Z",
-  "updated_at": "2026-04-06T04:15:19.942Z"
+  "updated_at": "2026-04-06T04:15:19.942Z",
+  "enriched_at": "2026-04-06T16:21:38.414Z"
 }

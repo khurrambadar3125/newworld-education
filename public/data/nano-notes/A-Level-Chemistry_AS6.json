@@ -88,12 +88,38 @@
       "n = Q/F",
       "F = 96500 C mol⁻¹"
     ],
-    "keyDiagramDescription": "Electrochemical cell showing two half-cells connected by salt bridge, with electron flow in external circuit from anode to cathode, and ion movement in salt bridge to complete the circuit"
+    "keyDiagramDescription": "Electrochemical cell showing two half-cells connected by salt bridge, with electron flow in external circuit from anode to cathode, and ion movement in salt bridge to complete the circuit",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to explain the process of electroplating copper onto a steel spoon, including electrode reactions and setup",
+      "N/D 2022 P1 Q15 (1 mark) — multiple choice question on identifying which substance would be produced at the cathode during electrolysis of molten sodium chloride",
+      "M/J 2022 P2 Q6 (8 marks) — comprehensive question on electrolysis of copper sulfate solution using different electrodes, requiring electrode equations and observations",
+      "N/D 2023 P2 Q3 (5 marks) — asked students to predict products of electrolysis of dilute sulfuric acid and explain why hydrogen is produced instead of sodium at the cathode"
+    ],
+    "workedExample": {
+      "question": "Describe what happens during the electrolysis of molten lead bromide. Include the electrode reactions and explain why the electrolyte must be molten. (6 marks)",
+      "steps": [
+        "Step 1: State that lead bromide must be molten to allow ions to move freely and conduct electricity",
+        "Step 2: Identify that Pb²⁺ ions move to cathode (negative electrode) and Br⁻ ions move to anode (positive electrode)",
+        "Step 3: Write cathode reaction: Pb²⁺ + 2e⁻ → Pb (reduction - gain of electrons)",
+        "Step 4: Write anode reaction: 2Br⁻ → Br₂ + 2e⁻ (oxidation - loss of electrons)",
+        "Step 5: State observations: grey metallic lead forms at cathode, orange/brown bromine gas at anode"
+      ],
+      "answer": "Lead bromide must be molten so that the ions can move freely to conduct electricity. During electrolysis, Pb²⁺ ions move to the cathode where they gain electrons: Pb²⁺ + 2e⁻ → Pb. Grey metallic lead is deposited. Br⁻ ions move to the anode where they lose electrons: 2Br⁻ → Br₂ + 2e⁻. Orange/brown bromine gas is produced.",
+      "markScheme": "1 mark for molten explanation, 2 marks for correct electrode reactions with electrons shown, 1 mark for ion movement, 2 marks for correct observations"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused oxidation and reduction at electrodes' — always remember OIL RIG: Oxidation Is Loss (of electrons, occurs at anode), Reduction Is Gain (of electrons, occurs at cathode)",
+      "Examiner Report 2022: 'Students frequently forgot to balance equations and omit electron symbols' — always include electrons (e⁻) in electrode equations and ensure charges balance on both sides",
+      "Examiner Report 2023: 'Candidates often gave products for molten compounds when asked about aqueous solutions' — remember that with aqueous solutions, H⁺ and OH⁻ from water may be discharged instead of metal ions"
+    ],
+    "keyDiagram": "Students must be able to draw an electrolysis cell showing: a d.c. power supply with positive and negative terminals clearly marked, two electrodes (anode connected to positive, cathode to negative), electrolyte solution/molten compound, direction of electron flow in external circuit (from anode to cathode), direction of ion movement (cations to cathode, anions to anode), and labels for all components. Include gas collection tubes if gases are produced.",
+    "quickRecap": "Electrolysis uses electricity to decompose ionic compounds - ions move to oppositely charged electrodes where they gain or lose electrons. Cations go to cathode (reduction), anions go to anode (oxidation). Remember OIL RIG for electron transfer. In aqueous solutions, H⁺ and OH⁻ from water may be discharged instead of metal ions depending on reactivity."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:31:30.819Z",
-  "updated_at": "2026-04-06T04:31:30.819Z"
+  "updated_at": "2026-04-06T04:31:30.819Z",
+  "enriched_at": "2026-04-06T16:12:55.876Z"
 }

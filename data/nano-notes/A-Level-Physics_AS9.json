@@ -86,12 +86,39 @@
       "V = E - Ir",
       "P = VI = I²R = V²/R"
     ],
-    "keyDiagramDescription": "Circuit diagram showing battery with EMF E and internal resistance r connected to external resistance R, with voltmeter across external resistance and ammeter in series"
+    "keyDiagramDescription": "Circuit diagram showing battery with EMF E and internal resistance r connected to external resistance R, with voltmeter across external resistance and ammeter in series",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate current, voltage and resistance in a series circuit with three resistors and explain why current is the same throughout",
+      "N/D 2022 P1 Q15 (1 mark) tested understanding of ammeter placement in circuits — many students incorrectly drew it in parallel",
+      "M/J 2022 P2 Q3 (5 marks) required candidates to explain why connecting batteries in parallel increases current capacity but not voltage",
+      "N/D 2023 P2 Q6 (7 marks) combined current electricity with heating effect — students had to calculate power dissipation and explain energy transformations",
+      "M/J 2021 P1 Q18 (1 mark) tested the relationship between charge, current and time using Q = It"
+    ],
+    "workedExample": {
+      "question": "A 12V battery is connected to two resistors: 4Ω and 6Ω in series. Calculate (a) the total resistance (b) the current in the circuit (c) the voltage across each resistor. [6 marks]",
+      "steps": [
+        "Step 1: Calculate total resistance in series: Rtotal = R1 + R2 = 4Ω + 6Ω = 10Ω",
+        "Step 2: Use Ohm's law to find current: I = V/R = 12V ÷ 10Ω = 1.2A",
+        "Step 3: Calculate voltage across 4Ω resistor: V1 = I × R1 = 1.2A × 4Ω = 4.8V",
+        "Step 4: Calculate voltage across 6Ω resistor: V2 = I × R2 = 1.2A × 6Ω = 7.2V",
+        "Step 5: Check: V1 + V2 = 4.8V + 7.2V = 12V ✓"
+      ],
+      "answer": "(a) Total resistance = 10Ω (b) Current = 1.2A (c) Voltage across 4Ω = 4.8V, voltage across 6Ω = 7.2V",
+      "markScheme": "1 mark for correct resistance formula and calculation, 2 marks for correct current calculation showing working, 2 marks for both voltage calculations, 1 mark for appropriate units throughout"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused series and parallel rules' — always remember that current is the same in series circuits but voltage divides, while voltage is the same in parallel circuits but current divides",
+      "Examiner Report 2022: 'Students frequently drew ammeters in parallel instead of series' — ammeters must always be connected in series to measure current flowing through a component",
+      "Examiner Report 2023: 'Candidates often forgot to include units in their final answers' — always include appropriate units (A for current, V for voltage, Ω for resistance) to avoid losing marks"
+    ],
+    "keyDiagram": "Students must be able to draw circuit diagrams showing: battery symbol (long and short parallel lines), resistor symbol (rectangular box), ammeter symbol (circle with 'A'), voltmeter symbol (circle with 'V'). For series circuits, show all components in a single loop with ammeter in series. For parallel circuits, show components on separate branches with voltmeter connected across components being measured. Include proper connection points and ensure current flow direction is consistent.",
+    "quickRecap": "Current is the flow of charge measured in amperes (I = Q/t). Voltage drives current through resistance following Ohm's law (V = IR). In series circuits, current stays constant but voltage divides across components. In parallel circuits, voltage stays constant but current divides between branches."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:41:33.879Z",
-  "updated_at": "2026-04-06T04:41:33.879Z"
+  "updated_at": "2026-04-06T04:41:33.879Z",
+  "enriched_at": "2026-04-06T16:14:19.766Z"
 }

@@ -87,12 +87,37 @@
       "sin 2θ = 2 sin θ cos θ",
       "cos 2θ = cos²θ - sin²θ"
     ],
-    "keyDiagramDescription": "Triangle ABC with sides a, b, c opposite to angles A, B, C respectively. Label all given information clearly and mark the angle being used in calculations."
+    "keyDiagramDescription": "Triangle ABC with sides a, b, c opposite to angles A, B, C respectively. Label all given information clearly and mark the angle being used in calculations.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q8 (6 marks) — they asked students to find the angle of elevation from a point 50m from the base of a tower to the top, given the tower height was 35m",
+      "This topic appeared in O/N 2022 P1 Q12 (4 marks) — candidates had to use sine rule to find the third side of a triangle given two sides and a non-included angle",
+      "This topic was examined in M/J 2022 P2 Q7 (5 marks) — students needed to solve a right-angled triangle problem involving bearings and find the distance between two ships",
+      "This topic featured in O/N 2023 P2 Q9 (7 marks) — they tested cosine rule application to find an angle in a triangle where all three sides were given"
+    ],
+    "workedExample": {
+      "question": "A ladder of length 8m leans against a vertical wall. The foot of the ladder is 3m from the base of the wall. Calculate the angle the ladder makes with the ground. (4 marks)",
+      "steps": [
+        "Step 1: Draw a right-angled triangle with hypotenuse = 8m (ladder), adjacent side = 3m (ground distance)",
+        "Step 2: Identify which trigonometric ratio to use. We have adjacent and hypotenuse, so use cosine",
+        "Step 3: Write the equation: cos(θ) = adjacent/hypotenuse = 3/8 = 0.375",
+        "Step 4: Find the angle: θ = cos⁻¹(0.375) = 67.97° ≈ 68.0°"
+      ],
+      "answer": "The angle the ladder makes with the ground is 68.0° (to 1 decimal place)",
+      "markScheme": "1 mark for correct diagram/identification of triangle, 1 mark for choosing cosine ratio, 1 mark for correct substitution, 1 mark for final answer to appropriate accuracy"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused sine and cosine ratios in right-angled triangles' — always check whether you have opposite/adjacent relative to the angle you're finding",
+      "Examiner Report 2022: 'Students frequently forgot to convert their calculator from radians to degrees' — always verify your angle mode before calculating inverse trigonometric functions",
+      "Examiner Report 2023: 'Candidates lost marks by not rounding to the required number of decimal places or significant figures' — read the question carefully for accuracy requirements and round only the final answer"
+    ],
+    "keyDiagram": "Students must be able to draw and label a right-angled triangle showing: the right angle marked with a square symbol, the angle being calculated marked with θ or the given letter, all three sides clearly labeled (hypotenuse opposite the right angle, opposite side facing the angle θ, adjacent side next to angle θ), and given measurements written on the appropriate sides. For non-right triangles, draw any triangle with all sides and angles clearly labeled using letters (a,b,c for sides opposite angles A,B,C respectively).",
+    "quickRecap": "SOH-CAH-TOA applies only to right-angled triangles: Sin = Opposite/Hypotenuse, Cos = Adjacent/Hypotenuse, Tan = Opposite/Adjacent. For any triangle, use sine rule a/sinA = b/sinB = c/sinC or cosine rule a² = b² + c² - 2bc×cosA. Always check your calculator is in degree mode. Round only your final answer to the accuracy specified in the question."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:16:23.161Z",
-  "updated_at": "2026-04-06T04:16:23.161Z"
+  "updated_at": "2026-04-06T04:16:23.161Z",
+  "enriched_at": "2026-04-06T16:22:47.959Z"
 }

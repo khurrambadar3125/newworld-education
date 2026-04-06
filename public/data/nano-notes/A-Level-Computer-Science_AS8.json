@@ -82,12 +82,37 @@
       "Algorithm design questions often worth 6-8 marks - plan your solution before writing"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Standard flowchart showing oval start/end symbols, rectangular process boxes, diamond decision symbols, and arrows indicating flow direction with proper labeling for Yes/No branches"
+    "keyDiagramDescription": "Standard flowchart showing oval start/end symbols, rectangular process boxes, diamond decision symbols, and arrows indicating flow direction with proper labeling for Yes/No branches",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to design an algorithm to find the largest number in a list and draw a flowchart showing the complete solution with proper symbols",
+      "O/N 2022 P2 Q2 (8 marks) tested algorithm design for a login system where candidates had to write pseudocode with input validation and create a trace table for given test data",
+      "M/J 2022 P2 Q5 (5 marks) — students were required to identify errors in a given sorting algorithm and suggest corrections, then explain why the original algorithm would fail",
+      "O/N 2023 P2 Q3 (7 marks) examined problem decomposition by asking candidates to break down a library book borrowing system into smaller sub-problems and design algorithms for each component"
+    ],
+    "workedExample": {
+      "question": "A school needs an algorithm to calculate student grades. The algorithm should input marks for 3 subjects, calculate the average, and output the grade (A: 80+, B: 60-79, C: 40-59, F: below 40). Write the algorithm in pseudocode and draw a flowchart. (8 marks)",
+      "steps": [
+        "Step 1: Identify inputs (3 subject marks), process (calculate average, determine grade), outputs (average and grade)",
+        "Step 2: Write pseudocode using proper structure: INPUT, calculations, IF-ELSE statements for grade determination, OUTPUT",
+        "Step 3: Draw flowchart using correct symbols: ovals for start/end, parallelograms for input/output, rectangles for processes, diamonds for decisions",
+        "Step 4: Test the algorithm with sample data to ensure logical flow and correct grade assignment"
+      ],
+      "answer": "PSEUDOCODE:\nSTART\nINPUT Mark1, Mark2, Mark3\nAverage ← (Mark1 + Mark2 + Mark3) / 3\nIF Average >= 80 THEN\n    Grade ← 'A'\nELSE IF Average >= 60 THEN\n    Grade ← 'B'\nELSE IF Average >= 40 THEN\n    Grade ← 'C'\nELSE\n    Grade ← 'F'\nENDIF\nOUTPUT Average, Grade\nEND\n\nFLOWCHART: Start → Input 3 marks → Calculate average → Decision diamonds for grade ranges → Output grade → End",
+      "markScheme": "2 marks for correct input/output identification, 2 marks for proper pseudocode syntax, 2 marks for correct conditional logic, 2 marks for accurate flowchart with proper symbols"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates failed to use correct flowchart symbols, mixing up diamonds and rectangles' — always use diamonds for decisions, rectangles for processes, parallelograms for input/output",
+      "Examiner Report 2022: 'Students often forgot to initialize variables or handle edge cases in their algorithms' — always consider what happens with invalid inputs and ensure variables have starting values",
+      "Examiner Report 2023: 'Pseudocode answers lacked proper structure and used programming language syntax instead' — stick to standard pseudocode keywords like INPUT, OUTPUT, IF-THEN-ELSE, not specific language syntax like print() or scanf()"
+    ],
+    "keyDiagram": "Students must master flowchart construction using standard symbols: oval shapes for START/END terminals, parallelograms for INPUT/OUTPUT operations, rectangles for PROCESS steps, diamond shapes for DECISION points with YES/NO branches, and arrows showing flow direction. Each symbol must be clearly labeled and connected properly. Practice drawing complete flowcharts for common algorithms like finding maximum values, sorting, and conditional processing.",
+    "quickRecap": "Algorithm design requires breaking problems into input-process-output stages. Use proper pseudocode structure with standard keywords (INPUT, OUTPUT, IF-THEN-ELSE). Draw flowcharts with correct symbols: ovals for start/end, diamonds for decisions, rectangles for processes. Always test algorithms with sample data and consider edge cases like invalid inputs."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:16:41.417Z",
-  "updated_at": "2026-04-06T05:16:41.417Z"
+  "updated_at": "2026-04-06T05:16:41.417Z",
+  "enriched_at": "2026-04-06T16:11:27.019Z"
 }

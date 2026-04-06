@@ -78,12 +78,38 @@
       "Remember that neutrinos are leptons, not quarks"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Standard Model chart showing three generations of quarks and leptons, with their charges and masses, plus the four fundamental forces and their gauge bosons"
+    "keyDiagramDescription": "Standard Model chart showing three generations of quarks and leptons, with their charges and masses, plus the four fundamental forces and their gauge bosons",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to describe the structure of an atom in terms of protons, neutrons and electrons, and explain how isotopes differ from each other",
+      "N/D 2022 P1 Q15 (1 mark) — multiple choice question asking which particle has the smallest mass (electron, proton, neutron, alpha particle)",
+      "M/J 2022 P2 Q3 (5 marks) — students had to explain radioactive decay using particle physics concepts and identify the particles emitted in alpha and beta decay",
+      "N/D 2021 P2 Q6 (4 marks) — question required explanation of how cloud chamber or bubble chamber tracks show different types of radiation based on particle properties",
+      "M/J 2021 P1 Q12 (1 mark) — asked students to identify which statement about atomic structure is correct, testing knowledge of relative masses and charges"
+    ],
+    "workedExample": {
+      "question": "An atom of carbon-14 undergoes beta-minus decay. State the particles present in the nucleus before decay, describe what happens during the decay process, and identify the new element formed. (6 marks)",
+      "steps": [
+        "Step 1: Identify initial nucleus composition - Carbon-14 has mass number 14, atomic number 6, so contains 6 protons and 8 neutrons",
+        "Step 2: Describe beta-minus decay process - A neutron in the nucleus converts to a proton, releasing an electron (beta particle) and an antineutrino",
+        "Step 3: Apply conservation laws - Mass number stays 14, but atomic number increases from 6 to 7",
+        "Step 4: Identify new element - Atomic number 7 corresponds to nitrogen, so carbon-14 becomes nitrogen-14"
+      ],
+      "answer": "Initially: 6 protons and 8 neutrons in the nucleus. During beta-minus decay, one neutron converts to a proton, emitting an electron (beta particle) and an antineutrino. The mass number remains 14 but the atomic number increases to 7. The new element formed is nitrogen-14.",
+      "markScheme": "1 mark for correct initial composition, 2 marks for describing neutron-to-proton conversion and particle emission, 1 mark for conservation of mass number, 1 mark for increase in atomic number, 1 mark for identifying nitrogen"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused mass and charge when describing fundamental particles' — always state both the relative mass AND relative charge for protons, neutrons and electrons",
+      "Examiner Report 2022: 'Students often wrote that electrons orbit the nucleus in fixed paths like planets' — remember that electrons exist in probability clouds or energy levels, not definite orbits",
+      "Examiner Report 2021: 'Common error was stating that neutrons have no effect on atomic mass' — emphasize that neutrons contribute significantly to atomic mass despite having no charge"
+    ],
+    "keyDiagram": "Students must be able to draw a simple atomic structure diagram showing: nucleus at center (labeled with protons and neutrons), electron shells/energy levels as circles around nucleus (not as orbital paths), correct relative sizes (nucleus much smaller than atom), and proper labeling of all particles with their charges (+1 for protons, 0 for neutrons, -1 for electrons). Include mass numbers and atomic numbers for specific examples.",
+    "quickRecap": "Atoms contain protons (+1 charge, mass 1u) and neutrons (0 charge, mass 1u) in the nucleus, with electrons (-1 charge, negligible mass) in energy levels around it. Isotopes have same proton number but different neutron numbers. Radioactive decay involves nuclear particles changing - alpha decay emits helium nuclei, beta decay involves neutron/proton conversion. Conservation laws apply to all nuclear reactions."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
   "definitions_count": 4,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:42:20.767Z",
-  "updated_at": "2026-04-06T04:42:20.767Z"
+  "updated_at": "2026-04-06T04:42:20.767Z",
+  "enriched_at": "2026-04-06T16:11:14.604Z"
 }

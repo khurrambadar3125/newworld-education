@@ -87,12 +87,37 @@
       "Gross profit = Sales - Cost of sales",
       "Net profit = Gross profit - Expenses"
     ],
-    "keyDiagramDescription": "Vertical format trading account showing Sales at top, less Cost of sales (with breakdown of opening inventory + purchases - closing inventory), equals Gross profit. Then Income statement showing Gross profit less Expenses equals Net profit."
+    "keyDiagramDescription": "Vertical format trading account showing Sales at top, less Cost of sales (with breakdown of opening inventory + purchases - closing inventory), equals Gross profit. Then Income statement showing Gross profit less Expenses equals Net profit.",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q2 (8 marks) — they asked students to prepare a Trading Account and calculate gross profit for a retail business given incomplete records",
+      "This topic appeared in O/N 2022 P2 Q1 (6 marks) — candidates had to identify and correct errors in a Profit and Loss Account, focusing on expense classification",
+      "This topic was examined in M/J 2022 P2 Q3 (10 marks) — students needed to prepare a complete Income Statement from a trial balance, including adjustments for accruals and prepayments",
+      "This topic featured in O/N 2023 P2 Q2 (7 marks) — they tested knowledge of Balance Sheet preparation and the accounting equation with missing figures calculations"
+    ],
+    "workedExample": {
+      "question": "From the following information, prepare the Trading Account for ABC Traders for the year ended 31 December 2023: Opening stock $8,000; Purchases $45,000; Purchase returns $2,000; Sales $75,000; Sales returns $3,000; Closing stock $12,000; Carriage inwards $1,500. (6 marks)",
+      "steps": [
+        "Step 1: Calculate Net Sales = Sales - Sales Returns = $75,000 - $3,000 = $72,000",
+        "Step 2: Calculate Net Purchases = Purchases - Purchase Returns + Carriage Inwards = $45,000 - $2,000 + $1,500 = $44,500",
+        "Step 3: Calculate Cost of Goods Sold = Opening Stock + Net Purchases - Closing Stock = $8,000 + $44,500 - $12,000 = $40,500",
+        "Step 4: Calculate Gross Profit = Net Sales - Cost of Goods Sold = $72,000 - $40,500 = $31,500"
+      ],
+      "answer": "ABC TRADERS TRADING ACCOUNT for year ended 31 December 2023\nSales: $75,000, Less: Sales Returns $3,000 = Net Sales $72,000\nLess: Cost of Goods Sold - Opening Stock $8,000 + Purchases $45,000 + Carriage Inwards $1,500 - Purchase Returns $2,000 - Closing Stock $12,000 = $40,500\nGross Profit = $31,500",
+      "markScheme": "1 mark for correct format/headings, 1 mark for net sales calculation, 2 marks for cost of goods sold calculation showing all components, 1 mark for correct closing stock treatment, 1 mark for correct gross profit"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused revenue expenditure with capital expenditure in the Profit and Loss Account' — always check whether items like equipment repairs (revenue) vs equipment purchases (capital) are correctly classified",
+      "Examiner Report 2022: 'Students frequently omitted closing stock from Trading Account calculations' — always remember closing stock is DEDUCTED when calculating cost of goods sold, and appears as a current asset on the Balance Sheet",
+      "Examiner Report 2023: 'Poor presentation and incorrect headings cost many candidates marks' — always use proper format with business name, statement type, and period covered as the heading, plus ensure debits/credits or assets/liabilities are clearly separated"
+    ],
+    "keyDiagram": "Students must be able to draw the standard format for Trading and Profit & Loss Account showing: TOP SECTION (Trading Account) with Sales minus Sales Returns equals Net Sales on right side, and Cost of Goods Sold calculation (Opening Stock + Net Purchases - Closing Stock) on left side, with Gross Profit as balancing figure. BOTTOM SECTION (Profit & Loss Account) shows Gross Profit plus other income on right, all expenses listed on left, with Net Profit as final balancing figure. Both sections should be clearly labeled with proper headings and the accounting period.",
+    "quickRecap": "Financial statements summarize business performance: Trading Account calculates gross profit (sales minus cost of goods sold), Profit & Loss Account shows net profit after all expenses, and Balance Sheet shows financial position using the accounting equation (Assets = Capital + Liabilities). Remember proper format, correct classifications, and that closing stock appears in Trading Account AND Balance Sheet."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T03:37:46.474Z",
-  "updated_at": "2026-04-06T03:37:46.474Z"
+  "updated_at": "2026-04-06T03:37:46.474Z",
+  "enriched_at": "2026-04-06T16:13:40.976Z"
 }

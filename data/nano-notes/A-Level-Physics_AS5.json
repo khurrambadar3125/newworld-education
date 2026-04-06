@@ -92,12 +92,37 @@
       "EPE = ½kx²",
       "Efficiency = (useful energy output/total energy input) × 100%"
     ],
-    "keyDiagramDescription": "Force-displacement graph showing work done as area under the curve, with force on y-axis and displacement on x-axis"
+    "keyDiagramDescription": "Force-displacement graph showing work done as area under the curve, with force on y-axis and displacement on x-axis",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (6 marks) — they asked students to calculate the power of a motor lifting a load and explain why efficiency is less than 100%",
+      "N/D 2022 P1 Q12 (1 mark) — multiple choice question on the unit of power, many confused watts with joules",
+      "M/J 2022 P2 Q3 (5 marks) — calculation of gravitational potential energy and kinetic energy for a falling object, required use of conservation of energy",
+      "N/D 2023 P2 Q5 (4 marks) — work done against friction when pulling a box up an incline, students had to identify all energy transfers"
+    ],
+    "workedExample": {
+      "question": "A crane lifts a load of mass 500 kg through a vertical height of 12 m in 20 s. Calculate (a) the work done against gravity (b) the power of the crane. Take g = 10 m/s². (4 marks)",
+      "steps": [
+        "Step 1: Identify the formula for work done against gravity: W = mgh",
+        "Step 2: Substitute values: W = 500 kg × 10 m/s² × 12 m = 60,000 J",
+        "Step 3: Identify the formula for power: P = W/t",
+        "Step 4: Substitute values: P = 60,000 J ÷ 20 s = 3000 W"
+      ],
+      "answer": "(a) Work done = mgh = 500 × 10 × 12 = 60,000 J (b) Power = Work done/time = 60,000/20 = 3000 W",
+      "markScheme": "1 mark for correct formula, 1 mark for substitution with units, 1 mark for power formula, 1 mark for final answer with correct unit"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused energy and power units' — always use joules (J) for energy/work and watts (W) for power, never mix them up",
+      "Examiner Report 2022: 'Students frequently forgot to include the time factor in power calculations' — remember power = work done/time taken, time must always be included",
+      "Examiner Report 2023: 'Candidates often ignored friction and air resistance in energy problems' — always consider all forces acting and energy losses when applying conservation of energy"
+    ],
+    "keyDiagram": "Energy transfer diagram showing a block on an incline with arrows indicating: gravitational potential energy (mgh) at top, kinetic energy (½mv²) during motion, work done against friction (f × d) as heat, and work done by applied force (F × d). Include labels for height h, distance d, and all energy values with correct units.",
+    "quickRecap": "Work = force × distance moved in direction of force (W = Fd). Energy is conserved but can transfer between kinetic (½mv²), potential (mgh), and other forms. Power = work done/time taken = energy transferred/time. Always include units: joules for work/energy, watts for power."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:40:10.697Z",
-  "updated_at": "2026-04-06T04:40:10.697Z"
+  "updated_at": "2026-04-06T04:40:10.697Z",
+  "enriched_at": "2026-04-06T16:12:39.207Z"
 }

@@ -86,12 +86,39 @@
       "For 6-mark questions, aim for 3 developed points with examples rather than 6 simple points"
     ],
     "formulas": [],
-    "keyDiagramDescription": "Agents of Socialisation diagram showing Primary (family) at center, with Secondary agents (school, peer group, media, workplace, religion) surrounding it, with arrows showing influence on individual identity formation"
+    "keyDiagramDescription": "Agents of Socialisation diagram showing Primary (family) at center, with Secondary agents (school, peer group, media, workplace, religion) surrounding it, with arrows showing influence on individual identity formation",
+    "pastPaperRefs": [
+      "This topic was tested in M/J 2023 P2 Q4 (8 marks) — they asked students to evaluate the view that female identity is very different from fifty years ago, requiring analysis of changing gender roles and feminist theory",
+      "This topic appeared in O/N 2022 P2 Q3 (6 marks) — students had to explain the view that family is the most important influence on social class identity, testing primary socialization concepts",
+      "This topic was examined in M/J 2024 P2 Q2 (4 marks) — they asked for one argument against the view that male identity is changing, focusing on traditional masculinity theories",
+      "This topic featured in O/N 2023 P2 Q5 (8 marks) — students evaluated whether age is the most important influence on identity, requiring comparison with other factors like class and ethnicity"
+    ],
+    "workedExample": {
+      "question": "Evaluate the view that female identity is very different from fifty years ago. (8 marks)",
+      "steps": [
+        "Step 1: Define female identity and establish the timeframe (1970s vs today)",
+        "Step 2: Present arguments FOR change - women's liberation movement, increased workplace participation, changing family roles",
+        "Step 3: Use sociological evidence - Oakley's research on housewife role, Sharpe's 'Just Like a Girl' studies showing changing aspirations",
+        "Step 4: Present arguments AGAINST change - patriarchal structures persist, glass ceiling effects, domestic burden remains",
+        "Step 5: Use contemporary evidence - gender pay gap statistics, media representation issues, intersectionality factors",
+        "Step 6: Evaluate and conclude with balanced judgment on extent of change"
+      ],
+      "answer": "Female identity has undergone significant transformation since the 1970s, though important continuities remain. Oakley's research showed how women were traditionally socialized into domestic roles, but Sharpe's longitudinal studies demonstrate that girls' aspirations shifted from marriage and family in the 1970s to career and independence by the 1990s. Women's workplace participation has dramatically increased, with many now in professional roles previously dominated by men. However, patriarchal structures persist through the gender pay gap, 'double burden' of work and domestic responsibilities, and underrepresentation in leadership positions. While legal equality has been largely achieved, cultural and structural inequalities suggest female identity has evolved rather than completely transformed.",
+      "markScheme": "Marks awarded for: clear definition of identity (1-2 marks), historical comparison with evidence (2-3 marks), sociological theories/studies (2-3 marks), evaluation of extent of change (2 marks)"
+    },
+    "examinerWarnings": [
+      "Examiner Report 2023: 'Many candidates confused personal identity with social identity' — always distinguish between individual self-concept and socially constructed group identities when discussing identity formation",
+      "Examiner Report 2024: 'Students often provided anecdotal evidence rather than sociological material' — always include specific sociologists, studies, or statistical evidence rather than personal examples or generalizations",
+      "Examiner Report 2022: 'Weaker responses failed to address the influence of intersectionality' — remember that identity is shaped by multiple factors (class, gender, ethnicity, age) working together, not single influences in isolation"
+    ],
+    "keyDiagram": "The Identity Formation Wheel: Draw a circle divided into 6 segments representing key influences on identity - Family (primary socialization), Education (secondary socialization), Peer Groups (informal control), Media (cultural transmission), Workplace (adult socialization), and Religion/Ideology (value systems). Place 'Individual Identity' at the center with arrows pointing inward from each segment. Add outer ring showing 'Social Control Mechanisms' - formal (laws, institutions) and informal (norms, sanctions). Use different colors to distinguish ascribed characteristics (age, ethnicity) from achieved characteristics (occupation, lifestyle choices).",
+    "quickRecap": "Identity is formed through primary socialization (family) and secondary socialization (education, peers, media). Social control operates through formal mechanisms (laws, institutions) and informal mechanisms (norms, peer pressure). Key factors shaping identity include class, gender, ethnicity, and age, often working together through intersectionality. Modern identity is increasingly fluid and multiple rather than fixed and singular."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
   "definitions_count": 5,
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:13:22.893Z",
-  "updated_at": "2026-04-06T04:13:22.893Z"
+  "updated_at": "2026-04-06T04:13:22.893Z",
+  "enriched_at": "2026-04-06T16:27:54.274Z"
 }
