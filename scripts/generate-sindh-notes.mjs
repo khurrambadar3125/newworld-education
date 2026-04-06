@@ -155,7 +155,7 @@ for (const subjectName of subjects) {
       fs.writeFileSync(path.join(notesDir, filename), JSON.stringify(row, null, 2));
       console.log(` ✓ ${noteData.keyPoints?.length || 0} points, ${noteData.definitions?.length || 0} defs`);
       total++;
-      await new Promise(r => setTimeout(r, 1200));
+      await new Promise(r => setTimeout(r, 2500)); // 2.5s delay — safe for parallel runs
     } catch (err) {
       console.log(` ❌ ${err.message}`);
       failed++;

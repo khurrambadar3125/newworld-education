@@ -159,7 +159,7 @@ for (const file of filtered) {
     console.log(` ✓ +${enrichment.pastPaperRefs?.length || 0} refs, +worked example, +${enrichment.examinerWarnings?.length || 0} ER warnings`);
     enriched++;
 
-    await new Promise(r => setTimeout(r, 1200));
+    await new Promise(r => setTimeout(r, 2500)); // 2.5s delay — safe for parallel runs (max 3 processes)
   } catch (err) {
     console.log(` ❌ ${err.message}`);
     failed++;

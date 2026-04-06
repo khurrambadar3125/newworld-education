@@ -299,7 +299,7 @@ for (const subjectName of subjects) {
         }
 
         // Rate limit — 1 request per second
-        await new Promise(r => setTimeout(r, 1200));
+        await new Promise(r => setTimeout(r, 2500)); // 2.5s delay — safe for parallel runs
 
       } catch (err) {
         console.log(` ❌ ${err.message}`);
