@@ -1,0 +1,91 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Organic Chemistry",
+  "chapter_id": "18",
+  "chapter_name": "Introduction to organic chemistry",
+  "note_data": {
+    "title": "Introduction to organic chemistry",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Organic compounds** are compounds that contain carbon atoms bonded to hydrogen atoms",
+      "**Structural formula** shows the arrangement of atoms in a molecule and how they are bonded",
+      "**Homologous series** is a family of organic compounds with the same functional group and general formula",
+      "Members of a homologous series differ by **CH₂** and have similar chemical properties but different physical properties",
+      "**Isomers** are compounds with the same molecular formula but different structural formulae",
+      "**Functional group** is the part of an organic molecule that determines its chemical properties",
+      "Carbon atoms can form **four covalent bonds** and can bond to other carbon atoms to form chains",
+      "Physical properties in a homologous series show **gradual change** as the carbon chain length increases"
+    ],
+    "definitions": [
+      {
+        "term": "Organic compound",
+        "definition": "A compound that contains carbon atoms bonded to hydrogen atoms"
+      },
+      {
+        "term": "Homologous series",
+        "definition": "A family of organic compounds with the same functional group and general formula"
+      },
+      {
+        "term": "Structural formula",
+        "definition": "A formula that shows the arrangement of atoms in a molecule and how they are bonded"
+      },
+      {
+        "term": "Isomers",
+        "definition": "Compounds with the same molecular formula but different structural formulae"
+      },
+      {
+        "term": "Functional group",
+        "definition": "The part of an organic molecule that determines its chemical properties"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Draw",
+        "instruction": "Show all bonds clearly. Use lines for covalent bonds. Label atoms."
+      }
+    ],
+    "modelAnswer": {
+      "question": "Ethane and butane are members of the alkane homologous series. (a) State two characteristics of a homologous series. (b) Draw the structural formula of butane.",
+      "marks": 4,
+      "answer": "(a) Same functional group / same general formula / differ by CH₂ / similar chemical properties / gradual change in physical properties (any 2) (b) H-C-C-C-C-H with all hydrogen atoms shown bonded to carbon atoms",
+      "markBreakdown": [
+        "Mark 1: First characteristic of homologous series",
+        "Mark 2: Second characteristic of homologous series",
+        "Mark 3: Correct carbon chain for butane",
+        "Mark 4: All hydrogen atoms shown correctly bonded"
+      ]
+    },
+    "commonMistakes": [
+      "Never say organic compounds 'contain carbon' - always say 'contain carbon bonded to hydrogen'",
+      "Students often forget to show ALL hydrogen atoms in structural formulae",
+      "Drawing condensed formulae when structural formulae are asked for - show all bonds as lines",
+      "Confusing molecular formula with structural formula - structural shows arrangement of atoms",
+      "Saying isomers have 'different formulas' when they have the same molecular formula but different structural formulae"
+    ],
+    "examinerTips": [
+      "This topic appears in every paper - know definitions word-perfect",
+      "Always count carbon and hydrogen atoms carefully when drawing structural formulae",
+      "Practice drawing isomers - this is a common 4-6 mark question"
+    ],
+    "formulas": [
+      "CₙH₂ₙ₊₂ (alkanes general formula)"
+    ],
+    "keyDiagramDescription": "Structural formulae showing all atoms and bonds as lines, e.g., methane with C in center bonded to 4 H atoms, ethane showing C-C bond with hydrogens attached"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:57:02.216Z",
+  "updated_at": "2026-04-05T20:57:02.216Z"
+}

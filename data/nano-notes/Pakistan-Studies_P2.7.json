@@ -1,0 +1,89 @@
+{
+  "subject": "Pakistan Studies",
+  "subject_code": "2059",
+  "level": "O Level",
+  "theme": "Paper 2: The Environment of Pakistan",
+  "chapter_id": "P2.7",
+  "chapter_name": "Transport and Telecommunications",
+  "note_data": {
+    "title": "Transport and Telecommunications",
+    "readTime": "8 min",
+    "keyPoints": [
+      "Pakistan has a **road network** of over 260,000 km connecting major cities and rural areas for economic development",
+      "The **railway system** covers approximately 7,791 km and is managed by Pakistan Railways for passenger and freight transport",
+      "**Karachi Port** is Pakistan's largest seaport handling 60% of the country's trade and cargo operations",
+      "**Port Qasim** is Pakistan's second largest port specializing in container traffic and industrial development",
+      "**Allama Iqbal International Airport** in Lahore and **Jinnah International Airport** in Karachi are major international airports",
+      "**Motorways** like M1, M2, and M9 provide high-speed road connections between major urban centers",
+      "**Telecommunications** infrastructure includes mobile networks, internet services, and fiber optic cables connecting urban and rural areas",
+      "The **China-Pakistan Economic Corridor (CPEC)** includes major transport infrastructure projects improving connectivity",
+      "**Gwadar Port** is being developed as a deep-sea port under CPEC to boost international trade"
+    ],
+    "definitions": [
+      {
+        "term": "Transport infrastructure",
+        "definition": "The basic physical structures and facilities needed for the movement of people and goods including roads, railways, ports and airports"
+      },
+      {
+        "term": "Seaport",
+        "definition": "A harbor facility where ships load and unload cargo and passengers, essential for international trade"
+      },
+      {
+        "term": "Motorway",
+        "definition": "A high-speed, multi-lane highway designed for fast vehicular traffic with controlled access points"
+      },
+      {
+        "term": "Telecommunications",
+        "definition": "The transmission of information over significant distances through electronic means including telephone, internet and mobile networks"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. Example: 'Karachi Port handles 60% of Pakistan's trade.'"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because'. Example: 'Railways are important because they transport heavy goods cheaply over long distances.'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed factual information about features, location, or characteristics without explaining reasons"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the importance of transport infrastructure for Pakistan's economic development. [6]",
+      "marks": 6,
+      "answer": "Transport infrastructure connects producers to markets, allowing goods to be sold nationally and internationally. Road networks enable farmers to transport agricultural products from rural areas to urban markets and ports for export. Railways provide cheap transport for heavy industrial goods like cement and steel over long distances, reducing costs for manufacturers. Ports like Karachi and Port Qasim facilitate international trade by allowing import of raw materials and export of finished goods. Airports enable quick transport of high-value goods and support tourism industry. Good transport infrastructure attracts foreign investment because companies can efficiently move goods and access wider markets.",
+      "markBreakdown": [
+        "Mark 1: Connects producers to markets",
+        "Mark 2: Roads transport agricultural products to markets/ports",
+        "Mark 3: Railways provide cheap transport for heavy goods",
+        "Mark 4: Ports facilitate international trade",
+        "Mark 5: Airports enable quick transport/tourism",
+        "Mark 6: Attracts foreign investment"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'transport helps people move around' — always explain economic benefits like connecting markets",
+      "Students often forget to mention specific Pakistani examples like Karachi Port or M2 Motorway",
+      "Avoid saying 'telecommunications are modern technology' — explain their role in business and economic development",
+      "Don't confuse Port Qasim with Gwadar Port — know their different locations and functions",
+      "Never give vague answers — always use specific statistics like '60% of trade' or 'over 260,000 km of roads'"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 questions about economic development",
+      "Always give Pakistani examples when discussing transport infrastructure",
+      "Learn specific statistics about road length, railway network, and port capacity",
+      "CPEC projects often appear in recent exam questions"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Map of Pakistan showing major motorways (M1, M2, M9), railway lines, main ports (Karachi, Port Qasim, Gwadar), and international airports in major cities"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:50:33.712Z",
+  "updated_at": "2026-04-05T20:50:33.712Z"
+}

@@ -1,0 +1,96 @@
+{
+  "subject": "Mathematics",
+  "subject_code": "4024",
+  "level": "O Level",
+  "theme": "Data and Functions",
+  "chapter_id": "7",
+  "chapter_name": "Transformations and vectors",
+  "note_data": {
+    "title": "Transformations and vectors",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **translation** moves every point the same distance in the same direction and is described by a column vector",
+      "A **reflection** maps every point to its mirror image across a line of symmetry",
+      "A **rotation** turns a shape about a fixed point called the centre of rotation through a given angle",
+      "An **enlargement** changes the size of a shape by a scale factor from a centre of enlargement",
+      "**Combined transformations** are performed in the order given, with the first transformation applied to the original shape",
+      "A **column vector** represents displacement and is written as (x/y) where x is horizontal and y is vertical movement",
+      "A **position vector** describes the position of a point relative to the origin",
+      "**Vector addition** is performed by adding corresponding components: (a/b) + (c/d) = (a+c/b+d)",
+      "The **magnitude** of vector (a/b) is calculated using √(a² + b²)",
+      "**Parallel vectors** are scalar multiples of each other"
+    ],
+    "definitions": [
+      {
+        "term": "Translation",
+        "definition": "A transformation that moves every point the same distance in the same direction"
+      },
+      {
+        "term": "Column vector",
+        "definition": "A way of representing translation or displacement written as (x/y)"
+      },
+      {
+        "term": "Position vector",
+        "definition": "A vector that describes the position of a point relative to the origin"
+      },
+      {
+        "term": "Magnitude of a vector",
+        "definition": "The length of a vector calculated using Pythagoras' theorem"
+      },
+      {
+        "term": "Parallel vectors",
+        "definition": "Vectors that are scalar multiples of each other"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give the type of transformation and all necessary details (angle, centre, direction, scale factor)"
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Show all working steps and give the final answer clearly"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Triangle A has vertices at (1,2), (3,2) and (2,4). It is reflected in the line y = x to give triangle B. Triangle B is then translated by vector (-2/3) to give triangle C. Find the coordinates of the vertices of triangle C.",
+      "marks": 4,
+      "answer": "Reflection in y = x: (x,y) → (y,x)\nTriangle B vertices: (2,1), (2,3), (4,2)\nTranslation by (-2/3): subtract 2 from x-coordinates, add 3 to y-coordinates\nTriangle C vertices: (0,4), (0,6), (2,5)",
+      "markBreakdown": [
+        "Mark 1: Correct rule for reflection in y = x",
+        "Mark 2: Correct vertices for triangle B",
+        "Mark 3: Correct application of translation vector",
+        "Mark 4: All three vertices of triangle C correct"
+      ]
+    },
+    "commonMistakes": [
+      "Never write vectors as (x,y) — always use column notation with brackets",
+      "Students often forget to apply transformations in the correct order for combined transformations",
+      "Writing position vectors without stating 'from the origin'",
+      "Confusing vector addition with scalar multiplication",
+      "Not showing the direction clearly when describing rotations (clockwise/anticlockwise)"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2",
+      "Always draw a coordinate grid and plot points for transformation questions",
+      "State the type of transformation first, then give all details",
+      "For combined transformations, clearly show each step separately"
+    ],
+    "formulas": [
+      "Magnitude of vector (a/b) = √(a² + b²)",
+      "Vector addition: (a/b) + (c/d) = (a+c/b+d)",
+      "Scalar multiplication: k(a/b) = (ka/kb)"
+    ],
+    "keyDiagramDescription": "Coordinate grid showing original shape and its image after transformation, with transformation details clearly labeled"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:24:39.405Z",
+  "updated_at": "2026-04-05T21:24:39.405Z"
+}

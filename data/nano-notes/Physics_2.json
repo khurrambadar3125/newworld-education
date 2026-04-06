@@ -1,0 +1,95 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "General Physics",
+  "chapter_id": "2",
+  "chapter_name": "Describing motion",
+  "note_data": {
+    "title": "Describing motion",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Speed** is a scalar quantity that has magnitude only and no direction",
+      "**Velocity** is a vector quantity that has both magnitude and direction",
+      "**Acceleration** is the rate of change of velocity and is measured in m/s²",
+      "On a **distance-time graph**, the gradient gives the speed of the object",
+      "On a **velocity-time graph**, the gradient gives the acceleration and the area under the graph gives the distance travelled",
+      "**Uniform acceleration** occurs when velocity changes by equal amounts in equal time intervals",
+      "At the highest point of vertical motion, velocity is zero but acceleration due to gravity is still 9.8 m/s² downward",
+      "**Average speed** equals total distance divided by total time taken"
+    ],
+    "definitions": [
+      {
+        "term": "Speed",
+        "definition": "The distance travelled per unit time"
+      },
+      {
+        "term": "Velocity",
+        "definition": "The displacement per unit time in a given direction"
+      },
+      {
+        "term": "Acceleration",
+        "definition": "The rate of change of velocity"
+      },
+      {
+        "term": "Displacement",
+        "definition": "The distance moved in a particular direction from a reference point"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show the formula, substitute values, and give the final answer with correct unit"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "State what happens at different stages of the motion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A bus travelling from Lahore to Islamabad covers 120 km in the first 2 hours, then stops for 30 minutes, and covers the remaining 150 km in 2.5 hours. Calculate the average speed for the entire journey.",
+      "marks": 3,
+      "answer": "Total distance = 120 + 150 = 270 km. Total time = 2 + 0.5 + 2.5 = 5 hours. Average speed = total distance ÷ total time = 270 ÷ 5 = 54 km/h",
+      "markBreakdown": [
+        "Mark 1: Total distance = 270 km",
+        "Mark 2: Total time = 5 hours",
+        "Mark 3: Average speed = 54 km/h"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse speed with velocity - speed has no direction, velocity does",
+      "Students often forget to include stopping time when calculating average speed",
+      "Never read velocity-time graphs as distance-time graphs - check the y-axis label carefully",
+      "Students often say acceleration is zero at the top of projectile motion - velocity is zero but acceleration due to gravity continues",
+      "Never use speed when the question asks for velocity - always include direction for velocity"
+    ],
+    "examinerTips": [
+      "Motion graphs appear in almost every Paper 2 - practice reading gradients and areas",
+      "Always state the direction when giving velocity as an answer",
+      "Show all steps in calculations even for simple arithmetic",
+      "Remember to convert units if necessary (km/h to m/s: divide by 3.6)"
+    ],
+    "formulas": [
+      "speed = distance ÷ time",
+      "acceleration = change in velocity ÷ time",
+      "v = u + at",
+      "s = ut + ½at²",
+      "v² = u² + 2as"
+    ],
+    "keyDiagramDescription": "Distance-time and velocity-time graphs showing straight lines for uniform motion and curved lines for accelerated motion, with annotations showing how to find speed/acceleration from gradients"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:59:09.203Z",
+  "updated_at": "2026-04-05T20:59:09.203Z"
+}

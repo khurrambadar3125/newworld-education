@@ -1,0 +1,97 @@
+{
+  "subject": "Biology",
+  "subject_code": "5090",
+  "level": "O Level",
+  "theme": "Respiration and Coordination",
+  "chapter_id": "11",
+  "chapter_name": "Homeostasis",
+  "note_data": {
+    "title": "Homeostasis",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Homeostasis** is the maintenance of a constant internal environment within narrow limits, despite changes in external conditions",
+      "**Temperature regulation** in humans involves the skin, blood vessels, sweat glands, and behavioural responses to maintain 37°C",
+      "**Vasodilation** occurs when blood vessels near the skin surface widen to increase heat loss by radiation and convection",
+      "**Vasoconstriction** occurs when blood vessels near the skin surface narrow to reduce heat loss and conserve body heat",
+      "**Blood sugar regulation** involves insulin (lowers blood glucose) and glucagon (raises blood glucose) from the pancreas",
+      "**Insulin** converts excess glucose to glycogen for storage in the liver when blood glucose is too high",
+      "**Glucagon** converts stored glycogen back to glucose in the liver when blood glucose is too low",
+      "The **kidney** regulates water content through ADH (antidiuretic hormone) which controls water reabsorption in collecting ducts",
+      "**Excretion** removes metabolic waste products including urea, carbon dioxide, and excess water from the body",
+      "**Negative feedback** mechanisms detect changes and trigger responses to return conditions back to the set point"
+    ],
+    "definitions": [
+      {
+        "term": "Homeostasis",
+        "definition": "The maintenance of a constant internal environment within narrow limits, despite changes in external conditions"
+      },
+      {
+        "term": "Insulin",
+        "definition": "A hormone produced by the pancreas that lowers blood glucose concentration by converting glucose to glycogen"
+      },
+      {
+        "term": "Excretion",
+        "definition": "The removal of toxic waste products of metabolism and excess substances from the body"
+      },
+      {
+        "term": "Negative feedback",
+        "definition": "A control mechanism that detects changes from the set point and triggers responses to counteract the change"
+      },
+      {
+        "term": "Vasodilation",
+        "definition": "The widening of blood vessels near the skin surface to increase heat loss from the body"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of events or detailed account of the process"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between two processes"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how the human body regulates blood glucose concentration when it becomes too high. [4]",
+      "marks": 4,
+      "answer": "High blood glucose concentration is detected by the pancreas. The pancreas secretes insulin into the bloodstream. Insulin causes the liver to convert excess glucose into glycogen for storage. This lowers blood glucose concentration back to normal levels through negative feedback.",
+      "markBreakdown": [
+        "Mark 1: High blood glucose detected by pancreas",
+        "Mark 2: Pancreas secretes insulin",
+        "Mark 3: Insulin converts glucose to glycogen in liver",
+        "Mark 4: Blood glucose returns to normal/negative feedback"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'insulin breaks down glucose' — always say 'insulin converts glucose to glycogen'",
+      "Students often confuse vasodilation with vasoconstriction — vasodilation increases heat loss, vasoconstriction decreases heat loss",
+      "Don't say 'kidneys filter blood' — say 'kidneys filter plasma to form urine'",
+      "Never write 'removes waste' — always specify 'removes metabolic waste products'",
+      "Students forget that negative feedback returns conditions to set point, not just detects changes"
+    ],
+    "examinerTips": [
+      "Temperature regulation questions appear almost every year in Paper 2",
+      "Always mention 'negative feedback' when explaining homeostatic control",
+      "Use specific hormone names: insulin, glucagon, ADH - not just 'hormones'",
+      "For kidney questions, mention both filtration and reabsorption processes",
+      "Practice drawing and labelling nephron diagrams - commonly examined"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Nephron structure showing glomerulus, Bowman's capsule, proximal convoluted tubule, loop of Henle, distal convoluted tubule, and collecting duct. Also temperature regulation flowchart showing stimulus → receptor → coordinator → effector → response pathway."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:29:27.757Z",
+  "updated_at": "2026-04-05T21:29:27.757Z"
+}

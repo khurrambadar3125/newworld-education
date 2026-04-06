@@ -1,0 +1,97 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Experimental Chemistry",
+  "chapter_id": "21",
+  "chapter_name": "Experimental design and separation techniques",
+  "note_data": {
+    "title": "Experimental design and separation techniques",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Pure substances** have fixed melting and boiling points, while impure substances melt/boil over a range of temperatures",
+      "**Simple distillation** separates liquids with very different boiling points (difference >25°C) or separates a solvent from dissolved solids",
+      "**Fractional distillation** separates liquids with similar boiling points using a fractionating column packed with glass beads",
+      "**Paper chromatography** separates mixtures based on different solubilities in the solvent - more soluble substances travel further",
+      "**Rf value** = distance travelled by substance ÷ distance travelled by solvent front (always less than 1)",
+      "**Crystallisation** purifies soluble solids by dissolving in minimum hot water, filtering hot, then cooling to form crystals",
+      "**Filtration** separates insoluble solids from liquids using filter paper in a funnel",
+      "In experimental design, **control variables** must be kept constant to ensure a fair test",
+      "**Locating agents** like iodine vapour or ninhydrin are used to make colourless spots visible in chromatography"
+    ],
+    "definitions": [
+      {
+        "term": "Pure substance",
+        "definition": "A substance that contains only one type of element or compound with fixed melting and boiling points"
+      },
+      {
+        "term": "Chromatography",
+        "definition": "A separation technique that separates mixtures based on the different solubilities of substances in a solvent"
+      },
+      {
+        "term": "Rf value",
+        "definition": "The ratio of the distance travelled by a substance to the distance travelled by the solvent front"
+      },
+      {
+        "term": "Distillation",
+        "definition": "A separation technique that separates liquids based on their different boiling points"
+      },
+      {
+        "term": "Crystallisation",
+        "definition": "A purification technique where a solute forms crystals when its hot saturated solution is cooled"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give step-by-step method in logical order with apparatus mentioned"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give a reasonable scientific idea based on the information provided"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A student wants to separate and purify salt from a mixture of salt and sand. Describe the method the student should use.",
+      "marks": 4,
+      "answer": "Add distilled water to dissolve the salt. Filter the mixture to separate the sand (residue) from the salt solution (filtrate). Heat the filtrate gently to evaporate the water and obtain pure salt crystals.",
+      "markBreakdown": [
+        "Mark 1: Add water to dissolve salt",
+        "Mark 2: Filter to separate sand",
+        "Mark 3: Sand remains as residue",
+        "Mark 4: Evaporate water to obtain salt crystals"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'boil the solution' for crystallisation - always say 'heat gently' or 'evaporate'",
+      "Students often confuse simple and fractional distillation - remember the 25°C boiling point difference rule",
+      "In chromatography, never say spots 'dissolve' in solvent - say they are 'carried up' or 'travel with' the solvent",
+      "Don't forget to mention 'minimum amount of hot water' in crystallisation methods",
+      "Students mix up residue and filtrate - residue stays on filter paper, filtrate passes through"
+    ],
+    "examinerTips": [
+      "Separation techniques appear in every paper - learn the apparatus diagrams",
+      "Always calculate Rf values to 2 decimal places and show your working",
+      "For purity tests, mention both melting point AND boiling point determination",
+      "In method questions, use command words like 'heat', 'filter', 'collect' for clear instructions"
+    ],
+    "formulas": [
+      "Rf value = distance travelled by substance ÷ distance travelled by solvent front"
+    ],
+    "keyDiagramDescription": "Simple distillation setup showing flask with mixture, thermometer, condenser with cold water in/out, and collection beaker. Fractional distillation has additional fractionating column with glass beads between flask and condenser."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:58:07.651Z",
+  "updated_at": "2026-04-05T20:58:07.651Z"
+}

@@ -1,0 +1,90 @@
+{
+  "subject": "Islamiyat",
+  "subject_code": "2058",
+  "level": "O Level",
+  "theme": "Paper 1",
+  "chapter_id": "P1.1",
+  "chapter_name": "Major Themes of the Quran",
+  "note_data": {
+    "title": "Major Themes of the Quran",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Tawhid** (Unity of God) is the central theme - Allah is One and Unique with no partners or associates",
+      "**Risalah** (Prophethood) - Muhammad (PBUH) is the final messenger sent to guide humanity to the straight path",
+      "**Akhirah** (Life after Death) - belief in resurrection, Day of Judgment, and eternal reward or punishment",
+      "**Justice** - Allah is perfectly just and will judge all people fairly according to their deeds and intentions",
+      "**Worship and Obedience** - humans must worship Allah alone and follow His commands revealed in the Quran",
+      "**Moral and Social Values** - establishing justice, helping the poor, maintaining family ties, and good conduct",
+      "**Guidance for Humanity** - the Quran provides complete guidance for individual and collective life",
+      "**Stories of Previous Prophets** - lessons from prophets like Ibrahim, Musa, and Isa to guide believers"
+    ],
+    "definitions": [
+      {
+        "term": "Tawhid",
+        "definition": "The absolute unity and uniqueness of Allah, with no partners, associates or equals in His divinity"
+      },
+      {
+        "term": "Risalah",
+        "definition": "The belief that Allah sends messengers to guide humanity, with Muhammad (PBUH) being the final prophet"
+      },
+      {
+        "term": "Akhirah",
+        "definition": "Life after death, including resurrection, Day of Judgment, and eternal life in Paradise or Hell"
+      },
+      {
+        "term": "Surah",
+        "definition": "A chapter of the Quran, with 114 surahs in total ranging from 3 to 286 verses"
+      },
+      {
+        "term": "Ayah",
+        "definition": "A verse of the Quran, literally meaning 'sign' as each verse is a sign from Allah"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one theme in one sentence. Example: 'Tawhid is a major theme of the Quran.'"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Name the theme + explain its importance using 'because' or 'this shows that'"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Give multiple themes with detailed explanations and conclude which is most important"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why Tawhid is considered the most important theme of the Quran. [4 marks]",
+      "marks": 4,
+      "answer": "Tawhid is the most important theme because it is the foundation of Islamic belief that Allah is One and Unique. This is shown in Surah Al-Ikhlas which declares 'Say He is Allah, the One' emphasizing His absolute unity. Tawhid is important because it establishes that Allah alone deserves worship and has no partners or associates. The Quran repeatedly emphasizes this theme because shirk (associating partners with Allah) is the greatest sin, making Tawhid essential for salvation.",
+      "markBreakdown": [
+        "Mark 1: Tawhid means Allah is One and Unique",
+        "Mark 2: Reference to Surah Al-Ikhlas or similar",
+        "Mark 3: Explanation that Allah alone deserves worship",
+        "Mark 4: Connection to shirk being the greatest sin"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'the Quran has many themes' - always specify and explain the actual themes",
+      "Students often forget to give Quranic references when explaining themes - always include surah names or verses",
+      "Don't confuse themes with subjects - themes are overarching messages, not just topics mentioned",
+      "Never write 'God' - always use 'Allah' in Islamiyat answers",
+      "Students mix up Risalah (prophethood) with Revelation - be precise about definitions"
+    ],
+    "examinerTips": [
+      "This topic appears in every paper - learn at least 5 major themes with Quranic evidence",
+      "Always link themes to practical Islamic life for higher level answers",
+      "Questions often ask for 'most important theme' - prepare a ranking with justifications",
+      "Use Arabic terms correctly - Tawhid, Risalah, Akhirah score higher than English equivalents"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "No specific diagram required, but a mind map showing the major themes (Tawhid at center, connected to Risalah, Akhirah, Justice, Worship, Moral Values) with key Quranic references for each theme"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:43:42.661Z",
+  "updated_at": "2026-04-05T20:43:42.662Z"
+}

@@ -1,0 +1,91 @@
+{
+  "subject": "Biology",
+  "subject_code": "5090",
+  "level": "O Level",
+  "theme": "Respiration and Coordination",
+  "chapter_id": "9",
+  "chapter_name": "Gas exchange",
+  "note_data": {
+    "title": "Gas exchange",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Gas exchange** occurs in the alveoli where oxygen diffuses from the air into the blood and carbon dioxide diffuses from the blood into the air",
+      "**Alveoli** are tiny air sacs at the end of bronchioles with a large surface area for efficient gas exchange",
+      "**Breathing** involves inhalation (breathing in) and exhalation (breathing out) to move air in and out of the lungs",
+      "During **inhalation**, the diaphragm contracts and moves down, intercostal muscles contract moving ribs up and out, increasing chest volume and decreasing pressure",
+      "During **exhalation**, the diaphragm relaxes and moves up, intercostal muscles relax moving ribs down and in, decreasing chest volume and increasing pressure",
+      "Alveoli have **adaptations** for efficient gas exchange: thin walls (one cell thick), moist surface, rich blood supply, and large surface area",
+      "**Gaseous exchange** occurs by diffusion down concentration gradients - oxygen moves from high to low concentration, carbon dioxide moves from high to low concentration",
+      "The **breathing system** includes nose, trachea, bronchi, bronchioles, alveoli, diaphragm and intercostal muscles",
+      "**Inspired air** contains approximately 21% oxygen and 0.04% carbon dioxide, **expired air** contains approximately 16% oxygen and 4% carbon dioxide"
+    ],
+    "definitions": [
+      {
+        "term": "Gas exchange",
+        "definition": "The process by which oxygen and carbon dioxide are exchanged between an organism and its environment"
+      },
+      {
+        "term": "Alveoli",
+        "definition": "Tiny air sacs in the lungs where gas exchange takes place"
+      },
+      {
+        "term": "Breathing",
+        "definition": "The process of moving air into and out of the lungs"
+      },
+      {
+        "term": "Diffusion",
+        "definition": "The movement of particles from a region of high concentration to a region of low concentration"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of the process step by step"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between inspired and expired air"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how alveoli are adapted for efficient gas exchange. [3 marks]",
+      "marks": 3,
+      "answer": "Alveoli have thin walls which are only one cell thick, providing a short diffusion pathway for gases. They have a large surface area due to their large number and folded structure, allowing more gas exchange to occur. They have a rich blood supply which maintains concentration gradients by continuously removing oxygen and bringing carbon dioxide.",
+      "markBreakdown": [
+        "Mark 1: Thin walls/one cell thick for short diffusion pathway",
+        "Mark 2: Large surface area for more gas exchange",
+        "Mark 3: Rich blood supply maintains concentration gradients"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'air goes to the heart' — oxygen dissolves in blood plasma and binds to haemoglobin in red blood cells",
+      "Students often confuse breathing (physical movement of air) with respiration (chemical process in cells)",
+      "Never say 'lungs expand' — the chest cavity expands causing lungs to expand",
+      "Don't say 'oxygen is used up' — say 'oxygen concentration decreases' in expired air",
+      "Students forget that expired air still contains oxygen (16%) — it's not all used up"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2, especially breathing mechanism",
+      "Always give percentages when comparing inspired and expired air composition",
+      "Draw and label alveoli diagram showing blood capillaries for full marks",
+      "Use the word 'concentration gradient' when explaining diffusion",
+      "Remember both inhalation AND exhalation processes for breathing questions"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Cross-section of alveoli showing: alveolar wall (one cell thick), blood capillary, red blood cells, direction of oxygen and carbon dioxide diffusion, and labels for moist surface and rich blood supply"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:28:46.747Z",
+  "updated_at": "2026-04-05T21:28:46.747Z"
+}

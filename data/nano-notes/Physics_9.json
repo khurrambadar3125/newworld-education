@@ -1,0 +1,89 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "Thermal Physics",
+  "chapter_id": "9",
+  "chapter_name": "The kinetic particle model of matter",
+  "note_data": {
+    "title": "The kinetic particle model of matter",
+    "readTime": "8 min",
+    "keyPoints": [
+      "All matter is made up of particles that are in **constant random motion**",
+      "The **kinetic energy** of particles increases with temperature",
+      "In gases, particles are **far apart** and move freely in all directions",
+      "In liquids, particles are **close together** but can move past each other",
+      "In solids, particles are **close together** and vibrate about fixed positions",
+      "**Gas pressure** is caused by particles colliding with container walls",
+      "At higher temperatures, gas particles move **faster** and collide more frequently",
+      "**Brownian motion** provides evidence for the kinetic particle model",
+      "The **absolute zero** temperature (-273°C) is when particle motion would stop completely"
+    ],
+    "definitions": [
+      {
+        "term": "Kinetic particle model",
+        "definition": "A model that describes matter as being made up of particles in constant random motion"
+      },
+      {
+        "term": "Brownian motion",
+        "definition": "The random movement of particles suspended in a fluid caused by collisions with fast-moving molecules"
+      },
+      {
+        "term": "Absolute zero",
+        "definition": "The lowest possible temperature (-273°C or 0K) at which particle motion would cease"
+      },
+      {
+        "term": "Gas pressure",
+        "definition": "The force per unit area exerted by gas particles colliding with the walls of their container"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a detailed account of the particle arrangement and movement"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why the pressure of a gas in a sealed container increases when the temperature is raised. [3 marks]",
+      "marks": 3,
+      "answer": "When temperature increases, the kinetic energy of gas particles increases. This causes the particles to move faster. The faster-moving particles collide with the container walls more frequently and with greater force, resulting in increased pressure.",
+      "markBreakdown": [
+        "Mark 1: Temperature increase causes kinetic energy to increase",
+        "Mark 2: Particles move faster",
+        "Mark 3: More frequent/harder collisions with walls increase pressure"
+      ]
+    },
+    "commonMistakes": [
+      "Never say particles 'stop moving' at absolute zero — say motion would cease or become minimal",
+      "Students often confuse particle spacing in liquids and gases — liquids have particles close together",
+      "Never say gas particles are 'packed closely' — they are far apart with large spaces between them",
+      "Don't say pressure is caused by particle expansion — it's caused by collisions with container walls",
+      "Students forget that particles are always moving, even in solids they vibrate"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every Paper 2, often linked to gas laws or states of matter",
+      "Always mention 'random motion' when describing particle movement",
+      "Draw particle diagrams showing relative spacing and movement for different states",
+      "Use terms like 'kinetic energy' rather than just 'energy' for precision"
+    ],
+    "formulas": [
+      "PV = constant (at constant temperature)",
+      "P/T = constant (at constant volume)"
+    ],
+    "keyDiagramDescription": "Particle arrangement diagrams showing: solids (particles close, vibrating in fixed positions), liquids (particles close, sliding past each other), gases (particles far apart, moving freely in all directions with motion arrows)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:16:47.631Z",
+  "updated_at": "2026-04-05T21:16:47.631Z"
+}

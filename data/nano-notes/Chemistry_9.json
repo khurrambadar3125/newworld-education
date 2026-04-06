@@ -1,0 +1,91 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Physical Chemistry",
+  "chapter_id": "9",
+  "chapter_name": "Reversible reactions and equilibrium",
+  "note_data": {
+    "title": "Reversible reactions and equilibrium",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **reversible reaction** is one that can proceed in both the forward and backward directions simultaneously",
+      "At **dynamic equilibrium**, the rate of forward reaction equals the rate of backward reaction",
+      "The **Haber process** produces ammonia: N₂ + 3H₂ ⇌ 2NH₃ (exothermic reaction)",
+      "Haber process conditions: **450°C temperature, 200 atmospheres pressure, iron catalyst**",
+      "The **Contact process** produces sulfur trioxide: 2SO₂ + O₂ ⇌ 2SO₃ (exothermic reaction)",
+      "Contact process conditions: **450°C temperature, 1-2 atmospheres pressure, vanadium(V) oxide catalyst**",
+      "**Le Chatelier's principle**: if conditions change, equilibrium shifts to oppose the change",
+      "Increasing pressure favours the side with **fewer gaseous molecules**",
+      "Increasing temperature favours the **endothermic direction**",
+      "**Catalysts** speed up both forward and backward reactions equally, so equilibrium position is unchanged"
+    ],
+    "definitions": [
+      {
+        "term": "Reversible reaction",
+        "definition": "A chemical reaction that can proceed in both forward and backward directions"
+      },
+      {
+        "term": "Dynamic equilibrium",
+        "definition": "The state where the rate of forward reaction equals the rate of backward reaction, and concentrations remain constant"
+      },
+      {
+        "term": "Le Chatelier's principle",
+        "definition": "If a system at equilibrium is subjected to a change, the equilibrium will shift to oppose that change"
+      },
+      {
+        "term": "Catalyst",
+        "definition": "A substance that increases the rate of a chemical reaction without being permanently changed"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Predict",
+        "instruction": "State what happens + apply Le Chatelier's principle to justify"
+      }
+    ],
+    "modelAnswer": {
+      "question": "The Haber process is used to manufacture ammonia. State the balanced equation and explain why high pressure is used in this process.",
+      "marks": 4,
+      "answer": "N₂ + 3H₂ ⇌ 2NH₃. High pressure is used because there are 4 molecules of reactants but only 2 molecules of product. According to Le Chatelier's principle, high pressure favours the side with fewer molecules, so equilibrium shifts right to produce more ammonia.",
+      "markBreakdown": [
+        "Mark 1: Correct balanced equation with ⇌",
+        "Mark 2: 4 molecules of reactants identified",
+        "Mark 3: 2 molecules of product identified",
+        "Mark 4: Le Chatelier's principle correctly applied"
+      ]
+    },
+    "commonMistakes": [
+      "Never use → for reversible reactions — always use ⇌ symbol",
+      "Students often say 'equilibrium stops' — it's dynamic so reactions continue at equal rates",
+      "Don't say catalysts 'shift equilibrium' — they only affect the rate of reaching equilibrium",
+      "Never confuse Haber (ammonia) with Contact (sulfur trioxide) process conditions",
+      "Students forget that fertiliser production requires ammonia to be converted to ammonium compounds"
+    ],
+    "examinerTips": [
+      "Reversible reactions appear in every Paper 2 — know both industrial processes thoroughly",
+      "Always include the ⇌ symbol when writing reversible reaction equations",
+      "Link industrial processes to Pakistan's agricultural needs for fertilisers",
+      "Remember that compromise conditions are used in industry to balance yield and rate"
+    ],
+    "formulas": [
+      "N₂ + 3H₂ ⇌ 2NH₃",
+      "2SO₂ + O₂ ⇌ 2SO₃"
+    ],
+    "keyDiagramDescription": "Energy level diagram showing forward and backward reaction pathways with activation energies, illustrating how catalysts lower activation energy for both directions equally"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:54:00.352Z",
+  "updated_at": "2026-04-05T20:54:00.352Z"
+}

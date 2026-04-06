@@ -1,0 +1,89 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "Thermal Physics",
+  "chapter_id": "11",
+  "chapter_name": "Thermal energy transfers",
+  "note_data": {
+    "title": "Thermal energy transfers",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Conduction** occurs in solids when thermal energy is transferred through vibrating particles without the particles themselves moving",
+      "**Metals** are good thermal conductors because they have free electrons that can move and transfer kinetic energy quickly",
+      "**Convection** occurs in fluids (liquids and gases) when heated particles become less dense, rise, and are replaced by cooler, denser particles",
+      "**Radiation** is the transfer of thermal energy by electromagnetic waves that can travel through a vacuum",
+      "**Dark, matt surfaces** are good absorbers and good emitters of thermal radiation",
+      "**Light, shiny surfaces** are poor absorbers and poor emitters of thermal radiation - they are good reflectors",
+      "**Vacuum flasks** prevent thermal energy transfer by eliminating conduction and convection (vacuum) and reducing radiation (silvered surfaces)",
+      "Thermal energy always flows from a **region of higher temperature to a region of lower temperature**"
+    ],
+    "definitions": [
+      {
+        "term": "Conduction",
+        "definition": "The transfer of thermal energy through matter by the vibration of particles, without the particles themselves moving from place to place"
+      },
+      {
+        "term": "Convection",
+        "definition": "The transfer of thermal energy in fluids by the movement of the heated fluid itself"
+      },
+      {
+        "term": "Radiation",
+        "definition": "The transfer of thermal energy by electromagnetic waves"
+      },
+      {
+        "term": "Thermal conductor",
+        "definition": "A material that allows thermal energy to pass through it easily"
+      },
+      {
+        "term": "Thermal insulator",
+        "definition": "A material that does not allow thermal energy to pass through it easily"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give the sequence of events step by step for convection processes"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why metals are good thermal conductors but non-metals are poor thermal conductors. [3 marks]",
+      "marks": 3,
+      "answer": "Metals contain free electrons that can move through the metal structure. When heated, these free electrons gain kinetic energy and move faster, colliding with other electrons and atoms to transfer thermal energy quickly. Non-metals do not have free electrons, so thermal energy can only be transferred by slower vibrations of atoms, making them poor conductors.",
+      "markBreakdown": [
+        "Mark 1: Metals have free electrons",
+        "Mark 2: Free electrons can move and transfer kinetic energy/collide with other particles",
+        "Mark 3: Non-metals lack free electrons/only transfer energy by vibrations"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'heat travels' — always say 'thermal energy is transferred'",
+      "Students often confuse good absorbers with good reflectors - dark matt surfaces absorb, light shiny surfaces reflect",
+      "Don't say convection happens in solids - it only occurs in fluids (liquids and gases)",
+      "Avoid saying 'cold air sinks' - say 'cooler, denser air sinks'",
+      "Never say radiation needs a medium - it can travel through a vacuum"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2, especially convection and radiation questions",
+      "Always mention particle movement when explaining conduction and convection",
+      "For convection, always include density changes in your explanation",
+      "Vacuum flask questions are very common - know all three methods of thermal transfer prevention"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Convection current diagram showing heated fluid rising, cooling at the top, becoming denser and sinking, creating a circular current. Also important: vacuum flask cross-section showing vacuum space and silvered surfaces."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:17:27.567Z",
+  "updated_at": "2026-04-05T21:17:27.567Z"
+}

@@ -1,0 +1,97 @@
+{
+  "subject": "Pakistan Studies",
+  "subject_code": "2059",
+  "level": "O Level",
+  "theme": "Paper 2: The Environment of Pakistan",
+  "chapter_id": "P2.6",
+  "chapter_name": "Trade and Commerce",
+  "note_data": {
+    "title": "Trade and Commerce",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Trade** is the exchange of goods and services between countries, essential for Pakistan's economic development",
+      "Pakistan's main **exports** include textiles (60% of total exports), rice, cotton, leather goods, and sports equipment",
+      "Major **imports** include petroleum products, machinery, chemicals, fertilizers, and electrical equipment",
+      "China is Pakistan's largest **trading partner**, followed by USA, UAE, and Saudi Arabia under CPEC",
+      "**Balance of trade** shows Pakistan usually has a trade deficit as imports exceed exports in value",
+      "The **China-Pakistan Economic Corridor (CPEC)** has increased trade volume and improved infrastructure",
+      "**Gwadar Port** serves as a strategic deep-water port enhancing Pakistan's trade capacity",
+      "Pakistan faces trade challenges including **energy shortages**, poor infrastructure, and limited industrial capacity",
+      "**Free Trade Agreements** with countries like China and Sri Lanka have boosted Pakistan's trade relations"
+    ],
+    "definitions": [
+      {
+        "term": "Trade",
+        "definition": "The exchange of goods and services between countries involving imports and exports"
+      },
+      {
+        "term": "Export",
+        "definition": "Goods and services sold by Pakistan to other countries to earn foreign exchange"
+      },
+      {
+        "term": "Import",
+        "definition": "Goods and services bought by Pakistan from other countries using foreign exchange"
+      },
+      {
+        "term": "Balance of Trade",
+        "definition": "The difference between the value of a country's exports and imports over a period"
+      },
+      {
+        "term": "Trading Partner",
+        "definition": "A country with which Pakistan has significant trade relations through imports and exports"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics and features without explaining why"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Give advantages AND disadvantages, then reach a conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why Pakistan has a trade deficit. [4 marks]",
+      "marks": 4,
+      "answer": "Pakistan has a trade deficit because the value of imports exceeds the value of exports. This is because Pakistan imports expensive petroleum products and machinery which are high in value. Additionally, Pakistan's main exports are agricultural products and textiles which have lower unit values compared to manufactured imports. Furthermore, Pakistan's industrial sector is underdeveloped so it cannot produce enough high-value manufactured goods for export.",
+      "markBreakdown": [
+        "Mark 1: Imports exceed exports in value",
+        "Mark 2: Expensive petroleum/machinery imports",
+        "Mark 3: Low-value agricultural exports",
+        "Mark 4: Underdeveloped industrial sector"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse trade deficit with budget deficit - trade deficit is specifically about imports vs exports",
+      "Students often forget to mention specific Pakistani exports like textiles and rice in answers",
+      "Don't just list trading partners - explain WHY they are important (e.g., China due to CPEC)",
+      "Students confuse Gwadar Port with Karachi Port - know their different roles",
+      "Never say 'Pakistan only exports agricultural products' - include textiles and manufactured goods"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 Section B questions",
+      "Always use specific examples of Pakistani exports and imports for full marks",
+      "Questions often link trade with economic development - be ready to connect both topics",
+      "CPEC and Gwadar Port are current affairs - examiners expect these in modern trade answers"
+    ],
+    "formulas": [
+      "Balance of Trade = Value of Exports - Value of Imports"
+    ],
+    "keyDiagramDescription": "Flow chart showing Pakistan's major exports (textiles, rice, cotton) going to trading partners (China, USA, UAE) and imports (petroleum, machinery, chemicals) coming from these countries, with arrows indicating trade deficit"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:50:09.964Z",
+  "updated_at": "2026-04-05T20:50:09.964Z"
+}

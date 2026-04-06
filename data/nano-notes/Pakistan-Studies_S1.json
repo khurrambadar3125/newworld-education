@@ -1,0 +1,90 @@
+{
+  "subject": "Pakistan Studies",
+  "subject_code": "2059",
+  "level": "O Level",
+  "theme": "Paper 1: History and Culture of Pakistan",
+  "chapter_id": "S1",
+  "chapter_name": "Section 1: Culture and the Making of Pakistan",
+  "note_data": {
+    "title": "Section 1: Culture and the Making of Pakistan - Islamic Reformers",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Shah Waliullah** was an 18th century Islamic reformer who emphasized returning to the Quran and Hadith as primary sources of Islamic guidance",
+      "Shah Waliullah translated the **Quran into Persian** to make it accessible to the common people of the subcontinent",
+      "He established the **Madrassah-i-Rahimiyyah** in Delhi to provide Islamic education and train religious scholars",
+      "**Syed Ahmad Barelvi** launched the **Jihad Movement** (1826-1831) against Sikh rule in Punjab and British influence",
+      "Syed Ahmad established an **Islamic state at Balakot** based on Sharia law as a model for Muslim governance",
+      "Both reformers emphasized **Ijtihad** (independent reasoning) rather than blind following of religious traditions",
+      "The reformers' work helped preserve **Islamic identity** during the decline of Mughal power and rise of British control",
+      "Their teachings inspired later movements including the **Pakistan Movement** by emphasizing separate Muslim identity"
+    ],
+    "definitions": [
+      {
+        "term": "Shah Waliullah",
+        "definition": "An 18th century Islamic reformer who translated the Quran into Persian and established religious schools to revive Islamic teachings in the subcontinent"
+      },
+      {
+        "term": "Jihad Movement",
+        "definition": "A religious and political movement led by Syed Ahmad Barelvi (1826-1831) to establish Islamic rule and resist Sikh and British control"
+      },
+      {
+        "term": "Ijtihad",
+        "definition": "Independent reasoning and interpretation of Islamic law based on the Quran and Hadith rather than blind following of traditions"
+      },
+      {
+        "term": "Balakot",
+        "definition": "The place where Syed Ahmad Barelvi established an Islamic state based on Sharia law and where he died fighting the Sikhs in 1831"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Why",
+        "instruction": "Give reasons with explanations - link cause and effect clearly"
+      },
+      {
+        "commandWord": "How",
+        "instruction": "Describe the method/process - show the steps taken"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why Shah Waliullah was important for the Muslims of the subcontinent. [4 marks]",
+      "marks": 4,
+      "answer": "Shah Waliullah translated the Quran from Arabic into Persian because this made Islamic teachings accessible to ordinary Muslims who could not read Arabic. He established the Madrassah-i-Rahimiyyah in Delhi because this provided proper Islamic education and trained religious scholars. He emphasized returning to the Quran and Hadith as primary sources because this helped purify Islamic practices from un-Islamic customs. His teachings preserved Islamic identity during Mughal decline because they gave Muslims a sense of religious unity and purpose.",
+      "markBreakdown": [
+        "Mark 1: Translation of Quran into Persian with explanation",
+        "Mark 2: Establishment of Madrassah with explanation",
+        "Mark 3: Emphasis on Quran and Hadith with explanation",
+        "Mark 4: Preservation of Islamic identity with explanation"
+      ]
+    },
+    "commonMistakes": [
+      "Never say Shah Waliullah 'started' the Pakistan Movement — he influenced later movements that led to Pakistan",
+      "Students often confuse Syed Ahmad Barelvi with Sir Syed Ahmad Khan — they are different people from different time periods",
+      "Don't say the Jihad Movement was only against the British — it was primarily against Sikh rule in Punjab",
+      "Avoid saying they 'modernized' Islam — they wanted to 'purify' and return to original Islamic teachings",
+      "Never write that Balakot was successful long-term — it lasted only briefly before Syed Ahmad was killed"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 Section A questions",
+      "Always explain the impact/significance, not just what they did",
+      "Link reformers' work to later Pakistan Movement for higher marks",
+      "Use specific examples like Quran translation and Balakot state"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Timeline showing: Mughal decline → Shah Waliullah's reforms (1703-1762) → Syed Ahmad's Jihad Movement (1826-1831) → Later Islamic movements → Pakistan Movement"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:46:58.569Z",
+  "updated_at": "2026-04-05T20:46:58.570Z"
+}

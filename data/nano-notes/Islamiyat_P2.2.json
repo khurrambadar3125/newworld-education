@@ -1,0 +1,92 @@
+{
+  "subject": "Islamiyat",
+  "subject_code": "2058",
+  "level": "O Level",
+  "theme": "Paper 2",
+  "chapter_id": "P2.2",
+  "chapter_name": "History and Importance of the Hadiths",
+  "note_data": {
+    "title": "History and Importance of the Hadiths",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Hadith** are the sayings, actions and silent approvals of Prophet Muhammad (pbuh)",
+      "The **collection of hadith** began during the Prophet's lifetime when some companions wrote down his sayings",
+      "**Imam Bukhari** (810-870 CE) compiled Sahih al-Bukhari, considered the most authentic collection of hadith after the Quran",
+      "**Imam Muslim** (815-875 CE) compiled Sahih Muslim, the second most authentic hadith collection",
+      "Bukhari examined over **600,000 hadith** but only included 7,275 in his collection due to strict authentication criteria",
+      "Muslim scholars used the **science of hadith criticism** (ilm al-hadith) to verify the authenticity of narrations",
+      "The **chain of transmission** (isnad) and the **text of the hadith** (matn) were both carefully examined",
+      "Hadith provide **practical guidance** for implementing Quranic teachings in daily life",
+      "Hadith explain the **context and meaning** of many Quranic verses",
+      "The **preservation of hadith** was essential for understanding and following the Sunnah of the Prophet"
+    ],
+    "definitions": [
+      {
+        "term": "Hadith",
+        "definition": "The sayings, actions and silent approvals of Prophet Muhammad (pbuh) that provide guidance for Muslims"
+      },
+      {
+        "term": "Isnad",
+        "definition": "The chain of transmission that traces a hadith back to its original source through reliable narrators"
+      },
+      {
+        "term": "Matn",
+        "definition": "The actual text or content of a hadith, which must be consistent with Quranic teachings"
+      },
+      {
+        "term": "Sahih",
+        "definition": "The highest grade of hadith authenticity, meaning the hadith is sound and reliable"
+      },
+      {
+        "term": "Sunnah",
+        "definition": "The way of life and practices of Prophet Muhammad (pbuh) as recorded in authentic hadith"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give details about the process or method without explaining why"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the importance of Imam Bukhari's work in collecting hadith. [4]",
+      "marks": 4,
+      "answer": "Imam Bukhari's work was important because he established strict criteria for authenticating hadith, examining over 600,000 narrations but only accepting 7,275 that met his standards. His collection Sahih al-Bukhari is considered the most authentic book after the Quran because he verified both the chain of transmission (isnad) and the text (matn) of each hadith. Bukhari's methodology became the standard for hadith criticism, ensuring that only reliable sayings of the Prophet were preserved. His work was crucial for preserving the Sunnah accurately for future generations of Muslims.",
+      "markBreakdown": [
+        "Mark 1: Established strict authentication criteria",
+        "Mark 2: Sahih al-Bukhari most authentic after Quran",
+        "Mark 3: Verified isnad and matn",
+        "Mark 4: Preserved Sunnah for future generations"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse hadith with Quran - hadith are sayings of the Prophet, not divine revelation",
+      "Students often mix up Bukhari and Muslim - remember Bukhari came first and is considered more authentic",
+      "Don't say hadith were only collected after the Prophet's death - collection began during his lifetime",
+      "Never ignore the importance of isnad - the chain of transmission is crucial for authenticity",
+      "Students sometimes forget that weak hadith exist - not all hadith are equally reliable"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 questions about sources of Islamic law",
+      "Always mention specific numbers when discussing Bukhari's collection (600,000 examined, 7,275 accepted)",
+      "Learn the names and dates of major hadith compilers for full marks",
+      "Understand the technical terms (isnad, matn, sahih) as they show detailed knowledge"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "A flowchart showing the hadith collection process: Prophet's sayings → Companions' memory/writing → Early collections → Critical examination of isnad and matn → Final authenticated collections (Bukhari, Muslim, etc.)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:45:47.392Z",
+  "updated_at": "2026-04-05T20:45:47.392Z"
+}

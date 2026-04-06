@@ -1,0 +1,95 @@
+{
+  "subject": "Biology",
+  "subject_code": "5090",
+  "level": "O Level",
+  "theme": "Cell Biology",
+  "chapter_id": "2",
+  "chapter_name": "Diffusion, osmosis and active transport",
+  "note_data": {
+    "title": "Diffusion, osmosis and active transport",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Diffusion** is the net movement of particles from a region of higher concentration to a region of lower concentration down a concentration gradient, as a result of their random movement",
+      "**Osmosis** is the net movement of water molecules from a region of higher water potential to a region of lower water potential through a partially permeable membrane",
+      "**Active transport** is the movement of particles through a cell membrane from a region of lower concentration to a region of higher concentration using energy from respiration",
+      "Rate of diffusion increases with: higher temperature, larger concentration gradient, larger surface area, and shorter diffusion distance",
+      "**Partially permeable membranes** allow some substances to pass through but not others - water molecules can pass through but larger solute molecules cannot",
+      "In **isotonic** solutions, water potential inside and outside the cell is equal so no net movement of water occurs",
+      "In **hypotonic** solutions, cells gain water by osmosis and may burst (animal cells) or become turgid (plant cells)",
+      "In **hypertonic** solutions, cells lose water by osmosis and become crenated (animal cells) or plasmolysed (plant cells)",
+      "Active transport requires **carrier proteins** and **ATP energy** from respiration to move substances against their concentration gradient"
+    ],
+    "definitions": [
+      {
+        "term": "Diffusion",
+        "definition": "The net movement of particles from a region of higher concentration to a region of lower concentration down a concentration gradient, as a result of their random movement"
+      },
+      {
+        "term": "Osmosis",
+        "definition": "The net movement of water molecules from a region of higher water potential to a region of lower water potential through a partially permeable membrane"
+      },
+      {
+        "term": "Active transport",
+        "definition": "The movement of particles through a cell membrane from a region of lower concentration to a region of higher concentration using energy from respiration"
+      },
+      {
+        "term": "Water potential",
+        "definition": "The tendency of water molecules to move from one place to another"
+      },
+      {
+        "term": "Concentration gradient",
+        "definition": "The difference in concentration between two regions"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities and differences between two processes"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give observable features or steps in a process"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why glucose can be absorbed from the small intestine even when its concentration is higher inside the intestine cells than in the blood. (3 marks)",
+      "marks": 3,
+      "answer": "Glucose is absorbed by active transport. This process can move glucose from a region of lower concentration (blood) to a region of higher concentration (intestine cells). Active transport uses energy from respiration to work against the concentration gradient.",
+      "markBreakdown": [
+        "Mark 1: Glucose absorbed by active transport",
+        "Mark 2: Movement against concentration gradient/from low to high concentration",
+        "Mark 3: Uses energy from respiration/ATP"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'particles want to move' — always say 'particles move down their concentration gradient as a result of random movement'",
+      "Students often confuse osmosis with diffusion — osmosis is specifically for water molecules through a partially permeable membrane",
+      "Don't say 'energy is needed for osmosis' — osmosis is a passive process, only active transport needs energy",
+      "Never write 'high concentration to low concentration' — always specify 'region of higher concentration to region of lower concentration'",
+      "Students forget that active transport works AGAINST the concentration gradient, not down it"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every paper - learn the exact definitions by heart",
+      "Always include 'partially permeable membrane' when defining osmosis",
+      "Draw arrows on diagrams to show direction of movement for full marks",
+      "Remember to link active transport to respiration and ATP energy",
+      "Use the term 'net movement' in definitions, not just 'movement'"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Cell membrane showing diffusion (small molecules passing through), osmosis (water molecules through membrane), and active transport (carrier proteins using ATP energy to move particles against gradient)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:26:24.870Z",
+  "updated_at": "2026-04-05T21:26:24.870Z"
+}

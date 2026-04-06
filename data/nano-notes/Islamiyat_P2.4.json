@@ -1,0 +1,96 @@
+{
+  "subject": "Islamiyat",
+  "subject_code": "2058",
+  "level": "O Level",
+  "theme": "Paper 2",
+  "chapter_id": "P2.4",
+  "chapter_name": "Articles of Faith and Pillars of Islam",
+  "note_data": {
+    "title": "Articles of Faith and Pillars of Islam",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Shahadah** is the declaration of faith stating 'There is no god but Allah and Muhammad is His messenger'",
+      "**Salah** is the five daily prayers performed at Fajr, Dhuhr, Asr, Maghrib and Isha",
+      "**Zakat** is the obligatory charity of 2.5% of wealth given to eight categories of recipients",
+      "**Sawm** is fasting during the month of Ramadan from dawn to sunset",
+      "**Hajj** is the pilgrimage to Makkah that must be performed once in a lifetime if physically and financially able",
+      "**Iman** encompasses belief in Allah, angels, revealed books, prophets, Day of Judgment and predestination",
+      "The **Five Pillars** are the foundation of Muslim life and worship",
+      "Belief in **Tawhid** (oneness of Allah) is the central principle of Islamic faith",
+      "The **Six Articles of Faith** form the basis of Islamic belief system"
+    ],
+    "definitions": [
+      {
+        "term": "Shahadah",
+        "definition": "The declaration of faith stating there is no god but Allah and Muhammad is His messenger"
+      },
+      {
+        "term": "Salah",
+        "definition": "The five daily prayers that Muslims must perform facing Makkah"
+      },
+      {
+        "term": "Zakat",
+        "definition": "Obligatory charity of 2.5% of wealth given annually to the poor and needy"
+      },
+      {
+        "term": "Hajj",
+        "definition": "The pilgrimage to Makkah that every Muslim must perform once if able"
+      },
+      {
+        "term": "Iman",
+        "definition": "Faith or belief in the six articles of Islamic faith"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give details about how something is done or what it involves"
+      },
+      {
+        "commandWord": "Outline",
+        "instruction": "Give the main features or key points in logical order"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the importance of Salah for Muslims. [4 marks]",
+      "marks": 4,
+      "answer": "Salah is important because it is the second pillar of Islam and a direct command from Allah. It helps Muslims maintain a constant connection with Allah throughout the day. Salah purifies the soul from sins and keeps Muslims away from evil deeds. It also unites the Muslim community as they all pray facing the same direction towards the Kaaba.",
+      "markBreakdown": [
+        "Mark 1: Second pillar/command from Allah",
+        "Mark 2: Connection with Allah",
+        "Mark 3: Purifies soul/prevents sin",
+        "Mark 4: Unites Muslim community"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'Muhammad is God' — always say 'Muhammad is the messenger of Allah'",
+      "Students often confuse Zakat with Sadaqah — Zakat is obligatory, Sadaqah is voluntary",
+      "Don't say Hajj is performed 'when convenient' — it must be done when physically and financially able",
+      "Avoid saying 'five pillars of faith' — they are pillars of Islam, articles of faith are separate",
+      "Never write that fasting is only about not eating — include not drinking and sexual relations"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 2 examination",
+      "Always give specific examples when explaining the pillars",
+      "Learn the Arabic terms as they often appear in questions",
+      "Connect pillars to their spiritual and social benefits for full marks",
+      "Remember to mention Quran and Hadith references where relevant"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Five-pointed diagram showing the Five Pillars with Shahadah at the center, surrounded by Salah, Zakat, Sawm, and Hajj, often used to illustrate the foundation of Islamic practice"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:46:33.274Z",
+  "updated_at": "2026-04-05T20:46:33.274Z"
+}

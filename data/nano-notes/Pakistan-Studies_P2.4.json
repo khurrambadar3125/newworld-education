@@ -1,0 +1,95 @@
+{
+  "subject": "Pakistan Studies",
+  "subject_code": "2059",
+  "level": "O Level",
+  "theme": "Paper 2: The Environment of Pakistan",
+  "chapter_id": "P2.4",
+  "chapter_name": "Agricultural Development",
+  "note_data": {
+    "title": "Agricultural Development",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Agriculture** contributes approximately 20% to Pakistan's GDP and employs 42% of the labour force",
+      "**Wheat** is the staple food crop grown mainly in Punjab and Sindh during Rabi season (October-April)",
+      "**Rice** is grown in Sindh and Punjab during Kharif season (April-October), with Basmati being the premium export variety",
+      "**Cotton** is the main cash crop providing raw material for textile industry and earning foreign exchange",
+      "**Sugarcane** is grown in Punjab and Sindh, requiring high temperature and abundant water supply",
+      "**Livestock** includes cattle, buffalo, goats and sheep providing milk, meat, hides and draft power",
+      "**Green Revolution** introduced high yielding varieties, fertilizers and pesticides to increase crop production",
+      "**Irrigation** is essential as Pakistan receives low and unreliable rainfall, with canal system being most important",
+      "Major agricultural problems include **waterlogging, salinity, fragmented holdings** and lack of modern technology"
+    ],
+    "definitions": [
+      {
+        "term": "Cash Crop",
+        "definition": "A crop grown primarily for sale to earn money rather than for personal consumption, such as cotton and sugarcane"
+      },
+      {
+        "term": "Green Revolution",
+        "definition": "The introduction of high yielding varieties of seeds, fertilizers and modern farming techniques to increase agricultural production"
+      },
+      {
+        "term": "Kharif Season",
+        "definition": "The summer cropping season from April to October when crops like rice, cotton and sugarcane are grown"
+      },
+      {
+        "term": "Rabi Season",
+        "definition": "The winter cropping season from October to April when crops like wheat and barley are grown"
+      },
+      {
+        "term": "Waterlogging",
+        "definition": "When water table rises close to surface due to over-irrigation, making soil unsuitable for crop growth"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics or features of crops/farming methods"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Examine problems and solutions with reasons why they occur/work"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why cotton is an important crop in Pakistan. [4 marks]",
+      "marks": 4,
+      "answer": "Cotton is important because it provides raw material for Pakistan's textile industry which is the largest manufacturing sector. Cotton exports earn valuable foreign exchange for the country's economy. It provides employment for millions of people in farming, ginning and textile manufacturing. Cotton growing also supports related industries such as oil extraction from cotton seeds.",
+      "markBreakdown": [
+        "Mark 1: Raw material for textile industry",
+        "Mark 2: Earns foreign exchange",
+        "Mark 3: Provides employment",
+        "Mark 4: Supports related industries"
+      ]
+    },
+    "commonMistakes": [
+      "Never say crops are grown 'everywhere' - always specify regions like Punjab, Sindh, KPK",
+      "Students often confuse Kharif and Rabi seasons - remember wheat is Rabi, rice is Kharif",
+      "Don't just list problems - explain WHY they are problems for agriculture",
+      "Never ignore the economic importance - always mention GDP contribution and employment",
+      "Students forget to mention both food crops and cash crops in answers about agriculture"
+    ],
+    "examinerTips": [
+      "Agriculture questions appear in every Paper 2 - usually worth 6-8 marks total",
+      "Always give specific examples of crops when discussing agricultural regions",
+      "Link agricultural development to economic development of Pakistan",
+      "Remember to discuss both physical and human factors affecting agriculture"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Map of Pakistan showing agricultural regions - Punjab (wheat, rice, cotton, sugarcane), Sindh (rice, cotton, sugarcane), KPK (wheat, maize), Balochistan (dates, fruits) with Kharif/Rabi seasons labeled"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:49:24.632Z",
+  "updated_at": "2026-04-05T20:49:24.632Z"
+}

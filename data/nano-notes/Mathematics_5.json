@@ -1,0 +1,93 @@
+{
+  "subject": "Mathematics",
+  "subject_code": "4024",
+  "level": "O Level",
+  "theme": "Measurement and Geometry",
+  "chapter_id": "5",
+  "chapter_name": "Trigonometry",
+  "note_data": {
+    "title": "Trigonometry",
+    "readTime": "8 min",
+    "keyPoints": [
+      "In a **right-angled triangle**, sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse, tan θ = opposite/adjacent",
+      "**Angle of elevation** is the angle above the horizontal line when looking upward",
+      "**Angle of depression** is the angle below the horizontal line when looking downward",
+      "**Bearing** is the direction measured clockwise from North, always given as a three-figure bearing (e.g., 045°)",
+      "**Sine rule**: a/sin A = b/sin B = c/sin C, used when given two angles and one side or two sides and a non-included angle",
+      "**Cosine rule**: a² = b² + c² - 2bc cos A, used when given two sides and the included angle or three sides",
+      "**Area of triangle** = ½ab sin C where a and b are two sides and C is the included angle",
+      "For **three-dimensional problems**, identify right-angled triangles by drawing clear diagrams showing the required angle or distance",
+      "Always use **exact values** where possible: sin 30° = ½, cos 60° = ½, sin 60° = √3/2, cos 30° = √3/2, tan 60° = √3"
+    ],
+    "definitions": [
+      {
+        "term": "Angle of elevation",
+        "definition": "The angle measured upward from the horizontal to the line of sight"
+      },
+      {
+        "term": "Angle of depression",
+        "definition": "The angle measured downward from the horizontal to the line of sight"
+      },
+      {
+        "term": "Bearing",
+        "definition": "The direction of travel measured clockwise from North, expressed as a three-figure angle"
+      },
+      {
+        "term": "Sine rule",
+        "definition": "a/sin A = b/sin B = c/sin C, relating the sides and angles of any triangle"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working steps, identify which trigonometric ratio or rule to use, substitute values correctly"
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Draw a clear labelled diagram, identify the required triangle, apply appropriate trigonometric method"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Work towards the given answer, showing each algebraic step clearly"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A ship sails 12 km on a bearing of 040° from port P to point Q, then 8 km on a bearing of 120° to point R. Calculate the distance PR.",
+      "marks": 4,
+      "answer": "Draw triangle PQR. Angle QPR = 120° - 40° = 80°. Using cosine rule: PR² = PQ² + QR² - 2(PQ)(QR)cos(80°). PR² = 12² + 8² - 2(12)(8)cos(80°). PR² = 144 + 64 - 192 × 0.174 = 174.6. PR = √174.6 = 13.2 km",
+      "markBreakdown": [
+        "Mark 1: Correct angle QPR = 80°",
+        "Mark 2: Correct application of cosine rule",
+        "Mark 3: Correct substitution of values",
+        "Mark 4: Correct final answer 13.2 km"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse angle of elevation with angle of depression - elevation is above horizontal, depression is below",
+      "Students often forget to convert bearing problems into triangle angles - always find the angle inside the triangle",
+      "Using sine rule when cosine rule is needed - use sine rule only when given two angles and one side or two sides and non-included angle",
+      "Forgetting to use exact values for special angles (30°, 45°, 60°) when asked",
+      "In 3D problems, students fail to identify the correct right-angled triangle containing the required angle"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every Paper 2, usually worth 6-8 marks",
+      "Always draw and label diagrams clearly - marks are awarded for correct diagrams",
+      "For bearing problems, mark North direction clearly on your diagram",
+      "In 3D problems, draw separate 2D triangles to avoid confusion",
+      "Check calculator is in degree mode before starting trigonometry questions"
+    ],
+    "formulas": [
+      "sin θ = opp/hyp, cos θ = adj/hyp, tan θ = opp/adj",
+      "Sine rule: a/sin A = b/sin B = c/sin C",
+      "Cosine rule: a² = b² + c² - 2bc cos A",
+      "Area = ½ab sin C"
+    ],
+    "keyDiagramDescription": "Right-angled triangle clearly labelled with hypotenuse, opposite and adjacent sides relative to the angle being used, with angle of elevation/depression marked from horizontal line"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:23:54.951Z",
+  "updated_at": "2026-04-05T21:23:54.951Z"
+}

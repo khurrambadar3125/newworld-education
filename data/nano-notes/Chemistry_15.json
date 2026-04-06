@@ -1,0 +1,90 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Inorganic Chemistry",
+  "chapter_id": "15",
+  "chapter_name": "Reactivity of metals",
+  "note_data": {
+    "title": "Reactivity of metals",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **reactivity series** is the order of metals arranged in decreasing order of their reactivity",
+      "**More reactive metals** displace less reactive metals from solutions of their compounds",
+      "Metal **displacement reactions** involve the more reactive metal taking the place of the less reactive metal",
+      "**Hydrogen** is included in the reactivity series to show which metals react with acids",
+      "Metals above hydrogen in the reactivity series **react with dilute acids** to produce hydrogen gas",
+      "Metals below hydrogen in the reactivity series **do not react with dilute acids**",
+      "The **ease of extraction** of metals from their ores depends on their position in the reactivity series",
+      "More reactive metals require **more energy** to extract from their compounds than less reactive metals",
+      "**Rusting of iron** can be prevented by coating with more reactive metals like zinc (galvanizing)"
+    ],
+    "definitions": [
+      {
+        "term": "Reactivity series",
+        "definition": "The arrangement of metals in order of decreasing reactivity"
+      },
+      {
+        "term": "Displacement reaction",
+        "definition": "A reaction where a more reactive metal takes the place of a less reactive metal in a compound"
+      },
+      {
+        "term": "Galvanizing",
+        "definition": "Coating iron with zinc to prevent rusting"
+      },
+      {
+        "term": "Reduction",
+        "definition": "The removal of oxygen from a compound or the gain of electrons"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Predict",
+        "instruction": "State what will happen and give a reason based on reactivity"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Zinc powder is added to copper sulfate solution. State what you would observe and explain why this reaction occurs.",
+      "marks": 3,
+      "answer": "The blue color of copper sulfate solution disappears and a brown/reddish solid forms. This reaction occurs because zinc is more reactive than copper, so zinc displaces copper from copper sulfate solution.",
+      "markBreakdown": [
+        "Mark 1: Blue color disappears",
+        "Mark 2: Brown/reddish solid forms",
+        "Mark 3: Zinc is more reactive than copper / displacement occurs"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'stronger metal' — always say 'more reactive metal'",
+      "Students often confuse the direction of displacement — remember more reactive displaces less reactive",
+      "Don't write 'metals below hydrogen react with acids' — they do NOT react",
+      "Never say 'zinc protects iron by covering it' — zinc protects because it is more reactive and gets oxidized first",
+      "Students forget to include observations like color changes in displacement reactions"
+    ],
+    "examinerTips": [
+      "Reactivity series questions appear in almost every Paper 2",
+      "Always learn the order: Potassium, Sodium, Calcium, Magnesium, Aluminum, Zinc, Iron, Lead, Hydrogen, Copper, Silver, Gold",
+      "Use the mnemonic: Please Stop Calling Me A Zebra In Leeds Hospital Copper Silver Gold",
+      "For displacement reactions, always state the observation AND the explanation"
+    ],
+    "formulas": [
+      "Zn + CuSO₄ → ZnSO₄ + Cu",
+      "Mg + 2HCl → MgCl₂ + H₂",
+      "Fe + CuSO₄ → FeSO₄ + Cu"
+    ],
+    "keyDiagramDescription": "Reactivity series arranged vertically with most reactive (potassium) at top and least reactive (gold) at bottom, with hydrogen positioned between lead and copper"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:55:57.091Z",
+  "updated_at": "2026-04-05T20:55:57.091Z"
+}

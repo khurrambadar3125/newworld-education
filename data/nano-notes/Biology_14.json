@@ -1,0 +1,95 @@
+{
+  "subject": "Biology",
+  "subject_code": "5090",
+  "level": "O Level",
+  "theme": "Reproduction and Ecology",
+  "chapter_id": "14",
+  "chapter_name": "Ecology",
+  "note_data": {
+    "title": "Ecology",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Ecology** is the study of organisms in relation to their environment and to each other",
+      "An **ecosystem** consists of a community of organisms and their physical environment",
+      "A **food chain** shows the transfer of energy from one organism to the next, beginning with a producer",
+      "**Producers** are organisms that make their own food by photosynthesis, such as green plants",
+      "**Primary consumers** are herbivores that feed on producers",
+      "**Secondary consumers** are carnivores that feed on primary consumers",
+      "Energy is lost at each trophic level as heat, movement, and undigested material",
+      "**Pollution** is the addition of substances to the environment that are harmful to living organisms",
+      "**Bioaccumulation** occurs when toxic substances build up in organisms as they pass through food chains",
+      "Human activities such as deforestation, industrial waste, and pesticide use cause environmental pollution"
+    ],
+    "definitions": [
+      {
+        "term": "Ecosystem",
+        "definition": "A unit containing a community of organisms and their environment, interacting together"
+      },
+      {
+        "term": "Food chain",
+        "definition": "A diagram showing the transfer of energy from one organism to the next, beginning with a producer"
+      },
+      {
+        "term": "Producer",
+        "definition": "An organism that makes its own organic nutrients, usually using energy from sunlight, through photosynthesis"
+      },
+      {
+        "term": "Pollution",
+        "definition": "The addition of substances to the environment that may be harmful to living organisms"
+      },
+      {
+        "term": "Bioaccumulation",
+        "definition": "The build-up of persistent or non-biodegradable pollutants within an organism or within a food chain"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics or explain what happens in a process step by step"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give a reasonable answer based on your knowledge, use 'may' or 'might'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why the number of organisms decreases at each level in a food chain. [3]",
+      "marks": 3,
+      "answer": "Energy is lost at each trophic level as heat during respiration. Energy is also lost through movement and excretion. Only about 10% of energy is passed to the next level, so there is insufficient energy to support large numbers of organisms at higher levels.",
+      "markBreakdown": [
+        "Mark 1: Energy is lost as heat/during respiration",
+        "Mark 2: Energy lost through movement/excretion/undigested material",
+        "Mark 3: Only 10% energy transferred/insufficient energy for large numbers at higher levels"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'animals eat each other' in food chains — always say 'energy is transferred from one organism to the next'",
+      "Students often confuse food chains with food webs — a food chain is linear, a food web shows interconnected chains",
+      "Don't say pollution 'destroys' the environment — say it 'harms living organisms' or 'disrupts ecosystems'",
+      "Never draw arrows pointing to what organism eats — arrows show direction of energy flow",
+      "Students forget that all food chains must start with a producer (green plant)"
+    ],
+    "examinerTips": [
+      "Food chain questions appear in almost every Paper 2 — practice drawing and interpreting them",
+      "Always use the term 'energy transfer' not 'energy flow' in food chain answers",
+      "Pollution questions often ask for specific examples — learn DDT bioaccumulation and industrial waste in rivers",
+      "When explaining energy loss, mention heat, movement, excretion and undigested material for full marks"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Food chain diagram showing producer → primary consumer → secondary consumer → tertiary consumer with arrows indicating energy transfer direction. Include energy loss at each level (heat, movement, excretion)."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:30:29.349Z",
+  "updated_at": "2026-04-05T21:30:29.349Z"
+}

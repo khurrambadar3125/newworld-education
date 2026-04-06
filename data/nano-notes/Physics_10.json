@@ -1,0 +1,92 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "Thermal Physics",
+  "chapter_id": "10",
+  "chapter_name": "Thermal properties of matter",
+  "note_data": {
+    "title": "Thermal properties of matter",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Linear expansion** occurs when a solid is heated and increases in length due to increased molecular vibrations",
+      "**Thermal expansion** can be useful (in bimetallic strips for thermostats) or cause problems (railway tracks buckling)",
+      "**Specific heat capacity** is the energy needed to raise the temperature of 1 kg of a substance by 1°C",
+      "During **melting** or **boiling**, temperature remains constant even though heat energy is still being supplied",
+      "**Latent heat of fusion** is the energy needed to change 1 kg of solid to liquid at constant temperature",
+      "**Latent heat of vaporization** is the energy needed to change 1 kg of liquid to gas at constant temperature",
+      "**Evaporation** occurs at any temperature from the surface only, while **boiling** occurs at a fixed temperature throughout the liquid",
+      "**Cooling by evaporation** occurs because the fastest-moving molecules escape, leaving slower molecules with lower average kinetic energy"
+    ],
+    "definitions": [
+      {
+        "term": "Specific heat capacity",
+        "definition": "The amount of thermal energy needed to raise the temperature of 1 kg of a substance by 1°C"
+      },
+      {
+        "term": "Latent heat of fusion",
+        "definition": "The amount of thermal energy needed to change 1 kg of a solid into a liquid at constant temperature"
+      },
+      {
+        "term": "Latent heat of vaporization",
+        "definition": "The amount of thermal energy needed to change 1 kg of a liquid into a gas at constant temperature"
+      },
+      {
+        "term": "Thermal expansion",
+        "definition": "The increase in size of a substance when its temperature increases"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show formula, substitute values, calculate answer with correct unit"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of steps or detailed account of what happens"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A 2.0 kg block of copper is heated and its temperature rises from 20°C to 80°C. The specific heat capacity of copper is 380 J/(kg°C). Calculate the thermal energy supplied to the copper.",
+      "marks": 3,
+      "answer": "Thermal energy = mass × specific heat capacity × temperature change\nThermal energy = 2.0 × 380 × (80 - 20)\nThermal energy = 2.0 × 380 × 60 = 45,600 J",
+      "markBreakdown": [
+        "Mark 1: Correct formula E = mcΔT",
+        "Mark 2: Correct substitution of values",
+        "Mark 3: Correct answer with unit"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'heat capacity' — always say 'specific heat capacity' for the defined quantity",
+      "Students often forget that during melting/boiling, temperature stays constant despite energy input",
+      "Never confuse evaporation (surface only, any temperature) with boiling (throughout liquid, fixed temperature)",
+      "Students often forget to calculate temperature change (final - initial) in specific heat capacity calculations",
+      "Never say latent heat 'increases temperature' — latent heat changes state at constant temperature"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2, especially specific heat capacity calculations",
+      "Always show the formula first, then substitute values, then calculate for full marks",
+      "Temperature-time graphs for heating are very common - remember flat sections show state changes",
+      "Learn the difference between evaporation and boiling - this distinction is frequently tested"
+    ],
+    "formulas": [
+      "E = mcΔT",
+      "E = mL"
+    ],
+    "keyDiagramDescription": "Temperature-time graph showing heating curve with flat sections during melting and boiling, demonstrating that temperature remains constant during state changes despite continuous energy input"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:17:07.323Z",
+  "updated_at": "2026-04-05T21:17:07.323Z"
+}

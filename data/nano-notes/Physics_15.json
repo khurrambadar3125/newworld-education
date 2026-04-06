@@ -1,0 +1,94 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "Waves",
+  "chapter_id": "15",
+  "chapter_name": "The electromagnetic spectrum",
+  "note_data": {
+    "title": "The electromagnetic spectrum",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Electromagnetic waves** are transverse waves that transfer energy without transferring matter",
+      "All electromagnetic waves travel at the **speed of light** (3.0 × 10⁸ m/s) in a vacuum",
+      "The electromagnetic spectrum in order of increasing frequency: **radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, gamma rays**",
+      "As frequency increases across the spectrum, **wavelength decreases** and **energy increases**",
+      "**Radio waves** have the longest wavelength and lowest frequency, used for communication",
+      "**Microwaves** are used for satellite communication, mobile phones and microwave ovens",
+      "**Infrared radiation** is heat radiation emitted by all warm objects",
+      "**Ultraviolet radiation** can cause skin cancer and eye damage",
+      "**X-rays** and **gamma rays** are ionizing radiation that can damage living cells",
+      "Higher frequency electromagnetic waves are **more dangerous** to human health"
+    ],
+    "definitions": [
+      {
+        "term": "Electromagnetic wave",
+        "definition": "A transverse wave that transfers energy without transferring matter, consisting of oscillating electric and magnetic fields"
+      },
+      {
+        "term": "Electromagnetic spectrum",
+        "definition": "The complete range of electromagnetic waves arranged in order of frequency or wavelength"
+      },
+      {
+        "term": "Ionizing radiation",
+        "definition": "Electromagnetic radiation with enough energy to remove electrons from atoms, creating ions"
+      },
+      {
+        "term": "Frequency",
+        "definition": "The number of waves passing a point per second, measured in hertz (Hz)"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give properties or features without explaining why"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities and differences between two parts of the spectrum"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why gamma rays are more dangerous to human health than radio waves. [3 marks]",
+      "marks": 3,
+      "answer": "Gamma rays have a much higher frequency than radio waves. This means gamma rays carry more energy per photon. The high energy of gamma rays can ionize atoms in living cells, causing damage to DNA and potentially leading to cancer, whereas radio waves do not have enough energy to cause ionization.",
+      "markBreakdown": [
+        "Mark 1: Gamma rays have higher frequency than radio waves",
+        "Mark 2: Higher frequency means more energy",
+        "Mark 3: High energy causes ionization/cell damage"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'light waves' — always say 'electromagnetic waves' for the full spectrum",
+      "Students often get the order wrong — remember RMIVUXG (increasing frequency)",
+      "Don't confuse frequency and wavelength — they are inversely related",
+      "Never say X-rays are 'radioactive' — they are electromagnetic radiation, not radioactive decay",
+      "Students forget that ALL electromagnetic waves travel at the same speed in a vacuum"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2, especially wave properties",
+      "Always state the speed of light as 3.0 × 10⁸ m/s for full marks",
+      "Use the wave equation v = fλ to link frequency, wavelength and speed",
+      "Learn specific uses for each part of the spectrum — very commonly examined"
+    ],
+    "formulas": [
+      "v = fλ",
+      "c = 3.0 × 10⁸ m/s"
+    ],
+    "keyDiagramDescription": "The electromagnetic spectrum diagram showing the seven types of electromagnetic waves arranged in order from radio waves (longest wavelength, lowest frequency) to gamma rays (shortest wavelength, highest frequency), with frequency scale and common uses labeled"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:18:43.240Z",
+  "updated_at": "2026-04-05T21:18:43.240Z"
+}

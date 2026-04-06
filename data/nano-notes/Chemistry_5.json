@@ -1,0 +1,91 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Physical Chemistry",
+  "chapter_id": "5",
+  "chapter_name": "Chemical calculations",
+  "note_data": {
+    "title": "Chemical calculations",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **mole** is the unit for amount of substance, equal to 6.02 × 10²³ particles (atoms, molecules, or ions)",
+      "**Avogadro constant** = 6.02 × 10²³ mol⁻¹, representing the number of particles in one mole of any substance",
+      "**Molar mass** is the mass of one mole of a substance in g/mol, numerically equal to relative molecular mass",
+      "**Balanced chemical equations** show the mole ratio of reactants to products using whole number coefficients",
+      "**Concentration** is measured in mol/dm³ and calculated using moles of solute divided by volume of solution in dm³",
+      "**Percentage yield** = (actual yield ÷ theoretical yield) × 100%, always less than 100% due to practical losses",
+      "In calculations, always convert mass to moles first using the formula: moles = mass ÷ molar mass",
+      "**Limiting reagent** is the reactant that is completely used up first and determines the maximum product formed",
+      "For gas calculations at room temperature and pressure, one mole of any gas occupies 24 dm³"
+    ],
+    "definitions": [
+      {
+        "term": "Mole",
+        "definition": "The amount of substance that contains 6.02 × 10²³ particles"
+      },
+      {
+        "term": "Molar mass",
+        "definition": "The mass of one mole of a substance measured in g/mol"
+      },
+      {
+        "term": "Concentration",
+        "definition": "The amount of solute dissolved in a given volume of solution, measured in mol/dm³"
+      },
+      {
+        "term": "Limiting reagent",
+        "definition": "The reactant that is completely consumed first in a chemical reaction"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working steps: moles = mass ÷ molar mass, use mole ratios, convert back to required units"
+      },
+      {
+        "commandWord": "Determine",
+        "instruction": "Find the answer using calculations or logical reasoning, showing clear method"
+      },
+      {
+        "commandWord": "State",
+        "instruction": "Give the numerical answer with correct units and significant figures"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Calculate the mass of calcium carbonate needed to produce 2.2 g of carbon dioxide when heated. CaCO₃ → CaO + CO₂ [Ar: C = 12, O = 16, Ca = 40]",
+      "marks": 3,
+      "answer": "Molar mass of CO₂ = 12 + (16 × 2) = 44 g/mol. Moles of CO₂ = 2.2 ÷ 44 = 0.05 mol. From equation, mole ratio CaCO₃ : CO₂ = 1:1, so moles of CaCO₃ = 0.05 mol. Molar mass of CaCO₃ = 40 + 12 + (16 × 3) = 100 g/mol. Mass of CaCO₃ = 0.05 × 100 = 5.0 g",
+      "markBreakdown": [
+        "Mark 1: Correct moles of CO₂ = 0.05 mol",
+        "Mark 2: Correct mole ratio used (1:1)",
+        "Mark 3: Correct final mass = 5.0 g"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse relative molecular mass with molar mass - molar mass has units g/mol",
+      "Students often forget to balance equations before using mole ratios in calculations",
+      "Always convert cm³ to dm³ by dividing by 1000 - never use cm³ directly in concentration calculations",
+      "Never round intermediate answers - only round the final answer to appropriate significant figures",
+      "Students often use atomic mass instead of molecular mass when calculating moles of compounds"
+    ],
+    "examinerTips": [
+      "Mole calculations appear in every Paper 2 - master the basic moles = mass ÷ molar mass formula",
+      "Always show working clearly - partial marks are given for correct method even if final answer is wrong",
+      "Check your answer makes sense - if calculating mass, answer should have mass units (g or kg)",
+      "Concentration calculations are common - practice converting between mol/dm³ and g/dm³"
+    ],
+    "formulas": [
+      "moles = mass ÷ molar mass",
+      "concentration = moles ÷ volume (in dm³)",
+      "percentage yield = (actual yield ÷ theoretical yield) × 100%",
+      "volume of gas = moles × 24 dm³ (at RTP)"
+    ],
+    "keyDiagramDescription": "No specific diagram required, but always show clear calculation layout with formula → substitution → answer format for full marks"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:52:41.059Z",
+  "updated_at": "2026-04-05T20:52:41.059Z"
+}

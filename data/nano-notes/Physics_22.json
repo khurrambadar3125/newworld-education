@@ -1,0 +1,99 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "Atomic Physics",
+  "chapter_id": "22",
+  "chapter_name": "The nuclear atom",
+  "note_data": {
+    "title": "The nuclear atom",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Atoms** consist of a small, dense nucleus surrounded by electrons in shells or energy levels",
+      "The **nucleus** contains protons and neutrons and is positively charged due to the protons",
+      "**Protons** have a positive charge (+1) and relative mass of 1, located in the nucleus",
+      "**Neutrons** have no charge (neutral) and relative mass of 1, located in the nucleus",
+      "**Electrons** have a negative charge (-1) and negligible mass, orbiting the nucleus in shells",
+      "The **atomic number** (Z) equals the number of protons in the nucleus",
+      "The **mass number** (A) equals the total number of protons and neutrons in the nucleus",
+      "**Isotopes** are atoms of the same element with the same number of protons but different numbers of neutrons",
+      "Atoms are **electrically neutral** because the number of protons equals the number of electrons",
+      "The diameter of the nucleus is about 10,000 times smaller than the diameter of the atom"
+    ],
+    "definitions": [
+      {
+        "term": "Nucleus",
+        "definition": "The small, dense, positively charged center of an atom containing protons and neutrons"
+      },
+      {
+        "term": "Atomic number",
+        "definition": "The number of protons in the nucleus of an atom"
+      },
+      {
+        "term": "Mass number",
+        "definition": "The total number of protons and neutrons in the nucleus of an atom"
+      },
+      {
+        "term": "Isotope",
+        "definition": "Atoms of the same element that have the same number of protons but different numbers of neutrons"
+      },
+      {
+        "term": "Ion",
+        "definition": "An atom that has gained or lost electrons and therefore has a net electric charge"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of structure or properties"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between particles/atoms"
+      }
+    ],
+    "modelAnswer": {
+      "question": "An atom of carbon-12 has 6 protons. State the number of neutrons and electrons in this atom. Explain why the atom is electrically neutral.",
+      "marks": 4,
+      "answer": "Number of neutrons = 6. Number of electrons = 6. The atom is electrically neutral because the number of positively charged protons equals the number of negatively charged electrons, so the charges cancel out.",
+      "markBreakdown": [
+        "Mark 1: Neutrons = 6",
+        "Mark 2: Electrons = 6",
+        "Mark 3: Equal number of protons and electrons",
+        "Mark 4: Charges cancel out/balance"
+      ]
+    },
+    "commonMistakes": [
+      "Never say electrons are 'in' the nucleus — they orbit around it in shells",
+      "Students often confuse mass number with atomic number — mass number includes neutrons",
+      "Never say atoms have 'no mass' — they have very small mass, mostly in the nucleus",
+      "Don't forget that ions have unequal numbers of protons and electrons",
+      "Students incorrectly think neutrons have negative charge — they are neutral (no charge)"
+    ],
+    "examinerTips": [
+      "This topic appears in every paper — learn the charges and masses of particles",
+      "Always show working when calculating neutrons: neutrons = mass number - atomic number",
+      "Draw clear atomic structure diagrams with nucleus and electron shells labeled",
+      "Use notation ᴬₓX where A is mass number, Z is atomic number, X is element symbol"
+    ],
+    "formulas": [
+      "Number of neutrons = Mass number - Atomic number",
+      "Mass number = Number of protons + Number of neutrons"
+    ],
+    "keyDiagramDescription": "Atomic structure showing small central nucleus containing protons (+) and neutrons (n), with electrons (-) in circular shells around the nucleus. Label nucleus, protons, neutrons, electrons, and electron shells."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:21:04.964Z",
+  "updated_at": "2026-04-05T21:21:04.964Z"
+}

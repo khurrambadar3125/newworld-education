@@ -1,0 +1,89 @@
+{
+  "subject": "Biology",
+  "subject_code": "5090",
+  "level": "O Level",
+  "theme": "Nutrition and Transport",
+  "chapter_id": "4",
+  "chapter_name": "Nutrition in plants",
+  "note_data": {
+    "title": "Nutrition in plants",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Photosynthesis** is the process by which plants manufacture carbohydrates from raw materials using energy from light",
+      "**Chlorophyll** absorbs light energy for photosynthesis and is found in chloroplasts",
+      "The raw materials for photosynthesis are **carbon dioxide** and **water**",
+      "The products of photosynthesis are **glucose** and **oxygen**",
+      "**Light intensity**, **carbon dioxide concentration** and **temperature** are limiting factors for photosynthesis",
+      "Leaves are adapted for photosynthesis with a large surface area, thin structure and many chloroplasts",
+      "**Stomata** allow gas exchange - carbon dioxide enters and oxygen leaves",
+      "**Guard cells** control the opening and closing of stomata",
+      "Photosynthesis only occurs in the presence of light in chlorophyll-containing cells",
+      "The rate of photosynthesis can be measured by counting oxygen bubbles produced by aquatic plants"
+    ],
+    "definitions": [
+      {
+        "term": "Photosynthesis",
+        "definition": "The process by which plants manufacture carbohydrates from raw materials using energy from light"
+      },
+      {
+        "term": "Chlorophyll",
+        "definition": "Green pigment that absorbs light energy for photosynthesis"
+      },
+      {
+        "term": "Limiting factor",
+        "definition": "A factor that limits the rate of a process when it is in short supply"
+      },
+      {
+        "term": "Stomata",
+        "definition": "Pores in the leaf surface that allow gas exchange"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of observations or process steps"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why leaves are well adapted for photosynthesis. [3 marks]",
+      "marks": 3,
+      "answer": "Leaves have a large surface area to absorb maximum light. They are thin so carbon dioxide can diffuse quickly to all cells. They contain many chloroplasts with chlorophyll to absorb light energy.",
+      "markBreakdown": [
+        "Mark 1: Large surface area to absorb maximum light",
+        "Mark 2: Thin structure for rapid diffusion of gases",
+        "Mark 3: Many chloroplasts/chlorophyll to absorb light energy"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'plants breathe' — always say 'gas exchange occurs through stomata'",
+      "Students often forget that photosynthesis only occurs in light, not 24 hours",
+      "Don't confuse raw materials (CO₂ and water) with products (glucose and oxygen)",
+      "Never say 'chloroplasts contain chlorophyll' when asked what chlorophyll is",
+      "Students mix up what enters and exits stomata during photosynthesis"
+    ],
+    "examinerTips": [
+      "Photosynthesis questions appear in every paper - learn the word equation perfectly",
+      "Always specify that light energy is needed, not just 'energy'",
+      "When describing limiting factors, explain what happens when the factor increases",
+      "Draw and label leaf cross-sections clearly for full marks"
+    ],
+    "formulas": [
+      "carbon dioxide + water → glucose + oxygen (in the presence of light and chlorophyll)"
+    ],
+    "keyDiagramDescription": "Cross-section of a leaf showing upper epidermis, palisade mesophyll with chloroplasts, spongy mesophyll, lower epidermis with stomata and guard cells, and vascular bundles"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:27:03.574Z",
+  "updated_at": "2026-04-05T21:27:03.574Z"
+}

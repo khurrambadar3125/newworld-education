@@ -1,0 +1,87 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Inorganic Chemistry",
+  "chapter_id": "14",
+  "chapter_name": "Metallic elements and alloys",
+  "note_data": {
+    "title": "Metallic elements and alloys",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Metals** have high electrical conductivity because they contain delocalised electrons that can move freely through the structure",
+      "**Metals** have high thermal conductivity because delocalised electrons can transfer kinetic energy rapidly through the metal lattice",
+      "**Metals** are malleable and ductile because layers of atoms can slide over each other without breaking metallic bonds",
+      "**Alloys** are mixtures of a metal with one or more other elements, usually other metals or carbon",
+      "**Alloys** are harder than pure metals because different sized atoms disrupt the regular arrangement and prevent layers sliding easily",
+      "**Steel** is an alloy of iron and carbon used for construction because it is stronger and less prone to corrosion than pure iron",
+      "**Brass** is an alloy of copper and zinc used for musical instruments and electrical fittings because it is harder than copper and resistant to corrosion",
+      "**Bronze** is an alloy of copper and tin used for statues and bearings because it is harder than copper and resistant to wear",
+      "**Aluminium** is used for aircraft construction because it has low density but high strength when alloyed"
+    ],
+    "definitions": [
+      {
+        "term": "Alloy",
+        "definition": "A mixture of a metal with one or more other elements, usually other metals or carbon"
+      },
+      {
+        "term": "Metallic bonding",
+        "definition": "The electrostatic attraction between positive metal ions and delocalised electrons"
+      },
+      {
+        "term": "Delocalised electrons",
+        "definition": "Electrons that are not attached to specific atoms and are free to move throughout the metal structure"
+      },
+      {
+        "term": "Malleability",
+        "definition": "The ability of a metal to be hammered into thin sheets without breaking"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give a property and link it to a specific use with reasoning"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why alloys are often more useful than pure metals. Give one example of an alloy and state why it is more suitable than the pure metal for its use.",
+      "marks": 4,
+      "answer": "Alloys are harder than pure metals because the different sized atoms disrupt the regular arrangement of atoms and prevent layers from sliding easily over each other. Steel is an alloy of iron and carbon. Steel is more suitable than pure iron for construction because it is stronger and more resistant to corrosion.",
+      "markBreakdown": [
+        "Mark 1: Alloys are harder than pure metals",
+        "Mark 2: Different sized atoms disrupt regular arrangement/prevent layers sliding",
+        "Mark 3: Named alloy and its composition",
+        "Mark 4: Specific use and property advantage over pure metal"
+      ]
+    },
+    "commonMistakes": [
+      "Never say alloys are 'pure' - alloys are always mixtures of elements",
+      "Students often say metals conduct because of 'free electrons' - always use 'delocalised electrons'",
+      "Don't confuse malleable (hammered into sheets) with ductile (drawn into wires)",
+      "Never say alloys are 'stronger' without explaining why - must mention disrupted atom arrangement",
+      "Students often give vague uses - be specific (e.g., 'steel for bridges' not just 'steel for building')"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 - especially alloy properties and uses",
+      "Always link metallic properties to the electron sea model for full marks",
+      "Learn specific alloy compositions: steel (iron + carbon), brass (copper + zinc), bronze (copper + tin)",
+      "When explaining alloy hardness, mention 'different sized atoms' and 'layers cannot slide easily'"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Metallic bonding diagram showing positive metal ions in a regular lattice with a 'sea' of delocalised electrons moving freely between them"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:55:38.146Z",
+  "updated_at": "2026-04-05T20:55:38.146Z"
+}

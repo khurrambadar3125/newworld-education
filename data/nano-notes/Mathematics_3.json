@@ -1,0 +1,95 @@
+{
+  "subject": "Mathematics",
+  "subject_code": "4024",
+  "level": "O Level",
+  "theme": "Measurement and Geometry",
+  "chapter_id": "3",
+  "chapter_name": "Mensuration",
+  "note_data": {
+    "title": "Mensuration",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Area of circle** = πr² where r is the radius",
+      "**Circumference of circle** = 2πr or πd where d is the diameter",
+      "**Arc length** = (θ/360°) × 2πr where θ is the angle at centre in degrees",
+      "**Area of sector** = (θ/360°) × πr² where θ is the angle at centre in degrees",
+      "**Volume of prism** = area of cross-section × length",
+      "**Surface area of cylinder** = 2πr² + 2πrh where h is the height",
+      "**Volume of cylinder** = πr²h where r is radius and h is height",
+      "**Perimeter of rectangle** = 2(l + w) and **area** = l × w",
+      "For **compound shapes**, break into simpler shapes and add/subtract areas as appropriate"
+    ],
+    "definitions": [
+      {
+        "term": "Arc",
+        "definition": "Part of the circumference of a circle between two points"
+      },
+      {
+        "term": "Sector",
+        "definition": "Part of a circle enclosed by two radii and an arc"
+      },
+      {
+        "term": "Prism",
+        "definition": "A 3D shape with uniform cross-section throughout its length"
+      },
+      {
+        "term": "Surface Area",
+        "definition": "The total area of all faces of a 3D shape"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working steps clearly. Write the formula first, substitute values, then calculate the final answer with correct units."
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Show method and give the numerical answer with appropriate units."
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Work towards the given answer, showing each step of working clearly."
+      }
+    ],
+    "modelAnswer": {
+      "question": "A sector of a circle has radius 8 cm and angle 45°. Calculate (a) the arc length (b) the area of the sector. [Take π = 3.14]",
+      "marks": 4,
+      "answer": "(a) Arc length = (θ/360°) × 2πr = (45°/360°) × 2 × 3.14 × 8 = (1/8) × 50.24 = 6.28 cm\n(b) Area of sector = (θ/360°) × πr² = (45°/360°) × 3.14 × 8² = (1/8) × 3.14 × 64 = 25.12 cm²",
+      "markBreakdown": [
+        "Mark 1: Correct formula for arc length",
+        "Mark 2: Correct substitution and calculation for arc length = 6.28 cm",
+        "Mark 3: Correct formula for sector area",
+        "Mark 4: Correct calculation for sector area = 25.12 cm²"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse radius and diameter - always check which is given in the question",
+      "Students often forget to convert angle to fraction of 360° when calculating arc length or sector area",
+      "Always include correct units in final answer - marks are lost for missing units",
+      "Never use the wrong π value - use the value given in the question or π = 3.142 if not specified",
+      "Students often add areas when they should subtract for compound shapes with holes"
+    ],
+    "examinerTips": [
+      "Mensuration appears in every Paper 2 - usually worth 8-12 marks total",
+      "Always draw and label a clear diagram for 3D shapes to avoid confusion",
+      "Show the formula first, then substitute values for method marks",
+      "Round final answers to 3 significant figures unless stated otherwise"
+    ],
+    "formulas": [
+      "Area of circle = πr²",
+      "Circumference = 2πr",
+      "Arc length = (θ/360°) × 2πr",
+      "Sector area = (θ/360°) × πr²",
+      "Volume of prism = cross-sectional area × length",
+      "Volume of cylinder = πr²h",
+      "Surface area of cylinder = 2πr² + 2πrh"
+    ],
+    "keyDiagramDescription": "Circle with radius marked, showing a sector with angle θ at centre, arc length clearly labeled, and a cylinder showing radius r and height h"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:23:09.181Z",
+  "updated_at": "2026-04-05T21:23:09.181Z"
+}

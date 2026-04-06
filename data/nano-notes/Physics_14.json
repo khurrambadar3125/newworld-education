@@ -1,0 +1,98 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "Waves",
+  "chapter_id": "14",
+  "chapter_name": "Properties of waves",
+  "note_data": {
+    "title": "Properties of waves",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **wave** is a disturbance that transfers energy from one place to another without transferring matter",
+      "**Amplitude** is the maximum displacement of a particle from its rest position",
+      "**Wavelength** is the distance between two successive points that are in phase (e.g., crest to crest)",
+      "**Frequency** is the number of complete waves passing a point in one second",
+      "**Period** is the time taken for one complete wave to pass a point",
+      "Wave speed = frequency × wavelength (v = fλ)",
+      "**Reflection** occurs when waves bounce off a surface, with angle of incidence = angle of reflection",
+      "**Refraction** is the bending of waves when they pass from one medium to another at an angle",
+      "**Diffraction** is the spreading of waves when they pass through a gap or around an obstacle",
+      "Diffraction is most noticeable when the gap width is similar to the wavelength"
+    ],
+    "definitions": [
+      {
+        "term": "Wave",
+        "definition": "A disturbance that transfers energy from one place to another without transferring matter"
+      },
+      {
+        "term": "Amplitude",
+        "definition": "The maximum displacement of a particle from its rest position"
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance between two successive points that are in phase"
+      },
+      {
+        "term": "Frequency",
+        "definition": "The number of complete waves passing a point in one second"
+      },
+      {
+        "term": "Refraction",
+        "definition": "The bending of waves when they change speed as they pass from one medium to another"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Define",
+        "instruction": "Learn exact definitions word-for-word from mark scheme"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show formula, substitution, and answer with units"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A wave has a frequency of 50 Hz and travels at a speed of 340 m/s. Calculate the wavelength of the wave.",
+      "marks": 3,
+      "answer": "v = fλ\n340 = 50 × λ\nλ = 340 ÷ 50 = 6.8 m",
+      "markBreakdown": [
+        "Mark 1: Correct formula v = fλ",
+        "Mark 2: Correct substitution of values",
+        "Mark 3: Correct answer with unit (6.8 m)"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse amplitude with wavelength — amplitude is vertical displacement, wavelength is horizontal distance",
+      "Students often forget units in calculations — always include m, Hz, m/s etc.",
+      "Never say 'waves carry matter' — waves only transfer energy, not matter",
+      "Don't confuse frequency and period — frequency is waves per second, period is seconds per wave",
+      "When drawing waves, ensure amplitude is measured from rest position to peak, not peak to trough"
+    ],
+    "examinerTips": [
+      "Wave properties appear in every Paper 2 — learn the wave equation thoroughly",
+      "Always draw clear, labelled wave diagrams showing amplitude and wavelength",
+      "Diffraction questions often use ripple tank contexts — practice these",
+      "Remember: bigger gap or smaller wavelength = less diffraction"
+    ],
+    "formulas": [
+      "v = fλ",
+      "f = 1/T"
+    ],
+    "keyDiagramDescription": "Transverse wave showing amplitude (vertical arrow from rest position to crest), wavelength (horizontal arrow between two crests), and clearly labelled rest position, crest and trough"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:18:24.399Z",
+  "updated_at": "2026-04-05T21:18:24.399Z"
+}

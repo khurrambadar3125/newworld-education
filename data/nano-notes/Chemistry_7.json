@@ -1,0 +1,91 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Physical Chemistry",
+  "chapter_id": "7",
+  "chapter_name": "Chemical energetics",
+  "note_data": {
+    "title": "Chemical energetics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Exothermic reactions** release energy to the surroundings, causing temperature to increase",
+      "**Endothermic reactions** absorb energy from the surroundings, causing temperature to decrease",
+      "Bond breaking is an **endothermic process** that requires energy input",
+      "Bond forming is an **exothermic process** that releases energy",
+      "In exothermic reactions, energy released by bond formation is **greater than** energy required for bond breaking",
+      "In endothermic reactions, energy required for bond breaking is **greater than** energy released by bond formation",
+      "**Activation energy** is the minimum energy required for particles to react",
+      "Energy changes can be shown using **energy profile diagrams** with reactants and products",
+      "Physical changes like melting and boiling are **endothermic processes**",
+      "Physical changes like freezing and condensing are **exothermic processes**"
+    ],
+    "definitions": [
+      {
+        "term": "Exothermic reaction",
+        "definition": "A reaction that releases energy to the surroundings"
+      },
+      {
+        "term": "Endothermic reaction",
+        "definition": "A reaction that absorbs energy from the surroundings"
+      },
+      {
+        "term": "Activation energy",
+        "definition": "The minimum energy required for particles to react"
+      },
+      {
+        "term": "Bond breaking",
+        "definition": "An endothermic process that requires energy input"
+      },
+      {
+        "term": "Bond forming",
+        "definition": "An exothermic process that releases energy"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give the observation and energy change that occurs"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why the combustion of methane is an exothermic reaction in terms of bond breaking and bond forming.",
+      "marks": 3,
+      "answer": "Bond breaking is endothermic and requires energy. Bond forming is exothermic and releases energy. In combustion of methane, the energy released by forming new bonds is greater than the energy required to break existing bonds.",
+      "markBreakdown": [
+        "Mark 1: Bond breaking requires energy/is endothermic",
+        "Mark 2: Bond forming releases energy/is exothermic",
+        "Mark 3: Energy released > energy required/net energy released"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'heat is released' — always say 'energy is released to the surroundings'",
+      "Students often confuse bond breaking with bond forming - remember breaking REQUIRES energy",
+      "Don't say 'temperature increases because it's exothermic' — explain that energy is released which causes temperature increase",
+      "Never confuse activation energy with overall energy change of the reaction",
+      "Students mix up energy profile diagrams - products are lower than reactants in exothermic reactions"
+    ],
+    "examinerTips": [
+      "Energy changes appear in every Paper 2, often worth 4-6 marks",
+      "Always state whether temperature increases or decreases for full marks",
+      "Energy profile diagrams must be clearly labelled with reactants, products and activation energy",
+      "Use the words 'surroundings' when describing energy transfer"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Energy profile diagram showing reactants at higher level than products (exothermic) with activation energy peak, or products higher than reactants (endothermic) with activation energy barrier clearly marked"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:53:21.901Z",
+  "updated_at": "2026-04-05T20:53:21.901Z"
+}

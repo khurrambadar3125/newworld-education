@@ -200,7 +200,7 @@ async function saveNote(subject, code, level, themeId, themeName, chapter, noteD
 
   if (error) {
     // Table might not exist yet — try creating it
-    if (error.message?.includes('relation') || error.code === '42P01') {
+    if (error.message?.includes('relation') || error.message?.includes('nano_notes') || error.code === '42P01') {
       console.error('  ⚠ nano_notes table does not exist. Creating...');
       console.error('  Run this SQL in Supabase:');
       console.error(`

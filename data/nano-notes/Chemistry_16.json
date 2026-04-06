@@ -1,0 +1,95 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Inorganic Chemistry",
+  "chapter_id": "16",
+  "chapter_name": "Extraction and corrosion of metals",
+  "note_data": {
+    "title": "Extraction and corrosion of metals",
+    "readTime": "8 min",
+    "keyPoints": [
+      "Metals are extracted from their **ores** using reduction, electrolysis or displacement reactions depending on their position in the reactivity series",
+      "Carbon can only reduce metals **less reactive than carbon** - this includes iron, zinc, lead, and copper",
+      "Metals **more reactive than carbon** (like aluminium) must be extracted by **electrolysis** of molten compounds",
+      "**Rusting** requires both oxygen and water to be present - removing either prevents rusting completely",
+      "Rusting is the **oxidation of iron** to form hydrated iron(III) oxide (rust)",
+      "Prevention methods include **galvanising** (zinc coating), **painting**, **oiling**, or **alloying** to make stainless steel",
+      "**Sacrificial protection** uses a more reactive metal like zinc or magnesium to protect iron from rusting",
+      "Iron is extracted in the **blast furnace** using coke (carbon), limestone (calcium carbonate), and iron ore",
+      "**Displacement reactions** occur when a more reactive metal displaces a less reactive metal from its compound"
+    ],
+    "definitions": [
+      {
+        "term": "Ore",
+        "definition": "A naturally occurring compound of a metal that can be extracted economically"
+      },
+      {
+        "term": "Reduction",
+        "definition": "The removal of oxygen from a compound or the gain of electrons"
+      },
+      {
+        "term": "Rusting",
+        "definition": "The corrosion of iron in the presence of oxygen and water to form hydrated iron(III) oxide"
+      },
+      {
+        "term": "Galvanising",
+        "definition": "Coating iron or steel with a layer of zinc to prevent rusting"
+      },
+      {
+        "term": "Sacrificial protection",
+        "definition": "Using a more reactive metal to protect a less reactive metal from corrosion"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give a method and explain why it would work for the specific situation"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why zinc is used for galvanising iron and how it protects the iron from rusting.",
+      "marks": 4,
+      "answer": "Zinc is more reactive than iron. Zinc forms a protective layer/barrier that prevents oxygen and water from reaching the iron surface. If the zinc coating is scratched, the zinc still protects the iron by sacrificial protection because zinc is oxidised instead of iron.",
+      "markBreakdown": [
+        "Mark 1: Zinc is more reactive than iron",
+        "Mark 2: Zinc forms a protective barrier/layer",
+        "Mark 3: Prevents oxygen and water reaching iron",
+        "Mark 4: Sacrificial protection occurs if coating is damaged"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'rust needs air' — always say 'rust needs oxygen and water'",
+      "Students often confuse galvanising with painting - galvanising provides sacrificial protection even when damaged",
+      "Don't say 'carbon reduces all metals' - carbon can only reduce metals less reactive than itself",
+      "Never write 'iron oxide' for rust - it must be 'hydrated iron(III) oxide'",
+      "Students forget that electrolysis uses molten compounds, not aqueous solutions for metal extraction"
+    ],
+    "examinerTips": [
+      "Extraction methods appear frequently in Paper 2 - learn the reactivity series order",
+      "Rusting prevention questions often ask for two methods - give different types (barrier + sacrificial)",
+      "Always state both oxygen AND water are needed for rusting - stating just 'air' loses marks",
+      "Blast furnace questions may ask for equations - practice the carbon monoxide reduction step"
+    ],
+    "formulas": [
+      "2Fe + O₂ + 2H₂O → 2Fe(OH)₂ (simplified rusting)",
+      "Fe₂O₃ + 3CO → 2Fe + 3CO₂ (iron extraction)",
+      "C + CO₂ → 2CO (carbon monoxide formation)"
+    ],
+    "keyDiagramDescription": "Blast furnace diagram showing raw materials entering at top (iron ore, coke, limestone), hot air blast entering sides, and products leaving at bottom (molten iron, slag). Label temperatures and key reactions at different levels."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:56:21.425Z",
+  "updated_at": "2026-04-05T20:56:21.425Z"
+}

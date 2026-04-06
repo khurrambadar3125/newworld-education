@@ -1,0 +1,95 @@
+{
+  "subject": "Islamiyat",
+  "subject_code": "2058",
+  "level": "O Level",
+  "theme": "Paper 2",
+  "chapter_id": "P2.3",
+  "chapter_name": "The Rightly Guided Caliphs",
+  "note_data": {
+    "title": "The Rightly Guided Caliphs",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Abu Bakr** was the first Rightly Guided Caliph who fought the Ridda Wars against tribal rebellions and apostasy",
+      "**Umar ibn al-Khattab** established the Islamic calendar, created the office of Qadi (judge), and expanded the Islamic empire to include Persia and Byzantine territories",
+      "**Uthman ibn Affan** compiled the Quran into a single standardized version (mushaf) and destroyed all other variants to prevent disputes",
+      "**Ali ibn Abi Talib** faced civil wars including the Battle of the Camel against Aisha and the Battle of Siffin against Muawiya",
+      "The **Rightly Guided Caliphs** ruled according to Quran and Sunnah, consulted with companions (shura), and lived simple lives",
+      "Abu Bakr's caliphate lasted 2 years during which he preserved the unity of the Muslim state and compiled the Quran in written form",
+      "Umar introduced the **hijri calendar**, established the **diwan** (register for salaries), and was known for justice and administrative reforms",
+      "Uthman's caliphate saw the first **fitna** (civil discord) due to complaints about his appointment of relatives to key positions",
+      "Ali's caliphate was marked by internal conflicts and he was assassinated by a Kharijite at Kufa mosque"
+    ],
+    "definitions": [
+      {
+        "term": "Caliph",
+        "definition": "The successor to Prophet Muhammad as leader of the Muslim community, responsible for religious and political affairs"
+      },
+      {
+        "term": "Rightly Guided Caliphs",
+        "definition": "The first four caliphs (Abu Bakr, Umar, Uthman, Ali) who ruled according to Quran and Sunnah and are considered model rulers"
+      },
+      {
+        "term": "Ridda Wars",
+        "definition": "Military campaigns fought by Abu Bakr against Arabian tribes who refused to pay zakat or apostatized after the Prophet's death"
+      },
+      {
+        "term": "Shura",
+        "definition": "Consultation process used by the Rightly Guided Caliphs to make important decisions by seeking advice from companions"
+      },
+      {
+        "term": "Fitna",
+        "definition": "A period of civil discord or trial in the Muslim community, particularly referring to conflicts during Uthman and Ali's caliphates"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of events in chronological order"
+      },
+      {
+        "commandWord": "Assess",
+        "instruction": "Give both positive and negative points with a balanced conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the main achievements of Umar ibn al-Khattab during his caliphate. [4 marks]",
+      "marks": 4,
+      "answer": "Umar established the hijri calendar starting from the Prophet's migration to Medina, which provided a unified dating system for the Muslim empire. He created the diwan system to register soldiers and their salaries, ensuring fair distribution of state revenues. Umar introduced the office of qadi (judges) to establish a proper judicial system based on Islamic law. He expanded the Islamic empire significantly by conquering Persia, Syria, Palestine and Egypt, spreading Islam across vast territories.",
+      "markBreakdown": [
+        "Mark 1: Established hijri calendar",
+        "Mark 2: Created diwan system",
+        "Mark 3: Introduced qadi system",
+        "Mark 4: Expanded Islamic empire"
+      ]
+    },
+    "commonMistakes": [
+      "Never say the caliphs were 'elected' — always say they were 'chosen' or 'selected' through consultation",
+      "Students often confuse the compilation of Quran under Abu Bakr with the standardization under Uthman",
+      "Don't mix up the battles — Battle of Camel was against Aisha, Battle of Siffin was against Muawiya",
+      "Never say Ali was the 'rightful' caliph — this shows sectarian bias. State facts objectively",
+      "Don't describe internal conflicts as 'civil wars' — use the term 'fitna' which is more historically accurate"
+    ],
+    "examinerTips": [
+      "This topic appears in Paper 2 almost every year, particularly focusing on individual achievements",
+      "Always mention specific examples when explaining achievements rather than general statements",
+      "For 'assess' questions, give both positive achievements and challenges faced by each caliph",
+      "Remember chronological order: Abu Bakr (632-634), Umar (634-644), Uthman (644-656), Ali (656-661)"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Timeline showing the four caliphs in chronological order with key achievements and major events during each caliphate period"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:46:13.158Z",
+  "updated_at": "2026-04-05T20:46:13.158Z"
+}

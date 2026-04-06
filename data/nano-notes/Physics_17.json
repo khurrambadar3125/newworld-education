@@ -1,0 +1,95 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "Electricity and Magnetism",
+  "chapter_id": "17",
+  "chapter_name": "Static electricity",
+  "note_data": {
+    "title": "Static electricity",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Static electricity** is caused by the transfer of electrons from one material to another through friction",
+      "Objects become **positively charged** when they lose electrons and **negatively charged** when they gain electrons",
+      "**Like charges repel** and **unlike charges attract** each other",
+      "An **electric field** is a region where a charged object experiences a force",
+      "**Electric field lines** run from positive to negative charges and show the direction of force on a positive charge",
+      "Objects can be charged by **friction**, **contact** (conduction), or **induction**",
+      "**Earthing** (grounding) removes static charge by allowing electrons to flow to or from the ground",
+      "**Sparks** occur when charge builds up to a point where air becomes conducting",
+      "**Gold leaf electroscope** detects the presence and type of electric charge"
+    ],
+    "definitions": [
+      {
+        "term": "Static electricity",
+        "definition": "Electric charge that builds up on objects and does not flow"
+      },
+      {
+        "term": "Electric field",
+        "definition": "A region around a charged object where another charged object experiences a force"
+      },
+      {
+        "term": "Earthing",
+        "definition": "The process of removing excess charge by connecting an object to the ground"
+      },
+      {
+        "term": "Insulator",
+        "definition": "A material that does not allow electric charge to flow through it easily"
+      },
+      {
+        "term": "Conductor",
+        "definition": "A material that allows electric charge to flow through it easily"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of steps or detailed account of what happens"
+      },
+      {
+        "commandWord": "Draw",
+        "instruction": "Always label electric field lines with arrows showing direction"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A plastic rod is rubbed with a cloth. The rod becomes negatively charged. Explain how the rod becomes charged and state what happens to the cloth.",
+      "marks": 4,
+      "answer": "Friction between the rod and cloth causes electrons to transfer from the cloth to the rod. The rod gains electrons so becomes negatively charged. The cloth loses electrons so becomes positively charged. Charge is conserved in this process.",
+      "markBreakdown": [
+        "Mark 1: Friction causes electron transfer",
+        "Mark 2: Rod gains electrons",
+        "Mark 3: Rod becomes negatively charged",
+        "Mark 4: Cloth becomes positively charged"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'charge flows' in insulators — always say 'electrons transfer'",
+      "Students often say objects gain or lose 'charge' instead of 'electrons'",
+      "Never say 'positive charges move' — only electrons move in most materials",
+      "Students confuse charging by induction with charging by contact",
+      "Drawing electric field lines without arrows or in wrong direction loses marks"
+    ],
+    "examinerTips": [
+      "Static electricity appears almost every year in Paper 2",
+      "Always specify 'electrons' rather than just 'charge' when explaining charging",
+      "Electric field diagrams must show arrows pointing from + to - for full marks",
+      "Questions often ask about dangers and uses of static electricity"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Electric field pattern around point charges showing field lines as arrows pointing from positive to negative charges, with lines closer together indicating stronger field"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:19:22.765Z",
+  "updated_at": "2026-04-05T21:19:22.765Z"
+}

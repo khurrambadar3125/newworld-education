@@ -1,0 +1,94 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "General Physics",
+  "chapter_id": "1",
+  "chapter_name": "Making measurements",
+  "note_data": {
+    "title": "Making measurements",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Length** is measured using rulers, metre rules, measuring tapes, and callipers for accurate measurements",
+      "**Volume** of regular solids is calculated using length × width × height; irregular solids use displacement method",
+      "**Density** is the mass per unit volume of a substance, measured in kg/m³ or g/cm³",
+      "**Time** is measured using stopwatches, with repeated measurements taken to reduce random errors",
+      "**Parallax error** occurs when the eye is not positioned directly above the scale reading",
+      "**Systematic errors** cause all readings to be consistently higher or lower than the true value",
+      "**Random errors** cause readings to scatter around the true value and can be reduced by taking repeat readings",
+      "**Precision** refers to how close repeated measurements are to each other",
+      "**Accuracy** refers to how close a measurement is to the true value"
+    ],
+    "definitions": [
+      {
+        "term": "Density",
+        "definition": "The mass per unit volume of a substance"
+      },
+      {
+        "term": "Parallax error",
+        "definition": "The error that occurs when the eye is not positioned directly above the scale when taking a reading"
+      },
+      {
+        "term": "Systematic error",
+        "definition": "An error that causes all readings to differ from the true value by the same amount"
+      },
+      {
+        "term": "Random error",
+        "definition": "An error that causes readings to scatter randomly around the true value"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a step-by-step method or detailed account of the process"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly with correct formula, substitution and final answer with units"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A student measures the density of an irregular stone. Describe how the student can find the volume of the stone using the displacement method.",
+      "marks": 4,
+      "answer": "1. Fill a measuring cylinder with water and record the initial volume. 2. Carefully lower the stone into the water using a thread to avoid splashing. 3. Record the new water level. 4. The volume of the stone equals the difference between the final and initial water levels.",
+      "markBreakdown": [
+        "Mark 1: Fill measuring cylinder with water and record initial volume",
+        "Mark 2: Lower stone into water carefully",
+        "Mark 3: Record new water level",
+        "Mark 4: Volume of stone = final volume - initial volume"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'weight per unit volume' for density — always say 'mass per unit volume'",
+      "Students often forget to include units in final answers for calculations",
+      "When measuring time, students forget that human reaction time causes errors — always take repeat readings",
+      "Confusing accuracy with precision — accuracy is closeness to true value, precision is repeatability",
+      "Not positioning eye at right angles to scale causes parallax error"
+    ],
+    "examinerTips": [
+      "Measurement questions appear in almost every paper — especially density calculations",
+      "Always show working for calculations: formula, substitution, answer with units",
+      "For error questions, identify the type of error AND suggest how to reduce it",
+      "Remember to convert units correctly (cm³ to m³, g to kg) in density problems"
+    ],
+    "formulas": [
+      "density = mass ÷ volume",
+      "volume of cuboid = length × width × height"
+    ],
+    "keyDiagramDescription": "Measuring cylinder showing water displacement method: initial water level, stone being lowered in, and final water level marked clearly with volume readings"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:58:50.461Z",
+  "updated_at": "2026-04-05T20:58:50.462Z"
+}

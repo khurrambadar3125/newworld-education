@@ -1,0 +1,94 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Physical Chemistry",
+  "chapter_id": "1",
+  "chapter_name": "States of matter",
+  "note_data": {
+    "title": "States of matter",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Solids** have a fixed shape and volume because particles are closely packed in a regular arrangement",
+      "**Liquids** have a fixed volume but take the shape of their container because particles are close together but can move around each other",
+      "**Gases** have no fixed shape or volume because particles are far apart and move randomly in all directions",
+      "**Kinetic theory** states that all particles are in constant motion and the amount of kinetic energy increases with temperature",
+      "**Diffusion** is the net movement of particles from a region of high concentration to a region of low concentration",
+      "Diffusion occurs faster in gases than liquids because gas particles move faster and are further apart",
+      "**Heating** a substance increases the kinetic energy of particles causing them to move faster and vibrate more",
+      "**Changes of state** occur when particles gain or lose enough energy to overcome intermolecular forces",
+      "**Mixtures** can be separated because the components retain their individual properties and are not chemically bonded"
+    ],
+    "definitions": [
+      {
+        "term": "Diffusion",
+        "definition": "The net movement of particles from a region of high concentration to a region of low concentration"
+      },
+      {
+        "term": "Kinetic energy",
+        "definition": "The energy possessed by particles due to their motion"
+      },
+      {
+        "term": "Mixture",
+        "definition": "Two or more substances that are not chemically combined and can be separated by physical methods"
+      },
+      {
+        "term": "Melting point",
+        "definition": "The temperature at which a solid changes to a liquid"
+      },
+      {
+        "term": "Boiling point",
+        "definition": "The temperature at which a liquid changes to a gas throughout the liquid"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of what happens step by step"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between two states"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why diffusion occurs faster in gases than in liquids. [3 marks]",
+      "marks": 3,
+      "answer": "Gas particles move faster than liquid particles because they have more kinetic energy. Gas particles are further apart than liquid particles so there is more space to move. Therefore gas particles can spread out more quickly from high to low concentration.",
+      "markBreakdown": [
+        "Mark 1: Gas particles move faster/have more kinetic energy",
+        "Mark 2: Gas particles are further apart/more space to move",
+        "Mark 3: Link to faster spreading from high to low concentration"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'molecules stop moving' at absolute zero — always say 'particles have minimum kinetic energy'",
+      "Students often confuse evaporation with boiling — evaporation occurs at surface only, boiling occurs throughout",
+      "Never say 'particles get bigger when heated' — particles move faster and further apart but stay same size",
+      "Don't confuse diffusion with osmosis — diffusion is for any particles, osmosis is specifically water through membrane",
+      "Students incorrectly say 'gases have no forces' — gases have weak intermolecular forces, not zero forces"
+    ],
+    "examinerTips": [
+      "Particle diagrams appear in almost every paper — always show correct spacing and arrangement",
+      "When explaining diffusion, always mention 'net movement' not just 'movement'",
+      "Use kinetic theory to explain all changes of state for full marks",
+      "For mixture separation questions, always state the property difference being used"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Particle arrangement diagrams showing: solids with particles in regular, close-packed arrangement; liquids with particles close but irregular; gases with particles far apart and random. Include arrows to show particle movement."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:51:19.791Z",
+  "updated_at": "2026-04-05T20:51:19.793Z"
+}

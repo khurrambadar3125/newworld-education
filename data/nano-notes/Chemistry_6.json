@@ -1,0 +1,98 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Physical Chemistry",
+  "chapter_id": "6",
+  "chapter_name": "Electrochemistry",
+  "note_data": {
+    "title": "Electrochemistry",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Electrolysis** is the decomposition of an ionic compound using electrical energy when molten or in aqueous solution",
+      "During electrolysis, **cations** move to the cathode (negative electrode) and **anions** move to the anode (positive electrode)",
+      "At the cathode, **reduction** occurs (gain of electrons) and at the anode, **oxidation** occurs (loss of electrons)",
+      "In the electrolysis of water, **hydrogen gas** is produced at the cathode and **oxygen gas** is produced at the anode",
+      "The **volume of hydrogen** produced is twice the volume of oxygen because the ratio is 2H₂ : O₂",
+      "**Electrical conductivity** occurs in metals due to mobile electrons and in ionic solutions due to mobile ions",
+      "A **fuel cell** converts chemical energy directly into electrical energy using hydrogen and oxygen",
+      "In a hydrogen fuel cell, hydrogen is **oxidized** at the anode and oxygen is **reduced** at the cathode",
+      "Electrolysis can be used for **electroplating** metals and **extraction** of reactive metals like aluminum"
+    ],
+    "definitions": [
+      {
+        "term": "Electrolysis",
+        "definition": "The decomposition of an ionic compound using electrical energy when the compound is molten or in aqueous solution"
+      },
+      {
+        "term": "Electrolyte",
+        "definition": "A substance that conducts electricity when molten or in aqueous solution and is decomposed by the electric current"
+      },
+      {
+        "term": "Fuel cell",
+        "definition": "A device that converts chemical energy directly into electrical energy using hydrogen and oxygen"
+      },
+      {
+        "term": "Electrode",
+        "definition": "A conductor through which electricity enters or leaves an electrolyte during electrolysis"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a detailed account including what happens at each electrode"
+      },
+      {
+        "commandWord": "Predict",
+        "instruction": "Use discharge rules to determine products at each electrode"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Describe what happens during the electrolysis of dilute sulfuric acid using platinum electrodes. Include the electrode reactions.",
+      "marks": 6,
+      "answer": "Water molecules are decomposed. At the cathode, hydrogen ions gain electrons to form hydrogen gas: 2H⁺ + 2e⁻ → H₂. At the anode, hydroxide ions lose electrons to form oxygen gas and water: 4OH⁻ → O₂ + 2H₂O + 4e⁻. Hydrogen gas is produced at the cathode and oxygen gas is produced at the anode. The volume of hydrogen is twice the volume of oxygen. The solution becomes more concentrated as water is removed.",
+      "markBreakdown": [
+        "Mark 1: Water is decomposed",
+        "Mark 2: Hydrogen produced at cathode",
+        "Mark 3: Oxygen produced at anode",
+        "Mark 4: Correct cathode equation",
+        "Mark 5: Correct anode equation",
+        "Mark 6: 2:1 volume ratio mentioned"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'electricity is conducted by atoms' — always say 'electricity is conducted by mobile electrons in metals or mobile ions in ionic solutions'",
+      "Students often confuse which electrode is positive/negative — remember cathode is negative, anode is positive",
+      "Never write H₂SO₄ as being discharged in dilute acid — it's always H⁺ and OH⁻ from water",
+      "Students forget to balance electrode equations or omit electrons completely",
+      "Don't confuse fuel cells with electrolysis — fuel cells produce electricity, electrolysis uses electricity"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2, especially electrolysis of water and simple salts",
+      "Always state the products at each electrode clearly and write balanced equations",
+      "Remember discharge rules: less reactive elements are discharged first",
+      "Draw and label electrolysis diagrams showing electron flow and ion movement",
+      "In Pakistan context: electroplating is used in Sialkot sports goods industry for metal coating"
+    ],
+    "formulas": [
+      "2H⁺ + 2e⁻ → H₂ (cathode reaction)",
+      "4OH⁻ → O₂ + 2H₂O + 4e⁻ (anode reaction)",
+      "2H₂O → 2H₂ + O₂ (overall reaction for water electrolysis)"
+    ],
+    "keyDiagramDescription": "Electrolysis cell showing two electrodes in electrolyte, with battery/power supply, electron flow from anode to cathode through external circuit, and ion movement in solution (cations to cathode, anions to anode)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:53:04.441Z",
+  "updated_at": "2026-04-05T20:53:04.441Z"
+}

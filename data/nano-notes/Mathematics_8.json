@@ -1,0 +1,89 @@
+{
+  "subject": "Mathematics",
+  "subject_code": "4024",
+  "level": "O Level",
+  "theme": "Data and Functions",
+  "chapter_id": "8",
+  "chapter_name": "Sets and functions",
+  "note_data": {
+    "title": "Sets and functions",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **set** is a collection of well-defined objects called elements",
+      "Use **set-builder notation** {x : condition} or **list notation** {a, b, c} to describe sets",
+      "The **universal set** ξ contains all elements under consideration in a particular context",
+      "**Venn diagrams** use overlapping circles to show relationships between sets with the universal set as a rectangle",
+      "A **function** is a mapping where each element in the domain maps to exactly one element in the range",
+      "The **inverse function** f⁻¹(x) reverses the effect of function f(x), so f⁻¹(f(x)) = x",
+      "A **composite function** (g ∘ f)(x) = g(f(x)) means apply f first, then apply g to the result",
+      "**Domain** is the set of input values, **range** is the set of possible output values"
+    ],
+    "definitions": [
+      {
+        "term": "Function",
+        "definition": "A mapping from a set of inputs (domain) to a set of outputs (range) where each input has exactly one output"
+      },
+      {
+        "term": "Inverse function",
+        "definition": "A function f⁻¹ that reverses the mapping of function f, where f⁻¹(f(x)) = x for all x in the domain"
+      },
+      {
+        "term": "Composite function",
+        "definition": "The combination of two functions where the output of the first function becomes the input of the second function"
+      },
+      {
+        "term": "Universal set",
+        "definition": "The set containing all elements under consideration in a particular problem"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "List",
+        "instruction": "Write elements separated by commas inside curly brackets { }"
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "For composite functions, substitute the inner function into the outer function step by step"
+      },
+      {
+        "commandWord": "Draw",
+        "instruction": "For Venn diagrams, draw circles inside a rectangle, label all regions clearly"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Given f(x) = 2x + 3 and g(x) = x², find (a) f⁻¹(x) (b) (g ∘ f)(5)",
+      "marks": 4,
+      "answer": "(a) Let y = 2x + 3, then x = (y-3)/2, so f⁻¹(x) = (x-3)/2\n(b) f(5) = 2(5) + 3 = 13\n(g ∘ f)(5) = g(f(5)) = g(13) = 13² = 169",
+      "markBreakdown": [
+        "Mark 1: Correct method for finding inverse",
+        "Mark 2: f⁻¹(x) = (x-3)/2",
+        "Mark 3: f(5) = 13",
+        "Mark 4: (g ∘ f)(5) = 169"
+      ]
+    },
+    "commonMistakes": [
+      "Writing f⁻¹(x) = 1/f(x) instead of finding the actual inverse function",
+      "Confusing (f ∘ g)(x) with (g ∘ f)(x) - the order matters in composite functions",
+      "Not showing all elements clearly in Venn diagram regions",
+      "Forgetting to state domain restrictions when finding inverse functions",
+      "Writing ∈ instead of ⊆ when describing subset relationships"
+    ],
+    "examinerTips": [
+      "Functions appear in Paper 2 almost every year, often worth 8-12 marks",
+      "Always check your inverse function by verifying f(f⁻¹(x)) = x",
+      "For Venn diagrams, shade the required region clearly and label with numbers",
+      "Show working step-by-step for composite functions to earn method marks"
+    ],
+    "formulas": [
+      "n(A ∪ B) = n(A) + n(B) - n(A ∩ B)",
+      "If f(x) = ax + b, then f⁻¹(x) = (x-b)/a"
+    ],
+    "keyDiagramDescription": "Venn diagram showing two overlapping circles A and B inside a rectangle (universal set ξ), with regions labeled: A only, B only, A∩B (intersection), and elements outside both circles"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:24:59.568Z",
+  "updated_at": "2026-04-05T21:24:59.568Z"
+}

@@ -1,0 +1,95 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "General Physics",
+  "chapter_id": "7",
+  "chapter_name": "Energy resources",
+  "note_data": {
+    "title": "Energy resources",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Renewable energy resources** can be replenished naturally and will not run out",
+      "**Non-renewable energy resources** are being used up faster than they are being formed and will eventually run out",
+      "**Solar energy** is produced by nuclear fusion reactions in the Sun, converting hydrogen nuclei to helium nuclei",
+      "Solar panels contain **photovoltaic cells** that convert light energy directly into electrical energy",
+      "Solar thermal collectors use **black surfaces** to absorb heat energy from the Sun to heat water",
+      "**Hydroelectric power** uses gravitational potential energy of water stored at height to generate electricity",
+      "**Wind turbines** convert kinetic energy of moving air into electrical energy through rotating generators",
+      "**Geothermal energy** uses heat from radioactive decay in the Earth's core to produce steam for electricity generation",
+      "Solar energy is the **ultimate source** of most renewable energy resources including wind, hydroelectric and biomass",
+      "Energy resources have **environmental impacts** including visual pollution, noise pollution and habitat destruction"
+    ],
+    "definitions": [
+      {
+        "term": "Renewable energy resource",
+        "definition": "An energy resource that can be replenished naturally and will not run out"
+      },
+      {
+        "term": "Non-renewable energy resource",
+        "definition": "An energy resource that is being used up faster than it is being formed and will eventually run out"
+      },
+      {
+        "term": "Solar panel",
+        "definition": "A device containing photovoltaic cells that converts light energy directly into electrical energy"
+      },
+      {
+        "term": "Hydroelectric power",
+        "definition": "The generation of electricity using the gravitational potential energy of water stored at height"
+      },
+      {
+        "term": "Geothermal energy",
+        "definition": "Energy obtained from the natural heat in the Earth's crust, produced by radioactive decay"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a step-by-step account of how the energy conversion works"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between energy resources"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how energy from the Sun is converted into electrical energy in a solar panel. [3 marks]",
+      "marks": 3,
+      "answer": "Light energy from the Sun hits the photovoltaic cells in the solar panel. The photovoltaic cells absorb the light energy and convert it directly into electrical energy. The electrical energy can then be used to power electrical devices or stored in batteries.",
+      "markBreakdown": [
+        "Mark 1: Light energy from Sun hits photovoltaic cells",
+        "Mark 2: Photovoltaic cells convert light energy into electrical energy",
+        "Mark 3: Reference to direct conversion or use of electrical energy"
+      ]
+    },
+    "commonMistakes": [
+      "Never say solar panels produce heat energy — they produce electrical energy directly from light",
+      "Students often confuse solar panels (electrical) with solar thermal collectors (heat water)",
+      "Don't say renewable resources are 'unlimited' — say they 'will not run out' or 'can be replenished'",
+      "Never say wind energy comes from the Sun's heat — it comes from uneven heating causing air movement",
+      "Students forget that most renewable resources ultimately derive their energy from the Sun"
+    ],
+    "examinerTips": [
+      "Energy resources appears in every Paper 2 - learn the conversions for each type",
+      "Always specify the energy conversion taking place (e.g. kinetic to electrical)",
+      "Environmental impacts are commonly asked - know advantages AND disadvantages",
+      "Pakistan examples: Tarbela Dam (hydroelectric), Gharo wind farm, solar potential in Balochistan"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Solar panel diagram showing photovoltaic cells converting light rays into electrical energy, with arrows indicating energy conversion from Sun to electrical output"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:16:08.614Z",
+  "updated_at": "2026-04-05T21:16:08.614Z"
+}

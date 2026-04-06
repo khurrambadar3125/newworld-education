@@ -1,0 +1,91 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Inorganic Chemistry",
+  "chapter_id": "13",
+  "chapter_name": "The Periodic Table",
+  "note_data": {
+    "title": "The Periodic Table",
+    "readTime": "8 min",
+    "keyPoints": [
+      "Elements are arranged in **periods** (horizontal rows) and **groups** (vertical columns) in order of increasing atomic number",
+      "Elements in the same **group** have the same number of electrons in their outer shell and similar chemical properties",
+      "Elements in the same **period** have the same number of electron shells",
+      "**Atomic radius** decreases across a period from left to right due to increased nuclear charge",
+      "**Atomic radius** increases down a group due to increased number of electron shells",
+      "**Metallic character** decreases across a period from left to right",
+      "**Metallic character** increases down a group",
+      "**Group 1** elements (alkali metals) become more reactive down the group",
+      "**Group 17** elements (halogens) become less reactive down the group",
+      "**Group 18** elements (noble gases) are unreactive due to complete outer electron shells"
+    ],
+    "definitions": [
+      {
+        "term": "Period",
+        "definition": "A horizontal row of elements in the periodic table with the same number of electron shells"
+      },
+      {
+        "term": "Group",
+        "definition": "A vertical column of elements in the periodic table with the same number of electrons in their outer shell"
+      },
+      {
+        "term": "Atomic number",
+        "definition": "The number of protons in the nucleus of an atom"
+      },
+      {
+        "term": "Periodic trend",
+        "definition": "A pattern in properties that repeats across periods or down groups in the periodic table"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Predict",
+        "instruction": "Use trends to suggest properties of unknown elements"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between elements or groups"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why atomic radius decreases across Period 3 from sodium to chlorine.",
+      "marks": 3,
+      "answer": "Across Period 3, the nuclear charge increases from +11 to +17. The number of electron shells remains the same (3 shells). The increased nuclear charge pulls the electrons more strongly towards the nucleus, making the atomic radius smaller.",
+      "markBreakdown": [
+        "Mark 1: Nuclear charge increases",
+        "Mark 2: Number of electron shells stays the same",
+        "Mark 3: Stronger attraction pulls electrons closer/atomic radius decreases"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'atomic weight' — always say 'relative atomic mass' or 'atomic number'",
+      "Students often confuse groups and periods — remember groups are vertical columns",
+      "Don't say elements have 'full outer shells' — say 'complete outer electron shells'",
+      "Never say 'Group 0' for noble gases — always use 'Group 18'",
+      "Students mix up trends — atomic radius increases down groups but decreases across periods"
+    ],
+    "examinerTips": [
+      "Periodic table trends appear in almost every Paper 2 exam",
+      "Always state both the trend AND the reason for full marks",
+      "Use the periodic table provided in exams to identify groups and periods",
+      "Remember: Group number = number of outer electrons (for Groups 1, 2, 13-18)"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Periodic table showing 18 groups (vertical columns) and 7 periods (horizontal rows), with metals on the left, non-metals on the right, and metalloids along the diagonal line"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:55:17.767Z",
+  "updated_at": "2026-04-05T20:55:17.767Z"
+}

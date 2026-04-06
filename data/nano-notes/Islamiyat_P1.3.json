@@ -1,0 +1,87 @@
+{
+  "subject": "Islamiyat",
+  "subject_code": "2058",
+  "level": "O Level",
+  "theme": "Paper 1",
+  "chapter_id": "P1.3",
+  "chapter_name": "Life and Importance of Prophet Muhammad (PBUH)",
+  "note_data": {
+    "title": "Life and Importance of Prophet Muhammad (PBUH)",
+    "readTime": "8 min",
+    "keyPoints": [
+      "Prophet Muhammad (PBUH) was born in **Makkah** in 570 CE into the Hashim clan of the Quraysh tribe",
+      "He received his first **revelation** through Angel Jibreel (Gabriel) in the cave of Hira at age 40",
+      "The **Hijrah** (migration) from Makkah to Madinah in 622 CE marks the beginning of the Islamic calendar",
+      "In Madinah, he established the first **Islamic state** and united the Muhajireen and Ansar",
+      "The **Constitution of Madinah** established rights and duties for all communities living in the city",
+      "He is the **Seal of the Prophets** (Khatam al-Nabiyyin), completing the line of messengers from Allah",
+      "His **Sunnah** (example) provides guidance for all aspects of Muslim life alongside the Quran",
+      "He conducted **farewell pilgrimage** (Hajjat al-Wada) and delivered the farewell sermon in 632 CE",
+      "He died in Madinah in 632 CE, having successfully spread Islam throughout the Arabian Peninsula"
+    ],
+    "definitions": [
+      {
+        "term": "Hijrah",
+        "definition": "The migration of Prophet Muhammad (PBUH) and the early Muslim community from Makkah to Madinah in 622 CE, marking the start of the Islamic calendar"
+      },
+      {
+        "term": "Sunnah",
+        "definition": "The example, sayings, actions and silent approval of Prophet Muhammad (PBUH) which serves as a source of guidance for Muslims"
+      },
+      {
+        "term": "Khatam al-Nabiyyin",
+        "definition": "The Seal of the Prophets, meaning Prophet Muhammad (PBUH) is the final messenger sent by Allah to humanity"
+      },
+      {
+        "term": "Ummah",
+        "definition": "The worldwide community of Muslims united by their faith in Islam under the leadership of Prophet Muhammad (PBUH)"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. Example: 'Prophet Muhammad (PBUH) was born in Makkah in 570 CE.'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give 2-3 factual points about events without explanation. Use chronological order for his life events."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this shows'. Focus on WHY events were important for Islam's development."
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the importance of the Hijrah for the early Muslim community. [4 marks]",
+      "marks": 4,
+      "answer": "The Hijrah was important because it allowed Muslims to escape persecution in Makkah and practice their religion freely. This enabled the Muslim community to grow and develop without fear of attack. The migration also marked the establishment of the first Islamic state in Madinah, where Prophet Muhammad (PBUH) could implement Islamic laws and governance. Additionally, the Hijrah united the Muhajireen (migrants) with the Ansar (helpers), creating a strong brotherhood that strengthened the Muslim Ummah.",
+      "markBreakdown": [
+        "Mark 1: Escape from persecution/practice religion freely",
+        "Mark 2: Growth and development of Muslim community",
+        "Mark 3: Establishment of first Islamic state",
+        "Mark 4: Unity between Muhajireen and Ansar"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse the year of Hijrah (622 CE) with the year of first revelation (610 CE)",
+      "Students often forget to mention that Hijrah marks the START of Islamic calendar, not just migration",
+      "Avoid saying 'Prophet ran away' - always use 'migrated' or 'strategic withdrawal' to show it was planned",
+      "Don't mix up Muhajireen (migrants from Makkah) with Ansar (helpers from Madinah)",
+      "Never write just 'Muhammad' - always include (PBUH) or 'Prophet Muhammad (PBUH)' for respect"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every Paper 2 exam - focus on Makkan and Madinan periods separately",
+      "Always mention specific dates: 570 CE (birth), 610 CE (first revelation), 622 CE (Hijrah), 632 CE (death)",
+      "For 'importance' questions, link events to development of Islam and Muslim community",
+      "Learn the Constitution of Madinah as it shows his role as political leader, not just religious"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Timeline showing key events: Birth in Makkah (570 CE) → First Revelation (610 CE) → Hijrah to Madinah (622 CE) → Farewell Pilgrimage (632 CE) → Death in Madinah (632 CE). Show the geographical movement from Makkah to Madinah."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:44:34.072Z",
+  "updated_at": "2026-04-05T20:44:34.072Z"
+}

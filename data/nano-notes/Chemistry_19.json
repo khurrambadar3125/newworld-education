@@ -1,0 +1,90 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Organic Chemistry",
+  "chapter_id": "19",
+  "chapter_name": "Reactions of organic compounds",
+  "note_data": {
+    "title": "Reactions of organic compounds",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Ethanol** undergoes oxidation with acidified potassium dichromate(VI) to form ethanoic acid",
+      "**Carboxylic acids** react with alcohols to form esters and water in the presence of concentrated sulfuric acid",
+      "**Esterification** is a condensation reaction because a small molecule (water) is eliminated",
+      "**Ethanoic acid** reacts with sodium carbonate to produce sodium ethanoate, carbon dioxide and water",
+      "**Carboxylic acids** react with metals to produce a salt and hydrogen gas",
+      "**Esters** can be hydrolysed by heating with dilute acid or alkali to form carboxylic acid and alcohol",
+      "**Characteristic reaction** of alcohols is oxidation to form carboxylic acids when heated with acidified K₂Cr₂O₇",
+      "**Fermentation** of glucose produces ethanol and carbon dioxide using yeast as a catalyst",
+      "**Ethanol** burns in air with a clean blue flame to produce carbon dioxide and water"
+    ],
+    "definitions": [
+      {
+        "term": "Esterification",
+        "definition": "The reaction between a carboxylic acid and an alcohol to form an ester and water"
+      },
+      {
+        "term": "Fermentation",
+        "definition": "The breakdown of glucose by yeast in the absence of air to produce ethanol and carbon dioxide"
+      },
+      {
+        "term": "Hydrolysis",
+        "definition": "The breakdown of a compound by reaction with water"
+      },
+      {
+        "term": "Oxidation",
+        "definition": "The addition of oxygen or removal of hydrogen from a compound"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the products only. No equations or explanations needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the reaction + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Write an equation",
+        "instruction": "Include state symbols and balance correctly for full marks"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Ethanol can be oxidised to form ethanoic acid. Name the oxidising agent used and state the colour change observed during this reaction.",
+      "marks": 3,
+      "answer": "Oxidising agent: acidified potassium dichromate(VI) or K₂Cr₂O₇/H₂SO₄. Colour change: orange to green.",
+      "markBreakdown": [
+        "Mark 1: acidified potassium dichromate(VI)",
+        "Mark 2: K₂Cr₂O₇/H₂SO₄ accepted",
+        "Mark 3: orange to green colour change"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'potassium dichromate' alone — always say 'acidified potassium dichromate(VI)'",
+      "Students often write 'ethyl ethanoate' instead of drawing the structural formula correctly",
+      "Don't confuse hydrolysis with hydrogenation — hydrolysis involves breaking bonds with water",
+      "Never say esters are formed by 'dehydration' — always use 'condensation reaction'",
+      "Students forget that fermentation requires absence of air/oxygen"
+    ],
+    "examinerTips": [
+      "Esterification appears in almost every Paper 2 — learn the mechanism",
+      "Always include concentrated H₂SO₄ as catalyst in esterification equations",
+      "Colour changes with dichromate are frequently tested — orange to green",
+      "Draw structural formulas for esters showing the C-O-C=O arrangement clearly"
+    ],
+    "formulas": [
+      "C₂H₅OH + [O] → CH₃COOH + H₂O",
+      "CH₃COOH + C₂H₅OH → CH₃COOC₂H₅ + H₂O",
+      "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂"
+    ],
+    "keyDiagramDescription": "Structural formula of ester showing R-COO-R' arrangement with double bonded oxygen on carbon and single bonded oxygen linking to alkyl group"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:57:23.240Z",
+  "updated_at": "2026-04-05T20:57:23.240Z"
+}

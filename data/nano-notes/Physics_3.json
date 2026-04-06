@@ -1,0 +1,97 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "General Physics",
+  "chapter_id": "3",
+  "chapter_name": "Forces and motion",
+  "note_data": {
+    "title": "Forces and motion",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Force** is a push or pull that can change the shape, size, or motion of an object",
+      "**Mass** is the amount of matter in an object and is measured in kilograms (kg)",
+      "**Weight** is the gravitational force acting on an object and is measured in newtons (N)",
+      "Weight = mass × gravitational field strength (W = mg)",
+      "**Scalar quantities** have magnitude only (mass, speed, distance, time)",
+      "**Vector quantities** have both magnitude and direction (force, weight, velocity, acceleration, momentum)",
+      "In free fall, all objects accelerate at approximately 10 m/s² due to gravity (ignoring air resistance)",
+      "**Momentum** = mass × velocity (p = mv) and is conserved in collisions",
+      "Terminal velocity is reached when air resistance equals weight, resulting in zero acceleration"
+    ],
+    "definitions": [
+      {
+        "term": "Force",
+        "definition": "A push or pull that can change the shape, size, or motion of an object"
+      },
+      {
+        "term": "Mass",
+        "definition": "The amount of matter in an object"
+      },
+      {
+        "term": "Weight",
+        "definition": "The gravitational force acting on an object"
+      },
+      {
+        "term": "Momentum",
+        "definition": "The product of mass and velocity of a moving object"
+      },
+      {
+        "term": "Terminal velocity",
+        "definition": "The constant velocity reached when the drag force equals the driving force"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show the formula, substitute values, and give the final answer with correct units"
+      },
+      {
+        "commandWord": "Distinguish",
+        "instruction": "Give clear differences between two concepts using 'whereas' or 'but'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A cricket ball of mass 0.16 kg is dropped from the roof of a building in Lahore. Calculate the weight of the ball. (gravitational field strength = 10 N/kg)",
+      "marks": 3,
+      "answer": "Weight = mass × gravitational field strength\nW = mg\nW = 0.16 × 10\nW = 1.6 N",
+      "markBreakdown": [
+        "Mark 1: Correct formula W = mg",
+        "Mark 2: Correct substitution of values",
+        "Mark 3: Correct answer with units (1.6 N)"
+      ]
+    },
+    "commonMistakes": [
+      "Never say mass and weight are the same — mass is measured in kg, weight in N",
+      "Students often forget that weight changes with location but mass stays constant",
+      "Never say momentum is a scalar — it is a vector quantity with direction",
+      "Students confuse speed (scalar) with velocity (vector)",
+      "Never forget units in calculations — weight must be in newtons (N)"
+    ],
+    "examinerTips": [
+      "Forces and motion appears in every Paper 2 — especially weight calculations",
+      "Always show the formula first, then substitute values for calculation questions",
+      "Remember to state direction when dealing with vector quantities",
+      "Free fall questions often test understanding that acceleration = 10 m/s² regardless of mass"
+    ],
+    "formulas": [
+      "W = mg",
+      "p = mv"
+    ],
+    "keyDiagramDescription": "Free body diagram showing forces acting on a falling object: weight (downward arrow) and air resistance (upward arrow), with arrows drawn to scale to show relative magnitudes"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:59:27.398Z",
+  "updated_at": "2026-04-05T20:59:27.398Z"
+}

@@ -1,0 +1,97 @@
+{
+  "subject": "Biology",
+  "subject_code": "5090",
+  "level": "O Level",
+  "theme": "Nutrition and Transport",
+  "chapter_id": "6",
+  "chapter_name": "Transport in plants",
+  "note_data": {
+    "title": "Transport in plants",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Xylem** transports water and mineral salts from roots to leaves in one direction only",
+      "**Phloem** transports sucrose and amino acids from leaves to all parts of the plant in both directions",
+      "Xylem vessels are made of dead cells with no end walls and lignified walls for support",
+      "Phloem consists of living sieve tube elements with companion cells that provide energy",
+      "**Transpiration** is the loss of water vapour from leaves through stomata",
+      "Transpiration creates a transpiration stream that pulls water up through xylem vessels",
+      "Root hair cells increase surface area for absorption of water by osmosis",
+      "Guard cells control the opening and closing of stomata to regulate water loss",
+      "Translocation is the transport of sucrose from sources (leaves) to sinks (roots, fruits)"
+    ],
+    "definitions": [
+      {
+        "term": "Transpiration",
+        "definition": "The loss of water vapour from leaves through stomata"
+      },
+      {
+        "term": "Translocation",
+        "definition": "The transport of sucrose and amino acids in phloem from sources to sinks"
+      },
+      {
+        "term": "Root hair cell",
+        "definition": "A cell that increases the surface area of roots for absorption of water and mineral salts"
+      },
+      {
+        "term": "Xylem vessel",
+        "definition": "A tube made of dead cells with lignified walls that transports water and mineral salts"
+      },
+      {
+        "term": "Guard cell",
+        "definition": "A cell that controls the opening and closing of stomata"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between xylem and phloem"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of events or detailed account of structure"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how water moves from the soil into a root hair cell and then up to the leaves. (6 marks)",
+      "marks": 6,
+      "answer": "Water moves from soil into root hair cell by osmosis because the cell has a lower water potential than the soil. Water then moves across the root cortex by osmosis from cell to cell. Water enters the xylem vessels in the centre of the root. Transpiration from the leaves creates a transpiration stream. This pulls water up through the xylem vessels due to cohesion between water molecules. Water reaches the leaves and evaporates from mesophyll cells before diffusing out through stomata.",
+      "markBreakdown": [
+        "Mark 1: Osmosis into root hair cell",
+        "Mark 2: Lower water potential in cell",
+        "Mark 3: Movement across cortex",
+        "Mark 4: Entry into xylem",
+        "Mark 5: Transpiration creates transpiration stream",
+        "Mark 6: Cohesion pulls water up"
+      ]
+    },
+    "commonMistakes": [
+      "Never say water is 'sucked up' — always say water is 'pulled up by transpiration stream'",
+      "Students confuse xylem and phloem functions — xylem only transports water, phloem only transports food",
+      "Don't say stomata 'breathe' — say stomata allow gas exchange",
+      "Never say root hairs 'suck in' water — always use 'absorption by osmosis'",
+      "Students forget that xylem vessels are dead cells while phloem sieve tubes are living"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 2 — especially transpiration experiments",
+      "Always mention 'osmosis' when describing water movement into roots",
+      "Draw clear diagrams of xylem and phloem cross-sections with labels",
+      "Link transpiration rate to environmental factors like temperature and humidity"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Cross-section of root showing epidermis with root hair cells, cortex, and central vascular bundle containing xylem and phloem. Stem cross-section showing vascular bundles with xylem vessels (thick walls) and phloem (thin walls with companion cells)."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:27:44.946Z",
+  "updated_at": "2026-04-05T21:27:44.946Z"
+}

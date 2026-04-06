@@ -1,0 +1,98 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "Waves",
+  "chapter_id": "12",
+  "chapter_name": "Sound",
+  "note_data": {
+    "title": "Sound",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Sound** is produced by vibrating objects which create compressions and rarefactions in the air",
+      "Sound requires a **medium** to travel through - it cannot travel through a vacuum",
+      "Sound travels as **longitudinal waves** where particles vibrate parallel to the direction of wave travel",
+      "Speed of sound in air at 20°C is approximately **340 m/s**",
+      "Speed of sound is faster in **solids** than liquids, and faster in liquids than gases",
+      "**Echo** is the reflection of sound waves from a hard surface",
+      "The **audible range** for humans is approximately 20 Hz to 20,000 Hz",
+      "**Pitch** depends on frequency - higher frequency produces higher pitch",
+      "**Loudness** depends on amplitude - greater amplitude produces louder sound"
+    ],
+    "definitions": [
+      {
+        "term": "Sound",
+        "definition": "Longitudinal waves produced by vibrating objects that travel through a medium"
+      },
+      {
+        "term": "Echo",
+        "definition": "The reflection of sound waves from a hard surface"
+      },
+      {
+        "term": "Pitch",
+        "definition": "How high or low a sound is, determined by the frequency of the sound wave"
+      },
+      {
+        "term": "Amplitude",
+        "definition": "The maximum displacement of particles from their rest position in a sound wave"
+      },
+      {
+        "term": "Medium",
+        "definition": "A substance through which sound waves can travel, such as air, water or solids"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of events or steps in logical order"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities and differences between two things"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why sound cannot travel through a vacuum but can travel through air. [3 marks]",
+      "marks": 3,
+      "answer": "Sound waves are vibrations that require particles to transmit energy from one place to another. In air, particles vibrate and pass energy to neighbouring particles, allowing sound to travel. A vacuum contains no particles, so there are no particles to vibrate and transmit the sound energy.",
+      "markBreakdown": [
+        "Mark 1: Sound requires particles/medium to travel",
+        "Mark 2: Air contains particles that can vibrate",
+        "Mark 3: Vacuum has no particles to transmit vibrations"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'sound travels faster in gases' - sound travels fastest in solids, then liquids, then gases",
+      "Students often confuse pitch with loudness - pitch depends on frequency, loudness depends on amplitude",
+      "Don't say 'sound is a transverse wave' - sound is always a longitudinal wave",
+      "Never write 'sound travels at the speed of light' - sound travels much slower than light",
+      "Students forget that echoes require hard surfaces for reflection - soft surfaces absorb sound"
+    ],
+    "examinerTips": [
+      "Echo questions appear frequently - remember distance = speed × time, but sound travels to surface and back",
+      "Always state that sound requires a medium when explaining why it cannot travel through space",
+      "Use the word 'vibrations' when describing how sound is produced",
+      "Temperature affects speed of sound - sound travels faster in warmer air"
+    ],
+    "formulas": [
+      "speed = distance ÷ time",
+      "distance = speed × time",
+      "time = distance ÷ speed"
+    ],
+    "keyDiagramDescription": "Longitudinal wave diagram showing compressions (particles close together) and rarefactions (particles spread apart) with particles vibrating parallel to wave direction"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:17:45.997Z",
+  "updated_at": "2026-04-05T21:17:45.997Z"
+}
