@@ -247,6 +247,12 @@ export default function NanoTeach() {
                 </div>
               )}
 
+              {/* Ask Starky about this topic */}
+              <a href={`/?message=${encodeURIComponent(`I'm studying ${topic || subject} and I don't fully understand the key concepts. Can you explain ${notes?.title || topic} to me in simple terms? Use mark scheme language.`)}&returnTo=${encodeURIComponent(router.asPath)}`}
+                style={{ display: 'block', textAlign: 'center', fontSize: 13, color: '#4F8EF7', textDecoration: 'none', padding: '12px 0', marginBottom: 8 }}>
+                Don't understand something? Ask Starky to explain →
+              </a>
+
               {/* Continue to worked example */}
               <button onClick={() => setPhase('learn')} style={S.btn(true)}>
                 I've read the notes — show me a worked example →
