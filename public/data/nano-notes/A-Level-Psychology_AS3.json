@@ -1,0 +1,94 @@
+{
+  "subject": "A Level Psychology",
+  "subject_code": "9990",
+  "level": "A Level",
+  "theme": "AS Psychology",
+  "chapter_id": "AS3",
+  "chapter_name": "The cognitive approach",
+  "note_data": {
+    "title": "The cognitive approach",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Cognitive approach** focuses on internal mental processes such as memory, perception, thinking and attention",
+      "**Information processing model** compares the human mind to a computer that inputs, processes and outputs information",
+      "**Schemas** are cognitive frameworks that help organize and interpret information based on past experience",
+      "**Selective attention** allows us to focus on relevant stimuli while filtering out irrelevant information",
+      "**Multi-store model** proposes three separate memory stores: sensory register, short-term memory and long-term memory",
+      "**Working memory model** suggests short-term memory has multiple components including central executive, phonological loop and visuospatial sketchpad",
+      "**Cognitive processes** are studied using laboratory experiments to establish cause and effect relationships",
+      "**Computer analogies** help explain cognitive processes but may oversimplify the complexity of human thinking",
+      "**Top-down processing** uses existing knowledge and expectations to interpret sensory information"
+    ],
+    "definitions": [
+      {
+        "term": "Cognitive approach",
+        "definition": "An approach that focuses on how internal mental processes such as memory, perception, thinking and attention affect behavior"
+      },
+      {
+        "term": "Schema",
+        "definition": "A cognitive framework or concept that helps organize and interpret information based on past experience"
+      },
+      {
+        "term": "Selective attention",
+        "definition": "The ability to focus on relevant stimuli while filtering out irrelevant or distracting information"
+      },
+      {
+        "term": "Information processing",
+        "definition": "The cognitive process of taking in information, processing it and producing an output or response"
+      },
+      {
+        "term": "Working memory",
+        "definition": "A memory system that temporarily holds and manipulates information during cognitive tasks"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of the cognitive process or model without evaluation"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Give strengths AND weaknesses with evidence/examples"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain what is meant by the cognitive approach in psychology. [3 marks]",
+      "marks": 3,
+      "answer": "The cognitive approach focuses on internal mental processes such as memory, perception, thinking and attention. It assumes that these mental processes can be studied scientifically using laboratory experiments. The approach often uses computer analogies to explain how humans process information, comparing the mind to a computer that inputs, processes and outputs information.",
+      "markBreakdown": [
+        "Mark 1: Focus on internal mental processes",
+        "Mark 2: Scientific study/laboratory methods",
+        "Mark 3: Computer analogy/information processing model"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'cognitive approach studies behavior' — always say 'studies internal mental processes that influence behavior'",
+      "Students often confuse short-term memory with working memory — working memory is more complex with multiple components",
+      "Don't just list cognitive processes — explain how they work together in information processing",
+      "Avoid saying schemas are 'memories' — they are frameworks that organize information",
+      "Never describe cognitive approach as unscientific — it uses rigorous laboratory methods"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 questions about approaches",
+      "Always give specific examples of cognitive processes when explaining the approach",
+      "Computer analogies are key — mention input, processing, output for full marks",
+      "Link cognitive processes together to show understanding of information processing model"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Information processing model showing input → cognitive processes (attention, perception, memory, thinking) → output, often drawn as flowchart similar to computer processing system"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:21:12.256Z",
+  "updated_at": "2026-04-06T05:21:12.256Z"
+}

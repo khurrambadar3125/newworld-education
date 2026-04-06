@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Inorganic Chemistry",
+  "chapter_id": "AS12",
+  "chapter_name": "Nitrogen and sulfur",
+  "note_data": {
+    "title": "Nitrogen and sulfur",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Nitrogen** exists as N₂ molecules with a triple covalent bond, making it very unreactive under normal conditions",
+      "**Ammonia** is manufactured by the Haber process: N₂ + 3H₂ ⇌ 2NH₃ using iron catalyst at 450°C and 200 atm",
+      "**Nitrogen oxides** (NOₓ) are formed in car engines at high temperatures and contribute to acid rain and photochemical smog",
+      "**Sulfur dioxide** is produced by burning fossil fuels containing sulfur compounds and is a major cause of acid rain",
+      "**Acid rain** forms when SO₂ and NOₓ dissolve in atmospheric water to form H₂SO₃, H₂SO₄ and HNO₃",
+      "**Contact process** manufactures sulfuric acid: SO₂ + ½O₂ ⇌ SO₃ using V₂O₅ catalyst at 450°C, then SO₃ + H₂SO₄ → H₂S₂O₇",
+      "**Environmental effects** of acid rain include damage to limestone buildings, acidification of lakes and soil, and forest damage",
+      "**Catalytic converters** in vehicles convert NOₓ to N₂ and CO to CO₂ using platinum/rhodium catalysts",
+      "**Flue gas desulfurization** removes SO₂ from power station emissions using calcium carbonate or calcium oxide"
+    ],
+    "definitions": [
+      {
+        "term": "Acid rain",
+        "definition": "Rain with pH below 5.6 caused by dissolution of sulfur dioxide and nitrogen oxides in atmospheric water"
+      },
+      {
+        "term": "Haber process",
+        "definition": "Industrial process for manufacturing ammonia from nitrogen and hydrogen using iron catalyst at high temperature and pressure"
+      },
+      {
+        "term": "Contact process",
+        "definition": "Industrial process for manufacturing sulfuric acid from sulfur dioxide using vanadium(V) oxide catalyst"
+      },
+      {
+        "term": "Photochemical smog",
+        "definition": "Air pollution formed when nitrogen oxides and volatile organic compounds react in sunlight to produce ozone and other pollutants"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of steps or detailed account of the process"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Apply knowledge to unfamiliar situation - multiple valid answers possible"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how sulfur dioxide contributes to environmental problems and describe one method used to reduce these problems. [6]",
+      "marks": 6,
+      "answer": "Sulfur dioxide dissolves in atmospheric water to form sulfurous acid (H₂SO₃). This can be oxidized to form sulfuric acid (H₂SO₄), creating acid rain with pH below 5.6. Acid rain damages limestone buildings by reacting with calcium carbonate to form calcium sulfate. It also acidifies lakes and soil, harming aquatic life and vegetation. One method to reduce these problems is flue gas desulfurization in power stations. Calcium carbonate or calcium oxide is used to react with sulfur dioxide: CaCO₃ + SO₂ → CaSO₃ + CO₂. This removes SO₂ from emissions before they enter the atmosphere.",
+      "markBreakdown": [
+        "Mark 1: SO₂ dissolves to form sulfurous/sulfuric acid",
+        "Mark 2: Forms acid rain with low pH",
+        "Mark 3: Environmental damage described",
+        "Mark 4: Method named (flue gas desulfurization)",
+        "Mark 5: Reactant identified (CaCO₃/CaO)",
+        "Mark 6: Correct equation given"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'sulfur causes acid rain' — always specify 'sulfur dioxide' as the pollutant",
+      "Students often forget that N₂ needs very high temperature to break the triple bond for reaction",
+      "Don't confuse the conditions for Haber process (450°C, 200 atm, Fe) with Contact process (450°C, 1-2 atm, V₂O₅)",
+      "Never say acid rain has 'no pH' — always state it has pH below 5.6",
+      "Students often write SO₃ + H₂O → H₂SO₄ instead of the correct two-step Contact process"
+    ],
+    "examinerTips": [
+      "Nitrogen and sulfur chemistry appears frequently in Paper 2, especially environmental applications",
+      "Always give specific conditions (temperature, pressure, catalyst) for industrial processes",
+      "Environmental questions often ask for both the problem AND the solution - read carefully",
+      "In Karachi's industrial areas, both SO₂ and NOₓ pollution are relevant examples for Pakistani context"
+    ],
+    "formulas": [
+      "N₂ + 3H₂ ⇌ 2NH₃",
+      "SO₂ + ½O₂ ⇌ SO₃",
+      "SO₃ + H₂SO₄ → H₂S₂O₇",
+      "H₂S₂O₇ + H₂O → 2H₂SO₄",
+      "CaCO₃ + SO₂ → CaSO₃ + CO₂"
+    ],
+    "keyDiagramDescription": "Industrial process flow diagram showing Haber process with recycling loop for unreacted gases, and Contact process showing the two-stage sulfur trioxide formation and absorption in concentrated sulfuric acid"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:33:54.996Z",
+  "updated_at": "2026-04-06T04:33:54.996Z"
+}

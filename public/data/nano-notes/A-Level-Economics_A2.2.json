@@ -1,0 +1,100 @@
+{
+  "subject": "A Level Economics",
+  "subject_code": "9708",
+  "level": "A Level",
+  "theme": "A2 Microeconomics",
+  "chapter_id": "A2.2",
+  "chapter_name": "Labour market",
+  "note_data": {
+    "title": "Labour market",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Labour supply** increases as wage rates rise because higher wages attract more workers and encourage longer working hours",
+      "**Labour demand** is derived demand - firms demand labour because consumers demand the goods and services labour produces",
+      "**Marginal revenue product (MRP)** determines labour demand - firms employ workers until MRP equals marginal cost of labour",
+      "A profit-maximizing firm employs labour where **MRP = MCL** (marginal cost of labour)",
+      "**Trade unions** can increase wages through collective bargaining, restricting labour supply, or increasing productivity",
+      "**Monopsony** occurs when there is only one buyer of labour in a market, leading to wages below competitive levels",
+      "Wage differentials exist due to differences in **marginal revenue productivity**, skills, qualifications, and market conditions",
+      "**Economic rent** is the payment to a factor of production above its transfer earnings",
+      "Labour market imperfections include lack of information, immobility of labour, and barriers to entry"
+    ],
+    "definitions": [
+      {
+        "term": "Marginal Revenue Product (MRP)",
+        "definition": "The additional revenue generated from employing one more unit of labour, calculated as marginal product × marginal revenue"
+      },
+      {
+        "term": "Trade union",
+        "definition": "An organization of workers that aims to protect and improve the pay and working conditions of its members through collective bargaining"
+      },
+      {
+        "term": "Monopsony",
+        "definition": "A market structure where there is only one buyer of labour, giving that employer significant power to influence wages"
+      },
+      {
+        "term": "Transfer earnings",
+        "definition": "The minimum payment required to keep a factor of production in its current use"
+      },
+      {
+        "term": "Economic rent",
+        "definition": "The payment to a factor of production over and above its transfer earnings"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the process step-by-step showing cause and effect with diagrams"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Weigh up advantages and disadvantages, consider stakeholders, make a reasoned judgement"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how a trade union might increase the wages of its members. [6 marks]",
+      "marks": 6,
+      "answer": "Trade unions can increase wages through collective bargaining, where they negotiate with employers on behalf of all members to secure higher pay rates than individual workers could achieve alone. They can restrict labour supply by requiring union membership for certain jobs or limiting the number of workers trained in specific skills, creating artificial scarcity. Trade unions can also increase productivity through training programmes and improved working practices, which increases workers' marginal revenue product, justifying higher wages. Additionally, they may threaten industrial action such as strikes to pressure employers into accepting wage increases, using their collective power to disrupt production.",
+      "markBreakdown": [
+        "Mark 1: Collective bargaining explanation",
+        "Mark 2: Restricting labour supply",
+        "Mark 3: Increasing productivity/MRP",
+        "Mark 4: Threat of industrial action",
+        "Mark 5: Development of any point",
+        "Mark 6: Further development or additional method"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'supply and demand determine wages' - always explain the role of MRP in determining labour demand",
+      "Students often confuse economic rent with commercial rent paid for buildings",
+      "Don't just state trade unions 'increase wages' - explain the specific methods they use",
+      "Avoid saying monopsonies always pay minimum wage - they pay below competitive equilibrium but above minimum wage",
+      "Never ignore the role of labour productivity when explaining wage differentials"
+    ],
+    "examinerTips": [
+      "Labour market questions appear in almost every Paper 2 - especially wage determination",
+      "Always draw and label diagrams for MRP analysis - shows MRP curve as labour demand",
+      "Use real examples: textile workers in Faisalabad, IT professionals in Karachi for wage differentials",
+      "Link labour market analysis to government policies like minimum wage in Pakistan"
+    ],
+    "formulas": [
+      "MRP = MP × MR",
+      "Economic Rent = Actual Earnings - Transfer Earnings"
+    ],
+    "keyDiagramDescription": "Labour market diagram showing labour supply (upward sloping) and labour demand/MRP (downward sloping) curves intersecting at equilibrium wage and quantity. Include shifts for trade union effects and monopsony analysis with MCL curve above supply."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:09:46.864Z",
+  "updated_at": "2026-04-06T05:09:46.864Z"
+}

@@ -1,0 +1,107 @@
+{
+  "subject": "Pakistan Studies",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "6",
+  "chapter_name": "Industrial Development in Pakistan",
+  "note_data": {
+    "title": "Industrial Development in Pakistan",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "At independence in 1947, Pakistan inherited only 34 industrial units out of 921 in undivided India",
+      "Industrial development in Pakistan can be divided into four phases: 1947-58, 1958-69, 1969-77, and 1977 onwards",
+      "First Five Year Plan (1955-60) emphasized industrial development with focus on consumer goods",
+      "Green Revolution in 1960s led to development of agricultural machinery and fertilizer industries",
+      "Nationalization policy of 1972 under Bhutto government brought major industries under state control",
+      "Denationalization and privatization policy started in 1977 to encourage private sector investment",
+      "Major industrial cities include Karachi, Lahore, Faisalabad, Hyderabad, Gujranwala, and Sialkot",
+      "Cottage industries like handicrafts, carpets, and sports goods contribute significantly to exports",
+      "Pakistan's main industries include textiles, sugar, cement, fertilizer, chemicals, and engineering goods"
+    ],
+    "definitions": [
+      {
+        "term": "Industry",
+        "definition": "The manufacturing of goods in factories by using machines, tools and labor"
+      },
+      {
+        "term": "Cottage Industry",
+        "definition": "Small scale manufacturing activity carried out at home with the help of family members using simple tools"
+      },
+      {
+        "term": "Heavy Industry",
+        "definition": "Industries that produce machinery, equipment and basic materials like iron, steel and chemicals"
+      },
+      {
+        "term": "Light Industry",
+        "definition": "Industries that produce consumer goods like textiles, food products and household items"
+      },
+      {
+        "term": "Nationalization",
+        "definition": "The process of bringing privately owned industries under government control and ownership"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Write any four problems of industrial development in Pakistan.",
+        "answer": "1) Lack of capital and investment 2) Shortage of skilled labor 3) Inadequate infrastructure facilities 4) Limited availability of raw materials"
+      },
+      {
+        "type": "long",
+        "question": "Describe the industrial development in Pakistan from 1947 to 1958.",
+        "answer": "After independence, Pakistan faced severe industrial challenges as it inherited only 34 industrial units. The government adopted import substitution policy to reduce dependence on imports. Focus was on establishing consumer goods industries like textiles, sugar, and cement. Pakistan Industrial Development Corporation (PIDC) was established in 1950 to promote industrial growth. Private sector was encouraged through various incentives. By 1958, significant progress was made in textile, jute, paper, and chemical industries. However, lack of heavy industries and dependence on imported machinery remained major problems."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Pakistan Industrial Development Corporation (PIDC) was established in:",
+        "options": {
+          "A": "1948",
+          "B": "1950",
+          "C": "1952",
+          "D": "1955"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which industry contributes the highest percentage to Pakistan's exports?",
+        "options": {
+          "A": "Sugar",
+          "B": "Cement",
+          "C": "Textiles",
+          "D": "Sports goods"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Nationalization of industries was carried out during the government of:",
+        "options": {
+          "A": "Ayub Khan",
+          "B": "Yahya Khan",
+          "C": "Z.A. Bhutto",
+          "D": "Zia-ul-Haq"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse the dates of Five Year Plans and their industrial focus",
+      "Mixing up nationalization (1972) with denationalization (1977) policies",
+      "Forgetting to mention PIDC establishment date (1950) in industrial development answers",
+      "Not distinguishing between cottage industries and small-scale industries",
+      "Writing about Indian industrial cities instead of Pakistani ones like Karachi, Lahore, Faisalabad"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs about PIDC, nationalization dates, and major industries",
+      "Always mention specific years: 1950 for PIDC, 1972 for nationalization, 1977 for privatization",
+      "Learn the four phases of industrial development with their time periods",
+      "Memorize major industrial cities and their main industries for short questions",
+      "Problems and solutions of industrial development is a favorite long question topic"
+    ],
+    "formulas": [],
+    "keyDiagram": "Map of Pakistan showing major industrial cities and their main industries - Karachi (textiles, chemicals), Lahore (textiles, sports goods), Faisalabad (textiles), Hyderabad (glass, matches), Gujranwala (electrical goods), Sialkot (sports goods, surgical instruments)"
+  },
+  "created_at": "2026-04-06T06:33:16.128Z"
+}

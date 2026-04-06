@@ -1,0 +1,94 @@
+{
+  "subject": "A Level Mathematics",
+  "subject_code": "9709",
+  "level": "A Level",
+  "theme": "Pure Mathematics 1",
+  "chapter_id": "P1.7",
+  "chapter_name": "Differentiation",
+  "note_data": {
+    "title": "Differentiation",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Differentiation** is the process of finding the gradient function dy/dx from the equation of a curve",
+      "The **gradient** at any point on a curve is given by the value of dy/dx at that point",
+      "The equation of the **tangent** to a curve at point (a, b) is y - b = m(x - a) where m = dy/dx at x = a",
+      "The equation of the **normal** to a curve at point (a, b) is y - b = (-1/m)(x - a) where m = dy/dx at x = a",
+      "At **stationary points**, dy/dx = 0 and the gradient of the tangent is zero",
+      "Use the **chain rule** dy/dx = dy/du × du/dx when differentiating composite functions",
+      "For **product rule**: d/dx(uv) = u(dv/dx) + v(du/dx)",
+      "For **quotient rule**: d/dx(u/v) = [v(du/dx) - u(dv/dx)]/v²",
+      "**Implicit differentiation** is used when y cannot be expressed explicitly in terms of x"
+    ],
+    "definitions": [
+      {
+        "term": "Gradient function",
+        "definition": "The derivative dy/dx which gives the gradient of the tangent to the curve at any point"
+      },
+      {
+        "term": "Stationary point",
+        "definition": "A point on a curve where dy/dx = 0 and the tangent is horizontal"
+      },
+      {
+        "term": "Chain rule",
+        "definition": "A method for differentiating composite functions where dy/dx = dy/du × du/dx"
+      },
+      {
+        "term": "Normal to a curve",
+        "definition": "A straight line perpendicular to the tangent at a given point on the curve"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Find",
+        "instruction": "Calculate the derivative using appropriate rules and show clear working"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Start from given information and work step-by-step to reach the required result"
+      },
+      {
+        "commandWord": "Hence",
+        "instruction": "Use the result from the previous part - do not start from the beginning again"
+      }
+    ],
+    "modelAnswer": {
+      "question": "The curve C has equation y = 2x³ - 9x² + 12x + 1. Find the coordinates of the stationary points of C.",
+      "marks": 4,
+      "answer": "dy/dx = 6x² - 18x + 12. At stationary points, dy/dx = 0. So 6x² - 18x + 12 = 0. Dividing by 6: x² - 3x + 2 = 0. Factoring: (x - 1)(x - 2) = 0. Therefore x = 1 or x = 2. When x = 1: y = 2(1)³ - 9(1)² + 12(1) + 1 = 6. When x = 2: y = 2(8) - 9(4) + 12(2) + 1 = 5. The stationary points are (1, 6) and (2, 5).",
+      "markBreakdown": [
+        "Mark 1: dy/dx = 6x² - 18x + 12",
+        "Mark 2: Setting dy/dx = 0 and solving to get x = 1, x = 2",
+        "Mark 3: Finding y-coordinate when x = 1 gives y = 6",
+        "Mark 4: Finding y-coordinate when x = 2 gives y = 5"
+      ]
+    },
+    "commonMistakes": [
+      "Never write 'dy/dx = 0' without solving the equation - always find the x-values",
+      "Students often forget to find both coordinates of stationary points - marks lost for missing y-values",
+      "For normal equations, students confuse the gradient with -1/m instead of using the negative reciprocal",
+      "When using chain rule, students often forget to multiply by du/dx",
+      "Writing tangent equation as y = mx + c instead of y - y₁ = m(x - x₁) loses method marks"
+    ],
+    "examinerTips": [
+      "Differentiation appears in every Paper 1 - master the basic rules first",
+      "Always substitute back to find y-coordinates when finding stationary points",
+      "For tangent/normal questions, clearly state the gradient value before writing the equation",
+      "Show factoring steps clearly when solving dy/dx = 0 for full method marks"
+    ],
+    "formulas": [
+      "dy/dx = nx^(n-1) for y = x^n",
+      "Chain rule: dy/dx = dy/du × du/dx",
+      "Product rule: d/dx(uv) = u(dv/dx) + v(du/dx)",
+      "Quotient rule: d/dx(u/v) = [v(du/dx) - u(dv/dx)]/v²",
+      "Tangent: y - y₁ = m(x - x₁)",
+      "Normal: y - y₁ = (-1/m)(x - x₁)"
+    ],
+    "keyDiagramDescription": "A smooth curve showing a tangent line touching at one point and a normal line perpendicular to the tangent at the same point, with stationary points marked where the tangent is horizontal"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:50:16.359Z",
+  "updated_at": "2026-04-06T04:50:16.359Z"
+}

@@ -1,0 +1,112 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "19",
+  "chapter_name": "Matrices and Determinants",
+  "note_data": {
+    "title": "Matrices and Determinants",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Matrix is a rectangular array of numbers arranged in rows and columns",
+      "Order of matrix is written as m × n where m = number of rows, n = number of columns",
+      "Square matrix has equal number of rows and columns (n × n)",
+      "Determinant can only be calculated for square matrices",
+      "For 2×2 matrix, determinant = ad - bc where matrix elements are [[a,b],[c,d]]",
+      "For 3×3 matrix, use expansion by cofactors method",
+      "Addition and subtraction of matrices is only possible when they have same order",
+      "Matrix multiplication A×B is possible only when number of columns in A = number of rows in B",
+      "Identity matrix has 1's on main diagonal and 0's elsewhere",
+      "Inverse of matrix A exists only when det(A) ≠ 0"
+    ],
+    "definitions": [
+      {
+        "term": "Matrix",
+        "definition": "A matrix is a rectangular array of numbers arranged in rows and columns enclosed within square brackets or round brackets."
+      },
+      {
+        "term": "Order of Matrix",
+        "definition": "The order of a matrix is the number of rows and columns it contains, written as m × n where m is the number of rows and n is the number of columns."
+      },
+      {
+        "term": "Square Matrix",
+        "definition": "A matrix in which the number of rows is equal to the number of columns is called a square matrix."
+      },
+      {
+        "term": "Determinant",
+        "definition": "The determinant of a square matrix is a number associated with the matrix which is calculated by a specific method."
+      },
+      {
+        "term": "Identity Matrix",
+        "definition": "An identity matrix is a square matrix in which all the diagonal elements are 1 and all other elements are 0."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Find the determinant of the matrix [[3,2],[5,4]]",
+        "answer": "det = (3×4) - (2×5) = 12 - 10 = 2"
+      },
+      {
+        "type": "long",
+        "question": "If A = [[2,1],[3,4]] and B = [[1,2],[0,3]], find A + B and A × B",
+        "answer": "A + B = [[2+1,1+2],[3+0,4+3]] = [[3,3],[3,7]]\nA × B = [[2×1+1×0, 2×2+1×3],[3×1+4×0, 3×2+4×3]] = [[2,7],[3,18]]"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The order of matrix [[1,2,3],[4,5,6]] is:",
+        "options": {
+          "A": "2×3",
+          "B": "3×2",
+          "C": "2×2",
+          "D": "3×3"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "The determinant of [[5,2],[3,1]] is:",
+        "options": {
+          "A": "1",
+          "B": "-1",
+          "C": "5",
+          "D": "11"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "For matrix multiplication AB to be possible:",
+        "options": {
+          "A": "Both matrices must be square",
+          "B": "Columns of A = Rows of B",
+          "C": "A and B must have same order",
+          "D": "Both matrices must be 2×2"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse rows and columns when writing matrix order",
+      "Forgetting the formula det = ad - bc for 2×2 matrices",
+      "Attempting to add matrices of different orders",
+      "Mixing up matrix multiplication with element-wise multiplication",
+      "Not checking if matrix multiplication is possible before solving"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Always write the determinant formula before calculating",
+      "Matrix multiplication questions are very common in long questions section",
+      "Remember to check matrix orders before operations",
+      "Practice 3×3 determinant expansion - often appears in past papers"
+    ],
+    "formulas": [
+      "det([[a,b],[c,d]]) = ad - bc",
+      "For 3×3 matrix: det(A) = a₁₁(a₂₂a₃₃ - a₂₃a₃₂) - a₁₂(a₂₁a₃₃ - a₂₃a₃₁) + a₁₃(a₂₁a₃₂ - a₂₂a₃₁)",
+      "Matrix multiplication: (AB)ᵢⱼ = Σ(AᵢₖBₖⱼ)"
+    ],
+    "keyDiagram": "Draw a 3×3 matrix showing the expansion method for determinants with arrows indicating the pattern for calculating cofactors along the first row"
+  },
+  "created_at": "2026-04-06T06:26:48.087Z"
+}

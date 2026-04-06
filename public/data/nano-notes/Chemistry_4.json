@@ -1,0 +1,98 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Physical Chemistry",
+  "chapter_id": "4",
+  "chapter_name": "Chemical formulae and equations",
+  "note_data": {
+    "title": "Chemical formulae and equations",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **chemical formula** shows the types and numbers of atoms present in a compound using chemical symbols",
+      "A **chemical equation** shows the reactants and products in a chemical reaction with correct formulae and balanced numbers",
+      "The **state symbols** (s), (l), (g), and (aq) must be included to show the physical state of each substance",
+      "**Balancing equations** requires equal numbers of each type of atom on both sides of the equation",
+      "**Ionic compounds** are named by stating the metal ion first, then the non-metal ion with '-ide' or '-ate' ending",
+      "**Molecular compounds** use prefixes (mono-, di-, tri-) to indicate the number of atoms of each element",
+      "The **law of conservation of mass** states that atoms cannot be created or destroyed in chemical reactions",
+      "**Word equations** show the names of reactants and products, while **symbol equations** use chemical formulae",
+      "**Coefficients** (large numbers) in front of formulae show the number of molecules or formula units involved"
+    ],
+    "definitions": [
+      {
+        "term": "Chemical formula",
+        "definition": "A representation showing the types and numbers of atoms present in a compound using chemical symbols and subscript numbers"
+      },
+      {
+        "term": "Chemical equation",
+        "definition": "A representation of a chemical reaction showing reactants and products with their correct formulae and balanced coefficients"
+      },
+      {
+        "term": "Molecular formula",
+        "definition": "A formula that shows the actual number of atoms of each element in one molecule of a compound"
+      },
+      {
+        "term": "State symbols",
+        "definition": "Letters in brackets that show the physical state: (s) solid, (l) liquid, (g) gas, (aq) aqueous solution"
+      },
+      {
+        "term": "Balanced equation",
+        "definition": "A chemical equation where the number of atoms of each element is the same on both sides of the equation"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Write",
+        "instruction": "Give the chemical formula or equation exactly as required with correct symbols and numbers"
+      },
+      {
+        "commandWord": "Balance",
+        "instruction": "Add coefficients to make equal numbers of each atom type on both sides"
+      },
+      {
+        "commandWord": "Name",
+        "instruction": "Give the systematic chemical name following naming rules"
+      },
+      {
+        "commandWord": "State",
+        "instruction": "Give the information requested clearly in one sentence"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Write a balanced chemical equation for the reaction between magnesium and hydrochloric acid to produce magnesium chloride and hydrogen gas. Include state symbols.",
+      "marks": 3,
+      "answer": "Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g)",
+      "markBreakdown": [
+        "Mark 1: Correct formulae for all reactants and products",
+        "Mark 2: Equation is correctly balanced",
+        "Mark 3: Correct state symbols included"
+      ]
+    },
+    "commonMistakes": [
+      "Never write coefficients as subscripts - 2H₂O not H₄O",
+      "Students often forget state symbols or use incorrect ones like (d) for dissolved",
+      "Writing unbalanced equations and thinking they are complete",
+      "Confusing molecular formulae with empirical formulae",
+      "Changing subscripts when balancing instead of adding coefficients"
+    ],
+    "examinerTips": [
+      "Chemical equations appear in every paper - practice balancing daily",
+      "Always check your balanced equation by counting atoms on each side",
+      "State symbols are often worth separate marks - never omit them",
+      "Learn common ion formulae and charges to write correct compound formulae"
+    ],
+    "formulas": [
+      "CaCO₃ → CaO + CO₂",
+      "2Mg + O₂ → 2MgO",
+      "NaOH + HCl → NaCl + H₂O"
+    ],
+    "keyDiagramDescription": "No specific diagram required, but students should be able to represent particle models showing conservation of atoms in chemical reactions"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:52:17.234Z",
+  "updated_at": "2026-04-05T20:52:17.234Z"
+}

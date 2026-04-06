@@ -1,0 +1,89 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "AS Mechanics",
+  "chapter_id": "AS1",
+  "chapter_name": "Physical quantities and units",
+  "note_data": {
+    "title": "Physical quantities and units",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **physical quantity** consists of a numerical value and a unit",
+      "**Base quantities** are fundamental physical quantities that cannot be expressed in terms of other quantities (mass, length, time, electric current, temperature, amount of substance, luminous intensity)",
+      "**Derived quantities** are expressed in terms of base quantities using mathematical relationships",
+      "The **SI system** uses seven base units: kg, m, s, A, K, mol, cd",
+      "**Homogeneity** means all terms in an equation must have the same base units when simplified",
+      "**Prefixes** multiply units by powers of 10 (e.g. μ = 10⁻⁶, m = 10⁻³, k = 10³, M = 10⁶, G = 10⁹)",
+      "**Estimation** involves using reasonable assumptions to calculate approximate values of physical quantities",
+      "**Unit analysis** can check if equations are dimensionally correct by ensuring both sides have identical base units"
+    ],
+    "definitions": [
+      {
+        "term": "Physical quantity",
+        "definition": "A property that can be measured and consists of a numerical value and a unit"
+      },
+      {
+        "term": "Base quantity",
+        "definition": "A fundamental physical quantity that cannot be expressed in terms of other physical quantities"
+      },
+      {
+        "term": "Derived quantity",
+        "definition": "A physical quantity that is expressed in terms of base quantities using mathematical relationships"
+      },
+      {
+        "term": "Homogeneity",
+        "definition": "A principle stating that all terms in a physical equation must have the same base units"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the base unit or definition in one clear sentence without explanation"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the reason why using 'because' - e.g. 'The equation is homogeneous because all terms have the same base units'"
+      },
+      {
+        "commandWord": "Show",
+        "instruction": "Work through the dimensional analysis step by step, showing all base units"
+      },
+      {
+        "commandWord": "Estimate",
+        "instruction": "State reasonable assumptions clearly, then calculate using simple numbers"
+      }
+    ],
+    "modelAnswer": {
+      "question": "The equation v² = u² + 2as relates the motion of an object. Show that this equation is homogeneous. [3]",
+      "marks": 3,
+      "answer": "LHS: v² has base units (m s⁻¹)² = m² s⁻²\nFirst term on RHS: u² has base units (m s⁻¹)² = m² s⁻²\nSecond term on RHS: 2as has base units m s⁻² × m = m² s⁻²\nAll terms have the same base units (m² s⁻²), therefore the equation is homogeneous",
+      "markBreakdown": [
+        "Mark 1: Correct base units for v² as m² s⁻²",
+        "Mark 2: Correct base units for both terms on RHS as m² s⁻²",
+        "Mark 3: Statement that equation is homogeneous because all terms have same base units"
+      ]
+    },
+    "commonMistakes": [
+      "Never write units without values - always write '5.2 m' not just 'm'",
+      "Students often confuse base quantities with base units - mass is the quantity, kg is the unit",
+      "Writing 'dimensionless' when they mean 'no units' - be precise with terminology",
+      "Forgetting to simplify derived units to base units in homogeneity questions",
+      "Using wrong prefixes - remember μ (micro) = 10⁻⁶, not 10⁻³"
+    ],
+    "examinerTips": [
+      "Homogeneity questions appear frequently in Paper 2 - practice converting all quantities to base units",
+      "Always show your working in estimation questions even if the numbers seem obvious",
+      "Learn the seven base quantities and their SI units by heart",
+      "In unit conversion questions, set up the calculation clearly showing the conversion factors"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Table showing the seven base quantities (mass, length, time, electric current, thermodynamic temperature, amount of substance, luminous intensity) with their corresponding SI base units (kg, m, s, A, K, mol, cd) and common derived quantities"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:38:47.231Z",
+  "updated_at": "2026-04-06T04:38:47.232Z"
+}

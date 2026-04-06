@@ -1,0 +1,97 @@
+{
+  "subject": "Sociology",
+  "subject_code": "2251",
+  "level": "O Level",
+  "theme": "Core Concepts",
+  "chapter_id": "1",
+  "chapter_name": "Research Methods",
+  "note_data": {
+    "title": "Research Methods",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Primary research** involves collecting new data directly from sources through methods like interviews, questionnaires and observations",
+      "**Secondary research** uses existing data that has already been collected by other researchers, such as official statistics, books and media reports",
+      "**Surveys** are research methods that collect data from large numbers of people using structured questionnaires to identify patterns and trends",
+      "**Sampling** involves selecting a representative group from the target population to study, ensuring findings can be generalized to the whole population",
+      "**Reliability** means the research method produces consistent results when repeated under the same conditions by different researchers",
+      "**Validity** refers to whether the research method measures what it claims to measure and produces accurate, truthful data",
+      "**Quantitative data** consists of numerical information that can be statistically analyzed, such as percentages, graphs and tables",
+      "**Qualitative data** provides detailed, descriptive information about people's opinions, feelings and experiences in their own words",
+      "**Pilot studies** are small-scale trial runs of research methods to test and improve the design before conducting the main study",
+      "**Ethical considerations** include obtaining informed consent, protecting confidentiality and ensuring no harm comes to research participants"
+    ],
+    "definitions": [
+      {
+        "term": "Survey",
+        "definition": "A research method that collects data from a large number of people using structured questions to identify patterns and trends in society"
+      },
+      {
+        "term": "Sample",
+        "definition": "A smaller group selected from the target population to represent the whole group being studied"
+      },
+      {
+        "term": "Hypothesis",
+        "definition": "A testable statement or prediction about the relationship between two or more variables that guides the research"
+      },
+      {
+        "term": "Bias",
+        "definition": "When research results are distorted or unfair because the researcher's own views or the research method influences the findings"
+      },
+      {
+        "term": "Population",
+        "definition": "The entire group of people that the researcher wants to study and make conclusions about"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of the method including what it involves and how it works"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Give advantages AND disadvantages with detailed explanations"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two advantages of using surveys in sociological research. [4 marks]",
+      "marks": 4,
+      "answer": "One advantage is that surveys can collect data from large numbers of people quickly and cheaply. This is because questionnaires can be distributed to hundreds of respondents simultaneously, making it cost-effective compared to individual interviews. A second advantage is that surveys produce quantitative data that can be easily compared and analyzed statistically. This is because closed questions with fixed response categories allow researchers to identify clear patterns and trends in the data.",
+      "markBreakdown": [
+        "Mark 1: Large numbers/quick/cheap advantage identified",
+        "Mark 2: Explanation of why this is an advantage",
+        "Mark 3: Quantitative data/comparison advantage identified",
+        "Mark 4: Explanation of statistical analysis benefit"
+      ]
+    },
+    "commonMistakes": [
+      "Students confuse primary and secondary research - remember primary means collecting NEW data yourself",
+      "Never say surveys are 'easy' - always explain they are 'cost-effective' or 'time-efficient'",
+      "Students often forget that reliability means CONSISTENCY, not just accuracy",
+      "Don't confuse population with sample - population is everyone, sample is the selected group",
+      "Avoid saying qualitative data is 'better' than quantitative - each has different purposes and uses"
+    ],
+    "examinerTips": [
+      "Research methods appears in every Paper 1 and Paper 2 - guaranteed marks if revised well",
+      "Always give Pakistani examples when discussing research contexts (e.g., studying education in Lahore schools)",
+      "For evaluation questions, give equal weight to advantages AND disadvantages",
+      "Learn the exact definitions of key terms as 'define' questions are very common",
+      "Practice drawing and labeling the research process diagram - often worth 3-4 marks"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Research Process Flowchart showing: Research Question → Hypothesis → Choose Method → Select Sample → Collect Data → Analyze Results → Draw Conclusions. Include feedback loops showing how conclusions can lead to new research questions."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:12:57.517Z",
+  "updated_at": "2026-04-06T04:12:57.519Z"
+}

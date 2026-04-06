@@ -1,0 +1,95 @@
+{
+  "subject": "Geography",
+  "subject_code": "2217",
+  "level": "O Level",
+  "theme": "Theme 1: Population and Settlement",
+  "chapter_id": "1.5",
+  "chapter_name": "Settlements and Service Provision",
+  "note_data": {
+    "title": "Settlements and Service Provision",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Settlement hierarchy** is the arrangement of settlements in order of size and importance from isolated farms to megacities",
+      "**Sphere of influence** is the area served by a settlement from which people travel to use its services",
+      "**Threshold population** is the minimum number of people needed to support a service or shop economically",
+      "**Range of a service** is the maximum distance people are willing to travel to use a particular service",
+      "**Low-order services** (convenience goods) are used frequently, found in most settlements, and include post offices, primary schools, and grocery stores",
+      "**High-order services** (comparison goods) are used infrequently, found only in larger settlements, and include universities, specialist hospitals, and department stores",
+      "**Rural settlements** have smaller populations, limited services, and economies based on primary activities like farming",
+      "**Urban settlements** have larger populations, extensive services, and economies dominated by secondary and tertiary activities",
+      "Settlement hierarchy in Pakistan ranges from isolated farms → villages → small towns → large towns → cities (Lahore, Karachi) → megacity (Karachi)"
+    ],
+    "definitions": [
+      {
+        "term": "Settlement",
+        "definition": "A place where people live permanently with buildings for residential and economic activities"
+      },
+      {
+        "term": "Service",
+        "definition": "An economic activity that provides facilities for people rather than producing goods"
+      },
+      {
+        "term": "Settlement hierarchy",
+        "definition": "The arrangement of settlements according to their size and the number and range of services they provide"
+      },
+      {
+        "term": "Sphere of influence",
+        "definition": "The area around a settlement from which people travel to use its services and facilities"
+      },
+      {
+        "term": "Threshold population",
+        "definition": "The minimum number of people required to support a particular service or facility"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Say what you can see in the data/map. Quote figures and identify patterns."
+      },
+      {
+        "commandWord": "Suggest reasons",
+        "instruction": "Give logical explanations using geographical knowledge and the information provided"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why high-order services are only found in large settlements. [4 marks]",
+      "marks": 4,
+      "answer": "High-order services require a large threshold population because they are expensive to provide and maintain. Large settlements have enough people to generate sufficient demand to make these services profitable. High-order services are used infrequently, so they need to draw customers from a wide sphere of influence, which only large settlements can attract. Large settlements also have better transport links and accessibility, making it easier for people to travel longer distances to reach these specialized services.",
+      "markBreakdown": [
+        "Mark 1: Large threshold population needed",
+        "Mark 2: Explanation of profitability/demand",
+        "Mark 3: Infrequent use requires wide sphere of influence",
+        "Mark 4: Better transport links/accessibility"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'big city' or 'small village' — always use precise terms like 'large urban settlement' or 'nucleated rural settlement'",
+      "Students often confuse high-order and low-order services — remember high-order = used rarely, low-order = used frequently",
+      "Don't just list services — always explain WHY they are found in certain settlements using threshold population and range concepts",
+      "Avoid saying settlements 'grow bigger' — explain using migration, natural increase, or economic development",
+      "Never describe hierarchy as just 'size' — must mention both size AND range of services"
+    ],
+    "examinerTips": [
+      "Settlement hierarchy questions appear regularly in Paper 2 Section A",
+      "Always use specific Pakistani examples: Karachi (megacity), Lahore (large city), Gujranwala (medium town)",
+      "Draw and label settlement hierarchy diagrams showing population size and service provision",
+      "For sphere of influence questions, consider transport links, distance decay, and competing settlements"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Settlement hierarchy pyramid showing isolated dwelling at top, then hamlet, village, small town, large town, city, and megacity at base, with examples of services available at each level and approximate population ranges"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:55:47.756Z",
+  "updated_at": "2026-04-06T03:55:47.756Z"
+}

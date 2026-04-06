@@ -1,0 +1,112 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "5",
+  "chapter_name": "Algebraic Manipulation",
+  "note_data": {
+    "title": "Algebraic Manipulation",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Algebraic expressions consist of constants, variables and algebraic operations",
+      "Like terms have the same variables raised to the same powers",
+      "Polynomial is an algebraic expression in which variables have non-negative integral powers",
+      "Degree of a polynomial is the highest power of the variable in the expression",
+      "Binomial has exactly two terms, trinomial has exactly three terms",
+      "Addition and subtraction of polynomials is done by combining like terms",
+      "Multiplication of polynomials follows distributive property",
+      "Factor theorem states: if f(a) = 0, then (x-a) is a factor of f(x)",
+      "Remainder theorem states: when polynomial f(x) is divided by (x-a), remainder is f(a)"
+    ],
+    "definitions": [
+      {
+        "term": "Polynomial",
+        "definition": "An algebraic expression in which the variables have non-negative integral powers and no variable appears in the denominator."
+      },
+      {
+        "term": "Degree of Polynomial",
+        "definition": "The highest power of the variable in a polynomial is called the degree of the polynomial."
+      },
+      {
+        "term": "Like Terms",
+        "definition": "The terms having the same variables raised to the same powers are called like terms."
+      },
+      {
+        "term": "Factor Theorem",
+        "definition": "If f(x) is a polynomial and f(a) = 0, then (x-a) is a factor of f(x)."
+      },
+      {
+        "term": "Remainder Theorem",
+        "definition": "When a polynomial f(x) is divided by (x-a), the remainder is f(a)."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define polynomial and give an example.",
+        "answer": "A polynomial is an algebraic expression in which the variables have non-negative integral powers and no variable appears in the denominator. Example: 3x² + 2x - 5"
+      },
+      {
+        "type": "long",
+        "question": "Using factor theorem, show that (x-2) is a factor of x³ - 6x² + 11x - 6. Also find the other factors.",
+        "answer": "Let f(x) = x³ - 6x² + 11x - 6. By factor theorem, if f(2) = 0, then (x-2) is a factor. f(2) = 8 - 24 + 22 - 6 = 0. So (x-2) is a factor. Dividing f(x) by (x-2): f(x) = (x-2)(x² - 4x + 3) = (x-2)(x-1)(x-3). Other factors are (x-1) and (x-3)."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The degree of polynomial 5x⁴ - 3x² + 7 is:",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "If f(x) = x² - 5x + 6 and f(2) = 0, then which is a factor of f(x)?",
+        "options": {
+          "A": "(x+2)",
+          "B": "(x-2)",
+          "C": "(x+3)",
+          "D": "(x-6)"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The number of terms in 3x² - 5x + 7 is:",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse coefficient with degree of polynomial",
+      "Forgetting to write f(a) = 0 condition when applying factor theorem",
+      "Not combining like terms properly during addition/subtraction",
+      "Making sign errors when multiplying polynomials with negative terms",
+      "Confusing remainder theorem with factor theorem"
+    ],
+    "examTips": [
+      "Factor theorem and remainder theorem questions appear in every BSEK paper worth 5-8 marks",
+      "Always show f(a) = 0 step clearly when using factor theorem",
+      "Practice polynomial division as it frequently appears in long questions",
+      "Memorize definitions word-for-word as BSEK asks exact textbook definitions"
+    ],
+    "formulas": [
+      "(a+b)² = a² + 2ab + b²",
+      "(a-b)² = a² - 2ab + b²",
+      "(a+b)(a-b) = a² - b²",
+      "Factor theorem: if f(a) = 0, then (x-a) is a factor",
+      "Remainder theorem: remainder = f(a) when f(x) ÷ (x-a)"
+    ],
+    "keyDiagram": "No specific diagram required for this chapter, but students should know how to arrange polynomial division in long division format"
+  },
+  "created_at": "2026-04-06T06:21:44.308Z"
+}

@@ -1,0 +1,107 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "3",
+  "chapter_name": "Biodiversity",
+  "note_data": {
+    "title": "Biodiversity",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Biodiversity is the variety of life on Earth including genetic diversity, species diversity and ecosystem diversity",
+      "Pakistan has five major biomes: tropical forests, temperate forests, alpine scrub forests, desert scrub forests, and mangrove forests",
+      "Thar Desert in Sindh and Cholistan Desert in Punjab are examples of desert ecosystems in Pakistan",
+      "Mangrove forests are found along the coast of Karachi and Thatta in Sindh province",
+      "Species extinction occurs due to habitat destruction, pollution, overpopulation, and climate change",
+      "Conservation methods include in-situ conservation (national parks, wildlife sanctuaries) and ex-situ conservation (zoos, botanical gardens)",
+      "Endangered species in Pakistan include snow leopard, Indus river dolphin, and houbara bustard",
+      "Endemic species are those found naturally in only one geographic region",
+      "Food webs and food chains show the flow of energy in ecosystems"
+    ],
+    "definitions": [
+      {
+        "term": "Biodiversity",
+        "definition": "The variety of life on Earth including all plants, animals, microorganisms, the genes they contain and the ecosystems of which they form a part"
+      },
+      {
+        "term": "Biome",
+        "definition": "A large geographical area characterized by certain types of plants and animals"
+      },
+      {
+        "term": "Endemic Species",
+        "definition": "Species that are found naturally in only one geographic region and nowhere else in the world"
+      },
+      {
+        "term": "Extinction",
+        "definition": "The complete disappearance of a species from Earth when the last individual of that species dies"
+      },
+      {
+        "term": "Conservation",
+        "definition": "The protection, preservation, management and restoration of natural environments and wildlife"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define biodiversity and write its three types.",
+        "answer": "Biodiversity is the variety of life on Earth including all plants, animals, microorganisms, genes and ecosystems. Three types are: 1) Genetic diversity 2) Species diversity 3) Ecosystem diversity."
+      },
+      {
+        "type": "long",
+        "question": "Describe the major biomes found in Pakistan with examples.",
+        "answer": "Pakistan has five major biomes: 1) Tropical forests - found in Sindh and southern Punjab with trees like babul and kikar 2) Temperate forests - in northern areas with deodar and pine trees 3) Alpine scrub forests - in high mountains with juniper 4) Desert scrub forests - Thar Desert in Sindh and Cholistan in Punjab with thorny bushes 5) Mangrove forests - coastal areas of Karachi and Thatta with mangrove trees adapted to saltwater."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is an endemic species of Pakistan?",
+        "options": {
+          "A": "Tiger",
+          "B": "Indus river dolphin",
+          "C": "Elephant",
+          "D": "Lion"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Mangrove forests in Pakistan are mainly found in:",
+        "options": {
+          "A": "Northern mountains",
+          "B": "Punjab plains",
+          "C": "Coastal areas of Sindh",
+          "D": "Balochistan deserts"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The complete disappearance of a species is called:",
+        "options": {
+          "A": "Migration",
+          "B": "Evolution",
+          "C": "Extinction",
+          "D": "Adaptation"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse endemic species with endangered species - endemic means found only in one region",
+      "Writing incomplete definitions - always mention 'variety of life' in biodiversity definition",
+      "Forgetting Pakistani examples in biome questions - use Thar Desert, Karachi mangroves etc.",
+      "Mixing up in-situ and ex-situ conservation methods",
+      "Not mentioning all three types of biodiversity (genetic, species, ecosystem) when asked"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question about biomes in every BSEK paper",
+      "Always give Pakistani examples when describing biomes and conservation",
+      "Memorize the exact definition of biodiversity - it appears word-for-word in exams",
+      "Practice drawing food web diagrams with local species names",
+      "Conservation methods question appears frequently - learn both in-situ and ex-situ with examples"
+    ],
+    "formulas": [],
+    "keyDiagram": "Food web diagram showing energy flow between producers (plants), primary consumers (herbivores), secondary consumers (carnivores), and decomposers. Include Pakistani species like wheat, buffalo, vulture, and bacteria."
+  },
+  "created_at": "2026-04-06T06:14:21.127Z"
+}

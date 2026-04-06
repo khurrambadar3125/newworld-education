@@ -1,0 +1,100 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 1: Introduction",
+  "chapter_id": "4",
+  "chapter_name": "Double entry book-keeping – Part B",
+  "note_data": {
+    "title": "Double entry book-keeping – Part B",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Returns inwards** are goods returned by customers to the business and are recorded as a debit in the Returns Inwards account",
+      "**Returns outwards** are goods returned by the business to suppliers and are recorded as a credit in the Returns Outwards account",
+      "**Trade discount** is a reduction in the list price given to trade customers and is deducted before recording the transaction",
+      "**Cash discount** is a reduction given for prompt payment and is recorded separately in the Discount Received or Discount Allowed accounts",
+      "Returns inwards reduce sales revenue and are shown as a **deduction from gross sales** in the trading account",
+      "Returns outwards reduce purchases and are shown as a **deduction from gross purchases** in the trading account",
+      "**Discount allowed** is an expense to the business and appears on the debit side of the profit and loss account",
+      "**Discount received** is income to the business and appears on the credit side of the profit and loss account",
+      "When goods are returned, the **original VAT must be reversed** if the business is VAT registered",
+      "Credit notes are issued for returns inwards and received for returns outwards to adjust the original invoice amounts"
+    ],
+    "definitions": [
+      {
+        "term": "Returns Inwards",
+        "definition": "Goods returned to the business by customers due to defects, wrong specification or other reasons"
+      },
+      {
+        "term": "Returns Outwards",
+        "definition": "Goods returned by the business to suppliers due to defects, wrong specification or other reasons"
+      },
+      {
+        "term": "Trade Discount",
+        "definition": "A reduction in the list price of goods given to trade customers, calculated before recording the transaction"
+      },
+      {
+        "term": "Cash Discount",
+        "definition": "A reduction in the amount payable given to customers for prompt payment within the discount period"
+      },
+      {
+        "term": "Credit Note",
+        "definition": "A document sent to reduce the amount owed, usually issued when goods are returned or an allowance is given"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Show the complete double entry with account names, amounts and correct debit/credit sides"
+      },
+      {
+        "commandWord": "Show",
+        "instruction": "Display the ledger accounts in T-account format with dates, details and amounts"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Karachi Traders returned goods worth Rs.2,000 to Lahore Suppliers. Show the double entry in the books of both businesses.",
+      "marks": 4,
+      "answer": "Books of Karachi Traders (purchaser):\nDr Returns Outwards Account Rs.2,000\nCr Lahore Suppliers Account Rs.2,000\n\nBooks of Lahore Suppliers (seller):\nDr Karachi Traders Account Rs.2,000\nCr Returns Inwards Account Rs.2,000",
+      "markBreakdown": [
+        "Mark 1: Returns Outwards debited in buyer's books",
+        "Mark 2: Supplier account credited in buyer's books",
+        "Mark 3: Customer account debited in seller's books",
+        "Mark 4: Returns Inwards credited in seller's books"
+      ]
+    },
+    "commonMistakes": [
+      "Never record trade discount as a separate entry — it must be deducted before recording the net amount",
+      "Students often confuse returns inwards with returns outwards — remember inwards means INTO your business",
+      "Never show discount allowed as income — it is always an expense in the profit and loss account",
+      "Students forget to reverse the entries in both buyer's and seller's books for returns",
+      "Never include trade discount in the trial balance — only the net amounts after discount appear"
+    ],
+    "examinerTips": [
+      "Returns and discounts appear in almost every Paper 2 question",
+      "Always specify which business's books you are showing when answering returns questions",
+      "Remember: Returns Inwards = Sales Returns, Returns Outwards = Purchases Returns",
+      "Cash discount questions often test the difference between discount allowed and discount received"
+    ],
+    "formulas": [
+      "Net Sales = Gross Sales - Returns Inwards",
+      "Net Purchases = Gross Purchases - Returns Outwards",
+      "Net Amount = Gross Amount - Trade Discount"
+    ],
+    "keyDiagramDescription": "T-accounts showing the double entry for returns inwards and outwards, with clear debit and credit entries in both the personal accounts and the returns accounts for buyer and seller"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:36:18.508Z",
+  "updated_at": "2026-04-06T03:36:18.508Z"
+}

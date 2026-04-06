@@ -1,0 +1,101 @@
+{
+  "subject": "Geography",
+  "subject_code": "2217",
+  "level": "O Level",
+  "theme": "Theme 1: Population and Settlement",
+  "chapter_id": "1.4",
+  "chapter_name": "Population Density and Distribution",
+  "note_data": {
+    "title": "Population Density and Distribution",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Population density** is the number of people per unit area, usually measured per square kilometre",
+      "**Population distribution** refers to the way people are spread across the Earth's surface",
+      "**Dense** population areas have high numbers of people per square kilometre, often above 100 people/km²",
+      "**Sparse** population areas have low numbers of people per square kilometre, often below 10 people/km²",
+      "Physical factors affecting distribution include climate, relief, water supply, natural resources and soil fertility",
+      "Human factors affecting distribution include employment opportunities, transport links, government policies and historical factors",
+      "Pakistan shows uneven distribution with dense population in Punjab plains and sparse population in Balochistan deserts",
+      "River valleys like the Indus Valley have dense population due to fertile alluvial soils and reliable water supply",
+      "Mountainous areas like northern Pakistan have sparse population due to steep slopes and harsh climate",
+      "Urban areas like Karachi and Lahore have very high population density due to employment and services"
+    ],
+    "definitions": [
+      {
+        "term": "Population density",
+        "definition": "The number of people living in a given area, usually expressed as people per square kilometre"
+      },
+      {
+        "term": "Population distribution",
+        "definition": "The way people are spread across the Earth's surface"
+      },
+      {
+        "term": "Dense population",
+        "definition": "Areas with a high number of people per unit area"
+      },
+      {
+        "term": "Sparse population",
+        "definition": "Areas with a low number of people per unit area"
+      },
+      {
+        "term": "Sparsely populated",
+        "definition": "An area with few people living there in relation to its size"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "State what you can see from the map/graph without explaining why"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between areas"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why river valleys often have dense populations. [6 marks]",
+      "marks": 6,
+      "answer": "River valleys have dense populations because they provide fertile alluvial soils which are good for agriculture. This allows farmers to grow crops successfully and support large populations. Rivers provide a reliable water supply for drinking, irrigation and domestic use. This is essential for human survival and agricultural activities. River valleys often have flat land which makes it easier to build settlements, roads and railways. The flat relief also makes farming easier with machinery. Rivers provide transportation routes for trade and movement of goods. This encourages economic development and attracts people to settle. Rivers may provide fish as a food source, supporting larger populations. The combination of these factors makes river valleys attractive for settlement.",
+      "markBreakdown": [
+        "Mark 1: Fertile soils + explanation",
+        "Mark 2: Water supply + explanation",
+        "Mark 3: Flat land + explanation",
+        "Mark 4: Transportation + explanation",
+        "Mark 5: Food source + explanation",
+        "Mark 6: Additional developed point"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'overpopulation' when describing dense areas — always say 'densely populated'",
+      "Students often confuse density with distribution — density is HOW MANY, distribution is WHERE",
+      "Don't just list factors — always explain WHY each factor affects population",
+      "Never say 'no people live there' for sparse areas — say 'few people' or 'low population density'",
+      "Students forget to use data from maps when describing distribution patterns"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every Paper 2 exam, often with maps to interpret",
+      "Always quote figures from population density maps to support your answers",
+      "Learn specific examples from Pakistan for both dense and sparse areas",
+      "Practice calculating population density using the formula",
+      "Look for patterns on maps — clusters, linear patterns, scattered settlements"
+    ],
+    "formulas": [
+      "Population Density = Total Population ÷ Total Area"
+    ],
+    "keyDiagramDescription": "Population density map showing dense areas (dark shading) in river valleys and plains, sparse areas (light shading) in mountains and deserts, with a clear key showing people per km²"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:55:24.174Z",
+  "updated_at": "2026-04-06T03:55:24.174Z"
+}

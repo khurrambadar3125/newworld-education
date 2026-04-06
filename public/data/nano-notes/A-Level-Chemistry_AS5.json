@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Physical Chemistry",
+  "chapter_id": "AS5",
+  "chapter_name": "Chemical energetics",
+  "note_data": {
+    "title": "Chemical energetics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Enthalpy change** (ΔH) is the heat energy change at constant pressure and temperature",
+      "**Exothermic** reactions have negative ΔH values and release heat energy to the surroundings",
+      "**Endothermic** reactions have positive ΔH values and absorb heat energy from the surroundings",
+      "**Standard enthalpy of formation** (ΔHf°) is the enthalpy change when 1 mole of compound is formed from its elements in standard states",
+      "**Standard enthalpy of combustion** (ΔHc°) is the enthalpy change when 1 mole of substance is completely burned in oxygen under standard conditions",
+      "**Hess's Law** states that the enthalpy change for a reaction is independent of the route taken",
+      "**Bond energy** is the energy required to break 1 mole of a particular covalent bond in the gaseous state",
+      "**Calorimetry** uses q = mcΔT to calculate enthalpy changes from temperature measurements",
+      "Energy is **required to break bonds** (endothermic) and **released when bonds form** (exothermic)"
+    ],
+    "definitions": [
+      {
+        "term": "Enthalpy change",
+        "definition": "The heat energy change at constant pressure"
+      },
+      {
+        "term": "Standard enthalpy of formation",
+        "definition": "The enthalpy change when 1 mole of compound is formed from its elements in their standard states under standard conditions"
+      },
+      {
+        "term": "Hess's Law",
+        "definition": "The enthalpy change for a reaction is independent of the route taken, provided initial and final conditions are the same"
+      },
+      {
+        "term": "Bond energy",
+        "definition": "The energy required to break 1 mole of a particular covalent bond in the gaseous state"
+      },
+      {
+        "term": "Standard conditions",
+        "definition": "298K (25°C) and 1 atm pressure"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the definition or fact in one sentence with no explanation"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working clearly. Include units in final answer. Use appropriate number of significant figures"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give reason using 'because' or 'this is because'. Link cause and effect clearly"
+      },
+      {
+        "commandWord": "Draw",
+        "instruction": "For energy level diagrams, label axes, reactants, products, and ΔH with arrow"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Calculate the enthalpy of formation of methane using the following combustion data: ΔHc°[C] = -394 kJ mol⁻¹, ΔHc°[H₂] = -286 kJ mol⁻¹, ΔHc°[CH₄] = -890 kJ mol⁻¹",
+      "marks": 4,
+      "answer": "C(s) + 2H₂(g) → CH₄(g)\nUsing Hess's Law:\nΔHf°[CH₄] = ΔHc°[C] + 2ΔHc°[H₂] - ΔHc°[CH₄]\nΔHf°[CH₄] = (-394) + 2(-286) - (-890)\nΔHf°[CH₄] = -394 - 572 + 890 = -76 kJ mol⁻¹",
+      "markBreakdown": [
+        "Mark 1: Correct equation for formation of methane",
+        "Mark 2: Correct Hess's Law expression",
+        "Mark 3: Correct substitution of values",
+        "Mark 4: Correct final answer with units"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse bond breaking (endothermic) with bond forming (exothermic)",
+      "Students often forget to change sign when reversing reactions in Hess cycles",
+      "Always include units (kJ mol⁻¹) in final answers - marks lost if omitted",
+      "Never say 'bonds are made' - always say 'bonds are formed'",
+      "Students mix up ΔHf° and ΔHc° - formation is FROM elements, combustion is burning in oxygen"
+    ],
+    "examinerTips": [
+      "Hess's Law calculations appear in every Paper 2 - practice drawing cycles",
+      "Energy level diagrams must have labeled axes (Energy on y-axis, Reaction pathway on x-axis)",
+      "Bond energy questions always specify 'gaseous state' - mention this for full marks",
+      "In calorimetry, show q = mcΔT calculation even if calculator used"
+    ],
+    "formulas": [
+      "q = mcΔT",
+      "ΔH = -q/n",
+      "ΔH = Bonds broken - Bonds formed"
+    ],
+    "keyDiagramDescription": "Energy level diagram showing reactants and products connected by arrow labeled ΔH, with energy on y-axis and reaction pathway on x-axis. Activation energy shown as peak between reactants and products."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:31:08.179Z",
+  "updated_at": "2026-04-06T04:31:08.179Z"
+}

@@ -1,0 +1,95 @@
+{
+  "subject": "Geography",
+  "subject_code": "2217",
+  "level": "O Level",
+  "theme": "Theme 3: Economic Development",
+  "chapter_id": "3.3",
+  "chapter_name": "Industry",
+  "note_data": {
+    "title": "Industry",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Primary industries** extract raw materials directly from the earth or sea, such as mining, fishing, forestry and agriculture",
+      "**Secondary industries** manufacture goods by processing raw materials or assembling components, including food processing, textiles and steel production",
+      "**Tertiary industries** provide services to people and businesses, such as education, healthcare, banking and retail",
+      "**Quaternary industries** involve research, information technology and knowledge-based activities such as software development and scientific research",
+      "**Heavy industries** use large amounts of raw materials and energy to produce bulky products like steel, ships and chemicals",
+      "**Light industries** produce small, high-value goods using less raw materials and energy, such as electronics, pharmaceuticals and precision instruments",
+      "Industrial location factors include **raw materials, energy supply, transport links, labour supply, markets and government policies**",
+      "**Agglomeration** occurs when industries cluster together to share costs, services and skilled workers",
+      "**Industrial inertia** means industries remain in original locations even when advantages have disappeared due to established infrastructure and skilled workforce"
+    ],
+    "definitions": [
+      {
+        "term": "Primary industry",
+        "definition": "Industries that extract raw materials directly from the earth or sea, such as mining, farming, fishing and forestry"
+      },
+      {
+        "term": "Secondary industry",
+        "definition": "Industries that manufacture goods by processing raw materials or assembling components into finished products"
+      },
+      {
+        "term": "Tertiary industry",
+        "definition": "Industries that provide services to people and businesses rather than producing goods"
+      },
+      {
+        "term": "Industrial inertia",
+        "definition": "The tendency for industries to remain in their original location even when the original advantages no longer exist"
+      },
+      {
+        "term": "Agglomeration",
+        "definition": "The clustering of industries in the same area to benefit from shared services, costs and skilled labour"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics or features without explaining why"
+      },
+      {
+        "commandWord": "Suggest reasons",
+        "instruction": "Give location factors with brief explanation of why each is important"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why iron and steel industries are often located near coalfields. [4 marks]",
+      "marks": 4,
+      "answer": "Iron and steel industries locate near coalfields because coal is needed as fuel to heat the blast furnaces to very high temperatures. Coal is also used to make coke which is essential for the smelting process to extract iron from iron ore. Coal is heavy and bulky to transport so it is cheaper to locate the industry near the source. Large amounts of coal are needed so transport costs would be very expensive if coal had to be moved long distances.",
+      "markBreakdown": [
+        "Mark 1: Coal needed as fuel for blast furnaces",
+        "Mark 2: Coal used to make coke for smelting",
+        "Mark 3: Coal is heavy/bulky so expensive to transport",
+        "Mark 4: Large quantities needed so transport costs are significant"
+      ]
+    },
+    "commonMistakes": [
+      "Never say industries are located 'near resources' — always specify which raw materials and why they are needed",
+      "Students often confuse primary and secondary industries — remember primary extracts, secondary manufactures",
+      "Don't just list location factors — always explain WHY each factor is important for that specific industry",
+      "Never say 'cheap labour' — say 'large supply of labour' or 'skilled workforce' as wage levels vary globally",
+      "Avoid saying industries locate 'near cities' — specify whether for markets, labour supply or transport links"
+    ],
+    "examinerTips": [
+      "Industry questions appear regularly in Paper 2 Section A and Section B",
+      "Always use specific examples when explaining industrial location - Pakistan's textile industry in Karachi/Faisalabad",
+      "Learn the differences between heavy and light industries with examples",
+      "Practice explaining location factors for specific industries like iron/steel, textiles, and food processing"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Industrial location triangle showing the relationship between raw materials, markets, and transport links, with additional factors like labour, energy, and government policy affecting industrial location decisions"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:59:48.374Z",
+  "updated_at": "2026-04-06T03:59:48.374Z"
+}

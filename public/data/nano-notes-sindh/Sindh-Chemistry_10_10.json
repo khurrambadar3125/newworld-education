@@ -1,0 +1,112 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "10",
+  "chapter_name": "Acids, Bases and Salts",
+  "note_data": {
+    "title": "Acids, Bases and Salts",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Acids are substances that produce hydrogen ions (H+) when dissolved in water",
+      "Bases are substances that produce hydroxide ions (OH-) when dissolved in water",
+      "Salt is a compound formed by the neutralization reaction between an acid and a base",
+      "pH scale ranges from 0 to 14, where 7 is neutral, below 7 is acidic, above 7 is basic",
+      "Indicators are substances that change color in acidic and basic solutions",
+      "Strong acids completely ionize in water while weak acids partially ionize",
+      "Neutralization reaction: Acid + Base → Salt + Water",
+      "Common acids include HCl, H2SO4, HNO3 and common bases include NaOH, KOH, Ca(OH)2",
+      "Salts can be normal, acidic or basic depending on the strength of parent acid and base"
+    ],
+    "definitions": [
+      {
+        "term": "Acid",
+        "definition": "An acid is a substance which produces hydrogen ions when dissolved in water"
+      },
+      {
+        "term": "Base",
+        "definition": "A base is a substance which produces hydroxide ions when dissolved in water"
+      },
+      {
+        "term": "Salt",
+        "definition": "A salt is an ionic compound formed by the neutralization reaction between an acid and a base"
+      },
+      {
+        "term": "pH",
+        "definition": "pH is a scale used to measure the hydrogen ion concentration in a solution"
+      },
+      {
+        "term": "Neutralization",
+        "definition": "Neutralization is a chemical reaction between an acid and a base to form salt and water"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define acid and give two examples.",
+        "answer": "An acid is a substance which produces hydrogen ions when dissolved in water. Examples: Hydrochloric acid (HCl), Sulphuric acid (H2SO4)"
+      },
+      {
+        "type": "long",
+        "question": "Explain the preparation of sodium chloride from hydrochloric acid and sodium hydroxide. Write chemical equation and describe the process.",
+        "answer": "Sodium chloride is prepared by neutralization reaction between hydrochloric acid and sodium hydroxide. Chemical equation: HCl + NaOH → NaCl + H2O. Process: Take measured amount of HCl in a beaker. Add NaOH solution drop by drop until neutral. Evaporate water to get solid NaCl crystals. This is called neutralization because acid and base neutralize each other to form salt and water."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is a strong acid?",
+        "options": {
+          "A": "CH3COOH",
+          "B": "HCl",
+          "C": "H2CO3",
+          "D": "H2S"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The pH of pure water at 25°C is:",
+        "options": {
+          "A": "0",
+          "B": "1",
+          "C": "7",
+          "D": "14"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which indicator turns red in acidic solution?",
+        "options": {
+          "A": "Phenolphthalein",
+          "B": "Methyl orange",
+          "C": "Blue litmus",
+          "D": "Universal indicator"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse acids producing H+ ions with bases producing OH- ions",
+      "Writing wrong chemical formulas for common acids and bases",
+      "Forgetting to balance chemical equations in neutralization reactions",
+      "Mixing up pH values - remembering that below 7 is acidic, above 7 is basic",
+      "Not writing complete ionic equations when asked for salt preparation"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Always memorize exact definitions as they appear in STBB textbook",
+      "Practice writing chemical equations for neutralization reactions",
+      "Remember common examples of acids, bases and salts used in daily life",
+      "pH scale diagram often appears in exams - practice drawing it"
+    ],
+    "formulas": [
+      "HCl + NaOH → NaCl + H2O",
+      "H2SO4 + 2KOH → K2SO4 + 2H2O",
+      "HNO3 + Ca(OH)2 → Ca(NO3)2 + 2H2O",
+      "pH + pOH = 14"
+    ],
+    "keyDiagram": "pH scale from 0 to 14 showing acidic range (0-7), neutral point (7), and basic range (7-14) with examples of common substances at different pH values like lemon juice, water, soap solution"
+  },
+  "created_at": "2026-04-06T06:10:58.387Z"
+}

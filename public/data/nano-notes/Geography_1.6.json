@@ -1,0 +1,86 @@
+{
+  "subject": "Geography",
+  "subject_code": "2217",
+  "level": "O Level",
+  "theme": "Theme 1: Population and Settlement",
+  "chapter_id": "1.6",
+  "chapter_name": "Urban Settlements",
+  "note_data": {
+    "title": "Urban Settlements",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Urban settlements** have populations greater than 10,000 people with high building density and limited open space",
+      "The **Central Business District (CBD)** is located in the city centre with the highest land values and tallest buildings",
+      "**Land use zones** form concentric circles around the CBD due to varying land values and accessibility",
+      "**Suburbs** are residential areas on the city outskirts with lower building density and more open space",
+      "**Industrial zones** locate near transport links such as railways and main roads for easy movement of goods",
+      "Land values are highest in the **CBD** and decrease with distance from the city centre",
+      "**Urban sprawl** occurs when cities expand outwards into surrounding rural areas",
+      "**Traffic congestion** in the CBD results from narrow streets and high concentration of businesses",
+      "**Mixed land use** occurs where different functions overlap, especially between zones"
+    ],
+    "definitions": [
+      {
+        "term": "Central Business District (CBD)",
+        "definition": "The commercial and business centre of a city with the highest land values, tallest buildings and greatest concentration of shops and offices"
+      },
+      {
+        "term": "Urban settlement",
+        "definition": "A built-up area with a population greater than 10,000 people, high building density and limited open space"
+      },
+      {
+        "term": "Suburb",
+        "definition": "A residential area on the outskirts of a city with lower building density, more open space and family housing"
+      },
+      {
+        "term": "Land use zoning",
+        "definition": "The division of urban areas into different zones based on their main function such as residential, commercial or industrial"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics and features. Use data from maps/diagrams if provided"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why the CBD has the highest land values in a city. [3 marks]",
+      "marks": 3,
+      "answer": "The CBD has the highest land values because it is the most accessible location with excellent transport links from all directions. Land values are high because there is limited space but high demand from businesses wanting a central location. The CBD attracts the most customers because it is easily reached by public transport and has the greatest concentration of shops and services.",
+      "markBreakdown": [
+        "Mark 1: Most accessible location/excellent transport links",
+        "Mark 2: Limited space but high demand from businesses",
+        "Mark 3: Attracts most customers/concentration of shops and services"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'CBD is in the middle' — always say 'CBD is the most accessible location with best transport links'",
+      "Students often confuse suburbs with rural areas — suburbs are still part of the urban area",
+      "Don't just list land uses — explain WHY they locate in specific zones (accessibility, land costs, space requirements)",
+      "Never say 'rich people live in suburbs' — explain that suburbs offer more space and family housing",
+      "Students forget that land values DECREASE with distance from CBD — this drives the zoning pattern"
+    ],
+    "examinerTips": [
+      "Urban land use questions appear in every Paper 2 — learn the zone characteristics thoroughly",
+      "Always refer to accessibility and land values when explaining urban patterns",
+      "Use Pakistani examples: Karachi CBD (I.I. Chundrigar Road), Lahore suburbs (Defence, Gulberg)",
+      "Draw clear zone diagrams with labels for full marks in describe questions"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Concentric zone model showing CBD in centre, surrounded by rings of industrial zone, inner residential area, and outer suburbs, with land values and building heights decreasing outwards"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:56:10.460Z",
+  "updated_at": "2026-04-06T03:56:10.460Z"
+}

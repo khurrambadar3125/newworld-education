@@ -1,0 +1,96 @@
+{
+  "subject": "Commerce",
+  "subject_code": "7100",
+  "level": "O Level",
+  "theme": "Supporting Commerce",
+  "chapter_id": "4",
+  "chapter_name": "Logistics",
+  "note_data": {
+    "title": "Logistics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Logistics** is the process of planning, implementing and controlling the efficient flow of goods from origin to consumption",
+      "**Transport** moves goods from producers to consumers using road, rail, air, water and pipeline methods",
+      "**Warehousing** provides storage facilities for goods before they are needed by consumers or retailers",
+      "**Just-in-time delivery** reduces storage costs by delivering goods only when needed by the customer",
+      "**Distribution channels** are the routes goods take from manufacturer to final consumer",
+      "**Inventory management** controls stock levels to balance storage costs with customer demand",
+      "**Supply chain management** coordinates all activities from raw materials to final delivery to consumers",
+      "**Containerization** reduces handling costs and damage by using standardized shipping containers"
+    ],
+    "definitions": [
+      {
+        "term": "Logistics",
+        "definition": "The process of planning, implementing and controlling the efficient flow of goods, services and information from point of origin to point of consumption"
+      },
+      {
+        "term": "Warehouse",
+        "definition": "A building used for storing goods before they are distributed to retailers or consumers"
+      },
+      {
+        "term": "Just-in-time delivery",
+        "definition": "A system where goods are delivered exactly when needed, reducing storage costs and waste"
+      },
+      {
+        "term": "Distribution channel",
+        "definition": "The route taken by goods as they move from producer to final consumer"
+      },
+      {
+        "term": "Supply chain",
+        "definition": "The network of organizations involved in producing and delivering a product from raw materials to final consumer"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Discuss",
+        "instruction": "Give advantages AND disadvantages with explanations"
+      },
+      {
+        "commandWord": "Analyze",
+        "instruction": "Break down the topic into parts and examine each part with reasons"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain three advantages of using warehouses in a distribution system.",
+      "marks": 6,
+      "answer": "Warehouses provide storage space for goods before they are needed, which allows businesses to buy in bulk and benefit from economies of scale. Warehouses enable businesses to meet customer demand quickly because goods are readily available for immediate dispatch. Warehouses protect goods from damage and theft because they provide secure storage facilities with proper handling equipment.",
+      "markBreakdown": [
+        "Mark 1: Storage space provided",
+        "Mark 2: Explanation - bulk buying/economies of scale",
+        "Mark 3: Quick customer service",
+        "Mark 4: Explanation - goods readily available",
+        "Mark 5: Protection from damage/theft",
+        "Mark 6: Explanation - secure facilities"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'logistics is transport' — logistics includes transport, warehousing, inventory management and information systems",
+      "Students often confuse warehouses with factories — warehouses store finished goods, factories manufacture goods",
+      "Don't say 'just-in-time saves money' — explain HOW it saves money (reduces storage costs, reduces waste)",
+      "Never say 'transport is only by road' — include all five methods: road, rail, air, water, pipeline",
+      "Students forget to explain WHY containerization is beneficial — mention reduced handling costs and damage"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 Section B questions worth 8-12 marks",
+      "Always give BOTH advantage AND explanation for full marks in 'explain' questions",
+      "Use Pakistani examples: Karachi Port for containerization, NLC for road transport",
+      "Distribution channel diagrams often appear — practice drawing manufacturer→wholesaler→retailer→consumer"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Distribution channel diagram showing the flow: Manufacturer → Wholesaler → Retailer → Consumer, with arrows indicating the direction of goods flow and information feedback"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:11:53.299Z",
+  "updated_at": "2026-04-06T04:11:53.299Z"
+}

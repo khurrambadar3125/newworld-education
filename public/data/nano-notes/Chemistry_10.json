@@ -1,0 +1,95 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Physical Chemistry",
+  "chapter_id": "10",
+  "chapter_name": "Redox reactions",
+  "note_data": {
+    "title": "Redox reactions",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Oxidation** is the gain of oxygen, loss of hydrogen, or loss of electrons",
+      "**Reduction** is the loss of oxygen, gain of hydrogen, or gain of electrons",
+      "**Redox reactions** involve both oxidation and reduction occurring simultaneously",
+      "In terms of electron transfer, oxidation involves **loss of electrons** and reduction involves **gain of electrons** (OIL RIG)",
+      "**Combustion** is always an oxidation reaction where substances react with oxygen",
+      "The substance that causes oxidation is called the **oxidizing agent** and is itself reduced",
+      "The substance that causes reduction is called the **reducing agent** and is itself oxidized",
+      "**Displacement reactions** are redox reactions where more reactive metals displace less reactive metals from their compounds",
+      "In the reaction between hydrogen and copper oxide, hydrogen is **oxidized** to water and copper oxide is **reduced** to copper"
+    ],
+    "definitions": [
+      {
+        "term": "Oxidation",
+        "definition": "The gain of oxygen, loss of hydrogen, or loss of electrons"
+      },
+      {
+        "term": "Reduction",
+        "definition": "The loss of oxygen, gain of hydrogen, or gain of electrons"
+      },
+      {
+        "term": "Redox reaction",
+        "definition": "A reaction in which both oxidation and reduction occur simultaneously"
+      },
+      {
+        "term": "Oxidizing agent",
+        "definition": "A substance that causes oxidation in another substance and is itself reduced"
+      },
+      {
+        "term": "Reducing agent",
+        "definition": "A substance that causes reduction in another substance and is itself oxidized"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Identify",
+        "instruction": "Name the substance that is oxidized/reduced and state the change"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Zinc reacts with copper sulfate solution. Zn + CuSO₄ → ZnSO₄ + Cu. Explain what happens to zinc and copper in terms of oxidation and reduction.",
+      "marks": 4,
+      "answer": "Zinc is oxidized because it loses electrons to form Zn²⁺ ions. Copper is reduced because Cu²⁺ ions gain electrons to form copper atoms. Zinc is the reducing agent because it causes the reduction of copper ions. Copper sulfate is the oxidizing agent because it causes the oxidation of zinc.",
+      "markBreakdown": [
+        "Mark 1: Zinc is oxidized",
+        "Mark 2: Copper is reduced",
+        "Mark 3: Zinc is the reducing agent",
+        "Mark 4: Copper sulfate is the oxidizing agent"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'zinc loses oxygen' in displacement reactions — always say 'zinc loses electrons'",
+      "Students often confuse oxidizing agent with the substance being oxidized — the oxidizing agent is reduced",
+      "Don't forget that in redox reactions, if one substance is oxidized, another must be reduced",
+      "Never write 'copper gains oxygen' when copper ions become copper atoms — write 'copper gains electrons'",
+      "Students often miss that combustion reactions are always oxidation reactions"
+    ],
+    "examinerTips": [
+      "Redox appears in every Paper 2 — often linked with reactivity series questions",
+      "Use OIL RIG mnemonic: Oxidation Is Loss (of electrons), Reduction Is Gain (of electrons)",
+      "Always identify both the substance oxidized AND reduced for full marks",
+      "Displacement reactions in Paper 3 often require redox explanations"
+    ],
+    "formulas": [
+      "Zn + CuSO₄ → ZnSO₄ + Cu",
+      "2Mg + O₂ → 2MgO",
+      "CuO + H₂ → Cu + H₂O"
+    ],
+    "keyDiagramDescription": "Displacement reaction setup showing zinc strip in blue copper sulfate solution, with brown copper coating forming on zinc and solution becoming colorless"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:54:19.811Z",
+  "updated_at": "2026-04-05T20:54:19.811Z"
+}

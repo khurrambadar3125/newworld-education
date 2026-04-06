@@ -1,0 +1,95 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "A2 Computer Science",
+  "chapter_id": "A2.3",
+  "chapter_name": "Hardware and virtual machines",
+  "note_data": {
+    "title": "Hardware and virtual machines",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**RISC (Reduced Instruction Set Computer)** has fewer, simpler instructions that execute in one clock cycle, uses more registers and relies heavily on the compiler for optimization",
+      "**CISC (Complex Instruction Set Computer)** has many complex instructions that can perform multiple operations, uses fewer registers and has variable instruction lengths",
+      "**Pipelining** allows multiple instructions to be processed simultaneously at different stages of execution, increasing processor throughput without increasing clock speed",
+      "Pipeline stages typically include: **fetch, decode, execute, memory access, write back** - each stage operates on different instructions simultaneously",
+      "**Pipeline hazards** occur when dependencies between instructions prevent smooth pipeline operation, requiring stalls or forwarding mechanisms",
+      "A **virtual machine** is software that emulates a complete computer system, allowing multiple operating systems to run on a single physical machine",
+      "**Parallel processing** involves multiple processors executing instructions simultaneously, either through multiple cores or separate processors working together",
+      "**Massively parallel processing (MPP)** uses hundreds or thousands of processors working together to solve complex computational problems",
+      "Virtual machines provide **isolation** between different operating systems and applications, improving security and resource management"
+    ],
+    "definitions": [
+      {
+        "term": "RISC",
+        "definition": "Reduced Instruction Set Computer architecture that uses simple instructions executed in one clock cycle with extensive use of registers"
+      },
+      {
+        "term": "Pipelining",
+        "definition": "Technique where multiple instructions are overlapped in execution, with different stages of different instructions being processed simultaneously"
+      },
+      {
+        "term": "Virtual Machine",
+        "definition": "Software emulation of a complete computer system that can run an operating system and applications as if on physical hardware"
+      },
+      {
+        "term": "Parallel Processing",
+        "definition": "Simultaneous execution of multiple instructions or processes using multiple processors or cores"
+      },
+      {
+        "term": "Pipeline Hazard",
+        "definition": "Situation where the next instruction cannot execute in the following clock cycle due to dependencies or conflicts"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give at least two differences between RISC and CISC with clear contrasts"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give multiple related points about the process, include stages or steps"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how pipelining improves processor performance and describe one problem that can occur. [4 marks]",
+      "marks": 4,
+      "answer": "Pipelining improves performance because multiple instructions can be processed simultaneously at different stages of execution. This increases throughput because while one instruction is being executed, the next instruction can be decoded and another can be fetched. One problem is pipeline hazards which occur when there are dependencies between instructions. This causes pipeline stalls because the processor must wait for the dependency to be resolved before continuing.",
+      "markBreakdown": [
+        "Mark 1: Multiple instructions processed simultaneously",
+        "Mark 2: Increases throughput/performance explanation",
+        "Mark 3: Pipeline hazards identified",
+        "Mark 4: Explanation of why hazards cause problems"
+      ]
+    },
+    "commonMistakes": [
+      "Never say RISC is 'faster' than CISC - always say RISC instructions execute in fewer clock cycles",
+      "Students often confuse virtual machines with virtual memory - VM emulates hardware, virtual memory extends RAM",
+      "Don't say pipelining increases clock speed - it increases throughput by overlapping instruction execution",
+      "Never say parallel processing just means 'multiple tasks' - specify simultaneous execution using multiple processors/cores",
+      "Students forget that pipeline hazards can reduce performance below non-pipelined systems in worst cases"
+    ],
+    "examinerTips": [
+      "RISC vs CISC comparison appears frequently - learn specific differences not just 'simple vs complex'",
+      "Pipeline diagrams often required - show stages clearly with time axis",
+      "Virtual machine questions often link to benefits like isolation and portability",
+      "Parallel processing questions may include real examples like weather forecasting or scientific simulations"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Pipeline execution diagram showing 5 stages (Fetch, Decode, Execute, Memory, Writeback) with multiple instructions overlapping across time cycles, demonstrating how different instructions occupy different stages simultaneously"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:18:30.681Z",
+  "updated_at": "2026-04-06T05:18:30.681Z"
+}

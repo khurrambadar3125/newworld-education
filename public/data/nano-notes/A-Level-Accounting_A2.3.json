@@ -1,0 +1,97 @@
+{
+  "subject": "A Level Accounting",
+  "subject_code": "9706",
+  "level": "A Level",
+  "theme": "A2 Accounting",
+  "chapter_id": "A2.3",
+  "chapter_name": "Statements of cash flows",
+  "note_data": {
+    "title": "Statements of cash flows",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Cash flow statements** show the movement of cash and cash equivalents in and out of a business during a specific period",
+      "**Operating activities** include cash receipts from customers and cash payments to suppliers and employees for day-to-day operations",
+      "**Investing activities** include cash flows from the purchase and disposal of non-current assets and investments",
+      "**Financing activities** include cash flows from transactions with owners and lenders, such as share issues and loan repayments",
+      "**Direct method** shows actual cash receipts and payments during the period for operating activities",
+      "**Indirect method** adjusts net profit for non-cash items and changes in working capital to arrive at operating cash flows",
+      "**Cash equivalents** are short-term, highly liquid investments that are readily convertible to cash with insignificant risk of change in value",
+      "IAS 7 requires cash flow statements to be presented using either the direct or indirect method for operating activities",
+      "**Working capital changes** affect operating cash flows - increases in current assets decrease cash, increases in current liabilities increase cash"
+    ],
+    "definitions": [
+      {
+        "term": "Cash flow statement",
+        "definition": "A financial statement that shows the movement of cash and cash equivalents into and out of a business during a specific accounting period"
+      },
+      {
+        "term": "Operating activities",
+        "definition": "The principal revenue-producing activities of the entity and other activities that are not investing or financing activities"
+      },
+      {
+        "term": "Investing activities",
+        "definition": "The acquisition and disposal of long-term assets and other investments not included in cash equivalents"
+      },
+      {
+        "term": "Financing activities",
+        "definition": "Activities that result in changes in the size and composition of the contributed equity and borrowings of the entity"
+      },
+      {
+        "term": "Cash equivalents",
+        "definition": "Short-term, highly liquid investments that are readily convertible to known amounts of cash and which are subject to an insignificant risk of changes in value"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Prepare",
+        "instruction": "Create a full cash flow statement with three sections: operating, investing, and financing activities"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show workings for each cash flow figure, adjusting for non-cash items and working capital changes"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the classification reason, e.g. 'This is an operating activity because it relates to the main revenue-producing activities'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Classify the following items in a cash flow statement: (a) Purchase of machinery $50,000 (b) Dividends paid $15,000 (c) Receipts from customers $200,000",
+      "marks": 6,
+      "answer": "(a) Purchase of machinery $50,000 - Investing activity (cash outflow). This is the acquisition of a non-current asset. (b) Dividends paid $15,000 - Financing activity (cash outflow). This represents a distribution to equity holders. (c) Receipts from customers $200,000 - Operating activity (cash inflow). This relates to the main revenue-producing activities of the business.",
+      "markBreakdown": [
+        "Mark 1: Purchase of machinery classified as investing activity",
+        "Mark 2: Correct reason - acquisition of non-current asset",
+        "Mark 3: Dividends classified as financing activity",
+        "Mark 4: Correct reason - distribution to equity holders",
+        "Mark 5: Customer receipts classified as operating activity",
+        "Mark 6: Correct reason - main revenue-producing activities"
+      ]
+    },
+    "commonMistakes": [
+      "Never classify dividends paid as operating activities - always financing activities because they are distributions to owners",
+      "Students often confuse depreciation as a cash flow - depreciation is added back in indirect method because it's a non-cash expense",
+      "Never show interest received as financing - it's operating activity unless the entity is a financial institution",
+      "Students forget to show cash flows as inflows (+) or outflows (-) with correct signs",
+      "Never include non-cash transactions like bonus share issues in the cash flow statement"
+    ],
+    "examinerTips": [
+      "This topic appears in Paper 2 almost every year - practice preparing full statements",
+      "Always label each section clearly: Operating, Investing, Financing activities",
+      "Show workings for operating cash flows when using indirect method",
+      "Remember to start with opening cash and end with closing cash balance"
+    ],
+    "formulas": [
+      "Operating cash flow (indirect) = Net profit + Depreciation +/- Working capital changes",
+      "Cash from customers = Sales + Opening receivables - Closing receivables",
+      "Cash to suppliers = Purchases + Closing payables - Opening payables"
+    ],
+    "keyDiagramDescription": "Three-section cash flow statement showing Operating Activities (using direct or indirect method), Investing Activities (asset purchases/disposals), and Financing Activities (equity/debt transactions), with net increase/decrease in cash leading to closing cash balance"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:28:03.856Z",
+  "updated_at": "2026-04-06T05:28:03.856Z"
+}

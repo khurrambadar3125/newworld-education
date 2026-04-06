@@ -1,0 +1,86 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Physical Chemistry",
+  "chapter_id": "8",
+  "chapter_name": "Rates of reaction",
+  "note_data": {
+    "title": "Rates of reaction",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Rate of reaction** is the speed at which reactants are used up or products are formed",
+      "For a reaction to occur, particles must **collide with sufficient energy** (activation energy) and correct orientation",
+      "Increasing **temperature** increases rate because particles move faster, collide more frequently and with greater energy",
+      "Increasing **concentration** of solutions increases rate because more particles in same volume leads to more frequent collisions",
+      "Increasing **pressure** of gases increases rate because particles are closer together, leading to more frequent collisions",
+      "Decreasing **particle size** (increasing surface area) increases rate because more surface is exposed for collisions",
+      "A **catalyst** increases rate by providing an alternative pathway with lower activation energy",
+      "Catalysts are **chemically unchanged** at the end of the reaction and can be reused",
+      "Rate can be measured by monitoring **gas volume produced**, **mass lost**, or **time for reaction to complete**"
+    ],
+    "definitions": [
+      {
+        "term": "Rate of reaction",
+        "definition": "The speed at which reactants are used up or products are formed"
+      },
+      {
+        "term": "Catalyst",
+        "definition": "A substance that increases the rate of reaction without being chemically changed"
+      },
+      {
+        "term": "Activation energy",
+        "definition": "The minimum energy that colliding particles need for a reaction to occur"
+      },
+      {
+        "term": "Collision theory",
+        "definition": "For a reaction to occur, particles must collide with sufficient energy and correct orientation"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed observations without explaining why they happen"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why increasing the temperature increases the rate of reaction between magnesium and hydrochloric acid.",
+      "marks": 3,
+      "answer": "When temperature increases, particles move faster. This means they collide more frequently. The particles also collide with greater energy, so more collisions have energy above the activation energy.",
+      "markBreakdown": [
+        "Mark 1: particles move faster",
+        "Mark 2: more frequent collisions",
+        "Mark 3: collisions have greater energy/more successful collisions"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'molecules get excited' — always say 'particles move faster with more kinetic energy'",
+      "Students often confuse concentration with amount — it's particles per unit volume that matters",
+      "Don't say catalysts 'speed up particles' — they provide alternative pathway with lower activation energy",
+      "Never say surface area increases collisions — say it exposes more surface for collisions to occur",
+      "Students write 'more collisions' without saying they need sufficient energy (activation energy)"
+    ],
+    "examinerTips": [
+      "Rate of reaction appears in every Paper 2 — often combined with practical skills",
+      "Always mention 'activation energy' when explaining temperature effects for full marks",
+      "Graph questions are common — know that steeper gradient = faster rate",
+      "Catalyst questions often ask for 'chemically unchanged' for the mark"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Energy profile diagram showing activation energy barrier, with and without catalyst. Lower pathway with catalyst demonstrates how it speeds up reaction without changing overall energy change."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:53:40.589Z",
+  "updated_at": "2026-04-05T20:53:40.589Z"
+}

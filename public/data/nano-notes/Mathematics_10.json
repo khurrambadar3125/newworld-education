@@ -1,0 +1,99 @@
+{
+  "subject": "Mathematics",
+  "subject_code": "4024",
+  "level": "O Level",
+  "theme": "Data and Functions",
+  "chapter_id": "10",
+  "chapter_name": "Probability",
+  "note_data": {
+    "title": "Probability",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Probability** of an event = Number of favourable outcomes ÷ Total number of possible outcomes",
+      "All probabilities lie between **0 and 1** inclusive, where 0 means impossible and 1 means certain",
+      "Sum of all probabilities for all possible outcomes of an event **equals 1**",
+      "**Experimental probability** = Number of times event occurs ÷ Total number of trials",
+      "**Independent events** do not affect each other's outcomes - multiply probabilities: P(A and B) = P(A) × P(B)",
+      "**Dependent events** affect each other - second probability changes based on first outcome",
+      "For **mutually exclusive events**: P(A or B) = P(A) + P(B)",
+      "**Tree diagrams** show all possible outcomes with probabilities on branches - multiply along branches, add down columns",
+      "**Relative frequency** approaches theoretical probability as number of trials increases"
+    ],
+    "definitions": [
+      {
+        "term": "Probability",
+        "definition": "A measure of how likely an event is to occur, expressed as a number between 0 and 1"
+      },
+      {
+        "term": "Independent events",
+        "definition": "Two or more events where the outcome of one event does not affect the probability of the other event(s)"
+      },
+      {
+        "term": "Dependent events",
+        "definition": "Two or more events where the outcome of one event affects the probability of the other event(s)"
+      },
+      {
+        "term": "Mutually exclusive events",
+        "definition": "Two events that cannot occur at the same time"
+      },
+      {
+        "term": "Experimental probability",
+        "definition": "The probability of an event based on the results of an experiment or trial"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working using probability formulas and give final answer as fraction, decimal or percentage as requested"
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Use appropriate probability method (tree diagram, formula) and show all steps clearly"
+      },
+      {
+        "commandWord": "Estimate",
+        "instruction": "Use experimental data to calculate relative frequency"
+      },
+      {
+        "commandWord": "Draw",
+        "instruction": "Create tree diagram with all branches labelled with outcomes and probabilities"
+      }
+    ],
+    "modelAnswer": {
+      "question": "In Lahore, the probability that it rains on any day is 0.3. Find the probability that it rains on exactly one of two consecutive days.",
+      "marks": 3,
+      "answer": "P(rain on day 1) = 0.3, P(no rain on day 1) = 0.7\nP(rain on day 2) = 0.3, P(no rain on day 2) = 0.7\nP(rain on exactly one day) = P(rain day 1, no rain day 2) + P(no rain day 1, rain day 2)\n= (0.3 × 0.7) + (0.7 × 0.3) = 0.21 + 0.21 = 0.42",
+      "markBreakdown": [
+        "Mark 1: Identify probabilities for rain and no rain",
+        "Mark 2: Set up correct calculation for exactly one day",
+        "Mark 3: Correct final answer 0.42"
+      ]
+    },
+    "commonMistakes": [
+      "Never add probabilities for independent events - always multiply probabilities along tree diagram branches",
+      "Students often forget that P(not A) = 1 - P(A) when finding complementary probabilities",
+      "Never use experimental probability formula for theoretical probability questions",
+      "Students confuse 'at least one' with 'exactly one' - at least one means one or more",
+      "Never write probability greater than 1 or less than 0 - always check answers are reasonable"
+    ],
+    "examinerTips": [
+      "Probability questions appear in every Paper 2 - usually worth 6-8 marks total",
+      "Always draw tree diagrams for two-stage probability questions to avoid errors",
+      "Show all working even for simple calculations - method marks available",
+      "Convert between fractions, decimals and percentages as requested in question"
+    ],
+    "formulas": [
+      "P(event) = Number of favourable outcomes ÷ Total number of outcomes",
+      "P(A and B) = P(A) × P(B) for independent events",
+      "P(A or B) = P(A) + P(B) for mutually exclusive events",
+      "Experimental probability = Number of successes ÷ Total number of trials"
+    ],
+    "keyDiagramDescription": "Tree diagram showing two stages with branches for each outcome, probabilities written on each branch, final outcomes and their probabilities calculated by multiplying along branches"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:25:43.870Z",
+  "updated_at": "2026-04-05T21:25:43.870Z"
+}

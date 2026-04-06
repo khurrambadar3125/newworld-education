@@ -1,0 +1,103 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "AS Waves and Electricity",
+  "chapter_id": "AS7",
+  "chapter_name": "Waves",
+  "note_data": {
+    "title": "Waves (AS7)",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Progressive waves** transfer energy without transferring matter from one point to another",
+      "**Transverse waves** have oscillations perpendicular to the direction of energy transfer (e.g. light, radio waves)",
+      "**Longitudinal waves** have oscillations parallel to the direction of energy transfer (e.g. sound waves)",
+      "Wave speed v = fλ where f is frequency and λ is wavelength",
+      "**Doppler effect** occurs when there is relative motion between source and observer, causing change in observed frequency",
+      "For approaching source: observed frequency increases, for receding source: observed frequency decreases",
+      "**Intensity** is power per unit area perpendicular to the direction of energy transfer",
+      "Intensity follows inverse square law: I ∝ 1/r² for point sources",
+      "**Amplitude** is maximum displacement from equilibrium position",
+      "**Phase difference** is measured in radians or degrees, with 2π radians = 360° = one complete wavelength"
+    ],
+    "definitions": [
+      {
+        "term": "Progressive wave",
+        "definition": "A wave that transfers energy from one point to another without transferring matter"
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance between two adjacent points on a wave that are in phase"
+      },
+      {
+        "term": "Frequency",
+        "definition": "The number of complete oscillations per unit time"
+      },
+      {
+        "term": "Intensity",
+        "definition": "The power incident normally per unit area"
+      },
+      {
+        "term": "Doppler effect",
+        "definition": "The change in observed frequency due to relative motion between source and observer"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Define",
+        "instruction": "Give precise definition that matches mark scheme exactly"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working clearly with correct units and significant figures"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A sound wave has frequency 440 Hz and wavelength 0.75 m. Calculate the speed of sound and explain the Doppler effect when an ambulance approaches an observer. [5 marks]",
+      "marks": 5,
+      "answer": "Speed calculation: v = fλ = 440 × 0.75 = 330 m/s. The Doppler effect occurs because there is relative motion between the ambulance (source) and observer. As the ambulance approaches, the observed frequency increases because the sound waves are compressed, resulting in a higher pitch. When receding, frequency decreases as waves are stretched, giving lower pitch.",
+      "markBreakdown": [
+        "Mark 1: Correct substitution v = fλ",
+        "Mark 2: Correct calculation v = 330 m/s with unit",
+        "Mark 3: States Doppler effect due to relative motion",
+        "Mark 4: Frequency increases when approaching",
+        "Mark 5: Explanation of wave compression/stretching"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse wavelength with amplitude - wavelength is distance between identical points, amplitude is maximum displacement",
+      "Students often forget that intensity is POWER per unit area, not energy per unit area",
+      "Don't say 'waves carry matter' - waves transfer energy without transferring matter",
+      "For Doppler effect, frequency changes but wave speed in the medium remains constant",
+      "Intensity calculations: remember to use perpendicular area, not total surface area"
+    ],
+    "examinerTips": [
+      "Wave questions appear in almost every Paper 2 - master the basic definitions",
+      "Always include units in calculations and check significant figures",
+      "For Doppler questions, clearly state whether source/observer is moving and in which direction",
+      "Draw clear wave diagrams showing wavelength and amplitude when asked",
+      "Intensity questions often involve inverse square law - practice these calculations"
+    ],
+    "formulas": [
+      "v = fλ",
+      "I = P/A",
+      "I₁/I₂ = r₂²/r₁²",
+      "f' = f(v ± v₀)/(v ± vₛ)"
+    ],
+    "keyDiagramDescription": "Sinusoidal wave showing wavelength λ (distance between crests), amplitude A (maximum displacement), and direction of energy transfer. Include labels for crest, trough, and equilibrium position."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:40:52.285Z",
+  "updated_at": "2026-04-06T04:40:52.285Z"
+}

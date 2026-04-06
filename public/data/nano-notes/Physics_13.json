@@ -1,0 +1,97 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "Waves",
+  "chapter_id": "13",
+  "chapter_name": "Light",
+  "note_data": {
+    "title": "Light",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Light travels in straight lines** in a uniform medium and can be represented by rays",
+      "**Reflection** occurs when light bounces off a surface - angle of incidence equals angle of reflection",
+      "**Refraction** occurs when light passes from one medium to another and changes speed, causing the ray to bend",
+      "**Total internal reflection** occurs when light travels from a denser to less dense medium at angles greater than the critical angle",
+      "**Converging lenses** bring parallel rays to a focus, while **diverging lenses** spread parallel rays apart",
+      "**Real images** can be formed on a screen and are inverted, **virtual images** cannot be formed on a screen and are upright",
+      "**Dispersion** occurs when white light is separated into its component colours by a prism",
+      "**Critical angle** is the angle of incidence in the denser medium for which the angle of refraction is 90°"
+    ],
+    "definitions": [
+      {
+        "term": "Refraction",
+        "definition": "The bending of light when it passes from one medium to another due to a change in speed"
+      },
+      {
+        "term": "Total Internal Reflection",
+        "definition": "The complete reflection of light at the boundary between two media when light travels from denser to less dense medium at an angle greater than the critical angle"
+      },
+      {
+        "term": "Critical Angle",
+        "definition": "The angle of incidence in the denser medium for which the angle of refraction is 90°"
+      },
+      {
+        "term": "Real Image",
+        "definition": "An image that can be formed on a screen because light rays actually pass through it"
+      },
+      {
+        "term": "Virtual Image",
+        "definition": "An image that cannot be formed on a screen because light rays only appear to come from it"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of events or properties without explanation"
+      },
+      {
+        "commandWord": "Draw",
+        "instruction": "Always use ruler for straight lines, label all parts, show angles clearly"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A ray of light travels from air into glass. Explain why the ray bends towards the normal. [3 marks]",
+      "marks": 3,
+      "answer": "Light slows down when it enters the glass because glass is denser than air. This change in speed causes the light ray to refract. The ray bends towards the normal because it is travelling from a less dense medium to a more dense medium.",
+      "markBreakdown": [
+        "Mark 1: Light slows down in glass",
+        "Mark 2: Because glass is denser than air",
+        "Mark 3: Ray bends towards normal when going from less dense to more dense medium"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'light bends because of density' - always say 'light bends because of change in speed due to density difference'",
+      "Students often confuse real and virtual images - real images are always inverted, virtual are always upright",
+      "Drawing refraction diagrams without showing normal line perpendicular to surface",
+      "Confusing critical angle with angle of incidence - critical angle is specific value, not any angle",
+      "Saying 'light reflects off mirrors' instead of 'light reflects from mirrors'"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2 with ray diagrams",
+      "Always draw a labelled diagram for reflection and refraction questions",
+      "Use a ruler for all ray diagrams and show arrows on rays",
+      "Remember angles are always measured from the normal, not the surface",
+      "Optical fibre questions often combine total internal reflection with practical applications"
+    ],
+    "formulas": [
+      "refractive index = sin i / sin r",
+      "sin c = 1/n (where c is critical angle and n is refractive index)"
+    ],
+    "keyDiagramDescription": "Ray diagram showing incident ray, reflected ray, refracted ray, and normal line (perpendicular to surface). All angles measured from normal. Include labels for angle of incidence, angle of reflection, and angle of refraction."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:18:06.788Z",
+  "updated_at": "2026-04-05T21:18:06.788Z"
+}

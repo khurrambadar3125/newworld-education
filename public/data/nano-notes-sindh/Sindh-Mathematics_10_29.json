@@ -1,0 +1,110 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "29",
+  "chapter_name": "Practical Geometry — Circles",
+  "note_data": {
+    "title": "Practical Geometry — Circles",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Construction of tangents to a circle from an external point using compass and ruler only",
+      "A tangent to a circle is perpendicular to the radius at the point of contact",
+      "From any external point, exactly two tangents can be drawn to a circle",
+      "The two tangents drawn from an external point to a circle are equal in length",
+      "Construction of a circle circumscribing a triangle (circumcircle)",
+      "Construction of a circle inscribed in a triangle (incircle)",
+      "The perpendicular bisectors of the sides of a triangle meet at the circumcenter",
+      "The angle bisectors of a triangle meet at the incenter",
+      "Common tangents to two circles — external and internal tangents"
+    ],
+    "definitions": [
+      {
+        "term": "Tangent",
+        "definition": "A tangent to a circle is a straight line which touches the circle at one point only. The point where the tangent touches the circle is called the point of contact."
+      },
+      {
+        "term": "Circumcircle",
+        "definition": "A circle which passes through all the vertices of a triangle is called the circumcircle of the triangle."
+      },
+      {
+        "term": "Incircle",
+        "definition": "A circle which touches all the sides of a triangle is called the incircle of the triangle."
+      },
+      {
+        "term": "Circumcenter",
+        "definition": "The center of the circumcircle of a triangle is called the circumcenter. It is the point where the perpendicular bisectors of the sides meet."
+      },
+      {
+        "term": "Incenter",
+        "definition": "The center of the incircle of a triangle is called the incenter. It is the point where the angle bisectors of the triangle meet."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define tangent to a circle. How many tangents can be drawn to a circle from an external point?",
+        "answer": "A tangent to a circle is a straight line which touches the circle at one point only. From any external point, exactly two tangents can be drawn to a circle, and both tangents are equal in length."
+      },
+      {
+        "type": "long",
+        "question": "Construct two tangents to a circle from an external point P. Write the steps of construction.",
+        "answer": "Steps: 1) Draw circle with center O and radius r. 2) Mark external point P. 3) Join OP and bisect it at M. 4) With center M and radius MP, draw a circle intersecting the given circle at points A and B. 5) Join PA and PB. These are the required tangents. Proof: Angle OAP = 90° (angle in semicircle), so PA ⊥ OA, making PA a tangent."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The number of tangents that can be drawn to a circle from an external point is:",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "infinite"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The circumcenter of a triangle is the intersection point of:",
+        "options": {
+          "A": "Medians",
+          "B": "Angle bisectors",
+          "C": "Perpendicular bisectors of sides",
+          "D": "Altitudes"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "A tangent to a circle makes what angle with the radius at the point of contact?",
+        "options": {
+          "A": "45°",
+          "B": "60°",
+          "C": "90°",
+          "D": "180°"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students forget to prove that PA ⊥ OA in tangent construction",
+      "Confusing circumcenter with incenter — remember circumcenter uses perpendicular bisectors",
+      "Not marking the construction arcs clearly in diagrams",
+      "Forgetting that tangents from external point are equal in length",
+      "Drawing inaccurate perpendicular bisectors without proper compass technique"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 construction question (5-8 marks) in BSEK papers",
+      "Always draw neat diagrams with proper labeling — marks are given for construction steps",
+      "Memorize the exact steps of tangent construction — this appears every year",
+      "Practice using compass and ruler only — no protractor allowed in constructions",
+      "Write 'Hence proved' or 'Hence constructed' at the end of construction problems"
+    ],
+    "formulas": [
+      "Length of tangent from external point P to circle = √(OP² - r²)",
+      "In right triangle: (Tangent)² = (Distance from center)² - (Radius)²"
+    ],
+    "keyDiagram": "Circle with center O, external point P, tangents PA and PB touching circle at points A and B. Show construction circle with center M (midpoint of OP) passing through A and B. Mark all angles and equal lengths clearly."
+  },
+  "created_at": "2026-04-06T06:30:30.739Z"
+}

@@ -1,0 +1,95 @@
+{
+  "subject": "Biology",
+  "subject_code": "5090",
+  "level": "O Level",
+  "theme": "Nutrition and Transport",
+  "chapter_id": "7",
+  "chapter_name": "Transport in humans",
+  "note_data": {
+    "title": "Transport in humans",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Blood** consists of plasma, red blood cells, white blood cells and platelets",
+      "**Red blood cells** are biconcave, lack a nucleus and contain haemoglobin to transport oxygen",
+      "**White blood cells** have a nucleus and defend the body against disease by phagocytosis and antibody production",
+      "**Platelets** are cell fragments that help blood clotting",
+      "**Arteries** carry blood away from the heart and have thick muscular walls",
+      "**Veins** carry blood towards the heart and have valves to prevent backflow",
+      "**Capillaries** are one cell thick to allow efficient exchange of materials",
+      "The **heart** has four chambers - two atria and two ventricles with valves to prevent backflow",
+      "**Double circulation** means blood passes through the heart twice in one complete circuit",
+      "**Coronary arteries** supply the heart muscle with oxygen and glucose"
+    ],
+    "definitions": [
+      {
+        "term": "Artery",
+        "definition": "A blood vessel that carries blood away from the heart"
+      },
+      {
+        "term": "Vein",
+        "definition": "A blood vessel that carries blood towards the heart"
+      },
+      {
+        "term": "Double circulation",
+        "definition": "A circulatory system where blood passes through the heart twice in one complete circuit"
+      },
+      {
+        "term": "Phagocytosis",
+        "definition": "The process by which white blood cells engulf and digest pathogens"
+      },
+      {
+        "term": "Haemoglobin",
+        "definition": "A red protein in red blood cells that combines with oxygen to transport it around the body"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between structures"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give observable features or sequence of events without explanations"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how the structure of an artery is adapted to its function. [3 marks]",
+      "marks": 3,
+      "answer": "Arteries have thick muscular walls to withstand high blood pressure. They have elastic fibres that stretch and recoil to maintain blood pressure. They have a narrow lumen to maintain high blood pressure.",
+      "markBreakdown": [
+        "Mark 1: thick muscular walls / withstand high pressure",
+        "Mark 2: elastic fibres / stretch and recoil",
+        "Mark 3: narrow lumen / maintain pressure"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'red blood cells carry carbon dioxide' — they transport mainly oxygen, CO₂ is carried in plasma",
+      "Students often confuse pulmonary artery (carries deoxygenated blood) with other arteries",
+      "Never say 'arteries carry oxygenated blood' — pulmonary artery carries deoxygenated blood",
+      "Students forget that capillaries connect arteries to veins, not just 'small blood vessels'",
+      "Never say 'blood flows because of the heart beating' — explain pressure differences"
+    ],
+    "examinerTips": [
+      "Heart structure diagrams appear frequently - practice labelling all four chambers and major vessels",
+      "Always mention 'biconcave shape' and 'no nucleus' when describing red blood cell adaptations",
+      "Use the term 'pulmonary circulation' for heart-lungs circuit and 'systemic circulation' for heart-body circuit",
+      "In Pakistan's hot climate, increased sweating affects blood volume - good context for homeostasis questions"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Heart structure showing four chambers (left and right atria, left and right ventricles), major blood vessels (aorta, pulmonary artery, pulmonary vein, vena cava), and valves. Include direction of blood flow with arrows."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:28:04.299Z",
+  "updated_at": "2026-04-05T21:28:04.299Z"
+}

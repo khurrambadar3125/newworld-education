@@ -1,0 +1,113 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "1",
+  "chapter_name": "Fundamentals of Chemistry",
+  "note_data": {
+    "title": "Fundamentals of Chemistry",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Chemistry is the branch of science which deals with the composition, properties and reactions of matter",
+      "Matter is anything that occupies space and has mass — exists in three states: solid, liquid and gas",
+      "Element is a substance which cannot be decomposed into simpler substances by ordinary chemical means",
+      "Compound is a substance formed by the chemical combination of two or more elements in a definite ratio by mass",
+      "Mixture is a substance formed by mixing two or more substances in any ratio without chemical combination",
+      "Atom is the smallest particle of an element that can take part in chemical reactions",
+      "Molecule is the smallest particle of a substance that can exist independently and retain all properties of that substance",
+      "Chemical formula represents the composition of a compound using symbols and numbers",
+      "Physical properties can be observed without changing the chemical composition of matter",
+      "Chemical properties can only be observed when the substance undergoes a chemical change"
+    ],
+    "definitions": [
+      {
+        "term": "Chemistry",
+        "definition": "Chemistry is the branch of science which deals with the composition, properties and reactions of matter."
+      },
+      {
+        "term": "Element",
+        "definition": "An element is a substance which cannot be decomposed into simpler substances by ordinary chemical means."
+      },
+      {
+        "term": "Compound",
+        "definition": "A compound is a substance formed by the chemical combination of two or more elements in a definite ratio by mass."
+      },
+      {
+        "term": "Atom",
+        "definition": "An atom is the smallest particle of an element that can take part in chemical reactions."
+      },
+      {
+        "term": "Molecule",
+        "definition": "A molecule is the smallest particle of a substance that can exist independently and retain all properties of that substance."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between element and compound.",
+        "answer": "Element cannot be decomposed into simpler substances by ordinary chemical means while compound is formed by chemical combination of two or more elements in definite ratio. Elements have same type of atoms while compounds have different types of atoms."
+      },
+      {
+        "type": "long",
+        "question": "Define chemistry and explain the branches of chemistry with examples.",
+        "answer": "Chemistry is the branch of science which deals with composition, properties and reactions of matter. Main branches are: (1) Organic Chemistry - study of carbon compounds like methane, glucose (2) Inorganic Chemistry - study of all elements except carbon like sodium chloride, water (3) Physical Chemistry - study of physical properties and their relation to chemical properties (4) Analytical Chemistry - identification and quantitative determination of components (5) Biochemistry - study of chemical processes in living organisms."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is a compound?",
+        "options": {
+          "A": "Oxygen",
+          "B": "Hydrogen",
+          "C": "Water",
+          "D": "Nitrogen"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The smallest particle of an element that can take part in chemical reaction is called:",
+        "options": {
+          "A": "Molecule",
+          "B": "Atom",
+          "C": "Ion",
+          "D": "Radical"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Salt dissolved in water from Karachi sea is an example of:",
+        "options": {
+          "A": "Element",
+          "B": "Compound",
+          "C": "Mixture",
+          "D": "Molecule"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse atom with molecule - remember atom is smallest particle of element, molecule is smallest particle of substance",
+      "Writing incomplete definitions - always mention 'ordinary chemical means' in element definition",
+      "Confusing physical and chemical properties - physical can be observed without chemical change",
+      "Not mentioning 'definite ratio by mass' in compound definition",
+      "Mixing up examples of elements and compounds in MCQs"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 short question in every BSEK paper",
+      "Definition questions are very common - memorize exact textbook definitions word by word",
+      "Differentiate questions between element/compound and atom/molecule appear frequently",
+      "Examples from Pakistani context like Tarbela Dam water, Karachi salt are often used",
+      "Always write complete definitions with key phrases like 'ordinary chemical means' and 'definite ratio'"
+    ],
+    "formulas": [
+      "H₂O (Water)",
+      "NaCl (Sodium Chloride)",
+      "CO₂ (Carbon Dioxide)",
+      "CH₄ (Methane)"
+    ],
+    "keyDiagram": "Classification of Matter diagram showing Matter branching into Pure Substances (Elements and Compounds) and Mixtures (Homogeneous and Heterogeneous) with Pakistani examples like Indus River water, Karachi salt"
+  },
+  "created_at": "2026-04-06T06:07:34.160Z"
+}

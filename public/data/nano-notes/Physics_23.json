@@ -1,0 +1,97 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "Atomic Physics",
+  "chapter_id": "23",
+  "chapter_name": "Radioactivity",
+  "note_data": {
+    "title": "Radioactivity",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Radioactivity** is the spontaneous and random emission of radiation from unstable atomic nuclei",
+      "**Alpha radiation** consists of helium nuclei (2 protons + 2 neutrons) with charge +2e and mass 4u",
+      "**Beta radiation** consists of high-energy electrons with charge -1e and negligible mass",
+      "**Gamma radiation** consists of electromagnetic waves with no charge and no mass",
+      "**Half-life** is the time taken for half the nuclei in a radioactive sample to decay",
+      "**Activity** is the number of nuclei that decay per second, measured in becquerels (Bq)",
+      "Alpha particles have the shortest range in air (few cm) and are stopped by paper",
+      "Beta particles have medium range in air (few m) and are stopped by thin aluminium",
+      "Gamma rays have the longest range in air (inverse square law) and are reduced by thick lead",
+      "Radioactive decay follows an exponential pattern and cannot be affected by physical conditions"
+    ],
+    "definitions": [
+      {
+        "term": "Radioactivity",
+        "definition": "The spontaneous and random emission of radiation from unstable atomic nuclei"
+      },
+      {
+        "term": "Half-life",
+        "definition": "The time taken for half the nuclei in a radioactive sample to decay"
+      },
+      {
+        "term": "Activity",
+        "definition": "The number of nuclei that decay per second"
+      },
+      {
+        "term": "Radioisotope",
+        "definition": "An isotope with an unstable nucleus that undergoes radioactive decay"
+      },
+      {
+        "term": "Background radiation",
+        "definition": "Ionizing radiation that is present in the environment at all times"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of what happens, include key stages"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between two things"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A radioactive source has an activity of 800 Bq. After 20 minutes, the activity has decreased to 200 Bq. Calculate the half-life of this source.",
+      "marks": 3,
+      "answer": "Initial activity = 800 Bq, Final activity = 200 Bq. 800 → 400 → 200 (two half-lives). Time for two half-lives = 20 minutes. Therefore, one half-life = 10 minutes.",
+      "markBreakdown": [
+        "Mark 1: Identifies that activity decreases by factor of 4",
+        "Mark 2: Recognizes this represents 2 half-lives",
+        "Mark 3: Calculates half-life = 20 ÷ 2 = 10 minutes"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'radioactivity decreases' — always say 'activity decreases'",
+      "Students often confuse half-life with half the time period",
+      "Never say alpha particles are 'absorbed' — they are 'stopped' or 'blocked'",
+      "Students forget that radioactive decay is random and spontaneous",
+      "Never say gamma rays have mass — they are massless electromagnetic radiation"
+    ],
+    "examinerTips": [
+      "Half-life calculations appear frequently in Paper 2 - practice the step-by-step method",
+      "Always subtract background radiation when measuring activity",
+      "Draw decay curves carefully showing exponential shape, not straight lines",
+      "Remember to state units for activity (Bq) and half-life (time units)"
+    ],
+    "formulas": [
+      "Activity = number of decays per second"
+    ],
+    "keyDiagramDescription": "Radioactive decay curve showing exponential decrease in activity/number of nuclei over time, with half-life intervals marked. Include axes labels and units."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:21:24.010Z",
+  "updated_at": "2026-04-05T21:21:24.010Z"
+}

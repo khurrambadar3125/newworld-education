@@ -1,0 +1,92 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 4: Advanced Topics",
+  "chapter_id": "16",
+  "chapter_name": "Control accounts",
+  "note_data": {
+    "title": "Control accounts",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **control account** is a summary account that contains the total of individual accounts in a subsidiary ledger",
+      "The **sales ledger control account** summarizes all individual customer accounts and shows total trade receivables",
+      "The **purchase ledger control account** summarizes all individual supplier accounts and shows total trade payables",
+      "Control accounts are prepared from **totals of books of prime entry**, not individual transactions",
+      "Debit entries in sales ledger control include: **credit sales, dishonored cheques, interest charged**",
+      "Credit entries in sales ledger control include: **cash received from customers, returns inwards, discounts allowed, bad debts written off**",
+      "Debit entries in purchase ledger control include: **cash paid to suppliers, returns outwards, discounts received**",
+      "Credit entries in purchase ledger control include: **credit purchases, goods returned by us to suppliers**",
+      "Control accounts help **detect errors** by comparing control account balance with total of individual ledger balances",
+      "The balance on control account should **equal the total of all individual account balances** in the subsidiary ledger"
+    ],
+    "definitions": [
+      {
+        "term": "Control account",
+        "definition": "A summary account that contains the total of a number of individual accounts from a subsidiary ledger"
+      },
+      {
+        "term": "Sales ledger control account",
+        "definition": "A control account that summarizes all the individual customer accounts and shows the total amount owed by trade receivables"
+      },
+      {
+        "term": "Purchase ledger control account",
+        "definition": "A control account that summarizes all the individual supplier accounts and shows the total amount owed to trade payables"
+      },
+      {
+        "term": "Subsidiary ledger",
+        "definition": "A ledger containing individual customer or supplier accounts that support the control account"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Write the full control account in T-account format with all entries correctly placed"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all workings clearly and state the final answer"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two benefits of preparing control accounts. (4 marks)",
+      "marks": 4,
+      "answer": "One benefit is that control accounts help detect errors. This is because the balance on the control account should equal the total of individual ledger balances, so any difference indicates an error. Another benefit is that control accounts save time when preparing financial statements. This is because the balance can be taken directly from the control account rather than adding up all individual balances.",
+      "markBreakdown": [
+        "Mark 1: Control accounts help detect errors",
+        "Mark 2: Explanation about balance comparison",
+        "Mark 3: Control accounts save time",
+        "Mark 4: Explanation about financial statement preparation"
+      ]
+    },
+    "commonMistakes": [
+      "Never put individual transactions in control accounts — always use totals from books of prime entry",
+      "Students often put returns inwards on the debit side — it goes on credit side as it reduces what customers owe",
+      "Never include cash sales in sales ledger control — only credit sales appear",
+      "Students confuse discounts allowed (credit in sales ledger control) with discounts received (debit in purchase ledger control)",
+      "Never include individual customer names in control accounts — they show totals only"
+    ],
+    "examinerTips": [
+      "Control accounts appear frequently in Paper 2 Section B",
+      "Always check that debits equal credits when preparing control accounts",
+      "Remember that control account balances appear on the trial balance",
+      "Practice identifying whether items are debit or credit entries"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "T-account format showing Sales Ledger Control Account with typical debit entries (opening balance, credit sales, dishonored cheques, interest) and credit entries (cash received, returns inwards, discounts allowed, bad debts, closing balance)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:40:46.423Z",
+  "updated_at": "2026-04-06T03:40:46.423Z"
+}

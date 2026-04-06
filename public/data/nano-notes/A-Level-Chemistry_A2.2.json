@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "A2 Physical Chemistry",
+  "chapter_id": "A2.2",
+  "chapter_name": "Further kinetics",
+  "note_data": {
+    "title": "Further kinetics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Rate equation** has the form rate = k[A]^m[B]^n where k is the rate constant and m, n are orders",
+      "**Order of reaction** can only be determined from experimental data, not from the stoichiometric equation",
+      "**Overall order** is the sum of all individual orders (m + n + ...)",
+      "**Rate constant k** has units that depend on the overall order: mol^(1-n) dm^(3(n-1)) s^-1",
+      "**Half-life** is constant for first-order reactions and equals ln2/k = 0.693/k",
+      "**Rate-determining step** is the slowest step in a multi-step mechanism",
+      "**Pre-equilibrium** occurs when fast reversible steps reach equilibrium before the rate-determining step",
+      "**Arrhenius equation** ln k = ln A - Ea/RT shows temperature dependence of rate constant",
+      "A **catalyst** provides an alternative pathway with lower activation energy but does not appear in the rate equation"
+    ],
+    "definitions": [
+      {
+        "term": "Rate equation",
+        "definition": "An equation that relates the rate of reaction to the concentrations of reactants raised to appropriate powers"
+      },
+      {
+        "term": "Order of reaction",
+        "definition": "The power to which the concentration of a reactant is raised in the rate equation"
+      },
+      {
+        "term": "Rate constant",
+        "definition": "The proportionality constant in the rate equation that is independent of concentration but depends on temperature"
+      },
+      {
+        "term": "Half-life",
+        "definition": "The time taken for the concentration of a reactant to fall to half its initial value"
+      },
+      {
+        "term": "Rate-determining step",
+        "definition": "The slowest step in a multi-step reaction mechanism that controls the overall rate of reaction"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the rate equation or order directly without explanation"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the observation plus the reason using kinetics principles"
+      },
+      {
+        "commandWord": "Deduce",
+        "instruction": "Use given data to work out order, then write rate equation"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Propose a mechanism consistent with the given rate equation"
+      }
+    ],
+    "modelAnswer": {
+      "question": "The reaction between compounds P and Q follows the rate equation: rate = k[P]²[Q]. Explain what happens to the rate when the concentration of P is doubled and the concentration of Q is halved.",
+      "marks": 3,
+      "answer": "When [P] is doubled, the rate increases by a factor of 2² = 4 because P is second order. When [Q] is halved, the rate decreases by a factor of 2 because Q is first order. Overall effect = 4 × 0.5 = 2, so the rate doubles.",
+      "markBreakdown": [
+        "Mark 1: Rate increases by factor of 4 when [P] doubled",
+        "Mark 2: Rate decreases by factor of 2 when [Q] halved",
+        "Mark 3: Overall rate doubles (factor of 2)"
+      ]
+    },
+    "commonMistakes": [
+      "Never deduce order from stoichiometric coefficients — order must come from experimental rate data",
+      "Students often forget that rate constant units change with overall order",
+      "Never say concentration affects rate constant — k is independent of concentration",
+      "Students confuse half-life formula: t₁/₂ = 0.693/k only applies to first-order reactions",
+      "Never include intermediates in the rate equation — only reactants that appear before or in the rate-determining step"
+    ],
+    "examinerTips": [
+      "Rate equations appear in every Paper 4 and frequently in Paper 2",
+      "Always check units of rate constant match the overall order",
+      "For mechanisms, species in rate equation must appear in or before rate-determining step",
+      "Use initial rates method or half-life data to determine order experimentally"
+    ],
+    "formulas": [
+      "rate = k[A]^m[B]^n",
+      "t₁/₂ = 0.693/k (first order only)",
+      "ln k = ln A - Ea/RT",
+      "k = Ae^(-Ea/RT)"
+    ],
+    "keyDiagramDescription": "Concentration-time graphs showing different orders: zero order (straight line), first order (exponential decay), second order (steeper curve). Also energy profile diagrams showing how catalysts lower activation energy without affecting overall enthalpy change."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:36:44.143Z",
+  "updated_at": "2026-04-06T04:36:44.143Z"
+}

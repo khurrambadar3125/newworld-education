@@ -1,0 +1,96 @@
+{
+  "subject": "English Language",
+  "subject_code": "1123",
+  "level": "O Level",
+  "theme": "Part 1: Reading",
+  "chapter_id": "1",
+  "chapter_name": "Reading skills and strategies",
+  "note_data": {
+    "title": "Reading skills and strategies",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Scanning** involves reading quickly to locate specific information such as names, dates, or figures",
+      "**Skimming** means reading rapidly to understand the general meaning and main ideas of a text",
+      "**Close reading** requires careful analysis of language, structure and meaning to understand implicit messages",
+      "**Narrative texts** tell a story with characters, setting, plot and may include dialogue",
+      "**Informative texts** provide facts, explanations or instructions using formal language and clear structure",
+      "**Persuasive texts** aim to convince readers through emotional language, rhetorical questions and strong opinions",
+      "**Inference** means working out meaning that is suggested but not directly stated in the text",
+      "**Context clues** help determine word meanings through surrounding words and phrases",
+      "**Topic sentences** introduce the main idea of each paragraph, usually appearing at the beginning",
+      "**Concluding sentences** summarize or reinforce the main point at the end of paragraphs or texts"
+    ],
+    "definitions": [
+      {
+        "term": "Scanning",
+        "definition": "Reading technique used to locate specific pieces of information quickly without reading every word"
+      },
+      {
+        "term": "Skimming",
+        "definition": "Reading technique used to gain an overall understanding of the main ideas by reading quickly through the text"
+      },
+      {
+        "term": "Inference",
+        "definition": "The process of drawing logical conclusions from evidence and information presented in a text"
+      },
+      {
+        "term": "Context clues",
+        "definition": "Words or phrases surrounding an unfamiliar word that help determine its meaning"
+      },
+      {
+        "term": "Explicit information",
+        "definition": "Information that is directly stated and clearly visible in the text"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Identify",
+        "instruction": "Pick out specific information from the text. Quote directly or use your own words."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this shows that'"
+      },
+      {
+        "commandWord": "Summarize",
+        "instruction": "Give main points only in your own words. Ignore minor details."
+      },
+      {
+        "commandWord": "Infer",
+        "instruction": "Work out meaning that is suggested but not directly stated. Use evidence from the text."
+      }
+    ],
+    "modelAnswer": {
+      "question": "Read the following passage about street food in Karachi and answer: What reading technique would be most suitable to find the opening hours of food stalls? Explain your answer. [3 marks]",
+      "marks": 3,
+      "answer": "Scanning would be the most suitable technique. This is because scanning involves looking quickly through the text to locate specific information such as times or numbers. When searching for opening hours, you do not need to read every word but can move rapidly through the text until you find the time-related information you need.",
+      "markBreakdown": [
+        "Mark 1: Identifies scanning as the technique",
+        "Mark 2: Explains that scanning locates specific information",
+        "Mark 3: Links explanation to finding opening hours/times"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse scanning with skimming - scanning finds specific details, skimming finds general meaning",
+      "Students often quote too much when summarizing instead of using their own words for main points only",
+      "Never ignore context clues when working out word meanings - always look at surrounding words",
+      "Students frequently state explicit information when asked to infer - inference requires reading between the lines",
+      "Never use the same reading technique for all purposes - match the technique to the specific reading task"
+    ],
+    "examinerTips": [
+      "Paper 2 Reading always tests different text types - practice identifying narrative, informative and persuasive features",
+      "Questions worth 3+ marks require explanation with evidence from the text",
+      "Time management is crucial - use skimming first to understand overall content before detailed reading",
+      "Look for command words carefully - 'state' needs less detail than 'explain'",
+      "Pakistani cultural contexts often appear - familiarity with local examples helps comprehension"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Text types comparison table showing narrative (story elements), informative (facts/explanations), and persuasive (opinions/arguments) with their key features and language characteristics"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:47:43.169Z",
+  "updated_at": "2026-04-06T03:47:43.171Z"
+}

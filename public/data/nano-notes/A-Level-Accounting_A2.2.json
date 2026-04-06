@@ -1,0 +1,98 @@
+{
+  "subject": "A Level Accounting",
+  "subject_code": "9706",
+  "level": "A Level",
+  "theme": "A2 Accounting",
+  "chapter_id": "A2.2",
+  "chapter_name": "Analysis and interpretation",
+  "note_data": {
+    "title": "Analysis and interpretation",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Profitability ratios** measure how efficiently a business generates profit from its resources and include gross profit margin, net profit margin, and return on capital employed",
+      "**Liquidity ratios** assess a business's ability to meet short-term debts and include current ratio and acid test ratio",
+      "**Efficiency ratios** measure how effectively a business manages its assets and include inventory turnover, receivables collection period, and payables payment period",
+      "**Gearing ratios** show the proportion of debt finance compared to equity finance and measure financial risk",
+      "**Investor ratios** help shareholders evaluate their investment and include earnings per share, dividend yield, and price earnings ratio",
+      "**Trend analysis** compares ratios over time to identify patterns and improvements or deterioration in performance",
+      "**Inter-firm comparison** compares ratios with similar businesses or industry averages to assess relative performance",
+      "**Limitations of ratio analysis** include historical data, different accounting policies, and inability to consider qualitative factors"
+    ],
+    "definitions": [
+      {
+        "term": "Gross profit margin",
+        "definition": "Shows gross profit as a percentage of revenue, calculated as (gross profit ÷ revenue) × 100"
+      },
+      {
+        "term": "Current ratio",
+        "definition": "Measures ability to pay short-term debts, calculated as current assets ÷ current liabilities"
+      },
+      {
+        "term": "Gearing ratio",
+        "definition": "Shows proportion of debt to total capital, calculated as (long-term debt ÷ capital employed) × 100"
+      },
+      {
+        "term": "Return on capital employed",
+        "definition": "Measures efficiency of capital usage, calculated as (operating profit ÷ capital employed) × 100"
+      },
+      {
+        "term": "Inventory turnover",
+        "definition": "Shows how many times inventory is sold per year, calculated as cost of sales ÷ average inventory"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show the formula, substitute figures, and give the final answer with units/percentage"
+      },
+      {
+        "commandWord": "Comment",
+        "instruction": "State what the ratio shows + make a judgment (good/poor/acceptable) + give a reason"
+      },
+      {
+        "commandWord": "Assess",
+        "instruction": "Calculate ratios + compare with previous years/industry + consider limitations + reach conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Calculate the current ratio for Karachi Traders and comment on the result. Current assets $45,000, Current liabilities $30,000.",
+      "marks": 3,
+      "answer": "Current ratio = Current assets ÷ Current liabilities = $45,000 ÷ $30,000 = 1.5:1. This shows the business can pay its short-term debts 1.5 times over. This is acceptable as it is close to the ideal ratio of 2:1, indicating good liquidity position.",
+      "markBreakdown": [
+        "Mark 1: Correct formula and calculation = 1.5:1",
+        "Mark 2: States what the ratio means",
+        "Mark 3: Makes judgment with justification"
+      ]
+    },
+    "commonMistakes": [
+      "Never calculate ratios to excessive decimal places — round to 1-2 decimal places or express as ratios",
+      "Students often comment on calculations without making clear judgments about performance",
+      "Never ignore the limitations of ratios when making assessments — always consider context",
+      "Students frequently mix up efficiency ratios — inventory days vs inventory turnover are different calculations",
+      "Never state that high gearing is automatically bad — consider the business type and interest rates"
+    ],
+    "examinerTips": [
+      "Ratio analysis appears in every Paper 2 — worth 15-20 marks typically",
+      "Always show your working clearly — method marks available even if final answer wrong",
+      "Use comparative words like 'better', 'worse', 'improved' when analyzing trends",
+      "Consider industry context — manufacturing vs service businesses have different ideal ratios"
+    ],
+    "formulas": [
+      "Gross profit margin = (Gross profit ÷ Revenue) × 100",
+      "Current ratio = Current assets ÷ Current liabilities",
+      "Acid test ratio = (Current assets - Inventory) ÷ Current liabilities",
+      "ROCE = (Operating profit ÷ Capital employed) × 100",
+      "Gearing ratio = (Long-term debt ÷ Capital employed) × 100",
+      "Inventory turnover = Cost of sales ÷ Average inventory",
+      "Receivables collection period = (Receivables ÷ Credit sales) × 365",
+      "Earnings per share = Profit after tax ÷ Number of ordinary shares"
+    ],
+    "keyDiagramDescription": "Create a ratio analysis framework showing four categories (Profitability, Liquidity, Efficiency, Gearing) with key ratios listed under each category and their interpretation guidelines"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:27:39.635Z",
+  "updated_at": "2026-04-06T05:27:39.635Z"
+}

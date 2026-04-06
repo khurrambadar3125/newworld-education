@@ -1,0 +1,91 @@
+{
+  "subject": "English Language",
+  "subject_code": "1123",
+  "level": "O Level",
+  "theme": "Part 2: Writing",
+  "chapter_id": "10",
+  "chapter_name": "Writing practice",
+  "note_data": {
+    "title": "Writing practice",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Plan your writing** before you start - spend 5-10 minutes organizing ideas and structure",
+      "Use **varied sentence structures** - simple, compound and complex sentences for sophisticated writing",
+      "Show **clear paragraphing** with topic sentences that introduce each new idea",
+      "Use **precise vocabulary** and avoid repetition by employing synonyms and alternative expressions",
+      "Maintain **consistent register** throughout - formal for articles, persuasive for speeches, personal for letters",
+      "Include **specific details and examples** to support your points and engage the reader",
+      "End with a **strong conclusion** that reinforces your main argument or leaves a lasting impression",
+      "**Proofread carefully** for spelling, punctuation and grammar errors in the final 5 minutes"
+    ],
+    "definitions": [
+      {
+        "term": "Register",
+        "definition": "The level of formality and style of language appropriate to the audience and purpose"
+      },
+      {
+        "term": "Discourse markers",
+        "definition": "Words and phrases that connect ideas and show relationships between sentences and paragraphs"
+      },
+      {
+        "term": "Rhetorical devices",
+        "definition": "Techniques such as repetition, rhetorical questions and emotive language used to persuade or engage readers"
+      },
+      {
+        "term": "Audience awareness",
+        "definition": "Writing in a way that considers the needs, interests and expectations of the intended readers"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Write",
+        "instruction": "Produce a complete piece of writing following the format and requirements specified in the question"
+      },
+      {
+        "commandWord": "Argue",
+        "instruction": "Present a clear viewpoint with supporting evidence and counter opposing views effectively"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Use sensory details and vivid language to create clear mental images for the reader"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give clear reasons and examples to help the reader understand your points fully"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Write an article for your school magazine arguing that students should be allowed to choose their own subjects. [25 marks]",
+      "marks": 25,
+      "answer": "**Student Choice: The Key to Educational Success**\n\nEducation should inspire, not suffocate. Yet many Pakistani students find themselves trapped in rigid curricula that ignore their passions and talents. It is time our schools embraced student choice in subject selection.\n\nFirstly, choice motivates learning. When students study subjects they genuinely enjoy, their engagement soars. A student passionate about computer science will excel in programming courses but may struggle in compulsory literature classes that hold no interest for them.\n\nMorely, individual talents vary dramatically. Some students possess natural mathematical abilities, while others excel in creative arts. Forcing all students through identical academic paths wastes these diverse gifts and creates unnecessary stress.\n\nCritics argue that students lack maturity to make wise choices. However, with proper guidance from teachers and parents, teenagers can make informed decisions about their academic futures. Many successful professionals discovered their calling through early subject choices.\n\nIn conclusion, educational freedom empowers students to pursue their strengths and interests. Our schools must trust students with this responsibility - their future success depends on it.",
+      "markBreakdown": [
+        "Marks 1-5: Clear argument with strong opening",
+        "Marks 6-10: Well-developed points with examples",
+        "Marks 11-15: Varied vocabulary and sentence structures",
+        "Marks 16-20: Appropriate register and discourse markers",
+        "Marks 21-25: Strong conclusion and overall coherence"
+      ]
+    },
+    "commonMistakes": [
+      "Never write without planning - this leads to rambling, unfocused responses that lose marks",
+      "Students often ignore the specified audience and write in inappropriate register for the task",
+      "Avoid using the same sentence patterns repeatedly - this makes writing monotonous and loses language marks",
+      "Never submit without proofreading - simple errors in spelling and punctuation cost valuable marks",
+      "Students frequently write too much description and not enough argument in persuasive tasks"
+    ],
+    "examinerTips": [
+      "Writing tasks appear in Paper 2 and are worth 50% of the total marks - practice different formats regularly",
+      "Always identify the format, audience and purpose before you begin writing",
+      "Use the first paragraph to grab attention and the last paragraph to leave a lasting impression",
+      "Include Pakistani examples and contexts to make your writing more authentic and engaging"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Writing process flowchart: Plan → Draft → Review → Edit → Proofread, with time allocations for each stage during the exam"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:51:34.386Z",
+  "updated_at": "2026-04-06T03:51:34.386Z"
+}

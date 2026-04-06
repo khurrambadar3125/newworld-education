@@ -1,0 +1,111 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "8",
+  "chapter_name": "Work, Power and Energy",
+  "note_data": {
+    "title": "Work, Power and Energy",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Work is done when a force acts on a body and the body moves through some distance in the direction of force",
+      "Work = Force × Distance (W = F × d) — only when force and displacement are in same direction",
+      "Energy is the capacity of a body to do work — measured in Joules",
+      "Kinetic Energy is the energy possessed by a body due to its motion (KE = ½mv²)",
+      "Potential Energy is the energy possessed by a body due to its position or state (PE = mgh)",
+      "Power is the rate of doing work or rate of transfer of energy (P = W/t)",
+      "Law of Conservation of Energy: Energy can neither be created nor destroyed, it can only be converted from one form to another",
+      "At Tarbela Dam, potential energy of water is converted to kinetic energy, then to electrical energy",
+      "SI unit of work and energy is Joule (J), SI unit of power is Watt (W)"
+    ],
+    "definitions": [
+      {
+        "term": "Work",
+        "definition": "Work is said to be done when a force acts on a body and the body moves through some distance in the direction of the force."
+      },
+      {
+        "term": "Energy",
+        "definition": "Energy is defined as the capacity of a body to do work."
+      },
+      {
+        "term": "Power",
+        "definition": "Power is defined as the rate of doing work or the rate of transfer of energy."
+      },
+      {
+        "term": "Kinetic Energy",
+        "definition": "The energy possessed by a body due to its motion is called kinetic energy."
+      },
+      {
+        "term": "Potential Energy",
+        "definition": "The energy possessed by a body due to its position or state is called potential energy."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define work and write its formula. What is its SI unit?",
+        "answer": "Work is done when a force acts on a body and the body moves through some distance in the direction of force. Formula: W = F × d. SI unit is Joule (J)."
+      },
+      {
+        "type": "long",
+        "question": "State and explain the law of conservation of energy with examples.",
+        "answer": "Law of Conservation of Energy states that energy can neither be created nor destroyed, it can only be converted from one form to another. Examples: (1) At Tarbela Dam, potential energy of water converts to kinetic energy then electrical energy (2) In a pendulum, kinetic energy converts to potential energy and vice versa (3) When we eat food, chemical energy converts to mechanical energy in our body."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The SI unit of power is:",
+        "options": {
+          "A": "Joule",
+          "B": "Watt",
+          "C": "Newton",
+          "D": "Pascal"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "A body of mass 2 kg moving with velocity 4 m/s has kinetic energy:",
+        "options": {
+          "A": "8 J",
+          "B": "16 J",
+          "C": "32 J",
+          "D": "4 J"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "When work is done against gravity, energy increases:",
+        "options": {
+          "A": "Kinetic",
+          "B": "Potential",
+          "C": "Heat",
+          "D": "Sound"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students forget that work is zero when force is perpendicular to displacement",
+      "Confusing kinetic energy formula (½mv²) with potential energy formula (mgh)",
+      "Not writing proper units — always write Joules for work/energy and Watts for power",
+      "Forgetting to square the velocity in kinetic energy calculations",
+      "Writing definitions without exact textbook words — BSEK expects word-for-word definitions"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and appears in short questions every year",
+      "Conservation of energy derivation and examples are frequently asked in long questions",
+      "Always draw energy conversion diagrams for Tarbela Dam — it appears regularly",
+      "Memorize all five definitions exactly as given in STBB textbook"
+    ],
+    "formulas": [
+      "Work: W = F × d",
+      "Kinetic Energy: KE = ½mv²",
+      "Potential Energy: PE = mgh",
+      "Power: P = W/t = F × v"
+    ],
+    "keyDiagram": "Energy transformations at Tarbela Dam showing: (1) Potential energy of water at height (2) Kinetic energy of falling water (3) Mechanical energy in turbines (4) Electrical energy output. Draw water reservoir, dam wall, turbines and power lines with energy labels."
+  },
+  "created_at": "2026-04-06T06:03:21.668Z"
+}

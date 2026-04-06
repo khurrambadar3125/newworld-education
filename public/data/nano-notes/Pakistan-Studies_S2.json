@@ -1,0 +1,91 @@
+{
+  "subject": "Pakistan Studies",
+  "subject_code": "2059",
+  "level": "O Level",
+  "theme": "Paper 1: History and Culture of Pakistan",
+  "chapter_id": "S2",
+  "chapter_name": "Section 2: The Emergence of Pakistan 1906-47",
+  "note_data": {
+    "title": "Section 2: The Emergence of Pakistan 1906-47",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**All India Muslim League** was founded in 1906 at Dhaka to protect Muslim political rights and interests",
+      "**Lucknow Pact** (1916) was an agreement between Congress and Muslim League for separate electorates and Hindu-Muslim cooperation",
+      "**Khilafat Movement** (1919-1924) was launched by Indian Muslims to protect the Ottoman Caliph, leading to Hindu-Muslim cooperation",
+      "**Jinnah's Fourteen Points** (1929) outlined Muslim demands including separate electorates, one-third representation in central legislature, and provincial autonomy",
+      "**Allama Iqbal's Presidential Address** (1930) at Allahabad proposed separate Muslim state in northwest India",
+      "**Lahore Resolution** (23 March 1940) demanded independent states for Muslim majority areas in northwest and eastern zones",
+      "**Direct Action Day** (16 August 1946) was called by Muslim League, leading to communal riots and proving separate electorates necessary",
+      "**3rd June Plan** (1947) by Lord Mountbatten announced partition of India into two dominions - India and Pakistan",
+      "**Two-Nation Theory** stated that Hindus and Muslims were separate nations with different religions, cultures, and ways of life"
+    ],
+    "definitions": [
+      {
+        "term": "Separate Electorates",
+        "definition": "A system where Muslims could only vote for Muslim candidates and Hindus for Hindu candidates in elections"
+      },
+      {
+        "term": "Two-Nation Theory",
+        "definition": "The belief that Hindus and Muslims were two separate nations based on different religions, cultures, languages, and ways of life"
+      },
+      {
+        "term": "Lahore Resolution",
+        "definition": "Resolution passed on 23 March 1940 demanding independent states for Muslim majority areas in northwestern and eastern zones of India"
+      },
+      {
+        "term": "Partition",
+        "definition": "The division of British India in 1947 into two independent dominions - India and Pakistan"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. Example: 'Muslim League was founded in 1906.'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give details about what happened. Use sequence words like 'First...Then...Finally...'"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give reasons using 'because', 'therefore', 'as a result'. Always link cause and effect."
+      },
+      {
+        "commandWord": "Why was X important",
+        "instruction": "Explain consequences and significance using 'This was important because...'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Why was the Lahore Resolution of 1940 important for the Pakistan movement? [4 marks]",
+      "marks": 4,
+      "answer": "The Lahore Resolution was the first formal demand by the Muslim League for independent states for Muslims. It marked a shift from seeking autonomy within India to demanding separate independent states. The Resolution united Muslims under one clear political goal and gave Jinnah and the Muslim League a definite objective to work towards. It became the foundation document for the creation of Pakistan in 1947.",
+      "markBreakdown": [
+        "Mark 1: First formal demand for independent Muslim states",
+        "Mark 2: Shift from autonomy to independence",
+        "Mark 3: United Muslims under one goal",
+        "Mark 4: Foundation for Pakistan's creation"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'Muslim League was founded to create Pakistan' - it was founded to protect Muslim rights, partition came later",
+      "Students often confuse Iqbal's 1930 address with Lahore Resolution 1940 - Iqbal proposed the idea, Lahore Resolution made formal demand",
+      "Don't say 'Hindus and Muslims fought' - explain specific political disagreements like separate electorates, representation, etc.",
+      "Never write 'Jinnah always wanted partition' - he initially supported Hindu-Muslim unity until 1937",
+      "Students mix up dates: 1906 Muslim League formation, 1930 Iqbal's address, 1940 Lahore Resolution, 1947 Partition"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every Paper 2 - focus on key events 1906, 1930, 1940, 1947",
+      "Always explain WHY events were important for Pakistan movement, not just describe what happened",
+      "Use specific dates and names - examiners reward factual accuracy",
+      "For 'importance' questions, focus on consequences and long-term impact"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Timeline showing key events from 1906 Muslim League formation → 1916 Lucknow Pact → 1930 Iqbal's Address → 1940 Lahore Resolution → 1947 Partition, with major figures (Jinnah, Iqbal) and their contributions marked"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:47:23.960Z",
+  "updated_at": "2026-04-05T20:47:23.960Z"
+}

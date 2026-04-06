@@ -1,0 +1,83 @@
+{
+  "subject": "English Language",
+  "subject_code": "1123",
+  "level": "O Level",
+  "theme": "Part 2: Writing",
+  "chapter_id": "8",
+  "chapter_name": "Descriptive writing",
+  "note_data": {
+    "title": "Descriptive writing",
+    "readTime": "8 min",
+    "keyPoints": [
+      "Use **vivid sensory details** to create clear mental images through sight, sound, smell, taste, and touch",
+      "Employ **specific vocabulary** rather than general words - 'crimson' instead of 'red', 'thunderous' instead of 'loud'",
+      "Create **atmosphere and mood** through careful word choice and imagery to engage the reader emotionally",
+      "Use **varied sentence structures** including simple, compound and complex sentences for rhythm and flow",
+      "Include **figurative language** such as similes, metaphors and personification to enhance descriptions",
+      "Show **clear structure** with logical paragraph organization and smooth transitions between ideas",
+      "Demonstrate **linguistic accuracy** with correct spelling, punctuation and grammar throughout",
+      "Select **relevant details** that contribute to the overall picture rather than listing everything visible"
+    ],
+    "definitions": [
+      {
+        "term": "Sensory details",
+        "definition": "Descriptions that appeal to the five senses to create vivid mental images for the reader"
+      },
+      {
+        "term": "Atmosphere",
+        "definition": "The mood or feeling created through descriptive language and imagery in a piece of writing"
+      },
+      {
+        "term": "Figurative language",
+        "definition": "Non-literal expressions including similes, metaphors and personification used to enhance descriptions"
+      },
+      {
+        "term": "Imagery",
+        "definition": "Vivid and descriptive language that creates mental pictures and appeals to the senses"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Describe",
+        "instruction": "Use sensory details and specific vocabulary to create clear mental images. Include atmosphere and mood."
+      },
+      {
+        "commandWord": "Write descriptively",
+        "instruction": "Focus on showing rather than telling. Use figurative language and varied sentence structures for effect."
+      }
+    ],
+    "modelAnswer": {
+      "question": "Write a descriptive piece about a busy marketplace in Pakistan. (20 marks)",
+      "marks": 20,
+      "answer": "The ancient bazaar of Anarkali pulsed with chaotic energy as dawn broke over Lahore. Crimson chilies cascaded from wooden stalls like drops of fire, their pungent aroma mingling with the sweet fragrance of jasmine garlands. Vendors' voices rose in a melodious chorus, haggling in rapid Punjabi while rickshaw bells chimed their metallic symphony. The cobblestones, worn smooth by countless footsteps, glistened with morning dew. Children darted between the maze of stalls like quicksilver, their laughter echoing off weathered brick walls. The marketplace breathed with ancient life, a living tapestry woven from sight, sound and tradition.",
+      "markBreakdown": [
+        "Marks 1-4: Vivid sensory details (sight, sound, smell, touch)",
+        "Marks 5-8: Specific vocabulary and figurative language",
+        "Marks 9-12: Atmosphere and mood creation",
+        "Marks 13-16: Varied sentence structures and organization",
+        "Marks 17-20: Linguistic accuracy and overall effectiveness"
+      ]
+    },
+    "commonMistakes": [
+      "Never write a simple list of features — always use descriptive language to bring scenes to life",
+      "Students often use vague adjectives like 'nice' or 'good' — use precise, specific vocabulary instead",
+      "Avoid telling the reader how to feel — create atmosphere through imagery and let readers form emotions",
+      "Don't overuse one type of imagery — balance all five senses for full effect",
+      "Never ignore paragraph structure — organize descriptions logically with clear topic sentences"
+    ],
+    "examinerTips": [
+      "Descriptive writing appears in Paper 2 Section B as one of three choices",
+      "Plan your description by listing sensory details before writing",
+      "Use the 5W technique: What can you see/hear/smell/feel/taste?",
+      "Pakistani settings often score well as they show cultural awareness and authenticity"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "No specific diagram required, but a sensory details web diagram (5 senses branching from central topic) helps planning"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:50:38.169Z",
+  "updated_at": "2026-04-06T03:50:38.169Z"
+}

@@ -1,0 +1,89 @@
+{
+  "subject": "History",
+  "subject_code": "2147",
+  "level": "O Level",
+  "theme": "Section 1: Core Content",
+  "chapter_id": "4",
+  "chapter_name": "Who was to blame for the Cold War?",
+  "note_data": {
+    "title": "Who was to blame for the Cold War?",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **Cold War** was caused by fundamental disagreements between the USA and USSR over political ideology and post-war control of Europe",
+      "**Stalin** broke the Yalta Agreement by imposing communist governments in Poland and Eastern Europe, creating Soviet satellite states",
+      "**Truman** introduced the Marshall Plan and Truman Doctrine to contain the spread of communism, which Stalin saw as economic imperialism",
+      "The **Iron Curtain** descended across Europe as Stalin created a buffer zone of communist states to protect the USSR from future invasion",
+      "**Soviet actions** in Poland, Czechoslovakia and Germany violated wartime agreements and demonstrated Stalin's expansionist intentions",
+      "**American actions** including atomic diplomacy and NATO formation were seen by Stalin as aggressive moves to encircle the Soviet Union",
+      "**Ideological differences** between capitalism and communism made peaceful coexistence difficult as each system threatened the other's survival",
+      "The **Berlin Blockade** (1948-49) demonstrated how both superpowers were willing to risk conflict to defend their spheres of influence"
+    ],
+    "definitions": [
+      {
+        "term": "Cold War",
+        "definition": "A period of tension and rivalry between the USA and USSR from 1945-1991, characterized by ideological conflict, arms race and proxy wars without direct military confrontation"
+      },
+      {
+        "term": "Iron Curtain",
+        "definition": "Churchill's term for the political and physical barrier dividing communist Eastern Europe from capitalist Western Europe after 1945"
+      },
+      {
+        "term": "Satellite states",
+        "definition": "Countries in Eastern Europe that were officially independent but actually controlled by the Soviet Union through communist governments"
+      },
+      {
+        "term": "Containment",
+        "definition": "Truman's policy to prevent the spread of communism by supporting countries threatened by Soviet expansion"
+      },
+      {
+        "term": "Marshall Plan",
+        "definition": "American economic aid program (1947) offering $13 billion to rebuild Western European economies and prevent communist takeover"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "How far do you agree",
+        "instruction": "Present both sides with evidence, then give a balanced conclusion weighing up the arguments"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why Stalin was blamed for starting the Cold War. [6 marks]",
+      "marks": 6,
+      "answer": "Stalin was blamed for starting the Cold War because he broke the Yalta Agreement by refusing to allow free elections in Poland and instead imposed a communist government. This violated Roosevelt's trust and showed Stalin was expanding Soviet control. Stalin was also blamed because he created satellite states across Eastern Europe including Czechoslovakia, Hungary and Bulgaria, which Truman saw as Soviet expansionism. Furthermore, Stalin was blamed because he rejected the Marshall Plan and prevented Eastern European countries from accepting American aid, which Americans viewed as aggressive and unreasonable behavior that divided Europe.",
+      "markBreakdown": [
+        "Mark 1: Poland/Yalta violation with explanation",
+        "Mark 2: Satellite states expansion with explanation",
+        "Mark 3: Marshall Plan rejection with explanation"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'Stalin started the Cold War' — always explain specific actions that contributed to tensions",
+      "Students often forget that both sides had legitimate security concerns and blame only one superpower",
+      "Don't confuse the Marshall Plan with the Truman Doctrine — they were separate but related policies",
+      "Avoid vague statements like 'they disagreed' — always specify what they disagreed about and why",
+      "Never ignore chronology — the sequence of events matters for understanding who reacted to whom"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 as a 'How far do you agree' question worth 10 marks",
+      "Always provide specific examples of both Soviet and American actions with dates where possible",
+      "For high marks, show understanding that both superpowers contributed to Cold War tensions",
+      "Link events together to show cause and effect rather than just listing isolated incidents"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Timeline showing key events 1945-1949: Yalta Agreement → Soviet control of Poland → Truman Doctrine → Marshall Plan → Berlin Blockade, with arrows showing action and reaction between USA and USSR"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:03:08.570Z",
+  "updated_at": "2026-04-06T04:03:08.570Z"
+}

@@ -1,0 +1,90 @@
+{
+  "subject": "A Level Mathematics",
+  "subject_code": "9709",
+  "level": "A Level",
+  "theme": "Mechanics",
+  "chapter_id": "M1",
+  "chapter_name": "Forces and equilibrium",
+  "note_data": {
+    "title": "Forces and equilibrium",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A particle is in **equilibrium** when the resultant of all forces acting on it is zero",
+      "The **weight** of an object acts vertically downward from the centre of gravity",
+      "**Resolve** forces into perpendicular components using trigonometry: F cos θ and F sin θ",
+      "The **normal reaction** acts perpendicular to the surface and away from the surface",
+      "**Friction** acts parallel to the surface and opposes motion or tendency to move",
+      "For equilibrium on an inclined plane: resolve parallel and perpendicular to the plane",
+      "Maximum static friction is F = μR where μ is coefficient of friction and R is normal reaction",
+      "When forces are in equilibrium: ΣFx = 0 and ΣFy = 0 in any two perpendicular directions"
+    ],
+    "definitions": [
+      {
+        "term": "Equilibrium",
+        "definition": "The state when the resultant of all forces acting on a particle is zero"
+      },
+      {
+        "term": "Normal reaction",
+        "definition": "The contact force exerted by a surface on an object, acting perpendicular to the surface"
+      },
+      {
+        "term": "Friction",
+        "definition": "The force that acts parallel to surfaces in contact and opposes motion or tendency to move"
+      },
+      {
+        "term": "Coefficient of friction",
+        "definition": "The ratio of the maximum frictional force to the normal reaction between two surfaces"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Show clear working with correct units in final answer"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Work towards the given answer step by step"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A particle of weight 50 N rests in equilibrium on a smooth inclined plane at 30° to the horizontal, supported by a string parallel to the plane. Find the tension in the string and the normal reaction.",
+      "marks": 4,
+      "answer": "Draw diagram showing weight, tension T up the plane, normal reaction R perpendicular to plane.\nResolve parallel to plane: T = 50 sin 30° = 50 × 0.5 = 25 N\nResolve perpendicular to plane: R = 50 cos 30° = 50 × (√3/2) = 25√3 N\nTherefore tension = 25 N and normal reaction = 25√3 N",
+      "markBreakdown": [
+        "Mark 1: Correct diagram with forces labelled",
+        "Mark 2: Resolving parallel to plane",
+        "Mark 3: Resolving perpendicular to plane",
+        "Mark 4: Both correct answers with units"
+      ]
+    },
+    "commonMistakes": [
+      "Never resolve weight as mg sin θ down the plane and mg cos θ into the plane without stating which direction is positive",
+      "Students often forget to draw a clear force diagram before attempting calculations",
+      "Confusing the angle: if plane is at θ to horizontal, component down plane is mg sin θ, not mg cos θ",
+      "Forgetting that normal reaction acts away from the surface, not into it",
+      "Writing friction = μR even when no friction exists (smooth surfaces)"
+    ],
+    "examinerTips": [
+      "Always draw a labelled diagram showing all forces for full marks",
+      "This topic appears in almost every Paper 4 mechanics section",
+      "State clearly which direction you are taking as positive before resolving",
+      "Check your trigonometry: down the slope uses sin, perpendicular to slope uses cos"
+    ],
+    "formulas": [
+      "F = ma",
+      "Maximum friction = μR",
+      "Weight = mg"
+    ],
+    "keyDiagramDescription": "Force diagram showing weight acting vertically downward, normal reaction perpendicular to inclined surface, tension/friction parallel to surface, with angle θ marked between incline and horizontal"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:55:40.408Z",
+  "updated_at": "2026-04-06T04:55:40.408Z"
+}

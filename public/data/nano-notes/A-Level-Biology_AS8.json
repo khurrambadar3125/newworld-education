@@ -1,0 +1,90 @@
+{
+  "subject": "A Level Biology",
+  "subject_code": "9700",
+  "level": "A Level",
+  "theme": "AS Biology",
+  "chapter_id": "AS8",
+  "chapter_name": "Transport in mammals",
+  "note_data": {
+    "title": "Transport in mammals",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Circulatory system** is closed with blood contained in vessels at all times",
+      "**Double circulation** consists of pulmonary circulation (heart to lungs) and systemic circulation (heart to body)",
+      "**Heart** has four chambers: two atria receive blood, two ventricles pump blood out",
+      "**Arteries** carry blood away from heart, have thick muscular walls and narrow lumen",
+      "**Veins** carry blood to heart, have thin walls, wide lumen and valves to prevent backflow",
+      "**Capillaries** are one cell thick for efficient exchange of materials by diffusion",
+      "**Haemoglobin** has high affinity for oxygen in lungs and releases oxygen in tissues",
+      "**Cardiac cycle** involves systole (contraction) and diastole (relaxation) phases",
+      "**Blood pressure** is highest in arteries and lowest in veins due to distance from heart"
+    ],
+    "definitions": [
+      {
+        "term": "Double circulation",
+        "definition": "Blood passes through the heart twice in one complete circuit of the body"
+      },
+      {
+        "term": "Systole",
+        "definition": "Contraction phase of the cardiac cycle when blood is pumped out of the heart"
+      },
+      {
+        "term": "Haemoglobin",
+        "definition": "Red protein in red blood cells that combines reversibly with oxygen to transport it"
+      },
+      {
+        "term": "Tissue fluid",
+        "definition": "Fluid formed from blood plasma that bathes cells and allows exchange of materials"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of structure or process in logical sequence"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between two structures"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why the wall of the left ventricle is thicker than the wall of the right ventricle. [3]",
+      "marks": 3,
+      "answer": "The left ventricle pumps blood to the whole body / systemic circulation, while the right ventricle pumps blood only to the lungs / pulmonary circulation. The left ventricle needs to generate higher pressure to pump blood around the entire body. Thicker muscle wall allows stronger contractions to create this higher pressure.",
+      "markBreakdown": [
+        "Mark 1: Left ventricle pumps to body/systemic, right to lungs/pulmonary",
+        "Mark 2: Left ventricle needs to generate higher pressure",
+        "Mark 3: Thicker wall allows stronger contractions"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'oxygenated blood in arteries' — pulmonary artery carries deoxygenated blood",
+      "Students confuse systole with diastole — systole is contraction, diastole is relaxation",
+      "Don't say veins have 'no muscle' — they have thin muscle walls, not absent",
+      "Never write 'blood cells carry oxygen' — it is haemoglobin in red blood cells",
+      "Avoid saying 'heart pumps blood' without specifying which chamber pumps where"
+    ],
+    "examinerTips": [
+      "Transport questions appear in every Paper 2 - learn heart structure diagram thoroughly",
+      "Always state which chamber does what - left ventricle to body, right ventricle to lungs",
+      "For circulation questions, trace the path: body → vena cava → right atrium → right ventricle → pulmonary artery → lungs",
+      "Link structure to function in all vessel questions - thick walls in arteries for high pressure"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Heart structure showing four chambers (RA, LA, RV, LV), major vessels (aorta, vena cavae, pulmonary artery/vein), and valves. Label direction of blood flow and indicate oxygenated vs deoxygenated blood."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:02:49.967Z",
+  "updated_at": "2026-04-06T05:02:49.967Z"
+}

@@ -1,0 +1,97 @@
+{
+  "subject": "Commerce",
+  "subject_code": "7100",
+  "level": "O Level",
+  "theme": "Commerce and Trade",
+  "chapter_id": "2",
+  "chapter_name": "Commercial Operations",
+  "note_data": {
+    "title": "Commercial Operations",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Retail trade** involves selling goods directly to the final consumer in small quantities for personal use",
+      "**Wholesale trade** involves buying goods in large quantities from manufacturers and selling them to retailers in smaller quantities",
+      "Retailers provide services such as **convenience of location**, product display, after-sales service, and credit facilities to consumers",
+      "Wholesalers provide services including **bulk breaking**, storage, transport, market information, and credit to both manufacturers and retailers",
+      "**Chain of distribution** shows the flow of goods from manufacturer → wholesaler → retailer → consumer",
+      "Types of retailers include **independent retailers** (single shop ownership), multiple shops (chain stores), supermarkets, and department stores",
+      "**E-commerce** allows businesses to sell products online, reducing costs and reaching wider markets globally",
+      "Wholesalers reduce costs for manufacturers by providing **storage facilities** and reducing the number of transactions needed",
+      "**Direct selling** occurs when manufacturers sell directly to consumers, eliminating intermediaries"
+    ],
+    "definitions": [
+      {
+        "term": "Retail trade",
+        "definition": "The sale of goods in small quantities directly to the final consumer for personal use"
+      },
+      {
+        "term": "Wholesale trade",
+        "definition": "The purchase of goods in large quantities from manufacturers and their sale in smaller quantities to retailers"
+      },
+      {
+        "term": "Chain of distribution",
+        "definition": "The route taken by goods from the manufacturer to the final consumer"
+      },
+      {
+        "term": "Multiple shops",
+        "definition": "A number of retail outlets selling similar goods that are owned by the same company"
+      },
+      {
+        "term": "E-commerce",
+        "definition": "The buying and selling of goods and services using the internet"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Identify",
+        "instruction": "Name or list the specific types, features or functions asked for"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the advantages and disadvantages with detailed explanations"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain three services provided by wholesalers to retailers. [6]",
+      "marks": 6,
+      "answer": "Bulk breaking - wholesalers buy goods in large quantities from manufacturers and sell them in smaller quantities that retailers can afford and manage. Storage - wholesalers provide warehouse facilities to store goods, reducing storage costs for retailers who may have limited space. Credit facilities - wholesalers allow retailers to buy goods on credit and pay later, improving the retailer's cash flow and reducing financial pressure.",
+      "markBreakdown": [
+        "Mark 1: Bulk breaking identified",
+        "Mark 2: Explanation of bulk breaking",
+        "Mark 3: Storage identified",
+        "Mark 4: Explanation of storage",
+        "Mark 5: Credit facilities identified",
+        "Mark 6: Explanation of credit facilities"
+      ]
+    },
+    "commonMistakes": [
+      "Never say wholesalers sell to consumers - they only sell to retailers or other businesses",
+      "Students often confuse multiple shops with department stores - multiple shops sell similar goods, department stores sell different types of goods in separate departments",
+      "Don't say e-commerce is just buying online - it includes both buying AND selling using the internet",
+      "Never say retailers buy in large quantities - they buy in small quantities suitable for resale to consumers",
+      "Students often forget to explain HOW the service benefits the business - always give the reason why it helps"
+    ],
+    "examinerTips": [
+      "Chain of distribution questions appear frequently - memorize the exact sequence: manufacturer → wholesaler → retailer → consumer",
+      "Always give specific examples when explaining services - e.g., 'storage reduces costs because retailers don't need large warehouses'",
+      "Questions often ask for advantages AND disadvantages - make sure to address both parts equally",
+      "Use Pakistani examples like Daraz for e-commerce or local wholesale markets in Karachi for context"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Chain of Distribution diagram showing the flow: Manufacturer → Wholesaler → Retailer → Consumer, with arrows indicating direction of goods flow and services provided at each stage"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:11:09.163Z",
+  "updated_at": "2026-04-06T04:11:09.163Z"
+}

@@ -1,0 +1,97 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "General Physics",
+  "chapter_id": "5",
+  "chapter_name": "Forces and matter",
+  "note_data": {
+    "title": "Forces and matter",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **extension** of a spring is directly proportional to the applied force (provided the elastic limit is not exceeded)",
+      "**Hooke's law** states that force is proportional to extension: F = kx",
+      "The **spring constant** (k) is the force per unit extension and has units N/m",
+      "Beyond the **elastic limit**, the spring will not return to its original length when the force is removed",
+      "**Pressure** is force per unit area and is measured in pascals (Pa) or N/m²",
+      "Pressure in liquids increases with **depth** because of the weight of liquid above",
+      "The **limit of proportionality** is the point beyond which Hooke's law no longer applies",
+      "A stiffer spring has a **larger spring constant** and extends less for the same applied force"
+    ],
+    "definitions": [
+      {
+        "term": "Extension",
+        "definition": "The increase in length of a spring or wire when a force is applied"
+      },
+      {
+        "term": "Spring constant",
+        "definition": "The force per unit extension of a spring, measured in N/m"
+      },
+      {
+        "term": "Pressure",
+        "definition": "The force acting per unit area, measured in pascals (Pa)"
+      },
+      {
+        "term": "Elastic limit",
+        "definition": "The maximum force that can be applied to a spring before it becomes permanently deformed"
+      },
+      {
+        "term": "Hooke's law",
+        "definition": "The extension of a spring is directly proportional to the applied force, provided the elastic limit is not exceeded"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly, include units in final answer"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Say what happens step by step, use data from graphs/tables"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A spring extends by 5.0 cm when a force of 10 N is applied. Calculate the spring constant and determine the extension when a force of 25 N is applied.",
+      "marks": 3,
+      "answer": "Spring constant k = F/x = 10 N / 0.05 m = 200 N/m. When F = 25 N, extension x = F/k = 25 N / 200 N/m = 0.125 m = 12.5 cm",
+      "markBreakdown": [
+        "Mark 1: k = F/x = 200 N/m",
+        "Mark 2: Correct substitution x = F/k",
+        "Mark 3: Final answer 12.5 cm with unit"
+      ]
+    },
+    "commonMistakes": [
+      "Never forget to convert cm to metres when calculating - always use SI base units",
+      "Students often confuse elastic limit with limit of proportionality - elastic limit is about permanent deformation",
+      "Don't say 'pressure increases because of more water' - say 'pressure increases with depth due to the weight of liquid above'",
+      "Never use F = kx beyond the elastic limit - Hooke's law only applies within the elastic region",
+      "Students forget that spring constant has units N/m, not just a number"
+    ],
+    "examinerTips": [
+      "Force-extension graphs appear frequently - know the shape and key points",
+      "Always show clear working for pressure and spring calculations",
+      "Draw neat, labelled diagrams for spring experiments",
+      "Remember to state 'provided elastic limit not exceeded' when mentioning Hooke's law"
+    ],
+    "formulas": [
+      "F = kx",
+      "pressure = force/area",
+      "p = F/A"
+    ],
+    "keyDiagramDescription": "Force-extension graph showing linear region (Hooke's law), limit of proportionality, elastic limit, and plastic deformation region. Spring experiment setup with masses, ruler, and clamp stand."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:15:28.473Z",
+  "updated_at": "2026-04-05T21:15:28.473Z"
+}

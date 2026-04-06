@@ -1,0 +1,112 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "10",
+  "chapter_name": "Properties of Matter",
+  "note_data": {
+    "title": "Properties of Matter",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Matter exists in three states: solid, liquid and gas based on molecular arrangement and intermolecular forces",
+      "Density is the mass per unit volume of a substance and varies with temperature and pressure",
+      "Archimedes' principle states that upthrust equals the weight of displaced fluid",
+      "Surface tension is due to cohesive forces between liquid molecules at the surface",
+      "Viscosity is the property of fluids to resist flow due to internal friction between layers",
+      "Hooke's law states that extension is directly proportional to applied force within elastic limit",
+      "Young's modulus measures the stiffness of a solid material under tensile stress",
+      "Pascal's principle states that pressure applied to confined fluid is transmitted equally in all directions"
+    ],
+    "definitions": [
+      {
+        "term": "Density",
+        "definition": "The mass per unit volume of a substance is called density. Its SI unit is kg/m³."
+      },
+      {
+        "term": "Surface Tension",
+        "definition": "The property of liquid surface to behave like a stretched elastic membrane is called surface tension."
+      },
+      {
+        "term": "Viscosity",
+        "definition": "The property of a fluid by virtue of which it opposes the relative motion between its different layers is called viscosity."
+      },
+      {
+        "term": "Hooke's Law",
+        "definition": "Within elastic limit, the extension produced in a wire is directly proportional to the applied force."
+      },
+      {
+        "term": "Young's Modulus",
+        "definition": "The ratio of tensile stress to tensile strain within elastic limit is called Young's modulus."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define surface tension and give two examples.",
+        "answer": "Surface tension is the property of liquid surface to behave like a stretched elastic membrane. Examples: (1) Water strider walking on water (2) Formation of water droplets"
+      },
+      {
+        "type": "long",
+        "question": "State and explain Archimedes' principle. Derive the formula for upthrust.",
+        "answer": "Archimedes' principle: When a body is wholly or partially immersed in a fluid, it experiences an upward force called upthrust which is equal to the weight of displaced fluid. Derivation: Consider a body of volume V immersed in fluid of density ρ. Volume of displaced fluid = V, Mass of displaced fluid = ρV, Weight of displaced fluid = ρVg. Therefore, Upthrust = ρVg. This upward force acts through the center of gravity of displaced fluid."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The SI unit of surface tension is:",
+        "options": {
+          "A": "N/m",
+          "B": "N/m²",
+          "C": "kg/m",
+          "D": "Pa"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "When a body floats in water, the upthrust is:",
+        "options": {
+          "A": "Less than weight",
+          "B": "Greater than weight",
+          "C": "Equal to weight",
+          "D": "Zero"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Young's modulus has the same unit as:",
+        "options": {
+          "A": "Force",
+          "B": "Pressure",
+          "C": "Energy",
+          "D": "Power"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse density with specific gravity - remember density has units kg/m³",
+      "Always write Hooke's law as F ∝ x (within elastic limit) - don't forget the condition",
+      "In Archimedes' principle, upthrust equals weight of displaced fluid, not weight of the body",
+      "Surface tension acts along the surface, not perpendicular to it",
+      "Young's modulus formula: E = stress/strain, not strain/stress"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and always one short question on definitions in BSEK papers",
+      "Archimedes' principle derivation appears every 2-3 years as a long question",
+      "Draw neat diagrams for surface tension and Young's modulus experiments",
+      "Memorize exact definitions word-by-word as given in STBB textbook"
+    ],
+    "formulas": [
+      "Density: ρ = m/V",
+      "Hooke's Law: F = kx",
+      "Young's Modulus: E = (F/A)/(ΔL/L)",
+      "Upthrust: U = ρVg",
+      "Stress: σ = F/A",
+      "Strain: ε = ΔL/L"
+    ],
+    "keyDiagram": "Young's modulus experiment setup showing a wire fixed at one end with weights attached at the other end, including micrometer screw gauge for measuring extension. Also draw molecular arrangement diagrams for solids, liquids and gases showing intermolecular spacing."
+  },
+  "created_at": "2026-04-06T06:04:06.090Z"
+}

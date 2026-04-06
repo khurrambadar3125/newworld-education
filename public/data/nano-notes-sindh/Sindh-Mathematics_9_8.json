@@ -1,0 +1,107 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "8",
+  "chapter_name": "Quadratic Equation",
+  "note_data": {
+    "title": "Quadratic Equation",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "A quadratic equation is an equation of the form ax² + bx + c = 0, where a ≠ 0",
+      "The general form ax² + bx + c = 0 has three methods of solution: factorization, completing the square, and quadratic formula",
+      "The discriminant Δ = b² - 4ac determines the nature of roots",
+      "If Δ > 0, roots are real and distinct; if Δ = 0, roots are real and equal; if Δ < 0, roots are imaginary",
+      "Sum of roots = -b/a and Product of roots = c/a",
+      "Completing the square method converts ax² + bx + c = 0 into perfect square form",
+      "Quadratic formula: x = (-b ± √(b² - 4ac))/2a gives roots directly",
+      "Word problems involving quadratic equations often relate to area, age, and number problems"
+    ],
+    "definitions": [
+      {
+        "term": "Quadratic Equation",
+        "definition": "An equation of the form ax² + bx + c = 0, where a, b, c are real numbers and a ≠ 0, is called a quadratic equation in one variable x."
+      },
+      {
+        "term": "Discriminant",
+        "definition": "The expression b² - 4ac under the square root in the quadratic formula is called the discriminant of the quadratic equation ax² + bx + c = 0."
+      },
+      {
+        "term": "Roots of Quadratic Equation",
+        "definition": "The values of x which satisfy the quadratic equation ax² + bx + c = 0 are called the roots or solutions of the equation."
+      },
+      {
+        "term": "Completing the Square",
+        "definition": "The method of solving quadratic equation by converting it into perfect square form is called completing the square method."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Find the discriminant of the equation 2x² - 5x + 3 = 0 and determine the nature of its roots.",
+        "answer": "Given: 2x² - 5x + 3 = 0. Here a = 2, b = -5, c = 3. Discriminant Δ = b² - 4ac = (-5)² - 4(2)(3) = 25 - 24 = 1. Since Δ > 0, roots are real and distinct."
+      },
+      {
+        "type": "long",
+        "question": "Solve the equation x² - 6x + 8 = 0 by completing the square method and verify your answer.",
+        "answer": "Given: x² - 6x + 8 = 0. Step 1: x² - 6x = -8. Step 2: Add (6/2)² = 9 to both sides: x² - 6x + 9 = -8 + 9. Step 3: (x - 3)² = 1. Step 4: x - 3 = ±1. Step 5: x = 3 ± 1, so x = 4 or x = 2. Verification: For x = 4: 16 - 24 + 8 = 0 ✓. For x = 2: 4 - 12 + 8 = 0 ✓."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The discriminant of the equation 3x² + 4x + 1 = 0 is:",
+        "options": {
+          "A": "4",
+          "B": "16",
+          "C": "28",
+          "D": "12"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "If the roots of equation x² - px + q = 0 are 2 and 3, then the values of p and q are:",
+        "options": {
+          "A": "p = 5, q = 6",
+          "B": "p = 6, q = 5",
+          "C": "p = -5, q = -6",
+          "D": "p = -6, q = -5"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "The nature of roots of equation x² + 4x + 4 = 0 is:",
+        "options": {
+          "A": "Real and distinct",
+          "B": "Real and equal",
+          "C": "Imaginary",
+          "D": "Cannot be determined"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students forget to check if a ≠ 0 when identifying quadratic equations",
+      "Wrong calculation of discriminant - especially sign errors with negative coefficients",
+      "Not writing ± symbol when taking square root in completing the square method",
+      "Forgetting to verify answers by substituting back into original equation",
+      "Confusing sum and product of roots formulas (writing -c/a instead of c/a for product)"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short + 1 long question in every BSEK paper",
+      "Always write the discriminant formula before calculating nature of roots",
+      "Practice word problems involving age and area - they appear frequently in long questions",
+      "Remember to show all steps in completing the square method for full marks"
+    ],
+    "formulas": [
+      "ax² + bx + c = 0 (Standard form)",
+      "x = (-b ± √(b² - 4ac))/2a (Quadratic formula)",
+      "Δ = b² - 4ac (Discriminant)",
+      "Sum of roots = -b/a",
+      "Product of roots = c/a"
+    ],
+    "keyDiagram": "Nature of roots diagram showing three cases: Δ > 0 (two distinct real roots on number line), Δ = 0 (one repeated real root), Δ < 0 (no real roots, complex conjugate pair)"
+  },
+  "created_at": "2026-04-06T06:22:46.570Z"
+}

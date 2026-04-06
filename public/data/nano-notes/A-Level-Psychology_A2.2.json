@@ -1,0 +1,97 @@
+{
+  "subject": "A Level Psychology",
+  "subject_code": "9990",
+  "level": "A Level",
+  "theme": "A2 Psychology",
+  "chapter_id": "A2.2",
+  "chapter_name": "Psychology and consumer behaviour",
+  "note_data": {
+    "title": "Psychology and consumer behaviour",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Consumer behaviour** is influenced by psychological factors including perception, motivation, learning and attitudes towards products",
+      "**Classical conditioning** in advertising works by pairing products with positive stimuli to create favourable emotional responses",
+      "**Operant conditioning** uses rewards (loyalty points, discounts) to reinforce purchasing behaviour and increase repeat buying",
+      "**Social learning theory** explains how consumers imitate behaviours seen in advertisements, particularly celebrity endorsements",
+      "**Cognitive dissonance** occurs when consumers experience conflict between their beliefs and purchasing decisions, leading to post-purchase rationalization",
+      "**Persuasion techniques** in advertising include the elaboration likelihood model with central and peripheral routes to attitude change",
+      "**Brand loyalty** develops through repeated positive experiences and emotional attachment to brand identity and values",
+      "**Subliminal advertising** involves presenting stimuli below the threshold of conscious awareness to influence consumer choices",
+      "**Social proof** and **conformity** influence purchasing decisions as consumers follow others' behaviours and recommendations"
+    ],
+    "definitions": [
+      {
+        "term": "Consumer behaviour",
+        "definition": "The study of how individuals, groups and organizations select, buy, use and dispose of goods and services to satisfy their needs and wants"
+      },
+      {
+        "term": "Classical conditioning",
+        "definition": "A learning process where a neutral stimulus becomes associated with a naturally occurring stimulus to produce a conditioned response"
+      },
+      {
+        "term": "Cognitive dissonance",
+        "definition": "The mental discomfort experienced when holding contradictory beliefs, values or attitudes simultaneously"
+      },
+      {
+        "term": "Brand loyalty",
+        "definition": "A consumer's commitment to repurchase or continue using a brand, demonstrated by repeated buying behaviour"
+      },
+      {
+        "term": "Subliminal advertising",
+        "definition": "Marketing messages presented below the threshold of conscious perception to influence consumer behaviour without awareness"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of psychological processes involved in consumer behaviour"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Give strengths and weaknesses with evidence, conclude with overall judgement"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how classical conditioning can be used in advertising to influence consumer behaviour. [6 marks]",
+      "marks": 6,
+      "answer": "Classical conditioning pairs a neutral stimulus (product) with an unconditioned stimulus that naturally produces a positive response. For example, a perfume advertisement might pair the product with attractive models or romantic music. Initially, the perfume is a neutral stimulus that produces no emotional response. The attractive models/music are unconditioned stimuli that naturally produce positive feelings (unconditioned response). Through repeated pairing in advertisements, the perfume becomes a conditioned stimulus that produces positive feelings (conditioned response) even when seen alone. This conditioning leads consumers to associate the product with positive emotions, making them more likely to purchase it. The effectiveness depends on repeated exposure and the strength of the positive associations created.",
+      "markBreakdown": [
+        "Mark 1: Definition of classical conditioning",
+        "Mark 2: Identification of neutral stimulus (product)",
+        "Mark 3: Identification of unconditioned stimulus (positive element)",
+        "Mark 4: Explanation of pairing process",
+        "Mark 5: Description of conditioned response",
+        "Mark 6: Link to purchasing behaviour"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse classical and operant conditioning - classical uses association, operant uses consequences",
+      "Students often forget to explain HOW conditioning leads to actual purchasing behaviour",
+      "Avoid saying subliminal advertising is 'proven effective' - research evidence is mixed and controversial",
+      "Don't just describe advertising techniques - always link back to psychological theory",
+      "Students often give examples without explaining the psychological mechanism involved"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 application questions",
+      "Always use specific advertising examples to illustrate psychological concepts",
+      "Link consumer behaviour to core learning theories from AS level",
+      "Evaluation questions often ask about ethics of psychological manipulation in advertising"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Elaboration Likelihood Model diagram showing central route (high involvement, logical processing) and peripheral route (low involvement, emotional/superficial cues) to persuasion, with factors affecting which route consumers take"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:22:49.650Z",
+  "updated_at": "2026-04-06T05:22:49.650Z"
+}

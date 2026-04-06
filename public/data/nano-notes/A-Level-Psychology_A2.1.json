@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Psychology",
+  "subject_code": "9990",
+  "level": "A Level",
+  "theme": "A2 Psychology",
+  "chapter_id": "A2.1",
+  "chapter_name": "Psychology and abnormality",
+  "note_data": {
+    "title": "Psychology and abnormality",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Abnormality** can be defined using statistical infrequency, deviation from social norms, failure to function adequately, or deviation from ideal mental health",
+      "**Statistical infrequency** defines abnormal behaviour as occurring in less than 5% of the population on a normal distribution curve",
+      "**Deviation from social norms** defines abnormality as behaviour that violates society's accepted standards and expectations",
+      "**DSM-5** is a classification system that uses categorical diagnosis with specific criteria for mental disorders",
+      "**Schizophrenia** is characterized by positive symptoms (hallucinations, delusions) and negative symptoms (avolition, speech poverty)",
+      "**Major depressive disorder** requires at least 5 symptoms including depressed mood or anhedonia for minimum 2 weeks",
+      "**Cognitive Behavioural Therapy (CBT)** treats abnormality by changing negative thought patterns and maladaptive behaviours",
+      "**Drug therapy** for schizophrenia uses antipsychotics that block dopamine receptors to reduce positive symptoms",
+      "**Reliability** in diagnosis means consistency of results across time and between different clinicians",
+      "**Validity** in diagnosis means the classification system measures what it claims to measure"
+    ],
+    "definitions": [
+      {
+        "term": "Abnormality",
+        "definition": "Behaviour that deviates from statistical norms, social norms, interferes with daily functioning, or represents absence of positive mental health characteristics"
+      },
+      {
+        "term": "Schizophrenia",
+        "definition": "A mental disorder characterized by disruptions in thought processes, perceptions, emotional responsiveness and social interactions"
+      },
+      {
+        "term": "Major depressive disorder",
+        "definition": "A mood disorder involving persistent feelings of sadness, hopelessness and loss of interest in activities for at least two weeks"
+      },
+      {
+        "term": "Cognitive Behavioural Therapy",
+        "definition": "A psychological treatment that focuses on changing negative thought patterns and behaviours that maintain mental disorders"
+      },
+      {
+        "term": "DSM-5",
+        "definition": "Diagnostic and Statistical Manual of Mental Disorders, fifth edition - a classification system providing criteria for diagnosing mental disorders"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Give strengths AND weaknesses with evidence/examples"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Identify similarities AND differences between concepts"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two limitations of using deviation from social norms to define abnormality. [4 marks]",
+      "marks": 4,
+      "answer": "One limitation is cultural relativism because what is considered normal varies between cultures, for example hearing voices may be seen as spiritual communication in some Pakistani communities but abnormal in Western cultures. Another limitation is that social norms change over time because behaviours once considered abnormal may become acceptable, for example homosexuality was classified as a mental disorder but is now accepted in many societies.",
+      "markBreakdown": [
+        "Mark 1: Cultural relativism identified",
+        "Mark 2: Example of cultural difference given",
+        "Mark 3: Historical context limitation identified",
+        "Mark 4: Example of changing norms provided"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'mental illness' without defining it - always use specific diagnostic criteria",
+      "Students often confuse positive and negative symptoms of schizophrenia - positive symptoms ADD experiences, negative symptoms REMOVE normal functioning",
+      "Don't just list symptoms - always explain how they meet diagnostic criteria",
+      "Never say CBT 'cures' disorders - it 'treats' or 'reduces symptoms'",
+      "Students confuse reliability with validity - reliability is consistency, validity is accuracy"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 2 - focus on definitions of abnormality",
+      "Always give specific examples when evaluating cultural differences",
+      "Use real diagnostic criteria from DSM-5 for full marks",
+      "Compare biological vs psychological treatments for evaluation marks"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Normal distribution curve showing statistical infrequency with 95% of population in middle section and 2.5% at each extreme representing abnormal behaviour"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:22:25.454Z",
+  "updated_at": "2026-04-06T05:22:25.454Z"
+}

@@ -1,0 +1,109 @@
+{
+  "subject": "Pakistan Studies",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "7",
+  "chapter_name": "The Population of Pakistan",
+  "note_data": {
+    "title": "The Population of Pakistan",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Pakistan's population is approximately 220 million, making it the 5th most populous country in the world",
+      "Population distribution is uneven — Punjab has 53% of total population, followed by Sindh (23%), KPK (13%), and Balochistan (5%)",
+      "Population density in Pakistan is 287 persons per square kilometer",
+      "Annual population growth rate is 2.4%, which is considered high compared to developed countries",
+      "Rural population constitutes 63% while urban population is 37% of total population",
+      "Major cities include Karachi (16 million), Lahore (11 million), Faisalabad (3.2 million), and Rawalpindi (2.1 million)",
+      "Population pyramid shows a broad base indicating high birth rate and large proportion of young people",
+      "Life expectancy in Pakistan is 67 years for males and 69 years for females",
+      "Literacy rate is 60% with male literacy at 71% and female literacy at 48%"
+    ],
+    "definitions": [
+      {
+        "term": "Population",
+        "definition": "The total number of people living in a particular area at a given time"
+      },
+      {
+        "term": "Population Density",
+        "definition": "The average number of people living per unit area, usually calculated per square kilometer"
+      },
+      {
+        "term": "Population Distribution",
+        "definition": "The way in which people are spread across the earth's surface"
+      },
+      {
+        "term": "Birth Rate",
+        "definition": "The number of live births per thousand people in one year"
+      },
+      {
+        "term": "Death Rate",
+        "definition": "The number of deaths per thousand people in one year"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define population density and calculate it for Pakistan.",
+        "answer": "Population density is the average number of people living per unit area. Pakistan's population density = Total Population ÷ Total Area = 220 million ÷ 796,096 km² = 287 persons per km²"
+      },
+      {
+        "type": "long",
+        "question": "Discuss the factors affecting population distribution in Pakistan.",
+        "answer": "Physical factors: Climate (moderate climate in Punjab and Sindh attracts more people), Relief (plains of Indus valley are densely populated), Water availability (areas near rivers are more populated). Human factors: Economic opportunities (industrial cities like Karachi attract people), Transportation (areas with good transport links are more populated), Government policies (development projects increase population), Agricultural activities (fertile areas of Punjab attract farmers). Historical factors also play role in settlement patterns."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "What is the approximate population of Pakistan?",
+        "options": {
+          "A": "200 million",
+          "B": "220 million",
+          "C": "250 million",
+          "D": "180 million"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which province has the highest population in Pakistan?",
+        "options": {
+          "A": "Sindh",
+          "B": "KPK",
+          "C": "Punjab",
+          "D": "Balochistan"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Pakistan's annual population growth rate is:",
+        "options": {
+          "A": "1.8%",
+          "B": "2.4%",
+          "C": "3.1%",
+          "D": "1.5%"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse population density with population distribution",
+      "Writing incorrect population figures for provinces — memorize Punjab 53%, Sindh 23%",
+      "Forgetting to write units when calculating population density (persons per km²)",
+      "Mixing up birth rate and death rate definitions",
+      "Not mentioning both physical and human factors when discussing population distribution"
+    ],
+    "examTips": [
+      "Population calculation questions appear in every BSEK paper — practice the formula",
+      "Always draw and label the population pyramid diagram when asked",
+      "Memorize exact population percentages of all four provinces",
+      "Questions on population distribution factors are very common — prepare both physical and human factors"
+    ],
+    "formulas": [
+      "Population Density = Total Population ÷ Total Area",
+      "Population Growth Rate = (Birth Rate - Death Rate) ÷ 10"
+    ],
+    "keyDiagram": "Population Pyramid of Pakistan: Draw a triangle with broad base (0-14 years age group), narrow middle (15-64 years), and very narrow top (65+ years). Label left side as Male, right side as Female. Show percentages: 0-14 years = 35%, 15-64 years = 60%, 65+ years = 5%"
+  },
+  "created_at": "2026-04-06T06:33:41.215Z"
+}

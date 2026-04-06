@@ -1,0 +1,93 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Inorganic Chemistry",
+  "chapter_id": "17",
+  "chapter_name": "Chemistry of our environment",
+  "note_data": {
+    "title": "Chemistry of our environment",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Air pollution** is caused by carbon monoxide, sulfur dioxide, oxides of nitrogen and lead compounds from motor vehicles and industrial processes",
+      "**Carbon dioxide** levels in the atmosphere are increasing due to burning fossil fuels and deforestation, leading to enhanced greenhouse effect",
+      "**Methane** is produced by decomposition of organic matter, rice fields, and cattle farming - it is a more potent greenhouse gas than carbon dioxide",
+      "**Climate change** results from increased greenhouse gas concentrations causing global warming, melting ice caps, and rising sea levels",
+      "**Water pollution** occurs from sewage, fertilizers, pesticides, and industrial waste leading to eutrophication and harm to aquatic life",
+      "**Acid rain** forms when sulfur dioxide and nitrogen oxides react with water in the atmosphere to produce sulfuric and nitric acids",
+      "**Catalytic converters** reduce harmful emissions by converting carbon monoxide to carbon dioxide and nitrogen oxides to nitrogen",
+      "**Clean water** can be obtained through filtration, sedimentation, chlorination and boiling to remove impurities and kill bacteria"
+    ],
+    "definitions": [
+      {
+        "term": "Greenhouse effect",
+        "definition": "The process by which certain gases in the atmosphere absorb and re-emit infrared radiation, warming the Earth's surface"
+      },
+      {
+        "term": "Eutrophication",
+        "definition": "The excessive growth of algae in water bodies due to high levels of nitrates and phosphates from fertilizers"
+      },
+      {
+        "term": "Acid rain",
+        "definition": "Rain that has become acidic due to dissolved sulfur dioxide and nitrogen oxides from air pollution"
+      },
+      {
+        "term": "Global warming",
+        "definition": "The gradual increase in average global temperature due to increased greenhouse gas concentrations"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give practical solutions that could realistically be implemented"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give the process step by step in correct order"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how sulfur dioxide in the atmosphere contributes to environmental problems. [3]",
+      "marks": 3,
+      "answer": "Sulfur dioxide dissolves in rainwater to form sulfurous acid. This makes the rain acidic with pH less than 7. Acid rain damages limestone buildings, kills fish in lakes and harms plant growth.",
+      "markBreakdown": [
+        "Mark 1: Sulfur dioxide dissolves in rainwater/forms acid",
+        "Mark 2: Makes rain acidic/lowers pH",
+        "Mark 3: Any one harmful effect - damages buildings/kills fish/harms plants"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'carbon dioxide causes acid rain' — only sulfur dioxide and nitrogen oxides cause acid rain",
+      "Students confuse greenhouse effect with ozone depletion — these are completely different processes",
+      "Never write 'global warming causes greenhouse effect' — greenhouse effect causes global warming",
+      "Don't say 'methane comes from cars' — methane comes from decomposition, agriculture and landfills",
+      "Students often write 'chlorine kills bacteria' instead of 'chlorine compounds kill bacteria' in water treatment"
+    ],
+    "examinerTips": [
+      "Environmental chemistry appears in every Paper 2 - worth 8-12 marks typically",
+      "Always specify which pollutant causes which problem - don't mix them up",
+      "For water treatment questions, mention the correct order: sedimentation → filtration → chlorination",
+      "Use Pakistani examples like Karachi's air pollution or Indus River contamination for context"
+    ],
+    "formulas": [
+      "SO₂ + H₂O → H₂SO₃",
+      "2SO₂ + O₂ → 2SO₃",
+      "SO₃ + H₂O → H₂SO₄"
+    ],
+    "keyDiagramDescription": "Carbon cycle showing photosynthesis removing CO₂, respiration and combustion releasing CO₂, with arrows indicating direction of carbon movement between atmosphere, plants, animals and fossil fuels"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:56:43.375Z",
+  "updated_at": "2026-04-05T20:56:43.375Z"
+}

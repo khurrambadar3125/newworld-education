@@ -1,0 +1,100 @@
+{
+  "subject": "A Level Mathematics",
+  "subject_code": "9709",
+  "level": "A Level",
+  "theme": "Pure Mathematics 1",
+  "chapter_id": "P1.5",
+  "chapter_name": "Trigonometry",
+  "note_data": {
+    "title": "Trigonometry",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Trigonometric identities** must be proven algebraically using known identities, not by substituting values",
+      "For **trigonometric equations**, find all solutions in the given range by considering the periodic nature",
+      "**Amplitude** is the coefficient of the trigonometric function that determines maximum displacement from the mean position",
+      "**Period** of f(x) = sin(nx) or cos(nx) is 2π/n, and for tan(nx) is π/n",
+      "Use the **CAST diagram** systematically to determine signs of trigonometric ratios in different quadrants",
+      "**Principal values** are the main solutions: sin⁻¹x gives [-π/2, π/2], cos⁻¹x gives [0, π], tan⁻¹x gives [-π/2, π/2]",
+      "Transform **a sin x + b cos x** to **R sin(x + α)** where R = √(a² + b²) and tan α = b/a",
+      "For **compound angle formulas**, memorize sin(A ± B) = sin A cos B ± cos A sin B exactly",
+      "**Double angle formulas**: cos 2A = cos²A - sin²A = 2cos²A - 1 = 1 - 2sin²A"
+    ],
+    "definitions": [
+      {
+        "term": "Amplitude",
+        "definition": "The maximum displacement from the equilibrium position in a periodic function"
+      },
+      {
+        "term": "Period",
+        "definition": "The smallest positive value of p for which f(x + p) = f(x) for all values of x"
+      },
+      {
+        "term": "Trigonometric Identity",
+        "definition": "An equation involving trigonometric functions that is true for all values of the variable for which both sides are defined"
+      },
+      {
+        "term": "Principal Value",
+        "definition": "The unique value of an inverse trigonometric function that lies within the restricted domain"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Prove",
+        "instruction": "Show each step algebraically using known identities. Start with one side and manipulate to reach the other side."
+      },
+      {
+        "commandWord": "Solve",
+        "instruction": "Find principal solution first, then use periodicity to find all solutions in the given range."
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Give the exact numerical answer. Show working for partial marks."
+      },
+      {
+        "commandWord": "Express",
+        "instruction": "Rewrite in the required form showing all steps clearly."
+      }
+    ],
+    "modelAnswer": {
+      "question": "Solve the equation 2sin²x - 3cosx + 3 = 0 for 0° ≤ x ≤ 360°.",
+      "marks": 4,
+      "answer": "Using sin²x = 1 - cos²x:\n2(1 - cos²x) - 3cosx + 3 = 0\n2 - 2cos²x - 3cosx + 3 = 0\n2cos²x + 3cosx - 5 = 0\nLet y = cosx: 2y² + 3y - 5 = 0\n(2y + 5)(y - 1) = 0\ny = -5/2 or y = 1\ncosx = -5/2 (impossible as -1 ≤ cosx ≤ 1)\ncosx = 1, therefore x = 0°, 360°",
+      "markBreakdown": [
+        "Mark 1: Substitute sin²x = 1 - cos²x",
+        "Mark 2: Form quadratic in cosx",
+        "Mark 3: Solve quadratic correctly",
+        "Mark 4: Reject impossible solution and give final answers"
+      ]
+    },
+    "commonMistakes": [
+      "Never substitute numerical values to 'prove' an identity — always manipulate algebraically",
+      "Students often forget to check if solutions from quadratic equations are within the range of trigonometric functions",
+      "Don't confuse period with frequency — period of sin(2x) is π, not 2π",
+      "Never give calculator approximations for exact values — leave as π/6, π/4, etc.",
+      "Students miss solutions by not considering all quadrants where the trigonometric ratio is satisfied"
+    ],
+    "examinerTips": [
+      "Trigonometric equations appear in every Paper 1 — usually worth 6-8 marks",
+      "Always check your solutions by substituting back into the original equation",
+      "For R-formula questions, sketch the function to verify amplitude and phase shift",
+      "Use exact values (√2/2, 1/2, √3/2) not decimal approximations for special angles"
+    ],
+    "formulas": [
+      "sin²x + cos²x = 1",
+      "1 + tan²x = sec²x",
+      "1 + cot²x = cosec²x",
+      "sin(A ± B) = sinA cosB ± cosA sinB",
+      "cos(A ± B) = cosA cosB ∓ sinA sinB",
+      "sin2A = 2sinA cosA",
+      "cos2A = cos²A - sin²A = 2cos²A - 1 = 1 - 2sin²A",
+      "a sinx + b cosx = R sin(x + α) where R = √(a² + b²)"
+    ],
+    "keyDiagramDescription": "CAST diagram showing signs of sin, cos, tan in four quadrants: All positive in first quadrant, Sin positive in second, Tan positive in third, Cos positive in fourth"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:49:26.452Z",
+  "updated_at": "2026-04-06T04:49:26.452Z"
+}

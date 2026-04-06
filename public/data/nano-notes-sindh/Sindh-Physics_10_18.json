@@ -1,0 +1,106 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "18",
+  "chapter_name": "Electronics",
+  "note_data": {
+    "title": "Electronics",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Electronics is the branch of science that deals with the study of electronic devices and their applications",
+      "A diode is a two-terminal electronic device that allows current to flow in only one direction",
+      "Forward bias occurs when P-type is connected to positive terminal and N-type to negative terminal of battery",
+      "Reverse bias occurs when P-type is connected to negative terminal and N-type to positive terminal of battery",
+      "A transistor is a three-terminal semiconductor device used for amplification and switching",
+      "The three terminals of a transistor are Emitter (E), Base (B), and Collector (C)",
+      "Logic gates are electronic circuits that perform logical operations on input signals",
+      "AND gate gives output 1 only when both inputs are 1, otherwise output is 0",
+      "OR gate gives output 1 when at least one input is 1, output is 0 only when both inputs are 0",
+      "NOT gate gives output opposite to input - if input is 1, output is 0 and vice versa"
+    ],
+    "definitions": [
+      {
+        "term": "Electronics",
+        "definition": "Electronics is the branch of science that deals with the study of electronic devices and their applications in various fields of life."
+      },
+      {
+        "term": "Diode",
+        "definition": "A diode is a two-terminal electronic device made by joining P-type and N-type semiconductors which allows current to flow in only one direction."
+      },
+      {
+        "term": "Transistor",
+        "definition": "A transistor is a three-terminal semiconductor device used for amplification of weak signals and as a switch in electronic circuits."
+      },
+      {
+        "term": "Logic Gate",
+        "definition": "Logic gates are electronic circuits that perform logical operations on one or more input signals to produce a single output signal."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define diode and write its two uses.",
+        "answer": "A diode is a two-terminal electronic device that allows current to flow in only one direction. Uses: (1) Rectification of AC to DC (2) Protection of circuits from reverse current flow."
+      },
+      {
+        "type": "long",
+        "question": "Draw the truth table for AND, OR and NOT gates. Also draw their symbols.",
+        "answer": "AND Gate: A=0,B=0→Y=0; A=0,B=1→Y=0; A=1,B=0→Y=0; A=1,B=1→Y=1. OR Gate: A=0,B=0→Y=0; A=0,B=1→Y=1; A=1,B=0→Y=1; A=1,B=1→Y=1. NOT Gate: A=0→Y=1; A=1→Y=0. (Draw respective symbols with proper labels)"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "In forward bias, the diode:",
+        "options": {
+          "A": "Does not conduct current",
+          "B": "Conducts current easily",
+          "C": "Acts as open circuit",
+          "D": "Has high resistance"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which gate gives output 1 only when both inputs are 1?",
+        "options": {
+          "A": "OR gate",
+          "B": "NOT gate",
+          "C": "AND gate",
+          "D": "NOR gate"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The three terminals of a transistor are:",
+        "options": {
+          "A": "Anode, Cathode, Gate",
+          "B": "Source, Drain, Gate",
+          "C": "Emitter, Base, Collector",
+          "D": "Input, Output, Ground"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse forward bias with reverse bias - remember P-type to positive for forward bias",
+      "Drawing wrong symbols for logic gates - practice AND (D-shape), OR (curved), NOT (triangle with circle)",
+      "Mixing up truth tables - AND needs both inputs 1, OR needs at least one input 1",
+      "Forgetting to label terminals in transistor diagram as E, B, C",
+      "Writing definitions in own words instead of exact textbook language"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question about logic gates in every BSEK paper",
+      "Always draw neat symbols for logic gates with proper labels - diagrams carry marks",
+      "Truth tables appear frequently - memorize all three basic gates",
+      "Definition of electronics and diode are commonly asked - write exact textbook words",
+      "Transistor applications in Karachi's electronics markets can be mentioned as examples"
+    ],
+    "formulas": [
+      "No major mathematical formulas - focus on logic operations and truth tables"
+    ],
+    "keyDiagram": "Logic Gate Symbols: AND gate (D-shaped with flat input side), OR gate (curved input side), NOT gate (triangle with small circle at output). Also draw PN junction diode symbol with arrow pointing from P to N type material."
+  },
+  "created_at": "2026-04-06T06:07:13.910Z"
+}

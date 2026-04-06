@@ -1,0 +1,88 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 1: Introduction",
+  "chapter_id": "3",
+  "chapter_name": "The trial balance",
+  "note_data": {
+    "title": "The trial balance",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **trial balance** is a list of all ledger account balances at a specific date to check the mathematical accuracy of double-entry bookkeeping",
+      "The trial balance has **two columns** - debit balances on the left and credit balances on the right, which must be equal in total",
+      "**Debit balances** include assets (cash, bank, inventory, trade receivables, motor vehicles, equipment) and expenses (rent, electricity, wages)",
+      "**Credit balances** include liabilities (trade payables, bank overdraft, loans), capital, and income (sales, commission received, rent received)",
+      "If the trial balance **does not balance**, there are errors in the accounting records that must be found and corrected",
+      "The trial balance is prepared **before** the financial statements to ensure all transactions are correctly recorded",
+      "A balanced trial balance does **not guarantee** that all transactions are error-free - some errors do not affect the trial balance totals",
+      "The trial balance forms the **basis** for preparing the income statement and statement of financial position"
+    ],
+    "definitions": [
+      {
+        "term": "Trial balance",
+        "definition": "A list of all ledger account balances at a specific date showing debit and credit balances in separate columns to check mathematical accuracy"
+      },
+      {
+        "term": "Debit balance",
+        "definition": "An account balance where total debits exceed total credits, typically found in asset and expense accounts"
+      },
+      {
+        "term": "Credit balance",
+        "definition": "An account balance where total credits exceed total debits, typically found in liability, capital and income accounts"
+      },
+      {
+        "term": "Double-entry bookkeeping",
+        "definition": "A system of recording transactions where every transaction is recorded with equal debit and credit entries"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Set up proper headings, list all accounts with correct debit/credit classification, show totals"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why a trial balance is prepared and state two types of accounts that would appear as debit balances.",
+      "marks": 4,
+      "answer": "A trial balance is prepared to check the mathematical accuracy of the double-entry bookkeeping system because it ensures that total debits equal total credits. Two types of accounts with debit balances are: (1) Asset accounts such as cash, inventory, and equipment (2) Expense accounts such as rent, wages, and electricity.",
+      "markBreakdown": [
+        "Mark 1: To check mathematical accuracy",
+        "Mark 2: Total debits equal total credits/double-entry principle",
+        "Mark 3: Asset accounts (with example)",
+        "Mark 4: Expense accounts (with example)"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'trial balance prevents all errors' — some errors do not affect trial balance totals",
+      "Students often put drawings on credit side — drawings are always a debit balance as they reduce capital",
+      "Confusing sales returns (debit) with purchases returns (credit) in trial balance classification",
+      "Putting bank overdraft as debit balance — bank overdraft is always a credit balance as it is a liability",
+      "Forgetting to show currency symbol (Rs) and proper column headings in trial balance preparation"
+    ],
+    "examinerTips": [
+      "Trial balance questions appear in almost every Paper 1 and Paper 2 examination",
+      "Always check your trial balance totals are equal before moving to next question",
+      "Learn the standard format: Business name, 'Trial balance', date, proper debit/credit columns",
+      "Practice classifying accounts quickly - this skill is essential for Paper 1 multiple choice questions"
+    ],
+    "formulas": [
+      "Total Debits = Total Credits"
+    ],
+    "keyDiagramDescription": "Trial balance format showing business name header, date, two-column layout with 'Debit Rs' and 'Credit Rs' headings, account names listed vertically, and total lines at bottom showing equal amounts"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:35:54.549Z",
+  "updated_at": "2026-04-06T03:35:54.549Z"
+}

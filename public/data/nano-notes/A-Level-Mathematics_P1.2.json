@@ -1,0 +1,94 @@
+{
+  "subject": "A Level Mathematics",
+  "subject_code": "9709",
+  "level": "A Level",
+  "theme": "Pure Mathematics 1",
+  "chapter_id": "P1.2",
+  "chapter_name": "Functions",
+  "note_data": {
+    "title": "Functions",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **function** f is a relation where each element in the domain maps to exactly one element in the range",
+      "The **domain** is the complete set of possible input values (x-values) for which the function is defined",
+      "The **range** is the complete set of possible output values (y-values) that the function can produce",
+      "For composite function **fog(x) = f(g(x))**, substitute g(x) into function f, working from right to left",
+      "An **inverse function f⁻¹** exists only when f is one-to-one (each y-value corresponds to exactly one x-value)",
+      "To find f⁻¹(x): write y = f(x), rearrange to make x the subject, then interchange x and y",
+      "For a function to have an inverse, it must pass the **horizontal line test** (no horizontal line intersects the graph more than once)",
+      "The domain of f⁻¹ equals the range of f, and the range of f⁻¹ equals the domain of f",
+      "The graphs of f and f⁻¹ are **reflections of each other** in the line y = x"
+    ],
+    "definitions": [
+      {
+        "term": "Function",
+        "definition": "A relation where each element in the domain maps to exactly one element in the codomain"
+      },
+      {
+        "term": "Domain",
+        "definition": "The complete set of possible input values for which the function is defined"
+      },
+      {
+        "term": "Range",
+        "definition": "The complete set of actual output values that the function produces"
+      },
+      {
+        "term": "Composite function",
+        "definition": "A function formed by applying one function to the result of another, written as fog(x) = f(g(x))"
+      },
+      {
+        "term": "Inverse function",
+        "definition": "A function f⁻¹ that undoes the operation of f, where f⁻¹(f(x)) = x and f(f⁻¹(x)) = x"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the domain or range as a set or inequality. No working needed."
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Show all algebraic steps when finding composite or inverse functions"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Demonstrate the result by substitution or algebraic manipulation"
+      }
+    ],
+    "modelAnswer": {
+      "question": "The function f is defined by f(x) = 2x + 3 for x ∈ ℝ. The function g is defined by g(x) = x² - 1 for x ≥ 0. Find fg(x) and state its domain.",
+      "marks": 3,
+      "answer": "fg(x) = f(g(x)) = f(x² - 1) = 2(x² - 1) + 3 = 2x² - 2 + 3 = 2x² + 1. Domain: x ≥ 0",
+      "markBreakdown": [
+        "Mark 1: Correct substitution f(x² - 1)",
+        "Mark 2: Correct simplification to 2x² + 1",
+        "Mark 3: Correct domain x ≥ 0"
+      ]
+    },
+    "commonMistakes": [
+      "Writing fg(x) = f(x) × g(x) instead of f(g(x)) - composite means substitution, not multiplication",
+      "When finding inverse functions, students forget to interchange x and y at the final step",
+      "Stating domain as 'all real numbers' when restrictions apply - always check for square roots, fractions, or given conditions",
+      "Confusing the order in composite functions - fog(x) means apply g first, then f",
+      "Not restricting the domain when finding inverse functions of many-to-one functions"
+    ],
+    "examinerTips": [
+      "Functions appear in every Paper 1, often combined with transformations or coordinate geometry",
+      "Always state the domain clearly using correct notation (inequalities or set notation)",
+      "When finding inverse functions, check your answer by verifying f(f⁻¹(x)) = x",
+      "For composite functions, work systematically from the inside out"
+    ],
+    "formulas": [
+      "fog(x) = f(g(x))",
+      "f⁻¹(f(x)) = x",
+      "f(f⁻¹(x)) = x"
+    ],
+    "keyDiagramDescription": "Graph showing function f and its inverse f⁻¹ as reflections in the line y = x, with clearly marked domain and range for both functions"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:48:18.355Z",
+  "updated_at": "2026-04-06T04:48:18.355Z"
+}

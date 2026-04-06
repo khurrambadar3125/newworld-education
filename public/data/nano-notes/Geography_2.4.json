@@ -1,0 +1,97 @@
+{
+  "subject": "Geography",
+  "subject_code": "2217",
+  "level": "O Level",
+  "theme": "Theme 2: The Natural Environment",
+  "chapter_id": "2.4",
+  "chapter_name": "Weather",
+  "note_data": {
+    "title": "Weather",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Weather** is the day-to-day condition of the atmosphere at a particular place and time, including temperature, rainfall, wind speed and direction, humidity and cloud cover",
+      "**Temperature** is measured using a thermometer in degrees Celsius, recorded in a Stevenson Screen to ensure accurate readings away from direct sunlight",
+      "**Rainfall** is measured using a rain gauge and recorded in millimetres, with the gauge placed away from buildings and trees to avoid interference",
+      "**Wind direction** is measured using a wind vane and shows where the wind is coming from, while **wind speed** is measured using an anemometer in kilometres per hour",
+      "**Cloud cover** is measured in oktas (eighths of sky covered) and affects temperature by blocking incoming solar radiation during day and trapping heat at night",
+      "Weather instruments must be placed in a **Stevenson Screen** which is painted white, has louvred sides, raised 1.2m above ground, and faces away from the sun",
+      "**Diurnal temperature range** is the difference between maximum and minimum temperature in 24 hours and varies with season, latitude and proximity to sea",
+      "Coastal areas like Karachi have **smaller diurnal temperature ranges** because water heats and cools more slowly than land",
+      "**Prevailing winds** are the most common wind direction in an area and significantly influence local weather patterns and rainfall distribution"
+    ],
+    "definitions": [
+      {
+        "term": "Weather",
+        "definition": "The day-to-day condition of the atmosphere at a particular place and time"
+      },
+      {
+        "term": "Climate",
+        "definition": "The average weather conditions of a place recorded over a period of at least 30 years"
+      },
+      {
+        "term": "Stevenson Screen",
+        "definition": "A white wooden box with louvred sides, raised 1.2m above ground, used to house weather instruments and protect them from direct sunlight and precipitation"
+      },
+      {
+        "term": "Diurnal temperature range",
+        "definition": "The difference between the maximum and minimum temperature recorded in a 24-hour period"
+      },
+      {
+        "term": "Prevailing wind",
+        "definition": "The most frequent wind direction recorded at a weather station over a period of time"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Say what you can see in data/diagram. Use figures from the resource."
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences using comparative words like 'whereas', 'however', 'both'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why coastal areas have smaller diurnal temperature ranges than inland areas. [4 marks]",
+      "marks": 4,
+      "answer": "Water has a high specific heat capacity so it heats up and cools down more slowly than land. During the day, the sea remains cooler than the land, so onshore breezes reduce maximum temperatures. At night, the sea remains warmer than the land, so it prevents temperatures from falling too low. This moderating effect of the sea reduces the difference between maximum and minimum temperatures in coastal areas.",
+      "markBreakdown": [
+        "Mark 1: Water heats up and cools down slowly/high specific heat capacity",
+        "Mark 2: Sea cooler during day/onshore breeze reduces maximum temperature",
+        "Mark 3: Sea warmer at night/prevents low temperatures",
+        "Mark 4: Overall moderating effect reduces temperature range"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'climate changes daily' — weather changes daily, climate is long-term average",
+      "Students often confuse wind direction - winds are named after where they come from, not where they go to",
+      "Don't say thermometer measures 'heat' — it measures temperature in degrees Celsius",
+      "Never place weather instruments in direct sunlight or near buildings — this gives inaccurate readings",
+      "Students often forget that Stevenson Screen must be painted white to reflect heat and prevent overheating of instruments"
+    ],
+    "examinerTips": [
+      "Weather appears frequently in Paper 2 with data interpretation questions",
+      "Always use figures from weather data tables when describing patterns",
+      "Draw and label diagrams of weather instruments for full marks in equipment questions",
+      "Remember the difference between weather and climate - examiners test this regularly"
+    ],
+    "formulas": [
+      "Diurnal temperature range = Maximum temperature - Minimum temperature"
+    ],
+    "keyDiagramDescription": "Stevenson Screen diagram showing white painted wooden box with louvred sides, door opening away from sun, raised 1.2m above ground on legs, containing thermometers and other weather instruments"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:58:15.492Z",
+  "updated_at": "2026-04-06T03:58:15.492Z"
+}

@@ -1,0 +1,97 @@
+{
+  "subject": "Business Studies",
+  "subject_code": "7115",
+  "level": "O Level",
+  "theme": "Business Operations",
+  "chapter_id": "3",
+  "chapter_name": "Marketing",
+  "note_data": {
+    "title": "Marketing",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Marketing** is the process of identifying, anticipating and satisfying customer needs profitably",
+      "**Market research** provides information about customers, competitors and market trends to reduce business risk",
+      "**Primary research** involves collecting new data directly from customers through surveys, interviews and observations",
+      "**Secondary research** uses existing data from government statistics, internet sources and market reports",
+      "**Product** is a good or service that satisfies customer needs and wants",
+      "**Price** is the amount customers pay for a product and affects demand, profit margins and market positioning",
+      "**Market segmentation** divides customers into groups with similar characteristics such as age, income or location",
+      "**Marketing mix** consists of the 4Ps: Product, Price, Place and Promotion working together to satisfy customer needs",
+      "**Brand** is a name, symbol or design that distinguishes a product from competitors and builds customer loyalty"
+    ],
+    "definitions": [
+      {
+        "term": "Marketing",
+        "definition": "The process of identifying, anticipating and satisfying customer needs profitably"
+      },
+      {
+        "term": "Market research",
+        "definition": "The collection and analysis of information about customers, competitors and the market"
+      },
+      {
+        "term": "Primary research",
+        "definition": "Collection of new data directly from customers for a specific purpose"
+      },
+      {
+        "term": "Secondary research",
+        "definition": "Use of existing data that has already been collected by someone else"
+      },
+      {
+        "term": "Market segmentation",
+        "definition": "Dividing customers into groups with similar needs, wants or characteristics"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the marketing decision and examine its effects on different stakeholders"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Weigh up advantages and disadvantages, then give a justified conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two benefits of market research to a Pakistani textile company expanding into new markets. [6 marks]",
+      "marks": 6,
+      "answer": "One benefit is that market research identifies customer preferences. This is because the company can discover what designs, colors and fabric types customers want in the new market, allowing them to develop products that will sell well. Another benefit is that market research reduces business risk. This is because the company can gather information about competitors' prices and market size before investing, helping them avoid costly mistakes when entering the new market.",
+      "markBreakdown": [
+        "Mark 1: Identifies customer preferences",
+        "Mark 2: Explanation of how this helps product development",
+        "Mark 3: Application to textile company context",
+        "Mark 4: Reduces business risk",
+        "Mark 5: Explanation of how this prevents costly mistakes",
+        "Mark 6: Application to expanding into new markets"
+      ]
+    },
+    "commonMistakes": [
+      "Never say market research 'guarantees success' — always say it 'reduces risk' or 'increases chances of success'",
+      "Students often confuse primary and secondary research sources — questionnaires are primary, government statistics are secondary",
+      "Don't just list the 4Ps — explain how each element works together to satisfy customer needs",
+      "Avoid saying price is 'just about profit' — explain how it affects demand and market positioning",
+      "Never say marketing is 'just advertising' — it includes research, product development, pricing and distribution"
+    ],
+    "examinerTips": [
+      "Marketing questions appear in every Paper 1 and Paper 2 exam",
+      "Always use Pakistani business examples like National Foods, Engro or Gul Ahmed for context",
+      "When explaining market research methods, give specific examples of what data would be collected",
+      "For evaluation questions, consider both customer and business perspectives"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Marketing mix diagram showing the 4Ps (Product, Price, Place, Promotion) arranged around 'Customer Satisfaction' in the center, with arrows showing how each element influences customer decisions"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:52:42.625Z",
+  "updated_at": "2026-04-06T03:52:42.625Z"
+}

@@ -1,0 +1,100 @@
+{
+  "subject": "Pakistan Studies",
+  "subject_code": "2059",
+  "level": "O Level",
+  "theme": "Paper 2: The Environment of Pakistan",
+  "chapter_id": "P2.8",
+  "chapter_name": "Population",
+  "note_data": {
+    "title": "Population",
+    "readTime": "8 min",
+    "keyPoints": [
+      "Pakistan's **population** has grown rapidly from 34 million in 1947 to over 220 million in 2017 due to high birth rates and declining death rates",
+      "**Census** data shows population growth rate of approximately 2.4% annually, making Pakistan the world's fifth most populous country",
+      "**Employment** opportunities are concentrated in agriculture (42%), services (37%) and industry (21%) sectors",
+      "**Unemployment** rates are highest among youth (15-24 years) at approximately 8-10% due to lack of job creation and skills mismatch",
+      "**Migration** occurs from rural to urban areas as people seek better employment, education and healthcare opportunities",
+      "**Urbanisation** has increased rapidly with urban population growing from 17% in 1951 to 36% in 2017",
+      "Major cities like Karachi, Lahore and Faisalabad experience rapid growth causing pressure on infrastructure and services",
+      "**Internal migration** includes movement from northern areas to Punjab and Sindh for economic opportunities",
+      "**Population density** varies greatly with highest concentrations in Punjab plains and Indus valley regions"
+    ],
+    "definitions": [
+      {
+        "term": "Census",
+        "definition": "An official count of population conducted every 10 years to collect demographic, social and economic data"
+      },
+      {
+        "term": "Urbanisation",
+        "definition": "The process by which an increasing proportion of a population lives in towns and cities rather than rural areas"
+      },
+      {
+        "term": "Migration",
+        "definition": "The movement of people from one place to another, either within a country (internal) or between countries (external)"
+      },
+      {
+        "term": "Population density",
+        "definition": "The number of people living per square kilometer in a given area"
+      },
+      {
+        "term": "Unemployment",
+        "definition": "The condition where people who are able and willing to work cannot find suitable employment"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics or features without explanation"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down causes and effects, show relationships between factors"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain three problems caused by rapid population growth in Pakistan. [6]",
+      "marks": 6,
+      "answer": "Rapid population growth causes unemployment because the economy cannot create enough jobs for the growing workforce, leading to high youth unemployment rates. It causes pressure on resources because more people need food, water and energy, leading to shortages and increased prices. It causes strain on infrastructure because more people need housing, transport and utilities, leading to overcrowding in cities and inadequate service provision.",
+      "markBreakdown": [
+        "Mark 1: Unemployment identified",
+        "Mark 2: Economic reason explained",
+        "Mark 3: Resource pressure identified",
+        "Mark 4: Scarcity effects explained",
+        "Mark 5: Infrastructure strain identified",
+        "Mark 6: Urban overcrowding explained"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'overpopulation' — always say 'rapid population growth' as Pakistan has resources but distribution issues",
+      "Students often confuse migration with immigration/emigration — internal migration is movement within Pakistan",
+      "Don't just list census figures — explain what the data shows about population trends",
+      "Avoid saying unemployment is only due to population growth — mention skills mismatch and economic factors",
+      "Never ignore regional variations — population density varies greatly across Pakistan's provinces"
+    ],
+    "examinerTips": [
+      "Population questions appear in every Paper 2 - learn key statistics from latest census",
+      "Always give Pakistani examples when discussing urbanisation (Karachi, Lahore growth)",
+      "Link population issues to other topics like agriculture, industry and resources",
+      "Use specific data from 2017 census for full marks in statistical questions"
+    ],
+    "formulas": [
+      "Population density = Total population ÷ Total area",
+      "Population growth rate = (Birth rate - Death rate) + Net migration rate"
+    ],
+    "keyDiagramDescription": "Population pyramid showing Pakistan's youthful age structure with wide base indicating high birth rates and narrow top showing lower life expectancy, demonstrating demographic transition stage"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:50:58.591Z",
+  "updated_at": "2026-04-05T20:50:58.591Z"
+}

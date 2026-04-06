@@ -1,0 +1,114 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "5",
+  "chapter_name": "Physical States of Matter",
+  "note_data": {
+    "title": "Physical States of Matter",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Matter exists in three physical states: solid, liquid and gas — these states depend on intermolecular forces and kinetic energy",
+      "Kinetic Molecular Theory explains behavior of gases: gas particles are in constant random motion and have negligible intermolecular forces",
+      "Boyle's Law: At constant temperature, volume of a gas is inversely proportional to pressure (PV = constant)",
+      "Charles's Law: At constant pressure, volume of a gas is directly proportional to absolute temperature (V/T = constant)",
+      "Gay-Lussac's Law: At constant volume, pressure of a gas is directly proportional to absolute temperature (P/T = constant)",
+      "Ideal Gas Equation combines all gas laws: PV = nRT where R = 8.314 J mol⁻¹ K⁻¹",
+      "Plasma is the fourth state of matter found at very high temperatures — exists in stars and fluorescent lights",
+      "Evaporation occurs at surface of liquid at all temperatures while boiling occurs throughout liquid at specific temperature",
+      "Sublimation is direct conversion of solid to gas without passing through liquid state — examples: dry ice, camphor"
+    ],
+    "definitions": [
+      {
+        "term": "Kinetic Molecular Theory",
+        "definition": "A theory that explains the behavior of gases in terms of particles in motion. It states that gas particles are in constant random motion and the average kinetic energy is proportional to absolute temperature."
+      },
+      {
+        "term": "Boyle's Law",
+        "definition": "At constant temperature, the volume of a fixed amount of gas is inversely proportional to its pressure."
+      },
+      {
+        "term": "Charles's Law",
+        "definition": "At constant pressure, the volume of a fixed amount of gas is directly proportional to its absolute temperature."
+      },
+      {
+        "term": "Sublimation",
+        "definition": "The process by which a solid changes directly into gas without passing through the liquid state."
+      },
+      {
+        "term": "Plasma",
+        "definition": "The fourth state of matter consisting of highly ionized gas with equal numbers of positive ions and electrons."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define Boyle's Law and write its mathematical expression.",
+        "answer": "At constant temperature, the volume of a fixed amount of gas is inversely proportional to its pressure. Mathematical expression: P₁V₁ = P₂V₂ or PV = constant"
+      },
+      {
+        "type": "long",
+        "question": "Derive the ideal gas equation from Boyle's Law, Charles's Law and Avogadro's Law.",
+        "answer": "From Boyle's Law: V ∝ 1/P (at constant T, n). From Charles's Law: V ∝ T (at constant P, n). From Avogadro's Law: V ∝ n (at constant P, T). Combining: V ∝ nT/P. Therefore V = RnT/P, where R is gas constant. Rearranging: PV = nRT. This is the ideal gas equation where P = pressure, V = volume, n = number of moles, R = gas constant (8.314 J mol⁻¹ K⁻¹), T = absolute temperature."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which law states that volume is inversely proportional to pressure at constant temperature?",
+        "options": {
+          "A": "Charles's Law",
+          "B": "Boyle's Law",
+          "C": "Gay-Lussac's Law",
+          "D": "Avogadro's Law"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The value of universal gas constant R is:",
+        "options": {
+          "A": "0.0821 atm L mol⁻¹ K⁻¹",
+          "B": "8.314 J mol⁻¹ K⁻¹",
+          "C": "1.987 cal mol⁻¹ K⁻¹",
+          "D": "All of the above"
+        },
+        "correct": "D"
+      },
+      {
+        "question": "Dry ice is an example of:",
+        "options": {
+          "A": "Evaporation",
+          "B": "Condensation",
+          "C": "Sublimation",
+          "D": "Freezing"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often forget to convert Celsius to Kelvin when using gas law equations",
+      "Confusing evaporation with boiling — evaporation occurs at surface while boiling occurs throughout",
+      "Writing wrong units for gas constant R — remember 8.314 J mol⁻¹ K⁻¹",
+      "Mixing up direct and inverse relationships in gas laws",
+      "Forgetting to mention 'at constant temperature/pressure' conditions in gas law definitions"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and always one gas law numerical in BSEK papers",
+      "Always draw and label the kinetic molecular theory diagram — appears every year",
+      "Memorize all three gas law definitions word-for-word as written in STBB textbook",
+      "Practice unit conversions: atm to Pa, Celsius to Kelvin",
+      "Learn the ideal gas equation derivation step-by-step — frequently asked as 5-mark question"
+    ],
+    "formulas": [
+      "PV = nRT (Ideal Gas Equation)",
+      "P₁V₁ = P₂V₂ (Boyle's Law)",
+      "V₁/T₁ = V₂/T₂ (Charles's Law)",
+      "P₁/T₁ = P₂/T₂ (Gay-Lussac's Law)",
+      "PV = constant (at constant T)",
+      "V/T = constant (at constant P)"
+    ],
+    "keyDiagram": "Kinetic Molecular Theory diagram showing gas particles in random motion with arrows indicating movement directions, particles far apart with negligible intermolecular forces, and equal kinetic energy distribution at constant temperature"
+  },
+  "created_at": "2026-04-06T06:09:04.397Z"
+}

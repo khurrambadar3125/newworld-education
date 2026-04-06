@@ -1,0 +1,94 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "AS Computer Science",
+  "chapter_id": "AS10",
+  "chapter_name": "Programming and data representation",
+  "note_data": {
+    "title": "Programming and data representation",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Object-oriented programming** uses classes to define objects that contain both data (attributes) and methods that operate on that data",
+      "**Inheritance** allows a child class to inherit attributes and methods from a parent class, promoting code reuse",
+      "**Encapsulation** hides internal data from direct access and provides controlled access through methods",
+      "**Polymorphism** allows objects of different classes to be treated as objects of a common base class",
+      "**File handling** requires opening a file, reading/writing data, and closing the file to prevent data loss",
+      "**Exception handling** uses try-except blocks to catch and handle runtime errors without crashing the program",
+      "**Sequential file access** reads data from beginning to end in order, while **random file access** can jump to any position",
+      "**Text files** store human-readable characters, while **binary files** store data in machine-readable format"
+    ],
+    "definitions": [
+      {
+        "term": "Class",
+        "definition": "A template or blueprint that defines the attributes and methods that objects of that type will have"
+      },
+      {
+        "term": "Object",
+        "definition": "An instance of a class that contains actual data values for the attributes defined in the class"
+      },
+      {
+        "term": "Inheritance",
+        "definition": "The ability of a class to inherit attributes and methods from another class"
+      },
+      {
+        "term": "Exception",
+        "definition": "An error that occurs during program execution that can be caught and handled"
+      },
+      {
+        "term": "File pointer",
+        "definition": "A marker that indicates the current position in a file for reading or writing operations"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics and features with examples where appropriate"
+      },
+      {
+        "commandWord": "Justify",
+        "instruction": "Give reasons why something is the best choice compared to alternatives"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the purpose of exception handling in programming and give an example of how it is implemented.",
+      "marks": 4,
+      "answer": "Exception handling prevents programs from crashing when runtime errors occur. It allows the program to catch errors and respond appropriately instead of terminating unexpectedly. Example implementation uses try-except blocks: the try block contains code that might cause an error, and the except block contains code to handle the error. For example, when dividing by zero, the except block can display an error message and ask for new input rather than crashing the program.",
+      "markBreakdown": [
+        "Mark 1: Prevents program crashes/termination",
+        "Mark 2: Catches runtime errors",
+        "Mark 3: Try-except block structure explained",
+        "Mark 4: Appropriate example given"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'class and object are the same' — class is the template, object is the instance",
+      "Students often forget to close files after opening them, which can cause data loss",
+      "Don't confuse inheritance with composition — inheritance uses 'is-a' relationships",
+      "Never say exceptions 'fix' errors — they handle errors that occur during execution",
+      "Students mix up sequential and random access — sequential must read in order, random can jump to any position"
+    ],
+    "examinerTips": [
+      "OOP concepts appear frequently in Paper 2 - know the four main principles",
+      "Always mention closing files when discussing file handling",
+      "Use proper Python syntax in code examples for full marks",
+      "Exception handling questions often ask for both explanation and code example"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Class diagram showing inheritance relationship with parent class at top, child classes below connected by arrows, showing inherited attributes and methods"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:17:23.324Z",
+  "updated_at": "2026-04-06T05:17:23.324Z"
+}

@@ -1,0 +1,95 @@
+{
+  "subject": "A Level Mathematics",
+  "subject_code": "9709",
+  "level": "A Level",
+  "theme": "Mechanics",
+  "chapter_id": "M2",
+  "chapter_name": "Kinematics of motion in a straight line",
+  "note_data": {
+    "title": "Kinematics of motion in a straight line",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Displacement** is the distance moved in a specified direction from a fixed origin, measured in metres (m)",
+      "**Velocity** is the rate of change of displacement with respect to time, measured in m/s",
+      "**Acceleration** is the rate of change of velocity with respect to time, measured in m/s²",
+      "The **suvat equations** apply only when acceleration is constant throughout the motion",
+      "Choose a **positive direction** at the start and maintain this convention throughout the problem",
+      "When an object returns to its starting position, the **displacement is zero** but distance travelled is not",
+      "At the **highest point** of vertical motion, velocity equals zero but acceleration remains -g",
+      "The **gradient** of a displacement-time graph gives velocity at that instant",
+      "The **area under** a velocity-time graph gives the displacement in that time interval"
+    ],
+    "definitions": [
+      {
+        "term": "Displacement",
+        "definition": "The distance moved in a specified direction from a fixed point, measured as a vector quantity"
+      },
+      {
+        "term": "Velocity",
+        "definition": "The rate of change of displacement with respect to time, measured as a vector quantity"
+      },
+      {
+        "term": "Acceleration",
+        "definition": "The rate of change of velocity with respect to time, measured as a vector quantity"
+      },
+      {
+        "term": "Uniform acceleration",
+        "definition": "Motion where the acceleration remains constant in magnitude and direction"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Use suvat equations showing clear substitution and working"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show numerical substitution into correct formula with units in final answer"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A cricket ball is thrown vertically upward from ground level with initial velocity 20 m/s. Find the maximum height reached and the time taken to return to ground level. (Take g = 10 m/s²)",
+      "marks": 6,
+      "answer": "Taking upward as positive direction, u = 20 m/s, a = -10 m/s², v = 0 at maximum height. Using v² = u² + 2as: 0² = 20² + 2(-10)s, 0 = 400 - 20s, s = 20 m. Maximum height = 20 m. For time to return to ground: s = 0, using s = ut + ½at²: 0 = 20t + ½(-10)t², 0 = 20t - 5t², 0 = t(20 - 5t), t = 0 or t = 4. Time to return = 4 s.",
+      "markBreakdown": [
+        "Mark 1: Correct choice of positive direction",
+        "Mark 2: Correct use of v² = u² + 2as",
+        "Mark 3: Maximum height = 20 m",
+        "Mark 4: Correct use of s = ut + ½at²",
+        "Mark 5: Correct factorisation",
+        "Mark 6: Time = 4 s"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse displacement with distance - displacement can be negative but distance is always positive",
+      "Students often forget to define positive direction clearly at the start of the problem",
+      "Never use suvat equations when acceleration is not constant",
+      "Students incorrectly think acceleration is zero at the highest point of projectile motion",
+      "Always include units in final answers - marks are lost for missing units"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 4 and frequently in Paper 2",
+      "Always draw a labelled diagram showing positive direction for vertical motion problems",
+      "Show clear substitution into suvat equations for method marks",
+      "Check answers make physical sense - negative time or impossible speeds indicate errors"
+    ],
+    "formulas": [
+      "v = u + at",
+      "s = ut + ½at²",
+      "v² = u² + 2as",
+      "s = ½(u + v)t",
+      "s = vt - ½at²"
+    ],
+    "keyDiagramDescription": "Vertical line showing initial position, positive direction (usually upward), initial velocity vector, and acceleration vector (downward for gravity). Label all known values clearly."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:56:01.288Z",
+  "updated_at": "2026-04-06T04:56:01.288Z"
+}

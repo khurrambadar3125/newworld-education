@@ -1,0 +1,98 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 3: Financial Statements",
+  "chapter_id": "8",
+  "chapter_name": "Financial statements – Part A",
+  "note_data": {
+    "title": "Financial statements – Part A",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Trading account** shows the gross profit or gross loss for a trading period by calculating sales minus cost of sales",
+      "**Income statement** shows the net profit or net loss for a period by deducting expenses from gross profit",
+      "**Sales** (turnover) represents the revenue from selling goods to customers during the accounting period",
+      "**Cost of sales** is calculated as opening inventory plus purchases minus closing inventory",
+      "**Gross profit** is the profit made before deducting business expenses (Sales - Cost of sales)",
+      "**Expenses** are costs incurred in running the business such as rent, wages, electricity, and insurance",
+      "**Net profit** is the final profit after deducting all expenses from gross profit",
+      "Trading account and income statement can be presented as **one combined statement** or as **two separate statements**",
+      "**Closing inventory** appears as a credit in trading account and as a current asset in the statement of financial position"
+    ],
+    "definitions": [
+      {
+        "term": "Trading account",
+        "definition": "A financial statement that calculates the gross profit or gross loss by showing sales revenue minus the cost of sales"
+      },
+      {
+        "term": "Income statement",
+        "definition": "A financial statement that shows the net profit or net loss by deducting expenses from gross profit"
+      },
+      {
+        "term": "Cost of sales",
+        "definition": "The cost of goods that have been sold during the accounting period, calculated as opening inventory plus purchases minus closing inventory"
+      },
+      {
+        "term": "Gross profit",
+        "definition": "The profit earned from trading activities before deducting business expenses, calculated as sales minus cost of sales"
+      },
+      {
+        "term": "Net profit",
+        "definition": "The final profit remaining after deducting all business expenses from gross profit"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Set out the full trading account/income statement with proper headings and layout"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show your working clearly and state the final answer with appropriate label"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why closing inventory is deducted when calculating cost of sales. (3 marks)",
+      "marks": 3,
+      "answer": "Closing inventory is deducted because it represents goods that have been purchased but not yet sold. Cost of sales should only include the cost of goods that have actually been sold to customers during the period. By deducting closing inventory from opening inventory plus purchases, we arrive at the true cost of goods sold.",
+      "markBreakdown": [
+        "Mark 1: Closing inventory represents goods purchased but not sold",
+        "Mark 2: Cost of sales should only include goods actually sold",
+        "Mark 3: Deducting closing inventory gives true cost of goods sold"
+      ]
+    },
+    "commonMistakes": [
+      "Never include closing inventory in cost of sales calculation - always deduct it",
+      "Students often forget to include carriage inwards as part of purchases in cost of sales",
+      "Never put expenses like rent and wages in the trading account - these go in the income statement",
+      "Students confuse sales returns with purchases returns when calculating net sales and net purchases",
+      "Never show negative gross profit as a loss - always state 'Gross loss' clearly"
+    ],
+    "examinerTips": [
+      "Trading account questions appear in almost every Paper 2 exam",
+      "Always show your workings for cost of sales calculation step by step",
+      "Use proper headings and underline totals for presentation marks",
+      "Remember to label your final answer as 'Gross profit' or 'Net profit'"
+    ],
+    "formulas": [
+      "Cost of sales = Opening inventory + Purchases - Closing inventory",
+      "Gross profit = Sales - Cost of sales",
+      "Net profit = Gross profit - Expenses"
+    ],
+    "keyDiagramDescription": "Vertical format trading account showing Sales at top, less Cost of sales (with breakdown of opening inventory + purchases - closing inventory), equals Gross profit. Then Income statement showing Gross profit less Expenses equals Net profit."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:37:46.474Z",
+  "updated_at": "2026-04-06T03:37:46.474Z"
+}

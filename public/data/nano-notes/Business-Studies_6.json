@@ -1,0 +1,96 @@
+{
+  "subject": "Business Studies",
+  "subject_code": "7115",
+  "level": "O Level",
+  "theme": "Business Environment",
+  "chapter_id": "6",
+  "chapter_name": "External Influences",
+  "note_data": {
+    "title": "External Influences",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Government** can influence business through taxation, subsidies, legislation and regulation",
+      "**Economic factors** include interest rates, inflation, unemployment and exchange rates which affect business costs and demand",
+      "**Legal constraints** such as employment law, consumer protection and environmental regulations must be followed by all businesses",
+      "**Globalisation** increases competition but also provides opportunities for businesses to expand into new markets",
+      "**Technology** changes create both opportunities for innovation and threats to traditional business models",
+      "**Environmental factors** such as climate change and pollution create new regulations and consumer expectations",
+      "**Social and cultural changes** affect consumer preferences and business practices",
+      "**Competition** from other businesses forces firms to improve quality, reduce prices or innovate"
+    ],
+    "definitions": [
+      {
+        "term": "External influences",
+        "definition": "Factors outside the business that affect its operations and performance but cannot be controlled by the business"
+      },
+      {
+        "term": "Globalisation",
+        "definition": "The process by which businesses operate on an international scale and develop international influence"
+      },
+      {
+        "term": "Interest rate",
+        "definition": "The cost of borrowing money or the reward for saving money, expressed as a percentage"
+      },
+      {
+        "term": "Inflation",
+        "definition": "A general increase in prices and fall in the purchasing value of money"
+      },
+      {
+        "term": "Exchange rate",
+        "definition": "The value of one currency expressed in terms of another currency"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the impact and explain consequences using 'therefore' or 'as a result'"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Weigh up advantages and disadvantages, then make a justified conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two ways government policies could affect a textile business in Pakistan. [6 marks]",
+      "marks": 6,
+      "answer": "One way is through taxation policies. If the government increases corporation tax, the textile business will have to pay more tax on its profits. This reduces the amount of profit available for reinvestment or paying dividends to shareholders. Another way is through trade policies such as export subsidies. If the government provides subsidies for textile exports, this reduces the business's costs of selling abroad. This makes Pakistani textiles more competitive in international markets and could increase sales and profits.",
+      "markBreakdown": [
+        "Mark 1: Identifies taxation as government policy",
+        "Mark 2: Explains how increased tax reduces available profits",
+        "Mark 3: Explains consequence of reduced profits",
+        "Mark 4: Identifies export subsidies as government policy",
+        "Mark 5: Explains how subsidies reduce costs",
+        "Mark 6: Explains consequence of increased competitiveness"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse internal and external influences - government policies are external, not internal factors",
+      "Students often give vague answers about 'government helping business' - be specific about HOW (taxation, subsidies, regulations)",
+      "Don't just state the influence exists - always explain the IMPACT on the business",
+      "Avoid saying 'globalisation is good/bad' - explain specific advantages AND disadvantages",
+      "Never ignore the Pakistani context when examples are needed"
+    ],
+    "examinerTips": [
+      "External influences questions appear in every paper - learn specific examples for each type",
+      "Always link economic factors to business impact - costs, revenue, profits, cash flow",
+      "Use Pakistani examples: textile exports, agricultural subsidies, technology imports",
+      "For evaluation questions, consider both positive and negative impacts before concluding"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "External influences diagram showing business in center with arrows pointing inward from: Government (taxes, laws), Economic (interest rates, inflation), Social (demographics, culture), Technology (automation, internet), Environmental (climate, resources), Competition (rivals, substitutes)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:53:48.022Z",
+  "updated_at": "2026-04-06T03:53:48.022Z"
+}

@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Business",
+  "subject_code": "9609",
+  "level": "A Level",
+  "theme": "AS Business",
+  "chapter_id": "AS3",
+  "chapter_name": "Marketing",
+  "note_data": {
+    "title": "Marketing",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Marketing** is the management process responsible for identifying, anticipating and satisfying consumer requirements profitably",
+      "**Market research** provides up-to-date and relevant information to reduce the risk of making wrong decisions",
+      "**Market segmentation** is the classification of customers or potential customers into groups with similar characteristics",
+      "**Marketing mix** consists of the four Ps: Product, Price, Place and Promotion that must be coordinated to achieve marketing objectives",
+      "**Price elasticity of demand** measures the responsiveness of quantity demanded to a change in price",
+      "**Primary research** collects first-hand data specific to the business's needs while **secondary research** uses existing data",
+      "**Market orientation** focuses on consumer needs whereas **product orientation** focuses on the product itself",
+      "**Brand loyalty** occurs when customers consistently purchase the same brand due to satisfaction and familiarity"
+    ],
+    "definitions": [
+      {
+        "term": "Marketing",
+        "definition": "The management process responsible for identifying, anticipating and satisfying consumer requirements profitably"
+      },
+      {
+        "term": "Market segmentation",
+        "definition": "The classification of customers or potential customers into groups with similar characteristics"
+      },
+      {
+        "term": "Price elasticity of demand",
+        "definition": "A measure of the responsiveness of quantity demanded to a change in price"
+      },
+      {
+        "term": "Primary research",
+        "definition": "The collection of first-hand data that is directly related to a firm's needs"
+      },
+      {
+        "term": "Marketing mix",
+        "definition": "The four key decisions that must be taken in the effective marketing of a product: Product, Price, Place and Promotion"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the issue, examine causes/consequences, use business theory"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Make judgements, weigh up pros and cons, conclude with justified opinion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two benefits of market segmentation to a Pakistani textile company. [6 marks]",
+      "marks": 6,
+      "answer": "One benefit is targeted marketing communications. This is because the company can design specific promotional campaigns for each segment, such as creating different advertisements for young fashion-conscious consumers versus traditional buyers, leading to more effective marketing spend. Another benefit is product differentiation. This is because the company can develop different textile products to meet specific needs of each segment, such as affordable cotton fabrics for price-sensitive customers and premium silk products for luxury buyers, allowing the company to charge different prices and increase market share.",
+      "markBreakdown": [
+        "Mark 1: Identification of first benefit",
+        "Mark 2: Explanation of first benefit with context",
+        "Mark 3: Development/example for first benefit",
+        "Mark 4: Identification of second benefit",
+        "Mark 5: Explanation of second benefit with context",
+        "Mark 6: Development/example for second benefit"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse market research with marketing research - market research is specifically about the market",
+      "Students often think price elastic means responsive to income changes - it's responsiveness to price changes only",
+      "Don't say marketing is just advertising - marketing includes product, price, place and promotion",
+      "Avoid saying primary research is always better - acknowledge cost and time disadvantages",
+      "Never confuse market share with market growth - share is percentage of total market, growth is increase in market size"
+    ],
+    "examinerTips": [
+      "Marketing questions appear in every Paper 2 - learn all four Ps thoroughly",
+      "Always use Pakistani business examples when possible (Engro Foods, National Foods)",
+      "Price elasticity calculations are common - practice the formula until automatic",
+      "Market research questions often ask for methods AND evaluation of each method"
+    ],
+    "formulas": [
+      "Price Elasticity of Demand = % change in quantity demanded / % change in price",
+      "Market Share = (Company Sales / Total Market Sales) × 100"
+    ],
+    "keyDiagramDescription": "Price elasticity demand curve showing elastic (flatter curve) versus inelastic (steeper curve) demand, with price on y-axis and quantity on x-axis"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:11:44.476Z",
+  "updated_at": "2026-04-06T05:11:44.476Z"
+}

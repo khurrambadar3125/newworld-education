@@ -1,0 +1,98 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Organic Chemistry",
+  "chapter_id": "20",
+  "chapter_name": "Petrochemicals and polymers",
+  "note_data": {
+    "title": "Petrochemicals and polymers",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Petroleum** is a mixture of hydrocarbons separated by fractional distillation into fractions with different boiling points",
+      "**Cracking** breaks down long-chain alkanes into shorter, more useful alkenes and alkanes using heat and catalysts",
+      "**Alkenes** are unsaturated hydrocarbons that can undergo addition polymerisation to form polymers",
+      "**Polymers** are large molecules formed when many small molecules (monomers) join together by covalent bonds",
+      "**Addition polymerisation** occurs when alkene monomers join together without eliminating any small molecules",
+      "**Plastics** are synthetic polymers that can be moulded into shape when heated",
+      "**Thermoplastics** can be repeatedly heated and reshaped, while **thermosetting plastics** cannot be reshaped once formed",
+      "**Polyethene** is formed from ethene monomers and is used for plastic bags and containers",
+      "**PVC (polyvinyl chloride)** is formed from chloroethene and is used for pipes and clothing"
+    ],
+    "definitions": [
+      {
+        "term": "Polymer",
+        "definition": "A large molecule formed when many small molecules (monomers) join together by covalent bonds"
+      },
+      {
+        "term": "Monomer",
+        "definition": "A small molecule that can join with other identical molecules to form a polymer"
+      },
+      {
+        "term": "Addition polymerisation",
+        "definition": "A reaction where alkene monomers join together to form a polymer without eliminating any small molecules"
+      },
+      {
+        "term": "Cracking",
+        "definition": "The breaking down of long-chain alkanes into shorter, more useful alkenes and alkanes using heat and catalysts"
+      },
+      {
+        "term": "Plastic",
+        "definition": "A synthetic polymer that can be moulded into shape when heated"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Draw",
+        "instruction": "Show the polymer structure with at least 3 monomer units and continuation bonds"
+      },
+      {
+        "commandWord": "Name",
+        "instruction": "Give the exact chemical name - polyethene not polythene"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Ethene can be converted into polyethene. (a) Name the type of reaction. (b) Draw the structure of polyethene showing at least 3 monomer units. (c) Give one use of polyethene.",
+      "marks": 4,
+      "answer": "(a) Addition polymerisation (b) [Structure showing -CH₂-CH₂-CH₂-CH₂-CH₂-CH₂- with continuation bonds] (c) Plastic bags / containers / bottles",
+      "markBreakdown": [
+        "Mark 1: Addition polymerisation",
+        "Mark 2: Correct repeating unit structure",
+        "Mark 3: At least 3 monomer units shown",
+        "Mark 4: Valid use given"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'polythene' — always say 'polyethene' for the polymer of ethene",
+      "Students often forget to show continuation bonds (brackets and n) in polymer structures",
+      "Never confuse addition polymerisation with condensation polymerisation — addition has no small molecule eliminated",
+      "Students often draw monomer structures instead of polymer structures when asked for polymer",
+      "Never say polymers are formed by 'mixing' monomers — they join by covalent bonds"
+    ],
+    "examinerTips": [
+      "Polymer questions appear almost every year in Paper 2 Section B",
+      "Always draw continuation bonds when showing polymer structures for full marks",
+      "Learn the exact names: polyethene, polypropene, polyvinyl chloride (PVC)",
+      "Pakistan's plastic industry in Karachi produces many of these polymers - good context for uses"
+    ],
+    "formulas": [
+      "nC₂H₄ → (C₂H₄)ₙ",
+      "nCH₂=CHCl → (CH₂CHCl)ₙ"
+    ],
+    "keyDiagramDescription": "Polymer structure showing repeating monomer units with continuation bonds (brackets with 'n' subscript) to indicate the polymer continues"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:57:45.020Z",
+  "updated_at": "2026-04-05T20:57:45.020Z"
+}

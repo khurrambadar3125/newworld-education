@@ -1,0 +1,111 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "7",
+  "chapter_name": "Electrochemistry",
+  "note_data": {
+    "title": "Electrochemistry",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Electrochemistry is the branch of chemistry that deals with the relationship between electrical energy and chemical energy",
+      "Electrolysis is the process in which electrical energy is used to bring about a non-spontaneous chemical reaction",
+      "An electrolyte is a substance that conducts electricity when dissolved in water or when melted",
+      "Strong electrolytes completely ionize in solution while weak electrolytes partially ionize",
+      "Electroplating is the process of depositing a thin layer of metal on another metal by electrolysis",
+      "Galvanic cells convert chemical energy into electrical energy spontaneously",
+      "The anode is the electrode where oxidation occurs and cathode is where reduction occurs",
+      "Faraday's laws relate the amount of substance deposited to the quantity of electricity passed",
+      "Applications include electroplating of jewelry in Karachi's markets and purification of copper"
+    ],
+    "definitions": [
+      {
+        "term": "Electrolysis",
+        "definition": "The process in which electrical energy is used to bring about a non-spontaneous chemical reaction"
+      },
+      {
+        "term": "Electrolyte",
+        "definition": "A substance that conducts electricity when dissolved in water or when melted due to the presence of mobile ions"
+      },
+      {
+        "term": "Electroplating",
+        "definition": "The process of depositing a thin layer of one metal on the surface of another metal by means of electrolysis"
+      },
+      {
+        "term": "Galvanic Cell",
+        "definition": "An electrochemical cell that converts chemical energy into electrical energy by means of spontaneous redox reactions"
+      },
+      {
+        "term": "Faraday",
+        "definition": "The quantity of electricity required to deposit or liberate one gram equivalent of any substance during electrolysis, equal to 96,500 coulombs"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between strong and weak electrolytes with examples.",
+        "answer": "Strong electrolytes completely ionize in aqueous solution (e.g., NaCl, HCl) while weak electrolytes partially ionize in solution (e.g., CH₃COOH, NH₄OH). Strong electrolytes conduct electricity better than weak electrolytes."
+      },
+      {
+        "type": "long",
+        "question": "Describe the electrolysis of acidulated water with diagram. Write electrode reactions.",
+        "answer": "Electrolysis of acidulated water involves passing electric current through water containing dilute H₂SO₄. At cathode: 2H⁺ + 2e⁻ → H₂ (reduction). At anode: 4OH⁻ → 2H₂O + O₂ + 4e⁻ (oxidation). Overall: 2H₂O → 2H₂ + O₂. Hydrogen gas is collected at cathode and oxygen at anode in 2:1 ratio by volume."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is a strong electrolyte?",
+        "options": {
+          "A": "Acetic acid",
+          "B": "Ammonia solution",
+          "C": "Sodium chloride",
+          "D": "Sugar solution"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "In electrolysis, reduction occurs at:",
+        "options": {
+          "A": "Anode",
+          "B": "Cathode",
+          "C": "Both electrodes",
+          "D": "Neither electrode"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "One Faraday is equal to:",
+        "options": {
+          "A": "96,500 coulombs",
+          "B": "96,500 amperes",
+          "C": "96,500 volts",
+          "D": "96,500 joules"
+        },
+        "correct": "A"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse anode with cathode - remember Anode = oxidation, Cathode = reduction",
+      "Writing wrong electrode reactions - always check charge balance",
+      "Forgetting to draw proper electrolysis setup diagram with electrodes labeled",
+      "Mixing up strong and weak electrolytes - degree of ionization is the key difference",
+      "Not converting time to seconds in Faraday's law calculations"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Electrolysis diagram appears frequently - practice drawing it with proper labels",
+      "Faraday's law numerical problems are common in long questions",
+      "Memorize electrode reactions for water electrolysis - comes every year",
+      "Applications of electroplating always asked in short questions"
+    ],
+    "formulas": [
+      "Q = I × t (Quantity of electricity = Current × Time)",
+      "W = (I × t × M) / (96,500 × n) (Faraday's First Law)",
+      "W₁/W₂ = (M₁/n₁) / (M₂/n₂) (Faraday's Second Law)"
+    ],
+    "keyDiagram": "Electrolysis of water setup showing two electrodes (anode and cathode) dipped in acidulated water, connected to battery, with gas collection tubes showing H₂ at cathode and O₂ at anode. Label all parts including electrolyte, electrodes, and gas products."
+  },
+  "created_at": "2026-04-06T06:09:52.021Z"
+}

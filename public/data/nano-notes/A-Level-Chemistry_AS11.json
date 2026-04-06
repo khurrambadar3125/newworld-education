@@ -1,0 +1,98 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Inorganic Chemistry",
+  "chapter_id": "AS11",
+  "chapter_name": "Group 17",
+  "note_data": {
+    "title": "Group 17 (Halogens)",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Halogens** are Group 17 elements with seven electrons in their outer shell and form halide ions with charge -1",
+      "**Electronegativity** decreases down Group 17: F > Cl > Br > I, affecting bond polarity and reactivity",
+      "**Atomic radius** increases down the group due to additional electron shells, weakening attraction to nucleus",
+      "**Oxidising ability** decreases down Group 17: F₂ > Cl₂ > Br₂ > I₂ because larger atoms gain electrons less readily",
+      "**Displacement reactions** occur when a more reactive halogen displaces a less reactive halogen from its halide solution",
+      "**Disproportionation** occurs when chlorine reacts with cold dilute alkali forming chloride and chlorate(I) ions",
+      "**Hydrogen halides** show increasing thermal stability down the group: HF > HCl > HBr > HI",
+      "**Silver halide precipitates** have different colours: AgCl (white), AgBr (cream), AgI (yellow) for halide identification",
+      "**Reducing ability** of halides increases down the group: I⁻ > Br⁻ > Cl⁻ > F⁻ due to decreasing ionisation energy"
+    ],
+    "definitions": [
+      {
+        "term": "Displacement reaction",
+        "definition": "A reaction where a more reactive halogen replaces a less reactive halogen from its halide compound"
+      },
+      {
+        "term": "Disproportionation",
+        "definition": "A redox reaction where the same element is simultaneously oxidised and reduced"
+      },
+      {
+        "term": "Electronegativity",
+        "definition": "The ability of an atom to attract electrons in a covalent bond"
+      },
+      {
+        "term": "Oxidising agent",
+        "definition": "A substance that accepts electrons and causes oxidation of another substance"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the trend in one sentence without explanation, e.g. 'Electronegativity decreases down Group 17'"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the trend plus reason using atomic structure, e.g. 'because atomic radius increases'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give observations AND equations for reactions"
+      },
+      {
+        "commandWord": "Predict",
+        "instruction": "Use the established trend to determine properties of unknown halogens"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why chlorine displaces bromine from potassium bromide solution. Write an equation for this reaction and state what you would observe.",
+      "marks": 4,
+      "answer": "Chlorine is more reactive than bromine because chlorine atoms are smaller so can gain electrons more easily. Cl₂ + 2KBr → 2KCl + Br₂. The colourless solution turns orange/brown due to bromine formation.",
+      "markBreakdown": [
+        "Mark 1: Chlorine is more reactive than bromine",
+        "Mark 2: Explanation using atomic size/electron gain",
+        "Mark 3: Correct balanced equation",
+        "Mark 4: Orange/brown colour observed"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'iodine is purple' in solution - it is brown in aqueous solution, purple only in non-polar solvents",
+      "Students often write incorrect formulas for disproportionation - remember ClO⁻ is chlorate(I), not chlorate(V)",
+      "Don't confuse oxidising ability with reducing ability - they are opposite trends down the group",
+      "Never say 'halogens become more reactive down the group' - reactivity decreases down Group 17",
+      "Students forget that displacement reactions only work if the free halogen is MORE reactive than the halide"
+    ],
+    "examinerTips": [
+      "Halogen displacement reactions appear frequently - learn the colour changes for Cl₂/Br₂/I₂",
+      "Always state observations AND write equations for displacement reactions",
+      "Remember disproportionation only occurs with cold dilute alkali - hot concentrated gives different products",
+      "Use silver nitrate test for halide identification - learn the precipitate colours"
+    ],
+    "formulas": [
+      "Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂",
+      "Cl₂ + 2I⁻ → 2Cl⁻ + I₂",
+      "3Cl₂ + 6OH⁻ → 5Cl⁻ + ClO₃⁻ + 3H₂O",
+      "Cl₂ + 2OH⁻ → Cl⁻ + ClO⁻ + H₂O",
+      "Ag⁺ + Cl⁻ → AgCl",
+      "H₂SO₄ + NaCl → NaHSO₄ + HCl"
+    ],
+    "keyDiagramDescription": "Test tube diagrams showing colour changes in displacement reactions: colourless KBr turning orange with Cl₂, colourless KI turning brown with Cl₂ or Br₂"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:33:26.766Z",
+  "updated_at": "2026-04-06T04:33:26.766Z"
+}

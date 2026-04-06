@@ -1,0 +1,95 @@
+{
+  "subject": "Islamiyat",
+  "subject_code": "2058",
+  "level": "O Level",
+  "theme": "Paper 1",
+  "chapter_id": "P1.4",
+  "chapter_name": "The First Islamic Community",
+  "note_data": {
+    "title": "The First Islamic Community",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **ummah** was established in Medina as the first Islamic community based on religious brotherhood rather than tribal affiliation",
+      "The **Constitution of Medina** created a unified community that included Muslims, Jews and other tribes under Islamic leadership",
+      "**Brotherhood** (ukhuwwa) was established between Muhajirun (emigrants from Mecca) and Ansar (helpers from Medina)",
+      "The ummah was based on **equality** regardless of race, tribe or social status, as all believers were equal before Allah",
+      "**Mutual support** was a key principle where community members helped each other financially, socially and spiritually",
+      "The **mosque** served as the center of community life for worship, education, governance and social activities",
+      "**Islamic laws** (Shariah) governed the community's social, economic and political affairs",
+      "The ummah demonstrated **religious tolerance** by protecting the rights of non-Muslims within the community",
+      "**Economic cooperation** included sharing resources and the establishment of the Baitul Mal (treasury) for community welfare"
+    ],
+    "definitions": [
+      {
+        "term": "Ummah",
+        "definition": "The worldwide community of Muslims united by their faith in Islam, regardless of race, nationality or tribe"
+      },
+      {
+        "term": "Muhajirun",
+        "definition": "The Muslim emigrants who migrated from Mecca to Medina with Prophet Muhammad (PBUH)"
+      },
+      {
+        "term": "Ansar",
+        "definition": "The Muslim helpers from Medina who supported and welcomed the Muhajirun"
+      },
+      {
+        "term": "Constitution of Medina",
+        "definition": "The charter that established the first Islamic state and defined the rights and duties of all communities in Medina"
+      },
+      {
+        "term": "Ukhuwwa",
+        "definition": "Islamic brotherhood that bonds Muslims together based on their shared faith and mutual responsibilities"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of how something was done or what it looked like"
+      },
+      {
+        "commandWord": "Outline",
+        "instruction": "Give main features without detailed explanation"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how the Prophet Muhammad (PBUH) established brotherhood in the first Islamic community. [4 marks]",
+      "marks": 4,
+      "answer": "The Prophet (PBUH) established brotherhood by pairing each Muhajir (emigrant) with an Ansar (helper) from Medina, creating bonds stronger than blood relations. This brotherhood was based on religious faith rather than tribal affiliation, which helped break down pre-Islamic social barriers. The Ansar shared their homes, wealth and property with the Muhajirun, demonstrating practical support and sacrifice. The Prophet (PBUH) emphasized that all Muslims were equal regardless of their race or social status, as stated in his farewell sermon that no Arab has superiority over a non-Arab except in piety.",
+      "markBreakdown": [
+        "Mark 1: Pairing of Muhajirun and Ansar",
+        "Mark 2: Based on faith not tribe",
+        "Mark 3: Practical sharing of resources",
+        "Mark 4: Emphasis on equality regardless of background"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'Muhammad made rules' — always say 'Prophet Muhammad (PBUH) established principles based on Quranic guidance'",
+      "Students often confuse Muhajirun with Ansar — remember Muhajirun migrated FROM Mecca, Ansar were already IN Medina",
+      "Avoid saying 'Muslims were forced to help' — emphasize it was voluntary brotherhood based on faith",
+      "Don't write 'only Muslims lived in Medina' — the Constitution included Jews and other tribes",
+      "Never say 'Islam started in Medina' — Islam began in Mecca but the first Islamic STATE was in Medina"
+    ],
+    "examinerTips": [
+      "This topic appears regularly in Paper 2 questions about early Islamic history",
+      "Always mention specific examples like Muhajirun-Ansar pairing for higher marks",
+      "Reference the Constitution of Medina when discussing the inclusive nature of the community",
+      "Use Quranic verses about brotherhood to support your answers where relevant"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "A diagram showing the structure of Medina's community with the Prophet (PBUH) at the center, surrounded by Muhajirun and Ansar pairs, and including other tribes under the Constitution of Medina"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:45:00.217Z",
+  "updated_at": "2026-04-05T20:45:00.217Z"
+}

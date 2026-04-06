@@ -1,0 +1,86 @@
+{
+  "subject": "Urdu",
+  "subject_code": "3247",
+  "level": "O Level",
+  "theme": "Paper 1: Language",
+  "chapter_id": "P1.4",
+  "chapter_name": "Translation (ترجمہ)",
+  "note_data": {
+    "title": "Translation (ترجمہ)",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Translation** (ترجمہ) means conveying the exact meaning from one language to another while maintaining the original sense and context",
+      "**Literal translation** (لفظی ترجمہ) focuses on word-for-word conversion but may lose the natural flow of the target language",
+      "**Free translation** (آزاد ترجمہ) prioritizes conveying the meaning and spirit of the original text over literal word conversion",
+      "**Accuracy** (درستگی) in translation requires understanding both the source language grammar and target language syntax",
+      "**Context** (سیاق و سباق) must be preserved - the same word may have different meanings in different situations",
+      "**Cultural adaptation** (ثقافتی موافقت) involves adjusting expressions and idioms that don't directly translate between languages",
+      "**Grammatical structures** (گرامری ڈھانچے) must be adapted to fit the target language's natural sentence construction",
+      "**Tense consistency** (زمانے کی یکسانی) must be maintained throughout the translation to preserve the timeline of events"
+    ],
+    "definitions": [
+      {
+        "term": "Translation (ترجمہ)",
+        "definition": "The process of converting text from one language to another while preserving the original meaning, context, and intent"
+      },
+      {
+        "term": "Literal Translation (لفظی ترجمہ)",
+        "definition": "Word-for-word conversion from source to target language, maintaining the exact structure of the original"
+      },
+      {
+        "term": "Free Translation (آزاد ترجمہ)",
+        "definition": "Translation that focuses on conveying the overall meaning and natural flow rather than exact word-for-word conversion"
+      },
+      {
+        "term": "Context (سیاق و سباق)",
+        "definition": "The circumstances and background information that give meaning to words and phrases in translation"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Translate",
+        "instruction": "Convert the given text maintaining accuracy of meaning, proper grammar, and natural flow in the target language"
+      },
+      {
+        "commandWord": "State",
+        "instruction": "Give the translation directly without explanation or additional commentary"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Provide the translation and explain why certain choices were made, using 'because' to justify translation decisions"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Translate the following English sentence into Urdu: 'The students worked hard throughout the year to achieve their goals.'",
+      "marks": 4,
+      "answer": "طلباء نے سارا سال محنت کی تاکہ وہ اپنے مقاصد حاصل کر سکیں۔",
+      "markBreakdown": [
+        "Mark 1: Correct translation of 'students worked hard' (طلباء نے محنت کی)",
+        "Mark 2: Accurate time expression 'throughout the year' (سارا سال)",
+        "Mark 3: Proper purpose clause 'to achieve' (تاکہ حاصل کر سکیں)",
+        "Mark 4: Correct possessive and object 'their goals' (اپنے مقاصد)"
+      ]
+    },
+    "commonMistakes": [
+      "Never translate idioms word-for-word — always find the equivalent expression in the target language",
+      "Students often ignore gender and number agreement when translating from English to Urdu",
+      "Avoid mixing formal and informal registers within the same translation",
+      "Never leave English sentence structure when translating into Urdu — adapt to Urdu grammar patterns",
+      "Students frequently forget to use appropriate honorifics and respect levels in Urdu translations"
+    ],
+    "examinerTips": [
+      "Translation questions appear in both Paper 1 and Paper 2 components",
+      "Always read the entire passage before starting translation to understand the context",
+      "Check your translation by reading it aloud to ensure it sounds natural in the target language",
+      "Pay special attention to tense consistency throughout longer translation passages"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "No specific diagram required for this topic, but understanding sentence structure flow charts can help organize complex translations"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:07:52.656Z",
+  "updated_at": "2026-04-06T04:07:52.656Z"
+}

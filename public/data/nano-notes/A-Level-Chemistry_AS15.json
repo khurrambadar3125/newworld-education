@@ -1,0 +1,93 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Organic Chemistry",
+  "chapter_id": "AS15",
+  "chapter_name": "Halogenoalkanes",
+  "note_data": {
+    "title": "Halogenoalkanes",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Halogenoalkanes** are saturated organic compounds containing carbon, hydrogen and at least one halogen atom",
+      "**Nucleophilic substitution** occurs when a nucleophile attacks the δ+ carbon atom bonded to the halogen",
+      "**SN1 mechanism** involves two steps with a carbocation intermediate and occurs in tertiary halogenoalkanes",
+      "**SN2 mechanism** involves one step with simultaneous bond breaking and forming, occurs in primary halogenoalkanes",
+      "**Elimination reactions** occur when a base removes HX to form an alkene, competing with substitution",
+      "**Rate of hydrolysis** increases down Group 7: C-I > C-Br > C-Cl due to decreasing bond enthalpy",
+      "**Primary halogenoalkanes** undergo SN2 mechanism because steric hindrance is minimal",
+      "**Tertiary halogenoalkanes** undergo SN1 mechanism because tertiary carbocations are most stable",
+      "**Nucleophiles** include OH⁻, CN⁻, NH₃ and have lone pairs of electrons to donate"
+    ],
+    "definitions": [
+      {
+        "term": "Nucleophilic substitution",
+        "definition": "A reaction where a nucleophile attacks an electron-deficient carbon atom and replaces the leaving group"
+      },
+      {
+        "term": "SN1 mechanism",
+        "definition": "A two-step nucleophilic substitution mechanism involving formation of a carbocation intermediate"
+      },
+      {
+        "term": "SN2 mechanism",
+        "definition": "A one-step nucleophilic substitution mechanism involving simultaneous bond breaking and bond forming"
+      },
+      {
+        "term": "Elimination reaction",
+        "definition": "A reaction where a small molecule is removed from a larger molecule to form a double bond"
+      },
+      {
+        "term": "Nucleophile",
+        "definition": "An electron-rich species that donates a lone pair of electrons to an electron-deficient carbon atom"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the mechanism name or product name only. No explanation or steps needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the mechanism details using 'because' and mention bond polarities, intermediate formation"
+      },
+      {
+        "commandWord": "Outline the mechanism",
+        "instruction": "Draw curly arrows showing electron movement and all intermediate structures"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why 2-chloro-2-methylpropane reacts faster than 1-chloropropane in aqueous silver nitrate solution.",
+      "marks": 3,
+      "answer": "2-chloro-2-methylpropane is a tertiary halogenoalkane which undergoes SN1 mechanism forming a tertiary carbocation intermediate that is stabilized by three methyl groups. 1-chloropropane is a primary halogenoalkane which undergoes SN2 mechanism with no intermediate formation. The SN1 mechanism is faster because the tertiary carbocation is more stable.",
+      "markBreakdown": [
+        "Mark 1: Identifies tertiary vs primary structure",
+        "Mark 2: States SN1 vs SN2 mechanism",
+        "Mark 3: Explains stability of tertiary carbocation"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'SN1 is faster than SN2' — always relate to the specific halogenoalkane structure",
+      "Students often forget that elimination competes with substitution at higher temperatures",
+      "Never draw mechanisms without curly arrows showing electron movement",
+      "Students confuse bond enthalpy with bond length when explaining hydrolysis rates",
+      "Never say 'the halogen is electronegative' — say 'the C-X bond is polar with δ+ carbon'"
+    ],
+    "examinerTips": [
+      "Mechanism questions appear every year in Paper 2 - practice drawing curly arrows",
+      "Always state the nucleophile and leaving group clearly in mechanism explanations",
+      "Temperature affects product ratios - higher temperature favors elimination over substitution",
+      "AgNO₃ test questions are common - faster precipitate formation indicates faster hydrolysis"
+    ],
+    "formulas": [
+      "R-X + OH⁻ → R-OH + X⁻",
+      "R-CH₂-CH₂-X + Base → R-CH=CH₂ + HX"
+    ],
+    "keyDiagramDescription": "SN1 mechanism showing step 1: C-X bond breaking to form carbocation, step 2: nucleophile attacking carbocation. SN2 mechanism showing simultaneous C-X bond breaking and C-Nu bond forming with inversion of configuration."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:35:06.862Z",
+  "updated_at": "2026-04-06T04:35:06.862Z"
+}

@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "A2 Computer Science",
+  "chapter_id": "A2.1",
+  "chapter_name": "Data representation",
+  "note_data": {
+    "title": "Data representation",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Floating point** numbers use mantissa and exponent to represent very large and very small decimal numbers",
+      "**Normalisation** ensures the mantissa starts with the first significant digit after the decimal point for maximum precision",
+      "**Bitmap images** store colour values for each pixel, while **vector images** store mathematical descriptions of shapes",
+      "**Sound sampling** converts analogue sound waves to digital by measuring amplitude at regular intervals",
+      "**Sample rate** is measured in Hz and determines sound quality - higher sample rate gives better quality but larger file size",
+      "**Lossy compression** removes data permanently to reduce file size, **lossless compression** allows perfect reconstruction",
+      "**JPEG** is lossy compression for images, **PNG** is lossless compression for images",
+      "**MP3** is lossy compression for sound files, reducing quality to achieve smaller file sizes",
+      "**Resolution** determines image quality - higher resolution means more pixels and better detail but larger file size"
+    ],
+    "definitions": [
+      {
+        "term": "Mantissa",
+        "definition": "The fractional part of a floating point number that stores the significant digits"
+      },
+      {
+        "term": "Exponent",
+        "definition": "The power part of a floating point number that determines the position of the decimal point"
+      },
+      {
+        "term": "Normalisation",
+        "definition": "The process of adjusting the mantissa and exponent so the mantissa has its first significant digit immediately after the decimal point"
+      },
+      {
+        "term": "Sample rate",
+        "definition": "The number of times per second that the amplitude of an analogue sound wave is measured and converted to digital"
+      },
+      {
+        "term": "Lossy compression",
+        "definition": "A compression method that permanently removes some data to reduce file size, resulting in some loss of quality"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of the process step by step"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between two concepts"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why normalisation is used in floating point representation. [3]",
+      "marks": 3,
+      "answer": "Normalisation ensures the mantissa starts with the first significant digit immediately after the decimal point. This maximises the precision of the number by using all available bits in the mantissa effectively. It also provides a standard format that eliminates multiple representations of the same number.",
+      "markBreakdown": [
+        "Mark 1: Mantissa starts with first significant digit after decimal point",
+        "Mark 2: Maximises precision/uses all available bits effectively",
+        "Mark 3: Provides standard format/eliminates multiple representations"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'floating point is more accurate' — always say 'floating point can represent a wider range of numbers'",
+      "Students often confuse sample rate with bit depth when describing sound quality factors",
+      "Never say 'lossy compression loses some data' — always say 'lossy compression permanently removes data that cannot be recovered'",
+      "Students mix up mantissa and exponent functions in floating point representation",
+      "Don't say 'higher resolution means better quality' without mentioning it also means larger file size"
+    ],
+    "examinerTips": [
+      "Floating point representation appears in almost every Paper 2 exam",
+      "Always show the calculation steps when normalising floating point numbers",
+      "For compression questions, always mention both file size AND quality effects",
+      "Sound and image representation questions often ask for trade-offs between quality and storage",
+      "Draw bit patterns clearly when showing floating point representation"
+    ],
+    "formulas": [
+      "Floating point value = mantissa × 2^exponent",
+      "File size (bits) = width × height × colour depth",
+      "Sound file size = sample rate × bit depth × duration × channels"
+    ],
+    "keyDiagramDescription": "Floating point representation diagram showing bit allocation between sign bit, exponent bits, and mantissa bits, with example calculation of the decimal value"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:17:45.701Z",
+  "updated_at": "2026-04-06T05:17:45.701Z"
+}

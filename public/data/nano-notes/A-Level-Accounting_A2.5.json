@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Accounting",
+  "subject_code": "9706",
+  "level": "A Level",
+  "theme": "A2 Accounting",
+  "chapter_id": "A2.5",
+  "chapter_name": "Marginal and absorption costing",
+  "note_data": {
+    "title": "Marginal and absorption costing",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Marginal costing** treats only variable costs as product costs and fixed costs as period costs charged to profit and loss account",
+      "**Absorption costing** treats both variable and fixed costs as product costs absorbed into cost of goods sold",
+      "**Contribution** is sales revenue minus variable costs and is used to cover fixed costs and contribute to profit",
+      "**Break-even point** occurs when total contribution equals total fixed costs with zero profit or loss",
+      "**Margin of safety** is the excess of budgeted sales over break-even sales expressed as units or percentage",
+      "Marginal costing stock valuation includes only variable costs whereas absorption costing includes fixed production overheads",
+      "**Make or buy decisions** compare marginal cost of internal production with external purchase price",
+      "Profit reconciliation between methods occurs because fixed overheads in opening and closing stock differ between absorption and marginal costing",
+      "**Target profit** calculations require adding desired profit to fixed costs then dividing by contribution per unit"
+    ],
+    "definitions": [
+      {
+        "term": "Marginal cost",
+        "definition": "The additional cost incurred by producing one extra unit of output, comprising only variable costs"
+      },
+      {
+        "term": "Absorption costing",
+        "definition": "A costing method that charges all production costs, both fixed and variable, to cost units"
+      },
+      {
+        "term": "Contribution",
+        "definition": "The amount by which sales revenue exceeds variable costs, available to contribute towards fixed costs and profit"
+      },
+      {
+        "term": "Break-even point",
+        "definition": "The level of activity at which total costs equal total revenue and there is neither profit nor loss"
+      },
+      {
+        "term": "Margin of safety",
+        "definition": "The difference between actual or budgeted sales and break-even sales, expressed in units or as a percentage"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly with formulas. Round to 2 decimal places unless stated otherwise."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this means that'"
+      },
+      {
+        "commandWord": "Reconcile",
+        "instruction": "Show the difference in profits and explain with fixed overhead movements in stock"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Lahore Textiles Ltd has fixed costs of Rs 240,000. Variable cost per unit is Rs 15 and selling price is Rs 25. Calculate the break-even point in units and the margin of safety if budgeted sales are 30,000 units.",
+      "marks": 6,
+      "answer": "Contribution per unit = Rs 25 - Rs 15 = Rs 10\nBreak-even point = Fixed costs ÷ Contribution per unit\nBreak-even point = Rs 240,000 ÷ Rs 10 = 24,000 units\nMargin of safety = Budgeted sales - Break-even sales\nMargin of safety = 30,000 - 24,000 = 6,000 units\nMargin of safety % = (6,000 ÷ 30,000) × 100 = 20%",
+      "markBreakdown": [
+        "Mark 1: Contribution per unit calculation",
+        "Mark 2: Break-even formula correctly applied",
+        "Mark 3: Break-even units answer",
+        "Mark 4: Margin of safety units calculation",
+        "Mark 5: Margin of safety units answer",
+        "Mark 6: Margin of safety percentage"
+      ]
+    },
+    "commonMistakes": [
+      "Never include fixed costs in marginal cost calculations — only variable costs count",
+      "Students often forget to reconcile profit differences by considering fixed overheads absorbed in stock movements",
+      "In make or buy decisions, never compare total absorption cost with purchase price — use marginal cost only",
+      "Students incorrectly add profit to selling price instead of to fixed costs when calculating target profit",
+      "Confusing contribution per unit with gross profit per unit in break-even calculations"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 2 and frequently in Paper 3",
+      "Always show break-even calculations as a formula followed by substitution",
+      "Profit reconciliation questions require clear explanation of stock valuation differences",
+      "Make or buy decisions must consider qualitative factors for full marks"
+    ],
+    "formulas": [
+      "Contribution per unit = Selling price per unit - Variable cost per unit",
+      "Break-even point (units) = Fixed costs ÷ Contribution per unit",
+      "Margin of safety = Budgeted sales - Break-even sales",
+      "Target profit units = (Fixed costs + Target profit) ÷ Contribution per unit",
+      "Profit under absorption costing = Profit under marginal costing + Fixed overheads absorbed in closing stock - Fixed overheads in opening stock"
+    ],
+    "keyDiagramDescription": "Break-even chart showing total cost line, sales revenue line, break-even point intersection, fixed cost line, variable cost area, and margin of safety clearly labeled with Pakistani currency (Rs) on y-axis and units on x-axis"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:28:53.200Z",
+  "updated_at": "2026-04-06T05:28:53.200Z"
+}

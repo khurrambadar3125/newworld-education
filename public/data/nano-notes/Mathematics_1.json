@@ -1,0 +1,101 @@
+{
+  "subject": "Mathematics",
+  "subject_code": "4024",
+  "level": "O Level",
+  "theme": "Number and Algebra",
+  "chapter_id": "1",
+  "chapter_name": "Number",
+  "note_data": {
+    "title": "Number",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Natural numbers** are positive integers: 1, 2, 3, 4, ... (used for counting)",
+      "**Rational numbers** can be expressed as p/q where p and q are integers and q ≠ 0",
+      "**Irrational numbers** cannot be expressed as a fraction (e.g., √2, π, surds)",
+      "**Standard form** is written as a × 10ⁿ where 1 ≤ a < 10 and n is an integer",
+      "When **ordering** numbers, convert all to the same form (decimals or fractions) first",
+      "**Percentage change** = (new value - original value) ÷ original value × 100%",
+      "In **ratio and proportion**, if a:b = c:d, then ad = bc (cross multiplication)",
+      "**Estimation** requires rounding numbers to 1 significant figure before calculating",
+      "**Surds** in simplest form have no perfect square factors under the square root sign",
+      "**Upper and lower bounds** depend on the degree of accuracy given in the question"
+    ],
+    "definitions": [
+      {
+        "term": "Prime Number",
+        "definition": "A natural number greater than 1 that has exactly two factors: 1 and itself"
+      },
+      {
+        "term": "Standard Form",
+        "definition": "A number written in the form a × 10ⁿ where 1 ≤ a < 10 and n is an integer"
+      },
+      {
+        "term": "Surd",
+        "definition": "An irrational number involving a square root that cannot be simplified to give a rational number"
+      },
+      {
+        "term": "Significant Figures",
+        "definition": "The meaningful digits in a number, counting from the first non-zero digit"
+      },
+      {
+        "term": "Percentage",
+        "definition": "A fraction expressed as parts per hundred, written with the symbol %"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Express",
+        "instruction": "Write the answer in the form requested (e.g., standard form, percentage, ratio)"
+      },
+      {
+        "commandWord": "Estimate",
+        "instruction": "Round all numbers to 1 significant figure, then calculate"
+      },
+      {
+        "commandWord": "Simplify",
+        "instruction": "Give the answer in its simplest form with no common factors"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working steps and give the exact numerical answer"
+      }
+    ],
+    "modelAnswer": {
+      "question": "The population of Karachi is 1.47 × 10⁷. The population of Lahore is 1.13 × 10⁷. Calculate the difference and express your answer in standard form.",
+      "marks": 3,
+      "answer": "Difference = 1.47 × 10⁷ - 1.13 × 10⁷ = (1.47 - 1.13) × 10⁷ = 0.34 × 10⁷ = 3.4 × 10⁶",
+      "markBreakdown": [
+        "Mark 1: Correct subtraction (1.47 - 1.13) × 10⁷",
+        "Mark 2: Correct calculation giving 0.34 × 10⁷",
+        "Mark 3: Final answer in correct standard form 3.4 × 10⁶"
+      ]
+    },
+    "commonMistakes": [
+      "Never write 0.34 × 10⁷ as final answer in standard form — always adjust to 3.4 × 10⁶",
+      "Students often forget that 1 ≤ a < 10 in standard form, writing answers like 14.7 × 10⁶",
+      "When converting fractions to percentages, students multiply by 10 instead of 100",
+      "In ratio problems, students add the ratios instead of using cross multiplication",
+      "Students round too early in multi-step calculations, losing accuracy marks"
+    ],
+    "examinerTips": [
+      "Standard form appears in almost every Paper 2, worth 2-4 marks typically",
+      "Always check your standard form answer: coefficient between 1 and 10",
+      "For estimation questions, show your rounded numbers clearly for method marks",
+      "Percentage questions often test reverse percentages — practice finding original values"
+    ],
+    "formulas": [
+      "Percentage = (part/whole) × 100%",
+      "Percentage change = ((new - original)/original) × 100%",
+      "Standard form: a × 10ⁿ where 1 ≤ a < 10",
+      "Upper bound = measurement + (0.5 × unit of measurement)",
+      "Lower bound = measurement - (0.5 × unit of measurement)"
+    ],
+    "keyDiagramDescription": "Number line showing position of different types of numbers (natural, integers, rational, irrational) and their relationships"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:22:26.686Z",
+  "updated_at": "2026-04-05T21:22:26.687Z"
+}

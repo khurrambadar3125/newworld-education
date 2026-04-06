@@ -1,0 +1,94 @@
+{
+  "subject": "A Level Psychology",
+  "subject_code": "9990",
+  "level": "A Level",
+  "theme": "AS Psychology",
+  "chapter_id": "AS5",
+  "chapter_name": "The social approach",
+  "note_data": {
+    "title": "The social approach",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Social influence** occurs when a person's behaviour, thoughts or feelings are affected by the real or imagined presence of others",
+      "**Conformity** is changing one's behaviour to match that of a group, demonstrated in Asch's line judgment studies where participants gave incorrect answers",
+      "**Obedience** is following direct orders from an authority figure, as shown in Milgram's shock experiment where 65% delivered maximum voltage",
+      "**Social identity theory** explains that people categorise themselves into in-groups and out-groups, leading to in-group favouritism and out-group discrimination",
+      "**Prejudice** involves negative attitudes toward members of other groups, while **discrimination** involves negative behaviour toward those groups",
+      "**Social facilitation** occurs when performance improves in the presence of others for well-learned tasks but worsens for complex tasks",
+      "**Groupthink** happens when group members prioritise harmony over realistic evaluation of alternatives, leading to poor decision-making",
+      "**Bystander effect** shows that people are less likely to help in emergencies when others are present due to diffusion of responsibility"
+    ],
+    "definitions": [
+      {
+        "term": "Conformity",
+        "definition": "A change in behaviour or belief as a result of real or imagined group pressure"
+      },
+      {
+        "term": "Obedience",
+        "definition": "Following direct orders or commands from an authority figure"
+      },
+      {
+        "term": "Social identity theory",
+        "definition": "Theory explaining how people define themselves through group membership, leading to in-group favouritism and out-group prejudice"
+      },
+      {
+        "term": "Prejudice",
+        "definition": "A negative attitude toward members of a particular group based solely on their group membership"
+      },
+      {
+        "term": "Bystander effect",
+        "definition": "The tendency for people to be less likely to help in an emergency when other people are present"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Outline",
+        "instruction": "Give brief details without explanation - stick to key features only"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account including procedure, findings and conclusions for studies"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two factors that affect conformity. [4 marks]",
+      "marks": 4,
+      "answer": "Group size affects conformity because conformity increases with group size up to about 4-5 people, after which it levels off. This is because a larger group creates more pressure to conform but beyond a certain point additional members have little extra influence. Task difficulty affects conformity because when tasks become more difficult or ambiguous, people are more likely to look to others for guidance about the correct response. This is because people use others as a source of information when they are uncertain about their own judgement.",
+      "markBreakdown": [
+        "Mark 1: Group size identified as factor",
+        "Mark 2: Explanation of how group size affects conformity",
+        "Mark 3: Task difficulty identified as factor",
+        "Mark 4: Explanation of how task difficulty affects conformity"
+      ]
+    },
+    "commonMistakes": [
+      "Never say conformity is 'peer pressure' — always say 'group influence' or 'social pressure'",
+      "Students often confuse conformity with obedience — conformity has no direct orders, obedience involves commands from authority",
+      "Don't say Milgram's participants were 'forced' — they chose to continue despite being free to leave",
+      "Never describe prejudice as just 'dislike' — it must be negative attitudes based on group membership",
+      "Students incorrectly think social facilitation always improves performance — it depends on task difficulty"
+    ],
+    "examinerTips": [
+      "Social approach questions appear in every Paper 2 - learn Asch and Milgram studies thoroughly",
+      "Always distinguish between prejudice (attitudes) and discrimination (behaviour) for full marks",
+      "Use real examples from Pakistani society when discussing in-groups/out-groups (e.g., cricket team support)",
+      "For evaluation points, consider cultural bias in Western studies when applying to collectivist cultures like Pakistan"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Asch's line judgment task showing the standard line and three comparison lines A, B, C, where participants had to match the standard line length despite confederates giving obviously wrong answers"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:22:02.798Z",
+  "updated_at": "2026-04-06T05:22:02.798Z"
+}

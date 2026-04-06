@@ -1,0 +1,95 @@
+{
+  "subject": "Computer Science",
+  "subject_code": "2210",
+  "level": "O Level",
+  "theme": "Paper 1: Computer Systems",
+  "chapter_id": "1",
+  "chapter_name": "Data representation",
+  "note_data": {
+    "title": "Data representation",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Binary** uses only two digits: 0 and 1, representing ON and OFF states in computer circuits",
+      "**Hexadecimal** uses base 16 (0-9, A-F) and is used as a shorthand for binary because one hex digit represents exactly 4 binary digits",
+      "**Two's complement** is used to represent negative numbers in binary by inverting all bits and adding 1",
+      "**ASCII** assigns a unique 7-bit binary code to each character, allowing 128 different characters",
+      "**Unicode** uses 16 or 32 bits per character, allowing representation of characters from all world languages including Urdu",
+      "**Bitmap images** are stored as pixels with each pixel having a binary value representing its colour",
+      "**Sound** is stored digitally by taking samples of the analogue sound wave at regular intervals and converting to binary",
+      "**Data compression** reduces file size by removing redundant or unnecessary data using lossless or lossy methods",
+      "**Storage capacity** is measured in bytes, with 1 byte = 8 bits, 1 KB = 1024 bytes, 1 MB = 1024 KB"
+    ],
+    "definitions": [
+      {
+        "term": "Binary",
+        "definition": "A number system that uses only two digits (0 and 1) to represent all data in computers"
+      },
+      {
+        "term": "Hexadecimal",
+        "definition": "A number system using base 16 with digits 0-9 and letters A-F, used as shorthand for binary"
+      },
+      {
+        "term": "Two's complement",
+        "definition": "A method for representing negative numbers in binary by inverting all bits and adding 1"
+      },
+      {
+        "term": "ASCII",
+        "definition": "American Standard Code for Information Interchange - a 7-bit character encoding standard"
+      },
+      {
+        "term": "Data compression",
+        "definition": "The process of reducing the size of data files by removing redundant or unnecessary information"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Convert",
+        "instruction": "Show your working step by step. For binary to denary: multiply each digit by its place value. For denary to binary: repeatedly divide by 2."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the method AND the reason why it works using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "State",
+        "instruction": "Give the fact directly with no explanation or working"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how the two's complement method is used to represent the denary number -6 in 8-bit binary.",
+      "marks": 4,
+      "answer": "First convert +6 to 8-bit binary: 00000110. Then invert all the bits: 11111001. Finally add 1 to get the two's complement: 11111010. This method works because it allows negative numbers to be stored using the same binary arithmetic operations as positive numbers.",
+      "markBreakdown": [
+        "Mark 1: Convert +6 to binary (00000110)",
+        "Mark 2: Invert all bits (11111001)",
+        "Mark 3: Add 1 to get final answer (11111010)",
+        "Mark 4: Explain why method is used"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'flip the bits' — always say 'invert all the bits' when describing two's complement",
+      "Students often forget that 1 KB = 1024 bytes, not 1000 bytes",
+      "Never confuse ASCII with Unicode — ASCII is 7-bit, Unicode is 16 or 32-bit",
+      "Students often mix up lossless and lossy compression — lossless keeps all original data, lossy removes some data permanently",
+      "When converting binary to denary, always show place values (128, 64, 32, 16, 8, 4, 2, 1) for 8-bit"
+    ],
+    "examinerTips": [
+      "Binary conversion questions appear in every paper — practice until automatic",
+      "Hexadecimal questions often ask for conversion to/from binary — remember 4 bits = 1 hex digit",
+      "Sound and image representation questions always ask about factors affecting quality and file size",
+      "Two's complement questions are common — always show all three steps for full marks"
+    ],
+    "formulas": [
+      "File size (bits) = Resolution × Colour depth",
+      "Sound file size = Sample rate × Sample resolution × Length × Number of channels",
+      "Place values (8-bit): 128, 64, 32, 16, 8, 4, 2, 1"
+    ],
+    "keyDiagramDescription": "Binary place value diagram showing 8-bit positions with values 128, 64, 32, 16, 8, 4, 2, 1 from left to right"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:43:28.768Z",
+  "updated_at": "2026-04-06T03:43:28.769Z"
+}

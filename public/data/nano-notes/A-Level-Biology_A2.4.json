@@ -1,0 +1,93 @@
+{
+  "subject": "A Level Biology",
+  "subject_code": "9700",
+  "level": "A Level",
+  "theme": "A2 Biology",
+  "chapter_id": "A2.4",
+  "chapter_name": "Coordination",
+  "note_data": {
+    "title": "Coordination",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Neurons** transmit electrical impulses as action potentials along their axons",
+      "**Resting potential** is -70mV maintained by sodium-potassium pump which actively transports 3Na+ out and 2K+ in",
+      "**Action potential** occurs when threshold potential (-55mV) is reached causing voltage-gated sodium channels to open",
+      "**Depolarisation** happens when Na+ ions rush into the axon making the inside positive (+40mV)",
+      "**Repolarisation** occurs when K+ channels open and K+ ions leave the axon, restoring negative charge inside",
+      "**Synapses** transmit impulses using neurotransmitters which diffuse across the synaptic cleft",
+      "**Endocrine system** uses hormones transported in blood plasma to target organs with specific receptors",
+      "**Hormones** are chemical messengers that bind to complementary receptor proteins on target cells",
+      "**Negative feedback** maintains homeostasis by detecting deviations from set point and triggering corrective responses"
+    ],
+    "definitions": [
+      {
+        "term": "Action potential",
+        "definition": "A rapid change in potential difference across the axon membrane from -70mV to +40mV caused by movement of sodium and potassium ions"
+      },
+      {
+        "term": "Synapse",
+        "definition": "A junction between two neurons where neurotransmitters are released from presynaptic neuron and bind to receptors on postsynaptic neuron"
+      },
+      {
+        "term": "Hormone",
+        "definition": "A chemical messenger produced by endocrine glands and transported in blood plasma to target organs where it binds to specific receptors"
+      },
+      {
+        "term": "Threshold potential",
+        "definition": "The minimum depolarisation (-55mV) required to trigger opening of voltage-gated sodium channels and initiate an action potential"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of events in logical order with linking words"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences using 'both/whereas/however'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how an action potential is transmitted along an unmyelinated axon. [6]",
+      "marks": 6,
+      "answer": "Stimulus causes depolarisation of axon membrane. When threshold potential (-55mV) is reached, voltage-gated sodium channels open. Sodium ions rush into axon down concentration gradient making inside positive (+40mV). Local currents spread to adjacent regions of membrane causing depolarisation to spread. Voltage-gated potassium channels open and potassium ions leave axon. Sodium-potassium pump actively transports 3Na+ out and 2K+ in to restore resting potential (-70mV).",
+      "markBreakdown": [
+        "Mark 1: Threshold potential reached/-55mV",
+        "Mark 2: Voltage-gated sodium channels open",
+        "Mark 3: Sodium ions enter/depolarisation",
+        "Mark 4: Local currents spread depolarisation",
+        "Mark 5: Potassium channels open/K+ leaves",
+        "Mark 6: Sodium-potassium pump restores resting potential"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'nerve impulse travels' — always say 'action potential propagates along axon'",
+      "Students often confuse depolarisation with repolarisation - remember depolarisation is becoming less negative",
+      "Don't say hormones 'target specific organs' without mentioning complementary receptors",
+      "Never describe synapses as 'gaps' — they are junctions with synaptic cleft",
+      "Students forget that sodium-potassium pump uses ATP and transports 3Na+ out, 2K+ in"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 2 - learn the voltage values (-70mV, -55mV, +40mV)",
+      "Always include ion movements and voltage changes when describing action potentials",
+      "Synapse questions often ask for neurotransmitter release mechanism - mention calcium ions",
+      "Hormone questions require mention of blood transport and complementary receptors for full marks"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Action potential graph showing resting potential (-70mV), threshold (-55mV), depolarisation peak (+40mV), repolarisation and refractory period over time. Label voltage-gated Na+ and K+ channel opening/closing points."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:05:20.210Z",
+  "updated_at": "2026-04-06T05:05:20.211Z"
+}

@@ -1,0 +1,110 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "12",
+  "chapter_name": "Sides and Angles of a Triangle",
+  "note_data": {
+    "title": "Sides and Angles of a Triangle",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Triangle Inequality — The sum of any two sides of a triangle is greater than the third side",
+      "Angle Sum Property — The sum of all interior angles of a triangle is 180°",
+      "Exterior Angle Property — An exterior angle of a triangle is equal to the sum of two non-adjacent interior angles",
+      "In any triangle, the greater side is opposite to the greater angle and vice versa",
+      "In any triangle, the smaller side is opposite to the smaller angle and vice versa",
+      "The perpendicular from any vertex to the opposite side is the shortest distance from the vertex to that side",
+      "If two sides of a triangle are equal, then the angles opposite to them are also equal (Isosceles triangle property)",
+      "The sum of any two sides of a triangle is greater than the third side, and the difference of any two sides is less than the third side"
+    ],
+    "definitions": [
+      {
+        "term": "Triangle Inequality",
+        "definition": "In any triangle, the sum of any two sides is greater than the third side"
+      },
+      {
+        "term": "Exterior Angle",
+        "definition": "An angle formed by one side of a triangle and the extension of an adjacent side"
+      },
+      {
+        "term": "Interior Angle",
+        "definition": "An angle formed by two sides of a triangle inside the triangle"
+      },
+      {
+        "term": "Isosceles Triangle",
+        "definition": "A triangle in which two sides are equal and the angles opposite to equal sides are also equal"
+      },
+      {
+        "term": "Scalene Triangle",
+        "definition": "A triangle in which all three sides are of different lengths and all three angles are of different measures"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "State the triangle inequality theorem.",
+        "answer": "Triangle Inequality Theorem states that in any triangle, the sum of any two sides is greater than the third side. If a, b, c are sides of triangle then a + b > c, b + c > a, and a + c > b."
+      },
+      {
+        "type": "long",
+        "question": "Prove that an exterior angle of a triangle is equal to the sum of two non-adjacent interior angles.",
+        "answer": "Given: Triangle ABC with exterior angle ACD. To Prove: ∠ACD = ∠A + ∠B. Proof: In triangle ABC, ∠A + ∠B + ∠ACB = 180° (angle sum property). Also, ∠ACB + ∠ACD = 180° (linear pair). Therefore, ∠A + ∠B + ∠ACB = ∠ACB + ∠ACD. Subtracting ∠ACB from both sides: ∠A + ∠B = ∠ACD. Hence proved."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "In a triangle ABC, if AB = 5 cm, BC = 7 cm, then AC can be:",
+        "options": {
+          "A": "1 cm",
+          "B": "2 cm",
+          "C": "8 cm",
+          "D": "13 cm"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The sum of interior angles of a triangle is:",
+        "options": {
+          "A": "90°",
+          "B": "180°",
+          "C": "270°",
+          "D": "360°"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "In triangle PQR, if ∠P = 60° and ∠Q = 70°, then ∠R is:",
+        "options": {
+          "A": "40°",
+          "B": "50°",
+          "C": "60°",
+          "D": "70°"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often forget to check triangle inequality when given three sides",
+      "Confusing interior and exterior angles in theorem statements",
+      "Not drawing proper diagrams with correct labeling of angles and sides",
+      "Writing angle sum as 360° instead of 180° for triangles",
+      "Forgetting to mention 'non-adjacent' when stating exterior angle theorem"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long proof question in every BSEK paper",
+      "Always draw and label diagrams properly - marks are awarded for correct diagrams",
+      "Memorize the exact statement of triangle inequality theorem",
+      "Practice proof of exterior angle theorem with proper steps and reasons",
+      "Learn to identify which angle is greater when sides are given"
+    ],
+    "formulas": [
+      "Triangle Inequality: a + b > c, b + c > a, a + c > b",
+      "Angle Sum Property: ∠A + ∠B + ∠C = 180°",
+      "Exterior Angle = Sum of two non-adjacent interior angles"
+    ],
+    "keyDiagram": "Triangle ABC with exterior angle ACD formed by extending side BC. Label all interior angles A, B, ACB and exterior angle ACD. This diagram is essential for proving exterior angle theorem and appears in every BSEK exam."
+  },
+  "created_at": "2026-04-06T06:24:12.174Z"
+}

@@ -1,0 +1,94 @@
+{
+  "subject": "Economics",
+  "subject_code": "2281",
+  "level": "O Level",
+  "theme": "Microeconomics",
+  "chapter_id": "1",
+  "chapter_name": "The Basic Economic Problem",
+  "note_data": {
+    "title": "The Basic Economic Problem",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Scarcity** exists because human wants are unlimited but resources are limited in supply",
+      "**Economic goods** are scarce and have an opportunity cost, unlike free goods which have no opportunity cost",
+      "**Opportunity cost** is the next best alternative foregone when making a choice",
+      "The three basic economic questions are: What to produce? How to produce? For whom to produce?",
+      "**Factors of production** are land, labour, capital and enterprise - all have factor rewards",
+      "**Production Possibility Curve (PPC)** shows the maximum combinations of two goods that can be produced with given resources",
+      "Points inside the PPC show **inefficient** use of resources, points on the PPC show **efficient** use",
+      "**Economic growth** is shown by an outward shift of the PPC due to increased quantity or quality of resources"
+    ],
+    "definitions": [
+      {
+        "term": "Scarcity",
+        "definition": "The basic economic problem where human wants are unlimited but resources are limited in supply"
+      },
+      {
+        "term": "Opportunity Cost",
+        "definition": "The next best alternative foregone when making a choice"
+      },
+      {
+        "term": "Economic Good",
+        "definition": "A good that is scarce and has an opportunity cost"
+      },
+      {
+        "term": "Free Good",
+        "definition": "A good that is not scarce and has no opportunity cost"
+      },
+      {
+        "term": "Production Possibility Curve",
+        "definition": "A curve showing the maximum combinations of two goods that can be produced with given resources and technology"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Define",
+        "instruction": "Learn exact definitions - these are easy marks if memorized correctly"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Use PPC diagrams to show effects and explain the economic reasoning"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why scarcity is considered the basic economic problem. [4 marks]",
+      "marks": 4,
+      "answer": "Scarcity occurs because human wants are unlimited but resources are limited in supply. This means not all wants can be satisfied, forcing individuals and societies to make choices about how to allocate scarce resources. When choices are made, there is always an opportunity cost - the next best alternative that must be given up. For example, if Pakistan chooses to spend more on defense, the opportunity cost might be less spending on education or healthcare. This need to choose due to scarcity creates the three fundamental economic questions of what to produce, how to produce, and for whom to produce.",
+      "markBreakdown": [
+        "Mark 1: Definition of scarcity",
+        "Mark 2: Explanation that choices must be made",
+        "Mark 3: Reference to opportunity cost",
+        "Mark 4: Example or application"
+      ]
+    },
+    "commonMistakes": [
+      "Never say scarcity means 'shortage' - scarcity is permanent, shortage is temporary",
+      "Students often confuse economic goods with free goods - free goods have NO opportunity cost",
+      "Don't say opportunity cost is 'all alternatives given up' - it's only the NEXT BEST alternative",
+      "When drawing PPC, always label axes clearly and show which points represent efficiency/inefficiency",
+      "Never say resources are 'few' - they are 'limited' or 'finite'"
+    ],
+    "examinerTips": [
+      "The basic economic problem appears in almost every Paper 1 and Paper 2 exam",
+      "Always use PPC diagrams when discussing efficiency, growth or opportunity cost",
+      "Learn the exact definitions - these are frequently tested for 2-3 easy marks",
+      "Use Pakistani examples like choosing between building dams (Tarbela) vs schools to illustrate opportunity cost"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Production Possibility Curve: A concave curve with two goods on each axis, showing points on the curve (efficient), inside the curve (inefficient), outside the curve (unattainable), and outward shifts (economic growth)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:33:01.069Z",
+  "updated_at": "2026-04-06T03:33:01.071Z"
+}

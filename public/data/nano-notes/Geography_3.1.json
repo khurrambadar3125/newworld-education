@@ -1,0 +1,97 @@
+{
+  "subject": "Geography",
+  "subject_code": "2217",
+  "level": "O Level",
+  "theme": "Theme 3: Economic Development",
+  "chapter_id": "3.1",
+  "chapter_name": "Development",
+  "note_data": {
+    "title": "Development",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Development** is the use of resources to improve the quality of life and standard of living of a population",
+      "**Economic indicators** include GDP per capita, employment structure showing the percentage in primary, secondary and tertiary sectors",
+      "**Social indicators** include literacy rates, life expectancy, infant mortality rate, access to clean water and healthcare",
+      "**Human Development Index (HDI)** combines life expectancy, education levels and GDP per capita into a single composite measure",
+      "**Development gap** refers to the difference in levels of development between HICs (High Income Countries) and LICs (Low Income Countries)",
+      "**Inequality** exists both between countries (international) and within countries (regional disparities)",
+      "Pakistan shows **regional inequality** with Punjab more developed than Balochistan due to better infrastructure and investment",
+      "**Limitations of indicators** include GDP not showing income distribution and social indicators not reflecting recent changes",
+      "**Composite indicators** like HDI give a more complete picture than single indicators alone"
+    ],
+    "definitions": [
+      {
+        "term": "Development",
+        "definition": "The use of resources and technology to bring about an increase in the standard of living within a country"
+      },
+      {
+        "term": "Human Development Index (HDI)",
+        "definition": "A composite measure of development combining life expectancy, education levels and GDP per capita"
+      },
+      {
+        "term": "Development gap",
+        "definition": "The difference in levels of development between the world's richest and poorest countries"
+      },
+      {
+        "term": "GDP per capita",
+        "definition": "The total value of goods and services produced by a country divided by its population"
+      },
+      {
+        "term": "Infant mortality rate",
+        "definition": "The number of children who die before their first birthday per 1000 live births per year"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences using data from the resource"
+      },
+      {
+        "commandWord": "Assess",
+        "instruction": "Give advantages AND disadvantages, then reach a conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why HDI is considered a better measure of development than GDP per capita alone. [4]",
+      "marks": 4,
+      "answer": "HDI is a composite measure that combines three indicators: life expectancy, education levels and GDP per capita. This gives a more complete picture of development because it includes social factors like health and education, not just economic wealth. GDP per capita only shows average income and does not indicate how wealth is distributed among the population. HDI also reflects quality of life better because a country can have high GDP but poor healthcare and education systems.",
+      "markBreakdown": [
+        "Mark 1: HDI is composite/combines multiple indicators",
+        "Mark 2: Includes social factors like health and education",
+        "Mark 3: GDP only shows economic/income data",
+        "Mark 4: GDP doesn't show distribution/inequality"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'developed country' — always use HIC (High Income Country) or LIC (Low Income Country)",
+      "Students often confuse GDP with GDP per capita — per capita means divided by population",
+      "Don't just list indicators — always explain WHY they show development levels",
+      "Avoid saying 'rich' or 'poor' countries — use the correct terminology HICs and LICs",
+      "Students forget that high infant mortality rate means LOW development (inverse relationship)"
+    ],
+    "examinerTips": [
+      "Development questions appear in almost every Paper 2 exam",
+      "Always quote figures from data sources when comparing countries",
+      "Know specific examples of regional inequality within countries like Pakistan",
+      "Practice explaining limitations of single indicators versus composite measures"
+    ],
+    "formulas": [
+      "GDP per capita = Total GDP ÷ Population"
+    ],
+    "keyDiagramDescription": "Development continuum showing LICs, NEEs (Newly Emerging Economies) and HICs with different indicator values, or scatter graph showing relationship between economic and social indicators"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:59:01.061Z",
+  "updated_at": "2026-04-06T03:59:01.061Z"
+}

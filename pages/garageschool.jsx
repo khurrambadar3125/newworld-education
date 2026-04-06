@@ -23,7 +23,7 @@ export default function GarageSchoolPage() {
     <div style={{ minHeight: '100vh', background: NAVY, fontFamily: "'Sora',-apple-system,sans-serif", color: WHITE }}>
       <Head>
         <title>Shabina &amp; Khurram Collaboration — The Garage School × NewWorldEdu</title>
-        <meta name="description" content="The Garage School and NewWorldEdu bring AI-powered Cambridge-standard tutoring to 550+ underprivileged children in Karachi. Pakistan's first AI school partnership." />
+        <meta name="description" content="The Garage School and NewWorldEdu bring AI-powered AI-powered tutoring to 550+ underprivileged children in Karachi. Pakistan's first AI school partnership." />
       </Head>
 
       {/* Header */}
@@ -86,14 +86,14 @@ export default function GarageSchoolPage() {
 
         <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 14 }}>
           {[
-            { icon: '⚛️', title: 'Structured Study Paths', desc: '50,000+ verified questions across 17 textbook-accurate subjects. Learn → Guided → Practice → Master. Exact chapters from real Cambridge coursebooks.' },
+            { icon: '⚛️', title: 'Structured Study Paths', desc: 'Revision notes for every chapter, every subject — Class 9 and 10. Sindh Board + AKU-EB aligned. Learn → Practice → Master, one chapter at a time.' },
             { icon: '⚡', title: 'Practice Drill', desc: '5 drill modes including Weak Spots — automatically finds what each student struggles with and drills it.' },
-            { icon: '📝', title: 'Mock Exams', desc: 'Timed exams with Cambridge-level marking. Pre-exam briefing. Post-exam revision plan.' },
+            { icon: '📝', title: 'Mock Exams', desc: 'Timed exams with board-level marking. Pre-exam briefing. Post-exam revision plan.' },
             { icon: '💜', title: 'Special Needs Support', desc: '17 conditions, PhD-level SEN support. ADHD, dyslexia, autism, hearing impairment, Down Syndrome — all supported with adaptive teaching.' },
             { icon: '🎙️', title: 'Voice Enabled', desc: 'Students can speak to Starky in Urdu or English. Perfect for early learners who can\'t type yet.' },
             { icon: '📧', title: 'Teacher Reports', desc: 'Every session logged. Teachers see which students are struggling and which topics need classroom reinforcement.' },
-            { icon: '🌍', title: 'Urdu + English', desc: 'Starky auto-detects language. Students can ask in Roman Urdu and get Cambridge-precise answers.' },
-            { icon: '📚', title: 'Every Subject', desc: 'Matric curriculum alignment. English, Urdu, Maths, Science, Islamiat, Pakistan Studies — all covered.' },
+            { icon: '🌍', title: 'Urdu + English', desc: 'Starky auto-detects language. Students can ask in Urdu, Roman Urdu, or English and get precise answers.' },
+            { icon: '📚', title: 'Every Subject', desc: 'Sindh Board (BSEK) + AKU-EB aligned. Physics, Chemistry, Biology, Maths, English, Urdu, Pak Studies, Islamiat, CS — all covered.' },
           ].map(f => (
             <div key={f.title} style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 14, padding: '20px 18px' }}>
               <div style={{ fontSize: 24, marginBottom: 8 }}>{f.icon}</div>
@@ -112,8 +112,8 @@ export default function GarageSchoolPage() {
             {[
               { n: '550+', l: 'Students' },
               { n: '25', l: 'Years' },
-              { n: '50,000+', l: 'Verified Questions' },
-              { n: '34+', l: 'Subjects Covered' },
+              { n: '159', l: 'Textbook Chapters' },
+              { n: '11', l: 'Subjects Covered' },
               { n: '24/7', l: 'AI Tutor Available' },
               { n: '₨0', l: 'Cost to Students' },
             ].map(s => (
@@ -150,10 +150,17 @@ export default function GarageSchoolPage() {
           <span style={{ color: GREEN }}>AI School</span>
         </h2>
         <p style={{ fontSize: 16, color: 'rgba(250,246,235,0.6)', lineHeight: 1.8, maxWidth: 600, margin: '0 auto 28px' }}>
-          The Garage School becomes the first school in Pakistan where every student — regardless of background, income, or ability — has access to an AI tutor trained to Cambridge examiner standards. If it works here, it works anywhere.
+          The Garage School becomes the first school in Pakistan where every student — regardless of background, income, or ability — has access to an AI tutor. From Sindh Board Class 9 to IBA entry tests. If it works here, it works anywhere.
         </p>
+
+        {/* IBA Pipeline */}
+        <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 28 }}>
+          {['Class 9-10 Matric', '→', 'Master every chapter', '→', 'IBA / LUMS / NUST Entry', '→', 'University'].map((step, i) => (
+            <span key={i} style={{ fontSize: 13, fontWeight: step === '→' ? 400 : 700, color: step === '→' ? 'rgba(250,246,235,0.3)' : GOLD, padding: step === '→' ? '0' : '6px 12px', border: step === '→' ? 'none' : `1px solid ${GOLD}33`, borderRadius: 8, background: step === '→' ? 'none' : `${GOLD}08` }}>{step}</span>
+          ))}
+        </div>
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <a href="/study" style={{ display: 'inline-block', background: GOLD, color: NAVY, fontSize: 15, fontWeight: 900, padding: '14px 32px', borderRadius: 12, textDecoration: 'none' }}>
+          <a href="/sindh-board" style={{ display: 'inline-block', background: GOLD, color: NAVY, fontSize: 15, fontWeight: 900, padding: '14px 32px', borderRadius: 12, textDecoration: 'none' }}>
             Start Learning Now →
           </a>
           <a href="/school" style={{ display: 'inline-block', background: 'transparent', border: `2px solid ${GOLD}`, color: GOLD, fontSize: 15, fontWeight: 900, padding: '12px 32px', borderRadius: 12, textDecoration: 'none' }}>

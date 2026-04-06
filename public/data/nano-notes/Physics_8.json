@@ -1,0 +1,93 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "General Physics",
+  "chapter_id": "8",
+  "chapter_name": "Work and power",
+  "note_data": {
+    "title": "Work and power",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Work** is done when a force moves an object through a distance in the direction of the force",
+      "**Work** is calculated using W = F × d where F is force in newtons and d is distance in metres",
+      "Work is measured in **joules (J)** where 1 joule = 1 newton × 1 metre",
+      "**No work is done** when force is applied but object does not move, or when force is perpendicular to direction of motion",
+      "**Power** is the rate of doing work or the rate of energy transfer",
+      "**Power** is calculated using P = W/t where W is work done in joules and t is time in seconds",
+      "Power is measured in **watts (W)** where 1 watt = 1 joule per second",
+      "Power can also be calculated using **P = F × v** where F is force and v is velocity",
+      "When calculating work, only consider the **component of force in the direction of motion**",
+      "**Efficiency** = (useful power output / total power input) × 100%"
+    ],
+    "definitions": [
+      {
+        "term": "Work",
+        "definition": "Work is done when a force moves an object through a distance in the direction of the force"
+      },
+      {
+        "term": "Power",
+        "definition": "Power is the rate of doing work or the rate of energy transfer"
+      },
+      {
+        "term": "Joule",
+        "definition": "The joule is the unit of work done when a force of 1 newton moves an object through a distance of 1 metre"
+      },
+      {
+        "term": "Watt",
+        "definition": "The watt is the unit of power equal to 1 joule of work done per second"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show the formula, substitute values with units, then give final answer with correct unit."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A crane lifts a load of 500 N through a vertical height of 12 m in 8 seconds. Calculate (a) the work done (b) the power developed by the crane.",
+      "marks": 4,
+      "answer": "(a) Work done = force × distance\nW = F × d\nW = 500 N × 12 m\nW = 6000 J\n\n(b) Power = work done / time\nP = W / t\nP = 6000 J / 8 s\nP = 750 W",
+      "markBreakdown": [
+        "Mark 1: Correct formula W = F × d",
+        "Mark 2: Correct calculation W = 6000 J",
+        "Mark 3: Correct formula P = W / t",
+        "Mark 4: Correct calculation P = 750 W"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse work and power - work is energy transferred, power is the rate of energy transfer",
+      "Students often forget to use the distance moved in the direction of force, not total distance travelled",
+      "Always include correct units - work in joules (J), power in watts (W), never mix up the units",
+      "Never say work is done when an object moves in a circle at constant speed with centripetal force - no work is done as force is perpendicular to motion",
+      "Students often use time incorrectly - power = work/time, not work × time"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2, especially calculation questions",
+      "Always show the formula first, then substitute values with units for full marks",
+      "Remember that pushing against a wall does no work because there is no movement",
+      "Power questions often link to efficiency calculations in Pakistani context like Tarbela Dam hydroelectric power"
+    ],
+    "formulas": [
+      "W = F × d",
+      "P = W / t",
+      "P = F × v",
+      "Efficiency = (useful power output / total power input) × 100%"
+    ],
+    "keyDiagramDescription": "Force-displacement diagram showing force F acting on an object moving distance d in the same direction, with work done = area under force-distance graph"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:16:29.099Z",
+  "updated_at": "2026-04-05T21:16:29.099Z"
+}

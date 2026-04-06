@@ -1,0 +1,98 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Inorganic Chemistry",
+  "chapter_id": "11",
+  "chapter_name": "Acids and bases",
+  "note_data": {
+    "title": "Acids and bases",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Acids** are substances that produce hydrogen ions (H+) when dissolved in water",
+      "**Bases** are substances that react with acids to form salt and water only",
+      "**Alkalis** are bases that are soluble in water and produce hydroxide ions (OH-)",
+      "**pH scale** ranges from 0-14, with acids below 7, neutral at 7, and alkalis above 7",
+      "**Neutralisation** is the reaction between an acid and a base to produce salt and water only",
+      "**Universal indicator** shows pH by changing colour: red (pH 1-3), orange (pH 4-6), green (pH 7), blue (pH 8-11), purple (pH 12-14)",
+      "Strong acids like **hydrochloric acid** are completely ionised in water, weak acids like **ethanoic acid** are partially ionised",
+      "Common acids include **hydrochloric acid (HCl)**, **sulfuric acid (H2SO4)** and **nitric acid (HNO3)**",
+      "Common alkalis include **sodium hydroxide (NaOH)**, **potassium hydroxide (KOH)** and **ammonia solution (NH3)**"
+    ],
+    "definitions": [
+      {
+        "term": "Acid",
+        "definition": "A substance that produces hydrogen ions (H+) when dissolved in water"
+      },
+      {
+        "term": "Base",
+        "definition": "A substance that reacts with acids to form salt and water only"
+      },
+      {
+        "term": "Alkali",
+        "definition": "A base that is soluble in water and produces hydroxide ions (OH-)"
+      },
+      {
+        "term": "pH",
+        "definition": "A measure of the concentration of hydrogen ions in solution"
+      },
+      {
+        "term": "Neutralisation",
+        "definition": "The reaction between an acid and a base to produce salt and water only"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Define",
+        "instruction": "Give the exact definition that matches the mark scheme"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed observations including colour changes and pH values"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why sodium hydroxide is described as an alkali but copper oxide is described as a base. [3 marks]",
+      "marks": 3,
+      "answer": "Sodium hydroxide is an alkali because it is soluble in water and produces hydroxide ions (OH-) when dissolved. Copper oxide is a base because it reacts with acids to form salt and water only, but it is not an alkali because it is insoluble in water.",
+      "markBreakdown": [
+        "Mark 1: Sodium hydroxide is soluble in water",
+        "Mark 2: Produces hydroxide ions (OH-)",
+        "Mark 3: Copper oxide is insoluble in water / does not dissolve"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'acids contain hydrogen' — always say 'acids produce hydrogen ions when dissolved in water'",
+      "Students often confuse bases and alkalis — remember all alkalis are bases but not all bases are alkalis",
+      "Never write H+ and OH- without mentioning they are ions",
+      "Don't say 'neutralisation produces salt and water and heat' — only mention salt and water in the definition",
+      "Students write 'pH 7 is neutral' but forget to state what acidic and alkaline pH ranges are"
+    ],
+    "examinerTips": [
+      "This topic appears every year in Paper 2 — often combined with salts preparation",
+      "Always use the exact phrase 'salt and water only' when defining neutralisation",
+      "pH questions often ask for specific colour changes with universal indicator",
+      "Learn the difference between strong/weak acids and concentrated/dilute acids"
+    ],
+    "formulas": [
+      "HCl + NaOH → NaCl + H2O",
+      "H2SO4 + 2NaOH → Na2SO4 + 2H2O",
+      "CuO + 2HCl → CuCl2 + H2O"
+    ],
+    "keyDiagramDescription": "pH scale diagram showing 0-14 with colours: red (0-3), orange (4-6), green (7), blue (8-11), purple (12-14). Label examples at each range."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:54:38.960Z",
+  "updated_at": "2026-04-05T20:54:38.960Z"
+}

@@ -1,0 +1,100 @@
+{
+  "subject": "Computer Science",
+  "subject_code": "2210",
+  "level": "O Level",
+  "theme": "Paper 1: Computer Systems",
+  "chapter_id": "3",
+  "chapter_name": "Hardware",
+  "note_data": {
+    "title": "Hardware",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**CPU** executes instructions in a continuous cycle: fetch, decode, execute",
+      "**Fetch stage** retrieves the next instruction from memory using the program counter",
+      "**Decode stage** interprets the instruction and determines what operation needs to be performed",
+      "**Execute stage** carries out the instruction using the ALU and registers",
+      "**CPU performance** is affected by clock speed, number of cores, and cache size",
+      "**Input devices** convert data into a form the computer can understand (keyboard, mouse, sensors)",
+      "**Output devices** convert processed data into a form humans can understand (monitor, printer, speaker)",
+      "**Primary storage** includes RAM and ROM - volatile and non-volatile memory respectively",
+      "**Secondary storage** provides permanent data storage (HDD, SSD, optical discs)",
+      "**Virtual memory** uses part of the hard disk as temporary RAM when physical memory is full",
+      "**Cloud storage** stores data on remote servers accessed via the internet",
+      "**Network hardware** includes routers, switches, and network interface cards for data transmission"
+    ],
+    "definitions": [
+      {
+        "term": "CPU",
+        "definition": "Central Processing Unit that executes program instructions by fetching, decoding and executing them"
+      },
+      {
+        "term": "Virtual Memory",
+        "definition": "Part of secondary storage used as additional RAM when physical memory is insufficient"
+      },
+      {
+        "term": "Cache Memory",
+        "definition": "High-speed memory between CPU and RAM that stores frequently accessed data"
+      },
+      {
+        "term": "ROM",
+        "definition": "Read Only Memory that stores the boot program and cannot be changed by normal computer operations"
+      },
+      {
+        "term": "Network Interface Card",
+        "definition": "Hardware component that allows a computer to connect to a network"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a detailed account of the process or components step by step"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between two items"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how the fetch-decode-execute cycle works in a CPU. [6]",
+      "marks": 6,
+      "answer": "The fetch stage retrieves the next instruction from memory using the address stored in the program counter. The instruction is loaded into the instruction register. In the decode stage, the control unit interprets the instruction to determine what operation needs to be performed and which components are required. The execute stage carries out the instruction using the ALU if calculations are needed, or moves data between registers and memory. The program counter is incremented to point to the next instruction. This cycle repeats continuously until the program ends.",
+      "markBreakdown": [
+        "Mark 1: Fetch retrieves instruction from memory",
+        "Mark 2: Using program counter/instruction loaded to register",
+        "Mark 3: Decode interprets the instruction",
+        "Mark 4: Execute carries out the instruction",
+        "Mark 5: Program counter incremented",
+        "Mark 6: Cycle repeats continuously"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'CPU stores data permanently' — CPU only processes data temporarily",
+      "Students confuse RAM with ROM — RAM is volatile, ROM is non-volatile",
+      "Don't say 'virtual memory increases RAM' — it extends available memory using storage",
+      "Never write 'cache is slower than RAM' — cache is faster than RAM",
+      "Students mix up input and output devices — microphone is input, speaker is output"
+    ],
+    "examinerTips": [
+      "CPU questions appear every year - memorize fetch-decode-execute cycle",
+      "Always mention 'program counter' when describing fetch stage",
+      "Storage questions often ask for comparisons - prepare RAM vs ROM table",
+      "Network hardware questions increasing - know router vs switch differences"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "CPU architecture diagram showing ALU, Control Unit, registers, and connections to memory via address/data/control buses. Include program counter and instruction register clearly labeled."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 12,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:44:12.015Z",
+  "updated_at": "2026-04-06T03:44:12.016Z"
+}

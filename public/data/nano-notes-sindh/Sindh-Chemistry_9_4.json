@@ -1,0 +1,110 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "4",
+  "chapter_name": "Chemical Bonding",
+  "note_data": {
+    "title": "Chemical Bonding",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Chemical bond is the force of attraction that holds atoms together in a molecule or compound",
+      "Ionic bond forms between metal and non-metal atoms through complete transfer of electrons",
+      "Covalent bond forms between non-metal atoms through sharing of electrons",
+      "Electronegativity difference determines the type of bond: >1.7 ionic, <1.7 covalent",
+      "Lewis dot structure shows valence electrons as dots around atomic symbols",
+      "Coordinate covalent bond forms when one atom provides both electrons for sharing",
+      "Metallic bonding occurs in metals through sea of delocalized electrons",
+      "Bond length is the distance between nuclei of two bonded atoms",
+      "Lattice energy is the energy required to completely separate one mole of ionic solid into gaseous ions"
+    ],
+    "definitions": [
+      {
+        "term": "Chemical Bond",
+        "definition": "Chemical bond is the force of attraction that holds atoms together in a molecule or compound."
+      },
+      {
+        "term": "Ionic Bond",
+        "definition": "Ionic bond is formed by the complete transfer of electrons from metal atom to non-metal atom resulting in the formation of ions."
+      },
+      {
+        "term": "Covalent Bond",
+        "definition": "Covalent bond is formed by the mutual sharing of electrons between two non-metal atoms."
+      },
+      {
+        "term": "Electronegativity",
+        "definition": "Electronegativity is the tendency of an atom to attract shared electrons towards itself in a covalent bond."
+      },
+      {
+        "term": "Coordinate Covalent Bond",
+        "definition": "Coordinate covalent bond is formed when both electrons of the shared pair are contributed by one atom only."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define ionic bond and give one example.",
+        "answer": "Ionic bond is formed by the complete transfer of electrons from metal atom to non-metal atom resulting in the formation of ions. Example: NaCl (sodium chloride) - Na loses one electron to Cl."
+      },
+      {
+        "type": "long",
+        "question": "Explain the formation of ionic bond in sodium chloride (NaCl) with Lewis dot structure.",
+        "answer": "Sodium (Na) has electronic configuration 2,8,1 with one valence electron. Chlorine (Cl) has configuration 2,8,7 with seven valence electrons. Na loses one electron to achieve stable octet, forming Na+ ion. Cl gains this electron to complete its octet, forming Cl- ion. The electrostatic attraction between Na+ and Cl- forms ionic bond. Lewis structure shows Na with one dot losing it to Cl with seven dots, resulting in Na+ and Cl- ions."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which type of bond is formed between Na and Cl?",
+        "options": {
+          "A": "Covalent bond",
+          "B": "Ionic bond",
+          "C": "Metallic bond",
+          "D": "Hydrogen bond"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Electronegativity difference in ionic compounds is:",
+        "options": {
+          "A": "Less than 1.7",
+          "B": "Equal to 1.7",
+          "C": "Greater than 1.7",
+          "D": "Zero"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "In coordinate covalent bond, electrons are provided by:",
+        "options": {
+          "A": "Both atoms equally",
+          "B": "Metal atom only",
+          "C": "One atom only",
+          "D": "Non-metal atom only"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse ionic and covalent bonds - remember ionic involves complete transfer, covalent involves sharing",
+      "Drawing incorrect Lewis dot structures - only show valence electrons as dots",
+      "Forgetting to mention electronegativity difference criteria for bond types",
+      "Not showing electron transfer clearly in ionic bond formation diagrams",
+      "Mixing up coordinate covalent bond definition with regular covalent bond"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 short + 1 long question in BSEK papers",
+      "Lewis dot structure diagrams appear every year - practice drawing them perfectly",
+      "Memorize exact textbook definitions word-for-word for 'Define' questions",
+      "Learn electronegativity values of common elements like F=4.0, O=3.5, Cl=3.0, C=2.5",
+      "Practice drawing formation of NaCl, H2O, NH3, and CH4 - these are frequently asked"
+    ],
+    "formulas": [
+      "Electronegativity difference = |EN(A) - EN(B)|",
+      "Lattice Energy ∝ (charge of cation × charge of anion) / distance between ions"
+    ],
+    "keyDiagram": "Lewis dot structure showing formation of ionic bond in NaCl: Na with one dot transferring electron to Cl with seven dots, resulting in Na+ and Cl- ions with complete octets. Also draw covalent bond formation in H2O showing oxygen sharing electrons with two hydrogen atoms."
+  },
+  "created_at": "2026-04-06T06:08:39.727Z"
+}

@@ -1,0 +1,86 @@
+{
+  "subject": "History",
+  "subject_code": "2147",
+  "level": "O Level",
+  "theme": "Section 1: Core Content",
+  "chapter_id": "3",
+  "chapter_name": "Why had international peace collapsed by 1939?",
+  "note_data": {
+    "title": "Why had international peace collapsed by 1939?",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Hitler's foreign policy** aimed to destroy the Treaty of Versailles and create a Greater German Reich",
+      "**Rearmament** began secretly in 1933, openly announced in 1935, breaking the Treaty of Versailles",
+      "**Remilitarisation of the Rhineland** (1936) was Hitler's first major gamble that succeeded due to French and British inaction",
+      "**Anschluss with Austria** (1938) was achieved through intimidation and invasion, further strengthening Germany",
+      "**Appeasement policy** by Britain and France encouraged Hitler by giving him what he wanted to avoid war",
+      "**Munich Agreement** (1938) gave Hitler the Sudetenland without consulting Czechoslovakia",
+      "**Nazi-Soviet Pact** (August 1939) removed the threat of a two-front war for Germany",
+      "**Invasion of Poland** (September 1939) finally forced Britain and France to declare war",
+      "**Failure of the League of Nations** in Manchuria and Abyssinia showed collective security was dead"
+    ],
+    "definitions": [
+      {
+        "term": "Appeasement",
+        "definition": "The policy of giving in to the demands of an aggressive power in order to avoid war"
+      },
+      {
+        "term": "Anschluss",
+        "definition": "The union of Germany and Austria, forbidden by the Treaty of Versailles but achieved by Hitler in 1938"
+      },
+      {
+        "term": "Lebensraum",
+        "definition": "Living space - Hitler's policy of expanding German territory to provide land for the German people"
+      },
+      {
+        "term": "Sudetenland",
+        "definition": "The German-speaking border areas of Czechoslovakia given to Hitler at Munich in 1938"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "How far do you agree",
+        "instruction": "Give arguments for AND against, then reach a balanced judgement"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why the policy of appeasement failed to prevent war. [6 marks]",
+      "marks": 6,
+      "answer": "Appeasement failed because it encouraged Hitler to make greater demands. When Britain and France gave Hitler the Sudetenland at Munich, this convinced him they would not fight, so he demanded more territory. Appeasement also made Germany stronger because each success gave Hitler more resources and confidence. The Anschluss with Austria gave Germany more soldiers and weapons. Finally, appeasement destroyed the collective security system because it showed the democracies would not work together to stop aggression, encouraging dictators like Hitler to take greater risks.",
+      "markBreakdown": [
+        "Mark 1-2: Encouraged Hitler to make greater demands",
+        "Mark 3-4: Made Germany stronger militarily and economically",
+        "Mark 5-6: Destroyed collective security and encouraged other aggressors"
+      ]
+    },
+    "commonMistakes": [
+      "Never say Hitler 'wanted world war' - he wanted to expand Germany but hoped to avoid a major war",
+      "Students often confuse the Saar plebiscite (legal) with the remilitarisation of the Rhineland (illegal)",
+      "Don't say appeasement was 'stupid' - explain it was a reasonable policy given the circumstances",
+      "Never say Britain and France 'did nothing' - they tried diplomacy and economic pressure first",
+      "Students mix up the Nazi-Soviet Pact with the Anti-Comintern Pact"
+    ],
+    "examinerTips": [
+      "This topic appears in Paper 1 almost every year - focus on causation and consequences",
+      "Learn specific dates: 1936 Rhineland, 1938 Anschluss and Munich, 1939 Prague and Poland",
+      "Always explain HOW each event made war more likely, don't just describe what happened",
+      "For 'How far' questions, consider short-term AND long-term factors"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Timeline 1933-1939 showing Hitler's aggressive actions and Western responses, demonstrating the escalation from diplomatic protests to war declaration"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:02:43.581Z",
+  "updated_at": "2026-04-06T04:02:43.581Z"
+}

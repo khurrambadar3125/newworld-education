@@ -1,0 +1,107 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "20",
+  "chapter_name": "Theory of Quadratic Equations",
+  "note_data": {
+    "title": "Theory of Quadratic Equations",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "A quadratic equation is an equation of the form ax² + bx + c = 0, where a ≠ 0",
+      "The discriminant Δ = b² - 4ac determines the nature of roots",
+      "If Δ > 0, roots are real and distinct; if Δ = 0, roots are real and equal; if Δ < 0, roots are complex",
+      "Sum of roots = -b/a and Product of roots = c/a",
+      "Quadratic formula: x = (-b ± √(b² - 4ac))/2a",
+      "A quadratic equation can be solved by factorization, completing the square, or using the quadratic formula",
+      "The graph of a quadratic function is a parabola",
+      "Maximum and minimum values occur at vertex x = -b/2a"
+    ],
+    "definitions": [
+      {
+        "term": "Quadratic Equation",
+        "definition": "An equation of the second degree in one variable is called a quadratic equation. The general form is ax² + bx + c = 0, where a, b, c are real numbers and a ≠ 0."
+      },
+      {
+        "term": "Discriminant",
+        "definition": "The expression b² - 4ac is called the discriminant of the quadratic equation ax² + bx + c = 0. It is denoted by Δ (Delta)."
+      },
+      {
+        "term": "Roots of Quadratic Equation",
+        "definition": "The values of the variable which satisfy the quadratic equation are called the roots or solutions of the equation."
+      },
+      {
+        "term": "Nature of Roots",
+        "definition": "The character of roots (real, equal, distinct, or complex) is determined by the value of discriminant."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Find the discriminant and nature of roots of 2x² - 5x + 3 = 0",
+        "answer": "Here a = 2, b = -5, c = 3. Discriminant Δ = b² - 4ac = (-5)² - 4(2)(3) = 25 - 24 = 1 > 0. Since Δ > 0, roots are real and distinct."
+      },
+      {
+        "type": "long",
+        "question": "Solve the equation x² - 6x + 9 = 0 by factorization method and verify the answer using sum and product of roots.",
+        "answer": "x² - 6x + 9 = 0. Factoring: (x - 3)(x - 3) = 0. Therefore x = 3, 3 (equal roots). Verification: Sum of roots = 3 + 3 = 6 = -(-6)/1 = 6 ✓. Product of roots = 3 × 3 = 9 = 9/1 = 9 ✓"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The discriminant of 3x² + 2x - 1 = 0 is:",
+        "options": {
+          "A": "16",
+          "B": "10",
+          "C": "4",
+          "D": "-8"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "If the roots of ax² + bx + c = 0 are α and β, then α + β equals:",
+        "options": {
+          "A": "c/a",
+          "B": "-b/a",
+          "C": "b/a",
+          "D": "-c/a"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The equation x² - 4x + 4 = 0 has:",
+        "options": {
+          "A": "Two distinct real roots",
+          "B": "Two equal real roots",
+          "C": "No real roots",
+          "D": "One root only"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students forget that a ≠ 0 in the definition of quadratic equation",
+      "Wrong calculation of discriminant - forgetting the negative sign in -4ac",
+      "Confusing sum and product of roots formulas",
+      "Not simplifying the quadratic formula completely",
+      "Forgetting to write ± in the quadratic formula"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question in every BSEK paper",
+      "Always write the quadratic formula before applying it",
+      "Show discriminant calculation step by step for full marks",
+      "Practice factorization problems as they appear frequently"
+    ],
+    "formulas": [
+      "Quadratic Formula: x = (-b ± √(b² - 4ac))/2a",
+      "Discriminant: Δ = b² - 4ac",
+      "Sum of roots: α + β = -b/a",
+      "Product of roots: αβ = c/a",
+      "Quadratic equation from roots: x² - (α + β)x + αβ = 0"
+    ],
+    "keyDiagram": "Graph of quadratic function showing parabola opening upward (a > 0) or downward (a < 0), vertex at (-b/2a, f(-b/2a)), axis of symmetry x = -b/2a, and x-intercepts as roots of equation"
+  },
+  "created_at": "2026-04-06T06:27:08.615Z"
+}

@@ -1,0 +1,99 @@
+{
+  "subject": "Geography",
+  "subject_code": "2217",
+  "level": "O Level",
+  "theme": "Theme 1: Population and Settlement",
+  "chapter_id": "1.2",
+  "chapter_name": "Migration",
+  "note_data": {
+    "title": "Migration",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Migration** is the movement of people from one place to another with the intention of settling permanently or temporarily",
+      "**Immigration** is the movement of people into a country, while **emigration** is the movement of people out of a country",
+      "**Push factors** are negative conditions that force people to leave their origin, such as natural disasters, poverty, war, and unemployment",
+      "**Pull factors** are positive attractions that draw people to a destination, such as better job opportunities, education, healthcare, and political stability",
+      "**Voluntary migration** occurs when people choose to move freely, while **forced migration** occurs when people are compelled to move against their will",
+      "**Internal migration** is movement within a country (rural to urban), while **international migration** is movement between countries",
+      "**Refugees** are people forced to leave their country due to persecution, war, or violence and cannot return safely",
+      "Migration has **economic impacts** including remittances sent home, labour shortages in origin areas, and increased labour supply in destination areas",
+      "Migration has **social impacts** including family separation, cultural mixing, pressure on services, and demographic changes",
+      "Migration has **political impacts** including brain drain, tensions between communities, and changes in government policies"
+    ],
+    "definitions": [
+      {
+        "term": "Migration",
+        "definition": "The movement of people from one place to another with the intention of settling there permanently or temporarily"
+      },
+      {
+        "term": "Refugee",
+        "definition": "A person who has been forced to leave their country due to persecution, war or violence and cannot return safely"
+      },
+      {
+        "term": "Push factors",
+        "definition": "Negative conditions in the origin that force or encourage people to leave an area"
+      },
+      {
+        "term": "Pull factors",
+        "definition": "Positive attractions or conditions in the destination that draw people to move to an area"
+      },
+      {
+        "term": "Brain drain",
+        "definition": "The emigration of highly skilled and educated people from their home country to other countries"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Say what you can see/observe. Use data from maps/graphs if provided."
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give possible reasons or solutions with brief explanations"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why people migrate from rural to urban areas. [6]",
+      "marks": 6,
+      "answer": "People migrate from rural to urban areas due to push and pull factors. Push factors include lack of job opportunities in rural areas because farming provides seasonal work and low income. Natural disasters such as floods destroy crops forcing farmers to seek alternative livelihoods. Pull factors include better employment opportunities in cities because industries and services provide regular wages. Cities offer better healthcare and education facilities which improve quality of life. Urban areas have better infrastructure such as electricity and clean water supply which attracts migrants seeking improved living standards.",
+      "markBreakdown": [
+        "Mark 1: Push factor - lack of jobs/seasonal work",
+        "Mark 2: Explanation of rural employment problems",
+        "Mark 3: Pull factor - better job opportunities",
+        "Mark 4: Explanation of urban employment benefits",
+        "Mark 5: Additional pull factor - services/infrastructure",
+        "Mark 6: Explanation of improved living standards"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'people move for better life' — always specify what aspects (jobs, education, healthcare)",
+      "Students often confuse immigration with emigration — remember immigration is INTO a country",
+      "Don't just list factors — always explain WHY they cause migration using 'because' or 'this is because'",
+      "Never say refugees 'choose' to move — they are forced to move due to persecution or conflict",
+      "Don't confuse internal migration (within country) with international migration (between countries)"
+    ],
+    "examinerTips": [
+      "Migration questions appear frequently in Paper 2 - practice explaining push and pull factors",
+      "Always give specific examples when explaining impacts of migration",
+      "Use Pakistani examples: rural-urban migration to Karachi, Afghan refugees in Pakistan",
+      "For 6-mark questions, aim for 3 different points with explanations",
+      "Remember to distinguish between voluntary and forced migration in your answers"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Migration flow diagram showing origin and destination connected by arrow, with push factors (negative) at origin and pull factors (positive) at destination. Include barriers/obstacles that may prevent migration such as distance, cost, language, and government policies."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:54:32.349Z",
+  "updated_at": "2026-04-06T03:54:32.349Z"
+}

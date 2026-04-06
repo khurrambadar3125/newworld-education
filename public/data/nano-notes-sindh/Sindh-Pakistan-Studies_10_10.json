@@ -1,0 +1,107 @@
+{
+  "subject": "Pakistan Studies",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "10",
+  "chapter_name": "Pakistan — A Welfare State",
+  "note_data": {
+    "title": "Pakistan — A Welfare State",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "A welfare state is a state that provides social security and ensures the basic needs of all citizens including food, shelter, education, healthcare and employment",
+      "Pakistan was conceived as a welfare state based on Islamic principles of social justice, equality and brotherhood",
+      "Article 38 of Pakistan's Constitution directs the state to provide basic necessities of life to all citizens",
+      "Zakat and Ushr system in Pakistan helps redistribute wealth and supports the poor and needy",
+      "Free education up to matric level is a fundamental right under Article 25-A of the Constitution",
+      "Pakistan has established institutions like Bait-ul-Maal, Pakistan Poverty Alleviation Fund (PPAF) and Benazir Income Support Programme (BISP)",
+      "Healthcare facilities are provided through government hospitals, rural health centers and basic health units across the country",
+      "Employment opportunities are created through various government schemes and vocational training programs",
+      "Social security schemes include Employees Old Age Benefits Institution (EOBI) and Workers Welfare Fund"
+    ],
+    "definitions": [
+      {
+        "term": "Welfare State",
+        "definition": "A welfare state is a state in which the government undertakes the responsibility for the welfare of its citizens by providing social security and ensuring their basic needs are met."
+      },
+      {
+        "term": "Zakat",
+        "definition": "Zakat is a compulsory religious tax levied on Muslims having wealth above a certain limit (Nisab) to help the poor and needy."
+      },
+      {
+        "term": "Ushr",
+        "definition": "Ushr is a religious tax on agricultural produce levied at the rate of 5% or 10% depending on the method of irrigation used."
+      },
+      {
+        "term": "Social Security",
+        "definition": "Social security refers to the protection provided by the state to its citizens against economic hardship arising from unemployment, old age, sickness or disability."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "What is meant by welfare state?",
+        "answer": "A welfare state is a state in which the government undertakes the responsibility for the welfare of its citizens by providing social security and ensuring their basic needs like food, shelter, education and healthcare are met."
+      },
+      {
+        "type": "long",
+        "question": "Describe the measures taken by Pakistan to become a welfare state.",
+        "answer": "Pakistan has taken several measures to become a welfare state: (1) Constitutional provisions like Article 38 and 25-A ensuring basic rights (2) Zakat and Ushr system for wealth redistribution (3) Free education up to matric level (4) Healthcare through government hospitals and health centers (5) Social security schemes like EOBI and Workers Welfare Fund (6) Poverty alleviation programs like BISP and PPAF (7) Employment generation through government schemes and vocational training (8) Establishment of Bait-ul-Maal for helping the poor and needy."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which article of Pakistan's Constitution makes education a fundamental right?",
+        "options": {
+          "A": "Article 25",
+          "B": "Article 25-A",
+          "C": "Article 38",
+          "D": "Article 40"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The rate of Ushr on irrigated land is:",
+        "options": {
+          "A": "5%",
+          "B": "7.5%",
+          "C": "10%",
+          "D": "12.5%"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "EOBI stands for:",
+        "options": {
+          "A": "Employees Organizational Benefits Institution",
+          "B": "Employees Old Age Benefits Institution",
+          "C": "Employment Opportunities Bureau Initiative",
+          "D": "Economic Operations Banking Institute"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse Zakat rate (2.5%) with Ushr rates (5% or 10%)",
+      "Writing Article 25 instead of Article 25-A for right to education",
+      "Mixing up the functions of BISP and PPAF",
+      "Not mentioning constitutional articles when discussing welfare measures",
+      "Forgetting to include Islamic principles as basis of Pakistan's welfare state concept"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs about constitutional articles and welfare institutions",
+      "Always mention specific constitutional articles (25-A, 38) in answers about welfare state",
+      "Learn the exact rates and percentages for Zakat (2.5%) and Ushr (5%/10%)",
+      "Questions about welfare state measures appear frequently as 5-8 mark long questions",
+      "Remember the full forms of institutions like EOBI, BISP, PPAF"
+    ],
+    "formulas": [
+      "Zakat = 2.5% of wealth above Nisab",
+      "Ushr on irrigated land = 5% of produce",
+      "Ushr on rain-fed land = 10% of produce"
+    ],
+    "keyDiagram": "Structure of Pakistan's Welfare State showing Government at center connected to: Education System, Healthcare System, Social Security, Zakat & Ushr, Employment Programs, and Poverty Alleviation Schemes"
+  },
+  "created_at": "2026-04-06T06:34:57.104Z"
+}

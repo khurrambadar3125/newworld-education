@@ -1,0 +1,112 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "24",
+  "chapter_name": "Ratio and Proportion",
+  "note_data": {
+    "title": "Ratio and Proportion",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Ratio is the comparison of two quantities of the same kind expressed as a:b or a/b",
+      "Proportion exists when two ratios are equal, written as a:b = c:d or a:b :: c:d",
+      "In proportion a:b :: c:d, terms a and d are called extremes, b and c are called means",
+      "Product of means equals product of extremes: b × c = a × d",
+      "Fourth proportional to a, b, c is d where a:b :: c:d",
+      "Third proportional to a, b is c where a:b :: b:c",
+      "Mean proportional between a and c is b where a:b :: b:c, so b = √(ac)",
+      "Direct proportion: when one quantity increases, other also increases proportionally",
+      "Inverse proportion: when one quantity increases, other decreases proportionally"
+    ],
+    "definitions": [
+      {
+        "term": "Ratio",
+        "definition": "Ratio is the comparison between two quantities of the same kind. It is expressed as a:b or a/b where b ≠ 0."
+      },
+      {
+        "term": "Proportion",
+        "definition": "An equality of two ratios is called proportion. If a:b = c:d, then a, b, c, d are said to be in proportion."
+      },
+      {
+        "term": "Fourth Proportional",
+        "definition": "If three quantities a, b, c are given, then fourth proportional d is such that a:b :: c:d."
+      },
+      {
+        "term": "Mean Proportional",
+        "definition": "Mean proportional between two quantities a and c is b such that a:b :: b:c, where b = √(ac)."
+      },
+      {
+        "term": "Direct Proportion",
+        "definition": "Two quantities are in direct proportion if increase in one quantity causes proportional increase in the other quantity."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define proportion and write its fundamental property.",
+        "answer": "Proportion is equality of two ratios. If a:b :: c:d, then fundamental property is: product of means = product of extremes, i.e., b × c = a × d."
+      },
+      {
+        "type": "long",
+        "question": "The monthly salary of three employees in Karachi are in the ratio 5:7:9. If the total salary is Rs. 63,000, find individual salaries. Also find the mean proportional between the first and third salary.",
+        "answer": "Let salaries be 5x, 7x, 9x. Total = 5x + 7x + 9x = 21x = 63,000. So x = 3,000. First salary = Rs. 15,000, Second = Rs. 21,000, Third = Rs. 27,000. Mean proportional between 15,000 and 27,000 = √(15,000 × 27,000) = √405,000,000 = Rs. 20,124.6"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "If a:b :: c:d, then which property holds?",
+        "options": {
+          "A": "a × b = c × d",
+          "B": "a × c = b × d",
+          "C": "a × d = b × c",
+          "D": "a + b = c + d"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Mean proportional between 4 and 16 is:",
+        "options": {
+          "A": "6",
+          "B": "8",
+          "C": "10",
+          "D": "12"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "If 3:4 :: x:12, then value of x is:",
+        "options": {
+          "A": "8",
+          "B": "9",
+          "C": "10",
+          "D": "16"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse mean proportional formula: it's √(ac), not (a+c)/2",
+      "In proportion problems, always check units are same before comparing ratios",
+      "When finding fourth proportional, maintain correct order: a:b :: c:d",
+      "Students forget to simplify ratios to lowest terms",
+      "In word problems, students don't clearly define what x represents"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question worth 3 marks in BSEK papers",
+      "Word problems on salaries, ages, and measurements appear every year",
+      "Always write 'Let the quantities be...' when solving ratio problems",
+      "Mean proportional questions are very common - memorize the formula b = √(ac)"
+    ],
+    "formulas": [
+      "a:b :: c:d ⟹ ad = bc",
+      "Fourth proportional: a:b :: c:d, find d = (bc)/a",
+      "Third proportional: a:b :: b:c, find c = b²/a",
+      "Mean proportional between a and c: b = √(ac)",
+      "If a/b = c/d, then (a+b)/b = (c+d)/d"
+    ],
+    "keyDiagram": "No specific diagram required for this chapter, but students should know how to represent ratios using bar diagrams or line segments to show proportional parts visually."
+  },
+  "created_at": "2026-04-06T06:28:40.774Z"
+}

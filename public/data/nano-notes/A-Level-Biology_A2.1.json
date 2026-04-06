@@ -1,0 +1,102 @@
+{
+  "subject": "A Level Biology",
+  "subject_code": "9700",
+  "level": "A Level",
+  "theme": "A2 Biology",
+  "chapter_id": "A2.1",
+  "chapter_name": "Energy and respiration",
+  "note_data": {
+    "title": "Energy and respiration",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**ATP** is the universal energy currency made of adenine, ribose and three phosphate groups",
+      "**Glycolysis** occurs in the cytoplasm and converts glucose to pyruvate, producing 2 ATP and 2 reduced NAD",
+      "**Link reaction** occurs in the mitochondrial matrix, converting pyruvate to acetyl CoA with CO₂ production",
+      "**Krebs cycle** occurs in the mitochondrial matrix, producing CO₂, ATP, reduced NAD and reduced FAD",
+      "**Oxidative phosphorylation** occurs on the inner mitochondrial membrane via electron transport chain and chemiosmosis",
+      "**Chemiosmosis** involves proton pumping creating a proton gradient across the inner mitochondrial membrane",
+      "**ATP synthase** uses the proton gradient to synthesise ATP from ADP + Pi",
+      "**Anaerobic respiration** in mammals produces lactate, in yeast produces ethanol and CO₂",
+      "Aerobic respiration produces approximately **32 ATP molecules** per glucose molecule",
+      "**Respiratory quotient (RQ)** = CO₂ produced ÷ O₂ consumed, indicating substrate being respired"
+    ],
+    "definitions": [
+      {
+        "term": "ATP",
+        "definition": "Adenosine triphosphate; a nucleotide consisting of adenine, ribose and three phosphate groups that releases energy when hydrolysed to ADP + Pi"
+      },
+      {
+        "term": "Glycolysis",
+        "definition": "The metabolic pathway that converts glucose to pyruvate in the cytoplasm, producing ATP and reduced NAD"
+      },
+      {
+        "term": "Chemiosmosis",
+        "definition": "The process by which ATP is synthesised using the energy from a proton gradient across a membrane"
+      },
+      {
+        "term": "Respiratory substrate",
+        "definition": "An organic molecule that can be broken down in respiration to release energy for ATP synthesis"
+      },
+      {
+        "term": "Oxidative phosphorylation",
+        "definition": "The process of ATP synthesis using energy released from the electron transport chain and chemiosmosis"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of events or processes in logical order"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between two processes"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how ATP is resynthesised during oxidative phosphorylation. [6]",
+      "marks": 6,
+      "answer": "Reduced NAD and reduced FAD are oxidised at the electron transport chain. Electrons pass along the chain through electron carriers. Energy is released as electrons move down the chain. This energy is used to pump protons from the mitochondrial matrix into the intermembrane space. A proton gradient is established across the inner mitochondrial membrane. Protons flow back through ATP synthase and the energy released is used to synthesise ATP from ADP + Pi.",
+      "markBreakdown": [
+        "Mark 1: Reduced NAD/FAD oxidised",
+        "Mark 2: Electrons pass along electron transport chain",
+        "Mark 3: Energy released",
+        "Mark 4: Protons pumped across inner membrane",
+        "Mark 5: Proton gradient formed",
+        "Mark 6: ATP synthase uses gradient to make ATP"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'ATP gives energy' — always say 'ATP releases energy when hydrolysed'",
+      "Students often confuse the location of glycolysis (cytoplasm) with Krebs cycle (mitochondrial matrix)",
+      "Don't write 'oxygen accepts electrons' — write 'oxygen is the final electron acceptor'",
+      "Never say 'glucose is burnt' — use 'glucose is oxidised' or 'glucose undergoes respiration'",
+      "Students forget that anaerobic respiration still involves glycolysis and produces some ATP"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 2 - often as a 6-8 mark question on the electron transport chain",
+      "Always specify the exact location within the mitochondrion (matrix vs intermembrane space)",
+      "Draw clear diagrams of mitochondrial structure when explaining oxidative phosphorylation",
+      "Learn the exact ATP yield numbers for each stage of respiration"
+    ],
+    "formulas": [
+      "RQ = CO₂ produced ÷ O₂ consumed",
+      "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP (aerobic)",
+      "C₆H₁₂O₆ → 2C₃H₆O₃ + ATP (anaerobic in mammals)"
+    ],
+    "keyDiagramDescription": "Mitochondrion structure showing outer membrane, inner membrane with cristae, intermembrane space and matrix. Label electron transport chain on inner membrane and show proton movement during chemiosmosis with ATP synthase."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:04:17.100Z",
+  "updated_at": "2026-04-06T05:04:17.100Z"
+}

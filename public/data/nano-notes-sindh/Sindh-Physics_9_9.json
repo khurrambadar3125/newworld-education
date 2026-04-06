@@ -1,0 +1,112 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "9",
+  "chapter_name": "Simple Machines",
+  "note_data": {
+    "title": "Simple Machines",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "A machine is a device that makes work easier by changing the magnitude or direction of force",
+      "Simple machines include lever, pulley, wheel and axle, inclined plane, wedge, and screw",
+      "Mechanical Advantage (MA) = Load/Effort — it tells us how many times a machine multiplies the effort",
+      "Velocity Ratio (VR) = Distance moved by effort/Distance moved by load",
+      "Efficiency = (MA/VR) × 100% — no machine is 100% efficient due to friction",
+      "First class lever has fulcrum between effort and load (scissors, crowbar)",
+      "Second class lever has load between fulcrum and effort (wheelbarrow, nutcracker)",
+      "Third class lever has effort between fulcrum and load (fishing rod, human arm)",
+      "Fixed pulley changes direction of force, movable pulley provides mechanical advantage",
+      "Inclined plane reduces effort force but increases distance — used in loading trucks at Karachi port"
+    ],
+    "definitions": [
+      {
+        "term": "Machine",
+        "definition": "A device which makes our work easier either by changing the magnitude of force or by changing the direction of force or both."
+      },
+      {
+        "term": "Mechanical Advantage",
+        "definition": "The ratio of load to the effort is called mechanical advantage. MA = Load/Effort"
+      },
+      {
+        "term": "Velocity Ratio",
+        "definition": "The ratio of distance moved by effort to the distance moved by load is called velocity ratio. VR = Distance moved by effort/Distance moved by load"
+      },
+      {
+        "term": "Efficiency",
+        "definition": "The ratio of mechanical advantage to velocity ratio expressed as percentage is called efficiency. Efficiency = (MA/VR) × 100%"
+      },
+      {
+        "term": "Lever",
+        "definition": "A rigid bar which can rotate about a fixed point called fulcrum is known as lever."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define mechanical advantage and write its formula.",
+        "answer": "The ratio of load to the effort is called mechanical advantage. It tells us how many times a machine multiplies the effort force. MA = Load/Effort"
+      },
+      {
+        "type": "long",
+        "question": "Describe the three classes of levers with examples and diagrams.",
+        "answer": "First Class Lever: Fulcrum is between effort and load. Examples: scissors, crowbar, seesaw. Second Class Lever: Load is between fulcrum and effort. Examples: wheelbarrow, nutcracker, bottle opener. Third Class Lever: Effort is between fulcrum and load. Examples: fishing rod, human arm, tweezers. Each class has different mechanical advantage and applications in daily life."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The mechanical advantage of a machine is 4. If the effort applied is 50 N, the load will be:",
+        "options": {
+          "A": "12.5 N",
+          "B": "200 N",
+          "C": "46 N",
+          "D": "54 N"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which of the following is an example of second class lever?",
+        "options": {
+          "A": "Scissors",
+          "B": "Fishing rod",
+          "C": "Wheelbarrow",
+          "D": "Seesaw"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "A fixed pulley provides:",
+        "options": {
+          "A": "Mechanical advantage only",
+          "B": "Change in direction only",
+          "C": "Both mechanical advantage and change in direction",
+          "D": "Neither mechanical advantage nor change in direction"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse the positions of effort, load, and fulcrum in different classes of levers",
+      "Forgetting to write the formula before solving numerical problems",
+      "Mixing up mechanical advantage and velocity ratio definitions",
+      "Not converting units properly in numerical problems",
+      "Drawing incorrect diagrams for different types of pulleys"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and at least one short question in every BSEK paper",
+      "Memorize the lever diagrams — they appear frequently in exams",
+      "Practice numerical problems on MA, VR, and efficiency calculations",
+      "Remember the exact textbook definitions word by word for short questions"
+    ],
+    "formulas": [
+      "Mechanical Advantage (MA) = Load/Effort",
+      "Velocity Ratio (VR) = Distance moved by effort/Distance moved by load",
+      "Efficiency = (MA/VR) × 100%",
+      "For inclined plane: MA = Length of plane/Height of plane"
+    ],
+    "keyDiagram": "Three classes of levers showing position of fulcrum (F), effort (E), and load (L). First class: E-F-L, Second class: F-L-E, Third class: F-E-L. Also draw fixed and movable pulley arrangements with proper labeling."
+  },
+  "created_at": "2026-04-06T06:03:43.369Z"
+}

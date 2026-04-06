@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Inorganic Chemistry",
+  "chapter_id": "AS10",
+  "chapter_name": "Group 2",
+  "note_data": {
+    "title": "Group 2",
+    "readTime": "8 min",
+    "keyPoints": [
+      "Group 2 elements are **alkaline earth metals** with electronic configuration ns² where n is the outer shell",
+      "Group 2 elements show **metallic bonding** and form **ionic compounds** with oxidation state +2",
+      "**Atomic radius increases** down Group 2 due to additional electron shells",
+      "**First ionisation energy decreases** down Group 2 as outer electrons are further from nucleus and more shielded",
+      "**Reactivity increases** down Group 2 because ionisation energies decrease making electron loss easier",
+      "**Thermal stability of carbonates increases** down Group 2: MgCO₃ < CaCO₃ < SrCO₃ < BaCO₃",
+      "**Thermal stability of nitrates increases** down Group 2 following the same pattern as carbonates",
+      "Group 2 hydroxides become **more soluble** down the group: Mg(OH)₂ < Ca(OH)₂ < Sr(OH)₂ < Ba(OH)₂",
+      "Group 2 sulfates become **less soluble** down the group: MgSO₄ > CaSO₄ > SrSO₄ > BaSO₄",
+      "**Flame test colours**: Mg - no colour, Ca - brick red, Sr - crimson red, Ba - green"
+    ],
+    "definitions": [
+      {
+        "term": "Alkaline earth metals",
+        "definition": "Group 2 elements that form alkaline solutions when their oxides react with water"
+      },
+      {
+        "term": "Thermal decomposition",
+        "definition": "Breaking down of a compound by heat into two or more simpler substances"
+      },
+      {
+        "term": "Polarising power",
+        "definition": "The ability of a cation to distort the electron cloud of an anion"
+      },
+      {
+        "term": "Lattice enthalpy",
+        "definition": "The enthalpy change when one mole of an ionic solid is formed from gaseous ions under standard conditions"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Predict",
+        "instruction": "Use trends to suggest properties of unknown Group 2 compounds"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities and differences with specific examples"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why the thermal stability of Group 2 carbonates increases down the group. [3]",
+      "marks": 3,
+      "answer": "Cation charge density decreases down Group 2. This is because ionic radius increases while charge remains +2. Smaller, more highly charged cations have greater polarising power and distort the carbonate ion more, making decomposition easier.",
+      "markBreakdown": [
+        "Mark 1: Cation charge density decreases down the group",
+        "Mark 2: Ionic radius increases while charge stays the same",
+        "Mark 3: Higher charge density causes greater polarisation of carbonate ion"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'atomic size' — always say 'atomic radius' or 'ionic radius'",
+      "Students often confuse solubility trends: hydroxides increase, sulfates decrease down Group 2",
+      "Don't say 'stability increases because atoms get bigger' — explain using charge density and polarising power",
+      "Never write M²⁺ in equations — always specify the actual metal (Mg²⁺, Ca²⁺, etc.)",
+      "Students forget that MgCO₃ and Mg(NO₃)₂ decompose at relatively low temperatures compared to other Group 2 compounds"
+    ],
+    "examinerTips": [
+      "Thermal stability questions appear frequently - learn the charge density explanation",
+      "Always give specific examples when discussing trends (e.g. Mg vs Ba)",
+      "Solubility questions often test both hydroxides and sulfates - learn both trends",
+      "Flame tests are commonly tested - memorise colours exactly as given in syllabus"
+    ],
+    "formulas": [
+      "MCO₃ → MO + CO₂",
+      "M(NO₃)₂ → MO + 2NO₂ + ½O₂",
+      "M + 2H₂O → M(OH)₂ + H₂",
+      "MO + H₂O → M(OH)₂"
+    ],
+    "keyDiagramDescription": "Born-Haber cycle showing lattice enthalpy trends, or apparatus for thermal decomposition of carbonates with gas syringe to collect CO₂"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:33:00.193Z",
+  "updated_at": "2026-04-06T04:33:00.193Z"
+}

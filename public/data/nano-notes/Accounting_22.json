@@ -1,0 +1,101 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 4: Advanced Topics",
+  "chapter_id": "22",
+  "chapter_name": "Analysis and interpretation",
+  "note_data": {
+    "title": "Analysis and interpretation",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Ratio analysis** compares financial figures to assess business performance and position",
+      "**Gross profit ratio** measures gross profit as a percentage of sales revenue",
+      "**Net profit ratio** shows net profit as a percentage of sales revenue",
+      "**Current ratio** tests ability to pay short-term debts using current assets",
+      "**Acid test ratio** measures immediate liquidity excluding stock from current assets",
+      "**Stock turnover ratio** shows how many times stock is sold and replaced during a period",
+      "**Debtors collection period** calculates average days taken to collect debts from customers",
+      "**Return on capital employed** measures profitability relative to capital invested in the business",
+      "**Interpretation** requires comparing ratios with previous years, industry averages, or similar businesses"
+    ],
+    "definitions": [
+      {
+        "term": "Ratio analysis",
+        "definition": "A technique that compares financial figures to assess business performance and financial position"
+      },
+      {
+        "term": "Liquidity",
+        "definition": "The ability of a business to pay its short-term debts when they fall due"
+      },
+      {
+        "term": "Current ratio",
+        "definition": "A liquidity ratio calculated by dividing current assets by current liabilities"
+      },
+      {
+        "term": "Gross profit ratio",
+        "definition": "A profitability ratio showing gross profit as a percentage of sales revenue"
+      },
+      {
+        "term": "Acid test ratio",
+        "definition": "A liquidity ratio calculated by dividing liquid assets by current liabilities"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show the formula, substitute figures, and give the final answer with correct units"
+      },
+      {
+        "commandWord": "Comment",
+        "instruction": "State what the ratio shows + give a reason for the result + suggest action if needed"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Calculate ratios + compare with standards + explain what changes mean for the business"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Karachi Traders has current assets $150,000, stock $60,000 and current liabilities $100,000. Calculate the current ratio and acid test ratio and comment on the liquidity position.",
+      "marks": 6,
+      "answer": "Current ratio = Current assets ÷ Current liabilities = $150,000 ÷ $100,000 = 1.5:1. Acid test ratio = (Current assets - Stock) ÷ Current liabilities = ($150,000 - $60,000) ÷ $100,000 = 0.9:1. The current ratio of 1.5:1 appears satisfactory as current assets exceed current liabilities. However, the acid test ratio of 0.9:1 is below the ideal 1:1, indicating the business may struggle to pay immediate debts without selling stock. The business should reduce stock levels or increase cash resources.",
+      "markBreakdown": [
+        "Mark 1: Current ratio formula and calculation",
+        "Mark 2: Current ratio answer 1.5:1",
+        "Mark 3: Acid test ratio formula and calculation",
+        "Mark 4: Acid test ratio answer 0.9:1",
+        "Mark 5: Comment on current ratio being satisfactory",
+        "Mark 6: Comment on acid test ratio concern and suggestion"
+      ]
+    },
+    "commonMistakes": [
+      "Never mix up current ratio and acid test ratio - acid test excludes stock from current assets",
+      "Students often forget to show working when calculating ratios - always show the formula and substitution",
+      "Never give ratio answers as decimals - always express as ratio format like 2.5:1",
+      "Students calculate ratios correctly but fail to interpret what they mean for the business",
+      "Never compare ratios in isolation - always comment on whether they are good/bad and suggest improvements"
+    ],
+    "examinerTips": [
+      "Ratio analysis appears in Paper 2 every year - usually worth 8-12 marks",
+      "Always show your working even if the answer is wrong - method marks available",
+      "Use comparison words like 'higher than', 'improved', 'deteriorated' when interpreting ratios",
+      "Learn ideal ratio ranges: current ratio 1.5-2:1, acid test 1:1, gross profit varies by industry"
+    ],
+    "formulas": [
+      "Gross profit ratio = (Gross profit ÷ Sales revenue) × 100",
+      "Net profit ratio = (Net profit ÷ Sales revenue) × 100",
+      "Current ratio = Current assets ÷ Current liabilities",
+      "Acid test ratio = (Current assets - Stock) ÷ Current liabilities",
+      "Stock turnover = Cost of sales ÷ Average stock",
+      "Debtors collection period = (Debtors ÷ Credit sales) × 365",
+      "Return on capital employed = (Net profit ÷ Capital employed) × 100"
+    ],
+    "keyDiagramDescription": "Create a ratio analysis summary table showing ratio names, formulas, what they measure (profitability/liquidity/efficiency), and ideal ranges for quick reference"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:43:04.738Z",
+  "updated_at": "2026-04-06T03:43:04.738Z"
+}

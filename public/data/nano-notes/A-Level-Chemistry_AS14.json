@@ -1,0 +1,95 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Organic Chemistry",
+  "chapter_id": "AS14",
+  "chapter_name": "Hydrocarbons",
+  "note_data": {
+    "title": "Hydrocarbons",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Alkanes** are saturated hydrocarbons with the general formula CnH2n+2",
+      "**Alkenes** are unsaturated hydrocarbons with the general formula CnH2n containing a C=C double bond",
+      "Alkanes undergo **substitution reactions** where one atom/group is replaced by another atom/group",
+      "Alkenes undergo **addition reactions** where atoms/groups are added across the C=C double bond",
+      "**Cracking** is the thermal decomposition of long-chain alkanes to produce shorter alkanes and alkenes",
+      "Alkenes can undergo **addition polymerisation** to form long-chain polymers",
+      "Alkanes show **free radical substitution** with chlorine in the presence of UV light",
+      "**Bromine water** decolourises from orange to colourless when alkenes are present - this is a test for unsaturation",
+      "Cracking requires high temperature (450-750°C) and a catalyst (zeolite or aluminium oxide)"
+    ],
+    "definitions": [
+      {
+        "term": "Saturated hydrocarbon",
+        "definition": "A hydrocarbon containing only single C-C bonds"
+      },
+      {
+        "term": "Unsaturated hydrocarbon",
+        "definition": "A hydrocarbon containing at least one C=C double bond"
+      },
+      {
+        "term": "Addition reaction",
+        "definition": "A reaction where atoms or groups are added to a molecule without anything being removed"
+      },
+      {
+        "term": "Substitution reaction",
+        "definition": "A reaction where one atom or group is replaced by another atom or group"
+      },
+      {
+        "term": "Addition polymerisation",
+        "definition": "The joining together of many unsaturated monomers to form a long-chain polymer"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give conditions and observations. Use 'when...then' format."
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why alkenes are more reactive than alkanes. [3]",
+      "marks": 3,
+      "answer": "Alkenes contain a C=C double bond which makes them unsaturated. The C=C double bond has a high electron density which attracts electrophiles. Alkenes can undergo addition reactions whereas alkanes are saturated and can only undergo substitution reactions under harsh conditions.",
+      "markBreakdown": [
+        "Mark 1: Alkenes contain C=C double bond/are unsaturated",
+        "Mark 2: High electron density attracts electrophiles",
+        "Mark 3: Alkenes undergo addition reactions/alkanes need harsh conditions"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'alkenes are unstable' - always say 'alkenes are reactive due to the C=C double bond'",
+      "Students often forget to mention UV light is needed for free radical substitution",
+      "Don't confuse addition and substitution - addition adds atoms, substitution replaces atoms",
+      "Never say cracking 'breaks' bonds - say 'thermal decomposition occurs'",
+      "Students often draw incorrect polymer structures - ensure the C=C bond opens completely"
+    ],
+    "examinerTips": [
+      "Hydrocarbon reactions appear in every Paper 2 - learn mechanisms thoroughly",
+      "Always state conditions clearly: temperature, catalyst, and UV light where needed",
+      "For polymer questions, show at least 3 repeat units with continuation bonds",
+      "Bromine water test is frequently tested - remember orange to colourless colour change"
+    ],
+    "formulas": [
+      "CnH2n+2 (alkanes)",
+      "CnH2n (alkenes)",
+      "CH3CH2Cl + HCl → CH3CHCl2 + H2 (substitution)",
+      "CH2=CH2 + Br2 → CH2BrCH2Br (addition)"
+    ],
+    "keyDiagramDescription": "Free radical substitution mechanism showing initiation (Cl2 → 2Cl•), propagation (CH4 + Cl• → CH3• + HCl, then CH3• + Cl2 → CH3Cl + Cl•) and termination steps"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:34:43.482Z",
+  "updated_at": "2026-04-06T04:34:43.482Z"
+}

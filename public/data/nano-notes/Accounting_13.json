@@ -1,0 +1,95 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 3: Financial Statements",
+  "chapter_id": "13",
+  "chapter_name": "Irrecoverable debts and provisions for doubtful debts",
+  "note_data": {
+    "title": "Irrecoverable debts and provisions for doubtful debts",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Irrecoverable debts** are debts that are considered uncollectable and must be written off completely from the books",
+      "Irrecoverable debts are charged as an **expense to the profit and loss account** in the period they are written off",
+      "**Provision for doubtful debts** is an estimate of debts that may become irrecoverable in the future",
+      "Provisions are created by debiting profit and loss account and crediting provision for doubtful debts account",
+      "**Increase in provision** is charged as an expense to profit and loss account",
+      "**Decrease in provision** is credited as income to profit and loss account",
+      "Debtors are shown in the balance sheet at their **net value** (gross debtors minus provision)",
+      "Recovery of previously written off irrecoverable debts is credited to profit and loss account as income",
+      "Provision is usually calculated as a **percentage of debtors** or based on age analysis of debts"
+    ],
+    "definitions": [
+      {
+        "term": "Irrecoverable debt",
+        "definition": "A debt that is considered uncollectable and must be written off completely from the books of account"
+      },
+      {
+        "term": "Provision for doubtful debts",
+        "definition": "An estimate of the amount of existing debtors that may become irrecoverable in the future"
+      },
+      {
+        "term": "Net debtors",
+        "definition": "The amount of debtors after deducting the provision for doubtful debts"
+      },
+      {
+        "term": "Recovery of irrecoverable debt",
+        "definition": "Money received from a debtor whose debt was previously written off as irrecoverable"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all workings clearly and label your final answer"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Use proper account format with correct titles and column headings"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Ahmed's business has debtors of Rs.50,000 at 31 December 2023. During the year, irrecoverable debts of Rs.2,000 were written off. A provision for doubtful debts is to be maintained at 5% of debtors. The provision brought forward was Rs.2,600. Calculate the charge/credit to profit and loss account.",
+      "marks": 4,
+      "answer": "Provision required: Rs.50,000 × 5% = Rs.2,500\nProvision brought forward: Rs.2,600\nDecrease in provision: Rs.2,600 - Rs.2,500 = Rs.100\nCharge to P&L account:\nIrrecoverable debts written off: Rs.2,000 (expense)\nDecrease in provision: Rs.100 (income)\nNet charge to P&L: Rs.2,000 - Rs.100 = Rs.1,900",
+      "markBreakdown": [
+        "Mark 1: Calculation of provision required Rs.2,500",
+        "Mark 2: Identification of decrease in provision Rs.100",
+        "Mark 3: Irrecoverable debts Rs.2,000 as expense",
+        "Mark 4: Net charge Rs.1,900 to P&L account"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'bad debts' in exam answers — always use 'irrecoverable debts' for Cambridge marking",
+      "Students often forget to show irrecoverable debts and provision changes separately in P&L calculations",
+      "Common error: Adding provision changes instead of subtracting decreases from expenses",
+      "Students confuse gross debtors with net debtors when calculating required provision percentage",
+      "Writing off irrecoverable debts from provision account instead of writing off directly from debtors"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 2 exam, often combined with final accounts questions",
+      "Always show separate workings for provision calculations and P&L impacts",
+      "Recovery of irrecoverable debts is ALWAYS income to P&L account, never reduces the expense",
+      "When preparing accounts, show both gross debtors and provision separately in balance sheet workings"
+    ],
+    "formulas": [
+      "Provision required = Debtors × Provision percentage",
+      "Change in provision = New provision - Old provision",
+      "Net debtors = Gross debtors - Provision for doubtful debts"
+    ],
+    "keyDiagramDescription": "T-account format showing Provision for Doubtful Debts account with opening balance, increase/decrease, and closing balance, clearly linking to P&L account entries"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:39:38.395Z",
+  "updated_at": "2026-04-06T03:39:38.395Z"
+}

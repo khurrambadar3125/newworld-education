@@ -1,0 +1,95 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "Space Physics",
+  "chapter_id": "25",
+  "chapter_name": "Stars and the Universe",
+  "note_data": {
+    "title": "Stars and the Universe",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **star** is a hot ball of gas that produces its own light and heat by nuclear fusion reactions",
+      "The **Sun** is our nearest star and is the source of light and heat energy for the solar system",
+      "A **galaxy** is a collection of billions of stars held together by gravitational attraction",
+      "The **Milky Way** is the name of our galaxy which contains approximately 100 billion stars",
+      "The **universe** is everything that exists including all galaxies, stars, planets and empty space",
+      "Stars have a **life cycle** - they form from gas clouds, burn fuel by nuclear fusion, then eventually die",
+      "**Light years** are used to measure distances between stars because the distances are so enormous",
+      "The universe is **expanding** which means galaxies are moving away from each other",
+      "**Red shift** in light from distant galaxies provides evidence that the universe is expanding"
+    ],
+    "definitions": [
+      {
+        "term": "Star",
+        "definition": "A hot ball of gas that produces its own light and heat by nuclear fusion reactions"
+      },
+      {
+        "term": "Galaxy",
+        "definition": "A collection of billions of stars held together by gravitational attraction"
+      },
+      {
+        "term": "Universe",
+        "definition": "Everything that exists including all galaxies, stars, planets and empty space"
+      },
+      {
+        "term": "Light year",
+        "definition": "The distance that light travels in one year in a vacuum"
+      },
+      {
+        "term": "Red shift",
+        "definition": "The increase in wavelength of light from stars moving away from us"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give key features or stages in sequence"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between two things"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why light years are used to measure distances between stars. [3 marks]",
+      "marks": 3,
+      "answer": "Light years are used because the distances between stars are extremely large. Using metres or kilometres would give very large numbers that are difficult to work with. A light year represents the distance light travels in one year, which is a more convenient unit for astronomical distances.",
+      "markBreakdown": [
+        "Mark 1: Distances between stars are extremely large/enormous",
+        "Mark 2: Normal units like metres would give very large numbers",
+        "Mark 3: Light year is more convenient/practical for these distances"
+      ]
+    },
+    "commonMistakes": [
+      "Never say stars are 'burning' fuel - always say nuclear fusion reactions occur",
+      "Students often confuse galaxy with universe - galaxy is part of universe, not the same thing",
+      "Don't say light year is a unit of time - it's a unit of distance",
+      "Avoid saying red shift proves Big Bang - it only provides evidence for expanding universe",
+      "Never describe stars as 'balls of fire' - they are balls of gas undergoing nuclear fusion"
+    ],
+    "examinerTips": [
+      "This topic appears regularly in Paper 2 Section B",
+      "Always distinguish between star, galaxy and universe in your answers",
+      "Learn the exact definition of light year as a distance unit",
+      "Remember nuclear fusion is the energy source in stars, not burning",
+      "Red shift questions often link to expanding universe - practice this connection"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Scale diagram showing Earth, Solar System, Milky Way Galaxy and Universe as nested structures, demonstrating relative sizes from smallest to largest"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:22:04.049Z",
+  "updated_at": "2026-04-05T21:22:04.049Z"
+}

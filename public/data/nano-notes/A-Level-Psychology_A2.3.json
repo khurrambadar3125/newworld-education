@@ -1,0 +1,98 @@
+{
+  "subject": "A Level Psychology",
+  "subject_code": "9990",
+  "level": "A Level",
+  "theme": "A2 Psychology",
+  "chapter_id": "A2.3",
+  "chapter_name": "Psychology and health",
+  "note_data": {
+    "title": "Psychology and health",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Health** is a complete state of physical, mental and social well-being and not merely the absence of disease",
+      "**Stress** is the body's response to environmental demands that exceed an individual's ability to cope",
+      "The **transactional model** explains stress as an interaction between environmental demands and individual appraisal",
+      "**Primary appraisal** involves evaluating whether a situation is threatening, while **secondary appraisal** assesses coping resources",
+      "**Adherence** refers to the extent to which patients follow medical advice and treatment regimens",
+      "**Pain** is an unpleasant sensory and emotional experience associated with actual or potential tissue damage",
+      "The **gate control theory** explains pain perception through neural gates that can open or close pain signals",
+      "**Substance abuse** involves the harmful use of psychoactive substances leading to impairment or distress",
+      "**Coping strategies** can be problem-focused (addressing the stressor) or emotion-focused (managing emotional response)",
+      "**Social support** acts as a buffer against stress and improves health outcomes"
+    ],
+    "definitions": [
+      {
+        "term": "Stress",
+        "definition": "The body's physiological and psychological response when environmental demands exceed an individual's perceived ability to cope"
+      },
+      {
+        "term": "Adherence",
+        "definition": "The extent to which a patient's behavior matches agreed recommendations from healthcare providers regarding medication, diet or lifestyle changes"
+      },
+      {
+        "term": "Primary appraisal",
+        "definition": "The initial cognitive evaluation of whether a situation is irrelevant, benign-positive or stressful"
+      },
+      {
+        "term": "Gate control theory",
+        "definition": "A theory explaining pain perception where neural gates in the spinal cord can open or close to allow or block pain signals to the brain"
+      },
+      {
+        "term": "Social support",
+        "definition": "The perception and actuality that one is cared for, has assistance available from other people, and is part of a supportive social network"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of processes, behaviors or characteristics"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Give strengths AND weaknesses with evidence and conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two ways psychology can help improve adherence to medical treatment. [6 marks]",
+      "marks": 6,
+      "answer": "One way psychology can improve adherence is through health belief models which identify factors affecting compliance. For example, if patients believe the treatment will be effective and that their condition is serious, they are more likely to follow medical advice because their cognitive appraisal influences behavior. Another way is through behavioral interventions such as reminder systems and social support. Text message reminders or pill organizers can prompt patients to take medication regularly because external cues compensate for memory failures and busy lifestyles.",
+      "markBreakdown": [
+        "Mark 1: Health belief model identified",
+        "Mark 2: Explanation of how beliefs affect adherence",
+        "Mark 3: Clear example given",
+        "Mark 4: Behavioral intervention identified",
+        "Mark 5: Explanation of how reminders work",
+        "Mark 6: Clear mechanism explained"
+      ]
+    },
+    "commonMistakes": [
+      "Never say stress is 'always negative' — eustress can be positive and motivating",
+      "Students often confuse primary and secondary appraisal — primary is 'what is this?' secondary is 'can I cope?'",
+      "Don't say adherence is the same as compliance — adherence implies patient agreement, compliance suggests passive following",
+      "Never describe pain as 'just physical' — pain has emotional, cognitive and social components",
+      "Students wrongly assume all substance use is abuse — distinguish between use, misuse and dependence"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 with 6-8 mark questions on stress or adherence",
+      "Always link psychological concepts to real health behaviors for full marks",
+      "Use specific examples from Pakistani healthcare context where relevant (e.g., TB treatment adherence)",
+      "For evaluation questions, consider cultural differences in health beliefs and practices"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Transactional model of stress showing: Environmental stressor → Primary appraisal → Secondary appraisal → Coping response → Outcome, with feedback loops between each stage"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:23:16.443Z",
+  "updated_at": "2026-04-06T05:23:16.443Z"
+}

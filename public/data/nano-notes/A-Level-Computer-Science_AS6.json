@@ -1,0 +1,95 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "AS Computer Science",
+  "chapter_id": "AS6",
+  "chapter_name": "Security, privacy and data integrity",
+  "note_data": {
+    "title": "Security, privacy and data integrity",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Encryption** converts plaintext into ciphertext using an algorithm and key to prevent unauthorised access",
+      "**Symmetric encryption** uses the same key for encryption and decryption, while **asymmetric encryption** uses a public and private key pair",
+      "**Firewall** monitors and controls incoming and outgoing network traffic based on predetermined security rules",
+      "**Malware** is malicious software designed to damage, disrupt, or gain unauthorised access to computer systems",
+      "**Phishing** is a social engineering attack that tricks users into revealing sensitive information by impersonating trusted entities",
+      "**Authentication** verifies the identity of a user or system through passwords, biometrics, or digital certificates",
+      "**Access control** restricts user permissions to specific resources based on their role or identity",
+      "**Digital signatures** use asymmetric encryption to verify the authenticity and integrity of digital documents",
+      "**Backup strategies** include full, incremental, and differential backups to ensure data recovery in case of loss or corruption"
+    ],
+    "definitions": [
+      {
+        "term": "Encryption",
+        "definition": "The process of converting plaintext into ciphertext using an algorithm and key to prevent unauthorised access to data"
+      },
+      {
+        "term": "Firewall",
+        "definition": "A network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules"
+      },
+      {
+        "term": "Malware",
+        "definition": "Malicious software designed to damage, disrupt, or gain unauthorised access to computer systems"
+      },
+      {
+        "term": "Phishing",
+        "definition": "A social engineering attack that attempts to trick users into revealing sensitive information by impersonating trusted entities"
+      },
+      {
+        "term": "Authentication",
+        "definition": "The process of verifying the identity of a user or system before granting access to resources"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give multiple facts about the process or method without detailed explanation"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities and differences between two concepts"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two methods that can be used to protect data during transmission over a network.",
+      "marks": 4,
+      "answer": "Encryption can be used to convert plaintext data into ciphertext using an algorithm and key. This prevents unauthorised users from reading the data even if they intercept it during transmission. Digital signatures can be used to verify the authenticity and integrity of the data. This ensures that the data has not been altered during transmission and confirms the identity of the sender.",
+      "markBreakdown": [
+        "Mark 1: Encryption method identified",
+        "Mark 2: Explanation of how encryption protects data",
+        "Mark 3: Digital signatures method identified",
+        "Mark 4: Explanation of how digital signatures protect data"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'encoding' when you mean 'encryption' — encoding is reversible without a key",
+      "Students often confuse viruses with malware — viruses are a type of malware that replicates itself",
+      "Don't say firewalls 'block viruses' — they control network traffic based on rules",
+      "Never describe authentication as just 'entering a password' — it's the verification process",
+      "Students confuse symmetric and asymmetric encryption key usage"
+    ],
+    "examinerTips": [
+      "Security questions appear in almost every Paper 2 exam",
+      "Always explain HOW the security method protects data, not just what it does",
+      "Use specific examples of malware types (virus, worm, trojan) for full marks",
+      "Remember to mention both encryption and decryption processes in explanations"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Network security diagram showing firewall placement between internal network and internet, with encryption process showing plaintext → algorithm + key → ciphertext transformation"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:15:56.733Z",
+  "updated_at": "2026-04-06T05:15:56.733Z"
+}

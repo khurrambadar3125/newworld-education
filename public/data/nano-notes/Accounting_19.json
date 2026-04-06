@@ -1,0 +1,98 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 4: Advanced Topics",
+  "chapter_id": "19",
+  "chapter_name": "Partnerships",
+  "note_data": {
+    "title": "Partnerships",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **partnership** is a business owned by two or more people who share the risks and rewards of the business",
+      "**Partnership agreement** sets out the terms of the partnership including profit sharing ratios, salaries, interest on capital and drawings",
+      "**Capital accounts** record permanent capital contributions and remain fixed unless additional capital is introduced or withdrawn",
+      "**Current accounts** record temporary items such as share of profit, salaries, interest on capital, interest on drawings and drawings",
+      "**Profit and loss appropriation account** shows how net profit is distributed among partners according to the partnership agreement",
+      "**Interest on capital** is calculated on opening capital balance at the agreed percentage rate and is an expense to the partnership",
+      "**Interest on drawings** is calculated on drawings made during the year and is income to the partnership",
+      "**Salary to partners** is treated as an appropriation of profit, not an expense in the trading account",
+      "**Residual profit** is shared among partners in their profit sharing ratio after all appropriations"
+    ],
+    "definitions": [
+      {
+        "term": "Partnership",
+        "definition": "A business owned by two or more people who share the risks and rewards of the business"
+      },
+      {
+        "term": "Capital Account",
+        "definition": "An account that records the permanent capital contributions of each partner"
+      },
+      {
+        "term": "Current Account",
+        "definition": "An account that records the temporary transactions of each partner including share of profit, salaries, interest and drawings"
+      },
+      {
+        "term": "Appropriation Account",
+        "definition": "An account that shows how the net profit is distributed among the partners"
+      },
+      {
+        "term": "Profit Sharing Ratio",
+        "definition": "The ratio in which partners share profits and losses as agreed in the partnership agreement"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working steps clearly with proper labels"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Use correct format with proper headings and layout for accounts"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Ahmed and Bilal are partners sharing profits 3:2. Net profit for the year is $15,000. Ahmed receives salary of $2,000 and interest on capital of $500. Calculate Ahmed's total share from the business.",
+      "marks": 3,
+      "answer": "Appropriations: Ahmed's salary $2,000 + Interest on capital $500 = $2,500. Residual profit = $15,000 - $2,500 = $12,500. Ahmed's share of residual profit = $12,500 × 3/5 = $7,500. Ahmed's total share = $2,500 + $7,500 = $10,000",
+      "markBreakdown": [
+        "Mark 1: Calculate total appropriations $2,500",
+        "Mark 2: Calculate residual profit $12,500 and Ahmed's share $7,500",
+        "Mark 3: Calculate total share $10,000"
+      ]
+    },
+    "commonMistakes": [
+      "Never treat partner's salary as an expense in trading account — always show it as appropriation of profit",
+      "Students often forget to calculate residual profit after deducting all appropriations before applying profit sharing ratio",
+      "Never mix capital account and current account transactions — capital is permanent, current is temporary",
+      "Students often calculate interest on drawings incorrectly — it reduces the partner's share, not increases it",
+      "Never show drawings as an expense — they are appropriations that reduce the partner's current account balance"
+    ],
+    "examinerTips": [
+      "Partnership accounts appear frequently in Paper 2 Section B",
+      "Always prepare appropriation account first before preparing partners' current accounts",
+      "Show clear workings for all calculations including profit sharing ratios",
+      "Label all accounts properly with partner names and account types"
+    ],
+    "formulas": [
+      "Interest on Capital = Opening Capital × Rate × Time",
+      "Interest on Drawings = Drawings × Rate × Time",
+      "Partner's Share of Residual Profit = Residual Profit × Partner's Ratio / Total Ratio"
+    ],
+    "keyDiagramDescription": "Partnership appropriation account showing net profit at top, followed by appropriations (salaries, interest on capital, interest on drawings), then residual profit shared in profit sharing ratio"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:41:55.718Z",
+  "updated_at": "2026-04-06T03:41:55.718Z"
+}

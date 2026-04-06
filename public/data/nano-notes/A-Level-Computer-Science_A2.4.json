@@ -1,0 +1,89 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "A2 Computer Science",
+  "chapter_id": "A2.4",
+  "chapter_name": "Security",
+  "note_data": {
+    "title": "Security",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**SSL/TLS** uses symmetric and asymmetric encryption to establish secure communication channels between client and server",
+      "**Digital certificates** contain public keys and are issued by trusted Certificate Authorities (CA) to verify identity",
+      "**Public Key Infrastructure (PKI)** uses digital certificates to manage encryption keys and authenticate users",
+      "**Quantum encryption** uses quantum key distribution (QKD) where any interception attempt disturbs the quantum state",
+      "**SSL handshake** involves certificate verification, key exchange, and cipher suite negotiation",
+      "**Certificate revocation lists (CRL)** maintain records of invalid or compromised certificates",
+      "**Quantum cryptography** provides theoretical unbreakable security through Heisenberg's uncertainty principle",
+      "**Root certificates** are self-signed certificates used by Certificate Authorities to sign other certificates",
+      "**Perfect forward secrecy** ensures session keys cannot be compromised even if private keys are stolen"
+    ],
+    "definitions": [
+      {
+        "term": "SSL/TLS",
+        "definition": "Cryptographic protocols that provide secure communication over networks by encrypting data transmission between client and server"
+      },
+      {
+        "term": "Digital Certificate",
+        "definition": "Electronic document containing public key and identity information, digitally signed by a trusted Certificate Authority"
+      },
+      {
+        "term": "Quantum Encryption",
+        "definition": "Encryption method using quantum mechanical properties where any eavesdropping attempt disturbs the quantum state and can be detected"
+      },
+      {
+        "term": "Certificate Authority",
+        "definition": "Trusted third-party organization that issues, manages and validates digital certificates for public key infrastructure"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of the process or method in logical sequence"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how SSL/TLS ensures secure communication between a web browser and server. [6]",
+      "marks": 6,
+      "answer": "SSL/TLS establishes secure communication through a handshake process. The server sends its digital certificate containing its public key to the client. The client verifies the certificate against a trusted Certificate Authority to authenticate the server's identity. The client generates a session key and encrypts it using the server's public key. Both parties use this symmetric session key to encrypt all subsequent data transmission. The protocol also uses message authentication codes (MAC) to verify data integrity and prevent tampering.",
+      "markBreakdown": [
+        "Mark 1: Server sends digital certificate with public key",
+        "Mark 2: Client verifies certificate with Certificate Authority",
+        "Mark 3: Client generates and encrypts session key with server's public key",
+        "Mark 4: Symmetric encryption used for data transmission",
+        "Mark 5: Authentication of server identity",
+        "Mark 6: Message integrity verification using MAC"
+      ]
+    },
+    "commonMistakes": [
+      "Never say SSL 'prevents hacking' — always specify it 'encrypts data transmission'",
+      "Students often confuse symmetric and asymmetric encryption roles in SSL handshake",
+      "Don't say certificates 'contain passwords' — they contain public keys and identity information",
+      "Never claim quantum encryption is 'currently widely used' — it's mostly theoretical/experimental",
+      "Students forget that Certificate Authorities must be trusted third parties, not the communicating parties themselves"
+    ],
+    "examinerTips": [
+      "SSL/TLS questions appear frequently in Paper 2 - know the handshake process",
+      "Always mention both authentication AND encryption when describing digital certificates",
+      "Quantum encryption questions often test understanding of detection capabilities",
+      "Draw diagrams showing client-server communication for SSL questions"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "SSL handshake diagram showing: 1) Client hello, 2) Server certificate + public key, 3) Client verifies with CA, 4) Client sends encrypted session key, 5) Secure symmetric communication established"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:18:51.720Z",
+  "updated_at": "2026-04-06T05:18:51.720Z"
+}

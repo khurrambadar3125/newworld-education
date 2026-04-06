@@ -1,0 +1,95 @@
+{
+  "subject": "A Level Accounting",
+  "subject_code": "9706",
+  "level": "A Level",
+  "theme": "AS Accounting",
+  "chapter_id": "AS6",
+  "chapter_name": "Incomplete records",
+  "note_data": {
+    "title": "Incomplete Records (AS6)",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Incomplete records** occur when a business does not maintain a full double-entry bookkeeping system",
+      "**Statement of Affairs** is prepared to find missing figures by listing assets and liabilities at opening and closing",
+      "**Capital comparison method** calculates profit by comparing opening capital with closing capital, adjusting for drawings and additional capital",
+      "**Margin** is gross profit expressed as a percentage of selling price: (Gross Profit ÷ Sales) × 100",
+      "**Mark-up** is gross profit expressed as a percentage of cost price: (Gross Profit ÷ Cost of Sales) × 100",
+      "**Sales ledger control account** is used to find missing sales, purchases or cash received from customers",
+      "**Bank summary** method reconstructs cash book from bank statements when cash records are incomplete",
+      "**Missing figures** are calculated using accounting equation: Assets - Liabilities = Capital",
+      "**Total debtors method** finds sales by analyzing opening debtors + sales - cash received = closing debtors"
+    ],
+    "definitions": [
+      {
+        "term": "Incomplete records",
+        "definition": "A system where businesses do not maintain full double-entry bookkeeping, resulting in missing or inadequate accounting records"
+      },
+      {
+        "term": "Statement of Affairs",
+        "definition": "A statement similar to a balance sheet that lists assets and liabilities to determine capital when records are incomplete"
+      },
+      {
+        "term": "Margin",
+        "definition": "Gross profit expressed as a percentage of sales revenue"
+      },
+      {
+        "term": "Mark-up",
+        "definition": "Gross profit expressed as a percentage of cost of goods sold"
+      },
+      {
+        "term": "Capital comparison method",
+        "definition": "A method of finding profit by comparing opening and closing capital after adjusting for drawings and additional capital introduced"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all workings clearly. Use control account format for debtors/creditors calculations."
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Use proper headings and format. For Statement of Affairs, list assets and liabilities systematically."
+      },
+      {
+        "commandWord": "Determine",
+        "instruction": "Show the method used (e.g., capital comparison) and all adjustments made."
+      }
+    ],
+    "modelAnswer": {
+      "question": "Fatima's business has incomplete records. Opening capital was Rs.50,000. During the year she withdrew Rs.15,000 and introduced additional capital of Rs.8,000. Closing capital was Rs.65,000. Calculate the profit for the year.",
+      "marks": 3,
+      "answer": "Capital comparison method:\nClosing capital Rs.65,000\nLess: Opening capital Rs.50,000\nIncrease in capital Rs.15,000\nAdd: Drawings Rs.15,000\nLess: Additional capital Rs.8,000\nProfit for the year Rs.22,000",
+      "markBreakdown": [
+        "Mark 1: Correct formula/method identified",
+        "Mark 2: Correct adjustments for drawings and additional capital",
+        "Mark 3: Correct final answer Rs.22,000"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse margin with mark-up - margin uses sales as denominator, mark-up uses cost of sales",
+      "Students often forget to adjust for drawings and additional capital in capital comparison method",
+      "Never prepare Statement of Affairs like an Income Statement - it shows financial position, not profit",
+      "Students frequently add drawings instead of subtracting when calculating opening capital",
+      "Never use opening figures when closing figures are required in control accounts"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 Section B",
+      "Always show workings for margin/mark-up calculations",
+      "Use T-account format for sales/purchase ledger control accounts",
+      "Check that Statement of Affairs balances (total assets = total liabilities + capital)"
+    ],
+    "formulas": [
+      "Margin = (Gross Profit ÷ Sales) × 100",
+      "Mark-up = (Gross Profit ÷ Cost of Sales) × 100",
+      "Profit = Closing Capital - Opening Capital + Drawings - Additional Capital",
+      "Sales = Opening Debtors + Credit Sales - Cash Received from Customers"
+    ],
+    "keyDiagramDescription": "Statement of Affairs format showing Fixed Assets, Current Assets, Current Liabilities, Long-term Liabilities, and Capital calculation. Control account T-format showing opening balance, additions, deductions, and closing balance."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:26:01.924Z",
+  "updated_at": "2026-04-06T05:26:01.924Z"
+}

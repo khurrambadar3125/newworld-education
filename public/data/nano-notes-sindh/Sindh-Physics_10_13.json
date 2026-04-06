@@ -1,0 +1,109 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "13",
+  "chapter_name": "Propagation and Reflection of Light",
+  "note_data": {
+    "title": "Propagation and Reflection of Light",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Light is a form of energy that travels in straight lines in a homogeneous medium",
+      "The speed of light in vacuum is 3 × 10⁸ m/s and decreases when light enters a denser medium",
+      "Reflection occurs when light bounces back after striking a surface without changing medium",
+      "The incident ray, reflected ray, and normal all lie in the same plane at the point of incidence",
+      "Angle of incidence equals angle of reflection (∠i = ∠r) - First Law of Reflection",
+      "Regular reflection occurs from smooth surfaces like plane mirrors, while diffused reflection occurs from rough surfaces",
+      "Real images can be obtained on screen while virtual images cannot be obtained on screen",
+      "A plane mirror forms virtual, erect, same-sized images at equal distance behind the mirror",
+      "Lateral inversion means left appears as right and vice versa in plane mirror reflection"
+    ],
+    "definitions": [
+      {
+        "term": "Reflection of Light",
+        "definition": "The bouncing back of light when it strikes a surface and returns to the same medium from which it came"
+      },
+      {
+        "term": "Incident Ray",
+        "definition": "The ray of light that strikes the reflecting surface"
+      },
+      {
+        "term": "Reflected Ray",
+        "definition": "The ray of light that bounces back from the reflecting surface"
+      },
+      {
+        "term": "Normal",
+        "definition": "A line drawn perpendicular to the reflecting surface at the point of incidence"
+      },
+      {
+        "term": "Real Image",
+        "definition": "An image that can be obtained on a screen and is formed by the actual intersection of light rays"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "State the laws of reflection of light.",
+        "answer": "1st Law: The incident ray, reflected ray and normal all lie in the same plane. 2nd Law: The angle of incidence equals the angle of reflection (∠i = ∠r)."
+      },
+      {
+        "type": "long",
+        "question": "Describe the characteristics of image formed by a plane mirror with diagram.",
+        "answer": "Image formed by plane mirror has following characteristics: (1) Virtual - cannot be obtained on screen (2) Erect - upright position (3) Same size as object (4) Equal distance behind mirror as object is in front (5) Laterally inverted. Draw diagram showing object, mirror, virtual image with dotted lines, incident and reflected rays following laws of reflection."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The angle between incident ray and reflected ray is 60°. The angle of incidence is:",
+        "options": {
+          "A": "60°",
+          "B": "30°",
+          "C": "120°",
+          "D": "90°"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which type of reflection occurs from the surface of still water in Keenjhar Lake?",
+        "options": {
+          "A": "Diffused reflection",
+          "B": "Regular reflection",
+          "C": "Partial reflection",
+          "D": "Total reflection"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "A plane mirror forms an image which is:",
+        "options": {
+          "A": "Real and inverted",
+          "B": "Virtual and inverted",
+          "C": "Real and erect",
+          "D": "Virtual and erect"
+        },
+        "correct": "D"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse incident ray with reflected ray in diagrams",
+      "Writing angle of reflection = 90° - angle of incidence instead of equal angles",
+      "Forgetting to draw normal as perpendicular line in reflection diagrams",
+      "Confusing real and virtual images - remember real images can be obtained on screen",
+      "Not showing lateral inversion when drawing image formation by plane mirror"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and always one short question on laws of reflection",
+      "Plane mirror image formation diagram appears in every BSEK paper - practice drawing it accurately",
+      "Always write both laws of reflection when asked, even if question seems to ask for one",
+      "Memorize exact definitions word-by-word as given in STBB textbook"
+    ],
+    "formulas": [
+      "∠i = ∠r (angle of incidence = angle of reflection)",
+      "Speed of light in vacuum = 3 × 10⁸ m/s"
+    ],
+    "keyDiagram": "Reflection diagram showing incident ray, reflected ray, normal, angles of incidence and reflection marked clearly. Also plane mirror image formation showing object, virtual image behind mirror with construction rays."
+  },
+  "created_at": "2026-04-06T06:05:14.817Z"
+}

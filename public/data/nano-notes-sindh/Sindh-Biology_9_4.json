@@ -1,0 +1,108 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "4",
+  "chapter_name": "Cells and Tissues",
+  "note_data": {
+    "title": "Cells and Tissues",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Cell is the basic structural and functional unit of life — all living organisms are made up of cells",
+      "Cell theory states: (1) All living things are made of cells (2) Cell is the basic unit of life (3) All cells arise from pre-existing cells",
+      "Prokaryotic cells lack membrane-bound nucleus and organelles — found in bacteria and blue-green algae",
+      "Eukaryotic cells have membrane-bound nucleus and organelles — found in plants, animals, fungi and protists",
+      "Cell membrane is selectively permeable — allows some substances to pass through while blocking others",
+      "Mitochondria is called powerhouse of cell — produces ATP energy through cellular respiration",
+      "Chloroplasts contain chlorophyll and carry out photosynthesis in plant cells",
+      "Tissue is a group of similar cells performing the same function",
+      "Meristematic tissue consists of actively dividing cells found at growing points of plants",
+      "Permanent tissues are formed from meristematic tissues and have lost the power of division"
+    ],
+    "definitions": [
+      {
+        "term": "Cell",
+        "definition": "Cell is the basic structural and functional unit of life. It is the smallest unit that can be called living."
+      },
+      {
+        "term": "Tissue",
+        "definition": "A tissue is a group of similar cells that perform the same function."
+      },
+      {
+        "term": "Prokaryotic Cell",
+        "definition": "Prokaryotic cells are those cells which lack membrane-bound nucleus and other membrane-bound organelles."
+      },
+      {
+        "term": "Eukaryotic Cell",
+        "definition": "Eukaryotic cells are those cells which have membrane-bound nucleus and other membrane-bound organelles."
+      },
+      {
+        "term": "Meristematic Tissue",
+        "definition": "Meristematic tissue consists of actively dividing cells and is found at the growing points of plants."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Write any three points of cell theory.",
+        "answer": "(1) All living things are made up of one or more cells (2) Cell is the basic unit of life (3) All cells arise from pre-existing cells by division."
+      },
+      {
+        "type": "long",
+        "question": "Differentiate between prokaryotic and eukaryotic cells (any 5 points).",
+        "answer": "Prokaryotic Cells: (1) Lack membrane-bound nucleus (2) Genetic material freely distributed in cytoplasm (3) No membrane-bound organelles (4) Ribosomes are 70S type (5) Found in bacteria and blue-green algae. Eukaryotic Cells: (1) Have membrane-bound nucleus (2) Genetic material enclosed in nucleus (3) Have membrane-bound organelles (4) Ribosomes are 80S type (5) Found in plants, animals, fungi and protists."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which organelle is called the powerhouse of the cell?",
+        "options": {
+          "A": "Nucleus",
+          "B": "Mitochondria",
+          "C": "Ribosome",
+          "D": "Vacuole"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Meristematic tissue is found in:",
+        "options": {
+          "A": "Mature leaves",
+          "B": "Root tips",
+          "C": "Dead cells",
+          "D": "Bark"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The genetic material in prokaryotic cells is:",
+        "options": {
+          "A": "Enclosed in nucleus",
+          "B": "Absent",
+          "C": "Freely distributed in cytoplasm",
+          "D": "Present in mitochondria"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often confuse prokaryotic with eukaryotic — remember PRO means 'before' (before nucleus formation)",
+      "Writing incomplete cell theory — all three points must be mentioned",
+      "Confusing meristematic with permanent tissue — meristematic divides, permanent doesn't",
+      "Not drawing clear labeled diagrams of plant and animal cells",
+      "Mixing up functions of organelles — mitochondria for energy, chloroplast for photosynthesis"
+    ],
+    "examTips": [
+      "Cell theory appears in every BSEK paper — memorize all three points exactly",
+      "Prokaryotic vs Eukaryotic differentiation is a favorite 5-mark question",
+      "Always draw neat labeled diagrams — they carry 2-3 marks",
+      "Meristematic tissue location and function frequently asked in MCQs",
+      "Learn exact definitions word-by-word as given in STBB textbook"
+    ],
+    "formulas": [],
+    "keyDiagram": "Plant Cell and Animal Cell: Must show and label nucleus, cytoplasm, cell membrane, cell wall (plant only), vacuole, mitochondria, chloroplasts (plant only), ribosomes. Draw large clear circles with proper labels and leader lines."
+  },
+  "created_at": "2026-04-06T06:14:43.452Z"
+}

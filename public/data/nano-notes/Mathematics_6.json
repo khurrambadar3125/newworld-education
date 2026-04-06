@@ -1,0 +1,99 @@
+{
+  "subject": "Mathematics",
+  "subject_code": "4024",
+  "level": "O Level",
+  "theme": "Data and Functions",
+  "chapter_id": "6",
+  "chapter_name": "Graphs",
+  "note_data": {
+    "title": "Graphs",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **gradient** of a line segment is calculated using m = (y₂ - y₁)/(x₂ - x₁) where (x₁,y₁) and (x₂,y₂) are two points on the line",
+      "**Parallel lines** have equal gradients and will never intersect",
+      "**Perpendicular lines** have gradients that multiply to give -1 (m₁ × m₂ = -1)",
+      "The equation of a **straight line** is y = mx + c where m is the gradient and c is the y-intercept",
+      "**Travel graphs** show distance on y-axis and time on x-axis, with gradient representing speed",
+      "**Quadratic functions** have the form y = ax² + bx + c and produce U-shaped or inverted U-shaped curves called parabolas",
+      "**Graphical solutions** to equations are found at intersection points of curves or lines",
+      "A horizontal line on a travel graph indicates the object is **stationary** (zero speed)",
+      "The **turning point** of a quadratic graph is the minimum or maximum point of the parabola"
+    ],
+    "definitions": [
+      {
+        "term": "Gradient",
+        "definition": "The measure of steepness of a line calculated as rise over run or change in y divided by change in x"
+      },
+      {
+        "term": "Parallel lines",
+        "definition": "Lines that have the same gradient and never meet or intersect"
+      },
+      {
+        "term": "Perpendicular lines",
+        "definition": "Lines that meet at right angles (90°) and whose gradients multiply to give -1"
+      },
+      {
+        "term": "Quadratic function",
+        "definition": "A function of the form y = ax² + bx + c where a ≠ 0, which produces a parabolic curve"
+      },
+      {
+        "term": "y-intercept",
+        "definition": "The point where a line crosses the y-axis, occurring when x = 0"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the gradient value or equation directly with no working shown"
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Show clear substitution into gradient formula and calculate step by step"
+      },
+      {
+        "commandWord": "Sketch",
+        "instruction": "Draw accurate shape with key points marked and axes labelled"
+      },
+      {
+        "commandWord": "Solve graphically",
+        "instruction": "Draw both graphs accurately and read coordinates of intersection points"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A train travels from Lahore to Islamabad. The travel graph shows the journey. Find the speed of the train during the first 2 hours when it travels 160 km.",
+      "marks": 3,
+      "answer": "Speed = distance ÷ time. Distance = 160 km, Time = 2 hours. Speed = 160 ÷ 2 = 80 km/h",
+      "markBreakdown": [
+        "Mark 1: Correct formula speed = distance ÷ time",
+        "Mark 2: Correct substitution of values",
+        "Mark 3: Correct answer with units"
+      ]
+    },
+    "commonMistakes": [
+      "Never write gradient as (x₂ - x₁)/(y₂ - y₁) — always put y-values on top",
+      "Students often forget to include units when calculating speed from travel graphs",
+      "Never say parallel lines have the same y-intercept — they have the same gradient",
+      "Students confuse distance-time graphs with speed-time graphs when interpreting motion",
+      "Never read graphical solutions to the nearest integer unless specifically asked — give exact decimal values shown on the graph"
+    ],
+    "examinerTips": [
+      "Travel graphs appear frequently in Paper 2 — always check if axes show distance or displacement",
+      "When finding perpendicular gradient, use m₂ = -1/m₁ for quick calculation",
+      "Always extend lines neatly to find y-intercept when drawing straight line graphs",
+      "For quadratic graphs, plot at least 5 points and join with a smooth curve"
+    ],
+    "formulas": [
+      "Gradient: m = (y₂ - y₁)/(x₂ - x₁)",
+      "Straight line: y = mx + c",
+      "Perpendicular gradients: m₁ × m₂ = -1",
+      "Speed = distance ÷ time"
+    ],
+    "keyDiagramDescription": "Travel graph showing distance vs time with three sections: increasing line (moving away), horizontal line (stationary), and decreasing line (returning), with gradient calculations shown for each section"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:24:18.709Z",
+  "updated_at": "2026-04-05T21:24:18.709Z"
+}

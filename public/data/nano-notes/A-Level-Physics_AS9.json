@@ -1,0 +1,97 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "AS Waves and Electricity",
+  "chapter_id": "AS9",
+  "chapter_name": "Current electricity",
+  "note_data": {
+    "title": "Current electricity",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Current** is the rate of flow of charge, measured in amperes (A)",
+      "**Potential difference (p.d.)** is the energy transferred per unit charge between two points in a circuit",
+      "**Resistance** is the ratio of potential difference to current for a conductor",
+      "**Resistivity** is a property of a material that determines its resistance to current flow",
+      "**EMF** is the energy transferred per unit charge by a source when no current flows",
+      "**Internal resistance** is the resistance within a source of EMF that causes terminal p.d. to be less than EMF",
+      "Ohm's law states that current is directly proportional to p.d. for a conductor at constant temperature",
+      "For resistors in series: total resistance equals sum of individual resistances",
+      "For resistors in parallel: reciprocal of total resistance equals sum of reciprocals of individual resistances"
+    ],
+    "definitions": [
+      {
+        "term": "Current",
+        "definition": "The rate of flow of charge"
+      },
+      {
+        "term": "Potential difference",
+        "definition": "The energy transferred per unit charge between two points"
+      },
+      {
+        "term": "EMF",
+        "definition": "The energy transferred per unit charge by a source when no current flows"
+      },
+      {
+        "term": "Resistivity",
+        "definition": "The resistance of a material per unit length and per unit cross-sectional area"
+      },
+      {
+        "term": "Internal resistance",
+        "definition": "The resistance within a source of EMF"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly with correct formula, substitution and unit"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A battery has EMF 12.0 V and internal resistance 2.0 Ω. Calculate the terminal potential difference when a current of 3.0 A flows. [3 marks]",
+      "marks": 3,
+      "answer": "Terminal p.d. = EMF - (current × internal resistance)\nTerminal p.d. = 12.0 - (3.0 × 2.0)\nTerminal p.d. = 12.0 - 6.0 = 6.0 V",
+      "markBreakdown": [
+        "Mark 1: Correct formula V = E - Ir",
+        "Mark 2: Correct substitution of values",
+        "Mark 3: Correct final answer with unit"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse EMF with terminal p.d. - EMF is when no current flows, terminal p.d. is with current flowing",
+      "Students often forget to subtract the 'lost volts' (Ir) when calculating terminal p.d.",
+      "Never say 'electricity flows' - always say 'current flows' or 'charge flows'",
+      "Students mix up series and parallel resistance formulas",
+      "Always include units in final answers - marks are lost for missing units"
+    ],
+    "examinerTips": [
+      "Current electricity appears in every Paper 2 - practice circuit calculations daily",
+      "Always draw circuit diagrams with conventional current direction (+ to -)",
+      "Show all working steps clearly for calculation questions",
+      "Check your parallel resistance answer is always smaller than the smallest individual resistance"
+    ],
+    "formulas": [
+      "I = Q/t",
+      "V = W/Q",
+      "R = V/I",
+      "ρ = RA/L",
+      "V = E - Ir",
+      "P = VI = I²R = V²/R"
+    ],
+    "keyDiagramDescription": "Circuit diagram showing battery with EMF E and internal resistance r connected to external resistance R, with voltmeter across external resistance and ammeter in series"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:41:33.879Z",
+  "updated_at": "2026-04-06T04:41:33.879Z"
+}

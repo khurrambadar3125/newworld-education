@@ -1,0 +1,95 @@
+{
+  "subject": "Urdu",
+  "subject_code": "3247",
+  "level": "O Level",
+  "theme": "Paper 2: Composition",
+  "chapter_id": "P2.5",
+  "chapter_name": "Poetry & Literary Devices (شاعری)",
+  "note_data": {
+    "title": "Poetry & Literary Devices (شاعری)",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Metaphor (استعارہ)** compares two unlike things without using 'like' or 'as', creating direct comparison for emotional impact",
+      "**Simile (تشبیہ)** uses 'like', 'as', or 'جیسے' to make explicit comparisons between two different things",
+      "**Personification (تشخیص)** gives human qualities, emotions, or actions to non-human objects or abstract concepts",
+      "**Alliteration (ہم آواز)** repeats the same consonant sound at the beginning of words in close succession",
+      "**Imagery (تصویری زبان)** uses descriptive language that appeals to the five senses to create vivid mental pictures",
+      "**Symbolism (علامت)** uses objects, colors, or actions to represent deeper meanings or abstract ideas",
+      "**Rhyme scheme (قافیہ)** is the pattern of rhyming words at the end of lines, typically labeled with letters (ABAB, AABB)",
+      "**Meter (بحر)** is the rhythmic pattern of stressed and unstressed syllables in verse",
+      "**Irony (طنز)** expresses meaning through language that signifies the opposite, often for humorous or critical effect"
+    ],
+    "definitions": [
+      {
+        "term": "Metaphor (استعارہ)",
+        "definition": "A direct comparison between two unlike things without using comparison words, stating one thing IS another"
+      },
+      {
+        "term": "Alliteration (ہم آواز)",
+        "definition": "The repetition of the same consonant sound at the beginning of neighboring words"
+      },
+      {
+        "term": "Personification (تشخیص)",
+        "definition": "A literary device that gives human characteristics to non-human objects or abstract concepts"
+      },
+      {
+        "term": "Imagery (تصویری زبان)",
+        "definition": "Descriptive language that creates sensory experiences and vivid mental pictures for the reader"
+      },
+      {
+        "term": "Symbolism (علامت)",
+        "definition": "The use of objects, actions, or ideas to represent or suggest other ideas and qualities beyond their literal meaning"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Identify",
+        "instruction": "Name the literary device used. No explanation needed, just state the technique."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Identify the device AND explain its effect using 'This creates...' or 'This emphasizes...'"
+      },
+      {
+        "commandWord": "Analyze",
+        "instruction": "Identify device + explain effect + comment on poet's purpose/reader's response"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Identify devices in both poems and explain how they create similar/different effects"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Identify and explain the effect of two literary devices used in this line: 'The wind whispered secrets through the silver trees'",
+      "marks": 4,
+      "answer": "Personification is used in 'wind whispered' where the wind is given the human ability to whisper. This creates a mysterious and intimate atmosphere, suggesting nature has secrets to share. Alliteration is used in 'silver trees' with the repetition of the 's' sound. This creates a soft, soothing effect that emphasizes the gentle, peaceful nature of the scene.",
+      "markBreakdown": [
+        "Mark 1: Identifies personification",
+        "Mark 2: Explains effect of personification",
+        "Mark 3: Identifies alliteration",
+        "Mark 4: Explains effect of alliteration"
+      ]
+    },
+    "commonMistakes": [
+      "Never just identify the device — always explain its effect on the reader or meaning",
+      "Students often confuse metaphor and simile — metaphor never uses 'like' or 'as'",
+      "Avoid saying 'it sounds nice' — explain the specific emotional or atmospheric effect created",
+      "Don't write long explanations for identification questions — one clear sentence is sufficient",
+      "Never ignore the context — explain how the device fits the poem's overall theme or mood"
+    ],
+    "examinerTips": [
+      "Poetry analysis questions appear in every Paper 2, usually worth 8-12 marks total",
+      "Always quote the exact words when identifying literary devices",
+      "Link literary devices to the poem's central themes for higher marks",
+      "Practice identifying devices in Urdu poetry as well as English translations"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Create a literary device identification chart showing device name, definition, example, and effect for quick reference during poetry analysis"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:10:22.549Z",
+  "updated_at": "2026-04-06T04:10:22.549Z"
+}

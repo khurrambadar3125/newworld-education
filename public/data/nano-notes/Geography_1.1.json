@@ -1,0 +1,100 @@
+{
+  "subject": "Geography",
+  "subject_code": "2217",
+  "level": "O Level",
+  "theme": "Theme 1: Population and Settlement",
+  "chapter_id": "1.1",
+  "chapter_name": "Population Dynamics",
+  "note_data": {
+    "title": "Population Dynamics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Birth rate** is the number of live births per 1000 people per year",
+      "**Death rate** is the number of deaths per 1000 people per year",
+      "**Natural increase** is calculated by subtracting death rate from birth rate",
+      "**Population growth rate** includes natural increase plus net migration",
+      "High birth rates occur due to **lack of family planning**, **religious beliefs**, and **children as economic assets**",
+      "Low death rates result from **improved healthcare**, **better nutrition**, and **cleaner water supply**",
+      "**Demographic transition model** shows how birth and death rates change over time as countries develop",
+      "Pakistan has a **young population structure** with high birth rates and declining death rates",
+      "**Population momentum** means population continues growing even when birth rates fall due to large numbers of young people"
+    ],
+    "definitions": [
+      {
+        "term": "Birth Rate",
+        "definition": "The number of live births per 1000 people in the population per year"
+      },
+      {
+        "term": "Death Rate",
+        "definition": "The number of deaths per 1000 people in the population per year"
+      },
+      {
+        "term": "Natural Increase",
+        "definition": "The difference between birth rate and death rate, usually expressed as a percentage"
+      },
+      {
+        "term": "Population Growth Rate",
+        "definition": "The rate at which population increases in a given time period, including natural increase and net migration"
+      },
+      {
+        "term": "Demographic Transition",
+        "definition": "The change in birth and death rates over time as a country develops economically"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show your working clearly. Birth rate - Death rate = Natural increase"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Say what you can see in data/graph without explaining reasons why"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why Pakistan has a high rate of natural increase. [6 marks]",
+      "marks": 6,
+      "answer": "Pakistan has high birth rates because many families want large numbers of children for economic support in old age. Religious and cultural beliefs encourage large families. There is limited access to family planning education and contraception, especially in rural areas. Death rates have fallen due to improved healthcare and vaccination programs reducing infant mortality. Better nutrition and clean water supply have increased life expectancy. However, birth rates remain much higher than death rates, creating a high rate of natural increase.",
+      "markBreakdown": [
+        "Mark 1: High birth rates due to children as economic assets",
+        "Mark 2: Religious/cultural factors encouraging large families",
+        "Mark 3: Limited family planning access",
+        "Mark 4: Improved healthcare reducing death rates",
+        "Mark 5: Better nutrition/clean water",
+        "Mark 6: Birth rates exceed death rates significantly"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse birth rate with fertility rate - birth rate is per 1000 people, fertility rate is per woman",
+      "Students often forget to show working when calculating natural increase",
+      "Don't say 'more babies are born' - say 'birth rate is high' using correct terminology",
+      "Never give migration as a reason for natural increase - natural increase only includes births and deaths",
+      "Students confuse population growth rate with natural increase rate"
+    ],
+    "examinerTips": [
+      "Population dynamics appears in Paper 2 almost every year",
+      "Always show your formula when calculating: Birth Rate - Death Rate = Natural Increase",
+      "Use specific examples from Pakistan like rural Punjab having higher birth rates",
+      "Learn the demographic transition model stages - frequently examined"
+    ],
+    "formulas": [
+      "Natural Increase Rate = Birth Rate - Death Rate",
+      "Population Growth Rate = Natural Increase + Net Migration"
+    ],
+    "keyDiagramDescription": "Demographic Transition Model showing 5 stages with birth rate and death rate lines, population growth shaded area between them, and total population curve"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:54:08.403Z",
+  "updated_at": "2026-04-06T03:54:08.404Z"
+}

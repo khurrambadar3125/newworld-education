@@ -1,0 +1,96 @@
+{
+  "subject": "Additional Mathematics",
+  "subject_code": "4037",
+  "level": "O Level",
+  "theme": "Pure Mathematics",
+  "chapter_id": "2",
+  "chapter_name": "Functions",
+  "note_data": {
+    "title": "Functions",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **function** is a relation where each element in the domain maps to exactly one element in the range",
+      "The **domain** is the complete set of possible values of the independent variable (input values)",
+      "The **range** is the complete set of possible values of the dependent variable (output values)",
+      "For **inverse functions**, if f(x) = y, then f⁻¹(y) = x, and the domain of f becomes the range of f⁻¹",
+      "**Composite functions** fg(x) means f(g(x)) - apply g first, then apply f to the result",
+      "The **modulus function** |x| gives the positive value: |x| = x when x ≥ 0, and |x| = -x when x < 0",
+      "For **logarithmic functions**, log_a(x) is defined only when x > 0 and a > 0, a ≠ 1",
+      "To find the **inverse function**, interchange x and y, then solve for y",
+      "**One-to-one functions** pass both the vertical line test and horizontal line test"
+    ],
+    "definitions": [
+      {
+        "term": "Function",
+        "definition": "A relation where each element in the domain maps to exactly one element in the range"
+      },
+      {
+        "term": "Inverse Function",
+        "definition": "A function f⁻¹ such that if f(a) = b, then f⁻¹(b) = a, where the domain and range are interchanged"
+      },
+      {
+        "term": "Composite Function",
+        "definition": "A function formed by applying one function to the result of another, written as fg(x) = f(g(x))"
+      },
+      {
+        "term": "Modulus Function",
+        "definition": "A function that gives the absolute value: |x| = x if x ≥ 0, and |x| = -x if x < 0"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the domain/range as an inequality or set notation. No working needed."
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Show all algebraic steps clearly. For inverse functions, interchange x and y, then rearrange."
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Substitute the given value and calculate step by step."
+      },
+      {
+        "commandWord": "Sketch",
+        "instruction": "Draw axes, mark key points, label asymptotes and state domain/range."
+      }
+    ],
+    "modelAnswer": {
+      "question": "The function f is defined by f(x) = 2x + 3 for x ∈ ℝ. Find f⁻¹(x) and state its domain.",
+      "marks": 3,
+      "answer": "Let y = 2x + 3\nInterchange x and y: x = 2y + 3\nSolve for y: x - 3 = 2y\ny = (x - 3)/2\nTherefore f⁻¹(x) = (x - 3)/2\nDomain of f⁻¹ is x ∈ ℝ",
+      "markBreakdown": [
+        "Mark 1: Interchange x and y correctly",
+        "Mark 2: Rearrange to make y the subject",
+        "Mark 3: State domain of inverse function"
+      ]
+    },
+    "commonMistakes": [
+      "Writing fg(x) as f(x)g(x) instead of f(g(x)) - composite means function of function, not multiplication",
+      "Forgetting to state domain restrictions for logarithmic and modulus functions",
+      "Not interchanging domain and range when finding inverse functions",
+      "Confusing f⁻¹(x) with 1/f(x) - inverse function is not the reciprocal",
+      "Not checking that inverse function exists by verifying one-to-one property"
+    ],
+    "examinerTips": [
+      "Functions appear in every Paper 2 - worth 15-20 marks typically",
+      "Always state domain and range using correct notation (inequalities or set notation)",
+      "For composite functions, work from inside out: fg(x) means do g first, then f",
+      "Check inverse functions by verifying ff⁻¹(x) = x"
+    ],
+    "formulas": [
+      "|x| = x when x ≥ 0, |x| = -x when x < 0",
+      "log_a(xy) = log_a(x) + log_a(y)",
+      "log_a(x/y) = log_a(x) - log_a(y)",
+      "log_a(x^n) = n·log_a(x)",
+      "a^(log_a(x)) = x"
+    ],
+    "keyDiagramDescription": "Graph showing function f(x) and its inverse f⁻¹(x) reflected across the line y = x, with domain and range clearly marked on both axes"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:15:41.544Z",
+  "updated_at": "2026-04-06T04:15:41.544Z"
+}

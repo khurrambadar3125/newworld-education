@@ -1,0 +1,94 @@
+{
+  "subject": "Biology",
+  "subject_code": "5090",
+  "level": "O Level",
+  "theme": "Reproduction and Ecology",
+  "chapter_id": "13",
+  "chapter_name": "Inheritance",
+  "note_data": {
+    "title": "Inheritance",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Inheritance** is the passing on of features from parents to offspring through genes",
+      "**Genes** are sections of DNA that control the development of characteristics",
+      "**DNA** is found in the nucleus of cells and carries genetic information",
+      "**Chromosomes** are structures made of DNA and proteins that carry genes",
+      "**Mitosis** produces two diploid cells that are genetically identical to the parent cell",
+      "**Meiosis** produces four haploid gametes that are genetically different from each other",
+      "**Mutations** are random changes in genes or chromosomes that may be inherited",
+      "Humans have 23 pairs of chromosomes (46 total) in diploid cells and 23 chromosomes in haploid gametes",
+      "Sex is determined by X and Y chromosomes - females are XX, males are XY"
+    ],
+    "definitions": [
+      {
+        "term": "Gene",
+        "definition": "A section of DNA that controls the development of a characteristic"
+      },
+      {
+        "term": "Chromosome",
+        "definition": "A structure made of DNA and proteins that carries genes"
+      },
+      {
+        "term": "Mitosis",
+        "definition": "Nuclear division that produces two genetically identical diploid cells"
+      },
+      {
+        "term": "Meiosis",
+        "definition": "Nuclear division that produces four genetically different haploid gametes"
+      },
+      {
+        "term": "Mutation",
+        "definition": "A random change in genes or chromosomes that may be inherited"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between mitosis and meiosis"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of process - include stages and what happens"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why meiosis is important for sexual reproduction. [3 marks]",
+      "marks": 3,
+      "answer": "Meiosis produces gametes that are haploid, so when fertilisation occurs the diploid number is restored. Meiosis produces genetic variation in the gametes through crossing over and independent assortment. This genetic variation is important for survival of the species as it increases chances of survival in changing environments.",
+      "markBreakdown": [
+        "Mark 1: Produces haploid gametes / restores diploid number at fertilisation",
+        "Mark 2: Produces genetic variation / crossing over / independent assortment",
+        "Mark 3: Genetic variation important for survival / adaptation"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'genes are inherited' - always say 'characteristics are inherited through genes'",
+      "Students confuse mitosis and meiosis - mitosis is for growth, meiosis is for gamete formation",
+      "Don't say 'DNA controls characteristics' - say 'genes control characteristics'",
+      "Never say mutations are always harmful - they can be beneficial, harmful or neutral",
+      "Students forget that humans are diploid (2n=46) but gametes are haploid (n=23)"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2, especially mitosis vs meiosis comparison",
+      "Always state the number of cells produced AND their genetic makeup for mitosis/meiosis questions",
+      "Use the terms diploid and haploid correctly - diploid = 2 sets, haploid = 1 set",
+      "Remember to mention crossing over when explaining genetic variation in meiosis"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Diagram showing mitosis producing 2 identical diploid cells vs meiosis producing 4 different haploid gametes, with chromosome numbers labeled"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:30:07.521Z",
+  "updated_at": "2026-04-05T21:30:07.521Z"
+}

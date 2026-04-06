@@ -1,0 +1,100 @@
+{
+  "subject": "Mathematics",
+  "subject_code": "4024",
+  "level": "O Level",
+  "theme": "Data and Functions",
+  "chapter_id": "9",
+  "chapter_name": "Statistics",
+  "note_data": {
+    "title": "Statistics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Data collection** methods include surveys, questionnaires, observations and experiments to gather primary data",
+      "**Frequency tables** organise raw data by counting how many times each value occurs",
+      "**Scatter diagrams** show the relationship between two variables with points plotted on x-y axes",
+      "**Mean** is the sum of all values divided by the number of values (for ungrouped data)",
+      "**Median** is the middle value when data is arranged in ascending order",
+      "**Mode** is the value that occurs most frequently in a data set",
+      "**Grouped data** uses class intervals when dealing with large ranges of continuous data",
+      "**Estimated mean** for grouped data uses midpoint of each class interval multiplied by frequency",
+      "**Modal class** is the class interval with the highest frequency in grouped data",
+      "**Correlation** describes the relationship shown in scatter diagrams as positive, negative or no correlation"
+    ],
+    "definitions": [
+      {
+        "term": "Primary data",
+        "definition": "Data collected directly by the person conducting the investigation"
+      },
+      {
+        "term": "Frequency",
+        "definition": "The number of times a particular value or class interval occurs"
+      },
+      {
+        "term": "Class interval",
+        "definition": "A range of values used to group continuous data"
+      },
+      {
+        "term": "Correlation",
+        "definition": "A measure of how closely two variables are related"
+      },
+      {
+        "term": "Outlier",
+        "definition": "A value that lies outside the general pattern of the data"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show clear working for mean/median/mode with correct formula substitution"
+      },
+      {
+        "commandWord": "Estimate",
+        "instruction": "Use midpoints for grouped data and state this is an estimate"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "State the type and strength of correlation from scatter diagram"
+      },
+      {
+        "commandWord": "Draw",
+        "instruction": "Plot points accurately and label axes with units"
+      }
+    ],
+    "modelAnswer": {
+      "question": "The table shows the heights of students in a class in Karachi. Calculate an estimate of the mean height.\n\nHeight (cm) | 150-154 | 155-159 | 160-164 | 165-169\nFrequency   |    3    |    7    |    5    |    2",
+      "marks": 4,
+      "answer": "Midpoints: 152, 157, 162, 167\nSum = (152×3) + (157×7) + (162×5) + (167×2)\nSum = 456 + 1099 + 810 + 334 = 2699\nTotal frequency = 3 + 7 + 5 + 2 = 17\nEstimated mean = 2699 ÷ 17 = 158.8 cm",
+      "markBreakdown": [
+        "Mark 1: Correct midpoints",
+        "Mark 2: Correct products",
+        "Mark 3: Correct sum and total frequency",
+        "Mark 4: Correct final answer"
+      ]
+    },
+    "commonMistakes": [
+      "Never use class boundaries instead of midpoints for estimated mean calculations",
+      "Students often forget to arrange data in order before finding the median",
+      "Never say 'highest bar' for mode - always say 'highest frequency'",
+      "Students confuse modal class with actual mode in grouped data",
+      "Never draw correlation lines beyond the plotted data points"
+    ],
+    "examinerTips": [
+      "Statistics appears in every Paper 2 - usually worth 15-20 marks total",
+      "Always show midpoint calculations clearly for grouped data",
+      "Label axes and plot points accurately on scatter diagrams",
+      "State clearly whether answers are estimates for grouped data"
+    ],
+    "formulas": [
+      "Mean = Sum of values ÷ Number of values",
+      "Estimated mean = Σ(midpoint × frequency) ÷ Σfrequency",
+      "Median position = (n+1) ÷ 2"
+    ],
+    "keyDiagramDescription": "Scatter diagram with clearly labelled x and y axes, accurately plotted points, and line of best fit if correlation exists. Include title and units on both axes."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:25:21.379Z",
+  "updated_at": "2026-04-05T21:25:21.379Z"
+}

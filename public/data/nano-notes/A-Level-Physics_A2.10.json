@@ -1,0 +1,97 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "A2 Electromagnetism and Nuclear",
+  "chapter_id": "A2.10",
+  "chapter_name": "Alternating currents",
+  "note_data": {
+    "title": "Alternating currents",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Alternating current (a.c.)** is current that changes direction periodically with time",
+      "**Peak value** is the maximum value of alternating voltage or current during one cycle",
+      "**Root mean square (r.m.s.)** value is the value of steady direct current that would dissipate energy at the same rate as the alternating current",
+      "**Transformers** work on the principle of electromagnetic induction and only operate with alternating current",
+      "**Step-up transformer** increases voltage and decreases current, while **step-down transformer** decreases voltage and increases current",
+      "**Rectification** is the process of converting alternating current to direct current using diodes",
+      "**Half-wave rectification** uses one diode and allows current to flow in only one direction for half the cycle",
+      "**Full-wave rectification** uses four diodes in a bridge circuit or two diodes with center-tapped transformer",
+      "**Smoothing** reduces the variations in rectified output using capacitors or inductors"
+    ],
+    "definitions": [
+      {
+        "term": "Root mean square (r.m.s.) value",
+        "definition": "The value of steady direct current that would dissipate energy at the same rate as the alternating current"
+      },
+      {
+        "term": "Transformer",
+        "definition": "A device that uses electromagnetic induction to change the voltage of an alternating current supply"
+      },
+      {
+        "term": "Rectification",
+        "definition": "The process of converting alternating current to direct current"
+      },
+      {
+        "term": "Peak value",
+        "definition": "The maximum value reached by an alternating quantity during one complete cycle"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly with correct formula, substitution and final answer with units"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a detailed account of the process or operation step by step"
+      }
+    ],
+    "modelAnswer": {
+      "question": "An ideal transformer has 200 turns on the primary coil and 50 turns on the secondary coil. The primary coil is connected to a 240 V a.c. supply and the secondary current is 2.0 A. Calculate (a) the secondary voltage (b) the primary current.",
+      "marks": 4,
+      "answer": "(a) Vs/Vp = Ns/Np\nVs = Vp × (Ns/Np) = 240 × (50/200) = 60 V\n(b) For ideal transformer: VpIp = VsIs\nIp = (VsIs)/Vp = (60 × 2.0)/240 = 0.5 A",
+      "markBreakdown": [
+        "Mark 1: Correct transformer equation Vs/Vp = Ns/Np",
+        "Mark 2: Correct substitution and calculation of secondary voltage = 60 V",
+        "Mark 3: Use of power conservation VpIp = VsIs",
+        "Mark 4: Correct calculation of primary current = 0.5 A"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse peak value with r.m.s. value — r.m.s. = peak/√2 for sinusoidal waves",
+      "Students often forget that transformers only work with a.c., not d.c.",
+      "Never use turns ratio upside down — always check if voltage increases or decreases",
+      "Students often forget that ideal transformers conserve power: VpIp = VsIs",
+      "Never say rectification produces smooth d.c. — it produces pulsating d.c. which needs smoothing"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2, especially transformer calculations",
+      "Always state whether transformer is step-up or step-down for full marks",
+      "Draw clear circuit diagrams for rectification questions",
+      "Remember to include units in all numerical answers",
+      "For rectification, distinguish between half-wave and full-wave clearly"
+    ],
+    "formulas": [
+      "Irms = I0/√2",
+      "Vrms = V0/√2",
+      "Vs/Vp = Ns/Np",
+      "VpIp = VsIs (ideal transformer)"
+    ],
+    "keyDiagramDescription": "Transformer diagram showing primary coil (Np turns) and secondary coil (Ns turns) wound on soft iron core, with a.c. input and output connections clearly labeled. Bridge rectifier circuit with four diodes arranged in diamond formation showing a.c. input and d.c. output with load resistor."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:46:06.812Z",
+  "updated_at": "2026-04-06T04:46:06.812Z"
+}

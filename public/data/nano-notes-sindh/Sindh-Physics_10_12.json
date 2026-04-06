@@ -1,0 +1,113 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "12",
+  "chapter_name": "Waves and Sound",
+  "note_data": {
+    "title": "Waves and Sound",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "A wave is a disturbance that transfers energy from one point to another without transferring matter",
+      "Mechanical waves require a medium for propagation, electromagnetic waves do not",
+      "Transverse waves vibrate perpendicular to direction of propagation, longitudinal waves vibrate parallel to direction",
+      "Sound waves are longitudinal mechanical waves that travel through compressions and rarefactions",
+      "Speed of sound in air at 20°C is 343 m/s and increases with temperature",
+      "Echo occurs when sound reflects from a distant surface and returns to the listener after 0.1 seconds",
+      "Ultrasonic waves have frequency greater than 20,000 Hz and are used in medical imaging",
+      "Doppler effect explains change in frequency when source or observer is in motion",
+      "Sound intensity is measured in decibels (dB) with threshold of hearing at 0 dB"
+    ],
+    "definitions": [
+      {
+        "term": "Wave",
+        "definition": "A wave is a disturbance that travels through a medium or space and transfers energy from one point to another without transferring matter."
+      },
+      {
+        "term": "Frequency",
+        "definition": "Frequency is the number of complete vibrations or cycles per second. Its unit is Hertz (Hz)."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "Wavelength is the distance between two consecutive points that are in the same phase, such as crest to crest or trough to trough."
+      },
+      {
+        "term": "Echo",
+        "definition": "Echo is the reflection of sound that reaches the listener with a delay of at least 0.1 second after the direct sound."
+      },
+      {
+        "term": "Ultrasonic Waves",
+        "definition": "Ultrasonic waves are sound waves having frequency greater than 20,000 Hz which cannot be heard by human ear."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define echo and state the conditions for hearing an echo.",
+        "answer": "Echo is the reflection of sound that reaches the listener with a delay of at least 0.1 second. Conditions: (1) The reflecting surface must be at least 17 meters away (2) The reflecting surface should be hard and smooth."
+      },
+      {
+        "type": "long",
+        "question": "Derive the relationship v = fλ for wave motion. Also calculate the speed of sound if frequency is 500 Hz and wavelength is 0.68 m.",
+        "answer": "Derivation: Consider a wave of wavelength λ and frequency f. In time period T, wave travels distance λ. Speed = distance/time, so v = λ/T. Since f = 1/T, therefore v = fλ. Given: f = 500 Hz, λ = 0.68 m. Using v = fλ, v = 500 × 0.68 = 340 m/s."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The speed of sound in air at 0°C is:",
+        "options": {
+          "A": "343 m/s",
+          "B": "332 m/s",
+          "C": "300 m/s",
+          "D": "360 m/s"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Ultrasonic waves have frequency:",
+        "options": {
+          "A": "Less than 20 Hz",
+          "B": "20 Hz to 20,000 Hz",
+          "C": "Greater than 20,000 Hz",
+          "D": "Exactly 20,000 Hz"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "For hearing an echo, the minimum distance of reflecting surface should be:",
+        "options": {
+          "A": "34 meters",
+          "B": "17 meters",
+          "C": "10 meters",
+          "D": "25 meters"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse transverse and longitudinal waves - remember sound is always longitudinal",
+      "Writing wavelength formula as λ = vf instead of λ = v/f",
+      "Forgetting to convert units before calculation in numerical problems",
+      "Drawing transverse wave diagram for sound waves instead of compression-rarefaction diagram",
+      "Not mentioning both conditions for echo formation in short questions"
+    ],
+    "examTips": [
+      "Wave motion appears in every BSEK paper with 1-2 MCQs and mandatory short question on echo",
+      "Always draw and label wave diagram for full marks in long questions",
+      "Memorize exact values: sound speed 332 m/s at 0°C, 343 m/s at 20°C",
+      "Echo numerical problems are very common - practice minimum distance calculations",
+      "Learn applications of ultrasonic waves for 2-3 mark questions"
+    ],
+    "formulas": [
+      "v = fλ (wave equation)",
+      "λ = v/f (wavelength)",
+      "f = v/λ (frequency)",
+      "v = 2d/t (for echo)",
+      "d = vt/2 (minimum distance for echo)"
+    ],
+    "keyDiagram": "Longitudinal wave showing compressions and rarefactions with wavelength marked between two consecutive compressions. Also draw transverse wave showing amplitude, wavelength, crest and trough clearly labeled."
+  },
+  "created_at": "2026-04-06T06:04:53.211Z"
+}

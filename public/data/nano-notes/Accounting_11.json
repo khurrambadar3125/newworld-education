@@ -1,0 +1,100 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 3: Financial Statements",
+  "chapter_id": "11",
+  "chapter_name": "Other payables and other receivables",
+  "note_data": {
+    "title": "Other payables and other receivables",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Accruals** are expenses incurred during the accounting period but not yet paid, recorded as current liabilities",
+      "**Prepayments** are expenses paid in advance for future periods, recorded as current assets",
+      "**Other receivables** are amounts owed TO the business that are not trade debtors, such as rent receivable",
+      "**Other payables** are amounts owed BY the business that are not trade creditors, such as wages payable",
+      "Accruals increase expenses and increase liabilities in the statement of financial position",
+      "Prepayments reduce current period expenses and create assets in the statement of financial position",
+      "Year-end adjustments ensure expenses are matched to the correct accounting period following the **matching principle**",
+      "Insurance, rent, and telephone are common examples requiring accrual or prepayment adjustments",
+      "The **going concern concept** assumes the business will continue, justifying prepayment treatment as assets"
+    ],
+    "definitions": [
+      {
+        "term": "Accrual",
+        "definition": "An expense that has been incurred during the accounting period but has not yet been paid"
+      },
+      {
+        "term": "Prepayment",
+        "definition": "A payment made in advance for goods or services to be received in a future accounting period"
+      },
+      {
+        "term": "Other receivables",
+        "definition": "Amounts owed to the business that are not trade debtors, such as rent receivable or insurance claims"
+      },
+      {
+        "term": "Other payables",
+        "definition": "Amounts owed by the business that are not trade creditors, such as accrued expenses or wages payable"
+      },
+      {
+        "term": "Matching principle",
+        "definition": "The accounting concept that expenses should be matched against the revenues of the same accounting period"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show workings clearly. State the expense for the year and accrual/prepayment amounts"
+      },
+      {
+        "commandWord": "Record",
+        "instruction": "Show the journal entry or ledger account entries with clear debit and credit entries"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Ahmed's business pays rent quarterly in advance. On 1 January 2023, rent of $3,600 for three months was paid. Calculate the prepayment at 31 January 2023 and explain how it should be treated in the financial statements.",
+      "marks": 4,
+      "answer": "Prepayment calculation: Monthly rent = $3,600 ÷ 3 = $1,200. Two months remain unpaid (February and March) = 2 × $1,200 = $2,400. The prepayment of $2,400 should be shown as a current asset in the statement of financial position because it represents rent paid in advance for future periods. The rent expense for January would be $1,200 in the statement of profit or loss.",
+      "markBreakdown": [
+        "Mark 1: Monthly rent calculation $1,200",
+        "Mark 2: Prepayment calculation $2,400",
+        "Mark 3: Treatment as current asset",
+        "Mark 4: Explanation that it represents future periods"
+      ]
+    },
+    "commonMistakes": [
+      "Never say accruals are assets — they are always liabilities representing amounts owed",
+      "Students often confuse accruals with prepayments — accruals are unpaid expenses, prepayments are paid in advance",
+      "Never include accruals and prepayments with trade debtors/creditors — they are separate items",
+      "Students forget to adjust the expense account — both the balance sheet AND income statement are affected",
+      "Never ignore timing — always check which accounting period the expense relates to"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2, often worth 4-6 marks",
+      "Always show your workings when calculating monthly/daily amounts",
+      "Draw T-accounts to show the double entry effect clearly",
+      "Remember accruals increase both expenses and liabilities"
+    ],
+    "formulas": [
+      "Monthly expense = Annual expense ÷ 12",
+      "Daily expense = Annual expense ÷ 365",
+      "Accrual = Unpaid expense for current period",
+      "Prepayment = Payment made for future periods"
+    ],
+    "keyDiagramDescription": "T-account showing expense account with cash payments, accruals carried down as credit balance (liability), and prepayments carried down as debit balance (asset). Statement of financial position extract showing accruals under current liabilities and prepayments under current assets."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:38:50.371Z",
+  "updated_at": "2026-04-06T03:38:50.371Z"
+}

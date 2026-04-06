@@ -1,0 +1,109 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "15",
+  "chapter_name": "Nature of Light and Electromagnetic Spectrum",
+  "note_data": {
+    "title": "Nature of Light and Electromagnetic Spectrum",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Light is a form of electromagnetic radiation that travels in waves and exhibits both wave and particle properties",
+      "The electromagnetic spectrum consists of radio waves, microwaves, infrared rays, visible light, ultraviolet rays, X-rays, and gamma rays",
+      "All electromagnetic waves travel at the speed of light (3 × 10⁸ m/s) in vacuum",
+      "The relationship between frequency, wavelength and speed is given by c = fλ",
+      "Visible light has wavelength ranging from 400 nm (violet) to 700 nm (red)",
+      "Radio waves have the longest wavelength and lowest frequency while gamma rays have shortest wavelength and highest frequency",
+      "Electromagnetic waves do not require a medium for propagation and can travel through vacuum",
+      "The energy of electromagnetic radiation is directly proportional to its frequency (E = hf)"
+    ],
+    "definitions": [
+      {
+        "term": "Electromagnetic Radiation",
+        "definition": "Energy that travels through space in the form of waves without requiring any material medium."
+      },
+      {
+        "term": "Electromagnetic Spectrum",
+        "definition": "The complete range of electromagnetic radiations arranged in order of increasing frequency or decreasing wavelength."
+      },
+      {
+        "term": "Photon",
+        "definition": "A packet or quantum of electromagnetic energy having energy E = hf where h is Planck's constant and f is frequency."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance between two consecutive crests or troughs in a wave, measured in meters."
+      },
+      {
+        "term": "Frequency",
+        "definition": "The number of waves passing through a point in one second, measured in hertz (Hz)."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Arrange the following in order of increasing frequency: X-rays, radio waves, visible light, gamma rays.",
+        "answer": "Radio waves < Visible light < X-rays < Gamma rays. As we move from radio waves to gamma rays, frequency increases and wavelength decreases."
+      },
+      {
+        "type": "long",
+        "question": "Describe the electromagnetic spectrum. Give two uses of any four types of electromagnetic radiations.",
+        "answer": "The electromagnetic spectrum is the complete range of electromagnetic radiations arranged in order of increasing frequency. It includes: 1) Radio waves - used in radio broadcasting, radar 2) Microwaves - used in microwave ovens, satellite communication 3) Infrared rays - used in remote controls, night vision 4) Visible light - used for vision, photography 5) Ultraviolet rays - used for sterilization, detecting forged currency 6) X-rays - used in medical diagnosis, airport security 7) Gamma rays - used in cancer treatment, sterilization of medical equipment."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which electromagnetic radiation has the highest frequency?",
+        "options": {
+          "A": "Radio waves",
+          "B": "X-rays",
+          "C": "Gamma rays",
+          "D": "Visible light"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The speed of electromagnetic waves in vacuum is:",
+        "options": {
+          "A": "3 × 10⁶ m/s",
+          "B": "3 × 10⁸ m/s",
+          "C": "3 × 10¹⁰ m/s",
+          "D": "3 × 10⁴ m/s"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which of the following is used in microwave ovens?",
+        "options": {
+          "A": "Radio waves",
+          "B": "Infrared rays",
+          "C": "Microwaves",
+          "D": "X-rays"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse wavelength and frequency relationship - remember they are inversely related",
+      "Mixing up the order of electromagnetic spectrum - learn the mnemonic 'Radio Waves Make Infrared Visible Under X-ray Gamma'",
+      "Forgetting that all electromagnetic waves travel at same speed in vacuum",
+      "Not writing units properly - wavelength in meters, frequency in hertz",
+      "Confusing uses of different electromagnetic radiations in applications"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question about electromagnetic spectrum order",
+      "Always draw and label the electromagnetic spectrum diagram - it appears frequently",
+      "Memorize at least 2 uses of each type of electromagnetic radiation",
+      "Practice numerical problems using c = fλ formula",
+      "Learn the wavelength ranges for visible light colors (VIBGYOR)"
+    ],
+    "formulas": [
+      "c = fλ (where c = speed of light, f = frequency, λ = wavelength)",
+      "E = hf (where E = energy, h = Planck's constant, f = frequency)"
+    ],
+    "keyDiagram": "Electromagnetic Spectrum diagram showing all seven types of radiations arranged from longest to shortest wavelength: Radio waves → Microwaves → Infrared → Visible light → Ultraviolet → X-rays → Gamma rays, with frequency increasing from left to right"
+  },
+  "created_at": "2026-04-06T06:06:01.818Z"
+}

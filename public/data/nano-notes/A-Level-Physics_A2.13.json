@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "A2 Electromagnetism and Nuclear",
+  "chapter_id": "A2.13",
+  "chapter_name": "Medical physics",
+  "note_data": {
+    "title": "Medical Physics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**X-rays** are electromagnetic radiation with wavelengths of approximately 10^-10 m that can penetrate soft tissue but are absorbed by bone",
+      "**Ultrasound** uses high frequency sound waves (1-15 MHz) that reflect at boundaries between tissues of different acoustic impedance",
+      "**PET scans** detect gamma rays emitted by positron-emitting radioisotopes to produce images of metabolic activity",
+      "**MRI** uses strong magnetic fields and radiofrequency pulses to align and excite hydrogen nuclei in water molecules",
+      "**Acoustic impedance** Z = ρc where ρ is density and c is speed of sound in the medium",
+      "**Attenuation** of X-rays follows I = I₀e^(-μx) where μ is the linear attenuation coefficient",
+      "**Half-value thickness** is the thickness of material that reduces X-ray intensity to half its original value",
+      "**Doppler ultrasound** can measure blood flow velocity using the frequency shift of reflected waves",
+      "**Contrast agents** improve image quality by increasing the difference in absorption or reflection between tissues"
+    ],
+    "definitions": [
+      {
+        "term": "Acoustic impedance",
+        "definition": "The product of density and speed of sound in a medium, measured in kg m^-2 s^-1"
+      },
+      {
+        "term": "Linear attenuation coefficient",
+        "definition": "A measure of how easily X-rays penetrate a material, with units m^-1"
+      },
+      {
+        "term": "Half-value thickness",
+        "definition": "The thickness of material required to reduce the intensity of X-rays to half the incident intensity"
+      },
+      {
+        "term": "Positron emission tomography",
+        "definition": "An imaging technique that detects gamma rays from positron-electron annihilation to map metabolic activity"
+      },
+      {
+        "term": "Piezoelectric effect",
+        "definition": "The property of certain crystals to produce an electric field when mechanically stressed or vice versa"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between imaging techniques"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give a reasonable proposal with scientific justification"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why ultrasound imaging requires a coupling gel between the transducer and skin. [3 marks]",
+      "marks": 3,
+      "answer": "Air has a very low acoustic impedance compared to skin. Without gel, there would be almost total reflection at the air-skin boundary due to the large impedance mismatch. The coupling gel has an acoustic impedance similar to skin, allowing ultrasound waves to enter the body with minimal reflection.",
+      "markBreakdown": [
+        "Mark 1: Air has low acoustic impedance / large impedance difference",
+        "Mark 2: Total reflection occurs at air-skin boundary",
+        "Mark 3: Gel has similar impedance to skin / reduces reflection"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'X-rays are light waves' — always say 'X-rays are electromagnetic radiation'",
+      "Students often confuse ultrasound frequency with X-ray frequency — ultrasound is MHz, X-rays are much higher",
+      "Don't write 'bones are white on X-rays because they are hard' — say 'bones appear white because they have high linear attenuation coefficient'",
+      "Never say 'ultrasound bounces off organs' — always say 'ultrasound reflects at boundaries between tissues'",
+      "Students forget that PET scans detect gamma rays, not positrons directly"
+    ],
+    "examinerTips": [
+      "Medical physics appears frequently in Paper 4 as a practical context question",
+      "Always quote the attenuation formula when discussing X-ray absorption",
+      "Draw ray diagrams for ultrasound reflection to show your understanding",
+      "Remember to state units for acoustic impedance (kg m^-2 s^-1)",
+      "Link physics principles to medical applications for full marks"
+    ],
+    "formulas": [
+      "Z = ρc (acoustic impedance)",
+      "I = I₀e^(-μx) (X-ray attenuation)",
+      "x₁/₂ = ln(2)/μ (half-value thickness)"
+    ],
+    "keyDiagramDescription": "X-ray attenuation graph showing exponential decay of intensity with thickness, and ultrasound reflection diagram showing incident, reflected and transmitted waves at tissue boundaries with different acoustic impedances"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:47:12.304Z",
+  "updated_at": "2026-04-06T04:47:12.304Z"
+}

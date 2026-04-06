@@ -1,0 +1,94 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 4: Advanced Topics",
+  "chapter_id": "20",
+  "chapter_name": "Manufacturing accounts",
+  "note_data": {
+    "title": "Manufacturing accounts",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Prime cost** consists of direct materials, direct labour, and direct expenses only",
+      "**Factory overhead** includes all indirect manufacturing costs such as factory rent, factory insurance, and depreciation of plant and machinery",
+      "**Production cost** equals prime cost plus factory overhead (production cost = prime cost + factory overhead)",
+      "**Work in progress** represents partly finished goods at the beginning and end of the accounting period",
+      "**Factory cost of goods produced** equals production cost plus opening work in progress minus closing work in progress",
+      "**Direct materials** equals opening stock plus purchases minus closing stock of raw materials",
+      "Manufacturing accounts are prepared to calculate the **cost of goods produced** which is then transferred to the trading account",
+      "Factory overhead is **absorbed** into production cost and distributed over all units produced during the period"
+    ],
+    "definitions": [
+      {
+        "term": "Prime cost",
+        "definition": "The total of direct materials, direct labour and direct expenses incurred in manufacturing"
+      },
+      {
+        "term": "Factory overhead",
+        "definition": "All indirect costs incurred in the factory during production such as factory rent, factory insurance and depreciation of plant and machinery"
+      },
+      {
+        "term": "Production cost",
+        "definition": "Prime cost plus factory overhead representing the total cost of manufacturing goods"
+      },
+      {
+        "term": "Work in progress",
+        "definition": "Partly finished goods that are still in the process of manufacture at the end of the accounting period"
+      },
+      {
+        "term": "Direct materials",
+        "definition": "Raw materials that can be directly identified with and allocated to specific units of production"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all workings step by step. Use the manufacturing account format with clear headings."
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Draw up the full manufacturing account with all three sections: prime cost, factory overhead, and work in progress adjustments."
+      },
+      {
+        "commandWord": "State",
+        "instruction": "Give the formula or component without explanation, e.g., 'Prime cost = direct materials + direct labour + direct expenses'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Karachi Textiles Ltd has the following information for the year ended 31 December 2023: Opening stock of raw materials $15,000; Purchases of raw materials $85,000; Closing stock of raw materials $12,000; Direct labour $45,000; Factory rent $8,000. Calculate the prime cost.",
+      "marks": 3,
+      "answer": "Direct materials = Opening stock + Purchases - Closing stock = $15,000 + $85,000 - $12,000 = $88,000. Prime cost = Direct materials + Direct labour = $88,000 + $45,000 = $133,000.",
+      "markBreakdown": [
+        "Mark 1: Direct materials calculation $88,000",
+        "Mark 2: Prime cost formula applied correctly",
+        "Mark 3: Correct final answer $133,000"
+      ]
+    },
+    "commonMistakes": [
+      "Never include factory overhead in prime cost — prime cost only includes direct costs",
+      "Students often forget to adjust for opening and closing work in progress when calculating factory cost of goods produced",
+      "Never include selling and distribution expenses in manufacturing accounts — these belong in profit and loss account",
+      "Students confuse direct and indirect costs — factory supervisor salary is indirect, machine operator salary is direct",
+      "Never add closing work in progress — it should be deducted to find factory cost of goods produced"
+    ],
+    "examinerTips": [
+      "Manufacturing accounts appear frequently in Paper 2 Section B",
+      "Always use the three-section format: Prime cost, Factory overhead, Work in progress adjustments",
+      "Show all calculations separately before entering into the manufacturing account",
+      "The figure for factory cost of goods produced transfers to the trading account as purchases"
+    ],
+    "formulas": [
+      "Prime cost = Direct materials + Direct labour + Direct expenses",
+      "Direct materials = Opening stock + Purchases - Closing stock",
+      "Production cost = Prime cost + Factory overhead",
+      "Factory cost of goods produced = Production cost + Opening WIP - Closing WIP"
+    ],
+    "keyDiagramDescription": "Manufacturing Account with three distinct sections: Prime Cost section (listing direct materials, direct labour, direct expenses), Factory Overhead section (listing all indirect factory costs), and Work in Progress section (showing opening WIP added and closing WIP deducted to arrive at Factory Cost of Goods Produced)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:42:18.118Z",
+  "updated_at": "2026-04-06T03:42:18.118Z"
+}

@@ -1,0 +1,95 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "AS Computer Science",
+  "chapter_id": "AS5",
+  "chapter_name": "System software",
+  "note_data": {
+    "title": "System software",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Operating system** manages computer hardware resources and provides interface between user and hardware",
+      "**Scheduling** allocates processor time between processes using algorithms like round robin, first come first served, shortest job first",
+      "**Memory management** allocates RAM to programs and handles virtual memory using paging and segmentation",
+      "**Interrupt handling** allows CPU to respond to urgent requests from hardware or software by temporarily stopping current process",
+      "**Device drivers** are programs that allow operating system to communicate with specific hardware components",
+      "**File management** organizes data storage on secondary storage devices using file allocation tables and directory structures",
+      "**User interface** provides methods for users to interact with computer through command line interface or graphical user interface",
+      "**Multi-tasking** allows multiple programs to run simultaneously by rapidly switching CPU time between processes",
+      "**Security management** controls user access permissions and protects system from unauthorized access and malware"
+    ],
+    "definitions": [
+      {
+        "term": "Operating system",
+        "definition": "System software that manages computer hardware resources and provides interface between applications and hardware"
+      },
+      {
+        "term": "Interrupt",
+        "definition": "Signal sent to processor to temporarily stop current process and handle urgent request from hardware or software"
+      },
+      {
+        "term": "Virtual memory",
+        "definition": "Memory management technique that uses secondary storage to extend available RAM by swapping data between RAM and hard disk"
+      },
+      {
+        "term": "Process scheduling",
+        "definition": "Method used by operating system to allocate processor time between different processes waiting to be executed"
+      },
+      {
+        "term": "Device driver",
+        "definition": "Program that allows operating system to communicate with and control specific hardware device"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics or features with some detail but no justification needed"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between two items"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how an operating system handles an interrupt from a keyboard when a key is pressed. [4]",
+      "marks": 4,
+      "answer": "When key is pressed, keyboard sends interrupt signal to processor. Processor completes current instruction then saves current process state including register contents and program counter to stack. Processor loads interrupt service routine address from interrupt vector table and executes keyboard interrupt handler routine. After handling interrupt, processor restores previous process state from stack and continues execution of original process.",
+      "markBreakdown": [
+        "Mark 1: Interrupt signal sent to processor",
+        "Mark 2: Current process state saved to stack",
+        "Mark 3: Interrupt service routine executed",
+        "Mark 4: Original process state restored and execution continues"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'interrupt stops the computer' — always say 'interrupt temporarily stops current process'",
+      "Students often confuse scheduling algorithms — round robin uses time slices, shortest job first prioritizes by execution time",
+      "Don't say 'virtual memory increases RAM' — say 'virtual memory extends available memory by using secondary storage'",
+      "Never say 'operating system runs programs' — say 'operating system manages execution of programs'",
+      "Students forget that device drivers are specific to hardware — each device needs its own driver"
+    ],
+    "examinerTips": [
+      "Interrupt handling questions appear frequently in Paper 2 — learn the 4-step process",
+      "Always specify which scheduling algorithm when discussing process scheduling",
+      "Memory management questions often ask about paging — know the difference between pages and frames",
+      "Draw diagrams for interrupt handling and memory management for visual marks"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Interrupt handling cycle showing: 1) Interrupt signal received 2) Current state saved 3) Interrupt service routine executed 4) Original state restored. Also memory management diagram showing RAM divided into pages/frames with virtual memory extension to secondary storage."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:15:38.300Z",
+  "updated_at": "2026-04-06T05:15:38.300Z"
+}

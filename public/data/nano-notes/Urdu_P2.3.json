@@ -1,0 +1,88 @@
+{
+  "subject": "Urdu",
+  "subject_code": "3247",
+  "level": "O Level",
+  "theme": "Paper 2: Composition",
+  "chapter_id": "P2.3",
+  "chapter_name": "Story Writing (کہانی نگاری)",
+  "note_data": {
+    "title": "Story Writing (کہانی نگاری)",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Plot structure** must include clear beginning (آغاز), middle (درمیان) and end (اختتام) with logical sequence",
+      "**Character development** requires detailed personality traits, motivations and realistic dialogue that advances the story",
+      "**Setting description** should establish time (زمانہ) and place (مقام) using vivid imagery and cultural context",
+      "**Theme** must be clearly conveyed through events and character actions, often reflecting moral or social values",
+      "**Language variety** includes appropriate use of dialogue, narrative description and emotional expression",
+      "**Conflict resolution** requires a believable climax followed by satisfactory conclusion that ties loose ends",
+      "**Cultural authenticity** when writing about Pakistani society, festivals, traditions or family relationships",
+      "**Narrative techniques** such as flashback, foreshadowing or first/third person perspective enhance storytelling"
+    ],
+    "definitions": [
+      {
+        "term": "Plot (پلاٹ)",
+        "definition": "The sequence of events that make up a story, including exposition, rising action, climax and resolution"
+      },
+      {
+        "term": "Character Development (کردار نگاری)",
+        "definition": "The process of creating believable characters with distinct personalities, motivations and growth throughout the story"
+      },
+      {
+        "term": "Setting (ماحول)",
+        "definition": "The time and place where the story occurs, including physical location, historical period and social context"
+      },
+      {
+        "term": "Theme (موضوع)",
+        "definition": "The central message or underlying meaning of the story that reflects human experience or values"
+      },
+      {
+        "term": "Dialogue (مکالمہ)",
+        "definition": "Conversation between characters that reveals personality, advances plot and creates realistic interaction"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Write",
+        "instruction": "Create a complete story with all required elements - plot, characters, setting, theme and appropriate language register"
+      },
+      {
+        "commandWord": "Develop",
+        "instruction": "Expand the given prompt into a full narrative with detailed character development and plot progression"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Write a story of about 350-400 words beginning with: 'The letter that arrived that morning changed everything...' (20 marks)",
+      "marks": 20,
+      "answer": "The letter that arrived that morning changed everything. Fatima's hands trembled as she recognized her father's handwriting on the envelope. He had been working in Dubai for three years, sending money home to their village near Lahore.\n\nInside was news that made her heart race - he was returning home permanently and had saved enough to send her to university. But there was a condition: she must choose between studying medicine in Karachi or staying home to help with her younger siblings.\n\nFor months, Fatima had dreamed of becoming a doctor. She remembered treating her grandmother's illness with herbs from their garden, wishing she knew more. The village had no female doctor, and many women suffered in silence.\n\nThat evening, she sat with her mother under the ancient neem tree. 'Ammi, what should I do?' she asked. Her mother's weathered hands held hers gently. 'Beta, education is a light that no one can extinguish. Your siblings need that light too.'\n\nThe next morning, Fatima made her decision. She would study hard, become a doctor, and return to serve her community. Her sacrifice today would benefit countless families tomorrow.\n\nAs she wrote her acceptance letter to the medical college, she realized the morning post hadn't just brought news - it had brought her destiny.",
+      "markBreakdown": [
+        "Marks 1-4: Clear plot structure with beginning, middle and end",
+        "Marks 5-8: Well-developed characters with realistic dialogue and motivations",
+        "Marks 9-12: Vivid setting descriptions and cultural authenticity",
+        "Marks 13-16: Clear theme of sacrifice, education and family responsibility",
+        "Marks 17-20: Excellent language variety, vocabulary range and grammatical accuracy"
+      ]
+    },
+    "commonMistakes": [
+      "Never write stories that are too short - aim for 350-400 words minimum for full content marks",
+      "Students often create unrealistic characters without clear motivation or personality development",
+      "Avoid weak endings that leave the conflict unresolved or use clichéd phrases like 'it was all a dream'",
+      "Never ignore the given opening line - the story must flow naturally from the provided start",
+      "Students frequently use inappropriate register - maintain consistent formal or informal tone throughout"
+    ],
+    "examinerTips": [
+      "Story writing appears in every Paper 2 as Question 2 - practice different opening prompts regularly",
+      "Plan your story structure before writing - 5 minutes planning saves marks later",
+      "Use Pakistani cultural context appropriately - festivals, food, locations that examiners recognize",
+      "Include at least 2-3 characters with distinct voices and realistic dialogue",
+      "End strongly with a clear resolution that reflects the theme you've developed"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Story structure pyramid showing exposition at base, rising action on left slope, climax at peak, falling action on right slope, and resolution at right base"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:09:28.372Z",
+  "updated_at": "2026-04-06T04:09:28.372Z"
+}

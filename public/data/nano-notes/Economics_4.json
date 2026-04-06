@@ -1,0 +1,97 @@
+{
+  "subject": "Economics",
+  "subject_code": "2281",
+  "level": "O Level",
+  "theme": "Macroeconomics",
+  "chapter_id": "4",
+  "chapter_name": "Government and the Macroeconomy",
+  "note_data": {
+    "title": "Government and the Macroeconomy",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Fiscal policy** is the use of government spending and taxation to influence the economy",
+      "**Monetary policy** is the use of interest rates and money supply to control economic activity",
+      "Government can use **expansionary fiscal policy** (increase spending/reduce taxes) to reduce unemployment and stimulate growth",
+      "Government can use **contractionary fiscal policy** (reduce spending/increase taxes) to control inflation",
+      "**Expansionary monetary policy** (lower interest rates) encourages borrowing and investment but may cause inflation",
+      "**Contractionary monetary policy** (higher interest rates) reduces borrowing and spending to control inflation",
+      "Government faces **policy conflicts** - policies to reduce unemployment may increase inflation",
+      "**Supply-side policies** aim to increase productive capacity of the economy through education, training and infrastructure",
+      "Government spending on infrastructure like CPEC projects can increase **long-term economic growth**"
+    ],
+    "definitions": [
+      {
+        "term": "Fiscal policy",
+        "definition": "The use of government spending and taxation to influence the level of economic activity"
+      },
+      {
+        "term": "Monetary policy",
+        "definition": "The use of interest rates and control of money supply to influence the level of economic activity"
+      },
+      {
+        "term": "Budget deficit",
+        "definition": "When government spending exceeds government revenue in a given time period"
+      },
+      {
+        "term": "Inflation",
+        "definition": "A sustained increase in the general price level"
+      },
+      {
+        "term": "Supply-side policies",
+        "definition": "Government policies aimed at increasing the productive capacity of the economy"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the issue and explain the links between cause and effect"
+      },
+      {
+        "commandWord": "Discuss",
+        "instruction": "Present arguments for and against, then reach a conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how a government can use fiscal policy to reduce unemployment. [6 marks]",
+      "marks": 6,
+      "answer": "The government can use expansionary fiscal policy to reduce unemployment. This involves increasing government spending on projects like building roads, schools and hospitals which directly creates jobs for workers. The government can also reduce income tax rates which increases disposable income, leading to higher consumer spending and increased demand for goods and services. This higher demand encourages firms to expand production and hire more workers, reducing unemployment. Additionally, the government can reduce corporation tax which increases firms' after-tax profits, encouraging investment in new machinery and expansion, creating more employment opportunities.",
+      "markBreakdown": [
+        "Mark 1: Definition of expansionary fiscal policy",
+        "Mark 2: Increase government spending creates direct employment",
+        "Mark 3: Reduce income tax increases disposable income",
+        "Mark 4: Higher consumer spending increases demand",
+        "Mark 5: Firms expand and hire more workers",
+        "Mark 6: Reduce corporation tax encourages investment and job creation"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'print more money' for fiscal policy - this is monetary policy",
+      "Students often confuse fiscal policy (government spending/tax) with monetary policy (interest rates)",
+      "Don't just list policies - always explain HOW they work to achieve the objective",
+      "Never ignore policy conflicts - reducing unemployment may increase inflation",
+      "Students forget that fiscal policy has time lags - effects are not immediate"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every Paper 2 - learn both fiscal and monetary policies thoroughly",
+      "Always explain the transmission mechanism - how the policy leads to the desired outcome",
+      "Use Pakistani examples like CPEC infrastructure spending or SBP interest rate changes",
+      "For 'discuss' questions, always mention policy conflicts and limitations"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Phillips Curve showing inverse relationship between inflation and unemployment - useful for explaining policy trade-offs. Also aggregate demand/supply diagrams to show effects of fiscal and monetary policies on price level and output."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:34:07.027Z",
+  "updated_at": "2026-04-06T03:34:07.027Z"
+}

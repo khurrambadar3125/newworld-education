@@ -1,0 +1,109 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "6",
+  "chapter_name": "Solutions",
+  "note_data": {
+    "title": "Solutions",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Solution is a homogeneous mixture of two or more substances — solvent is present in larger amount, solute in smaller amount",
+      "Solutions can be gaseous (air), liquid (sugar in water), or solid (alloys like brass)",
+      "Concentration can be expressed as percentage by mass, percentage by volume, or molarity",
+      "Solubility is the maximum amount of solute that can dissolve in 100g of solvent at a given temperature",
+      "Saturated solution contains maximum amount of solute at given temperature — no more solute can dissolve",
+      "Unsaturated solution can dissolve more solute, supersaturated contains more solute than normal solubility",
+      "Henry's Law states that solubility of gas in liquid is directly proportional to pressure of gas",
+      "Crystallization is the process of obtaining pure crystals from saturated solution by cooling or evaporation"
+    ],
+    "definitions": [
+      {
+        "term": "Solution",
+        "definition": "A solution is a homogeneous mixture of two or more substances in which the particle size is less than 1 nm"
+      },
+      {
+        "term": "Solvent",
+        "definition": "The component of solution which is present in larger amount and dissolves the other component"
+      },
+      {
+        "term": "Solute",
+        "definition": "The component of solution which is present in smaller amount and gets dissolved in solvent"
+      },
+      {
+        "term": "Saturated Solution",
+        "definition": "A solution which contains maximum amount of solute that can be dissolved in given amount of solvent at a particular temperature"
+      },
+      {
+        "term": "Solubility",
+        "definition": "The maximum amount of solute in grams that can dissolve in 100g of solvent at a given temperature to form saturated solution"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define saturated and unsaturated solutions with examples.",
+        "answer": "Saturated solution contains maximum amount of solute at given temperature (e.g., no more salt dissolves in water). Unsaturated solution can dissolve more solute (e.g., sugar can still dissolve in tea)."
+      },
+      {
+        "type": "long",
+        "question": "Explain different types of solutions with examples. How does temperature affect solubility?",
+        "answer": "Types: (1) Gaseous solutions - air (oxygen in nitrogen), (2) Liquid solutions - seawater (salt in water), (3) Solid solutions - brass (zinc in copper). Temperature effect: For solids, solubility increases with temperature. For gases, solubility decreases with temperature. Example: sugar dissolves more in hot water, CO2 escapes from warm soft drinks."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of following is example of liquid in liquid solution?",
+        "options": {
+          "A": "Sugar in water",
+          "B": "Alcohol in water",
+          "C": "Salt in water",
+          "D": "CO2 in water"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Solubility of gases in liquids decreases with increase in:",
+        "options": {
+          "A": "Pressure",
+          "B": "Temperature",
+          "C": "Stirring",
+          "D": "Surface area"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "A solution containing 25g NaCl in 100g water at 25°C is:",
+        "options": {
+          "A": "Saturated",
+          "B": "Unsaturated",
+          "C": "Supersaturated",
+          "D": "Cannot determine"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse solute and solvent — remember solvent is in larger amount",
+      "Writing percentage by mass formula incorrectly — always write (mass of solute/mass of solution) × 100",
+      "Forgetting that solubility of gases decreases with temperature increase",
+      "Not mentioning temperature when defining saturated solution",
+      "Confusing saturated with concentrated solution — they are different concepts"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 short question in every BSEK paper",
+      "Always define terms exactly as given in STBB textbook — examiners expect word-to-word definitions",
+      "Memorize the solubility curve diagram — frequently asked to draw and explain",
+      "Practice percentage calculations — numerical problems are common in 5-mark questions"
+    ],
+    "formulas": [
+      "Percentage by mass = (Mass of solute / Mass of solution) × 100",
+      "Percentage by volume = (Volume of solute / Volume of solution) × 100",
+      "Mass of solution = Mass of solute + Mass of solvent"
+    ],
+    "keyDiagram": "Solubility curve showing how solubility of different salts (KNO3, NaCl, KCl) varies with temperature. X-axis shows temperature in °C, Y-axis shows solubility in g/100g water. Must show KNO3 having steepest curve and NaCl having gentlest slope."
+  },
+  "created_at": "2026-04-06T06:09:28.049Z"
+}

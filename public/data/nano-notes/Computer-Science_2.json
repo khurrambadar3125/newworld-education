@@ -1,0 +1,94 @@
+{
+  "subject": "Computer Science",
+  "subject_code": "2210",
+  "level": "O Level",
+  "theme": "Paper 1: Computer Systems",
+  "chapter_id": "2",
+  "chapter_name": "Data transmission",
+  "note_data": {
+    "title": "Data transmission",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **data packet** is a unit of data made up of a header, payload and trailer that is transmitted across a network",
+      "**Packet switching** is a method of data transmission where data is broken down into packets that are sent independently across a network",
+      "**USB (Universal Serial Bus)** is a standard for connecting devices to computers that allows data transmission and power supply",
+      "**Error detection** methods include parity checks, checksum and check digits to identify transmission errors",
+      "**Encryption** is the process of converting plaintext into ciphertext using an algorithm and key to secure data during transmission",
+      "**Serial transmission** sends data one bit at a time along a single wire, while **parallel transmission** sends multiple bits simultaneously along multiple wires",
+      "**Simplex transmission** allows data flow in one direction only, **half-duplex** allows data flow in both directions but not simultaneously, **full-duplex** allows simultaneous data flow in both directions",
+      "**Protocols** are rules that govern how data is transmitted between devices on a network"
+    ],
+    "definitions": [
+      {
+        "term": "Data packet",
+        "definition": "A unit of data that consists of a header (containing routing information), payload (actual data) and trailer (error checking information)"
+      },
+      {
+        "term": "Packet switching",
+        "definition": "A method of data transmission where data is divided into packets that are sent independently across a network and reassembled at the destination"
+      },
+      {
+        "term": "Encryption",
+        "definition": "The process of converting readable data (plaintext) into an unreadable form (ciphertext) using an algorithm and encryption key"
+      },
+      {
+        "term": "Parity check",
+        "definition": "An error detection method that adds an extra bit to ensure the total number of 1s is either even (even parity) or odd (odd parity)"
+      },
+      {
+        "term": "Protocol",
+        "definition": "A set of rules that defines how data is transmitted between devices on a network"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of the process or method step by step"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between two methods"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how packet switching is used to transmit data across a network. [4 marks]",
+      "marks": 4,
+      "answer": "Data is divided into packets at the source. Each packet contains a header with routing information, the actual data (payload), and a trailer for error checking. Packets are sent independently across the network and may take different routes to reach the destination. At the destination, packets are reassembled in the correct order to recreate the original data.",
+      "markBreakdown": [
+        "Mark 1: Data is divided into packets",
+        "Mark 2: Each packet contains header, payload and trailer",
+        "Mark 3: Packets sent independently/may take different routes",
+        "Mark 4: Packets reassembled at destination in correct order"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'packets are sent together' — always say 'packets are sent independently and may take different routes'",
+      "Students often forget to mention that packets are reassembled in the correct order at the destination",
+      "Don't confuse encryption with error detection — encryption secures data while error detection identifies transmission errors",
+      "Never say 'USB is only for storage devices' — USB can connect many types of devices including keyboards, mice, and printers",
+      "Students often think parallel transmission is always faster — it's only faster over short distances due to interference"
+    ],
+    "examinerTips": [
+      "Packet switching questions appear frequently in Paper 2 — always mention independent transmission and reassembly",
+      "For error detection questions, give specific examples like parity checks or checksums",
+      "When comparing transmission methods, always give at least one advantage and disadvantage of each",
+      "Encryption questions often ask for both the process AND why it's needed"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Packet structure diagram showing header (source/destination addresses, packet number), payload (actual data), and trailer (error checking bits). Network diagram showing multiple possible routes between source and destination with packets taking different paths."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:43:50.306Z",
+  "updated_at": "2026-04-06T03:43:50.306Z"
+}

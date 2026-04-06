@@ -1,0 +1,102 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "A2 Fields",
+  "chapter_id": "A2.5",
+  "chapter_name": "Thermodynamics",
+  "note_data": {
+    "title": "Thermodynamics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**First law of thermodynamics**: The increase in internal energy of a system equals the sum of heat supplied to the system and work done on the system (ΔU = Q + W)",
+      "**Internal energy** is the sum of the random kinetic and potential energies of molecules in a system",
+      "**Specific heat capacity** is the energy required per unit mass to raise temperature by 1K (or 1°C)",
+      "**Specific latent heat of fusion** is the energy required per unit mass to change solid to liquid at constant temperature",
+      "**Specific latent heat of vaporization** is the energy required per unit mass to change liquid to gas at constant temperature",
+      "Work done by a gas during expansion equals the area under a pressure-volume graph",
+      "For an **ideal gas**: internal energy depends only on temperature and is directly proportional to absolute temperature",
+      "During **isothermal process**: temperature remains constant so ΔU = 0, therefore Q = -W",
+      "During **adiabatic process**: no heat transfer occurs so Q = 0, therefore ΔU = W",
+      "**Cyclic process**: system returns to initial state so net change in internal energy is zero"
+    ],
+    "definitions": [
+      {
+        "term": "First law of thermodynamics",
+        "definition": "The increase in internal energy of a system equals the sum of heat supplied to the system and work done on the system"
+      },
+      {
+        "term": "Internal energy",
+        "definition": "The sum of the random kinetic and potential energies of molecules in a system"
+      },
+      {
+        "term": "Specific heat capacity",
+        "definition": "The energy required per unit mass to raise the temperature by 1K"
+      },
+      {
+        "term": "Specific latent heat",
+        "definition": "The energy required per unit mass to change the state of a substance at constant temperature"
+      },
+      {
+        "term": "Isothermal process",
+        "definition": "A thermodynamic process in which temperature remains constant"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the law or definition in one clear sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the physical reason using 'because' - link energy changes to molecular behavior"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all steps clearly. State the formula, substitute values, give final answer with correct units"
+      },
+      {
+        "commandWord": "Sketch",
+        "instruction": "Draw labeled axes, show correct shape of curve, mark key points and values"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A gas undergoes an isothermal expansion from volume 2.0 × 10⁻³ m³ to 6.0 × 10⁻³ m³. During this process, 450 J of heat is supplied to the gas. Calculate the work done by the gas and explain the change in internal energy.",
+      "marks": 4,
+      "answer": "For an isothermal process, temperature is constant, so change in internal energy ΔU = 0. Using first law: ΔU = Q + W, therefore 0 = 450 + W, so W = -450 J. The negative sign shows work is done by the gas (expansion). Since temperature is constant for an ideal gas, there is no change in internal energy because internal energy depends only on temperature.",
+      "markBreakdown": [
+        "Mark 1: ΔU = 0 for isothermal process",
+        "Mark 2: Correct application of first law ΔU = Q + W",
+        "Mark 3: W = -450 J with correct sign",
+        "Mark 4: Explanation that internal energy unchanged because temperature constant"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse work done BY the gas (negative) with work done ON the gas (positive) - expansion means work BY gas",
+      "Students often forget that internal energy of ideal gas depends ONLY on temperature, not pressure or volume",
+      "Never say 'heat capacity' when you mean 'specific heat capacity' - must specify per unit mass",
+      "Students confuse latent heat of fusion with vaporization - fusion is solid→liquid, vaporization is liquid→gas",
+      "Never use ΔU = mcΔT during phase changes - temperature is constant so use ΔU = ml instead"
+    ],
+    "examinerTips": [
+      "First law of thermodynamics appears in almost every Paper 4 and frequently in Paper 2",
+      "Always check signs carefully: Q positive when heat supplied TO system, W negative when work done BY system",
+      "For P-V diagrams, clockwise cycles do net work (area), anticlockwise cycles have work done on them",
+      "When calculating work from P-V graphs, count squares carefully and state the scale used"
+    ],
+    "formulas": [
+      "ΔU = Q + W",
+      "Q = mcΔT",
+      "Q = ml",
+      "W = pΔV (constant pressure)",
+      "c = Q/(mΔT)"
+    ],
+    "keyDiagramDescription": "P-V diagram showing isothermal (curved line), adiabatic (steeper curve), and constant pressure/volume processes. Work done equals area under curve. Label axes as pressure (Pa) vs volume (m³)."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:44:12.489Z",
+  "updated_at": "2026-04-06T04:44:12.489Z"
+}

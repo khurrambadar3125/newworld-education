@@ -1,0 +1,111 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "13",
+  "chapter_name": "Practical Geometry — Triangles",
+  "note_data": {
+    "title": "Practical Geometry — Triangles",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Triangle construction requires three independent measurements (SSS, SAS, ASA, RHS)",
+      "SSS Construction: When three sides are given, use compass to draw arcs from two vertices",
+      "SAS Construction: When two sides and included angle are given, draw angle first then measure sides",
+      "ASA Construction: When two angles and included side are given, construct both angles at endpoints",
+      "RHS Construction: Right angle triangles when hypotenuse and one side are given",
+      "Angle bisector divides an angle into two equal parts using compass construction",
+      "Perpendicular bisector passes through midpoint at 90° to the line segment",
+      "Circumcenter is equidistant from all three vertices of triangle",
+      "Incenter is equidistant from all three sides of triangle"
+    ],
+    "definitions": [
+      {
+        "term": "Triangle",
+        "definition": "A polygon having three sides, three angles and three vertices is called a triangle."
+      },
+      {
+        "term": "Angle Bisector",
+        "definition": "A ray that divides an angle into two equal angles is called angle bisector of that angle."
+      },
+      {
+        "term": "Perpendicular Bisector",
+        "definition": "A line that passes through the midpoint of a line segment and is perpendicular to it is called perpendicular bisector."
+      },
+      {
+        "term": "Circumcenter",
+        "definition": "The point of intersection of perpendicular bisectors of the sides of a triangle is called circumcenter."
+      },
+      {
+        "term": "Incenter",
+        "definition": "The point of intersection of angle bisectors of a triangle is called incenter."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define circumcenter of a triangle. Write its one property.",
+        "answer": "The point of intersection of perpendicular bisectors of the sides of a triangle is called circumcenter. Property: It is equidistant from all three vertices of the triangle."
+      },
+      {
+        "type": "long",
+        "question": "Construct a triangle ABC in which AB = 6 cm, BC = 5 cm and AC = 4 cm. Also construct its circumcenter.",
+        "answer": "Step 1: Draw line segment AB = 6 cm. Step 2: From A, draw arc of radius 4 cm. Step 3: From B, draw arc of radius 5 cm. Step 4: Mark intersection point as C. Step 5: Join AC and BC. Step 6: Draw perpendicular bisectors of AB, BC, and AC. Step 7: Mark intersection point as circumcenter O."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The circumcenter of a triangle is equidistant from its:",
+        "options": {
+          "A": "sides",
+          "B": "vertices",
+          "C": "angles",
+          "D": "medians"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "For constructing a triangle, minimum measurements required are:",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The incenter of a triangle is the intersection point of:",
+        "options": {
+          "A": "perpendicular bisectors",
+          "B": "medians",
+          "C": "angle bisectors",
+          "D": "altitudes"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse circumcenter (intersection of perpendicular bisectors) with incenter (intersection of angle bisectors)",
+      "Forgetting to maintain compass radius while drawing arcs in SSS construction",
+      "Not drawing angle accurately first in SAS construction",
+      "Mixing up the properties - circumcenter is equidistant from vertices, incenter from sides",
+      "Not showing construction lines and arcs in diagrams - marks are deducted for incomplete construction"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 construction question worth 5-8 marks in BSEK papers",
+      "Always show construction lines, arcs, and label all points clearly for full marks",
+      "Memorize exact definitions - BSEK expects word-for-word textbook definitions",
+      "Practice drawing neat diagrams with compass and ruler - presentation matters in practical geometry",
+      "Construction questions are scoring if steps are followed correctly"
+    ],
+    "formulas": [
+      "For triangle construction: Need 3 independent measurements",
+      "Circumradius = Distance from circumcenter to any vertex",
+      "Inradius = Distance from incenter to any side"
+    ],
+    "keyDiagram": "Triangle ABC with circumcenter O showing perpendicular bisectors of all three sides intersecting at O, with equal distances OA = OB = OC marked. Also show incenter I with angle bisectors and equal perpendicular distances to all three sides."
+  },
+  "created_at": "2026-04-06T06:24:34.907Z"
+}

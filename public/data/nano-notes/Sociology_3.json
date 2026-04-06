@@ -1,0 +1,95 @@
+{
+  "subject": "Sociology",
+  "subject_code": "2251",
+  "level": "O Level",
+  "theme": "Core Concepts",
+  "chapter_id": "3",
+  "chapter_name": "Social Stratification",
+  "note_data": {
+    "title": "Social Stratification",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Social stratification** is the division of society into layers or strata based on wealth, power, and status",
+      "**Social class** is determined by occupation, income, education, and lifestyle - creating upper, middle, and working classes",
+      "**Social mobility** can be upward (improving social position) or downward (losing social position) through education or career changes",
+      "**Life chances** vary between social classes - upper classes have better access to healthcare, education, and employment opportunities",
+      "**Status** refers to the prestige and respect given to different positions in society, often linked to occupation",
+      "**Power** is the ability to influence decisions and control resources, typically concentrated in upper social classes",
+      "**Wealth** includes property, savings, and investments, while **income** is regular earnings from employment",
+      "**Social inequality** exists when resources and opportunities are distributed unequally between different groups in society",
+      "**Meritocracy** is a system where social position is based on ability and effort rather than inherited status"
+    ],
+    "definitions": [
+      {
+        "term": "Social Stratification",
+        "definition": "The division of society into hierarchical layers or strata based on differences in wealth, power, and status"
+      },
+      {
+        "term": "Social Class",
+        "definition": "A group of people who share similar economic positions, lifestyles, and life chances in society"
+      },
+      {
+        "term": "Social Mobility",
+        "definition": "The movement of individuals or groups up or down the social hierarchy from one social class to another"
+      },
+      {
+        "term": "Life Chances",
+        "definition": "The opportunities available to individuals to improve their quality of life, including access to education, healthcare, and employment"
+      },
+      {
+        "term": "Status",
+        "definition": "The prestige, respect, and social honor accorded to individuals or groups based on their position in society"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. E.g., 'Upper class people have high status in society.'"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because'. E.g., 'Social mobility is difficult because education is expensive.'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give 2-3 detailed points about features or characteristics with examples"
+      },
+      {
+        "commandWord": "Discuss",
+        "instruction": "Present arguments for and against, then reach a balanced conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain what is meant by 'life chances'. [3 marks]",
+      "marks": 3,
+      "answer": "Life chances refer to the opportunities available to individuals to improve their quality of life and achieve their goals. These include access to good education, healthcare, housing, and employment opportunities. Life chances vary between social classes, with upper class individuals having better opportunities than working class individuals due to their greater wealth and social connections.",
+      "markBreakdown": [
+        "Mark 1: Basic definition of life chances as opportunities",
+        "Mark 2: Examples of life chances (education, healthcare, employment)",
+        "Mark 3: Link to social class differences/inequality"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'caste system' when discussing social class - Pakistan has social classes, not castes",
+      "Students often confuse wealth with income - wealth is accumulated assets, income is regular earnings",
+      "Avoid saying 'everyone can achieve upward mobility' - acknowledge barriers like lack of education funding",
+      "Don't claim social stratification doesn't exist in Pakistan - provide local examples like feudal landowners vs. agricultural workers",
+      "Never use only Western examples - include Pakistani context like civil servants, business families, and rural laborers"
+    ],
+    "examinerTips": [
+      "Social stratification appears frequently in Paper 2 - often 8-12 mark questions",
+      "Always use Pakistani examples: Karachi's business elite, rural Punjab landowners, urban factory workers",
+      "For high marks, distinguish between different types of inequality (economic, social, political)",
+      "Link stratification to other topics like education inequality and family structures",
+      "Use statistical evidence where possible - income distribution, literacy rates by social class"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Social pyramid diagram showing upper class (small triangle at top), middle class (larger middle section), and working class (largest section at bottom), with arrows showing limited social mobility between layers"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:13:49.721Z",
+  "updated_at": "2026-04-06T04:13:49.721Z"
+}

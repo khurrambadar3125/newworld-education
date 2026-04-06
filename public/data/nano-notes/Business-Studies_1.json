@@ -1,0 +1,100 @@
+{
+  "subject": "Business Studies",
+  "subject_code": "7115",
+  "level": "O Level",
+  "theme": "Business Fundamentals",
+  "chapter_id": "1",
+  "chapter_name": "Understanding Business Activity",
+  "note_data": {
+    "title": "Understanding Business Activity",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **business** combines scarce resources to produce goods and services to satisfy human wants for profit",
+      "**Enterprise** is the skill and risk-taking ability of the person who brings together other factors of production to start a business",
+      "**Primary sector** businesses extract natural resources from the earth, such as farming, fishing, mining and oil extraction",
+      "**Secondary sector** businesses manufacture goods using raw materials from the primary sector",
+      "**Tertiary sector** businesses provide services to consumers and other businesses",
+      "**Stakeholders** are individuals or groups who have an interest in a business and can affect or be affected by the business activities",
+      "**Internal stakeholders** include owners, managers, employees who work inside the business",
+      "**External stakeholders** include customers, suppliers, government, local community who are outside the business",
+      "Businesses create **employment** opportunities and contribute to **economic growth** in the country",
+      "**Added value** is the difference between the selling price of a product and the cost of materials used to make it"
+    ],
+    "definitions": [
+      {
+        "term": "Business",
+        "definition": "An organization that uses resources to produce goods or services which are sold to customers for a profit"
+      },
+      {
+        "term": "Enterprise",
+        "definition": "The skill and risk-taking ability of the person who brings together the other factors of production to start a business"
+      },
+      {
+        "term": "Stakeholder",
+        "definition": "Any person or group with a direct interest in the performance and activities of a business"
+      },
+      {
+        "term": "Added Value",
+        "definition": "The difference between the selling price of a product and the cost of bought-in materials"
+      },
+      {
+        "term": "Opportunity Cost",
+        "definition": "The next best alternative given up when making a choice"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Identify",
+        "instruction": "Name or select the correct answer from given options"
+      },
+      {
+        "commandWord": "Outline",
+        "instruction": "Give main features or general principles in 2-3 sentences"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two ways a textile business in Karachi could add value to cotton. [6 marks]",
+      "marks": 6,
+      "answer": "The textile business could design attractive patterns on the cotton fabric because this makes the product more appealing to customers who are willing to pay higher prices for fashionable designs. The business could also brand the cotton products with a well-known label because customers associate branded products with quality and are prepared to pay premium prices for trusted brands.",
+      "markBreakdown": [
+        "Mark 1: Identify way 1 - attractive designs/patterns",
+        "Mark 2: Explain why designs add value",
+        "Mark 3: Develop explanation of customer willingness to pay more",
+        "Mark 4: Identify way 2 - branding",
+        "Mark 5: Explain why branding adds value",
+        "Mark 6: Develop explanation of premium pricing for brands"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'profit is the aim' - always say 'profit is one of the aims' because businesses have multiple objectives",
+      "Students often confuse stakeholders with shareholders - stakeholders include ALL interested parties, not just owners",
+      "Avoid saying 'primary sector is agriculture' - it includes ALL extraction of natural resources",
+      "Never define added value as 'profit' - it is selling price minus cost of materials only, not all costs",
+      "Students mix up internal and external stakeholders - employees are internal, customers are external"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every paper - learn stakeholder conflicts well",
+      "Always give Pakistani examples when asked for business examples",
+      "Added value questions are common - practice calculating the difference between selling price and material costs",
+      "Business objectives questions often worth 6+ marks in Paper 2"
+    ],
+    "formulas": [
+      "Added Value = Selling Price - Cost of Materials"
+    ],
+    "keyDiagramDescription": "Stakeholder map showing business in center with internal stakeholders (owners, managers, employees) and external stakeholders (customers, suppliers, government, local community) connected with arrows showing their interests"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:51:58.455Z",
+  "updated_at": "2026-04-06T03:51:58.456Z"
+}

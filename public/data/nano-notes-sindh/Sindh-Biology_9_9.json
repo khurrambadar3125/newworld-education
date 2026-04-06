@@ -1,0 +1,110 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "9",
+  "chapter_name": "Transport",
+  "note_data": {
+    "title": "Transport",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Transport is the movement of substances from one place to another in living organisms",
+      "Plants have two main transport systems: Xylem (transports water and minerals upward) and Phloem (transports prepared food)",
+      "Transpiration is the loss of water in the form of water vapors from aerial parts of plants, mainly through stomata",
+      "Root pressure and transpiration pull are the two main forces responsible for water movement in plants",
+      "Blood is the main transport medium in humans consisting of plasma, RBCs, WBCs and platelets",
+      "Heart is a muscular organ with four chambers - two atria and two ventricles",
+      "Single circulation occurs in fish while double circulation occurs in mammals including humans",
+      "Arteries carry blood away from heart, veins carry blood toward heart, capillaries connect arteries and veins",
+      "Lymphatic system helps in drainage of tissue fluid and defense against diseases"
+    ],
+    "definitions": [
+      {
+        "term": "Transport",
+        "definition": "The movement of substances from one place to another in living organisms"
+      },
+      {
+        "term": "Transpiration",
+        "definition": "The loss of water in the form of water vapors from aerial parts of plants, mainly through stomata"
+      },
+      {
+        "term": "Root Pressure",
+        "definition": "The pressure developed in roots due to active absorption of water and minerals from soil"
+      },
+      {
+        "term": "Blood",
+        "definition": "A liquid connective tissue that transports substances throughout the body"
+      },
+      {
+        "term": "Lymph",
+        "definition": "A colorless fluid containing lymphocytes that bathes the tissues and drains through lymphatic vessels"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between arteries and veins (any 3 points)",
+        "answer": "Arteries: carry blood away from heart, have thick muscular walls, no valves (except pulmonary). Veins: carry blood toward heart, have thin walls, have valves to prevent backflow"
+      },
+      {
+        "type": "long",
+        "question": "Describe the structure and function of human heart",
+        "answer": "Heart is a muscular organ with 4 chambers - 2 atria (right and left) and 2 ventricles (right and left). Right atrium receives deoxygenated blood from body, right ventricle pumps it to lungs. Left atrium receives oxygenated blood from lungs, left ventricle pumps it to body. Valves prevent backflow - tricuspid between right atrium and ventricle, bicuspid between left atrium and ventricle. Heart wall has 3 layers: epicardium, myocardium, endocardium. Function is to pump blood throughout body maintaining circulation"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which tissue transports water and minerals in plants?",
+        "options": {
+          "A": "Phloem",
+          "B": "Xylem",
+          "C": "Cambium",
+          "D": "Epidermis"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "How many chambers are present in human heart?",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Which blood vessels have valves?",
+        "options": {
+          "A": "Arteries",
+          "B": "Veins",
+          "C": "Capillaries",
+          "D": "All of these"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse xylem and phloem functions - remember xylem carries water UP, phloem carries food",
+      "Writing veins carry oxygenated blood - remember veins carry deoxygenated blood except pulmonary vein",
+      "Forgetting to mention stomata when defining transpiration",
+      "Confusing single and double circulation - fish have single, mammals have double",
+      "Not drawing proper labels in heart diagram - always label all 4 chambers and major vessels"
+    ],
+    "examTips": [
+      "Heart diagram appears in every BSEK paper - practice drawing with proper labels",
+      "Transport chapter usually has 2-3 MCQs and 1 long question worth 8 marks",
+      "Memorize exact definitions of transpiration, root pressure and blood from textbook",
+      "Differentiation questions between arteries/veins and xylem/phloem are very common",
+      "Always mention Pakistani examples like Indus River for transport in geography context"
+    ],
+    "formulas": [
+      "Rate of transpiration ∝ 1/Humidity",
+      "Rate of transpiration ∝ Temperature"
+    ],
+    "keyDiagram": "Structure of Human Heart showing 4 chambers (right atrium, left atrium, right ventricle, left ventricle), valves (tricuspid, bicuspid), and major blood vessels (aorta, pulmonary artery, pulmonary vein, vena cava). Label direction of blood flow with arrows."
+  },
+  "created_at": "2026-04-06T06:16:35.064Z"
+}

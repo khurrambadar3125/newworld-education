@@ -1,0 +1,106 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "10",
+  "chapter_name": "Gaseous Exchange",
+  "note_data": {
+    "title": "Gaseous Exchange",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Gaseous exchange is the process by which organisms exchange gases with their environment — oxygen is taken in and carbon dioxide is given out",
+      "In humans, gaseous exchange occurs in alveoli through diffusion across respiratory membrane",
+      "Breathing involves inspiration (taking air in) and expiration (giving air out) through muscular movements",
+      "Diaphragm and intercostal muscles are the main breathing muscles that control ventilation",
+      "Hemoglobin in red blood cells transports oxygen from lungs to body tissues and carbon dioxide from tissues to lungs",
+      "Respiratory diseases like asthma, tuberculosis and lung cancer are common in Pakistan due to air pollution in cities like Karachi",
+      "Plants exchange gases through stomata in leaves and lenticels in woody stems",
+      "Fish exchange gases through gills which extract dissolved oxygen from water"
+    ],
+    "definitions": [
+      {
+        "term": "Gaseous Exchange",
+        "definition": "The process by which organisms exchange gases with their environment. Oxygen is taken in and carbon dioxide is given out."
+      },
+      {
+        "term": "Breathing",
+        "definition": "The process of taking air into the lungs (inspiration) and giving out air from the lungs (expiration)."
+      },
+      {
+        "term": "Alveoli",
+        "definition": "Microscopic air sacs in the lungs where gaseous exchange takes place between air and blood."
+      },
+      {
+        "term": "Diaphragm",
+        "definition": "A dome-shaped muscle that separates the thoracic cavity from the abdominal cavity and helps in breathing."
+      },
+      {
+        "term": "Hemoglobin",
+        "definition": "An iron-containing protein in red blood cells that transports oxygen and carbon dioxide."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define gaseous exchange and name the site where it occurs in humans.",
+        "answer": "Gaseous exchange is the process by which organisms exchange gases with their environment. Oxygen is taken in and carbon dioxide is given out. In humans, it occurs in alveoli of lungs."
+      },
+      {
+        "type": "long",
+        "question": "Describe the mechanism of breathing in humans. (5 marks)",
+        "answer": "Breathing involves inspiration and expiration. During inspiration: diaphragm contracts and moves down, intercostal muscles contract lifting ribs up and out, chest cavity volume increases, air pressure decreases, air rushes into lungs. During expiration: diaphragm relaxes and moves up, intercostal muscles relax, ribs move down and in, chest cavity volume decreases, air pressure increases, air is pushed out of lungs. This process is controlled by respiratory center in medulla oblongata."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Gaseous exchange in humans occurs in:",
+        "options": {
+          "A": "Bronchi",
+          "B": "Alveoli",
+          "C": "Trachea",
+          "D": "Bronchioles"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The main breathing muscle is:",
+        "options": {
+          "A": "Intercostal muscles",
+          "B": "Abdominal muscles",
+          "C": "Diaphragm",
+          "D": "Pectoral muscles"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Oxygen is transported in blood by:",
+        "options": {
+          "A": "Plasma",
+          "B": "White blood cells",
+          "C": "Platelets",
+          "D": "Hemoglobin"
+        },
+        "correct": "D"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse breathing with respiration — breathing is physical movement of air, respiration includes cellular processes",
+      "Many write 'bronchus' instead of 'alveoli' as the site of gaseous exchange",
+      "Students forget to mention both inspiration AND expiration when describing breathing mechanism",
+      "Common error is writing that oxygen is transported by plasma instead of hemoglobin",
+      "Students often skip drawing proper labels in alveolus diagram"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 short + 1 long question in every BSEK paper",
+      "Always draw and label the alveolus diagram — it appears in 80% of papers",
+      "Memorize the exact definition of gaseous exchange — asked in every paper",
+      "Practice drawing respiratory system diagram with proper labels",
+      "Remember to mention Pakistani context diseases when asked about respiratory disorders"
+    ],
+    "formulas": [],
+    "keyDiagram": "Structure of Alveolus showing: alveolar wall, capillary network, red blood cells, direction of oxygen and carbon dioxide movement, and labels for all parts. Also practice complete respiratory system diagram from nose to alveoli."
+  },
+  "created_at": "2026-04-06T06:16:57.291Z"
+}

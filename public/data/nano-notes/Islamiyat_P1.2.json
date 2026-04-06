@@ -1,0 +1,95 @@
+{
+  "subject": "Islamiyat",
+  "subject_code": "2058",
+  "level": "O Level",
+  "theme": "Paper 1",
+  "chapter_id": "P1.2",
+  "chapter_name": "History and Importance of the Quran",
+  "note_data": {
+    "title": "History and Importance of the Quran",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Revelation (Wahy)** began when Prophet Muhammad was 40 years old in the cave of Hira during the month of Ramadan",
+      "The **first revelation** was the first five verses of Surah Al-Alaq revealed by Angel Jibril (Gabriel)",
+      "The Quran was revealed over a **period of 23 years** (13 years in Mecca and 10 years in Medina)",
+      "**Compilation** under Abu Bakr was undertaken to preserve the Quran after many huffaz died in the Battle of Yamama",
+      "**Standardization** under Uthman involved creating one official copy (mushaf) and burning all variant copies to prevent confusion",
+      "The Quran was **preserved through memorization** (huffaz) and **written records** on various materials like palm leaves and stones",
+      "The Quran is the **final revelation** to mankind and serves as guidance for all aspects of life",
+      "It contains **114 surahs** with verses revealed in response to specific situations (Asbab al-Nuzul)",
+      "The Quran's **language and style** are considered inimitable (I'jaz) proving its divine origin"
+    ],
+    "definitions": [
+      {
+        "term": "Wahy",
+        "definition": "Divine revelation sent by Allah through Angel Jibril to Prophet Muhammad"
+      },
+      {
+        "term": "Huffaz",
+        "definition": "People who have memorized the entire Quran by heart"
+      },
+      {
+        "term": "Mushaf",
+        "definition": "The compiled written copy of the Quran in book form"
+      },
+      {
+        "term": "Asbab al-Nuzul",
+        "definition": "The occasions or circumstances of revelation explaining when and why verses were revealed"
+      },
+      {
+        "term": "I'jaz",
+        "definition": "The inimitability of the Quran referring to its unique linguistic excellence that cannot be replicated by humans"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give details of the process step by step with WHO, WHAT, WHEN, WHERE"
+      },
+      {
+        "commandWord": "Outline",
+        "instruction": "Give main points in chronological order without detailed explanation"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Describe the compilation of the Quran during the time of Abu Bakr. [4]",
+      "marks": 4,
+      "answer": "During Abu Bakr's caliphate, many huffaz (memorizers of the Quran) died in the Battle of Yamama. Umar ibn al-Khattab approached Abu Bakr expressing concern about the potential loss of the Quran. Abu Bakr initially hesitated as Prophet Muhammad had not done this, but then agreed it was necessary. He appointed Zayd ibn Thabit to collect the Quran from written materials and the memories of companions. Zayd gathered verses from palm leaves, stones, and bones, and verified each verse with two reliable witnesses who had heard it directly from the Prophet.",
+      "markBreakdown": [
+        "Mark 1: Many huffaz died in Battle of Yamama",
+        "Mark 2: Umar suggested compilation to Abu Bakr",
+        "Mark 3: Zayd ibn Thabit was appointed to collect the Quran",
+        "Mark 4: Verses collected from written materials and verified by witnesses"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'the Quran was written down immediately' — it was initially preserved through memorization and scattered written materials",
+      "Students often confuse Abu Bakr's compilation with Uthman's standardization — Abu Bakr collected, Uthman standardized",
+      "Don't say 'Angel Gabriel' — use 'Angel Jibril' in Islamic context",
+      "Never claim the Quran was changed during compilation — it was preserved exactly as revealed",
+      "Students forget to mention the verification process during compilation which is crucial for marks"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 1 questions about early Islamic history",
+      "Always mention specific names like Zayd ibn Thabit and Umar for full marks",
+      "Questions often link compilation to preservation — show the connection",
+      "Use chronological order when describing the compilation process"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Timeline showing revelation (610-632 CE), compilation under Abu Bakr (633-634 CE), and standardization under Uthman (644-656 CE) with key events marked"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:44:09.897Z",
+  "updated_at": "2026-04-05T20:44:09.897Z"
+}

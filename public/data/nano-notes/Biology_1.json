@@ -1,0 +1,97 @@
+{
+  "subject": "Biology",
+  "subject_code": "5090",
+  "level": "O Level",
+  "theme": "Cell Biology",
+  "chapter_id": "1",
+  "chapter_name": "Cell structure and organisation",
+  "note_data": {
+    "title": "Cell structure and organisation",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **cell** is the basic unit of life that can exist as a single-celled organism or as part of a multicellular organism",
+      "**Cell membrane** is a partially permeable barrier that controls the movement of substances into and out of the cell",
+      "**Nucleus** contains chromosomes made of DNA which control the activities of the cell",
+      "**Cytoplasm** is a jelly-like substance where chemical reactions take place",
+      "**Mitochondria** are organelles where aerobic respiration occurs to release energy",
+      "**Chloroplasts** contain chlorophyll and are the site of photosynthesis in plant cells",
+      "A **tissue** is a group of similar cells working together to perform the same function",
+      "An **organ** is made up of different tissues working together to perform a particular function",
+      "**Magnification** = size of image ÷ actual size of object",
+      "Plant cells have a **cell wall** made of cellulose, a **permanent vacuole** filled with cell sap, and **chloroplasts**"
+    ],
+    "definitions": [
+      {
+        "term": "Cell",
+        "definition": "The basic unit of life"
+      },
+      {
+        "term": "Tissue",
+        "definition": "A group of similar cells working together to perform the same function"
+      },
+      {
+        "term": "Organ",
+        "definition": "A group of different tissues working together to perform a particular function"
+      },
+      {
+        "term": "Organ system",
+        "definition": "A group of organs working together to perform a particular function"
+      },
+      {
+        "term": "Organelle",
+        "definition": "A structure inside a cell that has a specific function"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between two things"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly and include units in your answer"
+      }
+    ],
+    "modelAnswer": {
+      "question": "State three differences between plant and animal cells. [3]",
+      "marks": 3,
+      "answer": "Plant cells have a cell wall made of cellulose, animal cells do not. Plant cells have chloroplasts, animal cells do not. Plant cells have a permanent vacuole, animal cells have small temporary vacuoles.",
+      "markBreakdown": [
+        "Mark 1: Cell wall present in plants only",
+        "Mark 2: Chloroplasts present in plants only",
+        "Mark 3: Permanent vacuole in plants vs small/temporary vacuoles in animals"
+      ]
+    },
+    "commonMistakes": [
+      "Never say cell wall is made of 'cellulose fiber' — always say 'cellulose'",
+      "Students often confuse cell membrane with cell wall — cell membrane is in ALL cells, cell wall only in plants",
+      "Don't say chloroplasts are 'green' — say they 'contain chlorophyll'",
+      "Never write 'times bigger' in magnification — use 'times' or 'x' only",
+      "Students forget to show working in magnification calculations"
+    ],
+    "examinerTips": [
+      "This topic appears in every paper — especially plant vs animal cell differences",
+      "Always draw labelled diagrams with straight lines and no arrowheads for labels",
+      "Magnification calculations are common — remember to show all working",
+      "Learn the hierarchy: cell → tissue → organ → organ system → organism"
+    ],
+    "formulas": [
+      "Magnification = size of image ÷ actual size of object"
+    ],
+    "keyDiagramDescription": "Plant and animal cell diagrams showing nucleus, cytoplasm, cell membrane, mitochondria. Plant cell additionally shows cell wall, chloroplasts, and permanent vacuole. All parts must be clearly labelled."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:26:02.856Z",
+  "updated_at": "2026-04-05T21:26:02.857Z"
+}

@@ -1,0 +1,96 @@
+{
+  "subject": "Geography",
+  "subject_code": "2217",
+  "level": "O Level",
+  "theme": "Theme 2: The Natural Environment",
+  "chapter_id": "2.1",
+  "chapter_name": "Earthquakes and Volcanoes",
+  "note_data": {
+    "title": "Earthquakes and Volcanoes",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Earthquakes** occur when tectonic plates move suddenly along fault lines, releasing stored energy as seismic waves",
+      "**Volcanoes** form where molten rock (magma) reaches the Earth's surface through weaknesses in the crust",
+      "Most earthquakes and volcanoes occur at **plate boundaries** where tectonic plates meet and interact",
+      "**Destructive plate boundaries** create the most powerful earthquakes and explosive volcanoes due to oceanic plates subducting beneath continental plates",
+      "**Constructive plate boundaries** produce less violent volcanic activity as plates move apart and magma rises to fill the gap",
+      "**Conservative plate boundaries** cause earthquakes but no volcanic activity as plates slide past each other horizontally",
+      "The **focus** is the point underground where an earthquake originates, while the **epicentre** is the point directly above on the surface",
+      "Earthquake magnitude is measured using the **Richter scale** from 1-10, with each number representing a ten-fold increase in energy",
+      "**Primary effects** of earthquakes include building collapse and ground shaking, while **secondary effects** include tsunamis and landslides",
+      "Pakistan experiences earthquakes along the **collision boundary** between the Indo-Australian and Eurasian plates, particularly in northern regions like Kashmir"
+    ],
+    "definitions": [
+      {
+        "term": "Tectonic plates",
+        "definition": "Large sections of the Earth's crust that move slowly on the semi-molten mantle beneath"
+      },
+      {
+        "term": "Focus",
+        "definition": "The point underground where an earthquake originates and energy is first released"
+      },
+      {
+        "term": "Epicentre",
+        "definition": "The point on the Earth's surface directly above the focus of an earthquake"
+      },
+      {
+        "term": "Magma",
+        "definition": "Molten rock found beneath the Earth's surface that becomes lava when it reaches the surface"
+      },
+      {
+        "term": "Subduction",
+        "definition": "The process where an oceanic plate moves beneath a continental plate at a destructive plate boundary"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Say what happens in sequence. Use terms like 'first', 'then', 'finally'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between two things"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why earthquakes occur at destructive plate boundaries. [4 marks]",
+      "marks": 4,
+      "answer": "At destructive plate boundaries, the oceanic plate moves towards the continental plate because it is denser. The oceanic plate is forced to subduct beneath the continental plate. As the plates move, they stick together due to friction, building up pressure and stress. When the pressure becomes too great, the plates suddenly slip, releasing energy as an earthquake.",
+      "markBreakdown": [
+        "Mark 1: Oceanic plate moves towards continental plate/is denser",
+        "Mark 2: Oceanic plate subducts beneath continental plate",
+        "Mark 3: Friction causes plates to stick and pressure builds up",
+        "Mark 4: Sudden release of pressure/energy causes earthquake"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'plates crash into each other' — always say 'plates converge' or 'move towards each other'",
+      "Students often confuse focus with epicentre — focus is underground, epicentre is on the surface",
+      "Never say volcanoes 'explode' — say they 'erupt' with varying degrees of violence",
+      "Students mix up primary and secondary effects — primary effects happen immediately, secondary effects happen afterwards",
+      "Don't say earthquakes are 'caused by plates moving' — they are caused by the sudden release of pressure when plates stick then slip"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every Paper 2 exam — learn plate boundary diagrams thoroughly",
+      "Always draw labelled diagrams for plate boundary questions to earn full marks",
+      "Use specific examples like the 2005 Kashmir earthquake (magnitude 7.6) for Pakistan context",
+      "Learn the difference between constructive, destructive and conservative boundaries — this is frequently tested"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Cross-section diagram showing destructive plate boundary with oceanic plate subducting beneath continental plate, including labels for focus, epicentre, volcano formation, and direction of plate movement"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:56:58.999Z",
+  "updated_at": "2026-04-06T03:56:58.999Z"
+}

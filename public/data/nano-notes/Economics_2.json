@@ -1,0 +1,99 @@
+{
+  "subject": "Economics",
+  "subject_code": "2281",
+  "level": "O Level",
+  "theme": "Microeconomics",
+  "chapter_id": "2",
+  "chapter_name": "The Allocation of Resources",
+  "note_data": {
+    "title": "The Allocation of Resources",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Demand** is the quantity of a good or service that consumers are willing and able to buy at different prices during a given time period",
+      "**Supply** is the quantity of a good or service that producers are willing and able to sell at different prices during a given time period",
+      "**Market equilibrium** occurs where demand equals supply, determining the market price and quantity sold",
+      "**Price elasticity of demand** measures the responsiveness of quantity demanded to a change in price",
+      "When demand is **price elastic**, percentage change in quantity demanded is greater than percentage change in price",
+      "When demand is **price inelastic**, percentage change in quantity demanded is less than percentage change in price",
+      "**Income elasticity of demand** measures the responsiveness of quantity demanded to a change in consumer income",
+      "**Cross elasticity of demand** measures the responsiveness of quantity demanded for one good to a change in price of another good",
+      "**Price elasticity of supply** measures the responsiveness of quantity supplied to a change in price"
+    ],
+    "definitions": [
+      {
+        "term": "Demand",
+        "definition": "The quantity of a good or service that consumers are willing and able to buy at different prices during a given time period"
+      },
+      {
+        "term": "Supply",
+        "definition": "The quantity of a good or service that producers are willing and able to sell at different prices during a given time period"
+      },
+      {
+        "term": "Market equilibrium",
+        "definition": "The point where demand equals supply, determining the market price and quantity traded"
+      },
+      {
+        "term": "Price elasticity of demand",
+        "definition": "A measure of the responsiveness of quantity demanded to a change in price"
+      },
+      {
+        "term": "Substitute goods",
+        "definition": "Goods that can be used instead of each other to satisfy the same want"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working clearly. Use the elasticity formula and substitute values"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Use cause and effect chains. Link concepts together with 'therefore' or 'as a result'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Calculate the price elasticity of demand if the price of rice in Pakistan increases from Rs.80 per kg to Rs.100 per kg and quantity demanded falls from 500kg to 400kg per week.",
+      "marks": 3,
+      "answer": "PED = % change in quantity demanded ÷ % change in price. % change in quantity demanded = (400-500)/500 × 100 = -20%. % change in price = (100-80)/80 × 100 = 25%. PED = -20% ÷ 25% = -0.8. The demand for rice is price inelastic because PED is less than 1 in absolute terms.",
+      "markBreakdown": [
+        "Mark 1: Correct formula stated",
+        "Mark 2: Correct calculation showing working",
+        "Mark 3: Correct interpretation of result"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'demand increases' when price falls — always say 'quantity demanded increases'",
+      "Students often forget to include 'willing AND able' in demand/supply definitions",
+      "Never ignore the negative sign in PED calculations — always interpret the absolute value",
+      "Students confuse movement along curves with shifts of curves",
+      "Never say elasticity measures 'how much' demand changes — always say 'responsiveness' or 'sensitivity'"
+    ],
+    "examinerTips": [
+      "Elasticity calculations appear frequently in Paper 2 — always show full working",
+      "Always draw and label diagrams for supply and demand questions",
+      "Use specific examples from Pakistan (wheat, rice, textiles) to illustrate concepts",
+      "Remember to interpret elasticity values — don't just calculate them"
+    ],
+    "formulas": [
+      "PED = % change in quantity demanded ÷ % change in price",
+      "YED = % change in quantity demanded ÷ % change in income",
+      "XED = % change in quantity demanded of good A ÷ % change in price of good B",
+      "PES = % change in quantity supplied ÷ % change in price"
+    ],
+    "keyDiagramDescription": "Supply and demand curves intersecting at equilibrium point, with price on y-axis and quantity on x-axis. Label curves as S and D, equilibrium point as E, equilibrium price as Pe and equilibrium quantity as Qe."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:33:22.381Z",
+  "updated_at": "2026-04-06T03:33:22.381Z"
+}

@@ -1,0 +1,111 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "3",
+  "chapter_name": "Periodic Table and Periodicity of Properties",
+  "note_data": {
+    "title": "Periodic Table and Periodicity of Properties",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Periodic Table — A table in which elements are arranged in order of increasing atomic number",
+      "Modern Periodic Law — Physical and chemical properties of elements are periodic functions of their atomic numbers",
+      "Period — A horizontal row in the periodic table containing elements with same number of electron shells",
+      "Group/Family — A vertical column in periodic table containing elements with same number of valence electrons",
+      "Alkali metals (Group IA) are most reactive metals, stored under kerosene to prevent reaction with air",
+      "Noble gases (Group VIIIA) are chemically inert due to complete outer electron shells",
+      "Atomic radius decreases across a period due to increasing nuclear charge",
+      "Ionization energy increases across a period and decreases down a group",
+      "Electronegativity increases across a period and decreases down a group",
+      "Metallic character decreases across a period and increases down a group"
+    ],
+    "definitions": [
+      {
+        "term": "Periodic Table",
+        "definition": "A table in which elements are arranged in order of increasing atomic number"
+      },
+      {
+        "term": "Period",
+        "definition": "A horizontal row in the periodic table containing elements with same number of electron shells"
+      },
+      {
+        "term": "Group",
+        "definition": "A vertical column in periodic table containing elements with same number of valence electrons"
+      },
+      {
+        "term": "Ionization Energy",
+        "definition": "The minimum energy required to remove the most loosely bound electron from an isolated gaseous atom"
+      },
+      {
+        "term": "Electronegativity",
+        "definition": "The ability of an atom to attract shared pair of electrons in a covalent bond"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Write down the electronic configuration of sodium (Na) and chlorine (Cl).",
+        "answer": "Na (11): 2, 8, 1\nCl (17): 2, 8, 7\nSodium has 1 valence electron, Chlorine has 7 valence electrons."
+      },
+      {
+        "type": "long",
+        "question": "Explain the trend of atomic radius in periodic table with examples.",
+        "answer": "Atomic radius decreases across a period: Nuclear charge increases while electron shells remain same, pulling electrons closer. Example: Na > Mg > Al > Si.\nAtomic radius increases down a group: New electron shells are added, increasing distance from nucleus. Example: Li < Na < K < Rb.\nThis trend helps predict chemical properties and bonding behavior of elements."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which element has the highest electronegativity?",
+        "options": {
+          "A": "Oxygen",
+          "B": "Fluorine",
+          "C": "Nitrogen",
+          "D": "Chlorine"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Elements in the same group have the same:",
+        "options": {
+          "A": "Atomic number",
+          "B": "Mass number",
+          "C": "Number of electron shells",
+          "D": "Number of valence electrons"
+        },
+        "correct": "D"
+      },
+      {
+        "question": "Which group contains noble gases?",
+        "options": {
+          "A": "Group IA",
+          "B": "Group IIA",
+          "C": "Group VIIA",
+          "D": "Group VIIIA"
+        },
+        "correct": "D"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse periods with groups - remember periods are horizontal rows",
+      "Mixing up trends - atomic radius decreases across period but ionization energy increases",
+      "Writing wrong electronic configurations - always count electrons equal to atomic number",
+      "Forgetting that noble gases are inert, not reactive",
+      "Confusing valence electrons with total electrons in an atom"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question in BSEK papers",
+      "Memorize electronic configurations of first 20 elements - frequently tested",
+      "Practice drawing periodic table trends - appears every year",
+      "Learn properties of specific groups (alkali metals, halogens, noble gases)",
+      "Remember exact definitions - BSEK marks are deducted for incorrect wording"
+    ],
+    "formulas": [
+      "Electronic configuration: 2n² (maximum electrons in shell)",
+      "Valence electrons = Group number (for main groups)"
+    ],
+    "keyDiagram": "Modern Periodic Table showing 18 groups and 7 periods, with s, p, d, f blocks clearly marked. Must show increasing atomic number from left to right, and indicate trends of atomic radius, ionization energy, and electronegativity with arrows."
+  },
+  "created_at": "2026-04-06T06:08:17.005Z"
+}

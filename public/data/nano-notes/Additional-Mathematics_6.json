@@ -1,0 +1,96 @@
+{
+  "subject": "Additional Mathematics",
+  "subject_code": "4037",
+  "level": "O Level",
+  "theme": "Applied Mathematics",
+  "chapter_id": "6",
+  "chapter_name": "Vectors",
+  "note_data": {
+    "title": "Vectors",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **vector** has both magnitude and direction, represented as a column vector or using i, j notation",
+      "The **magnitude** of vector a is written as |a| and calculated using Pythagoras' theorem",
+      "**Position vectors** describe the position of a point relative to the origin O",
+      "Vector **addition** follows the triangle rule: a + b = b + a (commutative property)",
+      "**Scalar multiplication** ka multiplies the magnitude by |k| and reverses direction if k < 0",
+      "Two vectors are **parallel** if one is a scalar multiple of the other: a = kb",
+      "The **zero vector** 0 has magnitude zero and undefined direction",
+      "Vector **subtraction** a - b represents the vector from point B to point A",
+      "**Unit vectors** have magnitude 1 and show direction only"
+    ],
+    "definitions": [
+      {
+        "term": "Vector",
+        "definition": "A quantity that has both magnitude and direction"
+      },
+      {
+        "term": "Magnitude",
+        "definition": "The length or size of a vector, always positive or zero"
+      },
+      {
+        "term": "Position vector",
+        "definition": "A vector that describes the position of a point relative to a fixed origin"
+      },
+      {
+        "term": "Unit vector",
+        "definition": "A vector with magnitude 1 that indicates direction only"
+      },
+      {
+        "term": "Parallel vectors",
+        "definition": "Vectors that have the same or opposite direction, where one is a scalar multiple of another"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Find",
+        "instruction": "Calculate the exact value showing all working steps"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Prove the given result by clear mathematical steps"
+      },
+      {
+        "commandWord": "State",
+        "instruction": "Give the answer directly without working or explanation"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Given that a = (3, -1) and b = (-2, 4), find |a + b| and state whether vectors a and 2a - 6b are parallel.",
+      "marks": 4,
+      "answer": "a + b = (3, -1) + (-2, 4) = (1, 3)\n|a + b| = √(1² + 3²) = √10\n2a - 6b = 2(3, -1) - 6(-2, 4) = (6, -2) - (-12, 24) = (18, -26)\nSince (18, -26) is not a scalar multiple of (3, -1), the vectors are not parallel.",
+      "markBreakdown": [
+        "Mark 1: Correct addition a + b = (1, 3)",
+        "Mark 2: Correct magnitude |a + b| = √10",
+        "Mark 3: Correct calculation of 2a - 6b = (18, -26)",
+        "Mark 4: Correct conclusion that vectors are not parallel"
+      ]
+    },
+    "commonMistakes": [
+      "Never write vectors without brackets - always use (x, y) or column vector notation",
+      "Students often forget to take the square root when finding magnitude",
+      "Writing |a| as negative - magnitude is always positive or zero",
+      "Confusing vector addition with scalar multiplication",
+      "Not showing that vectors are parallel by finding the scalar multiple k"
+    ],
+    "examinerTips": [
+      "Vector questions appear in every Paper 2 - usually worth 8-12 marks total",
+      "Always draw a clear diagram showing vectors as directed line segments",
+      "Show all steps when calculating magnitude using Pythagoras",
+      "For parallel vectors, always find the value of k where a = kb"
+    ],
+    "formulas": [
+      "|a| = √(x² + y²) for vector a = (x, y)",
+      "a + b = (x₁ + x₂, y₁ + y₂)",
+      "ka = (kx, ky) for scalar k",
+      "Unit vector â = a/|a|"
+    ],
+    "keyDiagramDescription": "Vector triangle showing addition a + b with vectors drawn as arrows from tail to head, forming a closed triangle. Include coordinate axes and label all vectors clearly."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:17:04.589Z",
+  "updated_at": "2026-04-06T04:17:04.589Z"
+}

@@ -1,0 +1,95 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "AS Computer Science",
+  "chapter_id": "AS2",
+  "chapter_name": "Communication",
+  "note_data": {
+    "title": "Communication",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **network** is a collection of interconnected devices that can communicate and share resources",
+      "A **protocol** is a set of rules that governs how data is transmitted across a network",
+      "**TCP/IP** is a suite of protocols where TCP handles reliable data transmission and IP handles addressing and routing",
+      "**Packet switching** breaks data into packets that are sent independently through the network and reassembled at destination",
+      "**Circuit switching** establishes a dedicated communication path between sender and receiver for the entire duration of transmission",
+      "TCP provides **error checking** and **flow control** while UDP provides faster transmission without error checking",
+      "IP addresses uniquely identify devices on a network using **IPv4** (32-bit) or **IPv6** (128-bit) format",
+      "**Routers** forward packets between different networks while **switches** connect devices within the same network",
+      "Packet switching allows **efficient use of network resources** as multiple communications can share the same physical links"
+    ],
+    "definitions": [
+      {
+        "term": "Protocol",
+        "definition": "A set of rules that defines how data is transmitted across a network"
+      },
+      {
+        "term": "Packet switching",
+        "definition": "A method of data transmission where data is broken into packets that are sent independently and reassembled at the destination"
+      },
+      {
+        "term": "Circuit switching",
+        "definition": "A method of communication where a dedicated path is established between sender and receiver for the entire duration of transmission"
+      },
+      {
+        "term": "TCP/IP",
+        "definition": "A suite of communication protocols where TCP ensures reliable data transmission and IP handles addressing and routing"
+      },
+      {
+        "term": "Router",
+        "definition": "A network device that forwards data packets between different networks using IP addresses"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give differences between two concepts using comparative language (whereas, while, unlike)"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give the main features or characteristics in logical sequence"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the difference between packet switching and circuit switching. [4 marks]",
+      "marks": 4,
+      "answer": "In packet switching, data is broken into packets that are sent independently through the network and reassembled at the destination. This allows multiple communications to share the same physical links efficiently. In circuit switching, a dedicated communication path is established between sender and receiver for the entire duration of transmission. This reserves the full bandwidth for that communication but may waste resources when no data is being sent.",
+      "markBreakdown": [
+        "Mark 1: Data broken into packets in packet switching",
+        "Mark 2: Packets sent independently/reassembled at destination",
+        "Mark 3: Dedicated path established in circuit switching",
+        "Mark 4: Comparison of resource usage/efficiency"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'TCP/IP is a protocol' — always say 'TCP/IP is a suite of protocols'",
+      "Students often confuse routers with switches — routers work between networks, switches within networks",
+      "Don't say packets 'follow the same route' — they can take different paths in packet switching",
+      "Never describe IP as 'Internet Protocol address' — IP stands for Internet Protocol, the address is separate",
+      "Students mix up TCP and UDP features — TCP has error checking, UDP does not"
+    ],
+    "examinerTips": [
+      "Communication appears in Paper 2 almost every year",
+      "Always distinguish between TCP and UDP when discussing protocols",
+      "Draw network diagrams showing routers, switches and connections for full marks",
+      "Use comparative language when asked to compare switching methods"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Network topology diagram showing devices connected through switches and routers, with packet flow paths illustrated between source and destination"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:14:33.253Z",
+  "updated_at": "2026-04-06T05:14:33.253Z"
+}

@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Mathematics",
+  "subject_code": "9709",
+  "level": "A Level",
+  "theme": "Pure Mathematics 1",
+  "chapter_id": "P1.6",
+  "chapter_name": "Series",
+  "note_data": {
+    "title": "Series",
+    "readTime": "8 min",
+    "keyPoints": [
+      "An **arithmetic series** has constant common difference d between consecutive terms, with nth term Un = a + (n-1)d",
+      "The sum of the first n terms of an arithmetic series is **Sn = n/2[2a + (n-1)d]** or **Sn = n/2(first term + last term)**",
+      "A **geometric series** has constant common ratio r between consecutive terms, with nth term Un = ar^(n-1)",
+      "The sum of the first n terms of a geometric series is **Sn = a(1-r^n)/(1-r)** when r ≠ 1, or **Sn = na** when r = 1",
+      "A geometric series converges to a **sum to infinity S∞ = a/(1-r)** if and only if **|r| < 1**",
+      "The **binomial series** expansion is **(1+x)^n = 1 + nx + n(n-1)x²/2! + n(n-1)(n-2)x³/3! + ...** valid when |x| < 1",
+      "For negative or fractional powers, the binomial series is an **infinite series** that converges only when **|x| < 1**",
+      "When finding the sum to infinity, first check that **|r| < 1**, otherwise the series diverges and has no finite sum"
+    ],
+    "definitions": [
+      {
+        "term": "Arithmetic Series",
+        "definition": "A series where each term is obtained by adding a constant value (common difference) to the previous term"
+      },
+      {
+        "term": "Geometric Series",
+        "definition": "A series where each term is obtained by multiplying the previous term by a constant value (common ratio)"
+      },
+      {
+        "term": "Sum to Infinity",
+        "definition": "The value that an infinite geometric series approaches when |r| < 1, given by S∞ = a/(1-r)"
+      },
+      {
+        "term": "Common Ratio",
+        "definition": "The constant value r by which each term is multiplied to get the next term in a geometric sequence"
+      },
+      {
+        "term": "Convergent Series",
+        "definition": "An infinite series that approaches a finite limit as the number of terms approaches infinity"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Find",
+        "instruction": "Calculate the exact value using the appropriate formula and show all working steps clearly"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Prove the given result by starting with known formulas and manipulating algebraically to reach the required expression"
+      },
+      {
+        "commandWord": "Determine",
+        "instruction": "Find the value by setting up and solving an equation, clearly stating any conditions"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A geometric series has first term 8 and common ratio -1/2. Find (i) the 6th term, (ii) the sum of the first 10 terms, (iii) the sum to infinity.",
+      "marks": 6,
+      "answer": "(i) U6 = ar^5 = 8 × (-1/2)^5 = 8 × (-1/32) = -1/4\n(ii) S10 = a(1-r^10)/(1-r) = 8(1-(-1/2)^10)/(1-(-1/2)) = 8(1-1/1024)/(3/2) = 8 × (1023/1024) × (2/3) = 5.328125\n(iii) Since |r| = 1/2 < 1, S∞ = a/(1-r) = 8/(1-(-1/2)) = 8/(3/2) = 16/3",
+      "markBreakdown": [
+        "Mark 1: Correct formula Un = ar^(n-1) and calculation of U6",
+        "Mark 2: Correct finite sum formula and substitution",
+        "Mark 3: Correct calculation of S10",
+        "Mark 4: Check |r| < 1 condition",
+        "Mark 5: Correct sum to infinity formula",
+        "Mark 6: Correct calculation of S∞"
+      ]
+    },
+    "commonMistakes": [
+      "Never write S∞ without first checking |r| < 1 — always verify the convergence condition",
+      "Students often confuse arithmetic and geometric formulas — check whether you add or multiply to get the next term",
+      "Never use Sn = na for geometric series — this only applies when r = 1 exactly",
+      "Students forget to use brackets with negative ratios — (-1/2)^5 ≠ -1/2^5",
+      "Never assume a series converges — always state and verify the condition |r| < 1 for sum to infinity questions"
+    ],
+    "examinerTips": [
+      "Series questions appear in every Paper 1, usually worth 8-12 marks total",
+      "Always identify the type of series first before selecting the appropriate formula",
+      "Show the convergence check |r| < 1 explicitly for full marks in sum to infinity questions",
+      "In binomial expansion questions, state the validity condition |x| < 1 for full marks"
+    ],
+    "formulas": [
+      "Arithmetic: Un = a + (n-1)d, Sn = n/2[2a + (n-1)d]",
+      "Geometric: Un = ar^(n-1), Sn = a(1-r^n)/(1-r), S∞ = a/(1-r) when |r| < 1",
+      "Binomial: (1+x)^n = 1 + nx + n(n-1)x²/2! + ... when |x| < 1"
+    ],
+    "keyDiagramDescription": "No standard diagram required, but clearly label terms in sequence notation: U1, U2, U3, ... or a, a+d, a+2d, ... for arithmetic sequences"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:49:52.461Z",
+  "updated_at": "2026-04-06T04:49:52.461Z"
+}

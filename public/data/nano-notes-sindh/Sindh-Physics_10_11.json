@@ -1,0 +1,112 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "11",
+  "chapter_name": "Heat",
+  "note_data": {
+    "title": "Heat",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Heat is a form of energy that flows from hot body to cold body due to temperature difference",
+      "Temperature is the degree of hotness or coldness of a body measured on a definite scale",
+      "Specific heat capacity is the amount of heat required to raise the temperature of unit mass of a substance through 1°C",
+      "Heat capacity is the amount of heat required to raise the temperature of the whole body through 1°C",
+      "Latent heat of fusion is the amount of heat required to convert unit mass of solid into liquid at constant temperature",
+      "Latent heat of vaporization is the amount of heat required to convert unit mass of liquid into vapour at constant temperature",
+      "Heat is transferred by three methods: conduction, convection and radiation",
+      "Good conductors like metals have free electrons which transfer heat energy quickly",
+      "Convection occurs in liquids and gases due to density differences caused by heating",
+      "All hot bodies emit heat radiations which travel at the speed of light"
+    ],
+    "definitions": [
+      {
+        "term": "Heat",
+        "definition": "Heat is a form of energy that flows from a hot body to a cold body when they are in thermal contact."
+      },
+      {
+        "term": "Temperature",
+        "definition": "Temperature is the degree of hotness or coldness of a body measured on a definite scale like Celsius or Fahrenheit."
+      },
+      {
+        "term": "Specific Heat Capacity",
+        "definition": "Specific heat capacity of a substance is the amount of heat required to raise the temperature of unit mass of that substance through 1°C."
+      },
+      {
+        "term": "Thermal Equilibrium",
+        "definition": "Two bodies are said to be in thermal equilibrium when there is no net flow of heat between them."
+      },
+      {
+        "term": "Latent Heat",
+        "definition": "Latent heat is the amount of heat required to change the state of unit mass of a substance at constant temperature and pressure."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between heat and temperature.",
+        "answer": "Heat is a form of energy that flows due to temperature difference while temperature is degree of hotness. Heat depends on mass while temperature does not. Heat is measured in joules while temperature in °C."
+      },
+      {
+        "type": "long",
+        "question": "Explain the three methods of heat transfer with examples from daily life.",
+        "answer": "1) Conduction: Heat transfer through solids without movement of particles. Example: heating of spoon in hot tea. 2) Convection: Heat transfer in fluids due to movement of heated particles. Example: sea breeze in Karachi. 3) Radiation: Heat transfer through electromagnetic waves. Example: heat from sun reaching earth. Each method has specific applications in daily life and industries."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The SI unit of specific heat capacity is:",
+        "options": {
+          "A": "J/kg",
+          "B": "J/kg°C",
+          "C": "J/°C",
+          "D": "cal/g°C"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Heat transfer in solids mainly occurs by:",
+        "options": {
+          "A": "Convection",
+          "B": "Radiation",
+          "C": "Conduction",
+          "D": "All three"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The latent heat of fusion of ice is:",
+        "options": {
+          "A": "80 cal/g",
+          "B": "540 cal/g",
+          "C": "1 cal/g°C",
+          "D": "100 cal/g"
+        },
+        "correct": "A"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse heat with temperature - remember heat is energy, temperature is degree",
+      "Forgetting to write units in numerical problems (J, cal, J/kg°C)",
+      "Mixing up latent heat of fusion (80 cal/g) with vaporization (540 cal/g)",
+      "Not mentioning 'at constant temperature' when defining latent heat",
+      "Drawing conduction diagram without showing particle vibrations"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 short question in every BSEK paper",
+      "Numerical problems on Q = mcΔT appear frequently - memorize the formula",
+      "Heat transfer methods diagram appears every 2-3 years",
+      "Always define terms exactly as given in STBB textbook",
+      "Practice numerical problems on specific heat and latent heat calculations"
+    ],
+    "formulas": [
+      "Q = mcΔT (Heat = mass × specific heat × temperature change)",
+      "Q = mL (Heat = mass × latent heat)",
+      "C = mc (Heat capacity = mass × specific heat capacity)"
+    ],
+    "keyDiagram": "Heat transfer methods diagram showing: 1) Conduction in metal rod with particles vibrating 2) Convection in water with circulation arrows 3) Radiation from sun to earth with wave lines. Label each method clearly with examples."
+  },
+  "created_at": "2026-04-06T06:04:28.417Z"
+}

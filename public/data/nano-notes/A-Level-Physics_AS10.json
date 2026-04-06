@@ -1,0 +1,101 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "AS Waves and Electricity",
+  "chapter_id": "AS10",
+  "chapter_name": "DC circuits",
+  "note_data": {
+    "title": "DC circuits",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Kirchhoff's first law**: the sum of currents entering a junction equals the sum of currents leaving the junction",
+      "**Kirchhoff's second law**: around any closed loop in a circuit, the sum of emfs equals the sum of potential differences",
+      "In **series circuits**: current is the same at all points, total resistance equals sum of individual resistances",
+      "In **parallel circuits**: potential difference is the same across each branch, total current equals sum of branch currents",
+      "**Potential divider** produces a variable output voltage that is a fraction of the input voltage",
+      "For a potential divider: Vout = Vin × (R2/(R1+R2)) where Vout is taken across R2",
+      "A **potentiometer** uses the principle of potential division to measure emf without drawing current from the source",
+      "At balance point in potentiometer: emf of cell = potential difference across length of wire",
+      "**Internal resistance** causes the terminal voltage to be less than the emf when current flows"
+    ],
+    "definitions": [
+      {
+        "term": "Kirchhoff's first law",
+        "definition": "The sum of currents entering a junction equals the sum of currents leaving the junction"
+      },
+      {
+        "term": "Kirchhoff's second law",
+        "definition": "Around any closed loop in a circuit, the sum of emfs equals the sum of potential differences"
+      },
+      {
+        "term": "Potential divider",
+        "definition": "A circuit that produces an output voltage that is a fraction of the input voltage using two resistors in series"
+      },
+      {
+        "term": "Potentiometer",
+        "definition": "An instrument used to measure emf by balancing it against a known potential difference, without drawing current from the source"
+      },
+      {
+        "term": "Internal resistance",
+        "definition": "The resistance within a source of emf that causes the terminal voltage to be less than the emf when current flows"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give Kirchhoff's laws as simple statements without proof or explanation"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the physics principle plus reason, e.g. 'Current is conserved because charge cannot accumulate at a junction'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working steps clearly, substitute values with units, give final answer to appropriate significant figures"
+      },
+      {
+        "commandWord": "Derive",
+        "instruction": "Start from basic principles, show each algebraic step, arrive at the required expression"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A battery of emf 12.0 V and internal resistance 2.0 Ω is connected to a potential divider consisting of a 6.0 Ω resistor in series with a 4.0 Ω resistor. Calculate the potential difference across the 4.0 Ω resistor.",
+      "marks": 3,
+      "answer": "Total resistance = 2.0 + 6.0 + 4.0 = 12.0 Ω. Current in circuit = V/R = 12.0/12.0 = 1.0 A. Potential difference across 4.0 Ω resistor = IR = 1.0 × 4.0 = 4.0 V",
+      "markBreakdown": [
+        "Mark 1: Calculate total resistance including internal resistance",
+        "Mark 2: Calculate current using Ohm's law",
+        "Mark 3: Calculate pd across 4.0 Ω resistor"
+      ]
+    },
+    "commonMistakes": [
+      "Never ignore internal resistance in calculations - always include it in total circuit resistance",
+      "Students often confuse series and parallel rules - remember current same in series, voltage same in parallel",
+      "In potentiometer questions, never say current flows through the galvanometer at balance point",
+      "For Kirchhoff's laws, students forget to include direction of currents and emfs - clockwise positive convention",
+      "In potential divider calculations, students take output voltage across wrong resistor"
+    ],
+    "examinerTips": [
+      "DC circuit analysis appears in every Paper 2 - worth 8-12 marks typically",
+      "Always draw current directions on circuit diagrams before applying Kirchhoff's laws",
+      "For potentiometer questions, emphasize 'no current at balance point' for full marks",
+      "Show all substitution steps clearly in calculations for method marks"
+    ],
+    "formulas": [
+      "V = IR",
+      "Rs = R1 + R2 + R3 (series)",
+      "1/Rp = 1/R1 + 1/R2 + 1/R3 (parallel)",
+      "Vout = Vin × R2/(R1+R2)",
+      "ΣI(in) = ΣI(out)",
+      "Σemf = ΣIR"
+    ],
+    "keyDiagramDescription": "Circuit diagram showing battery with internal resistance connected to potential divider, with clear labeling of currents, voltages, and resistor values. Include junction points for applying Kirchhoff's laws."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:41:59.060Z",
+  "updated_at": "2026-04-06T04:41:59.060Z"
+}

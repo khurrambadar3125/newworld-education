@@ -1,0 +1,111 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "14",
+  "chapter_name": "Theorems Related with Area",
+  "note_data": {
+    "title": "Theorems Related with Area",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Parallelograms on the same base and between the same parallel lines are equal in area",
+      "Triangles on the same base and between the same parallel lines are equal in area",
+      "Area of a triangle is half the area of a parallelogram on the same base and between the same parallels",
+      "If a triangle and a parallelogram are on the same base and between the same parallels, then area of triangle = 1/2 × area of parallelogram",
+      "The median of a triangle divides it into two triangles of equal area",
+      "A diagonal of a parallelogram divides it into two congruent triangles of equal area",
+      "Triangles having equal areas and lying on the same base have equal corresponding altitudes",
+      "The ratio of areas of similar triangles is equal to the ratio of squares of their corresponding sides"
+    ],
+    "definitions": [
+      {
+        "term": "Parallelogram",
+        "definition": "A quadrilateral whose opposite sides are parallel is called a parallelogram"
+      },
+      {
+        "term": "Base and Height of Parallelogram",
+        "definition": "Any side of a parallelogram may be called its base and the perpendicular distance between the base and its opposite side is called the height or altitude"
+      },
+      {
+        "term": "Median of Triangle",
+        "definition": "A line segment joining a vertex of a triangle to the midpoint of the opposite side is called a median of the triangle"
+      },
+      {
+        "term": "Similar Triangles",
+        "definition": "Two triangles are similar if their corresponding angles are equal and corresponding sides are proportional"
+      },
+      {
+        "term": "Area",
+        "definition": "The area of a plane figure is the measure of the region enclosed by its boundary"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "State the theorem about triangles on the same base and between same parallel lines.",
+        "answer": "Triangles on the same base and between the same parallel lines are equal in area. This means if two triangles have the same base and their third vertices lie on a line parallel to the base, then both triangles have equal areas."
+      },
+      {
+        "type": "long",
+        "question": "Prove that parallelograms on the same base and between the same parallel lines are equal in area.",
+        "answer": "Given: ABCD and ABEF are two parallelograms on the same base AB and between same parallels AB and CF. To Prove: Area of ABCD = Area of ABEF. Proof: Since ABCD is a parallelogram, AD || BC and AB || DC. Since ABEF is a parallelogram, AE || BF and AB || EF. Given that CF is parallel to AB. In parallelogram ABCD: Area = base × height = AB × h (where h is perpendicular distance between AB and CF). In parallelogram ABEF: Area = base × height = AB × h (same height as both lie between same parallels). Therefore, Area of ABCD = Area of ABEF. Hence proved."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "If two triangles are on the same base and between the same parallel lines, then their areas are:",
+        "options": {
+          "A": "Different",
+          "B": "Equal",
+          "C": "Cannot be determined",
+          "D": "In ratio 2:1"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The median of a triangle divides it into:",
+        "options": {
+          "A": "Two triangles of different areas",
+          "B": "Two triangles of equal areas",
+          "C": "Three equal parts",
+          "D": "Two parallelograms"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "If area of triangle ABC is 24 cm², then area of parallelogram on same base and between same parallels is:",
+        "options": {
+          "A": "12 cm²",
+          "B": "24 cm²",
+          "C": "48 cm²",
+          "D": "36 cm²"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often forget that triangles must be between the same parallel lines for equal area theorem",
+      "Confusing the relationship between triangle and parallelogram areas - remember triangle area is half",
+      "Not drawing proper diagrams showing parallel lines clearly",
+      "Forgetting to state 'given' and 'to prove' in theorem proofs",
+      "Writing area formulas without specifying base and height clearly"
+    ],
+    "examTips": [
+      "Chapter 14 typically has 1-2 MCQs and 1 theorem proof question worth 5-8 marks",
+      "Always draw neat diagrams with proper labeling - diagrams carry marks",
+      "Memorize the exact statement of all theorems as they appear in STBB textbook",
+      "Practice drawing parallelograms between parallel lines - appears every year",
+      "Learn the relationship: Area of triangle = 1/2 × Area of parallelogram (same base, same parallels)"
+    ],
+    "formulas": [
+      "Area of parallelogram = base × height",
+      "Area of triangle = 1/2 × base × height",
+      "Area of triangle = 1/2 × area of parallelogram (on same base and between same parallels)",
+      "Ratio of areas of similar triangles = (ratio of corresponding sides)²"
+    ],
+    "keyDiagram": "Draw two parallelograms ABCD and ABEF sharing the same base AB, with vertices C, D, E, F lying on parallel lines. Show the perpendicular height between the parallel lines. This diagram demonstrates that both parallelograms have equal areas and is essential for theorem proofs."
+  },
+  "created_at": "2026-04-06T06:24:59.089Z"
+}

@@ -1,0 +1,97 @@
+{
+  "subject": "Geography",
+  "subject_code": "2217",
+  "level": "O Level",
+  "theme": "Theme 3: Economic Development",
+  "chapter_id": "3.6",
+  "chapter_name": "Water",
+  "note_data": {
+    "title": "Water",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Water supply** is the amount of water available from sources such as rivers, lakes, groundwater and precipitation",
+      "**Water demand** increases due to population growth, urbanisation, industrialisation and improved living standards",
+      "**Water stress** occurs when demand exceeds supply, leading to shortages and competition between users",
+      "**Dams** are built across rivers to store water for irrigation, hydroelectric power generation and domestic supply",
+      "**Multipurpose schemes** like the Indus Basin Project provide irrigation, flood control, hydroelectric power and water storage",
+      "**Groundwater depletion** occurs when water is extracted faster than natural recharge, causing water tables to fall",
+      "**Water pollution** reduces available clean water supply through contamination from sewage, industrial waste and agricultural chemicals",
+      "**Water conservation** methods include rainwater harvesting, drip irrigation, recycling and reducing wastage",
+      "**Conflicts over water** arise between countries sharing river basins and between different user groups"
+    ],
+    "definitions": [
+      {
+        "term": "Water supply",
+        "definition": "The amount of water available from natural sources such as rivers, lakes, groundwater and precipitation"
+      },
+      {
+        "term": "Water demand",
+        "definition": "The amount of water required by people for domestic, agricultural and industrial purposes"
+      },
+      {
+        "term": "Dam",
+        "definition": "A barrier built across a river valley to control water flow and create a reservoir for water storage"
+      },
+      {
+        "term": "Multipurpose scheme",
+        "definition": "A large-scale water management project that serves several purposes such as irrigation, flood control, hydroelectric power and water supply"
+      },
+      {
+        "term": "Water stress",
+        "definition": "A situation where water demand exceeds the available water supply in a region"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed facts about what something is like or how it works"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give reasonable ideas with brief explanations"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why water demand is increasing in many developing countries. [6 marks]",
+      "marks": 6,
+      "answer": "Population growth increases water demand because more people need water for drinking, washing and cooking. Urbanisation increases demand because cities concentrate large populations in small areas requiring piped water supply. Industrialisation increases demand because factories need water for manufacturing processes and cooling. Improved living standards increase demand because people use more water for washing machines, showers and gardens. Agricultural development increases demand because irrigation is needed to grow more crops to feed the growing population. Economic development increases demand because as countries become wealthier, people consume more water-intensive products and services.",
+      "markBreakdown": [
+        "Mark 1: Population growth increases demand",
+        "Mark 2: Urbanisation concentrates demand",
+        "Mark 3: Industrialisation requires water for processes",
+        "Mark 4: Living standards increase consumption",
+        "Mark 5: Agriculture needs irrigation",
+        "Mark 6: Economic development increases consumption"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'water scarcity' when the question asks about supply - always distinguish between supply (availability) and demand (requirements)",
+      "Students often confuse dams with barrages - dams store water in reservoirs, barrages divert water flow",
+      "Don't just list benefits of dams - always explain the problems such as displacement of people and environmental impacts",
+      "Never say water is 'dirty' - use specific terms like 'contaminated', 'polluted' or 'unsafe'",
+      "Students often forget to mention both physical and human factors affecting water supply"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 questions worth 6-8 marks",
+      "Always use specific examples like Tarbela Dam in Pakistan or Aswan High Dam in Egypt",
+      "Draw and label diagrams of dams showing reservoir, spillway and power station for full marks",
+      "Case studies must include both benefits and problems of water management schemes"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Cross-section diagram of a multipurpose dam showing: dam wall, reservoir, spillway, hydroelectric power station, irrigation canals, and flood control mechanisms. Label all components and show water flow directions."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:01:03.055Z",
+  "updated_at": "2026-04-06T04:01:03.055Z"
+}

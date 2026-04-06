@@ -1,0 +1,102 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "A2 Physical Chemistry",
+  "chapter_id": "A2.1",
+  "chapter_name": "Further equilibria",
+  "note_data": {
+    "title": "Further equilibria",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Ka** is the acid dissociation constant showing the extent of acid ionisation in aqueous solution",
+      "A **buffer solution** maintains approximately constant pH when small amounts of acid or base are added",
+      "Buffer action occurs because the weak acid removes added OH⁻ ions and the conjugate base removes added H⁺ ions",
+      "**Ksp** is the solubility product constant for sparingly soluble ionic compounds at equilibrium",
+      "Common ion effect decreases solubility when an ion common to the equilibrium is added",
+      "**Partition coefficient** shows how a solute distributes between two immiscible solvents at equilibrium",
+      "pH calculations use Ka values and the expression Ka = [H⁺][A⁻]/[HA]",
+      "Buffer pH calculations use the Henderson-Hasselbalch equation: pH = pKa + log([A⁻]/[HA])",
+      "Precipitation occurs when the ionic product exceeds the solubility product Ksp"
+    ],
+    "definitions": [
+      {
+        "term": "Ka",
+        "definition": "The equilibrium constant for the dissociation of a weak acid in aqueous solution"
+      },
+      {
+        "term": "Buffer solution",
+        "definition": "A solution that maintains approximately constant pH when small amounts of acid or base are added"
+      },
+      {
+        "term": "Ksp",
+        "definition": "The equilibrium constant for a sparingly soluble ionic solid in equilibrium with its ions in saturated solution"
+      },
+      {
+        "term": "Partition coefficient",
+        "definition": "The ratio of concentrations of a solute in two immiscible solvents at equilibrium at constant temperature"
+      },
+      {
+        "term": "Common ion effect",
+        "definition": "The decrease in solubility of an ionic compound when a solution already contains one of the ions from that compound"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the definition or value without explanation"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the reason using equilibrium principles and Le Chatelier's principle"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working with correct units and significant figures"
+      },
+      {
+        "commandWord": "Deduce",
+        "instruction": "Use given data to work out the answer with reasoning shown"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A buffer solution contains 0.10 mol dm⁻³ ethanoic acid and 0.15 mol dm⁻³ sodium ethanoate. Calculate the pH of this buffer. (Ka for ethanoic acid = 1.8 × 10⁻⁵ mol dm⁻³)",
+      "marks": 3,
+      "answer": "pH = pKa + log([CH₃COO⁻]/[CH₃COOH])\npKa = -log(1.8 × 10⁻⁵) = 4.74\npH = 4.74 + log(0.15/0.10) = 4.74 + 0.18 = 4.92",
+      "markBreakdown": [
+        "Mark 1: Correct use of Henderson-Hasselbalch equation",
+        "Mark 2: Correct calculation of pKa = 4.74",
+        "Mark 3: Correct final pH = 4.92"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse Ka with Kb - Ka is for acids, Kb is for bases",
+      "Students often forget to convert pKa to Ka or vice versa using the relationship pKa = -log Ka",
+      "Don't use total volume in Ksp calculations - use molar concentrations only",
+      "Never assume [H⁺] = [acid] for weak acids - must use Ka expression",
+      "Students often forget that buffer capacity decreases as the ratio [A⁻]/[HA] moves away from 1:1"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 2 with calculations worth 6-8 marks",
+      "Always show working for pH calculations step by step",
+      "Check your answer is reasonable - strong acids have pH < 2, weak acids pH 3-6",
+      "For Ksp questions, write the equilibrium expression first before substituting values",
+      "Buffer questions often link to titration curves - know the connection"
+    ],
+    "formulas": [
+      "Ka = [H⁺][A⁻]/[HA]",
+      "pH = pKa + log([A⁻]/[HA])",
+      "Ksp = [M⁺]ᵃ[X⁻]ᵇ for MₐXᵇ",
+      "Kd = [solute in solvent 1]/[solute in solvent 2]",
+      "pKa = -log Ka",
+      "pH = -log[H⁺]"
+    ],
+    "keyDiagramDescription": "Buffer action diagram showing weak acid HA and conjugate base A⁻ removing added H⁺ and OH⁻ ions respectively, with equilibrium arrows and the resulting pH stability"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:36:22.226Z",
+  "updated_at": "2026-04-06T04:36:22.226Z"
+}

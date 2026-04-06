@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "A2 Computer Science",
+  "chapter_id": "A2.2",
+  "chapter_name": "Communication and internet technologies",
+  "note_data": {
+    "title": "Communication and internet technologies",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**IP address** is a unique numerical identifier assigned to each device on a network to enable communication",
+      "**IPv4** uses 32-bit addresses written as four decimal numbers separated by dots (e.g., 192.168.1.1)",
+      "**IPv6** uses 128-bit addresses written in hexadecimal format to provide more available addresses",
+      "**DNS (Domain Name System)** translates human-readable domain names into IP addresses",
+      "**Client-server model** involves clients requesting services from servers which provide responses",
+      "**Cloud computing** provides on-demand access to computing resources over the internet without direct management",
+      "**Web browser** acts as a client that requests web pages from web servers using HTTP/HTTPS protocols",
+      "**URL (Uniform Resource Locator)** specifies the address of a resource on the internet including protocol, domain and path",
+      "**Packets** are small units of data transmitted across networks with headers containing routing information"
+    ],
+    "definitions": [
+      {
+        "term": "IP Address",
+        "definition": "A unique numerical identifier assigned to each device connected to a network that uses Internet Protocol for communication"
+      },
+      {
+        "term": "DNS",
+        "definition": "Domain Name System - a hierarchical system that translates human-readable domain names into corresponding IP addresses"
+      },
+      {
+        "term": "Client-Server Model",
+        "definition": "A network architecture where client devices request services or resources from server computers that provide responses"
+      },
+      {
+        "term": "Cloud Computing",
+        "definition": "The delivery of computing services including storage, processing and software over the internet on-demand"
+      },
+      {
+        "term": "Packet",
+        "definition": "A formatted unit of data transmitted across a network containing both the actual data and header information for routing"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed characteristics or steps in a logical sequence"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between two concepts"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how DNS works when a user enters a website address in their browser. [4]",
+      "marks": 4,
+      "answer": "When a user enters a domain name, the browser first checks its cache for the IP address. If not found, it sends a query to the local DNS server. The local DNS server checks its cache, and if the IP address is not found, it forwards the query to authoritative DNS servers. The authoritative DNS server returns the corresponding IP address to the local DNS server, which then sends it back to the browser so the browser can connect to the correct web server.",
+      "markBreakdown": [
+        "Mark 1: Browser checks cache first",
+        "Mark 2: Query sent to local DNS server",
+        "Mark 3: Local DNS contacts authoritative servers if needed",
+        "Mark 4: IP address returned to browser for connection"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'DNS converts' — always say 'DNS translates domain names into IP addresses'",
+      "Students often confuse client-server with peer-to-peer networks",
+      "Don't say 'cloud is just storage' — cloud provides computing services including processing, networking and software",
+      "Never describe IPv6 as 'longer IPv4' — specify it uses hexadecimal format and 128-bit addressing",
+      "Students forget that packets contain headers with routing information, not just data"
+    ],
+    "examinerTips": [
+      "DNS and IP addressing appear in almost every Paper 2 exam",
+      "Always distinguish between IPv4 and IPv6 format and addressing capabilities",
+      "Client-server questions often require examples of specific clients and servers",
+      "Cloud computing questions focus on advantages like scalability and cost-effectiveness",
+      "Packet switching questions require mention of headers and routing information"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Client-Server model diagram showing multiple clients (computers, mobile devices) connected through internet cloud to servers, with arrows indicating request and response flow. Include DNS server showing domain name to IP address translation process."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:18:06.183Z",
+  "updated_at": "2026-04-06T05:18:06.183Z"
+}

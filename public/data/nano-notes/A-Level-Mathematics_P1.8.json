@@ -1,0 +1,97 @@
+{
+  "subject": "A Level Mathematics",
+  "subject_code": "9709",
+  "level": "A Level",
+  "theme": "Pure Mathematics 1",
+  "chapter_id": "P1.8",
+  "chapter_name": "Integration",
+  "note_data": {
+    "title": "Integration",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Indefinite integration** is the reverse process of differentiation, written as ∫f(x)dx = F(x) + c where F'(x) = f(x)",
+      "**Constant of integration** (+c) must always be included in indefinite integrals to represent the family of possible antiderivatives",
+      "**Definite integration** ∫[a to b]f(x)dx gives a numerical value representing the area between the curve and x-axis from x = a to x = b",
+      "**Fundamental Theorem of Calculus** states that ∫[a to b]f(x)dx = [F(x)][a to b] = F(b) - F(a)",
+      "**Area under a curve** is calculated using definite integration, taking absolute values when the function is negative",
+      "**Area between two curves** f(x) and g(x) is found using ∫[a to b]|f(x) - g(x)|dx where curves intersect at x = a and x = b",
+      "**Volume of revolution** about x-axis is V = π∫[a to b][f(x)]²dx when curve y = f(x) is rotated",
+      "**Volume of revolution** about y-axis is V = π∫[c to d][g(y)]²dy when curve x = g(y) is rotated",
+      "**Integration by substitution** requires identifying u, finding du/dx, changing limits if definite, and substituting back",
+      "**Integration by parts** uses ∫udv = uv - ∫vdu, choosing u as the function that becomes simpler when differentiated"
+    ],
+    "definitions": [
+      {
+        "term": "Indefinite integral",
+        "definition": "The general antiderivative of a function f(x), written as ∫f(x)dx = F(x) + c, where F'(x) = f(x) and c is the constant of integration"
+      },
+      {
+        "term": "Definite integral",
+        "definition": "The numerical value ∫[a to b]f(x)dx = F(b) - F(a) representing the net area between the curve y = f(x) and the x-axis from x = a to x = b"
+      },
+      {
+        "term": "Volume of revolution",
+        "definition": "The volume of the solid formed when a curve is rotated completely about an axis, calculated using π∫[a to b][f(x)]²dx for rotation about the x-axis"
+      },
+      {
+        "term": "Integration by parts",
+        "definition": "A technique for integrating products of functions using the formula ∫udv = uv - ∫vdu"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Find",
+        "instruction": "Calculate the integral showing all working steps including the constant of integration for indefinite integrals"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Demonstrate the result by working through the integration process step by step until you reach the given answer"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Find the numerical value for definite integrals or volumes, showing substitution of limits clearly"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Find the area of the region bounded by the curve y = x² - 4x + 3, the x-axis, and the lines x = 1 and x = 4.",
+      "marks": 4,
+      "answer": "First find where curve crosses x-axis: x² - 4x + 3 = 0, so (x-1)(x-3) = 0, giving x = 1, 3. Curve is below x-axis between x = 1 and x = 3, above between x = 3 and x = 4. Area = |∫[1 to 3](x² - 4x + 3)dx| + ∫[3 to 4](x² - 4x + 3)dx = |[x³/3 - 2x² + 3x][1 to 3]| + [x³/3 - 2x² + 3x][3 to 4] = |0 - (1/3 - 2 + 3)| + (64/3 - 32 + 12) - 0 = 4/3 + 4/3 = 8/3",
+      "markBreakdown": [
+        "Mark 1: Finding intersection points x = 1, 3",
+        "Mark 2: Recognizing need for two separate integrals due to sign change",
+        "Mark 3: Correct integration and substitution of limits",
+        "Mark 4: Correct final answer 8/3"
+      ]
+    },
+    "commonMistakes": [
+      "Never forget the constant of integration (+c) in indefinite integrals — always include it even if not explicitly asked",
+      "Students often ignore when the curve goes below the x-axis in area calculations — must use absolute values or split the integral",
+      "Never substitute limits before integrating when using substitution method — change the limits or substitute back to original variable first",
+      "Students frequently confuse volume formulas — remember π∫[f(x)]²dx for rotation about x-axis, not just π∫f(x)dx",
+      "Never use integration by parts when simple power rule or standard results work — choose the simplest method first"
+    ],
+    "examinerTips": [
+      "Integration appears in every Paper 1 and Paper 2 — master the basic techniques thoroughly",
+      "Always sketch the region for area and volume questions to understand the problem geometry",
+      "Show clear substitution of limits in definite integrals for method marks",
+      "Volume of revolution questions often worth 6-8 marks — check your π factor and squared terms carefully"
+    ],
+    "formulas": [
+      "∫xⁿdx = (xⁿ⁺¹)/(n+1) + c (n ≠ -1)",
+      "∫(1/x)dx = ln|x| + c",
+      "∫eˣdx = eˣ + c",
+      "∫sin(x)dx = -cos(x) + c",
+      "∫cos(x)dx = sin(x) + c",
+      "Volume about x-axis: V = π∫[a to b][f(x)]²dx",
+      "Volume about y-axis: V = π∫[c to d][g(y)]²dy",
+      "Integration by parts: ∫udv = uv - ∫vdu"
+    ],
+    "keyDiagramDescription": "Sketch showing a curve y = f(x) with shaded region between the curve and x-axis from x = a to x = b, with clear labels for the function, axes, and limits of integration"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:50:46.121Z",
+  "updated_at": "2026-04-06T04:50:46.121Z"
+}

@@ -1,0 +1,109 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "18",
+  "chapter_name": "Variations",
+  "note_data": {
+    "title": "Variations",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Direct Variation: When one quantity increases, the other quantity also increases in the same ratio",
+      "Inverse Variation: When one quantity increases, the other quantity decreases in the same ratio",
+      "Joint Variation: When a quantity varies directly as the product of two or more quantities",
+      "Combined Variation: When a quantity varies directly with some quantities and inversely with others",
+      "Constant of Variation (k): The constant value that relates the varying quantities",
+      "Graph of direct variation is a straight line passing through origin",
+      "Graph of inverse variation is a rectangular hyperbola",
+      "In direct variation, y = kx where k is constant of variation",
+      "In inverse variation, xy = k or y = k/x where k is constant",
+      "Always find the constant first, then solve for unknown values"
+    ],
+    "definitions": [
+      {
+        "term": "Direct Variation",
+        "definition": "Two quantities are said to be in direct variation if when one quantity increases the other quantity also increases in the same ratio, or when one quantity decreases the other quantity also decreases in the same ratio."
+      },
+      {
+        "term": "Inverse Variation",
+        "definition": "Two quantities are said to be in inverse variation if when one quantity increases the other quantity decreases in the same ratio, or when one quantity decreases the other quantity increases in the same ratio."
+      },
+      {
+        "term": "Joint Variation",
+        "definition": "A quantity is said to vary jointly as two or more quantities when it varies directly as their product."
+      },
+      {
+        "term": "Constant of Variation",
+        "definition": "The constant value k which relates the varying quantities is called the constant of variation or constant of proportionality."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define inverse variation and write its mathematical form.",
+        "answer": "Two quantities are in inverse variation if when one increases the other decreases in the same ratio. Mathematical form: xy = k or y = k/x where k is constant."
+      },
+      {
+        "type": "long",
+        "question": "The cost of petrol varies directly as the number of litres purchased. If 15 litres cost Rs. 2250, find: (a) the constant of variation (b) cost of 25 litres (c) how many litres can be bought for Rs. 4500?",
+        "answer": "Given: Cost varies directly as litres, so C = kL. When L = 15, C = 2250. (a) k = C/L = 2250/15 = 150 (b) For 25 litres: C = 150 × 25 = Rs. 3750 (c) For Rs. 4500: L = C/k = 4500/150 = 30 litres"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "If y varies directly as x and y = 12 when x = 4, then the value of y when x = 7 is:",
+        "options": {
+          "A": "18",
+          "B": "21",
+          "C": "24",
+          "D": "28"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "If y varies inversely as x and y = 8 when x = 3, then xy equals:",
+        "options": {
+          "A": "11",
+          "B": "24",
+          "C": "5",
+          "D": "64"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The graph of direct variation is:",
+        "options": {
+          "A": "A parabola",
+          "B": "A circle",
+          "C": "A straight line through origin",
+          "D": "A hyperbola"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse direct and inverse variation - remember direct means both increase/decrease together",
+      "Forgetting to find the constant of variation first before solving for unknown values",
+      "Writing wrong mathematical forms - direct is y = kx, inverse is y = k/x",
+      "Not showing step-by-step calculation of constant k in exam answers",
+      "Mixing up joint variation (multiply) with combined variation (both direct and inverse)"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short + 1 long question in BSEK papers",
+      "Always write the variation statement first, then mathematical form, then solve",
+      "Memorize exact definitions word-for-word as they appear in STBB textbook",
+      "Practice numerical problems with Pakistani context like petrol prices, electricity bills",
+      "Draw graphs when asked - direct variation graph always passes through origin"
+    ],
+    "formulas": [
+      "Direct Variation: y = kx or y ∝ x",
+      "Inverse Variation: xy = k or y = k/x or y ∝ 1/x",
+      "Joint Variation: z = kxy or z ∝ xy",
+      "Combined Variation: z = kx/y or z ∝ x/y"
+    ],
+    "keyDiagram": "Graph showing direct variation as straight line passing through origin with positive slope, and inverse variation as rectangular hyperbola in first and third quadrants. Label axes, show k values, and mark specific points."
+  },
+  "created_at": "2026-04-06T06:26:27.711Z"
+}

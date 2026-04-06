@@ -1,0 +1,98 @@
+{
+  "subject": "Sociology",
+  "subject_code": "2251",
+  "level": "O Level",
+  "theme": "Social Institutions",
+  "chapter_id": "5",
+  "chapter_name": "Education",
+  "note_data": {
+    "title": "Education",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Educational achievement** is measured by examination results, literacy rates, and progression to higher education",
+      "**Cultural capital** includes knowledge, skills, education, and advantages that give higher social status in society",
+      "**Hidden curriculum** refers to the informal learning of social norms, values, and expectations through schooling",
+      "**Meritocracy** is a system where advancement is based on individual ability and achievement rather than social background",
+      "**Educational inequality** exists when students from different social backgrounds have unequal access to educational opportunities",
+      "**Streaming** divides students into different ability groups which can create self-fulfilling prophecies",
+      "**Social mobility** through education allows individuals to move between social classes based on educational achievement",
+      "**Compensatory education** provides additional support to disadvantaged students to overcome social and economic barriers",
+      "**Teacher expectations** can influence student performance through labelling and differential treatment",
+      "**Educational selection** determines which students attend which types of schools or educational programs"
+    ],
+    "definitions": [
+      {
+        "term": "Cultural capital",
+        "definition": "The knowledge, skills, education, and advantages that give a person higher status in society, often passed down through families"
+      },
+      {
+        "term": "Hidden curriculum",
+        "definition": "The informal learning of social norms, values, and expectations that occurs in schools alongside the formal curriculum"
+      },
+      {
+        "term": "Meritocracy",
+        "definition": "A system where people advance based on their individual ability and achievement rather than their social background or family connections"
+      },
+      {
+        "term": "Self-fulfilling prophecy",
+        "definition": "When teacher expectations about student performance influence how students actually perform, making the prediction come true"
+      },
+      {
+        "term": "Social mobility",
+        "definition": "The movement of individuals or groups between different social classes or economic positions in society"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of features or characteristics"
+      },
+      {
+        "commandWord": "Assess",
+        "instruction": "Weigh up arguments for and against, reach a balanced conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why students from working-class families may underachieve in education. [6 marks]",
+      "marks": 6,
+      "answer": "Students from working-class families may lack cultural capital, which means they do not have the knowledge and skills valued by schools that middle-class students possess. Working-class parents may have limited experience of higher education and cannot provide academic support or guidance about university applications. Economic factors such as poverty mean families cannot afford educational resources like private tuition, books, or computers. Working-class students may face conflicting values between their home culture and school culture, leading to resistance to education. Teachers may have lower expectations of working-class students and label them as less able, creating a self-fulfilling prophecy. Working-class students may prioritize earning money immediately rather than staying in education for longer-term benefits.",
+      "markBreakdown": [
+        "Mark 1: Lack of cultural capital explanation",
+        "Mark 2: Parental experience/support factor",
+        "Mark 3: Economic constraints explanation",
+        "Mark 4: Cultural conflict/resistance",
+        "Mark 5: Teacher expectations/labelling",
+        "Mark 6: Immediate economic needs vs education"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'poor students are less intelligent' — always focus on social factors affecting achievement",
+      "Students often confuse cultural capital with economic capital — cultural capital is about knowledge and skills, not money",
+      "Avoid saying 'working-class parents don't care about education' — explain structural barriers instead",
+      "Don't just list factors — always explain HOW each factor affects educational achievement",
+      "Never stereotype ethnic groups — focus on social class and individual circumstances"
+    ],
+    "examinerTips": [
+      "Educational inequality appears frequently in Paper 2 — learn multiple explanations",
+      "Use specific examples from Pakistani context like government vs private schools",
+      "Always distinguish between material and cultural factors affecting achievement",
+      "Questions often ask for both internal (school) and external (home/society) factors"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Draw a diagram showing factors affecting educational achievement with two columns: Internal factors (streaming, teacher expectations, hidden curriculum) and External factors (cultural capital, economic factors, parental attitudes)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:14:34.572Z",
+  "updated_at": "2026-04-06T04:14:34.572Z"
+}

@@ -1,0 +1,105 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "2",
+  "chapter_name": "Solving a Biological Problem",
+  "note_data": {
+    "title": "Solving a Biological Problem",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Scientific method is a systematic approach to solve biological problems through observation, hypothesis formation, experimentation and conclusion",
+      "Observation is the first step where we notice and record phenomena using our five senses or scientific instruments",
+      "Hypothesis is a tentative explanation or educated guess about the observed phenomenon that can be tested experimentally",
+      "Controlled experiment involves independent variable (factor being tested), dependent variable (factor being measured), and controlled variables (kept constant)",
+      "Control group receives no treatment while experimental group receives the treatment being tested",
+      "Data collection involves recording observations in tables, graphs, and charts for analysis",
+      "Conclusion is drawn based on experimental results and either accepts or rejects the hypothesis",
+      "Theory is a well-tested hypothesis that explains many related observations and is supported by extensive evidence"
+    ],
+    "definitions": [
+      {
+        "term": "Scientific Method",
+        "definition": "Scientific method is a systematic approach used by scientists to investigate natural phenomena and solve problems through observation, hypothesis formation, experimentation, and drawing conclusions."
+      },
+      {
+        "term": "Hypothesis",
+        "definition": "A hypothesis is a tentative explanation or an educated guess about a natural phenomenon that can be tested through experimentation."
+      },
+      {
+        "term": "Variable",
+        "definition": "A variable is any factor that can change or be changed in an experiment."
+      },
+      {
+        "term": "Control Group",
+        "definition": "Control group is the group in an experiment that does not receive any treatment and serves as a standard for comparison."
+      },
+      {
+        "term": "Theory",
+        "definition": "A theory is a well-tested hypothesis that explains many related observations and is supported by extensive scientific evidence."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define scientific method and write its steps.",
+        "answer": "Scientific method is a systematic approach to solve biological problems. Steps: 1) Observation 2) Hypothesis formation 3) Experimentation 4) Data collection 5) Analysis 6) Conclusion"
+      },
+      {
+        "type": "long",
+        "question": "Explain the steps of scientific method with an example.",
+        "answer": "Scientific method involves: 1) Observation - noticing a phenomenon 2) Hypothesis - making educated guess 3) Experimentation - testing hypothesis with controlled variables 4) Data collection - recording results 5) Analysis - interpreting data 6) Conclusion - accepting or rejecting hypothesis. Example: Observing plant growth toward light, hypothesizing plants need light, experimenting with plants in light vs dark, collecting growth data, analyzing results, concluding plants grow toward light source."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The first step in scientific method is:",
+        "options": {
+          "A": "Hypothesis formation",
+          "B": "Observation",
+          "C": "Experimentation",
+          "D": "Conclusion"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "A tentative explanation of observed phenomenon is called:",
+        "options": {
+          "A": "Theory",
+          "B": "Law",
+          "C": "Hypothesis",
+          "D": "Variable"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "In a controlled experiment, the factor being tested is called:",
+        "options": {
+          "A": "Dependent variable",
+          "B": "Independent variable",
+          "C": "Controlled variable",
+          "D": "Constant variable"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse independent variable (cause) with dependent variable (effect)",
+      "Writing hypothesis as a question instead of a statement",
+      "Forgetting to mention control group in experimental design",
+      "Mixing up the sequence of scientific method steps",
+      "Not clearly distinguishing between observation and inference"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Always write scientific method steps in correct sequence",
+      "Examples of experiments are frequently asked - prepare 2-3 examples",
+      "Definitions must be word-for-word from textbook"
+    ],
+    "formulas": [],
+    "keyDiagram": "Steps of Scientific Method flowchart showing: Observation → Hypothesis → Experimentation → Data Collection → Analysis → Conclusion → Theory (if repeatedly tested and proven)"
+  },
+  "created_at": "2026-04-06T06:13:57.784Z"
+}

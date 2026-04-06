@@ -1,0 +1,95 @@
+{
+  "subject": "Biology",
+  "subject_code": "5090",
+  "level": "O Level",
+  "theme": "Reproduction and Ecology",
+  "chapter_id": "12",
+  "chapter_name": "Reproduction",
+  "note_data": {
+    "title": "Reproduction",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Sexual reproduction** involves the fusion of male and female gametes to produce offspring that are genetically different from parents",
+      "**Asexual reproduction** involves only one parent and produces offspring that are genetically identical to the parent (clones)",
+      "The flower is the **reproductive organ** of flowering plants containing male parts (stamens) and female parts (carpels)",
+      "**Pollination** is the transfer of pollen grains from the anther to the stigma of the same species",
+      "**Self-pollination** occurs when pollen is transferred within the same flower or between flowers on the same plant",
+      "**Cross-pollination** occurs when pollen is transferred between flowers on different plants of the same species",
+      "**Wind-pollinated flowers** have small, dull petals, long feathery stigmas, and produce large amounts of light pollen",
+      "**Insect-pollinated flowers** have large, brightly coloured petals, sticky pollen, and often produce nectar",
+      "**Fertilisation** occurs when the male gamete (in pollen tube) fuses with the female gamete (ovum) in the ovule"
+    ],
+    "definitions": [
+      {
+        "term": "Sexual reproduction",
+        "definition": "A process involving the fusion of male and female gametes to produce offspring that are genetically different from the parents"
+      },
+      {
+        "term": "Asexual reproduction",
+        "definition": "A process involving only one parent that produces offspring genetically identical to the parent"
+      },
+      {
+        "term": "Pollination",
+        "definition": "The transfer of pollen grains from the anther to the stigma of the same species"
+      },
+      {
+        "term": "Fertilisation",
+        "definition": "The fusion of male and female gametes"
+      },
+      {
+        "term": "Germination",
+        "definition": "The process by which a seed begins to grow into a new plant"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between two things"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of structure or process in logical sequence"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two advantages of cross-pollination over self-pollination.",
+      "marks": 4,
+      "answer": "Cross-pollination produces genetic variation in offspring because gametes from different plants combine. This increases the chance of survival in changing environmental conditions because some offspring may have favourable characteristics. Cross-pollination reduces the risk of harmful recessive alleles being expressed because genes from different plants are combined.",
+      "markBreakdown": [
+        "Mark 1: Produces genetic variation",
+        "Mark 2: Because gametes from different plants combine",
+        "Mark 3: Increases survival chances in changing conditions",
+        "Mark 4: Reduces expression of harmful recessive alleles"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'pollination is reproduction' — pollination is transfer of pollen, fertilisation is fusion of gametes",
+      "Students often confuse wind and insect pollinated features — remember wind flowers are small and dull, insect flowers are large and bright",
+      "Don't say 'asexual reproduction involves no gametes' — say 'involves only one parent'",
+      "Never describe germination as 'fertilisation' — germination is seed growth, fertilisation is gamete fusion",
+      "Students forget that cross-pollination must be between different plants of the SAME species"
+    ],
+    "examinerTips": [
+      "Flower structure diagrams appear frequently in Paper 1 and Paper 3 - learn all parts",
+      "Compare questions on sexual vs asexual reproduction are very common in Paper 2",
+      "Always mention 'genetic variation' when explaining advantages of sexual reproduction",
+      "For pollination adaptations, give specific examples like sticky vs powdery pollen"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Structure of a complete flower showing sepals, petals, stamens (anther and filament), and carpel (stigma, style, ovary with ovules). Essential for Paper 1 and Paper 3 practical examinations."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:29:49.205Z",
+  "updated_at": "2026-04-05T21:29:49.205Z"
+}

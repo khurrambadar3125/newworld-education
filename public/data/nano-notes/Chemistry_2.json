@@ -1,0 +1,99 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Physical Chemistry",
+  "chapter_id": "2",
+  "chapter_name": "Atomic structure",
+  "note_data": {
+    "title": "Atomic structure",
+    "readTime": "8 min",
+    "keyPoints": [
+      "An **atom** consists of a nucleus containing protons and neutrons, surrounded by electrons in shells",
+      "The **nucleus** is positively charged and contains most of the mass of the atom",
+      "**Protons** have a relative charge of +1 and relative mass of 1",
+      "**Neutrons** have no charge (neutral) and relative mass of 1",
+      "**Electrons** have a relative charge of -1 and negligible mass",
+      "**Atomic number** equals the number of protons in the nucleus",
+      "**Mass number** equals the total number of protons and neutrons",
+      "**Isotopes** are atoms of the same element with the same number of protons but different numbers of neutrons",
+      "**Electron configuration** shows how electrons are arranged in shells around the nucleus",
+      "The first shell holds a maximum of 2 electrons, second and third shells hold a maximum of 8 electrons each"
+    ],
+    "definitions": [
+      {
+        "term": "Atom",
+        "definition": "The smallest particle of an element that can take part in a chemical reaction"
+      },
+      {
+        "term": "Element",
+        "definition": "A substance that contains only one type of atom"
+      },
+      {
+        "term": "Isotope",
+        "definition": "Atoms of the same element with the same number of protons but different numbers of neutrons"
+      },
+      {
+        "term": "Atomic number",
+        "definition": "The number of protons in the nucleus of an atom"
+      },
+      {
+        "term": "Mass number",
+        "definition": "The total number of protons and neutrons in the nucleus of an atom"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give the main features or characteristics in logical order"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities and differences between two things"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Chlorine has two isotopes: chlorine-35 and chlorine-37. Both isotopes have 17 protons. State the number of neutrons in each isotope and explain why they are isotopes of the same element.",
+      "marks": 4,
+      "answer": "Chlorine-35 has 18 neutrons. Chlorine-37 has 20 neutrons. They are isotopes of the same element because they have the same number of protons but different numbers of neutrons.",
+      "markBreakdown": [
+        "Mark 1: Chlorine-35 has 18 neutrons",
+        "Mark 2: Chlorine-37 has 20 neutrons",
+        "Mark 3: Same number of protons",
+        "Mark 4: Different numbers of neutrons"
+      ]
+    },
+    "commonMistakes": [
+      "Never say electrons are 'in the nucleus' — electrons are in shells around the nucleus",
+      "Students often confuse mass number with atomic number — mass number includes neutrons",
+      "Never say isotopes have 'different atomic numbers' — isotopes have the same atomic number",
+      "Students forget that atoms are neutral overall — equal numbers of protons and electrons",
+      "Never say 'molecules' when describing atomic structure — use 'atoms'"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every paper — master the definitions",
+      "Always show working when calculating numbers of subatomic particles",
+      "Draw clear, labelled diagrams of atomic structure for full marks",
+      "Remember to use the notation ᴬₓE where A is mass number and Z is atomic number"
+    ],
+    "formulas": [
+      "Number of neutrons = Mass number - Atomic number",
+      "Number of electrons = Number of protons (in neutral atoms)"
+    ],
+    "keyDiagramDescription": "Diagram showing nucleus at center with protons (+) and neutrons (0) inside, and electrons (-) arranged in shells around the nucleus. Label nucleus, electrons, and shell numbers."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:51:38.120Z",
+  "updated_at": "2026-04-05T20:51:38.120Z"
+}

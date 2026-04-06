@@ -1,0 +1,98 @@
+{
+  "subject": "Commerce",
+  "subject_code": "7100",
+  "level": "O Level",
+  "theme": "Commerce and Trade",
+  "chapter_id": "1",
+  "chapter_name": "Commerce and Production",
+  "note_data": {
+    "title": "Commerce and Production",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Commerce** is the buying and selling of goods and services on a large scale",
+      "**Production** is the process of creating goods and services to satisfy human wants",
+      "**Primary production** involves extracting raw materials from nature, such as farming and mining",
+      "**Secondary production** involves converting raw materials into finished goods through manufacturing",
+      "**Tertiary production** involves providing services to consumers and businesses",
+      "The **supply chain** links all stages from raw materials to final consumer",
+      "**Added value** is created at each stage of the supply chain by transforming inputs",
+      "Commerce facilitates production by providing necessary services like transport, insurance and banking",
+      "**Direct production** satisfies the producer's own needs while **indirect production** is for exchange",
+      "The **chain of production** shows how goods pass through primary, secondary and tertiary stages"
+    ],
+    "definitions": [
+      {
+        "term": "Commerce",
+        "definition": "The buying and selling of goods and services on a large scale, including all activities that help trade such as transport, insurance and banking"
+      },
+      {
+        "term": "Production",
+        "definition": "The process of creating goods and services to satisfy human wants using factors of production"
+      },
+      {
+        "term": "Supply Chain",
+        "definition": "The sequence of processes involved in the production and distribution of goods from raw materials to final consumer"
+      },
+      {
+        "term": "Added Value",
+        "definition": "The increase in value of a product at each stage of production by transforming inputs into more useful outputs"
+      },
+      {
+        "term": "Primary Production",
+        "definition": "The extraction of raw materials from nature, including farming, fishing, forestry and mining"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Identify",
+        "instruction": "Name or give examples without explanation"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics or features in detail"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how commerce supports production. [6]",
+      "marks": 6,
+      "answer": "Commerce supports production by providing transport services to move raw materials to factories and finished goods to consumers. Banking services provide finance for businesses to purchase equipment and pay workers. Insurance services protect businesses against risks such as fire or theft of goods. Warehousing allows goods to be stored safely until they are needed. Advertising helps businesses inform consumers about their products. Trade provides a market for producers to sell their goods.",
+      "markBreakdown": [
+        "Mark 1: Transport moves raw materials/finished goods",
+        "Mark 2: Banking provides finance for equipment/wages",
+        "Mark 3: Insurance protects against business risks",
+        "Mark 4: Warehousing stores goods safely",
+        "Mark 5: Advertising informs consumers",
+        "Mark 6: Trade provides markets for producers"
+      ]
+    },
+    "commonMistakes": [
+      "Never say commerce 'helps' production — always say commerce 'supports' or 'facilitates' production",
+      "Students often confuse production with productivity — production is creating goods, productivity is efficiency",
+      "Don't mix up the supply chain with distribution — supply chain includes all stages from raw materials",
+      "Avoid giving manufacturing as an example of tertiary production — it is secondary production",
+      "Never say banks 'give' money — they 'provide finance' or 'lend money'"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every Paper 1 Section A as basic knowledge",
+      "Always give Pakistani examples: cotton farming (primary), textile manufacturing (secondary), banking in Karachi (tertiary)",
+      "Draw the chain of production diagram showing primary → secondary → tertiary with examples",
+      "For 6-mark questions, give 3 ways with explanations rather than 6 points without explanation"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Chain of production diagram showing Primary Production (farmer growing cotton) → Secondary Production (textile factory making cloth) → Tertiary Production (retailer selling clothes to consumer), with commerce services (transport, banking, insurance) supporting each stage"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:10:45.916Z",
+  "updated_at": "2026-04-06T04:10:45.917Z"
+}

@@ -1,0 +1,99 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Experimental Chemistry",
+  "chapter_id": "22",
+  "chapter_name": "Chemical analysis",
+  "note_data": {
+    "title": "Chemical analysis",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Qualitative analysis** identifies what substances are present in a sample",
+      "**Quantitative analysis** determines how much of a substance is present in a sample",
+      "**Flame tests** identify metal cations by their characteristic flame colours - sodium gives yellow, copper gives blue-green",
+      "**Precipitation reactions** with sodium hydroxide identify metal cations - aluminium gives white precipitate that dissolves in excess NaOH",
+      "**Gas tests** use specific reagents - hydrogen pops with a lighted splint, carbon dioxide turns limewater milky",
+      "**Anion tests** use silver nitrate for halides - chloride gives white precipitate, bromide gives cream, iodide gives yellow",
+      "**Titration** is used to find the exact volume of acid needed to neutralise a known volume of alkali",
+      "The **end point** in acid-alkali titration is when the indicator changes colour permanently",
+      "**Concordant results** in titration are within 0.1 cm³ of each other and are used to calculate the mean",
+      "**Molar calculations** from titration use the formula: moles = concentration × volume (in dm³)"
+    ],
+    "definitions": [
+      {
+        "term": "Qualitative analysis",
+        "definition": "Chemical tests to identify what substances are present in a sample"
+      },
+      {
+        "term": "Quantitative analysis",
+        "definition": "Chemical tests to determine how much of a substance is present in a sample"
+      },
+      {
+        "term": "Titration",
+        "definition": "A technique to find the exact volume of one solution needed to react completely with a known volume of another solution"
+      },
+      {
+        "term": "End point",
+        "definition": "The point in a titration when the indicator changes colour permanently, showing neutralisation is complete"
+      },
+      {
+        "term": "Concordant results",
+        "definition": "Titration results that are within 0.1 cm³ of each other"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give the method step by step using command words like 'add', 'heat', 'observe'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working clearly and give the final answer with correct units"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Describe how to carry out a flame test to identify the metal cation in a salt sample.",
+      "marks": 3,
+      "answer": "Dip a clean nichrome wire loop into concentrated hydrochloric acid. Pick up a small amount of the salt sample on the wire loop. Hold the wire loop in the blue flame of a Bunsen burner and observe the flame colour.",
+      "markBreakdown": [
+        "Mark 1: Clean the wire loop with concentrated hydrochloric acid",
+        "Mark 2: Pick up sample on the wire loop",
+        "Mark 3: Heat in Bunsen flame and observe colour"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'the flame turns blue' for copper - always say 'blue-green flame colour'",
+      "Students often forget to clean the wire loop between tests leading to contamination",
+      "Never say 'add excess sodium hydroxide' without first stating the initial observation",
+      "Students confuse precipitation tests - iron(II) gives green precipitate, iron(III) gives brown precipitate",
+      "In titration calculations, forgetting to convert cm³ to dm³ by dividing by 1000"
+    ],
+    "examinerTips": [
+      "Gas tests appear almost every year - learn all five gas tests thoroughly",
+      "Always state the colour of precipitates clearly - white, cream, yellow, green, brown",
+      "In titration questions, always calculate the mean using only concordant results",
+      "Flame test colours are frequently examined - sodium yellow, potassium lilac, calcium brick red"
+    ],
+    "formulas": [
+      "moles = concentration × volume (in dm³)",
+      "concentration = moles ÷ volume (in dm³)",
+      "volume = cm³ ÷ 1000 to convert to dm³"
+    ],
+    "keyDiagramDescription": "Titration apparatus showing burette clamped above conical flask containing alkali and indicator, with white tile underneath to see colour change clearly"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:58:30.793Z",
+  "updated_at": "2026-04-05T20:58:30.793Z"
+}

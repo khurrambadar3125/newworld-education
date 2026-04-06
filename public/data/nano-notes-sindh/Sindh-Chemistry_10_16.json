@@ -1,0 +1,112 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "16",
+  "chapter_name": "Industrial Chemistry",
+  "note_data": {
+    "title": "Industrial Chemistry",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Industrial chemistry deals with the large-scale production of chemicals and materials for commercial purposes",
+      "Haber process is used for the manufacture of ammonia from nitrogen and hydrogen at 450°C, 200-300 atm pressure using iron catalyst",
+      "Contact process produces sulfuric acid in three stages: burning sulfur, converting SO₂ to SO₃, and absorption in concentrated H₂SO₄",
+      "Fractional distillation of petroleum separates crude oil into different fractions based on their boiling points",
+      "Soap is manufactured by saponification of fats and oils with sodium hydroxide",
+      "Fertilizers like urea, ammonium sulfate, and superphosphate are produced industrially to increase crop yield",
+      "Cement manufacturing involves heating limestone and clay at 1500°C in rotary kilns",
+      "Pakistan has major industrial units in Karachi, Lahore, and Faisalabad for chemical production",
+      "Environmental pollution from industries can be controlled by proper waste treatment and emission controls"
+    ],
+    "definitions": [
+      {
+        "term": "Industrial Chemistry",
+        "definition": "The branch of chemistry that deals with the large-scale production of chemicals and chemical products for commercial purposes using economical methods"
+      },
+      {
+        "term": "Haber Process",
+        "definition": "The industrial process for the manufacture of ammonia by combining nitrogen and hydrogen gases at high temperature (450°C), high pressure (200-300 atm) in the presence of iron catalyst"
+      },
+      {
+        "term": "Contact Process",
+        "definition": "The industrial method for the manufacture of sulfuric acid involving the catalytic oxidation of sulfur dioxide to sulfur trioxide using vanadium pentoxide (V₂O₅) as catalyst"
+      },
+      {
+        "term": "Saponification",
+        "definition": "The chemical reaction between fats or oils and sodium hydroxide to produce soap and glycerol"
+      },
+      {
+        "term": "Fractional Distillation",
+        "definition": "The process of separating crude oil into different fractions based on their different boiling points in a fractionating tower"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Write the chemical equation for Haber process.",
+        "answer": "N₂ + 3H₂ ⇌ 2NH₃ + Heat. The reaction is carried out at 450°C temperature, 200-300 atm pressure using iron as catalyst."
+      },
+      {
+        "type": "long",
+        "question": "Describe the Contact process for the manufacture of sulfuric acid.",
+        "answer": "Contact process involves three main stages: (1) Burning sulfur in air: S + O₂ → SO₂ (2) Catalytic oxidation: 2SO₂ + O₂ ⇌ 2SO₃ using V₂O₅ catalyst at 450°C (3) Absorption: SO₃ is absorbed in concentrated H₂SO₄ to form oleum (H₂S₂O₇) which is then diluted with water to get sulfuric acid. The process gives 98% pure sulfuric acid."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The catalyst used in Haber process is:",
+        "options": {
+          "A": "Vanadium pentoxide",
+          "B": "Iron",
+          "C": "Platinum",
+          "D": "Nickel"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The temperature used in Contact process is:",
+        "options": {
+          "A": "350°C",
+          "B": "400°C",
+          "C": "450°C",
+          "D": "500°C"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Saponification is the process of making:",
+        "options": {
+          "A": "Detergent",
+          "B": "Soap",
+          "C": "Glycerol",
+          "D": "Oil"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse the conditions of Haber process with Contact process",
+      "Writing wrong catalyst for Contact process (writing iron instead of V₂O₅)",
+      "Forgetting to mention that Haber process is reversible reaction",
+      "Not writing the three stages of Contact process in proper sequence",
+      "Mixing up temperature and pressure conditions for different industrial processes"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 long question in every BSEK paper",
+      "Always mention complete conditions (temperature, pressure, catalyst) for industrial processes",
+      "Chemical equations are frequently asked - memorize them completely",
+      "Fractional distillation diagram appears frequently in exams"
+    ],
+    "formulas": [
+      "N₂ + 3H₂ ⇌ 2NH₃ + Heat (Haber Process)",
+      "S + O₂ → SO₂",
+      "2SO₂ + O₂ ⇌ 2SO₃",
+      "SO₃ + H₂SO₄ → H₂S₂O₇",
+      "Fat/Oil + 3NaOH → 3Soap + Glycerol"
+    ],
+    "keyDiagram": "Fractional distillation tower showing different petroleum fractions: gases at top (20°C), petrol (40-180°C), kerosene (180-250°C), diesel oil (250-350°C), lubricating oil (350-400°C), and bitumen at bottom (above 400°C)"
+  },
+  "created_at": "2026-04-06T06:13:15.694Z"
+}

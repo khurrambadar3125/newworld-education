@@ -1,0 +1,111 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "17",
+  "chapter_name": "Magnetism and Electromagnetism",
+  "note_data": {
+    "title": "Magnetism and Electromagnetism",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Magnetism is the property by virtue of which certain materials attract iron, steel and other magnetic materials",
+      "Every magnet has two poles — North pole and South pole — like poles repel and unlike poles attract",
+      "Magnetic field is the space around a magnet where its magnetic effect can be felt",
+      "Electromagnet is a temporary magnet made by passing electric current through a coil wound around an iron core",
+      "Motor principle: A current-carrying conductor placed in a magnetic field experiences a force (used in electric motors)",
+      "Generator principle: When a conductor moves in a magnetic field, an EMF is induced (electromagnetic induction)",
+      "Transformer works on the principle of mutual induction to step up or step down AC voltage",
+      "Fleming's left hand rule determines the direction of force on a current-carrying conductor in magnetic field",
+      "Lenz's law states that the direction of induced current opposes the change that produces it"
+    ],
+    "definitions": [
+      {
+        "term": "Magnetism",
+        "definition": "Magnetism is the property by virtue of which certain materials attract iron, steel and other magnetic materials."
+      },
+      {
+        "term": "Magnetic Field",
+        "definition": "The space around a magnet where its magnetic effect can be felt is called magnetic field."
+      },
+      {
+        "term": "Electromagnet",
+        "definition": "A temporary magnet made by passing electric current through a coil wound around a soft iron core is called electromagnet."
+      },
+      {
+        "term": "Electromagnetic Induction",
+        "definition": "The phenomenon of producing induced EMF in a conductor when there is a relative motion between the conductor and magnetic field is called electromagnetic induction."
+      },
+      {
+        "term": "Transformer",
+        "definition": "A device that changes the magnitude of alternating voltage by using the principle of mutual induction is called transformer."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "State Fleming's left hand rule.",
+        "answer": "Fleming's left hand rule states that if the first finger points in the direction of magnetic field, middle finger in the direction of current, then the thumb points in the direction of force on the conductor."
+      },
+      {
+        "type": "long",
+        "question": "Explain the construction and working of a step-up transformer with diagram.",
+        "answer": "Construction: A step-up transformer has primary coil with fewer turns and secondary coil with more turns wound on a laminated iron core. Working: When AC voltage is applied to primary coil, changing magnetic flux links with secondary coil inducing higher EMF. Vs/Vp = Ns/Np where Ns > Np for step-up. Used at Tarbela Dam power station to transmit electricity to Karachi at high voltage to reduce power loss."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The device used to convert mechanical energy into electrical energy is:",
+        "options": {
+          "A": "Motor",
+          "B": "Generator",
+          "C": "Transformer",
+          "D": "Galvanometer"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "In a step-down transformer:",
+        "options": {
+          "A": "Np > Ns",
+          "B": "Np < Ns",
+          "C": "Np = Ns",
+          "D": "No relation"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "Fleming's left hand rule is used to find:",
+        "options": {
+          "A": "Direction of induced EMF",
+          "B": "Direction of magnetic field",
+          "C": "Direction of force on conductor",
+          "D": "Direction of current"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse Fleming's left hand rule with right hand rule - left is for motor, right is for generator",
+      "Writing transformer ratios incorrectly - always write Vs/Vp = Ns/Np",
+      "Not drawing magnetic field lines from North to South pole in diagrams",
+      "Forgetting to mention 'soft iron core' when defining electromagnet",
+      "Confusing step-up and step-down transformers - step-up has more turns in secondary"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Transformer diagram with proper labeling appears frequently - memorize it",
+      "Motor and generator principle questions are very common in long answers",
+      "Fleming's rules are asked every year - practice the hand positions",
+      "Always mention practical examples like Tarbela Dam transformers for extra marks"
+    ],
+    "formulas": [
+      "Transformer ratio: Vs/Vp = Ns/Np = Ip/Is",
+      "Power in transformer: VpIp = VsIs (ideal transformer)",
+      "EMF = BLv (for moving conductor)"
+    ],
+    "keyDiagram": "Step-up transformer diagram showing laminated iron core, primary coil (fewer turns), secondary coil (more turns), with AC input and higher AC output. Label all parts including core, coils, and voltage directions."
+  },
+  "created_at": "2026-04-06T06:06:50.562Z"
+}

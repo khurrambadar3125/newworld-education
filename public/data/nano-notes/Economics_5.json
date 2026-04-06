@@ -1,0 +1,98 @@
+{
+  "subject": "Economics",
+  "subject_code": "2281",
+  "level": "O Level",
+  "theme": "Macroeconomics",
+  "chapter_id": "5",
+  "chapter_name": "Economic Development",
+  "note_data": {
+    "title": "Economic Development",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Economic development** involves sustained increases in real GDP per capita and improvements in living standards including health, education and life expectancy",
+      "**Developed countries** have high GDP per capita, advanced technology, good infrastructure and high human development index scores",
+      "**Developing countries** have low GDP per capita, limited industrialization, poor infrastructure and rely heavily on primary sector production",
+      "**Poverty** occurs when people cannot afford basic necessities like food, shelter, clean water and healthcare",
+      "**Living standards** are measured by real income per capita, access to education, healthcare, clean water and life expectancy",
+      "**Human Development Index (HDI)** combines GDP per capita, life expectancy and education levels to measure development",
+      "**Primary sector dependence** makes developing countries vulnerable to price fluctuations and limits economic growth",
+      "**Infrastructure development** including roads, electricity and telecommunications is essential for economic growth",
+      "**Education and healthcare** investments increase productivity and improve quality of life in developing countries",
+      "**Income inequality** exists both within countries and between developed and developing nations"
+    ],
+    "definitions": [
+      {
+        "term": "Economic Development",
+        "definition": "A sustained increase in real GDP per capita accompanied by improvements in living standards including health, education and life expectancy"
+      },
+      {
+        "term": "Poverty",
+        "definition": "A situation where people cannot afford basic necessities such as food, shelter, clean water and healthcare"
+      },
+      {
+        "term": "Living Standards",
+        "definition": "The level of material comfort and services available to individuals, measured by income, access to healthcare, education and other basic needs"
+      },
+      {
+        "term": "Human Development Index",
+        "definition": "A composite measure of development that combines GDP per capita, life expectancy at birth and education levels"
+      },
+      {
+        "term": "Developing Country",
+        "definition": "A country with low GDP per capita, limited industrialization and heavy dependence on the primary sector"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the causes and effects. Use 'This leads to...' or 'As a result...'"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Give advantages AND disadvantages, then conclude which is more important"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two problems faced by developing countries. [6 marks]",
+      "marks": 6,
+      "answer": "One problem is heavy dependence on the primary sector. This means developing countries rely mainly on agriculture and raw material extraction for income. This is a problem because primary products have volatile prices and low value-added, limiting economic growth and making the country vulnerable to external shocks. Another problem is lack of infrastructure. Many developing countries have poor roads, unreliable electricity and limited telecommunications. This restricts business development because firms cannot transport goods efficiently or operate productively, which limits investment and economic growth.",
+      "markBreakdown": [
+        "Mark 1: Identification of primary sector dependence",
+        "Mark 2: Explanation of why this is a problem",
+        "Mark 3: Development of the explanation",
+        "Mark 4: Identification of poor infrastructure",
+        "Mark 5: Explanation of why this is a problem",
+        "Mark 6: Development of the explanation"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse economic growth with economic development - growth is just GDP increase, development includes living standards",
+      "Students often think higher GDP automatically means better living standards - consider income distribution",
+      "Don't just list features of developing countries - always explain WHY they are problems",
+      "Avoid saying 'poor countries' - use 'developing countries' or 'low-income countries'",
+      "Never ignore non-monetary measures of development like HDI, literacy rates and life expectancy"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 Section B - often worth 8+ marks",
+      "Always use specific examples from Pakistan or other countries you know",
+      "Link poverty to specific causes like unemployment, low wages or lack of education",
+      "Remember HDI has THREE components - income, health AND education"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "No specific diagram required, but may include bar charts comparing GDP per capita, HDI scores or development indicators between developed and developing countries"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:34:31.088Z",
+  "updated_at": "2026-04-06T03:34:31.088Z"
+}

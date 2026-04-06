@@ -1,0 +1,93 @@
+{
+  "subject": "Biology",
+  "subject_code": "5090",
+  "level": "O Level",
+  "theme": "Respiration and Coordination",
+  "chapter_id": "8",
+  "chapter_name": "Respiration",
+  "note_data": {
+    "title": "Respiration",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Respiration** is the chemical breakdown of glucose to release energy in all living cells",
+      "**Aerobic respiration** requires oxygen and produces carbon dioxide, water and ATP",
+      "**Anaerobic respiration** occurs without oxygen and produces lactic acid (animals) or ethanol and carbon dioxide (plants/yeast)",
+      "Aerobic respiration produces **38 ATP molecules** per glucose molecule compared to only **2 ATP molecules** in anaerobic respiration",
+      "**Mitochondria** are the site of aerobic respiration in cells",
+      "During vigorous exercise, **oxygen debt** occurs when muscles respire anaerobically due to insufficient oxygen supply",
+      "**Fermentation** is anaerobic respiration in yeast used in bread making and alcohol production",
+      "Aerobic respiration is **more efficient** than anaerobic respiration because it releases more energy per glucose molecule"
+    ],
+    "definitions": [
+      {
+        "term": "Respiration",
+        "definition": "The chemical breakdown of glucose to release energy in living cells"
+      },
+      {
+        "term": "Aerobic respiration",
+        "definition": "The breakdown of glucose using oxygen to release energy"
+      },
+      {
+        "term": "Anaerobic respiration",
+        "definition": "The breakdown of glucose without oxygen to release energy"
+      },
+      {
+        "term": "Oxygen debt",
+        "definition": "The amount of oxygen needed to break down lactic acid produced during anaerobic respiration"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give at least two differences between aerobic and anaerobic respiration"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of events or detailed account"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why aerobic respiration is more efficient than anaerobic respiration. [3 marks]",
+      "marks": 3,
+      "answer": "Aerobic respiration produces 38 ATP molecules per glucose molecule while anaerobic respiration produces only 2 ATP molecules per glucose molecule. This is because aerobic respiration completely breaks down glucose using oxygen, while anaerobic respiration only partially breaks down glucose without oxygen.",
+      "markBreakdown": [
+        "Mark 1: Aerobic produces 38 ATP/more ATP",
+        "Mark 2: Anaerobic produces 2 ATP/less ATP",
+        "Mark 3: Explanation of complete vs partial breakdown"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'breathing' when the question asks about respiration - breathing is gas exchange, respiration is energy release",
+      "Students often confuse products: aerobic produces CO₂ + H₂O, anaerobic in animals produces lactic acid only",
+      "Never say anaerobic respiration produces CO₂ in animals - this only happens in plants/yeast",
+      "Students forget that both types of respiration break down glucose - they don't use different substances",
+      "Don't say oxygen is 'used up' - say oxygen is 'required' or 'needed'"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every paper - learn both word and symbol equations",
+      "Always specify whether describing anaerobic respiration in animals or plants/yeast",
+      "Use numbers for ATP production - examiners want specific values",
+      "Draw and label mitochondria diagram for cellular respiration questions"
+    ],
+    "formulas": [
+      "Aerobic: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP",
+      "Anaerobic (animals): C₆H₁₂O₆ → 2C₃H₆O₃ + ATP",
+      "Anaerobic (yeast): C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ + ATP"
+    ],
+    "keyDiagramDescription": "Mitochondrion structure showing outer membrane, inner membrane with cristae, and matrix where respiration occurs. Also include comparison table of aerobic vs anaerobic respiration products."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:28:26.007Z",
+  "updated_at": "2026-04-05T21:28:26.007Z"
+}

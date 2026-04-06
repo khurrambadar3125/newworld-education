@@ -1,0 +1,97 @@
+{
+  "subject": "Geography",
+  "subject_code": "2217",
+  "level": "O Level",
+  "theme": "Theme 3: Economic Development",
+  "chapter_id": "3.4",
+  "chapter_name": "Tourism",
+  "note_data": {
+    "title": "Tourism",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Tourism** is the temporary movement of people to destinations outside their normal place of work and residence for leisure, business or other purposes",
+      "**Economic benefits** include foreign exchange earnings, employment creation, and development of infrastructure and services",
+      "**Environmental impacts** can be positive (conservation funding) or negative (pollution, habitat destruction, overcrowding)",
+      "**Social impacts** include cultural exchange and preservation, but also loss of traditional culture and increased crime",
+      "**Ecotourism** is responsible travel to natural areas that conserves the environment and improves the welfare of local people",
+      "**Mass tourism** involves large numbers of tourists visiting popular destinations, often causing environmental degradation and overcrowding",
+      "**Sustainable tourism** meets the needs of present tourists while protecting and enhancing opportunities for the future",
+      "Tourism requires good **accessibility** through transport links, **accommodation** facilities, and **attractions** both natural and human-made",
+      "**Multiplier effect** occurs when tourist spending creates employment and income that circulates through the local economy"
+    ],
+    "definitions": [
+      {
+        "term": "Tourism",
+        "definition": "The temporary movement of people to destinations outside their normal place of work and residence for leisure, business or other purposes"
+      },
+      {
+        "term": "Ecotourism",
+        "definition": "Responsible travel to natural areas that conserves the environment and improves the welfare of local people"
+      },
+      {
+        "term": "Mass tourism",
+        "definition": "Large numbers of tourists visiting popular destinations, typically involving package holidays and standardized facilities"
+      },
+      {
+        "term": "Sustainable tourism",
+        "definition": "Tourism that meets the needs of present tourists and host regions while protecting and enhancing opportunities for the future"
+      },
+      {
+        "term": "Multiplier effect",
+        "definition": "The process by which tourist spending creates employment and income that circulates through the local economy, generating further economic activity"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Assess",
+        "instruction": "Evaluate both positive and negative impacts, then give a balanced conclusion"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities and differences between two types of tourism"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how tourism can have negative environmental impacts. [6 marks]",
+      "marks": 6,
+      "answer": "Tourism can cause air pollution because increased flights and transport to destinations release carbon dioxide and other greenhouse gases. Water pollution occurs because hotels and tourist facilities may discharge untreated sewage into rivers and seas, harming marine ecosystems. Habitat destruction happens because new hotels, roads and tourist facilities are built, clearing natural vegetation and destroying wildlife habitats. Overcrowding at popular sites leads to soil erosion and trampling of vegetation because too many tourists walk on fragile ecosystems. Waste generation increases because tourists produce large amounts of litter and solid waste that may not be properly disposed of. Noise pollution is created because tourist activities and transport disturb wildlife and damage the peaceful natural environment.",
+      "markBreakdown": [
+        "Mark 1: Air pollution from transport/flights",
+        "Mark 2: Water pollution from facilities",
+        "Mark 3: Habitat destruction for development",
+        "Mark 4: Overcrowding causing erosion",
+        "Mark 5: Waste generation problems",
+        "Mark 6: Noise pollution affecting wildlife"
+      ]
+    },
+    "commonMistakes": [
+      "Never say tourism is 'always good' or 'always bad' - always discuss both positive and negative impacts",
+      "Students often confuse ecotourism with adventure tourism - ecotourism specifically focuses on conservation",
+      "Don't just list impacts - always explain HOW tourism causes each impact using 'because'",
+      "Never say tourism 'destroys culture' - be specific about cultural changes like loss of traditional practices",
+      "Avoid vague statements like 'damages environment' - be specific about pollution, erosion, habitat loss"
+    ],
+    "examinerTips": [
+      "Tourism questions appear regularly in Paper 2 - often worth 6-8 marks",
+      "Case studies are essential - learn examples from both LEDCs and MEDCs",
+      "Always consider economic, social AND environmental impacts for full marks",
+      "Use Pakistani examples like Skardu, Hunza Valley or Murree for local context"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Butler's Tourism Life Cycle model showing stages: exploration, involvement, development, consolidation, stagnation, and either decline or rejuvenation. Essential for explaining how tourist destinations develop and change over time."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:00:12.335Z",
+  "updated_at": "2026-04-06T04:00:12.335Z"
+}

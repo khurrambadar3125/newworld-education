@@ -1,0 +1,112 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "7",
+  "chapter_name": "Circular Motion and Gravitation",
+  "note_data": {
+    "title": "Circular Motion and Gravitation",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Circular motion is the motion of a body in a circular path with constant speed but changing velocity due to continuous change in direction",
+      "Centripetal force is always directed towards the center of circular path and is necessary to keep a body in circular motion",
+      "Angular velocity is the rate of change of angular displacement and is measured in radians per second",
+      "Newton's law of universal gravitation states that every particle in the universe attracts every other particle with a force directly proportional to the product of their masses",
+      "Weight of a body is the gravitational force acting on it and varies with location, while mass remains constant",
+      "Acceleration due to gravity decreases with height above Earth's surface and varies at different locations",
+      "Satellites revolve around Earth due to gravitational force which provides the required centripetal force",
+      "Tidal forces are caused by gravitational attraction of moon and sun on Earth's oceans"
+    ],
+    "definitions": [
+      {
+        "term": "Circular Motion",
+        "definition": "The motion of a body along a circular path is called circular motion."
+      },
+      {
+        "term": "Centripetal Force",
+        "definition": "The force that acts on a body moving in a circular path and is directed towards the center of the circle is called centripetal force."
+      },
+      {
+        "term": "Angular Velocity",
+        "definition": "The rate of change of angular displacement is called angular velocity."
+      },
+      {
+        "term": "Gravitational Force",
+        "definition": "The force of attraction between any two bodies in the universe is called gravitational force."
+      },
+      {
+        "term": "Weight",
+        "definition": "The gravitational force acting on a body is called its weight."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define centripetal force and give its formula.",
+        "answer": "The force that acts on a body moving in a circular path and is directed towards the center of the circle is called centripetal force. Formula: Fc = mv²/r"
+      },
+      {
+        "type": "long",
+        "question": "State Newton's law of universal gravitation and derive the formula for gravitational force.",
+        "answer": "Newton's law of universal gravitation states that every particle in the universe attracts every other particle with a force that is directly proportional to the product of their masses and inversely proportional to the square of distance between them. Derivation: F ∝ m₁m₂ and F ∝ 1/r². Combining: F ∝ m₁m₂/r². Therefore: F = Gm₁m₂/r² where G is universal gravitational constant."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The centripetal force for a satellite orbiting Earth is provided by:",
+        "options": {
+          "A": "Magnetic force",
+          "B": "Gravitational force",
+          "C": "Electric force",
+          "D": "Nuclear force"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "If the radius of circular path is doubled, the centripetal force becomes:",
+        "options": {
+          "A": "Half",
+          "B": "Double",
+          "C": "Four times",
+          "D": "One-fourth"
+        },
+        "correct": "A"
+      },
+      {
+        "question": "The value of 'g' at Karachi is approximately:",
+        "options": {
+          "A": "9.8 m/s²",
+          "B": "10 m/s²",
+          "C": "9.6 m/s²",
+          "D": "8.9 m/s²"
+        },
+        "correct": "A"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse centripetal force with centrifugal force - remember centripetal acts towards center",
+      "Always write the formula before solving numerical problems",
+      "Don't forget to mention direction when defining centripetal force",
+      "Students mix up mass and weight - mass is constant but weight varies with gravity",
+      "In circular motion problems, always convert rpm to rad/s when needed"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Derivation of gravitational force formula appears frequently in long questions",
+      "Practice numerical problems on centripetal force and orbital motion",
+      "Memorize exact definitions as they appear in STBB textbook"
+    ],
+    "formulas": [
+      "Fc = mv²/r (Centripetal force)",
+      "ω = θ/t (Angular velocity)",
+      "v = rω (Linear velocity)",
+      "F = Gm₁m₂/r² (Gravitational force)",
+      "g = GM/R² (Acceleration due to gravity)",
+      "W = mg (Weight)"
+    ],
+    "keyDiagram": "Circular motion diagram showing a body moving in circular path with velocity vector tangent to circle and centripetal force vector pointing towards center. Also draw Earth-satellite system showing gravitational force providing centripetal force."
+  },
+  "created_at": "2026-04-06T06:03:00.877Z"
+}

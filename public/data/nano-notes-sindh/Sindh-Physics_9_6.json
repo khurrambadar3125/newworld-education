@@ -1,0 +1,110 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "6",
+  "chapter_name": "Equilibrium",
+  "note_data": {
+    "title": "Equilibrium",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Equilibrium is the state of a body in which there is no change in its motion",
+      "First condition of equilibrium: The sum of all forces acting on a body must be zero (ΣF = 0)",
+      "Second condition of equilibrium: The sum of all torques acting on a body about any point must be zero (Στ = 0)",
+      "Stable equilibrium: When a body returns to its original position after being slightly displaced",
+      "Unstable equilibrium: When a body moves further away from its original position after being slightly displaced",
+      "Neutral equilibrium: When a body remains in equilibrium in its new position after being displaced",
+      "Centre of gravity is the point where the whole weight of the body appears to act",
+      "For a body to be in complete equilibrium, both translational and rotational equilibrium conditions must be satisfied"
+    ],
+    "definitions": [
+      {
+        "term": "Equilibrium",
+        "definition": "Equilibrium is the state of a body in which there is no change in its motion."
+      },
+      {
+        "term": "Stable Equilibrium",
+        "definition": "A body is said to be in stable equilibrium if it returns to its original position when slightly displaced."
+      },
+      {
+        "term": "Unstable Equilibrium",
+        "definition": "A body is said to be in unstable equilibrium if it moves further away from its original position when slightly displaced."
+      },
+      {
+        "term": "Neutral Equilibrium",
+        "definition": "A body is said to be in neutral equilibrium if it remains in equilibrium in its new position when displaced."
+      },
+      {
+        "term": "Centre of Gravity",
+        "definition": "Centre of gravity of a body is the point where the whole weight of the body appears to act."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define stable, unstable and neutral equilibrium with examples.",
+        "answer": "Stable equilibrium: Body returns to original position when displaced (e.g., pendulum at rest). Unstable equilibrium: Body moves away when displaced (e.g., pencil on its tip). Neutral equilibrium: Body remains in new position when displaced (e.g., ball on flat surface)."
+      },
+      {
+        "type": "long",
+        "question": "State and explain the conditions of equilibrium. Derive the mathematical expressions for both conditions.",
+        "answer": "First condition: For translational equilibrium, sum of all forces must be zero. ΣF = 0 or ΣFx = 0 and ΣFy = 0. This means net force in any direction is zero. Second condition: For rotational equilibrium, sum of all torques about any point must be zero. Στ = 0. This ensures no rotational motion. For complete equilibrium, both conditions must be satisfied simultaneously."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "A body is in stable equilibrium when:",
+        "options": {
+          "A": "It moves away when displaced",
+          "B": "It returns to original position when displaced",
+          "C": "It remains in new position when displaced",
+          "D": "It rotates continuously"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "The first condition of equilibrium is:",
+        "options": {
+          "A": "Στ = 0",
+          "B": "ΣF = ma",
+          "C": "ΣF = 0",
+          "D": "F = mg"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Centre of gravity of a uniform rod lies at its:",
+        "options": {
+          "A": "One end",
+          "B": "Middle point",
+          "C": "Quarter length",
+          "D": "Three-quarter length"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse stable and unstable equilibrium definitions",
+      "Forgetting to write both conditions of equilibrium in long answers",
+      "Not drawing proper diagrams for types of equilibrium",
+      "Mixing up centre of gravity with centre of mass concepts",
+      "Not stating the mathematical expressions ΣF = 0 and Στ = 0 clearly"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question about types of equilibrium in BSEK papers",
+      "Always draw diagrams for stable, unstable and neutral equilibrium - appears every year",
+      "Memorize exact definitions word by word from STBB textbook",
+      "Long questions often ask to derive both conditions of equilibrium together",
+      "Centre of gravity questions frequently appear in combination with equilibrium"
+    ],
+    "formulas": [
+      "ΣF = 0 (First condition of equilibrium)",
+      "Στ = 0 (Second condition of equilibrium)",
+      "ΣFx = 0 and ΣFy = 0 (Component form)"
+    ],
+    "keyDiagram": "Draw three diagrams showing: 1) Cone on broad base (stable), 2) Cone on pointed tip (unstable), 3) Ball/cylinder on flat surface (neutral). Also draw a balanced see-saw showing forces and distances for moment calculations."
+  },
+  "created_at": "2026-04-06T06:02:40.253Z"
+}

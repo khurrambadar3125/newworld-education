@@ -1,0 +1,98 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 4: Advanced Topics",
+  "chapter_id": "17",
+  "chapter_name": "Incomplete records",
+  "note_data": {
+    "title": "Incomplete Records",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Incomplete records** are records kept by businesses that do not follow the full double-entry bookkeeping system",
+      "**Single entry system** records only one aspect of each transaction, usually cash receipts and payments",
+      "**Opening capital** is calculated by preparing a statement of financial position at the start of the period",
+      "**Closing capital** is calculated by preparing a statement of financial position at the end of the period",
+      "**Net profit** is calculated using the formula: Closing Capital - Opening Capital + Drawings - Additional Capital",
+      "**Margin** is profit expressed as a percentage of selling price: (Profit ÷ Selling Price) × 100",
+      "**Mark-up** is profit expressed as a percentage of cost price: (Profit ÷ Cost Price) × 100",
+      "Missing figures are calculated by preparing control accounts for debtors, creditors, and cash",
+      "Total sales and purchases can be calculated using debtors and creditors control accounts when cash sales/purchases are given"
+    ],
+    "definitions": [
+      {
+        "term": "Incomplete Records",
+        "definition": "A system of recording transactions that does not follow the complete double-entry principle, usually recording only cash receipts and payments"
+      },
+      {
+        "term": "Single Entry System",
+        "definition": "A bookkeeping system that records only one aspect of each transaction, typically the cash effect"
+      },
+      {
+        "term": "Margin",
+        "definition": "Profit expressed as a percentage of selling price"
+      },
+      {
+        "term": "Mark-up",
+        "definition": "Profit expressed as a percentage of cost price"
+      },
+      {
+        "term": "Net Assets",
+        "definition": "Total assets minus total liabilities, which equals capital"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all workings clearly. Use the net assets method for capital or control accounts for missing figures."
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Set out the statement/account with proper headings and show all calculations step by step"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the reason why incomplete records are used, such as 'because the business owner lacks bookkeeping knowledge'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Ali's business uses incomplete records. His assets and liabilities were: 1 Jan 2023: Cash $2,000, Inventory $5,000, Debtors $3,000, Creditors $1,500. 31 Dec 2023: Cash $3,500, Inventory $6,000, Debtors $4,000, Creditors $2,000. During the year he withdrew $12,000 and introduced additional capital of $5,000. Calculate his net profit for 2023.",
+      "marks": 6,
+      "answer": "Opening Capital = Assets - Liabilities = (2,000 + 5,000 + 3,000) - 1,500 = $8,500\nClosing Capital = Assets - Liabilities = (3,500 + 6,000 + 4,000) - 2,000 = $11,500\nNet Profit = Closing Capital - Opening Capital + Drawings - Additional Capital\nNet Profit = 11,500 - 8,500 + 12,000 - 5,000 = $10,000",
+      "markBreakdown": [
+        "Mark 1: Opening capital calculation $8,500",
+        "Mark 2: Closing capital calculation $11,500",
+        "Mark 3: Correct formula applied",
+        "Mark 4: Drawings added $12,000",
+        "Mark 5: Additional capital subtracted $5,000",
+        "Mark 6: Final answer $10,000"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse margin with mark-up — margin uses selling price as denominator, mark-up uses cost price",
+      "Students often forget to add drawings when calculating profit using the capital comparison method",
+      "Never subtract additional capital introduced during the year — it should be subtracted from the profit calculation",
+      "Students frequently calculate opening/closing capital incorrectly by adding liabilities instead of subtracting them",
+      "Never use credit sales figure when asked for total sales — must include cash sales using debtors control account"
+    ],
+    "examinerTips": [
+      "This topic appears in Paper 2 almost every year, usually worth 15-20 marks",
+      "Always prepare a statement of financial position first to find opening and closing capital",
+      "Show all workings clearly for margin and mark-up calculations — partial marks are available",
+      "When preparing control accounts, ensure the missing figure balances the account"
+    ],
+    "formulas": [
+      "Net Profit = Closing Capital - Opening Capital + Drawings - Additional Capital",
+      "Margin = (Profit ÷ Selling Price) × 100",
+      "Mark-up = (Profit ÷ Cost Price) × 100",
+      "Capital = Assets - Liabilities"
+    ],
+    "keyDiagramDescription": "Statement of Financial Position layout showing Assets (Non-current assets + Current assets) minus Liabilities (Current liabilities + Non-current liabilities) equals Capital, with clear labeling for opening and closing positions"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:41:10.307Z",
+  "updated_at": "2026-04-06T03:41:10.307Z"
+}

@@ -1,0 +1,104 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "Electricity and Magnetism",
+  "chapter_id": "18",
+  "chapter_name": "Electrical quantities",
+  "note_data": {
+    "title": "Electrical quantities",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Electric current** is the rate of flow of charge and is measured in amperes (A)",
+      "**Voltage (potential difference)** is the energy transferred per unit charge and is measured in volts (V)",
+      "**Resistance** is the opposition to current flow and is measured in ohms (Ω)",
+      "In a **series circuit**, current is the same at all points but voltage is shared across components",
+      "In a **parallel circuit**, voltage is the same across all branches but current is shared between branches",
+      "**Electrical energy** is converted from chemical energy in batteries or kinetic energy in generators",
+      "**Electrical power** is the rate of energy transfer and is measured in watts (W)",
+      "**Work done** by electricity equals energy transferred and is measured in joules (J)",
+      "Current flows from positive to negative terminal in conventional current direction",
+      "Total resistance in series circuits is the sum of individual resistances"
+    ],
+    "definitions": [
+      {
+        "term": "Electric current",
+        "definition": "The rate of flow of electric charge"
+      },
+      {
+        "term": "Voltage (potential difference)",
+        "definition": "The energy transferred per unit charge"
+      },
+      {
+        "term": "Resistance",
+        "definition": "The opposition to the flow of electric current"
+      },
+      {
+        "term": "Electrical power",
+        "definition": "The rate of transfer of electrical energy"
+      },
+      {
+        "term": "Work done by electricity",
+        "definition": "The energy transferred by an electric current"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly with correct formula, substitution and units"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between the items"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A 12V battery is connected to a 4Ω resistor. Calculate (a) the current flowing through the resistor (b) the power dissipated by the resistor.",
+      "marks": 4,
+      "answer": "(a) Using V = IR, I = V/R = 12V ÷ 4Ω = 3A (b) Using P = I²R, P = (3A)² × 4Ω = 9 × 4 = 36W",
+      "markBreakdown": [
+        "Mark 1: Correct formula V = IR",
+        "Mark 2: Correct substitution and current = 3A",
+        "Mark 3: Correct formula P = I²R or P = VI",
+        "Mark 4: Correct calculation of power = 36W"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse current and charge - current is rate of flow of charge, not charge itself",
+      "Students often add resistances in parallel circuits - remember to use 1/R = 1/R₁ + 1/R₂",
+      "Don't forget units in calculations - current (A), voltage (V), resistance (Ω), power (W)",
+      "Never say voltage 'flows' - voltage is a difference, current flows",
+      "Students mix up series and parallel rules for current and voltage distribution"
+    ],
+    "examinerTips": [
+      "This topic appears in every paper - master the calculations",
+      "Always show your working step by step for calculation questions",
+      "Draw circuit diagrams clearly with correct symbols",
+      "Remember to state the correct formula before substituting values",
+      "Power calculations often use Pakistani appliances like fans or electric heaters as context"
+    ],
+    "formulas": [
+      "V = IR",
+      "P = VI",
+      "P = I²R",
+      "P = V²/R",
+      "W = VIt",
+      "Q = It"
+    ],
+    "keyDiagramDescription": "Circuit diagram showing battery, resistor, ammeter (in series) and voltmeter (in parallel across resistor) with correct circuit symbols and current direction marked"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:19:41.940Z",
+  "updated_at": "2026-04-05T21:19:41.940Z"
+}

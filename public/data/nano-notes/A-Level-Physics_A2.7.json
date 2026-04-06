@@ -1,0 +1,101 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "A2 Electromagnetism and Nuclear",
+  "chapter_id": "A2.7",
+  "chapter_name": "Electric fields",
+  "note_data": {
+    "title": "Electric fields",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Electric field strength** is defined as force per unit positive charge: E = F/q",
+      "**Coulomb's law** states that force between two point charges is F = kQ₁Q₂/r² where k = 1/4πε₀",
+      "Electric field lines show the **direction of force** on a positive test charge and never cross each other",
+      "**Electric potential** at a point is the work done per unit positive charge in bringing charge from infinity to that point",
+      "**Potential difference** between two points is the work done per unit charge in moving charge between the points",
+      "**Capacitance** is defined as charge stored per unit potential difference: C = Q/V",
+      "Energy stored in a capacitor can be calculated using W = ½QV = ½CV² = ½Q²/C",
+      "In **uniform electric fields**, E = V/d where V is potential difference and d is separation",
+      "**Equipotential surfaces** are perpendicular to electric field lines and no work is done moving along them",
+      "Field strength at distance r from point charge Q is E = Q/4πε₀r²"
+    ],
+    "definitions": [
+      {
+        "term": "Electric field strength",
+        "definition": "The force per unit positive charge experienced by a small test charge placed at that point"
+      },
+      {
+        "term": "Electric potential",
+        "definition": "The work done per unit positive charge in bringing a small test charge from infinity to that point"
+      },
+      {
+        "term": "Capacitance",
+        "definition": "The charge stored per unit potential difference across the capacitor"
+      },
+      {
+        "term": "Electric field",
+        "definition": "A region of space where a charged object experiences an electric force"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Define",
+        "instruction": "Learn exact definitions - include 'per unit' phrases for field strength, potential and capacitance"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly, include units, use correct formula from formula sheet"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A parallel plate capacitor has plates of area 2.5 × 10⁻³ m² separated by 1.2 mm of air. Calculate the capacitance and the charge stored when connected to a 12 V battery.",
+      "marks": 4,
+      "answer": "C = ε₀A/d = (8.85 × 10⁻¹² × 2.5 × 10⁻³)/(1.2 × 10⁻³) = 1.84 × 10⁻¹¹ F. Using Q = CV, Q = 1.84 × 10⁻¹¹ × 12 = 2.2 × 10⁻¹⁰ C",
+      "markBreakdown": [
+        "Mark 1: Correct formula C = ε₀A/d",
+        "Mark 2: Correct substitution with units",
+        "Mark 3: Correct capacitance = 1.84 × 10⁻¹¹ F",
+        "Mark 4: Correct charge = 2.2 × 10⁻¹⁰ C"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse electric field strength with electric potential - field strength is force per unit charge, potential is energy per unit charge",
+      "Students often forget that electric field lines show direction of force on POSITIVE charge, not negative charge",
+      "Never say 'current flows through capacitor' - charge accumulates on plates but no current flows through dielectric",
+      "Students often use wrong units - field strength is N/C or V/m, potential is V (volts), capacitance is F (farads)",
+      "Never draw electric field lines crossing each other - they must never intersect"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 4 calculations",
+      "Always show clear working for capacitor calculations and include units",
+      "Learn the three energy formulas for capacitors - different questions need different forms",
+      "Field line diagrams are common - practice drawing uniform and radial fields",
+      "Remember ε₀ = 8.85 × 10⁻¹² F/m is given on formula sheet"
+    ],
+    "formulas": [
+      "E = F/q",
+      "F = Q₁Q₂/4πε₀r²",
+      "E = Q/4πε₀r²",
+      "E = V/d",
+      "C = Q/V",
+      "C = ε₀A/d",
+      "W = ½QV = ½CV² = ½Q²/C"
+    ],
+    "keyDiagramDescription": "Parallel plate capacitor showing uniform field lines perpendicular to plates, and radial field pattern around point charge with field lines radiating outward from positive charge"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:44:59.691Z",
+  "updated_at": "2026-04-06T04:44:59.691Z"
+}

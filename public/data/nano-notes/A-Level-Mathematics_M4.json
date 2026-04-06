@@ -1,0 +1,102 @@
+{
+  "subject": "A Level Mathematics",
+  "subject_code": "9709",
+  "level": "A Level",
+  "theme": "Mechanics",
+  "chapter_id": "M4",
+  "chapter_name": "Energy, work and power",
+  "note_data": {
+    "title": "Energy, work and power",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Work done** by a constant force equals force × displacement in the direction of force (W = Fs cos θ)",
+      "**Kinetic energy** of a particle is ½mv² where m is mass and v is speed",
+      "**Gravitational potential energy** is mgh above a chosen reference level",
+      "**Work-energy theorem**: work done by all forces equals change in kinetic energy",
+      "**Conservation of mechanical energy**: KE + PE = constant when only conservative forces act",
+      "**Power** is the rate of doing work, measured in watts (P = W/t)",
+      "**Instantaneous power** equals force × velocity in direction of force (P = Fv cos θ)",
+      "Energy is always **conserved** but may be converted between different forms",
+      "Non-conservative forces like **friction** convert mechanical energy to heat energy"
+    ],
+    "definitions": [
+      {
+        "term": "Work",
+        "definition": "Work done by a force is the product of the force and the displacement in the direction of the force"
+      },
+      {
+        "term": "Kinetic Energy",
+        "definition": "The energy possessed by a body due to its motion, equal to ½mv²"
+      },
+      {
+        "term": "Potential Energy",
+        "definition": "The energy possessed by a body due to its position in a force field"
+      },
+      {
+        "term": "Power",
+        "definition": "The rate of doing work or the rate of energy transfer"
+      },
+      {
+        "term": "Conservative Force",
+        "definition": "A force for which the work done is independent of the path taken and depends only on initial and final positions"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the principle or formula in one clear sentence without derivation"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working steps clearly, include units in final answer"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Start from given information and work step by step to reach the required result"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "State the physics principle and give reasoning using 'because' or 'since'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A block of mass 2 kg slides down a smooth inclined plane of height 5 m from rest. Calculate (a) the speed at the bottom, (b) the kinetic energy at the bottom.",
+      "marks": 4,
+      "answer": "(a) Using conservation of energy: mgh = ½mv²\ngh = ½v²\n10 × 5 = ½v²\nv² = 100\nv = 10 m/s\n\n(b) KE = ½mv² = ½ × 2 × 100 = 100 J",
+      "markBreakdown": [
+        "Mark 1: Apply conservation of energy principle",
+        "Mark 2: Substitute values correctly",
+        "Mark 3: Calculate speed = 10 m/s",
+        "Mark 4: Calculate KE = 100 J"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse work and energy - work is energy transferred, energy is capacity to do work",
+      "Students often forget that work = F × s × cos θ, not just F × s when force is at an angle",
+      "Don't use v = u + at when energy methods are more appropriate for the question",
+      "Never say 'energy is lost' - always say 'energy is converted to heat/sound' etc.",
+      "Students mix up instantaneous power P = Fv with average power P = W/t"
+    ],
+    "examinerTips": [
+      "Energy questions appear in every Paper 4, often worth 8-12 marks",
+      "Always state which energy principle you are using (conservation, work-energy theorem)",
+      "Draw energy bar charts or diagrams when asked to explain energy changes",
+      "Check units carefully - work and energy in joules (J), power in watts (W)"
+    ],
+    "formulas": [
+      "W = Fs cos θ",
+      "KE = ½mv²",
+      "PE = mgh",
+      "P = W/t",
+      "P = Fv cos θ",
+      "Work-energy theorem: W = ΔKE"
+    ],
+    "keyDiagramDescription": "Energy diagram showing initial and final positions with KE and PE values labeled, plus forces acting on the system. Include reference level for potential energy."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:56:45.999Z",
+  "updated_at": "2026-04-06T04:56:45.999Z"
+}

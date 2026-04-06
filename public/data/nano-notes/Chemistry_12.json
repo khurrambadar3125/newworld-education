@@ -1,0 +1,101 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Inorganic Chemistry",
+  "chapter_id": "12",
+  "chapter_name": "Preparation of salts",
+  "note_data": {
+    "title": "Preparation of salts",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **salt** is formed when hydrogen ions in an acid are replaced by metal ions or ammonium ions",
+      "**Soluble salts** are prepared by crystallisation from solution after neutralisation reactions",
+      "**Insoluble salts** are prepared by precipitation reactions between two soluble compounds",
+      "**Acid + metal → salt + hydrogen gas** (only for metals above hydrogen in reactivity series)",
+      "**Acid + base → salt + water** (neutralisation reaction using titration for exact amounts)",
+      "**Acid + carbonate → salt + water + carbon dioxide** (effervescence observed)",
+      "**Metal salt + another metal salt → two new salts** (precipitation method for insoluble salts)",
+      "Crystallisation involves heating to concentrate solution until crystals form on cooling",
+      "**Filtration** separates insoluble salt precipitates from the solution",
+      "**Washing with distilled water** removes impurities from the prepared salt crystals"
+    ],
+    "definitions": [
+      {
+        "term": "Salt",
+        "definition": "A compound formed when hydrogen ions in an acid are replaced by metal ions or ammonium ions"
+      },
+      {
+        "term": "Crystallisation",
+        "definition": "The process of obtaining pure crystals from a solution by evaporating the solvent"
+      },
+      {
+        "term": "Precipitation",
+        "definition": "The formation of an insoluble solid when two solutions are mixed"
+      },
+      {
+        "term": "Neutralisation",
+        "definition": "The reaction between an acid and a base to form a salt and water"
+      },
+      {
+        "term": "Titration",
+        "definition": "A method to find the exact volume of acid needed to neutralise a known volume of alkali"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a step-by-step method with apparatus and observations"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give a suitable method based on whether salt is soluble or insoluble"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Describe how to prepare pure, dry crystals of copper sulfate from copper oxide and sulfuric acid.",
+      "marks": 4,
+      "answer": "Add excess copper oxide to dilute sulfuric acid and stir until no more dissolves. Filter to remove unreacted copper oxide. Heat the filtrate to concentrate the solution. Allow to cool and copper sulfate crystals will form. Filter and wash with distilled water, then dry between filter papers.",
+      "markBreakdown": [
+        "Mark 1: Add excess copper oxide to acid",
+        "Mark 2: Filter to remove unreacted solid",
+        "Mark 3: Heat to concentrate/evaporate water",
+        "Mark 4: Cool to form crystals and dry"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'boil to dryness' for crystallisation — always say 'heat to concentrate then cool'",
+      "Students often forget to add 'excess' reactant when preparing soluble salts",
+      "Never say salts are 'dissolved' by washing — say 'impurities are removed'",
+      "Students confuse which method to use — soluble salts by crystallisation, insoluble salts by precipitation",
+      "Forgetting to mention 'washing with distilled water' to remove impurities from crystals"
+    ],
+    "examinerTips": [
+      "This topic appears every year in Paper 2 - know all three preparation methods",
+      "Always state whether the salt is soluble or insoluble to choose correct method",
+      "Include apparatus names: filter funnel, conical flask, evaporating dish",
+      "Observations score marks: effervescence, colour changes, precipitate formation"
+    ],
+    "formulas": [
+      "CuO + H₂SO₄ → CuSO₄ + H₂O",
+      "Zn + 2HCl → ZnCl₂ + H₂",
+      "CaCO₃ + 2HNO₃ → Ca(NO₃)₂ + H₂O + CO₂",
+      "AgNO₃ + NaCl → AgCl + NaNO₃"
+    ],
+    "keyDiagramDescription": "Crystallisation setup showing evaporating dish on tripod and gauze over Bunsen burner, with watch glass covering dish and glass rod for stirring"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:55:01.180Z",
+  "updated_at": "2026-04-05T20:55:01.180Z"
+}

@@ -1,0 +1,96 @@
+{
+  "subject": "Mathematics",
+  "subject_code": "4024",
+  "level": "O Level",
+  "theme": "Measurement and Geometry",
+  "chapter_id": "4",
+  "chapter_name": "Geometry",
+  "note_data": {
+    "title": "Geometry",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Angle properties**: angles on a straight line = 180°, angles around a point = 360°, vertically opposite angles are equal",
+      "**Triangle construction**: use ruler and compasses to construct triangles given three sides (SSS), two sides and included angle (SAS), or two angles and one side",
+      "**Polygon angle sum**: interior angle sum = (n-2) × 180° where n = number of sides, exterior angle sum = 360° for any polygon",
+      "**Parallel line angles**: corresponding angles are equal, alternate angles are equal, co-interior angles sum to 180°",
+      "**Pythagoras theorem**: a² + b² = c² where c is the hypotenuse of a right-angled triangle",
+      "**Line symmetry**: a shape has line symmetry if it can be folded along a line so both halves match exactly",
+      "**Similar figures**: corresponding angles are equal, corresponding sides are in the same ratio",
+      "**Area scale factor**: if linear scale factor is k, then area scale factor is k²",
+      "**Volume scale factor**: if linear scale factor is k, then volume scale factor is k³",
+      "**Circle theorems**: angle in semicircle = 90°, angles in same segment are equal, opposite angles in cyclic quadrilateral sum to 180°"
+    ],
+    "definitions": [
+      {
+        "term": "Congruent",
+        "definition": "Two shapes that are exactly the same size and shape"
+      },
+      {
+        "term": "Similar",
+        "definition": "Two shapes that are the same shape but different sizes, with corresponding angles equal and corresponding sides in the same ratio"
+      },
+      {
+        "term": "Tangent to a circle",
+        "definition": "A straight line that touches the circle at exactly one point"
+      },
+      {
+        "term": "Cyclic quadrilateral",
+        "definition": "A quadrilateral with all four vertices lying on the circumference of a circle"
+      },
+      {
+        "term": "Rotational symmetry",
+        "definition": "A shape has rotational symmetry if it looks exactly the same after being rotated through an angle less than 360°"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Construct",
+        "instruction": "Use ruler and compasses only. Show all construction arcs clearly. Do not erase construction lines."
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working steps. State the theorem or property used. Give answer to required accuracy."
+      },
+      {
+        "commandWord": "Prove",
+        "instruction": "Give reasons for each step using angle properties, theorems or given information. Use formal geometric language."
+      }
+    ],
+    "modelAnswer": {
+      "question": "Triangle ABC is similar to triangle PQR. AB = 6 cm, BC = 8 cm and PQ = 9 cm. Calculate the area of triangle PQR if the area of triangle ABC is 24 cm².",
+      "marks": 3,
+      "answer": "Scale factor = PQ/AB = 9/6 = 1.5. Area scale factor = (1.5)² = 2.25. Area of triangle PQR = 24 × 2.25 = 54 cm²",
+      "markBreakdown": [
+        "Mark 1: Find linear scale factor = 1.5",
+        "Mark 2: Square the scale factor to get area scale factor = 2.25",
+        "Mark 3: Multiply original area by area scale factor = 54 cm²"
+      ]
+    },
+    "commonMistakes": [
+      "Never use area scale factor for length calculations — always use linear scale factor for corresponding sides",
+      "Students often forget to square the scale factor when finding areas of similar shapes",
+      "Drawing tangents freehand instead of using the perpendicular from centre construction method",
+      "Confusing corresponding and alternate angles when lines are not clearly parallel",
+      "Using Pythagoras theorem when the triangle is not right-angled"
+    ],
+    "examinerTips": [
+      "Circle theorem questions appear in almost every Paper 2 — learn all 8 theorems",
+      "Always show construction arcs clearly in compass constructions for method marks",
+      "State which circle theorem you are using for full marks in proof questions",
+      "Check your Pythagoras answers are reasonable — hypotenuse must be the longest side"
+    ],
+    "formulas": [
+      "a² + b² = c²",
+      "Interior angle sum = (n-2) × 180°",
+      "Area scale factor = k²",
+      "Volume scale factor = k³"
+    ],
+    "keyDiagramDescription": "Circle with centre O, showing tangent from external point, radius to point of contact (perpendicular to tangent), and cyclic quadrilateral inscribed in circle"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:23:31.911Z",
+  "updated_at": "2026-04-05T21:23:31.911Z"
+}

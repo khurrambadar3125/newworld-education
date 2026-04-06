@@ -1,0 +1,114 @@
+{
+  "subject": "Physics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "16",
+  "chapter_name": "Electricity",
+  "note_data": {
+    "title": "Electricity",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Electric current is the flow of electric charges through a conductor — measured in Amperes",
+      "Ohm's Law states that current through a conductor is directly proportional to voltage and inversely proportional to resistance",
+      "Resistance is the opposition to the flow of electric current — measured in Ohms (Ω)",
+      "Power is the rate of doing work or energy consumed per unit time — measured in Watts",
+      "Electric energy is the work done by electric current — measured in Joules or kWh",
+      "Series circuits have single path for current flow, parallel circuits have multiple paths",
+      "In series connection, current remains same but voltage divides",
+      "In parallel connection, voltage remains same but current divides",
+      "WAPDA generates electricity at Tarbela Dam and supplies to cities like Karachi through transmission lines"
+    ],
+    "definitions": [
+      {
+        "term": "Electric Current",
+        "definition": "Electric current is the amount of charge flowing through any cross-section of a conductor in unit time. I = Q/t"
+      },
+      {
+        "term": "Potential Difference",
+        "definition": "The potential difference between two points is the work done in moving unit positive charge from one point to another. V = W/Q"
+      },
+      {
+        "term": "Resistance",
+        "definition": "Resistance is the property of a conductor which opposes the flow of current through it. R = V/I"
+      },
+      {
+        "term": "Electric Power",
+        "definition": "Electric power is the rate at which electrical energy is consumed or converted into other forms of energy. P = VI"
+      },
+      {
+        "term": "Electromotive Force (EMF)",
+        "definition": "EMF is the energy per unit charge supplied by a source like battery or generator. It is measured in volts."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define Ohm's Law and write its mathematical form.",
+        "answer": "Ohm's Law states that the current through a conductor is directly proportional to the voltage across it, provided temperature remains constant. Mathematically: V = IR or R = V/I"
+      },
+      {
+        "type": "long",
+        "question": "Derive the expression for equivalent resistance when three resistors are connected in series.",
+        "answer": "When resistors R₁, R₂, R₃ are connected in series: Current through each resistor is same (I). Total voltage V = V₁ + V₂ + V₃. By Ohm's law: V₁ = IR₁, V₂ = IR₂, V₃ = IR₃. Therefore: V = IR₁ + IR₂ + IR₃ = I(R₁ + R₂ + R₃). If Rs is equivalent resistance, then V = IRs. Hence: IRs = I(R₁ + R₂ + R₃). Therefore: Rs = R₁ + R₂ + R₃"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "The SI unit of electric current is:",
+        "options": {
+          "A": "Volt",
+          "B": "Ampere",
+          "C": "Ohm",
+          "D": "Watt"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "In parallel combination of resistors:",
+        "options": {
+          "A": "Current is same through each resistor",
+          "B": "Voltage is different across each resistor",
+          "C": "Voltage is same across each resistor",
+          "D": "Total resistance increases"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The power dissipated in a resistor is given by:",
+        "options": {
+          "A": "P = I²R",
+          "B": "P = V²/R",
+          "C": "P = VI",
+          "D": "All of the above"
+        },
+        "correct": "D"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse series and parallel connections — remember series has one path, parallel has multiple paths",
+      "Always write the formula before solving numerical problems",
+      "Students forget to convert units (mA to A, kΩ to Ω) before calculations",
+      "In parallel resistance formula, students forget to take reciprocal at the end",
+      "Students mix up current and voltage behavior in series vs parallel circuits"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and appears in every BSEK paper",
+      "Circuit diagram questions are very common — practice drawing series and parallel circuits",
+      "Ohm's law derivation and numerical problems appear frequently",
+      "Memorize all power formulas: P = VI, P = I²R, P = V²/R",
+      "Series and parallel resistance derivations are high-weightage topics"
+    ],
+    "formulas": [
+      "V = IR (Ohm's Law)",
+      "P = VI = I²R = V²/R",
+      "Series: Rs = R₁ + R₂ + R₃",
+      "Parallel: 1/Rp = 1/R₁ + 1/R₂ + 1/R₃",
+      "W = VIt = I²Rt (Energy)",
+      "I = Q/t (Current definition)"
+    ],
+    "keyDiagram": "Circuit diagrams showing series and parallel connections with resistors, battery, and ammeter/voltmeter positions. Students must show conventional current direction and proper circuit symbols as per STBB standards."
+  },
+  "created_at": "2026-04-06T06:06:25.044Z"
+}

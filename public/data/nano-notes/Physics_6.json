@@ -1,0 +1,101 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "General Physics",
+  "chapter_id": "6",
+  "chapter_name": "Energy stores and transfers",
+  "note_data": {
+    "title": "Energy stores and transfers",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Energy stores** include kinetic, gravitational potential, elastic potential, chemical, nuclear, thermal and electrostatic",
+      "**Energy transfer** occurs by heating, radiation, forces doing work and electrical working",
+      "**Conservation of energy** states that energy cannot be created or destroyed, only transferred from one store to another",
+      "**Kinetic energy** is the energy stored in moving objects and equals ½mv²",
+      "**Gravitational potential energy** is energy stored in objects at height and equals mgh",
+      "**Elastic potential energy** is energy stored in stretched or compressed objects",
+      "**Chemical energy** is energy stored in food, fuels and batteries",
+      "**Work done** equals force × distance moved in direction of force",
+      "**Power** is the rate of energy transfer and equals work done ÷ time taken",
+      "Energy is measured in **joules (J)** and power is measured in **watts (W)**"
+    ],
+    "definitions": [
+      {
+        "term": "Energy",
+        "definition": "The ability to do work"
+      },
+      {
+        "term": "Conservation of energy",
+        "definition": "Energy cannot be created or destroyed, only transferred from one store to another"
+      },
+      {
+        "term": "Work done",
+        "definition": "The energy transferred when a force moves an object through a distance"
+      },
+      {
+        "term": "Power",
+        "definition": "The rate of energy transfer or rate of doing work"
+      },
+      {
+        "term": "Efficiency",
+        "definition": "The fraction of energy input that is usefully transferred"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly with correct formula, substitution and unit"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of points about what happens"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A ball of mass 0.5 kg is dropped from a height of 10 m. Calculate the kinetic energy of the ball just before it hits the ground. (g = 10 m/s²)",
+      "marks": 3,
+      "answer": "GPE = mgh = 0.5 × 10 × 10 = 50 J. By conservation of energy, all gravitational potential energy converts to kinetic energy. Therefore KE = 50 J",
+      "markBreakdown": [
+        "Mark 1: Correct use of GPE = mgh",
+        "Mark 2: Correct calculation giving 50 J",
+        "Mark 3: Stating conservation of energy or KE = 50 J"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'energy is lost' — always say 'energy is transferred to thermal energy store'",
+      "Students often forget to include units (J for energy, W for power)",
+      "Confusing power and energy — power is rate of energy transfer, not amount of energy",
+      "Writing 'energy is destroyed' instead of 'energy is transferred to less useful stores'",
+      "Forgetting to square the velocity in KE = ½mv²"
+    ],
+    "examinerTips": [
+      "Energy calculations appear in almost every paper — practice substitution into formulas",
+      "Always start energy transfer questions by identifying initial and final energy stores",
+      "Sankey diagrams often test energy efficiency — practice drawing these",
+      "Use conservation of energy principle to solve problems involving energy transfers"
+    ],
+    "formulas": [
+      "KE = ½mv²",
+      "GPE = mgh",
+      "Work done = F × d",
+      "Power = work done ÷ time",
+      "Efficiency = useful energy output ÷ total energy input"
+    ],
+    "keyDiagramDescription": "Sankey diagram showing energy input on left, useful energy output at top right, and wasted energy (usually thermal) at bottom right. Arrow thickness represents amount of energy."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:15:48.554Z",
+  "updated_at": "2026-04-05T21:15:48.554Z"
+}

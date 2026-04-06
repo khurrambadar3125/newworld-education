@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Physical Chemistry",
+  "chapter_id": "AS8",
+  "chapter_name": "Reaction kinetics",
+  "note_data": {
+    "title": "Reaction kinetics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Rate of reaction** is the change in concentration of a reactant or product per unit time, measured in mol dm⁻³ s⁻¹",
+      "**Order of reaction** with respect to a reactant is the power to which the concentration of that reactant is raised in the rate equation",
+      "**Rate constant k** has units that depend on the overall order: zero order = mol dm⁻³ s⁻¹, first order = s⁻¹, second order = mol⁻¹ dm³ s⁻¹",
+      "**Half-life** is the time taken for the concentration of a reactant to decrease to half its original value",
+      "**Activation energy** is the minimum energy required for a reaction to occur when particles collide",
+      "A **catalyst** increases the rate of reaction by providing an alternative reaction pathway with lower activation energy",
+      "The **Boltzmann distribution** shows that only particles with energy ≥ Ea can react successfully",
+      "Increasing temperature shifts the Boltzmann distribution to higher energies, increasing the proportion of particles with energy ≥ Ea",
+      "Rate-determining step is the slowest step in a multi-step reaction mechanism that determines the overall rate"
+    ],
+    "definitions": [
+      {
+        "term": "Rate of reaction",
+        "definition": "The change in concentration of a reactant or product per unit time"
+      },
+      {
+        "term": "Order of reaction",
+        "definition": "The power to which the concentration of a reactant is raised in the rate equation"
+      },
+      {
+        "term": "Rate constant",
+        "definition": "The proportionality constant in the rate equation that is independent of concentration but varies with temperature"
+      },
+      {
+        "term": "Activation energy",
+        "definition": "The minimum energy required for a reaction to occur when particles collide"
+      },
+      {
+        "term": "Half-life",
+        "definition": "The time taken for the concentration of a reactant to decrease to half its original value"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Deduce",
+        "instruction": "Use the data given to work out the order by comparing rates when concentrations change"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working steps clearly, include units in final answer"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why increasing temperature increases the rate of reaction. Use the Boltzmann distribution in your answer.",
+      "marks": 3,
+      "answer": "Increasing temperature increases the kinetic energy of particles. This shifts the Boltzmann distribution to higher energies. A greater proportion of particles now have energy greater than or equal to the activation energy, so more successful collisions occur per unit time.",
+      "markBreakdown": [
+        "Mark 1: Increasing temperature increases kinetic energy of particles",
+        "Mark 2: Boltzmann distribution shifts to higher energies",
+        "Mark 3: Greater proportion of particles have energy ≥ Ea / more successful collisions"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'particles move faster' — always say 'particles have greater kinetic energy'",
+      "Students often confuse order with stoichiometry — order must be determined experimentally, not from the balanced equation",
+      "Don't say 'more collisions' — say 'more successful collisions' or 'greater proportion of collisions have energy ≥ Ea'",
+      "Students forget that catalysts are not used up in the reaction and appear in both forward and reverse reactions",
+      "Never say temperature 'gives particles more energy' — say temperature 'increases the kinetic energy of particles'"
+    ],
+    "examinerTips": [
+      "Rate equations and orders appear in every Paper 2 — practice determining order from initial rates data",
+      "Always draw and label the Boltzmann distribution curve when explaining temperature effects",
+      "Remember rate constant units change with overall order — learn the pattern",
+      "For catalyst questions, always mention 'alternative pathway with lower activation energy'"
+    ],
+    "formulas": [
+      "rate = k[A]^m[B]^n",
+      "k = Ae^(-Ea/RT)",
+      "ln k = ln A - Ea/RT",
+      "t₁/₂ = 0.693/k (first order only)"
+    ],
+    "keyDiagramDescription": "Boltzmann distribution curve showing number of particles vs kinetic energy, with vertical line at Ea and shaded area representing particles with sufficient energy to react. Show how curve shifts right at higher temperature."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:32:13.181Z",
+  "updated_at": "2026-04-06T04:32:13.181Z"
+}

@@ -1,0 +1,92 @@
+{
+  "subject": "English Language",
+  "subject_code": "1123",
+  "level": "O Level",
+  "theme": "Part 2: Writing",
+  "chapter_id": "7",
+  "chapter_name": "Directed writing",
+  "note_data": {
+    "title": "Directed Writing",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Format** must be appropriate to the text type (letter includes address, salutation, complimentary close; email includes To/From/Subject; speech includes addressing audience)",
+      "**Audience awareness** - language register and tone must suit the intended reader (formal for officials, persuasive for general public)",
+      "**Purpose** must be clearly fulfilled throughout - inform, persuade, argue, or advise as specified in the question",
+      "**Content points** from the stimulus text must be selected, developed and used relevantly to support your argument",
+      "**Personal response** and evaluation of ideas shows higher-order thinking beyond simple repetition of stimulus material",
+      "**Discursive approach** presents balanced arguments with clear reasoning when task requires discussion of different viewpoints",
+      "**Language variety** includes sophisticated vocabulary, varied sentence structures, and rhetorical devices appropriate to text type",
+      "**Logical structure** with clear introduction, developed paragraphs, and effective conclusion that reinforces main argument"
+    ],
+    "definitions": [
+      {
+        "term": "Directed Writing",
+        "definition": "A writing task that requires candidates to write in a specific format, for a particular audience and purpose, using stimulus material as a foundation"
+      },
+      {
+        "term": "Discursive Writing",
+        "definition": "Writing that presents different viewpoints on an issue in a balanced way, exploring various perspectives before reaching a reasoned conclusion"
+      },
+      {
+        "term": "Register",
+        "definition": "The level of formality in language appropriate to the audience, purpose and context of the writing task"
+      },
+      {
+        "term": "Stimulus Material",
+        "definition": "The provided text(s) containing information, ideas and viewpoints that candidates must use as a basis for their directed writing response"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Write a letter",
+        "instruction": "Include full address, date, salutation (Dear Sir/Madam or Dear + name), clear paragraphs addressing the task, and appropriate complimentary close (Yours faithfully/sincerely)"
+      },
+      {
+        "commandWord": "Write a speech",
+        "instruction": "Begin by addressing the audience directly, use rhetorical questions and persuasive language techniques, include clear topic sentences, end with a memorable conclusion"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Assess the strengths and weaknesses of different viewpoints, use phrases like 'However, it could be argued that...' and reach a balanced conclusion"
+      },
+      {
+        "commandWord": "Give your views",
+        "instruction": "Present your own opinion with clear reasoning, support with examples from stimulus and personal knowledge, acknowledge counter-arguments"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Write a letter to the editor of a local newspaper giving your views on whether mobile phones should be banned in schools. Use ideas from the stimulus material and add your own views. (25 marks)",
+      "marks": 25,
+      "answer": "123 Model Town, Lahore\n15th March 2024\n\nDear Editor,\n\nI am writing to express my views on the ongoing debate about banning mobile phones in schools, following recent discussions in your newspaper.\n\nWhile I understand concerns about phones disrupting lessons and causing cyberbullying, I believe a complete ban would be counterproductive. Mobile phones, when used responsibly, can enhance learning through educational apps and instant access to information. Moreover, in a country like Pakistan where many students travel long distances to school, phones provide essential communication with parents for safety purposes.\n\nHowever, I acknowledge that unrestricted phone use can lead to distraction and social media addiction among teenagers. Therefore, I propose a middle ground: allowing phones during breaks and emergencies while maintaining strict classroom policies.\n\nSchools should focus on teaching digital citizenship rather than imposing outright bans, preparing students for the technology-integrated world they will enter.\n\nYours sincerely,\nAhmed Hassan",
+      "markBreakdown": [
+        "Marks 1-3: Correct letter format with all required elements",
+        "Marks 4-8: Clear awareness of audience (newspaper readers) and persuasive purpose",
+        "Marks 9-15: Well-developed content using stimulus ideas and personal viewpoints",
+        "Marks 16-20: Effective use of language with varied vocabulary and sentence structures",
+        "Marks 21-25: Logical organization with clear introduction, development and conclusion"
+      ]
+    },
+    "commonMistakes": [
+      "Never write in the wrong format - always check whether it's a letter, email, or speech and include ALL required format features",
+      "Students often simply copy chunks from stimulus material instead of selecting, adapting and developing relevant points",
+      "Avoid using the same register throughout - formal letters to officials need different language than speeches to students",
+      "Never ignore the audience - writing 'Hello guys' in a formal letter to a government minister loses format marks",
+      "Students often present only one viewpoint instead of evaluating different perspectives as required by the question"
+    ],
+    "examinerTips": [
+      "This question appears in Paper 2 Question 1 and is worth 25 marks - spend 45 minutes including 10 minutes planning",
+      "Always read the stimulus material twice and highlight key points before starting to write",
+      "Use Pakistani contexts and examples to make your writing more authentic and engaging",
+      "Plan your argument structure before writing - introduction, 2-3 main points with development, conclusion",
+      "Save 5 minutes to check format features, spelling and basic grammar errors"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Create a planning template showing: Format checklist (address/salutation for letters, greeting for speeches), Content boxes for main arguments with supporting evidence, and Language register reminders for different audiences"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:50:16.502Z",
+  "updated_at": "2026-04-06T03:50:16.502Z"
+}

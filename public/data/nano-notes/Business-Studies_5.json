@@ -1,0 +1,104 @@
+{
+  "subject": "Business Studies",
+  "subject_code": "7115",
+  "level": "O Level",
+  "theme": "Business Environment",
+  "chapter_id": "5",
+  "chapter_name": "Financial Information",
+  "note_data": {
+    "title": "Financial Information",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Cash flow** is the money flowing in and out of a business over a period of time",
+      "A **cash flow forecast** predicts the cash inflows and outflows for future months",
+      "**Net cash flow** = Cash inflows - Cash outflows for each month",
+      "**Opening balance** + Net cash flow = **Closing balance** for each month",
+      "**Income statement** shows the profit or loss made by a business over a period of time",
+      "**Revenue** is the total income received from selling goods or services",
+      "**Cost of sales** includes costs directly involved in making the product",
+      "**Gross profit** = Revenue - Cost of sales",
+      "**Net profit** = Gross profit - Expenses",
+      "**Working capital** = Current assets - Current liabilities"
+    ],
+    "definitions": [
+      {
+        "term": "Cash flow",
+        "definition": "The movement of money into and out of a business over a period of time"
+      },
+      {
+        "term": "Net cash flow",
+        "definition": "The difference between cash inflows and cash outflows in a given period"
+      },
+      {
+        "term": "Income statement",
+        "definition": "A financial document that shows the revenue, costs and profit or loss of a business over a period of time"
+      },
+      {
+        "term": "Gross profit",
+        "definition": "Revenue minus cost of sales"
+      },
+      {
+        "term": "Net profit",
+        "definition": "Gross profit minus expenses"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly. Write formula first, then substitute numbers"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Give advantages AND disadvantages with explanations"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two reasons why a cash flow forecast is important for a new business. [6]",
+      "marks": 6,
+      "answer": "A cash flow forecast helps identify when the business might run out of cash because it shows the predicted closing balance each month. This allows the owner to arrange finance in advance to avoid cash flow problems. A cash flow forecast also helps with planning because it shows when the business expects to receive payments and when bills need to be paid. This helps the owner make decisions about when to buy stock or equipment.",
+      "markBreakdown": [
+        "Mark 1: Identifies cash shortage/running out of cash",
+        "Mark 2: Explains can arrange finance/avoid problems",
+        "Mark 3: Identifies helps with planning",
+        "Mark 4: Explains timing of payments/purchases",
+        "Mark 5: Application to new business context",
+        "Mark 6: Clear explanation throughout"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'cash flow forecast shows profit' — it shows cash movements, not profit",
+      "Students confuse revenue with profit — revenue is total income before costs",
+      "Don't mix up gross profit and net profit — gross profit is before expenses",
+      "Never say 'cash and profit are the same' — a profitable business can still have cash flow problems",
+      "Students forget to show working in calculations — always write the formula first"
+    ],
+    "examinerTips": [
+      "Cash flow calculations appear in almost every Paper 1 and Paper 2",
+      "Always check your cash flow forecast calculations — closing balance becomes next month's opening balance",
+      "For income statements, follow the exact order: Revenue - Cost of sales = Gross profit - Expenses = Net profit",
+      "Use Pakistani business examples like textile factories in Faisalabad or rice exports from Punjab for context"
+    ],
+    "formulas": [
+      "Net cash flow = Cash inflows - Cash outflows",
+      "Closing balance = Opening balance + Net cash flow",
+      "Gross profit = Revenue - Cost of sales",
+      "Net profit = Gross profit - Expenses",
+      "Working capital = Current assets - Current liabilities"
+    ],
+    "keyDiagramDescription": "Cash flow forecast table showing months across the top, with rows for cash inflows, cash outflows, net cash flow, opening balance and closing balance. Income statement format showing Revenue at top, minus Cost of sales equals Gross profit, minus Expenses equals Net profit."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:53:26.032Z",
+  "updated_at": "2026-04-06T03:53:26.032Z"
+}

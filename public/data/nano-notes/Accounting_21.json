@@ -1,0 +1,99 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 4: Advanced Topics",
+  "chapter_id": "21",
+  "chapter_name": "Limited companies",
+  "note_data": {
+    "title": "Limited companies",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **limited company** is a separate legal entity from its owners with liability limited to the amount invested",
+      "**Share capital** represents the money raised by issuing shares to shareholders who become part-owners of the company",
+      "**Ordinary shares** carry voting rights and variable dividends based on company profits",
+      "**Preference shares** receive fixed dividends before ordinary shareholders and have priority in liquidation",
+      "**Dividends** are distributions of profit to shareholders, declared by directors and paid from retained earnings",
+      "**Retained earnings** are accumulated profits kept in the business for reinvestment rather than distributed as dividends",
+      "**Reserves** include share premium, retained earnings and revaluation reserves which strengthen the company's financial position",
+      "Limited companies must prepare **statutory accounts** including Income Statement and Statement of Financial Position for shareholders",
+      "**Appropriation account** shows how net profit is distributed between dividends and retained earnings"
+    ],
+    "definitions": [
+      {
+        "term": "Limited company",
+        "definition": "A business organization that is a separate legal entity from its owners, where shareholders' liability is limited to the amount they have invested in shares"
+      },
+      {
+        "term": "Share capital",
+        "definition": "The money raised by a company through issuing shares to shareholders, representing ownership in the company"
+      },
+      {
+        "term": "Dividend",
+        "definition": "A payment made to shareholders from company profits as a return on their investment"
+      },
+      {
+        "term": "Retained earnings",
+        "definition": "Profits that have been kept in the business rather than distributed to shareholders as dividends"
+      },
+      {
+        "term": "Ordinary shares",
+        "definition": "Shares that carry voting rights and receive variable dividends depending on company performance"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show clear workings for dividend calculations or earnings per share"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Use correct format with proper headings for company accounts"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two advantages to shareholders of investing in a limited company rather than a partnership. (4 marks)",
+      "marks": 4,
+      "answer": "Limited liability - shareholders can only lose the amount they invested in shares because the company is a separate legal entity from its owners. This protects personal assets from business debts. Transferability of shares - shareholders can easily sell their shares to other investors because shares are freely transferable, providing an exit route from their investment.",
+      "markBreakdown": [
+        "Mark 1: Limited liability stated",
+        "Mark 2: Explanation of limited liability protection",
+        "Mark 3: Transferability of shares stated",
+        "Mark 4: Explanation of ease of selling shares"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'shareholders own the company' — always say 'shareholders are part-owners of the company'",
+      "Students often confuse share capital with loan capital - share capital represents ownership, loan capital is borrowed money",
+      "Don't write 'profit goes to shareholders' — write 'dividends are paid from retained earnings to shareholders'",
+      "Never say 'unlimited liability' when describing limited companies - always emphasize 'limited liability'",
+      "Students incorrectly think all profits must be paid as dividends - companies can retain profits for reinvestment"
+    ],
+    "examinerTips": [
+      "Limited companies appear frequently in Paper 2 final accounts questions",
+      "Always distinguish between ordinary and preference shares when answering dividend questions",
+      "Remember to show appropriation of profit when preparing company accounts",
+      "Company accounts format differs from sole trader - include share capital and reserves sections"
+    ],
+    "formulas": [
+      "Earnings per share = Net profit after tax ÷ Number of ordinary shares",
+      "Dividend per share = Total dividends ÷ Number of shares",
+      "Dividend yield = Dividend per share ÷ Market price per share × 100"
+    ],
+    "keyDiagramDescription": "Statement of Financial Position showing Equity section with Share Capital (Ordinary shares + Preference shares) and Reserves (Share premium + Retained earnings + Other reserves) to demonstrate company ownership structure"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:42:40.568Z",
+  "updated_at": "2026-04-06T03:42:40.568Z"
+}

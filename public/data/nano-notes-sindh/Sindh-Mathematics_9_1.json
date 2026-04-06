@@ -1,0 +1,114 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "1",
+  "chapter_name": "Real and Complex Numbers",
+  "note_data": {
+    "title": "Real and Complex Numbers",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Natural numbers (N) = {1, 2, 3, 4, ...} — counting numbers used in daily life",
+      "Whole numbers (W) = {0, 1, 2, 3, 4, ...} — natural numbers including zero",
+      "Integers (Z) = {..., -3, -2, -1, 0, 1, 2, 3, ...} — positive and negative whole numbers",
+      "Rational numbers (Q) — numbers that can be expressed as p/q where p, q are integers and q ≠ 0",
+      "Irrational numbers — numbers that cannot be expressed as p/q, like √2, √3, π",
+      "Real numbers (R) — union of rational and irrational numbers",
+      "Complex numbers — numbers of the form a + bi where a, b are real numbers and i = √(-1)",
+      "Every natural number is a whole number, every whole number is an integer, every integer is a rational number",
+      "The decimal expansion of rational numbers is either terminating or recurring",
+      "Complex numbers were introduced to solve equations like x² + 1 = 0"
+    ],
+    "definitions": [
+      {
+        "term": "Rational Number",
+        "definition": "A number that can be expressed in the form p/q where p and q are integers and q ≠ 0 is called a rational number."
+      },
+      {
+        "term": "Irrational Number",
+        "definition": "A number that cannot be expressed in the form p/q where p and q are integers and q ≠ 0 is called an irrational number."
+      },
+      {
+        "term": "Real Number",
+        "definition": "The set of all rational and irrational numbers taken together is called the set of real numbers."
+      },
+      {
+        "term": "Complex Number",
+        "definition": "A number of the form a + bi where a and b are real numbers and i = √(-1) is called a complex number."
+      },
+      {
+        "term": "Imaginary Unit",
+        "definition": "The symbol i which represents √(-1) is called the imaginary unit where i² = -1."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define rational and irrational numbers with examples.",
+        "answer": "Rational number: Can be expressed as p/q where p, q are integers, q ≠ 0. Example: 3/4, 0.5. Irrational number: Cannot be expressed as p/q. Example: √2, π."
+      },
+      {
+        "type": "long",
+        "question": "Show that √2 is an irrational number.",
+        "answer": "Proof by contradiction: Assume √2 is rational, so √2 = p/q where p, q are integers in lowest terms. Then 2 = p²/q², so p² = 2q². This means p² is even, so p is even. Let p = 2k, then 4k² = 2q², so q² = 2k². This means q is also even. But this contradicts our assumption that p/q is in lowest terms. Therefore √2 is irrational."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which of the following is a rational number?",
+        "options": {
+          "A": "√2",
+          "B": "π",
+          "C": "0.333...",
+          "D": "√5"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The value of i² is:",
+        "options": {
+          "A": "1",
+          "B": "-1",
+          "C": "i",
+          "D": "0"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which set contains all others?",
+        "options": {
+          "A": "Natural numbers",
+          "B": "Whole numbers",
+          "C": "Integers",
+          "D": "Real numbers"
+        },
+        "correct": "D"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse rational and irrational — remember rational can be written as fraction",
+      "Forgetting that 0 is not a natural number but is a whole number",
+      "Writing i² = 1 instead of i² = -1",
+      "Not showing complete proof steps when proving √2 is irrational",
+      "Mixing up the symbols N, W, Z, Q, R for different number sets"
+    ],
+    "examTips": [
+      "This chapter usually has 2 MCQs and 1 short question in every BSEK paper",
+      "The proof that √2 is irrational appears as a long question every 2-3 years",
+      "Memorize the exact definitions — they are asked word-for-word",
+      "Practice identifying rational vs irrational numbers quickly for MCQs",
+      "Remember the hierarchy: N ⊂ W ⊂ Z ⊂ Q ⊂ R ⊂ C"
+    ],
+    "formulas": [
+      "i = √(-1)",
+      "i² = -1",
+      "i³ = -i",
+      "i⁴ = 1",
+      "Complex number: z = a + bi"
+    ],
+    "keyDiagram": "Venn diagram showing the relationship between number sets: Natural numbers inside Whole numbers inside Integers inside Rational numbers inside Real numbers inside Complex numbers. Show examples in each region."
+  },
+  "created_at": "2026-04-06T06:20:12.153Z"
+}

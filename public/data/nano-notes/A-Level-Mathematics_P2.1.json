@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Mathematics",
+  "subject_code": "9709",
+  "level": "A Level",
+  "theme": "Pure Mathematics 2 & 3",
+  "chapter_id": "P2.1",
+  "chapter_name": "Algebra",
+  "note_data": {
+    "title": "Algebra",
+    "readTime": "8 min",
+    "keyPoints": [
+      "For **modulus equations** |f(x)| = k, solve both f(x) = k and f(x) = -k, then check solutions in original equation",
+      "For **modulus inequalities** |f(x)| < k, solve -k < f(x) < k as a compound inequality",
+      "For **modulus inequalities** |f(x)| > k, solve f(x) > k OR f(x) < -k separately",
+      "**Polynomial division** uses the form P(x) = Q(x)D(x) + R(x) where degree of R(x) < degree of D(x)",
+      "**Remainder Theorem**: when P(x) is divided by (x - a), the remainder is P(a)",
+      "**Factor Theorem**: (x - a) is a factor of P(x) if and only if P(a) = 0",
+      "**Partial fractions** with linear factors: express A/(x-a) + B/(x-b) = (given fraction)",
+      "**Partial fractions** with repeated factors: use A/(x-a) + B/(x-a)² for factor (x-a)²",
+      "**Binomial expansion**: (a+b)ⁿ = Σ(ⁿCᵣ)aⁿ⁻ʳbʳ for positive integer n",
+      "**Binomial coefficient**: ⁿCᵣ = n!/(r!(n-r)!) where ⁿC₀ = ⁿCₙ = 1"
+    ],
+    "definitions": [
+      {
+        "term": "Modulus",
+        "definition": "The modulus |x| is the positive value of x, defined as x when x ≥ 0 and -x when x < 0"
+      },
+      {
+        "term": "Polynomial",
+        "definition": "An expression of the form aₙxⁿ + aₙ₋₁xⁿ⁻¹ + ... + a₁x + a₀ where aₙ ≠ 0 and n is a non-negative integer"
+      },
+      {
+        "term": "Partial Fraction",
+        "definition": "The decomposition of a rational function into simpler fractions with linear or quadratic denominators"
+      },
+      {
+        "term": "Binomial Coefficient",
+        "definition": "The coefficient ⁿCᵣ in the binomial expansion, representing the number of ways to choose r objects from n objects"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Work through each step clearly, stating what you are doing at each stage"
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Give the final answer clearly, showing all working steps"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Express (7x + 1)/((x + 1)(x - 2)) in partial fractions.",
+      "marks": 3,
+      "answer": "(7x + 1)/((x + 1)(x - 2)) ≡ A/(x + 1) + B/(x - 2)\n7x + 1 ≡ A(x - 2) + B(x + 1)\nWhen x = -1: -7 + 1 = A(-3) + 0, so -6 = -3A, therefore A = 2\nWhen x = 2: 14 + 1 = 0 + B(3), so 15 = 3B, therefore B = 5\nTherefore (7x + 1)/((x + 1)(x - 2)) = 2/(x + 1) + 5/(x - 2)",
+      "markBreakdown": [
+        "Mark 1: Correct partial fraction form with constants A and B",
+        "Mark 2: Correct method to find A = 2 and B = 5",
+        "Mark 3: Final answer in correct form"
+      ]
+    },
+    "commonMistakes": [
+      "Never ignore the modulus sign - always consider both positive and negative cases",
+      "Students often forget to check solutions in the original modulus equation",
+      "Never multiply out brackets when finding partial fractions - use substitution method instead",
+      "Students often confuse the forms for repeated factors in partial fractions",
+      "Never assume binomial expansion works for negative or fractional powers without stating conditions"
+    ],
+    "examinerTips": [
+      "Modulus questions appear in every Paper 1, often combined with quadratics",
+      "Always show the substitution step clearly in partial fractions for method marks",
+      "State the range of validity when using binomial expansion",
+      "Draw sign diagrams for modulus inequalities to avoid errors"
+    ],
+    "formulas": [
+      "|x| = x when x ≥ 0, |x| = -x when x < 0",
+      "(a + b)ⁿ = Σ(r=0 to n) ⁿCᵣ aⁿ⁻ʳ bʳ",
+      "ⁿCᵣ = n!/(r!(n-r)!)",
+      "P(x) = Q(x)D(x) + R(x)"
+    ],
+    "keyDiagramDescription": "Sign diagrams showing where expressions are positive/negative for modulus inequalities, with clear marking of critical points and solution intervals"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:51:11.136Z",
+  "updated_at": "2026-04-06T04:51:11.136Z"
+}

@@ -1,0 +1,90 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Physical Chemistry",
+  "chapter_id": "AS7",
+  "chapter_name": "Equilibria",
+  "note_data": {
+    "title": "Equilibria",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Dynamic equilibrium** occurs when the rate of forward reaction equals the rate of backward reaction and concentrations remain constant",
+      "**Le Chatelier's principle** states that if a system at equilibrium is disturbed, the position of equilibrium shifts to oppose the change",
+      "Increasing temperature shifts equilibrium in the **endothermic direction** to absorb the extra heat",
+      "Increasing pressure shifts equilibrium towards the side with **fewer gas molecules** to reduce pressure",
+      "Adding a **catalyst** has no effect on the position of equilibrium but increases the rate of both forward and backward reactions equally",
+      "**Kc** is the equilibrium constant in terms of concentrations and only changes with temperature",
+      "**Kp** is the equilibrium constant in terms of partial pressures for gaseous equilibria",
+      "If Kc > 1, the equilibrium position lies to the **right** (products favoured)",
+      "Adding more reactant shifts equilibrium to the **right** to use up the excess reactant"
+    ],
+    "definitions": [
+      {
+        "term": "Dynamic equilibrium",
+        "definition": "The state where the rate of forward reaction equals the rate of backward reaction and the concentrations of reactants and products remain constant"
+      },
+      {
+        "term": "Le Chatelier's principle",
+        "definition": "If a system at equilibrium is subjected to a change, the position of equilibrium will shift to oppose that change"
+      },
+      {
+        "term": "Equilibrium constant (Kc)",
+        "definition": "The ratio of the product of concentrations of products to the product of concentrations of reactants, each raised to their stoichiometric coefficients, at equilibrium"
+      },
+      {
+        "term": "Partial pressure",
+        "definition": "The pressure that a gas in a mixture would exert if it alone occupied the whole volume"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give Le Chatelier's principle or effect without explanation"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "State the change + direction of shift + reason using 'because' or 'to oppose'"
+      },
+      {
+        "commandWord": "Deduce",
+        "instruction": "Use Kc/Kp values or equilibrium principles to reach a conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "The Haber process produces ammonia: N₂(g) + 3H₂(g) ⇌ 2NH₃(g) ΔH = -92 kJ mol⁻¹. Explain the effect of increasing temperature on the yield of ammonia.",
+      "marks": 3,
+      "answer": "Increasing temperature decreases the yield of ammonia because the equilibrium shifts to the left (towards reactants) to oppose the temperature increase by absorbing heat in the endothermic direction (backward reaction).",
+      "markBreakdown": [
+        "Mark 1: Yield decreases",
+        "Mark 2: Equilibrium shifts left/towards reactants",
+        "Mark 3: Correct explanation using Le Chatelier's principle and endothermic direction"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'equilibrium moves faster' - always say 'equilibrium position shifts'",
+      "Students often confuse Kc and Kp - Kc uses concentrations, Kp uses partial pressures",
+      "Don't say catalysts 'speed up equilibrium' - they help equilibrium to be reached faster",
+      "Never include solids or liquids in Kc expressions - only gases and aqueous solutions",
+      "Students write 'more products formed' instead of 'equilibrium shifts towards products'"
+    ],
+    "examinerTips": [
+      "Equilibrium calculations appear in every Paper 2 - practice Kc and Kp expressions",
+      "Always relate industrial processes like Haber process to equilibrium principles",
+      "For temperature effects, identify whether forward reaction is exo/endothermic first",
+      "Remember: only temperature changes the value of K"
+    ],
+    "formulas": [
+      "Kc = [products]/[reactants]",
+      "Kp = (partial pressures of products)/(partial pressures of reactants)",
+      "Partial pressure = mole fraction × total pressure"
+    ],
+    "keyDiagramDescription": "Graph showing concentration vs time reaching constant levels at equilibrium, with equal forward and backward reaction rates"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:31:52.001Z",
+  "updated_at": "2026-04-06T04:31:52.001Z"
+}

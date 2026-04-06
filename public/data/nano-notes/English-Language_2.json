@@ -1,0 +1,98 @@
+{
+  "subject": "English Language",
+  "subject_code": "1123",
+  "level": "O Level",
+  "theme": "Part 1: Reading",
+  "chapter_id": "2",
+  "chapter_name": "Reading for comprehension",
+  "note_data": {
+    "title": "Reading for comprehension",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Explicit information** is directly stated in the passage and can be found word-for-word in the text",
+      "**Implicit information** requires inference and reading between the lines to understand what is suggested but not directly stated",
+      "When answering in **your own words**, never copy phrases longer than 2-3 words from the passage",
+      "**Author's attitude** questions require identifying tone words like positive, negative, critical, admiring, or neutral",
+      "**Opinion questions** ask for the writer's viewpoint - look for evaluative language and judgment words",
+      "Use **context clues** around unfamiliar vocabulary to determine meaning from surrounding words",
+      "**Scanning** helps locate specific information quickly by looking for key words and phrases",
+      "**Skimming** gives you the general idea and main points before detailed reading",
+      "Always **quote exactly** when the question asks for words or phrases from the passage"
+    ],
+    "definitions": [
+      {
+        "term": "Explicit information",
+        "definition": "Information that is clearly and directly stated in the text without need for interpretation"
+      },
+      {
+        "term": "Implicit information",
+        "definition": "Information that is suggested or hinted at but not directly stated, requiring the reader to make inferences"
+      },
+      {
+        "term": "Context clues",
+        "definition": "Words or phrases surrounding an unfamiliar word that help determine its meaning"
+      },
+      {
+        "term": "Author's attitude",
+        "definition": "The writer's feelings, opinions or stance toward the subject being discussed"
+      },
+      {
+        "term": "Inference",
+        "definition": "A logical conclusion drawn from evidence and reasoning rather than explicit statements"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the fact directly from the text in one clear sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point plus reason using 'because', 'since', or 'this shows that'"
+      },
+      {
+        "commandWord": "In your own words",
+        "instruction": "Rewrite the information without copying phrases. Change vocabulary and sentence structure."
+      },
+      {
+        "commandWord": "What does the word mean",
+        "instruction": "Use context clues to give a simple definition that fits the passage"
+      },
+      {
+        "commandWord": "How does the writer feel",
+        "instruction": "Identify attitude through tone words and give evidence from the text"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Using your own words, explain why the traffic situation in Karachi has become problematic. (3 marks)",
+      "marks": 3,
+      "answer": "The traffic situation has deteriorated because the number of vehicles has increased dramatically while road infrastructure has not expanded adequately. Additionally, poor traffic management and lack of effective public transport have worsened congestion throughout the city.",
+      "markBreakdown": [
+        "Mark 1: Vehicle numbers increased significantly",
+        "Mark 2: Road infrastructure insufficient/inadequate",
+        "Mark 3: Poor management/lack of public transport"
+      ]
+    },
+    "commonMistakes": [
+      "Never copy long phrases when asked for 'own words' - paraphrase using different vocabulary",
+      "Students often confuse explicit (stated) with implicit (suggested) information",
+      "Don't give personal opinions when asked for the author's attitude or viewpoint",
+      "Avoid looking for implicit meaning when information is clearly stated explicitly",
+      "Never ignore context clues when determining word meanings - use surrounding text"
+    ],
+    "examinerTips": [
+      "Reading comprehension appears in Paper 2 and is worth 25 marks - practice daily",
+      "Read the questions first to know what to look for in the passage",
+      "Underline key words in questions to focus your search for answers",
+      "For attitude questions, look for adjectives and adverbs that show the writer's feelings"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "No specific diagram required for this topic - focus on text analysis and annotation techniques"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:48:05.871Z",
+  "updated_at": "2026-04-06T03:48:05.871Z"
+}

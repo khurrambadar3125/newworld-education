@@ -1,0 +1,109 @@
+{
+  "subject": "Mathematics",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "26",
+  "chapter_name": "Tangent to a Circle",
+  "note_data": {
+    "title": "Tangent to a Circle",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "A tangent to a circle is a straight line which touches the circle at one and only one point",
+      "The point where tangent touches the circle is called the point of contact or point of tangency",
+      "A tangent to a circle is perpendicular to the radius drawn to the point of contact",
+      "Two tangents drawn from an external point to a circle are equal in length",
+      "The angle between a tangent and a chord drawn from the point of contact equals the angle in the alternate segment",
+      "From any external point, only two tangents can be drawn to a circle",
+      "The tangent at any point on a circle is perpendicular to the diameter passing through that point",
+      "Common tangents to two circles can be internal or external depending on their position"
+    ],
+    "definitions": [
+      {
+        "term": "Tangent to a Circle",
+        "definition": "A tangent to a circle is a straight line which touches the circle at one and only one point."
+      },
+      {
+        "term": "Point of Contact",
+        "definition": "The point where a tangent touches the circle is called the point of contact or point of tangency."
+      },
+      {
+        "term": "External Point",
+        "definition": "A point which lies outside the circle is called an external point."
+      },
+      {
+        "term": "Common Tangent",
+        "definition": "A straight line which is tangent to two or more circles is called a common tangent."
+      },
+      {
+        "term": "Alternate Segment",
+        "definition": "The two segments of a circle formed by a chord are called alternate segments."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Prove that tangent to a circle is perpendicular to the radius at the point of contact.",
+        "answer": "Given: A circle with center O and tangent AB touching at point P. To prove: OP ⊥ AB. Proof: If OP is not perpendicular to AB, then perpendicular from O to AB will meet AB at some other point Q. This means OQ < OP, which contradicts that P is the point of contact. Hence, OP ⊥ AB."
+      },
+      {
+        "type": "long",
+        "question": "Prove that two tangents drawn from an external point to a circle are equal in length.",
+        "answer": "Given: Circle with center O, external point P, tangents PA and PB touching at A and B. To prove: PA = PB. Construction: Join OA, OB, OP. Proof: In triangles OAP and OBP: OA = OB (radii), ∠OAP = ∠OBP = 90° (tangent ⊥ radius), OP = OP (common). Therefore, △OAP ≅ △OBP (RHS). Hence, PA = PB (corresponding sides of congruent triangles)."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "If two tangents are drawn from an external point to a circle, then the angle between the tangents is:",
+        "options": {
+          "A": "90°",
+          "B": "180°",
+          "C": "Supplementary to the angle at center",
+          "D": "Equal to the angle at center"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The length of tangent from external point P to a circle with center O and radius 5 cm is 12 cm. The distance OP is:",
+        "options": {
+          "A": "7 cm",
+          "B": "13 cm",
+          "C": "17 cm",
+          "D": "15 cm"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "A tangent to a circle makes an angle with the radius at point of contact equal to:",
+        "options": {
+          "A": "45°",
+          "B": "60°",
+          "C": "90°",
+          "D": "180°"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students often forget that tangent is perpendicular to radius at point of contact",
+      "Confusing point of contact with center of circle in diagrams",
+      "Not mentioning RHS congruency rule when proving tangent length equality",
+      "Drawing tangents from internal point instead of external point",
+      "Forgetting to write 'given', 'to prove', and 'construction' in geometry proofs"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 long proof question in BSEK papers",
+      "Always draw neat diagrams with proper labeling - marks are given for diagrams",
+      "Memorize the standard proofs word-by-word as they appear in STBB textbook",
+      "Practice numerical problems involving Pythagorean theorem with tangent lengths",
+      "Remember to write complete proof format: Given, To Prove, Construction, Proof"
+    ],
+    "formulas": [
+      "If tangent length = l, radius = r, distance from external point to center = d, then l² + r² = d²",
+      "Length of tangent from external point P to circle = √(OP² - r²)"
+    ],
+    "keyDiagram": "Circle with center O, external point P, two tangents PA and PB touching the circle at points A and B respectively. Join OA, OB, OP to form triangles OAP and OBP. Mark right angles at A and B to show tangent perpendicular to radius."
+  },
+  "created_at": "2026-04-06T06:29:24.282Z"
+}

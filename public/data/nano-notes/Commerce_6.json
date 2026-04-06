@@ -1,0 +1,93 @@
+{
+  "subject": "Commerce",
+  "subject_code": "7100",
+  "level": "O Level",
+  "theme": "Supporting Commerce",
+  "chapter_id": "6",
+  "chapter_name": "Sustainability and Ethics",
+  "note_data": {
+    "title": "Sustainability and Ethics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Sustainability** means meeting present needs without compromising the ability of future generations to meet their own needs",
+      "**Corporate Social Responsibility (CSR)** requires businesses to consider their impact on society and the environment, not just profits",
+      "**Ethical business practices** involve treating stakeholders fairly and operating with honesty and integrity in all business decisions",
+      "**Consumer rights** include the right to safety, information, choice, and to be heard when making complaints",
+      "**Environmental sustainability** requires businesses to minimize waste, reduce pollution, and use renewable resources where possible",
+      "**Fair trade** ensures producers in developing countries receive fair prices and decent working conditions",
+      "**Triple bottom line** approach considers profit, people, and planet when measuring business success",
+      "**Stakeholder approach** means considering the needs of employees, customers, suppliers, community, and shareholders equally"
+    ],
+    "definitions": [
+      {
+        "term": "Sustainability",
+        "definition": "Meeting present needs without compromising the ability of future generations to meet their own needs"
+      },
+      {
+        "term": "Corporate Social Responsibility (CSR)",
+        "definition": "The responsibility of businesses to consider their impact on society and the environment, not just profits"
+      },
+      {
+        "term": "Ethical business practices",
+        "definition": "Conducting business with honesty, integrity and fairness to all stakeholders"
+      },
+      {
+        "term": "Fair trade",
+        "definition": "A trading partnership that ensures producers in developing countries receive fair prices and decent working conditions"
+      },
+      {
+        "term": "Triple bottom line",
+        "definition": "Measuring business success based on profit, people and planet rather than just financial profit"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Discuss",
+        "instruction": "Give both advantages and disadvantages with explanations"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the issue and explain the impact on different stakeholders"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain three benefits to a business of adopting sustainable practices.",
+      "marks": 6,
+      "answer": "Improved brand image because consumers increasingly prefer environmentally responsible companies, leading to increased sales. Reduced operating costs because sustainable practices like energy efficiency and waste reduction lower utility bills and disposal costs. Access to new markets because many contracts now require suppliers to demonstrate environmental responsibility and sustainability credentials.",
+      "markBreakdown": [
+        "Mark 1-2: Improved brand image with explanation",
+        "Mark 3-4: Reduced operating costs with explanation",
+        "Mark 5-6: Access to new markets with explanation"
+      ]
+    },
+    "commonMistakes": [
+      "Never say sustainability is just about the environment — it includes social and economic factors too",
+      "Students often confuse CSR with charity work — CSR is about responsible business operations, not just donations",
+      "Don't just list consumer rights — always explain how they protect consumers in your answer",
+      "Avoid saying ethical practices reduce profits — explain how they can improve long-term profitability",
+      "Never suggest that only large businesses can be sustainable — small businesses can also adopt sustainable practices"
+    ],
+    "examinerTips": [
+      "Sustainability questions appear frequently in Paper 2, especially asking for benefits and challenges",
+      "Always use Pakistani examples like textile industry sustainability or renewable energy projects",
+      "Link sustainability to stakeholder impact for higher marks",
+      "Remember that sustainability has economic, social AND environmental dimensions"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Stakeholder diagram showing business in center with arrows connecting to employees, customers, suppliers, community, shareholders, and government, demonstrating how CSR affects all groups"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:12:32.600Z",
+  "updated_at": "2026-04-06T04:12:32.600Z"
+}

@@ -1,0 +1,88 @@
+{
+  "subject": "English Language",
+  "subject_code": "1123",
+  "level": "O Level",
+  "theme": "Part 2: Writing",
+  "chapter_id": "6",
+  "chapter_name": "Writing skills",
+  "note_data": {
+    "title": "Writing skills",
+    "readTime": "8 min",
+    "keyPoints": [
+      "Identify **audience** and **purpose** clearly before writing to ensure appropriate tone and content",
+      "Use **varied vocabulary** including sophisticated words, idiomatic expressions and technical terms when appropriate",
+      "Apply **Standard English grammar** with accurate tenses, subject-verb agreement and sentence construction",
+      "Structure writing with clear **introduction, development and conclusion** using appropriate paragraphs",
+      "Create a detailed **plan** showing main points and supporting details before writing",
+      "Adopt consistent **voice** (formal/informal) that matches audience and purpose throughout",
+      "Use **discourse markers** (however, furthermore, consequently) to link ideas coherently",
+      "Apply **punctuation accurately** including complex punctuation for effect and clarity"
+    ],
+    "definitions": [
+      {
+        "term": "Audience",
+        "definition": "The specific group of people for whom the writing is intended, affecting choice of vocabulary, tone and content"
+      },
+      {
+        "term": "Purpose",
+        "definition": "The reason for writing such as to inform, persuade, entertain, advise or describe"
+      },
+      {
+        "term": "Voice",
+        "definition": "The consistent tone and style adopted throughout the writing that reflects the relationship between writer and reader"
+      },
+      {
+        "term": "Register",
+        "definition": "The level of formality in language that matches the audience and purpose"
+      },
+      {
+        "term": "Discourse markers",
+        "definition": "Words and phrases that connect ideas and show relationships between sentences and paragraphs"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Write",
+        "instruction": "Produce the specified text type ensuring correct format, audience awareness and purpose"
+      },
+      {
+        "commandWord": "Plan",
+        "instruction": "Show clear structure with main points and supporting details before writing"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Write the opening paragraph of a letter to your school principal suggesting improvements to the library facilities. (6 marks)",
+      "marks": 6,
+      "answer": "Dear Principal Ahmed,\n\nI am writing to respectfully suggest several improvements to our school library that would significantly enhance the learning experience for all students. As a dedicated student who frequently uses the library for research and study, I have observed certain areas where thoughtful enhancements could transform this vital educational resource into an even more effective learning environment that meets the diverse needs of our student body.",
+      "markBreakdown": [
+        "Mark 1: Correct formal letter format",
+        "Mark 2: Appropriate respectful tone for audience",
+        "Mark 3: Clear statement of purpose",
+        "Mark 4: Sophisticated vocabulary (enhance, vital, diverse)",
+        "Mark 5: Complex sentence structures",
+        "Mark 6: Establishes credibility and engages reader"
+      ]
+    },
+    "commonMistakes": [
+      "Never use informal language like 'gonna' or 'cos' in formal writing — always use Standard English",
+      "Students often forget to plan and produce unstructured writing with poor paragraph organization",
+      "Never use the same simple vocabulary throughout — always vary word choices and use sophisticated alternatives",
+      "Students frequently ignore audience and use inappropriate tone for the intended reader",
+      "Never write without clear purpose — always ensure every paragraph serves the writing objective"
+    ],
+    "examinerTips": [
+      "Writing tasks appear in both Paper 1 and Paper 2 with different formats and requirements",
+      "Always spend 5 minutes planning before writing to ensure clear structure and content",
+      "Read the question twice to identify exact audience, purpose and format requirements",
+      "Use the full range of punctuation including semicolons and colons for higher marks"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Planning framework showing: Audience identification → Purpose clarification → Structure outline (introduction/development/conclusion) → Key points with supporting details → Vocabulary and tone decisions"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:49:41.850Z",
+  "updated_at": "2026-04-06T03:49:41.850Z"
+}

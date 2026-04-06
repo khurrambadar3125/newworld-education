@@ -1,0 +1,90 @@
+{
+  "subject": "A Level Accounting",
+  "subject_code": "9706",
+  "level": "A Level",
+  "theme": "AS Accounting",
+  "chapter_id": "AS4",
+  "chapter_name": "Bank reconciliation and control accounts",
+  "note_data": {
+    "title": "Bank reconciliation and control accounts",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Bank reconciliation** is a statement that explains the differences between the cash book balance and the bank statement balance on a given date",
+      "**Unpresented cheques** are cheques issued by the business but not yet cleared by the bank - deducted from bank statement balance",
+      "**Outstanding lodgements** are deposits made by the business but not yet recorded by the bank - added to bank statement balance",
+      "**Bank charges and interest** appearing on bank statement must be recorded in the cash book as adjusting items",
+      "**Sales ledger control account** is a memorandum account that shows the total amount owed by all debtors",
+      "**Purchase ledger control account** is a memorandum account that shows the total amount owed to all creditors",
+      "Control accounts help detect errors by comparing the control account balance with the list of balances from individual accounts",
+      "**Contra entries** occur when the same person is both a debtor and creditor - recorded on both sides of respective control accounts",
+      "Errors in individual accounts are revealed when the control account balance disagrees with the list of individual balances"
+    ],
+    "definitions": [
+      {
+        "term": "Bank reconciliation statement",
+        "definition": "A statement prepared to explain the differences between the cash book balance and the bank statement balance on a particular date"
+      },
+      {
+        "term": "Control account",
+        "definition": "A memorandum account that contains the total of a number of similar individual accounts and is used to check the arithmetical accuracy of the ledger"
+      },
+      {
+        "term": "Unpresented cheques",
+        "definition": "Cheques that have been issued and recorded in the cash book but have not yet been presented to and cleared by the bank"
+      },
+      {
+        "term": "Outstanding lodgements",
+        "definition": "Deposits that have been recorded in the cash book but have not yet appeared on the bank statement"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Prepare",
+        "instruction": "Set up proper format with headings, show all workings, and ensure mathematical accuracy"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly and state the final answer with appropriate units"
+      }
+    ],
+    "modelAnswer": {
+      "question": "The cash book shows a bank balance of Rs.15,400 (debit) on 31 May. The bank statement shows a balance of Rs.18,200 (credit). Unpresented cheques total Rs.3,600 and outstanding lodgements total Rs.800. Prepare a bank reconciliation statement.",
+      "marks": 4,
+      "answer": "Bank Reconciliation Statement as at 31 May\nBalance as per bank statement: Rs.18,200\nAdd: Outstanding lodgements: Rs.800\nLess: Unpresented cheques: Rs.3,600\nBalance as per cash book: Rs.15,400",
+      "markBreakdown": [
+        "Mark 1: Correct heading with date",
+        "Mark 2: Starting with bank statement balance Rs.18,200",
+        "Mark 3: Correct treatment of outstanding lodgements (+800) and unpresented cheques (-3,600)",
+        "Mark 4: Final balance agrees with cash book Rs.15,400"
+      ]
+    },
+    "commonMistakes": [
+      "Never add unpresented cheques to bank statement balance — always deduct them because they reduce the bank's record",
+      "Students often confuse debit balance in cash book with credit balance — debit means money in bank, credit means overdrawn",
+      "Never ignore bank charges from bank statement — they must be entered in cash book as adjusting items",
+      "Students incorrectly add opening balances twice in control accounts instead of using them as starting point",
+      "Never write 'sales' in purchase ledger control account — only purchases, returns outwards, payments and discounts received"
+    ],
+    "examinerTips": [
+      "Bank reconciliation appears in almost every Paper 2 examination",
+      "Always start bank reconciliation with bank statement balance, not cash book balance",
+      "Control accounts questions worth 8-12 marks are common in Section B",
+      "Show contra entries on both debit and credit sides of control accounts for full marks"
+    ],
+    "formulas": [
+      "Closing debtors = Opening debtors + Credit sales - Cash received - Returns inwards - Bad debts - Discounts allowed ± Contra",
+      "Closing creditors = Opening creditors + Credit purchases - Cash paid - Returns outwards - Discounts received ± Contra"
+    ],
+    "keyDiagramDescription": "T-account format showing Sales Ledger Control Account with opening balance, sales, and returns inwards on debit side; cash received, discounts allowed, bad debts, and closing balance on credit side"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:25:11.940Z",
+  "updated_at": "2026-04-06T05:25:11.940Z"
+}

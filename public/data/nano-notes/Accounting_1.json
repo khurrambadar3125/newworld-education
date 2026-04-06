@@ -1,0 +1,94 @@
+{
+  "subject": "Accounting",
+  "subject_code": "7707",
+  "level": "O Level",
+  "theme": "Section 1: Introduction",
+  "chapter_id": "1",
+  "chapter_name": "Introduction to accounting",
+  "note_data": {
+    "title": "Introduction to accounting",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Accounting** is the recording, classifying and summarizing of financial transactions and communicating the results to interested parties",
+      "The main purpose of accounting is to **provide financial information** to help users make informed economic decisions",
+      "**Internal users** include managers, owners and employees who need information for planning, controlling and decision-making",
+      "**External users** include investors, lenders, suppliers, customers and government who need information to assess financial performance",
+      "Accounting provides information about **financial position** (what the business owns and owes) and **financial performance** (profit or loss)",
+      "**Stewardship** means managers are accountable to owners for how they have used the business resources",
+      "Accounting helps in **planning** future activities, **controlling** current operations and **decision-making** for the business",
+      "Financial information must be **relevant, reliable, comparable and understandable** to be useful to users"
+    ],
+    "definitions": [
+      {
+        "term": "Accounting",
+        "definition": "The recording, classifying and summarizing of financial transactions and communicating the results to interested parties"
+      },
+      {
+        "term": "Internal users",
+        "definition": "People within the business who use accounting information for planning, controlling and decision-making"
+      },
+      {
+        "term": "External users",
+        "definition": "People outside the business who use accounting information to make economic decisions about the business"
+      },
+      {
+        "term": "Stewardship",
+        "definition": "The responsibility of managers to account to owners for how they have used the business resources"
+      },
+      {
+        "term": "Financial position",
+        "definition": "What the business owns (assets) and what it owes (liabilities) at a particular point in time"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Identify",
+        "instruction": "Name or select the correct answer from information given"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give the main features or characteristics without explanation"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two purposes of accounting. [4 marks]",
+      "marks": 4,
+      "answer": "One purpose is to provide financial information to users because this helps them make informed economic decisions about the business. Another purpose is stewardship because managers need to account to owners for how they have used the business resources.",
+      "markBreakdown": [
+        "Mark 1: Provide financial information to users",
+        "Mark 2: To help make informed economic decisions",
+        "Mark 3: Stewardship",
+        "Mark 4: Managers account to owners for use of resources"
+      ]
+    },
+    "commonMistakes": [
+      "Never say accounting is 'just bookkeeping' — always say it includes communicating results to users",
+      "Students often confuse internal and external users — remember managers are internal, investors are external",
+      "Don't say accounting 'makes profit' — say it 'measures and reports profit'",
+      "Never give examples as definitions — define the term then give examples separately",
+      "Students forget that stewardship means accountability to owners, not just managing resources"
+    ],
+    "examinerTips": [
+      "This topic appears every year as foundation knowledge for other topics",
+      "Always distinguish between recording transactions and communicating results",
+      "Questions often ask for users and their information needs — learn specific examples",
+      "Purpose questions need the reason WHY accounting is done, not just WHAT it does"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Accounting process flow: Financial transactions → Recording → Classifying → Summarizing → Communicating to internal users (managers, owners, employees) and external users (investors, lenders, suppliers, government)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:35:12.671Z",
+  "updated_at": "2026-04-06T03:35:12.673Z"
+}

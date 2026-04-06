@@ -1,0 +1,106 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "1",
+  "chapter_name": "Introduction to Biology",
+  "note_data": {
+    "title": "Introduction to Biology",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Biology is the scientific study of living organisms and their relationship with environment",
+      "Major branches include Botany (study of plants), Zoology (study of animals), and Microbiology (study of microorganisms)",
+      "Living organisms show seven characteristics: Growth, Reproduction, Metabolism, Cellular organization, Homeostasis, Heredity, and Response to stimuli",
+      "Scientific method involves Observation, Hypothesis formation, Experimentation, Data collection, and Conclusion",
+      "Bioinformatics is the use of computer technology to study biological data and solve biological problems",
+      "Career opportunities in biology include Medicine, Agriculture, Biotechnology, Environmental sciences, and Research",
+      "Biology helps solve problems related to food production, disease control, and environmental conservation in Pakistan",
+      "Levels of biological organization: Molecule → Cell → Tissue → Organ → Organ system → Organism → Population → Community → Ecosystem → Biosphere"
+    ],
+    "definitions": [
+      {
+        "term": "Biology",
+        "definition": "Biology is the scientific study of living organisms and their relationship with environment."
+      },
+      {
+        "term": "Botany",
+        "definition": "Botany is the branch of biology that deals with the study of plants."
+      },
+      {
+        "term": "Zoology",
+        "definition": "Zoology is the branch of biology that deals with the study of animals."
+      },
+      {
+        "term": "Hypothesis",
+        "definition": "A hypothesis is a tentative explanation or prediction that can be tested by experimentation."
+      },
+      {
+        "term": "Bioinformatics",
+        "definition": "Bioinformatics is the use of computer technology to study and analyze biological data."
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define Biology and write names of its major branches.",
+        "answer": "Biology is the scientific study of living organisms and their relationship with environment. Its major branches are Botany (study of plants), Zoology (study of animals), and Microbiology (study of microorganisms)."
+      },
+      {
+        "type": "long",
+        "question": "Describe the steps of scientific method with examples.",
+        "answer": "Scientific method involves five steps: 1) Observation - Careful examination of natural phenomena, 2) Hypothesis - Formation of tentative explanation that can be tested, 3) Experimentation - Controlled testing of hypothesis under specific conditions, 4) Data Collection - Recording and analyzing results obtained from experiments, 5) Conclusion - Drawing final results based on data analysis. Example: Fleming observed that bacteria around mold were killed, hypothesized that mold produces antibacterial substance, experimented with penicillin mold, collected data showing bacterial death, concluded that penicillin is an antibiotic."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which branch of biology deals with the study of microorganisms?",
+        "options": {
+          "A": "Botany",
+          "B": "Zoology",
+          "C": "Microbiology",
+          "D": "Ecology"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The first step in scientific method is:",
+        "options": {
+          "A": "Hypothesis",
+          "B": "Observation",
+          "C": "Experimentation",
+          "D": "Conclusion"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Bioinformatics is the study of:",
+        "options": {
+          "A": "Computer programming",
+          "B": "Biological data using computers",
+          "C": "Information technology",
+          "D": "Data science"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students often write Biology as 'study of life' instead of exact definition 'scientific study of living organisms and their relationship with environment'",
+      "Confusing Microbiology with Biotechnology - Microbiology studies microorganisms while Biotechnology uses living organisms for human benefit",
+      "Writing hypothesis as 'guess' instead of 'tentative explanation that can be tested'",
+      "Missing the word 'scientific' when defining Biology",
+      "Not mentioning all five steps of scientific method in proper sequence"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Definition of Biology appears in 90% of papers - memorize exact wording",
+      "Scientific method steps question is very common - learn the sequence",
+      "Career opportunities in biology is a favorite long question topic",
+      "Always write complete definitions with exact textbook language"
+    ],
+    "formulas": [],
+    "keyDiagram": "Levels of Biological Organization diagram showing hierarchy from molecules to biosphere with examples at each level (commonly asked to draw and label in exams)"
+  },
+  "created_at": "2026-04-06T06:13:37.859Z"
+}

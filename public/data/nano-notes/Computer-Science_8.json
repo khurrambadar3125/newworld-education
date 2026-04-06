@@ -1,0 +1,99 @@
+{
+  "subject": "Computer Science",
+  "subject_code": "2210",
+  "level": "O Level",
+  "theme": "Paper 2: Algorithms and Programming",
+  "chapter_id": "8",
+  "chapter_name": "Programming",
+  "note_data": {
+    "title": "Programming",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Data types** include integer, real/float, Boolean, character, and string - each stores different types of data",
+      "**Input** operations read data from user/file using commands like INPUT or READ, **output** operations display data using PRINT or OUTPUT",
+      "**Arithmetic operators** include + (addition), - (subtraction), * (multiplication), / (division), MOD (remainder), DIV (integer division)",
+      "**Sequence** executes statements one after another, **selection** uses IF-THEN-ELSE to choose paths, **iteration** repeats code using FOR, WHILE, or REPEAT loops",
+      "**Totalling** adds values using a running total variable, **counting** increments a counter variable inside loops",
+      "**String manipulation** includes concatenation (&), LENGTH(), MID(), LEFT(), RIGHT() functions to process text data",
+      "**Nested statements** place one control structure inside another, such as IF statements inside loops or loops inside other loops",
+      "**Subroutines** are named blocks of code that can be called repeatedly - procedures perform actions, functions return values",
+      "**Arrays** store multiple values of the same data type using an index to access individual elements",
+      "**File handling** includes OPENFILE, READFILE, WRITEFILE, CLOSEFILE operations to store and retrieve data permanently"
+    ],
+    "definitions": [
+      {
+        "term": "Algorithm",
+        "definition": "A sequence of step-by-step instructions to solve a problem"
+      },
+      {
+        "term": "Variable",
+        "definition": "A named storage location in memory that holds a value which can change during program execution"
+      },
+      {
+        "term": "Array",
+        "definition": "A data structure that stores multiple values of the same data type using a single identifier with index positions"
+      },
+      {
+        "term": "Loop",
+        "definition": "A programming construct that repeats a block of code until a specified condition is met"
+      },
+      {
+        "term": "Subroutine",
+        "definition": "A named block of code that performs a specific task and can be called from other parts of the program"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Write",
+        "instruction": "Provide actual code statements using correct syntax and variable names"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed steps of what happens in the algorithm or code"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Write an algorithm to input 10 student marks from Karachi Grammar School, calculate the total and find the average mark.",
+      "marks": 4,
+      "answer": "Total ← 0\nFOR Count ← 1 TO 10\n    INPUT Mark\n    Total ← Total + Mark\nNEXT Count\nAverage ← Total / 10\nOUTPUT Average",
+      "markBreakdown": [
+        "Mark 1: Initialize Total to 0",
+        "Mark 2: Use FOR loop from 1 to 10 with correct syntax",
+        "Mark 3: Input mark and add to running total inside loop",
+        "Mark 4: Calculate average by dividing total by 10"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'loop' - always specify FOR loop, WHILE loop, or REPEAT loop for full marks",
+      "Students forget to initialize totalling variables to 0 before the loop starts",
+      "Writing array[5] instead of array[1 TO 5] when declaring array size",
+      "Confusing procedures (perform actions) with functions (return values) in subroutine questions",
+      "Not using correct pseudocode syntax - must use ←, INPUT, OUTPUT, not = or print"
+    ],
+    "examinerTips": [
+      "Programming appears in Paper 2 Section B worth 15-20 marks every year",
+      "Always show variable initialization clearly in algorithm questions",
+      "Use correct pseudocode syntax from the syllabus - marks lost for incorrect notation",
+      "Trace tables often follow algorithm questions - practice step-by-step execution"
+    ],
+    "formulas": [
+      "Average = Total / Count",
+      "Array element access: ArrayName[Index]"
+    ],
+    "keyDiagramDescription": "Flowchart symbols: oval (start/end), rectangle (process), diamond (decision), parallelogram (input/output), with arrows showing program flow direction"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:46:09.488Z",
+  "updated_at": "2026-04-06T03:46:09.488Z"
+}

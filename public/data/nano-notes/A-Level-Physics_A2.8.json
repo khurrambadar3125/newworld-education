@@ -1,0 +1,102 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "A2 Electromagnetism and Nuclear",
+  "chapter_id": "A2.8",
+  "chapter_name": "Capacitance",
+  "note_data": {
+    "title": "Capacitance",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Capacitance** is defined as the charge stored per unit potential difference across a capacitor",
+      "A **capacitor** consists of two conducting plates separated by an insulator (dielectric)",
+      "The **capacitance** of a parallel plate capacitor is given by C = ε₀εᵣA/d where A is plate area and d is separation",
+      "During **charging**, current decreases exponentially and follows I = I₀e^(-t/RC)",
+      "During **discharging**, charge decreases exponentially following Q = Q₀e^(-t/RC)",
+      "The **time constant** τ = RC is the time taken for charge to fall to 1/e (37%) of its initial value",
+      "**Energy stored** in a capacitor is given by W = ½QV = ½CV² = ½Q²/C",
+      "A **dielectric** increases capacitance by a factor of εᵣ (relative permittivity)",
+      "Capacitors in **series**: 1/C = 1/C₁ + 1/C₂ + 1/C₃",
+      "Capacitors in **parallel**: C = C₁ + C₂ + C₃"
+    ],
+    "definitions": [
+      {
+        "term": "Capacitance",
+        "definition": "The charge stored per unit potential difference across a capacitor"
+      },
+      {
+        "term": "Time constant",
+        "definition": "The time taken for the charge on a capacitor to fall to 1/e of its initial value during discharge"
+      },
+      {
+        "term": "Dielectric",
+        "definition": "An insulating material placed between capacitor plates that increases the capacitance"
+      },
+      {
+        "term": "Relative permittivity",
+        "definition": "The ratio of the permittivity of a material to the permittivity of free space"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Start with the given equation and manipulate algebraically to reach the required result"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working steps with correct units and appropriate significant figures"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A 470 μF capacitor is charged to 12 V and then discharged through a 2.2 kΩ resistor. Calculate (a) the initial energy stored (b) the time constant (c) the charge remaining after 2.0 s.",
+      "marks": 6,
+      "answer": "(a) W = ½CV² = ½ × 470 × 10⁻⁶ × 12² = 0.034 J\n(b) τ = RC = 2.2 × 10³ × 470 × 10⁻⁶ = 1.03 s\n(c) Q₀ = CV = 470 × 10⁻⁶ × 12 = 5.64 × 10⁻³ C\nQ = Q₀e^(-t/RC) = 5.64 × 10⁻³ × e^(-2.0/1.03) = 7.4 × 10⁻⁴ C",
+      "markBreakdown": [
+        "Mark 1: Correct formula W = ½CV²",
+        "Mark 2: Correct energy = 0.034 J",
+        "Mark 3: Correct time constant = 1.03 s",
+        "Mark 4: Initial charge calculated",
+        "Mark 5: Correct exponential formula used",
+        "Mark 6: Final charge = 7.4 × 10⁻⁴ C"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'stores current' — always say 'stores charge' when describing capacitors",
+      "Students often confuse charging and discharging equations — check if Q₀ is initial or final value",
+      "Never use τ = 1/RC — the correct time constant is τ = RC",
+      "Students forget to convert units (μF to F, kΩ to Ω) leading to incorrect orders of magnitude",
+      "Never say 'completely discharged' — capacitors approach zero charge asymptotically"
+    ],
+    "examinerTips": [
+      "Capacitance calculations appear in every Paper 2 — practice exponential decay graphs",
+      "Always check units in your final answer — charge in C, energy in J, time in s",
+      "Draw I-t and Q-t graphs clearly showing exponential curves, not straight lines",
+      "Time constant questions often ask for 1/e, 1/2 or specific percentages — know all forms"
+    ],
+    "formulas": [
+      "C = Q/V",
+      "C = ε₀εᵣA/d",
+      "W = ½QV = ½CV² = ½Q²/C",
+      "Q = Q₀e^(-t/RC)",
+      "I = I₀e^(-t/RC)",
+      "V = V₀e^(-t/RC)",
+      "τ = RC"
+    ],
+    "keyDiagramDescription": "Exponential decay graph showing charge Q against time t, with time constant τ marked where Q = Q₀/e, and axes clearly labelled with Q₀ at t = 0"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:45:24.475Z",
+  "updated_at": "2026-04-06T04:45:24.475Z"
+}

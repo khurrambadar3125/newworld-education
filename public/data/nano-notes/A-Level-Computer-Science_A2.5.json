@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "A2 Computer Science",
+  "chapter_id": "A2.5",
+  "chapter_name": "Artificial intelligence",
+  "note_data": {
+    "title": "Artificial intelligence",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Artificial intelligence** is the simulation of human intelligence by computer systems to perform tasks that normally require human intelligence",
+      "**Machine learning** is a subset of AI where computers learn from data without being explicitly programmed for each specific task",
+      "**Supervised learning** uses labelled training data to learn patterns and make predictions on new, unseen data",
+      "**Unsupervised learning** finds hidden patterns in data without using labelled examples or target outputs",
+      "**Neural networks** are computing systems inspired by biological neural networks that consist of interconnected nodes (neurons) processing information",
+      "**Expert systems** are AI programs that use knowledge bases and inference engines to solve problems in specific domains like medical diagnosis",
+      "**Natural language processing** enables computers to understand, interpret and generate human language in text or speech format",
+      "**Computer vision** allows machines to identify, analyse and understand visual information from images or video streams",
+      "AI applications include chatbots, recommendation systems, autonomous vehicles, facial recognition, and predictive analytics in various industries"
+    ],
+    "definitions": [
+      {
+        "term": "Artificial Intelligence",
+        "definition": "The simulation of human intelligence processes by computer systems, including learning, reasoning and self-correction"
+      },
+      {
+        "term": "Machine Learning",
+        "definition": "A subset of AI where computers automatically learn and improve from experience without being explicitly programmed"
+      },
+      {
+        "term": "Neural Network",
+        "definition": "A computing system modelled on biological neural networks, consisting of interconnected nodes that process information using weighted connections"
+      },
+      {
+        "term": "Expert System",
+        "definition": "An AI program that uses a knowledge base of facts and rules with an inference engine to solve problems in a specific domain"
+      },
+      {
+        "term": "Training Data",
+        "definition": "A dataset used to teach a machine learning algorithm to make predictions or classifications"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics and features. Use bullet points for clarity."
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between two AI concepts"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the difference between supervised and unsupervised machine learning. [4 marks]",
+      "marks": 4,
+      "answer": "Supervised learning uses labelled training data where the correct answers are provided to the algorithm. The algorithm learns from input-output pairs to make predictions on new data. For example, email spam detection uses emails already classified as spam or not spam. Unsupervised learning uses unlabelled data with no target outputs provided. The algorithm finds hidden patterns or structures in the data without knowing the correct answers. For example, customer segmentation groups customers based on purchasing behaviour without predefined categories.",
+      "markBreakdown": [
+        "Mark 1: Supervised learning uses labelled/training data",
+        "Mark 2: Algorithm learns from input-output pairs/correct answers provided",
+        "Mark 3: Unsupervised learning uses unlabelled data/no target outputs",
+        "Mark 4: Finds hidden patterns without knowing correct answers"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'AI thinks' — always say 'AI processes data' or 'AI follows algorithms'",
+      "Students confuse machine learning with programming — ML learns from data, programming follows explicit instructions",
+      "Don't say neural networks 'copy the brain' — say they are 'inspired by' or 'modelled on' biological neural networks",
+      "Avoid saying expert systems 'know everything' — they work within specific, limited domains only",
+      "Never claim AI has consciousness or emotions — it processes information using mathematical algorithms"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 — focus on definitions and comparisons",
+      "Always give specific examples when describing AI applications",
+      "Draw clear diagrams for neural networks showing inputs, hidden layers, and outputs",
+      "Distinguish between narrow AI (current) and general AI (theoretical future)",
+      "Link AI applications to real-world Pakistani contexts like agriculture, healthcare, or banking"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Neural network diagram showing input layer (data inputs), hidden layer(s) with weighted connections between nodes, and output layer producing final results. Each connection has a weight value, and nodes apply activation functions to process signals."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:19:13.037Z",
+  "updated_at": "2026-04-06T05:19:13.037Z"
+}

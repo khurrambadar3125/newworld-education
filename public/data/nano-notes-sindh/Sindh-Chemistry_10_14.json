@@ -1,0 +1,110 @@
+{
+  "subject": "Chemistry",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "14",
+  "chapter_name": "Environmental Chemistry II: Water",
+  "note_data": {
+    "title": "Environmental Chemistry II: Water",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Water is a universal solvent and essential for all living organisms — covers 71% of Earth's surface",
+      "Hard water contains dissolved calcium and magnesium salts, while soft water contains negligible amounts of these salts",
+      "Temporary hardness is caused by bicarbonates of calcium and magnesium and can be removed by boiling",
+      "Permanent hardness is caused by chlorides and sulfates of calcium and magnesium and cannot be removed by boiling",
+      "Water treatment involves screening, sedimentation, filtration, and chlorination to make it safe for drinking",
+      "Water pollution in Pakistan occurs due to industrial waste, sewage discharge, and agricultural runoff",
+      "Biological Oxygen Demand (BOD) is a measure of water pollution — higher BOD indicates more pollution",
+      "Distillation produces the purest form of water by removing all dissolved impurities",
+      "pH of pure water is 7 at 25°C, making it neutral in nature"
+    ],
+    "definitions": [
+      {
+        "term": "Hard Water",
+        "definition": "Water which does not readily form lather with soap due to the presence of dissolved salts of calcium and magnesium"
+      },
+      {
+        "term": "Soft Water",
+        "definition": "Water which readily forms lather with soap and contains negligible amounts of calcium and magnesium salts"
+      },
+      {
+        "term": "Temporary Hardness",
+        "definition": "Hardness of water caused by the presence of bicarbonates of calcium and magnesium which can be removed by boiling"
+      },
+      {
+        "term": "Permanent Hardness",
+        "definition": "Hardness of water caused by the presence of chlorides and sulfates of calcium and magnesium which cannot be removed by boiling"
+      },
+      {
+        "term": "BOD",
+        "definition": "Biological Oxygen Demand is the amount of oxygen required by bacteria to decompose organic matter in water at 20°C for 5 days"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between temporary and permanent hardness of water.",
+        "answer": "Temporary hardness is caused by bicarbonates of Ca and Mg and can be removed by boiling. Permanent hardness is caused by chlorides and sulfates of Ca and Mg and cannot be removed by boiling."
+      },
+      {
+        "type": "long",
+        "question": "Describe the methods of water treatment and purification used in Karachi Water Supply.",
+        "answer": "Water treatment involves: 1) Screening - removes large floating materials 2) Sedimentation - allows suspended particles to settle using alum 3) Filtration - water passes through sand and gravel beds 4) Chlorination - kills bacteria and viruses 5) Storage in covered tanks before distribution. This ensures safe drinking water supply to Karachi's population."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which salt causes temporary hardness in water?",
+        "options": {
+          "A": "CaCl₂",
+          "B": "MgSO₄",
+          "C": "Ca(HCO₃)₂",
+          "D": "MgCl₂"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The pH of pure water at 25°C is:",
+        "options": {
+          "A": "6",
+          "B": "7",
+          "C": "8",
+          "D": "9"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "BOD stands for:",
+        "options": {
+          "A": "Bacterial Oxygen Demand",
+          "B": "Basic Oxygen Demand",
+          "C": "Biological Oxygen Demand",
+          "D": "Biochemical Oxygen Demand"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse temporary and permanent hardness causes — remember bicarbonates vs chlorides/sulfates",
+      "Writing CaCO₃ instead of Ca(HCO₃)₂ for temporary hardness",
+      "Forgetting to mention time period (5 days) and temperature (20°C) in BOD definition",
+      "Not drawing the water treatment flow diagram in proper sequence",
+      "Confusing water purification methods with hardness removal methods"
+    ],
+    "examTips": [
+      "Water hardness differentiation appears in every BSEK paper — memorize exact definitions",
+      "Always draw the water treatment flow diagram when asked about purification",
+      "BOD definition must include exact temperature and time as given in textbook",
+      "Use Pakistani examples like Tarbela Dam, Karachi Water Board in long answers"
+    ],
+    "formulas": [
+      "Ca(HCO₃)₂ → CaCO₃ + H₂O + CO₂ (removing temporary hardness)",
+      "Mg(HCO₃)₂ → MgCO₃ + H₂O + CO₂ (removing temporary hardness)",
+      "CaCl₂ + Na₂CO₃ → CaCO₃ + 2NaCl (removing permanent hardness)"
+    ],
+    "keyDiagram": "Water Treatment Flow Chart showing: Raw Water → Screening → Sedimentation Tank → Sand Filter → Chlorination → Storage Tank → Distribution. Include arrows and labels for each step."
+  },
+  "created_at": "2026-04-06T06:12:31.151Z"
+}

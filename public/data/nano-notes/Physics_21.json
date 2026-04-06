@@ -1,0 +1,94 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "Electricity and Magnetism",
+  "chapter_id": "21",
+  "chapter_name": "Electromagnetic induction",
+  "note_data": {
+    "title": "Electromagnetic induction",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Electromagnetic induction** occurs when a conductor moves through a magnetic field or when a magnetic field changes near a conductor",
+      "An **induced EMF** is generated when there is relative motion between a conductor and magnetic field lines",
+      "The direction of induced current opposes the change causing it (**Lenz's law**)",
+      "**Generators** convert kinetic energy to electrical energy using electromagnetic induction",
+      "In **step-up transformers**, secondary voltage is greater than primary voltage (more turns on secondary coil)",
+      "In **step-down transformers**, secondary voltage is less than primary voltage (fewer turns on secondary coil)",
+      "**Power transmission** at high voltage reduces energy losses in cables",
+      "Transformers only work with **alternating current** because changing magnetic field is required",
+      "The **transformer equation** relates voltage to number of turns: Vs/Vp = Ns/Np"
+    ],
+    "definitions": [
+      {
+        "term": "Electromagnetic induction",
+        "definition": "The process of generating an EMF (and current if circuit is complete) when a conductor moves through a magnetic field or when magnetic field changes near a conductor"
+      },
+      {
+        "term": "Generator",
+        "definition": "A device that converts kinetic energy into electrical energy using electromagnetic induction"
+      },
+      {
+        "term": "Transformer",
+        "definition": "A device that changes the voltage of an alternating current using electromagnetic induction"
+      },
+      {
+        "term": "Step-up transformer",
+        "definition": "A transformer that increases voltage (secondary voltage greater than primary voltage)"
+      },
+      {
+        "term": "Step-down transformer",
+        "definition": "A transformer that decreases voltage (secondary voltage less than primary voltage)"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of events or detailed account of the process"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why transformers are used in the electrical power transmission system from Tarbela Dam to Karachi. [3 marks]",
+      "marks": 3,
+      "answer": "Step-up transformers increase voltage for long-distance transmission. High voltage reduces current in transmission lines. Lower current reduces power losses (as heat) in the cables, making transmission more efficient.",
+      "markBreakdown": [
+        "Mark 1: Step-up transformers increase voltage",
+        "Mark 2: High voltage reduces current",
+        "Mark 3: Lower current reduces power losses/heat losses"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'transformers work with DC' — transformers only work with AC because changing magnetic field is needed",
+      "Students often confuse step-up and step-down transformers — check number of turns carefully",
+      "Never say 'electricity flows faster at high voltage' — high voltage reduces current, not speed",
+      "Don't forget Lenz's law — induced current always opposes the change that caused it",
+      "Students forget that EMF is induced even if no current flows (open circuit)"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2, especially transformer calculations",
+      "Always state whether transformer is step-up or step-down before calculations",
+      "Power transmission questions often link to energy efficiency — mention reduced losses",
+      "Draw and label transformer diagrams showing primary/secondary coils and iron core"
+    ],
+    "formulas": [
+      "Vs/Vp = Ns/Np",
+      "Power = V × I",
+      "For ideal transformer: VpIp = VsIs"
+    ],
+    "keyDiagramDescription": "Transformer diagram showing iron core with primary coil (fewer turns) connected to AC supply and secondary coil (more turns) connected to load, demonstrating step-up configuration"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:20:46.020Z",
+  "updated_at": "2026-04-05T21:20:46.020Z"
+}

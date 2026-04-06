@@ -1,0 +1,97 @@
+{
+  "subject": "Sociology",
+  "subject_code": "2251",
+  "level": "O Level",
+  "theme": "Social Institutions",
+  "chapter_id": "6",
+  "chapter_name": "Crime and Deviance",
+  "note_data": {
+    "title": "Crime and Deviance",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Crime** is behaviour that breaks the formal written law and is punishable by the state through the criminal justice system",
+      "**Deviance** is behaviour that goes against the norms and values of society but may not necessarily be illegal",
+      "**Social control** operates through formal agencies (police, courts, prisons) and informal agencies (family, peer groups, media)",
+      "**Relative nature** means what is considered criminal or deviant varies between cultures, time periods and social groups",
+      "**Labelling theory** suggests individuals become deviant when society labels them as such, leading to self-fulfilling prophecy",
+      "**White-collar crime** refers to crimes committed by people in professional or business positions, often involving financial fraud",
+      "**Punishment** serves four main functions: deterrence, retribution, rehabilitation and public protection",
+      "**Age, gender and social class** are key factors that influence patterns of crime and criminal behaviour",
+      "**Media representation** of crime can create moral panics and amplify deviance in society"
+    ],
+    "definitions": [
+      {
+        "term": "Crime",
+        "definition": "Behaviour that breaks the formal written law and is punishable by the state through official sanctions"
+      },
+      {
+        "term": "Deviance",
+        "definition": "Behaviour that goes against the accepted norms and values of society and results in negative sanctions"
+      },
+      {
+        "term": "Social control",
+        "definition": "The methods used by society to encourage conformity and prevent deviant behaviour through formal and informal agencies"
+      },
+      {
+        "term": "Labelling",
+        "definition": "The process by which society attaches negative labels to certain individuals or groups, potentially leading to further deviance"
+      },
+      {
+        "term": "White-collar crime",
+        "definition": "Criminal acts committed by people in professional, managerial or business positions, typically involving financial or corporate fraud"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Discuss",
+        "instruction": "Give arguments for AND against with evidence and examples"
+      },
+      {
+        "commandWord": "Assess",
+        "instruction": "Evaluate strengths and weaknesses, conclude with overall judgement"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why women commit fewer crimes than men. [6]",
+      "marks": 6,
+      "answer": "Women commit fewer crimes than men because of different socialisation patterns. Girls are socialised to be more conformist and less aggressive than boys, making them less likely to engage in criminal behaviour. Women also face greater informal social control through family responsibilities and social expectations of respectability. Additionally, women have fewer opportunities to commit certain types of crime, particularly violent crimes, due to their generally smaller physical size and different social roles. The chivalry factor also means that women may be treated more leniently by the criminal justice system, leading to lower recorded crime rates.",
+      "markBreakdown": [
+        "Mark 1: Different socialisation patterns",
+        "Mark 2: Explanation of conformist socialisation",
+        "Mark 3: Greater informal social control",
+        "Mark 4: Fewer opportunities for crime",
+        "Mark 5: Physical/social role factors",
+        "Mark 6: Chivalry factor in criminal justice"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'deviance is always illegal' — deviance can be legal behaviour that breaks social norms",
+      "Students often confuse formal and informal social control — formal uses official agencies, informal uses social pressure",
+      "Don't assume all criminals are from working class backgrounds — white-collar crime shows middle class criminality",
+      "Avoid saying 'crime rates are rising everywhere' — crime patterns vary by type, location and time period",
+      "Never ignore the relative nature of crime — what is criminal varies between societies and over time"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 Section B questions worth 15 marks",
+      "Always use Pakistani examples like honour crimes, corruption cases, or traffic violations to show application",
+      "Link crime and deviance to other topics like social stratification and education for higher level analysis",
+      "Remember to distinguish between different types of crime (violent, property, white-collar) in longer answers"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Crime and deviance overlap diagram showing how some deviant acts are criminal (theft), some criminal acts are not deviant to all groups (tax evasion), and some deviant acts are not criminal (unusual dress)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:14:58.736Z",
+  "updated_at": "2026-04-06T04:14:58.736Z"
+}

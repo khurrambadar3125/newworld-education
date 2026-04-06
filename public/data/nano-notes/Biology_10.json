@@ -1,0 +1,95 @@
+{
+  "subject": "Biology",
+  "subject_code": "5090",
+  "level": "O Level",
+  "theme": "Respiration and Coordination",
+  "chapter_id": "10",
+  "chapter_name": "Coordination and response",
+  "note_data": {
+    "title": "Coordination and response",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **nervous system** consists of the central nervous system (CNS) and peripheral nervous system for rapid coordination",
+      "**Hormones** are chemical substances produced by endocrine glands and transported in blood plasma to target organs",
+      "A **reflex action** is a rapid, automatic response to a stimulus that does not involve conscious thought",
+      "**Synapses** are junctions between neurons where electrical impulses are transmitted by chemical neurotransmitters",
+      "The **brain** controls and coordinates body functions including conscious actions and memory",
+      "**Insulin** is a hormone produced by the pancreas that reduces blood glucose concentration by promoting glucose uptake by cells",
+      "**Glucagon** is produced by the pancreas and increases blood glucose concentration by stimulating glucose release from the liver",
+      "**Homeostasis** is the maintenance of constant internal conditions in the body",
+      "Sense organs contain **receptors** that detect stimuli and convert them into electrical impulses"
+    ],
+    "definitions": [
+      {
+        "term": "Hormone",
+        "definition": "A chemical substance produced by an endocrine gland and transported by blood to a target organ where it produces a specific effect"
+      },
+      {
+        "term": "Reflex action",
+        "definition": "A rapid, automatic response to a stimulus that does not involve conscious thought"
+      },
+      {
+        "term": "Synapse",
+        "definition": "A junction between two neurons where electrical impulses are transmitted by chemicals called neurotransmitters"
+      },
+      {
+        "term": "Insulin",
+        "definition": "A hormone produced by the pancreas that reduces blood glucose concentration"
+      },
+      {
+        "term": "Homeostasis",
+        "definition": "The maintenance of constant internal conditions"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of process in correct sequence"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between nervous and hormonal control"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how the reflex arc works when a person touches a hot object. (4 marks)",
+      "marks": 4,
+      "answer": "Receptor in skin detects heat stimulus and generates electrical impulse. Sensory neuron carries impulse to spinal cord. Relay neuron in spinal cord passes impulse to motor neuron. Motor neuron carries impulse to effector muscle which contracts to withdraw hand.",
+      "markBreakdown": [
+        "Mark 1: Receptor detects stimulus/generates impulse",
+        "Mark 2: Sensory neuron carries impulse to CNS",
+        "Mark 3: Relay neuron connects sensory to motor neuron",
+        "Mark 4: Motor neuron carries impulse to effector/muscle contracts"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'hormones travel through the nervous system' — always say 'hormones are transported in blood'",
+      "Students often confuse insulin and glucagon effects — insulin DECREASES glucose, glucagon INCREASES glucose",
+      "Never say 'brain controls reflexes' — reflex actions bypass the brain via spinal cord",
+      "Students write 'nerve' instead of 'neuron' — use neuron for individual cells",
+      "Never say 'impulses cross synapses' — impulses are converted to chemical neurotransmitters at synapses"
+    ],
+    "examinerTips": [
+      "Reflex arc diagrams appear almost every year - practice drawing with correct labels",
+      "Always mention 'does not involve conscious thought' when defining reflex actions",
+      "For hormone questions, always state: production site, transport method, target organ, and effect",
+      "Synapse questions often ask about one-way transmission - neurotransmitters only go from presynaptic to postsynaptic"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Reflex arc diagram showing: stimulus → receptor → sensory neuron → relay neuron (in spinal cord) → motor neuron → effector → response. Must include synapse positions and direction of impulse flow."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:29:06.867Z",
+  "updated_at": "2026-04-05T21:29:06.867Z"
+}

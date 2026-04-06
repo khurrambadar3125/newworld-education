@@ -1,0 +1,95 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "A2 Computer Science",
+  "chapter_id": "A2.7",
+  "chapter_name": "Further programming",
+  "note_data": {
+    "title": "Further programming",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Object-oriented programming (OOP)** uses classes and objects to model real-world entities with attributes and methods",
+      "**Inheritance** allows a child class to inherit attributes and methods from a parent class, promoting code reuse",
+      "**Polymorphism** enables objects of different classes to be treated as objects of a common base class through method overriding",
+      "**Encapsulation** hides internal implementation details and controls access to data through private and public access modifiers",
+      "**Method overriding** occurs when a subclass provides a specific implementation of a method already defined in its parent class",
+      "**Abstract classes** cannot be instantiated and may contain abstract methods that must be implemented by subclasses",
+      "**Design patterns** provide reusable solutions to common programming problems and improve code maintainability",
+      "**Composition** involves creating objects that contain other objects as instance variables, representing 'has-a' relationships",
+      "**Constructor methods** are special methods called when an object is created to initialize the object's attributes"
+    ],
+    "definitions": [
+      {
+        "term": "Inheritance",
+        "definition": "A mechanism where a new class (subclass) inherits attributes and methods from an existing class (superclass), allowing code reuse and creating hierarchical relationships"
+      },
+      {
+        "term": "Polymorphism",
+        "definition": "The ability of objects of different classes to respond to the same method call in their own specific way through method overriding"
+      },
+      {
+        "term": "Encapsulation",
+        "definition": "The bundling of data and methods within a class while restricting direct access to internal data through access modifiers"
+      },
+      {
+        "term": "Abstract class",
+        "definition": "A class that cannot be instantiated and may contain abstract methods that must be implemented by any concrete subclass"
+      },
+      {
+        "term": "Design pattern",
+        "definition": "A reusable solution template for commonly occurring problems in software design that provides best practices for code structure"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics or features with some detail but no explanation of why"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between concepts"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the difference between inheritance and composition in object-oriented programming. [4 marks]",
+      "marks": 4,
+      "answer": "Inheritance creates an 'is-a' relationship where a subclass inherits attributes and methods from a parent class, allowing code reuse through class hierarchies. Composition creates a 'has-a' relationship where an object contains other objects as instance variables. Inheritance enables polymorphism through method overriding, while composition provides greater flexibility as relationships can be changed at runtime. Inheritance creates tight coupling between classes, whereas composition promotes loose coupling and better encapsulation.",
+      "markBreakdown": [
+        "Mark 1: Inheritance creates 'is-a' relationship/inherits from parent",
+        "Mark 2: Composition creates 'has-a' relationship/contains other objects",
+        "Mark 3: Inheritance enables polymorphism/method overriding",
+        "Mark 4: Composition provides flexibility/loose coupling"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'inheritance copies code' — always say 'inheritance allows access to parent class methods and attributes'",
+      "Students often confuse method overriding with method overloading — overriding redefines inherited methods, overloading creates multiple methods with same name but different parameters",
+      "Don't write 'encapsulation hides data' — say 'encapsulation controls access to data through access modifiers'",
+      "Never describe polymorphism as 'many forms' — explain it as 'objects responding to same method call differently'",
+      "Students forget that abstract classes cannot be instantiated — they can only be inherited from"
+    ],
+    "examinerTips": [
+      "OOP concepts appear in Paper 2 almost every year, especially inheritance and polymorphism",
+      "Always use specific programming terminology rather than general descriptions",
+      "Draw UML class diagrams to show inheritance relationships for full marks",
+      "Code examples that demonstrate method overriding score highly in explain questions"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "UML class diagram showing parent class connected to child classes with inheritance arrows, including attributes and methods with access modifiers (+ for public, - for private)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:19:56.154Z",
+  "updated_at": "2026-04-06T05:19:56.154Z"
+}

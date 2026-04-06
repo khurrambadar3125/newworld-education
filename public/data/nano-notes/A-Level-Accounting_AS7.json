@@ -1,0 +1,98 @@
+{
+  "subject": "A Level Accounting",
+  "subject_code": "9706",
+  "level": "A Level",
+  "theme": "AS Accounting",
+  "chapter_id": "AS7",
+  "chapter_name": "Partnership accounts",
+  "note_data": {
+    "title": "Partnership accounts",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Partnership** is a business owned by 2-50 people who share profits/losses according to partnership agreement",
+      "**Appropriation account** shows how net profit is distributed among partners through salaries, interest on capital and profit sharing ratio",
+      "**Capital accounts** record partners' permanent capital contributions and remain constant unless additional capital is introduced or withdrawn",
+      "**Current accounts** record partners' share of profits, drawings, salaries and interest - these balances fluctuate regularly",
+      "**Interest on capital** is calculated as Opening Capital × Interest Rate × Time Period (usually annual)",
+      "**Interest on drawings** is charged to reduce partners' share of profits, calculated on drawings amount × interest rate × time period",
+      "**Goodwill** represents the value of business reputation and must be valued when profit sharing ratios change or partners join/leave",
+      "**Admission of new partner** requires existing goodwill to be valued, credited to old partners' capital accounts in old profit sharing ratio",
+      "**Retirement/death of partner** requires goodwill adjustment, settlement of partner's capital and current account balances",
+      "**Revaluation account** records increases/decreases in asset values when partnership composition changes, profit/loss shared in old ratio"
+    ],
+    "definitions": [
+      {
+        "term": "Partnership",
+        "definition": "A business organization owned by 2-50 people who contribute capital and share profits/losses according to partnership agreement"
+      },
+      {
+        "term": "Appropriation account",
+        "definition": "An account that shows how the net profit of a partnership is allocated among partners after providing for salaries, interest on capital and profit sharing"
+      },
+      {
+        "term": "Goodwill",
+        "definition": "An intangible asset representing the value of business reputation, customer loyalty and earning capacity above the value of net tangible assets"
+      },
+      {
+        "term": "Current account",
+        "definition": "A partner's account that records the partner's share of profits, drawings, salary and interest on capital - the balance represents amounts owed to/by the partner"
+      },
+      {
+        "term": "Capital account",
+        "definition": "A partner's account that records permanent capital contributions and withdrawals - normally maintains a fixed balance unless additional capital is introduced"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all workings step by step. Calculate interest on capital, salaries, then remaining profit in profit sharing ratio"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Use correct account format with Dr/Cr sides. Appropriation account starts with net profit, current accounts show running balances"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the reason using 'because' - e.g. 'Goodwill is created because the business has value above its net assets'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Ahmed and Bilal are partners sharing profits 3:2. Net profit for year ended 31 Dec 2023 was $50,000. Ahmed receives salary $8,000, interest on capital: Ahmed $2,000, Bilal $1,500. Prepare appropriation account. (6 marks)",
+      "marks": 6,
+      "answer": "APPROPRIATION ACCOUNT for year ended 31 Dec 2023\nNet profit $50,000\nLess: Salary - Ahmed $(8,000)\nLess: Interest on capital - Ahmed $(2,000)\nLess: Interest on capital - Bilal $(1,500)\nProfit available for distribution $38,500\nShare of profit: Ahmed (3/5 × $38,500) $23,100\nShare of profit: Bilal (2/5 × $38,500) $15,400\nTotal distributed $38,500",
+      "markBreakdown": [
+        "Mark 1: Correct heading",
+        "Mark 2: Net profit $50,000",
+        "Mark 3: Ahmed salary $8,000 deducted",
+        "Mark 4: Interest on capital correctly deducted",
+        "Mark 5: Profit available $38,500",
+        "Mark 6: Correct profit sharing 3:2 ratio"
+      ]
+    },
+    "commonMistakes": [
+      "Never add salaries and interest to net profit - always deduct them first before sharing remaining profit",
+      "Students often forget to calculate interest on drawings and deduct from partners' current accounts",
+      "Common error: using new profit sharing ratio for goodwill adjustment - always use old ratio when partners leave/ratios change",
+      "Never credit goodwill to new partner - only existing partners receive goodwill credit in old profit sharing ratio",
+      "Students confuse capital and current account entries - capital accounts only change with permanent capital changes"
+    ],
+    "examinerTips": [
+      "Partnership accounts appear in Paper 2 Section A almost every year - usually 15-20 marks",
+      "Always show clear workings for interest calculations and profit sharing ratios",
+      "When partners join/leave, remember three steps: revaluation, goodwill adjustment, then new appropriation",
+      "Current account format: start with opening balance, add profit share/interest, deduct drawings/salary"
+    ],
+    "formulas": [
+      "Interest on capital = Opening capital × Interest rate × Time period",
+      "Interest on drawings = Drawings × Interest rate × Average time period",
+      "Profit sharing = (Available profit after appropriations) × Partner's ratio"
+    ],
+    "keyDiagramDescription": "Partnership accounts structure showing Appropriation Account (distributing net profit) flowing to individual Current Accounts (tracking each partner's running balance) and separate Capital Accounts (recording permanent capital contributions)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:26:32.563Z",
+  "updated_at": "2026-04-06T05:26:32.563Z"
+}

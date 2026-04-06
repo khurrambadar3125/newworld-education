@@ -1,0 +1,95 @@
+{
+  "subject": "Chemistry",
+  "subject_code": "5070",
+  "level": "O Level",
+  "theme": "Physical Chemistry",
+  "chapter_id": "3",
+  "chapter_name": "Chemical bonding",
+  "note_data": {
+    "title": "Chemical bonding",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Ionic bonding** occurs between metals and non-metals through complete transfer of electrons",
+      "**Covalent bonding** occurs between non-metals through sharing of electrons",
+      "**Metallic bonding** occurs between metal atoms through a sea of delocalised electrons",
+      "Ionic compounds form **giant ionic structures** with high melting and boiling points",
+      "Covalent compounds can form **simple molecular structures** or **giant covalent structures**",
+      "Metallic compounds form **giant metallic structures** with delocalised electrons",
+      "Ionic compounds conduct electricity when **molten or dissolved** but not when solid",
+      "Metals conduct electricity due to **mobile delocalised electrons**",
+      "Simple molecular covalent compounds have **weak intermolecular forces** between molecules",
+      "Giant covalent structures like diamond and graphite have **very high melting points**"
+    ],
+    "definitions": [
+      {
+        "term": "Ionic bonding",
+        "definition": "The electrostatic attraction between oppositely charged ions formed by the complete transfer of electrons from metal atoms to non-metal atoms"
+      },
+      {
+        "term": "Covalent bonding",
+        "definition": "The sharing of pairs of electrons between atoms"
+      },
+      {
+        "term": "Metallic bonding",
+        "definition": "The electrostatic attraction between metal cations and a sea of delocalised electrons"
+      },
+      {
+        "term": "Giant structure",
+        "definition": "A three-dimensional arrangement of atoms or ions extending throughout the crystal"
+      },
+      {
+        "term": "Delocalised electrons",
+        "definition": "Electrons that are not associated with a particular atom but are free to move throughout the structure"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give details about the structure or bonding without explanation"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities and differences clearly"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why sodium chloride has a high melting point but does not conduct electricity when solid. [3 marks]",
+      "marks": 3,
+      "answer": "Sodium chloride has a giant ionic structure with strong electrostatic forces between oppositely charged ions, requiring a lot of energy to break. When solid, the ions are in fixed positions and cannot move, so it cannot conduct electricity.",
+      "markBreakdown": [
+        "Mark 1: Giant ionic structure/strong electrostatic forces",
+        "Mark 2: A lot of energy needed to break forces",
+        "Mark 3: Ions in fixed positions/cannot move when solid"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'atoms' in ionic compounds — always say 'ions'",
+      "Students often confuse intermolecular forces (between molecules) with intramolecular forces (within molecules)",
+      "Never say metals 'share' electrons — they have delocalised electrons",
+      "Don't confuse simple molecular structures with giant covalent structures",
+      "Students forget that graphite conducts electricity due to delocalised electrons between layers"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every Paper 2 exam",
+      "Always relate properties to structure and bonding for full marks",
+      "Use dot-and-cross diagrams to show electron transfer or sharing",
+      "Remember that conductivity questions often ask about molten vs solid states"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Dot-and-cross diagrams showing electron arrangements in ionic compounds (e.g., NaCl, MgO) and covalent molecules (e.g., H2O, CH4). Also include simple diagrams of giant ionic, metallic, and covalent structures."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T20:51:56.142Z",
+  "updated_at": "2026-04-05T20:51:56.142Z"
+}

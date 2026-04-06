@@ -1,0 +1,95 @@
+{
+  "subject": "Computer Science",
+  "subject_code": "2210",
+  "level": "O Level",
+  "theme": "Paper 1: Computer Systems",
+  "chapter_id": "4",
+  "chapter_name": "Software",
+  "note_data": {
+    "title": "Software",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**System software** manages the computer hardware and provides a platform for other software to run",
+      "**Application software** performs specific tasks for the user such as word processing or gaming",
+      "**Operating system** manages hardware resources, provides user interface, and controls file management",
+      "**Interrupt** is a signal sent to the processor to request immediate attention from the operating system",
+      "**High-level programming languages** use English-like commands and are easier for humans to understand",
+      "**Low-level programming languages** are closer to machine code and include assembly language",
+      "**Compiler** translates the entire high-level program into machine code before execution",
+      "**Interpreter** translates and executes high-level program code line by line during runtime",
+      "**Integrated Development Environment (IDE)** provides tools for writing, testing and debugging programs in one package"
+    ],
+    "definitions": [
+      {
+        "term": "Operating System",
+        "definition": "System software that manages computer hardware resources and provides services for application programs"
+      },
+      {
+        "term": "Interrupt",
+        "definition": "A signal sent to the processor requesting immediate attention, causing the processor to suspend current activities"
+      },
+      {
+        "term": "Compiler",
+        "definition": "A translator that converts the entire high-level language program into machine code before execution"
+      },
+      {
+        "term": "Interpreter",
+        "definition": "A translator that converts and executes high-level language program code one line at a time"
+      },
+      {
+        "term": "IDE",
+        "definition": "Integrated Development Environment - software that provides comprehensive tools for software development including editor, compiler and debugger"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics or features with some detail"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Show similarities AND differences between two items"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the difference between a compiler and an interpreter. [4 marks]",
+      "marks": 4,
+      "answer": "A compiler translates the entire high-level language program into machine code before execution, whereas an interpreter translates and executes the program line by line during runtime. A compiler produces an executable file that can run independently, while an interpreter requires the original source code to be present each time the program runs. Programs compiled by a compiler run faster because translation has already occurred, but interpreter-based programs are easier to debug because errors are identified line by line during execution.",
+      "markBreakdown": [
+        "Mark 1: Compiler translates entire program before execution",
+        "Mark 2: Interpreter translates line by line during runtime",
+        "Mark 3: Compiler produces executable file/interpreter needs source code",
+        "Mark 4: Speed difference or debugging difference explained"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'compiler is faster' — always say 'compiled programs run faster because translation has already occurred'",
+      "Students often confuse system software with hardware — system software is still software, not physical components",
+      "Don't say 'interrupt stops the processor' — say 'interrupt causes processor to suspend current activities temporarily'",
+      "Avoid saying 'high-level languages are better' — explain they are 'easier for humans to understand' instead",
+      "Never write 'IDE compiles programs' — IDE contains a compiler as one of its tools"
+    ],
+    "examinerTips": [
+      "Software questions appear in every Paper 2 exam, usually worth 8-12 marks total",
+      "Always distinguish between 'during execution' for interpreter and 'before execution' for compiler",
+      "When comparing translators, mention both speed of execution AND ease of debugging",
+      "For operating system questions, focus on 'manages resources' rather than listing features"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Software classification diagram showing System Software (Operating System, Utility Software, Device Drivers) and Application Software (General Purpose, Special Purpose) with examples under each category"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T03:44:33.108Z",
+  "updated_at": "2026-04-06T03:44:33.108Z"
+}

@@ -1,0 +1,107 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "13",
+  "chapter_name": "Support and Movement",
+  "note_data": {
+    "title": "Support and Movement",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Support and movement are essential life processes — plants need support against gravity and wind, animals need movement for food and survival",
+      "Skeleton provides framework, protects internal organs, gives shape to body, and provides attachment sites for muscles",
+      "Hydrostatic skeleton found in earthworms uses body fluid pressure for support and movement",
+      "Exoskeleton in arthropods like insects and crustaceans provides external hard covering made of chitin",
+      "Endoskeleton in vertebrates is internal framework made of bones and cartilage",
+      "Human skeleton has 206 bones divided into axial skeleton (skull, vertebral column, rib cage) and appendicular skeleton (limbs)",
+      "Joints allow movement between bones — ball and socket joints allow movement in all directions, hinge joints allow movement in one plane only",
+      "Muscles work in antagonistic pairs — when one contracts, the other relaxes to produce movement",
+      "Tendons attach muscles to bones while ligaments connect bones to bones at joints"
+    ],
+    "definitions": [
+      {
+        "term": "Skeleton",
+        "definition": "The framework of hard or rigid parts that provides support and shape to the body of an organism"
+      },
+      {
+        "term": "Hydrostatic Skeleton",
+        "definition": "A type of skeleton found in soft-bodied animals where body fluids under pressure provide support and enable movement"
+      },
+      {
+        "term": "Exoskeleton",
+        "definition": "An external hard covering that provides support and protection to the body, found in arthropods like insects and crustaceans"
+      },
+      {
+        "term": "Endoskeleton",
+        "definition": "An internal framework of bones and cartilage that provides support to the body, found in vertebrates"
+      },
+      {
+        "term": "Joint",
+        "definition": "The place where two or more bones meet and are held together by ligaments"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Differentiate between exoskeleton and endoskeleton.",
+        "answer": "Exoskeleton is external hard covering found in arthropods made of chitin, while endoskeleton is internal framework of bones and cartilage found in vertebrates. Exoskeleton provides protection but limits growth, endoskeleton allows continuous growth."
+      },
+      {
+        "type": "long",
+        "question": "Describe the structure and function of human skeletal system.",
+        "answer": "Human skeleton consists of 206 bones divided into axial and appendicular skeleton. Functions: (1) Provides framework and shape (2) Protects internal organs (3) Provides attachment for muscles (4) Produces blood cells in bone marrow (5) Stores calcium and phosphorus. Axial skeleton includes skull, vertebral column and rib cage. Appendicular skeleton includes arms and legs. Bones connected by joints allowing movement."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "How many bones are present in adult human skeleton?",
+        "options": {
+          "A": "204",
+          "B": "206",
+          "C": "208",
+          "D": "210"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which type of skeleton is found in earthworm?",
+        "options": {
+          "A": "Exoskeleton",
+          "B": "Endoskeleton",
+          "C": "Hydrostatic skeleton",
+          "D": "Cartilaginous skeleton"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "Ball and socket joint is found in:",
+        "options": {
+          "A": "Elbow",
+          "B": "Knee",
+          "C": "Shoulder",
+          "D": "Ankle"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse exoskeleton with endoskeleton — remember exo means external, endo means internal",
+      "Mixing up tendons and ligaments — tendons connect muscle to bone, ligaments connect bone to bone",
+      "Forgetting to mention both axial and appendicular skeleton divisions in human skeleton questions",
+      "Not stating exact number of bones (206) in human adult skeleton",
+      "Confusing ball and socket joints with hinge joints — ball and socket allows movement in all directions"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs and 1 short question in every BSEK paper",
+      "Always memorize exact definitions as given in STBB textbook",
+      "Draw and label diagram of human skeleton — appears frequently in long questions",
+      "Remember examples: hydrostatic skeleton in earthworm, exoskeleton in cockroach, endoskeleton in humans",
+      "Functions of skeleton is a very common 5-mark question"
+    ],
+    "formulas": [],
+    "keyDiagram": "Human Skeleton Diagram showing axial skeleton (skull, vertebral column, rib cage) and appendicular skeleton (arms, legs) with proper labeling of major bones like femur, tibia, fibula, humerus, radius, ulna"
+  },
+  "created_at": "2026-04-06T06:18:00.874Z"
+}

@@ -1,0 +1,95 @@
+{
+  "subject": "Physics",
+  "subject_code": "5054",
+  "level": "O Level",
+  "theme": "Electricity and Magnetism",
+  "chapter_id": "16",
+  "chapter_name": "Magnetism",
+  "note_data": {
+    "title": "Magnetism",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **permanent magnet** is made of a material that retains its magnetism after the magnetizing force is removed",
+      "**Magnetic field** is the region around a magnet where a magnetic force is experienced by magnetic materials",
+      "**Magnetic field lines** always go from north pole to south pole outside the magnet and from south to north inside the magnet",
+      "Field lines are **closer together** where the magnetic field is stronger and **further apart** where it is weaker",
+      "**Like poles repel** and **unlike poles attract** - this follows the inverse square law with distance",
+      "A **magnetic material** is attracted to a magnet but an **unmagnetized magnetic material** is attracted to both poles equally",
+      "**Iron, steel, cobalt and nickel** are the main magnetic materials - iron is easily magnetized and demagnetized",
+      "**Steel** retains magnetism better than iron making it suitable for permanent magnets",
+      "**Induced magnetism** occurs when a magnetic material becomes temporarily magnetized in a magnetic field",
+      "The **neutral point** is where the magnetic field strength is zero due to two opposing magnetic fields"
+    ],
+    "definitions": [
+      {
+        "term": "Permanent magnet",
+        "definition": "A material that retains its magnetism after the magnetizing force is removed"
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "The region around a magnet where a magnetic force is experienced by magnetic materials"
+      },
+      {
+        "term": "Magnetic field lines",
+        "definition": "Lines that show the direction of the magnetic field, going from north pole to south pole outside the magnet"
+      },
+      {
+        "term": "Induced magnetism",
+        "definition": "The temporary magnetism produced in a magnetic material when it is placed in a magnetic field"
+      },
+      {
+        "term": "Neutral point",
+        "definition": "The point where the resultant magnetic field is zero due to two opposing magnetic fields cancelling out"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of facts about the magnetic field pattern or behavior"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give a practical method or material choice with a reason"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why a steel needle can be used as a compass needle but an iron needle would not be suitable. [3 marks]",
+      "marks": 3,
+      "answer": "Steel retains its magnetism after the magnetizing force is removed, making it a permanent magnet. Iron loses its magnetism easily when the magnetizing force is removed. Therefore steel maintains a constant magnetic field needed for the compass to point consistently toward magnetic north.",
+      "markBreakdown": [
+        "Mark 1: Steel retains magnetism/is permanent magnet",
+        "Mark 2: Iron loses magnetism easily/is temporary magnet",
+        "Mark 3: Steel provides consistent direction/compass needs permanent magnetism"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'magnetic force goes from north to south' — always say 'magnetic field lines go from north to south'",
+      "Students often confuse magnetic materials with magnets — magnetic materials are attracted but not necessarily magnetized",
+      "Never draw magnetic field lines crossing each other — they never intersect",
+      "Students often forget that field lines continue inside the magnet from south to north",
+      "Never say 'magnetism flows' — magnetism is a property, not a flowing substance"
+    ],
+    "examinerTips": [
+      "Magnetic field patterns appear frequently in Paper 2 — practice drawing uniform and radial fields",
+      "Always use a ruler for field lines and show direction with arrows",
+      "Questions on magnetic materials vs magnets are very common — know the difference",
+      "Plotting compass experiments often tested — remember neutral points between like poles"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Bar magnet showing curved magnetic field lines from north to south pole, with lines closer together near poles (stronger field) and further apart in middle (weaker field). Include arrows showing direction and demonstrate that lines never cross."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-05T21:19:04.816Z",
+  "updated_at": "2026-04-05T21:19:04.816Z"
+}

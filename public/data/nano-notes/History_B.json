@@ -1,0 +1,95 @@
+{
+  "subject": "History",
+  "subject_code": "2147",
+  "level": "O Level",
+  "theme": "Section 2: Depth Studies",
+  "chapter_id": "B",
+  "chapter_name": "Germany, 1918-45",
+  "note_data": {
+    "title": "Germany, 1918-45",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **Weimar Republic** was established in 1919 after Germany's defeat in WWI and faced immediate problems including the Treaty of Versailles, economic crises, and political opposition",
+      "The **hyperinflation crisis of 1923** destroyed middle-class savings when the government printed money to pay reparations, making basic goods cost billions of marks",
+      "The **Golden Age (1924-1929)** saw temporary recovery under Stresemann with American loans, cultural revival, and improved international relations through the Locarno Pact",
+      "The **Wall Street Crash of 1929** led to economic depression in Germany with 6 million unemployed by 1932, destroying confidence in democratic government",
+      "**Hitler's rise to power (1929-1933)** was achieved through legal means, exploiting economic crisis and promising to restore German greatness while using propaganda and violence",
+      "The **Nazi dictatorship (1933-1939)** was established through the Enabling Act, elimination of opposition parties, and creation of a police state with the SS and Gestapo",
+      "**Nazi economic policies** reduced unemployment through public works programs like autobahn construction and rearmament, while controlling workers through the Labour Front",
+      "**Nazi social policies** promoted traditional family values, used Hitler Youth to indoctrinate children, and persecuted minorities including Jews, Roma, and disabled people",
+      "The **Holocaust (1941-1945)** was the systematic murder of 6 million Jews and other minorities through ghettos, mass shootings, and extermination camps",
+      "**Nazi Germany's defeat (1945)** came after total war, Allied bombing, and Hitler's suicide, leaving the country divided and occupied"
+    ],
+    "definitions": [
+      {
+        "term": "Weimar Republic",
+        "definition": "The democratic government of Germany from 1919-1933, named after the town where the constitution was written"
+      },
+      {
+        "term": "Hyperinflation",
+        "definition": "Rapid increase in prices when money becomes worthless, occurring in Germany in 1923 when bread cost billions of marks"
+      },
+      {
+        "term": "Enabling Act",
+        "definition": "Law passed in March 1933 giving Hitler power to make laws without the Reichstag for four years"
+      },
+      {
+        "term": "Holocaust",
+        "definition": "The systematic persecution and murder of 6 million Jews by Nazi Germany between 1941-1945"
+      },
+      {
+        "term": "Anschluss",
+        "definition": "The union of Austria with Nazi Germany in March 1938, forbidden by the Treaty of Versailles"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "How far do you agree",
+        "instruction": "Give arguments for AND against, then reach a balanced judgment with 'Overall' or 'On balance'"
+      },
+      {
+        "commandWord": "Why",
+        "instruction": "Give multiple causes with specific examples and explain the connections between them"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why the Weimar Republic faced difficulties in the years 1919-1923. [6 marks]",
+      "marks": 6,
+      "answer": "The Weimar Republic faced difficulties because of the Treaty of Versailles which forced Germany to accept blame for WWI and pay massive reparations, creating resentment. The government also faced economic problems because it printed money to pay reparations, causing hyperinflation in 1923 when money became worthless. Additionally, the republic faced political opposition because right-wing groups like the Freikorps attempted coups such as the Kapp Putsch in 1920, while left-wing communists tried to seize power in the Spartacist uprising of 1919.",
+      "markBreakdown": [
+        "Mark 1-2: Treaty of Versailles and reparations caused resentment",
+        "Mark 3-4: Economic crisis and hyperinflation from printing money",
+        "Mark 5-6: Political opposition from left and right with specific examples"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'Hitler was elected' — always say 'Hitler was appointed Chancellor by Hindenburg in January 1933'",
+      "Students often confuse the SA (stormtroopers) with the SS (elite guard) — SA were the brownshirts used for violence, SS were the black-uniformed elite",
+      "Don't write 'Jews were killed' — use specific terms like 'systematically murdered in extermination camps'",
+      "Never say the Weimar Republic was 'weak' without explaining why — give specific examples like Article 48 or proportional representation",
+      "Students often ignore the period 1924-1929 — this 'Golden Age' is crucial for explaining why democracy failed"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every Paper 2 — focus on causation and change over time",
+      "Always use specific dates and statistics — unemployment figures, election results, casualty numbers",
+      "Link events together — show how the Treaty of Versailles led to economic problems which helped Hitler rise",
+      "Use German terms correctly — Reichstag (parliament), Führer (leader), Lebensraum (living space)"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Timeline showing three phases: Weimar Crisis (1919-1923), Golden Age (1924-1929), and Nazi Rise and Rule (1930-1945) with key events marked"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:04:51.068Z",
+  "updated_at": "2026-04-06T04:04:51.068Z"
+}

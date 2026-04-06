@@ -1,0 +1,115 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "15",
+  "chapter_name": "Inheritance",
+  "note_data": {
+    "title": "Inheritance",
+    "readTime": "8 min",
+    "board": "Sindhi Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Inheritance is the transmission of characters from parents to offspring through genes",
+      "Genetics is the branch of biology that deals with heredity and variation",
+      "Mendel's laws form the foundation of genetics - Law of Dominance, Law of Segregation, and Law of Independent Assortment",
+      "Dominant alleles are expressed in heterozygous condition while recessive alleles are expressed only in homozygous condition",
+      "Monohybrid cross involves crossing of two individuals differing in one character",
+      "Dihybrid cross involves crossing of two individuals differing in two characters",
+      "Test cross is used to determine the genotype of an individual showing dominant phenotype",
+      "Incomplete dominance occurs when neither allele is completely dominant over the other",
+      "Sex-linked inheritance involves genes located on sex chromosomes, particularly X chromosome"
+    ],
+    "definitions": [
+      {
+        "term": "Heredity",
+        "definition": "The transmission of characters from parents to offspring through genes"
+      },
+      {
+        "term": "Genetics",
+        "definition": "The branch of biology that deals with heredity and variation"
+      },
+      {
+        "term": "Gene",
+        "definition": "A unit of heredity that controls a particular character"
+      },
+      {
+        "term": "Allele",
+        "definition": "Alternative forms of a gene occupying the same position on homologous chromosomes"
+      },
+      {
+        "term": "Genotype",
+        "definition": "The genetic makeup of an organism"
+      },
+      {
+        "term": "Phenotype",
+        "definition": "The physical appearance of an organism due to its genotype"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define genetics and state Mendel's first law",
+        "answer": "Genetics is the branch of biology that deals with heredity and variation. Mendel's first law (Law of Dominance) states that when two contrasting factors are present together, only one expresses itself while the other remains hidden."
+      },
+      {
+        "type": "long",
+        "question": "Explain monohybrid cross with example. Show the F1 and F2 generation results",
+        "answer": "Monohybrid cross involves crossing of two individuals differing in one character. Example: Crossing tall (TT) and dwarf (tt) pea plants. F1 generation: All tall (Tt) - 100% tall phenotype. F2 generation: TT, Tt, Tt, tt - Genotypic ratio 1:2:1, Phenotypic ratio 3:1 (3 tall : 1 dwarf). This demonstrates Mendel's laws of dominance and segregation."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "In a monohybrid cross, the phenotypic ratio in F2 generation is:",
+        "options": {
+          "A": "1:1",
+          "B": "1:2:1",
+          "C": "3:1",
+          "D": "9:3:3:1"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The cross between F1 hybrid and recessive parent is called:",
+        "options": {
+          "A": "Back cross",
+          "B": "Test cross",
+          "C": "Monohybrid cross",
+          "D": "Dihybrid cross"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Genes located on X chromosome show:",
+        "options": {
+          "A": "Autosomal inheritance",
+          "B": "Codominance",
+          "C": "Sex-linked inheritance",
+          "D": "Multiple allelism"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse genotype with phenotype - remember genotype is genetic makeup, phenotype is physical appearance",
+      "Mixing up dominant and recessive alleles - dominant is expressed in heterozygous condition",
+      "Wrong Punnett square construction - always write parental genotypes correctly first",
+      "Confusing monohybrid (3:1) and dihybrid (9:3:3:1) ratios",
+      "Not stating Mendel's laws in exact textbook language"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and 1 long question in every BSEK paper",
+      "Memorize all three Mendel's laws in exact textbook words",
+      "Practice drawing Punnett squares for both monohybrid and dihybrid crosses",
+      "Always show complete working in genetic cross problems",
+      "Sex-linked inheritance questions are frequently asked - focus on color blindness example"
+    ],
+    "formulas": [
+      "Monohybrid F2 ratio = 3:1 (phenotypic), 1:2:1 (genotypic)",
+      "Dihybrid F2 ratio = 9:3:3:1 (phenotypic)",
+      "Test cross ratio = 1:1"
+    ],
+    "keyDiagram": "Punnett square showing monohybrid cross between tall (TT) and dwarf (tt) pea plants, displaying F1 (all Tt) and F2 generation (TT, Tt, Tt, tt) with proper gamete formation and fertilization"
+  },
+  "created_at": "2026-04-06T06:18:45.224Z"
+}

@@ -1,0 +1,104 @@
+{
+  "subject": "A Level Economics",
+  "subject_code": "9708",
+  "level": "A Level",
+  "theme": "AS Microeconomics",
+  "chapter_id": "AS2",
+  "chapter_name": "The price system and the microeconomy",
+  "note_data": {
+    "title": "The price system and the microeconomy",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Demand** is the quantity of a good that consumers are willing and able to buy at a given price in a given time period",
+      "The **law of demand** states that as price rises, quantity demanded falls, ceteris paribus, due to income and substitution effects",
+      "**Supply** is the quantity of a good that producers are willing and able to sell at a given price in a given time period",
+      "The **law of supply** states that as price rises, quantity supplied rises, ceteris paribus, due to higher profit incentives",
+      "**Market equilibrium** occurs where demand equals supply, determining the market clearing price with no excess demand or supply",
+      "**Price elasticity of demand (PED)** measures the responsiveness of quantity demanded to a change in price",
+      "**Income elasticity of demand (YED)** distinguishes between normal goods (positive YED) and inferior goods (negative YED)",
+      "**Consumer surplus** is the difference between what consumers are willing to pay and what they actually pay",
+      "**Producer surplus** is the difference between the market price and the minimum price producers are willing to accept",
+      "Changes in **non-price factors** cause shifts in demand/supply curves, while price changes cause movements along curves"
+    ],
+    "definitions": [
+      {
+        "term": "Price Elasticity of Demand",
+        "definition": "The responsiveness of quantity demanded to a change in price, calculated as percentage change in quantity demanded divided by percentage change in price"
+      },
+      {
+        "term": "Market Equilibrium",
+        "definition": "The point where quantity demanded equals quantity supplied, resulting in a stable price with no tendency to change"
+      },
+      {
+        "term": "Consumer Surplus",
+        "definition": "The difference between the maximum price consumers are willing to pay for a good and the actual market price they pay"
+      },
+      {
+        "term": "Cross Elasticity of Demand",
+        "definition": "The responsiveness of demand for one good to a change in the price of another good"
+      },
+      {
+        "term": "Inferior Good",
+        "definition": "A good for which demand falls as consumer income rises, having negative income elasticity of demand"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly and include the formula used"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Use economic theory to explain cause and effect relationships with a diagram"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why the demand for wheat in Pakistan might be price inelastic. [6 marks]",
+      "marks": 6,
+      "answer": "The demand for wheat in Pakistan is likely to be price inelastic because wheat is a necessity good that forms a staple part of the Pakistani diet through products like roti and naan. This means consumers must continue purchasing wheat even when prices rise because there are few close substitutes for this basic food requirement. Additionally, wheat represents a relatively small proportion of household income for most Pakistani families, so price changes have minimal impact on purchasing decisions. The lack of readily available substitute grains means consumers cannot easily switch to alternatives when wheat prices increase, making demand relatively unresponsive to price changes.",
+      "markBreakdown": [
+        "Mark 1: Definition of price inelastic demand",
+        "Mark 2: Wheat is a necessity good",
+        "Mark 3: Few close substitutes available",
+        "Mark 4: Small proportion of income",
+        "Mark 5: Application to Pakistani context",
+        "Mark 6: Clear explanation of cause and effect"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'demand increases' when price falls - always say 'quantity demanded increases' (movement along curve)",
+      "Students often confuse shifts and movements - price changes cause movements, non-price factors cause shifts",
+      "Never calculate PED without the negative sign or absolute values - be clear about interpretation",
+      "Students often forget that elasticity values change along a straight-line demand curve",
+      "Never define demand without including 'willing AND able to buy' - both conditions are essential"
+    ],
+    "examinerTips": [
+      "Demand and supply analysis appears in almost every Paper 2 question",
+      "Always draw and label diagrams clearly - can earn up to 3 marks",
+      "Use real examples from Pakistan like rice, wheat, textiles for application marks",
+      "Calculate elasticity values to 2 decimal places and interpret the result",
+      "Remember to state assumptions like ceteris paribus in explanations"
+    ],
+    "formulas": [
+      "PED = % change in quantity demanded / % change in price",
+      "YED = % change in quantity demanded / % change in income",
+      "XED = % change in quantity demanded of good A / % change in price of good B",
+      "PES = % change in quantity supplied / % change in price"
+    ],
+    "keyDiagramDescription": "Standard demand and supply diagram with price on Y-axis, quantity on X-axis, downward-sloping demand curve, upward-sloping supply curve, intersection showing equilibrium price and quantity, with consumer and producer surplus areas clearly marked"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:07:37.991Z",
+  "updated_at": "2026-04-06T05:07:37.991Z"
+}

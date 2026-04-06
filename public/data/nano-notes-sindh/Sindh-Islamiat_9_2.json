@@ -1,0 +1,106 @@
+{
+  "subject": "Islamiat",
+  "board": "sindh",
+  "class": 9,
+  "chapter_id": "2",
+  "chapter_name": "Tarjuma and Tafseer — Selected Verses",
+  "note_data": {
+    "title": "Tarjuma and Tafseer — Selected Verses",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 9,
+    "keyPoints": [
+      "Tarjuma means translation of the Holy Quran from Arabic to any other language",
+      "Tafseer is the detailed explanation and commentary of Quranic verses with context and background",
+      "Selected verses include fundamental teachings about faith, worship, social justice and moral conduct",
+      "Surah Al-Baqarah verse 255 (Ayat-ul-Kursi) describes Allah's sovereignty and knowledge",
+      "Verses about Salah emphasize the importance of regular prayer and its spiritual benefits",
+      "Quranic injunctions about honesty in business dealings and prohibition of interest (Riba)",
+      "Verses regarding treatment of parents, orphans and the poor reflect Islamic social values",
+      "Translation should preserve the original meaning while making it understandable in Urdu/Sindhi"
+    ],
+    "definitions": [
+      {
+        "term": "Tarjuma",
+        "definition": "The process of converting the meaning of Quranic text from Arabic language to another language while maintaining the original sense and message"
+      },
+      {
+        "term": "Tafseer",
+        "definition": "The science of explaining and interpreting the Holy Quran by providing detailed commentary, historical context, and scholarly analysis of verses"
+      },
+      {
+        "term": "Ayat-ul-Kursi",
+        "definition": "Verse 255 of Surah Al-Baqarah which describes Allah's absolute authority, knowledge and power over all creation"
+      },
+      {
+        "term": "Naskh",
+        "definition": "The Islamic principle of abrogation where later revealed verses may supersede or modify earlier revealed injunctions"
+      },
+      {
+        "term": "Sabab-e-Nuzool",
+        "definition": "The specific historical circumstances, events or occasions that led to the revelation of particular Quranic verses"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define Tarjuma and explain its importance in understanding Islam.",
+        "answer": "Tarjuma is the translation of Quranic text from Arabic to other languages. It helps non-Arabic speakers understand Allah's message and implement Islamic teachings in their daily lives."
+      },
+      {
+        "type": "long",
+        "question": "Write the translation and explanation of Ayat-ul-Kursi with its main teachings.",
+        "answer": "Ayat-ul-Kursi (2:255) states Allah's absolute sovereignty - He is Ever-Living, Self-Sustaining, never sleeps, owns heavens and earth, knows all hidden and apparent things. His Throne encompasses everything. Main teachings: 1) Allah's absolute authority 2) His infinite knowledge 3) His continuous protection 4) Unity of God (Tawheed) 5) Rejection of all forms of shirk."
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which Surah contains Ayat-ul-Kursi?",
+        "options": {
+          "A": "Al-Fatiha",
+          "B": "Al-Baqarah",
+          "C": "Al-Imran",
+          "D": "An-Nisa"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "What does the term 'Sabab-e-Nuzool' refer to?",
+        "options": {
+          "A": "Translation of Quran",
+          "B": "Recitation rules",
+          "C": "Occasions of revelation",
+          "D": "Quranic grammar"
+        },
+        "correct": "C"
+      },
+      {
+        "question": "The main purpose of Tafseer is to:",
+        "options": {
+          "A": "Translate Arabic text",
+          "B": "Explain Quranic meanings",
+          "C": "Learn Arabic grammar",
+          "D": "Memorize verses"
+        },
+        "correct": "B"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse Tarjuma (translation) with Tafseer (commentary/explanation)",
+      "Writing incomplete Arabic text of Ayat-ul-Kursi - memorize the complete verse",
+      "Not mentioning Sabab-e-Nuzool when explaining context of revelation",
+      "Mixing up verse numbers and Surah names in exam answers",
+      "Writing only translation without providing proper explanation in Tafseer questions"
+    ],
+    "examTips": [
+      "This chapter usually has 1-2 MCQs about verse identification and 1 long question every year",
+      "Always write Arabic text first, then Urdu translation, then explanation for full marks",
+      "Memorize exact verse numbers - Al-Baqarah 255 for Ayat-ul-Kursi",
+      "Practice writing clean Arabic script as presentation matters in BSEK marking",
+      "Learn the moral lessons/teachings from each verse - examiners expect practical applications"
+    ],
+    "formulas": [],
+    "keyDiagram": "Family tree diagram showing the relationship between Quran → Tarjuma (Translation) → Tafseer (Commentary) → Practical Implementation in Muslim life, with arrows showing the progressive understanding process"
+  },
+  "created_at": "2026-04-06T06:35:47.985Z"
+}

@@ -1,0 +1,84 @@
+{
+  "subject": "Urdu",
+  "subject_code": "3247",
+  "level": "O Level",
+  "theme": "Paper 2: Composition",
+  "chapter_id": "P2.4",
+  "chapter_name": "Dialogue Writing (مکالمہ نگاری)",
+  "note_data": {
+    "title": "Dialogue Writing (مکالمہ نگاری)",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Dialogue** (مکالمہ) must show clear conversation between two or more characters with proper speech marks and attribution",
+      "Each speaker should have a **distinct voice** with appropriate vocabulary, tone and speaking style that reflects their character",
+      "Use **natural conversational language** with appropriate interruptions, hesitations and informal expressions where suitable",
+      "Include **stage directions** in brackets to show actions, emotions or setting details that enhance the dialogue",
+      "Maintain **logical flow** where each response connects meaningfully to the previous speaker's words",
+      "Show **character development** through what characters say and how they express themselves",
+      "Use **appropriate register** - formal/informal language depending on the relationship between speakers and context",
+      "Include **conflict or tension** to make the dialogue engaging and purposeful rather than mere exchange of information",
+      "End with **clear resolution** or conclusion that feels natural and complete"
+    ],
+    "definitions": [
+      {
+        "term": "Dialogue (مکالمہ)",
+        "definition": "A written conversation between two or more characters that reveals personality, advances plot or explores themes"
+      },
+      {
+        "term": "Stage Directions (اسٹیج ہدایات)",
+        "definition": "Instructions in brackets describing character actions, emotions or setting details during dialogue"
+      },
+      {
+        "term": "Register (رجسٹر)",
+        "definition": "The level of formality in language use, ranging from very formal to very informal depending on context and relationship"
+      },
+      {
+        "term": "Character Voice (کردار کی آواز)",
+        "definition": "The unique way each character speaks, including their vocabulary choices, sentence structure and speaking patterns"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Write a dialogue",
+        "instruction": "Create conversation with speech marks, clear speaker attribution, natural flow and distinct character voices"
+      },
+      {
+        "commandWord": "Show character through dialogue",
+        "instruction": "Use specific word choices, speaking patterns and responses that reveal personality traits"
+      }
+    ],
+    "modelAnswer": {
+      "question": "دو دوستوں کے درمیان ایک مکالمہ لکھیں جو امتحان کی تیاری کے بارے میں بات کر رہے ہیں۔ (Write a dialogue between two friends discussing exam preparation.)",
+      "marks": 10,
+      "answer": "احمد: \"یار علی، کیا حال ہے؟ امتحان کی تیاری کیسی چل رہی ہے؟\"\n\nعلی: (پریشان ہو کر) \"بہت برا حال ہے بھائی۔ اردو کا پیپر بہت مشکل لگ رہا ہے۔\"\n\nاحمد: \"کیوں؟ کیا مسئلہ ہے؟ مکالمہ نگاری میں؟\"\n\nعلی: \"ہاں یار، سمجھ نہیں آتا کہ کرداروں کو مختلف آوازیں کیسے دوں۔\"\n\nاحمد: \"دیکھ، یہ آسان ہے۔ ہر کردار کی اپنی شخصیت ہونی چاہیے۔ جیسے بزرگ رسمی زبان استعمال کریں گے۔\"\n\nعلی: (دلچسپی سے) \"واقعی؟ اور بچے؟\"\n\nاحمد: \"بچے آسان اور سادہ الفاظ بولیں گے۔ میں تمہیں مدد کروں گا۔\"\n\nعلی: (خوش ہو کر) \"شکریہ یار! تم واقعی اچھے دوست ہو۔\"",
+      "markBreakdown": [
+        "Mark 1-2: Clear dialogue format with proper speech marks",
+        "Mark 3-4: Distinct character voices and personalities",
+        "Mark 5-6: Natural conversational flow and responses",
+        "Mark 7-8: Appropriate stage directions and emotional indicators",
+        "Mark 9-10: Complete conversation with logical conclusion"
+      ]
+    },
+    "commonMistakes": [
+      "Never write dialogue without speech marks - always use quotation marks to show spoken words",
+      "Students often make all characters sound the same - each speaker must have distinct vocabulary and tone",
+      "Avoid writing dialogue that sounds like written essays - use natural, conversational language with contractions",
+      "Never forget speaker attribution - clearly show who is speaking each line",
+      "Students often write dialogue without purpose - ensure conversation has clear direction and meaning"
+    ],
+    "examinerTips": [
+      "Dialogue writing appears regularly in Paper 2 composition section",
+      "Always plan character personalities before writing to ensure distinct voices",
+      "Use stage directions sparingly but effectively to enhance understanding",
+      "Practice writing dialogue in different scenarios - formal/informal, conflict/agreement"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "No specific diagram required, but proper dialogue format with quotation marks, speaker names, and stage directions in brackets should be clearly structured"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:09:58.910Z",
+  "updated_at": "2026-04-06T04:09:58.910Z"
+}

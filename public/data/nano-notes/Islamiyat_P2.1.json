@@ -1,0 +1,84 @@
+{
+  "subject": "Islamiyat",
+  "subject_code": "2058",
+  "level": "O Level",
+  "theme": "Paper 2",
+  "chapter_id": "P2.1",
+  "chapter_name": "Major Teachings in the Hadiths",
+  "note_data": {
+    "title": "Major Teachings in the Hadiths",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Hadith** are the recorded sayings, actions and approval of Prophet Muhammad (pbuh) that provide guidance for Muslim life",
+      "**Worship (Ibadah)** teachings include detailed instructions for prayer, fasting, pilgrimage and charity as shown in hadith collections",
+      "**Social conduct** is emphasized through hadiths teaching kindness to parents, neighbors, orphans and proper treatment of women",
+      "**Business ethics** are established through hadiths prohibiting fraud, dishonesty and exploitation in trade and commerce",
+      "**Justice and equality** are promoted through hadiths teaching fair treatment regardless of social status, race or wealth",
+      "**Personal character** development is guided through hadiths emphasizing truthfulness, patience, humility and self-control",
+      "**Family relationships** are regulated through hadiths defining rights and duties of spouses, parents and children",
+      "**Community responsibilities** include helping the poor, maintaining peace and contributing to society's welfare as taught in authentic hadiths"
+    ],
+    "definitions": [
+      {
+        "term": "Hadith",
+        "definition": "The recorded sayings, actions and approval of Prophet Muhammad (pbuh) that serve as a source of Islamic guidance alongside the Quran"
+      },
+      {
+        "term": "Sunnah",
+        "definition": "The way of life and example of Prophet Muhammad (pbuh) as recorded in authentic hadiths, providing a practical model for Muslims to follow"
+      },
+      {
+        "term": "Isnad",
+        "definition": "The chain of narrators who transmitted a hadith from Prophet Muhammad (pbuh) to the compiler, used to verify authenticity"
+      },
+      {
+        "term": "Matn",
+        "definition": "The actual text or content of a hadith containing the words or description of the Prophet's action"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one teaching from hadith in one clear sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the teaching + explain its importance using 'because' or 'this shows that'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give multiple teachings with brief explanations showing how they guide Muslim life"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain three teachings about social conduct found in the hadiths. [6]",
+      "marks": 6,
+      "answer": "Kindness to parents is emphasized in hadith where the Prophet (pbuh) said paradise lies at the feet of mothers, showing the high status of parents in Islam. Charity to the poor is taught through hadith stating that wealth does not decrease by giving charity, encouraging Muslims to help those in need. Good treatment of neighbors is commanded in hadith where the Prophet (pbuh) said whoever believes in Allah and the Last Day should be kind to neighbors, promoting community harmony.",
+      "markBreakdown": [
+        "Mark 1-2: Kindness to parents with explanation",
+        "Mark 3-4: Charity with explanation",
+        "Mark 5-6: Treatment of neighbors with explanation"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse hadith with Quran - always specify that hadith are Prophet's sayings/actions, not Allah's direct words",
+      "Students often give vague examples - always provide specific teachings with clear explanations",
+      "Avoid mixing authentic hadith teachings with cultural practices - focus on verified Islamic guidance",
+      "Don't just list teachings - explain why each teaching is important for Muslim life and society"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 2 exam - prepare at least 6 different hadith teachings",
+      "Always mention that hadiths complement the Quran in providing practical guidance",
+      "Use specific examples from major hadith collections like Bukhari and Muslim when possible",
+      "Link hadith teachings to modern Pakistani society for higher level answers"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Create a mind map with 'Hadith Teachings' at center, branching into categories: Worship, Social Conduct, Business Ethics, Justice, Personal Character, Family Life, and Community Responsibility"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 4,
+  "created_at": "2026-04-05T20:45:22.815Z",
+  "updated_at": "2026-04-05T20:45:22.815Z"
+}

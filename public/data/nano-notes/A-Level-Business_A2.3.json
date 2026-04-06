@@ -1,0 +1,93 @@
+{
+  "subject": "A Level Business",
+  "subject_code": "9609",
+  "level": "A Level",
+  "theme": "A2 Business",
+  "chapter_id": "A2.3",
+  "chapter_name": "Global business",
+  "note_data": {
+    "title": "Global business",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Globalisation** is the process of increasing interconnectedness between countries through trade, investment and technology",
+      "**Multinational companies (MNCs)** operate in more than one country and have subsidiaries or branches in different nations",
+      "**Emerging markets** are developing economies with rapid growth rates but higher political and economic risks",
+      "**Cultural differences** affect business operations including language, religion, customs, values and business practices",
+      "**Economies of scale** are achieved by MNCs through standardised production across multiple markets",
+      "**Market penetration** strategies help MNCs enter new geographical markets to increase sales and market share",
+      "**Political risk** includes government instability, changes in regulations, and potential nationalisation of assets",
+      "**Exchange rate fluctuations** affect the profitability of international operations and require currency hedging",
+      "**Transfer pricing** allows MNCs to allocate costs between subsidiaries in different countries for tax efficiency"
+    ],
+    "definitions": [
+      {
+        "term": "Globalisation",
+        "definition": "The process of increasing interconnectedness between countries through trade, investment, technology and cultural exchange"
+      },
+      {
+        "term": "Multinational company (MNC)",
+        "definition": "A business that operates in more than one country and has subsidiaries or production facilities in different nations"
+      },
+      {
+        "term": "Emerging market",
+        "definition": "A developing economy with rapid growth rates but higher political and economic risks compared to developed markets"
+      },
+      {
+        "term": "Cultural differences",
+        "definition": "Variations in language, religion, customs, values and business practices between different countries and societies"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the advantages AND disadvantages with developed explanations"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Make a judgement about which factors are most important, considering the business context"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two challenges a Pakistani textile company might face when expanding into European markets.",
+      "marks": 6,
+      "answer": "One challenge is cultural differences because European consumers may have different preferences for clothing styles, colours and fabric compared to Pakistani customers, requiring product adaptation which increases costs. Another challenge is exchange rate fluctuations because the Pakistani rupee may weaken against the Euro, making imports of European machinery more expensive and reducing profit margins when converting European sales revenue back to rupees.",
+      "markBreakdown": [
+        "Mark 1: Cultural differences identified",
+        "Mark 2: Explanation of how this affects the business",
+        "Mark 3: Development of the impact",
+        "Mark 4: Exchange rate fluctuations identified",
+        "Mark 5: Explanation of how this affects the business",
+        "Mark 6: Development of the impact"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'globalisation is good/bad' — always explain specific advantages and disadvantages with context",
+      "Students often confuse multinational companies with international trade — MNCs must have operations in multiple countries",
+      "Avoid listing cultural differences without explaining how they specifically impact business operations",
+      "Never ignore the two-way nature of globalisation — it affects both developed and developing countries",
+      "Students often fail to distinguish between political risk and economic risk in emerging markets"
+    ],
+    "examinerTips": [
+      "Global business questions appear in most Paper 2 exams, especially in Section B",
+      "Always use specific country examples when discussing emerging markets or cultural differences",
+      "Link MNC strategies to business objectives like profit maximisation or market share growth",
+      "Consider both opportunities and threats when evaluating international expansion decisions"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Draw a diagram showing the impacts of globalisation with arrows connecting: increased trade, technology transfer, cultural exchange, and economic interdependence between developed and developing countries"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:13:49.245Z",
+  "updated_at": "2026-04-06T05:13:49.245Z"
+}

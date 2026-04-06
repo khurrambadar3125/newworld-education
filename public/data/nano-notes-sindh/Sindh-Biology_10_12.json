@@ -1,0 +1,106 @@
+{
+  "subject": "Biology",
+  "board": "sindh",
+  "class": 10,
+  "chapter_id": "12",
+  "chapter_name": "Coordination",
+  "note_data": {
+    "title": "Coordination",
+    "readTime": "8 min",
+    "board": "Sindh Board (BSEK)",
+    "class": 10,
+    "keyPoints": [
+      "Coordination is the process by which different parts of an organism work together to perform various activities in a proper sequence",
+      "Nervous system consists of Central Nervous System (brain and spinal cord) and Peripheral Nervous System (nerves)",
+      "Neuron is the structural and functional unit of nervous system consisting of cell body, dendrites and axon",
+      "Reflex action is an automatic and involuntary response to a stimulus without involvement of brain",
+      "Endocrine system consists of ductless glands that secrete hormones directly into blood",
+      "Hormones are chemical messengers that control and coordinate various body functions",
+      "Plants show coordination through tropisms and growth regulators (auxins, gibberellins, cytokinins)",
+      "Tropism is the growth movement of plants in response to external stimuli like light, gravity and touch"
+    ],
+    "definitions": [
+      {
+        "term": "Coordination",
+        "definition": "The process by which different parts of an organism work together to perform various activities in a proper sequence"
+      },
+      {
+        "term": "Neuron",
+        "definition": "The structural and functional unit of nervous system consisting of cell body, dendrites and axon"
+      },
+      {
+        "term": "Reflex Action",
+        "definition": "An automatic and involuntary response to a stimulus without involvement of brain"
+      },
+      {
+        "term": "Hormone",
+        "definition": "Chemical messengers secreted by endocrine glands that control and coordinate various body functions"
+      },
+      {
+        "term": "Tropism",
+        "definition": "The growth movement of plants in response to external stimuli like light, gravity and touch"
+      }
+    ],
+    "importantQuestions": [
+      {
+        "type": "short",
+        "question": "Define reflex action and give one example",
+        "answer": "Reflex action is an automatic and involuntary response to a stimulus without involvement of brain. Example: Withdrawal of hand from hot object"
+      },
+      {
+        "type": "long",
+        "question": "Describe the structure of neuron with labeled diagram",
+        "answer": "Neuron consists of: 1) Cell body containing nucleus and cytoplasm 2) Dendrites - short branched processes that receive impulses 3) Axon - long process that transmits impulses away from cell body 4) Myelin sheath - covers axon for insulation 5) Node of Ranvier - gaps in myelin sheath 6) Synaptic knobs - at axon terminals for neurotransmitter release"
+      }
+    ],
+    "mcqs": [
+      {
+        "question": "Which part of neuron receives impulses?",
+        "options": {
+          "A": "Axon",
+          "B": "Dendrites",
+          "C": "Cell body",
+          "D": "Myelin sheath"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Growth of plant shoot towards light is called:",
+        "options": {
+          "A": "Geotropism",
+          "B": "Phototropism",
+          "C": "Thigmotropism",
+          "D": "Chemotropism"
+        },
+        "correct": "B"
+      },
+      {
+        "question": "Which gland is called master gland?",
+        "options": {
+          "A": "Thyroid",
+          "B": "Pancreas",
+          "C": "Pituitary",
+          "D": "Adrenal"
+        },
+        "correct": "C"
+      }
+    ],
+    "commonMistakes": [
+      "Students confuse sensory neurons with motor neurons - remember sensory neurons carry impulses TO brain, motor neurons carry FROM brain",
+      "Writing 'reflex arc' instead of 'reflex action' when asked to define reflex action",
+      "Forgetting to mention 'without involvement of brain' in reflex action definition",
+      "Mixing up positive and negative tropisms - positive means towards stimulus, negative means away from stimulus",
+      "Not drawing proper arrows showing direction of impulse flow in neuron diagram"
+    ],
+    "examTips": [
+      "This chapter usually has 2-3 MCQs and appears in every BSEK paper",
+      "Neuron diagram with proper labeling is frequently asked - practice drawing it",
+      "Learn exact definitions word by word as they appear in STBB textbook",
+      "Reflex action vs voluntary action comparison often appears in short questions",
+      "Plant hormones and their functions table should be memorized completely"
+    ],
+    "formulas": [],
+    "keyDiagram": "Structure of Neuron showing cell body with nucleus, dendrites, axon with myelin sheath, nodes of Ranvier, and synaptic knobs. Arrow showing direction of impulse flow from dendrites to axon terminals must be clearly marked."
+  },
+  "created_at": "2026-04-06T06:17:38.144Z"
+}
