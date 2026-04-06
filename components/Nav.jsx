@@ -60,6 +60,26 @@ const MENU_GROUPS = [
   },
 ];
 
+// Sindh Board menu — shown instead of Cambridge menu for Sindh Board students
+const SINDH_MENU_GROUPS = [
+  { title: 'Study', items: [
+    { href: '/sindh-board', label: '📚 Matric Study Path' },
+    { href: '/bootcamp-sindh', label: '🎯 Matric Bootcamp' },
+    { href: '/sindh-dashboard', label: '📊 My Progress' },
+  ]},
+  { title: 'More', items: [
+    { href: '/entrance-tests', label: '🎓 Entrance Tests (IBA, NUST)' },
+    { href: '/garageschool', label: '🏫 The Garage School' },
+    { href: '/study', label: '🌍 Cambridge O & A Level' },
+    { href: '/founder', label: '👤 Founder' },
+  ]},
+];
+
+function isSindhBoard() {
+  if (typeof window === 'undefined') return false;
+  try { return JSON.parse(localStorage.getItem('nw_user') || '{}').board === 'sindh'; } catch { return false; }
+}
+
 export default function Nav({ current, accent }) {
   const [open, setOpen] = useState(false);
   const toggleMenu = (val) => {
@@ -149,7 +169,7 @@ export default function Nav({ current, accent }) {
       {open && (
         <div className="nw-nav-menu" onClick={() => toggleMenu(false)}>
           <Link href="/"><a className="nw-nav-home">🏠 Home</a></Link>
-          {MENU_GROUPS.map(group => (
+          {(isSindhBoard() ? SINDH_MENU_GROUPS : MENU_GROUPS).map(group => (
             <div key={group.title}>
               <div className="nw-nav-group-title">{group.title}</div>
               {group.items.map(item => (
