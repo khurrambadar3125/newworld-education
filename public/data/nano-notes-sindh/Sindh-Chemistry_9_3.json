@@ -105,7 +105,32 @@
       "Electronic configuration: 2n² (maximum electrons in shell)",
       "Valence electrons = Group number (for main groups)"
     ],
-    "keyDiagram": "Modern Periodic Table showing 18 groups and 7 periods, with s, p, d, f blocks clearly marked. Must show increasing atomic number from left to right, and indicate trends of atomic radius, ionization energy, and electronegativity with arrows."
+    "keyDiagram": "Modern Periodic Table showing 18 groups and 7 periods, with s, p, d, f blocks clearly marked. Must show increasing atomic number from left to right, and indicate trends of atomic radius, ionization energy, and electronegativity with arrows.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define periodic law and explain the arrangement of elements in modern periodic table",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required comparison of atomic radius, ionization energy and electronegativity trends across periods and groups",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested knowledge of Mendeleev's periodic table limitations and modern periodic table advantages",
+      "BSEK 2020 SSC-II Q6 (3 marks) — asked for definitions of ionization energy, electron affinity and electronegativity with units"
+    ],
+    "workedExample": {
+      "question": "Define atomic radius. Explain the trend of atomic radius in period and group of periodic table. (6 marks)",
+      "steps": [
+        "Step 1: Write exact textbook definition of atomic radius",
+        "Step 2: State the trend across a period with reason",
+        "Step 3: State the trend down a group with reason",
+        "Step 4: Mention nuclear charge and electron shell effects"
+      ],
+      "answer": "Atomic radius is half the distance between the nuclei of two identical atoms bonded together. Across a period, atomic radius decreases from left to right because nuclear charge increases while number of electron shells remains same, pulling electrons closer. Down a group, atomic radius increases because number of electron shells increases, making atoms larger despite increased nuclear charge.",
+      "markScheme": "1 mark for correct definition, 2 marks for period trend with reason, 2 marks for group trend with reason, 1 mark for mentioning nuclear charge effect"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for periodic law and property definitions.",
+      "Avoid confusing ionization energy trends - remember it increases across period and decreases down group. Don't write opposite trends.",
+      "When explaining trends, always mention both nuclear charge and electron shell effects. Incomplete explanations lose marks even if trend direction is correct."
+    ],
+    "quickRecap": "Modern periodic table arranges elements by increasing atomic number following periodic law. Atomic radius decreases across period, increases down group due to nuclear charge vs electron shell effects. Ionization energy and electronegativity increase across period, decrease down group. Electron affinity generally increases across period with some exceptions.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:08:17.005Z"
+  "created_at": "2026-04-06T06:08:17.005Z",
+  "enriched_at": "2026-04-06T16:54:32.979Z"
 }

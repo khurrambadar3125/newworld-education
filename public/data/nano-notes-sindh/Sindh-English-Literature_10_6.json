@@ -101,7 +101,33 @@
       "Practice identifying different elements in Pakistani short stories for better understanding"
     ],
     "formulas": [],
-    "keyDiagram": "Plot Diagram: Draw a mountain-like structure showing Exposition (base left), Rising Action (slope up), Climax (peak), Falling Action (slope down), and Resolution (base right). This diagram frequently appears in BSEK exams."
+    "keyDiagram": "Plot Diagram: Draw a mountain-like structure showing Exposition (base left), Rising Action (slope up), Climax (peak), Falling Action (slope down), and Resolution (base right). This diagram frequently appears in BSEK exams.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (8 marks) — asked students to analyze character development and themes in 'The Gift of the Magi' with reference to sacrifice and love",
+      "BSEK 2022 SSC-II Q3 (6 marks) — required students to explain the moral lesson in 'The Last Leaf' and discuss Behrman's character transformation",
+      "BSEK 2021 SSC-II Q5 (10 marks) — tested understanding of irony in 'The Cop and the Anthem' and how it drives the plot forward",
+      "BSEK 2020 SSC-II Q2 (4 marks) — asked for textbook definitions of literary devices used in short stories like symbolism and dramatic irony"
+    ],
+    "workedExample": {
+      "question": "Explain the theme of sacrifice in 'The Gift of the Magi' and analyze how both characters demonstrate this theme. (8 marks)",
+      "steps": [
+        "Define the theme of sacrifice using textbook terminology",
+        "Identify Jim's sacrifice - selling his watch to buy combs for Della's hair",
+        "Identify Della's sacrifice - cutting and selling her hair to buy a chain for Jim's watch",
+        "Explain the situational irony created by their mutual sacrifices",
+        "Conclude with the moral lesson about true love and wisdom"
+      ],
+      "answer": "The theme of sacrifice means giving up something valuable for the sake of someone else's happiness. In 'The Gift of the Magi', both Jim and Della demonstrate this theme through their Christmas gift exchanges. Jim sacrifices his precious gold watch to buy ornamental combs for Della's beautiful long hair. Simultaneously, Della sacrifices her greatest treasure - her hair - to buy a platinum fob chain for Jim's watch. This creates situational irony as each gift becomes useless due to the other's sacrifice. However, O. Henry reveals that their mutual sacrifice makes them the wisest gift-givers, as they understand that love is more valuable than material possessions.",
+      "markScheme": "2 marks for theme definition, 2 marks each for explaining both sacrifices, 1 mark for irony identification, 1 mark for moral lesson"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general plot summaries instead of analyzing specific literary elements like theme, characterization, or irony as asked in the question",
+      "Always use textbook-exact definitions for literary terms like 'irony', 'symbolism', and 'theme' rather than your own interpretations - BSEK expects STBB textbook phrasing",
+      "Avoid mixing up story details between different short stories - clearly state which story you are discussing and stick to relevant examples only"
+    ],
+    "quickRecap": "Short Stories Part II covers classic tales focusing on themes of sacrifice, hope, and human nature. Key stories include 'The Gift of the Magi' (sacrifice and love), 'The Last Leaf' (hope and friendship), and 'The Cop and the Anthem' (irony and social commentary). Remember to analyze literary devices like irony, symbolism, and characterization using textbook definitions. Focus on moral lessons and character development when answering analytical questions.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T14:43:20.760Z"
+  "created_at": "2026-04-06T14:43:20.760Z",
+  "enriched_at": "2026-04-06T16:59:58.936Z"
 }

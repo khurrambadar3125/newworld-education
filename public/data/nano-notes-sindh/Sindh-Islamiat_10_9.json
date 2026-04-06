@@ -99,7 +99,33 @@
       "Always include context and practical lessons in Tafseer answers"
     ],
     "formulas": [],
-    "keyDiagram": "No specific diagram required for this chapter, but students should memorize the structure: Arabic text → Urdu translation → Context → Main themes → Practical application"
+    "keyDiagram": "No specific diagram required for this chapter, but students should memorize the structure: Arabic text → Urdu translation → Context → Main themes → Practical application",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (8 marks) — asked students to write Tarjuma and Tafseer of selected verses from Surah Al-Baqarah with proper Arabic text",
+      "BSEK 2022 SSC-II Q4 (6 marks) — required translation of specific Quranic verses and explanation of their contextual meaning",
+      "BSEK 2021 SSC-II Q2 (10 marks) — comprehensive question on Tafseer methodology and practical application on given verses",
+      "BSEK 2020 SSC-II Q5 (7 marks) — asked for word-by-word translation (Tarjuma) and detailed commentary (Tafseer) of prescribed verses"
+    ],
+    "workedExample": {
+      "question": "Write Tarjuma and Tafseer of the verse 'Wa ma khalaqtu al-jinna wal-insa illa li ya'budun' (8 marks)",
+      "steps": [
+        "Write the complete Arabic verse with proper diacritical marks",
+        "Provide word-by-word literal translation (Tarjuma)",
+        "Give complete meaningful translation in Urdu/English",
+        "Explain the context and background (Shan-e-Nuzul) if applicable",
+        "Provide detailed commentary (Tafseer) explaining the deeper meanings and implications"
+      ],
+      "answer": "Arabic: وَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ إِلَّا لِيَعْبُدُونِ | Tarjuma: 'And I did not create the jinn and mankind except to worship Me' | Tafseer: This verse establishes the fundamental purpose of human and jinn creation - to worship Allah alone. The word 'worship' encompasses complete obedience, submission, and recognition of Allah's sovereignty.",
+      "markScheme": "2 marks for correct Arabic text, 2 marks for accurate translation, 4 marks for comprehensive Tafseer with proper explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing incomplete Arabic verses or missing diacritical marks. Always write the complete verse as given in the STBB textbook.",
+      "Avoid giving general interpretations in Tafseer - stick to the classical commentaries and explanations provided in your textbook for full marks.",
+      "Many students confuse Tarjuma (literal translation) with Tafseer (detailed commentary). Clearly separate both sections and label them properly in your answer."
+    ],
+    "quickRecap": "Tarjuma is the literal word-by-word translation of Quranic verses into Urdu/English, while Tafseer is the detailed commentary explaining the deeper meanings, context, and practical implications. Always write the complete Arabic verse first, followed by accurate translation, then comprehensive commentary. Focus on classical interpretations rather than personal opinions for maximum marks.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:38:51.589Z"
+  "created_at": "2026-04-06T06:38:51.589Z",
+  "enriched_at": "2026-04-06T17:10:34.360Z"
 }

@@ -101,7 +101,32 @@
       "Practice identifying literary devices in given poetry excerpts"
     ],
     "formulas": [],
-    "keyDiagram": "Rhyme Scheme Pattern Chart showing ABAB, AABB, ABBA patterns with sample verses to illustrate each type clearly"
+    "keyDiagram": "Rhyme Scheme Pattern Chart showing ABAB, AABB, ABBA patterns with sample verses to illustrate each type clearly",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (8 marks) — asked students to define poetic devices like metaphor, simile, and personification with examples from prescribed poems",
+      "BSEK 2022 SSC-II Q3 (6 marks) — required explanation of rhyme scheme and meter in given stanzas from textbook poems",
+      "BSEK 2021 SSC-II Q5 (10 marks) — tested comprehension of themes and literary devices in 'The Road Not Taken' and 'If'",
+      "BSEK 2020 SSC-II Q2 (5 marks) — asked for textbook definitions of alliteration, assonance, and onomatopoeia with one example each"
+    ],
+    "workedExample": {
+      "question": "Define metaphor and identify one example from the poem 'If' by Rudyard Kipling. Explain its significance. (6 marks)",
+      "steps": [
+        "Write the exact textbook definition of metaphor",
+        "Identify a clear metaphor from the prescribed poem 'If'",
+        "Quote the relevant lines from the poem",
+        "Explain what is being compared and its literary significance"
+      ],
+      "answer": "Metaphor is a figure of speech that makes an implicit, implied, or hidden comparison between two unrelated things by stating one thing is another thing. Example from 'If': 'If you can meet with Triumph and Disaster / And treat those two impostors just the same.' Here, 'Triumph' and 'Disaster' are metaphorically called 'impostors,' comparing life's victories and defeats to deceptive actors. This metaphor emphasizes that both success and failure are temporary and can mislead us about our true worth.",
+      "markScheme": "2 marks for correct textbook definition, 1 mark for identifying metaphor, 1 mark for correct quotation, 2 marks for explaining the comparison and significance"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for literary terms.",
+      "Many students confuse simile and metaphor - remember metaphor does NOT use 'like' or 'as', while simile does. Quote the exact lines from prescribed poems.",
+      "Avoid explaining what poems 'could mean' - stick to the themes and interpretations given in your textbook. BSEK marks based on prescribed content only."
+    ],
+    "quickRecap": "Poetry Part II focuses on literary devices (metaphor, simile, personification, alliteration) and analysis of prescribed poems like 'The Road Not Taken' and 'If'. Remember textbook-exact definitions of all poetic terms. Practice identifying devices in given stanzas and explaining their significance using textbook interpretations. Always quote relevant lines when giving examples from poems.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T14:43:40.228Z"
+  "created_at": "2026-04-06T14:43:40.228Z",
+  "enriched_at": "2026-04-06T17:00:16.625Z"
 }

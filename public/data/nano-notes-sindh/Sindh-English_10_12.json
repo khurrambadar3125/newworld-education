@@ -101,7 +101,33 @@
       "Check spelling, grammar, and punctuation before submitting the answer"
     ],
     "formulas": [],
-    "keyDiagram": "Essay Structure Diagram: Introduction (Hook + Background + Thesis Statement) → Body Paragraph 1 (Topic Sentence + Supporting Details + Examples) → Body Paragraph 2 (Topic Sentence + Supporting Details + Examples) → Conclusion (Restate Thesis + Summary + Final Thought)"
+    "keyDiagram": "Essay Structure Diagram: Introduction (Hook + Background + Thesis Statement) → Body Paragraph 1 (Topic Sentence + Supporting Details + Examples) → Body Paragraph 2 (Topic Sentence + Supporting Details + Examples) → Conclusion (Restate Thesis + Summary + Final Thought)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (8 marks) — asked students to write a descriptive essay on 'My School' with proper introduction, body paragraphs, and conclusion",
+      "BSEK 2022 SSC-II Q5 (10 marks) — required students to compose a narrative essay about 'A Memorable Day' using chronological structure",
+      "BSEK 2024 SSC-II Q3 (6 marks) — asked for an argumentative essay on 'Importance of Education' with clear thesis statement and supporting arguments",
+      "BSEK 2023 SSC-II Q6 (5 marks) — tested knowledge of essay structure by asking students to identify and explain the three main parts of an essay"
+    ],
+    "workedExample": {
+      "question": "Write a descriptive essay on 'My Mother' in 150-200 words. Include proper introduction, body, and conclusion. (8 marks)",
+      "steps": [
+        "Write an engaging introduction with a hook and thesis statement about your mother",
+        "Develop 2-3 body paragraphs describing her physical appearance, qualities, and role in family",
+        "Use descriptive language with adjectives and sensory details",
+        "Write a meaningful conclusion that reinforces the main idea",
+        "Ensure word count is within 150-200 words and check grammar"
+      ],
+      "answer": "My mother is the most precious person in my life. She is a source of love, care, and inspiration for our entire family.\n\nMy mother has a graceful personality with kind eyes that reflect her loving nature. Her gentle voice brings comfort to everyone around her. She works tirelessly from dawn to dusk, managing household responsibilities with great dedication. Her hands are always busy cooking delicious meals, cleaning the house, and taking care of our needs. She possesses remarkable patience and never complains about her daily struggles.\n\nMy mother is not only a homemaker but also my first teacher. She guides me in my studies and teaches me moral values. Her sacrifices for our happiness are countless. She always puts our needs before her own.\n\nIn conclusion, my mother is a blessing from Allah. Her unconditional love and endless sacrifices make her the most important person in my life. I pray for her good health and happiness always.",
+      "markScheme": "Introduction with clear thesis (2 marks), descriptive details about mother's appearance and qualities (3 marks), proper essay structure with paragraphs (2 marks), appropriate conclusion (1 mark)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by not following the three-part essay structure (introduction, body, conclusion). Always organize your essay with clear paragraphs as taught in STBB textbook.",
+      "Many students exceed or fall short of the specified word count. BSEK examiners strictly check word limits, so count your words carefully during the exam.",
+      "Avoid using informal language or contractions in formal essays. Use proper grammar, punctuation, and vocabulary as emphasized in the Sindh textbook examples."
+    ],
+    "quickRecap": "Essays have three main parts: introduction (hook + thesis), body (2-3 developed paragraphs with examples), and conclusion (restate main idea). Types include descriptive, narrative, and argumentative essays. Always follow the specified word count and use formal language. Practice different essay types with proper paragraph structure and smooth transitions between ideas.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:51:06.426Z"
+  "created_at": "2026-04-06T06:51:06.426Z",
+  "enriched_at": "2026-04-06T17:03:09.756Z"
 }

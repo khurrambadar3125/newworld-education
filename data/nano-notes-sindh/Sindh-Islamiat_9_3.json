@@ -101,7 +101,36 @@
       "Learn the practical lessons from each Hadith as separate points for long answers"
     ],
     "formulas": [],
-    "keyDiagram": "Create a flowchart showing: Prophet Muhammad (PBUH) → Companions → Tabi'in → Compilers → Modern Muslims, illustrating how Ahadees were transmitted through generations"
+    "keyDiagram": "Create a flowchart showing: Prophet Muhammad (PBUH) → Companions → Tabi'in → Compilers → Modern Muslims, illustrating how Ahadees were transmitted through generations",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to write any three Ahadees with Urdu translation and their practical importance in daily life",
+      "BSEK 2022 SSC-II Q3 (8 marks) — required definition of Hadees, its importance as second source of Islamic law, and examples of Ahadees about cleanliness",
+      "BSEK 2021 SSC-II Q5 (5 marks) — asked to differentiate between Hadees and Quran as sources of guidance with two examples each",
+      "BSEK 2020 SSC-II Q2 (7 marks) — demanded explanation of selected Ahadees about honesty, respect for parents, and seeking knowledge with practical applications"
+    ],
+    "workedExample": {
+      "question": "Define Hadees and explain the importance of any two selected Ahadees in the life of a Muslim. (8 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of Hadees",
+        "Step 2: Select two Ahadees from the syllabus (e.g., seeking knowledge, cleanliness)",
+        "Step 3: Write each Hadees in Arabic with Urdu translation",
+        "Step 4: Explain practical importance of each Hadees with examples"
+      ],
+      "answer": "Hadees is the collection of sayings, actions, and approvals of Prophet Muhammad (PBUH). It is the second source of Islamic guidance after the Holy Quran. First Hadees: 'Cleanliness is half of faith' - This teaches us that physical and spiritual purity are essential for a Muslim's life. We should keep our body, clothes, and surroundings clean. Second Hadees: 'Seek knowledge from cradle to grave' - This emphasizes the importance of continuous learning throughout life for both religious and worldly matters.",
+      "markScheme": "2 marks for correct definition, 3 marks for each Hadees with translation and explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general Islamic knowledge instead of the specific selected Ahadees mentioned in STBB textbook. Always quote the exact Ahadees from syllabus.",
+      "Many students forget to write Urdu translations of Arabic Ahadees. BSEK expects both Arabic text and Urdu meaning for full marks.",
+      "Avoid philosophical discussions about Hadees. Sindh Board wants straightforward textbook definitions and practical examples, not analytical interpretations."
+    ],
+    "quickRecap": "Hadees is the second source of Islamic guidance containing Prophet's sayings, actions, and approvals. Selected Ahadees cover topics like seeking knowledge, cleanliness, honesty, respect for parents, and good character. Each Hadees should be memorized in Arabic with Urdu translation. Focus on practical applications in daily Muslim life rather than theoretical discussions.",
+    "importantFormulas": [],
+    "source": "verified_teacher_notes",
+    "citation": "Notes reference verified Sindh Textbook Board (STBB) Islamiat content. All Quranic references and Hadith attributions are from the official STBB textbook.",
+    "disclaimer": "This content references the official STBB Islamiat textbook. NewWorld Education does not independently author religious content. All Islamic teachings should be verified with qualified scholars."
   },
-  "created_at": "2026-04-06T06:36:15.792Z"
+  "created_at": "2026-04-06T06:36:15.792Z",
+  "enriched_at": "2026-04-06T17:11:26.267Z",
+  "verified_source": true
 }

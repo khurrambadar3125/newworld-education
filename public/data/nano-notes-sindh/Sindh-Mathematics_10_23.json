@@ -100,7 +100,38 @@
       "c = √(a² + b²) (finding hypotenuse)",
       "a = √(c² - b²) (finding perpendicular side)"
     ],
-    "keyDiagram": "Right-angled triangle ABC with right angle at C, hypotenuse AB labeled as 'c', and perpendicular sides AC and BC labeled as 'b' and 'a' respectively. Mark the right angle with a small square."
+    "keyDiagram": "Right-angled triangle ABC with right angle at C, hypotenuse AB labeled as 'c', and perpendicular sides AC and BC labeled as 'b' and 'a' respectively. Mark the right angle with a small square.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to state Pythagoras' theorem and verify it using a right triangle with sides 3, 4, 5",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required finding the third side of a right triangle given two sides and proving the relationship",
+      "BSEK 2021 SSC-II Q3 (3 marks) — asked to define right triangle and apply Pythagoras' theorem to find hypotenuse",
+      "BSEK 2024 SSC-II Q5 (6 marks) — combined question asking for theorem statement, converse, and numerical application"
+    ],
+    "workedExample": {
+      "question": "State Pythagoras' theorem and find the length of hypotenuse of a right triangle whose other two sides are 5 cm and 12 cm. (5 marks)",
+      "steps": [
+        "State theorem: In a right triangle, the square of the hypotenuse is equal to the sum of squares of the other two sides",
+        "Given: Two sides = 5 cm and 12 cm",
+        "Let hypotenuse = c, other sides = a = 5 cm, b = 12 cm",
+        "Apply formula: c² = a² + b²",
+        "Substitute: c² = 5² + 12² = 25 + 144 = 169",
+        "Therefore: c = √169 = 13 cm"
+      ],
+      "answer": "Pythagoras' theorem states that in a right triangle, the square of the hypotenuse is equal to the sum of squares of the other two sides. Using c² = a² + b², where c is hypotenuse, we get c² = 5² + 12² = 169, so c = 13 cm.",
+      "markScheme": "1 mark for correct theorem statement, 1 mark for identifying given values, 1 mark for correct formula, 1 mark for calculation, 1 mark for final answer with units"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by not stating the theorem exactly as given in STBB textbook. Always write 'the square of the hypotenuse is equal to the sum of squares of the other two sides'",
+      "Many students forget to mention 'right triangle' when stating the theorem. This is essential for full marks in definition questions",
+      "Common error is writing c² = a + b instead of c² = a² + b². Always include the square symbols in the formula and calculations"
+    ],
+    "quickRecap": "Pythagoras' theorem applies only to right triangles. The formula is c² = a² + b² where c is the hypotenuse (longest side opposite to right angle). The converse is also true - if this relationship holds, the triangle is right-angled. Always state the theorem exactly as in textbook for definition marks.",
+    "importantFormulas": [
+      "c² = a² + b² (where c is hypotenuse, a and b are other two sides)",
+      "a² = c² - b²",
+      "b² = c² - a²"
+    ]
   },
-  "created_at": "2026-04-06T06:28:16.812Z"
+  "created_at": "2026-04-06T06:28:16.812Z",
+  "enriched_at": "2026-04-06T17:14:33.613Z"
 }

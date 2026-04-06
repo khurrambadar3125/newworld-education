@@ -104,7 +104,34 @@
       "Electronegativity difference = |EN(A) - EN(B)|",
       "Lattice Energy ∝ (charge of cation × charge of anion) / distance between ions"
     ],
-    "keyDiagram": "Lewis dot structure showing formation of ionic bond in NaCl: Na with one dot transferring electron to Cl with seven dots, resulting in Na+ and Cl- ions with complete octets. Also draw covalent bond formation in H2O showing oxygen sharing electrons with two hydrogen atoms."
+    "keyDiagram": "Lewis dot structure showing formation of ionic bond in NaCl: Na with one dot transferring electron to Cl with seven dots, resulting in Na+ and Cl- ions with complete octets. Also draw covalent bond formation in H2O showing oxygen sharing electrons with two hydrogen atoms.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to define ionic and covalent bonding with two examples each",
+      "BSEK 2022 SSC-II Q3 (4 marks) — required explanation of how atoms achieve stable electronic configuration through bonding",
+      "BSEK 2021 SSC-II Q5 (5 marks) — asked to differentiate between ionic and covalent compounds with properties",
+      "BSEK 2020 SSC-II Q2 (3 marks) — definition of chemical bond and why atoms form bonds"
+    ],
+    "workedExample": {
+      "question": "Define chemical bonding and explain how sodium chloride (NaCl) is formed through ionic bonding. (6 marks)",
+      "steps": [
+        "Define chemical bonding using STBB textbook definition",
+        "State electronic configuration of sodium (2,8,1) and chlorine (2,8,7)",
+        "Explain electron transfer from sodium to chlorine",
+        "Show formation of Na⁺ and Cl⁻ ions",
+        "Explain electrostatic attraction between oppositely charged ions",
+        "State that this forms ionic compound NaCl"
+      ],
+      "answer": "Chemical bonding is the force of attraction that holds atoms together in molecules or compounds. Sodium has electronic configuration (2,8,1) and chlorine has (2,8,7). To achieve stable octet configuration, sodium loses one electron to form Na⁺ ion (2,8) and chlorine gains one electron to form Cl⁻ ion (2,8,8). The electrostatic force of attraction between oppositely charged Na⁺ and Cl⁻ ions forms ionic bond, resulting in ionic compound sodium chloride (NaCl).",
+      "markScheme": "1 mark for definition, 1 mark each for electronic configurations, 1 mark for electron transfer explanation, 1 mark for ion formation, 1 mark for electrostatic attraction explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for chemical bonding definition.",
+      "Many students confuse ionic and covalent bonding properties. Learn the exact tabular comparison from STBB textbook - don't mix up conductivity and solubility properties.",
+      "Avoid using complex terms not in the textbook. BSEK expects simple, clear explanations using only the terminology taught in Class 9 STBB book."
+    ],
+    "quickRecap": "Chemical bonding is the attractive force holding atoms together. Ionic bonding occurs through electron transfer between metal and non-metal, forming oppositely charged ions. Covalent bonding involves electron sharing between non-metals. Atoms bond to achieve stable electronic configuration (usually octet rule).",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:08:39.727Z"
+  "created_at": "2026-04-06T06:08:39.727Z",
+  "enriched_at": "2026-04-06T16:54:49.264Z"
 }

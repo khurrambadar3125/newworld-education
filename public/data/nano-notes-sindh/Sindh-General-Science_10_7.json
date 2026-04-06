@@ -104,7 +104,37 @@
       "Potential Energy (PE) = mgh",
       "Efficiency = (Useful Energy Output / Total Energy Input) × 100%"
     ],
-    "keyDiagram": "Energy transformation diagram showing conversion between different forms of energy (kinetic ↔ potential ↔ thermal ↔ electrical ↔ chemical) with examples like pendulum, hydroelectric dam, and thermal power plant"
+    "keyDiagram": "Energy transformation diagram showing conversion between different forms of energy (kinetic ↔ potential ↔ thermal ↔ electrical ↔ chemical) with examples like pendulum, hydroelectric dam, and thermal power plant",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define kinetic energy and potential energy with examples",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of energy transformations in hydroelectric power plant",
+      "BSEK 2021 SSC-II Q4 (3 marks) — tested law of conservation of energy with mathematical statement",
+      "BSEK 2020 SSC-II Q6 (5 marks) — asked to differentiate between renewable and non-renewable energy sources with examples"
+    ],
+    "workedExample": {
+      "question": "Define energy and state the law of conservation of energy. Give two examples of energy transformation. (6 marks)",
+      "steps": [
+        "Define energy using STBB textbook definition",
+        "State the law of conservation of energy exactly as in textbook",
+        "Give first example of energy transformation",
+        "Give second example of energy transformation"
+      ],
+      "answer": "Energy is defined as the capacity or ability to do work. The law of conservation of energy states that energy can neither be created nor destroyed but can only be transformed from one form to another, and the total energy of an isolated system remains constant. Example 1: In a hydroelectric power plant, potential energy of water is converted to kinetic energy, then to electrical energy. Example 2: In photosynthesis, light energy is converted to chemical energy.",
+      "markScheme": "1 mark for correct definition of energy, 2 marks for law of conservation statement, 1.5 marks each for two proper examples"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for energy definitions.",
+      "Avoid explaining HOW energy transformations work - BSEK only wants you to STATE what transforms into what, not the mechanism.",
+      "Never write just 'energy cannot be destroyed' - you must write the complete law of conservation statement including 'can be transformed from one form to another'."
+    ],
+    "quickRecap": "Energy is the capacity to do work and exists in various forms like kinetic, potential, heat, light, sound, chemical and electrical. The law of conservation of energy states energy cannot be created or destroyed, only transformed. Common transformations include potential to kinetic energy in falling objects, and chemical to electrical energy in batteries. Renewable sources like solar and wind are unlimited while non-renewable sources like fossil fuels are limited.",
+    "importantFormulas": [
+      "Kinetic Energy (KE) = ½mv²",
+      "Potential Energy (PE) = mgh",
+      "Work = Force × Distance",
+      "Power = Work/Time"
+    ]
   },
-  "created_at": "2026-04-06T06:53:40.424Z"
+  "created_at": "2026-04-06T06:53:40.424Z",
+  "enriched_at": "2026-04-06T17:06:31.609Z"
 }

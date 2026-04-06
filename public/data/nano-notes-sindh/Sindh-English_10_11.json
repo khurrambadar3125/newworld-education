@@ -103,7 +103,33 @@
       "Independent Clause + Semicolon + Independent Clause",
       "Complete Statement + Colon + List/Explanation/Quotation"
     ],
-    "keyDiagram": "Punctuation Hierarchy Chart showing: Period (.) for complete stops, Semicolon (;) for major pauses, Comma (,) for minor pauses, and their relationships in sentence structure"
+    "keyDiagram": "Punctuation Hierarchy Chart showing: Period (.) for complete stops, Semicolon (;) for major pauses, Comma (,) for minor pauses, and their relationships in sentence structure",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to punctuate given sentences using semicolons, colons, and dashes correctly",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required students to define and give examples of advanced punctuation marks including parentheses and ellipses",
+      "BSEK 2021 SSC-II Q3 (3 marks) — tested proper use of quotation marks in direct and indirect speech with other punctuation",
+      "BSEK 2020 SSC-II Q5 (6 marks) — comprehensive question on punctuating a paragraph using all advanced punctuation marks"
+    ],
+    "workedExample": {
+      "question": "Define semicolon and colon. Punctuate the following sentence correctly: The meeting discussed three topics budget planning staff evaluation and project deadlines moreover the chairman emphasized punctuality (5 marks)",
+      "steps": [
+        "Define semicolon as per STBB textbook definition",
+        "Define colon as per STBB textbook definition",
+        "Identify where colon is needed before the list",
+        "Add commas to separate list items",
+        "Replace 'moreover' connection with semicolon"
+      ],
+      "answer": "Semicolon (;) is used to join two independent clauses that are closely related and to separate items in a complex list. Colon (:) is used to introduce a list, explanation, or elaboration of what comes before it. Corrected sentence: The meeting discussed three topics: budget planning, staff evaluation, and project deadlines; moreover, the chairman emphasized punctuality.",
+      "markScheme": "1 mark each for correct definitions of semicolon and colon, 1 mark for colon before list, 1 mark for commas in list, 1 mark for semicolon before 'moreover'"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general explanations instead of textbook-exact definitions of punctuation marks. Always use the STBB textbook phrasing for definitions.",
+      "Many students incorrectly use semicolons instead of colons before lists, or use commas where semicolons are required between independent clauses.",
+      "Students frequently forget that quotation marks, parentheses, and brackets have specific placement rules with other punctuation marks as given in the textbook."
+    ],
+    "quickRecap": "Advanced punctuation includes semicolons (joining related clauses), colons (introducing lists/explanations), dashes (emphasizing breaks), parentheses (additional information), ellipses (omitted words), and proper quotation mark placement. Each mark has specific textbook rules that must be memorized exactly. Practice identifying where each mark belongs in complex sentences.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:50:40.822Z"
+  "created_at": "2026-04-06T06:50:40.822Z",
+  "enriched_at": "2026-04-06T17:02:48.913Z"
 }

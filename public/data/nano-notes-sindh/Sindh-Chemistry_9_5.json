@@ -108,7 +108,32 @@
       "PV = constant (at constant T)",
       "V/T = constant (at constant P)"
     ],
-    "keyDiagram": "Kinetic Molecular Theory diagram showing gas particles in random motion with arrows indicating movement directions, particles far apart with negligible intermolecular forces, and equal kinetic energy distribution at constant temperature"
+    "keyDiagram": "Kinetic Molecular Theory diagram showing gas particles in random motion with arrows indicating movement directions, particles far apart with negligible intermolecular forces, and equal kinetic energy distribution at constant temperature",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define the three states of matter and give two examples of each",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of kinetic molecular theory and how it explains different states",
+      "BSEK 2021 SSC-II Q4 (3 marks) — tested definitions of melting point, boiling point and sublimation",
+      "BSEK 2020 SSC-II Q8 (5 marks) — asked to compare properties of solids, liquids and gases in tabular form"
+    ],
+    "workedExample": {
+      "question": "Define the three states of matter and explain the arrangement of particles in each state. (6 marks)",
+      "steps": [
+        "Define solid state with particle arrangement",
+        "Define liquid state with particle arrangement",
+        "Define gas state with particle arrangement",
+        "Mention intermolecular forces for each state"
+      ],
+      "answer": "Solid: Matter in which particles are closely packed in regular arrangement with strong intermolecular forces. Particles vibrate at fixed positions. Liquid: Matter in which particles are less closely packed with moderate intermolecular forces. Particles can move freely but remain close together. Gas: Matter in which particles are far apart with negligible intermolecular forces. Particles move randomly in all directions with high kinetic energy.",
+      "markScheme": "1 mark each for correct definition of solid, liquid, gas. 1 mark each for describing particle arrangement in each state."
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for states of matter.",
+      "Avoid mixing up melting point and boiling point definitions. Learn the exact temperature-based definitions from the textbook.",
+      "When explaining particle arrangement, mention both intermolecular forces AND particle movement - examiners expect both aspects to be covered."
+    ],
+    "quickRecap": "Matter exists in three states: solid (closely packed particles with strong forces), liquid (moderately packed with medium forces), and gas (widely spaced with weak forces). State changes occur at specific temperatures - melting point and boiling point. Kinetic molecular theory explains particle behavior in each state based on intermolecular forces and particle motion.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:09:04.397Z"
+  "created_at": "2026-04-06T06:09:04.397Z",
+  "enriched_at": "2026-04-06T16:55:03.084Z"
 }

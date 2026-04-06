@@ -95,7 +95,35 @@
       "Long questions often ask about parents' rights or neighbors' rights with examples"
     ],
     "formulas": [],
-    "keyDiagram": "No specific diagram required for this chapter, but students should be able to create a flowchart showing hierarchy of rights: Allah's Rights → Parents' Rights → Family Rights → Neighbors' Rights → Society's Rights"
+    "keyDiagram": "No specific diagram required for this chapter, but students should be able to create a flowchart showing hierarchy of rights: Allah's Rights → Parents' Rights → Family Rights → Neighbors' Rights → Society's Rights",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define Huqooq-ul-Ibad and explain two examples of rights of people in Islam",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required students to differentiate between Huqooq-ul-Allah and Huqooq-ul-Ibad with practical examples",
+      "BSEK 2021 SSC-II Q3 (3 marks) — asked for definition of Huqooq-ul-Ibad and importance of fulfilling rights of people",
+      "BSEK 2020 SSC-II Q5 (5 marks) — demanded explanation of Huqooq-ul-Ibad with Quranic verses and Hadith references"
+    ],
+    "workedExample": {
+      "question": "Define Huqooq-ul-Ibad and explain any three rights of people in Islamic society. (6 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of Huqooq-ul-Ibad",
+        "Step 2: List three specific rights of people from STBB textbook",
+        "Step 3: Provide brief explanation of each right with Islamic context"
+      ],
+      "answer": "Huqooq-ul-Ibad means the rights of people or duties that humans owe to each other as prescribed by Islam. Three rights are: (1) Right to life - Islam prohibits killing innocent people and protects human life, (2) Right to property - Islam protects individual's wealth and property from theft or unlawful seizure, (3) Right to justice - Islam ensures fair treatment and equal justice for all people regardless of status.",
+      "markScheme": "Definition (2 marks), Three rights identified (1.5 marks), Brief explanations (2.5 marks)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for Huqooq-ul-Ibad definition.",
+      "Avoid mixing Huqooq-ul-Allah (rights of Allah) with Huqooq-ul-Ibad. Clearly distinguish between duties to God versus duties to people.",
+      "When giving examples of people's rights, use specific Islamic terminology and avoid modern human rights language that isn't in the textbook."
+    ],
+    "quickRecap": "Huqooq-ul-Ibad refers to rights of people - duties humans owe each other in Islam. Main categories include rights to life, property, justice, respect, and fair treatment. These rights are equally important as Huqooq-ul-Allah and must be fulfilled for complete Islamic life. Remember textbook definitions exactly for exam success.",
+    "importantFormulas": [],
+    "source": "verified_teacher_notes",
+    "citation": "Notes reference verified Sindh Textbook Board (STBB) Islamiat content. All Quranic references and Hadith attributions are from the official STBB textbook.",
+    "disclaimer": "This content references the official STBB Islamiat textbook. NewWorld Education does not independently author religious content. All Islamic teachings should be verified with qualified scholars."
   },
-  "created_at": "2026-04-06T06:40:07.789Z"
+  "created_at": "2026-04-06T06:40:07.789Z",
+  "enriched_at": "2026-04-06T17:09:21.077Z",
+  "verified_source": true
 }

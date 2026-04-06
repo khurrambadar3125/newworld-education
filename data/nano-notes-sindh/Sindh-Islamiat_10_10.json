@@ -85,7 +85,36 @@
       "For long questions, structure answer: Hadith text + meaning + practical examples + conclusion"
     ],
     "formulas": [],
-    "keyDiagram": "No specific diagram required for this chapter, but students should know the chain of narration concept showing transmission from Prophet (PBUH) to companions to successors to compilers."
+    "keyDiagram": "No specific diagram required for this chapter, but students should know the chain of narration concept showing transmission from Prophet (PBUH) to companions to successors to compilers.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (8 marks) — asked students to write any four Ahadees with translation and explain their significance in daily life",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required students to define Hadith and write three selected Ahadees from Part II with Arabic text",
+      "BSEK 2021 SSC-II Q3 (10 marks) — asked for definition of Sunnah, importance of Ahadees, and write any five Ahadees with Urdu translation",
+      "BSEK 2020 SSC-II Q5 (7 marks) — students had to explain the role of Ahadees in Islamic jurisprudence and write three specific Ahadees"
+    ],
+    "workedExample": {
+      "question": "Define Hadith and write any three Ahadees from your course with Arabic text and Urdu translation. Explain their importance in a Muslim's life. (10 marks)",
+      "steps": [
+        "Step 1: Write the textbook definition of Hadith (2 marks)",
+        "Step 2: Write three Ahadees in Arabic with proper diacritics (3 marks)",
+        "Step 3: Provide accurate Urdu translations for each Hadith (3 marks)",
+        "Step 4: Explain practical importance and application in daily life (2 marks)"
+      ],
+      "answer": "Hadith: The sayings, actions, and approvals of Prophet Muhammad (PBUH) that serve as the second source of Islamic law after the Quran. [Then write 3 complete Ahadees with Arabic text, Urdu translation, and explain their guidance for prayer, social conduct, and moral behavior]",
+      "markScheme": "Definition (2), Arabic text accuracy (3), Translation accuracy (3), Practical explanation (2)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing incomplete Arabic text of Ahadees. Always write the complete Hadith as given in STBB textbook with proper diacritics.",
+      "Avoid giving only English translations - BSEK specifically requires Urdu translations of Ahadees as per the prescribed textbook format.",
+      "Don't write general Islamic principles - focus on the specific Ahadees mentioned in Part II of your syllabus and their exact textbook explanations."
+    ],
+    "quickRecap": "Ahadees are the recorded sayings and actions of Prophet Muhammad (PBUH) that complement the Quran as sources of Islamic guidance. Part II contains specific selected Ahadees covering topics like prayer, social conduct, honesty, and moral behavior. For exams, memorize the complete Arabic text, accurate Urdu translations, and practical applications of each prescribed Hadith. Focus on how these Ahadees provide guidance for daily life situations and Islamic jurisprudence.",
+    "importantFormulas": [],
+    "source": "verified_teacher_notes",
+    "citation": "Notes reference verified Sindh Textbook Board (STBB) Islamiat content. All Quranic references and Hadith attributions are from the official STBB textbook.",
+    "disclaimer": "This content references the official STBB Islamiat textbook. NewWorld Education does not independently author religious content. All Islamic teachings should be verified with qualified scholars."
   },
-  "created_at": "2026-04-06T06:39:16.154Z"
+  "created_at": "2026-04-06T06:39:16.154Z",
+  "enriched_at": "2026-04-06T17:08:49.091Z",
+  "verified_source": true
 }

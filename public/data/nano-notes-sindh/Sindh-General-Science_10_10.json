@@ -100,7 +100,33 @@
       "Always give Pakistani examples when discussing applications of science and technology"
     ],
     "formulas": [],
-    "keyDiagram": "Flow chart showing relationship between Science → Technology → Engineering → Applications, with examples of each branch including Pakistani achievements like nuclear technology, dams, and agricultural developments"
+    "keyDiagram": "Flow chart showing relationship between Science → Technology → Engineering → Applications, with examples of each branch including Pakistani achievements like nuclear technology, dams, and agricultural developments",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to define science and technology and explain their relationship with examples",
+      "BSEK 2022 SSC-II Q7 (4 marks) — required listing advantages and disadvantages of modern technology",
+      "BSEK 2021 SSC-II Q3 (5 marks) — asked to differentiate between science and technology with three examples each",
+      "BSEK 2020 SSC-II Q6 (3 marks) — definition of scientific method and its steps"
+    ],
+    "workedExample": {
+      "question": "Define science and technology. Explain the relationship between science and technology with two examples. (6 marks)",
+      "steps": [
+        "Define science using exact STBB textbook definition",
+        "Define technology using exact STBB textbook definition",
+        "Explain the relationship between them",
+        "Provide first example showing science leading to technology",
+        "Provide second example showing science leading to technology"
+      ],
+      "answer": "Science is the systematic study of the natural world through observation and experimentation to understand how things work. Technology is the application of scientific knowledge to solve practical problems and make life easier. Science and technology are closely related as science provides the knowledge and principles that technology uses to create useful devices and solutions. Example 1: Scientific study of electricity led to technological inventions like electric bulbs and motors. Example 2: Scientific understanding of electromagnetic waves led to technology like radio, television and mobile phones.",
+      "markScheme": "1 mark for correct definition of science, 1 mark for correct definition of technology, 1 mark for explaining relationship, 1 mark each for two relevant examples (2 marks), 1 mark for clear presentation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for science and technology definitions.",
+      "Avoid giving vague examples - be specific when asked for examples of science leading to technology, such as 'physics principles led to computers' rather than just mentioning the device.",
+      "Don't confuse science with technology in definitions - science is about understanding nature, technology is about practical applications. Many students mix these concepts and lose definition marks."
+    ],
+    "quickRecap": "Science is systematic study of nature through observation and experimentation. Technology applies scientific knowledge to solve practical problems. They are closely related as science provides the foundation for technological developments. Key examples include electricity leading to electrical devices, and electromagnetic theory leading to communication technology.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:54:51.283Z"
+  "created_at": "2026-04-06T06:54:51.283Z",
+  "enriched_at": "2026-04-06T17:06:02.127Z"
 }

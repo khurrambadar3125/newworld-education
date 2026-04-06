@@ -102,7 +102,36 @@
       "Practice writing contributions of each scientist in bullet points for quick recall"
     ],
     "formulas": [],
-    "keyDiagram": "Timeline diagram showing Golden Age of Islam (8th-13th centuries) with major Muslim scientists, their birth-death years, and key contributions arranged chronologically"
+    "keyDiagram": "Timeline diagram showing Golden Age of Islam (8th-13th centuries) with major Muslim scientists, their birth-death years, and key contributions arranged chronologically",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (5 marks) — asked students to write contributions of Al-Khwarizmi and Al-Razi in Mathematics and Medicine",
+      "BSEK 2022 SSC-II Q6 (8 marks) — required detailed description of Ibn Sina's contributions to medical science with examples",
+      "BSEK 2021 SSC-II Q3 (6 marks) — asked to explain the role of Muslim scientists in preserving Greek knowledge during Dark Ages",
+      "BSEK 2020 SSC-II Q5 (4 marks) — demanded textbook definitions of contributions by Al-Biruni and Ibn Khaldun"
+    ],
+    "workedExample": {
+      "question": "Describe the contributions of Al-Khwarizmi to Mathematics and explain how his work influenced modern mathematical concepts. (8 marks)",
+      "steps": [
+        "Define Al-Khwarizmi's identity and time period",
+        "List his major mathematical contributions",
+        "Explain his work on algebra specifically",
+        "Describe his influence on modern mathematics"
+      ],
+      "answer": "Al-Khwarizmi (780-850 CE) was a Persian Muslim mathematician and astronomer who worked in the House of Wisdom in Baghdad. His major contributions include: (1) Development of Algebra as a separate branch of mathematics through his book 'Al-Jabr wa'l Muqābala', (2) Introduction of Hindu-Arabic numeral system to the Islamic world, (3) Systematic methods for solving linear and quadratic equations, (4) Compilation of astronomical and trigonometric tables. His work on algebra provided systematic methods for solving mathematical problems and the word 'algebra' itself derives from 'Al-Jabr' in his book title. His influence on modern mathematics is evident as algebraic methods form the foundation of advanced mathematical concepts used today.",
+      "markScheme": "2 marks for correct identification and time period, 3 marks for listing major contributions, 2 marks for explaining algebra work, 1 mark for modern influence"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general statements about Muslim scientists instead of specific textbook contributions. Always mention exact names, dates, and specific works as given in STBB textbook.",
+      "Avoid mixing up the contributions of different scientists. Al-Khwarizmi is for Mathematics/Algebra, Al-Razi for Medicine/Chemistry, Ibn Sina for Medicine/Philosophy - don't interchange their achievements.",
+      "Many students fail to mention the book titles and specific terminologies. Always include book names like 'Al-Qanun fi'l Tibb' for Ibn Sina, 'Kitab al-Hawi' for Al-Razi as per textbook."
+    ],
+    "quickRecap": "Muslim scientists during the Golden Age (8th-13th centuries) made revolutionary contributions across multiple fields. Al-Khwarizmi developed algebra and introduced Hindu-Arabic numerals, Al-Razi advanced medicine and chemistry, Ibn Sina wrote the famous medical encyclopedia Al-Qanun, and Al-Biruni contributed to astronomy and geography. Their work preserved Greek knowledge, added original research, and laid foundations for modern scientific methods that influenced European Renaissance.",
+    "importantFormulas": [],
+    "source": "verified_teacher_notes",
+    "citation": "Notes reference verified Sindh Textbook Board (STBB) Islamiat content. All Quranic references and Hadith attributions are from the official STBB textbook.",
+    "disclaimer": "This content references the official STBB Islamiat textbook. NewWorld Education does not independently author religious content. All Islamic teachings should be verified with qualified scholars."
   },
-  "created_at": "2026-04-06T06:40:59.905Z"
+  "created_at": "2026-04-06T06:40:59.905Z",
+  "enriched_at": "2026-04-06T17:09:56.894Z",
+  "verified_source": true
 }

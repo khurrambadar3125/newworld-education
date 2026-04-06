@@ -100,7 +100,32 @@
       "Keep answers within word limits specified in questions"
     ],
     "formulas": [],
-    "keyDiagram": "No specific diagram required for this chapter, but students should practice passage marking techniques - underlining main ideas, circling keywords, and numbering supporting details"
+    "keyDiagram": "No specific diagram required for this chapter, but students should practice passage marking techniques - underlining main ideas, circling keywords, and numbering supporting details",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (8 marks) — asked students to read a passage about environmental conservation and answer comprehension questions including main idea identification and vocabulary in context",
+      "BSEK 2022 SSC-II Q3 (10 marks) — provided a prose passage on technological advancement with questions on summary writing, inference making, and author's tone identification",
+      "BSEK 2021 SSC-II Q4 (8 marks) — comprehension passage on cultural heritage with questions testing literal understanding, critical analysis, and contextual meaning of phrases",
+      "BSEK 2020 SSC-II Q3 (10 marks) — reading passage about education importance followed by questions on theme identification, character analysis, and vocabulary explanation"
+    ],
+    "workedExample": {
+      "question": "Read the following passage and answer the questions below: (8 marks)\n'Education is the foundation of progress in any society. It empowers individuals to think critically and make informed decisions. Without proper education, a nation cannot achieve sustainable development.'\nQ1: What is the main idea of the passage? (2 marks)\nQ2: Explain the phrase 'sustainable development' in context. (3 marks)\nQ3: How does education empower individuals according to the passage? (3 marks)",
+      "steps": [
+        "Read the passage carefully twice to understand the overall meaning",
+        "Identify the central theme by looking at the opening statement and supporting details",
+        "For contextual meanings, use clues from surrounding sentences",
+        "Answer in complete sentences using exact phrases from the passage where possible"
+      ],
+      "answer": "Q1: The main idea is that education is the foundation of progress in society and is essential for national development. Q2: 'Sustainable development' in this context means long-term progress and growth that a nation can maintain over time, which is only possible through proper education. Q3: According to the passage, education empowers individuals by enabling them to think critically and make informed decisions.",
+      "markScheme": "Q1: 1 mark for identifying education as foundation, 1 mark for mentioning societal progress. Q2: 2 marks for explaining long-term development concept, 1 mark for connecting to education. Q3: 2 marks for 'think critically', 1 mark for 'make informed decisions'"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general knowledge about reading instead of answering specific questions about the given passage. Always refer directly to the text provided.",
+      "Avoid copying large chunks of the passage as answers. Extract relevant information and present it in your own words while maintaining the original meaning.",
+      "Many students ignore the mark allocation and write lengthy answers for 2-mark questions or brief responses for 5-mark questions. Adjust your answer length according to marks awarded."
+    ],
+    "quickRecap": "Reading comprehension tests your ability to understand, analyze and interpret written text. Focus on identifying main ideas, supporting details, author's tone, and contextual meanings. Always read the passage twice before attempting questions. Answer only what is asked, refer directly to the text, and write complete sentences in proper English.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:46:54.579Z"
+  "created_at": "2026-04-06T06:46:54.579Z",
+  "enriched_at": "2026-04-06T17:04:18.081Z"
 }

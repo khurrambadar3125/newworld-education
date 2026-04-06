@@ -102,7 +102,47 @@
       "Examiner Report 2021: 'Candidates frequently omitted the Prophet's role in social reform' — always mention his work on women's rights, slavery, tribal conflicts, and economic justice when discussing his importance"
     ],
     "keyDiagram": "Students must be able to draw a timeline showing the Prophet's life in two phases: Makkah Period (570-622 CE) showing birth, first revelation at 40, persecution, and hijra; Madinah Period (622-632 CE) showing Constitution of Madinah, major battles (Badr, Uhud, Khandaq), Treaty of Hudaybiyyah, conquest of Makkah, and Farewell Pilgrimage. Include key ages: 40 (first revelation), 50 (Isra and Mi'raj), 53 (Hijra), 63 (death).",
-    "quickRecap": "Prophet Muhammad (570-632 CE) received first revelation at 40, migrated to Madinah in 622 CE (Hijra), and established the first Muslim state. As the 'Seal of Prophets,' he completed the chain of prophecy with the final revelation (Quran). His importance lies in being the perfect example (Uswa Hasana) for Muslims in worship, morality, leadership, and social reform. His life demonstrates all Islamic principles in practice, making him the ultimate role model for over 1.8 billion Muslims worldwide."
+    "quickRecap": "Prophet Muhammad (570-632 CE) received first revelation at 40, migrated to Madinah in 622 CE (Hijra), and established the first Muslim state. As the 'Seal of Prophets,' he completed the chain of prophecy with the final revelation (Quran). His importance lies in being the perfect example (Uswa Hasana) for Muslims in worship, morality, leadership, and social reform. His life demonstrates all Islamic principles in practice, making him the ultimate role model for over 1.8 billion Muslims worldwide.",
+    "source": "verified_teacher_notes",
+    "citation": "Notes sourced from verified teacher materials. Mojza.org (Sir Usman Hameed, Sir Yousuf Memon) and KEN Academy (Sir Umar Khan). All Quranic references and Hadith attributions verified by qualified Islamiyat teachers.",
+    "verifiedPDFs": [
+      {
+        "name": "Paper 1 Topical Compilation (2009-2025)",
+        "url": "/books/islamiyat-verified/OL-Islamiyat-Topical-Compilation-P1-2009-2025-Final.pdf",
+        "source": "Mojza.org"
+      },
+      {
+        "name": "Paper 2 Topical Compilation (2009-2025)",
+        "url": "/books/islamiyat-verified/OL-Islamiyat-Topical-Compilation-P2-2009-2025-Final.pdf",
+        "source": "Mojza.org"
+      },
+      {
+        "name": "Islamiat Reference List",
+        "url": "/books/islamiyat-verified/Islamiat-Reference-list.pdf",
+        "source": "Mojza.org"
+      },
+      {
+        "name": "Timeline of Events",
+        "url": "/books/islamiyat-verified/Islamiat-Timeline.pdf",
+        "source": "Mojza.org"
+      },
+      {
+        "name": "Difficult Questions from Examiner Reports",
+        "url": "/books/islamiyat-verified/Difficult-Questions-according-to-ER.pdf",
+        "source": "Mojza.org"
+      },
+      {
+        "name": "Hajj Rituals Sheet",
+        "url": "/books/islamiyat-verified/Hajj-Rituals-Sheet.pdf",
+        "source": "Mojza.org"
+      },
+      {
+        "name": "Summary of Battles",
+        "url": "/books/islamiyat-verified/Summary-of-Battles-Sheet1.pdf",
+        "source": "Mojza.org"
+      }
+    ],
+    "disclaimer": "This content references verified materials from qualified Islamiyat teachers. NewWorld Education does not independently author religious content. All Quranic verses, Hadith, and Islamic teachings should be verified with qualified scholars."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -110,5 +150,6 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:44:34.072Z",
   "updated_at": "2026-04-05T20:44:34.072Z",
-  "enriched_at": "2026-04-06T15:58:07.495Z"
+  "enriched_at": "2026-04-06T15:58:07.495Z",
+  "verified_source": true
 }

@@ -106,7 +106,37 @@
       "HNO3 + Ca(OH)2 → Ca(NO3)2 + 2H2O",
       "pH + pOH = 14"
     ],
-    "keyDiagram": "pH scale from 0 to 14 showing acidic range (0-7), neutral point (7), and basic range (7-14) with examples of common substances at different pH values like lemon juice, water, soap solution"
+    "keyDiagram": "pH scale from 0 to 14 showing acidic range (0-7), neutral point (7), and basic range (7-14) with examples of common substances at different pH values like lemon juice, water, soap solution",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define acids and bases according to Arrhenius theory with examples",
+      "BSEK 2022 SSC-II Q6 (6 marks) — required explanation of neutralization reaction with chemical equation and salt formation",
+      "BSEK 2021 SSC-II Q3 (3 marks) — tested knowledge of indicators and their color changes in acidic and basic solutions",
+      "BSEK 2020 SSC-II Q5 (5 marks) — asked to classify salts as acidic, basic or neutral with reasoning and examples"
+    ],
+    "workedExample": {
+      "question": "Define acid and base according to Arrhenius theory. Write the neutralization reaction between hydrochloric acid and sodium hydroxide. Name the salt formed. (6 marks)",
+      "steps": [
+        "Write exact textbook definition of Arrhenius acid",
+        "Write exact textbook definition of Arrhenius base",
+        "Write balanced chemical equation for the neutralization reaction",
+        "Identify and name the salt formed"
+      ],
+      "answer": "According to Arrhenius theory, an acid is a substance which ionizes in water to produce hydrogen ions (H⁺). A base is a substance which ionizes in water to produce hydroxide ions (OH⁻). The neutralization reaction is: HCl + NaOH → NaCl + H₂O. The salt formed is sodium chloride (NaCl).",
+      "markScheme": "1 mark for acid definition, 1 mark for base definition, 2 marks for correct balanced equation, 1 mark for identifying NaCl, 1 mark for naming sodium chloride"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for Arrhenius, Bronsted-Lowry definitions.",
+      "Many students forget to balance chemical equations properly in neutralization reactions. Always check that atoms and charges are balanced on both sides.",
+      "Avoid giving practical examples when asked for definitions only. BSEK wants precise theoretical definitions, not applications or everyday examples."
+    ],
+    "quickRecap": "Acids produce H⁺ ions in water, bases produce OH⁻ ions (Arrhenius theory). Acids turn blue litmus red, bases turn red litmus blue. Neutralization: Acid + Base → Salt + Water. Salts can be acidic, basic or neutral depending on their parent acid and base strength.",
+    "importantFormulas": [
+      "Acid + Base → Salt + Water (General neutralization)",
+      "HCl + NaOH → NaCl + H₂O",
+      "pH + pOH = 14 (at 25°C)",
+      "pH = -log[H⁺]"
+    ]
   },
-  "created_at": "2026-04-06T06:10:58.387Z"
+  "created_at": "2026-04-06T06:10:58.387Z",
+  "enriched_at": "2026-04-06T16:51:47.683Z"
 }

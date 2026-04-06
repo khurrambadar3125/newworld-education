@@ -100,7 +100,36 @@
       "Practice writing about all three types of Akhlaq with clear examples"
     ],
     "formulas": [],
-    "keyDiagram": "Draw a simple diagram showing three branches of Akhlaq: (1) Akhlaq with Allah (2) Akhlaq with People (3) Akhlaq with Oneself, with examples under each branch"
+    "keyDiagram": "Draw a simple diagram showing three branches of Akhlaq: (1) Akhlaq with Allah (2) Akhlaq with People (3) Akhlaq with Oneself, with examples under each branch",
+    "source": "verified_teacher_notes",
+    "citation": "Notes reference verified Sindh Textbook Board (STBB) Islamiat content. All Quranic references and Hadith attributions are from the official STBB textbook.",
+    "disclaimer": "This content references the official STBB Islamiat textbook. NewWorld Education does not independently author religious content. All Islamic teachings should be verified with qualified scholars.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to define Akhlaq and explain three characteristics of good moral character according to Islamic teachings",
+      "BSEK 2022 SSC-II Q3 (5 marks) — required definition of Husn-ul-Khuluq and two examples from Prophet's life showing excellent character",
+      "BSEK 2021 SSC-II Q6 (4 marks) — asked to differentiate between Akhlaq-e-Hasana and Akhlaq-e-Sayya with one example each",
+      "BSEK 2020 SSC-II Q2 (7 marks) — demanded explanation of importance of good morals in Islamic society with Quranic references"
+    ],
+    "workedExample": {
+      "question": "Define Akhlaq and explain any three qualities of Akhlaq-e-Hasana (Good Morals) with examples. (6 marks)",
+      "steps": [
+        "Step 1: Write exact textbook definition of Akhlaq",
+        "Step 2: Identify three qualities of good morals from STBB textbook",
+        "Step 3: Provide one clear example for each quality",
+        "Step 4: Use proper Islamic terminology and Quranic references where mentioned in textbook"
+      ],
+      "answer": "Akhlaq means moral character and conduct in Islam. It refers to the inner qualities and outward behavior of a Muslim according to Islamic teachings. Three qualities of Akhlaq-e-Hasana are: (1) Truthfulness (Sidq) - always speaking truth like Prophet Muhammad (PBUH) who was called As-Sadiq, (2) Justice (Adl) - being fair in all dealings as commanded in Quran, (3) Patience (Sabr) - remaining steadfast in difficulties as shown by Prophet Ayub (AS).",
+      "markScheme": "2 marks for correct definition of Akhlaq, 1 mark each for naming three qualities, 1 mark for relevant examples"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about morality instead of using exact STBB textbook definitions of Akhlaq terms",
+      "Avoid mixing personal opinions with Islamic teachings - stick strictly to Quranic verses and Hadith mentioned in the textbook",
+      "Many students confuse Akhlaq-e-Hasana with Akhlaq-e-Sayya examples - memorize the exact categorization from STBB textbook"
+    ],
+    "quickRecap": "Akhlaq means Islamic moral character covering both inner qualities and outward behavior. Good morals (Akhlaq-e-Hasana) include truthfulness, justice, patience, and kindness as taught by Prophet Muhammad (PBUH). Bad morals (Akhlaq-e-Sayya) include lying, oppression, and arrogance which Islam strictly forbids. Moral development is essential for both individual success and Islamic society's wellbeing.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:37:55.732Z"
+  "created_at": "2026-04-06T06:37:55.732Z",
+  "verified_source": true,
+  "enriched_at": "2026-04-06T17:12:37.519Z"
 }

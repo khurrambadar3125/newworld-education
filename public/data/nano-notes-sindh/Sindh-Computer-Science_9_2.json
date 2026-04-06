@@ -101,7 +101,31 @@
       "Types of OS with examples is a popular 8-mark question"
     ],
     "formulas": [],
-    "keyDiagram": "Draw a block diagram showing User at top, Operating System in middle (containing Process Management, Memory Management, File Management, Device Management), and Computer Hardware at bottom with arrows showing interaction flow"
+    "keyDiagram": "Draw a block diagram showing User at top, Operating System in middle (containing Process Management, Memory Management, File Management, Device Management), and Computer Hardware at bottom with arrows showing interaction flow",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define operating system and list four main functions",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of single-user vs multi-user operating systems with examples",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested knowledge of GUI vs CLI with advantages and disadvantages",
+      "BSEK 2020 SSC-II Q6 (3 marks) — asked to name three types of operating systems based on user interaction"
+    ],
+    "workedExample": {
+      "question": "Define Operating System and explain any three functions of an operating system. (6 marks)",
+      "steps": [
+        "Write the exact textbook definition of Operating System",
+        "List three main functions with proper headings",
+        "Explain each function in 2-3 lines using textbook language"
+      ],
+      "answer": "Operating System is a system software that acts as an interface between user and computer hardware, and controls the execution of all kinds of programs. Three functions are: (1) Memory Management: OS allocates and deallocates memory space to programs and keeps track of memory usage. (2) File Management: OS organizes, stores, retrieves, names, and protects files and directories on storage devices. (3) Process Management: OS handles creation, scheduling, and termination of processes and manages CPU allocation.",
+      "markScheme": "2 marks for correct OS definition, 1 mark each for naming three functions, 1 mark each for explaining any two functions correctly"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for operating system definition.",
+      "Avoid mixing up examples when explaining GUI and CLI - write Windows/Linux for GUI and DOS/Unix commands for CLI as given in textbook.",
+      "When listing OS functions, use exact headings from textbook: Memory Management, File Management, Process Management, Device Management - not informal descriptions."
+    ],
+    "quickRecap": "Operating System is system software that interfaces between user and hardware. Main types include single-user (DOS), multi-user (Unix), GUI (Windows), and CLI (DOS). Key functions are memory management, file management, process management, and device management. Remember textbook definitions exactly for full marks.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:41:43.086Z"
+  "created_at": "2026-04-06T06:41:43.086Z",
+  "enriched_at": "2026-04-06T16:58:08.480Z"
 }

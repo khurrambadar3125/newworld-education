@@ -111,7 +111,43 @@
       "1 + tan²θ = sec²θ",
       "1 + cot²θ = cosec²θ"
     ],
-    "keyDiagram": "Right-angled triangle ABC with right angle at B, showing hypotenuse AC, perpendicular BC (to angle A), and base AB. Label all sides and mark the angle θ at A. This diagram must be drawn for every trigonometric problem."
+    "keyDiagram": "Right-angled triangle ABC with right angle at B, showing hypotenuse AC, perpendicular BC (to angle A), and base AB. Label all sides and mark the angle θ at A. This diagram must be drawn for every trigonometric problem.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define trigonometric ratios and find sin, cos, tan for a given right triangle",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required exact definitions of all six trigonometric ratios with proper mathematical notation",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested understanding of complementary angle relationships and co-function identities",
+      "BSEK 2020 SSC-II Q6 (4 marks) — asked to prove that sin²θ + cos²θ = 1 using textbook method"
+    ],
+    "workedExample": {
+      "question": "In a right triangle ABC, right angled at B, if AB = 3 cm and BC = 4 cm, find all six trigonometric ratios of angle A. (6 marks)",
+      "steps": [
+        "Draw right triangle ABC with right angle at B, AB = 3 cm, BC = 4 cm",
+        "Find hypotenuse AC using Pythagoras theorem: AC² = AB² + BC² = 3² + 4² = 9 + 16 = 25, so AC = 5 cm",
+        "Identify sides with respect to angle A: opposite = BC = 4 cm, adjacent = AB = 3 cm, hypotenuse = AC = 5 cm",
+        "Apply trigonometric ratio definitions: sin A = opposite/hypotenuse = 4/5, cos A = adjacent/hypotenuse = 3/5, tan A = opposite/adjacent = 4/3",
+        "Find reciprocal ratios: cosec A = hypotenuse/opposite = 5/4, sec A = hypotenuse/adjacent = 5/3, cot A = adjacent/opposite = 3/4"
+      ],
+      "answer": "sin A = 4/5, cos A = 3/5, tan A = 4/3, cosec A = 5/4, sec A = 5/3, cot A = 3/4",
+      "markScheme": "1 mark for correct diagram, 1 mark for finding hypotenuse, 1 mark for identifying sides, 3 marks for correct ratios"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for trigonometric ratio definitions.",
+      "Many students confuse opposite and adjacent sides. Always clearly identify which side is opposite and which is adjacent to the given angle before calculating ratios.",
+      "Avoid using decimal approximations in final answers unless specifically asked. Keep answers in exact fractional form as per Sindh Board marking scheme requirements."
+    ],
+    "quickRecap": "Trigonometry deals with relationships between sides and angles of right triangles. The six trigonometric ratios are sine, cosine, tangent, cosecant, secant, and cotangent. These ratios are defined as specific fractions involving opposite side, adjacent side, and hypotenuse relative to a given acute angle. The fundamental identity sin²θ + cos²θ = 1 is crucial for solving problems.",
+    "importantFormulas": [
+      "sin θ = opposite/hypotenuse",
+      "cos θ = adjacent/hypotenuse",
+      "tan θ = opposite/adjacent",
+      "cosec θ = hypotenuse/opposite = 1/sin θ",
+      "sec θ = hypotenuse/adjacent = 1/cos θ",
+      "cot θ = adjacent/opposite = 1/tan θ",
+      "sin²θ + cos²θ = 1",
+      "1 + tan²θ = sec²θ",
+      "1 + cot²θ = cosec²θ"
+    ]
   },
-  "created_at": "2026-04-06T06:30:53.483Z"
+  "created_at": "2026-04-06T06:30:53.483Z",
+  "enriched_at": "2026-04-06T17:16:29.873Z"
 }

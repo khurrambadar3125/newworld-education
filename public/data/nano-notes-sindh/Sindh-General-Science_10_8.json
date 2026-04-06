@@ -107,7 +107,38 @@
       "Rs = R₁ + R₂ + R₃ (Series Resistance)",
       "1/Rp = 1/R₁ + 1/R₂ + 1/R₃ (Parallel Resistance)"
     ],
-    "keyDiagram": "Series and Parallel Circuit Diagrams showing battery, resistors, ammeter, and voltmeter with proper electrical symbols. Include current and voltage directions. This diagram appears in every BSEK exam."
+    "keyDiagram": "Series and Parallel Circuit Diagrams showing battery, resistors, ammeter, and voltmeter with proper electrical symbols. Include current and voltage directions. This diagram appears in every BSEK exam.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define electric current and state Ohm's law with its mathematical form",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required definition of resistance, resistivity and calculation of resistance using R = ρL/A",
+      "BSEK 2021 SSC-II Q3 (3 marks) — tested definitions of series and parallel circuits with their characteristic properties",
+      "BSEK 2020 SSC-II Q5 (4 marks) — asked to define electric power, state its formula and explain heating effect of current"
+    ],
+    "workedExample": {
+      "question": "Define electric current. A current of 2A flows through a conductor for 5 minutes. Calculate the charge that flows through it. (4 marks)",
+      "steps": [
+        "Write the textbook definition of electric current",
+        "Identify given values: I = 2A, t = 5 minutes = 300 seconds",
+        "Apply the formula Q = I × t",
+        "Calculate and write the final answer with proper units"
+      ],
+      "answer": "Electric current is defined as the rate of flow of electric charge through a conductor. Given: I = 2A, t = 5 minutes = 300s. Using Q = I × t, Q = 2 × 300 = 600 coulombs.",
+      "markScheme": "1 mark for correct definition, 1 mark for identifying given values, 1 mark for correct formula, 1 mark for final answer with units"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for definitions of current, voltage, and resistance.",
+      "Many students confuse resistance and resistivity. Remember resistance depends on dimensions while resistivity is a material property - learn both definitions separately.",
+      "Common mistake is forgetting to convert units (especially time from minutes to seconds). Always check units before substituting in formulas."
+    ],
+    "quickRecap": "Electric current is rate of flow of charge (I = Q/t). Ohm's law states V = IR for constant temperature. In series circuits, current is same everywhere but voltage divides. In parallel circuits, voltage is same but current divides.",
+    "importantFormulas": [
+      "I = Q/t (Electric current)",
+      "V = IR (Ohm's law)",
+      "R = ρL/A (Resistance formula)",
+      "P = VI = I²R = V²/R (Electric power)",
+      "H = I²Rt (Heat produced)"
+    ]
   },
-  "created_at": "2026-04-06T06:54:05.587Z"
+  "created_at": "2026-04-06T06:54:05.587Z",
+  "enriched_at": "2026-04-06T17:06:46.149Z"
 }

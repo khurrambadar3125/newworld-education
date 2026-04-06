@@ -97,7 +97,32 @@
       "Always check for capital letters at sentence beginnings and proper nouns"
     ],
     "formulas": [],
-    "keyDiagram": "Punctuation marks chart showing symbols and their primary uses: Full stop (.), Comma (,), Semicolon (;), Colon (:), Question mark (?), Exclamation mark (!), Quotation marks (' '), Apostrophe (')"
+    "keyDiagram": "Punctuation marks chart showing symbols and their primary uses: Full stop (.), Comma (,), Semicolon (;), Colon (:), Question mark (?), Exclamation mark (!), Quotation marks (' '), Apostrophe (')",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to punctuate a given paragraph using proper comma placement and quotation marks",
+      "BSEK 2022 SSC-II Q5 (5 marks) — required defining four punctuation marks and providing one example sentence for each",
+      "BSEK 2021 SSC-II Q4 (3 marks) — asked to correct punctuation errors in given sentences focusing on apostrophes and semicolons",
+      "BSEK 2020 SSC-II Q6 (6 marks) — demanded explanation of punctuation rules with examples for period, comma, and exclamation mark"
+    ],
+    "workedExample": {
+      "question": "Define any four punctuation marks and write one example sentence for each. (8 marks)",
+      "steps": [
+        "Step 1: Choose four common punctuation marks (period, comma, question mark, exclamation mark)",
+        "Step 2: Write exact textbook definitions for each mark",
+        "Step 3: Construct proper example sentences showing correct usage",
+        "Step 4: Ensure definitions match STBB textbook phrasing exactly"
+      ],
+      "answer": "1. Period (.): A punctuation mark used to end a declarative sentence. Example: The boy reads a book. 2. Comma (,): A punctuation mark used to separate words, phrases, or clauses in a sentence. Example: I bought apples, oranges, and bananas. 3. Question Mark (?): A punctuation mark used at the end of an interrogative sentence. Example: What is your name? 4. Exclamation Mark (!): A punctuation mark used to express strong emotion or emphasis. Example: What a beautiful day it is!",
+      "markScheme": "2 marks per punctuation mark: 1 mark for correct textbook definition + 1 mark for appropriate example sentence"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general explanations instead of exact STBB textbook definitions for punctuation marks. Always memorize and reproduce textbook phrasing word-for-word.",
+      "Many students provide incorrect example sentences that don't properly demonstrate the punctuation mark's usage. Ensure your examples clearly show the specific function of each mark.",
+      "Avoid mixing up similar punctuation marks like semicolon and colon in definitions. Learn the distinct textbook definition and specific usage rules for each mark separately."
+    ],
+    "quickRecap": "Punctuation marks are symbols used to clarify meaning and structure in written language. The main marks include period (ends statements), comma (separates elements), question mark (ends questions), exclamation mark (shows emotion), semicolon (connects related clauses), colon (introduces lists/explanations), apostrophe (shows possession/contractions), and quotation marks (indicate direct speech). Each mark follows specific placement rules that must be memorized from the STBB textbook. Practice identifying and correctly using all punctuation marks in sentences.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:48:27.500Z"
+  "created_at": "2026-04-06T06:48:27.500Z",
+  "enriched_at": "2026-04-06T17:05:27.082Z"
 }

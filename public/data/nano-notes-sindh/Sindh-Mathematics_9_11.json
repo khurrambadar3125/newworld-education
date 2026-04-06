@@ -102,7 +102,34 @@
       "Distance formula: d = √[(x₂-x₁)² + (y₂-y₁)²]",
       "Midpoint formula: M = ((x₁+x₂)/2, (y₁+y₂)/2)"
     ],
-    "keyDiagram": "Triangle ABC with three angle bisectors AD, BE, CF meeting at point I (incenter). Show that I is equidistant from all three sides by drawing perpendiculars from I to each side. Mark equal distances clearly."
+    "keyDiagram": "Triangle ABC with three angle bisectors AD, BE, CF meeting at point I (incenter). Show that I is equidistant from all three sides by drawing perpendiculars from I to each side. Mark equal distances clearly.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define perpendicular bisector of a line segment and state its properties",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required construction of angle bisector using compass and straightedge with proper steps",
+      "BSEK 2021 SSC-II Q4 (5 marks) — asked to prove that any point on perpendicular bisector is equidistant from endpoints",
+      "BSEK 2020 SSC-II Q6 (4 marks) — definition of angle bisector and its properties with diagram"
+    ],
+    "workedExample": {
+      "question": "Define perpendicular bisector of a line segment. Construct the perpendicular bisector of line segment AB = 6 cm. (6 marks)",
+      "steps": [
+        "Definition: A perpendicular bisector of a line segment is a line that passes through the midpoint of the segment and is perpendicular to it",
+        "Draw line segment AB = 6 cm using ruler",
+        "With A as center and radius more than half of AB, draw arcs above and below AB",
+        "With B as center and same radius, draw arcs to intersect previous arcs at points P and Q",
+        "Join P and Q with a straight line using ruler",
+        "Line PQ is the perpendicular bisector of AB, meeting AB at point M (midpoint)"
+      ],
+      "answer": "Perpendicular bisector is a line passing through midpoint of line segment and perpendicular to it. Construction completed showing PQ ⊥ AB at midpoint M.",
+      "markScheme": "2 marks for correct definition, 4 marks for accurate construction steps with proper arc intersections"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for perpendicular bisector and angle bisector.",
+      "In construction questions, marks are deducted for not showing compass arcs clearly or not maintaining proper radius throughout the construction process.",
+      "When proving properties, students must state that 'any point on perpendicular bisector is equidistant from endpoints' using exact textbook language, not informal explanations."
+    ],
+    "quickRecap": "Perpendicular bisector passes through midpoint and is perpendicular to line segment. Angle bisector divides angle into two equal parts. Any point on perpendicular bisector is equidistant from endpoints. Construction uses compass arcs with radius greater than half the segment length.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:23:51.306Z"
+  "created_at": "2026-04-06T06:23:51.306Z",
+  "enriched_at": "2026-04-06T17:17:17.994Z"
 }

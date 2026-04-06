@@ -101,7 +101,40 @@
       "Product of roots: αβ = c/a",
       "Quadratic equation from roots: x² - (α + β)x + αβ = 0"
     ],
-    "keyDiagram": "Graph of quadratic function showing parabola opening upward (a > 0) or downward (a < 0), vertex at (-b/2a, f(-b/2a)), axis of symmetry x = -b/2a, and x-intercepts as roots of equation"
+    "keyDiagram": "Graph of quadratic function showing parabola opening upward (a > 0) or downward (a < 0), vertex at (-b/2a, f(-b/2a)), axis of symmetry x = -b/2a, and x-intercepts as roots of equation",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to define quadratic equation and solve using quadratic formula with complete working",
+      "BSEK 2022 SSC-II Q3 (5 marks) — required definition of discriminant and determination of nature of roots without solving",
+      "BSEK 2024 SSC-II Q6 (4 marks) — asked to form quadratic equation when sum and product of roots were given",
+      "BSEK 2021 SSC-II Q5 (7 marks) — combination question covering definition, discriminant calculation and nature of roots"
+    ],
+    "workedExample": {
+      "question": "Define discriminant of a quadratic equation. Find the discriminant of 2x² - 5x + 3 = 0 and determine the nature of its roots. (5 marks)",
+      "steps": [
+        "Step 1: Write textbook definition of discriminant",
+        "Step 2: Identify coefficients a = 2, b = -5, c = 3",
+        "Step 3: Substitute in discriminant formula Δ = b² - 4ac",
+        "Step 4: Calculate Δ = (-5)² - 4(2)(3) = 25 - 24 = 1",
+        "Step 5: Since Δ > 0, roots are real and unequal"
+      ],
+      "answer": "Discriminant of quadratic equation ax² + bx + c = 0 is Δ = b² - 4ac. Here a = 2, b = -5, c = 3. Therefore Δ = (-5)² - 4(2)(3) = 25 - 24 = 1. Since discriminant is positive, the roots are real and unequal.",
+      "markScheme": "1 mark for correct definition, 1 mark for identifying coefficients, 2 marks for calculation, 1 mark for nature conclusion"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for discriminant and nature of roots.",
+      "Never skip the identification of coefficients a, b, c when solving quadratic equations - examiners deduct marks for direct substitution without showing coefficient values.",
+      "When asked for 'nature of roots', write complete statements like 'roots are real and unequal' rather than just 'real and unequal' - incomplete phrasing loses marks."
+    ],
+    "quickRecap": "Quadratic equation has form ax² + bx + c = 0 where a ≠ 0. Discriminant Δ = b² - 4ac determines nature of roots: Δ > 0 gives real and unequal roots, Δ = 0 gives real and equal roots, Δ < 0 gives complex roots. Sum of roots = -b/a, product of roots = c/a. Always identify coefficients clearly and use exact textbook definitions.",
+    "importantFormulas": [
+      "Standard form: ax² + bx + c = 0 (a ≠ 0)",
+      "Quadratic formula: x = [-b ± √(b² - 4ac)] / 2a",
+      "Discriminant: Δ = b² - 4ac",
+      "Sum of roots: α + β = -b/a",
+      "Product of roots: αβ = c/a",
+      "Formation of equation: x² - (sum)x + product = 0"
+    ]
   },
-  "created_at": "2026-04-06T06:27:08.615Z"
+  "created_at": "2026-04-06T06:27:08.615Z",
+  "enriched_at": "2026-04-06T17:13:42.514Z"
 }

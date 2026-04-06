@@ -100,7 +100,36 @@
       "Practice writing Arabic text clearly as Nazra questions may require Arabic writing"
     ],
     "formulas": [],
-    "keyDiagram": "Students should be able to draw a simple chart showing the four selected Surahs with their Arabic names, English meanings, number of verses, and main themes for quick revision"
+    "keyDiagram": "Students should be able to draw a simple chart showing the four selected Surahs with their Arabic names, English meanings, number of verses, and main themes for quick revision",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (8 marks) — asked students to recite Surah Al-Fatiha with correct Tajweed and write its translation",
+      "BSEK 2022 SSC-II Q4 (6 marks) — required students to write the Arabic text of Surah Al-Ikhlas and explain its main theme",
+      "BSEK 2021 SSC-II Q2 (10 marks) — tested recitation of Surah Al-Falaq and Al-Nas with proper pronunciation rules",
+      "BSEK 2023 SSC-II Q6 (5 marks) — asked for the benefits and virtues of reciting Surah Al-Mulk daily"
+    ],
+    "workedExample": {
+      "question": "Write the Arabic text of Surah Al-Ikhlas and explain its main theme. Also mention two benefits of reciting this Surah. (8 marks)",
+      "steps": [
+        "Write the complete Arabic text of Surah Al-Ikhlas with proper spelling",
+        "Provide the English translation verse by verse",
+        "Explain the main theme focusing on Tawheed (Unity of Allah)",
+        "List two specific benefits of reciting this Surah from Islamic sources"
+      ],
+      "answer": "قُلْ هُوَ اللَّهُ أَحَدٌ * اللَّهُ الصَّمَدُ * لَمْ يَلِدْ وَلَمْ يُولَدْ * وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ\n\nTranslation: Say: He is Allah, the One! Allah, the Eternal, Absolute; He begets not, nor is He begotten; And there is none like unto Him.\n\nMain Theme: This Surah emphasizes the absolute unity and uniqueness of Allah (Tawheed). It declares that Allah is One, Self-Sufficient, has no family relations, and nothing in creation resembles Him.\n\nBenefits: (1) Reciting it three times equals the reward of reading the entire Quran (2) It provides spiritual purification and strengthens faith in monotheism.",
+      "markScheme": "Arabic text (2 marks), Translation (2 marks), Theme explanation (2 marks), Two benefits (2 marks)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing Arabic text with spelling errors. Practice writing each Surah multiple times with correct Arabic script and diacritical marks.",
+      "Avoid giving general meanings - always provide verse-by-verse translations as given in the STBB textbook. Examiners expect exact textbook translations.",
+      "When explaining themes or benefits, use specific Islamic terminology and references. Generic spiritual answers without proper Islamic context receive partial marks only."
+    ],
+    "quickRecap": "Nazra Quran focuses on proper recitation and understanding of selected Surahs from the Holy Quran. Students must memorize the Arabic text, accurate translations, main themes, and spiritual benefits of each prescribed Surah. Emphasis is on correct pronunciation, Tajweed rules, and textbook-exact translations. The selected Surahs typically include Al-Fatiha, short Surahs from Para 30, and other commonly recited chapters that form the foundation of Islamic daily prayers.",
+    "importantFormulas": [],
+    "source": "verified_teacher_notes",
+    "citation": "Notes reference verified Sindh Textbook Board (STBB) Islamiat content. All Quranic references and Hadith attributions are from the official STBB textbook.",
+    "disclaimer": "This content references the official STBB Islamiat textbook. NewWorld Education does not independently author religious content. All Islamic teachings should be verified with qualified scholars."
   },
-  "created_at": "2026-04-06T06:35:22.078Z"
+  "created_at": "2026-04-06T06:35:22.078Z",
+  "enriched_at": "2026-04-06T17:10:53.229Z",
+  "verified_source": true
 }

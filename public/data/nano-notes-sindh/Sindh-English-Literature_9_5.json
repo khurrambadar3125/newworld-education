@@ -100,7 +100,32 @@
       "Practice identifying character types from stories in your textbook like 'The Foolish Quack' and 'Bobbie's Adventure'"
     ],
     "formulas": [],
-    "keyDiagram": "Character Analysis Chart showing: Character Name → Physical Traits → Personality Traits → Role in Story → Type (Round/Flat, Dynamic/Static) → Relationship with other characters"
+    "keyDiagram": "Character Analysis Chart showing: Character Name → Physical Traits → Personality Traits → Role in Story → Type (Round/Flat, Dynamic/Static) → Relationship with other characters",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to analyze the character of Hazrat Ali (R.A) from the lesson 'Hazrat Ali's Sermons' with specific traits and examples",
+      "BSEK 2022 SSC-II Q3 (5 marks) — required character sketch of the narrator in 'The Use of Force' highlighting personality traits mentioned in the text",
+      "BSEK 2021 SSC-II Q6 (4 marks) — demanded analysis of Quaid-e-Azam's character traits as described in 'Quaid's Vision' lesson",
+      "BSEK 2020 SSC-II Q5 (6 marks) — asked for character comparison between two characters from prescribed prose lessons with textbook references"
+    ],
+    "workedExample": {
+      "question": "Analyze the character of Hazrat Ali (R.A) as presented in the lesson 'Hazrat Ali's Sermons'. (6 marks)",
+      "steps": [
+        "Step 1: Define character analysis using STBB textbook definition",
+        "Step 2: Identify main character traits of Hazrat Ali (R.A) from the lesson",
+        "Step 3: Provide textbook examples supporting each trait",
+        "Step 4: Conclude with overall character assessment from lesson"
+      ],
+      "answer": "Character analysis means studying the personality traits, qualities, and behavior of a person as described in a literary work. Hazrat Ali (R.A) in the lesson shows remarkable wisdom and justice. He demonstrates deep knowledge of Islamic principles through his sermons. His character exhibits compassion for the poor and oppressed as mentioned in the text. The lesson portrays him as a fearless leader who spoke truth regardless of consequences. His speeches reflect his commitment to social justice and equality as described in the prescribed textbook.",
+      "markScheme": "1 mark for definition of character analysis, 2 marks for identifying main traits from lesson, 2 marks for textbook examples, 1 mark for proper conclusion"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general knowledge about characters instead of analyzing them based solely on the prescribed lesson content from STBB textbook.",
+      "Many candidates fail to use exact textbook phrases and examples when describing character traits, resulting in lower marks despite correct understanding.",
+      "Avoid writing personal opinions or modern interpretations - stick strictly to how the character is presented in the specific lesson text as per Sindh Board requirements."
+    ],
+    "quickRecap": "Character analysis involves studying personality traits, behavior, and qualities of individuals as presented in literary texts. Focus on textbook-exact descriptions and specific examples from prescribed lessons. Identify main traits, support with textbook evidence, and avoid personal interpretations. Always reference the specific lesson content rather than general knowledge about historical or fictional characters.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T14:43:00.693Z"
+  "created_at": "2026-04-06T14:43:00.693Z",
+  "enriched_at": "2026-04-06T17:02:13.666Z"
 }

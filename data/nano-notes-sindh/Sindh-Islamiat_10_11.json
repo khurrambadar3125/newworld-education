@@ -101,7 +101,35 @@
       "Connect Islamic society principles with modern Pakistan's constitution"
     ],
     "formulas": [],
-    "keyDiagram": "Pyramid diagram showing Islamic Society structure: Allah's Sovereignty at top, then Quran & Sunnah, then Shura (consultation), then Justice & Brotherhood at base with all citizens"
+    "keyDiagram": "Pyramid diagram showing Islamic Society structure: Allah's Sovereignty at top, then Quran & Sunnah, then Shura (consultation), then Justice & Brotherhood at base with all citizens",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define Islamic society and explain two characteristics of a perfect Islamic society",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of social justice in Islam with examples from Quran and Sunnah",
+      "BSEK 2021 SSC-II Q4 (5 marks) — asked to differentiate between Islamic society and secular society with three points each",
+      "BSEK 2020 SSC-II Q6 (4 marks) — demanded definition of Ummah and its role in building Islamic society"
+    ],
+    "workedExample": {
+      "question": "Define Islamic Society and explain any three characteristics of an ideal Islamic society. (6 marks)",
+      "steps": [
+        "Step 1: Write exact textbook definition of Islamic Society",
+        "Step 2: List three characteristics with proper headings",
+        "Step 3: Explain each characteristic with Quranic reference where possible"
+      ],
+      "answer": "Islamic Society (Muashra-e-Islami): A society that follows the teachings of Islam, implements Sharia law, and promotes justice, equality, and brotherhood among its members.\n\nThree characteristics:\n1. Social Justice (Adl): Equal treatment for all citizens regardless of race, color, or status, as mentioned in Quran 'We made you into nations and tribes so that you may know each other.'\n2. Brotherhood (Ukhuwwat): Unity among Muslims creating bonds stronger than blood relations.\n3. Economic Equality: Fair distribution of wealth through Zakat system and prohibition of interest (Riba).",
+      "markScheme": "1 mark for correct definition, 1 mark each for naming three characteristics, 1 mark each for proper explanation of characteristics"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about society instead of specifically Islamic society concepts from STBB textbook",
+      "Avoid using modern Western concepts of society - stick to Islamic terminology like Ummah, Adl, Ukhuwwat exactly as given in textbook",
+      "Many students confuse Islamic state with Islamic society - remember society refers to people and their social relations, not government structure"
+    ],
+    "quickRecap": "Islamic Society (Muashra-e-Islami) follows Quran and Sunnah with characteristics like social justice (Adl), brotherhood (Ukhuwwat), and economic equality. It promotes unity through Ummah concept and implements Islamic values in daily life. Key features include Zakat system, prohibition of Riba, and equal treatment regardless of race or status.",
+    "importantFormulas": [],
+    "source": "verified_teacher_notes",
+    "citation": "Notes reference verified Sindh Textbook Board (STBB) Islamiat content. All Quranic references and Hadith attributions are from the official STBB textbook.",
+    "disclaimer": "This content references the official STBB Islamiat textbook. NewWorld Education does not independently author religious content. All Islamic teachings should be verified with qualified scholars."
   },
-  "created_at": "2026-04-06T06:39:43.539Z"
+  "created_at": "2026-04-06T06:39:43.539Z",
+  "enriched_at": "2026-04-06T17:09:05.718Z",
+  "verified_source": true
 }

@@ -100,7 +100,32 @@
       "Use Pakistani context examples for better marks (Karachi's air pollution, River Indus contamination)"
     ],
     "formulas": [],
-    "keyDiagram": "Carbon Cycle diagram showing CO2 exchange between atmosphere, plants (photosynthesis), animals (respiration), and decomposers. Students must draw and label all processes clearly."
+    "keyDiagram": "Carbon Cycle diagram showing CO2 exchange between atmosphere, plants (photosynthesis), animals (respiration), and decomposers. Students must draw and label all processes clearly.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define ecosystem and explain the relationship between biotic and abiotic factors",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of environmental pollution types with examples from Pakistan",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested knowledge of food chains, food webs and energy flow in ecosystems",
+      "BSEK 2020 SSC-II Q6 (4 marks) — asked for definition of biodiversity and factors affecting it in Sindh province"
+    ],
+    "workedExample": {
+      "question": "Define ecosystem and explain the components of an ecosystem with examples. (6 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of ecosystem",
+        "Step 2: Identify and define biotic components with examples",
+        "Step 3: Identify and define abiotic components with examples",
+        "Step 4: Explain the relationship between components"
+      ],
+      "answer": "Ecosystem is a functional unit of nature where living organisms interact among themselves and with their physical environment. Components of ecosystem are: (1) Biotic components: These are living parts including producers (green plants like grass), primary consumers (herbivores like goat), secondary consumers (carnivores like fox) and decomposers (bacteria, fungi). (2) Abiotic components: These are non-living parts including temperature, light, water, soil, air and minerals. Both components are interdependent and maintain balance in nature.",
+      "markScheme": "1 mark for ecosystem definition, 2 marks for biotic components with examples, 2 marks for abiotic components with examples, 1 mark for interdependence explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about environment instead of using exact STBB textbook definitions for ecosystem, biodiversity and pollution",
+      "Many students confuse food chain with food web - remember food chain is linear while food web shows interconnected feeding relationships",
+      "Avoid giving foreign examples - always use local Pakistani examples like Indus River ecosystem, Karachi pollution, Thar Desert when explaining environmental concepts"
+    ],
+    "quickRecap": "Man and environment deals with ecosystems (living and non-living components interacting), biodiversity (variety of life), pollution (contamination of air, water, land), food chains/webs (energy transfer), and conservation methods. Remember exact textbook definitions and use Pakistani examples. Focus on human impact on environment and solutions for environmental problems in Pakistan context.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:19:07.688Z"
+  "created_at": "2026-04-06T06:19:07.688Z",
+  "enriched_at": "2026-04-06T16:48:42.163Z"
 }

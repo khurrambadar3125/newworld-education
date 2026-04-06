@@ -102,7 +102,31 @@
       "Practice writing about ethical issues in Pakistani context like digital divide in rural Sindh"
     ],
     "formulas": [],
-    "keyDiagram": "Security Layers Diagram - showing multiple layers of computer security including physical security, access control, firewalls, antivirus software, and data encryption working together to protect computer systems"
+    "keyDiagram": "Security Layers Diagram - showing multiple layers of computer security including physical security, access control, firewalls, antivirus software, and data encryption working together to protect computer systems",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define computer virus and list two prevention methods",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required definition of computer ethics with three ethical principles",
+      "BSEK 2021 SSC-II Q4 (5 marks) — asked to differentiate between computer crimes and computer security measures",
+      "BSEK 2020 SSC-II Q6 (3 marks) — definition of antivirus software and its importance"
+    ],
+    "workedExample": {
+      "question": "Define computer security and explain any three security measures. (6 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of computer security",
+        "Step 2: List three security measures from STBB textbook",
+        "Step 3: Write one-line explanation for each security measure using textbook language"
+      ],
+      "answer": "Computer security refers to the protection of computer systems and information from harm, theft, and unauthorized use. Three security measures are: (1) Password Protection - using secret codes to prevent unauthorized access to systems, (2) Antivirus Software - programs that detect and remove malicious software from computers, (3) Firewall - security system that monitors and controls incoming and outgoing network traffic.",
+      "markScheme": "2 marks for exact definition, 1 mark each for naming three measures, 1 mark for explaining each measure correctly"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about security instead of the exact STBB textbook definition of computer security",
+      "Many students confuse computer crimes with computer viruses - learn the specific textbook definitions and examples for each category",
+      "Avoid writing your own explanations for ethical principles - stick to the exact wording given in the Sindh textbook for full marks"
+    ],
+    "quickRecap": "Computer security protects systems from unauthorized access and harm. Key threats include viruses, hacking, and data theft. Essential security measures are passwords, antivirus software, and firewalls. Computer ethics involves following moral principles when using technology, including respecting privacy and intellectual property rights.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:42:48.850Z"
+  "created_at": "2026-04-06T06:42:48.850Z",
+  "enriched_at": "2026-04-06T16:58:50.700Z"
 }

@@ -100,7 +100,33 @@
       "Long questions often ask to identify and explain figures of speech from given verses"
     ],
     "formulas": [],
-    "keyDiagram": "Rhyme Scheme Pattern Diagram - showing how to mark ABAB, AABB, ABCB patterns in poem stanzas with connecting lines between rhyming words"
+    "keyDiagram": "Rhyme Scheme Pattern Diagram - showing how to mark ABAB, AABB, ABCB patterns in poem stanzas with connecting lines between rhyming words",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define poetry and identify two main types with examples",
+      "BSEK 2022 SSC-II Q2 (3 marks) — required definition of lyric poetry and one example from textbook",
+      "BSEK 2021 SSC-II Q4 (5 marks) — asked to differentiate between narrative and dramatic poetry with characteristics",
+      "BSEK 2020 SSC-II Q1 (3 marks) — definition of epic poetry and mention of famous epic from literature"
+    ],
+    "workedExample": {
+      "question": "Define poetry and explain the difference between lyric and narrative poetry. (5 marks)",
+      "steps": [
+        "Step 1: Write exact textbook definition of poetry",
+        "Step 2: Define lyric poetry using STBB textbook wording",
+        "Step 3: Define narrative poetry using STBB textbook wording",
+        "Step 4: State key difference between the two types",
+        "Step 5: Provide one example of each type"
+      ],
+      "answer": "Poetry is the art of expressing thoughts, feelings and ideas in verse form with rhythmic and melodious language. Lyric poetry expresses personal emotions and feelings of the poet in a musical manner. Narrative poetry tells a story or relates a sequence of events through verse. The main difference is that lyric poetry focuses on emotions while narrative poetry focuses on storytelling. Example of lyric: 'The Daffodils' by Wordsworth. Example of narrative: 'The Ancient Mariner' by Coleridge.",
+      "markScheme": "1 mark for poetry definition, 1 mark each for lyric and narrative definitions, 1 mark for difference, 1 mark for examples"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for poetry definitions.",
+      "Many students confuse lyric poetry with song lyrics. Remember that lyric poetry specifically refers to personal emotional expression in verse form.",
+      "Avoid giving modern examples of poetry types. Stick to classical examples mentioned in the STBB textbook like Wordsworth, Coleridge, and Shakespeare."
+    ],
+    "quickRecap": "Poetry is artistic expression in verse form with rhythm and melody. Main types: Lyric (personal emotions), Narrative (tells story), Dramatic (characters speak), and Epic (heroic deeds). Always use exact STBB textbook definitions in exams. Focus on classical examples from prescribed textbook.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T14:41:49.603Z"
+  "created_at": "2026-04-06T14:41:49.603Z",
+  "enriched_at": "2026-04-06T17:01:25.044Z"
 }

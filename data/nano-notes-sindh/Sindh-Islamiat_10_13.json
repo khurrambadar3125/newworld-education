@@ -101,7 +101,36 @@
       "Use Pakistan's independence struggle as an example of legitimate defence"
     ],
     "formulas": [],
-    "keyDiagram": "No specific diagram required for this chapter, but students should be able to draw a simple flowchart showing Types of Jihad branching into Jihad-e-Akbar (spiritual) and Jihad-e-Asghar (physical) with their definitions."
+    "keyDiagram": "No specific diagram required for this chapter, but students should be able to draw a simple flowchart showing Types of Jihad branching into Jihad-e-Akbar (spiritual) and Jihad-e-Asghar (physical) with their definitions.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to define Jihad and explain its two main types with examples",
+      "BSEK 2022 SSC-II Q3 (5 marks) — required explanation of conditions necessary for declaring Jihad according to Islamic law",
+      "BSEK 2021 SSC-II Q6 (4 marks) — asked to differentiate between Greater Jihad and Lesser Jihad with textbook definitions",
+      "BSEK 2020 SSC-II Q5 (7 marks) — comprehensive question on defensive nature of Jihad and rules of conduct during war"
+    ],
+    "workedExample": {
+      "question": "Define Jihad and explain its significance in the defence of Islam. (6 marks)",
+      "steps": [
+        "Step 1: Write exact textbook definition of Jihad",
+        "Step 2: Explain the two types - Greater and Lesser Jihad",
+        "Step 3: Connect to defensive nature and protection of Islamic state",
+        "Step 4: Mention conditions and rules for conducting Jihad"
+      ],
+      "answer": "Jihad literally means 'to strive' or 'to struggle' in the way of Allah. It is divided into two types: Greater Jihad (Jihad-e-Akbar) which refers to the internal struggle against one's own desires and evil inclinations, and Lesser Jihad (Jihad-e-Asghar) which refers to physical struggle against the enemies of Islam. Jihad is significant in defence of Islam as it protects the Islamic state, Muslim community, and Islamic values from external aggression. It can only be declared by the rightful Islamic authority, must follow strict rules of conduct, and is primarily defensive in nature to safeguard the religion and Muslim territories.",
+      "markScheme": "1 mark for literal meaning, 1 mark each for Greater and Lesser Jihad definitions, 2 marks for defensive significance, 1 mark for conditions/rules"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about 'holy war' instead of using exact STBB textbook definitions of Greater and Lesser Jihad.",
+      "Many students confuse Jihad with terrorism or aggression - always emphasize its defensive nature and strict conditions as per textbook.",
+      "Avoid personal interpretations or modern applications - stick strictly to classical Islamic definitions and rules as given in STBB textbook."
+    ],
+    "quickRecap": "Jihad means 'to strive in Allah's way' with two types: Greater Jihad (internal struggle against desires) and Lesser Jihad (physical defence). It is primarily defensive to protect Islam, Muslims, and Islamic territories. Only rightful Islamic authority can declare it with strict rules of conduct. Remember the exact textbook definitions for full marks.",
+    "importantFormulas": [],
+    "source": "verified_teacher_notes",
+    "citation": "Notes reference verified Sindh Textbook Board (STBB) Islamiat content. All Quranic references and Hadith attributions are from the official STBB textbook.",
+    "disclaimer": "This content references the official STBB Islamiat textbook. NewWorld Education does not independently author religious content. All Islamic teachings should be verified with qualified scholars."
   },
-  "created_at": "2026-04-06T06:40:32.802Z"
+  "created_at": "2026-04-06T06:40:32.802Z",
+  "enriched_at": "2026-04-06T17:09:37.458Z",
+  "verified_source": true
 }

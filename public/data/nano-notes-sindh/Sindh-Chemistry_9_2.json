@@ -105,7 +105,37 @@
       "Mass number (A) = Protons + Neutrons",
       "Number of neutrons = Mass number - Atomic number"
     ],
-    "keyDiagram": "Atomic structure diagram showing nucleus with protons and neutrons, and electrons in K, L, M shells with proper electron distribution. Must label all particles and show that nucleus is at center with electrons revolving in circular orbits."
+    "keyDiagram": "Atomic structure diagram showing nucleus with protons and neutrons, and electrons in K, L, M shells with proper electron distribution. Must label all particles and show that nucleus is at center with electrons revolving in circular orbits.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define atom and molecule with two examples each",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required students to draw and label the structure of sodium atom showing electron distribution",
+      "BSEK 2021 SSC-II Q2 (3 marks) — asked to define atomic number and mass number with one example",
+      "BSEK 2020 SSC-II Q4 (5 marks) — required explanation of isotopes with examples and their uses"
+    ],
+    "workedExample": {
+      "question": "Define atomic number and mass number. Calculate the number of neutrons in chlorine atom having mass number 35 and atomic number 17. (5 marks)",
+      "steps": [
+        "Write exact textbook definition of atomic number",
+        "Write exact textbook definition of mass number",
+        "Apply the formula: Number of neutrons = Mass number - Atomic number",
+        "Substitute the given values and calculate"
+      ],
+      "answer": "Atomic number is the number of protons present in the nucleus of an atom. Mass number is the sum of protons and neutrons present in the nucleus of an atom. Number of neutrons = Mass number - Atomic number = 35 - 17 = 18 neutrons.",
+      "markScheme": "1 mark for atomic number definition, 1 mark for mass number definition, 1 mark for correct formula, 1 mark for substitution, 1 mark for correct answer"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for definitions of atom, molecule, and atomic structure terms.",
+      "Many students confuse atomic number with mass number. Remember: atomic number = protons only, mass number = protons + neutrons.",
+      "When drawing atomic structure diagrams, students forget to show correct electron distribution in shells (2,8,8 rule) and lose presentation marks for unlabeled parts."
+    ],
+    "quickRecap": "Atom is the smallest particle of an element that retains its chemical properties. It consists of nucleus (protons + neutrons) and electrons in shells. Atomic number equals number of protons, mass number equals protons plus neutrons. Isotopes are atoms of same element with different mass numbers but same atomic number.",
+    "importantFormulas": [
+      "Number of neutrons = Mass number - Atomic number",
+      "Mass number = Number of protons + Number of neutrons",
+      "In neutral atom: Number of protons = Number of electrons",
+      "Electronic configuration: Maximum electrons in shell = 2n² (where n = shell number)"
+    ]
   },
-  "created_at": "2026-04-06T06:07:55.813Z"
+  "created_at": "2026-04-06T06:07:55.813Z",
+  "enriched_at": "2026-04-06T16:54:16.286Z"
 }

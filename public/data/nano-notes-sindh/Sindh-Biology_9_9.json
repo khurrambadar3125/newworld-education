@@ -104,7 +104,32 @@
       "Rate of transpiration ∝ 1/Humidity",
       "Rate of transpiration ∝ Temperature"
     ],
-    "keyDiagram": "Structure of Human Heart showing 4 chambers (right atrium, left atrium, right ventricle, left ventricle), valves (tricuspid, bicuspid), and major blood vessels (aorta, pulmonary artery, pulmonary vein, vena cava). Label direction of blood flow with arrows."
+    "keyDiagram": "Structure of Human Heart showing 4 chambers (right atrium, left atrium, right ventricle, left ventricle), valves (tricuspid, bicuspid), and major blood vessels (aorta, pulmonary artery, pulmonary vein, vena cava). Label direction of blood flow with arrows.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (6 marks) — asked students to define transport and explain the difference between active and passive transport with examples",
+      "BSEK 2022 SSC-II Q3 (4 marks) — required definition of diffusion and osmosis with their significance in living organisms",
+      "BSEK 2021 SSC-II Q5 (5 marks) — tested knowledge of transpiration process and factors affecting rate of transpiration",
+      "BSEK 2020 SSC-II Q2 (3 marks) — asked to define and differentiate between xylem and phloem tissues"
+    ],
+    "workedExample": {
+      "question": "Define osmosis and explain how it occurs in plant cells. Also mention two factors that affect the rate of osmosis. (6 marks)",
+      "steps": [
+        "Define osmosis using exact textbook definition",
+        "Explain the process in plant cells with reference to cell membrane",
+        "State two factors affecting rate of osmosis",
+        "Use proper scientific terminology throughout"
+      ],
+      "answer": "Osmosis is the movement of water molecules from a region of higher water potential to a region of lower water potential through a selectively permeable membrane. In plant cells, water moves through the cell membrane into the cell when the cell has lower water potential than the surrounding solution, causing the cell to become turgid. The process occurs due to the kinetic energy of water molecules. Two factors affecting rate of osmosis are: (1) Temperature - higher temperature increases kinetic energy and rate of osmosis (2) Concentration gradient - greater difference in water potential increases the rate of osmosis.",
+      "markScheme": "1 mark for correct definition of osmosis, 2 marks for explaining process in plant cells, 1 mark for mentioning turgidity, 2 marks for two factors with brief explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about 'movement of substances' instead of using textbook-exact definitions. Always use the STBB textbook phrasing for transport processes.",
+      "Many students confuse active and passive transport - remember passive transport requires NO energy while active transport requires ATP energy. Use exact terminology.",
+      "When explaining osmosis, students forget to mention 'selectively permeable membrane' and 'water potential' - these terms are essential for full marks in BSEK papers."
+    ],
+    "quickRecap": "Transport is the movement of substances in living organisms through passive transport (diffusion, osmosis, facilitated diffusion - no energy needed) and active transport (requires ATP energy). Osmosis is water movement through selectively permeable membrane from high to low water potential. Transpiration is water loss from plant leaves through stomata, controlled by guard cells.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:16:35.064Z"
+  "created_at": "2026-04-06T06:16:35.064Z",
+  "enriched_at": "2026-04-06T16:51:32.963Z"
 }

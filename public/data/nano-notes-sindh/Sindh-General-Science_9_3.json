@@ -105,7 +105,36 @@
       "General formula for carbohydrates: Cn(H2O)n",
       "Glucose: C6H12O6"
     ],
-    "keyDiagram": "Structure of protein showing primary structure (amino acid chain), secondary structure (alpha helix/beta pleated sheet), tertiary structure (3D folding) and quaternary structure (multiple polypeptide chains). Label amino acids, peptide bonds, and different structural levels."
+    "keyDiagram": "Structure of protein showing primary structure (amino acid chain), secondary structure (alpha helix/beta pleated sheet), tertiary structure (3D folding) and quaternary structure (multiple polypeptide chains). Label amino acids, peptide bonds, and different structural levels.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define biotechnology and give two examples of its applications",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of fermentation process and its industrial applications",
+      "BSEK 2024 SSC-II Q3 (5 marks) — asked to differentiate between aerobic and anaerobic respiration with examples",
+      "BSEK 2023 SSC-II Q8 (3 marks) — definition of enzymes and their role in biochemical reactions"
+    ],
+    "workedExample": {
+      "question": "Define biotechnology and explain any two applications of biotechnology in medicine. (5 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of biotechnology",
+        "Step 2: State that applications will be explained in medicine field",
+        "Step 3: Explain first medical application with specific example",
+        "Step 4: Explain second medical application with specific example"
+      ],
+      "answer": "Biotechnology is the use of living organisms or their products to make useful substances or to carry out useful processes for human benefit. Two applications in medicine are: (1) Production of insulin: Genetically modified bacteria are used to produce human insulin for diabetic patients. (2) Vaccine production: Biotechnology is used to develop vaccines against diseases like hepatitis B by using genetic engineering techniques.",
+      "markScheme": "1 mark for correct definition, 1 mark for mentioning medical field, 1.5 marks each for two complete applications with examples"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about biotechnology instead of using the exact STBB textbook definition. Always start with the precise textbook wording.",
+      "Avoid confusing fermentation with general decomposition - specifically mention it's anaerobic breakdown of organic compounds by microorganisms.",
+      "When explaining enzyme action, students must mention the textbook terms 'substrate' and 'active site' rather than using informal language like 'chemicals react faster'."
+    ],
+    "quickRecap": "Biochemistry studies chemical processes in living organisms, focusing on enzymes as biological catalysts. Biotechnology uses living organisms for human benefit through processes like fermentation. Key applications include medicine (insulin, vaccines), agriculture (improved crops), and industry (antibiotics production). Remember exact textbook definitions for enzymes, fermentation, and biotechnology.",
+    "importantFormulas": [
+      "Aerobic Respiration: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energy (38 ATP)",
+      "Anaerobic Respiration (Alcoholic): C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ + Energy (2 ATP)",
+      "Anaerobic Respiration (Lactic acid): C₆H₁₂O₆ → 2C₃H₆O₃ + Energy (2 ATP)"
+    ]
   },
-  "created_at": "2026-04-06T06:52:16.548Z"
+  "created_at": "2026-04-06T06:52:16.548Z",
+  "enriched_at": "2026-04-06T17:07:48.099Z"
 }

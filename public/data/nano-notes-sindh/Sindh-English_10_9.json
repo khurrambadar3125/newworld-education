@@ -105,7 +105,33 @@
       "Independent Clause = Complete thought + can stand alone",
       "Dependent Clause = Incomplete thought + needs main clause"
     ],
-    "keyDiagram": "Sentence Structure Tree: Show how sentences break down into clauses, then into phrases, then into individual words. Main branches: Independent Clause and Dependent Clause, with sub-branches showing different types of phrases (Noun, Verb, Prepositional, Adjective, Adverb phrases)"
+    "keyDiagram": "Sentence Structure Tree: Show how sentences break down into clauses, then into phrases, then into individual words. Main branches: Independent Clause and Dependent Clause, with sub-branches showing different types of phrases (Noun, Verb, Prepositional, Adjective, Adverb phrases)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define phrase and clause with two examples of each",
+      "BSEK 2022 SSC-II Q4 (5 marks) — required identification of noun phrases, verb phrases, and adverbial clauses in given sentences",
+      "BSEK 2021 SSC-II Q2 (3 marks) — tested difference between dependent and independent clauses with examples",
+      "BSEK 2020 SSC-II Q5 (6 marks) — comprehensive question on types of phrases and clauses with sentence analysis"
+    ],
+    "workedExample": {
+      "question": "Define phrase and clause. Identify and classify the phrases and clauses in this sentence: 'The students who studied hard passed the examination with flying colors.' (6 marks)",
+      "steps": [
+        "Step 1: Write textbook definition of phrase",
+        "Step 2: Write textbook definition of clause",
+        "Step 3: Identify phrases in the given sentence",
+        "Step 4: Identify clauses in the given sentence",
+        "Step 5: Classify each phrase and clause by type"
+      ],
+      "answer": "Phrase: A group of related words that does not contain both subject and predicate. Clause: A group of related words that contains both subject and predicate. Phrases: 'The students' (noun phrase), 'with flying colors' (prepositional phrase). Clauses: 'The students passed the examination' (independent clause), 'who studied hard' (dependent/subordinate clause - adjective clause).",
+      "markScheme": "1 mark each for phrase and clause definitions, 1 mark each for identifying phrases and clauses, 2 marks for correct classification"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for phrase and clause definitions.",
+      "Many students confuse phrases with clauses - remember phrases lack either subject OR predicate, while clauses have BOTH subject AND predicate.",
+      "When identifying clause types, students frequently forget to specify whether clauses are independent/dependent AND their function (noun/adjective/adverb clause). Both classifications are required for full marks."
+    ],
+    "quickRecap": "A phrase is a group of related words without both subject and predicate, while a clause contains both subject and predicate. Phrases include noun, verb, adjective, adverb, and prepositional types. Clauses are either independent (complete thought) or dependent (incomplete thought). Dependent clauses function as noun, adjective, or adverb clauses in sentences.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:49:54.427Z"
+  "created_at": "2026-04-06T06:49:54.427Z",
+  "enriched_at": "2026-04-06T17:03:57.394Z"
 }

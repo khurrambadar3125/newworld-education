@@ -99,7 +99,32 @@
       "Drug abuse effects question appears frequently - memorize all physical, psychological and social effects"
     ],
     "formulas": [],
-    "keyDiagram": "Classification of drugs diagram showing main categories: Stimulants (caffeine, nicotine), Depressants (alcohol, morphine), Hallucinogens (LSD, marijuana), and Therapeutic drugs (antibiotics, vitamins). Also draw drug sources diagram showing Plants, Animals, Minerals, and Synthetic sources with examples."
+    "keyDiagram": "Classification of drugs diagram showing main categories: Stimulants (caffeine, nicotine), Depressants (alcohol, morphine), Hallucinogens (LSD, marijuana), and Therapeutic drugs (antibiotics, vitamins). Also draw drug sources diagram showing Plants, Animals, Minerals, and Synthetic sources with examples.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define pharmacology and give two examples of drugs with their sources",
+      "BSEK 2022 SSC-II Q7 (5 marks) — required classification of drugs into antibiotics, analgesics and vaccines with one example each",
+      "BSEK 2021 SSC-II Q4 (3 marks) — tested definition of antibiotics and difference between broad-spectrum and narrow-spectrum antibiotics",
+      "BSEK 2020 SSC-II Q6 (4 marks) — asked about sources of drugs (plants, animals, minerals) with specific examples"
+    ],
+    "workedExample": {
+      "question": "Define pharmacology. Classify drugs on the basis of their action and give one example of each type. (5 marks)",
+      "steps": [
+        "Write the exact textbook definition of pharmacology",
+        "State the classification: Antibiotics, Analgesics, Vaccines",
+        "Give one example for each class with proper spelling",
+        "Ensure examples match the drug classes correctly"
+      ],
+      "answer": "Pharmacology is the branch of biology that deals with the study of drugs and their effects on living organisms. Classification: (1) Antibiotics - drugs that kill or inhibit the growth of bacteria, e.g., Penicillin (2) Analgesics - drugs that relieve pain, e.g., Aspirin (3) Vaccines - biological preparations that provide immunity against diseases, e.g., Polio vaccine",
+      "markScheme": "1 mark for correct definition, 1 mark each for naming three classes, 1 mark each for correct examples (total 5 marks)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for pharmacology definition.",
+      "Many students confuse analgesics with antibiotics. Remember analgesics treat pain while antibiotics treat bacterial infections only.",
+      "When giving examples of drugs, ensure correct spelling - write 'Penicillin' not 'Penicilin' and 'Aspirin' not 'Asprine' to avoid mark deduction."
+    ],
+    "quickRecap": "Pharmacology studies drugs and their effects on living organisms. Drugs are classified as antibiotics (kill bacteria - Penicillin), analgesics (relieve pain - Aspirin), and vaccines (provide immunity - Polio vaccine). Sources include plants (Digitalis), animals (Insulin), and minerals (Calomel). Always write textbook-exact definitions for full marks.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:19:51.774Z"
+  "created_at": "2026-04-06T06:19:51.774Z",
+  "enriched_at": "2026-04-06T16:49:15.075Z"
 }

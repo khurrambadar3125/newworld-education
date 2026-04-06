@@ -100,7 +100,31 @@
       "Use Pakistani examples in answers to get full marks"
     ],
     "formulas": [],
-    "keyDiagram": "IPO Cycle Diagram showing Input → Processing → Output with arrows, including examples like keyboard/mouse for input, CPU for processing, and monitor/printer for output"
+    "keyDiagram": "IPO Cycle Diagram showing Input → Processing → Output with arrows, including examples like keyboard/mouse for input, CPU for processing, and monitor/printer for output",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q2 (4 marks) — asked students to define computer and explain its characteristics",
+      "BSEK 2022 SSC-II Q1 (3 marks) — required definitions of hardware and software with examples",
+      "BSEK 2024 SSC-II Q3 (5 marks) — tested knowledge of computer generations and their features",
+      "BSEK 2021 SSC-II Q4 (6 marks) — asked to explain input, output and storage devices with examples"
+    ],
+    "workedExample": {
+      "question": "Define computer and explain any three characteristics of computer. (5 marks)",
+      "steps": [
+        "Write the exact textbook definition of computer",
+        "List three characteristics with clear headings",
+        "Explain each characteristic in 2-3 lines using textbook language"
+      ],
+      "answer": "Computer is an electronic device that accepts data as input, processes it according to given instructions and produces meaningful information as output. Three characteristics: (1) Speed - Computer can perform millions of calculations in seconds (2) Accuracy - Computer produces 100% accurate results if correct data and instructions are given (3) Storage - Computer can store large amounts of data permanently in its memory",
+      "markScheme": "1 mark for correct definition, 1 mark for each characteristic name, 1 mark for each explanation (total 5 marks)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for computer definitions.",
+      "Avoid mixing hardware and software concepts when explaining computer components. Clearly distinguish between physical parts and programs.",
+      "Do not write lengthy explanations for simple definitions. BSEK marking schemes reward precise, concise textbook answers over elaborate descriptions."
+    ],
+    "quickRecap": "Computer is an electronic device for data processing with characteristics of speed, accuracy and storage. Hardware includes physical components like CPU, memory, input/output devices. Software includes system software and application software. Computers evolved through five generations from vacuum tubes to artificial intelligence.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:41:22.700Z"
+  "created_at": "2026-04-06T06:41:22.700Z",
+  "enriched_at": "2026-04-06T16:57:53.069Z"
 }

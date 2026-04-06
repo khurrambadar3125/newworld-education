@@ -253,6 +253,27 @@ export default function NanoTeach() {
                 Don't understand something? Ask Starky to explain →
               </a>
 
+              {/* Verified source disclaimer for Islamiyat */}
+              {notes.disclaimer && (
+                <div style={{ fontSize: 11, color: 'rgba(255,255,255,.3)', lineHeight: 1.6, padding: '8px 12px', marginTop: 8, background: 'rgba(255,255,255,.02)', borderRadius: 8, fontStyle: 'italic' }}>
+                  {notes.citation && <div style={{ marginBottom: 4 }}>{notes.citation}</div>}
+                  {notes.disclaimer}
+                </div>
+              )}
+
+              {/* Verified PDF downloads for Islamiyat */}
+              {notes.verifiedPDFs?.length > 0 && (
+                <div style={{ marginTop: 10 }}>
+                  <div style={{ fontSize: 11, fontWeight: 700, color: '#C9A84C', letterSpacing: 1, marginBottom: 6 }}>VERIFIED TEACHER NOTES (PDF)</div>
+                  {notes.verifiedPDFs.slice(0, 4).map((pdf, i) => (
+                    <a key={i} href={pdf.url} target="_blank" rel="noopener"
+                      style={{ display: 'block', fontSize: 12, color: '#4F8EF7', textDecoration: 'none', padding: '4px 0' }}>
+                      📄 {pdf.name} <span style={{ color: 'rgba(255,255,255,.2)' }}>— {pdf.source}</span>
+                    </a>
+                  ))}
+                </div>
+              )}
+
               {/* Continue to worked example */}
               <button onClick={() => setPhase('learn')} style={S.btn(true)}>
                 I've read the notes — show me a worked example →

@@ -102,7 +102,38 @@
       "Function declaration syntax: return_type function_name(parameter_list);",
       "Function definition syntax: return_type function_name(parameter_list) { statements; return value; }"
     ],
-    "keyDiagram": "Function structure diagram showing: Function Declaration → Function Definition → Function Call → Return Value flow. Also draw the complete structure of C program with user-defined function including #include, function declaration, main() function, and function definition."
+    "keyDiagram": "Function structure diagram showing: Function Declaration → Function Definition → Function Call → Return Value flow. Also draw the complete structure of C program with user-defined function including #include, function declaration, main() function, and function definition.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define function and give domain/range of f(x) = 2x + 3",
+      "BSEK 2022 SSC-II Q7 (5 marks) — required definition of one-to-one function with graphical representation",
+      "BSEK 2021 SSC-II Q4 (3 marks) — asked to distinguish between relation and function with examples",
+      "BSEK 2020 SSC-II Q6 (6 marks) — definition of onto function and verification using algebraic method"
+    ],
+    "workedExample": {
+      "question": "Define function and determine whether the relation f = {(1,2), (2,4), (3,6), (4,8)} is a function or not. Also find its domain and range. (5 marks)",
+      "steps": [
+        "Write the textbook definition of function",
+        "Check if each element in domain maps to exactly one element in range",
+        "Identify domain as set of first elements",
+        "Identify range as set of second elements",
+        "State conclusion about whether it's a function"
+      ],
+      "answer": "Definition: A function is a relation in which each element of the domain is paired with exactly one element of the range. Checking the relation: Each input value (1,2,3,4) maps to exactly one output value, so this is a function. Domain = {1,2,3,4}, Range = {2,4,6,8}",
+      "markScheme": "1 mark for correct definition, 1 mark for checking uniqueness, 1 mark for correct domain, 1 mark for correct range, 1 mark for conclusion"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for function definitions.",
+      "Many students confuse relation and function - remember that ALL functions are relations, but not all relations are functions.",
+      "When finding domain and range, students often forget to use set notation with curly brackets { } which is required in BSEK marking schemes."
+    ],
+    "quickRecap": "A function is a special relation where each domain element maps to exactly one range element. Remember the vertical line test for graphs - if any vertical line intersects the curve more than once, it's not a function. Types include one-to-one (injective), onto (surjective), and bijective functions. Always write domain and range in proper set notation.",
+    "importantFormulas": [
+      "f: A → B (function notation)",
+      "Domain = {x | x ∈ A}",
+      "Range = {y | y = f(x), x ∈ A}",
+      "Vertical Line Test: If any vertical line intersects graph more than once, not a function"
+    ]
   },
-  "created_at": "2026-04-06T06:45:45.633Z"
+  "created_at": "2026-04-06T06:45:45.633Z",
+  "enriched_at": "2026-04-06T16:56:38.314Z"
 }

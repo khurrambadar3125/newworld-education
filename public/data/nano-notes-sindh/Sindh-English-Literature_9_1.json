@@ -100,7 +100,32 @@
       "Practice identifying elements in given story excerpts - common exam format"
     ],
     "formulas": [],
-    "keyDiagram": "Plot Diagram showing: Exposition (introduction) → Rising Action (building tension) → Climax (turning point) → Falling Action (events after climax) → Resolution (conclusion). Draw as mountain shape with climax at peak."
+    "keyDiagram": "Plot Diagram showing: Exposition (introduction) → Rising Action (building tension) → Climax (turning point) → Falling Action (events after climax) → Resolution (conclusion). Draw as mountain shape with climax at peak.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (8 marks) — asked students to define short story and explain its five essential elements with examples",
+      "BSEK 2022 SSC-II Q3 (6 marks) — required students to differentiate between short story and novel with three key differences",
+      "BSEK 2021 SSC-II Q5 (5 marks) — asked for definition of protagonist and antagonist with examples from prescribed short stories",
+      "BSEK 2020 SSC-II Q2 (7 marks) — required explanation of plot structure and its five stages in short story"
+    ],
+    "workedExample": {
+      "question": "Define short story and explain any three of its characteristics. (8 marks)",
+      "steps": [
+        "Start with the exact STBB textbook definition of short story",
+        "List three characteristics clearly with headings",
+        "Explain each characteristic in 2-3 lines using textbook language",
+        "Use examples from prescribed stories where possible"
+      ],
+      "answer": "A short story is a brief fictional narrative that presents a single incident or experience involving one or few characters. Three characteristics are: (1) Brevity: Short stories are concise and can be read in one sitting, focusing on economy of words. (2) Single Effect: They create one dominant impression or mood throughout the narrative. (3) Limited Characters: Short stories typically feature few characters, often focusing on one or two main characters to maintain unity and focus.",
+      "markScheme": "Definition (2 marks), Three characteristics named (3 marks), Explanation of each characteristic (3 marks)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about stories instead of using the exact STBB textbook definition of 'short story' with its specific elements",
+      "Avoid confusing short story characteristics with novel features - stick to textbook distinctions about brevity, single effect, and limited scope",
+      "Many students write plot summaries of stories instead of analyzing literary elements - always focus on the technical aspects asked in the question"
+    ],
+    "quickRecap": "Short story is a brief fictional narrative focusing on single incident with few characters. Key elements include plot (exposition, rising action, climax, falling action, resolution), characters (protagonist/antagonist), setting (time/place), theme (central message), and point of view (narrative perspective). Remember the five characteristics: brevity, single effect, limited characters, unified plot, and concentrated focus.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T14:41:27.958Z"
+  "created_at": "2026-04-06T14:41:27.958Z",
+  "enriched_at": "2026-04-06T17:01:09.261Z"
 }

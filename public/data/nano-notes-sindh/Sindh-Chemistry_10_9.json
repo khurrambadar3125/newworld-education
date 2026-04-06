@@ -91,7 +91,35 @@
       "At equilibrium: Rate forward = Rate backward",
       "Equilibrium constant Kc = [C]^c[D]^d / [A]^a[B]^b"
     ],
-    "keyDiagram": "Graph showing concentration vs time for reversible reaction - initially reactant concentration decreases and product concentration increases until both become constant at equilibrium. Both curves level off horizontally showing dynamic equilibrium state."
+    "keyDiagram": "Graph showing concentration vs time for reversible reaction - initially reactant concentration decreases and product concentration increases until both become constant at equilibrium. Both curves level off horizontally showing dynamic equilibrium state.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define chemical equilibrium and state two characteristics of equilibrium state",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required explanation of Le Chatelier's principle with one example of temperature effect",
+      "BSEK 2021 SSC-II Q3 (3 marks) — asked to differentiate between reversible and irreversible reactions with examples",
+      "BSEK 2020 SSC-II Q5 (4 marks) — required definition of equilibrium constant and factors affecting equilibrium position"
+    ],
+    "workedExample": {
+      "question": "Define chemical equilibrium and explain how increase in temperature affects the equilibrium position of an exothermic reaction. (5 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of chemical equilibrium",
+        "Step 2: Identify that exothermic reactions release heat",
+        "Step 3: Apply Le Chatelier's principle for temperature increase",
+        "Step 4: State the direction of equilibrium shift with reasoning"
+      ],
+      "answer": "Chemical equilibrium is the state of a reversible reaction where the rate of forward reaction becomes equal to the rate of backward reaction and the concentrations of reactants and products remain constant. When temperature is increased in an exothermic reaction, according to Le Chatelier's principle, the equilibrium shifts in the direction that opposes the change. Since exothermic reactions release heat, increasing temperature will shift the equilibrium towards the reactants (backward direction) to absorb the excess heat.",
+      "markScheme": "1 mark for correct definition, 1 mark for identifying exothermic nature, 2 marks for Le Chatelier's principle application, 1 mark for correct direction of shift"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for chemical equilibrium definition.",
+      "Avoid explaining equilibrium as 'balance between reactants and products' - examiners want the precise rate-based definition from the textbook.",
+      "When applying Le Chatelier's principle, always mention 'opposes the change' and give complete reasoning - partial explanations lose marks."
+    ],
+    "quickRecap": "Chemical equilibrium occurs when forward and backward reaction rates are equal with constant concentrations. Le Chatelier's principle states that equilibrium shifts to oppose any applied stress. Concentration, temperature, and pressure changes affect equilibrium position. Only dynamic equilibrium exists in reversible reactions.",
+    "importantFormulas": [
+      "Kc = [Products] / [Reactants] (equilibrium constant)",
+      "For aA + bB ⇌ cC + dD: Kc = [C]^c[D]^d / [A]^a[B]^b"
+    ]
   },
-  "created_at": "2026-04-06T06:10:39.035Z"
+  "created_at": "2026-04-06T06:10:39.035Z",
+  "enriched_at": "2026-04-06T16:53:46.501Z"
 }

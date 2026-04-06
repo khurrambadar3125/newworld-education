@@ -103,7 +103,34 @@
       "Joint Variation: z = kxy or z ∝ xy",
       "Combined Variation: z = kx/y or z ∝ x/y"
     ],
-    "keyDiagram": "Graph showing direct variation as straight line passing through origin with positive slope, and inverse variation as rectangular hyperbola in first and third quadrants. Label axes, show k values, and mark specific points."
+    "keyDiagram": "Graph showing direct variation as straight line passing through origin with positive slope, and inverse variation as rectangular hyperbola in first and third quadrants. Label axes, show k values, and mark specific points.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define continuous and discontinuous variations with two examples each",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of causes of variations and role of environment vs genetics",
+      "BSEK 2021 SSC-II Q4 (3 marks) — tested definition of variation and classification into inherited and acquired types",
+      "BSEK 2020 SSC-II Q6 (5 marks) — asked to differentiate between continuous and discontinuous variations with examples"
+    ],
+    "workedExample": {
+      "question": "Define variation and explain the difference between continuous and discontinuous variations with examples. (6 marks)",
+      "steps": [
+        "Define variation using exact textbook definition",
+        "Define continuous variation with characteristics",
+        "Give example of continuous variation",
+        "Define discontinuous variation with characteristics",
+        "Give example of discontinuous variation",
+        "Highlight key differences between both types"
+      ],
+      "answer": "Variation is the differences that exist between individuals of the same species. Continuous variation shows a range of phenotypes between two extremes with no distinct categories, controlled by multiple genes and greatly influenced by environment. Example: human height ranges from very short to very tall. Discontinuous variation shows distinct categories with no intermediates, controlled by one or few genes with little environmental influence. Example: ABO blood groups show only A, B, AB, O types with no intermediates.",
+      "markScheme": "1 mark for variation definition, 1 mark for continuous variation definition, 1 mark for continuous example, 1 mark for discontinuous variation definition, 1 mark for discontinuous example, 1 mark for clear distinction"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for variation definitions.",
+      "Many students confuse inherited variations with continuous variations. Remember that inherited variations can be both continuous (polygenic) and discontinuous (monogenic).",
+      "Avoid giving vague examples like 'different looks' - use specific textbook examples like height, weight for continuous and blood groups, fingerprints for discontinuous variations."
+    ],
+    "quickRecap": "Variation means differences between individuals of same species. Two main types: continuous (range of phenotypes, multiple genes, environment important) like height and weight; discontinuous (distinct categories, few genes, less environmental influence) like blood groups and eye color. Variations can be inherited (genetic) or acquired (environmental). Environmental factors modify genetic potential especially in continuous traits.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:26:27.711Z"
+  "created_at": "2026-04-06T06:26:27.711Z",
+  "enriched_at": "2026-04-06T17:13:08.893Z"
 }

@@ -35,6 +35,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-public/books/
-public/books/
-public/books/
+public/books/sindh-board/
+public/books/sindh-board/
+public/books/sindh-board/
+public/books/islamiyat-verified/

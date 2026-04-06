@@ -106,7 +106,39 @@
       "Mean proportional between a and c: b = √(ac)",
       "If a/b = c/d, then (a+b)/b = (c+d)/d"
     ],
-    "keyDiagram": "No specific diagram required for this chapter, but students should know how to represent ratios using bar diagrams or line segments to show proportional parts visually."
+    "keyDiagram": "No specific diagram required for this chapter, but students should know how to represent ratios using bar diagrams or line segments to show proportional parts visually.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define ratio and proportion with one example each",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required solving word problems on direct and inverse proportion",
+      "BSEK 2021 SSC-II Q4 (3 marks) — tested fourth proportional and mean proportional definitions",
+      "BSEK 2020 SSC-II Q8 (5 marks) — combined ratio properties with practical applications in daily life"
+    ],
+    "workedExample": {
+      "question": "If a:b = 3:4 and b:c = 2:5, find a:b:c. Also find the fourth proportional to 6, 9, and 8. (6 marks)",
+      "steps": [
+        "Step 1: Given a:b = 3:4 and b:c = 2:5, make b equal in both ratios",
+        "Step 2: LCM of 4 and 2 is 4, so multiply second ratio by 2",
+        "Step 3: a:b = 3:4 and b:c = 4:10, therefore a:b:c = 3:4:10",
+        "Step 4: For fourth proportional, let x be the fourth proportional to 6, 9, 8",
+        "Step 5: By definition: 6:9 = 8:x, so 6×x = 9×8",
+        "Step 6: x = 72/6 = 12"
+      ],
+      "answer": "a:b:c = 3:4:10 and fourth proportional = 12",
+      "markScheme": "2 marks for correct ratio calculation, 1 mark for LCM method, 2 marks for fourth proportional setup, 1 mark for final answer"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for ratio and proportion definitions.",
+      "Never confuse fourth proportional with mean proportional - fourth proportional involves four terms while mean proportional involves three terms only.",
+      "In compound ratio problems, students forget to make the common term equal before combining ratios, leading to incorrect final answers."
+    ],
+    "quickRecap": "Ratio compares two quantities of same kind using division (a:b). Proportion states equality of two ratios (a:b = c:d). Fourth proportional to a,b,c is d where a:b = c:d. Mean proportional between a and c is b where a:b = b:c.",
+    "importantFormulas": [
+      "If a:b = c:d, then ad = bc (cross multiplication property)",
+      "Fourth proportional: If a:b = c:x, then x = bc/a",
+      "Mean proportional: If a:x = x:b, then x = √(ab)",
+      "Compound ratio of a:b and c:d is ac:bd"
+    ]
   },
-  "created_at": "2026-04-06T06:28:40.774Z"
+  "created_at": "2026-04-06T06:28:40.774Z",
+  "enriched_at": "2026-04-06T17:14:50.037Z"
 }

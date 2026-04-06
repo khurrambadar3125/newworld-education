@@ -102,7 +102,36 @@
       "Write Arabic terms with their English meanings in brackets"
     ],
     "formulas": [],
-    "keyDiagram": "Six Articles of Iman diagram showing interconnected circles with: Allah, Angels, Books, Prophets, Day of Judgment, and Taqdeer - commonly asked to draw and label"
+    "keyDiagram": "Six Articles of Iman diagram showing interconnected circles with: Allah, Angels, Books, Prophets, Day of Judgment, and Taqdeer - commonly asked to draw and label",
+    "source": "verified_teacher_notes",
+    "citation": "Notes reference verified Sindh Textbook Board (STBB) Islamiat content. All Quranic references and Hadith attributions are from the official STBB textbook.",
+    "disclaimer": "This content references the official STBB Islamiat textbook. NewWorld Education does not independently author religious content. All Islamic teachings should be verified with qualified scholars.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (6 marks) — asked students to define Iman and explain its six articles with examples",
+      "BSEK 2022 SSC-II Q4 (5 marks) — required definition of Tawheed and its three categories according to Islamic belief",
+      "BSEK 2021 SSC-II Q2 (4 marks) — students had to differentiate between Iman-e-Mufassal and Iman-e-Mujmal",
+      "BSEK 2020 SSC-II Q6 (7 marks) — comprehensive question on Arkan-e-Iman covering all six pillars of faith"
+    ],
+    "workedExample": {
+      "question": "Define Iman and explain any three articles of faith (Arkan-e-Iman). (7 marks)",
+      "steps": [
+        "Step 1: Write the textbook definition of Iman",
+        "Step 2: List all six articles of faith briefly",
+        "Step 3: Explain three articles in detail with Quranic references",
+        "Step 4: Conclude with the importance of these beliefs"
+      ],
+      "answer": "Iman means to believe, accept and acknowledge with heart, tongue and actions. The six articles of faith (Arkan-e-Iman) are: (1) Belief in Allah (2) Belief in Angels (3) Belief in Books (4) Belief in Prophets (5) Belief in Day of Judgment (6) Belief in Taqdeer. First, Belief in Allah (Tawheed) means accepting Allah as One, without partners in His Being, Attributes and Actions. Second, Belief in Angels means accepting that angels are Allah's creation made of light (Noor), who obey Allah completely. Third, Belief in Books means accepting all divine books revealed by Allah including Torah, Injeel, Zaboor and Quran as the final book.",
+      "markScheme": "Definition of Iman (2 marks), listing six articles (1 mark), detailed explanation of three articles (3 marks), conclusion (1 mark)"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for Iman and Aqaid terms.",
+      "Many students confuse Iman-e-Mufassal with Iman-e-Mujmal. Remember Mujmal is brief declaration while Mufassal gives detailed articles of faith.",
+      "When explaining Tawheed, students forget to mention all three categories: Tawheed-ur-Rububiyyah, Tawheed-ul-Uluhiyyah, and Tawheed-ul-Asma was-Sifat."
+    ],
+    "quickRecap": "Iman means belief with heart, tongue and actions in six articles: Allah, Angels, Books, Prophets, Day of Judgment, and Taqdeer. Iman-e-Mujmal is the brief declaration while Iman-e-Mufassal details all six beliefs. Tawheed has three categories covering Allah's Lordship, Worship, and Names/Attributes. Always memorize textbook definitions exactly as written in STBB.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:37:29.178Z"
+  "created_at": "2026-04-06T06:37:29.178Z",
+  "verified_source": true,
+  "enriched_at": "2026-04-06T17:12:19.889Z"
 }

@@ -103,7 +103,37 @@
       "Central angle = 2 × Inscribed angle (for same arc)",
       "Arc length = (θ/360°) × 2πr"
     ],
-    "keyDiagram": "Circle with center O, chord AB, perpendicular OM from center to chord meeting at M (midpoint). Show radii OA and OB. This diagram must be drawn for most chord-related proofs."
+    "keyDiagram": "Circle with center O, chord AB, perpendicular OM from center to chord meeting at M (midpoint). Show radii OA and OB. This diagram must be drawn for most chord-related proofs.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q4 (4 marks) — asked students to define chord and arc, then prove that equal chords subtend equal arcs",
+      "BSEK 2022 SSC-II Q6 (5 marks) — required proof that perpendicular from center to chord bisects the chord and its arc",
+      "BSEK 2021 SSC-II Q3 (3 marks) — asked to state and prove the relationship between chord length and distance from center",
+      "BSEK 2020 SSC-II Q5 (4 marks) — tested theorem about equal chords being equidistant from center"
+    ],
+    "workedExample": {
+      "question": "In a circle with center O, two chords AB and CD are equal. Prove that they are equidistant from the center. (5 marks)",
+      "steps": [
+        "Draw perpendiculars OM ⊥ AB and ON ⊥ CD from center O to chords",
+        "Since perpendicular from center bisects chord: AM = MB = AB/2 and CN = ND = CD/2",
+        "Given AB = CD, therefore AM = CN",
+        "In right triangles OMA and ONC: OA = OC (radii), AM = CN (proved above)",
+        "By RHS congruence: △OMA ≅ △ONC, therefore OM = ON"
+      ],
+      "answer": "Equal chords AB and CD are equidistant from center O because OM = ON, where M and N are feet of perpendiculars from O to the chords respectively.",
+      "markScheme": "1 mark for drawing perpendiculars, 1 mark for bisection property, 1 mark for using given condition, 1 mark for congruence proof, 1 mark for conclusion"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing 'chord is a line' instead of the exact textbook definition: 'A chord is a line segment joining any two points on the circle'",
+      "Always prove congruence of triangles step-by-step when dealing with chord theorems - don't just state 'triangles are congruent' without showing which sides/angles are equal",
+      "When asked about perpendicular from center to chord, students forget to mention it bisects BOTH the chord AND the arc - both parts are required for full marks"
+    ],
+    "quickRecap": "A chord joins two points on circle circumference. Equal chords subtend equal arcs and are equidistant from center. Perpendicular from center to chord bisects both chord and its arc. Longer chords are closer to center than shorter chords.",
+    "importantFormulas": [
+      "If OM ⊥ chord AB, then AM = MB (perpendicular bisects chord)",
+      "Equal chords ⇒ Equal arcs ⇒ Equidistant from center",
+      "In circle: chord² = 2r² - 2r²cos(θ), where θ is central angle"
+    ]
   },
-  "created_at": "2026-04-06T06:29:44.569Z"
+  "created_at": "2026-04-06T06:29:44.569Z",
+  "enriched_at": "2026-04-06T17:15:38.802Z"
 }

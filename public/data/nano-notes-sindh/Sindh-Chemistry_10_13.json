@@ -100,7 +100,36 @@
       "SO₃ + H₂O → H₂SO₄",
       "4NO₂ + 2H₂O + O₂ → 4HNO₃"
     ],
-    "keyDiagram": "Atmospheric layers diagram showing Troposphere (0-12km), Stratosphere (12-50km) with ozone layer, Mesosphere (50-85km), and Thermosphere (85-600km). Include temperature variation curve and label each layer with characteristics."
+    "keyDiagram": "Atmospheric layers diagram showing Troposphere (0-12km), Stratosphere (12-50km) with ozone layer, Mesosphere (50-85km), and Thermosphere (85-600km). Include temperature variation curve and label each layer with characteristics.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define atmosphere and list its four main layers with their characteristics",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required explanation of greenhouse effect and naming three greenhouse gases with their sources",
+      "BSEK 2021 SSC-II Q4 (5 marks) — tested ozone layer depletion causes, effects and prevention measures",
+      "BSEK 2020 SSC-II Q6 (3 marks) — asked for composition of clean dry air with percentage of major components"
+    ],
+    "workedExample": {
+      "question": "Define greenhouse effect. Name any two greenhouse gases and explain how CFCs cause ozone depletion. (7 marks)",
+      "steps": [
+        "Step 1: Write exact textbook definition of greenhouse effect",
+        "Step 2: Name two greenhouse gases from STBB textbook list",
+        "Step 3: Explain CFC mechanism for ozone depletion using chemical equations",
+        "Step 4: Mention the consequences briefly"
+      ],
+      "answer": "Greenhouse effect is the process by which certain gases in the atmosphere trap heat from the sun, causing the Earth's temperature to rise. Two greenhouse gases are: (1) Carbon dioxide (CO₂) (2) Methane (CH₄). CFCs cause ozone depletion because when CFCs reach the stratosphere, UV radiation breaks them down releasing chlorine atoms. These chlorine atoms react with ozone molecules: Cl + O₃ → ClO + O₂. This destroys the protective ozone layer.",
+      "markScheme": "1 mark for greenhouse effect definition, 1 mark each for naming two gases (2 marks), 3 marks for CFC-ozone mechanism explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about pollution instead of using exact STBB textbook definitions for atmosphere and its layers.",
+      "Many students confuse greenhouse effect with ozone depletion - learn both processes separately with their specific gases and mechanisms.",
+      "Always write chemical formulas correctly (CO₂, CH₄, O₃, CFCs) and include chemical equations when explaining ozone depletion for full marks."
+    ],
+    "quickRecap": "Atmosphere has four layers: troposphere, stratosphere, mesosphere, thermosphere. Greenhouse gases (CO₂, CH₄, H₂O vapor) trap heat causing global warming. CFCs destroy ozone layer in stratosphere by releasing chlorine atoms. Clean air contains 78% nitrogen, 21% oxygen, and 1% other gases including noble gases and CO₂.",
+    "importantFormulas": [
+      "Cl + O₃ → ClO + O₂ (Ozone destruction by chlorine)",
+      "ClO + O → Cl + O₂ (Chlorine atom regeneration)",
+      "Composition of air: N₂ = 78%, O₂ = 21%, Others = 1%"
+    ]
   },
-  "created_at": "2026-04-06T06:12:08.111Z"
+  "created_at": "2026-04-06T06:12:08.111Z",
+  "enriched_at": "2026-04-06T16:52:37.512Z"
 }

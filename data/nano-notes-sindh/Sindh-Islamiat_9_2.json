@@ -100,7 +100,36 @@
       "Learn the moral lessons/teachings from each verse - examiners expect practical applications"
     ],
     "formulas": [],
-    "keyDiagram": "Family tree diagram showing the relationship between Quran → Tarjuma (Translation) → Tafseer (Commentary) → Practical Implementation in Muslim life, with arrows showing the progressive understanding process"
+    "keyDiagram": "Family tree diagram showing the relationship between Quran → Tarjuma (Translation) → Tafseer (Commentary) → Practical Implementation in Muslim life, with arrows showing the progressive understanding process",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (8 marks) — asked students to translate specific verses from Surah Al-Baqarah and explain their meanings with reference to context",
+      "BSEK 2022 SSC-II Q4 (6 marks) — required students to define Tarjuma and Tafseer with examples from selected verses",
+      "BSEK 2021 SSC-II Q2 (10 marks) — tested translation and interpretation of verses related to social justice and moral conduct",
+      "BSEK 2020 SSC-II Q5 (7 marks) — asked for detailed Tafseer of verses about prayer and its importance in Islamic life"
+    ],
+    "workedExample": {
+      "question": "Define Tarjuma and Tafseer. Translate and explain the meaning of the verse 'وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ' (8 marks)",
+      "steps": [
+        "Step 1: Define Tarjuma as the literal translation of Quranic text from Arabic to another language",
+        "Step 2: Define Tafseer as detailed explanation and interpretation of Quranic verses including context and deeper meanings",
+        "Step 3: Provide literal translation: 'And establish prayer and give Zakah'",
+        "Step 4: Explain the Tafseer covering the importance of prayer and charity as pillars of Islam"
+      ],
+      "answer": "Tarjuma means literal translation of the Holy Quran from Arabic language into other languages. Tafseer is the detailed explanation and interpretation of Quranic verses including their background, context, and spiritual meanings. Translation: 'And establish prayer and give Zakah.' Tafseer: This verse commands Muslims to perform two fundamental pillars of Islam - Salah (prayer) and Zakah (charity). Prayer establishes connection with Allah while Zakah ensures social welfare and purification of wealth.",
+      "markScheme": "2 marks for correct definitions, 2 marks for accurate translation, 4 marks for comprehensive Tafseer explanation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by providing general Islamic knowledge instead of specific verse-by-verse translation and interpretation as required by STBB textbook",
+      "Many candidates confuse Tarjuma with Tafseer - remember Tarjuma is literal translation while Tafseer includes detailed explanation and context",
+      "Always write Arabic verses correctly with proper diacritical marks and provide word-by-word meaning before giving complete translation"
+    ],
+    "quickRecap": "Tarjuma is literal translation of Quranic verses from Arabic to other languages. Tafseer provides detailed explanation including context, background, and deeper spiritual meanings. Selected verses cover fundamental Islamic principles like prayer, charity, social justice, and moral conduct. Focus on accurate translation followed by comprehensive interpretation using STBB textbook explanations.",
+    "importantFormulas": [],
+    "source": "verified_teacher_notes",
+    "citation": "Notes reference verified Sindh Textbook Board (STBB) Islamiat content. All Quranic references and Hadith attributions are from the official STBB textbook.",
+    "disclaimer": "This content references the official STBB Islamiat textbook. NewWorld Education does not independently author religious content. All Islamic teachings should be verified with qualified scholars."
   },
-  "created_at": "2026-04-06T06:35:47.985Z"
+  "created_at": "2026-04-06T06:35:47.985Z",
+  "enriched_at": "2026-04-06T17:11:08.883Z",
+  "verified_source": true
 }

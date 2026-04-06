@@ -101,7 +101,32 @@
       "Deficiency diseases and their vitamin sources are common MCQ topics"
     ],
     "formulas": [],
-    "keyDiagram": "Classification of Diseases flowchart showing Disease branching into Communicable (caused by pathogens: bacteria, virus, fungi, parasite) and Non-communicable (genetic disorders, deficiency diseases, degenerative diseases)"
+    "keyDiagram": "Classification of Diseases flowchart showing Disease branching into Communicable (caused by pathogens: bacteria, virus, fungi, parasite) and Non-communicable (genetic disorders, deficiency diseases, degenerative diseases)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define communicable diseases and give two examples with their causative agents",
+      "BSEK 2022 SSC-II Q7 (6 marks) — required differentiation between infectious and non-infectious diseases with preventive measures",
+      "BSEK 2021 SSC-II Q4 (5 marks) — asked for definition of disease, classification based on causes, and prevention methods",
+      "BSEK 2020 SSC-II Q6 (3 marks) — focused on defining pathogen and listing three types of disease-causing microorganisms"
+    ],
+    "workedExample": {
+      "question": "Define disease. Classify diseases based on their causes and explain prevention methods for each type. (8 marks)",
+      "steps": [
+        "Step 1: Write the exact textbook definition of disease",
+        "Step 2: Classify diseases into infectious and non-infectious based on causes",
+        "Step 3: Explain prevention methods for infectious diseases",
+        "Step 4: Explain prevention methods for non-infectious diseases"
+      ],
+      "answer": "Disease is a condition in which one or more parts of the body are not functioning normally. Classification: (1) Infectious diseases - caused by pathogens like bacteria, viruses, fungi, and parasites. Prevention: vaccination, personal hygiene, sanitation, quarantine. (2) Non-infectious diseases - caused by genetic factors, lifestyle, environmental factors. Prevention: balanced diet, regular exercise, avoiding smoking and alcohol, regular health checkups.",
+      "markScheme": "2 marks for correct definition, 2 marks for classification with causes, 2 marks for infectious disease prevention, 2 marks for non-infectious disease prevention"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for disease definition.",
+      "Many students confuse infectious with communicable diseases - remember all communicable diseases are infectious but not all infectious diseases are communicable.",
+      "When listing prevention methods, students often give vague answers like 'stay healthy' - always be specific with methods like vaccination, sanitation, balanced diet, etc."
+    ],
+    "quickRecap": "Disease is abnormal functioning of body parts. Two main types: infectious (caused by pathogens - bacteria, viruses, fungi, parasites) and non-infectious (genetic, lifestyle, environmental causes). Prevention varies: infectious diseases prevented by hygiene, vaccination, sanitation; non-infectious by healthy lifestyle, balanced diet, regular exercise. Remember exact textbook definitions and specific prevention methods.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:52:58.803Z"
+  "created_at": "2026-04-06T06:52:58.803Z",
+  "enriched_at": "2026-04-06T17:08:16.737Z"
 }

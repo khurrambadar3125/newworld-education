@@ -100,7 +100,33 @@
       "Memorize the basic HTML document structure - it appears in long questions regularly"
     ],
     "formulas": [],
-    "keyDiagram": "Basic HTML Document Structure showing DOCTYPE declaration, html root element, head section (with title, meta tags), and body section (with headings, paragraphs, links, and other content elements) - students must draw this hierarchy clearly"
+    "keyDiagram": "Basic HTML Document Structure showing DOCTYPE declaration, html root element, head section (with title, meta tags), and body section (with headings, paragraphs, links, and other content elements) - students must draw this hierarchy clearly",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (6 marks) — asked students to define HTML, CSS, and JavaScript with their main purposes in web development",
+      "BSEK 2022 SSC-II Q7 (4 marks) — required explanation of difference between static and dynamic websites with examples",
+      "BSEK 2021 SSC-II Q2 (5 marks) — asked to list and explain five essential components of a web page structure",
+      "BSEK 2020 SSC-II Q6 (3 marks) — definition of web browser and its function in accessing web pages"
+    ],
+    "workedExample": {
+      "question": "Define HTML and explain its role in web development. Also differentiate between HTML tags and HTML elements. (7 marks)",
+      "steps": [
+        "Define HTML using exact textbook definition",
+        "Explain the role of HTML in web development",
+        "Define HTML tags with example",
+        "Define HTML elements with example",
+        "Write clear difference between tags and elements"
+      ],
+      "answer": "HTML (HyperText Markup Language) is a standard markup language used to create web pages and web applications for displaying content on the World Wide Web. HTML plays the fundamental role in web development by providing the basic structure and content of web pages through a system of markup tags. HTML tags are keywords enclosed in angle brackets that define how content should be displayed, for example <h1> and </h1>. HTML elements consist of an opening tag, content, and closing tag together, for example <h1>Welcome</h1> is a complete heading element. The main difference is that tags are the markup codes while elements include both the tags and the content between them.",
+      "markScheme": "1 mark for correct HTML definition, 2 marks for explaining role in web development, 1 mark each for defining tags and elements with examples, 1 mark for clear differentiation"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers instead of textbook-exact definitions. Always use the STBB textbook phrasing for HTML, CSS, and JavaScript definitions.",
+      "Avoid giving practical coding examples when asked for definitions - BSEK wants theoretical explanations as per textbook, not actual code snippets.",
+      "Do not confuse web development terms - clearly distinguish between web page, website, web browser, and web server using exact textbook definitions only."
+    ],
+    "quickRecap": "Web development involves creating websites using HTML for structure, CSS for styling, and JavaScript for interactivity. Static websites show fixed content while dynamic websites change content based on user interaction. Web browsers display web pages by interpreting HTML code, and web servers store and deliver web pages to users. Always use exact STBB textbook definitions in exam answers.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:43:10.957Z"
+  "created_at": "2026-04-06T06:43:10.957Z",
+  "enriched_at": "2026-04-06T16:59:08.636Z"
 }

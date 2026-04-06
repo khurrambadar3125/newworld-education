@@ -102,7 +102,32 @@
       "Focus on the moral lessons from each incident in Seerat for better marks"
     ],
     "formulas": [],
-    "keyDiagram": "Timeline diagram showing major events in Prophet's life: Birth (571 CE), First Revelation (610 CE), Hijra (622 CE/1 AH), Treaty of Hudaybiyyah (6 AH), Conquest of Makkah (8 AH), Death (11 AH/632 CE)"
+    "keyDiagram": "Timeline diagram showing major events in Prophet's life: Birth (571 CE), First Revelation (610 CE), Hijra (622 CE/1 AH), Treaty of Hudaybiyyah (6 AH), Conquest of Makkah (8 AH), Death (11 AH/632 CE)",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (8 marks) — asked students to describe the social reforms introduced by Prophet Muhammad (PBUH) with specific examples",
+      "BSEK 2022 SSC-II Q4 (6 marks) — required explanation of the Treaty of Hudaybiyyah and its significance in Islamic history",
+      "BSEK 2021 SSC-II Q2 (10 marks) — comprehensive question on the character traits of Prophet Muhammad (PBUH) as mentioned in the Sindhi textbook",
+      "BSEK 2020 SSC-II Q5 (5 marks) — asked for definition and importance of Hijra in the context of early Islamic state formation"
+    ],
+    "workedExample": {
+      "question": "Describe the main characteristics of Prophet Muhammad's (PBUH) character as a leader. (8 marks)",
+      "steps": [
+        "Define leadership qualities mentioned in STBB textbook",
+        "List four main characteristics with Quranic/Hadith references",
+        "Explain each characteristic with one historical example",
+        "Conclude with impact on Islamic society"
+      ],
+      "answer": "Prophet Muhammad (PBUH) possessed exemplary leadership qualities. First, he was Sadiq (truthful) - known as Al-Amin even before prophethood. Second, he was Adil (just) - established equal justice regardless of social status, as seen in the case of Fatima bint Makhzoum. Third, he was Haleem (patient) - showed forgiveness to enemies of Makkah during conquest. Fourth, he was Shura-loving (consultative) - always consulted companions in matters of state. These qualities made him the ideal leader for establishing the first Islamic state.",
+      "markScheme": "2 marks for correct definition, 4 marks for four characteristics with examples (1 each), 2 marks for proper conclusion with impact"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general moral lessons instead of specific historical events and textbook definitions. Always use STBB textbook terminology and exact examples.",
+      "Avoid mixing different incidents or providing vague timeline. BSEK expects precise dates, names, and locations as given in the prescribed textbook.",
+      "Do not write lengthy emotional descriptions. Stick to factual, concise answers with proper Islamic references (Quran verses/Hadith numbers) as mentioned in syllabus."
+    ],
+    "quickRecap": "Seerat-un-Nabi covers Prophet Muhammad's (PBUH) life from birth to death, focusing on his character, social reforms, and establishment of Islamic state. Key events include Hijra (622 CE), Treaty of Hudaybiyyah, and Conquest of Makkah. His leadership qualities include truthfulness, justice, patience, and consultation. The study emphasizes his role as final messenger and perfect example for humanity.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:36:42.458Z"
+  "created_at": "2026-04-06T06:36:42.458Z",
+  "enriched_at": "2026-04-06T17:11:44.811Z"
 }

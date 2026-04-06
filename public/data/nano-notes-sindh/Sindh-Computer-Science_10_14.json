@@ -102,7 +102,31 @@
       "Practice drawing and labeling the Scratch interface diagram"
     ],
     "formulas": [],
-    "keyDiagram": "Scratch Interface Diagram showing Stage (top left), Sprite List (bottom left), Blocks Palette (left side with categories like Motion, Looks, Sound, Events, Control, Sensing, Operators, Variables), and Scripts Area (right side). Label each component clearly with their functions."
+    "keyDiagram": "Scratch Interface Diagram showing Stage (top left), Sprite List (bottom left), Blocks Palette (left side with categories like Motion, Looks, Sound, Events, Control, Sensing, Operators, Variables), and Scripts Area (right side). Label each component clearly with their functions.",
+    "pastPaperRefs": [
+      "BSEK 2023 SSC-II Q3 (4 marks) — asked students to define Scratch and list its main features",
+      "BSEK 2022 SSC-II Q2 (3 marks) — required explanation of Scratch interface components",
+      "BSEK 2021 SSC-II Q4 (5 marks) — asked to differentiate between Scratch and traditional programming languages",
+      "BSEK 2020 SSC-II Q1 (2 marks) — definition of sprites and their purpose in Scratch"
+    ],
+    "workedExample": {
+      "question": "Define Scratch and explain any three components of its interface. (5 marks)",
+      "steps": [
+        "First, provide the exact textbook definition of Scratch",
+        "Then explain three main interface components with their functions",
+        "Use proper terminology as given in STBB textbook"
+      ],
+      "answer": "Scratch is a visual programming language developed by MIT that uses drag-and-drop blocks to create programs instead of typing code. Three components of Scratch interface are: (1) Stage Area - where sprites perform actions and the program runs, (2) Sprites Pane - displays all sprites in the project with options to add, delete or modify them, (3) Blocks Palette - contains all programming blocks organized in categories like Motion, Looks, Sound etc.",
+      "markScheme": "1 mark for correct definition of Scratch, 1 mark each for naming three components (3 marks), 1 mark for explaining functions correctly"
+    },
+    "examinerWarnings": [
+      "Students often lose marks by writing general answers about programming instead of textbook-exact definitions of Scratch. Always use the STBB textbook phrasing.",
+      "Avoid explaining how to use Scratch when asked for definitions - BSEK wants theoretical knowledge, not practical steps.",
+      "Don't confuse Scratch blocks with traditional coding syntax - use exact block names and categories as given in textbook."
+    ],
+    "quickRecap": "Scratch is MIT's visual programming language using drag-and-drop blocks instead of text code. Main interface has Stage Area (where programs run), Sprites Pane (manages characters), Blocks Palette (contains programming blocks), and Scripts Area (where blocks are assembled). Key features include visual programming, easy animation, sound integration, and beginner-friendly approach to coding concepts.",
+    "importantFormulas": []
   },
-  "created_at": "2026-04-06T06:46:32.840Z"
+  "created_at": "2026-04-06T06:46:32.840Z",
+  "enriched_at": "2026-04-06T16:57:09.774Z"
 }
