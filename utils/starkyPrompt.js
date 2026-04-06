@@ -892,8 +892,11 @@ export function buildMessages({ userProfile: rawProfile, sessionMemory: rawMemor
     systemPrompt += '\n\nLEARNED FROM PREVIOUS SESSIONS (this is your memory of this student — use it):\n' + learnedContext.join('\n');
   }
 
-  // 4. Build conversation history
-  const history = (sessionMemory.conversationHistory || []).slice(-10); // last 10 turns
+  // 4. Build conversation history — strip extra fields (displayContent etc) that Anthropic API rejects
+  const history = (sessionMemory.conversationHistory || []).slice(-10).map(m => ({
+    role: m.role,
+    content: m.content,
+  }));
 
   // 5. Build the current user message (with optional image)
   let currentContent;
