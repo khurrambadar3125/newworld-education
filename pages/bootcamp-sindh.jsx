@@ -10,7 +10,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { SINDH_SYLLABUS, getSindhSubjectsWithMeta, getSindhChapters } from '../utils/sindhBoardSyllabus';
 import LegalFooter from '../components/LegalFooter';
-import BottomNav from '../components/BottomNav';
+import GarageNav from '../components/GarageNav';
 
 const GOLD = '#C9A84C';
 const SUBJECTS = Object.keys(SINDH_SYLLABUS);
@@ -228,7 +228,7 @@ export default function SindhBootcamp() {
         </div>
       </div>
       <LegalFooter />
-      <BottomNav />
+      <GarageNav />
     </>
   );
 }
