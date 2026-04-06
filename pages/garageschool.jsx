@@ -107,8 +107,8 @@ export default function GarageSchoolPage() {
             {[
               { n: '550+', l: 'Students' },
               { n: '25', l: 'Years' },
-              { n: '159', l: 'Textbook Chapters' },
-              { n: '11', l: 'Subjects Covered' },
+              { n: '50,000+', l: 'Verified Questions' },
+              { n: '493', l: 'Revision Notes' },
               { n: '24/7', l: 'AI Tutor Available' },
               { n: '₨0', l: 'Cost to Students' },
             ].map(s => (

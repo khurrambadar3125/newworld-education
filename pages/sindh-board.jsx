@@ -69,7 +69,7 @@ export default function SindhBoardStudy() {
               Matric Study Path
             </h1>
             <p style={{ color: 'rgba(255,255,255,.4)', fontSize: 13, marginBottom: 4 }}>
-              11 subjects · 159 chapters · Revision notes for every chapter
+              11 subjects · 159 chapters · 50,000+ verified questions · Revision notes for every chapter
             </p>
             <p style={{ color: 'rgba(255,255,255,.25)', fontSize: 12 }}>
               اردو · سنڌي · English · پښتو · پنجابی — Starky speaks your language
@@ -259,15 +259,17 @@ export default function SindhBoardStudy() {
                 <div style={{ fontSize: 12, color: 'rgba(255,255,255,.4)' }}>Set your goal. Get a daily study plan. Follow it until exam day.</div>
               </a>
 
-              {/* University path */}
-              <div style={{ background: 'rgba(201,168,76,.04)', border: '1px solid rgba(201,168,76,.15)', borderRadius: 14, padding: '20px 16px', marginTop: 10, textAlign: 'center' }}>
-                <div style={{ fontSize: 12, fontWeight: 700, color: GOLD, letterSpacing: 1, marginBottom: 8 }}>YOUR FUTURE PATH</div>
-                <div style={{ display: 'flex', gap: 6, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 12 }}>
-                  {['Master Matric', '→', 'Intermediate (FSc)', '→', 'Entry Tests', '→', 'IBA / LUMS / NUST'].map((s, i) => (
-                    <span key={i} style={{ fontSize: 11, fontWeight: s === '→' ? 400 : 700, color: s === '→' ? 'rgba(255,255,255,.3)' : GOLD }}>{s}</span>
-                  ))}
-                </div>
-                <div style={{ fontSize: 12, color: 'rgba(255,255,255,.35)' }}>Master your Matric subjects first. Entry test prep unlocks after.</div>
+              {/* Cambridge O/A Level pathway */}
+              <a href="/study" style={{ display: 'block', background: 'rgba(201,168,76,.04)', border: '1px solid rgba(201,168,76,.15)', borderRadius: 14, padding: '18px 16px', marginTop: 10, textDecoration: 'none', textAlign: 'center' }}>
+                <div style={{ fontSize: 12, fontWeight: 700, color: GOLD, letterSpacing: 1, marginBottom: 4 }}>ALSO AVAILABLE</div>
+                <div style={{ fontSize: 15, fontWeight: 800, color: '#FAF6EB', marginBottom: 4 }}>Cambridge O Level & A Level</div>
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,.4)' }}>26 subjects · 353 chapters · 334 revision notes · Past paper questions</div>
+              </a>
+
+              {/* KG to 8 coming soon */}
+              <div style={{ background: 'rgba(255,255,255,.03)', border: '1px solid rgba(255,255,255,.06)', borderRadius: 14, padding: '16px', marginTop: 10, textAlign: 'center' }}>
+                <div style={{ fontSize: 13, fontWeight: 700, color: 'rgba(255,255,255,.5)', marginBottom: 4 }}>KG to Class 8 — Coming Soon</div>
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,.3)' }}>We're building revision notes for primary and middle school. Stay tuned.</div>
               </div>
 
               {/* Starky chat — stays on sindh-board, doesn't navigate away */}
