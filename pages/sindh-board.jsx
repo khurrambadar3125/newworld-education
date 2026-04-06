@@ -47,7 +47,7 @@ export default function SindhBoardStudy() {
   const S = {
     page: { minHeight: '100vh', background: '#0a0a0a', color: '#fff', padding: '24px 16px 80px', fontFamily: "'Sora',-apple-system,sans-serif" },
     container: { maxWidth: 600, margin: '0 auto' },
-    card: { background: 'rgba(255,255,255,.03)', border: '1px solid rgba(255,255,255,.06)', borderRadius: 14, padding: '16px 14px', marginBottom: 8 },
+    card: { background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: 14, padding: '16px 14px', marginBottom: 8 },
   };
 
   return (
@@ -58,6 +58,9 @@ export default function SindhBoardStudy() {
       </Head>
       <div style={S.page}>
         <div style={S.container}>
+
+          {/* Back button */}
+          <button onClick={() => router.back()} style={{ background: 'none', border: 'none', color: '#4F8EF7', fontSize: 13, fontWeight: 700, cursor: 'pointer', padding: 0, marginBottom: 12 }}>← Back</button>
 
           {/* Header */}
           <div style={{ textAlign: 'center', marginBottom: 24 }}>
@@ -99,12 +102,12 @@ export default function SindhBoardStudy() {
                   <button key={s.name} onClick={() => setSelectedSubject(s.name)}
                     style={{
                       ...S.card, cursor: 'pointer', textAlign: 'left',
-                      borderColor: 'rgba(255,255,255,.06)',
+                      background: 'rgba(255,255,255,.05)', borderColor: 'rgba(255,255,255,.1)',
                     }}
-                    onMouseOver={e => e.currentTarget.style.borderColor = 'rgba(201,168,76,.3)'}
-                    onMouseOut={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,.06)'}>
-                    <div style={{ fontSize: 15, fontWeight: 800 }}>{s.name}</div>
-                    <div style={{ fontSize: 11, color: 'rgba(255,255,255,.35)', marginTop: 2 }}>
+                    onMouseOver={e => { e.currentTarget.style.borderColor = 'rgba(201,168,76,.4)'; e.currentTarget.style.background = 'rgba(201,168,76,.08)'; }}
+                    onMouseOut={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,.1)'; e.currentTarget.style.background = 'rgba(255,255,255,.05)'; }}>
+                    <div style={{ fontSize: 15, fontWeight: 800, color: '#FAF6EB' }}>{s.name}</div>
+                    <div style={{ fontSize: 11, color: 'rgba(255,255,255,.45)', marginTop: 2 }}>
                       {classChapters} chapters · {s.group}
                     </div>
                   </button>
@@ -148,9 +151,9 @@ export default function SindhBoardStudy() {
                       }}
                       style={{
                         width: '100%', padding: '14px 16px', borderRadius: 12, cursor: 'pointer',
-                        background: isExpanded ? 'rgba(79,142,247,.04)' : 'rgba(255,255,255,.03)',
-                        border: isExpanded ? '1px solid rgba(79,142,247,.2)' : '1px solid rgba(255,255,255,.06)',
-                        textAlign: 'left', color: '#fff', display: 'flex', alignItems: 'center', gap: 12,
+                        background: isExpanded ? 'rgba(79,142,247,.06)' : 'rgba(255,255,255,.05)',
+                        border: isExpanded ? '2px solid rgba(79,142,247,.3)' : '1px solid rgba(255,255,255,.1)',
+                        textAlign: 'left', color: '#FAF6EB', display: 'flex', alignItems: 'center', gap: 12,
                       }}>
                       <div style={{
                         width: 32, height: 32, borderRadius: 16, flexShrink: 0,
@@ -161,7 +164,7 @@ export default function SindhBoardStudy() {
                         {ch.id}
                       </div>
                       <div style={{ flex: 1 }}>
-                        <div style={{ fontSize: 14, fontWeight: 700 }}>{ch.name}</div>
+                        <div style={{ fontSize: 15, fontWeight: 800, color: '#FAF6EB' }}>{ch.name}</div>
                       </div>
                       <span style={{ color: 'rgba(255,255,255,.2)', fontSize: 14 }}>{isExpanded ? '▾' : '▸'}</span>
                     </button>
@@ -174,17 +177,17 @@ export default function SindhBoardStudy() {
                           <>
                             {/* Key Points */}
                             {note.keyPoints?.map((p, j) => (
-                              <div key={j} style={{ fontSize: 13, color: 'rgba(255,255,255,.7)', lineHeight: 1.7, padding: '3px 0' }}>
-                                <span style={{ color: '#4ADE80', marginRight: 6 }}>•</span>{p}
+                              <div key={j} style={{ fontSize: 15, color: 'rgba(255,255,255,.85)', lineHeight: 1.8, padding: '5px 0', borderBottom: j < note.keyPoints.length - 1 ? '1px solid rgba(255,255,255,.04)' : 'none' }}>
+                                <span style={{ color: '#4ADE80', marginRight: 8, fontWeight: 700 }}>•</span>{p}
                               </div>
                             ))}
 
                             {/* Definitions */}
                             {note.definitions?.length > 0 && (
-                              <div style={{ marginTop: 10 }}>
-                                <div style={{ fontSize: 11, fontWeight: 700, color: '#4F8EF7', marginBottom: 4 }}>KEY DEFINITIONS</div>
+                              <div style={{ marginTop: 16, background: 'rgba(79,142,247,.04)', border: '1px solid rgba(79,142,247,.15)', borderRadius: 10, padding: '14px 16px' }}>
+                                <div style={{ fontSize: 12, fontWeight: 700, color: '#4F8EF7', marginBottom: 8, letterSpacing: 1 }}>KEY DEFINITIONS</div>
                                 {note.definitions.map((d, j) => (
-                                  <div key={j} style={{ fontSize: 12, color: 'rgba(255,255,255,.6)', marginBottom: 4 }}>
+                                  <div key={j} style={{ fontSize: 14, color: 'rgba(255,255,255,.75)', marginBottom: 8, lineHeight: 1.7 }}>
                                     <strong style={{ color: '#4F8EF7' }}>{d.term}:</strong> {d.definition}
                                   </div>
                                 ))}
@@ -193,11 +196,11 @@ export default function SindhBoardStudy() {
 
                             {/* Common Mistakes */}
                             {note.commonMistakes?.length > 0 && (
-                              <div style={{ marginTop: 10 }}>
-                                <div style={{ fontSize: 11, fontWeight: 700, color: '#EF4444', marginBottom: 4 }}>DON'T LOSE MARKS</div>
+                              <div style={{ marginTop: 16, background: 'rgba(239,68,68,.04)', border: '1px solid rgba(239,68,68,.15)', borderRadius: 10, padding: '14px 16px' }}>
+                                <div style={{ fontSize: 12, fontWeight: 700, color: '#EF4444', marginBottom: 8, letterSpacing: 1 }}>DON'T LOSE MARKS</div>
                                 {note.commonMistakes.map((m, j) => (
-                                  <div key={j} style={{ fontSize: 12, color: 'rgba(255,255,255,.5)', padding: '2px 0' }}>
-                                    <span style={{ color: '#EF4444', marginRight: 4 }}>✗</span>{m}
+                                  <div key={j} style={{ fontSize: 14, color: 'rgba(255,255,255,.7)', padding: '4px 0', lineHeight: 1.7 }}>
+                                    <span style={{ color: '#EF4444', marginRight: 6 }}>✗</span>{m}
                                   </div>
                                 ))}
                               </div>
@@ -205,14 +208,14 @@ export default function SindhBoardStudy() {
 
                             {/* MCQs */}
                             {note.mcqs?.length > 0 && (
-                              <div style={{ marginTop: 10 }}>
-                                <div style={{ fontSize: 11, fontWeight: 700, color: GOLD, marginBottom: 4 }}>PRACTICE MCQs</div>
+                              <div style={{ marginTop: 16 }}>
+                                <div style={{ fontSize: 12, fontWeight: 700, color: GOLD, marginBottom: 8, letterSpacing: 1 }}>PRACTICE MCQs</div>
                                 {note.mcqs.map((q, j) => (
-                                  <div key={j} style={{ background: 'rgba(255,255,255,.02)', border: '1px solid rgba(255,255,255,.04)', borderRadius: 8, padding: '10px 12px', marginBottom: 6 }}>
-                                    <div style={{ fontSize: 12, color: 'rgba(255,255,255,.7)', marginBottom: 6 }}>{q.question}</div>
-                                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 4 }}>
+                                  <div key={j} style={{ background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.08)', borderRadius: 10, padding: '14px 16px', marginBottom: 8 }}>
+                                    <div style={{ fontSize: 14, color: 'rgba(255,255,255,.85)', marginBottom: 10, lineHeight: 1.6 }}>{q.question}</div>
+                                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6 }}>
                                       {Object.entries(q.options || {}).map(([key, val]) => (
-                                        <div key={key} style={{ fontSize: 11, color: key === q.correct ? '#4ADE80' : 'rgba(255,255,255,.4)', padding: '4px 8px', borderRadius: 4, background: key === q.correct ? 'rgba(74,222,128,.06)' : 'transparent' }}>
+                                        <div key={key} style={{ fontSize: 13, color: key === q.correct ? '#4ADE80' : 'rgba(255,255,255,.5)', padding: '8px 12px', borderRadius: 8, background: key === q.correct ? 'rgba(74,222,128,.08)' : 'rgba(255,255,255,.02)', border: key === q.correct ? '1px solid rgba(74,222,128,.2)' : '1px solid rgba(255,255,255,.04)', fontWeight: key === q.correct ? 700 : 400 }}>
                                           {key}) {val}
                                         </div>
                                       ))}
@@ -222,9 +225,10 @@ export default function SindhBoardStudy() {
                               </div>
                             )}
 
-                            {/* Ask Starky — with return URL so student comes back */}
-                            <a href={`/?message=${encodeURIComponent(`I'm studying ${selectedSubject} Class ${selectedClass}, chapter "${ch.name}" (Sindh Board). Please explain the key concepts briefly then tell me to go back to my notes and practice.`)}&returnTo=${encodeURIComponent('/sindh-board')}`}
-                              style={{ display: 'block', textAlign: 'center', fontSize: 12, color: '#4F8EF7', textDecoration: 'none', padding: '10px 0', marginTop: 8 }}>
+                            {/* Ask Starky — with grade context so Starky knows it's Sindh Board */}
+                            <a href={`/?message=${encodeURIComponent(`I'm studying ${selectedSubject} Class ${selectedClass}, chapter "${ch.name}" (Sindh Board). Please explain the key concepts briefly then tell me to go back to my notes and practice.`)}&returnTo=${encodeURIComponent('/sindh-board')}&grade=grade${selectedClass}`}
+                              onClick={() => { try { const p = JSON.parse(localStorage.getItem('nw_user') || '{}'); p.gradeId = 'grade' + selectedClass; p.board = 'sindh'; localStorage.setItem('nw_user', JSON.stringify(p)); } catch {} }}
+                              style={{ display: 'block', textAlign: 'center', fontSize: 13, fontWeight: 700, color: '#4F8EF7', textDecoration: 'none', padding: '12px 16px', marginTop: 8, background: 'rgba(79,142,247,.06)', borderRadius: 10, border: '1px solid rgba(79,142,247,.15)' }}>
                               Samajh nahi aaya? Starky se poochein →
                             </a>
                           </>
