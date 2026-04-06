@@ -122,17 +122,30 @@ export default function BooksPage() {
 
           {/* Cambridge Books */}
           {tab === 'cambridge' && (
-            <div style={{ textAlign: 'center', padding: '32px 16px' }}>
-              <div style={{ fontSize: 28, marginBottom: 12 }}>📚</div>
-              <div style={{ fontSize: 15, fontWeight: 700, color: '#FAF6EB', marginBottom: 8 }}>Cambridge Textbooks</div>
-              <p style={{ fontSize: 13, color: 'rgba(255,255,255,.4)', lineHeight: 1.7, marginBottom: 16 }}>
-                Cambridge endorsed textbooks are copyrighted and cannot be distributed as PDFs.
-                However, our revision notes cover every chapter from the official coursebooks.
-              </p>
-              <a href="/study" style={{ display: 'inline-block', background: '#4F8EF7', color: '#fff', border: 'none', borderRadius: 10, padding: '12px 28px', fontWeight: 700, fontSize: 14, textDecoration: 'none' }}>
-                Open Revision Notes →
+            <div style={{ padding: '16px 0' }}>
+              <div style={{ textAlign: 'center', marginBottom: 20 }}>
+                <div style={{ fontSize: 15, fontWeight: 700, color: '#FAF6EB', marginBottom: 4 }}>Cambridge Textbooks</div>
+                <p style={{ fontSize: 13, color: 'rgba(255,255,255,.4)', lineHeight: 1.7 }}>
+                  Cambridge textbooks are copyrighted. Our revision notes cover every chapter — 334 notes across 26 subjects.
+                </p>
+              </div>
+              <a href="/study" style={{ display: 'block', ...S.card, textDecoration: 'none', textAlign: 'center', borderColor: 'rgba(79,142,247,.2)', background: 'rgba(79,142,247,.04)' }}>
+                <div style={{ fontSize: 16, fontWeight: 800, color: '#4F8EF7', marginBottom: 4 }}>📖 O Level Revision Notes</div>
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,.4)' }}>17 subjects · 202 notes · Every textbook chapter covered</div>
+              </a>
+              <a href="/study?level=A+Level" style={{ display: 'block', ...S.card, textDecoration: 'none', textAlign: 'center', borderColor: 'rgba(201,168,76,.2)', background: 'rgba(201,168,76,.04)' }}>
+                <div style={{ fontSize: 16, fontWeight: 800, color: GOLD, marginBottom: 4 }}>📖 A Level Revision Notes</div>
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,.4)' }}>9 subjects · 132 notes · AS + A2 chapters covered</div>
               </a>
             </div>
+          )}
+
+          {/* Sindh Board Revision Notes — same as Cambridge section */}
+          {tab === 'sindh' && (
+            <a href="/sindh-board" style={{ display: 'block', ...S.card, textDecoration: 'none', textAlign: 'center', marginTop: 16, borderColor: 'rgba(79,142,247,.2)', background: 'rgba(79,142,247,.04)' }}>
+              <div style={{ fontSize: 16, fontWeight: 800, color: '#4F8EF7', marginBottom: 4 }}>📝 Sindh Board Revision Notes</div>
+              <div style={{ fontSize: 12, color: 'rgba(255,255,255,.4)' }}>12 subjects · 169 notes · Class 9 & 10 · Interactive MCQs</div>
+            </a>
           )}
 
           {/* Link to study */}
