@@ -446,6 +446,270 @@ export const SYLLABUS = {
       { id: '8', name: 'Probability and Statistics', keywords: ['probability', 'permutation', 'combination'] },
     ]},
   ]},
+
+  // ════════════════════════════════════════════════════════════════
+  //  A LEVEL SUBJECTS
+  // ════════════════════════════════════════════════════════════════
+
+  // ════════════════════════════════════════════════════════════
+  // A LEVEL CHEMISTRY 9701
+  // ════════════════════════════════════════════════════════════
+  'A Level Chemistry': { code: '9701', level: 'A Level', themes: [
+    { name: 'AS Physical Chemistry', sections: [
+      { id: 'AS1', name: 'Atoms, molecules and stoichiometry', keywords: ['atom', 'molecule', 'stoichiometry', 'mole', 'avogadro', 'formula'] },
+      { id: 'AS2', name: 'Atomic structure', keywords: ['atomic structure', 'electron', 'orbital', 'ionisation energy', 'shell'] },
+      { id: 'AS3', name: 'Chemical bonding', keywords: ['bond', 'ionic', 'covalent', 'dative', 'metallic', 'intermolecular', 'electronegativity', 'shape'] },
+      { id: 'AS4', name: 'States of matter', keywords: ['state', 'gas law', 'ideal gas', 'liquid', 'solid', 'boiling'] },
+      { id: 'AS5', name: 'Chemical energetics', keywords: ['enthalpy', 'hess', 'bond energy', 'calorimetry', 'exothermic', 'endothermic'] },
+      { id: 'AS6', name: 'Electrochemistry', keywords: ['electrochemistry', 'redox', 'electrode', 'cell potential', 'electrolysis'] },
+      { id: 'AS7', name: 'Equilibria', keywords: ['equilibrium', 'le chatelier', 'kc', 'kp', 'position'] },
+      { id: 'AS8', name: 'Reaction kinetics', keywords: ['rate', 'order', 'rate constant', 'activation energy', 'catalyst', 'boltzmann'] },
+    ]},
+    { name: 'AS Inorganic Chemistry', sections: [
+      { id: 'AS9', name: 'The Periodic Table: chemical periodicity', keywords: ['periodic', 'trend', 'group', 'period', 'oxide', 'chloride'] },
+      { id: 'AS10', name: 'Group 2', keywords: ['group 2', 'alkaline earth', 'magnesium', 'calcium', 'barium', 'thermal stability'] },
+      { id: 'AS11', name: 'Group 17', keywords: ['group 17', 'halogen', 'chlorine', 'bromine', 'iodine', 'displacement', 'disproportionation'] },
+      { id: 'AS12', name: 'Nitrogen and sulfur', keywords: ['nitrogen', 'sulfur', 'oxide', 'acid rain', 'pollution'] },
+    ]},
+    { name: 'AS Organic Chemistry', sections: [
+      { id: 'AS13', name: 'Introduction to organic chemistry', keywords: ['organic', 'nomenclature', 'isomerism', 'functional group', 'homologous'] },
+      { id: 'AS14', name: 'Hydrocarbons', keywords: ['alkane', 'alkene', 'substitution', 'addition', 'cracking', 'polymer'] },
+      { id: 'AS15', name: 'Halogenoalkanes', keywords: ['halogenoalkane', 'nucleophilic', 'substitution', 'elimination', 'sn1', 'sn2'] },
+      { id: 'AS16', name: 'Alcohols, esters and carboxylic acids', keywords: ['alcohol', 'ester', 'carboxylic', 'oxidation', 'dehydration', 'fermentation'] },
+      { id: 'AS17', name: 'Carbonyl compounds', keywords: ['carbonyl', 'aldehyde', 'ketone', 'tollens', 'fehling', 'reduction'] },
+    ]},
+    { name: 'A2 Physical Chemistry', sections: [
+      { id: 'A2.1', name: 'Further equilibria', keywords: ['ksp', 'solubility product', 'buffer', 'ph', 'acid dissociation', 'ka', 'partition'] },
+      { id: 'A2.2', name: 'Further kinetics', keywords: ['rate equation', 'order', 'half-life', 'mechanism', 'rate determining'] },
+      { id: 'A2.3', name: 'Further energetics', keywords: ['lattice energy', 'born-haber', 'entropy', 'gibbs', 'free energy'] },
+    ]},
+    { name: 'A2 Inorganic Chemistry', sections: [
+      { id: 'A2.4', name: 'Transition elements', keywords: ['transition', 'd-block', 'complex', 'ligand', 'oxidation state', 'colour', 'catalytic'] },
+    ]},
+    { name: 'A2 Organic Chemistry', sections: [
+      { id: 'A2.5', name: 'Further organic chemistry', keywords: ['benzene', 'phenol', 'amine', 'amide', 'amino acid', 'protein', 'polyester', 'polyamide'] },
+      { id: 'A2.6', name: 'Analytical chemistry', keywords: ['mass spectrometry', 'infrared', 'nmr', 'chromatography'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // A LEVEL PHYSICS 9702
+  // ════════════════════════════════════════════════════════════
+  'A Level Physics': { code: '9702', level: 'A Level', themes: [
+    { name: 'AS Mechanics', sections: [
+      { id: 'AS1', name: 'Physical quantities and units', keywords: ['quantity', 'unit', 'si', 'homogeneity', 'estimation'] },
+      { id: 'AS2', name: 'Kinematics', keywords: ['kinematics', 'displacement', 'velocity', 'acceleration', 'projectile'] },
+      { id: 'AS3', name: 'Dynamics', keywords: ['force', 'newton', 'momentum', 'impulse', 'conservation'] },
+      { id: 'AS4', name: 'Forces, density and pressure', keywords: ['density', 'pressure', 'upthrust', 'archimedes', 'moment', 'equilibrium'] },
+      { id: 'AS5', name: 'Work, energy and power', keywords: ['work', 'energy', 'kinetic', 'potential', 'power', 'efficiency'] },
+    ]},
+    { name: 'AS Waves and Electricity', sections: [
+      { id: 'AS6', name: 'Deformation of solids', keywords: ['stress', 'strain', 'young modulus', 'elastic', 'plastic', 'hooke'] },
+      { id: 'AS7', name: 'Waves', keywords: ['wave', 'progressive', 'transverse', 'longitudinal', 'doppler', 'intensity'] },
+      { id: 'AS8', name: 'Superposition', keywords: ['superposition', 'interference', 'diffraction', 'stationary wave'] },
+      { id: 'AS9', name: 'Current electricity', keywords: ['current', 'pd', 'resistance', 'resistivity', 'emf', 'internal resistance'] },
+      { id: 'AS10', name: 'DC circuits', keywords: ['kirchhoff', 'potential divider', 'potentiometer', 'series', 'parallel'] },
+      { id: 'AS11', name: 'Particle physics', keywords: ['particle', 'quark', 'lepton', 'baryon', 'meson', 'antimatter'] },
+    ]},
+    { name: 'A2 Fields', sections: [
+      { id: 'A2.1', name: 'Motion in a circle', keywords: ['circular', 'centripetal', 'angular velocity', 'radian'] },
+      { id: 'A2.2', name: 'Gravitational fields', keywords: ['gravitational', 'field strength', 'potential', 'orbit', 'satellite'] },
+      { id: 'A2.3', name: 'Temperature', keywords: ['temperature', 'thermal equilibrium', 'thermometer', 'celsius', 'kelvin'] },
+      { id: 'A2.4', name: 'Ideal gases', keywords: ['ideal gas', 'kinetic theory', 'pressure', 'boltzmann', 'rms'] },
+      { id: 'A2.5', name: 'Thermodynamics', keywords: ['first law', 'internal energy', 'specific heat', 'specific latent'] },
+      { id: 'A2.6', name: 'Oscillations', keywords: ['oscillation', 'shm', 'simple harmonic', 'damping', 'resonance'] },
+    ]},
+    { name: 'A2 Electromagnetism and Nuclear', sections: [
+      { id: 'A2.7', name: 'Electric fields', keywords: ['electric field', 'coulomb', 'field strength', 'potential', 'capacitance'] },
+      { id: 'A2.8', name: 'Capacitance', keywords: ['capacitor', 'charge', 'discharge', 'time constant', 'energy stored'] },
+      { id: 'A2.9', name: 'Magnetic fields', keywords: ['magnetic', 'flux', 'flux density', 'force on conductor', 'hall effect'] },
+      { id: 'A2.10', name: 'Alternating currents', keywords: ['ac', 'alternating', 'rms', 'transformer', 'rectification'] },
+      { id: 'A2.11', name: 'Quantum physics', keywords: ['photon', 'photoelectric', 'wave-particle', 'de broglie', 'energy level'] },
+      { id: 'A2.12', name: 'Nuclear physics', keywords: ['nuclear', 'radioactive', 'decay', 'mass defect', 'binding energy', 'fission', 'fusion'] },
+      { id: 'A2.13', name: 'Medical physics', keywords: ['x-ray', 'ultrasound', 'pet', 'mri', 'diagnostic'] },
+      { id: 'A2.14', name: 'Astronomy and cosmology', keywords: ['star', 'hertzsprung-russell', 'hubble', 'redshift', 'big bang'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // A LEVEL MATHEMATICS 9709
+  // ════════════════════════════════════════════════════════════
+  'A Level Mathematics': { code: '9709', level: 'A Level', themes: [
+    { name: 'Pure Mathematics 1', sections: [
+      { id: 'P1.1', name: 'Quadratics', keywords: ['quadratic', 'completing the square', 'discriminant', 'roots'] },
+      { id: 'P1.2', name: 'Functions', keywords: ['function', 'domain', 'range', 'composite', 'inverse'] },
+      { id: 'P1.3', name: 'Coordinate geometry', keywords: ['coordinate', 'straight line', 'circle', 'intersection'] },
+      { id: 'P1.4', name: 'Circular measure', keywords: ['radian', 'arc length', 'sector area', 'circular'] },
+      { id: 'P1.5', name: 'Trigonometry', keywords: ['trigonometry', 'identity', 'equation', 'amplitude', 'period'] },
+      { id: 'P1.6', name: 'Series', keywords: ['binomial', 'arithmetic', 'geometric', 'series', 'sequence', 'sum to infinity'] },
+      { id: 'P1.7', name: 'Differentiation', keywords: ['differentiation', 'gradient', 'tangent', 'normal', 'stationary', 'chain rule'] },
+      { id: 'P1.8', name: 'Integration', keywords: ['integration', 'definite', 'indefinite', 'area', 'volume of revolution'] },
+    ]},
+    { name: 'Pure Mathematics 2 & 3', sections: [
+      { id: 'P2.1', name: 'Algebra', keywords: ['modulus', 'polynomial', 'partial fraction', 'binomial expansion'] },
+      { id: 'P2.2', name: 'Logarithmic and exponential functions', keywords: ['logarithm', 'exponential', 'ln', 'natural log'] },
+      { id: 'P2.3', name: 'Trigonometry', keywords: ['sec', 'cosec', 'cot', 'harmonic form', 'double angle', 'factor formulae'] },
+      { id: 'P2.4', name: 'Further differentiation', keywords: ['implicit', 'parametric', 'product rule', 'quotient rule'] },
+      { id: 'P2.5', name: 'Further integration', keywords: ['integration by parts', 'substitution', 'trapezium rule'] },
+      { id: 'P2.6', name: 'Differential equations', keywords: ['differential equation', 'separable', 'general solution', 'particular'] },
+      { id: 'P2.7', name: 'Numerical solutions', keywords: ['iteration', 'sign change', 'newton-raphson'] },
+      { id: 'P2.8', name: 'Vectors', keywords: ['vector', 'scalar product', 'line', 'plane', 'intersection'] },
+      { id: 'P2.9', name: 'Complex numbers', keywords: ['complex', 'argand', 'modulus', 'argument', 'loci'] },
+    ]},
+    { name: 'Mechanics', sections: [
+      { id: 'M1', name: 'Forces and equilibrium', keywords: ['force', 'equilibrium', 'friction', 'inclined plane', 'resolve'] },
+      { id: 'M2', name: 'Kinematics of motion in a straight line', keywords: ['suvat', 'displacement', 'velocity', 'acceleration', 'motion'] },
+      { id: 'M3', name: "Newton's laws of motion", keywords: ['newton', 'connected particles', 'pulley', 'lift'] },
+      { id: 'M4', name: 'Energy, work and power', keywords: ['work', 'energy', 'power', 'conservation'] },
+    ]},
+    { name: 'Probability & Statistics', sections: [
+      { id: 'S1.1', name: 'Representation of data', keywords: ['histogram', 'cumulative frequency', 'box plot', 'stem and leaf'] },
+      { id: 'S1.2', name: 'Permutations and combinations', keywords: ['permutation', 'combination', 'factorial', 'arrangement'] },
+      { id: 'S1.3', name: 'Probability', keywords: ['probability', 'conditional', 'independent', 'mutually exclusive', 'tree diagram'] },
+      { id: 'S1.4', name: 'Discrete random variables', keywords: ['discrete', 'expectation', 'variance', 'probability distribution'] },
+      { id: 'S1.5', name: 'Normal distribution', keywords: ['normal', 'standard normal', 'z-score', 'probability tables'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // A LEVEL BIOLOGY 9700
+  // ════════════════════════════════════════════════════════════
+  'A Level Biology': { code: '9700', level: 'A Level', themes: [
+    { name: 'AS Biology', sections: [
+      { id: 'AS1', name: 'Cell structure', keywords: ['cell', 'organelle', 'microscope', 'eukaryote', 'prokaryote'] },
+      { id: 'AS2', name: 'Biological molecules', keywords: ['carbohydrate', 'lipid', 'protein', 'enzyme', 'water'] },
+      { id: 'AS3', name: 'Enzymes', keywords: ['enzyme', 'active site', 'inhibitor', 'vmax', 'km'] },
+      { id: 'AS4', name: 'Cell membranes and transport', keywords: ['membrane', 'fluid mosaic', 'osmosis', 'diffusion', 'active transport'] },
+      { id: 'AS5', name: 'The mitotic cell cycle', keywords: ['mitosis', 'cell cycle', 'chromosome', 'division', 'cytokinesis'] },
+      { id: 'AS6', name: 'Nucleic acids and protein synthesis', keywords: ['dna', 'rna', 'transcription', 'translation', 'codon', 'mutation'] },
+      { id: 'AS7', name: 'Transport in plants', keywords: ['xylem', 'phloem', 'transpiration', 'translocation', 'root pressure'] },
+      { id: 'AS8', name: 'Transport in mammals', keywords: ['heart', 'blood', 'haemoglobin', 'circulation', 'artery', 'vein'] },
+      { id: 'AS9', name: 'Gas exchange and smoking', keywords: ['lung', 'alveolus', 'gas exchange', 'ventilation', 'smoking'] },
+      { id: 'AS10', name: 'Infectious disease', keywords: ['pathogen', 'immune', 'antibody', 'vaccination', 'hiv'] },
+      { id: 'AS11', name: 'Immunity', keywords: ['immunity', 'b cell', 't cell', 'antigen', 'antibody', 'active', 'passive'] },
+    ]},
+    { name: 'A2 Biology', sections: [
+      { id: 'A2.1', name: 'Energy and respiration', keywords: ['respiration', 'atp', 'glycolysis', 'krebs', 'oxidative phosphorylation'] },
+      { id: 'A2.2', name: 'Photosynthesis', keywords: ['photosynthesis', 'light dependent', 'calvin cycle', 'rubisco', 'limiting factor'] },
+      { id: 'A2.3', name: 'Homeostasis', keywords: ['homeostasis', 'negative feedback', 'blood glucose', 'insulin', 'kidney', 'nephron'] },
+      { id: 'A2.4', name: 'Coordination', keywords: ['nervous', 'synapse', 'action potential', 'hormone', 'endocrine'] },
+      { id: 'A2.5', name: 'Inherited change', keywords: ['meiosis', 'crossing over', 'independent assortment', 'genetic diagram', 'chi-squared'] },
+      { id: 'A2.6', name: 'Selection and evolution', keywords: ['natural selection', 'speciation', 'evolution', 'hardy-weinberg', 'genetic drift'] },
+      { id: 'A2.7', name: 'Biodiversity, classification and conservation', keywords: ['biodiversity', 'taxonomy', 'conservation', 'endangered', 'ecosystem'] },
+      { id: 'A2.8', name: 'Genetic technology', keywords: ['gene technology', 'pcr', 'gel electrophoresis', 'genetic engineering', 'gmo', 'cloning'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // A LEVEL ECONOMICS 9708
+  // ════════════════════════════════════════════════════════════
+  'A Level Economics': { code: '9708', level: 'A Level', themes: [
+    { name: 'AS Microeconomics', sections: [
+      { id: 'AS1', name: 'Basic economic ideas', keywords: ['scarcity', 'opportunity cost', 'ppf', 'economic system'] },
+      { id: 'AS2', name: 'The price system and the microeconomy', keywords: ['demand', 'supply', 'elasticity', 'market equilibrium', 'consumer surplus'] },
+      { id: 'AS3', name: 'Government microeconomic intervention', keywords: ['maximum price', 'minimum price', 'tax', 'subsidy', 'market failure', 'externality'] },
+    ]},
+    { name: 'AS Macroeconomics', sections: [
+      { id: 'AS4', name: 'The macroeconomy', keywords: ['gdp', 'aggregate demand', 'aggregate supply', 'national income', 'circular flow'] },
+      { id: 'AS5', name: 'Government macroeconomic intervention', keywords: ['fiscal', 'monetary', 'supply-side', 'inflation', 'unemployment', 'trade'] },
+    ]},
+    { name: 'A2 Microeconomics', sections: [
+      { id: 'A2.1', name: 'Theory of the firm', keywords: ['cost', 'revenue', 'profit', 'perfect competition', 'monopoly', 'oligopoly', 'monopolistic'] },
+      { id: 'A2.2', name: 'Labour market', keywords: ['labour', 'wage', 'marginal revenue product', 'trade union', 'monopsony'] },
+    ]},
+    { name: 'A2 Macroeconomics', sections: [
+      { id: 'A2.3', name: 'Economic growth and sustainability', keywords: ['economic growth', 'sustainable', 'hdi', 'inequality', 'poverty'] },
+      { id: 'A2.4', name: 'International trade', keywords: ['comparative advantage', 'protectionism', 'wto', 'trading bloc', 'exchange rate', 'balance of payments'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // A LEVEL BUSINESS 9609
+  // ════════════════════════════════════════════════════════════
+  'A Level Business': { code: '9609', level: 'A Level', themes: [
+    { name: 'AS Business', sections: [
+      { id: 'AS1', name: 'Business and its environment', keywords: ['enterprise', 'stakeholder', 'business structure', 'size', 'objective'] },
+      { id: 'AS2', name: 'People in organisations', keywords: ['motivation', 'leadership', 'management', 'recruitment', 'training'] },
+      { id: 'AS3', name: 'Marketing', keywords: ['marketing', 'market research', 'segmentation', 'marketing mix', 'elasticity'] },
+      { id: 'AS4', name: 'Operations and project management', keywords: ['operations', 'capacity', 'inventory', 'quality', 'lean'] },
+      { id: 'AS5', name: 'Finance and accounting', keywords: ['finance', 'cash flow', 'budgeting', 'cost', 'break-even', 'investment appraisal'] },
+    ]},
+    { name: 'A2 Business', sections: [
+      { id: 'A2.1', name: 'Strategic management', keywords: ['strategic', 'swot', 'pestle', 'ansoff', 'porter', 'corporate strategy'] },
+      { id: 'A2.2', name: 'Business finance', keywords: ['ratio analysis', 'profitability', 'liquidity', 'gearing', 'efficiency'] },
+      { id: 'A2.3', name: 'Global business', keywords: ['globalisation', 'multinational', 'emerging market', 'cultural difference'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // A LEVEL COMPUTER SCIENCE 9618
+  // ════════════════════════════════════════════════════════════
+  'A Level Computer Science': { code: '9618', level: 'A Level', themes: [
+    { name: 'AS Computer Science', sections: [
+      { id: 'AS1', name: 'Information representation', keywords: ['binary', 'hexadecimal', 'two complement', 'bcd', 'ascii', 'unicode'] },
+      { id: 'AS2', name: 'Communication', keywords: ['network', 'protocol', 'tcp/ip', 'packet switching', 'circuit switching'] },
+      { id: 'AS3', name: 'Hardware', keywords: ['processor', 'fetch-execute', 'cache', 'virtual memory', 'secondary storage'] },
+      { id: 'AS4', name: 'Processor fundamentals', keywords: ['cpu', 'register', 'bus', 'instruction set', 'assembly'] },
+      { id: 'AS5', name: 'System software', keywords: ['operating system', 'scheduling', 'memory management', 'interrupt'] },
+      { id: 'AS6', name: 'Security, privacy and data integrity', keywords: ['encryption', 'firewall', 'malware', 'phishing', 'authentication'] },
+      { id: 'AS7', name: 'Ethics and ownership', keywords: ['ethics', 'copyright', 'software licensing', 'ai ethics'] },
+      { id: 'AS8', name: 'Algorithm design and problem-solving', keywords: ['algorithm', 'pseudocode', 'flowchart', 'trace table', 'abstraction'] },
+      { id: 'AS9', name: 'Data types and structures', keywords: ['data type', 'array', 'record', 'linked list', 'stack', 'queue'] },
+      { id: 'AS10', name: 'Programming and data representation', keywords: ['programming', 'oop', 'file handling', 'exception'] },
+    ]},
+    { name: 'A2 Computer Science', sections: [
+      { id: 'A2.1', name: 'Data representation', keywords: ['floating point', 'normalisation', 'image', 'sound', 'compression'] },
+      { id: 'A2.2', name: 'Communication and internet technologies', keywords: ['ip addressing', 'dns', 'web', 'client-server', 'cloud'] },
+      { id: 'A2.3', name: 'Hardware and virtual machines', keywords: ['risc', 'cisc', 'pipelining', 'virtual machine', 'parallel'] },
+      { id: 'A2.4', name: 'Security', keywords: ['ssl', 'digital certificate', 'quantum encryption'] },
+      { id: 'A2.5', name: 'Artificial intelligence', keywords: ['artificial intelligence', 'machine learning', 'neural network', 'expert system'] },
+      { id: 'A2.6', name: 'Computational thinking and problem-solving', keywords: ['big-o', 'recursion', 'divide and conquer', 'backtracking'] },
+      { id: 'A2.7', name: 'Further programming', keywords: ['oop', 'inheritance', 'polymorphism', 'encapsulation', 'design pattern'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // A LEVEL PSYCHOLOGY 9990
+  // ════════════════════════════════════════════════════════════
+  'A Level Psychology': { code: '9990', level: 'A Level', themes: [
+    { name: 'AS Psychology', sections: [
+      { id: 'AS1', name: 'Research methods', keywords: ['experiment', 'observation', 'self-report', 'case study', 'ethics', 'sampling'] },
+      { id: 'AS2', name: 'The biological approach', keywords: ['biological', 'brain', 'neurotransmitter', 'genetics', 'evolution'] },
+      { id: 'AS3', name: 'The cognitive approach', keywords: ['cognitive', 'memory', 'perception', 'thinking', 'attention'] },
+      { id: 'AS4', name: 'The learning approach', keywords: ['learning', 'classical conditioning', 'operant conditioning', 'social learning', 'behaviourism'] },
+      { id: 'AS5', name: 'The social approach', keywords: ['social', 'obedience', 'conformity', 'group', 'prejudice'] },
+    ]},
+    { name: 'A2 Psychology', sections: [
+      { id: 'A2.1', name: 'Psychology and abnormality', keywords: ['abnormality', 'diagnosis', 'treatment', 'schizophrenia', 'depression', 'anxiety'] },
+      { id: 'A2.2', name: 'Psychology and consumer behaviour', keywords: ['consumer', 'advertising', 'persuasion', 'brand'] },
+      { id: 'A2.3', name: 'Psychology and health', keywords: ['health', 'stress', 'adherence', 'pain', 'substance abuse'] },
+      { id: 'A2.4', name: 'Psychology and organisations', keywords: ['organisation', 'motivation', 'leadership', 'satisfaction', 'group dynamics'] },
+    ]},
+  ]},
+
+  // ════════════════════════════════════════════════════════════
+  // A LEVEL ACCOUNTING 9706
+  // ════════════════════════════════════════════════════════════
+  'A Level Accounting': { code: '9706', level: 'A Level', themes: [
+    { name: 'AS Accounting', sections: [
+      { id: 'AS1', name: 'Financial accounting fundamentals', keywords: ['double entry', 'trial balance', 'accounting equation', 'books of prime entry'] },
+      { id: 'AS2', name: 'Financial statements of sole traders', keywords: ['income statement', 'balance sheet', 'capital', 'drawings'] },
+      { id: 'AS3', name: 'Adjustments to financial statements', keywords: ['depreciation', 'accrual', 'prepayment', 'bad debt', 'provision'] },
+      { id: 'AS4', name: 'Bank reconciliation and control accounts', keywords: ['bank reconciliation', 'control account', 'sales ledger', 'purchase ledger'] },
+      { id: 'AS5', name: 'Correction of errors and suspense accounts', keywords: ['correction', 'error', 'suspense', 'journal'] },
+      { id: 'AS6', name: 'Incomplete records', keywords: ['incomplete', 'margin', 'mark-up', 'statement of affairs'] },
+      { id: 'AS7', name: 'Partnership accounts', keywords: ['partnership', 'appropriation', 'capital account', 'current account', 'goodwill'] },
+      { id: 'AS8', name: 'Manufacturing accounts', keywords: ['manufacturing', 'prime cost', 'factory overhead', 'production cost'] },
+    ]},
+    { name: 'A2 Accounting', sections: [
+      { id: 'A2.1', name: 'Limited company accounts', keywords: ['company', 'share', 'debenture', 'retained earnings', 'dividend'] },
+      { id: 'A2.2', name: 'Analysis and interpretation', keywords: ['ratio', 'profitability', 'liquidity', 'efficiency', 'investor', 'gearing'] },
+      { id: 'A2.3', name: 'Statements of cash flows', keywords: ['cash flow', 'operating', 'investing', 'financing', 'ias 7'] },
+      { id: 'A2.4', name: 'Budgeting and budgetary control', keywords: ['budget', 'variance', 'flexible budget', 'variance analysis'] },
+      { id: 'A2.5', name: 'Marginal and absorption costing', keywords: ['marginal', 'absorption', 'contribution', 'break-even', 'make or buy'] },
+      { id: 'A2.6', name: 'Investment appraisal', keywords: ['investment', 'npv', 'irr', 'payback', 'arr', 'discounting'] },
+    ]},
+  ]},
 };
 
 export function getStudyModules(subject) {
