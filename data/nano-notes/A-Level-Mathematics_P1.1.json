@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Mathematics",
+  "subject_code": "9709",
+  "level": "A Level",
+  "theme": "Pure Mathematics 1",
+  "chapter_id": "P1.1",
+  "chapter_name": "Quadratics",
+  "note_data": {
+    "title": "Quadratics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **quadratic equation** has the general form ax² + bx + c = 0 where a ≠ 0",
+      "The **discriminant** Δ = b² - 4ac determines the nature of roots: Δ > 0 (two real distinct roots), Δ = 0 (two equal real roots), Δ < 0 (no real roots)",
+      "**Completing the square** transforms ax² + bx + c into a(x + p)² + q form where p = b/(2a) and q = c - b²/(4a)",
+      "The **quadratic formula** x = (-b ± √(b² - 4ac))/(2a) gives exact roots when factoring is not possible",
+      "**Factorization** requires finding two numbers that multiply to give 'ac' and add to give 'b'",
+      "The **sum of roots** α + β = -b/a and **product of roots** αβ = c/a for equation ax² + bx + c = 0",
+      "The **axis of symmetry** of parabola y = ax² + bx + c is x = -b/(2a)",
+      "**Maximum or minimum value** occurs at x = -b/(2a); minimum when a > 0, maximum when a < 0",
+      "A quadratic function can be written as **y = a(x - h)² + k** where (h, k) is the vertex"
+    ],
+    "definitions": [
+      {
+        "term": "Discriminant",
+        "definition": "The expression b² - 4ac which determines the nature and number of real roots of the quadratic equation ax² + bx + c = 0"
+      },
+      {
+        "term": "Completing the square",
+        "definition": "The process of rewriting a quadratic expression ax² + bx + c in the form a(x + p)² + q"
+      },
+      {
+        "term": "Roots of quadratic",
+        "definition": "The values of x for which the quadratic equation ax² + bx + c = 0 is satisfied"
+      },
+      {
+        "term": "Vertex",
+        "definition": "The turning point of a parabola, located at (-b/(2a), f(-b/(2a)))"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the discriminant value or nature of roots directly without working"
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Show complete method including substitution and simplification"
+      },
+      {
+        "commandWord": "Hence",
+        "instruction": "Use the previous result directly in your next step"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Start with LHS and manipulate to reach RHS, or start with given result and verify"
+      }
+    ],
+    "modelAnswer": {
+      "question": "The equation 2x² - 8x + k = 0 has equal roots. Find the value of k.",
+      "marks": 3,
+      "answer": "For equal roots, discriminant = 0\nb² - 4ac = 0\n(-8)² - 4(2)(k) = 0\n64 - 8k = 0\n8k = 64\nk = 8",
+      "markBreakdown": [
+        "Mark 1: States discriminant = 0 for equal roots",
+        "Mark 2: Correctly substitutes into b² - 4ac = 0",
+        "Mark 3: Solves correctly to get k = 8"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'no solutions' for negative discriminant — always say 'no real roots'",
+      "Students often forget the ± symbol when using the quadratic formula",
+      "Writing (x + p)² instead of (x - p)² when completing the square with vertex form",
+      "Confusing sum and product of roots formulas: sum is -b/a, not b/a",
+      "Not checking that a ≠ 0 when identifying quadratic equations"
+    ],
+    "examinerTips": [
+      "Always check your discriminant calculation as this appears in most quadratic questions",
+      "When completing the square, show each step clearly for method marks",
+      "Quadratic inequalities often follow quadratic equations in Paper 1",
+      "Remember to give exact answers unless told to round"
+    ],
+    "formulas": [
+      "x = (-b ± √(b² - 4ac))/(2a)",
+      "Discriminant Δ = b² - 4ac",
+      "Sum of roots = -b/a",
+      "Product of roots = c/a",
+      "Vertex form: y = a(x - h)² + k"
+    ],
+    "keyDiagramDescription": "Parabola showing vertex at (-b/(2a), minimum/maximum value), axis of symmetry as vertical line x = -b/(2a), and x-intercepts as roots of the quadratic equation"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:47:57.121Z",
+  "updated_at": "2026-04-06T04:47:57.123Z"
+}

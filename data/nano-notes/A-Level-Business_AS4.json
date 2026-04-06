@@ -1,0 +1,100 @@
+{
+  "subject": "A Level Business",
+  "subject_code": "9609",
+  "level": "A Level",
+  "theme": "AS Business",
+  "chapter_id": "AS4",
+  "chapter_name": "Operations and project management",
+  "note_data": {
+    "title": "Operations and project management",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Operations management** involves planning, organizing and controlling the production process to transform inputs into outputs efficiently",
+      "**Capacity utilization** = (current output ÷ maximum possible output) × 100 - measures how much of maximum capacity is being used",
+      "**Inventory management** balances holding costs against stockout costs using techniques like Just-in-Time (JIT) and Economic Order Quantity (EOQ)",
+      "**Quality control** involves checking finished products for defects, while **quality assurance** prevents defects through systematic processes",
+      "**Lean production** eliminates waste (muda) through techniques including JIT, Kaizen, and Total Quality Management (TQM)",
+      "**Project management** uses tools like Gantt charts and Critical Path Analysis (CPA) to plan, monitor and control one-off activities",
+      "**Capacity strategies** include capacity leading demand (anticipates growth), capacity lagging demand (reactive), or capacity matching demand",
+      "**Buffer inventory** provides safety stock to prevent stockouts, while **pipeline inventory** covers goods in transit",
+      "**Continuous improvement (Kaizen)** involves small, incremental changes made by employees to improve efficiency and quality"
+    ],
+    "definitions": [
+      {
+        "term": "Operations management",
+        "definition": "The planning, organizing and controlling of the production process to convert inputs into outputs as efficiently as possible"
+      },
+      {
+        "term": "Capacity utilization",
+        "definition": "The percentage of maximum possible output that is actually being achieved by a business"
+      },
+      {
+        "term": "Lean production",
+        "definition": "A production methodology that focuses on minimizing waste while maintaining productivity and quality"
+      },
+      {
+        "term": "Just-in-Time (JIT)",
+        "definition": "A production strategy where materials and components arrive exactly when needed in the production process"
+      },
+      {
+        "term": "Critical Path Analysis",
+        "definition": "A project management technique that identifies the longest sequence of dependent activities and calculates the minimum time needed to complete a project"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyze",
+        "instruction": "Break down the operations issue, examine causes/effects, and evaluate different aspects"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Weigh up advantages and disadvantages of operations strategies, then reach a justified conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two benefits of lean production for a Pakistani textile manufacturer. [6 marks]",
+      "marks": 6,
+      "answer": "One benefit is reduced inventory costs because JIT means the manufacturer only orders cotton and dyes when needed for production, eliminating storage costs and reducing waste from damaged materials. Another benefit is improved quality because continuous improvement (Kaizen) means workers regularly suggest small improvements to production processes, leading to fewer defective garments and higher customer satisfaction.",
+      "markBreakdown": [
+        "Mark 1: Identifies reduced inventory costs",
+        "Mark 2: Explains JIT reduces storage and waste costs",
+        "Mark 3: Links to textile context",
+        "Mark 4: Identifies improved quality",
+        "Mark 5: Explains Kaizen process",
+        "Mark 6: Links to customer satisfaction outcome"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse quality control (checking finished products) with quality assurance (preventing defects in the process)",
+      "Students often say JIT 'has no inventory' - it minimizes inventory but some buffer stock may still be needed",
+      "Don't confuse capacity with capacity utilization - capacity is maximum output, utilization is percentage actually achieved",
+      "Avoid saying lean production 'reduces costs' without explaining which specific costs (inventory, waste, quality)",
+      "Never describe Kaizen as 'big changes' - it specifically refers to small, continuous improvements"
+    ],
+    "examinerTips": [
+      "Operations questions appear in every Paper 2 - often worth 8-12 marks total",
+      "Always use calculations for capacity utilization questions - show your working for method marks",
+      "Draw network diagrams for CPA questions and clearly identify the critical path",
+      "Use business context when explaining operations concepts - relate to the business in the case study"
+    ],
+    "formulas": [
+      "Capacity utilization = (Current output ÷ Maximum output) × 100",
+      "Economic Order Quantity = √(2 × Annual demand × Order cost ÷ Holding cost per unit)"
+    ],
+    "keyDiagramDescription": "Network diagram showing activities, durations, earliest start times (EST) and latest finish times (LFT) with critical path highlighted - essential for CPA questions"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:12:10.419Z",
+  "updated_at": "2026-04-06T05:12:10.419Z"
+}

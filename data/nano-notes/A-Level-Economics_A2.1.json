@@ -1,0 +1,103 @@
+{
+  "subject": "A Level Economics",
+  "subject_code": "9708",
+  "level": "A Level",
+  "theme": "A2 Microeconomics",
+  "chapter_id": "A2.1",
+  "chapter_name": "Theory of the firm",
+  "note_data": {
+    "title": "Theory of the firm",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Short run** is the time period where at least one factor of production is fixed (usually capital), while **long run** is when all factors are variable",
+      "**Profit maximisation** occurs where marginal cost (MC) equals marginal revenue (MR), as any other output level would reduce total profit",
+      "In **perfect competition**, firms are price takers facing a perfectly elastic demand curve at the market price",
+      "A **monopolist** is a price maker who can set price above marginal cost, creating deadweight loss and allocative inefficiency",
+      "**Oligopoly** features few large firms with interdependent pricing decisions, often leading to non-price competition and kinked demand curves",
+      "**Monopolistic competition** combines many firms with differentiated products, allowing some price-making power in the short run",
+      "**Economic profit** is total revenue minus total costs (including opportunity costs), while **normal profit** occurs when economic profit is zero",
+      "**Barriers to entry** prevent new firms entering a market, maintaining supernormal profits for existing firms in the long run",
+      "**Price discrimination** allows firms to charge different prices for the same product to different consumers, increasing producer surplus"
+    ],
+    "definitions": [
+      {
+        "term": "Marginal cost",
+        "definition": "The additional cost of producing one more unit of output"
+      },
+      {
+        "term": "Marginal revenue",
+        "definition": "The additional revenue gained from selling one more unit of output"
+      },
+      {
+        "term": "Perfect competition",
+        "definition": "A market structure with many buyers and sellers, homogeneous products, perfect information, and freedom of entry and exit"
+      },
+      {
+        "term": "Monopoly",
+        "definition": "A market structure where there is only one seller of a product with no close substitutes and high barriers to entry"
+      },
+      {
+        "term": "Supernormal profit",
+        "definition": "Profit above the normal profit required to keep factors of production in their current use"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the cause and effect relationship with detailed explanation"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Consider both advantages and disadvantages, then reach a supported judgment"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why a profit-maximising firm will produce where marginal cost equals marginal revenue. [6 marks]",
+      "marks": 6,
+      "answer": "A profit-maximising firm produces where MC = MR because this is the output level that generates maximum total profit. If MC < MR, the firm should increase output because the additional revenue from selling one more unit exceeds the additional cost of producing it, thus adding to total profit. If MC > MR, the firm should reduce output because the cost of producing the last unit exceeds the revenue it generates, reducing total profit. Only at MC = MR is profit maximised, as any deviation from this point would reduce total profit. At this equilibrium, the firm cannot increase profit by changing output levels. This principle applies to all profit-maximising firms regardless of market structure.",
+      "markBreakdown": [
+        "Mark 1: MC = MR maximises profit",
+        "Mark 2: If MC < MR, increase output for more profit",
+        "Mark 3: If MC > MR, reduce output to avoid losses",
+        "Mark 4: Only at MC = MR is profit maximised",
+        "Mark 5: No incentive to change output at equilibrium",
+        "Mark 6: Applies to all market structures"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse normal profit with supernormal profit — normal profit is the minimum required to stay in business",
+      "Students often forget that in perfect competition, firms are price takers, not price makers",
+      "Don't say monopolists always make profit — they can make losses if average cost exceeds price",
+      "Never confuse short run and long run — it's about factor fixity, not time periods",
+      "Students incorrectly think all oligopolies collude — many compete vigorously through non-price competition"
+    ],
+    "examinerTips": [
+      "Market structure questions appear in almost every Paper 2 exam",
+      "Always draw labelled cost and revenue diagrams for analysis questions",
+      "Use Pakistani examples: PSO for monopoly, banking sector for oligopoly",
+      "Remember to distinguish between economic and accounting profit",
+      "Efficiency analysis always scores well — mention allocative and productive efficiency"
+    ],
+    "formulas": [
+      "Profit = Total Revenue - Total Cost",
+      "MR = Change in TR / Change in Q",
+      "MC = Change in TC / Change in Q",
+      "AR = TR / Q = Price"
+    ],
+    "keyDiagramDescription": "Cost and revenue diagram showing MC, MR, AC, and AR curves with profit-maximising output at MC = MR intersection, plus shaded areas for profit/loss"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:09:21.486Z",
+  "updated_at": "2026-04-06T05:09:21.486Z"
+}

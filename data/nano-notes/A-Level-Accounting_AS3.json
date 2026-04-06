@@ -1,0 +1,95 @@
+{
+  "subject": "A Level Accounting",
+  "subject_code": "9706",
+  "level": "A Level",
+  "theme": "AS Accounting",
+  "chapter_id": "AS3",
+  "chapter_name": "Adjustments to financial statements",
+  "note_data": {
+    "title": "Adjustments to financial statements",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Depreciation** is the allocation of the cost of a non-current asset over its useful life",
+      "**Straight-line method** allocates equal amounts of depreciation each year: (Cost - Residual value) ÷ Useful life",
+      "**Reducing balance method** applies a fixed percentage to the carrying amount each year",
+      "**Accruals** are expenses incurred but not yet paid, recorded as current liabilities in the statement of financial position",
+      "**Prepayments** are expenses paid in advance, recorded as current assets in the statement of financial position",
+      "**Bad debts** are amounts owed by customers that are definitely uncollectable and must be written off",
+      "**Provision for doubtful debts** is an estimate of receivables that may become uncollectable in the future",
+      "All adjustments follow the **matching principle** - expenses must be matched with revenues in the period they relate to",
+      "**Carrying amount** equals cost less accumulated depreciation at the end of the accounting period"
+    ],
+    "definitions": [
+      {
+        "term": "Depreciation",
+        "definition": "The allocation of the cost of a non-current asset over its useful life to match the expense with the revenue it helps to generate"
+      },
+      {
+        "term": "Accrual",
+        "definition": "An expense that has been incurred during the accounting period but has not yet been paid"
+      },
+      {
+        "term": "Prepayment",
+        "definition": "An expense that has been paid during the accounting period but relates to a future period"
+      },
+      {
+        "term": "Bad debt",
+        "definition": "An amount owed by a customer that is definitely uncollectable and must be written off as an expense"
+      },
+      {
+        "term": "Provision for doubtful debts",
+        "definition": "An estimate of the amount of receivables that may become uncollectable in the future"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working clearly. Apply the correct formula and state the final answer."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'. Reference the matching principle."
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Use correct format with debit and credit columns. Include all necessary adjustments."
+      }
+    ],
+    "modelAnswer": {
+      "question": "A business purchased machinery for Rs 50,000 on 1 January 2023. The useful life is 5 years with a residual value of Rs 5,000. Calculate the annual depreciation charge using the straight-line method and explain why depreciation is charged.",
+      "marks": 4,
+      "answer": "Annual depreciation = (Rs 50,000 - Rs 5,000) ÷ 5 years = Rs 9,000 per year. Depreciation is charged because it follows the matching principle, ensuring that the cost of the asset is allocated over the periods in which it generates revenue. This provides a more accurate measurement of profit for each accounting period.",
+      "markBreakdown": [
+        "Mark 1: Correct formula applied",
+        "Mark 2: Correct calculation Rs 9,000",
+        "Mark 3: Reference to matching principle",
+        "Mark 4: Explanation of accurate profit measurement"
+      ]
+    },
+    "commonMistakes": [
+      "Never say depreciation is 'loss of value' — always say 'allocation of cost over useful life'",
+      "Students often forget to deduct residual value in straight-line depreciation calculations",
+      "Writing accruals as assets instead of liabilities in the statement of financial position",
+      "Confusing bad debts (definite) with provision for doubtful debts (estimated)",
+      "Forgetting to show the adjustment in both the income statement and statement of financial position"
+    ],
+    "examinerTips": [
+      "Adjustments appear in every Paper 2 financial statements question",
+      "Always show your depreciation calculation workings for method marks",
+      "Remember to update both statements when making adjustments",
+      "Use T-accounts to track the double entry for complex adjustments"
+    ],
+    "formulas": [
+      "Straight-line depreciation = (Cost - Residual value) ÷ Useful life",
+      "Reducing balance depreciation = Carrying amount × Depreciation rate%",
+      "Carrying amount = Cost - Accumulated depreciation"
+    ],
+    "keyDiagramDescription": "T-account showing the double entry for depreciation: Debit Depreciation expense (Income Statement), Credit Accumulated depreciation (Statement of Financial Position)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:24:46.662Z",
+  "updated_at": "2026-04-06T05:24:46.662Z"
+}

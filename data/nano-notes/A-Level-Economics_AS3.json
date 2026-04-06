@@ -1,0 +1,102 @@
+{
+  "subject": "A Level Economics",
+  "subject_code": "9708",
+  "level": "A Level",
+  "theme": "AS Microeconomics",
+  "chapter_id": "AS3",
+  "chapter_name": "Government microeconomic intervention",
+  "note_data": {
+    "title": "Government microeconomic intervention",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Maximum prices** are set below market equilibrium to make goods more affordable, creating excess demand and shortages",
+      "**Minimum prices** are set above market equilibrium to protect producers, creating excess supply and surpluses",
+      "**Indirect taxes** shift supply curve leftward, increasing market price and reducing quantity traded",
+      "**Subsidies** shift supply curve rightward, decreasing market price and increasing quantity traded",
+      "**Market failure** occurs when free market allocation of resources is inefficient, requiring government intervention",
+      "**Negative externalities** arise when third parties suffer costs not reflected in market price, leading to overproduction",
+      "**Positive externalities** occur when third parties receive benefits not reflected in market price, leading to underproduction",
+      "**Deadweight loss** represents the welfare loss to society from government intervention or market failure",
+      "Government intervention aims to correct market failures but may create new inefficiencies"
+    ],
+    "definitions": [
+      {
+        "term": "Maximum price",
+        "definition": "A price ceiling set by government below the free market equilibrium price to make goods more affordable for consumers"
+      },
+      {
+        "term": "Minimum price",
+        "definition": "A price floor set by government above the free market equilibrium price to ensure producers receive a minimum income"
+      },
+      {
+        "term": "Market failure",
+        "definition": "When the free market mechanism fails to achieve an efficient allocation of resources, either through complete market failure or partial market failure"
+      },
+      {
+        "term": "Negative externality",
+        "definition": "A cost imposed on a third party who is not involved in the production or consumption decision, leading to social cost exceeding private cost"
+      },
+      {
+        "term": "Subsidy",
+        "definition": "A payment made by government to producers to encourage production and consumption of a particular good or service"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down into component parts and examine relationships. Use chains of reasoning."
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Make judgements weighing up advantages and disadvantages with a conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why a government might impose a maximum price on wheat in Pakistan. [6 marks]",
+      "marks": 6,
+      "answer": "A maximum price is a price ceiling set below the free market equilibrium price. The Pakistani government might impose this on wheat because wheat is a necessity and forms a large proportion of household expenditure for low-income families. By setting the maximum price below equilibrium, the government makes wheat more affordable for consumers, particularly the poor, improving their standard of living. This intervention may also help control inflation as wheat is a staple food. However, the maximum price creates excess demand as quantity demanded exceeds quantity supplied at the lower price, leading to shortages. This may require government rationing or subsidies to producers to maintain adequate supply.",
+      "markBreakdown": [
+        "Mark 1: Definition of maximum price",
+        "Mark 2: Set below equilibrium price",
+        "Mark 3: Makes wheat more affordable",
+        "Mark 4: Helps low-income families/reduces poverty",
+        "Mark 5: Controls inflation/wheat is necessity",
+        "Mark 6: Recognition of potential problems (shortages/excess demand)"
+      ]
+    },
+    "commonMistakes": [
+      "Never say maximum prices increase supply - they create shortages by reducing incentive to produce",
+      "Students often confuse maximum and minimum prices - remember maximum = ceiling (low), minimum = floor (high)",
+      "Don't ignore the welfare effects - always mention deadweight loss in evaluation questions",
+      "Never say taxes only affect consumers - they affect both consumer and producer surplus",
+      "Students forget to mention enforcement costs and black markets as problems with price controls"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 - especially price controls and taxation",
+      "Always draw labelled diagrams for analysis questions - they can earn up to 4 marks",
+      "Use Pakistani examples: wheat subsidies, minimum wage for agricultural workers, fuel price controls",
+      "For externality questions, distinguish clearly between private and social costs/benefits",
+      "In evaluation, consider both intended and unintended consequences of intervention"
+    ],
+    "formulas": [
+      "Social Cost = Private Cost + External Cost",
+      "Social Benefit = Private Benefit + External Benefit",
+      "Tax Revenue = Tax per unit × Quantity sold"
+    ],
+    "keyDiagramDescription": "Supply and demand diagram showing price controls: maximum price below equilibrium creating shortage; minimum price above equilibrium creating surplus. For taxes: leftward supply shift showing tax burden split between consumers and producers. For subsidies: rightward supply shift showing lower market price."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:08:03.654Z",
+  "updated_at": "2026-04-06T05:08:03.654Z"
+}

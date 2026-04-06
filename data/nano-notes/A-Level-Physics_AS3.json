@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "AS Mechanics",
+  "chapter_id": "AS3",
+  "chapter_name": "Dynamics",
+  "note_data": {
+    "title": "Dynamics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Force** is any push or pull that can change the motion of an object or cause deformation",
+      "Newton's **first law** states that an object will remain at rest or continue moving at constant velocity unless acted upon by a resultant force",
+      "Newton's **second law** states that the resultant force is directly proportional to the rate of change of momentum: F = ma when mass is constant",
+      "Newton's **third law** states that when object A exerts a force on object B, object B exerts an equal and opposite force on object A",
+      "**Momentum** is the product of mass and velocity: p = mv, measured in kg m s⁻¹",
+      "**Impulse** equals the change in momentum and also equals force × time: FΔt = Δp",
+      "The **principle of conservation of momentum** states that total momentum before collision equals total momentum after collision in the absence of external forces",
+      "In **elastic collisions**, both momentum and kinetic energy are conserved",
+      "In **inelastic collisions**, momentum is conserved but kinetic energy is not conserved"
+    ],
+    "definitions": [
+      {
+        "term": "Force",
+        "definition": "A push or pull that can change the motion of an object or cause deformation, measured in Newtons (N)"
+      },
+      {
+        "term": "Momentum",
+        "definition": "The product of mass and velocity of an object, measured in kg m s⁻¹"
+      },
+      {
+        "term": "Impulse",
+        "definition": "The product of force and time for which it acts, equal to change in momentum, measured in N s"
+      },
+      {
+        "term": "Conservation of momentum",
+        "definition": "The total momentum of a system remains constant when no external forces act on the system"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give Newton's law in one sentence exactly as worded. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the physics principle + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Show",
+        "instruction": "Write out each step of calculation clearly with units at each stage"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Substitute values into correct formula, show working, give answer with correct units and significant figures"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A cricket ball of mass 0.16 kg moving at 25 m s⁻¹ is caught by a fielder. The ball comes to rest in 0.20 s. Calculate the average force exerted by the fielder's hands.",
+      "marks": 3,
+      "answer": "Initial momentum = mv = 0.16 × 25 = 4.0 kg m s⁻¹\nFinal momentum = 0 kg m s⁻¹\nChange in momentum = 0 - 4.0 = -4.0 kg m s⁻¹\nUsing F = Δp/Δt\nF = -4.0/0.20 = -20 N\nMagnitude of force = 20 N",
+      "markBreakdown": [
+        "Mark 1: Correct calculation of initial momentum (4.0 kg m s⁻¹)",
+        "Mark 2: Correct use of F = Δp/Δt or impulse equation",
+        "Mark 3: Correct final answer with unit (20 N)"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'F = ma always applies' — only when mass is constant. Use F = Δp/Δt for general case",
+      "Students often forget that momentum is a vector — direction matters in collision calculations",
+      "Never confuse impulse with momentum — impulse is change in momentum, not momentum itself",
+      "Students often forget to consider both objects in collision problems when applying conservation of momentum",
+      "Never ignore the negative sign in force calculations — it indicates direction"
+    ],
+    "examinerTips": [
+      "This topic appears every year in Paper 2, especially collision and impulse calculations",
+      "Always define your positive direction clearly in collision problems",
+      "For Newton's laws questions, learn the exact wording — paraphrasing loses marks",
+      "Impulse questions often involve cricket balls, cars braking, or collisions — familiar Pakistani contexts"
+    ],
+    "formulas": [
+      "F = ma",
+      "p = mv",
+      "F = Δp/Δt",
+      "FΔt = Δp",
+      "p₁ + p₂ = p₁' + p₂' (conservation)"
+    ],
+    "keyDiagramDescription": "Free body diagrams showing all forces acting on an object with arrows indicating magnitude and direction, essential for applying Newton's laws correctly"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:39:31.467Z",
+  "updated_at": "2026-04-06T04:39:31.467Z"
+}

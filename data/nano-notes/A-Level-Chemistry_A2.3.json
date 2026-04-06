@@ -1,0 +1,93 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "A2 Physical Chemistry",
+  "chapter_id": "A2.3",
+  "chapter_name": "Further energetics",
+  "note_data": {
+    "title": "Further energetics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Lattice energy** is the energy required to completely separate one mole of an ionic solid into gaseous ions under standard conditions",
+      "**Born-Haber cycles** use Hess's law to calculate lattice energies by constructing energy level diagrams with standard enthalpy changes",
+      "**Entropy (S)** is a measure of the disorder or randomness of a system, measured in J K⁻¹ mol⁻¹",
+      "**Standard entropy change (ΔS°)** = Σ S°(products) - Σ S°(reactants) and becomes more positive when disorder increases",
+      "**Gibbs free energy change (ΔG)** determines the feasibility of a reaction, where ΔG < 0 means the reaction is feasible",
+      "The relationship between enthalpy, entropy and Gibbs free energy is given by **ΔG = ΔH - TΔS**",
+      "**Temperature affects feasibility** - reactions with positive ΔH and positive ΔS become feasible at high temperatures",
+      "**Theoretical lattice energies** calculated from Born-Haber cycles may differ from experimental values due to covalent character in ionic bonds"
+    ],
+    "definitions": [
+      {
+        "term": "Lattice energy",
+        "definition": "The energy required to completely separate one mole of an ionic solid into gaseous ions under standard conditions"
+      },
+      {
+        "term": "Entropy",
+        "definition": "A measure of the disorder or randomness of a system"
+      },
+      {
+        "term": "Gibbs free energy",
+        "definition": "A thermodynamic quantity that determines whether a reaction is feasible, where ΔG < 0 indicates feasibility"
+      },
+      {
+        "term": "Born-Haber cycle",
+        "definition": "An energy level diagram that uses Hess's law to calculate lattice energies from other measurable enthalpy changes"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working steps clearly and include units in your final answer"
+      },
+      {
+        "commandWord": "Construct",
+        "instruction": "For Born-Haber cycles, draw arrows showing direction and label all enthalpy changes"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Calculate the lattice energy of sodium chloride using the following data: ΔHf°[NaCl(s)] = -411 kJ mol⁻¹, ΔHat°[Na(s)] = +107 kJ mol⁻¹, ΔHat°[Cl₂(g)] = +122 kJ mol⁻¹, ΔHie°[Na(g)] = +496 kJ mol⁻¹, ΔHea°[Cl(g)] = -349 kJ mol⁻¹",
+      "marks": 3,
+      "answer": "Using Born-Haber cycle and Hess's law: ΔHlatt = ΔHat°[Na] + ½ΔHat°[Cl₂] + ΔHie°[Na] + ΔHea°[Cl] - ΔHf°[NaCl]. ΔHlatt = (+107) + (½ × 122) + (+496) + (-349) - (-411) = +107 + 61 + 496 - 349 + 411. ΔHlatt = +726 kJ mol⁻¹",
+      "markBreakdown": [
+        "Mark 1: Correct application of Hess's law equation",
+        "Mark 2: Correct substitution of values with signs",
+        "Mark 3: Correct final answer with units"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse lattice energy with lattice enthalpy - lattice energy is energy required to break apart, not form",
+      "Students often get the wrong sign for lattice energy - it should be positive for the breaking process",
+      "Never forget to halve the atomisation enthalpy of diatomic elements like Cl₂ in Born-Haber calculations",
+      "Students often confuse entropy units (J K⁻¹ mol⁻¹) with enthalpy units (kJ mol⁻¹)",
+      "Never assume ΔG = 0 means the reaction is feasible - only ΔG < 0 indicates feasibility"
+    ],
+    "examinerTips": [
+      "Born-Haber cycle questions appear almost every year in Paper 2 and are usually worth 4-6 marks",
+      "Always check signs carefully - formation enthalpies are negative, ionisation energies are positive",
+      "For entropy calculations, remember that gas formation increases entropy significantly",
+      "Temperature-dependent feasibility questions often ask for the minimum temperature where ΔG = 0"
+    ],
+    "formulas": [
+      "ΔG = ΔH - TΔS",
+      "ΔS° = Σ S°(products) - Σ S°(reactants)",
+      "ΔG° = Σ ΔGf°(products) - Σ ΔGf°(reactants)"
+    ],
+    "keyDiagramDescription": "Born-Haber cycle energy level diagram showing gaseous ions at the top, with arrows indicating atomisation, ionisation, electron affinity, formation enthalpy and lattice energy changes"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:37:09.231Z",
+  "updated_at": "2026-04-06T04:37:09.231Z"
+}

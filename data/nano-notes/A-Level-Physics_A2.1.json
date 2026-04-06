@@ -1,0 +1,97 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "A2 Fields",
+  "chapter_id": "A2.1",
+  "chapter_name": "Motion in a circle",
+  "note_data": {
+    "title": "Motion in a circle",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Angular displacement** is measured in radians where 2π radians = 360°",
+      "**Angular velocity** ω is the rate of change of angular displacement with time, measured in rad s⁻¹",
+      "For uniform circular motion, the **linear speed** v = rω where r is the radius",
+      "**Centripetal acceleration** is always directed towards the center of the circle with magnitude a = v²/r = rω²",
+      "**Centripetal force** F = ma = mv²/r = mrω² provides the force needed for circular motion",
+      "The centripetal force is always perpendicular to the velocity and does not change the speed",
+      "**Period** T is the time for one complete revolution where T = 2π/ω = 2πr/v",
+      "**Frequency** f is the number of revolutions per second where f = 1/T = ω/2π"
+    ],
+    "definitions": [
+      {
+        "term": "Radian",
+        "definition": "The angle subtended at the center of a circle by an arc length equal to the radius"
+      },
+      {
+        "term": "Angular velocity",
+        "definition": "The rate of change of angular displacement with respect to time"
+      },
+      {
+        "term": "Centripetal acceleration",
+        "definition": "The acceleration of an object moving in a circular path, directed towards the center of the circle"
+      },
+      {
+        "term": "Centripetal force",
+        "definition": "The net force acting on an object moving in circular motion, directed towards the center of the circle"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly with correct formula substitution and units"
+      },
+      {
+        "commandWord": "Derive",
+        "instruction": "Start from first principles and show each algebraic step clearly"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A satellite orbits Earth at a height of 400 km above the surface. The radius of Earth is 6400 km. If the satellite completes one orbit in 90 minutes, calculate: (a) the angular velocity of the satellite (b) the centripetal acceleration of the satellite",
+      "marks": 4,
+      "answer": "(a) ω = 2π/T = 2π/(90 × 60) = 1.16 × 10⁻³ rad s⁻¹ (b) r = 6400 + 400 = 6800 km = 6.8 × 10⁶ m, a = rω² = 6.8 × 10⁶ × (1.16 × 10⁻³)² = 9.1 m s⁻²",
+      "markBreakdown": [
+        "Mark 1: Correct formula ω = 2π/T",
+        "Mark 2: Correct calculation of ω with units",
+        "Mark 3: Correct orbital radius calculation",
+        "Mark 4: Correct centripetal acceleration with units"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'centrifugal force acts outward' — there is no centrifugal force in an inertial frame",
+      "Students often forget to convert degrees to radians when using ω = θ/t",
+      "Never say 'centripetal force changes the speed' — it only changes direction",
+      "Students confuse linear velocity v with angular velocity ω in calculations",
+      "Always use the correct radius — for satellites, add height to Earth's radius"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2, especially satellite motion",
+      "Always draw a free body diagram showing centripetal force towards center",
+      "Remember to convert time to seconds and distances to meters",
+      "For satellite questions, gravitational force provides the centripetal force"
+    ],
+    "formulas": [
+      "ω = θ/t",
+      "v = rω",
+      "a = v²/r = rω²",
+      "F = mv²/r = mrω²",
+      "T = 2π/ω",
+      "f = 1/T = ω/2π"
+    ],
+    "keyDiagramDescription": "Circle showing object with velocity vector tangent to circle, centripetal acceleration and force vectors pointing toward center, radius r labeled from center to object"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:42:41.144Z",
+  "updated_at": "2026-04-06T04:42:41.144Z"
+}

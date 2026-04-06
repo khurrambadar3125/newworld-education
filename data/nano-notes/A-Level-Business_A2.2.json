@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Business",
+  "subject_code": "9609",
+  "level": "A Level",
+  "theme": "A2 Business",
+  "chapter_id": "A2.2",
+  "chapter_name": "Business finance",
+  "note_data": {
+    "title": "Business finance - Ratio Analysis",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Profitability ratios** measure how effectively a business generates profit from its resources and include gross profit margin, net profit margin, and return on capital employed",
+      "**Liquidity ratios** assess a business's ability to meet short-term debts and include current ratio and acid test ratio",
+      "**Gearing ratio** measures the proportion of capital employed that is financed by long-term debt, indicating financial risk",
+      "**Efficiency ratios** evaluate how well a business uses its assets and include inventory turnover, debtor days, and creditor days",
+      "**Gross profit margin** shows the percentage of revenue remaining after deducting cost of goods sold",
+      "**Current ratio** indicates whether current assets can cover current liabilities, with 1.5-2:1 considered healthy",
+      "**Return on Capital Employed (ROCE)** measures profitability relative to capital invested and is useful for comparing business performance",
+      "Ratio analysis allows **comparison over time** (trend analysis) and **comparison with competitors** (inter-firm comparison)",
+      "**Limitations of ratio analysis** include reliance on historical data, different accounting policies, and inability to consider external factors"
+    ],
+    "definitions": [
+      {
+        "term": "Profitability ratios",
+        "definition": "Financial ratios that measure a business's ability to generate profit relative to revenue, assets, or capital employed"
+      },
+      {
+        "term": "Liquidity",
+        "definition": "The ability of a business to convert assets into cash quickly to meet short-term debts"
+      },
+      {
+        "term": "Gearing",
+        "definition": "The proportion of capital employed that comes from long-term debt rather than equity"
+      },
+      {
+        "term": "Current ratio",
+        "definition": "A liquidity ratio calculated by dividing current assets by current liabilities"
+      },
+      {
+        "term": "Return on Capital Employed",
+        "definition": "A profitability ratio that measures profit before interest and tax as a percentage of capital employed"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show the formula, substitute figures, and give final answer with correct units/percentage"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Calculate the ratio + explain what it means + give judgment (good/bad/improving) + suggest reasons why"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Give advantages AND disadvantages + make a justified conclusion about overall usefulness"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Calculate the current ratio for Karachi Textiles Ltd. Current assets: $800,000, Current liabilities: $500,000. Comment on the result. [4 marks]",
+      "marks": 4,
+      "answer": "Current ratio = Current assets ÷ Current liabilities = $800,000 ÷ $500,000 = 1.6:1. This indicates that Karachi Textiles has $1.60 of current assets for every $1.00 of current liabilities. This is a healthy ratio as it is above 1:1, meaning the business can meet its short-term debts. However, it is not excessively high which would suggest inefficient use of assets.",
+      "markBreakdown": [
+        "Mark 1: Correct formula stated",
+        "Mark 2: Correct calculation (1.6:1)",
+        "Mark 3: Interpretation of what ratio means",
+        "Mark 4: Judgment on whether ratio is good/bad with reason"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'profit margin is good' without stating a percentage - always give specific figures and compare to industry standards",
+      "Students often confuse gross profit margin with net profit margin - gross excludes expenses, net includes all costs",
+      "Never calculate gearing as debt ÷ equity - always use debt ÷ capital employed × 100",
+      "Students forget to convert ratios to percentages when required - ROCE must be shown as percentage",
+      "Never analyse ratios in isolation - always compare with previous years or competitors for meaningful analysis"
+    ],
+    "examinerTips": [
+      "Ratio analysis appears in every Paper 2 - practice calculations until automatic",
+      "Always show your working even if answer is wrong - method marks available",
+      "When analysing ratios, always give a judgment (good/bad/concerning) with justification",
+      "Learn the 'ideal' ranges: current ratio 1.5-2:1, gearing below 50%, gross profit margin varies by industry"
+    ],
+    "formulas": [
+      "Gross Profit Margin = (Gross Profit ÷ Revenue) × 100",
+      "Net Profit Margin = (Net Profit ÷ Revenue) × 100",
+      "ROCE = (Profit before Interest and Tax ÷ Capital Employed) × 100",
+      "Current Ratio = Current Assets ÷ Current Liabilities",
+      "Acid Test Ratio = (Current Assets - Inventory) ÷ Current Liabilities",
+      "Gearing Ratio = (Long-term Debt ÷ Capital Employed) × 100",
+      "Inventory Turnover = Cost of Goods Sold ÷ Average Inventory"
+    ],
+    "keyDiagramDescription": "Create a ratio analysis framework diagram showing four categories (Profitability, Liquidity, Gearing, Efficiency) with key ratios listed under each category and their typical 'healthy' ranges noted"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:13:28.749Z",
+  "updated_at": "2026-04-06T05:13:28.749Z"
+}

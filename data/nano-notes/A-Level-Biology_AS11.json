@@ -1,0 +1,95 @@
+{
+  "subject": "A Level Biology",
+  "subject_code": "9700",
+  "level": "A Level",
+  "theme": "AS Biology",
+  "chapter_id": "AS11",
+  "chapter_name": "Immunity",
+  "note_data": {
+    "title": "Immunity",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Antigens** are molecules that stimulate an immune response and are found on the surface of pathogens or foreign cells",
+      "**B lymphocytes** produce antibodies specific to antigens and differentiate into plasma cells and memory cells",
+      "**T helper cells** activate B cells and cytotoxic T cells by releasing cytokines after recognizing antigens presented by antigen-presenting cells",
+      "**Cytotoxic T cells** destroy infected cells by releasing perforin which creates pores in the cell membrane",
+      "**Antibodies** are Y-shaped proteins with two heavy chains and two light chains, containing variable and constant regions",
+      "**Active immunity** involves the production of antibodies by the organism's own immune system in response to antigens",
+      "**Passive immunity** involves the acquisition of ready-made antibodies from another source without antigen exposure",
+      "**Memory cells** remain in the blood after primary infection and enable rapid secondary immune response upon re-exposure to the same antigen",
+      "**Primary immune response** is slow with low antibody concentration, while **secondary immune response** is faster with higher antibody concentration"
+    ],
+    "definitions": [
+      {
+        "term": "Antigen",
+        "definition": "A molecule that stimulates an immune response and is recognized as foreign by the immune system"
+      },
+      {
+        "term": "Antibody",
+        "definition": "A Y-shaped glycoprotein produced by plasma cells that binds specifically to antigens"
+      },
+      {
+        "term": "Active immunity",
+        "definition": "Immunity developed by the production of antibodies by the organism's own immune system in response to antigens"
+      },
+      {
+        "term": "Passive immunity",
+        "definition": "Immunity acquired by obtaining ready-made antibodies from another source without exposure to antigens"
+      },
+      {
+        "term": "Memory cell",
+        "definition": "A long-lived lymphocyte that remains in the blood after initial infection and provides immunological memory"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities and differences between active and passive immunity"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of events in logical order with linking words"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why the secondary immune response is faster and more effective than the primary immune response. (3 marks)",
+      "marks": 3,
+      "answer": "Memory cells remain in the blood after the primary infection. When the same antigen enters the body again, memory cells recognize it immediately and differentiate rapidly into plasma cells. This produces antibodies much faster and in greater quantities than the primary response.",
+      "markBreakdown": [
+        "Mark 1: Memory cells remain in blood after primary infection",
+        "Mark 2: Memory cells recognize antigen immediately on re-exposure",
+        "Mark 3: Rapid differentiation into plasma cells produces antibodies faster/in greater quantity"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'antibodies kill pathogens' — always say 'antibodies bind to antigens and mark pathogens for destruction'",
+      "Students often confuse B cells and T cells — B cells produce antibodies, T cells do not produce antibodies",
+      "Never say 'passive immunity lasts longer' — active immunity provides long-term protection, passive immunity is temporary",
+      "Students forget that cytotoxic T cells destroy infected body cells, not free pathogens",
+      "Never say 'vaccines contain antibodies' — vaccines contain antigens or weakened pathogens"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2 with 6-8 marks allocated",
+      "Always distinguish between humoral immunity (B cells) and cell-mediated immunity (T cells)",
+      "Learn the exact structure of antibodies - heavy chains, light chains, variable and constant regions",
+      "Primary vs secondary response graphs are frequently tested - learn the key differences",
+      "Active vs passive immunity comparison questions are very common - know natural and artificial examples"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Antibody structure showing Y-shape with two heavy chains, two light chains, variable regions (antigen-binding sites) at the tips, and constant region at the base. Also primary vs secondary immune response graph showing antibody concentration over time."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:03:52.590Z",
+  "updated_at": "2026-04-06T05:03:52.590Z"
+}

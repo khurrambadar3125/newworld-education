@@ -1,0 +1,97 @@
+{
+  "subject": "A Level Biology",
+  "subject_code": "9700",
+  "level": "A Level",
+  "theme": "A2 Biology",
+  "chapter_id": "A2.7",
+  "chapter_name": "Biodiversity, classification and conservation",
+  "note_data": {
+    "title": "Biodiversity, classification and conservation",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Biodiversity** is the variety of life on Earth including genetic diversity, species diversity and ecosystem diversity",
+      "**Taxonomy** is the study of classification where organisms are grouped into hierarchical taxa based on shared characteristics",
+      "**Species** are groups of organisms that can interbreed to produce fertile offspring",
+      "**Conservation** involves the protection and management of species and ecosystems to maintain biodiversity",
+      "**In situ conservation** protects species in their natural habitat through national parks and nature reserves",
+      "**Ex situ conservation** protects species outside their natural habitat through seed banks, zoos and botanical gardens",
+      "**Endangered species** have very small population sizes and face high risk of extinction",
+      "**Ecosystem diversity** refers to the variety of different ecosystems and habitats in a region",
+      "Human activities cause **habitat destruction**, pollution, over-exploitation and climate change leading to biodiversity loss"
+    ],
+    "definitions": [
+      {
+        "term": "Biodiversity",
+        "definition": "The variety of life on Earth including genetic diversity within species, species diversity within communities and ecosystem diversity"
+      },
+      {
+        "term": "Species",
+        "definition": "A group of organisms that can interbreed to produce fertile offspring"
+      },
+      {
+        "term": "Conservation",
+        "definition": "The protection and management of species and ecosystems to maintain biodiversity for future generations"
+      },
+      {
+        "term": "Endangered species",
+        "definition": "A species with very small population size that faces high risk of extinction in the wild"
+      },
+      {
+        "term": "Taxonomy",
+        "definition": "The study of classification where organisms are identified, named and grouped into hierarchical taxa based on shared characteristics"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give practical conservation methods with brief justification"
+      },
+      {
+        "commandWord": "Discuss",
+        "instruction": "Give advantages AND disadvantages of conservation methods"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why maintaining biodiversity is important for ecosystems. [3 marks]",
+      "marks": 3,
+      "answer": "Biodiversity maintains ecosystem stability because different species have different roles and if one species is lost, others can fill its niche. High biodiversity increases ecosystem productivity because different species can exploit different resources efficiently. Biodiversity provides ecosystem services such as pollination, nutrient cycling and climate regulation which are essential for human survival.",
+      "markBreakdown": [
+        "Mark 1: Ecosystem stability/resilience due to different species roles",
+        "Mark 2: Increased productivity through efficient resource use",
+        "Mark 3: Ecosystem services essential for humans"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'animals and plants' — always use the term 'organisms' or 'species'",
+      "Students confuse species diversity with genetic diversity — species diversity is number of different species, genetic diversity is variation within a species",
+      "Don't just list conservation methods — always explain WHY each method helps preserve biodiversity",
+      "Never say conservation is 'just for animals' — must include plants, fungi and microorganisms",
+      "Students forget that taxonomy uses shared characteristics, not just physical appearance"
+    ],
+    "examinerTips": [
+      "This topic appears in Paper 2 almost every year, often linked to human impact",
+      "Always give specific examples of endangered species when discussing conservation",
+      "Link conservation methods to Pakistan examples like Chitral Gol National Park or mangrove forests in Karachi",
+      "Remember the taxonomic hierarchy: Kingdom, Phylum, Class, Order, Family, Genus, Species"
+    ],
+    "formulas": [
+      "Simpson's Diversity Index: D = Σ(n/N)²",
+      "Species richness = total number of species in community"
+    ],
+    "keyDiagramDescription": "Taxonomic hierarchy pyramid showing Kingdom at top, then Phylum, Class, Order, Family, Genus, Species at bottom with examples at each level"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:06:24.348Z",
+  "updated_at": "2026-04-06T05:06:24.348Z"
+}

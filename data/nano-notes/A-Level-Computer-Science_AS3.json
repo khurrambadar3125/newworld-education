@@ -1,0 +1,94 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "AS Computer Science",
+  "chapter_id": "AS3",
+  "chapter_name": "Hardware",
+  "note_data": {
+    "title": "Hardware",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **processor** executes instructions using the fetch-execute cycle: fetch instruction from memory, decode instruction, execute instruction, store result",
+      "The **control unit** coordinates all processor activities and controls the flow of data between processor components",
+      "The **arithmetic logic unit (ALU)** performs arithmetic operations (addition, subtraction) and logical operations (AND, OR, NOT)",
+      "**Cache memory** is high-speed memory located between processor and main memory that stores frequently accessed data and instructions",
+      "**Virtual memory** uses part of secondary storage as an extension of main memory when RAM is insufficient",
+      "**Primary storage** includes RAM (volatile) and ROM (non-volatile) with direct access by the processor",
+      "**Secondary storage** includes magnetic (hard disk), optical (CD/DVD/Blu-ray), and solid state (SSD/USB) devices for permanent data storage",
+      "**Registers** are high-speed storage locations within the processor that temporarily hold data and instructions during processing",
+      "The **system bus** consists of address bus, data bus, and control bus that transfer information between processor and memory"
+    ],
+    "definitions": [
+      {
+        "term": "Cache memory",
+        "definition": "High-speed memory between processor and main memory that stores copies of frequently accessed data and instructions to reduce access time"
+      },
+      {
+        "term": "Virtual memory",
+        "definition": "The use of secondary storage as an extension of main memory, allowing programs larger than available RAM to run by swapping data between RAM and disk"
+      },
+      {
+        "term": "Fetch-execute cycle",
+        "definition": "The sequence of operations performed by the processor to execute instructions: fetch instruction from memory, decode instruction, execute instruction, store result"
+      },
+      {
+        "term": "Register",
+        "definition": "High-speed storage location within the processor that temporarily holds data, instructions, or addresses during processing"
+      },
+      {
+        "term": "Secondary storage",
+        "definition": "Non-volatile storage devices external to the processor that provide permanent storage for programs and data when power is switched off"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of how something works, include steps in logical order"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between two items"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how cache memory improves processor performance. [3]",
+      "marks": 3,
+      "answer": "Cache memory stores frequently accessed data and instructions closer to the processor. This reduces the time needed to access data because the processor does not need to access slower main memory. When data is found in cache (cache hit), the processor can continue processing without delay, improving overall system performance.",
+      "markBreakdown": [
+        "Mark 1: Cache stores frequently accessed data/instructions",
+        "Mark 2: Reduces access time/faster than main memory",
+        "Mark 3: Prevents processor delays/improves performance"
+      ]
+    },
+    "commonMistakes": [
+      "Never say cache 'stores all data' — it only stores frequently accessed or recently used data",
+      "Students often confuse virtual memory with cache memory — virtual memory extends RAM using disk space, cache speeds up access",
+      "Don't say ROM is 'read-only' without explaining it's non-volatile and stores startup instructions",
+      "Never describe the fetch-execute cycle without mentioning all four steps: fetch, decode, execute, store",
+      "Students often forget that secondary storage is non-volatile — data persists when power is off"
+    ],
+    "examinerTips": [
+      "Hardware questions appear in every Paper 1 and Paper 2 — learn the fetch-execute cycle steps precisely",
+      "Always distinguish between volatile (RAM) and non-volatile (ROM, secondary storage) when comparing memory types",
+      "Draw labeled diagrams of processor components for full marks in 'describe' questions",
+      "Use specific examples of storage devices (HDD, SSD, USB) rather than generic terms"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Von Neumann architecture showing processor (containing ALU, control unit, registers), main memory (RAM/ROM), and secondary storage connected by system bus (address, data, control buses)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:14:55.462Z",
+  "updated_at": "2026-04-06T05:14:55.462Z"
+}

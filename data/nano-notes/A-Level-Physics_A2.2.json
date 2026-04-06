@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "A2 Fields",
+  "chapter_id": "A2.2",
+  "chapter_name": "Gravitational fields",
+  "note_data": {
+    "title": "Gravitational fields",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Gravitational field strength** is the gravitational force per unit mass experienced by a small test mass placed at that point",
+      "**Gravitational potential** at a point is the work done per unit mass in bringing a small test mass from infinity to that point",
+      "**Gravitational potential energy** is always negative when measured from infinity because work is done by the gravitational field",
+      "Field lines point towards the centre of mass and are **radial** for point masses or spherical objects",
+      "**Equipotential surfaces** are perpendicular to field lines and no work is done moving along them",
+      "For circular orbits, **centripetal force equals gravitational force** providing the necessary acceleration",
+      "**Escape velocity** is the minimum velocity needed for an object to escape completely from a gravitational field",
+      "Satellites in **geostationary orbit** have orbital period of 24 hours and remain above the same point on Earth's surface",
+      "**Kepler's third law** states that T² ∝ r³ for objects orbiting the same central mass"
+    ],
+    "definitions": [
+      {
+        "term": "Gravitational field strength",
+        "definition": "The gravitational force per unit mass experienced by a small test mass placed at that point in the field"
+      },
+      {
+        "term": "Gravitational potential",
+        "definition": "The work done per unit mass in bringing a small test mass from infinity to that point"
+      },
+      {
+        "term": "Geostationary orbit",
+        "definition": "An orbit where the satellite has an orbital period of 24 hours and remains above the same point on the Earth's equator"
+      },
+      {
+        "term": "Escape velocity",
+        "definition": "The minimum velocity that an object must have to escape completely from a gravitational field"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Derive",
+        "instruction": "Show all algebraic steps clearly, starting from given equations"
+      },
+      {
+        "commandWord": "Show",
+        "instruction": "Demonstrate the calculation with all working and correct units"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A satellite of mass 500 kg orbits Earth at height 3.6 × 10⁷ m above the surface. Calculate the gravitational potential energy of the satellite. (Mass of Earth = 6.0 × 10²⁴ kg, radius of Earth = 6.4 × 10⁶ m)",
+      "marks": 3,
+      "answer": "Distance from Earth's centre r = (6.4 × 10⁶) + (3.6 × 10⁷) = 4.24 × 10⁷ m\nUsing Ep = -GMm/r\nEp = -(6.67 × 10⁻¹¹ × 6.0 × 10²⁴ × 500)/(4.24 × 10⁷)\nEp = -4.7 × 10⁹ J",
+      "markBreakdown": [
+        "Mark 1: Correct calculation of r from Earth's centre",
+        "Mark 2: Correct substitution into Ep = -GMm/r",
+        "Mark 3: Correct final answer with units"
+      ]
+    },
+    "commonMistakes": [
+      "Never use surface values of g in orbital calculations — always use g = GM/r² for the specific distance",
+      "Students often forget the negative sign for gravitational potential and potential energy",
+      "Never confuse gravitational field strength (N/kg) with gravitational force (N)",
+      "Students often use Earth's radius instead of orbital radius from Earth's centre in satellite calculations",
+      "Never assume satellites must orbit above the equator unless specifically stated as geostationary"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 4, especially satellite orbital calculations",
+      "Always check if height is given above surface or from centre — add Earth's radius if needed",
+      "For geostationary satellites, always state three conditions: 24hr period, equatorial orbit, same direction as Earth's rotation",
+      "In orbital problems, clearly show F_gravitational = F_centripetal"
+    ],
+    "formulas": [
+      "g = F/m",
+      "g = GM/r²",
+      "V = -GM/r",
+      "Ep = mV = -GMm/r",
+      "F = GMm/r²",
+      "v = √(GM/r)",
+      "T² = (4π²/GM)r³",
+      "vₑₛcₐₚₑ = √(2GM/r)"
+    ],
+    "keyDiagramDescription": "Radial field lines pointing towards Earth's centre, with equipotential circles (dotted lines) perpendicular to field lines. Show satellite in circular orbit with velocity vector tangential to orbit and gravitational force pointing towards centre."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:43:05.823Z",
+  "updated_at": "2026-04-06T04:43:05.823Z"
+}

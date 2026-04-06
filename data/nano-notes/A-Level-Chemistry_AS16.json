@@ -1,0 +1,94 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Organic Chemistry",
+  "chapter_id": "AS16",
+  "chapter_name": "Alcohols, esters and carboxylic acids",
+  "note_data": {
+    "title": "Alcohols, esters and carboxylic acids",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Primary alcohols** are oxidised by acidified potassium dichromate(VI) to aldehydes then carboxylic acids",
+      "**Secondary alcohols** are oxidised by acidified potassium dichromate(VI) to ketones only",
+      "**Tertiary alcohols** are not oxidised by acidified potassium dichromate(VI) under normal conditions",
+      "**Dehydration of alcohols** occurs by heating with concentrated sulfuric acid or passing over heated aluminium oxide catalyst to form alkenes",
+      "**Fermentation** produces ethanol from glucose using yeast enzymes in anaerobic conditions at 30-40°C",
+      "**Esters** are formed by condensation reaction between carboxylic acids and alcohols in presence of concentrated sulfuric acid catalyst",
+      "**Hydrolysis of esters** occurs by heating with dilute hydrochloric acid (acid hydrolysis) or sodium hydroxide (alkaline hydrolysis/saponification)",
+      "**Carboxylic acids** show typical acid properties: react with metals, carbonates, and alkalis to form salts",
+      "**Reduction of carboxylic acids** occurs using lithium aluminium hydride in dry ether to form primary alcohols"
+    ],
+    "definitions": [
+      {
+        "term": "Fermentation",
+        "definition": "The breakdown of glucose by enzymes in yeast in the absence of oxygen to produce ethanol and carbon dioxide"
+      },
+      {
+        "term": "Esterification",
+        "definition": "A condensation reaction between a carboxylic acid and an alcohol in the presence of an acid catalyst to form an ester and water"
+      },
+      {
+        "term": "Saponification",
+        "definition": "The alkaline hydrolysis of an ester using sodium hydroxide to form a carboxylate salt and an alcohol"
+      },
+      {
+        "term": "Dehydration",
+        "definition": "The removal of water from an alcohol molecule to form an alkene"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the reagent and conditions only. No mechanism or explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the observation and link to the chemical change using 'because' or 'due to'"
+      },
+      {
+        "commandWord": "Outline",
+        "instruction": "Give the key steps in logical order with reagents and conditions"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Describe how you would distinguish between a primary, secondary and tertiary alcohol using chemical tests. Include reagents, conditions and observations.",
+      "marks": 6,
+      "answer": "Add acidified potassium dichromate(VI) and warm gently. Primary alcohol: orange solution turns green due to formation of aldehyde then carboxylic acid. Secondary alcohol: orange solution turns green due to formation of ketone. Tertiary alcohol: orange solution remains orange as no oxidation occurs under normal conditions.",
+      "markBreakdown": [
+        "Mark 1: Reagent - acidified potassium dichromate(VI)",
+        "Mark 2: Conditions - warm/heat",
+        "Mark 3: Primary alcohol observation - orange to green",
+        "Mark 4: Secondary alcohol observation - orange to green",
+        "Mark 5: Tertiary alcohol observation - remains orange",
+        "Mark 6: Explanation of different oxidation products"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'potassium dichromate' - always say 'acidified potassium dichromate(VI)' for oxidation reactions",
+      "Students often confuse aldehyde and ketone formation - primary alcohols give aldehydes, secondary give ketones",
+      "Don't say esters are formed by 'addition' - they are formed by condensation with elimination of water",
+      "Never write 'reflux' for fermentation conditions - fermentation occurs at 30-40°C in anaerobic conditions",
+      "Students forget that tertiary alcohols cannot be oxidised under normal laboratory conditions"
+    ],
+    "examinerTips": [
+      "Alcohol oxidation appears in almost every Paper 2 - learn reagents and conditions precisely",
+      "Always include 'acidified' when writing potassium dichromate(VI) as oxidising agent",
+      "Esterification questions often ask for reversible arrow and catalyst in equation",
+      "Learn the difference between acid and alkaline hydrolysis of esters - different products formed"
+    ],
+    "formulas": [
+      "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂",
+      "R-OH + [O] → R-CHO + H₂O",
+      "R-CHO + [O] → R-COOH",
+      "R₁COOH + R₂OH ⇌ R₁COOR₂ + H₂O"
+    ],
+    "keyDiagramDescription": "Oxidation flowchart showing primary alcohol → aldehyde → carboxylic acid, and secondary alcohol → ketone (no further oxidation). Include reagents: acidified K₂Cr₂O₇, conditions: heat/warm, and colour change: orange to green."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:35:31.999Z",
+  "updated_at": "2026-04-06T04:35:31.999Z"
+}

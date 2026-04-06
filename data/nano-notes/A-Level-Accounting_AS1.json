@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Accounting",
+  "subject_code": "9706",
+  "level": "A Level",
+  "theme": "AS Accounting",
+  "chapter_id": "AS1",
+  "chapter_name": "Financial accounting fundamentals",
+  "note_data": {
+    "title": "Financial accounting fundamentals",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Accounting equation**: Assets = Capital + Liabilities must always balance after every transaction",
+      "**Double entry** principle states that every transaction affects two accounts with equal and opposite entries",
+      "**Debit** entries record increases in assets and expenses, decreases in liabilities, capital and income",
+      "**Credit** entries record increases in liabilities, capital and income, decreases in assets and expenses",
+      "**Books of prime entry** are the first books where transactions are recorded before posting to the ledger",
+      "**Trial balance** is a list of all ledger account balances to check the arithmetical accuracy of double entry",
+      "**Sales day book** records all credit sales transactions chronologically",
+      "**Purchases day book** records all credit purchases transactions chronologically",
+      "**Cash book** records all cash and bank transactions and forms part of the double entry system",
+      "**General journal** records transactions that cannot be recorded in other books of prime entry"
+    ],
+    "definitions": [
+      {
+        "term": "Double entry",
+        "definition": "A system of bookkeeping where every transaction is recorded twice with equal debits and credits"
+      },
+      {
+        "term": "Trial balance",
+        "definition": "A list of all ledger account balances at a specific date to test the arithmetical accuracy of the books"
+      },
+      {
+        "term": "Books of prime entry",
+        "definition": "Books where transactions are first recorded before being posted to the ledger accounts"
+      },
+      {
+        "term": "Accounting equation",
+        "definition": "Assets equals Capital plus Liabilities - the fundamental equation that must always balance"
+      },
+      {
+        "term": "Posting",
+        "definition": "The process of transferring entries from books of prime entry to the relevant ledger accounts"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Set out accounts in T-account format with proper headings and dates"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all workings clearly and label your final answer"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the purpose of preparing a trial balance. (3 marks)",
+      "marks": 3,
+      "answer": "A trial balance is prepared to test the arithmetical accuracy of the double entry bookkeeping system. It ensures that total debits equal total credits, which proves that the double entry principle has been correctly applied. It also provides a summary of all ledger account balances which can be used as a basis for preparing final accounts.",
+      "markBreakdown": [
+        "Mark 1: To test arithmetical accuracy",
+        "Mark 2: To ensure debits equal credits/double entry correctly applied",
+        "Mark 3: To provide summary of balances for final accounts preparation"
+      ]
+    },
+    "commonMistakes": [
+      "Never say trial balance 'proves accounts are correct' — it only tests arithmetical accuracy, not completeness or accuracy of transactions",
+      "Students often forget that cash book is both a book of prime entry AND part of the ledger system",
+      "Never debit liabilities or credit assets when they increase — this reverses the double entry rules",
+      "Students confuse sales day book with sales account — day book is just a list, not part of double entry",
+      "Never say 'balance sheet equation' — always use 'accounting equation'"
+    ],
+    "examinerTips": [
+      "Trial balance questions appear in almost every Paper 1 and Paper 2",
+      "Always check that your trial balance totals are equal — unequal totals lose marks",
+      "Learn the DEAD CLIC rule: Debits - Expenses, Assets, Drawings; Credits - Liabilities, Income, Capital",
+      "Books of prime entry are frequently tested — know the purpose of each book"
+    ],
+    "formulas": [
+      "Assets = Capital + Liabilities",
+      "Capital = Assets - Liabilities",
+      "Liabilities = Assets - Capital"
+    ],
+    "keyDiagramDescription": "T-account format showing debit side (left) and credit side (right) with account name at the top and proper date, details, and amount columns"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:24:02.338Z",
+  "updated_at": "2026-04-06T05:24:02.340Z"
+}

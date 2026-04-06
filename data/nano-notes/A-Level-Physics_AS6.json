@@ -1,0 +1,101 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "AS Waves and Electricity",
+  "chapter_id": "AS6",
+  "chapter_name": "Deformation of solids",
+  "note_data": {
+    "title": "Deformation of solids",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Stress** is the force per unit cross-sectional area acting on a material (σ = F/A)",
+      "**Strain** is the fractional change in length when a material is deformed (ε = ΔL/L₀)",
+      "**Young's modulus** is the ratio of stress to strain for a material obeying Hooke's law (E = σ/ε)",
+      "**Hooke's law** states that the extension of a spring is directly proportional to the applied force, provided the elastic limit is not exceeded",
+      "**Elastic deformation** occurs when a material returns to its original shape when the deforming force is removed",
+      "**Plastic deformation** occurs when a material does not return to its original shape when the deforming force is removed",
+      "The **elastic limit** is the maximum stress that can be applied to a material without causing permanent deformation",
+      "The **yield point** is the stress at which a material begins to deform plastically",
+      "**Ultimate tensile strength** is the maximum stress a material can withstand before breaking",
+      "The area under a force-extension graph gives the **work done** in stretching the material"
+    ],
+    "definitions": [
+      {
+        "term": "Stress",
+        "definition": "The force per unit cross-sectional area acting on a material"
+      },
+      {
+        "term": "Strain",
+        "definition": "The fractional change in length of a material when deformed"
+      },
+      {
+        "term": "Young's modulus",
+        "definition": "The ratio of stress to strain for a material in the elastic region"
+      },
+      {
+        "term": "Elastic limit",
+        "definition": "The maximum stress that can be applied to a material without causing permanent deformation"
+      },
+      {
+        "term": "Hooke's law",
+        "definition": "The extension of a spring is directly proportional to the applied force, provided the elastic limit is not exceeded"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Define",
+        "instruction": "Give the exact definition with correct units if asked"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly with correct units and significant figures"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A steel wire of length 2.0 m and cross-sectional area 1.2 × 10⁻⁶ m² is stretched by 3.0 mm when a force of 720 N is applied. Calculate the Young's modulus of steel.",
+      "marks": 3,
+      "answer": "stress = F/A = 720 N / (1.2 × 10⁻⁶ m²) = 6.0 × 10⁸ Pa\nstrain = ΔL/L₀ = 3.0 × 10⁻³ m / 2.0 m = 1.5 × 10⁻³\nYoung's modulus E = stress/strain = (6.0 × 10⁸ Pa) / (1.5 × 10⁻³) = 4.0 × 10¹¹ Pa",
+      "markBreakdown": [
+        "Mark 1: Correct calculation of stress",
+        "Mark 2: Correct calculation of strain",
+        "Mark 3: Correct calculation of Young's modulus with units"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse stress and strain - stress has units Pa, strain is dimensionless",
+      "Students often forget to convert mm to m when calculating strain",
+      "Never say 'elastic deformation is reversible' - always say 'material returns to original shape'",
+      "Students confuse elastic limit with yield point - elastic limit is about permanent deformation",
+      "Never use original length instead of cross-sectional area when calculating stress"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 2 - especially stress-strain calculations",
+      "Always show units clearly in calculations - Pa for stress, no units for strain",
+      "Stress-strain graphs are common - know the shape and key points",
+      "Energy calculations often combined with this topic - area under F-x graph"
+    ],
+    "formulas": [
+      "σ = F/A",
+      "ε = ΔL/L₀",
+      "E = σ/ε",
+      "F = kx (Hooke's law)",
+      "E = FL₀/(A×ΔL)"
+    ],
+    "keyDiagramDescription": "Stress-strain graph showing elastic region (straight line), yield point, plastic region, and ultimate tensile strength point before breaking"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:40:29.845Z",
+  "updated_at": "2026-04-06T04:40:29.845Z"
+}

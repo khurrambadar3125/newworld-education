@@ -1,0 +1,93 @@
+{
+  "subject": "A Level Biology",
+  "subject_code": "9700",
+  "level": "A Level",
+  "theme": "A2 Biology",
+  "chapter_id": "A2.3",
+  "chapter_name": "Homeostasis",
+  "note_data": {
+    "title": "Homeostasis",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Homeostasis** is the maintenance of a constant internal environment despite external changes",
+      "**Negative feedback** operates when a change in a factor causes responses that counteract the initial change",
+      "**Insulin** is secreted by beta cells in the islets of Langerhans when blood glucose concentration rises above normal",
+      "**Glucagon** is secreted by alpha cells in the islets of Langerhans when blood glucose concentration falls below normal",
+      "The **kidney** regulates water potential of blood through selective reabsorption in the nephron",
+      "**ADH** (antidiuretic hormone) increases permeability of collecting duct walls to water when water potential of blood decreases",
+      "**Ultrafiltration** occurs at the glomerulus where small molecules are filtered from blood into Bowman's capsule",
+      "**Selective reabsorption** occurs in the proximal convoluted tubule where useful substances are reabsorbed back into blood",
+      "The **loop of Henle** creates a concentration gradient allowing production of concentrated urine"
+    ],
+    "definitions": [
+      {
+        "term": "Homeostasis",
+        "definition": "The maintenance of a constant internal environment despite external changes"
+      },
+      {
+        "term": "Negative feedback",
+        "definition": "A control mechanism where a change in a factor causes responses that counteract the initial change"
+      },
+      {
+        "term": "Ultrafiltration",
+        "definition": "The filtration of small molecules from blood plasma into Bowman's capsule under pressure"
+      },
+      {
+        "term": "Selective reabsorption",
+        "definition": "The reabsorption of useful substances from filtrate back into the blood"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of events or detailed account of structure"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between two things"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how blood glucose concentration is controlled by negative feedback when it rises above normal. [6]",
+      "marks": 6,
+      "answer": "When blood glucose concentration rises above normal, this is detected by beta cells in the islets of Langerhans in the pancreas. The beta cells secrete insulin into the blood. Insulin binds to receptors on liver and muscle cells, activating enzymes that convert glucose to glycogen. This process is called glycogenesis. Glucose is also taken up by cells for respiration. As a result, blood glucose concentration decreases back to normal, completing the negative feedback loop.",
+      "markBreakdown": [
+        "Mark 1: Detection by beta cells in islets of Langerhans",
+        "Mark 2: Secretion of insulin",
+        "Mark 3: Insulin binds to receptors on target cells",
+        "Mark 4: Conversion of glucose to glycogen/glycogenesis",
+        "Mark 5: Glucose uptake by cells",
+        "Mark 6: Blood glucose returns to normal"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'insulin breaks down glucose' — always say 'insulin causes glucose to be converted to glycogen'",
+      "Students often confuse positive and negative feedback — homeostasis always uses negative feedback",
+      "Don't say 'kidneys filter waste' — say 'kidneys regulate water potential and remove metabolic waste'",
+      "Never say 'ADH is released when dehydrated' — say 'ADH is released when water potential of blood decreases'",
+      "Students forget that ultrafiltration is non-selective while reabsorption is selective"
+    ],
+    "examinerTips": [
+      "Blood glucose regulation appears in almost every Paper 4 exam",
+      "Always mention specific hormone names (insulin, glucagon, ADH) for full marks",
+      "Draw nephron diagrams with labels for structure questions",
+      "Use the phrase 'water potential' not 'water concentration' when discussing kidneys"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Nephron structure showing glomerulus, Bowman's capsule, proximal convoluted tubule, loop of Henle, distal convoluted tubule, and collecting duct with associated blood vessels"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:04:56.052Z",
+  "updated_at": "2026-04-06T05:04:56.052Z"
+}

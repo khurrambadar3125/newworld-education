@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Biology",
+  "subject_code": "9700",
+  "level": "A Level",
+  "theme": "A2 Biology",
+  "chapter_id": "A2.6",
+  "chapter_name": "Selection and evolution",
+  "note_data": {
+    "title": "Selection and evolution",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Natural selection** acts on phenotypes, causing differential survival and reproduction of organisms best adapted to their environment",
+      "**Directional selection** shifts the mean of a population in one direction, **stabilising selection** reduces variation around the mean, **disruptive selection** favours extreme phenotypes",
+      "**Speciation** occurs when populations become reproductively isolated and genetic differences accumulate until interbreeding is no longer possible",
+      "**Allopatric speciation** results from geographical separation, **sympatric speciation** occurs without geographical barriers through mechanisms like polyploidy",
+      "**Hardy-Weinberg principle** states that allele frequencies remain constant in a population when there is no mutation, selection, migration, or non-random mating",
+      "**Genetic drift** causes random changes in allele frequencies, with greater effects in smaller populations leading to loss of genetic diversity",
+      "**Founder effect** occurs when a small group establishes a new population with reduced genetic variation compared to the original population",
+      "**Bottleneck effect** dramatically reduces population size, causing loss of alleles and reduced genetic diversity in surviving individuals"
+    ],
+    "definitions": [
+      {
+        "term": "Natural selection",
+        "definition": "The differential survival and reproduction of organisms with favourable characteristics that are inherited, leading to evolutionary change"
+      },
+      {
+        "term": "Speciation",
+        "definition": "The formation of new species when populations become reproductively isolated and can no longer interbreed to produce fertile offspring"
+      },
+      {
+        "term": "Genetic drift",
+        "definition": "Random changes in allele frequencies in a population, particularly significant in small populations"
+      },
+      {
+        "term": "Gene pool",
+        "definition": "The total number of alleles of all genes in a breeding population at a given time"
+      },
+      {
+        "term": "Reproductive isolation",
+        "definition": "The prevention of gene flow between populations due to barriers that prevent successful interbreeding"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Distinguish",
+        "instruction": "State clear differences between two concepts using 'whereas' or 'while'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "State what happens in logical sequence without explaining why"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how the founder effect can lead to speciation. [3]",
+      "marks": 3,
+      "answer": "A small group of individuals becomes separated from the main population and establishes a new population. This founding population has a reduced gene pool/genetic diversity compared to the original population. Over time, different mutations arise and different selection pressures act on the two populations, causing genetic divergence until reproductive isolation occurs.",
+      "markBreakdown": [
+        "Mark 1: Small group separated/establishes new population",
+        "Mark 2: Reduced genetic diversity/gene pool in founding population",
+        "Mark 3: Genetic divergence leads to reproductive isolation/speciation"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'survival of the fittest' — always say 'differential survival and reproduction of organisms with favourable characteristics'",
+      "Students confuse genetic drift with natural selection — drift is random, selection is non-random based on fitness",
+      "Don't say organisms 'evolve to survive' — evolution has no direction or purpose, beneficial mutations are selected for",
+      "Never say 'acquired characteristics are inherited' — only genetic changes can be passed to offspring",
+      "Students think Hardy-Weinberg equilibrium is common in nature — it only occurs under very specific unrealistic conditions"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2, especially Hardy-Weinberg calculations",
+      "Always specify the type of selection (directional/stabilising/disruptive) when describing natural selection",
+      "For speciation questions, clearly distinguish between allopatric and sympatric mechanisms",
+      "Hardy-Weinberg questions often involve percentage calculations — show your working clearly"
+    ],
+    "formulas": [
+      "p + q = 1",
+      "p² + 2pq + q² = 1"
+    ],
+    "keyDiagramDescription": "Graph showing normal distribution curves for directional, stabilising and disruptive selection, with arrows indicating direction of selection pressure and resulting population changes over time"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:06:04.458Z",
+  "updated_at": "2026-04-06T05:06:04.458Z"
+}

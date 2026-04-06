@@ -1,0 +1,92 @@
+{
+  "subject": "A Level Mathematics",
+  "subject_code": "9709",
+  "level": "A Level",
+  "theme": "Pure Mathematics 1",
+  "chapter_id": "P1.3",
+  "chapter_name": "Coordinate geometry",
+  "note_data": {
+    "title": "Coordinate geometry",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **equation of a straight line** can be written as y = mx + c where m is the gradient and c is the y-intercept",
+      "**Gradient** of a line through points (x₁, y₁) and (x₂, y₂) is m = (y₂ - y₁)/(x₂ - x₁)",
+      "**Parallel lines** have equal gradients and **perpendicular lines** have gradients whose product is -1",
+      "The **equation of a circle** with centre (a, b) and radius r is (x - a)² + (y - b)² = r²",
+      "To find **points of intersection**, solve the equations simultaneously by substitution or elimination",
+      "A **tangent to a circle** touches the circle at exactly one point and is perpendicular to the radius at that point",
+      "The **distance** between two points (x₁, y₁) and (x₂, y₂) is √[(x₂ - x₁)² + (y₂ - y₁)²]",
+      "To find the **centre and radius** of a circle, complete the square for both x and y terms",
+      "**Discriminant** determines intersection: Δ > 0 (two points), Δ = 0 (one point/tangent), Δ < 0 (no intersection)"
+    ],
+    "definitions": [
+      {
+        "term": "Gradient",
+        "definition": "The measure of steepness of a line, calculated as the change in y divided by the change in x"
+      },
+      {
+        "term": "Tangent",
+        "definition": "A straight line that touches a circle at exactly one point"
+      },
+      {
+        "term": "Chord",
+        "definition": "A straight line joining two points on the circumference of a circle"
+      },
+      {
+        "term": "Perpendicular bisector",
+        "definition": "A line that passes through the midpoint of a line segment and is perpendicular to it"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Find",
+        "instruction": "Calculate the exact value showing all working steps clearly"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Prove the given result by working from the given information to reach the stated conclusion"
+      },
+      {
+        "commandWord": "Determine",
+        "instruction": "Use given information to work out the answer, showing clear reasoning"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A circle has equation x² + y² - 6x + 4y - 12 = 0. Find the centre and radius of the circle.",
+      "marks": 3,
+      "answer": "Complete the square: (x² - 6x + 9) + (y² + 4y + 4) - 12 - 9 - 4 = 0\n(x - 3)² + (y + 2)² = 25\nCentre is (3, -2) and radius is 5",
+      "markBreakdown": [
+        "Mark 1: Complete the square correctly for both x and y terms",
+        "Mark 2: Correctly identify centre coordinates (3, -2)",
+        "Mark 3: Correctly identify radius as 5"
+      ]
+    },
+    "commonMistakes": [
+      "Never write gradient as Δx/Δy — always write as Δy/Δx",
+      "Students often forget to change signs when completing the square for circle equations",
+      "Writing perpendicular gradient as negative reciprocal instead of stating m₁ × m₂ = -1",
+      "Forgetting to take the square root when finding radius from r²",
+      "Not showing substitution steps clearly when finding intersection points"
+    ],
+    "examinerTips": [
+      "Coordinate geometry appears in every Paper 1 and often combines with other topics",
+      "Always show substitution working when solving simultaneous equations",
+      "Check your gradient calculations by ensuring the fraction is in simplest form",
+      "When finding intersections, always verify answers by substituting back into original equations"
+    ],
+    "formulas": [
+      "Gradient: m = (y₂ - y₁)/(x₂ - x₁)",
+      "Distance: d = √[(x₂ - x₁)² + (y₂ - y₁)²]",
+      "Circle: (x - a)² + (y - b)² = r²",
+      "Line: y - y₁ = m(x - x₁)",
+      "Midpoint: ((x₁ + x₂)/2, (y₁ + y₂)/2)"
+    ],
+    "keyDiagramDescription": "A coordinate plane showing a circle with clearly marked centre, radius, and a tangent line at a point of contact, with intersection points marked where a line meets the circle"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:48:39.959Z",
+  "updated_at": "2026-04-06T04:48:39.959Z"
+}

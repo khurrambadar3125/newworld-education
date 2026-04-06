@@ -1,0 +1,100 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "AS Waves and Electricity",
+  "chapter_id": "AS8",
+  "chapter_name": "Superposition",
+  "note_data": {
+    "title": "Superposition",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Principle of superposition** states that when two or more waves meet at a point, the resultant displacement is the vector sum of the individual displacements",
+      "**Constructive interference** occurs when waves meet in phase, producing maximum amplitude where path difference = nλ",
+      "**Destructive interference** occurs when waves meet in antiphase, producing minimum amplitude where path difference = (n + ½)λ",
+      "**Coherent sources** have constant phase difference and same frequency - essential for observable interference patterns",
+      "**Stationary waves** are formed when two waves of same frequency and amplitude travel in opposite directions",
+      "**Nodes** are points of zero displacement in stationary waves, **antinodes** are points of maximum displacement",
+      "Distance between adjacent nodes = λ/2, distance between adjacent antinodes = λ/2",
+      "**Diffraction** is the spreading of waves when they pass through gaps or around obstacles",
+      "Amount of diffraction depends on ratio of wavelength to gap width - maximum diffraction when λ ≈ gap width"
+    ],
+    "definitions": [
+      {
+        "term": "Superposition",
+        "definition": "When two or more waves meet at a point, the resultant displacement is the vector sum of the individual displacements"
+      },
+      {
+        "term": "Coherent sources",
+        "definition": "Sources that emit waves with constant phase difference and the same frequency"
+      },
+      {
+        "term": "Path difference",
+        "definition": "The difference in distance travelled by two waves from their sources to the point where they meet"
+      },
+      {
+        "term": "Stationary wave",
+        "definition": "A wave pattern formed when two waves of the same frequency and amplitude travel in opposite directions and superpose"
+      },
+      {
+        "term": "Node",
+        "definition": "A point on a stationary wave where the displacement is always zero due to destructive interference"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of points about what happens, often with reference to a diagram"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Use given data and relevant equations to prove the stated result"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how a stationary wave is formed and describe the positions of nodes and antinodes. [4]",
+      "marks": 4,
+      "answer": "A stationary wave is formed when two waves of the same frequency and amplitude travel in opposite directions and superpose. At certain points (nodes), the waves always meet in antiphase causing destructive interference, so displacement is always zero. At other points (antinodes), the waves always meet in phase causing constructive interference, so displacement is maximum. The distance between adjacent nodes is λ/2.",
+      "markBreakdown": [
+        "Mark 1: Two waves travel in opposite directions and superpose",
+        "Mark 2: Nodes form where waves meet in antiphase/destructive interference occurs",
+        "Mark 3: Antinodes form where waves meet in phase/constructive interference occurs",
+        "Mark 4: Distance between adjacent nodes = λ/2"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'waves cancel out' - always say 'destructive interference occurs' or 'displacement is zero'",
+      "Students often confuse path difference conditions - remember nλ for constructive, (n + ½)λ for destructive",
+      "Don't say stationary waves 'don't move' - say 'the wave pattern does not progress' or 'energy is not transmitted'",
+      "Students forget that coherent sources must have BOTH same frequency AND constant phase difference",
+      "Never say diffraction only occurs at gaps - it also occurs around obstacles"
+    ],
+    "examinerTips": [
+      "Superposition appears in every paper - learn the path difference conditions perfectly",
+      "Always draw labelled diagrams showing nodes and antinodes for stationary wave questions",
+      "Use the term 'resultant displacement' not just 'amplitude' when describing superposition",
+      "Questions often link diffraction to communication (radio waves around hills in northern Pakistan)"
+    ],
+    "formulas": [
+      "Constructive interference: path difference = nλ",
+      "Destructive interference: path difference = (n + ½)λ",
+      "Distance between adjacent nodes = λ/2",
+      "Distance between adjacent antinodes = λ/2"
+    ],
+    "keyDiagramDescription": "Stationary wave diagram showing sinusoidal pattern with clearly marked nodes (N) at zero displacement and antinodes (A) at maximum displacement, with λ/2 spacing between adjacent nodes/antinodes"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:41:15.059Z",
+  "updated_at": "2026-04-06T04:41:15.059Z"
+}

@@ -1,0 +1,97 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "AS Mechanics",
+  "chapter_id": "AS4",
+  "chapter_name": "Forces, density and pressure",
+  "note_data": {
+    "title": "Forces, density and pressure",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Density** is mass per unit volume and is independent of the size or shape of the object",
+      "**Pressure** is force per unit area acting perpendicular to a surface",
+      "Pressure in liquids increases with **depth** due to the weight of liquid above",
+      "**Upthrust** is the upward force exerted by a fluid on an object immersed in it",
+      "Archimedes' principle states that upthrust equals the **weight of fluid displaced**",
+      "**Moment** of a force is the product of force and perpendicular distance from the pivot",
+      "For equilibrium, the **sum of clockwise moments equals sum of anticlockwise moments**",
+      "The **principle of moments** applies when an object is in rotational equilibrium",
+      "Objects float when upthrust equals weight, and sink when weight exceeds upthrust"
+    ],
+    "definitions": [
+      {
+        "term": "Density",
+        "definition": "The mass per unit volume of a material"
+      },
+      {
+        "term": "Pressure",
+        "definition": "The force acting normally (perpendicularly) per unit area"
+      },
+      {
+        "term": "Upthrust",
+        "definition": "The upward force exerted by a fluid on a body immersed in the fluid"
+      },
+      {
+        "term": "Moment of a force",
+        "definition": "The product of the force and the perpendicular distance from the line of action of the force to the pivot"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Define",
+        "instruction": "Give exact definition with correct physics terminology"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly with correct units and significant figures"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A block of wood of volume 0.40 m³ floats in water with 0.30 m³ submerged. Calculate the density of the wood. (Density of water = 1000 kg m⁻³)",
+      "marks": 3,
+      "answer": "For floating object, weight = upthrust. Weight of wood = mg = ρwood × Vwood × g. Upthrust = weight of water displaced = ρwater × Vsubmerged × g. Therefore: ρwood × 0.40 × g = 1000 × 0.30 × g. ρwood = (1000 × 0.30)/0.40 = 750 kg m⁻³",
+      "markBreakdown": [
+        "Mark 1: Weight = upthrust for floating object",
+        "Mark 2: Correct substitution of values",
+        "Mark 3: Correct answer with units"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse mass and weight - weight depends on gravity, mass does not",
+      "Students often forget that pressure acts perpendicular to surfaces, not just downward",
+      "Never say 'upthrust = density × volume' - always include gravity in the calculation",
+      "Students confuse moment with force - moment requires perpendicular distance",
+      "Never use total volume for upthrust - only use the volume of fluid displaced"
+    ],
+    "examinerTips": [
+      "Density and pressure calculations appear in almost every exam paper",
+      "Always draw force diagrams showing upthrust, weight and any other forces",
+      "For moments, clearly mark the pivot and all perpendicular distances",
+      "State Archimedes' principle when explaining floating and sinking",
+      "Remember to convert units - especially cm³ to m³ for density calculations"
+    ],
+    "formulas": [
+      "ρ = m/V",
+      "P = F/A",
+      "P = ρgh",
+      "Upthrust = ρfluid × Vdisplaced × g",
+      "Moment = F × d"
+    ],
+    "keyDiagramDescription": "Force diagram showing object in fluid with upthrust arrow pointing upward and weight arrow pointing downward, plus moment diagram showing forces and perpendicular distances from pivot point"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:39:52.150Z",
+  "updated_at": "2026-04-06T04:39:52.150Z"
+}

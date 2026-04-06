@@ -1,0 +1,87 @@
+{
+  "subject": "A Level Mathematics",
+  "subject_code": "9709",
+  "level": "A Level",
+  "theme": "Pure Mathematics 2 & 3",
+  "chapter_id": "P2.2",
+  "chapter_name": "Logarithmic and exponential functions",
+  "note_data": {
+    "title": "Logarithmic and exponential functions",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **exponential function** e^x has domain ℝ and range (0, ∞), with derivative d/dx(e^x) = e^x",
+      "The **natural logarithm** ln x has domain (0, ∞) and range ℝ, with derivative d/dx(ln x) = 1/x",
+      "**Logarithm laws**: ln(ab) = ln a + ln b, ln(a/b) = ln a - ln b, ln(a^n) = n ln a",
+      "The functions e^x and ln x are **inverse functions**, so ln(e^x) = x and e^(ln x) = x",
+      "For equations of the form a^x = b, take **natural logarithm of both sides** to get x ln a = ln b",
+      "The graph of y = ln x passes through (1, 0) and has a **vertical asymptote** at x = 0",
+      "The graph of y = e^x passes through (0, 1) and has a **horizontal asymptote** at y = 0",
+      "To solve equations involving ln and exponentials, use the fact that **if ln A = ln B, then A = B**"
+    ],
+    "definitions": [
+      {
+        "term": "Natural logarithm",
+        "definition": "The logarithm to base e, written as ln x, where ln x = y means e^y = x"
+      },
+      {
+        "term": "Exponential function",
+        "definition": "The function f(x) = e^x where e ≈ 2.718 is Euler's number"
+      },
+      {
+        "term": "Inverse functions",
+        "definition": "Functions f and g where f(g(x)) = x and g(f(x)) = x for all values in their domains"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Solve",
+        "instruction": "Find all values of the variable that satisfy the equation, showing clear algebraic steps"
+      },
+      {
+        "commandWord": "Sketch",
+        "instruction": "Draw an accurate graph showing key features: intercepts, asymptotes, and domain/range"
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Calculate the exact value, leaving answers in terms of ln or e where appropriate"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Solve the equation 3e^(2x) - 7 = 5, giving your answer in the form ln k where k is a constant.",
+      "marks": 3,
+      "answer": "3e^(2x) - 7 = 5\n3e^(2x) = 12\ne^(2x) = 4\n2x = ln 4\nx = (ln 4)/2 = ln 2",
+      "markBreakdown": [
+        "Mark 1: Rearrange to get e^(2x) = 4",
+        "Mark 2: Take natural logarithm to get 2x = ln 4",
+        "Mark 3: Final answer x = ln 2"
+      ]
+    },
+    "commonMistakes": [
+      "Never write ln(e^x) = ln e × ln x — always remember ln(e^x) = x",
+      "Students often forget the domain restrictions: ln x only exists for x > 0",
+      "Writing e^(ln x) = e × ln x instead of e^(ln x) = x",
+      "Forgetting to check solutions are valid (positive for ln functions)",
+      "Using log instead of ln — Cambridge always uses natural logarithm unless stated otherwise"
+    ],
+    "examinerTips": [
+      "This topic appears in Paper 2 almost every year, often combined with differentiation",
+      "Always leave answers in exact form using ln and e unless asked for decimal approximation",
+      "When sketching, clearly mark intercepts and asymptotes for full marks",
+      "Check your calculator is in the correct mode when evaluating exponential expressions"
+    ],
+    "formulas": [
+      "ln(ab) = ln a + ln b",
+      "ln(a/b) = ln a - ln b",
+      "ln(a^n) = n ln a",
+      "d/dx(e^x) = e^x",
+      "d/dx(ln x) = 1/x"
+    ],
+    "keyDiagramDescription": "Graph showing y = e^x (exponential curve through (0,1) with horizontal asymptote y = 0) and y = ln x (logarithmic curve through (1,0) with vertical asymptote x = 0), reflected in the line y = x to show they are inverse functions"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 3,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:51:32.443Z",
+  "updated_at": "2026-04-06T04:51:32.443Z"
+}

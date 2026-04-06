@@ -1,0 +1,101 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "A2 Fields",
+  "chapter_id": "A2.6",
+  "chapter_name": "Oscillations",
+  "note_data": {
+    "title": "Oscillations",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Simple harmonic motion (SHM)** occurs when acceleration is directly proportional to displacement from equilibrium and always directed towards equilibrium position",
+      "For SHM: **a = -ω²x** where acceleration is proportional to displacement with negative sign indicating opposite direction",
+      "**Displacement-time graph** for SHM is sinusoidal: x = A sin(ωt + φ) or x = A cos(ωt + φ)",
+      "**Velocity is maximum** at equilibrium position (x = 0) and **zero at maximum displacement** (x = ±A)",
+      "**Kinetic energy is maximum** at equilibrium and **potential energy is maximum** at amplitude, with total energy remaining constant",
+      "**Free oscillations** occur at natural frequency with constant amplitude in absence of external forces",
+      "**Forced oscillations** occur when external periodic force is applied at driving frequency",
+      "**Resonance** occurs when driving frequency equals natural frequency, causing maximum amplitude oscillation",
+      "**Light damping** reduces amplitude gradually, **critical damping** returns to equilibrium fastest without overshoot, **heavy damping** returns slowly to equilibrium"
+    ],
+    "definitions": [
+      {
+        "term": "Simple Harmonic Motion",
+        "definition": "Oscillatory motion where acceleration is directly proportional to displacement from equilibrium position and always directed towards equilibrium"
+      },
+      {
+        "term": "Amplitude",
+        "definition": "Maximum displacement from equilibrium position"
+      },
+      {
+        "term": "Period",
+        "definition": "Time taken for one complete oscillation"
+      },
+      {
+        "term": "Resonance",
+        "definition": "Phenomenon where amplitude of oscillation becomes maximum when driving frequency equals natural frequency"
+      },
+      {
+        "term": "Damping",
+        "definition": "Process where energy is removed from oscillating system, causing amplitude to decrease with time"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "State what happens in logical sequence without explanation"
+      },
+      {
+        "commandWord": "Sketch",
+        "instruction": "Draw clearly labelled axes with correct shape and key features marked"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A mass attached to a spring oscillates with SHM. Explain why the kinetic energy is maximum when the mass passes through the equilibrium position. [3 marks]",
+      "marks": 3,
+      "answer": "At equilibrium position, displacement is zero so potential energy is zero. By conservation of energy, when potential energy is minimum, kinetic energy is maximum. Velocity is maximum at equilibrium position because acceleration changes direction at this point.",
+      "markBreakdown": [
+        "Mark 1: At equilibrium, displacement = 0 so PE = 0",
+        "Mark 2: Conservation of energy means when PE minimum, KE maximum",
+        "Mark 3: Velocity maximum at equilibrium position"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'force is proportional to displacement' — always say 'acceleration is proportional to displacement'",
+      "Students confuse period with frequency — period is time for one oscillation, frequency is oscillations per second",
+      "Don't say 'resonance increases frequency' — resonance increases amplitude when frequencies match",
+      "Never confuse velocity and acceleration graphs — velocity leads displacement by π/2, acceleration leads by π",
+      "Students forget negative sign in a = -ω²x which shows direction towards equilibrium"
+    ],
+    "examinerTips": [
+      "SHM appears in every Paper 2 — learn the defining equation a = -ω²x",
+      "Always sketch displacement, velocity and acceleration on same time axis to show phase relationships",
+      "For energy questions, state that total energy = KE + PE = constant",
+      "Resonance questions often link to practical examples like Tacoma Bridge collapse"
+    ],
+    "formulas": [
+      "a = -ω²x",
+      "x = A sin(ωt + φ)",
+      "v = ±ω√(A² - x²)",
+      "T = 2π/ω",
+      "f = ω/2π",
+      "Total Energy = ½mω²A²"
+    ],
+    "keyDiagramDescription": "Displacement-time graph showing sinusoidal curve with amplitude A and period T marked, plus velocity-time and acceleration-time graphs showing π/2 phase differences"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:44:36.284Z",
+  "updated_at": "2026-04-06T04:44:36.284Z"
+}

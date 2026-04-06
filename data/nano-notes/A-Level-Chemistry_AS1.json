@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Physical Chemistry",
+  "chapter_id": "AS1",
+  "chapter_name": "Atoms, molecules and stoichiometry",
+  "note_data": {
+    "title": "Atoms, molecules and stoichiometry",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Relative atomic mass** is the weighted mean mass of an atom of an element compared to 1/12 of the mass of an atom of carbon-12",
+      "**Relative molecular mass** is the sum of the relative atomic masses of all atoms in a molecule",
+      "**One mole** is the amount of substance that contains as many elementary entities as there are atoms in exactly 12g of carbon-12",
+      "**Avogadro constant** (L) = 6.02 × 10²³ mol⁻¹, representing the number of particles in one mole",
+      "**Empirical formula** shows the simplest whole number ratio of atoms of each element in a compound",
+      "**Molecular formula** shows the actual number of atoms of each element in one molecule of a compound",
+      "**Stoichiometric calculations** use molar ratios from balanced equations to calculate quantities of reactants and products",
+      "**Percentage yield** = (actual yield ÷ theoretical yield) × 100%",
+      "**Limiting reagent** is the reactant that is completely consumed first and determines the amount of product formed"
+    ],
+    "definitions": [
+      {
+        "term": "Mole",
+        "definition": "The amount of substance that contains as many elementary entities as there are atoms in exactly 12g of carbon-12"
+      },
+      {
+        "term": "Empirical formula",
+        "definition": "The simplest whole number ratio of atoms of each element in a compound"
+      },
+      {
+        "term": "Relative atomic mass",
+        "definition": "The weighted mean mass of an atom of an element compared to 1/12 of the mass of an atom of carbon-12"
+      },
+      {
+        "term": "Avogadro constant",
+        "definition": "The number of particles in one mole of any substance, equal to 6.02 × 10²³ mol⁻¹"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the formula or fact in one sentence with no explanation"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly with correct units and appropriate significant figures"
+      },
+      {
+        "commandWord": "Determine",
+        "instruction": "Use calculations or reasoning to find the answer, showing method clearly"
+      },
+      {
+        "commandWord": "Define",
+        "instruction": "Give precise definition using mark scheme language exactly"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A compound contains 40.0% carbon, 6.7% hydrogen and 53.3% oxygen by mass. Calculate the empirical formula of this compound. [3]",
+      "marks": 3,
+      "answer": "C: 40.0 ÷ 12.0 = 3.33 mol, H: 6.7 ÷ 1.0 = 6.7 mol, O: 53.3 ÷ 16.0 = 3.33 mol. Divide by smallest (3.33): C = 1, H = 2.01 ≈ 2, O = 1. Empirical formula = CH₂O",
+      "markBreakdown": [
+        "Mark 1: Correct calculation of moles for each element",
+        "Mark 2: Dividing by smallest number of moles",
+        "Mark 3: Correct empirical formula CH₂O"
+      ]
+    },
+    "commonMistakes": [
+      "Never use Mr instead of Ar for relative atomic mass - they are different quantities",
+      "Students often forget to balance equations before doing stoichiometric calculations",
+      "Never round intermediate calculations - only round the final answer to appropriate significant figures",
+      "Students confuse empirical formula with molecular formula - empirical is the simplest ratio",
+      "Never write percentage yield greater than 100% without explaining experimental errors"
+    ],
+    "examinerTips": [
+      "Stoichiometry questions appear in every Paper 1 and Paper 2 - master the calculations",
+      "Always show working for calculations even if using a calculator",
+      "Check your empirical formula makes chemical sense - watch for common ratios like 1:2:1",
+      "In limiting reagent questions, calculate products from each reactant separately to find which gives less product"
+    ],
+    "formulas": [
+      "n = m/M",
+      "n = V/24",
+      "n = c × V",
+      "% yield = (actual/theoretical) × 100",
+      "Mr = sum of Ar values"
+    ],
+    "keyDiagramDescription": "Mass spectrometer diagram showing ionization, acceleration, deflection and detection stages for determining relative atomic masses"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:29:38.620Z",
+  "updated_at": "2026-04-06T04:29:38.621Z"
+}

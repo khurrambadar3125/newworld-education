@@ -1,0 +1,94 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "A2 Electromagnetism and Nuclear",
+  "chapter_id": "A2.9",
+  "chapter_name": "Magnetic fields",
+  "note_data": {
+    "title": "Magnetic fields",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Magnetic flux** Φ is the product of magnetic flux density and the area normal to the field",
+      "**Magnetic flux density** B is the magnetic flux passing through unit area placed perpendicular to the magnetic field",
+      "The force on a current-carrying conductor in a magnetic field is given by **F = BIL sin θ**",
+      "Fleming's left-hand rule determines the direction of force: first finger = field, second finger = current, thumb = force",
+      "**Magnetic flux linkage** is the product of magnetic flux and the number of turns in a coil",
+      "The **Hall effect** occurs when a potential difference is developed across a conductor carrying current in a magnetic field",
+      "Hall voltage is proportional to both the magnetic flux density and the current through the conductor",
+      "The direction of force on moving charges is given by **F = BQv sin θ** where Q is charge and v is velocity"
+    ],
+    "definitions": [
+      {
+        "term": "Magnetic flux density",
+        "definition": "The magnetic flux passing through unit area placed perpendicular to the magnetic field"
+      },
+      {
+        "term": "Magnetic flux",
+        "definition": "The product of magnetic flux density and the area normal to the magnetic field"
+      },
+      {
+        "term": "Hall effect",
+        "definition": "The production of a potential difference across a conductor carrying current when placed in a magnetic field perpendicular to the current"
+      },
+      {
+        "term": "Tesla",
+        "definition": "The magnetic flux density when a force of 1 N acts on a 1 m length of conductor carrying a current of 1 A perpendicular to the field"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a detailed account of the process or phenomenon step by step"
+      },
+      {
+        "commandWord": "Determine",
+        "instruction": "Use given information to find a value, showing all working clearly"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A straight conductor of length 0.25 m carrying a current of 3.0 A is placed perpendicular to a uniform magnetic field of flux density 0.40 T. Calculate the force on the conductor.",
+      "marks": 3,
+      "answer": "F = BIL sin θ\nF = 0.40 × 3.0 × 0.25 × sin 90°\nF = 0.30 N",
+      "markBreakdown": [
+        "Mark 1: Correct formula F = BIL or F = BIL sin θ",
+        "Mark 2: Correct substitution of values",
+        "Mark 3: Correct final answer with unit"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'magnetic field strength' when you mean magnetic flux density B",
+      "Students often forget to include sin θ in force calculations and assume θ = 90°",
+      "Confusing the direction rules - use Fleming's LEFT hand rule for motor effect, not right hand rule",
+      "Forgetting that Hall voltage depends on both current AND magnetic field strength",
+      "Not stating that area must be perpendicular to field lines when defining magnetic flux"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2 and Paper 4",
+      "Always draw a labelled diagram showing field direction, current direction, and force direction",
+      "Learn Fleming's left-hand rule thoroughly - it's frequently examined",
+      "Hall effect calculations often appear in data analysis questions in Paper 3"
+    ],
+    "formulas": [
+      "Φ = BA cos θ",
+      "F = BIL sin θ",
+      "F = BQv sin θ",
+      "VH = BI/(nqt)"
+    ],
+    "keyDiagramDescription": "Diagram showing a current-carrying conductor in a magnetic field with arrows indicating: magnetic field direction (into/out of page using crosses/dots), current direction along conductor, and resultant force direction perpendicular to both using Fleming's left-hand rule"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:45:43.829Z",
+  "updated_at": "2026-04-06T04:45:43.829Z"
+}

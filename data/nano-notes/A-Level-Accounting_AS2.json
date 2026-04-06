@@ -1,0 +1,102 @@
+{
+  "subject": "A Level Accounting",
+  "subject_code": "9706",
+  "level": "A Level",
+  "theme": "AS Accounting",
+  "chapter_id": "AS2",
+  "chapter_name": "Financial statements of sole traders",
+  "note_data": {
+    "title": "Financial statements of sole traders",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Income statement** shows the profit or loss made by a business over a specific period of time",
+      "**Revenue** is recorded at the top of the income statement and represents income from trading activities",
+      "**Cost of sales** includes opening inventory plus purchases minus closing inventory to calculate gross profit",
+      "**Gross profit** is calculated as revenue minus cost of sales and shows profit from trading before expenses",
+      "**Net profit** is calculated as gross profit minus expenses and represents the final profit available to the owner",
+      "**Balance sheet** shows the financial position of a business at a specific point in time",
+      "**Capital** represents the owner's investment in the business and increases with profits and additional capital introduced",
+      "**Drawings** represent amounts taken out of the business by the owner for personal use and reduce capital",
+      "**Assets** are resources owned by the business that have economic value and are classified as non-current or current",
+      "The accounting equation **Assets = Capital + Liabilities** must always balance on the balance sheet"
+    ],
+    "definitions": [
+      {
+        "term": "Income statement",
+        "definition": "A financial statement that shows the revenue, expenses, and profit or loss of a business over a specific period of time"
+      },
+      {
+        "term": "Balance sheet",
+        "definition": "A financial statement that shows the assets, liabilities and capital of a business at a specific point in time"
+      },
+      {
+        "term": "Capital",
+        "definition": "The amount invested in the business by the owner, including profits retained in the business"
+      },
+      {
+        "term": "Drawings",
+        "definition": "Money or goods taken out of the business by the owner for personal use"
+      },
+      {
+        "term": "Working capital",
+        "definition": "Current assets minus current liabilities, representing short-term liquidity"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Set out the full financial statement with correct headings, layout and calculations"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show your working clearly and state the final answer with appropriate units"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two ways in which drawings affect the financial statements of a sole trader. (4 marks)",
+      "marks": 4,
+      "answer": "Drawings reduce the capital section on the balance sheet because they represent amounts taken out by the owner for personal use, which decreases the owner's equity in the business. Drawings do not appear on the income statement because they are not a business expense but a withdrawal of profit by the owner for personal consumption.",
+      "markBreakdown": [
+        "Mark 1: Drawings reduce capital",
+        "Mark 2: Because they are withdrawals by owner/for personal use",
+        "Mark 3: Drawings not shown on income statement",
+        "Mark 4: Because they are not business expenses/are personal withdrawals"
+      ]
+    },
+    "commonMistakes": [
+      "Never include drawings as an expense in the income statement — drawings are personal withdrawals, not business expenses",
+      "Students often forget to deduct drawings from capital when calculating closing capital",
+      "Never say 'profit and loss account' for A Level — always use 'income statement'",
+      "Students confuse revenue with profit — revenue is total income before deducting any costs",
+      "Never show closing inventory as an expense — it reduces cost of sales by being deducted from opening inventory plus purchases"
+    ],
+    "examinerTips": [
+      "Financial statements questions appear in every Paper 2 exam",
+      "Always use the correct format with proper headings and dates",
+      "Show all workings for calculations to earn method marks",
+      "Remember to distinguish between non-current and current assets/liabilities"
+    ],
+    "formulas": [
+      "Gross profit = Revenue - Cost of sales",
+      "Cost of sales = Opening inventory + Purchases - Closing inventory",
+      "Net profit = Gross profit - Expenses",
+      "Closing capital = Opening capital + Net profit + Capital introduced - Drawings",
+      "Working capital = Current assets - Current liabilities"
+    ],
+    "keyDiagramDescription": "Standard format showing Income Statement (Revenue, Cost of sales, Gross profit, Expenses, Net profit) and Balance Sheet (Non-current assets, Current assets, Current liabilities, Working capital, Net assets, Capital account with opening balance, profit, drawings, closing balance)"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:24:24.951Z",
+  "updated_at": "2026-04-06T05:24:24.951Z"
+}

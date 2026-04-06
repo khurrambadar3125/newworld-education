@@ -1,0 +1,104 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "A2 Inorganic Chemistry",
+  "chapter_id": "A2.4",
+  "chapter_name": "Transition elements",
+  "note_data": {
+    "title": "Transition elements",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Transition elements** are d-block elements that form at least one stable ion with a partially filled d-orbital",
+      "**Complex ions** consist of a central metal ion surrounded by ligands that form coordinate bonds by donating electron pairs",
+      "**Ligands** are molecules or ions that donate a lone pair of electrons to form a coordinate bond with the central metal ion",
+      "**Oxidation states** of transition elements vary because energy difference between 4s and 3d orbitals is small, allowing multiple electron configurations",
+      "**Colour** in transition metal compounds arises from d-d electron transitions when d-orbitals are split by ligands",
+      "**Catalytic activity** occurs because transition metals can change oxidation states easily and provide alternative reaction pathways",
+      "**Coordinate bonds** form when ligands donate lone pairs to vacant orbitals on the central metal ion",
+      "**Shape** of complexes depends on coordination number: tetrahedral (4), square planar (4), or octahedral (6)",
+      "**Ligand substitution** reactions occur when one ligand is replaced by another, often with colour changes",
+      "**Variable oxidation states** result from successive loss of 4s electrons then 3d electrons due to similar ionization energies"
+    ],
+    "definitions": [
+      {
+        "term": "Transition element",
+        "definition": "A d-block element that forms at least one stable ion with a partially filled d-subshell"
+      },
+      {
+        "term": "Complex ion",
+        "definition": "A central metal ion surrounded by ligands that are bonded to it by coordinate bonds"
+      },
+      {
+        "term": "Ligand",
+        "definition": "A molecule or ion that donates a lone pair of electrons to form a coordinate bond with a central metal ion"
+      },
+      {
+        "term": "Coordination number",
+        "definition": "The number of coordinate bonds formed between the central metal ion and ligands"
+      },
+      {
+        "term": "Coordinate bond",
+        "definition": "A covalent bond formed when one atom provides both electrons for the shared pair"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Use knowledge to propose a reasonable answer with brief justification"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give observable changes like colour changes or precipitate formation"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why transition metals show variable oxidation states and give two examples of different oxidation states shown by iron.",
+      "marks": 4,
+      "answer": "Transition metals show variable oxidation states because the energy difference between the 4s and 3d orbitals is small, so electrons can be removed from both subshells. This allows multiple stable electron configurations to exist. Iron shows oxidation states of +2 (in FeCl₂ or Fe²⁺ ions) and +3 (in FeCl₃ or Fe³⁺ ions).",
+      "markBreakdown": [
+        "Mark 1: Energy difference between 4s and 3d orbitals is small",
+        "Mark 2: Electrons can be removed from both subshells/multiple stable configurations",
+        "Mark 3: Example of +2 oxidation state with correct formula",
+        "Mark 4: Example of +3 oxidation state with correct formula"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'transition metals are d-block elements' — Sc and Zn are d-block but not transition elements",
+      "Students often forget that coordinate bonds involve BOTH electrons coming from the ligand",
+      "Don't confuse coordination number with oxidation number — coordination number counts bonds, not charge",
+      "Never say colour is due to 'electrons jumping energy levels' — say 'd-d electron transitions between split d-orbitals'",
+      "Students write incomplete ligand substitution equations — must show ALL species including water ligands being replaced"
+    ],
+    "examinerTips": [
+      "Transition metals appear in almost every Paper 2, especially ligand substitution and colour changes",
+      "Always state the coordination number when describing complex shapes",
+      "Learn the common ligands: H₂O, NH₃, Cl⁻, OH⁻, CN⁻",
+      "Colour change questions often worth 2-3 marks — give initial colour AND final colour with formulas"
+    ],
+    "formulas": [
+      "[Cu(H₂O)₆]²⁺",
+      "[Cu(NH₃)₄(H₂O)₂]²⁺",
+      "[CuCl₄]²⁻",
+      "Fe²⁺",
+      "Fe³⁺",
+      "Cr³⁺",
+      "Cr₂O₇²⁻"
+    ],
+    "keyDiagramDescription": "Octahedral complex showing central metal ion with 6 ligands arranged at 90° bond angles, clearly showing coordinate bonds as arrows from ligand lone pairs to metal ion"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:37:35.341Z",
+  "updated_at": "2026-04-06T04:37:35.341Z"
+}

@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Physical Chemistry",
+  "chapter_id": "AS4",
+  "chapter_name": "States of matter",
+  "note_data": {
+    "title": "States of matter",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Kinetic theory** states that all particles are in constant random motion with kinetic energy proportional to absolute temperature",
+      "In **solids**, particles vibrate about fixed positions with strong intermolecular forces holding them in a regular lattice structure",
+      "In **liquids**, particles move randomly but remain close together with weaker intermolecular forces than solids",
+      "In **gases**, particles move rapidly in random directions with negligible intermolecular forces and occupy all available space",
+      "**Ideal gas** obeys all gas laws at all temperatures and pressures, with particles having no volume and no intermolecular forces",
+      "**Real gases** deviate from ideal behavior at high pressure and low temperature due to particle volume and intermolecular attractions",
+      "**Boiling point** is the temperature at which vapor pressure equals atmospheric pressure and bubbles form throughout the liquid",
+      "Increase in pressure **raises boiling point** because vapor pressure must reach a higher value to equal atmospheric pressure",
+      "**pV = nRT** applies to ideal gases where p = pressure, V = volume, n = moles, R = gas constant, T = absolute temperature"
+    ],
+    "definitions": [
+      {
+        "term": "Ideal gas",
+        "definition": "A gas that obeys the equation pV = nRT at all temperatures and pressures, with particles having negligible volume and no intermolecular forces"
+      },
+      {
+        "term": "Boiling point",
+        "definition": "The temperature at which the vapor pressure of a liquid equals the atmospheric pressure and bubbles of vapor form throughout the liquid"
+      },
+      {
+        "term": "Kinetic theory",
+        "definition": "The theory that all matter consists of particles in constant random motion with average kinetic energy proportional to absolute temperature"
+      },
+      {
+        "term": "Vapor pressure",
+        "definition": "The pressure exerted by vapor molecules when the liquid and vapor are in dynamic equilibrium"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give observable changes or characteristics without explaining why"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between the two states"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why the boiling point of water increases when pressure is increased. [3]",
+      "marks": 3,
+      "answer": "Boiling occurs when vapor pressure equals atmospheric pressure. When atmospheric pressure increases, the vapor pressure must reach a higher value to equal it. This requires a higher temperature, so the boiling point increases.",
+      "markBreakdown": [
+        "Mark 1: Boiling occurs when vapor pressure equals atmospheric pressure",
+        "Mark 2: Higher atmospheric pressure means vapor pressure must reach higher value",
+        "Mark 3: Higher temperature needed, so boiling point increases"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'molecules have more energy' — always say 'average kinetic energy increases'",
+      "Students often confuse vapor pressure with atmospheric pressure in boiling point explanations",
+      "Never say 'particles get bigger' when heated — say 'particles move faster and further apart'",
+      "Don't confuse evaporation with boiling — evaporation occurs at surface only, boiling occurs throughout liquid",
+      "Never use Celsius in gas law calculations — must convert to Kelvin (K = °C + 273)"
+    ],
+    "examinerTips": [
+      "Gas law questions appear in every Paper 2 — practice unit conversions",
+      "Always state assumptions when using ideal gas equation (negligible intermolecular forces, negligible particle volume)",
+      "Pressure cookers in Pakistani kitchens are good examples of increased pressure raising boiling point",
+      "Draw particle diagrams showing relative spacing and motion for different states"
+    ],
+    "formulas": [
+      "pV = nRT",
+      "p₁V₁/T₁ = p₂V₂/T₂",
+      "pV = constant (Boyle's law)",
+      "V/T = constant (Charles' law)",
+      "p/T = constant (Gay-Lussac's law)"
+    ],
+    "keyDiagramDescription": "Particle arrangement diagrams showing regular lattice structure in solids, close but random arrangement in liquids, and widely spaced random arrangement in gases with motion arrows"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:30:45.195Z",
+  "updated_at": "2026-04-06T04:30:45.195Z"
+}

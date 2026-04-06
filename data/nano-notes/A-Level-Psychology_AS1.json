@@ -1,0 +1,97 @@
+{
+  "subject": "A Level Psychology",
+  "subject_code": "9990",
+  "level": "A Level",
+  "theme": "AS Psychology",
+  "chapter_id": "AS1",
+  "chapter_name": "Research methods",
+  "note_data": {
+    "title": "Research methods",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **laboratory experiment** has high control over extraneous variables and can establish cause and effect relationships",
+      "A **field experiment** takes place in the participant's natural environment with manipulation of the independent variable",
+      "**Naturalistic observation** involves watching and recording behavior in its natural setting without interference",
+      "**Self-report methods** include questionnaires and interviews where participants provide information about themselves",
+      "A **case study** is an in-depth investigation of a single individual, group or event using multiple research methods",
+      "**Informed consent** means participants must be told the true aims and procedures before agreeing to take part",
+      "**Opportunity sampling** involves selecting participants who are easily available at the time of study",
+      "**Random sampling** gives every member of the target population an equal chance of being selected",
+      "**Reliability** refers to consistency of results when a study is repeated under the same conditions",
+      "**Validity** refers to whether a study measures what it claims to measure and results are accurate"
+    ],
+    "definitions": [
+      {
+        "term": "Independent variable",
+        "definition": "The variable that is manipulated or changed by the researcher to see its effect on the dependent variable"
+      },
+      {
+        "term": "Dependent variable",
+        "definition": "The variable that is measured by the researcher to see if it has been affected by changes to the independent variable"
+      },
+      {
+        "term": "Extraneous variable",
+        "definition": "Any variable other than the independent variable that could affect the dependent variable and confound the results"
+      },
+      {
+        "term": "Operationalization",
+        "definition": "Defining variables in terms of how they will be measured or manipulated in a specific study"
+      },
+      {
+        "term": "Debriefing",
+        "definition": "Informing participants about the true nature of the study after it has ended and checking for any negative effects"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Identify",
+        "instruction": "Name the research method/sampling technique. One word answers acceptable."
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give details about what the method involves. Use 'involves' or 'includes' to structure your answer."
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Give both strengths AND weaknesses. Use 'However' to show balance between points."
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Propose a realistic research method with brief justification of why it's appropriate."
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain one strength and one weakness of using questionnaires in psychological research. [4 marks]",
+      "marks": 4,
+      "answer": "One strength of questionnaires is that they can collect data from large numbers of participants quickly and cost-effectively. This allows researchers to gather a representative sample and generalize findings to the wider population. One weakness is that questionnaires rely on self-report which may lack validity. Participants may give socially desirable responses rather than honest answers, especially on sensitive topics, which reduces the accuracy of the data collected.",
+      "markBreakdown": [
+        "Mark 1: Strength identified (large sample/cost-effective)",
+        "Mark 2: Elaboration of strength with justification",
+        "Mark 3: Weakness identified (social desirability/honesty)",
+        "Mark 4: Elaboration of weakness with justification"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'bias' alone - always specify the type of bias (sampling bias, researcher bias, response bias)",
+      "Students confuse reliability with validity - reliability is consistency, validity is accuracy",
+      "Don't just list ethical guidelines - explain WHY they are important for protecting participants",
+      "Avoid saying experiments are 'more scientific' - explain specifically what makes them scientific (control, objectivity)",
+      "Don't write 'the results might be wrong' - use precise terms like 'lacks validity' or 'lacks reliability'"
+    ],
+    "examinerTips": [
+      "Research methods appears in every paper - learn all sampling and research methods thoroughly",
+      "Always give psychological examples when evaluating methods, not everyday examples",
+      "For ethics questions, link guidelines to protection of participants rather than just listing rules",
+      "When comparing methods, use 'whereas' or 'however' to show clear contrasts",
+      "Practice identifying IV and DV in research scenarios - this appears frequently in short answer questions"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Draw a simple experimental design diagram showing: IV (what's manipulated) → DV (what's measured), with arrows indicating cause and effect relationship. Include control group and experimental group boxes."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:20:22.777Z",
+  "updated_at": "2026-04-06T05:20:22.779Z"
+}

@@ -1,0 +1,98 @@
+{
+  "subject": "A Level Biology",
+  "subject_code": "9700",
+  "level": "A Level",
+  "theme": "A2 Biology",
+  "chapter_id": "A2.8",
+  "chapter_name": "Genetic technology",
+  "note_data": {
+    "title": "Genetic technology",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**PCR (polymerase chain reaction)** amplifies specific DNA sequences using repeated cycles of denaturation at 95°C, primer annealing at 55°C, and extension at 72°C",
+      "**Gel electrophoresis** separates DNA fragments by size as smaller fragments move further through the gel towards the positive electrode",
+      "**Genetic engineering** involves the transfer of genes from one organism to another using vectors such as plasmids or viruses",
+      "**Restriction enzymes** cut DNA at specific recognition sequences, creating sticky ends that allow DNA fragments to be joined by DNA ligase",
+      "**Transformation** is the uptake of foreign DNA by bacterial cells, often facilitated by heat shock or electroporation",
+      "**Gene cloning** produces multiple identical copies of a gene by inserting it into a vector and allowing bacterial reproduction",
+      "**GMOs (genetically modified organisms)** contain genes from other species and include examples like insulin-producing bacteria and herbicide-resistant crops",
+      "**Reproductive cloning** produces genetically identical organisms using nuclear transfer from somatic cells to enucleated eggs",
+      "**DNA probes** are single-stranded DNA sequences with fluorescent or radioactive labels used to locate specific genes",
+      "**CRISPR-Cas9** is a gene editing system that uses guide RNA to direct Cas9 enzyme to cut DNA at precise locations"
+    ],
+    "definitions": [
+      {
+        "term": "PCR",
+        "definition": "A technique that uses repeated cycles of heating and cooling with DNA polymerase to amplify specific DNA sequences"
+      },
+      {
+        "term": "Transformation",
+        "definition": "The uptake of foreign DNA by bacterial cells"
+      },
+      {
+        "term": "Vector",
+        "definition": "A DNA molecule used to transfer foreign genetic material into another cell"
+      },
+      {
+        "term": "Restriction enzyme",
+        "definition": "An enzyme that cuts DNA at a specific recognition sequence"
+      },
+      {
+        "term": "GMO",
+        "definition": "A genetically modified organism that contains genes from another species"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of steps or detailed account of the process"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give a plausible biological explanation using your knowledge"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Describe the process of using PCR to amplify a specific gene. [6]",
+      "marks": 6,
+      "answer": "DNA sample is heated to 95°C to denature the double-stranded DNA and separate the strands. Temperature is lowered to 55°C to allow primers to anneal to complementary sequences flanking the target gene. Temperature is raised to 72°C for DNA polymerase to extend the primers and synthesize new DNA strands. This cycle is repeated 25-30 times to exponentially amplify the target sequence. Each cycle doubles the number of target DNA molecules. Millions of copies of the specific gene are produced.",
+      "markBreakdown": [
+        "Mark 1: Denaturation at 95°C",
+        "Mark 2: Primer annealing at 55°C",
+        "Mark 3: Extension at 72°C by DNA polymerase",
+        "Mark 4: Cycles repeated many times",
+        "Mark 5: Exponential amplification occurs",
+        "Mark 6: Millions of copies produced"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'DNA breaks apart' — always say 'DNA denatures' or 'hydrogen bonds between strands break'",
+      "Students often confuse the temperatures in PCR — denaturation is highest at 95°C, not extension",
+      "Don't say 'genes are inserted' — say 'genes are transferred' or 'DNA is inserted into vectors'",
+      "Never say 'bacteria take up DNA automatically' — mention transformation requires treatment with calcium chloride or electroporation",
+      "Students often forget that gel electrophoresis separates by SIZE not charge — smaller fragments travel further"
+    ],
+    "examinerTips": [
+      "PCR appears almost every year in Paper 4 — learn the three temperatures and what happens at each",
+      "Always mention specific enzymes: restriction enzymes, DNA ligase, DNA polymerase",
+      "Gel electrophoresis questions often ask about fragment size — smaller = travels further",
+      "For genetic engineering, always mention: cut with restriction enzyme, insert into vector, transform into host"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Gel electrophoresis setup showing wells at negative electrode, DNA fragments separated by size with smaller fragments near positive electrode, and bands visible under UV light"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:06:47.148Z",
+  "updated_at": "2026-04-06T05:06:47.148Z"
+}

@@ -1,0 +1,104 @@
+{
+  "subject": "A Level Business",
+  "subject_code": "9609",
+  "level": "A Level",
+  "theme": "AS Business",
+  "chapter_id": "AS5",
+  "chapter_name": "Finance and accounting",
+  "note_data": {
+    "title": "Finance and accounting",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Cash flow** is the money flowing into and out of a business over a period of time, essential for day-to-day operations",
+      "**Working capital** is current assets minus current liabilities, measuring short-term financial health of the business",
+      "**Break-even point** occurs when total revenue equals total costs, where the business makes neither profit nor loss",
+      "**Investment appraisal** methods include payback period, average rate of return (ARR), and net present value (NPV) to evaluate project viability",
+      "**Budgets** are financial plans for future periods that help control costs, coordinate activities and motivate employees",
+      "**Variance analysis** compares actual results with budgeted figures to identify areas requiring management attention",
+      "**Fixed costs** remain constant regardless of output level, while **variable costs** change directly with production volume",
+      "**Net present value (NPV)** considers the time value of money by discounting future cash flows to present value",
+      "**Liquidity ratios** measure a business's ability to meet short-term debts, including current ratio and acid test ratio"
+    ],
+    "definitions": [
+      {
+        "term": "Cash flow",
+        "definition": "The movement of money into and out of a business over a specific time period"
+      },
+      {
+        "term": "Break-even point",
+        "definition": "The level of output where total revenue equals total costs and the business makes neither profit nor loss"
+      },
+      {
+        "term": "Working capital",
+        "definition": "Current assets minus current liabilities, representing funds available for day-to-day operations"
+      },
+      {
+        "term": "Investment appraisal",
+        "definition": "Methods used to evaluate the financial viability of long-term investment projects"
+      },
+      {
+        "term": "Net present value",
+        "definition": "The difference between present value of cash inflows and present value of cash outflows over a project's lifetime"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working clearly with correct formula and units"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the information and explain the significance of your findings"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two benefits to Pak Textile Ltd of preparing cash flow forecasts. [6 marks]",
+      "marks": 6,
+      "answer": "One benefit is that cash flow forecasts help identify potential cash shortages in advance. This is because the forecast shows when cash outflows exceed inflows, allowing management to arrange overdraft facilities or delay payments to suppliers, preventing business failure due to insolvency. Another benefit is that cash flow forecasts assist in planning major purchases and investments. This is because managers can identify periods of positive cash flow when the business can afford to buy new machinery or expand operations, ensuring optimal timing of capital expenditure decisions.",
+      "markBreakdown": [
+        "Mark 1: Identify cash shortages benefit",
+        "Mark 2: Explanation of preventing insolvency",
+        "Mark 3: Development of arranging finance",
+        "Mark 4: Planning investments benefit",
+        "Mark 5: Explanation of timing decisions",
+        "Mark 6: Development of optimal resource allocation"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse cash flow with profit — cash flow is actual money movement, profit includes non-cash items like depreciation",
+      "Students often forget to show working in calculation questions — always write the formula first",
+      "When calculating break-even, don't include variable costs in the denominator — use contribution per unit only",
+      "Never say NPV tells you the profit — it shows the net benefit in today's money terms",
+      "Students confuse payback period with ARR — payback measures time, ARR measures percentage return"
+    ],
+    "examinerTips": [
+      "Break-even analysis appears in almost every Paper 2 — practice drawing and interpreting break-even charts",
+      "Always show currency units (PKR) in Pakistani business contexts",
+      "For NPV calculations, clearly state whether you recommend acceptance (positive NPV) or rejection (negative NPV)",
+      "When analyzing ratios, always compare with previous years or industry averages for meaningful evaluation"
+    ],
+    "formulas": [
+      "Break-even point = Fixed costs ÷ Contribution per unit",
+      "Contribution per unit = Selling price per unit - Variable cost per unit",
+      "Payback period = Initial investment ÷ Annual cash inflow",
+      "ARR = (Average annual profit ÷ Initial investment) × 100",
+      "Current ratio = Current assets ÷ Current liabilities",
+      "Acid test ratio = (Current assets - Stock) ÷ Current liabilities"
+    ],
+    "keyDiagramDescription": "Break-even chart with x-axis showing output/sales volume, y-axis showing costs/revenue (PKR). Plot fixed costs (horizontal line), total costs (upward sloping), and total revenue (steeper upward slope). Mark break-even point where total costs and revenue intersect, showing margin of safety and profit/loss areas."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:12:37.072Z",
+  "updated_at": "2026-04-06T05:12:37.072Z"
+}

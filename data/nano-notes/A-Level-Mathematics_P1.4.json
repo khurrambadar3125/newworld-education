@@ -1,0 +1,92 @@
+{
+  "subject": "A Level Mathematics",
+  "subject_code": "9709",
+  "level": "A Level",
+  "theme": "Pure Mathematics 1",
+  "chapter_id": "P1.4",
+  "chapter_name": "Circular measure",
+  "note_data": {
+    "title": "Circular measure",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Radian** is the angle subtended at the centre of a circle by an arc equal in length to the radius",
+      "**Arc length** s = rθ where r is radius and θ is angle in radians",
+      "**Sector area** A = ½r²θ where θ is in radians",
+      "**Convert degrees to radians**: multiply by π/180 or use θ(rad) = πθ(deg)/180",
+      "**Convert radians to degrees**: multiply by 180/π or use θ(deg) = 180θ(rad)/π",
+      "**Small angle approximations**: sin θ ≈ θ, tan θ ≈ θ, cos θ ≈ 1 - θ²/2 when θ is small and in radians",
+      "**Perimeter of sector** = 2r + rθ where θ is in radians",
+      "For a **complete circle**: circumference = 2πr, area = πr², angle = 2π radians = 360°"
+    ],
+    "definitions": [
+      {
+        "term": "Radian",
+        "definition": "The angle subtended at the centre of a circle by an arc whose length is equal to the radius of the circle"
+      },
+      {
+        "term": "Arc length",
+        "definition": "The distance along the curved path of a circle between two points, calculated using s = rθ where θ is in radians"
+      },
+      {
+        "term": "Sector",
+        "definition": "The region of a circle enclosed by two radii and an arc"
+      },
+      {
+        "term": "Small angle approximation",
+        "definition": "When θ is small and measured in radians: sin θ ≈ θ, tan θ ≈ θ, cos θ ≈ 1 - θ²/2"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working steps and ensure angle is in correct units (radians for arc length and area formulas)"
+      },
+      {
+        "commandWord": "Convert",
+        "instruction": "Multiply by appropriate conversion factor and show the calculation clearly"
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Identify which formula to use, substitute values correctly, and calculate the final answer"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A sector of a circle has radius 8 cm and arc length 12 cm. Find (a) the angle of the sector in radians, (b) the area of the sector.",
+      "marks": 4,
+      "answer": "(a) Using s = rθ, so θ = s/r = 12/8 = 1.5 radians\n(b) Using A = ½r²θ, so A = ½ × 8² × 1.5 = ½ × 64 × 1.5 = 48 cm²",
+      "markBreakdown": [
+        "Mark 1: Correct formula s = rθ",
+        "Mark 2: θ = 1.5 radians",
+        "Mark 3: Correct formula A = ½r²θ",
+        "Mark 4: A = 48 cm²"
+      ]
+    },
+    "commonMistakes": [
+      "Never use degrees in arc length formula s = rθ — always convert to radians first",
+      "Students often forget to convert between degrees and radians when required",
+      "Never use A = ½ × base × height for sector area — always use A = ½r²θ",
+      "Students confuse arc length with chord length — arc length follows the curve",
+      "Never approximate π as 22/7 unless specifically told — leave as π or use calculator value"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 1 and often combined with trigonometry",
+      "Always check units — if angle given in degrees, convert to radians for formulas",
+      "Draw a clear diagram showing radius, arc length, and angle for full marks",
+      "Small angle approximations only work when θ is in radians and typically θ < 0.2"
+    ],
+    "formulas": [
+      "s = rθ",
+      "A = ½r²θ",
+      "θ(rad) = πθ(deg)/180",
+      "sin θ ≈ θ (small angles)",
+      "cos θ ≈ 1 - θ²/2 (small angles)"
+    ],
+    "keyDiagramDescription": "Circle with centre O, radius r, showing sector with angle θ (in radians), arc length s, and two radii forming the sector boundaries"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:49:00.586Z",
+  "updated_at": "2026-04-06T04:49:00.586Z"
+}

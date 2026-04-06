@@ -1,0 +1,91 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Inorganic Chemistry",
+  "chapter_id": "AS9",
+  "chapter_name": "The Periodic Table: chemical periodicity",
+  "note_data": {
+    "title": "The Periodic Table: chemical periodicity",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Periodicity** is the repetition of physical and chemical properties at regular intervals when elements are arranged in order of atomic number",
+      "**Atomic radius** decreases across a period due to increasing nuclear charge with same number of electron shells",
+      "**First ionisation energy** increases across a period due to increasing nuclear charge and decreasing atomic radius",
+      "**Metallic character** decreases across a period as elements change from metals to metalloids to non-metals",
+      "**Oxides** change from basic (metal oxides) to amphoteric to acidic (non-metal oxides) across a period",
+      "**Chlorides** change from ionic (metal chlorides) to covalent (non-metal chlorides) across a period",
+      "Group 1 elements show increasing reactivity down the group due to decreasing ionisation energy",
+      "Group 7 elements show decreasing reactivity down the group due to increasing atomic radius and shielding effect",
+      "**Melting points** across Period 3 increase from Na to Si then decrease from P to Ar due to changes in bonding and structure"
+    ],
+    "definitions": [
+      {
+        "term": "Periodicity",
+        "definition": "The repetition of physical and chemical properties at regular intervals when elements are arranged in order of atomic number"
+      },
+      {
+        "term": "First ionisation energy",
+        "definition": "The energy required to remove one mole of electrons from one mole of gaseous atoms to form one mole of gaseous 1+ ions"
+      },
+      {
+        "term": "Atomic radius",
+        "definition": "Half the distance between the nuclei of two atoms of the same element when they are covalently bonded together"
+      },
+      {
+        "term": "Amphoteric oxide",
+        "definition": "An oxide that can react with both acids and bases to form salts"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the trend in one sentence without explanation"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the trend + reason using nuclear charge, shielding, or atomic size"
+      },
+      {
+        "commandWord": "Predict",
+        "instruction": "Use known periodic trends to suggest properties of unknown elements"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the trend in atomic radius across Period 3 from sodium to chlorine.",
+      "marks": 3,
+      "answer": "Atomic radius decreases from sodium to chlorine. This is because nuclear charge increases across the period while the number of electron shells remains constant. The increased nuclear charge pulls the electrons closer to the nucleus, reducing the atomic radius.",
+      "markBreakdown": [
+        "Mark 1: Atomic radius decreases",
+        "Mark 2: Nuclear charge increases",
+        "Mark 3: Same number of electron shells/increased attraction pulls electrons closer"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'atomic size increases due to more protons' — nuclear charge increases but atomic radius decreases across periods",
+      "Students often confuse Group 1 reactivity (increases down group) with Group 7 reactivity (decreases down group)",
+      "Don't write 'atoms get bigger down groups due to more electrons' — say 'more electron shells/energy levels'",
+      "Never describe amphoteric as 'neutral' — it means reacts with both acids and bases",
+      "Students write 'covalent radius' instead of 'atomic radius' for bonded atoms"
+    ],
+    "examinerTips": [
+      "Periodic trends appear in every Paper 2 — learn the explanations using nuclear charge and shielding",
+      "Always state the trend first, then explain using electron configuration concepts",
+      "For oxide/chloride questions, link structure to properties (ionic vs covalent)",
+      "Group comparisons often test understanding of electron configuration changes"
+    ],
+    "formulas": [
+      "Na2O + H2O → 2NaOH",
+      "SO3 + H2O → H2SO4",
+      "Al2O3 + 6HCl → 2AlCl3 + 3H2O",
+      "Al2O3 + 2NaOH + 6H2O → 2Na[Al(OH)4(H2O)2]"
+    ],
+    "keyDiagramDescription": "Periodic table showing trends with arrows: atomic radius decreasing left to right, ionisation energy increasing left to right, metallic character decreasing left to right, and reactivity patterns for Groups 1 and 7"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:32:35.324Z",
+  "updated_at": "2026-04-06T04:32:35.324Z"
+}

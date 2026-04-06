@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Economics",
+  "subject_code": "9708",
+  "level": "A Level",
+  "theme": "A2 Macroeconomics",
+  "chapter_id": "A2.3",
+  "chapter_name": "Economic growth and sustainability",
+  "note_data": {
+    "title": "Economic growth and sustainability",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Economic growth** is measured by the percentage change in real GDP per capita over time, showing increased productive capacity",
+      "**Sustainable development** meets present needs without compromising future generations' ability to meet their own needs",
+      "**HDI (Human Development Index)** combines life expectancy, education levels and real GDP per capita to measure development beyond income",
+      "Economic growth may not reduce **income inequality** - benefits may be concentrated among higher income groups",
+      "**Absolute poverty** occurs when income falls below minimum needed for survival, while **relative poverty** is income below a certain percentage of median income",
+      "Environmental costs of growth include resource depletion, pollution and climate change which reduce future productive capacity",
+      "**Inclusive growth** ensures benefits reach all sections of society, particularly the poor and marginalized groups",
+      "Government intervention through progressive taxation and transfer payments can reduce inequality while maintaining growth incentives"
+    ],
+    "definitions": [
+      {
+        "term": "Economic growth",
+        "definition": "The increase in real GDP over time, measured as a percentage change in the productive capacity of an economy"
+      },
+      {
+        "term": "Sustainable development",
+        "definition": "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs"
+      },
+      {
+        "term": "HDI (Human Development Index)",
+        "definition": "A composite measure of development combining life expectancy at birth, education levels and real GDP per capita"
+      },
+      {
+        "term": "Income inequality",
+        "definition": "The unequal distribution of income across different participants in an economy, often measured by the Gini coefficient"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Give advantages AND disadvantages, then reach a justified conclusion"
+      },
+      {
+        "commandWord": "Discuss",
+        "instruction": "Present different viewpoints with evidence, show understanding of complexity"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why economic growth may not always lead to improved living standards. [6 marks]",
+      "marks": 6,
+      "answer": "Economic growth may not improve living standards because the benefits may be unequally distributed, with most gains going to high-income groups while the poor see little improvement. Growth may also come at environmental costs such as pollution and resource depletion, reducing quality of life and future productive capacity. Additionally, if population growth exceeds economic growth, real GDP per capita may fall despite overall economic expansion. Finally, growth focused on capital goods rather than consumer goods may not immediately improve current living standards, though it may benefit future generations.",
+      "markBreakdown": [
+        "Mark 1: Unequal distribution of benefits",
+        "Mark 2: Explanation of how inequality prevents improvement",
+        "Mark 3: Environmental costs reducing quality of life",
+        "Mark 4: Population growth exceeding economic growth",
+        "Mark 5: Capital vs consumer goods distinction",
+        "Mark 6: Clear examples or development of points"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse economic growth with development - growth is quantitative (GDP), development includes qualitative factors",
+      "Students often ignore environmental sustainability when discussing long-term growth",
+      "Don't assume growth automatically reduces poverty - need to explain distribution mechanisms",
+      "Never use nominal GDP - always refer to real GDP when measuring growth",
+      "Students confuse absolute and relative poverty - be precise with definitions"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 essays and Paper 3 data response questions",
+      "Always consider both short-term and long-term effects when evaluating sustainability",
+      "Use Pakistani examples like CPEC projects or textile industry growth where relevant",
+      "Link to other topics like market failure (environmental externalities) and government intervention"
+    ],
+    "formulas": [
+      "Economic growth rate = (Real GDP year 2 - Real GDP year 1) / Real GDP year 1 × 100",
+      "Real GDP per capita = Real GDP / Population",
+      "HDI = (Life expectancy index + Education index + Income index) / 3"
+    ],
+    "keyDiagramDescription": "Kuznets Curve showing relationship between economic development (x-axis) and income inequality (y-axis) - inequality initially rises then falls as economy develops, forming an inverted U-shape"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:10:09.907Z",
+  "updated_at": "2026-04-06T05:10:09.907Z"
+}

@@ -1,0 +1,88 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "A2 Fields",
+  "chapter_id": "A2.3",
+  "chapter_name": "Temperature",
+  "note_data": {
+    "title": "Temperature",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Temperature** is a measure of the average kinetic energy of molecules in a substance",
+      "**Thermal equilibrium** exists when two objects in thermal contact have no net flow of thermal energy between them",
+      "Objects in thermal equilibrium have the same **temperature**",
+      "The **Celsius scale** defines 0°C as the ice point and 100°C as the steam point of pure water at standard atmospheric pressure",
+      "The **Kelvin scale** is the absolute temperature scale where 0 K represents absolute zero",
+      "**Absolute zero** (0 K = -273°C) is the temperature at which molecules have minimum kinetic energy",
+      "A **thermometer** measures temperature by using a physical property that varies with temperature",
+      "**Sensitivity** of a thermometer is the change in the thermometric property per unit change in temperature",
+      "**Range** of a thermometer is the minimum and maximum temperatures it can measure accurately"
+    ],
+    "definitions": [
+      {
+        "term": "Temperature",
+        "definition": "A measure of the average kinetic energy of molecules in a substance"
+      },
+      {
+        "term": "Thermal equilibrium",
+        "definition": "The state when two objects in thermal contact have no net flow of thermal energy between them and are at the same temperature"
+      },
+      {
+        "term": "Absolute zero",
+        "definition": "The temperature (0 K or -273°C) at which molecules have minimum kinetic energy and all molecular motion ceases"
+      },
+      {
+        "term": "Thermometric property",
+        "definition": "A physical property that varies continuously and measurably with temperature"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Define",
+        "instruction": "Give exact definition. For temperature, always mention 'average kinetic energy of molecules'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A liquid-in-glass thermometer is used to measure the temperature of hot water in Lahore during summer. Explain why the thermometer reading initially decreases before increasing to the correct value.",
+      "marks": 3,
+      "answer": "Initially the glass bulb is in contact with the hot water and expands first, causing the liquid level to drop. The liquid then absorbs thermal energy from the hot water through the glass. As the liquid warms up and expands, the level rises to give the correct temperature reading.",
+      "markBreakdown": [
+        "Mark 1: Glass bulb expands first",
+        "Mark 2: Liquid level initially drops/decreases",
+        "Mark 3: Liquid then expands more than glass as it heats up"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'heat energy' — always say 'thermal energy' or 'internal energy'",
+      "Students confuse temperature with thermal energy - temperature is average KE, not total energy",
+      "Never say 'molecules stop moving at absolute zero' — say 'molecules have minimum kinetic energy'",
+      "Students forget that thermal equilibrium means 'no net flow' not 'no flow at all'",
+      "Don't write °K — the correct unit is K (kelvin) without the degree symbol"
+    ],
+    "examinerTips": [
+      "Temperature questions appear frequently in Paper 2 multiple choice",
+      "Always state the thermometric property when describing how a thermometer works",
+      "Thermal equilibrium questions often test understanding of energy flow direction",
+      "Remember: T(K) = T(°C) + 273 conversion is commonly tested"
+    ],
+    "formulas": [
+      "T(K) = T(°C) + 273"
+    ],
+    "keyDiagramDescription": "Liquid-in-glass thermometer showing bulb, capillary tube, scale markings, and liquid column. Label the thermometric property as 'length of liquid column' or 'volume of liquid'."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:43:25.691Z",
+  "updated_at": "2026-04-06T04:43:25.691Z"
+}

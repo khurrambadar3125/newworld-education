@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "A2 Computer Science",
+  "chapter_id": "A2.6",
+  "chapter_name": "Computational thinking and problem-solving",
+  "note_data": {
+    "title": "Computational thinking and problem-solving",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Big-O notation** describes the worst-case time complexity of an algorithm as input size increases",
+      "**O(1)** represents constant time complexity - execution time remains the same regardless of input size",
+      "**O(n)** represents linear time complexity - execution time increases proportionally with input size",
+      "**O(n²)** represents quadratic time complexity - execution time increases with the square of input size",
+      "**Recursion** is a programming technique where a function calls itself with a modified parameter until a base case is reached",
+      "**Divide and conquer** breaks a problem into smaller subproblems, solves them independently, then combines results",
+      "**Backtracking** systematically explores all possible solutions and backtracks when a path leads to an invalid solution",
+      "**Base case** in recursion prevents infinite loops by providing a condition where the function stops calling itself",
+      "**Merge sort** and **quicksort** are classic examples of divide and conquer algorithms with O(n log n) complexity",
+      "**Stack overflow** occurs when recursive calls exceed the system's stack memory limit"
+    ],
+    "definitions": [
+      {
+        "term": "Big-O notation",
+        "definition": "A mathematical notation that describes the limiting behavior of an algorithm's time or space complexity as the input size approaches infinity"
+      },
+      {
+        "term": "Recursion",
+        "definition": "A programming technique where a function calls itself with modified parameters until a base case condition is met"
+      },
+      {
+        "term": "Divide and conquer",
+        "definition": "An algorithmic paradigm that breaks a problem into smaller subproblems of the same type, solves them recursively, then combines their solutions"
+      },
+      {
+        "term": "Backtracking",
+        "definition": "A systematic method for solving problems by exploring all possible solutions and undoing choices that lead to invalid solutions"
+      },
+      {
+        "term": "Base case",
+        "definition": "The terminating condition in a recursive function that stops further recursive calls and begins the return process"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give the Big-O notation or algorithm name only. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the algorithm description + how it works using 'because' or 'this means that'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State both time complexities and explain which is more efficient using Big-O notation"
+      },
+      {
+        "commandWord": "Trace",
+        "instruction": "Show each step of the recursive calls with parameter values and return values"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how the divide and conquer approach works and give one advantage of using this approach. [4 marks]",
+      "marks": 4,
+      "answer": "Divide and conquer works by breaking a large problem into smaller subproblems of the same type. Each subproblem is solved independently, often using recursion. The solutions to the subproblems are then combined to solve the original problem. One advantage is improved efficiency because it often reduces time complexity from O(n²) to O(n log n) for sorting algorithms.",
+      "markBreakdown": [
+        "Mark 1: Breaking problem into smaller subproblems",
+        "Mark 2: Solving subproblems independently/recursively",
+        "Mark 3: Combining solutions",
+        "Mark 4: Advantage with specific example of efficiency improvement"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'Big-O shows speed' — always say 'Big-O shows time complexity or growth rate'",
+      "Students often forget to include the base case when explaining recursion",
+      "Confusing backtracking with simple recursion — backtracking specifically undoes invalid choices",
+      "Writing O(n) as 'Order n' instead of 'Big-O of n' or 'O of n'",
+      "Not showing the combining step when explaining divide and conquer"
+    ],
+    "examinerTips": [
+      "Big-O notation questions appear in every Paper 2 - learn O(1), O(n), O(n²), O(log n), O(n log n)",
+      "Always trace recursive calls step by step showing parameter changes",
+      "Divide and conquer questions often ask for merge sort or binary search examples",
+      "Backtracking questions typically involve maze solving or N-Queens problem"
+    ],
+    "formulas": [
+      "T(n) = 2T(n/2) + O(n) for divide and conquer",
+      "Space complexity for recursion = O(depth of recursion)"
+    ],
+    "keyDiagramDescription": "Binary tree diagram showing recursive calls with parameters at each node, demonstrating how problems are divided and solutions combined back up the tree"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:19:35.477Z",
+  "updated_at": "2026-04-06T05:19:35.477Z"
+}

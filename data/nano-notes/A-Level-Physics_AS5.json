@@ -1,0 +1,103 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "AS Mechanics",
+  "chapter_id": "AS5",
+  "chapter_name": "Work, energy and power",
+  "note_data": {
+    "title": "Work, energy and power",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Work done** is the product of force and displacement in the direction of the force: W = Fs cos θ",
+      "**Kinetic energy** is the energy possessed by an object due to its motion: KE = ½mv²",
+      "**Gravitational potential energy** is the energy possessed by an object due to its position in a gravitational field: GPE = mgh",
+      "**Power** is the rate of doing work or the rate of energy transfer: P = W/t = Fv",
+      "The **principle of conservation of energy** states that energy cannot be created or destroyed, only converted from one form to another",
+      "**Efficiency** is the ratio of useful energy output to total energy input, expressed as a percentage",
+      "Work done equals the area under a force-displacement graph",
+      "When work is done against friction, kinetic energy is converted to thermal energy",
+      "**Elastic potential energy** stored in a spring is given by EPE = ½kx²"
+    ],
+    "definitions": [
+      {
+        "term": "Work done",
+        "definition": "The product of force and displacement in the direction of the force"
+      },
+      {
+        "term": "Power",
+        "definition": "The rate of doing work or the rate of energy transfer"
+      },
+      {
+        "term": "Kinetic energy",
+        "definition": "The energy possessed by an object due to its motion"
+      },
+      {
+        "term": "Potential energy",
+        "definition": "The energy possessed by an object due to its position"
+      },
+      {
+        "term": "Efficiency",
+        "definition": "The ratio of useful energy output to total energy input"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working, include units in final answer"
+      },
+      {
+        "commandWord": "Determine",
+        "instruction": "Use given data to find the answer with clear method shown"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A 2.0 kg mass is lifted vertically through a height of 3.0 m in 5.0 s. Calculate (a) the work done against gravity (b) the minimum power required.",
+      "marks": 4,
+      "answer": "(a) Work done = mgh = 2.0 × 9.8 × 3.0 = 59 J (b) Power = W/t = 59/5.0 = 12 W",
+      "markBreakdown": [
+        "Mark 1: Correct formula W = mgh",
+        "Mark 2: Correct calculation giving 59 J",
+        "Mark 3: Correct formula P = W/t",
+        "Mark 4: Correct calculation giving 12 W"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'energy is lost' — always say 'energy is transferred to thermal energy' or 'energy is dissipated'",
+      "Students often forget to use cos θ when force and displacement are not in the same direction",
+      "Confusing power with force — power is energy per second, not force",
+      "Using wrong formula for gravitational potential energy — must use mgh, not mgh/2",
+      "Forgetting to convert units — especially time to seconds and distances to metres"
+    ],
+    "examinerTips": [
+      "This topic appears in every paper — especially energy conservation problems",
+      "Always check if the question asks for power as rate of work or rate of energy transfer",
+      "Show all substitutions clearly in calculations for method marks",
+      "Use Pakistani examples: Tarbela Dam converts GPE to electrical energy via turbines"
+    ],
+    "formulas": [
+      "W = Fs cos θ",
+      "KE = ½mv²",
+      "GPE = mgh",
+      "P = W/t",
+      "P = Fv",
+      "EPE = ½kx²",
+      "Efficiency = (useful energy output/total energy input) × 100%"
+    ],
+    "keyDiagramDescription": "Force-displacement graph showing work done as area under the curve, with force on y-axis and displacement on x-axis"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:40:10.697Z",
+  "updated_at": "2026-04-06T04:40:10.697Z"
+}

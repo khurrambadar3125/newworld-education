@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "AS Computer Science",
+  "chapter_id": "AS4",
+  "chapter_name": "Processor fundamentals",
+  "note_data": {
+    "title": "Processor fundamentals",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **CPU** executes instructions by following the fetch-decode-execute cycle continuously",
+      "**Registers** are high-speed storage locations within the CPU that temporarily store data and instructions during processing",
+      "The **Accumulator (ACC)** stores the results of arithmetic and logical operations performed by the ALU",
+      "The **Program Counter (PC)** stores the address of the next instruction to be executed",
+      "The **Memory Address Register (MAR)** stores the address of the memory location currently being accessed",
+      "The **Memory Data Register (MDR)** stores data that is being transferred to or from memory",
+      "The **Current Instruction Register (CIR)** stores the instruction that is currently being decoded and executed",
+      "The **address bus** carries memory addresses from the CPU to memory and is unidirectional",
+      "The **data bus** carries data between the CPU, memory and I/O devices and is bidirectional",
+      "The **control bus** carries control signals such as read/write signals and clock signals"
+    ],
+    "definitions": [
+      {
+        "term": "CPU",
+        "definition": "Central Processing Unit that executes instructions by following the fetch-decode-execute cycle"
+      },
+      {
+        "term": "Register",
+        "definition": "High-speed storage location within the CPU that temporarily stores data and instructions during processing"
+      },
+      {
+        "term": "Bus",
+        "definition": "Set of parallel wires that carries data, addresses or control signals between components of a computer system"
+      },
+      {
+        "term": "Instruction set",
+        "definition": "Complete set of machine code instructions that a particular CPU can understand and execute"
+      },
+      {
+        "term": "Assembly language",
+        "definition": "Low-level programming language that uses mnemonics to represent machine code instructions"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics or features. Use 'The CPU...' or 'The register...'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities and differences between two components"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the role of the Program Counter (PC) and Memory Address Register (MAR) during the fetch phase of the fetch-decode-execute cycle.",
+      "marks": 4,
+      "answer": "The Program Counter stores the address of the next instruction to be executed. During the fetch phase, the contents of the PC are copied to the Memory Address Register. The MAR then stores the address of the memory location that contains the instruction to be fetched. The PC is then incremented to point to the next instruction.",
+      "markBreakdown": [
+        "Mark 1: PC stores address of next instruction",
+        "Mark 2: PC contents copied to MAR",
+        "Mark 3: MAR stores address of instruction location",
+        "Mark 4: PC incremented to next instruction"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'RAM stores instructions' — always say 'memory stores instructions and the CPU fetches them'",
+      "Students often confuse MAR and MDR — MAR stores addresses, MDR stores actual data",
+      "Don't say 'the bus transfers data' — say 'the data bus carries data between components'",
+      "Never describe registers as 'memory' — they are high-speed storage locations within the CPU",
+      "Students forget that the address bus is unidirectional while data bus is bidirectional"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every Paper 2 exam - focus on register functions",
+      "Always specify which bus (address/data/control) when describing data transfer",
+      "Learn the exact sequence of the fetch-decode-execute cycle",
+      "Bus width questions often ask about relationship between address bus width and addressable memory"
+    ],
+    "formulas": [
+      "Addressable memory locations = 2^n (where n = number of address bus lines)",
+      "Data transfer rate = bus width × clock speed"
+    ],
+    "keyDiagramDescription": "CPU architecture diagram showing ALU, Control Unit, registers (PC, MAR, MDR, CIR, ACC), and the three buses (address, data, control) connecting to memory and I/O devices"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:15:16.198Z",
+  "updated_at": "2026-04-06T05:15:16.198Z"
+}

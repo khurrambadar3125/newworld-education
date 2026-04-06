@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Business",
+  "subject_code": "9609",
+  "level": "A Level",
+  "theme": "AS Business",
+  "chapter_id": "AS2",
+  "chapter_name": "People in organisations",
+  "note_data": {
+    "title": "People in organisations",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Motivation** theories help managers understand what drives employee performance and behaviour",
+      "**Maslow's hierarchy** shows human needs progress from physiological through security, social, esteem to self-actualisation",
+      "**Herzberg's two-factor theory** distinguishes between hygiene factors (prevent dissatisfaction) and motivators (create satisfaction)",
+      "**Leadership styles** include autocratic (one-way communication), democratic (consultation) and laissez-faire (delegation)",
+      "**Management** involves planning, organising, coordinating and controlling resources to achieve objectives",
+      "**Recruitment** process includes job analysis, job description, person specification, advertising and selection",
+      "**Training** can be on-the-job (learning while working) or off-the-job (away from workplace)",
+      "**Appraisal** systems regularly review employee performance against agreed targets and identify development needs"
+    ],
+    "definitions": [
+      {
+        "term": "Motivation",
+        "definition": "The internal and external factors that stimulate desire and energy in people to be continually interested and committed to achieving a goal"
+      },
+      {
+        "term": "Leadership",
+        "definition": "The ability to influence and direct people in order to meet the goals of the group"
+      },
+      {
+        "term": "Recruitment",
+        "definition": "The process of finding and attracting suitable candidates for a job vacancy"
+      },
+      {
+        "term": "Training",
+        "definition": "The process of teaching employees the skills needed to do their job effectively"
+      },
+      {
+        "term": "Job description",
+        "definition": "A detailed list of the key points about the job to be filled, stating all the key tasks and responsibilities"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down into parts and explain the impact/consequences"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Give advantages AND disadvantages, then make a justified conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two benefits to Packages Ltd of using democratic leadership style. [6]",
+      "marks": 6,
+      "answer": "One benefit is improved employee motivation because workers feel valued when their opinions are consulted in decision-making, leading to higher productivity. Another benefit is better quality decisions because the manager receives input from employees who have detailed knowledge of day-to-day operations, reducing the risk of costly mistakes.",
+      "markBreakdown": [
+        "Mark 1: Improved motivation identified",
+        "Mark 2: Explanation - consultation makes workers feel valued",
+        "Mark 3: Development - leading to higher productivity",
+        "Mark 4: Better decisions identified",
+        "Mark 5: Explanation - employee input and knowledge",
+        "Mark 6: Development - reduces costly mistakes"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse management with leadership - management focuses on systems and processes, leadership focuses on people and vision",
+      "Students often think hygiene factors motivate - they only prevent dissatisfaction, motivators create satisfaction",
+      "Don't mix up recruitment and selection - recruitment attracts candidates, selection chooses between them",
+      "Avoid saying training is 'expensive' without context - explain the specific costs like time away from work or trainer fees",
+      "Never suggest autocratic leadership is always bad - it can be effective in crisis situations or with unskilled workers"
+    ],
+    "examinerTips": [
+      "People management appears in every Paper 2 exam, usually worth 15-20 marks total",
+      "Always use business context when explaining motivation theories - relate to the specific business in the question",
+      "For leadership questions, consider the situation - different styles suit different circumstances",
+      "Training questions often ask for benefits AND costs - prepare both sides"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Maslow's hierarchy of needs pyramid showing five levels from bottom: physiological, safety/security, social/belonging, esteem/recognition, self-actualisation. Essential for explaining how different rewards motivate different employees."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:11:21.864Z",
+  "updated_at": "2026-04-06T05:11:21.864Z"
+}

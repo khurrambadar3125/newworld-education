@@ -1,0 +1,94 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Physical Chemistry",
+  "chapter_id": "AS3",
+  "chapter_name": "Chemical bonding",
+  "note_data": {
+    "title": "Chemical Bonding",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Ionic bonding** occurs between metals and non-metals through transfer of electrons from metal atoms to non-metal atoms",
+      "**Covalent bonding** involves sharing of electron pairs between non-metal atoms",
+      "**Dative covalent bonding** forms when one atom provides both electrons in a shared pair",
+      "**Metallic bonding** involves electrostatic attraction between positive metal ions and delocalised electrons",
+      "**Electronegativity** is the ability of an atom to attract bonding electrons in a covalent bond",
+      "**VSEPR theory** predicts molecular shapes based on electron pair repulsion around central atom",
+      "**Van der Waals forces** are weak intermolecular forces including London dispersion forces and permanent dipole interactions",
+      "**Hydrogen bonding** occurs between hydrogen bonded to N, O, or F and lone pairs on N, O, or F atoms",
+      "**Bond polarity** depends on electronegativity difference between bonded atoms"
+    ],
+    "definitions": [
+      {
+        "term": "Ionic bonding",
+        "definition": "The electrostatic attraction between oppositely charged ions formed by electron transfer"
+      },
+      {
+        "term": "Covalent bonding",
+        "definition": "The electrostatic attraction between two nuclei and a shared pair of electrons"
+      },
+      {
+        "term": "Dative covalent bonding",
+        "definition": "A covalent bond in which one atom provides both electrons in the shared pair"
+      },
+      {
+        "term": "Electronegativity",
+        "definition": "The ability of an atom to attract bonding electrons in a covalent bond"
+      },
+      {
+        "term": "Van der Waals forces",
+        "definition": "Weak intermolecular forces of attraction between molecules"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Predict",
+        "instruction": "Use VSEPR theory to determine shape based on electron pairs"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities and differences with clear justification"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why ammonia (NH₃) has a pyramidal shape and predict the bond angle. [3]",
+      "marks": 3,
+      "answer": "Nitrogen has 4 electron pairs around it (3 bonding pairs and 1 lone pair). The 4 electron pairs arrange themselves tetrahedrally to minimise repulsion. However, the molecular shape is pyramidal because only the bonding pairs determine the shape. The bond angle is less than 109.5° (approximately 107°) because lone pair-bonding pair repulsion is greater than bonding pair-bonding pair repulsion.",
+      "markBreakdown": [
+        "Mark 1: 4 electron pairs around nitrogen",
+        "Mark 2: Pyramidal shape due to lone pair",
+        "Mark 3: Bond angle less than 109.5° due to lone pair repulsion"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'electrons are shared equally' in polar covalent bonds — always specify 'unequally shared'",
+      "Students often confuse molecular shape with electron pair geometry — shape depends only on bonding pairs",
+      "Never say 'molecules have ionic bonding' — ionic bonding exists between ions, not molecules",
+      "Students often forget that dative bonds are shown with arrows (→) not lines in diagrams",
+      "Never confuse intermolecular forces with intramolecular bonds — they are different types of attractions"
+    ],
+    "examinerTips": [
+      "Bond angles appear frequently in Paper 2 — always relate to electron pair repulsion",
+      "Draw dot-and-cross diagrams clearly showing outer electrons only for full marks",
+      "VSEPR questions worth 3-4 marks appear almost every year",
+      "Always state the number of electron pairs before predicting molecular shape"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "VSEPR shapes diagram showing linear (2 pairs), trigonal planar (3 pairs), tetrahedral (4 pairs), trigonal bipyramidal (5 pairs), and octahedral (6 pairs) arrangements with bond angles labeled"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:30:23.417Z",
+  "updated_at": "2026-04-06T04:30:23.417Z"
+}

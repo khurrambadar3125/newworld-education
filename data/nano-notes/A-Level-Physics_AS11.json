@@ -1,0 +1,89 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "AS Waves and Electricity",
+  "chapter_id": "AS11",
+  "chapter_name": "Particle physics",
+  "note_data": {
+    "title": "Particle physics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Fundamental particles** are the basic building blocks of matter that cannot be broken down further into smaller components",
+      "**Quarks** are fundamental particles that combine to form hadrons, with six types (flavours): up, down, strange, charm, bottom, top",
+      "**Leptons** are fundamental particles that do not experience the strong nuclear force, including electrons, muons, taus and their associated neutrinos",
+      "**Baryons** are hadrons composed of three quarks (e.g. protons and neutrons) and have baryon number +1",
+      "**Mesons** are hadrons composed of one quark and one antiquark, and have baryon number 0",
+      "**Antimatter** consists of antiparticles that have the same mass but opposite charge and other quantum numbers compared to their corresponding particles",
+      "**Conservation laws** must be obeyed in all particle interactions: conservation of charge, baryon number, lepton number and energy-momentum",
+      "The **Standard Model** classifies all known particles into quarks, leptons and gauge bosons (force carriers)"
+    ],
+    "definitions": [
+      {
+        "term": "Hadron",
+        "definition": "A particle made up of quarks that experiences the strong nuclear force"
+      },
+      {
+        "term": "Baryon number",
+        "definition": "A quantum number that is +1 for baryons, -1 for antibaryons, and 0 for all other particles"
+      },
+      {
+        "term": "Lepton number",
+        "definition": "A quantum number that is +1 for leptons, -1 for antileptons, and 0 for all other particles"
+      },
+      {
+        "term": "Antiparticle",
+        "definition": "A particle with the same mass but opposite charge and quantum numbers to its corresponding particle"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Distinguish",
+        "instruction": "State clear differences between two particle types with examples"
+      },
+      {
+        "commandWord": "Show",
+        "instruction": "Demonstrate conservation laws are satisfied by checking each quantum number"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A neutron decays into a proton, an electron and an electron antineutrino. Show that charge and baryon number are conserved in this decay. [3]",
+      "marks": 3,
+      "answer": "Charge conservation: neutron (0) → proton (+1) + electron (-1) + antineutrino (0). Total charge: 0 = +1 + (-1) + 0 = 0 ✓. Baryon number conservation: neutron (+1) → proton (+1) + electron (0) + antineutrino (0). Total baryon number: +1 = +1 + 0 + 0 = +1 ✓. Both charge and baryon number are conserved ✓.",
+      "markBreakdown": [
+        "Mark 1: Correct charge calculation showing 0 = 0",
+        "Mark 2: Correct baryon number calculation showing +1 = +1",
+        "Mark 3: Statement that both are conserved"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'atoms are fundamental' — quarks and leptons are the truly fundamental particles",
+      "Students often confuse baryons and mesons — remember baryons have 3 quarks, mesons have 1 quark + 1 antiquark",
+      "Don't forget that antiparticles have opposite quantum numbers, not just opposite charge",
+      "Always check ALL conservation laws in particle interactions, not just one or two",
+      "Never say 'protons are made of electrons' — protons contain quarks, not leptons"
+    ],
+    "examinerTips": [
+      "Particle physics appears frequently in Paper 4 Section A with 2-3 marks per question",
+      "Always show working when checking conservation laws for full marks",
+      "Learn quark compositions: proton (uud), neutron (udd), pion (ud̄ or dū)",
+      "Remember that neutrinos are leptons, not quarks"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Standard Model chart showing three generations of quarks and leptons, with their charges and masses, plus the four fundamental forces and their gauge bosons"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:42:20.767Z",
+  "updated_at": "2026-04-06T04:42:20.767Z"
+}

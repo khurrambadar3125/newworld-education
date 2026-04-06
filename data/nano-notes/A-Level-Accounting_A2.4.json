@@ -1,0 +1,97 @@
+{
+  "subject": "A Level Accounting",
+  "subject_code": "9706",
+  "level": "A Level",
+  "theme": "A2 Accounting",
+  "chapter_id": "A2.4",
+  "chapter_name": "Budgeting and budgetary control",
+  "note_data": {
+    "title": "Budgeting and budgetary control",
+    "readTime": "8 min",
+    "keyPoints": [
+      "A **budget** is a quantified financial plan prepared in advance for a specific time period covering expected income and expenditure",
+      "**Budgetary control** involves comparing actual results with budgeted figures and taking corrective action for significant variances",
+      "**Fixed budgets** remain unchanged regardless of actual activity levels, while **flexible budgets** adjust costs in relation to actual activity levels",
+      "**Variance analysis** compares budgeted figures with actual results to identify areas requiring management attention and corrective action",
+      "**Favourable variances** occur when actual results are better than budget (higher revenue or lower costs than planned)",
+      "**Adverse variances** occur when actual results are worse than budget (lower revenue or higher costs than planned)",
+      "**Sales variance** can be split into sales price variance and sales volume variance for detailed analysis",
+      "**Direct cost variances** include material price variance, material usage variance, labour rate variance and labour efficiency variance",
+      "**Overhead variances** compare actual overhead costs with budgeted overhead costs to control indirect expenses"
+    ],
+    "definitions": [
+      {
+        "term": "Budget",
+        "definition": "A quantified financial plan prepared in advance for a specific time period covering expected income and expenditure"
+      },
+      {
+        "term": "Flexible budget",
+        "definition": "A budget that adjusts the budgeted costs in relation to the actual level of activity achieved"
+      },
+      {
+        "term": "Variance",
+        "definition": "The difference between budgeted and actual figures"
+      },
+      {
+        "term": "Budgetary control",
+        "definition": "The process of comparing actual results with budgeted figures and taking corrective action for significant variances"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all workings clearly. Label favourable (F) or adverse (A) for variances"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Calculate variances AND explain their significance to management"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain TWO advantages of using flexible budgets rather than fixed budgets for budgetary control purposes.",
+      "marks": 4,
+      "answer": "Flexible budgets provide more meaningful comparisons because they adjust budgeted costs to the actual level of activity, making variances more relevant for control purposes. This allows management to distinguish between variances caused by activity level changes and those caused by efficiency or price differences. Flexible budgets also provide better performance evaluation because managers are only held responsible for costs at their actual level of operations, rather than being penalised for activity levels outside their control.",
+      "markBreakdown": [
+        "Mark 1: More meaningful comparisons/relevant variances",
+        "Mark 2: Because costs adjusted to actual activity level",
+        "Mark 3: Better performance evaluation of managers",
+        "Mark 4: Because removes impact of activity level changes"
+      ]
+    },
+    "commonMistakes": [
+      "Never say variance is 'good' or 'bad' — always say 'favourable' or 'adverse'",
+      "Students often forget to label variances with (F) or (A) — this loses marks in calculations",
+      "Confusing flexible budgets with rolling budgets — flexible adjusts for activity, rolling updates time periods",
+      "Failing to show workings in variance calculations — method marks are available even if final answer is wrong",
+      "Treating all favourable variances as positive — some may indicate problems like using cheaper materials"
+    ],
+    "examinerTips": [
+      "Variance analysis appears frequently in Paper 2 Section A — practice calculations regularly",
+      "Always comment on the significance of variances in context — large variances need investigation",
+      "Use standard format for variance calculations: (Actual - Budget) with clear F/A labels",
+      "Remember that budgets are planning tools AND control tools — mention both purposes"
+    ],
+    "formulas": [
+      "Variance = Actual - Budget",
+      "Sales Price Variance = (Actual price - Budgeted price) × Actual quantity sold",
+      "Sales Volume Variance = (Actual quantity - Budgeted quantity) × Budgeted price",
+      "Material Price Variance = (Actual price - Standard price) × Actual quantity purchased",
+      "Material Usage Variance = (Actual quantity - Standard quantity) × Standard price"
+    ],
+    "keyDiagramDescription": "Budget preparation flowchart showing: Sales budget → Production budget → Material/Labour/Overhead budgets → Master budget (Income statement and Balance sheet). Include feedback arrows showing variance analysis leading to corrective action."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:28:27.765Z",
+  "updated_at": "2026-04-06T05:28:27.766Z"
+}

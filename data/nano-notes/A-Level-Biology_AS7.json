@@ -1,0 +1,92 @@
+{
+  "subject": "A Level Biology",
+  "subject_code": "9700",
+  "level": "A Level",
+  "theme": "AS Biology",
+  "chapter_id": "AS7",
+  "chapter_name": "Transport in plants",
+  "note_data": {
+    "title": "Transport in plants",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Xylem** transports water and mineral ions from roots to leaves in a unidirectional flow",
+      "**Phloem** translocates sucrose and amino acids from source to sink in both directions",
+      "**Transpiration** is the loss of water vapour from aerial parts of plants, mainly through stomata",
+      "**Cohesion-tension theory** explains water movement: transpiration creates tension, water molecules cohere due to hydrogen bonding, pulling water up xylem",
+      "**Root pressure** is the active uptake of mineral ions by roots creating a water potential gradient that pushes water upwards",
+      "**Translocation** is the transport of organic solutes through phloem from source (photosynthetic tissues) to sink (storage/growing tissues)",
+      "**Mass flow hypothesis** explains translocation: sucrose loading at source creates high pressure, sucrose unloading at sink creates low pressure, causing mass flow",
+      "Xylem vessels have **lignified walls**, **no end walls**, and are **dead at maturity** to allow efficient water transport"
+    ],
+    "definitions": [
+      {
+        "term": "Transpiration",
+        "definition": "The loss of water vapour from the aerial parts of a plant, mainly through the stomata"
+      },
+      {
+        "term": "Translocation",
+        "definition": "The transport of organic solutes, particularly sucrose and amino acids, through phloem tissue"
+      },
+      {
+        "term": "Root pressure",
+        "definition": "The pressure created in roots by the active uptake of mineral ions, which creates a water potential gradient causing water to move into the root"
+      },
+      {
+        "term": "Cohesion-tension theory",
+        "definition": "The theory that explains water transport in xylem through transpiration creating tension and water molecules cohering due to hydrogen bonding"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of events or features without explaining why"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities and differences between xylem and phloem transport"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how the cohesion-tension theory accounts for the movement of water up a tall tree.",
+      "marks": 6,
+      "answer": "Transpiration from leaves creates a water potential gradient. Water evaporates from mesophyll cells and diffuses out through stomata. This creates tension in the xylem vessels. Water molecules cohere to each other due to hydrogen bonding between water molecules. This cohesion allows water to be pulled up as a continuous column. The adhesion of water molecules to xylem walls prevents the water column from breaking. Root pressure may assist but is not essential for water movement in tall trees.",
+      "markBreakdown": [
+        "Mark 1: Transpiration creates water potential gradient",
+        "Mark 2: Tension created in xylem",
+        "Mark 3: Water molecules cohere due to hydrogen bonding",
+        "Mark 4: Water pulled up as continuous column",
+        "Mark 5: Adhesion to xylem walls",
+        "Mark 6: Root pressure assists but not essential"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'water is pushed up' - water is pulled up by transpiration creating tension",
+      "Students confuse translocation with transpiration - translocation is organic solutes, transpiration is water vapour",
+      "Don't say xylem vessels are alive - they are dead at maturity with no cytoplasm",
+      "Never say phloem only transports downwards - it can transport in both directions depending on source and sink",
+      "Students forget that companion cells are essential for phloem function - sieve tube elements cannot function alone"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every Paper 2 - especially cohesion-tension theory",
+      "Always mention hydrogen bonding when explaining cohesion between water molecules",
+      "Draw clear diagrams showing xylem and phloem structure for full marks",
+      "Link transpiration to environmental factors like temperature and humidity in hot Pakistani climate"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Cross-section of plant stem showing xylem vessels (thick lignified walls, no end walls, dead) and phloem (sieve tube elements with sieve plates, companion cells with dense cytoplasm). Label showing direction of transport: xylem upward only, phloem bidirectional."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:02:25.393Z",
+  "updated_at": "2026-04-06T05:02:25.395Z"
+}

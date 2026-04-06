@@ -1,0 +1,93 @@
+{
+  "subject": "A Level Business",
+  "subject_code": "9609",
+  "level": "A Level",
+  "theme": "A2 Business",
+  "chapter_id": "A2.1",
+  "chapter_name": "Strategic management",
+  "note_data": {
+    "title": "Strategic management",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Strategic management** is the process of analysing the external environment, setting long-term objectives and implementing strategies to achieve competitive advantage",
+      "**SWOT analysis** evaluates internal Strengths and Weaknesses against external Opportunities and Threats to inform strategic decision-making",
+      "**PESTLE analysis** examines Political, Economic, Social, Technological, Legal and Environmental factors that affect business strategy",
+      "**Ansoff's Matrix** identifies four growth strategies: market penetration, market development, product development and diversification",
+      "**Porter's Five Forces** analyses competitive intensity through: threat of new entrants, threat of substitutes, bargaining power of suppliers, bargaining power of buyers, and competitive rivalry",
+      "**Corporate strategy** determines the overall direction and scope of the business across all markets and activities",
+      "**Strategic planning** involves setting long-term objectives, analysing internal and external environments, and choosing appropriate strategies",
+      "**Competitive advantage** is achieved when a business outperforms rivals through cost leadership, differentiation or focus strategies",
+      "**Strategic implementation** requires effective resource allocation, organizational structure and performance monitoring"
+    ],
+    "definitions": [
+      {
+        "term": "Strategic management",
+        "definition": "The process of planning, implementing and evaluating long-term strategies to achieve competitive advantage and meet stakeholder objectives"
+      },
+      {
+        "term": "SWOT analysis",
+        "definition": "A strategic planning tool that evaluates internal Strengths and Weaknesses against external Opportunities and Threats"
+      },
+      {
+        "term": "Competitive advantage",
+        "definition": "When a business achieves superior performance compared to competitors through lower costs, differentiation or focus strategies"
+      },
+      {
+        "term": "Corporate strategy",
+        "definition": "The overall direction and scope of an organization that determines which markets to compete in and how to allocate resources"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the strategy using frameworks like SWOT/PESTLE and explain cause-and-effect relationships"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Make judgements about the best strategy considering advantages, disadvantages and contextual factors"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two benefits of using SWOT analysis for strategic planning. [6 marks]",
+      "marks": 6,
+      "answer": "One benefit is that SWOT analysis provides a structured framework for analysing both internal and external factors. This is because it systematically evaluates strengths, weaknesses, opportunities and threats, enabling managers to make more informed strategic decisions rather than relying on intuition alone. Another benefit is that SWOT analysis helps identify strategic options by matching internal capabilities with external opportunities. This is because businesses can use their strengths to exploit market opportunities or address weaknesses to avoid external threats, leading to more effective resource allocation and competitive positioning.",
+      "markBreakdown": [
+        "Mark 1: Identifies structured framework benefit",
+        "Mark 2: Explains how it enables informed decision-making",
+        "Mark 3: Identifies strategic option identification benefit",
+        "Mark 4: Explains matching internal/external factors",
+        "Mark 5: Additional explanation of resource allocation",
+        "Mark 6: Clear business context and application"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse strategic and tactical decisions - strategic decisions are long-term and affect the whole organization",
+      "Students often list SWOT factors without explaining how they inform strategic choices",
+      "Avoid describing Porter's Five Forces without analyzing their impact on competitive intensity",
+      "Never suggest all four Ansoff strategies are equally suitable - context determines appropriateness",
+      "Students frequently ignore stakeholder conflicts when evaluating corporate strategy effectiveness"
+    ],
+    "examinerTips": [
+      "Strategic management appears in every Paper 2 - practice drawing and applying all frameworks",
+      "Always relate strategy frameworks to the specific business context given in the case study",
+      "Use Pakistani business examples like Engro Corp's diversification or Jazz's market penetration strategies",
+      "Remember to evaluate trade-offs between different strategic options in your conclusions"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Draw Ansoff's Matrix as 2x2 grid with Products (Existing/New) on horizontal axis and Markets (Existing/New) on vertical axis, showing four growth strategies: Market Penetration, Product Development, Market Development, and Diversification with increasing risk levels"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:13:01.729Z",
+  "updated_at": "2026-04-06T05:13:01.729Z"
+}

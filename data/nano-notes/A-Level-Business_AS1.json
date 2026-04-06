@@ -1,0 +1,97 @@
+{
+  "subject": "A Level Business",
+  "subject_code": "9609",
+  "level": "A Level",
+  "theme": "AS Business",
+  "chapter_id": "AS1",
+  "chapter_name": "Business and its environment",
+  "note_data": {
+    "title": "Business and its environment",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Enterprise** is the process of identifying new business opportunities and taking risks to exploit them",
+      "**Stakeholders** are individuals or groups with a direct interest in the performance and activities of a business",
+      "**Primary stakeholders** (owners, employees, customers, suppliers) are directly affected by business decisions",
+      "**Secondary stakeholders** (government, local community, pressure groups) are indirectly affected by business activities",
+      "Business structures include **sole trader, partnership, private limited company (Ltd), public limited company (Plc)**",
+      "Business size can be measured by **number of employees, sales revenue, market share, capital employed**",
+      "**Primary objectives** include profit maximization, survival, growth, market share",
+      "**Secondary objectives** include corporate social responsibility, employee welfare, environmental protection",
+      "**Conflict of objectives** occurs when stakeholders have different priorities that cannot all be satisfied simultaneously"
+    ],
+    "definitions": [
+      {
+        "term": "Enterprise",
+        "definition": "The process of identifying new business opportunities and taking risks to exploit them"
+      },
+      {
+        "term": "Stakeholder",
+        "definition": "An individual or group with a direct interest in the performance and activities of a business"
+      },
+      {
+        "term": "Private Limited Company",
+        "definition": "A business owned by shareholders with limited liability, shares cannot be sold to the general public"
+      },
+      {
+        "term": "Corporate Social Responsibility",
+        "definition": "The concept that businesses should consider the interests of society and the environment when making decisions"
+      },
+      {
+        "term": "Limited Liability",
+        "definition": "Shareholders are only liable for business debts up to the amount they have invested"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the point and explain the impact or consequences"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Make a judgment considering advantages and disadvantages, conclude with 'Overall...'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two advantages to a business of becoming a public limited company. [6]",
+      "marks": 6,
+      "answer": "One advantage is access to large amounts of capital because shares can be sold to the general public on the stock exchange, allowing expansion into new markets or investment in new technology. Another advantage is limited liability for shareholders because they are only liable for business debts up to the amount they invested, making it easier to attract investors who know their personal assets are protected.",
+      "markBreakdown": [
+        "Mark 1: Access to large amounts of capital",
+        "Mark 2: Because shares sold to general public",
+        "Mark 3: Development point about expansion/investment",
+        "Mark 4: Limited liability for shareholders",
+        "Mark 5: Because only liable up to amount invested",
+        "Mark 6: Development point about attracting investors"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'unlimited liability means unlimited money' — it means personal assets at risk",
+      "Students often confuse primary and secondary stakeholders — primary are directly affected, secondary are indirectly affected",
+      "Don't say 'bigger is always better' — large size brings disadvantages like diseconomies of scale",
+      "Never say 'profit is the only objective' — businesses have multiple objectives that may conflict",
+      "Students forget that stakeholder objectives conflict — what benefits shareholders may harm employees"
+    ],
+    "examinerTips": [
+      "This topic appears in every Paper 1 and Paper 2 examination",
+      "Always give Pakistani examples where possible (e.g., Engro Corporation as Plc, local tandoor as sole trader)",
+      "Stakeholder questions require you to identify conflicts between different groups",
+      "Business size questions often ask for measurement methods — learn all four methods"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Stakeholder mapping diagram showing primary stakeholders (owners, employees, customers, suppliers) in inner circle and secondary stakeholders (government, community, pressure groups) in outer circle with arrows showing relationships"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:10:58.718Z",
+  "updated_at": "2026-04-06T05:10:58.719Z"
+}

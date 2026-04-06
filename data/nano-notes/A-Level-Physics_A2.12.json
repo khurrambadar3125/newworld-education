@@ -1,0 +1,102 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "A2 Electromagnetism and Nuclear",
+  "chapter_id": "A2.12",
+  "chapter_name": "Nuclear physics",
+  "note_data": {
+    "title": "Nuclear physics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Nuclear decay** is a random and spontaneous process that cannot be predicted for individual nuclei",
+      "**Mass defect** is the difference between the sum of masses of separated nucleons and the mass of the nucleus",
+      "**Binding energy** is the energy required to completely separate all nucleons in a nucleus",
+      "**Nuclear fission** is the splitting of a heavy nucleus into two lighter nuclei with release of energy",
+      "**Nuclear fusion** is the combining of light nuclei to form a heavier nucleus with release of energy",
+      "**Activity** is the rate of decay of radioactive nuclei, measured in becquerels (Bq)",
+      "**Half-life** is the time taken for half the radioactive nuclei in a sample to decay",
+      "Radioactive decay follows exponential law: N = N₀e^(-λt) where λ is the decay constant",
+      "**Alpha particles** have high ionizing power but low penetrating power",
+      "**Gamma rays** have low ionizing power but high penetrating power"
+    ],
+    "definitions": [
+      {
+        "term": "Mass defect",
+        "definition": "The difference between the sum of masses of separated nucleons and the mass of the nucleus"
+      },
+      {
+        "term": "Binding energy per nucleon",
+        "definition": "The average energy required to remove a nucleon from the nucleus"
+      },
+      {
+        "term": "Activity",
+        "definition": "The rate of decay of radioactive nuclei, equal to λN"
+      },
+      {
+        "term": "Half-life",
+        "definition": "The time taken for half the radioactive nuclei in a sample to decay"
+      },
+      {
+        "term": "Nuclear fission",
+        "definition": "The splitting of a heavy nucleus into two lighter nuclei with the release of energy"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all working steps clearly and include correct units in final answer"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of steps or properties without explanation"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why energy is released in both nuclear fission and nuclear fusion processes. [4 marks]",
+      "marks": 4,
+      "answer": "In nuclear fission, a heavy nucleus splits into two lighter nuclei. The products have higher binding energy per nucleon than the original nucleus, so energy is released. In nuclear fusion, light nuclei combine to form a heavier nucleus. The product has higher binding energy per nucleon than the original nuclei, so energy is released. In both processes, the total binding energy of products is greater than reactants.",
+      "markBreakdown": [
+        "Mark 1: Fission involves splitting heavy nucleus",
+        "Mark 2: Products have higher binding energy per nucleon",
+        "Mark 3: Fusion involves combining light nuclei",
+        "Mark 4: Products have higher binding energy per nucleon than reactants"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'atoms decay' — always say 'nuclei decay' as decay is a nuclear process",
+      "Students confuse mass defect with binding energy — mass defect is mass difference, binding energy is equivalent energy",
+      "Never say 'radioactive decay speeds up or slows down' — it is random and constant for each nucleus type",
+      "Students forget to convert units correctly in decay calculations (e.g. years to seconds)",
+      "Never say 'all nuclei decay at once after one half-life' — half-life is statistical average"
+    ],
+    "examinerTips": [
+      "Nuclear physics appears in every Paper 4 and frequently in Paper 2",
+      "Always check units carefully in decay calculations — common source of mark loss",
+      "Binding energy per nucleon graphs are frequently examined — learn the key features",
+      "Pakistan's nuclear program context may appear — know basic facts about KANUPP reactors"
+    ],
+    "formulas": [
+      "N = N₀e^(-λt)",
+      "A = λN",
+      "t₁/₂ = ln2/λ = 0.693/λ",
+      "E = mc²",
+      "BE = Δm × c²"
+    ],
+    "keyDiagramDescription": "Binding energy per nucleon vs mass number graph showing peak at Fe-56, with fission region (heavy nuclei) and fusion region (light nuclei) clearly labeled"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:46:48.868Z",
+  "updated_at": "2026-04-06T04:46:48.868Z"
+}

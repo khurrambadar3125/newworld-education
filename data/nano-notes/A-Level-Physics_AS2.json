@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "AS Mechanics",
+  "chapter_id": "AS2",
+  "chapter_name": "Kinematics",
+  "note_data": {
+    "title": "Kinematics",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Displacement** is a vector quantity that measures distance moved in a straight line from initial to final position",
+      "**Velocity** is a vector quantity defined as the rate of change of displacement with respect to time",
+      "**Acceleration** is a vector quantity defined as the rate of change of velocity with respect to time",
+      "For **uniform acceleration**, use kinematic equations: v = u + at, s = ut + ½at², v² = u² + 2as, s = ½(u + v)t",
+      "In **projectile motion**, horizontal and vertical components of motion are independent of each other",
+      "For projectiles, horizontal velocity remains constant (no acceleration) while vertical motion has acceleration g downwards",
+      "At maximum height of projectile motion, vertical component of velocity is zero but horizontal component remains unchanged",
+      "**Free fall** occurs when the only force acting on an object is gravitational force, giving acceleration g = 9.81 m s⁻²",
+      "On **displacement-time graphs**, gradient gives velocity; on **velocity-time graphs**, gradient gives acceleration and area gives displacement"
+    ],
+    "definitions": [
+      {
+        "term": "Displacement",
+        "definition": "The distance moved in a straight line from the initial position to the final position, measured in a specific direction"
+      },
+      {
+        "term": "Velocity",
+        "definition": "The rate of change of displacement with respect to time"
+      },
+      {
+        "term": "Acceleration",
+        "definition": "The rate of change of velocity with respect to time"
+      },
+      {
+        "term": "Projectile motion",
+        "definition": "The motion of an object that is launched into the air and moves under the influence of gravity alone"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly with correct formula, substitution and final answer with units"
+      },
+      {
+        "commandWord": "Sketch",
+        "instruction": "Draw clear axes with labels, correct shape and key values marked"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A cricket ball is hit from ground level at Gaddafi Stadium with an initial velocity of 25 m s⁻¹ at an angle of 30° to the horizontal. Calculate the maximum height reached by the ball. [g = 9.8 m s⁻²]",
+      "marks": 3,
+      "answer": "Initial vertical velocity component: uy = 25 sin 30° = 12.5 m s⁻¹\nAt maximum height, final vertical velocity vy = 0\nUsing v² = u² + 2as: 0² = (12.5)² + 2(-9.8)s\nMaximum height s = 156.25/(2 × 9.8) = 8.0 m",
+      "markBreakdown": [
+        "Mark 1: Correct identification of vertical component uy = 12.5 m s⁻¹",
+        "Mark 2: Correct use of kinematic equation v² = u² + 2as",
+        "Mark 3: Correct calculation giving 8.0 m"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse distance with displacement - displacement can be zero even when distance travelled is large",
+      "Students often forget that at maximum height of projectile, only vertical velocity is zero, not total velocity",
+      "Never use kinematic equations when acceleration is not constant",
+      "Students commonly mix up horizontal and vertical components in projectile motion calculations",
+      "Never forget to resolve initial velocity into components for projectile motion problems"
+    ],
+    "examinerTips": [
+      "Kinematics appears in every Paper 2 and often in Paper 1 multiple choice",
+      "Always draw a clear diagram showing direction of motion and forces for projectile questions",
+      "Remember to check if your displacement answer makes physical sense (positive/negative direction)",
+      "For graph questions, always label axes with quantities and units clearly"
+    ],
+    "formulas": [
+      "v = u + at",
+      "s = ut + ½at²",
+      "v² = u² + 2as",
+      "s = ½(u + v)t",
+      "For projectiles: ux = u cos θ, uy = u sin θ"
+    ],
+    "keyDiagramDescription": "Projectile motion diagram showing parabolic path with initial velocity components (ux horizontal, uy vertical), maximum height point, and range marked clearly with coordinate axes"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:39:10.066Z",
+  "updated_at": "2026-04-06T04:39:10.066Z"
+}

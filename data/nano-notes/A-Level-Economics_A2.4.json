@@ -1,0 +1,103 @@
+{
+  "subject": "A Level Economics",
+  "subject_code": "9708",
+  "level": "A Level",
+  "theme": "A2 Macroeconomics",
+  "chapter_id": "A2.4",
+  "chapter_name": "International trade",
+  "note_data": {
+    "title": "International trade",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Comparative advantage** exists when a country can produce a good at a lower opportunity cost than another country, forming the basis for mutually beneficial trade",
+      "Countries should **specialise** in producing goods where they have comparative advantage and trade with other countries to maximise total output",
+      "**Protectionism** involves government policies to restrict imports through tariffs, quotas, subsidies or non-tariff barriers to protect domestic industries",
+      "The **World Trade Organisation (WTO)** promotes free trade by reducing trade barriers and resolving trade disputes between member countries",
+      "**Trading blocs** like customs unions and free trade areas reduce barriers between member countries but may create trade diversion from more efficient producers",
+      "**Exchange rates** affect international competitiveness - a depreciation makes exports cheaper and imports more expensive, improving the current account",
+      "The **balance of payments** records all economic transactions between a country and the rest of the world, consisting of current and capital/financial accounts",
+      "A **current account deficit** occurs when imports of goods and services exceed exports, requiring financing through the capital/financial account",
+      "Trade creation occurs when a trading bloc leads to imports from more efficient producers within the bloc, increasing economic welfare"
+    ],
+    "definitions": [
+      {
+        "term": "Comparative advantage",
+        "definition": "The ability of a country to produce a good or service at a lower opportunity cost than another country"
+      },
+      {
+        "term": "Protectionism",
+        "definition": "Government policies designed to restrict imports and protect domestic industries from foreign competition"
+      },
+      {
+        "term": "Balance of payments",
+        "definition": "A record of all economic transactions between residents of a country and the rest of the world over a given period"
+      },
+      {
+        "term": "Trading bloc",
+        "definition": "A group of countries that have agreed to reduce or eliminate trade barriers between member countries"
+      },
+      {
+        "term": "Current account",
+        "definition": "A component of the balance of payments recording trade in goods and services, investment income and transfers"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the issue, show cause and effect relationships, consider different impacts"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Make a judgement weighing up arguments for and against, consider significance and reach a conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how comparative advantage leads to gains from trade. [8 marks]",
+      "marks": 8,
+      "answer": "Comparative advantage occurs when a country can produce a good at a lower opportunity cost than another country. This creates the basis for mutually beneficial trade because countries can specialise in producing goods where they have comparative advantage. When countries specialise, total world output increases because resources are allocated more efficiently. Countries can then trade their surplus production for goods they need but produce less efficiently. Both countries benefit because they can consume beyond their production possibility frontier through trade. For example, if Pakistan has comparative advantage in textiles and China in electronics, Pakistan should specialise in textiles and import electronics from China. This allows both countries to achieve higher consumption levels than would be possible without trade, creating gains from trade through increased efficiency and consumer choice.",
+      "markBreakdown": [
+        "Mark 1: Definition of comparative advantage",
+        "Mark 2: Explanation of specialisation based on comparative advantage",
+        "Mark 3: How specialisation increases total output/efficiency",
+        "Mark 4: How trade allows consumption beyond PPF",
+        "Mark 5: Example showing the principle",
+        "Mark 6: Explanation of mutual benefits",
+        "Mark 7: Reference to increased consumer choice/welfare",
+        "Mark 8: Clear logical development throughout"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse absolute advantage with comparative advantage - comparative advantage is about opportunity cost, not total output",
+      "Students often forget that both countries gain from trade even when one has absolute advantage in all goods",
+      "Never say protectionism always reduces welfare - consider infant industry and strategic trade arguments",
+      "Students confuse trade creation with trade diversion when analysing trading blocs",
+      "Never ignore the impact of exchange rate changes on import/export prices and competitiveness"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 4 essays - practice 25-mark questions on protectionism and trading blocs",
+      "Always use numerical examples to demonstrate comparative advantage calculations",
+      "For balance of payments questions, remember the accounts must sum to zero",
+      "Consider both static and dynamic gains from trade in evaluation questions",
+      "Use real-world examples like CPEC, EU, NAFTA to illustrate trading relationships"
+    ],
+    "formulas": [
+      "Opportunity cost = What is given up ÷ What is gained",
+      "Current account + Capital/Financial account + Balancing item = 0"
+    ],
+    "keyDiagramDescription": "Production Possibility Frontier (PPF) diagram showing how countries can consume beyond their PPF through specialisation and trade, with axes showing two goods and curves demonstrating increased consumption possibilities"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:10:36.730Z",
+  "updated_at": "2026-04-06T05:10:36.730Z"
+}

@@ -1,0 +1,95 @@
+{
+  "subject": "A Level Psychology",
+  "subject_code": "9990",
+  "level": "A Level",
+  "theme": "A2 Psychology",
+  "chapter_id": "A2.4",
+  "chapter_name": "Psychology and organisations",
+  "note_data": {
+    "title": "Psychology and organisations",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Organisation** is a group of people working together towards common goals with defined roles and hierarchy",
+      "**Motivation** can be intrinsic (internal satisfaction) or extrinsic (external rewards like money or promotion)",
+      "Maslow's hierarchy suggests employees are motivated by physiological, safety, social, esteem and self-actualisation needs in sequence",
+      "**Leadership styles** include autocratic (leader makes all decisions), democratic (group participation in decisions) and laissez-faire (minimal leader intervention)",
+      "Job **satisfaction** is influenced by factors such as pay, working conditions, relationships with colleagues and opportunities for advancement",
+      "**Group dynamics** involve processes like social loafing (reduced effort in groups), groupthink (conformity leading to poor decisions) and social facilitation (improved performance when observed)",
+      "Hawthorne effect demonstrates that worker productivity increases when they know they are being observed or studied",
+      "Theory X managers assume workers are lazy and need control, while Theory Y managers assume workers are self-motivated and responsible"
+    ],
+    "definitions": [
+      {
+        "term": "Organisation",
+        "definition": "A structured group of people working together to achieve specific goals through coordinated activities and defined roles"
+      },
+      {
+        "term": "Motivation",
+        "definition": "The internal and external factors that drive behaviour and determine the direction, intensity and persistence of effort"
+      },
+      {
+        "term": "Leadership",
+        "definition": "The process of influencing and directing others to achieve organisational goals through guidance and decision-making"
+      },
+      {
+        "term": "Job satisfaction",
+        "definition": "The positive emotional state resulting from an employee's evaluation of their work experience and working conditions"
+      },
+      {
+        "term": "Group dynamics",
+        "definition": "The psychological processes and behaviours that occur within and between groups in organisational settings"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities AND differences between theories/concepts"
+      },
+      {
+        "commandWord": "Evaluate",
+        "instruction": "Give strengths AND weaknesses with evidence/examples"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain two factors that influence job satisfaction in organisations. [4 marks]",
+      "marks": 4,
+      "answer": "One factor is pay and benefits because employees need financial security and fair compensation motivates them to perform well. When workers feel their salary reflects their contribution, they experience greater job satisfaction. Another factor is relationships with colleagues because humans have social needs and positive workplace relationships create a supportive environment. Good teamwork and friendship at work reduce stress and increase enjoyment of daily tasks.",
+      "markBreakdown": [
+        "Mark 1: Identifies pay/benefits as factor",
+        "Mark 2: Explains why pay affects satisfaction",
+        "Mark 3: Identifies relationships as factor",
+        "Mark 4: Explains why relationships affect satisfaction"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse motivation with job satisfaction — motivation drives behaviour, satisfaction is the emotional outcome",
+      "Students often describe leadership styles without explaining their effects on worker behaviour",
+      "Avoid saying 'Maslow's theory is wrong' — instead evaluate with phrases like 'limited cultural validity'",
+      "Don't just list factors affecting satisfaction — always explain HOW they influence worker feelings",
+      "Never use 'worker' and 'employee' interchangeably without considering context — be precise with terminology"
+    ],
+    "examinerTips": [
+      "This topic appears frequently in Paper 2 Section B questions worth 8-12 marks",
+      "Always use real workplace examples when evaluating theories (e.g., Pakistani banks, textile factories)",
+      "Link group dynamics to productivity outcomes for higher marks",
+      "Compare different motivation theories rather than describing them separately",
+      "Use evaluation phrases: 'However, a limitation is...' and 'Furthermore, research by... supports this because...'"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Maslow's hierarchy pyramid showing five levels from bottom: physiological needs, safety needs, social needs, esteem needs, self-actualisation needs. Include examples for each level in workplace context."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:23:39.372Z",
+  "updated_at": "2026-04-06T05:23:39.372Z"
+}

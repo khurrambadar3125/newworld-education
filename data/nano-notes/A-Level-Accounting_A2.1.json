@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Accounting",
+  "subject_code": "9706",
+  "level": "A Level",
+  "theme": "A2 Accounting",
+  "chapter_id": "A2.1",
+  "chapter_name": "Limited company accounts",
+  "note_data": {
+    "title": "Limited company accounts",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Share capital** represents the nominal value of shares issued to shareholders and forms part of equity in the statement of financial position",
+      "**Ordinary shares** carry voting rights and variable dividends, while **preference shares** receive fixed dividends before ordinary shareholders",
+      "**Debentures** are long-term loans to the company that must be repaid and carry fixed interest rates shown as finance costs",
+      "**Retained earnings** are accumulated profits kept in the business and appear in equity section of the statement of financial position",
+      "**Dividends** are distributions of profit to shareholders and reduce retained earnings when declared",
+      "**Share premium** is the excess amount paid above nominal value when shares are issued at a premium",
+      "**Authorised share capital** is the maximum value of shares that can be issued as stated in the memorandum of association",
+      "**Issued share capital** is the actual nominal value of shares that have been sold to shareholders",
+      "Debenture interest is an **expense** charged to profit or loss account, while dividends are an **appropriation** of profit"
+    ],
+    "definitions": [
+      {
+        "term": "Limited company",
+        "definition": "A business organization that has separate legal entity from its owners with limited liability for shareholders"
+      },
+      {
+        "term": "Share capital",
+        "definition": "The nominal value of shares issued by a company to its shareholders"
+      },
+      {
+        "term": "Debenture",
+        "definition": "A long-term loan to a company with fixed interest rate and specified repayment date"
+      },
+      {
+        "term": "Retained earnings",
+        "definition": "Accumulated profits that have been kept in the business rather than distributed as dividends"
+      },
+      {
+        "term": "Dividend",
+        "definition": "A distribution of company profits to shareholders in proportion to their shareholding"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly and label your final answer"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Use correct format with proper headings and classifications"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain the difference between ordinary shares and preference shares. (4 marks)",
+      "marks": 4,
+      "answer": "Ordinary shares carry voting rights at company meetings while preference shares usually have no voting rights. Ordinary shareholders receive variable dividends that depend on company profits while preference shareholders receive fixed dividends. Preference shareholders have priority over ordinary shareholders when dividends are distributed. In the event of liquidation, preference shareholders are paid before ordinary shareholders but after creditors.",
+      "markBreakdown": [
+        "Mark 1: Voting rights difference",
+        "Mark 2: Dividend payment difference",
+        "Mark 3: Priority in dividend distribution",
+        "Mark 4: Priority in liquidation"
+      ]
+    },
+    "commonMistakes": [
+      "Never say debenture interest is an appropriation of profit — it is an expense in profit or loss account",
+      "Students confuse authorised and issued share capital — authorised is maximum allowed, issued is actual amount sold",
+      "Never include dividends proposed but not declared in current year's profit and loss appropriation account",
+      "Students forget that share premium cannot be used to pay dividends — only retained earnings can be distributed",
+      "Never show debentures as part of equity — they are non-current liabilities"
+    ],
+    "examinerTips": [
+      "Limited company accounts appear in every Paper 2 - focus on statement of financial position format",
+      "Always distinguish between expense (debenture interest) and appropriation (dividends) in extended questions",
+      "Remember the order: preference dividends paid before ordinary dividends",
+      "Learn the equity section layout: share capital + share premium + retained earnings"
+    ],
+    "formulas": [
+      "Retained earnings = Opening retained earnings + Net profit - Dividends paid",
+      "Earnings per share = Net profit after tax ÷ Number of ordinary shares",
+      "Dividend per share = Total dividends ÷ Number of shares"
+    ],
+    "keyDiagramDescription": "Statement of Financial Position equity section showing: Share capital (ordinary + preference), Share premium, Retained earnings in vertical format with proper classifications and totals"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:27:15.214Z",
+  "updated_at": "2026-04-06T05:27:15.214Z"
+}

@@ -1,0 +1,94 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "AS Computer Science",
+  "chapter_id": "AS1",
+  "chapter_name": "Information representation",
+  "note_data": {
+    "title": "Information representation",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Binary** uses base 2 with digits 0 and 1 only, representing all data in computers using electrical states",
+      "**Hexadecimal** uses base 16 with digits 0-9 and A-F, providing a shorter representation of binary values",
+      "**Two's complement** represents signed integers by inverting all bits and adding 1 to get the negative value",
+      "**BCD (Binary Coded Decimal)** represents each decimal digit using 4 bits, making conversion between decimal and binary easier",
+      "**ASCII** uses 7 bits to represent 128 characters including letters, numbers and symbols used in English",
+      "**Unicode** uses 16 bits or more to represent characters from all world languages including Urdu characters",
+      "Each hexadecimal digit represents exactly 4 binary digits, making conversion straightforward",
+      "Most significant bit in two's complement indicates the sign (0 = positive, 1 = negative)",
+      "BCD uses more storage space than pure binary but eliminates rounding errors in decimal calculations"
+    ],
+    "definitions": [
+      {
+        "term": "Binary",
+        "definition": "A number system using base 2 with only two digits (0 and 1) to represent all values"
+      },
+      {
+        "term": "Hexadecimal",
+        "definition": "A number system using base 16 with digits 0-9 and letters A-F representing values 10-15"
+      },
+      {
+        "term": "Two's complement",
+        "definition": "A method of representing signed binary numbers where negative numbers are formed by inverting all bits and adding 1"
+      },
+      {
+        "term": "ASCII",
+        "definition": "American Standard Code for Information Interchange - a 7-bit character encoding standard for representing text characters"
+      },
+      {
+        "term": "Unicode",
+        "definition": "A character encoding standard that uses 16 bits or more to represent characters from all world writing systems"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Convert",
+        "instruction": "Show each step of the conversion process. For binary to hex, group into 4s. For two's complement, show invert then add 1."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the reason why that representation is used, e.g. 'because it eliminates rounding errors' or 'because it can represent more characters'"
+      },
+      {
+        "commandWord": "State",
+        "instruction": "Give the fact directly without explanation, e.g. 'ASCII uses 7 bits'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why Unicode is used instead of ASCII for representing text in Pakistani software applications. [3]",
+      "marks": 3,
+      "answer": "Unicode can represent characters from multiple languages including Urdu characters which ASCII cannot represent. ASCII only uses 7 bits allowing 128 characters which is insufficient for non-English languages. Unicode uses 16 bits or more allowing representation of characters from all world writing systems including Arabic script used in Urdu.",
+      "markBreakdown": [
+        "Mark 1: Unicode can represent Urdu/non-English characters",
+        "Mark 2: ASCII limited to 128 characters/English only",
+        "Mark 3: Unicode uses more bits allowing more character representations"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'ASCII uses 8 bits' — always say 'ASCII uses 7 bits'",
+      "Students often forget to add 1 when calculating two's complement after inverting bits",
+      "Don't confuse BCD with binary — BCD uses 4 bits per decimal digit not the most efficient binary representation",
+      "Never say 'hexadecimal is easier for humans' — say 'hexadecimal provides a more compact representation of binary'",
+      "Students often give the one's complement (just inverted bits) instead of two's complement"
+    ],
+    "examinerTips": [
+      "Number base conversions appear in every Paper 2 exam session",
+      "Always show working for conversions even if not explicitly asked",
+      "Remember that F in hexadecimal equals 15 in decimal and 1111 in binary",
+      "Two's complement questions often ask for both positive and negative representations"
+    ],
+    "formulas": [
+      "Two's complement: Invert all bits + 1",
+      "Hex to decimal: Multiply each digit by 16^position",
+      "Binary to decimal: Multiply each bit by 2^position"
+    ],
+    "keyDiagramDescription": "Place value tables showing powers of 2 for binary, powers of 16 for hexadecimal, and bit patterns for two's complement showing sign bit position"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:14:14.441Z",
+  "updated_at": "2026-04-06T05:14:14.442Z"
+}

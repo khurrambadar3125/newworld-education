@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Biology",
+  "subject_code": "9700",
+  "level": "A Level",
+  "theme": "A2 Biology",
+  "chapter_id": "A2.5",
+  "chapter_name": "Inherited change",
+  "note_data": {
+    "title": "Inherited change",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Meiosis** produces four genetically different gametes from one diploid cell through two nuclear divisions",
+      "**Crossing over** occurs during prophase I when non-sister chromatids exchange genetic material at chiasmata",
+      "**Independent assortment** occurs during metaphase I when homologous pairs align randomly at the equator",
+      "**Genetic diagrams** must show parental genotypes, gamete genotypes, offspring genotypes and phenotypes with ratios",
+      "**Chi-squared test** determines if observed results differ significantly from expected results (p = 0.05)",
+      "**Linkage** occurs when genes are on the same chromosome and reduces crossing over frequency",
+      "**Recombination frequency** equals the percentage of recombinant offspring and indicates distance between genes",
+      "**Autosomal linkage** affects inheritance patterns and reduces expected ratios from independent assortment",
+      "**Sex linkage** shows different inheritance patterns for X-linked and Y-linked characteristics"
+    ],
+    "definitions": [
+      {
+        "term": "Meiosis",
+        "definition": "Nuclear division that produces four genetically different haploid gametes from one diploid cell"
+      },
+      {
+        "term": "Crossing over",
+        "definition": "Exchange of genetic material between non-sister chromatids of homologous chromosomes during prophase I"
+      },
+      {
+        "term": "Independent assortment",
+        "definition": "Random alignment of homologous chromosome pairs at the equator during metaphase I of meiosis"
+      },
+      {
+        "term": "Linkage",
+        "definition": "Genes located on the same chromosome that tend to be inherited together"
+      },
+      {
+        "term": "Recombination frequency",
+        "definition": "Percentage of offspring showing recombinant phenotypes due to crossing over"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly. Include chi-squared formula and degrees of freedom."
+      },
+      {
+        "commandWord": "Draw",
+        "instruction": "Include all genotypes, phenotypes, gametes and ratios in genetic diagrams"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how crossing over during meiosis increases genetic variation. [3 marks]",
+      "marks": 3,
+      "answer": "Crossing over occurs during prophase I of meiosis when non-sister chromatids of homologous chromosomes exchange genetic material at points called chiasmata. This creates new combinations of alleles on the same chromosome that were not present in the parent. The resulting gametes contain different combinations of genetic material, increasing genetic variation in the offspring.",
+      "markBreakdown": [
+        "Mark 1: Occurs during prophase I/between non-sister chromatids",
+        "Mark 2: Exchange of genetic material/at chiasmata",
+        "Mark 3: Creates new combinations of alleles/increases genetic variation"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'chromosomes cross over' — always say 'non-sister chromatids exchange genetic material'",
+      "Students often confuse independent assortment with crossing over — independent assortment is about chromosome alignment, crossing over is about genetic exchange",
+      "Never write chi-squared without showing degrees of freedom and critical value comparison",
+      "Students forget to include gamete genotypes in genetic diagrams — always show the cross fully",
+      "Never say 'genes move' during crossing over — say 'genetic material is exchanged' or 'alleles are exchanged'"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2, often combined with statistical analysis",
+      "Always draw complete genetic diagrams showing P generation, gametes, F1 and F2 with ratios",
+      "Chi-squared questions require clear working — state null hypothesis, show calculation, compare with critical value",
+      "Use correct genetic notation: dominant alleles as capitals, recessive as lower case",
+      "For linkage questions, calculate recombination frequency as (recombinants ÷ total offspring) × 100"
+    ],
+    "formulas": [
+      "χ² = Σ(O-E)²/E",
+      "degrees of freedom = number of classes - 1",
+      "recombination frequency = (number of recombinants ÷ total offspring) × 100"
+    ],
+    "keyDiagramDescription": "Genetic diagram showing complete cross from P generation through gamete formation to F1 and F2 generations, including all genotypes, phenotypes and numerical ratios. Include Punnett square layout with clear labelling."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:05:43.255Z",
+  "updated_at": "2026-04-06T05:05:43.255Z"
+}

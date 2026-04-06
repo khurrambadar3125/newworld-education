@@ -1,0 +1,98 @@
+{
+  "subject": "A Level Economics",
+  "subject_code": "9708",
+  "level": "A Level",
+  "theme": "AS Microeconomics",
+  "chapter_id": "AS1",
+  "chapter_name": "Basic economic ideas",
+  "note_data": {
+    "title": "Basic Economic Ideas",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Scarcity** exists because human wants are unlimited but resources are finite, creating the fundamental economic problem",
+      "**Opportunity cost** is the value of the next best alternative foregone when making a choice",
+      "The **Production Possibility Frontier (PPF)** shows the maximum possible output combinations of two goods with given resources and technology",
+      "Points inside the PPF represent **inefficient production** where resources are unemployed or misallocated",
+      "Points on the PPF show **productive efficiency** where maximum output is achieved with available resources",
+      "Points outside the PPF are **unattainable** with current resources and technology",
+      "An outward shift of the PPF indicates **economic growth** due to increased resources or improved technology",
+      "**Economic systems** determine how the three basic questions are answered: what to produce, how to produce, for whom to produce",
+      "A **free market economy** relies on price mechanism and private ownership to allocate resources",
+      "A **command economy** uses central planning and government control to allocate resources"
+    ],
+    "definitions": [
+      {
+        "term": "Scarcity",
+        "definition": "The fundamental economic problem arising from unlimited human wants but limited resources available to satisfy them"
+      },
+      {
+        "term": "Opportunity Cost",
+        "definition": "The value of the next best alternative foregone when making an economic choice"
+      },
+      {
+        "term": "Production Possibility Frontier",
+        "definition": "A curve showing the maximum possible output combinations of two goods that can be produced with given resources and technology"
+      },
+      {
+        "term": "Economic System",
+        "definition": "The way in which a country organizes the production and distribution of goods and services"
+      },
+      {
+        "term": "Productive Efficiency",
+        "definition": "When maximum output is produced from given inputs, represented by any point on the PPF"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Analyse",
+        "instruction": "Break down the economic concept and show cause and effect relationships"
+      },
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show working clearly for opportunity cost calculations using given data"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain what is meant by opportunity cost and calculate the opportunity cost of producing one more unit of rice if Pakistan increases rice production from 20 to 21 million tonnes and wheat production falls from 30 to 28 million tonnes.",
+      "marks": 4,
+      "answer": "Opportunity cost is the value of the next best alternative foregone when making a choice. When Pakistan chooses to produce one additional unit of rice, resources must be transferred from wheat production. The opportunity cost of producing one more unit of rice is 2 million tonnes of wheat (30-28=2), because this is the amount of wheat production that must be sacrificed.",
+      "markBreakdown": [
+        "Mark 1: Definition of opportunity cost",
+        "Mark 2: Recognition that resources are transferred",
+        "Mark 3: Correct calculation (30-28=2)",
+        "Mark 4: Clear statement of final answer"
+      ]
+    },
+    "commonMistakes": [
+      "Never define opportunity cost as 'what you give up' — always specify 'the next best alternative foregone'",
+      "Students often confuse productive efficiency (on PPF) with allocative efficiency (optimal combination for society)",
+      "Don't say PPF shows 'what should be produced' — it shows what CAN be produced with given resources",
+      "Never calculate opportunity cost by adding — always use subtraction to find what is foregone",
+      "Students wrongly think points inside PPF are impossible — they are possible but inefficient"
+    ],
+    "examinerTips": [
+      "PPF diagrams appear in 80% of Paper 2 exams — always draw and label axes clearly",
+      "For opportunity cost calculations, show your working step by step for method marks",
+      "Use Pakistani examples: wheat vs cotton production, or education vs healthcare spending",
+      "Economic growth questions often link to PPF shifts — mention both increased resources AND improved technology"
+    ],
+    "formulas": [
+      "Opportunity Cost = Quantity of good Y foregone ÷ Quantity of good X gained"
+    ],
+    "keyDiagramDescription": "PPF curve showing maximum output combinations of two goods (e.g., wheat and rice), with points inside (inefficient), on (efficient), and outside (unattainable) the curve. Outward shifts show economic growth."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:07:11.764Z",
+  "updated_at": "2026-04-06T05:07:11.765Z"
+}

@@ -1,0 +1,87 @@
+{
+  "subject": "A Level Biology",
+  "subject_code": "9700",
+  "level": "A Level",
+  "theme": "AS Biology",
+  "chapter_id": "AS9",
+  "chapter_name": "Gas exchange and smoking",
+  "note_data": {
+    "title": "Gas exchange and smoking",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Alveoli** provide a large surface area for gas exchange with thin walls (one cell thick epithelium) for short diffusion distance",
+      "**Ventilation** maintains concentration gradients by bringing fresh air to alveoli and removing stale air",
+      "Gas exchange occurs by **diffusion** down concentration gradients - oxygen from alveolar air to blood, carbon dioxide from blood to alveolar air",
+      "**Capillaries** have thin walls and are in close contact with alveoli to minimize diffusion distance",
+      "**Smoking** damages ciliated epithelium reducing the ability to remove mucus and pathogens from airways",
+      "**Tar** in cigarettes is carcinogenic and causes mutations leading to lung cancer",
+      "**Carbon monoxide** combines irreversibly with haemoglobin forming carboxyhaemoglobin reducing oxygen transport",
+      "**Emphysema** is caused by smoking - alveolar walls break down reducing surface area for gas exchange",
+      "**Chronic bronchitis** results from smoking - excessive mucus production and inflammation of bronchi",
+      "Smoking during pregnancy reduces oxygen supply to fetus causing low birth weight and increased risk of miscarriage"
+    ],
+    "definitions": [
+      {
+        "term": "Gas exchange",
+        "definition": "The diffusion of oxygen from alveolar air into blood and carbon dioxide from blood into alveolar air"
+      },
+      {
+        "term": "Ventilation",
+        "definition": "The movement of air into and out of the lungs to maintain concentration gradients for gas exchange"
+      },
+      {
+        "term": "Emphysema",
+        "definition": "A lung disease where alveolar walls break down reducing surface area for gas exchange"
+      },
+      {
+        "term": "Carcinogen",
+        "definition": "A substance that causes cancer by causing mutations in DNA"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account of structure or process in logical sequence"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how the structure of alveoli is adapted for efficient gas exchange. [3]",
+      "marks": 3,
+      "answer": "Alveoli have thin walls (one cell thick) which provides a short diffusion distance for gases. They have a large surface area which allows more gas exchange to occur. Alveoli are surrounded by many capillaries which maintains steep concentration gradients.",
+      "markBreakdown": [
+        "Mark 1: Thin walls/short diffusion distance",
+        "Mark 2: Large surface area",
+        "Mark 3: Good blood supply/capillaries/maintains concentration gradients"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'oxygen is absorbed' — always say 'oxygen diffuses into blood'",
+      "Students often confuse breathing with gas exchange - breathing is ventilation, gas exchange is diffusion",
+      "Don't say smoking 'blocks' alveoli - say it 'damages alveolar walls' or 'reduces surface area'",
+      "Never say carbon monoxide 'poisons' blood - say it 'combines with haemoglobin reducing oxygen transport'",
+      "Students write 'air goes to lungs' instead of 'air moves down trachea, bronchi, bronchioles to alveoli'"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2 and Paper 4",
+      "Always mention concentration gradients when explaining gas exchange",
+      "Learn specific diseases caused by smoking - examiners expect precise names",
+      "Draw and label alveolus diagram showing capillaries for full marks in diagram questions"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Diagram of alveolus showing: thin alveolar wall, capillary network, direction of oxygen and carbon dioxide diffusion, blood flow direction. Label: alveolar air space, epithelium, capillary, red blood cells."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:03:11.378Z",
+  "updated_at": "2026-04-06T05:03:11.378Z"
+}

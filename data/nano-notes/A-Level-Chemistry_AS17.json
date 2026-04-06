@@ -1,0 +1,92 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Organic Chemistry",
+  "chapter_id": "AS17",
+  "chapter_name": "Carbonyl compounds",
+  "note_data": {
+    "title": "Carbonyl compounds",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Aldehydes** have the functional group -CHO at the end of a carbon chain, while **ketones** have the functional group C=O within the carbon chain",
+      "**Tollens' reagent** (ammoniacal silver nitrate) produces a **silver mirror** with aldehydes but no reaction with ketones",
+      "**Fehling's reagent** (blue solution containing Cu²⁺ ions) produces a **brick-red precipitate** (Cu₂O) with aldehydes but no reaction with ketones",
+      "Both aldehydes and ketones can be **reduced** to alcohols using **sodium borohydride (NaBH₄)** or **lithium aluminium hydride (LiAlH₄)**",
+      "Aldehydes are **oxidized** to carboxylic acids by **acidified potassium dichromate(VI)** or **acidified potassium manganate(VII)**",
+      "Ketones **cannot be oxidized** under normal conditions because the C=O carbon is not bonded to hydrogen",
+      "The **carbonyl group** is **polar** due to the electronegativity difference between carbon and oxygen (δ⁺C=Oδ⁻)",
+      "**Nucleophilic addition** occurs at the carbonyl group because the partially positive carbon attracts nucleophiles",
+      "Primary alcohols are oxidized to aldehydes, secondary alcohols are oxidized to ketones, using **acidified dichromate(VI)**"
+    ],
+    "definitions": [
+      {
+        "term": "Aldehyde",
+        "definition": "A compound containing the functional group -CHO at the end of a carbon chain"
+      },
+      {
+        "term": "Ketone",
+        "definition": "A compound containing the functional group C=O within a carbon chain, bonded to two carbon atoms"
+      },
+      {
+        "term": "Tollens' reagent",
+        "definition": "Ammoniacal silver nitrate solution used to distinguish aldehydes from ketones"
+      },
+      {
+        "term": "Reducing agent",
+        "definition": "A substance that donates electrons and causes reduction by removing oxygen or adding hydrogen"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Distinguish",
+        "instruction": "Give the test, observations for both compounds, and conclusion"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how Tollens' reagent can be used to distinguish between propanal and propanone. Include the observations and write an equation for any reaction that occurs.",
+      "marks": 4,
+      "answer": "Add Tollens' reagent (ammoniacal silver nitrate) to each compound. With propanal, a silver mirror forms on the walls of the test tube. With propanone, no reaction occurs and the solution remains colourless. This is because aldehydes are reducing agents and reduce Ag⁺ to Ag, but ketones cannot be oxidized. Equation: CH₃CH₂CHO + 2[Ag(NH₃)₂]⁺ + 3OH⁻ → CH₃CH₂COO⁻ + 2Ag + 4NH₃ + 2H₂O",
+      "markBreakdown": [
+        "Mark 1: Tollens' reagent added to both",
+        "Mark 2: Silver mirror with propanal, no reaction with propanone",
+        "Mark 3: Explanation that aldehydes reduce Ag⁺",
+        "Mark 4: Correct balanced equation"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'Tollens' reagent turns silver' — always say 'produces a silver mirror'",
+      "Students often confuse the products: aldehydes reduce to PRIMARY alcohols, ketones reduce to SECONDARY alcohols",
+      "Never say 'ketones cannot react' — they cannot be OXIDIZED but can be REDUCED",
+      "Writing wrong formulae: aldehyde is -CHO not -COH",
+      "Forgetting that Fehling's reagent goes from blue to brick-red precipitate, not just 'red'"
+    ],
+    "examinerTips": [
+      "Carbonyl compounds appear in Paper 2 almost every year, especially distinguishing tests",
+      "Always include observations (colour changes) and equations for full marks in practical questions",
+      "Learn the specific colours: Tollens' gives silver mirror, Fehling's gives brick-red precipitate",
+      "Remember reduction products: aldehydes → primary alcohols, ketones → secondary alcohols"
+    ],
+    "formulas": [
+      "Aldehyde: R-CHO",
+      "Ketone: R-CO-R'",
+      "Reduction: R-CHO + 2[H] → R-CH₂OH",
+      "Oxidation: R-CHO + [O] → R-COOH"
+    ],
+    "keyDiagramDescription": "Draw the carbonyl group showing partial charges (δ⁺C=Oδ⁻) and nucleophilic attack on the carbon atom with curly arrow mechanism"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:35:57.139Z",
+  "updated_at": "2026-04-06T04:35:57.140Z"
+}

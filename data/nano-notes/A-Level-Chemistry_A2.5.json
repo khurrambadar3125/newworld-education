@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "A2 Organic Chemistry",
+  "chapter_id": "A2.5",
+  "chapter_name": "Further organic chemistry",
+  "note_data": {
+    "title": "Further organic chemistry",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Benzene** has a delocalised π electron system with all C-C bonds equal in length and shows resistance to addition reactions",
+      "**Phenol** is weakly acidic due to delocalisation of the lone pair on oxygen into the benzene ring, forming a phenoxide ion",
+      "**Primary amines** can be formed by reduction of nitriles using LiAlH4 or by nucleophilic substitution of haloalkanes with ammonia",
+      "**Amides** are formed from acyl chlorides and amines, and can be hydrolysed under acidic or basic conditions to form carboxylic acids",
+      "**Amino acids** are amphoteric compounds that can exist as zwitterions at their isoelectric point",
+      "**Proteins** have primary structure (amino acid sequence), secondary structure (α-helix or β-pleated sheet) and tertiary structure (3D folding)",
+      "**Polyesters** are formed by condensation polymerisation between dicarboxylic acids and diols with elimination of water",
+      "**Polyamides** are formed by condensation polymerisation between dicarboxylic acids and diamines or by ring-opening of lactams"
+    ],
+    "definitions": [
+      {
+        "term": "Delocalisation",
+        "definition": "The spreading of electron density over more than two atoms in a molecule or ion"
+      },
+      {
+        "term": "Zwitterion",
+        "definition": "An ion that has both a positive and negative charge on different atoms in the same molecule"
+      },
+      {
+        "term": "Condensation polymerisation",
+        "definition": "A reaction where monomers join together with the elimination of small molecules such as water"
+      },
+      {
+        "term": "Isoelectric point",
+        "definition": "The pH at which an amino acid exists predominantly as a zwitterion with no net charge"
+      },
+      {
+        "term": "Peptide bond",
+        "definition": "An amide link formed between the amino group of one amino acid and the carboxyl group of another"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Draw",
+        "instruction": "For benzene, always show delocalised structure with circle. For amino acids, show zwitterion form at isoelectric point"
+      },
+      {
+        "commandWord": "Deduce",
+        "instruction": "Use evidence given to work out structure. Show your working clearly"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why phenol is more acidic than ethanol. [3]",
+      "marks": 3,
+      "answer": "Phenol can lose H⁺ from the -OH group to form a phenoxide ion. The negative charge on the oxygen atom is delocalised into the benzene ring. This delocalisation stabilises the phenoxide ion, making it easier for phenol to lose H⁺ and act as an acid. In ethanol, there is no delocalisation so the ethoxide ion is less stable.",
+      "markBreakdown": [
+        "Mark 1: Phenol loses H⁺ to form phenoxide ion",
+        "Mark 2: Negative charge is delocalised into benzene ring",
+        "Mark 3: Delocalisation stabilises the ion / makes phenol more acidic"
+      ]
+    },
+    "commonMistakes": [
+      "Never say benzene has 'alternating single and double bonds' — always refer to delocalised π electrons",
+      "Students often forget that amino acids exist as zwitterions in neutral conditions, not as molecules with -NH2 and -COOH",
+      "Don't confuse addition polymerisation with condensation polymerisation — polyesters and polyamides eliminate small molecules",
+      "Never say phenol is acidic because of the benzene ring — it's because the phenoxide ion is stabilised by delocalisation",
+      "Students often draw peptide bonds incorrectly — remember it's specifically the amide linkage -CO-NH-"
+    ],
+    "examinerTips": [
+      "Benzene reactions appear almost every year in Paper 4 — practice drawing mechanisms",
+      "Always show the zwitterion structure when asked about amino acids at physiological pH",
+      "For polymerisation questions, clearly show the repeating unit in brackets with continuation bonds",
+      "Protein structure questions often ask for specific examples — learn α-helix and β-pleated sheet"
+    ],
+    "formulas": [
+      "C6H6",
+      "C6H5OH",
+      "RNH2",
+      "RCONH2",
+      "NH2CHRCOOH"
+    ],
+    "keyDiagramDescription": "Benzene delocalised structure showing circle inside hexagon, zwitterion structure of amino acids (H3N⁺-CHR-COO⁻), and peptide bond formation between amino acids with water elimination"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:38:00.020Z",
+  "updated_at": "2026-04-06T04:38:00.020Z"
+}

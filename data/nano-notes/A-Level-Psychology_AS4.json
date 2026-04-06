@@ -1,0 +1,97 @@
+{
+  "subject": "A Level Psychology",
+  "subject_code": "9990",
+  "level": "A Level",
+  "theme": "AS Psychology",
+  "chapter_id": "AS4",
+  "chapter_name": "The learning approach",
+  "note_data": {
+    "title": "The learning approach",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Classical conditioning** is learning through association where a neutral stimulus becomes a conditioned stimulus that produces a conditioned response",
+      "**Operant conditioning** is learning through consequences where behaviour is shaped by reinforcement and punishment",
+      "**Positive reinforcement** increases the likelihood of behaviour being repeated by adding a pleasant stimulus",
+      "**Negative reinforcement** increases the likelihood of behaviour being repeated by removing an unpleasant stimulus",
+      "**Punishment** decreases the likelihood of behaviour being repeated by adding an unpleasant consequence",
+      "**Social learning theory** suggests learning occurs through observation, imitation and modelling of others' behaviour",
+      "**Vicarious reinforcement** occurs when observing others being rewarded increases the likelihood of imitating that behaviour",
+      "The learning approach assumes all behaviour is **learned** and can be explained through environmental factors rather than biological factors",
+      "**Extinction** occurs when a learned behaviour decreases in frequency due to lack of reinforcement or when the conditioned stimulus is presented without the unconditioned stimulus"
+    ],
+    "definitions": [
+      {
+        "term": "Classical conditioning",
+        "definition": "A type of learning where a neutral stimulus is repeatedly paired with an unconditioned stimulus until the neutral stimulus alone produces a conditioned response"
+      },
+      {
+        "term": "Operant conditioning",
+        "definition": "A type of learning where the consequences of behaviour determine whether that behaviour is repeated or not"
+      },
+      {
+        "term": "Social learning theory",
+        "definition": "Learning that occurs through observing and imitating the behaviour of others, particularly role models"
+      },
+      {
+        "term": "Reinforcement",
+        "definition": "Any consequence that increases the likelihood of a behaviour being repeated"
+      },
+      {
+        "term": "Modelling",
+        "definition": "The process of learning behaviour by observing and copying the actions of others"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Outline",
+        "instruction": "Give the main features without detailed explanation"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account including what happens and how it works"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how operant conditioning could be used to increase a student's homework completion. [6 marks]",
+      "marks": 6,
+      "answer": "Operant conditioning increases homework completion through positive reinforcement by adding pleasant consequences when homework is completed. For example, a teacher could give praise or house points immediately after homework submission. This increases the likelihood of homework completion being repeated because the student associates completing homework with receiving rewards. Negative reinforcement could also be used by removing an unpleasant consequence, such as allowing students who complete homework to skip detention. The timing of reinforcement is important as immediate reinforcement is more effective than delayed reinforcement. A variable ratio schedule of reinforcement would be most effective as it maintains high rates of behaviour and is resistant to extinction.",
+      "markBreakdown": [
+        "Mark 1: Definition of operant conditioning",
+        "Mark 2: Example of positive reinforcement",
+        "Mark 3: Explanation of why behaviour increases",
+        "Mark 4: Example of negative reinforcement",
+        "Mark 5: Reference to timing of reinforcement",
+        "Mark 6: Reference to schedules of reinforcement"
+      ]
+    },
+    "commonMistakes": [
+      "Never confuse negative reinforcement with punishment - negative reinforcement removes something unpleasant to increase behaviour",
+      "Students often describe classical conditioning when asked about operant conditioning - focus on consequences not associations",
+      "Avoid saying 'children copy everything they see' - social learning requires attention, retention, reproduction and motivation",
+      "Don't confuse unconditioned response with conditioned response - UCR is natural, CR is learned",
+      "Never say behaviour is 'programmed' - use 'learned' or 'conditioned' instead"
+    ],
+    "examinerTips": [
+      "This topic appears in almost every Paper 2 as a 6-8 mark question",
+      "Always use technical terminology like 'conditioned stimulus' rather than 'trigger'",
+      "Give real-world examples from Pakistani context like classroom behaviour or traffic rule compliance",
+      "For social learning theory, mention all four processes: attention, retention, reproduction, motivation"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Classical conditioning diagram showing progression from UCS→UCR to NS+UCS→UCR to CS→CR, with clear labels and arrows showing the learning process"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:21:35.755Z",
+  "updated_at": "2026-04-06T05:21:35.755Z"
+}

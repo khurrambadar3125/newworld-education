@@ -1,0 +1,97 @@
+{
+  "subject": "A Level Mathematics",
+  "subject_code": "9709",
+  "level": "A Level",
+  "theme": "Mechanics",
+  "chapter_id": "M3",
+  "chapter_name": "Newton's laws of motion",
+  "note_data": {
+    "title": "Newton's laws of motion",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Newton's First Law**: A body remains at rest or moves with constant velocity unless acted upon by a resultant force",
+      "**Newton's Second Law**: The rate of change of momentum is proportional to the resultant force acting on the body, F = ma when mass is constant",
+      "**Newton's Third Law**: If body A exerts a force on body B, then body B exerts an equal and opposite force on body A",
+      "For **connected particles** via light inextensible string, both particles have the same acceleration magnitude",
+      "In **pulley systems**, tension is the same throughout a light inextensible string passing over a smooth pulley",
+      "When objects are in a **lift**, apparent weight changes: add 'ma' to actual weight if accelerating upwards, subtract 'ma' if accelerating downwards",
+      "For objects on **smooth surfaces**, normal reaction equals weight component perpendicular to surface",
+      "**Resultant force** in direction of motion equals mass × acceleration in that direction",
+      "For **equilibrium**, resolve forces in two perpendicular directions and set each sum equal to zero"
+    ],
+    "definitions": [
+      {
+        "term": "Light inextensible string",
+        "definition": "A string that has negligible mass and does not stretch under tension"
+      },
+      {
+        "term": "Smooth pulley",
+        "definition": "A pulley that rotates freely without friction and does not affect the tension in the string"
+      },
+      {
+        "term": "Resultant force",
+        "definition": "The single force that has the same effect as all the individual forces acting on a body"
+      },
+      {
+        "term": "Normal reaction",
+        "definition": "The contact force acting perpendicular to a surface that prevents objects passing through the surface"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Show that",
+        "instruction": "Work through the calculation step-by-step to reach the given result"
+      },
+      {
+        "commandWord": "Find",
+        "instruction": "Calculate the value using appropriate equations of motion or force equations"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Two particles A and B of masses 3 kg and 2 kg respectively are connected by a light inextensible string passing over a smooth pulley. Particle A hangs vertically and B rests on a smooth horizontal table. Find the acceleration of the system and the tension in the string.",
+      "marks": 6,
+      "answer": "Let acceleration be a m/s² and tension be T N.\nFor particle A (taking downward as positive): 3g - T = 3a\nFor particle B (taking rightward as positive): T = 2a\nSubstituting: 3g - 2a = 3a\n30 - 2a = 3a\n30 = 5a\na = 6 m/s²\nT = 2 × 6 = 12 N",
+      "markBreakdown": [
+        "Mark 1: Define variables clearly",
+        "Mark 2: Apply F = ma to particle A correctly",
+        "Mark 3: Apply F = ma to particle B correctly",
+        "Mark 4: Solve simultaneous equations",
+        "Mark 5: Calculate acceleration",
+        "Mark 6: Calculate tension"
+      ]
+    },
+    "commonMistakes": [
+      "Never ignore the direction of acceleration - always define positive direction clearly for each particle",
+      "Students often forget that tension acts upward on the hanging mass and horizontally on the mass on the table",
+      "Never assume tension equals weight of lighter particle - this is only true when acceleration is zero",
+      "Students often confuse apparent weight with actual weight in lift problems",
+      "Never use different accelerations for connected particles - they must have the same magnitude"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 4 Mechanics",
+      "Always draw a clear force diagram for each particle separately",
+      "Define your positive direction before writing equations of motion",
+      "In lift problems, always consider whether the lift is accelerating up or down"
+    ],
+    "formulas": [
+      "F = ma",
+      "Weight = mg",
+      "F = μR (when friction present)"
+    ],
+    "keyDiagramDescription": "Draw separate force diagrams for each particle showing weight, tension, normal reactions and any other forces. Use arrows to indicate positive direction of motion for each particle."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:56:23.976Z",
+  "updated_at": "2026-04-06T04:56:23.976Z"
+}

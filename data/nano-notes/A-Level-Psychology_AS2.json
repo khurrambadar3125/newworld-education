@@ -1,0 +1,94 @@
+{
+  "subject": "A Level Psychology",
+  "subject_code": "9990",
+  "level": "A Level",
+  "theme": "AS Psychology",
+  "chapter_id": "AS2",
+  "chapter_name": "The biological approach",
+  "note_data": {
+    "title": "The biological approach",
+    "readTime": "8 min",
+    "keyPoints": [
+      "The **biological approach** assumes that all behaviour can be explained in terms of bodily processes, particularly brain structure, neurochemistry and genetics",
+      "**Neurotransmitters** are chemical messengers that carry signals across synapses between neurons, affecting mood, behaviour and cognitive processes",
+      "**Dopamine** is linked to reward and motivation, **serotonin** regulates mood and sleep, **noradrenaline** affects arousal and attention",
+      "**Twin studies** compare concordance rates between monozygotic (identical) and dizygotic (fraternal) twins to estimate genetic influence on behaviour",
+      "**Adoption studies** separate the effects of nature (genetics) from nurture (environment) by studying children raised apart from biological parents",
+      "**Evolution** shapes behaviour through natural selection - adaptive behaviours that aid survival and reproduction are passed to offspring",
+      "**Brain localisation** suggests specific brain areas control specific functions, supported by lesion studies and neuroimaging",
+      "**Reductionism** in the biological approach explains complex behaviours by breaking them down to simple biological components",
+      "**Determinism** assumes behaviour is caused by biological factors beyond conscious control, such as genes and brain chemistry"
+    ],
+    "definitions": [
+      {
+        "term": "Biological approach",
+        "definition": "An approach that assumes all behaviour can be explained in terms of bodily processes, particularly brain structure, neurochemistry and genetics"
+      },
+      {
+        "term": "Neurotransmitter",
+        "definition": "A chemical messenger that carries signals across synapses between neurons in the nervous system"
+      },
+      {
+        "term": "Concordance rate",
+        "definition": "The percentage of twin pairs who both show the same trait or behaviour, used to measure genetic influence"
+      },
+      {
+        "term": "Natural selection",
+        "definition": "The process by which organisms with advantageous traits are more likely to survive, reproduce and pass on their genes"
+      },
+      {
+        "term": "Reductionism",
+        "definition": "The belief that complex behaviours can be explained by breaking them down into simpler, more basic units"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Outline",
+        "instruction": "Give basic details without detailed explanation. 2-3 sentences maximum."
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give detailed account including what, how, when, where. Use examples."
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain one assumption of the biological approach. [3 marks]",
+      "marks": 3,
+      "answer": "One assumption of the biological approach is that all behaviour can be explained in terms of bodily processes. This means that psychological phenomena such as mental disorders, personality traits and cognitive abilities are caused by biological factors such as brain structure, neurochemistry and genetics. For example, depression is explained by low levels of the neurotransmitter serotonin rather than psychological factors.",
+      "markBreakdown": [
+        "Mark 1: Identifies assumption - behaviour explained by bodily processes",
+        "Mark 2: Elaboration - mentions brain structure, neurochemistry, genetics",
+        "Mark 3: Example - depression and serotonin levels"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'hormones control behaviour' - always say 'hormones influence behaviour' as behaviour has multiple causes",
+      "Students often confuse correlation with causation when discussing twin studies - high concordance doesn't prove genetic causation",
+      "Don't describe brain areas without explaining their specific functions - localisation requires function not just location",
+      "Avoid saying evolution is 'just a theory' - present it as a scientific explanation with evidence",
+      "Never ignore environmental factors completely - biological approach acknowledges gene-environment interactions"
+    ],
+    "examinerTips": [
+      "Twin study questions appear frequently - learn specific concordance rates for key behaviours",
+      "Always give specific neurotransmitter examples when discussing neurochemistry",
+      "Brain diagrams score extra marks - label key areas like frontal lobe, hippocampus, amygdala",
+      "Use 'influence' not 'cause' when discussing biological factors - shows understanding of complexity"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Brain diagram showing cerebral cortex (thinking/decision making), hippocampus (memory formation), amygdala (fear processing), and neuron diagram showing synapse with neurotransmitter release from presynaptic to postsynaptic neuron"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:20:52.912Z",
+  "updated_at": "2026-04-06T05:20:52.912Z"
+}

@@ -1,0 +1,90 @@
+{
+  "subject": "A Level Chemistry",
+  "subject_code": "9701",
+  "level": "A Level",
+  "theme": "AS Physical Chemistry",
+  "chapter_id": "AS2",
+  "chapter_name": "Atomic structure",
+  "note_data": {
+    "title": "Atomic structure",
+    "readTime": "8 min",
+    "keyPoints": [
+      "An **atom** consists of a nucleus containing protons and neutrons, surrounded by electrons in energy levels or shells",
+      "**Electrons** occupy orbitals which are regions of space where there is a high probability of finding an electron",
+      "The **principal quantum number (n)** indicates the energy level or shell, with n=1 being closest to the nucleus",
+      "**s-orbitals** are spherical, **p-orbitals** are dumbbell shaped, and each orbital can hold a maximum of 2 electrons",
+      "**Electronic configuration** shows the arrangement of electrons in orbitals, written as 1s² 2s² 2p⁶ etc.",
+      "**First ionisation energy** is the energy required to remove one mole of electrons from one mole of gaseous atoms",
+      "Ionisation energy **decreases down a group** because atomic radius increases and nuclear attraction decreases",
+      "Ionisation energy **increases across a period** because nuclear charge increases while shielding remains similar",
+      "**Successive ionisation energies** show large jumps when electrons are removed from inner shells closer to the nucleus"
+    ],
+    "definitions": [
+      {
+        "term": "Orbital",
+        "definition": "A region of space around the nucleus where there is a high probability of finding an electron"
+      },
+      {
+        "term": "First ionisation energy",
+        "definition": "The energy required to remove one mole of electrons from one mole of gaseous atoms to form one mole of gaseous 1+ ions"
+      },
+      {
+        "term": "Electronic configuration",
+        "definition": "The arrangement of electrons in orbitals around the nucleus of an atom"
+      },
+      {
+        "term": "Shielding effect",
+        "definition": "The reduction in nuclear attraction experienced by outer electrons due to repulsion from inner shell electrons"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Write the electronic configuration",
+        "instruction": "Use the format 1s² 2s² 2p⁶ or [Ne] 3s² for shortened form"
+      },
+      {
+        "commandWord": "Predict",
+        "instruction": "Use trends and give reasoning based on atomic structure"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain why the first ionisation energy of sodium is less than that of magnesium. [3]",
+      "marks": 3,
+      "answer": "Sodium has electronic configuration 1s² 2s² 2p⁶ 3s¹ while magnesium has 1s² 2s² 2p⁶ 3s². Magnesium has a higher nuclear charge (+12) compared to sodium (+11). The outer electron in magnesium experiences greater nuclear attraction, so more energy is required to remove it.",
+      "markBreakdown": [
+        "Mark 1: Electronic configurations stated correctly",
+        "Mark 2: Higher nuclear charge in magnesium identified",
+        "Mark 3: Link to greater nuclear attraction requiring more energy"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'electrons orbit the nucleus' — always say 'electrons occupy orbitals around the nucleus'",
+      "Students often write electronic configurations incorrectly by not following the order 1s² 2s² 2p⁶ 3s²",
+      "Never say ionisation energy decreases because 'atoms get bigger' — say 'atomic radius increases so nuclear attraction decreases'",
+      "Students confuse first ionisation energy definition by omitting 'gaseous' atoms and ions",
+      "Never ignore shielding effect when explaining ionisation energy trends down groups"
+    ],
+    "examinerTips": [
+      "Ionisation energy questions appear in every Paper 2 - learn the definition word perfect",
+      "Always state electronic configurations when explaining periodic trends",
+      "Draw orbital diagrams clearly with boxes and arrows for electron spin",
+      "Questions often link atomic structure to bonding and periodicity in Paper 2"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Orbital shapes diagram showing spherical s-orbital and dumbbell-shaped p-orbitals in 3D, plus electronic configuration notation with arrows showing electron spin pairing"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:30:00.893Z",
+  "updated_at": "2026-04-06T04:30:00.893Z"
+}

@@ -1,0 +1,98 @@
+{
+  "subject": "A Level Computer Science",
+  "subject_code": "9618",
+  "level": "A Level",
+  "theme": "AS Computer Science",
+  "chapter_id": "AS9",
+  "chapter_name": "Data types and structures",
+  "note_data": {
+    "title": "Data types and structures",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Data type** is a classification that specifies the type of value a variable can hold and the operations that can be performed on it",
+      "**Array** is a data structure that stores multiple values of the same data type in contiguous memory locations using a single identifier",
+      "**Record** is a composite data type that groups together related data items of different data types under a single identifier",
+      "**Linked list** uses nodes containing data and pointers, where each node contains data and a pointer to the next node in the sequence",
+      "**Stack** follows Last In First Out (LIFO) principle with operations push (add to top) and pop (remove from top)",
+      "**Queue** follows First In First Out (FIFO) principle with operations enqueue (add to rear) and dequeue (remove from front)",
+      "Arrays provide **direct access** to elements using index positions, making data retrieval faster",
+      "Linked lists provide **dynamic memory allocation** allowing the size to change during program execution",
+      "**Static data structures** have fixed size determined at compile time, while **dynamic data structures** can change size during runtime",
+      "Each data structure has specific **time complexity** characteristics for insertion, deletion and searching operations"
+    ],
+    "definitions": [
+      {
+        "term": "Array",
+        "definition": "A data structure that stores multiple elements of the same data type in contiguous memory locations, accessed using index positions"
+      },
+      {
+        "term": "Record",
+        "definition": "A composite data type that groups together related data items of different data types, accessed using field names"
+      },
+      {
+        "term": "Linked List",
+        "definition": "A linear data structure where elements are stored in nodes, each containing data and a pointer to the next node"
+      },
+      {
+        "term": "Stack",
+        "definition": "A linear data structure that follows Last In First Out (LIFO) principle where elements are added and removed from the same end"
+      },
+      {
+        "term": "Queue",
+        "definition": "A linear data structure that follows First In First Out (FIFO) principle where elements are added at the rear and removed from the front"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "Give similarities AND differences between two data structures"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give characteristics and how operations work step by step"
+      }
+    ],
+    "modelAnswer": {
+      "question": "A Pakistani university uses a queue data structure to manage student registration. Explain how the enqueue and dequeue operations work. [6]",
+      "marks": 6,
+      "answer": "Enqueue operation adds a new student to the rear of the queue. The rear pointer is incremented to point to the next available position. The new student data is inserted at this rear position. Dequeue operation removes a student from the front of the queue. The student data at the front position is retrieved and returned. The front pointer is incremented to point to the next student in the queue.",
+      "markBreakdown": [
+        "Mark 1: Enqueue adds to rear of queue",
+        "Mark 2: Rear pointer incremented",
+        "Mark 3: Data inserted at rear position",
+        "Mark 4: Dequeue removes from front",
+        "Mark 5: Data retrieved from front position",
+        "Mark 6: Front pointer incremented"
+      ]
+    },
+    "commonMistakes": [
+      "Never say 'queue adds at the back' — always say 'enqueue adds to the rear'",
+      "Students often confuse stack push/pop with queue enqueue/dequeue operations",
+      "Never say 'linked list is faster' — specify what operation (insertion/deletion/searching)",
+      "Students forget to mention pointers when describing linked lists",
+      "Never say 'array size cannot change' — say 'static arrays have fixed size determined at declaration'"
+    ],
+    "examinerTips": [
+      "Data structures appear in Paper 2 every year, worth 8-12 marks typically",
+      "Always draw labelled diagrams for linked lists showing nodes and pointers",
+      "Learn the exact operations for each structure - push/pop for stack, enqueue/dequeue for queue",
+      "Compare time complexities when asked about efficiency of data structures"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Stack diagram showing LIFO with push/pop operations at top. Queue diagram showing FIFO with enqueue at rear, dequeue at front. Linked list showing nodes with data fields and pointer fields connecting to next nodes."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:17:02.229Z",
+  "updated_at": "2026-04-06T05:17:02.229Z"
+}

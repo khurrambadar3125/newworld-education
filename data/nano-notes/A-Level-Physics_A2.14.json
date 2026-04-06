@@ -1,0 +1,99 @@
+{
+  "subject": "A Level Physics",
+  "subject_code": "9702",
+  "level": "A Level",
+  "theme": "A2 Electromagnetism and Nuclear",
+  "chapter_id": "A2.14",
+  "chapter_name": "Astronomy and cosmology",
+  "note_data": {
+    "title": "Astronomy and cosmology",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Stars** are formed from gravitational collapse of gas clouds, causing temperature and pressure to increase until nuclear fusion begins",
+      "The **Hertzsprung-Russell diagram** plots stellar luminosity against surface temperature, showing the main sequence where most stars lie",
+      "**Red giants** are formed when hydrogen fuel in the core is exhausted and the star expands and cools",
+      "**White dwarfs** are the final stage for low-mass stars, while high-mass stars may form **neutron stars** or **black holes**",
+      "**Hubble's law** states that recession velocity is proportional to distance: v = H₀d, providing evidence for an expanding universe",
+      "**Redshift** occurs when light from receding galaxies is stretched to longer wavelengths due to the Doppler effect",
+      "The **Big Bang theory** explains the origin of the universe from a hot, dense singularity approximately 13.8 billion years ago",
+      "**Cosmic microwave background radiation** provides evidence for the Big Bang as it represents the cooled remnant of the initial hot radiation",
+      "**Dark matter** and **dark energy** make up approximately 95% of the universe but cannot be directly observed"
+    ],
+    "definitions": [
+      {
+        "term": "Redshift",
+        "definition": "The increase in wavelength of electromagnetic radiation from a source moving away from the observer"
+      },
+      {
+        "term": "Hubble constant",
+        "definition": "The constant of proportionality in Hubble's law relating recession velocity to distance"
+      },
+      {
+        "term": "Main sequence star",
+        "definition": "A star in the stable phase of its life cycle where hydrogen nuclei fuse to form helium in the core"
+      },
+      {
+        "term": "Big Bang theory",
+        "definition": "The cosmological model describing the universe expanding from an extremely hot, dense initial state"
+      },
+      {
+        "term": "Luminosity",
+        "definition": "The total power radiated by a star in all directions"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give the process step by step without detailed explanation"
+      },
+      {
+        "commandWord": "Suggest",
+        "instruction": "Give a reasonable answer based on physics knowledge, multiple answers acceptable"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how the Hertzsprung-Russell diagram provides evidence for stellar evolution. [3]",
+      "marks": 3,
+      "answer": "The H-R diagram shows most stars lie on the main sequence where they spend the majority of their lifetime fusing hydrogen. Stars move off the main sequence when core hydrogen is exhausted, becoming red giants or supergiants. The final stages show white dwarfs in the bottom left, demonstrating the complete evolutionary path of stars.",
+      "markBreakdown": [
+        "Mark 1: Most stars on main sequence during hydrogen burning phase",
+        "Mark 2: Stars move off main sequence when hydrogen exhausted",
+        "Mark 3: End stages (white dwarfs) shown in different region of diagram"
+      ]
+    },
+    "commonMistakes": [
+      "Never say redshift is caused by stars 'moving faster' — always say 'space itself is expanding'",
+      "Students often confuse luminosity with brightness - luminosity is total power output, brightness depends on distance",
+      "Don't say the Big Bang was an 'explosion in space' — it was an expansion of space itself",
+      "Never describe the universe as expanding 'into' something — space itself is expanding",
+      "Students mix up red giants (low mass star evolution) with red supergiants (high mass star evolution)"
+    ],
+    "examinerTips": [
+      "H-R diagram questions appear frequently - practice plotting and interpreting stellar data",
+      "Always mention 'nuclear fusion' not just 'fusion' when describing stellar processes",
+      "Redshift calculations often combine with wave equation - check units carefully",
+      "Age of universe questions require rearranging Hubble's law: t = 1/H₀"
+    ],
+    "formulas": [
+      "v = H₀d (Hubble's law)",
+      "z = Δλ/λ (redshift)",
+      "v = zc (for small redshifts)",
+      "Age of universe ≈ 1/H₀"
+    ],
+    "keyDiagramDescription": "Hertzsprung-Russell diagram with luminosity (log scale) on y-axis and surface temperature (decreasing left to right) on x-axis, showing main sequence diagonal band, red giant branch, and white dwarf region"
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 9,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T04:47:35.626Z",
+  "updated_at": "2026-04-06T04:47:35.626Z"
+}

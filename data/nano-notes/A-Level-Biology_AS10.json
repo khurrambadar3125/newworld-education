@@ -1,0 +1,96 @@
+{
+  "subject": "A Level Biology",
+  "subject_code": "9700",
+  "level": "A Level",
+  "theme": "AS Biology",
+  "chapter_id": "AS10",
+  "chapter_name": "Infectious disease",
+  "note_data": {
+    "title": "Infectious disease",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Pathogens** are disease-causing organisms including bacteria, viruses, fungi and protoctists that invade host tissues",
+      "**Primary defences** prevent pathogen entry and include skin as a barrier and stomach acid that destroys pathogens",
+      "**Phagocytosis** involves white blood cells engulfing pathogens and destroying them using lysosomes",
+      "**Lymphocytes** produce specific antibodies complementary to antigens on pathogen surfaces",
+      "**Antibodies** are Y-shaped proteins that bind to specific antigens causing agglutination and neutralisation",
+      "**Active immunity** develops when lymphocytes produce antibodies and memory cells after antigen exposure",
+      "**Vaccination** introduces antigens to stimulate antibody production and memory cell formation without causing disease",
+      "**HIV** attacks helper T lymphocytes reducing the immune response leading to AIDS",
+      "**Memory cells** remain in blood after infection and enable rapid secondary immune response upon re-exposure",
+      "**Passive immunity** provides temporary protection through antibodies from another organism"
+    ],
+    "definitions": [
+      {
+        "term": "Pathogen",
+        "definition": "A disease-causing organism that invades and damages host tissues"
+      },
+      {
+        "term": "Antibody",
+        "definition": "A Y-shaped protein produced by lymphocytes that is complementary to and binds with specific antigens"
+      },
+      {
+        "term": "Active immunity",
+        "definition": "Immunity developed when lymphocytes are stimulated to produce antibodies and memory cells"
+      },
+      {
+        "term": "Vaccination",
+        "definition": "The introduction of antigens into the body to stimulate an immune response and memory cell formation"
+      },
+      {
+        "term": "Phagocytosis",
+        "definition": "The process by which white blood cells engulf and destroy pathogens using lysosomes"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "State",
+        "instruction": "Give one fact in one sentence. No explanation needed."
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      },
+      {
+        "commandWord": "Describe",
+        "instruction": "Give a sequence of events or detailed account of the process"
+      },
+      {
+        "commandWord": "Compare",
+        "instruction": "State similarities and differences between two things"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Explain how vaccination provides protection against infectious disease. [4 marks]",
+      "marks": 4,
+      "answer": "Vaccination introduces antigens from pathogens into the body. These antigens stimulate lymphocytes to produce specific antibodies complementary to the antigens. Memory cells are formed and remain in the blood. If the same pathogen enters later, memory cells rapidly produce large quantities of antibodies providing faster secondary immune response.",
+      "markBreakdown": [
+        "Mark 1: Antigens introduced/injected",
+        "Mark 2: Lymphocytes stimulated to produce antibodies",
+        "Mark 3: Memory cells formed",
+        "Mark 4: Rapid secondary response upon re-infection"
+      ]
+    },
+    "commonMistakes": [
+      "Never say antibodies kill pathogens — antibodies bind to antigens causing agglutination",
+      "Students confuse active and passive immunity — active involves producing your own antibodies",
+      "Don't say vaccines contain weakened pathogens — they contain antigens from pathogens",
+      "Never say white blood cells produce antibodies — only lymphocytes produce antibodies",
+      "Students forget that HIV specifically attacks helper T lymphocytes, not all white blood cells"
+    ],
+    "examinerTips": [
+      "This topic appears almost every year in Paper 2",
+      "Always distinguish between primary and secondary immune responses",
+      "Learn the specific sequence: antigen recognition → lymphocyte activation → antibody production → memory cell formation",
+      "HIV questions often link to reduced immunity and opportunistic infections"
+    ],
+    "formulas": [],
+    "keyDiagramDescription": "Structure of an antibody showing Y-shape with variable regions that bind to specific antigens, and constant regions. Also draw phagocytosis sequence showing engulfment and lysosome fusion."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 10,
+  "definitions_count": 5,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:03:31.052Z",
+  "updated_at": "2026-04-06T05:03:31.052Z"
+}

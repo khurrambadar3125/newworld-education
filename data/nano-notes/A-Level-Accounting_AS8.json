@@ -1,0 +1,89 @@
+{
+  "subject": "A Level Accounting",
+  "subject_code": "9706",
+  "level": "A Level",
+  "theme": "AS Accounting",
+  "chapter_id": "AS8",
+  "chapter_name": "Manufacturing accounts",
+  "note_data": {
+    "title": "Manufacturing accounts",
+    "readTime": "8 min",
+    "keyPoints": [
+      "**Prime cost** comprises direct materials, direct labour and direct expenses only",
+      "**Factory overhead** includes all indirect costs incurred in the factory such as factory rent, depreciation of machinery, and factory supervisor wages",
+      "**Production cost** is calculated as prime cost plus factory overhead absorbed",
+      "**Work in progress** must be valued at production cost (prime cost + factory overhead) not selling price",
+      "Manufacturing account transfers goods to trading account at **production cost** which becomes cost of goods sold",
+      "**Under-absorbed overhead** occurs when actual factory overhead exceeds overhead absorbed and is debited to profit and loss account",
+      "**Over-absorbed overhead** occurs when overhead absorbed exceeds actual factory overhead and is credited to profit and loss account",
+      "Factory profit should be eliminated from closing stock valuation to avoid overstating profits"
+    ],
+    "definitions": [
+      {
+        "term": "Prime cost",
+        "definition": "The total of direct materials, direct labour and direct expenses incurred in manufacturing a product"
+      },
+      {
+        "term": "Factory overhead",
+        "definition": "All indirect costs incurred in the factory including indirect materials, indirect labour and indirect expenses"
+      },
+      {
+        "term": "Production cost",
+        "definition": "Prime cost plus factory overhead absorbed in manufacturing goods"
+      },
+      {
+        "term": "Work in progress",
+        "definition": "Partly completed goods at the end of accounting period valued at production cost incurred to date"
+      }
+    ],
+    "howToAnswer": [
+      {
+        "commandWord": "Calculate",
+        "instruction": "Show all workings step by step. Start with opening stock + purchases/production - closing stock format"
+      },
+      {
+        "commandWord": "Prepare",
+        "instruction": "Use correct headings and format. Manufacturing account first, then trading account"
+      },
+      {
+        "commandWord": "Explain",
+        "instruction": "Give the point + reason using 'because' or 'this is because'"
+      }
+    ],
+    "modelAnswer": {
+      "question": "Calculate the production cost per unit given: Direct materials $50,000, Direct labour $30,000, Factory rent $15,000, Units produced 2,000.",
+      "marks": 3,
+      "answer": "Prime cost = Direct materials + Direct labour = $50,000 + $30,000 = $80,000. Production cost = Prime cost + Factory overhead = $80,000 + $15,000 = $95,000. Production cost per unit = $95,000 ÷ 2,000 = $47.50 per unit.",
+      "markBreakdown": [
+        "Mark 1: Prime cost calculation $80,000",
+        "Mark 2: Production cost calculation $95,000",
+        "Mark 3: Cost per unit $47.50"
+      ]
+    },
+    "commonMistakes": [
+      "Never include selling expenses in factory overhead — these belong in profit and loss account",
+      "Students often forget to adjust for work in progress when calculating cost of production",
+      "Never value closing stock at selling price — always use production cost",
+      "Students confuse direct expenses with factory overhead — direct expenses are part of prime cost",
+      "Never add factory profit to production cost when transferring to trading account"
+    ],
+    "examinerTips": [
+      "Manufacturing accounts appear regularly in Paper 2 Section A",
+      "Always show the transfer from manufacturing account to trading account clearly",
+      "Remember to eliminate unrealized profit when factory transfers at above cost",
+      "Work in progress adjustments follow the same pattern as stock adjustments"
+    ],
+    "formulas": [
+      "Prime Cost = Direct Materials + Direct Labour + Direct Expenses",
+      "Production Cost = Prime Cost + Factory Overhead",
+      "Cost of Production = Opening WIP + Production Cost - Closing WIP"
+    ],
+    "keyDiagramDescription": "Manufacturing account showing three main sections: Prime cost (direct costs), plus Factory overhead (indirect costs), equals Production cost transferred to trading account. Include work in progress adjustments at bottom."
+  },
+  "read_time_minutes": 8,
+  "key_points_count": 8,
+  "definitions_count": 4,
+  "mistakes_count": 5,
+  "created_at": "2026-04-06T05:26:52.940Z",
+  "updated_at": "2026-04-06T05:26:52.940Z"
+}
