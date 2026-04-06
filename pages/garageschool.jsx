@@ -19,11 +19,18 @@ export default function GarageSchoolPage() {
   const [isMobile, setIsMobile] = useState(false);
   if (typeof window !== 'undefined' && !isMobile && window.innerWidth < 768) setIsMobile(true);
 
-  // Set Sindh Board context for any visitor — so nav routes correctly
+  // Set Sindh Board context + 30-day free access for Garage School students
   if (typeof window !== 'undefined') {
     try {
       const p = JSON.parse(localStorage.getItem('nw_user') || '{}');
-      if (!p.board) { p.board = 'sindh'; p.curriculum = 'sindh'; localStorage.setItem('nw_user', JSON.stringify(p)); }
+      if (!p.board) {
+        p.board = 'sindh';
+        p.curriculum = 'sindh';
+        p.source = 'garage_school';
+        p.free_access_until = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(); // 30 days free
+        p.school = 'The Garage School';
+        localStorage.setItem('nw_user', JSON.stringify(p));
+      }
     } catch {}
   }
 
