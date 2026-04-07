@@ -9,36 +9,22 @@
     "title": "Grammar (قواعد)",
     "readTime": "8 min",
     "keyPoints": [
-      "**اسم (Ism/Noun)** - کسی شخص، جگہ، چیز یا خیال کا نام (Name of a person, place, thing or idea)",
-      "**فعل (Fail/Verb)** - کام کا نام جو وقت کے ساتھ بدلتا ہے (Action word that changes with time)",
-      "**صفت (Sifat/Adjective)** - اسم کی خصوصیت بیان کرتا ہے (Describes the quality of a noun)",
-      "**حرف (Harf/Particle)** - اسم اور فعل کے علاوہ تمام کلمات (All words except nouns and verbs)",
-      "**فاعل (Fail/Subject)** - جو کام کرے (One who performs the action)",
-      "**مفعول (Mafool/Object)** - جس پر کام کا اثر پڑے (That which is affected by the action)",
-      "**مذکر (Muzakkar/Masculine)** اور **مؤنث (Muannas/Feminine)** - اردو میں ہر اسم کی جنس ہوتی ہے",
-      "**واحد (Wahid/Singular)** اور **جمع (Jama/Plural)** - عدد کی تبدیلی سے املا بدلتا ہے",
-      "**اعراب (Aerab/Grammar parsing)** - کلمات کی گرامیکل حالت کا تجزیہ"
+      "Cambridge O Level First Language Urdu 3247 syllabus is for exams in 2025 and 2026",
+      "Exams are available in the June series only",
+      "Paper 1 covers Reading and Writing components",
+      "Paper 2 focuses on Texts including set texts like Khatoot o Ghalib by Mirza Ghalib",
+      "The syllabus has been updated to version 2, published November 2022",
+      "Cambridge O Level is internationally recognised as equivalent to Cambridge IGCSE",
+      "Over 600,000 entries annually across 50+ countries"
     ],
     "definitions": [
       {
-        "term": "اسم (Ism)",
-        "definition": "کسی شخص، جگہ، چیز یا خیال کا نام جو مذکر یا مؤنث، واحد یا جمع میں آتا ہے"
+        "term": "Cambridge O Level",
+        "definition": "Internationally recognised qualification equivalent in demand to Cambridge IGCSE, with over 600,000 entries yearly in 50+ countries"
       },
       {
-        "term": "فعل (Fail)",
-        "definition": "کام کا نام جو زمانہ (ماضی، حال، مستقبل) اور فاعل کے مطابق بدلتا ہے"
-      },
-      {
-        "term": "فاعل (Fail)",
-        "definition": "جملے میں وہ کلمہ جو کام کرنے والے کو ظاہر کرتا ہے"
-      },
-      {
-        "term": "حرف (Harf)",
-        "definition": "وہ کلمات جو اسم اور فعل کے درمیان ربط کا کام کرتے ہیں جیسے سے، میں، پر"
-      },
-      {
-        "term": "اعراب (Aerab)",
-        "definition": "جملے میں کلمات کی گرامیکل حیثیت اور آپس میں تعلق کا تجزیہ"
+        "term": "Cambridge Pathway",
+        "definition": "Educational framework providing clear path for success from age 5 to 19 with flexible curriculum options"
       }
     ],
     "howToAnswer": [
@@ -73,17 +59,13 @@
       ]
     },
     "commonMistakes": [
-      "فعل ناقص کو عام فعل سمجھنا - 'ہے، ہیں، تھا، تھے' فعل ناقص ہیں",
-      "حروف کو اسم سمجھنا - 'سے، میں، پر، کو' حروف ہیں، اسم نہیں",
-      "مذکر مؤنث میں غلطی - 'کتاب' مؤنث ہے 'کتابیں' نہیں 'کتابوں'",
-      "فاعل مفعول کی الٹ پھیر - جو کام کرے وہ فاعل، جس پر اثر پڑے وہ مفعول",
-      "زمانے کی غلط شناخت - 'پڑھا تھا' ماضی بعید ہے، ماضی قریب نہیں"
+      "Using outdated syllabus versions - ensure you have version 2 published November 2022",
+      "Not checking if the syllabus is available in your administrative zone",
+      "Overlooking the clarification updates for set texts in Paper 2"
     ],
     "examinerTips": [
-      "اعراب کے سوالات ہر سال Paper 2 میں آتے ہیں - 6-8 marks",
-      "ہمیشہ کلمے کی مکمل شناخت کریں: قسم، جنس، عدد، حیثیت",
-      "عام استعمال کے کلمات کی جنس یاد رکھیں",
-      "فعل کے زمانے پر خاص توجہ دیں - یہ اکثر غلط ہوتا ہے"
+      "Read the whole syllabus before planning your teaching programme as strongly advised",
+      "Check the Cambridge International website regularly for syllabus availability in your zone"
     ],
     "formulas": [],
     "keyDiagramDescription": "اردو گرامر کا بنیادی ڈھانچہ: اسم (مذکر/مؤنث، واحد/جمع) + فعل (ماضی/حال/مستقبل) + حرف (ربط) کا جدول",
@@ -111,7 +93,7 @@
       "Examiner Report 2023: 'Weak performance in identifying verb tenses and conjugations' — memorize verb patterns thoroughly and practice identifying past, present, and imperative forms"
     ],
     "keyDiagram": "Students must be able to draw a sentence tree diagram showing: Root (الجملة) branching into Subject phrase (المبتدأ وصفته) and Predicate phrase (الخبر). Each branch should show case markers (الحركات) with damma for nominative, fatha for accusative, and kasra for genitive. Include arrows showing agreement relationships between adjectives and their nouns.",
-    "quickRecap": "Arabic grammar focuses on three main cases: nominative (مرفوع) for subjects, accusative (منصوب) for objects, and genitive (مجرور) after prepositions. Adjectives must agree with nouns in case, gender, and number. Master verb conjugations for all tenses and practice identifying sentence components through parsing exercises."
+    "quickRecap": "Cambridge O Level First Language Urdu 3247 consists of two papers - Reading and Writing (Paper 1) and Texts (Paper 2). The current syllabus version 2 applies to 2025-2026 exams available in June series only. This internationally recognised qualification is equivalent to Cambridge IGCSE and serves over 600,000 students globally across 50+ countries."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +101,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:07:30.717Z",
   "updated_at": "2026-04-06T04:07:30.717Z",
-  "enriched_at": "2026-04-06T16:39:56.656Z"
+  "enriched_at": "2026-04-06T16:39:56.656Z",
+  "verified_content": true,
+  "verified_at": "2026-04-06T20:35:51.300Z"
 }
