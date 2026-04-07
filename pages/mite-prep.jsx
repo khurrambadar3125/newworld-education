@@ -47,7 +47,7 @@ export default function MiTEPrep() {
   const [loading, setLoading] = useState(false);
   const [phase, setPhase] = useState('select'); // select | practice | results
 
-  // Generate questions using Starky
+  // Serve questions from verified bank — NO AI generation
   const startPractice = async (program, section) => {
     setSelectedProgram(program);
     setSelectedSection(section);
@@ -57,27 +57,35 @@ export default function MiTEPrep() {
     setCurrentQ(0);
 
     try {
-      const res = await fetch('/api/anthropic', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: `Generate 5 MCQ entrance test questions for MiTE University ${program.name} program, section: ${section.name}. Topics: ${section.topics.join(', ')}. Each question should have 4 options (A-D) and one correct answer. Format as JSON array: [{"question":"text","options":{"A":"","B":"","C":"","D":""},"correct":"B","explanation":"why B is correct"}]`,
-          stream: false,
-          userProfile: { gradeId: 'university', grade: 'University', name: 'MiTE Candidate' },
-          sessionMemory: { currentSubject: program.name },
-        }),
-      });
-      const data = await res.json();
-      const text = data.reply || data.content || '';
-      const jsonMatch = text.match(/\[[\s\S]*\]/);
-      if (jsonMatch) {
-        setQuestions(JSON.parse(jsonMatch[0]));
-      } else {
-        // Fallback questions
-        setQuestions([
-          { question: `Sample ${section.name} question for ${program.name} entrance`, options: { A: 'Option A', B: 'Option B', C: 'Option C', D: 'Option D' }, correct: 'B', explanation: 'This is the correct answer because...' }
-        ]);
+      // Fetch 5 questions from the verified bank
+      const fetched = [];
+      const excludeIds = [];
+      for (let i = 0; i < 5; i++) {
+        const res = await fetch('/api/question-bank/serve', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            subject: section.name,
+            level: 'University',
+            topic: section.topics[i % section.topics.length],
+            type: 'mcq',
+            curriculum: 'mite',
+            excludeIds,
+          }),
+        });
+        const data = await res.json();
+        if (data.question && data.options) {
+          fetched.push({
+            question: data.question,
+            options: data.options,
+            correct: data.correctOption || data.correct,
+            explanation: data.markSchemeHint || data.explanation || '',
+            _bankId: data._bankId,
+          });
+          if (data._bankId) excludeIds.push(data._bankId);
+        }
       }
+      setQuestions(fetched.length > 0 ? fetched : []);
     } catch {
       setQuestions([]);
     }
@@ -155,7 +163,7 @@ export default function MiTEPrep() {
           {/* Loading */}
           {phase === 'practice' && loading && (
             <div style={{ textAlign: 'center', padding: 40, color: 'rgba(255,255,255,.4)' }}>
-              Generating {selectedProgram?.name} entrance questions...
+              Loading {selectedProgram?.name} questions from verified bank...
             </div>
           )}
 

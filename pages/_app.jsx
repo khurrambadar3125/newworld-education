@@ -524,8 +524,8 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
         <InstallBanner />
         {showNav && <Nav current={router.pathname} />}
         <ErrorBoundary><Component {...pageProps} /></ErrorBoundary>
-        {!['/special-needs','/nixor','/challenge','/garageschool','/founding','/founder','/nixordemo','/partner','/monitor'].includes(router.pathname) && <StarkyBubble />}
-        {!['/special-needs','/music-for-all','/reading-for-all','/arts-for-all','/nixor','/challenge','/garageschool','/founding','/founder','/nixordemo','/partner','/monitor'].includes(router.pathname) && <VoiceChatBar />}
+        {!['/special-needs','/nixor','/challenge','/garageschool','/founding','/founder','/nixordemo','/partner','/monitor'].includes(router.pathname) && !router.pathname.startsWith('/mite') && <StarkyBubble />}
+        {!['/special-needs','/music-for-all','/reading-for-all','/arts-for-all','/nixor','/challenge','/garageschool','/founding','/founder','/nixordemo','/partner','/monitor'].includes(router.pathname) && !router.pathname.startsWith('/mite') && <VoiceChatBar />}
       </ThemeProvider>
     </SessionProvider>
   );
