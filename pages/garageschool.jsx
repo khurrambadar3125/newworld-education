@@ -41,7 +41,17 @@ export default function GarageSchoolPage() {
         <meta name="description" content="The Garage School and NewWorldEdu bring AI-powered education to 550+ children in Karachi. Every child deserves a personal tutor." />
       </Head>
 
-      {/* No duplicate header — global nav from _app.jsx handles this */}
+      {/* Share button */}
+      <div style={{ textAlign: 'right', padding: '10px 16px 0' }}>
+        <button onClick={() => {
+          const text = 'The Garage School ab AI se padhai karwa raha hai! Free hai. Abhi try karein:';
+          const url = 'https://www.newworld.education/garageschool';
+          if (navigator.share) { navigator.share({ title: 'The Garage School × NewWorldEdu', text, url }).catch(() => {}); }
+          else { window.open(`https://wa.me/?text=${encodeURIComponent(text + '\n' + url)}`, '_blank'); }
+        }} style={{ background: 'rgba(250,246,235,0.06)', border: '1px solid rgba(250,246,235,0.1)', borderRadius: 10, padding: '8px 16px', cursor: 'pointer', fontSize: 13, fontWeight: 700, color: '#4ADE80' }}>
+          📤 Share with Students
+        </button>
+      </div>
 
       {/* ═══ HERO ═══ */}
       <section style={{ textAlign: 'center', padding: isMobile ? '48px 20px 40px' : '80px 24px 60px', maxWidth: 800, margin: '0 auto' }}>
