@@ -69,6 +69,7 @@ const SINDH_MENU_GROUPS = [
     { href: '/sindh-dashboard', label: '📊 My Progress' },
   ]},
   { title: 'Explore', items: [
+    { href: '/skills', label: '💰 Skills & Earning' },
     { href: '/languages', label: '🌍 Languages' },
     { href: '/spelling-bee', label: '🐝 Spelling Bee' },
     { href: '/reading', label: '📚 Reading' },
