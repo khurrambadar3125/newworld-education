@@ -1,7 +1,7 @@
 /**
  * pages/mite-study.jsx — MiTE University Study Section
  * ─────────────────────────────────────────────────────────────────
- * AI tutor for BBA, BS-CS, BS-FD, and Accounting undergraduate courses.
+ * AI tutor for BBA and BS-CS undergraduate courses.
  * Students select course → topic → get AI-powered study support.
  */
 
@@ -45,38 +45,6 @@ const COURSES = {
         { name: 'Object-Oriented Programming', topics: ['Classes & Objects', 'Inheritance', 'Polymorphism', 'Encapsulation', 'Abstraction', 'Design Patterns'] },
         { name: 'Discrete Mathematics', topics: ['Set Theory', 'Relations', 'Graph Theory', 'Combinatorics', 'Proof Techniques', 'Recurrence Relations'] },
         { name: 'Database Systems', topics: ['ER Diagrams', 'SQL', 'Normalization', 'Transactions', 'Indexing', 'NoSQL Basics'] },
-      ]},
-    ],
-  },
-  'BS-FD': {
-    icon: '🎨', color: '#7C3AED',
-    semesters: [
-      { sem: 'Semester 1', courses: [
-        { name: 'Fashion Illustration', topics: ['Figure Drawing', 'Fashion Croquis', 'Rendering Techniques', 'Fabric Illustration', 'Digital Illustration'] },
-        { name: 'Pattern Making', topics: ['Body Measurements', 'Basic Blocks', 'Dart Manipulation', 'Pattern Grading', 'Draping Techniques'] },
-        { name: 'Textile Science', topics: ['Fiber Properties', 'Fabric Construction', 'Finishing Processes', 'Fabric Identification', 'Sustainable Textiles'] },
-        { name: 'Color Theory & Design', topics: ['Color Wheel', 'Color Harmonies', 'Design Elements', 'Design Principles', 'Visual Composition'] },
-      ]},
-      { sem: 'Semester 2', courses: [
-        { name: 'Garment Construction', topics: ['Sewing Techniques', 'Seam Types', 'Fasteners', 'Fitting & Alterations', 'Quality Control'] },
-        { name: 'History of Fashion', topics: ['Ancient Costume', 'Western Fashion History', 'South Asian Fashion', 'Contemporary Designers', 'Fashion Movements'] },
-        { name: 'Digital Design (CAD)', topics: ['Adobe Illustrator for Fashion', 'Photoshop Techniques', 'Technical Drawings', 'Portfolio Layout', 'Print Design'] },
-      ]},
-    ],
-  },
-  Accounting: {
-    icon: '📊', color: '#F97316',
-    semesters: [
-      { sem: 'Semester 1', courses: [
-        { name: 'Financial Accounting', topics: ['Double Entry', 'Trial Balance', 'Income Statement', 'Balance Sheet', 'Cash Flow', 'Depreciation', 'Bank Reconciliation'] },
-        { name: 'Business Mathematics', topics: ['Interest & Annuities', 'Matrices', 'Linear Programming', 'Statistics', 'Probability'] },
-        { name: 'Microeconomics', topics: ['Supply & Demand', 'Elasticity', 'Market Structures', 'Consumer Theory', 'Production Costs'] },
-        { name: 'Business Communication', topics: ['Report Writing', 'Business Letters', 'Presentation Skills', 'Professional Email'] },
-      ]},
-      { sem: 'Semester 2', courses: [
-        { name: 'Cost Accounting', topics: ['Cost Classification', 'Job Costing', 'Process Costing', 'Budgeting', 'Variance Analysis'] },
-        { name: 'Taxation', topics: ['Income Tax Ordinance', 'Tax Computation', 'Sales Tax', 'Withholding Tax', 'Tax Filing'] },
-        { name: 'Corporate Finance', topics: ['Time Value of Money', 'Capital Budgeting', 'Risk & Return', 'Cost of Capital', 'Working Capital'] },
       ]},
     ],
   },

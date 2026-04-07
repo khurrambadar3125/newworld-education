@@ -22,7 +22,7 @@ export default function MiTEPage() {
     <div style={{ minHeight: '100vh', background: NAVY, fontFamily: "'Sora',-apple-system,sans-serif", color: WHITE }}>
       <Head>
         <title>MiTE × NewWorldEdu — AI-Powered Education for the Next Generation</title>
-        <meta name="description" content="MiTE and NewWorldEdu bring AI-powered learning to university students. Entrance test prep, AI tutoring, and learning analytics for BBA, BS-CS, BS-FD, and Accounting programs." />
+        <meta name="description" content="MiTE and NewWorldEdu bring AI-powered learning to university students. Entrance test prep, AI tutoring, and learning analytics for BBA and BS-CS programs." />
         <meta name="robots" content="noindex" />
       </Head>
 
@@ -51,7 +51,7 @@ export default function MiTEPage() {
             MiTE students come from the best schools in Pakistan — many from <strong style={{ color: WHITE }}>Roots Millennium Schools</strong>, the country's third-largest K-12 network. They've done Cambridge O and A Levels. They know quality education.
           </p>
           <p style={{ fontSize: 16, color: 'rgba(250,246,235,0.7)', lineHeight: 1.9, margin: '0 0 16px' }}>
-            But university is different. The syllabus is wider. The competition is fiercer. And coaching centres don't exist for BBA, BS-CS, or Accounting programs.
+            But university is different. The syllabus is wider. The competition is fiercer. And coaching centres don't exist for BBA or BS-CS programs.
           </p>
           <p style={{ fontSize: 16, color: GOLD, lineHeight: 1.9, margin: 0, fontWeight: 700 }}>
             NewWorldEdu fills that gap — with AI.
@@ -70,12 +70,11 @@ export default function MiTEPage() {
             <div style={{ fontSize: 32, marginBottom: 12 }}>🎯</div>
             <div style={{ fontWeight: 800, fontSize: 17, color: GOLD, marginBottom: 8 }}>Entrance Test Prep</div>
             <div style={{ fontSize: 13, color: 'rgba(250,246,235,0.55)', lineHeight: 1.7 }}>
-              AI-powered preparation for MiTE's BBA, BS-CS, BS-FD, and Accounting admission tests. Personalised practice from a verified question bank. Students arrive prepared — not guessing.
+              AI-powered preparation for MiTE's BBA and BS-CS admission tests. Personalised practice from a verified question bank. Students arrive prepared — not guessing.
             </div>
             <div style={{ marginTop: 12, fontSize: 12, color: 'rgba(250,246,235,0.35)' }}>
               ✓ BBA aptitude + verbal reasoning<br/>
               ✓ BS-CS logical + programming aptitude<br/>
-              ✓ BS-FD creative + design aptitude<br/>
               ✓ General knowledge + current affairs<br/>
               ✓ Predicted grade before exam day
             </div>
@@ -86,7 +85,7 @@ export default function MiTEPage() {
             <div style={{ fontSize: 32, marginBottom: 12 }}>★</div>
             <div style={{ fontWeight: 800, fontSize: 17, color: GOLD, marginBottom: 8 }}>AI Tutor for Every Student</div>
             <div style={{ fontSize: 13, color: 'rgba(250,246,235,0.55)', lineHeight: 1.7 }}>
-              Starky — a personal AI tutor available 24/7. Understands BBA, BS-CS, BS-FD, and Accounting syllabi. Answers in English, Urdu, or Roman Urdu. Never judges. Never gives up.
+              Starky — a personal AI tutor available 24/7. Understands BBA and BS-CS syllabi. Answers in English, Urdu, or Roman Urdu. Never judges. Never gives up.
             </div>
             <div style={{ marginTop: 12, fontSize: 12, color: 'rgba(250,246,235,0.35)' }}>
               ✓ Course-specific revision notes<br/>
@@ -160,7 +159,7 @@ export default function MiTEPage() {
         <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr 1fr', gap: 16 }}>
           {[
             { n: '1', title: 'Pilot — 30 Days', sub: 'No cost. No commitment.', items: ['Free access for all MiTE students', 'Entrance test prep module activated', 'AI tutor available immediately', 'Weekly engagement report to faculty'], active: true },
-            { n: '2', title: 'Integration — 90 Days', sub: 'Course-level deployment.', items: ['Custom content for BBA/BS-CS/BS-FD/Accounting courses', 'Faculty analytics dashboard deployed', 'Student performance tracking', 'MiTE-branded experience'], active: false },
+            { n: '2', title: 'Integration — 90 Days', sub: 'Course-level deployment.', items: ['Custom content for BBA/BS-CS courses', 'Faculty analytics dashboard deployed', 'Student performance tracking', 'MiTE-branded experience'], active: false },
             { n: '3', title: 'Scale — Roots Network', sub: 'K-12 to university pipeline.', items: ['Extend to Roots Millennium Schools', 'Cambridge O/A Level content for Roots students', 'Seamless transition: school → university', 'Pakistan\'s first AI-integrated education network'], active: false },
           ].map(p => (
             <div key={p.n} style={{ background: 'rgba(250,246,235,0.03)', border: `1px solid ${p.active ? 'rgba(201,168,76,0.3)' : 'rgba(250,246,235,0.06)'}`, borderRadius: 14, padding: '24px 20px' }}>

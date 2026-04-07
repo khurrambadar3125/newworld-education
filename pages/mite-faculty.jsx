@@ -75,7 +75,7 @@ export default function MiTEFaculty() {
             </div>
           </div>
           <div style={{ display: 'flex', gap: 8 }}>
-            {['all', 'BBA', 'BS-CS', 'BS-FD', 'Accounting'].map(p => (
+            {['all', 'BBA', 'BSCS'].map(p => (
               <button key={p} onClick={() => setSelectedProgram(p)}
                 style={{ padding: '6px 14px', borderRadius: 8, fontSize: 12, fontWeight: 700, cursor: 'pointer',
                   background: selectedProgram === p ? 'rgba(79,142,247,.15)' : 'rgba(255,255,255,.03)',

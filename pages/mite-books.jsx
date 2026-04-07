@@ -37,25 +37,6 @@ const PROGRAMS = [
       { course: 'Linear Algebra', book: 'College Algebra', author: 'OpenStax', free: 'https://openstax.org/details/books/college-algebra-2e' },
     ],
   },
-  {
-    name: 'BS-FD', icon: '🎨', color: '#7C3AED',
-    books: [
-      { course: 'Pattern Making', book: 'Patternmaking for Fashion Design', author: 'Helen Joseph Armstrong', free: null },
-      { course: 'Fashion Illustration', book: '9 Heads: A Guide to Drawing Fashion', author: 'Nancy Riegelman', free: null },
-      { course: 'Textile Science', book: 'Textiles: Fiber to Fabric', author: 'Corbman', free: null },
-      { course: 'Draping', book: 'Draping for Apparel Design', author: 'Helen Joseph Armstrong', free: null },
-      { course: 'Fashion History', book: 'A History of Fashion', author: 'Tortora & Eubank', free: null },
-    ],
-  },
-  {
-    name: 'Accounting & Finance', icon: '📊', color: '#F97316',
-    books: [
-      { course: 'Financial Accounting', book: 'Financial Accounting', author: 'Horngren', free: 'https://openstax.org/details/books/principles-financial-accounting' },
-      { course: 'Cost Accounting', book: 'Cost Accounting: A Managerial Emphasis', author: 'Horngren, Datar, Rajan', free: null },
-      { course: 'Auditing', book: 'Auditing & Assurance Services', author: 'Arens, Elder, Beasley', free: null },
-      { course: 'ACCA F3', book: 'Financial Accounting Study Text', author: 'BPP Learning Media', free: null, note: 'ACCA partnership' },
-    ],
-  },
 ];
 
 export default function MiTEBooks() {

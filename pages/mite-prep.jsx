@@ -1,7 +1,7 @@
 /**
  * pages/mite-prep.jsx — MiTE Entrance Test Prep
  * ─────────────────────────────────────────────────────────────────
- * AI-powered preparation for BBA, BS-CS, BS-FD, and Accounting admission tests.
+ * AI-powered preparation for BBA and BS-CS admission tests.
  * Practice questions, timed tests, score tracking.
  */
 
@@ -31,26 +31,6 @@ const PROGRAMS = [
       { id: 'logic', name: 'Logical & Analytical', topics: ['Algorithm Thinking', 'Pattern Recognition', 'Number Series', 'Data Structures Concepts', 'Boolean Logic'] },
       { id: 'cs', name: 'Computer Fundamentals', topics: ['Binary & Hexadecimal', 'Programming Concepts', 'Databases', 'Networking Basics', 'OS Concepts'] },
       { id: 'english', name: 'English Proficiency', topics: ['Comprehension', 'Grammar', 'Vocabulary', 'Essay Writing'] },
-    ],
-  },
-  {
-    id: 'bsfd', name: 'BS-FD', icon: '🎨', color: '#7C3AED',
-    desc: 'Fashion Design Entrance',
-    sections: [
-      { id: 'creative', name: 'Creative Aptitude', topics: ['Visual Composition', 'Color Theory', 'Design Principles', 'Sketching & Drawing'] },
-      { id: 'textile', name: 'Textile & Materials', topics: ['Fabric Types', 'Textile Properties', 'Pattern Making Basics', 'Sustainable Materials'] },
-      { id: 'art-history', name: 'Art & Fashion History', topics: ['Fashion Movements', 'Influential Designers', 'Cultural Influences', 'Contemporary Trends'] },
-      { id: 'english', name: 'English & Communication', topics: ['Essay Writing', 'Portfolio Description', 'Vocabulary', 'Presentation Skills'] },
-    ],
-  },
-  {
-    id: 'accounting', name: 'Accounting', icon: '📊', color: '#F97316',
-    desc: 'Accounting & Finance Entrance',
-    sections: [
-      { id: 'accounting', name: 'Accounting Fundamentals', topics: ['Double Entry', 'Journal Entries', 'Trial Balance', 'Financial Statements', 'Depreciation'] },
-      { id: 'math', name: 'Business Mathematics', topics: ['Percentages & Ratios', 'Interest Calculations', 'Profit & Loss', 'Data Interpretation'] },
-      { id: 'verbal', name: 'Verbal Reasoning', topics: ['Reading Comprehension', 'Sentence Completion', 'Vocabulary', 'Critical Reasoning'] },
-      { id: 'gk', name: 'General Knowledge', topics: ['Pakistan Economy', 'Banking & Finance Basics', 'Current Affairs', 'Business Ethics'] },
     ],
   },
 ];

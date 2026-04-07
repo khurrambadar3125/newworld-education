@@ -39,7 +39,7 @@ export default function MiTEPortal() {
     <>
       <Head>
         <title>MiTE University — AI-Powered Learning Platform</title>
-        <meta name="description" content="MiTE University's complete AI education platform. Entrance prep, course study, past papers, and faculty analytics for BBA, BS-CS, BS-FD, and Accounting." />
+        <meta name="description" content="MiTE University's complete AI education platform. Entrance prep, course study, past papers, and faculty analytics for BBA and BS-CS." />
       </Head>
       <div style={S.page}>
         <div style={S.container}>
@@ -66,7 +66,7 @@ export default function MiTEPortal() {
                   <span style={{ color: GOLD }}>Zero hallucinations.</span>
                 </h1>
                 <p style={{ fontSize: 16, color: 'rgba(250,246,235,0.45)', lineHeight: 1.7, maxWidth: 480, margin: '0 auto 24px' }}>
-                  19,000+ verified questions for BBA, BS-CS, BS-FD, and Accounting. Course support for every semester. An AI tutor that speaks your language. Built for MiTE.
+                  19,000+ verified questions for BBA and BS-CS. Course support for every semester. An AI tutor that speaks your language. Built for MiTE.
                 </p>
                 <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
                   <button onClick={() => router.push('/mite-register')}
@@ -86,8 +86,8 @@ export default function MiTEPortal() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 6, marginBottom: 28 }}>
             {[
               { n: '19K+', l: 'Questions', sub: 'Verified from source' },
-              { n: '5', l: 'Programs', sub: 'BBA · CS · FD · Acct · MS' },
-              { n: '40+', l: 'Courses', sub: 'All semesters' },
+              { n: '2', l: 'Programs', sub: 'BBA · BS-CS' },
+              { n: '18+', l: 'Courses', sub: 'All semesters' },
               { n: '8', l: 'Semesters', sub: 'Full curriculum' },
               { n: '24/7', l: 'AI Tutor', sub: 'Urdu + English' },
             ].map(s => (
@@ -129,7 +129,7 @@ export default function MiTEPortal() {
           {/* ═══ THREE ENTRY POINTS — clear, no confusion ═══ */}
           <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr 1fr', gap: 10, marginBottom: 24 }}>
             {[
-              { icon: '🎯', title: 'Entrance Prep', desc: 'MiTE admission test practice — BBA, BS-CS, BS-FD sections', href: '/mite-prep', color: GOLD },
+              { icon: '🎯', title: 'Entrance Prep', desc: 'MiTE admission test practice — BBA and BS-CS sections', href: '/mite-prep', color: GOLD },
               { icon: '📚', title: 'Course Study', desc: '40+ courses across 5 programs. AI tutor per topic.', href: '/mite-study', color: '#4F8EF7' },
               { icon: '📕', title: 'Books & Resources', desc: 'HEC-prescribed textbooks + OpenStax free alternatives', href: '/mite-books', color: '#4ADE80' },
             ].map(f => (
@@ -149,8 +149,6 @@ export default function MiTEPortal() {
           {[
             { name: 'BBA', icon: '💼', color: '#4F8EF7', courses: ['Principles of Management', 'Financial Accounting', 'Microeconomics', 'Marketing Management', 'Business Statistics', 'Organizational Behavior'], papers: 'OpenStax textbooks + HEC curriculum' },
             { name: 'BS-CS', icon: '💻', color: '#4ADE80', courses: ['Programming Fundamentals', 'Data Structures', 'OOP', 'Database Systems', 'Operating Systems', 'Computer Networks'], papers: '15K+ CS MCQs + NCEAC curriculum' },
-            { name: 'BS-FD', icon: '🎨', color: '#7C3AED', courses: ['Fashion Illustration', 'Pattern Making', 'Textile Science', 'Color Theory', 'Digital Design (CAD)', 'Fashion Business'], papers: 'HEC Fashion Design curriculum' },
-            { name: 'Accounting', icon: '📊', color: '#F97316', courses: ['Financial Accounting', 'Cost Accounting', 'Auditing', 'Taxation', 'Corporate Finance', 'Investment Analysis'], papers: 'ACCA specimen papers + MCQs' },
           ].map(prog => (
             <div key={prog.name} style={{ ...S.glass, marginBottom: 10 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>

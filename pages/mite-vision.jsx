@@ -16,9 +16,9 @@ const STAGES = [
     href: null,
   },
   {
-    stage: '02', name: 'MiTE University', sub: 'BBA · BS-CS · BS-FD · Accounting · MS-CS', color: '#4F8EF7',
+    stage: '02', name: 'MiTE University', sub: 'BBA · BS-CS', color: '#4F8EF7',
     desc: 'Where Roots graduates become professionals. AI-powered entrance prep and course support for every program.',
-    what: ['19,400+ verified entrance test questions', '5 programs with full course support', 'HEC-prescribed textbooks + free OpenStax alternatives', 'AI tutor for every subject — English, Urdu, 16 languages', 'Faculty analytics dashboard'],
+    what: ['19,400+ verified entrance test questions', 'BBA and BS-CS with full course support', 'HEC-prescribed textbooks + free OpenStax alternatives', 'AI tutor for every subject — English, Urdu, 16 languages', 'Faculty analytics dashboard'],
     href: '/mite-portal',
   },
   {

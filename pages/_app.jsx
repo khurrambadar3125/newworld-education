@@ -67,7 +67,7 @@ function AuthBridge() {
 }
 
 // Pages that render their own nav — don't show the shared Nav on these
-const PAGES_WITH_OWN_NAV = ['/', '/past-papers', '/special-needs', '/login', '/start', '/nixor', '/challenge'];
+const PAGES_WITH_OWN_NAV = ['/', '/past-papers', '/special-needs', '/login', '/start', '/nixor', '/challenge', '/mite', '/mite-portal', '/mite-vision', '/mite-prep', '/mite-study', '/mite-papers', '/mite-books', '/mite-faculty', '/mite-progress', '/mite-register'];
 
 // Catch unhandled errors globally — prevent white screen from async failures
 if (typeof window !== 'undefined') {
