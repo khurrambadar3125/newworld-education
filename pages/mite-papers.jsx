@@ -1,6 +1,6 @@
 /**
  * pages/mite-papers.jsx — MiTE Past Papers Archive
- * Real exam papers from IBA, LUMS, FAST, LAT, NTS, GAT
+ * Real exam papers from IBA, FAST, NTS, GAT
  */
 
 import { useState } from 'react';
@@ -23,22 +23,6 @@ const PAPER_SOURCES = [
       { name: 'Maths Sample Paper 10', url: 'https://www.iba.edu.pk/News/past_entry_test/sample_papers_10_maths.pdf' },
       { name: 'Maths Sample Paper 11', url: 'https://www.iba.edu.pk/News/past_entry_test/sample_papers_11_maths.pdf' },
       { name: 'Maths Sample Paper 12', url: 'https://www.iba.edu.pk/News/past_entry_test/sample_papers_12_maths.pdf' },
-    ],
-  },
-  {
-    name: 'LUMS (LCAT)', icon: '🎓', color: '#4ADE80',
-    desc: 'LUMS Common Admission Test samples',
-    papers: [
-      { name: 'LCAT Sample 2025', url: 'https://lums.edu.pk/admissions', note: 'Via lums.edu.pk' },
-    ],
-  },
-  {
-    name: 'LAT (Law Admission Test)', icon: '⚖️', color: '#7C3AED',
-    desc: '15 actual past papers (2020-2024)',
-    papers: [
-      { name: 'LAT Past Papers (2020-2024)', url: 'https://www.taleem360.com/lat-past-papers/', note: '15 papers via Taleem360' },
-      { name: 'LAT Preparation Guide', url: 'https://www.taleem360.com/lat-past-papers/', note: 'Complete prep book' },
-      { name: 'HEC LAW GAT Sample Paper', url: 'https://hec.gov.pk', note: 'Official HEC' },
     ],
   },
   {
@@ -80,7 +64,7 @@ export default function MiTEPapers() {
           <div style={{ textAlign: 'center', margin: '24px 0' }}>
             <div style={{ fontSize: 12, fontWeight: 700, color: GOLD, letterSpacing: 1, marginBottom: 8 }}>PAST PAPERS ARCHIVE</div>
             <h1 style={{ fontSize: 24, fontWeight: 900, margin: '0 0 8px' }}>Real Exam Papers</h1>
-            <p style={{ color: 'rgba(255,255,255,.4)', fontSize: 13 }}>IBA, LUMS, FAST, LAT, NTS — all in one place</p>
+            <p style={{ color: 'rgba(255,255,255,.4)', fontSize: 13 }}>IBA, FAST, NTS, GAT — all in one place</p>
           </div>
 
           {PAPER_SOURCES.map(source => (

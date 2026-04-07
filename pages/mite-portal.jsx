@@ -39,7 +39,7 @@ export default function MiTEPortal() {
     <>
       <Head>
         <title>MiTE University — AI-Powered Learning Platform</title>
-        <meta name="description" content="MiTE University's complete AI education platform. Entrance prep, course study, past papers, and faculty analytics for BBA, BSCS, and Law." />
+        <meta name="description" content="MiTE University's complete AI education platform. Entrance prep, course study, past papers, and faculty analytics for BBA, BS-CS, BS-FD, and Accounting." />
       </Head>
       <div style={S.page}>
         <div style={S.container}>
@@ -173,7 +173,7 @@ export default function MiTEPortal() {
             <div style={{ fontSize: 11, fontWeight: 700, color: GOLD, letterSpacing: 1, marginBottom: 14, textAlign: 'center' }}>WHY THIS ISN'T CHATGPT</div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
               {[
-                { bad: 'ChatGPT generates answers from training data — may be wrong', good: 'Our questions come from REAL IBA, FAST, LAT papers — verified' },
+                { bad: 'ChatGPT generates answers from training data — may be wrong', good: 'Our questions come from REAL verified exam papers — 19,400+ in the bank' },
                 { bad: 'Generic AI has no idea what your professor expects', good: 'Starky is trained on actual Pakistani university exam patterns' },
                 { bad: 'No progress tracking, no weakness detection', good: 'Every answer tracked. Weak topics identified. Faculty can see.' },
                 { bad: 'Available in English only', good: 'Works in English, Urdu, Roman Urdu — 16 languages' },

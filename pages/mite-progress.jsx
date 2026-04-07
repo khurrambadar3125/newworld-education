@@ -90,7 +90,7 @@ export default function MiTEProgress() {
                 <span style={{ fontSize: 24 }}>📝</span>
                 <div>
                   <div style={{ fontSize: 15, fontWeight: 800, color: GOLD }}>Past Papers</div>
-                  <div style={{ fontSize: 12, color: 'rgba(255,255,255,.4)' }}>IBA, LUMS, FAST, LAT papers</div>
+                  <div style={{ fontSize: 12, color: 'rgba(255,255,255,.4)' }}>MiTE entrance & semester papers</div>
                 </div>
               </a>
             </>

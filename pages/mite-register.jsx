@@ -76,7 +76,7 @@ export default function MiTERegister() {
 
             <div style={{ fontSize: 12, fontWeight: 700, color: 'rgba(255,255,255,.3)', marginBottom: 6 }}>Program</div>
             <div style={{ display: 'flex', gap: 8, marginBottom: 12 }}>
-              {['BBA', 'BSCS', 'Law'].map(p => (
+              {['BBA', 'BS-CS', 'BS-FD', 'Accounting'].map(p => (
                 <button key={p} onClick={() => setForm(f => ({ ...f, program: p }))}
                   style={{ flex: 1, padding: '12px 0', borderRadius: 10, cursor: 'pointer', fontSize: 14, fontWeight: 700,
                     background: form.program === p ? 'rgba(79,142,247,.15)' : 'rgba(255,255,255,.03)',

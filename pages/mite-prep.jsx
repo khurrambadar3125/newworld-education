@@ -1,7 +1,7 @@
 /**
  * pages/mite-prep.jsx — MiTE Entrance Test Prep
  * ─────────────────────────────────────────────────────────────────
- * AI-powered preparation for BBA, BSCS, and Law admission tests.
+ * AI-powered preparation for BBA, BS-CS, BS-FD, and Accounting admission tests.
  * Practice questions, timed tests, score tracking.
  */
 
@@ -34,13 +34,23 @@ const PROGRAMS = [
     ],
   },
   {
-    id: 'law', name: 'Law', icon: '⚖️', color: '#7C3AED',
+    id: 'bsfd', name: 'BS-FD', icon: '🎨', color: '#7C3AED',
     desc: 'Fashion Design Entrance',
     sections: [
-      { id: 'analytical', name: 'Analytical Reasoning', topics: ['Logical Deduction', 'Argument Analysis', 'Assumptions & Conclusions', 'Cause & Effect'] },
-      { id: 'reading', name: 'Reading Comprehension', topics: ['Legal Passages', 'Inference', 'Author\'s Purpose', 'Critical Analysis'] },
-      { id: 'gk', name: 'General Knowledge', topics: ['Pakistan Constitution', 'Legal System Basics', 'Current Affairs', 'History of Law'] },
-      { id: 'english', name: 'English & Writing', topics: ['Essay Writing', 'Grammar & Usage', 'Vocabulary', 'Précis Writing'] },
+      { id: 'creative', name: 'Creative Aptitude', topics: ['Visual Composition', 'Color Theory', 'Design Principles', 'Sketching & Drawing'] },
+      { id: 'textile', name: 'Textile & Materials', topics: ['Fabric Types', 'Textile Properties', 'Pattern Making Basics', 'Sustainable Materials'] },
+      { id: 'art-history', name: 'Art & Fashion History', topics: ['Fashion Movements', 'Influential Designers', 'Cultural Influences', 'Contemporary Trends'] },
+      { id: 'english', name: 'English & Communication', topics: ['Essay Writing', 'Portfolio Description', 'Vocabulary', 'Presentation Skills'] },
+    ],
+  },
+  {
+    id: 'accounting', name: 'Accounting', icon: '📊', color: '#F97316',
+    desc: 'Accounting & Finance Entrance',
+    sections: [
+      { id: 'accounting', name: 'Accounting Fundamentals', topics: ['Double Entry', 'Journal Entries', 'Trial Balance', 'Financial Statements', 'Depreciation'] },
+      { id: 'math', name: 'Business Mathematics', topics: ['Percentages & Ratios', 'Interest Calculations', 'Profit & Loss', 'Data Interpretation'] },
+      { id: 'verbal', name: 'Verbal Reasoning', topics: ['Reading Comprehension', 'Sentence Completion', 'Vocabulary', 'Critical Reasoning'] },
+      { id: 'gk', name: 'General Knowledge', topics: ['Pakistan Economy', 'Banking & Finance Basics', 'Current Affairs', 'Business Ethics'] },
     ],
   },
 ];

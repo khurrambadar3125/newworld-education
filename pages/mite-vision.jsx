@@ -13,12 +13,12 @@ const STAGES = [
     stage: '01', name: 'Roots Millennium Schools', sub: 'K-12 · Cambridge O & A Level', color: '#4ADE80',
     desc: 'Pakistan\'s third-largest K-12 network. Thousands of students studying Cambridge curriculum across the country.',
     what: ['17 O Level subjects with verified revision notes', '9 A Level subjects with textbook-accurate chapters', '54,000+ verified past paper questions', 'AI tutor that speaks 16 languages', 'SEN support for students with learning differences'],
-    href: '/study',
+    href: null,
   },
   {
-    stage: '02', name: 'MiTE University', sub: 'BBA · BSCS · Law', color: '#4F8EF7',
+    stage: '02', name: 'MiTE University', sub: 'BBA · BS-CS · BS-FD · Accounting · MS-CS', color: '#4F8EF7',
     desc: 'Where Roots graduates become professionals. AI-powered entrance prep and course support for every program.',
-    what: ['1,851 verified entrance test questions (IBA, LAT, FAST)', '24 courses across 3 programs', '520 FAST NUCES past papers for BSCS', '15 LAT papers (2020-2024) for Law', 'Faculty analytics dashboard'],
+    what: ['19,400+ verified entrance test questions', '5 programs with full course support', 'HEC-prescribed textbooks + free OpenStax alternatives', 'AI tutor for every subject — English, Urdu, 16 languages', 'Faculty analytics dashboard'],
     href: '/mite-portal',
   },
   {
