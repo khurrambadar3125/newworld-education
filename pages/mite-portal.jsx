@@ -1,8 +1,8 @@
 /**
- * pages/mite-portal.jsx — MiTE University Complete Portal
+ * pages/mite-portal.jsx — MiTE University × NewWorldEdu
  * ─────────────────────────────────────────────────────────────────
- * The ultimate education platform for MiTE University.
- * Students, faculty, and administration — everything in one place.
+ * Not a demo. Not a prototype. A fully functional AI education
+ * platform for Pakistan's most innovative university.
  */
 
 import { useState, useEffect } from 'react';
@@ -11,198 +11,212 @@ import { useRouter } from 'next/router';
 import LegalFooter from '../components/LegalFooter';
 
 const GOLD = '#C9A84C';
-const BLUE = '#4F8EF7';
-const GREEN = '#4ADE80';
-const PURPLE = '#7C3AED';
-
-const STUDENT_FEATURES = [
-  { icon: '🎯', title: 'Entrance Test Prep', desc: 'BBA, BSCS, Law — AI-powered practice with real past papers', href: '/mite-prep', color: GOLD },
-  { icon: '📚', title: 'Course Study', desc: 'Notes, examples, and practice for every semester course', href: '/mite-study', color: BLUE },
-  { icon: '📝', title: 'Past Papers Archive', desc: 'IBA, LUMS, FAST, LAT — real exam papers to practice', href: '/mite-papers', color: GREEN },
-  { icon: '🎯', title: 'My Bootcamp', desc: 'Set your goal. Get a daily study plan. Follow it.', href: '/mite-bootcamp', color: PURPLE },
-  { icon: '📊', title: 'My Progress', desc: 'Track accuracy, courses completed, weak areas', href: '/mite-progress', color: '#F97316' },
-  { icon: '★', title: 'Ask Starky', desc: 'Your 24/7 AI tutor — any course, any topic, any language', href: '/?message=I%20am%20a%20MiTE%20University%20student.%20Help%20me%20study.', color: '#EAB308' },
-];
-
-const FACULTY_FEATURES = [
-  { icon: '📊', title: 'Student Analytics', desc: 'Real-time performance data for your class', href: '/mite-faculty' },
-  { icon: '⚠️', title: 'Intervention Alerts', desc: 'Auto-detect students falling behind', href: '/mite-faculty' },
-  { icon: '📋', title: 'Course Reports', desc: 'Topic-level weakness analysis per course', href: '/mite-faculty' },
-];
-
-const PROGRAMS = [
-  { id: 'bba', name: 'BBA', icon: '💼', color: BLUE, courses: 9, desc: 'Business Administration', semesters: 2 },
-  { id: 'bscs', name: 'BSCS', icon: '💻', color: GREEN, courses: 8, desc: 'Computer Science', semesters: 2 },
-  { id: 'law', name: 'Law', icon: '⚖️', color: PURPLE, courses: 7, desc: 'Law Program', semesters: 2 },
-];
 
 export default function MiTEPortal() {
   const router = useRouter();
   const [isMobile, setIsMobile] = useState(false);
-  const [role, setRole] = useState('student');
-  const [studentName, setStudentName] = useState('');
+  const [profile, setProfile] = useState({});
+  const [timeOfDay, setTimeOfDay] = useState('');
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setIsMobile(window.innerWidth < 768);
-      try {
-        const p = JSON.parse(localStorage.getItem('nw_user') || '{}');
-        if (p.name) setStudentName(p.name);
-      } catch {}
-    }
+    if (typeof window === 'undefined') return;
+    setIsMobile(window.innerWidth < 768);
+    try { setProfile(JSON.parse(localStorage.getItem('nw_user') || '{}')); } catch {}
+    const h = new Date().getHours();
+    setTimeOfDay(h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : h < 21 ? 'Good evening' : 'Late night study?');
   }, []);
 
+  const isRegistered = profile.name && profile.curriculum === 'mite';
+  const firstName = profile.name?.split(' ')[0] || '';
+
   const S = {
-    page: { minHeight: '100vh', background: '#0a0a0a', color: '#fff', fontFamily: "'Sora',-apple-system,sans-serif" },
-    container: { maxWidth: 800, margin: '0 auto', padding: '0 16px' },
-    card: { background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: 14, padding: '20px 18px', marginBottom: 10 },
+    page: { minHeight: '100vh', background: '#080C18', color: '#FAF6EB', fontFamily: "'Sora',-apple-system,sans-serif" },
+    container: { maxWidth: 720, margin: '0 auto', padding: '0 16px' },
+    glass: { background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 16, padding: '20px 18px', marginBottom: 10, backdropFilter: 'blur(10px)' },
   };
 
   return (
     <>
       <Head>
-        <title>MiTE University Portal — AI-Powered Education | NewWorldEdu</title>
-        <meta name="description" content="MiTE University's AI-powered learning platform. Entrance test prep, course study, past papers, and faculty analytics for BBA, BSCS, and Law programs." />
+        <title>MiTE University — AI-Powered Learning Platform</title>
+        <meta name="description" content="MiTE University's complete AI education platform. Entrance prep, course study, past papers, and faculty analytics for BBA, BSCS, and Law." />
       </Head>
       <div style={S.page}>
         <div style={S.container}>
 
-          {/* Hero */}
-          <div style={{ textAlign: 'center', padding: '48px 0 32px' }}>
-            <div style={{ fontSize: 13, fontWeight: 700, color: GOLD, letterSpacing: 1, marginBottom: 12 }}>MiTE UNIVERSITY × NEWWORLDEDU</div>
-            <h1 style={{ fontSize: isMobile ? 28 : 40, fontWeight: 900, margin: '0 0 12px', lineHeight: 1.2 }}>
-              {studentName ? `Welcome, ${studentName.split(' ')[0]}` : 'Your University.'} <span style={{ color: GOLD }}>Your AI Tutor.</span>
-            </h1>
-            <p style={{ color: 'rgba(255,255,255,.4)', fontSize: 15, maxWidth: 500, margin: '0 auto' }}>
-              BBA · BSCS · Law — entrance prep, course study, past papers, and 24/7 AI support
-            </p>
+          {/* ═══ HERO ═══ */}
+          <div style={{ textAlign: 'center', padding: '52px 0 36px' }}>
+            {isRegistered ? (
+              <>
+                <div style={{ fontSize: 14, color: 'rgba(250,246,235,0.4)' }}>{timeOfDay}</div>
+                <h1 style={{ fontSize: isMobile ? 28 : 40, fontWeight: 900, margin: '8px 0 0' }}>
+                  {firstName}, <span style={{ color: GOLD }}>let's study.</span>
+                </h1>
+                <div style={{ fontSize: 13, color: 'rgba(250,246,235,0.35)', marginTop: 8 }}>
+                  {profile.program} · Semester {profile.semester || '1'} · MiTE University
+                </div>
+              </>
+            ) : (
+              <>
+                <div style={{ display: 'inline-block', background: `${GOLD}12`, border: `1px solid ${GOLD}25`, borderRadius: 100, padding: '5px 16px', fontSize: 11, fontWeight: 700, color: GOLD, letterSpacing: '0.05em', marginBottom: 16 }}>
+                  MiTE UNIVERSITY × NEWWORLDEDU
+                </div>
+                <h1 style={{ fontSize: isMobile ? 30 : 44, fontWeight: 900, margin: '0 0 12px', lineHeight: 1.15 }}>
+                  The AI platform<br />
+                  <span style={{ color: GOLD }}>your university deserves.</span>
+                </h1>
+                <p style={{ fontSize: 16, color: 'rgba(250,246,235,0.45)', lineHeight: 1.7, maxWidth: 480, margin: '0 auto 24px' }}>
+                  Real past papers from IBA, LUMS, FAST, and LAT. Course notes for every semester. An AI tutor that speaks your language. Built for MiTE.
+                </p>
+                <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
+                  <button onClick={() => router.push('/mite-register')}
+                    style={{ background: GOLD, color: '#080C18', border: 'none', borderRadius: 12, padding: '14px 32px', fontSize: 15, fontWeight: 900, cursor: 'pointer' }}>
+                    Start Free — 90 Days →
+                  </button>
+                  <button onClick={() => router.push('/mite-faculty')}
+                    style={{ background: 'transparent', border: `2px solid rgba(250,246,235,0.15)`, color: 'rgba(250,246,235,0.6)', borderRadius: 12, padding: '12px 24px', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>
+                    Faculty Login
+                  </button>
+                </div>
+              </>
+            )}
           </div>
 
-          {/* Role Toggle */}
-          <div style={{ display: 'flex', gap: 8, justifyContent: 'center', marginBottom: 24 }}>
+          {/* ═══ THE NUMBERS — what makes this real ═══ */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 6, marginBottom: 28 }}>
             {[
-              { id: 'student', label: '🎓 Student', color: BLUE },
-              { id: 'faculty', label: '👨‍🏫 Faculty', color: GOLD },
-            ].map(r => (
-              <button key={r.id} onClick={() => setRole(r.id)}
-                style={{
-                  padding: '10px 24px', borderRadius: 10, cursor: 'pointer', fontSize: 14, fontWeight: 700,
-                  background: role === r.id ? `${r.color}20` : 'rgba(255,255,255,.03)',
-                  border: role === r.id ? `2px solid ${r.color}` : '1px solid rgba(255,255,255,.06)',
-                  color: role === r.id ? r.color : 'rgba(255,255,255,.5)',
-                }}>
-                {r.label}
-              </button>
+              { n: '569', l: 'Past Papers', sub: 'IBA · LUMS · FAST · LAT' },
+              { n: '54K+', l: 'Questions', sub: 'Verified from source' },
+              { n: '24', l: 'Courses', sub: 'BBA · BSCS · Law' },
+              { n: '520', l: 'FAST Papers', sub: '8 semesters' },
+              { n: '15', l: 'LAT Papers', sub: '2020-2024' },
+            ].map(s => (
+              <div key={s.l} style={{ textAlign: 'center', padding: '14px 4px' }}>
+                <div style={{ fontSize: 20, fontWeight: 900, color: GOLD }}>{s.n}</div>
+                <div style={{ fontSize: 10, fontWeight: 700, color: 'rgba(250,246,235,0.5)' }}>{s.l}</div>
+                <div style={{ fontSize: 8, color: 'rgba(250,246,235,0.25)' }}>{s.sub}</div>
+              </div>
             ))}
           </div>
 
-          {/* Student View */}
-          {role === 'student' && (
-            <>
-              {/* Quick Stats */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 8, marginBottom: 20 }}>
+          {/* ═══ 11:14 PM SCENARIO — the hook ═══ */}
+          <div style={{ ...S.glass, background: 'rgba(201,168,76,0.04)', borderColor: 'rgba(201,168,76,0.12)', marginBottom: 24 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 16 }}>
+              <div>
+                <div style={{ fontSize: 32, fontWeight: 900, color: GOLD, fontFamily: "'Georgia',serif" }}>11:14 PM</div>
+                <div style={{ fontSize: 14, color: 'rgba(250,246,235,0.4)', fontStyle: 'italic', marginBottom: 12 }}>A MiTE student. Data Structures final tomorrow.</div>
+                <div style={{ fontSize: 13, color: 'rgba(250,246,235,0.55)', lineHeight: 1.7 }}>
+                  No tutor available. YouTube has 400 videos, none for your syllabus. ChatGPT doesn't know what your professor expects. Your notes are incomplete.
+                </div>
+              </div>
+              <div>
+                <div style={{ fontSize: 13, fontWeight: 800, color: GOLD, marginBottom: 8 }}>WITH NEWWORLDEDU:</div>
                 {[
-                  { n: '54K+', l: 'Questions', c: GOLD },
-                  { n: '500+', l: 'Notes', c: BLUE },
-                  { n: '3', l: 'Programs', c: GREEN },
-                  { n: '24/7', l: 'AI Tutor', c: PURPLE },
-                ].map(s => (
-                  <div key={s.l} style={S.card}>
-                    <div style={{ fontSize: 22, fontWeight: 900, color: s.c }}>{s.n}</div>
-                    <div style={{ fontSize: 10, color: 'rgba(255,255,255,.35)' }}>{s.l}</div>
+                  'Opens the platform. Types "Binary Search Tree"',
+                  'Gets FAST NUCES past paper questions on BST',
+                  'Practices with real exam questions',
+                  'Starky explains what they got wrong',
+                  'Goes to bed knowing exactly what to write',
+                ].map((t, i) => (
+                  <div key={i} style={{ fontSize: 12, color: 'rgba(250,246,235,0.6)', padding: '3px 0' }}>
+                    <span style={{ color: '#4ADE80', marginRight: 6 }}>✓</span>{t}
                   </div>
                 ))}
               </div>
-
-              {/* Programs */}
-              <div style={{ fontSize: 11, fontWeight: 700, color: 'rgba(255,255,255,.3)', letterSpacing: 1, marginBottom: 10 }}>YOUR PROGRAM</div>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 8, marginBottom: 24 }}>
-                {PROGRAMS.map(p => (
-                  <button key={p.id} onClick={() => router.push('/mite-study')}
-                    style={{ ...S.card, cursor: 'pointer', textAlign: 'center', padding: '20px 10px', borderColor: `${p.color}22` }}
-                    onMouseOver={e => e.currentTarget.style.borderColor = p.color}
-                    onMouseOut={e => e.currentTarget.style.borderColor = `${p.color}22`}>
-                    <div style={{ fontSize: 28, marginBottom: 6 }}>{p.icon}</div>
-                    <div style={{ fontSize: 16, fontWeight: 900, color: p.color }}>{p.name}</div>
-                    <div style={{ fontSize: 10, color: 'rgba(255,255,255,.3)' }}>{p.courses} courses · {p.semesters} semesters</div>
-                  </button>
-                ))}
-              </div>
-
-              {/* Features Grid */}
-              <div style={{ fontSize: 11, fontWeight: 700, color: 'rgba(255,255,255,.3)', letterSpacing: 1, marginBottom: 10 }}>EVERYTHING YOU NEED</div>
-              <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 8, marginBottom: 24 }}>
-                {STUDENT_FEATURES.map(f => (
-                  <a key={f.title} href={f.href}
-                    style={{ ...S.card, display: 'flex', alignItems: 'flex-start', gap: 14, textDecoration: 'none', cursor: 'pointer' }}
-                    onMouseOver={e => e.currentTarget.style.borderColor = f.color}
-                    onMouseOut={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,.1)'}>
-                    <span style={{ fontSize: 24, flexShrink: 0 }}>{f.icon}</span>
-                    <div>
-                      <div style={{ fontSize: 15, fontWeight: 800, color: f.color, marginBottom: 2 }}>{f.title}</div>
-                      <div style={{ fontSize: 12, color: 'rgba(255,255,255,.45)', lineHeight: 1.5 }}>{f.desc}</div>
-                    </div>
-                  </a>
-                ))}
-              </div>
-
-              {/* Register CTA */}
-              {!studentName && (
-                <div style={{ ...S.card, textAlign: 'center', background: 'rgba(201,168,76,.04)', borderColor: 'rgba(201,168,76,.15)', padding: '24px 20px' }}>
-                  <div style={{ fontSize: 16, fontWeight: 800, color: GOLD, marginBottom: 8 }}>Not registered yet?</div>
-                  <div style={{ fontSize: 13, color: 'rgba(255,255,255,.4)', marginBottom: 16 }}>Create your account to track progress and save your work</div>
-                  <button onClick={() => router.push('/mite-register')}
-                    style={{ background: GOLD, color: '#0a0a0a', border: 'none', borderRadius: 10, padding: '12px 32px', fontWeight: 800, fontSize: 14, cursor: 'pointer' }}>
-                    Register →
-                  </button>
-                </div>
-              )}
-
-              {/* Cambridge pathway */}
-              <a href="/study" style={{ display: 'block', ...S.card, textDecoration: 'none', textAlign: 'center', borderColor: 'rgba(79,142,247,.15)', background: 'rgba(79,142,247,.03)', marginTop: 8 }}>
-                <div style={{ fontSize: 13, fontWeight: 700, color: BLUE }}>Also available: Cambridge O & A Level</div>
-                <div style={{ fontSize: 11, color: 'rgba(255,255,255,.3)' }}>26 subjects · 334 verified notes · 54K+ past paper questions</div>
-              </a>
-            </>
-          )}
-
-          {/* Faculty View */}
-          {role === 'faculty' && (
-            <>
-              <div style={{ fontSize: 11, fontWeight: 700, color: 'rgba(255,255,255,.3)', letterSpacing: 1, marginBottom: 10 }}>FACULTY TOOLS</div>
-              {FACULTY_FEATURES.map(f => (
-                <a key={f.title} href={f.href}
-                  style={{ ...S.card, display: 'flex', alignItems: 'center', gap: 14, textDecoration: 'none', cursor: 'pointer' }}
-                  onMouseOver={e => e.currentTarget.style.borderColor = GOLD}
-                  onMouseOut={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,.1)'}>
-                  <span style={{ fontSize: 24 }}>{f.icon}</span>
-                  <div>
-                    <div style={{ fontSize: 15, fontWeight: 800, color: GOLD }}>{f.title}</div>
-                    <div style={{ fontSize: 12, color: 'rgba(255,255,255,.45)' }}>{f.desc}</div>
-                  </div>
-                </a>
-              ))}
-
-              <div style={{ ...S.card, marginTop: 16, textAlign: 'center', background: 'rgba(201,168,76,.04)', borderColor: 'rgba(201,168,76,.15)' }}>
-                <div style={{ fontSize: 14, fontWeight: 800, color: GOLD, marginBottom: 8 }}>What Faculty Gets</div>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, fontSize: 12, color: 'rgba(255,255,255,.5)', textAlign: 'left' }}>
-                  <div>📊 Real-time student activity</div>
-                  <div>⚠️ Auto intervention alerts</div>
-                  <div>📈 Topic-level weakness data</div>
-                  <div>🎯 Exam readiness predictions</div>
-                  <div>📧 Weekly automated reports</div>
-                  <div>🔒 FERPA-compliant privacy</div>
-                </div>
-              </div>
-            </>
-          )}
-
-          {/* About */}
-          <div style={{ textAlign: 'center', padding: '24px 0 40px' }}>
-            <div style={{ fontSize: 12, color: 'rgba(255,255,255,.2)' }}>
-              Powered by NewWorldEdu · 54,000+ verified questions · AI tutor in 16 languages
             </div>
-            <a href="/founder" style={{ fontSize: 11, color: 'rgba(255,255,255,.15)', textDecoration: 'none' }}>Built by Khurram Badar</a>
+          </div>
+
+          {/* ═══ THREE ENTRY POINTS — clear, no confusion ═══ */}
+          <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr 1fr', gap: 10, marginBottom: 24 }}>
+            {[
+              { icon: '🎯', title: 'Entrance Prep', desc: 'BBA · BSCS · Law admission tests with real IBA & LAT questions', href: '/mite-prep', color: GOLD },
+              { icon: '📚', title: 'Course Study', desc: '24 courses across 3 programs. Notes + AI tutor per topic.', href: '/mite-study', color: '#4F8EF7' },
+              { icon: '📝', title: 'Past Papers', desc: 'IBA, LUMS, FAST, LAT, NTS — 569 real exam papers', href: '/mite-papers', color: '#4ADE80' },
+            ].map(f => (
+              <a key={f.title} href={f.href}
+                style={{ ...S.glass, textDecoration: 'none', cursor: 'pointer', textAlign: 'center', padding: '28px 16px', transition: 'all 0.2s' }}
+                onMouseOver={e => { e.currentTarget.style.borderColor = f.color; e.currentTarget.style.background = `${f.color}08`; }}
+                onMouseOut={e => { e.currentTarget.style.borderColor = 'rgba(250,246,235,0.06)'; e.currentTarget.style.background = 'rgba(250,246,235,0.03)'; }}>
+                <div style={{ fontSize: 32, marginBottom: 8 }}>{f.icon}</div>
+                <div style={{ fontSize: 17, fontWeight: 900, color: f.color, marginBottom: 4 }}>{f.title}</div>
+                <div style={{ fontSize: 12, color: 'rgba(250,246,235,0.4)', lineHeight: 1.6 }}>{f.desc}</div>
+              </a>
+            ))}
+          </div>
+
+          {/* ═══ PROGRAMS — what's inside ═══ */}
+          <div style={{ fontSize: 11, fontWeight: 700, color: 'rgba(250,246,235,0.25)', letterSpacing: 1, marginBottom: 10 }}>PROGRAMS</div>
+          {[
+            { name: 'BBA', icon: '💼', color: '#4F8EF7', courses: ['Principles of Management', 'Financial Accounting', 'Microeconomics', 'Marketing Management', 'Business Statistics', 'Business Law'], papers: 'IBA official + LUMS LCAT + Accounting MCQs' },
+            { name: 'BSCS', icon: '💻', color: '#4ADE80', courses: ['Programming Fundamentals', 'Data Structures', 'OOP', 'Database Systems', 'Digital Logic', 'Discrete Mathematics'], papers: '520 FAST NUCES papers + IBA BSCS + NUST NET' },
+            { name: 'Law', icon: '⚖️', color: '#7C3AED', courses: ['Legal Systems of Pakistan', 'Contract Law', 'Criminal Law', 'Constitutional Law', 'Islamic Jurisprudence', 'Tort Law'], papers: '15 LAT papers (2020-2024) + Constitution MCQs + HEC LAW GAT' },
+          ].map(prog => (
+            <div key={prog.name} style={{ ...S.glass, marginBottom: 10 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+                <span style={{ fontSize: 24 }}>{prog.icon}</span>
+                <div>
+                  <div style={{ fontSize: 18, fontWeight: 900, color: prog.color }}>{prog.name}</div>
+                  <div style={{ fontSize: 11, color: 'rgba(250,246,235,0.35)' }}>{prog.papers}</div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                {prog.courses.map(c => (
+                  <span key={c} style={{ fontSize: 11, padding: '4px 10px', borderRadius: 6, background: `${prog.color}10`, border: `1px solid ${prog.color}20`, color: prog.color, fontWeight: 600 }}>{c}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+
+          {/* ═══ WHAT MAKES THIS DIFFERENT ═══ */}
+          <div style={{ ...S.glass, marginTop: 20, marginBottom: 20, background: 'rgba(250,246,235,0.02)' }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: GOLD, letterSpacing: 1, marginBottom: 14, textAlign: 'center' }}>WHY THIS ISN'T CHATGPT</div>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+              {[
+                { bad: 'ChatGPT generates answers from training data — may be wrong', good: 'Our questions come from REAL IBA, FAST, LAT papers — verified' },
+                { bad: 'Generic AI has no idea what your professor expects', good: 'Starky is trained on actual Pakistani university exam patterns' },
+                { bad: 'No progress tracking, no weakness detection', good: 'Every answer tracked. Weak topics identified. Faculty can see.' },
+                { bad: 'Available in English only', good: 'Works in English, Urdu, Roman Urdu — 16 languages' },
+              ].map((row, i) => (
+                <div key={i}>
+                  <div style={{ fontSize: 11, color: 'rgba(239,68,68,0.6)', marginBottom: 4 }}>
+                    <span style={{ marginRight: 4 }}>✗</span>{row.bad}
+                  </div>
+                  <div style={{ fontSize: 11, color: 'rgba(74,222,128,0.8)', fontWeight: 600 }}>
+                    <span style={{ marginRight: 4 }}>✓</span>{row.good}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* ═══ THE VISION ═══ */}
+          <div style={{ ...S.glass, textAlign: 'center', padding: '28px 20px', background: 'rgba(201,168,76,0.03)', borderColor: 'rgba(201,168,76,0.1)' }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: GOLD, letterSpacing: 1, marginBottom: 8 }}>THE BIGGER PICTURE</div>
+            <div style={{ fontSize: 16, fontWeight: 800, color: '#FAF6EB', marginBottom: 8 }}>
+              MiTE → Roots Millennium → Every student in Pakistan
+            </div>
+            <p style={{ fontSize: 13, color: 'rgba(250,246,235,0.45)', lineHeight: 1.7, maxWidth: 500, margin: '0 auto 16px' }}>
+              MiTE is part of The Millennium Trust — the same trust behind Roots Millennium Schools, Pakistan's third-largest K-12 network. One AI platform. From Grade 6 to graduation.
+            </p>
+            <div style={{ display: 'flex', gap: 6, justifyContent: 'center', flexWrap: 'wrap' }}>
+              {['Roots Schools', '→', 'Cambridge O/A Level', '→', 'MiTE University', '→', 'Career'].map((s, i) => (
+                <span key={i} style={{ fontSize: 12, fontWeight: s === '→' ? 400 : 700, color: s === '→' ? 'rgba(250,246,235,0.2)' : GOLD,
+                  padding: s === '→' ? '0' : '4px 10px', border: s === '→' ? 'none' : `1px solid ${GOLD}30`, borderRadius: 6, background: s === '→' ? 'none' : `${GOLD}08` }}>{s}</span>
+              ))}
+            </div>
+          </div>
+
+          {/* ═══ FOOTER CTA ═══ */}
+          <div style={{ textAlign: 'center', padding: '28px 0 40px' }}>
+            {!isRegistered && (
+              <button onClick={() => router.push('/mite-register')}
+                style={{ background: GOLD, color: '#080C18', border: 'none', borderRadius: 12, padding: '16px 40px', fontSize: 16, fontWeight: 900, cursor: 'pointer', marginBottom: 12 }}>
+                Start Free — 90 Days →
+              </button>
+            )}
+            <div style={{ fontSize: 12, color: 'rgba(250,246,235,0.2)' }}>
+              Built by <a href="/founder" style={{ color: 'rgba(250,246,235,0.3)', textDecoration: 'none' }}>Khurram Badar</a> · newworld.education
+            </div>
           </div>
 
         </div>
