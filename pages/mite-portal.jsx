@@ -66,7 +66,7 @@ export default function MiTEPortal() {
                   <span style={{ color: GOLD }}>Zero hallucinations.</span>
                 </h1>
                 <p style={{ fontSize: 16, color: 'rgba(250,246,235,0.45)', lineHeight: 1.7, maxWidth: 480, margin: '0 auto 24px' }}>
-                  Real past papers from IBA, LUMS, FAST, and LAT. Course notes for every semester. An AI tutor that speaks your language. Built for MiTE.
+                  19,000+ verified questions for BBA, BS-CS, BS-FD, and Accounting. Course support for every semester. An AI tutor that speaks your language. Built for MiTE.
                 </p>
                 <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
                   <button onClick={() => router.push('/mite-register')}
@@ -85,11 +85,11 @@ export default function MiTEPortal() {
           {/* ═══ THE NUMBERS — what makes this real ═══ */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 6, marginBottom: 28 }}>
             {[
-              { n: '569', l: 'Past Papers', sub: 'IBA · LUMS · FAST · LAT' },
-              { n: '54K+', l: 'Questions', sub: 'Verified from source' },
-              { n: '24', l: 'Courses', sub: 'BBA · BSCS · Law' },
-              { n: '520', l: 'FAST Papers', sub: '8 semesters' },
-              { n: '15', l: 'LAT Papers', sub: '2020-2024' },
+              { n: '19K+', l: 'Questions', sub: 'Verified from source' },
+              { n: '5', l: 'Programs', sub: 'BBA · CS · FD · Acct · MS' },
+              { n: '40+', l: 'Courses', sub: 'All semesters' },
+              { n: '8', l: 'Semesters', sub: 'Full curriculum' },
+              { n: '24/7', l: 'AI Tutor', sub: 'Urdu + English' },
             ].map(s => (
               <div key={s.l} style={{ textAlign: 'center', padding: '14px 4px' }}>
                 <div style={{ fontSize: 20, fontWeight: 900, color: GOLD }}>{s.n}</div>
@@ -104,7 +104,7 @@ export default function MiTEPortal() {
             <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 16 }}>
               <div>
                 <div style={{ fontSize: 32, fontWeight: 900, color: GOLD, fontFamily: "'Georgia',serif" }}>11:14 PM</div>
-                <div style={{ fontSize: 14, color: 'rgba(250,246,235,0.4)', fontStyle: 'italic', marginBottom: 12 }}>A MiTE student. Data Structures final tomorrow.</div>
+                <div style={{ fontSize: 14, color: 'rgba(250,246,235,0.4)', fontStyle: 'italic', marginBottom: 12 }}>A MiTE student. Database Systems final tomorrow.</div>
                 <div style={{ fontSize: 13, color: 'rgba(250,246,235,0.55)', lineHeight: 1.7 }}>
                   No tutor available. YouTube has 400 videos, none for your syllabus. ChatGPT doesn't know what your professor expects. Your notes are incomplete.
                 </div>
@@ -113,7 +113,7 @@ export default function MiTEPortal() {
                 <div style={{ fontSize: 13, fontWeight: 800, color: GOLD, marginBottom: 8 }}>WITH NEWWORLDEDU:</div>
                 {[
                   'Opens the platform. Types "Binary Search Tree"',
-                  'Gets FAST NUCES past paper questions on BST',
+                  'Gets verified MCQs on SQL, normalization, ER diagrams',
                   'Practices with real exam questions',
                   'Starky explains what they got wrong',
                   'Goes to bed knowing exactly what to write',
@@ -129,9 +129,9 @@ export default function MiTEPortal() {
           {/* ═══ THREE ENTRY POINTS — clear, no confusion ═══ */}
           <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr 1fr', gap: 10, marginBottom: 24 }}>
             {[
-              { icon: '🎯', title: 'Entrance Prep', desc: 'BBA · BSCS · Law admission tests with real IBA & LAT questions', href: '/mite-prep', color: GOLD },
-              { icon: '📚', title: 'Course Study', desc: '24 courses across 3 programs. Notes + AI tutor per topic.', href: '/mite-study', color: '#4F8EF7' },
-              { icon: '📝', title: 'Past Papers', desc: 'IBA, LUMS, FAST, LAT, NTS — 569 real exam papers', href: '/mite-papers', color: '#4ADE80' },
+              { icon: '🎯', title: 'Entrance Prep', desc: 'MiTE admission test practice — BBA, BS-CS, BS-FD sections', href: '/mite-prep', color: GOLD },
+              { icon: '📚', title: 'Course Study', desc: '40+ courses across 5 programs. AI tutor per topic.', href: '/mite-study', color: '#4F8EF7' },
+              { icon: '📕', title: 'Books & Resources', desc: 'HEC-prescribed textbooks + OpenStax free alternatives', href: '/mite-books', color: '#4ADE80' },
             ].map(f => (
               <a key={f.title} href={f.href}
                 style={{ ...S.glass, textDecoration: 'none', cursor: 'pointer', textAlign: 'center', padding: '28px 16px', transition: 'all 0.2s' }}
@@ -147,9 +147,10 @@ export default function MiTEPortal() {
           {/* ═══ PROGRAMS — what's inside ═══ */}
           <div style={{ fontSize: 11, fontWeight: 700, color: 'rgba(250,246,235,0.25)', letterSpacing: 1, marginBottom: 10 }}>PROGRAMS</div>
           {[
-            { name: 'BBA', icon: '💼', color: '#4F8EF7', courses: ['Principles of Management', 'Financial Accounting', 'Microeconomics', 'Marketing Management', 'Business Statistics', 'Business Law'], papers: 'IBA official + LUMS LCAT + Accounting MCQs' },
-            { name: 'BSCS', icon: '💻', color: '#4ADE80', courses: ['Programming Fundamentals', 'Data Structures', 'OOP', 'Database Systems', 'Digital Logic', 'Discrete Mathematics'], papers: '520 FAST NUCES papers + IBA BSCS + NUST NET' },
-            { name: 'Law', icon: '⚖️', color: '#7C3AED', courses: ['Legal Systems of Pakistan', 'Contract Law', 'Criminal Law', 'Constitutional Law', 'Islamic Jurisprudence', 'Tort Law'], papers: '15 LAT papers (2020-2024) + Constitution MCQs + HEC LAW GAT' },
+            { name: 'BBA', icon: '💼', color: '#4F8EF7', courses: ['Principles of Management', 'Financial Accounting', 'Microeconomics', 'Marketing Management', 'Business Statistics', 'Organizational Behavior'], papers: 'OpenStax textbooks + HEC curriculum' },
+            { name: 'BS-CS', icon: '💻', color: '#4ADE80', courses: ['Programming Fundamentals', 'Data Structures', 'OOP', 'Database Systems', 'Operating Systems', 'Computer Networks'], papers: '15K+ CS MCQs + NCEAC curriculum' },
+            { name: 'BS-FD', icon: '🎨', color: '#7C3AED', courses: ['Fashion Illustration', 'Pattern Making', 'Textile Science', 'Color Theory', 'Digital Design (CAD)', 'Fashion Business'], papers: 'HEC Fashion Design curriculum' },
+            { name: 'Accounting', icon: '📊', color: '#F97316', courses: ['Financial Accounting', 'Cost Accounting', 'Auditing', 'Taxation', 'Corporate Finance', 'Investment Analysis'], papers: 'ACCA specimen papers + MCQs' },
           ].map(prog => (
             <div key={prog.name} style={{ ...S.glass, marginBottom: 10 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>

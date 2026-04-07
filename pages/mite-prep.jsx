@@ -35,7 +35,7 @@ const PROGRAMS = [
   },
   {
     id: 'law', name: 'Law', icon: '⚖️', color: '#7C3AED',
-    desc: 'Law Program Entrance',
+    desc: 'Fashion Design Entrance',
     sections: [
       { id: 'analytical', name: 'Analytical Reasoning', topics: ['Logical Deduction', 'Argument Analysis', 'Assumptions & Conclusions', 'Cause & Effect'] },
       { id: 'reading', name: 'Reading Comprehension', topics: ['Legal Passages', 'Inference', 'Author\'s Purpose', 'Critical Analysis'] },
