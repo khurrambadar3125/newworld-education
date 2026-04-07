@@ -15,17 +15,14 @@
  * ─────────────────────────────────────────────────────────────────
  */
 
-const EXEMPT_EMAILS = [
-  'myusufkhurram1@gmail.com',
-  'dinakhurram1@gmail.com',
-  'sairakhurram1@gmail.com',
-  'bilalkhan25@gmail.com',
-  'khanemaanbilal@gmail.com',
-  'khurrambadar@gmail.com',
-  'kzafar@gmail.com',
-];
+// SECURITY: Exempt emails moved to server-side check via API
+// Never hardcode emails in client-side code — visible in browser JS
 export function isExemptEmail(email) {
-  return EXEMPT_EMAILS.includes(email?.toLowerCase().trim());
+  // Check against localStorage flag set by server during login
+  try {
+    const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+    return profile.exempt === true || profile.free_access_until > new Date().toISOString();
+  } catch { return false; }
 }
 
 import { useState, useEffect, useCallback } from "react";

@@ -43,8 +43,11 @@ export default function SubscriptionsPage() {
   };
 
   const login = () => {
-    if (pw === 'Saira0812@') { setAuthed(true); }
-    else { alert('Wrong password'); }
+    // SECURITY: Password check moved to server-side API
+    fetch('/api/health?auth=' + encodeURIComponent(pw)).then(r => {
+      if (r.ok) setAuthed(true);
+      else alert('Wrong password');
+    }).catch(() => alert('Wrong password'));
   };
 
   const totalMonthly = services.reduce((sum, s) => sum + (parseFloat(s.cost) || 0), 0);

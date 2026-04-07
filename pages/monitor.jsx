@@ -21,7 +21,7 @@ export default function Monitor() {
   const fetchData = async (pw) => {
     setLoading(true);
     try {
-      const res = await fetch(`/api/monitor-sessions?password=${encodeURIComponent(pw || password)}`);
+      const res = await fetch('/api/monitor-sessions', { headers: { 'x-admin-password': pw || password } });
       if (res.status === 401) { setAuthenticated(false); setLoading(false); return; }
       const d = await res.json();
       setData(d);
@@ -199,7 +199,7 @@ export default function Monitor() {
           <div style={{ fontSize: 14, fontWeight: 800, ...S.gold, marginBottom: 8 }}>How to test with Yusuf & Dina</div>
           <ol style={{ fontSize: 13, lineHeight: 1.8, paddingLeft: 20, margin: 0, color: 'rgba(255,255,255,.7)' }}>
             <li>Ask them to open <strong>newworld.education/study</strong> on their phone/laptop</li>
-            <li>Log in with Google (Yusuf: myusufkhurram1@gmail.com, Dina: dinakhurram1@gmail.com)</li>
+            <li>Log in with Google using your registered email</li>
             <li>Pick their level (O Level) and a subject</li>
             <li>Click any topic → they'll see <strong>Notes → Worked Example → Practice</strong></li>
             <li>This page auto-refreshes every 15 seconds — you'll see their progress appear here</li>

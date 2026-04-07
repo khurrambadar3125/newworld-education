@@ -8,7 +8,7 @@ import { getSupabase } from '../../utils/supabase';
 export default async function handler(req, res) {
   if (req.method !== 'GET') return res.status(405).json({ error: 'GET only' });
 
-  const { password } = req.query;
+  const password = req.headers['x-admin-password'] || req.query.password;
   if (password !== process.env.DASHBOARD_PASSWORD) {
     return res.status(401).json({ error: 'Unauthorized' });
   }

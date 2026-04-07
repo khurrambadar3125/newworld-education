@@ -27,7 +27,7 @@ export default function GarageAdmin() {
   const fetchData = async (pw) => {
     setLoading(true);
     try {
-      const res = await fetch(`/api/garage-admin?password=${encodeURIComponent(pw || password)}`);
+      const res = await fetch('/api/garage-admin', { headers: { 'x-admin-password': pw || password } });
       if (res.status === 401) { setAuthenticated(false); setLoading(false); return; }
       const data = await res.json();
       setStudents(data.students || []);
