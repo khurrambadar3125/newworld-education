@@ -9,36 +9,44 @@
     "title": "Current electricity",
     "readTime": "8 min",
     "keyPoints": [
-      "**Current** is the rate of flow of charge, measured in amperes (A)",
-      "**Potential difference (p.d.)** is the energy transferred per unit charge between two points in a circuit",
-      "**Resistance** is the ratio of potential difference to current for a conductor",
-      "**Resistivity** is a property of a material that determines its resistance to current flow",
-      "**EMF** is the energy transferred per unit charge by a source when no current flows",
-      "**Internal resistance** is the resistance within a source of EMF that causes terminal p.d. to be less than EMF",
-      "Ohm's law states that current is directly proportional to p.d. for a conductor at constant temperature",
-      "For resistors in series: total resistance equals sum of individual resistances",
-      "For resistors in parallel: reciprocal of total resistance equals sum of reciprocals of individual resistances"
+      "One radian is defined as the angle in the sector of a circle when the arc length equals the radius of the circle",
+      "Angular speed (ω) can be calculated using ω = v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is time period, and f is frequency",
+      "An object moving in a circular path at constant speed has constantly changing velocity due to changing direction, therefore it must be accelerating",
+      "Centripetal force always acts perpendicular to the motion of the object towards the centre of the circle",
+      "Centripetal acceleration is given by a = v²/r = ω²r, where v is linear speed, r is radius, and ω is angular speed",
+      "Centripetal force is calculated using F = mv²/r = mω²r, derived from Newton's second law F = ma",
+      "A gravitational field is an area where objects with mass experience a non-contact force",
+      "Newton's law of gravitation states that gravitational force is directly proportional to the product of masses and inversely proportional to the square of distance between them",
+      "Gravitational field strength in a radial field follows g = GM/r², showing an inverse square relationship with distance"
     ],
     "definitions": [
       {
-        "term": "Current",
-        "definition": "The rate of flow of charge"
+        "term": "Radian",
+        "definition": "The angle in the sector of a circle when the arc length of that sector is equal to the radius of the circle"
       },
       {
-        "term": "Potential difference",
-        "definition": "The energy transferred per unit charge between two points"
+        "term": "Angular displacement",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "EMF",
-        "definition": "The energy transferred per unit charge by a source when no current flows"
+        "term": "Angular speed",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Resistivity",
-        "definition": "The resistance of a material per unit length and per unit cross-sectional area"
+        "term": "Centripetal acceleration",
+        "definition": "The acceleration experienced by an object moving in a circular path due to constantly changing velocity direction"
       },
       {
-        "term": "Internal resistance",
-        "definition": "The resistance within a source of EMF"
+        "term": "Centripetal force",
+        "definition": "The force that acts perpendicular to the motion of an object moving in a circle, always directed towards the centre"
+      },
+      {
+        "term": "Gravitational field",
+        "definition": "An area where objects with mass experience a non-contact force"
+      },
+      {
+        "term": "Gravitational field strength",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       }
     ],
     "howToAnswer": [
@@ -66,17 +74,16 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse EMF with terminal p.d. - EMF is when no current flows, terminal p.d. is with current flowing",
-      "Students often forget to subtract the 'lost volts' (Ir) when calculating terminal p.d.",
-      "Never say 'electricity flows' - always say 'current flows' or 'charge flows'",
-      "Students mix up series and parallel resistance formulas",
-      "Always include units in final answers - marks are lost for missing units"
+      "Confusing linear speed with angular speed - remember v = ωr relates them",
+      "Thinking that constant speed in circular motion means no acceleration - velocity changes due to changing direction",
+      "Forgetting that centripetal force acts towards the centre, not outwards",
+      "Not recognizing that gravitational field strength follows an inverse square relationship with distance",
+      "Assuming gravitational force is measured from surface rather than centre of masses"
     ],
     "examinerTips": [
-      "Current electricity appears in every Paper 2 - practice circuit calculations daily",
-      "Always draw circuit diagrams with conventional current direction (+ to -)",
-      "Show all working steps clearly for calculation questions",
-      "Check your parallel resistance answer is always smaller than the smallest individual resistance"
+      "Remember to convert between degrees and radians using the factors π/180 and 180/π respectively",
+      "Always check whether you need centripetal force or acceleration - use F = ma to convert between them",
+      "For inverse square relationships, if distance doubles, the field strength becomes one quarter of the original value"
     ],
     "formulas": [
       "I = Q/t",
@@ -112,7 +119,7 @@
       "Examiner Report 2023: 'Candidates often forgot to include units in their final answers' — always include appropriate units (A for current, V for voltage, Ω for resistance) to avoid losing marks"
     ],
     "keyDiagram": "Students must be able to draw circuit diagrams showing: battery symbol (long and short parallel lines), resistor symbol (rectangular box), ammeter symbol (circle with 'A'), voltmeter symbol (circle with 'V'). For series circuits, show all components in a single loop with ammeter in series. For parallel circuits, show components on separate branches with voltmeter connected across components being measured. Include proper connection points and ensure current flow direction is consistent.",
-    "quickRecap": "Current is the flow of charge measured in amperes (I = Q/t). Voltage drives current through resistance following Ohm's law (V = IR). In series circuits, current stays constant but voltage divides across components. In parallel circuits, voltage stays constant but current divides between branches."
+    "quickRecap": "Circular motion involves angular quantities measured in radians, with angular speed related to linear speed by ω = v/r. Objects in circular motion experience centripetal acceleration and force directed towards the centre. Gravitational fields cause attractive forces between masses that follow an inverse square law with distance. Field strength decreases rapidly as distance from the source increases."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +127,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:41:33.879Z",
   "updated_at": "2026-04-06T04:41:33.879Z",
-  "enriched_at": "2026-04-06T16:14:19.766Z"
+  "enriched_at": "2026-04-06T16:14:19.766Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:32:32.403Z"
 }

@@ -9,36 +9,17 @@
     "title": "Information representation",
     "readTime": "8 min",
     "keyPoints": [
-      "**Binary** uses base 2 with digits 0 and 1 only, representing all data in computers using electrical states",
-      "**Hexadecimal** uses base 16 with digits 0-9 and A-F, providing a shorter representation of binary values",
-      "**Two's complement** represents signed integers by inverting all bits and adding 1 to get the negative value",
-      "**BCD (Binary Coded Decimal)** represents each decimal digit using 4 bits, making conversion between decimal and binary easier",
-      "**ASCII** uses 7 bits to represent 128 characters including letters, numbers and symbols used in English",
-      "**Unicode** uses 16 bits or more to represent characters from all world languages including Urdu characters",
-      "Each hexadecimal digit represents exactly 4 binary digits, making conversion straightforward",
-      "Most significant bit in two's complement indicates the sign (0 = positive, 1 = negative)",
-      "BCD uses more storage space than pure binary but eliminates rounding errors in decimal calculations"
+      "Information representation is part of the Theory Fundamentals content for Paper 1",
+      "Information representation falls under Computer systems including software, data hardware and people",
+      "This topic is covered at AS level as part of the fundamental computer science concepts",
+      "Information representation is assessed in Paper 1 Theory Fundamentals examination",
+      "The topic forms part of the core theoretical knowledge required for Cambridge International AS & A Level Computer Science",
+      "Understanding information representation contributes to developing computational thinking skills"
     ],
     "definitions": [
       {
-        "term": "Binary",
-        "definition": "A number system using base 2 with only two digits (0 and 1) to represent all values"
-      },
-      {
-        "term": "Hexadecimal",
-        "definition": "A number system using base 16 with digits 0-9 and letters A-F representing values 10-15"
-      },
-      {
-        "term": "Two's complement",
-        "definition": "A method of representing signed binary numbers where negative numbers are formed by inverting all bits and adding 1"
-      },
-      {
-        "term": "ASCII",
-        "definition": "American Standard Code for Information Interchange - a 7-bit character encoding standard for representing text characters"
-      },
-      {
-        "term": "Unicode",
-        "definition": "A character encoding standard that uses 16 bits or more to represent characters from all world writing systems"
+        "term": "Computational thinking",
+        "definition": "A set of fundamental skills that help produce a solution to a problem. Skills such as abstraction, decomposition and algorithmic thinking are used to study a problem and design a solution that can be implemented."
       }
     ],
     "howToAnswer": [
@@ -66,17 +47,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'ASCII uses 8 bits' — always say 'ASCII uses 7 bits'",
-      "Students often forget to add 1 when calculating two's complement after inverting bits",
-      "Don't confuse BCD with binary — BCD uses 4 bits per decimal digit not the most efficient binary representation",
-      "Never say 'hexadecimal is easier for humans' — say 'hexadecimal provides a more compact representation of binary'",
-      "Students often give the one's complement (just inverted bits) instead of two's complement"
+      "Not understanding that information representation is a fundamental theory topic assessed in Paper 1",
+      "Confusing information representation with data representation which appears in Paper 3 Advanced Theory",
+      "Not recognizing that information representation forms part of the broader computer systems content area"
     ],
     "examinerTips": [
-      "Number base conversions appear in every Paper 2 exam session",
-      "Always show working for conversions even if not explicitly asked",
-      "Remember that F in hexadecimal equals 15 in decimal and 1111 in binary",
-      "Two's complement questions often ask for both positive and negative representations"
+      "Focus on the fundamental aspects of information representation as this appears in Paper 1 Theory Fundamentals",
+      "Remember that information representation is part of the foundational knowledge that supports computational thinking development"
     ],
     "formulas": [
       "Two's complement: Invert all bits + 1",
@@ -107,7 +84,7 @@
       "Examiner Report 2023: 'Common error was not recognizing overflow had occurred in binary arithmetic' — check if result exceeds the range possible with given number of bits"
     ],
     "keyDiagram": "Students must be able to draw a number base conversion table showing denary (0-15), binary (0000-1111), and hexadecimal (0-F) equivalents. Include column headers clearly labeled and show the relationship between 4 binary digits equaling 1 hexadecimal digit. Also draw a two's complement range diagram showing -128 to +127 for 8-bit with the binary representations of key values like -1 (11111111) and -128 (10000000).",
-    "quickRecap": "Information is represented in binary (base 2) using only 0s and 1s. Positive integers use standard binary, negative integers use two's complement (invert bits + add 1). Hexadecimal is base 16 shorthand where each hex digit represents 4 binary digits. Always check for overflow when the result exceeds the possible range for the given number of bits."
+    "quickRecap": "Information representation is a key topic within the Theory Fundamentals section of Paper 1 for Cambridge International AS & A Level Computer Science. It forms part of the computer systems content area covering software, data, hardware and people. This fundamental topic supports the development of computational thinking skills essential for problem-solving in computer science."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -115,5 +92,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:14:14.441Z",
   "updated_at": "2026-04-06T05:14:14.442Z",
-  "enriched_at": "2026-04-06T16:08:30.574Z"
+  "enriched_at": "2026-04-06T16:08:30.574Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:39:00.278Z"
 }

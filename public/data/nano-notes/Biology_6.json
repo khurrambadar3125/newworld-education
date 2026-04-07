@@ -9,36 +9,26 @@
     "title": "Transport in plants",
     "readTime": "8 min",
     "keyPoints": [
-      "**Xylem** transports water and mineral salts from roots to leaves in one direction only",
-      "**Phloem** transports sucrose and amino acids from leaves to all parts of the plant in both directions",
-      "Xylem vessels are made of dead cells with no end walls and lignified walls for support",
-      "Phloem consists of living sieve tube elements with companion cells that provide energy",
-      "**Transpiration** is the loss of water vapour from leaves through stomata",
-      "Transpiration creates a transpiration stream that pulls water up through xylem vessels",
-      "Root hair cells increase surface area for absorption of water by osmosis",
-      "Guard cells control the opening and closing of stomata to regulate water loss",
-      "Translocation is the transport of sucrose from sources (leaves) to sinks (roots, fruits)"
+      "Plants show movement by moving their leaves to catch more sunlight as part of their living characteristics",
+      "Plant nutrition involves taking in light, carbon dioxide, water and ions for use in photosynthesis",
+      "Plant cells contain cytoplasm, cell membrane, DNA, ribosomes and enzymes like all living cells",
+      "Plant cells are distinguished from animal cells by having a cell wall and chlorophyll",
+      "The plant kingdom is split into flowering and non-flowering plants",
+      "Flowering plants are divided into dicotyledons and monocotyledons, identified by their leaves",
+      "Non-flowering plants such as ferns reproduce through spores rather than by producing seeds"
     ],
     "definitions": [
       {
-        "term": "Transpiration",
-        "definition": "The loss of water vapour from leaves through stomata"
+        "term": "Cytoplasm",
+        "definition": "A jelly-like material within the cell in which reactions occur, containing organelles such as the nucleus and ribosomes"
       },
       {
-        "term": "Translocation",
-        "definition": "The transport of sucrose and amino acids in phloem from sources to sinks"
+        "term": "Cell membrane",
+        "definition": "A thin membrane that surrounds the cell that controls entry and exit of substances"
       },
       {
-        "term": "Root hair cell",
-        "definition": "A cell that increases the surface area of roots for absorption of water and mineral salts"
-      },
-      {
-        "term": "Xylem vessel",
-        "definition": "A tube made of dead cells with lignified walls that transports water and mineral salts"
-      },
-      {
-        "term": "Guard cell",
-        "definition": "A cell that controls the opening and closing of stomata"
+        "term": "Photosynthesis",
+        "definition": "The process where plants use light, carbon dioxide, water and ions for nutrition"
       }
     ],
     "howToAnswer": [
@@ -73,17 +63,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say water is 'sucked up' — always say water is 'pulled up by transpiration stream'",
-      "Students confuse xylem and phloem functions — xylem only transports water, phloem only transports food",
-      "Don't say stomata 'breathe' — say stomata allow gas exchange",
-      "Never say root hairs 'suck in' water — always use 'absorption by osmosis'",
-      "Students forget that xylem vessels are dead cells while phloem sieve tubes are living"
+      "Confusing plant movement with animal movement - plants move parts like leaves, not their whole body",
+      "Forgetting that plants have both cell walls AND chlorophyll, not just one distinguishing feature",
+      "Mixing up reproduction methods - flowering plants produce seeds while non-flowering plants use spores"
     ],
     "examinerTips": [
-      "This topic appears in every Paper 2 — especially transpiration experiments",
-      "Always mention 'osmosis' when describing water movement into roots",
-      "Draw clear diagrams of xylem and phloem cross-sections with labels",
-      "Link transpiration rate to environmental factors like temperature and humidity"
+      "Remember that plant cells have ALL the basic cell components plus cell wall and chlorophyll",
+      "Focus on the difference between flowering and non-flowering plant reproduction methods for classification questions"
     ],
     "formulas": [],
     "keyDiagramDescription": "Cross-section of root showing epidermis with root hair cells, cortex, and central vascular bundle containing xylem and phloem. Stem cross-section showing vascular bundles with xylem vessels (thick walls) and phloem (thin walls with companion cells).",
@@ -110,7 +96,7 @@
       "Examiner Report 2021: 'Candidates frequently omitted the role of transpiration in creating the driving force' — always mention that transpiration pull is essential for water movement up tall plants"
     ],
     "keyDiagram": "Students must be able to draw four adjacent xylem vessel elements showing: continuous thin lines using available space, each element as a hollow tube touching at least two others, one element drawn larger than the others, double lines representing thick lignified cell walls, and a clear label line pointing to 'cell wall'. The diagram should show the elements are joined end-to-end with no cross-walls between them.",
-    "quickRecap": "Xylem transports water and minerals from roots to leaves through dead, hollow vessel elements joined end-to-end. Water moves up by cohesion-tension theory: hydrogen bonding creates cohesion between water molecules, adhesion sticks water to vessel walls, and transpiration from leaves pulls the continuous water column upwards. Phloem separately transports sugars bidirectionally through living sieve tube elements."
+    "quickRecap": "Plants are living organisms that show movement through leaf positioning and obtain nutrition via photosynthesis using light, carbon dioxide, water and ions. Plant cells contain the basic cellular components but are distinguished by having cell walls and chlorophyll. Plants are classified into flowering plants (which produce seeds) and non-flowering plants (which reproduce using spores)."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +104,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:27:44.946Z",
   "updated_at": "2026-04-05T21:27:44.946Z",
-  "enriched_at": "2026-04-06T16:09:31.166Z"
+  "enriched_at": "2026-04-06T16:09:31.166Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:25:34.616Z"
 }

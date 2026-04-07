@@ -9,36 +9,31 @@
     "title": "Immunity",
     "readTime": "8 min",
     "keyPoints": [
-      "**Antigens** are molecules that stimulate an immune response and are found on the surface of pathogens or foreign cells",
-      "**B lymphocytes** produce antibodies specific to antigens and differentiate into plasma cells and memory cells",
-      "**T helper cells** activate B cells and cytotoxic T cells by releasing cytokines after recognizing antigens presented by antigen-presenting cells",
-      "**Cytotoxic T cells** destroy infected cells by releasing perforin which creates pores in the cell membrane",
-      "**Antibodies** are Y-shaped proteins with two heavy chains and two light chains, containing variable and constant regions",
-      "**Active immunity** involves the production of antibodies by the organism's own immune system in response to antigens",
-      "**Passive immunity** involves the acquisition of ready-made antibodies from another source without antigen exposure",
-      "**Memory cells** remain in the blood after primary infection and enable rapid secondary immune response upon re-exposure to the same antigen",
-      "**Primary immune response** is slow with low antibody concentration, while **secondary immune response** is faster with higher antibody concentration"
+      "All living organisms are made of cells and use ATP from respiration for energy-requiring processes",
+      "Eukaryotic cells contain a nucleus and membrane-bound organelles, with ultrastructure visible under microscopy",
+      "Key animal cell organelles include nucleus (contains chromatin and nucleolus), rough ER (protein processing), smooth ER (lipid synthesis), and Golgi apparatus (protein/lipid packaging)",
+      "Mitochondria have double membranes with cristae and contain small circular DNA and 70S ribosomes for respiration",
+      "Plant cells have unique organelles: vacuole (support and storage), cell wall (cellulose protection), chloroplasts (photosynthesis site), and plasmodesmata (cell communication)",
+      "Prokaryotic cells are unicellular, 1-5μm diameter, with no membrane-bound organelles and smaller 70S ribosomes",
+      "Prokaryotes have circular DNA freely floating in cytoplasm and peptidoglycan cell walls",
+      "Viruses are non-living structures with nucleic acid (DNA or RNA) in a protein capsid, sometimes with phospholipid envelope"
     ],
     "definitions": [
       {
-        "term": "Antigen",
-        "definition": "A molecule that stimulates an immune response and is recognized as foreign by the immune system"
+        "term": "Ultrastructure",
+        "definition": "Detailed structure of cells obtained by using a microscope"
       },
       {
-        "term": "Antibody",
-        "definition": "A Y-shaped glycoprotein produced by plasma cells that binds specifically to antigens"
+        "term": "Eukaryotic cells",
+        "definition": "Cells that contain a nucleus and membrane-bound organelles"
       },
       {
-        "term": "Active immunity",
-        "definition": "Immunity developed by the production of antibodies by the organism's own immune system in response to antigens"
+        "term": "Cristae",
+        "definition": "Folded inner membrane projections in mitochondria"
       },
       {
-        "term": "Passive immunity",
-        "definition": "Immunity acquired by obtaining ready-made antibodies from another source without exposure to antigens"
-      },
-      {
-        "term": "Memory cell",
-        "definition": "A long-lived lymphocyte that remains in the blood after initial infection and provides immunological memory"
+        "term": "Capsid",
+        "definition": "Protective protein coat that encloses viral nucleic acid"
       }
     ],
     "howToAnswer": [
@@ -70,18 +65,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'antibodies kill pathogens' — always say 'antibodies bind to antigens and mark pathogens for destruction'",
-      "Students often confuse B cells and T cells — B cells produce antibodies, T cells do not produce antibodies",
-      "Never say 'passive immunity lasts longer' — active immunity provides long-term protection, passive immunity is temporary",
-      "Students forget that cytotoxic T cells destroy infected body cells, not free pathogens",
-      "Never say 'vaccines contain antibodies' — vaccines contain antigens or weakened pathogens"
+      "Confusing 70S ribosomes (found in prokaryotes and organelles) with 80S ribosomes (found in eukaryotic cytoplasm)",
+      "Forgetting that mitochondria and chloroplasts contain their own circular DNA and 70S ribosomes",
+      "Mixing up cell wall compositions: peptidoglycan in prokaryotes vs cellulose in plants",
+      "Thinking viruses are living organisms when they are non-living structures"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2 with 6-8 marks allocated",
-      "Always distinguish between humoral immunity (B cells) and cell-mediated immunity (T cells)",
-      "Learn the exact structure of antibodies - heavy chains, light chains, variable and constant regions",
-      "Primary vs secondary response graphs are frequently tested - learn the key differences",
-      "Active vs passive immunity comparison questions are very common - know natural and artificial examples"
+      "Remember that prokaryotic cells are much smaller (1-5μm) than eukaryotic cells and lack membrane-bound organelles",
+      "Focus on the key structural differences: circular vs linear DNA, presence/absence of nucleus, and ribosome sizes"
     ],
     "formulas": [],
     "keyDiagramDescription": "Antibody structure showing Y-shape with two heavy chains, two light chains, variable regions (antigen-binding sites) at the tips, and constant region at the base. Also primary vs secondary immune response graph showing antibody concentration over time.",
@@ -109,7 +100,7 @@
       "Examiner Report 2021: 'Candidates frequently failed to distinguish between primary and secondary immune responses' — always mention that secondary responses are faster, stronger, and involve memory cells"
     ],
     "keyDiagram": "Students must be able to draw a graph showing primary and secondary immune response over time. X-axis shows time (weeks), Y-axis shows antibody concentration in blood. Primary response: slow rise to moderate peak after first antigen exposure, then decline. Secondary response: rapid rise to much higher peak after second antigen exposure. Label both antigen exposures, show memory cells persisting between responses, and indicate the faster, stronger nature of secondary response.",
-    "quickRecap": "Immunity protects against disease through antibodies that are specific to antigens. Active immunity develops when your body makes antibodies (natural infection or vaccination), while passive immunity involves receiving ready-made antibodies (mother to baby, antiserum). Memory cells from the primary response enable a faster, stronger secondary immune response. Vaccination provides immunity without causing disease."
+    "quickRecap": "Cells are the basic units of life using ATP for energy processes. Eukaryotic cells have nuclei and membrane-bound organelles, while prokaryotic cells lack these features and are much smaller. Plant cells have additional organelles like chloroplasts and vacuoles. Viruses are non-living structures consisting of nucleic acid in protein coats."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -117,5 +108,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:03:52.590Z",
   "updated_at": "2026-04-06T05:03:52.590Z",
-  "enriched_at": "2026-04-06T16:09:13.485Z"
+  "enriched_at": "2026-04-06T16:09:13.485Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:37:10.420Z"
 }

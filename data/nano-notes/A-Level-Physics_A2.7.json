@@ -9,33 +9,33 @@
     "title": "Electric fields",
     "readTime": "8 min",
     "keyPoints": [
-      "**Electric field strength** is defined as force per unit positive charge: E = F/q",
-      "**Coulomb's law** states that force between two point charges is F = kQ₁Q₂/r² where k = 1/4πε₀",
-      "Electric field lines show the **direction of force** on a positive test charge and never cross each other",
-      "**Electric potential** at a point is the work done per unit positive charge in bringing charge from infinity to that point",
-      "**Potential difference** between two points is the work done per unit charge in moving charge between the points",
-      "**Capacitance** is defined as charge stored per unit potential difference: C = Q/V",
-      "Energy stored in a capacitor can be calculated using W = ½QV = ½CV² = ½Q²/C",
-      "In **uniform electric fields**, E = V/d where V is potential difference and d is separation",
-      "**Equipotential surfaces** are perpendicular to electric field lines and no work is done moving along them",
-      "Field strength at distance r from point charge Q is E = Q/4πε₀r²"
+      "Force fields are areas where objects experience non-contact forces, formed during interaction of masses, static charges or moving charges",
+      "Electric fields are formed during the interaction of charges",
+      "Gravitational fields are formed during the interaction of masses and are areas where objects with mass experience a non-contact force",
+      "There are uniform fields (exert same force everywhere) and radial fields (force depends on position)",
+      "Field line arrows show direction of force, and distance between field lines represents field strength - closer lines mean stronger field",
+      "Gravitational field strength (g) is force per unit mass: g = F/m, constant in uniform fields but varies in radial fields"
     ],
     "definitions": [
       {
-        "term": "Electric field strength",
-        "definition": "The force per unit positive charge experienced by a small test charge placed at that point"
+        "term": "Force field",
+        "definition": "An area in which an object experiences a non-contact force"
       },
       {
-        "term": "Electric potential",
-        "definition": "The work done per unit positive charge in bringing a small test charge from infinity to that point"
+        "term": "Electric fields",
+        "definition": "Fields formed during the interaction of charges"
       },
       {
-        "term": "Capacitance",
-        "definition": "The charge stored per unit potential difference across the capacitor"
+        "term": "Gravitational field",
+        "definition": "An area where objects with mass experience a non-contact force"
       },
       {
-        "term": "Electric field",
-        "definition": "A region of space where a charged object experiences an electric force"
+        "term": "Uniform field",
+        "definition": "Exerts the same gravitational force on a mass everywhere in the field"
+      },
+      {
+        "term": "Radial field",
+        "definition": "The force exerted depends on the position of the object in the field"
       }
     ],
     "howToAnswer": [
@@ -68,18 +68,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse electric field strength with electric potential - field strength is force per unit charge, potential is energy per unit charge",
-      "Students often forget that electric field lines show direction of force on POSITIVE charge, not negative charge",
-      "Never say 'current flows through capacitor' - charge accumulates on plates but no current flows through dielectric",
-      "Students often use wrong units - field strength is N/C or V/m, potential is V (volts), capacitance is F (farads)",
-      "Never draw electric field lines crossing each other - they must never intersect"
+      "Confusing electric fields with gravitational fields - electric fields are formed by charge interactions, not mass interactions",
+      "Not recognizing that field strength varies with position in radial fields but remains constant in uniform fields",
+      "Misinterpreting field line diagrams - closer lines indicate stronger field strength, not weaker"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 4 calculations",
-      "Always show clear working for capacitor calculations and include units",
-      "Learn the three energy formulas for capacitors - different questions need different forms",
-      "Field line diagrams are common - practice drawing uniform and radial fields",
-      "Remember ε₀ = 8.85 × 10⁻¹² F/m is given on formula sheet"
+      "Remember that field line spacing indicates field strength - closer lines mean stronger fields",
+      "Know the distinction between uniform and radial fields and how force varies in each type"
     ],
     "formulas": [
       "E = F/q",
@@ -114,7 +109,7 @@
       "Examiner Report 2023: 'Candidates often forgot to include units when calculating electric field strength' — always include V/m or N/C and ensure consistent unit usage throughout calculations"
     ],
     "keyDiagram": "Students must be able to draw electric field line patterns showing: (1) Field lines around a single positive charge radiating outward, (2) Field lines around a single negative charge pointing inward, (3) Field lines between two opposite charges curving from positive to negative, and (4) Uniform parallel field lines between two charged plates. Include arrows showing direction, ensure lines never cross, and show that closer spacing indicates stronger field strength.",
-    "quickRecap": "Electric field is the region where charged objects experience a force. Field strength E = F/q or E = V/d for uniform fields. Field lines show direction (positive to negative) and strength (spacing). Remember: field direction is defined by force on positive charges, and field strength is measured in V/m or N/C."
+    "quickRecap": "Electric fields are formed during the interaction of charges, while gravitational fields form from mass interactions. Both are types of force fields where objects experience non-contact forces. Fields can be uniform (constant force) or radial (position-dependent force), with field line spacing indicating strength."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -122,5 +117,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:44:59.691Z",
   "updated_at": "2026-04-06T04:44:59.691Z",
-  "enriched_at": "2026-04-06T16:09:38.503Z"
+  "enriched_at": "2026-04-06T16:09:38.503Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:29:03.111Z"
 }

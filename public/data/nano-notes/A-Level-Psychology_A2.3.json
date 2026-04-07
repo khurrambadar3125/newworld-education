@@ -9,37 +9,38 @@
     "title": "Psychology and health",
     "readTime": "8 min",
     "keyPoints": [
-      "**Health** is a complete state of physical, mental and social well-being and not merely the absence of disease",
-      "**Stress** is the body's response to environmental demands that exceed an individual's ability to cope",
-      "The **transactional model** explains stress as an interaction between environmental demands and individual appraisal",
-      "**Primary appraisal** involves evaluating whether a situation is threatening, while **secondary appraisal** assesses coping resources",
-      "**Adherence** refers to the extent to which patients follow medical advice and treatment regimens",
-      "**Pain** is an unpleasant sensory and emotional experience associated with actual or potential tissue damage",
-      "The **gate control theory** explains pain perception through neural gates that can open or close pain signals",
-      "**Substance abuse** involves the harmful use of psychoactive substances leading to impairment or distress",
-      "**Coping strategies** can be problem-focused (addressing the stressor) or emotion-focused (managing emotional response)",
-      "**Social support** acts as a buffer against stress and improves health outcomes"
+      "The biological approach views humans as biological organisms where all thoughts and cognitive processes must be biological in origin, with the mind living within the brain",
+      "Heritability coefficients quantify the genetic basis of characteristics - IQ has a coefficient of 0.5 meaning equal influence of genetics and environment",
+      "Genotype is an individual's genetic make-up, while phenotype is the physical expression of their genotype",
+      "Two people may have the same genotype but different phenotypes due to personal choices or epigenetics",
+      "Epigenetics involves changes in gene expression without altering genetic make-up through environmental factors like diet and pollution",
+      "Natural selection is the mechanism of evolution where genetically-determined behaviours giving selective advantages are passed to future generations",
+      "The biological approach has practical applications in developing psychoactive drugs for depression and schizophrenia that target specific genes or neurotransmitters"
     ],
     "definitions": [
       {
-        "term": "Stress",
-        "definition": "The body's physiological and psychological response when environmental demands exceed an individual's perceived ability to cope"
+        "term": "Behaviour genetics",
+        "definition": "The study of the influence of an organism's genetic composition on its behaviour and the interaction of heredity and environment insofar as they affect behaviour"
       },
       {
-        "term": "Adherence",
-        "definition": "The extent to which a patient's behavior matches agreed recommendations from healthcare providers regarding medication, diet or lifestyle changes"
+        "term": "Genotype",
+        "definition": "An individual's genetic make-up, where a gene is a short section of DNA coding for specific proteins"
       },
       {
-        "term": "Primary appraisal",
-        "definition": "The initial cognitive evaluation of whether a situation is irrelevant, benign-positive or stressful"
+        "term": "Phenotype",
+        "definition": "The physical expression of an individual's genotype"
       },
       {
-        "term": "Gate control theory",
-        "definition": "A theory explaining pain perception where neural gates in the spinal cord can open or close to allow or block pain signals to the brain"
+        "term": "Epigenetics",
+        "definition": "A change in gene expression, without altering an individual's genetic make-up"
       },
       {
-        "term": "Social support",
-        "definition": "The perception and actuality that one is cared for, has assistance available from other people, and is part of a supportive social network"
+        "term": "Natural selection",
+        "definition": "The mechanism of evolution suggesting that genetically-determined behaviour giving selective advantage will be present in future generations"
+      },
+      {
+        "term": "Evolution",
+        "definition": "The process by which organisms change over time as a result of changes in heritable physical or behavioural traits"
       }
     ],
     "howToAnswer": [
@@ -74,17 +75,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say stress is 'always negative' — eustress can be positive and motivating",
-      "Students often confuse primary and secondary appraisal — primary is 'what is this?' secondary is 'can I cope?'",
-      "Don't say adherence is the same as compliance — adherence implies patient agreement, compliance suggests passive following",
-      "Never describe pain as 'just physical' — pain has emotional, cognitive and social components",
-      "Students wrongly assume all substance use is abuse — distinguish between use, misuse and dependence"
+      "Assuming that MZ twins showing higher concordance rates is purely due to genetics, ignoring that they may share more similar environments",
+      "Confusing genotype and phenotype - forgetting that phenotype can be influenced by environmental factors and personal choices",
+      "Overlooking the role of epigenetics in explaining how environment can affect gene expression without changing the genetic code",
+      "Thinking that heritability coefficients represent fixed genetic influence rather than the interaction between genetics and environment"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2 with 6-8 mark questions on stress or adherence",
-      "Always link psychological concepts to real health behaviors for full marks",
-      "Use specific examples from Pakistani healthcare context where relevant (e.g., TB treatment adherence)",
-      "For evaluation questions, consider cultural differences in health beliefs and practices"
+      "Use specific examples when discussing selective advantages, such as avoiding fire and deep water as prepared stimuli",
+      "When evaluating, discuss both the practical applications (drug development) and limitations (biological determinism and its implications for the judicial system)"
     ],
     "formulas": [],
     "keyDiagramDescription": "Transactional model of stress showing: Environmental stressor → Primary appraisal → Secondary appraisal → Coping response → Outcome, with feedback loops between each stage",
@@ -112,7 +110,7 @@
       "Examiner Report 2021: 'Weak answers focused only on negative health impacts' — remember to discuss positive psychological influences on health such as optimism, social support, and coping strategies"
     ],
     "keyDiagram": "The Stress-Health Model diagram showing: STRESSOR → APPRAISAL (primary: threat assessment, secondary: coping resources) → STRESS RESPONSE (physiological: cortisol release, immune suppression; behavioral: health behaviors, coping strategies) → HEALTH OUTCOMES (short-term: fatigue, infections; long-term: cardiovascular disease, mental health issues). Include feedback loops showing how poor health can increase stress perception.",
-    "quickRecap": "Psychology affects health through stress responses (cortisol weakens immunity), health behaviors (smoking, exercise, medication adherence), and cognitive factors (health beliefs, coping strategies). Chronic stress leads to physical illness through immune suppression and inflammation. Positive psychology factors like optimism and social support protect health. Always explain mechanisms, not just associations."
+    "quickRecap": "The biological approach explains behaviour through physiological processes, genes, hormones and neurotransmitters. It distinguishes between genotype (genetic make-up) and phenotype (physical expression), with epigenetics showing how environment affects gene expression. Natural selection explains how beneficial traits are passed down through generations, and this understanding has practical applications in developing treatments for mental health disorders."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -120,5 +118,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:23:16.443Z",
   "updated_at": "2026-04-06T05:23:16.443Z",
-  "enriched_at": "2026-04-06T16:06:40.920Z"
+  "enriched_at": "2026-04-06T16:06:40.920Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:57:07.044Z"
 }

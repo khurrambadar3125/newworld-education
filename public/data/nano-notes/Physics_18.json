@@ -9,37 +9,35 @@
     "title": "Electrical quantities",
     "readTime": "8 min",
     "keyPoints": [
-      "**Electric current** is the rate of flow of charge and is measured in amperes (A)",
-      "**Voltage (potential difference)** is the energy transferred per unit charge and is measured in volts (V)",
-      "**Resistance** is the opposition to current flow and is measured in ohms (Ω)",
-      "In a **series circuit**, current is the same at all points but voltage is shared across components",
-      "In a **parallel circuit**, voltage is the same across all branches but current is shared between branches",
-      "**Electrical energy** is converted from chemical energy in batteries or kinetic energy in generators",
-      "**Electrical power** is the rate of energy transfer and is measured in watts (W)",
-      "**Work done** by electricity equals energy transferred and is measured in joules (J)",
-      "Current flows from positive to negative terminal in conventional current direction",
-      "Total resistance in series circuits is the sum of individual resistances"
+      "Electric charge is measured in coulombs and can be positive or negative",
+      "Opposite charges experience an attractive force, like charges experience a repulsive force",
+      "An electric field is the region in which an electric charge experiences attractive or repulsive forces",
+      "Conductors allow electric charge to flow through them because they have charged particles that are free to move",
+      "Insulators impede the flow of electric charge because they don't have charged particles that are free to move",
+      "Objects can be charged by transfer of electrons through their addition or removal",
+      "Insulators can be electrostatically charged by friction when two insulators are rubbed together",
+      "When insulators are rubbed together, electrons move from one to the other making them oppositely charged"
     ],
     "definitions": [
       {
-        "term": "Electric current",
-        "definition": "The rate of flow of electric charge"
+        "term": "Electric charge",
+        "definition": "Measured in coulombs and can be positive or negative"
       },
       {
-        "term": "Voltage (potential difference)",
-        "definition": "The energy transferred per unit charge"
+        "term": "Electric field",
+        "definition": "The region in which an electric charge experiences attractive or repulsive forces"
       },
       {
-        "term": "Resistance",
-        "definition": "The opposition to the flow of electric current"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
       },
       {
-        "term": "Electrical power",
-        "definition": "The rate of transfer of electrical energy"
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
       },
       {
-        "term": "Work done by electricity",
-        "definition": "The energy transferred by an electric current"
+        "term": "Electrostatic charge",
+        "definition": "Electric charge at rest on the surface of charged insulators"
       }
     ],
     "howToAnswer": [
@@ -72,18 +70,14 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse current and charge - current is rate of flow of charge, not charge itself",
-      "Students often add resistances in parallel circuits - remember to use 1/R = 1/R₁ + 1/R₂",
-      "Don't forget units in calculations - current (A), voltage (V), resistance (Ω), power (W)",
-      "Never say voltage 'flows' - voltage is a difference, current flows",
-      "Students mix up series and parallel rules for current and voltage distribution"
+      "Confusing which charges attract and repel - remember opposite charges attract, like charges repel",
+      "Thinking that both positive and negative charges move during charging - only electrons (negative charge) transfer",
+      "Assuming conductors and insulators work the same way for charge flow",
+      "Forgetting that charging by friction makes objects oppositely charged, not the same charge"
     ],
     "examinerTips": [
-      "This topic appears in every paper - master the calculations",
-      "Always show your working step by step for calculation questions",
-      "Draw circuit diagrams clearly with correct symbols",
-      "Remember to state the correct formula before substituting values",
-      "Power calculations often use Pakistani appliances like fans or electric heaters as context"
+      "Remember that metals have free electrons as charge carriers while molten ionic substances have ions as charge carriers",
+      "When describing charging by friction, always mention electron transfer specifically and state which object becomes positively and negatively charged"
     ],
     "formulas": [
       "V = IR",
@@ -117,7 +111,7 @@
       "Examiner Report 2023: 'Candidates often failed to rearrange formulas correctly' — practice rearranging V = IR, Q = It, and W = VIt before the exam, and always substitute values after rearranging"
     ],
     "keyDiagram": "Circuit diagram showing a battery (two parallel lines, one longer than the other) connected to a resistor (rectangular box or zigzag line) with an ammeter (circle with 'A') in series and a voltmeter (circle with 'V') in parallel across the resistor. Include arrows showing conventional current direction (positive to negative terminal) and label all components clearly with their symbols.",
-    "quickRecap": "Current (I) is measured in amperes and represents charge flow per second (I = Q/t). Potential difference (V) is measured in volts and represents energy per unit charge (V = W/Q). These combine with resistance in Ohm's law: V = IR. Energy calculations use W = VIt, and charge calculations use Q = It."
+    "quickRecap": "Electric charge is measured in coulombs and creates forces between charged objects - opposite charges attract while like charges repel. Conductors allow charge flow due to free charge carriers, while insulators impede charge flow. Objects can be charged by electron transfer, particularly through friction between insulators."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -125,5 +119,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:19:41.940Z",
   "updated_at": "2026-04-05T21:19:41.940Z",
-  "enriched_at": "2026-04-06T16:00:02.895Z"
+  "enriched_at": "2026-04-06T16:00:02.895Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:19:38.354Z"
 }

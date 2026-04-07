@@ -9,32 +9,23 @@
     "title": "States of matter",
     "readTime": "8 min",
     "keyPoints": [
-      "**Kinetic theory** states that all particles are in constant random motion with kinetic energy proportional to absolute temperature",
-      "In **solids**, particles vibrate about fixed positions with strong intermolecular forces holding them in a regular lattice structure",
-      "In **liquids**, particles move randomly but remain close together with weaker intermolecular forces than solids",
-      "In **gases**, particles move rapidly in random directions with negligible intermolecular forces and occupy all available space",
-      "**Ideal gas** obeys all gas laws at all temperatures and pressures, with particles having no volume and no intermolecular forces",
-      "**Real gases** deviate from ideal behavior at high pressure and low temperature due to particle volume and intermolecular attractions",
-      "**Boiling point** is the temperature at which vapor pressure equals atmospheric pressure and bubbles form throughout the liquid",
-      "Increase in pressure **raises boiling point** because vapor pressure must reach a higher value to equal atmospheric pressure",
-      "**pV = nRT** applies to ideal gases where p = pressure, V = volume, n = moles, R = gas constant, T = absolute temperature"
+      "Transition elements are found in the d-block of the periodic table and form one or more stable ions with incomplete d orbitals",
+      "The d subshell can hold up to 10 electrons",
+      "Scandium and zinc are in the d-block but are not transition elements because their ions do not have incomplete d subshells",
+      "Scandium forms Sc³⁺ with an empty d subshell, zinc forms Zn²⁺ with a full d subshell",
+      "The 4s orbital is filled before the 3d orbital in atoms",
+      "When forming ions, 4s electrons are removed before 3d electrons",
+      "Many transition elements can form multiple stable oxidation states (e.g., vanadium forms V²⁺, V³⁺, V⁴⁺, and V⁵⁺)",
+      "Common transition elements include titanium, vanadium, chromium, manganese, iron, cobalt, nickel, and copper"
     ],
     "definitions": [
       {
-        "term": "Ideal gas",
-        "definition": "A gas that obeys the equation pV = nRT at all temperatures and pressures, with particles having negligible volume and no intermolecular forces"
+        "term": "Transition elements",
+        "definition": "Elements that form one or more stable ions with incomplete d orbitals"
       },
       {
-        "term": "Boiling point",
-        "definition": "The temperature at which the vapor pressure of a liquid equals the atmospheric pressure and bubbles of vapor form throughout the liquid"
-      },
-      {
-        "term": "Kinetic theory",
-        "definition": "The theory that all matter consists of particles in constant random motion with average kinetic energy proportional to absolute temperature"
-      },
-      {
-        "term": "Vapor pressure",
-        "definition": "The pressure exerted by vapor molecules when the liquid and vapor are in dynamic equilibrium"
+        "term": "d orbital",
+        "definition": "A type of orbital that can hold up to 10 electrons, found in transition elements"
       }
     ],
     "howToAnswer": [
@@ -66,17 +57,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'molecules have more energy' — always say 'average kinetic energy increases'",
-      "Students often confuse vapor pressure with atmospheric pressure in boiling point explanations",
-      "Never say 'particles get bigger' when heated — say 'particles move faster and further apart'",
-      "Don't confuse evaporation with boiling — evaporation occurs at surface only, boiling occurs throughout liquid",
-      "Never use Celsius in gas law calculations — must convert to Kelvin (K = °C + 273)"
+      "Thinking scandium and zinc are transition elements - they are d-block elements but not transition elements",
+      "Forgetting that 4s electrons are removed before 3d electrons when forming ions",
+      "Not recognizing that transition elements can form multiple stable oxidation states",
+      "Confusing d-block elements with transition elements - all transition elements are d-block but not all d-block are transition"
     ],
     "examinerTips": [
-      "Gas law questions appear in every Paper 2 — practice unit conversions",
-      "Always state assumptions when using ideal gas equation (negligible intermolecular forces, negligible particle volume)",
-      "Pressure cookers in Pakistani kitchens are good examples of increased pressure raising boiling point",
-      "Draw particle diagrams showing relative spacing and motion for different states"
+      "Remember the definition requires incomplete d orbitals in the ions, not just being in the d-block",
+      "Always remove 4s electrons before 3d electrons when writing ion electron configurations"
     ],
     "formulas": [
       "pV = nRT",
@@ -109,7 +97,7 @@
       "Examiner Report 2023: 'Students frequently forgot to mention energy when explaining state changes' — always include that heating provides energy to overcome forces between particles during melting and boiling"
     ],
     "keyDiagram": "Students must be able to draw particle diagrams showing: (1) Solid - circles touching in regular rows/layers with small arrows showing vibration, (2) Liquid - circles touching but randomly arranged with curved arrows showing movement past each other, (3) Gas - circles far apart with long straight arrows in random directions. Include labels for 'strong forces', 'weak forces', and 'very weak forces' between particles.",
-    "quickRecap": "Solids have particles in fixed positions that only vibrate, giving fixed shape and volume. Liquids have particles that move past each other, giving fixed volume but variable shape. Gases have particles moving randomly with large spaces between them, giving variable shape and volume. State changes occur when energy overcomes forces between particles."
+    "quickRecap": "Transition elements are d-block elements that form stable ions with incomplete d orbitals. Scandium and zinc are d-block but not transition elements as their ions have empty or full d subshells respectively. When forming ions, 4s electrons are removed before 3d electrons, and many transition elements can exist in multiple oxidation states."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -117,5 +105,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:30:45.195Z",
   "updated_at": "2026-04-06T04:30:45.195Z",
-  "enriched_at": "2026-04-06T16:12:07.676Z"
+  "enriched_at": "2026-04-06T16:12:07.676Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:34:35.795Z"
 }

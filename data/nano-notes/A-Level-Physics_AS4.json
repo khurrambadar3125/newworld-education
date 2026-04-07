@@ -9,32 +9,44 @@
     "title": "Forces, density and pressure",
     "readTime": "8 min",
     "keyPoints": [
-      "**Density** is mass per unit volume and is independent of the size or shape of the object",
-      "**Pressure** is force per unit area acting perpendicular to a surface",
-      "Pressure in liquids increases with **depth** due to the weight of liquid above",
-      "**Upthrust** is the upward force exerted by a fluid on an object immersed in it",
-      "Archimedes' principle states that upthrust equals the **weight of fluid displaced**",
-      "**Moment** of a force is the product of force and perpendicular distance from the pivot",
-      "For equilibrium, the **sum of clockwise moments equals sum of anticlockwise moments**",
-      "The **principle of moments** applies when an object is in rotational equilibrium",
-      "Objects float when upthrust equals weight, and sink when weight exceeds upthrust"
+      "One radian is defined as the angle in a sector of a circle when the arc length equals the radius of the circle",
+      "Angular speed (ω) can be calculated using ω = v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is time period, and f is frequency",
+      "An object moving in circular motion at constant speed has constantly changing velocity due to changing direction, therefore it must be accelerating",
+      "Centripetal force always acts perpendicular to the motion of the object towards the centre of the circle",
+      "Centripetal acceleration is given by a = v²/r = ω²r, where v is linear speed, r is radius, and ω is angular speed",
+      "Centripetal force is calculated using F = mv²/r = mω²r, derived from Newton's second law",
+      "A gravitational field is an area where objects with mass experience a non-contact force",
+      "Gravitational field strength (g) is the force per unit mass exerted by a gravitational field, calculated using g = F/m",
+      "Newton's law of gravitation states that gravitational force is directly proportional to the product of masses and inversely proportional to the square of distance between them: F = Gm₁m₂/r²"
     ],
     "definitions": [
       {
-        "term": "Density",
-        "definition": "The mass per unit volume of a material"
+        "term": "Radian",
+        "definition": "The angle in a sector of a circle when the arc length of that sector is equal to the radius of the circle"
       },
       {
-        "term": "Pressure",
-        "definition": "The force acting normally (perpendicularly) per unit area"
+        "term": "Angular displacement (θ)",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "Upthrust",
-        "definition": "The upward force exerted by a fluid on a body immersed in the fluid"
+        "term": "Angular speed (ω)",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Moment of a force",
-        "definition": "The product of the force and the perpendicular distance from the line of action of the force to the pivot"
+        "term": "Centripetal acceleration",
+        "definition": "The acceleration experienced by an object moving in a circular path due to constantly changing velocity direction"
+      },
+      {
+        "term": "Centripetal force",
+        "definition": "The force that acts perpendicular to the motion of an object moving in a circle, always directed towards the centre"
+      },
+      {
+        "term": "Gravitational field",
+        "definition": "An area where objects with mass experience a non-contact force"
+      },
+      {
+        "term": "Gravitational field strength (g)",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       }
     ],
     "howToAnswer": [
@@ -66,18 +78,14 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse mass and weight - weight depends on gravity, mass does not",
-      "Students often forget that pressure acts perpendicular to surfaces, not just downward",
-      "Never say 'upthrust = density × volume' - always include gravity in the calculation",
-      "Students confuse moment with force - moment requires perpendicular distance",
-      "Never use total volume for upthrust - only use the volume of fluid displaced"
+      "Thinking that an object moving at constant speed in a circle is not accelerating - it is accelerating because velocity direction is constantly changing",
+      "Confusing centripetal force direction - it always acts towards the centre of the circle, not outwards",
+      "Forgetting to convert degrees to radians when using circular motion equations - multiply degrees by π/180",
+      "Assuming gravitational field strength is the same everywhere - it varies in radial fields but is constant in uniform fields"
     ],
     "examinerTips": [
-      "Density and pressure calculations appear in almost every exam paper",
-      "Always draw force diagrams showing upthrust, weight and any other forces",
-      "For moments, clearly mark the pivot and all perpendicular distances",
-      "State Archimedes' principle when explaining floating and sinking",
-      "Remember to convert units - especially cm³ to m³ for density calculations"
+      "Remember that a complete circle is 2π radians, so use the conversion factor π/180 to convert from degrees to radians",
+      "When calculating gravitational forces, treat uniform spheres as point masses acting at their centre for objects outside the sphere"
     ],
     "formulas": [
       "ρ = m/V",
@@ -110,7 +118,7 @@
       "Examiner Report 2023: 'Candidates often stated pressure increases with depth but failed to explain why' — always mention that fluid weight above creates the pressure when explaining depth effects"
     ],
     "keyDiagram": "Essential diagram: Hydraulic system showing two connected pistons of different areas in a U-shaped container filled with liquid. Label: small piston (A₁), large piston (A₂), applied force F₁, output force F₂, and liquid level. Include arrows showing force directions and indicate that liquid pressure is equal at the same horizontal level. This diagram demonstrates Pascal's principle and force multiplication.",
-    "quickRecap": "Density = mass/volume (kg/m³). Pressure = force/area (Pa or N/m²). Liquid pressure increases with depth due to weight of liquid above. Pascal's principle: pressure in liquids is transmitted equally in all directions, enabling hydraulic force multiplication where small force on small area creates large force on large area."
+    "quickRecap": "Circular motion involves angular displacement measured in radians and angular speed related to linear speed by ω = v/r. Objects in circular motion experience centripetal acceleration (a = v²/r) requiring centripetal force (F = mv²/r) directed towards the centre. Gravitational fields exert forces on masses, with field strength g = F/m, following Newton's law of gravitation F = Gm₁m₂/r²."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +126,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:39:52.150Z",
   "updated_at": "2026-04-06T04:39:52.150Z",
-  "enriched_at": "2026-04-06T16:12:21.041Z"
+  "enriched_at": "2026-04-06T16:12:21.041Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:31:12.119Z"
 }

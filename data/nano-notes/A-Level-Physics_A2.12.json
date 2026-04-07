@@ -9,37 +9,35 @@
     "title": "Nuclear physics",
     "readTime": "8 min",
     "keyPoints": [
-      "**Nuclear decay** is a random and spontaneous process that cannot be predicted for individual nuclei",
-      "**Mass defect** is the difference between the sum of masses of separated nucleons and the mass of the nucleus",
-      "**Binding energy** is the energy required to completely separate all nucleons in a nucleus",
-      "**Nuclear fission** is the splitting of a heavy nucleus into two lighter nuclei with release of energy",
-      "**Nuclear fusion** is the combining of light nuclei to form a heavier nucleus with release of energy",
-      "**Activity** is the rate of decay of radioactive nuclei, measured in becquerels (Bq)",
-      "**Half-life** is the time taken for half the radioactive nuclei in a sample to decay",
-      "Radioactive decay follows exponential law: N = N₀e^(-λt) where λ is the decay constant",
-      "**Alpha particles** have high ionizing power but low penetrating power",
-      "**Gamma rays** have low ionizing power but high penetrating power"
+      "Force fields are areas where objects experience non-contact forces, formed during interactions of masses, static charges, or moving charges",
+      "Gravitational fields are areas where objects with mass experience a non-contact force, with uniform fields exerting the same force everywhere and radial fields where force depends on position",
+      "Gravitational field strength (g) is the force per unit mass exerted by a gravitational field, calculated using g = F/m",
+      "Newton's law of gravitation states that gravitational force between two masses is directly proportional to the product of the masses and inversely proportional to the square of the distance between them",
+      "Gravitational force is calculated using F = Gm₁m₂/r² where G is the gravitational constant",
+      "The mass of a uniform sphere is considered to act as a point mass at its centre when calculating gravitational force experienced by an object outside the sphere",
+      "Gravitational field strength in a radial field follows g = GM/r² showing an inverse square relationship",
+      "Gravity acts on any objects with mass and is always attractive"
     ],
     "definitions": [
       {
-        "term": "Mass defect",
-        "definition": "The difference between the sum of masses of separated nucleons and the mass of the nucleus"
+        "term": "Force field",
+        "definition": "An area in which an object experiences a non-contact force"
       },
       {
-        "term": "Binding energy per nucleon",
-        "definition": "The average energy required to remove a nucleon from the nucleus"
+        "term": "Gravitational field",
+        "definition": "An area where objects with mass experience a non-contact force"
       },
       {
-        "term": "Activity",
-        "definition": "The rate of decay of radioactive nuclei, equal to λN"
+        "term": "Gravitational field strength (g)",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       },
       {
-        "term": "Half-life",
-        "definition": "The time taken for half the radioactive nuclei in a sample to decay"
+        "term": "Uniform field",
+        "definition": "Exerts the same gravitational force on a mass everywhere in the field"
       },
       {
-        "term": "Nuclear fission",
-        "definition": "The splitting of a heavy nucleus into two lighter nuclei with the release of energy"
+        "term": "Radial field",
+        "definition": "The force exerted depends on the position of the object in the field"
       }
     ],
     "howToAnswer": [
@@ -72,17 +70,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'atoms decay' — always say 'nuclei decay' as decay is a nuclear process",
-      "Students confuse mass defect with binding energy — mass defect is mass difference, binding energy is equivalent energy",
-      "Never say 'radioactive decay speeds up or slows down' — it is random and constant for each nucleus type",
-      "Students forget to convert units correctly in decay calculations (e.g. years to seconds)",
-      "Never say 'all nuclei decay at once after one half-life' — half-life is statistical average"
+      "Confusing gravitational field strength with gravitational force - remember g = F/m",
+      "Not recognizing that gravitational field strength follows an inverse square relationship with distance",
+      "Forgetting that the mass of a uniform sphere acts as a point mass at its centre for external calculations",
+      "Mixing up uniform and radial gravitational fields - Earth's field is radial but appears uniform very close to the surface"
     ],
     "examinerTips": [
-      "Nuclear physics appears in every Paper 4 and frequently in Paper 2",
-      "Always check units carefully in decay calculations — common source of mark loss",
-      "Binding energy per nucleon graphs are frequently examined — learn the key features",
-      "Pakistan's nuclear program context may appear — know basic facts about KANUPP reactors"
+      "Remember that closer field lines represent stronger gravitational field strength",
+      "When distance increases by a factor of 2, gravitational field strength decreases by a factor of 4 due to the inverse square relationship"
     ],
     "formulas": [
       "N = N₀e^(-λt)",
@@ -115,7 +110,7 @@
       "Examiner Report 2023: 'Common error in half-life calculations where candidates divided instead of using the exponential decay pattern' — remember that each half-life reduces the quantity by exactly half, not by a fixed amount"
     ],
     "keyDiagram": "Students must be able to draw a radioactive decay graph showing: (1) exponential decay curve starting from initial activity, (2) clearly marked half-life intervals on x-axis, (3) corresponding half-values on y-axis (e.g., 1000→500→250→125), (4) labeled axes with 'Activity/Count Rate' vs 'Time', (5) demonstration that equal time intervals show halving pattern. Include background radiation as a horizontal line that the curve approaches but never reaches.",
-    "quickRecap": "Nuclear physics covers radioactive decay (alpha, beta, gamma), half-life calculations using the halving pattern, and nuclear reactions (fission splits heavy nuclei, fusion combines light nuclei). Remember to balance nuclear equations with mass and atomic numbers. Background radiation is always present and measured with Geiger counters."
+    "quickRecap": "Gravitational fields are regions where masses experience non-contact forces. Field strength (g = F/m) varies with position in radial fields but remains constant in uniform fields. Newton's law shows that gravitational force follows F = Gm₁m₂/r², while field strength follows g = GM/r², both demonstrating inverse square relationships with distance."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -123,5 +118,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:46:48.868Z",
   "updated_at": "2026-04-06T04:46:48.868Z",
-  "enriched_at": "2026-04-06T16:06:56.320Z"
+  "enriched_at": "2026-04-06T16:06:56.320Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:27:09.143Z"
 }

@@ -9,36 +9,40 @@
     "title": "Electromagnetic induction",
     "readTime": "8 min",
     "keyPoints": [
-      "**Electromagnetic induction** occurs when a conductor moves through a magnetic field or when a magnetic field changes near a conductor",
-      "An **induced EMF** is generated when there is relative motion between a conductor and magnetic field lines",
-      "The direction of induced current opposes the change causing it (**Lenz's law**)",
-      "**Generators** convert kinetic energy to electrical energy using electromagnetic induction",
-      "In **step-up transformers**, secondary voltage is greater than primary voltage (more turns on secondary coil)",
-      "In **step-down transformers**, secondary voltage is less than primary voltage (fewer turns on secondary coil)",
-      "**Power transmission** at high voltage reduces energy losses in cables",
-      "Transformers only work with **alternating current** because changing magnetic field is required",
-      "The **transformer equation** relates voltage to number of turns: Vs/Vp = Ns/Np"
+      "A magnet has a north pole and south pole - like poles experience repulsion, opposite poles experience attraction",
+      "Magnetic materials (iron, steel, cobalt, nickel) are attracted to magnets, while non-magnetic materials (glass, plastic) are not affected",
+      "Magnetic materials can be magnetised by induced magnetism through stroking with a magnet, hammering in a magnetic field, or placing in a coil with direct current",
+      "Temporary magnets lose magnetism when the magnetic field is removed and can be turned on/off, while permanent magnets retain their magnetism",
+      "Electromagnets are temporary magnets made by placing soft iron in coiled wire with direct current running through it",
+      "Magnetic fields can be visualised using plotting compass (drawing dotted lines following compass direction) or iron filings (sprinkling on paper over magnet)",
+      "Electric charge is measured in coulombs and can be positive or negative - opposite charges attract, like charges repel",
+      "Conductors allow electric charge to flow through free-moving charged particles, while insulators impede charge flow",
+      "Insulators can be electrostatically charged by friction through rubbing two insulators together, transferring electrons from one to the other"
     ],
     "definitions": [
       {
-        "term": "Electromagnetic induction",
-        "definition": "The process of generating an EMF (and current if circuit is complete) when a conductor moves through a magnetic field or when magnetic field changes near a conductor"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Generator",
-        "definition": "A device that converts kinetic energy into electrical energy using electromagnetic induction"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Transformer",
-        "definition": "A device that changes the voltage of an alternating current using electromagnetic induction"
+        "term": "Electromagnet",
+        "definition": "A common temporary magnet made when soft iron is placed within coiled wire with a direct current running through it"
       },
       {
-        "term": "Step-up transformer",
-        "definition": "A transformer that increases voltage (secondary voltage greater than primary voltage)"
+        "term": "Electric charge",
+        "definition": "A property measured in coulombs that can be positive or negative"
       },
       {
-        "term": "Step-down transformer",
-        "definition": "A transformer that decreases voltage (secondary voltage less than primary voltage)"
+        "term": "Electric field",
+        "definition": "The region in which an electric charge experiences attractive/repulsive forces"
+      },
+      {
+        "term": "Electrostatic charge",
+        "definition": "Electric charge at rest on the surface of insulators when they are charged"
       }
     ],
     "howToAnswer": [
@@ -66,17 +70,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'transformers work with DC' — transformers only work with AC because changing magnetic field is needed",
-      "Students often confuse step-up and step-down transformers — check number of turns carefully",
-      "Never say 'electricity flows faster at high voltage' — high voltage reduces current, not speed",
-      "Don't forget Lenz's law — induced current always opposes the change that caused it",
-      "Students forget that EMF is induced even if no current flows (open circuit)"
+      "Confusing the force between magnet and magnetic material (always attractive) with force between magnetic poles (depends on which poles face each other)",
+      "Thinking permanent magnets can be turned on and off like temporary magnets",
+      "Forgetting that magnetic field lines must point from north to south pole with arrows showing direction",
+      "Assuming all materials are affected by magnets - non-magnetic materials experience no force"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2, especially transformer calculations",
-      "Always state whether transformer is step-up or step-down before calculations",
-      "Power transmission questions often link to energy efficiency — mention reduced losses",
-      "Draw and label transformer diagrams showing primary/secondary coils and iron core"
+      "Remember that magnetic field strength is shown by how close field lines are together - closer lines indicate stronger field",
+      "When drawing magnetic field diagrams, always include arrows on field lines pointing from north to south pole to show direction"
     ],
     "formulas": [
       "Vs/Vp = Ns/Np",
@@ -107,7 +108,7 @@
       "Examiner Report 2024: 'Candidates struggled to explain Lenz's law correctly' — always state that induced e.m.f. opposes the CHANGE that caused it, not the original field"
     ],
     "keyDiagram": "Students must draw a solenoid with a bar magnet moving through it, showing: (1) magnet with clearly labeled N and S poles, (2) direction of motion with arrow, (3) coil connected to galvanometer or voltmeter, (4) induced current direction using arrows, (5) magnetic field lines around the magnet. Alternative diagram: rectangular coil rotating in uniform magnetic field between two poles, showing angle θ between field lines and normal to coil.",
-    "quickRecap": "Electromagnetic induction occurs when magnetic flux through a conductor changes. Faraday's law: ε = -N(dΦ/dt) where Φ = BAN cos θ. Lenz's law states induced e.m.f. opposes the change causing it. Key factors: relative motion between magnet and conductor, changing magnetic field strength, or changing area/orientation of conductor in field."
+    "quickRecap": "Magnets have north and south poles with like poles repelling and opposite poles attracting. Magnetic materials can be magnetised temporarily or permanently, with electromagnets being common temporary magnets using soft iron in current-carrying coils. Electric charges measured in coulombs follow similar attraction/repulsion rules, with conductors allowing charge flow and insulators impeding it."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -115,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:20:46.020Z",
   "updated_at": "2026-04-05T21:20:46.020Z",
-  "enriched_at": "2026-04-06T16:01:28.101Z"
+  "enriched_at": "2026-04-06T16:01:28.101Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:20:41.061Z"
 }

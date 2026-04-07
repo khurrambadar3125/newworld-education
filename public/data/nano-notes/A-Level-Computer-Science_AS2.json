@@ -9,36 +9,17 @@
     "title": "Communication",
     "readTime": "8 min",
     "keyPoints": [
-      "A **network** is a collection of interconnected devices that can communicate and share resources",
-      "A **protocol** is a set of rules that governs how data is transmitted across a network",
-      "**TCP/IP** is a suite of protocols where TCP handles reliable data transmission and IP handles addressing and routing",
-      "**Packet switching** breaks data into packets that are sent independently through the network and reassembled at destination",
-      "**Circuit switching** establishes a dedicated communication path between sender and receiver for the entire duration of transmission",
-      "TCP provides **error checking** and **flow control** while UDP provides faster transmission without error checking",
-      "IP addresses uniquely identify devices on a network using **IPv4** (32-bit) or **IPv6** (128-bit) format",
-      "**Routers** forward packets between different networks while **switches** connect devices within the same network",
-      "Packet switching allows **efficient use of network resources** as multiple communications can share the same physical links"
+      "Communication is a core requirement of computer systems and one of the four key concepts in Cambridge International AS & A Level Computer Science",
+      "Communication includes the ability to transfer data from one device or component to another",
+      "Communication involves understanding the rules and methods that are used in data transfer",
+      "Communication can range from internal transfer of data within a computer system to transfer of video across the internet",
+      "Communication topics are covered in Paper 1 Theory Fundamentals as part of Computer systems including software, data hardware and people",
+      "Advanced Communication and internet technologies are covered in Paper 3 Advanced Theory under Networks, Communication and Security"
     ],
     "definitions": [
       {
-        "term": "Protocol",
-        "definition": "A set of rules that defines how data is transmitted across a network"
-      },
-      {
-        "term": "Packet switching",
-        "definition": "A method of data transmission where data is broken into packets that are sent independently and reassembled at the destination"
-      },
-      {
-        "term": "Circuit switching",
-        "definition": "A method of communication where a dedicated path is established between sender and receiver for the entire duration of transmission"
-      },
-      {
-        "term": "TCP/IP",
-        "definition": "A suite of communication protocols where TCP ensures reliable data transmission and IP handles addressing and routing"
-      },
-      {
-        "term": "Router",
-        "definition": "A network device that forwards data packets between different networks using IP addresses"
+        "term": "Communication",
+        "definition": "A core requirement of computer systems that includes the ability to transfer data from one device or component to another and an understanding of the rules and methods that are used in this data transfer"
       }
     ],
     "howToAnswer": [
@@ -71,17 +52,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'TCP/IP is a protocol' — always say 'TCP/IP is a suite of protocols'",
-      "Students often confuse routers with switches — routers work between networks, switches within networks",
-      "Don't say packets 'follow the same route' — they can take different paths in packet switching",
-      "Never describe IP as 'Internet Protocol address' — IP stands for Internet Protocol, the address is separate",
-      "Students mix up TCP and UDP features — TCP has error checking, UDP does not"
+      "Not understanding that communication covers both internal data transfer within computer systems and external transfer across networks",
+      "Failing to recognize communication as one of the four fundamental key concepts in the course",
+      "Confusing basic communication concepts (Paper 1) with advanced communication and internet technologies (Paper 3)"
     ],
     "examinerTips": [
-      "Communication appears in Paper 2 almost every year",
-      "Always distinguish between TCP and UDP when discussing protocols",
-      "Draw network diagrams showing routers, switches and connections for full marks",
-      "Use comparative language when asked to compare switching methods"
+      "Understand that communication ranges from simple internal data transfer to complex internet video transfer",
+      "Remember that communication concepts appear in both Paper 1 (fundamental level) and Paper 3 (advanced level)"
     ],
     "formulas": [],
     "keyDiagramDescription": "Network topology diagram showing devices connected through switches and routers, with packet flow paths illustrated between source and destination",
@@ -109,7 +86,7 @@
       "Examiner Report 2023: 'Students frequently gave generic answers about communication without relating to the business context given in the question' — always tailor your communication examples to the specific type and size of business mentioned"
     ],
     "keyDiagram": "Students must be able to draw the Communication Process Model showing: Sender → Encoding → Message/Medium → Decoding → Receiver, with a Feedback loop returning from Receiver to Sender. Include 'Noise/Barriers' affecting the message transmission. Label each component clearly and be able to explain how barriers can disrupt the process at any stage, particularly showing how feedback completes the communication cycle.",
-    "quickRecap": "Communication involves sender, message, medium, and receiver with potential barriers disrupting the process. Methods include verbal (meetings, phone), written (email, letters, reports), and visual (charts, presentations) communication. Effective communication requires choosing appropriate methods for the audience and context, while barriers like noise, language differences, and poor technology can reduce effectiveness. Two-way communication with feedback is more effective than one-way communication."
+    "quickRecap": "Communication is one of four key concepts in Cambridge International AS & A Level Computer Science. It encompasses data transfer between devices and components, along with the rules and methods governing such transfers. Communication topics span from basic concepts in Paper 1 to advanced internet technologies in Paper 3."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -117,5 +94,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:14:33.253Z",
   "updated_at": "2026-04-06T05:14:33.253Z",
-  "enriched_at": "2026-04-06T16:09:18.203Z"
+  "enriched_at": "2026-04-06T16:09:18.203Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:39:23.729Z"
 }

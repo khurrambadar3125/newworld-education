@@ -9,35 +9,36 @@
     "title": "Thermal energy transfers",
     "readTime": "8 min",
     "keyPoints": [
-      "**Conduction** occurs in solids when thermal energy is transferred through vibrating particles without the particles themselves moving",
-      "**Metals** are good thermal conductors because they have free electrons that can move and transfer kinetic energy quickly",
-      "**Convection** occurs in fluids (liquids and gases) when heated particles become less dense, rise, and are replaced by cooler, denser particles",
-      "**Radiation** is the transfer of thermal energy by electromagnetic waves that can travel through a vacuum",
-      "**Dark, matt surfaces** are good absorbers and good emitters of thermal radiation",
-      "**Light, shiny surfaces** are poor absorbers and poor emitters of thermal radiation - they are good reflectors",
-      "**Vacuum flasks** prevent thermal energy transfer by eliminating conduction and convection (vacuum) and reducing radiation (silvered surfaces)",
-      "Thermal energy always flows from a **region of higher temperature to a region of lower temperature**"
+      "Magnets have north and south poles - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are attracted to magnets, non-magnetic materials (glass, plastic) are not",
+      "Magnetic materials can be magnetised by stroking with a magnet, hammering in a magnetic field, or placing in a coil with direct current",
+      "Temporary magnets lose magnetism when the magnetic field is removed, permanent magnets retain their magnetism",
+      "Electromagnets are temporary magnets made by placing soft iron in coiled wire with direct current",
+      "Magnetic field lines show field direction (north to south pole) and strength (closer lines = stronger field)",
+      "Electric charge is measured in coulombs and can be positive or negative - opposite charges attract, like charges repel",
+      "Conductors allow electric charge to flow through them, insulators impede the flow of electric charge",
+      "Insulators can be charged by friction through the transfer of electrons between materials"
     ],
     "definitions": [
       {
-        "term": "Conduction",
-        "definition": "The transfer of thermal energy through matter by the vibration of particles, without the particles themselves moving from place to place"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Convection",
-        "definition": "The transfer of thermal energy in fluids by the movement of the heated fluid itself"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Radiation",
-        "definition": "The transfer of thermal energy by electromagnetic waves"
+        "term": "Electric charge",
+        "definition": "Measured in coulombs and can be positive or negative"
       },
       {
-        "term": "Thermal conductor",
-        "definition": "A material that allows thermal energy to pass through it easily"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
       },
       {
-        "term": "Thermal insulator",
-        "definition": "A material that does not allow thermal energy to pass through it easily"
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
       }
     ],
     "howToAnswer": [
@@ -65,17 +66,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'heat travels' — always say 'thermal energy is transferred'",
-      "Students often confuse good absorbers with good reflectors - dark matt surfaces absorb, light shiny surfaces reflect",
-      "Don't say convection happens in solids - it only occurs in fluids (liquids and gases)",
-      "Avoid saying 'cold air sinks' - say 'cooler, denser air sinks'",
-      "Never say radiation needs a medium - it can travel through a vacuum"
+      "Confusing the direction of magnetic field lines - they always point from north to south pole",
+      "Thinking magnetic materials are only attracted to specific poles - the force is always attractive regardless of pole",
+      "Assuming permanent magnets can be turned on and off like electromagnets"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2, especially convection and radiation questions",
-      "Always mention particle movement when explaining conduction and convection",
-      "For convection, always include density changes in your explanation",
-      "Vacuum flask questions are very common - know all three methods of thermal transfer prevention"
+      "Remember that magnetic field strength is shown by how close field lines are together - closer lines mean stronger field",
+      "Know the difference between temporary and permanent magnets for their practical applications"
     ],
     "formulas": [],
     "keyDiagramDescription": "Convection current diagram showing heated fluid rising, cooling at the top, becoming denser and sinking, creating a circular current. Also important: vacuum flask cross-section showing vacuum space and silvered surfaces.",
@@ -102,7 +99,7 @@
       "Examiner Report 2024: 'Candidates did not specify direction of energy transfer' — always state that thermal energy moves from hot to cold regions when describing any heat transfer process"
     ],
     "keyDiagram": "Students must be able to draw a cross-section of a metal rod being heated at one end, showing: (1) metal atoms/ions in fixed positions in a lattice structure, (2) free electrons represented as small circles with arrows showing movement from hot end to cold end, (3) clear labeling of 'hot end' and 'cold end', (4) wavy arrows indicating thermal energy transfer direction. The diagram should demonstrate that while atoms vibrate in place, free electrons are mobile and carry energy.",
-    "quickRecap": "Thermal energy transfers by conduction (through solids via free electrons in metals or particle vibrations in non-metals), convection (bulk movement of fluids), and radiation (electromagnetic waves, no medium needed). Conduction in metals involves FREE electrons moving from hot to cold areas. Good insulators like trapped air reduce conduction by being poor conductors and preventing direct heat transfer paths."
+    "quickRecap": "Magnets have north and south poles with magnetic fields that can be visualized using field lines or iron filings. Magnetic materials can be magnetized temporarily or permanently, with electromagnets being useful temporary magnets. Electric charge creates forces between objects, with conductors allowing charge flow and insulators preventing it."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -110,5 +107,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:17:27.567Z",
   "updated_at": "2026-04-05T21:17:27.567Z",
-  "enriched_at": "2026-04-06T15:57:48.156Z"
+  "enriched_at": "2026-04-06T15:57:48.156Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:17:58.395Z"
 }

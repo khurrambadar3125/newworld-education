@@ -9,36 +9,34 @@
     "title": "Psychology and consumer behaviour",
     "readTime": "8 min",
     "keyPoints": [
-      "**Consumer behaviour** is influenced by psychological factors including perception, motivation, learning and attitudes towards products",
-      "**Classical conditioning** in advertising works by pairing products with positive stimuli to create favourable emotional responses",
-      "**Operant conditioning** uses rewards (loyalty points, discounts) to reinforce purchasing behaviour and increase repeat buying",
-      "**Social learning theory** explains how consumers imitate behaviours seen in advertisements, particularly celebrity endorsements",
-      "**Cognitive dissonance** occurs when consumers experience conflict between their beliefs and purchasing decisions, leading to post-purchase rationalization",
-      "**Persuasion techniques** in advertising include the elaboration likelihood model with central and peripheral routes to attitude change",
-      "**Brand loyalty** develops through repeated positive experiences and emotional attachment to brand identity and values",
-      "**Subliminal advertising** involves presenting stimuli below the threshold of conscious awareness to influence consumer choices",
-      "**Social proof** and **conformity** influence purchasing decisions as consumers follow others' behaviours and recommendations"
+      "The biological approach views humans as biological organisms where all thoughts and cognitive processes must be biological in origin - the mind 'lives' within the brain",
+      "Heritability coefficients quantify the genetic basis of characteristics, with IQ having a coefficient of 0.5 showing equal influence of genetics and environment",
+      "Genotype refers to an individual's genetic make-up, while phenotype is the physical expression of their genotype",
+      "Two people may have the same genotype but different phenotypes due to personal choices or epigenetic influences",
+      "Epigenetics involves changes in gene expression without altering genetic make-up, through environmental factors like diet and pollution",
+      "Natural selection is the mechanism of evolution where genetically-determined behaviours providing selective advantages are passed to future generations",
+      "Examples of behaviours with selective advantage include avoiding fire and deep water, longer necks for reaching food, and higher milk production"
     ],
     "definitions": [
       {
-        "term": "Consumer behaviour",
-        "definition": "The study of how individuals, groups and organizations select, buy, use and dispose of goods and services to satisfy their needs and wants"
+        "term": "Behaviour genetics",
+        "definition": "The study of the influence of an organism's genetic composition on its behaviour and the interaction of heredity and environment insofar as they affect behaviour"
       },
       {
-        "term": "Classical conditioning",
-        "definition": "A learning process where a neutral stimulus becomes associated with a naturally occurring stimulus to produce a conditioned response"
+        "term": "Genotype",
+        "definition": "An individual's genetic make-up, where a gene is a short section of DNA coding for specific proteins"
       },
       {
-        "term": "Cognitive dissonance",
-        "definition": "The mental discomfort experienced when holding contradictory beliefs, values or attitudes simultaneously"
+        "term": "Phenotype",
+        "definition": "The physical expression of an individual's genotype"
       },
       {
-        "term": "Brand loyalty",
-        "definition": "A consumer's commitment to repurchase or continue using a brand, demonstrated by repeated buying behaviour"
+        "term": "Epigenetics",
+        "definition": "A change in gene expression, without altering an individual's genetic make-up"
       },
       {
-        "term": "Subliminal advertising",
-        "definition": "Marketing messages presented below the threshold of conscious perception to influence consumer behaviour without awareness"
+        "term": "Natural selection",
+        "definition": "The mechanism of evolution suggesting genetically-determined behaviours giving selective advantages will be present in future generations"
       }
     ],
     "howToAnswer": [
@@ -73,17 +71,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse classical and operant conditioning - classical uses association, operant uses consequences",
-      "Students often forget to explain HOW conditioning leads to actual purchasing behaviour",
-      "Avoid saying subliminal advertising is 'proven effective' - research evidence is mixed and controversial",
-      "Don't just describe advertising techniques - always link back to psychological theory",
-      "Students often give examples without explaining the psychological mechanism involved"
+      "Assuming that twin studies can clearly differentiate between nature and nurture effects when MZ twins share similar environments",
+      "Ignoring that two people with identical genotypes can have different phenotypes due to environmental influences",
+      "Overlooking the interaction between phenotype and environment in determining individual behaviour"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2 application questions",
-      "Always use specific advertising examples to illustrate psychological concepts",
-      "Link consumer behaviour to core learning theories from AS level",
-      "Evaluation questions often ask about ethics of psychological manipulation in advertising"
+      "Use specific examples like heritability coefficients (IQ = 0.5) to demonstrate understanding of genetic influence quantification",
+      "Evaluate biological determinism by discussing implications for the judicial system and economic consequences of genetic discoveries"
     ],
     "formulas": [],
     "keyDiagramDescription": "Elaboration Likelihood Model diagram showing central route (high involvement, logical processing) and peripheral route (low involvement, emotional/superficial cues) to persuasion, with factors affecting which route consumers take",
@@ -110,7 +104,7 @@
       "Examiner Report 2023: 'Candidates frequently ignored the business application aspect' — when discussing psychological concepts, always explain how businesses use these insights in their marketing strategies"
     ],
     "keyDiagram": "The Consumer Decision-Making Process flowchart: Start with 'Problem Recognition' (triggered by internal/external stimuli), arrow to 'Information Search' (internal memory + external sources), arrow to 'Evaluation of Alternatives' (using criteria like price, quality, brand), arrow to 'Purchase Decision' (influenced by attitudes of others and situational factors), arrow to 'Post-Purchase Behavior' (satisfaction/dissatisfaction leading to cognitive dissonance). Include feedback loops showing how post-purchase experience influences future problem recognition and information search.",
-    "quickRecap": "Psychology heavily influences consumer behavior through cognitive processes (perception, memory, learning), emotional responses (fear, desire, satisfaction), and social factors (conformity, social proof, reference groups). Key concepts include Maslow's hierarchy driving different purchase motivations, cognitive dissonance explaining post-purchase anxiety, and social proof explaining why popularity influences buying decisions. Businesses use these insights for targeted marketing, product positioning, and customer retention strategies."
+    "quickRecap": "The biological approach explains behaviour through physiological processes, genes, hormones and neurotransmitters. Genotype interacts with environment to produce phenotype, which determines behaviour. Natural selection ensures behaviours with selective advantages are inherited across generations."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:22:49.650Z",
   "updated_at": "2026-04-06T05:22:49.650Z",
-  "enriched_at": "2026-04-06T16:06:20.446Z"
+  "enriched_at": "2026-04-06T16:06:20.446Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:56:50.335Z"
 }

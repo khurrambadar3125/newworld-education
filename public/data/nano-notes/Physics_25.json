@@ -9,36 +9,39 @@
     "title": "Stars and the Universe",
     "readTime": "8 min",
     "keyPoints": [
-      "A **star** is a hot ball of gas that produces its own light and heat by nuclear fusion reactions",
-      "The **Sun** is our nearest star and is the source of light and heat energy for the solar system",
-      "A **galaxy** is a collection of billions of stars held together by gravitational attraction",
-      "The **Milky Way** is the name of our galaxy which contains approximately 100 billion stars",
-      "The **universe** is everything that exists including all galaxies, stars, planets and empty space",
-      "Stars have a **life cycle** - they form from gas clouds, burn fuel by nuclear fusion, then eventually die",
-      "**Light years** are used to measure distances between stars because the distances are so enormous",
-      "The universe is **expanding** which means galaxies are moving away from each other",
-      "**Red shift** in light from distant galaxies provides evidence that the universe is expanding"
+      "Magnets have north and south poles - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are attracted to magnets, non-magnetic materials (glass, plastic) are not",
+      "Magnetic materials can be magnetised by stroking with magnets, hammering in magnetic fields, or placing in current-carrying coils",
+      "Temporary magnets lose magnetism when the field is removed, permanent magnets retain their magnetism",
+      "Magnetic field lines show direction (north to south) and strength (closer lines = stronger field)",
+      "Electric charge is measured in coulombs and can be positive or negative",
+      "Conductors allow charge flow through free moving particles, insulators impede charge flow",
+      "Objects gain electrostatic charge through transfer of electrons by addition or removal"
     ],
     "definitions": [
       {
-        "term": "Star",
-        "definition": "A hot ball of gas that produces its own light and heat by nuclear fusion reactions"
+        "term": "magnet",
+        "definition": "a material or object that produces a magnetic field"
       },
       {
-        "term": "Galaxy",
-        "definition": "A collection of billions of stars held together by gravitational attraction"
+        "term": "magnetic field",
+        "definition": "a region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Universe",
-        "definition": "Everything that exists including all galaxies, stars, planets and empty space"
+        "term": "induced magnetism",
+        "definition": "when magnetic materials are magnetised by being placed in a magnetic field"
       },
       {
-        "term": "Light year",
-        "definition": "The distance that light travels in one year in a vacuum"
+        "term": "electric charge",
+        "definition": "measured in coulombs and can be positive or negative"
       },
       {
-        "term": "Red shift",
-        "definition": "The increase in wavelength of light from stars moving away from us"
+        "term": "conductors",
+        "definition": "materials which allow electric charge to flow through them because they have charged particles that are free to move"
+      },
+      {
+        "term": "insulators",
+        "definition": "materials which impede the flow of electric charge because they don't have charged particles that are free to move"
       }
     ],
     "howToAnswer": [
@@ -70,18 +73,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say stars are 'burning' fuel - always say nuclear fusion reactions occur",
-      "Students often confuse galaxy with universe - galaxy is part of universe, not the same thing",
-      "Don't say light year is a unit of time - it's a unit of distance",
-      "Avoid saying red shift proves Big Bang - it only provides evidence for expanding universe",
-      "Never describe stars as 'balls of fire' - they are balls of gas undergoing nuclear fusion"
+      "Thinking magnetic materials are only attracted to one pole - the force is always attractive regardless of pole",
+      "Confusing temporary and permanent magnets - temporary magnets lose magnetism when the field is removed",
+      "Not understanding that only electrons transfer during charging - objects gain charge through electron addition or removal only",
+      "Mixing up field line direction - magnetic field lines always point from north to south pole"
     ],
     "examinerTips": [
-      "This topic appears regularly in Paper 2 Section B",
-      "Always distinguish between star, galaxy and universe in your answers",
-      "Learn the exact definition of light year as a distance unit",
-      "Remember nuclear fusion is the energy source in stars, not burning",
-      "Red shift questions often link to expanding universe - practice this connection"
+      "Remember magnetic field strength is shown by spacing of field lines - closer together means stronger field",
+      "Know the difference between temporary and permanent magnets for practical applications like electromagnets vs compass magnets"
     ],
     "formulas": [],
     "keyDiagramDescription": "Scale diagram showing Earth, Solar System, Milky Way Galaxy and Universe as nested structures, demonstrating relative sizes from smallest to largest",
@@ -109,7 +108,7 @@
       "Examiner Report 2021: 'Candidates frequently mixed up the stellar evolution paths for different mass stars' — remember that only massive stars (>8 solar masses) can become neutron stars or black holes, while Sun-like stars end as white dwarfs"
     ],
     "keyDiagram": "Students must be able to draw the Hertzsprung-Russell (H-R) diagram showing: x-axis labeled 'Surface Temperature (K)' decreasing left to right, y-axis labeled 'Luminosity' or 'Absolute Magnitude', main sequence as diagonal band from top-left to bottom-right, giants region in upper-right, white dwarfs in lower-left, and our Sun's position on the main sequence. Include temperature scale (30,000K to 3,000K) and be able to plot different star types correctly.",
-    "quickRecap": "Stars form from gravitational collapse of gas clouds and spend most of their lives on the main sequence fusing hydrogen. More massive stars evolve faster and can end as neutron stars or black holes, while Sun-like stars become white dwarfs. Red-shift of distant galaxies shows the universe is expanding, supporting the Big Bang theory. Distance to nearby stars measured using parallax method."
+    "quickRecap": "Magnets have poles that attract opposite and repel like poles, creating magnetic fields around them. Magnetic materials can be temporarily or permanently magnetised through various methods. Electric charge measured in coulombs flows through conductors but not insulators, and objects gain charge through electron transfer."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -117,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:22:04.049Z",
   "updated_at": "2026-04-05T21:22:04.049Z",
-  "enriched_at": "2026-04-06T16:03:14.069Z"
+  "enriched_at": "2026-04-06T16:03:14.069Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:21:42.362Z"
 }

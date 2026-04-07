@@ -9,36 +9,41 @@
     "title": "Sound",
     "readTime": "8 min",
     "keyPoints": [
-      "**Sound** is produced by vibrating objects which create compressions and rarefactions in the air",
-      "Sound requires a **medium** to travel through - it cannot travel through a vacuum",
-      "Sound travels as **longitudinal waves** where particles vibrate parallel to the direction of wave travel",
-      "Speed of sound in air at 20°C is approximately **340 m/s**",
-      "Speed of sound is faster in **solids** than liquids, and faster in liquids than gases",
-      "**Echo** is the reflection of sound waves from a hard surface",
-      "The **audible range** for humans is approximately 20 Hz to 20,000 Hz",
-      "**Pitch** depends on frequency - higher frequency produces higher pitch",
-      "**Loudness** depends on amplitude - greater amplitude produces louder sound"
+      "Magnets have north and south poles - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are always attracted to magnets regardless of pole",
+      "Non-magnetic materials (glass, plastic) experience no force from magnets",
+      "Temporary magnets lose magnetism when magnetic field is removed, permanent magnets do not",
+      "Electromagnets are temporary magnets made from soft iron in coiled wire with direct current",
+      "Magnetic field lines show direction (north to south pole) and strength (closer lines = stronger field)",
+      "Electric charge is measured in coulombs and can be positive or negative",
+      "Like charges repel, opposite charges attract in electric fields",
+      "Conductors allow charge flow through free moving particles, insulators impede charge flow",
+      "Electrostatic charging occurs by friction when electrons transfer between rubbed insulators"
     ],
     "definitions": [
       {
-        "term": "Sound",
-        "definition": "Longitudinal waves produced by vibrating objects that travel through a medium"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Echo",
-        "definition": "The reflection of sound waves from a hard surface"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Pitch",
-        "definition": "How high or low a sound is, determined by the frequency of the sound wave"
+        "term": "Electric charge",
+        "definition": "Measured in coulombs and can be positive or negative"
       },
       {
-        "term": "Amplitude",
-        "definition": "The maximum displacement of particles from their rest position in a sound wave"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
       },
       {
-        "term": "Medium",
-        "definition": "A substance through which sound waves can travel, such as air, water or solids"
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
+      },
+      {
+        "term": "Electromagnet",
+        "definition": "A common temporary magnet made when soft iron is placed within coiled wire with a direct current running through it"
       }
     ],
     "howToAnswer": [
@@ -70,17 +75,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'sound travels faster in gases' - sound travels fastest in solids, then liquids, then gases",
-      "Students often confuse pitch with loudness - pitch depends on frequency, loudness depends on amplitude",
-      "Don't say 'sound is a transverse wave' - sound is always a longitudinal wave",
-      "Never write 'sound travels at the speed of light' - sound travels much slower than light",
-      "Students forget that echoes require hard surfaces for reflection - soft surfaces absorb sound"
+      "Thinking magnetic materials are only attracted to one pole of a magnet - they're attracted to both poles",
+      "Confusing temporary and permanent magnets - temporary magnets lose magnetism when the field is removed",
+      "Believing that only positive charges move during electrostatic charging - only electrons (negative charge) transfer",
+      "Drawing magnetic field lines incorrectly - they must point from north to south pole with arrows"
     ],
     "examinerTips": [
-      "Echo questions appear frequently - remember distance = speed × time, but sound travels to surface and back",
-      "Always state that sound requires a medium when explaining why it cannot travel through space",
-      "Use the word 'vibrations' when describing how sound is produced",
-      "Temperature affects speed of sound - sound travels faster in warmer air"
+      "Remember magnetic field strength is shown by spacing of field lines - closer together means stronger field",
+      "When plotting magnetic fields, use plotting compass method starting from different points around magnet's edge for multiple field lines"
     ],
     "formulas": [
       "speed = distance ÷ time",
@@ -112,7 +114,7 @@
       "Examiner Report 2022: 'Students incorrectly stated that sound travels fastest in gases' — remember sound speed increases with density: fastest in solids, slowest in gases"
     ],
     "keyDiagram": "Echo method diagram showing: person with sound source, measured distance 'd' to wall/cliff, sound wave path going to reflector and returning (labeled as total distance 2d), stopwatch showing time measurement, with clear labels for 'incident sound', 'reflected sound', and the equation v = 2d/t prominently displayed.",
-    "quickRecap": "Sound speed increases from gas to liquid to solid due to particle arrangement. Use v = d/t but remember to double distance for echo methods. Ultrasound is above 20,000 Hz, infrasound below 20 Hz. Main experimental errors are reaction time and distance measurement inaccuracies."
+    "quickRecap": "Magnets have north and south poles with magnetic fields that can be visualized using plotting compasses or iron filings. Magnetic materials are always attracted to magnets while non-magnetic materials experience no force. Electric charges (positive or negative) create forces - like charges repel and opposite charges attract. Conductors allow charge flow while insulators impede it, and electrostatic charging occurs through electron transfer during friction."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +122,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:17:45.997Z",
   "updated_at": "2026-04-05T21:17:45.997Z",
-  "enriched_at": "2026-04-06T15:58:06.676Z"
+  "enriched_at": "2026-04-06T15:58:06.676Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:18:13.978Z"
 }

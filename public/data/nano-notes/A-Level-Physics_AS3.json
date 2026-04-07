@@ -9,32 +9,36 @@
     "title": "Dynamics",
     "readTime": "8 min",
     "keyPoints": [
-      "**Force** is any push or pull that can change the motion of an object or cause deformation",
-      "Newton's **first law** states that an object will remain at rest or continue moving at constant velocity unless acted upon by a resultant force",
-      "Newton's **second law** states that the resultant force is directly proportional to the rate of change of momentum: F = ma when mass is constant",
-      "Newton's **third law** states that when object A exerts a force on object B, object B exerts an equal and opposite force on object A",
-      "**Momentum** is the product of mass and velocity: p = mv, measured in kg m s⁻¹",
-      "**Impulse** equals the change in momentum and also equals force × time: FΔt = Δp",
-      "The **principle of conservation of momentum** states that total momentum before collision equals total momentum after collision in the absence of external forces",
-      "In **elastic collisions**, both momentum and kinetic energy are conserved",
-      "In **inelastic collisions**, momentum is conserved but kinetic energy is not conserved"
+      "One radian is defined as the angle in a sector of a circle when the arc length equals the radius of the circle",
+      "Angular speed (ω) can be calculated using ω = v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is time period, and f is frequency",
+      "An object moving in a circular path at constant speed has constantly changing velocity due to changing direction, therefore it must be accelerating",
+      "Centripetal force always acts perpendicular to the motion of the object towards the centre of the circle",
+      "Centripetal acceleration is calculated using a = v²/r = ω²r, where v is linear speed, r is radius, and ω is angular speed",
+      "Centripetal force is calculated using F = mv²/r = mω²r, derived from Newton's second law F = ma",
+      "A gravitational field is an area where objects with mass experience a non-contact force",
+      "Newton's law of gravitation states that gravitational force is directly proportional to the product of masses and inversely proportional to the square of distance between them: F = Gm₁m₂/r²",
+      "Gravitational field strength in a radial field follows g = GM/r², showing an inverse square relationship with distance"
     ],
     "definitions": [
       {
-        "term": "Force",
-        "definition": "A push or pull that can change the motion of an object or cause deformation, measured in Newtons (N)"
+        "term": "Angular displacement (θ)",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "Momentum",
-        "definition": "The product of mass and velocity of an object, measured in kg m s⁻¹"
+        "term": "Angular speed (ω)",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Impulse",
-        "definition": "The product of force and time for which it acts, equal to change in momentum, measured in N s"
+        "term": "Centripetal acceleration",
+        "definition": "The acceleration experienced by an object moving in a circular path due to constantly changing velocity direction"
       },
       {
-        "term": "Conservation of momentum",
-        "definition": "The total momentum of a system remains constant when no external forces act on the system"
+        "term": "Centripetal force",
+        "definition": "The force that acts perpendicular to the motion of an object towards the centre of the circle, causing circular motion"
+      },
+      {
+        "term": "Gravitational field strength (g)",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       }
     ],
     "howToAnswer": [
@@ -66,17 +70,15 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'F = ma always applies' — only when mass is constant. Use F = Δp/Δt for general case",
-      "Students often forget that momentum is a vector — direction matters in collision calculations",
-      "Never confuse impulse with momentum — impulse is change in momentum, not momentum itself",
-      "Students often forget to consider both objects in collision problems when applying conservation of momentum",
-      "Never ignore the negative sign in force calculations — it indicates direction"
+      "Forgetting that velocity changes in circular motion even when speed is constant, due to changing direction",
+      "Confusing the direction of centripetal force - it always acts towards the centre of the circle, not away from it",
+      "Not recognizing that gravitational field strength follows an inverse square relationship with distance",
+      "Forgetting to convert angles to radians when using circular motion formulas",
+      "Assuming gravitational force acts only on one object - it's actually a mutual force between both masses"
     ],
     "examinerTips": [
-      "This topic appears every year in Paper 2, especially collision and impulse calculations",
-      "Always define your positive direction clearly in collision problems",
-      "For Newton's laws questions, learn the exact wording — paraphrasing loses marks",
-      "Impulse questions often involve cricket balls, cars braking, or collisions — familiar Pakistani contexts"
+      "Remember that centripetal acceleration causes circular motion with constant angular speed, and always use Newton's second law to link force and acceleration",
+      "When dealing with gravitational fields, note that the mass of a uniform sphere acts as a point mass at its centre for objects outside the sphere"
     ],
     "formulas": [
       "F = ma",
@@ -110,7 +112,7 @@
       "Examiner Report 2022: 'Common error was identifying incorrect action-reaction pairs' — remember Newton's third law pairs act on different objects, not the same object"
     ],
     "keyDiagram": "Free body diagrams are essential - draw a simple box/dot representing the object, then draw arrows from the center showing ALL forces acting ON that object only. Label each force clearly (weight W, normal N, friction f, tension T, etc.) with magnitudes if known. For inclined planes, draw coordinate axes parallel and perpendicular to the slope, and resolve weight into components mg sin θ (down slope) and mg cos θ (into slope). Never include forces the object exerts on other things.",
-    "quickRecap": "Newton's First Law: objects at rest stay at rest, moving objects continue at constant velocity unless acted upon by unbalanced forces. Newton's Second Law: F = ma, where F is net force in Newtons. Newton's Third Law: for every action there's an equal and opposite reaction on a different object. Always draw free body diagrams, resolve forces into components, and remember friction opposes motion."
+    "quickRecap": "Circular motion involves objects moving in circular paths with constantly changing velocity due to changing direction, requiring centripetal force directed towards the centre. Angular quantities like angular displacement and angular speed are measured in radians and related to linear quantities through the radius. Gravitational fields cause attractive forces between masses following Newton's law of gravitation, with field strength decreasing as an inverse square of distance."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +120,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:39:31.467Z",
   "updated_at": "2026-04-06T04:39:31.467Z",
-  "enriched_at": "2026-04-06T16:12:02.661Z"
+  "enriched_at": "2026-04-06T16:12:02.661Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:30:53.947Z"
 }

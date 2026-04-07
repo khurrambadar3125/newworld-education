@@ -9,35 +9,37 @@
     "title": "People in organisations",
     "readTime": "8 min",
     "keyPoints": [
-      "**Motivation** theories help managers understand what drives employee performance and behaviour",
-      "**Maslow's hierarchy** shows human needs progress from physiological through security, social, esteem to self-actualisation",
-      "**Herzberg's two-factor theory** distinguishes between hygiene factors (prevent dissatisfaction) and motivators (create satisfaction)",
-      "**Leadership styles** include autocratic (one-way communication), democratic (consultation) and laissez-faire (delegation)",
-      "**Management** involves planning, organising, coordinating and controlling resources to achieve objectives",
-      "**Recruitment** process includes job analysis, job description, person specification, advertising and selection",
-      "**Training** can be on-the-job (learning while working) or off-the-job (away from workplace)",
-      "**Appraisal** systems regularly review employee performance against agreed targets and identify development needs"
+      "Business activity aims to meet customer needs by using resources to make goods and services that customers will buy",
+      "Products can be either for final consumers or capital and intermediate goods for business customers",
+      "Four factors of production are needed: Labour (human effort), Capital (equipment and machinery), Land (location to operate from), and Enterprise (risk taking and decision making by entrepreneur)",
+      "Opportunity cost is an important concept in business activity and business decisions",
+      "When a decision is made to purchase one item, other items have to be 'given up' as resources are scarce",
+      "The concept of opportunity cost applies to all business resource allocation decisions"
     ],
     "definitions": [
       {
-        "term": "Motivation",
-        "definition": "The internal and external factors that stimulate desire and energy in people to be continually interested and committed to achieving a goal"
+        "term": "Business activity",
+        "definition": "Using resources to make goods and services that customers will buy to meet their needs"
       },
       {
-        "term": "Leadership",
-        "definition": "The ability to influence and direct people in order to meet the goals of the group"
+        "term": "Labour",
+        "definition": "Human effort to produce goods or provide services to customers"
       },
       {
-        "term": "Recruitment",
-        "definition": "The process of finding and attracting suitable candidates for a job vacancy"
+        "term": "Capital",
+        "definition": "Equipment and machinery used in business production"
       },
       {
-        "term": "Training",
-        "definition": "The process of teaching employees the skills needed to do their job effectively"
+        "term": "Land",
+        "definition": "A location to operate the business from"
       },
       {
-        "term": "Job description",
-        "definition": "A detailed list of the key points about the job to be filled, stating all the key tasks and responsibilities"
+        "term": "Enterprise",
+        "definition": "Risk taking and decision making undertaken by an entrepreneur"
+      },
+      {
+        "term": "Opportunity cost",
+        "definition": "What has to be 'given up' when making a business decision as resources are scarce"
       }
     ],
     "howToAnswer": [
@@ -72,17 +74,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse management with leadership - management focuses on systems and processes, leadership focuses on people and vision",
-      "Students often think hygiene factors motivate - they only prevent dissatisfaction, motivators create satisfaction",
-      "Don't mix up recruitment and selection - recruitment attracts candidates, selection chooses between them",
-      "Avoid saying training is 'expensive' without context - explain the specific costs like time away from work or trainer fees",
-      "Never suggest autocratic leadership is always bad - it can be effective in crisis situations or with unskilled workers"
+      "Confusing consumer goods with capital goods and their different target markets",
+      "Not understanding that all four factors of production are essential for business activity",
+      "Failing to recognize that opportunity cost applies to all resource allocation decisions, not just major purchases"
     ],
     "examinerTips": [
-      "People management appears in every Paper 2 exam, usually worth 15-20 marks total",
-      "Always use business context when explaining motivation theories - relate to the specific business in the question",
-      "For leadership questions, consider the situation - different styles suit different circumstances",
-      "Training questions often ask for benefits AND costs - prepare both sides"
+      "Remember that business activity involves transforming resources (inputs) into products (outputs) for customers",
+      "Always consider opportunity cost when analyzing business decisions about resource allocation"
     ],
     "formulas": [],
     "keyDiagramDescription": "Maslow's hierarchy of needs pyramid showing five levels from bottom: physiological, safety/security, social/belonging, esteem/recognition, self-actualisation. Essential for explaining how different rewards motivate different employees.",
@@ -110,7 +108,7 @@
       "Examiner Report 2023: 'Weak answers on leadership styles failed to explain when each style is appropriate' — always mention that autocratic suits crisis situations, democratic suits skilled workers, and laissez-faire suits creative teams"
     ],
     "keyDiagram": "Students must draw an organizational chart showing hierarchical structure with CEO at top, followed by functional managers (Marketing, Finance, Operations, HR), then department supervisors, and finally operational staff. Include clear lines showing chain of command, label each level, and indicate span of control by showing how many subordinates each manager supervises. Add arrows to show formal communication flow up and down the hierarchy.",
-    "quickRecap": "Organizations need clear structure with defined chain of command and appropriate span of control. Effective leadership styles vary by situation - autocratic for crises, democratic for skilled teams. Good communication flows both ways through formal and informal channels. Motivated employees through recognition, training, and involvement lead to higher productivity and lower turnover."
+    "quickRecap": "Business activity uses four factors of production (labour, capital, land, enterprise) to create goods and services for customers. Products can target final consumers or other businesses. Opportunity cost is crucial in business decisions as choosing one option means giving up alternatives due to scarce resources."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -118,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:11:21.864Z",
   "updated_at": "2026-04-06T05:11:21.864Z",
-  "enriched_at": "2026-04-06T16:07:32.556Z"
+  "enriched_at": "2026-04-06T16:07:32.556Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T03:02:24.882Z"
 }

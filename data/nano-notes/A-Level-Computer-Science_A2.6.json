@@ -9,37 +9,21 @@
     "title": "Computational thinking and problem-solving",
     "readTime": "8 min",
     "keyPoints": [
-      "**Big-O notation** describes the worst-case time complexity of an algorithm as input size increases",
-      "**O(1)** represents constant time complexity - execution time remains the same regardless of input size",
-      "**O(n)** represents linear time complexity - execution time increases proportionally with input size",
-      "**O(n²)** represents quadratic time complexity - execution time increases with the square of input size",
-      "**Recursion** is a programming technique where a function calls itself with a modified parameter until a base case is reached",
-      "**Divide and conquer** breaks a problem into smaller subproblems, solves them independently, then combines results",
-      "**Backtracking** systematically explores all possible solutions and backtracks when a path leads to an invalid solution",
-      "**Base case** in recursion prevents infinite loops by providing a condition where the function stops calling itself",
-      "**Merge sort** and **quicksort** are classic examples of divide and conquer algorithms with O(n log n) complexity",
-      "**Stack overflow** occurs when recursive calls exceed the system's stack memory limit"
+      "Computational thinking is a set of fundamental skills that help produce a solution to a problem",
+      "Key skills include abstraction, decomposition and algorithmic thinking used to study a problem and design a solution",
+      "Solutions can be implemented using a range of technologies and programming languages",
+      "Paper 4 Practical covers Algorithms, Recursion, Programming Paradigms, and File Processing and Exception Handling",
+      "Paper 2 covers Algorithm Design and Problem-Solving, Data Types and Structures, Programming, and Software Development",
+      "The course helps develop computational thinking, problem solving, understanding communication methods, writing programs for computer based solutions, and analysing and evaluating computer based systems"
     ],
     "definitions": [
       {
-        "term": "Big-O notation",
-        "definition": "A mathematical notation that describes the limiting behavior of an algorithm's time or space complexity as the input size approaches infinity"
+        "term": "Computational thinking",
+        "definition": "A set of fundamental skills that help produce a solution to a problem, including abstraction, decomposition and algorithmic thinking"
       },
       {
-        "term": "Recursion",
-        "definition": "A programming technique where a function calls itself with modified parameters until a base case condition is met"
-      },
-      {
-        "term": "Divide and conquer",
-        "definition": "An algorithmic paradigm that breaks a problem into smaller subproblems of the same type, solves them recursively, then combines their solutions"
-      },
-      {
-        "term": "Backtracking",
-        "definition": "A systematic method for solving problems by exploring all possible solutions and undoing choices that lead to invalid solutions"
-      },
-      {
-        "term": "Base case",
-        "definition": "The terminating condition in a recursive function that stops further recursive calls and begins the return process"
+        "term": "Programming paradigms",
+        "definition": "A way of thinking about or approaching problems using different programming styles suited to unique functions, tools and specific situations"
       }
     ],
     "howToAnswer": [
@@ -72,17 +56,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'Big-O shows speed' — always say 'Big-O shows time complexity or growth rate'",
-      "Students often forget to include the base case when explaining recursion",
-      "Confusing backtracking with simple recursion — backtracking specifically undoes invalid choices",
-      "Writing O(n) as 'Order n' instead of 'Big-O of n' or 'O of n'",
-      "Not showing the combining step when explaining divide and conquer"
+      "Not understanding that computational thinking involves multiple skills working together",
+      "Failing to recognize that solutions can be implemented using various technologies and programming languages",
+      "Not applying abstraction, decomposition and algorithmic thinking systematically to problem analysis"
     ],
     "examinerTips": [
-      "Big-O notation questions appear in every Paper 2 - learn O(1), O(n), O(n²), O(log n), O(n log n)",
-      "Always trace recursive calls step by step showing parameter changes",
-      "Divide and conquer questions often ask for merge sort or binary search examples",
-      "Backtracking questions typically involve maze solving or N-Queens problem"
+      "Always check the latest syllabus available from the public website",
+      "Focus on developing transferable skills including computational thinking and problem solving"
     ],
     "formulas": [
       "T(n) = 2T(n/2) + O(n) for divide and conquer",
@@ -112,7 +92,7 @@
       "Examiner Report 2023: 'Weak responses to algorithmic thinking questions lacked clear sequencing' — always present algorithmic thinking as numbered, logical steps that could be followed by someone else"
     ],
     "keyDiagram": "Students must be able to draw a computational thinking cycle diagram showing four interconnected boxes: 'Decomposition' (breaking down problems), 'Pattern Recognition' (identifying similarities), 'Abstraction' (focusing on essential features), and 'Algorithmic Thinking' (creating step-by-step solutions). Arrows should connect these in a cycle, with a central 'Problem' box, demonstrating how these thinking skills work together iteratively to solve complex problems.",
-    "quickRecap": "Computational thinking uses four key skills: decomposition (breaking problems into smaller parts), pattern recognition (spotting similarities and trends), abstraction (focusing on essential details only), and algorithmic thinking (creating step-by-step solutions). These skills work together to solve complex problems systematically. Always provide specific examples when explaining each skill, and remember that algorithmic thinking must show clear, logical sequences that others can follow."
+    "quickRecap": "Computational thinking is a fundamental concept involving abstraction, decomposition and algorithmic thinking to solve problems. It forms a key part of both Paper 2 and Paper 4 assessments. The course develops transferable skills in problem solving and creating computer-based solutions using various technologies and programming languages."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -120,5 +100,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:19:35.477Z",
   "updated_at": "2026-04-06T05:19:35.477Z",
-  "enriched_at": "2026-04-06T16:07:48.744Z"
+  "enriched_at": "2026-04-06T16:07:48.744Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:38:40.478Z"
 }

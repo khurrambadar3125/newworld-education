@@ -9,36 +9,39 @@
     "title": "Work, energy and power",
     "readTime": "8 min",
     "keyPoints": [
-      "**Work done** is the product of force and displacement in the direction of the force: W = Fs cos θ",
-      "**Kinetic energy** is the energy possessed by an object due to its motion: KE = ½mv²",
-      "**Gravitational potential energy** is the energy possessed by an object due to its position in a gravitational field: GPE = mgh",
-      "**Power** is the rate of doing work or the rate of energy transfer: P = W/t = Fv",
-      "The **principle of conservation of energy** states that energy cannot be created or destroyed, only converted from one form to another",
-      "**Efficiency** is the ratio of useful energy output to total energy input, expressed as a percentage",
-      "Work done equals the area under a force-displacement graph",
-      "When work is done against friction, kinetic energy is converted to thermal energy",
-      "**Elastic potential energy** stored in a spring is given by EPE = ½kx²"
+      "One radian is defined as the angle in the sector of a circle when the arc length equals the radius of the circle",
+      "Angular speed (ω) can be calculated using ω = v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is time period, and f is frequency",
+      "An object moving in a circular path at constant speed has constantly changing velocity due to changing direction, therefore it must be accelerating",
+      "Centripetal acceleration always acts perpendicular to motion towards the centre of the circle and can be calculated using a = v²/r = ω²r",
+      "Centripetal force causes circular motion and is given by F = mv²/r = mω²r",
+      "Gravitational fields are areas where objects with mass experience non-contact forces, which can be uniform or radial",
+      "Newton's law of gravitation states F = Gm₁m₂/r², where force is directly proportional to the product of masses and inversely proportional to the square of distance between them",
+      "Gravitational field strength in a radial field follows g = GM/r², showing an inverse square relationship with distance"
     ],
     "definitions": [
       {
-        "term": "Work done",
-        "definition": "The product of force and displacement in the direction of the force"
+        "term": "Radian",
+        "definition": "The angle in the sector of a circle when the arc length of that sector is equal to the radius of the circle"
       },
       {
-        "term": "Power",
-        "definition": "The rate of doing work or the rate of energy transfer"
+        "term": "Angular displacement (θ)",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "Kinetic energy",
-        "definition": "The energy possessed by an object due to its motion"
+        "term": "Angular speed (ω)",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Potential energy",
-        "definition": "The energy possessed by an object due to its position"
+        "term": "Centripetal acceleration",
+        "definition": "The acceleration that causes circular motion with constant angular speed, always acting perpendicular to motion towards the centre"
       },
       {
-        "term": "Efficiency",
-        "definition": "The ratio of useful energy output to total energy input"
+        "term": "Centripetal force",
+        "definition": "The force that always acts perpendicular to the motion of an object towards the centre of the circle"
+      },
+      {
+        "term": "Gravitational field strength (g)",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       }
     ],
     "howToAnswer": [
@@ -71,17 +74,16 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'energy is lost' — always say 'energy is transferred to thermal energy' or 'energy is dissipated'",
-      "Students often forget to use cos θ when force and displacement are not in the same direction",
-      "Confusing power with force — power is energy per second, not force",
-      "Using wrong formula for gravitational potential energy — must use mgh, not mgh/2",
-      "Forgetting to convert units — especially time to seconds and distances to metres"
+      "Forgetting that an object moving at constant speed in a circle is still accelerating due to changing direction",
+      "Confusing linear speed with angular speed - remember v = ωr relates them",
+      "Not recognizing that centripetal force always acts towards the center, perpendicular to motion",
+      "Mixing up the inverse square relationship in gravitational field strength - if distance doubles, field strength decreases by factor of 4",
+      "Forgetting that the mass of a uniform sphere acts as a point mass at its centre for gravitational calculations"
     ],
     "examinerTips": [
-      "This topic appears in every paper — especially energy conservation problems",
-      "Always check if the question asks for power as rate of work or rate of energy transfer",
-      "Show all substitutions clearly in calculations for method marks",
-      "Use Pakistani examples: Tarbela Dam converts GPE to electrical energy via turbines"
+      "Remember to convert between degrees and radians using the factor π/180",
+      "Always check that centripetal acceleration and force are directed towards the centre of the circular path",
+      "For gravitational problems, clearly identify whether you're dealing with uniform or radial fields as the equations differ"
     ],
     "formulas": [
       "W = Fs cos θ",
@@ -116,7 +118,7 @@
       "Examiner Report 2023: 'Candidates often ignored friction and air resistance in energy problems' — always consider all forces acting and energy losses when applying conservation of energy"
     ],
     "keyDiagram": "Energy transfer diagram showing a block on an incline with arrows indicating: gravitational potential energy (mgh) at top, kinetic energy (½mv²) during motion, work done against friction (f × d) as heat, and work done by applied force (F × d). Include labels for height h, distance d, and all energy values with correct units.",
-    "quickRecap": "Work = force × distance moved in direction of force (W = Fd). Energy is conserved but can transfer between kinetic (½mv²), potential (mgh), and other forms. Power = work done/time taken = energy transferred/time. Always include units: joules for work/energy, watts for power."
+    "quickRecap": "Circular motion involves objects moving in circular paths with constantly changing velocity due to changing direction, requiring centripetal acceleration and force directed towards the centre. Angular quantities like angular speed relate to linear quantities through the radius of the path. Gravitational fields cause non-contact forces on masses, with field strength following an inverse square relationship with distance in radial fields."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -124,5 +126,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:40:10.697Z",
   "updated_at": "2026-04-06T04:40:10.697Z",
-  "enriched_at": "2026-04-06T16:12:39.207Z"
+  "enriched_at": "2026-04-06T16:12:39.207Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:31:29.938Z"
 }

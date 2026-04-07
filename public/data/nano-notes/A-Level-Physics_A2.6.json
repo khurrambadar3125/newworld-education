@@ -9,36 +9,35 @@
     "title": "Oscillations",
     "readTime": "8 min",
     "keyPoints": [
-      "**Simple harmonic motion (SHM)** occurs when acceleration is directly proportional to displacement from equilibrium and always directed towards equilibrium position",
-      "For SHM: **a = -ω²x** where acceleration is proportional to displacement with negative sign indicating opposite direction",
-      "**Displacement-time graph** for SHM is sinusoidal: x = A sin(ωt + φ) or x = A cos(ωt + φ)",
-      "**Velocity is maximum** at equilibrium position (x = 0) and **zero at maximum displacement** (x = ±A)",
-      "**Kinetic energy is maximum** at equilibrium and **potential energy is maximum** at amplitude, with total energy remaining constant",
-      "**Free oscillations** occur at natural frequency with constant amplitude in absence of external forces",
-      "**Forced oscillations** occur when external periodic force is applied at driving frequency",
-      "**Resonance** occurs when driving frequency equals natural frequency, causing maximum amplitude oscillation",
-      "**Light damping** reduces amplitude gradually, **critical damping** returns to equilibrium fastest without overshoot, **heavy damping** returns slowly to equilibrium"
+      "One radian is defined as the angle in the sector of a circle when the arc length of that sector is equal to the radius of the circle",
+      "Angular displacement (θ) is the angle turned through by an object in any given direction in radians",
+      "Angular speed (ω) can be found using ω = v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is time period, and f is frequency",
+      "An object moving in a circular path at constant speed has constantly changing velocity due to changing direction, therefore it must be accelerating",
+      "Centripetal acceleration always acts perpendicular to the motion of the object towards the centre of the circle",
+      "Centripetal acceleration can be calculated using a = v²/r = ω²r",
+      "Centripetal force is derived from Newton's second law: F = mv²/r = mω²r",
+      "Linear speed v can be calculated as the product of angular speed and radius: v = ωr"
     ],
     "definitions": [
       {
-        "term": "Simple Harmonic Motion",
-        "definition": "Oscillatory motion where acceleration is directly proportional to displacement from equilibrium position and always directed towards equilibrium"
+        "term": "Radian",
+        "definition": "The angle in the sector of a circle when the arc length of that sector is equal to the radius of the circle"
       },
       {
-        "term": "Amplitude",
-        "definition": "Maximum displacement from equilibrium position"
+        "term": "Angular displacement",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "Period",
-        "definition": "Time taken for one complete oscillation"
+        "term": "Angular speed",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Resonance",
-        "definition": "Phenomenon where amplitude of oscillation becomes maximum when driving frequency equals natural frequency"
+        "term": "Centripetal acceleration",
+        "definition": "The acceleration of an object moving in a circular path, always acting perpendicular to motion towards the centre of the circle"
       },
       {
-        "term": "Damping",
-        "definition": "Process where energy is removed from oscillating system, causing amplitude to decrease with time"
+        "term": "Centripetal force",
+        "definition": "The force that always acts perpendicular to the motion of an object moving in a circle, directed towards the centre of the circle"
       }
     ],
     "howToAnswer": [
@@ -70,17 +69,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'force is proportional to displacement' — always say 'acceleration is proportional to displacement'",
-      "Students confuse period with frequency — period is time for one oscillation, frequency is oscillations per second",
-      "Don't say 'resonance increases frequency' — resonance increases amplitude when frequencies match",
-      "Never confuse velocity and acceleration graphs — velocity leads displacement by π/2, acceleration leads by π",
-      "Students forget negative sign in a = -ω²x which shows direction towards equilibrium"
+      "Forgetting that velocity changes in circular motion even at constant speed due to changing direction",
+      "Confusing radians and degrees - remember to multiply by π/180 to convert degrees to radians",
+      "Thinking centripetal force acts outward instead of toward the center of the circle",
+      "Not recognizing that centripetal acceleration occurs even when speed is constant"
     ],
     "examinerTips": [
-      "SHM appears in every Paper 2 — learn the defining equation a = -ω²x",
-      "Always sketch displacement, velocity and acceleration on same time axis to show phase relationships",
-      "For energy questions, state that total energy = KE + PE = constant",
-      "Resonance questions often link to practical examples like Tacoma Bridge collapse"
+      "Remember that a full circle equals 2π radians, which helps with conversions and calculations",
+      "Always check that centripetal force and acceleration are directed toward the center of the circular path"
     ],
     "formulas": [
       "a = -ω²x",
@@ -117,7 +113,7 @@
       "Examiner Report 2021: 'Candidates lost marks for not stating energy transformations clearly' — always mention that in SHM, kinetic energy is maximum at equilibrium and potential energy is maximum at maximum displacement"
     ],
     "keyDiagram": "Essential diagram: Draw a mass-spring system showing the mass at three positions - maximum displacement left (showing maximum PE, zero KE), equilibrium position (showing zero PE, maximum KE), and maximum displacement right (showing maximum PE, zero KE). Include arrows showing direction of motion and restoring force. Label amplitude (A), equilibrium position, and indicate that restoring force always acts toward equilibrium. This diagram must show energy distribution and force directions clearly.",
-    "quickRecap": "Simple harmonic motion occurs when restoring force is proportional to displacement from equilibrium. Key formulas: f = 1/T and T = 2π√(m/k) for springs, T = 2π√(l/g) for pendulums. Energy constantly transforms between kinetic (maximum at equilibrium) and potential (maximum at amplitude). Period is independent of amplitude for small oscillations."
+    "quickRecap": "Circular motion involves angular displacement measured in radians and angular speed ω = v/r = 2π/T. Objects in circular motion experience centripetal acceleration a = v²/r = ω²r directed toward the center. This requires centripetal force F = mv²/r = mω²r according to Newton's second law. Even at constant speed, circular motion involves changing velocity due to changing direction."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -125,5 +121,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:44:36.284Z",
   "updated_at": "2026-04-06T04:44:36.284Z",
-  "enriched_at": "2026-04-06T16:09:19.805Z"
+  "enriched_at": "2026-04-06T16:09:19.805Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:28:51.112Z"
 }

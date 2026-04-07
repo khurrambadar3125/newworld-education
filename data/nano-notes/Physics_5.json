@@ -9,35 +9,40 @@
     "title": "Forces and matter",
     "readTime": "8 min",
     "keyPoints": [
-      "The **extension** of a spring is directly proportional to the applied force (provided the elastic limit is not exceeded)",
-      "**Hooke's law** states that force is proportional to extension: F = kx",
-      "The **spring constant** (k) is the force per unit extension and has units N/m",
-      "Beyond the **elastic limit**, the spring will not return to its original length when the force is removed",
-      "**Pressure** is force per unit area and is measured in pascals (Pa) or N/m²",
-      "Pressure in liquids increases with **depth** because of the weight of liquid above",
-      "The **limit of proportionality** is the point beyond which Hooke's law no longer applies",
-      "A stiffer spring has a **larger spring constant** and extends less for the same applied force"
+      "Magnets have north and south poles - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are always attracted to magnets regardless of pole",
+      "Non-magnetic materials (glass, plastic) experience no force from magnets",
+      "Temporary magnets lose magnetism when magnetic field is removed, permanent magnets retain their own field",
+      "Magnetic field lines show direction (north to south) and strength (closer lines = stronger field)",
+      "Electromagnets are temporary magnets made by placing soft iron in coiled wire with direct current",
+      "Electric charge is measured in coulombs and can be positive or negative",
+      "Conductors allow charge flow due to free moving charged particles, insulators impede charge flow",
+      "Electrostatic charging occurs by friction - electrons transfer between materials making them oppositely charged"
     ],
     "definitions": [
       {
-        "term": "Extension",
-        "definition": "The increase in length of a spring or wire when a force is applied"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Spring constant",
-        "definition": "The force per unit extension of a spring, measured in N/m"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Pressure",
-        "definition": "The force acting per unit area, measured in pascals (Pa)"
+        "term": "Electric charge",
+        "definition": "Measured in coulombs and can be positive or negative"
       },
       {
-        "term": "Elastic limit",
-        "definition": "The maximum force that can be applied to a spring before it becomes permanently deformed"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
       },
       {
-        "term": "Hooke's law",
-        "definition": "The extension of a spring is directly proportional to the applied force, provided the elastic limit is not exceeded"
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
+      },
+      {
+        "term": "Electrostatic charge",
+        "definition": "Electric charge at rest on the surface of charged insulators"
       }
     ],
     "howToAnswer": [
@@ -69,17 +74,14 @@
       ]
     },
     "commonMistakes": [
-      "Never forget to convert cm to metres when calculating - always use SI base units",
-      "Students often confuse elastic limit with limit of proportionality - elastic limit is about permanent deformation",
-      "Don't say 'pressure increases because of more water' - say 'pressure increases with depth due to the weight of liquid above'",
-      "Never use F = kx beyond the elastic limit - Hooke's law only applies within the elastic region",
-      "Students forget that spring constant has units N/m, not just a number"
+      "Thinking magnetic materials can be repelled by magnets - they are always attracted",
+      "Confusing temporary and permanent magnets - temporary magnets lose magnetism when field is removed",
+      "Drawing magnetic field lines incorrectly - they must point from north to south pole",
+      "Forgetting that only electrons transfer during electrostatic charging by friction"
     ],
     "examinerTips": [
-      "Force-extension graphs appear frequently - know the shape and key points",
-      "Always show clear working for pressure and spring calculations",
-      "Draw neat, labelled diagrams for spring experiments",
-      "Remember to state 'provided elastic limit not exceeded' when mentioning Hooke's law"
+      "Remember magnetic field strength is shown by spacing of field lines - closer together means stronger field",
+      "When plotting magnetic fields, use plotting compass method or iron filings to visualize field lines accurately"
     ],
     "formulas": [
       "F = kx",
@@ -111,7 +113,7 @@
       "Examiner Report 2022: 'Candidates often drew force-extension graphs with curves from the origin' — remember that Hooke's Law produces a straight line through the origin up to the limit of proportionality"
     ],
     "keyDiagram": "Force-extension graph with x-axis labeled 'Extension (m)' and y-axis labeled 'Force (N)'. Draw a straight line from origin showing elastic deformation region, mark point P where line curves (limit of proportionality), continue with curved line showing plastic deformation, and mark point Q where material breaks. Include labels for 'elastic deformation', 'plastic deformation', 'limit of proportionality', and 'breaking point'.",
-    "quickRecap": "Hooke's Law (F = kx) applies only up to the limit of proportionality where the force-extension graph is linear. Beyond this point, materials undergo plastic deformation and won't return to original length. Elastic potential energy is stored as E = ½kx². Spring constant k represents stiffness - higher k means stiffer spring requiring more force for same extension."
+    "quickRecap": "Magnets have north and south poles with magnetic fields that attract magnetic materials and repel/attract other magnets depending on pole orientation. Electric charge flows through conductors but not insulators, and can be transferred by friction to create electrostatic charges. Magnetic field lines show direction and strength of magnetic fields around magnets."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -119,5 +121,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:15:28.473Z",
   "updated_at": "2026-04-05T21:15:28.473Z",
-  "enriched_at": "2026-04-06T16:03:51.390Z"
+  "enriched_at": "2026-04-06T16:03:51.390Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:22:10.214Z"
 }

@@ -9,31 +9,45 @@
     "title": "Physical quantities and units",
     "readTime": "8 min",
     "keyPoints": [
-      "A **physical quantity** consists of a numerical value and a unit",
-      "**Base quantities** are fundamental physical quantities that cannot be expressed in terms of other quantities (mass, length, time, electric current, temperature, amount of substance, luminous intensity)",
-      "**Derived quantities** are expressed in terms of base quantities using mathematical relationships",
-      "The **SI system** uses seven base units: kg, m, s, A, K, mol, cd",
-      "**Homogeneity** means all terms in an equation must have the same base units when simplified",
-      "**Prefixes** multiply units by powers of 10 (e.g. μ = 10⁻⁶, m = 10⁻³, k = 10³, M = 10⁶, G = 10⁹)",
-      "**Estimation** involves using reasonable assumptions to calculate approximate values of physical quantities",
-      "**Unit analysis** can check if equations are dimensionally correct by ensuring both sides have identical base units"
+      "One radian is defined as the angle in the sector of a circle when the arc length equals the radius of the circle",
+      "A complete circle has an angle of 2π radians, allowing conversion between degrees and radians using π/180",
+      "Angular speed (ω) can be calculated as v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is time period and f is frequency",
+      "Objects moving in circular paths at constant speed have constantly changing velocity due to direction changes, requiring centripetal acceleration",
+      "Centripetal force always acts perpendicular to motion towards the center of the circle",
+      "Centripetal acceleration is calculated as a = v²/r = ω²r",
+      "Centripetal force is calculated as F = mv²/r = mω²r using Newton's second law",
+      "Gravitational fields are areas where objects with mass experience non-contact forces",
+      "Newton's law of gravitation states gravitational force is directly proportional to the product of masses and inversely proportional to the square of distance between them: F = Gm₁m₂/r²",
+      "Gravitational field strength in radial fields follows g = GM/r², showing an inverse square relationship"
     ],
     "definitions": [
       {
-        "term": "Physical quantity",
-        "definition": "A property that can be measured and consists of a numerical value and a unit"
+        "term": "Radian",
+        "definition": "The angle in the sector of a circle when the arc length of that sector is equal to the radius of the circle"
       },
       {
-        "term": "Base quantity",
-        "definition": "A fundamental physical quantity that cannot be expressed in terms of other physical quantities"
+        "term": "Angular displacement",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "Derived quantity",
-        "definition": "A physical quantity that is expressed in terms of base quantities using mathematical relationships"
+        "term": "Angular speed",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Homogeneity",
-        "definition": "A principle stating that all terms in a physical equation must have the same base units"
+        "term": "Centripetal acceleration",
+        "definition": "The acceleration experienced by an object moving in a circular path at constant speed due to constantly changing velocity direction"
+      },
+      {
+        "term": "Centripetal force",
+        "definition": "The force that acts perpendicular to the motion of an object towards the center of the circle"
+      },
+      {
+        "term": "Gravitational field strength",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
+      },
+      {
+        "term": "Force field",
+        "definition": "An area in which an object experiences a non-contact force"
       }
     ],
     "howToAnswer": [
@@ -65,17 +79,15 @@
       ]
     },
     "commonMistakes": [
-      "Never write units without values - always write '5.2 m' not just 'm'",
-      "Students often confuse base quantities with base units - mass is the quantity, kg is the unit",
-      "Writing 'dimensionless' when they mean 'no units' - be precise with terminology",
-      "Forgetting to simplify derived units to base units in homogeneity questions",
-      "Using wrong prefixes - remember μ (micro) = 10⁻⁶, not 10⁻³"
+      "Thinking objects in uniform circular motion are not accelerating because speed is constant - they are accelerating due to changing direction",
+      "Confusing the direction of centripetal force - it always acts towards the center of the circle, not outwards",
+      "Forgetting that gravitational field strength follows an inverse square relationship - doubling distance quarters the field strength",
+      "Not recognizing that mass of uniform spheres acts as point mass at center when calculating gravitational forces for objects outside the sphere",
+      "Mixing up angular speed formulas and not understanding the relationship between linear speed, angular speed and radius"
     ],
     "examinerTips": [
-      "Homogeneity questions appear frequently in Paper 2 - practice converting all quantities to base units",
-      "Always show your working in estimation questions even if the numbers seem obvious",
-      "Learn the seven base quantities and their SI units by heart",
-      "In unit conversion questions, set up the calculation clearly showing the conversion factors"
+      "Remember that centripetal force is the resultant force causing circular motion, not an additional force - identify what provides this force in each situation",
+      "When using gravitational formulas, ensure distances are measured between centers of masses, especially for spherical objects"
     ],
     "formulas": [],
     "keyDiagramDescription": "Table showing the seven base quantities (mass, length, time, electric current, thermodynamic temperature, amount of substance, luminous intensity) with their corresponding SI base units (kg, m, s, A, K, mol, cd) and common derived quantities",
@@ -102,7 +114,7 @@
       "Examiner Report 2022: 'Poor understanding of vector versus scalar quantities' — remember that vectors have both magnitude AND direction, scalars have magnitude only"
     ],
     "keyDiagram": "Students must be able to draw a clear table showing the seven base SI quantities (length-metre, mass-kilogram, time-second, electric current-ampere, temperature-kelvin, amount of substance-mole, luminous intensity-candela) with their symbols and units. Include a second table showing common derived quantities like velocity (m/s), acceleration (m/s²), and force (N = kg⋅m/s²).",
-    "quickRecap": "Physical quantities are properties that can be measured and have numerical values with units. Base quantities (like mass, length, time) combine to form derived quantities (like speed, force). Scalar quantities have magnitude only, vectors have magnitude and direction. Always include correct units in answers and convert between units systematically using multiplication/division by conversion factors."
+    "quickRecap": "Circular motion requires centripetal force acting towards the center, calculated using F = mv²/r or F = mω²r. Angular measurements use radians where one radian equals arc length divided by radius. Gravitational fields exert forces on masses following Newton's law of gravitation F = Gm₁m₂/r². Field strength decreases with the inverse square of distance from the source mass."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -110,5 +122,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:38:47.231Z",
   "updated_at": "2026-04-06T04:38:47.232Z",
-  "enriched_at": "2026-04-06T16:10:35.132Z"
+  "enriched_at": "2026-04-06T16:10:35.132Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:29:49.380Z"
 }

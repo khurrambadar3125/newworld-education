@@ -9,36 +9,36 @@
     "title": "Inheritance",
     "readTime": "8 min",
     "keyPoints": [
-      "**Inheritance** is the passing on of features from parents to offspring through genes",
-      "**Genes** are sections of DNA that control the development of characteristics",
-      "**DNA** is found in the nucleus of cells and carries genetic information",
-      "**Chromosomes** are structures made of DNA and proteins that carry genes",
-      "**Mitosis** produces two diploid cells that are genetically identical to the parent cell",
-      "**Meiosis** produces four haploid gametes that are genetically different from each other",
-      "**Mutations** are random changes in genes or chromosomes that may be inherited",
-      "Humans have 23 pairs of chromosomes (46 total) in diploid cells and 23 chromosomes in haploid gametes",
-      "Sex is determined by X and Y chromosomes - females are XX, males are XY"
+      "All living organisms undergo seven key processes: movement, respiration, sensitivity, growth, reproduction, excretion, and nutrition",
+      "Classification groups different species based on features they share - organisms belong to the same species if they can reproduce to produce fertile offspring",
+      "The binomial naming system uses two parts showing genus and species (e.g. Homo sapiens for humans)",
+      "Organisms are classified by evolutionary relationships found through studying physical characteristics and DNA base sequences",
+      "DNA sequencing is more accurate than comparing physical characteristics as different species in the same habitat often evolve similar traits",
+      "The five kingdoms are Animal, Plant, Fungus, Prokaryote and Protoctist, categorized using cell features",
+      "Vertebrates contain a backbone while arthropods have an exoskeleton and segmented body",
+      "Flowering plants are divided into dicotyledons and monocotyledons, while non-flowering plants reproduce through spores",
+      "Viruses are not classified as living as they cannot complete the seven life processes and are non-cellular"
     ],
     "definitions": [
       {
-        "term": "Gene",
-        "definition": "A section of DNA that controls the development of a characteristic"
+        "term": "Species",
+        "definition": "A group of organisms that can reproduce to produce fertile offspring"
       },
       {
-        "term": "Chromosome",
-        "definition": "A structure made of DNA and proteins that carries genes"
+        "term": "Binomial naming system",
+        "definition": "An internationally agreed system where the scientific name has two parts showing genus and species"
       },
       {
-        "term": "Mitosis",
-        "definition": "Nuclear division that produces two genetically identical diploid cells"
+        "term": "Pathogen",
+        "definition": "An organism that causes disease"
       },
       {
-        "term": "Meiosis",
-        "definition": "Nuclear division that produces four genetically different haploid gametes"
+        "term": "Vertebrates",
+        "definition": "Animals which contain a backbone"
       },
       {
-        "term": "Mutation",
-        "definition": "A random change in genes or chromosomes that may be inherited"
+        "term": "Arthropods",
+        "definition": "Animals without a backbone, identified by their exoskeleton and segmented body"
       }
     ],
     "howToAnswer": [
@@ -70,17 +70,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'genes are inherited' - always say 'characteristics are inherited through genes'",
-      "Students confuse mitosis and meiosis - mitosis is for growth, meiosis is for gamete formation",
-      "Don't say 'DNA controls characteristics' - say 'genes control characteristics'",
-      "Never say mutations are always harmful - they can be beneficial, harmful or neutral",
-      "Students forget that humans are diploid (2n=46) but gametes are haploid (n=23)"
+      "Confusing growth with just getting bigger - growth is a permanent increase in size measured through dry mass, cell size or number of cells",
+      "Thinking viruses are living organisms - they are non-cellular and cannot complete the seven life processes",
+      "Believing physical characteristics alone determine evolutionary relationships - DNA sequencing is more accurate",
+      "Assuming all animals without backbones are the same - arthropods are specifically identified by exoskeleton and segmented body"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2, especially mitosis vs meiosis comparison",
-      "Always state the number of cells produced AND their genetic makeup for mitosis/meiosis questions",
-      "Use the terms diploid and haploid correctly - diploid = 2 sets, haploid = 1 set",
-      "Remember to mention crossing over when explaining genetic variation in meiosis"
+      "Remember the seven characteristics of living organisms using a mnemonic like MRS GREN (Movement, Respiration, Sensitivity, Growth, Reproduction, Excretion, Nutrition)",
+      "When writing binomial names, remember the first part is genus and second is species, and use the correct format like Homo sapiens"
     ],
     "formulas": [],
     "keyDiagramDescription": "Diagram showing mitosis producing 2 identical diploid cells vs meiosis producing 4 different haploid gametes, with chromosome numbers labeled",
@@ -107,7 +104,7 @@
       "Examiner Report 2021: 'Candidates often failed to distinguish between genotype and phenotype in their answers' — use proper genetic notation (e.g. XᵃXᵃ) for genotypes and descriptive terms (e.g. affected female) for phenotypes"
     ],
     "keyDiagram": "Students must master drawing genetic diagrams (Punnett squares) showing: parental genotypes with clear notation (e.g. XᴬXᵃ × XᵃY), gametes row showing all possible combinations, 2×2 or larger grid with offspring genotypes, and phenotypic ratio clearly stated. For sex-linkage, always show X and Y chromosomes with superscript alleles.",
-    "quickRecap": "Inheritance patterns: dominant (affected parents have affected children), recessive (unaffected parents can have affected children), sex-linked (affects males more than females). Always construct genetic diagrams with parental genotypes, gametes, Punnett square, and phenotypic ratios. Use pedigree evidence to support conclusions about inheritance patterns."
+    "quickRecap": "Living organisms are characterized by seven key processes and classified using the binomial naming system based on evolutionary relationships. DNA sequencing provides more accurate classification than physical characteristics alone. The five kingdoms (Animal, Plant, Fungus, Prokaryote, Protoctist) are distinguished by cellular features, with further subdivisions like vertebrates/arthropods in animals and flowering/non-flowering in plants."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -115,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:30:07.521Z",
   "updated_at": "2026-04-05T21:30:07.521Z",
-  "enriched_at": "2026-04-06T16:07:24.479Z"
+  "enriched_at": "2026-04-06T16:07:24.479Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:24:15.689Z"
 }

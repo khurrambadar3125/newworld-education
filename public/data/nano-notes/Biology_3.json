@@ -9,36 +9,17 @@
     "title": "Enzymes",
     "readTime": "8 min",
     "keyPoints": [
-      "**Enzymes** are biological catalysts that speed up chemical reactions without being used up",
-      "Enzymes are **proteins** with a specific three-dimensional shape determined by their amino acid sequence",
-      "The **active site** has a complementary shape to the substrate and forms an enzyme-substrate complex",
-      "Enzymes work by **lowering activation energy** required for a reaction to occur",
-      "**Temperature** affects enzyme activity - increasing temperature increases kinetic energy and collision frequency until optimum temperature",
-      "Above optimum temperature, enzymes become **denatured** - the active site changes shape permanently and cannot bind to substrate",
-      "**pH** affects enzyme activity - each enzyme has an optimum pH, extreme pH denatures enzymes",
-      "**Substrate concentration** affects rate of reaction until all active sites are occupied (saturation point)",
-      "Enzymes show **specificity** - each enzyme catalyses only one type of reaction due to the specific shape of its active site"
+      "Enzymes catalyse reactions such as respiration in the cell",
+      "Enzymes are found in the cytoplasm where reactions occur",
+      "Enzymes are one of the key features used to classify organisms into kingdoms",
+      "All living organisms contain enzymes as part of their cellular processes",
+      "Enzymes are essential for the chemical reactions that occur in metabolism",
+      "The presence of enzymes is a characteristic that distinguishes living organisms from non-living matter"
     ],
     "definitions": [
       {
-        "term": "Enzyme",
-        "definition": "A biological catalyst that speeds up chemical reactions without being used up, made of protein"
-      },
-      {
-        "term": "Active site",
-        "definition": "The part of an enzyme molecule with a complementary shape to the substrate where the substrate binds"
-      },
-      {
-        "term": "Substrate",
-        "definition": "The substance that an enzyme acts upon during a chemical reaction"
-      },
-      {
-        "term": "Denatured",
-        "definition": "When an enzyme's active site permanently changes shape due to high temperature or extreme pH, making it non-functional"
-      },
-      {
-        "term": "Catalyst",
-        "definition": "A substance that speeds up a chemical reaction without being used up or changed in the reaction"
+        "term": "Enzymes",
+        "definition": "Catalyse reactions such as respiration in the cell"
       }
     ],
     "howToAnswer": [
@@ -70,17 +51,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'enzymes die' — always say 'enzymes become denatured'",
-      "Students often confuse optimum temperature with body temperature - optimum varies for different enzymes",
-      "Never say 'enzymes are used up' — enzymes are reusable and remain unchanged after reaction",
-      "Students forget that denaturation is permanent - don't say enzymes can be 'fixed' after denaturation",
-      "Don't say 'active site breaks' — say 'active site changes shape'"
+      "Confusing enzymes with other cellular organelles like ribosomes",
+      "Not recognizing that enzymes are present in all living organisms",
+      "Forgetting that enzymes function within the cytoplasm where reactions occur"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2, especially enzyme-temperature graphs",
-      "Always use the term 'complementary shape' when describing enzyme-substrate binding",
-      "Questions on digestive enzymes (amylase, pepsin, lipase) are very common",
-      "Draw enzyme-substrate complex diagrams clearly showing shape change"
+      "Remember that enzymes are specifically mentioned as catalysts for cellular reactions like respiration",
+      "Link enzymes to the broader classification system as they are key cellular features"
     ],
     "formulas": [],
     "keyDiagramDescription": "Lock and key model showing enzyme with complementary-shaped active site, substrate binding to form enzyme-substrate complex, then products released with enzyme unchanged",
@@ -108,7 +85,7 @@
       "Examiner Report 2022: 'Candidates lost marks for vague statements like enzymes speed up reactions' — always specify that enzymes are biological catalysts that remain unchanged"
     ],
     "keyDiagram": "Students must be able to draw the enzyme-substrate complex diagram showing: (1) Enzyme with clearly labeled active site having specific shape, (2) Substrate molecule with complementary shape approaching active site, (3) Enzyme-substrate complex formation, (4) Products being released while enzyme remains unchanged. Include labels for enzyme, substrate, active site, enzyme-substrate complex, and products. Show that enzyme shape is unchanged after reaction.",
-    "quickRecap": "Enzymes are biological catalysts that speed up reactions by lowering activation energy. They have specific active sites with shapes complementary to their substrates (lock-and-key hypothesis). Each enzyme is specific for one type of reaction due to the unique shape of its active site. Enzymes remain unchanged after the reaction and can be reused multiple times."
+    "quickRecap": "Enzymes are biological catalysts that catalyse reactions such as respiration within cells. They are found in the cytoplasm where cellular reactions occur. Enzymes are a key feature used in classification systems and are present in all living organisms as part of their essential metabolic processes."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -116,5 +93,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:26:45.041Z",
   "updated_at": "2026-04-05T21:26:45.041Z",
-  "enriched_at": "2026-04-06T16:08:29.697Z"
+  "enriched_at": "2026-04-06T16:08:29.697Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:24:57.736Z"
 }

@@ -9,37 +9,21 @@
     "title": "Data types and structures",
     "readTime": "8 min",
     "keyPoints": [
-      "**Data type** is a classification that specifies the type of value a variable can hold and the operations that can be performed on it",
-      "**Array** is a data structure that stores multiple values of the same data type in contiguous memory locations using a single identifier",
-      "**Record** is a composite data type that groups together related data items of different data types under a single identifier",
-      "**Linked list** uses nodes containing data and pointers, where each node contains data and a pointer to the next node in the sequence",
-      "**Stack** follows Last In First Out (LIFO) principle with operations push (add to top) and pop (remove from top)",
-      "**Queue** follows First In First Out (FIFO) principle with operations enqueue (add to rear) and dequeue (remove from front)",
-      "Arrays provide **direct access** to elements using index positions, making data retrieval faster",
-      "Linked lists provide **dynamic memory allocation** allowing the size to change during program execution",
-      "**Static data structures** have fixed size determined at compile time, while **dynamic data structures** can change size during runtime",
-      "Each data structure has specific **time complexity** characteristics for insertion, deletion and searching operations"
+      "Data Types and Structures is a fundamental topic covered in Paper 2 - Fundamental Problem-solving and Programming Skills",
+      "This topic is part of the 'Solving problems using computers' content section",
+      "Data Types and Structures appears alongside Algorithm Design and Problem-Solving, Programming, and Software Development in Paper 2",
+      "The course develops computational thinking skills including abstraction, decomposition and algorithmic thinking",
+      "Understanding programming paradigms is essential for designing and building programs appropriately",
+      "The course encourages learners to be confident using a range of technology and programming paradigms"
     ],
     "definitions": [
       {
-        "term": "Array",
-        "definition": "A data structure that stores multiple elements of the same data type in contiguous memory locations, accessed using index positions"
+        "term": "Computational thinking",
+        "definition": "A set of fundamental skills that help produce a solution to a problem, including abstraction, decomposition and algorithmic thinking"
       },
       {
-        "term": "Record",
-        "definition": "A composite data type that groups together related data items of different data types, accessed using field names"
-      },
-      {
-        "term": "Linked List",
-        "definition": "A linear data structure where elements are stored in nodes, each containing data and a pointer to the next node"
-      },
-      {
-        "term": "Stack",
-        "definition": "A linear data structure that follows Last In First Out (LIFO) principle where elements are added and removed from the same end"
-      },
-      {
-        "term": "Queue",
-        "definition": "A linear data structure that follows First In First Out (FIFO) principle where elements are added at the rear and removed from the front"
+        "term": "Programming paradigms",
+        "definition": "A way of thinking about or approaching problems, with different programming styles suited to unique functions, tools and specific situations"
       }
     ],
     "howToAnswer": [
@@ -74,17 +58,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'queue adds at the back' — always say 'enqueue adds to the rear'",
-      "Students often confuse stack push/pop with queue enqueue/dequeue operations",
-      "Never say 'linked list is faster' — specify what operation (insertion/deletion/searching)",
-      "Students forget to mention pointers when describing linked lists",
-      "Never say 'array size cannot change' — say 'static arrays have fixed size determined at declaration'"
+      "Not understanding that Data Types and Structures is assessed in Paper 2 rather than other components",
+      "Failing to connect data types and structures with computational thinking concepts",
+      "Not recognizing the relationship between programming paradigms and appropriate data structure selection"
     ],
     "examinerTips": [
-      "Data structures appear in Paper 2 every year, worth 8-12 marks typically",
-      "Always draw labelled diagrams for linked lists showing nodes and pointers",
-      "Learn the exact operations for each structure - push/pop for stack, enqueue/dequeue for queue",
-      "Compare time complexities when asked about efficiency of data structures"
+      "Remember that Data Types and Structures is part of fundamental problem-solving skills in Paper 2",
+      "Connect your understanding of data types to computational thinking principles like abstraction and decomposition"
     ],
     "formulas": [],
     "keyDiagramDescription": "Stack diagram showing LIFO with push/pop operations at top. Queue diagram showing FIFO with enqueue at rear, dequeue at front. Linked list showing nodes with data fields and pointer fields connecting to next nodes.",
@@ -112,7 +92,7 @@
       "Examiner Report 2023: 'Candidates failed to show understanding of 2D arrays vs arrays of records' — clearly distinguish between ARRAY[1:10,1:5] and ARRAY[1:10] OF RECORD when designing data structures"
     ],
     "keyDiagram": "Students must be able to draw a memory representation diagram showing: 1) Array with indexed elements (showing index numbers 0-4 and corresponding values), 2) Record structure with labeled fields and their data types, 3) 2D array as rows and columns with coordinate references [row,column]. Include arrows showing pointer relationships and memory addresses where relevant.",
-    "quickRecap": "Data types define what values can be stored (INTEGER, REAL, STRING, BOOLEAN, DATE) and operations allowed. Arrays store multiple values of same type with index access. Records group related data of different types using field names. Choose data types based on required operations, storage efficiency, and validation needs."
+    "quickRecap": "Data Types and Structures is a key topic in Paper 2 covering fundamental problem-solving and programming skills. It forms part of the broader computational thinking approach that includes abstraction, decomposition and algorithmic thinking. Understanding different programming paradigms is essential for selecting appropriate data structures when designing solutions."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -120,5 +100,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:17:02.229Z",
   "updated_at": "2026-04-06T05:17:02.229Z",
-  "enriched_at": "2026-04-06T16:11:49.115Z"
+  "enriched_at": "2026-04-06T16:11:49.115Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:56:15.931Z"
 }

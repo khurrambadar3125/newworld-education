@@ -9,32 +9,17 @@
     "title": "Security",
     "readTime": "8 min",
     "keyPoints": [
-      "**SSL/TLS** uses symmetric and asymmetric encryption to establish secure communication channels between client and server",
-      "**Digital certificates** contain public keys and are issued by trusted Certificate Authorities (CA) to verify identity",
-      "**Public Key Infrastructure (PKI)** uses digital certificates to manage encryption keys and authenticate users",
-      "**Quantum encryption** uses quantum key distribution (QKD) where any interception attempt disturbs the quantum state",
-      "**SSL handshake** involves certificate verification, key exchange, and cipher suite negotiation",
-      "**Certificate revocation lists (CRL)** maintain records of invalid or compromised certificates",
-      "**Quantum cryptography** provides theoretical unbreakable security through Heisenberg's uncertainty principle",
-      "**Root certificates** are self-signed certificates used by Certificate Authorities to sign other certificates",
-      "**Perfect forward secrecy** ensures session keys cannot be compromised even if private keys are stolen"
+      "Security is covered in Paper 1 Theory Fundamentals as part of 'Security, privacy and data integrity' topic",
+      "Security is also addressed in Paper 3 Advanced Theory under 'Networks, Communication and Security'",
+      "Communication is a key concept involving transfer of data from one device or component to another",
+      "Communication includes understanding rules and methods used in data transfer",
+      "Data transfer can range from internal computer system transfer to internet video transfer",
+      "The course develops understanding of communication methods as a transferable skill"
     ],
     "definitions": [
       {
-        "term": "SSL/TLS",
-        "definition": "Cryptographic protocols that provide secure communication over networks by encrypting data transmission between client and server"
-      },
-      {
-        "term": "Digital Certificate",
-        "definition": "Electronic document containing public key and identity information, digitally signed by a trusted Certificate Authority"
-      },
-      {
-        "term": "Quantum Encryption",
-        "definition": "Encryption method using quantum mechanical properties where any eavesdropping attempt disturbs the quantum state and can be detected"
-      },
-      {
-        "term": "Certificate Authority",
-        "definition": "Trusted third-party organization that issues, manages and validates digital certificates for public key infrastructure"
+        "term": "Communication",
+        "definition": "A core requirement of computer systems that includes the ability to transfer data from one device or component to another and an understanding of the rules and methods used in this data transfer"
       }
     ],
     "howToAnswer": [
@@ -65,17 +50,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say SSL 'prevents hacking' — always specify it 'encrypts data transmission'",
-      "Students often confuse symmetric and asymmetric encryption roles in SSL handshake",
-      "Don't say certificates 'contain passwords' — they contain public keys and identity information",
-      "Never claim quantum encryption is 'currently widely used' — it's mostly theoretical/experimental",
-      "Students forget that Certificate Authorities must be trusted third parties, not the communicating parties themselves"
+      "Not understanding that security appears in both Paper 1 and Paper 3 components",
+      "Confusing security with privacy and data integrity as separate concepts",
+      "Not recognizing communication as fundamental to security implementations"
     ],
     "examinerTips": [
-      "SSL/TLS questions appear frequently in Paper 2 - know the handshake process",
-      "Always mention both authentication AND encryption when describing digital certificates",
-      "Quantum encryption questions often test understanding of detection capabilities",
-      "Draw diagrams showing client-server communication for SSL questions"
+      "Security topics are assessed in both Theory Fundamentals (Paper 1) and Advanced Theory (Paper 3)",
+      "Focus on understanding communication methods as they relate to security implementations"
     ],
     "formulas": [],
     "keyDiagramDescription": "SSL handshake diagram showing: 1) Client hello, 2) Server certificate + public key, 3) Client verifies with CA, 4) Client sends encrypted session key, 5) Secure symmetric communication established",
@@ -103,7 +84,7 @@
       "Examiner Report 2023: 'Candidates failed to link protection methods to specific threats' — never just list security measures, always explain which particular threat each method prevents"
     ],
     "keyDiagram": "Security Layers Diagram: Draw concentric circles showing Physical Security (outermost - locks, cameras), Network Security (middle - firewalls, proxy servers), Access Control (inner - passwords, biometrics), and Data Security (center - encryption, backups). Include arrows showing threats from outside (hackers, malware, physical theft) and label each security layer with 2-3 specific examples. This demonstrates defense in depth concept.",
-    "quickRecap": "Security protects data from threats like malware, hacking, and theft using multiple layers of defense. Key methods include passwords/biometrics for access control, firewalls for network protection, encryption for data safety, and backups for recovery. Physical security like locks and cameras protect hardware. Always match specific protection methods to particular threats in exam answers."
+    "quickRecap": "Security is covered across multiple papers in the Cambridge A Level Computer Science syllabus. It appears in Paper 1 as part of security, privacy and data integrity, and in Paper 3 under networks, communication and security. Communication is identified as a key concept involving data transfer between devices and understanding the rules governing such transfers."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -111,5 +92,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:18:51.720Z",
   "updated_at": "2026-04-06T05:18:51.720Z",
-  "enriched_at": "2026-04-06T16:07:01.073Z"
+  "enriched_at": "2026-04-06T16:07:01.073Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:38:20.237Z"
 }

@@ -9,37 +9,36 @@
     "title": "Properties of waves",
     "readTime": "8 min",
     "keyPoints": [
-      "A **wave** is a disturbance that transfers energy from one place to another without transferring matter",
-      "**Amplitude** is the maximum displacement of a particle from its rest position",
-      "**Wavelength** is the distance between two successive points that are in phase (e.g., crest to crest)",
-      "**Frequency** is the number of complete waves passing a point in one second",
-      "**Period** is the time taken for one complete wave to pass a point",
-      "Wave speed = frequency × wavelength (v = fλ)",
-      "**Reflection** occurs when waves bounce off a surface, with angle of incidence = angle of reflection",
-      "**Refraction** is the bending of waves when they pass from one medium to another at an angle",
-      "**Diffraction** is the spreading of waves when they pass through a gap or around an obstacle",
-      "Diffraction is most noticeable when the gap width is similar to the wavelength"
+      "Magnets have north and south poles - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are always attracted to magnets, while non-magnetic materials (glass, plastic) experience no force",
+      "Magnetic materials can be magnetised by stroking with a magnet, hammering in a magnetic field, or placing in a coil with direct current",
+      "Temporary magnets (soft iron) lose magnetism when the field is removed, permanent magnets retain their magnetism",
+      "Electromagnets are temporary magnets made by placing soft iron in coiled wire with direct current",
+      "Magnetic field lines show field direction (north to south pole) and strength (closer lines = stronger field)",
+      "Electric charge is measured in coulombs and can be positive or negative - opposite charges attract, like charges repel",
+      "Conductors allow charge flow through free moving charged particles, insulators impede charge flow",
+      "Insulators can be electrostatically charged by friction through transfer of electrons"
     ],
     "definitions": [
       {
-        "term": "Wave",
-        "definition": "A disturbance that transfers energy from one place to another without transferring matter"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Amplitude",
-        "definition": "The maximum displacement of a particle from its rest position"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Wavelength",
-        "definition": "The distance between two successive points that are in phase"
+        "term": "Electric charge",
+        "definition": "Measured in coulombs and can be positive or negative"
       },
       {
-        "term": "Frequency",
-        "definition": "The number of complete waves passing a point in one second"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
       },
       {
-        "term": "Refraction",
-        "definition": "The bending of waves when they change speed as they pass from one medium to another"
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
       }
     ],
     "howToAnswer": [
@@ -71,17 +70,14 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse amplitude with wavelength — amplitude is vertical displacement, wavelength is horizontal distance",
-      "Students often forget units in calculations — always include m, Hz, m/s etc.",
-      "Never say 'waves carry matter' — waves only transfer energy, not matter",
-      "Don't confuse frequency and period — frequency is waves per second, period is seconds per wave",
-      "When drawing waves, ensure amplitude is measured from rest position to peak, not peak to trough"
+      "Thinking magnetic materials are only attracted to specific poles - they are attracted to both poles",
+      "Confusing temporary and permanent magnets - temporary magnets lose magnetism when the field is removed",
+      "Believing magnetic field lines go from south to north - they go from north to south pole",
+      "Thinking only protons move during charging - only electrons transfer during electrostatic charging"
     ],
     "examinerTips": [
-      "Wave properties appear in every Paper 2 — learn the wave equation thoroughly",
-      "Always draw clear, labelled wave diagrams showing amplitude and wavelength",
-      "Diffraction questions often use ripple tank contexts — practice these",
-      "Remember: bigger gap or smaller wavelength = less diffraction"
+      "Remember magnetic field strength is shown by how close field lines are together - closer lines mean stronger field",
+      "When plotting magnetic fields, ensure arrows point from north to south pole on all field lines"
     ],
     "formulas": [
       "v = fλ",
@@ -110,7 +106,7 @@
       "Examiner Report 2022: 'Candidates often forgot to include units in wave speed calculations' — always state the final answer as m/s for wave speed calculations"
     ],
     "keyDiagram": "Students must be able to draw a transverse wave showing: wavelength λ measured peak-to-peak or trough-to-trough, amplitude A measured from equilibrium to peak, frequency f as oscillations per second. Include labels for compression and rarefaction on longitudinal waves, and demonstrate that particles oscillate perpendicular to wave direction (transverse) or parallel to wave direction (longitudinal).",
-    "quickRecap": "Wave speed v = fλ where f is frequency and λ is wavelength. Phase difference is 180° for points separated by λ/2, 360° for points separated by λ. In transverse waves, particles move perpendicular to wave direction; in longitudinal waves, parallel to wave direction. Always read wavelength as distance between identical points in phase."
+    "quickRecap": "Magnets have north and south poles that create magnetic fields, with like poles repelling and opposite poles attracting. Magnetic materials can be temporarily or permanently magnetised, while electromagnets use current in coiled wire around soft iron. Electric charges create forces between objects, with conductors allowing charge flow and insulators blocking it unless charged by friction."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -118,5 +114,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:18:24.399Z",
   "updated_at": "2026-04-05T21:18:24.399Z",
-  "enriched_at": "2026-04-06T15:58:40.027Z"
+  "enriched_at": "2026-04-06T15:58:40.027Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:18:45.826Z"
 }

@@ -9,32 +9,36 @@
     "title": "Gravitational fields",
     "readTime": "8 min",
     "keyPoints": [
-      "**Gravitational field strength** is the gravitational force per unit mass experienced by a small test mass placed at that point",
-      "**Gravitational potential** at a point is the work done per unit mass in bringing a small test mass from infinity to that point",
-      "**Gravitational potential energy** is always negative when measured from infinity because work is done by the gravitational field",
-      "Field lines point towards the centre of mass and are **radial** for point masses or spherical objects",
-      "**Equipotential surfaces** are perpendicular to field lines and no work is done moving along them",
-      "For circular orbits, **centripetal force equals gravitational force** providing the necessary acceleration",
-      "**Escape velocity** is the minimum velocity needed for an object to escape completely from a gravitational field",
-      "Satellites in **geostationary orbit** have orbital period of 24 hours and remain above the same point on Earth's surface",
-      "**Kepler's third law** states that T² ∝ r³ for objects orbiting the same central mass"
+      "A gravitational field is an area where objects with mass experience a non-contact force",
+      "There are two types of gravitational fields: uniform fields (same force everywhere) and radial fields (force depends on position)",
+      "Gravitational field strength (g) is the force per unit mass exerted by a gravitational field, calculated using g = F/m",
+      "Newton's law of gravitation states that gravitational force is directly proportional to the product of masses and inversely proportional to the square of distance between them",
+      "The gravitational force formula is F = Gm₁m₂/r² where G is the gravitational constant",
+      "For radial fields, gravitational field strength follows g = GM/r² showing an inverse square relationship",
+      "Mass of a uniform sphere acts as a point mass at its centre when calculating gravitational force on objects outside the sphere",
+      "Gravity always acts on objects with mass and is always attractive",
+      "Field lines show direction of force on a mass, with closer lines indicating stronger gravitational field strength"
     ],
     "definitions": [
       {
+        "term": "Force field",
+        "definition": "An area in which an object experiences a non-contact force"
+      },
+      {
+        "term": "Gravitational field",
+        "definition": "An area where objects with mass experience a non-contact force"
+      },
+      {
+        "term": "Uniform field",
+        "definition": "Exerts the same gravitational force on a mass everywhere in the field"
+      },
+      {
+        "term": "Radial field",
+        "definition": "The force exerted depends on the position of the object in the field"
+      },
+      {
         "term": "Gravitational field strength",
-        "definition": "The gravitational force per unit mass experienced by a small test mass placed at that point in the field"
-      },
-      {
-        "term": "Gravitational potential",
-        "definition": "The work done per unit mass in bringing a small test mass from infinity to that point"
-      },
-      {
-        "term": "Geostationary orbit",
-        "definition": "An orbit where the satellite has an orbital period of 24 hours and remains above the same point on the Earth's equator"
-      },
-      {
-        "term": "Escape velocity",
-        "definition": "The minimum velocity that an object must have to escape completely from a gravitational field"
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       }
     ],
     "howToAnswer": [
@@ -66,17 +70,14 @@
       ]
     },
     "commonMistakes": [
-      "Never use surface values of g in orbital calculations — always use g = GM/r² for the specific distance",
-      "Students often forget the negative sign for gravitational potential and potential energy",
-      "Never confuse gravitational field strength (N/kg) with gravitational force (N)",
-      "Students often use Earth's radius instead of orbital radius from Earth's centre in satellite calculations",
-      "Never assume satellites must orbit above the equator unless specifically stated as geostationary"
+      "Forgetting that gravitational field strength is constant in uniform fields but varies in radial fields",
+      "Not recognizing that uniform spheres act as point masses at their centres for external calculations",
+      "Confusing the direction of field lines - they show the direction force acts on a mass",
+      "Missing that gravitational force follows an inverse square relationship with distance"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 4, especially satellite orbital calculations",
-      "Always check if height is given above surface or from centre — add Earth's radius if needed",
-      "For geostationary satellites, always state three conditions: 24hr period, equatorial orbit, same direction as Earth's rotation",
-      "In orbital problems, clearly show F_gravitational = F_centripetal"
+      "Remember that closer field lines indicate stronger gravitational field strength",
+      "Use the inverse square relationship: if distance increases by factor of 2, field strength decreases by factor of 4"
     ],
     "formulas": [
       "g = F/m",
@@ -112,7 +113,7 @@
       "Examiner Report 2021: 'Common error was not using radius from center when calculating field strength' — always measure distance from the center of the planet, not from the surface"
     ],
     "keyDiagram": "Draw Earth as a circle with equally-spaced radial arrows pointing inward toward the center, representing gravitational field lines. Show arrows getting further apart as distance increases to demonstrate weakening field strength. Label key features: 'gravitational field lines', 'direction toward center', 'spacing indicates field strength'. Include a small mass with weight vector showing direction of gravitational force.",
-    "quickRecap": "Gravitational field strength (g) is the gravitational force per unit mass, measured in N/kg. It follows the inverse square law - doubling distance quarters the field strength. Field lines point toward the center of mass and never cross. On Earth's surface g = 9.8 N/kg, but decreases with altitude and varies on different planets depending on their mass and radius."
+    "quickRecap": "Gravitational fields are regions where masses experience non-contact forces, either uniform or radial in nature. Field strength is calculated as force per unit mass and follows Newton's law of gravitation. The key relationship is the inverse square law, where gravitational effects decrease rapidly with distance."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +121,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:43:05.823Z",
   "updated_at": "2026-04-06T04:43:05.823Z",
-  "enriched_at": "2026-04-06T16:08:01.409Z"
+  "enriched_at": "2026-04-06T16:08:01.409Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:27:51.257Z"
 }

@@ -9,33 +9,29 @@
     "title": "Gas exchange and smoking",
     "readTime": "8 min",
     "keyPoints": [
-      "**Alveoli** provide a large surface area for gas exchange with thin walls (one cell thick epithelium) for short diffusion distance",
-      "**Ventilation** maintains concentration gradients by bringing fresh air to alveoli and removing stale air",
-      "Gas exchange occurs by **diffusion** down concentration gradients - oxygen from alveolar air to blood, carbon dioxide from blood to alveolar air",
-      "**Capillaries** have thin walls and are in close contact with alveoli to minimize diffusion distance",
-      "**Smoking** damages ciliated epithelium reducing the ability to remove mucus and pathogens from airways",
-      "**Tar** in cigarettes is carcinogenic and causes mutations leading to lung cancer",
-      "**Carbon monoxide** combines irreversibly with haemoglobin forming carboxyhaemoglobin reducing oxygen transport",
-      "**Emphysema** is caused by smoking - alveolar walls break down reducing surface area for gas exchange",
-      "**Chronic bronchitis** results from smoking - excessive mucus production and inflammation of bronchi",
-      "Smoking during pregnancy reduces oxygen supply to fetus causing low birth weight and increased risk of miscarriage"
+      "All living organisms are made of cells that use ATP from respiration for energy-requiring processes",
+      "Eukaryotic cells contain a nucleus and membrane-bound organelles, while prokaryotic cells do not contain membrane-bound organelles",
+      "Animal cells may contain cilia - small hair-like structures that enable movement of substances along the cell surface",
+      "Mitochondria have a double membrane with inner membrane folded into cristae, containing enzymes needed for respiration",
+      "Ribosomes are the site of protein synthesis, with prokaryotes having smaller 70S ribosomes and eukaryotes having larger 80S ribosomes",
+      "Viruses are non-living structures consisting of nucleic acid enclosed in a protein capsid, sometimes with a phospholipid envelope"
     ],
     "definitions": [
       {
-        "term": "Gas exchange",
-        "definition": "The diffusion of oxygen from alveolar air into blood and carbon dioxide from blood into alveolar air"
+        "term": "Ultrastructure",
+        "definition": "A more detailed structure of cells that can be obtained by using a microscope"
       },
       {
-        "term": "Ventilation",
-        "definition": "The movement of air into and out of the lungs to maintain concentration gradients for gas exchange"
+        "term": "Cilia",
+        "definition": "Small hair-like structures composed of microtubules in a '9+2' formation that allow movement of substances along the surface of the cell"
       },
       {
-        "term": "Emphysema",
-        "definition": "A lung disease where alveolar walls break down reducing surface area for gas exchange"
+        "term": "Capsid",
+        "definition": "A protective protein coat that encloses the nucleic acid in viruses"
       },
       {
-        "term": "Carcinogen",
-        "definition": "A substance that causes cancer by causing mutations in DNA"
+        "term": "Cristae",
+        "definition": "Folded projections of the inner mitochondrial membrane"
       }
     ],
     "howToAnswer": [
@@ -63,17 +59,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'oxygen is absorbed' — always say 'oxygen diffuses into blood'",
-      "Students often confuse breathing with gas exchange - breathing is ventilation, gas exchange is diffusion",
-      "Don't say smoking 'blocks' alveoli - say it 'damages alveolar walls' or 'reduces surface area'",
-      "Never say carbon monoxide 'poisons' blood - say it 'combines with haemoglobin reducing oxygen transport'",
-      "Students write 'air goes to lungs' instead of 'air moves down trachea, bronchi, bronchioles to alveoli'"
+      "Confusing prokaryotic and eukaryotic cell features - remember prokaryotes have no membrane-bound organelles",
+      "Forgetting that viruses are non-living structures, not cells",
+      "Mixing up ribosome sizes - prokaryotes have 70S ribosomes, eukaryotes have 80S ribosomes in cytoplasm"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2 and Paper 4",
-      "Always mention concentration gradients when explaining gas exchange",
-      "Learn specific diseases caused by smoking - examiners expect precise names",
-      "Draw and label alveolus diagram showing capillaries for full marks in diagram questions"
+      "Remember that both mitochondria and chloroplasts contain small circular DNA and 70S ribosomes",
+      "Focus on the structural differences between prokaryotic and eukaryotic cells for comparison questions"
     ],
     "formulas": [],
     "keyDiagramDescription": "Diagram of alveolus showing: thin alveolar wall, capillary network, direction of oxygen and carbon dioxide diffusion, blood flow direction. Label: alveolar air space, epithelium, capillary, red blood cells.",
@@ -100,7 +92,7 @@
       "Examiner Report 2023: 'Candidates frequently failed to link structural damage to functional consequences' — always explain how physical damage leads to reduced gas exchange efficiency, not just list the damage"
     ],
     "keyDiagram": "Students must be able to draw and label a comparison diagram showing: (1) Healthy alveolus - thin walls, good blood supply, elastic fibers intact, large surface area; (2) Smoker's alveolus - thickened walls with tar deposits, damaged elastic fibers, reduced surface area, merged air sacs. Include bronchiole cross-sections showing healthy cilia vs damaged/paralyzed cilia. Add arrows showing efficient vs impaired gas exchange, and label key damaging substances (tar, carbon monoxide, nicotine).",
-    "quickRecap": "Smoking damages gas exchange through multiple mechanisms: tar reduces alveolar surface area and permeability, toxic chemicals destroy elastic fibers causing air sacs to merge, cilia are paralyzed leading to mucus buildup and infections, and carbon monoxide reduces blood's oxygen-carrying capacity. The combined effect is severely reduced gas exchange efficiency and increased respiratory disease risk."
+    "quickRecap": "All living organisms are made of cells that use ATP for energy. Eukaryotic cells have a nucleus and membrane-bound organelles, while prokaryotic cells do not. Viruses are non-living structures with nucleic acid in a protein capsid. Microscopy enables examination of structures not visible to the naked eye."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -108,5 +100,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:03:11.378Z",
   "updated_at": "2026-04-06T05:03:11.378Z",
-  "enriched_at": "2026-04-06T16:10:19.524Z"
+  "enriched_at": "2026-04-06T16:10:19.524Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:37:36.121Z"
 }

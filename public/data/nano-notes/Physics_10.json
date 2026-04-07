@@ -9,31 +9,36 @@
     "title": "Thermal properties of matter",
     "readTime": "8 min",
     "keyPoints": [
-      "**Linear expansion** occurs when a solid is heated and increases in length due to increased molecular vibrations",
-      "**Thermal expansion** can be useful (in bimetallic strips for thermostats) or cause problems (railway tracks buckling)",
-      "**Specific heat capacity** is the energy needed to raise the temperature of 1 kg of a substance by 1°C",
-      "During **melting** or **boiling**, temperature remains constant even though heat energy is still being supplied",
-      "**Latent heat of fusion** is the energy needed to change 1 kg of solid to liquid at constant temperature",
-      "**Latent heat of vaporization** is the energy needed to change 1 kg of liquid to gas at constant temperature",
-      "**Evaporation** occurs at any temperature from the surface only, while **boiling** occurs at a fixed temperature throughout the liquid",
-      "**Cooling by evaporation** occurs because the fastest-moving molecules escape, leaving slower molecules with lower average kinetic energy"
+      "Magnets have north and south poles - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are attracted to magnets, while non-magnetic materials (glass, plastic) are not affected",
+      "Magnetic materials can be magnetized by stroking with magnets, hammering in magnetic fields, or placing in coils with direct current",
+      "Temporary magnets lose magnetism when the field is removed, permanent magnets retain their own magnetic field",
+      "Magnetic fields surround magnets - field lines show direction (north to south) and strength (closer lines = stronger field)",
+      "Field lines can be visualized using plotting compasses or iron filings on paper",
+      "Electric charge is measured in coulombs and can be positive or negative - like charges repel, opposite charges attract",
+      "Conductors allow charge flow through free-moving charged particles, insulators impede charge flow",
+      "Insulators can be electrostatically charged by friction through electron transfer between materials"
     ],
     "definitions": [
       {
-        "term": "Specific heat capacity",
-        "definition": "The amount of thermal energy needed to raise the temperature of 1 kg of a substance by 1°C"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Latent heat of fusion",
-        "definition": "The amount of thermal energy needed to change 1 kg of a solid into a liquid at constant temperature"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Latent heat of vaporization",
-        "definition": "The amount of thermal energy needed to change 1 kg of a liquid into a gas at constant temperature"
+        "term": "Electric charge",
+        "definition": "A property measured in coulombs that can be positive or negative"
       },
       {
-        "term": "Thermal expansion",
-        "definition": "The increase in size of a substance when its temperature increases"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
+      },
+      {
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
       }
     ],
     "howToAnswer": [
@@ -65,17 +70,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'heat capacity' — always say 'specific heat capacity' for the defined quantity",
-      "Students often forget that during melting/boiling, temperature stays constant despite energy input",
-      "Never confuse evaporation (surface only, any temperature) with boiling (throughout liquid, fixed temperature)",
-      "Students often forget to calculate temperature change (final - initial) in specific heat capacity calculations",
-      "Never say latent heat 'increases temperature' — latent heat changes state at constant temperature"
+      "Thinking magnetic force between a magnet and magnetic material depends on the pole - it's always attractive",
+      "Confusing temporary and permanent magnets - temporary magnets lose magnetism when the field is removed",
+      "Drawing magnetic field lines incorrectly - they must point from north to south pole",
+      "Forgetting that only electrons transfer during charging - objects gain charge through electron addition or removal"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2, especially specific heat capacity calculations",
-      "Always show the formula first, then substitute values, then calculate for full marks",
-      "Temperature-time graphs for heating are very common - remember flat sections show state changes",
-      "Learn the difference between evaporation and boiling - this distinction is frequently tested"
+      "Remember electromagnets are temporary magnets made from soft iron in coiled wire with direct current",
+      "When plotting magnetic fields, closer field lines indicate stronger magnetic field strength"
     ],
     "formulas": [
       "E = mcΔT",
@@ -107,7 +109,7 @@
       "Examiner Report 2023: 'Common error was using incorrect temperature differences in calorimetry' — remember to use (final - initial) temperature for the substance gaining heat and (initial - final) for the substance losing heat"
     ],
     "keyDiagram": "Students must be able to draw a heating curve graph showing temperature vs time, with horizontal plateaus at melting and boiling points where latent heat is being supplied. The graph should show: solid phase with gradual temperature rise, horizontal melting plateau, liquid phase with steeper temperature rise, horizontal boiling plateau, and gas phase. Label axes clearly with 'Temperature (°C)' and 'Time (s)', mark melting point and boiling point temperatures, and add annotations explaining that during plateaus, energy goes into breaking bonds rather than increasing temperature.",
-    "quickRecap": "Three states of matter differ in particle arrangement and energy. Specific heat capacity (c) measures energy needed to raise 1kg by 1°C using Q=mcΔT. Latent heat measures energy for state changes at constant temperature using Q=mL. In thermal equilibrium problems, heat lost equals heat gained."
+    "quickRecap": "Magnets have north and south poles that create magnetic fields affecting magnetic materials like iron and steel. Materials can be temporarily or permanently magnetized through various methods. Electric charges create forces between objects, with conductors allowing charge flow and insulators preventing it. Objects become charged through electron transfer, particularly when insulators are rubbed together."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -115,5 +117,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:17:07.323Z",
   "updated_at": "2026-04-05T21:17:07.323Z",
-  "enriched_at": "2026-04-06T15:57:28.994Z"
+  "enriched_at": "2026-04-06T15:57:28.994Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:17:42.749Z"
 }

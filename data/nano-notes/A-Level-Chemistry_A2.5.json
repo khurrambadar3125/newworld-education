@@ -9,35 +9,22 @@
     "title": "Further organic chemistry",
     "readTime": "8 min",
     "keyPoints": [
-      "**Benzene** has a delocalised π electron system with all C-C bonds equal in length and shows resistance to addition reactions",
-      "**Phenol** is weakly acidic due to delocalisation of the lone pair on oxygen into the benzene ring, forming a phenoxide ion",
-      "**Primary amines** can be formed by reduction of nitriles using LiAlH4 or by nucleophilic substitution of haloalkanes with ammonia",
-      "**Amides** are formed from acyl chlorides and amines, and can be hydrolysed under acidic or basic conditions to form carboxylic acids",
-      "**Amino acids** are amphoteric compounds that can exist as zwitterions at their isoelectric point",
-      "**Proteins** have primary structure (amino acid sequence), secondary structure (α-helix or β-pleated sheet) and tertiary structure (3D folding)",
-      "**Polyesters** are formed by condensation polymerisation between dicarboxylic acids and diols with elimination of water",
-      "**Polyamides** are formed by condensation polymerisation between dicarboxylic acids and diamines or by ring-opening of lactams"
+      "Transition elements are found in the d-block of the periodic table and form one or more stable ions with incomplete d orbitals",
+      "Scandium and zinc are in the d-block but are not transition elements because their ions do not have incomplete d subshells",
+      "Scandium forms Sc³⁺ with an empty d subshell, zinc forms Zn²⁺ with a full d subshell",
+      "The 4s orbital is filled before the 3d orbital, but 4s electrons are removed before 3d electrons when forming ions",
+      "Transition elements can form multiple oxidation states (e.g., vanadium forms V²⁺, V³⁺, V⁴⁺ and V⁵⁺)",
+      "The d subshell can hold up to 10 electrons",
+      "Chromium has the unusual electron configuration [Ar]3d⁵4s¹ and copper has [Ar]3d¹⁰4s¹"
     ],
     "definitions": [
       {
-        "term": "Delocalisation",
-        "definition": "The spreading of electron density over more than two atoms in a molecule or ion"
+        "term": "Transition elements",
+        "definition": "Elements that form one or more stable ions with incomplete d orbitals"
       },
       {
-        "term": "Zwitterion",
-        "definition": "An ion that has both a positive and negative charge on different atoms in the same molecule"
-      },
-      {
-        "term": "Condensation polymerisation",
-        "definition": "A reaction where monomers join together with the elimination of small molecules such as water"
-      },
-      {
-        "term": "Isoelectric point",
-        "definition": "The pH at which an amino acid exists predominantly as a zwitterion with no net charge"
-      },
-      {
-        "term": "Peptide bond",
-        "definition": "An amide link formed between the amino group of one amino acid and the carboxyl group of another"
+        "term": "d orbital",
+        "definition": "A type of orbital that can hold up to 10 electrons and has a specific shape"
       }
     ],
     "howToAnswer": [
@@ -69,17 +56,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say benzene has 'alternating single and double bonds' — always refer to delocalised π electrons",
-      "Students often forget that amino acids exist as zwitterions in neutral conditions, not as molecules with -NH2 and -COOH",
-      "Don't confuse addition polymerisation with condensation polymerisation — polyesters and polyamides eliminate small molecules",
-      "Never say phenol is acidic because of the benzene ring — it's because the phenoxide ion is stabilised by delocalisation",
-      "Students often draw peptide bonds incorrectly — remember it's specifically the amide linkage -CO-NH-"
+      "Thinking scandium and zinc are transition elements when they are not due to their complete or empty d subshells in their stable ions",
+      "Forgetting that 4s electrons are removed before 3d electrons when forming ions, despite 4s being filled first",
+      "Not recognizing the unusual electron configurations of chromium and copper"
     ],
     "examinerTips": [
-      "Benzene reactions appear almost every year in Paper 4 — practice drawing mechanisms",
-      "Always show the zwitterion structure when asked about amino acids at physiological pH",
-      "For polymerisation questions, clearly show the repeating unit in brackets with continuation bonds",
-      "Protein structure questions often ask for specific examples — learn α-helix and β-pleated sheet"
+      "Remember that transition elements must have incomplete d orbitals in their ions, not just in their atoms",
+      "When writing electron configurations for transition metal ions, always remove 4s electrons first"
     ],
     "formulas": [
       "C6H6",
@@ -113,7 +96,7 @@
       "Examiner Report 2023: 'Candidates lost marks by not showing continuation bonds in polymer structures' — always include 'n' subscript and continuation bonds when drawing polymer repeat units"
     ],
     "keyDiagram": "Students must draw the formation of addition polymers showing: (1) monomer structure with C=C double bond clearly marked, (2) arrow indicating polymerization conditions, (3) repeat unit in square brackets with continuation bonds extending left and right, (4) subscript 'n' outside brackets, (5) note that double bonds break to form single bonds in polymer chain. Example: nCH₂=CHCl → [-CH₂-CHCl-]ₙ with proper continuation bonds shown.",
-    "quickRecap": "Esters form when carboxylic acids react with alcohols using concentrated H₂SO₄ catalyst, eliminating water. Addition polymers form when alkenes polymerize without eliminating small molecules, while condensation polymers eliminate water/HCl. Always show continuation bonds in polymer structures and include 'n' subscript. Ester naming: alkyl group from alcohol + -anoate from acid."
+    "quickRecap": "Transition elements are d-block elements that form stable ions with incomplete d orbitals. Scandium and zinc are not transition elements despite being in the d-block. When forming ions, 4s electrons are removed before 3d electrons, and many transition elements can form multiple oxidation states."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -121,5 +104,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:38:00.020Z",
   "updated_at": "2026-04-06T04:38:00.020Z",
-  "enriched_at": "2026-04-06T16:07:28.918Z"
+  "enriched_at": "2026-04-06T16:07:28.918Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:33:27.801Z"
 }

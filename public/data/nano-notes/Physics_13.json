@@ -9,35 +9,41 @@
     "title": "Light",
     "readTime": "8 min",
     "keyPoints": [
-      "**Light travels in straight lines** in a uniform medium and can be represented by rays",
-      "**Reflection** occurs when light bounces off a surface - angle of incidence equals angle of reflection",
-      "**Refraction** occurs when light passes from one medium to another and changes speed, causing the ray to bend",
-      "**Total internal reflection** occurs when light travels from a denser to less dense medium at angles greater than the critical angle",
-      "**Converging lenses** bring parallel rays to a focus, while **diverging lenses** spread parallel rays apart",
-      "**Real images** can be formed on a screen and are inverted, **virtual images** cannot be formed on a screen and are upright",
-      "**Dispersion** occurs when white light is separated into its component colours by a prism",
-      "**Critical angle** is the angle of incidence in the denser medium for which the angle of refraction is 90°"
+      "Magnets have north and south poles - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are always attracted to magnets regardless of pole",
+      "Non-magnetic materials (glass, plastic) experience no force from magnets",
+      "Magnetic materials can be magnetized by stroking with magnets, hammering in magnetic fields, or placing in coils with direct current",
+      "Temporary magnets (soft iron) lose magnetism when field removed, permanent magnets retain it",
+      "Electromagnets are temporary magnets made from soft iron in coiled wire with direct current",
+      "Magnetic field lines show direction (north to south) and strength (closer lines = stronger field)",
+      "Electric charge is measured in coulombs - like charges repel, opposite charges attract",
+      "Conductors allow charge flow through free moving particles, insulators impede charge flow",
+      "Insulators gain electrostatic charge when rubbed together due to electron transfer"
     ],
     "definitions": [
       {
-        "term": "Refraction",
-        "definition": "The bending of light when it passes from one medium to another due to a change in speed"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Total Internal Reflection",
-        "definition": "The complete reflection of light at the boundary between two media when light travels from denser to less dense medium at an angle greater than the critical angle"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Critical Angle",
-        "definition": "The angle of incidence in the denser medium for which the angle of refraction is 90°"
+        "term": "Electromagnet",
+        "definition": "A temporary magnet made when soft iron is placed within coiled wire with direct current running through it"
       },
       {
-        "term": "Real Image",
-        "definition": "An image that can be formed on a screen because light rays actually pass through it"
+        "term": "Electric charge",
+        "definition": "Measured in coulombs and can be positive or negative"
       },
       {
-        "term": "Virtual Image",
-        "definition": "An image that cannot be formed on a screen because light rays only appear to come from it"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
+      },
+      {
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
       }
     ],
     "howToAnswer": [
@@ -69,18 +75,15 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'light bends because of density' - always say 'light bends because of change in speed due to density difference'",
-      "Students often confuse real and virtual images - real images are always inverted, virtual are always upright",
-      "Drawing refraction diagrams without showing normal line perpendicular to surface",
-      "Confusing critical angle with angle of incidence - critical angle is specific value, not any angle",
-      "Saying 'light reflects off mirrors' instead of 'light reflects from mirrors'"
+      "Thinking magnetic materials are only attracted to one specific pole - they're attracted to both poles",
+      "Confusing temporary and permanent magnets - temporary magnets lose magnetism when the field is removed",
+      "Drawing magnetic field lines pointing from south to north instead of north to south",
+      "Thinking only positive charges move during electrostatic charging - only electrons (negative charge) transfer"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2 with ray diagrams",
-      "Always draw a labelled diagram for reflection and refraction questions",
-      "Use a ruler for all ray diagrams and show arrows on rays",
-      "Remember angles are always measured from the normal, not the surface",
-      "Optical fibre questions often combine total internal reflection with practical applications"
+      "Remember magnetic field strength is shown by spacing of field lines - closer together means stronger field",
+      "When plotting magnetic fields, always draw arrows pointing from north to south pole",
+      "Electromagnets are used for things that turn on/off, permanent magnets for things always on"
     ],
     "formulas": [
       "refractive index = sin i / sin r",
@@ -111,7 +114,7 @@
       "Examiner Report 2022: 'Common error was stating light speed changes in different media without explaining refraction occurs' — link speed changes to bending of light rays when answering refraction questions"
     ],
     "keyDiagram": "Ray diagram showing incident ray, reflected ray, and normal at 90° to reflecting surface. Must include: clearly labeled angles of incidence and reflection (measured from normal), arrows showing light direction, and dotted line for normal. For refraction diagrams, show rays bending toward normal when entering denser medium, away from normal when entering less dense medium.",
-    "quickRecap": "Light travels in straight lines at 3.0 × 10⁸ m/s in vacuum, slower in other media. Intensity = Power/Area, measured in W/m². Reflection: angle of incidence = angle of reflection, both measured from normal. Refraction occurs when light changes speed between media, causing ray direction to change."
+    "quickRecap": "Magnets have north and south poles with magnetic fields that can be visualized using plotting compasses or iron filings. Magnetic materials can be temporarily or permanently magnetized, with electromagnets being useful temporary magnets. Electric charges create forces between objects, with conductors allowing charge flow and insulators impeding it. Electrostatic charging occurs through electron transfer when insulators are rubbed together."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -119,5 +122,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:18:06.788Z",
   "updated_at": "2026-04-05T21:18:06.788Z",
-  "enriched_at": "2026-04-06T15:58:23.220Z"
+  "enriched_at": "2026-04-06T15:58:23.220Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:18:30.157Z"
 }

@@ -9,36 +9,18 @@
     "title": "Halogenoalkanes",
     "readTime": "8 min",
     "keyPoints": [
-      "**Halogenoalkanes** are saturated organic compounds containing carbon, hydrogen and at least one halogen atom",
-      "**Nucleophilic substitution** occurs when a nucleophile attacks the δ+ carbon atom bonded to the halogen",
-      "**SN1 mechanism** involves two steps with a carbocation intermediate and occurs in tertiary halogenoalkanes",
-      "**SN2 mechanism** involves one step with simultaneous bond breaking and forming, occurs in primary halogenoalkanes",
-      "**Elimination reactions** occur when a base removes HX to form an alkene, competing with substitution",
-      "**Rate of hydrolysis** increases down Group 7: C-I > C-Br > C-Cl due to decreasing bond enthalpy",
-      "**Primary halogenoalkanes** undergo SN2 mechanism because steric hindrance is minimal",
-      "**Tertiary halogenoalkanes** undergo SN1 mechanism because tertiary carbocations are most stable",
-      "**Nucleophiles** include OH⁻, CN⁻, NH₃ and have lone pairs of electrons to donate"
+      "Transition elements are found in the d-block of the periodic table and form one or more stable ions with incomplete d orbitals",
+      "The d subshell can hold up to 10 electrons",
+      "Scandium and zinc are in the d-block but are not transition elements because their ions do not have incomplete d subshells",
+      "Scandium forms Sc³⁺ with an empty d subshell, zinc forms Zn²⁺ with a full d subshell",
+      "The 4s orbital is filled before the 3d orbital in atoms",
+      "When forming ions, 4s electrons are removed before 3d electrons",
+      "Many transition elements can form multiple oxidation states (e.g., vanadium forms V²⁺, V³⁺, V⁴⁺, and V⁵⁺)"
     ],
     "definitions": [
       {
-        "term": "Nucleophilic substitution",
-        "definition": "A reaction where a nucleophile attacks an electron-deficient carbon atom and replaces the leaving group"
-      },
-      {
-        "term": "SN1 mechanism",
-        "definition": "A two-step nucleophilic substitution mechanism involving formation of a carbocation intermediate"
-      },
-      {
-        "term": "SN2 mechanism",
-        "definition": "A one-step nucleophilic substitution mechanism involving simultaneous bond breaking and bond forming"
-      },
-      {
-        "term": "Elimination reaction",
-        "definition": "A reaction where a small molecule is removed from a larger molecule to form a double bond"
-      },
-      {
-        "term": "Nucleophile",
-        "definition": "An electron-rich species that donates a lone pair of electrons to an electron-deficient carbon atom"
+        "term": "Transition elements",
+        "definition": "Elements that form one or more stable ions with incomplete d orbitals"
       }
     ],
     "howToAnswer": [
@@ -66,17 +48,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'SN1 is faster than SN2' — always relate to the specific halogenoalkane structure",
-      "Students often forget that elimination competes with substitution at higher temperatures",
-      "Never draw mechanisms without curly arrows showing electron movement",
-      "Students confuse bond enthalpy with bond length when explaining hydrolysis rates",
-      "Never say 'the halogen is electronegative' — say 'the C-X bond is polar with δ+ carbon'"
+      "Thinking scandium and zinc are transition elements when they are not due to their complete or empty d subshells",
+      "Removing 3d electrons before 4s electrons when forming ions",
+      "Forgetting that the d subshell can hold up to 10 electrons"
     ],
     "examinerTips": [
-      "Mechanism questions appear every year in Paper 2 - practice drawing curly arrows",
-      "Always state the nucleophile and leaving group clearly in mechanism explanations",
-      "Temperature affects product ratios - higher temperature favors elimination over substitution",
-      "AgNO₃ test questions are common - faster precipitate formation indicates faster hydrolysis"
+      "Remember that 4s electrons are removed before 3d electrons when forming ions",
+      "Know the electron configurations of the first row transition elements and their common ions"
     ],
     "formulas": [
       "R-X + OH⁻ → R-OH + X⁻",
@@ -107,7 +85,7 @@
       "Examiner Report 2023: 'Candidates often failed to explain why reaction rates differ between primary, secondary and tertiary halogenoalkanes' — always mention carbocation stability and steric hindrance when comparing SN1 vs SN2 mechanisms"
     ],
     "keyDiagram": "Students must be able to draw nucleophilic substitution mechanisms showing: (1) SN2 mechanism with nucleophile attacking from opposite side to leaving group, transition state in square brackets with partial bonds shown as dotted lines, and inversion of configuration; (2) SN1 mechanism showing two distinct steps - slow heterolytic fission forming carbocation intermediate, then fast nucleophilic attack. All curly arrows must start from electron pairs and point to electron-deficient centers.",
-    "quickRecap": "Halogenoalkanes undergo nucleophilic substitution and elimination reactions. Primary halogenoalkanes favor SN2 (one-step, inversion), tertiary favor SN1 (two-step, carbocation intermediate). Aqueous conditions give substitution, alcoholic conditions give elimination. Reactivity order: R-I > R-Br > R-Cl due to decreasing C-X bond strength."
+    "quickRecap": "Transition elements are d-block elements that form stable ions with incomplete d orbitals. Scandium and zinc are not transition elements despite being in the d-block. When forming ions, 4s electrons are removed before 3d electrons, and many transition elements can exist in multiple oxidation states."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -115,5 +93,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:35:06.862Z",
   "updated_at": "2026-04-06T04:35:06.862Z",
-  "enriched_at": "2026-04-06T16:10:15.453Z"
+  "enriched_at": "2026-04-06T16:10:15.453Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:34:00.568Z"
 }

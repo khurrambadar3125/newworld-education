@@ -9,37 +9,38 @@
     "title": "Research methods",
     "readTime": "8 min",
     "keyPoints": [
-      "A **laboratory experiment** has high control over extraneous variables and can establish cause and effect relationships",
-      "A **field experiment** takes place in the participant's natural environment with manipulation of the independent variable",
-      "**Naturalistic observation** involves watching and recording behavior in its natural setting without interference",
-      "**Self-report methods** include questionnaires and interviews where participants provide information about themselves",
-      "A **case study** is an in-depth investigation of a single individual, group or event using multiple research methods",
-      "**Informed consent** means participants must be told the true aims and procedures before agreeing to take part",
-      "**Opportunity sampling** involves selecting participants who are easily available at the time of study",
-      "**Random sampling** gives every member of the target population an equal chance of being selected",
-      "**Reliability** refers to consistency of results when a study is repeated under the same conditions",
-      "**Validity** refers to whether a study measures what it claims to measure and results are accurate"
+      "The biological approach states that humans are biological organisms made up of physiological processes, so all thoughts and cognitive processes must be biological in origin",
+      "Heritability coefficients quantify the genetic basis of characteristics - IQ has a heritability coefficient of 0.5 according to Plomin",
+      "Genotype is an individual's genetic make-up, while phenotype is the physical expression of their genotype",
+      "Two people may have the same genotype but different phenotypes due to personal choices or epigenetics",
+      "Natural selection is the mechanism of evolution where genetically-determined behaviours with selective advantage are passed to future generations",
+      "The biological approach has practical applications in drug development, such as dopamine antagonists like Chlorpromazine for schizophrenia",
+      "Biological determinism suggests all behaviour is caused by internal biological forces over which we have no control"
     ],
     "definitions": [
       {
-        "term": "Independent variable",
-        "definition": "The variable that is manipulated or changed by the researcher to see its effect on the dependent variable"
+        "term": "Behaviour genetics",
+        "definition": "The study of the influence of an organism's genetic composition on its behaviour and the interaction of heredity and environment insofar as they affect behaviour"
       },
       {
-        "term": "Dependent variable",
-        "definition": "The variable that is measured by the researcher to see if it has been affected by changes to the independent variable"
+        "term": "Genotype",
+        "definition": "An individual's genetic make-up, where a gene is a short section of DNA coding for specific proteins"
       },
       {
-        "term": "Extraneous variable",
-        "definition": "Any variable other than the independent variable that could affect the dependent variable and confound the results"
+        "term": "Phenotype",
+        "definition": "The physical expression of an individual's genotype"
       },
       {
-        "term": "Operationalization",
-        "definition": "Defining variables in terms of how they will be measured or manipulated in a specific study"
+        "term": "Epigenetics",
+        "definition": "A change in gene expression, without altering an individual's genetic make-up"
       },
       {
-        "term": "Debriefing",
-        "definition": "Informing participants about the true nature of the study after it has ended and checking for any negative effects"
+        "term": "Natural selection",
+        "definition": "The mechanism of evolution where genetically-determined behaviour giving selective advantage increases chances of surviving and reproducing"
+      },
+      {
+        "term": "Evolution",
+        "definition": "The process by which organisms change over time as a result of changes in heritable physical or behavioural traits"
       }
     ],
     "howToAnswer": [
@@ -72,18 +73,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'bias' alone - always specify the type of bias (sampling bias, researcher bias, response bias)",
-      "Students confuse reliability with validity - reliability is consistency, validity is accuracy",
-      "Don't just list ethical guidelines - explain WHY they are important for protecting participants",
-      "Avoid saying experiments are 'more scientific' - explain specifically what makes them scientific (control, objectivity)",
-      "Don't write 'the results might be wrong' - use precise terms like 'lacks validity' or 'lacks reliability'"
+      "Confusing genotype and phenotype - remember genotype is genetic make-up while phenotype is physical expression",
+      "Assuming twin studies can clearly separate nature from nurture effects",
+      "Overlooking that MZ twins may share more similar environments than DZ twins, not just genes"
     ],
     "examinerTips": [
-      "Research methods appears in every paper - learn all sampling and research methods thoroughly",
-      "Always give psychological examples when evaluating methods, not everyday examples",
-      "For ethics questions, link guidelines to protection of participants rather than just listing rules",
-      "When comparing methods, use 'whereas' or 'however' to show clear contrasts",
-      "Practice identifying IV and DV in research scenarios - this appears frequently in short answer questions"
+      "Use specific examples like Chlorpromazine as a dopamine antagonist when discussing practical applications",
+      "Consider real-world implications of biological determinism for the judicial system and economy in evaluation points"
     ],
     "formulas": [],
     "keyDiagramDescription": "Draw a simple experimental design diagram showing: IV (what's manipulated) → DV (what's measured), with arrows indicating cause and effect relationship. Include control group and experimental group boxes.",
@@ -110,7 +106,7 @@
       "Examiner Report 2023: 'Weak answers on ethical considerations often just listed guidelines without application' — always link ethical considerations to the specific research scenario in the question rather than giving generic definitions"
     ],
     "keyDiagram": "Research Methods Flow Chart: Draw a flowchart showing the research process from top to bottom: 1) Research Question/Hypothesis at top, 2) Choose Method (branching to Experiment, Survey, Observation, Case Study), 3) Select Participants (showing different sampling methods), 4) Collect Data, 5) Analyze Results, 6) Draw Conclusions. Include arrows showing the flow and add 'Ethical Considerations' as a box connected to every stage. This diagram helps visualize the complete research process and shows how different elements connect.",
-    "quickRecap": "Research methods involve systematic ways to collect psychological data including experiments (cause and effect), surveys (large samples), observations (natural behavior), and case studies (detailed individual analysis). Key considerations are variables (IV/DV), sampling methods (random, opportunity, volunteer), and ethics (consent, confidentiality, right to withdraw). Remember: correlation ≠ causation, and all research must balance scientific rigor with ethical responsibility."
+    "quickRecap": "The biological approach views all behaviour as stemming from biological processes including genes, hormones and neurotransmitters. It emphasizes the interaction between genotype and phenotype, with natural selection driving evolution of beneficial traits. While offering practical applications in drug development, it raises concerns about biological determinism and its implications for moral responsibility."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -118,5 +114,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:20:22.777Z",
   "updated_at": "2026-04-06T05:20:22.779Z",
-  "enriched_at": "2026-04-06T16:07:27.249Z"
+  "enriched_at": "2026-04-06T16:07:27.249Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:57:39.699Z"
 }

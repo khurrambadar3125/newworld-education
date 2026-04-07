@@ -9,32 +9,43 @@
     "title": "Bank reconciliation and control accounts",
     "readTime": "8 min",
     "keyPoints": [
-      "**Bank reconciliation** is a statement that explains the differences between the cash book balance and the bank statement balance on a given date",
-      "**Unpresented cheques** are cheques issued by the business but not yet cleared by the bank - deducted from bank statement balance",
-      "**Outstanding lodgements** are deposits made by the business but not yet recorded by the bank - added to bank statement balance",
-      "**Bank charges and interest** appearing on bank statement must be recorded in the cash book as adjusting items",
-      "**Sales ledger control account** is a memorandum account that shows the total amount owed by all debtors",
-      "**Purchase ledger control account** is a memorandum account that shows the total amount owed to all creditors",
-      "Control accounts help detect errors by comparing the control account balance with the list of balances from individual accounts",
-      "**Contra entries** occur when the same person is both a debtor and creditor - recorded on both sides of respective control accounts",
-      "Errors in individual accounts are revealed when the control account balance disagrees with the list of individual balances"
+      "Financial statements provide information about financial position, financial performance and cash flows useful to users in making economic decisions",
+      "Manufacturing account is prepared at the end of a financial period to calculate the production cost of manufactured goods",
+      "Manufacturing account only includes information about the factory and actual manufacturing process - administration, finance and distribution costs go in the Income Statement",
+      "Cost of production is calculated by adding factory overheads to prime cost",
+      "Prime cost equals direct materials plus direct labour plus direct expenses",
+      "Factory overheads are indirect costs from running the factory including indirect factory wages and depreciation of factory machinery",
+      "Transfer price is the production cost of completed goods plus a percentage mark-up",
+      "Manufacturing profit is the difference between transfer price and production cost of completed goods"
     ],
     "definitions": [
       {
-        "term": "Bank reconciliation statement",
-        "definition": "A statement prepared to explain the differences between the cash book balance and the bank statement balance on a particular date"
+        "term": "Manufacturing account",
+        "definition": "An account prepared at the end of a financial period to calculate the production cost of manufactured goods"
       },
       {
-        "term": "Control account",
-        "definition": "A memorandum account that contains the total of a number of similar individual accounts and is used to check the arithmetical accuracy of the ledger"
+        "term": "Prime cost/Direct cost",
+        "definition": "The total of direct materials, direct labour, and direct expenses"
       },
       {
-        "term": "Unpresented cheques",
-        "definition": "Cheques that have been issued and recorded in the cash book but have not yet been presented to and cleared by the bank"
+        "term": "Factory overheads/Indirect costs",
+        "definition": "Costs incurred from the running of the factory including indirect factory wages and depreciation of factory machinery"
       },
       {
-        "term": "Outstanding lodgements",
-        "definition": "Deposits that have been recorded in the cash book but have not yet appeared on the bank statement"
+        "term": "Work in progress",
+        "definition": "Inventory of partly finished goods in the factory at any point in time"
+      },
+      {
+        "term": "Factory profit",
+        "definition": "Percentage added to the factory cost of production to arrive at the transfer price"
+      },
+      {
+        "term": "Transfer price",
+        "definition": "The production cost of completed goods plus a percentage mark-up"
+      },
+      {
+        "term": "Manufacturing profit",
+        "definition": "The difference between the transfer price and the production cost of completed goods"
       }
     ],
     "howToAnswer": [
@@ -63,17 +74,14 @@
       ]
     },
     "commonMistakes": [
-      "Never add unpresented cheques to bank statement balance — always deduct them because they reduce the bank's record",
-      "Students often confuse debit balance in cash book with credit balance — debit means money in bank, credit means overdrawn",
-      "Never ignore bank charges from bank statement — they must be entered in cash book as adjusting items",
-      "Students incorrectly add opening balances twice in control accounts instead of using them as starting point",
-      "Never write 'sales' in purchase ledger control account — only purchases, returns outwards, payments and discounts received"
+      "Including administration, finance and distribution costs in the manufacturing account instead of the Income Statement",
+      "Confusing prime cost with total production cost",
+      "Mixing up direct costs with indirect factory costs when calculating prime cost",
+      "Incorrectly calculating cost of production by not adding factory overheads to prime cost"
     ],
     "examinerTips": [
-      "Bank reconciliation appears in almost every Paper 2 examination",
-      "Always start bank reconciliation with bank statement balance, not cash book balance",
-      "Control accounts questions worth 8-12 marks are common in Section B",
-      "Show contra entries on both debit and credit sides of control accounts for full marks"
+      "Remember the formula: Cost of production = prime cost + factory overheads",
+      "Clearly separate factory costs from other business costs when preparing manufacturing accounts"
     ],
     "formulas": [
       "Closing debtors = Opening debtors + Credit sales - Cash received - Returns inwards - Bad debts - Discounts allowed ± Contra",
@@ -104,7 +112,7 @@
       "Examiner Report 2023: 'Control account balancing errors were common' — always ensure your control account balances by checking total debits equal total credits plus opening balance"
     ],
     "keyDiagram": "Bank Reconciliation Statement format: Start with 'Balance as per Cash Book (updated)' at top, then show '+ Unpresented cheques' and '- Deposits in transit (outstanding lodgements)' to arrive at 'Balance as per Bank Statement'. Control accounts follow T-account format with opening balance, increases on debit side (sales, purchases), decreases on credit side (receipts, payments, returns), and closing balance calculated.",
-    "quickRecap": "Bank reconciliation: update cash book for bank items first, then reconcile timing differences (add unpresented cheques, subtract deposits in transit). Control accounts summarize ledger totals and help find errors through balancing. Sales ledger control tracks total debtors, purchase ledger control tracks total creditors. Both reconciliation and control accounts are essential error-checking tools in accounting systems."
+    "quickRecap": "Manufacturing accounts calculate production costs by adding factory overheads to prime cost (direct materials, labour and expenses). Only factory-related costs are included, while administration and distribution costs go to the Income Statement. Transfer pricing involves adding a mark-up to production costs, creating manufacturing profit."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -112,5 +120,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:25:11.940Z",
   "updated_at": "2026-04-06T05:25:11.940Z",
-  "enriched_at": "2026-04-06T16:09:21.992Z"
+  "enriched_at": "2026-04-06T16:09:21.992Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T03:00:45.762Z"
 }

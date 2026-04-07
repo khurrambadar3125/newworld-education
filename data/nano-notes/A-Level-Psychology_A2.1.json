@@ -9,37 +9,38 @@
     "title": "Psychology and abnormality",
     "readTime": "8 min",
     "keyPoints": [
-      "**Abnormality** can be defined using statistical infrequency, deviation from social norms, failure to function adequately, or deviation from ideal mental health",
-      "**Statistical infrequency** defines abnormal behaviour as occurring in less than 5% of the population on a normal distribution curve",
-      "**Deviation from social norms** defines abnormality as behaviour that violates society's accepted standards and expectations",
-      "**DSM-5** is a classification system that uses categorical diagnosis with specific criteria for mental disorders",
-      "**Schizophrenia** is characterized by positive symptoms (hallucinations, delusions) and negative symptoms (avolition, speech poverty)",
-      "**Major depressive disorder** requires at least 5 symptoms including depressed mood or anhedonia for minimum 2 weeks",
-      "**Cognitive Behavioural Therapy (CBT)** treats abnormality by changing negative thought patterns and maladaptive behaviours",
-      "**Drug therapy** for schizophrenia uses antipsychotics that block dopamine receptors to reduce positive symptoms",
-      "**Reliability** in diagnosis means consistency of results across time and between different clinicians",
-      "**Validity** in diagnosis means the classification system measures what it claims to measure"
+      "The biological approach views humans as biological organisms where all thoughts, ideas and cognitive processes must be biological in origin - the mind 'lives' within the brain",
+      "Heritability coefficients quantify the genetic basis of characteristics (e.g. IQ has a coefficient of 0.5 according to Plomin, showing equal influence of genetics and environment)",
+      "Genotype is an individual's genetic make-up, while phenotype is the physical expression of genotype - two people may have same genotype but different phenotypes",
+      "Epigenetics involves changes in gene expression without altering genetic make-up, through environmental factors like specific diets and pollution",
+      "Natural selection is the mechanism of evolution where genetically-determined behaviours giving selective advantage are passed to future generations",
+      "The biological approach has practical applications in developing psychoactive drugs for mental health disorders like depression and schizophrenia",
+      "Biological determinism suggests all behaviour is caused by internal biological forces we cannot control, raising serious implications for judicial systems and economy"
     ],
     "definitions": [
       {
-        "term": "Abnormality",
-        "definition": "Behaviour that deviates from statistical norms, social norms, interferes with daily functioning, or represents absence of positive mental health characteristics"
+        "term": "Behaviour genetics",
+        "definition": "The study of the influence of an organism's genetic composition on its behaviour and the interaction of heredity and environment insofar as they affect behaviour"
       },
       {
-        "term": "Schizophrenia",
-        "definition": "A mental disorder characterized by disruptions in thought processes, perceptions, emotional responsiveness and social interactions"
+        "term": "Genotype",
+        "definition": "An individual's genetic make-up, where a gene is a short section of DNA coding for specific proteins"
       },
       {
-        "term": "Major depressive disorder",
-        "definition": "A mood disorder involving persistent feelings of sadness, hopelessness and loss of interest in activities for at least two weeks"
+        "term": "Phenotype",
+        "definition": "The physical expression of an individual's genotype"
       },
       {
-        "term": "Cognitive Behavioural Therapy",
-        "definition": "A psychological treatment that focuses on changing negative thought patterns and behaviours that maintain mental disorders"
+        "term": "Epigenetics",
+        "definition": "A change in gene expression, without altering an individual's genetic make-up"
       },
       {
-        "term": "DSM-5",
-        "definition": "Diagnostic and Statistical Manual of Mental Disorders, fifth edition - a classification system providing criteria for diagnosing mental disorders"
+        "term": "Natural selection",
+        "definition": "The mechanism of evolution suggesting that genetically-determined behaviour giving selective advantage will be present in future generations"
+      },
+      {
+        "term": "Evolution",
+        "definition": "The process by which organisms change over time as a result of changes in heritable physical or behavioural traits"
       }
     ],
     "howToAnswer": [
@@ -72,17 +73,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'mental illness' without defining it - always use specific diagnostic criteria",
-      "Students often confuse positive and negative symptoms of schizophrenia - positive symptoms ADD experiences, negative symptoms REMOVE normal functioning",
-      "Don't just list symptoms - always explain how they meet diagnostic criteria",
-      "Never say CBT 'cures' disorders - it 'treats' or 'reduces symptoms'",
-      "Students confuse reliability with validity - reliability is consistency, validity is accuracy"
+      "Assuming twin studies can clearly differentiate between nature and nurture effects - MZ twins may share more similar environments than DZ twins",
+      "Overlooking that two people can have the same genotype but different phenotypes due to environmental factors or personal choices",
+      "Ignoring the serious real-world implications of biological determinism for judicial responsibility and employment discrimination",
+      "Confusing genotype (genetic make-up) with phenotype (physical expression of genes)"
     ],
     "examinerTips": [
-      "This topic appears in every Paper 2 - focus on definitions of abnormality",
-      "Always give specific examples when evaluating cultural differences",
-      "Use real diagnostic criteria from DSM-5 for full marks",
-      "Compare biological vs psychological treatments for evaluation marks"
+      "Use specific examples like dopamine antagonists (Chlorpromazine) when discussing practical applications of the biological approach",
+      "Remember heritability coefficients as quantitative evidence - Plomin's IQ coefficient of 0.5 shows measurable genetic influence"
     ],
     "formulas": [],
     "keyDiagramDescription": "Normal distribution curve showing statistical infrequency with 95% of population in middle section and 2.5% at each extreme representing abnormal behaviour",
@@ -110,7 +108,7 @@
       "Examiner Report 2023: 'Candidates frequently gave vague examples without explaining how they relate to the definition' — always explicitly link your examples back to the key features of the definition you are explaining"
     ],
     "keyDiagram": "Students must be able to draw a normal distribution curve showing statistical infrequency. The diagram should include: a bell curve with the mean in the center, standard deviation markers at -2, -1, +1, +2, shaded areas at both extremes (beyond ±2 SD) labeled as 'abnormal', the central area labeled as 'normal', percentages marked (2.5% in each tail, 95% in center), and specific examples plotted (e.g., IQ scores of 70 and 130 at the cut-off points). Include clear labels for the x-axis (behavior/trait being measured) and y-axis (frequency/number of people).",
-    "quickRecap": "Abnormality can be defined in four main ways: statistical infrequency (numerically rare behaviors), deviation from social norms (breaking cultural rules), failure to function adequately (inability to cope with daily life), and deviation from ideal mental health (lacking optimal psychological wellbeing). Each definition has strengths and limitations, particularly regarding cultural differences and context. Statistical infrequency uses mathematical cut-offs, while social norms vary across cultures and time periods."
+    "quickRecap": "The biological approach views all behaviour as originating from biological processes including genes, hormones and neurotransmitters. It distinguishes between genotype (genetic make-up) and phenotype (physical expression), with epigenetics showing how environment can alter gene expression. While this approach has led to effective drug treatments for mental disorders, it raises concerns about biological determinism and its implications for moral responsibility."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -118,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:22:25.454Z",
   "updated_at": "2026-04-06T05:22:25.454Z",
-  "enriched_at": "2026-04-06T16:06:00.309Z"
+  "enriched_at": "2026-04-06T16:06:00.309Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:56:35.061Z"
 }

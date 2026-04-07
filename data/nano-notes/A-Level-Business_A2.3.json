@@ -9,32 +9,33 @@
     "title": "Global business",
     "readTime": "8 min",
     "keyPoints": [
-      "**Globalisation** is the process of increasing interconnectedness between countries through trade, investment and technology",
-      "**Multinational companies (MNCs)** operate in more than one country and have subsidiaries or branches in different nations",
-      "**Emerging markets** are developing economies with rapid growth rates but higher political and economic risks",
-      "**Cultural differences** affect business operations including language, religion, customs, values and business practices",
-      "**Economies of scale** are achieved by MNCs through standardised production across multiple markets",
-      "**Market penetration** strategies help MNCs enter new geographical markets to increase sales and market share",
-      "**Political risk** includes government instability, changes in regulations, and potential nationalisation of assets",
-      "**Exchange rate fluctuations** affect the profitability of international operations and require currency hedging",
-      "**Transfer pricing** allows MNCs to allocate costs between subsidiaries in different countries for tax efficiency"
+      "Businesses aim to meet customer needs by using resources to make goods and services that customers will buy",
+      "Products can be either for final consumers or capital and intermediate goods for business customers",
+      "Four key factors of production are needed: labour (human effort), capital (equipment and machinery), land (business location), and enterprise (risk taking and decision making)",
+      "Opportunity cost is an important concept in business activity and business decisions",
+      "When a decision is made to purchase one item, other items have to be 'given up' as resources are scarce",
+      "Business activity transforms resources into products and services for consumers and business customers"
     ],
     "definitions": [
       {
-        "term": "Globalisation",
-        "definition": "The process of increasing interconnectedness between countries through trade, investment, technology and cultural exchange"
+        "term": "Labour",
+        "definition": "Human effort to produce goods or provide services to customers"
       },
       {
-        "term": "Multinational company (MNC)",
-        "definition": "A business that operates in more than one country and has subsidiaries or production facilities in different nations"
+        "term": "Capital",
+        "definition": "Equipment and machinery"
       },
       {
-        "term": "Emerging market",
-        "definition": "A developing economy with rapid growth rates but higher political and economic risks compared to developed markets"
+        "term": "Land",
+        "definition": "A location to operate the business from"
       },
       {
-        "term": "Cultural differences",
-        "definition": "Variations in language, religion, customs, values and business practices between different countries and societies"
+        "term": "Enterprise",
+        "definition": "Risk taking and decision making undertaken by an entrepreneur"
+      },
+      {
+        "term": "Opportunity cost",
+        "definition": "What has to be 'given up' when a decision is made to purchase one item, as resources are scarce"
       }
     ],
     "howToAnswer": [
@@ -69,17 +70,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'globalisation is good/bad' — always explain specific advantages and disadvantages with context",
-      "Students often confuse multinational companies with international trade — MNCs must have operations in multiple countries",
-      "Avoid listing cultural differences without explaining how they specifically impact business operations",
-      "Never ignore the two-way nature of globalisation — it affects both developed and developing countries",
-      "Students often fail to distinguish between political risk and economic risk in emerging markets"
+      "Confusing the four factors of production and their specific definitions",
+      "Not understanding that opportunity cost applies to all business decisions involving scarce resources",
+      "Mixing up consumer goods and capital goods in business contexts"
     ],
     "examinerTips": [
-      "Global business questions appear in most Paper 2 exams, especially in Section B",
-      "Always use specific country examples when discussing emerging markets or cultural differences",
-      "Link MNC strategies to business objectives like profit maximisation or market share growth",
-      "Consider both opportunities and threats when evaluating international expansion decisions"
+      "Remember all four factors of production are essential for business activity",
+      "Always consider opportunity cost when analyzing business decisions about resource allocation"
     ],
     "formulas": [],
     "keyDiagramDescription": "Draw a diagram showing the impacts of globalisation with arrows connecting: increased trade, technology transfer, cultural exchange, and economic interdependence between developed and developing countries",
@@ -107,7 +104,7 @@
       "Examiner Report 2023: 'Weak responses on exchange rates only mentioned the impact on costs, ignoring revenue effects' — always analyze how currency changes affect both the cost of imports AND the value of export revenues"
     ],
     "keyDiagram": "Students must draw the 'Market Entry Strategy Matrix' showing four quadrants: 1) Exporting (low risk, low control) 2) Licensing/Franchising (medium risk, medium control) 3) Joint Ventures (medium-high risk, shared control) 4) Wholly-owned subsidiaries (high risk, full control). Include arrows showing increasing investment requirement and increasing control/risk levels. Label axes as 'Level of Investment/Risk' (vertical) and 'Level of Control' (horizontal).",
-    "quickRecap": "Global business involves companies operating across national borders through various entry strategies from low-risk exporting to high-risk direct investment. Key challenges include exchange rate fluctuations, cultural differences, and varying legal systems. Success requires balancing standardization for efficiency with localization for market acceptance. Multinational corporations must consider political, economic, social, and technological factors when expanding internationally."
+    "quickRecap": "Business activity uses four factors of production (labour, capital, land, enterprise) to create goods and services for customers. Resources are scarce, so every business decision involves opportunity cost - what must be given up when choosing one option over another."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -115,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:13:49.245Z",
   "updated_at": "2026-04-06T05:13:49.245Z",
-  "enriched_at": "2026-04-06T16:06:45.932Z"
+  "enriched_at": "2026-04-06T16:06:45.932Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T03:02:03.584Z"
 }

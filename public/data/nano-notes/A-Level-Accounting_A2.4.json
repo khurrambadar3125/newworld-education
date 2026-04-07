@@ -9,32 +9,37 @@
     "title": "Budgeting and budgetary control",
     "readTime": "8 min",
     "keyPoints": [
-      "A **budget** is a quantified financial plan prepared in advance for a specific time period covering expected income and expenditure",
-      "**Budgetary control** involves comparing actual results with budgeted figures and taking corrective action for significant variances",
-      "**Fixed budgets** remain unchanged regardless of actual activity levels, while **flexible budgets** adjust costs in relation to actual activity levels",
-      "**Variance analysis** compares budgeted figures with actual results to identify areas requiring management attention and corrective action",
-      "**Favourable variances** occur when actual results are better than budget (higher revenue or lower costs than planned)",
-      "**Adverse variances** occur when actual results are worse than budget (lower revenue or higher costs than planned)",
-      "**Sales variance** can be split into sales price variance and sales volume variance for detailed analysis",
-      "**Direct cost variances** include material price variance, material usage variance, labour rate variance and labour efficiency variance",
-      "**Overhead variances** compare actual overhead costs with budgeted overhead costs to control indirect expenses"
+      "Budgeting & budgetary control is a key topic in Cost & Management Accounting",
+      "Manufacturing accounts calculate the production cost of manufactured goods at the end of a financial period",
+      "Cost of production equals prime cost plus factory overheads",
+      "Transfer price is the production cost of completed goods plus a percentage mark-up",
+      "Factory/manufacturing profit is the difference between transfer price and production cost of completed goods",
+      "Unrealised profit is profit which is not recognised until certain conditions are met"
     ],
     "definitions": [
       {
-        "term": "Budget",
-        "definition": "A quantified financial plan prepared in advance for a specific time period covering expected income and expenditure"
+        "term": "Manufacturing account",
+        "definition": "An account prepared at the end of a financial period to calculate the production cost of manufactured goods"
       },
       {
-        "term": "Flexible budget",
-        "definition": "A budget that adjusts the budgeted costs in relation to the actual level of activity achieved"
+        "term": "Prime cost/direct cost",
+        "definition": "The total of direct materials, direct labour, and direct expenses"
       },
       {
-        "term": "Variance",
-        "definition": "The difference between budgeted and actual figures"
+        "term": "Factory overheads/indirect costs",
+        "definition": "Costs incurred from the running of the factory, including indirect factory wages and depreciation of factory machinery"
       },
       {
-        "term": "Budgetary control",
-        "definition": "The process of comparing actual results with budgeted figures and taking corrective action for significant variances"
+        "term": "Transfer price",
+        "definition": "The production cost of completed goods plus a percentage mark-up"
+      },
+      {
+        "term": "Factory/manufacturing profit",
+        "definition": "The difference between the transfer price and the production cost of completed goods"
+      },
+      {
+        "term": "Unrealised profit",
+        "definition": "Profit which is not recognised until certain conditions are met"
       }
     ],
     "howToAnswer": [
@@ -67,17 +72,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say variance is 'good' or 'bad' — always say 'favourable' or 'adverse'",
-      "Students often forget to label variances with (F) or (A) — this loses marks in calculations",
-      "Confusing flexible budgets with rolling budgets — flexible adjusts for activity, rolling updates time periods",
-      "Failing to show workings in variance calculations — method marks are available even if final answer is wrong",
-      "Treating all favourable variances as positive — some may indicate problems like using cheaper materials"
+      "Including non-production costs like administration, finance, and distribution costs in the manufacturing account instead of the income statement",
+      "Confusing prime cost with total production cost",
+      "Not understanding the difference between transfer price and production cost"
     ],
     "examinerTips": [
-      "Variance analysis appears frequently in Paper 2 Section A — practice calculations regularly",
-      "Always comment on the significance of variances in context — large variances need investigation",
-      "Use standard format for variance calculations: (Actual - Budget) with clear F/A labels",
-      "Remember that budgets are planning tools AND control tools — mention both purposes"
+      "Remember that manufacturing accounts only include factory and actual manufacturing process information",
+      "Ensure you can calculate cost of production using the formula: prime cost + factory overheads"
     ],
     "formulas": [
       "Variance = Actual - Budget",
@@ -113,7 +114,7 @@
       "Examiner Report 2021: 'Weak responses failed to distinguish between adverse and favorable variances' — remember adverse variances are bad (actual costs higher than budget, actual revenue lower than budget)"
     ],
     "keyDiagram": "Students must draw a Budget Preparation Flow Chart showing: 1) Sales Budget at top (starting point), 2) Production Budget (units needed), 3) Direct Materials Budget, 4) Direct Labour Budget, 5) Overhead Budget, 6) Cash Budget (combining all cash flows), 7) Budgeted Income Statement, 8) Master Budget at bottom. Include arrows showing dependencies - sales budget feeds into production budget, which feeds into resource budgets, all feeding into cash budget.",
-    "quickRecap": "Budgets are financial plans comparing actual vs planned performance. Master budget includes all departmental budgets. Variances show differences: adverse = bad for profit, favorable = good for profit. Cash budgets only include actual cash flows (exclude depreciation). Benefits include planning, control, coordination, and motivation of staff."
+    "quickRecap": "Budgeting & budgetary control is part of Cost & Management Accounting. Manufacturing accounts calculate production costs by adding factory overheads to prime costs. Transfer pricing involves adding a mark-up to production costs, creating manufacturing profit which may be unrealised until goods are sold."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -121,5 +122,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:28:27.765Z",
   "updated_at": "2026-04-06T05:28:27.766Z",
-  "enriched_at": "2026-04-06T16:07:03.264Z"
+  "enriched_at": "2026-04-06T16:07:03.264Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:59:36.227Z"
 }

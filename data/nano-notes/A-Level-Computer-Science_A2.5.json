@@ -9,36 +9,25 @@
     "title": "Artificial intelligence",
     "readTime": "8 min",
     "keyPoints": [
-      "**Artificial intelligence** is the simulation of human intelligence by computer systems to perform tasks that normally require human intelligence",
-      "**Machine learning** is a subset of AI where computers learn from data without being explicitly programmed for each specific task",
-      "**Supervised learning** uses labelled training data to learn patterns and make predictions on new, unseen data",
-      "**Unsupervised learning** finds hidden patterns in data without using labelled examples or target outputs",
-      "**Neural networks** are computing systems inspired by biological neural networks that consist of interconnected nodes (neurons) processing information",
-      "**Expert systems** are AI programs that use knowledge bases and inference engines to solve problems in specific domains like medical diagnosis",
-      "**Natural language processing** enables computers to understand, interpret and generate human language in text or speech format",
-      "**Computer vision** allows machines to identify, analyse and understand visual information from images or video streams",
-      "AI applications include chatbots, recommendation systems, autonomous vehicles, facial recognition, and predictive analytics in various industries"
+      "Artificial Intelligence is covered in Paper 3 Advanced Theory under the Systems Software section",
+      "The course develops computational thinking skills including abstraction, decomposition and algorithmic thinking",
+      "Programming paradigms are essential ways of thinking about or approaching problems in computer science",
+      "Communication involves understanding rules and methods for data transfer between devices and components",
+      "Computer architecture and hardware form a key conceptual foundation of the subject",
+      "The course encourages learners to be confident using a range of technology and programming paradigms"
     ],
     "definitions": [
       {
-        "term": "Artificial Intelligence",
-        "definition": "The simulation of human intelligence processes by computer systems, including learning, reasoning and self-correction"
+        "term": "Computational thinking",
+        "definition": "A set of fundamental skills that help produce a solution to a problem, using skills such as abstraction, decomposition and algorithmic thinking"
       },
       {
-        "term": "Machine Learning",
-        "definition": "A subset of AI where computers automatically learn and improve from experience without being explicitly programmed"
+        "term": "Programming paradigm",
+        "definition": "A way of thinking about or approaching problems, with different programming styles suited to unique functions, tools and specific situations"
       },
       {
-        "term": "Neural Network",
-        "definition": "A computing system modelled on biological neural networks, consisting of interconnected nodes that process information using weighted connections"
-      },
-      {
-        "term": "Expert System",
-        "definition": "An AI program that uses a knowledge base of facts and rules with an inference engine to solve problems in a specific domain"
-      },
-      {
-        "term": "Training Data",
-        "definition": "A dataset used to teach a machine learning algorithm to make predictions or classifications"
+        "term": "Communication",
+        "definition": "The ability to transfer data from one device or component to another and understanding of the rules and methods used in this data transfer"
       }
     ],
     "howToAnswer": [
@@ -71,18 +60,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'AI thinks' — always say 'AI processes data' or 'AI follows algorithms'",
-      "Students confuse machine learning with programming — ML learns from data, programming follows explicit instructions",
-      "Don't say neural networks 'copy the brain' — say they are 'inspired by' or 'modelled on' biological neural networks",
-      "Avoid saying expert systems 'know everything' — they work within specific, limited domains only",
-      "Never claim AI has consciousness or emotions — it processes information using mathematical algorithms"
+      "Not understanding that AI is part of the Systems Software section in Paper 3",
+      "Failing to apply computational thinking skills systematically when approaching problems",
+      "Not recognizing the importance of selecting appropriate programming paradigms for specific situations"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2 — focus on definitions and comparisons",
-      "Always give specific examples when describing AI applications",
-      "Draw clear diagrams for neural networks showing inputs, hidden layers, and outputs",
-      "Distinguish between narrow AI (current) and general AI (theoretical future)",
-      "Link AI applications to real-world Pakistani contexts like agriculture, healthcare, or banking"
+      "Always check the latest syllabus available from the public website for current content requirements",
+      "Focus on developing transferable skills including computational thinking and problem solving as these are highly valued"
     ],
     "formulas": [],
     "keyDiagramDescription": "Neural network diagram showing input layer (data inputs), hidden layer(s) with weighted connections between nodes, and output layer producing final results. Each connection has a weight value, and nodes apply activation functions to process signals.",
@@ -111,7 +95,7 @@
       "Examiner Report 2021: 'Candidates often failed to explain both advantages AND disadvantages when asked' — ensure you provide balanced arguments and don't just focus on benefits of AI systems"
     ],
     "keyDiagram": "Draw a flowchart showing the components of an expert system: User Interface (top) connects bidirectionally to Inference Engine (center), which connects to Knowledge Base (left containing 'Facts, Rules, Expertise') and Working Memory (right containing 'Current session data'). Show arrows indicating data flow: user input goes down, system queries go between inference engine and knowledge base, and conclusions flow back up to user interface.",
-    "quickRecap": "AI systems include expert systems (mimic human expertise using knowledge base + inference engine), machine learning (computers learn from data without explicit programming), and neural networks (mimic brain structure for pattern recognition). Key applications: medical diagnosis, autonomous vehicles, recommendation systems, image recognition. Remember to distinguish true AI from simple automation and always give specific examples with clear AI components."
+    "quickRecap": "Artificial Intelligence is studied as part of Paper 3 Advanced Theory under Systems Software. The course emphasizes computational thinking as a fundamental skill set involving abstraction, decomposition and algorithmic thinking. Students develop understanding of programming paradigms and communication methods while being encouraged to use technology confidently and responsibly."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +103,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:19:13.037Z",
   "updated_at": "2026-04-06T05:19:13.037Z",
-  "enriched_at": "2026-04-06T16:07:26.213Z"
+  "enriched_at": "2026-04-06T16:07:26.213Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:38:30.906Z"
 }

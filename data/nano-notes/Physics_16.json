@@ -9,37 +9,30 @@
     "title": "Magnetism",
     "readTime": "8 min",
     "keyPoints": [
-      "A **permanent magnet** is made of a material that retains its magnetism after the magnetizing force is removed",
-      "**Magnetic field** is the region around a magnet where a magnetic force is experienced by magnetic materials",
-      "**Magnetic field lines** always go from north pole to south pole outside the magnet and from south to north inside the magnet",
-      "Field lines are **closer together** where the magnetic field is stronger and **further apart** where it is weaker",
-      "**Like poles repel** and **unlike poles attract** - this follows the inverse square law with distance",
-      "A **magnetic material** is attracted to a magnet but an **unmagnetized magnetic material** is attracted to both poles equally",
-      "**Iron, steel, cobalt and nickel** are the main magnetic materials - iron is easily magnetized and demagnetized",
-      "**Steel** retains magnetism better than iron making it suitable for permanent magnets",
-      "**Induced magnetism** occurs when a magnetic material becomes temporarily magnetized in a magnetic field",
-      "The **neutral point** is where the magnetic field strength is zero due to two opposing magnetic fields"
+      "A magnet has a north pole and south pole - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are attracted to magnets, while non-magnetic materials (glass, plastic) are not affected",
+      "Magnetic materials can be magnetised by stroking with a magnet, hammering in a magnetic field, or placing in a coil with direct current",
+      "Temporary magnets lose magnetism when the magnetic field is removed, permanent magnets retain their magnetism",
+      "Electromagnets are temporary magnets made by placing soft iron in coiled wire with direct current",
+      "Magnetic field lines show field direction (north to south pole) and strength (closer lines = stronger field)",
+      "Two methods to visualise magnetic fields: plotting compass (trace field lines step by step) or iron filings (sprinkle on paper over magnet)"
     ],
     "definitions": [
       {
-        "term": "Permanent magnet",
-        "definition": "A material that retains its magnetism after the magnetizing force is removed"
+        "term": "magnet",
+        "definition": "a material or object that produces a magnetic field"
       },
       {
-        "term": "Magnetic field",
-        "definition": "The region around a magnet where a magnetic force is experienced by magnetic materials"
+        "term": "magnetic field",
+        "definition": "a region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Magnetic field lines",
-        "definition": "Lines that show the direction of the magnetic field, going from north pole to south pole outside the magnet"
+        "term": "induced magnetism",
+        "definition": "the process of magnetising materials by placing them in a magnetic field"
       },
       {
-        "term": "Induced magnetism",
-        "definition": "The temporary magnetism produced in a magnetic material when it is placed in a magnetic field"
-      },
-      {
-        "term": "Neutral point",
-        "definition": "The point where the resultant magnetic field is zero due to two opposing magnetic fields cancelling out"
+        "term": "electromagnet",
+        "definition": "a common temporary magnet made when soft iron is placed within coiled wire with a direct current running through it"
       }
     ],
     "howToAnswer": [
@@ -71,17 +64,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'magnetic force goes from north to south' — always say 'magnetic field lines go from north to south'",
-      "Students often confuse magnetic materials with magnets — magnetic materials are attracted but not necessarily magnetized",
-      "Never draw magnetic field lines crossing each other — they never intersect",
-      "Students often forget that field lines continue inside the magnet from south to north",
-      "Never say 'magnetism flows' — magnetism is a property, not a flowing substance"
+      "Thinking magnetic materials can repel magnets - the force between a magnet and magnetic material is always attractive",
+      "Confusing temporary and permanent magnets - temporary magnets lose magnetism when the field is removed",
+      "Drawing magnetic field lines incorrectly - they must point from north to south pole",
+      "Not understanding that magnetic field strength is shown by how close field lines are together"
     ],
     "examinerTips": [
-      "Magnetic field patterns appear frequently in Paper 2 — practice drawing uniform and radial fields",
-      "Always use a ruler for field lines and show direction with arrows",
-      "Questions on magnetic materials vs magnets are very common — know the difference",
-      "Plotting compass experiments often tested — remember neutral points between like poles"
+      "Remember that magnetic field direction is defined as the direction of force on a north pole placed in the field",
+      "When plotting magnetic fields, always start the compass next to the magnet's edge and follow the needle direction step by step"
     ],
     "formulas": [],
     "keyDiagramDescription": "Bar magnet showing curved magnetic field lines from north to south pole, with lines closer together near poles (stronger field) and further apart in middle (weaker field). Include arrows showing direction and demonstrate that lines never cross.",
@@ -109,7 +99,7 @@
       "Examiner Report 2021: 'Candidates failed to mention that magnetic forces can be attractive or repulsive' — always state that like poles repel and unlike poles attract when describing magnetic interactions"
     ],
     "keyDiagram": "Magnetic field pattern around a bar magnet: Draw a rectangular bar magnet labeled with N and S poles. Show curved field lines starting from North pole, curving outward and returning to South pole. Lines should be closer together near the poles (stronger field) and spread out in the middle. Include arrows on field lines pointing away from North toward South. Add the rule that field lines never cross each other.",
-    "quickRecap": "Magnets have North and South poles - like poles repel, unlike attract. Magnetic materials (iron, steel, nickel, cobalt) are attracted to magnets. Iron is temporary magnet, steel is permanent. Magnetic field lines go from N to S, never cross. Electromagnets use current through coil - strength increases with more turns or more current."
+    "quickRecap": "Magnets have north and south poles with like poles repelling and opposite poles attracting. Magnetic materials can be temporarily or permanently magnetised using various methods including electromagnets. Magnetic fields can be visualised using plotting compasses or iron filings, with field lines showing both direction and strength."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -117,5 +107,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:19:04.816Z",
   "updated_at": "2026-04-05T21:19:04.816Z",
-  "enriched_at": "2026-04-06T15:59:23.264Z"
+  "enriched_at": "2026-04-06T15:59:23.264Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:19:15.181Z"
 }

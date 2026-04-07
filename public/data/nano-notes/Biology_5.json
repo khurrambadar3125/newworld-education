@@ -9,37 +9,26 @@
     "title": "Nutrition in humans",
     "readTime": "8 min",
     "keyPoints": [
-      "**Balanced diet** contains all nutrients in correct proportions to maintain health",
-      "**Carbohydrates** provide energy for respiration and should form the largest proportion of the diet",
-      "**Proteins** are needed for growth and repair of tissues and making enzymes",
-      "**Lipids** provide energy storage, insulation and protection of organs",
-      "**Vitamins** are needed in small amounts to prevent deficiency diseases - vitamin C prevents scurvy, vitamin D prevents rickets",
-      "**Minerals** like iron is needed for making haemoglobin and calcium for strong bones and teeth",
-      "**Fibre** prevents constipation and reduces risk of colon cancer",
-      "**Mechanical digestion** breaks food into smaller pieces to increase surface area for enzymes",
-      "**Chemical digestion** uses enzymes to break down large molecules into smaller soluble molecules for absorption",
-      "**Absorption** occurs mainly in the small intestine where nutrients pass into the blood"
+      "Nutrition is one of seven characteristics of living organisms - organisms take in materials for development used in chemical reactions to produce energy for growth and repair",
+      "Animals require organic compounds, ions and water for nutrition",
+      "Plants take in light, carbon dioxide, water and ions for use in photosynthesis",
+      "Nutrition materials are used in chemical reactions to produce energy for growth and repair",
+      "Pathogens that cause disease can be transmitted through contaminated foods",
+      "Food must be prepared hygienically to prevent the spread of disease",
+      "Clean water supply is essential to prevent disease transmission"
     ],
     "definitions": [
       {
         "term": "Nutrition",
-        "definition": "The process by which organisms obtain and use food for growth, repair, energy and maintaining health"
+        "definition": "Process where organisms take in materials for development, used in chemical reactions to produce energy for growth and repair"
       },
       {
-        "term": "Digestion",
-        "definition": "The breakdown of large insoluble food molecules into small soluble molecules that can be absorbed into the blood"
+        "term": "Pathogen",
+        "definition": "An organism that causes disease"
       },
       {
-        "term": "Balanced diet",
-        "definition": "A diet containing all nutrients in the correct proportions to maintain health"
-      },
-      {
-        "term": "Malnutrition",
-        "definition": "A condition caused by eating too much, too little or wrong types of nutrients"
-      },
-      {
-        "term": "Peristalsis",
-        "definition": "Wave-like contractions of smooth muscle that push food along the alimentary canal"
+        "term": "Transmissible diseases",
+        "definition": "Diseases caused by pathogens that can be passed from host to host"
       }
     ],
     "howToAnswer": [
@@ -71,18 +60,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'protein gives energy' as main function - always emphasize growth and repair first",
-      "Students confuse absorption and digestion - absorption is uptake into blood, digestion is breakdown",
-      "Don't say 'vitamins give energy' - they are needed in small amounts for specific functions only",
-      "Never write 'food goes to stomach' - always use 'food passes into stomach'",
-      "Students forget that mechanical digestion increases surface area for chemical digestion"
+      "Confusing what animals need (organic compounds, ions, water) with what plants need (light, carbon dioxide, water, ions)",
+      "Forgetting that nutrition is used for both energy production AND growth and repair",
+      "Not recognizing that contaminated food can transmit pathogens and cause disease"
     ],
     "examinerTips": [
-      "This topic appears in every exam paper - learn the functions of all nutrients",
-      "Always distinguish between mechanical and chemical digestion in your answers",
-      "Draw and label the digestive system diagram - commonly worth 4-6 marks",
-      "Learn specific deficiency diseases for vitamins and minerals",
-      "Remember that enzymes work best at body temperature and neutral pH"
+      "Remember that nutrition differs between animals and plants - animals need organic compounds while plants use photosynthesis",
+      "Always link nutrition to both energy production and growth/repair processes in your answers"
     ],
     "formulas": [],
     "keyDiagramDescription": "Digestive system showing mouth, oesophagus, stomach, small intestine, large intestine, liver, pancreas and their functions in digestion and absorption",
@@ -111,7 +95,7 @@
       "Examiner Report 2023: 'Common error was stating that all digestion happens in the stomach' — remember that protein digestion starts in stomach but carbohydrate and fat digestion occur mainly in small intestine"
     ],
     "keyDiagram": "Students must be able to draw and label the complete digestive system showing: mouth (salivary glands), oesophagus, stomach, liver, gallbladder, pancreas, small intestine (duodenum and ileum), large intestine, rectum and anus. Key labels should include the function of each organ. For detailed questions, students should also draw a cross-section of a villus showing: epithelial cells, capillary network, lacteal, and microvilli, demonstrating how surface area is maximized for absorption.",
-    "quickRecap": "Digestion breaks down large food molecules into smaller ones using mechanical (teeth, stomach churning) and chemical (enzymes) processes. Key enzymes: amylase (starch→maltose), pepsin (proteins in stomach), lipase (fats→fatty acids + glycerol), maltase (maltose→glucose). Absorption occurs mainly in small intestine through villi which provide large surface area. Remember: digestion = breaking down, absorption = taking into bloodstream."
+    "quickRecap": "Nutrition is a key characteristic of living organisms where materials are taken in for energy production, growth and repair. Animals require organic compounds, ions and water, while plants need light, carbon dioxide, water and ions for photosynthesis. Proper food hygiene is essential to prevent disease transmission through contaminated food sources."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -119,5 +103,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:27:23.751Z",
   "updated_at": "2026-04-05T21:27:23.751Z",
-  "enriched_at": "2026-04-06T16:09:12.496Z"
+  "enriched_at": "2026-04-06T16:09:12.496Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:25:21.292Z"
 }

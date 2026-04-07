@@ -9,36 +9,40 @@
     "title": "Incomplete Records (AS6)",
     "readTime": "8 min",
     "keyPoints": [
-      "**Incomplete records** occur when a business does not maintain a full double-entry bookkeeping system",
-      "**Statement of Affairs** is prepared to find missing figures by listing assets and liabilities at opening and closing",
-      "**Capital comparison method** calculates profit by comparing opening capital with closing capital, adjusting for drawings and additional capital",
-      "**Margin** is gross profit expressed as a percentage of selling price: (Gross Profit ÷ Sales) × 100",
-      "**Mark-up** is gross profit expressed as a percentage of cost price: (Gross Profit ÷ Cost of Sales) × 100",
-      "**Sales ledger control account** is used to find missing sales, purchases or cash received from customers",
-      "**Bank summary** method reconstructs cash book from bank statements when cash records are incomplete",
-      "**Missing figures** are calculated using accounting equation: Assets - Liabilities = Capital",
-      "**Total debtors method** finds sales by analyzing opening debtors + sales - cash received = closing debtors"
+      "Financial statements provide information about financial position, financial performance and cash flows useful to users in making economic decisions",
+      "Manufacturing account is prepared at the end of a financial period to calculate the production cost of manufactured goods",
+      "Manufacturing account only includes information about the factory and actual manufacturing process",
+      "Cost of production is calculated by adding factory overheads to prime cost",
+      "Prime cost (direct cost) is the total of direct materials, direct labour, and direct expenses",
+      "Factory overheads (indirect costs) include costs from running the factory such as indirect factory wages and depreciation of factory machinery",
+      "Transfer price is the production cost of completed goods plus a percentage mark-up",
+      "Manufacturing profit is the difference between the transfer price and the production cost of completed goods",
+      "Work in progress represents inventory of partly finished goods in the factory at any point in time"
     ],
     "definitions": [
       {
-        "term": "Incomplete records",
-        "definition": "A system where businesses do not maintain full double-entry bookkeeping, resulting in missing or inadequate accounting records"
+        "term": "Manufacturing account",
+        "definition": "An account prepared at the end of a financial period to calculate the production cost of manufactured goods"
       },
       {
-        "term": "Statement of Affairs",
-        "definition": "A statement similar to a balance sheet that lists assets and liabilities to determine capital when records are incomplete"
+        "term": "Prime cost",
+        "definition": "The total of direct materials, direct labour, and direct expenses"
       },
       {
-        "term": "Margin",
-        "definition": "Gross profit expressed as a percentage of sales revenue"
+        "term": "Factory overheads",
+        "definition": "Costs incurred from the running of the factory including indirect factory wages and depreciation of factory machinery"
       },
       {
-        "term": "Mark-up",
-        "definition": "Gross profit expressed as a percentage of cost of goods sold"
+        "term": "Transfer price",
+        "definition": "The production cost of completed goods plus a percentage mark-up"
       },
       {
-        "term": "Capital comparison method",
-        "definition": "A method of finding profit by comparing opening and closing capital after adjusting for drawings and additional capital introduced"
+        "term": "Manufacturing profit",
+        "definition": "The difference between the transfer price and the production cost of completed goods"
+      },
+      {
+        "term": "Work in progress",
+        "definition": "Inventory of partly finished goods in the factory at any point in time"
       }
     ],
     "howToAnswer": [
@@ -66,17 +70,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse margin with mark-up - margin uses sales as denominator, mark-up uses cost of sales",
-      "Students often forget to adjust for drawings and additional capital in capital comparison method",
-      "Never prepare Statement of Affairs like an Income Statement - it shows financial position, not profit",
-      "Students frequently add drawings instead of subtracting when calculating opening capital",
-      "Never use opening figures when closing figures are required in control accounts"
+      "Including non-production costs like administration, finance, and distribution costs in the manufacturing account instead of the income statement",
+      "Confusing prime cost with total production cost - prime cost excludes factory overheads",
+      "Mixing up direct costs and indirect costs when calculating manufacturing costs"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2 Section B",
-      "Always show workings for margin/mark-up calculations",
-      "Use T-account format for sales/purchase ledger control accounts",
-      "Check that Statement of Affairs balances (total assets = total liabilities + capital)"
+      "Remember that manufacturing account only deals with factory costs - all other costs go to the income statement",
+      "Use the formula: Cost of production = prime cost + factory overheads"
     ],
     "formulas": [
       "Margin = (Gross Profit ÷ Sales) × 100",
@@ -110,7 +110,7 @@
       "Examiner Report 2021: 'Candidates often failed to distinguish between cash and credit transactions when reconstructing accounts' — clearly separate cash sales/purchases from credit sales/purchases using debtor and creditor movements"
     ],
     "keyDiagram": "Students must be able to draw T-accounts showing the reconstruction process. Essential diagram shows: (1) Bank/Cash T-account with all known receipts and payments, balancing figure representing unknown item, (2) Debtors T-account showing opening balance, credit sales (balancing figure), cash received, and closing balance, (3) Creditors T-account showing opening balance, purchases (balancing figure), cash paid, and closing balance. Include arrows showing the flow from T-accounts to Trading and P&L account preparation.",
-    "quickRecap": "Incomplete records means reconstructing accounts from available information using the accounting equation (Assets = Capital + Liabilities). Use T-accounts to find missing figures as balancing items. Bank records often provide the starting point for calculating sales, purchases, or other missing items. Always remember: opening capital + profit - drawings = closing capital."
+    "quickRecap": "Manufacturing accounts calculate the production cost of manufactured goods by combining prime costs (direct materials, labour, expenses) with factory overheads. The manufacturing account focuses solely on factory operations, while other business costs appear in the income statement. Transfer pricing involves adding a mark-up to production costs, creating manufacturing profit."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +118,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:26:01.924Z",
   "updated_at": "2026-04-06T05:26:01.924Z",
-  "enriched_at": "2026-04-06T16:10:08.075Z"
+  "enriched_at": "2026-04-06T16:10:08.075Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T03:01:08.430Z"
 }

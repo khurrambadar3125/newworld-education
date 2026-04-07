@@ -9,36 +9,33 @@
     "title": "Business finance - Ratio Analysis",
     "readTime": "8 min",
     "keyPoints": [
-      "**Profitability ratios** measure how effectively a business generates profit from its resources and include gross profit margin, net profit margin, and return on capital employed",
-      "**Liquidity ratios** assess a business's ability to meet short-term debts and include current ratio and acid test ratio",
-      "**Gearing ratio** measures the proportion of capital employed that is financed by long-term debt, indicating financial risk",
-      "**Efficiency ratios** evaluate how well a business uses its assets and include inventory turnover, debtor days, and creditor days",
-      "**Gross profit margin** shows the percentage of revenue remaining after deducting cost of goods sold",
-      "**Current ratio** indicates whether current assets can cover current liabilities, with 1.5-2:1 considered healthy",
-      "**Return on Capital Employed (ROCE)** measures profitability relative to capital invested and is useful for comparing business performance",
-      "Ratio analysis allows **comparison over time** (trend analysis) and **comparison with competitors** (inter-firm comparison)",
-      "**Limitations of ratio analysis** include reliance on historical data, different accounting policies, and inability to consider external factors"
+      "Businesses aim to meet customer needs by using resources to make goods and services",
+      "Products can be either for final consumers or capital and intermediate goods for business customers",
+      "Four factors of production are needed: labour (human effort), capital (equipment and machinery), land (location), and enterprise (risk taking and decision making)",
+      "Opportunity cost is an important concept in business activity and business decisions",
+      "When a decision is made to purchase one item, other items have to be 'given up' as resources are scarce",
+      "Business activity involves transforming resources into products and services for customers"
     ],
     "definitions": [
       {
-        "term": "Profitability ratios",
-        "definition": "Financial ratios that measure a business's ability to generate profit relative to revenue, assets, or capital employed"
+        "term": "Labour",
+        "definition": "Human effort to produce goods or provide services to customers"
       },
       {
-        "term": "Liquidity",
-        "definition": "The ability of a business to convert assets into cash quickly to meet short-term debts"
+        "term": "Capital",
+        "definition": "Equipment and machinery"
       },
       {
-        "term": "Gearing",
-        "definition": "The proportion of capital employed that comes from long-term debt rather than equity"
+        "term": "Land",
+        "definition": "A location to operate the business from"
       },
       {
-        "term": "Current ratio",
-        "definition": "A liquidity ratio calculated by dividing current assets by current liabilities"
+        "term": "Enterprise",
+        "definition": "Risk taking and decision making undertaken by an entrepreneur"
       },
       {
-        "term": "Return on Capital Employed",
-        "definition": "A profitability ratio that measures profit before interest and tax as a percentage of capital employed"
+        "term": "Opportunity cost",
+        "definition": "An important concept in business activity and business decisions where other items have to be 'given up' when making purchasing decisions as resources are scarce"
       }
     ],
     "howToAnswer": [
@@ -67,17 +64,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'profit margin is good' without stating a percentage - always give specific figures and compare to industry standards",
-      "Students often confuse gross profit margin with net profit margin - gross excludes expenses, net includes all costs",
-      "Never calculate gearing as debt ÷ equity - always use debt ÷ capital employed × 100",
-      "Students forget to convert ratios to percentages when required - ROCE must be shown as percentage",
-      "Never analyse ratios in isolation - always compare with previous years or competitors for meaningful analysis"
+      "Confusing capital goods with capital as a factor of production",
+      "Not understanding that land refers to location rather than just physical land",
+      "Forgetting that opportunity cost applies to all business decisions, not just major purchases"
     ],
     "examinerTips": [
-      "Ratio analysis appears in every Paper 2 - practice calculations until automatic",
-      "Always show your working even if answer is wrong - method marks available",
-      "When analysing ratios, always give a judgment (good/bad/concerning) with justification",
-      "Learn the 'ideal' ranges: current ratio 1.5-2:1, gearing below 50%, gross profit margin varies by industry"
+      "Remember that enterprise involves both risk taking and decision making by entrepreneurs",
+      "Understand that opportunity cost is relevant whenever resources are scarce and choices must be made"
     ],
     "formulas": [
       "Gross Profit Margin = (Gross Profit ÷ Revenue) × 100",
@@ -112,7 +105,7 @@
       "Examiner Report 2024: 'Students frequently gave generic comments about ratios without reference to the specific business context' — always relate your ratio analysis to the particular business situation described in the question"
     ],
     "keyDiagram": "Create a 2x2 ratio analysis framework showing the four main categories: PROFITABILITY (top-left: Gross Profit Margin = Gross Profit/Sales × 100, Net Profit Margin = Net Profit/Sales × 100), LIQUIDITY (top-right: Current Ratio = Current Assets/Current Liabilities, Acid Test = (Current Assets-Inventory)/Current Liabilities), EFFICIENCY (bottom-left: Asset Turnover = Sales/Total Assets, Inventory Turnover = Cost of Sales/Average Inventory), and GEARING (bottom-right: Gearing Ratio = Long-term Debt/Capital Employed × 100). Include arrows showing relationships between categories and color-code each section for easy memorization.",
-    "quickRecap": "Ratio analysis compares business performance using four key areas: profitability (gross/net profit margins), liquidity (current/acid test ratios), efficiency (asset/inventory turnover), and gearing (debt to capital). Always calculate ratios using the correct formulas, then interpret what the results mean for business performance. Compare ratios to previous years, industry averages, or ideal benchmarks to make meaningful conclusions."
+    "quickRecap": "Business activity uses four factors of production (labour, capital, land, enterprise) to create goods and services for customers. These products serve either final consumers or business customers. Opportunity cost is crucial in business decisions as choosing one option means giving up alternatives due to scarce resources."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +113,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:13:28.749Z",
   "updated_at": "2026-04-06T05:13:28.749Z",
-  "enriched_at": "2026-04-06T16:06:22.380Z"
+  "enriched_at": "2026-04-06T16:06:22.380Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T03:01:53.933Z"
 }

@@ -9,35 +9,23 @@
     "title": "Programming and data representation",
     "readTime": "8 min",
     "keyPoints": [
-      "**Object-oriented programming** uses classes to define objects that contain both data (attributes) and methods that operate on that data",
-      "**Inheritance** allows a child class to inherit attributes and methods from a parent class, promoting code reuse",
-      "**Encapsulation** hides internal data from direct access and provides controlled access through methods",
-      "**Polymorphism** allows objects of different classes to be treated as objects of a common base class",
-      "**File handling** requires opening a file, reading/writing data, and closing the file to prevent data loss",
-      "**Exception handling** uses try-except blocks to catch and handle runtime errors without crashing the program",
-      "**Sequential file access** reads data from beginning to end in order, while **random file access** can jump to any position",
-      "**Text files** store human-readable characters, while **binary files** store data in machine-readable format"
+      "Programming and data representation spans multiple components: Paper 2 (Fundamental Problem-solving and Programming Skills) covers Data Types and Structures, Programming, and Software Development",
+      "Paper 3 (Advanced Theory) includes Data Representation as a key topic area",
+      "Paper 4 (Practical) focuses on Algorithms, Recursion, Programming Paradigms, and File Processing and Exception Handling",
+      "Computational thinking is a key concept involving fundamental skills like abstraction, decomposition and algorithmic thinking to produce solutions to problems",
+      "Programming paradigms represent different ways of thinking about or approaching problems, with different styles suited to unique functions, tools and specific situations",
+      "Understanding programming paradigms is essential to ensure they are used appropriately when designing and building programs",
+      "Solutions may involve using a range of technologies and programming languages",
+      "The course develops transferable skills including computational thinking, problem solving, writing programs for computer based solutions, and analysing computer based systems"
     ],
     "definitions": [
       {
-        "term": "Class",
-        "definition": "A template or blueprint that defines the attributes and methods that objects of that type will have"
+        "term": "Computational thinking",
+        "definition": "A set of fundamental skills that help produce a solution to a problem, including skills such as abstraction, decomposition and algorithmic thinking"
       },
       {
-        "term": "Object",
-        "definition": "An instance of a class that contains actual data values for the attributes defined in the class"
-      },
-      {
-        "term": "Inheritance",
-        "definition": "The ability of a class to inherit attributes and methods from another class"
-      },
-      {
-        "term": "Exception",
-        "definition": "An error that occurs during program execution that can be caught and handled"
-      },
-      {
-        "term": "File pointer",
-        "definition": "A marker that indicates the current position in a file for reading or writing operations"
+        "term": "Programming paradigm",
+        "definition": "A way of thinking about or approaching problems, with different programming styles suited to unique functions, tools and specific situations"
       }
     ],
     "howToAnswer": [
@@ -70,17 +58,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'class and object are the same' — class is the template, object is the instance",
-      "Students often forget to close files after opening them, which can cause data loss",
-      "Don't confuse inheritance with composition — inheritance uses 'is-a' relationships",
-      "Never say exceptions 'fix' errors — they handle errors that occur during execution",
-      "Students mix up sequential and random access — sequential must read in order, random can jump to any position"
+      "Not understanding that programming and data representation content spans across multiple papers (Paper 2, 3, and 4)",
+      "Failing to apply computational thinking skills like abstraction and decomposition when solving problems",
+      "Not selecting appropriate programming paradigms for specific situations and problems"
     ],
     "examinerTips": [
-      "OOP concepts appear frequently in Paper 2 - know the four main principles",
-      "Always mention closing files when discussing file handling",
-      "Use proper Python syntax in code examples for full marks",
-      "Exception handling questions often ask for both explanation and code example"
+      "Ensure you understand how to apply computational thinking skills across different problem-solving scenarios",
+      "Practice using different programming paradigms appropriately for various functions and situations"
     ],
     "formulas": [],
     "keyDiagramDescription": "Class diagram showing inheritance relationship with parent class at top, child classes below connected by arrows, showing inherited attributes and methods",
@@ -110,7 +94,7 @@
       "Examiner Report 2023: 'Pseudocode answers often lacked proper structure and used programming language specific syntax' — stick to Cambridge pseudocode conventions and avoid Python/Java syntax like def or public"
     ],
     "keyDiagram": "Binary to Denary conversion table showing place values (128, 64, 32, 16, 8, 4, 2, 1) with example number like 10110101. Students must draw the table with binary digits in top row, place values in middle row, and calculations in bottom row (1×128 + 0×64 + 1×32 + 1×16 + 0×8 + 1×4 + 0×2 + 1×1 = 181). Include arrows showing which positions are 'switched on' (contain 1s).",
-    "quickRecap": "Programming converts human logic into computer instructions using algorithms and data structures. Binary (base 2) uses only 0s and 1s, while hexadecimal (base 16) provides a shorter way to represent binary. Data types (integer, real, string, boolean) determine how values are stored and processed. Common programming constructs include sequence, selection (IF statements), and iteration (loops), which form the building blocks of all programs."
+    "quickRecap": "Programming and data representation is assessed across Papers 2, 3, and 4, covering data types, programming paradigms, algorithms, and data representation. Key concepts include computational thinking (abstraction, decomposition, algorithmic thinking) and programming paradigms as different approaches to problem-solving. The course develops essential skills in problem-solving, programming, and system analysis using various technologies and programming languages."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -118,5 +102,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:17:23.324Z",
   "updated_at": "2026-04-06T05:17:23.324Z",
-  "enriched_at": "2026-04-06T16:08:56.591Z"
+  "enriched_at": "2026-04-06T16:08:56.591Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:39:13.415Z"
 }

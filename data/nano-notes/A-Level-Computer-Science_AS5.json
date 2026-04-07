@@ -9,38 +9,14 @@
     "title": "System software",
     "readTime": "8 min",
     "keyPoints": [
-      "**Operating system** manages computer hardware resources and provides interface between user and hardware",
-      "**Scheduling** allocates processor time between processes using algorithms like round robin, first come first served, shortest job first",
-      "**Memory management** allocates RAM to programs and handles virtual memory using paging and segmentation",
-      "**Interrupt handling** allows CPU to respond to urgent requests from hardware or software by temporarily stopping current process",
-      "**Device drivers** are programs that allow operating system to communicate with specific hardware components",
-      "**File management** organizes data storage on secondary storage devices using file allocation tables and directory structures",
-      "**User interface** provides methods for users to interact with computer through command line interface or graphical user interface",
-      "**Multi-tasking** allows multiple programs to run simultaneously by rapidly switching CPU time between processes",
-      "**Security management** controls user access permissions and protects system from unauthorized access and malware"
+      "System Software is a fundamental topic covered in Paper 1 Theory Fundamentals for AS Level",
+      "Systems Software is also covered at advanced level in Paper 3 Advanced Theory",
+      "System software forms part of the broader Computer systems topic that includes software, data, hardware and people",
+      "The topic appears in both AS and A Level components, indicating progression from fundamental to advanced concepts",
+      "System software is assessed alongside other fundamental topics including Information representation, Communication, Hardware, Processor Fundamentals, Security, Ethics and Ownership",
+      "At advanced level, Systems Software is studied alongside Data Representation, Hardware and Virtual Machines, and Artificial Intelligence"
     ],
-    "definitions": [
-      {
-        "term": "Operating system",
-        "definition": "System software that manages computer hardware resources and provides interface between applications and hardware"
-      },
-      {
-        "term": "Interrupt",
-        "definition": "Signal sent to processor to temporarily stop current process and handle urgent request from hardware or software"
-      },
-      {
-        "term": "Virtual memory",
-        "definition": "Memory management technique that uses secondary storage to extend available RAM by swapping data between RAM and hard disk"
-      },
-      {
-        "term": "Process scheduling",
-        "definition": "Method used by operating system to allocate processor time between different processes waiting to be executed"
-      },
-      {
-        "term": "Device driver",
-        "definition": "Program that allows operating system to communicate with and control specific hardware device"
-      }
-    ],
+    "definitions": [],
     "howToAnswer": [
       {
         "commandWord": "State",
@@ -71,17 +47,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'interrupt stops the computer' — always say 'interrupt temporarily stops current process'",
-      "Students often confuse scheduling algorithms — round robin uses time slices, shortest job first prioritizes by execution time",
-      "Don't say 'virtual memory increases RAM' — say 'virtual memory extends available memory by using secondary storage'",
-      "Never say 'operating system runs programs' — say 'operating system manages execution of programs'",
-      "Students forget that device drivers are specific to hardware — each device needs its own driver"
+      "Confusing the fundamental level concepts in Paper 1 with the advanced concepts in Paper 3",
+      "Not understanding that system software is part of the broader computer systems context including hardware and people",
+      "Failing to recognize the progression from AS level system software to A Level systems software topics"
     ],
     "examinerTips": [
-      "Interrupt handling questions appear frequently in Paper 2 — learn the 4-step process",
-      "Always specify which scheduling algorithm when discussing process scheduling",
-      "Memory management questions often ask about paging — know the difference between pages and frames",
-      "Draw diagrams for interrupt handling and memory management for visual marks"
+      "Ensure you understand both the fundamental concepts for Paper 1 and advanced concepts for Paper 3",
+      "Remember that system software should be studied in the context of the complete computer system including hardware and people"
     ],
     "formulas": [],
     "keyDiagramDescription": "Interrupt handling cycle showing: 1) Interrupt signal received 2) Current state saved 3) Interrupt service routine executed 4) Original state restored. Also memory management diagram showing RAM divided into pages/frames with virtual memory extension to secondary storage.",
@@ -108,7 +80,7 @@
       "Examiner Report 2023: 'Students frequently mixed up utility software examples' — ensure you can clearly explain what each utility does (antivirus, disk defragmenter, file compression etc.)"
     ],
     "keyDiagram": "Draw a layered diagram showing: Hardware (bottom layer), Operating System (middle layer managing hardware), and Application Software (top layer). Include arrows showing OS controls hardware and provides platform for applications. Add examples: Hardware (CPU, RAM, storage), OS functions (memory management, file management), Applications (word processor, games). This diagram demonstrates the relationship between system and application software.",
-    "quickRecap": "System software manages hardware and provides a platform for applications - includes operating systems, device drivers, and utilities. Operating systems have five key functions: memory management, file management, process management, device management, and providing user interface. Device drivers enable communication between OS and specific hardware. Utility software performs maintenance tasks like virus scanning and file compression."
+    "quickRecap": "System Software is covered as a fundamental topic in Paper 1 Theory Fundamentals and progresses to Systems Software in Paper 3 Advanced Theory. It forms part of the Computer systems section that encompasses software, data, hardware and people. The topic appears at both AS and A Level, requiring understanding of both fundamental and advanced concepts."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -116,5 +88,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:15:38.300Z",
   "updated_at": "2026-04-06T05:15:38.300Z",
-  "enriched_at": "2026-04-06T16:10:21.285Z"
+  "enriched_at": "2026-04-06T16:10:21.285Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:55:32.950Z"
 }

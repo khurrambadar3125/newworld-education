@@ -9,33 +9,34 @@
     "title": "Capacitance",
     "readTime": "8 min",
     "keyPoints": [
-      "**Capacitance** is defined as the charge stored per unit potential difference across a capacitor",
-      "A **capacitor** consists of two conducting plates separated by an insulator (dielectric)",
-      "The **capacitance** of a parallel plate capacitor is given by C = ε₀εᵣA/d where A is plate area and d is separation",
-      "During **charging**, current decreases exponentially and follows I = I₀e^(-t/RC)",
-      "During **discharging**, charge decreases exponentially following Q = Q₀e^(-t/RC)",
-      "The **time constant** τ = RC is the time taken for charge to fall to 1/e (37%) of its initial value",
-      "**Energy stored** in a capacitor is given by W = ½QV = ½CV² = ½Q²/C",
-      "A **dielectric** increases capacitance by a factor of εᵣ (relative permittivity)",
-      "Capacitors in **series**: 1/C = 1/C₁ + 1/C₂ + 1/C₃",
-      "Capacitors in **parallel**: C = C₁ + C₂ + C₃"
+      "One radian is defined as the angle in the sector of a circle when the arc length equals the radius",
+      "Angular speed (ω) = v/r = 2π/T = 2πf, where v is linear speed and r is radius",
+      "Linear speed v = ωr (product of angular speed and radius)",
+      "Objects in circular motion have constantly changing velocity due to changing direction, requiring centripetal acceleration",
+      "Centripetal force always acts perpendicular to motion towards the centre of the circle",
+      "Centripetal acceleration a = v²/r = ω²r",
+      "Centripetal force F = mv²/r = mω²r using Newton's second law"
     ],
     "definitions": [
       {
-        "term": "Capacitance",
-        "definition": "The charge stored per unit potential difference across a capacitor"
+        "term": "Radian",
+        "definition": "The angle in the sector of a circle when the arc length of that sector is equal to the radius of the circle"
       },
       {
-        "term": "Time constant",
-        "definition": "The time taken for the charge on a capacitor to fall to 1/e of its initial value during discharge"
+        "term": "Angular displacement (θ)",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "Dielectric",
-        "definition": "An insulating material placed between capacitor plates that increases the capacitance"
+        "term": "Angular speed (ω)",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Relative permittivity",
-        "definition": "The ratio of the permittivity of a material to the permittivity of free space"
+        "term": "Centripetal acceleration",
+        "definition": "The acceleration of an object moving in a circular path at constant speed due to constantly changing velocity"
+      },
+      {
+        "term": "Centripetal force",
+        "definition": "The resultant force that acts perpendicular to the motion of an object towards the centre of the circle"
       }
     ],
     "howToAnswer": [
@@ -70,17 +71,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'stores current' — always say 'stores charge' when describing capacitors",
-      "Students often confuse charging and discharging equations — check if Q₀ is initial or final value",
-      "Never use τ = 1/RC — the correct time constant is τ = RC",
-      "Students forget to convert units (μF to F, kΩ to Ω) leading to incorrect orders of magnitude",
-      "Never say 'completely discharged' — capacitors approach zero charge asymptotically"
+      "Confusing degrees and radians - remember to convert using π/180",
+      "Thinking objects in uniform circular motion don't accelerate because speed is constant",
+      "Incorrectly stating centripetal force acts tangentially rather than towards the centre",
+      "Mixing up the formulas for centripetal acceleration: a = v²/r vs a = ω²r"
     ],
     "examinerTips": [
-      "Capacitance calculations appear in every Paper 2 — practice exponential decay graphs",
-      "Always check units in your final answer — charge in C, energy in J, time in s",
-      "Draw I-t and Q-t graphs clearly showing exponential curves, not straight lines",
-      "Time constant questions often ask for 1/e, 1/2 or specific percentages — know all forms"
+      "Remember that velocity has both magnitude and direction - constant speed in circular motion means changing velocity",
+      "Always check units when using angular measurements - ensure radians are used in calculations"
     ],
     "formulas": [
       "C = Q/V",
@@ -115,7 +113,7 @@
       "Examiner Report 2023: 'Common error was stating that energy is conserved when capacitors are connected' — remember that charge is conserved, but energy decreases when capacitors redistribute charge"
     ],
     "keyDiagram": "Students must be able to draw a parallel plate capacitor showing two parallel conducting plates separated by distance d, with area A marked, electric field lines drawn perpendicular between plates, and ability to label the dielectric material between plates. Include circuit symbol (two parallel lines) and show how to represent capacitors in series and parallel combinations in circuit diagrams.",
-    "quickRecap": "Capacitance C = Q/V measures ability to store charge. For parallel plates C = ε₀εᵣA/d. Energy stored E = ½QV = ½CV². Parallel combination: C_total = C₁ + C₂. Series combination: 1/C_total = 1/C₁ + 1/C₂."
+    "quickRecap": "Circular motion involves angular displacement measured in radians, where one radian equals the angle when arc length equals radius. Objects in uniform circular motion experience centripetal acceleration (a = v²/r = ω²r) due to constantly changing velocity direction. This requires centripetal force (F = mv²/r = mω²r) acting perpendicular to motion towards the circle's centre."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -123,5 +121,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:45:24.475Z",
   "updated_at": "2026-04-06T04:45:24.475Z",
-  "enriched_at": "2026-04-06T16:09:58.553Z"
+  "enriched_at": "2026-04-06T16:09:58.553Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:29:17.945Z"
 }

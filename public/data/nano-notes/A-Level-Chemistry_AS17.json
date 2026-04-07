@@ -9,32 +9,23 @@
     "title": "Carbonyl compounds",
     "readTime": "8 min",
     "keyPoints": [
-      "**Aldehydes** have the functional group -CHO at the end of a carbon chain, while **ketones** have the functional group C=O within the carbon chain",
-      "**Tollens' reagent** (ammoniacal silver nitrate) produces a **silver mirror** with aldehydes but no reaction with ketones",
-      "**Fehling's reagent** (blue solution containing Cu²⁺ ions) produces a **brick-red precipitate** (Cu₂O) with aldehydes but no reaction with ketones",
-      "Both aldehydes and ketones can be **reduced** to alcohols using **sodium borohydride (NaBH₄)** or **lithium aluminium hydride (LiAlH₄)**",
-      "Aldehydes are **oxidized** to carboxylic acids by **acidified potassium dichromate(VI)** or **acidified potassium manganate(VII)**",
-      "Ketones **cannot be oxidized** under normal conditions because the C=O carbon is not bonded to hydrogen",
-      "The **carbonyl group** is **polar** due to the electronegativity difference between carbon and oxygen (δ⁺C=Oδ⁻)",
-      "**Nucleophilic addition** occurs at the carbonyl group because the partially positive carbon attracts nucleophiles",
-      "Primary alcohols are oxidized to aldehydes, secondary alcohols are oxidized to ketones, using **acidified dichromate(VI)**"
+      "Transition elements are found in the d-block of the periodic table and form one or more stable ions with incomplete d orbitals",
+      "The d subshell can hold up to 10 electrons",
+      "Scandium and zinc are in the d-block but are not transition elements because their ions do not have incomplete d subshells",
+      "Scandium forms Sc³⁺ with an empty d subshell, zinc forms Zn²⁺ with a full d subshell",
+      "The 4s orbital is filled before the 3d orbital in atoms",
+      "When forming ions, 4s electrons are removed before 3d electrons",
+      "Transition elements can form multiple oxidation states (e.g., vanadium forms V²⁺, V³⁺, V⁴⁺, and V⁵⁺)",
+      "Common transition element ions include Ti²⁺, V²⁺, Cr³⁺, Mn²⁺, Fe²⁺, Co²⁺, Ni²⁺, and Cu²⁺"
     ],
     "definitions": [
       {
-        "term": "Aldehyde",
-        "definition": "A compound containing the functional group -CHO at the end of a carbon chain"
+        "term": "Transition elements",
+        "definition": "Elements that form one or more stable ions with incomplete d orbitals"
       },
       {
-        "term": "Ketone",
-        "definition": "A compound containing the functional group C=O within a carbon chain, bonded to two carbon atoms"
-      },
-      {
-        "term": "Tollens' reagent",
-        "definition": "Ammoniacal silver nitrate solution used to distinguish aldehydes from ketones"
-      },
-      {
-        "term": "Reducing agent",
-        "definition": "A substance that donates electrons and causes reduction by removing oxygen or adding hydrogen"
+        "term": "d-block",
+        "definition": "The section of the periodic table containing elements with d orbitals being filled"
       }
     ],
     "howToAnswer": [
@@ -63,17 +54,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'Tollens' reagent turns silver' — always say 'produces a silver mirror'",
-      "Students often confuse the products: aldehydes reduce to PRIMARY alcohols, ketones reduce to SECONDARY alcohols",
-      "Never say 'ketones cannot react' — they cannot be OXIDIZED but can be REDUCED",
-      "Writing wrong formulae: aldehyde is -CHO not -COH",
-      "Forgetting that Fehling's reagent goes from blue to brick-red precipitate, not just 'red'"
+      "Thinking scandium and zinc are transition elements when they are not due to their complete or empty d subshells in their stable ions",
+      "Forgetting that 4s electrons are removed before 3d electrons when forming ions",
+      "Confusing the order of orbital filling (4s before 3d) with the order of electron removal (4s before 3d)"
     ],
     "examinerTips": [
-      "Carbonyl compounds appear in Paper 2 almost every year, especially distinguishing tests",
-      "Always include observations (colour changes) and equations for full marks in practical questions",
-      "Learn the specific colours: Tollens' gives silver mirror, Fehling's gives brick-red precipitate",
-      "Remember reduction products: aldehydes → primary alcohols, ketones → secondary alcohols"
+      "Remember the definition of transition elements requires incomplete d orbitals in their ions, not just being in the d-block",
+      "Know the electron configurations of common transition metal ions and that multiple oxidation states are characteristic"
     ],
     "formulas": [
       "Aldehyde: R-CHO",
@@ -106,7 +93,7 @@
       "Examiner Report 2023: 'Candidates often failed to explain the color changes in distinguishing tests' — always state that Tollens' reagent produces a silver mirror and Fehling's reagent produces a red precipitate of Cu₂O"
     ],
     "keyDiagram": "Students must be able to draw the carbonyl functional group (C=O) clearly showing: 1) The double bond between carbon and oxygen, 2) For aldehydes: R-CHO structure with hydrogen attached to carbonyl carbon, 3) For ketones: R-CO-R' structure with two alkyl groups attached to carbonyl carbon. Also essential to draw the structural differences showing aldehydes at chain ends vs ketones within carbon chains.",
-    "quickRecap": "Carbonyl compounds contain C=O group. Aldehydes (R-CHO) are at chain ends, ketones (R-CO-R') are within chains. Aldehydes reduce Tollens' (silver mirror) and Fehling's reagents (red precipitate), ketones don't. Both can be detected by IR spectroscopy showing C=O stretch around 1700 cm⁻¹."
+    "quickRecap": "Transition elements are d-block elements that form stable ions with incomplete d orbitals. Scandium and zinc are d-block elements but not transition elements due to empty and full d subshells respectively in their ions. When forming ions, 4s electrons are removed before 3d electrons, and transition elements characteristically form multiple oxidation states."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -114,5 +101,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:35:57.139Z",
   "updated_at": "2026-04-06T04:35:57.140Z",
-  "enriched_at": "2026-04-06T16:11:00.709Z"
+  "enriched_at": "2026-04-06T16:11:00.709Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:34:24.734Z"
 }

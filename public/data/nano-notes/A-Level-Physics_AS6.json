@@ -9,37 +9,35 @@
     "title": "Deformation of solids",
     "readTime": "8 min",
     "keyPoints": [
-      "**Stress** is the force per unit cross-sectional area acting on a material (σ = F/A)",
-      "**Strain** is the fractional change in length when a material is deformed (ε = ΔL/L₀)",
-      "**Young's modulus** is the ratio of stress to strain for a material obeying Hooke's law (E = σ/ε)",
-      "**Hooke's law** states that the extension of a spring is directly proportional to the applied force, provided the elastic limit is not exceeded",
-      "**Elastic deformation** occurs when a material returns to its original shape when the deforming force is removed",
-      "**Plastic deformation** occurs when a material does not return to its original shape when the deforming force is removed",
-      "The **elastic limit** is the maximum stress that can be applied to a material without causing permanent deformation",
-      "The **yield point** is the stress at which a material begins to deform plastically",
-      "**Ultimate tensile strength** is the maximum stress a material can withstand before breaking",
-      "The area under a force-extension graph gives the **work done** in stretching the material"
+      "Force fields are areas where objects experience non-contact forces, formed during interaction of masses, static charges, or moving charges",
+      "Gravitational fields are areas where objects with mass experience a non-contact force, with uniform fields exerting the same force everywhere and radial fields where force depends on position",
+      "Gravitational field strength (g) is force per unit mass, calculated using g = F/m, constant in uniform fields but varies in radial fields",
+      "Newton's law of gravitation states gravitational force is directly proportional to the product of masses and inversely proportional to the square of distance between them",
+      "Gravitational force between point masses follows F = Gm₁m₂/r² where G is gravitational constant",
+      "In radial fields, gravitational field strength follows g = GM/r² showing an inverse square relationship",
+      "Mass of a uniform sphere acts as a point mass at its centre when calculating gravitational force on objects outside the sphere",
+      "Earth's gravitational field is radial but appears almost uniform very close to the surface"
     ],
     "definitions": [
       {
-        "term": "Stress",
-        "definition": "The force per unit cross-sectional area acting on a material"
+        "term": "Force field",
+        "definition": "An area in which an object experiences a non-contact force"
       },
       {
-        "term": "Strain",
-        "definition": "The fractional change in length of a material when deformed"
+        "term": "Gravitational field",
+        "definition": "An area where objects with mass experience a non-contact force"
       },
       {
-        "term": "Young's modulus",
-        "definition": "The ratio of stress to strain for a material in the elastic region"
+        "term": "Gravitational field strength (g)",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       },
       {
-        "term": "Elastic limit",
-        "definition": "The maximum stress that can be applied to a material without causing permanent deformation"
+        "term": "Uniform field",
+        "definition": "Exerts the same gravitational force on a mass everywhere in the field"
       },
       {
-        "term": "Hooke's law",
-        "definition": "The extension of a spring is directly proportional to the applied force, provided the elastic limit is not exceeded"
+        "term": "Radial field",
+        "definition": "The force exerted depends on the position of the object in the field"
       }
     ],
     "howToAnswer": [
@@ -71,17 +69,14 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse stress and strain - stress has units Pa, strain is dimensionless",
-      "Students often forget to convert mm to m when calculating strain",
-      "Never say 'elastic deformation is reversible' - always say 'material returns to original shape'",
-      "Students confuse elastic limit with yield point - elastic limit is about permanent deformation",
-      "Never use original length instead of cross-sectional area when calculating stress"
+      "Forgetting that gravitational field strength varies in radial fields but is constant in uniform fields",
+      "Not recognizing that mass of uniform sphere acts as point mass at centre for external calculations",
+      "Confusing the inverse square relationship - when distance doubles, field strength decreases by factor of 4",
+      "Missing that gravity is always attractive and acts on any objects with mass"
     ],
     "examinerTips": [
-      "This topic appears in every Paper 2 - especially stress-strain calculations",
-      "Always show units clearly in calculations - Pa for stress, no units for strain",
-      "Stress-strain graphs are common - know the shape and key points",
-      "Energy calculations often combined with this topic - area under F-x graph"
+      "Remember field line spacing indicates field strength - closer lines mean stronger gravitational field",
+      "Use the inverse square relationship carefully - if distance increases by factor of 2, field strength decreases by factor of 4"
     ],
     "formulas": [
       "σ = F/A",
@@ -116,7 +111,7 @@
       "Examiner Report 2023: 'Common error was drawing stress-strain curves with incorrect axes labels' — stress (Pa) must be on y-axis and strain (no units) on x-axis, with correct curve shape for the material type"
     ],
     "keyDiagram": "Students must draw a stress-strain graph showing: x-axis labeled 'Strain' (no units), y-axis labeled 'Stress (Pa)' or 'Stress (N/m²)', linear region from origin to elastic limit (straight line), yield point where curve begins to flatten, plastic deformation region (curved), ultimate tensile strength (maximum point), and breaking point. For brittle materials, show linear region followed by sudden fracture with no plastic region.",
-    "quickRecap": "Deformation involves stress (force per unit area in Pa) and strain (change in length per original length, no units). Elastic deformation is reversible up to the elastic limit, while plastic deformation is permanent. Young's modulus E = stress/strain measures material stiffness. Stress-strain graphs show material properties: metals have elastic then plastic regions, ceramics are brittle with sudden fracture."
+    "quickRecap": "Gravitational fields are regions where masses experience non-contact forces, with field strength measured as force per unit mass. Newton's law shows gravitational force follows an inverse square relationship with distance. Field strength varies in radial fields but remains constant in uniform fields, with Earth's field being radial but appearing uniform near the surface."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -124,5 +119,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:40:29.845Z",
   "updated_at": "2026-04-06T04:40:29.845Z",
-  "enriched_at": "2026-04-06T16:13:01.265Z"
+  "enriched_at": "2026-04-06T16:13:01.265Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:31:42.431Z"
 }

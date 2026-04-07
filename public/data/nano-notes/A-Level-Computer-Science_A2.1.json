@@ -9,36 +9,25 @@
     "title": "Data representation",
     "readTime": "8 min",
     "keyPoints": [
-      "**Floating point** numbers use mantissa and exponent to represent very large and very small decimal numbers",
-      "**Normalisation** ensures the mantissa starts with the first significant digit after the decimal point for maximum precision",
-      "**Bitmap images** store colour values for each pixel, while **vector images** store mathematical descriptions of shapes",
-      "**Sound sampling** converts analogue sound waves to digital by measuring amplitude at regular intervals",
-      "**Sample rate** is measured in Hz and determines sound quality - higher sample rate gives better quality but larger file size",
-      "**Lossy compression** removes data permanently to reduce file size, **lossless compression** allows perfect reconstruction",
-      "**JPEG** is lossy compression for images, **PNG** is lossless compression for images",
-      "**MP3** is lossy compression for sound files, reducing quality to achieve smaller file sizes",
-      "**Resolution** determines image quality - higher resolution means more pixels and better detail but larger file size"
+      "Data Representation is covered in Paper 3 Advanced Theory component",
+      "The course uses computational thinking as a key concept involving abstraction, decomposition and algorithmic thinking",
+      "Communication includes the ability to transfer data from one device or component to another",
+      "Students develop skills in understanding communication methods and analyzing computer-based systems",
+      "The course encourages students to be confident using a range of technology and programming paradigms",
+      "No prior computer science study is expected, though IGCSE Computer Science provides useful introduction"
     ],
     "definitions": [
       {
-        "term": "Mantissa",
-        "definition": "The fractional part of a floating point number that stores the significant digits"
+        "term": "Computational thinking",
+        "definition": "A set of fundamental skills that help produce a solution to a problem, including abstraction, decomposition and algorithmic thinking"
       },
       {
-        "term": "Exponent",
-        "definition": "The power part of a floating point number that determines the position of the decimal point"
+        "term": "Communication",
+        "definition": "A core requirement of computer systems that includes the ability to transfer data from one device or component to another and understanding of the rules and methods used in data transfer"
       },
       {
-        "term": "Normalisation",
-        "definition": "The process of adjusting the mantissa and exponent so the mantissa has its first significant digit immediately after the decimal point"
-      },
-      {
-        "term": "Sample rate",
-        "definition": "The number of times per second that the amplitude of an analogue sound wave is measured and converted to digital"
-      },
-      {
-        "term": "Lossy compression",
-        "definition": "A compression method that permanently removes some data to reduce file size, resulting in some loss of quality"
+        "term": "Programming paradigms",
+        "definition": "A way of thinking about or approaching problems, with different programming styles suited to unique functions, tools and specific situations"
       }
     ],
     "howToAnswer": [
@@ -70,18 +59,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'floating point is more accurate' — always say 'floating point can represent a wider range of numbers'",
-      "Students often confuse sample rate with bit depth when describing sound quality factors",
-      "Never say 'lossy compression loses some data' — always say 'lossy compression permanently removes data that cannot be recovered'",
-      "Students mix up mantissa and exponent functions in floating point representation",
-      "Don't say 'higher resolution means better quality' without mentioning it also means larger file size"
+      "Not understanding that Data Representation is an Advanced Theory topic in Paper 3",
+      "Confusing communication methods with just internet transfer rather than all data transfer including internal system communication",
+      "Not applying computational thinking skills of abstraction and decomposition to data representation problems"
     ],
     "examinerTips": [
-      "Floating point representation appears in almost every Paper 2 exam",
-      "Always show the calculation steps when normalising floating point numbers",
-      "For compression questions, always mention both file size AND quality effects",
-      "Sound and image representation questions often ask for trade-offs between quality and storage",
-      "Draw bit patterns clearly when showing floating point representation"
+      "Remember that communication can range from internal transfer of data within a computer system to transfer across the internet",
+      "Apply computational thinking skills including abstraction, decomposition and algorithmic thinking when solving data representation problems"
     ],
     "formulas": [
       "Floating point value = mantissa × 2^exponent",
@@ -114,7 +98,7 @@
       "Examiner Report 2023: 'Candidates frequently gave incorrect examples of file formats for compression types' — remember JPEG is lossy, PNG is lossless, not the other way around"
     ],
     "keyDiagram": "Students must be able to draw a number base conversion table showing denary (0-15), binary (0000-1111), and hexadecimal (0-F) equivalents. Include column headers and show the relationship between 4 binary digits equaling 1 hexadecimal digit. Also draw a simple bitmap representation showing how pixels are stored as binary values with different bit depths (1-bit, 8-bit, 24-bit examples).",
-    "quickRecap": "Data is represented in binary (0s and 1s) in computer systems. Remember: 8 bits = 1 byte, hexadecimal uses base 16 (0-F), and file sizes depend on sampling rate × bit depth × duration × channels for audio. ASCII represents characters as 7-bit codes. Compression reduces file sizes - lossy (JPEG) removes data permanently, lossless (PNG) allows perfect reconstruction."
+    "quickRecap": "Data Representation is covered in Paper 3 Advanced Theory. The course emphasizes computational thinking skills including abstraction, decomposition and algorithmic thinking. Communication involves data transfer between devices and components using specific rules and methods. Students develop transferable skills in analyzing computer-based systems and understanding communication methods."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -122,5 +106,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:17:45.701Z",
   "updated_at": "2026-04-06T05:17:45.701Z",
-  "enriched_at": "2026-04-06T16:05:56.268Z"
+  "enriched_at": "2026-04-06T16:05:56.268Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:37:48.308Z"
 }

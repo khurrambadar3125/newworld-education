@@ -9,35 +9,34 @@
     "title": "The social approach",
     "readTime": "8 min",
     "keyPoints": [
-      "**Social influence** occurs when a person's behaviour, thoughts or feelings are affected by the real or imagined presence of others",
-      "**Conformity** is changing one's behaviour to match that of a group, demonstrated in Asch's line judgment studies where participants gave incorrect answers",
-      "**Obedience** is following direct orders from an authority figure, as shown in Milgram's shock experiment where 65% delivered maximum voltage",
-      "**Social identity theory** explains that people categorise themselves into in-groups and out-groups, leading to in-group favouritism and out-group discrimination",
-      "**Prejudice** involves negative attitudes toward members of other groups, while **discrimination** involves negative behaviour toward those groups",
-      "**Social facilitation** occurs when performance improves in the presence of others for well-learned tasks but worsens for complex tasks",
-      "**Groupthink** happens when group members prioritise harmony over realistic evaluation of alternatives, leading to poor decision-making",
-      "**Bystander effect** shows that people are less likely to help in emergencies when others are present due to diffusion of responsibility"
+      "According to the biological approach, humans are biological organisms made up of physiological processes, so all thoughts and cognitive processes must be biological in origin",
+      "The actions of genes, hormones, neurotransmitters and neurochemical mechanisms must be understood to explain behaviour fully",
+      "Heritability coefficients quantify the genetic basis of characteristics - IQ has a coefficient of 0.5 showing equal influence of nature and nurture",
+      "An individual's genotype is their genetic make-up, while phenotype is the physical expression of their genotype",
+      "Two people may have the same genotype but different phenotypes due to personal choices or epigenetics",
+      "Natural selection is the mechanism of evolution where genetically-determined behaviours giving selective advantage are passed to future generations",
+      "Evolution is the process by which organisms change over time as a result of changes in heritable physical or behavioural traits"
     ],
     "definitions": [
       {
-        "term": "Conformity",
-        "definition": "A change in behaviour or belief as a result of real or imagined group pressure"
+        "term": "Behaviour genetics",
+        "definition": "The study of the influence of an organism's genetic composition on its behaviour and the interaction of heredity and environment insofar as they affect behaviour"
       },
       {
-        "term": "Obedience",
-        "definition": "Following direct orders or commands from an authority figure"
+        "term": "Genotype",
+        "definition": "An individual's genetic make-up, where a gene is a short section of DNA coding for specific proteins"
       },
       {
-        "term": "Social identity theory",
-        "definition": "Theory explaining how people define themselves through group membership, leading to in-group favouritism and out-group prejudice"
+        "term": "Phenotype",
+        "definition": "The physical expression of an individual's genotype"
       },
       {
-        "term": "Prejudice",
-        "definition": "A negative attitude toward members of a particular group based solely on their group membership"
+        "term": "Epigenetics",
+        "definition": "A change in gene expression, without altering an individual's genetic make-up"
       },
       {
-        "term": "Bystander effect",
-        "definition": "The tendency for people to be less likely to help in an emergency when other people are present"
+        "term": "Natural selection",
+        "definition": "The mechanism of evolution where genetically-determined behaviour giving selective advantage increases chances of surviving and reproducing"
       }
     ],
     "howToAnswer": [
@@ -70,17 +69,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say conformity is 'peer pressure' — always say 'group influence' or 'social pressure'",
-      "Students often confuse conformity with obedience — conformity has no direct orders, obedience involves commands from authority",
-      "Don't say Milgram's participants were 'forced' — they chose to continue despite being free to leave",
-      "Never describe prejudice as just 'dislike' — it must be negative attitudes based on group membership",
-      "Students incorrectly think social facilitation always improves performance — it depends on task difficulty"
+      "Confusing genotype and phenotype - remember genotype is genetic make-up while phenotype is physical expression",
+      "Assuming twin studies can clearly separate nature vs nurture effects when MZ twins may share more similar environments",
+      "Overlooking that biological determinism has serious implications for moral responsibility in the judicial system"
     ],
     "examinerTips": [
-      "Social approach questions appear in every Paper 2 - learn Asch and Milgram studies thoroughly",
-      "Always distinguish between prejudice (attitudes) and discrimination (behaviour) for full marks",
-      "Use real examples from Pakistani society when discussing in-groups/out-groups (e.g., cricket team support)",
-      "For evaluation points, consider cultural bias in Western studies when applying to collectivist cultures like Pakistan"
+      "Use specific examples like heritability coefficient of 0.5 for IQ to demonstrate understanding of genetic influence",
+      "Evaluate using biological determinism criticism - link to real-world implications for criminal justice and insurance"
     ],
     "formulas": [],
     "keyDiagramDescription": "Asch's line judgment task showing the standard line and three comparison lines A, B, C, where participants had to match the standard line length despite confederates giving obviously wrong answers",
@@ -108,7 +103,7 @@
       "Examiner Report 2023: 'Candidates frequently gave vague examples of prejudice' — always provide specific, detailed examples when discussing social identity theory, such as realistic conflict theory studies like Sherif's Robbers Cave experiment"
     ],
     "keyDiagram": "Students must be able to draw the Social Learning Theory cycle: Start with 'Model performs behavior' → 'Observer pays attention' → 'Observer retains behavior in memory' → 'Observer reproduces behavior when motivated' → 'Consequences determine future imitation'. Include arrows showing the circular nature, and label each stage with key factors (attention, retention, reproduction, motivation). Add examples like Bandura's Bobo doll study to illustrate each stage.",
-    "quickRecap": "The social approach explains behavior through social influences like group membership, modeling, and social pressure. Key theories include social identity theory (in-group favoritism), social learning theory (learning through observation), and social facilitation (performance changes in presence of others). Remember to always provide specific examples and link findings back to underlying social processes when answering exam questions."
+    "quickRecap": "The biological approach views humans as biological organisms where all behaviour stems from physiological processes including genes, hormones and neurotransmitters. Key concepts include genotype vs phenotype, heritability coefficients, and natural selection driving evolution. The approach has practical applications in drug development but faces criticism for biological determinism and methodological issues in twin studies."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -116,5 +111,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:22:02.798Z",
   "updated_at": "2026-04-06T05:22:02.798Z",
-  "enriched_at": "2026-04-06T16:08:56.180Z"
+  "enriched_at": "2026-04-06T16:08:56.180Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:58:49.441Z"
 }

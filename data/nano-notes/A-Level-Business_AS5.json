@@ -9,36 +9,37 @@
     "title": "Finance and accounting",
     "readTime": "8 min",
     "keyPoints": [
-      "**Cash flow** is the money flowing into and out of a business over a period of time, essential for day-to-day operations",
-      "**Working capital** is current assets minus current liabilities, measuring short-term financial health of the business",
-      "**Break-even point** occurs when total revenue equals total costs, where the business makes neither profit nor loss",
-      "**Investment appraisal** methods include payback period, average rate of return (ARR), and net present value (NPV) to evaluate project viability",
-      "**Budgets** are financial plans for future periods that help control costs, coordinate activities and motivate employees",
-      "**Variance analysis** compares actual results with budgeted figures to identify areas requiring management attention",
-      "**Fixed costs** remain constant regardless of output level, while **variable costs** change directly with production volume",
-      "**Net present value (NPV)** considers the time value of money by discounting future cash flows to present value",
-      "**Liquidity ratios** measure a business's ability to meet short-term debts, including current ratio and acid test ratio"
+      "Business activity involves using resources (factors of production) to make goods and services that customers will buy",
+      "The four factors of production are: Labour (human effort), Capital (equipment and machinery), Land (location), and Enterprise (risk taking and decision making)",
+      "Products can be either consumer goods for final consumers or capital and intermediate goods for business customers",
+      "Opportunity cost is the cost of the next best alternative that must be given up when making a business decision",
+      "Resources are scarce, so when businesses purchase one item (like a new machine), other items have to be 'given up'",
+      "Opportunity cost is an important concept in business activity and business decisions"
     ],
     "definitions": [
       {
-        "term": "Cash flow",
-        "definition": "The movement of money into and out of a business over a specific time period"
+        "term": "Business activity",
+        "definition": "The process of using resources to meet the needs of customers by making goods and services that they will buy"
       },
       {
-        "term": "Break-even point",
-        "definition": "The level of output where total revenue equals total costs and the business makes neither profit nor loss"
+        "term": "Labour",
+        "definition": "Human effort to produce goods or provide services to customers"
       },
       {
-        "term": "Working capital",
-        "definition": "Current assets minus current liabilities, representing funds available for day-to-day operations"
+        "term": "Capital",
+        "definition": "Equipment and machinery used in business production"
       },
       {
-        "term": "Investment appraisal",
-        "definition": "Methods used to evaluate the financial viability of long-term investment projects"
+        "term": "Land",
+        "definition": "A location to operate the business from"
       },
       {
-        "term": "Net present value",
-        "definition": "The difference between present value of cash inflows and present value of cash outflows over a project's lifetime"
+        "term": "Enterprise",
+        "definition": "Risk taking and decision making undertaken by an entrepreneur"
+      },
+      {
+        "term": "Opportunity cost",
+        "definition": "An important concept in business activity referring to what must be given up when making decisions due to scarce resources"
       }
     ],
     "howToAnswer": [
@@ -73,17 +74,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse cash flow with profit — cash flow is actual money movement, profit includes non-cash items like depreciation",
-      "Students often forget to show working in calculation questions — always write the formula first",
-      "When calculating break-even, don't include variable costs in the denominator — use contribution per unit only",
-      "Never say NPV tells you the profit — it shows the net benefit in today's money terms",
-      "Students confuse payback period with ARR — payback measures time, ARR measures percentage return"
+      "Confusing the different factors of production and their specific definitions",
+      "Not understanding that opportunity cost applies to all business decisions involving resource allocation",
+      "Failing to recognize that products serve both final consumers and business customers"
     ],
     "examinerTips": [
-      "Break-even analysis appears in almost every Paper 2 — practice drawing and interpreting break-even charts",
-      "Always show currency units (PKR) in Pakistani business contexts",
-      "For NPV calculations, clearly state whether you recommend acceptance (positive NPV) or rejection (negative NPV)",
-      "When analyzing ratios, always compare with previous years or industry averages for meaningful evaluation"
+      "Remember all four factors of production: Labour, Capital, Land, and Enterprise",
+      "Always consider opportunity cost when analyzing business decisions about resource use"
     ],
     "formulas": [
       "Break-even point = Fixed costs ÷ Contribution per unit",
@@ -117,7 +114,7 @@
       "Examiner Report 2023: 'Candidates often failed to show workings for financial calculations' — always show your method step-by-step as marks are awarded for correct working even if final answer is wrong"
     ],
     "keyDiagram": "Students must be able to draw a T-account layout showing the debit side (left) and credit side (right) clearly labeled. Include examples of typical entries: debit side shows increases in assets/expenses and decreases in liabilities/capital/income; credit side shows decreases in assets/expenses and increases in liabilities/capital/income. Also draw a simple balance sheet format with Fixed Assets, Current Assets, Current Liabilities, Long-term Liabilities, and Capital clearly positioned and totals balancing.",
-    "quickRecap": "Finance and accounting covers financial statements (trading account, profit & loss account, balance sheet), double-entry bookkeeping (debits increase assets/expenses, credits increase liabilities/capital/income), and ratio analysis (profitability, liquidity, efficiency ratios). Key formulas: Gross Profit Margin = (Gross Profit ÷ Sales) × 100, Current Ratio = Current Assets ÷ Current Liabilities. Always show workings and use correct terminology in exam answers."
+    "quickRecap": "Business activity uses four factors of production (Labour, Capital, Land, Enterprise) to create goods and services for customers. Products serve both final consumers and other businesses. Opportunity cost is crucial in business decisions as resources are scarce, meaning choosing one option requires giving up alternatives."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -125,5 +122,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:12:37.072Z",
   "updated_at": "2026-04-06T05:12:37.072Z",
-  "enriched_at": "2026-04-06T16:08:37.750Z"
+  "enriched_at": "2026-04-06T16:08:37.750Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T03:02:58.586Z"
 }

@@ -9,31 +9,43 @@
     "title": "Manufacturing accounts",
     "readTime": "8 min",
     "keyPoints": [
-      "**Prime cost** comprises direct materials, direct labour and direct expenses only",
-      "**Factory overhead** includes all indirect costs incurred in the factory such as factory rent, depreciation of machinery, and factory supervisor wages",
-      "**Production cost** is calculated as prime cost plus factory overhead absorbed",
-      "**Work in progress** must be valued at production cost (prime cost + factory overhead) not selling price",
-      "Manufacturing account transfers goods to trading account at **production cost** which becomes cost of goods sold",
-      "**Under-absorbed overhead** occurs when actual factory overhead exceeds overhead absorbed and is debited to profit and loss account",
-      "**Over-absorbed overhead** occurs when overhead absorbed exceeds actual factory overhead and is credited to profit and loss account",
-      "Factory profit should be eliminated from closing stock valuation to avoid overstating profits"
+      "Manufacturing account is prepared at the end of a financial period to calculate the production cost of manufactured goods",
+      "Manufacturing account only includes information about the factory and actual manufacturing process",
+      "All non-production costs (administration, finance, distribution) are recorded in the Income Statement",
+      "Cost of production is calculated by adding factory overheads to prime cost",
+      "Prime cost consists of direct materials, direct labour, and direct expenses",
+      "Factory overheads include indirect factory wages and depreciation of factory machinery",
+      "Transfer price equals production cost of completed goods plus a percentage mark-up",
+      "Manufacturing profit is the difference between transfer price and production cost of completed goods"
     ],
     "definitions": [
       {
-        "term": "Prime cost",
-        "definition": "The total of direct materials, direct labour and direct expenses incurred in manufacturing a product"
+        "term": "Manufacturing account",
+        "definition": "An account prepared at the end of a financial period to calculate the production cost of manufactured goods"
       },
       {
-        "term": "Factory overhead",
-        "definition": "All indirect costs incurred in the factory including indirect materials, indirect labour and indirect expenses"
+        "term": "Prime cost/Direct cost",
+        "definition": "The total of direct materials, direct labour, and direct expenses"
       },
       {
-        "term": "Production cost",
-        "definition": "Prime cost plus factory overhead absorbed in manufacturing goods"
+        "term": "Factory overheads/Indirect costs",
+        "definition": "Costs incurred from the running of the factory, including indirect factory wages and depreciation of factory machinery"
       },
       {
         "term": "Work in progress",
-        "definition": "Partly completed goods at the end of accounting period valued at production cost incurred to date"
+        "definition": "Inventory of partly finished goods in the factory at any point in time"
+      },
+      {
+        "term": "Factory profit",
+        "definition": "Percentage added to the factory cost of production to arrive at the transfer price"
+      },
+      {
+        "term": "Transfer price",
+        "definition": "The production cost of completed goods plus a percentage mark-up"
+      },
+      {
+        "term": "Manufacturing profit",
+        "definition": "The difference between the transfer price and the production cost of completed goods"
       }
     ],
     "howToAnswer": [
@@ -61,17 +73,13 @@
       ]
     },
     "commonMistakes": [
-      "Never include selling expenses in factory overhead — these belong in profit and loss account",
-      "Students often forget to adjust for work in progress when calculating cost of production",
-      "Never value closing stock at selling price — always use production cost",
-      "Students confuse direct expenses with factory overhead — direct expenses are part of prime cost",
-      "Never add factory profit to production cost when transferring to trading account"
+      "Including non-production costs like administration and distribution in the manufacturing account instead of the Income Statement",
+      "Confusing prime cost with total production cost",
+      "Incorrectly calculating cost of production without adding factory overheads to prime cost"
     ],
     "examinerTips": [
-      "Manufacturing accounts appear regularly in Paper 2 Section A",
-      "Always show the transfer from manufacturing account to trading account clearly",
-      "Remember to eliminate unrealized profit when factory transfers at above cost",
-      "Work in progress adjustments follow the same pattern as stock adjustments"
+      "Remember the formula: Cost of production = prime cost + factory overheads",
+      "Clearly distinguish between direct costs (prime cost) and indirect costs (factory overheads)"
     ],
     "formulas": [
       "Prime Cost = Direct Materials + Direct Labour + Direct Expenses",
@@ -103,7 +111,7 @@
       "Examiner Report 2021: 'Candidates mixed up raw materials and finished goods stock' — only raw materials stock appears in the manufacturing account, finished goods stock goes in the trading account"
     ],
     "keyDiagram": "Students must draw the T-account format showing: Manufacturing Account with debit side listing raw materials consumed, direct labour, prime cost subtotal, factory overheads breakdown, factory cost subtotal, opening WIP addition, and closing WIP subtraction; credit side showing cost of goods manufactured transferred to trading account. Include clear arrows showing the flow from manufacturing account to trading account.",
-    "quickRecap": "Manufacturing accounts calculate the cost of producing goods in factories. Start with raw materials consumed (opening stock + purchases - closing stock) plus direct labour to get prime cost. Add factory overheads to get factory cost. Adjust for work-in-progress (add opening, subtract closing) to get cost of goods manufactured. This final figure transfers to the trading account as cost of goods sold for manufacturers."
+    "quickRecap": "Manufacturing accounts calculate production costs by combining prime costs (direct materials, labour, expenses) with factory overheads. The cost of production forms the basis for transfer pricing when a manufacturing profit percentage is added. Only factory-related costs are included, with all other business costs recorded separately in the Income Statement."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -111,5 +119,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:26:52.940Z",
   "updated_at": "2026-04-06T05:26:52.940Z",
-  "enriched_at": "2026-04-06T16:10:51.491Z"
+  "enriched_at": "2026-04-06T16:10:51.491Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T03:01:30.835Z"
 }

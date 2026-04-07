@@ -9,36 +9,39 @@
     "title": "The biological approach",
     "readTime": "8 min",
     "keyPoints": [
-      "The **biological approach** assumes that all behaviour can be explained in terms of bodily processes, particularly brain structure, neurochemistry and genetics",
-      "**Neurotransmitters** are chemical messengers that carry signals across synapses between neurons, affecting mood, behaviour and cognitive processes",
-      "**Dopamine** is linked to reward and motivation, **serotonin** regulates mood and sleep, **noradrenaline** affects arousal and attention",
-      "**Twin studies** compare concordance rates between monozygotic (identical) and dizygotic (fraternal) twins to estimate genetic influence on behaviour",
-      "**Adoption studies** separate the effects of nature (genetics) from nurture (environment) by studying children raised apart from biological parents",
-      "**Evolution** shapes behaviour through natural selection - adaptive behaviours that aid survival and reproduction are passed to offspring",
-      "**Brain localisation** suggests specific brain areas control specific functions, supported by lesion studies and neuroimaging",
-      "**Reductionism** in the biological approach explains complex behaviours by breaking them down to simple biological components",
-      "**Determinism** assumes behaviour is caused by biological factors beyond conscious control, such as genes and brain chemistry"
+      "The biological approach views humans as biological organisms where all thoughts, ideas and cognitive processes must be biological in origin - the mind 'lives' within the brain",
+      "Heritability coefficients quantify the genetic basis of characteristics, with IQ having a coefficient of 0.5 according to Plomin, showing equal influence of nature and nurture",
+      "An individual's genotype is their genetic make-up, while phenotype is the physical expression of genotype - interaction between phenotype and environment results in behaviour",
+      "Two people may have the same genotype but different phenotypes due to personal choices or epigenetics - changes in gene expression without altering genetic make-up",
+      "Natural selection is the mechanism of evolution where genetically-determined behaviours giving selective advantage increase survival and reproduction chances",
+      "Examples of behaviours with selective advantage include avoiding fire and deep water (Seligman's prepared stimuli), longer necks for reaching food, and cows producing more milk",
+      "Understanding biological processes has led to development of psychoactive drugs like dopamine antagonists (Chlorpromazine) for schizophrenia treatment",
+      "Biological determinism suggests behaviour is caused by internal biological forces over which we have no control, raising concerns about judicial responsibility and economic discrimination"
     ],
     "definitions": [
       {
-        "term": "Biological approach",
-        "definition": "An approach that assumes all behaviour can be explained in terms of bodily processes, particularly brain structure, neurochemistry and genetics"
+        "term": "Behaviour genetics",
+        "definition": "The study of the influence of an organism's genetic composition on its behaviour and the interaction of heredity and environment insofar as they affect behaviour"
       },
       {
-        "term": "Neurotransmitter",
-        "definition": "A chemical messenger that carries signals across synapses between neurons in the nervous system"
+        "term": "Genotype",
+        "definition": "An individual's genetic make-up, where a gene is a short section of DNA coding for specific proteins"
       },
       {
-        "term": "Concordance rate",
-        "definition": "The percentage of twin pairs who both show the same trait or behaviour, used to measure genetic influence"
+        "term": "Phenotype",
+        "definition": "The physical expression of an individual's genotype"
+      },
+      {
+        "term": "Epigenetics",
+        "definition": "A change in gene expression, without altering an individual's genetic make-up through epigenetic markers like DNA methylation"
       },
       {
         "term": "Natural selection",
-        "definition": "The process by which organisms with advantageous traits are more likely to survive, reproduce and pass on their genes"
+        "definition": "The mechanism of evolution where genetically-determined behaviour giving selective advantage increases chances of surviving, reproducing and passing beneficial alleles to offspring"
       },
       {
-        "term": "Reductionism",
-        "definition": "The belief that complex behaviours can be explained by breaking them down into simpler, more basic units"
+        "term": "Evolution",
+        "definition": "The process by which organisms change over time as a result of changes in heritable physical or behavioural traits"
       }
     ],
     "howToAnswer": [
@@ -70,17 +73,16 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'hormones control behaviour' - always say 'hormones influence behaviour' as behaviour has multiple causes",
-      "Students often confuse correlation with causation when discussing twin studies - high concordance doesn't prove genetic causation",
-      "Don't describe brain areas without explaining their specific functions - localisation requires function not just location",
-      "Avoid saying evolution is 'just a theory' - present it as a scientific explanation with evidence",
-      "Never ignore environmental factors completely - biological approach acknowledges gene-environment interactions"
+      "Confusing genotype and phenotype - remember genotype is genetic make-up while phenotype is physical expression",
+      "Assuming MZ twins' higher concordance rates are purely genetic without considering they may share more similar environments than DZ twins",
+      "Overlooking that two people can have identical genotypes but different phenotypes due to environmental factors or personal choices",
+      "Failing to distinguish between natural selection (the mechanism) and evolution (the overall process of change over time)",
+      "Not recognising that epigenetics involves changes in gene expression without changing the actual genetic make-up"
     ],
     "examinerTips": [
-      "Twin study questions appear frequently - learn specific concordance rates for key behaviours",
-      "Always give specific neurotransmitter examples when discussing neurochemistry",
-      "Brain diagrams score extra marks - label key areas like frontal lobe, hippocampus, amygdala",
-      "Use 'influence' not 'cause' when discussing biological factors - shows understanding of complexity"
+      "When evaluating drug treatments, contrast their minimal patient effort requirements with time-consuming cognitive therapies like CBT",
+      "Discuss real-world implications of biological determinism including potential impacts on judicial systems and employment/insurance discrimination",
+      "Use specific examples like Chlorpromazine as dopamine antagonists and Plomin's IQ heritability coefficient of 0.5 to demonstrate detailed knowledge"
     ],
     "formulas": [],
     "keyDiagramDescription": "Brain diagram showing cerebral cortex (thinking/decision making), hippocampus (memory formation), amygdala (fear processing), and neuron diagram showing synapse with neurotransmitter release from presynaptic to postsynaptic neuron",
@@ -108,7 +110,7 @@
       "Examiner Report 2023: 'Candidates frequently ignored the reductionist nature of biological explanations in evaluation questions' — remember to discuss how biological approach oversimplifies complex behaviors by ignoring environmental and psychological factors"
     ],
     "keyDiagram": "Students must be able to draw a simple neuron diagram showing: cell body (soma), dendrites, axon, axon terminals, and synaptic gap. Include arrows showing direction of electrical impulse and label where neurotransmitters are released. This demonstrates understanding of how biological processes (neural transmission) underlie psychological phenomena. Alternative diagram: simple brain cross-section labeling key structures (frontal lobe, limbic system, brain stem) relevant to behavior and mental processes.",
-    "quickRecap": "The biological approach explains behavior through genetics, neurotransmitters, hormones, and brain structure. Key assumption: all psychological phenomena have biological basis. Strengths include scientific methods and practical applications (drug treatments). Main weakness is reductionism - ignores environmental and cognitive factors. Essential for understanding nature vs nurture debates and medical model of mental health."
+    "quickRecap": "The biological approach assumes all behaviour originates from biological processes including genes, hormones and neurotransmitters. Genotype (genetic make-up) expresses as phenotype (physical traits), with behaviour resulting from phenotype-environment interaction. Natural selection favours genetically-determined behaviours with selective advantage. The approach has practical applications in drug development but raises concerns about biological determinism and its social implications."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -116,5 +118,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:20:52.912Z",
   "updated_at": "2026-04-06T05:20:52.912Z",
-  "enriched_at": "2026-04-06T16:07:48.990Z"
+  "enriched_at": "2026-04-06T16:07:48.990Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:58:00.394Z"
 }

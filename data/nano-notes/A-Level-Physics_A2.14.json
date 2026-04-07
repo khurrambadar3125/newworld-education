@@ -9,36 +9,36 @@
     "title": "Astronomy and cosmology",
     "readTime": "8 min",
     "keyPoints": [
-      "**Stars** are formed from gravitational collapse of gas clouds, causing temperature and pressure to increase until nuclear fusion begins",
-      "The **Hertzsprung-Russell diagram** plots stellar luminosity against surface temperature, showing the main sequence where most stars lie",
-      "**Red giants** are formed when hydrogen fuel in the core is exhausted and the star expands and cools",
-      "**White dwarfs** are the final stage for low-mass stars, while high-mass stars may form **neutron stars** or **black holes**",
-      "**Hubble's law** states that recession velocity is proportional to distance: v = H₀d, providing evidence for an expanding universe",
-      "**Redshift** occurs when light from receding galaxies is stretched to longer wavelengths due to the Doppler effect",
-      "The **Big Bang theory** explains the origin of the universe from a hot, dense singularity approximately 13.8 billion years ago",
-      "**Cosmic microwave background radiation** provides evidence for the Big Bang as it represents the cooled remnant of the initial hot radiation",
-      "**Dark matter** and **dark energy** make up approximately 95% of the universe but cannot be directly observed"
+      "One radian is the angle in a circle sector when arc length equals the radius",
+      "Angular speed ω = v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is period, f is frequency",
+      "Objects in circular motion have constantly changing velocity due to changing direction, requiring centripetal acceleration",
+      "Centripetal acceleration a = v²/r = ω²r, always directed towards the center of the circle",
+      "Centripetal force F = mv²/r = mω²r acts perpendicular to motion towards the circle center",
+      "Gravitational field strength g = F/m, where F is gravitational force and m is mass of object in field",
+      "Newton's law of gravitation: F = Gm₁m₂/r², where G is gravitational constant and r is distance between mass centers",
+      "Gravitational field strength in radial fields follows g = GM/r², showing inverse square relationship",
+      "Uniform gravitational fields exert same force everywhere; radial fields vary with position"
     ],
     "definitions": [
       {
-        "term": "Redshift",
-        "definition": "The increase in wavelength of electromagnetic radiation from a source moving away from the observer"
+        "term": "Radian",
+        "definition": "The angle in a circle sector when the arc length equals the radius of the circle"
       },
       {
-        "term": "Hubble constant",
-        "definition": "The constant of proportionality in Hubble's law relating recession velocity to distance"
+        "term": "Angular speed",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Main sequence star",
-        "definition": "A star in the stable phase of its life cycle where hydrogen nuclei fuse to form helium in the core"
+        "term": "Centripetal acceleration",
+        "definition": "The acceleration of an object moving in circular motion, always directed towards the center"
       },
       {
-        "term": "Big Bang theory",
-        "definition": "The cosmological model describing the universe expanding from an extremely hot, dense initial state"
+        "term": "Centripetal force",
+        "definition": "The force causing circular motion that always acts perpendicular to motion towards the circle center"
       },
       {
-        "term": "Luminosity",
-        "definition": "The total power radiated by a star in all directions"
+        "term": "Gravitational field strength",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       }
     ],
     "howToAnswer": [
@@ -70,17 +70,16 @@
       ]
     },
     "commonMistakes": [
-      "Never say redshift is caused by stars 'moving faster' — always say 'space itself is expanding'",
-      "Students often confuse luminosity with brightness - luminosity is total power output, brightness depends on distance",
-      "Don't say the Big Bang was an 'explosion in space' — it was an expansion of space itself",
-      "Never describe the universe as expanding 'into' something — space itself is expanding",
-      "Students mix up red giants (low mass star evolution) with red supergiants (high mass star evolution)"
+      "Confusing degrees and radians - remember to convert using π/180",
+      "Thinking objects in uniform circular motion don't accelerate because speed is constant",
+      "Forgetting that centripetal force acts towards the center, not outwards",
+      "Not recognizing that gravitational field strength follows inverse square law with distance",
+      "Assuming all gravitational fields are uniform rather than radial"
     ],
     "examinerTips": [
-      "H-R diagram questions appear frequently - practice plotting and interpreting stellar data",
-      "Always mention 'nuclear fusion' not just 'fusion' when describing stellar processes",
-      "Redshift calculations often combine with wave equation - check units carefully",
-      "Age of universe questions require rearranging Hubble's law: t = 1/H₀"
+      "Always check if angles are required in radians or degrees and convert appropriately",
+      "Remember that uniform spheres can be treated as point masses at their centers for gravitational calculations",
+      "Use the inverse square relationship to quickly calculate how field strength changes with distance"
     ],
     "formulas": [
       "v = H₀d (Hubble's law)",
@@ -112,7 +111,7 @@
       "Examiner Report 2023: 'Candidates often gave vague answers about cosmic microwave background radiation' — always state it's uniform radiation at 2.7K from all directions in space"
     ],
     "keyDiagram": "Students must be able to draw the Hertzsprung-Russell (H-R) diagram showing: x-axis labeled 'Temperature (K)' decreasing left to right, y-axis labeled 'Luminosity' or 'Absolute Magnitude', main sequence diagonal band from top-left to bottom-right, red giant region (top-right), white dwarf region (bottom-left), and be able to plot our Sun's position on the main sequence.",
-    "quickRecap": "Universe began with Big Bang 13.8 billion years ago, evidenced by cosmic microwave background radiation and Hubble's law showing galactic redshift. Stars form from nebulae, fuse hydrogen on main sequence, then evolve through red giant phase to white dwarf (Sun-like stars) or supernova to neutron star/black hole (massive stars). Distances measured using parallax method where distance in parsecs equals 1/parallax angle in arcseconds."
+    "quickRecap": "Circular motion requires centripetal force directed toward the center, with angular quantities related by ω = v/r. Gravitational fields exert forces on masses, with field strength g = F/m. Newton's law of gravitation shows gravitational force follows an inverse square relationship with distance. Objects in circular motion constantly accelerate due to changing velocity direction, even at constant speed."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +119,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:47:35.626Z",
   "updated_at": "2026-04-06T04:47:35.626Z",
-  "enriched_at": "2026-04-06T16:07:42.683Z"
+  "enriched_at": "2026-04-06T16:07:42.683Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:27:39.554Z"
 }

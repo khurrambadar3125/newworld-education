@@ -9,36 +9,35 @@
     "title": "The learning approach",
     "readTime": "8 min",
     "keyPoints": [
-      "**Classical conditioning** is learning through association where a neutral stimulus becomes a conditioned stimulus that produces a conditioned response",
-      "**Operant conditioning** is learning through consequences where behaviour is shaped by reinforcement and punishment",
-      "**Positive reinforcement** increases the likelihood of behaviour being repeated by adding a pleasant stimulus",
-      "**Negative reinforcement** increases the likelihood of behaviour being repeated by removing an unpleasant stimulus",
-      "**Punishment** decreases the likelihood of behaviour being repeated by adding an unpleasant consequence",
-      "**Social learning theory** suggests learning occurs through observation, imitation and modelling of others' behaviour",
-      "**Vicarious reinforcement** occurs when observing others being rewarded increases the likelihood of imitating that behaviour",
-      "The learning approach assumes all behaviour is **learned** and can be explained through environmental factors rather than biological factors",
-      "**Extinction** occurs when a learned behaviour decreases in frequency due to lack of reinforcement or when the conditioned stimulus is presented without the unconditioned stimulus"
+      "According to the biological approach, humans are biological organisms made up of physiological processes, so all thoughts and cognitive processes must be biological in origin",
+      "The actions of genes, hormones, neurotransmitters and neurochemical mechanisms must be understood to explain behaviour fully",
+      "Heritability coefficients quantify the genetic basis of characteristics - IQ has a coefficient of 0.5, meaning genetics and environment contribute equally",
+      "An individual's genotype is their genetic make-up, while phenotype is the physical expression of their genotype",
+      "Two people may have the same genotype but different phenotypes due to personal choices or epigenetics",
+      "Natural selection is the mechanism of evolution where genetically-determined behaviours giving selective advantage are passed to future generations",
+      "Evolution is the process by which organisms change over time as a result of changes in heritable physical or behavioural traits",
+      "The biological approach has led to development of psychoactive drugs targeting specific genes or altering neurotransmitter levels"
     ],
     "definitions": [
       {
-        "term": "Classical conditioning",
-        "definition": "A type of learning where a neutral stimulus is repeatedly paired with an unconditioned stimulus until the neutral stimulus alone produces a conditioned response"
+        "term": "Behaviour genetics",
+        "definition": "The study of the influence of an organism's genetic composition on its behaviour and the interaction of heredity and environment insofar as they affect behaviour"
       },
       {
-        "term": "Operant conditioning",
-        "definition": "A type of learning where the consequences of behaviour determine whether that behaviour is repeated or not"
+        "term": "Genotype",
+        "definition": "An individual's genetic make-up, where a gene is a short section of DNA coding for specific proteins"
       },
       {
-        "term": "Social learning theory",
-        "definition": "Learning that occurs through observing and imitating the behaviour of others, particularly role models"
+        "term": "Phenotype",
+        "definition": "The physical expression of an individual's genotype"
       },
       {
-        "term": "Reinforcement",
-        "definition": "Any consequence that increases the likelihood of a behaviour being repeated"
+        "term": "Epigenetics",
+        "definition": "A change in gene expression, without altering an individual's genetic make-up"
       },
       {
-        "term": "Modelling",
-        "definition": "The process of learning behaviour by observing and copying the actions of others"
+        "term": "Natural selection",
+        "definition": "The mechanism of evolution where genetically-determined behaviour giving selective advantage increases chances of survival and reproduction"
       }
     ],
     "howToAnswer": [
@@ -73,17 +72,14 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse negative reinforcement with punishment - negative reinforcement removes something unpleasant to increase behaviour",
-      "Students often describe classical conditioning when asked about operant conditioning - focus on consequences not associations",
-      "Avoid saying 'children copy everything they see' - social learning requires attention, retention, reproduction and motivation",
-      "Don't confuse unconditioned response with conditioned response - UCR is natural, CR is learned",
-      "Never say behaviour is 'programmed' - use 'learned' or 'conditioned' instead"
+      "Assuming twin studies can clearly separate nature from nurture effects",
+      "Confusing genotype with phenotype - genotype is genetic makeup, phenotype is physical expression",
+      "Thinking epigenetics changes genetic makeup rather than just gene expression",
+      "Believing all behaviour is purely determined by biology without environmental interaction"
     ],
     "examinerTips": [
-      "This topic appears in almost every Paper 2 as a 6-8 mark question",
-      "Always use technical terminology like 'conditioned stimulus' rather than 'trigger'",
-      "Give real-world examples from Pakistani context like classroom behaviour or traffic rule compliance",
-      "For social learning theory, mention all four processes: attention, retention, reproduction, motivation"
+      "Use specific examples like dopamine antagonists (Chlorpromazine) for schizophrenia when discussing practical applications",
+      "Address biological determinism's implications for the judicial system and economy in evaluation questions"
     ],
     "formulas": [],
     "keyDiagramDescription": "Classical conditioning diagram showing progression from UCS→UCR to NS+UCS→UCR to CS→CR, with clear labels and arrows showing the learning process",
@@ -112,7 +108,7 @@
       "Examiner Report 2023: 'Weak responses gave vague examples of reinforcement without specifying whether it was positive or negative' — always be precise about the type of reinforcement and explain exactly how it works"
     ],
     "keyDiagram": "Classical Conditioning Process Diagram: Draw a three-stage flowchart showing (1) Before Conditioning: UCS (food) → UCR (salivation), NS (bell) → no response; (2) During Conditioning: NS (bell) + UCS (food) → UCR (salivation) - repeat multiple times; (3) After Conditioning: CS (bell) → CR (salivation). Include arrows showing the progression and label each component clearly. This diagram must show the transformation of neutral stimulus to conditioned stimulus.",
-    "quickRecap": "The learning approach explains behaviour through three main theories: classical conditioning (learning through association), operant conditioning (learning through consequences), and social learning theory (learning through observation and imitation). Classical conditioning involves pairing stimuli, operant conditioning uses reinforcement and punishment to shape behaviour, while social learning requires attention, retention, reproduction and motivation. All three theories emphasise that behaviour is learned from the environment rather than being innate."
+    "quickRecap": "The biological approach views all behaviour as stemming from biological processes including genes, hormones and neurotransmitters. It distinguishes between genotype (genetic makeup) and phenotype (physical expression), with behaviour resulting from their interaction with environment. Natural selection explains how beneficial traits are passed down through generations, leading to evolution over time."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:21:35.755Z",
   "updated_at": "2026-04-06T05:21:35.755Z",
-  "enriched_at": "2026-04-06T16:08:32.906Z"
+  "enriched_at": "2026-04-06T16:08:32.906Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:58:33.456Z"
 }

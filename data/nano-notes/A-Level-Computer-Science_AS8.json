@@ -9,35 +9,21 @@
     "title": "Algorithm design and problem-solving",
     "readTime": "8 min",
     "keyPoints": [
-      "An **algorithm** is a step-by-step procedure for solving a problem that must be finite, unambiguous, and have clearly defined inputs and outputs",
-      "**Pseudocode** uses structured English to represent algorithms without the syntax constraints of a programming language",
-      "**Flowcharts** use standardized symbols (oval for start/end, rectangle for process, diamond for decision) to visually represent algorithm flow",
-      "**Trace tables** track variable values through each step of algorithm execution to test correctness and identify logical errors",
-      "**Abstraction** involves removing unnecessary details and focusing only on essential features relevant to the problem being solved",
-      "**Decomposition** breaks complex problems into smaller, manageable sub-problems that can be solved independently",
-      "**Pattern recognition** identifies similarities between problems to apply existing solution methods",
-      "Algorithm design follows a systematic approach: understand problem, identify inputs/outputs, plan solution, implement, test and refine"
+      "Algorithm Design and Problem-Solving is part of Paper 2 Fundamental Problem-solving and Programming Skills",
+      "Computational thinking is a key concept involving fundamental skills like abstraction, decomposition and algorithmic thinking",
+      "Computational thinking helps produce solutions to problems that can be implemented using various technologies and programming languages",
+      "Programming paradigms are different ways of thinking about or approaching problems, suited to unique functions and situations",
+      "Understanding programming paradigms is essential for appropriate use when designing and building programs",
+      "The course develops transferable skills including computational thinking, problem solving, and creating efficient solutions to problems"
     ],
     "definitions": [
       {
-        "term": "Algorithm",
-        "definition": "A finite sequence of unambiguous instructions that can be followed to solve a problem"
+        "term": "Computational thinking",
+        "definition": "A set of fundamental skills that help produce a solution to a problem, including skills such as abstraction, decomposition and algorithmic thinking"
       },
       {
-        "term": "Pseudocode",
-        "definition": "A method of writing algorithms using structured English that is independent of programming language syntax"
-      },
-      {
-        "term": "Abstraction",
-        "definition": "The process of hiding unnecessary implementation details while showing only essential features of an object or process"
-      },
-      {
-        "term": "Trace table",
-        "definition": "A technique used to test algorithms by tracking the values of variables at each step of execution"
-      },
-      {
-        "term": "Decomposition",
-        "definition": "Breaking down a complex problem into smaller, more manageable sub-problems"
+        "term": "Programming paradigm",
+        "definition": "A way of thinking about or approaching problems, with different programming styles suited to unique functions, tools and specific situations"
       }
     ],
     "howToAnswer": [
@@ -69,17 +55,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse pseudocode with actual programming code — pseudocode should be language-independent using structured English",
-      "Students often forget to include decision diamonds in flowcharts for selection statements",
-      "In trace tables, always show variable values after each step, not just final values",
-      "Don't mix flowchart symbols — use rectangles for processes and diamonds for decisions only",
-      "Abstraction is not just 'simplification' — it specifically means hiding unnecessary implementation details"
+      "Not using abstraction, decomposition and algorithmic thinking systematically when approaching problems",
+      "Choosing inappropriate programming paradigms for specific situations",
+      "Failing to consider how solutions can be implemented using different technologies and programming languages"
     ],
     "examinerTips": [
-      "Trace table questions appear frequently in Paper 2 - practice following algorithm steps methodically",
-      "When drawing flowcharts, always start and end with oval shapes",
-      "For pseudocode questions, use proper indentation and structured keywords like IF...THEN...ELSE",
-      "Algorithm design questions often worth 6-8 marks - plan your solution before writing"
+      "Ensure programming paradigms are used appropriately when designing and building programs",
+      "Focus on developing computational thinking skills as these are fundamental to problem-solving"
     ],
     "formulas": [],
     "keyDiagramDescription": "Standard flowchart showing oval start/end symbols, rectangular process boxes, diamond decision symbols, and arrows indicating flow direction with proper labeling for Yes/No branches",
@@ -106,7 +88,7 @@
       "Examiner Report 2023: 'Pseudocode answers lacked proper structure and used programming language syntax instead' — stick to standard pseudocode keywords like INPUT, OUTPUT, IF-THEN-ELSE, not specific language syntax like print() or scanf()"
     ],
     "keyDiagram": "Students must master flowchart construction using standard symbols: oval shapes for START/END terminals, parallelograms for INPUT/OUTPUT operations, rectangles for PROCESS steps, diamond shapes for DECISION points with YES/NO branches, and arrows showing flow direction. Each symbol must be clearly labeled and connected properly. Practice drawing complete flowcharts for common algorithms like finding maximum values, sorting, and conditional processing.",
-    "quickRecap": "Algorithm design requires breaking problems into input-process-output stages. Use proper pseudocode structure with standard keywords (INPUT, OUTPUT, IF-THEN-ELSE). Draw flowcharts with correct symbols: ovals for start/end, diamonds for decisions, rectangles for processes. Always test algorithms with sample data and consider edge cases like invalid inputs."
+    "quickRecap": "Algorithm Design and Problem-Solving is assessed in Paper 2 and focuses on computational thinking as a key concept. Computational thinking involves fundamental skills like abstraction, decomposition and algorithmic thinking to produce implementable solutions. Understanding different programming paradigms and their appropriate application is essential for effective program design and development."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -114,5 +96,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:16:41.417Z",
   "updated_at": "2026-04-06T05:16:41.417Z",
-  "enriched_at": "2026-04-06T16:11:27.019Z"
+  "enriched_at": "2026-04-06T16:11:27.019Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:56:05.384Z"
 }

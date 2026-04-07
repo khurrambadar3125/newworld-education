@@ -9,36 +9,22 @@
     "title": "Hydrocarbons",
     "readTime": "8 min",
     "keyPoints": [
-      "**Alkanes** are saturated hydrocarbons with the general formula CnH2n+2",
-      "**Alkenes** are unsaturated hydrocarbons with the general formula CnH2n containing a C=C double bond",
-      "Alkanes undergo **substitution reactions** where one atom/group is replaced by another atom/group",
-      "Alkenes undergo **addition reactions** where atoms/groups are added across the C=C double bond",
-      "**Cracking** is the thermal decomposition of long-chain alkanes to produce shorter alkanes and alkenes",
-      "Alkenes can undergo **addition polymerisation** to form long-chain polymers",
-      "Alkanes show **free radical substitution** with chlorine in the presence of UV light",
-      "**Bromine water** decolourises from orange to colourless when alkenes are present - this is a test for unsaturation",
-      "Cracking requires high temperature (450-750°C) and a catalyst (zeolite or aluminium oxide)"
+      "Transition elements are found in the d-block and form one or more stable ions with incomplete d orbitals",
+      "The d subshell can hold up to 10 electrons",
+      "Scandium and zinc are in the d-block but are not transition elements because their ions do not have incomplete d subshells",
+      "Scandium forms Sc³⁺ with an empty d subshell, zinc forms Zn²⁺ with a full d subshell",
+      "The 4s orbital is filled before the 3d orbital in atoms",
+      "When forming ions, 4s electrons are removed before 3d electrons",
+      "Transition elements can form multiple oxidation states due to their d orbital configurations"
     ],
     "definitions": [
       {
-        "term": "Saturated hydrocarbon",
-        "definition": "A hydrocarbon containing only single C-C bonds"
+        "term": "Transition elements",
+        "definition": "Elements that form one or more stable ions with incomplete d orbitals"
       },
       {
-        "term": "Unsaturated hydrocarbon",
-        "definition": "A hydrocarbon containing at least one C=C double bond"
-      },
-      {
-        "term": "Addition reaction",
-        "definition": "A reaction where atoms or groups are added to a molecule without anything being removed"
-      },
-      {
-        "term": "Substitution reaction",
-        "definition": "A reaction where one atom or group is replaced by another atom or group"
-      },
-      {
-        "term": "Addition polymerisation",
-        "definition": "The joining together of many unsaturated monomers to form a long-chain polymer"
+        "term": "d orbital",
+        "definition": "A subshell that can hold up to 10 electrons, found in transition elements"
       }
     ],
     "howToAnswer": [
@@ -66,17 +52,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'alkenes are unstable' - always say 'alkenes are reactive due to the C=C double bond'",
-      "Students often forget to mention UV light is needed for free radical substitution",
-      "Don't confuse addition and substitution - addition adds atoms, substitution replaces atoms",
-      "Never say cracking 'breaks' bonds - say 'thermal decomposition occurs'",
-      "Students often draw incorrect polymer structures - ensure the C=C bond opens completely"
+      "Thinking scandium and zinc are transition elements because they are in the d-block",
+      "Forgetting that 4s electrons are removed before 3d electrons when forming ions",
+      "Confusing the filling order (4s before 3d) with the ionization order (4s removed first)"
     ],
     "examinerTips": [
-      "Hydrocarbon reactions appear in every Paper 2 - learn mechanisms thoroughly",
-      "Always state conditions clearly: temperature, catalyst, and UV light where needed",
-      "For polymer questions, show at least 3 repeat units with continuation bonds",
-      "Bromine water test is frequently tested - remember orange to colourless colour change"
+      "Remember that being in the d-block does not automatically make an element a transition element",
+      "Always check for incomplete d orbitals in ions to identify true transition elements"
     ],
     "formulas": [
       "CnH2n+2 (alkanes)",
@@ -108,7 +90,7 @@
       "Examiner Report 2023: 'Candidates frequently mixed up molecular formulas' — alkanes follow CₙH₂ₙ₊₂ pattern while alkenes follow CₙH₂ₙ pattern"
     ],
     "keyDiagram": "Students must be able to draw structural formulas showing: 1) Alkane structure (e.g., ethane) with all single C-C and C-H bonds clearly shown, 2) Alkene structure (e.g., ethene) with the C=C double bond prominently displayed, 3) Complete addition reaction diagram showing alkene + bromine → dibromo compound, with all atoms and bonds before and after reaction",
-    "quickRecap": "Hydrocarbons are compounds of carbon and hydrogen only. Alkanes (CₙH₂ₙ₊₂) have single bonds and are saturated; alkenes (CₙH₂ₙ) have C=C double bonds and are unsaturated. Test: alkenes decolorize orange bromine water via addition reactions, alkanes don't react. Know the first few members of each series and their structural formulas."
+    "quickRecap": "Transition elements are d-block elements that form stable ions with incomplete d orbitals. Scandium and zinc are d-block elements but not transition elements because their ions have complete or empty d subshells. When forming ions, 4s electrons are removed before 3d electrons, despite 4s being filled before 3d in neutral atoms."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -116,5 +98,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:34:43.482Z",
   "updated_at": "2026-04-06T04:34:43.482Z",
-  "enriched_at": "2026-04-06T16:09:53.024Z"
+  "enriched_at": "2026-04-06T16:09:53.024Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:33:50.944Z"
 }

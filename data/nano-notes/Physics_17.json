@@ -9,36 +9,35 @@
     "title": "Static electricity",
     "readTime": "8 min",
     "keyPoints": [
-      "**Static electricity** is caused by the transfer of electrons from one material to another through friction",
-      "Objects become **positively charged** when they lose electrons and **negatively charged** when they gain electrons",
-      "**Like charges repel** and **unlike charges attract** each other",
-      "An **electric field** is a region where a charged object experiences a force",
-      "**Electric field lines** run from positive to negative charges and show the direction of force on a positive charge",
-      "Objects can be charged by **friction**, **contact** (conduction), or **induction**",
-      "**Earthing** (grounding) removes static charge by allowing electrons to flow to or from the ground",
-      "**Sparks** occur when charge builds up to a point where air becomes conducting",
-      "**Gold leaf electroscope** detects the presence and type of electric charge"
+      "Electric charge is measured in coulombs and can be positive or negative",
+      "Opposite charges experience an attractive force, like charges experience a repulsive force",
+      "An electric field is the region in which an electric charge experiences these attractive/repulsive forces",
+      "Conductors allow electric charge to flow through them because they have charged particles that are free to move",
+      "Insulators impede the flow of electric charge because they don't have charged particles that are free to move",
+      "When charged, insulators gain electrostatic charge (electric charge at rest on their surface)",
+      "Objects can be given a charge by the transfer of negative charge alone (electrons) by their addition or removal",
+      "Insulators can be electrostatically charged by friction when two insulators are rubbed together"
     ],
     "definitions": [
       {
-        "term": "Static electricity",
-        "definition": "Electric charge that builds up on objects and does not flow"
+        "term": "Electric charge",
+        "definition": "A property measured in coulombs that can be positive or negative"
       },
       {
         "term": "Electric field",
-        "definition": "A region around a charged object where another charged object experiences a force"
+        "definition": "The region in which an electric charge experiences attractive/repulsive forces"
       },
       {
-        "term": "Earthing",
-        "definition": "The process of removing excess charge by connecting an object to the ground"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
       },
       {
-        "term": "Insulator",
-        "definition": "A material that does not allow electric charge to flow through it easily"
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
       },
       {
-        "term": "Conductor",
-        "definition": "A material that allows electric charge to flow through it easily"
+        "term": "Electrostatic charge",
+        "definition": "Electric charge at rest on the surface of charged insulators"
       }
     ],
     "howToAnswer": [
@@ -71,17 +70,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'charge flows' in insulators — always say 'electrons transfer'",
-      "Students often say objects gain or lose 'charge' instead of 'electrons'",
-      "Never say 'positive charges move' — only electrons move in most materials",
-      "Students confuse charging by induction with charging by contact",
-      "Drawing electric field lines without arrows or in wrong direction loses marks"
+      "Confusing the direction of forces between like and opposite charges",
+      "Thinking that both positive and negative charges move during charging when only electrons transfer",
+      "Assuming conductors and insulators can be charged in the same way"
     ],
     "examinerTips": [
-      "Static electricity appears almost every year in Paper 2",
-      "Always specify 'electrons' rather than just 'charge' when explaining charging",
-      "Electric field diagrams must show arrows pointing from + to - for full marks",
-      "Questions often ask about dangers and uses of static electricity"
+      "Remember that only electrons move during charging processes, not positive charges",
+      "Focus on the difference between conductors having free charge carriers and insulators not having them"
     ],
     "formulas": [],
     "keyDiagramDescription": "Electric field pattern around point charges showing field lines as arrows pointing from positive to negative charges, with lines closer together indicating stronger field",
@@ -109,7 +104,7 @@
       "Examiner Report 2024: 'Candidates often failed to explain induction properly' — when describing attraction to neutral objects, always mention that charges are induced (separated) in the neutral object, creating opposite charges on near and far surfaces"
     ],
     "keyDiagram": "Students must be able to draw charge distribution diagrams showing: (1) A charged object (rod/balloon) with + or - symbols evenly distributed on its surface, (2) A neutral object nearby with induced charges - opposite charges on the near side, same charges on the far side, (3) Clear labels showing 'negatively charged rod', 'induced positive charges', 'induced negative charges', (4) An arrow indicating direction of attraction between opposite charges. Include proper spacing and use + and - symbols consistently.",
-    "quickRecap": "Static electricity involves stationary electric charges created by friction transferring electrons between materials. Objects with same charges repel, opposite charges attract. Charged objects can attract neutral objects by inducing charge separation. Lightning occurs when static charge builds up in clouds and discharges to earth through the air."
+    "quickRecap": "Electric charge can be positive or negative and creates forces between objects. Conductors allow charge to flow due to free charge carriers, while insulators impede charge flow. Insulators can gain electrostatic charge through friction when electrons transfer from one material to another."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -117,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:19:22.765Z",
   "updated_at": "2026-04-05T21:19:22.765Z",
-  "enriched_at": "2026-04-06T15:59:43.617Z"
+  "enriched_at": "2026-04-06T15:59:43.617Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:19:26.068Z"
 }

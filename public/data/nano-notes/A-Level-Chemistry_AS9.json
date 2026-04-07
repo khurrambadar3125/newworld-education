@@ -9,32 +9,37 @@
     "title": "The Periodic Table: chemical periodicity",
     "readTime": "8 min",
     "keyPoints": [
-      "**Periodicity** is the repetition of physical and chemical properties at regular intervals when elements are arranged in order of atomic number",
-      "**Atomic radius** decreases across a period due to increasing nuclear charge with same number of electron shells",
-      "**First ionisation energy** increases across a period due to increasing nuclear charge and decreasing atomic radius",
-      "**Metallic character** decreases across a period as elements change from metals to metalloids to non-metals",
-      "**Oxides** change from basic (metal oxides) to amphoteric to acidic (non-metal oxides) across a period",
-      "**Chlorides** change from ionic (metal chlorides) to covalent (non-metal chlorides) across a period",
-      "Group 1 elements show increasing reactivity down the group due to decreasing ionisation energy",
-      "Group 7 elements show decreasing reactivity down the group due to increasing atomic radius and shielding effect",
-      "**Melting points** across Period 3 increase from Na to Si then decrease from P to Ar due to changes in bonding and structure"
+      "Transition elements are found in the d-block and form one or more stable ions with incomplete d orbitals",
+      "Scandium and zinc are not transition elements because Sc³⁺ has an empty d subshell and Zn²⁺ has a full d subshell",
+      "Group 2 carbonates and nitrates become more thermally stable down the group due to decreasing charge density of cations",
+      "Smaller Group 2 ions have greater charge density and polarising effect, making compounds less thermally stable",
+      "Group 2 reactivity increases down the group because ionisation energy decreases due to increasing atomic radius and shielding effect",
+      "Group 2 hydroxide solubility increases down the group while sulfate solubility decreases down the group",
+      "For hydroxides, lattice enthalpy falls faster than hydration enthalpy making solution more exothermic down the group",
+      "For sulfates, lattice enthalpy falls slower than hydration enthalpy making solution more endothermic down the group",
+      "The 4s orbital is filled before 3d, so 4s electrons are removed before 3d electrons when forming ions",
+      "Transition elements show variable oxidation states due to similar energy levels of 3d and 4s electrons"
     ],
     "definitions": [
       {
-        "term": "Periodicity",
-        "definition": "The repetition of physical and chemical properties at regular intervals when elements are arranged in order of atomic number"
+        "term": "Transition elements",
+        "definition": "Elements that form one or more stable ions with incomplete d orbitals"
       },
       {
-        "term": "First ionisation energy",
-        "definition": "The energy required to remove one mole of electrons from one mole of gaseous atoms to form one mole of gaseous 1+ ions"
+        "term": "Charge density",
+        "definition": "The ratio of charge to volume of an ion, affecting its polarising power"
       },
       {
-        "term": "Atomic radius",
-        "definition": "Half the distance between the nuclei of two atoms of the same element when they are covalently bonded together"
+        "term": "Thermal stability",
+        "definition": "The ability of a compound to resist decomposition when heated"
       },
       {
-        "term": "Amphoteric oxide",
-        "definition": "An oxide that can react with both acids and bases to form salts"
+        "term": "Lattice enthalpy",
+        "definition": "The energy required to break up an ionic compound into gaseous ions"
+      },
+      {
+        "term": "Enthalpy change of hydration",
+        "definition": "The energy released when ions bond to water molecules"
       }
     ],
     "howToAnswer": [
@@ -62,17 +67,16 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'atomic size increases due to more protons' — nuclear charge increases but atomic radius decreases across periods",
-      "Students often confuse Group 1 reactivity (increases down group) with Group 7 reactivity (decreases down group)",
-      "Don't write 'atoms get bigger down groups due to more electrons' — say 'more electron shells/energy levels'",
-      "Never describe amphoteric as 'neutral' — it means reacts with both acids and bases",
-      "Students write 'covalent radius' instead of 'atomic radius' for bonded atoms"
+      "Assuming scandium and zinc are transition elements because they are in the d-block",
+      "Confusing the trend in thermal stability - stability increases down Group 2, not decreases",
+      "Getting the solubility trends backwards - hydroxides become more soluble down Group 2, sulfates become less soluble",
+      "Removing 3d electrons before 4s electrons when writing ion configurations",
+      "Thinking that smaller charge density means greater polarising effect"
     ],
     "examinerTips": [
-      "Periodic trends appear in every Paper 2 — learn the explanations using nuclear charge and shielding",
-      "Always state the trend first, then explain using electron configuration concepts",
-      "For oxide/chloride questions, link structure to properties (ionic vs covalent)",
-      "Group comparisons often test understanding of electron configuration changes"
+      "Remember that 4s electrons are always removed before 3d electrons when forming transition metal ions",
+      "Use charge density to explain thermal stability trends - smaller ions have higher charge density and greater polarising effect",
+      "Link solubility trends to enthalpy changes - more exothermic solution enthalpy means greater solubility"
     ],
     "formulas": [
       "Na2O + H2O → 2NaOH",
@@ -104,7 +108,7 @@
       "Examiner Report 2023: 'Weak responses failed to link periodicity to electron configuration' — always reference s, p, d subshells when explaining property changes across periods"
     ],
     "keyDiagram": "Students must draw a periodic table showing the first 20 elements with clear period and group labels. Mark electron configurations for Period 3 elements (Na: 2,8,1 through Ar: 2,8,8). Include arrows showing trends: atomic radius decreasing left→right and increasing top→bottom; ionization energy increasing left→right and bottom→top. Label s-block (Groups 1-2) and p-block (Groups 3-8) regions clearly.",
-    "quickRecap": "Periodicity means properties repeat in patterns across periods. Across periods: atomic radius decreases, ionization energy increases (due to increasing nuclear charge, constant shielding). Down groups: atomic radius increases, ionization energy decreases (more electron shells = more shielding). Chemical properties depend on outer electron configuration - same group = similar properties."
+    "quickRecap": "Transition elements have incomplete d orbitals in their stable ions, excluding scandium and zinc. Group 2 shows clear periodic trends: thermal stability and solubility of hydroxides increase down the group due to decreasing charge density, while sulfate solubility decreases. These trends are explained by the relative changes in lattice enthalpy and hydration enthalpy as ion size increases down the group."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -112,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:32:35.324Z",
   "updated_at": "2026-04-06T04:32:35.324Z",
-  "enriched_at": "2026-04-06T16:14:03.478Z"
+  "enriched_at": "2026-04-06T16:14:03.478Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:35:34.571Z"
 }

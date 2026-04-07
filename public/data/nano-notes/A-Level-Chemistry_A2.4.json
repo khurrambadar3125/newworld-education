@@ -9,37 +9,21 @@
     "title": "Transition elements",
     "readTime": "8 min",
     "keyPoints": [
-      "**Transition elements** are d-block elements that form at least one stable ion with a partially filled d-orbital",
-      "**Complex ions** consist of a central metal ion surrounded by ligands that form coordinate bonds by donating electron pairs",
-      "**Ligands** are molecules or ions that donate a lone pair of electrons to form a coordinate bond with the central metal ion",
-      "**Oxidation states** of transition elements vary because energy difference between 4s and 3d orbitals is small, allowing multiple electron configurations",
-      "**Colour** in transition metal compounds arises from d-d electron transitions when d-orbitals are split by ligands",
-      "**Catalytic activity** occurs because transition metals can change oxidation states easily and provide alternative reaction pathways",
-      "**Coordinate bonds** form when ligands donate lone pairs to vacant orbitals on the central metal ion",
-      "**Shape** of complexes depends on coordination number: tetrahedral (4), square planar (4), or octahedral (6)",
-      "**Ligand substitution** reactions occur when one ligand is replaced by another, often with colour changes",
-      "**Variable oxidation states** result from successive loss of 4s electrons then 3d electrons due to similar ionization energies"
+      "Transition elements are found in the d-block of the periodic table and form one or more stable ions with incomplete d orbitals",
+      "Scandium and zinc are in the d-block but are not transition elements because their ions do not have incomplete d subshells",
+      "Scandium forms Sc³⁺ with an empty d subshell [Ar], while zinc forms Zn²⁺ with a full d subshell [Ar]3d¹⁰",
+      "The 4s orbital is filled before the 3d orbital, but 4s electrons are removed before 3d electrons when forming ions",
+      "Many transition elements form multiple oxidation states, such as vanadium (V²⁺, V³⁺, V⁴⁺, V⁵⁺) and manganese (Mn²⁺, Mn³⁺, Mn⁴⁺, Mn⁶⁺, Mn⁷⁺)",
+      "Chromium and copper have unusual electron configurations: Cr [Ar]3d⁵4s¹ and Cu [Ar]3d¹⁰4s¹"
     ],
     "definitions": [
       {
-        "term": "Transition element",
-        "definition": "A d-block element that forms at least one stable ion with a partially filled d-subshell"
+        "term": "Transition elements",
+        "definition": "Elements that form one or more stable ions with incomplete d orbitals"
       },
       {
-        "term": "Complex ion",
-        "definition": "A central metal ion surrounded by ligands that are bonded to it by coordinate bonds"
-      },
-      {
-        "term": "Ligand",
-        "definition": "A molecule or ion that donates a lone pair of electrons to form a coordinate bond with a central metal ion"
-      },
-      {
-        "term": "Coordination number",
-        "definition": "The number of coordinate bonds formed between the central metal ion and ligands"
-      },
-      {
-        "term": "Coordinate bond",
-        "definition": "A covalent bond formed when one atom provides both electrons for the shared pair"
+        "term": "d orbital",
+        "definition": "A type of atomic orbital that can hold up to 10 electrons"
       }
     ],
     "howToAnswer": [
@@ -72,17 +56,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'transition metals are d-block elements' — Sc and Zn are d-block but not transition elements",
-      "Students often forget that coordinate bonds involve BOTH electrons coming from the ligand",
-      "Don't confuse coordination number with oxidation number — coordination number counts bonds, not charge",
-      "Never say colour is due to 'electrons jumping energy levels' — say 'd-d electron transitions between split d-orbitals'",
-      "Students write incomplete ligand substitution equations — must show ALL species including water ligands being replaced"
+      "Thinking scandium and zinc are transition elements because they are in the d-block",
+      "Removing 3d electrons before 4s electrons when forming ions",
+      "Forgetting that transition elements must have incomplete d orbitals in their ions, not just their atoms"
     ],
     "examinerTips": [
-      "Transition metals appear in almost every Paper 2, especially ligand substitution and colour changes",
-      "Always state the coordination number when describing complex shapes",
-      "Learn the common ligands: H₂O, NH₃, Cl⁻, OH⁻, CN⁻",
-      "Colour change questions often worth 2-3 marks — give initial colour AND final colour with formulas"
+      "Remember that 4s electrons are removed first when forming transition metal ions, even though they are filled after 3d",
+      "Check that ions have incomplete d subshells to qualify as transition element ions"
     ],
     "formulas": [
       "[Cu(H₂O)₆]²⁺",
@@ -117,7 +97,7 @@
       "Examiner Report 2024: 'Common error was stating that all transition metal compounds are colored' — remember that compounds with d⁰ or d¹⁰ configurations (like Sc³⁺ and Zn²⁺) are typically colorless"
     ],
     "keyDiagram": "Students must be able to draw the electron configuration diagram showing d-orbital filling across the first transition series (Sc to Zn). Draw boxes representing the five d-orbitals, show progressive filling with arrows representing electrons, and highlight how Cr and Mn have special configurations (Cr: [Ar]3d⁵4s¹, Mn: [Ar]3d⁵4s²). Include the key that shows how partially filled d-orbitals (not completely empty or full) define true transition elements.",
-    "quickRecap": "Transition elements are d-block elements with partially filled d-orbitals in at least one oxidation state. They show four key properties: variable oxidation states, form colored compounds, act as catalysts, and form complex ions. Remember Sc and Zn are d-block but NOT transition elements. Variable oxidation states occur because d-electrons have similar energies and can be lost relatively easily."
+    "quickRecap": "Transition elements are d-block elements that form stable ions with incomplete d orbitals. Scandium and zinc are exceptions as their ions have empty or full d subshells respectively. The 4s electrons are removed before 3d electrons during ion formation, and many transition elements exhibit multiple oxidation states."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -125,5 +105,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:37:35.341Z",
   "updated_at": "2026-04-06T04:37:35.341Z",
-  "enriched_at": "2026-04-06T16:07:05.459Z"
+  "enriched_at": "2026-04-06T16:07:05.459Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:33:16.640Z"
 }

@@ -9,32 +9,41 @@
     "title": "Electromagnetic forces",
     "readTime": "8 min",
     "keyPoints": [
-      "When a **current-carrying conductor** is placed in a magnetic field, it experiences a force (motor effect)",
-      "The direction of force can be found using **Fleming's left-hand rule**: First finger = magnetic field, seCond finger = Current, thuMb = Motion/force",
-      "The force is maximum when the conductor is **perpendicular** to the magnetic field and zero when parallel",
-      "**Electric motors** use the motor effect where current-carrying conductors in magnetic fields rotate due to forces",
-      "A motor requires a **commutator** to reverse current direction every half turn to maintain rotation in same direction",
-      "**Moving charged particles** in magnetic fields experience a force and follow a **circular path**",
-      "The force on a charged particle is always **perpendicular** to both its velocity and the magnetic field",
-      "**Electron beams** in cathode ray tubes are deflected by magnetic fields, used in old television screens",
-      "The magnitude of force depends on **current strength, magnetic field strength, and length** of conductor in field"
+      "Magnets have north and south poles - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are always attracted to magnets regardless of pole",
+      "Non-magnetic materials (glass, plastic) experience no force with magnets",
+      "Magnetic materials can be magnetized by stroking with a magnet, hammering in a magnetic field, or placing in a coil with direct current",
+      "Temporary magnets (soft iron) lose magnetism when the field is removed, permanent magnets retain their magnetism",
+      "Electromagnets are temporary magnets made from soft iron in coiled wire with direct current",
+      "Magnetic field lines show direction (north to south pole) and strength (closer lines = stronger field)",
+      "Electric charges can be positive or negative - opposite charges attract, like charges repel",
+      "Conductors allow charge flow through free moving charged particles, insulators impede charge flow",
+      "Insulators can be electrostatically charged by friction, transferring electrons between materials"
     ],
     "definitions": [
       {
-        "term": "Motor effect",
-        "definition": "The force experienced by a current-carrying conductor placed in a magnetic field"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Fleming's left-hand rule",
-        "definition": "A rule to find direction of force on current-carrying conductor: First finger = magnetic field direction, seCond finger = Current direction, thuMb = Motion/force direction"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Commutator",
-        "definition": "A device that reverses the direction of current in a motor every half turn to maintain continuous rotation in the same direction"
+        "term": "Electromagnet",
+        "definition": "A common temporary magnet made when soft iron is placed within coiled wire with a direct current running through it"
       },
       {
-        "term": "Electric motor",
-        "definition": "A device that converts electrical energy into kinetic energy using the motor effect"
+        "term": "Electric charge",
+        "definition": "Measured in coulombs and can be positive or negative"
+      },
+      {
+        "term": "Electric field",
+        "definition": "The region in which an electric charge experiences attractive/repulsive forces"
+      },
+      {
+        "term": "Electrostatic charge",
+        "definition": "Electric charge at rest on the surface of insulators when charged"
       }
     ],
     "howToAnswer": [
@@ -66,17 +75,15 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse Fleming's left-hand rule (motor effect) with right-hand rule (generator effect)",
-      "Students often forget that force is zero when conductor is parallel to magnetic field",
-      "Never say 'electromagnet' when the question asks about 'electromagnetic force'",
-      "Students draw incorrect current direction - remember conventional current flows from positive to negative",
-      "Never confuse the function of commutator with brushes - commutator reverses current, brushes maintain contact"
+      "Thinking magnetic materials are only attracted to one pole of a magnet - they are attracted to both poles",
+      "Confusing temporary and permanent magnets - temporary magnets lose magnetism when the field is removed",
+      "Believing that only positive charges move during electrostatic charging - only electrons (negative charge) transfer",
+      "Thinking magnetic field lines go from south to north - they always go from north to south pole",
+      "Assuming all metals are magnetic - only iron, steel, cobalt and nickel are mentioned as magnetic materials"
     ],
     "examinerTips": [
-      "Fleming's left-hand rule questions appear in almost every paper - practice finger positioning",
-      "Always draw force arrows perpendicular to both current and field lines",
-      "Motor questions often ask for commutator function - learn the standard answer",
-      "Charged particle questions may link to cathode ray tubes or mass spectrometers"
+      "Remember magnetic field strength is shown by how close field lines are together - closer lines mean stronger field",
+      "For electrostatic charging experiments, always specify that electrons transfer from one material to another, making them oppositely charged"
     ],
     "formulas": [
       "F = BIL (when conductor perpendicular to field)",
@@ -106,7 +113,7 @@
       "Examiner Report 2023: 'Candidates frequently gave answers without units for force calculations' — always include Newtons (N) as the unit for electromagnetic force"
     ],
     "keyDiagram": "Students must be able to draw a 3D diagram showing: a horizontal wire carrying current (marked with arrow), vertical magnetic field lines (marked N to S or with crosses/dots), and the resulting force direction (using Fleming's left-hand rule). Include labels for current direction (I), magnetic field (B), and force (F). Also draw the hand position showing first finger (field), second finger (current), and thumb (force) all at right angles.",
-    "quickRecap": "Electromagnetic force occurs when a current-carrying conductor is placed in a magnetic field. Use F = BIl for force calculation where B is magnetic flux density, I is current, and l is length. Fleming's left-hand rule determines force direction: first finger = field, second finger = current, thumb = motion. Maximum force occurs when conductor is perpendicular to magnetic field."
+    "quickRecap": "Magnets produce magnetic fields and have north and south poles that follow attraction/repulsion rules. Magnetic materials can be temporarily or permanently magnetized, with electromagnets being a key example of temporary magnets. Electric charges also follow attraction/repulsion rules, and insulators can gain electrostatic charge through friction by electron transfer. Both magnetic and electric fields can be visualized through field line diagrams."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -114,5 +121,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:20:26.666Z",
   "updated_at": "2026-04-05T21:20:26.666Z",
-  "enriched_at": "2026-04-06T16:01:09.404Z"
+  "enriched_at": "2026-04-06T16:01:09.404Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:20:23.382Z"
 }

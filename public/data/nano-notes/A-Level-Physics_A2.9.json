@@ -9,31 +9,35 @@
     "title": "Magnetic fields",
     "readTime": "8 min",
     "keyPoints": [
-      "**Magnetic flux** Φ is the product of magnetic flux density and the area normal to the field",
-      "**Magnetic flux density** B is the magnetic flux passing through unit area placed perpendicular to the magnetic field",
-      "The force on a current-carrying conductor in a magnetic field is given by **F = BIL sin θ**",
-      "Fleming's left-hand rule determines the direction of force: first finger = field, second finger = current, thumb = force",
-      "**Magnetic flux linkage** is the product of magnetic flux and the number of turns in a coil",
-      "The **Hall effect** occurs when a potential difference is developed across a conductor carrying current in a magnetic field",
-      "Hall voltage is proportional to both the magnetic flux density and the current through the conductor",
-      "The direction of force on moving charges is given by **F = BQv sin θ** where Q is charge and v is velocity"
+      "Force fields are areas where objects experience non-contact forces, formed during interaction of masses, static charges or moving charges",
+      "Gravitational fields are areas where objects with mass experience a non-contact force, with uniform fields exerting the same force everywhere and radial fields where force depends on position",
+      "Gravitational field strength (g) is force per unit mass, calculated using g = F/m, constant in uniform fields but varies in radial fields",
+      "Newton's law of gravitation states gravitational force is directly proportional to the product of masses and inversely proportional to the square of distance between them",
+      "Gravitational force between point masses follows F = Gm₁m₂/r² where G is gravitational constant",
+      "For radial fields, gravitational field strength follows g = GM/r² showing an inverse square relationship",
+      "Mass of a uniform sphere acts as a point mass at its centre when calculating gravitational force on objects outside the sphere",
+      "Gravity always acts on objects with mass and is always attractive"
     ],
     "definitions": [
       {
-        "term": "Magnetic flux density",
-        "definition": "The magnetic flux passing through unit area placed perpendicular to the magnetic field"
+        "term": "Force field",
+        "definition": "An area in which an object experiences a non-contact force"
       },
       {
-        "term": "Magnetic flux",
-        "definition": "The product of magnetic flux density and the area normal to the magnetic field"
+        "term": "Gravitational field",
+        "definition": "An area where objects with mass experience a non-contact force"
       },
       {
-        "term": "Hall effect",
-        "definition": "The production of a potential difference across a conductor carrying current when placed in a magnetic field perpendicular to the current"
+        "term": "Gravitational field strength (g)",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       },
       {
-        "term": "Tesla",
-        "definition": "The magnetic flux density when a force of 1 N acts on a 1 m length of conductor carrying a current of 1 A perpendicular to the field"
+        "term": "Uniform field",
+        "definition": "A field that exerts the same gravitational force on a mass everywhere in the field"
+      },
+      {
+        "term": "Radial field",
+        "definition": "A field where the force exerted depends on the position of the object in the field"
       }
     ],
     "howToAnswer": [
@@ -65,17 +69,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'magnetic field strength' when you mean magnetic flux density B",
-      "Students often forget to include sin θ in force calculations and assume θ = 90°",
-      "Confusing the direction rules - use Fleming's LEFT hand rule for motor effect, not right hand rule",
-      "Forgetting that Hall voltage depends on both current AND magnetic field strength",
-      "Not stating that area must be perpendicular to field lines when defining magnetic flux"
+      "Confusing gravitational field strength with gravitational force - field strength is force per unit mass",
+      "Forgetting that gravitational field strength varies with position in radial fields but is constant in uniform fields",
+      "Not recognizing that uniform sphere mass acts as point mass at centre for external calculations",
+      "Missing that gravitational force follows inverse square relationship with distance"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2 and Paper 4",
-      "Always draw a labelled diagram showing field direction, current direction, and force direction",
-      "Learn Fleming's left-hand rule thoroughly - it's frequently examined",
-      "Hall effect calculations often appear in data analysis questions in Paper 3"
+      "Remember field line spacing indicates field strength - closer lines mean stronger gravitational field",
+      "Earth's gravitational field is radial but appears uniform very close to the surface"
     ],
     "formulas": [
       "Φ = BA cos θ",
@@ -107,7 +108,7 @@
       "Examiner Report 2023: 'Poor understanding of right-hand rules led to incorrect directions' — practice right-hand grip rule for wires and right-hand rule for motors until automatic"
     ],
     "keyDiagram": "Students must be able to draw magnetic field lines around a bar magnet showing: curved lines emerging from North pole and entering South pole, lines never crossing, closer spacing near poles indicating stronger field, arrows on lines showing N→S direction, and field lines forming complete loops (though only external portion usually shown). For current-carrying wire: concentric circles around wire with arrows showing direction using right-hand grip rule.",
-    "quickRecap": "Magnetic fields are regions where magnetic forces act, represented by field lines from N to S poles. Current-carrying wires create circular magnetic fields around them. Use right-hand grip rule for wire fields and right-hand rule for motor forces. Field strength decreases with distance and increases with current/number of turns in electromagnets."
+    "quickRecap": "Gravitational fields are regions where masses experience non-contact forces, with field strength representing force per unit mass. Newton's law shows gravitational force is proportional to mass product and inversely proportional to distance squared. Field strength in radial fields follows an inverse square relationship with distance from the source mass."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -115,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:45:43.829Z",
   "updated_at": "2026-04-06T04:45:43.829Z",
-  "enriched_at": "2026-04-06T16:10:17.996Z"
+  "enriched_at": "2026-04-06T16:10:17.996Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:29:30.336Z"
 }

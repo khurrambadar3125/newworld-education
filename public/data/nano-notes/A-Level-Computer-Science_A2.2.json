@@ -9,36 +9,17 @@
     "title": "Communication and internet technologies",
     "readTime": "8 min",
     "keyPoints": [
-      "**IP address** is a unique numerical identifier assigned to each device on a network to enable communication",
-      "**IPv4** uses 32-bit addresses written as four decimal numbers separated by dots (e.g., 192.168.1.1)",
-      "**IPv6** uses 128-bit addresses written in hexadecimal format to provide more available addresses",
-      "**DNS (Domain Name System)** translates human-readable domain names into IP addresses",
-      "**Client-server model** involves clients requesting services from servers which provide responses",
-      "**Cloud computing** provides on-demand access to computing resources over the internet without direct management",
-      "**Web browser** acts as a client that requests web pages from web servers using HTTP/HTTPS protocols",
-      "**URL (Uniform Resource Locator)** specifies the address of a resource on the internet including protocol, domain and path",
-      "**Packets** are small units of data transmitted across networks with headers containing routing information"
+      "Communication and internet technologies is part of the Advanced Theory component (Paper 3) under Networks, Communication and Security",
+      "Communication is a key concept defined as a core requirement of computer systems that includes the ability to transfer data from one device or component to another",
+      "Communication involves understanding the rules and methods used in data transfer processes",
+      "Communication can range from internal transfer of data within a computer system to transfer of video across the internet",
+      "The subject develops understanding of communication methods as a transferable skill",
+      "Networks including the internet are covered in Paper 1 Theory Fundamentals under Networks and Communication"
     ],
     "definitions": [
       {
-        "term": "IP Address",
-        "definition": "A unique numerical identifier assigned to each device connected to a network that uses Internet Protocol for communication"
-      },
-      {
-        "term": "DNS",
-        "definition": "Domain Name System - a hierarchical system that translates human-readable domain names into corresponding IP addresses"
-      },
-      {
-        "term": "Client-Server Model",
-        "definition": "A network architecture where client devices request services or resources from server computers that provide responses"
-      },
-      {
-        "term": "Cloud Computing",
-        "definition": "The delivery of computing services including storage, processing and software over the internet on-demand"
-      },
-      {
-        "term": "Packet",
-        "definition": "A formatted unit of data transmitted across a network containing both the actual data and header information for routing"
+        "term": "Communication",
+        "definition": "A core requirement of computer systems that includes the ability to transfer data from one device or component to another and an understanding of the rules and methods used in this data transfer"
       }
     ],
     "howToAnswer": [
@@ -71,18 +52,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'DNS converts' — always say 'DNS translates domain names into IP addresses'",
-      "Students often confuse client-server with peer-to-peer networks",
-      "Don't say 'cloud is just storage' — cloud provides computing services including processing, networking and software",
-      "Never describe IPv6 as 'longer IPv4' — specify it uses hexadecimal format and 128-bit addressing",
-      "Students forget that packets contain headers with routing information, not just data"
+      "Confusing communication topics between Paper 1 (Networks and Communication) and Paper 3 (Communication and internet technologies)",
+      "Not understanding that communication ranges from internal system data transfer to internet-based transfers",
+      "Overlooking the importance of rules and methods in data transfer processes"
     ],
     "examinerTips": [
-      "DNS and IP addressing appear in almost every Paper 2 exam",
-      "Always distinguish between IPv4 and IPv6 format and addressing capabilities",
-      "Client-server questions often require examples of specific clients and servers",
-      "Cloud computing questions focus on advantages like scalability and cost-effectiveness",
-      "Packet switching questions require mention of headers and routing information"
+      "Remember that communication is assessed as both a fundamental concept in Paper 1 and advanced theory in Paper 3",
+      "Focus on understanding both the technical aspects and the range of communication from internal systems to internet applications"
     ],
     "formulas": [],
     "keyDiagramDescription": "Client-Server model diagram showing multiple clients (computers, mobile devices) connected through internet cloud to servers, with arrows indicating request and response flow. Include DNS server showing domain name to IP address translation process.",
@@ -111,7 +87,7 @@
       "Examiner Report 2023: 'Candidates often gave vague answers about internet security' — be specific about security measures like SSL/TLS encryption, firewalls, and authentication rather than just saying 'security software'"
     ],
     "keyDiagram": "Students must be able to draw a network topology diagram showing: local devices connected to a router/modem, connection to ISP, ISP connected to internet backbone, and destination network. Include labels for: LAN, WAN, ISP, routers, and show data packet flow with arrows. Also draw protocol stack diagram showing Application Layer (HTTP/FTP), Transport Layer (TCP/UDP), Internet Layer (IP), and Network Access Layer, with examples of protocols at each level.",
-    "quickRecap": "Internet uses TCP/IP protocol suite with packet switching to transmit data between networks globally. ISPs provide connectivity while routers direct traffic using IP addresses. Key protocols include HTTP/HTTPS for web browsing, TCP for reliable transmission, and UDP for faster but less reliable communication. Security measures include SSL/TLS encryption, firewalls, and secure authentication methods."
+    "quickRecap": "Communication and internet technologies appears in Paper 3 Advanced Theory as part of Networks, Communication and Security. Communication is a key concept involving data transfer between devices and understanding transfer rules and methods. It ranges from internal computer system data transfer to internet-based communication like video transfer."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +95,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:18:06.183Z",
   "updated_at": "2026-04-06T05:18:06.183Z",
-  "enriched_at": "2026-04-06T16:06:20.364Z"
+  "enriched_at": "2026-04-06T16:06:20.364Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:37:59.366Z"
 }

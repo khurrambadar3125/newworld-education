@@ -9,36 +9,35 @@
     "title": "Forces and motion",
     "readTime": "8 min",
     "keyPoints": [
-      "**Force** is a push or pull that can change the shape, size, or motion of an object",
-      "**Mass** is the amount of matter in an object and is measured in kilograms (kg)",
-      "**Weight** is the gravitational force acting on an object and is measured in newtons (N)",
-      "Weight = mass × gravitational field strength (W = mg)",
-      "**Scalar quantities** have magnitude only (mass, speed, distance, time)",
-      "**Vector quantities** have both magnitude and direction (force, weight, velocity, acceleration, momentum)",
-      "In free fall, all objects accelerate at approximately 10 m/s² due to gravity (ignoring air resistance)",
-      "**Momentum** = mass × velocity (p = mv) and is conserved in collisions",
-      "Terminal velocity is reached when air resistance equals weight, resulting in zero acceleration"
+      "Magnets have north and south poles - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are attracted to magnets, non-magnetic materials (glass, plastic) are not",
+      "Magnetic materials can be magnetised by stroking with magnets, hammering in magnetic fields, or placing in coils with direct current",
+      "Temporary magnets lose magnetism when the magnetic field is removed, permanent magnets retain their magnetism",
+      "Magnetic field lines show direction (north to south) and strength (closer lines = stronger field)",
+      "Electric charge is measured in coulombs and can be positive or negative",
+      "Conductors allow charge flow through free moving charged particles, insulators impede charge flow",
+      "Objects become charged through transfer of electrons by addition or removal"
     ],
     "definitions": [
       {
-        "term": "Force",
-        "definition": "A push or pull that can change the shape, size, or motion of an object"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Mass",
-        "definition": "The amount of matter in an object"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Weight",
-        "definition": "The gravitational force acting on an object"
+        "term": "Electric charge",
+        "definition": "Measured in coulombs and can be positive or negative"
       },
       {
-        "term": "Momentum",
-        "definition": "The product of mass and velocity of a moving object"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
       },
       {
-        "term": "Terminal velocity",
-        "definition": "The constant velocity reached when the drag force equals the driving force"
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
       }
     ],
     "howToAnswer": [
@@ -70,17 +69,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say mass and weight are the same — mass is measured in kg, weight in N",
-      "Students often forget that weight changes with location but mass stays constant",
-      "Never say momentum is a scalar — it is a vector quantity with direction",
-      "Students confuse speed (scalar) with velocity (vector)",
-      "Never forget units in calculations — weight must be in newtons (N)"
+      "Confusing the direction of magnetic field lines - they always point from north to south pole",
+      "Thinking magnetic materials are repelled by magnets - the force is always attractive regardless of pole",
+      "Assuming permanent magnets can be turned on and off like temporary magnets",
+      "Forgetting that only electrons transfer when objects become charged, not positive charges"
     ],
     "examinerTips": [
-      "Forces and motion appears in every Paper 2 — especially weight calculations",
-      "Always show the formula first, then substitute values for calculation questions",
-      "Remember to state direction when dealing with vector quantities",
-      "Free fall questions often test understanding that acceleration = 10 m/s² regardless of mass"
+      "Remember that magnetic field strength is shown by how close field lines are together",
+      "Know the difference between temporary and permanent magnets for practical applications like electromagnets vs compass magnets"
     ],
     "formulas": [
       "W = mg",
@@ -112,7 +108,7 @@
       "Examiner Report 2024: 'Common error was not stating the direction of calculated forces' — every force answer must include both magnitude and direction for full marks"
     ],
     "keyDiagram": "Free body diagrams are essential - draw isolated objects with all forces as arrows from the center of mass. Label each arrow with force name and value. Use dotted lines to show resolved components. For equilibrium problems, draw force triangles showing how forces balance. Include scales and angles clearly marked.",
-    "quickRecap": "Forces cause acceleration (F = ma). Objects in equilibrium have zero resultant force. Resolve diagonal forces using trigonometry (sin for opposite, cos for adjacent). Work done equals force times distance moved in direction of force. Always draw clear force diagrams and state directions in answers."
+    "quickRecap": "Magnets have poles that attract or repel depending on whether they are like or opposite. Magnetic fields can be visualized using field lines that point from north to south, with closer lines indicating stronger fields. Electric charge comes in positive and negative forms, with conductors allowing charge flow and insulators preventing it."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:59:27.398Z",
   "updated_at": "2026-04-05T20:59:27.398Z",
-  "enriched_at": "2026-04-06T16:03:33.219Z"
+  "enriched_at": "2026-04-06T16:03:33.219Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:21:56.296Z"
 }

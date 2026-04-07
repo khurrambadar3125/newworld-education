@@ -9,36 +9,35 @@
     "title": "Medical Physics",
     "readTime": "8 min",
     "keyPoints": [
-      "**X-rays** are electromagnetic radiation with wavelengths of approximately 10^-10 m that can penetrate soft tissue but are absorbed by bone",
-      "**Ultrasound** uses high frequency sound waves (1-15 MHz) that reflect at boundaries between tissues of different acoustic impedance",
-      "**PET scans** detect gamma rays emitted by positron-emitting radioisotopes to produce images of metabolic activity",
-      "**MRI** uses strong magnetic fields and radiofrequency pulses to align and excite hydrogen nuclei in water molecules",
-      "**Acoustic impedance** Z = ρc where ρ is density and c is speed of sound in the medium",
-      "**Attenuation** of X-rays follows I = I₀e^(-μx) where μ is the linear attenuation coefficient",
-      "**Half-value thickness** is the thickness of material that reduces X-ray intensity to half its original value",
-      "**Doppler ultrasound** can measure blood flow velocity using the frequency shift of reflected waves",
-      "**Contrast agents** improve image quality by increasing the difference in absorption or reflection between tissues"
+      "One radian is defined as the angle in a circle sector when the arc length equals the radius",
+      "Angular speed (ω) = v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is time period, f is frequency",
+      "Objects in circular motion have constantly changing velocity due to changing direction, therefore they must be accelerating",
+      "Centripetal acceleration = v²/r = ω²r, always directed towards the center of the circle",
+      "Centripetal force = mv²/r = mω²r, derived from Newton's second law F = ma",
+      "Gravitational fields are areas where objects with mass experience non-contact forces",
+      "Newton's law of gravitation: F = Gm₁m₂/r², where force is proportional to product of masses and inversely proportional to square of distance",
+      "Gravitational field strength g = F/m in uniform fields, and g = GM/r² in radial fields"
     ],
     "definitions": [
       {
-        "term": "Acoustic impedance",
-        "definition": "The product of density and speed of sound in a medium, measured in kg m^-2 s^-1"
+        "term": "Radian",
+        "definition": "The angle in a sector of a circle when the arc length of that sector equals the radius of the circle"
       },
       {
-        "term": "Linear attenuation coefficient",
-        "definition": "A measure of how easily X-rays penetrate a material, with units m^-1"
+        "term": "Angular displacement",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "Half-value thickness",
-        "definition": "The thickness of material required to reduce the intensity of X-rays to half the incident intensity"
+        "term": "Centripetal force",
+        "definition": "The force that acts perpendicular to motion towards the center of the circle, causing circular motion"
       },
       {
-        "term": "Positron emission tomography",
-        "definition": "An imaging technique that detects gamma rays from positron-electron annihilation to map metabolic activity"
+        "term": "Gravitational field",
+        "definition": "An area where objects with mass experience a non-contact force"
       },
       {
-        "term": "Piezoelectric effect",
-        "definition": "The property of certain crystals to produce an electric field when mechanically stressed or vice versa"
+        "term": "Gravitational field strength",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       }
     ],
     "howToAnswer": [
@@ -70,18 +69,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'X-rays are light waves' — always say 'X-rays are electromagnetic radiation'",
-      "Students often confuse ultrasound frequency with X-ray frequency — ultrasound is MHz, X-rays are much higher",
-      "Don't write 'bones are white on X-rays because they are hard' — say 'bones appear white because they have high linear attenuation coefficient'",
-      "Never say 'ultrasound bounces off organs' — always say 'ultrasound reflects at boundaries between tissues'",
-      "Students forget that PET scans detect gamma rays, not positrons directly"
+      "Confusing degrees with radians - remember to convert using π/180",
+      "Thinking objects in uniform circular motion don't accelerate because speed is constant",
+      "Forgetting that centripetal force always points toward the center, not in the direction of motion",
+      "Not recognizing that uniform sphere mass acts as a point mass at its center for gravitational calculations"
     ],
     "examinerTips": [
-      "Medical physics appears frequently in Paper 4 as a practical context question",
-      "Always quote the attenuation formula when discussing X-ray absorption",
-      "Draw ray diagrams for ultrasound reflection to show your understanding",
-      "Remember to state units for acoustic impedance (kg m^-2 s^-1)",
-      "Link physics principles to medical applications for full marks"
+      "Learn the relationship v = ωr to convert between linear and angular quantities",
+      "Remember that gravitational field strength follows an inverse square relationship: if distance doubles, field strength decreases by factor of 4"
     ],
     "formulas": [
       "Z = ρc (acoustic impedance)",
@@ -112,7 +107,7 @@
       "Examiner Report 2023: 'Candidates frequently gave incomplete explanations of total internal reflection in fiber optics' — always mention that light travels down the core by total internal reflection at the core-cladding boundary when the angle exceeds the critical angle"
     ],
     "keyDiagram": "Essential X-ray tube diagram showing: heated cathode filament (source of electrons), high voltage between cathode and anode (typically 50-100 kV), tungsten target anode, X-rays emerging at right angles to electron beam, lead shielding around tube with small exit window. Must label electron path, heat production at anode, and indicate that only 1% of energy becomes X-rays while 99% becomes heat.",
-    "quickRecap": "Medical physics covers three key imaging methods: X-rays (absorbed differently by tissues, good for bones), ultrasound (reflected at tissue boundaries, safe for pregnancy), and fiber optic endoscopes (use total internal reflection). Remember ultrasound calculations need dividing by 2 for depth. X-rays are produced when high-speed electrons hit a metal target, creating mainly heat with some X-ray photons."
+    "quickRecap": "Circular motion requires centripetal force directed toward the center, calculated using F = mv²/r. Angular measurements use radians where one radian equals arc length divided by radius. Gravitational fields exert forces on masses following Newton's law F = Gm₁m₂/r², with field strength decreasing as the inverse square of distance."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -120,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:47:12.304Z",
   "updated_at": "2026-04-06T04:47:12.304Z",
-  "enriched_at": "2026-04-06T16:07:25.369Z"
+  "enriched_at": "2026-04-06T16:07:25.369Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:27:23.869Z"
 }

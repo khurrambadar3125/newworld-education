@@ -9,36 +9,21 @@
     "title": "Further programming",
     "readTime": "8 min",
     "keyPoints": [
-      "**Object-oriented programming (OOP)** uses classes and objects to model real-world entities with attributes and methods",
-      "**Inheritance** allows a child class to inherit attributes and methods from a parent class, promoting code reuse",
-      "**Polymorphism** enables objects of different classes to be treated as objects of a common base class through method overriding",
-      "**Encapsulation** hides internal implementation details and controls access to data through private and public access modifiers",
-      "**Method overriding** occurs when a subclass provides a specific implementation of a method already defined in its parent class",
-      "**Abstract classes** cannot be instantiated and may contain abstract methods that must be implemented by subclasses",
-      "**Design patterns** provide reusable solutions to common programming problems and improve code maintainability",
-      "**Composition** involves creating objects that contain other objects as instance variables, representing 'has-a' relationships",
-      "**Constructor methods** are special methods called when an object is created to initialize the object's attributes"
+      "Paper 4 Practical covers Algorithms, Recursion, Programming Paradigms, and File Processing and Exception Handling",
+      "Programming paradigms are different ways of thinking about or approaching problems suited to unique functions, tools and specific situations",
+      "Understanding programming paradigms is essential to ensure they are used appropriately when designing and building programs",
+      "There are many different programming styles that can be used for different situations",
+      "Computational thinking involves fundamental skills like abstraction, decomposition and algorithmic thinking to produce solutions",
+      "Solutions may involve using a range of technologies and programming languages"
     ],
     "definitions": [
       {
-        "term": "Inheritance",
-        "definition": "A mechanism where a new class (subclass) inherits attributes and methods from an existing class (superclass), allowing code reuse and creating hierarchical relationships"
+        "term": "Programming paradigm",
+        "definition": "A way of thinking about or approaching problems, with different programming styles suited to unique functions, tools and specific situations"
       },
       {
-        "term": "Polymorphism",
-        "definition": "The ability of objects of different classes to respond to the same method call in their own specific way through method overriding"
-      },
-      {
-        "term": "Encapsulation",
-        "definition": "The bundling of data and methods within a class while restricting direct access to internal data through access modifiers"
-      },
-      {
-        "term": "Abstract class",
-        "definition": "A class that cannot be instantiated and may contain abstract methods that must be implemented by any concrete subclass"
-      },
-      {
-        "term": "Design pattern",
-        "definition": "A reusable solution template for commonly occurring problems in software design that provides best practices for code structure"
+        "term": "Computational thinking",
+        "definition": "A set of fundamental skills including abstraction, decomposition and algorithmic thinking that help produce a solution to a problem"
       }
     ],
     "howToAnswer": [
@@ -71,17 +56,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'inheritance copies code' — always say 'inheritance allows access to parent class methods and attributes'",
-      "Students often confuse method overriding with method overloading — overriding redefines inherited methods, overloading creates multiple methods with same name but different parameters",
-      "Don't write 'encapsulation hides data' — say 'encapsulation controls access to data through access modifiers'",
-      "Never describe polymorphism as 'many forms' — explain it as 'objects responding to same method call differently'",
-      "Students forget that abstract classes cannot be instantiated — they can only be inherited from"
+      "Not understanding that different programming paradigms are suited to different situations",
+      "Failing to use programming paradigms appropriately when designing programs",
+      "Not recognizing that solutions may require multiple technologies and programming languages"
     ],
     "examinerTips": [
-      "OOP concepts appear in Paper 2 almost every year, especially inheritance and polymorphism",
-      "Always use specific programming terminology rather than general descriptions",
-      "Draw UML class diagrams to show inheritance relationships for full marks",
-      "Code examples that demonstrate method overriding score highly in explain questions"
+      "Ensure you understand when to use different programming paradigms appropriately",
+      "Practice applying computational thinking skills like abstraction and decomposition to problem-solving"
     ],
     "formulas": [],
     "keyDiagramDescription": "UML class diagram showing parent class connected to child classes with inheritance arrows, including attributes and methods with access modifiers (+ for public, - for private)",
@@ -110,7 +91,7 @@
       "Examiner Report 2023: 'Recursive solutions often missed the base case' — every recursive function must have a clear terminating condition to prevent infinite loops"
     ],
     "keyDiagram": "Students must draw a stack diagram showing function calls and returns. Draw boxes stacked vertically, each representing a function call with its local variables and parameters. Show arrows indicating the flow of execution downward (calls) and upward (returns). Include memory allocation showing how local variables are created and destroyed. For recursion, show multiple instances of the same function with different parameter values stacked on top of each other.",
-    "quickRecap": "Functions return values and use RETURN statements, procedures don't return values. Local variables exist only within their function/procedure scope. Parameters pass data into functions/procedures. Recursion requires a base case to terminate and a recursive case that calls itself with modified parameters."
+    "quickRecap": "Further programming in A Level Computer Science focuses on advanced concepts including algorithms, recursion, programming paradigms, and file processing. Programming paradigms are different approaches to problem-solving that must be used appropriately for specific situations. Computational thinking skills like abstraction and decomposition are fundamental to creating effective solutions using various technologies and programming languages."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +99,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:19:56.154Z",
   "updated_at": "2026-04-06T05:19:56.154Z",
-  "enriched_at": "2026-04-06T16:08:07.089Z"
+  "enriched_at": "2026-04-06T16:08:07.089Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:38:50.361Z"
 }

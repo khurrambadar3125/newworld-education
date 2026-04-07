@@ -9,33 +9,40 @@
     "title": "Work and power",
     "readTime": "8 min",
     "keyPoints": [
-      "**Work** is done when a force moves an object through a distance in the direction of the force",
-      "**Work** is calculated using W = F × d where F is force in newtons and d is distance in metres",
-      "Work is measured in **joules (J)** where 1 joule = 1 newton × 1 metre",
-      "**No work is done** when force is applied but object does not move, or when force is perpendicular to direction of motion",
-      "**Power** is the rate of doing work or the rate of energy transfer",
-      "**Power** is calculated using P = W/t where W is work done in joules and t is time in seconds",
-      "Power is measured in **watts (W)** where 1 watt = 1 joule per second",
-      "Power can also be calculated using **P = F × v** where F is force and v is velocity",
-      "When calculating work, only consider the **component of force in the direction of motion**",
-      "**Efficiency** = (useful power output / total power input) × 100%"
+      "Magnets have north and south poles - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are attracted to magnets, non-magnetic materials (glass, plastic) are not affected",
+      "Magnetic materials can be magnetised by stroking with a magnet, hammering in a magnetic field, or placing in a coil with direct current",
+      "Temporary magnets lose magnetism when the magnetic field is removed, permanent magnets retain their magnetism",
+      "Electromagnets are temporary magnets made by placing soft iron in coiled wire with direct current",
+      "Magnetic fields can be visualised using plotting compasses or iron filings",
+      "Electric charge is measured in coulombs and can be positive or negative - opposite charges attract, like charges repel",
+      "Conductors allow electric charge to flow through them, insulators impede the flow of electric charge",
+      "Insulators can be electrostatically charged by friction through the transfer of electrons"
     ],
     "definitions": [
       {
-        "term": "Work",
-        "definition": "Work is done when a force moves an object through a distance in the direction of the force"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Power",
-        "definition": "Power is the rate of doing work or the rate of energy transfer"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Joule",
-        "definition": "The joule is the unit of work done when a force of 1 newton moves an object through a distance of 1 metre"
+        "term": "Electromagnet",
+        "definition": "A temporary magnet made when soft iron is placed within coiled wire with a direct current running through it"
       },
       {
-        "term": "Watt",
-        "definition": "The watt is the unit of power equal to 1 joule of work done per second"
+        "term": "Electric charge",
+        "definition": "Measured in coulombs and can be positive or negative"
+      },
+      {
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
+      },
+      {
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
       }
     ],
     "howToAnswer": [
@@ -64,17 +71,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse work and power - work is energy transferred, power is the rate of energy transfer",
-      "Students often forget to use the distance moved in the direction of force, not total distance travelled",
-      "Always include correct units - work in joules (J), power in watts (W), never mix up the units",
-      "Never say work is done when an object moves in a circle at constant speed with centripetal force - no work is done as force is perpendicular to motion",
-      "Students often use time incorrectly - power = work/time, not work × time"
+      "Thinking that magnetic materials are only attracted to one pole of a magnet - they are attracted to both poles",
+      "Confusing temporary and permanent magnets - temporary magnets lose magnetism when the field is removed",
+      "Believing that only positive charges move during electrostatic charging - only electrons (negative charge) are transferred"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2, especially calculation questions",
-      "Always show the formula first, then substitute values with units for full marks",
-      "Remember that pushing against a wall does no work because there is no movement",
-      "Power questions often link to efficiency calculations in Pakistani context like Tarbela Dam hydroelectric power"
+      "Remember magnetic field lines always point from north to south pole with arrows",
+      "Closer magnetic field lines indicate stronger magnetic field strength"
     ],
     "formulas": [
       "W = F × d",
@@ -106,7 +109,7 @@
       "Examiner Report 2024: 'Candidates often mixed up instantaneous power and average power' — remember that P = Fv gives instantaneous power only when velocity is constant"
     ],
     "keyDiagram": "Students must draw a force-displacement diagram showing: (1) Object with force arrow clearly labeled with magnitude and direction, (2) Displacement arrow showing distance moved, (3) Angle θ between force and displacement vectors if force is not parallel to motion, (4) Clear labels for all quantities including units. The diagram should demonstrate that work = F × s × cos θ, with special cases when θ = 0° (maximum work) and θ = 90° (zero work).",
-    "quickRecap": "Work = Force × distance (when parallel), measured in Joules. Power = Work ÷ time or Force × velocity, measured in Watts. Work transfers energy between different forms. Only the component of force in the direction of motion does work - forces perpendicular to motion do zero work."
+    "quickRecap": "Magnets have north and south poles that create magnetic fields, with like poles repelling and opposite poles attracting. Magnetic materials can be temporarily or permanently magnetised, while electromagnets use current through coiled wire around soft iron. Electric charges create forces between objects, with conductors allowing charge flow and insulators preventing it."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -114,5 +117,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:16:29.099Z",
   "updated_at": "2026-04-05T21:16:29.099Z",
-  "enriched_at": "2026-04-06T16:04:52.260Z"
+  "enriched_at": "2026-04-06T16:04:52.260Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:22:54.146Z"
 }

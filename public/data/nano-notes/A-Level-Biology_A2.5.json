@@ -9,36 +9,34 @@
     "title": "Inherited change",
     "readTime": "8 min",
     "keyPoints": [
-      "**Meiosis** produces four genetically different gametes from one diploid cell through two nuclear divisions",
-      "**Crossing over** occurs during prophase I when non-sister chromatids exchange genetic material at chiasmata",
-      "**Independent assortment** occurs during metaphase I when homologous pairs align randomly at the equator",
-      "**Genetic diagrams** must show parental genotypes, gamete genotypes, offspring genotypes and phenotypes with ratios",
-      "**Chi-squared test** determines if observed results differ significantly from expected results (p = 0.05)",
-      "**Linkage** occurs when genes are on the same chromosome and reduces crossing over frequency",
-      "**Recombination frequency** equals the percentage of recombinant offspring and indicates distance between genes",
-      "**Autosomal linkage** affects inheritance patterns and reduces expected ratios from independent assortment",
-      "**Sex linkage** shows different inheritance patterns for X-linked and Y-linked characteristics"
+      "All living organisms are made of cells that use ATP from respiration for energy-requiring processes",
+      "Eukaryotic cells contain a nucleus and membrane-bound organelles, with ultrastructure visible under microscope",
+      "Plant cells have unique organelles: vacuoles with tonoplast membrane, cellulose cell walls, chloroplasts for photosynthesis, and plasmodesmata",
+      "Animal cells may contain cilia with 9+2 microtubule formation for movement and microvilli to increase surface area",
+      "Prokaryotic cells are unicellular, 1-5μm diameter, with no membrane-bound organelles and smaller 70S ribosomes",
+      "Prokaryotes have circular DNA freely floating in cytoplasm and peptidoglycan cell walls",
+      "Viruses are non-living structures with nucleic acid in a protein capsid, sometimes with phospholipid envelope"
     ],
     "definitions": [
       {
-        "term": "Meiosis",
-        "definition": "Nuclear division that produces four genetically different haploid gametes from one diploid cell"
+        "term": "Ultrastructure",
+        "definition": "Detailed structure of cells obtained by using a microscope"
       },
       {
-        "term": "Crossing over",
-        "definition": "Exchange of genetic material between non-sister chromatids of homologous chromosomes during prophase I"
+        "term": "Eukaryotic cells",
+        "definition": "Cells that contain a nucleus and membrane-bound organelles"
       },
       {
-        "term": "Independent assortment",
-        "definition": "Random alignment of homologous chromosome pairs at the equator during metaphase I of meiosis"
+        "term": "Cristae",
+        "definition": "Folded inner membrane projections in mitochondria"
       },
       {
-        "term": "Linkage",
-        "definition": "Genes located on the same chromosome that tend to be inherited together"
+        "term": "Tonoplast",
+        "definition": "Membrane surrounding the vacuole in plant cells"
       },
       {
-        "term": "Recombination frequency",
-        "definition": "Percentage of offspring showing recombinant phenotypes due to crossing over"
+        "term": "Capsid",
+        "definition": "Protective protein coat enclosing nucleic acid in viruses"
       }
     ],
     "howToAnswer": [
@@ -70,18 +68,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'chromosomes cross over' — always say 'non-sister chromatids exchange genetic material'",
-      "Students often confuse independent assortment with crossing over — independent assortment is about chromosome alignment, crossing over is about genetic exchange",
-      "Never write chi-squared without showing degrees of freedom and critical value comparison",
-      "Students forget to include gamete genotypes in genetic diagrams — always show the cross fully",
-      "Never say 'genes move' during crossing over — say 'genetic material is exchanged' or 'alleles are exchanged'"
+      "Confusing 70S ribosomes (prokaryotes) with 80S ribosomes (eukaryotes)",
+      "Forgetting that chloroplasts and mitochondria contain small circular DNA and 70S ribosomes",
+      "Mixing up cell wall composition: peptidoglycan in prokaryotes, cellulose in plants",
+      "Assuming all cells have the same organelles - centrioles are absent from most plant cells"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2, often combined with statistical analysis",
-      "Always draw complete genetic diagrams showing P generation, gametes, F1 and F2 with ratios",
-      "Chi-squared questions require clear working — state null hypothesis, show calculation, compare with critical value",
-      "Use correct genetic notation: dominant alleles as capitals, recessive as lower case",
-      "For linkage questions, calculate recombination frequency as (recombinants ÷ total offspring) × 100"
+      "Remember the 9+2 microtubule formation is specific to cilia structure",
+      "Know that viruses are non-living and require detailed comparison between prokaryotic and eukaryotic cell features"
     ],
     "formulas": [
       "χ² = Σ(O-E)²/E",
@@ -114,7 +108,7 @@
       "Examiner Report 2021: 'Candidates often gave probability answers as ratios instead of percentages when specifically asked for probability' — convert ratios to fractions or percentages when the question asks for probability calculations"
     ],
     "keyDiagram": "Students must be able to draw a complete genetic diagram including: (1) Parental phenotypes and genotypes clearly labeled, (2) Gametes shown in circles or clearly separated, (3) 4-square Punnett square with all offspring combinations, (4) Offspring genotypes and phenotypes listed with ratios, (5) Clear title indicating what trait is being studied. The diagram should be neat with proper genetic notation using capital letters for dominant alleles and lowercase for recessive alleles.",
-    "quickRecap": "Inherited characteristics are passed from parents to offspring through genes. Alleles are different versions of genes - dominant alleles (capital letters) mask recessive alleles (lowercase letters). Genetic diagrams use Punnett squares to predict inheritance patterns and calculate probabilities of offspring characteristics. Genetic variation arises through independent assortment and crossing over during meiosis."
+    "quickRecap": "Cells are the basic units of life using ATP for energy processes. Eukaryotic cells have membrane-bound organelles including nucleus, while prokaryotic cells lack these and are much smaller. Plant and animal cells have specialized organelles for their functions, and viruses are non-living structures with nucleic acid in protein coats."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -122,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:05:43.255Z",
   "updated_at": "2026-04-06T05:05:43.255Z",
-  "enriched_at": "2026-04-06T16:07:25.514Z"
+  "enriched_at": "2026-04-06T16:07:25.514Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:36:23.211Z"
 }

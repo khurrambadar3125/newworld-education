@@ -9,37 +9,34 @@
     "title": "Energy and respiration",
     "readTime": "8 min",
     "keyPoints": [
-      "**ATP** is the universal energy currency made of adenine, ribose and three phosphate groups",
-      "**Glycolysis** occurs in the cytoplasm and converts glucose to pyruvate, producing 2 ATP and 2 reduced NAD",
-      "**Link reaction** occurs in the mitochondrial matrix, converting pyruvate to acetyl CoA with CO₂ production",
-      "**Krebs cycle** occurs in the mitochondrial matrix, producing CO₂, ATP, reduced NAD and reduced FAD",
-      "**Oxidative phosphorylation** occurs on the inner mitochondrial membrane via electron transport chain and chemiosmosis",
-      "**Chemiosmosis** involves proton pumping creating a proton gradient across the inner mitochondrial membrane",
-      "**ATP synthase** uses the proton gradient to synthesise ATP from ADP + Pi",
-      "**Anaerobic respiration** in mammals produces lactate, in yeast produces ethanol and CO₂",
-      "Aerobic respiration produces approximately **32 ATP molecules** per glucose molecule",
-      "**Respiratory quotient (RQ)** = CO₂ produced ÷ O₂ consumed, indicating substrate being respired"
+      "All living organisms are made of cells and use ATP from respiration for energy-requiring processes",
+      "Eukaryotic cells contain a nucleus and membrane-bound organelles, while prokaryotic cells do not contain membrane-bound organelles",
+      "Mitochondria are the site of respiration, containing enzymes in the matrix and having folded inner membranes called cristae",
+      "Plant cells have unique organelles including chloroplasts (site of photosynthesis), vacuoles for support and storage, and cellulose cell walls",
+      "Prokaryotic cells are typically 1-5μm in diameter with circular DNA, peptidoglycan cell walls, and 70S ribosomes",
+      "Eukaryotic cells have linear DNA in the nucleus and larger 80S ribosomes compared to prokaryotic 70S ribosomes",
+      "Viruses are non-living structures consisting of nucleic acid enclosed in a protein capsid, sometimes with an envelope"
     ],
     "definitions": [
       {
-        "term": "ATP",
-        "definition": "Adenosine triphosphate; a nucleotide consisting of adenine, ribose and three phosphate groups that releases energy when hydrolysed to ADP + Pi"
+        "term": "Ultrastructure",
+        "definition": "Detailed structure of cells obtained by using a microscope"
       },
       {
-        "term": "Glycolysis",
-        "definition": "The metabolic pathway that converts glucose to pyruvate in the cytoplasm, producing ATP and reduced NAD"
+        "term": "Cristae",
+        "definition": "Folded projections of the inner mitochondrial membrane"
       },
       {
-        "term": "Chemiosmosis",
-        "definition": "The process by which ATP is synthesised using the energy from a proton gradient across a membrane"
+        "term": "Capsid",
+        "definition": "Protective protein coat that encloses viral nucleic acid"
       },
       {
-        "term": "Respiratory substrate",
-        "definition": "An organic molecule that can be broken down in respiration to release energy for ATP synthesis"
+        "term": "Tonoplast",
+        "definition": "Membrane surrounding the vacuole in plant cells"
       },
       {
-        "term": "Oxidative phosphorylation",
-        "definition": "The process of ATP synthesis using energy released from the electron transport chain and chemiosmosis"
+        "term": "Plasmodesmata",
+        "definition": "Small channels passing through cell walls of adjoining plant cells to allow communication"
       }
     ],
     "howToAnswer": [
@@ -74,17 +71,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'ATP gives energy' — always say 'ATP releases energy when hydrolysed'",
-      "Students often confuse the location of glycolysis (cytoplasm) with Krebs cycle (mitochondrial matrix)",
-      "Don't write 'oxygen accepts electrons' — write 'oxygen is the final electron acceptor'",
-      "Never say 'glucose is burnt' — use 'glucose is oxidised' or 'glucose undergoes respiration'",
-      "Students forget that anaerobic respiration still involves glycolysis and produces some ATP"
+      "Confusing the location of respiration enzymes - they are in the mitochondrial matrix, not the cristae",
+      "Thinking all cells have the same organelles - plant cells have chloroplasts, vacuoles and cell walls that animal cells lack",
+      "Mixing up ribosome sizes - prokaryotes have 70S ribosomes while eukaryotes have 80S ribosomes in their cytoplasm",
+      "Forgetting that viruses are non-living structures, not cells"
     ],
     "examinerTips": [
-      "This topic appears in every Paper 2 - often as a 6-8 mark question on the electron transport chain",
-      "Always specify the exact location within the mitochondrion (matrix vs intermembrane space)",
-      "Draw clear diagrams of mitochondrial structure when explaining oxidative phosphorylation",
-      "Learn the exact ATP yield numbers for each stage of respiration"
+      "Remember that mitochondria and chloroplasts both contain their own circular DNA and 70S ribosomes",
+      "Focus on the specific functions of each organelle - RER processes proteins, SER processes lipids, Golgi packages both"
     ],
     "formulas": [
       "RQ = CO₂ produced ÷ O₂ consumed",
@@ -115,7 +109,7 @@
       "Examiner Report 2023: 'Candidates often stated that anaerobic respiration produces 'less ATP' without quantifying' — specify that aerobic respiration produces 38 ATP molecules per glucose while anaerobic produces only 2 ATP"
     ],
     "keyDiagram": "Students must be able to draw and label a mitochondrion showing: outer membrane (smooth), inner membrane (folded into cristae), matrix (inner space), and be able to annotate that cristae provide large surface area for aerobic respiration enzymes. The diagram should show the double membrane structure clearly with cristae as inward folds, not separate structures. Labels must be precise and include functions: matrix contains enzymes for Krebs cycle, cristae contain enzymes for electron transport chain.",
-    "quickRecap": "Respiration releases energy from glucose in all living cells through enzyme-controlled reactions. Aerobic respiration uses oxygen, produces CO₂ + H₂O + 38 ATP, occurs in mitochondria. Anaerobic respiration occurs without oxygen, produces lactic acid (animals) or ethanol + CO₂ (plants/yeast) + 2 ATP only. ATP provides energy for all cellular processes including muscle contraction, protein synthesis, and active transport."
+    "quickRecap": "Cells are the basic units of life that use ATP from respiration for energy processes. Eukaryotic cells have membrane-bound organelles including mitochondria for respiration, while prokaryotic cells lack these structures. Plant cells have additional organelles like chloroplasts and vacuoles that animal cells do not possess."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -123,5 +117,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:04:17.100Z",
   "updated_at": "2026-04-06T05:04:17.100Z",
-  "enriched_at": "2026-04-06T16:05:59.463Z"
+  "enriched_at": "2026-04-06T16:05:59.463Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:35:51.265Z"
 }

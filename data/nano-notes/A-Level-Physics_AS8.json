@@ -9,36 +9,35 @@
     "title": "Superposition",
     "readTime": "8 min",
     "keyPoints": [
-      "**Principle of superposition** states that when two or more waves meet at a point, the resultant displacement is the vector sum of the individual displacements",
-      "**Constructive interference** occurs when waves meet in phase, producing maximum amplitude where path difference = nλ",
-      "**Destructive interference** occurs when waves meet in antiphase, producing minimum amplitude where path difference = (n + ½)λ",
-      "**Coherent sources** have constant phase difference and same frequency - essential for observable interference patterns",
-      "**Stationary waves** are formed when two waves of same frequency and amplitude travel in opposite directions",
-      "**Nodes** are points of zero displacement in stationary waves, **antinodes** are points of maximum displacement",
-      "Distance between adjacent nodes = λ/2, distance between adjacent antinodes = λ/2",
-      "**Diffraction** is the spreading of waves when they pass through gaps or around obstacles",
-      "Amount of diffraction depends on ratio of wavelength to gap width - maximum diffraction when λ ≈ gap width"
+      "One radian is defined as the angle in the sector of a circle when the arc length equals the radius of the circle",
+      "Angular speed (ω) can be calculated as v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is time period, and f is frequency",
+      "An object moving in a circular path at constant speed has constantly changing velocity due to direction change, therefore it must be accelerating",
+      "Centripetal acceleration always acts perpendicular to motion toward the centre of the circle",
+      "Centripetal force can be calculated using F = mv²/r = mω²r",
+      "Gravitational fields are areas where objects with mass experience non-contact forces",
+      "Newton's law of gravitation states gravitational force is directly proportional to the product of masses and inversely proportional to the square of distance between them",
+      "Gravitational field strength in a radial field follows g = GM/r², showing an inverse square relationship"
     ],
     "definitions": [
       {
-        "term": "Superposition",
-        "definition": "When two or more waves meet at a point, the resultant displacement is the vector sum of the individual displacements"
+        "term": "Angular displacement (θ)",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "Coherent sources",
-        "definition": "Sources that emit waves with constant phase difference and the same frequency"
+        "term": "Angular speed (ω)",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Path difference",
-        "definition": "The difference in distance travelled by two waves from their sources to the point where they meet"
+        "term": "Centripetal acceleration",
+        "definition": "Acceleration experienced by an object moving in a circular path, calculated as a = v²/r = ω²r"
       },
       {
-        "term": "Stationary wave",
-        "definition": "A wave pattern formed when two waves of the same frequency and amplitude travel in opposite directions and superpose"
+        "term": "Centripetal force",
+        "definition": "Force that always acts perpendicular to motion toward the centre of the circle, causing circular motion"
       },
       {
-        "term": "Node",
-        "definition": "A point on a stationary wave where the displacement is always zero due to destructive interference"
+        "term": "Gravitational field strength (g)",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       }
     ],
     "howToAnswer": [
@@ -71,17 +70,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'waves cancel out' - always say 'destructive interference occurs' or 'displacement is zero'",
-      "Students often confuse path difference conditions - remember nλ for constructive, (n + ½)λ for destructive",
-      "Don't say stationary waves 'don't move' - say 'the wave pattern does not progress' or 'energy is not transmitted'",
-      "Students forget that coherent sources must have BOTH same frequency AND constant phase difference",
-      "Never say diffraction only occurs at gaps - it also occurs around obstacles"
+      "Forgetting that objects in uniform circular motion are accelerating despite constant speed",
+      "Confusing linear speed with angular speed when applying circular motion formulas",
+      "Not recognizing that centripetal force always acts toward the center, perpendicular to velocity",
+      "Misapplying the inverse square law - if distance doubles, field strength decreases by factor of 4, not 2"
     ],
     "examinerTips": [
-      "Superposition appears in every paper - learn the path difference conditions perfectly",
-      "Always draw labelled diagrams showing nodes and antinodes for stationary wave questions",
-      "Use the term 'resultant displacement' not just 'amplitude' when describing superposition",
-      "Questions often link diffraction to communication (radio waves around hills in northern Pakistan)"
+      "Remember to convert between degrees and radians by multiplying by π/180 or 180/π respectively",
+      "Use the relationship v = ωr to connect linear and angular quantities in circular motion problems"
     ],
     "formulas": [
       "Constructive interference: path difference = nλ",
@@ -114,7 +110,7 @@
       "Examiner Report 2023: 'Weak responses failed to distinguish between superposition and interference' — remember superposition is the general principle, interference is the specific result when waves overlap"
     ],
     "keyDiagram": "Essential diagram shows two wave sources S1 and S2 producing circular wavefronts. Draw solid lines for wave crests, dashed lines for troughs. Mark point P with two path lines to each source, labeling distances d1 and d2. Include regions of constructive interference (where crests meet crests) and destructive interference (where crests meet troughs). Add arrows showing wave direction and label wavelength λ on the wavefronts.",
-    "quickRecap": "Superposition occurs when two or more waves overlap - amplitudes add algebraically at each point. Constructive interference happens when path difference = nλ (waves in phase), destructive when path difference = (n+½)λ (waves in antiphase). Sources must be coherent (same frequency, constant phase relationship) for observable interference patterns. Remember: superposition is the principle, interference is the observable result."
+    "quickRecap": "Circular motion involves angular displacement measured in radians and angular speed related to linear speed by v = ωr. Objects in circular motion experience centripetal acceleration toward the center, requiring centripetal force calculated as F = mv²/r. Gravitational fields create forces between masses following Newton's inverse square law, with field strength decreasing as 1/r²."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -122,5 +118,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:41:15.059Z",
   "updated_at": "2026-04-06T04:41:15.059Z",
-  "enriched_at": "2026-04-06T16:13:59.141Z"
+  "enriched_at": "2026-04-06T16:13:59.141Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:32:14.586Z"
 }

@@ -9,37 +9,25 @@
     "title": "Processor fundamentals",
     "readTime": "8 min",
     "keyPoints": [
-      "The **CPU** executes instructions by following the fetch-decode-execute cycle continuously",
-      "**Registers** are high-speed storage locations within the CPU that temporarily store data and instructions during processing",
-      "The **Accumulator (ACC)** stores the results of arithmetic and logical operations performed by the ALU",
-      "The **Program Counter (PC)** stores the address of the next instruction to be executed",
-      "The **Memory Address Register (MAR)** stores the address of the memory location currently being accessed",
-      "The **Memory Data Register (MDR)** stores data that is being transferred to or from memory",
-      "The **Current Instruction Register (CIR)** stores the instruction that is currently being decoded and executed",
-      "The **address bus** carries memory addresses from the CPU to memory and is unidirectional",
-      "The **data bus** carries data between the CPU, memory and I/O devices and is bidirectional",
-      "The **control bus** carries control signals such as read/write signals and clock signals"
+      "Processor Fundamentals is a core topic within the Theory Fundamentals section of Paper 1",
+      "The course requires understanding of computational thinking as a fundamental skill for producing solutions to problems",
+      "Skills such as abstraction, decomposition and algorithmic thinking are used to study problems and design solutions",
+      "Computer architecture and hardware understanding is a key concept for the course",
+      "Communication is essential for data transfer between devices and components within computer systems",
+      "Programming paradigms provide different approaches to problem-solving and must be used appropriately"
     ],
     "definitions": [
       {
-        "term": "CPU",
-        "definition": "Central Processing Unit that executes instructions by following the fetch-decode-execute cycle"
+        "term": "Computational thinking",
+        "definition": "A set of fundamental skills that help produce a solution to a problem, including abstraction, decomposition and algorithmic thinking"
       },
       {
-        "term": "Register",
-        "definition": "High-speed storage location within the CPU that temporarily stores data and instructions during processing"
+        "term": "Programming paradigm",
+        "definition": "A way of thinking about or approaching problems, with different programming styles suited to unique functions, tools and specific situations"
       },
       {
-        "term": "Bus",
-        "definition": "Set of parallel wires that carries data, addresses or control signals between components of a computer system"
-      },
-      {
-        "term": "Instruction set",
-        "definition": "Complete set of machine code instructions that a particular CPU can understand and execute"
-      },
-      {
-        "term": "Assembly language",
-        "definition": "Low-level programming language that uses mnemonics to represent machine code instructions"
+        "term": "Communication",
+        "definition": "The ability to transfer data from one device or component to another, including understanding of the rules and methods used in data transfer"
       }
     ],
     "howToAnswer": [
@@ -72,17 +60,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'RAM stores instructions' — always say 'memory stores instructions and the CPU fetches them'",
-      "Students often confuse MAR and MDR — MAR stores addresses, MDR stores actual data",
-      "Don't say 'the bus transfers data' — say 'the data bus carries data between components'",
-      "Never describe registers as 'memory' — they are high-speed storage locations within the CPU",
-      "Students forget that the address bus is unidirectional while data bus is bidirectional"
+      "Not understanding that computational thinking involves multiple skills working together",
+      "Failing to recognize that programming paradigms must be used appropriately for specific situations",
+      "Not grasping that communication ranges from internal computer system data transfer to internet-based transfers"
     ],
     "examinerTips": [
-      "This topic appears in almost every Paper 2 exam - focus on register functions",
-      "Always specify which bus (address/data/control) when describing data transfer",
-      "Learn the exact sequence of the fetch-decode-execute cycle",
-      "Bus width questions often ask about relationship between address bus width and addressable memory"
+      "Ensure deep understanding of fundamental concepts rather than surface-level knowledge",
+      "Practice linking computational thinking skills to practical problem-solving scenarios"
     ],
     "formulas": [
       "Addressable memory locations = 2^n (where n = number of address bus lines)",
@@ -115,7 +99,7 @@
       "Examiner Report 2023: 'Weak responses failed to distinguish between address bus and data bus usage' — clearly state address bus carries memory locations, data bus carries actual instructions/data"
     ],
     "keyDiagram": "Students must draw the Von Neumann architecture showing: CPU containing Control Unit, ALU, and registers (including Program Counter, Current Instruction Register, Memory Address Register, Memory Data Register, and Accumulator); Memory block; and three buses (Address Bus - unidirectional from CPU to memory, Data Bus - bidirectional, Control Bus - bidirectional). Arrows must show data flow direction and all components should be clearly labeled with their functions.",
-    "quickRecap": "The processor follows fetch-decode-execute cycle continuously. Control unit manages operations and coordinates data flow. ALU performs all calculations and logical operations. Registers store data temporarily - PC holds next instruction address, accumulator holds calculation results. Three buses connect CPU to memory: address bus (memory locations), data bus (instructions/data), control bus (timing signals)."
+    "quickRecap": "Processor Fundamentals is part of Paper 1 Theory Fundamentals, requiring understanding of computational thinking skills including abstraction, decomposition and algorithmic thinking. Students must grasp how programming paradigms provide different problem-solving approaches and understand computer architecture concepts. The course develops transferable skills in computational thinking, problem-solving and programming that are valued by universities."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -123,5 +107,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:15:16.198Z",
   "updated_at": "2026-04-06T05:15:16.198Z",
-  "enriched_at": "2026-04-06T16:10:01.933Z"
+  "enriched_at": "2026-04-06T16:10:01.933Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:55:21.979Z"
 }

@@ -9,37 +9,33 @@
     "title": "Cell structure and organisation",
     "readTime": "8 min",
     "keyPoints": [
-      "A **cell** is the basic unit of life that can exist as a single-celled organism or as part of a multicellular organism",
-      "**Cell membrane** is a partially permeable barrier that controls the movement of substances into and out of the cell",
-      "**Nucleus** contains chromosomes made of DNA which control the activities of the cell",
-      "**Cytoplasm** is a jelly-like substance where chemical reactions take place",
-      "**Mitochondria** are organelles where aerobic respiration occurs to release energy",
-      "**Chloroplasts** contain chlorophyll and are the site of photosynthesis in plant cells",
-      "A **tissue** is a group of similar cells working together to perform the same function",
-      "An **organ** is made up of different tissues working together to perform a particular function",
-      "**Magnification** = size of image ÷ actual size of object",
-      "Plant cells have a **cell wall** made of cellulose, a **permanent vacuole** filled with cell sap, and **chloroplasts**"
+      "Living organisms undergo seven key processes: Movement, Respiration, Sensitivity, Growth, Reproduction, Excretion, and Nutrition",
+      "Organisms are classified into five kingdoms: Animal, Plant, Fungus, Prokaryote and Protoctist",
+      "All cells contain cytoplasm, cell membrane, DNA, ribosomes and enzymes as basic features",
+      "Vertebrates contain a backbone while arthropods have an exoskeleton and segmented body",
+      "Plant kingdom is split into flowering and non-flowering plants, with flowering plants divided into dicotyledons and monocotyledons",
+      "Viruses are not classified as living as they cannot complete life processes and are non-cellular"
     ],
     "definitions": [
       {
-        "term": "Cell",
-        "definition": "The basic unit of life"
+        "term": "Species",
+        "definition": "A group of organisms that can reproduce to produce fertile offspring"
       },
       {
-        "term": "Tissue",
-        "definition": "A group of similar cells working together to perform the same function"
+        "term": "Binomial naming system",
+        "definition": "An internationally agreed system where scientific names have two parts showing genus and species"
       },
       {
-        "term": "Organ",
-        "definition": "A group of different tissues working together to perform a particular function"
+        "term": "Cytoplasm",
+        "definition": "A jelly-like material within the cell in which reactions occur, containing organelles"
       },
       {
-        "term": "Organ system",
-        "definition": "A group of organs working together to perform a particular function"
+        "term": "Cell membrane",
+        "definition": "A thin membrane that surrounds the cell and controls entry and exit of substances"
       },
       {
-        "term": "Organelle",
-        "definition": "A structure inside a cell that has a specific function"
+        "term": "Pathogen",
+        "definition": "An organism that causes disease, including bacteria and viruses"
       }
     ],
     "howToAnswer": [
@@ -71,17 +67,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say cell wall is made of 'cellulose fiber' — always say 'cellulose'",
-      "Students often confuse cell membrane with cell wall — cell membrane is in ALL cells, cell wall only in plants",
-      "Don't say chloroplasts are 'green' — say they 'contain chlorophyll'",
-      "Never write 'times bigger' in magnification — use 'times' or 'x' only",
-      "Students forget to show working in magnification calculations"
+      "Confusing classification based on physical appearance rather than evolutionary relationships through DNA sequences",
+      "Thinking viruses are living organisms when they are non-cellular and cannot complete life processes",
+      "Mixing up vertebrate and arthropod characteristics - vertebrates have backbones, arthropods have exoskeletons",
+      "Forgetting that all seven life processes must be present for something to be classified as living"
     ],
     "examinerTips": [
-      "This topic appears in every paper — especially plant vs animal cell differences",
-      "Always draw labelled diagrams with straight lines and no arrowheads for labels",
-      "Magnification calculations are common — remember to show all working",
-      "Learn the hierarchy: cell → tissue → organ → organ system → organism"
+      "Remember the binomial system always has genus first, then species - like Homo sapiens for humans",
+      "DNA sequencing is more accurate than physical characteristics for classification as similar habitats can cause unrelated species to evolve similar traits"
     ],
     "formulas": [
       "Magnification = size of image ÷ actual size of object"
@@ -111,7 +104,7 @@
       "Examiner Report 2024: 'Candidates often described function instead of structure' — when asked to identify cell structures, focus on what you can see, not what the organelle does"
     ],
     "keyDiagram": "Students must be able to draw and label a typical animal cell showing: nucleus with nuclear envelope and nucleolus, cytoplasm, cell membrane, mitochondria, ribosomes, rough and smooth endoplasmic reticulum, Golgi apparatus, lysosomes, and centrosome. The diagram should show relative sizes accurately (nucleus ~10μm, mitochondria ~2μm) and include at least 8 labeled structures. Organelles should be drawn with correct internal structure - mitochondria with cristae, ER with attached ribosomes, nucleus with nuclear pores.",
-    "quickRecap": "Eukaryotic cells have membrane-bound organelles including nucleus, mitochondria, ER, and Golgi apparatus. Prokaryotic cells lack these membrane-bound structures but have ribosomes, DNA, and cytoplasm. Plant cells additionally have cell walls, chloroplasts, and large vacuoles. Use the formula: Image size = Actual size × Magnification for all microscopy calculations."
+    "quickRecap": "Living organisms are classified based on shared features and evolutionary relationships determined through DNA analysis. All living things undergo seven key processes and are grouped into five kingdoms based on cellular features. Classification uses the binomial naming system with genus and species names."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -119,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:26:02.856Z",
   "updated_at": "2026-04-05T21:26:02.857Z",
-  "enriched_at": "2026-04-06T16:05:58.023Z"
+  "enriched_at": "2026-04-06T16:05:58.023Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:23:23.285Z"
 }

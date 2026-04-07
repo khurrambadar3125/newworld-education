@@ -9,36 +9,35 @@
     "title": "Electrical circuits",
     "readTime": "8 min",
     "keyPoints": [
-      "**Series circuits** have components connected one after another in a single loop with the same current flowing through each component",
-      "**Parallel circuits** have components connected on separate branches with the same potential difference across each branch",
-      "In series circuits: current is the same everywhere, potential differences add up to equal supply voltage",
-      "In parallel circuits: current splits between branches, potential difference is the same across each branch",
-      "**Total resistance** in series circuits equals the sum of individual resistances (R_total = R1 + R2 + R3)",
-      "**Total resistance** in parallel circuits is less than the smallest individual resistance (1/R_total = 1/R1 + 1/R2 + 1/R3)",
-      "**Circuit breakers** and **fuses** are safety devices that break the circuit when current exceeds a safe limit",
-      "**Double insulation** and **earthing** prevent electric shock by providing alternative paths for current",
-      "**Short circuits** occur when current takes an unintended path of very low resistance, causing dangerous heating"
+      "Electric charge is measured in coulombs and can be positive or negative",
+      "Opposite charges experience an attractive force, like charges experience a repulsive force",
+      "An electric field is the region in which an electric charge experiences attractive or repulsive forces",
+      "Conductors allow electric charge to flow through them because they have charged particles that are free to move",
+      "Insulators impede the flow of electric charge because they don't have charged particles that are free to move",
+      "Objects can be charged by the transfer of electrons through their addition or removal",
+      "Insulators can be electrostatically charged by friction when two insulators are rubbed together",
+      "When insulators are rubbed together, electrons move from one to the other making them oppositely charged"
     ],
     "definitions": [
       {
-        "term": "Series circuit",
-        "definition": "A circuit where components are connected one after another in a single loop so that current flows through each component in turn"
+        "term": "Electric charge",
+        "definition": "A property measured in coulombs that can be positive or negative"
       },
       {
-        "term": "Parallel circuit",
-        "definition": "A circuit where components are connected on separate branches so that current can flow through different paths"
+        "term": "Electric field",
+        "definition": "The region in which an electric charge experiences attractive or repulsive forces"
       },
       {
-        "term": "Circuit breaker",
-        "definition": "A safety device that automatically switches off when current exceeds a preset value and can be reset"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
       },
       {
-        "term": "Double insulation",
-        "definition": "Two layers of insulating material around electrical equipment to prevent electric shock if one layer fails"
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
       },
       {
-        "term": "Earth wire",
-        "definition": "A safety wire that provides a low resistance path to ground for current to flow if there is a fault"
+        "term": "Electrostatic charge",
+        "definition": "Electric charge at rest on the surface of charged insulators"
       }
     ],
     "howToAnswer": [
@@ -71,17 +70,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'voltage splits in parallel' — always say 'voltage is the same across each branch'",
-      "Students often add resistances in parallel instead of using 1/R_total = 1/R1 + 1/R2",
-      "Never confuse fuses and circuit breakers — fuses melt and must be replaced, circuit breakers can be reset",
-      "Students forget that total resistance in parallel is always less than the smallest individual resistance",
-      "Never say 'electricity flows' — always say 'current flows' or 'charge flows'"
+      "Confusing which charges attract and which repel - remember opposite charges attract, like charges repel",
+      "Thinking that positive charges move during charging - only electrons (negative charge) transfer between objects",
+      "Assuming all materials can conduct electricity - only materials with free-moving charged particles are conductors"
     ],
     "examinerTips": [
-      "Circuit calculations appear in every Paper 2 exam - practice both series and parallel combinations",
-      "Always show the formula, substitution and unit in calculations for full marks",
-      "Electrical safety questions often ask for two different methods - know earthing, fuses, circuit breakers and double insulation",
-      "Draw circuit diagrams clearly with correct symbols from the data sheet"
+      "Remember that charging involves only the transfer of electrons, not positive charges",
+      "When describing electrostatic charging by friction, always mention that electrons are transferred from one material to the other"
     ],
     "formulas": [
       "V = IR",
@@ -116,7 +111,7 @@
       "Examiner Report 2021: 'Candidates often forgot to include units in their final answers' — always state units (A for current, V for voltage, Ω for resistance) and check calculations using alternative methods"
     ],
     "keyDiagram": "Students must be able to draw a complete circuit diagram showing: battery with correct polarity symbols (+ and -), resistors as rectangles with zigzag or plain outline, connecting wires as straight lines with no gaps, ammeter (A in circle) in series with components, voltmeter (V in circle) in parallel across component being measured. Include switch symbol (gap with diagonal line) and ensure all connections are clearly marked with no loose ends.",
-    "quickRecap": "Series circuits: same current throughout, voltages add up, total resistance increases. Parallel circuits: same voltage across each branch, currents add up, total resistance decreases. Use V=IR for all calculations. Ammeters in series, voltmeters in parallel. Always include units and check your circuit connections have no gaps."
+    "quickRecap": "Electric charge is measured in coulombs and creates electric fields where charges experience forces. Opposite charges attract while like charges repel. Conductors allow charge flow due to free-moving charged particles, while insulators impede it and can gain electrostatic charge through friction."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -124,5 +119,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:20:03.727Z",
   "updated_at": "2026-04-05T21:20:03.727Z",
-  "enriched_at": "2026-04-06T16:00:25.059Z"
+  "enriched_at": "2026-04-06T16:00:25.059Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:19:49.292Z"
 }

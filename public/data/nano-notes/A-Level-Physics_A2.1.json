@@ -9,31 +9,35 @@
     "title": "Motion in a circle",
     "readTime": "8 min",
     "keyPoints": [
-      "**Angular displacement** is measured in radians where 2π radians = 360°",
-      "**Angular velocity** ω is the rate of change of angular displacement with time, measured in rad s⁻¹",
-      "For uniform circular motion, the **linear speed** v = rω where r is the radius",
-      "**Centripetal acceleration** is always directed towards the center of the circle with magnitude a = v²/r = rω²",
-      "**Centripetal force** F = ma = mv²/r = mrω² provides the force needed for circular motion",
-      "The centripetal force is always perpendicular to the velocity and does not change the speed",
-      "**Period** T is the time for one complete revolution where T = 2π/ω = 2πr/v",
-      "**Frequency** f is the number of revolutions per second where f = 1/T = ω/2π"
+      "One radian is the angle in a sector when arc length equals radius; full circle = 2π radians",
+      "Angular speed ω = v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is period, f is frequency",
+      "Linear speed v = ωr (product of angular speed and radius)",
+      "Objects in circular motion have constantly changing velocity due to changing direction, requiring centripetal acceleration",
+      "Centripetal force always acts perpendicular to motion towards the centre of the circle",
+      "Centripetal acceleration a = v²/r = ω²r",
+      "Centripetal force F = mv²/r = mω²r using Newton's second law",
+      "Convert degrees to radians by multiplying by π/180; radians to degrees by multiplying by 180/π"
     ],
     "definitions": [
       {
         "term": "Radian",
-        "definition": "The angle subtended at the center of a circle by an arc length equal to the radius"
+        "definition": "The angle in the sector of a circle when the arc length of that sector is equal to the radius of the circle"
       },
       {
-        "term": "Angular velocity",
-        "definition": "The rate of change of angular displacement with respect to time"
+        "term": "Angular displacement (θ)",
+        "definition": "The angle turned through by an object in any given direction in radians"
+      },
+      {
+        "term": "Angular speed (ω)",
+        "definition": "The angle an object moves through per unit time"
       },
       {
         "term": "Centripetal acceleration",
-        "definition": "The acceleration of an object moving in a circular path, directed towards the center of the circle"
+        "definition": "The acceleration of an object moving in a circular path at constant speed due to constantly changing velocity direction"
       },
       {
         "term": "Centripetal force",
-        "definition": "The net force acting on an object moving in circular motion, directed towards the center of the circle"
+        "definition": "The force that always acts perpendicular to the motion of an object towards the centre of the circle, causing circular motion"
       }
     ],
     "howToAnswer": [
@@ -66,17 +70,16 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'centrifugal force acts outward' — there is no centrifugal force in an inertial frame",
-      "Students often forget to convert degrees to radians when using ω = θ/t",
-      "Never say 'centripetal force changes the speed' — it only changes direction",
-      "Students confuse linear velocity v with angular velocity ω in calculations",
-      "Always use the correct radius — for satellites, add height to Earth's radius"
+      "Forgetting that velocity changes in circular motion even when speed is constant, due to changing direction",
+      "Confusing linear speed (v) with angular speed (ω) - remember v = ωr",
+      "Thinking centripetal force acts outward instead of toward the centre of the circle",
+      "Using degrees instead of radians in angular speed calculations",
+      "Forgetting that centripetal acceleration occurs even at constant speed"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2, especially satellite motion",
-      "Always draw a free body diagram showing centripetal force towards center",
-      "Remember to convert time to seconds and distances to meters",
-      "For satellite questions, gravitational force provides the centripetal force"
+      "Always check if angles are given in degrees or radians and convert if necessary using π/180 conversion factor",
+      "Remember the relationship v = ωr to link linear and angular quantities in problem solving",
+      "Use Newton's second law (F = ma) to derive centripetal force from centripetal acceleration formulas"
     ],
     "formulas": [
       "ω = θ/t",
@@ -110,7 +113,7 @@
       "Examiner Report 2021: 'Common error was using wrong formula for centripetal acceleration' — ensure you use a = v²/r or a = ω²r, not mixing linear and angular quantities incorrectly"
     ],
     "keyDiagram": "Draw a circle with an object at one point on the circumference. Show velocity vector tangent to the circle (labeled v), centripetal acceleration vector pointing toward center (labeled a), and centripetal force vector also toward center (labeled F). Include radius line from center to object (labeled r). Add arrows showing the object's path and indicate that velocity direction changes continuously while speed remains constant.",
-    "quickRecap": "Objects in circular motion have constant speed but changing velocity due to continuous direction change. Centripetal acceleration a = v²/r always points toward the center. Centripetal force F = mv²/r provides the inward force needed to maintain circular motion. Remember: centripetal means 'center-seeking' - both acceleration and force point inward, never outward."
+    "quickRecap": "Circular motion involves angular displacement measured in radians, where one radian equals the angle when arc length equals radius. Objects in uniform circular motion have constant angular speed ω but changing velocity, requiring centripetal acceleration a = v²/r = ω²r directed toward the centre. This acceleration is caused by centripetal force F = mv²/r = mω²r acting perpendicular to motion. Key relationships include v = ωr and ω = 2π/T."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -118,5 +121,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:42:41.144Z",
   "updated_at": "2026-04-06T04:42:41.144Z",
-  "enriched_at": "2026-04-06T16:05:55.781Z"
+  "enriched_at": "2026-04-06T16:05:55.781Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:26:25.193Z"
 }

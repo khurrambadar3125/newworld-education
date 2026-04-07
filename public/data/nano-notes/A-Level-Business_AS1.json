@@ -9,36 +9,35 @@
     "title": "Business and its environment",
     "readTime": "8 min",
     "keyPoints": [
-      "**Enterprise** is the process of identifying new business opportunities and taking risks to exploit them",
-      "**Stakeholders** are individuals or groups with a direct interest in the performance and activities of a business",
-      "**Primary stakeholders** (owners, employees, customers, suppliers) are directly affected by business decisions",
-      "**Secondary stakeholders** (government, local community, pressure groups) are indirectly affected by business activities",
-      "Business structures include **sole trader, partnership, private limited company (Ltd), public limited company (Plc)**",
-      "Business size can be measured by **number of employees, sales revenue, market share, capital employed**",
-      "**Primary objectives** include profit maximization, survival, growth, market share",
-      "**Secondary objectives** include corporate social responsibility, employee welfare, environmental protection",
-      "**Conflict of objectives** occurs when stakeholders have different priorities that cannot all be satisfied simultaneously"
+      "Businesses aim to meet the needs of customers by using resources to make goods and services that they will buy",
+      "Products can be either for final consumers or capital and intermediate goods for business customers",
+      "Four factors of production are needed: Labour (human effort), Capital (equipment and machinery), Land (location), and Enterprise (risk taking and decision making)",
+      "Labour involves human effort to produce goods or provide services to customers",
+      "Capital refers to equipment and machinery used in business operations",
+      "Enterprise involves risk taking and decision making undertaken by an entrepreneur",
+      "Opportunity cost is an important concept in business activity and business decisions",
+      "When a decision is made to purchase one item, other items have to be 'given up' as resources are scarce"
     ],
     "definitions": [
       {
+        "term": "Labour",
+        "definition": "Human effort to produce goods or provide services to customers"
+      },
+      {
+        "term": "Capital",
+        "definition": "Equipment and machinery"
+      },
+      {
+        "term": "Land",
+        "definition": "A location to operate the business from"
+      },
+      {
         "term": "Enterprise",
-        "definition": "The process of identifying new business opportunities and taking risks to exploit them"
+        "definition": "Risk taking and decision making undertaken by an entrepreneur"
       },
       {
-        "term": "Stakeholder",
-        "definition": "An individual or group with a direct interest in the performance and activities of a business"
-      },
-      {
-        "term": "Private Limited Company",
-        "definition": "A business owned by shareholders with limited liability, shares cannot be sold to the general public"
-      },
-      {
-        "term": "Corporate Social Responsibility",
-        "definition": "The concept that businesses should consider the interests of society and the environment when making decisions"
-      },
-      {
-        "term": "Limited Liability",
-        "definition": "Shareholders are only liable for business debts up to the amount they have invested"
+        "term": "Opportunity cost",
+        "definition": "An important concept in business activity and business decisions where other items have to be 'given up' as resources are scarce when making purchasing decisions"
       }
     ],
     "howToAnswer": [
@@ -73,17 +72,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'unlimited liability means unlimited money' — it means personal assets at risk",
-      "Students often confuse primary and secondary stakeholders — primary are directly affected, secondary are indirectly affected",
-      "Don't say 'bigger is always better' — large size brings disadvantages like diseconomies of scale",
-      "Never say 'profit is the only objective' — businesses have multiple objectives that may conflict",
-      "Students forget that stakeholder objectives conflict — what benefits shareholders may harm employees"
+      "Confusing capital goods with capital as a factor of production",
+      "Not understanding that land refers to business location rather than just physical land",
+      "Mixing up products for final consumers with capital and intermediate goods for business customers"
     ],
     "examinerTips": [
-      "This topic appears in every Paper 1 and Paper 2 examination",
-      "Always give Pakistani examples where possible (e.g., Engro Corporation as Plc, local tandoor as sole trader)",
-      "Stakeholder questions require you to identify conflicts between different groups",
-      "Business size questions often ask for measurement methods — learn all four methods"
+      "Remember that business activity involves using the four factors of production to create goods and services",
+      "Understand that opportunity cost applies to all business decisions involving resource allocation"
     ],
     "formulas": [],
     "keyDiagramDescription": "Stakeholder mapping diagram showing primary stakeholders (owners, employees, customers, suppliers) in inner circle and secondary stakeholders (government, community, pressure groups) in outer circle with arrows showing relationships",
@@ -110,7 +105,7 @@
       "Examiner Report 2023: 'Weak responses simply listed factors without explaining the impact' — always use connecting words like 'therefore', 'consequently', 'this results in' to show how external factors actually affect business performance"
     ],
     "keyDiagram": "Students must be able to draw the PESTLE Analysis framework as a hexagon or mind map with the business at the center, surrounded by six external environment categories: Political (government policies, tax changes), Economic (interest rates, inflation, unemployment), Social (demographics, lifestyle changes), Technological (automation, e-commerce), Legal (employment law, health and safety), Environmental (climate change, sustainability). Each category should include 2-3 specific examples with arrows pointing toward the central business showing external influence.",
-    "quickRecap": "Business environment consists of internal factors (controllable by business) and external factors (uncontrollable). External factors analyzed using PESTLE framework: Political, Economic, Social, Technological, Legal, Environmental. These factors create both opportunities and threats that businesses must monitor and respond to. Successful businesses adapt their strategies based on environmental changes while leveraging their internal strengths."
+    "quickRecap": "Business activity uses four factors of production (labour, capital, land, enterprise) to create goods and services for customers. These products serve either final consumers or business customers as capital and intermediate goods. Opportunity cost is crucial in business decisions as choosing one option means giving up others due to scarce resources."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +113,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:10:58.718Z",
   "updated_at": "2026-04-06T05:10:58.719Z",
-  "enriched_at": "2026-04-06T16:07:08.457Z"
+  "enriched_at": "2026-04-06T16:07:08.457Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T03:02:13.720Z"
 }

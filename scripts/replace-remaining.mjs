@@ -20,17 +20,16 @@ const notesDir = path.join(process.cwd(), 'data', 'nano-notes');
 const publicDir = path.join(process.cwd(), 'public', 'data', 'nano-notes');
 
 const SUBJECT_MAP = {
-  'Physics': 'o-level-physics-5054',
-  'Biology': 'o-level-biology-5090',
-  'A-Level-Physics': 'a-level-physics-9702',
-  'A-Level-Chemistry': 'a-level-chemistry-9701',
-  'A-Level-Biology': 'a-level-biology-9700',
-  'A-Level-Computer-Science': 'a-level-cs-9618',
-  'A-Level-Psychology': 'a-level-psychology-9990',
-  'A-Level-Accounting': 'a-level-accounting-9706',
-  'A-Level-Business': 'a-level-business-9609',
+  'Physics': 'physics-5054',
+  'Biology': 'biology-5090',
+  'A-Level-Physics': 'physics-9702',
+  'A-Level-Chemistry': 'chemistry-9701',
+  'A-Level-Biology': 'biology-9700',
+  'A-Level-Computer-Science': 'cs-9618',
+  'A-Level-Psychology': 'psychology-9990',
+  'A-Level-Accounting': 'accounting-9706',
+  'A-Level-Business': 'business-9609',
   'Urdu': 'urdu-3247',
-  'History': 'history-2147',
 };
 
 async function extractPDFText(filePath, maxPages = 20) {

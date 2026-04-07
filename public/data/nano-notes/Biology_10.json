@@ -9,36 +9,29 @@
     "title": "Coordination and response",
     "readTime": "8 min",
     "keyPoints": [
-      "The **nervous system** consists of the central nervous system (CNS) and peripheral nervous system for rapid coordination",
-      "**Hormones** are chemical substances produced by endocrine glands and transported in blood plasma to target organs",
-      "A **reflex action** is a rapid, automatic response to a stimulus that does not involve conscious thought",
-      "**Synapses** are junctions between neurons where electrical impulses are transmitted by chemical neurotransmitters",
-      "The **brain** controls and coordinates body functions including conscious actions and memory",
-      "**Insulin** is a hormone produced by the pancreas that reduces blood glucose concentration by promoting glucose uptake by cells",
-      "**Glucagon** is produced by the pancreas and increases blood glucose concentration by stimulating glucose release from the liver",
-      "**Homeostasis** is the maintenance of constant internal conditions in the body",
-      "Sense organs contain **receptors** that detect stimuli and convert them into electrical impulses"
+      "Sensitivity is one of the seven characteristics of living organisms - the ability to detect changes in internal or external environments and respond to these changes",
+      "Living organisms can move all or part of themselves in response to stimuli - animals move to find food or escape predators, plants move leaves to catch more sunlight",
+      "Organisms respond to environmental changes through movement, which is a permanent feature distinguishing living from non-living things",
+      "The nervous system enables detection of environmental changes, as organisms must sense stimuli before they can respond appropriately",
+      "Coordination involves both detecting stimuli (sensitivity) and producing appropriate responses (movement)",
+      "Response mechanisms allow organisms to survive by adapting to changing conditions in their environment"
     ],
     "definitions": [
       {
-        "term": "Hormone",
-        "definition": "A chemical substance produced by an endocrine gland and transported by blood to a target organ where it produces a specific effect"
+        "term": "Sensitivity",
+        "definition": "Living organisms can detect changes in their internal or external environments and respond to these changes"
       },
       {
-        "term": "Reflex action",
-        "definition": "A rapid, automatic response to a stimulus that does not involve conscious thought"
+        "term": "Movement",
+        "definition": "Living organisms are able to move all or part of themselves"
       },
       {
-        "term": "Synapse",
-        "definition": "A junction between two neurons where electrical impulses are transmitted by chemicals called neurotransmitters"
+        "term": "Pathogen",
+        "definition": "An organism that causes disease"
       },
       {
-        "term": "Insulin",
-        "definition": "A hormone produced by the pancreas that reduces blood glucose concentration"
-      },
-      {
-        "term": "Homeostasis",
-        "definition": "The maintenance of constant internal conditions"
+        "term": "Transmissible diseases",
+        "definition": "Diseases caused by pathogens that can be passed from host to host"
       }
     ],
     "howToAnswer": [
@@ -71,17 +64,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'hormones travel through the nervous system' — always say 'hormones are transported in blood'",
-      "Students often confuse insulin and glucagon effects — insulin DECREASES glucose, glucagon INCREASES glucose",
-      "Never say 'brain controls reflexes' — reflex actions bypass the brain via spinal cord",
-      "Students write 'nerve' instead of 'neuron' — use neuron for individual cells",
-      "Never say 'impulses cross synapses' — impulses are converted to chemical neurotransmitters at synapses"
+      "Confusing sensitivity with just having senses - sensitivity includes both detection AND response to stimuli",
+      "Thinking only animals show movement - plants also move parts of themselves like leaves to catch sunlight",
+      "Forgetting that coordination involves both detecting changes and responding appropriately to them"
     ],
     "examinerTips": [
-      "Reflex arc diagrams appear almost every year - practice drawing with correct labels",
-      "Always mention 'does not involve conscious thought' when defining reflex actions",
-      "For hormone questions, always state: production site, transport method, target organ, and effect",
-      "Synapse questions often ask about one-way transmission - neurotransmitters only go from presynaptic to postsynaptic"
+      "Always link sensitivity and movement together when explaining coordination and response",
+      "Give specific examples of how both plants and animals respond to environmental changes"
     ],
     "formulas": [],
     "keyDiagramDescription": "Reflex arc diagram showing: stimulus → receptor → sensory neuron → relay neuron (in spinal cord) → motor neuron → effector → response. Must include synapse positions and direction of impulse flow.",
@@ -111,7 +100,7 @@
       "Examiner Report 2023: 'Common error was stating that auxins are produced in roots for phototropism' — remember that auxins for shoot phototropism are produced in the shoot tip, not the roots"
     ],
     "keyDiagram": "Students must be able to draw and label a reflex arc diagram showing: receptor (in skin), sensory neuron with arrow pointing toward spinal cord, relay neuron in the spinal cord (gray matter), motor neuron with arrow pointing away from spinal cord toward effector muscle. Include labels for stimulus, spinal cord cross-section, and response. Arrows must show direction of nerve impulse flow. Some questions may also require a simple eye diagram showing cornea, lens, iris, pupil, retina, and optic nerve.",
-    "quickRecap": "Coordination involves detecting stimuli and producing responses. The nervous system uses electrical impulses for fast responses like reflexes, while the endocrine system uses hormones for slower, longer-lasting effects. Key reflex pathway: receptor → sensory neuron → relay neuron → motor neuron → effector. Plants respond to stimuli using growth substances like auxins, causing tropisms such as shoots growing toward light (phototropism)."
+    "quickRecap": "Coordination and response involves two key characteristics of living organisms: sensitivity and movement. Sensitivity allows organisms to detect changes in their internal or external environments. Movement enables organisms to respond to these changes - animals move to find food or escape danger, while plants move their leaves to catch sunlight."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +108,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:29:06.867Z",
   "updated_at": "2026-04-05T21:29:06.867Z",
-  "enriched_at": "2026-04-06T16:06:22.031Z"
+  "enriched_at": "2026-04-06T16:06:22.031Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:23:36.247Z"
 }

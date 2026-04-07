@@ -9,37 +9,39 @@
     "title": "Partnership accounts",
     "readTime": "8 min",
     "keyPoints": [
-      "**Partnership** is a business owned by 2-50 people who share profits/losses according to partnership agreement",
-      "**Appropriation account** shows how net profit is distributed among partners through salaries, interest on capital and profit sharing ratio",
-      "**Capital accounts** record partners' permanent capital contributions and remain constant unless additional capital is introduced or withdrawn",
-      "**Current accounts** record partners' share of profits, drawings, salaries and interest - these balances fluctuate regularly",
-      "**Interest on capital** is calculated as Opening Capital × Interest Rate × Time Period (usually annual)",
-      "**Interest on drawings** is charged to reduce partners' share of profits, calculated on drawings amount × interest rate × time period",
-      "**Goodwill** represents the value of business reputation and must be valued when profit sharing ratios change or partners join/leave",
-      "**Admission of new partner** requires existing goodwill to be valued, credited to old partners' capital accounts in old profit sharing ratio",
-      "**Retirement/death of partner** requires goodwill adjustment, settlement of partner's capital and current account balances",
-      "**Revaluation account** records increases/decreases in asset values when partnership composition changes, profit/loss shared in old ratio"
+      "Manufacturing account is prepared at the end of a financial period to calculate the production cost of manufactured goods",
+      "Manufacturing account only includes information about the factory and actual manufacturing process - all other costs go to Income Statement",
+      "Cost of production is calculated by adding factory overheads to prime cost",
+      "Prime cost (direct cost) is the total of direct materials, direct labour, and direct expenses",
+      "Factory overheads (indirect costs) include costs from running the factory like indirect factory wages and depreciation of factory machinery",
+      "Transfer price is the production cost of completed goods plus a percentage mark-up",
+      "Factory profit is the difference between the transfer price and the production cost of completed goods",
+      "Work in progress represents inventory of partly finished goods in the factory at any point in time"
     ],
     "definitions": [
       {
-        "term": "Partnership",
-        "definition": "A business organization owned by 2-50 people who contribute capital and share profits/losses according to partnership agreement"
+        "term": "Manufacturing account",
+        "definition": "An account prepared at the end of a financial period to calculate the production cost of manufactured goods"
       },
       {
-        "term": "Appropriation account",
-        "definition": "An account that shows how the net profit of a partnership is allocated among partners after providing for salaries, interest on capital and profit sharing"
+        "term": "Prime cost",
+        "definition": "The total of direct materials, direct labour, and direct expenses"
       },
       {
-        "term": "Goodwill",
-        "definition": "An intangible asset representing the value of business reputation, customer loyalty and earning capacity above the value of net tangible assets"
+        "term": "Factory overheads",
+        "definition": "Costs incurred from the running of the factory, including indirect factory wages and depreciation of factory machinery"
       },
       {
-        "term": "Current account",
-        "definition": "A partner's account that records the partner's share of profits, drawings, salary and interest on capital - the balance represents amounts owed to/by the partner"
+        "term": "Transfer price",
+        "definition": "The production cost of completed goods plus a percentage mark-up"
       },
       {
-        "term": "Capital account",
-        "definition": "A partner's account that records permanent capital contributions and withdrawals - normally maintains a fixed balance unless additional capital is introduced"
+        "term": "Factory profit",
+        "definition": "The difference between the transfer price and the production cost of completed goods"
+      },
+      {
+        "term": "Work in progress",
+        "definition": "Inventory of partly finished goods in the factory at any point in time"
       }
     ],
     "howToAnswer": [
@@ -70,17 +72,13 @@
       ]
     },
     "commonMistakes": [
-      "Never add salaries and interest to net profit - always deduct them first before sharing remaining profit",
-      "Students often forget to calculate interest on drawings and deduct from partners' current accounts",
-      "Common error: using new profit sharing ratio for goodwill adjustment - always use old ratio when partners leave/ratios change",
-      "Never credit goodwill to new partner - only existing partners receive goodwill credit in old profit sharing ratio",
-      "Students confuse capital and current account entries - capital accounts only change with permanent capital changes"
+      "Including non-production costs like administration, finance, and distribution in the manufacturing account instead of the Income Statement",
+      "Confusing prime cost with total production cost - prime cost only includes direct costs",
+      "Forgetting that cost of production equals prime cost plus factory overheads"
     ],
     "examinerTips": [
-      "Partnership accounts appear in Paper 2 Section A almost every year - usually 15-20 marks",
-      "Always show clear workings for interest calculations and profit sharing ratios",
-      "When partners join/leave, remember three steps: revaluation, goodwill adjustment, then new appropriation",
-      "Current account format: start with opening balance, add profit share/interest, deduct drawings/salary"
+      "Remember the formula: Cost of production = prime cost + factory overheads",
+      "Keep manufacturing costs separate from other business costs when preparing accounts"
     ],
     "formulas": [
       "Interest on capital = Opening capital × Interest rate × Time period",
@@ -112,7 +110,7 @@
       "Examiner Report 2021: 'Candidates confused goodwill treatment when partners join or leave' — goodwill must be created and then written off, or existing partners' capitals adjusted by their sacrifice ratio"
     ],
     "keyDiagram": "Students must draw a T-account layout showing Partners' Current Accounts with debits (drawings, interest on drawings, share of loss) on the left and credits (opening balance, salary, interest on capital, profit share) on the right. Include separate columns for each partner and show the profit-sharing ratio clearly. Also draw the Profit and Loss Appropriation Account showing net profit at the top, then deductions for salaries and interest on capital, followed by the remaining profit distribution according to agreed ratios.",
-    "quickRecap": "Partnership accounts involve profit and loss appropriation (distributing profit after salaries and interest on capital according to agreed ratios) and maintaining separate capital and current accounts for each partner. Always apply the correct profit-sharing ratio to remaining profits only, not to the entire net profit. Remember that interest on capital and salaries are appropriations of profit, not expenses of the business."
+    "quickRecap": "Manufacturing accounts calculate production costs by adding factory overheads to prime cost (direct materials, labour, and expenses). Only factory-related costs are included - other business costs go to the Income Statement. Transfer pricing involves adding a mark-up to production costs, creating factory profit."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -120,5 +118,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:26:32.563Z",
   "updated_at": "2026-04-06T05:26:32.563Z",
-  "enriched_at": "2026-04-06T16:10:30.984Z"
+  "enriched_at": "2026-04-06T16:10:30.984Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T03:01:19.850Z"
 }

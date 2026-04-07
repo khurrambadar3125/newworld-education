@@ -9,32 +9,19 @@
     "title": "Alcohols, esters and carboxylic acids",
     "readTime": "8 min",
     "keyPoints": [
-      "**Primary alcohols** are oxidised by acidified potassium dichromate(VI) to aldehydes then carboxylic acids",
-      "**Secondary alcohols** are oxidised by acidified potassium dichromate(VI) to ketones only",
-      "**Tertiary alcohols** are not oxidised by acidified potassium dichromate(VI) under normal conditions",
-      "**Dehydration of alcohols** occurs by heating with concentrated sulfuric acid or passing over heated aluminium oxide catalyst to form alkenes",
-      "**Fermentation** produces ethanol from glucose using yeast enzymes in anaerobic conditions at 30-40°C",
-      "**Esters** are formed by condensation reaction between carboxylic acids and alcohols in presence of concentrated sulfuric acid catalyst",
-      "**Hydrolysis of esters** occurs by heating with dilute hydrochloric acid (acid hydrolysis) or sodium hydroxide (alkaline hydrolysis/saponification)",
-      "**Carboxylic acids** show typical acid properties: react with metals, carbonates, and alkalis to form salts",
-      "**Reduction of carboxylic acids** occurs using lithium aluminium hydride in dry ether to form primary alcohols"
+      "Transition elements are found in the d-block of the periodic table and form one or more stable ions with incomplete d orbitals",
+      "The d subshell can hold up to 10 electrons",
+      "Scandium and zinc are in the d-block but are not transition elements because their ions do not have incomplete d subshells",
+      "Scandium forms Sc³⁺ with an empty d subshell, zinc forms Zn²⁺ with a full d subshell",
+      "The 4s orbital is filled before the 3d orbital in atoms",
+      "When forming ions, 4s electrons are removed before 3d electrons",
+      "Many transition elements form multiple stable oxidation states (e.g., vanadium forms V²⁺, V³⁺, V⁴⁺, and V⁵⁺)",
+      "Common transition element ions include Ti²⁺, V²⁺, Cr³⁺, Mn²⁺, Fe²⁺, Fe³⁺, Co²⁺, Ni²⁺, and Cu²⁺"
     ],
     "definitions": [
       {
-        "term": "Fermentation",
-        "definition": "The breakdown of glucose by enzymes in yeast in the absence of oxygen to produce ethanol and carbon dioxide"
-      },
-      {
-        "term": "Esterification",
-        "definition": "A condensation reaction between a carboxylic acid and an alcohol in the presence of an acid catalyst to form an ester and water"
-      },
-      {
-        "term": "Saponification",
-        "definition": "The alkaline hydrolysis of an ester using sodium hydroxide to form a carboxylate salt and an alcohol"
-      },
-      {
-        "term": "Dehydration",
-        "definition": "The removal of water from an alcohol molecule to form an alkene"
+        "term": "Transition elements",
+        "definition": "Elements found in the d-block of the periodic table that form one or more stable ions with incomplete d orbitals"
       }
     ],
     "howToAnswer": [
@@ -65,17 +52,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'potassium dichromate' - always say 'acidified potassium dichromate(VI)' for oxidation reactions",
-      "Students often confuse aldehyde and ketone formation - primary alcohols give aldehydes, secondary give ketones",
-      "Don't say esters are formed by 'addition' - they are formed by condensation with elimination of water",
-      "Never write 'reflux' for fermentation conditions - fermentation occurs at 30-40°C in anaerobic conditions",
-      "Students forget that tertiary alcohols cannot be oxidised under normal laboratory conditions"
+      "Thinking scandium and zinc are transition elements - they are d-block elements but not transition elements",
+      "Forgetting that 4s electrons are removed before 3d electrons when forming ions",
+      "Not recognizing that transition elements can form multiple stable oxidation states",
+      "Confusing the order of orbital filling (4s fills before 3d) with the order of electron removal (4s removed before 3d)"
     ],
     "examinerTips": [
-      "Alcohol oxidation appears in almost every Paper 2 - learn reagents and conditions precisely",
-      "Always include 'acidified' when writing potassium dichromate(VI) as oxidising agent",
-      "Esterification questions often ask for reversible arrow and catalyst in equation",
-      "Learn the difference between acid and alkaline hydrolysis of esters - different products formed"
+      "Remember the key criterion for transition elements: they must form stable ions with incomplete d orbitals",
+      "When writing electron configurations for transition metal ions, always remove 4s electrons first, then 3d electrons"
     ],
     "formulas": [
       "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂",
@@ -108,7 +92,7 @@
       "Examiner Report 2024: 'Students often wrote that carboxylic acids completely ionize in water' — remember that carboxylic acids are WEAK acids that only partially ionize, unlike strong acids like HCl"
     ],
     "keyDiagram": "Students must be able to draw the esterification reaction mechanism showing: (1) Ethanoic acid (CH₃COOH) + Ethanol (C₂H₅OH) with structural formulas, (2) Arrow pointing right labeled 'conc. H₂SO₄ catalyst, heat', (3) Products: ethyl ethanoate (CH₃COOC₂H₅) + water (H₂O) with full structural formulas, (4) Double-headed arrow to show the reaction is reversible. Include all bonds, especially highlighting the C-O-O-C ester link formation.",
-    "quickRecap": "Alcohols oxidize to carboxylic acids using acidified KMnO₄. Carboxylic acids are weak acids that partially ionize in water. Esters form when carboxylic acids react with alcohols using concentrated H₂SO₄ catalyst - this is a reversible condensation reaction producing water. Always draw full structural formulas showing the -COO- ester linkage."
+    "quickRecap": "Transition elements are d-block elements that form stable ions with incomplete d orbitals. Scandium and zinc are d-block elements but not transition elements due to their complete or empty d subshells in their stable ions. The 4s orbital fills before 3d in atoms, but 4s electrons are removed first when forming ions."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -116,5 +100,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:35:31.999Z",
   "updated_at": "2026-04-06T04:35:31.999Z",
-  "enriched_at": "2026-04-06T16:10:38.487Z"
+  "enriched_at": "2026-04-06T16:10:38.487Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:34:11.833Z"
 }

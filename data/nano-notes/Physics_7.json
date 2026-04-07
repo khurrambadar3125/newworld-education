@@ -9,37 +9,39 @@
     "title": "Energy resources",
     "readTime": "8 min",
     "keyPoints": [
-      "**Renewable energy resources** can be replenished naturally and will not run out",
-      "**Non-renewable energy resources** are being used up faster than they are being formed and will eventually run out",
-      "**Solar energy** is produced by nuclear fusion reactions in the Sun, converting hydrogen nuclei to helium nuclei",
-      "Solar panels contain **photovoltaic cells** that convert light energy directly into electrical energy",
-      "Solar thermal collectors use **black surfaces** to absorb heat energy from the Sun to heat water",
-      "**Hydroelectric power** uses gravitational potential energy of water stored at height to generate electricity",
-      "**Wind turbines** convert kinetic energy of moving air into electrical energy through rotating generators",
-      "**Geothermal energy** uses heat from radioactive decay in the Earth's core to produce steam for electricity generation",
-      "Solar energy is the **ultimate source** of most renewable energy resources including wind, hydroelectric and biomass",
-      "Energy resources have **environmental impacts** including visual pollution, noise pollution and habitat destruction"
+      "Magnets have north and south poles - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are attracted to magnets, non-magnetic materials (glass, plastic) are not",
+      "Magnetic materials can be magnetised by stroking with a magnet, hammering in a magnetic field, or placing in a coil with direct current",
+      "Temporary magnets (like electromagnets) lose magnetism when the magnetic field is removed, permanent magnets do not",
+      "Magnetic field lines show field strength and direction - closer lines indicate stronger fields, arrows point from north to south pole",
+      "Electric charge is measured in coulombs and can be positive or negative - like charges repel, opposite charges attract",
+      "Conductors allow electric charge to flow through them due to free moving charged particles, insulators impede charge flow",
+      "Insulators can be electrostatically charged by friction through transfer of electrons from one material to another"
     ],
     "definitions": [
       {
-        "term": "Renewable energy resource",
-        "definition": "An energy resource that can be replenished naturally and will not run out"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Non-renewable energy resource",
-        "definition": "An energy resource that is being used up faster than it is being formed and will eventually run out"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Solar panel",
-        "definition": "A device containing photovoltaic cells that converts light energy directly into electrical energy"
+        "term": "Electric charge",
+        "definition": "Measured in coulombs and can be positive or negative"
       },
       {
-        "term": "Hydroelectric power",
-        "definition": "The generation of electricity using the gravitational potential energy of water stored at height"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
       },
       {
-        "term": "Geothermal energy",
-        "definition": "Energy obtained from the natural heat in the Earth's crust, produced by radioactive decay"
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
+      },
+      {
+        "term": "Electrostatic charge",
+        "definition": "Electric charge at rest on the surface of charged insulators"
       }
     ],
     "howToAnswer": [
@@ -71,17 +73,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say solar panels produce heat energy — they produce electrical energy directly from light",
-      "Students often confuse solar panels (electrical) with solar thermal collectors (heat water)",
-      "Don't say renewable resources are 'unlimited' — say they 'will not run out' or 'can be replenished'",
-      "Never say wind energy comes from the Sun's heat — it comes from uneven heating causing air movement",
-      "Students forget that most renewable resources ultimately derive their energy from the Sun"
+      "Thinking there is a force between magnets and non-magnetic materials - there is no force",
+      "Confusing the properties of temporary and permanent magnets - temporary magnets lose magnetism when the field is removed",
+      "Drawing magnetic field lines incorrectly - arrows must point from north to south pole",
+      "Forgetting that the force between a magnet and magnetic material is always attractive regardless of the pole"
     ],
     "examinerTips": [
-      "Energy resources appears in every Paper 2 - learn the conversions for each type",
-      "Always specify the energy conversion taking place (e.g. kinetic to electrical)",
-      "Environmental impacts are commonly asked - know advantages AND disadvantages",
-      "Pakistan examples: Tarbela Dam (hydroelectric), Gharo wind farm, solar potential in Balochistan"
+      "Remember that magnetic field strength is shown by how close field lines are - closer together means stronger field",
+      "When describing electrostatic charging by friction, always mention that electrons are transferred from one material to another"
     ],
     "formulas": [],
     "keyDiagramDescription": "Solar panel diagram showing photovoltaic cells converting light rays into electrical energy, with arrows indicating energy conversion from Sun to electrical output",
@@ -109,7 +108,7 @@
       "Examiner Report 2023: 'Candidates frequently stated solar/wind are 'clean' without explaining why' — always specify that renewable sources produce no emissions during operation, though manufacturing may have some impact"
     ],
     "keyDiagram": "Students should be able to draw and label a simple energy flow diagram showing: (1) Energy source (sun, wind, coal, etc.) → (2) Power station/conversion method → (3) Electrical energy → (4) National grid → (5) End users (homes, factories). Include labels for energy transformations at each stage and be able to add environmental impacts (emissions, waste) at appropriate points. For renewable sources, show the cyclical nature (e.g., water cycle for hydroelectric, or solar radiation continuously received).",
-    "quickRecap": "Energy sources split into renewable (solar, wind, hydroelectric, biomass, geothermal) and non-renewable (fossil fuels: coal, oil, gas, plus nuclear). Renewable sources naturally replenish and typically produce no operational emissions but can be unreliable and expensive initially. Non-renewable sources are reliable and currently cheaper but cause pollution, contribute to climate change, and will eventually run out. All energy ultimately comes from nuclear reactions - either in the Sun or in power stations."
+    "quickRecap": "Magnets have north and south poles with like poles repelling and opposite poles attracting. Magnetic materials can be magnetised and exist as temporary or permanent magnets. Electric charges can be positive or negative with like charges repelling and opposite charges attracting. Materials are either conductors that allow charge flow or insulators that impede it."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -117,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:16:08.614Z",
   "updated_at": "2026-04-05T21:16:08.614Z",
-  "enriched_at": "2026-04-06T16:04:35.481Z"
+  "enriched_at": "2026-04-06T16:04:35.481Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:22:39.416Z"
 }

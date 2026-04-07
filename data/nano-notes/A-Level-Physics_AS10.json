@@ -9,36 +9,35 @@
     "title": "DC circuits",
     "readTime": "8 min",
     "keyPoints": [
-      "**Kirchhoff's first law**: the sum of currents entering a junction equals the sum of currents leaving the junction",
-      "**Kirchhoff's second law**: around any closed loop in a circuit, the sum of emfs equals the sum of potential differences",
-      "In **series circuits**: current is the same at all points, total resistance equals sum of individual resistances",
-      "In **parallel circuits**: potential difference is the same across each branch, total current equals sum of branch currents",
-      "**Potential divider** produces a variable output voltage that is a fraction of the input voltage",
-      "For a potential divider: Vout = Vin × (R2/(R1+R2)) where Vout is taken across R2",
-      "A **potentiometer** uses the principle of potential division to measure emf without drawing current from the source",
-      "At balance point in potentiometer: emf of cell = potential difference across length of wire",
-      "**Internal resistance** causes the terminal voltage to be less than the emf when current flows"
+      "One radian is the angle in a circle sector where arc length equals radius",
+      "Angular displacement (θ) is the angle turned through by an object in radians",
+      "Angular speed (ω) = v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is period, f is frequency",
+      "Objects in circular motion have constantly changing velocity due to changing direction, requiring centripetal acceleration",
+      "Centripetal force always acts perpendicular to motion toward the center of the circle",
+      "Centripetal acceleration a = v²/r = ω²r",
+      "Centripetal force F = mv²/r = mω²r using Newton's second law",
+      "Gravitational fields are areas where objects with mass experience non-contact forces"
     ],
     "definitions": [
       {
-        "term": "Kirchhoff's first law",
-        "definition": "The sum of currents entering a junction equals the sum of currents leaving the junction"
+        "term": "Radian",
+        "definition": "The angle in a circle sector when the arc length equals the radius of the circle"
       },
       {
-        "term": "Kirchhoff's second law",
-        "definition": "Around any closed loop in a circuit, the sum of emfs equals the sum of potential differences"
+        "term": "Angular displacement",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "Potential divider",
-        "definition": "A circuit that produces an output voltage that is a fraction of the input voltage using two resistors in series"
+        "term": "Angular speed",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Potentiometer",
-        "definition": "An instrument used to measure emf by balancing it against a known potential difference, without drawing current from the source"
+        "term": "Centripetal acceleration",
+        "definition": "The acceleration of an object moving in a circular path at constant speed due to constantly changing velocity direction"
       },
       {
-        "term": "Internal resistance",
-        "definition": "The resistance within a source of emf that causes the terminal voltage to be less than the emf when current flows"
+        "term": "Centripetal force",
+        "definition": "The force acting perpendicular to motion toward the center of the circle, required for circular motion"
       }
     ],
     "howToAnswer": [
@@ -70,17 +69,14 @@
       ]
     },
     "commonMistakes": [
-      "Never ignore internal resistance in calculations - always include it in total circuit resistance",
-      "Students often confuse series and parallel rules - remember current same in series, voltage same in parallel",
-      "In potentiometer questions, never say current flows through the galvanometer at balance point",
-      "For Kirchhoff's laws, students forget to include direction of currents and emfs - clockwise positive convention",
-      "In potential divider calculations, students take output voltage across wrong resistor"
+      "Confusing angular speed with linear speed - remember ω = v/r",
+      "Thinking objects in uniform circular motion don't accelerate because speed is constant",
+      "Forgetting that centripetal force always points toward the center, not tangentially",
+      "Mixing up the formulas for centripetal acceleration: a = v²/r = ω²r"
     ],
     "examinerTips": [
-      "DC circuit analysis appears in every Paper 2 - worth 8-12 marks typically",
-      "Always draw current directions on circuit diagrams before applying Kirchhoff's laws",
-      "For potentiometer questions, emphasize 'no current at balance point' for full marks",
-      "Show all substitution steps clearly in calculations for method marks"
+      "Convert between degrees and radians using π/180 factor",
+      "Remember that uniform circular motion requires constant angular speed but involves acceleration due to changing direction"
     ],
     "formulas": [
       "V = IR",
@@ -114,7 +110,7 @@
       "Examiner Report 2023: 'Common error was assuming voltage divides equally in parallel circuits' — remember voltage is same across parallel branches, current divides inversely proportional to resistance"
     ],
     "keyDiagram": "Essential circuit diagram must show: battery symbol (long and short parallel lines), resistors as rectangles with resistance values labeled, ammeters in series (circle with A), voltmeters in parallel (circle with V), clear current direction arrows, and proper circuit connections with no gaps. For parallel circuits, show branching points clearly with dots at junctions.",
-    "quickRecap": "DC circuits follow Ohm's law (V=IR) with current flowing from positive to negative terminals. In series circuits, current is same throughout but voltage divides; in parallel circuits, voltage is same across branches but current divides. Total resistance: series R = R1 + R2, parallel 1/R = 1/R1 + 1/R2. Power = VI = I²R = V²/R."
+    "quickRecap": "Circular motion involves angular displacement measured in radians and angular speed ω = v/r. Objects in uniform circular motion experience centripetal acceleration a = v²/r toward the center due to constantly changing velocity direction. This requires centripetal force F = mv²/r acting perpendicular to motion toward the circle's center."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -122,5 +118,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:41:59.060Z",
   "updated_at": "2026-04-06T04:41:59.060Z",
-  "enriched_at": "2026-04-06T16:10:52.704Z"
+  "enriched_at": "2026-04-06T16:10:52.704Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:30:02.897Z"
 }

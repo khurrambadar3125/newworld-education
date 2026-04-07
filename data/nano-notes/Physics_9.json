@@ -9,32 +9,40 @@
     "title": "The kinetic particle model of matter",
     "readTime": "8 min",
     "keyPoints": [
-      "All matter is made up of particles that are in **constant random motion**",
-      "The **kinetic energy** of particles increases with temperature",
-      "In gases, particles are **far apart** and move freely in all directions",
-      "In liquids, particles are **close together** but can move past each other",
-      "In solids, particles are **close together** and vibrate about fixed positions",
-      "**Gas pressure** is caused by particles colliding with container walls",
-      "At higher temperatures, gas particles move **faster** and collide more frequently",
-      "**Brownian motion** provides evidence for the kinetic particle model",
-      "The **absolute zero** temperature (-273°C) is when particle motion would stop completely"
+      "Magnets have north and south poles - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are attracted to magnets, non-magnetic materials (glass, plastic) are not affected",
+      "Magnetic materials can be magnetised by stroking with a magnet, hammering in a magnetic field, or placing in a coil with direct current",
+      "Temporary magnets lose magnetism when the magnetic field is removed, permanent magnets retain their magnetism",
+      "Electromagnets are temporary magnets made by placing soft iron in coiled wire with direct current",
+      "Magnetic field lines show direction (north to south pole) and strength (closer lines = stronger field)",
+      "Electric charge is measured in coulombs and can be positive or negative - opposite charges attract, like charges repel",
+      "Conductors allow charge to flow through free-moving charged particles, insulators impede charge flow",
+      "Insulators can be electrostatically charged by friction through transfer of electrons"
     ],
     "definitions": [
       {
-        "term": "Kinetic particle model",
-        "definition": "A model that describes matter as being made up of particles in constant random motion"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Brownian motion",
-        "definition": "The random movement of particles suspended in a fluid caused by collisions with fast-moving molecules"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Absolute zero",
-        "definition": "The lowest possible temperature (-273°C or 0K) at which particle motion would cease"
+        "term": "Electric charge",
+        "definition": "A property measured in coulombs that can be positive or negative"
       },
       {
-        "term": "Gas pressure",
-        "definition": "The force per unit area exerted by gas particles colliding with the walls of their container"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
+      },
+      {
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
+      },
+      {
+        "term": "Electromagnet",
+        "definition": "A temporary magnet made when soft iron is placed within coiled wire with a direct current running through it"
       }
     ],
     "howToAnswer": [
@@ -62,17 +70,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say particles 'stop moving' at absolute zero — say motion would cease or become minimal",
-      "Students often confuse particle spacing in liquids and gases — liquids have particles close together",
-      "Never say gas particles are 'packed closely' — they are far apart with large spaces between them",
-      "Don't say pressure is caused by particle expansion — it's caused by collisions with container walls",
-      "Students forget that particles are always moving, even in solids they vibrate"
+      "Confusing the direction of magnetic field lines - they must point from north to south pole",
+      "Thinking magnetic materials can be repelled by magnets - the force is always attractive regardless of pole",
+      "Forgetting that only electrons transfer during electrostatic charging, not positive charges",
+      "Mixing up temporary and permanent magnets - temporary magnets lose magnetism when the field is removed"
     ],
     "examinerTips": [
-      "This topic appears in almost every Paper 2, often linked to gas laws or states of matter",
-      "Always mention 'random motion' when describing particle movement",
-      "Draw particle diagrams showing relative spacing and movement for different states",
-      "Use terms like 'kinetic energy' rather than just 'energy' for precision"
+      "When plotting magnetic field lines, remember closer lines indicate stronger magnetic field strength",
+      "For electrostatic charging experiments, always specify that electrons are transferred, not just 'charge'"
     ],
     "formulas": [
       "PV = constant (at constant temperature)",
@@ -102,7 +107,7 @@
       "Examiner Report 2023: 'Students frequently forgot to mention forces between particles when explaining state changes' — always include both particle motion AND intermolecular forces when describing solid, liquid, and gas properties"
     ],
     "keyDiagram": "Students must be able to draw three boxes showing particle arrangements: SOLID (particles in regular pattern, touching, vibrating about fixed positions), LIQUID (particles close but irregular arrangement, some movement), GAS (particles far apart, random positions, rapid random motion). Include arrows to show particle movement and label each state clearly.",
-    "quickRecap": "All matter consists of tiny particles in constant motion. Solids have particles vibrating in fixed positions with strong forces between them. Liquids have particles that can move around each other with moderate intermolecular forces. Gases have particles moving rapidly and randomly with very weak forces between them, explaining why gases fill containers and can be compressed easily."
+    "quickRecap": "Magnets have north and south poles that create magnetic fields, with like poles repelling and opposite poles attracting. Magnetic materials can be temporarily or permanently magnetised, while electromagnets use current in coiled wire around soft iron. Electric charges follow similar rules to magnetic poles, with conductors allowing charge flow and insulators impeding it unless electrostatically charged through friction."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -110,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:16:47.631Z",
   "updated_at": "2026-04-05T21:16:47.631Z",
-  "enriched_at": "2026-04-06T16:05:11.928Z"
+  "enriched_at": "2026-04-06T16:05:11.928Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:23:09.680Z"
 }

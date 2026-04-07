@@ -9,36 +9,27 @@
     "title": "Further equilibria",
     "readTime": "8 min",
     "keyPoints": [
-      "**Ka** is the acid dissociation constant showing the extent of acid ionisation in aqueous solution",
-      "A **buffer solution** maintains approximately constant pH when small amounts of acid or base are added",
-      "Buffer action occurs because the weak acid removes added OH⁻ ions and the conjugate base removes added H⁺ ions",
-      "**Ksp** is the solubility product constant for sparingly soluble ionic compounds at equilibrium",
-      "Common ion effect decreases solubility when an ion common to the equilibrium is added",
-      "**Partition coefficient** shows how a solute distributes between two immiscible solvents at equilibrium",
-      "pH calculations use Ka values and the expression Ka = [H⁺][A⁻]/[HA]",
-      "Buffer pH calculations use the Henderson-Hasselbalch equation: pH = pKa + log([A⁻]/[HA])",
-      "Precipitation occurs when the ionic product exceeds the solubility product Ksp"
+      "Transition elements form one or more stable ions with incomplete d orbitals and are found in the d-block of the periodic table",
+      "Scandium and zinc are in the d-block but are not transition elements because their ions do not have incomplete d subshells",
+      "Group 2 carbonates and nitrates become more thermally stable as you go down the group due to decreasing charge density of cations",
+      "Smaller Group 2 ions have greater charge density and greater polarising effect on neighbouring negative ions",
+      "Group 2 hydroxide solubility increases down the group while sulfate solubility decreases down the group",
+      "For hydroxides, lattice enthalpy falls faster than enthalpy change of hydration, making solution more exothermic down the group",
+      "For sulfates, lattice enthalpy falls slower than hydration enthalpy, making solution more endothermic down the group",
+      "The 4s orbital is filled before the 3d orbital, so 4s electrons are removed before 3d electrons when forming ions"
     ],
     "definitions": [
       {
-        "term": "Ka",
-        "definition": "The equilibrium constant for the dissociation of a weak acid in aqueous solution"
+        "term": "Transition elements",
+        "definition": "Elements that form one or more stable ions with incomplete d orbitals"
       },
       {
-        "term": "Buffer solution",
-        "definition": "A solution that maintains approximately constant pH when small amounts of acid or base are added"
+        "term": "Charge density",
+        "definition": "The concentration of charge in a given volume - smaller ions have greater charge density"
       },
       {
-        "term": "Ksp",
-        "definition": "The equilibrium constant for a sparingly soluble ionic solid in equilibrium with its ions in saturated solution"
-      },
-      {
-        "term": "Partition coefficient",
-        "definition": "The ratio of concentrations of a solute in two immiscible solvents at equilibrium at constant temperature"
-      },
-      {
-        "term": "Common ion effect",
-        "definition": "The decrease in solubility of an ionic compound when a solution already contains one of the ions from that compound"
+        "term": "Sparingly soluble",
+        "definition": "Compounds with very low solubilities, like magnesium hydroxide"
       }
     ],
     "howToAnswer": [
@@ -70,18 +61,14 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse Ka with Kb - Ka is for acids, Kb is for bases",
-      "Students often forget to convert pKa to Ka or vice versa using the relationship pKa = -log Ka",
-      "Don't use total volume in Ksp calculations - use molar concentrations only",
-      "Never assume [H⁺] = [acid] for weak acids - must use Ka expression",
-      "Students often forget that buffer capacity decreases as the ratio [A⁻]/[HA] moves away from 1:1"
+      "Thinking scandium and zinc are transition elements when their ions have complete or empty d subshells",
+      "Confusing the solubility trends - hydroxides become more soluble down Group 2 while sulfates become less soluble",
+      "Forgetting that 4s electrons are removed before 3d electrons when forming transition metal ions",
+      "Not understanding that thermal stability increases down Group 2 due to decreased polarising power of larger cations"
     ],
     "examinerTips": [
-      "This topic appears in every Paper 2 with calculations worth 6-8 marks",
-      "Always show working for pH calculations step by step",
-      "Check your answer is reasonable - strong acids have pH < 2, weak acids pH 3-6",
-      "For Ksp questions, write the equilibrium expression first before substituting values",
-      "Buffer questions often link to titration curves - know the connection"
+      "Remember that more exothermic enthalpy of solution means higher solubility",
+      "Know that smaller Group 2 ions are more polarising due to greater charge density, leading to lower thermal stability of their compounds"
     ],
     "formulas": [
       "Ka = [H⁺][A⁻]/[HA]",
@@ -115,7 +102,7 @@
       "Examiner Report 2023: 'Candidates often forgot that Kw changes with temperature while pH of pure water is not always 7' — at higher temperatures, Kw increases so pure water has pH < 7 but is still neutral"
     ],
     "keyDiagram": "Students must be able to draw a solubility curve showing how ionic compound solubility varies with temperature. The diagram should have: x-axis labeled 'Temperature (°C)', y-axis labeled 'Solubility (g per 100g water)', curved line showing increasing solubility with temperature for most salts (like KNO₃), annotation showing that some compounds like Ca(OH)₂ have decreasing solubility curves, and clear indication of saturation point at any given temperature.",
-    "quickRecap": "Remember Kw = [H⁺][OH⁻] = 1.0 × 10⁻¹⁴ at 25°C and increases with temperature. For solubility equilibria, Ksp = product of ion concentrations raised to their stoichiometric powers. Common ion effect reduces solubility by adding an ion already present in the equilibrium. Buffer solutions resist pH change through equilibrium between weak acid and its conjugate base."
+    "quickRecap": "Transition elements have incomplete d orbitals in their stable ions, excluding scandium and zinc. Group 2 shows clear trends: thermal stability of carbonates/nitrates increases down the group due to decreasing cation polarising power. Solubility trends are opposite for hydroxides (increase) and sulfates (decrease) down Group 2, explained by the relative rates of change in lattice enthalpy and hydration enthalpy."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -123,5 +110,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:36:22.226Z",
   "updated_at": "2026-04-06T04:36:22.226Z",
-  "enriched_at": "2026-04-06T16:05:56.577Z"
+  "enriched_at": "2026-04-06T16:05:56.577Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:32:49.401Z"
 }

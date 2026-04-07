@@ -9,36 +9,35 @@
     "title": "The cognitive approach",
     "readTime": "8 min",
     "keyPoints": [
-      "**Cognitive approach** focuses on internal mental processes such as memory, perception, thinking and attention",
-      "**Information processing model** compares the human mind to a computer that inputs, processes and outputs information",
-      "**Schemas** are cognitive frameworks that help organize and interpret information based on past experience",
-      "**Selective attention** allows us to focus on relevant stimuli while filtering out irrelevant information",
-      "**Multi-store model** proposes three separate memory stores: sensory register, short-term memory and long-term memory",
-      "**Working memory model** suggests short-term memory has multiple components including central executive, phonological loop and visuospatial sketchpad",
-      "**Cognitive processes** are studied using laboratory experiments to establish cause and effect relationships",
-      "**Computer analogies** help explain cognitive processes but may oversimplify the complexity of human thinking",
-      "**Top-down processing** uses existing knowledge and expectations to interpret sensory information"
+      "According to the biological approach, humans are biological organisms made up of physiological processes, so all thoughts and cognitive processes must be biological in origin",
+      "The mind 'lives' within the brain and is not separate (as viewed by the cognitive approach)",
+      "Actions of genes, hormones, neurotransmitters and neurochemical mechanisms must be understood to explain behaviour fully",
+      "Heritability coefficients quantify the genetic basis of characteristics - IQ has a coefficient of 0.5 showing equal influence of nature and nurture",
+      "An individual's genotype is their genetic make-up, while phenotype is the physical expression of their genotype",
+      "Two people may have the same genotype but different phenotypes due to personal choices or epigenetics",
+      "Natural selection is the mechanism of evolution where genetically-determined behaviours giving selective advantage are passed to future generations",
+      "The biological approach has practical applications in developing psychoactive drugs for mental health disorders like depression and schizophrenia"
     ],
     "definitions": [
       {
-        "term": "Cognitive approach",
-        "definition": "An approach that focuses on how internal mental processes such as memory, perception, thinking and attention affect behavior"
+        "term": "Genotype",
+        "definition": "An individual's genetic make-up, where a gene is a short section of DNA coding for specific proteins"
       },
       {
-        "term": "Schema",
-        "definition": "A cognitive framework or concept that helps organize and interpret information based on past experience"
+        "term": "Phenotype",
+        "definition": "The physical expression of an individual's genotype"
       },
       {
-        "term": "Selective attention",
-        "definition": "The ability to focus on relevant stimuli while filtering out irrelevant or distracting information"
+        "term": "Epigenetics",
+        "definition": "A change in gene expression, without altering an individual's genetic make-up"
       },
       {
-        "term": "Information processing",
-        "definition": "The cognitive process of taking in information, processing it and producing an output or response"
+        "term": "Natural selection",
+        "definition": "The mechanism of evolution suggesting genetically-determined behaviours giving selective advantage will be present in future generations"
       },
       {
-        "term": "Working memory",
-        "definition": "A memory system that temporarily holds and manipulates information during cognitive tasks"
+        "term": "Behaviour genetics",
+        "definition": "The study of the influence of an organism's genetic composition on its behaviour and the interaction of heredity and environment"
       }
     ],
     "howToAnswer": [
@@ -70,17 +69,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'cognitive approach studies behavior' — always say 'studies internal mental processes that influence behavior'",
-      "Students often confuse short-term memory with working memory — working memory is more complex with multiple components",
-      "Don't just list cognitive processes — explain how they work together in information processing",
-      "Avoid saying schemas are 'memories' — they are frameworks that organize information",
-      "Never describe cognitive approach as unscientific — it uses rigorous laboratory methods"
+      "Confusing the biological approach with the cognitive approach - biological sees mind as living within the brain, not separate",
+      "Assuming twin studies can definitively separate nature from nurture effects",
+      "Not understanding that same genotype can produce different phenotypes",
+      "Forgetting that biological determinism has serious implications for judicial system and economy"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2 questions about approaches",
-      "Always give specific examples of cognitive processes when explaining the approach",
-      "Computer analogies are key — mention input, processing, output for full marks",
-      "Link cognitive processes together to show understanding of information processing model"
+      "Remember to explain how drug treatments require minimal patient effort compared to cognitive therapies like CBT",
+      "Discuss real-life consequences of biological determinism including impacts on criminal responsibility and employment discrimination"
     ],
     "formulas": [],
     "keyDiagramDescription": "Information processing model showing input → cognitive processes (attention, perception, memory, thinking) → output, often drawn as flowchart similar to computer processing system",
@@ -107,7 +103,7 @@
       "Examiner Report 2021: 'Candidates frequently wrote about observable behavior rather than internal mental processes' — remember the cognitive approach focuses on what happens inside the mind, not just external actions"
     ],
     "keyDiagram": "Students must be able to draw the Information Processing Model: a flowchart showing INPUT (sensory information) → PROCESSING (attention, perception, memory) → OUTPUT (behavior/response). Include boxes for each stage connected by arrows, and add 'cognitive processes' labels like encoding, storage, retrieval. This diagram illustrates the computer analogy central to cognitive approach.",
-    "quickRecap": "The cognitive approach studies internal mental processes like memory, perception and thinking. It assumes these processes can be studied scientifically through inference from behavior. The mind is viewed as working like a computer - input, processing, output. Key concepts include schemas (mental frameworks) and the use of laboratory experiments to understand cognition."
+    "quickRecap": "The biological approach views humans as biological organisms where all thoughts and cognitive processes originate from biology. Behaviour is explained through genes, hormones, and neurotransmitters, with genotype interacting with environment to produce phenotype. While this approach has led to practical drug treatments, it raises concerns about biological determinism and its implications for responsibility and discrimination."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -115,5 +111,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:21:12.256Z",
   "updated_at": "2026-04-06T05:21:12.256Z",
-  "enriched_at": "2026-04-06T16:08:07.252Z"
+  "enriched_at": "2026-04-06T16:08:07.252Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:58:16.633Z"
 }

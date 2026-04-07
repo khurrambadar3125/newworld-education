@@ -9,32 +9,32 @@
     "title": "Equilibria",
     "readTime": "8 min",
     "keyPoints": [
-      "**Dynamic equilibrium** occurs when the rate of forward reaction equals the rate of backward reaction and concentrations remain constant",
-      "**Le Chatelier's principle** states that if a system at equilibrium is disturbed, the position of equilibrium shifts to oppose the change",
-      "Increasing temperature shifts equilibrium in the **endothermic direction** to absorb the extra heat",
-      "Increasing pressure shifts equilibrium towards the side with **fewer gas molecules** to reduce pressure",
-      "Adding a **catalyst** has no effect on the position of equilibrium but increases the rate of both forward and backward reactions equally",
-      "**Kc** is the equilibrium constant in terms of concentrations and only changes with temperature",
-      "**Kp** is the equilibrium constant in terms of partial pressures for gaseous equilibria",
-      "If Kc > 1, the equilibrium position lies to the **right** (products favoured)",
-      "Adding more reactant shifts equilibrium to the **right** to use up the excess reactant"
+      "Transition elements are found in the d-block and form one or more stable ions with incomplete d orbitals",
+      "Scandium and zinc are not transition elements because Sc³⁺ has an empty d subshell and Zn²⁺ has a full d subshell",
+      "The 4s orbital is filled before the 3d orbital, but 4s electrons are removed before 3d electrons when forming ions",
+      "Group 2 carbonates and nitrates become more thermally stable down the group due to decreasing charge density of cations",
+      "Smaller Group 2 ions have greater charge density and polarising effect, making compounds less thermally stable",
+      "Group 2 hydroxide solubility increases down the group while sulfate solubility decreases down the group",
+      "For hydroxides, lattice enthalpy falls faster than hydration enthalpy down Group 2, making solution more exothermic",
+      "For sulfates, lattice enthalpy falls slower than hydration enthalpy down Group 2, making solution more endothermic",
+      "Group 2 reactivity increases down the group due to decreasing ionisation energy from increasing atomic radius and shielding"
     ],
     "definitions": [
       {
-        "term": "Dynamic equilibrium",
-        "definition": "The state where the rate of forward reaction equals the rate of backward reaction and the concentrations of reactants and products remain constant"
+        "term": "Transition elements",
+        "definition": "Elements that form one or more stable ions with incomplete d orbitals"
       },
       {
-        "term": "Le Chatelier's principle",
-        "definition": "If a system at equilibrium is subjected to a change, the position of equilibrium will shift to oppose that change"
+        "term": "Charge density",
+        "definition": "The same charge packed into a small volume, affecting polarising ability of cations"
       },
       {
-        "term": "Equilibrium constant (Kc)",
-        "definition": "The ratio of the product of concentrations of products to the product of concentrations of reactants, each raised to their stoichiometric coefficients, at equilibrium"
+        "term": "Sparingly soluble",
+        "definition": "Compounds with very low solubilities, like magnesium hydroxide"
       },
       {
-        "term": "Partial pressure",
-        "definition": "The pressure that a gas in a mixture would exert if it alone occupied the whole volume"
+        "term": "d orbital",
+        "definition": "Subshell that can hold up to 10 electrons in transition elements"
       }
     ],
     "howToAnswer": [
@@ -62,17 +62,16 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'equilibrium moves faster' - always say 'equilibrium position shifts'",
-      "Students often confuse Kc and Kp - Kc uses concentrations, Kp uses partial pressures",
-      "Don't say catalysts 'speed up equilibrium' - they help equilibrium to be reached faster",
-      "Never include solids or liquids in Kc expressions - only gases and aqueous solutions",
-      "Students write 'more products formed' instead of 'equilibrium shifts towards products'"
+      "Thinking scandium and zinc are transition elements when they don't have incomplete d orbitals in their stable ions",
+      "Removing 3d electrons before 4s electrons when forming transition metal ions",
+      "Confusing the opposite solubility trends of Group 2 hydroxides and sulfates",
+      "Thinking thermal stability decreases down Group 2 when it actually increases",
+      "Not recognizing that charge density affects polarising ability and thermal stability"
     ],
     "examinerTips": [
-      "Equilibrium calculations appear in every Paper 2 - practice Kc and Kp expressions",
-      "Always relate industrial processes like Haber process to equilibrium principles",
-      "For temperature effects, identify whether forward reaction is exo/endothermic first",
-      "Remember: only temperature changes the value of K"
+      "Remember that 4s electrons are always removed first when forming transition metal ions, even though 4s fills before 3d",
+      "Use charge density and polarising effect to explain thermal stability trends in Group 2 compounds",
+      "Link enthalpy changes of solution to solubility trends using lattice enthalpy and hydration enthalpy comparisons"
     ],
     "formulas": [
       "Kc = [products]/[reactants]",
@@ -103,7 +102,7 @@
       "Examiner Report 2021: 'Candidates often gave vague answers like \"equilibrium shifts right\" without explaining why' — always link your answer to Le Chatelier's principle and explain how the system opposes the change"
     ],
     "keyDiagram": "Graph showing concentration vs time for a reversible reaction reaching dynamic equilibrium. X-axis: Time, Y-axis: Concentration. Draw curves for reactants (decreasing then leveling) and products (increasing then leveling) that meet at the equilibrium point where forward and reverse reaction rates are equal. Label: initial concentrations, equilibrium concentrations, 'dynamic equilibrium established', and arrows showing 'rate of forward reaction = rate of reverse reaction'.",
-    "quickRecap": "Dynamic equilibrium occurs when forward and reverse reaction rates are equal in a closed system. Le Chatelier's principle: if conditions change, equilibrium shifts to oppose that change. Increasing temperature favors the endothermic direction; increasing pressure favors the side with fewer gas molecules. Catalysts speed up both reactions equally so don't affect equilibrium position, only the time to reach it."
+    "quickRecap": "Transition elements have incomplete d orbitals in their stable ions, excluding scandium and zinc. Group 2 shows clear trends: thermal stability increases down the group due to decreasing charge density, while solubility trends are opposite for hydroxides (increasing) and sulfates (decreasing). These trends can be explained using enthalpy changes and the relative sizes of ions affecting lattice and hydration energies."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -111,5 +110,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:31:52.001Z",
   "updated_at": "2026-04-06T04:31:52.001Z",
-  "enriched_at": "2026-04-06T16:13:17.620Z"
+  "enriched_at": "2026-04-06T16:13:17.620Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:35:16.958Z"
 }

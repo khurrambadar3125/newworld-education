@@ -9,36 +9,43 @@
     "title": "Limited company accounts",
     "readTime": "8 min",
     "keyPoints": [
-      "**Share capital** represents the nominal value of shares issued to shareholders and forms part of equity in the statement of financial position",
-      "**Ordinary shares** carry voting rights and variable dividends, while **preference shares** receive fixed dividends before ordinary shareholders",
-      "**Debentures** are long-term loans to the company that must be repaid and carry fixed interest rates shown as finance costs",
-      "**Retained earnings** are accumulated profits kept in the business and appear in equity section of the statement of financial position",
-      "**Dividends** are distributions of profit to shareholders and reduce retained earnings when declared",
-      "**Share premium** is the excess amount paid above nominal value when shares are issued at a premium",
-      "**Authorised share capital** is the maximum value of shares that can be issued as stated in the memorandum of association",
-      "**Issued share capital** is the actual nominal value of shares that have been sold to shareholders",
-      "Debenture interest is an **expense** charged to profit or loss account, while dividends are an **appropriation** of profit"
+      "Financial statements provide information about financial position, financial performance and cash flows of an entity that is useful to a wide range of users in making economic decisions",
+      "Financial statements provide information about an entity's assets, liabilities, equity, income and expenses (including gains and losses)",
+      "Manufacturing account is prepared at the end of a financial period to calculate the production cost of manufactured goods",
+      "Manufacturing account only includes information about the factory and the actual manufacturing process",
+      "All non-production costs (administration, finance, and distribution costs) are recorded in the Income Statement",
+      "Cost of production is calculated by adding the factory overheads to prime cost",
+      "Transfer price is the production cost of completed goods plus a percentage mark-up",
+      "Factory profit is the difference between the transfer price and the production cost of completed goods"
     ],
     "definitions": [
       {
-        "term": "Limited company",
-        "definition": "A business organization that has separate legal entity from its owners with limited liability for shareholders"
+        "term": "Manufacturing account",
+        "definition": "An account prepared at the end of a financial period to calculate the production cost of manufactured goods"
       },
       {
-        "term": "Share capital",
-        "definition": "The nominal value of shares issued by a company to its shareholders"
+        "term": "Prime cost/direct cost",
+        "definition": "The total of direct materials, direct labour, and direct expenses"
       },
       {
-        "term": "Debenture",
-        "definition": "A long-term loan to a company with fixed interest rate and specified repayment date"
+        "term": "Factory overheads/indirect costs",
+        "definition": "Costs incurred from the running of the factory, including indirect factory wages and depreciation of factory machinery"
       },
       {
-        "term": "Retained earnings",
-        "definition": "Accumulated profits that have been kept in the business rather than distributed as dividends"
+        "term": "Work in progress",
+        "definition": "Inventory of partly finished goods in the factory at any point in time"
       },
       {
-        "term": "Dividend",
-        "definition": "A distribution of company profits to shareholders in proportion to their shareholding"
+        "term": "Factory profit",
+        "definition": "Percentage added to the factory cost of production to arrive at the transfer price"
+      },
+      {
+        "term": "Transfer price",
+        "definition": "The production cost of completed goods plus a percentage mark-up"
+      },
+      {
+        "term": "Unrealised profit",
+        "definition": "Profit which is not recognised until the"
       }
     ],
     "howToAnswer": [
@@ -71,17 +78,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say debenture interest is an appropriation of profit — it is an expense in profit or loss account",
-      "Students confuse authorised and issued share capital — authorised is maximum allowed, issued is actual amount sold",
-      "Never include dividends proposed but not declared in current year's profit and loss appropriation account",
-      "Students forget that share premium cannot be used to pay dividends — only retained earnings can be distributed",
-      "Never show debentures as part of equity — they are non-current liabilities"
+      "Including non-production costs in the manufacturing account instead of the Income Statement",
+      "Confusing prime cost with total production cost",
+      "Mixing up factory overheads with other business expenses",
+      "Not understanding the difference between transfer price and production cost"
     ],
     "examinerTips": [
-      "Limited company accounts appear in every Paper 2 - focus on statement of financial position format",
-      "Always distinguish between expense (debenture interest) and appropriation (dividends) in extended questions",
-      "Remember the order: preference dividends paid before ordinary dividends",
-      "Learn the equity section layout: share capital + share premium + retained earnings"
+      "Remember the formula: Cost of production = prime cost + factory overheads",
+      "Keep manufacturing account separate from other business costs - only include factory-related items"
     ],
     "formulas": [
       "Retained earnings = Opening retained earnings + Net profit - Dividends paid",
@@ -113,7 +117,7 @@
       "Examiner Report 2021: 'Common error was treating proposed dividends as paid dividends' — proposed dividends are a current liability in the balance sheet, while paid dividends go through the appropriation account as cash outflow"
     ],
     "keyDiagram": "Students must be able to draw the structure of a limited company balance sheet showing: 1) Fixed Assets section (cost, accumulated depreciation, net book value), 2) Current Assets (stock, debtors, bank, cash), 3) Current Liabilities (creditors, proposed dividends, accruals), 4) Net Current Assets calculation, 5) Long-term Liabilities, 6) Net Assets total, 7) Financed by section showing Share Capital (authorized vs issued), Reserves (capital reserves, revenue reserves including retained earnings), and total Shareholders' Equity. The diagram should clearly show the dual aspect where Net Assets = Shareholders' Equity.",
-    "quickRecap": "Limited companies have separate legal existence and limited liability for shareholders. Their accounts include corporation tax provisions and dividend appropriations. Balance sheets show authorized vs issued share capital, and distinguish between capital reserves (non-distributable) and revenue reserves (distributable as dividends). Key ratios include gross profit margin, net profit margin, and return on capital employed for performance analysis."
+    "quickRecap": "Manufacturing accounts calculate the production cost of manufactured goods by combining prime costs (direct materials, labour, expenses) with factory overheads. The manufacturing account only includes factory-related costs, while other business expenses go to the Income Statement. Transfer price includes a markup on production cost, creating factory profit."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -121,5 +125,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:27:15.214Z",
   "updated_at": "2026-04-06T05:27:15.214Z",
-  "enriched_at": "2026-04-06T16:06:00.230Z"
+  "enriched_at": "2026-04-06T16:06:00.230Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:59:03.359Z"
 }

@@ -9,36 +9,23 @@
     "title": "Chemical energetics",
     "readTime": "8 min",
     "keyPoints": [
-      "**Enthalpy change** (ΔH) is the heat energy change at constant pressure and temperature",
-      "**Exothermic** reactions have negative ΔH values and release heat energy to the surroundings",
-      "**Endothermic** reactions have positive ΔH values and absorb heat energy from the surroundings",
-      "**Standard enthalpy of formation** (ΔHf°) is the enthalpy change when 1 mole of compound is formed from its elements in standard states",
-      "**Standard enthalpy of combustion** (ΔHc°) is the enthalpy change when 1 mole of substance is completely burned in oxygen under standard conditions",
-      "**Hess's Law** states that the enthalpy change for a reaction is independent of the route taken",
-      "**Bond energy** is the energy required to break 1 mole of a particular covalent bond in the gaseous state",
-      "**Calorimetry** uses q = mcΔT to calculate enthalpy changes from temperature measurements",
-      "Energy is **required to break bonds** (endothermic) and **released when bonds form** (exothermic)"
+      "Transition elements are found in the d-block of the periodic table and form one or more stable ions with incomplete d orbitals",
+      "The d subshell can hold up to 10 electrons",
+      "Scandium and zinc are in the d-block but are not transition elements because their ions do not have incomplete d subshells",
+      "Scandium forms Sc³⁺ with an empty d subshell [Ar], zinc forms Zn²⁺ with a full d subshell [Ar]3d¹⁰",
+      "The 4s orbital is filled before the 3d orbital, but 4s electrons are removed before 3d electrons when forming ions",
+      "Transition elements commonly form multiple oxidation states due to similar energy levels of 3d and 4s electrons",
+      "Chromium has an unusual electron configuration [Ar]3d⁵4s¹ rather than the expected [Ar]3d⁴4s²",
+      "Copper also has an unusual electron configuration [Ar]3d¹⁰4s¹ rather than the expected [Ar]3d⁹4s²"
     ],
     "definitions": [
       {
-        "term": "Enthalpy change",
-        "definition": "The heat energy change at constant pressure"
+        "term": "Transition elements",
+        "definition": "Elements that form one or more stable ions with incomplete d orbitals"
       },
       {
-        "term": "Standard enthalpy of formation",
-        "definition": "The enthalpy change when 1 mole of compound is formed from its elements in their standard states under standard conditions"
-      },
-      {
-        "term": "Hess's Law",
-        "definition": "The enthalpy change for a reaction is independent of the route taken, provided initial and final conditions are the same"
-      },
-      {
-        "term": "Bond energy",
-        "definition": "The energy required to break 1 mole of a particular covalent bond in the gaseous state"
-      },
-      {
-        "term": "Standard conditions",
-        "definition": "298K (25°C) and 1 atm pressure"
+        "term": "d orbitals",
+        "definition": "Atomic orbitals that can hold up to 10 electrons and have a characteristic shape"
       }
     ],
     "howToAnswer": [
@@ -71,17 +58,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse bond breaking (endothermic) with bond forming (exothermic)",
-      "Students often forget to change sign when reversing reactions in Hess cycles",
-      "Always include units (kJ mol⁻¹) in final answers - marks lost if omitted",
-      "Never say 'bonds are made' - always say 'bonds are formed'",
-      "Students mix up ΔHf° and ΔHc° - formation is FROM elements, combustion is burning in oxygen"
+      "Thinking scandium and zinc are transition elements - they are d-block elements but not transition elements",
+      "Removing 3d electrons before 4s electrons when forming ions - 4s electrons are always removed first",
+      "Forgetting that chromium and copper have unusual electron configurations with only one 4s electron"
     ],
     "examinerTips": [
-      "Hess's Law calculations appear in every Paper 2 - practice drawing cycles",
-      "Energy level diagrams must have labeled axes (Energy on y-axis, Reaction pathway on x-axis)",
-      "Bond energy questions always specify 'gaseous state' - mention this for full marks",
-      "In calorimetry, show q = mcΔT calculation even if calculator used"
+      "Remember the definition requires incomplete d orbitals in the ion, not just being in the d-block",
+      "Always remove 4s electrons first when writing ion electron configurations, even though 4s fills before 3d"
     ],
     "formulas": [
       "q = mcΔT",
@@ -113,7 +96,7 @@
       "Examiner Report 2023: 'Common error was incorrect calculation of bonds broken versus bonds formed' — remember that energy is REQUIRED to break bonds (positive) and energy is RELEASED when bonds form (negative)"
     ],
     "keyDiagram": "Energy profile diagram showing: y-axis labeled 'Energy' and x-axis labeled 'Reaction pathway/Progress of reaction'. Draw horizontal line for reactants energy level, higher/lower horizontal line for products. Curved line connecting them with peak showing activation energy (Ea). Label ΔH as vertical arrow between reactant and product levels. For exothermic: products lower than reactants, ΔH arrow points down. For endothermic: products higher than reactants, ΔH arrow points up.",
-    "quickRecap": "Exothermic reactions release energy (ΔH negative, temperature rises), endothermic reactions absorb energy (ΔH positive, temperature falls). Calculate enthalpy change using: ΔH = bonds broken - bonds formed. Energy profile diagrams show activation energy as the peak and enthalpy change as difference between reactant and product energy levels. Bond breaking requires energy, bond formation releases energy."
+    "quickRecap": "Transition elements are d-block elements that form stable ions with incomplete d orbitals. Scandium and zinc are excluded as their ions have empty or full d subshells respectively. When forming ions, 4s electrons are removed before 3d electrons despite filling order. Many transition elements form multiple oxidation states due to similar energy levels of 3d and 4s orbitals."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -121,5 +104,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:31:08.179Z",
   "updated_at": "2026-04-06T04:31:08.179Z",
-  "enriched_at": "2026-04-06T16:12:31.822Z"
+  "enriched_at": "2026-04-06T16:12:31.822Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:34:48.698Z"
 }

@@ -9,36 +9,17 @@
     "title": "Security, privacy and data integrity",
     "readTime": "8 min",
     "keyPoints": [
-      "**Encryption** converts plaintext into ciphertext using an algorithm and key to prevent unauthorised access",
-      "**Symmetric encryption** uses the same key for encryption and decryption, while **asymmetric encryption** uses a public and private key pair",
-      "**Firewall** monitors and controls incoming and outgoing network traffic based on predetermined security rules",
-      "**Malware** is malicious software designed to damage, disrupt, or gain unauthorised access to computer systems",
-      "**Phishing** is a social engineering attack that tricks users into revealing sensitive information by impersonating trusted entities",
-      "**Authentication** verifies the identity of a user or system through passwords, biometrics, or digital certificates",
-      "**Access control** restricts user permissions to specific resources based on their role or identity",
-      "**Digital signatures** use asymmetric encryption to verify the authenticity and integrity of digital documents",
-      "**Backup strategies** include full, incremental, and differential backups to ensure data recovery in case of loss or corruption"
+      "Security, privacy and data integrity is a topic included in Paper 1 Theory Fundamentals under Computer systems including software, data hardware and people",
+      "Security is also covered in Paper 3 Advanced Theory under Networks, Communication and Security",
+      "This topic forms part of the Communication key concept which includes understanding rules and methods used in data transfer",
+      "Communication ranges from internal transfer of data within a computer system to transfer of data across the internet",
+      "The course encourages learners to be responsible when using technology ethically",
+      "Security concepts build on foundation knowledge as candidates are not expected to have studied computer science previously"
     ],
     "definitions": [
       {
-        "term": "Encryption",
-        "definition": "The process of converting plaintext into ciphertext using an algorithm and key to prevent unauthorised access to data"
-      },
-      {
-        "term": "Firewall",
-        "definition": "A network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules"
-      },
-      {
-        "term": "Malware",
-        "definition": "Malicious software designed to damage, disrupt, or gain unauthorised access to computer systems"
-      },
-      {
-        "term": "Phishing",
-        "definition": "A social engineering attack that attempts to trick users into revealing sensitive information by impersonating trusted entities"
-      },
-      {
-        "term": "Authentication",
-        "definition": "The process of verifying the identity of a user or system before granting access to resources"
+        "term": "Communication",
+        "definition": "A core requirement of computer systems that includes the ability to transfer data from one device or component to another and an understanding of the rules and methods that are used in this data transfer"
       }
     ],
     "howToAnswer": [
@@ -71,17 +52,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'encoding' when you mean 'encryption' — encoding is reversible without a key",
-      "Students often confuse viruses with malware — viruses are a type of malware that replicates itself",
-      "Don't say firewalls 'block viruses' — they control network traffic based on rules",
-      "Never describe authentication as just 'entering a password' — it's the verification process",
-      "Students confuse symmetric and asymmetric encryption key usage"
+      "Not understanding that security appears in both Paper 1 and Paper 3 at different levels",
+      "Failing to connect security concepts with the broader Communication key concept",
+      "Not recognizing the ethical responsibility aspect of using technology"
     ],
     "examinerTips": [
-      "Security questions appear in almost every Paper 2 exam",
-      "Always explain HOW the security method protects data, not just what it does",
-      "Use specific examples of malware types (virus, worm, trojan) for full marks",
-      "Remember to mention both encryption and decryption processes in explanations"
+      "Remember that security concepts span multiple papers so ensure understanding at both fundamental and advanced levels",
+      "Connect security topics with practical communication scenarios from internal systems to internet transfers"
     ],
     "formulas": [],
     "keyDiagramDescription": "Network security diagram showing firewall placement between internal network and internet, with encryption process showing plaintext → algorithm + key → ciphertext transformation",
@@ -109,7 +86,7 @@
       "Examiner Report 2023: 'Candidates frequently forgot to explain HOW security measures protect data' — don't just list methods, explain the mechanism by which each method provides protection"
     ],
     "keyDiagram": "Security Layers Diagram: Draw concentric circles showing multiple security layers from outside to inside: Physical security (locks, CCTV), Network security (firewalls, encryption), Access control (passwords, biometrics), and Data protection (backups, validation) at the center. Include arrows showing how threats must penetrate each layer, and label each layer with specific examples. This demonstrates defense-in-depth approach and shows how different security measures work together.",
-    "quickRecap": "Security protects data from unauthorized access using methods like passwords, encryption, and firewalls. Privacy ensures personal data is only used appropriately with user consent. Data integrity means data remains accurate and complete through validation (checking data makes sense) and verification (checking data was entered correctly). Remember: validation checks if data is reasonable, verification checks if data matches the original source."
+    "quickRecap": "Security, privacy and data integrity is covered in both Paper 1 Theory Fundamentals and Paper 3 Advanced Theory. It connects to the Communication key concept which involves data transfer between devices and understanding transfer rules and methods. The course emphasizes responsible and ethical use of technology."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -117,5 +94,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:15:56.733Z",
   "updated_at": "2026-04-06T05:15:56.733Z",
-  "enriched_at": "2026-04-06T16:10:43.712Z"
+  "enriched_at": "2026-04-06T16:10:43.712Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:55:43.618Z"
 }

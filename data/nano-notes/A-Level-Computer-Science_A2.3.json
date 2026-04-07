@@ -9,36 +9,17 @@
     "title": "Hardware and virtual machines",
     "readTime": "8 min",
     "keyPoints": [
-      "**RISC (Reduced Instruction Set Computer)** has fewer, simpler instructions that execute in one clock cycle, uses more registers and relies heavily on the compiler for optimization",
-      "**CISC (Complex Instruction Set Computer)** has many complex instructions that can perform multiple operations, uses fewer registers and has variable instruction lengths",
-      "**Pipelining** allows multiple instructions to be processed simultaneously at different stages of execution, increasing processor throughput without increasing clock speed",
-      "Pipeline stages typically include: **fetch, decode, execute, memory access, write back** - each stage operates on different instructions simultaneously",
-      "**Pipeline hazards** occur when dependencies between instructions prevent smooth pipeline operation, requiring stalls or forwarding mechanisms",
-      "A **virtual machine** is software that emulates a complete computer system, allowing multiple operating systems to run on a single physical machine",
-      "**Parallel processing** involves multiple processors executing instructions simultaneously, either through multiple cores or separate processors working together",
-      "**Massively parallel processing (MPP)** uses hundreds or thousands of processors working together to solve complex computational problems",
-      "Virtual machines provide **isolation** between different operating systems and applications, improving security and resource management"
+      "Hardware and Virtual Machines is part of Paper 3 Advanced Theory component",
+      "This topic is assessed in the Computer systems including software, data hardware and people content section",
+      "Students are not expected to have studied computer science previously before beginning this course",
+      "Computer architecture and hardware is identified as a key concept in the syllabus",
+      "The course covers four main components with Hardware and Virtual Machines being an advanced level topic",
+      "Cambridge IGCSE Computer Science provides useful introduction to the subject matter"
     ],
     "definitions": [
       {
-        "term": "RISC",
-        "definition": "Reduced Instruction Set Computer architecture that uses simple instructions executed in one clock cycle with extensive use of registers"
-      },
-      {
-        "term": "Pipelining",
-        "definition": "Technique where multiple instructions are overlapped in execution, with different stages of different instructions being processed simultaneously"
-      },
-      {
-        "term": "Virtual Machine",
-        "definition": "Software emulation of a complete computer system that can run an operating system and applications as if on physical hardware"
-      },
-      {
-        "term": "Parallel Processing",
-        "definition": "Simultaneous execution of multiple instructions or processes using multiple processors or cores"
-      },
-      {
-        "term": "Pipeline Hazard",
-        "definition": "Situation where the next instruction cannot execute in the following clock cycle due to dependencies or conflicts"
+        "term": "Computer architecture and hardware",
+        "definition": "One of the key concepts in Cambridge International AS & A Level Computer Science syllabus focusing on computer system design and components"
       }
     ],
     "howToAnswer": [
@@ -71,17 +52,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say RISC is 'faster' than CISC - always say RISC instructions execute in fewer clock cycles",
-      "Students often confuse virtual machines with virtual memory - VM emulates hardware, virtual memory extends RAM",
-      "Don't say pipelining increases clock speed - it increases throughput by overlapping instruction execution",
-      "Never say parallel processing just means 'multiple tasks' - specify simultaneous execution using multiple processors/cores",
-      "Students forget that pipeline hazards can reduce performance below non-pipelined systems in worst cases"
+      "Assuming prior computer science knowledge is required when candidates are not expected to have studied it previously",
+      "Confusing Hardware and Virtual Machines with Paper 1 content when it is actually part of Paper 3 Advanced Theory",
+      "Not recognizing that this is an advanced theory topic rather than fundamental theory"
     ],
     "examinerTips": [
-      "RISC vs CISC comparison appears frequently - learn specific differences not just 'simple vs complex'",
-      "Pipeline diagrams often required - show stages clearly with time axis",
-      "Virtual machine questions often link to benefits like isolation and portability",
-      "Parallel processing questions may include real examples like weather forecasting or scientific simulations"
+      "Focus on understanding that Hardware and Virtual Machines is part of the advanced theory component",
+      "Remember this topic falls under the Computer systems including software, data hardware and people content section"
     ],
     "formulas": [],
     "keyDiagramDescription": "Pipeline execution diagram showing 5 stages (Fetch, Decode, Execute, Memory, Writeback) with multiple instructions overlapping across time cycles, demonstrating how different instructions occupy different stages simultaneously",
@@ -108,7 +85,7 @@
       "Examiner Report 2021: 'Candidates gave vague advantages like 'saves money' without explanation' — always justify advantages with specific reasons like reduced hardware costs or improved resource utilization"
     ],
     "keyDiagram": "Draw a layered diagram showing: (1) Physical hardware at bottom (CPU, RAM, storage), (2) Hypervisor layer in middle managing resources, (3) Multiple virtual machines on top, each containing their own OS and applications. Include arrows showing how hypervisor allocates hardware resources to each VM. Label each VM with different OS (Windows, Linux, etc.) to show isolation.",
-    "quickRecap": "Virtual machines use hypervisor software to create multiple isolated computing environments on single physical hardware. Each VM acts like separate computer with own OS and applications. Key advantages include cost savings, improved resource utilization, and easier system management. Remember: hypervisor is essential component that manages resource allocation between VMs."
+    "quickRecap": "Hardware and Virtual Machines is covered in Paper 3 Advanced Theory as part of the Computer systems content section. No prior computer science knowledge is required, though IGCSE Computer Science provides useful background. Computer architecture and hardware is a key concept in the overall syllabus."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -116,5 +93,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:18:30.681Z",
   "updated_at": "2026-04-06T05:18:30.681Z",
-  "enriched_at": "2026-04-06T16:06:38.768Z"
+  "enriched_at": "2026-04-06T16:06:38.768Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:38:10.118Z"
 }

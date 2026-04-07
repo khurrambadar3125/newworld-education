@@ -9,37 +9,39 @@
     "title": "Energy stores and transfers",
     "readTime": "8 min",
     "keyPoints": [
-      "**Energy stores** include kinetic, gravitational potential, elastic potential, chemical, nuclear, thermal and electrostatic",
-      "**Energy transfer** occurs by heating, radiation, forces doing work and electrical working",
-      "**Conservation of energy** states that energy cannot be created or destroyed, only transferred from one store to another",
-      "**Kinetic energy** is the energy stored in moving objects and equals ½mv²",
-      "**Gravitational potential energy** is energy stored in objects at height and equals mgh",
-      "**Elastic potential energy** is energy stored in stretched or compressed objects",
-      "**Chemical energy** is energy stored in food, fuels and batteries",
-      "**Work done** equals force × distance moved in direction of force",
-      "**Power** is the rate of energy transfer and equals work done ÷ time taken",
-      "Energy is measured in **joules (J)** and power is measured in **watts (W)**"
+      "Magnets have north and south poles - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are attracted to magnets, non-magnetic materials (glass, plastic) are not",
+      "Magnetic materials can be magnetised by stroking with magnets, hammering in magnetic fields, or placing in coils with direct current",
+      "Temporary magnets lose magnetism when the magnetic field is removed, permanent magnets retain their magnetism",
+      "Magnetic field lines show direction (north to south) and strength (closer lines = stronger field)",
+      "Electric charge is measured in coulombs and can be positive or negative - opposite charges attract, like charges repel",
+      "Conductors allow charge flow through free moving charged particles, insulators impede charge flow",
+      "Insulators can be electrostatically charged by friction through electron transfer between materials"
     ],
     "definitions": [
       {
-        "term": "Energy",
-        "definition": "The ability to do work"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Conservation of energy",
-        "definition": "Energy cannot be created or destroyed, only transferred from one store to another"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Work done",
-        "definition": "The energy transferred when a force moves an object through a distance"
+        "term": "Electric charge",
+        "definition": "Measured in coulombs and can be positive or negative"
       },
       {
-        "term": "Power",
-        "definition": "The rate of energy transfer or rate of doing work"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
       },
       {
-        "term": "Efficiency",
-        "definition": "The fraction of energy input that is usefully transferred"
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
+      },
+      {
+        "term": "Electrostatic charge",
+        "definition": "Electric charge at rest on the surface of insulators when charged"
       }
     ],
     "howToAnswer": [
@@ -71,17 +73,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'energy is lost' — always say 'energy is transferred to thermal energy store'",
-      "Students often forget to include units (J for energy, W for power)",
-      "Confusing power and energy — power is rate of energy transfer, not amount of energy",
-      "Writing 'energy is destroyed' instead of 'energy is transferred to less useful stores'",
-      "Forgetting to square the velocity in KE = ½mv²"
+      "Thinking magnetic materials are only attracted to one pole of a magnet - they are attracted to both poles",
+      "Confusing temporary and permanent magnets - temporary magnets lose magnetism when the field is removed",
+      "Not understanding that only electrons move during charging by friction, not positive charges",
+      "Assuming magnetic field strength is constant - it's stronger at poles and decreases with distance"
     ],
     "examinerTips": [
-      "Energy calculations appear in almost every paper — practice substitution into formulas",
-      "Always start energy transfer questions by identifying initial and final energy stores",
-      "Sankey diagrams often test energy efficiency — practice drawing these",
-      "Use conservation of energy principle to solve problems involving energy transfers"
+      "Remember magnetic field lines always point from north to south pole and never cross each other",
+      "When plotting magnetic fields, use a plotting compass or iron filings to visualise the field pattern accurately"
     ],
     "formulas": [
       "KE = ½mv²",
@@ -114,7 +113,7 @@
       "Examiner Report 2023: 'Candidates often used imprecise language like \"energy is lost\" instead of \"energy is transferred\"' — remember energy is always conserved and only transfers between stores, it is never created or destroyed"
     ],
     "keyDiagram": "Students must be able to draw Sankey diagrams showing energy flow. Draw a wide arrow on the left representing total input energy, then split into useful output (continuing straight) and wasted energy (arrow pointing downward). Width of arrows must be proportional to energy amounts. Label input energy type, useful output energy, and wasted energy (usually thermal). Include efficiency calculation: efficiency = useful output ÷ total input.",
-    "quickRecap": "Energy is stored in different stores (kinetic, gravitational potential, elastic, chemical, thermal, nuclear) and transfers between them through four pathways: mechanically, electrically, heating, or radiation. Energy is always conserved but can be transferred to less useful forms (usually thermal). Efficiency measures useful energy output compared to total input, and Sankey diagrams visualize these transfers with proportional arrow widths."
+    "quickRecap": "Magnets create magnetic fields with north and south poles that interact through attraction and repulsion. Magnetic materials can be magnetised temporarily or permanently, while non-magnetic materials show no magnetic interaction. Electric charges create forces between objects, with conductors allowing charge flow and insulators preventing it unless charged by friction."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -122,5 +121,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:15:48.554Z",
   "updated_at": "2026-04-05T21:15:48.554Z",
-  "enriched_at": "2026-04-06T16:04:12.392Z"
+  "enriched_at": "2026-04-06T16:04:12.392Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:22:24.961Z"
 }

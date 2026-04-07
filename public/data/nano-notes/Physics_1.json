@@ -9,32 +9,35 @@
     "title": "Making measurements",
     "readTime": "8 min",
     "keyPoints": [
-      "**Length** is measured using rulers, metre rules, measuring tapes, and callipers for accurate measurements",
-      "**Volume** of regular solids is calculated using length × width × height; irregular solids use displacement method",
-      "**Density** is the mass per unit volume of a substance, measured in kg/m³ or g/cm³",
-      "**Time** is measured using stopwatches, with repeated measurements taken to reduce random errors",
-      "**Parallax error** occurs when the eye is not positioned directly above the scale reading",
-      "**Systematic errors** cause all readings to be consistently higher or lower than the true value",
-      "**Random errors** cause readings to scatter around the true value and can be reduced by taking repeat readings",
-      "**Precision** refers to how close repeated measurements are to each other",
-      "**Accuracy** refers to how close a measurement is to the true value"
+      "Magnets have two poles (north and south) - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are attracted to magnets, while non-magnetic materials (glass, plastic) are not affected",
+      "Magnetic materials can be magnetised by stroking with a magnet, hammering in a magnetic field, or placing in a coil with direct current",
+      "Temporary magnets lose magnetism when the magnetic field is removed, permanent magnets retain their magnetism",
+      "Magnetic field lines show field direction (north to south) and strength (closer lines = stronger field)",
+      "Electric charge is measured in coulombs and can be positive or negative - opposite charges attract, like charges repel",
+      "Conductors allow electric charge to flow through them due to free-moving charged particles",
+      "Insulators impede electric charge flow and can gain electrostatic charge when rubbed together"
     ],
     "definitions": [
       {
-        "term": "Density",
-        "definition": "The mass per unit volume of a substance"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Parallax error",
-        "definition": "The error that occurs when the eye is not positioned directly above the scale when taking a reading"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Systematic error",
-        "definition": "An error that causes all readings to differ from the true value by the same amount"
+        "term": "Electric charge",
+        "definition": "Measured in coulombs and can be positive or negative"
       },
       {
-        "term": "Random error",
-        "definition": "An error that causes readings to scatter randomly around the true value"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
+      },
+      {
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
       }
     ],
     "howToAnswer": [
@@ -67,17 +70,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'weight per unit volume' for density — always say 'mass per unit volume'",
-      "Students often forget to include units in final answers for calculations",
-      "When measuring time, students forget that human reaction time causes errors — always take repeat readings",
-      "Confusing accuracy with precision — accuracy is closeness to true value, precision is repeatability",
-      "Not positioning eye at right angles to scale causes parallax error"
+      "Thinking that magnetic materials are only attracted to one pole of a magnet - they are attracted to both poles",
+      "Confusing temporary and permanent magnets - temporary magnets lose magnetism when the field is removed",
+      "Drawing magnetic field lines incorrectly - they must point from north to south pole",
+      "Forgetting that only electrons transfer when charging objects by friction, not positive charges"
     ],
     "examinerTips": [
-      "Measurement questions appear in almost every paper — especially density calculations",
-      "Always show working for calculations: formula, substitution, answer with units",
-      "For error questions, identify the type of error AND suggest how to reduce it",
-      "Remember to convert units correctly (cm³ to m³, g to kg) in density problems"
+      "When plotting magnetic fields, use a plotting compass or iron filings to visualise field lines accurately",
+      "Remember that magnetic field strength is shown by how close field lines are together - closer means stronger"
     ],
     "formulas": [
       "density = mass ÷ volume",
@@ -108,7 +108,7 @@
       "Examiner Report 2024: 'Parallax errors were common in practical measurements' — always position your eye perpendicular to the scale when taking readings to avoid systematic errors"
     ],
     "keyDiagram": "Essential measurement setup diagram showing: (1) Measuring instrument (ruler/meter rule) positioned parallel to the object being measured, (2) Eye position indicated at the same level as the measurement point with arrow showing perpendicular viewing angle, (3) Clear labeling of the measurement points (e.g., S₁, S₂, L), (4) Units clearly marked on the scale, (5) Any relevant apparatus like springs, cords, or bars properly positioned relative to the measuring scale.",
-    "quickRecap": "Always include correct units when recording measurements. Position your eye perpendicular to the scale to avoid parallax errors. Record to appropriate precision based on your measuring instrument (usually nearest mm). Check that measured values fall within any specified ranges given in the question."
+    "quickRecap": "Magnets have north and south poles with like poles repelling and opposite poles attracting. Magnetic materials can be temporarily or permanently magnetised, while non-magnetic materials show no interaction. Magnetic fields can be visualised using field lines that run from north to south poles. Electric charges create forces between objects, with conductors allowing charge flow and insulators preventing it."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -116,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T20:58:50.461Z",
   "updated_at": "2026-04-05T20:58:50.462Z",
-  "enriched_at": "2026-04-06T15:57:00.581Z"
+  "enriched_at": "2026-04-06T15:57:00.581Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:17:27.576Z"
 }

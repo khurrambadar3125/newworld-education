@@ -9,32 +9,40 @@
     "title": "Kinematics",
     "readTime": "8 min",
     "keyPoints": [
-      "**Displacement** is a vector quantity that measures distance moved in a straight line from initial to final position",
-      "**Velocity** is a vector quantity defined as the rate of change of displacement with respect to time",
-      "**Acceleration** is a vector quantity defined as the rate of change of velocity with respect to time",
-      "For **uniform acceleration**, use kinematic equations: v = u + at, s = ut + ½at², v² = u² + 2as, s = ½(u + v)t",
-      "In **projectile motion**, horizontal and vertical components of motion are independent of each other",
-      "For projectiles, horizontal velocity remains constant (no acceleration) while vertical motion has acceleration g downwards",
-      "At maximum height of projectile motion, vertical component of velocity is zero but horizontal component remains unchanged",
-      "**Free fall** occurs when the only force acting on an object is gravitational force, giving acceleration g = 9.81 m s⁻²",
-      "On **displacement-time graphs**, gradient gives velocity; on **velocity-time graphs**, gradient gives acceleration and area gives displacement"
+      "One radian is defined as the angle in the sector of a circle when the arc length equals the radius of the circle",
+      "A complete circle contains 2π radians, allowing conversion between degrees and radians using π/180",
+      "Angular speed (ω) = v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is time period, and f is frequency",
+      "Objects in circular motion have constantly changing velocity due to changing direction, requiring centripetal acceleration",
+      "Centripetal acceleration a = v²/r = ω²r, always directed toward the center of the circle",
+      "Centripetal force F = mv²/r = mω²r, acts perpendicular to motion toward the circle's center",
+      "Gravitational fields are areas where objects with mass experience non-contact forces",
+      "Newton's law of gravitation: F = Gm₁m₂/r², where force is proportional to mass product and inversely proportional to distance squared",
+      "Gravitational field strength g = F/m in uniform fields, and g = GM/r² in radial fields"
     ],
     "definitions": [
       {
-        "term": "Displacement",
-        "definition": "The distance moved in a straight line from the initial position to the final position, measured in a specific direction"
+        "term": "Radian",
+        "definition": "The angle in the sector of a circle when the arc length of that sector is equal to the radius of the circle"
       },
       {
-        "term": "Velocity",
-        "definition": "The rate of change of displacement with respect to time"
+        "term": "Angular displacement",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "Acceleration",
-        "definition": "The rate of change of velocity with respect to time"
+        "term": "Angular speed",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Projectile motion",
-        "definition": "The motion of an object that is launched into the air and moves under the influence of gravity alone"
+        "term": "Centripetal acceleration",
+        "definition": "The acceleration of an object moving in a circular path, always directed toward the center of the circle"
+      },
+      {
+        "term": "Centripetal force",
+        "definition": "The force that acts perpendicular to the motion of an object moving in a circle, always toward the center"
+      },
+      {
+        "term": "Gravitational field strength",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       }
     ],
     "howToAnswer": [
@@ -66,17 +74,15 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse distance with displacement - displacement can be zero even when distance travelled is large",
-      "Students often forget that at maximum height of projectile, only vertical velocity is zero, not total velocity",
-      "Never use kinematic equations when acceleration is not constant",
-      "Students commonly mix up horizontal and vertical components in projectile motion calculations",
-      "Never forget to resolve initial velocity into components for projectile motion problems"
+      "Confusing degrees and radians - remember to convert using π/180",
+      "Thinking centripetal force acts outward instead of toward the center of the circle",
+      "Forgetting that objects in uniform circular motion are accelerating despite constant speed",
+      "Not recognizing that gravitational force follows an inverse square relationship with distance",
+      "Assuming gravitational field strength is constant everywhere rather than varying with distance in radial fields"
     ],
     "examinerTips": [
-      "Kinematics appears in every Paper 2 and often in Paper 1 multiple choice",
-      "Always draw a clear diagram showing direction of motion and forces for projectile questions",
-      "Remember to check if your displacement answer makes physical sense (positive/negative direction)",
-      "For graph questions, always label axes with quantities and units clearly"
+      "Always check if angles are required in radians or degrees and convert appropriately",
+      "Remember that uniform spheres can be treated as point masses at their centers when calculating gravitational forces outside the sphere"
     ],
     "formulas": [
       "v = u + at",
@@ -111,7 +117,7 @@
       "Examiner Report 2021: 'Common error was using wrong sign for acceleration due to gravity' — remember g is negative when opposing motion direction, positive when supporting it"
     ],
     "keyDiagram": "Students must draw and label velocity-time graphs showing: (1) straight line for constant acceleration with gradient representing acceleration, (2) area under line representing displacement, (3) clearly marked axes with units (time in seconds, velocity in m/s), (4) ability to sketch curves for non-uniform acceleration. Include labeled points for initial velocity, final velocity, and time intervals.",
-    "quickRecap": "Kinematics describes motion using displacement, velocity and acceleration without considering forces. Use s=ut+½at², v=u+at, and v²=u²+2as for constant acceleration. Velocity is speed with direction; acceleration is rate of change of velocity. Always check units and signs, especially for gravity problems."
+    "quickRecap": "Circular motion involves angular displacement, speed, and acceleration measured in radians. Objects in circular motion experience centripetal acceleration (v²/r) requiring centripetal force (mv²/r) toward the center. Gravitational fields create forces between masses following Newton's law F = Gm₁m₂/r². Field strength varies as g = GM/r² in radial fields but remains constant in uniform fields."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -119,5 +125,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:39:10.066Z",
   "updated_at": "2026-04-06T04:39:10.066Z",
-  "enriched_at": "2026-04-06T16:11:36.643Z"
+  "enriched_at": "2026-04-06T16:11:36.643Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:30:36.075Z"
 }

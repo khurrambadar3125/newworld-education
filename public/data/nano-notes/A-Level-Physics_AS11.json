@@ -9,31 +9,36 @@
     "title": "Particle physics",
     "readTime": "8 min",
     "keyPoints": [
-      "**Fundamental particles** are the basic building blocks of matter that cannot be broken down further into smaller components",
-      "**Quarks** are fundamental particles that combine to form hadrons, with six types (flavours): up, down, strange, charm, bottom, top",
-      "**Leptons** are fundamental particles that do not experience the strong nuclear force, including electrons, muons, taus and their associated neutrinos",
-      "**Baryons** are hadrons composed of three quarks (e.g. protons and neutrons) and have baryon number +1",
-      "**Mesons** are hadrons composed of one quark and one antiquark, and have baryon number 0",
-      "**Antimatter** consists of antiparticles that have the same mass but opposite charge and other quantum numbers compared to their corresponding particles",
-      "**Conservation laws** must be obeyed in all particle interactions: conservation of charge, baryon number, lepton number and energy-momentum",
-      "The **Standard Model** classifies all known particles into quarks, leptons and gauge bosons (force carriers)"
+      "One radian is defined as the angle in the sector of a circle when the arc length equals the radius of the circle",
+      "Angular speed (ω) can be calculated using ω = v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is time period, and f is frequency",
+      "An object moving in circular motion at constant speed has constantly changing velocity due to changing direction, therefore it must be accelerating",
+      "Centripetal force always acts perpendicular to the motion towards the centre of the circle",
+      "Centripetal acceleration is given by a = v²/r = ω²r",
+      "Centripetal force is calculated using F = mv²/r = mω²r",
+      "A gravitational field is an area where objects with mass experience a non-contact force",
+      "Newton's law of gravitation states F = Gm₁m₂/r², where force is directly proportional to the product of masses and inversely proportional to the square of distance",
+      "Gravitational field strength in a radial field follows g = GM/r², showing an inverse square relationship"
     ],
     "definitions": [
       {
-        "term": "Hadron",
-        "definition": "A particle made up of quarks that experiences the strong nuclear force"
+        "term": "Radian",
+        "definition": "The angle in the sector of a circle when the arc length of that sector is equal to the radius of the circle"
       },
       {
-        "term": "Baryon number",
-        "definition": "A quantum number that is +1 for baryons, -1 for antibaryons, and 0 for all other particles"
+        "term": "Angular displacement (θ)",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "Lepton number",
-        "definition": "A quantum number that is +1 for leptons, -1 for antileptons, and 0 for all other particles"
+        "term": "Angular speed (ω)",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Antiparticle",
-        "definition": "A particle with the same mass but opposite charge and quantum numbers to its corresponding particle"
+        "term": "Centripetal force",
+        "definition": "The force that acts perpendicular to the motion of an object moving in a circle, always directed towards the centre of the circle"
+      },
+      {
+        "term": "Gravitational field strength (g)",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       }
     ],
     "howToAnswer": [
@@ -65,17 +70,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'atoms are fundamental' — quarks and leptons are the truly fundamental particles",
-      "Students often confuse baryons and mesons — remember baryons have 3 quarks, mesons have 1 quark + 1 antiquark",
-      "Don't forget that antiparticles have opposite quantum numbers, not just opposite charge",
-      "Always check ALL conservation laws in particle interactions, not just one or two",
-      "Never say 'protons are made of electrons' — protons contain quarks, not leptons"
+      "Forgetting to convert degrees to radians by multiplying by π/180",
+      "Thinking that constant speed in circular motion means no acceleration - velocity is constantly changing due to changing direction",
+      "Confusing the direction of centripetal force - it always acts towards the centre, not away from it",
+      "Not recognizing that gravitational field strength follows an inverse square relationship with distance"
     ],
     "examinerTips": [
-      "Particle physics appears frequently in Paper 4 Section A with 2-3 marks per question",
-      "Always show working when checking conservation laws for full marks",
-      "Learn quark compositions: proton (uud), neutron (udd), pion (ud̄ or dū)",
-      "Remember that neutrinos are leptons, not quarks"
+      "Remember that centripetal acceleration and force have two equivalent forms: a = v²/r = ω²r and F = mv²/r = mω²r",
+      "When calculating gravitational forces, treat uniform spheres as point masses at their centres for objects outside the sphere"
     ],
     "formulas": [],
     "keyDiagramDescription": "Standard Model chart showing three generations of quarks and leptons, with their charges and masses, plus the four fundamental forces and their gauge bosons",
@@ -103,7 +105,7 @@
       "Examiner Report 2021: 'Common error was stating that neutrons have no effect on atomic mass' — emphasize that neutrons contribute significantly to atomic mass despite having no charge"
     ],
     "keyDiagram": "Students must be able to draw a simple atomic structure diagram showing: nucleus at center (labeled with protons and neutrons), electron shells/energy levels as circles around nucleus (not as orbital paths), correct relative sizes (nucleus much smaller than atom), and proper labeling of all particles with their charges (+1 for protons, 0 for neutrons, -1 for electrons). Include mass numbers and atomic numbers for specific examples.",
-    "quickRecap": "Atoms contain protons (+1 charge, mass 1u) and neutrons (0 charge, mass 1u) in the nucleus, with electrons (-1 charge, negligible mass) in energy levels around it. Isotopes have same proton number but different neutron numbers. Radioactive decay involves nuclear particles changing - alpha decay emits helium nuclei, beta decay involves neutron/proton conversion. Conservation laws apply to all nuclear reactions."
+    "quickRecap": "Circular motion involves angular displacement measured in radians and angular speed related to linear speed by ω = v/r. Objects in circular motion experience centripetal acceleration towards the centre, requiring centripetal force. Gravitational fields exert forces on masses according to Newton's law of gravitation, with field strength following an inverse square relationship with distance."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -111,5 +113,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:42:20.767Z",
   "updated_at": "2026-04-06T04:42:20.767Z",
-  "enriched_at": "2026-04-06T16:11:14.604Z"
+  "enriched_at": "2026-04-06T16:11:14.604Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:30:20.203Z"
 }

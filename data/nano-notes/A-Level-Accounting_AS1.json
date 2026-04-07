@@ -9,37 +9,41 @@
     "title": "Financial accounting fundamentals",
     "readTime": "8 min",
     "keyPoints": [
-      "**Accounting equation**: Assets = Capital + Liabilities must always balance after every transaction",
-      "**Double entry** principle states that every transaction affects two accounts with equal and opposite entries",
-      "**Debit** entries record increases in assets and expenses, decreases in liabilities, capital and income",
-      "**Credit** entries record increases in liabilities, capital and income, decreases in assets and expenses",
-      "**Books of prime entry** are the first books where transactions are recorded before posting to the ledger",
-      "**Trial balance** is a list of all ledger account balances to check the arithmetical accuracy of double entry",
-      "**Sales day book** records all credit sales transactions chronologically",
-      "**Purchases day book** records all credit purchases transactions chronologically",
-      "**Cash book** records all cash and bank transactions and forms part of the double entry system",
-      "**General journal** records transactions that cannot be recorded in other books of prime entry"
+      "Financial statements provide information about financial position, financial performance and cash flows useful to users in making economic decisions",
+      "Financial statements include information about assets, liabilities, equity, income and expenses, contributions by and distributions to owners, and cash flows",
+      "Manufacturing account is prepared at the end of a financial period to calculate the production cost of manufactured goods",
+      "Manufacturing account only includes factory and actual manufacturing process information - administration, finance and distribution costs go in the Income Statement",
+      "Cost of production is calculated by adding factory overheads to prime cost",
+      "Prime cost (direct cost) is the total of direct materials, direct labour and direct expenses",
+      "Factory overheads (indirect costs) include costs from running the factory such as indirect factory wages and depreciation of factory machinery",
+      "Transfer price is the production cost of completed goods plus a percentage mark-up",
+      "Factory/manufacturing profit is the difference between the transfer price and the production cost of completed goods",
+      "Work in progress represents inventory of partly finished goods in the factory at any point in time"
     ],
     "definitions": [
       {
-        "term": "Double entry",
-        "definition": "A system of bookkeeping where every transaction is recorded twice with equal debits and credits"
+        "term": "Manufacturing account",
+        "definition": "An account prepared at the end of a financial period to calculate the production cost of manufactured goods"
       },
       {
-        "term": "Trial balance",
-        "definition": "A list of all ledger account balances at a specific date to test the arithmetical accuracy of the books"
+        "term": "Prime cost/Direct cost",
+        "definition": "The total of direct materials, direct labour, and direct expenses"
       },
       {
-        "term": "Books of prime entry",
-        "definition": "Books where transactions are first recorded before being posted to the ledger accounts"
+        "term": "Factory overheads/Indirect costs",
+        "definition": "Costs incurred from the running of the factory, including indirect factory wages and depreciation of factory machinery"
       },
       {
-        "term": "Accounting equation",
-        "definition": "Assets equals Capital plus Liabilities - the fundamental equation that must always balance"
+        "term": "Transfer price",
+        "definition": "The production cost of completed goods plus a percentage mark-up"
       },
       {
-        "term": "Posting",
-        "definition": "The process of transferring entries from books of prime entry to the relevant ledger accounts"
+        "term": "Factory profit",
+        "definition": "Percentage added to the factory cost of production to arrive at the transfer price"
+      },
+      {
+        "term": "Work in progress",
+        "definition": "Inventory of partly finished goods in the factory at any point in time"
       }
     ],
     "howToAnswer": [
@@ -71,17 +75,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say trial balance 'proves accounts are correct' — it only tests arithmetical accuracy, not completeness or accuracy of transactions",
-      "Students often forget that cash book is both a book of prime entry AND part of the ledger system",
-      "Never debit liabilities or credit assets when they increase — this reverses the double entry rules",
-      "Students confuse sales day book with sales account — day book is just a list, not part of double entry",
-      "Never say 'balance sheet equation' — always use 'accounting equation'"
+      "Including administration, finance and distribution costs in the manufacturing account instead of the Income Statement",
+      "Confusing prime cost with total production cost - prime cost excludes factory overheads",
+      "Not understanding that manufacturing profit is the difference between transfer price and production cost",
+      "Mixing up direct costs (prime cost components) with indirect costs (factory overheads)"
     ],
     "examinerTips": [
-      "Trial balance questions appear in almost every Paper 1 and Paper 2",
-      "Always check that your trial balance totals are equal — unequal totals lose marks",
-      "Learn the DEAD CLIC rule: Debits - Expenses, Assets, Drawings; Credits - Liabilities, Income, Capital",
-      "Books of prime entry are frequently tested — know the purpose of each book"
+      "Remember the formula: Cost of production = prime cost + factory overheads",
+      "Clearly separate factory costs (manufacturing account) from other business costs (Income Statement)"
     ],
     "formulas": [
       "Assets = Capital + Liabilities",
@@ -113,7 +114,7 @@
       "Examiner Report 2023: 'Students often forgot to include proper headings and dates in financial statements' — always include business name, statement type, and period/date in your heading for full marks"
     ],
     "keyDiagram": "Students must be able to draw the Accounting Equation triangle showing Assets at the top, with Capital and Liabilities at the bottom two corners. Include the formula Assets = Capital + Liabilities in the center. Add arrows showing how increases/decreases in one element affect the others. Label each section with examples: Assets (Cash, Stock, Equipment), Capital (Owner's investment, Retained profits), Liabilities (Creditors, Loans). This diagram is essential for understanding double-entry principles and balance sheet preparation.",
-    "quickRecap": "Financial accounting follows the fundamental equation: Assets = Capital + Liabilities. All transactions are recorded using double-entry bookkeeping (every debit has a corresponding credit). The trial balance proves arithmetical accuracy with total debits equaling total credits. Financial statements (Trading Account, Profit & Loss Account, Balance Sheet) are prepared from the trial balance to show business performance and financial position."
+    "quickRecap": "Financial statements provide crucial information about an entity's financial position and performance to various users. Manufacturing accounts specifically calculate production costs by adding factory overheads to prime cost (direct materials, labour and expenses). The manufacturing account only includes factory-related costs, while other business expenses appear in the Income Statement."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -121,5 +122,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:24:02.338Z",
   "updated_at": "2026-04-06T05:24:02.340Z",
-  "enriched_at": "2026-04-06T16:08:14.809Z"
+  "enriched_at": "2026-04-06T16:08:14.809Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T03:00:09.928Z"
 }

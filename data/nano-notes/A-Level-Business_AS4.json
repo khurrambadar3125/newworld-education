@@ -9,36 +9,22 @@
     "title": "Operations and project management",
     "readTime": "8 min",
     "keyPoints": [
-      "**Operations management** involves planning, organizing and controlling the production process to transform inputs into outputs efficiently",
-      "**Capacity utilization** = (current output ÷ maximum possible output) × 100 - measures how much of maximum capacity is being used",
-      "**Inventory management** balances holding costs against stockout costs using techniques like Just-in-Time (JIT) and Economic Order Quantity (EOQ)",
-      "**Quality control** involves checking finished products for defects, while **quality assurance** prevents defects through systematic processes",
-      "**Lean production** eliminates waste (muda) through techniques including JIT, Kaizen, and Total Quality Management (TQM)",
-      "**Project management** uses tools like Gantt charts and Critical Path Analysis (CPA) to plan, monitor and control one-off activities",
-      "**Capacity strategies** include capacity leading demand (anticipates growth), capacity lagging demand (reactive), or capacity matching demand",
-      "**Buffer inventory** provides safety stock to prevent stockouts, while **pipeline inventory** covers goods in transit",
-      "**Continuous improvement (Kaizen)** involves small, incremental changes made by employees to improve efficiency and quality"
+      "Operations and project management is Unit 4 of A Level Business, covering chapters 22-27",
+      "The nature of operations (Chapter 22) forms the foundation of operations management",
+      "Operations planning (Chapter 23) involves strategic preparation for production processes",
+      "Inventory management (Chapter 24) deals with stock control and management systems",
+      "Capacity utilisation (Chapter 25) is an A Level only topic focusing on productive capacity",
+      "Lean production and quality management (Chapter 26) are advanced A Level concepts",
+      "Project management (Chapter 27) is exclusively covered at A Level standard"
     ],
     "definitions": [
       {
         "term": "Operations management",
-        "definition": "The planning, organizing and controlling of the production process to convert inputs into outputs as efficiently as possible"
+        "definition": "The management of business processes involved in producing goods and services, covered in Unit 4 of the Cambridge A Level Business curriculum"
       },
       {
-        "term": "Capacity utilization",
-        "definition": "The percentage of maximum possible output that is actually being achieved by a business"
-      },
-      {
-        "term": "Lean production",
-        "definition": "A production methodology that focuses on minimizing waste while maintaining productivity and quality"
-      },
-      {
-        "term": "Just-in-Time (JIT)",
-        "definition": "A production strategy where materials and components arrive exactly when needed in the production process"
-      },
-      {
-        "term": "Critical Path Analysis",
-        "definition": "A project management technique that identifies the longest sequence of dependent activities and calculates the minimum time needed to complete a project"
+        "term": "Project management",
+        "definition": "An A Level topic within operations management that deals with planning, organizing and managing resources to achieve specific project goals"
       }
     ],
     "howToAnswer": [
@@ -73,17 +59,13 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse quality control (checking finished products) with quality assurance (preventing defects in the process)",
-      "Students often say JIT 'has no inventory' - it minimizes inventory but some buffer stock may still be needed",
-      "Don't confuse capacity with capacity utilization - capacity is maximum output, utilization is percentage actually achieved",
-      "Avoid saying lean production 'reduces costs' without explaining which specific costs (inventory, waste, quality)",
-      "Never describe Kaizen as 'big changes' - it specifically refers to small, continuous improvements"
+      "Confusing AS Level topics with A Level only content - capacity utilisation, lean production and project management are A Level exclusive",
+      "Not understanding that operations management spans multiple interconnected chapters (22-27)",
+      "Overlooking that inventory management and operations planning are foundational topics for both AS and A Level"
     ],
     "examinerTips": [
-      "Operations questions appear in every Paper 2 - often worth 8-12 marks total",
-      "Always use calculations for capacity utilization questions - show your working for method marks",
-      "Draw network diagrams for CPA questions and clearly identify the critical path",
-      "Use business context when explaining operations concepts - relate to the business in the case study"
+      "Focus on the distinction between AS Level operations topics (nature of operations, operations planning, inventory management) and A Level extensions",
+      "Remember that lean production, quality management, capacity utilisation and project management require deeper A Level analysis"
     ],
     "formulas": [
       "Capacity utilization = (Current output ÷ Maximum output) × 100",
@@ -114,7 +96,7 @@
       "Examiner Report 2023: 'Critical path analysis answers lacked proper network diagrams' — always draw the network diagram first before attempting calculations, and clearly label earliest/latest times on nodes"
     ],
     "keyDiagram": "Network diagram for critical path analysis showing circular nodes for events connected by arrows representing activities. Each activity arrow should be labeled with activity letter and duration. Nodes should show earliest start time (top) and latest finish time (bottom). Critical path should be highlighted in bold or different color. Include dummy activities as dashed lines where needed to show dependencies correctly.",
-    "quickRecap": "Operations management focuses on transforming inputs into outputs efficiently through job, batch, or flow production methods. Key techniques include lean production (JIT, kaizen) to reduce waste and critical path analysis to manage project timelines. Quality control involves inspection and quality assurance systems. Location decisions consider costs, markets, and resources while technology improves productivity but requires investment."
+    "quickRecap": "Unit 4 covers operations and project management across six chapters. The unit progresses from basic operations concepts suitable for AS Level to advanced A Level topics. Key areas include operations planning, inventory control, and advanced concepts like lean production and project management for A Level students."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -122,5 +104,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:12:10.419Z",
   "updated_at": "2026-04-06T05:12:10.419Z",
-  "enriched_at": "2026-04-06T16:08:17.208Z"
+  "enriched_at": "2026-04-06T16:08:17.208Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T03:02:47.745Z"
 }

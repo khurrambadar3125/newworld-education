@@ -9,37 +9,43 @@
     "title": "Thermodynamics",
     "readTime": "8 min",
     "keyPoints": [
-      "**First law of thermodynamics**: The increase in internal energy of a system equals the sum of heat supplied to the system and work done on the system (ΔU = Q + W)",
-      "**Internal energy** is the sum of the random kinetic and potential energies of molecules in a system",
-      "**Specific heat capacity** is the energy required per unit mass to raise temperature by 1K (or 1°C)",
-      "**Specific latent heat of fusion** is the energy required per unit mass to change solid to liquid at constant temperature",
-      "**Specific latent heat of vaporization** is the energy required per unit mass to change liquid to gas at constant temperature",
-      "Work done by a gas during expansion equals the area under a pressure-volume graph",
-      "For an **ideal gas**: internal energy depends only on temperature and is directly proportional to absolute temperature",
-      "During **isothermal process**: temperature remains constant so ΔU = 0, therefore Q = -W",
-      "During **adiabatic process**: no heat transfer occurs so Q = 0, therefore ΔU = W",
-      "**Cyclic process**: system returns to initial state so net change in internal energy is zero"
+      "One radian is defined as the angle in the sector of a circle when the arc length equals the radius of the circle",
+      "Angular speed ω = v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is time period, and f is frequency",
+      "An object in uniform circular motion has constantly changing velocity due to changing direction, requiring centripetal acceleration",
+      "Centripetal force always acts perpendicular to motion towards the center of the circle",
+      "Centripetal acceleration a = v²/r = ω²r, and centripetal force F = mv²/r = mω²r",
+      "Gravitational fields are areas where objects with mass experience non-contact forces",
+      "Newton's law of gravitation: F = Gm₁m₂/r², where force is proportional to product of masses and inversely proportional to square of distance",
+      "Gravitational field strength g = F/m in uniform fields, and g = GM/r² in radial fields"
     ],
     "definitions": [
       {
-        "term": "First law of thermodynamics",
-        "definition": "The increase in internal energy of a system equals the sum of heat supplied to the system and work done on the system"
+        "term": "Radian",
+        "definition": "The angle in a sector of a circle when the arc length equals the radius of the circle"
       },
       {
-        "term": "Internal energy",
-        "definition": "The sum of the random kinetic and potential energies of molecules in a system"
+        "term": "Angular displacement",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "Specific heat capacity",
-        "definition": "The energy required per unit mass to raise the temperature by 1K"
+        "term": "Angular speed",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Specific latent heat",
-        "definition": "The energy required per unit mass to change the state of a substance at constant temperature"
+        "term": "Centripetal acceleration",
+        "definition": "The acceleration experienced by an object moving in a circular path at constant speed, always directed toward the center"
       },
       {
-        "term": "Isothermal process",
-        "definition": "A thermodynamic process in which temperature remains constant"
+        "term": "Centripetal force",
+        "definition": "The force that acts perpendicular to motion toward the center of the circle, causing circular motion"
+      },
+      {
+        "term": "Gravitational field",
+        "definition": "An area where objects with mass experience a non-contact force"
+      },
+      {
+        "term": "Gravitational field strength",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       }
     ],
     "howToAnswer": [
@@ -72,17 +78,15 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse work done BY the gas (negative) with work done ON the gas (positive) - expansion means work BY gas",
-      "Students often forget that internal energy of ideal gas depends ONLY on temperature, not pressure or volume",
-      "Never say 'heat capacity' when you mean 'specific heat capacity' - must specify per unit mass",
-      "Students confuse latent heat of fusion with vaporization - fusion is solid→liquid, vaporization is liquid→gas",
-      "Never use ΔU = mcΔT during phase changes - temperature is constant so use ΔU = ml instead"
+      "Confusing degrees with radians - remember to convert using π/180",
+      "Thinking that uniform circular motion has zero acceleration because speed is constant",
+      "Forgetting that centripetal force always points toward the center, not in the direction of motion",
+      "Assuming gravitational field strength is constant everywhere - it varies in radial fields",
+      "Not recognizing that uniform spheres act as point masses at their center for external calculations"
     ],
     "examinerTips": [
-      "First law of thermodynamics appears in almost every Paper 4 and frequently in Paper 2",
-      "Always check signs carefully: Q positive when heat supplied TO system, W negative when work done BY system",
-      "For P-V diagrams, clockwise cycles do net work (area), anticlockwise cycles have work done on them",
-      "When calculating work from P-V graphs, count squares carefully and state the scale used"
+      "Remember the inverse square relationship for gravitational field strength - if distance doubles, field strength decreases by factor of 4",
+      "Use the correct formula for centripetal force depending on given quantities: F = mv²/r when given speed and radius, F = mω²r when given angular speed"
     ],
     "formulas": [
       "ΔU = Q + W",
@@ -116,7 +120,7 @@
       "Examiner Report 2021: 'Common error was stating that adiabatic means no temperature change' — remember that adiabatic means no heat transfer (Q = 0), while isothermal means no temperature change (ΔT = 0)"
     ],
     "keyDiagram": "Students must be able to draw P-V diagrams showing different thermodynamic processes: isothermal curves (hyperbolic shape, PV = constant), adiabatic curves (steeper than isothermal, PVᵞ = constant), isochoric lines (vertical lines at constant volume), and isobaric lines (horizontal lines at constant pressure). Include arrows showing direction of process, label axes clearly with units, and shade areas under curves to represent work done. For cyclic processes, show the complete loop with clockwise direction for heat engines.",
-    "quickRecap": "First Law: ΔU = Q - W (internal energy change equals heat supplied minus work done by system). Remember sign conventions: Q positive when heat enters system, W positive when system does work on surroundings. For ideal gases: isothermal (T constant, W = nRT ln(Vf/Vi)), adiabatic (Q = 0, W = ΔU), isochoric (V constant, W = 0), isobaric (P constant, W = PΔV). Heat engine efficiency η = W/Qh, maximum efficiency is Carnot efficiency."
+    "quickRecap": "Circular motion involves angular displacement measured in radians and requires centripetal force directed toward the center. Objects experience centripetal acceleration even at constant speed due to changing direction. Gravitational fields exert forces on masses, with strength following Newton's law of gravitation and inverse square relationships in radial fields."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -124,5 +128,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:44:12.489Z",
   "updated_at": "2026-04-06T04:44:12.489Z",
-  "enriched_at": "2026-04-06T16:09:01.300Z"
+  "enriched_at": "2026-04-06T16:09:01.300Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:28:35.999Z"
 }

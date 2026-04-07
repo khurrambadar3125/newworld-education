@@ -9,35 +9,34 @@
     "title": "Psychology and organisations",
     "readTime": "8 min",
     "keyPoints": [
-      "**Organisation** is a group of people working together towards common goals with defined roles and hierarchy",
-      "**Motivation** can be intrinsic (internal satisfaction) or extrinsic (external rewards like money or promotion)",
-      "Maslow's hierarchy suggests employees are motivated by physiological, safety, social, esteem and self-actualisation needs in sequence",
-      "**Leadership styles** include autocratic (leader makes all decisions), democratic (group participation in decisions) and laissez-faire (minimal leader intervention)",
-      "Job **satisfaction** is influenced by factors such as pay, working conditions, relationships with colleagues and opportunities for advancement",
-      "**Group dynamics** involve processes like social loafing (reduced effort in groups), groupthink (conformity leading to poor decisions) and social facilitation (improved performance when observed)",
-      "Hawthorne effect demonstrates that worker productivity increases when they know they are being observed or studied",
-      "Theory X managers assume workers are lazy and need control, while Theory Y managers assume workers are self-motivated and responsible"
+      "The biological approach views humans as biological organisms made up of physiological processes, with all thoughts and cognitive processes having biological origins",
+      "Heritability coefficients quantify the genetic basis of characteristics - IQ has a coefficient of 0.5 according to Plomin, showing equal influence of nature and nurture",
+      "Genotype is an individual's genetic make-up, while phenotype is the physical expression of their genotype",
+      "Two people may have the same genotype but different phenotypes due to personal choices or epigenetic influences",
+      "Epigenetics involves changes in gene expression without altering genetic make-up, through environmental factors like diet and pollution",
+      "Natural selection is the mechanism of evolution where genetically-determined behaviours giving selective advantages are passed to future generations",
+      "Drug treatments target specific genes or alter neurotransmitter levels, such as dopamine antagonists like Chlorpromazine for schizophrenia"
     ],
     "definitions": [
       {
-        "term": "Organisation",
-        "definition": "A structured group of people working together to achieve specific goals through coordinated activities and defined roles"
+        "term": "Behaviour genetics",
+        "definition": "The study of the influence of an organism's genetic composition on its behaviour and the interaction of heredity and environment insofar as they affect behaviour"
       },
       {
-        "term": "Motivation",
-        "definition": "The internal and external factors that drive behaviour and determine the direction, intensity and persistence of effort"
+        "term": "Genotype",
+        "definition": "An individual's genetic make-up, where a gene is a short section of DNA coding for specific proteins"
       },
       {
-        "term": "Leadership",
-        "definition": "The process of influencing and directing others to achieve organisational goals through guidance and decision-making"
+        "term": "Phenotype",
+        "definition": "The physical expression of an individual's genotype"
       },
       {
-        "term": "Job satisfaction",
-        "definition": "The positive emotional state resulting from an employee's evaluation of their work experience and working conditions"
+        "term": "Epigenetics",
+        "definition": "A change in gene expression, without altering an individual's genetic make-up"
       },
       {
-        "term": "Group dynamics",
-        "definition": "The psychological processes and behaviours that occur within and between groups in organisational settings"
+        "term": "Natural selection",
+        "definition": "The mechanism of evolution where genetically-determined behaviour giving selective advantage increases chances of survival and reproduction"
       }
     ],
     "howToAnswer": [
@@ -70,18 +69,14 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse motivation with job satisfaction — motivation drives behaviour, satisfaction is the emotional outcome",
-      "Students often describe leadership styles without explaining their effects on worker behaviour",
-      "Avoid saying 'Maslow's theory is wrong' — instead evaluate with phrases like 'limited cultural validity'",
-      "Don't just list factors affecting satisfaction — always explain HOW they influence worker feelings",
-      "Never use 'worker' and 'employee' interchangeably without considering context — be precise with terminology"
+      "Confusing genotype and phenotype - remember genotype is genetic make-up while phenotype is physical expression",
+      "Assuming twin studies can clearly separate nature vs nurture effects when MZ twins often share similar environments",
+      "Forgetting that epigenetics changes gene expression without changing the actual genetic code",
+      "Not understanding that heritability coefficients show the proportion of genetic influence on traits"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2 Section B questions worth 8-12 marks",
-      "Always use real workplace examples when evaluating theories (e.g., Pakistani banks, textile factories)",
-      "Link group dynamics to productivity outcomes for higher marks",
-      "Compare different motivation theories rather than describing them separately",
-      "Use evaluation phrases: 'However, a limitation is...' and 'Furthermore, research by... supports this because...'"
+      "Use specific examples like Plomin's IQ heritability coefficient of 0.5 to demonstrate understanding of genetic influence",
+      "Consider both strengths (practical drug applications) and limitations (biological determinism implications) when evaluating the approach"
     ],
     "formulas": [],
     "keyDiagramDescription": "Maslow's hierarchy pyramid showing five levels from bottom: physiological needs, safety needs, social needs, esteem needs, self-actualisation needs. Include examples for each level in workplace context.",
@@ -109,7 +104,7 @@
       "Examiner Report 2023: 'Candidates frequently mixed up Herzberg's motivators and hygiene factors' — remember hygiene factors prevent dissatisfaction while motivators create satisfaction"
     ],
     "keyDiagram": "Maslow's Hierarchy Pyramid in workplace context: Draw a triangle divided into 5 levels from bottom to top: (1) Physiological - salary, breaks; (2) Safety - job security, safe working conditions; (3) Social - teamwork, company events; (4) Esteem - recognition, promotions; (5) Self-actualization - challenging projects, creativity. Include arrows showing progression upward and examples of how organizations can address each level.",
-    "quickRecap": "Organizational psychology applies motivational theories (Maslow's hierarchy, Herzberg's two-factor) and leadership styles to improve workplace effectiveness. Maslow focuses on meeting employee needs from basic (pay/security) to advanced (recognition/growth). Herzberg distinguishes between hygiene factors (prevent dissatisfaction) and motivators (create satisfaction). Different leadership styles (autocratic, democratic, laissez-faire) suit different situations and organizational cultures."
+    "quickRecap": "The biological approach explains behaviour through physiological processes, genes, hormones and neurotransmitters. It distinguishes between genotype (genetic make-up) and phenotype (physical expression), recognising that environmental factors can influence gene expression through epigenetics. Natural selection explains how beneficial genetic traits are passed down through generations, and this understanding has practical applications in developing drug treatments for mental health conditions."
   },
   "read_time_minutes": 8,
   "key_points_count": 8,
@@ -117,5 +112,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:23:39.372Z",
   "updated_at": "2026-04-06T05:23:39.372Z",
-  "enriched_at": "2026-04-06T16:07:01.567Z"
+  "enriched_at": "2026-04-06T16:07:01.567Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:57:24.063Z"
 }

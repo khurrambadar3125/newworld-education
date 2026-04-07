@@ -9,37 +9,40 @@
     "title": "The nuclear atom",
     "readTime": "8 min",
     "keyPoints": [
-      "**Atoms** consist of a small, dense nucleus surrounded by electrons in shells or energy levels",
-      "The **nucleus** contains protons and neutrons and is positively charged due to the protons",
-      "**Protons** have a positive charge (+1) and relative mass of 1, located in the nucleus",
-      "**Neutrons** have no charge (neutral) and relative mass of 1, located in the nucleus",
-      "**Electrons** have a negative charge (-1) and negligible mass, orbiting the nucleus in shells",
-      "The **atomic number** (Z) equals the number of protons in the nucleus",
-      "The **mass number** (A) equals the total number of protons and neutrons in the nucleus",
-      "**Isotopes** are atoms of the same element with the same number of protons but different numbers of neutrons",
-      "Atoms are **electrically neutral** because the number of protons equals the number of electrons",
-      "The diameter of the nucleus is about 10,000 times smaller than the diameter of the atom"
+      "Magnets have a north pole and south pole - like poles repel, opposite poles attract",
+      "Magnetic materials (iron, steel, cobalt, nickel) are attracted to magnets, non-magnetic materials (glass, plastic) are not",
+      "Magnetic materials can be magnetized by stroking with a magnet, hammering in a magnetic field, or placing in a coil with direct current",
+      "Temporary magnets lose magnetism when the magnetic field is removed, permanent magnets do not",
+      "Electromagnets are temporary magnets made by placing soft iron in coiled wire with direct current",
+      "Magnetic field lines show strength and direction - closer lines indicate stronger field, arrows point from north to south pole",
+      "Electric charge is measured in coulombs and can be positive or negative - like charges repel, opposite charges attract",
+      "Conductors allow electric charge to flow through them, insulators impede the flow of electric charge",
+      "Insulators can be electrostatically charged by friction through transfer of electrons"
     ],
     "definitions": [
       {
-        "term": "Nucleus",
-        "definition": "The small, dense, positively charged center of an atom containing protons and neutrons"
+        "term": "Magnet",
+        "definition": "A material or object that produces a magnetic field"
       },
       {
-        "term": "Atomic number",
-        "definition": "The number of protons in the nucleus of an atom"
+        "term": "Magnetic field",
+        "definition": "A region in which a magnetic pole experiences the force from another magnet or magnetic material"
       },
       {
-        "term": "Mass number",
-        "definition": "The total number of protons and neutrons in the nucleus of an atom"
+        "term": "Electric charge",
+        "definition": "Measured in coulombs and can be positive or negative"
       },
       {
-        "term": "Isotope",
-        "definition": "Atoms of the same element that have the same number of protons but different numbers of neutrons"
+        "term": "Conductors",
+        "definition": "Materials which allow electric charge to flow through them because they have charged particles that are free to move"
       },
       {
-        "term": "Ion",
-        "definition": "An atom that has gained or lost electrons and therefore has a net electric charge"
+        "term": "Insulators",
+        "definition": "Materials which impede the flow of electric charge because they don't have charged particles that are free to move"
+      },
+      {
+        "term": "Electrostatic charge",
+        "definition": "Electric charge at rest on the surface of charged insulators"
       }
     ],
     "howToAnswer": [
@@ -72,17 +75,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say electrons are 'in' the nucleus — they orbit around it in shells",
-      "Students often confuse mass number with atomic number — mass number includes neutrons",
-      "Never say atoms have 'no mass' — they have very small mass, mostly in the nucleus",
-      "Don't forget that ions have unequal numbers of protons and electrons",
-      "Students incorrectly think neutrons have negative charge — they are neutral (no charge)"
+      "Confusing the force between magnets and magnetic materials - the force is always attractive between a magnet and magnetic material regardless of pole",
+      "Thinking magnetic field lines point from south to north instead of north to south",
+      "Assuming permanent magnets can be turned on and off like temporary magnets",
+      "Believing that both positive and negative charges move during charging, when only electrons transfer"
     ],
     "examinerTips": [
-      "This topic appears in every paper — learn the charges and masses of particles",
-      "Always show working when calculating neutrons: neutrons = mass number - atomic number",
-      "Draw clear atomic structure diagrams with nucleus and electron shells labeled",
-      "Use notation ᴬₓX where A is mass number, Z is atomic number, X is element symbol"
+      "Remember that magnetic field strength is shown by how close field lines are - closer together means stronger field",
+      "When drawing magnetic field diagrams, always include arrows pointing from north to south pole"
     ],
     "formulas": [
       "Number of neutrons = Mass number - Atomic number",
@@ -113,7 +113,7 @@
       "Examiner Report 2024: 'Candidates frequently gave answers without appropriate units or to incorrect significant figures' — always include units and match significant figures to the given data"
     ],
     "keyDiagram": "Students must be able to draw Rutherford's nuclear model showing: a tiny, dense, positively charged nucleus at the center (labeled +) surrounded by mostly empty space with electrons (shown as small circles with - signs) orbiting at relatively large distances. Include scale indication showing nucleus is ~10⁻¹⁵ m while atom is ~10⁻¹⁰ m. Label the nucleus, electrons, and empty space clearly.",
-    "quickRecap": "Atoms consist of a tiny, dense, positively charged nucleus surrounded by electrons in mostly empty space. The nucleus is ~10⁻¹⁵ m while the whole atom is ~10⁻¹⁰ m. Most of an atom's mass is concentrated in the nucleus. Typical atomic spacing in solids is ~10⁻¹⁰ m, and a small volume of matter contains ~10²³ atoms."
+    "quickRecap": "Magnets have north and south poles with like poles repelling and opposite poles attracting. Magnetic materials can be temporarily or permanently magnetized, with electromagnets being common temporary magnets. Electric charges can be positive or negative, with like charges repelling and opposite charges attracting through electric fields."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -121,5 +121,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:21:04.964Z",
   "updated_at": "2026-04-05T21:21:04.964Z",
-  "enriched_at": "2026-04-06T16:01:48.553Z"
+  "enriched_at": "2026-04-06T16:01:48.553Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:20:56.075Z"
 }

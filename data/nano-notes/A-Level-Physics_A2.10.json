@@ -9,32 +9,33 @@
     "title": "Alternating currents",
     "readTime": "8 min",
     "keyPoints": [
-      "**Alternating current (a.c.)** is current that changes direction periodically with time",
-      "**Peak value** is the maximum value of alternating voltage or current during one cycle",
-      "**Root mean square (r.m.s.)** value is the value of steady direct current that would dissipate energy at the same rate as the alternating current",
-      "**Transformers** work on the principle of electromagnetic induction and only operate with alternating current",
-      "**Step-up transformer** increases voltage and decreases current, while **step-down transformer** decreases voltage and increases current",
-      "**Rectification** is the process of converting alternating current to direct current using diodes",
-      "**Half-wave rectification** uses one diode and allows current to flow in only one direction for half the cycle",
-      "**Full-wave rectification** uses four diodes in a bridge circuit or two diodes with center-tapped transformer",
-      "**Smoothing** reduces the variations in rectified output using capacitors or inductors"
+      "Angles can be measured in radians, where one radian is the angle when arc length equals radius",
+      "Angular speed (ω) equals v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is period, f is frequency",
+      "Objects in circular motion have constantly changing velocity due to changing direction, requiring centripetal acceleration",
+      "Centripetal acceleration a = v²/r = ω²r, always directed toward the center of the circle",
+      "Centripetal force F = mv²/r = mω²r is required for circular motion and acts perpendicular to motion",
+      "Linear speed v = ωr relates angular and linear motion in circular paths"
     ],
     "definitions": [
       {
-        "term": "Root mean square (r.m.s.) value",
-        "definition": "The value of steady direct current that would dissipate energy at the same rate as the alternating current"
+        "term": "Radian",
+        "definition": "The angle in a sector of a circle when the arc length equals the radius of the circle"
       },
       {
-        "term": "Transformer",
-        "definition": "A device that uses electromagnetic induction to change the voltage of an alternating current supply"
+        "term": "Angular displacement (θ)",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "Rectification",
-        "definition": "The process of converting alternating current to direct current"
+        "term": "Angular speed (ω)",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Peak value",
-        "definition": "The maximum value reached by an alternating quantity during one complete cycle"
+        "term": "Centripetal acceleration",
+        "definition": "The acceleration of an object moving in a circular path at constant speed, caused by constantly changing velocity direction"
+      },
+      {
+        "term": "Centripetal force",
+        "definition": "The force that acts perpendicular to motion toward the center of the circle, required for circular motion"
       }
     ],
     "howToAnswer": [
@@ -67,18 +68,14 @@
       ]
     },
     "commonMistakes": [
-      "Never confuse peak value with r.m.s. value — r.m.s. = peak/√2 for sinusoidal waves",
-      "Students often forget that transformers only work with a.c., not d.c.",
-      "Never use turns ratio upside down — always check if voltage increases or decreases",
-      "Students often forget that ideal transformers conserve power: VpIp = VsIs",
-      "Never say rectification produces smooth d.c. — it produces pulsating d.c. which needs smoothing"
+      "Confusing degrees and radians - remember to convert using π/180",
+      "Thinking objects in uniform circular motion don't accelerate because speed is constant",
+      "Incorrectly stating centripetal force acts outward instead of toward the center",
+      "Forgetting that centripetal force is always perpendicular to the direction of motion"
     ],
     "examinerTips": [
-      "This topic appears frequently in Paper 2, especially transformer calculations",
-      "Always state whether transformer is step-up or step-down for full marks",
-      "Draw clear circuit diagrams for rectification questions",
-      "Remember to include units in all numerical answers",
-      "For rectification, distinguish between half-wave and full-wave clearly"
+      "Always check if angles are given in degrees or radians and convert appropriately using π/180",
+      "Remember that centripetal acceleration and force equations have two forms: v²/r and ω²r - choose based on given information"
     ],
     "formulas": [
       "Irms = I0/√2",
@@ -110,7 +107,7 @@
       "Examiner Report 2021: 'Weak explanations of why AC is used for power transmission' — always mention that AC voltage can be easily transformed up/down using transformers, reducing power losses in transmission lines"
     ],
     "keyDiagram": "Draw a sinusoidal AC voltage-time graph showing: horizontal time axis (labeled in seconds), vertical voltage axis (labeled in volts), smooth sine curve starting at origin, clearly marked peak voltage (+Vpeak and -Vpeak), one complete cycle with period T marked, and RMS voltage levels (±0.707Vpeak) shown as horizontal dashed lines. Include labels for amplitude, frequency, and indicate that current follows the same pattern as voltage.",
-    "quickRecap": "AC voltage and current continuously change direction in a sinusoidal pattern. RMS values are used for practical calculations: Vrms = Vpeak/√2. AC frequency is the number of complete cycles per second (50Hz in UK). AC is preferred for power transmission because voltage can be easily transformed, reducing energy losses over long distances."
+    "quickRecap": "Circular motion involves angular displacement measured in radians and angular speed ω = v/r = 2π/T. Objects in circular motion constantly change velocity direction, requiring centripetal acceleration a = v²/r = ω²r toward the center. This acceleration is caused by centripetal force F = mv²/r = mω²r acting perpendicular to motion."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +115,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:46:06.812Z",
   "updated_at": "2026-04-06T04:46:06.812Z",
-  "enriched_at": "2026-04-06T16:06:15.856Z"
+  "enriched_at": "2026-04-06T16:06:15.856Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:26:39.746Z"
 }

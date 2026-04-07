@@ -9,36 +9,32 @@
     "title": "Diffusion, osmosis and active transport",
     "readTime": "8 min",
     "keyPoints": [
-      "**Diffusion** is the net movement of particles from a region of higher concentration to a region of lower concentration down a concentration gradient, as a result of their random movement",
-      "**Osmosis** is the net movement of water molecules from a region of higher water potential to a region of lower water potential through a partially permeable membrane",
-      "**Active transport** is the movement of particles through a cell membrane from a region of lower concentration to a region of higher concentration using energy from respiration",
-      "Rate of diffusion increases with: higher temperature, larger concentration gradient, larger surface area, and shorter diffusion distance",
-      "**Partially permeable membranes** allow some substances to pass through but not others - water molecules can pass through but larger solute molecules cannot",
-      "In **isotonic** solutions, water potential inside and outside the cell is equal so no net movement of water occurs",
-      "In **hypotonic** solutions, cells gain water by osmosis and may burst (animal cells) or become turgid (plant cells)",
-      "In **hypertonic** solutions, cells lose water by osmosis and become crenated (animal cells) or plasmolysed (plant cells)",
-      "Active transport requires **carrier proteins** and **ATP energy** from respiration to move substances against their concentration gradient"
+      "All living organisms undergo seven key processes: Movement, Respiration, Sensitivity, Growth, Reproduction, Excretion, and Nutrition",
+      "Classification groups different species based on shared features, with organisms belonging to the same species if they can reproduce to produce fertile offspring",
+      "The binomial naming system uses two parts showing genus and species, such as Homo sapiens for humans",
+      "Organisms are classified by evolutionary relationships found through studying physical characteristics and DNA base sequences",
+      "The five kingdoms are Animal, Plant, Fungus, Prokaryote and Protoctist, categorized using cellular features",
+      "Animal cells lack cell wall and chlorophyll, while plant cells contain both structures",
+      "Vertebrates contain a backbone, while arthropods have exoskeletons and segmented bodies",
+      "A pathogen is an organism that causes disease, including bacteria and viruses",
+      "Pathogens can be transmitted through direct contact via body fluids or indirectly through contaminated surfaces, foods, animals and air"
     ],
     "definitions": [
       {
-        "term": "Diffusion",
-        "definition": "The net movement of particles from a region of higher concentration to a region of lower concentration down a concentration gradient, as a result of their random movement"
+        "term": "Species",
+        "definition": "A group of organisms that can reproduce to produce fertile offspring"
       },
       {
-        "term": "Osmosis",
-        "definition": "The net movement of water molecules from a region of higher water potential to a region of lower water potential through a partially permeable membrane"
+        "term": "Binomial naming system",
+        "definition": "An internationally agreed system where scientific names have two parts showing genus and species"
       },
       {
-        "term": "Active transport",
-        "definition": "The movement of particles through a cell membrane from a region of lower concentration to a region of higher concentration using energy from respiration"
+        "term": "Pathogen",
+        "definition": "An organism that causes disease"
       },
       {
-        "term": "Water potential",
-        "definition": "The tendency of water molecules to move from one place to another"
-      },
-      {
-        "term": "Concentration gradient",
-        "definition": "The difference in concentration between two regions"
+        "term": "Transmissible diseases",
+        "definition": "Diseases caused by pathogens that can be passed from host to host"
       }
     ],
     "howToAnswer": [
@@ -70,18 +66,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'particles want to move' — always say 'particles move down their concentration gradient as a result of random movement'",
-      "Students often confuse osmosis with diffusion — osmosis is specifically for water molecules through a partially permeable membrane",
-      "Don't say 'energy is needed for osmosis' — osmosis is a passive process, only active transport needs energy",
-      "Never write 'high concentration to low concentration' — always specify 'region of higher concentration to region of lower concentration'",
-      "Students forget that active transport works AGAINST the concentration gradient, not down it"
+      "Confusing the order of genus and species in binomial naming - genus comes first, then species",
+      "Thinking viruses are living organisms - they are non-cellular and cannot complete all life processes",
+      "Mixing up vertebrates and arthropods - vertebrates have backbones, arthropods have exoskeletons",
+      "Forgetting that DNA sequencing is more accurate than physical characteristics for classification"
     ],
     "examinerTips": [
-      "This topic appears in almost every paper - learn the exact definitions by heart",
-      "Always include 'partially permeable membrane' when defining osmosis",
-      "Draw arrows on diagrams to show direction of movement for full marks",
-      "Remember to link active transport to respiration and ATP energy",
-      "Use the term 'net movement' in definitions, not just 'movement'"
+      "Remember the seven life processes using the acronym MRS GREN (Movement, Respiration, Sensitivity, Growth, Reproduction, Excretion, Nutrition)",
+      "When writing scientific names, always use the binomial system with genus first, then species"
     ],
     "formulas": [],
     "keyDiagramDescription": "Cell membrane showing diffusion (small molecules passing through), osmosis (water molecules through membrane), and active transport (carrier proteins using ATP energy to move particles against gradient)",
@@ -109,7 +101,7 @@
       "Examiner Report 2022: 'Candidates frequently failed to link membrane structure to transport limitations' — always explain that charged particles cannot pass through hydrophobic phospholipid tails when discussing selective permeability"
     ],
     "keyDiagram": "Students must be able to draw a cell membrane cross-section showing phospholipid bilayer with embedded transport proteins. Include: phospholipid molecules with hydrophilic heads (circles) and hydrophobic tails (wavy lines), carrier proteins spanning the membrane, channel proteins, and arrows showing different transport directions. Label concentration gradients (high to low for passive transport, low to high for active transport) and indicate ATP usage for active transport.",
-    "quickRecap": "Three main transport processes: simple diffusion (directly through membrane, no energy), facilitated diffusion (through proteins, no energy, down gradient), and active transport (through proteins, requires ATP, against gradient). Osmosis is specifically water movement through partially permeable membranes. Charged particles need protein channels because they cannot pass through hydrophobic membrane core."
+    "quickRecap": "Living organisms are classified based on shared features and evolutionary relationships using the binomial naming system. All living things undergo seven key processes (MRS GREN) and are grouped into five kingdoms based on cellular characteristics. Pathogens cause transmissible diseases and can spread through direct contact or indirect transmission."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -117,5 +109,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:26:24.870Z",
   "updated_at": "2026-04-05T21:26:24.870Z",
-  "enriched_at": "2026-04-06T16:08:06.697Z"
+  "enriched_at": "2026-04-06T16:08:06.697Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:24:48.425Z"
 }

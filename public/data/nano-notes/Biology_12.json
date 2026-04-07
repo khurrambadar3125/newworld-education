@@ -9,36 +9,29 @@
     "title": "Reproduction",
     "readTime": "8 min",
     "keyPoints": [
-      "**Sexual reproduction** involves the fusion of male and female gametes to produce offspring that are genetically different from parents",
-      "**Asexual reproduction** involves only one parent and produces offspring that are genetically identical to the parent (clones)",
-      "The flower is the **reproductive organ** of flowering plants containing male parts (stamens) and female parts (carpels)",
-      "**Pollination** is the transfer of pollen grains from the anther to the stigma of the same species",
-      "**Self-pollination** occurs when pollen is transferred within the same flower or between flowers on the same plant",
-      "**Cross-pollination** occurs when pollen is transferred between flowers on different plants of the same species",
-      "**Wind-pollinated flowers** have small, dull petals, long feathery stigmas, and produce large amounts of light pollen",
-      "**Insect-pollinated flowers** have large, brightly coloured petals, sticky pollen, and often produce nectar",
-      "**Fertilisation** occurs when the male gamete (in pollen tube) fuses with the female gamete (ovum) in the ovule"
+      "Reproduction is one of the seven characteristics of living organisms - living organisms reproduce to create more organisms of their kind",
+      "A group of organisms belong to the same species if they can reproduce to produce fertile offspring",
+      "Organisms are named using the binomial naming system with two parts showing the genus and species",
+      "Non-flowering plants such as ferns reproduce through spores rather than by producing seeds",
+      "Flowering plants are divided into dicotyledons and monocotyledons, which are identified by their leaves",
+      "Viruses are not classified as living organisms as they do not have the ability to complete life processes including reproduction"
     ],
     "definitions": [
       {
-        "term": "Sexual reproduction",
-        "definition": "A process involving the fusion of male and female gametes to produce offspring that are genetically different from the parents"
+        "term": "Species",
+        "definition": "A group of organisms that can reproduce to produce fertile offspring"
       },
       {
-        "term": "Asexual reproduction",
-        "definition": "A process involving only one parent that produces offspring genetically identical to the parent"
+        "term": "Binomial naming system",
+        "definition": "An internationally agreed system in which the scientific name of an organism is made up of two parts showing the genus and species"
       },
       {
-        "term": "Pollination",
-        "definition": "The transfer of pollen grains from the anther to the stigma of the same species"
+        "term": "Pathogen",
+        "definition": "An organism that causes disease, including bacteria and viruses"
       },
       {
-        "term": "Fertilisation",
-        "definition": "The fusion of male and female gametes"
-      },
-      {
-        "term": "Germination",
-        "definition": "The process by which a seed begins to grow into a new plant"
+        "term": "Transmissible diseases",
+        "definition": "Diseases caused by pathogens that can be passed from host to host"
       }
     ],
     "howToAnswer": [
@@ -71,17 +64,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'pollination is reproduction' — pollination is transfer of pollen, fertilisation is fusion of gametes",
-      "Students often confuse wind and insect pollinated features — remember wind flowers are small and dull, insect flowers are large and bright",
-      "Don't say 'asexual reproduction involves no gametes' — say 'involves only one parent'",
-      "Never describe germination as 'fertilisation' — germination is seed growth, fertilisation is gamete fusion",
-      "Students forget that cross-pollination must be between different plants of the SAME species"
+      "Confusing reproduction as a characteristic of life with the classification requirement that species must produce fertile offspring",
+      "Mixing up the order of genus and species in binomial naming - genus comes first, then species",
+      "Forgetting that non-flowering plants reproduce through spores, not seeds"
     ],
     "examinerTips": [
-      "Flower structure diagrams appear frequently in Paper 1 and Paper 3 - learn all parts",
-      "Compare questions on sexual vs asexual reproduction are very common in Paper 2",
-      "Always mention 'genetic variation' when explaining advantages of sexual reproduction",
-      "For pollination adaptations, give specific examples like sticky vs powdery pollen"
+      "Remember that reproduction is essential for classification - only organisms that can produce fertile offspring belong to the same species",
+      "When writing scientific names, the first part is the genus and the second is the species, for example Homo sapiens"
     ],
     "formulas": [],
     "keyDiagramDescription": "Structure of a complete flower showing sepals, petals, stamens (anther and filament), and carpel (stigma, style, ovary with ovules). Essential for Paper 1 and Paper 3 practical examinations.",
@@ -109,7 +98,7 @@
       "Examiner Report 2022: 'Candidates often failed to distinguish between male and female gametes correctly' — remember that sperm/pollen are male gametes, while eggs/ovules are female gametes in animals and plants respectively"
     ],
     "keyDiagram": "Students must draw and label a comparison diagram showing: 1) Asexual reproduction - single parent producing genetically identical offspring via mitosis (show parent cell dividing into identical diploid cells), 2) Sexual reproduction - two parents producing genetically different offspring via meiosis and fertilization (show meiosis producing haploid gametes, fertilization creating diploid zygote). Include labels for diploid/haploid, mitosis/meiosis, and genetic variation outcomes.",
-    "quickRecap": "Reproduction occurs through asexual (mitosis, identical offspring, one parent) or sexual (meiosis + fertilization, genetic variation, two parents) methods. Mitosis produces diploid cells for growth/repair, while meiosis produces haploid gametes. Sexual reproduction creates genetic variation giving survival advantages in changing environments. Female gametes are eggs/ovules, male gametes are sperm/pollen."
+    "quickRecap": "Reproduction is a fundamental characteristic of all living organisms. Species are defined by their ability to reproduce and produce fertile offspring together. Different groups reproduce in different ways - flowering plants produce seeds while non-flowering plants like ferns use spores. Viruses cannot reproduce independently and are not considered living organisms."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -117,5 +106,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:29:49.205Z",
   "updated_at": "2026-04-05T21:29:49.205Z",
-  "enriched_at": "2026-04-06T16:07:00.232Z"
+  "enriched_at": "2026-04-06T16:07:00.232Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:24:00.080Z"
 }

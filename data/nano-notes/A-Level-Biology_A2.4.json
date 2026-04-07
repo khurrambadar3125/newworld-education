@@ -9,32 +9,35 @@
     "title": "Coordination",
     "readTime": "8 min",
     "keyPoints": [
-      "**Neurons** transmit electrical impulses as action potentials along their axons",
-      "**Resting potential** is -70mV maintained by sodium-potassium pump which actively transports 3Na+ out and 2K+ in",
-      "**Action potential** occurs when threshold potential (-55mV) is reached causing voltage-gated sodium channels to open",
-      "**Depolarisation** happens when Na+ ions rush into the axon making the inside positive (+40mV)",
-      "**Repolarisation** occurs when K+ channels open and K+ ions leave the axon, restoring negative charge inside",
-      "**Synapses** transmit impulses using neurotransmitters which diffuse across the synaptic cleft",
-      "**Endocrine system** uses hormones transported in blood plasma to target organs with specific receptors",
-      "**Hormones** are chemical messengers that bind to complementary receptor proteins on target cells",
-      "**Negative feedback** maintains homeostasis by detecting deviations from set point and triggering corrective responses"
+      "All living organisms are made of cells that use ATP from respiration for energy-requiring processes",
+      "Eukaryotic cells contain a nucleus and membrane-bound organelles, while prokaryotic cells do not contain membrane-bound organelles",
+      "The nucleus is surrounded by a double membrane called the nuclear envelope containing pores, and contains chromatin and a nucleolus",
+      "Mitochondria are oval-shaped with a double membrane envelope, inner membrane folded into cristae, and contain the matrix with enzymes for respiration",
+      "Plant cells uniquely contain chloroplasts (site of photosynthesis), vacuoles, cell walls made of cellulose, and plasmodesmata",
+      "Animal cells may contain cilia (hair-like structures in '9+2' formation) and microvilli (finger-like projections that increase surface area)",
+      "Prokaryotic cells are unicellular, 1-5μm in diameter, with circular DNA and smaller 70S ribosomes compared to eukaryotic 80S ribosomes",
+      "Viruses are non-living structures consisting of nucleic acid (DNA or RNA) enclosed in a protein capsid, sometimes with an envelope"
     ],
     "definitions": [
       {
-        "term": "Action potential",
-        "definition": "A rapid change in potential difference across the axon membrane from -70mV to +40mV caused by movement of sodium and potassium ions"
+        "term": "Ultrastructure",
+        "definition": "A more detailed structure of cells that can be obtained by using a microscope"
       },
       {
-        "term": "Synapse",
-        "definition": "A junction between two neurons where neurotransmitters are released from presynaptic neuron and bind to receptors on postsynaptic neuron"
+        "term": "Cristae",
+        "definition": "Projections formed by the folded inner membrane of mitochondria"
       },
       {
-        "term": "Hormone",
-        "definition": "A chemical messenger produced by endocrine glands and transported in blood plasma to target organs where it binds to specific receptors"
+        "term": "Capsid",
+        "definition": "A protective protein coat that encloses the nucleic acid in viruses"
       },
       {
-        "term": "Threshold potential",
-        "definition": "The minimum depolarisation (-55mV) required to trigger opening of voltage-gated sodium channels and initiate an action potential"
+        "term": "Plasmodesmata",
+        "definition": "Small channels that pass through the cell wall of adjoining plant cells to allow communication between cells"
+      },
+      {
+        "term": "Tonoplast",
+        "definition": "The membrane that surrounds the vacuole in plant cells"
       }
     ],
     "howToAnswer": [
@@ -69,17 +72,14 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'nerve impulse travels' — always say 'action potential propagates along axon'",
-      "Students often confuse depolarisation with repolarisation - remember depolarisation is becoming less negative",
-      "Don't say hormones 'target specific organs' without mentioning complementary receptors",
-      "Never describe synapses as 'gaps' — they are junctions with synaptic cleft",
-      "Students forget that sodium-potassium pump uses ATP and transports 3Na+ out, 2K+ in"
+      "Confusing the structure of prokaryotic and eukaryotic ribosomes - prokaryotes have 70S ribosomes while eukaryotes have 80S ribosomes in cytoplasm",
+      "Forgetting that mitochondria and chloroplasts contain their own small circular DNA and 70S ribosomes",
+      "Mixing up organelles that are exclusive to plant cells versus animal cells",
+      "Incorrectly stating that viruses are living organisms when they are non-living structures"
     ],
     "examinerTips": [
-      "This topic appears in every Paper 2 - learn the voltage values (-70mV, -55mV, +40mV)",
-      "Always include ion movements and voltage changes when describing action potentials",
-      "Synapse questions often ask for neurotransmitter release mechanism - mention calcium ions",
-      "Hormone questions require mention of blood transport and complementary receptors for full marks"
+      "Remember the specific membrane arrangements - nucleus has double membrane with pores, mitochondria have double membrane with inner folded into cristae",
+      "Learn the unique features of each cell type: prokaryotes have peptidoglycan cell walls and are much smaller (1-5μm) than eukaryotic cells"
     ],
     "formulas": [],
     "keyDiagramDescription": "Action potential graph showing resting potential (-70mV), threshold (-55mV), depolarisation peak (+40mV), repolarisation and refractory period over time. Label voltage-gated Na+ and K+ channel opening/closing points.",
@@ -108,7 +108,7 @@
       "Examiner Report 2021: 'Vague answers about 'the brain controls everything'' — be specific about which part coordinates what (cerebellum for balance, medulla for breathing, hypothalamus for temperature)"
     ],
     "keyDiagram": "Students must draw a reflex arc showing: stimulus arrow pointing to receptor in skin, sensory neuron leading to spinal cord, synapse in spinal cord connecting to motor neuron, motor neuron leading to effector muscle, and response arrow. Include labels for all parts and show direction of nerve impulse with arrows. Gray matter should be shown in center of spinal cord cross-section.",
-    "quickRecap": "Coordination involves detecting stimuli and producing appropriate responses. Nervous coordination is fast and electrical via neurons, while hormonal coordination is slower and chemical via bloodstream. Reflex actions bypass the brain for rapid responses. Negative feedback maintains homeostasis by reversing changes from normal levels."
+    "quickRecap": "Cells are the basic units of all living organisms and use ATP for energy processes. Eukaryotic cells contain membrane-bound organelles including nucleus, mitochondria, and ER, while prokaryotic cells lack these structures and have circular DNA. Plant cells have additional organelles like chloroplasts and vacuoles, while animal cells may have cilia and microvilli. Viruses are non-living structures with nucleic acid in a protein capsid."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -116,5 +116,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:05:20.210Z",
   "updated_at": "2026-04-06T05:05:20.211Z",
-  "enriched_at": "2026-04-06T16:06:59.971Z"
+  "enriched_at": "2026-04-06T16:06:59.971Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:36:08.161Z"
 }

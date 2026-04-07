@@ -9,32 +9,39 @@
     "title": "Quantum physics",
     "readTime": "8 min",
     "keyPoints": [
-      "A **photon** is a quantum of electromagnetic energy with energy E = hf where h is Planck's constant",
-      "**Photoelectric effect** occurs when electrons are emitted from a metal surface when electromagnetic radiation of sufficiently high frequency is incident upon it",
-      "**Threshold frequency** f₀ is the minimum frequency of incident radiation required to emit photoelectrons from a metal surface",
-      "**Work function** φ is the minimum energy required to remove an electron from the surface of a metal",
-      "Einstein's photoelectric equation: hf = φ + ½mv²max where ½mv²max is the maximum kinetic energy of emitted photoelectrons",
-      "**Wave-particle duality** means that electromagnetic radiation and particles can exhibit both wave-like and particle-like properties",
-      "**de Broglie wavelength** λ = h/p applies to all particles, where p is momentum",
-      "**Energy levels** in atoms are discrete, with electrons occupying specific allowed energy states",
-      "When an electron transitions between energy levels, a photon is emitted or absorbed with energy equal to the energy difference ΔE = hf"
+      "One radian is defined as the angle in the sector of a circle when the arc length equals the radius of the circle",
+      "Angular speed (ω) can be calculated as v/r = 2π/T = 2πf, where v is linear speed, r is radius, T is time period, and f is frequency",
+      "An object moving in a circular path at constant speed has constantly changing velocity due to changing direction, therefore it must be accelerating",
+      "Centripetal acceleration always acts perpendicular to motion, towards the centre of the circle",
+      "Centripetal force can be calculated using F = mv²/r = mω²r",
+      "A gravitational field is an area where objects with mass experience a non-contact force",
+      "Newton's law of gravitation states that gravitational force is directly proportional to the product of masses and inversely proportional to the square of distance between them",
+      "Gravitational field strength in a radial field follows g = GM/r², showing an inverse square relationship"
     ],
     "definitions": [
       {
-        "term": "Photon",
-        "definition": "A quantum (packet) of electromagnetic energy with energy E = hf"
+        "term": "Radian",
+        "definition": "The angle in the sector of a circle when the arc length of that sector is equal to the radius of the circle"
       },
       {
-        "term": "Work function",
-        "definition": "The minimum energy required to remove an electron from the surface of a metal"
+        "term": "Angular displacement (θ)",
+        "definition": "The angle turned through by an object in any given direction in radians"
       },
       {
-        "term": "Threshold frequency",
-        "definition": "The minimum frequency of incident electromagnetic radiation required to cause photoemission from a metal surface"
+        "term": "Angular speed (ω)",
+        "definition": "The angle an object moves through per unit time"
       },
       {
-        "term": "Wave-particle duality",
-        "definition": "The concept that electromagnetic radiation and particles can exhibit both wave-like and particle-like properties depending on the experimental conditions"
+        "term": "Centripetal acceleration",
+        "definition": "The acceleration of an object moving in a circular path, always acting perpendicular to motion towards the centre of the circle"
+      },
+      {
+        "term": "Centripetal force",
+        "definition": "The force that causes circular motion, always acting perpendicular to the motion of the object towards the centre of the circle"
+      },
+      {
+        "term": "Gravitational field strength (g)",
+        "definition": "The force per unit mass exerted by a gravitational field on an object"
       }
     ],
     "howToAnswer": [
@@ -66,17 +73,16 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'light removes electrons' — always say 'photons cause photoemission of electrons'",
-      "Students often forget to convert between eV and Joules when using different units in the same calculation",
-      "Never say 'more intense light gives faster electrons' — intensity only affects the number of photoelectrons, not their maximum kinetic energy",
-      "Students confuse threshold frequency with the frequency of incident radiation",
-      "Never say 'electrons absorb multiple photons' — photoelectric effect is a one-photon process"
+      "Forgetting that velocity changes in circular motion even when speed is constant, due to changing direction",
+      "Confusing the direction of centripetal force - it always acts towards the centre of the circle, not outwards",
+      "Not recognizing that gravitational field strength follows an inverse square relationship with distance",
+      "Measuring angles in degrees instead of radians when using circular motion formulas",
+      "Assuming gravitational fields are always uniform rather than recognizing most are radial fields"
     ],
     "examinerTips": [
-      "This topic appears almost every year in Paper 2 and Paper 4",
-      "Always state Einstein's photoelectric equation when explaining photoelectric effect",
-      "Remember to include 'maximum' when referring to kinetic energy of photoelectrons",
-      "Energy level diagrams must be clearly labelled with energy values and transitions"
+      "Remember to convert between degrees and radians using the factor π/180",
+      "Use the appropriate centripetal force formula depending on given variables: F = mv²/r or F = mω²r",
+      "For inverse square relationships, if distance increases by factor n, field strength decreases by factor n²"
     ],
     "formulas": [
       "E = hf",
@@ -110,7 +116,7 @@
       "Examiner Report 2021: 'Candidates failed to explain why wave-particle duality doesn't contradict classical physics' — always mention that quantum effects are only significant at atomic scales, classical physics still applies to macroscopic objects"
     ],
     "keyDiagram": "Photoelectric effect setup diagram showing: incident photons (labeled hf) hitting metal surface, work function energy level marked as horizontal line inside metal, emitted photoelectrons with kinetic energy arrows, and energy level diagram showing hf = φ + KEₘₐₓ. Include labels for threshold frequency f₀ and show that electrons are only emitted when f > f₀.",
-    "quickRecap": "Quantum physics shows light and matter have both wave and particle properties. Photoelectric effect proves light's particle nature: E = hf, and electrons only emit when f > f₀. Matter waves follow de Broglie equation λ = h/mv. Key constants: h = 6.63 × 10⁻³⁴ Js, 1 eV = 1.6 × 10⁻¹⁹ J."
+    "quickRecap": "Circular motion involves angular measurements in radians and requires centripetal force acting towards the centre. Objects in circular motion experience centripetal acceleration even at constant speed due to changing velocity direction. Gravitational fields create the forces needed for orbital motion, with field strength following an inverse square law with distance. Key formulas include ω = v/r for angular speed and F = mv²/r for centripetal force."
   },
   "read_time_minutes": 8,
   "key_points_count": 9,
@@ -118,5 +124,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T04:46:27.554Z",
   "updated_at": "2026-04-06T04:46:27.554Z",
-  "enriched_at": "2026-04-06T16:06:37.121Z"
+  "enriched_at": "2026-04-06T16:06:37.121Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:26:57.027Z"
 }

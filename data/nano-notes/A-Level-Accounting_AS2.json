@@ -9,37 +9,43 @@
     "title": "Financial statements of sole traders",
     "readTime": "8 min",
     "keyPoints": [
-      "**Income statement** shows the profit or loss made by a business over a specific period of time",
-      "**Revenue** is recorded at the top of the income statement and represents income from trading activities",
-      "**Cost of sales** includes opening inventory plus purchases minus closing inventory to calculate gross profit",
-      "**Gross profit** is calculated as revenue minus cost of sales and shows profit from trading before expenses",
-      "**Net profit** is calculated as gross profit minus expenses and represents the final profit available to the owner",
-      "**Balance sheet** shows the financial position of a business at a specific point in time",
-      "**Capital** represents the owner's investment in the business and increases with profits and additional capital introduced",
-      "**Drawings** represent amounts taken out of the business by the owner for personal use and reduce capital",
-      "**Assets** are resources owned by the business that have economic value and are classified as non-current or current",
-      "The accounting equation **Assets = Capital + Liabilities** must always balance on the balance sheet"
+      "Financial statements provide information about the financial position, financial performance and cash flows of an entity that is useful to a wide range of users in making economic decisions",
+      "Financial statements provide information about an entity's assets, liabilities, equity, income and expenses (including gains and losses), contributions by and distributions to owners, and cash flows",
+      "Manufacturing account is prepared at the end of a financial period to calculate the production cost of manufactured goods",
+      "The manufacturing account only includes information about the factory and the actual manufacturing process",
+      "All non-production costs (administration, finance, and distribution costs) are recorded in the Income Statement",
+      "Cost of production is calculated by adding the factory overheads to prime cost",
+      "Transfer price is the production cost of completed goods plus a percentage mark-up",
+      "Factory/manufacturing profit is the difference between the transfer price and the production cost of completed goods"
     ],
     "definitions": [
       {
-        "term": "Income statement",
-        "definition": "A financial statement that shows the revenue, expenses, and profit or loss of a business over a specific period of time"
+        "term": "Manufacturing account",
+        "definition": "An account prepared at the end of a financial period to calculate the production cost of manufactured goods"
       },
       {
-        "term": "Balance sheet",
-        "definition": "A financial statement that shows the assets, liabilities and capital of a business at a specific point in time"
+        "term": "Prime cost/direct cost",
+        "definition": "The total of direct materials, direct labour, and direct expenses"
       },
       {
-        "term": "Capital",
-        "definition": "The amount invested in the business by the owner, including profits retained in the business"
+        "term": "Factory overheads/indirect costs",
+        "definition": "Costs incurred from the running of the factory, including indirect factory wages and depreciation of factory machinery"
       },
       {
-        "term": "Drawings",
-        "definition": "Money or goods taken out of the business by the owner for personal use"
+        "term": "Work in progress",
+        "definition": "Inventory of partly finished goods in the factory at any point in time"
       },
       {
-        "term": "Working capital",
-        "definition": "Current assets minus current liabilities, representing short-term liquidity"
+        "term": "Factory profit",
+        "definition": "Percentage added to the factory cost of production to arrive at the transfer price"
+      },
+      {
+        "term": "Transfer price",
+        "definition": "The production cost of completed goods plus a percentage mark-up"
+      },
+      {
+        "term": "Unrealised profit",
+        "definition": "Profit which is not recognised until the goods are sold"
       }
     ],
     "howToAnswer": [
@@ -72,17 +78,14 @@
       ]
     },
     "commonMistakes": [
-      "Never include drawings as an expense in the income statement — drawings are personal withdrawals, not business expenses",
-      "Students often forget to deduct drawings from capital when calculating closing capital",
-      "Never say 'profit and loss account' for A Level — always use 'income statement'",
-      "Students confuse revenue with profit — revenue is total income before deducting any costs",
-      "Never show closing inventory as an expense — it reduces cost of sales by being deducted from opening inventory plus purchases"
+      "Including non-production costs in the manufacturing account instead of the Income Statement",
+      "Confusing prime cost with total production cost",
+      "Not properly calculating the cost of production using the formula: prime cost + factory overheads",
+      "Misunderstanding the difference between transfer price and production cost"
     ],
     "examinerTips": [
-      "Financial statements questions appear in every Paper 2 exam",
-      "Always use the correct format with proper headings and dates",
-      "Show all workings for calculations to earn method marks",
-      "Remember to distinguish between non-current and current assets/liabilities"
+      "Remember that manufacturing accounts only deal with factory and production processes - keep other costs separate",
+      "Always use the formula: Cost of production = prime cost + factory overheads"
     ],
     "formulas": [
       "Gross profit = Revenue - Cost of sales",
@@ -117,7 +120,7 @@
       "Examiner Report 2023: 'Candidates often calculated working capital incorrectly by including fixed assets' — working capital is current assets minus current liabilities only, never include equipment or premises"
     ],
     "keyDiagram": "Students must be able to draw the interconnected structure showing: Trial Balance (top) feeding into Trading Account (Sales, COGS, Gross Profit), which flows to Profit and Loss Account (Gross Profit, Expenses, Net Profit), and Balance Sheet (Fixed Assets, Current Assets, Current Liabilities, Capital + Net Profit - Drawings). Show arrows indicating how Net Profit transfers from P&L to increase Capital in Balance Sheet, and how the accounting equation Assets = Capital + Liabilities must balance.",
-    "quickRecap": "Financial statements for sole traders comprise Trading Account (calculates gross profit), Profit and Loss Account (calculates net profit), and Balance Sheet (shows financial position). Trading Account: Sales minus Cost of Goods Sold equals Gross Profit. Profit and Loss Account: Gross Profit minus expenses equals Net Profit. Balance Sheet: Assets must equal Capital plus Liabilities, with Net Profit added to Capital and Drawings subtracted."
+    "quickRecap": "Manufacturing accounts calculate production costs for manufactured goods at the end of financial periods. They include only factory-related costs, with prime cost (direct materials, labour, expenses) plus factory overheads equaling the cost of production. Transfer prices include a mark-up above production cost, creating manufacturing profit."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -125,5 +128,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-06T05:24:24.951Z",
   "updated_at": "2026-04-06T05:24:24.951Z",
-  "enriched_at": "2026-04-06T16:08:35.703Z"
+  "enriched_at": "2026-04-06T16:08:35.703Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T03:00:21.658Z"
 }

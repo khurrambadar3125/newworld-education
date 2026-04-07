@@ -9,37 +9,25 @@
     "title": "Homeostasis",
     "readTime": "8 min",
     "keyPoints": [
-      "**Homeostasis** is the maintenance of a constant internal environment within narrow limits, despite changes in external conditions",
-      "**Temperature regulation** in humans involves the skin, blood vessels, sweat glands, and behavioural responses to maintain 37°C",
-      "**Vasodilation** occurs when blood vessels near the skin surface widen to increase heat loss by radiation and convection",
-      "**Vasoconstriction** occurs when blood vessels near the skin surface narrow to reduce heat loss and conserve body heat",
-      "**Blood sugar regulation** involves insulin (lowers blood glucose) and glucagon (raises blood glucose) from the pancreas",
-      "**Insulin** converts excess glucose to glycogen for storage in the liver when blood glucose is too high",
-      "**Glucagon** converts stored glycogen back to glucose in the liver when blood glucose is too low",
-      "The **kidney** regulates water content through ADH (antidiuretic hormone) which controls water reabsorption in collecting ducts",
-      "**Excretion** removes metabolic waste products including urea, carbon dioxide, and excess water from the body",
-      "**Negative feedback** mechanisms detect changes and trigger responses to return conditions back to the set point"
+      "Living organisms show sensitivity - they can detect changes in their internal or external environments and respond to these changes",
+      "Excretion involves removing waste products from metabolic reactions, including toxic materials and excess substances",
+      "Respiration is a series of chemical reactions in cells that breakdown nutrient molecules to release energy for metabolism",
+      "Growth leads to a permanent increase in size, measured through dry mass, cell size or number of cells",
+      "Pathogens are organisms that cause disease and include bacteria and viruses",
+      "The body has defenses against infection to prevent pathogens from entering"
     ],
     "definitions": [
       {
-        "term": "Homeostasis",
-        "definition": "The maintenance of a constant internal environment within narrow limits, despite changes in external conditions"
-      },
-      {
-        "term": "Insulin",
-        "definition": "A hormone produced by the pancreas that lowers blood glucose concentration by converting glucose to glycogen"
+        "term": "Sensitivity",
+        "definition": "The ability of living organisms to detect changes in their internal or external environments and respond to these changes"
       },
       {
         "term": "Excretion",
-        "definition": "The removal of toxic waste products of metabolism and excess substances from the body"
+        "definition": "The removal of waste products from metabolic reactions, including toxic materials, excess substances and carbon dioxide from respiration"
       },
       {
-        "term": "Negative feedback",
-        "definition": "A control mechanism that detects changes from the set point and triggers responses to counteract the change"
-      },
-      {
-        "term": "Vasodilation",
-        "definition": "The widening of blood vessels near the skin surface to increase heat loss from the body"
+        "term": "Pathogen",
+        "definition": "An organism that causes disease, including bacteria and viruses"
       }
     ],
     "howToAnswer": [
@@ -72,18 +60,13 @@
       ]
     },
     "commonMistakes": [
-      "Never say 'insulin breaks down glucose' — always say 'insulin converts glucose to glycogen'",
-      "Students often confuse vasodilation with vasoconstriction — vasodilation increases heat loss, vasoconstriction decreases heat loss",
-      "Don't say 'kidneys filter blood' — say 'kidneys filter plasma to form urine'",
-      "Never write 'removes waste' — always specify 'removes metabolic waste products'",
-      "Students forget that negative feedback returns conditions to set point, not just detects changes"
+      "Confusing sensitivity with just responding to stimuli - organisms must both detect AND respond to changes",
+      "Thinking excretion only removes carbon dioxide - it removes all metabolic waste products including toxic materials",
+      "Forgetting that pathogens include both bacteria and viruses, not just one type of organism"
     ],
     "examinerTips": [
-      "Temperature regulation questions appear almost every year in Paper 2",
-      "Always mention 'negative feedback' when explaining homeostatic control",
-      "Use specific hormone names: insulin, glucagon, ADH - not just 'hormones'",
-      "For kidney questions, mention both filtration and reabsorption processes",
-      "Practice drawing and labelling nephron diagrams - commonly examined"
+      "Remember that sensitivity involves detecting changes in both internal AND external environments",
+      "Always mention that excretion removes waste from metabolic reactions, not just any waste"
     ],
     "formulas": [],
     "keyDiagramDescription": "Nephron structure showing glomerulus, Bowman's capsule, proximal convoluted tubule, loop of Henle, distal convoluted tubule, and collecting duct. Also temperature regulation flowchart showing stimulus → receptor → coordinator → effector → response pathway.",
@@ -114,7 +97,7 @@
       "Examiner Report 2024: 'Candidates frequently gave vague examples like temperature control without explaining the actual mechanism' — be specific about receptors, control centers, and effectors in your examples"
     ],
     "keyDiagram": "Students must be able to draw a negative feedback loop diagram showing: (1) Normal condition in center circle, (2) Arrows showing increase and decrease from normal, (3) Detection boxes for both changes, (4) Response boxes showing corrective actions, (5) Feedback arrows returning to normal condition. Label with specific example like temperature control showing hypothalamus detecting change, and responses like sweating/shivering. Include clear arrows showing the cyclical nature and how responses oppose the original change.",
-    "quickRecap": "Homeostasis maintains constant internal conditions essential for enzyme function and cell survival. It works through negative feedback loops where changes are detected and corrective responses are triggered. Key examples include temperature, blood glucose, and water balance control. Always remember: stimulus → detection → response → return to normal → feedback."
+    "quickRecap": "Living organisms maintain homeostasis through sensitivity and excretion. Sensitivity allows detection and response to environmental changes. Excretion removes metabolic waste products including toxic materials. The body has natural defenses against pathogens like bacteria and viruses that cause transmissible diseases."
   },
   "read_time_minutes": 8,
   "key_points_count": 10,
@@ -122,5 +105,7 @@
   "mistakes_count": 5,
   "created_at": "2026-04-05T21:29:27.757Z",
   "updated_at": "2026-04-05T21:29:27.757Z",
-  "enriched_at": "2026-04-06T16:06:41.985Z"
+  "enriched_at": "2026-04-06T16:06:41.985Z",
+  "verified_content": true,
+  "verified_at": "2026-04-07T02:23:48.089Z"
 }
