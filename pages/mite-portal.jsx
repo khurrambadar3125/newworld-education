@@ -62,8 +62,8 @@ export default function MiTEPortal() {
                   MiTE UNIVERSITY × NEWWORLDEDU
                 </div>
                 <h1 style={{ fontSize: isMobile ? 30 : 44, fontWeight: 900, margin: '0 0 12px', lineHeight: 1.15 }}>
-                  1,851 real exam questions.<br />
-                  <span style={{ color: GOLD }}>Zero hallucinations.</span>
+                  19,000+ verified questions.<br />
+                  <span style={{ color: GOLD }}>From real exam papers.</span>
                 </h1>
                 <p style={{ fontSize: 16, color: 'rgba(250,246,235,0.45)', lineHeight: 1.7, maxWidth: 480, margin: '0 auto 24px' }}>
                   19,000+ verified questions for BBA and BS-CS. Course support for every semester. An AI tutor that speaks your language. Built for MiTE.
