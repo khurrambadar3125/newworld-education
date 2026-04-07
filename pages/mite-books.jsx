@@ -13,14 +13,14 @@ const PROGRAMS = [
   {
     name: 'BBA', icon: '💼', color: '#4F8EF7',
     books: [
-      { course: 'Principles of Management', book: 'Management', author: 'Robbins & Coulter', free: 'https://openstax.org/details/books/principles-management' },
-      { course: 'Financial Accounting', book: 'Financial Accounting', author: 'Horngren / Kieso', free: 'https://openstax.org/details/books/principles-financial-accounting' },
-      { course: 'Microeconomics', book: 'Principles of Microeconomics', author: 'Mankiw', free: 'https://openstax.org/details/books/principles-microeconomics-3e' },
-      { course: 'Macroeconomics', book: 'Principles of Macroeconomics', author: 'Mankiw', free: 'https://openstax.org/details/books/principles-macroeconomics-3e' },
-      { course: 'Business Statistics', book: 'Introductory Business Statistics', author: 'Holmes et al', free: 'https://openstax.org/details/books/introductory-business-statistics-2e' },
-      { course: 'Organizational Behavior', book: 'Organizational Behavior', author: 'Robbins & Judge', free: 'https://openstax.org/details/books/organizational-behavior' },
-      { course: 'Business Ethics', book: 'Business Ethics', author: 'OpenStax', free: 'https://openstax.org/details/books/business-ethics' },
-      { course: 'Marketing', book: 'Principles of Marketing', author: 'Kotler & Armstrong', free: 'https://openstax.org/details/books/principles-marketing' },
+      { course: 'Principles of Management', book: 'Management', author: 'Robbins & Coulter', free: null },
+      { course: 'Financial Accounting', book: 'Financial Accounting', author: 'Horngren / Kieso', free: null },
+      { course: 'Microeconomics', book: 'Principles of Microeconomics', author: 'Mankiw', free: null },
+      { course: 'Macroeconomics', book: 'Principles of Macroeconomics', author: 'Mankiw', free: null },
+      { course: 'Business Statistics', book: 'Introductory Business Statistics', author: 'Holmes et al', free: null },
+      { course: 'Organizational Behavior', book: 'Organizational Behavior', author: 'Robbins & Judge', free: null },
+      { course: 'Business Ethics', book: 'Business Ethics', author: 'OpenStax', free: null },
+      { course: 'Marketing', book: 'Principles of Marketing', author: 'Kotler & Armstrong', free: null },
     ],
   },
   {
@@ -33,8 +33,8 @@ const PROGRAMS = [
       { course: 'Computer Networks', book: 'Computer Networking: A Top-Down Approach', author: 'Kurose & Ross', free: null },
       { course: 'Algorithms', book: 'Introduction to Algorithms', author: 'Cormen, Leiserson, Rivest, Stein (CLRS)', free: null },
       { course: 'Artificial Intelligence', book: 'Artificial Intelligence: A Modern Approach', author: 'Russell & Norvig', free: null },
-      { course: 'Calculus', book: 'Calculus Volume 1', author: 'OpenStax', free: 'https://openstax.org/details/books/calculus-volume-1' },
-      { course: 'Linear Algebra', book: 'College Algebra', author: 'OpenStax', free: 'https://openstax.org/details/books/college-algebra-2e' },
+      { course: 'Calculus', book: 'Calculus Volume 1', author: 'OpenStax', free: null },
+      { course: 'Linear Algebra', book: 'College Algebra', author: 'OpenStax', free: null },
     ],
   },
 ];

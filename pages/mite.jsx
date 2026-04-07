@@ -140,11 +140,10 @@ export default function MiTEPage() {
       {/* ═══ ROADMAP ═══ */}
       <section style={{ maxWidth: 800, margin: '0 auto', padding: isMobile ? '0 20px 40px' : '0 24px 60px' }}>
         <div style={{ fontSize: 12, fontWeight: 700, color: GOLD, letterSpacing: '0.1em', marginBottom: 20, textAlign: 'center' }}>COLLABORATION ROADMAP</div>
-        <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr 1fr', gap: 16 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 16 }}>
           {[
-            { n: '1', title: 'Pilot — 30 Days', sub: 'No cost. No commitment.', items: ['Free access for all MiTE students', 'Entrance test prep module activated', 'AI tutor available immediately', 'Weekly engagement report to faculty'], active: true },
-            { n: '2', title: 'Integration — 90 Days', sub: 'Course-level deployment.', items: ['Custom content for BBA/BS-CS courses', 'Faculty analytics dashboard deployed', 'Student performance tracking', 'MiTE-branded experience'], active: false },
-            { n: '3', title: 'Scale — Roots Network', sub: 'K-12 to university pipeline.', items: ['Extend to Roots Millennium Schools', 'Cambridge O/A Level content for Roots students', 'Seamless transition: school → university', 'Pakistan\'s first AI-integrated education network'], active: false },
+            { n: '1', title: 'Integration — 30 Days', sub: 'Course-level deployment.', items: ['Free access for all MiTE students', 'Custom content for BBA/BS-CS courses', 'Faculty analytics dashboard deployed', 'Student performance tracking', 'MiTE-branded experience'], active: true },
+            { n: '2', title: 'Scale — Roots Network', sub: 'K-12 to university pipeline.', items: ['Extend to Roots Millennium Schools', 'Cambridge O/A Level content for Roots students', 'Seamless transition: school → university', 'Pakistan\'s first AI-integrated education network'], active: false },
           ].map(p => (
             <div key={p.n} style={{ background: 'rgba(250,246,235,0.03)', border: `1px solid ${p.active ? 'rgba(201,168,76,0.3)' : 'rgba(250,246,235,0.06)'}`, borderRadius: 14, padding: '24px 20px' }}>
               <div style={{ width: 44, height: 44, borderRadius: 22, background: p.active ? GOLD : 'rgba(250,246,235,0.1)', color: p.active ? NAVY : 'rgba(250,246,235,0.4)', fontSize: 18, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px' }}>{p.n}</div>
