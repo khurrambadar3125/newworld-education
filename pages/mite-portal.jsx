@@ -73,10 +73,6 @@ export default function MiTEPortal() {
                     style={{ background: GOLD, color: '#080C18', border: 'none', borderRadius: 12, padding: '14px 32px', fontSize: 15, fontWeight: 900, cursor: 'pointer' }}>
                     Start Free — 14 Days →
                   </button>
-                  <button onClick={() => router.push('/mite-faculty')}
-                    style={{ background: 'transparent', border: `2px solid rgba(250,246,235,0.15)`, color: 'rgba(250,246,235,0.6)', borderRadius: 12, padding: '12px 24px', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>
-                    Faculty Login
-                  </button>
                 </div>
               </>
             )}

@@ -172,9 +172,6 @@ export default function MiTEPage() {
           <a href="/mite-study" style={{ display: 'inline-block', background: BLUE, color: '#fff', fontSize: 15, fontWeight: 900, padding: '14px 32px', borderRadius: 12, textDecoration: 'none' }}>
             Explore Courses →
           </a>
-          <a href="/mite-faculty" style={{ display: 'inline-block', background: 'transparent', border: `2px solid ${GOLD}`, color: GOLD, fontSize: 15, fontWeight: 900, padding: '12px 32px', borderRadius: 12, textDecoration: 'none' }}>
-            Faculty Dashboard
-          </a>
         </div>
         <div style={{ fontSize: 14, color: 'rgba(250,246,235,0.3)' }}>
           Khurram Badar — <a href="mailto:khurram@newworld.education" style={{ color: GOLD, textDecoration: 'none' }}>khurram@newworld.education</a>

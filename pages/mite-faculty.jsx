@@ -7,11 +7,16 @@
 
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import LegalFooter from '../components/LegalFooter';
 
 const GOLD = '#C9A84C';
 
 export default function MiTEFaculty() {
+  // Hidden until MiTE has active students and bank content
+  const router = useRouter();
+  useEffect(() => { router.replace('/mite-portal'); }, []);
+
   const [password, setPassword] = useState('');
   const [authenticated, setAuthenticated] = useState(false);
   const [data, setData] = useState(null);
@@ -21,7 +26,7 @@ export default function MiTEFaculty() {
   const fetchData = async (pw) => {
     setLoading(true);
     try {
-      const res = await fetch(`/api/monitor-sessions?password=${encodeURIComponent(pw || password)}`);
+      const res = await fetch('/api/monitor-sessions', { headers: { 'x-admin-password': pw || password } });
       if (res.status === 401) { setAuthenticated(false); setLoading(false); return; }
       const d = await res.json();
       setData(d);
