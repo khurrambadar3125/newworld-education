@@ -64,7 +64,7 @@ export default function MiTEProgress() {
                 </div>
                 <div style={S.card}>
                   <div style={{ fontSize: 28, fontWeight: 900, color: GOLD }}>90</div>
-                  <div style={{ fontSize: 10, color: 'rgba(255,255,255,.4)' }}>Days Free</div>
+                  <div style={{ fontSize: 10, color: 'rgba(255,255,255,.4)' }}>Days Trial</div>
                 </div>
               </div>
 

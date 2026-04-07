@@ -30,7 +30,7 @@ export default function MiTERegister() {
       semester: form.semester || '1',
       phone: form.phone,
       source: 'mite_portal',
-      free_access_until: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000).toISOString(),
+      free_access_until: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString(),
       registered_at: new Date().toISOString(),
     };
 
@@ -67,7 +67,7 @@ export default function MiTERegister() {
           <div style={{ textAlign: 'center', paddingTop: 40, marginBottom: 32 }}>
             <div style={{ fontSize: 40, marginBottom: 12 }}>🎓</div>
             <h1 style={{ fontSize: 24, fontWeight: 900, margin: '0 0 8px' }}>MiTE Student Registration</h1>
-            <p style={{ color: 'rgba(255,255,255,.4)', fontSize: 13 }}>90 days free access — all features, all programs</p>
+            <p style={{ color: 'rgba(255,255,255,.4)', fontSize: 13 }}>14 days free access — all features, all programs</p>
           </div>
 
           <div style={{ background: 'rgba(255,255,255,.03)', border: '1px solid rgba(255,255,255,.08)', borderRadius: 16, padding: '24px 20px' }}>

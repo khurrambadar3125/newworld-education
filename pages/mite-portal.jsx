@@ -62,8 +62,8 @@ export default function MiTEPortal() {
                   MiTE UNIVERSITY × NEWWORLDEDU
                 </div>
                 <h1 style={{ fontSize: isMobile ? 30 : 44, fontWeight: 900, margin: '0 0 12px', lineHeight: 1.15 }}>
-                  The AI platform<br />
-                  <span style={{ color: GOLD }}>your university deserves.</span>
+                  1,851 real exam questions.<br />
+                  <span style={{ color: GOLD }}>Zero hallucinations.</span>
                 </h1>
                 <p style={{ fontSize: 16, color: 'rgba(250,246,235,0.45)', lineHeight: 1.7, maxWidth: 480, margin: '0 auto 24px' }}>
                   Real past papers from IBA, LUMS, FAST, and LAT. Course notes for every semester. An AI tutor that speaks your language. Built for MiTE.
@@ -71,7 +71,7 @@ export default function MiTEPortal() {
                 <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
                   <button onClick={() => router.push('/mite-register')}
                     style={{ background: GOLD, color: '#080C18', border: 'none', borderRadius: 12, padding: '14px 32px', fontSize: 15, fontWeight: 900, cursor: 'pointer' }}>
-                    Start Free — 90 Days →
+                    Start Free — 14 Days →
                   </button>
                   <button onClick={() => router.push('/mite-faculty')}
                     style={{ background: 'transparent', border: `2px solid rgba(250,246,235,0.15)`, color: 'rgba(250,246,235,0.6)', borderRadius: 12, padding: '12px 24px', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>
@@ -198,12 +198,9 @@ export default function MiTEPortal() {
             <p style={{ fontSize: 13, color: 'rgba(250,246,235,0.45)', lineHeight: 1.7, maxWidth: 500, margin: '0 auto 16px' }}>
               MiTE is part of The Millennium Trust — the same trust behind Roots Millennium Schools, Pakistan's third-largest K-12 network. One AI platform. From Grade 6 to graduation.
             </p>
-            <div style={{ display: 'flex', gap: 6, justifyContent: 'center', flexWrap: 'wrap' }}>
-              {['Roots Schools', '→', 'Cambridge O/A Level', '→', 'MiTE University', '→', 'Career'].map((s, i) => (
-                <span key={i} style={{ fontSize: 12, fontWeight: s === '→' ? 400 : 700, color: s === '→' ? 'rgba(250,246,235,0.2)' : GOLD,
-                  padding: s === '→' ? '0' : '4px 10px', border: s === '→' ? 'none' : `1px solid ${GOLD}30`, borderRadius: 6, background: s === '→' ? 'none' : `${GOLD}08` }}>{s}</span>
-              ))}
-            </div>
+            <a href="/mite-vision" style={{ display: 'inline-block', background: GOLD, color: '#080C18', border: 'none', borderRadius: 10, padding: '10px 24px', fontSize: 13, fontWeight: 800, textDecoration: 'none', marginTop: 12, cursor: 'pointer' }}>
+              See the Full Vision →
+            </a>
           </div>
 
           {/* ═══ FOOTER CTA ═══ */}
@@ -211,7 +208,7 @@ export default function MiTEPortal() {
             {!isRegistered && (
               <button onClick={() => router.push('/mite-register')}
                 style={{ background: GOLD, color: '#080C18', border: 'none', borderRadius: 12, padding: '16px 40px', fontSize: 16, fontWeight: 900, cursor: 'pointer', marginBottom: 12 }}>
-                Start Free — 90 Days →
+                Start Free — 14 Days →
               </button>
             )}
             <div style={{ fontSize: 12, color: 'rgba(250,246,235,0.2)' }}>
