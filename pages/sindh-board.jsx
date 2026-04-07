@@ -379,11 +379,13 @@ export default function SindhBoardStudy() {
                                   Agle chapter: {nextCh.name} →
                                 </button>
                               ) : (
-                                <div style={{ textAlign: 'center', fontSize: 13, color: '#4ADE80', fontWeight: 700, padding: '12px 0', marginTop: 8 }}>
-                                  Sab chapters hogaye! Bohat ache! 🎉
-                                </div>
-                                <a href="/sindh-dashboard" style={{ display: 'block', textAlign: 'center', fontSize: 13, fontWeight: 700, color: '#4F8EF7', textDecoration: 'none', padding: '8px 0' }}>
-                                  Apna progress dekhein →
+                                <div style={{ textAlign: 'center', marginTop: 8 }}>
+                                  <div style={{ fontSize: 13, color: '#4ADE80', fontWeight: 700, padding: '12px 0' }}>
+                                    Sab chapters hogaye! Bohat ache! 🎉
+                                  </div>
+                                  <a href="/sindh-dashboard" style={{ display: 'block', textAlign: 'center', fontSize: 13, fontWeight: 700, color: '#4F8EF7', textDecoration: 'none', padding: '8px 0' }}>
+                                    Apna progress dekhein →
+                                  </a>
                                 </div>
                               );
                             })()}
