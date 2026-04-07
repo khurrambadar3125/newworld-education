@@ -47,7 +47,7 @@ export default function MiTEPrep() {
   const [loading, setLoading] = useState(false);
   const [phase, setPhase] = useState('select'); // select | practice | results
 
-  // Serve questions from verified bank — NO AI generation
+  // Serve questions from verified bank
   const startPractice = async (program, section) => {
     setSelectedProgram(program);
     setSelectedSection(section);
@@ -57,23 +57,23 @@ export default function MiTEPrep() {
     setCurrentQ(0);
 
     try {
-      // Fetch 5 questions from the verified bank
+      // Fetch 5 questions from the verified bank — try mite first, then cambridge
       const fetched = [];
       const excludeIds = [];
       for (let i = 0; i < 5; i++) {
-        const res = await fetch('/api/question-bank/serve', {
+        // Try mite curriculum first
+        let res = await fetch('/api/question-bank/serve', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            subject: section.name,
-            level: 'University',
-            topic: section.topics[i % section.topics.length],
+            subject: program.id === 'bscs' ? 'Computer Science' : section.name,
+            level: program.id === 'bscs' ? 'O Level' : 'University',
             type: 'mcq',
-            curriculum: 'mite',
+            curriculum: program.id === 'bscs' ? 'cambridge' : 'mite',
             excludeIds,
           }),
         });
-        const data = await res.json();
+        let data = await res.json();
         if (data.question && data.options) {
           fetched.push({
             question: data.question,

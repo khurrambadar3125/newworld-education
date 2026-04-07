@@ -116,22 +116,18 @@ export default function MiTEStudy() {
             </>
           )}
 
-          {/* Topic List → Practice from bank */}
+          {/* Topic List — study topics for selected course */}
           {selectedCourse && (
             <>
               {selectedCourse.topics.map(topic => (
-                <a key={topic}
-                  href={`/drill?subject=${encodeURIComponent(selectedCourse.name)}&topic=${encodeURIComponent(topic)}&level=University&curriculum=mite&returnTo=${encodeURIComponent('/mite-study')}`}
-                  style={{ ...S.card, display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none', cursor: 'pointer' }}
-                  onMouseOver={e => e.currentTarget.style.borderColor = COURSES[selectedProgram]?.color || '#4F8EF7'}
-                  onMouseOut={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,.1)'}>
-                  <div style={{ width: 32, height: 32, borderRadius: 16, background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 14, color: 'rgba(255,255,255,.3)', flexShrink: 0 }}>★</div>
+                <div key={topic}
+                  style={{ ...S.card, display: 'flex', alignItems: 'center', gap: 12 }}>
+                  <div style={{ width: 32, height: 32, borderRadius: 16, background: `${COURSES[selectedProgram]?.color || '#4F8EF7'}15`, border: `1px solid ${COURSES[selectedProgram]?.color || '#4F8EF7'}30`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 14, color: COURSES[selectedProgram]?.color || '#4F8EF7', flexShrink: 0, fontWeight: 700 }}>✓</div>
                   <div style={{ flex: 1 }}>
                     <div style={{ fontSize: 15, fontWeight: 700, color: '#FAF6EB' }}>{topic}</div>
-                    <div style={{ fontSize: 11, color: 'rgba(255,255,255,.3)' }}>Practice from verified bank</div>
+                    <div style={{ fontSize: 11, color: 'rgba(255,255,255,.3)' }}>{selectedCourse.name} · {selectedProgram}</div>
                   </div>
-                  <span style={{ color: COURSES[selectedProgram]?.color || '#4F8EF7', fontSize: 12, fontWeight: 700 }}>Practice →</span>
-                </a>
+                </div>
               ))}
 
               <div style={{ ...S.card, marginTop: 16, textAlign: 'center', background: 'rgba(201,168,76,.04)', borderColor: 'rgba(201,168,76,.15)' }}>

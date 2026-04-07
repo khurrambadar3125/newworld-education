@@ -63,7 +63,7 @@ export default function MiTEPage() {
       <section style={{ maxWidth: 800, margin: '0 auto', padding: isMobile ? '0 20px 40px' : '0 24px 60px' }}>
         <div style={{ fontSize: 12, fontWeight: 700, color: GOLD, letterSpacing: '0.1em', marginBottom: 20, textAlign: 'center' }}>WHAT WE BUILD FOR MiTE</div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr 1fr', gap: 14 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 14 }}>
 
           {/* Pillar 1: Entrance Test Prep */}
           <div style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 16, padding: '28px 20px' }}>
@@ -80,23 +80,7 @@ export default function MiTEPage() {
             </div>
           </div>
 
-          {/* Pillar 2: AI Tutor */}
-          <div style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 16, padding: '28px 20px' }}>
-            <div style={{ fontSize: 32, marginBottom: 12 }}>★</div>
-            <div style={{ fontWeight: 800, fontSize: 17, color: GOLD, marginBottom: 8 }}>AI Tutor for Every Student</div>
-            <div style={{ fontSize: 13, color: 'rgba(250,246,235,0.55)', lineHeight: 1.7 }}>
-              Starky — a personal AI tutor available 24/7. Understands BBA and BS-CS syllabi. Answers in English, Urdu, or Roman Urdu. Never judges. Never gives up.
-            </div>
-            <div style={{ marginTop: 12, fontSize: 12, color: 'rgba(250,246,235,0.35)' }}>
-              ✓ Course-specific revision notes<br/>
-              ✓ Worked examples + practice questions<br/>
-              ✓ Exam technique + model answers<br/>
-              ✓ Available at midnight before exams<br/>
-              ✓ 16+ languages including Urdu
-            </div>
-          </div>
-
-          {/* Pillar 3: Faculty Dashboard */}
+          {/* Pillar 2: Faculty Dashboard */}
           <div style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 16, padding: '28px 20px' }}>
             <div style={{ fontSize: 32, marginBottom: 12 }}>📊</div>
             <div style={{ fontWeight: 800, fontSize: 17, color: GOLD, marginBottom: 8 }}>Faculty Analytics Dashboard</div>
@@ -173,22 +157,6 @@ export default function MiTEPage() {
               ))}
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* ═══ ABOUT NEWWORLDEDU ═══ */}
-      <section style={{ maxWidth: 800, margin: '0 auto', padding: isMobile ? '0 20px 40px' : '0 24px 60px' }}>
-        <div style={{ background: 'rgba(250,246,235,0.03)', border: '1px solid rgba(250,246,235,0.06)', borderRadius: 20, padding: isMobile ? '24px 20px' : '36px 32px' }}>
-          <div style={{ fontSize: 12, fontWeight: 700, color: 'rgba(250,246,235,0.35)', letterSpacing: '0.1em', marginBottom: 16 }}>ABOUT NEWWORLDEDU</div>
-          <p style={{ fontSize: 15, color: 'rgba(250,246,235,0.6)', lineHeight: 1.8, margin: '0 0 12px' }}>
-            Built by <strong style={{ color: WHITE }}>Khurram Badar</strong> — a 30-year veteran of media, technology, and entrepreneurship across UAE, Pakistan, and the Gulf. Founder of Spotlight FZE (20 years at RAKEZ). Father of three Cambridge students.
-          </p>
-          <p style={{ fontSize: 15, color: 'rgba(250,246,235,0.6)', lineHeight: 1.8, margin: '0 0 12px' }}>
-            NewWorldEdu is Pakistan's first AI-powered education platform with a <strong style={{ color: GOLD }}>verified question bank of 54,000+ real past paper questions</strong>, 500+ revision notes from qualified teachers, and an AI tutor that speaks 16 languages.
-          </p>
-          <p style={{ fontSize: 15, color: 'rgba(250,246,235,0.6)', lineHeight: 1.8, margin: 0 }}>
-            Already deployed at <strong style={{ color: WHITE }}>The Garage School</strong> (550 students, Karachi). Ready for MiTE.
-          </p>
         </div>
       </section>
 
