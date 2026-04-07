@@ -200,11 +200,14 @@ export default function MiTEPage() {
           <span style={{ color: GOLD }}>Together.</span>
         </h2>
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 24 }}>
-          <a href="/study" style={{ display: 'inline-block', background: GOLD, color: NAVY, fontSize: 15, fontWeight: 900, padding: '14px 32px', borderRadius: 12, textDecoration: 'none' }}>
-            See the Platform →
+          <a href="/mite-prep" style={{ display: 'inline-block', background: GOLD, color: NAVY, fontSize: 15, fontWeight: 900, padding: '14px 32px', borderRadius: 12, textDecoration: 'none' }}>
+            Try Entrance Test Prep →
           </a>
-          <a href="/founder" style={{ display: 'inline-block', background: 'transparent', border: `2px solid ${GOLD}`, color: GOLD, fontSize: 15, fontWeight: 900, padding: '12px 32px', borderRadius: 12, textDecoration: 'none' }}>
-            About the Founder
+          <a href="/mite-study" style={{ display: 'inline-block', background: BLUE, color: '#fff', fontSize: 15, fontWeight: 900, padding: '14px 32px', borderRadius: 12, textDecoration: 'none' }}>
+            Explore Courses →
+          </a>
+          <a href="/mite-faculty" style={{ display: 'inline-block', background: 'transparent', border: `2px solid ${GOLD}`, color: GOLD, fontSize: 15, fontWeight: 900, padding: '12px 32px', borderRadius: 12, textDecoration: 'none' }}>
+            Faculty Dashboard
           </a>
         </div>
         <div style={{ fontSize: 14, color: 'rgba(250,246,235,0.3)' }}>
