@@ -235,7 +235,7 @@ export default function MiTEPrep() {
               <div style={{ fontSize: 15, color: 'rgba(255,255,255,.5)', marginBottom: 24 }}>
                 {score.correct === score.total ? 'Perfect! You\'re ready.' : score.correct >= score.total / 2 ? 'Good — keep practicing.' : 'More practice needed.'}
               </div>
-              <div style={{ display: 'flex', gap: 8, justifyContent: 'center' }}>
+              <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap' }}>
                 <button onClick={() => startPractice(selectedProgram, selectedSection)}
                   style={{ padding: '12px 24px', borderRadius: 10, border: 'none', background: '#4F8EF7', color: '#fff', fontWeight: 700, cursor: 'pointer' }}>
                   Practice Again
@@ -244,6 +244,11 @@ export default function MiTEPrep() {
                   style={{ padding: '12px 24px', borderRadius: 10, border: '1px solid rgba(255,255,255,.1)', background: 'none', color: '#fff', fontWeight: 700, cursor: 'pointer' }}>
                   Try Another Section
                 </button>
+              </div>
+              <div style={{ display: 'flex', gap: 8, justifyContent: 'center', marginTop: 12 }}>
+                <a href="/mite-study" style={{ fontSize: 12, color: '#4F8EF7', textDecoration: 'none', fontWeight: 700 }}>📚 Go to Course Study</a>
+                <span style={{ color: 'rgba(255,255,255,.15)' }}>·</span>
+                <a href="/mite-portal" style={{ fontSize: 12, color: '#C9A84C', textDecoration: 'none', fontWeight: 700 }}>🏠 Back to Portal</a>
               </div>
             </div>
           )}

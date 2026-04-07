@@ -44,6 +44,16 @@ export default function SindhBoardStudy() {
     saveProgress({ mcqAnswers, mcqRevealed, completedChapters, chapterScores });
   }, [mcqAnswers, mcqRevealed, completedChapters, chapterScores]);
 
+  // Read query params (from bootcamp "Shuru" button)
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const params = new URLSearchParams(window.location.search);
+    const qSubject = params.get('subject');
+    const qClass = params.get('class');
+    if (qSubject) setSelectedSubject(qSubject);
+    if (qClass) setSelectedClass(parseInt(qClass) || 9);
+  }, []);
+
   useEffect(() => {
     if (!selectedSubject) { setChapters([]); return; }
     const ch = getSindhChapters(selectedSubject, selectedClass);
@@ -80,8 +90,15 @@ export default function SindhBoardStudy() {
       <div style={S.page}>
         <div style={S.container}>
 
-          {/* Back button */}
-          <button onClick={() => router.back()} style={{ background: 'none', border: 'none', color: '#4F8EF7', fontSize: 13, fontWeight: 700, cursor: 'pointer', padding: 0, marginBottom: 12 }}>← Back</button>
+          {/* Back button + Bootcamp return */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+            <button onClick={() => selectedSubject ? setSelectedSubject('') : router.push('/garageschool')} style={{ background: 'none', border: 'none', color: '#4F8EF7', fontSize: 13, fontWeight: 700, cursor: 'pointer', padding: 0 }}>
+              ← {selectedSubject ? 'All Subjects' : 'Back'}
+            </button>
+            {typeof window !== 'undefined' && (() => { try { return JSON.parse(localStorage.getItem('nw_bootcamp_sindh') || '{}').active; } catch { return false; } })() && (
+              <a href="/bootcamp-sindh" style={{ fontSize: 12, fontWeight: 700, color: '#C9A84C', textDecoration: 'none' }}>🎯 Bootcamp →</a>
+            )}
+          </div>
 
           {/* Header */}
           <div style={{ textAlign: 'center', marginBottom: 24 }}>
@@ -364,6 +381,9 @@ export default function SindhBoardStudy() {
                               ) : (
                                 <div style={{ textAlign: 'center', fontSize: 13, color: '#4ADE80', fontWeight: 700, padding: '12px 0', marginTop: 8 }}>
                                   Sab chapters hogaye! Bohat ache! 🎉
+                                </div>
+                                <a href="/sindh-dashboard" style={{ display: 'block', textAlign: 'center', fontSize: 13, fontWeight: 700, color: '#4F8EF7', textDecoration: 'none', padding: '8px 0' }}>
+                                  Apna progress dekhein →
                                 </div>
                               );
                             })()}

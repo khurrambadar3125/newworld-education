@@ -137,7 +137,7 @@ export default function MiTEStudy() {
             <>
               {selectedCourse.topics.map(topic => (
                 <a key={topic}
-                  href={`/?message=${encodeURIComponent(`I'm studying ${selectedCourse.name} at MiTE University (${selectedProgram} program). Please explain "${topic}" in detail with examples. After explaining, suggest practice questions.`)}`}
+                  href={`/?message=${encodeURIComponent(`I'm studying ${selectedCourse.name} at MiTE University (${selectedProgram} program). Please explain "${topic}" in detail with examples. After explaining, tell me to go back to my course page to continue studying.`)}&returnTo=${encodeURIComponent('/mite-study')}`}
                   style={{ ...S.card, display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none', cursor: 'pointer' }}
                   onMouseOver={e => e.currentTarget.style.borderColor = COURSES[selectedProgram]?.color || '#4F8EF7'}
                   onMouseOut={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,.1)'}>

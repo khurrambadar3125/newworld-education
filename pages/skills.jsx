@@ -197,7 +197,7 @@ export default function SkillsPage() {
                     <div style={{ padding: '8px 0 8px 52px' }}>
                       {mod.lessons.map((lesson, i) => (
                         <a key={i}
-                          href={mod.partner ? undefined : `/?message=${encodeURIComponent(`Mujhe "${lesson}" seekhna hai (${mod.name} — ${selectedTrack.name} track). Please mujhe Urdu mein step by step samjhayein. Bilkul basics se shuru karein. Asan alfaaz mein. Examples ke saath.`)}`}
+                          href={mod.partner ? undefined : `/?message=${encodeURIComponent(`Mujhe "${lesson}" seekhna hai (${mod.name} — ${selectedTrack.name} track). Please mujhe Urdu mein step by step samjhayein. Bilkul basics se shuru karein. Asan alfaaz mein. Examples ke saath.`)}&returnTo=${encodeURIComponent('/skills')}`}
                           style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '10px 12px', marginBottom: 4, borderRadius: 10, textDecoration: 'none',
                             background: mod.partner ? 'rgba(255,255,255,.02)' : 'rgba(255,255,255,.03)', border: '1px solid rgba(255,255,255,.04)', cursor: mod.partner ? 'default' : 'pointer' }}
                           onMouseOver={e => { if (!mod.partner) e.currentTarget.style.borderColor = selectedTrack.color; }}
