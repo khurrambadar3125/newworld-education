@@ -327,16 +327,16 @@ export const SYLLABUS = {
   // ════════════════════════════════════════════════════════════
   'Islamiyat': { code: '2058', level: 'O Level', themes: [
     { name: 'Paper 1', sections: [
-      { id: 'P1.1', name: 'Major Themes of the Quran', keywords: ['quran', 'surah', 'ayah', 'theme', 'tawhid'] },
-      { id: 'P1.2', name: 'History and Importance of the Quran', keywords: ['revelation', 'compilation', 'preservation'] },
-      { id: 'P1.3', name: 'Life and Importance of Prophet Muhammad (PBUH)', keywords: ['prophet', 'muhammad', 'makkah', 'madinah', 'hijrah'] },
-      { id: 'P1.4', name: 'The First Islamic Community', keywords: ['community', 'ummah', 'brotherhood'] },
+      { id: 'P1.1', name: 'Major Themes of the Quran', keywords: ['quran', 'surah', 'ayah', 'theme', 'tawhid', 'fatiha', 'baqarah', 'ikhlas', 'nas', 'falaq', 'ayatul kursi'] },
+      { id: 'P1.2', name: 'History and Importance of the Quran', keywords: ['revelation', 'compilation', 'preservation', 'wahy', 'jibreel', 'gabriel', 'hafiz', 'quranic'] },
+      { id: 'P1.3', name: 'Life and Importance of Prophet Muhammad (PBUH)', keywords: ['prophet', 'muhammad', 'makkah', 'madinah', 'hijrah', 'seerah', 'khadijah', 'taif', 'isra', 'miraj', 'farewell'] },
+      { id: 'P1.4', name: 'The First Islamic Community', keywords: ['community', 'ummah', 'brotherhood', 'badr', 'uhud', 'khandaq', 'trench', 'battle', 'hudaybiyyah', 'conquest', 'ansar', 'muhajirin'] },
     ]},
     { name: 'Paper 2', sections: [
-      { id: 'P2.1', name: 'Major Teachings in the Hadiths', keywords: ['hadith', 'teaching', 'sunnah'] },
-      { id: 'P2.2', name: 'History and Importance of the Hadiths', keywords: ['hadith collection', 'bukhari', 'muslim'] },
-      { id: 'P2.3', name: 'The Rightly Guided Caliphs', keywords: ['caliph', 'abu bakr', 'umar', 'uthman', 'ali'] },
-      { id: 'P2.4', name: 'Articles of Faith and Pillars of Islam', keywords: ['pillar', 'shahadah', 'salah', 'zakat', 'hajj', 'iman'] },
+      { id: 'P2.1', name: 'Major Teachings in the Hadiths', keywords: ['hadith', 'teaching', 'sunnah', 'nawawi', 'prophet said'] },
+      { id: 'P2.2', name: 'History and Importance of the Hadiths', keywords: ['hadith collection', 'bukhari', 'muslim', 'tirmidhi', 'isnad', 'matn', 'sahih'] },
+      { id: 'P2.3', name: 'The Rightly Guided Caliphs', keywords: ['caliph', 'abu bakr', 'umar', 'uthman', 'ali', 'rashidun', 'khilafah', 'riddah'] },
+      { id: 'P2.4', name: 'Articles of Faith and Pillars of Islam', keywords: ['pillar', 'shahadah', 'salah', 'zakat', 'hajj', 'iman', 'sawm', 'fasting', 'prayer', 'charity', 'tawhid', 'risalah', 'akhirah'] },
     ]},
   ]},
 
