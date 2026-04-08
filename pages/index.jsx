@@ -55,7 +55,7 @@ const SUBJECTS_OLEVEL = [
   'Mathematics', 'Additional Mathematics', 'Statistics',
   'Physics', 'Chemistry', 'Biology', 'Combined Science', 'Human & Social Biology', 'Environmental Management', 'Agriculture',
   'English Language', 'Literature in English', 'First Language Urdu', 'Second Language Urdu', 'Arabic', 'French', 'German', 'Spanish',
-  'Pakistan Studies', 'History', 'Geography', 'Sociology', 'Economics', 'Islamiyat', 'Islamic Religion & Culture',
+  'Pakistan Studies', 'Sociology', 'Economics', 'Islamiyat',
   'Business Studies', 'Accounting', 'Commerce', 'Travel & Tourism',
   'Computer Science', 'Art & Design', 'Food & Nutrition', 'Fashion & Textiles',
 ];
@@ -1158,7 +1158,7 @@ export default function Home() {
                   : ['grade6','grade7','grade8'].includes(selectedGrade?.id) ? SUBJECTS_MIDDLE
                   : ['grade9','grade10'].includes(selectedGrade?.id) ? SUBJECTS_MATRIC
                   : SUBJECTS_GENERAL).map(s => (
-                  <button key={s} className={`sbb ${selectedSubject===s?'s':''}`} onClick={() => { setSelectedSubject(s); if(!userProfile){setShowRegModal(true);}else{launchChat(null,s);} }}>{s}</button>
+                  <button key={s} className={`sbb ${selectedSubject===s?'s':''}`} onClick={() => { setSelectedSubject(s); if(!userProfile){setShowRegModal(true);}else{ window.location.href='/study?subject='+encodeURIComponent(s)+'&level='+encodeURIComponent(selectedGrade?.label||'O Level'); } }}>{s}</button>
                 ))}
               </div>
             </div>
@@ -1215,7 +1215,7 @@ export default function Home() {
                     <div style={{display:'flex',flexWrap:'wrap',gap:8,justifyContent:'center'}}>
                       {available.map(s=>(
                         <button key={s}
-                          onClick={()=>{ setSelectedSubject(s); if(!userProfile){setShowRegModal(true);}else{launchChat(null,s);} }}
+                          onClick={()=>{ setSelectedSubject(s); if(!userProfile){setShowRegModal(true);}else{ window.location.href='/study?subject='+encodeURIComponent(s)+'&level='+encodeURIComponent(selectedGrade?.label||'O Level'); } }}
                           style={{padding:'9px 18px',borderRadius:100,border:'1px solid rgba(255,255,255,0.1)',fontSize:12,fontWeight:600,cursor:'pointer',fontFamily:"'Sora',sans-serif",transition:'all 0.15s',WebkitTapHighlightColor:'transparent',background:'rgba(255,255,255,0.05)',color:'rgba(255,255,255,0.7)'}}
                           onMouseEnter={e=>{e.currentTarget.style.background='rgba(124,92,191,0.3)';e.currentTarget.style.borderColor='rgba(167,139,250,0.5)';e.currentTarget.style.color='#A78BFA';}}
                           onMouseLeave={e=>{e.currentTarget.style.background='rgba(255,255,255,0.05)';e.currentTarget.style.borderColor='rgba(255,255,255,0.1)';e.currentTarget.style.color='rgba(255,255,255,0.7)';}}>
