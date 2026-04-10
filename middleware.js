@@ -55,6 +55,20 @@ export function middleware(request) {
     }
   }
 
+  // Block requests with no user-agent that hit APIs (bot behavior)
+  if (request.nextUrl.pathname.startsWith('/api/') && ua.length < 10) {
+    return new NextResponse('Access denied', { status: 403 });
+  }
+
+  // Block cron endpoints unless they have proper auth header
+  if (request.nextUrl.pathname.startsWith('/api/cron/')) {
+    const cronAuth = request.headers.get('authorization') || request.headers.get('x-cron-secret');
+    const vercelCron = request.headers.get('x-vercel-cron-auth');
+    if (!cronAuth && !vercelCron) {
+      return new NextResponse('Unauthorized', { status: 401 });
+    }
+  }
+
   // Everyone else (human users) — allow
   return NextResponse.next();
 }
