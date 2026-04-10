@@ -128,7 +128,7 @@ function studentCampaignEmail(name, spotsLeft) {
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
 
-  const password = req.headers['x-admin-password'] || req.query.password;
+  const password = req.headers['x-admin-password'];
   if (password !== process.env.DASHBOARD_PASSWORD) {
     return res.status(401).json({ error: 'Unauthorized' });
   }

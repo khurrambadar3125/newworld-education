@@ -38,9 +38,9 @@ function daysAgo(n) {
 export default async function handler(req, res) {
   if (req.method !== 'GET') return res.status(405).json({ error: 'GET only' });
   // Require both test=true AND admin password or cron secret
-  const auth = req.query.password || req.headers['x-admin-password'] || req.query.secret;
+  const auth = req.headers['x-admin-password'] || req.headers['x-cron-secret'];
   const isAuthed = auth === process.env.DASHBOARD_PASSWORD || auth === process.env.CRON_SECRET;
-  if (req.query.test !== 'true' || !isAuthed) return res.status(401).json({ error: 'Requires ?test=true&password=ADMIN_PASSWORD' });
+  if (req.query.test !== 'true' || !isAuthed) return res.status(401).json({ error: 'Requires ?test=true + x-admin-password header' });
 
   try {
     // Clear mode

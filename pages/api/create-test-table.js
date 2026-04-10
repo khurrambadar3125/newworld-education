@@ -5,7 +5,7 @@
 import { getSupabase } from '../../utils/supabase';
 
 export default async function handler(req, res) {
-  if (req.query.secret !== process.env.CRON_SECRET) return res.status(401).json({ error: 'Unauthorized' });
+  if (req.headers['x-cron-secret'] !== process.env.CRON_SECRET) return res.status(401).json({ error: 'Unauthorized' });
 
   const sb = getSupabase();
   if (!sb) return res.status(500).json({ error: 'No Supabase' });

@@ -24,7 +24,7 @@ export default async function handler(req, res) {
   if (req.method !== 'GET') return res.status(405).json({ error: 'Method not allowed' });
 
   // Auth — same password as dashboard
-  const password = req.query.password || req.headers['x-admin-password'];
+  const password = req.headers['x-admin-password'];
   if (password !== process.env.DASHBOARD_ADMIN_PASSWORD && password !== process.env.DASHBOARD_PASSWORD) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
