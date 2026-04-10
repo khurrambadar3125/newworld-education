@@ -76,6 +76,40 @@ if (typeof window !== 'undefined') {
     console.error('[Unhandled Promise]', e.reason);
     e.preventDefault(); // prevent crash
   });
+
+  // ── DevTools protection — make inspection harder ──────────────────────────
+  // 1. Disable right-click context menu
+  document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+  // 2. Block common DevTools keyboard shortcuts
+  document.addEventListener('keydown', (e) => {
+    // F12
+    if (e.key === 'F12') { e.preventDefault(); return; }
+    // Ctrl+Shift+I / Cmd+Opt+I (Inspector)
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'I') { e.preventDefault(); return; }
+    // Ctrl+Shift+J / Cmd+Opt+J (Console)
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'J') { e.preventDefault(); return; }
+    // Ctrl+Shift+C / Cmd+Opt+C (Element picker)
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'C') { e.preventDefault(); return; }
+    // Ctrl+U / Cmd+U (View source)
+    if ((e.ctrlKey || e.metaKey) && e.key === 'u') { e.preventDefault(); return; }
+  });
+
+  // 3. Clear console in production — no sensitive data leaked
+  if (process.env.NODE_ENV === 'production') {
+    console.clear();
+    console.log('%c⚠️ This is a student learning platform. Unauthorized access is monitored and logged.', 'font-size:16px;color:red;font-weight:bold');
+  }
+
+  // 4. Override console methods in production to prevent data leaking
+  if (process.env.NODE_ENV === 'production') {
+    const noop = () => {};
+    console.log = noop;
+    console.info = noop;
+    console.debug = noop;
+    console.table = noop;
+    // Keep console.error and console.warn for debugging
+  }
 }
 
 // ── Offline detection banner for 3G connections ─────────────────────────────

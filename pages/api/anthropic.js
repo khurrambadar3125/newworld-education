@@ -207,6 +207,19 @@ export default async function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
+  // ── Rate limiting — prevent cost attacks ──────────────────────────────────
+  const clientIp = req.headers['x-forwarded-for']?.split(',')[0] || 'unknown';
+  if (!global._apiRateMap) global._apiRateMap = new Map();
+  const now = Date.now();
+  const entry = global._apiRateMap.get(clientIp);
+  if (entry && now - entry.t < 60000 && entry.c >= 30) {
+    return res.status(429).json({ error: 'Too many requests. Please wait a moment.' });
+  }
+  if (!entry || now - entry.t > 60000) global._apiRateMap.set(clientIp, { t: now, c: 1 });
+  else entry.c++;
+  // Clean old entries every 5 min
+  if (now % 300000 < 1000) { for (const [k,v] of global._apiRateMap) { if (now - v.t > 120000) global._apiRateMap.delete(k); } }
+
   if (!process.env.ANTHROPIC_API_KEY) {
     return res.status(500).json({ error: 'Server configuration error.' });
   }

@@ -604,7 +604,8 @@ export default function Home() {
         </div>
         {(nanoMode || paramFrom) && (() => {
           const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
-          const returnTo = urlParams?.get('returnTo');
+          const rawReturn = urlParams?.get('returnTo');
+          const returnTo = rawReturn && rawReturn.startsWith('/') && !rawReturn.startsWith('//') ? rawReturn : null;
           const backLabel = paramFrom === 'nano-teach' ? 'Back to Lesson' : paramFrom === 'nano' || !paramFrom ? 'Nano' : paramFrom === 'study-plan' ? 'Study Plan' : paramFrom === 'starky-saturdays' ? 'Starky Saturdays' : paramFrom === 'dashboard' ? 'Dashboard' : paramFrom.charAt(0).toUpperCase() + paramFrom.slice(1);
           return (
             <a href={returnTo || (paramFrom ? `/${paramFrom}` : '/nano')} style={{display:'block',padding:'8px 16px',background:'rgba(201,168,76,0.08)',borderBottom:'1px solid rgba(201,168,76,0.15)',fontSize:13,fontWeight:700,color:'#C9A84C',textDecoration:'none',textAlign:'center'}}>
