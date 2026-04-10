@@ -506,8 +506,9 @@ export default async function handler(req, res) {
   // Auto-chain: trigger next batch if more questions remain
   if (endIdx < QUESTIONS.length) {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.newworld.education';
-    fetch(`${baseUrl}/api/cron/cambridge-test?secret=${process.env.CRON_SECRET}&batch=${batchSize}&start=${endIdx}`, {
+    fetch(`${baseUrl}/api/cron/cambridge-test?batch=${batchSize}&start=${endIdx}`, {
       method: 'GET',
+      headers: { 'x-cron-secret': process.env.CRON_SECRET },
     }).catch(() => {});
   }
 

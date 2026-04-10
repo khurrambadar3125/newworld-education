@@ -6,10 +6,10 @@
  *   2. Claude Code to answer "what did you learn from the session 2 hours ago?"
  *   3. Dashboard to show per-session teaching effectiveness
  *
- * GET /api/session-insights?password=DASHBOARD_PASSWORD
- * GET /api/session-insights?password=DASHBOARD_PASSWORD&email=student@email.com
- * GET /api/session-insights?password=DASHBOARD_PASSWORD&hours=6  (last 6 hours)
- * GET /api/session-insights?password=DASHBOARD_PASSWORD&limit=20
+ * GET /api/session-insights (header: x-admin-password)
+ * GET /api/session-insights?email=student@email.com (header: x-admin-password)
+ * GET /api/session-insights?hours=6 (header: x-admin-password)
+ * GET /api/session-insights?limit=20 (header: x-admin-password)
  */
 
 import { Redis } from '@upstash/redis';

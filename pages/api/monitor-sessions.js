@@ -1,7 +1,7 @@
 /**
  * pages/api/monitor-sessions.js — Real-time session monitor for Khurram
  * ─────────────────────────────────────────────────────────────────
- * GET /api/monitor-sessions?password=DASHBOARD_PASSWORD
+ * GET /api/monitor-sessions (header: x-admin-password)
  *
  * Returns live data about active students, recent sessions,
  * nano-teach progress, and study path activity.

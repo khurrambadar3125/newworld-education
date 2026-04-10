@@ -254,7 +254,7 @@ export default async function handler(req, res) {
   // Auto-chain next batch
   if (endIdx < TOTAL_QUESTIONS) {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.newworld.education';
-    fetch(`${baseUrl}/api/cron/cambridge-4k?secret=${process.env.CRON_SECRET}&batch=${batchSize}&start=${endIdx}`, { method: 'GET' }).catch(() => {});
+    fetch(`${baseUrl}/api/cron/cambridge-4k?batch=${batchSize}&start=${endIdx}`, { method: 'GET', headers: { 'x-cron-secret': process.env.CRON_SECRET } }).catch(() => {});
   }
 
   return res.status(200).json({
