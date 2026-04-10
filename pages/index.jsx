@@ -1153,8 +1153,8 @@ export default function Home() {
                   : uaeCurriculum === 'american' ? AMERICAN_SUBJECT_LIST
                   : uaeCurriculum === 'cbse' ? CBSE_SUBJECT_LIST
                   : uaeCurriculum === 'ib' ? IB_SUBJECT_LIST
-                  : selectedGrade?.id?.includes('olevel') ? SUBJECTS_OLEVEL
-                  : selectedGrade?.id?.includes('alevel') ? SUBJECTS_ALEVEL
+                  : selectedGrade?.id?.includes('olevel') ? (userCountry === 'UAE' ? SUBJECTS_OLEVEL.filter(s => !['Pakistan Studies','Islamiyat','First Language Urdu','Second Language Urdu'].includes(s)) : SUBJECTS_OLEVEL)
+                  : selectedGrade?.id?.includes('alevel') ? (userCountry === 'UAE' ? SUBJECTS_ALEVEL.filter(s => !['Islamic Studies'].includes(s)) : SUBJECTS_ALEVEL)
                   : ['kg','grade1','grade2','grade3','grade4','grade5'].includes(selectedGrade?.id) ? SUBJECTS_PRIMARY
                   : ['grade6','grade7','grade8'].includes(selectedGrade?.id) ? SUBJECTS_MIDDLE
                   : ['grade9','grade10'].includes(selectedGrade?.id) ? SUBJECTS_MATRIC
