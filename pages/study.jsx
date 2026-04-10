@@ -21,7 +21,7 @@ import { getSyllabusSubjects } from '../utils/syllabusStructure';
 const _syllabusOLevel = getSyllabusSubjects();
 const SUBJECTS = {
   'O Level': _syllabusOLevel,
-  'A Level': ['Mathematics','Chemistry','Physics','Biology','Economics','Business','Computer Science','Psychology','Accounting','History','Geography','Sociology','English Language','Law','Further Mathematics','Literature in English'],
+  'A Level': ['Mathematics','Chemistry','Physics','Biology','Economics','Business','Computer Science','Psychology','Accounting','History','Geography','Sociology','English Language','Further Mathematics','Literature in English'],
 };
 
 const MASTERY_COLORS = ['#555','#EF4444','#F97316','#EAB308','#4ADE80','#4F8EF7'];

@@ -62,11 +62,11 @@ export default function MiTEPortal() {
                   MiTE UNIVERSITY × NEWWORLDEDU
                 </div>
                 <h1 style={{ fontSize: isMobile ? 30 : 44, fontWeight: 900, margin: '0 0 12px', lineHeight: 1.15 }}>
-                  19,000+ verified questions.<br />
-                  <span style={{ color: GOLD }}>From real exam papers.</span>
+                  Verified exam questions.<br />
+                  <span style={{ color: GOLD }}>From real past papers.</span>
                 </h1>
                 <p style={{ fontSize: 16, color: 'rgba(250,246,235,0.45)', lineHeight: 1.7, maxWidth: 480, margin: '0 auto 24px' }}>
-                  19,000+ verified questions for BBA and BS-CS. Course support for every semester. An AI tutor that speaks your language. Built for MiTE.
+                  Verified questions for BBA and BS-CS from real entrance tests. Course support for every semester. Built for MiTE.
                 </p>
                 <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
                   <button onClick={() => router.push('/mite-register')}
@@ -81,7 +81,7 @@ export default function MiTEPortal() {
           {/* ═══ THE NUMBERS — what makes this real ═══ */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 6, marginBottom: 28 }}>
             {[
-              { n: '19K+', l: 'Questions', sub: 'Verified from source' },
+              { n: '15K+', l: 'CS Questions', sub: 'Verified from source' },
               { n: '2', l: 'Programs', sub: 'BBA · BS-CS' },
               { n: '18+', l: 'Courses', sub: 'All semesters' },
               { n: '8', l: 'Semesters', sub: 'Full curriculum' },
