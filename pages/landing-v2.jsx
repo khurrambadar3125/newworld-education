@@ -75,28 +75,28 @@ const CSS = `
   /* Sidebar vertical text */
   .lp-vert{writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg)}
 
-  /* Scroll reveal */
-  .lp-r{opacity:0;transform:translateY(50px);transition:opacity .85s cubic-bezier(.22,1,.36,1),transform .85s cubic-bezier(.22,1,.36,1)}
-  .lp-r.vis{opacity:1;transform:translateY(0)}
-  .lp-rl{opacity:0;transform:translateX(-50px);transition:opacity .85s cubic-bezier(.22,1,.36,1),transform .85s cubic-bezier(.22,1,.36,1)}
-  .lp-rl.vis{opacity:1;transform:translateX(0)}
-  .lp-rr{opacity:0;transform:translateX(50px);transition:opacity .85s cubic-bezier(.22,1,.36,1),transform .85s cubic-bezier(.22,1,.36,1)}
-  .lp-rr.vis{opacity:1;transform:translateX(0)}
+  /* Scroll reveal — Framer Motion-style spring feel */
+  .lp-r{opacity:0;transform:translateY(60px) scale(.97);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}
+  .lp-r.vis{opacity:1;transform:translateY(0) scale(1)}
+  .lp-rl{opacity:0;transform:translateX(-60px) scale(.97);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}
+  .lp-rl.vis{opacity:1;transform:translateX(0) scale(1)}
+  .lp-rr{opacity:0;transform:translateX(60px) scale(.97);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}
+  .lp-rr.vis{opacity:1;transform:translateX(0) scale(1)}
 
-  /* Stagger children */
-  .lp-stag>*{opacity:0;transform:translateY(36px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
-  .lp-stag.vis>*:nth-child(1){transition-delay:0s;opacity:1;transform:translateY(0)}
-  .lp-stag.vis>*:nth-child(2){transition-delay:.07s;opacity:1;transform:translateY(0)}
-  .lp-stag.vis>*:nth-child(3){transition-delay:.14s;opacity:1;transform:translateY(0)}
-  .lp-stag.vis>*:nth-child(4){transition-delay:.21s;opacity:1;transform:translateY(0)}
-  .lp-stag.vis>*:nth-child(5){transition-delay:.28s;opacity:1;transform:translateY(0)}
-  .lp-stag.vis>*:nth-child(6){transition-delay:.35s;opacity:1;transform:translateY(0)}
-  .lp-stag.vis>*:nth-child(7){transition-delay:.42s;opacity:1;transform:translateY(0)}
-  .lp-stag.vis>*:nth-child(8){transition-delay:.49s;opacity:1;transform:translateY(0)}
+  /* Stagger children — spring feel with scale */
+  .lp-stag>*{opacity:0;transform:translateY(44px) scale(.95);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+  .lp-stag.vis>*:nth-child(1){transition-delay:0s;opacity:1;transform:translateY(0) scale(1)}
+  .lp-stag.vis>*:nth-child(2){transition-delay:.08s;opacity:1;transform:translateY(0) scale(1)}
+  .lp-stag.vis>*:nth-child(3){transition-delay:.16s;opacity:1;transform:translateY(0) scale(1)}
+  .lp-stag.vis>*:nth-child(4){transition-delay:.24s;opacity:1;transform:translateY(0) scale(1)}
+  .lp-stag.vis>*:nth-child(5){transition-delay:.32s;opacity:1;transform:translateY(0) scale(1)}
+  .lp-stag.vis>*:nth-child(6){transition-delay:.40s;opacity:1;transform:translateY(0) scale(1)}
+  .lp-stag.vis>*:nth-child(7){transition-delay:.48s;opacity:1;transform:translateY(0) scale(1)}
+  .lp-stag.vis>*:nth-child(8){transition-delay:.56s;opacity:1;transform:translateY(0) scale(1)}
 
-  /* Card hover */
-  .lp-card{transition:transform .4s cubic-bezier(.34,1.56,.64,1),box-shadow .4s ease,border-color .3s ease}
-  .lp-card:hover{transform:translateY(-6px)!important;box-shadow:0 16px 48px rgba(79,142,247,.12)!important;border-color:rgba(79,142,247,.25)!important}
+  /* Card hover — spring bounce */
+  .lp-card{transition:transform .5s cubic-bezier(.34,1.56,.64,1),box-shadow .5s ease,border-color .4s ease}
+  .lp-card:hover{transform:translateY(-8px) scale(1.02)!important;box-shadow:0 20px 56px rgba(79,142,247,.15)!important;border-color:rgba(79,142,247,.3)!important}
 
   /* Button */
   .lp-btn{transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s ease}
@@ -119,21 +119,39 @@ const CSS = `
   }
 `;
 
-// ─── Scroll reveal hook ───
+// ─── Scroll reveal hook (fires after mount + keeps observing) ───
 function useReveal() {
   useEffect(() => {
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
-    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-    document.querySelectorAll('.lp-r,.lp-rl,.lp-rr,.lp-stag').forEach(el => obs.observe(el));
-    return () => obs.disconnect();
+    // Delay to ensure DOM is ready after hero renders
+    const timer = setTimeout(() => {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+      }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
+      document.querySelectorAll('.lp-r,.lp-rl,.lp-rr,.lp-stag').forEach(el => obs.observe(el));
+      // Re-observe periodically for dynamically appearing elements
+      const recheck = setInterval(() => {
+        document.querySelectorAll('.lp-r:not(.vis),.lp-rl:not(.vis),.lp-rr:not(.vis),.lp-stag:not(.vis)').forEach(el => obs.observe(el));
+      }, 500);
+      window._lpCleanup = () => { obs.disconnect(); clearInterval(recheck); };
+    }, 100);
+    return () => { clearTimeout(timer); if (window._lpCleanup) window._lpCleanup(); };
   }, []);
 }
 
 // ─── Section wrapper ───
-function Sec({ children, id, bg, style = {} }) {
+function Sec({ children, id, bg, style = {}, shapes }) {
   return (
-    <section id={id} className="lp-sec" style={{ padding: '80px 48px', background: bg || 'transparent', position: 'relative', ...style }}>
+    <section id={id} className="lp-sec" style={{ padding: '80px 48px', background: bg || 'transparent', position: 'relative', overflow: 'hidden', ...style }}>
+      {/* Subtle floating shapes per section */}
+      {shapes && shapes.map((s, i) => (
+        <div key={i} style={{
+          position: 'absolute', left: s.x, top: s.y,
+          fontSize: s.size || 20, opacity: .06, color: s.color || C.primary,
+          animation: `lpFloat ${4 + i}s ease-in-out infinite`,
+          animationDelay: `${i * .5}s`,
+          pointerEvents: 'none', userSelect: 'none',
+        }}>{s.ch}</div>
+      ))}
       <div style={{ maxWidth: 1100, margin: '0 auto', position: 'relative', zIndex: 1 }}>{children}</div>
     </section>
   );
@@ -241,9 +259,20 @@ function HeroCarousel() {
             fontFamily: '"Nunito",sans-serif', fontWeight: 900, fontSize: 'min(17vw, 200px)',
             color: s.dark ? '#1a1a2e' : '#fff', opacity: .95, letterSpacing: -4, lineHeight: .95,
             textAlign: 'center', userSelect: 'none', position: 'relative', zIndex: 3,
-            textShadow: s.dark ? 'none' : '0 4px 40px rgba(0,0,0,.12)',
+            textShadow: s.dark ? 'none' : '0 6px 40px rgba(0,0,0,.18)',
             animation: i === cur ? 'lpBigIn .9s cubic-bezier(.22,1,.36,1) forwards' : 'none',
+            marginBottom: 24,
           }}>{s.big}</h1>
+
+          {/* Tagline inside hero */}
+          <p style={{
+            fontFamily: '"Nunito",sans-serif', fontWeight: 800,
+            fontSize: 'clamp(16px, 2.5vw, 26px)',
+            color: s.dark ? 'rgba(26,26,46,.7)' : 'rgba(255,255,255,.8)',
+            textAlign: 'center', maxWidth: 600, lineHeight: 1.4,
+            position: 'relative', zIndex: 3,
+            animation: i === cur ? 'lpTagIn .7s .4s cubic-bezier(.22,1,.36,1) both' : 'none',
+          }}>{s.tagline}</p>
         </div>
       ))}
 
@@ -259,7 +288,7 @@ function HeroCarousel() {
       {/* Bottom bar */}
       <div className="lp-bot" style={{ position: 'absolute', bottom: 0, left: 0, right: 0, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 48px 14px 76px', zIndex: 100 }}>
         <Link href="/contact" className="lp-btn" style={{ background: dark ? '#1a1a2e' : '#fff', color: dark ? '#FBBF24' : C.primary, fontFamily: '"Nunito",sans-serif', fontWeight: 800, fontSize: 14, padding: '12px 28px', borderRadius: 100 }}>Get in touch</Link>
-        <p className="lp-bot-tag" style={{ fontFamily: '"Nunito",sans-serif', fontWeight: 800, fontSize: 'clamp(14px,2vw,20px)', color: dark ? '#1a1a2e' : '#fff', textAlign: 'center', flex: 1, padding: '0 20px', transition: 'color .5s', lineHeight: 1.3, animation: `lpTagIn .6s .3s cubic-bezier(.22,1,.36,1) both` }}>{slide.tagline}</p>
+        <p className="lp-bot-tag" style={{ fontFamily: '"Nunito",sans-serif', fontWeight: 800, fontSize: 'clamp(15px,2.2vw,22px)', color: dark ? '#1a1a2e' : '#fff', textAlign: 'center', flex: 1, padding: '0 24px', transition: 'color .5s', lineHeight: 1.35 }}>{slide.tagline}</p>
         <Link href="/start" className="lp-btn" style={{ background: dark ? '#1a1a2e' : '#fff', color: dark ? '#FBBF24' : C.primary, fontFamily: '"Nunito",sans-serif', fontWeight: 800, fontSize: 14, padding: '12px 28px', borderRadius: 100 }}>Start free →</Link>
       </div>
 
@@ -286,7 +315,7 @@ function WhyStarky() {
   ];
 
   return (
-    <Sec>
+    <Sec shapes={[{ch:'★',x:'5%',y:'15%',size:32,color:C.green},{ch:'◆',x:'92%',y:'25%',size:24,color:C.pink},{ch:'●',x:'8%',y:'75%',size:18,color:C.yellow}]}>
       <SH label="Why Starky" title="Built to actually help your child" />
       <div className="lp-stag lp-g4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16 }}>
         {cards.map(c => (
