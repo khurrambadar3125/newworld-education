@@ -217,6 +217,21 @@ It is always better to do nothing than to accidentally reduce something that too
 
 ---
 
+## ABSOLUTE RULES — EVERY SESSION, EVERY CHANGE
+
+1. **BANK-FIRST** — Never AI-generate questions. Serve from verified bank only. If the bank is empty for a subject, say so — don't fake it with AI.
+2. **STEM IN ENGLISH** — Physics, Chemistry, Maths, Biology, CS, Accounting always taught in English. Never Roman Urdu for technical terms. Only Urdu/Islamiyat/Pak Studies/Sindhi use regional languages.
+3. **NO 3RD PARTY LINKS** — Never link to external sites from student-facing pages. No OpenStax, no GitHub, no Taleem360 links on the platform.
+4. **TEST THE FULL FLOW** — Click every button, follow every link, check what the student actually sees. Don't just edit code and push. If you wire a page to another page, OPEN that page and verify it makes sense.
+5. **CHECK THE BANK** — Before building any new section, verify the bank has content for it. Query Supabase. No empty shells that pretend to have content.
+6. **PLATFORM FIRST** — Subject selection goes to structured study path (/study), not Starky chat. Bank before AI. Students learn from verified content, not AI-generated answers.
+7. **NO MATRIC ON CAMBRIDGE** — Sindh Board/Matric content must never appear in Cambridge or MiTE flows. Check localStorage board settings and nav menus.
+8. **CONTENT MUST MATCH SOURCE** — Verify programs, subjects, curricula from the actual institution website. Don't guess. Don't assume. Check mite.edu.pk, Cambridge syllabi, etc.
+9. **FIX ALL INSTANCES** — When fixing a bug, search every file that might have the same issue. Don't fix one page and leave 8 others broken.
+10. **NANO LEARNING FORMAT** — Study content should follow: definition → real-world example → practice MCQ from bank. Not walls of text definitions. Maths must show equations and worked examples, not paragraphs.
+
+---
+
 ## Tech Stack Reference
 
 - **Framework**: Next.js 15 (Pages Router, JSX)
@@ -652,55 +667,381 @@ npm run lint     # ESLint
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Session Snapshot (auto-updated)
 <!-- This section is auto-updated by .claude/update-claude-md.sh Stop hook -->
-<!-- Last sync: 2026-04-03 01:16 -->
+<!-- Last sync: 2026-04-10 11:05 -->
 
-**Platform counts**: 60 pages, 84 utils, 88 API routes, 8 components, 25 cron jobs
+**Platform counts**: 92 pages, 91 utils, 100 API routes, 20 components, 27 cron jobs
 
-**All pages**: _app,arts,arts-for-all,challenge,championship,contact,countdown,dashboard,demo,drill,essay,exam-compass,free-practice-test,garageschool,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,learn,login,mocks,music,music-for-all,nano,news,nixor,nixordemo,our-results,parent,past-papers,phonics,phonics-uae,pricing,privacy,reading,reading-for-all,referral,responsible-ai,school,sing,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study-plan,subscribe,summer,summer-uae,terms,textbooks,upload-papers,voice-lab,zayd-mode
+**All pages**: 404,500,_app,arts,arts-for-all,become-newton,books,bootcamp,bootcamp-sindh,challenge,championship,contact,countdown,daily-challenge,dashboard,demo,drill,entrance-tests,essay,exam-compass,founder,founding,free-practice-test,garage-admin,garage-login,garageschool,homework,ibcc,iep,index,insights,khda-demo,kids,languages,leaderboard,learn,login,mite,mite-books,mite-faculty,mite-papers,mite-portal,mite-prep,mite-progress,mite-register,mite-study,mite-vision,mocks,monitor,music,music-for-all,nano,nano-learn,nano-teach,news,nixor,nixordemo,our-results,parent,partner,past-papers,phonics,phonics-uae,pricing,privacy,progress,reading,reading-for-all,referral,responsible-ai,sat,school,sindh-board,sindh-dashboard,skills,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study,study-plan,subscribe,summer,summer-uae,terms,textbooks,try,upload-papers,voice-lab,zayd-mode
 
-**All utils**: academicExcellence,americanCurriculumKB,analytics,apiAuth,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeDialectKB,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,commandWordEngine,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,errorAlert,examCompassEngine,examinerReportsKB,extendedResponseKB,getKnowledgeForTopic,globalKnowledgeBase,gradePredictionEngine,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,kbWishlist,literatureArabicKB,markSchemeKB,masteryEngine,motherTongue,notify,outcomeTrackingKB,patternEngine,phonicsKB,physicsAtomsOLevel,platformLearningEngine,practiceKB,productGate,questionBank,rateLimit,readingKnowledge,realtimeLearning,responsibleAIPolicy,saturdayFreeLogic,senKnowledge,seoArticles,sessionAnalysis,share,signalCollector,singingGoalsKB,singingKB,spacedRepEngine,starkyAtomsKB,starkyIntents,starkyPrompt,studyPlanEngine,summerKnowledge,supabase,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,youngLearnerKB
+**All utils**: academicExcellence,americanCurriculumKB,analytics,anthropicClient,apiAuth,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeDialectKB,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,commandWordEngine,contentProtection,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,errorAlert,examCompassEngine,examinerReportsKB,extendedResponseKB,getKnowledgeForTopic,globalKnowledgeBase,gradePredictionEngine,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,journeyTracker,kbWishlist,literatureArabicKB,markSchemeKB,masteryEngine,motherTongue,newtonKB,notify,outcomeTrackingKB,patternEngine,phonicsKB,physicsAtomsOLevel,platformLearningEngine,practiceKB,productGate,questionBank,rateLimit,readingKnowledge,realtimeLearning,responsibleAIPolicy,saturdayFreeLogic,senKnowledge,senProgressionKB,seoArticles,sessionAnalysis,share,signalCollector,sindhBoardSyllabus,singingGoalsKB,singingKB,spacedRepEngine,starkyAtomsKB,starkyIntents,starkyPrompt,studyPlanEngine,summerKnowledge,supabase,syllabusStructure,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,welcomeEmails,youngLearnerKB
 
 **Last 10 commits**:
 ```
-e0fcf75 Add Psychology 9990 code — 18,842 verified questions across 18 subjects
-1050df8 Add A Level codes: Business 9609, CS 9618, Accounting 9706
-70c392a Switch upload scripts to Sonnet — admin tool, better accuracy + 8K tokens
-32e6049 Fix API overload — add retry with backoff + 2s delay between papers
-2c161c8 Add 5 new subjects + process Desktop backlog — massive expansion
-3760e46 Add Accounting 7707 — 207 questions from 4 sessions
-4a745d8 Fix build — CHALLENGES renamed to FALLBACK_CHALLENGES, missed one reference
-6aa210f Add nixordemo page — replaces obsolete spotlightdubai version
-a3196dd Add Computer Science 2210 — 357 questions from 6 sessions
-b3c3e11 Add Commerce 7100 — 407 questions from 6 sessions
+213de32 Add STEM English-only rule to Starky prompt — no Roman Urdu for science/maths
+48c329d Fix Islamiat keyword matching — add battle names, surahs, hadith terms
+ebac5e2 PLATFORM FIRST: Subject selection goes to /study, not Starky. Fix O Level subjects.
+03d2d59 SECURITY: Fix password in URL on mite-faculty. Hide faculty dashboard until launch.
+93a2e7c MiTE cleanup: remove 3rd party book links, Pilot phase, About section
+d62d2b7 Fix MiTE: remove broken drill links, Starky pillar, About section. Keep topics in-page.
+e20bbca Remove 'Zero hallucinations' from mite-portal hero — replace with 'From real exam papers'
+b1cba6c Wire MiTE to verified bank — remove all AI generation. Hide Starky/mic on MiTE pages.
+2aca023 Remove BS-FD + Accounting from MiTE (no bank) — keep only BBA + BS-CS. Fix nav leak.
+933c6dd Clean all stale Law/LAT/LUMS/FAST refs from MiTE section — match actual mite.edu.pk programs
 ```
 
 **Files changed in last commit**:
 ```
-scripts/upload-papers.mjs
+utils/starkyPrompt.js
 ```
 
 **Uncommitted changes**: CLAUDE.md
-pages/api/auth/[...nextauth].js
-pages/api/question-bank/serve-batch.js
-pages/api/question-bank/serve.js
-pages/challenge.jsx
-pages/drill.jsx
-pages/free-practice-test.jsx
-scripts/upload-papers.mjs
-utils/questionBank.js
+package-lock.json
+package.json
 **Untracked files**: .env.vercel
-pages/api/exam-compass.js
-pages/api/question-bank/grade.js
-pages/api/study-plan.js
-pages/api/todays-plan.js
-pages/exam-compass.jsx
-pages/learn.jsx
-scripts/backfill-sessions.mjs
-scripts/extract-sat-books.mjs
-utils/examCompassEngine.js
-utils/masteryEngine.js
-utils/rateLimit.js
-utils/spacedRepEngine.js
-utils/studyPlanEngine.js
