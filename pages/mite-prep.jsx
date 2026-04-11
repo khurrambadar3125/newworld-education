@@ -117,7 +117,10 @@ export default function MiTEPrep() {
 
   return (
     <>
-      <Head><title>MiTE Entrance Test Prep | NewWorldEdu</title></Head>
+      <Head>
+        <title>MiTE Entrance Test Prep | NewWorldEdu</title>
+        <meta name="description" content="MiTE Entrance Test Preparation — practice questions, mock tests, and study plans." />
+      </Head>
       <div style={S.page}>
         <div style={S.container}>
 

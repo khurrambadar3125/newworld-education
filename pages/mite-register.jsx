@@ -61,7 +61,10 @@ export default function MiTERegister() {
 
   return (
     <>
-      <Head><title>Register — MiTE University Portal</title></Head>
+      <Head>
+        <title>Register — MiTE University Portal</title>
+        <meta name="description" content="Register for MiTE Entrance Test Prep — create your account and start practicing. Free on NewWorldEdu." />
+      </Head>
       <div style={S.page}>
         <div style={S.container}>
           <div style={{ textAlign: 'center', paddingTop: 40, marginBottom: 32 }}>

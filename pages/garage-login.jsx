@@ -84,7 +84,10 @@ export default function GarageLogin() {
 
   return (
     <>
-      <Head><title>Student Login — The Garage School | NewWorldEdu</title></Head>
+      <Head>
+        <title>Student Login — The Garage School | NewWorldEdu</title>
+        <meta name="description" content="Garage School Login — access your NewWorldEdu learning portal." />
+      </Head>
       <div style={S.page}>
         <div style={S.container}>
 

@@ -50,6 +50,7 @@ export default function MiTEVision() {
     <>
       <Head>
         <title>The Vision — From Roots to Every Student in Pakistan</title>
+        <meta name="description" content="MiTE Institute Vision — learn about the programs, faculty, and admission process." />
         <meta name="robots" content="noindex" />
       </Head>
       <div style={S.page}>

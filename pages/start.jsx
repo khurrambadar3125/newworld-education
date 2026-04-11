@@ -71,6 +71,7 @@ export default function Start() {
     <>
       <Head>
         <title>Welcome to NewWorldEdu!</title>
+        <meta name="description" content="Start learning with Starky — your personal AI tutor. Pick your grade, choose a subject, and begin. Free 7-day trial." />
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
       </Head>
 

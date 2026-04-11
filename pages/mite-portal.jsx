@@ -39,7 +39,7 @@ export default function MiTEPortal() {
     <>
       <Head>
         <title>MiTE University — AI-Powered Learning Platform</title>
-        <meta name="description" content="MiTE University's complete AI education platform. Entrance prep, course study, past papers, and faculty analytics for BBA and BS-CS." />
+        <meta name="description" content="MiTE Entrance Test Prep — practice for BBA, BS-CS, BS-FD, and Accounting admissions. 19,400+ verified questions." />
       </Head>
       <div style={S.page}>
         <div style={S.container}>

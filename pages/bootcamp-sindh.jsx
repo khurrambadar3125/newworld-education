@@ -89,7 +89,10 @@ export default function SindhBootcamp() {
 
   return (
     <>
-      <Head><title>Sindh Board Bootcamp — Matric Study Plan | NewWorldEdu</title></Head>
+      <Head>
+        <title>Sindh Board Bootcamp — Matric Study Plan | NewWorldEdu</title>
+        <meta name="description" content="Sindh Board Bootcamp — intensive exam prep for Matric students. Practice with real board questions. Free on NewWorldEdu." />
+      </Head>
       <div style={S.page}>
         <div style={S.container}>
 

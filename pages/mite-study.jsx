@@ -63,7 +63,10 @@ export default function MiTEStudy() {
 
   return (
     <>
-      <Head><title>MiTE Study — AI Tutor for University Courses | NewWorldEdu</title></Head>
+      <Head>
+        <title>MiTE Study — AI Tutor for University Courses | NewWorldEdu</title>
+        <meta name="description" content="MiTE Study Materials — prepare for entrance tests with verified practice questions and study guides." />
+      </Head>
       <div style={S.page}>
         <div style={S.container}>
 

@@ -25,7 +25,10 @@ export default function MiTEProgress() {
 
   return (
     <>
-      <Head><title>My Progress — MiTE University | NewWorldEdu</title></Head>
+      <Head>
+        <title>My Progress — MiTE University | NewWorldEdu</title>
+        <meta name="description" content="Track your MiTE prep progress — see mastery levels, weak topics, and predicted scores." />
+      </Head>
       <div style={S.page}>
         <div style={S.container}>
           <a href="/mite-portal" style={{ fontSize: 13, color: '#4F8EF7', textDecoration: 'none', fontWeight: 700 }}>← Back to Portal</a>

@@ -171,7 +171,10 @@ export default function Bootcamp() {
 
   return (
     <>
-      <Head><title>Bootcamp — Intensive Study Plan | NewWorldEdu</title></Head>
+      <Head>
+        <title>Bootcamp — Intensive Study Plan | NewWorldEdu</title>
+        <meta name="description" content="Starky Bootcamp — intensive exam prep for Cambridge O Level students. 89,000+ verified questions. Start free." />
+      </Head>
       <div style={S.page}>
         <div style={S.container}>
 

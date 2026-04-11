@@ -50,7 +50,10 @@ export default function MiTEBooks() {
 
   return (
     <>
-      <Head><title>Books & Resources — MiTE University | NewWorldEdu</title></Head>
+      <Head>
+        <title>Books & Resources — MiTE University | NewWorldEdu</title>
+        <meta name="description" content="MiTE Recommended Books — study materials for entrance test preparation." />
+      </Head>
       <div style={S.page}>
         <div style={S.container}>
           <a href="/mite-portal" style={{ fontSize: 13, color: '#4F8EF7', textDecoration: 'none', fontWeight: 700 }}>← Back to Portal</a>

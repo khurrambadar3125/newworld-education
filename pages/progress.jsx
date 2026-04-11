@@ -83,6 +83,7 @@ export default function Progress() {
     <>
       <Head>
         <title>Progress — NewWorld Education</title>
+        <meta name="description" content="Track your learning progress with NewWorldEdu. See mastery levels, weak topics, study streaks, and grade predictions." />
       </Head>
 
       <div style={{ minHeight: '100vh', background: '#0a0a0a', color: '#fff', padding: '24px 16px 80px' }}>

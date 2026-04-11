@@ -93,7 +93,10 @@ export default function Dashboard() {
 
   return (
     <>
-      <Head><title>Teacher Dashboard — NewWorld Education</title></Head>
+      <Head>
+        <title>Teacher Dashboard — NewWorld Education</title>
+        <meta name="description" content="Teacher Dashboard — track every student's progress, spot weak topics, and see Starky's analysis. NewWorldEdu for schools." />
+      </Head>
       <div style={S.page}>
         <div style={S.nav}>
           <button onClick={() => router.push('/')} style={{ background: 'none', border: '1px solid rgba(255,255,255,0.2)', color: '#fff', padding: '6px 14px', borderRadius: 8, cursor: 'pointer', fontSize: 14 }}>← Home</button>
