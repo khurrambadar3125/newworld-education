@@ -10,7 +10,6 @@ import { AMERICAN_SUBJECT_LIST } from '../utils/americanCurriculumKB';
 import { CBSE_SUBJECT_LIST } from '../utils/cbseKnowledge';
 import { MOE_SUBJECT_LIST } from '../utils/uaeMoEKnowledge';
 import { useCountry, UaeCurriculumSelector, FooterCountryFlags } from '../components/CountrySelector';
-import HeroCarousel from '../components/HeroCarousel';
 
 const GRADE_GROUPS = [
   { label: 'Primary — KG to Grade 5', color: '#A8E063', grades: [
@@ -255,19 +254,6 @@ export default function Home() {
     }
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
-
-  // ── Scroll reveal observer for landing sections ──
-  useEffect(() => {
-    if (chatStarted) return;
-    const timer = setTimeout(() => {
-      const obs = new IntersectionObserver((entries) => {
-        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('sr-vis'); });
-      }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
-      document.querySelectorAll('.sr-fade,.sr-stag').forEach(el => obs.observe(el));
-      return () => obs.disconnect();
-    }, 300);
-    return () => clearTimeout(timer);
-  }, [chatStarted]);
 
   const speakText = useCallback((text) => {
     if (!synthRef.current) return;
@@ -776,25 +762,6 @@ export default function Home() {
         .sen h2{font-family:'Sora',sans-serif;font-size:20px;font-weight:700;margin-bottom:10px}
         .sen p{font-size:14px;color:rgba(255,255,255,.5);line-height:1.7;margin-bottom:18px}
         .bsen{display:inline-block;background:linear-gradient(135deg,#E05F9A,#7C5CBF);color:#fff;border:none;border-radius:100px;padding:13px 28px;font-size:15px;font-weight:700;font-family:'Sora',sans-serif;cursor:pointer;text-decoration:none}
-        /* ── Scroll reveal animations ── */
-        @keyframes srFadeUp{from{opacity:0;transform:translateY(50px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
-        @keyframes srFadeIn{from{opacity:0}to{opacity:1}}
-        .sr-fade{opacity:0;transform:translateY(50px) scale(.97);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}
-        .sr-fade.sr-vis{opacity:1;transform:translateY(0) scale(1)}
-        .sr-stag>*{opacity:0;transform:translateY(36px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
-        .sr-stag.sr-vis>*:nth-child(1){transition-delay:0s;opacity:1;transform:translateY(0)}
-        .sr-stag.sr-vis>*:nth-child(2){transition-delay:.08s;opacity:1;transform:translateY(0)}
-        .sr-stag.sr-vis>*:nth-child(3){transition-delay:.16s;opacity:1;transform:translateY(0)}
-        .sr-stag.sr-vis>*:nth-child(4){transition-delay:.24s;opacity:1;transform:translateY(0)}
-        .sr-stag.sr-vis>*:nth-child(5){transition-delay:.32s;opacity:1;transform:translateY(0)}
-        .sr-stag.sr-vis>*:nth-child(6){transition-delay:.40s;opacity:1;transform:translateY(0)}
-        .sr-stag.sr-vis>*:nth-child(7){transition-delay:.48s;opacity:1;transform:translateY(0)}
-        .sr-stag.sr-vis>*:nth-child(8){transition-delay:.56s;opacity:1;transform:translateY(0)}
-        /* Card spring hover */
-        .fc{transition:transform .4s cubic-bezier(.34,1.56,.64,1),box-shadow .4s ease,border-color .3s ease}
-        .fc:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 16px 48px rgba(79,142,247,.1);border-color:rgba(79,142,247,.2)}
-        .gb{transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s ease}
-        .gb:hover{transform:scale(1.04);box-shadow:0 8px 24px rgba(79,142,247,.08)}
         .foot{padding:30px 20px;text-align:center;border-top:1px solid rgba(255,255,255,.05)}
         .fl{font-family:'Sora',sans-serif;font-size:17px;font-weight:800;margin-bottom:6px}
         .fl span{color:#4F8EF7}
@@ -1047,9 +1014,7 @@ export default function Home() {
         onBack={() => setShowUaeCurriculumSelector(false)}
       />
 
-      <HeroCarousel />
-
-      <section className="hero sr-fade">
+      <section className="hero">
         {userCountry === 'UAE' ? (
           <>
             <div className="hb">★ Starky — All UAE Curricula</div>
@@ -1121,7 +1086,7 @@ export default function Home() {
         )}
       </section>
 
-      <section className="sec sr-fade" id="start-learning">
+      <section className="sec" id="start-learning">
         {/* UAE: curriculum selector FIRST */}
         {userCountry === 'UAE' && (
           <div style={{marginBottom: uaeCurriculum ? 0 : 20}}>
@@ -1274,7 +1239,7 @@ export default function Home() {
       </section>}
 
       {/* Learning Tools — feature Nano, Drill, Mocks, Challenge */}
-      <section className="ft sr-fade">
+      <section className="ft">
         <div className="sl">Your Learning Toolkit</div>
         <div className="st">Four ways to master Cambridge — pick one and start</div>
         <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))',gap:12,marginTop:16}}>
@@ -1301,7 +1266,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="ft sr-fade">
+      <section className="ft">
         <div className="sl">Why Starky</div>
         <div className="st">Built to actually help your child</div>
         <div className="fg">
@@ -1316,7 +1281,7 @@ export default function Home() {
       </section>
 
       {/* The examiner inside the tutor */}
-      <section className="sec sr-fade" style={{background:'rgba(255,255,255,0.02)',borderTop:'1px solid rgba(255,255,255,0.06)',borderBottom:'1px solid rgba(255,255,255,0.06)',padding:'clamp(40px,8vw,64px) clamp(20px,4vw,40px)'}}>
+      <section className="sec" style={{background:'rgba(255,255,255,0.02)',borderTop:'1px solid rgba(255,255,255,0.06)',borderBottom:'1px solid rgba(255,255,255,0.06)',padding:'clamp(40px,8vw,64px) clamp(20px,4vw,40px)'}}>
         <div style={{maxWidth:600,margin:'0 auto'}}>
           <h2 style={{fontSize:'clamp(22px,4vw,30px)',fontWeight:900,margin:'0 0 16px',lineHeight:1.3}}>The examiner inside the tutor.</h2>
           <div style={{fontSize:'clamp(14px,1.5vw,16px)',color:'rgba(255,255,255,0.55)',lineHeight:1.9}}>
@@ -1326,7 +1291,7 @@ export default function Home() {
       </section>
 
       {/* Cross-platform section */}
-      <section className="sec sr-fade" style={{padding:'clamp(40px,8vw,56px) clamp(20px,4vw,40px)',borderTop:'1px solid rgba(255,255,255,0.06)',borderBottom:'1px solid rgba(255,255,255,0.06)'}}>
+      <section className="sec" style={{padding:'clamp(40px,8vw,56px) clamp(20px,4vw,40px)',borderTop:'1px solid rgba(255,255,255,0.06)',borderBottom:'1px solid rgba(255,255,255,0.06)'}}>
         <div style={{maxWidth:700,margin:'0 auto',textAlign:'center'}}>
           <h2 style={{fontSize:'clamp(22px,4vw,30px)',fontWeight:900,margin:'0 0 8px',lineHeight:1.3}}>Starky is always with you.</h2>
           <p style={{fontSize:'clamp(14px,1.5vw,16px)',color:'rgba(255,255,255,0.5)',margin:'0 0 32px',lineHeight:1.7}}>Phone, tablet, or computer — your sessions, your progress, your history. Always in sync.</p>
@@ -1352,7 +1317,7 @@ export default function Home() {
       </section>
 
       {/* How it works — for parents who want to understand Starky */}
-      <section className="sec sr-fade" style={{background:'rgba(79,142,247,0.04)',borderTop:'1px solid rgba(79,142,247,0.1)',borderBottom:'1px solid rgba(79,142,247,0.1)'}}>
+      <section className="sec" style={{background:'rgba(79,142,247,0.04)',borderTop:'1px solid rgba(79,142,247,0.1)',borderBottom:'1px solid rgba(79,142,247,0.1)'}}>
         <div className="sl">How Starky works</div>
         <div className="st">3 Simple Steps</div>
         <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(200px,1fr))',gap:16,maxWidth:700,margin:'0 auto'}}>
@@ -1375,7 +1340,7 @@ export default function Home() {
       </section>
 
       {/* Parent section — what parents can do */}
-      <section className="sec sr-fade" style={{background:'rgba(74,222,128,0.04)',borderTop:'1px solid rgba(74,222,128,0.1)',borderBottom:'1px solid rgba(74,222,128,0.1)'}}>
+      <section className="sec" style={{background:'rgba(74,222,128,0.04)',borderTop:'1px solid rgba(74,222,128,0.1)',borderBottom:'1px solid rgba(74,222,128,0.1)'}}>
         <div className="sl">For Parents</div>
         <div className="st">Stay involved in your child's education — even remotely</div>
         <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(200px,1fr))',gap:16,maxWidth:700,margin:'0 auto 24px'}}>
@@ -1401,7 +1366,7 @@ export default function Home() {
       </section>
 
       {/* For Teachers section */}
-      <section className="sec sr-fade" style={{background:'rgba(79,142,247,0.04)',borderTop:'1px solid rgba(79,142,247,0.1)',borderBottom:'1px solid rgba(79,142,247,0.1)'}}>
+      <section className="sec" style={{background:'rgba(79,142,247,0.04)',borderTop:'1px solid rgba(79,142,247,0.1)',borderBottom:'1px solid rgba(79,142,247,0.1)'}}>
         <div className="sl">For Teachers</div>
         <div className="st">See every student's progress in one dashboard</div>
         <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(200px,1fr))',gap:16,maxWidth:700,margin:'0 auto 24px'}}>
@@ -1425,7 +1390,7 @@ export default function Home() {
       </section>
 
       {/* Trust comparison — why Starky vs human tutor */}
-      <section className="sec sr-fade">
+      <section className="sec">
         <div className="sl">Why parents choose Starky</div>
         <div style={{maxWidth:560,margin:'0 auto',background:'rgba(255,255,255,0.03)',border:'1px solid rgba(255,255,255,0.07)',borderRadius:16,overflow:'hidden'}}>
           <div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',borderBottom:'1px solid rgba(255,255,255,0.07)'}}>
@@ -1450,7 +1415,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="qs sr-fade">
+      <section className="qs">
         <div className="sl">What parents say</div>
         <div className="qc"><div className="qst">★★★★★</div><p className="qt">"My daughter used to dread Maths. After two weeks with Starky she looks forward to it. The session reports are incredible — I finally know what she's learning."</p><div className="qa"><strong>Fatima A.</strong> — Parent, Karachi</div></div>
         <div className="qc"><div className="qst">★★★★★</div><p className="qt">"Starky knew exactly what the O Level examiner wants. My son went from C to B in Physics in one month. Absolutely worth it."</p><div className="qa"><strong>Omar R.</strong> — Parent, Dubai</div></div>
@@ -1458,7 +1423,7 @@ export default function Home() {
         <div className="qc"><div className="qst">★★★★★</div><p className="qt">"I was skeptical at first. But the session reports showed me exactly what he learned. After one month, his teacher noticed the improvement."</p><div className="qa"><strong>Bilal S.</strong> — Parent, Islamabad</div></div>
       </section>
 
-      <section className="sen sr-fade">
+      <section className="sen">
         <div style={{fontSize:34,marginBottom:10}}>💜</div>
         <h2>Special Needs Support</h2>
         <p>Dedicated mode for students with autism, ADHD, dyslexia, and Down syndrome — adapted pacing, unlimited patience.</p>
@@ -1486,11 +1451,6 @@ export default function Home() {
           <a href="/partner">🏫 School Partnerships</a>
           <a href="/pricing">💳 Pricing</a>
           <a href="/subscribe">📬 Daily Questions</a>
-          <a href="/our-results">📊 Our Results</a>
-          <a href="/responsible-ai">🤖 Responsible AI</a>
-          <a href="/ibcc">📋 IBCC Equivalence</a>
-          <a href="/founding">🏗️ Our Story</a>
-          <a href="/referral">🎁 Refer a Friend</a>
         </div>
         <div style={{display:'flex',gap:16,justifyContent:'center',marginTop:8,flexWrap:'wrap'}}>
           <a href="/championship" style={{color:'rgba(255,195,0,0.5)',fontSize:12,textDecoration:'none',fontWeight:700}}>🏆 Refer & Win — Championship + Free Months</a>
