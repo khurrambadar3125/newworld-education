@@ -33,6 +33,35 @@
   <url><loc>https://www.newworld.education/zayd-mode</loc><lastmod>2026-03-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.newworld.education/summer</loc><lastmod>2026-03-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.newworld.education/demo</loc><lastmod>2026-03-29</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <!-- High priority product/landing pages -->
+  <url><loc>https://www.newworld.education/sat</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.newworld.education/study</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.newworld.education/learn</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.newworld.education/mocks</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.newworld.education/nano</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.newworld.education/become-newton</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.newworld.education/entrance-tests</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.newworld.education/exam-compass</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.newworld.education/daily-challenge</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.newworld.education/free-practice-test</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.newworld.education/our-results</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.newworld.education/contact</loc><lastmod>2026-04-11</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.newworld.education/partner</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.newworld.education/founder</loc><lastmod>2026-04-11</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.newworld.education/skills</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.newworld.education/voice-lab</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.newworld.education/challenge</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.newworld.education/books</loc><lastmod>2026-04-11</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <!-- UAE pages -->
+  <url><loc>https://www.newworld.education/phonics-uae</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.newworld.education/spelling-uae</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.newworld.education/summer-uae</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <!-- Other public pages -->
+  <url><loc>https://www.newworld.education/bootcamp</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.newworld.education/bootcamp-sindh</loc><lastmod>2026-04-11</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://www.newworld.education/responsible-ai</loc><lastmod>2026-04-11</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://www.newworld.education/starky-saturdays</loc><lastmod>2026-04-11</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://www.newworld.education/try</loc><lastmod>2026-04-11</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://www.newworld.education/privacy</loc><lastmod>2026-03-26</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://www.newworld.education/terms</loc><lastmod>2026-03-26</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 </urlset>
