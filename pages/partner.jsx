@@ -34,6 +34,8 @@ export default function PartnerPage() {
       <Head>
         <title>Partner With Us — NewWorld Education</title>
         <meta name="description" content="Free AI tutoring for your school. 50,000+ verified questions, 30+ subjects, Cambridge and Edexcel. No cost for schools. Parents upgrade for home use." />
+        <meta property="og:title" content="School Partnerships — NewWorldEdu" />
+        <meta property="og:description" content="Partner with NewWorldEdu. Free 8-week access for your students. AI tutoring for Cambridge, Edexcel, SAT and more." />
       </Head>
 
       <div style={{ background: NAVY, color: '#fff', fontFamily: "'Inter','Sora',-apple-system,sans-serif", minHeight: '100vh' }}>

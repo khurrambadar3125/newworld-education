@@ -63,6 +63,8 @@ export default function SchoolPage() {
       <Head>
         <title>Schools & Institutions — NewWorldEdu</title>
         <meta name="description" content="Partner with NewWorldEdu to bring Starky tutoring to your school. KG to A Levels, all subjects, teacher dashboard, parent reports." />
+        <meta property="og:title" content="NewWorldEdu for Schools — AI Tutoring Platform" />
+        <meta property="og:description" content="Give every student a personal AI tutor. Track progress, identify weak topics, 89,000+ verified questions. Free 8-week pilot." />
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
       </Head>
 

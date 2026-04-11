@@ -6,6 +6,8 @@ export default function ContactPage() {
       <Head>
         <title>Contact — NewWorldEdu</title>
         <meta name="description" content="Contact NewWorld Education. Email, editorial enquiries, school partnerships." />
+        <meta property="og:title" content="Contact NewWorldEdu" />
+        <meta property="og:description" content="Get in touch with NewWorldEdu. Email khurram@newworld.education for partnerships, support, or feedback." />
       </Head>
       <header style={{ padding: "14px 28px", borderBottom: "1px solid rgba(255,255,255,0.06)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <a href="/" style={{ textDecoration: "none", fontWeight: 900, fontSize: 15, color: "#fff" }}>NewWorldEdu<span style={{ color: "#4F8EF7" }}>★</span></a>

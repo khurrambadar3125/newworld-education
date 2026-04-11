@@ -231,6 +231,8 @@ export default function Pricing() {
       <Head>
         <title>Plans & Pricing — NewWorldEdu</title>
         <meta name="description" content="Choose your NewWorldEdu plan. Personalised tutoring from KG to A-Levels." />
+        <meta property="og:title" content="Pricing — Plans for Students, Parents & Schools | NewWorldEdu" />
+        <meta property="og:description" content="Free 7-day trial. From Rs 3,499/month. 89,000+ verified questions, 24/7 AI tutor, 16 languages." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
       </Head>

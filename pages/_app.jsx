@@ -185,6 +185,35 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
   const router = useRouter();
   const showNav = !PAGES_WITH_OWN_NAV.includes(router.pathname);
 
+  // Auto-set og:title and og:description from page-level tags on every route change
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const title = document.title;
+      if (title) {
+        let ogTitle = document.querySelector('meta[property="og:title"]');
+        if (!ogTitle) {
+          ogTitle = document.createElement('meta');
+          ogTitle.setAttribute('property', 'og:title');
+          document.head.appendChild(ogTitle);
+        }
+        ogTitle.setAttribute('content', title);
+
+        // Also set og:description from meta description if no og:description exists
+        const desc = document.querySelector('meta[name="description"]');
+        let ogDesc = document.querySelector('meta[property="og:description"]');
+        if (desc && !ogDesc) {
+          ogDesc = document.createElement('meta');
+          ogDesc.setAttribute('property', 'og:description');
+          document.head.appendChild(ogDesc);
+        }
+        if (desc && ogDesc) {
+          ogDesc.setAttribute('content', desc.getAttribute('content'));
+        }
+      }
+    }, 100);
+    return () => clearTimeout(timer);
+  }, [router.pathname]);
+
   return (
     <SessionProvider session={session}>
       <ThemeProvider>

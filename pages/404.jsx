@@ -1,9 +1,14 @@
 /**
  * pages/404.jsx — Custom 404 page
  */
+import Head from 'next/head';
+
 export default function NotFound() {
   return (
     <div style={{ minHeight: '100vh', background: '#0a0a0a', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Sora',sans-serif" }}>
+      <Head>
+        <title>Page Not Found | NewWorldEdu</title>
+      </Head>
       <div style={{ textAlign: 'center' }}>
         <div style={{ fontSize: 64, marginBottom: 16 }}>🔍</div>
         <h1 style={{ fontSize: 48, fontWeight: 900, color: '#4F8EF7', margin: '0 0 8px' }}>404</h1>

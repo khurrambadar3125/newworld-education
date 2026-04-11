@@ -1,9 +1,14 @@
 /**
  * pages/500.jsx — Custom 500 error page
  */
+import Head from 'next/head';
+
 export default function ServerError() {
   return (
     <div style={{ minHeight: '100vh', background: '#0a0a0a', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Sora',sans-serif" }}>
+      <Head>
+        <title>Server Error | NewWorldEdu</title>
+      </Head>
       <div style={{ textAlign: 'center' }}>
         <div style={{ fontSize: 64, marginBottom: 16 }}>⚠️</div>
         <h1 style={{ fontSize: 48, fontWeight: 900, color: '#F97316', margin: '0 0 8px' }}>500</h1>

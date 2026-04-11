@@ -10,6 +10,8 @@ export default function SAT() {
       <Head>
         <title>SAT Prep — NewWorld Education</title>
         <meta name="description" content="SAT preparation with 10,000+ verified practice questions. Coming soon." />
+        <meta property="og:title" content="SAT Prep — 9,000+ Practice Questions | NewWorldEdu" />
+        <meta property="og:description" content="PhD-level SAT preparation with 9,000+ verified questions. AI tutor adapts to your pace. Start free." />
       </Head>
       <div style={{ textAlign: 'center', maxWidth: 500 }}>
         <div style={{ fontSize: 56, marginBottom: 16 }}>🎓</div>
