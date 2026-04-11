@@ -1486,6 +1486,11 @@ export default function Home() {
           <a href="/partner">🏫 School Partnerships</a>
           <a href="/pricing">💳 Pricing</a>
           <a href="/subscribe">📬 Daily Questions</a>
+          <a href="/our-results">📊 Our Results</a>
+          <a href="/responsible-ai">🤖 Responsible AI</a>
+          <a href="/ibcc">📋 IBCC Equivalence</a>
+          <a href="/founding">🏗️ Our Story</a>
+          <a href="/referral">🎁 Refer a Friend</a>
         </div>
         <div style={{display:'flex',gap:16,justifyContent:'center',marginTop:8,flexWrap:'wrap'}}>
           <a href="/championship" style={{color:'rgba(255,195,0,0.5)',fontSize:12,textDecoration:'none',fontWeight:700}}>🏆 Refer & Win — Championship + Free Months</a>
