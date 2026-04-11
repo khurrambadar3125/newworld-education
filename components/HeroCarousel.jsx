@@ -87,14 +87,14 @@ export default function HeroCarousel() {
         .hc-marq-track:hover{animation-play-state:paused}
         @media(max-width:768px){
           .hc-sidebar{display:none!important}
-          .hc-big{font-size:22vw!important}
+          .hc-big{font-size:18vw!important}
           .hc-bot-tag{display:none!important}
           .hc-prog-row{padding:0 16px!important;left:16px!important;right:16px!important}
           .hc-bot{padding:12px 16px!important}
         }
       `}} />
 
-      <div style={{ position: 'relative', height: '100vh', width: '100%', overflow: 'hidden' }}>
+      <div style={{ position: 'relative', height: '70vh', minHeight: 480, width: '100%', overflow: 'hidden' }}>
         {/* Yellow marquee */}
         <div style={{ background: '#FBBF24', overflow: 'hidden', whiteSpace: 'nowrap', padding: '9px 0', position: 'absolute', top: 0, left: 0, right: 0, zIndex: 200 }}>
           <div className="hc-marq-track">
@@ -163,7 +163,7 @@ export default function HeroCarousel() {
 
               {/* Big text */}
               <h1 className="hc-big" style={{
-                fontFamily: "'Sora','Nunito',sans-serif", fontWeight: 900, fontSize: 'min(17vw, 200px)',
+                fontFamily: "'Sora','Nunito',sans-serif", fontWeight: 900, fontSize: 'min(14vw, 160px)',
                 color: isDk ? '#1a1a2e' : '#fff', opacity: .95, letterSpacing: -4, lineHeight: .95,
                 textAlign: 'center', userSelect: 'none', position: 'relative', zIndex: 3,
                 textShadow: isDk ? 'none' : '0 6px 40px rgba(0,0,0,.18)',
