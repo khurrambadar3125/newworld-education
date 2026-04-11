@@ -116,6 +116,7 @@ export default function NanoLearn() {
     <>
       <Head>
         <title>{topic || subject || 'Nano Learning'} — NewWorld Education</title>
+        <meta name="description" content="Nano Learning — master any topic in bite-sized steps. Verified questions with mark scheme explanations. NewWorldEdu." />
       </Head>
 
       <div style={{ minHeight: '100vh', background: '#0a0a0a', color: '#fff', padding: '24px 16px 80px', fontFamily: "'Sora',-apple-system,sans-serif" }}>
@@ -125,7 +126,7 @@ export default function NanoLearn() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 24 }}>
             <button onClick={() => router.back()} style={{ background: 'none', border: 'none', color: '#4F8EF7', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>← Back</button>
             <div style={{ textAlign: 'right' }}>
-              <div style={{ fontSize: 14, fontWeight: 700 }}>{subject}</div>
+              <h1 style={{ fontSize: 14, fontWeight: 700, margin: 0 }}>{subject}</h1>
               <div style={{ fontSize: 11, color: 'rgba(255,255,255,.4)' }}>{topic || 'General'} · {level}</div>
             </div>
           </div>

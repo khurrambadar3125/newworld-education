@@ -614,7 +614,7 @@ export default function KidsZone() {
               animation: 'slideUp 0.5s ease-out both',
             }}>
               <div style={{fontSize:48,lineHeight:1,marginBottom:4}}>{u.avatar || '⭐'}</div>
-              <div style={{fontSize:22,fontWeight:800,color:t.n800}}>Hi {u.name || 'Friend'}! 👋</div>
+              <h1 style={{fontSize:22,fontWeight:800,color:t.n800,margin:0}}>Hi {u.name || 'Friend'}! 👋</h1>
               {xp > 0 && (
                 <div style={{
                   display: 'inline-block',

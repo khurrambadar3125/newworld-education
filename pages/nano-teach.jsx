@@ -153,7 +153,10 @@ export default function NanoTeach() {
 
   return (
     <>
-      <Head><title>{topic || subject} — Learn | NewWorld Education</title></Head>
+      <Head>
+        <title>{topic || subject} — Learn | NewWorld Education</title>
+        <meta name="description" content="Nano Teaching — step-by-step teaching guides for parents and tutors. Mark scheme tips included. NewWorldEdu." />
+      </Head>
       <div style={S.page}>
         <div style={S.container}>
 
@@ -161,7 +164,7 @@ export default function NanoTeach() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
             <button onClick={() => router.back()} style={{ background: 'none', border: 'none', color: '#4F8EF7', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>← Back</button>
             <div style={{ textAlign: 'right' }}>
-              <div style={{ fontSize: 14, fontWeight: 700 }}>{subject}</div>
+              <h1 style={{ fontSize: 14, fontWeight: 700, margin: 0 }}>{subject}</h1>
               <div style={{ fontSize: 11, color: 'rgba(255,255,255,.4)' }}>{topic || 'General'}</div>
             </div>
           </div>

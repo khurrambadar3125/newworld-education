@@ -1342,7 +1342,7 @@ export default function LanguagesPage() {
         <div style={{ padding: '32px 24px 24px', textAlign: 'center', borderBottom: `1.5px solid ${T.n100}` }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, marginBottom: 28 }}>
             <CompassSVG sz={34} />
-            <span style={{ fontSize: 22, fontWeight: 800, color: T.n700, fontFamily: T.f }}>Learn Languages</span>
+            <h1 style={{ fontSize: 22, fontWeight: 800, color: T.n700, fontFamily: T.f, margin: 0 }}>Learn Languages</h1>
           </div>
           <div style={{ marginBottom: 18, animation: 'bob 2.4s ease-in-out infinite' }}><CompassSVG sz={108} /></div>
           <p style={{ fontSize: 30, fontWeight: 800, lineHeight: 1.15, color: T.n700, fontFamily: T.fs, marginBottom: 10, direction: (MOTHER_TONGUES.find(m => m.id === motherTongue) || {}).dir === 'rtl' ? 'rtl' : 'ltr' }}>
