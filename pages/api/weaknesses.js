@@ -29,7 +29,8 @@ export default async function handler(req, res) {
       .eq('student_id', email)
       .eq('resolved', false)
       .order('severity', { ascending: true }) // high first (alphabetical: h < l < m)
-      .order('frequency', { ascending: false });
+      .order('frequency', { ascending: false })
+      .limit(100);
 
     // Get resolved weaknesses
     const { data: resolved, error: e2 } = await sb.from('cambridge_weaknesses')

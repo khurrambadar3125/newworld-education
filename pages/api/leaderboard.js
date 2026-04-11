@@ -29,6 +29,7 @@ export default async function handler(req, res) {
       const top = board.slice(0, 20);
       _boardCache = top;
       _boardCacheTime = Date.now();
+      res.setHeader('Cache-Control', 'public, s-maxage=60, stale-while-revalidate=300');
       return res.status(200).json({ board: top });
     } catch (err) {
       // Return cache even if stale on error

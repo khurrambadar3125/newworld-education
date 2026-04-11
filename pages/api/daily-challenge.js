@@ -59,6 +59,7 @@ export default async function handler(req, res) {
       // NO correct answer sent
     }));
 
+    res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=7200');
     return res.status(200).json({ questions: selected, date: today, total: 5 });
   }
 

@@ -201,7 +201,8 @@ export default async function handler(req, res) {
       .select('*')
       .lt('drip_step', 5)
       .neq('status', 'unsubscribed')
-      .order('captured_at', { ascending: true });
+      .order('captured_at', { ascending: true })
+      .limit(500);
 
     if (!leads || leads.length === 0) {
       return res.status(200).json({ ok: true, sent: 0, message: 'No leads due for drip' });
