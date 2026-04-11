@@ -460,6 +460,7 @@ export default function DemoPage() {
       <meta name="description" content="Chat with Starky, your personal tutor. Cambridge O Level and A Level exam preparation, homework help, and concept explanations in 16 languages." />
       <meta property="og:title" content="Chat with Starky — Personal Tutor" />
       <meta property="og:description" content="Chat with Starky, your personal tutor. Cambridge O Level and A Level exam preparation, homework help, and concept explanations in 16 languages." />
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
     </Head>
     <div style={{
       fontFamily: "'Nunito','Segoe UI',sans-serif",
@@ -468,7 +469,6 @@ export default function DemoPage() {
       overflow: "hidden",
     }}>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
         *{box-sizing:border-box;}
         @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
         @keyframes bounce{0%,80%,100%{transform:translateY(0)}40%{transform:translateY(-6px)}}
@@ -558,9 +558,9 @@ export default function DemoPage() {
                   display: "flex", alignItems: "center", justifyContent: "center",
                   fontSize: 28, margin: "0 auto 14px",
                 }}>⭐</div>
-                <div style={{ fontWeight: 900, fontSize: isMobile ? 20 : 24, marginBottom: 8 }}>
+                <h1 style={{ fontWeight: 900, fontSize: isMobile ? 20 : 24, marginBottom: 8, margin: 0 }}>
                   Hi! I'm Starky {subject.emoji}
-                </div>
+                </h1>
                 <div style={{ color: "rgba(255,255,255,0.5)", fontSize: 14, lineHeight: 1.6 }}>
                   Your tutor for <span style={{ color: subject.color, fontWeight: 700 }}>{subject.label}</span>.
                   Ask me anything or tap a question below.

@@ -129,7 +129,6 @@ export default function PhonicsUAEPage() {
         <meta name="description" content="Arabic-English bilingual phonics for UAE students. Learn Arabic sounds as an English speaker or English sounds as an Arabic speaker." />
       </Head>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&display=swap');
         *{box-sizing:border-box;margin:0;padding:0}
         .ph-track:hover{transform:translateY(-3px)!important;box-shadow:0 12px 40px rgba(0,0,0,0.35)!important}
       `}</style>
@@ -205,7 +204,6 @@ export default function PhonicsUAEPage() {
       <>
         <Head><title>{trackTitle} — UAE Phonics — NewWorldEdu</title></Head>
         <style>{`
-          @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&display=swap');
           *{box-sizing:border-box;margin:0;padding:0}
           .ph-sound:hover{transform:translateY(-2px)!important;border-color:${trackColor}60!important}
         `}</style>
@@ -265,7 +263,6 @@ export default function PhonicsUAEPage() {
     <>
       <Head><title>Phonics Practice — NewWorldEdu</title></Head>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&display=swap');
         *{box-sizing:border-box;margin:0;padding:0}
       `}</style>
       <div style={{ minHeight: '100vh', background: '#060B20', fontFamily: f, display: 'flex', flexDirection: 'column' }}>

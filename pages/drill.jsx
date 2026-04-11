@@ -545,7 +545,6 @@ export default function DrillPage() {
         <meta name="description" content="Practice Cambridge O Level and A Level exam questions with timed drills, hints, and mark scheme grading. Free personalised practice for all subjects." />
         <meta property="og:title" content="Practice Drill — Cambridge Exam Questions" />
         <meta property="og:description" content="Practice Cambridge O Level and A Level exam questions with timed drills, hints, and mark scheme grading. Free personalised practice for all subjects." />
-        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" rel="stylesheet" />
       </Head>
       <div style={S.page}>
         <nav style={S.nav}>
@@ -808,7 +807,6 @@ export default function DrillPage() {
       <>
         <Head>
           <title>Drill — {subject} · NewWorldEdu</title>
-          <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" rel="stylesheet" />
         </Head>
         <div style={{ ...S.page, position: 'relative' }}>
           {showConfetti && <DrillConfetti />}
@@ -1012,7 +1010,6 @@ export default function DrillPage() {
     <>
       <Head>
         <title>Session Complete — NewWorldEdu</title>
-        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" rel="stylesheet" />
       </Head>
       <div style={S.page}>
         <nav style={S.nav}>

@@ -280,8 +280,7 @@ export default function MusicForAllPage() {
     card:{background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.09)",borderRadius:18},
     btn:{border:"none",cursor:"pointer",fontFamily:"'Nunito',sans-serif",transition:"all 0.15s"},
   };
-  const CSS=`@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
-  *{box-sizing:border-box} button:focus{outline:2px solid #4F8EF7;outline-offset:2px} textarea:focus{outline:none}
+  const CSS=`*{box-sizing:border-box} button:focus{outline:2px solid #4F8EF7;outline-offset:2px} textarea:focus{outline:none}
   ::-webkit-scrollbar{width:4px} ::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.12);border-radius:4px}
   @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
   @keyframes noteFloat{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-10px) rotate(3deg)}}
@@ -293,6 +292,7 @@ export default function MusicForAllPage() {
       <Head>
         <title>Music for All — Adaptive Music Studio for Special Needs | NewWorldEdu</title>
         <meta name="description" content="Personalised music studio adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Research-backed music therapy activities." />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
       </Head>
       <header style={S.hdr}>
         <a href="/" style={{textDecoration:"none",fontWeight:900,fontSize:15,color:"#fff"}}>NewWorldEdu<span style={{color:"#4F8EF7"}}>★</span></a>
@@ -365,6 +365,7 @@ export default function MusicForAllPage() {
       <Head>
         <title>Music for All — Adaptive Music Studio for Special Needs | NewWorldEdu</title>
         <meta name="description" content="Personalised music studio adapted for children with autism, ADHD, dyslexia, Down syndrome, cerebral palsy, visual impairment, and non-verbal needs. Research-backed music therapy activities." />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
       </Head>
       <header style={S.hdr}>
         <div style={{display:"flex",alignItems:"center",gap:10}}>

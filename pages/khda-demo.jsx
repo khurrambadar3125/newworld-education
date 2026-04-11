@@ -88,7 +88,6 @@ export default function KHDADemoPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&display=swap');
         *{box-sizing:border-box;margin:0;padding:0}
         body{background:#060B20;color:#fff}
         @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}

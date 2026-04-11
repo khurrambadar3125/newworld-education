@@ -171,7 +171,6 @@ export default function SpellingUAEPage() {
         <meta name="description" content="English spelling practice for UAE students. IGCSE, IB, AP and EmSAT English — Starky tests the words that actually appear in your exams." />
       </Head>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&display=swap');
         *{box-sizing:border-box;margin:0;padding:0}
         .sp-lvl:hover{transform:translateY(-3px)!important;box-shadow:0 12px 40px rgba(0,0,0,0.35)!important}
       `}</style>
@@ -240,7 +239,7 @@ export default function SpellingUAEPage() {
     return (
       <>
         <Head><title>Spelling Round — NewWorldEdu</title></Head>
-        <style>{`@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&display=swap');*{box-sizing:border-box;margin:0;padding:0}`}</style>
+        <style>{`*{box-sizing:border-box;margin:0;padding:0}`}</style>
         <div style={{ minHeight: '100vh', background: '#060B20', fontFamily: f, padding: '0 20px' }}>
           <div style={{ ...max, paddingTop: 32 }}>
             {/* Progress bar */}
@@ -294,7 +293,7 @@ export default function SpellingUAEPage() {
     return (
       <>
         <Head><title>Spelling Results — NewWorldEdu</title></Head>
-        <style>{`@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&display=swap');*{box-sizing:border-box;margin:0;padding:0}`}</style>
+        <style>{`*{box-sizing:border-box;margin:0;padding:0}`}</style>
         <div style={{ minHeight: '100vh', background: '#060B20', fontFamily: f, padding: '0 20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <div style={{ ...max, textAlign: 'center' }}>
             <div style={{ fontSize: 56, marginBottom: 8 }}>{pct >= 80 ? '🏆' : pct >= 60 ? '⭐' : '💪'}</div>
@@ -316,7 +315,7 @@ export default function SpellingUAEPage() {
   return (
     <>
       <Head><title>Spelling Practice — NewWorldEdu</title></Head>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&display=swap');*{box-sizing:border-box;margin:0;padding:0}`}</style>
+      <style>{`*{box-sizing:border-box;margin:0;padding:0}`}</style>
       <div style={{ minHeight: '100vh', background: '#060B20', fontFamily: f, display: 'flex', flexDirection: 'column' }}>
         <div style={{ padding: '12px 16px', borderBottom: '1px solid rgba(255,255,255,0.06)', display: 'flex', alignItems: 'center', gap: 10 }}>
           <button onClick={() => { setStep(1); setMessages([]); }} style={{ background: 'none', border: 'none', color: 'rgba(255,255,255,0.4)', fontSize: 13, cursor: 'pointer', fontFamily: f }}>← Levels</button>

@@ -1193,6 +1193,7 @@ ${YOUNG_LEARNER_KB}`;
       <meta name="description" content="Homework help for KG to Grade 6. Starky guides your child step by step without giving direct answers. Includes craft activities and parent mode." />
       <meta property="og:title" content="Homework Helper — KG to Grade 6" />
       <meta property="og:description" content="Homework help for KG to Grade 6. Starky guides your child step by step without giving direct answers. Includes craft activities and parent mode." />
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
     </Head>
     <div style={{
       fontFamily: "'Nunito', 'Trebuchet MS', sans-serif",
@@ -1202,7 +1203,6 @@ ${YOUNG_LEARNER_KB}`;
       {showLimitModal && <LimitReachedModal onClose={() => setShowLimitModal(false)} />}
 
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
         @keyframes float   { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
         @keyframes pulse   { 0%,100%{opacity:1} 50%{opacity:0.4} }
         @keyframes slideUp { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }

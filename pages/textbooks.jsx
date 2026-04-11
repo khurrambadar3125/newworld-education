@@ -503,7 +503,6 @@ export default function TextbooksPage() {
     btn: { border:"none", cursor:"pointer", fontFamily:"'Nunito',sans-serif", transition:"all 0.15s" },
   };
   const CSS = `
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
     *{box-sizing:border-box} button:focus{outline:none} input:focus,textarea:focus{outline:none}
     ::-webkit-scrollbar{width:4px} ::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.12);border-radius:4px}
     @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
@@ -519,6 +518,7 @@ export default function TextbooksPage() {
         <meta name="description" content="Cambridge O Level and A Level textbook companion. Ask Starky about any chapter, get explanations, and practice questions from your textbook." />
         <meta property="og:title" content="Textbook Companion — Cambridge O/A Level" />
         <meta property="og:description" content="Cambridge O Level and A Level textbook companion. Ask Starky about any chapter, get explanations, and practice questions from your textbook." />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
       </Head>
       <header style={S.hdr}>
         <a href="/" style={{ textDecoration:"none", display:"flex", alignItems:"center", gap:8 }}>

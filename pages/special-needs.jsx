@@ -2945,7 +2945,6 @@ export default function SpecialNeedsPage() {
   const accentColor = condition?.color || "#C77DFF";
 
   const CSS = `
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
     *{box-sizing:border-box} button:focus,textarea:focus,input:focus{outline:4px solid #FFC300;outline-offset:2px}
     ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.12);border-radius:4px}
     @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
@@ -3179,6 +3178,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
         <meta name="description" content="Tutoring adapted for autism, ADHD, dyslexia, and Down syndrome. 140 teaching profiles with evidence-based strategies for Pakistani students." />
         <meta property="og:title" content="Special Needs Support — Adapted Tutoring" />
         <meta property="og:description" content="Tutoring adapted for autism, ADHD, dyslexia, and Down syndrome. 140 teaching profiles with evidence-based strategies for Pakistani students." />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
       </Head>
 
       {/* HEADER */}

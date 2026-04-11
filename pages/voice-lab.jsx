@@ -125,7 +125,6 @@ export default function VoiceLabPage() {
         <meta name="description" content="Your voice is your most powerful learning tool. Oral exams, reading fluency, pronunciation, debate, singing, mental maths — all voice-powered." />
       </Head>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&display=swap');
         *{box-sizing:border-box;margin:0;padding:0}
         .vl-card{transition:all 0.2s;cursor:pointer}
         .vl-card:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,0.35)}
@@ -193,7 +192,7 @@ export default function VoiceLabPage() {
   return (
     <>
       <Head><title>{feature?.title} — Voice Lab — NewWorldEdu</title></Head>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&display=swap');*{box-sizing:border-box;margin:0;padding:0}`}</style>
+      <style>{`*{box-sizing:border-box;margin:0;padding:0}`}</style>
       <div style={{ minHeight: '100vh', background: '#060B20', fontFamily: f, display: 'flex', flexDirection: 'column' }}>
 
         {/* Header */}

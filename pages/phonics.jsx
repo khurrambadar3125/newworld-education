@@ -91,7 +91,6 @@ export default function PhonicsPage() {
   };
 
   const CSS = `
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
     *{box-sizing:border-box}
     button:focus,textarea:focus,input:focus{outline:4px solid #FFC300;outline-offset:2px}
     @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
@@ -110,6 +109,7 @@ export default function PhonicsPage() {
       <Head>
         <title>Phonics — Learn to Read with Starky</title>
         <meta name="description" content="Systematic phonics teaching for children ages 3-7. Letters and Sounds programme. Learn to read from zero with Starky." />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
       </Head>
 
       {/* Header */}
