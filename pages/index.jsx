@@ -10,6 +10,7 @@ import { AMERICAN_SUBJECT_LIST } from '../utils/americanCurriculumKB';
 import { CBSE_SUBJECT_LIST } from '../utils/cbseKnowledge';
 import { MOE_SUBJECT_LIST } from '../utils/uaeMoEKnowledge';
 import { useCountry, UaeCurriculumSelector, FooterCountryFlags } from '../components/CountrySelector';
+import { filterForCountry } from '../utils/subjectCatalog';
 
 const GRADE_GROUPS = [
   { label: 'Primary — KG to Grade 5', color: '#A8E063', grades: [
@@ -1158,8 +1159,8 @@ export default function Home() {
                   : uaeCurriculum === 'american' ? AMERICAN_SUBJECT_LIST
                   : uaeCurriculum === 'cbse' ? CBSE_SUBJECT_LIST
                   : uaeCurriculum === 'ib' ? IB_SUBJECT_LIST
-                  : selectedGrade?.id?.includes('olevel') ? (userCountry === 'UAE' ? SUBJECTS_OLEVEL.filter(s => !['Pakistan Studies','Islamiyat','First Language Urdu','Second Language Urdu'].includes(s)) : SUBJECTS_OLEVEL)
-                  : selectedGrade?.id?.includes('alevel') ? (userCountry === 'UAE' ? SUBJECTS_ALEVEL.filter(s => !['Islamic Studies'].includes(s)) : SUBJECTS_ALEVEL)
+                  : selectedGrade?.id?.includes('olevel') ? filterForCountry(SUBJECTS_OLEVEL, userCountry, uaeCurriculum)
+                  : selectedGrade?.id?.includes('alevel') ? filterForCountry(SUBJECTS_ALEVEL, userCountry, uaeCurriculum)
                   : ['kg','grade1','grade2','grade3','grade4','grade5'].includes(selectedGrade?.id) ? SUBJECTS_PRIMARY
                   : ['grade6','grade7','grade8'].includes(selectedGrade?.id) ? SUBJECTS_MIDDLE
                   : ['grade9','grade10'].includes(selectedGrade?.id) ? SUBJECTS_MATRIC

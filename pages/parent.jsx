@@ -22,6 +22,8 @@
 
 import { useState, useEffect } from "react";
 import Head from "next/head";
+import { useCountry, UaeCurriculumSelector } from '../components/CountrySelector';
+import { filterForCountry } from '../utils/subjectCatalog';
 
 // ── Child Progress Component — shows weak topics, mistakes, last session from KV ──
 function ChildProgress({ children, parentEmail }) {
@@ -241,6 +243,8 @@ function setActiveChild(child) {
 // MAIN PAGE
 // ─────────────────────────────────────────────────────────────────────────────
 export default function ParentPage() {
+  const { userCountry, uaeCurriculum, showUaeCurriculumSelector, setShowUaeCurriculumSelector, setUaeCurriculum } = useCountry();
+
   const [account,   setAccount]   = useState(null);   // loaded account or null
   const [screen,    setScreen]    = useState("check"); // check|setup|add-child|pick-child|dashboard
   const [isMobile,  setIsMobile]  = useState(false);
@@ -1095,12 +1099,29 @@ export default function ParentPage() {
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
       </Head>
       <Header/>
+
+      {/* UAE parents — prompt for curriculum so assignments + progress map to the right syllabus */}
+      {userCountry === 'UAE' && !uaeCurriculum && (
+        <UaeCurriculumSelector
+          show={true}
+          onSelect={(c) => { setUaeCurriculum(c); setShowUaeCurriculumSelector(false); }}
+          onBack={() => setShowUaeCurriculumSelector(false)}
+        />
+      )}
+      {showUaeCurriculumSelector && userCountry === 'UAE' && (
+        <UaeCurriculumSelector
+          show={true}
+          onSelect={(c) => { setUaeCurriculum(c); setShowUaeCurriculumSelector(false); }}
+          onBack={() => setShowUaeCurriculumSelector(false)}
+        />
+      )}
+
       <div style={{maxWidth:640, margin:"0 auto", padding: isMobile?"20px 16px":"40px 24px", animation:"fadeUp 0.35s ease-out"}}>
 
         {/* Header */}
         <div style={{marginBottom:28}}>
           <div style={{fontSize:13,fontWeight:700,color:"rgba(255,255,255,0.4)",marginBottom:4}}>
-            👨‍👧‍👦 Family Dashboard
+            👨‍👧‍👦 Family Dashboard{userCountry === 'UAE' && uaeCurriculum ? ` · ${uaeCurriculum.toUpperCase()}` : ''}
           </div>
           <h2 style={{fontSize:isMobile?22:28,fontWeight:900,margin:"0 0 4px"}}>
             Welcome, {account?.parentName}

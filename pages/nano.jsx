@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { ATOMS_SUBJECTS, ATOM_COUNTS, getAtomsBySubject } from '../utils/starkyAtomsKB';
 import { SYLLABUS, getTopicsForSubject, getThemesForSubject } from '../utils/syllabusStructure';
 import { useCountry } from '../components/CountrySelector';
+import { filterForCountry } from '../utils/subjectCatalog';
 
 /* ───── Progress Ring ───── */
 function ProgressRing({ percent, size = 64, stroke = 5, color = '#C9A84C' }) {
@@ -205,9 +206,7 @@ export default function NanoPage() {
     return { weakestUnit, worstPct, nextGoal, remaining, estMinutes };
   }, [atoms, mastery, unitMap, masteredCount]);
 
-  const _countryFilteredAtoms = (userCountry === 'UAE' && uaeCurriculum !== 'pakistani')
-    ? ATOMS_SUBJECTS.filter(s => !['pakistan_studies','islamiyat','urdu'].includes(s.id))
-    : ATOMS_SUBJECTS;
+  const _countryFilteredAtoms = filterForCountry(ATOMS_SUBJECTS, userCountry, uaeCurriculum);
   const filteredSubjects = levelFilter === 'all'
     ? _countryFilteredAtoms
     : _countryFilteredAtoms.filter(s => s.level === levelFilter);

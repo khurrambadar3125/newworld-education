@@ -951,6 +951,198 @@ const MARK_SCHEME_KB = [
     commandWord: ["state", "explain", "describe", "calculate"],
     extensionQuestion: "A magnet dropped through a copper pipe falls much more slowly than one dropped through a plastic pipe. Using the phrases 'rate of change of flux linkage' and 'induced current opposes the change producing it', explain this observation and predict what would happen if the copper pipe had a vertical slit cut along its length."
   },
+  {
+    id: "ms_phys_a_002",
+    subject: "physics",
+    level: "a_level",
+    topic: "Simple Harmonic Motion",
+    concept: "definition of SHM",
+    syllabusCode: "9702",
+    acceptedPhrases: [
+      "acceleration is directly proportional to displacement from a fixed point",
+      "acceleration is always directed towards the fixed point",
+      "a = -ω²x",
+      "a ∝ -x"
+    ],
+    rejectedPhrases: [
+      "it oscillates back and forth",
+      "it vibrates like a spring",
+      "it moves like a pendulum",
+      "force pulls it back to the middle"
+    ],
+    examinerNote: "Must include BOTH conditions: proportional to displacement AND directed towards equilibrium (opposite sign). Omitting the negative sign / 'towards fixed point' loses the second mark every time.",
+    markSchemeQuote: "acceleration proportional to displacement from a fixed point (1) acceleration (always) directed towards that fixed point / opposite in direction to displacement (1)",
+    commandWord: ["define", "state", "explain"],
+    extensionQuestion: "A spring–mass system has period 0.50 s. The mass is pulled 4.0 cm from equilibrium and released. Calculate the maximum acceleration, state its direction at t = 0, and explain — using a = -ω²x — why the acceleration is zero as it passes through equilibrium despite the velocity being maximum there."
+  },
+  {
+    id: "ms_phys_a_003",
+    subject: "physics",
+    level: "a_level",
+    topic: "Circular Motion",
+    concept: "centripetal force and acceleration",
+    syllabusCode: "9702",
+    acceptedPhrases: [
+      "resultant force directed towards the centre of the circle",
+      "centripetal acceleration = v²/r = ω²r",
+      "force is perpendicular to velocity so no work is done",
+      "speed is constant but velocity changes because direction changes"
+    ],
+    rejectedPhrases: [
+      "centrifugal force pushes it outwards",
+      "the object wants to fly outwards",
+      "circular motion needs a force to keep it going",
+      "centripetal force speeds it up"
+    ],
+    examinerNote: "Centrifugal force is NOT accepted at A Level — examiners mark zero on any answer invoking it in an inertial frame. Must identify the centripetal force as the RESULTANT, and state it is perpendicular to velocity (hence constant speed, changing direction).",
+    markSchemeQuote: "resultant force acts towards centre of circle (1) perpendicular to velocity (1) magnitude = mv²/r (1) speed constant but velocity changes due to change in direction (1)",
+    commandWord: ["state", "explain", "show that", "calculate"],
+    extensionQuestion: "A conical pendulum of string length 1.2 m swings so the string makes 30° with the vertical. Derive an expression for the period in terms of L, g and θ, and explain — using the phrase 'perpendicular to velocity' — why the tension does no work on the bob despite being the only non-vertical force."
+  },
+  {
+    id: "ms_phys_a_004",
+    subject: "physics",
+    level: "a_level",
+    topic: "Gravitational Fields",
+    concept: "gravitational potential",
+    syllabusCode: "9702",
+    acceptedPhrases: [
+      "work done per unit mass in bringing a small test mass from infinity to the point",
+      "φ = -GM/r",
+      "potential is negative because gravitational force is attractive",
+      "work done moving between two points = m(φ₂ - φ₁) = mΔφ"
+    ],
+    rejectedPhrases: [
+      "the energy a mass has in a field",
+      "how strong gravity is at that point",
+      "potential is how much pull there is",
+      "gravitational potential is GM/r"
+    ],
+    examinerNote: "Three non-negotiables: (1) 'per unit mass', (2) 'from infinity', (3) the negative sign. Dropping any of these loses marks. Students confuse potential (scalar, J kg⁻¹) with field strength (vector, N kg⁻¹) — mark schemes penalise this heavily.",
+    markSchemeQuote: "work done per unit mass (1) in bringing a (small test) mass from infinity to the point (1) φ = -GM/r with negative sign explained by attractive force (1)",
+    commandWord: ["define", "state", "calculate", "show that"],
+    extensionQuestion: "A satellite of mass 800 kg is moved from a circular orbit of radius 7.0 × 10⁶ m to one of radius 4.2 × 10⁷ m around Earth (M = 6.0 × 10²⁴ kg). Calculate the work done against the gravitational field, and explain why this is less than the change in the satellite's total mechanical energy."
+  },
+  {
+    id: "ms_phys_a_005",
+    subject: "physics",
+    level: "a_level",
+    topic: "Capacitors",
+    concept: "capacitance, energy stored and time constant",
+    syllabusCode: "9702",
+    acceptedPhrases: [
+      "capacitance = charge stored per unit potential difference, C = Q/V",
+      "energy stored = ½CV² = ½QV = ½Q²/C",
+      "area under a Q–V graph represents energy stored",
+      "time constant τ = RC is the time for charge/voltage to fall to 1/e of its initial value"
+    ],
+    rejectedPhrases: [
+      "capacitance is how much charge it holds",
+      "energy stored is QV",
+      "the time constant is how long it takes to discharge",
+      "capacitors store electricity"
+    ],
+    examinerNote: "'Energy = QV' (without the ½) is the single most common error — zero marks. The factor of ½ comes from the average pd during charging. For τ, must say '1/e (≈ 37%) of initial value', NOT 'fully discharged'.",
+    markSchemeQuote: "C = Q/V (1) energy stored = ½QV because average pd during charging is V/2 (1) τ = RC; after time τ, charge falls to 1/e of Q₀ (1)",
+    commandWord: ["define", "show that", "calculate", "explain"],
+    extensionQuestion: "A 470 μF capacitor charged to 12 V discharges through a 22 kΩ resistor. Calculate the initial energy stored, the time for the voltage to fall to 3.0 V, and explain — referencing ½CV² — why exactly half the initial energy is dissipated when the voltage reaches V₀/√2."
+  },
+  {
+    id: "ms_phys_a_006",
+    subject: "physics",
+    level: "a_level",
+    topic: "Nuclear Decay",
+    concept: "activity, decay constant and half-life",
+    syllabusCode: "9702",
+    acceptedPhrases: [
+      "decay constant λ = probability per unit time that a nucleus will decay",
+      "activity A = λN",
+      "half-life t½ = ln2 / λ",
+      "radioactive decay is random and spontaneous"
+    ],
+    rejectedPhrases: [
+      "half-life is the time for half the sample to disappear",
+      "activity is how radioactive something is",
+      "λ is the speed of decay",
+      "the nucleus decides to decay"
+    ],
+    examinerNote: "'Random AND spontaneous' are both required — random means unpredictable for individual nuclei, spontaneous means unaffected by external conditions (T, P, chemical state). Half-life must say 'half the UNDECAYED nuclei remaining', not 'half the sample disappears'.",
+    markSchemeQuote: "decay is random (cannot predict which nucleus) and spontaneous (unaffected by external conditions) (1) A = λN (1) t½ = ln2/λ where t½ is time for number of undecayed nuclei to halve (1)",
+    commandWord: ["define", "state", "show that", "calculate"],
+    extensionQuestion: "A sample of ²¹⁴Po (t½ = 164 μs) contains 4.0 × 10¹² atoms. Calculate the initial activity, and explain — using 'A = λN' — why, despite the enormous activity, a GM tube placed next to it may register far fewer counts than expected."
+  },
+  {
+    id: "ms_phys_a_007",
+    subject: "physics",
+    level: "a_level",
+    topic: "Photoelectric Effect",
+    concept: "threshold frequency and work function",
+    syllabusCode: "9702",
+    acceptedPhrases: [
+      "one photon interacts with one electron",
+      "work function φ = minimum energy to remove an electron from the metal surface",
+      "hf = φ + ½mv²max",
+      "below threshold frequency no electrons are emitted regardless of intensity"
+    ],
+    rejectedPhrases: [
+      "light gives the electron energy to escape",
+      "bright light knocks out more electrons with more energy",
+      "the wave heats the metal until electrons escape",
+      "photons push the electrons out"
+    ],
+    examinerNote: "The '1 photon : 1 electron' interaction is the whole point — this is why intensity (more photons) gives more electrons but not more KE. Students who write 'light is absorbed' lose the mark. Must use Einstein's equation in the exact form hf = φ + KEmax.",
+    markSchemeQuote: "one photon absorbed by one electron (1) if hf < φ no emission occurs (threshold frequency) (1) hf = φ + ½mv²max where ½mv²max is maximum KE of photoelectron (1)",
+    commandWord: ["explain", "state", "calculate", "show that"],
+    extensionQuestion: "Light of wavelength 420 nm is incident on a caesium surface (φ = 2.1 eV). Calculate the maximum KE of emitted photoelectrons and the stopping potential. Then explain — in terms of the photon model — why doubling the light intensity doubles the photocurrent but leaves the stopping potential unchanged."
+  },
+  {
+    id: "ms_phys_a_008",
+    subject: "physics",
+    level: "a_level",
+    topic: "Ideal Gas and Kinetic Theory",
+    concept: "pV = nRT and internal energy",
+    syllabusCode: "9702",
+    acceptedPhrases: [
+      "pV = nRT where n is number of moles",
+      "pV = ⅓Nm<c²> linking macroscopic pressure to mean square speed",
+      "internal energy of an ideal gas depends only on temperature",
+      "mean translational KE per molecule = (3/2)kT"
+    ],
+    rejectedPhrases: [
+      "gas molecules push on the walls to make pressure",
+      "hotter gas has more energy so higher pressure",
+      "internal energy is heat inside the gas",
+      "molecules all move at the same speed"
+    ],
+    examinerNote: "'Internal energy of an IDEAL gas = total random kinetic energy of molecules only' — no potential energy term because intermolecular forces are assumed zero. This is the distinguishing feature from real gases. Must use 'mean square speed <c²>', not 'average speed squared'.",
+    markSchemeQuote: "pV = nRT (ideal gas equation) (1) pV = ⅓Nm<c²> from kinetic theory (1) internal energy = sum of random KE of molecules only (no PE for ideal gas) (1) mean KE = (3/2)kT ∝ T in kelvin (1)",
+    commandWord: ["state", "show that", "calculate", "explain"],
+    extensionQuestion: "A sealed container holds 0.20 mol of helium at 300 K. Calculate the root mean square speed of the atoms and the total internal energy. Then explain — using 'internal energy depends only on temperature' — why compressing the gas isothermally requires heat to be removed even though no change in internal energy occurs."
+  },
+  {
+    id: "ms_phys_a_009",
+    subject: "physics",
+    level: "a_level",
+    topic: "Waves and Interference",
+    concept: "two-source interference and double-slit fringe spacing",
+    syllabusCode: "9702",
+    acceptedPhrases: [
+      "coherent sources have a constant phase difference and the same frequency",
+      "path difference = nλ for constructive interference, (n + ½)λ for destructive",
+      "fringe spacing x = λD/a",
+      "superposition: displacements add at a point where waves meet"
+    ],
+    rejectedPhrases: [
+      "the waves join together to make bigger waves",
+      "coherent means the waves are the same",
+      "light is in phase so it interferes",
+      "bright fringes are where waves meet"
+    ],
+    examinerNote: "'Coherent' REQUIRES 'constant phase difference' — saying 'in phase' is not enough and loses the mark (two sources π out of phase are still coherent). Fringe spacing formula only valid when a ≪ D and for small angles. Must reference 'path difference', not just 'distance'.",
+    markSchemeQuote: "coherent = constant phase difference (and same frequency) (1) constructive when path difference = nλ (1) destructive when path difference = (n + ½)λ (1) fringe spacing x = λD/a where a is slit separation, D is slit-to-screen distance (1)",
+    commandWord: ["define", "state", "show that", "calculate", "explain"],
+    extensionQuestion: "In a Young's double-slit experiment, light of wavelength 590 nm illuminates slits 0.25 mm apart; fringes are observed on a screen 1.8 m away. Calculate the fringe spacing. Then explain, using 'path difference = (n + ½)λ', what happens to the pattern when one slit is covered with a thin sheet of glass that introduces a path length equivalent to an extra λ/2."
+  },
 
   // ═══════════════════════════════════════════
   // A LEVEL — ECONOMICS

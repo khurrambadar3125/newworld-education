@@ -8,7 +8,7 @@
 
 // List of Pakistan-only subjects/IDs to strip from UAE users.
 export const PAKISTAN_ONLY_SUBJECTS = [
-  'Pakistan Studies', 'Islamiyat', 'Islamiat',
+  'Pakistan Studies', 'Islamiyat', 'Islamiat', 'Islamic Studies',
   'First Language Urdu', 'Second Language Urdu', 'Urdu',
   'Nazra Quran', 'Sindhi', 'Pashto',
   'Pakistan Studies (2059)', 'Islamiyat (2058)', 'Urdu (3247)',
