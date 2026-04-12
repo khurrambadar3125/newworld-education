@@ -28,7 +28,7 @@ const NEUTRAL_KEYWORDS =
 const NEUTRAL_OG_LOCALE = "en_US";
 
 export default function SEO({
-  title = "NewWorldEdu — AI Tutor for Cambridge O Level & A Level | Pakistan",
+  title = "NewWorldEdu — AI Tutor for Cambridge O Level & A Level",
   description = "Personal AI tutor for every child — 24/7, 16 languages, every subject. Cambridge O Level and A Level, past papers, mark schemes and examiner reports. Start free — no credit card needed.",
   keywords,
   url = "https://www.newworld.education",
