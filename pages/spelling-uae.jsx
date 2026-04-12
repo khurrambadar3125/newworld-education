@@ -302,7 +302,7 @@ export default function SpellingUAEPage() {
             <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.4)', marginBottom: 28 }}>{pct}% — {level?.name}</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10, maxWidth: 300, margin: '0 auto' }}>
               <button onClick={() => startRound(level)} style={{ background: level?.color || '#4F8EF7', color: '#060B20', border: 'none', borderRadius: 12, padding: '14px', fontSize: 15, fontWeight: 800, cursor: 'pointer', fontFamily: f }}>Try again</button>
-              <button onClick={startChat} style={{ background: 'rgba(255,255,255,0.06)', border: '1.5px solid rgba(255,255,255,0.1)', borderRadius: 12, padding: '14px', color: '#fff', fontSize: 14, fontWeight: 700, cursor: 'pointer', fontFamily: f }}>Practise with Starky</button>
+              <button onClick={() => { window.location.href = `/drill?subject=English&topic=Spelling&level=${encodeURIComponent(level?.name||'')}`; }} style={{ background: 'rgba(255,255,255,0.06)', border: '1.5px solid rgba(255,255,255,0.1)', borderRadius: 12, padding: '14px', color: '#fff', fontSize: 14, fontWeight: 700, cursor: 'pointer', fontFamily: f }}>Practise more words →</button>
               <button onClick={() => setStep(1)} style={{ background: 'none', border: 'none', color: 'rgba(255,255,255,0.4)', fontSize: 13, cursor: 'pointer', fontFamily: f }}>← Change level</button>
             </div>
           </div>

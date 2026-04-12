@@ -16,7 +16,7 @@ const SHARE_RENDERERS = {
         </div>
       )}
       <Link href={`/drill`}><a style={S.cta}>Try This Drill Yourself →</a></Link>
-      <div style={{marginTop:12}}><Link href="/"><a style={S.secondary}>Start Learning with Starky ★</a></Link></div>
+      <div style={{marginTop:12}}><Link href="/learn"><a style={S.secondary}>Start Learning ★</a></Link></div>
     </div>
   ),
 
@@ -45,7 +45,7 @@ const SHARE_RENDERERS = {
       <div style={{fontSize:56,marginBottom:12}}>📋</div>
       <div style={{fontSize:13,color:'rgba(255,255,255,0.4)',marginBottom:8}}>Assignment from {data.setBy || 'your parent'}</div>
       <div style={{background:'rgba(167,139,250,0.15)',border:'1px solid rgba(167,139,250,0.3)',borderRadius:14,padding:'20px',fontSize:18,fontWeight:700,color:'#fff',marginBottom:24,lineHeight:1.6}}>{data.topic}</div>
-      <Link href="/"><a style={S.cta}>Open Starky and Start Studying →</a></Link>
+      <Link href="/learn"><a style={S.cta}>Start Studying →</a></Link>
     </div>
   ),
 
@@ -79,7 +79,7 @@ const SHARE_RENDERERS = {
       <h1 style={{fontSize:24,fontWeight:900,margin:'0 0 8px'}}>You're Invited!</h1>
       <div style={{fontSize:16,color:'rgba(255,255,255,0.6)',marginBottom:8}}>{data.name || 'A friend'} wants you to try NewWorld Education</div>
       <div style={{fontSize:14,color:'rgba(255,255,255,0.35)',marginBottom:24,lineHeight:1.7}}>Free personal tutor for Cambridge O Level & A Level. Every subject, 24/7, with past paper expertise.</div>
-      <Link href="/"><a style={S.cta}>Start Learning Free →</a></Link>
+      <Link href="/start"><a style={S.cta}>Start Learning Free →</a></Link>
     </div>
   ),
 
@@ -157,7 +157,7 @@ export default function SharePage() {
                 <div style={{fontSize:48,marginBottom:12}}>★</div>
                 <h1 style={{fontSize:22,fontWeight:900,marginBottom:8}}>Link expired</h1>
                 <div style={{color:'rgba(255,255,255,0.5)',marginBottom:24}}>This link is no longer available.</div>
-                <Link href="/"><a style={S.cta}>Go to NewWorldEdu →</a></Link>
+                <Link href="/learn"><a style={S.cta}>Go to NewWorldEdu →</a></Link>
               </div>
             )}
             {Renderer && <Renderer data={share.data} />}

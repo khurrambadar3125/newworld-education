@@ -128,7 +128,7 @@ export default function FoundingPage() {
         </div>
 
         {/* Start learning CTA */}
-        <a href="/try" style={{ display: 'block', background: GOLD, color: NAVY, fontSize: 16, fontWeight: 900, padding: '16px 0', borderRadius: 12, textDecoration: 'none', marginBottom: 12 }}>
+        <a href="/learn" style={{ display: 'block', background: GOLD, color: NAVY, fontSize: 16, fontWeight: 900, padding: '16px 0', borderRadius: 12, textDecoration: 'none', marginBottom: 12 }}>
           Start Learning Now →
         </a>
         <div style={{ fontSize: 12, color: 'rgba(250,246,235,0.3)' }}>Your 3 months of free premium access are active.</div>

@@ -89,7 +89,7 @@ export default function ReferralPage() {
             <div style={{ fontSize: 32, marginBottom: 12 }}>👤</div>
             <div style={{ fontWeight: 800, fontSize: 16, marginBottom: 8 }}>Sign up first</div>
             <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: 14, marginBottom: 16 }}>You need an account to get your referral link.</div>
-            <a href="/" style={{ display: 'inline-block', background: 'linear-gradient(135deg,#4F8EF7,#6366F1)', color: '#fff', padding: '12px 28px', borderRadius: 100, fontWeight: 700, textDecoration: 'none' }}>Start Learning →</a>
+            <a href="/start" style={{ display: 'inline-block', background: 'linear-gradient(135deg,#4F8EF7,#6366F1)', color: '#fff', padding: '12px 28px', borderRadius: 100, fontWeight: 700, textDecoration: 'none' }}>Start Learning →</a>
           </div>
         ) : (
           <>

@@ -192,7 +192,7 @@ export default function Leaderboard() {
         {!userProfile && (
           <div style={{ background:'rgba(255,179,71,0.08)', border:'1px solid rgba(255,179,71,0.2)', borderRadius:'16px', padding:'16px 18px', marginBottom:'20px', textAlign:'center' }}>
             <div style={{ fontSize:'14px', color:'rgba(255,255,255,0.6)', marginBottom:'12px' }}>Start a session with Starky to appear on the leaderboard</div>
-            <a href="/demo" style={{ display:'inline-block', background:'linear-gradient(135deg,#4F8EF7,#6366F1)', color:'#fff', borderRadius:'12px', padding:'10px 24px', fontFamily:"'Sora',sans-serif", fontWeight:700, fontSize:'14px', textDecoration:'none' }}>
+            <a href="/learn" style={{ display:'inline-block', background:'linear-gradient(135deg,#4F8EF7,#6366F1)', color:'#fff', borderRadius:'12px', padding:'10px 24px', fontFamily:"'Sora',sans-serif", fontWeight:700, fontSize:'14px', textDecoration:'none' }}>
               Start Learning →
             </a>
           </div>

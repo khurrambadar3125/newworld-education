@@ -202,12 +202,12 @@ export default function Start() {
             </a>
           </Link>
         ) : (
-          <Link href="/">
+          <Link href="/learn">
             <a
               className="btn-primary"
               style={{ background: `linear-gradient(135deg, ${planDetails.color}, #6366F1)` }}
             >
-              Start Learning with Starky ★
+              Start Learning ★
             </a>
           </Link>
         )}

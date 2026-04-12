@@ -382,7 +382,7 @@ export default function IBCC() {
         <div className="cta-box">
           <h3>Need help with your A Level subjects?</h3>
           <p>Starky knows every Cambridge syllabus, past paper, mark scheme and examiner report — Economics, Accounting, Sciences, Maths, English and more.</p>
-          <a href="/" className="cta-btn">Study with Starky ★</a>
+          <a href="/learn" className="cta-btn">Start Learning ★</a>
         </div>
       </div>
     </>

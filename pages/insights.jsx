@@ -101,9 +101,9 @@ export default function Insights() {
               )}
 
               <div style={{ textAlign:'center', marginTop:28 }}>
-                <Link href="/">
+                <Link href="/learn">
                   <a style={{ display:'inline-block', background:'linear-gradient(135deg,#4F8EF7,#6366F1)', color:'#fff', borderRadius:14, padding:'14px 32px', fontFamily:"'Sora',sans-serif", fontWeight:700, fontSize:16, textDecoration:'none' }}>
-                    Start Learning with Starky ★
+                    Start Learning ★
                   </a>
                 </Link>
               </div>

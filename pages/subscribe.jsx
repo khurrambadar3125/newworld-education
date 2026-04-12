@@ -95,8 +95,8 @@ export default function Subscribe() {
               Check your spam folder if you don't see it — then mark us as safe.
             </p>
             <div style={{ display:'flex', flexDirection:'column', gap:'12px', alignItems:'center' }}>
-              <a href="/" style={{ display:'block', width:'100%', maxWidth:'320px', background:'linear-gradient(135deg,#4F8EF7,#6366F1)', color:'#fff', borderRadius:'14px', padding:'15px 24px', fontFamily:"'Sora',sans-serif", fontWeight:700, fontSize:'16px', textDecoration:'none', textAlign:'center' }}>
-                Start Learning with Starky →
+              <a href="/learn" style={{ display:'block', width:'100%', maxWidth:'320px', background:'linear-gradient(135deg,#4F8EF7,#6366F1)', color:'#fff', borderRadius:'14px', padding:'15px 24px', fontFamily:"'Sora',sans-serif", fontWeight:700, fontSize:'16px', textDecoration:'none', textAlign:'center' }}>
+                Start Learning →
               </a>
               <a href="/drill" style={{ display:'block', width:'100%', maxWidth:'320px', background:'rgba(255,255,255,0.05)', border:'1px solid rgba(255,255,255,0.1)', color:'rgba(255,255,255,0.75)', borderRadius:'14px', padding:'14px 24px', fontFamily:"'Sora',sans-serif", fontWeight:600, fontSize:'15px', textDecoration:'none', textAlign:'center' }}>
                 Try a Drill Session →

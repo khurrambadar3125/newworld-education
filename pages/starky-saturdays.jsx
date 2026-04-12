@@ -43,7 +43,7 @@ export default function StarkySaturdays() {
         <a href="/" style={{ textDecoration: 'none', fontWeight: 900, fontSize: 15, color: '#fff' }}>
           NewWorldEdu<span style={{ color: '#4F8EF7' }}>★</span>
         </a>
-        <a href="/demo" style={{ background: 'linear-gradient(135deg,#4F8EF7,#6366F1)', borderRadius: 10, padding: '6px 14px', color: '#fff', fontWeight: 800, fontSize: 12, textDecoration: 'none' }}>
+        <a href="/learn" style={{ background: 'linear-gradient(135deg,#4F8EF7,#6366F1)', borderRadius: 10, padding: '6px 14px', color: '#fff', fontWeight: 800, fontSize: 12, textDecoration: 'none' }}>
           Start Learning
         </a>
       </header>

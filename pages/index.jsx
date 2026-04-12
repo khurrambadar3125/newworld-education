@@ -321,7 +321,12 @@ export default function Home() {
         localStorage.removeItem('nw_referral_code');
       }
     } catch {}
-    launchChat(profile, selectedSubject);
+    // Platform-first: route to structured study, not chat
+    const level = selectedGrade?.label || 'O Level';
+    const url = selectedSubject
+      ? `/study?subject=${encodeURIComponent(selectedSubject)}&level=${encodeURIComponent(level)}`
+      : `/learn?level=${encodeURIComponent(level)}`;
+    window.location.href = url;
   };
 
   const launchChat = (profile, subjectOverride) => {
@@ -1059,9 +1064,9 @@ export default function Home() {
                 <span style={{fontSize:28}}>💜</span>My Child Has Special Needs
               </a>
             </div>
-            <button onClick={() => { setShowAudienceSelector(false); setTimeout(() => { const el = document.querySelector('.starky-fab'); if (el) el.click(); }, 200); }}
+            <button onClick={() => { setShowAudienceSelector(false); window.location.href = '/learn'; }}
               style={{background:'none',border:'none',color:'rgba(255,255,255,0.4)',fontSize:13,cursor:'pointer',fontFamily:"'Sora',sans-serif",display:'block',margin:'0 auto'}}>
-              Just show me the tutor →
+              Just show me the plan →
             </button>
           </div>
         )}
@@ -1164,8 +1169,15 @@ export default function Home() {
               </div>
             </div>
             <div className="sw">
-              <button className="stb" disabled={!selectedGrade} onClick={handleStartChat}>
-                {!selectedGrade ? 'Select your grade above ↑' : !selectedSubject ? 'Chat with Starky →' : userProfile?.name ? `Continue as ${userProfile.name.split(' ')[0]} →` : 'Start with Starky ★'}
+              <button className="stb" disabled={!selectedGrade} onClick={() => {
+                if (!userProfile) { setShowRegModal(true); return; }
+                const level = selectedGrade?.label || 'O Level';
+                const url = selectedSubject
+                  ? `/study?subject=${encodeURIComponent(selectedSubject)}&level=${encodeURIComponent(level)}`
+                  : `/learn?level=${encodeURIComponent(level)}`;
+                window.location.href = url;
+              }}>
+                {!selectedGrade ? 'Select your grade above ↑' : !selectedSubject ? `Start Learning ${selectedGrade.label} →` : userProfile?.name ? `Continue as ${userProfile.name.split(' ')[0]} →` : 'Start Learning ★'}
               </button>
             </div>
           </>
@@ -1196,10 +1208,10 @@ export default function Home() {
           {/* Subject pills — grouped by category with Skip option */}
           {(selectedGrade?.id?.includes('olevel')||selectedGrade?.id?.includes('alevel')) && (
             <>
-              <p style={{fontSize:12,color:'rgba(255,255,255,0.35)',marginBottom:14}}>Tap a subject to start — or skip and Starky will ask you ★</p>
-              <button onClick={()=>{ if(!userProfile){setShowRegModal(true);}else{launchChat(null,null);} }}
+              <p style={{fontSize:12,color:'rgba(255,255,255,0.35)',marginBottom:14}}>Tap a subject to start — or skip to see your study plan ★</p>
+              <button onClick={()=>{ if(!userProfile){setShowRegModal(true);}else{ window.location.href = `/learn?level=${encodeURIComponent(selectedGrade?.label||'O Level')}`; } }}
                 style={{display:'block',margin:'0 auto 16px',padding:'10px 28px',borderRadius:100,border:'1px solid rgba(79,142,247,0.3)',background:'rgba(79,142,247,0.08)',fontSize:13,fontWeight:700,color:'#4F8EF7',cursor:'pointer',fontFamily:"'Sora',sans-serif"}}>
-                Skip — Starky will ask me &rarr;
+                Skip — show me my plan &rarr;
               </button>
               {[
                 { label: '🔬 Sciences', subjects: ['Mathematics','Additional Mathematics','Physics','Chemistry','Biology','Statistics','Computer Science'] },
