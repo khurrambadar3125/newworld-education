@@ -255,7 +255,10 @@ export default function StarkyBubble() {
       .substring(0, 250);
     const utt = new SpeechSynthesisUtterance(clean);
     utt.lang = 'en-US'; // ALWAYS English for Starky main chat — never accented
-    utt.rate = 0.95; utt.pitch = kidMode ? 1.2 : 1.05; utt.volume = 1;
+    // Kid mode: slower rate + higher pitch for young learners
+    utt.rate = kidMode ? 0.85 : 0.95;
+    utt.pitch = kidMode ? 1.2 : 1.05;
+    utt.volume = 1;
     const voices = synthRef.current.getVoices();
     // Prefer Google/Microsoft English neural voices, then any en-US, then any English
     const v = voices.find(v => v.name.includes('Google US English'))

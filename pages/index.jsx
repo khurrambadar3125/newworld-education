@@ -269,7 +269,10 @@ export default function Home() {
       .substring(0, 400);
     const utt = new SpeechSynthesisUtterance(clean);
     utt.lang = 'en-US';
-    utt.rate = 0.95; utt.pitch = 1.05; utt.volume = 1;
+    // Kid mode: slower & higher-pitched for young learners (KG–Grade 5)
+    utt.rate = isYoung ? 0.85 : 0.95;
+    utt.pitch = isYoung ? 1.2 : 1.05;
+    utt.volume = 1;
     const voices = synthRef.current.getVoices();
     const v = voices.find(v => v.name.includes('Google US English'))
       || voices.find(v => v.name.includes('Google') && v.lang.startsWith('en'))
@@ -280,7 +283,7 @@ export default function Home() {
     utt.onend = () => setIsSpeaking(false);
     utt.onerror = () => setIsSpeaking(false);
     synthRef.current.speak(utt);
-  }, []);
+  }, [isYoung]);
 
   const stopSpeaking = () => { synthRef.current?.cancel(); setIsSpeaking(false); };
 

@@ -4,6 +4,21 @@
  */
 import { useState, useEffect, useRef, useCallback } from 'react';
 
+// Young learner detection — KG to Grade 5 get kid mode voice (slower + higher pitch).
+// Reads from explicit gradeId arg, else falls back to localStorage nw_user.grade.id.
+const YOUNG_GRADES = ['kg', 'grade1', 'grade2', 'grade3', 'grade4', 'grade5'];
+export function isYoungLearner(gradeId) {
+  if (gradeId) return YOUNG_GRADES.includes(String(gradeId).toLowerCase());
+  if (typeof window === 'undefined') return false;
+  try {
+    const user = JSON.parse(localStorage.getItem('nw_user') || '{}');
+    const gId = user?.grade?.id;
+    return gId ? YOUNG_GRADES.includes(String(gId).toLowerCase()) : false;
+  } catch {
+    return false;
+  }
+}
+
 /**
  * Voice INPUT — SpeechRecognition for children who can't type.
  * @param {function} setInput — React state setter for the text input
@@ -64,7 +79,7 @@ export function useSpeakText() {
     }
   }, []);
 
-  const speak = useCallback((text) => {
+  const speak = useCallback((text, opts = {}) => {
     if (!synthRef.current || !text) return;
     synthRef.current.cancel();
     const clean = text
@@ -77,8 +92,11 @@ export function useSpeakText() {
       .substring(0, 500);
     const utt = new SpeechSynthesisUtterance(clean);
     utt.lang = 'en-US'; // Always English for SEN pages — never accented
-    utt.rate = 0.85;
-    utt.pitch = 1.1;
+    // Kid mode: young learners (KG–Grade 5) and SEN callers get slower + higher pitch.
+    // SEN pages are the original callers and should always stay in kid mode by default.
+    const kid = opts.kidMode != null ? !!opts.kidMode : (opts.gradeId ? isYoungLearner(opts.gradeId) : true);
+    utt.rate = kid ? 0.85 : 0.95;
+    utt.pitch = kid ? 1.2 : 1.05;
     utt.volume = 1;
     const voices = synthRef.current.getVoices();
     const v = voices.find(v => v.name.includes('Google US English'))

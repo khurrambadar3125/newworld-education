@@ -16,7 +16,17 @@ import { useSessionLimit } from "../utils/useSessionLimit";
 import { useCountry } from "../components/CountrySelector";
 import { filterForCountry } from "../utils/subjectCatalog";
 import { getFullSENKnowledge } from "../utils/senKnowledge";
+import { enforceSENVerified, isVerifiedBankQuestion } from "../utils/senGuard";
 import LegalFooter from "../components/LegalFooter";
+// ═══════════════════════════════════════════════════════════════════════
+// SEN VERIFIED-BANK GUARD — enforced
+// Every question rendered in the SEN Practice Zone passes through
+// enforceSENVerified() before display. If a question is not from the
+// verified question_bank (source === 'question_bank' && verified === true,
+// or served from /api/drill with _source === 'verified_bank'), it is
+// blocked and a "Loading verified content…" fallback is shown instead.
+// See utils/senGuard.js and feedback_sen_verified_only.md.
+// ═══════════════════════════════════════════════════════════════════════
 // Special-needs page uses the FULL knowledge base since it's the dedicated SEN section
 const addKnowledgeToPrompt = (prompt) => prompt + "\n\n" + getFullSENKnowledge();
 
@@ -2265,9 +2275,16 @@ function SENDrillWidget({ condition, stage, subject, xpData, setXpData }) {
       });
       const data = await res.json();
       if (!data.error) {
-        setQuestion(data);
-        setQuestionCount(c => c + 1);
-        setSenError('');
+        // SEN GUARD — only render verified-bank questions.
+        const safe = enforceSENVerified(data);
+        if (!safe) {
+          setQuestion(null);
+          setSenError('Loading verified content…');
+        } else {
+          setQuestion(safe);
+          setQuestionCount(c => c + 1);
+          setSenError('');
+        }
       } else { setSenError(data.error); }
     } catch { setSenError('Something went wrong. Let\'s try again!'); }
     setLoading(false);
@@ -2414,6 +2431,13 @@ function SENDrillWidget({ condition, stage, subject, xpData, setXpData }) {
           {hint && !feedback && (
             <div style={{background:"rgba(252,211,77,0.08)",border:"1px solid rgba(252,211,77,0.2)",borderRadius:12,padding:"12px 16px",marginBottom:14,fontSize:13,color:"rgba(255,255,255,0.85)",lineHeight:1.7}}>
               <strong style={{color:"#FCD34D"}}>💡 Hint: </strong>{hint}
+            </div>
+          )}
+
+          {/* Verified-by-examiners badge — reassures parents SEN content is not AI */}
+          {isVerifiedBankQuestion(question) && (
+            <div aria-label="Verified by examiners" style={{display:"inline-flex",alignItems:"center",gap:6,background:"rgba(74,222,128,0.1)",border:"1px solid rgba(74,222,128,0.3)",borderRadius:20,padding:"4px 12px",fontSize:11,fontWeight:800,color:"#4ADE80",marginBottom:10,fontFamily:"'Nunito',sans-serif",letterSpacing:"0.02em"}}>
+              ✓ Verified by examiners
             </div>
           )}
 

@@ -238,6 +238,38 @@ export default withErrorAlert(async function handler(req, res) {
     let messages;
 
     if (action === 'generate') {
+      // ── SEN MODE: VERIFIED BANK ONLY — NEVER AI ──
+      // SEN learners must never see AI-generated questions. See utils/senGuard.js
+      // and feedback_sen_verified_only.md. If the bank has no match, return an
+      // explicit error rather than falling through to AI generation.
+      if (params.isSEN === true || params.senMode === true) {
+        try {
+          const senBankQ = await getRandomQuestion({
+            subject: params.subject,
+            level: params.level || 'Primary',
+            topic: params.topic || undefined,
+            type: params.questionType || undefined,
+            excludeIds: params.excludeIds || [],
+          });
+          if (senBankQ) {
+            const formatted = toClientFormat(senBankQ);
+            return res.status(200).json({
+              ...formatted,
+              _source: 'verified_bank',
+              _bankId: senBankQ.id,
+              source: 'question_bank',
+              verified: true,
+            });
+          }
+        } catch (senBankErr) {
+          console.error('[DRILL SEN] Bank fetch failed:', senBankErr.message);
+        }
+        // No AI fallback for SEN — return a safe error the UI can show
+        return res.status(200).json({
+          error: 'No verified question available yet for this topic. Our examiners are adding more content.',
+          _senBlocked: true,
+        });
+      }
       // ── VERIFIED BANK FIRST — no AI hallucinations for O/A Level ──
       // Try serving from the verified question bank before AI generation
       if (!isYoungLearner(params.level) && !params.imageBase64) {
