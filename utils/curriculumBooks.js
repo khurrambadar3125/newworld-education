@@ -325,8 +325,8 @@ const EDEXCEL_IGCSE_SUBJECTS = {
     ],
     pastPapers: 'Edexcel 4MB1 — alternative linear maths route',
     topics: ['Number', 'Algebra', 'Functions and graphs', 'Calculus (introductory)', 'Matrices', 'Geometry and trigonometry', 'Vectors', 'Statistics', 'Probability'],
-    needsVerification: true,
-    verificationNote: 'Confirm Mathematics B still offered under 4MB1 code and Pearson publishes a dedicated student book.',
+    paperStructure: '2 papers: 4MB1/01 (1h30, 33⅓%) and 4MB1/02 (2h30, 66⅔%). Single-tier linear.',
+    verified: '2026-04-12',
   },
   'Further Pure Mathematics (4PM1)': {
     syllabusCode: '4PM1',
@@ -367,8 +367,8 @@ const EDEXCEL_IGCSE_SUBJECTS = {
     ],
     pastPapers: 'Edexcel 4HB1',
     topics: ['The nature of human beings and other living organisms', 'Structures and functions in human beings', 'Reproduction and inheritance in humans', 'Humans and their environment', 'Use of biological resources'],
-    needsVerification: true,
-    verificationNote: 'Human Biology 4HB1 — confirm current spec + student book ISBN.',
+    paperStructure: '2 papers: 4HB1/01 (1h45, 50%) and 4HB1/02 (1h45, 50%). Linear, untiered.',
+    verified: '2026-04-12',
   },
   'Combined Science (Double Award) (4SD0)': {
     syllabusCode: '4SD0',
@@ -409,8 +409,8 @@ const EDEXCEL_IGCSE_SUBJECTS = {
     ],
     pastPapers: 'Edexcel 4CP0',
     topics: ['Computational thinking', 'Data', 'Computers', 'Communication and the internet', 'The bigger picture (ethical, legal, environmental)', 'Problem solving with programming'],
-    needsVerification: true,
-    verificationNote: 'Confirm current Pearson Computer Science iGCSE code (4CP0 vs legacy 4CN0/4CS0) and student book author.',
+    paperStructure: '2 papers: 4CP0/01 Principles of Computer Science (50%) and 4CP0/02 Application of Computational Thinking (50%).',
+    verified: '2026-04-12',
   },
   'Geography (4GE1)': {
     syllabusCode: '4GE1',
@@ -443,8 +443,8 @@ const EDEXCEL_IGCSE_SUBJECTS = {
     ],
     pastPapers: 'Edexcel 4CM1',
     topics: ['Commerce in context', 'Production', 'Trade', 'Aids to trade (banking, insurance, transport, communications, warehousing, advertising)', 'Consumer protection'],
-    needsVerification: true,
-    verificationNote: 'Confirm Pearson currently publishes a dedicated Commerce student book under 4CM1.',
+    paperStructure: '2 papers: 4CM1/01 Commercial operations and associated risks (1h30, 50%) and 4CM1/02 Facilitating commercial operations (1h30, 50%). Linear.',
+    verified: '2026-04-12',
   },
   'Arabic (First Language) (4AA1)': {
     syllabusCode: '4AA1',
@@ -453,8 +453,8 @@ const EDEXCEL_IGCSE_SUBJECTS = {
     ],
     pastPapers: 'Edexcel 4AA1',
     topics: ['Reading comprehension (literary and non-literary Arabic texts)', 'Writing (transactional and creative)', 'Arabic literature (set texts and poetry)', 'Grammar and linguistic analysis'],
-    needsVerification: true,
-    verificationNote: 'Arabic First Language — official Pearson student book title may differ; often delivered via endorsed third-party Arabic publishers.',
+    paperStructure: '2 papers: 4AA1/01 Reading, Summary and Grammar (2h15, 60%) and 4AA1/02 Writing (1h30, 40%). Linear.',
+    verified: '2026-04-12',
   },
   'Arabic (Second Language) (4AR1)': {
     syllabusCode: '4AR1',
@@ -464,7 +464,8 @@ const EDEXCEL_IGCSE_SUBJECTS = {
     pastPapers: 'Edexcel 4AR1',
     topics: ['Listening', 'Reading', 'Writing', 'Speaking (endorsement)', 'Topic areas: home and abroad, education and employment, personal life and relationships, the world around us, social activities, fitness and health'],
     needsVerification: true,
-    verificationNote: 'Arabic Second Language 4AR1 — verify endorsed student book availability.',
+    verificationNote: 'Arabic Second Language 4AR1 — Pearson qualification page could not be retrieved; 4AR1 code appears in past-paper aggregators but official spec page unreachable.',
+    lastChecked: '2026-04-12',
   },
   'French (4FR1)': {
     syllabusCode: '4FR1',
@@ -490,8 +491,9 @@ const EDEXCEL_IGCSE_SUBJECTS = {
     pastPapers: 'Edexcel 4UR0',
     topics: ['Reading comprehension (Urdu literary and non-literary texts)', 'Writing in Urdu (transactional and creative)', 'Translation', 'Urdu literature and grammar'],
     audience: 'For expat Pakistani families in UAE only — not part of the standard UAE British curriculum offer.',
-    needsVerification: true,
-    verificationNote: 'Confirm 4UR0 still available (Pearson periodically withdraws minority-language iGCSEs) and current student book.',
+    withdrawn: true,
+    verificationNote: 'VERIFIED WITHDRAWN: Pearson International GCSE Urdu (4UR0) — final assessment June 2018. No current replacement at iGCSE level (UK GCSE 1UR0 exists but different qualification). Consider removing or flagging as legacy.',
+    verified: '2026-04-12',
   },
   'Religious Studies (4RS1)': {
     syllabusCode: '4RS1',
@@ -500,8 +502,8 @@ const EDEXCEL_IGCSE_SUBJECTS = {
     ],
     pastPapers: 'Edexcel 4RS1',
     topics: ['Beliefs and values', 'The role of religion in the lives of adherents today', 'The role of religion in society and global issues (two religions studied from: Christianity, Islam, Judaism, Hinduism, Sikhism, Buddhism)'],
-    needsVerification: true,
-    verificationNote: 'Verify current 4RS1 spec structure (religions offered may have changed).',
+    paperStructure: '2 papers: 4RS1/01 Beliefs and Values (1h45, 60%) and 4RS1/02 Practices and Beliefs in Practice (1h30, 40%). Linear, 100% external.',
+    verified: '2026-04-12',
   },
   'Physical Education (4PE1)': {
     syllabusCode: '4PE1',
@@ -578,10 +580,10 @@ const EDEXCEL_IAL_SUBJECTS = {
       A2: ['Unit 4: Further Mechanics, Fields and Particles (WPH14)', 'Unit 5: Thermodynamics, Radiation, Oscillations and Cosmology (WPH15)', 'Unit 6: Practical Skills in Physics II (WPH16)'],
     },
     topics: ['Mechanics and Materials', 'Waves and Electricity', 'Practical Skills in Physics I', 'Further Mechanics, Fields and Particles', 'Thermodynamics, Radiation, Oscillations and Cosmology', 'Practical Skills in Physics II'],
-    needsVerification: true,
-    verificationNote: 'Current IAL Physics uses WPH11-WPH16 (6 units). Prompt brief listed WPH11-WPH14 only — code range corrected.',
+    verified: '2026-04-12',
+    verificationNote: 'Confirmed 6 units (WPH11-WPH16). 3 IAS + 3 IA2. First teaching Sept 2018.',
   },
-  'Chemistry (WCH11-WCH14)': {
+  'Chemistry (WCH11-WCH16)': {
     syllabusCode: 'WCH11, WCH12, WCH13 (AS) / WCH14, WCH15, WCH16 (A2)',
     books: [
       { title: 'Pearson Edexcel International A Level Chemistry Student Book 1', publisher: PEARSON, official: true },
@@ -593,10 +595,10 @@ const EDEXCEL_IAL_SUBJECTS = {
       A2: ['Unit 4: Rates, Equilibria and Further Organic Chemistry (WCH14)', 'Unit 5: Transition Metals and Organic Nitrogen Chemistry (WCH15)', 'Unit 6: Practical Skills in Chemistry II (WCH16)'],
     },
     topics: ['Structure, Bonding and Introduction to Organic Chemistry', 'Energetics, Group Chemistry, Halogenoalkanes and Alcohols', 'Practical Skills in Chemistry I', 'Rates, Equilibria and Further Organic Chemistry', 'Transition Metals and Organic Nitrogen Chemistry', 'Practical Skills in Chemistry II'],
-    needsVerification: true,
-    verificationNote: 'Current IAL Chemistry uses WCH11-WCH16. Prompt brief listed WCH11-WCH14 only.',
+    verified: '2026-04-12',
+    verificationNote: 'Confirmed 6 units (WCH11-WCH16). First teaching Sept 2018.',
   },
-  'Biology (WBI11-WBI14)': {
+  'Biology (WBI11-WBI16)': {
     syllabusCode: 'WBI11, WBI12, WBI13 (AS) / WBI14, WBI15, WBI16 (A2)',
     books: [
       { title: 'Pearson Edexcel International A Level Biology Student Book 1', publisher: PEARSON, official: true },
@@ -608,8 +610,8 @@ const EDEXCEL_IAL_SUBJECTS = {
       A2: ['Unit 4: Energy, Environment, Microbiology and Immunity (WBI14)', 'Unit 5: Respiration, Internal Environment, Coordination and Gene Technology (WBI15)', 'Unit 6: Practical Skills in Biology II (WBI16)'],
     },
     topics: ['Molecules, Diet, Transport and Health', 'Cells, Development, Biodiversity and Conservation', 'Practical Skills in Biology I', 'Energy, Environment, Microbiology and Immunity', 'Respiration, Internal Environment, Coordination and Gene Technology', 'Practical Skills in Biology II'],
-    needsVerification: true,
-    verificationNote: 'Current IAL Biology uses WBI11-WBI16. Prompt brief listed WBI11-WBI14 only.',
+    verified: '2026-04-12',
+    verificationNote: 'Confirmed 6 units (WBI11-WBI16). First teaching Sept 2018.',
   },
   'English Language (WEN01-WEN02)': {
     syllabusCode: 'WEN01 (AS) / WEN02 (A2)',
@@ -659,8 +661,8 @@ const EDEXCEL_IAL_SUBJECTS = {
       A2: ['Unit 2: Corporate and Management Accounting (WAC12)'],
     },
     topics: ['The accounting system and double entry', 'Financial statements for sole traders and partnerships', 'Introduction to costing', 'Limited company accounts', 'Management accounting and decision making', 'Budgets and standard costing'],
-    needsVerification: true,
-    verificationNote: 'Confirm IAL Accounting currently a 2-unit qualification and Pearson student book ISBN.',
+    verified: '2026-04-12',
+    verificationNote: 'Confirmed 2-unit qualification (WAC11 + WAC12). IAL Accounting spec is 2015 (not 2018).',
   },
   'Business (WBS11-WBS14)': {
     syllabusCode: 'WBS11, WBS12 (AS) / WBS13, WBS14 (A2)',
@@ -686,8 +688,8 @@ const EDEXCEL_IAL_SUBJECTS = {
       A2: ['Unit 3: Contested Planet (WGE03)', 'Unit 4: Geographical Research (WGE04)'],
     },
     topics: ['Global challenges (climate, population)', 'Geographical investigations and fieldwork', 'Contested planet (energy, water, biodiversity)', 'Geographical research (synoptic)'],
-    needsVerification: true,
-    verificationNote: 'Confirm IAL Geography still offered under WGE codes — some IAL humanities are periodically withdrawn.',
+    verified: '2026-04-12',
+    verificationNote: 'Confirmed 4 units (WGE01-WGE04, 2 IAS + 2 IA2). IAL Geography spec is 2016 (not 2018).',
   },
   'History (WHI01-WHI04)': {
     syllabusCode: 'WHI01, WHI02 (AS) / WHI03, WHI04 (A2)',
@@ -700,8 +702,8 @@ const EDEXCEL_IAL_SUBJECTS = {
       A2: ['Unit 3: Thematic study (WHI03)', 'Unit 4: International study in breadth (WHI04)'],
     },
     topics: ['Depth studies (e.g. Russia, Germany, USA)', 'Breadth studies', 'Source evaluation and historical interpretations', 'Thematic and international studies'],
-    needsVerification: true,
-    verificationNote: 'Confirm current IAL History unit codes and topic options.',
+    verified: '2026-04-12',
+    verificationNote: 'Confirmed 4 units (WHI01-WHI04). IAL History spec is 2015 (not 2018). First assessment June 2016.',
   },
   'Psychology (WPS01-WPS04)': {
     syllabusCode: 'WPS01, WPS02 (AS) / WPS03, WPS04 (A2)',
@@ -714,22 +716,22 @@ const EDEXCEL_IAL_SUBJECTS = {
       A2: ['Unit 3: Health Psychology (WPS03)', 'Unit 4: Clinical Psychology and Psychological Skills (WPS04)'],
     },
     topics: ['Foundations: social, cognitive, biological, learning approaches', 'Applications: criminological, child, health psychology', 'Health and clinical psychology', 'Research methods and psychological skills'],
-    needsVerification: true,
-    verificationNote: 'Verify current IAL Psychology unit structure.',
+    verified: '2026-04-12',
+    verificationNote: 'Confirmed 4 units (WPS01-WPS04). Unit 1 = Social and Cognitive Psychology. IAL Psychology spec is 2015.',
   },
-  'Information Technology (WIT11-WIT13)': {
-    syllabusCode: 'WIT11, WIT12 (AS) / WIT13 (A2)',
+  'Information Technology (WIT11-WIT14)': {
+    syllabusCode: 'WIT11, WIT12 (IAS) / WIT13, WIT14 (IA2)',
     books: [
       { title: 'Pearson Edexcel International A Level Information Technology Student Book', publisher: PEARSON },
     ],
-    pastPapers: 'Edexcel IAL WIT11-WIT13',
+    pastPapers: 'Edexcel IAL WIT11-WIT14',
     units: {
       AS: ['Unit 1: IT Systems (WIT11)', 'Unit 2: IT in Organisations (WIT12)'],
-      A2: ['Unit 3: IT Project Management and Problem Solving (WIT13)'],
+      A2: ['Unit 3 (WIT13)', 'Unit 4 (WIT14)'],
     },
     topics: ['IT systems, hardware and software', 'Networks and data', 'IT in organisations', 'Project management', 'Problem solving with IT'],
-    needsVerification: true,
-    verificationNote: 'Confirm IAL IT is currently offered as WIT11-WIT13 (some IAL IT specs have been restructured).',
+    verified: '2026-04-12',
+    verificationNote: 'CORRECTED: IAL IT has 4 units (2 IAS + 2 IA2), not 3. First teaching Sept 2018. Previous entry listed only WIT11-WIT13.',
   },
   'Arabic (WAR01-WAR04)': {
     syllabusCode: 'WAR01, WAR02 (AS) / WAR03, WAR04 (A2)',
@@ -742,8 +744,8 @@ const EDEXCEL_IAL_SUBJECTS = {
       A2: ['Unit 3: Understanding and Spoken Response in Arabic (WAR03)', 'Unit 4: Research, Understanding and Written Response in Arabic (WAR04)'],
     },
     topics: ['Spoken and written Arabic', 'Arab society and culture', 'Literature, media and the arts in the Arab world', 'Research-based essay in Arabic'],
-    needsVerification: true,
-    verificationNote: 'Verify current IAL Arabic unit codes/structure — endorsed resources typically from third-party Arabic publishers.',
+    verified: '2026-04-12',
+    verificationNote: 'Confirmed 4 units (WAR01-WAR04). IAL Arabic spec is 2016 (not 2018).',
   },
 };
 
@@ -1369,8 +1371,7 @@ export const EDEXCEL_NOTES = {
     examTips: 'Two papers, calculator-allowed. Single-tier (no Foundation/Higher split).',
     commonMistakes: ['Matrix multiplication order', 'Differentiation sign errors', 'Skipping working in multi-step geometry'],
     revisionGuideTitle: 'Pearson Edexcel International GCSE (9-1) Mathematics B Student Book',
-    needsVerification: true,
-    verificationNote: 'Confirm Maths B revision guide availability from third-party publishers.',
+    verified: '2026-04-12',
   },
   'English Language A (4EA1)': {
     level: 'iGCSE',
@@ -1425,8 +1426,8 @@ export const EDEXCEL_NOTES = {
     examTips: 'Paper 1: principles of CS (written). Paper 2: application of CS (written, may include on-paper code). Python is the typical chosen language.',
     commonMistakes: ['Off-by-one errors in pseudocode', 'Confusing compiler vs interpreter', 'Weak explanations of why a data structure is appropriate'],
     revisionGuideTitle: 'Pearson Edexcel International GCSE (9-1) Computer Science Student Book',
-    needsVerification: true,
-    verificationNote: 'Confirm current iGCSE CS paper structure (spec has been revised).',
+    verified: '2026-04-12',
+    verificationNote: 'Confirmed: 2 papers (4CP0/01 Principles, 4CP0/02 Application of Computational Thinking). 50%/50%.',
   },
 
   // ─── IAL ───
