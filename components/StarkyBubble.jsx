@@ -185,7 +185,10 @@ export default function StarkyBubble() {
       } else {
         // First time or guest — explain what Starky is
         const isParentUser = userProfile?.role === 'parent';
-        const urduLine = isParentUser ? '\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰' : '';
+        let _country = null;
+        try { _country = localStorage.getItem('user_country'); } catch {}
+        const isUAE = _country === 'UAE';
+        const urduLine = (isParentUser && !isUAE) ? '\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰' : '';
         // Tailor the greeting to the student's grade — don't mention Cambridge to a Grade 6 student
         const gradeId = (userProfile?.gradeId || '').toLowerCase();
         const isYoung = ['kg','grade1','grade2','grade3','grade4','grade5'].includes(gradeId);
@@ -199,13 +202,15 @@ export default function StarkyBubble() {
             : `Hi! 👋🌟\n\nI'm Starky — your learning star! What do you want to learn? Tap one! 👇`;
         } else if (isMiddle) {
           const isMatricGrade = ['grade9','grade10'].includes(gradeId);
+          const romanLine = isUAE ? '' : '\n\nRoman Urdu mein bhi pooch sakte ho 🇵🇰';
+          const urduScriptLine = isUAE ? '' : '\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰';
           greeting = isMatricGrade
             ? (firstName
-              ? `Hey ${firstName}! Starky here ★\n\nI know your board syllabus — every numerical, every definition, every diagram pattern. Ask me anything or photograph your notes.\n\nRoman Urdu mein bhi pooch sakte ho 🇵🇰`
-              : `Hey! Starky here ★\n\nI know your entire board syllabus. Ask me anything, photograph your notes, or say "quiz me".\n\nRoman Urdu mein bhi pooch sakte ho 🇵🇰`)
+              ? `Hey ${firstName}! Starky here ★\n\nI know your board syllabus — every numerical, every definition, every diagram pattern. Ask me anything or photograph your notes.${romanLine}`
+              : `Hey! Starky here ★\n\nI know your entire board syllabus. Ask me anything, photograph your notes, or say "quiz me".${romanLine}`)
             : (firstName
-              ? `Hey ${firstName}! I'm Starky ★\n\nI know your syllabus inside out. Ask me anything, photograph your textbook, or say "quiz me".\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰`
-              : `Hey! I'm Starky ★\n\nI know every syllabus — ask me anything or photograph your homework!\n\nاردو میں بھی پوچھ سکتے ہو 🇵🇰`);
+              ? `Hey ${firstName}! I'm Starky ★\n\nI know your syllabus inside out. Ask me anything, photograph your textbook, or say "quiz me".${urduScriptLine}`
+              : `Hey! I'm Starky ★\n\nI know every syllabus — ask me anything or photograph your homework!${urduScriptLine}`);
         } else {
           // O Level, A Level, or unknown — Cambridge-focused
           greeting = firstName
@@ -936,11 +941,14 @@ Be specific and knowledgeable — show you deeply understand the content, not ju
                 const gId = (userProfile?.gradeId || '').toLowerCase();
                 const isKid = ['kg','grade1','grade2','grade3','grade4','grade5'].includes(gId);
                 if (!isKid || !gId || loading || messages.length > 2) return null;
+                let _c = null;
+                try { _c = localStorage.getItem('user_country'); } catch {}
+                const isUAEKid = _c === 'UAE';
                 const kidSubjects = [
                   { emoji: '🔢', label: 'Maths', msg: 'I want to learn Maths!' },
                   { emoji: '📖', label: 'English', msg: 'I want to learn English!' },
                   { emoji: '🔬', label: 'Science', msg: 'I want to learn Science!' },
-                  { emoji: '✏️', label: 'Urdu', msg: 'I want to learn Urdu!' },
+                  ...(isUAEKid ? [] : [{ emoji: '✏️', label: 'Urdu', msg: 'I want to learn Urdu!' }]),
                   { emoji: '🌍', label: 'GK', msg: 'Tell me something fun about the world!' },
                   { emoji: '🎯', label: 'Quiz Me!', msg: 'Quiz me on something fun!' },
                 ];

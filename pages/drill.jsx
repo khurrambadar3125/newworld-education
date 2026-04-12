@@ -11,6 +11,8 @@ import { useSpacedRep } from '../utils/useSpacedRep';
 import useStreaks, { StreakWidget } from '../utils/useStreaks';
 import { useSessionLimit, SessionLimitBanner, LimitReachedModal } from '../utils/useSessionLimit';
 import LegalFooter from '../components/LegalFooter';
+import { useCountry } from '../components/CountrySelector';
+import { filterForCountry } from '../utils/subjectCatalog';
 
 // Viral sharing after session
 function ShareSessionButtons({ subject, score, maxScore, correct, total }) {
@@ -182,6 +184,7 @@ function QuestionTimer({ seconds, onExpire, paused }) {
 
 export default function DrillPage() {
   const router = useRouter();
+  const { userCountry, uaeCurriculum } = useCountry();
   const [userProfile, setUserProfile] = useState(null);
   const sr = useSpacedRep(userProfile);
   const { logSession, streak, totalQuestions, badges } = useStreaks(userProfile?.email || userProfile?.name || 'guest');
@@ -267,7 +270,8 @@ export default function DrillPage() {
     }
   }, [router.query]);
 
-  const subjects = mode === 'young' ? SUBJECTS_YOUNG : (level === 'O Level' ? SUBJECTS_OLEVEL : SUBJECTS_ALEVEL);
+  const _rawSubjects = mode === 'young' ? SUBJECTS_YOUNG : (level === 'O Level' ? SUBJECTS_OLEVEL : SUBJECTS_ALEVEL);
+  const subjects = filterForCountry(_rawSubjects, userCountry, uaeCurriculum);
   const youngTopics = subject && mode === 'young' ? (TOPICS_YOUNG[subject] || DEFAULT_TOPICS) : [];
   const topics = subject ? getTopics(subject) : [];
   const dueTopics = subject ? sr.getDueTopics(subject) : [];
@@ -370,7 +374,8 @@ export default function DrillPage() {
     const qsLevel = isALevel ? 'A Level' : 'O Level';
 
     // Pick subject: override > last used > first available
-    const subjectList = isYoung ? SUBJECTS_YOUNG : (isALevel ? SUBJECTS_ALEVEL : SUBJECTS_OLEVEL);
+    const _rawList = isYoung ? SUBJECTS_YOUNG : (isALevel ? SUBJECTS_ALEVEL : SUBJECTS_OLEVEL);
+    const subjectList = filterForCountry(_rawList, userCountry, uaeCurriculum);
     const qsSubject = overrideSubject || p.lastSubject || subjectList[0];
 
     // Set all state and start
@@ -591,9 +596,11 @@ export default function DrillPage() {
                 ⚡ Quick Start — 10 Mixed Questions
               </button>
               <div style={{display:'grid', gridTemplateColumns:'repeat(2,1fr)', gap:8, marginTop:10}}>
-                {(userProfile.gradeId?.includes('olevel') || userProfile.gradeId?.includes('alevel') || ['grade9','grade10','grade11','grade12'].includes(userProfile.gradeId)
-                  ? (userProfile.gradeId?.includes('alevel') || ['grade11','grade12'].includes(userProfile.gradeId) ? SUBJECTS_ALEVEL : SUBJECTS_OLEVEL)
-                  : SUBJECTS_YOUNG
+                {filterForCountry(
+                  (userProfile.gradeId?.includes('olevel') || userProfile.gradeId?.includes('alevel') || ['grade9','grade10','grade11','grade12'].includes(userProfile.gradeId)
+                    ? (userProfile.gradeId?.includes('alevel') || ['grade11','grade12'].includes(userProfile.gradeId) ? SUBJECTS_ALEVEL : SUBJECTS_OLEVEL)
+                    : SUBJECTS_YOUNG),
+                  userCountry, uaeCurriculum
                 ).slice(0,6).map(s => (
                   <button key={s} onClick={() => quickStart(s)} style={{...S.optionBtn(false), textAlign:'center', padding:'10px 8px', fontSize:12, fontWeight:700}}>
                     {s}
@@ -668,7 +675,7 @@ export default function DrillPage() {
                 <div ref={subjectRef} style={{...S.card,borderColor:'rgba(255,179,71,0.2)'}}>
                   <span style={S.label}>Subject</span>
                   <div style={{display:'grid',gridTemplateColumns:'repeat(2,1fr)',gap:8}}>
-                    {SUBJECTS_YOUNG.map(s => <button key={s} style={S.optionBtn(subject===s)} onClick={() => { setSubject(s); setTopic(''); }}>{s}</button>)}
+                    {filterForCountry(SUBJECTS_YOUNG, userCountry, uaeCurriculum).map(s => <button key={s} style={S.optionBtn(subject===s)} onClick={() => { setSubject(s); setTopic(''); }}>{s}</button>)}
                   </div>
                 </div>
               )}

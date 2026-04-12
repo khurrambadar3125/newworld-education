@@ -15,6 +15,8 @@ import { useSession } from 'next-auth/react';
 import LegalFooter from '../components/LegalFooter';
 import BottomNav from '../components/BottomNav';
 import { useJourney } from '../utils/journeyTracker';
+import { useCountry } from '../components/CountrySelector';
+import { filterForCountry } from '../utils/subjectCatalog';
 
 import { getSyllabusSubjects } from '../utils/syllabusStructure';
 
@@ -31,6 +33,7 @@ export default function Study() {
   const router = useRouter();
   const { data: session } = useSession();
   const journey = useJourney();
+  const { userCountry, uaeCurriculum } = useCountry();
 
   const [level, setLevel] = useState(router.query.level || 'O Level');
   const [subject, setSubject] = useState(router.query.subject || '');
@@ -128,7 +131,7 @@ export default function Study() {
           {/* Subject selector */}
           {!subject && (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 8, marginTop: 16 }}>
-              {(SUBJECTS[level] || []).map(s => (
+              {filterForCountry(SUBJECTS[level] || [], userCountry, uaeCurriculum).map(s => (
                 <button key={s} onClick={() => setSubject(s)}
                   style={{
                     background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.08)',

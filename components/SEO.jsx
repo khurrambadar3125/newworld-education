@@ -6,7 +6,7 @@ import Head from 'next/head';
  */
 export default function SEO({
   title = "NewWorldEdu — AI Tutor for Cambridge O Level & A Level | Pakistan",
-  description = "Pakistan's first AI tutor for Cambridge O Level and A Level. 30 years of past papers, mark schemes and examiner reports. Available 24/7 in English and Urdu. Start free — no credit card needed.",
+  description = "Personal AI tutor for every child — 24/7, 16 languages, every subject. Cambridge O Level and A Level, past papers, mark schemes and examiner reports. Start free — no credit card needed.",
   keywords = "AI tutor Pakistan, Cambridge O Level, A Level tutor, online tutor Karachi, Cambridge past papers, mark scheme help",
   url = "https://www.newworld.education",
   image = "https://www.newworld.education/og-image.png",

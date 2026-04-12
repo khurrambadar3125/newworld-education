@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo, useRef } from 'react';
 import Head from 'next/head';
 import { ATOMS_SUBJECTS, ATOM_COUNTS, getAtomsBySubject } from '../utils/starkyAtomsKB';
 import { SYLLABUS, getTopicsForSubject, getThemesForSubject } from '../utils/syllabusStructure';
+import { useCountry } from '../components/CountrySelector';
 
 /* ───── Progress Ring ───── */
 function ProgressRing({ percent, size = 64, stroke = 5, color = '#C9A84C' }) {
@@ -34,6 +35,7 @@ function DifficultyDots({ level, max = 5 }) {
 
 /* ───── Nano Page ───── */
 export default function NanoPage() {
+  const { userCountry, uaeCurriculum } = useCountry();
   const [isMobile, setIsMobile] = useState(false);
   const [selected, setSelected] = useState(null);
   const [atoms, setAtoms] = useState([]);
@@ -203,9 +205,12 @@ export default function NanoPage() {
     return { weakestUnit, worstPct, nextGoal, remaining, estMinutes };
   }, [atoms, mastery, unitMap, masteredCount]);
 
+  const _countryFilteredAtoms = (userCountry === 'UAE' && uaeCurriculum !== 'pakistani')
+    ? ATOMS_SUBJECTS.filter(s => !['pakistan_studies','islamiyat','urdu'].includes(s.id))
+    : ATOMS_SUBJECTS;
   const filteredSubjects = levelFilter === 'all'
-    ? ATOMS_SUBJECTS
-    : ATOMS_SUBJECTS.filter(s => s.level === levelFilter);
+    ? _countryFilteredAtoms
+    : _countryFilteredAtoms.filter(s => s.level === levelFilter);
 
   // Recommended next goal — high weight, lowest difficulty, not mastered
   const recommendedGoal = useMemo(() => {

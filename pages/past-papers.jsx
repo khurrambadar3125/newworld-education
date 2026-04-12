@@ -11,6 +11,8 @@
 import { useState, useRef, useEffect } from "react";
 import { useSessionLimit } from "../utils/useSessionLimit";
 import Head from "next/head";
+import { useCountry } from "../components/CountrySelector";
+import { filterForCountry } from "../utils/subjectCatalog";
 
 // ── PROGRESS STORAGE ─────────────────────────────────────────────────────────
 const PROGRESS_KEY = "nw_progress";
@@ -548,6 +550,7 @@ function ProgressPanel({ progress, subject }) {
 // MAIN PAGE
 // ══════════════════════════════════════════════════════════════════════════════
 export default function PastPapersPage() {
+  const { userCountry, uaeCurriculum } = useCountry();
   const [level,   setLevel]   = useState(null);
   const [subject, setSubject] = useState(null);
   const [messages, setMessages] = useState([]);
@@ -766,7 +769,7 @@ export default function PastPapersPage() {
   );
 
   // ── SUBJECT SELECTOR ──────────────────────────────────────────────────────
-  const subjects   = SUBJECTS[level];
+  const subjects   = filterForCountry(SUBJECTS[level] || [], userCountry, uaeCurriculum);
   const levelLabel = level==="olevel"?"O Level":"A Level";
   const levelColor = level==="olevel"?"#A8E063":"#63D2FF";
 

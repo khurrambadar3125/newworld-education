@@ -184,7 +184,7 @@ function SetAssignment({ children, parentName }) {
       </div>
       {selectedChild && (
         <>
-          <input value={topic} onChange={e => setTopic(e.target.value)} placeholder="e.g. Urdu Paper 1 — nazm analysis, Chapter 5 Biology"
+          <input value={topic} onChange={e => setTopic(e.target.value)} placeholder="e.g. Chapter 5 Biology, Paper 1 essay practice"
             style={{width:"100%",background:"rgba(255,255,255,0.04)",border:"1px solid rgba(255,255,255,0.12)",borderRadius:12,padding:"12px 14px",color:"#fff",fontSize:14,fontFamily:"'Nunito',sans-serif",boxSizing:"border-box",marginBottom:10}} />
           <button onClick={save} disabled={!topic.trim()} style={{
             width:"100%",background:topic.trim()?"linear-gradient(135deg,#A78BFA,#7C5CBF)":"rgba(255,255,255,0.06)",

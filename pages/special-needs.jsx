@@ -13,6 +13,8 @@
 import { useState, useRef, useEffect } from "react";
 import Head from "next/head";
 import { useSessionLimit } from "../utils/useSessionLimit";
+import { useCountry } from "../components/CountrySelector";
+import { filterForCountry } from "../utils/subjectCatalog";
 import { getFullSENKnowledge } from "../utils/senKnowledge";
 import LegalFooter from "../components/LegalFooter";
 // Special-needs page uses the FULL knowledge base since it's the dedicated SEN section
@@ -2874,6 +2876,7 @@ function SENQuickExercises({ condition, stage, xpData, setXpData, isUAE }) {
 }
 
 export default function SpecialNeedsPage() {
+  const { userCountry, uaeCurriculum } = useCountry();
   const [step, setStep]           = useState(1); // 1=condition, 2=stage, 3=focus, 4=chat
   const [urduMode, setUrduMode]   = useState(false); // Urdu language toggle
   const [region, setRegion]       = useState('pk'); // pk, ae, sa, gb, other
@@ -3450,7 +3453,7 @@ ${effectiveFocus.id !== "parent" ? `\n*For the adult:* Tell me your child's name
               <div style={{ background:accentColor+"0A", border:"1px solid "+accentColor+"25", borderRadius:18, padding:20, animation:"fadeUp 0.3s ease" }}>
                 <div style={{ fontSize:12, fontWeight:900, color:accentColor, letterSpacing:1, marginBottom:14 }}>SELECT SUBJECT — {stage?.name.toUpperCase()}</div>
                 <div style={{ display:"flex", flexWrap:"wrap", gap:8, marginBottom:16 }}>
-                  {stage?.subjects.map(sub => (
+                  {filterForCountry(stage?.subjects || [], userCountry, uaeCurriculum).map(sub => (
                     <button key={sub} onClick={() => setSubject(sub)}
                       style={{ ...S.btn, background: subject===sub ? accentColor : "rgba(255,255,255,0.05)", border:"1px solid "+(subject===sub ? accentColor : "rgba(255,255,255,0.12)"), borderRadius:20, padding:"6px 14px", fontSize:12, fontWeight:700, color: subject===sub ? "#060B20" : "rgba(255,255,255,0.55)" }}>
                       {sub}

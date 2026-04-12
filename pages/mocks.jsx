@@ -3,6 +3,8 @@ import Head from 'next/head';
 import { COMMAND_WORDS } from '../utils/commandWordEngine';
 import { EXAMINER_REPORTS } from '../utils/examinerReportsKB';
 import LegalFooter from '../components/LegalFooter';
+import { useCountry } from '../components/CountrySelector';
+import { filterForCountry } from '../utils/subjectCatalog';
 const O_LEVEL_SUBJECTS = [
   'Physics (5054)', 'Chemistry (5070)', 'Biology (5090)', 'Mathematics (4024)',
   'Additional Mathematics (4037)', 'English Language (1123)', 'English Literature (2010)',
@@ -19,6 +21,7 @@ const A_LEVEL_SUBJECTS = [
 ];
 
 export default function Mocks() {
+  const { userCountry, uaeCurriculum } = useCountry();
   const [isMobile, setIsMobile] = useState(false);
   const [step, setStep] = useState('register'); // register | subjects | exam | results
   const [form, setForm] = useState({ name: '', email: '', school: '', grade: 'O Level', country: 'PK' });
@@ -177,7 +180,7 @@ export default function Mocks() {
   };
 
   const formatTime = (s) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
-  const subjects = form.grade === 'A Level' ? A_LEVEL_SUBJECTS : O_LEVEL_SUBJECTS;
+  const subjects = filterForCountry(form.grade === 'A Level' ? A_LEVEL_SUBJECTS : O_LEVEL_SUBJECTS, userCountry, uaeCurriculum);
 
   const S = {
     page: { minHeight: '100vh', background: '#080C18', fontFamily: "'Sora',-apple-system,sans-serif", color: '#fff' },

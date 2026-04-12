@@ -9,6 +9,8 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import LegalFooter from '../components/LegalFooter';
+import { useCountry } from '../components/CountrySelector';
+import { filterForCountry } from '../utils/subjectCatalog';
 
 const STATS = [
   { value: '50K+', label: 'Verified Questions' },
@@ -114,6 +116,7 @@ function getExamBanner() {
 
 export default function Home() {
   const router = useRouter();
+  const { userCountry, uaeCurriculum } = useCountry();
   const [selectedLevel, setSelectedLevel] = useState(null);
   const [examBanner, setExamBanner] = useState(null);
 
@@ -204,7 +207,7 @@ export default function Home() {
               <div className="mt-6">
                 <div className="text-xs font-bold text-gray-400 tracking-widest mb-4">STEP 2 — PICK YOUR SUBJECT</div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 max-w-2xl mx-auto">
-                  {SUBJECTS[selectedLevel].map(s => (
+                  {filterForCountry(SUBJECTS[selectedLevel], userCountry, uaeCurriculum).map(s => (
                     <button key={s} onClick={() => handleSubjectClick(s)}
                       className="bg-white border border-gray-200 hover:border-blue-400 hover:bg-blue-50 text-gray-800 font-semibold text-sm py-3 px-4 rounded-xl transition text-left">
                       {s}

@@ -249,10 +249,10 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
             "alternateName": "NewWorld Education",
             "url": "https://www.newworld.education",
             "logo": "https://www.newworld.education/favicon.svg",
-            "description": "AI-powered tutoring platform for Cambridge O Level and A Level students in Pakistan. 30 years of past papers, mark schemes and examiner reports. Available 24/7 in English and Urdu.",
+            "description": "AI-powered tutoring for Cambridge O Level and A Level students — 24/7, 16 languages, every subject. 30 years of past papers, mark schemes and examiner reports.",
             "address": { "@type": "PostalAddress", "addressLocality": "Karachi", "addressCountry": "PK" },
-            "areaServed": { "@type": "Country", "name": "Pakistan" },
-            "availableLanguage": ["English", "Urdu", "Sindhi", "Punjabi", "Pashto"],
+            "areaServed": [{ "@type": "Country", "name": "Pakistan" }, { "@type": "Country", "name": "United Arab Emirates" }],
+            "availableLanguage": ["English", "Arabic", "Urdu", "Hindi", "Chinese", "French"],
             "founder": { "@type": "Person", "name": "Khurram Badar" },
             "sameAs": [],
             "offers": {
@@ -267,8 +267,8 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
             "@type": "FAQPage",
             "mainEntity": [
               { "@type": "Question", "name": "Is NewWorldEdu free?", "acceptedAnswer": { "@type": "Answer", "text": "Every student gets 10 free sessions with Starky — no credit card needed. After that, plans start from Rs 3,499/month." }},
-              { "@type": "Question", "name": "Which Cambridge subjects does Starky cover?", "acceptedAnswer": { "@type": "Answer", "text": "All Cambridge O Level and A Level subjects including Chemistry (9701/5070), Biology (9700/5090), Physics (9702/5054), Mathematics (9709/4024), English Language, Literature, Economics, History, Business, Computer Science, Pakistan Studies, Islamiat, and Urdu." }},
-              { "@type": "Question", "name": "Does it work in Urdu?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Students can ask questions and receive answers in English, Urdu, Punjabi, Sindhi, Pashto, Balochi, and Saraiki. Starky auto-detects the language." }},
+              { "@type": "Question", "name": "Which Cambridge subjects does Starky cover?", "acceptedAnswer": { "@type": "Answer", "text": "All Cambridge O Level and A Level subjects including Chemistry (9701/5070), Biology (9700/5090), Physics (9702/5054), Mathematics (9709/4024), English Language, Literature, Economics, History, Business, and Computer Science." }},
+              { "@type": "Question", "name": "Does it work in multiple languages?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Students can ask questions and receive answers in 16 languages including English, Arabic, Urdu, Hindi, Chinese, and French. Starky auto-detects the language." }},
               { "@type": "Question", "name": "Is it available 24/7?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Starky is available every day including weekends, holidays, and during exam season. Many students study at night — Starky is there at 11pm on a Sunday." }},
               { "@type": "Question", "name": "What is the difference between NewWorldEdu and ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "Starky knows Cambridge specifically — every mark scheme, every examiner report, every command word. It teaches the mark scheme, not just the subject. ChatGPT gives general answers; Starky gives Cambridge-examiner-level precision." }},
             ]
