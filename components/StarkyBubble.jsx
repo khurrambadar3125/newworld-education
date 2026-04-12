@@ -51,6 +51,12 @@ export default function StarkyBubble() {
   const [voiceSupported, setVoiceSupported] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [kidMode, setKidMode] = useState(false);
+  // Auto-enable kid mode voice (rate=0.85, pitch=1.2) for KG-Grade 5
+  useEffect(() => {
+    const gradeId = (userProfile?.gradeId || '').toLowerCase();
+    const isYoung = ['kg','grade1','grade2','grade3','grade4','grade5'].includes(gradeId);
+    if (isYoung) setKidMode(true);
+  }, [userProfile?.gradeId]);
   const [imageData, setImageData] = useState(null);
   const [showLimitModal, setShowLimitModal] = useState(false);
   const [isMicActive, setIsMicActive] = useState(false);
