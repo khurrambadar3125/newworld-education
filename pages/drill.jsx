@@ -218,6 +218,10 @@ export default function DrillPage() {
   const [hint, setHint] = useState(null);
   const [hintLoading, setHintLoading] = useState(false);
   const [timedOut, setTimedOut] = useState(false);
+  // Two-turn Socratic retry flow — when API returns guidingQuestions on first wrong attempt
+  const [isRetryAttempt, setIsRetryAttempt] = useState(false);
+  const [guidingQuestions, setGuidingQuestions] = useState([]);
+  const [showGuidance, setShowGuidance] = useState(false);
 
   // Session config — adapts by mode/grade
   const sessionConfig = getSessionConfig(mode, youngGrade);
@@ -275,6 +279,7 @@ export default function DrillPage() {
   const generateQuestion = useCallback(async (targetTopic, imageData) => {
     setLoading(true); setError(''); setFeedback(null);
     setSelectedOption(''); setStructuredAns(''); setHint(null); setTimedOut(false);
+    setIsRetryAttempt(false); setGuidingQuestions([]); setShowGuidance(false);
 
     let t = targetTopic || topic;
     // "All Topics" mode: prioritize weak topics, then random
@@ -451,11 +456,25 @@ export default function DrillPage() {
       }
       // ── Structured: AI grading (partial credit makes sense here) ────────
       else {
-        const res = await fetch('/api/drill', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ action:'grade', level, subject, topic:question.topic||topic, question:question.question, studentAnswer:answer||'(no answer — time ran out)', questionType:question.type, options:question.options, marks:question.marks }) });
+        const res = await fetch('/api/drill', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ action:'grade', level, subject, topic:question.topic||topic, question:question.question, studentAnswer:answer||'(no answer — time ran out)', questionType:question.type, options:question.options, marks:question.marks, isRetry: isRetryAttempt }) });
         try { data = await res.json(); } catch { throw new Error('Invalid response'); }
       }
 
+      // ── Two-turn Socratic flow ─────────────────────────────────────────
+      // If API says retry required and we have guiding questions, show guidance
+      // instead of the full feedback. Young learner mode doesn't return these.
+      if (data && data.isRetryRequired && Array.isArray(data.guidingQuestions) && data.guidingQuestions.length > 0 && !isRetryAttempt && mode !== 'young' && !forceSubmit) {
+        setGuidingQuestions(data.guidingQuestions);
+        setShowGuidance(true);
+        setFeedback(data); // keep feedback text available but UI will render guidance branch
+        setLoading(false);
+        setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+        return; // Do NOT record result yet — student gets a second attempt
+      }
+
       setFeedback(data);
+      // On retry completion (or correct first attempt), clear guidance UI
+      setShowGuidance(false);
       setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
       const t = question.topic || topic;
       const quality = typeof data.quality === 'number' ? Math.max(0, Math.min(5, data.quality)) : (data.correct === true ? 4 : data.correct === false ? 1 : 2);
@@ -885,7 +904,7 @@ export default function DrillPage() {
                 <div style={S.questionText}>{question.question}</div>
 
                 {/* MCQ options */}
-                {question.type==='mcq' && question.options && !feedback && (
+                {question.type==='mcq' && question.options && (!feedback || showGuidance) && (
                   <div style={{display:'flex', flexDirection:'column', gap:8, marginBottom:16}}>
                     {Object.entries(question.options).map(([key, val]) => {
                       const sel = selectedOption===key;
@@ -903,7 +922,7 @@ export default function DrillPage() {
                 )}
 
                 {/* MCQ after feedback */}
-                {question.type==='mcq' && question.options && feedback && (
+                {question.type==='mcq' && question.options && feedback && !showGuidance && (
                   <div style={{display:'flex', flexDirection:'column', gap:8, marginBottom:16}}>
                     {Object.entries(question.options).map(([key, val]) => {
                       const isSelected = selectedOption===key;
@@ -942,8 +961,41 @@ export default function DrillPage() {
                   <div style={S.tipBox}><strong style={{color:'#FCD34D'}}>💡 Hint: </strong>{hint}</div>
                 )}
 
+                {/* Two-turn Socratic guidance — shown instead of full feedback on first wrong attempt */}
+                {showGuidance && guidingQuestions.length > 0 && (
+                  <div style={{background:'rgba(124,92,191,0.08)', border:'1px solid rgba(167,139,250,0.35)', borderLeft:'3px solid #A78BFA', borderRadius:12, padding:'16px 18px', marginBottom:14}}>
+                    <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:10}}>
+                      <span style={{fontSize:11, fontWeight:700, color:'#A78BFA', textTransform:'uppercase', letterSpacing:'.08em'}}>Step 1 of 2</span>
+                      <span style={{fontSize:11, color:'rgba(255,255,255,.4)'}}>Second chance coming up</span>
+                    </div>
+                    <div style={{fontSize:15, fontWeight:700, color:'#fff', marginBottom:10}}>💭 Think about these…</div>
+                    <ol style={{margin:'0 0 14px 20px', padding:0, color:'rgba(255,255,255,.85)', lineHeight:1.7, fontSize:14}}>
+                      {guidingQuestions.map((q, i) => (
+                        <li key={i} style={{marginBottom:8}}>{q}</li>
+                      ))}
+                    </ol>
+                    {feedback?.feedback && (
+                      <p style={{margin:'0 0 10px', fontSize:13, color:'rgba(255,255,255,.6)', lineHeight:1.6, fontStyle:'italic'}}>
+                        {feedback.feedback}
+                      </p>
+                    )}
+                    <button
+                      style={{...S.primaryBtn, background:'linear-gradient(135deg,#A78BFA,#7C5CBF)', marginTop:4}}
+                      onClick={() => {
+                        setShowGuidance(false);
+                        setFeedback(null);
+                        setIsRetryAttempt(true);
+                        setStructuredAns('');
+                        setSelectedOption('');
+                      }}
+                    >
+                      Try Again →
+                    </button>
+                  </div>
+                )}
+
                 {/* Feedback */}
-                {feedback && (
+                {feedback && !showGuidance && (
                   <div style={S.feedbackBox(feedback.correct)}>
                     <div style={S.scoreRow}>
                       <span style={{fontSize:22}}>{feedback.correct ? '✅' : '❌'}</span>
@@ -979,13 +1031,13 @@ export default function DrillPage() {
                 )}
 
                 {/* Submit / Next */}
-                {!feedback ? (
+                {showGuidance ? null : !feedback ? (
                   <button
                     style={{...S.primaryBtn, opacity:(question.type==='mcq'?!selectedOption:!structuredAns.trim())?0.4:1}}
                     disabled={question.type==='mcq'?!selectedOption:!structuredAns.trim()}
                     onClick={() => submitAnswer()}
                   >
-                    {loading ? 'Checking…' : 'Submit Answer →'}
+                    {loading ? 'Checking…' : isRetryAttempt ? 'Submit Retry →' : 'Submit Answer →'}
                   </button>
                 ) : (
                   <button style={S.primaryBtn} onClick={nextQuestion}>
