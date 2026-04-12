@@ -658,8 +658,8 @@ function buildIntentInstruction(intent, group) {
     [INTENTS.CONCEPT_EXPLAIN]: {
       KID:    'Explain with ONE tiny example using emojis and things they know (🍎 food, 🧸 toys, 🐱 animals). Maximum 2 sentences. Then ask "Does that make sense?" Under 30 words.',
       MIDDLE: 'Use an analogy from everyday life. Then check understanding with a simple question.',
-      OLEVEL: 'Explain the concept, give an exam-style example, then ask them to summarise it back.',
-      ALEVEL: 'Explain with depth and nuance. Bring in real-world applications and exam implications.',
+      OLEVEL: 'Ask what they already know about this — even a partial guess counts. Build from what they give you. Only fill the specific gap you find. Reference the mark scheme language. End with a question one level harder than the original, not a summary request.',
+      ALEVEL: 'Ask first: "What\'s your current thinking on this?" Let them attempt an answer before you explain. Then challenge their reasoning, introduce nuance they missed, and connect to the wider field. Close with an extension question that pushes into A* territory.',
     },
     [INTENTS.MARKING_REQUEST]: {
       KID:    'Tell them one thing they did well, one thing to try differently. Keep it kind.',
