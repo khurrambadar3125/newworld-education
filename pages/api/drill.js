@@ -91,7 +91,28 @@ ${questionType === 'mcq'
 }
 
 // ── Grade prompt ─────────────────────────────────────────────────────────────
-function buildGradePrompt({ level, subject, topic, question, studentAnswer, questionType, options, marks }) {
+// Two-turn drill flow (Elite Teacher Fix #1) — O/A Level only:
+//   - On first attempt (isRetry=false), a weak answer (quality < 3) returns
+//     guidingQuestions (2 Socratic questions) with modelAnswer=null and
+//     isRetryRequired=true. The frontend should re-submit the student's
+//     second attempt with isRetry=true.
+//   - On retry (isRetry=true) OR when quality >= 3, modelAnswer is returned
+//     as usual and guidingQuestions=null, isRetryRequired=false.
+//   - Young learner (KG–Grade 9) flow is unchanged — already pedagogically sound.
+//
+// New response shape (O/A Level):
+//   {
+//     "correct": boolean,
+//     "quality": 0-5,
+//     "score": int,
+//     "maxScore": int,
+//     "feedback": string,
+//     "examinerTip": string,
+//     "modelAnswer": string | null,
+//     "guidingQuestions": [string, string] | null,
+//     "isRetryRequired": boolean
+//   }
+function buildGradePrompt({ level, subject, topic, question, studentAnswer, questionType, options, marks, isRetry = false }) {
   const young = isYoungLearner(level);
   const optText = questionType === 'mcq' && options
     ? `Options were:\nA: ${options.A}\nB: ${options.B}\nC: ${options.C}\nD: ${options.D}\n` : '';
@@ -117,14 +138,25 @@ Return this JSON:
 }`;
   }
 
+  // O/A Level (and other senior levels) — two-turn Socratic flow
+  const retryClause = isRetry
+    ? `This is the student's SECOND attempt. Whatever the quality, you MUST return the full modelAnswer now — they've had their guided chance. Set "guidingQuestions": null and "isRetryRequired": false.`
+    : `This is the student's FIRST attempt.
+- If quality >= 3 (correct or mostly correct): return the full modelAnswer as usual. Set "guidingQuestions": null and "isRetryRequired": false.
+- If quality < 3 (wrong, blackout, or only partial understanding): DO NOT reveal the answer. Set "modelAnswer": null and "isRetryRequired": true. Instead, return "guidingQuestions" as an array of EXACTLY TWO short Socratic questions that lead the student toward the correct answer without revealing it. Each question should be one sentence, probing a specific step or concept. Questions must build on each other (Q1 unlocks Q2). Never give away the final answer inside the questions.`;
+
   return `Grade this Cambridge ${level} ${subject} answer.
 Topic: ${topic}
 Question: ${question}
 ${optText}Student's answer: "${studentAnswer}"
 Marks available: ${marks || (questionType === 'mcq' ? 1 : 3)}
+Attempt: ${isRetry ? 'SECOND (retry)' : 'FIRST'}
 
 Grade exactly as a Cambridge examiner. Be precise, fair, constructive.
-IMPORTANT: Always respond in ENGLISH. Cambridge exams require English answers. Even if the student wrote in Urdu or another language, your feedback, examiner tip, and model answer MUST be in English. You may briefly note in feedback if the student needs to answer in English.
+IMPORTANT: Always respond in ENGLISH. Cambridge exams require English answers. Even if the student wrote in Urdu or another language, your feedback, examiner tip, guiding questions, and model answer MUST be in English. You may briefly note in feedback if the student needs to answer in English.
+
+TWO-TURN TEACHING RULE:
+${retryClause}
 
 Return this JSON:
 {
@@ -132,9 +164,11 @@ Return this JSON:
   "quality": 0-5 where 0=blackout, 1=wrong, 2=partial understanding, 3=correct but incomplete, 4=correct good explanation, 5=perfect Cambridge answer,
   "score": marks awarded as integer,
   "maxScore": total marks available,
-  "feedback": "2-3 sentences IN ENGLISH — warm, specific, in Starky's voice. What they got right, what was missing, encouraging.",
+  "feedback": "2-3 sentences IN ENGLISH — warm, specific, in Starky's voice. What they got right, what was missing, encouraging. If guidingQuestions are returned, the feedback should set up the Socratic nudge (e.g. 'Not quite — let's think it through together.').",
   "examinerTip": "One precise Cambridge examiner tip IN ENGLISH — the exact keyword/phrase mark schemes require for this topic",
-  "modelAnswer": "Ideal Cambridge mark scheme answer IN ENGLISH — exactly what earns full marks"
+  "modelAnswer": "Ideal Cambridge mark scheme answer IN ENGLISH — exactly what earns full marks. MUST be null if guidingQuestions are being returned.",
+  "guidingQuestions": ["First Socratic question?", "Second Socratic question?"] or null,
+  "isRetryRequired": true if guidingQuestions are returned, otherwise false
 }`;
 }
 
@@ -287,7 +321,9 @@ export default withErrorAlert(async function handler(req, res) {
         messages = [{ role:'user', content:prompt }];
       }
     } else if (action === 'grade') {
-      prompt = buildGradePrompt(params);
+      // Two-turn flow: pass through isRetry (default false) so the grader knows
+      // whether to return guidingQuestions (first attempt, weak) or modelAnswer.
+      prompt = buildGradePrompt({ ...params, isRetry: params.isRetry === true });
       systemPrompt = isYoungLearner(params.level) ? SYSTEM_YOUNG : SYSTEM;
       messages = [{ role:'user', content:prompt }];
     } else if (action === 'hint') {
@@ -304,7 +340,8 @@ export default withErrorAlert(async function handler(req, res) {
       try {
         response = await client.messages.create({
           model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
-          max_tokens: 800,
+          // Grade action needs a bit more room for two-turn Socratic guidingQuestions.
+          max_tokens: action === 'grade' ? 1000 : 800,
           system: systemPrompt,
           messages,
         });

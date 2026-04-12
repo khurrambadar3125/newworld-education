@@ -28,7 +28,9 @@ const MARK_SCHEME_KB = [
       "movement of water"
     ],
     examinerNote: "Examiners require 'net movement of water molecules' — saying just 'water moves' loses the mark. 'Net' and 'molecules' are both essential.",
-    markSchemeQuote: "net movement of water molecules (1) through a partially permeable membrane (1) from a region of higher water potential to a region of lower water potential (1)"
+    markSchemeQuote: "net movement of water molecules (1) through a partially permeable membrane (1) from a region of higher water potential to a region of lower water potential (1)",
+    commandWord: ["define", "state", "explain"],
+    extensionQuestion: "A student placed a red blood cell in 10% salt solution and observed it shrink within seconds. Explain what happened using the phrase 'net movement of water molecules' and refer to water potential on both sides of the partially permeable membrane."
   },
   {
     id: "ms_bio_002",
@@ -52,7 +54,9 @@ const MARK_SCHEME_KB = [
       "enzyme is dead"
     ],
     examinerNote: "Examiners will not award marks for 'killed' or 'destroyed' — only 'denatured' is accepted. Enzymes are not alive and cannot be killed.",
-    markSchemeQuote: "denatured (1)"
+    markSchemeQuote: "denatured (1)",
+    commandWord: ["explain", "describe", "state"],
+    extensionQuestion: "A scientist measures enzyme activity at 80°C and finds no reaction occurring. Explain why, and predict what would happen if she cooled the enzyme back down to 37°C. Your answer must include the phrase 'shape of the active site' and explain why the change is irreversible."
   },
   {
     id: "ms_bio_003",
@@ -73,7 +77,9 @@ const MARK_SCHEME_KB = [
       "the plant uses energy to make food"
     ],
     examinerNote: "Must specify 'light energy' — just 'energy' is too vague and will not score. The source of energy must be explicit.",
-    markSchemeQuote: "light energy (1) absorbed by chlorophyll (1)"
+    markSchemeQuote: "light energy (1) absorbed by chlorophyll (1)",
+    commandWord: ["define", "state", "describe", "explain"],
+    extensionQuestion: "A gardener grows lettuce under green-coloured glass and notices the plants die. Explain why, using the phrase 'light energy is absorbed by chlorophyll' and referring to the colours of light chlorophyll actually absorbs."
   },
   {
     id: "ms_bio_004",
@@ -94,7 +100,9 @@ const MARK_SCHEME_KB = [
       "things move from high to low"
     ],
     examinerNote: "The word 'net' is essential — without it the definition is incomplete and will not score the first mark.",
-    markSchemeQuote: "net movement (1) of molecules/particles from a region of higher concentration to a region of lower concentration (1)"
+    markSchemeQuote: "net movement (1) of molecules/particles from a region of higher concentration to a region of lower concentration (1)",
+    commandWord: ["define", "state", "explain"],
+    extensionQuestion: "A perfume bottle is opened at the front of a classroom. After 30 seconds a student at the back smells it. Using the phrase 'net movement of particles from a region of higher concentration to a region of lower concentration', explain why the smell eventually becomes undetectable."
   },
   {
     id: "ms_bio_005",
@@ -116,7 +124,9 @@ const MARK_SCHEME_KB = [
       "opposite of diffusion"
     ],
     examinerNote: "Both 'against concentration gradient' AND 'energy/ATP' must be mentioned for full marks. Missing either one loses a mark.",
-    markSchemeQuote: "against concentration gradient (1) using energy/ATP (1)"
+    markSchemeQuote: "against concentration gradient (1) using energy/ATP (1)",
+    commandWord: ["define", "explain", "describe", "compare"],
+    extensionQuestion: "Root hair cells absorb mineral ions from soil where the concentration is much lower than inside the cell. A researcher treats the roots with cyanide (which stops respiration) and uptake ceases. Explain this observation using the phrases 'against the concentration gradient' and 'energy from respiration'."
   },
   {
     id: "ms_bio_006",
@@ -139,7 +149,9 @@ const MARK_SCHEME_KB = [
       "creates energy"
     ],
     examinerNote: "Energy is 'released' not 'made' or 'produced'. Energy cannot be created (conservation of energy). This is a very common error that loses marks.",
-    markSchemeQuote: "energy released (1) from glucose (1)"
+    markSchemeQuote: "energy released (1) from glucose (1)",
+    commandWord: ["define", "state", "explain", "describe"],
+    extensionQuestion: "A marathon runner's muscle cells generate heat and contract rapidly during a race. Using the phrase 'energy released from glucose', explain why the runner feels hot and why they must keep eating carbohydrates. Do not use the words 'make' or 'produce'."
   },
   {
     id: "ms_bio_007",
@@ -161,7 +173,9 @@ const MARK_SCHEME_KB = [
       "makes two cells the same"
     ],
     examinerNote: "Must say 'genetically identical' — just 'same' or 'identical' without 'genetically' does not score. The specification demands this precise phrase.",
-    markSchemeQuote: "two genetically identical (1) daughter cells (1)"
+    markSchemeQuote: "two genetically identical (1) daughter cells (1)",
+    commandWord: ["describe", "explain", "state", "compare"],
+    extensionQuestion: "A strawberry plant reproduces asexually via runners to form a colony of offspring. A disease then wipes out the entire colony in days. Using the phrase 'genetically identical daughter cells', explain why all the offspring died while a neighbouring colony grown from seed survived."
   },
   {
     id: "ms_bio_008",
@@ -183,7 +197,9 @@ const MARK_SCHEME_KB = [
       "takes oxygen around the body"
     ],
     examinerNote: "For top marks, haemoglobin 'combines with' oxygen to form oxyhaemoglobin — 'carries' is a lower-level answer that may not score full marks at IGCSE.",
-    markSchemeQuote: "haemoglobin combines with oxygen (1) to form oxyhaemoglobin (1)"
+    markSchemeQuote: "haemoglobin combines with oxygen (1) to form oxyhaemoglobin (1)",
+    commandWord: ["describe", "explain", "state"],
+    extensionQuestion: "A climber at 5,000 m altitude has a blood oxygen saturation of only 75% compared to 98% at sea level. Using the phrase 'haemoglobin combines with oxygen to form oxyhaemoglobin', explain why this happens and predict how the climber's body adapts over several weeks."
   },
   {
     id: "ms_bio_009",
@@ -207,9 +223,10 @@ const MARK_SCHEME_KB = [
     ],
     examinerNote: "Students commonly write 'fits like a lock and key' — examiners do not award this phrase. 'Complementary shape' is required. Writing 'the enzyme is specific' without explaining WHY (complementary shape) scores 0 for the explanation mark.",
     markSchemeQuote: "active site has a complementary shape to the substrate (1) substrate binds to the active site forming an enzyme-substrate complex (1) only the specific substrate can bind because its shape is complementary (1)",
-    commandWord: "explain",
+    commandWord: ["explain", "describe", "state"],
     modelAnswer: "The enzyme is specific to its substrate because the active site has a complementary shape to the substrate molecule. This means only that specific substrate can bind to form an enzyme-substrate complex. Other molecules cannot bind because their shape is not complementary to the active site.",
-    marks: 3
+    marks: 3,
+    extensionQuestion: "A pharmaceutical company designs a drug molecule with almost the same shape as a natural substrate to block an enzyme in a virus. Using the phrases 'active site', 'complementary shape' and 'enzyme-substrate complex', explain how the drug works and predict what would happen if the virus mutated to slightly change the active site shape."
   },
 
   // ═══════════════════════════════════════════
@@ -234,7 +251,9 @@ const MARK_SCHEME_KB = [
       "more reactions happen"
     ],
     examinerNote: "Must say 'more frequent SUCCESSFUL collisions' — just 'more collisions' does not score because not all collisions lead to a reaction.",
-    markSchemeQuote: "more frequent successful collisions (1) per unit time (1)"
+    markSchemeQuote: "more frequent successful collisions (1) per unit time (1)",
+    commandWord: ["explain", "describe", "state"],
+    extensionQuestion: "A student doubles the concentration of hydrochloric acid reacting with marble chips and finds the reaction finishes in half the time. Using the phrase 'more frequent successful collisions per unit time', explain this result — and explain why doubling the concentration does NOT always exactly halve the time."
   },
   {
     id: "ms_chem_009",
@@ -258,9 +277,10 @@ const MARK_SCHEME_KB = [
     ],
     examinerNote: "Students who write only 'more collisions' lose mark 2 — Cambridge requires 'more frequent SUCCESSFUL collisions'. Students who omit activation energy entirely cannot score mark 3. All three mark points are needed for full marks.",
     markSchemeQuote: "particles have more kinetic energy / move faster (1) more frequent successful collisions (1) greater proportion of particles have energy >= activation energy (1)",
-    commandWord: "explain",
+    commandWord: ["explain", "describe"],
     modelAnswer: "Increasing temperature gives particles more kinetic energy, so they move faster. This leads to more frequent successful collisions between reacting particles. A greater proportion of particles now have energy equal to or greater than the activation energy.",
-    marks: 3
+    marks: 3,
+    extensionQuestion: "A reaction has a very high activation energy and barely proceeds at 25°C, but at 50°C the rate increases over tenfold — far more than you'd expect from just particles moving faster. Using the phrase 'greater proportion of particles have energy equal to or greater than the activation energy', explain why this small temperature rise has such a large effect."
   },
   {
     id: "ms_chem_002",
@@ -281,7 +301,9 @@ const MARK_SCHEME_KB = [
       "amount of energy needed"
     ],
     examinerNote: "'Minimum' is the key word — without it the definition does not score. 'Energy needed' alone is too vague.",
-    markSchemeQuote: "minimum energy required (1) for a reaction to occur / for a successful collision (1)"
+    markSchemeQuote: "minimum energy required (1) for a reaction to occur / for a successful collision (1)",
+    commandWord: ["define", "state", "explain"],
+    extensionQuestion: "Hydrogen and oxygen gas can be mixed in a balloon at room temperature and sit indefinitely without reacting, but a single spark causes an explosion. Using the phrase 'minimum energy required for a successful collision', explain both observations."
   },
   {
     id: "ms_chem_003",
@@ -302,7 +324,9 @@ const MARK_SCHEME_KB = [
       "they swap electrons"
     ],
     examinerNote: "Ionic bonding is 'transfer' of electrons, NOT 'sharing'. Confusing these two is an automatic zero for the bonding question.",
-    markSchemeQuote: "transfer of electrons (1) from metal to non-metal atom (1) electrostatic attraction between oppositely charged ions (1)"
+    markSchemeQuote: "transfer of electrons (1) from metal to non-metal atom (1) electrostatic attraction between oppositely charged ions (1)",
+    commandWord: ["describe", "explain", "state", "compare"],
+    extensionQuestion: "Magnesium chloride has the formula MgCl2 but sodium chloride is NaCl. Using the phrases 'transfer of electrons' and 'electrostatic attraction between oppositely charged ions', explain why magnesium combines with two chlorines but sodium only combines with one."
   },
   {
     id: "ms_chem_004",
@@ -323,7 +347,9 @@ const MARK_SCHEME_KB = [
       "they share their electrons"
     ],
     examinerNote: "Must say 'electron PAIRS' or 'pair of electrons' — just 'sharing electrons' without 'pairs' does not get the mark.",
-    markSchemeQuote: "shared pair of electrons (1)"
+    markSchemeQuote: "shared pair of electrons (1)",
+    commandWord: ["define", "describe", "explain", "state"],
+    extensionQuestion: "Nitrogen gas (N2) is extremely unreactive and requires huge amounts of energy to break apart in industrial processes. Using the phrase 'shared pair of electrons' and referring to how many pairs are shared in N2, explain why this molecule is so unreactive."
   },
   {
     id: "ms_chem_005",
@@ -345,7 +371,9 @@ const MARK_SCHEME_KB = [
       "things go to negative electrode"
     ],
     examinerNote: "Must mention BOTH 'gain electrons' AND 'reduced/reduction' for full marks. Either one alone only scores 1 mark.",
-    markSchemeQuote: "cations/positive ions gain electrons (1) reduced/reduction (1)"
+    markSchemeQuote: "cations/positive ions gain electrons (1) reduced/reduction (1)",
+    commandWord: ["describe", "explain", "state"],
+    extensionQuestion: "In the electrolysis of molten aluminium oxide, aluminium is produced at the cathode while oxygen is produced at the anode. Using the phrases 'cations gain electrons' and 'reduction occurs at the cathode', write the half-equation for the cathode and explain why the aluminium industry requires enormous electricity supplies."
   },
   {
     id: "ms_chem_006",
@@ -367,7 +395,9 @@ const MARK_SCHEME_KB = [
       "both sides are the same"
     ],
     examinerNote: "BOTH rates (forward AND reverse) must be mentioned and stated as equal. Saying 'the reaction is balanced' or 'equal amounts' will not score.",
-    markSchemeQuote: "rate of forward reaction (1) equals rate of reverse/backward reaction (1)"
+    markSchemeQuote: "rate of forward reaction (1) equals rate of reverse/backward reaction (1)",
+    commandWord: ["define", "explain", "describe", "state"],
+    extensionQuestion: "A chemist seals nitrogen and hydrogen in a flask; after an hour the ammonia concentration stops changing but a radioactive tracer added to the N2 is later detected in NH3 molecules. Using the phrase 'rate of forward reaction equals rate of reverse reaction', explain what this tracer experiment tells us about equilibrium."
   },
   {
     id: "ms_chem_007",
@@ -388,7 +418,9 @@ const MARK_SCHEME_KB = [
       "produces hydrogen ions"
     ],
     examinerNote: "At A Level, an acid is defined as a 'proton donor' (Bronsted-Lowry). 'Gives H+ ions' is O Level language and will not score at A Level.",
-    markSchemeQuote: "proton donor (1)"
+    markSchemeQuote: "proton donor (1)",
+    commandWord: ["define", "state", "explain", "compare"],
+    extensionQuestion: "In the reaction NH3 + H2O ⇌ NH4+ + OH-, water acts as the acid, but in HCl + H2O → H3O+ + Cl- water acts as the base. Using the phrase 'proton donor', explain how water can behave as both an acid and a base and name the term for such substances."
   },
   {
     id: "ms_chem_008",
@@ -409,7 +441,9 @@ const MARK_SCHEME_KB = [
       "how strong the acid is"
     ],
     examinerNote: "pH is about 'concentration of H+ ions' not 'amount of acid'. 'Strength' refers to dissociation, not pH — confusing these is a common error.",
-    markSchemeQuote: "concentration of H+ ions (1)"
+    markSchemeQuote: "concentration of H+ ions (1)",
+    commandWord: ["define", "state", "calculate", "explain", "compare"],
+    extensionQuestion: "A student dilutes a pH 2 solution by a factor of 10 and measures the new pH as 3, not 20. Using the phrase 'concentration of H+ ions' and the relationship pH = -log[H+], explain why pH changes logarithmically rather than linearly with dilution."
   },
 
   // ═══════════════════════════════════════════
@@ -434,7 +468,9 @@ const MARK_SCHEME_KB = [
       "mass is weight"
     ],
     examinerNote: "Weight is a FORCE measured in NEWTONS — must distinguish clearly from mass (kg). Saying 'weight is how heavy' will not score.",
-    markSchemeQuote: "weight is a force (1) measured in newtons (1)"
+    markSchemeQuote: "weight is a force (1) measured in newtons (1)",
+    commandWord: ["define", "state", "explain", "compare", "calculate"],
+    extensionQuestion: "An astronaut with a mass of 70 kg travels to the Moon where g = 1.6 N/kg. Using the phrase 'weight is a force measured in newtons', calculate her weight on Earth and the Moon, then explain why her mass is unchanged but her weight differs."
   },
   {
     id: "ms_phys_002",
@@ -454,7 +490,9 @@ const MARK_SCHEME_KB = [
       "velocity is just speed"
     ],
     examinerNote: "Velocity MUST include 'direction' — without mentioning direction, the answer cannot distinguish velocity from speed and scores 0.",
-    markSchemeQuote: "speed in a given direction (1)"
+    markSchemeQuote: "speed in a given direction (1)",
+    commandWord: ["define", "state", "compare", "explain"],
+    extensionQuestion: "A car travels around a circular track at a constant 30 m/s. Using the phrase 'speed in a given direction', explain why the car's speed is constant but its velocity is continuously changing, and state what this means for the car's acceleration."
   },
   {
     id: "ms_phys_003",
@@ -474,7 +512,9 @@ const MARK_SCHEME_KB = [
       "energy used"
     ],
     examinerNote: "'In the direction of the force' is ESSENTIAL — without this qualifier, the definition is incomplete and loses a mark.",
-    markSchemeQuote: "force (1) multiplied by distance moved in the direction of the force (1)"
+    markSchemeQuote: "force (1) multiplied by distance moved in the direction of the force (1)",
+    commandWord: ["define", "state", "calculate", "explain"],
+    extensionQuestion: "A waiter walks 10 m across a restaurant carrying a tray with a 5 N drink on it at constant height. Using the phrase 'force multiplied by distance moved in the direction of the force', calculate the work done on the drink and explain your answer — even though the waiter is clearly exerting effort."
   },
   {
     id: "ms_phys_004",
@@ -495,7 +535,9 @@ const MARK_SCHEME_KB = [
       "total energy transferred"
     ],
     examinerNote: "'Rate' is the key word — power is energy per unit TIME. Saying 'amount of energy' confuses power with energy and scores 0.",
-    markSchemeQuote: "rate of energy transfer (1) / work done per unit time (1)"
+    markSchemeQuote: "rate of energy transfer (1) / work done per unit time (1)",
+    commandWord: ["define", "state", "calculate", "compare", "explain"],
+    extensionQuestion: "A 1000 W kettle boils water in 2 minutes; a 2000 W kettle boils the same water in 1 minute. Using the phrase 'rate of energy transfer', explain why both kettles transfer the same total energy but have different powers."
   },
   {
     id: "ms_phys_005",
@@ -515,7 +557,9 @@ const MARK_SCHEME_KB = [
       "force over area"
     ],
     examinerNote: "'Per unit area' is essential — 'force on an area' or 'force over area' is too vague and will not score.",
-    markSchemeQuote: "force per unit area (1)"
+    markSchemeQuote: "force per unit area (1)",
+    commandWord: ["define", "state", "calculate", "explain"],
+    extensionQuestion: "A woman wearing stiletto heels (contact area 1 cm²) can damage a wooden floor that a 3,000 kg elephant (contact area 400 cm² per foot) walks over without harm. Using the phrase 'force per unit area', calculate both pressures and explain why the lighter person causes more damage."
   },
   {
     id: "ms_phys_006",
@@ -536,7 +580,9 @@ const MARK_SCHEME_KB = [
       "particles move along"
     ],
     examinerNote: "Particles 'oscillate' or 'vibrate' — they do NOT 'move' (which implies net displacement). Waves transfer energy, not matter.",
-    markSchemeQuote: "particles oscillate/vibrate (1) about a fixed/mean position (1)"
+    markSchemeQuote: "particles oscillate/vibrate (1) about a fixed/mean position (1)",
+    commandWord: ["describe", "state", "explain", "compare"],
+    extensionQuestion: "A floating duck bobs up and down on the surface of a pond as water waves pass by but does not travel with the waves toward the shore. Using the phrase 'particles oscillate about a fixed/mean position', explain this observation and state what a wave actually transfers."
   },
   {
     id: "ms_phys_007",
@@ -556,7 +602,9 @@ const MARK_SCHEME_KB = [
       "movement of electrons"
     ],
     examinerNote: "Current is 'rate of flow of CHARGE' not 'flow of electrons'. 'Charge' is the correct term — in electrolytes, ions carry current, not electrons.",
-    markSchemeQuote: "rate of flow of charge (1)"
+    markSchemeQuote: "rate of flow of charge (1)",
+    commandWord: ["define", "state", "calculate", "explain"],
+    extensionQuestion: "In a copper wire, current is carried by free electrons; in a salt solution, current is carried by positive and negative ions moving in opposite directions. Using the phrase 'rate of flow of charge', explain why the same definition of current applies to both cases — and calculate the current if 60 C of charge flows through a solution in 30 s."
   },
 
   // ═══════════════════════════════════════════
@@ -581,7 +629,9 @@ const MARK_SCHEME_KB = [
       "more demand"
     ],
     examinerNote: "'Demand' and 'quantity demanded' are different concepts. 'Demand' shifts the curve; 'quantity demanded' moves along it. Confusing them loses marks.",
-    markSchemeQuote: "change in quantity demanded (1) movement along the curve (1)"
+    markSchemeQuote: "change in quantity demanded (1) movement along the curve (1)",
+    commandWord: ["define", "explain", "compare", "analyse", "describe"],
+    extensionQuestion: "Coffee prices fall by 20% in one week; the next month a viral health study claims coffee prevents heart disease. Using the phrases 'change in quantity demanded (movement along the curve)' and 'change in demand (shift of the curve)', distinguish between the two separate effects on the coffee market."
   },
   {
     id: "ms_econ_002",
@@ -602,7 +652,9 @@ const MARK_SCHEME_KB = [
       "market is balanced"
     ],
     examinerNote: "BOTH 'quantity demanded' AND 'quantity supplied' must be stated as equal. Just saying 'supply equals demand' is imprecise and will not score full marks.",
-    markSchemeQuote: "quantity demanded equals quantity supplied (1) at the equilibrium price (1)"
+    markSchemeQuote: "quantity demanded equals quantity supplied (1) at the equilibrium price (1)",
+    commandWord: ["define", "explain", "analyse", "describe"],
+    extensionQuestion: "A government fixes a maximum rent below the free-market equilibrium. Using the phrase 'quantity demanded equals quantity supplied', explain why this creates a shortage of rental housing and predict two non-price consequences this might cause."
   },
   {
     id: "ms_econ_003",
@@ -622,7 +674,9 @@ const MARK_SCHEME_KB = [
       "how price affects demand"
     ],
     examinerNote: "Must give the FORMULA and INTERPRET the value. A numerical answer alone scores 0. Must state whether elastic (>1) or inelastic (<1) and what that means.",
-    markSchemeQuote: "% change in quantity demanded / % change in price (1) interpretation of value (1)"
+    markSchemeQuote: "% change in quantity demanded / % change in price (1) interpretation of value (1)",
+    commandWord: ["calculate", "explain", "analyse", "evaluate"],
+    extensionQuestion: "A cigarette company raises its price by 20% and sales fall by only 5%, yet a new restaurant raises its prices by 10% and loses 30% of customers. Using the formula '% change in quantity demanded / % change in price', calculate both PED values and evaluate which business has the stronger pricing power and why."
   },
   {
     id: "ms_econ_004",
@@ -644,7 +698,9 @@ const MARK_SCHEME_KB = [
       "it depends"
     ],
     examinerNote: "Must reach a CONCLUSION or JUDGEMENT — listing both sides without concluding is analysis, not evaluation. Top marks require a supported judgement.",
-    markSchemeQuote: "supported judgement/conclusion (1)"
+    markSchemeQuote: "supported judgement/conclusion (1)",
+    commandWord: ["evaluate", "discuss", "assess", "analyse"],
+    extensionQuestion: "'The government should subsidise electric cars to reduce pollution.' Using the phrases 'on balance' and 'therefore, the most significant factor is', write a one-paragraph evaluation that weighs at least two arguments on each side and reaches a supported judgement — do not end by saying 'it depends'."
   },
   {
     id: "ms_econ_005",
@@ -665,7 +721,9 @@ const MARK_SCHEME_KB = [
       "inflation is when prices rise"
     ],
     examinerNote: "Must distinguish 'demand-pull' from 'cost-push' when asked about causes. Naming only one type or giving a generic answer will not score full marks.",
-    markSchemeQuote: "demand-pull (1) cost-push (1) with explanation of each (2)"
+    markSchemeQuote: "demand-pull (1) cost-push (1) with explanation of each (2)",
+    commandWord: ["define", "explain", "describe", "analyse", "compare"],
+    extensionQuestion: "In 2022 UK inflation rose sharply: the Bank of England cited both rising global oil prices and strong post-Covid consumer spending. Using the phrases 'demand-pull: caused by excess aggregate demand' and 'cost-push: caused by rising costs of production', explain how both types contributed and suggest why policy response is harder when both occur together."
   },
 
   // ═══════════════════════════════════════════
@@ -691,7 +749,9 @@ const MARK_SCHEME_KB = [
       "it is a good description"
     ],
     examinerNote: "Must do ALL THREE: identify technique, provide a quote, AND explain effect on reader. 2 out of 3 does not score full marks. 'This is effective' without saying WHY scores 0.",
-    markSchemeQuote: "technique identified (1) quotation (1) effect on reader explained (1)"
+    markSchemeQuote: "technique identified (1) quotation (1) effect on reader explained (1)",
+    commandWord: ["analyse", "explain", "discuss", "evaluate"],
+    extensionQuestion: "Take the phrase 'the wind clawed at the shutters' from a gothic short story. Using the PEE structure — identify the technique, quote the phrase, and explain the effect on the reader — write a response that goes beyond 'it creates tension' and explores what specifically the technique makes the reader feel or imagine."
   },
   {
     id: "ms_eng_002",
@@ -711,7 +771,9 @@ const MARK_SCHEME_KB = [
       "exact words from passage"
     ],
     examinerNote: "Summary answers MUST be 'in own words' — lifted phrases from the passage score 0 even if the content is correct. Paraphrasing is mandatory.",
-    markSchemeQuote: "in own words (1) — lifted phrases score 0"
+    markSchemeQuote: "in own words (1) — lifted phrases score 0",
+    commandWord: ["describe", "explain", "suggest"],
+    extensionQuestion: "A passage says: 'The torrential downpour decimated the crops, leaving the farmers destitute.' Using the technique of 'paraphrase / using your own words', rewrite this sentence for a summary answer, keeping the meaning but changing every key vocabulary word. Explain why lifting even one of these words would lose marks."
   },
   {
     id: "ms_eng_003",
@@ -734,7 +796,9 @@ const MARK_SCHEME_KB = [
       "one text is about... the other is about"
     ],
     examinerNote: "Must use COMPARATIVE connectives (similarly, whereas, however, in contrast). Describing each text separately without comparing loses marks — this is 'parallel description', not comparison.",
-    markSchemeQuote: "comparative/contrastive connectives used (1) integrated comparison (1)"
+    markSchemeQuote: "comparative/contrastive connectives used (1) integrated comparison (1)",
+    commandWord: ["compare", "discuss", "analyse", "evaluate"],
+    extensionQuestion: "Text A is a travel brochure calling Venice 'a timeless jewel afloat on turquoise waters'; Text B is a news article describing Venice as 'a sinking city overwhelmed by mass tourism'. Using the connectives 'whereas' and 'in contrast', write one integrated paragraph that compares the writers' attitudes — do NOT describe each text in separate sentences."
   },
 
   // ═══════════════════════════════════════════
@@ -759,7 +823,9 @@ const MARK_SCHEME_KB = [
       "out of 100"
     ],
     examinerNote: "Probability answers MUST be between 0 and 1 (fraction or decimal). Percentage answers score 0 — even if the calculation is correct.",
-    markSchemeQuote: "answer as fraction/decimal between 0 and 1 (1) — percentage = 0 marks"
+    markSchemeQuote: "answer as fraction/decimal between 0 and 1 (1) — percentage = 0 marks",
+    commandWord: ["calculate", "state", "show that"],
+    extensionQuestion: "A bag contains 3 red, 5 blue and 2 green beads. A student calculates the probability of drawing red then green without replacement and writes their answer as '6.7%'. Using the convention that probability must be given as a fraction or decimal between 0 and 1, rewrite the answer in acceptable form and explain what the correct working should look like."
   },
   {
     id: "ms_maths_002",
@@ -780,7 +846,9 @@ const MARK_SCHEME_KB = [
       "circular argument"
     ],
     examinerNote: "In 'show that' questions, you MUST NOT use the given answer in your working — this is a circular argument and scores 0. Work forward from the given information.",
-    markSchemeQuote: "independent derivation without using the given result (M marks)"
+    markSchemeQuote: "independent derivation without using the given result (M marks)",
+    commandWord: ["show that", "prove"],
+    extensionQuestion: "A question states: 'A rectangle has perimeter 20 cm and area A cm². Show that A = 10x - x² where x is one side length.' Using the principle 'work from the given information without using the given answer', set out the full derivation starting from the perimeter condition, clearly stating at each line why you have not used the target equation."
   },
   {
     id: "ms_maths_003",
@@ -800,7 +868,116 @@ const MARK_SCHEME_KB = [
       "premature rounding"
     ],
     examinerNote: "Final answer must match the accuracy of given data — typically 3 significant figures. Premature rounding in working loses accuracy marks.",
-    markSchemeQuote: "final answer to 3 s.f. or accuracy of given data (A1)"
+    markSchemeQuote: "final answer to 3 s.f. or accuracy of given data (A1)",
+    commandWord: ["calculate", "state", "show that"],
+    extensionQuestion: "A student calculates the hypotenuse of a right triangle with sides 7.42 cm and 5.19 cm. They round each to 1 decimal place first (7.4 and 5.2), then compute the hypotenuse as 9.04 cm. Using the principle 'do not round intermediate calculations' and 'final answer to 3 s.f.', redo the calculation correctly and state the true answer."
+  },
+
+  // ═══════════════════════════════════════════
+  // A LEVEL — BIOLOGY
+  // ═══════════════════════════════════════════
+  {
+    id: "ms_bio_a_001",
+    subject: "biology",
+    level: "a_level",
+    topic: "Cell signalling",
+    concept: "action potential propagation",
+    acceptedPhrases: [
+      "depolarisation",
+      "voltage-gated sodium ion channels open",
+      "influx of sodium ions",
+      "reaches threshold potential",
+      "all-or-nothing response"
+    ],
+    rejectedPhrases: [
+      "electricity travels down the neuron",
+      "the signal moves",
+      "sodium comes in",
+      "the charge flips"
+    ],
+    examinerNote: "At A Level, must reference 'voltage-gated' channels and 'threshold potential'. Generic 'charge flips' language is GCSE-level and will not score the A Level marks.",
+    markSchemeQuote: "voltage-gated sodium ion channels open (1) influx of Na+ causes depolarisation (1) threshold potential reached / all-or-nothing (1)",
+    commandWord: ["describe", "explain", "state"],
+    extensionQuestion: "Local anaesthetics such as lidocaine work by blocking voltage-gated sodium ion channels. Using the phrases 'voltage-gated sodium ion channels open', 'influx of sodium ions' and 'threshold potential', explain why the patient feels no pain and why the effect wears off gradually rather than suddenly."
+  },
+  {
+    id: "ms_bio_a_002",
+    subject: "biology",
+    level: "a_level",
+    topic: "Genetics",
+    concept: "transcription",
+    acceptedPhrases: [
+      "RNA polymerase",
+      "complementary base pairing",
+      "template strand",
+      "mRNA is synthesised in the 5' to 3' direction",
+      "uracil replaces thymine"
+    ],
+    rejectedPhrases: [
+      "DNA becomes RNA",
+      "makes a copy of DNA",
+      "RNA is made from DNA",
+      "copying the gene"
+    ],
+    examinerNote: "A Level demands 'RNA polymerase', 'template strand' and 'complementary base pairing' — loose GCSE phrasing like 'DNA becomes RNA' does not score.",
+    markSchemeQuote: "RNA polymerase binds to promoter (1) uses template strand (1) complementary base pairing — U with A (1) mRNA synthesised 5' to 3' (1)",
+    commandWord: ["describe", "explain", "state"],
+    extensionQuestion: "A virus infects a cell and uses its own RNA polymerase, which lacks a proofreading function. Using the phrases 'RNA polymerase', 'template strand' and 'complementary base pairing', explain why viral mRNA contains more errors than human mRNA and predict one consequence for vaccine design."
+  },
+
+  // ═══════════════════════════════════════════
+  // A LEVEL — PHYSICS
+  // ═══════════════════════════════════════════
+  {
+    id: "ms_phys_a_001",
+    subject: "physics",
+    level: "a_level",
+    topic: "Electromagnetic induction",
+    concept: "Faraday's and Lenz's laws",
+    acceptedPhrases: [
+      "rate of change of flux linkage",
+      "induced EMF is proportional to the rate of change of flux linkage",
+      "induced current opposes the change producing it",
+      "EMF = -dΦ/dt"
+    ],
+    rejectedPhrases: [
+      "the magnet induces current",
+      "moving the magnet creates electricity",
+      "the field makes a current flow",
+      "flux makes voltage"
+    ],
+    examinerNote: "Must explicitly reference 'rate of change of flux linkage' (Faraday) AND 'opposes the change' (Lenz). GCSE-style 'moving the magnet makes electricity' scores 0 at A Level.",
+    markSchemeQuote: "induced EMF = rate of change of flux linkage (1) direction opposes the change producing it (1)",
+    commandWord: ["state", "explain", "describe", "calculate"],
+    extensionQuestion: "A magnet dropped through a copper pipe falls much more slowly than one dropped through a plastic pipe. Using the phrases 'rate of change of flux linkage' and 'induced current opposes the change producing it', explain this observation and predict what would happen if the copper pipe had a vertical slit cut along its length."
+  },
+
+  // ═══════════════════════════════════════════
+  // A LEVEL — ECONOMICS
+  // ═══════════════════════════════════════════
+  {
+    id: "ms_econ_a_001",
+    subject: "economics",
+    level: "a_level",
+    topic: "Market failure",
+    concept: "negative externalities",
+    acceptedPhrases: [
+      "marginal social cost exceeds marginal private cost",
+      "MSC > MPC",
+      "third parties bear costs",
+      "welfare loss / deadweight loss",
+      "socially optimal output is lower than free market output"
+    ],
+    rejectedPhrases: [
+      "pollution is bad for society",
+      "other people suffer",
+      "externalities are negative",
+      "the market fails"
+    ],
+    examinerNote: "A Level requires 'marginal social cost', 'marginal private cost' and identification of 'welfare loss'. GCSE-style descriptions ('pollution is bad') cannot access A Level marks.",
+    markSchemeQuote: "MSC > MPC (1) welfare loss triangle identified (1) free market output exceeds socially optimal (1)",
+    commandWord: ["define", "explain", "analyse", "evaluate", "discuss"],
+    extensionQuestion: "A coal-fired power station emits sulphur dioxide that damages nearby forests. Using the phrases 'marginal social cost exceeds marginal private cost' and 'welfare loss', draw the relevant diagram in words and evaluate whether a Pigouvian tax or tradeable pollution permits would more efficiently internalise the externality."
   }
 ];
 
