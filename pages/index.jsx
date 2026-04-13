@@ -122,6 +122,11 @@ export default function Home() {
   const recognitionRef = useRef(null);
   const synthRef = useRef(null);
 
+  // Direct study search (bank-first entry point)
+  const [askQuery, setAskQuery] = useState('');
+  const [askLoading, setAskLoading] = useState(false);
+  const [askMessage, setAskMessage] = useState('');
+
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
   const { callsUsed: sessionCount, callsLeft, limitReached: isLimitReached, recordCall } = useSessionLimit(userProfile?.email);
@@ -133,6 +138,38 @@ export default function Home() {
     } catch {}
 
   }, []);
+
+  const handleAsk = async (e) => {
+    e?.preventDefault();
+    if (!askQuery.trim()) return;
+    setAskLoading(true);
+    setAskMessage('');
+    try {
+      const profile = JSON.parse(localStorage.getItem('nw_user') || '{}');
+      const r = await fetch('/api/ask', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query: askQuery, userProfile: profile }),
+      });
+      const data = await r.json();
+      if (data.questions?.length > 0) {
+        const { subject, level, topic } = data.intent || {};
+        const params = new URLSearchParams();
+        if (subject) params.set('subject', subject);
+        if (level) params.set('level', level);
+        if (topic) params.set('topic', topic);
+        window.location.href = `/study?${params.toString()}`;
+      } else if (data.fallbackMessage) {
+        setAskMessage(data.fallbackMessage);
+      } else {
+        setAskMessage("No questions found. Try rephrasing — e.g. 'O Level Physics' or 'Grade 8 Maths'.");
+      }
+    } catch (err) {
+      setAskMessage('Something went wrong. Please try again.');
+    } finally {
+      setAskLoading(false);
+    }
+  };
 
   // ── Query param handler: /?message=&subject=&grade=&goal=&from= ──
   const [paramFrom, setParamFrom] = useState(null);
@@ -1024,6 +1061,76 @@ export default function Home() {
       />
 
       <section className="hero">
+        {/* Direct study search — bank-first, no curriculum selector needed */}
+        <form onSubmit={handleAsk} style={{
+          maxWidth: 520,
+          margin: '0 auto 28px',
+          display: 'flex',
+          gap: 8,
+          flexDirection: 'column',
+        }}>
+          <div style={{ position: 'relative' }}>
+            <input
+              type="text"
+              value={askQuery}
+              onChange={(e) => setAskQuery(e.target.value)}
+              placeholder="What do you want to study? e.g. photosynthesis, SHM A Level Physics"
+              style={{
+                width: '100%',
+                background: 'rgba(255,255,255,0.06)',
+                border: '1.5px solid rgba(79,142,247,0.3)',
+                borderRadius: 14,
+                padding: '16px 56px 16px 20px',
+                fontSize: 15,
+                color: '#fff',
+                fontFamily: 'inherit',
+                outline: 'none',
+                transition: 'border-color 0.2s',
+              }}
+              onFocus={(e) => e.target.style.borderColor = '#4F8EF7'}
+              onBlur={(e) => e.target.style.borderColor = 'rgba(79,142,247,0.3)'}
+              disabled={askLoading}
+            />
+            <button
+              type="submit"
+              disabled={askLoading || !askQuery.trim()}
+              style={{
+                position: 'absolute',
+                right: 6,
+                top: 6,
+                bottom: 6,
+                background: askQuery.trim() ? 'linear-gradient(135deg,#4F8EF7,#6366F1)' : 'rgba(255,255,255,0.1)',
+                color: '#fff',
+                border: 'none',
+                borderRadius: 10,
+                padding: '0 18px',
+                fontSize: 14,
+                fontWeight: 700,
+                cursor: askQuery.trim() && !askLoading ? 'pointer' : 'not-allowed',
+                opacity: askLoading ? 0.5 : 1,
+              }}
+            >
+              {askLoading ? '...' : 'Study →'}
+            </button>
+          </div>
+          {askMessage && (
+            <div style={{
+              fontSize: 13,
+              color: 'rgba(255,255,255,0.6)',
+              background: 'rgba(248,113,113,0.08)',
+              border: '1px solid rgba(248,113,113,0.2)',
+              borderRadius: 10,
+              padding: '10px 14px',
+              textAlign: 'left',
+            }}>
+              {askMessage}
+            </div>
+          )}
+          <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.35)', textAlign: 'center' }}>
+            Or scroll down to pick grade & subject manually
+          </div>
+        </form>
+
         {userCountry === 'UAE' ? (
           <>
             <div className="hb">★ Starky — All UAE Curricula</div>
