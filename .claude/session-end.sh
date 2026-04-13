@@ -75,7 +75,13 @@ if [ -d "$MEM_DIR" ] && [ -f .claude/auto-memory-index.sh ]; then
   bash .claude/auto-memory-index.sh >/dev/null 2>&1 || true
 fi
 
-# ─── 4. Central backup (idempotent — safe to call often) ───
+# ─── 4. Auto session summary (writes memory/session_summary_<date>.md) ───
+SUMMARY_SCRIPT="/Users/khurramb/projects/newworld-platform/scripts/auto-session-summary.sh"
+if [ -x "$SUMMARY_SCRIPT" ]; then
+  bash "$SUMMARY_SCRIPT" >/dev/null 2>&1 || true
+fi
+
+# ─── 5. Central backup (idempotent — safe to call often) ───
 BACKUP_SCRIPT="/Users/khurramb/projects/newworld-platform/scripts/backup-claude-state.sh"
 if [ -x "$BACKUP_SCRIPT" ]; then
   bash "$BACKUP_SCRIPT" >/dev/null 2>&1 || true
