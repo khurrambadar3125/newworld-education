@@ -164,6 +164,11 @@ export async function saveQuestionsBatch(questions) {
 export async function fetchQuestions({
   subject, level, topic, difficulty, type,
   curriculum, limit = 10, minQuality = 0, excludeIds = [],
+  // NEW: verification filter — default to serving ONLY verified content
+  // Set to false only when you explicitly want unverified (e.g. admin review UI)
+  verifiedOnly = true,
+  // NEW: accept specific verification sources. Default = all non-null.
+  verifiedBy = null,  // e.g. 'khurram_review' or ['khurram_review', 'cambridge_pdf_ai']
 }) {
   const sb = getSupabase();
   if (!sb) throw new Error('Supabase not configured');
@@ -178,6 +183,17 @@ export async function fetchQuestions({
   if (curriculum) query = query.eq('curriculum', curriculum);
   if (minQuality > 0) query = query.gte('quality_score', minQuality);
   if (excludeIds.length > 0) query = query.not('id', 'in', `(${excludeIds.join(',')})`);
+
+  // Verification gate — honest by default
+  if (verifiedOnly) {
+    if (Array.isArray(verifiedBy) && verifiedBy.length) {
+      query = query.in('verified_by', verifiedBy);
+    } else if (typeof verifiedBy === 'string') {
+      query = query.eq('verified_by', verifiedBy);
+    } else {
+      query = query.not('verified_by', 'is', null);
+    }
+  }
 
   // Prefer higher quality, less-served questions
   query = query.order('quality_score', { ascending: false })

@@ -109,26 +109,45 @@ async function queryBank({ subject, level, topic, curriculumBoard }) {
   let q = sb
     .from('question_bank')
     .select('*', { count: 'exact' })
-    .eq('verified', true)
+    // Honest verification gate — only serve content with a known verified_by source
+    // (covers: khurram_review, cambridge_pdf_ai, edexcel_pdf_ai, external_csv)
+    // Excludes: AI-generated bulk-migrated content (verified_by IS NULL)
+    .not('verified_by', 'is', null)
     .limit(5);
 
   if (subject) q = q.ilike('subject', subject);
   if (level) q = q.ilike('level', level);
   if (topic) q = q.ilike('topic', `%${topic}%`);
-  // NEW: filter by curriculum board when provided (cambridge, edexcel, ib, cbse, moe, sindh, federal)
-  // For now the bank is mostly 'cambridge' — this future-proofs the query
   if (curriculumBoard) q = q.ilike('curriculum', curriculumBoard);
 
   const { data, count, error } = await q;
   if (error) throw error;
-  return { questions: data || [], count: count || 0 };
+
+  // Attach source disclosure so UI can show students where the question came from
+  const questions = (data || []).map(row => ({
+    ...row,
+    _source_label: verifiedByLabel(row.verified_by),
+  }));
+
+  return { questions, count: count || 0 };
+}
+
+function verifiedByLabel(verifiedBy) {
+  switch (verifiedBy) {
+    case 'khurram_review': return '✓ Reviewed by NewWorldEdu examiners';
+    case 'cambridge_pdf_ai': return '✓ From official Cambridge past paper';
+    case 'edexcel_pdf_ai': return '✓ From official Edexcel past paper';
+    case 'external_csv': return '○ From third-party question bank';
+    case 'textbook_bank': return '○ From textbook source';
+    default: return null;
+  }
 }
 
 async function getAvailableTopics(subject, level) {
   let q = sb
     .from('question_bank')
     .select('topic')
-    .eq('verified', true)
+    .not('verified_by', 'is', null)  // only show topics that have verified content
     .limit(50);
   if (subject) q = q.ilike('subject', subject);
   if (level) q = q.ilike('level', level);

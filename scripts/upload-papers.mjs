@@ -186,6 +186,9 @@ async function saveToSupabase(questions) {
       command_word: null,
       source: 'past_paper',
       verified: true,
+      verified_by: 'cambridge_pdf_ai',
+      verified_at: new Date().toISOString(),
+      verification_confidence: 75,
     };
     // Add session/paper for Exam Compass if available
     if (q.session) row.session = q.session;
@@ -323,10 +326,13 @@ async function main() {
 
     if (questions.length === 0) { console.log('  No questions extracted. Skipping.\n'); continue; }
 
-    // Tag with metadata — mark all as verified since they're from official papers
+    // Tag with metadata — source is genuine Cambridge PDF, AI matched the answers
     const tagged = questions.map(q => ({
       ...q,
       verified: true, // official Cambridge paper = always verified
+      verified_by: 'cambridge_pdf_ai',
+      verified_at: new Date().toISOString(),
+      verification_confidence: 75,
       subject: meta.subject,
       level: meta.level,
       session: meta.session !== 'Unknown' ? meta.session : null,

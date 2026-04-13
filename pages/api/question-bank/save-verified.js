@@ -42,6 +42,9 @@ export default async function handler(req, res) {
         command_word: null,
         source: 'past_paper',
         verified: true,
+        verified_by: 'khurram_review',          // highest trust — admin manually reviewed
+        verified_at: new Date().toISOString(),
+        verification_confidence: 100,
       });
 
       if (error) {
