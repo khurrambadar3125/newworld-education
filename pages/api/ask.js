@@ -105,7 +105,7 @@ function keywordFallbackIntent(query, userProfile) {
   return { subject, topic, level };
 }
 
-async function queryBank({ subject, level, topic }) {
+async function queryBank({ subject, level, topic, curriculumBoard }) {
   let q = sb
     .from('question_bank')
     .select('*', { count: 'exact' })
@@ -115,6 +115,9 @@ async function queryBank({ subject, level, topic }) {
   if (subject) q = q.ilike('subject', subject);
   if (level) q = q.ilike('level', level);
   if (topic) q = q.ilike('topic', `%${topic}%`);
+  // NEW: filter by curriculum board when provided (cambridge, edexcel, ib, cbse, moe, sindh, federal)
+  // For now the bank is mostly 'cambridge' — this future-proofs the query
+  if (curriculumBoard) q = q.ilike('curriculum', curriculumBoard);
 
   const { data, count, error } = await q;
   if (error) throw error;
