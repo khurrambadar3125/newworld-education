@@ -65,6 +65,14 @@ else:
 PYEOF
 fi
 
+# Step 2b: Install local pre-push hook (warns if push will trigger build)
+HOOK_SOURCE="/Users/khurramb/projects/newworld-platform/scripts/pre-push-build-check.sh"
+if [ -f "$HOOK_SOURCE" ]; then
+  cp "$HOOK_SOURCE" .git/hooks/pre-push
+  chmod +x .git/hooks/pre-push
+  echo "  ✓ Installed pre-push hook (shows build/skip before each push)"
+fi
+
 # Step 3: Commit and push
 STAGED=$(git status --porcelain .vercel-ignore-build.sh vercel.json 2>/dev/null)
 if [ -z "$STAGED" ]; then
