@@ -209,17 +209,37 @@ export default async function handler(req, res) {
 
   const intent = { subject, level, topic };
 
-  // ── Step 3: Query bank (subject+level+topic, then drop level) ─────
+  // ── Step 2b: Determine exam board preference order for this user ──
+  // UAE British users with Edexcel iGCSE → try Edexcel first, fall back to Cambridge.
+  // UAE British users on Cambridge O Level → Cambridge only.
+  // Unspecified UAE users → try Edexcel then Cambridge.
+  // Everyone else (Pakistan, etc.) → no board filter (Cambridge-dominated bank).
+  const userCurriculum = String(userProfile?.curriculum || '').toLowerCase();
+  let boardPreference = [null]; // default: no filter
+  if (userCurriculum === 'uae-british-edexcel-igcse') {
+    boardPreference = ['edexcel', 'cambridge'];
+  } else if (userCurriculum === 'uae-british-cambridge-olevel') {
+    boardPreference = ['cambridge'];
+  } else if (userCurriculum.startsWith('uae')) {
+    boardPreference = ['edexcel', 'cambridge'];
+  } else if (userCurriculum === 'edexcel') {
+    boardPreference = ['edexcel', 'cambridge'];
+  } else if (userCurriculum === 'cambridge') {
+    boardPreference = ['cambridge'];
+  }
+
+  // ── Step 3: Query bank (board preference → subject+level+topic → drop level → drop topic) ─────
   let bankResult = { questions: [], count: 0 };
   try {
-    bankResult = await queryBank({ subject, level, topic });
-    if (bankResult.count === 0 && level) {
-      // Retry without level
-      bankResult = await queryBank({ subject, level: null, topic });
-    }
-    if (bankResult.count === 0 && topic) {
-      // Retry without topic — give them anything in subject
-      bankResult = await queryBank({ subject, level: null, topic: null });
+    for (const board of boardPreference) {
+      bankResult = await queryBank({ subject, level, topic, curriculumBoard: board });
+      if (bankResult.count === 0 && level) {
+        bankResult = await queryBank({ subject, level: null, topic, curriculumBoard: board });
+      }
+      if (bankResult.count === 0 && topic) {
+        bankResult = await queryBank({ subject, level: null, topic: null, curriculumBoard: board });
+      }
+      if (bankResult.count > 0) break; // got hits on this board — stop falling back
     }
   } catch (e) {
     console.error('[ask] bank query failed:', e?.message);

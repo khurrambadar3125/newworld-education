@@ -30,6 +30,71 @@ const SUPABASE_SECRET_KEY = process.env.SUPABASE_SECRET_KEY;
 if (!ANTHROPIC_API_KEY) { console.error('Missing ANTHROPIC_API_KEY'); process.exit(1); }
 if (!SUPABASE_URL || !SUPABASE_SECRET_KEY) { console.error('Missing SUPABASE_URL or SUPABASE_SECRET_KEY. Run: vercel env pull .env.vercel'); process.exit(1); }
 
+// ── Edexcel subject codes (iGCSE 4xx1 + IAL Wxx) ──────────────────
+const EDEXCEL_CODES = {
+  // iGCSE
+  '4MA1': 'Mathematics A (4MA1)',
+  '4PM1': 'Further Pure Mathematics (4PM1)',
+  '4PH1': 'Physics (4PH1)',
+  '4CH1': 'Chemistry (4CH1)',
+  '4BI1': 'Biology (4BI1)',
+  '4HB1': 'Human Biology (4HB1)',
+  '4EA1': 'English Language A (4EA1)',
+  '4ET1': 'English Literature (4ET1)',
+  '4EC1': 'Economics (4EC1)',
+  '4BS1': 'Business (4BS1)',
+  '4AC1': 'Accounting (4AC1)',
+  '4CP0': 'Computer Science (4CP0)',
+  '4CM1': 'Commerce (4CM1)',
+  '4GE1': 'Geography (4GE1)',
+  '4HI1': 'History (4HI1)',
+  '4IT1': 'ICT (4IT1)',
+  '4AA1': 'Arabic First Language (4AA1)',
+  '4RS1': 'Religious Studies (4RS1)',
+  '4MB1': 'Mathematics B (4MB1)',
+  // IAL prefixes (3-letter)
+  'WMA': 'Mathematics (IAL)',
+  'WFM': 'Further Mathematics (IAL)',
+  'WPH': 'Physics (IAL)',
+  'WCH': 'Chemistry (IAL)',
+  'WBI': 'Biology (IAL)',
+  'WAC': 'Accounting (IAL)',
+  'WGE': 'Geography (IAL)',
+  'WHI': 'History (IAL)',
+  'WPS': 'Psychology (IAL)',
+  'WEC': 'Economics (IAL)',
+  'WBS': 'Business (IAL)',
+  'WEN': 'English Language (IAL)',
+  'WET': 'English Literature (IAL)',
+  'WAR': 'Arabic (IAL)',
+};
+
+// Detect Edexcel from filename or content. Returns { code, subject, level } or null.
+function detectEdexcel(filename, text) {
+  const fn = (filename || '').toUpperCase();
+  // iGCSE code pattern: 4XX1 or 4CP0
+  const igcseMatch = fn.match(/\b(4[A-Z]{2}[01])\b/);
+  if (igcseMatch && EDEXCEL_CODES[igcseMatch[1]]) {
+    return { code: igcseMatch[1], subject: EDEXCEL_CODES[igcseMatch[1]], level: 'O Level' };
+  }
+  // IAL code pattern: W[A-Z]{2} followed by digits
+  const ialMatch = fn.match(/\b(W[A-Z]{2})\d{2}\b/);
+  if (ialMatch && EDEXCEL_CODES[ialMatch[1]]) {
+    return { code: ialMatch[1], subject: EDEXCEL_CODES[ialMatch[1]], level: 'A Level' };
+  }
+  // Content-based keyword fallback
+  if (text && /Pearson Edexcel|Edexcel International/i.test(text)) {
+    // Try to pull a code from text too
+    const codeInText = text.toUpperCase().match(/\b(4[A-Z]{2}[01])\b/) || text.toUpperCase().match(/\b(W[A-Z]{2})\d{2}\b/);
+    if (codeInText && EDEXCEL_CODES[codeInText[1]]) {
+      const isIAL = codeInText[1].startsWith('W');
+      return { code: codeInText[1], subject: EDEXCEL_CODES[codeInText[1]], level: isIAL ? 'A Level' : 'O Level' };
+    }
+    return { code: null, subject: 'Unknown', level: 'O Level' };
+  }
+  return null;
+}
+
 // ── Cambridge subject codes ──────────────────────────────────────
 const CODES = {
   '0580':'Mathematics','0606':'Additional Mathematics','0625':'Physics','0620':'Chemistry',
@@ -57,9 +122,29 @@ function classifyFile(name) {
 
 // ── Detect metadata from PDF text ──────────────────────────────────
 function detectMetadata(text, filename) {
-  const meta = { subject: 'Unknown', level: 'O Level', paper: 'Unknown', session: 'Unknown' };
+  const meta = { subject: 'Unknown', level: 'O Level', paper: 'Unknown', session: 'Unknown', board: 'cambridge' };
 
-  // From filename: {code}_{session}_{type}_{variant}.pdf
+  // ── Edexcel detection first ──────────────────────────
+  const edx = detectEdexcel(filename, text);
+  if (edx) {
+    meta.board = 'edexcel';
+    meta.subject = edx.subject;
+    meta.level = edx.level;
+    // Session/paper from Edexcel filenames like 4MA1_01_2023_Jan or similar
+    const edxSession = filename.match(/(20\d{2})[-_](Jan|Jun|Oct|May|Nov)/i);
+    if (edxSession) {
+      const m = edxSession[2].toLowerCase();
+      const yr = edxSession[1].slice(2);
+      if (m.startsWith('jan')) meta.session = `m${yr}`;
+      else if (m.startsWith('jun') || m.startsWith('may')) meta.session = `s${yr}`;
+      else meta.session = `w${yr}`;
+    }
+    const edxPaper = filename.match(/_(\d[FHR]?)[_.]/i) || filename.match(/Paper[\s_-]?(\d[FHR]?)/i);
+    if (edxPaper) meta.paper = edxPaper[1];
+    return meta;
+  }
+
+  // From filename: {code}_{session}_{type}_{variant}.pdf (Cambridge)
   const fnMatch = filename.match(/(\d{4})_([smw]\d{2})_(?:qp|ms|in)_?(\d{0,2})/i);
   if (fnMatch) {
     if (CODES[fnMatch[1]]) meta.subject = CODES[fnMatch[1]];
@@ -123,7 +208,7 @@ async function parseQuestions(qpText, msText, subject, level) {
     body: JSON.stringify({
       model: 'claude-3-haiku-20240307', // Admin tool only — Khurram's uploads. Students use Haiku.
       max_tokens: 8192,
-      system: `You extract Cambridge exam questions from past papers. You are given:
+      system: `You extract exam questions from past papers (Cambridge CAIE or Pearson Edexcel iGCSE/IAL). You are given:
 1. The QUESTION PAPER text (all questions)
 2. The MARK SCHEME text (all correct answers)
 
@@ -177,7 +262,7 @@ async function saveToSupabase(questions) {
       topic: q.topic || 'General',
       difficulty: 'medium',
       type: q.type || 'mcq',
-      curriculum: 'cambridge',
+      curriculum: q.curriculum || 'cambridge',
       question_text: q.question,
       options: q.options || null,
       correct_answer: q.correctAnswer || '',
@@ -186,7 +271,7 @@ async function saveToSupabase(questions) {
       command_word: null,
       source: 'past_paper',
       verified: true,
-      verified_by: 'cambridge_pdf_ai',
+      verified_by: q.verified_by || 'cambridge_pdf_ai',
       verified_at: new Date().toISOString(),
       verification_confidence: 75,
     };
@@ -326,11 +411,17 @@ async function main() {
 
     if (questions.length === 0) { console.log('  No questions extracted. Skipping.\n'); continue; }
 
-    // Tag with metadata — source is genuine Cambridge PDF, AI matched the answers
+    // Tag with metadata — source is genuine past paper PDF, AI matched the answers
+    const isEdexcel = meta.board === 'edexcel';
+    const verifiedBy = isEdexcel ? 'edexcel_pdf_ai' : 'cambridge_pdf_ai';
+    const curriculum = isEdexcel ? 'edexcel' : 'cambridge';
+    console.log(`  Board: ${isEdexcel ? 'Edexcel' : 'Cambridge'} (verified_by=${verifiedBy}, curriculum=${curriculum})`);
+
     const tagged = questions.map(q => ({
       ...q,
-      verified: true, // official Cambridge paper = always verified
-      verified_by: 'cambridge_pdf_ai',
+      verified: true, // official past paper = always verified
+      verified_by: verifiedBy,
+      curriculum,
       verified_at: new Date().toISOString(),
       verification_confidence: 75,
       subject: meta.subject,
