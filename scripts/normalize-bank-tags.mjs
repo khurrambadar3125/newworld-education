@@ -21,9 +21,11 @@ const LEVEL_MAP = {
 };
 
 const SUBJECT_MAP = {
-  'Islamiat': 'Islamiyat',  // Cambridge canonical
-  'islamiyat': 'Islamiyat',
-  'islamic studies': 'Islamiyat',
+  // Canonical: 'Islamiat' — verified from research on 10 Pakistani elite schools
+  // (KGS, Beaconhouse, City School, LGS, etc.). Previous assumption was wrong.
+  'Islamiyat': 'Islamiat',
+  'islamiyat': 'Islamiat',
+  'islamic studies': 'Islamiat',
   'Maths': 'Mathematics',
   'Math': 'Mathematics',
   'maths': 'Mathematics',

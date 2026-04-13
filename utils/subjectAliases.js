@@ -28,9 +28,10 @@ export const SUBJECT_ALIASES = {
   'pak studies': 'Pakistan Studies',
   'pakistan studies': 'Pakistan Studies',
   'pakstudies': 'Pakistan Studies',
-  'islamiat': 'Islamiyat',
-  'islamiyat': 'Islamiyat',
-  'islamic studies': 'Islamiyat',
+  // Canonical: "Islamiat" (Cambridge spelling, confirmed from research on 10 Pakistani elite schools)
+  'islamiat': 'Islamiat',
+  'islamiyat': 'Islamiat',
+  'islamic studies': 'Islamiat',
   'urdu': 'First Language Urdu',
   'urdu 1': 'First Language Urdu',
   'first language urdu': 'First Language Urdu',
