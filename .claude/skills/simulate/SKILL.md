@@ -64,7 +64,7 @@ Structural audits (meta tags exist, links work, queries have limits) pass — ye
 - Curriculum: American
 - Intent: SAT Math 750+
 - **MUST see:** SAT-specific subjects (no Cambridge syllabus codes), American textbook refs (Princeton Review, Barron's)
-- **MUST NEVER see:** Cambridge 4024, Pakistan Studies, UAE MoE Arabic
+- **MUST NEVER see:** Cambridge 4024, Pakistan Studies, UAE National Arabic
 
 ## THE CHECKPOINTS — run these for each persona
 
@@ -94,7 +94,7 @@ For each persona, walk through these screens and verify what they see:
 - Which syllabus loads?
 - UAE British → Cambridge syllabus (correct codes 4024, 5054 etc.)
 - UAE American → AP/SAT content (NO Cambridge codes)
-- UAE MoE → MoE-specific content
+- UAE National → MoE-specific content
 - Pakistani → Cambridge Pakistani or Matric board
 
 ### Step 6 — Drill interaction

@@ -81,24 +81,24 @@ export const CBSE_SUMMER = {
 };
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// UAE MoE SUMMER SESSIONS
+// UAE National SUMMER SESSIONS
 // ═══════════════════════════════════════════════════════════════════════════════
 
 export const MOE_SUMMER = {
-  name: 'UAE MoE Summer Sessions',
+  name: 'UAE National Summer Sessions',
   sessions: [
-    { title: 'EmSAT English Preparation', duration: 45, gradeRange: 'Grade 10-12', curriculum: 'UAE MoE', covers: 'EmSAT English: Grammar & Vocabulary (25%), Reading (40%), Writing (35%). Practice with passages at EmSAT difficulty level. Essay structure for Writing section. Target: 1100+ for university admission, 1400+ for competitive programmes.' },
-    { title: 'EmSAT Mathematics Preparation', duration: 45, gradeRange: 'Grade 10-12', curriculum: 'UAE MoE', covers: 'EmSAT Maths: Algebra (35%), Geometry (20%), Statistics (20%), Calculus (25% for Advanced Track). NO calculator allowed. Mental maths speed drills. Practice algebraic manipulation, factoring, equation solving without aids.' },
-    { title: 'EmSAT Arabic Preparation', duration: 45, gradeRange: 'Grade 10-12', curriculum: 'UAE MoE', covers: 'EmSAT Arabic: Reading Comprehension (40%), Grammar/النحو والصرف (30%), Writing (30%). MSA (فصحى) not dialect. إعراب practice. Formal essay structure in Arabic. Reading newspaper-style passages.' },
-    { title: 'EmSAT Physics Preparation', duration: 45, gradeRange: 'Grade 11-12', curriculum: 'UAE MoE', covers: 'EmSAT Physics: Mechanics, Waves & Optics, Electricity & Magnetism, Modern Physics. Conceptual understanding + numerical problem solving. Free body diagrams, circuit analysis, unit analysis.' },
-    { title: 'EmSAT Chemistry Preparation', duration: 45, gradeRange: 'Grade 11-12', curriculum: 'UAE MoE', covers: 'EmSAT Chemistry: Atomic Structure & Bonding, Stoichiometry, Organic Chemistry, Thermochemistry. Mole calculations, periodic table trends, functional groups, balancing equations.' },
-    { title: 'EmSAT Biology Preparation', duration: 45, gradeRange: 'Grade 11-12', curriculum: 'UAE MoE', covers: 'EmSAT Biology: Cell Biology, Genetics & Evolution, Human Biology, Ecology. Mitosis vs meiosis, Punnett squares, organ systems, food webs, energy pyramids.' },
-    { title: 'EmSAT Computer Science Preparation', duration: 45, gradeRange: 'Grade 11-12', curriculum: 'UAE MoE', covers: 'EmSAT CS: Python programming, data structures (arrays, lists, dictionaries), algorithms (sorting, searching), networks (TCP/IP, DNS), cybersecurity basics.' },
-    { title: 'Arabic Language Strengthening', duration: 30, gradeRange: 'All grades', curriculum: 'UAE MoE', covers: 'For students who need Arabic support over summer. Reading comprehension practice, grammar drills, writing exercises. Both Arabic First Language and Arabic Second Language tracks.' },
-    { title: 'Islamic Education Revision', duration: 30, gradeRange: 'All grades', curriculum: 'UAE MoE', covers: 'Summer revision of Islamic Education. Quran recitation practice, Hadith review, Fiqh concepts, Seerah events. Age-appropriate content for each cycle.' },
-    { title: 'MSC Reflection Sessions', duration: 30, gradeRange: 'All grades', curriculum: 'UAE MoE', covers: 'Moral, Social & Cultural Studies summer reflections. Community service project planning for next year. UAE values exploration. Digital citizenship in summer (social media, gaming, screen time balance).' },
-    { title: 'Grade Bridge: Cycle 2 → Cycle 3', duration: 45, gradeRange: 'Grade 8 → 9', curriculum: 'UAE MoE', covers: 'Critical transition from middle school to high school. Choosing General vs Advanced vs Elite track. Preview of track-specific content. EmSAT awareness — what scores are needed and when.' },
-    { title: 'Grade Bridge: General → Advanced Track', duration: 45, gradeRange: 'Grade 9-10', curriculum: 'UAE MoE', covers: 'For students switching from General to Advanced track. Gap analysis: what Advanced Track expects that General didn\'t cover. Maths and Science bridge content. EmSAT score targets for Advanced students.' },
+    { title: 'EmSAT English Preparation', duration: 45, gradeRange: 'Grade 10-12', curriculum: 'UAE National', covers: 'EmSAT English: Grammar & Vocabulary (25%), Reading (40%), Writing (35%). Practice with passages at EmSAT difficulty level. Essay structure for Writing section. Target: 1100+ for university admission, 1400+ for competitive programmes.' },
+    { title: 'EmSAT Mathematics Preparation', duration: 45, gradeRange: 'Grade 10-12', curriculum: 'UAE National', covers: 'EmSAT Maths: Algebra (35%), Geometry (20%), Statistics (20%), Calculus (25% for Advanced Track). NO calculator allowed. Mental maths speed drills. Practice algebraic manipulation, factoring, equation solving without aids.' },
+    { title: 'EmSAT Arabic Preparation', duration: 45, gradeRange: 'Grade 10-12', curriculum: 'UAE National', covers: 'EmSAT Arabic: Reading Comprehension (40%), Grammar/النحو والصرف (30%), Writing (30%). MSA (فصحى) not dialect. إعراب practice. Formal essay structure in Arabic. Reading newspaper-style passages.' },
+    { title: 'EmSAT Physics Preparation', duration: 45, gradeRange: 'Grade 11-12', curriculum: 'UAE National', covers: 'EmSAT Physics: Mechanics, Waves & Optics, Electricity & Magnetism, Modern Physics. Conceptual understanding + numerical problem solving. Free body diagrams, circuit analysis, unit analysis.' },
+    { title: 'EmSAT Chemistry Preparation', duration: 45, gradeRange: 'Grade 11-12', curriculum: 'UAE National', covers: 'EmSAT Chemistry: Atomic Structure & Bonding, Stoichiometry, Organic Chemistry, Thermochemistry. Mole calculations, periodic table trends, functional groups, balancing equations.' },
+    { title: 'EmSAT Biology Preparation', duration: 45, gradeRange: 'Grade 11-12', curriculum: 'UAE National', covers: 'EmSAT Biology: Cell Biology, Genetics & Evolution, Human Biology, Ecology. Mitosis vs meiosis, Punnett squares, organ systems, food webs, energy pyramids.' },
+    { title: 'EmSAT Computer Science Preparation', duration: 45, gradeRange: 'Grade 11-12', curriculum: 'UAE National', covers: 'EmSAT CS: Python programming, data structures (arrays, lists, dictionaries), algorithms (sorting, searching), networks (TCP/IP, DNS), cybersecurity basics.' },
+    { title: 'Arabic Language Strengthening', duration: 30, gradeRange: 'All grades', curriculum: 'UAE National', covers: 'For students who need Arabic support over summer. Reading comprehension practice, grammar drills, writing exercises. Both Arabic First Language and Arabic Second Language tracks.' },
+    { title: 'Islamic Education Revision', duration: 30, gradeRange: 'All grades', curriculum: 'UAE National', covers: 'Summer revision of Islamic Education. Quran recitation practice, Hadith review, Fiqh concepts, Seerah events. Age-appropriate content for each cycle.' },
+    { title: 'MSC Reflection Sessions', duration: 30, gradeRange: 'All grades', curriculum: 'UAE National', covers: 'Moral, Social & Cultural Studies summer reflections. Community service project planning for next year. UAE values exploration. Digital citizenship in summer (social media, gaming, screen time balance).' },
+    { title: 'Grade Bridge: Cycle 2 → Cycle 3', duration: 45, gradeRange: 'Grade 8 → 9', curriculum: 'UAE National', covers: 'Critical transition from middle school to high school. Choosing General vs Advanced vs Elite track. Preview of track-specific content. EmSAT awareness — what scores are needed and when.' },
+    { title: 'Grade Bridge: General → Advanced Track', duration: 45, gradeRange: 'Grade 9-10', curriculum: 'UAE National', covers: 'For students switching from General to Advanced track. Gap analysis: what Advanced Track expects that General didn\'t cover. Maths and Science bridge content. EmSAT score targets for Advanced students.' },
   ],
 };
 
@@ -157,7 +157,7 @@ export const HEAD_START_SUMMER = {
 
 export const UAE_SUMMER_TRACKS = [
   { id: 'bridge', name: 'Bridge to Next Year', audience: 'Every student moving up a grade in September', duration: '54 days, 30 min/day', philosophy: 'Get ahead before classmates open their books.' },
-  { id: 'emsat', name: 'EmSAT Intensive', audience: 'Grade 11-12 UAE MoE students', duration: '25 sessions per subject', philosophy: 'Every EmSAT point matters for university admission.' },
+  { id: 'emsat', name: 'EmSAT Intensive', audience: 'Grade 11-12 UAE National students', duration: '25 sessions per subject', philosophy: 'Every EmSAT point matters for university admission.' },
   { id: 'catchup', name: 'Catch Up & Close Gaps', audience: 'Students who struggled this year', duration: 'Self-paced', philosophy: 'No pressure. Patient. Confidence first.' },
   { id: 'sen', name: 'Students of Determination', audience: 'Inclusive summer — KHDA aligned', duration: 'Self-paced, no time pressure', philosophy: 'Same learning. Your way. Gentle Start Protocol every session.' },
   { id: 'university', name: 'University Ready', audience: 'Grade 12 graduates / university applicants', duration: '30 sessions', philosophy: 'Last chance to improve scores and prepare for first year.' },
@@ -297,7 +297,7 @@ export function getUAESummerPrompt(curriculum) {
     });
   }
 
-  // EmSAT intensive for MoE students
+  // EmSAT intensive for UAE national students
   if (curriculum === 'moe') {
     prompt += `\n\nEmSAT INTENSIVE: University score targets — UAEU English 1250/Maths 900, Khalifa English 1400/Maths 1100/Physics 900, AUS English 1500/Maths 1100.`;
     prompt += `\nEmSAT English: ${EMSAT_INTENSIVE.english.sessions1to5}. ${EMSAT_INTENSIVE.english.sessions11to15}.`;

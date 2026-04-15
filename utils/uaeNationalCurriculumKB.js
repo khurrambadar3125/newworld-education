@@ -1,8 +1,8 @@
 /**
- * utils/uaeMoEKnowledge.js
- * UAE Ministry of Education (MoE) National Curriculum Knowledge Base
+ * utils/uaeNationalCurriculumKB.js
+ * UAE National Curriculum Knowledge Base
  *
- * For UAE government school students and private schools following MoE curriculum.
+ * For UAE government school students and private schools following the UAE national curriculum.
  * Covers KG to Grade 12, EmSAT, national curriculum structure.
  * Auto-injects when uaeCurriculum === 'moe'.
  *
@@ -20,7 +20,7 @@ export const MOE_SUBJECTS = {
       { code: 'maths', name: 'Mathematics', medium: 'Bilingual' },
       { code: 'science', name: 'Science', medium: 'English' },
     ],
-    tips: `KG in UAE MoE schools is play-based learning transitioning to structured learning in KG2. Arabic is taught as first language from KG1 — letter recognition, basic vocabulary, short sentences. English is introduced alongside Arabic — UAE MoE schools are increasingly bilingual. Islamic Education at this stage: basic duas, stories of prophets at age-appropriate level. Maths: number recognition 1-20, basic shapes, simple addition. The curriculum follows the UAE National Standards Framework — not Common Core, not British EYFS. UAE identity content starts from KG: flag, national anthem, Emirati heritage.`,
+    tips: `KG in UAE National schools is play-based learning transitioning to structured learning in KG2. Arabic is taught as first language from KG1 — letter recognition, basic vocabulary, short sentences. English is introduced alongside Arabic — UAE National schools are increasingly bilingual. Islamic Education at this stage: basic duas, stories of prophets at age-appropriate level. Maths: number recognition 1-20, basic shapes, simple addition. The curriculum follows the UAE National Standards Framework — not Common Core, not British EYFS. UAE identity content starts from KG: flag, national anthem, Emirati heritage.`,
   },
 
   cycle1: {
@@ -37,7 +37,7 @@ export const MOE_SUBJECTS = {
       { code: 'pe', name: 'Physical Education', mandatory: true },
       { code: 'ict', name: 'ICT / Design & Technology', mandatory: true },
     ],
-    tips: `Cycle 1 establishes the bilingual foundation. Arabic is taught 6-7 periods per week, English 5-6 periods. Maths and Science are taught in English from Grade 1 in MoE schools (since 2017 reform). Islamic Education is in Arabic for Muslim students; non-Muslim students take Moral Education. Social Studies covers UAE geography, history, and national identity — taught in Arabic. MSC (Moral, Social & Cultural Studies) replaced standalone Moral Education in 2023-24. Assessment is continuous — no high-stakes exams in Cycle 1. Report cards use descriptors: Exceeding, Meeting, Approaching, Beginning.`,
+    tips: `Cycle 1 establishes the bilingual foundation. Arabic is taught 6-7 periods per week, English 5-6 periods. Maths and Science are taught in English from Grade 1 in UAE government schools (since 2017 reform). Islamic Education is in Arabic for Muslim students; non-Muslim students take Moral Education. Social Studies covers UAE geography, history, and national identity — taught in Arabic. MSC (Moral, Social & Cultural Studies) replaced standalone Moral Education in 2023-24. Assessment is continuous — no high-stakes exams in Cycle 1. Report cards use descriptors: Exceeding, Meeting, Approaching, Beginning.`,
   },
 
   cycle2: {
@@ -54,7 +54,7 @@ export const MOE_SUBJECTS = {
       { code: 'art', name: 'Art & Music', mandatory: true },
       { code: 'pe', name: 'Physical Education & Health', mandatory: true },
     ],
-    tips: `Cycle 2 introduces centralised assessments. End-of-term exams are set by MoE, not individual schools. Maths and Science continue in English — students must be proficient in English mathematical and scientific vocabulary. Arabic Language focuses on grammar (nahw and sarf), reading comprehension, essay writing, and literature. Islamic Education covers Quran recitation with Tajweed, Hadith study, Fiqh basics, and Islamic history. Social Studies deepens UAE knowledge: Federation formation, seven emirates, government structure, economic development. Grade 8 is a critical year — performance determines pathway options for Cycle 3. Elective subjects may be introduced (additional languages, advanced ICT).`,
+    tips: `Cycle 2 introduces centralised assessments. End-of-term exams are set by the national curriculum body, not individual schools. Maths and Science continue in English — students must be proficient in English mathematical and scientific vocabulary. Arabic Language focuses on grammar (nahw and sarf), reading comprehension, essay writing, and literature. Islamic Education covers Quran recitation with Tajweed, Hadith study, Fiqh basics, and Islamic history. Social Studies deepens UAE knowledge: Federation formation, seven emirates, government structure, economic development. Grade 8 is a critical year — performance determines pathway options for Cycle 3. Elective subjects may be introduced (additional languages, advanced ICT).`,
   },
 
   cycle3General: {
@@ -101,7 +101,7 @@ export const MOE_SUBJECTS = {
       { code: 'cs', name: 'Computer Science / AI', mandatory: false },
       { code: 'research', name: 'Research Methods', mandatory: false },
     ],
-    tips: `The Elite Track (introduced 2020) is the most rigorous pathway in UAE government schools — targeting students aiming for Khalifa University, NYU Abu Dhabi, or international universities. Content goes beyond the Advanced Track with extended syllabi in Maths, Physics, and Chemistry. English language requirements are higher — students are expected to reach EmSAT 1400+ by Grade 12. Research Methods is offered as an elective, preparing students for university-level academic writing. Selection for Elite Track is competitive — based on Grade 8 performance and entrance assessments. Schools offering Elite Track include select MoE model schools in Abu Dhabi, Dubai, and Sharjah.`,
+    tips: `The Elite Track (introduced 2020) is the most rigorous pathway in UAE government schools — targeting students aiming for Khalifa University, NYU Abu Dhabi, or international universities. Content goes beyond the Advanced Track with extended syllabi in Maths, Physics, and Chemistry. English language requirements are higher — students are expected to reach EmSAT 1400+ by Grade 12. Research Methods is offered as an elective, preparing students for university-level academic writing. Selection for Elite Track is competitive — based on Grade 8 performance and entrance assessments. Schools offering Elite Track include select UAE government model schools in Abu Dhabi, Dubai, and Sharjah.`,
   },
 
   artsMusic: {
@@ -129,7 +129,7 @@ export const EMSAT_STRUCTURE = {
       sections: ['Grammar & Vocabulary', 'Reading', 'Writing'],
       duration: '135 minutes',
       universityMinimum: '1100 for most federal university programmes, 1400+ for competitive programmes',
-      tips: 'EmSAT English is closest to IELTS in format. Reading section has academic passages — practice skimming and scanning. Writing section requires a structured essay (introduction, body, conclusion). Grammar questions test verb tenses, articles, prepositions, conditionals. For Emirati students: common errors are article usage (a/an/the), subject-verb agreement, and passive voice construction. Practice with past EmSAT papers from MoE website.',
+      tips: 'EmSAT English is closest to IELTS in format. Reading section has academic passages — practice skimming and scanning. Writing section requires a structured essay (introduction, body, conclusion). Grammar questions test verb tenses, articles, prepositions, conditionals. For Emirati students: common errors are article usage (a/an/the), subject-verb agreement, and passive voice construction. Practice with past EmSAT papers from national curriculum website.',
     },
     emsatMaths: {
       name: 'EmSAT Achieve — Mathematics',
@@ -177,11 +177,11 @@ export const EMSAT_STRUCTURE = {
       tips: 'EmSAT CS uses Python as the programming language. Students must trace code output, identify errors, and write code snippets. Data structures: arrays, lists, dictionaries, stacks, queues. Algorithms: sorting (bubble, selection, insertion), searching (linear, binary). Networks: know TCP/IP, HTTP, DNS basics. Cybersecurity: encryption types, threats, firewalls. UAE context: UAE Cybersecurity Council, smart government initiatives.',
     },
   },
-  uaeContext: 'EmSAT is administered by MoE and mandatory for Grade 12 government school students. Private school students can also take EmSAT. Results are used by UAE federal universities (UAEU, Zayed University, Higher Colleges of Technology, Khalifa University) for admission. EmSAT is free for UAE students. Tests are computer-based and held multiple times per year. Some universities accept EmSAT in lieu of IELTS/TOEFL for English proficiency.',
+  uaeContext: 'EmSAT is administered by the national curriculum body and mandatory for Grade 12 government school students. Private school students can also take EmSAT. Results are used by UAE federal universities (UAEU, Zayed University, Higher Colleges of Technology, Khalifa University) for admission. EmSAT is free for UAE students. Tests are computer-based and held multiple times per year. Some universities accept EmSAT in lieu of IELTS/TOEFL for English proficiency.',
 };
 
 /**
- * MoE grading system
+ * UAE national grading system
  */
 export const MOE_GRADING = {
   cycle1_2: {
@@ -205,11 +205,11 @@ export const MOE_GRADING = {
     passMarks: '60% minimum in each subject',
     assessment: 'Continuous assessment (30-40%) + End-of-term exam (60-70%)',
   },
-  distinction: 'MoE vs private school grading: MoE uses its own grading scale, not A*-G (British) or GPA (American). University admission depends on EmSAT scores + Grade 12 marks combined.',
+  distinction: 'UAE national vs private school grading: The national curriculum uses its own grading scale, not A*-G (British) or GPA (American). University admission depends on EmSAT scores + Grade 12 marks combined.',
 };
 
 /**
- * What makes MoE curriculum different
+ * What makes the UAE national curriculum different
  */
 export const MOE_DISTINCTIVE = {
   bilingual: 'Maths and Science taught in English since 2017 — but Arabic, Islamic Education, Social Studies remain in Arabic. Students must be genuinely bilingual.',
@@ -217,7 +217,7 @@ export const MOE_DISTINCTIVE = {
   emsat: 'EmSAT is the gateway exam — unlike SAT (optional) or GCSE (curriculum-specific), EmSAT is mandatory for federal university entry. It determines placement, not just admission.',
   tracks: 'Cycle 3 (Grades 9-12) splits into General and Advanced tracks. Track determines university pathway — Advanced is required for STEM degrees.',
   islamicEducation: 'Islamic Education is examined and mandatory for Muslim students across all cycles. It is a full academic subject, not optional enrichment.',
-  reforms: 'Since 2017: English-medium for STEM, standardised MoE exams, EmSAT introduction, competency-based curriculum, AI and coding from Grade 1. The curriculum is rapidly modernising.',
+  reforms: 'Since 2017: English-medium for STEM, standardised national exams, EmSAT introduction, competency-based curriculum, AI and coding from Grade 1. The curriculum is rapidly modernising.',
 };
 
 /**
@@ -238,11 +238,11 @@ export const MOE_SUBJECT_LIST = [
 ];
 
 /**
- * Get MoE curriculum prompt for Starky injection.
+ * Get UAE national curriculum prompt for Starky injection.
  * Auto-injects when uaeCurriculum === 'moe'.
  */
 export function getMoECurriculumPrompt(subject) {
-  let prompt = `\nUAE MINISTRY OF EDUCATION CURRICULUM — This student follows the UAE national MoE curriculum.\n`;
+  let prompt = `\nUAE NATIONAL CURRICULUM — This student follows the UAE national curriculum.\n`;
 
   // Key distinction
   prompt += `\nKEY: This is the UAE GOVERNMENT school curriculum — different from British, American, and IB curricula used in private schools.`;

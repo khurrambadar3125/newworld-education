@@ -195,7 +195,7 @@ const CBSE_EXCELLENCE = {
 };
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// UAE MoE — EmSAT Mastery and National Curriculum Excellence
+// UAE National — EmSAT Mastery and National Curriculum Excellence
 // ═══════════════════════════════════════════════════════════════════════════════
 
 const MOE_EXCELLENCE = {
@@ -243,7 +243,7 @@ const MOE_EXCELLENCE = {
   },
 
   nationalCurriculum: {
-    learningOutcomes: 'UAE MoE curriculum is competency-based since 2017. Each subject has Learning Outcomes (LOs) at 4 levels: Emerging, Developing, Proficient, Advanced. Assessment is mapped to LOs, not just content coverage.',
+    learningOutcomes: 'UAE National curriculum is competency-based since 2017. Each subject has Learning Outcomes (LOs) at 4 levels: Emerging, Developing, Proficient, Advanced. Assessment is mapped to LOs, not just content coverage.',
     mscAssessment: {
       fourPillars: [
         'Character & Morality — personal ethics, integrity, empathy, resilience',
@@ -288,7 +288,7 @@ const MANDATORY_EXCELLENCE = {
       'Seerah: events + lessons learned + relevance to UAE values',
       'Islamic values: tolerance, coexistence, moderation — aligned with UAE national identity',
     ],
-    gradingNote: 'Islamic Education uses MoE standards regardless of school curriculum. A British school student is examined on MoE Islamic Education standards, not GCSE Religious Studies.',
+    gradingNote: 'Islamic Education uses UAE national standards regardless of school curriculum. A British school student is examined on UAE Islamic Education standards, not GCSE Religious Studies.',
   },
   arabicASL: {
     cefrLevels: 'Arabic as Second Language follows CEFR-aligned levels (A1→C1). Most international school students are expected to reach A2 by Grade 8, B1 by Grade 12.',

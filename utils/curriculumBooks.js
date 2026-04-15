@@ -1158,27 +1158,27 @@ export const CURRICULUM_BOOKS = {
 
   'uae-moe': {
     country: 'UAE',
-    label: 'UAE Ministry of Education (national government curriculum)',
-    board: 'UAE Ministry of Education (MoE)',
+    label: 'UAE national curriculum (national government curriculum)',
+    board: 'UAE national curriculum (MoE)',
     grades: ['kg1','kg2','grade1','grade2','grade3','grade4','grade5','grade6','grade7','grade8','grade9','grade10','grade11','grade12'],
     medium: ['Arabic (Arabic/Islamic/Social)', 'English (STEM)'],
     subjects: {
       'Arabic Language (First Language)': {
-        books: [{ title: 'MoE Arabic Language Textbook (per grade)', publisher: 'UAE Ministry of Education', official: true }],
+        books: [{ title: 'MoE Arabic Language Textbook (per grade)', publisher: 'UAE national curriculum', official: true }],
       },
       'Islamic Education': {
-        books: [{ title: 'MoE Islamic Education Textbook (per grade)', publisher: 'UAE Ministry of Education', official: true }],
+        books: [{ title: 'MoE Islamic Education Textbook (per grade)', publisher: 'UAE national curriculum', official: true }],
       },
       'Social Studies (UAE)': {
-        books: [{ title: 'MoE Social Studies — UAE Identity, Citizenship & History', publisher: 'UAE Ministry of Education', official: true }],
+        books: [{ title: 'MoE Social Studies — UAE Identity, Citizenship & History', publisher: 'UAE national curriculum', official: true }],
       },
       'Moral, Social & Cultural Studies': {
-        books: [{ title: 'UAE Moral Education / MSC Curriculum Resource', publisher: 'UAE Ministry of Education', official: true }],
+        books: [{ title: 'UAE Moral Education / MSC Curriculum Resource', publisher: 'UAE national curriculum', official: true }],
       },
       'Mathematics (MoE)': {
         books: [
           { title: 'McGraw-Hill Reveal Math (MoE-adopted)', publisher: 'McGraw-Hill Education', needsVerification: true },
-          { title: 'MoE Mathematics Teacher & Student Guide', publisher: 'UAE Ministry of Education', official: true },
+          { title: 'MoE Mathematics Teacher & Student Guide', publisher: 'UAE national curriculum', official: true },
         ],
       },
       'Science (MoE)': {
@@ -1187,13 +1187,13 @@ export const CURRICULUM_BOOKS = {
         ],
       },
       'Physics (Advanced Track)': {
-        books: [{ title: 'MoE Physics — Advanced Stream (Grades 10-12)', publisher: 'UAE MoE / McGraw-Hill', needsVerification: true }],
+        books: [{ title: 'MoE Physics — Advanced Stream (Grades 10-12)', publisher: 'UAE National / McGraw-Hill', needsVerification: true }],
       },
       'Chemistry (Advanced Track)': {
-        books: [{ title: 'MoE Chemistry — Advanced Stream (Grades 10-12)', publisher: 'UAE MoE / McGraw-Hill', needsVerification: true }],
+        books: [{ title: 'MoE Chemistry — Advanced Stream (Grades 10-12)', publisher: 'UAE National / McGraw-Hill', needsVerification: true }],
       },
       'Biology (Advanced Track)': {
-        books: [{ title: 'MoE Biology — Advanced Stream (Grades 10-12)', publisher: 'UAE MoE / McGraw-Hill', needsVerification: true }],
+        books: [{ title: 'MoE Biology — Advanced Stream (Grades 10-12)', publisher: 'UAE National / McGraw-Hill', needsVerification: true }],
       },
       'English Language': {
         books: [
@@ -1201,14 +1201,14 @@ export const CURRICULUM_BOOKS = {
         ],
       },
       'Computer Science / ICT': {
-        books: [{ title: 'MoE Computing, Design & Innovation Resource', publisher: 'UAE MoE', needsVerification: true }],
+        books: [{ title: 'MoE Computing, Design & Innovation Resource', publisher: 'UAE National', needsVerification: true }],
       },
-      'EmSAT Achieve — English': { books: [{ title: 'EmSAT Achieve English Prep', publisher: 'UAE MoE / Official practice', official: true }], pastPapers: 'EmSAT official practice tests' },
-      'EmSAT Achieve — Mathematics': { books: [{ title: 'EmSAT Achieve Mathematics Prep', publisher: 'UAE MoE', official: true }] },
-      'EmSAT Achieve — Arabic': { books: [{ title: 'EmSAT Achieve Arabic Prep', publisher: 'UAE MoE', official: true }] },
-      'EmSAT Achieve — Physics': { books: [{ title: 'EmSAT Achieve Physics Prep', publisher: 'UAE MoE', official: true }] },
-      'EmSAT Achieve — Chemistry': { books: [{ title: 'EmSAT Achieve Chemistry Prep', publisher: 'UAE MoE', official: true }] },
-      'EmSAT Achieve — Biology': { books: [{ title: 'EmSAT Achieve Biology Prep', publisher: 'UAE MoE', official: true }] },
+      'EmSAT Achieve — English': { books: [{ title: 'EmSAT Achieve English Prep', publisher: 'UAE National / Official practice', official: true }], pastPapers: 'EmSAT official practice tests' },
+      'EmSAT Achieve — Mathematics': { books: [{ title: 'EmSAT Achieve Mathematics Prep', publisher: 'UAE National', official: true }] },
+      'EmSAT Achieve — Arabic': { books: [{ title: 'EmSAT Achieve Arabic Prep', publisher: 'UAE National', official: true }] },
+      'EmSAT Achieve — Physics': { books: [{ title: 'EmSAT Achieve Physics Prep', publisher: 'UAE National', official: true }] },
+      'EmSAT Achieve — Chemistry': { books: [{ title: 'EmSAT Achieve Chemistry Prep', publisher: 'UAE National', official: true }] },
+      'EmSAT Achieve — Biology': { books: [{ title: 'EmSAT Achieve Biology Prep', publisher: 'UAE National', official: true }] },
     },
   },
 
@@ -1234,22 +1234,22 @@ export const CURRICULUM_BOOKS = {
 // ──────────────────────────────────────────────────────────────────
 
 export const UAE_MANDATORY_OVERLAY = {
-  'Islamic Education (UAE MoE)': {
+  'Islamic Education (UAE National)': {
     mandatoryFor: 'All Muslim students in UAE private schools (regardless of main curriculum)',
     exemption: 'Non-Muslim students take Moral Education instead',
-    books: [{ title: 'MoE Islamic Education Textbook (per grade)', publisher: 'UAE Ministry of Education', official: true }],
+    books: [{ title: 'MoE Islamic Education Textbook (per grade)', publisher: 'UAE national curriculum', official: true }],
   },
   'Arabic (First Language — Arab students)': {
     mandatoryFor: 'Arab nationality students in UAE private schools',
-    books: [{ title: 'MoE Arabic Language Textbook', publisher: 'UAE Ministry of Education', official: true }],
+    books: [{ title: 'MoE Arabic Language Textbook', publisher: 'UAE national curriculum', official: true }],
   },
   'Arabic (Second Language — non-Arab)': {
     mandatoryFor: 'All non-Arab students in UAE private schools',
-    books: [{ title: 'MoE Arabic as a Second Language Textbook', publisher: 'UAE Ministry of Education', official: true }],
+    books: [{ title: 'MoE Arabic as a Second Language Textbook', publisher: 'UAE national curriculum', official: true }],
   },
   'UAE Social Studies': {
     mandatoryFor: 'All students in UAE private schools',
-    books: [{ title: 'MoE Social Studies — UAE Identity & Citizenship', publisher: 'UAE Ministry of Education', official: true }],
+    books: [{ title: 'MoE Social Studies — UAE Identity & Citizenship', publisher: 'UAE national curriculum', official: true }],
   },
 };
 

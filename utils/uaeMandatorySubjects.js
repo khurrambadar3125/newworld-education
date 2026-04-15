@@ -4,19 +4,19 @@
  *
  * All private school students in the UAE must study these 4 subjects
  * regardless of their main curriculum (British, American, IB, CBSE, Pakistani).
- * Mandated by UAE Ministry of Education (MoE).
+ * Mandated by UAE national curriculum.
  *
  * PROTECTED: This file is an addition. Nothing existing is affected.
  */
 
 export const UAE_MANDATORY_SUBJECTS = {
   islamicEducation: {
-    name: 'Islamic Education (UAE MoE)',
+    name: 'Islamic Education (UAE National)',
     arabic: 'التربية الإسلامية',
     mandatoryFor: 'All Muslim students in UAE private schools',
     exemption: 'Non-Muslim students are exempt and take Moral Education instead',
-    curriculum: 'UAE Ministry of Education — not Cambridge, not school curriculum',
-    examBoard: 'UAE MoE standardised assessments',
+    curriculum: 'UAE national curriculum — not Cambridge, not school curriculum',
+    examBoard: 'UAE National standardised assessments',
 
     topicsByStage: {
       primary: [
@@ -50,7 +50,7 @@ export const UAE_MANDATORY_SUBJECTS = {
       ],
     },
 
-    teachingNotes: `Islamic Education in UAE follows the MoE curriculum, NOT the school's main curriculum. A British curriculum student still takes UAE MoE Islamic Education. Exams are in Arabic for Arabic-medium streams and available in English for international streams. Starky must teach with complete scholarly respect. Reference Quran and Hadith accurately. Connect to UAE context — tolerance, coexistence, Year of Tolerance values. Never simplify to the point of inaccuracy.`,
+    teachingNotes: `Islamic Education in UAE follows the UAE national curriculum, NOT the school's main curriculum. A British curriculum student still takes UAE National Islamic Education. Exams are in Arabic for Arabic-medium streams and available in English for international streams. Starky must teach with complete scholarly respect. Reference Quran and Hadith accurately. Connect to UAE context — tolerance, coexistence, Year of Tolerance values. Never simplify to the point of inaccuracy.`,
   },
 
   arabicSecondLanguage: {
@@ -58,8 +58,8 @@ export const UAE_MANDATORY_SUBJECTS = {
     arabic: 'اللغة العربية لغير الناطقين بها',
     mandatoryFor: 'All non-Arab students in UAE private schools',
     note: 'Arab students take Arabic as First Language instead',
-    curriculum: 'UAE Ministry of Education',
-    examBoard: 'UAE MoE standardised assessments',
+    curriculum: 'UAE national curriculum',
+    examBoard: 'UAE National standardised assessments',
 
     topicsByStage: {
       primary: [
@@ -102,8 +102,8 @@ export const UAE_MANDATORY_SUBJECTS = {
     arabic: 'الدراسات الأخلاقية والاجتماعية والثقافية',
     mandatoryFor: 'All students in UAE private schools (Muslim and non-Muslim)',
     note: 'Replaced standalone Moral Education from 2023-24',
-    curriculum: 'UAE Ministry of Education',
-    examBoard: 'School-based assessment aligned to MoE standards',
+    curriculum: 'UAE national curriculum',
+    examBoard: 'School-based assessment aligned to UAE national standards',
 
     topicsByStage: {
       primary: [
@@ -145,8 +145,8 @@ export const UAE_MANDATORY_SUBJECTS = {
     name: 'Social Studies (UAE)',
     arabic: 'الدراسات الاجتماعية',
     mandatoryFor: 'All students in UAE private schools',
-    curriculum: 'UAE Ministry of Education',
-    examBoard: 'UAE MoE standardised assessments',
+    curriculum: 'UAE national curriculum',
+    examBoard: 'UAE National standardised assessments',
 
     topicsByStage: {
       primary: [
@@ -189,8 +189,8 @@ export const UAE_MANDATORY_SUBJECTS = {
     arabic: 'التربية الأخلاقية',
     mandatoryFor: 'All non-Muslim students in UAE private schools (replaces Islamic Education)',
     note: 'Muslim students take Islamic Education instead',
-    curriculum: 'UAE Ministry of Education',
-    examBoard: 'School-based assessment aligned to MoE standards',
+    curriculum: 'UAE national curriculum',
+    examBoard: 'School-based assessment aligned to UAE national standards',
 
     topicsByStage: {
       primary: [
@@ -230,10 +230,10 @@ export const UAE_MANDATORY_SUBJECTS = {
 
   crossCurriculumNote: {
     name: 'Cross-Curriculum Applicability',
-    note: 'UAE mandatory subjects apply to ALL private school students regardless of main curriculum — British (IGCSE/A Level), American (AP), IB (Diploma), CBSE, and Pakistani. An IB student still takes MoE Islamic Education and Arabic. A CBSE student still takes UAE Social Studies. These are ADDITIONAL to the main curriculum requirements, not replacements. IB students may count Arabic B towards Group 2 but still need MoE Arabic assessments. Assessment is by MoE standards, not the school curriculum board.',
+    note: 'UAE mandatory subjects apply to ALL private school students regardless of main curriculum — British (IGCSE/A Level), American (AP), IB (Diploma), CBSE, and Pakistani. An IB student still takes UAE national Islamic Education and Arabic. A CBSE student still takes UAE Social Studies. These are ADDITIONAL to the main curriculum requirements, not replacements. IB students may count Arabic B towards Group 2 but still need UAE national Arabic assessments. Assessment is by UAE national standards, not the school curriculum board.',
     mandatoryFor: 'All students in all UAE private schools',
     topicsByStage: { primary: [], middle: [], secondary: [] },
-    teachingNotes: 'This is a structural note. UAE mandatory subjects are examined separately from the main curriculum. A student doing Cambridge IGCSE still sits MoE-set exams for Arabic, Islamic Education, and Social Studies. These appear on the MoE report card alongside the main curriculum results.',
+    teachingNotes: 'This is a structural note. UAE mandatory subjects are examined separately from the main curriculum. A student doing Cambridge IGCSE still sits national-curriculum exams for Arabic, Islamic Education, and Social Studies. These appear on the national curriculum report card alongside the main curriculum results.',
   },
 };
 

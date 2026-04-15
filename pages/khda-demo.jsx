@@ -15,7 +15,7 @@ export default function KHDADemoPage() {
 
   const startChat = () => {
     setChatStarted(true);
-    setMessages([{ role: 'assistant', content: 'Hi! I\'m Starky — your AI tutor. I know every subject across British, IB, American, CBSE, and UAE MoE curricula.\n\nAsk me anything — a maths question, an essay prompt, exam revision help, or just say "quiz me on Chemistry".\n\nNo signup needed. Try me.' }]);
+    setMessages([{ role: 'assistant', content: 'Hi! I\'m Starky — your AI tutor. I know every subject across British, IB, American, CBSE, and UAE National curricula.\n\nAsk me anything — a maths question, an essay prompt, exam revision help, or just say "quiz me on Chemistry".\n\nNo signup needed. Try me.' }]);
     setTimeout(() => inputRef.current?.focus(), 200);
   };
 
@@ -68,7 +68,7 @@ export default function KHDADemoPage() {
     { flag: '🎓', name: 'IB', sub: 'International Baccalaureate', color: '#4ECDC4' },
     { flag: '🇺🇸', name: 'American', sub: 'AP / SAT / ACT', color: '#FF6B6B' },
     { flag: '🇮🇳', name: 'Indian', sub: 'CBSE', color: '#FF8E53' },
-    { flag: '🇦🇪', name: 'UAE MoE', sub: 'Ministry of Education', color: '#FFC300' },
+    { flag: '🇦🇪', name: 'UAE National', sub: 'Ministry of Education', color: '#FFC300' },
   ];
 
   const STATS = [

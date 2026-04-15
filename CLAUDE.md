@@ -296,18 +296,115 @@ zayd-mode
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Session Snapshot (auto-updated)
 <!-- This section is auto-updated by .claude/update-claude-md.sh Stop hook -->
-<!-- Last sync: 2026-04-13 21:51 -->
+<!-- Last sync: 2026-04-16 00:56 -->
 
-**Platform counts**: 94 pages, 98 utils, 101 API routes, 21 components, 27 cron jobs
+**Platform counts**: 95 pages, 99 utils, 101 API routes, 22 components, 27 cron jobs
 
-**All pages**: 404,500,_app,arts,arts-for-all,become-newton,books,bootcamp,bootcamp-sindh,challenge,championship,contact,countdown,daily-challenge,dashboard,demo,drill,entrance-tests,essay,exam-compass,founder,founding,free-practice-test,garage-admin,garage-login,garageschool,home,homework,ibcc,iep,index,insights,khda-demo,kids,landing-v2,languages,leaderboard,learn,login,mite,mite-books,mite-faculty,mite-papers,mite-portal,mite-prep,mite-progress,mite-register,mite-study,mite-vision,mocks,monitor,music,music-for-all,nano,nano-learn,nano-teach,news,nixor,nixordemo,our-results,parent,partner,past-papers,phonics,phonics-uae,pricing,privacy,progress,reading,reading-for-all,referral,responsible-ai,sat,school,sindh-board,sindh-dashboard,skills,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study,study-plan,subscribe,summer,summer-uae,terms,textbooks,try,upload-papers,voice-lab,zayd-mode
+**All pages**: 404,500,_app,arts,arts-for-all,become-newton,books,bootcamp,bootcamp-sindh,by-school,challenge,championship,contact,countdown,daily-challenge,dashboard,demo,drill,entrance-tests,essay,exam-compass,founder,founding,free-practice-test,garage-admin,garage-login,garageschool,home,homework,ibcc,iep,index,insights,khda-demo,kids,landing-v2,languages,leaderboard,learn,login,mite,mite-books,mite-faculty,mite-papers,mite-portal,mite-prep,mite-progress,mite-register,mite-study,mite-vision,mocks,monitor,music,music-for-all,nano,nano-learn,nano-teach,news,nixor,nixordemo,our-results,parent,partner,past-papers,phonics,phonics-uae,pricing,privacy,progress,reading,reading-for-all,referral,responsible-ai,sat,school,sindh-board,sindh-dashboard,skills,special-needs,spelling-bee,spelling-uae,starky-saturdays,start,student-dashboard,study,study-plan,subscribe,summer,summer-uae,terms,textbooks,try,upload-papers,voice-lab,zayd-mode
 
-**All utils**: academicExcellence,americanCurriculumKB,analytics,anthropicClient,apiAuth,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeDialectKB,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,commandWordEngine,contentProtection,curriculumBooks,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,errorAlert,examCompassEngine,examinerReportsKB,extendedResponseKB,getKnowledgeForTopic,globalKnowledgeBase,gradePredictionEngine,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,journeyTracker,kbWishlist,literatureArabicKB,markSchemeKB,masteryEngine,motherTongue,newtonKB,notify,outcomeTrackingKB,pakistanSchoolsKB,patternEngine,phonicsKB,physicsAtomsOLevel,platformLearningEngine,practiceKB,productGate,questionBank,rateLimit,readingKnowledge,realtimeLearning,responsibleAIPolicy,saturdayFreeLogic,senGuard,senKnowledge,senProgressionKB,seoArticles,sessionAnalysis,share,signalCollector,sindhBoardSyllabus,singingGoalsKB,singingKB,spacedRepEngine,starkyAtomsKB,starkyIntents,starkyPrompt,studentProfile,studyPlanEngine,subjectAliases,subjectCatalog,summerKnowledge,supabase,syllabusStructure,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSchoolsKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,welcomeEmails,youngLearnerKB
+**All utils**: academicExcellence,americanCurriculumKB,analytics,anthropicClient,apiAuth,arabicSupportKB,architectureEnhancements,artsKnowledge,autoImprover,betterVoice,cambridgeDialectKB,cambridgeExaminer,cambridgePainPointsKB,cbseKnowledge,chineseContent,commandWordEngine,contentProtection,curriculumBooks,dailyQuestionEmail,db,deliberatePracticeLayer,emailTemplates,errorAlert,examCompassEngine,examinerReportsKB,extendedResponseKB,getKnowledgeForTopic,globalKnowledgeBase,gradePredictionEngine,hearingEngineKB,homeworkPracticeKB,ibKnowledge,iconicSingersKB,journeyTracker,kbWishlist,literatureArabicKB,markSchemeKB,masteryEngine,motherTongue,newtonKB,notify,outcomeTrackingKB,pakistanSchoolsKB,patternEngine,phonicsKB,physicsAtomsOLevel,platformLearningEngine,practiceKB,productGate,questionBank,rateLimit,readingKnowledge,realtimeLearning,responsibleAIPolicy,saturdayFreeLogic,schoolProfileMap,senGuard,senKnowledge,senProgressionKB,seoArticles,sessionAnalysis,share,signalCollector,sindhBoardSyllabus,singingGoalsKB,singingKB,spacedRepEngine,starkyAtomsKB,starkyIntents,starkyPrompt,studentProfile,studyPlanEngine,subjectAliases,subjectCatalog,summerKnowledge,supabase,syllabusStructure,systemPrompts,translateCache,uaeAcademicExcellence,uaeMandatorySubjects,uaeMoEKnowledge,uaePhonicsKB,uaeReadingKB,uaeSchoolsKB,uaeSpellingKB,uaeSummerKnowledge,universalMicPrompt,useSessionLimit,useSessionMemory,useSpacedRep,useStreaks,useVoice,voiceEvaluationKB,voiceOnboardingKB,voiceProfileKB,weaknessDetector,welcomeEmails,youngLearnerKB
 
 **Last 10 commits**:
 ```
+422cb79 Migrate all Haiku 3 references to Haiku 4.5 (Stage A)
+ea11f10 Phase 3: school-based onboarding at /by-school
+156d3f5 Phase 2b: Edexcel ingestion pipeline + UAE British routing
 28d6643 Autonomous session summary — writes memory/session_summary_<date>.md
 c721cca Honest verification — verified_by column replaces unreliable boolean
 8c7d12b School research KBs + fix canonical Islamiat spelling
@@ -315,19 +412,65 @@ ca87427 Add studentProfile.js — single source of truth for student identity
 1155be3 Unified /api/ask endpoint — free-text search → verified bank questions
 e4c1874 Comprehensive session-end system — unified script + git-tracked hooks
 2abeb81 Add estate-level continuity — session handover + cross-repo backup
-ad50c1b Add pre-push hook — warns whether Vercel will build or skip
-165b899 Add one-command cost discipline installer for other 11 platforms
-bb48569 Cost discipline — skip Vercel builds on docs/skills/memory commits
 ```
 
 **Files changed in last commit**:
 ```
-.claude/session-end.sh
-scripts/auto-session-summary.sh
+lib/constants.js
+package-lock.json
+package.json
+pages/api/anthropic.js
+pages/api/ask.js
+pages/api/challenge-answer.js
+pages/api/create-test-table.js
+pages/api/cron/cambridge-4k.js
+pages/api/cron/cambridge-test.js
+pages/api/cron/daily-question.js
+pages/api/cron/evolution-report.js
+pages/api/cron/publish-news.js
+pages/api/cron/question-bank-grow.js
+pages/api/cron/self-heal.js
+pages/api/cron/weekly-plans.js
+pages/api/daily-report.js
+pages/api/drill.js
+pages/api/essay.js
+pages/api/mocks/generate.js
+pages/api/mocks/submit.js
 ```
 
 **Uncommitted changes**: .claude/SESSION.md
 CLAUDE.md
-package-lock.json
-package.json
+pages/arts-for-all.jsx
+pages/arts.jsx
+pages/demo.jsx
+pages/homework.jsx
+pages/languages.jsx
+pages/music-for-all.jsx
+pages/music.jsx
+pages/past-papers.jsx
+pages/phonics.jsx
+pages/reading-for-all.jsx
+pages/reading.jsx
+pages/special-needs.jsx
+pages/summer.jsx
+pages/textbooks.jsx
 **Untracked files**: .env.vercel
+.playwright-mcp/console-2026-04-14T06-37-53-678Z.log
+.playwright-mcp/console-2026-04-14T07-31-10-191Z.log
+.playwright-mcp/console-2026-04-14T07-43-56-376Z.log
+.playwright-mcp/console-2026-04-14T08-34-52-758Z.log
+.playwright-mcp/console-2026-04-14T09-48-08-532Z.log
+.playwright-mcp/console-2026-04-14T09-54-40-877Z.log
+.playwright-mcp/console-2026-04-14T10-24-01-045Z.log
+.playwright-mcp/console-2026-04-14T10-44-12-104Z.log
+.playwright-mcp/console-2026-04-14T10-45-46-533Z.log
+.playwright-mcp/console-2026-04-14T10-54-00-153Z.log
+.playwright-mcp/console-2026-04-14T10-54-58-345Z.log
+.playwright-mcp/console-2026-04-15T05-38-25-710Z.log
+.playwright-mcp/console-2026-04-15T05-41-48-792Z.log
+.playwright-mcp/console-2026-04-15T06-55-55-879Z.log
+.playwright-mcp/console-2026-04-15T06-57-31-923Z.log
+.playwright-mcp/console-2026-04-15T10-56-43-570Z.log
+.playwright-mcp/console-2026-04-15T11-04-59-199Z.log
+.playwright-mcp/console-2026-04-15T11-05-52-155Z.log
+.playwright-mcp/console-2026-04-15T11-06-41-396Z.log

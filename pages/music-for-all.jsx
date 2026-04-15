@@ -265,7 +265,7 @@ export default function MusicForAllPage() {
     const prev = [...messages,{role:"user",content:txt}];
     setMessages(prev);
     try {
-      const res = await fetch("/api/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:/* PERMANENT: Haiku 3 only. Never change without Khurrams approval. */ "claude-3-haiku-20240307",max_tokens:1500,system:buildSystemPrompt(profile),messages:prev.map(m=>({role:m.role,content:m.content}))})});
+      const res = await fetch("/api/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:/* PERMANENT: Haiku 3 only. Never change without Khurrams approval. */ "claude-haiku-4-5-20251001",max_tokens:1500,system:buildSystemPrompt(profile),messages:prev.map(m=>({role:m.role,content:m.content}))})});
       const data = await res.json();
       const replyText = data.content?.[0]?.text||"Something went wrong — try again!";
       setMessages(p=>[...p,{role:"assistant",content:replyText}]);

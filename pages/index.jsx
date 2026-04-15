@@ -8,7 +8,7 @@ import { useTheme } from './_app';
 import { IB_SUBJECT_LIST } from '../utils/ibKnowledge';
 import { AMERICAN_SUBJECT_LIST } from '../utils/americanCurriculumKB';
 import { CBSE_SUBJECT_LIST } from '../utils/cbseKnowledge';
-import { MOE_SUBJECT_LIST } from '../utils/uaeMoEKnowledge';
+import { MOE_SUBJECT_LIST } from '../utils/uaeNationalCurriculumKB';
 import { useCountry, UaeCurriculumSelector, FooterCountryFlags } from '../components/CountrySelector';
 import { filterForCountry } from '../utils/subjectCatalog';
 
@@ -391,7 +391,7 @@ export default function Home() {
     if (userCountry === 'UAE') {
       const now = new Date();
       if (now.getMonth() >= 6 && now.getMonth() <= 7) {
-        const currLabel = {british:'British/IGCSE',american:'American/AP',ib:'IB Diploma',cbse:'CBSE',moe:'UAE MoE',pakistani:'Pakistani'}[uaeCurriculum] || 'your';
+        const currLabel = {british:'British/IGCSE',american:'American/AP',ib:'IB Diploma',cbse:'CBSE',moe:'UAE National',pakistani:'Pakistani'}[uaeCurriculum] || 'your';
         greeting = `Hey ${firstName}! ☀️ Starky here — your UAE summer tutor.\n\nSummer in Dubai means we have time to learn at your pace. No rush. No pressure.\n\n${subject ? `Let's work on ${subject}. ` : ''}I know the ${currLabel} curriculum inside out — every subject, every exam format, every mark scheme.\n\n${uaeCurriculum === 'moe' ? 'EmSAT prep? University applications? I\'ve got you.' : subject ? `Ask me anything about ${subject}, or say "quiz me".` : 'What shall we work on this summer?'}\n\n🎫 Every session earns you a UAE Summer Passport stamp!`;
       }
     }
@@ -1135,7 +1135,7 @@ export default function Home() {
           <>
             <div className="hb">★ Starky — All UAE Curricula</div>
             <h1>Every Child in the UAE Deserves a <em>World-Class</em> Tutor</h1>
-            <p className="hs">British, American, IB, CBSE and UAE MoE curricula. 24/7. Every subject. Every language.</p>
+            <p className="hs">British, American, IB, CBSE and UAE National curricula. 24/7. Every subject. Every language.</p>
           </>
         ) : (
           <>
@@ -1215,7 +1215,7 @@ export default function Home() {
                   { id:'american', flag:'🇺🇸', name:'American', color:'#FF6B6B' },
                   { id:'ib', flag:'🌐', name:'IB', color:'#4ECDC4' },
                   { id:'cbse', flag:'🇮🇳', name:'Indian CBSE', color:'#FF8E53' },
-                  { id:'moe', flag:'🇦🇪', name:'UAE MoE', color:'#FFC300' },
+                  { id:'moe', flag:'🇦🇪', name:'UAE National', color:'#FFC300' },
                   { id:'pakistani', flag:'🇵🇰', name:'Pakistani', color:'#A8E063' },
                 ].map(c => (
                   <button key={c.id} onClick={() => { setUaeCurriculum(c.id); try { localStorage.setItem('uae_curriculum', c.id); } catch {} }}
@@ -1228,7 +1228,7 @@ export default function Home() {
             ) : (
               <div style={{display:'flex',justifyContent:'center',gap:8,marginBottom:8}}>
                 <span style={{fontSize:13,color:'rgba(255,255,255,0.5)',fontWeight:700}}>{
-                  {british:'🇬🇧 British',american:'🇺🇸 American',ib:'🌐 IB',cbse:'🇮🇳 CBSE',moe:'🇦🇪 MoE',pakistani:'🇵🇰 Pakistani'}[uaeCurriculum]
+                  {british:'🇬🇧 British',american:'🇺🇸 American',ib:'🌐 IB',cbse:'🇮🇳 CBSE',moe:'🇦🇪 UAE National',pakistani:'🇵🇰 Pakistani'}[uaeCurriculum]
                 }</span>
                 <button onClick={() => { setUaeCurriculum(null); try { localStorage.removeItem('uae_curriculum'); } catch {} }}
                   style={{background:'none',border:'none',color:'#4F8EF7',fontSize:12,cursor:'pointer',fontWeight:700,fontFamily:"'Sora',sans-serif"}}>Change</button>

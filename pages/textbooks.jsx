@@ -458,7 +458,7 @@ export default function TextbooksPage() {
     try {
       const res = await fetch("/api/chat", {
         method:"POST", headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({ model:/* PERMANENT: Haiku 3 only. Never change without Khurrams approval. */ "claude-3-haiku-20240307", max_tokens:1500, system: buildSystemPrompt(level, subject), messages: apiMessages }),
+        body:JSON.stringify({ model:/* PERMANENT: Haiku 3 only. Never change without Khurrams approval. */ "claude-haiku-4-5-20251001", max_tokens:1500, system: buildSystemPrompt(level, subject), messages: apiMessages }),
       });
       const data = await res.json();
       const reply = data.content?.[0]?.text || "Something went wrong — please try again!";

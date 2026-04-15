@@ -39,3 +39,14 @@ public/books/sindh-board/
 public/books/sindh-board/
 public/books/sindh-board/
 public/books/islamiyat-verified/
+
+# Session artifacts — never commit
+.playwright-mcp/
+lma-*.png
+sim-*.png
+nw-*.png
+hero-tornado.png
+tornado-check.png
+raabta-globe*.jpg
+raabta-globe.png
+.env.vercel

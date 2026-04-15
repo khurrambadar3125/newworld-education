@@ -7,7 +7,7 @@ function loadPassport() { try { return JSON.parse(localStorage.getItem(PASS_KEY)
 
 const TRACKS = [
   { id:'bridge', emoji:'🚀', name:'Bridge to Next Year', who:'Moving up a grade in September', what:'Get ahead before classmates open their books. Starky teaches next year\'s topics now.', flags:'🇬🇧 🎓 🇺🇸 🇮🇳 🇦🇪', color:'#4F8EF7', cta:'Start bridging →', href:'/#start-learning' },
-  { id:'emsat', emoji:'🎯', name:'EmSAT Intensive', who:'Grade 11-12 UAE MoE students', what:'UAEU, AUS, Khalifa, Zayed — all require EmSAT. 25 sessions per subject. University-targeted scores.', scores:[{uni:'UAEU',score:'1250+'},{uni:'AUS',score:'1500+'},{uni:'Khalifa',score:'1400+'}], color:'#4ECDC4', cta:'Prepare for EmSAT →', href:'/drill?context=emsat' },
+  { id:'emsat', emoji:'🎯', name:'EmSAT Intensive', who:'Grade 11-12 UAE National curriculum students', what:'UAEU, AUS, Khalifa, Zayed — all require EmSAT. 25 sessions per subject. University-targeted scores.', scores:[{uni:'UAEU',score:'1250+'},{uni:'AUS',score:'1500+'},{uni:'Khalifa',score:'1400+'}], color:'#4ECDC4', cta:'Prepare for EmSAT →', href:'/drill?context=emsat' },
   { id:'catchup', emoji:'📚', name:'Catch Up', who:'Students who struggled this year', what:'Summer is the best time to fix gaps. No pressure. Your pace. Starky has infinite patience.', color:'#FFC300', cta:'Start catching up →', href:'/#start-learning' },
   { id:'sen', emoji:'💙', name:'Students of Determination', who:'Inclusive summer — all abilities', what:'Fully accessible. Aligned with KHDA\'s inclusive summer programme. Same learning. Your way.', badge:'KHDA Aligned', color:'#C77DFF', cta:'Start learning →', href:'/special-needs' },
   { id:'university', emoji:'🏛️', name:'University Ready', who:'Grade 12 graduates', what:'Results coming in August. EmSAT improvement. Personal statement. University application preparation.', unis:'UAEU, AUS, Khalifa, Zayed, HCT, AUD, UOWD', color:'#FF6B6B', cta:'Prepare for university →', href:'/drill?subject=EmSAT%20English' },
@@ -20,7 +20,7 @@ const CURRICULA = [
   { flag:'🎓', name:'IB', sub:'International Baccalaureate', desc:'All 6 subject groups. TOK, EE, IA preparation.', color:'#4ECDC4' },
   { flag:'🇺🇸', name:'American', sub:'AP / SAT / ACT', desc:'All AP subjects. SAT and ACT preparation.', color:'#FF6B6B' },
   { flag:'🇮🇳', name:'Indian', sub:'CBSE', desc:'Science, Commerce, Arts streams. JEE and NEET foundation.', color:'#FF8E53' },
-  { flag:'🇦🇪', name:'UAE MoE', sub:'Ministry of Education', desc:'All 7 EmSAT subjects. Cycle 1-3, General and Advanced tracks.', color:'#FFC300' },
+  { flag:'🇦🇪', name:'UAE National', sub:'National curriculum', desc:'All 7 EmSAT subjects. Cycle 1-3, General and Advanced tracks.', color:'#FFC300' },
 ];
 
 const BADGES = [
@@ -58,7 +58,7 @@ export default function SummerUAEPage() {
     <>
       <Head>
         <title>UAE Summer Programme 2026 — NewWorldEdu</title>
-        <meta name="description" content="54 days. 45°C outside. The smartest thing your child can do is stay ahead. British, IB, American, CBSE, UAE MoE — Starky knows every curriculum. 10 free sessions." />
+        <meta name="description" content="54 days. 45°C outside. The smartest thing your child can do is stay ahead. British, IB, American, CBSE, UAE National — Starky knows every curriculum. 10 free sessions." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <style>{`
@@ -89,7 +89,7 @@ export default function SummerUAEPage() {
           </h1>
 
           <p style={{ fontSize:15, color:'rgba(255,255,255,0.5)', lineHeight:1.7, maxWidth:480, margin:'16px auto 28px' }}>
-            Starky is the only AI tutor in the UAE that knows every curriculum — British, IB, American, CBSE, and UAE MoE. 10 free sessions. No credit card.
+            Starky is the only AI tutor in the UAE that knows every curriculum — British, IB, American, CBSE, and UAE National. 10 free sessions. No credit card.
           </p>
 
           <a href="/#start-learning" className="su-cta" style={{ display:'block', maxWidth:400, margin:'0 auto', background:'linear-gradient(135deg,#4F8EF7,#4ECDC4)', color:'#fff', padding:'18px 32px', borderRadius:100, fontSize:17, fontWeight:800, textDecoration:'none', boxShadow:'0 8px 32px rgba(79,142,247,0.3)', textAlign:'center' }}>
@@ -244,7 +244,7 @@ export default function SummerUAEPage() {
             <div style={{ display:'flex', flexDirection: isMobile ? 'column' : 'row', gap:14 }}>
               {[
                 { icon:'📱', title:'Open Starky', desc:'No download. No app store. Just newworld.education' },
-                { icon:'📚', title:'Tell Starky your curriculum', desc:'British, IB, American, CBSE, or UAE MoE. Starky knows all of them.' },
+                { icon:'📚', title:'Tell Starky your curriculum', desc:'British, IB, American, CBSE, or UAE National. Starky knows all of them.' },
                 { icon:'🚀', title:'Start your summer track', desc:'30 minutes a day. Your child\'s pace. Always.' },
               ].map((s,i)=>(
                 <div key={s.title} className="su-step" style={{ flex:1, background:'rgba(255,255,255,0.03)', border:'1px solid rgba(255,255,255,0.06)', borderRadius:16, padding:'24px 18px', textAlign:'center', transition:'all 0.15s' }}>

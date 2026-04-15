@@ -37,7 +37,7 @@ FROM ANY SPOKEN RESPONSE, EXTRACT:
 - NAME — any name mentioned ("I'm Ali", "my son Omar", "she's Sara")
 - AGE — any age or grade ("I'm 14", "Grade 8", "Year 10", "O Levels")
 - COUNTRY — any location signal ("Dubai", "Karachi", "I'm in Pakistan", "we're in UAE")
-- CURRICULUM — any exam signal ("Cambridge", "IGCSE", "IB", "CBSE", "Matric", "O Levels", "A Levels", "AP", "MoE", "EmSAT")
+- CURRICULUM — any exam signal ("Cambridge", "IGCSE", "IB", "CBSE", "Matric", "O Levels", "A Levels", "AP", "UAE National", "EmSAT")
 - USER TYPE — student or parent ("my son", "my daughter", "my child", "I'm a student")
 - SUBJECT PAIN POINT — any mention of struggle ("maths is hard", "I can't do chemistry", "she hates reading")
 - SUBJECT STRENGTH — any mention of confidence ("I love history", "he's great at art")

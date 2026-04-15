@@ -334,7 +334,7 @@ export default withErrorAlert(async function handler(req, res) {
       prompt = buildGeneratePrompt(params);
       systemPrompt = isYoungLearner(params.level) ? SYSTEM_YOUNG : SYSTEM;
       // Add context-specific system prompt for UAE tracks
-      if (params.context === 'emsat') systemPrompt += '\nYou are generating EmSAT-style questions for UAE Ministry of Education students. Questions must match EmSAT format, difficulty, and scoring. Use UAE context: AED currency, Dubai/Abu Dhabi examples, UAE government and society.';
+      if (params.context === 'emsat') systemPrompt += '\nYou are generating EmSAT-style questions for UAE national curriculum students. Questions must match EmSAT format, difficulty, and scoring. Use UAE context: AED currency, Dubai/Abu Dhabi examples, UAE government and society.';
       else if (params.context === 'ib') systemPrompt += '\nYou are generating IB Diploma-style questions. Use IB command terms precisely. Questions must align with IB assessment objectives and criteria. Reference the IB mark band descriptors.';
       // Inject topic-specific misconceptions and examiner tips
       const topicKnowledge = await getKnowledgeForTopic(params.topic || '', params.subject || '');

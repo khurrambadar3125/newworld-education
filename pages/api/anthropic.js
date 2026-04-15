@@ -19,7 +19,7 @@ import { getUAEMandatoryPrompt, isUAEMandatoryTopic } from '../../utils/uaeManda
 import { getIBDiplomaPrompt, isIBTopic } from '../../utils/ibKnowledge';
 import { getAmericanCurriculumPrompt, isAmericanCurriculumTopic } from '../../utils/americanCurriculumKB';
 import { getCBSECurriculumPrompt, isCBSETopic } from '../../utils/cbseKnowledge';
-import { getMoECurriculumPrompt, isMoETopic } from '../../utils/uaeMoEKnowledge';
+import { getMoECurriculumPrompt, isMoETopic } from '../../utils/uaeNationalCurriculumKB';
 import { getUAEExcellencePrompt } from '../../utils/uaeAcademicExcellence';
 import { getUAESummerPrompt } from '../../utils/uaeSummerKnowledge';
 import { getArabicSupportPrompt, isArabicTopic } from '../../utils/arabicSupportKB';
@@ -439,7 +439,7 @@ If you complete all 5 steps in one response, you have FAILED the instruction.`;
         built.systemPrompt += getCBSECurriculumPrompt(currentSubject);
       }
 
-      // ── UAE MoE curriculum injection — for government school students ──
+      // ── UAE National curriculum injection — for government school students ──
       if (userProfile?.uaeCurriculum === 'moe' || isMoETopic(message)) {
         built.systemPrompt += getMoECurriculumPrompt(currentSubject);
       }

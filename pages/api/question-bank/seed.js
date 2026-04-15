@@ -17,7 +17,7 @@ const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 3
 
 const SYSTEM = `You are an expert Cambridge examiner and question setter with 30 years of experience.
 You know every mark scheme, examiner report, and common misconception for all Cambridge subjects.
-You also set questions for IB Diploma, CBSE, and UAE MoE curricula.
+You also set questions for IB Diploma, CBSE, and UAE National curricula.
 CRITICAL: Respond ONLY with valid JSON. No markdown, no backticks, no preamble.`;
 
 const DIFFICULTY_MAP = {
