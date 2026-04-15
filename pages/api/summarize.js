@@ -64,7 +64,7 @@ Rules:
 - currentSubject: single subject name only, or empty string if mixed/unclear`;
 
     const response = await client.messages.create({
-      model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307', // use Haiku — fast and cheap for summaries
+      model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-haiku-4-5-20251001', // use Haiku — fast and cheap for summaries
       max_tokens: 300,
       messages: [{ role: 'user', content: prompt }],
     });

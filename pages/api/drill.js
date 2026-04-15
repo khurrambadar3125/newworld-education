@@ -371,7 +371,7 @@ export default withErrorAlert(async function handler(req, res) {
     for (let attempt = 0; attempt <= 2; attempt++) {
       try {
         response = await client.messages.create({
-          model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
+          model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-haiku-4-5-20251001',
           // Grade action needs a bit more room for two-turn Socratic guidingQuestions.
           max_tokens: action === 'grade' ? 1000 : 800,
           system: systemPrompt,

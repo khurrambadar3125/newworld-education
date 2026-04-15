@@ -85,7 +85,7 @@ export default withErrorAlert(async function handler(req, res) {
     // ── STEP 2: AI fallback for remaining questions ──────────────
     const needed = QUESTION_COUNT - bankQuestions.length;
     const response = await client.messages.create({
-      model: /* PERMANENT: Haiku only */ 'claude-3-haiku-20240307',
+      model: /* PERMANENT: Haiku only */ 'claude-haiku-4-5-20251001',
       max_tokens: 2000,
       system: `You are a Cambridge ${grade || 'O Level'} examiner creating a mock exam paper for ${subject}. Generate exactly ${needed} questions that represent a real Cambridge exam. Mix question types: MCQs and structured questions. Each question must include marks allocation. Return ONLY valid JSON array.`,
       messages: [{

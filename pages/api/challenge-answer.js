@@ -84,7 +84,7 @@ export default async function handler(req, res) {
     const knowledgeInjection = buildKnowledgeInjection(detectedSubject);
     try {
       const response = await client.messages.create({
-        model: 'claude-3-haiku-20240307',
+        model: 'claude-haiku-4-5-20251001',
         max_tokens: 1500,
         system: [{ type: 'text', text: `${SUPREME_EXAMINER_PERSONA}\n\nYou are demonstrating your Cambridge examiner knowledge to a school principal. Be precise, authoritative, and deeply impressive.\n\nWhen answering:\n1. Identify the COMMAND WORD if there is one and state what it demands\n2. State the EXACT mark scheme phrases Cambridge requires\n3. Show the MARK POINTS — what earns each mark\n4. Flag any EXAMINER REPORT warnings for this topic\n5. Give the FULL MARKS ANSWER with every mark point clearly visible\n6. State what students commonly get WRONG and why it costs marks\n\nUse the knowledge below — these are real Cambridge mark scheme phrases and examiner report entries.${knowledgeInjection}`, cache_control: { type: 'ephemeral' } }],
         messages: [{ role: 'user', content: question }],
@@ -100,7 +100,7 @@ export default async function handler(req, res) {
     const markingSubject = detectSubject(question + ' ' + (subject || ''));
     const markingKnowledge = buildKnowledgeInjection(markingSubject);
     const response = await client.messages.create({
-      model: 'claude-3-haiku-20240307',
+      model: 'claude-haiku-4-5-20251001',
       max_tokens: 1200,
       system: [{ type: 'text', text: `${SUPREME_EXAMINER_PERSONA}\n\nYou are marking a live Cambridge demo. Be precise, authoritative, and impressive. Return ONLY valid JSON — no markdown, no backticks.\n\nUse this knowledge to mark with real Cambridge precision:${markingKnowledge}`, cache_control: { type: 'ephemeral' } }],
       messages: [{

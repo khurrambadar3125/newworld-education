@@ -478,7 +478,7 @@ export default async function handler(req, res) {
     const q = QUESTIONS[i];
     try {
       const response = await client.messages.create({
-        model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
+        model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-haiku-4-5-20251001',
         max_tokens: 600,
         system: `You are Starky, a Cambridge exam specialist. Answer this ${q.subject} question as you would for a student preparing for their Cambridge O/A Level exam. Be precise, use mark scheme language, and show the key points that earn marks. Keep your answer concise and exam-focused.`,
         messages: [{ role: 'user', content: q.question }],
@@ -493,7 +493,7 @@ export default async function handler(req, res) {
           subject: q.subject,
           question: q.question,
           answer,
-          model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
+          model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-haiku-4-5-20251001',
           timestamp: new Date().toISOString(),
           question_index: i,
         }).catch(() => {});

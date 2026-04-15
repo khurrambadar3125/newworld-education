@@ -81,7 +81,7 @@ export default async function handler(req, res) {
     try {
       // Step 1: Generate article as plain text (Haiku 3 struggles with JSON for long content)
       const response = await client.messages.create({
-        model: /* PERMANENT: Haiku 3 only */ 'claude-3-haiku-20240307',
+        model: /* PERMANENT: Haiku 3 only */ 'claude-haiku-4-5-20251001',
         max_tokens: 1000,
         system: `You are a brilliant, warm educational journalist. Write ONE original article for Pakistani students and parents. Talk TO the reader — use "you" and "your". Start with a hook. Use contractions. Light humour. Paragraphs max 4 sentences. British English. 400-500 words. End with one warm, encouraging sentence. No promotional language.
 

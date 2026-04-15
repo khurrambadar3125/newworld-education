@@ -44,7 +44,7 @@ export async function detectWeakness(messages, subject, studentId) {
 
   try {
     const response = await client.messages.create({
-      model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
+      model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-haiku-4-5-20251001',
       max_tokens: 300,
       system: `You are a Cambridge examiner analysing a tutoring conversation for mark-losing patterns. Subject: ${subject}. Possible weakness categories: ${categories.join(', ')}. Respond with ONLY valid JSON. If no weakness detected, respond: {"weakness_detected":false}`,
       messages: [{
@@ -437,7 +437,7 @@ export async function detectNanoWeakness(messages, subject, studentId) {
 
   try {
     const response = await client.messages.create({
-      model: /* PERMANENT: Haiku 3 only */ 'claude-3-haiku-20240307',
+      model: /* PERMANENT: Haiku 3 only */ 'claude-haiku-4-5-20251001',
       max_tokens: 400,
       system: `You are a Cambridge examiner performing nano-level weakness detection. Subject: ${subject}.
 

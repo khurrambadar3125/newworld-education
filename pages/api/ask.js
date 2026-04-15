@@ -9,7 +9,7 @@
  *   4. If empty, drop level filter; if still empty, log content gap
  *
  * Rules (CLAUDE.md):
- *   - Model: claude-3-haiku-20240307 ONLY
+ *   - Model: claude-haiku-4-5-20251001 ONLY
  *   - cache_control: ephemeral on system prompt
  *   - Bank-first — never AI-generated questions
  */
@@ -49,7 +49,7 @@ async function extractIntent(query, userProfile, signal) {
 
   const resp = await client.messages.create(
     {
-      model: 'claude-3-haiku-20240307',
+      model: 'claude-haiku-4-5-20251001',
       max_tokens: 200,
       system: [
         {

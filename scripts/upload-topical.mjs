@@ -63,7 +63,7 @@ async function parseQuestions(text, subject, level, topic) {
       'anthropic-version': '2023-06-01',
     },
     body: JSON.stringify({
-      model: 'claude-sonnet-4-20250514', // Admin tool only
+      model: 'claude-haiku-4-5-20251001', // Admin tool only
       max_tokens: 8192,
       system: `You extract Cambridge exam questions from topical past paper compilations.
 These are REAL Cambridge past paper questions compiled by topic.

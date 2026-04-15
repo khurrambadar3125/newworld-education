@@ -20,7 +20,7 @@ config({ path: '.env.local' });
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_SECRET_KEY = process.env.SUPABASE_SECRET_KEY;
-const MODEL = 'claude-3-haiku-20240307'; // Haiku for cost
+const MODEL = 'claude-haiku-4-5-20251001'; // Haiku for cost
 
 if (!ANTHROPIC_API_KEY || !SUPABASE_URL || !SUPABASE_SECRET_KEY) {
   console.error('Missing env vars'); process.exit(1);

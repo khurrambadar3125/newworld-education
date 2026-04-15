@@ -61,7 +61,7 @@ export async function verifyMCQ(questionText, options, claimedCorrect) {
       _verifyClient = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 10000 });
     }
     const response = await _verifyClient.messages.create({
-      model: 'claude-3-haiku-20240307',
+      model: 'claude-haiku-4-5-20251001',
       max_tokens: 50,
       system: 'You verify MCQ answers. Return ONLY one letter: A, B, C, or D. Nothing else.',
       messages: [{ role: 'user', content: `${questionText}\nA: ${options.A}\nB: ${options.B}\nC: ${options.C}\nD: ${options.D}\nWhich is correct?` }],

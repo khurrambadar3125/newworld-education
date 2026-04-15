@@ -55,7 +55,7 @@ export default withErrorAlert(async function handler(req, res) {
         // Use Claude to grade structured answers
         try {
           const gradeResponse = await client.messages.create({
-            model: 'claude-3-haiku-20240307',
+            model: 'claude-haiku-4-5-20251001',
             max_tokens: 300,
             system: `You are a Cambridge ${grade || 'O Level'} examiner marking a ${subject} answer. Be strict but fair. Mark using this exact structure and return ONLY valid JSON.`,
             messages: [{

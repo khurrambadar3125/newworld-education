@@ -206,7 +206,7 @@ async function parseQuestions(qpText, msText, subject, level) {
       'anthropic-version': '2023-06-01',
     },
     body: JSON.stringify({
-      model: 'claude-3-haiku-20240307', // Admin tool only — Khurram's uploads. Students use Haiku.
+      model: 'claude-haiku-4-5-20251001', // Admin tool only — Khurram's uploads. Students use Haiku.
       max_tokens: 8192,
       system: `You extract exam questions from past papers (Cambridge CAIE or Pearson Edexcel iGCSE/IAL). You are given:
 1. The QUESTION PAPER text (all questions)

@@ -17,7 +17,7 @@ import fs from 'fs';
 import path from 'path';
 
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
-const MODEL = 'claude-sonnet-4-20250514';
+const MODEL = 'claude-haiku-4-5-20251001';
 
 if (!ANTHROPIC_API_KEY) { console.error('Missing ANTHROPIC_API_KEY'); process.exit(1); }
 

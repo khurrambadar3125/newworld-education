@@ -25,7 +25,7 @@ import path from 'path';
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY;
-const MODEL = 'claude-sonnet-4-20250514'; // Sonnet for quality note generation
+const MODEL = 'claude-haiku-4-5-20251001'; // Sonnet for quality note generation
 
 if (!ANTHROPIC_API_KEY || !SUPABASE_URL || !SUPABASE_KEY) {
   console.error('Missing env vars: ANTHROPIC_API_KEY, SUPABASE_URL, SUPABASE_SECRET_KEY');

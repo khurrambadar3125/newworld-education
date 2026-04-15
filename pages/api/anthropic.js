@@ -264,7 +264,7 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: 'No valid messages provided' });
       }
       const response = await callWithRetry(() => client.messages.create({
-        model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
+        model: 'claude-haiku-4-5-20251001' /* Migrated 2026-04-15 from Haiku 3 — see lib/constants.js */,
         max_tokens: 1024,
         system: legacySystem || 'You are Starky ★, a warm and encouraging AI tutor for NewWorldEdu.',
         messages: userMessages,
@@ -628,7 +628,7 @@ Do NOT guess or make up specific paper dates. Only state the verified exam windo
     ];
 
     const apiParams = {
-      model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
+      model: 'claude-haiku-4-5-20251001' /* Migrated 2026-04-15 from Haiku 3 — see lib/constants.js */,
       max_tokens: hasImage ? 2048 : 1024,
       system: systemBlocks,
       messages: built.messages,

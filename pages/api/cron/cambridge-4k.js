@@ -217,7 +217,7 @@ export default async function handler(req, res) {
     try {
       // Step 1: Generate a Cambridge question
       const genResponse = await client.messages.create({
-        model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
+        model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-haiku-4-5-20251001',
         max_tokens: 300,
         system: `You are a Cambridge ${spec.level} ${spec.subject} (${spec.code}) examiner. Generate ONE exam question. Topic: ${spec.topic}. Question type: ${spec.type}. Command word: ${spec.commandWord}. Marks: [${spec.marks}]. Output ONLY the question text with mark allocation. No preamble. Cambridge format.`,
         messages: [{ role: 'user', content: `Generate a ${spec.marks}-mark ${spec.commandWord} question on ${spec.topic} for ${spec.subject} ${spec.level} (${spec.code}).` }],
@@ -227,7 +227,7 @@ export default async function handler(req, res) {
 
       // Step 2: Answer the question
       const ansResponse = await client.messages.create({
-        model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
+        model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-haiku-4-5-20251001',
         max_tokens: 600,
         system: `You are Starky, a Cambridge ${spec.level} ${spec.subject} examiner-tutor. Answer with mark-scheme precision. Give the mark-scheme answer first, then brief explanation. Use exact Cambridge terminology. Be concise and exam-focused.`,
         messages: [{ role: 'user', content: question }],
@@ -241,7 +241,7 @@ export default async function handler(req, res) {
       if (sb) {
         await sb.from('cambridge_test_answers').insert({
           subject: spec.subject, question, answer,
-          model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-3-haiku-20240307',
+          model: /* PERMANENT: Haiku 3 only. Never change without Khurram's approval. */ 'claude-haiku-4-5-20251001',
           timestamp: new Date().toISOString(),
           question_index: i + 1000, // offset from the original 400
         }).catch(() => {});
